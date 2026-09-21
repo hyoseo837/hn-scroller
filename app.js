@@ -56,6 +56,9 @@ function renderCard(card) {
     } else {
       if (i > 0) wrap.append(el("div", "kicker", "Detail"));
       wrap.append(el("p", i === 0 ? "headline" : "substance", tier.text));
+      // Where it came from is context a beginner needs: a personal blog and a
+      // vendor announcement read very differently.
+      if (i === 0) wrap.append(el("div", "from", card.url ? host(card.url) : "Hacker News"));
       if (tier.data?.length) {
         const table = el("div", "data");
         for (const [label, value] of tier.data) {
