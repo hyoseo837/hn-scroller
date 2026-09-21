@@ -1,0 +1,144 @@
+<title>HN Scroller</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f0f10">
+<link rel="manifest" href="manifest.webmanifest">
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #16161a;
+    --dim: #6b6b76;
+    --line: #e2e0da;
+    --accent: #ff6600; /* HN orange */
+    --sheet: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f0f10;
+      --fg: #f2f1ee;
+      --dim: #9a9aa4;
+      --line: #2a2a2e;
+      --sheet: #17171a;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overscroll-behavior: none;
+  }
+
+  /* vertical axis: one post per screen */
+  #feed {
+    height: 100dvh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    overscroll-behavior-y: contain;
+    scrollbar-width: none;
+  }
+  #feed::-webkit-scrollbar { display: none; }
+  #feed.locked { overflow-y: hidden; }
+
+  /* horizontal axis: depth within one post */
+  .post {
+    height: 100dvh;
+    scroll-snap-align: start;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+  }
+  .post::-webkit-scrollbar { display: none; }
+
+  .card {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 84px 22px 132px;
+    min-width: 0;
+  }
+  .headline { font-size: clamp(25px, 6.4vw, 34px); font-weight: 650; letter-spacing: -0.02em; }
+  .substance { font-size: clamp(17px, 4.4vw, 20px); }
+  .kicker { color: var(--dim); font-size: 13px; text-transform: uppercase; letter-spacing: .09em; margin-bottom: 14px; }
+  .data { margin-top: 20px; border-top: 1px solid var(--line); font-size: 15px; }
+  .data div { display: flex; justify-content: space-between; gap: 16px; padding: 9px 0; border-bottom: 1px solid var(--line); }
+  .data span:first-child { color: var(--dim); }
+  .src { font-size: 15px; word-break: break-word; }
+  .src a { color: var(--accent); }
+  .src .host { color: var(--dim); display: block; margin-bottom: 26px; font-size: 14px; }
+
+  /* chrome */
+  .bar {
+    position: fixed; inset: 0 0 auto 0; z-index: 3;
+    display: flex; align-items: center; gap: 10px;
+    padding: max(14px, env(safe-area-inset-top)) 18px 12px;
+    font-size: 13px; color: var(--dim);
+    background: linear-gradient(var(--bg) 62%, transparent);
+  }
+  .bar button { font: inherit; color: inherit; background: none; border: 0; padding: 4px 0; cursor: pointer; }
+  .dots { margin-left: auto; display: flex; gap: 6px; align-items: center; }
+  .dots i { width: 6px; height: 6px; border-radius: 50%; background: var(--line); transition: background .18s; }
+  .dots i.on { background: var(--accent); }
+
+  .acts {
+    position: fixed; inset: auto 0 0 0; z-index: 3;
+    display: flex; gap: 10px;
+    padding: 12px 18px max(18px, env(safe-area-inset-bottom));
+    background: linear-gradient(transparent, var(--bg) 42%);
+  }
+  .acts button {
+    font: inherit; font-size: 14px; color: var(--fg);
+    background: var(--sheet); border: 1px solid var(--line);
+    border-radius: 999px; padding: 9px 15px; cursor: pointer;
+  }
+  .acts button:disabled { opacity: .35; }
+  .hint { margin-left: auto; align-self: center; color: var(--dim); font-size: 12px; }
+
+  /* sheet */
+  #sheet {
+    position: fixed; inset: auto 0 0 0; z-index: 5;
+    max-height: 82dvh; overflow-y: auto;
+    background: var(--sheet); border-top: 1px solid var(--line);
+    border-radius: 18px 18px 0 0;
+    padding: 20px 20px max(24px, env(safe-area-inset-bottom));
+    transform: translateY(101%); transition: transform .24s ease;
+  }
+  #sheet.open { transform: none; }
+  #scrim { position: fixed; inset: 0; z-index: 4; background: #000; opacity: 0; pointer-events: none; transition: opacity .24s; }
+  #scrim.open { opacity: .45; pointer-events: auto; }
+  #sheet h2 { margin: 0 0 14px; font-size: 15px; text-transform: uppercase; letter-spacing: .08em; color: var(--dim); }
+  #sheet .cmt { border-top: 1px solid var(--line); padding: 13px 0; font-size: 15px; }
+  #sheet dt { font-weight: 640; margin-top: 14px; }
+  #sheet dd { margin: 4px 0 0; color: var(--dim); }
+  #sheet .days { display: flex; flex-wrap: wrap; gap: 8px; }
+  #sheet .days a { border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; text-decoration: none; color: var(--fg); font-size: 14px; }
+  #sheet .days a.now { border-color: var(--accent); color: var(--accent); }
+
+  .end { text-align: center; }
+  .end h1 { font-size: 27px; margin: 0 0 8px; }
+  .end p { color: var(--dim); margin: 0; }
+  .empty { padding: 30px 22px; color: var(--dim); }
+</style>
+
+<div class="bar">
+  <button id="cal">📅 <span id="date">—</span></button>
+  <span class="dots" id="dots"></span>
+</div>
+
+<main id="feed"><div class="empty">Loading…</div></main>
+
+<div class="acts">
+  <button id="btn-cmt" disabled>💬 —</button>
+  <button id="btn-glo" disabled>📖 —</button>
+  <span class="hint" id="hint"></span>
+</div>
+
+<div id="scrim"></div>
+<section id="sheet" hidden></section>
+
+<script src="app.js"></script>

@@ -1,0 +1,137 @@
+# Spec
+
+A vertical-swipe feed that tells a beginner developer what happened in tech today, from Hacker News.
+
+**Awareness tool, not a learning tool.** Open it without thinking, know what's going on, close it.
+Depth is available but never required. See `DECISIONS.md` for why each choice was made.
+
+## Audience
+
+A beginner developer who wants to follow tech news, finds most HN posts hard to parse, and will not
+research them one by one.
+
+## Success / failure
+
+| | |
+|---|---|
+| Works | User opens it cold, swipes 2-3 minutes, recognizes today's terms and roughly who is arguing about what. |
+| Fails | User feels informed but retained nothing. Fluent summaries of things nobody understood. |
+
+## Content model
+
+One post = one **card stack**. Depth varies per post: 2 to 4 cards, whatever the source supports.
+
+| Depth | Holds |
+|---|---|
+| 1 | De-jargoned headline. Subject, action, and the clause that makes it land. |
+| 2 | The substance — shaped by post type: spec table (launch), method (research), argument (essay), the two camps (controversy). |
+| 3 | The source link. |
+
+Rules:
+
+1. **Facts come from the source. Definitions come from the glossary. Never mixed on one card.**
+2. Numbers, dates and versions only if they appear verbatim in the fetched source. No model recall.
+   Spelling a number out is fine ("one hundred" -> 100); adding one is not. Where the source names
+   something specifically (a "village fayre"), its word is used, not a near-synonym.
+3. **Depth 2 must show receipts.** The model returns verbatim source quotes backing its substance;
+   the code checks each by exact match and drops the whole tier if any fails. Prompt instructions
+   alone did not hold — a measured run invented a fluent technical claim with no source at all.
+4. Never pad a depth tier. A 2-card post is correct when there is no substance for a third.
+5. Show depth up front (dots) so a swipe right is never wasted.
+6. Voice is casual and human — "someone made a digital brain of a fly to play Brood War", not
+   "researchers have developed a neural simulation of Drosophila melanogaster". Register is part of
+   the product; heavy prose breaks the lightness.
+
+## Gestures
+
+| Action | Result |
+|---|---|
+| Swipe up | Next post, always at depth 1. |
+| Swipe right | Deeper into this post. |
+| Swipe left | Back out. **Required before swipe up works** — depth locks the vertical axis. |
+| Revisit a post | Starts at depth 1. Depth is not remembered. |
+
+Depth must be visually obvious, since the vertical gesture is dead there.
+
+## Comments and glossary
+
+Two buttons per card, each with a count. Same grammar, nothing to explain.
+
+**Comments** — bottom sheet, reel-style. Top-level only, HN's own order, replies dropped (no threading
+UI). Verbatim text, plus a generated line that **names the camps rather than averaging them**. Needs an
+empty state: high score does not imply a thread (measured: one post at 587 points had 3 comments).
+
+**Glossary** — per-card terms, not a global dictionary. Accumulates across days and is reused, so it
+gets cheaper and better over time. Indexes jargon from **comments as well as the article** — commenters
+assume you are a peer, which is where most beginner confusion lives.
+
+## Session model
+
+- One batch per day, cut at **00:00 UTC** (captures the full US day; lands ~09:00 KST).
+- Resume where you stopped **within today**. Finished already → the caught-up screen.
+- Calendar to browse past days. Pull, not push: no badge, nothing accumulates.
+- **No backlog.** Away a week → you get today, not 200 cards.
+- No accounts, no unread counts, no streaks, no notifications.
+- Resume position is per-device (`localStorage`). Cron failure → keep serving yesterday.
+
+## Pipeline
+
+Daily job. Select is free; only generate costs money.
+
+```
+select    Algolia search_by_date, tags=story, points>100, 3-day window
+          → dedupe by HN item ID against everything published
+          → cap 35
+fetch     article text (cap ~6k tokens) + top-level comments (Firebase)
+generate  card stack + camps line + glossary terms, per post
+publish   one JSON file for the day
+```
+
+- **Model: Gemini 3.8 Flash**, free tier (1,000 req/day against our ~35). Same model for prompt
+  development and production, so the prompt is tuned on exactly what ships.
+- **Quote verification is mechanical, not manual** (`verify_substance`). Flash is capable of
+  fluent-but-wrong, which is the one failure this app cannot absorb. Headline and camps are still
+  only prompt-governed — read those by eye when tuning.
+- Generation is once-daily and server-side; users read a static file. **Cost is constant at any number
+  of users** — nothing about growth moves this off the free tier.
+- `https://hn.algolia.com/api/v1/search_by_date` — day-wide selection. URL-encode the `>` or it 400s.
+- `https://hacker-news.firebaseio.com/v0/` — item details and comments.
+- **If article extraction yields too little, build the card from title + comments only.** Roughly a
+  third of HN links are paywalled, PDFs, or JS-rendered; a good thread alone can carry a card. Real
+  error path, not a corner to cut.
+- Threshold 100 is a guess from one day (~33 posts of ~990 submitted). Expect to move it.
+- Record entities from day one even though nothing consumes them yet — free now, and the archive
+  cannot be accumulated retroactively.
+
+### Day file shape
+
+```json
+{
+  "date": "2026-09-21",
+  "cards": [{
+    "id": 49792730,
+    "url": "https://...",
+    "depth": [
+      {"text": "..."},
+      {"text": "...", "data": [["latency", "2.1s"]]},
+      {"link": true}
+    ],
+    "camps": "Two camps: ...",
+    "comment_count": 470,
+    "terms": ["x.ai", "frontier model"],
+    "entities": ["x.ai"]
+  }]
+}
+```
+
+## Non-goals (v1)
+
+No video, audio or TTS. No accounts or auth. No push. No topic filtering — the off-topic posts are the
+texture that makes it feel alive. No personalization or interest ranking. No breaking news or intraday
+updates; this is a once-a-day object. No comment threading. No related-posts UI until an archive exists
+to link into. No database — a static host and one JSON per day.
+
+## Open
+
+- Does the camps line appear on the card face, or only inside the comment sheet?
+- The 2D scroll-snap needs thumbing on a real phone before it is designed further.

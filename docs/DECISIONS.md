@@ -1,0 +1,40 @@
+# Decisions
+
+## 2026-09-21 — Docs are three files: CLAUDE.md, SPEC.md, DECISIONS.md
+
+**Why:** agent context is the scarce resource; a docs tree goes stale and poisons every session that reads it.
+**Rejected:** ADR-per-file directory (too much ceremony for one dev), README-as-spec (mixes public pitch with working notes).
+
+## 2026-09-21 — v1 sources ~25-35 posts/day via a points threshold, not the front page
+
+**Why:** ~990 stories/day are submitted, ~33 cleared 100 points (measured 2026-09-21); the threshold does the filtering for free and a floating count honestly reflects how busy the day was. Selection costs nothing, so a 3-day query window + dedup by item ID absorbs slow burners and mod resurrections.
+**Rejected for now:** fixed N per day (scrapes the barrel on quiet days); front-page snapshot as the source (misses midday peaks, and includes fresh posts the community hasn't judged); beginner-relevance ranking beyond raw points. Threshold (100) and volume are the expansion knobs — revisit once a week of real data exists.
+
+## 2026-09-21 — Card facts come only from the source; definitions come only from the glossary
+
+**Why:** the target user cannot tell a wrong number from a right one — that's why they're here — so every claim on a card must be checkable against the linked source. Background knowledge (what x.ai is) is unavoidable for de-jargoning but is quarantined in the reusable glossary, where one bad entry is fixable in one place instead of smeared across a day's cards.
+**Rejected:** enrichment from model recall inside cards (dates, versions, benchmark scores); inventing a depth tier when the source has no substance for one — fewer cards beats a padded one.
+
+## 2026-09-21 — Gemini 3.8 Flash, free tier, for both development and production
+
+**Why:** it beats Gemini 3.1 Pro Preview on 8 of 9 benchmarks (AA Intelligence 41.2 vs 30.4, Agentic 41.1 vs 10.3) — Pro is on a separate preview track, so the version numbers mislead. Free tier allows 1,000 req/day against our ~35, generation is once-daily and server-side, so cost stays $0 at any user count. Familiar API, and swapping providers is one function since the pipeline is text in / JSON out.
+**Rejected:** 3.1 Pro (~$20/mo for worse benchmarks); a cheap-dev / paid-prod split (pointless once one model is both best and free, and tuning on a model you don't ship is a liability); Batch API and context caching (complexity for single-digit dollars). **Caveat:** one real-world test found Flash fluent-but-wrong where Pro was robust — hence the spot-check step in `SPEC.md`, not prompt-only trust.
+
+## 2026-09-21 — v1 stack: vanilla JS viewer, one Node script, GitHub Pages + Actions
+
+**Why:** every constraint already settled (static-hostable, one JSON/day, no DB, no auth) points here. App state is three integers over a static array, and `scroll-snap-type` does the 2D grid in CSS — a framework would add a build step and a render model to manage that. Actions+Pages makes the cron and the host one free thing, with version history on every day's JSON for free.
+**Rejected for now:** React or any framework (nothing here it makes easier; the JSON contract means swapping the viewer is one file); Gemini SDK and a Readability dependency (both are ~30 lines of stdlib); service worker. **Revisit when:** the viewer outgrows vanilla state handling, extraction quality forces a real parser, or a second data consumer appears. Stack is expected to change in later versions — it is the least load-bearing decision here, since the day-file shape is the actual contract.
+
+## 2026-09-21 — Generator is Python, and the prompt lives in prompt.md
+
+Supersedes the Node choice in the stack entry above; everything else there still holds.
+
+**Why:** prompt text is the file that gets edited most, so it sits outside the code as `prompt.md` and is read at runtime — no escaping, no redeploy to reword a sentence, and it diffs as prose. Python is stdlib-only here (`urllib`, `concurrent.futures`), so the zero-dependency property survives the switch.
+**Rejected:** prompt as a constant in the script (harder to iterate on, and prompt churn would dominate the code diff); a `prompts/` directory (one prompt exists — make it a directory when there are two); the Gemini SDK, still a dependency for a dozen lines.
+**Untested:** live article extraction. The dev sandbox reaches the HN APIs but blocks arbitrary domains, so `article_text` has never run against a real page — the parser is pinned by an HTML fixture in `--check` instead. Run `--dry` on a real network before trusting extraction quality.
+
+## 2026-09-21 — Depth 2 requires verbatim source quotes, checked in code
+
+**Why:** measured, not theorised. On the second live card the model invented "chat context caused hallucinated filler text to persist across later prompts" — absent from article and comments, and the one nearby comment said the opposite ("I can tell it's AI generated not from style, layout, or even hallucinations, but just the size"). The absolute rule was already in the prompt and did not hold. So the model now returns `support`: verbatim quotes, six words minimum, checked by normalised exact match; any miss drops `substance` and the card ships as 2 tiers. A fabricated claim has no real quote behind it, so it cannot pass.
+**Rejected:** trusting the prompt (falsified above); checking only numbers (the fabrication contained none); rejecting the whole card (a shorter card is already specced as correct, and the headline was accurate); an LLM judge (a second model with the same weakness, at double the cost).
+**Still unguarded:** `headline` and `camps` are prose with no mechanical check. Judge those by eye while tuning `prompt.md`.
