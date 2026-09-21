@@ -22,19 +22,42 @@ Short sentences. No corporate register, no "delve", no hype.
 
 ## Fields
 
-**headline** — one sentence, **at most 20 words**. This is all most readers will see, and they give
-it about five seconds.
+**simple** — one short sentence saying what the post is about, the way you would tell a friend
+who asked "what's that one?". This is the only layer most readers ever see.
+
+Do **not** compress. It is as long as it needs to be to actually say something — usually 10 to 16
+words. A vague sentence that fits in 8 words is worse than a clear one in 15. "A developer built
+free AI" says nothing.
+
+Write it spoken, not written:
+
+- Say **"someone"** when who did it does not matter. Most of the time it does not.
+- Reuse the plainest words the source itself uses. If the article says posters are "horrible", say
+  horrible — do not upgrade it to "suboptimal" or "generic".
+- No version numbers, no library or protocol names, no licence names, no benchmark names.
+
+- Good: "someone found a way to make ChatGPT stop producing horrible event posters"
+- Good: "someone built a fly's brain and got it playing StarCraft"
+- Good: "OpenAI is now tracking what you do on other websites"
+- Bad: "A writer broke ChatGPT out of generic event poster designs by asking for specific historic
+  art styles" — written, not spoken, and doing the headline's job
+- Bad: "A developer built free AI after a startup claimed the breakthrough" — short but empty
+
+**headline** — the same news with the specifics put back: product names, what exactly changed,
+what makes it notable. `simple` said what it is about; this says what actually happened. A reader
+only reaches it by deliberately swiping for more, so it may assume a little more. One sentence,
+**at most 20 words**.
 
 Start with who or what did the thing. Never open with a setup clause, a feeling, or scene-setting
-("Tired of seeing...", "In a world where...", "Frustrated by..."). Say what happened, with the jargon
-removed, and put the clause that makes it land — impressive, surprising or annoying — at the end.
+("Tired of seeing...", "In a world where...", "Frustrated by..."). Put the clause that makes it
+land — impressive, surprising or annoying — at the end. No em-dashes.
 
-- Good: "someone built a digital brain of a fly and used it to play Brood War"
-- Good: "a writer got ChatGPT to make event posters that don't look AI-generated, by naming art movements"
-- Bad: "Tired of bland AI flyers, one writer showed that asking for specific art movements breaks it
-  out of its default rut" — buries the news behind the writer's mood
+It must add something `simple` did not say. If the only difference is wording, the pair is wasted.
 
-No em-dashes. Short words.
+- simple: "someone found a way to make ChatGPT stop producing horrible event posters"
+  headline: "A writer got ChatGPT off its default look by naming art movements like Bauhaus and Memphis"
+- simple: "someone built a fly's brain and got it playing StarCraft"
+  headline: "Researchers simulated a fruit fly connectome and used it to play Brood War"
 
 **substance** — one to three sentences of actual substance, shaped by what the post is: the spec
 numbers for a launch, the method for research, the argument for an essay, who is annoyed for a
@@ -51,6 +74,19 @@ comment as sincere praise. Set to null if there is no thread or no real disagree
 one plain sentence. This is the only place general background knowledge is allowed.
 
 **entities** — the companies, projects, languages and people named. Short canonical names.
+
+## Highlighting
+
+In `simple`, `headline` and `substance`, wrap the **two or three most important words** of each
+field in double asterisks: `**like this**`. Mark only what carries the meaning — the thing that
+happened, the number that matters, the word a reader would repeat to someone else.
+
+- Good: "A writer found a trick to stop **AI posters** looking **generic**."
+- Bad: "**A writer found a trick** to stop **AI posters** looking **generic**." — marking a whole
+  clause highlights nothing
+
+Never mark more than three spans in one field, and never mark a whole sentence. Use asterisks
+nowhere else.
 
 **support** — one to three **verbatim** quotes from the source text above, copied exactly, that
 back what you wrote in `substance`. Six words minimum each. These are receipts, not prose: they are

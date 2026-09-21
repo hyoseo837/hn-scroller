@@ -34,6 +34,12 @@ SHEET_COMMENT_CHARS = 400
 MAX_ARTICLE_CHARS = 24_000  # ~6k tokens
 MIN_ARTICLE_CHARS = 500  # below this, fall back to title + comments
 CALL_SPACING_S = 5  # free tier is 5-15 RPM; 35 posts ~= 3 min
+PRICE_IN = 0.75   # USD per 1M input tokens
+PRICE_OUT = 3.75  # USD per 1M output tokens; thinking bills as output
+
+# Thinking is counted separately from total_output_tokens but billed as output,
+# and it runs ~3x the visible answer — so it dominates both cost and wall time.
+USAGE = {"calls": 0, "input": 0, "output": 0, "thought": 0}
 
 ROOT = Path(__file__).parent
 DATA = ROOT / "data"
@@ -43,6 +49,7 @@ PROMPT = ROOT / "prompt.md"
 SCHEMA = {
     "type": "object",
     "properties": {
+        "simple": {"type": "string"},
         "headline": {"type": "string"},
         "substance": {"type": ["string", "null"]},
         "support": {"type": "array", "items": {"type": "string"}},
@@ -58,7 +65,7 @@ SCHEMA = {
         },
         "entities": {"type": "array", "items": {"type": "string"}},
     },
-    "required": ["headline", "substance", "support", "camps", "terms", "entities"],
+    "required": ["simple", "headline", "substance", "support", "camps", "terms", "entities"],
 }
 
 # ------------------------------------------------------------- pure helpers
@@ -123,11 +130,21 @@ def peek(text: str) -> str:
     return (cut[:space] if space > 0 else cut).rstrip(" ,;:.\u2014-") + "\u2026"
 
 
-def assemble_card(post: dict, content: dict, comment_count: int, comments: list[str] | None = None) -> dict:
+def assemble_card(
+    post: dict,
+    content: dict,
+    comment_count: int,
+    comments: list[dict] | None = None,
+    image: str | None = None,
+) -> dict:
     """Code owns the envelope. `content` carries only what the model wrote."""
-    depth: list[dict] = [{"text": content["headline"]}]
+    # Easiest layer first: the vertical glance shows only this one.
+    depth: list[dict] = []
+    if content.get("simple"):
+        depth.append({"text": content["simple"], "tier": "simple"})
+    depth.append({"text": content["headline"], "tier": "headline"})
     if content.get("substance"):
-        tier = {"text": content["substance"]}
+        tier = {"text": content["substance"], "tier": "substance"}
         if content.get("data"):
             tier["data"] = content["data"]
         depth.append(tier)
@@ -144,7 +161,10 @@ def assemble_card(post: dict, content: dict, comment_count: int, comments: list[
         "terms": [t["term"] for t in content.get("terms") or []],
         "entities": content.get("entities") or [],
         # A peek for the sheet, verbatim and unprocessed. The full thread is on HN.
-        "comments": [peek(c) for c in (comments or [])[:SHEET_COMMENTS]],
+        "comments": [
+            {"by": c["by"], "text": peek(c["text"])} for c in (comments or [])[:SHEET_COMMENTS]
+        ],
+        "image": image,
     }
 
 
@@ -172,7 +192,7 @@ def model_input(title: str, article: str, comments: list[str]) -> str:
         else "\n(No article text available — work from the title and comments only.)"
     )
     parts.append(
-        "\nTOP-LEVEL COMMENTS:\n" + "\n".join(f"- {c}" for c in comments)
+        "\nTOP-LEVEL COMMENTS:\n" + "\n".join(f"- {c['by']}: {c['text']}" for c in comments)
         if comments
         else "\n(No comments yet.)"
     )
@@ -243,10 +263,42 @@ def top_comments(item: dict) -> list[str]:
     with ThreadPoolExecutor(max_workers=8) as pool:
         kids = list(pool.map(fetch, kid_ids))
     return [
-        strip_html(k["text"])
+        {"by": k.get("by") or "anon", "text": strip_html(k["text"])}
         for k in kids
         if k and k.get("text") and not k.get("dead") and not k.get("deleted")
     ]
+
+
+_META_IMAGE = re.compile(
+    r"<meta[^>]+(?:property|name)=[\"'](?:og:image(?::secure_url)?|twitter:image(?::src)?)[\"'][^>]*>",
+    re.IGNORECASE,
+)
+_CONTENT = re.compile(r"content=[\"']([^\"']+)[\"']", re.IGNORECASE)
+
+
+def hero_image(html: str, base_url: str) -> str | None:
+    """The article's own social image. og:image is what the author chose to
+    represent the piece, which beats guessing at the first <img> in the body."""
+    for tag in _META_IMAGE.findall(html or ""):
+        found = _CONTENT.search(tag)
+        if not found:
+            continue
+        url = urllib.parse.urljoin(base_url or "", found.group(1).strip())
+        if url.startswith(("http://", "https://")):
+            return url
+    return None
+
+
+def fetch_page(url: str) -> str:
+    """Raw HTML, fetched once — text and image both come out of it."""
+    try:
+        req = urllib.request.Request(url, headers={"user-agent": "hn-scroller/1.0"})
+        with urllib.request.urlopen(req, timeout=15) as res:
+            if "text/html" not in res.headers.get("content-type", ""):
+                return ""
+            return res.read(4_000_000).decode(res.headers.get_content_charset() or "utf-8", "replace")
+    except Exception:
+        return ""  # paywall, PDF, JS-rendered, dead link — fall back to comments
 
 
 def article_text(item: dict) -> str:
@@ -266,18 +318,22 @@ def article_text(item: dict) -> str:
 
 
 def sources(item_id) -> dict:
-    """Everything the model is allowed to see for one post."""
+    """Everything the model is allowed to see for one post, fetched once."""
     item = hn_item(item_id)
+    url = item.get("url") or ""
     with ThreadPoolExecutor(max_workers=2) as pool:
-        article_future = pool.submit(article_text, item)
+        page_future = pool.submit(fetch_page, url) if url and not item.get("text") else None
         comments = top_comments(item)
-        raw = article_future.result()
+        html = page_future.result() if page_future else ""
+    raw = strip_html(item["text"]) if item.get("text") else strip_html(html)[:MAX_ARTICLE_CHARS]
     article = raw if len(raw) >= MIN_ARTICLE_CHARS else ""  # too thin -> comments carry it
+    bodies = [c["text"] for c in comments]
     return {
         "item": item,
         "article": article,
         "comments": comments,
-        "source": article + "\n" + "\n".join(comments),  # what claims are checked against
+        "image": hero_image(html, url),
+        "source": article + "\n" + "\n".join(bodies),  # what claims are checked against
         "usable": bool(article) or bool(comments),
     }
 
@@ -311,7 +367,23 @@ def card_content(title: str, article: str, comments: list[str]) -> dict:
             body = json.loads(res.read())
     except urllib.error.HTTPError as err:
         raise RuntimeError(f"gemini {err.code}: {err.read()[:300].decode('utf-8', 'replace')}")
+
+    used = body.get("usage") or {}
+    USAGE["calls"] += 1
+    USAGE["input"] += used.get("total_input_tokens") or 0
+    USAGE["output"] += used.get("total_output_tokens") or 0
+    USAGE["thought"] += used.get("total_thought_tokens") or 0
     return json.loads(output_text(body))
+
+
+def usage_line() -> str:
+    billed_out = USAGE["output"] + USAGE["thought"]
+    cost = USAGE["input"] / 1e6 * PRICE_IN + billed_out / 1e6 * PRICE_OUT
+    share = USAGE["thought"] / billed_out * 100 if billed_out else 0
+    return (
+        f"{USAGE['calls']} call{'s' if USAGE['calls'] != 1 else ''} | in {USAGE['input']:,} | out {billed_out:,} "
+        f"({USAGE['thought']:,} thinking, {share:.0f}%) | ${cost:.3f}"
+    )
 
 
 # --------------------------------------------------------------------- main
@@ -381,6 +453,7 @@ def main() -> None:
                     content,
                     item.get("descendants") or 0,
                     got["comments"],
+                    got["image"],
                 )
             )
             # ponytail: re-glosses terms we already know and drops the result. One wasted
@@ -402,6 +475,7 @@ def main() -> None:
     write_json("published.json", published)
     write_json("index.json", sorted({date, *index}, reverse=True))
     print(f"wrote data/{date}.json ({len(cards)} cards)")
+    print(usage_line())
 
 
 # ------------------------------------------------------------------ dry run
@@ -459,8 +533,10 @@ def sample(n: int) -> None:
             content,
             item.get("descendants") or 0,
             got["comments"],
+            got["image"],
         )
         print(json.dumps(card, indent=2, ensure_ascii=False))
+        print(f"  usage: {usage_line()}")
         # the card keeps only term names; show the glosses so they can be judged too
         for term in content.get("terms") or []:
             print(f"  glossary[{term['term']}] = {term['gloss']}")
@@ -512,6 +588,7 @@ def check() -> None:
     full = assemble_card(
         post,
         {
+            "simple": "s",
             "headline": "h",
             "substance": "s",
             "data": [["latency", "2.1s"]],
@@ -521,14 +598,24 @@ def check() -> None:
         },
         470,
     )
-    assert len(full["depth"]) == 3, "headline + substance + link"
-    assert full["depth"][1]["data"] == [["latency", "2.1s"]]
+    assert len(full["depth"]) == 4, "simple + headline + substance + link"
+    assert [d.get("tier") for d in full["depth"]] == ["simple", "headline", "substance", None]
+    assert full["depth"][2]["data"] == [["latency", "2.1s"]]
     assert full["terms"] == ["wasm"], "card carries term names, glosses live in the glossary"
     assert full["comments"] == [], "no comments passed means no peek"
-    peek_card = assemble_card(post, {"headline": "h"}, 9, ["long word " * 90, "b", "c", "d", "e", "f"])
+    many = [{"by": f"u{i}", "text": "long word " * 90} for i in range(6)]
+    peek_card = assemble_card(post, {"headline": "h"}, 9, many)
     assert len(peek_card["comments"]) == SHEET_COMMENTS, "sheet peek is capped"
-    assert peek_card["comments"][0].endswith("\u2026"), "long comments are truncated"
-    assert len(peek_card["comments"][0]) <= SHEET_COMMENT_CHARS + 1
+    assert peek_card["comments"][0]["by"] == "u0", "the author is kept — attribution is readability"
+    assert peek_card["comments"][0]["text"].endswith("\u2026"), "long comments are truncated"
+    assert len(peek_card["comments"][0]["text"]) <= SHEET_COMMENT_CHARS + 1
+    assert peek_card["image"] is None, "no image unless the page offered one"
+
+    # og:image, with a relative URL resolved against the article
+    page = '''<meta property="og:image" content="/img/hero.png"><meta name="twitter:image" content="x.png">'''
+    assert hero_image(page, "https://ex.test/a/b.html") == "https://ex.test/img/hero.png"
+    assert hero_image("<p>no meta here</p>", "https://ex.test/") is None
+    assert hero_image("", "") is None
     assert peek("short one") == "short one", "short comments are left alone"
     assert not peek("word " * 200).rstrip("\u2026").endswith(" "), "no dangling space"
     assert " ".join(peek("alpha beta " * 90).rstrip("\u2026").split()[-1:]) in ("alpha", "beta"), (
@@ -537,7 +624,10 @@ def check() -> None:
     assert full["id"] == 7 and full["comment_count"] == 470
 
     thin = assemble_card(post, {"headline": "h", "substance": None, "camps": None}, 0)
-    assert len(thin["depth"]) == 2, "no substance means a 2-card stack, never a padded one"
+    assert len(thin["depth"]) == 2, "older cards without a simple tier still render"
+    thin3 = assemble_card(post, {"simple": "s", "headline": "h", "substance": None}, 0)
+    assert len(thin3["depth"]) == 3, "no substance means a shorter stack, never a padded one"
+    assert thin3["depth"][-1]["link"] is True
     assert thin["depth"][1]["link"] is True
     assert thin["camps"] is None and thin["terms"] == []
 
@@ -586,6 +676,16 @@ def check() -> None:
             assert "no text block" in str(err)
         else:
             raise AssertionError(f"output_text should raise on {bad}")
+
+    USAGE.update(calls=2, input=11_850, output=650, thought=1_760)
+    line = usage_line()
+    assert "2 calls" in line and "73%" in line, line  # thinking dominates output
+    USAGE.update(calls=1)
+    assert "1 call |" in usage_line(), "no stray plural"
+    USAGE.update(calls=2)
+    assert "$0.018" in line, line  # 11850*0.75 + 2410*3.75, per 1M
+    USAGE.update(calls=0, input=0, output=0, thought=0)
+    assert "$0.000" in usage_line(), "no calls must not divide by zero"
 
     assert PROMPT.exists(), "prompt.md is missing"
     assert "Absolute rule" in PROMPT.read_text(encoding="utf-8")

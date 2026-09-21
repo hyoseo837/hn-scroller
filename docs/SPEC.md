@@ -19,13 +19,18 @@ research them one by one.
 
 ## Content model
 
-One post = one **card stack**. Depth varies per post: 2 to 4 cards, whatever the source supports.
+One post = one **card stack**. Depth varies per post: 3 or 4 cards, whatever the source supports.
 
 | Depth | Holds |
 |---|---|
-| 1 | De-jargoned headline. Subject, action, and the clause that makes it land. |
-| 2 | The substance — shaped by post type: spec table (launch), method (research), argument (essay), the two camps (controversy). |
-| 3 | The source link. |
+| 1 | **The glance.** One spoken sentence saying what the post is about, no jargon — the only layer most readers ever see. Not compressed: vague-but-short is worse than clear-but-longer. |
+| 2 | The headline: the specifics (product names, what changed, why notable). Must add something tier 1 did not say. Max 20 words. |
+| 3 | The substance — shaped by post type: spec table (launch), method (research), argument (essay), the two camps (controversy). |
+| 4 | The source link. |
+
+Two or three key words per text tier are marked `**like this**` and render as a highlight. The
+viewer parses them by splitting and appending text nodes, never `innerHTML` — this text comes from
+a model and sits beside raw comment text.
 
 Rules:
 
@@ -33,7 +38,7 @@ Rules:
 2. Numbers, dates and versions only if they appear verbatim in the fetched source. No model recall.
    Spelling a number out is fine ("one hundred" -> 100); adding one is not. Where the source names
    something specifically (a "village fayre"), its word is used, not a near-synonym.
-3. **Depth 2 must show receipts.** The model returns verbatim source quotes backing its substance;
+3. **The substance tier must show receipts.** The model returns verbatim source quotes backing its substance;
    the code checks each by exact match and drops the whole tier if any fails. Prompt instructions
    alone did not hold — a measured run invented a fluent technical claim with no source at all.
 4. Never pad a depth tier. A 2-card post is correct when there is no substance for a third.
@@ -50,8 +55,16 @@ Rules:
 | Swipe right | Deeper into this post. |
 | Swipe left | Back out. **Required before swipe up works** — depth locks the vertical axis. |
 | Revisit a post | Starts at depth 1. Depth is not remembered. |
+| ↑ ↓ / Space / j k | Previous / next post — **from any depth**. |
+| ← → / h l | Out / deeper. `c` opens comments, `g` the glossary, Escape closes. |
 
-Depth must be visually obvious, since the vertical gesture is dead there.
+Keyboard is not a second-class path: mandatory scroll-snap defeats native arrow scrolling (the
+small increment is snapped straight back, so the key looks ignored), so keys move whole cards, and
+one wheel gesture moves one card with a cooldown against trackpad momentum. The depth lock does
+**not** apply to keys — it exists to stop ambiguous diagonal thumb swipes, which a keypress cannot be.
+
+Depth must be visually obvious, since the vertical gesture is dead there — the hint says so, and
+says it differently on a pointer device, where the axis is never locked.
 
 ## Comments and glossary
 

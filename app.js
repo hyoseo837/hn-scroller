@@ -13,6 +13,9 @@ let cards = [];
 let glossary = {};
 let days = [];
 let date = "";
+// A real pointer means a keyboard is likely: hints and the depth lock differ.
+const KEYBOARD = matchMedia("(hover: hover) and (pointer: fine)").matches;
+
 let post = 0; // which post
 let depth = 0; // how deep in it
 
@@ -22,6 +25,16 @@ const el = (tag, cls, text) => {
   if (text != null) node.textContent = text;
   return node;
 };
+// Render **key words** as highlights. Split-and-append with text nodes — never
+// innerHTML: this text comes from a model and sits beside raw comment text.
+const marked = (text, node) => {
+  (text || "").split(/\*\*(.+?)\*\*/g).forEach((part, i) => {
+    if (!part) return;
+    node.append(i % 2 ? el("strong", null, part) : part);
+  });
+  return node;
+};
+
 const host = (url) => {
   try {
     return new URL(url).hostname.replace(/^www\./, "");
@@ -54,11 +67,23 @@ function renderCard(card) {
       box.append(hn);
       wrap.append(box);
     } else {
-      if (i > 0) wrap.append(el("div", "kicker", "Detail"));
-      wrap.append(el("p", i === 0 ? "headline" : "substance", tier.text));
+      // `tier` names the layer; older cards without it fall back to position.
+      const kind = tier.tier || (i === 0 ? "headline" : "substance");
+      if (kind === "substance") wrap.append(el("div", "kicker", "Detail"));
+      wrap.append(marked(tier.text, el("p", kind)));
       // Where it came from is context a beginner needs: a personal blog and a
       // vendor announcement read very differently.
       if (i === 0) wrap.append(el("div", "from", card.url ? host(card.url) : "Hacker News"));
+      if (i === 0 && card.image) {
+        const fig = el("div", "hero");
+        const img = el("img");
+        img.src = card.image;
+        img.alt = "";
+        img.loading = "lazy";
+        img.addEventListener("error", () => fig.remove()); // dead hotlink: leave no gap
+        fig.append(img);
+        wrap.prepend(fig);
+      }
       if (tier.data?.length) {
         const table = el("div", "data");
         for (const [label, value] of tier.data) {
@@ -117,7 +142,10 @@ function syncChrome() {
   btnCmt.textContent = card ? `💬 ${card.comment_count}` : "💬 —";
   btnGlo.textContent = `📖 ${terms}`;
   // A dead vertical gesture with no visible cause reads as broken, so say so.
-  hint.textContent = depth > 0 ? "← swipe back to continue" : card?.depth.length > 1 ? "swipe → for more" : "";
+  // On a keyboard the vertical axis is never locked, so the hint differs.
+  const deeper = card?.depth.length > 1;
+  if (KEYBOARD) hint.textContent = deeper ? "← → depth · ↑ ↓ posts" : "↑ ↓ posts";
+  else hint.textContent = depth > 0 ? "← swipe back to continue" : deeper ? "swipe → for more" : "";
 }
 
 // Depth locks the vertical axis (SPEC: swipe left before swipe up).
@@ -155,6 +183,78 @@ feed.addEventListener(
   },
   { passive: true },
 );
+
+// One wheel gesture = one card. Mandatory snap turns a small delta into a
+// snap-back, and trackpad momentum fires dozens of events per flick, so the
+// cooldown is what stops a single swipe from flying past ten posts.
+let wheelUntil = 0;
+feed.addEventListener(
+  "wheel",
+  (event) => {
+    if (!sheet.hidden) return;
+    if (Math.abs(event.deltaY) <= Math.abs(event.deltaX)) return; // horizontal intent
+    event.preventDefault();
+    const now = Date.now();
+    if (now < wheelUntil || Math.abs(event.deltaY) < 6) return;
+    wheelUntil = now + 420;
+    goToPost(post + (event.deltaY > 0 ? 1 : -1));
+  },
+  { passive: false },
+);
+
+// ---------------------------------------------------------------- keyboard
+
+// Native arrow scrolling is useless here: mandatory snap drags the small
+// increment straight back, so the key looks ignored. Move whole cards instead.
+function goToPost(next) {
+  next = Math.max(0, Math.min(next, feed.children.length - 1));
+  const target = feed.children[next];
+  if (!target || next === post) return;
+  const current = feed.children[post];
+  if (current) current.scrollLeft = 0; // depth is never remembered
+  lockVertical(false); // a keypress is never an ambiguous diagonal
+  target.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+}
+
+function goToDepth(next) {
+  const section = feed.children[post];
+  if (!section) return;
+  const last = (cards[post]?.depth.length ?? 1) - 1;
+  next = Math.max(0, Math.min(next, last));
+  section.scrollTo({ left: next * section.clientWidth, behavior: "smooth" });
+}
+
+const KEYS = {
+  ArrowDown: () => goToPost(post + 1),
+  ArrowUp: () => goToPost(post - 1),
+  PageDown: () => goToPost(post + 1),
+  PageUp: () => goToPost(post - 1),
+  " ": () => goToPost(post + 1),
+  j: () => goToPost(post + 1),
+  k: () => goToPost(post - 1),
+  ArrowRight: () => goToDepth(depth + 1),
+  ArrowLeft: () => goToDepth(depth - 1),
+  l: () => goToDepth(depth + 1),
+  h: () => goToDepth(depth - 1),
+  c: () => !btnCmt.disabled && btnCmt.click(),
+  g: () => !btnGlo.disabled && btnGlo.click(),
+};
+
+document.addEventListener("keydown", (event) => {
+  if (event.metaKey || event.ctrlKey || event.altKey) return;
+  if (!sheet.hidden) {
+    // Let arrows scroll the open sheet; only Escape is ours.
+    if (event.key === "Escape") {
+      event.preventDefault();
+      closeSheet();
+    }
+    return;
+  }
+  const act = KEYS[event.key];
+  if (!act) return;
+  event.preventDefault(); // stop Space and arrows scrolling the page instead
+  act();
+});
 
 // Resume is per-device and only ever within one day — a day has a bottom, so
 // there is no backlog to feel guilty about.
@@ -202,9 +302,20 @@ scrim.addEventListener("click", closeSheet);
 btnCmt.addEventListener("click", () => {
   const card = cards[post];
   openSheet(`${card.comment_count} comments`, (box) => {
-    if (card.camps) box.append(el("p", null, card.camps));
+    if (card.camps) {
+      const callout = el("div", "camps");
+      callout.append(el("div", "camps-label", "The split"));
+      callout.append(marked(card.camps, el("p")));
+      box.append(callout);
+    }
     // Verbatim and unprocessed. Top-level only — the tree is deliberately flattened.
-    (card.comments || []).forEach((text) => box.append(el("div", "cmt", text)));
+    (card.comments || []).forEach((raw) => {
+      const { by, text } = typeof raw === "string" ? { by: "", text: raw } : raw;
+      const row = el("article", "cmt");
+      if (by) row.append(el("div", "who", by));
+      row.append(el("p", null, text));
+      box.append(row);
+    });
     const more = el("a", null, "Read the full thread on HN →");
     more.href = card.hn;
     more.target = "_blank";
