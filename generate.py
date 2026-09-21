@@ -85,12 +85,24 @@ _ENTITIES = {
 
 
 def strip_html(html: str) -> str:
+    """Flatten to text, but keep the structure a reader would see.
+
+    Collapsing everything to one line loses which number belongs to which label,
+    so spec tables stop producing `data` rows. Cell and block boundaries survive;
+    quote matching is unaffected because _normalize collapses whitespace anyway.
+    """
     text = _DROP_BLOCKS.sub(" ", html)
     text = re.sub(r"<!--.*?-->", " ", text, flags=re.DOTALL)
+    text = re.sub(r"</(?:td|th)\s*>", " | ", text, flags=re.IGNORECASE)
+    text = re.sub(r"</(?:tr|p|div|li|h[1-6]|section|article)\s*>", "\n", text, flags=re.IGNORECASE)
+    text = re.sub(r"<br\s*/?>", "\n", text, flags=re.IGNORECASE)
     text = re.sub(r"<[^>]+>", " ", text)
     for entity, char in _ENTITIES.items():
         text = text.replace(entity, char)
-    return re.sub(r"\s+", " ", text).strip()
+    text = re.sub(r"[^\S\n]+", " ", text)  # collapse spaces, keep line breaks
+    text = re.sub(r"\s*\n\s*", "\n", text)
+    text = re.sub(r"\s*\|\s*(?=\n|$)", "", text)  # last cell of a row needs no separator
+    return re.sub(r"\n{3,}", "\n\n", text).strip(" \n|")
 
 
 def select_posts(hits: list[dict], published: list, cap: int = CAP) -> list[dict]:
@@ -102,7 +114,9 @@ def select_posts(hits: list[dict], published: list, cap: int = CAP) -> list[dict
 
 
 def _normalize(text: str) -> str:
-    return re.sub(r"[^a-z0-9 ]+", " ", re.sub(r"\s+", " ", text.lower())).strip()
+    """Punctuation out first, then collapse — the other order leaves a run of
+    spaces where punctuation was, and a valid quote then fails to match."""
+    return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9]+", " ", text.lower())).strip()
 
 
 def unsupported_quotes(support: list[str], source: str, min_words: int = 6) -> list[str]:
@@ -148,7 +162,6 @@ def assemble_card(
         if content.get("data"):
             tier["data"] = content["data"]
         depth.append(tier)
-    depth.append({"link": True})
 
     return {
         "id": post["id"],
@@ -548,6 +561,17 @@ def sample(n: int) -> None:
 
 def check() -> None:
     assert strip_html("<p>hi <b>there</b></p>") == "hi there"
+    # a spec table must keep label-to-number pairing, or `data` rows go missing
+    table = "<table><tr><td>Latency P50</td><td>32.8 ms</td></tr><tr><td>ECE</td><td>0.081</td></tr></table>"
+    assert strip_html(table) == "Latency P50 | 32.8 ms\nECE | 0.081", strip_html(table)
+    assert strip_html("<p>one</p><p>two</p>") == "one\ntwo", "blocks stay apart"
+    assert strip_html("a<br>b") == "a\nb"
+    # quote checking must survive the line breaks
+    # a quote must still match across the cell separators we just introduced
+    assert unsupported_quotes(["Latency P50 | 32.8 ms | ECE"], strip_html(table)) == []
+    # punctuation between words must not defeat a real quote
+    assert unsupported_quotes(["one hundred poster styles, with prompts"],
+                              "a catalogue of one hundred poster styles - with prompts") == []
     assert strip_html("<script>evil()</script>ok") == "ok"
     assert strip_html("a &amp; b&#x27;s") == "a & b's"
 
@@ -598,9 +622,9 @@ def check() -> None:
         },
         470,
     )
-    assert len(full["depth"]) == 4, "simple + headline + substance + link"
-    assert [d.get("tier") for d in full["depth"]] == ["simple", "headline", "substance", None]
-    assert full["depth"][2]["data"] == [["latency", "2.1s"]]
+    assert len(full["depth"]) == 3, "simple + headline + substance; the link is a button now"
+    assert [d.get("tier") for d in full["depth"]] == ["simple", "headline", "substance"]
+    assert full["depth"][2]["data"] == [["latency", "2.1s"]]  # substance tier
     assert full["terms"] == ["wasm"], "card carries term names, glosses live in the glossary"
     assert full["comments"] == [], "no comments passed means no peek"
     many = [{"by": f"u{i}", "text": "long word " * 90} for i in range(6)]
@@ -624,11 +648,10 @@ def check() -> None:
     assert full["id"] == 7 and full["comment_count"] == 470
 
     thin = assemble_card(post, {"headline": "h", "substance": None, "camps": None}, 0)
-    assert len(thin["depth"]) == 2, "older cards without a simple tier still render"
+    assert len(thin["depth"]) == 1, "older cards without a simple tier still render"
     thin3 = assemble_card(post, {"simple": "s", "headline": "h", "substance": None}, 0)
-    assert len(thin3["depth"]) == 3, "no substance means a shorter stack, never a padded one"
-    assert thin3["depth"][-1]["link"] is True
-    assert thin["depth"][1]["link"] is True
+    assert len(thin3["depth"]) == 2, "no substance means a shorter stack, never a padded one"
+    assert not any("link" in d for d in thin3["depth"]), "the link is a button, not a card"
     assert thin["camps"] is None and thin["terms"] == []
 
     # the model must never be able to set these
@@ -638,9 +661,13 @@ def check() -> None:
     # Receipts. A fabricated claim has no real quote behind it.
     src = "The author made a catalogue of one hundred poster styles, with ready-to-paste prompts."
     assert unsupported_quotes(["a catalogue of one hundred poster styles"], src) == []
-    assert unsupported_quotes(["A CATALOGUE  of one-hundred!! poster styles"], src) == [
-        "A CATALOGUE  of one-hundred!! poster styles"
-    ], "normalising must not let a changed number through"
+    # Normalising tolerates formatting, never facts.
+    assert unsupported_quotes(["A CATALOGUE  of one-hundred!! poster styles"], src) == [], (
+        "case, spacing and hyphenation are not changes to the quote"
+    )
+    assert unsupported_quotes(["a catalogue of two hundred poster styles"], src), (
+        "a different number is a different claim and must be rejected"
+    )
     assert unsupported_quotes(["chat context caused hallucinated filler text"], src), "fabrication"
     assert unsupported_quotes(["poster styles"], src), "too short to prove anything"
 
@@ -650,7 +677,7 @@ def check() -> None:
     faked = {"headline": "h", "substance": "invented", "support": ["context caused hallucinated text"]}
     assert verify_substance(faked, src), "must report the bad quote"
     assert faked["substance"] is None, "unsupported substance must be dropped"
-    assert len(assemble_card({"id": 1, "url": None, "title": "t"}, faked, 0)["depth"]) == 2
+    assert len(assemble_card({"id": 1, "url": None, "title": "t"}, faked, 0)["depth"]) == 1
 
     naked = {"headline": "h", "substance": "no receipts", "support": []}
     assert verify_substance(naked, src) == [] and naked["substance"] is None, "no quotes, no tier"

@@ -7,6 +7,7 @@ const sheet = document.getElementById("sheet");
 const scrim = document.getElementById("scrim");
 const btnCmt = document.getElementById("btn-cmt");
 const btnGlo = document.getElementById("btn-glo");
+const btnSrc = document.getElementById("btn-src");
 const hint = document.getElementById("hint");
 
 let cards = [];
@@ -35,6 +36,17 @@ const marked = (text, node) => {
   return node;
 };
 
+// The link tier used to be a final card. It is an action now, not a destination,
+// so it lives in the button bar; older day files still carry it, hence the filter.
+const tiersOf = (card) => (card?.depth || []).filter((tier) => !tier.link);
+
+// No image? Derive a field from the post id. Deterministic, so a card looks the
+// same every visit, and dark enough that the caption stays legible over it.
+const tint = (id) => {
+  const hue = (Number(id) * 47) % 360;
+  return `linear-gradient(155deg, hsl(${hue} 48% 30%), hsl(${(hue + 55) % 360} 55% 12%))`;
+};
+
 const host = (url) => {
   try {
     return new URL(url).hostname.replace(/^www\./, "");
@@ -48,51 +60,44 @@ const host = (url) => {
 function renderCard(card) {
   const section = el("section", "post");
 
-  card.depth.forEach((tier, i) => {
+  tiersOf(card).forEach((tier, i) => {
     const wrap = el("article", "card");
-    if (tier.link) {
-      const box = el("div", "src");
-      box.append(el("span", "host", card.url ? host(card.url) : "discussion on Hacker News"));
-      if (card.url) {
-        const a = el("a", null, "Read the original →");
-        a.href = card.url;
-        a.target = "_blank";
-        a.rel = "noopener";
-        box.append(a, el("div", null, " "));
-      }
-      const hn = el("a", null, `All ${card.comment_count} comments on HN →`);
-      hn.href = card.hn;
-      hn.target = "_blank";
-      hn.rel = "noopener";
-      box.append(hn);
-      wrap.append(box);
-    } else {
-      // `tier` names the layer; older cards without it fall back to position.
-      const kind = tier.tier || (i === 0 ? "headline" : "substance");
-      if (kind === "substance") wrap.append(el("div", "kicker", "Detail"));
-      wrap.append(marked(tier.text, el("p", kind)));
-      // Where it came from is context a beginner needs: a personal blog and a
-      // vendor announcement read very differently.
-      if (i === 0) wrap.append(el("div", "from", card.url ? host(card.url) : "Hacker News"));
-      if (i === 0 && card.image) {
-        const fig = el("div", "hero");
+    // `tier` names the layer; older cards without it fall back to position.
+    const kind = tier.tier || (i === 0 ? "headline" : "substance");
+    if (kind === "substance") wrap.append(el("div", "kicker", "Detail"));
+    wrap.append(marked(tier.text, el("p", kind)));
+    // Where it came from is context a beginner needs: a personal blog and a
+    // vendor announcement read very differently.
+    if (i === 0) wrap.append(el("div", "from", card.url ? host(card.url) : "Hacker News"));
+    if (i === 0) {
+      wrap.classList.add("glance");
+      const field = el("div", "field");
+      if (card.image) {
         const img = el("img");
         img.src = card.image;
         img.alt = "";
         img.loading = "lazy";
-        img.addEventListener("error", () => fig.remove()); // dead hotlink: leave no gap
-        fig.append(img);
-        wrap.prepend(fig);
+        // A dead hotlink falls back to the gradient rather than a white hole.
+        img.addEventListener("error", () => {
+          img.remove();
+          field.style.background = tint(card.id);
+        });
+        field.append(img);
+      } else {
+        field.style.background = tint(card.id);
       }
-      if (tier.data?.length) {
-        const table = el("div", "data");
-        for (const [label, value] of tier.data) {
-          const row = el("div");
-          row.append(el("span", null, label), el("span", null, value));
-          table.append(row);
-        }
-        wrap.append(table);
+      wrap.prepend(el("div", "scrim"));
+      wrap.prepend(el("div", "frost"));
+      wrap.prepend(field);
+    }
+    if (tier.data?.length) {
+      const table = el("div", "data");
+      for (const [label, value] of tier.data) {
+        const row = el("div");
+        row.append(el("span", null, label), el("span", null, value));
+        table.append(row);
       }
+      wrap.append(table);
     }
     section.append(wrap);
   });
@@ -129,21 +134,26 @@ function syncChrome() {
 
   dots.textContent = "";
   if (card) {
-    card.depth.forEach((_, i) => {
+    tiersOf(card).forEach((_, i) => {
       const dot = el("i");
       if (i === depth) dot.classList.add("on");
       dots.append(dot);
     });
   }
 
+  // The chrome flips to light while it sits over a glance card's visual field.
+  document.querySelector(".phone").classList.toggle("on-visual", depth === 0 && Boolean(card));
+
   const terms = card?.terms?.length ?? 0;
   btnCmt.disabled = !card || (!card.comments?.length && !card.camps);
   btnGlo.disabled = !terms;
+  btnSrc.disabled = !card;
+  btnSrc.title = card?.url ? `Read the original on ${host(card.url)}` : "Open the discussion on HN";
   btnCmt.textContent = card ? `💬 ${card.comment_count}` : "💬 —";
   btnGlo.textContent = `📖 ${terms}`;
   // A dead vertical gesture with no visible cause reads as broken, so say so.
   // On a keyboard the vertical axis is never locked, so the hint differs.
-  const deeper = card?.depth.length > 1;
+  const deeper = tiersOf(card).length > 1;
   if (KEYBOARD) hint.textContent = deeper ? "← → depth · ↑ ↓ posts" : "↑ ↓ posts";
   else hint.textContent = depth > 0 ? "← swipe back to continue" : deeper ? "swipe → for more" : "";
 }
@@ -219,7 +229,7 @@ function goToPost(next) {
 function goToDepth(next) {
   const section = feed.children[post];
   if (!section) return;
-  const last = (cards[post]?.depth.length ?? 1) - 1;
+  const last = Math.max(0, tiersOf(cards[post]).length - 1);
   next = Math.max(0, Math.min(next, last));
   section.scrollTo({ left: next * section.clientWidth, behavior: "smooth" });
 }
@@ -238,6 +248,7 @@ const KEYS = {
   h: () => goToDepth(depth - 1),
   c: () => !btnCmt.disabled && btnCmt.click(),
   g: () => !btnGlo.disabled && btnGlo.click(),
+  o: () => !btnSrc.disabled && btnSrc.click(),
 };
 
 document.addEventListener("keydown", (event) => {
@@ -282,6 +293,8 @@ function restore() {
 // ------------------------------------------------------------------- sheet
 
 function openSheet(title, build) {
+  // A button keeps focus after a click, so a later Enter would re-fire it.
+  document.activeElement?.blur?.();
   sheet.textContent = "";
   sheet.append(el("h2", null, title));
   build(sheet);
@@ -298,6 +311,11 @@ function closeSheet() {
   }, 240);
 }
 scrim.addEventListener("click", closeSheet);
+// A bfcache restore replays the DOM exactly as it was, boot code included — so
+// a sheet left open when you navigated away comes back open. Close it.
+addEventListener("pageshow", (event) => {
+  if (event.persisted && !sheet.hidden) closeSheet();
+});
 
 btnCmt.addEventListener("click", () => {
   const card = cards[post];
@@ -324,6 +342,12 @@ btnCmt.addEventListener("click", () => {
     row.append(more);
     box.append(row);
   });
+});
+
+// Self posts have no external url — the discussion is the article.
+btnSrc.addEventListener("click", () => {
+  const card = cards[post];
+  if (card) window.open(card.url || card.hn, "_blank", "noopener");
 });
 
 btnGlo.addEventListener("click", () => {
@@ -360,6 +384,12 @@ const json = async (path) => {
 };
 
 (async () => {
+  // Start from a known-closed sheet: bfcache and soft reloads can restore live
+  // DOM state, and a sheet that is open before anything is rendered is nonsense.
+  sheet.hidden = true;
+  sheet.classList.remove("open");
+  scrim.classList.remove("open");
+
   days = await json("data/index.json").catch(() => []);
   glossary = await json("data/glossary.json").catch(() => ({}));
   const wanted = new URLSearchParams(location.search).get("date");

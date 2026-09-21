@@ -19,14 +19,17 @@ research them one by one.
 
 ## Content model
 
-One post = one **card stack**. Depth varies per post: 3 or 4 cards, whatever the source supports.
+One post = one **card stack**. Depth varies per post: 2 or 3 cards, whatever the source supports.
 
 | Depth | Holds |
 |---|---|
 | 1 | **The glance.** One spoken sentence saying what the post is about, no jargon — the only layer most readers ever see. Not compressed: vague-but-short is worse than clear-but-longer. |
 | 2 | The headline: the specifics (product names, what changed, why notable). Must add something tier 1 did not say. Max 20 words. |
 | 3 | The substance — shaped by post type: spec table (launch), method (research), argument (essay), the two camps (controversy). |
-| 4 | The source link. |
+
+The source is **not** a card. It is a 🔗 button beside the comment button, because reading the
+original is an action you take at any depth, not a place the swipe has to end. Older day files
+still carry a link tier; the viewer filters it out.
 
 Two or three key words per text tier are marked `**like this**` and render as a highlight. The
 viewer parses them by splitting and appending text nodes, never `innerHTML` — this text comes from
