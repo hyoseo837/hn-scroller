@@ -50,7 +50,6 @@ SCHEMA = {
     "type": "object",
     "properties": {
         "simple": {"type": "string"},
-        "headline": {"type": "string"},
         "substance": {"type": ["string", "null"]},
         "support": {"type": "array", "items": {"type": "string"}},
         "data": {"type": "array", "items": {"type": "array", "items": {"type": "string"}}},
@@ -65,7 +64,7 @@ SCHEMA = {
         },
         "entities": {"type": "array", "items": {"type": "string"}},
     },
-    "required": ["simple", "headline", "substance", "support", "camps", "terms", "entities"],
+    "required": ["simple", "substance", "support", "camps", "terms", "entities"],
 }
 
 # ------------------------------------------------------------- pure helpers
@@ -152,11 +151,9 @@ def assemble_card(
     image: str | None = None,
 ) -> dict:
     """Code owns the envelope. `content` carries only what the model wrote."""
-    # Easiest layer first: the vertical glance shows only this one.
-    depth: list[dict] = []
-    if content.get("simple"):
-        depth.append({"text": content["simple"], "tier": "simple"})
-    depth.append({"text": content["headline"], "tier": "headline"})
+    # Two rungs only: the glance, then the detail. A middle "headline" tier just
+    # restated the glance in longer words, and cost more to generate than it added.
+    depth: list[dict] = [{"text": content["simple"], "tier": "simple"}]
     if content.get("substance"):
         tier = {"text": content["substance"], "tier": "substance"}
         if content.get("data"):
@@ -613,7 +610,6 @@ def check() -> None:
         post,
         {
             "simple": "s",
-            "headline": "h",
             "substance": "s",
             "data": [["latency", "2.1s"]],
             "camps": "two camps",
@@ -622,13 +618,13 @@ def check() -> None:
         },
         470,
     )
-    assert len(full["depth"]) == 3, "simple + headline + substance; the link is a button now"
-    assert [d.get("tier") for d in full["depth"]] == ["simple", "headline", "substance"]
-    assert full["depth"][2]["data"] == [["latency", "2.1s"]]  # substance tier
+    assert len(full["depth"]) == 2, "glance + detail; link is a button, headline is gone"
+    assert [d.get("tier") for d in full["depth"]] == ["simple", "substance"]
+    assert full["depth"][1]["data"] == [["latency", "2.1s"]]  # substance tier
     assert full["terms"] == ["wasm"], "card carries term names, glosses live in the glossary"
     assert full["comments"] == [], "no comments passed means no peek"
     many = [{"by": f"u{i}", "text": "long word " * 90} for i in range(6)]
-    peek_card = assemble_card(post, {"headline": "h"}, 9, many)
+    peek_card = assemble_card(post, {"simple": "s"}, 9, many)
     assert len(peek_card["comments"]) == SHEET_COMMENTS, "sheet peek is capped"
     assert peek_card["comments"][0]["by"] == "u0", "the author is kept — attribution is readability"
     assert peek_card["comments"][0]["text"].endswith("\u2026"), "long comments are truncated"
@@ -647,11 +643,9 @@ def check() -> None:
     )
     assert full["id"] == 7 and full["comment_count"] == 470
 
-    thin = assemble_card(post, {"headline": "h", "substance": None, "camps": None}, 0)
-    assert len(thin["depth"]) == 1, "older cards without a simple tier still render"
-    thin3 = assemble_card(post, {"simple": "s", "headline": "h", "substance": None}, 0)
-    assert len(thin3["depth"]) == 2, "no substance means a shorter stack, never a padded one"
-    assert not any("link" in d for d in thin3["depth"]), "the link is a button, not a card"
+    thin = assemble_card(post, {"simple": "s", "substance": None, "camps": None}, 0)
+    assert len(thin["depth"]) == 1, "unsupported substance leaves the glance alone, never a pad"
+    assert not any("link" in d for d in thin["depth"]), "the link is a button, not a card"
     assert thin["camps"] is None and thin["terms"] == []
 
     # the model must never be able to set these
@@ -671,15 +665,15 @@ def check() -> None:
     assert unsupported_quotes(["chat context caused hallucinated filler text"], src), "fabrication"
     assert unsupported_quotes(["poster styles"], src), "too short to prove anything"
 
-    good = {"headline": "h", "substance": "s", "support": ["catalogue of one hundred poster styles"]}
+    good = {"simple": "s", "substance": "s", "support": ["catalogue of one hundred poster styles"]}
     assert verify_substance(good, src) == [] and good["substance"] == "s", "supported tier survives"
 
-    faked = {"headline": "h", "substance": "invented", "support": ["context caused hallucinated text"]}
+    faked = {"simple": "s", "substance": "invented", "support": ["context caused hallucinated text"]}
     assert verify_substance(faked, src), "must report the bad quote"
     assert faked["substance"] is None, "unsupported substance must be dropped"
     assert len(assemble_card({"id": 1, "url": None, "title": "t"}, faked, 0)["depth"]) == 1
 
-    naked = {"headline": "h", "substance": "no receipts", "support": []}
+    naked = {"simple": "s", "substance": "no receipts", "support": []}
     assert verify_substance(naked, src) == [] and naked["substance"] is None, "no quotes, no tier"
 
     # Real /interactions shape: a contentless thought step, then the answer.

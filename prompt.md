@@ -29,6 +29,10 @@ Do **not** compress. It is as long as it needs to be to actually say something �
 words. A vague sentence that fits in 8 words is worse than a clear one in 15. "A developer built
 free AI" says nothing.
 
+**Start with a lowercase letter** and use no full stop at the end. It is a spoken line, not a
+sentence in an article, and every card must look the same — one capital slipping in is obvious when
+it is the only line on the screen.
+
 Write it spoken, not written:
 
 - Say **"someone"** when who did it does not matter. Most of the time it does not.
@@ -40,28 +44,16 @@ Write it spoken, not written:
 - Good: "someone built a fly's brain and got it playing StarCraft"
 - Good: "OpenAI is now tracking what you do on other websites"
 - Bad: "A writer broke ChatGPT out of generic event poster designs by asking for specific historic
-  art styles" — written, not spoken, and doing the headline's job
+  art styles" — written, not spoken, and it belongs in `substance` anyway
 - Bad: "A developer built free AI after a startup claimed the breakthrough" — short but empty
 
-**headline** — the same news with the specifics put back: product names, what exactly changed,
-what makes it notable. `simple` said what it is about; this says what actually happened. A reader
-only reaches it by deliberately swiping for more, so it may assume a little more. One sentence,
-**at most 20 words**.
+**substance** — the only detail layer, reached by a deliberate swipe, so it must reward one. One to
+three sentences of real substance, shaped by what the post is: the spec numbers for a launch, the
+method for research, the argument for an essay, who is annoyed for a controversy.
 
-Start with who or what did the thing. Never open with a setup clause, a feeling, or scene-setting
-("Tired of seeing...", "In a world where...", "Frustrated by..."). Put the clause that makes it
-land — impressive, surprising or annoying — at the end. No em-dashes.
-
-It must add something `simple` did not say. If the only difference is wording, the pair is wasted.
-
-- simple: "someone found a way to make ChatGPT stop producing horrible event posters"
-  headline: "A writer got ChatGPT off its default look by naming art movements like Bauhaus and Memphis"
-- simple: "someone built a fly's brain and got it playing StarCraft"
-  headline: "Researchers simulated a fruit fly connectome and used it to play Brood War"
-
-**substance** — one to three sentences of actual substance, shaped by what the post is: the spec
-numbers for a launch, the method for research, the argument for an essay, who is annoyed for a
-controversy. Set it to null when the source genuinely has nothing more to say. A short card is
+This is where the specifics live — product names, versions, figures, who did it — because `simple`
+deliberately leaves them out. Never restate `simple` in longer words; a reader who swiped already
+read it. Start with what happened, not with scene-setting. Set it to null when the source genuinely has nothing more to say. A short card is
 correct; padding it teaches readers that reading further is a waste of a swipe.
 
 **data** — only for figures printed verbatim in the source (scores, latency, price). Omit otherwise.
@@ -77,7 +69,7 @@ one plain sentence. This is the only place general background knowledge is allow
 
 ## Highlighting
 
-In `simple`, `headline` and `substance`, wrap the **two or three most important words** of each
+In `simple` and `substance`, wrap the **two or three most important words** of each
 field in double asterisks: `**like this**`. Mark only what carries the meaning — the thing that
 happened, the number that matters, the word a reader would repeat to someone else.
 

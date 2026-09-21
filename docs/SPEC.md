@@ -19,13 +19,15 @@ research them one by one.
 
 ## Content model
 
-One post = one **card stack**. Depth varies per post: 2 or 3 cards, whatever the source supports.
+One post = one **card stack**: the glance, then the detail. Two cards, or one when the source
+supports no detail. There is no middle 'headline' rung — it restated the glance in longer words and
+cost more to generate than it added (measured: removing it *raised* thinking tokens 27%, so the
+reason to cut it was redundancy, never cost).
 
 | Depth | Holds |
 |---|---|
 | 1 | **The glance.** One spoken sentence saying what the post is about, no jargon — the only layer most readers ever see. Not compressed: vague-but-short is worse than clear-but-longer. |
-| 2 | The headline: the specifics (product names, what changed, why notable). Must add something tier 1 did not say. Max 20 words. |
-| 3 | The substance — shaped by post type: spec table (launch), method (research), argument (essay), the two camps (controversy). |
+| 2 | The detail — the specifics (names, versions, figures) `simple` leaves out, shaped by post type: spec table (launch), method (research), argument (essay), the two camps (controversy). |
 
 The source is **not** a card. It is a 🔗 button beside the comment button, because reading the
 original is an action you take at any depth, not a place the swipe has to end. Older day files
@@ -38,6 +40,8 @@ a model and sits beside raw comment text.
 Rules:
 
 1. **Facts come from the source. Definitions come from the glossary. Never mixed on one card.**
+   The glance line is lowercase with no trailing full stop — it is the only line on the screen, so
+   one stray capital is glaring.
 2. Numbers, dates and versions only if they appear verbatim in the fetched source. No model recall.
    Spelling a number out is fine ("one hundred" -> 100); adding one is not. Where the source names
    something specifically (a "village fayre"), its word is used, not a near-synonym.
