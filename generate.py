@@ -114,6 +114,15 @@ def unsupported_quotes(support: list[str], source: str, min_words: int = 6) -> l
     return bad
 
 
+def peek(text: str) -> str:
+    """Trim a comment for the sheet without slicing through a word."""
+    if len(text) <= SHEET_COMMENT_CHARS:
+        return text
+    cut = text[:SHEET_COMMENT_CHARS]
+    space = cut.rfind(" ")
+    return (cut[:space] if space > 0 else cut).rstrip(" ,;:.\u2014-") + "\u2026"
+
+
 def assemble_card(post: dict, content: dict, comment_count: int, comments: list[str] | None = None) -> dict:
     """Code owns the envelope. `content` carries only what the model wrote."""
     depth: list[dict] = [{"text": content["headline"]}]
@@ -135,7 +144,7 @@ def assemble_card(post: dict, content: dict, comment_count: int, comments: list[
         "terms": [t["term"] for t in content.get("terms") or []],
         "entities": content.get("entities") or [],
         # A peek for the sheet, verbatim and unprocessed. The full thread is on HN.
-        "comments": [c[:SHEET_COMMENT_CHARS] for c in (comments or [])[:SHEET_COMMENTS]],
+        "comments": [peek(c) for c in (comments or [])[:SHEET_COMMENTS]],
     }
 
 
@@ -516,9 +525,15 @@ def check() -> None:
     assert full["depth"][1]["data"] == [["latency", "2.1s"]]
     assert full["terms"] == ["wasm"], "card carries term names, glosses live in the glossary"
     assert full["comments"] == [], "no comments passed means no peek"
-    peek = assemble_card(post, {"headline": "h"}, 9, ["x" * 999, "b", "c", "d", "e", "f"])
-    assert len(peek["comments"]) == SHEET_COMMENTS, "sheet peek is capped"
-    assert len(peek["comments"][0]) == SHEET_COMMENT_CHARS, "long comments are truncated"
+    peek_card = assemble_card(post, {"headline": "h"}, 9, ["long word " * 90, "b", "c", "d", "e", "f"])
+    assert len(peek_card["comments"]) == SHEET_COMMENTS, "sheet peek is capped"
+    assert peek_card["comments"][0].endswith("\u2026"), "long comments are truncated"
+    assert len(peek_card["comments"][0]) <= SHEET_COMMENT_CHARS + 1
+    assert peek("short one") == "short one", "short comments are left alone"
+    assert not peek("word " * 200).rstrip("\u2026").endswith(" "), "no dangling space"
+    assert " ".join(peek("alpha beta " * 90).rstrip("\u2026").split()[-1:]) in ("alpha", "beta"), (
+        "must cut on a word boundary, never mid-word"
+    )
     assert full["id"] == 7 and full["comment_count"] == 470
 
     thin = assemble_card(post, {"headline": "h", "substance": None, "camps": None}, 0)

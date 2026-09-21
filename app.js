@@ -183,10 +183,9 @@ function openSheet(title, build) {
   sheet.append(el("h2", null, title));
   build(sheet);
   sheet.hidden = false;
-  requestAnimationFrame(() => {
-    sheet.classList.add("open");
-    scrim.classList.add("open");
-  });
+  void sheet.offsetHeight; // reflow gives the transition a start state to animate from
+  sheet.classList.add("open");
+  scrim.classList.add("open");
 }
 function closeSheet() {
   sheet.classList.remove("open");

