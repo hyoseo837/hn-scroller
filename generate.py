@@ -25,7 +25,7 @@ from pathlib import Path
 
 MODEL = "gemini-3.8-flash"
 API = "https://generativelanguage.googleapis.com/v1beta/interactions"
-MIN_POINTS = 100
+MIN_POINTS = 200  # measured: ~24 stories/day clear this, range 15-32
 WINDOW_DAYS = 3
 CAP = 35
 MAX_COMMENTS = 20
@@ -105,7 +105,14 @@ def strip_html(html: str) -> str:
 
 
 def select_posts(hits: list[dict], published: list, cap: int = CAP) -> list[dict]:
-    """Points threshold does the filtering; the count floats with how busy the day was."""
+    """Threshold filters, cap is only a safety net, count floats with the day.
+
+    The threshold doubles as the maturity test: a post at 200 points has proven
+    itself whether that took six hours or two days, so there is no age delay —
+    holding back a story that broke overnight is the worse failure for an
+    awareness app. The 3-day window catches late risers, and `published` means
+    a post is generated once, ever.
+    """
     seen = {str(p) for p in published}
     keep = [h for h in hits if h["points"] >= MIN_POINTS and str(h["objectID"]) not in seen]
     keep.sort(key=lambda h: -h["points"])
@@ -597,12 +604,13 @@ def check() -> None:
 
     hits = [
         {"objectID": "1", "points": 500},
-        {"objectID": "2", "points": 99},  # under threshold
+        {"objectID": "2", "points": 199},  # under threshold
         {"objectID": "3", "points": 300},
         {"objectID": "4", "points": 800},  # already published
+        {"objectID": "5", "points": 200},  # exactly at the bar gets in
     ]
     picked = select_posts(hits, ["4"])
-    assert [h["objectID"] for h in picked] == ["1", "3"], "filters, dedupes, sorts by points"
+    assert [h["objectID"] for h in picked] == ["1", "3", "5"], "filters, dedupes, sorts by points"
     assert len(select_posts(hits, [], cap=1)) == 1, "respects the cap"
 
     post = {"id": 7, "url": "https://x.test", "title": "Raw HN Title"}

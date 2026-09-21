@@ -99,7 +99,7 @@ assume you are a peer, which is where most beginner confusion lives.
 Daily job. Select is free; only generate costs money.
 
 ```
-select    Algolia search_by_date, tags=story, points>100, 3-day window
+select    Algolia search_by_date, tags=story, points>=200, 3-day window
           → dedupe by HN item ID against everything published
           → cap 35
 fetch     article text (cap ~6k tokens) + top-level comments (Firebase)
@@ -119,7 +119,11 @@ publish   one JSON file for the day
 - **If article extraction yields too little, build the card from title + comments only.** Roughly a
   third of HN links are paywalled, PDFs, or JS-rendered; a good thread alone can carry a card. Real
   error path, not a corner to cut.
-- Threshold 100 is a guess from one day (~33 posts of ~990 submitted). Expect to move it.
+- **The threshold is also the maturity test.** No age delay: a post at 200 points has proven itself
+  whether it took six hours or two days, and holding back an overnight story is the worse failure.
+  The 3-day window catches late risers; `published.json` means a post is generated once, ever.
+- 200 measured over 13 days: ~24 stories/day clear it (15-32), so the count floats with how busy the
+  day was and the cap stops binding. At 100 it was ~45/day and the cap silently did the selecting.
 - Record entities from day one even though nothing consumes them yet — free now, and the archive
   cannot be accumulated retroactively.
 
