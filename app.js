@@ -10,10 +10,14 @@ const btnGlo = document.getElementById("btn-glo");
 const btnSrc = document.getElementById("btn-src");
 const hint = document.getElementById("hint");
 
-let cards = [];
+// feed.children and `slides` are parallel: a slide is a card, a day divider, or
+// the caught-up marker. Day dividers mean the index is no longer a card index.
+let slides = [];
 let glossary = {};
 let days = [];
-let date = "";
+let date = "";        // the newest day, the one resume belongs to
+let todayCount = 0;   // slides belonging to `date`, so resume never points past it
+let loadingMore = false;
 // A real pointer means a keyboard is likely: hints and the depth lock differ.
 const KEYBOARD = matchMedia("(hover: hover) and (pointer: fine)").matches;
 
@@ -107,30 +111,67 @@ function renderCard(card) {
   return section;
 }
 
-function renderEnd() {
+// A boundary, not a dead end. Reaching it means you are done with today; older
+// days sit below only if you choose to keep going, so nothing is ever a backlog.
+function renderBoundary(count, when, older) {
   const section = el("section", "post");
   const wrap = el("article", "card end");
   wrap.append(el("h1", null, "You're caught up."));
-  wrap.append(el("p", null, `${cards.length} from ${date}. Nothing else to read.`));
+  wrap.append(el("p", null, `${count} from ${when}.`));
+  if (older) wrap.append(el("p", "older", `keep going for ${older} ↓`));
   section.append(wrap);
   return section;
 }
 
-function render() {
-  feed.textContent = "";
-  if (!cards.length) {
-    feed.append(el("div", "empty", `No cards for ${date || "today"}. Run generate.py.`));
-    return;
+function renderDivider(when) {
+  const section = el("section", "post");
+  const wrap = el("article", "card end");
+  wrap.append(el("h1", null, when));
+  section.append(wrap);
+  return section;
+}
+
+const pretty = (iso) => {
+  const [y, m, d] = iso.split("-").map(Number);
+  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString(undefined, {
+    weekday: "long", month: "long", day: "numeric", timeZone: "UTC",
+  });
+};
+
+function push(slide, node) {
+  slides.push(slide);
+  feed.append(node);
+}
+
+// Append one older day below what is already there. Returns false when that day
+// has nothing, so the caller can stop asking.
+async function appendDay(when) {
+  const day = await json(`data/${when}.json`).catch(() => null);
+  if (!day?.cards?.length) return false;
+  push({ divider: true, date: when }, renderDivider(pretty(when)));
+  day.cards.forEach((card) => push({ card, date: when }, renderCard(card)));
+  return true;
+}
+
+let nextDay = 1; // index into `days` of the next older edition to load
+
+async function loadMore() {
+  if (loadingMore || nextDay >= days.length) return;
+  loadingMore = true;
+  try {
+    while (nextDay < days.length && !(await appendDay(days[nextDay++]))) {
+      /* skip empty days */
+    }
+  } finally {
+    loadingMore = false;
   }
-  cards.forEach((card) => feed.append(renderCard(card)));
-  feed.append(renderEnd());
 }
 
 // ------------------------------------------------------------------- state
 
 function syncChrome() {
-  const card = cards[post];
-  document.getElementById("date").textContent = date || "—";
+  const card = slides[post]?.card;
+  document.getElementById("date").textContent = slides[post]?.date || date || "—";
 
   dots.textContent = "";
   if (card) {
@@ -188,6 +229,7 @@ feed.addEventListener(
     post = next;
     depth = 0;
     syncChrome();
+    if (post >= slides.length - 3) loadMore(); // older editions, below the boundary
     clearTimeout(saveTimer);
     saveTimer = setTimeout(save, 400);
   },
@@ -229,7 +271,7 @@ function goToPost(next) {
 function goToDepth(next) {
   const section = feed.children[post];
   if (!section) return;
-  const last = Math.max(0, tiersOf(cards[post]).length - 1);
+  const last = Math.max(0, tiersOf(slides[post]?.card).length - 1);
   next = Math.max(0, Math.min(next, last));
   section.scrollTo({ left: next * section.clientWidth, behavior: "smooth" });
 }
@@ -272,7 +314,9 @@ document.addEventListener("keydown", (event) => {
 const key = () => `pos:${date}`;
 function save() {
   try {
-    localStorage.setItem(key(), String(post));
+    // Resume belongs to today only. Scrolling into older editions is a detour,
+    // not progress — a day has a bottom, and that is what makes it feel light.
+    localStorage.setItem(key(), String(Math.min(post, Math.max(0, todayCount - 1))));
   } catch {
     /* private window, blocked storage — resume is a convenience, not state */
   }
@@ -284,7 +328,7 @@ function restore() {
   } catch {
     at = 0;
   }
-  post = Math.min(at, feed.children.length - 1);
+  post = Math.min(at, Math.max(0, todayCount - 1));
   depth = 0;
   feed.scrollTop = post * feed.clientHeight;
   syncChrome();
@@ -318,7 +362,7 @@ addEventListener("pageshow", (event) => {
 });
 
 btnCmt.addEventListener("click", () => {
-  const card = cards[post];
+  const card = slides[post]?.card;
   openSheet(`${card.comment_count} comments`, (box) => {
     if (card.camps) {
       const callout = el("div", "camps");
@@ -346,12 +390,12 @@ btnCmt.addEventListener("click", () => {
 
 // Self posts have no external url — the discussion is the article.
 btnSrc.addEventListener("click", () => {
-  const card = cards[post];
+  const card = slides[post]?.card;
   if (card) window.open(card.url || card.hn, "_blank", "noopener");
 });
 
 btnGlo.addEventListener("click", () => {
-  const card = cards[post];
+  const card = slides[post]?.card;
   openSheet("In this post", (box) => {
     const list = el("dl");
     card.terms.forEach((term) => {
@@ -394,10 +438,21 @@ const json = async (path) => {
   glossary = await json("data/glossary.json").catch(() => ({}));
   const wanted = new URLSearchParams(location.search).get("date");
   date = days.includes(wanted) ? wanted : days[0] || "";
-  if (date) {
-    const day = await json(`data/${date}.json`).catch(() => null);
-    cards = day?.cards ?? [];
+  nextDay = days.indexOf(date) + 1;
+
+  feed.textContent = "";
+  slides = [];
+  const day = date ? await json(`data/${date}.json`).catch(() => null) : null;
+  const cards = day?.cards ?? [];
+  if (!cards.length) {
+    feed.append(el("div", "empty", `No cards for ${date || "today"}. Run generate.py.`));
+    return;
   }
-  render();
+
+  cards.forEach((card) => push({ card, date }, renderCard(card)));
+  const older = nextDay < days.length ? pretty(days[nextDay]) : null;
+  push({ date }, renderBoundary(cards.length, pretty(date), older));
+  todayCount = slides.length;
+
   restore();
 })();

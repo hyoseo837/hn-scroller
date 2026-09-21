@@ -89,6 +89,11 @@ assume you are a peer, which is where most beginner confusion lives.
 
 - One batch per day, cut at **00:00 UTC** (captures the full US day; lands ~09:00 KST).
 - Resume where you stopped **within today**. Finished already → the caught-up screen.
+- The caught-up screen is a **boundary, not a dead end**: older editions load below it, one at a
+  time, each behind its own date divider. Scrolling past the boundary is a deliberate choice, so
+  this is not a backlog — nothing older is ever pushed at you or counted as unread.
+- **Resume never points into an older edition.** It is capped at today's last slide, because a day
+  having a bottom is what makes the app feel light.
 - Calendar to browse past days. Pull, not push: no badge, nothing accumulates.
 - **No backlog.** Away a week → you get today, not 200 cards.
 - No accounts, no unread counts, no streaks, no notifications.
