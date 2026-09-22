@@ -75,6 +75,9 @@ function renderCard(card) {
     if (i === 0) wrap.append(el("div", "from", card.url ? host(card.url) : "Hacker News"));
     if (i === 0) {
       wrap.classList.add("glance");
+      // ponytail: the field is the raw og:image, cropped with object-fit:cover.
+      // A wide image in a tall frame loses its edges. Upgrade path: blurred
+      // full-bleed copy behind a contained one, the way music apps do it.
       const field = el("div", "field");
       if (card.image) {
         const img = el("img");

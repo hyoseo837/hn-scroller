@@ -352,7 +352,15 @@ _CONTENT = re.compile(r"content=[\"']([^\"']+)[\"']", re.IGNORECASE)
 
 def hero_image(html: str, base_url: str) -> str | None:
     """The article's own social image. og:image is what the author chose to
-    represent the piece, which beats guessing at the first <img> in the body."""
+    represent the piece, which beats guessing at the first <img> in the body.
+
+    ponytail: og:image only. It is chosen for social cards, so it is often a
+    site banner, a logo or an author headshot rather than anything about this
+    post, and only ~45% of articles declare one at all. Upgrade path, in order
+    of effort: fall back to the largest in-body <img> when no og:image exists;
+    then score candidates by dimensions, position and alt text. Both need the
+    raw HTML, which fetch_page already returns.
+    """
     for tag in _META_IMAGE.findall(html or ""):
         found = _CONTENT.search(tag)
         if not found:
