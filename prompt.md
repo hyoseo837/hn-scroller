@@ -29,9 +29,11 @@ Do **not** compress. It is as long as it needs to be to actually say something �
 words. A vague sentence that fits in 8 words is worse than a clear one in 15. "A developer built
 free AI" says nothing.
 
-**Start with a lowercase letter** and use no full stop at the end. It is a spoken line, not a
-sentence in an article, and every card must look the same — one capital slipping in is obvious when
-it is the only line on the screen.
+**No full stop at the end**, and **start with a lowercase letter unless the first word is a name**.
+It is a spoken line, not a sentence in an article. Names keep their own capitalisation wherever they
+appear: OpenAI, Google, Apple, Spain, US — writing "openai is now tracking" looks like a typo, not
+like casual speech. Only the ordinary words at the start are lowercase: "someone found...",
+"a developer built...", "people are using...".
 
 Write it spoken, not written:
 
