@@ -27,7 +27,6 @@ MODEL = "gemini-3.8-flash"
 API = "https://generativelanguage.googleapis.com/v1beta/interactions"
 MIN_POINTS = 200  # measured: ~24 stories/day clear this, range 15-32
 WINDOW_DAYS = 3
-CAP = 35
 MAX_COMMENTS = 20
 SHEET_COMMENTS = 5  # how many go in the day file for the comment sheet
 SHEET_COMMENT_CHARS = 400
@@ -157,8 +156,12 @@ def looks_gated(text: str) -> bool:
     return len(text) < 1500 and any(m in text.lower() for m in _PAYWALL)
 
 
-def select_posts(hits: list[dict], published: list, cap: int = CAP) -> list[dict]:
-    """Threshold filters, cap is only a safety net, count floats with the day.
+def select_posts(hits: list[dict], published: list) -> list[dict]:
+    """Everything above the threshold that has not been published. No cap.
+
+    Hacker News caps this by itself: ~24 stories/day clear 200 points, 32 on the
+    busiest day measured. A cap here would silently drop real news on a big day,
+    which is the failure an awareness app cannot afford.
 
     The threshold doubles as the maturity test: a post at 200 points has proven
     itself whether that took six hours or two days, so there is no age delay —
@@ -169,7 +172,7 @@ def select_posts(hits: list[dict], published: list, cap: int = CAP) -> list[dict
     seen = {str(p) for p in published}
     keep = [h for h in hits if h["points"] >= MIN_POINTS and str(h["objectID"]) not in seen]
     keep.sort(key=lambda h: -h["points"])
-    return keep[:cap]
+    return keep
 
 
 def _normalize(text: str) -> str:
@@ -545,11 +548,20 @@ def main() -> None:
     if not cards:
         sys.exit("no cards generated — leaving yesterday's file in place")
 
-    write_json(f"{date}.json", {"date": date, "cards": cards})
+    # Merge, never replace: a re-run on the same day (a retry after a crash, or a
+    # second pass picking up what a guard cut) must not delete the earlier batch.
+    # Existing first: each run takes the highest-scoring posts left, so the earlier
+    # batch outranks this one. Prepending would put the weakest cards on top.
+    existing = read_json(f"{date}.json", {}).get("cards", [])
+    already = {c["id"] for c in existing}
+    merged = existing + [c for c in cards if c["id"] not in already]
+    write_json(f"{date}.json", {"date": date, "cards": merged})
+    if existing:
+        print(f"merged: {len(existing)} already in today's file + {len(merged) - len(existing)} new")
     write_json("glossary.json", glossary)
     write_json("published.json", published)
     write_json("index.json", sorted({date, *index}, reverse=True))
-    print(f"wrote data/{date}.json ({len(cards)} cards)")
+    print(f"wrote data/{date}.json ({len(merged)} cards)")
     print(usage_line())
 
 
@@ -694,7 +706,15 @@ def check() -> None:
     ]
     picked = select_posts(hits, ["4"])
     assert [h["objectID"] for h in picked] == ["1", "3", "5"], "filters, dedupes, sorts by points"
-    assert len(select_posts(hits, [], cap=1)) == 1, "respects the cap"
+    assert len(select_posts([{"objectID": str(i), "points": 900} for i in range(400)], [])) == 400, (
+        "no cap: every post above the threshold runs, however busy the day"
+    )
+
+    # Same-day merge keeps the stronger earlier batch on top and drops repeats.
+    prior = [{"id": 1}, {"id": 2}]
+    fresh = [{"id": 2}, {"id": 3}]
+    already = {c["id"] for c in prior}
+    assert [c["id"] for c in prior + [c for c in fresh if c["id"] not in already]] == [1, 2, 3]
 
     post = {"id": 7, "url": "https://x.test", "title": "Raw HN Title"}
     full = assemble_card(

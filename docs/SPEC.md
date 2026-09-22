@@ -106,7 +106,6 @@ Daily job. Select is free; only generate costs money.
 ```
 select    Algolia search_by_date, tags=story, points>=200, 3-day window
           → dedupe by HN item ID against everything published
-          → cap 35
 fetch     article text (cap ~6k tokens) + top-level comments (Firebase)
 generate  card stack + camps line + glossary terms, per post
 publish   one JSON file for the day
@@ -134,8 +133,10 @@ publish   one JSON file for the day
 - **The threshold is also the maturity test.** No age delay: a post at 200 points has proven itself
   whether it took six hours or two days, and holding back an overnight story is the worse failure.
   The 3-day window catches late risers; `published.json` means a post is generated once, ever.
-- 200 measured over 13 days: ~24 stories/day clear it (15-32), so the count floats with how busy the
-  day was and the cap stops binding. At 100 it was ~45/day and the cap silently did the selecting.
+- 200 measured over 13 days: ~24 stories/day clear it (15-32), so the count floats with how busy
+  the day was. **No cap.** Hacker News bounds this itself; a cap would silently drop real news on a
+  busy day, and at 100 points that is exactly what happened — the cap, not the threshold, was doing
+  the selecting on 12 of 13 days.
 - Record entities from day one even though nothing consumes them yet — free now, and the archive
   cannot be accumulated retroactively.
 
