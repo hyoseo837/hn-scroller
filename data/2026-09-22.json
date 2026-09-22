@@ -2754,6 +2754,244 @@
         }
       ],
       "image": "https://www.dxomark.com/wp-content/uploads/medias/post-194000/iPhone-18-Pro-Max.png"
+    },
+    {
+      "id": 49794330,
+      "url": "https://blog.colinbreck.com/i-dont-want-to-read-what-you-didnt-write/",
+      "hn": "https://news.ycombinator.com/item?id=49794330",
+      "title": "I don't want to read what you didn't write",
+      "depth": [
+        {
+          "text": "someone made the case that **AI-generated documents** waste time and destroy **human connection**",
+          "tier": "simple"
+        },
+        {
+          "text": "A survey cited in the essay found that **78% of readers** stop reading if they suspect text is AI-authored, while 98% prefer flawed, human writing. The author argues that while AI excels at finding errors, AI summaries strip out the **human perspective** and essential context.",
+          "tier": "substance",
+          "data": [
+            [
+              "Readers who stop reading if AI-assisted",
+              "78%"
+            ],
+            [
+              "Readers who avoid the author in future",
+              "71%"
+            ],
+            [
+              "Readers who prefer the author's own writing",
+              "98%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: one agrees that AI-generated fluff wastes reviewer time and ruins communication, while another argues AI text is fine for technical information as long as it is accurate and not overly verbose.",
+      "comment_count": 104,
+      "terms": [
+        "pull request",
+        "LaTeX"
+      ],
+      "entities": [
+        "Cynthia Dunlop",
+        "Bryan Cantrill",
+        "Bjarne Stroustrup",
+        "Oxide",
+        "Pangram"
+      ],
+      "comments": [
+        {
+          "by": "hatthew",
+          "text": "As I have been saying for years: Writing is fundamentally the transfer of information from your brain to my brain. If you have 1000 bits of semantic information you want to transfer, you can't give 300 bits of semantic information to an LLM and have it fill in the remaining 700, because it doesn't know what those 700 bits are. If it's able to guess those 700 bits correctly, then they aren't true…"
+        },
+        {
+          "by": "zmmmmm",
+          "text": "It's funny, i push back on pull requests because there is too much description now - a 20 line change has pages and pages of generated description, rationalisation for why it is safe, defense of each design decision, analysis of risks and side effects. People are indignant, you're rejecting my change because there is too much documentation? And my response is, I don't have time to read it and you…"
+        },
+        {
+          "by": "muzani",
+          "text": "There's a lot of misunderstanding here. The quality of LLM writing has not plateaued, it has dropped significantly. They've cut it to the point where people start noticing. Do a search on \"Claude Sonnet 4.5\" on Reddit and you'll see lots of disappointed users [1] If I could give out ratings, Average human with a degree: 5&#x2F;10 Sonnet&#x2F;Opus 5: 2&#x2F;10 GPT 6 Astra, 5.4 Sol: 3&#x2F;10…"
+        },
+        {
+          "by": "blandcoffee",
+          "text": "I appreciate the direction of this article, and commend the author on publishing work, but the first sentence in the first paragraph is exactly what they lament. > A pattern I see is that people use AI to build something new, then they use AI to retrospectively summarize what they have already built into a design document. Reading a document like this isn’t just difficult—it is punishing."
+        },
+        {
+          "by": "jmcgough",
+          "text": "\"Reading a document like this isn’t just difficult—it is punishing.\" I can't tell if this essay was written in earnest or as a subtle troll."
+        }
+      ],
+      "image": "https://storage.ghost.io/c/d3/13/d313bae5-6633-4ef2-8565-d9e72c1a5da1/content/images/size/w1200/2026/09/i-dont-want-to-read-what-you-didnt-write.jpg"
+    },
+    {
+      "id": 49787313,
+      "url": "https://www.macstories.net/stories/m5-ultra-mac-studio-review-the-dream-mac-for-local-ai-agents/",
+      "hn": "https://news.ycombinator.com/item?id=49787313",
+      "title": "M5 Ultra Mac Studio Review",
+      "depth": [
+        {
+          "text": "someone tested Apple's new **M5 Ultra Mac Studio** as a dream rig for **local AI agents**",
+          "tier": "simple"
+        },
+        {
+          "text": "The machine pairs an **80-core GPU** with **1.2 TB/s of unified memory bandwidth**, making prompt processing about 2.5× faster than the M3 Ultra. While an RTX 5090 still generates tokens quicker, its 32 GB of VRAM limits running larger models or massive context windows without offloading to slow system RAM.",
+          "tier": "substance",
+          "data": [
+            [
+              "M5 Ultra GPU cores",
+              "80 cores"
+            ],
+            [
+              "M5 Ultra memory bandwidth",
+              "1.2 TB/s"
+            ],
+            [
+              "M3 Ultra memory bandwidth",
+              "819 GB/s"
+            ],
+            [
+              "M5 Ultra prompt processing vs M3 Ultra",
+              "+150% / ~2.5×"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say paying over $12,000 for local hardware makes no economic sense compared to years of top-tier cloud subscriptions, while others argue running always-on, uncensored agents 24/7 quickly pays for itself compared to runaway API bills.",
+      "comment_count": 229,
+      "terms": [
+        "token prefill",
+        "unified memory"
+      ],
+      "entities": [
+        "Apple",
+        "MacStories",
+        "NVIDIA"
+      ],
+      "comments": [
+        {
+          "by": "simonw",
+          "text": "The numbers I was most interested in are tucked away in a chart towards the bottom - the speed comparison of the Mac Studios v.s. a RTX 5090: Qwen3.8 27B tokens&#x2F;sec generation speed\nPrompt size 8K 64K 128K 256K\nRTX 5090 PC 59 51 44 n&#x2F;a\nM5 Ultra 48 39 32 24\nM3 Ultra 31 23.5 20 15\nA whole bunch more comparison numbers in this section…"
+        },
+        {
+          "by": "srcreigh",
+          "text": "This is great as a first look, but the author is not a developer, so we don't yet know whether a dev can be as productive with local models on M5 Mac Studio compared to a 20x subscription plan. I'm also curious about any new low hanging optimization opportunities in the kernels for this new hardware. It's already clear to me that M5 Mac Studio is more cost-effective than anything you can run on…"
+        },
+        {
+          "by": "sajithdilshan",
+          "text": "On Apple website it says 512GB memory option is available in October. I guess bumping to that one would cost additional 4-6k US$. So an Ultra with 2TB storage would be north of 15k US$. That’s like 12 years worth of OpenAI Pro subscriptions"
+        },
+        {
+          "by": "Danox",
+          "text": "The Cost of a 27- inch fully loaded iMac from Apple\n$3,700 in 2011 is worth $5,510.05 today (fully loaded) used for 10 years. The Mac Pro Tower plus the Cinema Display monitor at the time was even more, similar to the Studio M5 ULtra today than the iMac which I believe was an upper middle computer? $5,700 in 2011 is worth $8,488.46 today $7,700 in 2011 is worth $11,466.87 today The cost of Mac…"
+        },
+        {
+          "by": "ApolloFortyNine",
+          "text": "The model being tested is 18k as configured. I didn't expect this to make the 5090 to look like a good deal."
+        }
+      ],
+      "image": "https://cdn.macstories.net/images/uploads/2026/09/21/shortcut-upload-1789994617403-abb772eab6.png"
+    },
+    {
+      "id": 49792342,
+      "url": "https://poloclub.github.io/transformer-explainer/",
+      "hn": "https://news.ycombinator.com/item?id=49792342",
+      "title": "Transformers Explained Visually",
+      "depth": [
+        {
+          "text": "someone built an **interactive explainer** that runs an AI model directly in your **browser**",
+          "tier": "simple"
+        },
+        {
+          "text": "Developed at the Georgia Institute of Technology, the explainer runs a 124-million-parameter **GPT-2** model directly in the browser using JavaScript. Users can enter their own text to watch internal calculations and output probabilities update **live**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 37,
+      "terms": [
+        "token",
+        "embedding",
+        "self-attention"
+      ],
+      "entities": [
+        "Georgia Institute of Technology",
+        "OpenAI",
+        "Meta",
+        "Google",
+        "Andrej Karpathy",
+        "PyTorch",
+        "JavaScript"
+      ],
+      "comments": [
+        {
+          "by": "noncovalence",
+          "text": "Hm, I wonder why my laptop is suddenly pulling about 5 fps while I'm just browsing HN? The nefarious \"2.2 GB RAM usage within 10 seconds\" tab open in the background:"
+        },
+        {
+          "by": "jasonjmcghee",
+          "text": "For the uninitiated, I can't recommend enough, The Illustrated Transformer: https:&#x2F;&#x2F;jalammar.github.io&#x2F;illustrated-transformer&#x2F;"
+        },
+        {
+          "by": "andblac",
+          "text": "Nicely done. For me the most fascinating thing about attention heads is the place where Attention matrix is already computed and is getting multiplied by Value vector. It behaves exactly like pushing Value vector through Dense layer of ordinary network where Attention matrix forms weights of that layer. So attention head is trained to construct this small single layer network dynamically during…"
+        },
+        {
+          "by": "throw0101a",
+          "text": "As someone with an EE degree (though a sysadmin), this use of the term \"transformer\" is constantly confusing. :) (Also \"cryto\" for cryptocurrency rather than cryptography.)"
+        },
+        {
+          "by": "robrenaud",
+          "text": "Regarding the temperature explanation: > \"Instead of picking the highest-probability token, we can use different selection strategies to balance safety and creativity in the generated text\". Safety is definitely the wrong word here. Temperature 0 generated text actually has a weird \"lack of surprise\" character that makes it seem artificial. [1] > \"high-probability texts can be dull or repetitive…"
+        }
+      ],
+      "image": "https://poloclub.github.io/transformer-explainer/preview/summary.png"
+    },
+    {
+      "id": 49791509,
+      "url": "https://www.reuters.com/world/us/faa-halts-some-us-east-coast-flights-due-communication-issues-2026-09-21/",
+      "hn": "https://news.ycombinator.com/item?id=49791509",
+      "title": "US halts flights at busy East Coast airports, says fiber line cut",
+      "depth": [
+        {
+          "text": "a **fiber cut** halted flights at busy US **East Coast airports**",
+          "tier": "simple"
+        },
+        {
+          "text": "When the network tried to switch over, operators discovered that the **backup fiber** had broken as well. Commenters criticized the air traffic setup for lacking basic **monitoring** to detect broken redundant lines before an emergency.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 116,
+      "terms": [
+        "air traffic control (ATC)",
+        "failover"
+      ],
+      "entities": [
+        "FAA",
+        "US"
+      ],
+      "comments": [
+        {
+          "by": "chasd00",
+          "text": "It happens. There use to be a joke during the first big DC build out phase that went like if you're ever going into the wilderness take a 1ft length of fiber optic cable with you. If you get lost bury it and a back hoe operator will appear and sever it within an hour. You can get a ride back with them."
+        },
+        {
+          "by": "cube00",
+          "text": "> When it went to flip into the backup, we discovered that the backup fiber had a break Pretty grim that a life critical system wasn't designed to report that the backup fibre was unserviceable until they attempted to switch over to it. I wonder how long it was down? Days, weeks, months?"
+        },
+        {
+          "by": "kqgnkqgn",
+          "text": "Building multiple diverse paths and monitoring for fiber cuts is not hard. Having 2 fiber paths is insufficient for even only moderately important workloads at a tech company. Overlapping fiber cuts happen. For something with significant economic and safety impact this is just crazy. Sometimes the level of incompetence &#x2F; lack of care in organizations like this astounds me. I understand…"
+        },
+        {
+          "by": "sc68cal",
+          "text": "There is also a new ATC system being rolled out, as early as today https:&#x2F;&#x2F;www.airwaysmag.com&#x2F;new-post&#x2F;faa-smart-first-deployme..."
+        },
+        {
+          "by": "atonse",
+          "text": "I don't quite understand this sort of thing happening. Wasn't the whole point of the internet to be a self-healing network where we route around severed cables, etc? Or is it that these ATC networks are their own air-gapped network with less redundancy? That just doesn't add up. Or maybe there was only one line going to the ATC, with no multiple \"ISPs\" like a datacenter would have?"
+        }
+      ],
+      "image": null
     }
   ]
 }
