@@ -2992,6 +2992,239 @@
         }
       ],
       "image": null
+    },
+    {
+      "id": 49794615,
+      "url": "https://brand.io/article/spymarks/",
+      "hn": "https://news.ycombinator.com/item?id=49794615",
+      "title": "Spymarks, Not Watermarks",
+      "depth": [
+        {
+          "text": "someone argues invisible watermarks in AI media are actually **surveillance tools** and should be called **spymarks**",
+          "tier": "simple"
+        },
+        {
+          "text": "Google's SynthID-O can encode a **136-bit payload** in a 512x512 image, while text tools steer word choices to embed tracking data. Unlike editable EXIF tags, these hidden signals survive metadata removal and keep files **traceable** back to user accounts.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some see \"spymark\" as an alarmist rebrand of normal steganography and useful watermarking, while others worry platforms will embed invisible payloads to trace who spreads files and unmask whistleblowers.",
+      "comment_count": 120,
+      "terms": [
+        "steganography",
+        "EXIF",
+        "frequency domain"
+      ],
+      "entities": [
+        "Google",
+        "OpenAI",
+        "SynthID"
+      ],
+      "comments": [
+        {
+          "by": "djmips",
+          "text": "OT (Off-Topic) It just occured to me that the PS1 disc protection scheme is a form of steganography."
+        },
+        {
+          "by": "Retro_Dev",
+          "text": "Spymarks just seem like another word for https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Steganography . On that note, one way we can prevent it is to assert that all our content is byte-for-byte identical with the last known trusted stage of what we have produced (for example: a camera we are certain does not watermark, an image editor we are certain doesn't watermark, an image compressor we…"
+        },
+        {
+          "by": "xp84",
+          "text": "These are going to be very popular for intercepting images on their way to a display. Think of the advertising possibilities. Ad attribution can be 'vastly improved' when both the ad and every step in the funnel are all spymarked and all of them are reliably reported on by virtue of their pixels hitting your screen. First the low-end laptops and phones (and probably later, most of them) will…"
+        },
+        {
+          "by": "paweladamczuk",
+          "text": "It increasingly seems to me like the only way to prevent value to be extracted from myself is to stop engaging with new tech altogether."
+        },
+        {
+          "by": "Morromist",
+          "text": "The word choice example is cool. I wonder if it really works dependably. I'm sure many many exerpts in posts and books have those same 8 bits - you'd need a lot more bits - but the more you add the more strange your writing style might become. Like it choose between \"winding\" and \"curving\" but there are many uses of curving that probably can't be replaced with \"winding\" like \"her gently curving…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49792067,
+      "url": "https://linear.app/now/ci-bottleneck-reworked",
+      "hn": "https://news.ycombinator.com/item?id=49792067",
+      "title": "AI coding has made CI a bottleneck, so we reworked ours to keep up",
+      "depth": [
+        {
+          "text": "Linear overhauled its **test pipeline** after AI coding tools turned **CI into a bottleneck**",
+          "tier": "simple"
+        },
+        {
+          "text": "Linear's test suite almost quadrupled this year as it added roughly 2,000 tests a week, prompting an overhaul to keep PRs moving. The team left GitHub Actions for third-party runners, adopted tsgo, and stopped resolving full type graphs during linting. That brought pull request wait times down from over 6 minutes to **just over 5**, while cutting **runner time per test** roughly in half.",
+          "tier": "substance",
+          "data": [
+            [
+              "PR wait time",
+              "from >6 min to >5 min"
+            ],
+            [
+              "runner time per test",
+              "cut roughly in half"
+            ],
+            [
+              "tsc check median duration",
+              "cut 73%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some argue all this speed is theater because AI agents produce an avalanche of useless tests and trivial code, while others debate infrastructure fixes like migrating to self-hosted runners or breaking codebases into isolated services.",
+      "comment_count": 281,
+      "terms": [
+        "CI",
+        "runner",
+        "sharding"
+      ],
+      "entities": [
+        "Linear",
+        "GitHub Actions",
+        "TypeScript",
+        "Vitest"
+      ],
+      "comments": [
+        {
+          "by": "torben-friis",
+          "text": "Here's my constant question: Everyone's going so fast that they keep hitting walls. Review, CI, product asking for things, whatever. Why have we not seen an improvements in products? While every post and thread feels like a 90's wall street office, the new android and iphone ship with fewer features than usual. No indie guys come up with a linux-sized alternative OS. Switch 2 remains unhacked…"
+        },
+        {
+          "by": "aliclark",
+          "text": "In my case it's not the CI that's the bottleneck. It's the human testing side. Does it work, sure. But does it actually do the thing we want (and more importantly) does it do it in a way our customers will understand and actually like?"
+        },
+        {
+          "by": "prplfsh",
+          "text": "Does anyone do approaches where developers run CI locally on their machine and then somehow push up signed or authenticated artifacts?"
+        },
+        {
+          "by": "dgroshev",
+          "text": "I suspect a substantial part of this is an avalanche of useless testing. If you even review PRs still: when was the last time you didn't just skip over tests? And if you ever looked at tests in an LLM-heavy PR, how many of those tests tested something useful, and not just built-ins and trivial behaviours? There's at least some awareness in the industry of how LLMs generate a lot of boilerplate in…"
+        },
+        {
+          "by": "classictraffic",
+          "text": "> Moving our workloads off GitHub Actions to third-party runners with faster CPUs, higher-performance storage, and better cache infrastructure gave us faster machines to run the same pipeline on Yeah, was not surprised to read this. Actions is convenient if you already use GitHub, but it can also be pretty slow. Given reliability is also a major issue with GitHub these days I expect to see more…"
+        }
+      ],
+      "image": "https://webassets.linear.app/images/ornj730p/production/eba763cf034ad5e7b5d75ceec7ba560dd2aea5cb-2400x1350.png?q=95&amp;auto=format&amp;dpr=2"
+    },
+    {
+      "id": 49797982,
+      "url": "https://dbushell.com/2026/09/22/apple-intelligence/",
+      "hn": "https://news.ycombinator.com/item?id=49797982",
+      "title": "I said no and Apple said yes",
+      "depth": [
+        {
+          "text": "someone found that Apple removed the switch to **turn off** its **AI features**",
+          "tier": "simple"
+        },
+        {
+          "text": "After updating macOS, web developer David Bushell found that Apple had removed the toggle to disable **Apple Intelligence**, re-enabling the features despite his previous choices. Turning off Siri still left unkillable background processes running, while the AI models consumed **22.28 GB** of local storage.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 165,
+      "terms": [
+        "phoning home",
+        "Asahi Linux"
+      ],
+      "entities": [
+        "Apple",
+        "David Bushell",
+        "macOS",
+        "Siri",
+        "Linux"
+      ],
+      "comments": [
+        {
+          "by": "vitro",
+          "text": "Not trying to start flamewars, but more and more I wonder how much are people willing to put up with such practices. On linux for 15+ years and everytime I try to use mac or win, it is an ordeal. And ads. F*cking ads in a system someone has purchased. And spying. Really user hostile environment. No, thank you."
+        },
+        {
+          "by": "rozenmd",
+          "text": "You ever notice how Apple never really lets the user say \"no\" to their nudges? It's always \"maybe later\" and never \"no seriously, I don't want this, go away\""
+        },
+        {
+          "by": "downsplat",
+          "text": "If you want to own your computer, linux is where it's at. Windows is rusty iron chains and MacOS's are gold-plated silver pretending to be gold, but they're still chains."
+        },
+        {
+          "by": "throwaway2037",
+          "text": "The answer is simple: Regulation to grant users the right to refuse during installation&#x2F;setup of a system. This must also include updates. This feel like a repeat of the EU browser choice rule!"
+        },
+        {
+          "by": "eur0pa",
+          "text": "I feel the same way. I'm not completely against the technology, but please let me say \"no\" and remove the models and kill the processes."
+        }
+      ],
+      "image": "https://dbushell.com/images/articles/2026-09-22-apple-intelligence.png"
+    },
+    {
+      "id": 49787142,
+      "url": "https://blog.cloudflare.com/python-workers-ga/",
+      "hn": "https://news.ycombinator.com/item?id=49787142",
+      "title": "Python Workers are now generally available",
+      "depth": [
+        {
+          "text": "Cloudflare just made its **serverless Python runtime** **generally available** for production apps",
+          "tier": "simple"
+        },
+        {
+          "text": "Two years after its debut, Python is now a **first-class language** on the platform using a **Pyodide** WebAssembly runtime. Developers can deploy web frameworks like **FastAPI and Django** and connect directly to relational databases using a custom socket bridge.",
+          "tier": "substance",
+          "data": [
+            [
+              "Wasmer Edge cold start",
+              "60ms"
+            ],
+            [
+              "Cloudflare Workers cold start",
+              "900ms"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 38,
+      "terms": [
+        "Pyodide",
+        "WSGI/ASGI",
+        "cold start"
+      ],
+      "entities": [
+        "Cloudflare",
+        "Python",
+        "Pyodide",
+        "WebAssembly",
+        "FastAPI",
+        "Django"
+      ],
+      "comments": [
+        {
+          "by": "illia-v",
+          "text": "> we contributed upstream to ensure these HTTP clients can route requests directly through the JavaScript `fetch` API in WebAssembly environments Some context from an urllib3 maintainer: urllib3 received and merged large contributions adding Pyodide&#x2F;Emscripten support a few years ago, and later JSPI support, which is what made this work for Requests. As far as I know, the funding for this…"
+        },
+        {
+          "by": "syrusakbary",
+          "text": "Great work from the Cloudflare team! I was very excited when they first launched Python Workers two years ago. Even though we have competing products at Wasmer, I think Cloudflare work is always exciting and inspiring. I went back to the feedback I posted in the original launch thread [1]. It's great to see that they have made meaningful progress since then, particularly around package support…"
+        },
+        {
+          "by": "dsign",
+          "text": "This is the tech at Cloudflare of course, but I swear that my first interpretation of the title was \"We have replaced all our python coders with AI and they (the coders) are out and generally available\" :-)"
+        },
+        {
+          "by": "manquer",
+          "text": "Have we come back full circle back to GAE [1], launched in 2008 with Python 2.5 support ... [1] https:&#x2F;&#x2F;googleappengine.blogspot.com&#x2F;2008&#x2F;04&#x2F;introducing-goo..."
+        },
+        {
+          "by": "stefan_lec",
+          "text": "How do these perform for cold-starts? I remember one of the disadvantages of using web assembly for Workers was more spin-up time, but maybe they figured out a way around that."
+        }
+      ],
+      "image": "https://blog.cloudflare.com/_emdash/api/media/file/01M31JM2B4K28B7C67PCT5PB2R.01M31JM35NW9707QDHV86F68M9.png"
     }
   ]
 }
