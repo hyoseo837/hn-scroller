@@ -1,11 +1,8 @@
 # Direction
 
-Things worth doing later. Not a backlog and not a promise — nothing here is committed to, and an
-item earns work only when its **trigger** fires. If an item has sat here unchanged for months, that
-is information: delete it.
-
-Anything already deferred in code is a `ponytail:` comment, not an entry here. This file is for
-work that has no code yet.
+Work with no code yet. Nothing here is committed to; an item earns work when its **trigger** fires,
+and an entry untouched for months is a dead idea, not a debt — delete it. Deferrals that live next
+to code are `ponytail:` comments instead.
 
 ---
 
@@ -87,11 +84,10 @@ back to comments only. Boilerplate stripping is deliberately conservative — 12
 tighter rule deleted numbered lists and spec rows that were the substance, measured at 50% loss on
 one article.
 
-**Do:** proper content extraction, which realistically means Readability plus a DOM parser. That is
-the first dependency this project would take, so it needs to be worth it.
+**Do:** proper extraction — realistically Readability plus a DOM parser, the first dependency this
+project would take.
 
-**Trigger:** if comment-only cards start reading noticeably worse than article-backed ones. Worth
-measuring before assuming.
+**Trigger:** if comment-only cards read noticeably worse than article-backed ones. Measure first.
 
 ## Multimodal cards
 
@@ -107,8 +103,6 @@ answer to that question first, not just a budget.
 
 - **Offline reading.** A service worker so a downloaded edition survives the subway. The data is one
   static JSON per day, so this is genuinely small. Trigger: if the app gets opened while commuting.
-- **Glossary browse view.** 171 terms after one day. A searchable list is a few lines once it is
-  large enough to be interesting on its own.
 - **Bump the Actions versions.** `checkout@v4` and `setup-python@v5` are pinned to a deprecated
   Node 20 runtime, and `ubuntu-latest` migrates to Ubuntu 26 in October 2026. Warnings only today.
 
