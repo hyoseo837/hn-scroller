@@ -3225,6 +3225,212 @@
         }
       ],
       "image": "https://blog.cloudflare.com/_emdash/api/media/file/01M31JM2B4K28B7C67PCT5PB2R.01M31JM35NW9707QDHV86F68M9.png"
+    },
+    {
+      "id": 49799965,
+      "url": "https://alexn.org/blog/2026/09/22/ai-has-no-wisdom-and-neither-will-you/",
+      "hn": "https://news.ycombinator.com/item?id=49799965",
+      "title": "AI Has No Wisdom and Neither Will You",
+      "depth": [
+        {
+          "text": "an engineer warns that **vibe coding** builds an **unmaintainable mess** and stops beginners from learning",
+          "tier": "simple"
+        },
+        {
+          "text": "Alexandru Nedelcu argues AI cannot learn software architecture because maintainability takes months or years to judge, lacking an immediate **reward signal**. He warns that engineers relying on models will **never reach mastery**, and predicts firms will soon tout a **\"NO-AI\" policy** as a selling point.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: one agrees that offloading software work to AI erodes institutional knowledge and craft, while another argues human codebases were already unmaintainable messes and AI frees developers to focus on product architecture.",
+      "comment_count": 455,
+      "terms": [
+        "vibe coding",
+        "reward signal",
+        "code smell"
+      ],
+      "entities": [
+        "Alexandru Nedelcu",
+        "Cursor",
+        "Claude",
+        "GCC",
+        "LLVM"
+      ],
+      "comments": [
+        {
+          "by": "NalNezumi",
+          "text": "The problem imo is the slow deterioration of institutional knowledge that offloading the mental task of wisdom gathering to AI is causing. One interesting comparison is to the history of manufacturing. West&#x2F;America decided one day that manufacturing would be cheaper to outsource and better (short term) profit was to be made by outsourcing it all to China. The institutional expertise started…"
+        },
+        {
+          "by": "davedx",
+          "text": "There's a continuum between \"vibe coded by someone with no technical knowledge or inclination\" and \"hand written domain driven design development\". You can absolutely use coding agents AND have maintainable code. But yes, the coding agents will not magically make everything maintainable if you don't tell them to. \"Code maintainability and good architecture don’t have good measurements that we can…"
+        },
+        {
+          "by": "tegeek",
+          "text": "In the beginning of August 2026, I started a hobby project: building a MongoDB-like database. I have 20 years of industry experience and a master's degree in computer science, so I followed a disciplined, spec-driven development model using Claude, Kiro, Qwen Coder, and Cursor. The first version was built in about two weeks of part time work. Then I started exploring. I learned relational…"
+        },
+        {
+          "by": "TrackerFF",
+          "text": "Maybe I've just given up, or maybe I'm a realist? But I fully believe AI will just...catch up with everything? There's so much money in it right now. There's such a momentum. There are zero incentives to slow down for those that are in charge. I've accepted that in 5-10 years, the vast majority of human devs. and engineers will not touch a single line of code. It'll be small increments, with a…"
+        },
+        {
+          "by": "peterpanhead",
+          "text": "Man.. just code, let people build, design, adjust. Who cares? Who are these people writing these posts? Why should we give anything they have to say warrant? These posts are getting old, very quick."
+        }
+      ],
+      "image": "https://alexn.org/assets/logo/800px-bordered.png"
+    },
+    {
+      "id": 49797323,
+      "url": "https://nathan.rs/posts/gzip-lm/",
+      "hn": "https://news.ycombinator.com/item?id=49797323",
+      "title": "Can gzip be a language model?",
+      "depth": [
+        {
+          "text": "someone turned standard **gzip compression** into a makeshift **language model**",
+          "tier": "simple"
+        },
+        {
+          "text": "Nathan Barry built **GziPT** in pure Python to generate text with no neural network or learned parameters. It feeds a corpus and prompt into `zlib`, using **beam search** to generate text by picking whichever byte sequences **compress best**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 119,
+      "terms": [
+        "beam search",
+        "DEFLATE",
+        "sliding window"
+      ],
+      "entities": [
+        "Nathan Barry",
+        "gzip",
+        "Python",
+        "zlib"
+      ],
+      "comments": [
+        {
+          "by": "jll29",
+          "text": "Yes: you can classify a test file by topic with gzip as follows: gzip -9 sports.txt testfile.txt\ngzip -9 politics.txt testfile.txt\ngzip -9 business.txt testfile.txt\n(ass. sports.txt politics.txt and business.txt are text docs pertaining from the sports, politics and business domains, respectively, and have equal size) The test file belongs to the topic with the smallest size *.gz file. Witten's…"
+        },
+        {
+          "by": "Culonavirus",
+          "text": "This tracks perfectly with Winrar being more profitable than OpenAI... coincidence? I think not!"
+        },
+        {
+          "by": "GodelNumbering",
+          "text": "3blue1brown did a series on this topic: https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=l6DKRf-fAAM https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=GlYgs6v2YfU (i think one more is yet to release)"
+        },
+        {
+          "by": "mg",
+          "text": "give it a normal text prompt, and it\ncontinues that prompt by searching\nfor the byte sequences that compress\nbest.\nOne moment, how are we supposed to know how well that search was done? There is no way to search a meaningful part of the search space. So the result only gives us some lower bound of how well gzip works as a \"plausibility tester\" of a continuation of a text. The space of possible…"
+        },
+        {
+          "by": "northlondoner",
+          "text": "Reminded me Google's earlier paper, \"Language Modeling Is Compression\"\nhttps:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2309.10668 Learning being a compression is also recently proposed as Gibbs compression proposition. See\nGibbs randomness-compression proposition\nhttps:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2505.23869v5"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49801939,
+      "url": "https://www.techradar.com/phones/iphone/i-wish-apple-would-just-stop-that-crap-apple-has-added-persistent-ads-to-ios-and-its-driving-users-crazy",
+      "hn": "https://news.ycombinator.com/item?id=49801939",
+      "title": "Apple has added persistent 'ads' to iOS, and it's driving users crazy",
+      "depth": [
+        {
+          "text": "Apple is irritating iPhone users with **persistent ads** inside the **Settings** app",
+          "tier": "simple"
+        },
+        {
+          "text": "Banners near the top of Settings push services like iCloud+ and AppleCare+. Many prompts **stick around** for weeks because users cannot clear them, leaving a persistent notification **badge** on the app.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: one side argues expensive phones shouldn't nag users with unremovable upsells, while others say placing first-party service options in Settings makes sense and isn't real advertising.",
+      "comment_count": 201,
+      "terms": [
+        "notification badge"
+      ],
+      "entities": [
+        "Apple",
+        "iOS",
+        "iCloud+",
+        "Apple Music",
+        "AppleCare+"
+      ],
+      "comments": [
+        {
+          "by": "AnonC",
+          "text": "I doubt John Ternus will change direction anytime soon, since it will look like he’s reversing the plethora of eyesore ads that Tim Cook added over his tenure. But the Apple with ads is not the Apple that had some taste and discernment in the past. For a long time I’ve visited the App Store’s app update page directly (tap and hold on App Store icon to see the context menu option). Anytime I…"
+        },
+        {
+          "by": "fedeb95",
+          "text": "I have been a long time Android fan because of the tinkering you could do more easily than Apple. Then I started appreciating some of the design decisions behind especially iPhone, and it's been almost 7 years of iPhone usage. Recently I am starting to question some of the design decisions. Most native apps are bloated with functionalities, most of the time useless. Ads pop up everywhere, even…"
+        },
+        {
+          "by": "kqp",
+          "text": "Relatedly, Apple finally kicked me off the quick update bandwagon with macOS&#x2F;iOS 26, and I was surprised to learn that no, Apple does not let you just say no to updates. You get a permanent red badge that you can only dismiss by fully turning off system notifications, you get nagged literally thousands of times, and if any of those times you don’t repeat your rejection quickly enough, it…"
+        },
+        {
+          "by": "kstrauser",
+          "text": "Whenever I see an ad in Apple Maps, I leave a bad review for the advertiser, specifically giving them a thumbs-down in customer service. They are making the service worse for me, the customer. I can dream that this would become common practice such that these ads get the reputation of providing negative value to the companies who buy them. They urgently need to rip the ads out of the App Store…"
+        },
+        {
+          "by": "skoopsy",
+          "text": "The title had me thinking they had actual adverts open to advertisers. It's not, just someone winging about apple advertising icloud+ and some other stuff in their settings app where you can directly enable it. Come on you lot, this is fine, it's like the least ad driven mainstream commercial platform."
+        }
+      ],
+      "image": "https://cdn.mos.cms.futurecdn.net/sMMYYw2WasgE4m4saLhZ9M-2560-80.jpg"
+    },
+    {
+      "id": 49801324,
+      "url": "https://www.cryptocellar.org/bgac/the-mvueh-break.html",
+      "hn": "https://news.ycombinator.com/item?id=49801324",
+      "title": "OpenAI GPT–6 Astra breaks Enigma message that has resisted solution since 2005",
+      "depth": [
+        {
+          "text": "someone used an OpenAI model to break an **Enigma message** unsolved since 2005",
+          "tier": "simple"
+        },
+        {
+          "text": "Directed by Carter Leffer, GPT–6 Astra developed its own Python and C++ tools to break the message in **two days**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters are amazed by the model conducting autonomous cryptanalysis and software development, while others argue it simply automated existing techniques and open-source tools with human guidance.",
+      "comment_count": 251,
+      "terms": [
+        "crib",
+        "Bombe"
+      ],
+      "entities": [
+        "OpenAI",
+        "Carter Leffer",
+        "Bundesarchiv"
+      ],
+      "comments": [
+        {
+          "by": "mmsc",
+          "text": "For anybody interested, the actual encrypted message: BTTE UM ANGABE DES MARSQWEGES X BEFINDE MIQ IN X ROSENOW ROSENOW X SOFORT FUNKANTWORT X WASCHBBSCH\nwhich, given misspellings, translates approximately to: Please specify the route of march. I am in Rosenow, Rosenow. Immediate reply by radio. Waschbusch."
+        },
+        {
+          "by": "jtrn",
+          "text": "The correct title: Researcher brakes one specific stubborn historic enigma message with good help from Astra. Stubborn for a long time because the message used a completely different key from the rest of that day's traffic. Everyone assumed it shared the daily key. The original transcription had errors. The left rotor turned over at letter 72, which is rare and breaks standard crib attacks. What…"
+        },
+        {
+          "by": "peesem",
+          "text": "interesting, YouTube channel Veritasium just published a video on how Enigma was broken during WWII. at the very end they also give message that has yet to be decoded, although apparently they're different. https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=JsBZOcqZerk"
+        },
+        {
+          "by": "timcobb",
+          "text": "What's the connection between this message and 2005? It was published then?"
+        },
+        {
+          "by": "nexawave-ai",
+          "text": "I wonder, with all the recent announcements about LLMs assisting humans in deciphering encrypted messages, whether they could potentially be leveraged to decipher the Zodiac Killer’s two remaining unsolved ciphers."
+        }
+      ],
+      "image": null
     }
   ]
 }
