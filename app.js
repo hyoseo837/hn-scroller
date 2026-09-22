@@ -106,6 +106,15 @@ function renderCard(card) {
       }
       wrap.append(table);
     }
+    // Having just read the detail, "read the whole thing" is the next move —
+    // so the link sits where that thought happens, not only in the button bar.
+    if (kind === "substance") {
+      const more = el("a", "readon", card.url ? `Read it on ${host(card.url)} →` : "Open the discussion on HN →");
+      more.href = card.url || card.hn;
+      more.target = "_blank";
+      more.rel = "noopener";
+      wrap.append(more);
+    }
     section.append(wrap);
   });
 

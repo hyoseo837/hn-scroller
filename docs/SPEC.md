@@ -29,9 +29,11 @@ reason to cut it was redundancy, never cost).
 | 1 | **The glance.** One spoken sentence saying what the post is about, no jargon — the only layer most readers ever see. Not compressed: vague-but-short is worse than clear-but-longer. |
 | 2 | The detail — the specifics (names, versions, figures) `simple` leaves out, shaped by post type: spec table (launch), method (research), argument (essay), the two camps (controversy). |
 
-The source is **not** a card. It is a 🔗 button beside the comment button, because reading the
-original is an action you take at any depth, not a place the swipe has to end. Older day files
-still carry a link tier; the viewer filters it out.
+The source is **not** a card. It appears twice, on purpose: inline at the end of the detail tier,
+where "read the whole thing" is the next thought a reader has, and as a 🔗 button beside the
+comment button. The button is not redundant — a card whose substance failed verification has no
+detail tier, and would otherwise offer no route to the article at all. Older day files still carry
+a link tier; the viewer filters it out.
 
 Two or three key words per text tier are marked `**like this**` and render as a highlight. The
 viewer parses them by splitting and appending text nodes, never `innerHTML` — this text comes from
