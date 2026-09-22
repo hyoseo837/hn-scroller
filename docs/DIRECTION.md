@@ -75,16 +75,6 @@ has no setting for it. **Not** bare Lite: measured, it wrote 오픈아이 for Op
 and Snap. Markers survive on Lite fine, so if ₩56/day ever matters, feed it the card's existing
 `entities` array as a do-not-translate list.
 
-## Story threading
-
-**Now:** `entities` is recorded on every card and nothing reads it.
-
-**Do:** link a post to earlier ones about the same entity — "4th post this month about Zig 0.14".
-The strongest answer to the beginner's real problem, that every story arrives mid-conversation with
-no history, and the honest version of showing a developing story rather than repeating a card.
-
-**Trigger:** a few weeks of archive. Cannot be evaluated on a thin index.
-
 ## Discussion as a selection signal
 
 **Now:** selection is points only, at 200.

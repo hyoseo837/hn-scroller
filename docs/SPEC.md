@@ -139,8 +139,9 @@ publish   one JSON file for the day
   the day was. **No cap.** Hacker News bounds this itself; a cap would silently drop real news on a
   busy day, and at 100 points that is exactly what happened — the cap, not the threshold, was doing
   the selecting on 12 of 13 days.
-- Record entities from day one even though nothing consumes them yet — free now, and the archive
-  cannot be accumulated retroactively.
+- `entities` is recorded on every card. Its original purpose (linking related posts) was dropped;
+  it is kept because a translation pass would use it as a do-not-translate list. Delete it if that
+  does not happen either.
 
 ### Day file shape
 
@@ -167,8 +168,8 @@ publish   one JSON file for the day
 
 No video, audio or TTS. No accounts or auth. No push. No topic filtering — the off-topic posts are the
 texture that makes it feel alive. No personalization or interest ranking. No breaking news or intraday
-updates; this is a once-a-day object. No comment threading. No related-posts UI until an archive exists
-to link into. No database — a static host and one JSON per day.
+updates; this is a once-a-day object. No comment threading. No linking between related stories — an
+awareness app shows you today, and a reader who wants the history has the calendar. No database — a static host and one JSON per day.
 
 ## Open
 
