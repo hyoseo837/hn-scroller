@@ -9,6 +9,33 @@ work that has no code yet.
 
 ---
 
+## A real design pass
+
+**Now:** it reads as a prototype, and specifically because of these, roughly in order of how much
+they give it away:
+
+- **Emoji as icons** (📅 💬 🔗 📖). The loudest tell — they render differently on every platform,
+  sit on their own baselines, and read as placeholders. Inline SVG, no dependency.
+- **No typographic identity.** `system-ui` throughout. It is legible and it is anonymous, and on a
+  card that is one sentence on a screen, the type *is* the design.
+- **Placeholder-grade fallbacks.** Cards with no image get a hue-rotated gradient, which is the
+  universal signal for "art not done yet".
+- **Undesigned states.** "Loading…", the empty case, and the caught-up card are all plain text in
+  the default size.
+- **Colour is one borrowed accent.** HN orange, used for links, highlights, dots and the active
+  state alike, with no considered palette around it.
+- **Nothing moves.** Cards cut in with no entry, and depth has no sense of travel.
+
+**Do:** treat the glance card as a poster — it is a single sentence at 34px over an image, which is
+a typography problem more than a layout one. Everything else follows from settling type, a palette
+and an icon set.
+
+**Trigger:** before showing it to anyone who is not you. It is fine while the audience is one
+person who knows why it looks like this.
+
+**Not:** a component library or a CSS framework. There are two screens and no reusable surfaces;
+a design system here would be more code than the app.
+
 ## Better images
 
 **Now:** the card background is the article's `og:image`. That tag is chosen to look good in a
