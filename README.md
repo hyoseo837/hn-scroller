@@ -47,10 +47,11 @@ runtime, so wording changes need no code edit.
 
 ## Docs
 
-Three files, deliberately, each with a line cap:
+Four files, deliberately, each with a line cap:
 
 | | |
 |---|---|
 | [`CLAUDE.md`](CLAUDE.md) | how to work in this repo — stack, commands, conventions |
 | [`docs/SPEC.md`](docs/SPEC.md) | what is being built and why — scope, non-goals, data shapes |
 | [`docs/DECISIONS.md`](docs/DECISIONS.md) | append-only rationale, including the calls that were wrong first |
+| [`docs/DIRECTION.md`](docs/DIRECTION.md) | work with no code yet, each with the trigger that would start it |

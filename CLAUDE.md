@@ -44,20 +44,22 @@ The system prompt is `prompt.md`, read at runtime — edit it without touching c
 
 ## Documentation rule
 
-Three files. No others. If a doc doesn't fit one of these, it doesn't exist.
+Four files. No others. If a doc doesn't fit one of these, it doesn't exist.
 
 | File | Holds | Lifetime | Cap | Loaded |
 |---|---|---|---|---|
 | `CLAUDE.md` | How to work here: stack, commands, conventions, invariants. | Current truth. Overwrite freely. | **100 lines** | every session |
 | `docs/SPEC.md` | What we're building and why. Scope, non-goals, data shapes. | Current truth. Overwrite freely. | **200 lines** | on demand |
 | `docs/DECISIONS.md` | Choices with a "why" that outlives the code. | Append-only. Never edit past entries. | **5 lines/entry** | on demand |
+| `docs/DIRECTION.md` | Work with no code yet: what, why, and the **trigger** that would start it. | Prune freely. An untouched entry is a dead one. | **120 lines** | on demand |
 
 Rules:
 
 1. **Current truth beats history.** `CLAUDE.md` and `SPEC.md` describe now. Delete stale lines, don't annotate them.
 2. **Append-only means append-only.** New `DECISIONS.md` entry supersedes an old one; the old one stays. Format: `## YYYY-MM-DD — <decision>` then two lines: **Why** and **Rejected**.
 3. **The code is the documentation for _how_.** Docs cover only what code can't say: intent, tradeoffs, things tried and abandoned.
-4. **No doc for speculative work.** Write it when the work starts, not when it's imagined.
+4. **No doc for speculative work** — except `DIRECTION.md`, and only with a trigger. An entry
+   with no condition that would start it is a wish, so delete it.
 5. **Agent must read before writing.** Any non-trivial change reads `SPEC.md` first. Any change that contradicts a decision stops and asks.
 6. **Doc edits are part of the diff.** Change behavior contradicting a doc → update the doc in the same commit. No follow-up doc commits.
 7. **Comments over docs for local logic.** A tricky function gets a comment, not a paragraph in `SPEC.md`.
@@ -82,10 +84,10 @@ context windows. Treat the cap as a hard budget, not a target.
 Check before committing a doc change:
 
 ```sh
-wc -l CLAUDE.md docs/*.md   # 100 / 200 / 200
+wc -l CLAUDE.md docs/*.md   # 100 / DIRECTION 120 / DECISIONS 200 / SPEC 200
 ```
 
-Anti-rules — don't create: `README` sections duplicating `SPEC.md`, per-feature design docs, `ARCHITECTURE.md`, a `docs/` tree, changelogs (git log is the changelog), TODO files (issues or `ponytail:` comments instead).
+Anti-rules — don't create: `README` sections duplicating `SPEC.md`, per-feature design docs, `ARCHITECTURE.md`, a `docs/` tree, changelogs (git log is the changelog), TODO lists (a deferral in code is a `ponytail:` comment; a direction with no code is a `DIRECTION.md` entry with a trigger).
 
 ## Conventions
 
