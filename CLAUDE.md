@@ -51,7 +51,7 @@ Four files. No others. If a doc doesn't fit one of these, it doesn't exist.
 | `CLAUDE.md` | How to work here: stack, commands, conventions, invariants. | Current truth. Overwrite freely. | **100 lines** | every session |
 | `docs/SPEC.md` | What we're building and why. Scope, non-goals, data shapes. | Current truth. Overwrite freely. | **200 lines** | on demand |
 | `docs/DECISIONS.md` | Choices with a "why" that outlives the code. | Append-only. Never edit past entries. | **5 lines/entry** | on demand |
-| `docs/DIRECTION.md` | Work with no code yet: what, why, and the **trigger** that would start it. | Prune freely. An untouched entry is a dead one. | **120 lines** | on demand |
+| `docs/DIRECTION.md` | Work with no code yet: what, why, and the **trigger** that would start it. | Prune freely. An untouched entry is a dead one. | **150 lines** | on demand |
 
 Rules:
 
@@ -84,7 +84,7 @@ context windows. Treat the cap as a hard budget, not a target.
 Check before committing a doc change:
 
 ```sh
-wc -l CLAUDE.md docs/*.md   # 100 / DIRECTION 120 / DECISIONS 200 / SPEC 200
+wc -l CLAUDE.md docs/*.md   # 100 / DIRECTION 150 / DECISIONS 200 / SPEC 200
 ```
 
 Anti-rules — don't create: `README` sections duplicating `SPEC.md`, per-feature design docs, `ARCHITECTURE.md`, a `docs/` tree, changelogs (git log is the changelog), TODO lists (a deferral in code is a `ponytail:` comment; a direction with no code is a `DIRECTION.md` entry with a trigger).

@@ -8,8 +8,7 @@ to code are `ponytail:` comments instead.
 
 ## A real design pass
 
-**Now:** it reads as a prototype, and specifically because of these, roughly in order of how much
-they give it away:
+**Now:** it reads as a prototype, in roughly this order of how much it gives away:
 
 - **Emoji as icons** (📅 💬 🔗 📖). The loudest tell — they render differently on every platform,
   sit on their own baselines, and read as placeholders. Inline SVG, no dependency.
@@ -28,61 +27,79 @@ they give it away:
   state alike, with no considered palette around it.
 - **Nothing moves.** Cards cut in with no entry, and depth has no sense of travel.
 
-**Do:** treat the glance card as a poster — it is a single sentence at 34px over an image, which is
-a typography problem more than a layout one. Everything else follows from settling type, a palette
-and an icon set.
+**Do:** treat the glance card as a poster — one sentence at 34px over an image is a typography
+problem before a layout one. Type, palette and an icon set settle the rest.
 
-**Trigger:** before showing it to anyone who is not you. It is fine while the audience is one
-person who knows why it looks like this.
+**Trigger:** before showing it to anyone who is not you.
 
-**Not:** a component library or a CSS framework. There are two screens and no reusable surfaces;
-a design system here would be more code than the app.
+**Not:** a component library. Two screens, no reusable surfaces — it would be more code than the app.
 
 ## Better images
 
-**Now:** the card background is the article's `og:image`. That tag is chosen to look good in a
-social card, so it is often a site banner, a logo or an author headshot rather than anything about
-the post — and only ~45% of articles declare one at all. The viewer crops it with
-`object-fit: cover`, which cuts the edges off a wide image in a tall frame.
+**Now:** `og:image`, which is picked to look good in a social card — so often a banner, logo or
+headshot rather than anything about the post, and only ~45% of articles declare one. The viewer
+crops it `cover`, cutting the edges off a wide image in a tall frame.
 
-**Do:** fall back to the largest in-body `<img>` when there is no `og:image`, then score candidates
-by dimensions, position and alt text. `fetch_page` already returns the raw HTML both need. On the
-viewer side, a blurred full-bleed copy behind a contained one, the way music apps show album art.
+**Do:** fall back to the largest in-body `<img>`, then score candidates by size, position and alt
+text — `fetch_page` already returns the HTML both need. Viewer side, a blurred full-bleed copy
+behind a contained one.
 
-**Trigger:** when a scroll through a day's cards feels visually repetitive, or when the share of
-cards with no image stops feeling acceptable.
+**Trigger:** when a day's scroll feels visually repetitive.
 
-**Not:** generating images. It costs real money per card and cannot be verified against a source,
-which is the opposite of how everything else here works.
+**Not:** generating images — costs per card and cannot be verified against a source.
+
+## Korean alongside English
+
+**Now:** English only, for a reader who is a Korean beginner. The glance line is the one sentence
+they must not have to decode.
+
+**Do:** a second pass over the finished day file adding `simple_ko` / `substance_ko`, with
+**gemini-3.8-flash**, **batched** — a whole day in one call. Measured on real cards:
+
+| | per card |
+|---|---|
+| batched translation | **+$0.0020** (+15%, ~₩66/day at 24 cards) |
+| one call per card | +$0.0074 (+55%) — re-sends the instructions 24 times |
+| Korean written directly in the main call | ~free, but loses English |
+
+Translate rather than generate both in the main call, despite that being cheaper: the English
+`substance` is what was verified against verbatim quotes, so translating carries that verification
+across. Generated independently the two drift, and the Korean is unverified. A separate pass also
+fails without costing an edition. Quotes and the comment sheet stay English — a Korean card over an
+English thread is the design question here, not the cost.
+
+**Trigger:** wanting to show it to someone who does not read English comfortably.
+
+**Not:** Papago — the register *is* the product ("구린", "풀어버렸대", not news-wire Korean) and MT
+has no setting for it. **Not** bare Lite: measured, it wrote 오픈아이 for OpenAI and dropped Apache
+and Snap. Markers survive on Lite fine, so if ₩56/day ever matters, feed it the card's existing
+`entities` array as a do-not-translate list.
 
 ## Story threading
 
 **Now:** `entities` is recorded on every card and nothing reads it.
 
-**Do:** link a post to earlier posts about the same entity — "4th post this month about Zig 0.14",
-"previously: announced in March". This is the strongest answer to the beginner's real problem, that
-every story arrives mid-conversation with no history. It is also the honest version of showing a
-developing story, as opposed to repeating a card.
+**Do:** link a post to earlier ones about the same entity — "4th post this month about Zig 0.14".
+The strongest answer to the beginner's real problem, that every story arrives mid-conversation with
+no history, and the honest version of showing a developing story rather than repeating a card.
 
-**Trigger:** a few weeks of archive. It does nothing on a thin index and cannot be evaluated early.
+**Trigger:** a few weeks of archive. Cannot be evaluated on a thin index.
 
 ## Discussion as a selection signal
 
 **Now:** selection is points only, at 200.
 
 **Do:** add `OR comments >= ~150`. Points and discussion come apart, and a high comment-to-point
-ratio is precisely a contested story — which is what the camps line exists for. Measured example: a
-Waymo story at 135 points carried 223 comments and would never be selected today.
+ratio is precisely a contested story — what the camps line exists for. Measured: a Waymo story at
+135 points carried 223 comments and would never be selected.
 
-**Trigger:** after a week of reading real editions, if the camps lines feel thin or the interesting
-arguments are visibly missing.
+**Trigger:** after a week of real editions, if camps lines feel thin.
 
 ## Extraction quality
 
-**Now:** 28% of selected posts yield no article at all (paywall, PDF, JS-rendered, timeout) and fall
-back to comments only. Boilerplate stripping is deliberately conservative — 12% removed — because a
-tighter rule deleted numbered lists and spec rows that were the substance, measured at 50% loss on
-one article.
+**Now:** 28% of selected posts yield no article (paywall, PDF, JS-rendered, timeout) and fall back
+to comments. Boilerplate stripping is conservative — 12% removed — because a tighter rule deleted
+numbered lists and spec rows that were the substance, at 50% loss on one article.
 
 **Do:** proper extraction — realistically Readability plus a DOM parser, the first dependency this
 project would take.
@@ -91,13 +108,9 @@ project would take.
 
 ## Multimodal cards
 
-**Now:** the model is sent text only and never sees the hero image or any chart.
-
-**Do:** send the image for posts whose substance is visual — benchmark charts, before/after shots.
-
-**Trigger:** not soon. It breaks the verification model: a claim read off a chart cannot be backed
-by a verbatim text quote, which is the whole mechanism preventing fabrication. It needs its own
-answer to that question first, not just a budget.
+Send the hero image for posts whose substance is visual (benchmark charts). **Blocked, not
+scheduled:** a claim read off a chart cannot be backed by a verbatim quote, which is the whole
+mechanism preventing fabrication. Needs an answer to that first, not a budget.
 
 ## Smaller, cheap
 

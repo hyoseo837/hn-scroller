@@ -53,3 +53,8 @@ Supersedes the Node choice in the stack entry above; everything else there still
 
 **Why:** the three-file rule had nowhere to put "we should do this eventually". `ponytail:` comments cover deferrals that live next to code, but an idea with no code — better image sourcing, story threading, discussion as a selection signal — had only this conversation to live in, and a conversation is not a durable place. Requested by the user, who wrote the three-file rule in the first place.
 **Guarded against becoming a TODO dump:** every entry needs a **trigger**, the condition that would actually start the work; an entry with no trigger is a wish and gets deleted. Capped at 120 lines, prune freely, and an untouched entry is treated as evidence the idea died rather than as a debt. Anything already deferred in code stays a `ponytail:` comment, so the two do not overlap.
+
+## 2026-09-22 — DIRECTION cap raised 120 -> 150
+
+**Why:** adding the bilingual entry took it to 148. Compressing every entry that had slack got it to 130, and what remained was measured findings — cost tables, the Lite transliteration failure, the 28% extraction rate — not prose. The cap existed to stop a wish-list dump; the trigger rule does that job, and `DIRECTION.md` is never auto-loaded, so its context cost is zero until someone opens it. Deleting a live, trigger-gated entry to satisfy a number picked out of the air is the wrong trade.
+**Rejected:** cutting an entry instead (none were dead — every one still had a real trigger); leaving it over cap silently, which is how caps stop meaning anything. Compression came first and got 18 lines; the raise covers what compression could not.
