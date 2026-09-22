@@ -31,6 +31,10 @@ CAP = 35
 MAX_COMMENTS = 20
 SHEET_COMMENTS = 5  # how many go in the day file for the comment sheet
 SHEET_COMMENT_CHARS = 400
+# Measured over 210 top-level comments: median 304, p99 1,490, max 1,600. At 2,000
+# nothing real is touched — it exists so one pathological thread cannot become an
+# unbounded prompt. Comments were the only input with no ceiling.
+MODEL_COMMENT_CHARS = 2_000
 MAX_ARTICLE_CHARS = 24_000  # ~6k tokens
 MIN_ARTICLE_CHARS = 500  # below this, fall back to title + comments
 CALL_SPACING_S = 5  # free tier is 5-15 RPM; 35 posts ~= 3 min
@@ -190,11 +194,11 @@ def unsupported_quotes(support: list[str], source: str, min_words: int = 6) -> l
     return bad
 
 
-def peek(text: str) -> str:
-    """Trim a comment for the sheet without slicing through a word."""
-    if len(text) <= SHEET_COMMENT_CHARS:
+def peek(text: str, limit: int = SHEET_COMMENT_CHARS) -> str:
+    """Trim a comment without slicing through a word."""
+    if len(text) <= limit:
         return text
-    cut = text[:SHEET_COMMENT_CHARS]
+    cut = text[:limit]
     space = cut.rfind(" ")
     return (cut[:space] if space > 0 else cut).rstrip(" ,;:.\u2014-") + "\u2026"
 
@@ -258,7 +262,8 @@ def model_input(title: str, article: str, comments: list[str]) -> str:
         else "\n(No article text available — work from the title and comments only.)"
     )
     parts.append(
-        "\nTOP-LEVEL COMMENTS:\n" + "\n".join(f"- {c['by']}: {c['text']}" for c in comments)
+        "\nTOP-LEVEL COMMENTS:\n"
+        + "\n".join(f"- {c['by']}: {peek(c['text'], MODEL_COMMENT_CHARS)}" for c in comments)
         if comments
         else "\n(No comments yet.)"
     )
@@ -723,6 +728,12 @@ def check() -> None:
     assert hero_image("<p>no meta here</p>", "https://ex.test/") is None
     assert hero_image("", "") is None
     assert peek("short one") == "short one", "short comments are left alone"
+    # the model's ceiling is separate from the sheet's, and far looser
+    assert len(peek("w " * 3000, MODEL_COMMENT_CHARS)) <= MODEL_COMMENT_CHARS + 1
+    assert peek("x " * 300, MODEL_COMMENT_CHARS) == "x " * 300, "a normal comment is untouched"
+    long_thread = [{"by": "u", "text": "word " * 2000} for _ in range(MAX_COMMENTS)]
+    sent = model_input("t", "", long_thread)
+    assert len(sent) < MAX_COMMENTS * (MODEL_COMMENT_CHARS + 120), "worst-case prompt is bounded"
     assert not peek("word " * 200).rstrip("\u2026").endswith(" "), "no dangling space"
     assert " ".join(peek("alpha beta " * 90).rstrip("\u2026").split()[-1:]) in ("alpha", "beta"), (
         "must cut on a word boundary, never mid-word"
