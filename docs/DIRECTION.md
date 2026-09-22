@@ -16,6 +16,11 @@ they give it away:
 
 - **Emoji as icons** (📅 💬 🔗 📖). The loudest tell — they render differently on every platform,
   sit on their own baselines, and read as placeholders. Inline SVG, no dependency.
+- **No header.** The top bar is a date and three dots. There is no title, no sense of edition, and
+  nothing that says what you are looking at when someone opens it cold.
+- **One ratio for every card.** The glance is always a full-bleed 9:19.5 poster whatever the image
+  is, so a wide screenshot is cropped to a sliver and a square logo is blown up. Letting the frame
+  follow the image — contained, with a blurred fill behind — is the same fix as the image entry.
 - **No typographic identity.** `system-ui` throughout. It is legible and it is anonymous, and on a
   card that is one sentence on a screen, the type *is* the design.
 - **Placeholder-grade fallbacks.** Cards with no image get a hue-rotated gradient, which is the

@@ -1,16 +1,19 @@
-name: daily edition
+name: edition
 
 on:
   schedule:
-    # 00:00 UTC — captures a full US day and lands ~09:00 KST. GitHub runs
-    # scheduled jobs late by 10-30 min, which is harmless for a daily edition.
-    - cron: "0 0 * * *"
+    # Every 6h. Dedup means the same ~24 posts/day are processed either way, so
+    # this costs nothing extra and a failed run goes stale for 6h, not 24. Safe
+    # on thread maturity because the 200-point threshold already gates age:
+    # of 158 qualifying stories in a week, one was under 6h old, and it had 116
+    # comments. GitHub runs scheduled jobs 10-30 min late, which is harmless.
+    - cron: "0 0,6,12,18 * * *"
   workflow_dispatch: {}
 
 # Never let a slow run overlap the next day's: the second would re-select the
 # same posts before the first had written published.json.
 concurrency:
-  group: daily-edition
+  group: edition
   cancel-in-progress: false
 
 permissions:

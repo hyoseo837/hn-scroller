@@ -12,7 +12,7 @@ No framework, no build step, no server, zero dependencies.
 | Viewer | Vanilla HTML/CSS/JS. `scroll-snap-type` gives the 2D card grid natively. |
 | Generator | One Python script, stdlib only (`urllib`), Gemini REST (no SDK). No `requirements.txt`. |
 | Data | Static JSON per day in `data/`, plus `data/index.json` so the calendar knows which days exist. |
-| Host + cron | Cloudflare Pages on `hn.hyoseo.dev` (domain already in Cloudflare); GitHub Actions at 00:00 UTC commits the day's JSON, and the push triggers the deploy. |
+| Host + cron | Cloudflare Pages on `hn.hyoseo.dev` (domain already in Cloudflare); GitHub Actions every 6h commits the day's JSON, and the push triggers the deploy. |
 | Client state | `localStorage`, resume position only. |
 
 - Inline CSS/JS in `index.html`; split out `app.js` past ~200 lines.
