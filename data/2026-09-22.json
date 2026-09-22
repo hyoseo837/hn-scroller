@@ -3431,6 +3431,392 @@
         }
       ],
       "image": null
+    },
+    {
+      "id": 49803892,
+      "url": "https://www.anthropic.com/claude-opus-5-5",
+      "hn": "https://news.ycombinator.com/item?id=49803892",
+      "title": "Claude Opus 5.5",
+      "depth": [
+        {
+          "text": "Anthropic launched a new **flagship AI** that runs **cheaper and faster**",
+          "tier": "simple"
+        },
+        {
+          "text": "Claude Opus 5.5 runs **40% cheaper** and over 30% faster than Opus 5 while matching Claude Fable 5.1. Cache reads dropped 60% to $0.20 per million tokens, alongside stricter **safeguards** requiring verified access for biology and cybersecurity work.",
+          "tier": "substance",
+          "data": [
+            [
+              "Input tokens",
+              "$4 per million"
+            ],
+            [
+              "Output tokens",
+              "$20 per million"
+            ],
+            [
+              "Cache reads",
+              "$0.20 per million"
+            ],
+            [
+              "Cost reduction vs Opus 5",
+              "40%"
+            ],
+            [
+              "Speed increase vs Opus 5",
+              ">30%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some praise the major price cut, increased speed, and bankable rate limits, while others express fatigue over constant release churn and warn that expanding safeguards will push developers toward unconstrained alternatives.",
+      "comment_count": 660,
+      "terms": [
+        "cache reads",
+        "prompt injection",
+        "agentic coding"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude",
+        "OpenAI",
+        "DeepSeek"
+      ],
+      "comments": [
+        {
+          "by": "sailingparrot",
+          "text": "> Claude Opus 5.5 is our first release since we called for pacing the frontier. Interesting how the very first line is used to remind the reader of their call to pace the frontier just last week, and everything else after that line is to demonstrate with very specific numbers how they absolutely are not pacing."
+        },
+        {
+          "by": "GodelNumbering",
+          "text": "Finally that price drop Prices per 1M tokens Claude Opus 5.5 Claude Opus 5\nCache reads $0.20 $0.50\nInput tokens $4 $5\nOutput tokens $20 $25\nCache writes $5 $6.25\nOpus 5 is the model with highest spend on openrouter ( https:&#x2F;&#x2F;openrouter.ai&#x2F;rankings#task-spend ) and it seems plausible that Opus 5 is&#x2F;was the highest spend model in the world, and certainly Anthropic's biggest…"
+        },
+        {
+          "by": "wg0",
+          "text": "No thanks. I'm good with DeepSeek v4.1 set to high. It is a relentlessly \"hardworking\" dirt cheap model. Told it to convert a products page (that had two different fonts based on language) from two columns layout to 5 columns on desktop and 2 columns on mobile ensuring typography is readable. My man went into spawning sub agent which failed to drive chrome so it wrote its own chrome driver…"
+        },
+        {
+          "by": "mcintyre1994",
+          "text": "> Communication. Opus 5.5 communicates more naturally than prior models. Early testers found its writing clearer and easier to follow, which addresses some of the common feedback we heard about Opus 5. It puts the most important information up front, and its style makes it a better work partner over long sessions. As one early tester put it, “it writes the way I do.” In our own use, this has made…"
+        },
+        {
+          "by": "simonw",
+          "text": "Here are pelicans for thinking levels low, medium, high, and xhigh: https:&#x2F;&#x2F;tools.simonwillison.net&#x2F;markdown-svg-renderer?url=ht... All four levels have a correctly shaped bicycle frame. The differences between the pelicans aren't huge, but the xhigh one has a better beak. I haven't managed to get one for level \"max\" yet, it hit the limit of 128,000 cap for output tokens while it…"
+        }
+      ],
+      "image": "https://cdn.sanity.io/images/4zrzovbb/website/f4d37a1d1f582f53f4e89440062b649b6273a093-1200x630.jpg"
+    },
+    {
+      "id": 49805509,
+      "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+      "hn": "https://news.ycombinator.com/item?id=49805509",
+      "title": "GPT-6 Sol and Luna",
+      "depth": [
+        {
+          "text": "OpenAI dropped new models that cut **API prices** roughly **in half**",
+          "tier": "simple"
+        },
+        {
+          "text": "The new GPT-6 Sol and Luna cut **token prices** by roughly **50%** compared to the 5.6 versions. Coding evaluations show Sol gaining slightly on benchmarks while Luna scores **two points lower**.",
+          "tier": "substance",
+          "data": [
+            [
+              "GPT-6 Sol input (per 1M tokens)",
+              "$2"
+            ],
+            [
+              "GPT-6 Sol output (per 1M tokens)",
+              "$10"
+            ],
+            [
+              "GPT-6 Luna input (per 1M tokens)",
+              "$0.10"
+            ],
+            [
+              "GPT-6 Luna output (per 1M tokens)",
+              "$0.50"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some celebrate the 50% price cut as a massive bargain for everyday coding, while others worry the lower prices come from nerfed base models that score lower on benchmarks.",
+      "comment_count": 434,
+      "terms": [
+        "token",
+        "context window"
+      ],
+      "entities": [
+        "OpenAI",
+        "Anthropic",
+        "Codex",
+        "Claude"
+      ],
+      "comments": [
+        {
+          "by": "simonw",
+          "text": "GPT-6 Luna being half the price of GPT-5.6 Luna is a really big deal. Here's GPT-6 Luna pelicans: https:&#x2F;&#x2F;tools.simonwillison.net&#x2F;markdown-svg-renderer?url=ht... And GPT-6 Sol: https:&#x2F;&#x2F;tools.simonwillison.net&#x2F;markdown-svg-renderer?url=ht... Scroll to the bottom for the GPT-6 Sol max one: https:&#x2F;&#x2F;tools.simonwillison.net&#x2F;markdown-svg-renderer?url=ht…"
+        },
+        {
+          "by": "jeffnash",
+          "text": "At this point, the deciding factors for me between Claude Code 20x and Codex Pro 20x are: 1&#x2F; Usage limits: downstream of input&#x2F;output cost, but resets and obscure windows and odd 20x plan &#x2F; 5x plan != 4x usage math throw a wrench into it. Winner right now is Codex by a mile, especially when you factor in the fact that ChatGPT usage (even 6 Astra Pro) is essentially unmetered on the…"
+        },
+        {
+          "by": "m_fayer",
+          "text": "I've been working with agents all year, but 5.6 Sol was some sort of sweet spot for me. Something about how it communicated verbally and its engineering instincts just clicked for me, and I was able to somehow predict it and jam with it. Like a colleague you click with. It's the first model I've gotten attached to. I'm concerned that whatever model supercedes it, while technically better, just…"
+        },
+        {
+          "by": "pookieinc",
+          "text": "I don't see how anyone can be using Claude with prices like this, it's pretty incredible what the OpenAI team is doing, w.r.t model quality and pricing. Prices per 1M tokens Claude Opus 5.5 Claude Opus 5\nCache reads $0.20 $0.50\nInput tokens $4 $5\nOutput tokens $20 $25\nCache writes $5 $6.25\nModel Input Output Price reduction GPT‑6 Sol\nvs. GPT‑5.6 Sol $4 → $2 $20 → $10 50% cheaper GPT‑6 Luna\nvs…"
+        },
+        {
+          "by": "Someone1234",
+          "text": "Have they solved GPT5.6 SOL's propensity to over-engineer and over-complicate? You'd ask SOL to do something relatively simple, and find four single-use methods, an interface, and a factory-factory. I actually preferred 5.6-Terra not because it is technically superior (it isn't) but because it had better instincts to NOT do this stuff. PS - Speaking of better instincts, have they closed the…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49803863,
+      "url": "https://www.anthropic.com/claude-opus-5-5",
+      "hn": "https://news.ycombinator.com/item?id=49803863",
+      "title": "Claude Opus 5.5",
+      "depth": [
+        {
+          "text": "people are hoping a new **Claude Opus** makes their **subscription** worthwhile",
+          "tier": "simple"
+        },
+        {
+          "text": "A user hoped the update makes Anthropic's **$20** tier less of a joke, having called version 5.0 the **worst release** of 2026. They noted they had spent months relying instead on version 4.8 as a grunt model for simple work.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 2,
+      "terms": [
+        "grunt model"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude"
+      ],
+      "comments": [
+        {
+          "by": "tomhow",
+          "text": "Comments moved to https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49803892 ."
+        },
+        {
+          "by": "sidrag22",
+          "text": "Cool maybe this makes the 20$ sub less of a joke. I deemed 5.0 unworthy of spending time fighting with and personally considered it by far the worst release of 2026 by either of the two major labs(promising model, but obviously not even close to ready for the general public). So for that 20$ tier for the entire summer and into fall, i was on their 2nd class public model(4.8) released in May. Not…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49802871,
+      "url": "https://mouse.dev/blog/muse-runtime-export/",
+      "hn": "https://news.ycombinator.com/item?id=49802871",
+      "title": "I asked Meta’s Muse for its filesystem and it sent me 6.8GB",
+      "depth": [
+        {
+          "text": "someone asked **Meta’s Muse** agent for its **filesystem** and got back 6.8GB",
+          "tier": "simple"
+        },
+        {
+          "text": "Peter James asked the agent to export its environment to Google Drive, receiving an archive that unpacked to **6.8 GB** of internal docs, 68 skills, and notes on an experimental **Meta Home Link** device. Meta reviewed the submission and marked the **bug bounty** report “Not Applicable.”",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say exfiltrating internal system files and keys should qualify as a security leak, while others argue each user has a dedicated sandbox and an agent having access to its own files is expected behavior.",
+      "comment_count": 137,
+      "terms": [
+        "bubblewrap",
+        "systemd-nspawn"
+      ],
+      "entities": [
+        "Meta",
+        "Muse",
+        "Peter James",
+        "Google Drive",
+        "Linux",
+        "Codex"
+      ],
+      "comments": [
+        {
+          "by": "tolugenius",
+          "text": "> About 20 Markdown files described browser use, connectors, payments, credentials, data handling, generated files, voice, goals, and scheduling. This the state of software engineering in 2026. Edit: clarified engineering to software engineering, which is more correct"
+        },
+        {
+          "by": "ostensible",
+          "text": "Each user gets dedicated VM. They got contents of their own sandbox. Big deal. The level of excitement here is wildly disproportionate"
+        },
+        {
+          "by": "simonpure",
+          "text": "I asked it for it's harness and then asked agy to do a teardown. It's a monolithic 332MB binary written in Rust from scratch. Full teardown is here: https:&#x2F;&#x2F;gist.github.com&#x2F;simonpure&#x2F;d6f960045334453360eff1e2a0..."
+        },
+        {
+          "by": "nzoschke",
+          "text": "That seems like a feature not a bug. Agents work best with full access to their computer, the same way developers work. It gives me a glimmer of hope that openness will win. I don't trust Meta as a corp, but they've been doing the a lot of good things with open source, open models, and developer friendly agents. More thoughts on agent computer architecture here, as I've been building our own open…"
+        },
+        {
+          "by": "estetlinus",
+          "text": "Ah, glad to hear Muse has a Polymarket integration in the pipeline. I mean, what could possibly go wrong?"
+        }
+      ],
+      "image": "https://mouse.dev/og/muse-runtime.png"
+    },
+    {
+      "id": 49798204,
+      "url": "https://board.flatassembler.net/topic.php?t=24261",
+      "hn": "https://news.ycombinator.com/item?id=49798204",
+      "title": "AMD's random number generator can't generate a 0?",
+      "depth": [
+        {
+          "text": "someone noticed **AMD processors** seem completely unable to generate the **number zero**",
+          "tier": "simple"
+        },
+        {
+          "text": "An assembly developer discovered that AMD CPUs never output a 16-bit zero when running the hardware random instructions **rdrand** and rdseed, whereas Intel chips behave normally. Commenters reproduced the bug on Zen 2 processors for 16-bit outputs, wondering if an earlier firmware fix for a bug that **always returned -1** accidentally created this one.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: one argues hardware-accelerated cryptography is untrustworthy and prone to silicon flaws, while another argues trusted hardware acceleration is the right approach as long as you mix in other entropy sources.",
+      "comment_count": 184,
+      "terms": [
+        "rdrand",
+        "microcode",
+        "CSPRNG"
+      ],
+      "entities": [
+        "AMD",
+        "Intel"
+      ],
+      "comments": [
+        {
+          "by": "zir_blazer",
+          "text": "Not sure if this finding is new, but the author from FASM Thread apparently has a Zen 2 (He doesn't directly mention anything besides \"Ryzen 7\", some other poster mentions it is a 4800HS). There were a number of articles about RDRAND being broken on Zen 2 and earlier generations but fixed via Microcode from about 6 years ago…"
+        },
+        {
+          "by": "jstanley",
+          "text": "This is not the first RNG bug on Zen 2, I recall after I first got mine that some application or other would quit immediately at startup because rdrand always returned -1, i.e. all 1s. It was fixed with a microcode update. Do we now learn that they fixed \"always generate all 1s\" with \"never generate all 0s\"?? EDIT: I've been unable to reproduce the problem on my CPU, FWIW. It's a Ryzen 5 3600…"
+        },
+        {
+          "by": "0x0",
+          "text": "I remember setting up a new git CI build server many years ago, which at the time rather quickly started failing build pipelines in a nodejs css frontend build script, turns out there was something funky with the AMD processor's RDRAND. A motherboard BIOS flash update fixed it. https:&#x2F;&#x2F;github.com&#x2F;sass&#x2F;libsass&#x2F;issues&#x2F;3151"
+        },
+        {
+          "by": "strenholme",
+          "text": "This is why I use, in security critical contents of my software (where the numbers have to be computationally infeasible to produce), a type of random number generator called an XOF (extendable-output function). It takes entropy from multiple different sources, makes it all input to the XOF, then the XOF uses cryptography to output a stream that has as much entropy as the combined entropy of all…"
+        },
+        {
+          "by": "349ru3h4f03",
+          "text": "https:&#x2F;&#x2F;www.amd.com&#x2F;en&#x2F;resources&#x2F;product-security&#x2F;bulletin&#x2F;a..."
+        }
+      ],
+      "image": "https://flatassembler.net/images/flatassembler.gif"
+    },
+    {
+      "id": 49806430,
+      "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack/",
+      "hn": "https://news.ycombinator.com/item?id=49806430",
+      "title": "Overreliance on AI contributed to missile strike on Iran school – Pentagon",
+      "depth": [
+        {
+          "text": "the Pentagon found that **overreliance on AI** contributed to a **missile strike** on an Iranian school",
+          "tier": "simple"
+        },
+        {
+          "text": "Outdated records labeling a site in Minab as a military target were fed into the **Maven** targeting platform, compressing targeting work from hours into minutes. Palantir stated there is no evidence its software was at fault, while an investigation concluded the military **acted recklessly** by failing to properly verify the target.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some argue AI is being used as a scapegoat for human incompetence and dismantled vetting teams, while others say handing lethal targeting decisions to software creates dangerous blind spots and diffuses accountability.",
+      "comment_count": 119,
+      "terms": [
+        "Maven",
+        "Palantir"
+      ],
+      "entities": [
+        "Pentagon",
+        "Palantir",
+        "Maven",
+        "Bloomberg",
+        "White House"
+      ],
+      "comments": [
+        {
+          "by": "legitster",
+          "text": "> It found the U.S. “failed in its obligation to do everything feasible to verify” that the school was a military objective and that the failure “went beyond mere negligence.” The report said the United States “directed the strikes at the building of the school while being aware of a substantial risk of striking a civilian object and acting recklessly as regards the possibility that this would…"
+        },
+        {
+          "by": "colingauvin",
+          "text": "While I think that it's important to do root cause analysis, we need to be very careful not to absolve blame from the people that decided to shift a significant weight of decision-making authority to an AI. An AI can't be tried in a court. There has to be a responsible human for everyone one of its actions, especially when it's killing (-people-) children. I cannot believe this has come to pass."
+        },
+        {
+          "by": "imranq",
+          "text": "> Officials said some users expected Maven to flag stale records or contradictions in the intelligence assembled for potential targets, though it is not clear why they thought the system would do that This is what happens when people who don't understand AI and its limitations embrace it wholeheartedly, thinking it's going to behave like The ultimate analyst. Except it's not. Its got blind spots…"
+        },
+        {
+          "by": "jmathai",
+          "text": "> The Minab site, which was cataloged as an Islamic Revolutionary Guard Corps facility due to outdated data, was fed into Maven with other candidates and came out as a recommended day-one target. Target-list work that once took hours was condensed into minutes. I feel like we're optimizing the wrong metric here."
+        },
+        {
+          "by": "banubis",
+          "text": "The pentagon says it was Palantir software’s fault, Palantir says it was the fault of bad data input to their software. Where’s the accountability by both organizations? How did we get to a world where military decisions leading to innocent deaths are responded to as if it was just another miscommunication implementing a B2B SaaS platform."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49802161,
+      "url": "https://arcturus-labs.com/blog/2026/09/21/will-openai-eat-jevs-lunch/",
+      "hn": "https://news.ycombinator.com/item?id=49802161",
+      "title": "OpenAI is well positioned to fast-follow Jev",
+      "depth": [
+        {
+          "text": "a developer argues **OpenAI** could easily copy **Jev** and bake classification straight into its models",
+          "tier": "simple"
+        },
+        {
+          "text": "TypeSafe built Jev for rapid **probabilistic classification** using token probabilities, but an engineer argues OpenAI could integrate the technique directly on the **GPU**. Co-founder Diogo Almeida maintains the startup's real edge is in **synthetic data** rather than model architecture.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say Jev has no moat and will quickly be cloned or acqui-hired by frontier labs, while others argue OpenAI is focused on complex reasoning rather than zero-token classification and big labs already run plenty of internal classifiers.",
+      "comment_count": 167,
+      "terms": [
+        "logits",
+        "classifier",
+        "moat"
+      ],
+      "entities": [
+        "OpenAI",
+        "TypeSafe",
+        "Jev",
+        "Diogo Almeida"
+      ],
+      "comments": [
+        {
+          "by": "orbital-decay",
+          "text": "Every major AI shop has a ton of in-house classifiers already, big, small, generalist, specialized. Some are used in inference pipelines (e.g. safeguards), some are used in data preparation, training, analysis and investigation, research, various one-off and intermediate tasks etc. Offering them on a public API doesn't always make business sense. I don't see much substance to this buzz, looks…"
+        },
+        {
+          "by": "prodigycorp",
+          "text": "This article is extraordinarily hard to read. It’s tummelvisioned on OpenAI and things like tool calling which are only relevant to the extent that llms have been tuned to make relative choices, but this applies to all LLMs. Also, some really outdated references. LLM written, perhaps? Also, moat discussion is the lowest form of discussion. I don’t care if jev has a moat. Did it get the interface…"
+        },
+        {
+          "by": "andy12_",
+          "text": "I find it unlikely. OpenAI is all in training models with reasoning with RL, and Jev-like models are the total opposite. They are made to not reason at all to be fast. If you want to add reasoning on top, you might as well use a conventional LLM because you lose the price and speed benefits when you output auto-regressive tokens. I don't think OpenAI will even bother with this. > My main…"
+        },
+        {
+          "by": "rdevsrex",
+          "text": "There is one benefit that Jev has, that it is not OpenAI and thus it's probably less likely to steal your own work."
+        },
+        {
+          "by": "prometheus1992",
+          "text": "Why would OAI need to follow Jev? I really think this is paid by Jev. Jev itself won't have lunch money in a shortwhile because there are literally 10s of free alternatives available which can be run locally on basic consumer hardware. Terrible utility aside, there is no sensible business proposition in Jev."
+        }
+      ],
+      "image": "http://arcturus-labs.com/blog/assets/will-openai-eat-jevs-lunch/hero.jpg"
     }
   ]
 }
