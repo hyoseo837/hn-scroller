@@ -12,13 +12,15 @@ No framework, no build step, no server, zero dependencies.
 | Viewer | Vanilla HTML/CSS/JS. `scroll-snap-type` gives the 2D card grid natively. |
 | Generator | One Python script, stdlib only (`urllib`), Gemini REST (no SDK). No `requirements.txt`. |
 | Data | Static JSON per day in `data/`, plus `data/index.json` so the calendar knows which days exist. |
-| Host + cron | GitHub Pages; GitHub Actions at 00:00 UTC commits the day's JSON. Host and cron are the same free thing. |
+| Host + cron | Cloudflare Pages on `hn.hyoseo.dev` (domain already in Cloudflare); GitHub Actions at 00:00 UTC commits the day's JSON, and the push triggers the deploy. |
 | Client state | `localStorage`, resume position only. |
 
 - Inline CSS/JS in `index.html`; split out `app.js` past ~200 lines.
 - PWA manifest for the home-screen icon. No service worker until offline reading is actually wanted.
 - Scheduled Actions run 10-30 min late (harmless here) and get **disabled on repos with no recent
   activity** (~60 days) — verify the bot's own commits count, or the app silently dies in two months.
+- Pages serves the repo root, so `generate.py` and `prompt.md` are public. Nothing secret is in
+  them (`.env` is gitignored), but the prompt is the part worth keeping if that ever matters.
 
 ## Commands
 
