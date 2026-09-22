@@ -121,9 +121,16 @@ publish   one JSON file for the day
   of users** — nothing about growth moves this off the free tier.
 - `https://hn.algolia.com/api/v1/search_by_date` — day-wide selection. URL-encode the `>` or it 400s.
 - `https://hacker-news.firebaseio.com/v0/` — item details and comments.
-- **If article extraction yields too little, build the card from title + comments only.** Roughly a
-  third of HN links are paywalled, PDFs, or JS-rendered; a good thread alone can carry a card. Real
-  error path, not a corner to cut.
+- **If article extraction yields too little, build the card from title + comments only.** Measured:
+  28% of selected posts fetch nothing usable (paywall, PDF, JS-rendered, 403, timeout). A good
+  thread alone carries the card; a post is skipped only if it has neither. Real error path.
+- **A soft failure looks like success.** A sign-in wall returns HTTP 200 with HTML, so `looks_gated`
+  treats a short body carrying sign-in language as no article at all. Deliberately conservative:
+  a wrong reject costs one article, a wrong accept puts a subscribe prompt on a card.
+- Site chrome is stripped from articles (not comments) before the model sees them — a "Recent
+  stories" block is a list of *other* articles' headlines. Conservative by necessity: a rule tight
+  enough to catch linked headlines also deletes numbered lists and spec rows, which are often the
+  substance. Measured at 12% removed; the tight version cost 50% on a list-shaped article.
 - **The threshold is also the maturity test.** No age delay: a post at 200 points has proven itself
   whether it took six hours or two days, and holding back an overnight story is the worse failure.
   The 3-day window catches late risers; `published.json` means a post is generated once, ever.

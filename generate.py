@@ -104,6 +104,55 @@ def strip_html(html: str) -> str:
     return re.sub(r"\n{3,}", "\n\n", text).strip(" \n|")
 
 
+_NAV_GLYPH = "\u2630\u25be\u25b8\u00bb"
+_PAYWALL = (
+    "subscribe to", "subscriber", "sign in to", "log in to", "create an account",
+    "enable javascript", "checking your browser", "verify you are human",
+    "register to continue", "article limit", "already a member", "start your free trial",
+)
+
+
+def drop_boilerplate(text: str) -> str:
+    """Strip nav-shaped lines from an ARTICLE. Not for comments.
+
+    A site's chrome comes through the same as its prose, and a "Recent stories"
+    block is a list of *other* articles' headlines — the model has no way to know
+    those are not part of this post. Keeps table rows, which are short and
+    unpunctuated but are exactly the figures `data` is built from.
+    """
+    keep = []
+    for line in text.split("\n"):
+        stripped = line.strip()
+        if not stripped:
+            continue
+        words = stripped.split()
+        # Table rows and numbered list items are short and unpunctuated by nature,
+        # and are often the substance itself — spec figures, a list of styles.
+        if "|" in stripped or re.match(r"^\d+[.)]\s", stripped):
+            keep.append(stripped)
+            continue
+        if any(ch in stripped for ch in _NAV_GLYPH) and len(words) < 14:
+            continue
+        # Only obvious chrome. A tighter rule (drop every unpunctuated line under
+        # ~15 words) also deletes numbered lists and short spec lines, which are
+        # often the substance — measured at 50% loss on a list-shaped article.
+        # Separating nav from a list properly is what Readability is for.
+        if len(words) < 6 and not re.search(r"[.!?:;\"')\u201d]$", stripped):
+            continue
+        keep.append(stripped)
+    return "\n".join(keep)
+
+
+def looks_gated(text: str) -> bool:
+    """A short body carrying sign-in language is a stub, not an article.
+
+    Long pieces mention subscriptions in a footer all the time, so length is what
+    separates a paywall wall from a newsletter plug. Conservative on purpose: a
+    wrong reject costs one article, a wrong accept puts a subscribe prompt on a card.
+    """
+    return len(text) < 1500 and any(m in text.lower() for m in _PAYWALL)
+
+
 def select_posts(hits: list[dict], published: list, cap: int = CAP) -> list[dict]:
     """Threshold filters, cap is only a safety net, count floats with the day.
 
@@ -342,8 +391,12 @@ def sources(item_id) -> dict:
         page_future = pool.submit(fetch_page, url) if url and not item.get("text") else None
         comments = top_comments(item)
         html = page_future.result() if page_future else ""
-    raw = strip_html(item["text"]) if item.get("text") else strip_html(html)[:MAX_ARTICLE_CHARS]
-    article = raw if len(raw) >= MIN_ARTICLE_CHARS else ""  # too thin -> comments carry it
+    if item.get("text"):
+        raw = strip_html(item["text"])  # Ask HN / self post: no site chrome to strip
+    else:
+        raw = drop_boilerplate(strip_html(html))[:MAX_ARTICLE_CHARS]
+    # Too thin, or a sign-in stub that returned 200 like a real page -> comments carry it
+    article = "" if len(raw) < MIN_ARTICLE_CHARS or looks_gated(raw) else raw
     bodies = [c["text"] for c in comments]
     return {
         "item": item,
@@ -570,6 +623,31 @@ def check() -> None:
     assert strip_html(table) == "Latency P50 | 32.8 ms\nECE | 0.081", strip_html(table)
     assert strip_html("<p>one</p><p>two</p>") == "one\ntwo", "blocks stay apart"
     assert strip_html("a<br>b") == "a\nb"
+
+    # Boilerplate stripping: site chrome goes, prose and figures stay.
+    page = "\n".join([
+        "\u2630 latest speech privacy tools \u25be recommended tools",
+        "Recent stories",
+        "The UK's Online Censorship Law Has Entered Its Litigation Era",
+        "Spain ordered blocks on Archive.today after a complaint was filed.",
+        "Latency P50 | 32.8 ms",
+        "Sign in",
+    ])
+    kept = drop_boilerplate(page)
+    assert "Spain ordered blocks" in kept, "prose survives"
+    assert "Latency P50 | 32.8 ms" in kept, "table rows survive — they are what `data` is built from"
+    assert "latest speech privacy" not in kept, "nav glyphs go"
+    assert "Recent stories" not in kept and "Sign in" not in kept, "short unpunctuated fragments go"
+    # Known limit: a linked headline is as long as a sentence, so it survives. A
+    # rule tight enough to catch it deletes numbered lists and spec lines too.
+    assert "9. Memphis Design" in drop_boilerplate("9. Memphis Design"), "list items must survive"
+
+    # Soft failures: HTTP 200, but the body is a sign-in wall.
+    assert looks_gated("Subscribe to read the rest. Already a member? Sign in to continue.")
+    assert looks_gated("Please enable JavaScript to continue.")
+    long_piece = "Real reporting. " * 120 + "Subscribe to our newsletter."
+    assert not looks_gated(long_piece), "a long article with a footer plug is not a paywall"
+    assert not looks_gated("A short post with no gate at all.")
     # quote checking must survive the line breaks
     # a quote must still match across the cell separators we just introduced
     assert unsupported_quotes(["Latency P50 | 32.8 ms | ECE"], strip_html(table)) == []
