@@ -40,6 +40,11 @@ MIN_ARTICLE_CHARS = 500  # below this, fall back to title + comments
 CALL_SPACING_S = 5  # free tier is 5-15 RPM; 35 posts ~= 3 min
 PRICE_IN = 0.75   # USD per 1M input tokens
 PRICE_OUT = 3.75  # USD per 1M output tokens; thinking bills as output
+# Evaluation only, reached by `--sample N --luna`. Production stays on Gemini.
+LUNA = "gpt-6-luna"
+LUNA_API = "https://api.openai.com/v1/responses"
+LUNA_EFFORT = "medium"  # the model's default; Flash thinks by default too, so like for like
+PRICES = {MODEL: (PRICE_IN, PRICE_OUT), LUNA: (0.10, 0.50)}
 
 # Thinking is counted separately from total_output_tokens but billed as output,
 # and it runs ~3x the visible answer — so it dominates both cost and wall time.
@@ -70,6 +75,20 @@ SCHEMA = {
     },
     "required": ["simple", "substance", "support", "camps", "terms", "entities"],
 }
+
+
+def strict(schema):
+    """A copy of `schema` for OpenAI strict mode: every object closed, every property
+    required. Our optional `data` becomes required, so "none" is an empty list."""
+    if isinstance(schema, list):
+        return [strict(s) for s in schema]
+    if not isinstance(schema, dict):
+        return schema
+    out = {k: strict(v) for k, v in schema.items()}
+    if "properties" in out:
+        out["required"] = list(out["properties"])
+        out["additionalProperties"] = False
+    return out
 
 # ------------------------------------------------------------- pure helpers
 
@@ -298,6 +317,30 @@ def output_text(body: dict) -> str:
     )
 
 
+def luna_text(body: dict) -> str:
+    """Pull the answer out of an OpenAI /v1/responses body.
+
+    The top-level `output_text` is SDK-only and absent over raw HTTP. `output` holds
+    `reasoning` items (no text) and a `message` whose content is `output_text` or
+    `refusal`. A refusal or truncation must fail loudly, not parse as an empty card.
+    """
+    texts = []
+    for item in body.get("output") or []:
+        if item.get("type") != "message":
+            continue
+        for block in item.get("content") or []:
+            if block.get("type") == "refusal":
+                raise RuntimeError(f"luna refused: {block.get('refusal')!r}")
+            if block.get("type") == "output_text":
+                texts.append(block["text"])
+    if texts and body.get("status") == "completed":
+        return texts[-1]
+    raise RuntimeError(
+        f"no usable text in OpenAI response (status={body.get('status')!r}, "
+        f"incomplete={body.get('incomplete_details')!r}):\n{json.dumps(body)[:1500]}"
+    )
+
+
 # ------------------------------------------------------------------ sources
 
 
@@ -465,9 +508,48 @@ def card_content(title: str, article: str, comments: list[str]) -> dict:
     return json.loads(output_text(body))
 
 
-def usage_line() -> str:
+def luna_content(title: str, article: str, comments: list[str]) -> dict:
+    """card_content's twin for the OpenAI Responses API. Same prompt, same input."""
+    payload = json.dumps(
+        {
+            "model": LUNA,
+            "instructions": PROMPT.read_text(encoding="utf-8"),
+            "input": model_input(title, article, comments),
+            "reasoning": {"effort": LUNA_EFFORT},
+            "text": {
+                "format": {"type": "json_schema", "name": "card", "schema": strict(SCHEMA), "strict": True}
+            },
+        }
+    ).encode()
+    req = urllib.request.Request(
+        LUNA_API,
+        data=payload,
+        headers={
+            "authorization": f"Bearer {os.environ['OPENAI_API_KEY']}",
+            "content-type": "application/json",
+        },
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=120) as res:
+            body = json.loads(res.read())
+    except urllib.error.HTTPError as err:
+        raise RuntimeError(f"openai {err.code}: {err.read()[:300].decode('utf-8', 'replace')}")
+
+    used = body.get("usage") or {}
+    reasoning = (used.get("output_tokens_details") or {}).get("reasoning_tokens") or 0
+    USAGE["calls"] += 1
+    USAGE["input"] += used.get("input_tokens") or 0
+    # Unlike Gemini, output_tokens already includes reasoning. Split it out, or
+    # usage_line would bill the thinking twice.
+    USAGE["output"] += (used.get("output_tokens") or 0) - reasoning
+    USAGE["thought"] += reasoning
+    return json.loads(luna_text(body))
+
+
+def usage_line(model: str = MODEL) -> str:
+    price_in, price_out = PRICES[model]
     billed_out = USAGE["output"] + USAGE["thought"]
-    cost = USAGE["input"] / 1e6 * PRICE_IN + billed_out / 1e6 * PRICE_OUT
+    cost = USAGE["input"] / 1e6 * price_in + billed_out / 1e6 * price_out
     share = USAGE["thought"] / billed_out * 100 if billed_out else 0
     return (
         f"{USAGE['calls']} call{'s' if USAGE['calls'] != 1 else ''} | in {USAGE['input']:,} | out {billed_out:,} "
@@ -600,13 +682,15 @@ def dry(n: int) -> None:
 # ------------------------------------------------------------------- sample
 
 
-def sample(n: int) -> None:
-    """Real Gemini calls, assembled cards printed, nothing written and nothing
+def sample(n: int, luna: bool = False) -> None:
+    """Real model calls, assembled cards printed, nothing written and nothing
     marked published. The smallest thing that proves the whole chain: response
-    shape, schema adherence, and whether the cards are any good."""
+    shape, schema adherence, and whether the cards are any good.
+    `luna` swaps in GPT-6 Luna for a side-by-side; run both back-to-back for the same posts."""
     load_env()
-    if not os.environ.get("GEMINI_API_KEY"):
-        sys.exit("GEMINI_API_KEY is not set (put it in .env, or export it)")
+    key, model, generate = ("OPENAI_API_KEY", LUNA, luna_content) if luna else ("GEMINI_API_KEY", MODEL, card_content)
+    if not os.environ.get(key):
+        sys.exit(f"{key} is not set (put it in .env, or export it)")
 
     selected = select_from_algolia(read_json("published.json", []))
     print(f"selected {len(selected)} posts, sampling {min(n, len(selected))}\n")
@@ -623,7 +707,7 @@ def sample(n: int) -> None:
         print(f"basis: article {basis}, {len(got['comments'])} comments")
         print("-" * 78)
 
-        content = card_content(item["title"], got["article"], got["comments"])
+        content = generate(item["title"], got["article"], got["comments"])
         for quote in verify_substance(content, got["source"]):
             print(f"  UNSUPPORTED QUOTE, substance dropped: {quote!r}")
         card = assemble_card(
@@ -634,7 +718,7 @@ def sample(n: int) -> None:
             got["image"],
         )
         print(json.dumps(card, indent=2, ensure_ascii=False))
-        print(f"  usage: {usage_line()}")
+        print(f"  usage: {usage_line(model)}")
         # the card keeps only term names; show the glosses so they can be judged too
         for term in content.get("terms") or []:
             print(f"  glossary[{term['term']}] = {term['gloss']}")
@@ -829,6 +913,28 @@ def check() -> None:
         else:
             raise AssertionError(f"output_text should raise on {bad}")
 
+    # OpenAI /v1/responses: a textless reasoning item, then the message. No top-level
+    # output_text over raw HTTP — that field is SDK-only.
+    msg = {"type": "message", "content": [{"type": "output_text", "text": '{"ok": true}'}]}
+    assert luna_text({"status": "completed", "output": [{"type": "reasoning", "summary": []}, msg]}) == '{"ok": true}'
+    for bad in (
+        {"status": "completed", "output": [{"type": "message", "content": [{"type": "refusal", "refusal": "no"}]}]},
+        {"status": "incomplete", "incomplete_details": {"reason": "max_output_tokens"}, "output": [msg]},
+        {"status": "completed", "output": [{"type": "reasoning"}]},
+    ):
+        try:
+            luna_text(bad)
+        except RuntimeError:
+            pass
+        else:
+            raise AssertionError(f"luna_text should raise on {bad}")
+
+    # Strict mode wants every object closed and fully required — on a copy, never ours.
+    closed = strict(SCHEMA)
+    assert closed["additionalProperties"] is False and "data" in closed["required"]
+    assert closed["properties"]["terms"]["items"]["additionalProperties"] is False
+    assert "additionalProperties" not in SCHEMA and "data" not in SCHEMA["required"], "ours untouched"
+
     USAGE.update(calls=2, input=11_850, output=650, thought=1_760)
     line = usage_line()
     assert "2 calls" in line and "73%" in line, line  # thinking dominates output
@@ -836,6 +942,7 @@ def check() -> None:
     assert "1 call |" in usage_line(), "no stray plural"
     USAGE.update(calls=2)
     assert "$0.018" in line, line  # 11850*0.75 + 2410*3.75, per 1M
+    assert "$0.002" in usage_line(LUNA), usage_line(LUNA)  # 11850*0.10 + 2410*0.50, per 1M
     USAGE.update(calls=0, input=0, output=0, thought=0)
     assert "$0.000" in usage_line(), "no calls must not divide by zero"
 
@@ -853,7 +960,8 @@ def dispatch() -> None:
         dry(int(sys.argv[at + 1]) if len(sys.argv) > at + 1 else 3)
     elif "--sample" in sys.argv:
         at = sys.argv.index("--sample")
-        sample(int(sys.argv[at + 1]) if len(sys.argv) > at + 1 else 1)
+        n = sys.argv[at + 1] if len(sys.argv) > at + 1 else "1"
+        sample(int(n) if n.isdigit() else 1, luna="--luna" in sys.argv)
     else:
         main()
 
