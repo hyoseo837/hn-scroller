@@ -9,15 +9,6 @@ SHEET_COMMENT_CHARS = 400
 _DROP_BLOCKS = re.compile(
     r"<(script|style|noscript|svg)\b[^>]*>.*?</\1>", re.IGNORECASE | re.DOTALL
 )
-_ENTITIES = {
-    "&nbsp;": " ",
-    "&amp;": "&",
-    "&lt;": "<",
-    "&gt;": ">",
-    "&quot;": '"',
-    "&#x27;": "'",
-    "&#39;": "'",
-}
 
 
 def strip_html(html: str) -> str:
@@ -33,9 +24,11 @@ def strip_html(html: str) -> str:
     text = re.sub(r"</(?:tr|p|div|li|h[1-6]|section|article)\s*>", "\n", text, flags=re.IGNORECASE)
     text = re.sub(r"<br\s*/?>", "\n", text, flags=re.IGNORECASE)
     text = re.sub(r"<[^>]+>", " ", text)
-    for entity, char in _ENTITIES.items():
-        text = text.replace(entity, char)
-    text = re.sub(r"[^\S\n]+", " ", text)  # collapse spaces, keep line breaks
+    # Every entity, not a hand-picked few: HN writes "/" as &#x2F;, which a fixed
+    # table missed, so it showed raw in comment sheets and failed real quotes.
+    # After tag removal, so an escaped "&lt;b&gt;" stays text instead of a tag.
+    text = unescape(text)
+    text = re.sub(r"[^\S\n]+", " ", text)  # collapse spaces, keep line breaks (and &nbsp;)
     text = re.sub(r"\s*\n\s*", "\n", text)
     text = re.sub(r"\s*\|\s*(?=\n|$)", "", text)  # last cell of a row needs no separator
     return re.sub(r"\n{3,}", "\n\n", text).strip(" \n|")

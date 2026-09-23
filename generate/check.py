@@ -55,6 +55,12 @@ def check() -> None:
                               "a catalogue of one hundred poster styles - with prompts") == []
     assert strip_html("<script>evil()</script>ok") == "ok"
     assert strip_html("a &amp; b&#x27;s") == "a & b's"
+    # HN writes "/" as &#x2F;. Undecoded, it showed raw in 58 of 77 comment sheets
+    # and failed a real quote the model had copied faithfully.
+    assert strip_html("crashes&#x2F;hangs") == "crashes/hangs", "every entity decodes"
+    thread = strip_html("<p>causing crashes&#x2F;hangs to really slow down the process</p>")
+    assert unsupported_quotes(["causing crashes/hangs to really slow down the process"], thread) == []
+    assert strip_html("use &lt;b&gt; for bold") == "use <b> for bold", "an escaped tag stays text"
 
     # A page shaped like a real article: the junk must go, the prose must survive.
     # Live fetching can't be exercised in CI, so the parser is pinned here instead.
