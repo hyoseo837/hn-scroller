@@ -114,7 +114,12 @@ function renderCard(card) {
       from.target = "_blank";
       from.rel = "noopener";
       from.append(icon("out"));
-      wrap.append(from);
+      const meta = el("div", "meta");
+      meta.append(from);
+      // When it was posted, not when we picked it up: the 3-day window means
+      // an edition can carry a story from two days back.
+      if (card.time) meta.append(el("span", "sep", "|"), el("span", "when", posted(card.time)));
+      wrap.append(meta);
     }
     if (i === 0) {
       wrap.classList.add("glance");
@@ -221,6 +226,9 @@ async function loadMore() {
 }
 
 // ------------------------------------------------------------------- state
+
+const posted = (unix) =>
+  new Date(unix * 1000).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
 
 const short = (iso) => {
   const [y, m, d] = iso.split("-").map(Number);

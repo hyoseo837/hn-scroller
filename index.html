@@ -145,17 +145,19 @@
     margin: 0; font-family: Georgia, "Times New Roman", "Noto Serif", serif;
     font-size: 25px; font-weight: 700; line-height: 1.14; letter-spacing: -0.01em; text-wrap: balance;
   }
-  .card.glance > p, .card.glance > .from, .card.glance > .data { position: relative; z-index: 2; }
+  .card.glance > p, .card.glance > .meta, .card.glance > .data { position: relative; z-index: 2; }
   /* Marker-pen highlight: reads as emphasis at any weight, unlike bold inside bold. */
   strong { font-weight: 750; background: linear-gradient(transparent 58%, var(--mark) 58%); }
   /* The glance card's source line is the route to the article — the only one on
      a card whose detail tier failed verification. Padded to a thumb-sized target. */
   .from {
     display: inline-flex; align-items: center; gap: 5px; align-self: start;
-    color: var(--dim); font-size: 13px; margin-top: 8px; padding: 10px 0;
+    color: var(--dim); font-size: 13px; padding: 10px 0;
     text-decoration: none;
   }
   .from .ico { width: 14px; height: 14px; }
+  .meta { display: flex; align-items: center; gap: 8px; margin-top: 8px; color: var(--dim); font-size: 13px; }
+  .meta .sep { opacity: .5; }
   .readon { color: var(--accent); font-size: 14px; margin-top: 26px; align-self: start; text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 2px; }
   .kicker { color: var(--dim); font-size: 12px; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 14px; }
   .data { margin-top: 20px; border-top: 1px solid var(--line); font-size: 14px; }

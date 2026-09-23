@@ -229,6 +229,7 @@ def assemble_card(
         "url": post.get("url"),
         "hn": f"https://news.ycombinator.com/item?id={post['id']}",
         "title": post["title"],  # original HN title, kept verbatim for reference
+        "time": post.get("time"),  # HN submission time, unix seconds
         "depth": depth,
         "camps": content.get("camps") or None,
         "comment_count": comment_count,
@@ -537,7 +538,7 @@ def main() -> None:
                 print(f"    dropped substance, {len(bad)} quote(s) not in source")
             cards.append(
                 assemble_card(
-                    {"id": item["id"], "url": item.get("url"), "title": item["title"]},
+                    {"id": item["id"], "url": item.get("url"), "title": item["title"], "time": item.get("time")},
                     content,
                     item.get("descendants") or 0,
                     got["comments"],
@@ -626,7 +627,7 @@ def sample(n: int) -> None:
         for quote in verify_substance(content, got["source"]):
             print(f"  UNSUPPORTED QUOTE, substance dropped: {quote!r}")
         card = assemble_card(
-            {"id": item["id"], "url": item.get("url"), "title": item["title"]},
+            {"id": item["id"], "url": item.get("url"), "title": item["title"], "time": item.get("time")},
             content,
             item.get("descendants") or 0,
             got["comments"],
@@ -726,7 +727,7 @@ def check() -> None:
     already = {c["id"] for c in prior}
     assert [c["id"] for c in prior + [c for c in fresh if c["id"] not in already]] == [1, 2, 3]
 
-    post = {"id": 7, "url": "https://x.test", "title": "Raw HN Title"}
+    post = {"id": 7, "url": "https://x.test", "title": "Raw HN Title", "time": 1790000000}
     full = assemble_card(
         post,
         {
@@ -743,6 +744,7 @@ def check() -> None:
     assert [d.get("tier") for d in full["depth"]] == ["simple", "substance"]
     assert full["depth"][1]["data"] == [["latency", "2.1s"]]  # substance tier
     assert full["terms"] == ["wasm"], "card carries term names, glosses live in the glossary"
+    assert full["time"] == 1790000000, "the post's own date travels with the card"
     assert full["comments"] == [], "no comments passed means no peek"
     many = [{"by": f"u{i}", "text": "long word " * 90} for i in range(6)]
     peek_card = assemble_card(post, {"simple": "s"}, 9, many)
