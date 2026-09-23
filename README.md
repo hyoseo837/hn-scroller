@@ -19,7 +19,7 @@ Two axes, both plain CSS scroll-snap — no framework, no gesture library.
 
 ## How it is built
 
-A Python package picks every Hacker News story above 200 points from the last three days that it has
+A Python package picks every Hacker News story at 150 points or more from the last three days that it has
 not already covered, asks GPT-6 Luna for the card text, and writes one JSON file per day. GitHub Actions
 runs it every 6 hours and commits the result; the commit is what deploys the site.
 

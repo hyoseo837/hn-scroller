@@ -11,7 +11,7 @@ from .cards import (
     unsupported_quotes,
     verify_substance,
 )
-from .hn import MAX_COMMENTS, select_posts
+from .hn import MAX_COMMENTS, MIN_POINTS, select_posts
 from .models import USAGE, luna_text, strict, usage_line
 from .text import SHEET_COMMENT_CHARS, drop_boilerplate, hero_image, looks_gated, peek, strip_html
 
@@ -88,10 +88,10 @@ def check() -> None:
 
     hits = [
         {"objectID": "1", "points": 500},
-        {"objectID": "2", "points": 199},  # under threshold
+        {"objectID": "2", "points": MIN_POINTS - 1},  # under threshold
         {"objectID": "3", "points": 300},
         {"objectID": "4", "points": 800},  # already published
-        {"objectID": "5", "points": 200},  # exactly at the bar gets in
+        {"objectID": "5", "points": MIN_POINTS},  # exactly at the bar gets in
     ]
     picked = select_posts(hits, ["4"])
     assert [h["objectID"] for h in picked] == ["1", "3", "5"], "filters, dedupes, sorts by points"

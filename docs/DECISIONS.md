@@ -88,3 +88,8 @@ Supersedes the Node choice in the stack entry above; everything else there still
 
 **Why:** the viewer downloaded every gloss ever written on every visit, and the file changes with nearly every edition: 22 KB now, ~2 MB estimated after a year at ~2.2 new terms per card. A day's slice keeps a visit at index + one day however many months pile up. `glossary.json` stays as the generator's memory, so known terms keep their gloss. Tradeoff: a rebuilt gloss reaches old days only if their slices are rewritten too.
 **Rejected:** a database (needs a server for what is still one day read whole); fetching glossary.json only when the sheet opens (still the whole growing file); sharding it by letter (more files, same total).
+
+## 2026-09-23 — Threshold 150, down from 200
+
+**Why:** chosen by the user once Luna made a card ~$0.0024. Measured over 14 settled days: a median of 32 stories/day clear 150 (22-43) against 24 at 200 (16-32), ~$2.30/mo. Supersedes the number in the 2026-09-21 threshold entry; no age delay and no cap still hold. The query now fetches up to 1000 hits: at 150 the 3-day window held 84, and a busy stretch passes the old 100, which silently dropped the oldest qualifiers.
+**Rejected:** staying at 200 (set for reading load: ~24 cards fits a 2-3 minute swipe; the user chose coverage); 100 (~45/day, where a cap used to do the selecting).

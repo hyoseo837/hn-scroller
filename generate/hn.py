@@ -9,7 +9,7 @@ from concurrent.futures import ThreadPoolExecutor
 from .text import drop_boilerplate, hero_image, looks_gated, strip_html
 
 
-MIN_POINTS = 200  # measured: ~24 stories/day clear this, range 15-32
+MIN_POINTS = 150  # measured over 14 days: a median of 32 stories/day clear this, range 22-43
 WINDOW_DAYS = 3
 MAX_COMMENTS = 20
 MAX_ARTICLE_CHARS = 24_000  # ~6k tokens
@@ -19,11 +19,11 @@ MIN_ARTICLE_CHARS = 500  # below this, fall back to title + comments
 def select_posts(hits: list[dict], published: list) -> list[dict]:
     """Everything above the threshold that has not been published. No cap.
 
-    Hacker News caps this by itself: ~24 stories/day clear 200 points, 32 on the
-    busiest day measured. A cap here would silently drop real news on a big day,
+    Hacker News caps this by itself: a median of 32 stories/day clear 150 points,
+    43 on the busiest day measured. A cap here would silently drop real news on a big day,
     which is the failure an awareness app cannot afford.
 
-    The threshold doubles as the maturity test: a post at 200 points has proven
+    The threshold doubles as the maturity test: a post at 150 points has proven
     itself whether that took six hours or two days, so there is no age delay —
     holding back a story that broke overnight is the worse failure for an
     awareness app. The 3-day window catches late risers, and `published` means
@@ -46,8 +46,12 @@ def select_from_algolia(published: list) -> list[dict]:
     query = urllib.parse.urlencode(
         {
             "tags": "story",
-            "numericFilters": f"created_at_i>{since},points>{MIN_POINTS}",
-            "hitsPerPage": "100",
+            # >=, not >: select_posts lets a post exactly at the bar in, so the query must too.
+            "numericFilters": f"created_at_i>{since},points>={MIN_POINTS}",
+            # Newest first and no paging, so a short page silently drops the oldest
+            # qualifiers, the late risers the window exists for. At 150 the 3-day
+            # window held 84; 1000 is Algolia's page maximum.
+            "hitsPerPage": "1000",
         }
     )
     body = _get(f"https://hn.algolia.com/api/v1/search_by_date?{query}")

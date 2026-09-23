@@ -32,7 +32,7 @@ source: the detail tier ships only with verbatim quotes that match the fetched a
 
 ## Operating Context
 
-- Four runs a day (every 6h) append newly qualifying posts (≥200 points) to the UTC day's edition.
+- Four runs a day (every 6h) append newly qualifying posts (≥150 points) to the UTC day's edition.
 - Per post: a glance card (one plain lowercase sentence), optionally a detail card (names,
   versions, figures, the two camps). Swipe up for the next post, right for depth, left to back out.
 - Per card: comments sheet (top-level, verbatim, with a generated "camps" line), glossary sheet

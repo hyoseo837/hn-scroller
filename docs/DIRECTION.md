@@ -73,7 +73,7 @@ the do-not-translate list, judge by eye. No Korean data on Luna or Sol yet (both
 
 ## Discussion as a selection signal
 
-**Now:** selection is points only, at 200.
+**Now:** selection is points only, at 150.
 
 **Do:** add `OR comments >= ~150`. Points and discussion come apart, and a high comment-to-point
 ratio is precisely a contested story — what the camps line exists for. Measured: a Waymo story at

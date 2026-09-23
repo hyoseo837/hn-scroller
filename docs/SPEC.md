@@ -110,7 +110,7 @@ search for it: the gloss is one sentence, and the link is the way to more.
 Runs every 6h. Select is free; only generate costs money.
 
 ```
-select    Algolia search_by_date, tags=story, points>=200, 3-day window
+select    Algolia search_by_date, tags=story, points>=150, 3-day window
           → dedupe by HN item ID against everything published
 fetch     article text (cap ~6k tokens) + top-level comments (Firebase)
 generate  card stack + camps line + glossary terms, per post
@@ -136,11 +136,11 @@ publish   one JSON file for the day
   stories" block is a list of *other* articles' headlines. Conservative by necessity: a rule tight
   enough to catch linked headlines also deletes numbered lists and spec rows, which are often the
   substance. Measured at 12% removed; the tight version cost 50% on a list-shaped article.
-- **The threshold is also the maturity test.** No age delay: a post at 200 points has proven itself
+- **The threshold is also the maturity test.** No age delay: a post at 150 points has proven itself
   whether it took six hours or two days, and holding back an overnight story is the worse failure.
   The 3-day window catches late risers; `published.json` means a post is generated once, ever.
-- 200 measured over 13 days: ~24 stories/day clear it (15-32), so the count floats with how busy
-  the day was. **No cap.** Hacker News bounds this itself; a cap would silently drop real news on a
+- 150 measured over 14 days: a median of 32 stories/day clear it (22-43), so the count floats with
+  how busy the day was. **No cap.** Hacker News bounds this itself; a cap would silently drop real news on a
   busy day, and at 100 points that is exactly what happened — the cap, not the threshold, was doing
   the selecting on 12 of 13 days.
 - `entities` is recorded on every card. Its original purpose (linking related posts) was dropped;

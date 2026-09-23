@@ -2,11 +2,11 @@ name: edition
 
 on:
   schedule:
-    # Every 6h. Dedup means the same ~24 posts/day are processed either way, so
+    # Every 6h. Dedup means the same ~32 posts/day are processed either way, so
     # this costs nothing extra and a failed run goes stale for 6h, not 24. Safe
-    # on thread maturity because the 200-point threshold already gates age:
-    # of 158 qualifying stories in a week, one was under 6h old, and it had 116
-    # comments. GitHub runs scheduled jobs 10-30 min late, which is harmless.
+    # on thread maturity because the points threshold already gates age (measured
+    # at 200: of 158 qualifying stories in a week, one was under 6h old, and it had
+    # 116 comments). GitHub runs scheduled jobs 10-30 min late, which is harmless.
     - cron: "0 0,6,12,18 * * *"
   workflow_dispatch: {}
 
