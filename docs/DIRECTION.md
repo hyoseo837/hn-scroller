@@ -8,22 +8,13 @@ to code are `ponytail:` comments instead.
 
 ## A real design pass
 
-**Now:** it reads as a prototype, in roughly this order of how much it gives away:
+**Now:** layout, icons, images and palette are done and recorded in `DESIGN.md`. The user keeps the
+fonts, sizes and marker highlight — type is not on this list. What is left:
 
-- **No typographic identity.** `system-ui` throughout. It is legible and it is anonymous, and on a
-  card that is one sentence on a screen, the type *is* the design.
-- **Undesigned states.** "Loading…", the empty case, and the caught-up card are all plain text in
-  the default size.
-- **Colour is one borrowed accent.** HN orange, used for links, highlights, dots and the active
-  state alike, with no considered palette around it.
+- **Undesigned states.** "Loading…", the empty case, and the caught-up card are plain text.
 - **Nothing moves.** Cards cut in with no entry, and depth has no sense of travel.
 
-**Do:** treat the glance card as a poster — one sentence at 34px over an image is a typography
-problem before a layout one. Type, palette and an icon set settle the rest.
-
-**Done 2026-09-23:** header, SVG icons, bottom-right buttons, 390px frame. Keep the fonts, sizes and
-marker highlight — the user likes them. A Reels side rail was mocked and rejected: detail text
-wraps 8 → 11 lines beside it.
+**Do:** one authored motion for depth, then design the three states. Update `DESIGN.md` with them.
 
 **Trigger:** before showing it to anyone who is not you.
 
@@ -80,17 +71,31 @@ GPT-6 Luna ~$0.20/mo, Flash ~$1.50 (~$3 from 2027-01-01), GPT-6 Sol ~$4. A ~$4/m
 choose on register and proper nouns: translate the same few cards with all three, `entities` as
 the do-not-translate list, judge by eye. No Korean data on Luna or Sol yet (both 2026-09-22).
 
-## Main model: GPT-6 Luna
+## Main model: GPT-6 Luna — next up
 
 **Now:** Flash at introductory $0.75/$3.75 per 1M, doubling to $1.50/$7.50 on 2027-01-01
-(~$9 → ~$19/mo). Luna is $0.10/$0.50, ~$1.30/mo at our token use. Sol ($2/$10, ~$25/mo) is
-headroom this job does not use — `verify_substance` already catches fabrication.
+(~$9 → ~$19/mo). Luna (released 2026-09-22) is $0.10/$0.50, ~$1.30/mo at our token use if it
+thinks as much as Flash (85-87% of Flash's output is thinking). Sol ($2/$10, ~$25/mo) is headroom
+this job does not use — `verify_substance` already catches fabrication. Luna's Korean, register
+and quote fidelity are unmeasured; every number above is a list price, not a run.
 
-**Do:** a model switch for `--sample` only, same 3 posts through each; compare quote pass rate,
-glance/camps register, and cost per card including reasoning tokens. Switching supersedes the
-Gemini entry in `DECISIONS.md`. Also update `PRICE_IN`/`PRICE_OUT` on Jan 1 whatever happens.
+**Do:** a provider switch for `--sample` only, production stays on Gemini until numbers say
+otherwise. The seam is `card_content()` (request, auth header, usage counting) and
+`output_text()` (response shape); `PRICE_*` and the `usage_line` cost go per model.
+- Verify against OpenAI's own docs first, not memory: the model id, endpoint, JSON-schema output
+  format, reasoning-effort setting, and the usage field names for reasoning tokens.
+- `SCHEMA` has optional `data` and `["string","null"]` unions — strict schema modes usually want
+  every property required and `additionalProperties: false`. Adapt the copy, don't loosen ours.
+- Needs `OPENAI_API_KEY` in `.env` (not there yet). stdlib `urllib` only, no SDK.
+- Same posts through both: `--sample` takes the top unpublished posts, so run the two models
+  back-to-back without a publish in between. `--sample 3` each, a few cents total.
+- Compare: quote pass rate (`UNSUPPORTED QUOTE` lines), glance and camps register by eye,
+  glossary glosses, cost per card including reasoning tokens.
 
-**Trigger:** before 2027-01-01.
+Switching supersedes the Gemini entry in `DECISIONS.md` (new entry, old one stays). Update
+`PRICE_IN`/`PRICE_OUT` on 2027-01-01 whatever happens.
+
+**Trigger:** fired — the user picked this as the next task on 2026-09-23.
 
 ## Discussion as a selection signal
 
