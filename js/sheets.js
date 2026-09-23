@@ -10,10 +10,12 @@ function openSheet(title, build) {
   void sheet.offsetHeight; // reflow gives the transition a start state to animate from
   sheet.classList.add("open");
   scrim.classList.add("open");
+  syncBack();
 }
 function closeSheet() {
   sheet.classList.remove("open");
   scrim.classList.remove("open");
+  syncBack();
   setTimeout(() => {
     sheet.hidden = true;
   }, 240);

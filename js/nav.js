@@ -42,6 +42,7 @@ function syncChrome() {
   const deeper = tiersOf(card).length > 1;
   if (KEYBOARD) hint.textContent = deeper ? T.hintKeysDeep : T.hintKeys;
   else hint.textContent = depth > 0 ? T.hintBack : deeper ? T.hintMore : "";
+  syncBack();
 }
 
 // Depth locks the vertical axis (SPEC: swipe left before swipe up).
