@@ -17,7 +17,7 @@ No framework, no build step, no server, zero dependencies.
 
 - `index.html` is markup only; styles in `app.css`, behaviour in `js/` (classic scripts, one scope, base first, boot last).
 - PWA manifest for the home-screen icon. No service worker until offline reading is actually wanted.
-- Scheduled Actions start 3-5 h late (measured, six runs: the cron fires on the hour, GitHub's busiest) and get
+- Scheduled Actions started 3-5 h late on the hour (six runs; now minute 37, unmeasured) and get
   **disabled on repos with no recent activity** (~60 days) — verify the bot's commits count, or the app dies.
 - Pages serves the repo root, so `generate/`, prompt included, is public. Nothing secret is in
   it (`.env` is gitignored), but the prompt is the part worth keeping if that ever matters.
@@ -94,6 +94,6 @@ Anti-rules — don't create: `README` sections duplicating `SPEC.md`, per-featur
 
 ## Conventions
 
-- Pull before touching `data/`: the bot pushes it at 00/06/12/18 UTC (+3-5 h, measured) with a plain `git push`, and a push mid-run makes its push fail.
+- Pull before touching `data/`: the bot pushes it at 00/06/12/18:37 UTC (possibly hours late) with a plain `git push`, and a push mid-run makes its push fail.
 - Viewer checks: headless Chromium at `~/.cache/ms-playwright/chromium_headless_shell-1148/chrome-linux/headless_shell` (`--screenshot`, `--dump-dom`) over `python3 -m http.server`. It renders no frames, so smooth scroll never runs: dispatch `scroll` events by hand.
 - Pages answers any missing path with `index.html` and a 200, so a missing script shows up as a syntax error, not a 404.

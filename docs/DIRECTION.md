@@ -37,13 +37,12 @@ mechanism preventing fabrication. Needs an answer to that first, not a budget.
 
 - **Offline reading.** A service worker so a downloaded edition survives the subway. The data is one
   static JSON per day, so this is genuinely small. Trigger: if the app gets opened while commuting.
-- **Actions: v7, and off the hour.** `checkout@v4` and `setup-python@v5` run a deprecated Node 20;
-  both are at v7 (Node 24, nothing this workflow uses removed). The cron fires at minute 0, GitHub's
-  busiest, and runs start 3-5 h late: move it to `37 0,6,12,18 * * *`. One commit, with the timing
-  comments. Trigger: once the first Luna production run is checked, so one change is tested at a time.
 
 ## Watch, do not build
 
+- **Does minute 37 fix the lateness?** On the hour, runs started 3-5 h late. If runs at :37 still
+  start hours late, trigger the workflow from an outside cron (a Cloudflare cron calling
+  `workflow_dispatch`; needs a GitHub token there).
 - **Scale words in Korean.** `prompt.ko.md` keeps "$20 million" as written rather than 만 or 억, since
   a converted figure cannot be checked. On 09-23 "보조금 $20 million으로" read fine, "입력 tokens
   million개당 $4.00" did not (its own table wrote "1M tokens당"). If more jar, allow "1M" style.

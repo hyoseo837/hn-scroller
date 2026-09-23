@@ -6,9 +6,9 @@ on:
     # this costs nothing extra and a failed run goes stale for 6h, not 24. Safe
     # on thread maturity because the points threshold already gates age (measured
     # at 200: of 158 qualifying stories in a week, one was under 6h old, and it had
-    # 116 comments). GitHub starts them 3-5 h late (measured on six runs): the top
-    # of the hour is its busiest minute. Harmless so far, as editions are dated by run.
-    - cron: "0 0,6,12,18 * * *"
+    # 116 comments). Minute 37, not 0: on the hour, GitHub's busiest minute, six
+    # runs started 3-5 h late, and its docs say a queued run can be dropped.
+    - cron: "37 0,6,12,18 * * *"
   workflow_dispatch: {}
 
 # Never let a slow run overlap the next day's: the second would re-select the
@@ -25,9 +25,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
