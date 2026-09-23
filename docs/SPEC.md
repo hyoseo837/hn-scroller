@@ -30,9 +30,9 @@ reason to cut it was redundancy, never cost).
 | 2 | The detail — the specifics (names, versions, figures) `simple` leaves out, shaped by post type: spec table (launch), method (research), argument (essay), the two camps (controversy). |
 
 The source is **not** a card. It appears twice, on purpose: inline at the end of the detail tier,
-where "read the whole thing" is the next thought a reader has, and as a 🔗 button beside the
-comment button. The button is not redundant — a card whose substance failed verification has no
-detail tier, and would otherwise offer no route to the article at all. Older day files still carry
+where "read the whole thing" is the next thought a reader has, and as the glance card's source line
+(the host name), which is a link. The second is not redundant — a card whose substance failed
+verification has no detail tier, and would otherwise offer no route to the article at all. Older day files still carry
 a link tier; the viewer filters it out.
 
 Two or three key words per text tier are marked `**like this**` and render as a highlight. The
@@ -77,7 +77,9 @@ says it differently on a pointer device, where the axis is never locked.
 
 ## Comments and glossary
 
-Two buttons per card, each with a count. Same grammar, nothing to explain.
+Two buttons per card, each with a count, bottom-right where a thumb rests. Same grammar, nothing
+to explain. A header carries the name, the edition date (opens the calendar), the position in the
+day (`3/24` — where you are, not what is unread) and the depth dots.
 
 **Comments** — bottom sheet, reel-style. Top-level only, HN's own order, replies dropped (no threading
 UI). Verbatim text, plus a generated line that **names the camps rather than averaging them**. Needs an

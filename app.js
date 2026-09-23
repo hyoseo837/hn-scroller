@@ -7,7 +7,6 @@ const sheet = document.getElementById("sheet");
 const scrim = document.getElementById("scrim");
 const btnCmt = document.getElementById("btn-cmt");
 const btnGlo = document.getElementById("btn-glo");
-const btnSrc = document.getElementById("btn-src");
 const hint = document.getElementById("hint");
 
 // feed.children and `slides` are parallel: a slide is a card, a day divider, or
@@ -40,8 +39,8 @@ const marked = (text, node) => {
   return node;
 };
 
-// The link tier used to be a final card. It is an action now, not a destination,
-// so it lives in the button bar; older day files still carry it, hence the filter.
+// The link tier used to be a final card. It is a link now, not a destination —
+// on the glance card's source line; older day files still carry it, hence the filter.
 const tiersOf = (card) => (card?.depth || []).filter((tier) => !tier.link);
 
 // No image? Derive a field from the post id. Deterministic, so a card looks the
@@ -50,6 +49,20 @@ const tint = (id) => {
   const hue = (Number(id) * 47) % 360;
   return `linear-gradient(155deg, hsl(${hue} 48% 30%), hsl(${(hue + 55) % 360} 55% 12%))`;
 };
+
+const SVG = "http://www.w3.org/2000/svg";
+const icon = (id) => {
+  const svg = document.createElementNS(SVG, "svg");
+  svg.setAttribute("class", "ico");
+  svg.setAttribute("aria-hidden", "true");
+  const use = document.createElementNS(SVG, "use");
+  use.setAttribute("href", `#i-${id}`);
+  svg.append(use);
+  return svg;
+};
+
+// Self posts have no external url — the discussion is the article.
+const sourceOf = (card) => card.url || card.hn;
 
 const host = (url) => {
   try {
@@ -71,8 +84,16 @@ function renderCard(card) {
     if (kind === "substance") wrap.append(el("div", "kicker", "Detail"));
     wrap.append(marked(tier.text, el("p", kind)));
     // Where it came from is context a beginner needs: a personal blog and a
-    // vendor announcement read very differently.
-    if (i === 0) wrap.append(el("div", "from", card.url ? host(card.url) : "Hacker News"));
+    // vendor announcement read very differently. It is also the way out to the
+    // article — the only one on a card whose detail tier failed verification.
+    if (i === 0) {
+      const from = el("a", "from", card.url ? host(card.url) : "Hacker News");
+      from.href = sourceOf(card);
+      from.target = "_blank";
+      from.rel = "noopener";
+      from.append(icon("out"));
+      wrap.append(from);
+    }
     if (i === 0) {
       wrap.classList.add("glance");
       // ponytail: the field is the raw og:image, cropped with object-fit:cover.
@@ -110,7 +131,7 @@ function renderCard(card) {
     // so the link sits where that thought happens, not only in the button bar.
     if (kind === "substance") {
       const more = el("a", "readon", card.url ? `Read it on ${host(card.url)} →` : "Open the discussion on HN →");
-      more.href = card.url || card.hn;
+      more.href = sourceOf(card);
       more.target = "_blank";
       more.rel = "noopener";
       wrap.append(more);
@@ -161,7 +182,7 @@ async function appendDay(when) {
   const day = await json(`data/${when}.json`).catch(() => null);
   if (!day?.cards?.length) return false;
   push({ divider: true, date: when }, renderDivider(pretty(when)));
-  day.cards.forEach((card) => push({ card, date: when }, renderCard(card)));
+  day.cards.forEach((card, i) => push({ card, date: when, n: i + 1, of: day.cards.length }, renderCard(card)));
   return true;
 }
 
@@ -181,9 +202,20 @@ async function loadMore() {
 
 // ------------------------------------------------------------------- state
 
+const short = (iso) => {
+  const [y, m, d] = iso.split("-").map(Number);
+  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString(undefined, {
+    weekday: "short", month: "short", day: "numeric", timeZone: "UTC",
+  });
+};
+
 function syncChrome() {
-  const card = slides[post]?.card;
-  document.getElementById("date").textContent = slides[post]?.date || date || "—";
+  const slide = slides[post];
+  const card = slide?.card;
+  const when = slide?.date || date;
+  document.getElementById("date").textContent = when ? short(when) : "—";
+  // Where you are in the day, not what is left unread: a day has a bottom.
+  document.getElementById("pos").textContent = card ? `${slide.n}/${slide.of}` : "";
 
   dots.textContent = "";
   if (card) {
@@ -200,10 +232,10 @@ function syncChrome() {
   const terms = card?.terms?.length ?? 0;
   btnCmt.disabled = !card || (!card.comments?.length && !card.camps);
   btnGlo.disabled = !terms;
-  btnSrc.disabled = !card;
-  btnSrc.title = card?.url ? `Read the original on ${host(card.url)}` : "Open the discussion on HN";
-  btnCmt.textContent = card ? `💬 ${card.comment_count}` : "💬 —";
-  btnGlo.textContent = `📖 ${terms}`;
+  btnCmt.lastChild.textContent = card ? card.comment_count : "—";
+  btnGlo.lastChild.textContent = terms;
+  btnCmt.setAttribute("aria-label", card ? `${card.comment_count} comments` : "Comments");
+  btnGlo.setAttribute("aria-label", `${terms} terms explained`);
   // A dead vertical gesture with no visible cause reads as broken, so say so.
   // On a keyboard the vertical axis is never locked, so the hint differs.
   const deeper = tiersOf(card).length > 1;
@@ -302,7 +334,7 @@ const KEYS = {
   h: () => goToDepth(depth - 1),
   c: () => !btnCmt.disabled && btnCmt.click(),
   g: () => !btnGlo.disabled && btnGlo.click(),
-  o: () => !btnSrc.disabled && btnSrc.click(),
+  o: () => slides[post]?.card && window.open(sourceOf(slides[post].card), "_blank", "noopener"),
 };
 
 document.addEventListener("keydown", (event) => {
@@ -400,12 +432,6 @@ btnCmt.addEventListener("click", () => {
   });
 });
 
-// Self posts have no external url — the discussion is the article.
-btnSrc.addEventListener("click", () => {
-  const card = slides[post]?.card;
-  if (card) window.open(card.url || card.hn, "_blank", "noopener");
-});
-
 btnGlo.addEventListener("click", () => {
   const card = slides[post]?.card;
   openSheet("In this post", (box) => {
@@ -461,7 +487,7 @@ const json = async (path) => {
     return;
   }
 
-  cards.forEach((card) => push({ card, date }, renderCard(card)));
+  cards.forEach((card, i) => push({ card, date, n: i + 1, of: cards.length }, renderCard(card)));
   const older = nextDay < days.length ? pretty(days[nextDay]) : null;
   push({ date }, renderBoundary(cards.length, pretty(date), older));
   todayCount = slides.length;

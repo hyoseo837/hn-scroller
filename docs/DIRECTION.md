@@ -10,10 +10,6 @@ to code are `ponytail:` comments instead.
 
 **Now:** it reads as a prototype, in roughly this order of how much it gives away:
 
-- **Emoji as icons** (📅 💬 🔗 📖). The loudest tell — they render differently on every platform,
-  sit on their own baselines, and read as placeholders. Inline SVG, no dependency.
-- **No header.** The top bar is a date and three dots. There is no title, no sense of edition, and
-  nothing that says what you are looking at when someone opens it cold.
 - **One ratio for every card.** The glance is always a full-bleed 9:19.5 poster whatever the image
   is, so a wide screenshot is cropped to a sliver and a square logo is blown up. Letting the frame
   follow the image — contained, with a blurred fill behind — is the same fix as the image entry.
@@ -30,11 +26,9 @@ to code are `ponytail:` comments instead.
 **Do:** treat the glance card as a poster — one sentence at 34px over an image is a typography
 problem before a layout one. Type, palette and an icon set settle the rest.
 
-**Agreed layout (2026-09-23), readability first:** keep the fonts, sizes and marker highlight.
-Narrower desktop frame (~390px), more padding. Slim header: name, date/calendar, `3/24`, dots.
-Comments + glossary as a bottom-right cluster on every card — a Reels side rail was mocked and
-rejected: detail text wraps 8 → 11 lines beside it. 🔗 button goes; the glance card's source line
-becomes the link (the SPEC reason for the button, cards with no detail tier, still needs a route).
+**Done 2026-09-23:** header, SVG icons, bottom-right buttons, 390px frame. Keep the fonts, sizes and
+marker highlight — the user likes them. A Reels side rail was mocked and rejected: detail text
+wraps 8 → 11 lines beside it.
 
 **Trigger:** before showing it to anyone who is not you.
 
