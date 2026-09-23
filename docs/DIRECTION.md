@@ -10,13 +10,8 @@ to code are `ponytail:` comments instead.
 
 **Now:** it reads as a prototype, in roughly this order of how much it gives away:
 
-- **One ratio for every card.** The glance is always a full-bleed 9:19.5 poster whatever the image
-  is, so a wide screenshot is cropped to a sliver and a square logo is blown up. Letting the frame
-  follow the image — contained, with a blurred fill behind — is the same fix as the image entry.
 - **No typographic identity.** `system-ui` throughout. It is legible and it is anonymous, and on a
   card that is one sentence on a screen, the type *is* the design.
-- **Placeholder-grade fallbacks.** Cards with no image get a hue-rotated gradient, which is the
-  universal signal for "art not done yet".
 - **Undesigned states.** "Loading…", the empty case, and the caught-up card are all plain text in
   the default size.
 - **Colour is one borrowed accent.** HN orange, used for links, highlights, dots and the active
@@ -37,14 +32,18 @@ wraps 8 → 11 lines beside it.
 ## Better images
 
 **Now:** `og:image`, which is picked to look good in a social card — so often a banner, logo or
-headshot rather than anything about the post, and only ~45% of articles declare one. The viewer
-crops it `cover`, cutting the edges off a wide image in a tall frame.
+headshot rather than anything about the post, and only ~53% of cards have one. The viewer shows
+it whole, never cropped (cropping a 1200x630 card to the frame kept 24% of its width), and drops
+anything under 300px wide — measured, those were all logos or icons.
+
+Cards without one get a clipping: the original HN title as a black-on-paper newspaper headline.
 
 **Do:** fall back to the largest in-body `<img>`, then score candidates by size, position and alt
-text — `fetch_page` already returns the HTML both need. Viewer side, a blurred full-bleed copy
-behind a contained one.
+text — `fetch_page` already returns the HTML both need. Measured 2026-09-23 on the 33 no-image
+cards: 12 have an in-body image ≥600px wide, 16 have no `<img>` at all (JS-rendered), 4 failed
+to fetch. So ~53% → ~70% of cards with a picture, at the cost of sizing up to 15 images per page.
 
-**Trigger:** when a day's scroll feels visually repetitive.
+**Trigger:** when the clippings feel repetitive next to real pictures.
 
 **Not:** generating images — costs per card and cannot be verified against a source.
 

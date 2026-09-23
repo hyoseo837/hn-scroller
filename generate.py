@@ -21,6 +21,7 @@ import urllib.parse
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
+from html import unescape
 from pathlib import Path
 
 MODEL = "gemini-3.8-flash"
@@ -365,7 +366,8 @@ def hero_image(html: str, base_url: str) -> str | None:
         found = _CONTENT.search(tag)
         if not found:
             continue
-        url = urllib.parse.urljoin(base_url or "", found.group(1).strip())
+        # Attribute values are HTML-escaped: `&amp;` left in the URL 404s.
+        url = urllib.parse.urljoin(base_url or "", unescape(found.group(1).strip()))
         if url.startswith(("http://", "https://")):
             return url
     return None
@@ -755,6 +757,8 @@ def check() -> None:
     assert hero_image(page, "https://ex.test/a/b.html") == "https://ex.test/img/hero.png"
     assert hero_image("<p>no meta here</p>", "https://ex.test/") is None
     assert hero_image("", "") is None
+    amp = '<meta property="og:image" content="https://ex.test/i?format=webp&amp;name=large">'
+    assert hero_image(amp, "") == "https://ex.test/i?format=webp&name=large", "entities are decoded"
     assert peek("short one") == "short one", "short comments are left alone"
     # the model's ceiling is separate from the sheet's, and far looser
     assert len(peek("w " * 3000, MODEL_COMMENT_CHARS)) <= MODEL_COMMENT_CHARS + 1

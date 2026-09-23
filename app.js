@@ -43,12 +43,9 @@ const marked = (text, node) => {
 // on the glance card's source line; older day files still carry it, hence the filter.
 const tiersOf = (card) => (card?.depth || []).filter((tier) => !tier.link);
 
-// No image? Derive a field from the post id. Deterministic, so a card looks the
-// same every visit, and dark enough that the caption stays legible over it.
-const tint = (id) => {
-  const hue = (Number(id) * 47) % 360;
-  return `linear-gradient(155deg, hsl(${hue} 48% 30%), hsl(${(hue + 55) % 360} 55% 12%))`;
-};
+// No image? A colour from the post id. Deterministic, so a card looks the same
+// every visit.
+const hueOf = (id) => (Number(id) * 47) % 360;
 
 const SVG = "http://www.w3.org/2000/svg";
 const icon = (id) => {
@@ -74,6 +71,31 @@ const host = (url) => {
 
 // ------------------------------------------------------------------ render
 
+// Narrower than this and an image is a logo or an icon, not a picture. Measured
+// 2026-09-22: every image under it was 80-280px wide, and three were site logos.
+const MIN_IMAGE_PX = 300;
+
+// No usable image: the glance card gets a clipping — the original HN title as a
+// newspaper headline where the image would be, over a glow in the post's colour.
+// Called at render, or later when an image fails or is too small.
+function cover(wrap, card) {
+  wrap.querySelectorAll(".pic, .glow").forEach((node) => node.remove());
+  const hue = hueOf(card.id);
+  wrap.style.setProperty("--hue", hue);
+  const glow = el("div", "glow");
+  glow.style.background = `radial-gradient(70% 50% at 35% 35%, hsl(${hue} 80% 62%), transparent),
+    radial-gradient(60% 45% at 75% 55%, hsl(${(hue + 50) % 360} 80% 62%), transparent)`;
+  const pic = el("div", "pic");
+  const clip = el("div", "clip");
+  clip.style.setProperty("--tilt", `${((hue % 5) - 2) * 0.6}deg`); // a hand-cut look, stable per post
+  clip.append(el("div", "mast", card.url ? host(card.url) : "Hacker News"));
+  // Older day files predate `title`; the glance line, unmarked, stands in.
+  clip.append(el("h2", null, card.title || (tiersOf(card)[0]?.text || "").replaceAll("**", "")));
+  pic.append(clip);
+  wrap.prepend(glow, pic);
+  if (wrap.parentElement === feed.children[post]) syncChrome();
+}
+
 function renderCard(card) {
   const section = el("section", "post");
 
@@ -96,27 +118,25 @@ function renderCard(card) {
     }
     if (i === 0) {
       wrap.classList.add("glance");
-      // ponytail: the field is the raw og:image, cropped with object-fit:cover.
-      // A wide image in a tall frame loses its edges. Upgrade path: blurred
-      // full-bleed copy behind a contained one, the way music apps do it.
-      const field = el("div", "field");
       if (card.image) {
-        const img = el("img");
-        img.src = card.image;
+        const pic = el("div", "pic");
+        const glow = el("img", "glow"); // same URL, so the browser fetches it once
+        glow.alt = "";
+        glow.loading = "lazy";
+        glow.src = card.image;
+        const img = el("img", "shot");
         img.alt = "";
         img.loading = "lazy";
-        // A dead hotlink falls back to the gradient rather than a white hole.
-        img.addEventListener("error", () => {
-          img.remove();
-          field.style.background = tint(card.id);
-        });
-        field.append(img);
+        // A dead hotlink, or a favicon-sized logo that would only blur when
+        // scaled up, is no picture at all.
+        img.addEventListener("error", () => cover(wrap, card));
+        img.addEventListener("load", () => img.naturalWidth < MIN_IMAGE_PX && cover(wrap, card));
+        img.src = card.image;
+        pic.append(img);
+        wrap.prepend(glow, pic);
       } else {
-        field.style.background = tint(card.id);
+        cover(wrap, card);
       }
-      wrap.prepend(el("div", "scrim"));
-      wrap.prepend(el("div", "frost"));
-      wrap.prepend(field);
     }
     if (tier.data?.length) {
       const table = el("div", "data");
@@ -226,8 +246,8 @@ function syncChrome() {
     });
   }
 
-  // The chrome flips to light while it sits over a glance card's visual field.
-  document.querySelector(".phone").classList.toggle("on-visual", depth === 0 && Boolean(card));
+  const onGlow = depth === 0 && Boolean(feed.children[post]?.querySelector(".glow"));
+  document.querySelector(".phone").classList.toggle("on-glow", onGlow);
 
   const terms = card?.terms?.length ?? 0;
   btnCmt.disabled = !card || (!card.comments?.length && !card.camps);
