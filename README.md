@@ -47,7 +47,7 @@ runtime, so wording changes need no code edit.
 
 ## Docs
 
-Four files, deliberately, each with a line cap:
+Six files, deliberately, each with a line cap:
 
 | | |
 |---|---|
@@ -55,3 +55,4 @@ Four files, deliberately, each with a line cap:
 | [`docs/SPEC.md`](docs/SPEC.md) | what is being built and why — scope, non-goals, data shapes |
 | [`docs/DECISIONS.md`](docs/DECISIONS.md) | append-only rationale, including the calls that were wrong first |
 | [`docs/DIRECTION.md`](docs/DIRECTION.md) | work with no code yet, each with the trigger that would start it |
+| [`PRODUCT.md`](PRODUCT.md) | product truth for the design skill — users, purpose, constraints |

@@ -30,6 +30,12 @@ to code are `ponytail:` comments instead.
 **Do:** treat the glance card as a poster — one sentence at 34px over an image is a typography
 problem before a layout one. Type, palette and an icon set settle the rest.
 
+**Agreed layout (2026-09-23), readability first:** keep the fonts, sizes and marker highlight.
+Narrower desktop frame (~390px), more padding. Slim header: name, date/calendar, `3/24`, dots.
+Comments + glossary as a bottom-right cluster on every card — a Reels side rail was mocked and
+rejected: detail text wraps 8 → 11 lines beside it. 🔗 button goes; the glance card's source line
+becomes the link (the SPEC reason for the button, cards with no detail tier, still needs a route).
+
 **Trigger:** before showing it to anyone who is not you.
 
 **Not:** a component library. Two screens, no reusable surfaces — it would be more code than the app.
@@ -74,6 +80,24 @@ English thread is the design question here, not the cost.
 has no setting for it. **Not** bare Lite: measured, it wrote 오픈아이 for OpenAI and dropped Apache
 and Snap. Markers survive on Lite fine, so if ₩56/day ever matters, feed it the card's existing
 `entities` array as a do-not-translate list.
+
+**Which model, still open.** Nothing checks the Korean mechanically, so model quality is the only
+guard — the opposite of the main pass. Estimated from the Flash measurement at list prices:
+GPT-6 Luna ~$0.20/mo, Flash ~$1.50 (~$3 from 2027-01-01), GPT-6 Sol ~$4. A ~$4/mo spread, so
+choose on register and proper nouns: translate the same few cards with all three, `entities` as
+the do-not-translate list, judge by eye. No Korean data on Luna or Sol yet (both 2026-09-22).
+
+## Main model: GPT-6 Luna
+
+**Now:** Flash at introductory $0.75/$3.75 per 1M, doubling to $1.50/$7.50 on 2027-01-01
+(~$9 → ~$19/mo). Luna is $0.10/$0.50, ~$1.30/mo at our token use. Sol ($2/$10, ~$25/mo) is
+headroom this job does not use — `verify_substance` already catches fabrication.
+
+**Do:** a model switch for `--sample` only, same 3 posts through each; compare quote pass rate,
+glance/camps register, and cost per card including reasoning tokens. Switching supersedes the
+Gemini entry in `DECISIONS.md`. Also update `PRICE_IN`/`PRICE_OUT` on Jan 1 whatever happens.
+
+**Trigger:** before 2027-01-01.
 
 ## Discussion as a selection signal
 

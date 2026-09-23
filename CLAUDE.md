@@ -44,7 +44,7 @@ The system prompt is `prompt.md`, read at runtime — edit it without touching c
 
 ## Documentation rule
 
-Four files. No others. If a doc doesn't fit one of these, it doesn't exist.
+Six files. No others. If a doc doesn't fit one of these, it doesn't exist.
 
 | File | Holds | Lifetime | Cap | Loaded |
 |---|---|---|---|---|
@@ -52,6 +52,8 @@ Four files. No others. If a doc doesn't fit one of these, it doesn't exist.
 | `docs/SPEC.md` | What we're building and why. Scope, non-goals, data shapes. | Current truth. Overwrite freely. | **200 lines** | on demand |
 | `docs/DECISIONS.md` | Choices with a "why" that outlives the code. | Append-only. Never edit past entries. | **5 lines/entry** | on demand |
 | `docs/DIRECTION.md` | Work with no code yet: what, why, and the **trigger** that would start it. | Prune freely. An untouched entry is a dead one. | **150 lines** | on demand |
+| `PRODUCT.md` | Product truth for the impeccable design skill: users, purpose, constraints. | Current truth. | **200 lines** | by the skill |
+| `DESIGN.md` | The visual system: type, palette, tokens, components. | Current truth. | **200 lines** | by the skill |
 
 Rules:
 
@@ -78,7 +80,7 @@ context windows. Treat the cap as a hard budget, not a target.
    rule yet — it's a decision, so log it.
 4. **`DECISIONS.md` grows forever, and that's fine** — it's never auto-loaded. Read specific entries
    by grep, never the whole file. Cap is per entry: heading + `Why` + `Rejected`, nothing else.
-5. **No file over 200 lines, ever.** Past that, split by shipping less, not by adding a fourth file.
+5. **No file over 200 lines, ever.** Past that, split by shipping less, not by adding a file.
 6. **Prose is capped too:** tables and lists over paragraphs, sentence fragments over sentences.
 
 Check before committing a doc change:

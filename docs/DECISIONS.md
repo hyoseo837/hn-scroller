@@ -73,3 +73,8 @@ Supersedes the Node choice in the stack entry above; everything else there still
 
 **Why:** dedup generates each post once, so cost is unchanged and a run with nothing new is one free query; a failed run costs 6h of staleness, not 24. The 200-point bar gates age: of 158 qualifying stories in a week, one was under 6h old.
 **Rejected:** once daily (a failure means a stale day).
+
+## 2026-09-23 — Six doc files: PRODUCT.md and DESIGN.md join for the design skill
+
+**Why:** the impeccable design skill reads product truth and the visual system from these two files at the repo root; folding them into `SPEC.md` would mean the tool never finds them. Chosen by the user. Supersedes the four-file rule.
+**Rejected:** folding into `SPEC.md` (tool can't read it there); no design doc (the visual system would live only in CSS, with no record of intent).
