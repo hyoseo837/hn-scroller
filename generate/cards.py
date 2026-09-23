@@ -91,6 +91,16 @@ def assemble_card(
     }
 
 
+def day_glossary(cards: list[dict], glossary: dict) -> dict:
+    """The glosses one day's cards use, shipped inside that day's file.
+
+    The full glossary grows with every term ever written, and the viewer used to
+    download all of it on every visit. glossary.json stays the generator's memory,
+    so a known term keeps its gloss rather than being re-glossed each day.
+    """
+    return {term: glossary[term] for card in cards for term in card["terms"] if term in glossary}
+
+
 def verify_substance(content: dict, source: str) -> list[str]:
     """Substance that cannot show a real quote behind it does not ship.
 

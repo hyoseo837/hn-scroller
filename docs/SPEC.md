@@ -168,9 +168,13 @@ publish   one JSON file for the day
     "entities": ["x.ai"],
     "comments": [{"by": "user", "text": "first 400 chars…"}],
     "image": "https://... or null"
-  }]
+  }],
+  "glossary": {"x.ai": "one sentence…", "frontier model": "one sentence…"}
 }
 ```
+
+`glossary` holds only this day's terms. A visit downloads the index and one day, so its size does
+not grow with history; `data/glossary.json` is the generator's store and readers never fetch it.
 
 ## Non-goals (v1)
 

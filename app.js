@@ -206,6 +206,7 @@ function push(slide, node) {
 async function appendDay(when) {
   const day = await json(`data/${when}.json`).catch(() => null);
   if (!day?.cards?.length) return false;
+  Object.assign(glossary, day.glossary);
   // The caught-up card already names the next day ("keep going for …"), so a
   // divider straight after it would be two cards between the same two dates.
   if (!slides.at(-1)?.boundary) push({ divider: true, date: when }, renderDivider(pretty(when)));
@@ -515,7 +516,6 @@ const json = async (path) => {
   scrim.classList.remove("open");
 
   days = await json("data/index.json").catch(() => []);
-  glossary = await json("data/glossary.json").catch(() => ({}));
   const wanted = new URLSearchParams(location.search).get("date");
   date = days.includes(wanted) ? wanted : days[0] || "";
   nextDay = days.indexOf(date) + 1;
@@ -523,6 +523,9 @@ const json = async (path) => {
   feed.textContent = "";
   slides = [];
   const day = date ? await json(`data/${date}.json`).catch(() => null) : null;
+  // Each day file carries the glosses for its own terms, so a visit downloads one
+  // day's worth, not every term ever written.
+  Object.assign(glossary, day?.glossary);
   const cards = day?.cards ?? [];
   if (!cards.length) {
     feed.append(el("div", "empty", `No cards for ${date || "today"}. Run python3 -m generate.`));

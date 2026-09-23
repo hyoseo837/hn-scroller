@@ -6,7 +6,7 @@ import sys
 from datetime import datetime, timezone
 
 from . import DATA, ROOT
-from .cards import assemble_card, model_input, verify_substance
+from .cards import assemble_card, day_glossary, model_input, verify_substance
 from .hn import select_from_algolia, sources
 from .models import luna_content, usage_line
 
@@ -94,7 +94,7 @@ def main() -> None:
     existing = read_json(f"{date}.json", {}).get("cards", [])
     already = {c["id"] for c in existing}
     merged = existing + [c for c in cards if c["id"] not in already]
-    write_json(f"{date}.json", {"date": date, "cards": merged})
+    write_json(f"{date}.json", {"date": date, "cards": merged, "glossary": day_glossary(merged, glossary)})
     if existing:
         print(f"merged: {len(existing)} already in today's file + {len(merged) - len(existing)} new")
     write_json("glossary.json", glossary)

@@ -83,3 +83,8 @@ Supersedes the Node choice in the stack entry above; everything else there still
 
 **Why:** measured on the same 9 posts and prompt: Luna kept its detail tier on 8 of 9 once the `&#x2F;` decoding bug was fixed (Flash 5 of 5 before Google's 503 stopped it), at $0.0024 a card against Flash's ~$0.012, which doubles on 2027-01-01. High over medium: it kept the prompt's format (camps 9/9 vs 6/9) for ~$0.80/mo more. Chosen by the user after reading the cards side by side. Supersedes the Gemini model entries.
 **Rejected:** medium (format drift); xhigh (60-100+ s a post, one call past the 120 s timeout); Sol ($2/$10, headroom the quote check makes unnecessary); Gemini kept as a fallback (unused code; git history has it).
+
+## 2026-09-23 — Each day file carries its own glosses; readers never fetch glossary.json
+
+**Why:** the viewer downloaded every gloss ever written on every visit, and the file changes with nearly every edition: 22 KB now, ~2 MB estimated after a year at ~2.2 new terms per card. A day's slice keeps a visit at index + one day however many months pile up. `glossary.json` stays as the generator's memory, so known terms keep their gloss. Tradeoff: a rebuilt gloss reaches old days only if their slices are rewritten too.
+**Rejected:** a database (needs a server for what is still one day read whole); fetching glossary.json only when the sheet opens (still the whole growing file); sharding it by letter (more files, same total).

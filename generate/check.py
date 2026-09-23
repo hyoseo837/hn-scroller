@@ -6,6 +6,7 @@ from .cards import (
     SCHEMA,
     SHEET_COMMENTS,
     assemble_card,
+    day_glossary,
     model_input,
     unsupported_quotes,
     verify_substance,
@@ -150,6 +151,12 @@ def check() -> None:
         "must cut on a word boundary, never mid-word"
     )
     assert full["id"] == 7 and full["comment_count"] == 470
+
+    # A day file ships only its own cards' glosses: once each, in card order.
+    known = {"wasm": "w", "x.ai": "x", "unused": "u"}
+    day = [{"terms": ["x.ai", "wasm"]}, {"terms": ["wasm", "never glossed"]}]
+    assert day_glossary(day, known) == {"x.ai": "x", "wasm": "w"}, "own terms, deduped, unknown skipped"
+    assert list(day_glossary(day, known)) == ["x.ai", "wasm"], "card order"
 
     thin = assemble_card(post, {"simple": "s", "substance": None, "camps": None}, 0)
     assert len(thin["depth"]) == 1, "unsupported substance leaves the glance alone, never a pad"
