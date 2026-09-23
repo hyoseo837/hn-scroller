@@ -400,6 +400,495 @@
         }
       ],
       "image": "https://www.nobodywho.ai/assets/images/blog/2026/jev-in-25-lines/jev.png"
+    },
+    {
+      "id": 49814947,
+      "url": "https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/",
+      "hn": "https://news.ycombinator.com/item?id=49814947",
+      "title": "Claude Code reads AGENTS.md only when telemetry is on [fixed]",
+      "time": 1790165733,
+      "depth": [
+        {
+          "text": "someone noticed that **Claude Code** silently skipped **local instructions** if **telemetry** was turned off",
+          "tier": "simple"
+        },
+        {
+          "text": "Support for AGENTS.md sat behind a **remote feature flag**, so disabling telemetry caused the tool to skip local files without any warning. An Anthropic engineer called it an accidental **rollout artifact** and pushed a fix in **v2.1.281**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say gating local file reading behind telemetry smells like sloppy AI-generated coding, while others say remote switches and gradual rollouts are standard engineering practice.",
+      "comment_count": 189,
+      "terms": [
+        "feature flag",
+        "telemetry"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude Code"
+      ],
+      "comments": [
+        {
+          "by": "mpoteat",
+          "text": "Sorry folks, this is a rollout artifact, we needed a way to turn this off remotely via feature flags if it broke something, and with telemetry off you don't get those. It's already been fixed as part of v2.1.281 releasing today. The mod is source available here: https:&#x2F;&#x2F;github.com&#x2F;anthropics&#x2F;claude-code&#x2F;tree&#x2F;main&#x2F;mods&#x2F;age... Apologies again folks, this was…"
+        },
+        {
+          "by": "sandrello",
+          "text": "Based on my experience with these tools so far, this seems exactly the kind of subtle but extremely severe bug that sneaks in when you start piling up layers of AI generated patches to a codebase without caring too much about the code."
+        },
+        {
+          "by": "lucfranken",
+          "text": "Isn't that how they just release all features? So they can do progressive roll outs and telemetry on issues with it? Not sure if they later move the code from inside the flag check to the main code or that they keep the flag check. But if they would keep all features behind a flag that would not make most sense as you then would have not many features without telemetry."
+        },
+        {
+          "by": "arrowsmith",
+          "text": "Claude Code also doesn't read AGENTS.md by default if there's a CLAUDE.md it can read instead. This isn't limited to your repo, e.g. if you have a ~&#x2F;CLAUDE.md then no AGENTS.md will be read. To always read both, you have to switch the 'Project instructions' setting to the non-default `claude-md-and-agents-md`. Just in case anyone is wondering why their AGENTS.md still isn't being read."
+        },
+        {
+          "by": "fg137",
+          "text": "This in some way sounds like VSCode's bug of always adding Copilot as a co-author of git commit regardless of user settings. If people only glance over the code agents generate for them and don't bother to spend even half a minute thinking through what's actually happening, this is inevitable. Certainly this kind of things happened before LLMs existed. But I'm not optimistic about the direction…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49811484,
+      "url": "https://www.reddit.com/r/sysadmin/comments/1wjdpgx/psa_grammarly_will_send_unhinged_messages_to_all/",
+      "hn": "https://news.ycombinator.com/item?id=49811484",
+      "title": "Grammarly will send unhinged messages to all your users if you try to cancel",
+      "time": 1790136043,
+      "depth": [
+        {
+          "text": "Grammarly will send **unhinged messages** to all your users if you try to **cancel**",
+          "tier": "simple"
+        },
+        {
+          "text": "Commenters framed the stunt as panic because **LLMs** have eroded Grammarly's core business. Many hated services trying to guilt end users to stop **cancellations**, though one defender argued procurement teams frequently drop tools without asking the people using them.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: most say sending hostile alerts to end users is a desperate move to fight churn, while one commenter argues alerting staff is reasonable because corporate procurement often cancels critical tools without warning.",
+      "comment_count": 87,
+      "terms": [
+        "churn",
+        "linter"
+      ],
+      "entities": [
+        "Grammarly",
+        "ChatGPT",
+        "Slack",
+        "ClickUp"
+      ],
+      "comments": [
+        {
+          "by": "bluebxrry",
+          "text": "I loved Grammarly. But it has changed post LLM boom. The underlying concept was awesome as they take grammatical rules from a book of english grammar rules into a linter. Then it let you select the tone and adjusted some for marketing&#x2F;engagement so it sounds good on Twitter. I have severe dyslexia and struggled with tone. Lately, like following ChatGPT 3.5 release era, I had found Grammarly…"
+        },
+        {
+          "by": "FinnLobsien",
+          "text": "I think Grammarly is quite obviously in trouble since LLMs went so mainstream. And while I think AI-powered replacements are a great threat, I reckon an even bigger one is the decline of writing itself. If Gmail suggests the whole email (and whatever model it's using has baked in whatever suggestions Grammarly would've had), nobody needs feedback on an email they didn't even write?"
+        },
+        {
+          "by": "meerita",
+          "text": "Grammarly was a great idea in the pre-AI era. Now I bet they're losing a lot with so many AI solutions that are better integrated across every ecosystem. Some people will argue that Grammarly still has a better suggestion system, but models have become increasingly good at writing. I think this product and its revenue model will become obsolete pretty soon."
+        },
+        {
+          "by": "pjmlp",
+          "text": "For those in Europe, this kind of behaviour usually is taken care by consumer protection agencies, fill in a complaint &#x2F;report them, in you jurisdiction."
+        },
+        {
+          "by": "joshstrange",
+          "text": "I abhor when SaaS products attempt this. I see crap all the time in ClickUp (a particularly horrible product) trying to get me to request access to something no in our plan. It's so clearly trying to drum up (nearly)fake support for wanting a feature. They try to be innocuous but I find it incredibly disrespectful when a SaaS is littered with \"Upgrade\" or \"Bug your manager to upgrade\"…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49814159,
+      "url": "https://drericlevi.pages.dev/the-darker-side-of-being-a-doctor/",
+      "hn": "https://news.ycombinator.com/item?id=49814159",
+      "title": "The darker side of being a doctor",
+      "time": 1790160895,
+      "depth": [
+        {
+          "text": "a surgeon described how **brutal schedules** and corporate hospital metrics push **doctors into burnout**",
+          "tier": "simple"
+        },
+        {
+          "text": "Surgeon Eric Levi described working on-call 24/7 for 12 out of 14 days, sleeping in his car or on clinic benches to stay available. He argued that hospital administration has replaced patient care with **efficiency metrics**, with booking offices using computer software to time tonsillectomies down to **14 minutes**.",
+          "tier": "substance",
+          "data": [
+            [
+              "on-call schedule",
+              "12 days out of 14"
+            ],
+            [
+              "computer-timed tonsillectomy",
+              "14 minutes"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps on physician supply: some say the healthcare system needs to train far more doctors and lower salaries, while others argue high salaries are necessary to offset massive student debt and legal liability under corporate management.",
+      "comment_count": 254,
+      "terms": [
+        "private equity",
+        "key performance indicators"
+      ],
+      "entities": [
+        "Eric Levi",
+        "Andrew Bryant"
+      ],
+      "comments": [
+        {
+          "by": "cmiles8",
+          "text": "The challenge in the US is that the best and brightest increasingly have no interest in entering the medical profession. The debt, crazy years of minimum income, all to let an insurance company admin dictate your every move and while more and more physicians become a labor pool for PE healthcare tracked with metrics fit for warehouse workers (edit: and that’s not OK in a warehouse either). All to…"
+        },
+        {
+          "by": "estearum",
+          "text": "(speaking from US): The reality is we need more doctors. A lot more. There's no solution other than training a lot, lot, lot, lot more doctors. Their salaries need to be lower, training needs to be cheaper and faster, and we need a lot more of them."
+        },
+        {
+          "by": "lll-o-lll",
+          "text": "> Doctors are caught in a web of business, no longer a noble vocation. The altruism of young doctors have been replaced by the shackles of efficiency, productivity and key performance indicators. And later > To some hospitals and their business, I’m not a Surgeon. I’m just an employee. Overworked, burned out, replaceable. The noble call to Medicine has been suffocated by the bureaucratic force…"
+        },
+        {
+          "by": "matheusmoreira",
+          "text": "> Everyday, there’s a new form, a new guideline, a new protocol, a new health software, a new policy all dictating, restricting and modifying clinician activities. I felt this one... Takes all the running you can do, to keep in the same place. The entire loss of support section is way too real. I'd almost forgotten what that sort of institutional chaos felt like. So glad I don't work in a…"
+        },
+        {
+          "by": "pedrosuave",
+          "text": "I see a lot of comments that we need more doctors to be able to pay doctors less. There are of course exceptions but I really don't think 300k a year is unreasonable when coming out with nearly 600k in debt in a field with such high burn out and liability risk. Unlike salary position that 300k, at least in my field, is all via private equity and we are all independent contractors--meaning does…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49795686,
+      "url": "https://www.bloomberg.com/news/articles/2026-09-18/to-quit-vaping-some-are-starting-to-smoke",
+      "hn": "https://news.ycombinator.com/item?id=49795686",
+      "title": "People hooked on vapes try a new way to quit: cigarettes",
+      "time": 1790040080,
+      "depth": [
+        {
+          "text": "people hooked on vapes are turning to **cigarettes** to try and **quit**",
+          "tier": "simple"
+        },
+        {
+          "text": "Some argue cigarettes are **self-limiting** because smoke irritates the throat and lungs, unlike vapes which encourage constant indoor puffing. Critics call switching absurd, noting tobacco causes cancer and contains **MAO inhibitors** that make smoking much harder to give up.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say cigarettes force natural breaks because inhaling smoke hurts and requires going outside, while others say returning to cancer-causing tobacco with added chemical hooks is completely backwards.",
+      "comment_count": 308,
+      "terms": [
+        "MAO inhibitors",
+        "cytisine"
+      ],
+      "entities": [
+        "Tabex",
+        "WHO"
+      ],
+      "comments": [
+        {
+          "by": "UntitledNo4",
+          "text": "Tabex ( https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Cytisine ) is what helped me (and my boyfriend) quit smoking after many years (~30) of smoking and several failed attempts to quit using nicotine gum and patches. We have now been smoke-free for over 5 months, which is still not long, but much longer than we have ever lasted before. It seems strange to me that with all the talk about the…"
+        },
+        {
+          "by": "prohobo",
+          "text": "People don't understand that cigarettes are self-limiting because they literally hurt your throat and lungs. Most people simply can't chain smoke and they need about an hour break in between smokes. With vaping that limit is completely gone. A vaping addiction can keep escalating until you want a puff every 30 seconds, especially once you start breaking down mental barriers like \"no vaping…"
+        },
+        {
+          "by": "itomato",
+          "text": "I bring this up every decade because I haven't been able to find (many) supporting studies. Chilis. Nibble a Thai bird chili instead of facing a nicotine fit. Sip some Tabasco if you must. I quit this way, and the point is not burning your mouth or the heat. It’s the endorphin complement. Tobacco products out. Capsaicin products in…"
+        },
+        {
+          "by": "S0y",
+          "text": "Here's what I did to get rid of my nicotine addiction (vaping): - Gradually lower the strength of my liquid until it was at the minimum. - Stop all vaping and switch to nicotine gum - Gradually increase the time between each gum - Stop the gum altogether This process took probably 3 months and tbh it was pretty miserable the whole time. It's 100% worth it tho, You don't realize how much it…"
+        },
+        {
+          "by": "dasKrokodil",
+          "text": "A while back I saw this on reddit... in case you don't want to click the link, it's a picture of a cigarette with the caption \"This plant-based alternative promises to help high schoolers stop vaping\". I would have never thought that people would be stupid enough to try this for real, but here we are... https:&#x2F;&#x2F;www.reddit.com&#x2F;media?url=https%3A%2F%2Fpreview.redd...."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49805748,
+      "url": "https://unreallabs.ai/blog/unreal-agent/",
+      "hn": "https://news.ycombinator.com/item?id=49805748",
+      "title": "Unreal Agent",
+      "time": 1790100953,
+      "depth": [
+        {
+          "text": "a new AI harness called **Unreal Agent** aims to cut down **token waste** during tool calls",
+          "tier": "simple"
+        },
+        {
+          "text": "The harness claims to cut turns by removing tokens wasted while waiting on **synchronous tool calls**. Reviewers questioned benchmark graphs comparing its setup on Astra xhigh against Codex on Astra max, while others warned of **trademark issues** with Epic Games.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some welcome async tools to cut token waste and speed up work, while others argue that optimizing for cost degrades output or leads to models hanging on timeouts.",
+      "comment_count": 117,
+      "terms": [
+        "harness",
+        "async tool calls"
+      ],
+      "entities": [
+        "Unreal Agent",
+        "Epic Games",
+        "Codex",
+        "Astra",
+        "Go"
+      ],
+      "comments": [
+        {
+          "by": "dvt",
+          "text": "I think this space is very untapped. Models are interesting, but I am absolutely obsessed with some things I've been researching&#x2F;working on for the past few years: Fractal tool discovery: tool taxonomy where an agent can \"drill deeper\" to find what specific tool it's looking for. Helps if&#x2F;when polluting context with a zillion (mostly unnecessary) tools. Leveraging splay trees: this is…"
+        },
+        {
+          "by": "tekacs",
+          "text": "The headline graph is kind of bizarre. For some reason they're comparing their harness running on Astra xhigh to Codex with Astra max? --- Also worth noting that OpenAI just added support for async tool calling to their harness, which isn't 1:1 with this approach, but is slowly ramping up in being able to provide something similar. A big part of why Codex uses so many tokens is that it basically…"
+        },
+        {
+          "by": "tapoxi",
+          "text": "Sounds like a trademark issue when Epic ships a wildly popular Unreal Engine"
+        },
+        {
+          "by": "pyrolistical",
+          "text": "Funny, I solved this problem by having Claude write a pi extension https:&#x2F;&#x2F;github.com&#x2F;Pyrolistical&#x2F;pi-notify Now my pi agent setups its own trigger to notify itself when a background process is done"
+        },
+        {
+          "by": "respectattentio",
+          "text": "This is so interesting. I'm unlocking savings (in both speed and costs) but using a different way of thinking by integrating Decision models: In short, LLMs spend so many turns on discovery, triage, and safety checks for everyday tasks. A decision model cuts those turns by preparing the relevant context before the prompt and handling the simple judgments itself, so the LLM only does the real…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49803959,
+      "url": "https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-7hp8-65ch-5whp",
+      "hn": "https://news.ycombinator.com/item?id=49803959",
+      "title": "WordPress: Unauthenticated path traversal leading to conditional RCE",
+      "time": 1790094825,
+      "depth": [
+        {
+          "text": "a newly patched **WordPress flaw** lets attackers run code without logging in under **specific setups**",
+          "tier": "simple"
+        },
+        {
+          "text": "The bug stems from a **path traversal** issue in page-template resolution that can force the server to load arbitrary local PHP files. Exploiting it to run code requires strict conditions, including theme directories starting with `page-` and accessible target files like `pearcmd.php`. A fix landed in **WordPress 7.1.2** and was backported all the way to **version 4.7**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 117,
+      "terms": [
+        "path traversal",
+        "RCE"
+      ],
+      "entities": [
+        "WordPress",
+        "Docker",
+        "cPanel",
+        "PHP"
+      ],
+      "comments": [
+        {
+          "by": "zelphirkalt",
+          "text": "These are the reason, why every easily reachable web server will be spammed with &#x2F;something&#x2F;something.php?somearg=someval. If I had to guess, which software on the web has been the most exploitable over all of the web's history, WP would surely be among the top candidates. Maybe right after MS Teams or Sharepoint or some stuff like that."
+        },
+        {
+          "by": "beezle",
+          "text": "\"WordPress 7.1.2 has been released containing a fix for the vulnerability, and as a courtesy to users on older branches the fix has been backported to all branches back to 4.7\" As a courtesy, I try not to say more than one bad thing about WP every day. FWIW about 1&#x2F;3 of installs are not on the recent 7 branch."
+        },
+        {
+          "by": "cyphar",
+          "text": "This kind of bug pathology is incredibly common in all sorts of programs and is the reason (disclaimer: self-plug) I wrote libpathrs[1]. Sadly, almost all language standard libraries do not provide the right abstractions for dealing with files (the primary focus is on global paths as opposed to scoped paths or file descriptors &#x2F; file handles) so it's little surprise bugs like these just keep…"
+        },
+        {
+          "by": "thenthenthen",
+          "text": "Is there a simple quick fix for older wp installs? I dont want to go through 20 meetings and two weeks of discussions"
+        },
+        {
+          "by": "random_savv",
+          "text": "I am so happy that I asked Codex to rewrite our website as Hugo templates which allowed us to statically host it and get rid of Wordpress. So much stress gone!"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/0a709104f82717281f48e543b5542acf296bafdb3d15db8cefd2148be6d4d32b/WordPress/wordpress-develop/security/advisories/GHSA-7hp8-65ch-5whp"
+    },
+    {
+      "id": 49811065,
+      "url": "https://waymo.com/blog/2026/09/transit-rewards/",
+      "hn": "https://news.ycombinator.com/item?id=49811065",
+      "title": "Transit rewards",
+      "time": 1790131949,
+      "depth": [
+        {
+          "text": "Waymo will give riders **ride credit** if they also take **public transit**",
+          "tier": "simple"
+        },
+        {
+          "text": "Riders in the San Francisco Bay Area who use a linked Visa card for both a Waymo trip and transit within 2 hours get **$2.85** in Waymo Cash. The company is also leasing **40 parking spaces** at Caltrain stations to keep robotaxis staged for train connections.",
+          "tier": "substance",
+          "data": [
+            [
+              "$2.85",
+              "Waymo Cash issued per eligible transit connection"
+            ],
+            [
+              "2 hours",
+              "time window between Waymo and transit trips to qualify"
+            ],
+            [
+              "40",
+              "dedicated Caltrain station parking spaces leased by Waymo"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some think it is an elegant way to handle last-mile trips in car-dependent cities, but skeptics argue a small credit and a strict Visa requirement will not fix transit frequency or change rider habits.",
+      "comment_count": 271,
+      "terms": [
+        "last mile",
+        "tap-to-pay"
+      ],
+      "entities": [
+        "Waymo",
+        "Visa",
+        "Caltrain"
+      ],
+      "comments": [
+        {
+          "by": "dcrazy",
+          "text": "Meanwhile, the 47 Muni bus that connects the Van Ness transit corridor to Caltrain has been “suspended” since 2020, and the extension of Caltrain to the transit center is still unfunded. I appreciate solutions that meet us where we are, but it’s depressing that we don’t seem to actually have the will to make a sustainable, integrated mass transit plan."
+        },
+        {
+          "by": "novia",
+          "text": "Waymo pays you $2.85 in Waymo credit to take the train (Waymo takes $2.85 off your next ride if you take the train) I live in East Bay, and I often take gratuitous Waymo trips all the way across the city to Embarcadero Station to ride BART back home. I do this because I like seeing the pretty skyscrapers and the bustling city and the pretty townhomes painted interesting colors. They may want to…"
+        },
+        {
+          "by": "infecto",
+          "text": "I love it. We can argue to death, as usually happens in Waymo threads about public transit but the general truth is mass transit is hard in America where cities are designed mostly around cars. Could it change, sure but most likely not. This seems like such an elegant solution that I hope other cities adopt and use as part of new transit planning."
+        },
+        {
+          "by": "nunez",
+          "text": "Oh man this is brilliant. Amongst other reasons, I use Waymo for covering the last mile of a trip made by bus or light rail in my city (Houston, TX). Our public transit service is very reasonably priced but it would be awesome to get a discount!"
+        },
+        {
+          "by": "ec965",
+          "text": "I use my commuter benefit debit card to pay for public transit. Notably this does not include rideshares like Waymo. In order to\nclaim the transit reward I could use a personal card to pay for both transit and Waymo, but that leads to considerable friction where I need to collect receipts and submit claims to use my commuter benefit.\nMost companies in SF must offer a commuter benefit so it…"
+        }
+      ],
+      "image": "https://lh3.googleusercontent.com/82obHWc3e1ZMCy_ZMWUt5At9qY0Q4WSoZJWMMryzgRlDefAvUxOEPFKvDa95G_F3KhUQZdJhpBQyuztDE1e3iox7qKOpSCH4gsk"
+    },
+    {
+      "id": 49812975,
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1wm5c21/i_am_done_with_this_shit/",
+      "hn": "https://news.ycombinator.com/item?id=49812975",
+      "title": "I am done with this shit",
+      "time": 1790150354,
+      "depth": [
+        {
+          "text": "developers are **venting** about **AI coding tools** turning their work into a soulless mess",
+          "tier": "simple"
+        },
+        {
+          "text": "Commenters complained that corporate pressure to deliver ten times faster with Claude produces **over engineered** code and ruins team **camaraderie**. Defenders countered that models still make prototyping fast enough to build a usable app in just a few **hours**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: critics say management pressure to use AI creates unmaintainable code and destroys workplace camaraderie, while optimists say models make rapid prototyping possible and let people ship projects in hours.",
+      "comment_count": 165,
+      "terms": [
+        "vibe coding",
+        "POC"
+      ],
+      "entities": [
+        "Claude",
+        "Codex",
+        "iOS"
+      ],
+      "comments": [
+        {
+          "by": "prologic",
+          "text": "To be honest, this is less about Claude Code per se (or any other coding agent) and more about business and corporate culture. In my experience, if you work at a company whose culture is to deliver as fast as possible, then this is ultimately what you get when those same managers start to realize we can also ship 10x faster (no matter the costs). The \"Delivery Pressure\" is very real in _some_…"
+        },
+        {
+          "by": "NichoPaolucci",
+          "text": "It's very interesting that this has become such a dichotomy. On one hand you have AI enthusiasts who are shipping more than they ever have, they are super excited about being able to use the models and build everything they've ever wanted to. Utopia, amazing. The other side is this complete, absolute disconnect from the job function, absolute dissatisfaction, empty feeling where the whole world…"
+        },
+        {
+          "by": "arijun",
+          "text": "Theres something ironic about the top comment being an AI summary of everything, so I don’t have think or synthesize a view for myself."
+        },
+        {
+          "by": "Buttons840",
+          "text": "We need a way to interleave our own notes into the source code. It's like Bible study, everyone studies the same Bible, but everyone wants to have their own highlights and notes. Some might say to use comments, but my Monday morning chain-of-thought doesn't belong in a comment. I want a way to do literate coding. I want to interleave writings, and drawings, and editable code snippets that point…"
+        },
+        {
+          "by": "wookmaster",
+          "text": "I find it wild companies were so ready to ship intellectual property to another company. I sort of thought they would experiment then use all the massive RAM on our Mac books to implement something more local we can use and keeps our stuff out of another companies hands but it was just Claude Claude Claude tokenmax tokenmax tokenmax."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49781862,
+      "url": "https://github.com/xCuri0/ReBarUEFI",
+      "hn": "https://news.ycombinator.com/item?id=49781862",
+      "title": "ReBarUEFI: Resizable BAR for almost any UEFI system",
+      "time": 1789952866,
+      "depth": [
+        {
+          "text": "someone built a tool to bring **resizable BAR** to older motherboards",
+          "tier": "simple"
+        },
+        {
+          "text": "ReBarUEFI injects a driver into a system's **UEFI firmware** to unlock Resizable BAR on motherboards that never officially supported it. The feature is required for **Intel Arc GPUs** to run optimally, and tests showed up to a **12% FPS increase** on an older gaming setup.",
+          "tier": "substance",
+          "data": [
+            [
+              "FPS increase",
+              "upto 12%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some are excited to squeeze extra life out of aging motherboards, while others find flashing modified firmware too scary because of the risk of bricking hardware.",
+      "comment_count": 64,
+      "terms": [
+        "Resizable BAR",
+        "UEFI"
+      ],
+      "entities": [
+        "ReBarUEFI",
+        "Intel"
+      ],
+      "comments": [
+        {
+          "by": "abrookewood",
+          "text": "FYI: Resizable BAR (Base Address Register) is a PCI Express feature that removes the traditional 256MB memory limit, allowing your CPU to access your graphics card's entire VRAM at once for a potential 5% to 15% boost in gaming performance"
+        },
+        {
+          "by": "zir_blazer",
+          "text": "These kind of BIOS modding shenannigans is why I got interesed in Coreboot, so that enhancing a Firmware capabilities becomes possible without touching propietary tools&#x2F;code. Other similar mods included adding NVMe Boot capabilities to older Firmwares that didn't supported them so that you could boot from modern NVMe drives if you used some kind of adapter (As none of those Motherboards have…"
+        },
+        {
+          "by": "taosx",
+          "text": "On my linux machine chrome was crashing almost daily before activating rebar by patching bios."
+        },
+        {
+          "by": "massimodeluisa",
+          "text": "Do you inject a DXE into OEM firmware for that map, or wait for the board vendor and live with the small window?"
+        },
+        {
+          "by": "bigwheels",
+          "text": "What does this do? I perused the README but I'm still clueless on what the purpose and use-case is for ReBAR. (Posting this under the assumption others will also appreciate a bit of quick context.)"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/f5114338dc07b8954f2ee91a4c98a309e2433298219f7fe958d47fbe739c36ab/xCuri0/ReBarUEFI"
     }
   ]
 }
