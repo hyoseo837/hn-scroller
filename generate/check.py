@@ -1,6 +1,11 @@
 """Offline self-check. No network, no API key: `python3 -m generate --check`."""
 
-from . import PROMPT
+import contextlib
+import io
+import tempfile
+from pathlib import Path
+
+from . import PROMPT, run
 from .cards import (
     MODEL_COMMENT_CHARS,
     SCHEMA,
@@ -14,6 +19,7 @@ from .cards import (
 from .hn import MAX_COMMENTS, MIN_POINTS, select_posts
 from .models import USAGE, luna_text, strict, usage_line
 from .text import SHEET_COMMENT_CHARS, drop_boilerplate, hero_image, looks_gated, peek, strip_html
+from .translate import PROMPT_KO, SCHEMA_KO, comments_ko, english, glosses, lost, problems
 
 
 def check() -> None:
@@ -222,6 +228,69 @@ def check() -> None:
     assert "$0.002" in line, line  # 11850*0.10 + 2410*0.50, per 1M
     USAGE.update(calls=0, input=0, output=0, thought=0)
     assert "$0.000" in usage_line(), "no calls must not divide by zero"
+
+    # The Korean pass. A changed figure or a transliterated name is a changed fact.
+    assert lost("costs $4.00, took 621 days", "$4.00 들고 621일 걸림", []) == []
+    assert lost("1,000 users", "1000명", []) == [], "separators are formatting, not facts"
+    assert lost("costs $4.00", "$40 듦", []) == ["4.00"], "a changed figure is caught"
+    assert lost("$20 million grant", "2,000만 달러 보조금", []) == ["20"], "a converted scale can't be checked"
+    assert lost("OpenAI shipped it", "오픈아이가 출시함", ["OpenAI"]) == ["OpenAI"], "transliteration"
+    assert lost("OpenAI shipped it", "OpenAI가 출시함", ["OpenAI"]) == []
+    assert lost("Samsung doubles it", "삼성, 두 배로 늘림", ["Samsung"]) == [], "Korean companies in Hangul"
+    assert lost("no names here", "이름 없음", ["Google"]) == [], "only names the English has"
+    en = english(full, {"wasm": "runs code fast in a browser, 2x"})
+    assert en["data"] == [["latency", "2.1s"]] and en["glossary"][0]["term"] == "wasm"
+    ko = {"simple": "ㅅ", "substance": "ㅅ", "data": [["지연 시간", "2.1초"]], "camps": "두 진영",
+          "comments": [], "glossary": [{"term": "wasm", "gloss": "브라우저에서 코드를 빠르게 돌림, 2배"}]}
+    assert problems(en, ko, full["entities"]) == [], "a faithful card ships"
+    assert problems(en, {**ko, "substance": None}, []), "a dropped detail is a changed card"
+    assert problems(en, {**ko, "data": [["지연 시간", "3.1초"]]}, []) == ["2.1"]
+    assert problems(en, {**ko, "comments": ["extra"]}, []), "a comment appearing is a changed card"
+    two = {"comments": ["isn't 1:1", "took 5 days"]}
+    assert comments_ko(two, {"comments": ["1:1은 아님", "며칠 걸림"]}, []) == ["1:1은 아님", None], (
+        "a comment that lost a number stays English on its own; the card still ships"
+    )
+    assert glosses(en, ko, []) == {"wasm": ko["glossary"][0]["gloss"]}
+    assert glosses(en, {**ko, "glossary": [{"term": "wasm", "gloss": "빠름"}]}, []) == {}, "lost the 2"
+    for forbidden in ("id", "title", "names", "terms"):
+        assert forbidden not in SCHEMA_KO["properties"], f"Korean schema exposes {forbidden}"
+    assert strict(SCHEMA_KO)["additionalProperties"] is False
+    assert PROMPT_KO.exists() and "Absolute rule" in PROMPT_KO.read_text(encoding="utf-8")
+
+    # The Korean pass over real files with the model stubbed: what ships, what stays
+    # English and is retried, and what is never paid for twice.
+    calls = []
+
+    def stub(card, glossary, effort):
+        calls.append((card["id"], sorted(glossary)))
+        en = english(card, glossary)
+        return en, {**en, "simple": "숫자 빠짐" if card["id"] == 2 else "한국어",
+                    "comments": ["1:1은 아님", "며칠 걸림"],
+                    "glossary": [{"term": g["term"], "gloss": "2배 빠름"} for g in en["glossary"]]}
+
+    def day_card(i, simple):
+        content = {"simple": simple, "substance": None, "camps": None, "terms": [{"term": "wasm", "gloss": ""}]}
+        return assemble_card({"id": i, "url": None, "title": "t"}, content, 2,
+                             [{"by": "a", "text": "isn't 1:1"}, {"by": "b", "text": "took 5 days"}])
+
+    saved = run.DATA, run.korean
+    with tempfile.TemporaryDirectory() as tmp, contextlib.redirect_stdout(io.StringIO()):
+        run.DATA, run.korean = Path(tmp), stub
+        try:
+            run.write_json("d.json", {"cards": [day_card(1, "s"), day_card(2, "ships v3"), day_card(3, "s")],
+                                      "glossary": {"wasm": "runs 2x faster"}})
+            run.write_json("d.ko.json", {"date": "d", "cards": {"3": {"simple": "이미 있음"}}})
+            run.korean_pass("d")
+            out = run.read_json("d.ko.json", {})
+            first = list(calls)
+            run.korean_pass("d")
+        finally:
+            run.DATA, run.korean = saved
+    assert [c for c, _ in first] == [1, 2], "a card already in Korean is never sent again"
+    assert sorted(out["cards"]) == ["1", "3"], "the card that lost 'v3' stays English"
+    assert out["cards"]["1"]["comments"] == ["1:1은 아님", None]
+    assert out["glossary"] == {"wasm": "2배 빠름"}, "the day ships its Korean glosses"
+    assert calls[2:] == [(2, [])], "the next run retries only the failed card, and not its known term"
 
     assert PROMPT.exists(), "prompt.md is missing"
     assert "Absolute rule" in PROMPT.read_text(encoding="utf-8")

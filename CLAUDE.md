@@ -28,18 +28,19 @@ No framework, no build step, no server, zero dependencies.
 python3 -m generate --check    # offline, no network, no API key. Run before every commit.
 python3 -m generate --dry 3    # live HN fetch, prints the model input, calls nothing
 python3 -m generate --sample 1 # one real Luna call, prints the card, writes nothing
-python3 -m generate            # full run, needs OPENAI_API_KEY
+python3 -m generate --sample-ko 3  # newest 3 cards in Korean beside the English; --ko DATE writes a day's Korean
+python3 -m generate            # full run with the Korean pass, needs OPENAI_API_KEY
 python3 -m http.server 8000     # then open localhost:8000 — file:// blocks fetch()
 ```
 
-**A full run spends real money (~$0.0024/post on Luna high, measured on 9). Never run one to test a change — ask first.**
-Verify with `--check` (free), `--dry` (free), then `--sample 1-3` (under a cent). A full run happens
+**A full run spends real money (~$0.0024/post on Luna high + $0.0013 for its Korean). Never run one to test a change — ask first.**
+Verify with `--check` (free), `--dry` (free), then `--sample 1-3` or `--sample-ko 1-3` (under a cent). A full run happens
 only when the user asks for fresh content, never as a way of checking your own work.
 
 While tuning `generate/prompt.md`, `rm data/published.json` to let already-seen posts be
 regenerated. The glossary survives; only the dedup list resets.
 
-The system prompt is `generate/prompt.md`, read at runtime — edit it without touching code. Iterate with
+The system prompt is `generate/prompt.md` (`prompt.ko.md` for the Korean pass), read at runtime — edit it without touching code. Iterate with
 `--dry` (free) before spending calls.
 
 ## Documentation rule

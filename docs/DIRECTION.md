@@ -40,47 +40,13 @@ to fetch. So ~53% → ~70% of cards with a picture, at the cost of sizing up to 
 
 ## Translations: Korean first, then others — next up
 
-**Now:** English only. `PRODUCT.md`: a Korean version is planned for the same reader, whose first
-language is Korean, in the same register, with Korean text first-class (line breaking, fonts).
+**Now:** the generator side is built, uncommitted: the per-run Korean pass (Luna medium), the
+`--ko DATE` backfill, and `--sample-ko` for tuning `prompt.ko.md`. Design: `SPEC.md` "Translations"
+and the 2026-09-23 `DECISIONS.md` entries.
 
-**Do:** add translations, Korean first, possibly more languages later. The design is still to be
-discussed; this entry holds what is known.
-
-**Facts the design has to fit:**
-- Cards are written by GPT-6 Luna at high effort (`generate/models.py`). Each `data/<date>.json`
-  carries its cards plus a `glossary` slice of their terms; a visit downloads the index plus one day.
-- Four runs a day append new cards to the same day file.
-- Only `substance` is checked mechanically (verbatim quotes). The glance, camps and glosses are
-  prompt-governed.
-- Viewer UI strings (buttons, hints, sheet titles, "You're caught up") live in `js/*.js` and
-  `index.html`. Dates already follow the browser locale. `<html>` has no `lang` attribute today.
-- `CLAUDE.md`: client state is `localStorage`, resume position only.
-
-**Earlier findings, from this entry's previous version:**
-
-| per card | cost |
-|---|---|
-| batched translation, one call per day, Flash (measured) | +$0.0020 |
-| one call per card, Flash (measured) | +$0.0074, re-sends the instructions every time |
-| batched, Luna (estimate at list price, unmeasured) | ~+$0.0003 |
-
-- Translating the finished English, rather than writing Korean in the main call, was preferred:
-  the English detail is what was checked against quotes, and a separate pass fails without costing
-  an edition. Writing Korean in the main call was ~free but loses English.
-- Rejected: Papago and other MT (the register is the product: "구린", "풀어버렸대", not news-wire
-  Korean); Gemini Flash-Lite (wrote 오픈아이 for OpenAI, dropped Apache and Snap). Highlight markers
-  survived translation fine. Each card's `entities` was proposed as a do-not-translate list.
-- No Korean output from Luna has been seen yet.
-
-**Open questions:**
-- Where translations live: fields in the day file, a file per language per day, or something else.
-- Which parts get translated: glance, detail, camps, data labels, glosses, glossary terms, UI.
-  Comments and the HN title are verbatim English today.
-- How a reader gets a language: browser language, a toggle, or both.
-- Which Luna effort level for translation, and how to judge quality.
-- Whether and how to check translations mechanically.
-- Whether past days get translated.
-- How a second language after Korean gets added.
+**Left:** the viewer (toggle beside the date, UI strings, `lang`, Korean line breaking, a
+"translated" note on the comment sheet); the one-time backfill of past days; and how figures like
+"$20 million" read, unseen so far (17 of 329 English fields carry a scale word).
 
 **Trigger:** fired: the user picked this as the next task on 2026-09-23.
 

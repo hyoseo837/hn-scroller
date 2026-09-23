@@ -9,6 +9,7 @@ from . import DATA, ROOT
 from .cards import assemble_card, day_glossary, model_input, verify_substance
 from .hn import select_from_algolia, sources
 from .models import luna_content, usage_line
+from .translate import KO_EFFORT, comments_ko, glosses, korean, problems
 
 
 def load_env() -> None:
@@ -102,6 +103,46 @@ def main() -> None:
     write_json("index.json", sorted({date, *index}, reverse=True))
     print(f"wrote data/{date}.json ({len(merged)} cards)")
     print(usage_line())
+    # The English is already written: a failed Korean pass costs today's Korean, never the edition.
+    try:
+        korean_pass(date)
+    except Exception as err:
+        print(f"korean pass failed: {err}", file=sys.stderr)
+    print(f"with korean: {usage_line()}")
+
+
+def korean_pass(date: str) -> None:
+    """Korean for every card in data/<date>.json that has none yet, one call each.
+    A card that fails the check stays English, and the day's next run retries it.
+    Also the backfill for a past day: `python3 -m generate --ko DATE`."""
+    day = read_json(f"{date}.json", {})
+    cards = day.get("cards", [])
+    if not cards:
+        sys.exit(f"no cards in data/{date}.json")
+    overlay = read_json(f"{date}.ko.json", {"date": date, "cards": {}})
+    known = read_json("glossary.ko.json", {})  # the Korean twin of glossary.json
+    for card in [c for c in cards if str(c["id"]) not in overlay["cards"]]:
+        names = card.get("entities") or []
+        try:
+            # Known terms keep their Korean gloss; only new ones are sent.
+            fresh = {t: g for t, g in day.get("glossary", {}).items() if t not in known}
+            en, ko = korean(card, fresh, KO_EFFORT)
+        except Exception as err:  # one bad card must not lose the others
+            print(f"  ko fail {card['id']}: {err}", file=sys.stderr)
+            continue
+        known.update(glosses(en, ko, names))
+        bad = problems(en, ko, names)
+        if bad:
+            print(f"  ko {card['id']} stays English, lost {bad}")
+            continue
+        overlay["cards"][str(card["id"])] = {
+            **{field: ko[field] for field in ("simple", "substance", "data", "camps")},
+            "comments": comments_ko(en, ko, names),
+        }
+    overlay["glossary"] = day_glossary(cards, known)
+    write_json(f"{date}.ko.json", overlay)
+    write_json("glossary.ko.json", known)
+    print(f"korean: {len(overlay['cards'])}/{len(cards)} cards")
 
 
 def dry(n: int) -> None:
@@ -161,3 +202,35 @@ def sample(n: int) -> None:
         for term in content.get("terms") or []:
             print(f"  glossary[{term['term']}] = {term['gloss']}")
         print()
+
+
+def sample_ko(n: int, effort: str = KO_EFFORT) -> None:
+    """The newest day's last N cards in Korean beside their English, with what the
+    check would reject. Real calls, nothing written: the loop to tune prompt.ko.md in."""
+    load_env()
+    if not os.environ.get("OPENAI_API_KEY"):
+        sys.exit("OPENAI_API_KEY is not set (put it in .env, or export it)")
+
+    date = read_json("index.json", [""])[0]
+    day = read_json(f"{date}.json", {})
+    print(f"{date}: last {n} of {len(day['cards'])} cards, effort {effort}\n")
+    for card in day["cards"][-n:]:
+        en, ko = korean(card, day.get("glossary", {}), effort)
+        print("=" * 78)
+        print(card["title"])
+        for field in ("simple", "substance", "camps"):
+            if en[field]:
+                print(f"-- {field}\n  EN {en[field]}\n  KO {ko[field]}")
+        for e, k in zip(en["data"], ko["data"]):
+            print(f"-- data  {e}  →  {k}")
+        for e, k in zip(en["comments"], ko["comments"]):
+            print(f"-- comment\n  EN {e}\n  KO {k}")
+        written = {g["term"]: g["gloss"] for g in ko["glossary"]}
+        for g in en["glossary"]:
+            print(f"-- {g['term']}\n  EN {g['gloss']}\n  KO {written.get(g['term'])}")
+        bad = problems(en, ko, card.get("entities") or [])
+        print(f"  CHECK FAILED, would ship English: {bad}" if bad else "  check passed")
+        english_ones = [i + 1 for i, k in enumerate(comments_ko(en, ko, card.get("entities") or [])) if k is None]
+        if english_ones:
+            print(f"  comments that would stay English: {english_ones}")
+        print(f"  usage so far: {usage_line()}\n")

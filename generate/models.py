@@ -60,14 +60,19 @@ def luna_text(body: dict) -> str:
 
 def luna_content(title: str, article: str, comments: list[str]) -> dict:
     """One post's card content. Strict JSON schema, so the shape is guaranteed."""
+    return luna(PROMPT.read_text(encoding="utf-8"), model_input(title, article, comments), SCHEMA, "card")
+
+
+def luna(instructions: str, text: str, schema: dict, name: str, effort: str = LUNA_EFFORT) -> dict:
+    """One strict-schema call: the parsed answer, with its tokens added to USAGE."""
     payload = json.dumps(
         {
             "model": LUNA,
-            "instructions": PROMPT.read_text(encoding="utf-8"),
-            "input": model_input(title, article, comments),
-            "reasoning": {"effort": LUNA_EFFORT},
+            "instructions": instructions,
+            "input": text,
+            "reasoning": {"effort": effort},
             "text": {
-                "format": {"type": "json_schema", "name": "card", "schema": strict(SCHEMA), "strict": True}
+                "format": {"type": "json_schema", "name": name, "schema": strict(schema), "strict": True}
             },
         }
     ).encode()

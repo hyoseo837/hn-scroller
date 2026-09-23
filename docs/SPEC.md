@@ -32,8 +32,7 @@ reason to cut it was redundancy, never cost).
 The source is **not** a card. It appears twice, on purpose: inline at the end of the detail tier,
 where "read the whole thing" is the next thought a reader has, and as the glance card's source line
 (the host name), which is a link. The second is not redundant — a card whose substance failed
-verification has no detail tier, and would otherwise offer no route to the article at all. Older day files still carry
-a link tier; the viewer filters it out.
+verification has no detail tier, and would otherwise offer no route to the article at all.
 
 Two or three key words per text tier are marked `**like this**` and render as a highlight. The
 viewer parses them by splitting and appending text nodes, never `innerHTML` — this text comes from
@@ -143,9 +142,7 @@ publish   one JSON file for the day
   how busy the day was. **No cap.** Hacker News bounds this itself; a cap would silently drop real news on a
   busy day, and at 100 points that is exactly what happened — the cap, not the threshold, was doing
   the selecting on 12 of 13 days.
-- `entities` is recorded on every card. Its original purpose (linking related posts) was dropped;
-  it is kept because a translation pass would use it as a do-not-translate list. Delete it if that
-  does not happen either.
+- `entities` is recorded on every card: the names the Korean pass must keep as written.
 
 ### Day file shape
 
@@ -175,6 +172,20 @@ publish   one JSON file for the day
 
 `glossary` holds only this day's terms. A visit downloads the index and one day, so its size does
 not grow with history; `data/glossary.json` is the generator's store and readers never fetch it.
+
+## Translations
+
+- **Korean first**, as a separate pass over the finished English after each run: one Luna medium
+  call per card with no Korean yet (~$0.0013). A failed card ships English and the next run retries it. Past days are
+  backfilled once. Another language later is another overlay file, prompt and UI string table.
+- `data/<date>.ko.json` overlays the day: `{"date", "cards": {"<id>": {"simple", "substance",
+  "data", "camps", "comments"}}, "glossary": {...}}`. `data/glossary.ko.json` is the generator's store.
+- Translated: glance, detail, data rows, camps, glosses, comments, UI. As written: HN title, term
+  headwords, commenter names, code, URLs, and names, except Korean companies (Samsung → 삼성).
+- **Register:** the app's own text reads as a tech headline: noun endings, compact Sino-Korean
+  (환승시, 취약점), tech words Koreans write in English kept English. Comments keep their own voice.
+- **Checked per card:** every number and name in the English survives, or the card ships English.
+- Viewer: the browser language picks; a toggle beside the date overrides it (`localStorage`).
 
 ## Non-goals (v1)
 

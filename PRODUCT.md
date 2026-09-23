@@ -53,7 +53,8 @@ source: the detail tier ships only with verbatim quotes that match the fetched a
 
 Voice is casual and human, a little amused — "someone made a digital brain of a fly to play Brood
 War", not news-wire. Register is part of the product; heavy prose breaks the lightness. The Korean
-version keeps the same register.
+version reads as a Korean tech headline: noun endings, compact Sino-Korean words, and the tech
+words Korean developers write in English kept in English; comments keep each commenter's own voice.
 
 ## Evidence on Hand
 

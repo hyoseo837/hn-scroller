@@ -6,6 +6,8 @@ those are facts we already have from HN.
     python3 -m generate --check  offline self-check, no network, no API key
     python3 -m generate --dry 3  fetch 3 posts, print the model input, call nothing
     python3 -m generate --sample 1  one real call, print the card, write nothing
+    python3 -m generate --sample-ko 3  newest 3 cards in Korean beside the English
+    python3 -m generate --ko DATE   write that day's missing Korean (the backfill)
 
 The system prompt lives in prompt.md, next to this file, so it can be edited without
 touching code.
