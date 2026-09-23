@@ -11,7 +11,7 @@ from .cards import (
     verify_substance,
 )
 from .hn import MAX_COMMENTS, select_posts
-from .models import LUNA, USAGE, gemini_text, luna_text, strict, usage_line
+from .models import USAGE, luna_text, strict, usage_line
 from .text import SHEET_COMMENT_CHARS, drop_boilerplate, hero_image, looks_gated, peek, strip_html
 
 
@@ -184,28 +184,6 @@ def check() -> None:
     naked = {"simple": "s", "substance": "no receipts", "support": []}
     assert verify_substance(naked, src) == [] and naked["substance"] is None, "no quotes, no tier"
 
-    # Real /interactions shape: a contentless thought step, then the answer.
-    assert (
-        gemini_text(
-            {
-                "status": "completed",
-                "steps": [
-                    {"type": "thought", "signature": "..."},
-                    {"content": [{"text": '{"ok": true}'}]},
-                ],
-            }
-        )
-        == '{"ok": true}'
-    ), "thought steps carry no content and must be skipped"
-    assert gemini_text({"steps": [{"content": [{"text": "a"}, {"text": "b"}]}]}) == "b", "last wins"
-    for bad in ({"nope": 1}, {"steps": [{"type": "thought", "signature": "x"}]}):
-        try:
-            gemini_text(bad)
-        except RuntimeError as err:
-            assert "no text block" in str(err)
-        else:
-            raise AssertionError(f"gemini_text should raise on {bad}")
-
     # OpenAI /v1/responses: a textless reasoning item, then the message. No top-level
     # output_text over raw HTTP — that field is SDK-only.
     msg = {"type": "message", "content": [{"type": "output_text", "text": '{"ok": true}'}]}
@@ -234,8 +212,7 @@ def check() -> None:
     USAGE.update(calls=1)
     assert "1 call |" in usage_line(), "no stray plural"
     USAGE.update(calls=2)
-    assert "$0.018" in line, line  # 11850*0.75 + 2410*3.75, per 1M
-    assert "$0.002" in usage_line(LUNA), usage_line(LUNA)  # 11850*0.10 + 2410*0.50, per 1M
+    assert "$0.002" in line, line  # 11850*0.10 + 2410*0.50, per 1M
     USAGE.update(calls=0, input=0, output=0, thought=0)
     assert "$0.000" in usage_line(), "no calls must not divide by zero"
 

@@ -78,3 +78,8 @@ Supersedes the Node choice in the stack entry above; everything else there still
 
 **Why:** the impeccable design skill reads product truth and the visual system from these two files at the repo root; folding them into `SPEC.md` would mean the tool never finds them. Chosen by the user. Supersedes the four-file rule.
 **Rejected:** folding into `SPEC.md` (tool can't read it there); no design doc (the visual system would live only in CSS, with no record of intent).
+
+## 2026-09-23 — GPT-6 Luna at high effort replaces Gemini 3.8 Flash
+
+**Why:** measured on the same 9 posts and prompt: Luna kept its detail tier on 8 of 9 once the `&#x2F;` decoding bug was fixed (Flash 5 of 5 before Google's 503 stopped it), at $0.0024 a card against Flash's ~$0.012, which doubles on 2027-01-01. High over medium: it kept the prompt's format (camps 9/9 vs 6/9) for ~$0.80/mo more. Chosen by the user after reading the cards side by side. Supersedes the Gemini model entries.
+**Rejected:** medium (format drift); xhigh (60-100+ s a post, one call past the 120 s timeout); Sol ($2/$10, headroom the quote check makes unnecessary); Gemini kept as a fallback (unused code; git history has it).

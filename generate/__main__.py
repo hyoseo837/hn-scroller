@@ -1,4 +1,4 @@
-"""`python3 -m generate [--check | --dry N | --sample N [--luna]]`"""
+"""`python3 -m generate [--check | --dry N | --sample N]`"""
 
 import sys
 import urllib.error
@@ -15,13 +15,15 @@ def dispatch() -> None:
         dry(int(sys.argv[at + 1]) if len(sys.argv) > at + 1 else 3)
     elif "--sample" in sys.argv:
         at = sys.argv.index("--sample")
-        n = sys.argv[at + 1] if len(sys.argv) > at + 1 else "1"
-        sample(int(n) if n.isdigit() else 1, luna="--luna" in sys.argv)
+        sample(int(sys.argv[at + 1]) if len(sys.argv) > at + 1 else 1)
     else:
         main()
 
 
 if __name__ == "__main__":
+    # Line-buffered: piped to a file or an Actions log, buffering hides every line
+    # until the run ends, and splices stderr tracebacks into the middle of a card.
+    sys.stdout.reconfigure(line_buffering=True)
     try:
         dispatch()
     except (urllib.error.URLError, TimeoutError, OSError) as err:

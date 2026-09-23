@@ -43,8 +43,8 @@ to fetch. So ~53% → ~70% of cards with a picture, at the cost of sizing up to 
 **Now:** English only, for a reader who is a Korean beginner. The glance line is the one sentence
 they must not have to decode.
 
-**Do:** a second pass over the finished day file adding `simple_ko` / `substance_ko`, with
-**gemini-3.8-flash**, **batched** — a whole day in one call. Measured on real cards:
+**Do:** a second pass over the finished day file adding `simple_ko` / `substance_ko`,
+**batched** — a whole day in one call. Measured with gemini-3.8-flash on real cards:
 
 | | per card |
 |---|---|
@@ -70,32 +70,6 @@ guard — the opposite of the main pass. Estimated from the Flash measurement at
 GPT-6 Luna ~$0.20/mo, Flash ~$1.50 (~$3 from 2027-01-01), GPT-6 Sol ~$4. A ~$4/mo spread, so
 choose on register and proper nouns: translate the same few cards with all three, `entities` as
 the do-not-translate list, judge by eye. No Korean data on Luna or Sol yet (both 2026-09-22).
-
-## Main model: GPT-6 Luna — next up
-
-**Now:** Flash at introductory $0.75/$3.75 per 1M, doubling to $1.50/$7.50 on 2027-01-01
-(~$9 → ~$19/mo). Luna (released 2026-09-22) is $0.10/$0.50, ~$1.30/mo at our token use if it
-thinks as much as Flash (85-87% of Flash's output is thinking). Sol ($2/$10, ~$25/mo) is headroom
-this job does not use — `verify_substance` already catches fabrication. Luna's Korean, register
-and quote fidelity are unmeasured; every number above is a list price, not a run.
-
-**Do:** a provider switch for `--sample` only, production stays on Gemini until numbers say
-otherwise. The seam is `gemini_content()` (request, auth header, usage counting) and
-`gemini_text()` (response shape); `PRICES` and the `usage_line` cost go per model.
-- Verify against OpenAI's own docs first, not memory: the model id, endpoint, JSON-schema output
-  format, reasoning-effort setting, and the usage field names for reasoning tokens.
-- `SCHEMA` has optional `data` and `["string","null"]` unions — strict schema modes usually want
-  every property required and `additionalProperties: false`. Adapt the copy, don't loosen ours.
-- Needs `OPENAI_API_KEY` in `.env` (not there yet). stdlib `urllib` only, no SDK.
-- Same posts through both: `--sample` takes the top unpublished posts, so run the two models
-  back-to-back without a publish in between. `--sample 3` each, a few cents total.
-- Compare: quote pass rate (`UNSUPPORTED QUOTE` lines), glance and camps register by eye,
-  glossary glosses, cost per card including reasoning tokens.
-
-Switching supersedes the Gemini entry in `DECISIONS.md` (new entry, old one stays). Update
-Flash's `PRICES` entry on 2027-01-01 whatever happens.
-
-**Trigger:** fired — the user picked this as the next task on 2026-09-23.
 
 ## Discussion as a selection signal
 

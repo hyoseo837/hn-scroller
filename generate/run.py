@@ -3,16 +3,12 @@
 import json
 import os
 import sys
-import time
 from datetime import datetime, timezone
 
 from . import DATA, ROOT
 from .cards import assemble_card, model_input, verify_substance
 from .hn import select_from_algolia, sources
-from .models import GEMINI_FLASH, LUNA, gemini_content, luna_content, usage_line
-
-
-CALL_SPACING_S = 5  # free tier is 5-15 RPM; 35 posts ~= 3 min
+from .models import luna_content, usage_line
 
 
 def load_env() -> None:
@@ -41,12 +37,9 @@ def write_json(name: str, value) -> None:
 
 
 def main() -> None:
-    # Unbuffered progress: piped to a file or an Actions log, buffering hides every
-    # line until the run ends, which is exactly when you no longer need them.
-    sys.stdout.reconfigure(line_buffering=True)
     load_env()
-    if not os.environ.get("GEMINI_API_KEY"):
-        sys.exit("GEMINI_API_KEY is not set (put it in .env, or export it)")
+    if not os.environ.get("OPENAI_API_KEY"):
+        sys.exit("OPENAI_API_KEY is not set (put it in .env, or export it)")
 
     # Newspaper convention: the edition is dated by its run date and holds the
     # preceding 24h, so the freshest file is always "today".
@@ -69,7 +62,7 @@ def main() -> None:
                 print(f"  skip {hit['objectID']}: no article text and no comments")
                 continue
 
-            content = gemini_content(item["title"], got["article"], got["comments"])
+            content = luna_content(item["title"], got["article"], got["comments"])
             bad = verify_substance(content, got["source"])
             if bad:
                 print(f"    dropped substance, {len(bad)} quote(s) not in source")
@@ -90,8 +83,6 @@ def main() -> None:
             print(f"  {i + 1}/{len(selected)} {item['title'][:60]}")
         except Exception as err:  # one bad post must not lose the day
             print(f"  fail {hit['objectID']}: {err}", file=sys.stderr)
-        if i < len(selected) - 1:
-            time.sleep(CALL_SPACING_S)
 
     if not cards:
         sys.exit("no cards generated — leaving yesterday's file in place")
@@ -131,17 +122,13 @@ def dry(n: int) -> None:
         print()
 
 
-def sample(n: int, luna: bool = False) -> None:
+def sample(n: int) -> None:
     """Real model calls, assembled cards printed, nothing written and nothing
     marked published. The smallest thing that proves the whole chain: response
-    shape, schema adherence, and whether the cards are any good.
-    `luna` swaps in GPT-6 Luna for a side-by-side; run both back-to-back for the same posts."""
+    shape, schema adherence, and whether the cards are any good."""
     load_env()
-    key, model, generate = (
-        ("OPENAI_API_KEY", LUNA, luna_content) if luna else ("GEMINI_API_KEY", GEMINI_FLASH, gemini_content)
-    )
-    if not os.environ.get(key):
-        sys.exit(f"{key} is not set (put it in .env, or export it)")
+    if not os.environ.get("OPENAI_API_KEY"):
+        sys.exit("OPENAI_API_KEY is not set (put it in .env, or export it)")
 
     selected = select_from_algolia(read_json("published.json", []))
     print(f"selected {len(selected)} posts, sampling {min(n, len(selected))}\n")
@@ -158,7 +145,7 @@ def sample(n: int, luna: bool = False) -> None:
         print(f"basis: article {basis}, {len(got['comments'])} comments")
         print("-" * 78)
 
-        content = generate(item["title"], got["article"], got["comments"])
+        content = luna_content(item["title"], got["article"], got["comments"])
         for quote in verify_substance(content, got["source"]):
             print(f"  UNSUPPORTED QUOTE, substance dropped: {quote!r}")
         card = assemble_card(
@@ -169,7 +156,7 @@ def sample(n: int, luna: bool = False) -> None:
             got["image"],
         )
         print(json.dumps(card, indent=2, ensure_ascii=False))
-        print(f"  usage: {usage_line(model)}")
+        print(f"  usage: {usage_line()}")
         # the card keeps only term names; show the glosses so they can be judged too
         for term in content.get("terms") or []:
             print(f"  glossary[{term['term']}] = {term['gloss']}")

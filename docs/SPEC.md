@@ -116,9 +116,9 @@ generate  card stack + camps line + glossary terms, per post
 publish   one JSON file for the day
 ```
 
-- **Model: Gemini 3.8 Flash**, paid: ~$0.013/card (measured $0.455 for 35), ~$0.31/day at ~24
-  posts. Same model for prompt development and production, so the prompt is tuned on exactly what ships.
-- **Quote verification is mechanical, not manual** (`verify_substance`). Flash is capable of
+- **Model: GPT-6 Luna at high reasoning effort**: ~$0.0024/card (measured on 9 posts), ~$0.06/day
+  at ~24 posts. Same model for prompt development and production, so the prompt is tuned on exactly what ships.
+- **Quote verification is mechanical, not manual** (`verify_substance`). Any model is capable of
   fluent-but-wrong, which is the one failure this app cannot absorb. The glance and camps are still
   only prompt-governed — read those by eye when tuning.
 - Generation is server-side and each post is generated once; users read a static file. **Cost is

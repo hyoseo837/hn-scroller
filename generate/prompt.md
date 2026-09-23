@@ -58,7 +58,8 @@ deliberately leaves them out. Never restate `simple` in longer words; a reader w
 read it. Start with what happened, not with scene-setting. Set it to null when the source genuinely has nothing more to say. A short card is
 correct; padding it teaches readers that reading further is a waste of a swipe.
 
-**data** — only for figures printed verbatim in the source (scores, latency, price). Omit otherwise.
+**data** — only for figures printed verbatim in the source (scores, latency, price). Each row is
+`[label, value]`, label first: `["latency", "2.1s"]`, never `["2.1s", "latency"]`. Omit otherwise.
 
 **camps** — if commenters disagree, name the sides: "Two camps: X say ..., Y say ...". Do not average
 them into a consensus and do not invent one. Hacker News runs on dry sarcasm — do not read an ironic

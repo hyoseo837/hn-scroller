@@ -19,12 +19,12 @@ Two axes, both plain CSS scroll-snap — no framework, no gesture library.
 
 ## How it is built
 
-A Python script picks every Hacker News story above 200 points from the last three days that it has
-not already covered, asks Gemini for the card text, and writes one JSON file per day. GitHub Actions
+A Python package picks every Hacker News story above 200 points from the last three days that it has
+not already covered, asks GPT-6 Luna for the card text, and writes one JSON file per day. GitHub Actions
 runs it every 6 hours and commits the result; the commit is what deploys the site.
 
 No server, no database, no build step, and no dependencies — Python stdlib and vanilla JS. About
-**$0.31 a day**, and that does not change with traffic, because readers fetch a static file.
+**$0.06 a day**, and that does not change with traffic, because readers fetch a static file.
 
 The part that took the most care is keeping it honest. Cards state facts only from the fetched
 source, never from the model's own knowledge, and the detail tier must return verbatim quotes that
@@ -41,7 +41,7 @@ python3 -m generate --sample 1   # one real call, prints the card, writes nothin
 python3 -m http.server 8000      # then open localhost:8000
 ```
 
-A full run needs `GEMINI_API_KEY` in `.env`, costs real money, and is not how you test a change —
+A full run needs `OPENAI_API_KEY` in `.env`, costs real money, and is not how you test a change —
 `--check`, `--dry` and `--sample` are. The system prompt is [`generate/prompt.md`](generate/prompt.md), read at
 runtime, so wording changes need no code edit.
 

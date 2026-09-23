@@ -10,7 +10,7 @@ No framework, no build step, no server, zero dependencies.
 | Part | Choice |
 |---|---|
 | Viewer | Vanilla HTML/CSS/JS. `scroll-snap-type` gives the 2D card grid natively. |
-| Generator | `generate/`, a Python package run as `python3 -m generate`; stdlib only (`urllib`), Gemini REST (no SDK). No `requirements.txt`. |
+| Generator | `generate/`, a Python package run as `python3 -m generate`; stdlib only (`urllib`), OpenAI Responses REST (no SDK). No `requirements.txt`. |
 | Data | Static JSON per day in `data/`, plus `data/index.json` so the calendar knows which days exist. |
 | Host + cron | Cloudflare Pages on `hn.hyoseo.dev` (domain already in Cloudflare); GitHub Actions every 6h commits the day's JSON, and the push triggers the deploy. |
 | Client state | `localStorage`, resume position only. |
@@ -27,13 +27,13 @@ No framework, no build step, no server, zero dependencies.
 ```sh
 python3 -m generate --check    # offline, no network, no API key. Run before every commit.
 python3 -m generate --dry 3    # live HN fetch, prints the model input, calls nothing
-python3 -m generate --sample 1 # one real Gemini call, prints the card, writes nothing
-python3 -m generate            # full run, needs GEMINI_API_KEY
+python3 -m generate --sample 1 # one real Luna call, prints the card, writes nothing
+python3 -m generate            # full run, needs OPENAI_API_KEY
 python3 -m http.server 8000     # then open localhost:8000 — file:// blocks fetch()
 ```
 
-**A full run spends real money (~$0.013/post; measured $0.455 for 35). Never run one to test a change — ask first.**
-Verify with `--check` (free), `--dry` (free), then `--sample 1-3` (a few cents). A full run happens
+**A full run spends real money (~$0.0024/post on Luna high, measured on 9). Never run one to test a change — ask first.**
+Verify with `--check` (free), `--dry` (free), then `--sample 1-3` (under a cent). A full run happens
 only when the user asks for fresh content, never as a way of checking your own work.
 
 While tuning `generate/prompt.md`, `rm data/published.json` to let already-seen posts be

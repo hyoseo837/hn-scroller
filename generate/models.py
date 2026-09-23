@@ -1,4 +1,4 @@
-"""The model calls: Gemini in production, GPT-6 Luna for `--sample --luna` evaluation."""
+"""The model call: GPT-6 Luna over the OpenAI Responses API."""
 
 import json
 import os
@@ -9,17 +9,14 @@ from . import PROMPT
 from .cards import SCHEMA, model_input
 
 
-GEMINI_FLASH = "gemini-3.8-flash"
-GEMINI_API = "https://generativelanguage.googleapis.com/v1beta/interactions"
-# Evaluation only, reached by `--sample N --luna`. Production stays on Gemini.
 LUNA = "gpt-6-luna"
 LUNA_API = "https://api.openai.com/v1/responses"
-LUNA_EFFORT = "medium"  # the model's default; Flash thinks by default too, so like for like
-# USD per 1M tokens, (input, output). Thinking bills as output on both.
-# Flash's is the introductory price: it doubles to (1.50, 7.50) on 2027-01-01.
-PRICES = {GEMINI_FLASH: (0.75, 3.75), LUNA: (0.10, 0.50)}
-# Thinking is counted separately from total_output_tokens but billed as output,
-# and it runs ~3x the visible answer — so it dominates both cost and wall time.
+# Measured on 9 posts: high kept the prompt's format where medium drifted, for about
+# $0.001 a card more. xhigh took 60-100+ s a post and once ran past the 120 s timeout.
+LUNA_EFFORT = "high"
+LUNA_PRICE_IN = 0.10   # USD per 1M input tokens
+LUNA_PRICE_OUT = 0.50  # USD per 1M output tokens; reasoning bills as output
+# Reasoning is ~90% of output at high effort, so it dominates both cost and wall time.
 USAGE = {"calls": 0, "input": 0, "output": 0, "thought": 0}
 
 
@@ -35,29 +32,6 @@ def strict(schema):
         out["required"] = list(out["properties"])
         out["additionalProperties"] = False
     return out
-
-
-def gemini_text(body: dict) -> str:
-    """Pull the answer out of an /interactions response.
-
-    `steps` holds the run in order. Reasoning steps are `type: "thought"` and carry
-    no `content` at all, so skipping them is not optional — the answer is in the
-    content blocks of a later step. Last text block wins, matching the SDK's
-    `output_text`, which is documented as the last text blocks in the response.
-    """
-    texts = [
-        block["text"]
-        for step in body.get("steps") or []
-        if isinstance(step, dict)
-        for block in step.get("content") or []
-        if isinstance(block, dict) and isinstance(block.get("text"), str)
-    ]
-    if texts:
-        return texts[-1]
-    raise RuntimeError(
-        f"no text block in Gemini response (status={body.get('status')!r}, "
-        f"keys={sorted(body)}):\n{json.dumps(body)[:1500]}"
-    )
 
 
 def luna_text(body: dict) -> str:
@@ -84,43 +58,8 @@ def luna_text(body: dict) -> str:
     )
 
 
-def gemini_content(title: str, article: str, comments: list[str]) -> dict:
-    payload = json.dumps(
-        {
-            "model": GEMINI_FLASH,
-            "system_instruction": PROMPT.read_text(encoding="utf-8"),
-            "input": model_input(title, article, comments),
-            "response_format": {
-                "type": "text",
-                "mime_type": "application/json",
-                "schema": SCHEMA,
-            },
-        }
-    ).encode()
-    req = urllib.request.Request(
-        GEMINI_API,
-        data=payload,
-        headers={
-            "x-goog-api-key": os.environ["GEMINI_API_KEY"],
-            "content-type": "application/json",
-        },
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=120) as res:
-            body = json.loads(res.read())
-    except urllib.error.HTTPError as err:
-        raise RuntimeError(f"gemini {err.code}: {err.read()[:300].decode('utf-8', 'replace')}")
-
-    used = body.get("usage") or {}
-    USAGE["calls"] += 1
-    USAGE["input"] += used.get("total_input_tokens") or 0
-    USAGE["output"] += used.get("total_output_tokens") or 0
-    USAGE["thought"] += used.get("total_thought_tokens") or 0
-    return json.loads(gemini_text(body))
-
-
 def luna_content(title: str, article: str, comments: list[str]) -> dict:
-    """gemini_content's twin for the OpenAI Responses API. Same prompt, same input."""
+    """One post's card content. Strict JSON schema, so the shape is guaranteed."""
     payload = json.dumps(
         {
             "model": LUNA,
@@ -150,17 +89,16 @@ def luna_content(title: str, article: str, comments: list[str]) -> dict:
     reasoning = (used.get("output_tokens_details") or {}).get("reasoning_tokens") or 0
     USAGE["calls"] += 1
     USAGE["input"] += used.get("input_tokens") or 0
-    # Unlike Gemini, output_tokens already includes reasoning. Split it out, or
-    # usage_line would bill the thinking twice.
+    # output_tokens already includes reasoning. Split it out, or usage_line would
+    # bill the thinking twice.
     USAGE["output"] += (used.get("output_tokens") or 0) - reasoning
     USAGE["thought"] += reasoning
     return json.loads(luna_text(body))
 
 
-def usage_line(model: str = GEMINI_FLASH) -> str:
-    price_in, price_out = PRICES[model]
+def usage_line() -> str:
     billed_out = USAGE["output"] + USAGE["thought"]
-    cost = USAGE["input"] / 1e6 * price_in + billed_out / 1e6 * price_out
+    cost = USAGE["input"] / 1e6 * LUNA_PRICE_IN + billed_out / 1e6 * LUNA_PRICE_OUT
     share = USAGE["thought"] / billed_out * 100 if billed_out else 0
     return (
         f"{USAGE['calls']} call{'s' if USAGE['calls'] != 1 else ''} | in {USAGE['input']:,} | out {billed_out:,} "
