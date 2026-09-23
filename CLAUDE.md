@@ -93,4 +93,6 @@ Anti-rules — don't create: `README` sections duplicating `SPEC.md`, per-featur
 
 ## Conventions
 
-TBD after first code lands.
+- Pull before touching `data/`: the bot pushes it at 00/06/12/18 UTC (+10-30 min) with a plain `git push`, and a push mid-run makes its push fail.
+- Viewer checks: headless Chromium at `~/.cache/ms-playwright/chromium_headless_shell-1148/chrome-linux/headless_shell` (`--screenshot`, `--dump-dom`) over `python3 -m http.server`. It renders no frames, so smooth scroll never runs: dispatch `scroll` events by hand.
+- Pages answers any missing path with `index.html` and a 200, so a missing script shows up as a syntax error, not a 404.

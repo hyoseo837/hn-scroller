@@ -38,38 +38,51 @@ to fetch. So ~53% → ~70% of cards with a picture, at the cost of sizing up to 
 
 **Not:** generating images — costs per card and cannot be verified against a source.
 
-## Korean alongside English
+## Translations: Korean first, then others — next up
 
-**Now:** English only, for a reader who is a Korean beginner. The glance line is the one sentence
-they must not have to decode.
+**Now:** English only. `PRODUCT.md`: a Korean version is planned for the same reader, whose first
+language is Korean, in the same register, with Korean text first-class (line breaking, fonts).
 
-**Do:** a second pass over the finished day file adding `simple_ko` / `substance_ko`,
-**batched** — a whole day in one call. Measured with gemini-3.8-flash on real cards:
+**Do:** add translations, Korean first, possibly more languages later. The design is still to be
+discussed; this entry holds what is known.
 
-| | per card |
+**Facts the design has to fit:**
+- Cards are written by GPT-6 Luna at high effort (`generate/models.py`). Each `data/<date>.json`
+  carries its cards plus a `glossary` slice of their terms; a visit downloads the index plus one day.
+- Four runs a day append new cards to the same day file.
+- Only `substance` is checked mechanically (verbatim quotes). The glance, camps and glosses are
+  prompt-governed.
+- Viewer UI strings (buttons, hints, sheet titles, "You're caught up") live in `js/*.js` and
+  `index.html`. Dates already follow the browser locale. `<html>` has no `lang` attribute today.
+- `CLAUDE.md`: client state is `localStorage`, resume position only.
+
+**Earlier findings, from this entry's previous version:**
+
+| per card | cost |
 |---|---|
-| batched translation | **+$0.0020** (+15%, ~₩66/day at 24 cards) |
-| one call per card | +$0.0074 (+55%) — re-sends the instructions 24 times |
-| Korean written directly in the main call | ~free, but loses English |
+| batched translation, one call per day, Flash (measured) | +$0.0020 |
+| one call per card, Flash (measured) | +$0.0074, re-sends the instructions every time |
+| batched, Luna (estimate at list price, unmeasured) | ~+$0.0003 |
 
-Translate rather than generate both in the main call, despite that being cheaper: the English
-`substance` is what was verified against verbatim quotes, so translating carries that verification
-across. Generated independently the two drift, and the Korean is unverified. A separate pass also
-fails without costing an edition. Quotes and the comment sheet stay English — a Korean card over an
-English thread is the design question here, not the cost.
+- Translating the finished English, rather than writing Korean in the main call, was preferred:
+  the English detail is what was checked against quotes, and a separate pass fails without costing
+  an edition. Writing Korean in the main call was ~free but loses English.
+- Rejected: Papago and other MT (the register is the product: "구린", "풀어버렸대", not news-wire
+  Korean); Gemini Flash-Lite (wrote 오픈아이 for OpenAI, dropped Apache and Snap). Highlight markers
+  survived translation fine. Each card's `entities` was proposed as a do-not-translate list.
+- No Korean output from Luna has been seen yet.
 
-**Trigger:** wanting to show it to someone who does not read English comfortably.
+**Open questions:**
+- Where translations live: fields in the day file, a file per language per day, or something else.
+- Which parts get translated: glance, detail, camps, data labels, glosses, glossary terms, UI.
+  Comments and the HN title are verbatim English today.
+- How a reader gets a language: browser language, a toggle, or both.
+- Which Luna effort level for translation, and how to judge quality.
+- Whether and how to check translations mechanically.
+- Whether past days get translated.
+- How a second language after Korean gets added.
 
-**Not:** Papago — the register *is* the product ("구린", "풀어버렸대", not news-wire Korean) and MT
-has no setting for it. **Not** bare Lite: measured, it wrote 오픈아이 for OpenAI and dropped Apache
-and Snap. Markers survive on Lite fine, so if ₩56/day ever matters, feed it the card's existing
-`entities` array as a do-not-translate list.
-
-**Which model, still open.** Nothing checks the Korean mechanically, so model quality is the only
-guard — the opposite of the main pass. Estimated from the Flash measurement at list prices:
-GPT-6 Luna ~$0.20/mo, Flash ~$1.50 (~$3 from 2027-01-01), GPT-6 Sol ~$4. A ~$4/mo spread, so
-choose on register and proper nouns: translate the same few cards with all three, `entities` as
-the do-not-translate list, judge by eye. No Korean data on Luna or Sol yet (both 2026-09-22).
+**Trigger:** fired: the user picked this as the next task on 2026-09-23.
 
 ## Discussion as a selection signal
 
