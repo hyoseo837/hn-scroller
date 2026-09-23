@@ -220,6 +220,179 @@
         }
       ],
       "image": null
+    },
+    {
+      "id": 49806335,
+      "url": "https://blog.trailofbits.com/2026/09/21/saml-a-fractal-of-bad-design/",
+      "hn": "https://news.ycombinator.com/item?id=49806335",
+      "title": "SAML: A fractal of bad design",
+      "depth": [
+        {
+          "text": "a security firm argues that SAML is **fundamentally broken** and teams should finally **switch to OIDC**",
+          "tier": "simple"
+        },
+        {
+          "text": "Trail of Bits argues that SAML is collapsing under XML complexity, where issues like **canonicalization** and **signature wrapping** make secure verification nearly impossible. They urge teams to follow Fly.io and Tailscale in adopting **OpenID Connect**, though commenters point out enterprises still rely on SAML-specific quirks.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: one agrees SAML is an overcomplicated, buggy nightmare that should be replaced with OIDC, while another argues enterprise SSO still genuinely needs SAML features like IdP-initiated login and working without direct server-to-server connections.",
+      "comment_count": 143,
+      "terms": [
+        "SAML",
+        "OIDC",
+        "canonicalization"
+      ],
+      "entities": [
+        "Trail of Bits",
+        "SAML",
+        "OpenID Connect",
+        "Fly.io",
+        "Tailscale"
+      ],
+      "comments": [
+        {
+          "by": "bawolff",
+          "text": "My favourite SAML horror story, is that it used to be, that by default the main c implementation of xmlsig would not just check the sig with the public key specified but would also: - check it against an hmac using a password specified in the attacker controlled document. - check the signature using web pki (so the attacker could sign the saml document with their TLS key for their own personal…"
+        },
+        {
+          "by": "jmbwell",
+          "text": "It’s such a product of “Ooh! Markup languages! What can we use a markup language to solve!” When authentication is just not a document or data stream that needs marked-up. The article rightly connects this to XML, which was indeed the hammer to everything’s nail at the time I think we aren’t done with this problem yet, though. OIDC makes a lot of assumptions in service to Google and others. And…"
+        },
+        {
+          "by": "cameronh90",
+          "text": "SAML sucks, but it still has a bunch of features for its specific narrow enterprise SSO use-case that OIDC lacks - most notably IdP-initiated flow. OIDC is a constellation of specs with inconsistent support across products, whereas the commonly-implemented subset of SAML is more-or-less stable in its mediocrity. OIDC will eventually displace SAML, but if you're selling to enterprises you should…"
+        },
+        {
+          "by": "tehnoslow",
+          "text": "A fair criticism of the article is that it lists SAML's vulnerabilities but doesn't do the same comparison for OIDC. OIDC has its own problems too: JWT algorithm confusion, none algorithm attacks, missing audience checks, and bugs in JOSE libraries"
+        },
+        {
+          "by": "HelloNurse",
+          "text": "\"... it’s not the committee’s fault. XML is what they had at the time, and it’s what people used. JSON was “discovered” in 2001 ...\" The committee had, at the very least, ASN.1. Not text, but any digital signature scheme has to be machine readable, not human readable."
+        }
+      ],
+      "image": "https://blog.trailofbits.com/2026/09/21/saml-a-fractal-of-bad-design/saml-banner.png"
+    },
+    {
+      "id": 49796379,
+      "url": "https://www.kqed.org/science/2002033/heres-what-california-is-learning-from-solar-panels-built-over-irrigation-canals",
+      "hn": "https://news.ycombinator.com/item?id=49796379",
+      "title": "What California is learning from solar panels built over irrigation canals",
+      "depth": [
+        {
+          "text": "a California pilot is mounting **solar panels** over canals to generate power and stop **water evaporation**",
+          "tier": "simple"
+        },
+        {
+          "text": "Turlock's **Project Nexus** used a $20 million state grant to test canopies generating **1.7 megawatts** over irrigation channels. Researchers confirmed the shade blocked **algae growth** and reduced evaporation, though urban districts cautioned that cleaning access and narrow banks limit where it works.",
+          "tier": "substance",
+          "data": [
+            [
+              "Pilot generation capacity",
+              "1.7 megawatts"
+            ],
+            [
+              "State grant funding",
+              "$20 million"
+            ],
+            [
+              "Permitting time on undeveloped land",
+              "621 days"
+            ],
+            [
+              "Permitting time on developed land",
+              "110 days"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: critics argue that spending over $10 per watt on heavy steel canopies is wasteful when field solar and plain pipes are far cheaper, while supporters argue that permitting on already-disturbed canal corridors is much faster and provides valuable water-saving shade.",
+      "comment_count": 403,
+      "terms": [
+        "proof of concept",
+        "photovoltaics"
+      ],
+      "entities": [
+        "Turlock Irrigation District",
+        "Solar AquaGrid",
+        "UC Merced",
+        "California Department of Water Resources"
+      ],
+      "comments": [
+        {
+          "by": "nbf_1995",
+          "text": "It seems like it would be more effective to simply put all the solar panels in a field, and construct a cheap shade over the entire canal no? The supports in the picture are massive and don't look cheap. Also I would imagine the solar array uses more copper than a similar capacity array just built in a field. You can't daisy chain multiple miles of solar panels together, so you need an extra…"
+        },
+        {
+          "by": "sagarm",
+          "text": "$20M for 1.7MW of capacity. Over $10 per watt. Recent utility scale installations in California are more like $1&#x2F;W. There'd be some cost reduction from scaling up, but 10x is a huge gap to close. This is a waste of money."
+        },
+        {
+          "by": "ShinyLeftPad",
+          "text": "> Harris said he spent a lot of his life in France, where he noticed how trees lined the canals and protected their precious water from the wind and sun So why not plant the trees?"
+        },
+        {
+          "by": "prometheus1992",
+          "text": ">>The state currently generates 62% of its electricity from renewable and zero-carbon sources, with the largest percentage of that coming from solar 62% is pretty respectable for the size of California (same electricity consumption as Spain). I did not know this."
+        },
+        {
+          "by": "zelphirkalt",
+          "text": "The idea of covering irrigation canals has been around probably for thousands of years. Only recently I have seen this being done in Xinjiang in towns right next to the desert. The canals which have river water often flow under streets and through little caves and such, enabling them to grow grapes and such. The grapes are then also providing shade on paths and roads."
+        }
+      ],
+      "image": "https://cdn.kqed.org/wp-content/uploads/sites/35/2026/09/260904-ClimateSolutionsSolarCanal-21-BL-KQED.jpg"
+    },
+    {
+      "id": 49812769,
+      "url": "https://www.nobodywho.ai/posts/jev-in-25-lines/",
+      "hn": "https://news.ycombinator.com/item?id=49812769",
+      "title": "Jev in 25 Lines of Python",
+      "depth": [
+        {
+          "text": "someone poked fun at the hype around **Jev** with **25 lines** of Python",
+          "tier": "simple"
+        },
+        {
+          "text": "The script feeds choices into a local model to output probabilities without calling an external API. The author admitted the piece was a **parody**, having skipped the **reinforcement learning** and synthetic data needed to calibrate real decisions.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some welcomed the demo for demystifying logit-based classification, while others argued it ignores critical engineering like calibration, latency, and output guarantees that make real products usable.",
+      "comment_count": 68,
+      "terms": [
+        "logits",
+        "GGUF"
+      ],
+      "entities": [
+        "Jev",
+        "NobodyWho",
+        "Duarte O.Carmo",
+        "Python"
+      ],
+      "comments": [
+        {
+          "by": "sigmoid10",
+          "text": "Going directly for the logprobs is always icky when you use a chat model as base, because they are trained to write prose as output. So your \"choice\" tokens and thus their probabilities might get diluted in whatever else it wanted to say. If you have to do it in the same way as this post, at least add clear system instructions and a carefully worded beginning to the assistant output section of…"
+        },
+        {
+          "by": "antirez",
+          "text": "Because of masked attention in LLMs, if you put the options before the body (the email to analyze), the transformer already knows what it needs to look for, and can use more tokens to create state to address that specific task (BERT has no mask in the attention, so tokens attend also to next tokens). You could also do a few examples in the system prompt to improve calibration. Another trick that…"
+        },
+        {
+          "by": "K0IN",
+          "text": "a hile ago (when big providers still provided logprobs) i created a VS Code highlighter that visualizes unsure tokens. Since most chat models want to answer with a human-readable message i think their logprobs are not as meaningful. It would be interesting to see if one choice is like \"correct\" and if the model wants to choose it more often, cause it might not answer the question but to prose to…"
+        },
+        {
+          "by": "no-name-here",
+          "text": "Beyond the missing latency and compute comparisons that Heaney commenter mentioned, also nothing about its error rate compared to Jev (nor if it even always outputs in a format the app can parse, not sure how solved that is). But then at the end it says it’s parody. Maybe HN title should say it’s a joke."
+        },
+        {
+          "by": "dhsysusbsjsi",
+          "text": "Whilst I do like reading these things for technical know how, I can sympathise with the creator of jev who now presumably has to apply an order of magnitude effort to explain why the 100 smaller things done better than this add up to a much better product."
+        }
+      ],
+      "image": "https://www.nobodywho.ai/assets/images/blog/2026/jev-in-25-lines/jev.png"
     }
   ]
 }
