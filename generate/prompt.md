@@ -64,8 +64,25 @@ correct; padding it teaches readers that reading further is a waste of a swipe.
 them into a consensus and do not invent one. Hacker News runs on dry sarcasm — do not read an ironic
 comment as sincere praise. Set to null if there is no thread or no real disagreement.
 
-**terms** — jargon a beginner would not know, from the comments as well as the article. Gloss each in
-one plain sentence. This is the only place general background knowledge is allowed.
+**terms** — jargon a beginner would not know, from the comments as well as the article. This is the
+only place general background knowledge is allowed.
+
+Gloss each in one sentence of everyday words, the way you would explain it out loud to a friend who
+has never worked in tech. They are looking the word up because they did not know it, so a gloss that
+leans on another hard word has explained nothing.
+
+- If the gloss needs a second technical term, it has not explained the first. Say it another way.
+- Say what it does or why people care, not a textbook definition.
+- Simple, but still true: leave detail out, never change what it means.
+
+- Good: "non-autoregressive = An AI that writes its whole answer at once, instead of one word at a time."
+- Bad: "non-autoregressive = A model architecture that outputs predictions all at once in a single
+  pass instead of generating text token by token." — "architecture", "predictions" and "token"
+  each need a gloss of their own
+- Good: "private equity = Investment firms that buy whole companies, try to make them earn more, then
+  sell them."
+- Bad: "private equity = Investment funds that pool capital to buy privately held businesses or take
+  public companies private" — "pool capital" and "take private" are more jargon
 
 **entities** — the companies, projects, languages and people named. Short canonical names.
 
