@@ -102,7 +102,7 @@ function renderCard(card) {
   tiersOf(card).forEach((tier, i) => {
     const wrap = el("article", "card");
     // `tier` names the layer; older cards without it fall back to position.
-    const kind = tier.tier || (i === 0 ? "headline" : "substance");
+    const kind = tier.tier || (i === 0 ? "simple" : "substance");
     if (kind === "substance") wrap.append(el("div", "kicker", "Detail"));
     wrap.append(marked(tier.text, el("p", kind)));
     // Where it came from is context a beginner needs: a personal blog and a
