@@ -75,6 +75,10 @@ leans on another hard word has explained nothing.
 - If the gloss needs a second technical term, it has not explained the first. Say it another way.
 - Say what it does or why people care, not a textbook definition.
 - Simple, but still true: leave detail out, never change what it means.
+- An acronym's gloss starts with what it stands for, then the plain explanation. For RLHF the gloss
+  is "Reinforcement Learning from Human Feedback: a way to train an AI by having people rate its
+  answers." — no "RLHF =" in front; the reader already sees the term. The expansion is a name they
+  will meet elsewhere, so its words may be technical; the explanation after it may not.
 
 - Good: "non-autoregressive = An AI that writes its whole answer at once, instead of one word at a time."
 - Bad: "non-autoregressive = A model architecture that outputs predictions all at once in a single
