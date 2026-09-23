@@ -471,7 +471,15 @@ btnGlo.addEventListener("click", () => {
   openSheet("In this post", (box) => {
     const list = el("dl");
     card.terms.forEach((term) => {
-      list.append(el("dt", null, term));
+      // One sentence is the glossary's limit; the word itself leads to more.
+      const dt = el("dt");
+      const more = el("a", null, term);
+      more.href = "https://www.google.com/search?q=" + encodeURIComponent(term);
+      more.target = "_blank";
+      more.rel = "noopener";
+      more.setAttribute("aria-label", `Search Google for ${term}`);
+      dt.append(more);
+      list.append(dt);
       list.append(el("dd", null, glossary[term] || "No definition yet."));
     });
     box.append(list);

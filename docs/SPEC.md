@@ -87,7 +87,8 @@ empty state: high score does not imply a thread (measured: one post at 587 point
 
 **Glossary** — per-card terms, not a global dictionary. Accumulates across days and is reused, so it
 gets cheaper and better over time. Indexes jargon from **comments as well as the article** — commenters
-assume you are a peer, which is where most beginner confusion lives.
+assume you are a peer, which is where most beginner confusion lives. Each term links to a Google
+search for it: the gloss is one sentence, and the link is the way to more.
 
 ## Session model
 
