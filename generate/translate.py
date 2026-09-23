@@ -8,10 +8,12 @@ from .models import luna
 
 
 PROMPT_KO = Path(__file__).resolve().parent / "prompt.ko.md"
-# Korean companies read in Hangul; every other name stays as the source writes it.
-# One missing here fails the name check, so its card ships English and the check
-# names it: add it then. Measured 2026-09-23: 1 Korean name among 227 on 86 cards.
-KOREAN_NAMES = {"Samsung": "삼성"}
+# Names a Korean reader reads in Hangul: Korean companies, and places that land in
+# `entities` (the prompt makes places ordinary Korean words). Either spelling passes
+# the check. One missing here fails it, so its card ships English and the log names
+# it: add it then. Measured: 1 Korean company among 227 names on 86 cards; "US"
+# failed a 09-22 card as 미국.
+KOREAN_NAMES = {"Samsung": "삼성", "US": "미국"}
 # Measured on the same 10 cards: the user preferred medium's glance on 9 of 10, at
 # $0.0013 a card against high's $0.0025. Low wrote list-like detail for $0.0006.
 KO_EFFORT = "medium"
@@ -75,7 +77,7 @@ def lost(en: str | None, ko: str | None, names: list[str]) -> list[str]:
     en, ko = en or "", ko or ""
     have = {n.replace(",", "") for n in NUMBER.findall(ko)}
     gone = [n for n in NUMBER.findall(en) if n.replace(",", "") not in have]
-    return gone + [n for n in names if n in en and KOREAN_NAMES.get(n, n) not in ko]
+    return gone + [n for n in names if n in en and n not in ko and KOREAN_NAMES.get(n, n) not in ko]
 
 
 def problems(en: dict, ko: dict, names: list[str]) -> list[str]:

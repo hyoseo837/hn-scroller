@@ -237,6 +237,10 @@ def check() -> None:
     assert lost("OpenAI shipped it", "오픈아이가 출시함", ["OpenAI"]) == ["OpenAI"], "transliteration"
     assert lost("OpenAI shipped it", "OpenAI가 출시함", ["OpenAI"]) == []
     assert lost("Samsung doubles it", "삼성, 두 배로 늘림", ["Samsung"]) == [], "Korean companies in Hangul"
+    assert lost("the US bans it", "미국, 금지", ["US"]) == [], "a place in names may read as Korean"
+    assert lost("the US bans it", "US, 금지", ["US"]) == [], "or stay as written"
+    assert lost("Samsung doubles it", "삼성전자 아님, 샘숭", ["OpenAI"]) == [], "only listed names count"
+    assert lost("the US bans it", "금지", ["US"]) == ["US"], "a name that vanished still fails"
     assert lost("no names here", "이름 없음", ["Google"]) == [], "only names the English has"
     en = english(full, {"wasm": "runs code fast in a browser, 2x"})
     assert en["data"] == [["latency", "2.1s"]] and en["glossary"][0]["term"] == "wasm"
