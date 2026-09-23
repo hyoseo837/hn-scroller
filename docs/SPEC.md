@@ -89,7 +89,8 @@ assume you are a peer, which is where most beginner confusion lives.
 
 ## Session model
 
-- One batch per day, cut at **00:00 UTC** (captures the full US day; lands ~09:00 KST).
+- An edition is dated by its **UTC run date**. The job runs every 6h; each run appends newly
+  qualifying posts to that day's file, never replacing it.
 - Resume where you stopped **within today**. Finished already → the caught-up screen.
 - The caught-up screen is a **boundary, not a dead end**: older editions load below it, one at a
   time, each behind its own date divider. Scrolling past the boundary is a deliberate choice, so
@@ -103,7 +104,7 @@ assume you are a peer, which is where most beginner confusion lives.
 
 ## Pipeline
 
-Daily job. Select is free; only generate costs money.
+Runs every 6h. Select is free; only generate costs money.
 
 ```
 select    Algolia search_by_date, tags=story, points>=200, 3-day window
@@ -113,13 +114,13 @@ generate  card stack + camps line + glossary terms, per post
 publish   one JSON file for the day
 ```
 
-- **Model: Gemini 3.8 Flash**, free tier (1,000 req/day against our ~35). Same model for prompt
-  development and production, so the prompt is tuned on exactly what ships.
+- **Model: Gemini 3.8 Flash**, paid: ~$0.013/card (measured $0.455 for 35), ~$0.31/day at ~24
+  posts. Same model for prompt development and production, so the prompt is tuned on exactly what ships.
 - **Quote verification is mechanical, not manual** (`verify_substance`). Flash is capable of
-  fluent-but-wrong, which is the one failure this app cannot absorb. Headline and camps are still
+  fluent-but-wrong, which is the one failure this app cannot absorb. The glance and camps are still
   only prompt-governed — read those by eye when tuning.
-- Generation is once-daily and server-side; users read a static file. **Cost is constant at any number
-  of users** — nothing about growth moves this off the free tier.
+- Generation is server-side and each post is generated once; users read a static file. **Cost is
+  constant at any number of users** — it scales with posts, not readers.
 - `https://hn.algolia.com/api/v1/search_by_date` — day-wide selection. URL-encode the `>` or it 400s.
 - `https://hacker-news.firebaseio.com/v0/` — item details and comments.
 - **If article extraction yields too little, build the card from title + comments only.** Measured:
@@ -151,15 +152,18 @@ publish   one JSON file for the day
   "cards": [{
     "id": 49792730,
     "url": "https://...",
+    "hn": "https://news.ycombinator.com/item?id=49792730",
+    "title": "original HN title",
     "depth": [
-      {"text": "..."},
-      {"text": "...", "data": [["latency", "2.1s"]]},
-      {"link": true}
+      {"text": "...", "tier": "simple"},
+      {"text": "...", "tier": "substance", "data": [["latency", "2.1s"]]}
     ],
     "camps": "Two camps: ...",
     "comment_count": 470,
     "terms": ["x.ai", "frontier model"],
-    "entities": ["x.ai"]
+    "entities": ["x.ai"],
+    "comments": [{"by": "user", "text": "first 400 chars…"}],
+    "image": "https://... or null"
   }]
 }
 ```

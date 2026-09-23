@@ -21,7 +21,7 @@ Two axes, both plain CSS scroll-snap — no framework, no gesture library.
 
 A Python script picks every Hacker News story above 200 points from the last three days that it has
 not already covered, asks Gemini for the card text, and writes one JSON file per day. GitHub Actions
-runs it at 00:00 UTC and commits the result; the commit is what deploys the site.
+runs it every 6 hours and commits the result; the commit is what deploys the site.
 
 No server, no database, no build step, and no dependencies — Python stdlib and vanilla JS. About
 **$0.31 a day**, and that does not change with traffic, because readers fetch a static file.

@@ -58,3 +58,18 @@ Supersedes the Node choice in the stack entry above; everything else there still
 
 **Why:** adding the bilingual entry took it to 148. Compressing every entry that had slack got it to 130, and what remained was measured findings — cost tables, the Lite transliteration failure, the 28% extraction rate — not prose. The cap existed to stop a wish-list dump; the trigger rule does that job, and `DIRECTION.md` is never auto-loaded, so its context cost is zero until someone opens it. Deleting a live, trigger-gated entry to satisfy a number picked out of the air is the wrong trade.
 **Rejected:** cutting an entry instead (none were dead — every one still had a real trigger); leaving it over cap silently, which is how caps stop meaning anything. Compression came first and got 18 lines; the raise covers what compression could not.
+
+## 2026-09-23 — Gemini 3.8 Flash is paid, not free tier
+
+**Why:** the code bills it (`PRICE_IN` $0.75 / `PRICE_OUT` $3.75 per 1M) and a measured 35-card run cost $0.455, ~$0.31/day at ~24 posts. Supersedes the free-tier and "$0 at any user count" claims of the 2026-09-21 model entry; the model choice itself stands. Cost still does not move with readers.
+**Rejected:** —; this corrects a premise, not a choice.
+
+## 2026-09-23 — Host is Cloudflare Pages, not GitHub Pages
+
+**Why:** `hn.hyoseo.dev` is already in Cloudflare. Supersedes the host in the 2026-09-21 stack entry; Actions still runs the cron, and its push triggers the deploy.
+**Rejected:** GitHub Pages (a second place to manage the domain).
+
+## 2026-09-23 — Generate every 6h, not once at 00:00 UTC
+
+**Why:** dedup generates each post once, so cost is unchanged and a run with nothing new is one free query; a failed run costs 6h of staleness, not 24. The 200-point bar gates age: of 158 qualifying stories in a week, one was under 6h old.
+**Rejected:** once daily (a failure means a stale day).

@@ -32,7 +32,7 @@ python3 generate.py            # full run, needs GEMINI_API_KEY
 python3 -m http.server 8000     # then open localhost:8000 — file:// blocks fetch()
 ```
 
-**A full run spends real money (~$0.60, ~12 min). Never run one to test a change — ask first.**
+**A full run spends real money (~$0.013/post; measured $0.455 for 35). Never run one to test a change — ask first.**
 Verify with `--check` (free), `--dry` (free), then `--sample 1-3` (a few cents). A full run happens
 only when the user asks for fresh content, never as a way of checking your own work.
 
