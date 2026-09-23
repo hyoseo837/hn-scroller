@@ -92,7 +92,7 @@ components:
 
 # Design
 
-Derived from the shipped viewer (`index.html`, `app.js`) on 2026-09-23. Current truth: when the CSS
+Derived from the shipped viewer (`index.html`, `app.css`, `app.js`) on 2026-09-23. Current truth: when the CSS
 changes, this file changes in the same commit. No sidecar file — the doc rule caps files at six.
 
 ## Overview

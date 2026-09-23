@@ -15,7 +15,7 @@ No framework, no build step, no server, zero dependencies.
 | Host + cron | Cloudflare Pages on `hn.hyoseo.dev` (domain already in Cloudflare); GitHub Actions every 6h commits the day's JSON, and the push triggers the deploy. |
 | Client state | `localStorage`, resume position only. |
 
-- Inline CSS/JS in `index.html`; split out `app.js` past ~200 lines.
+- `index.html` is markup only; styles in `app.css`, behaviour in `app.js`.
 - PWA manifest for the home-screen icon. No service worker until offline reading is actually wanted.
 - Scheduled Actions run 10-30 min late (harmless here) and get **disabled on repos with no recent
   activity** (~60 days) — verify the bot's own commits count, or the app silently dies in two months.
