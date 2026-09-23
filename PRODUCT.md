@@ -10,8 +10,8 @@ web
 
 People who want to keep up with Hacker News lightly — no pressure, in easy words. Not necessarily
 confident developers: most HN posts are hard for them to parse and they will not research them one
-by one. A Korean version is planned for the same reader who is less confident in English, since
-their first language is Korean.
+by one. A Korean version serves the same reader when they are less confident in English, since
+their first language is Korean: the browser's language picks it, a select beside the date switches.
 
 Situation: phone, one hand, a spare two or three minutes (commute, in bed). Opened without thinking.
 
@@ -72,4 +72,5 @@ No users, testimonials, or metrics exist — do not invent any.
 
 - One-handed phone use: primary actions within thumb reach.
 - WCAG AA text contrast in both light and dark themes.
-- Korean text must be first-class (line breaking, font coverage) once bilingual lands.
+- Korean text is first-class: lines break at spaces, labels drop Latin letter-spacing, and a card
+  not yet translated stays English, marked `lang="en"`.

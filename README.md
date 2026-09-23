@@ -17,15 +17,20 @@ Two axes, both plain CSS scroll-snap — no framework, no gesture library.
 - **Swipe right** for the detail — the names, figures and argument the glance line leaves out.
 - Buttons for the discussion, a glossary of the jargon in that post, and the original article.
   Glossary entries are one plain sentence; tap the term to search it.
+- **In Korean** too, comments included, picked by the browser's language or the select beside the
+  date. Not a literal translation: short headline-style lines, with the tech words Korean
+  developers write in English left in English.
 
 ## How it is built
 
 A Python package picks every Hacker News story at 150 points or more from the last three days that
 it has not already covered, asks GPT-6 Luna for the card text, and writes one JSON file per day.
+A second pass rewrites each finished card in Korean into a file laid over it; a card whose Korean
+drops a number or a name stays English.
 GitHub Actions runs it every 6 hours and commits the result; the commit is what deploys the site.
 
 No server, no database, no build step, and no dependencies — Python stdlib and vanilla JS. About
-**$0.08 a day**, and that does not change with traffic, because readers fetch a static file.
+**$0.12 a day**, and that does not change with traffic, because readers fetch a static file.
 
 The part that took the most care is keeping it honest. Cards state facts only from the fetched
 source, never from the model's own knowledge, and the detail tier must return verbatim quotes that
@@ -39,12 +44,14 @@ the target reader is precisely the person who could not catch it.
 python3 -m generate --check      # offline self-check, no API key
 python3 -m generate --dry 3      # live fetch, prints the model input, calls nothing
 python3 -m generate --sample 1   # one real call, prints the card, writes nothing
+python3 -m generate --sample-ko 1  # the newest card in Korean beside its English, writes nothing
 python3 -m http.server 8000      # then open localhost:8000
 ```
 
 A full run needs `OPENAI_API_KEY` in `.env`, costs real money, and is not how you test a change —
-`--check`, `--dry` and `--sample` are. The system prompt is
-[`generate/prompt.md`](generate/prompt.md), read at runtime, so wording changes need no code edit.
+`--check`, `--dry` and `--sample` are. The system prompts are
+[`generate/prompt.md`](generate/prompt.md) and [`generate/prompt.ko.md`](generate/prompt.ko.md),
+read at runtime, so wording changes need no code edit.
 
 ## Docs
 
