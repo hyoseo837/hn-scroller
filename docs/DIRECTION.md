@@ -6,50 +6,6 @@ to code are `ponytail:` comments instead.
 
 ---
 
-## A real design pass
-
-**Now:** layout, icons, images and palette are done and recorded in `DESIGN.md`. The user keeps the
-fonts, sizes and marker highlight — type is not on this list. What is left:
-
-- **Undesigned states.** "Loading…", the empty case, and the caught-up card are plain text.
-- **Nothing moves.** Cards cut in with no entry, and depth has no sense of travel.
-
-**Do:** one authored motion for depth, then design the three states. Update `DESIGN.md` with them.
-
-**Trigger:** before showing it to anyone who is not you.
-
-**Not:** a component library. Two screens, no reusable surfaces — it would be more code than the app.
-
-## Better images
-
-**Now:** `og:image`, which is picked to look good in a social card — so often a banner, logo or
-headshot rather than anything about the post, and only ~53% of cards have one. The viewer shows
-it whole, never cropped (cropping a 1200x630 card to the frame kept 24% of its width), and drops
-anything under 300px wide — measured, those were all logos or icons.
-
-Cards without one get a clipping: the original HN title as a black-on-paper newspaper headline.
-
-**Do:** fall back to the largest in-body `<img>`, then score candidates by size, position and alt
-text — `fetch_page` already returns the HTML both need. Measured 2026-09-23 on the 33 no-image
-cards: 12 have an in-body image ≥600px wide, 16 have no `<img>` at all (JS-rendered), 4 failed
-to fetch. So ~53% → ~70% of cards with a picture, at the cost of sizing up to 15 images per page.
-
-**Trigger:** when the clippings feel repetitive next to real pictures.
-
-**Not:** generating images — costs per card and cannot be verified against a source.
-
-## Translations: Korean first, then others — next up
-
-**Now:** built: the per-run Korean pass (Luna medium), `--ko DATE`, `--sample-ko`, and the viewer
-(ENG/KOR choice beside the date, `js/i18n.js`, Korean line breaking). Design: `SPEC.md` "Translations" and
-the 2026-09-23 `DECISIONS.md` entries.
-
-**Left:** the one-time backfill of past days (`--ko DATE`, ~$0.11 for 09-22's 70 cards); how figures
-like "$20 million" read, unseen so far (17 of 329 English fields carry a scale word); Korean on a
-real phone. Delete this entry once those are done.
-
-**Trigger:** fired: the user picked this as the next task on 2026-09-23.
-
 ## Discussion as a selection signal
 
 **Now:** selection is points only, at 150.
@@ -86,6 +42,9 @@ mechanism preventing fabrication. Needs an answer to that first, not a budget.
 
 ## Watch, do not build
 
+- **Scale words in Korean.** `prompt.ko.md` keeps "$20 million" as written rather than 만 or 억, since
+  a converted figure cannot be checked. On 09-23 "보조금 $20 million으로" read fine, "입력 tokens
+  million개당 $4.00" did not (its own table wrote "1M tokens당"). If more jar, allow "1M" style.
 - **Scheduled Actions are disabled on repos with no recent activity (~60 days).** Whether the bot's
   own nightly commits count as activity is unverified. If they do not, the app dies silently in two
   months. Check before then.
