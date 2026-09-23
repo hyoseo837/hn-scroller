@@ -32,12 +32,12 @@ jobs:
 
       # Stdlib only, so there is nothing to install.
       - name: Self-check
-        run: python3 generate.py --check
+        run: python3 -m generate --check
 
       - name: Generate
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python3 generate.py
+        run: python3 -m generate
 
       - name: Commit the edition
         run: |

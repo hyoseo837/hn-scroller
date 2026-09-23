@@ -80,8 +80,8 @@ this job does not use — `verify_substance` already catches fabrication. Luna's
 and quote fidelity are unmeasured; every number above is a list price, not a run.
 
 **Do:** a provider switch for `--sample` only, production stays on Gemini until numbers say
-otherwise. The seam is `card_content()` (request, auth header, usage counting) and
-`output_text()` (response shape); `PRICE_*` and the `usage_line` cost go per model.
+otherwise. The seam is `gemini_content()` (request, auth header, usage counting) and
+`gemini_text()` (response shape); `PRICES` and the `usage_line` cost go per model.
 - Verify against OpenAI's own docs first, not memory: the model id, endpoint, JSON-schema output
   format, reasoning-effort setting, and the usage field names for reasoning tokens.
 - `SCHEMA` has optional `data` and `["string","null"]` unions — strict schema modes usually want
@@ -93,7 +93,7 @@ otherwise. The seam is `card_content()` (request, auth header, usage counting) a
   glossary glosses, cost per card including reasoning tokens.
 
 Switching supersedes the Gemini entry in `DECISIONS.md` (new entry, old one stays). Update
-`PRICE_IN`/`PRICE_OUT` on 2027-01-01 whatever happens.
+Flash's `PRICES` entry on 2027-01-01 whatever happens.
 
 **Trigger:** fired — the user picked this as the next task on 2026-09-23.
 

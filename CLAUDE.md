@@ -10,7 +10,7 @@ No framework, no build step, no server, zero dependencies.
 | Part | Choice |
 |---|---|
 | Viewer | Vanilla HTML/CSS/JS. `scroll-snap-type` gives the 2D card grid natively. |
-| Generator | One Python script, stdlib only (`urllib`), Gemini REST (no SDK). No `requirements.txt`. |
+| Generator | `generate/`, a Python package run as `python3 -m generate`; stdlib only (`urllib`), Gemini REST (no SDK). No `requirements.txt`. |
 | Data | Static JSON per day in `data/`, plus `data/index.json` so the calendar knows which days exist. |
 | Host + cron | Cloudflare Pages on `hn.hyoseo.dev` (domain already in Cloudflare); GitHub Actions every 6h commits the day's JSON, and the push triggers the deploy. |
 | Client state | `localStorage`, resume position only. |
@@ -19,16 +19,16 @@ No framework, no build step, no server, zero dependencies.
 - PWA manifest for the home-screen icon. No service worker until offline reading is actually wanted.
 - Scheduled Actions run 10-30 min late (harmless here) and get **disabled on repos with no recent
   activity** (~60 days) — verify the bot's own commits count, or the app silently dies in two months.
-- Pages serves the repo root, so `generate.py` and `prompt.md` are public. Nothing secret is in
-  them (`.env` is gitignored), but the prompt is the part worth keeping if that ever matters.
+- Pages serves the repo root, so `generate/`, prompt included, is public. Nothing secret is in
+  it (`.env` is gitignored), but the prompt is the part worth keeping if that ever matters.
 
 ## Commands
 
 ```sh
-python3 generate.py --check    # offline, no network, no API key. Run before every commit.
-python3 generate.py --dry 3    # live HN fetch, prints the model input, calls nothing
-python3 generate.py --sample 1 # one real Gemini call, prints the card, writes nothing
-python3 generate.py            # full run, needs GEMINI_API_KEY
+python3 -m generate --check    # offline, no network, no API key. Run before every commit.
+python3 -m generate --dry 3    # live HN fetch, prints the model input, calls nothing
+python3 -m generate --sample 1 # one real Gemini call, prints the card, writes nothing
+python3 -m generate            # full run, needs GEMINI_API_KEY
 python3 -m http.server 8000     # then open localhost:8000 — file:// blocks fetch()
 ```
 
@@ -36,10 +36,10 @@ python3 -m http.server 8000     # then open localhost:8000 — file:// blocks fe
 Verify with `--check` (free), `--dry` (free), then `--sample 1-3` (a few cents). A full run happens
 only when the user asks for fresh content, never as a way of checking your own work.
 
-While tuning `prompt.md`, `rm data/published.json` to let already-seen posts be
+While tuning `generate/prompt.md`, `rm data/published.json` to let already-seen posts be
 regenerated. The glossary survives; only the dedup list resets.
 
-The system prompt is `prompt.md`, read at runtime — edit it without touching code. Iterate with
+The system prompt is `generate/prompt.md`, read at runtime — edit it without touching code. Iterate with
 `--dry` (free) before spending calls.
 
 ## Documentation rule

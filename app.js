@@ -517,7 +517,7 @@ const json = async (path) => {
   const day = date ? await json(`data/${date}.json`).catch(() => null) : null;
   const cards = day?.cards ?? [];
   if (!cards.length) {
-    feed.append(el("div", "empty", `No cards for ${date || "today"}. Run generate.py.`));
+    feed.append(el("div", "empty", `No cards for ${date || "today"}. Run python3 -m generate.`));
     return;
   }
 

@@ -35,14 +35,14 @@ the target reader is precisely the person who could not catch it.
 ## Running it
 
 ```sh
-python3 generate.py --check      # offline self-check, no API key
-python3 generate.py --dry 3      # live fetch, prints the model input, calls nothing
-python3 generate.py --sample 1   # one real call, prints the card, writes nothing
+python3 -m generate --check      # offline self-check, no API key
+python3 -m generate --dry 3      # live fetch, prints the model input, calls nothing
+python3 -m generate --sample 1   # one real call, prints the card, writes nothing
 python3 -m http.server 8000      # then open localhost:8000
 ```
 
 A full run needs `GEMINI_API_KEY` in `.env`, costs real money, and is not how you test a change —
-`--check`, `--dry` and `--sample` are. The system prompt is [`prompt.md`](prompt.md), read at
+`--check`, `--dry` and `--sample` are. The system prompt is [`generate/prompt.md`](generate/prompt.md), read at
 runtime, so wording changes need no code edit.
 
 ## Docs
