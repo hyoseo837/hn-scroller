@@ -40,13 +40,13 @@ to fetch. So ~53% → ~70% of cards with a picture, at the cost of sizing up to 
 
 ## Translations: Korean first, then others — next up
 
-**Now:** the generator side is built, uncommitted: the per-run Korean pass (Luna medium), the
-`--ko DATE` backfill, and `--sample-ko` for tuning `prompt.ko.md`. Design: `SPEC.md` "Translations"
-and the 2026-09-23 `DECISIONS.md` entries.
+**Now:** built: the per-run Korean pass (Luna medium), `--ko DATE`, `--sample-ko`, and the viewer
+(ENG/KOR choice beside the date, `js/i18n.js`, Korean line breaking). Design: `SPEC.md` "Translations" and
+the 2026-09-23 `DECISIONS.md` entries.
 
-**Left:** the viewer (toggle beside the date, UI strings, `lang`, Korean line breaking, a
-"translated" note on the comment sheet); the one-time backfill of past days; and how figures like
-"$20 million" read, unseen so far (17 of 329 English fields carry a scale word).
+**Left:** the one-time backfill of past days (`--ko DATE`, ~$0.11 for 09-22's 70 cards); how figures
+like "$20 million" read, unseen so far (17 of 329 English fields carry a scale word); Korean on a
+real phone. Delete this entry once those are done.
 
 **Trigger:** fired: the user picked this as the next task on 2026-09-23.
 

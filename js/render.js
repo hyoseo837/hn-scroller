@@ -32,8 +32,10 @@ function renderCard(card) {
     const wrap = el("article", "card");
     // `tier` names the layer; older cards without it fall back to position.
     const kind = tier.tier || (i === 0 ? "simple" : "substance");
-    if (kind === "substance") wrap.append(el("div", "kicker", "Detail"));
-    wrap.append(marked(tier.text, el("p", kind)));
+    if (kind === "substance") wrap.append(el("div", "kicker", T.detail));
+    const text = marked(tier.text, el("p", kind));
+    if (LANG !== "en" && !card.translated) text.lang = "en"; // no translation yet: still English
+    wrap.append(text);
     // Where it came from is context a beginner needs: a personal blog and a
     // vendor announcement read very differently. It is also the way out to the
     // article — the only one on a card whose detail tier failed verification.
@@ -84,7 +86,7 @@ function renderCard(card) {
     // Having just read the detail, "read the whole thing" is the next move —
     // so the link sits where that thought happens, not only in the button bar.
     if (kind === "substance") {
-      const more = el("a", "readon", card.url ? `Read it on ${host(card.url)} →` : "Open the discussion on HN →");
+      const more = el("a", "readon", card.url ? T.readOn(host(card.url)) : T.openHN);
       more.href = sourceOf(card);
       more.target = "_blank";
       more.rel = "noopener";
@@ -103,9 +105,9 @@ function renderCard(card) {
 function renderBoundary(count, when, older) {
   const section = el("section", "post");
   const wrap = el("article", "card end");
-  wrap.append(el("h1", null, "You're caught up."));
-  wrap.append(el("p", null, `${count} from ${when}.`));
-  if (older) wrap.append(el("p", "older", `keep going for ${older} ↓`));
+  wrap.append(el("h1", null, T.caughtUp));
+  wrap.append(el("p", null, T.dayCount(count, when)));
+  if (older) wrap.append(el("p", "older", T.keepGoing(older)));
   section.append(wrap);
   return section;
 }
@@ -120,7 +122,7 @@ function renderDivider(when) {
 
 const pretty = (iso) => {
   const [y, m, d] = iso.split("-").map(Number);
-  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString(undefined, {
+  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString(LOCALE, {
     weekday: "long", month: "long", day: "numeric", timeZone: "UTC",
   });
 };
@@ -135,6 +137,7 @@ function push(slide, node) {
 async function appendDay(when) {
   const day = await json(`data/${when}.json`).catch(() => null);
   if (!day?.cards?.length) return false;
+  await localize(day, when);
   Object.assign(glossary, day.glossary);
   // The caught-up card already names the next day ("keep going for …"), so a
   // divider straight after it would be two cards between the same two dates.

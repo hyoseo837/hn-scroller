@@ -27,22 +27,26 @@ addEventListener("pageshow", (event) => {
 
 btnCmt.addEventListener("click", () => {
   const card = slides[post]?.card;
-  openSheet(`${card.comment_count} comments`, (box) => {
+  openSheet(T.comments(card.comment_count), (box) => {
+    // Translated comments are not what anyone wrote: say so, and the link below has the originals.
+    if (card.comments?.some((c) => c.translated)) box.append(el("p", "note", T.translated));
     if (card.camps) {
       const callout = el("div", "camps");
-      callout.append(el("div", "camps-label", "The split"));
+      callout.append(el("div", "camps-label", T.split));
       callout.append(marked(card.camps, el("p")));
       box.append(callout);
     }
-    // Verbatim and unprocessed. Top-level only — the tree is deliberately flattened.
+    // Verbatim and unprocessed, or translated. Top-level only — the tree is deliberately flattened.
     (card.comments || []).forEach((raw) => {
-      const { by, text } = typeof raw === "string" ? { by: "", text: raw } : raw;
+      const { by, text, translated } = typeof raw === "string" ? { by: "", text: raw } : raw;
       const row = el("article", "cmt");
       if (by) row.append(el("div", "who", by));
-      row.append(el("p", null, text));
+      const p = el("p", null, text);
+      if (LANG !== "en" && !translated) p.lang = "en";
+      row.append(p);
       box.append(row);
     });
-    const more = el("a", null, "Read the full thread on HN →");
+    const more = el("a", null, T.thread);
     more.href = card.hn;
     more.target = "_blank";
     more.rel = "noopener";
@@ -54,7 +58,7 @@ btnCmt.addEventListener("click", () => {
 
 btnGlo.addEventListener("click", () => {
   const card = slides[post]?.card;
-  openSheet("In this post", (box) => {
+  openSheet(T.inThisPost, (box) => {
     const list = el("dl");
     card.terms.forEach((term) => {
       // One sentence is the glossary's limit; the word itself leads to more.
@@ -63,10 +67,10 @@ btnGlo.addEventListener("click", () => {
       more.href = "https://www.google.com/search?q=" + encodeURIComponent(term);
       more.target = "_blank";
       more.rel = "noopener";
-      more.setAttribute("aria-label", `Search Google for ${term}`);
+      more.setAttribute("aria-label", T.search(term));
       dt.append(more);
       list.append(dt);
-      list.append(el("dd", null, glossary[term] || "No definition yet."));
+      list.append(el("dd", null, glossary[term] || T.noGloss));
     });
     box.append(list);
   });
@@ -74,7 +78,7 @@ btnGlo.addEventListener("click", () => {
 
 // Calendar is pull, not push: no badge, nothing accumulating against you.
 document.getElementById("cal").addEventListener("click", () => {
-  openSheet("Past days", (box) => {
+  openSheet(T.pastDays, (box) => {
     const wrap = el("div", "days");
     days.forEach((day) => {
       const a = el("a", day === date ? "now" : null, day);

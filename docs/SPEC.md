@@ -185,7 +185,7 @@ not grow with history; `data/glossary.json` is the generator's store and readers
 - **Register:** the app's own text reads as a tech headline: noun endings, compact Sino-Korean
   (환승시, 취약점), tech words Koreans write in English kept English. Comments keep their own voice.
 - **Checked per card:** every number and name in the English survives, or the card ships English.
-- Viewer: the browser language picks; a toggle beside the date overrides it (`localStorage`).
+- Viewer: the browser language picks; an ENG/KOR choice beside the date overrides it (`localStorage`).
 
 ## Non-goals (v1)
 

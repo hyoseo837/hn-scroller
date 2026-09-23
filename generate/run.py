@@ -115,6 +115,9 @@ def korean_pass(date: str) -> None:
     """Korean for every card in data/<date>.json that has none yet, one call each.
     A card that fails the check stays English, and the day's next run retries it.
     Also the backfill for a past day: `python3 -m generate --ko DATE`."""
+    load_env()  # --ko arrives here directly, not through main()
+    if not os.environ.get("OPENAI_API_KEY"):
+        sys.exit("OPENAI_API_KEY is not set (put it in .env, or export it)")
     day = read_json(f"{date}.json", {})
     cards = day.get("cards", [])
     if not cards:

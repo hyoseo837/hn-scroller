@@ -21,12 +21,13 @@ const json = async (path) => {
   feed.textContent = "";
   slides = [];
   const day = date ? await json(`data/${date}.json`).catch(() => null) : null;
+  await localize(day, date);
   // Each day file carries the glosses for its own terms, so a visit downloads one
   // day's worth, not every term ever written.
   Object.assign(glossary, day?.glossary);
   const cards = day?.cards ?? [];
   if (!cards.length) {
-    feed.append(el("div", "empty", `No cards for ${date || "today"}. Run python3 -m generate.`));
+    feed.append(el("div", "empty", T.noCards(date || "today")));
     return;
   }
 

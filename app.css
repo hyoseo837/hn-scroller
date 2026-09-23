@@ -161,7 +161,7 @@ strong { font-weight: 750; background: linear-gradient(transparent 58%, var(--ma
 /* chrome — absolute against .phone */
 .bar {
   position: absolute; inset: 0 0 auto 0; z-index: 3;
-  display: flex; align-items: center; gap: 14px;
+  display: flex; align-items: center; gap: 10px;
   padding: max(10px, env(safe-area-inset-top)) 20px 14px;
   font-size: 13px; color: var(--dim);
   background: linear-gradient(var(--bg) 66%, transparent);
@@ -173,6 +173,14 @@ strong { font-weight: 750; background: linear-gradient(transparent 58%, var(--ma
   font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; pointer-events: auto;
 }
 .bar .ico { width: 16px; height: 16px; }
+/* One line at 360px: nothing in the bar wraps or shrinks. */
+.bar > * { flex: none; white-space: nowrap; }
+.bar select {
+  pointer-events: auto; min-height: 26px; padding: 0 2px 0 5px; cursor: pointer;
+  font: inherit; font-size: 11px; font-weight: 650; color: var(--fg);
+  background: none; border: 1px solid var(--line); border-radius: 8px;
+}
+.bar select option { background: var(--sheet); color: var(--fg); }
 .pos { margin-left: auto; font-variant-numeric: tabular-nums; }
 .dots { display: flex; gap: 6px; align-items: center; }
 .dots i { width: 6px; height: 6px; border-radius: 50%; background: var(--line); transition: background .18s; }
@@ -235,3 +243,9 @@ strong { font-weight: 750; background: linear-gradient(transparent 58%, var(--ma
 .end p { color: var(--dim); margin: 0; }
 .end .older { margin-top: 26px; font-size: 14px; opacity: .75; }
 .empty { padding: 30px 22px; color: var(--dim); }
+#sheet .note { margin: -6px 0 14px; font-size: 12.5px; color: var(--dim); }
+
+/* Korean breaks lines at spaces, as Korean is set, not mid-word between any two syllables. */
+:root:lang(ko) { word-break: keep-all; }
+/* Tracking made for uppercase Latin only spreads Hangul apart. */
+:root:lang(ko) :is(.kicker, #sheet h2, #sheet .camps-label) { letter-spacing: 0; }

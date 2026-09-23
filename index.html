@@ -23,6 +23,8 @@
   <div class="bar">
     <span class="brand">HN Scroller</span>
     <button id="cal" aria-label="Past days"><svg class="ico"><use href="#i-cal"/></svg><span id="date">—</span></button>
+    <!-- One <option> per language; each also needs its strings in js/i18n.js and data/<date>.<code>.json. -->
+    <select id="lang" aria-label="Language"><option value="en" lang="en">ENG</option><option value="ko" lang="ko">KOR</option></select>
     <span class="pos" id="pos"></span>
     <span class="dots" id="dots"></span>
   </div>
@@ -41,6 +43,7 @@
 
 <!-- Classic scripts sharing one global scope, not modules: base first, boot last. -->
 <script src="js/base.js"></script>
+<script src="js/i18n.js"></script>
 <script src="js/render.js"></script>
 <script src="js/nav.js"></script>
 <script src="js/keys.js"></script>

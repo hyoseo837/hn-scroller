@@ -1,11 +1,11 @@
 // Where you are: header and dots, scroll and wheel navigation, and today's resume point.
 
 const posted = (unix) =>
-  new Date(unix * 1000).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+  new Date(unix * 1000).toLocaleDateString(LOCALE, { month: "short", day: "numeric", year: "numeric" });
 
 const short = (iso) => {
   const [y, m, d] = iso.split("-").map(Number);
-  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString(undefined, {
+  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString(LOCALE, {
     weekday: "short", month: "short", day: "numeric", timeZone: "UTC",
   });
 };
@@ -35,13 +35,13 @@ function syncChrome() {
   btnGlo.disabled = !terms;
   btnCmt.lastChild.textContent = card ? card.comment_count : "—";
   btnGlo.lastChild.textContent = terms;
-  btnCmt.setAttribute("aria-label", card ? `${card.comment_count} comments` : "Comments");
-  btnGlo.setAttribute("aria-label", `${terms} terms explained`);
+  btnCmt.setAttribute("aria-label", card ? T.comments(card.comment_count) : T.commentsBtn);
+  btnGlo.setAttribute("aria-label", T.terms(terms));
   // A dead vertical gesture with no visible cause reads as broken, so say so.
   // On a keyboard the vertical axis is never locked, so the hint differs.
   const deeper = tiersOf(card).length > 1;
-  if (KEYBOARD) hint.textContent = deeper ? "← → depth · ↑ ↓ posts" : "↑ ↓ posts";
-  else hint.textContent = depth > 0 ? "← swipe back to continue" : deeper ? "swipe → for more" : "";
+  if (KEYBOARD) hint.textContent = deeper ? T.hintKeysDeep : T.hintKeys;
+  else hint.textContent = depth > 0 ? T.hintBack : deeper ? T.hintMore : "";
 }
 
 // Depth locks the vertical axis (SPEC: swipe left before swipe up).

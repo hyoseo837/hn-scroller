@@ -131,6 +131,8 @@ everything else gets out of its way.
 - Key words are marked `**like this**` and render as a marker highlight (bottom 42% of the line
   box), never bold-inside-bold. Rendered with text nodes, never `innerHTML`.
 - The glance line is lowercase with no full stop, by content rule (`docs/SPEC.md`).
+- Korean (`<html lang="ko">`) breaks lines at spaces (`word-break: keep-all`), and its labels drop
+  the Latin letter-spacing. A card with no Korean yet keeps `lang="en"` on its text.
 
 ## Layout
 
@@ -168,6 +170,8 @@ everything else gets out of its way.
 - **Icons**: one inline SVG sprite in `index.html`, one stroke weight. No emoji, no glyph icons.
 - **Camps callout**: tint background, "The split" label in `--link`, then the line.
 - **Caught-up card**: the only card between two days; it names the next day.
+- **Language choice**: a native `<select>` beside the date (ENG, KOR), 26px tall, bordered, `day-chip`
+  radius. Native so it stays accessible and takes a third language without a layout change.
 
 ## Do's and Don'ts
 
