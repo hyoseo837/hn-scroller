@@ -292,6 +292,37 @@ def check() -> None:
     assert out["glossary"] == {"wasm": "2배 빠름"}, "the day ships its Korean glosses"
     assert calls[2:] == [(2, [])], "the next run retries only the failed card, and not its known term"
 
+    # A run with nothing new is normal: no English written, no error, and today's
+    # missing Korean still retried. Every selected post failing is an error.
+    import os
+    retried = []
+    saved = run.DATA, run.select_from_algolia, run.sources, run.korean_pass, os.environ.get("OPENAI_API_KEY")
+    with tempfile.TemporaryDirectory() as tmp, contextlib.redirect_stdout(io.StringIO()), \
+            contextlib.redirect_stderr(io.StringIO()):
+        run.DATA, run.korean_pass = Path(tmp), retried.append
+        os.environ["OPENAI_API_KEY"] = "offline"
+        try:
+            run.select_from_algolia = lambda published: []
+            run.main()
+            assert len(retried) == 1 and not list(Path(tmp).glob("20*.json")), "quiet run: retry, write nothing"
+            run.select_from_algolia = lambda published: [{"objectID": "9"}]
+            run.sources = lambda item_id: 1 / 0
+            try:
+                run.main()
+            except SystemExit:
+                pass
+            else:
+                raise AssertionError("every selected post failing must fail the run")
+            Path(tmp, "index.json").write_text("[]")
+            run.korean_pass = saved[3]
+            run.korean_pass("2099-01-01")  # a new day with no file yet: a message, not an exit
+        finally:
+            run.DATA, run.select_from_algolia, run.sources, run.korean_pass = saved[:4]
+            if saved[4] is None:
+                os.environ.pop("OPENAI_API_KEY")
+            else:
+                os.environ["OPENAI_API_KEY"] = saved[4]
+
     assert PROMPT.exists(), "prompt.md is missing"
     assert "Absolute rule" in PROMPT.read_text(encoding="utf-8")
 

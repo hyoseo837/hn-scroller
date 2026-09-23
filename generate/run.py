@@ -85,24 +85,29 @@ def main() -> None:
         except Exception as err:  # one bad post must not lose the day
             print(f"  fail {hit['objectID']}: {err}", file=sys.stderr)
 
-    if not cards:
+    if selected and not cards:
+        # Every selected post failed: something is broken (the API, the network), so fail loudly.
         sys.exit("no cards generated — leaving yesterday's file in place")
-
-    # Merge, never replace: a re-run on the same day (a retry after a crash, or a
-    # second pass picking up what a guard cut) must not delete the earlier batch.
-    # Existing first: each run takes the highest-scoring posts left, so the earlier
-    # batch outranks this one. Prepending would put the weakest cards on top.
-    existing = read_json(f"{date}.json", {}).get("cards", [])
-    already = {c["id"] for c in existing}
-    merged = existing + [c for c in cards if c["id"] not in already]
-    write_json(f"{date}.json", {"date": date, "cards": merged, "glossary": day_glossary(merged, glossary)})
-    if existing:
-        print(f"merged: {len(existing)} already in today's file + {len(merged) - len(existing)} new")
-    write_json("glossary.json", glossary)
-    write_json("published.json", published)
-    write_json("index.json", sorted({date, *index}, reverse=True))
-    print(f"wrote data/{date}.json ({len(merged)} cards)")
-    print(usage_line())
+    if not selected:
+        # A quiet stretch is a normal run, not a failure. Nothing to write, but today's
+        # cards that failed their Korean check still get their retry below.
+        print("no new posts")
+    else:
+        # Merge, never replace: a re-run on the same day (a retry after a crash, or a
+        # second pass picking up what a guard cut) must not delete the earlier batch.
+        # Existing first: each run takes the highest-scoring posts left, so the earlier
+        # batch outranks this one. Prepending would put the weakest cards on top.
+        existing = read_json(f"{date}.json", {}).get("cards", [])
+        already = {c["id"] for c in existing}
+        merged = existing + [c for c in cards if c["id"] not in already]
+        write_json(f"{date}.json", {"date": date, "cards": merged, "glossary": day_glossary(merged, glossary)})
+        if existing:
+            print(f"merged: {len(existing)} already in today's file + {len(merged) - len(existing)} new")
+        write_json("glossary.json", glossary)
+        write_json("published.json", published)
+        write_json("index.json", sorted({date, *index}, reverse=True))
+        print(f"wrote data/{date}.json ({len(merged)} cards)")
+        print(usage_line())
     # The English is already written: a failed Korean pass costs today's Korean, never the edition.
     try:
         korean_pass(date)
@@ -121,7 +126,8 @@ def korean_pass(date: str) -> None:
     day = read_json(f"{date}.json", {})
     cards = day.get("cards", [])
     if not cards:
-        sys.exit(f"no cards in data/{date}.json")
+        print(f"korean: no cards in data/{date}.json")  # a new UTC day before its first post
+        return
     overlay = read_json(f"{date}.ko.json", {"date": date, "cards": {}})
     known = read_json("glossary.ko.json", {})  # the Korean twin of glossary.json
     for card in [c for c in cards if str(c["id"]) not in overlay["cards"]]:
