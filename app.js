@@ -206,7 +206,9 @@ function push(slide, node) {
 async function appendDay(when) {
   const day = await json(`data/${when}.json`).catch(() => null);
   if (!day?.cards?.length) return false;
-  push({ divider: true, date: when }, renderDivider(pretty(when)));
+  // The caught-up card already names the next day ("keep going for …"), so a
+  // divider straight after it would be two cards between the same two dates.
+  if (!slides.at(-1)?.boundary) push({ divider: true, date: when }, renderDivider(pretty(when)));
   day.cards.forEach((card, i) => push({ card, date: when, n: i + 1, of: day.cards.length }, renderCard(card)));
   return true;
 }
@@ -517,7 +519,7 @@ const json = async (path) => {
 
   cards.forEach((card, i) => push({ card, date, n: i + 1, of: cards.length }, renderCard(card)));
   const older = nextDay < days.length ? pretty(days[nextDay]) : null;
-  push({ date }, renderBoundary(cards.length, pretty(date), older));
+  push({ boundary: true, date }, renderBoundary(cards.length, pretty(date), older));
   todayCount = slides.length;
 
   restore();
