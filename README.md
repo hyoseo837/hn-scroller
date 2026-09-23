@@ -6,7 +6,7 @@ without reading forty comment threads to find out.
 **[hn.hyoseo.dev](https://hn.hyoseo.dev)**
 
 It is an *awareness* tool, not a learning tool. Open it without thinking, know what is going on,
-close it. A day has a bottom and you reach it in about two minutes.
+close it. A day has a bottom and you reach it in two or three minutes.
 
 ## How it reads
 
@@ -16,15 +16,16 @@ Two axes, both plain CSS scroll-snap — no framework, no gesture library.
   ChatGPT stop producing horrible event posters"*. No jargon, no version numbers.
 - **Swipe right** for the detail — the names, figures and argument the glance line leaves out.
 - Buttons for the discussion, a glossary of the jargon in that post, and the original article.
+  Glossary entries are one plain sentence; tap the term to search it.
 
 ## How it is built
 
-A Python package picks every Hacker News story at 150 points or more from the last three days that it has
-not already covered, asks GPT-6 Luna for the card text, and writes one JSON file per day. GitHub Actions
-runs it every 6 hours and commits the result; the commit is what deploys the site.
+A Python package picks every Hacker News story at 150 points or more from the last three days that
+it has not already covered, asks GPT-6 Luna for the card text, and writes one JSON file per day.
+GitHub Actions runs it every 6 hours and commits the result; the commit is what deploys the site.
 
 No server, no database, no build step, and no dependencies — Python stdlib and vanilla JS. About
-**$0.06 a day**, and that does not change with traffic, because readers fetch a static file.
+**$0.08 a day**, and that does not change with traffic, because readers fetch a static file.
 
 The part that took the most care is keeping it honest. Cards state facts only from the fetched
 source, never from the model's own knowledge, and the detail tier must return verbatim quotes that
@@ -42,8 +43,8 @@ python3 -m http.server 8000      # then open localhost:8000
 ```
 
 A full run needs `OPENAI_API_KEY` in `.env`, costs real money, and is not how you test a change —
-`--check`, `--dry` and `--sample` are. The system prompt is [`generate/prompt.md`](generate/prompt.md), read at
-runtime, so wording changes need no code edit.
+`--check`, `--dry` and `--sample` are. The system prompt is
+[`generate/prompt.md`](generate/prompt.md), read at runtime, so wording changes need no code edit.
 
 ## Docs
 
