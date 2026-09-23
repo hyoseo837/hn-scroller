@@ -397,10 +397,14 @@ function save() {
 }
 function restore() {
   let at = 0;
-  try {
-    at = Number(localStorage.getItem(key())) || 0;
-  } catch {
-    at = 0;
+  // A day picked from the calendar opens at its first card: that is a choice to
+  // read that day, not to resume it.
+  if (!new URLSearchParams(location.search).has("date")) {
+    try {
+      at = Number(localStorage.getItem(key())) || 0;
+    } catch {
+      at = 0;
+    }
   }
   post = Math.min(at, Math.max(0, todayCount - 1));
   depth = 0;
