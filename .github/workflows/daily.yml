@@ -6,7 +6,8 @@ on:
     # this costs nothing extra and a failed run goes stale for 6h, not 24. Safe
     # on thread maturity because the points threshold already gates age (measured
     # at 200: of 158 qualifying stories in a week, one was under 6h old, and it had
-    # 116 comments). GitHub runs scheduled jobs 10-30 min late, which is harmless.
+    # 116 comments). GitHub starts them 3-5 h late (measured on six runs): the top
+    # of the hour is its busiest minute. Harmless so far, as editions are dated by run.
     - cron: "0 0,6,12,18 * * *"
   workflow_dispatch: {}
 

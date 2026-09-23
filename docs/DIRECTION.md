@@ -37,16 +37,18 @@ mechanism preventing fabrication. Needs an answer to that first, not a budget.
 
 - **Offline reading.** A service worker so a downloaded edition survives the subway. The data is one
   static JSON per day, so this is genuinely small. Trigger: if the app gets opened while commuting.
-- **Bump the Actions versions.** `checkout@v4` and `setup-python@v5` are pinned to a deprecated
-  Node 20 runtime, and `ubuntu-latest` migrates to Ubuntu 26 in October 2026. Warnings only today.
+- **Actions: v7, and off the hour.** `checkout@v4` and `setup-python@v5` run a deprecated Node 20;
+  both are at v7 (Node 24, nothing this workflow uses removed). The cron fires at minute 0, GitHub's
+  busiest, and runs start 3-5 h late: move it to `37 0,6,12,18 * * *`. One commit, with the timing
+  comments. Trigger: once the first Luna production run is checked, so one change is tested at a time.
 
 ## Watch, do not build
 
 - **Scale words in Korean.** `prompt.ko.md` keeps "$20 million" as written rather than 만 or 억, since
   a converted figure cannot be checked. On 09-23 "보조금 $20 million으로" read fine, "입력 tokens
   million개당 $4.00" did not (its own table wrote "1M tokens당"). If more jar, allow "1M" style.
-- **Scheduled Actions are disabled on repos with no recent activity (~60 days).** Whether the bot's
-  own nightly commits count as activity is unverified. If they do not, the app dies silently in two
+- **Scheduled Actions are disabled on repos with no recent activity (~60 days).** GitHub's docs say
+  "no repository activity" without defining it, so whether the bot's own commits count is unverified. If they do not, the app dies silently in two
   months. Check before then.
 - **A published card is frozen.** Dedup means a post is generated once, so a story caught early
   keeps its thin thread and early camps line forever, even if it becomes the week's biggest story.

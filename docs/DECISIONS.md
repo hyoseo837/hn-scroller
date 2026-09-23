@@ -128,3 +128,8 @@ Supersedes the Node choice in the stack entry above; everything else there still
 
 **Why:** measured on the same 10 cards with the revised prompt: the user preferred medium's glance on 9 of 10, at $0.0013 a card and ~21 s against high's $0.0025 and ~36 s (~$1.25/mo against ~$2.40 at 32 cards a day). High also added a name its English did not mention. The effort level never fixed translationese: low, medium and high all wrote it under the first prompt, and the prompt's rewrite fixed it.
 **Rejected:** high (twice the cost, and the user preferred medium's lines); low (list-like detail, and it dropped a "1:1" that failed the check, at $0.0006 a card).
+
+## 2026-09-23 — Back uses one history entry, pushed only while there is something to back out of
+
+**Why:** on a home screen the app had no history, so Android's back closed it even from an open sheet. While a sheet is open or depth > 0 one entry sits on top: back closes the sheet, then returns to the glance, then leaves. Closing from inside the app takes the entry back off, so no back press is ever a dead one.
+**Rejected:** a permanent entry (back at the glance would need two presses to leave); an entry per level (a sheet over depth would need unwinding that the one entry already gives, as it is re-pushed while depth > 0).

@@ -63,6 +63,7 @@ Rules:
 | Swipe right | Deeper into this post. |
 | Swipe left | Back out. **Required before swipe up works** — depth locks the vertical axis. |
 | Revisit a post | Starts at depth 1. Depth is not remembered. |
+| Back button | Closes an open sheet, then returns to the glance, then leaves the app. |
 | ↑ ↓ / Space / j k | Previous / next post — **from any depth**. |
 | ← → / h l | Out / deeper. `c` opens comments, `g` the glossary, Escape closes. |
 
@@ -197,4 +198,3 @@ awareness app shows you today, and a reader who wants the history has the calend
 ## Open
 
 - Does the camps line appear on the card face, or only inside the comment sheet?
-- The 2D scroll-snap needs thumbing on a real phone before it is designed further.
