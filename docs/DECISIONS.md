@@ -93,3 +93,8 @@ Supersedes the Node choice in the stack entry above; everything else there still
 
 **Why:** chosen by the user once Luna made a card ~$0.0024. Measured over 14 settled days: a median of 32 stories/day clear 150 (22-43) against 24 at 200 (16-32), ~$2.30/mo. Supersedes the number in the 2026-09-21 threshold entry; no age delay and no cap still hold. The query now fetches up to 1000 hits: at 150 the 3-day window held 84, and a busy stretch passes the old 100, which silently dropped the oldest qualifiers.
 **Rejected:** staying at 200 (set for reading load: ~24 cards fits a 2-3 minute swipe; the user chose coverage); 100 (~45/day, where a cap used to do the selecting).
+
+## 2026-09-23 — Viewer JS split into classic scripts in `js/`, not ES modules
+
+**Why:** the user prefers a file per concern. Classic scripts loaded in order share one global scope, so `app.js` moved verbatim into six files: checked line for line, and headless Chromium gave identical screenshots and identical state after keys, swipes and sheets.
+**Rejected:** ES modules (explicit imports, but nine shared variables such as `post`, `depth` and `date` are reassigned across sections and an importer cannot assign an import, so every use would move into a state object: a rewrite, not a move); one `app.js` (the user's preference).

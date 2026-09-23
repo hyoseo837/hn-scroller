@@ -39,4 +39,10 @@
   <section id="sheet" hidden></section>
 </div>
 
-<script src="app.js"></script>
+<!-- Classic scripts sharing one global scope, not modules: base first, boot last. -->
+<script src="js/base.js"></script>
+<script src="js/render.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/keys.js"></script>
+<script src="js/sheets.js"></script>
+<script src="js/boot.js"></script>
