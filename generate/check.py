@@ -2,6 +2,7 @@
 
 import contextlib
 import io
+import os
 import tempfile
 from pathlib import Path
 
@@ -23,6 +24,9 @@ from .translate import PROMPT_KO, SCHEMA_KO, comments_ko, english, glosses, lost
 
 
 def check() -> None:
+    # CI has no .env, and the real key must never reach an offline check: load_env()
+    # only sets what is unset, so a missing stub fails on this key instead of billing.
+    os.environ["OPENAI_API_KEY"] = "offline"
     assert strip_html("<p>hi <b>there</b></p>") == "hi there"
     # a spec table must keep label-to-number pairing, or `data` rows go missing
     table = "<table><tr><td>Latency P50</td><td>32.8 ms</td></tr><tr><td>ECE</td><td>0.081</td></tr></table>"
@@ -298,13 +302,11 @@ def check() -> None:
 
     # A run with nothing new is normal: no English written, no error, and today's
     # missing Korean still retried. Every selected post failing is an error.
-    import os
     retried = []
-    saved = run.DATA, run.select_from_algolia, run.sources, run.korean_pass, os.environ.get("OPENAI_API_KEY")
+    saved = run.DATA, run.select_from_algolia, run.sources, run.korean_pass
     with tempfile.TemporaryDirectory() as tmp, contextlib.redirect_stdout(io.StringIO()), \
             contextlib.redirect_stderr(io.StringIO()):
         run.DATA, run.korean_pass = Path(tmp), retried.append
-        os.environ["OPENAI_API_KEY"] = "offline"
         try:
             run.select_from_algolia = lambda published: []
             run.main()
@@ -321,11 +323,7 @@ def check() -> None:
             run.korean_pass = saved[3]
             run.korean_pass("2099-01-01")  # a new day with no file yet: a message, not an exit
         finally:
-            run.DATA, run.select_from_algolia, run.sources, run.korean_pass = saved[:4]
-            if saved[4] is None:
-                os.environ.pop("OPENAI_API_KEY")
-            else:
-                os.environ["OPENAI_API_KEY"] = saved[4]
+            run.DATA, run.select_from_algolia, run.sources, run.korean_pass = saved
 
     assert PROMPT.exists(), "prompt.md is missing"
     assert "Absolute rule" in PROMPT.read_text(encoding="utf-8")
