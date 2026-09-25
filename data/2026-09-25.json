@@ -1450,6 +1450,354 @@
         }
       ],
       "image": "https://www.inkandswitch.com/project/tenfold/story/L1010553-Edit-16x9.webp"
+    },
+    {
+      "id": 49845133,
+      "url": "https://factorio.com/blog/post/fff-447",
+      "hn": "https://news.ycombinator.com/item?id=49845133",
+      "title": "Factorio that you can touch",
+      "time": 1790346282,
+      "depth": [
+        {
+          "text": "someone made Factorio's **machines and enemies** into **3D-printable models** fans can download and print themselves",
+          "tier": "simple"
+        },
+        {
+          "text": "The models were **split into pieces** to avoid extra supports, and almost every design got a push-fit version and one with extra clearance. The collection has **15 model sets**, with 65 individual models in 247 STL files.",
+          "tier": "substance",
+          "data": [
+            [
+              "model sets",
+              "15"
+            ],
+            [
+              "individual models",
+              "65"
+            ],
+            [
+              "STL files",
+              "247"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 81,
+      "terms": [
+        "supports",
+        "push-fit assembly",
+        "clearance",
+        "STL file",
+        "FDM printing"
+      ],
+      "entities": [
+        "Factorio",
+        "Wube",
+        "Prusa Research",
+        "Printables",
+        "Jarosław",
+        "Fearghall",
+        "Štěpán Feik",
+        "Pard"
+      ],
+      "comments": [
+        {
+          "by": "NelsonMinar",
+          "text": "Wube is such a unique game studio. They do a lot of very solid technical work and look like they have fun doing it. I particularly appreciated their recent post about porting Factorio to ARM64. They had a business reason to do it but it's clear the team was mostly just curious about whether ARM64 was a viable gaming platform now. And then shared the results with us. They seem like fun hacker…"
+        },
+        {
+          "by": "mococa",
+          "text": "I love Factorio, but I can't play it - it's way too addictive. If I start on a Friday, I won't stop until Monday"
+        },
+        {
+          "by": "mitxela",
+          "text": "Remember that Factorio does not release its 3D models. Everything in the game is a 2D render of a 3D model, which is why the game uses so much VRAM."
+        },
+        {
+          "by": "schobi",
+          "text": "Oh - but only touching them? I was hoping for an iteration of a factorio belt that could actually move!"
+        },
+        {
+          "by": "Cieric",
+          "text": "I'm (hopefully) getting a G1X soon, so I think I'm going to put it to work printing this stuff out. I'm now excited for this as a use case and I kind of hope someone builds something to convert an existing factorio world into a 3d model, though it might be to big to actually print so maybe a way to take a section would be even better."
+        }
+      ],
+      "image": "https://cdn.factorio.com/assets/img/blog/fff-447-thumbnail.png"
+    },
+    {
+      "id": 49848269,
+      "url": "https://ollaya.dev/",
+      "hn": "https://news.ycombinator.com/item?id=49848269",
+      "title": "Ollaya – Ollama for open-source, Jev-style decision models",
+      "time": 1790361230,
+      "depth": [
+        {
+          "text": "someone built **Ollaya** to run open-source **decision models** on your own machine",
+          "tier": "simple"
+        },
+        {
+          "text": "The page reports a median of **8.1 ms** for a five-question Laya:multilingual request on an RTX 4090, versus **236–276 ms** for TypeSafe Jev's hosted API; the setups differ, and Jev's figure includes network time. The official TypeSafe Python SDK works unchanged with Ollaya's local server.",
+          "tier": "substance",
+          "data": [
+            [
+              "Laya:multilingual median latency",
+              "8.1 ms"
+            ],
+            [
+              "TypeSafe Jev hosted API median latency",
+              "236–276 ms"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say Laya makes wrong decisions on complex queries; another says it was a drop-in replacement for their Jev API use.",
+      "comment_count": 62,
+      "terms": [
+        "decision model",
+        "calibrated answers",
+        "forward pass",
+        "API",
+        "SDK"
+      ],
+      "entities": [
+        "Ollaya",
+        "Ollama",
+        "Laya",
+        "Jev",
+        "TypeSafe",
+        "Convai Innovations",
+        "NVIDIA",
+        "Python"
+      ],
+      "comments": [
+        {
+          "by": "alex7o",
+          "text": "Guys I have a real q, what is the difference between an instruct based re-ranker and laya/jev I just don't see it. Edit: One is that jev/laya are tuned to have better probabilities, but a reranker can be fine tuned to do that as well. And jev/laya use RLCD?"
+        },
+        {
+          "by": "pradn",
+          "text": "I'm not sure what this means for AI startups if their innovations can be copied by OSS so quickly (what, like 2 weeks?). There's \"consumer surplus\" for everyone, to borrow an economic concept. But we do ideally want some of the surplus to flow to the innovator, too. I know there were precursors, but that's fine - it's hard to have a totally novel idea in such a popular field. I don't know what…"
+        },
+        {
+          "by": "george_max",
+          "text": "Has anyone actually seen better or the same results with Laya compared to Jev? From my experience, Laya performs significantly worse. It's less confident and often makes wrong decisions with more complex queries."
+        },
+        {
+          "by": "nacs",
+          "text": "It would be good to list 1) zero-shot accuracy and 2) latency on the models page . The LLM-based models' latency is probably much higher than the BERT approaches I would assume. Also curious, it seems from looking at the accuracy scores you gave that it seems to be NLI > Gliclass > Laya (for Bert types)? Why do you seem to feature/recommend Laya more - is Laya better in some way?"
+        },
+        {
+          "by": "nickstinemates",
+          "text": "Laya is pretty easy to set up on its own without ollaya. I just did that and replaced my current jev API usage to laya running on a GTX 970 with 4GB of vram. Very small context window, but for some existing small llm work I was doing, it was a drop-in replacement and it makes me happy I can get use out of old hardware I have running."
+        }
+      ],
+      "image": "https://ollaya.dev/static/og.png?v=7bd2eae221"
+    },
+    {
+      "id": 49844736,
+      "url": "https://sunilsadasivan.com/writing/first-principles-thinking/",
+      "hn": "https://news.ycombinator.com/item?id=49844736",
+      "title": "First Principles Thinking",
+      "time": 1790344537,
+      "depth": [
+        {
+          "text": "the post connects **first principles thinking** with **small steps** and faster learning while working with **AI agents**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author says great senior engineers **ask why they’re building something** and what it will do for users, then **connect the code to what’s happening outside it**. With agents, they argue, putting old assumptions aside makes it easier to try things before deciding an old constraint still applies.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: one side sees first-principles thinking as a useful way to simplify and rethink work; the other calls it a cliche or warns it can ignore constraints and create complexity.",
+      "comment_count": 81,
+      "terms": [
+        "first principles thinking",
+        "agentic development",
+        "codebase",
+        "learning loops"
+      ],
+      "entities": [
+        "Sunil Sadasivan",
+        "Sunil Pai",
+        "Codex",
+        "Claude Code",
+        "Feynman",
+        "Jeri Ellsworth",
+        "John Carmack",
+        "Dean Kamen"
+      ],
+      "comments": [
+        {
+          "by": "bob1029",
+          "text": "Higher order thinking is more important and rare. An aggressive first principles approach often leads otherwise well-intentioned technologists into strategic / ideological dead-ends. Do we do things because it's the \"right thing\" to do in the moment, or because of the final outcome that will eventually result? The most ideal answer is somewhere in the middle. I am far more interested in the total…"
+        },
+        {
+          "by": "flowerlad",
+          "text": "From the blog he linked to: \"I’m going to try designing something way more ambitious.\" This is how you end up with unnecessary complexity [1]. The best engineers don't aim for \"designing something ambitious\", instead they come up with the simplest possible design. They take something that seems complex and make it simple. Unfortunately that's not how engineers are evaluated [2]. [1]…"
+        },
+        {
+          "by": "coolfox",
+          "text": "I use the whole \"first principles\" thinking as a litmus test for bad engineers, if you're emphasizing first principles all the time you're probably a bit of a naivie person, to put it as nicely as possible. subtraction is a great skill to apply to a great many things we do and when people say \"first principles\" this is actually what they mean but sometimes things are complicated and a first order…"
+        },
+        {
+          "by": "trwhite",
+          "text": "I'm really struggling to see how to make architectural decisions with an agent. It's great when you're at a total loss for ideas, but when you already have some of the pieces it ultimately wants to drive all of the thinking and takes over. Then it just feels like you're deferring your experienced judgement. I've seen colleagues lose the ability to reason any more without asking the agent to do it…"
+        },
+        {
+          "by": "sajithdilshan",
+          "text": "> I’ve been lucky to work with and manage a lot of great senior engineers. When I think about what made them great, I keep landing on the same thing: they seemed to know what needed to be done. There’s an intuition there that I’ve always admired. This is so true. Every senior engineer I've worked with knew what needs to be done regardless how big a particular initiative/project was. Most of the…"
+        }
+      ],
+      "image": "https://sunilsadasivan.com/static/first-principles-thinking-social.png"
+    },
+    {
+      "id": 49845952,
+      "url": "https://www.washingtonsun.com/technology/classified-estimates-nsa-paying-billions-to-test-ai-models",
+      "hn": "https://news.ycombinator.com/item?id=49845952",
+      "title": "Classified estimates show the NSA is paying billions to test AI models",
+      "time": 1790350055,
+      "depth": [
+        {
+          "text": "the NSA is spending **billions** testing AI models for potential **national security vulnerabilities**",
+          "tier": "simple"
+        },
+        {
+          "text": "The **exact amount** remains unclear: funding comes from classified portions of the federal national security budget, and **computing power** is the biggest cost so far. Lawmakers think a broader **AI oversight system** could cost tens of billions of dollars per year.",
+          "tier": "substance",
+          "data": [
+            [
+              "NSA AI testing spend",
+              "billions of dollars in taxpayer funds this year"
+            ],
+            [
+              "Broader AI oversight estimate",
+              "tens of billions of dollars per year"
+            ],
+            [
+              "AI Security and Innovation Act estimate",
+              "roughly $20 million per year"
+            ],
+            [
+              "House reporting and tracking bill",
+              "$36 million in total over the next five years"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters doubt the NSA is only testing models and suspect broader surveillance or hacking; others say the agency’s AI use is unsurprising or even money well spent.",
+      "comment_count": 97,
+      "terms": [
+        "frontier model",
+        "third-party audit",
+        "zero-shot classification",
+        "LLM",
+        "social engineering"
+      ],
+      "entities": [
+        "NSA",
+        "Artificial Intelligence Security Center",
+        "AI Security and Innovation Act",
+        "Congressional Budget Office",
+        "Google",
+        "OpenAI",
+        "Anthropic",
+        "Elon Musk",
+        "Donald Trump",
+        "Encode",
+        "Nathan Calvin",
+        "AI Verification and Evaluation Research Institute",
+        "Nat Purser"
+      ],
+      "comments": [
+        {
+          "by": "paimapi",
+          "text": "I feel like any AI regulation passed wouldn't have enough teeth to rein in the NSA because not even the Fourth Amendment seems applicable to the agency. let's not forget the ex-post-facto legalization of mass wiretapping and surveillance [0] with both establishment political parties supporting it on 'national security' concerns [1]. whatever monitoring or testing they're doing today will be…"
+        },
+        {
+          "by": "rdtsc",
+          "text": "I guess I would be more surprised if the headline said \"turns out NSA dropped the ball on AI and haven't even fired up a single LLM instance yet\". It's mostly about \"testing\" and \"billions\". But I am sure \"testing\" here is in quotes just like I wrote it. They are not going to get an itemized list unless it's coming from Snowden 2.0 - We \"tested AI\" on this Russian nuclear silo command and control…"
+        },
+        {
+          "by": "bhouston",
+          "text": "\"Testing\"? Sure, Jan. They would have to be incompetent if they were not using them both for security penetration as well as social engineering / election meddling as everyone else is."
+        },
+        {
+          "by": "robinsinclair",
+          "text": "I seem to recall a certain former NSA affiliated person speaking on the conjecture of NSA Full Capture from fiber optic taps at a HOPE conference many many years ago. The statements alluded to automated custom robotic “drive shufflers” for even the tape and drive libraries already in use at that time, and heavily implied that in some cases exotic storage was being handled by Rube Goldberg style…"
+        },
+        {
+          "by": "jawiggins",
+          "text": "An underappreciated aspect of LLMs is how good they are at zero-shot classification. I'd expect this is extremely good at monitoring communications streams, particularly in foreign languages."
+        }
+      ],
+      "image": "https://static.washingtonsun.com/dims4/default/20a9fb0/2147483647/strip/true/crop/4500x2531+0+422/resize/1440x810!/quality/90/?url=https%3A%2F%2Fk2-prod-aji.s3.us-east-1.amazonaws.com%2Fbrightspot%2F93%2F3a%2F9de8050f4750b3d0066f0092a434%2Fap25006783508147.jpg"
+    },
+    {
+      "id": 49843550,
+      "url": "https://tante.cc/2026/09/24/the-test/",
+      "hn": "https://news.ycombinator.com/item?id=49843550",
+      "title": "The Test",
+      "time": 1790338442,
+      "depth": [
+        {
+          "text": "the post argues tech leaders' **outrageous admissions** are a **test**, and we should **push back**",
+          "tier": "simple"
+        },
+        {
+          "text": "The writer quotes **Jensen Huang** saying he doesn't know his address or phone number, then argues interviewers risk losing access if they challenge powerful guests. The proposed response is to **push back** and **fail the test**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say interviewers should challenge Huang; others say Klein's role was to explain Huang's worldview, not win a debate.",
+      "comment_count": 85,
+      "terms": [
+        "LLM",
+        "abstraction",
+        "sycophancy",
+        "agentic AI",
+        "litmus test"
+      ],
+      "entities": [
+        "Jensen Huang",
+        "NVIDIA",
+        "Ezra Klein",
+        "Marc Andreessen",
+        "Sam Altman",
+        "ChatGPT",
+        "OpenAI",
+        "Satya Nadella",
+        "Microsoft Copilot",
+        "Donald Trump",
+        "Google Maps",
+        "Google",
+        "William Gibson",
+        "Count Zero",
+        "Dario Amodei"
+      ],
+      "comments": [
+        {
+          "by": "titzer",
+          "text": "I don't think it's unreasonable to limit a person's total wealth to, say, 100x the median person's lifetime earnings. In America, the median income is about $50k/yr. So 40 years as a wage earner means $2 million. With compounded interest, inflation, and wage growth, it's still under $10 million. So if we capped individual net worth at 100x that, it'd be $1 billion. The fact that we live in a…"
+        },
+        {
+          "by": "tangled",
+          "text": "As others have said: this was not a good faith discussion. Huang was using the interview as an opportunity to “talk his book”, and Klein was using it to sell his own Serious Interviewer brand. Both were getting something out of this. Given this arrangement, Klein had a limited ability to push back (well, he could, but that would mean a bunch of future interviews wouldn’t happen). Instead, he left…"
+        },
+        {
+          "by": "RGS1811",
+          "text": "This post resonates with me but for reasons not given in it. It calls to mind Immanuel Kant's famous essay \"What is Enlightenment?\" Where he says this: > Enlightenment is man's emergence from his self-imposed immaturity. Immaturity is the inability to use one’s understanding without guidance from another. This immaturity is self-imposed when its cause lies not in lack of understanding, but in…"
+        },
+        {
+          "by": "jpitz",
+          "text": "Counterpoint: the person who understands how do to a task without the tool often winds up being the more capable user of the tool."
+        },
+        {
+          "by": "NKosmatos",
+          "text": "So many truths in this post…\nWith regards to division and mathematics, I remembered this article/study I saw some time ago about a maths professor handing out “crooked” calculators to the whole class and then having them take an exam.\nMost of the kids took the results from the calculators as they were, without challenging them and hence failed the test. The minority had the knowledge and critical…"
+        }
+      ],
+      "image": "https://tante.cc/wp-content/uploads/2026/09/fkc9ewrnlgy-e1790281859783.jpg"
     }
   ],
   "glossary": {
@@ -1555,6 +1903,27 @@
     "benchmark": "A test people use to compare how well different tools do a task.",
     "local-first": "Software designed to keep your data under your control, rather than making a remote service the only home for it.",
     "CRDTs": "Conflict-free replicated data types: a way for copies of shared information to combine changes and stay in sync.",
-    "version control": "A way to keep a record of file changes so people can see or return to earlier versions."
+    "version control": "A way to keep a record of file changes so people can see or return to earlier versions.",
+    "supports": "Extra material printed underneath overhanging parts so they hold their shape; it can be removed afterward.",
+    "push-fit assembly": "A way to connect pieces by pressing them together, without glue.",
+    "clearance": "The extra space between parts that lets them fit together without getting stuck.",
+    "STL file": "A file that stores a 3D shape so a 3D printer can use it.",
+    "FDM printing": "Fused deposition modeling: a 3D printer builds an object by laying down melted plastic in layers.",
+    "decision model": "A program that weighs possible choices and predicts or selects one.",
+    "calibrated answers": "Answers with confidence scores meant to match how often those answers are actually right.",
+    "forward pass": "One run through a model to produce an answer, rather than building it one piece at a time.",
+    "SDK": "Software Development Kit: tools a company provides so people can make apps for its device.",
+    "first principles thinking": "Starting with what you’re trying to do and why, instead of letting familiar assumptions pick the answer.",
+    "agentic development": "Using AI agents to carry out parts of building software.",
+    "codebase": "The files and code that make up a software project.",
+    "learning loops": "A repeated cycle of trying something, seeing what happens, and using that to choose the next step.",
+    "frontier model": "One of the most capable, newest AI models available.",
+    "third-party audit": "A check of an AI system done by someone outside the company that made it.",
+    "zero-shot classification": "Getting an AI to sort something into a category without first giving it examples of that category.",
+    "social engineering": "Tricking or persuading people into revealing information or doing something.",
+    "abstraction": "When you don't have to deal with the messy details of how something gets done.",
+    "sycophancy": "Excessive praise or agreement with someone, often to keep them pleased.",
+    "agentic AI": "AI that can take steps toward a task instead of only answering a question.",
+    "litmus test": "A way to judge something using one revealing question or situation."
   }
 }
