@@ -8,11 +8,10 @@ from .models import luna
 
 
 PROMPT_KO = Path(__file__).resolve().parent / "prompt.ko.md"
-# Names a Korean reader reads in Hangul: Korean companies, and places that land in
-# `entities` (the prompt makes places ordinary Korean words). Either spelling passes
-# the check. One missing here fails it, so its card ships English and the log names
-# it: add it then. Measured: 1 Korean company among 227 names on 86 cards; "US"
-# failed a 09-22 card as 미국.
+# Names a Korean reader reads in Hangul: Korean companies. Either spelling passes the
+# check. One missing here fails it, so its card ships English and the log names it:
+# add it then. Places are kept out of `entities` by prompt.md instead (five 09-24
+# cards failed on them); "US" stays for cards written before that.
 KOREAN_NAMES = {"Samsung": "삼성", "US": "미국"}
 # Measured on the same 10 cards: the user preferred medium's glance on 9 of 10, at
 # $0.0013 a card against high's $0.0025. Low wrote list-like detail for $0.0006.

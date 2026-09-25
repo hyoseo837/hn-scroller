@@ -89,7 +89,8 @@ leans on another hard word has explained nothing.
 - Bad: "private equity = Investment funds that pool capital to buy privately held businesses or take
   public companies private" — "pool capital" and "take private" are more jargon
 
-**entities** — the companies, projects, languages and people named. Short canonical names.
+**entities** — the companies, projects, languages and people named. Short canonical names. No places:
+the Korean pass writes them as ordinary Korean words, and a listed name must stay in Latin letters.
 
 ## Highlighting
 
