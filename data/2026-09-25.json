@@ -836,6 +836,620 @@
         }
       ],
       "image": null
+    },
+    {
+      "id": 49843269,
+      "url": "https://go.dev/blog/simd-experiment",
+      "hn": "https://news.ycombinator.com/item?id=49843269",
+      "title": "Platform-Independent SIMD in Go",
+      "time": 1790336826,
+      "depth": [
+        {
+          "text": "Go is testing **fast vector code** that adapts to different chips, with a **software fallback**",
+          "tier": "simple"
+        },
+        {
+          "text": "Go 1.27 introduces an **experimental, platform-independent SIMD interface** that hides differences between chip families and **emulates missing operations**. It currently supports AVX, AVX2, and AVX512 on amd64, NEON on arm64, and wasm’s SIMD instructions.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: fans see portable SIMD as a performance win; skeptics say Go’s bigger issue is C/C++ interop overhead, and autovectorisation remains an unaddressed gap.",
+      "comment_count": 83,
+      "terms": [
+        "SIMD",
+        "vector",
+        "emulation",
+        "AVX, AVX2, AVX512",
+        "NEON",
+        "wasm",
+        "autovectorisation"
+      ],
+      "entities": [
+        "Go",
+        "SIMD",
+        "simd",
+        "archsimd",
+        "Highway",
+        "C++",
+        "amd64",
+        "AVX",
+        "AVX2",
+        "AVX512",
+        "arm64",
+        "NEON",
+        "wasm"
+      ],
+      "comments": [
+        {
+          "by": "ImJasonH",
+          "text": "https://imjasonh.github.io/playground/palette-swap/ swaps colors in a provided image in wasm, entirely locally in your browser, to benchmark portable SIMD vs non-portable archsimd vs non-SIMD. Portable SIMD is ~11% slower than non-portable SIMD in this case, but both are ~5x faster than non-SIMD."
+        },
+        {
+          "by": "sixdimensional",
+          "text": "I did some testing with the experimental SIMD on a project I was doing to make speech-to-text and text-to-speech models run natively in Go (with CGO_ENABLED=0, so no C depenencies), and testing non-SIMD w/ SIMD. I don't have formal benchmarks for that, but I can anecdotally say the SIMD work made a measurable improvement in the performance of the calculations vs. just plain Go. I'm very…"
+        },
+        {
+          "by": "mshockwave",
+          "text": "Just want to say among many portable SIMD solutions I’ve seen recently (e.g. Fearless SIMD), this is the first that makes non-fixed vectors like SVE and RISC-V vector (RVV) easier to support. Glad to see they made this decision"
+        },
+        {
+          "by": "u8",
+          "text": "This is why I love Go. Nobody was asking for this, but they took the time to do it right and continue to Push go as a memory safe, high-level systems language."
+        },
+        {
+          "by": "beached_whale",
+          "text": "C++ is getting std::simd in the latest version and I am all aboard writing the vectorization with the least amount of intrinsic builtins I am able to. Even if not optimal, it's far better than the scalar ops."
+        }
+      ],
+      "image": "https://go.dev/doc/gopher/gopher5logo.jpg"
+    },
+    {
+      "id": 49839664,
+      "url": "https://jardo.dev/what-about-rails",
+      "hn": "https://news.ycombinator.com/item?id=49839664",
+      "title": "What About Rails?",
+      "time": 1790304616,
+      "depth": [
+        {
+          "text": "someone says Rails’ creator moved a flagship app away while offering Rails developers **little direction**",
+          "tier": "simple"
+        },
+        {
+          "text": "At Rails World 2026, David Heinemeier Hansson said 37signals is building the next Hey as **native apps**, with **Rust on the server**. He claimed he wrote 150k lines in August against about 30k per year before LLMs, but the author says those numbers **aren’t comparable**.",
+          "tier": "substance",
+          "data": [
+            [
+              "DHH’s claimed code output in August",
+              "150k lines of code"
+            ],
+            [
+              "pre-LLM average",
+              "about 30k lines per year"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say Rails is finished as AI changes how software gets built; others say writing Rails off is premature and its future needs clearer leadership.",
+      "comment_count": 134,
+      "terms": [
+        "Rails",
+        "LLM",
+        "CLI",
+        "native app",
+        "Rust",
+        "fork",
+        "BDFL",
+        "agent"
+      ],
+      "entities": [
+        "Jared Norman",
+        "David Heinemeier Hansson",
+        "37signals",
+        "Rails",
+        "Rails World",
+        "Hey",
+        "Ruby",
+        "Rust",
+        "Basecamp",
+        "Fizzy",
+        "Hanami",
+        "Mosscap",
+        "Shopify",
+        "Evil Martians",
+        "Omarchy",
+        "Sentry",
+        "Tobi Lütke",
+        "Django",
+        "Laravel",
+        "Spring Boot",
+        "Claude",
+        "Kotlin",
+        "http4k",
+        "Fastmail",
+        "Proton",
+        "ONCE",
+        "Visual Basic",
+        "Rack",
+        "Merb",
+        "HAML",
+        "ERB",
+        "Jdbi",
+        "Python",
+        "Java",
+        "Hibernate",
+        "ActiveRecord",
+        "New Relic",
+        "Raspberry Pi",
+        "Rework"
+      ],
+      "comments": [
+        {
+          "by": "Twey",
+          "text": "> 37signals differentiates their products with opinionated UI/UX, not novel features. They are rewriting Hey as six native apps because the web fidelity isn’t good enough. So UI matters enough to justify complete rewrites, but also everyone just wants CLIs? I've seen this one a few times lately. People should stop building UIs, nobody wants to interact with a UI. Everyone's app should just be an…"
+        },
+        {
+          "by": "captainclam",
+          "text": "\"If every product is used by an agent driving a CLI, what’s going to differentiate Basecamp or Fizzy from the cheapest alternative?\" At that point, why even bother with \"driving a CLI\"? I have a hard time seeing how this all doesn't go away soon. At the current trajectory, I am not seeing a future where software like Basecamp or Fizzy or the cheapest alternative are competitive with \"Claude…"
+        },
+        {
+          "by": "jkartchner",
+          "text": "I know this is not exactly a nuanced take, but why would anyone take advice about the future of technology whose contributions are now limited to an opinionated email app? I appreciate that tech is and will change even more, but relegating an entire ecosystem to the dustbin because you're feeling bullish about LLMs seems...premature."
+        },
+        {
+          "by": "bionsystem",
+          "text": "As an SRE I would be very interested on experienced devs point of view on that stance, \"we don’t even necessarily need to read the code the LLMs produce\". To me, that is the only way a single dev can manage > 1 agent. Because I feel running the code will always be slower than a single agent generating it. On the other hand, it implies lack of human understanding on what is going on under the…"
+        },
+        {
+          "by": "paultopia",
+          "text": "Two slightly disconnected thoughts: 1. This is why BDFL culture in open source is bad. Because if the BDFL decides to go all in on some completely bizarre mess, all of a sudden there’s massive fork politics. 2. Hey is the marquee product now?? Does anyone actually use Hey? I tried it for a year, and basically found I was paying for the privilege of having a slower, buggier, less feature-rich…"
+        }
+      ],
+      "image": "https://d1jt649tmk2is2.cloudfront.net/?url=https%3A%2F%2Fjardo.dev%2Fog-previews%2Fwhat-about-rails&w=1200&h=630&sig=d345cfdde64b4770fbc9ef64b69d5bec84e26429c4aaa6d4bbde30ec1a19ece8"
+    },
+    {
+      "id": 49841285,
+      "url": "https://nyaa.sh/reviews/mac-mini-m6-emulation",
+      "hn": "https://news.ycombinator.com/item?id=49841285",
+      "title": "Pentium II at 600Mhz with Voodoo 3 Emulated on 86Box with M6 Mac Mini",
+      "time": 1790321265,
+      "depth": [
+        {
+          "text": "someone got a **Mac Mini** to emulate a **600MHz Pentium II** with Voodoo 3 graphics",
+          "tier": "simple"
+        },
+        {
+          "text": "The custom 86Box build had to stay at **100%** with no audible dropouts: the M6 passed at **600MHz**, while the M4 topped out at 500MHz. The test ran Cinebench 2000 alongside Winamp audio; a 650MHz run failed after one or two audio underruns.",
+          "tier": "substance",
+          "data": [
+            [
+              "M6 highest passing clock",
+              "600MHz"
+            ],
+            [
+              "M4 highest passing clock",
+              "500MHz"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 90,
+      "terms": [
+        "emulation",
+        "cycle-accurate",
+        "single-threaded",
+        "audio underrun"
+      ],
+      "entities": [
+        "Mac Mini M6",
+        "Mac Mini M4",
+        "86Box",
+        "Pentium II",
+        "Voodoo 3",
+        "Cinebench 2000",
+        "3DMark 2000 SE",
+        "Winamp",
+        "Apple Silicon"
+      ],
+      "comments": [
+        {
+          "by": "cloverich",
+          "text": "Brings back memories; so much nostalgia. I still remember clearly the first real graphics card (I think it was voodoo) I got and when I fired up TFC (which I'd played sans graphics card up to then), just staring at the water for a bit and being amazed by it. The funny thing too is when 3d graphics were first taking over, the games themselves didn't look as nice as the former 2d ones; I remember…"
+        },
+        {
+          "by": "9x39",
+          "text": "Going from software rendering to hardware acceleration back then was good times. Quake II & IIIa Tribes & Tribes II Half-Life, TFC, Counter-Strike Morrowind Unreal Those moments will never return..."
+        },
+        {
+          "by": "lobster45",
+          "text": "Total blast from the past. I remember I bought my Voodoo 1. It was the Diamond 3DFX card. I bought it in 1995 and it was amazing. GL was so optimized. For gl quake. Back then Windows, Direct 3D was just slow. But then later Nvidia started to come out with more capable gpus such as TNT and they eventually took over the gaming market."
+        },
+        {
+          "by": "cbm-vic-20",
+          "text": "I had a fair amount of shares of TDFX back in the day, rode it all the way to their bankruptcy. NVDA bought the scraps and left retail shareholders like me with nothing. In a different reality, if 3dfx could have survived to the AI-era..."
+        },
+        {
+          "by": "kar1181",
+          "text": "86box is really fun, and the m4+ macs are great at running it. I've been working on a custom OS designed specifically for the pentium 2 core/isa (trying to write an high performance *nix for 1997-1999 for quake 1/2). 86box runs very faithfully to the real silicon p2s (and voodoo 3) I have without the nuisance of having to copy code over to it in development."
+        }
+      ],
+      "image": "https://nyaa.sh/images/mac-mini-m6-emulation.webp"
+    },
+    {
+      "id": 49843174,
+      "url": "https://github.com/git-bug/git-bug",
+      "hn": "https://news.ycombinator.com/item?id=49843174",
+      "title": "Git-bug: Distributed, offline-first bug tracker embedded in Git",
+      "time": 1790336311,
+      "depth": [
+        {
+          "text": "someone made a **bug tracker** in **Git** that works **offline** and syncs through Git remotes",
+          "tier": "simple"
+        },
+        {
+          "text": "Bugs move through your usual **Git remotes** with `git bug push` and `git bug pull`, and it adds **no files** to the project. It also offers CLI, terminal and web interfaces, plus **bridges** to import from and export to GitHub, GitLab, Jira and Launchpad.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: fans like having bugs in Git; skeptics say tickets need broad access or should stay separate from Git.",
+      "comment_count": 58,
+      "terms": [
+        "offline-first",
+        "Git remote",
+        "bridge",
+        "CLI"
+      ],
+      "entities": [
+        "git-bug",
+        "Git",
+        "GitHub",
+        "GitLab",
+        "Jira",
+        "Launchpad"
+      ],
+      "comments": [
+        {
+          "by": "michaelmure",
+          "text": "Hi, author here, nice to see some interest :-) FYI, this is my near-term roadmap: - have the webui accept external auth (like github oauth) so that it can be a public portal and accept external interactions\n- have the webui expose a git remote endpoint\n- slightly rework identities (and likely root them in did:plc for pubkey distribution, the identity system from bluesky, without being an ATProto…"
+        },
+        {
+          "by": "jason_oster",
+          "text": "I tried git-bug a few months ago, and https://github.com/git-bug/git-bug/issues/1023 is a showstopper. There is a workaround, but it isn't pretty. You can push/pull bugs and identities with normal, ssh-agent-less git commands: https://gist.github.com/parasyte/80ef925d4b01216f6bcb051356f..."
+        },
+        {
+          "by": "teddyh",
+          "text": "Just for those people for whom this might be a new concept: There is actually a fair number of these distributed bug trackers: < https://news.ycombinator.com/item?id=22833037 >"
+        },
+        {
+          "by": "imagent",
+          "text": "You can also do code reviews in pure git: https://github.com/google/git-appraise I used git bug before but found I missed being able to edit tickets with a Markdown editor. So I built this: https://github.com/LoumTechnologies/ticketry"
+        },
+        {
+          "by": "Izkata",
+          "text": "A few months ago there was another of these posted, called Epiq: https://news.ycombinator.com/item?id=48155570 My comment on there is about a surge in popularity of these over a decade ago, with a link to a previous comment about problems I remember them having that prevented them from being usable for most people ( https://news.ycombinator.com/item?id=47956979 ), because of their intended design…"
+        }
+      ],
+      "image": "https://repository-images.githubusercontent.com/140680839/98c44d00-69a6-11e9-9a1c-a6265bc3bcd9"
+    },
+    {
+      "id": 49842487,
+      "url": "https://economist.com/europe/2026/09/24/the-mafia-may-be-keeping-fentanyl-out-of-italy",
+      "hn": "https://news.ycombinator.com/item?id=49842487",
+      "title": "The Mafia may be keeping fentanyl out of Italy",
+      "time": 1790331620,
+      "depth": [
+        {
+          "text": "the post asks if the **Mafia** is keeping **fentanyl out of Italy**, and commenters debate the claim",
+          "tier": "simple"
+        },
+        {
+          "text": "Some commenters see **business protection** in keeping dangerous drugs out; others say that repeats the **Godfather myth** and glosses over the Mafia's hard-drug dealing. One commenter points to **80 vials** reported missing from a Rome hospital and reports of more users on the city's outskirts.",
+          "tier": "substance",
+          "data": [
+            [
+              "vials reported missing",
+              "80"
+            ]
+          ]
+        }
+      ],
+      "camps": "Some read the claim as business-minded restraint; others say it romanticizes the Mafia and ignores its history of hard-drug dealing.",
+      "comment_count": 234,
+      "terms": [
+        "CLV",
+        "MRR",
+        "integral",
+        "wastewater drug monitoring",
+        "metabolites",
+        "detection limit",
+        "OD"
+      ],
+      "entities": [
+        "Mafia",
+        "The Godfather",
+        "Ndrangheta",
+        "Apple",
+        "Yakuza",
+        "Orson Welles",
+        "Giovanni Falcone",
+        "FBI",
+        "Capone",
+        "Trump"
+      ],
+      "comments": [
+        {
+          "by": "gumby",
+          "text": "It’s CLV (customer lifetime value): the integral of the MRR. Something most companies mentioned on HN should understand though it feels like Apple is the only one that takes it seriously (And with Apple’s new CEO, the early signs are that commitment is headed for the ash heap as well, but it seems the Mafia may have a longer horizon)"
+        },
+        {
+          "by": "bilekas",
+          "text": "I'm no expert, but I've always thought that adding much more risk to the lives of your customers unnecessarily is not good for business."
+        },
+        {
+          "by": "pluc",
+          "text": "This was the way it worked up here (in QC) with the 81s. If you sold shit that could draw attention to you, your organization or suppliers, you were swiftly taught not to. They had decent quality control, but as their grip slipped so did quality. Now we get fentanyl overdoses weekly."
+        },
+        {
+          "by": "hnrprtlpdb",
+          "text": "Did wastewater drug monitoring for a while, and the annoying bit was fentanyl metabolites sitting near the detection limit, so absence isn't proof."
+        },
+        {
+          "by": "qoez",
+          "text": "I always assumed this was an america-only drug that no one actually does or at least not to the excess that it's claimed by the publications using it for the normal fear journalism purposes."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49845977,
+      "url": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
+      "hn": "https://news.ycombinator.com/item?id=49845977",
+      "title": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
+      "time": 1790350165,
+      "depth": [
+        {
+          "text": "a court **upheld the Pentagon’s move** to label Anthropic a **supply chain risk**",
+          "tier": "simple"
+        },
+        {
+          "text": "The Pentagon wanted **unfettered access** to Claude for all lawful purposes, while Anthropic sought assurances it would not be used for **fully autonomous weapons** or domestic mass surveillance. The 2-1 ruling upheld one of two designations; another federal court had already ruled the parallel designation unlawful, and Anthropic can seek a rehearing or ask the Supreme Court to take the case.",
+          "tier": "substance",
+          "data": [
+            [
+              "ruling",
+              "2-1"
+            ],
+            [
+              "Pentagon contract",
+              "$200 million"
+            ]
+          ]
+        }
+      ],
+      "camps": "Some commenters call the designation politically motivated or vindictive; others say it follows from the Pentagon rejecting a vendor’s restrictions, and that national-security decisions deserve deference.",
+      "comment_count": 193,
+      "terms": [
+        "supply chain risk",
+        "en banc rehearing",
+        "fully autonomous weapons",
+        "DOD"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude",
+        "Pentagon",
+        "Department of Defense",
+        "U.S. Court of Appeals for the District of Columbia",
+        "Trump administration",
+        "Donald Trump",
+        "Gregory Katsas",
+        "Neomi Rao",
+        "Karen LeCraft Henderson",
+        "Dario Amodei",
+        "Pete Hegseth",
+        "Supreme Court"
+      ],
+      "comments": [
+        {
+          "by": "prometheus1992",
+          "text": "This smells like corruption to me. OpenAI has hacked several prominent entities and is allowed to do business as usual but Anthropic putting guardrails on the military's usage of AI is the national security threat while Pentagon itself said that over reliance on AI lead to that attack on school in Minab. I have also learned that OpenAI's president is a big maga donor and now I am thinking of…"
+        },
+        {
+          "by": "ApolloFortyNine",
+          "text": "I know everyone says this is political but it actually seems like a textbook designation. Anthropic wanted to have rules on how the military used AI, the military said no and therefore doesn't want anthropic used anywhere in their supply line. This is like a pen manufacturer not wanting their pens used to sign drone strike orders, now the military needs to have a special box of pens that don't…"
+        },
+        {
+          "by": "iamdelirium",
+          "text": "I wonder if this is going start being abused soon. If I was Palantir or any other GOP aligned company, I would be completely against this. What's to stop a Democratic president from doing the same thing and destroying them?"
+        },
+        {
+          "by": "petcat",
+          "text": "I still don't fully understand what this was about. It sounds like the DoD said they wanted unrestricted access to Anthropic's models, Anthropic refused, so the Pentagon declared that they wouldn't use them at all. Isn't this basically what Anthropic wanted?"
+        },
+        {
+          "by": "gip",
+          "text": "I don’t agree with the decision, but I don’t think courts should be able to easily overturn the federal government’s findings when it comes to national security in a specific decision like this."
+        }
+      ],
+      "image": "https://image.cnbcfm.com/api/v1/image/108285631-1774986195722-gettyimages-2268688342-raa-anthropi260331_npMR4.jpeg?v=1774986237&w=1920&h=1080"
+    },
+    {
+      "id": 49844786,
+      "url": "https://www.jefftk.com/p/allow-carriers-on-planes",
+      "hn": "https://news.ycombinator.com/item?id=49844786",
+      "title": "Allow Carriers on Planes",
+      "time": 1790344810,
+      "depth": [
+        {
+          "text": "someone wants the FAA to reconsider its **baby-carrier ban** during **takeoff and landing**",
+          "tier": "simple"
+        },
+        {
+          "text": "The FAA's **1994 study** tested car seats and other restraints, but not **babywearing carriers** or holding a baby on a lap. The author argues modern carriers may be safer than arms and should be tested—or **not banned by default**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters say waking a sleeping baby strapped to a parent's chest feels absurd; others warn carriers can cause crush injuries or fail in crashes.",
+      "comment_count": 168,
+      "terms": [
+        "FAA",
+        "rulemaking",
+        "belly belt",
+        "anthropomorphic test dummy"
+      ],
+      "entities": [
+        "FAA",
+        "CAA",
+        "JAA",
+        "EASA",
+        "CAMI",
+        "American Airlines",
+        "Claude"
+      ],
+      "comments": [
+        {
+          "by": "areoform",
+          "text": "There is a deeper issue, in a crash, a poorly secured rigid baby carrier seat becomes a potentially lethal projectile. Worst comes to worst, today, the projectile is an infant. An infant is substantially softer and less massive than a rigid seat containing an infant. For soft babywearing carriers, the outlook is also grim. The kinematics of the baby, adult, carrier and airplane seat lead to crush…"
+        },
+        {
+          "by": "MostlyStable",
+          "text": "The decision to not require seats is one of the best regulatory decisions I have ever heard of, and I wish this kind of thought process was more present in all kinds of places. The funny thing is that, I bet if it were used more broadly, given the absolutely enormous safety advantage that flying has over basically any other mode of transportation, there would be a non trivial number of other…"
+        },
+        {
+          "by": "gregwtmtno",
+          "text": "I have a unique perspective on this as a former federal rulemaker. One thing you should know is that when it comes to rulemaking, the FAA isn't an ordinary rulemaker--they do the most of it and they're the best in the business. When I went to my intro to rule making classes, the FAA always rolled deep. If you want a change and you want to make sure the right people see your request, I suggest you…"
+        },
+        {
+          "by": "silver92bullet",
+          "text": "I think this is a way that airlines and the FFA could continue to grow in consideration. At some point the economics of flying with children starts to make less and less sense. I just flew with a toddler that was under 2 from the mainland US to Hawaii and back. The toddler is just under 2 so he was considered a lap child to fly free. However at 2 the child for most airlines graduates to a full…"
+        },
+        {
+          "by": "tadzikpk",
+          "text": "As a parent of 3 kids and an extensive baby-carrier user, I see your argument but I think you're lacking consideration of the failure modes. Yes, almost every baby carrier would likely restrain the infant better than add-on infant belt if the adult lap belt rides up over the infant carrier, the infant's going to be crushed between the adult and the belt. Not a good outcome. Thus you're likely…"
+        }
+      ],
+      "image": "https://www.jefftk.com/baby-in-carrier-on-plane-big.jpg"
+    },
+    {
+      "id": 49835531,
+      "url": "https://resobscura.substack.com/p/ai-labs-need-to-start-funding-historical",
+      "hn": "https://news.ycombinator.com/item?id=49835531",
+      "title": "Using LLMs to trace alchemical knowledge and decode 17th century letters",
+      "time": 1790277267,
+      "depth": [
+        {
+          "text": "someone is using **LLMs** to trace **alchemical knowledge** and decode **17th-century letters**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says their attempts at **17th-century handwriting** were a nightmare; others call this a **strong use for LLMs**. A skeptic says the texts’ **hermetic meaning** can never be expressed in words.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some call this a strong use for LLMs; others say alchemical texts’ hermetic meaning can never be expressed in words.",
+      "comment_count": 38,
+      "terms": [
+        "LLMs",
+        "alchemical",
+        "hermetic",
+        "MCP",
+        "API",
+        "embeddings",
+        "benchmark"
+      ],
+      "entities": [
+        "SourceLibrary.org",
+        "Res Obscura",
+        "Embassy of the Free Mind",
+        "UNESCO",
+        "GPT3.5",
+        "Claude 5.5"
+      ],
+      "comments": [
+        {
+          "by": "J1philli",
+          "text": "Modern machines uncovering ancient secrets feels like modern magic"
+        },
+        {
+          "by": "loufe",
+          "text": "I've been using AI to help with my genealogical research, and it's been fantastic. I am loving pushing the family history back and catching mistakes that someone who many others share as a common ancestor have made."
+        },
+        {
+          "by": "dr_dshiv",
+          "text": "FWIW, I have tried my best to make the 10s of thousands of books on https://SourceLibrary.org ergonomic for both agents and people. All feedback welcome. To date, it is the largest collection of agent-accessible translations on the web. The mcp pulls texts and illustrations — and the API provides access to the embeddings. It’s free. We are based at the Embassy of the Free Mind in Amsterdam, a…"
+        },
+        {
+          "by": "whythismatters",
+          "text": "Great post, thank you! So, let's resolve ancient Near East chronology and determine an absolute date for the sack of Babylon?"
+        },
+        {
+          "by": "z_rho_one",
+          "text": "Great use case of AI. Almost 4 years after the sensational release of GPT3.5, the best use case of AI is still being a powerful search engine that can gather information from all corners of the digital world."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49842270,
+      "url": "https://www.inkandswitch.com/",
+      "hn": "https://news.ycombinator.com/item?id=49842270",
+      "title": "Ink and Switch Interactive Homepage",
+      "time": 1790329825,
+      "depth": [
+        {
+          "text": "someone made Ink & Switch's homepage a **playable art piece** for its **tenth anniversary**",
+          "tier": "simple"
+        },
+        {
+          "text": "The lab calls it **Tenfold**—ten letters for ten years—and says it was built with **technology from its research**. Visitors are told to click and drag, though one commenter found the interactions inconsistent.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters found the homepage fun and on-brand; another said its click-and-drag behavior felt inconsistent and frustrating.",
+      "comment_count": 21,
+      "terms": [
+        "local-first",
+        "CRDTs",
+        "version control"
+      ],
+      "entities": [
+        "Ink & Switch",
+        "Tenfold",
+        "Ambsheets",
+        "Livelymerge",
+        "Embark",
+        "Allume",
+        "Muse",
+        "Automerge",
+        "Patchwork",
+        "PlayBook",
+        "Backstitch",
+        "Godot",
+        "Local-First Conf"
+      ],
+      "comments": [
+        {
+          "by": "zazuke",
+          "text": "They have one of the best articles out there, and now the page is great too. Fun and innovative.\nMy favorite article, in case you haven't read it already, is local-first [1], or I recently read the embark, dynamic documents for making plans. These always give me so much inspiration. [1] https://www.inkandswitch.com/essay/local-first/\n[2] https://www.inkandswitch.com/embark/"
+        },
+        {
+          "by": "krisoft",
+          "text": "> Play with it! Click/drag everywhere. It looks cool! But man is it frustrating that nothing is consistent. Some things change when I click. Some things change when I drag. Some things seemingly doesn't do anything at all. If it is intentionally like that, great. But I just don't find the experience pleasant."
+        },
+        {
+          "by": "evek",
+          "text": "They are also some of the folks behind the Local-first conference. Recordings: https://www.youtube.com/@localfirstconf/videos Recap: https://www.inkandswitch.com/newsletter/dispatch-019/"
+        },
+        {
+          "by": "Topfi",
+          "text": "Their articles are always worth a read, especially their efforts on CRDT are a great inspiration for improving UX. Not sure I’m getting the full experience of this homepage on mobile though, will have to check later."
+        },
+        {
+          "by": "hnisjafx40",
+          "text": "Ink and Switch's stuff always makes me want to go rebuild something, and the homepage being playable is very on brand for them. Curious how much of it is bespoke versus falling out of their own Automerge tooling."
+        }
+      ],
+      "image": "https://www.inkandswitch.com/project/tenfold/story/L1010553-Edit-16x9.webp"
     }
   ],
   "glossary": {
@@ -897,6 +1511,50 @@
     "AI": "Artificial intelligence: computer systems designed to do tasks people associate with thinking.",
     "Gen Alpha": "The name the article uses for the group of young people it discusses.",
     "slop": "Low-quality material; here, the article uses it for AI-made content it describes as cheap and of dubious value.",
-    "Ride of the Valkyries": "A piece of music that one commenter says they can’t hear without thinking of “Kill the Wabbit.”"
+    "Ride of the Valkyries": "A piece of music that one commenter says they can’t hear without thinking of “Kill the Wabbit.”",
+    "SIMD": "Single Instruction, Multiple Data: a way to apply one operation to several values at once.",
+    "vector": "A group of values a computer can work on together.",
+    "emulation": "Software that imitates an operation a chip cannot do directly, so the program can still run.",
+    "AVX, AVX2, AVX512": "Names for extra CPU commands that let some chips work on several values at once.",
+    "NEON": "A set of extra CPU commands for working on several values at once.",
+    "wasm": "Short for WebAssembly, a way to run code across different kinds of computers and browsers.",
+    "autovectorisation": "When a compiler automatically turns ordinary code into work on several values at once.",
+    "Rails": "A set of ready-made tools for making web apps with Ruby.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "CLI": "Command-Line Interface: a way to control a computer by typing commands instead of clicking buttons.",
+    "native app": "An app built for a particular kind of device, rather than opened as a website.",
+    "Rust": "A programming language; commenters say 37signals used it for the Hey backend.",
+    "fork": "A separate copy of a shared software project that people can take in a different direction.",
+    "BDFL": "Benevolent Dictator for Life: a project leader who has the final say over its direction.",
+    "agent": "An AI system that can take steps and use tools to get a task done, not just answer questions.",
+    "cycle-accurate": "Matching the timing of the original computer closely, so its programs behave as they did on the real machine.",
+    "single-threaded": "Work handled by one processor core, rather than shared across several cores.",
+    "audio underrun": "When there isn’t sound ready to play, causing a brief dropout.",
+    "offline-first": "Built so you can keep working without an internet connection and share updates later.",
+    "Git remote": "Another copy of a Git repository that you can send changes to or pull changes from.",
+    "bridge": "A connector for bringing bug reports to or from another tracker.",
+    "CLV": "Customer lifetime value: how much money a business expects to make from one customer over time.",
+    "MRR": "Monthly recurring revenue: money a business expects to bring in each month from ongoing payments.",
+    "integral": "A way of adding up many tiny amounts to find a total across time.",
+    "wastewater drug monitoring": "Testing sewage for traces of drugs used by people in an area.",
+    "metabolites": "Substances the body makes as it processes a drug.",
+    "detection limit": "The smallest amount a test can reliably pick up.",
+    "OD": "Overdose: taking enough of a drug to cause serious harm or death.",
+    "supply chain risk": "A government label for a company seen as a national-security threat, which can keep its products out of government work.",
+    "en banc rehearing": "A request for all judges on an appeals court to reconsider a ruling.",
+    "fully autonomous weapons": "Weapons that can choose and attack targets without a person making each decision.",
+    "DOD": "Department of Defense: the U.S. government department that oversees the military.",
+    "FAA": "Federal Aviation Administration: the US agency that sets rules for air travel.",
+    "rulemaking": "The process a government agency uses to create or change rules.",
+    "belly belt": "A belt that attaches a child around an adult's waist using the adult's seat belt.",
+    "anthropomorphic test dummy": "A crash-test dummy shaped like a person, used to show how a body might move in a crash.",
+    "alchemical": "Related to alchemy, an old tradition concerned with changing materials and exploring nature.",
+    "hermetic": "Hard to understand because the meaning is hidden or obscure.",
+    "MCP": "Model Context Protocol: a standard way for AI apps to connect to outside tools.",
+    "embeddings": "Numbers that represent the meaning of text so software can search or compare it.",
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "local-first": "Software designed to keep your data under your control, rather than making a remote service the only home for it.",
+    "CRDTs": "Conflict-free replicated data types: a way for copies of shared information to combine changes and stay in sync.",
+    "version control": "A way to keep a record of file changes so people can see or return to earlier versions."
   }
 }
