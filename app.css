@@ -68,6 +68,7 @@ body {
 }
 #feed::-webkit-scrollbar { display: none; }
 #feed.locked { overflow-y: hidden; }
+#feed.paging { scroll-snap-type: none; } /* js/swipe.js drives vertical touch; snap would fight it */
 
 /* horizontal axis: depth within one post */
 .post {
@@ -75,12 +76,12 @@ body {
   scroll-snap-align: start;
   display: flex;
   overflow-x: scroll;
+  touch-action: pan-x pinch-zoom; /* vertical is js/swipe.js's */
   scroll-snap-type: x mandatory;
   overscroll-behavior-x: contain;
   scrollbar-width: none;
 }
 .post::-webkit-scrollbar { display: none; }
-.post.wall { scroll-snap-stop: always; } /* set by nav.js: how far one flick can carry */
 
 .card {
   flex: 0 0 100%;

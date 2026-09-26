@@ -133,3 +133,8 @@ Supersedes the Node choice in the stack entry above; everything else there still
 
 **Why:** on a home screen the app had no history, so Android's back closed it even from an open sheet. While a sheet is open or depth > 0 one entry sits on top: back closes the sheet, then returns to the glance, then leaves. Closing from inside the app takes the entry back off, so no back press is ever a dead one.
 **Rejected:** a permanent entry (back at the glance would need two presses to leave); an entry per level (a sheet over depth would need unwinding that the one entry already gives, as it is re-pushed while depth > 0).
+
+## 2026-09-26 — Vertical touch is paged in JS, one post per swipe
+
+**Why:** `scroll-snap-stop: always` cut the browser's glide off at the next post, which read on a phone as the app cancelling the scroll; without it a hard flick skipped posts. No CSS sets glide friction, so the feed follows the finger and glides one post on release. Depth swipes, wheel and keys stay native.
+**Rejected:** snap-stop on every post (the cut-off); no snap-stop (skips posts); snap-stop on the post two away (the same cut-off, later).

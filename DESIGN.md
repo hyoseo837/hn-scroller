@@ -137,8 +137,8 @@ everything else gets out of its way.
 ## Layout
 
 - Frame: 390×844 centred column on desktop (≥481px wide), full-bleed on a phone.
-- Vertical scroll-snap = next post; horizontal = depth. `scroll-snap-stop: always` on depth; vertically
-  only on the post two away from where a touch starts, so a flick moves one or two posts.
+- Vertical scroll-snap = next post; horizontal = depth. A swipe moves exactly one card, however
+  hard: native `scroll-snap-stop` on depth, `js/swipe.js` on vertical touch (glides, never cuts off).
 - Card padding 84 / 36 / 132px; the glance card's bottom is 92px so the sentence sits low, just clear
   of the buttons. Chrome (header, buttons) sits at 20px from the edge, text at 36px.
 - Header: name · date (opens calendar) · position `3/24` · depth dots. Transparent over a glow.

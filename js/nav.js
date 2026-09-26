@@ -82,19 +82,6 @@ feed.addEventListener(
   { passive: true },
 );
 
-// Friction for touch: a flick may pass a post, not fly through a day. The post
-// REACH away is a snap wall, re-set per touch so it counts from where the flick starts.
-const REACH = 2;
-feed.addEventListener(
-  "touchstart",
-  () => {
-    feed.querySelectorAll(".wall").forEach((node) => node.classList.remove("wall"));
-    feed.children[post + REACH]?.classList.add("wall");
-    if (post >= REACH) feed.children[post - REACH].classList.add("wall");
-  },
-  { passive: true },
-);
-
 // One wheel gesture = one card. Mandatory snap turns a small delta into a
 // snap-back, and trackpad momentum fires dozens of events per flick, so the
 // cooldown is what stops a single swipe from flying past ten posts.
