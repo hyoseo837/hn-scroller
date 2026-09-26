@@ -138,3 +138,8 @@ Supersedes the Node choice in the stack entry above; everything else there still
 
 **Why:** `scroll-snap-stop: always` cut the browser's glide off at the next post, which read on a phone as the app cancelling the scroll; without it a hard flick skipped posts. No CSS sets glide friction, so the feed follows the finger and glides one post on release. Depth swipes, wheel and keys stay native.
 **Rejected:** snap-stop on every post (the cut-off); no snap-stop (skips posts); snap-stop on the post two away (the same cut-off, later).
+
+## 2026-09-26 — Cloudflare Web Analytics, beacon added to `index.html` by hand
+
+**Why:** the user turned on Web Analytics for the Pages project, but no deployment ever carried the injected beacon — not production, not a preview, not after adding `</body>`. The hand-added snippet was checked on a preview and live: one tag, and `cdn-cgi/rum` answers 204. Cloudflare documents it as cookieless (not measured here); its token is public by design.
+**Rejected:** relying on Pages' automatic injection (never appeared); closing `</body>` as the fix (tested on a preview, still no beacon).

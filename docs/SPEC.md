@@ -59,7 +59,7 @@ Rules:
 
 | Action | Result |
 |---|---|
-| Swipe up | Next post, always at depth 1. |
+| Swipe up | Next post, always at depth 1 — exactly one, however hard the flick. |
 | Swipe right | Deeper into this post. |
 | Swipe left | Back out. **Required before swipe up works** — depth locks the vertical axis. |
 | Revisit a post | Starts at depth 1. Depth is not remembered. |

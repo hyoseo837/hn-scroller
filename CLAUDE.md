@@ -9,18 +9,17 @@ No framework, no build step, no server, zero dependencies.
 
 | Part | Choice |
 |---|---|
-| Viewer | Vanilla HTML/CSS/JS. `scroll-snap-type` gives the 2D card grid natively. |
+| Viewer | Vanilla HTML/CSS/JS. `scroll-snap-type` gives the 2D card grid; vertical touch is paged by `js/swipe.js`, one post per swipe. |
 | Generator | `generate/`, a Python package run as `python3 -m generate`; stdlib only (`urllib`), OpenAI Responses REST (no SDK). No `requirements.txt`. |
 | Data | Static JSON per day in `data/`, plus `data/index.json` so the calendar knows which days exist. |
-| Host + cron | Cloudflare Pages on `hn.hyoseo.dev` (domain already in Cloudflare); GitHub Actions every 6h commits the day's JSON, and the push triggers the deploy. |
+| Host + cron | Cloudflare Pages on `hn.hyoseo.dev` (domain already in Cloudflare); GitHub Actions every 6h commits the day's JSON, and the push triggers the deploy. Web Analytics beacon is hand-added at the end of `index.html`. |
 | Client state | `localStorage`: resume position and language only. |
 
 - `index.html` is markup only; styles in `app.css`, behaviour in `js/` (classic scripts, one scope, base first, boot last).
 - PWA manifest for the home-screen icon. No service worker until offline reading is actually wanted.
 - Scheduled Actions started 3-5 h late on the hour (six runs; now minute 37, unmeasured) and get
   **disabled on repos with no recent activity** (~60 days) — verify the bot's commits count, or the app dies.
-- Pages serves the repo root, so `generate/`, prompt included, is public. Nothing secret is in
-  it (`.env` is gitignored), but the prompt is the part worth keeping if that ever matters.
+- Pages serves the repo root, so `generate/`, prompt included, is public. Nothing secret is in it (`.env` is gitignored).
 
 ## Commands
 
@@ -96,4 +95,5 @@ Anti-rules — don't create: `README` sections duplicating `SPEC.md`, per-featur
 
 - Pull before touching `data/`: the bot pushes it at 00/06/12/18:37 UTC (possibly hours late) with a plain `git push`, and a push mid-run makes its push fail.
 - Viewer checks: headless Chromium at `~/.cache/ms-playwright/chromium_headless_shell-1148/chrome-linux/headless_shell` (`--screenshot`, `--dump-dom`) over `python3 -m http.server`. It renders no frames, so smooth scroll never runs: dispatch `scroll` events by hand.
+- Gestures: `chromium-1148/chrome-linux/chrome --headless=new` over CDP runs rAF and takes `Input.dispatchTouchEvent`. Feel is judged on the user's phone: push a branch, Pages previews it at `<branch>.hn-scroller.pages.dev`.
 - Pages answers any missing path with `index.html` and a 200, so a missing script shows up as a syntax error, not a 404.
