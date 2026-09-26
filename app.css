@@ -80,6 +80,7 @@ body {
   scrollbar-width: none;
 }
 .post::-webkit-scrollbar { display: none; }
+.post.wall { scroll-snap-stop: always; } /* set by nav.js: how far one flick can carry */
 
 .card {
   flex: 0 0 100%;
