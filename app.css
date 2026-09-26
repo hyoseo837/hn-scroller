@@ -73,8 +73,6 @@ body {
 .post {
   height: 100%;
   scroll-snap-align: start;
-  /* Without this a fast flick carries past a snap point and skips a post. */
-  scroll-snap-stop: always;
   display: flex;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;

@@ -137,8 +137,8 @@ everything else gets out of its way.
 ## Layout
 
 - Frame: 390×844 centred column on desktop (≥481px wide), full-bleed on a phone.
-- Vertical scroll-snap = next post; horizontal = depth. `scroll-snap-stop: always` on both, so a
-  flick moves exactly one card.
+- Vertical scroll-snap = next post; horizontal = depth. `scroll-snap-stop: always` on depth only:
+  a hard flick may pass several posts, as in any feed.
 - Card padding 84 / 36 / 132px; the glance card's bottom is 92px so the sentence sits low, just clear
   of the buttons. Chrome (header, buttons) sits at 20px from the edge, text at 36px.
 - Header: name · date (opens calendar) · position `3/24` · depth dots. Transparent over a glow.
