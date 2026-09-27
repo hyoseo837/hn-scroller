@@ -1188,6 +1188,195 @@
         }
       ],
       "image": null
+    },
+    {
+      "id": 49854219,
+      "url": "https://mitxela.com/projects/flipflip",
+      "hn": "https://news.ycombinator.com/item?id=49854219",
+      "title": "Flip Fluid on Flip Dots",
+      "time": 1790409024,
+      "depth": [
+        {
+          "text": "someone put a **fluid simulation** on a flipdot display, so its dots make their own noise",
+          "tier": "simple"
+        },
+        {
+          "text": "The installation was built for **EMF2026**. The author made **new driver boards** for old panels, but an initial test flipping every dot at once failed when the **power supply voltage dropped**.",
+          "tier": "substance",
+          "data": [
+            [
+              "panel resolution",
+              "13 by 28"
+            ],
+            [
+              "dot flip time",
+              "around 60 milliseconds"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 19,
+      "terms": [
+        "FLIP",
+        "flipdot display",
+        "H-bridge",
+        "shift register",
+        "non-volatile",
+        "capacitor",
+        "PCB",
+        "GPIO",
+        "BJT",
+        "negative supply rail"
+      ],
+      "entities": [
+        "FLIP",
+        "EMF2026",
+        "Breakfast Studio",
+        "Sam",
+        "Look Mum No Computer",
+        "AlfaZeta",
+        "Hanover",
+        "Mike",
+        "mikeselectricstuff",
+        "KiCad",
+        "CH32V003",
+        "MX6208",
+        "BE6208",
+        "LK6208",
+        "FDN338P",
+        "JST ZH"
+      ],
+      "comments": [
+        {
+          "by": "aiiotnoodle",
+          "text": "He mentions in the video and in the article Breakfast Studio and I happened to watch a video of one of their panels on an unrelated YouTube channel. I've skipped ahead to when the video has the panel. (there is also a cool egg just before that point in the video) it's only about 5 seconds. https://youtu.be/2fRx64OTAeI?si=FJDW3OGYLRK0rYox&t=681 It's really cool to see some innovation in flip-dots…"
+        },
+        {
+          "by": "steventhedev",
+          "text": "I'm always amazed by the precision work this guy does. My only nit with this article was he didn't link the Eurovision entry: https://youtu.be/I0tqgGVQkew"
+        },
+        {
+          "by": "hankbond",
+          "text": "This was awesome! I was looking forward to a satisfying video of the panel in action tho... Did I miss it somewhere?"
+        },
+        {
+          "by": "userbinator",
+          "text": "The dots are so delicate, with tiny magnet wires and soft plastic that can melt, that it has to be done very carefully. Even with the very best desoldering equipment it would take forever. Put a hot air gun on the back of the board, and they'll either just drop out or do so with a small poke of the pins."
+        },
+        {
+          "by": "bobek",
+          "text": "I have recently resurrected one from an old bus — https://www.bobek.cz/buse/"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49867067,
+      "url": "https://unsung.aresluna.org/they-had-no-concept-of-a-duty-of-care-to-their-users/",
+      "hn": "https://news.ycombinator.com/item?id=49867067",
+      "title": "Installing NeoVim caused original Vim undo files to be deleted",
+      "time": 1790520307,
+      "depth": [
+        {
+          "text": "someone says NeoVim deleted their **saved Vim undo history**, so they stopped trusting it",
+          "tier": "simple"
+        },
+        {
+          "text": "David Chisnall says NeoVim **changed the undo-file format**, **deleted Vim's existing undo file**, then replaced it with one Vim couldn't read. Commenters disagree over whether persistent undo should protect users' work or whether they were treating it like a backup.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say Neovim should have warned before deleting existing undo files; others say persistent undo is not a backup and users should not rely on it.",
+      "comment_count": 216,
+      "terms": [
+        "persistent undo",
+        "undo file",
+        "version control",
+        "backwards compatibility"
+      ],
+      "entities": [
+        "NeoVim",
+        "Vim",
+        "David Chisnall"
+      ],
+      "comments": [
+        {
+          "by": "jeremyjh",
+          "text": "This story has no references that support the author's version of events, but it does appear to be substantially true that: 1. The change would break undo history, for both Neovim and Vim. 2. This means Neovim would delete data created by a different program, on another user's computer. 3. This was known before the feature was released. 4. They did it anyway. I don't think there can really be any…"
+        },
+        {
+          "by": "tpoacher",
+          "text": "For similar functionality in nano, if anyone's interested, every time you save, nano keeps a backup. Not on by default, you have to enable it in your .nanorc (not least because you need to provide a backup folder where you want to store these backups). Very handy. Occasionally I've deleted files accidentally or made destructive changes, and could restore a working version from the past as if I…"
+        },
+        {
+          "by": "gavinhoward",
+          "text": "As a Neovim user, this stopped me dead with painful realization: I may have suffered the same thing but didn't realize it. There was a time when I could not undo something, and it was after a Neovim upgrade. Unlike Dr. Chisnall, I started my editor journey on Neovim, so it wasn't a transition that bit me. However, if the format of the persistent undo file is unstable, and Neovim just deletes it…"
+        },
+        {
+          "by": "sdcfgy",
+          "text": "I've used vim since the first time it appeared in Debian repos. I have been told a thousand times that NeoVim is better, more modern and solves many (conveniently never cited) issues. I just ignored it and carried on. Feeling terribly vindicated at this point as it's a feature I use regularly and have no idea that it would be an issue in NeoVim."
+        },
+        {
+          "by": "RVuRnvbM2e",
+          "text": "Undo files and persistent undo are not meant to work that way. They are just persistent across process restarts. That's all. They live in ~/.cache which is defined as \"user-specific non-essential (cached) data\". Despite this user's impressive résumé, they simply misunderstood the feature."
+        }
+      ],
+      "image": "https://unsung.aresluna.org/_media/they-had-no-concept-of-a-duty-of-care-to-their-users/ogimage.jpg"
+    },
+    {
+      "id": 49867038,
+      "url": "https://hereticpleb.vercel.app/blog/10-tells-of-slop",
+      "hn": "https://news.ycombinator.com/item?id=49867038",
+      "title": "10 Tells of a Slop UI",
+      "time": 1790520086,
+      "depth": [
+        {
+          "text": "someone listed the **AI design habits** that make interfaces feel **samey and sloppy**",
+          "tier": "simple"
+        },
+        {
+          "text": "The examples include **gradients everywhere**, random colours, pulsing badges, fingernail cards, misaligned bits and **leftover prompt text** like “Built with Hugo. Written from Neovim”. The author says vibe coding itself isn't the problem; it’s the **lack of effort** to make the result look good.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say the repeated AI defaults make interfaces genuinely sloppy; others say pre-AI websites were often mediocre too, and rough edges can come from being new to frontend work.",
+      "comment_count": 159,
+      "terms": [
+        "vibe coding",
+        "LLM",
+        "glassmorphism",
+        "SVG",
+        "chat context"
+      ],
+      "entities": [
+        "Cloudflare",
+        "Hugo",
+        "Neovim"
+      ],
+      "comments": [
+        {
+          "by": "docheinestages",
+          "text": "I just can't fathom how a multi-billion dollar company like Cloudflare could forego their design standards. They seem to have updated their landing page [0], but it's still very sloppy. [0] https://try.cloudflare.com"
+        },
+        {
+          "by": "weakfish",
+          "text": "I’ve been trying to put my finger on what it is that is happening when the robot writes stuff like “3 campuses, one app” example, I’m glad the author was able to identify it as chat context leaking through. The other version of it is the robot over-indexing on some part of the prompt and leaving comments places. An example is I ask it to prefer integration tests using TestContainers, it starts…"
+        },
+        {
+          "by": "czhu12",
+          "text": "At least some of these are just for lack of caring. I vibe coded this landing page recently https://tui2web.com/ and fought off a lot of the defaults the LLM came up with after a few hours of iteration. Feel free to roast it, I'm not really attached, but I thought it did a reasonably good job."
+        },
+        {
+          "by": "vallerie",
+          "text": "Love this blog mentioning the issue of implementation detail in prose. Likely my biggest irk of vibe coded apps. Much of this is it's a simple problem to solve - just prompt agent of choice \"Put all user visible text into a translation file for i10n\" and then go through and edit said prose as a human."
+        },
+        {
+          "by": "not_a_bot_4sho",
+          "text": "> It adds these // whenever anything close to tech is mentioned. I've done this before, in what I would argue was tasteful at the time."
+        }
+      ],
+      "image": "https://hereticpleb.com/og-image.jpg"
     }
   ],
   "glossary": {
@@ -1283,6 +1472,23 @@
     "M365": "Microsoft 365: Microsoft's bundle of work apps and services.",
     "agent orchestration layer": "Software that coordinates automated AI helpers and the tools they use to get work done.",
     "frontier providers": "Companies making the most advanced AI systems at a given time.",
-    "OEMs": "Original Equipment Manufacturers: companies that make computers or other devices, sometimes sold under another brand's name."
+    "OEMs": "Original Equipment Manufacturers: companies that make computers or other devices, sometimes sold under another brand's name.",
+    "FLIP": "Fluid Implicit Particle: a way to simulate liquid by tracking tiny imagined bits of it as they move.",
+    "flipdot display": "A display made of little disks that turn over to show different patterns.",
+    "H-bridge": "A circuit that lets current flow through a coil in either direction, so it can push or pull.",
+    "shift register": "A chip that takes in a row of on/off signals and sends them to many outputs.",
+    "non-volatile": "Able to keep its setting even when the power is off.",
+    "capacitor": "A part that briefly stores electrical charge.",
+    "PCB": "Printed Circuit Board: a flat board that holds electronic parts and connects them with metal paths.",
+    "GPIO": "General-Purpose Input/Output: a pin on a small computer board that can send or read simple electrical signals.",
+    "BJT": "Bipolar Junction Transistor: a small electronic switch that uses a little current to control a bigger one.",
+    "negative supply rail": "A power connection set below the circuit’s usual zero level, which can help send current through a coil in the opposite direction.",
+    "persistent undo": "A feature that keeps your edit history available after you close a file or restart the program.",
+    "undo file": "A saved file holding edit history so you can reverse changes later.",
+    "version control": "A way to keep a record of file changes so people can see or return to earlier versions.",
+    "backwards compatibility": "When a newer version of a program still works with files or habits from an older version.",
+    "vibe coding": "Making software by telling an AI what you want and letting it write the code, often without closely checking how it works.",
+    "glassmorphism": "A visual style that makes panels look like see-through frosted glass.",
+    "chat context": "The earlier messages and requests an AI uses while making its next reply."
   }
 }
