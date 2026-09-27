@@ -632,6 +632,562 @@
         }
       ],
       "image": "https://castle-engine.io/images/original_size/pascal_code_sample.png"
+    },
+    {
+      "id": 49863864,
+      "url": "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal/",
+      "hn": "https://news.ycombinator.com/item?id=49863864",
+      "title": "OpenAI Feared \"Optics\" of what might appear on Hacker News",
+      "time": 1790489973,
+      "depth": [
+        {
+          "text": "OpenAI **feared the optics** of using books from a **sketchy Russian website**",
+          "tier": "simple"
+        },
+        {
+          "text": "The filings say **Microsoft knew by April 2019** that OpenAI used LibGen, and quote a 2022 message asking how to remove its files. They also quote an OpenAI employee saying the work would **make people unemployed**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters say OpenAI knowingly used copyrighted books and should face consequences; others argue that job loss is ordinary technological disruption or criticize the article’s framing.",
+      "comment_count": 256,
+      "terms": [
+        "LibGen",
+        "optics",
+        "mass piracy"
+      ],
+      "entities": [
+        "OpenAI",
+        "Microsoft",
+        "Authors Guild",
+        "LibGen",
+        "Hacker News",
+        "Sam Altman",
+        "Dario Amodei",
+        "Bill Gates",
+        "Kevin Scott",
+        "Jack Clark",
+        "Tarun Gogineni",
+        "George R. R. Martin",
+        "GPT-3",
+        "GPT-5"
+      ],
+      "comments": [
+        {
+          "by": "Skyy93",
+          "text": "This is a lobby organisation using only the pieces and bits they like to push their own agenda. \"sketchy russian website\", how about using some more clear description like: A library for sharing books and articles that should be partly public domain because they were paid for by the public. Only some of the material is copyrighted by authors. However, some of their work is so old that it is not…"
+        },
+        {
+          "by": "swader999",
+          "text": "A one time settlement for this would be laughable. They should pay royalties in perpetuity or be dismantled."
+        },
+        {
+          "by": "Betelbuddy",
+          "text": "The Title should be: \"Top Execs Knew Their Mass Book Piracy Was Illegal And Would Put Authors Out of Work\""
+        },
+        {
+          "by": "papergirl",
+          "text": "Newly released court filings quote an OpenAI researcher saying: “I was just worried about optics - i.e. 'openai uses\ncopyrighted data from sketchy russian website’ showing up on HN would be unfortunate.\" That's just one of several interesting quotes that have surfaced in documents from the Authors Guild's lawsuit against OpenAI."
+        },
+        {
+          "by": "handoflixue",
+          "text": "It's wild how much weight \"they're destroying jobs\" has. I dare say that car manufacturers are aware of their impact on the horse and buggy industry. Calculator manufacturers wrecked the livelihood of mathematicians and accountants. Technology is in the business of putting people out of work, by inventing better ways of doing things. Or rather, any time you invent a better way of doing things…"
+        }
+      ],
+      "image": "https://authorsguild.org/app/uploads/2026/09/OpenAI-Day-2-Advocacy-Rectangle.jpg"
+    },
+    {
+      "id": 49856988,
+      "url": "https://antonz.org/go-concurrency-distilled/",
+      "hn": "https://news.ycombinator.com/item?id=49856988",
+      "title": "Go Concurrency Distilled",
+      "time": 1790433289,
+      "depth": [
+        {
+          "text": "someone made a **hands-on** **Go concurrency** refresher, with examples you can change and run yourself",
+          "tier": "simple"
+        },
+        {
+          "text": "It gets into **channel patterns** for pipelines and cancellation, plus error handling, timers, contexts, data races, the race detector, **mutexes**, and semaphores.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 97,
+      "terms": [
+        "goroutine",
+        "channel",
+        "pipeline",
+        "context",
+        "data race",
+        "race condition",
+        "race detector",
+        "mutex",
+        "semaphore",
+        "select",
+        "wait group"
+      ],
+      "entities": [
+        "Go",
+        "Go Concurrency Distilled",
+        "Gist of Go: Concurrency",
+        "Haskell",
+        "Java",
+        "PHP",
+        "Uber"
+      ],
+      "comments": [
+        {
+          "by": "SamInTheShell",
+          "text": "The concurrency and threading in Go just feels like magic compared to every other language. I'm a goroutine addict and I refuse to be rehabilitated. Just from observations over the years, I don't think there's any other language quite like this, in terms of how things can end up happening in any thread."
+        },
+        {
+          "by": "voidfunc",
+          "text": "Ive been writing Go for over a decade and I still feel like I never quite \"got\" channels. Every time I use them I need to go consult the manual, and none of the patterns feel obvious which is weird considering the rest of the language feels very obvious. Too many years of Java and managing Threads and Runnables probably rotted my brain."
+        },
+        {
+          "by": "fizlebit",
+          "text": "One thing I always found more work than I would expect is when you have a graph of operations, think a Makefile, but a bit dynamic. For this model completable futures and executors seem to work well (provided the graphs is smallish), but golang is (or perhaps before generics) just was difficult."
+        },
+        {
+          "by": "kccqzy",
+          "text": "For many people, besides learning what you should do, it is more helpful to read anti-patterns and things you should not do in Go, and none is better than this article about data race patterns in Go: https://www.uber.com/us/en/blog/data-race-patterns-in-go/"
+        },
+        {
+          "by": "Jeeetendra",
+          "text": "honestly the hard part of go concurrency was never starting goroutines, it's making cancellation and shutdown behave. nice to see context, races and diagnostics in one runnable place."
+        }
+      ],
+      "image": "https://antonz.org/go-concurrency-distilled/cover.png"
+    },
+    {
+      "id": 49864642,
+      "url": "https://www.reddit.com/r/worldnews/comments/1wr3id3/meta_blocks_president_lulas_facebook_page_and/",
+      "hn": "https://news.ycombinator.com/item?id=49864642",
+      "title": "Meta Blocks President Lula's Facebook Page, Campaign Ads 2 Weeks from Election",
+      "time": 1790498644,
+      "depth": [
+        {
+          "text": "Meta blocked **Lula's Facebook page** and **campaign ads** two weeks before Brazil's election",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: some see calculated election interference; others think it may have been a moderation mistake or an attempt to curb disinformation.",
+      "comment_count": 155,
+      "terms": [
+        "classifier",
+        "disinformation",
+        "Balkanisation"
+      ],
+      "entities": [
+        "Meta",
+        "Facebook",
+        "Lula"
+      ],
+      "comments": [
+        {
+          "by": "Etiquette8790",
+          "text": "American terrorists cry wolves about election interference in their country during election period. But the real fact is they interfere in democracy and democratic process across every part of the world. This is to help bolsenaro and destroy BRICS."
+        },
+        {
+          "by": "ocd",
+          "text": "He said the thing that Canada, Greenland, Cuba, and various other countries are worried about, but is either publicly ignored in the US or dismissed as \"trolling\" by the president. https://www.theguardian.com/world/2026/sep/25/lula-says-trum..."
+        },
+        {
+          "by": "condenser",
+          "text": "Facebook election interference has been going on for a long time in Europe. It's a two-tier system where parties outside the establishment have a far lower ban-threshold."
+        },
+        {
+          "by": "abroszka33",
+          "text": "I hope Lula wins and they will ban Facebook for good after the elections. This is an attack on Brazil’s sovereignty."
+        },
+        {
+          "by": "KingOfCoders",
+          "text": "The US empire at work. Luckily for all of us its 1955 and the empire is on its last legs."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49862809,
+      "url": "https://theborys.substack.com/p/what-is-the-size-of-yemen",
+      "hn": "https://news.ycombinator.com/item?id=49862809",
+      "title": "What is the size of Yemen? (2024)",
+      "time": 1790476826,
+      "depth": [
+        {
+          "text": "someone questioned **Yemen's listed size**, and commenters say a **decades-old mistake** was eventually corrected",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter says someone found a **“correct looking number”** in a **Yemen government document published in 2005** and updated Wikipedia on 3 December. Another remembered hearing that the border with Saudi was undefined, and wondered if that ambiguity meant sources kept carrying old figures.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 64,
+      "terms": [
+        "spherical geometry"
+      ],
+      "entities": [
+        "Wikipedia",
+        "Google Maps",
+        "Deming"
+      ],
+      "comments": [
+        {
+          "by": "walrus01",
+          "text": "I think a more important question is whether Yemen still exists as as single coherent political entity with the same borders as seen on ANY of those maps, which given the present situation, it clearly does not. edit: map here https://understandingwar.org/research/middle-east/iran-updat... and here: https://yemen.liveuamap.com/"
+        },
+        {
+          "by": "em-bee",
+          "text": "this was posted on 27. of november 2024. on the 3rd of december someone found a correct looking number in a yemen government document which was published in 2005 and updated wikipedia. so at least the country itself was not under any illusion of being bigger than they actually are."
+        },
+        {
+          "by": "kqr",
+          "text": "This reminds me of what Deming used to say: there is no correct value for any measurement, there are only the outcomes of methods chosen to measure something."
+        },
+        {
+          "by": "burlesona",
+          "text": "What I wonder is why anyone noticed this in the first place. Who saw the size of the country in Wikipedia and thought, “really? Let me trace that in Google maps, just to be sure…”"
+        },
+        {
+          "by": "asveikau",
+          "text": "I remember hearing from a Yemeni American in the late 90s that the border with Saudi was not defined (mentioned in the article). I wonder if this could be explained more simply that a few sources didn't bother to update this over time due to the ambiguity, they just carried over what had been published before."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49863062,
+      "url": "https://blog.codinghorror.com/if-we-do-not-stop-to-help-each-other-what-do-we-become/",
+      "hn": "https://news.ycombinator.com/item?id=49863062",
+      "title": "If we do not stop to help each other, what do we become?",
+      "time": 1790479246,
+      "depth": [
+        {
+          "text": "someone remembers **Stack Overflow strangers** helping during a siege, and worries AI answers can’t replace **human connection**",
+          "tier": "simple"
+        },
+        {
+          "text": "During the **Zamboanga Siege**, the writer was serving in the Air Force and studying remotely; strangers on Stack Overflow nudged him when he got stuck. He says an LLM could have answered his questions, but not made him feel **somebody cared**, and urges people to build online communities that belong to them.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say Stack Overflow built skills and community; others remember its toxicity and prefer AI for troubleshooting.",
+      "comment_count": 74,
+      "terms": [
+        "LLM",
+        "IRC"
+      ],
+      "entities": [
+        "Stack Overflow",
+        "John Carmack",
+        "Microsoft Surface",
+        "GrapheneOS",
+        "Flarum",
+        "Docker",
+        "ChatGPT",
+        "Quora",
+        "Reddit",
+        "Hacker News",
+        "X",
+        "Discourse"
+      ],
+      "comments": [
+        {
+          "by": "pech0rin",
+          "text": "Stack overflow was one of the best ways to learn and mature as an engineer “back in the day”. The\nmeme is that devs would copy and paste and hope it worked. The reality was more like you had an obscure bug, you wrote a detailed and cohesive question, and you connected with people who were more knowledgable and would help you. It also sharpened your writing and thinking. By responding to questions…"
+        },
+        {
+          "by": "kstenerud",
+          "text": "Maybe I'm remembering a different Stack Overflow. Yes, there were genuinely helpful people there. I strove to be helpful as well. But my most common experience there was: - People asking why you're doing that (without answering the question). - People telling you that you shouldn't do that (without answering the question or providing an alternative). - People closing your question as off-topic or…"
+        },
+        {
+          "by": "Cider9986",
+          "text": "On the GrapheneOS forum, I enjoy answering the questions in a post of user who just set up their phone. AI does not have as good knowledge of the OS as frequent forum contributors. I'm sure plenty of people get by with AI help for their questions and there's likely little questions that hasn't been already discussed, but I love to see new people using the OS and it doesn't take long to give them…"
+        },
+        {
+          "by": "gfody",
+          "text": "the sense of community on the internet from 1995 to 2010 was incredible. industry devs running into tricky situations and just asking for help on irc, newsgroups like comp.lang.*, then forums, places like expert-sexchange and gamedev.net - the people that helped were like heroes and mentors and the urge to pay it forward was real and strong. stackoverflow was cool when it first launched - then…"
+        },
+        {
+          "by": "altcognito",
+          "text": "We had better have even more time to help each other as a result of LLMs, or what are we even doing here? I realize that everything seems to be about increasing the pace of life, but this is another \"chance\" for humanity to figure things out."
+        }
+      ],
+      "image": "https://storage.ghost.io/c/eb/aa/ebaa2665-01a8-4415-8825-69d1f0e8fd19/content/images/size/w1200/2026/09/helping-each-other-repair.jpg"
+    },
+    {
+      "id": 49832768,
+      "url": "https://www.movingimagearchive.com/",
+      "hn": "https://news.ycombinator.com/item?id=49832768",
+      "title": "A searchable library of forgotten public-domain film clips from 1915 onward",
+      "time": 1790266302,
+      "depth": [
+        {
+          "text": "someone made a **searchable library** of forgotten **public-domain film clips** from 1915 onward",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says **most of the content** is from the Internet Archive; another says **searchability** could unlock historical insights.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some see searchability as the value; others ask what it adds when most of the material is already on the Internet Archive.",
+      "comment_count": 26,
+      "terms": [
+        "public domain",
+        "found footage",
+        "open source",
+        "indexing pipeline",
+        "pagination"
+      ],
+      "entities": [
+        "Internet Archive",
+        "Library of Congress",
+        "Mobygratis",
+        "destockd",
+        "Moving Image Archive",
+        "Periscope Films",
+        "YouTube"
+      ],
+      "comments": [
+        {
+          "by": "paweladamczuk",
+          "text": "This is really lovely. I think it's pretty obvious that it bases on sources like Internet Archive and the Library of Congress, but it does add value. I just wonder if it can survive - is there a business model here? If not, it's just a tech demo and then it doesn't have value as the hosted version, it would have it if the whole processing/indexing pipeline was open sourced so that anyone can host…"
+        },
+        {
+          "by": "ynac",
+          "text": "If you are feeling inspired by the project to edit a found footage awesome thing, here's https://mobygratis.com - an amazing gift to filmmakers and a pretty snazzy listening experience for (semi-)library music."
+        },
+        {
+          "by": "tomalbrc",
+          "text": "This is a much worse version of destockd. https://www.destockd.com/ https://news.ycombinator.com/item?id=49689005\nhttps://news.ycombinator.com/item?id=49599206"
+        },
+        {
+          "by": "pmdulaney",
+          "text": "I don't see how to access the search function. All I see are example videos."
+        },
+        {
+          "by": "akiselev",
+          "text": "Just found an amateur video of San Francisco from 1940: https://www.movingimagearchive.com/sources/amateur-film-san-... And 1932! https://www.movingimagearchive.com/sources/san-francisco-by-..."
+        }
+      ],
+      "image": "https://www.movingimagearchive.com/og-cat-20260922.png"
+    },
+    {
+      "id": 49858810,
+      "url": "https://www.aljazeera.com/economy/2026/9/25/japan-moves-to-tighten-rules-for-foreigners-throwing-futures-into-doubt",
+      "hn": "https://news.ycombinator.com/item?id=49858810",
+      "title": "Japan moves to tighten rules for foreigners",
+      "time": 1790444591,
+      "depth": [
+        {
+          "text": "Japan is making **permanent residency** **harder**, leaving some long-term residents unsure whether they can stay",
+          "tier": "simple"
+        },
+        {
+          "text": "The rules take effect in phases from October 1: applicants must show that their **annual household income exceeds the Japanese average**, demonstrate Japanese-language proficiency, and have a pension pot equivalent to **30 years of payouts**. The income requirement applies retroactively to applications submitted since April.",
+          "tier": "substance",
+          "data": [
+            [
+              "Phased rules begin",
+              "October 1"
+            ],
+            [
+              "Pension pot requirement",
+              "30 years of payouts"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters say Japan should be able to limit immigration to protect its culture; critics say the new rules are harsh and could worsen labor shortages.",
+      "comment_count": 496,
+      "terms": [
+        "permanent residency",
+        "retroactively",
+        "pension pot",
+        "dual nationality",
+        "rightward shift"
+      ],
+      "entities": [
+        "Abdul",
+        "Sarah Nelkin",
+        "Risa Hagiwara",
+        "Sanae Takaichi",
+        "Sohei Kamiya",
+        "Al Jazeera",
+        "Immigration Services Agency",
+        "Liberal Democratic Party",
+        "Japan Innovation Party",
+        "Sanseito",
+        "Institute of Social Science",
+        "University of Tokyo",
+        "Meikai University",
+        "OECD",
+        "Japanese"
+      ],
+      "comments": [
+        {
+          "by": "crakhamster01",
+          "text": "> By some estimates, Japan’s foreign-born population could reach the OECD average of 10 percent by 2070. Ignoring whether the new rules are reasonable, the most baffling part of all this is how small the foreign population in Japan is. Things are undoubtedly harder for the average Japanese citizen these days, but foreigners make up just 3% of the population. Targeting this cohort, I can't imagine…"
+        },
+        {
+          "by": "famahar",
+          "text": "It's really unfortunate that they have approved these changes. I know at least 7 people that have decided to leave Japan because of it. They were making enough money to support themselves, but under the rule they basically gave no chance of ever reaching that new income requirement. Some jobs just don't have that much upward financial mobility. Which is fine if you live outside the city without a…"
+        },
+        {
+          "by": "lazyasciiart",
+          "text": "This is certainly going to conflict with their moves to make it easier to attract aged care workers to the country. Perhaps all the elderly people are expected to patriotically look after themselves? https://unseen-japan.com/foreign-elderly-care-workers-japan/"
+        },
+        {
+          "by": "thatslast",
+          "text": "> 56.3 percent of Japanese people said they opposed accepting more foreigners, up from 35.6 percent in 2024 that's a huge jump in 1 year. What happened?"
+        },
+        {
+          "by": "zorobo",
+          "text": "When in Rome do as the romans.\nDifferent cultural habits can shock Japanese; this has nothing to do with race. There are lots of ethnic Japanese, born and raised in Brazil, who went on to work & live in Japan. Many street signs in Nagoya are in Japanese and Portuguese. However, they are direct, outspoken, have late loud parties that annoy the general population. It will take a generation to…"
+        }
+      ],
+      "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/2022-07-28T000000Z_727329248_RC2WKV91832S_RTRMADP_3_HEALTH-CORONAVIRUS-JAPAN-1790306821_fdb20f-1790306997_14bc47-1790311260_05ea92-1790315682.jpg?resize=1200%2C630&quality=80"
+    },
+    {
+      "id": 49857729,
+      "url": "https://tangled.org/yanndegat.tngl.sh/drawgent",
+      "hn": "https://news.ycombinator.com/item?id=49857729",
+      "title": "Drawgent: Coding agent on a live Excalidraw canvas",
+      "time": 1790438194,
+      "depth": [
+        {
+          "text": "someone hooked their **coding agent** up to a **live whiteboard** it can edit alongside them",
+          "tier": "simple"
+        },
+        {
+          "text": "Drawgent connects your own **Claude Code, Codex or opencode** setup to Excalidraw. The agent looks at the canvas and **edits it live**; `--diagram` can also keep a standard `.excalidraw` file in your repo in sync.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: supporters say live diagrams could help brainstorm or scaffold ideas; skeptics say it may not beat typing and AI-made diagrams still feel like slop.",
+      "comment_count": 42,
+      "terms": [
+        "ACP",
+        "MCP",
+        "CLI"
+      ],
+      "entities": [
+        "Drawgent",
+        "Excalidraw",
+        "Claude Code",
+        "Codex",
+        "opencode"
+      ],
+      "comments": [
+        {
+          "by": "seemaze",
+          "text": "Excalidraw offers their own open source first party MCP endpoint[0] and server[1]: [0] https://mcp.excalidraw.com [1] https://github.com/excalidraw/excalidraw-mcp"
+        },
+        {
+          "by": "armanj",
+          "text": "I've had a fairly thorough exploration of how I can give my agent a whiteboard so we can work on architectures together. To my surprise, current solutions (including Excalidraw) were not good enough and didn't deliver what I wanted. I ended up finding Mermaid to be the most agent-friendly medium and coded an Obsidian plugin for it. It works okay; we can work on the same doc while I bring my own…"
+        },
+        {
+          "by": "4ndrewl",
+          "text": "YMMV, but the value I get from producing a diagram is derived from the thinking. Thinking about what I'm trying to draw leads to understanding about where my/my team's knowledge is poorer, what assumptions we're making, etc."
+        },
+        {
+          "by": "bad_haircut72",
+          "text": "Posted this somewhere else aswell but I've had good success with https://whiteboard-mcp.com - it seems to work better than other free alternatives for things like architecture diagram creation"
+        },
+        {
+          "by": "raesene9",
+          "text": "One other option, if you're an obsidian user is, just add the excalidraw plugin there, and then you can ask your agent to just create excalidraw diagrams as needed. Definitely Opus 5.5 via claude code has no problems generating Excalidraw images with no additional software, just based on conversation."
+        }
+      ],
+      "image": "https://tangled.org/yanndegat.tngl.sh/drawgent/opengraph"
+    },
+    {
+      "id": 49844896,
+      "url": "https://www.bloomberg.com/news/articles/2026-09-25/microsoft-abandons-personal-ai-chatbot-race-with-copilot-reboot",
+      "hn": "https://news.ycombinator.com/item?id=49844896",
+      "title": "Microsoft abandons personal AI chatbot race with Copilot reboot",
+      "time": 1790345228,
+      "depth": [
+        {
+          "text": "Microsoft is **rebooting Copilot** as it steps away from the **personal AI chatbot race**",
+          "tier": "simple"
+        },
+        {
+          "text": "The comments focus on confusion over Copilot's **many names and add-ons**. One commenter says Microsoft should provide an **agent orchestration layer** for its operating system and productivity software instead of competing with **frontier providers**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Copilot subscriptions at end of June",
+              "more than 30 million"
+            ],
+            [
+              "Microsoft 365 paying users",
+              "about 90 million"
+            ],
+            [
+              "Estimated business M365 subscriptions",
+              "450 million or so"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 143,
+      "terms": [
+        "M365",
+        "agent orchestration layer",
+        "frontier providers",
+        "OEMs"
+      ],
+      "entities": [
+        "Microsoft",
+        "Copilot",
+        "Microsoft 365",
+        "VS Code",
+        "Codex",
+        "GitHub Copilot",
+        "Anthropic",
+        "Claude Cowork",
+        "OpenAI",
+        "Cortana",
+        "Microsoft Teams",
+        "Microsoft Intune",
+        "Scout",
+        "Autopilot",
+        "Copilot Studio",
+        "Agent Builder",
+        "Copilot Notebooks",
+        "Copilot Actions",
+        "Jacob Andreou"
+      ],
+      "comments": [
+        {
+          "by": "red_admiral",
+          "text": "> Companies were paying for more than 30 million Copilot subscriptions as of the end of June. And while individual users are free to use limited versions of Copilot’s chat experience, its most powerful tools are reserved for subscribers to the company’s M365 apps bundle, which has about 90 million paying users. It needs to be more widely known that if you cancel a (home) 365 subscription, you'll…"
+        },
+        {
+          "by": "TuringNYC",
+          "text": "My blood pressure rises everytime i use Enterprise Copilot at work. It seems they truncate message history heavily (to save input token costs?) and Copilot forgets the last thing you told it in the chat. It is like a real-life version of Momento ( https://www.imdb.com/title/tt0209144/ ) mixed with Waiting for Gadot ( https://en.wikipedia.org/wiki/Waiting_for_Godot ), pretending to be in league…"
+        },
+        {
+          "by": "pseudosavant",
+          "text": "Does anyone even want to try this? I'm a Windows user, M365 subscriber, VS Code user (when I'm not in Codex), had a Github Copilot subscription, etc... and a heavy AI user. Basically, the prime target for Microsoft AI. And every attempt Microsoft has made to put AI into a product has been unusable garbage, using the same models I find productive in other tools. So many AI doubters I know hate…"
+        },
+        {
+          "by": "VCFundedGenYer",
+          "text": "It was foolish of them to think they had any consumer clout left. Shoving 1000 copies of an inaccurate, poorly functioning, and inconsistent product down everyone's throat will someday be a case study in how to immediately destroy a brand."
+        },
+        {
+          "by": "joshstrange",
+          "text": "https://archive.ph/XJG5V"
+        }
+      ],
+      "image": null
     }
   ],
   "glossary": {
@@ -692,6 +1248,41 @@
     "IDE": "Integrated Development Environment: an app that brings coding and other development tools together.",
     "native code": "Code compiled into instructions a computer can run directly.",
     "reference counting": "A program tracks how many places share a value so it can manage that value as those places change.",
-    "copy on write": "A shared value is copied only when one of the places using it changes it."
+    "copy on write": "A shared value is copied only when one of the places using it changes it.",
+    "LibGen": "A source of books that the filings say OpenAI used to train its systems.",
+    "optics": "How an action looks to other people, especially if it could make someone look bad.",
+    "mass piracy": "Copying lots of books without permission.",
+    "goroutine": "A function Go starts to run alongside other work.",
+    "channel": "A way for separate pieces of Go code to send values to one another.",
+    "pipeline": "A series of steps where each step works on data and passes it to the next.",
+    "context": "A value passed along with work so it can carry a stop signal or a timeout.",
+    "data race": "When multiple pieces of work use the same data and at least one changes it.",
+    "race condition": "When the order of events can cause a program to end up in the wrong state.",
+    "race detector": "A Go tool that checks whether a program has data races.",
+    "mutex": "A lock that makes sure only one piece of work at a time uses protected code.",
+    "semaphore": "A set of slots that limits how many pieces of work can happen at once.",
+    "select": "A Go statement that checks which channel actions are ready, then runs one; if none are ready, it can wait.",
+    "wait group": "A counter that keeps track of unfinished work so a program can wait for it to finish.",
+    "classifier": "A program that sorts something into a category, such as deciding whether a message is spam.",
+    "disinformation": "False or misleading claims spread deliberately to deceive people.",
+    "Balkanisation": "A breakup into separate parts; here, it means countries or regions ending up with separate online systems.",
+    "spherical geometry": "A way to measure things that accounts for Earth's curved surface.",
+    "IRC": "Internet Relay Chat: a way to chat live with people in online rooms.",
+    "public domain": "Material people can use without asking a copyright holder for permission.",
+    "found footage": "Existing film clips reused to make something new.",
+    "open source": "Software whose code is shared so other people can inspect, run, or change it.",
+    "indexing pipeline": "A set of steps that labels and organizes material so people can search it.",
+    "pagination": "Splitting a long list of results across separate pages.",
+    "permanent residency": "Permission to live in a country indefinitely, rather than renewing a temporary visa.",
+    "retroactively": "Applied to cases from before a new rule took effect.",
+    "pension pot": "Money set aside to provide income after someone retires.",
+    "dual nationality": "Being legally recognized as a citizen of two countries at once.",
+    "rightward shift": "A move toward more conservative political positions.",
+    "ACP": "Agent Client Protocol: a shared way for an AI agent and an app to talk to each other.",
+    "MCP": "Model Context Protocol: a standard way for AI apps to connect to outside tools.",
+    "M365": "Microsoft 365: Microsoft's bundle of work apps and services.",
+    "agent orchestration layer": "Software that coordinates automated AI helpers and the tools they use to get work done.",
+    "frontier providers": "Companies making the most advanced AI systems at a given time.",
+    "OEMs": "Original Equipment Manufacturers: companies that make computers or other devices, sometimes sold under another brand's name."
   }
 }
