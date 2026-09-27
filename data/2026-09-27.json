@@ -1,0 +1,697 @@
+{
+  "date": "2026-09-27",
+  "cards": [
+    {
+      "id": 49858513,
+      "url": "https://github.com/reladraw/reladraw",
+      "hn": "https://news.ycombinator.com/item?id=49858513",
+      "title": "Show HN: Reladraw – A diagram language where you decide where to place things",
+      "time": 1790442640,
+      "depth": [
+        {
+          "text": "someone made **Reladraw**, a diagram language where you choose **where things go**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author wanted a middle ground between auto-placement tools like **Mermaid and Graphviz** and **Draw.io**, which is powerful but time-consuming and inefficient for agents. Reladraw lets you define diagrams in a language while keeping **control over how they look**; there's a playground, npm install instructions, and a skill for Claude or other agents.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 68,
+      "terms": [
+        "auto-placement",
+        "renderer",
+        "DSLs",
+        "SVG",
+        "npm"
+      ],
+      "entities": [
+        "Reladraw",
+        "Mermaid",
+        "Graphviz",
+        "Draw.io",
+        "Claude",
+        "npm",
+        "GitHub",
+        "d2lang",
+        "schemdraw",
+        "Pikchr",
+        "Copilot",
+        "C4"
+      ],
+      "comments": [
+        {
+          "by": "apinstein",
+          "text": "This is very needed in the AI coding age! I find diagramming is one of the best ways for high bandwidth alignment between my mental model and the agent’s. I have been working on this problem a bit as I see good visuals as a key bottleneck in faster development while maintaining a real architecture. Will def be adding this to my list of diagramming tools the agent can use!"
+        },
+        {
+          "by": "boblehest",
+          "text": "The README looks LLM generated. Sorry, but that's where my interaction stops"
+        },
+        {
+          "by": "HeavyStorm",
+          "text": "Mermaid works great for fixed layouts like sequence diagrams and Gantts. For flowcharts, where position is king, it's bad. I've tried using svg in my MD files but they get unwieldy quite fast. This is a great idea. My first reaction was - but what's if I need something more exact. But reflecting on it, I've realized that this relative positioning is probably enough."
+        },
+        {
+          "by": "squidlib",
+          "text": "OP, is this something I could use when someone is explaining their architecture and this simply can interpret their words into a diagram?"
+        },
+        {
+          "by": "recroad",
+          "text": "Seems a little buggy, I added this line: edge parser -> renderer \"test edge\" from: left to: right and it wasn't smart enough to make a curved arrow"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49844657,
+      "url": "https://www.astralcodexten.com/p/does-georgism-work-five-years-later",
+      "hn": "https://news.ycombinator.com/item?id=49844657",
+      "title": "Does Georgism work? Five years later",
+      "time": 1790344118,
+      "depth": [
+        {
+          "text": "someone looks back at **Georgism** and says its advocates need to focus on **practical policy work**",
+          "tier": "simple"
+        },
+        {
+          "text": "Lars Doucet says Virginia and Kentucky passed laws allowing municipalities to **tax land more and buildings less**. His group built maps of local land values and published a **policy playbook**; a Louisville activist used it to get a bill passed in his state legislature.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: supporters say LVT is fair and can tackle rent-seeking; skeptics question whether Georgism has worked before, whether land supply is really fixed, and whether it would improve housing without just raising taxes.",
+      "comment_count": 153,
+      "terms": [
+        "Georgism",
+        "LVT",
+        "split-rate property tax",
+        "rent-seeking",
+        "upzoning",
+        "rent control",
+        "single tax",
+        "UBI",
+        "land reclamation",
+        "tax incidence",
+        "YIMBY"
+      ],
+      "entities": [
+        "Lars Doucet",
+        "Henry George",
+        "Center for Land Economics",
+        "CivicMapper",
+        "LVTShift",
+        "OpenAVMKit"
+      ],
+      "comments": [
+        {
+          "by": "tptacek",
+          "text": "I’ve since learned that overly online keyboard warriors are the least important people to convince. The most important people are on your local city council or state legislature. Furthermore, instead of wasting time with hard cases or elected officials who are dead-set against your ideas, you’re much better off finding and working with people who are already interested in your principles. This…"
+        },
+        {
+          "by": "noduerme",
+          "text": "It's freakishly weird to see this at the top of HN. I had never heard or read anything about Georgism until last week, when I stumbled onto it after randomly seeing a photo of a 100-year-old billboard on the Wikipedia page for the term \"speculation\". I spent a few days researching it on and off. In fact, I just navigated to HN from the last page I was reading about it. It seems like a clever way…"
+        },
+        {
+          "by": "skew-aberration",
+          "text": "I think LVT does have a history in US, e.g Pittsburgh. Also Georgism is 100% LVT -> A land tax alone has been the recommendation of many economists before and after George - From Smith, Riccardo, Mill to Friedman. Across classical, neoclassical, Keynesian, Austrian schools. If there's one thing economists can agree on, it's that land tax is better than income tax."
+        },
+        {
+          "by": "bombcar",
+          "text": "\"Doing policymaker's work for them\" is something like 80% of lobbying. If you have something you want done in your town, and you come with the work done AND not asking for funding, you're likely to get it. If you come with the work done and a PLAN for getting the funding, you also have a good chance of success."
+        },
+        {
+          "by": "bariumbitmap",
+          "text": "There's a lot here to absorb, but one thing I've always wondered about Georgism and Land Value Tax is whether land supply is actually inelastic: > Land, however, is not built. Land is inelastic in supply, and landowners don’t “provide” land the way laborers provide labor and investors provide capital; they un-provide land by excluding others from using it. Building supply can change in response…"
+        }
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!exwi!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc40c781e-9ade-4737-9d3e-2fb83913a579_1018x511.jpeg"
+    },
+    {
+      "id": 49844663,
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/asml-says-its-sells-absolutely-nothing-in-europe-calls-on-eu-to-help-create-demand",
+      "hn": "https://news.ycombinator.com/item?id=49844663",
+      "title": "ASML says it sold 'absolutely nothing' in Europe in 2026",
+      "time": 1790344146,
+      "depth": [
+        {
+          "text": "ASML says it sold **nothing in Europe** and wants the EU to **create demand for local chips**",
+          "tier": "simple"
+        },
+        {
+          "text": "ASML's earnings reports put Europe at **0% of revenue** in the first two quarters of 2026. Frank Heemskerk said governments should help **aggregate and guarantee demand** for European-made chips; the article notes none of the projects underway are **leading-edge fabs** set to use EUV scanners.",
+          "tier": "substance",
+          "data": [
+            [
+              "Europe revenue share, first two quarters of 2026",
+              "0%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some blame European regulations and energy constraints for driving fabs elsewhere; others point to subsidies like the US CHIPS Act and question why governments should support chipmakers.",
+      "comment_count": 524,
+      "terms": [
+        "fab",
+        "lithography",
+        "EUV"
+      ],
+      "entities": [
+        "ASML",
+        "EU",
+        "Frank Heemskerk",
+        "TSMC",
+        "Intel",
+        "ESMC",
+        "Bosch",
+        "Infineon",
+        "NXP",
+        "GlobalFoundries",
+        "STMicroelectronics",
+        "Ursula von der Leyen",
+        "Zeiss"
+      ],
+      "comments": [
+        {
+          "by": "viraptor",
+          "text": "Just for context, because I was curious: the when they say no orders, that's following 2 known orders in 2024 and 3 in 2025."
+        },
+        {
+          "by": "ramshanker",
+          "text": "Happy to hear India got mentioned by the same executive during that conversation. We are just started buying from them. I went to Semicon India 2026, held in delhi last week. The energy was amazing. Really pleasant. all big names including ASML."
+        },
+        {
+          "by": "HPsquared",
+          "text": "Semiconductor fabs involve a lot of hazardous chemicals, process changes and high energy consumption. Exactly the kind of thing European regulations tend to deter or slow down. Which is somewhat fine if there is nowhere else to build it, but if other places are easier, well..."
+        },
+        {
+          "by": "jurschreuder",
+          "text": "The Dutch govt is slowly nationalising the chip industry, by making taxes so high no company can survive international competition, and then using this tax money to buy stock in all deep tech companies calling it investing."
+        },
+        {
+          "by": "cmiles8",
+          "text": "With all the regulations nobody in their right mind would build a fab in Europe. Europe is increasingly relying on the rest of the world to supply it with critical things. It’s FAFOed with regulations that have driven these things elsewhere and now is heading into a “FO” world of hurt as the tables are turned and they desperately need things and have to pay the price. This will likely define the…"
+        }
+      ],
+      "image": "https://cdn.mos.cms.futurecdn.net/EGXamcWxVuFiTc6pCbeE25-1920-80.jpg"
+    },
+    {
+      "id": 49859112,
+      "url": "https://arxiv.org/abs/2609.22978",
+      "hn": "https://news.ycombinator.com/item?id=49859112",
+      "title": "DeepSeek Elastic Compute (DSec)",
+      "time": 1790446961,
+      "depth": [
+        {
+          "text": "DeepSeek built a system that spins up and manages huge numbers of **sandboxes** for **AI training**",
+          "tier": "simple"
+        },
+        {
+          "text": "It exposes **FnCall, container, microVM and full-VM backends** through a unified SDK, and handles placement, sandbox lifecycles, memory sharing and CPU scheduling. It loads image data on demand from Fire-Flyer File System (3FS); a production-scale unit serves about 3 million sandboxes per day, supports **over 380,000 concurrent sandboxes** and sustains **over 5,000 sandbox creations per second**.",
+          "tier": "substance",
+          "data": [
+            [
+              "nodes",
+              "around 160 nodes"
+            ],
+            [
+              "sandboxes served per day",
+              "about 3 million sandboxes per day"
+            ],
+            [
+              "concurrent sandboxes",
+              "over 380,000 concurrent sandboxes"
+            ],
+            [
+              "sandbox creations",
+              "over 5,000 sandbox creations per second"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 63,
+      "terms": [
+        "sandbox",
+        "microVM",
+        "SDK",
+        "agentic training",
+        "RL",
+        "rollout",
+        "distributed filesystem",
+        "reward hacking",
+        "GPU"
+      ],
+      "entities": [
+        "DeepSeek",
+        "DeepSeek Elastic Compute (DSec)",
+        "FnCall",
+        "Fire-Flyer File System (3FS)",
+        "Google",
+        "ax",
+        "Anthropic",
+        "OpenAI"
+      ],
+      "comments": [
+        {
+          "by": "flowerlad",
+          "text": "It seems every DeepSeek paper/patent has a huge number of authors, and this one is no exception. They couldn't even fit everyone on the page, there are 31 others not shown. This could be an asset protection strategy (i.e., human assets). Imagine if there were only 3 authors. Those authors may get hired away by competitors. If you list every employee on every paper then competitors don't know who…"
+        },
+        {
+          "by": "erulabs",
+          "text": "Appears to be similar to what Google is building with ax https://github.com/google/ax"
+        },
+        {
+          "by": "vblanco",
+          "text": "380.000 concurrent sandboxes on 160 Epyc based server nodes. Crazy stuff"
+        },
+        {
+          "by": "yipinwong",
+          "text": "The topic isn't as interesting as how 131 authors communicated to get this out."
+        },
+        {
+          "by": "throwaway7783",
+          "text": "Is this like agent substrate?"
+        }
+      ],
+      "image": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png"
+    },
+    {
+      "id": 49854875,
+      "url": "https://discourse.haskell.org/t/how-to-keep-enjoying-programming-in-a-world-of-llms/14705",
+      "hn": "https://news.ycombinator.com/item?id=49854875",
+      "title": "How to keep enjoying programming in a world of LLMs",
+      "time": 1790415718,
+      "depth": [
+        {
+          "text": "someone says to **keep writing code** yourself and let LLMs handle the **boring work** around it",
+          "tier": "simple"
+        },
+        {
+          "text": "The author, a Haskell programmer, suggests using LLMs to turn expert conversations into todos, organize test results, and research the codebase. Keep the decisions and most coding human-led, save research with links, and use an **automated review cycle** for plans and generated code.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some want to keep coding by hand to protect their skills and enjoyment; others say LLMs take away grunt work and leave energy for interesting problems.",
+      "comment_count": 242,
+      "terms": [
+        "LLM",
+        "agent",
+        "tokens",
+        "automated review cycle",
+        "Haskell"
+      ],
+      "entities": [
+        "Haskell",
+        "Claude",
+        "OpenAI",
+        "Anthropic",
+        "DeepSeek",
+        "dsh",
+        "Codex",
+        "Cursor"
+      ],
+      "comments": [
+        {
+          "by": "chicken-stew",
+          "text": "Not so long ago I read something on HN which resonated with me: we’re moving into the era that is comparable to car mechanics enthusiasts. You have a previous generation of cars where people just enjoy working on with hand tools, and there’s modern cars where people like to tune with software patches. From the very start of llms I’ve had nothing but bad experiences with code that was generated…"
+        },
+        {
+          "by": "beej71",
+          "text": "One thing to keep in mind is that anytime you punt to the LLM (or anybody) for anything , that skill is going to atrophy. I've seen this happen to myself where suddenly I had trouble planning out the architecture for a very small project. It should have been obvious to me, and I knew that. So it was disconcerting to not be able to suddenly have the answer appear in front of me like it normally…"
+        },
+        {
+          "by": "humlex",
+          "text": "I recently (2 days ago) noticed i enjoy it a lot more if i use a super fast model with low reasoning (gpt 6 luna low effort + fast mode). That way, i can still have hands on the entire time and dont have to wait around for 20minutes for it to finish up and have made a bunch of decisions without me. Also, LLMs are first and foremost excellent at reading ultra fast. Makes it excellent for…"
+        },
+        {
+          "by": "BizarreByte",
+          "text": "My jobs made me hate programming long before LLMs. If anything I enjoy programming more now that I can tell the LLM to do the bullshit I don’t want to do, saving my energy for interesting problems…usually ones found outside of my 9-5."
+        },
+        {
+          "by": "trashface",
+          "text": "I had a career for 18 years but I'm ready to leave programming behind. Its funny I never successfully learned Haskell, tried a couple times. Unlike probably most people here, programming was not something I felt was a \"calling\" - I started fairly late at age 17 or so and it seemed like a decent way to make a living, and that was sort of true for a while. But now in my early 50s, that is no longer…"
+        }
+      ],
+      "image": "https://us1.discourse-cdn.com/flex002/uploads/haskell/original/1X/89166504e40f4869ea825dd70048017861ec8578.png"
+    },
+    {
+      "id": 49857442,
+      "url": "https://www.economist.com/leaders/2026/09/10/plunging-test-scores-are-a-slow-moving-catastrophe",
+      "hn": "https://news.ycombinator.com/item?id=49857442",
+      "title": "Plunging test scores are a slow-moving catastrophe",
+      "time": 1790436248,
+      "depth": [
+        {
+          "text": "people are debating why **test scores are falling**, from **social media** to changing student demographics",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter argues **changing student demographics** could explain much of the reading-score drop: re-weighting 1998 scores for the 2024 student makeup predicts a **4.6-point decline**, close to the actual 4-point fall. Others suspect **social media** is hurting attention, while another says standardized tests are a poor measure of education.",
+          "tier": "substance",
+          "data": [
+            [
+              "predicted point decline",
+              "4.6"
+            ],
+            [
+              "actual fall",
+              "4 point"
+            ]
+          ]
+        }
+      ],
+      "camps": "Some suspect social media and attention-grabbing tech; others point to demographic shifts or school choices, and some question whether standardized tests are a good measure of education.",
+      "comment_count": 347,
+      "terms": [
+        "NAEP",
+        "PISA",
+        "OECD",
+        "PIRLS",
+        "ICILS",
+        "re-weighting",
+        "whole word reading",
+        "demographics"
+      ],
+      "entities": [
+        "NAEP",
+        "PISA",
+        "OECD",
+        "PIRLS",
+        "ICILS",
+        "The Economist",
+        "Chromebooks"
+      ],
+      "comments": [
+        {
+          "by": "dumberquestions",
+          "text": "The drop from 2018 to 2022 is as big as the one from 2022 to 2026, so it's not obvious whether AI had a role at all, although it's highly plausible. I suspect the bigger culprit is the optimized monetization of human attention, because pre-algorithmic social media doesn't seem to be as destructive. The fact that science wasn't as affected as math and reading (both of which rely more on…"
+        },
+        {
+          "by": "Animats",
+          "text": "Plunging physical fitness test scores are even worse.[1] \"Fat people don't make good soldiers … they get themselves or others hurt or killed.\" The US military says 31% of US youth are too fat to serve. 77% are not qualified for one or more reasons.[2] Only 12% of American male youth who are qualified for the military are not in college. Think about that. About 2/3 of American male youth are not…"
+        },
+        {
+          "by": "bentt",
+          "text": "Where I live in the US there is a movement to A) Prohibit phones from being used in schools B) use textbooks again instead of digital texts C) use handwriting and notebooks instead of Chromebooks for in-class note taking. While this might help, and I agree with all these steps, I'm concerned that the root of the problem is simply that the online experience has rewired our kids. Not screens per…"
+        },
+        {
+          "by": "romaaeterna",
+          "text": "If you take the 1998 NAEP 8th grade reading scores by race, re-weight them by the new 2024 demographic makeup of American 8th graders, you will find a predicted point decline of 4.6, rather close to the actual 4 point fall over the period. Over the same period, reading scores actually improved somewhat for each of the 1998 poorly scoring groups (and quite a bit for Asians), but the poorly scoring…"
+        },
+        {
+          "by": "mkl95",
+          "text": "It seems there is no working around learning to write and read properly. We've drifted away from this idea, which might lead to a \"soft\" dark age."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49854416,
+      "url": "https://floci.io",
+      "hn": "https://news.ycombinator.com/item?id=49854416",
+      "title": "Floci: Locally emulating any cloud service",
+      "time": 1790411462,
+      "depth": [
+        {
+          "text": "someone built **local cloud emulators** so developers and AI agents can **test cloud code** without touching real accounts",
+          "tier": "simple"
+        },
+        {
+          "text": "Each emulator is a **standalone binary**, and a unified CLI or visual dashboard lets you manage them. The AWS emulator covers **119 services** and advertises a **24 ms cold start**.",
+          "tier": "substance",
+          "data": [
+            [
+              "AWS services",
+              "119"
+            ],
+            [
+              "cold start",
+              "24 ms"
+            ],
+            [
+              "idle memory",
+              "13 MiB"
+            ],
+            [
+              "price",
+              "$0"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say local emulators are lightweight and handy for integration tests; others say real-cloud tests give higher fidelity and local copies can differ from production.",
+      "comment_count": 40,
+      "terms": [
+        "emulator",
+        "CLI",
+        "cold start",
+        "integration test",
+        "AWS",
+        "GCP",
+        "OCI",
+        "MIT license"
+      ],
+      "entities": [
+        "Floci",
+        "floci-az",
+        "floci-gcp",
+        "floci-oci",
+        "AWS",
+        "Azure",
+        "GCP",
+        "OCI",
+        "LocalStack",
+        "Eucalyptus",
+        "Claude",
+        "Testcontainers",
+        "StrongDM",
+        "Slack",
+        "fakecloud",
+        "moto",
+        "Malwarebytes",
+        "Terraform",
+        "OpenTofu",
+        "CloudFormation",
+        "Docker",
+        "Quarkus",
+        "GraalVM",
+        "PostgreSQL",
+        "MySQL",
+        "Redis",
+        "Kafka",
+        "Cloudflare",
+        "GitHub"
+      ],
+      "comments": [
+        {
+          "by": "thegagne",
+          "text": "The cool part of this is it’s an example of what’s possible with a community of users armed with AI. Many users, (myself included), had need to test cloud stuff locally, but had no tool to do so. Localstack exists, but it started rug pulling the free tier and they didn’t support all the features. Meanwhile, Floci makes it easy to write your own cloud compatible test suite, then implement the…"
+        },
+        {
+          "by": "conception",
+          "text": "For a hot minute Eucalyptus https://www.eucalyptus.cloud was amazing - even matching aws bugs to keep compatibility. Wish it had rue support/resources to keep going. Maybe a viber will pick up and get it more up to date."
+        },
+        {
+          "by": "catlifeonmars",
+          "text": "Both localstack and floci live in this weird spot where for a lot of my applications, all the cloud-vendor specific stuff is abstracted out anyway. So the only time I need to touch the cloud is for testing the abstractions and do end to end testing. The abstractions can be tested against real cloud APIs as it is generally cheap to do and provides the highest fidelity results. End to end testing…"
+        },
+        {
+          "by": "microflash",
+          "text": "Been using it for a while to run integration tests with Testcontainers [1]. It's very good and much more lightweight than Localstack. [1]: https://testcontainers.com/"
+        },
+        {
+          "by": "aeagentic",
+          "text": "Would someone be interested in this but intended for production? Im already running a whole bunch of cloudflare and AWS services in my own AWS fake and it works surprisingly well! :)"
+        }
+      ],
+      "image": "https://floci.io/og/home.png"
+    },
+    {
+      "id": 49836579,
+      "url": "https://thelastsoftwareengineer.substack.com/p/how-i-changed-teaching-after-ai-managed",
+      "hn": "https://news.ycombinator.com/item?id=49836579",
+      "title": "How I changed teaching after AI managed to do all my homework assignments",
+      "time": 1790283110,
+      "depth": [
+        {
+          "text": "a teacher now checks **students’ understanding** in **live TA conversations** after each assignment",
+          "tier": "simple"
+        },
+        {
+          "text": "After every assignment, each student schedules a **15-minute meeting with a TA** to answer a couple of questions in a **live conversation**.",
+          "tier": "substance",
+          "data": [
+            [
+              "meeting duration",
+              "15 minutes"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say AI has made homework hard to trust; others say teaching got better, and evaluation is what got harder.",
+      "comment_count": 157,
+      "terms": [
+        "LLM",
+        "TA",
+        "flipped classroom",
+        "low-stakes assessment"
+      ],
+      "entities": [
+        "Salman Khan",
+        "KhanAcademy",
+        "Turingo",
+        "Google Doc",
+        "EduLearn",
+        "Wikipedia"
+      ],
+      "comments": [
+        {
+          "by": "tra3",
+          "text": "> Similarly, I always provided a safety net where students can make mistakes and resubmit a limited number of assignments to regain lost points (a core recommendation of specifications grading and grading for equity to focus on learning outcomes, not the process), but we felt that this process was abused with AI: first submit a generated assignment solution without thinking and only look at the…"
+        },
+        {
+          "by": "a57721",
+          "text": "I am teaching some math courses, and I see how LLMs disrupted all standard approaches, and I don't know what to do. I rely on written exams that are open book, but forbid any use of computers and smartphones in class. The university insists that homework can't be optional, but it lost its meaning. I've tried to explain to my students that it's in their interest to think about home assignments on…"
+        },
+        {
+          "by": "tarkin2",
+          "text": "The easiest path is to allow students to cheat on homework and watch them fail in the non-coursework-based exam. Your classes, then, abandon to the un-motivated; with AI enlarging the educational gap. If you’re forced to attain a pass rate, and can’t watch so many fail, then the certificate becomes worthless in the workplace. Or just offer paid retakes and watch AI make you money. If you insist…"
+        },
+        {
+          "by": "garg",
+          "text": "Salman Khan of KhanAcademy many years ago suggested that study should be done at home and homework should be done in-person in class with the help of a teacher. That would solve a lot of the homework problems AI access is causing. But it would require extra effort on the part of the teachers."
+        },
+        {
+          "by": "Propelloni",
+          "text": "Maybe the Germans were right? One in-person test, preferably an interview, at the end of the semester should be enough to motivate the smarter part of the bunch to make sure they understand the issues at hand. The rest is chaff anyway. Don't optimize for chaff."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49829202,
+      "url": "https://castle-engine.io/modern_pascal",
+      "hn": "https://news.ycombinator.com/item?id=49829202",
+      "title": "Modern Object Pascal Introduction for Programmers",
+      "time": 1790249636,
+      "depth": [
+        {
+          "text": "someone put together a **practical guide** to **modern Object Pascal**, from basics through classes and interfaces",
+          "tier": "simple"
+        },
+        {
+          "text": "The guide covers **units, classes, exceptions, generics and interfaces**, with examples for Free Pascal Compiler and Delphi. It says modern Pascal is feature-wise similar to **C++, Java and C#**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: Pascal fans praise its productivity and staying power; critics say its talent pool is limited and the namespace is cluttered with legacy usage.",
+      "comment_count": 64,
+      "terms": [
+        "Object Pascal",
+        "generics",
+        "IDE",
+        "native code",
+        "reference counting",
+        "copy on write"
+      ],
+      "entities": [
+        "Object Pascal",
+        "Pascal",
+        "Free Pascal Compiler",
+        "Lazarus",
+        "Delphi",
+        "Embarcadero",
+        "Castle Game Engine",
+        "VS Code",
+        "Turbo Pascal",
+        "C++",
+        "Java",
+        "C#"
+      ],
+      "comments": [
+        {
+          "by": "mikewarot",
+          "text": "One of the greatest features of FreePascal is that strings are managed. You never allocate or deallocate them, you just declare the variable, and it manages them. They're counted, reference counted, copy on write, and can hold gigabytes. According to google: When you assign one dynamic string to another, Free Pascal does not duplicate the actual characters in memory. Instead, both variables point…"
+        },
+        {
+          "by": "tombert",
+          "text": "When I was first learning to program, I started using the free Borland Turbo C++ compiler [1]. I had managed to get subscribed to their newsletter that seemed very insistent that Delphi was going to be the future for desktop software. Awhile later, I found out that \"Spybot – Search & Destroy\" was written in Delphi, so I figured it might be fun to play with. So play with it I did. I hadn't used…"
+        },
+        {
+          "by": "alwillis",
+          "text": "Photoshop 1.0 was written mostly in Object Pascal with some 68000 assembly language; source code is available: https://computerhistory.org/blog/adobe-photoshop-source-code..."
+        },
+        {
+          "by": "armcat",
+          "text": "This takes me back, my first adventure in programming was as a 12 year old creating a Pong clone using Turbo Pascal on DOS. It came in handy later as a 20 year old when I was doing freelance as a Delphi dev. Amazing to see Pascal on HN."
+        },
+        {
+          "by": "WillAdams",
+          "text": "I bought Delphi ages ago, but never got very far with it, which I regret. I'd love to be able to take it up again, and this document looks very promising for that, esp. paired with: https://wiki.freepascal.org/pas2js which I now see is supported in Lazarus. If someone has an example graphical project which compiles to an HTML page w/ JavaScript using the above, I'd love to see it and a detailed…"
+        }
+      ],
+      "image": "https://castle-engine.io/images/original_size/pascal_code_sample.png"
+    }
+  ],
+  "glossary": {
+    "auto-placement": "When a tool chooses where the pieces of a diagram go for you.",
+    "renderer": "The part of a tool that turns instructions into the picture you see.",
+    "DSLs": "Domain-specific languages: small languages made for describing one particular kind of thing.",
+    "SVG": "Scalable Vector Graphics: a picture format that stays sharp when resized.",
+    "npm": "A tool people use to add software packages to JavaScript projects.",
+    "Georgism": "A view that land's value should be taxed for public benefit, rather than taxing work or investment.",
+    "LVT": "Land Value Tax: a tax on the land's value, not on buildings or other improvements on it.",
+    "split-rate property tax": "A property tax that taxes land and buildings at different rates, usually taxing land more and buildings less.",
+    "rent-seeking": "Making money by controlling something valuable without creating much useful value yourself.",
+    "upzoning": "Changing local rules to allow more or larger buildings on a piece of land.",
+    "rent control": "Rules that limit how much landlords can charge or how quickly rents can rise.",
+    "single tax": "The idea that land rent would be taxed at its full yearly value and that this would be the only tax.",
+    "UBI": "Universal Basic Income: money regularly given to people without requiring them to work for it.",
+    "land reclamation": "Making usable land by filling water or changing a shore or landscape.",
+    "tax incidence": "Who actually bears the cost of a tax, which may not be the person who sends the payment.",
+    "YIMBY": "Yes In My Back Yard: someone who supports building more housing in their area.",
+    "fab": "A factory where chips are made.",
+    "lithography": "A way of using light to print tiny circuit patterns onto silicon when making chips.",
+    "EUV": "Extreme Ultraviolet: a kind of light chipmaking machines use to make very small circuit patterns.",
+    "sandbox": "A separate, contained space where software can be tested without affecting the rest of a computer or system.",
+    "microVM": "A small, separate computer environment for running a job; here, it gets thrown away when the job ends.",
+    "SDK": "Software Development Kit: tools a company provides so people can make apps for its device.",
+    "agentic training": "Training where an AI practices using tools and taking steps to complete tasks.",
+    "RL": "Reinforcement Learning: a way to teach an AI by rewarding actions that get the desired result.",
+    "rollout": "A run where an AI tries a task and its actions are recorded for training.",
+    "distributed filesystem": "A way to keep files on many computers but use them as one shared file store.",
+    "reward hacking": "When an AI finds a way to get a high score without doing what its designers actually wanted.",
+    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "agent": "An AI system that can take steps and use tools to get a task done, not just answer questions.",
+    "tokens": "Small pieces of text an AI counts as it reads or writes; they can affect how much a request costs.",
+    "automated review cycle": "A second automated checker looks for problems in a plan or code before a person reviews it.",
+    "Haskell": "A programming language the author uses to build software and enjoys writing.",
+    "NAEP": "National Assessment of Educational Progress: a US program that checks what students know in subjects such as reading and math.",
+    "PISA": "Programme for International Student Assessment: a test program that compares students’ skills across countries.",
+    "OECD": "Organisation for Economic Co-operation and Development: a group of countries that works together on shared economic and social issues.",
+    "PIRLS": "Progress in International Reading Literacy Study: a study that checks how well students read.",
+    "ICILS": "International Computer and Information Literacy Study: a study of how well students use computers and find information.",
+    "re-weighting": "Changing how much different groups count so old results reflect a newer mix of people.",
+    "whole word reading": "A way to teach reading by having children recognize entire words instead of sounding them out letter by letter.",
+    "demographics": "The makeup of a group, such as how many people belong to different age or background groups.",
+    "emulator": "A program that imitates another service so you can try your software without using the real one.",
+    "CLI": "Command-Line Interface: a way to control a computer by typing commands instead of clicking buttons.",
+    "cold start": "The extra wait while a service starts up after sitting unused.",
+    "integration test": "A test that checks whether different parts of a program work together.",
+    "AWS": "Amazon Web Services: a collection of cloud services run by Amazon.",
+    "GCP": "Google Cloud Platform: Google's collection of cloud services.",
+    "OCI": "Oracle Cloud Infrastructure: Oracle's collection of cloud services.",
+    "MIT license": "A software license that lets people use, change, and share a project with few restrictions.",
+    "TA": "Teaching assistant: someone who helps teach a course and answer students’ questions.",
+    "flipped classroom": "A class where students study before meeting, then use class time to discuss or work through problems.",
+    "low-stakes assessment": "A quiz or assignment where the result matters less than on a major exam.",
+    "Object Pascal": "A form of Pascal that lets programs group related data and actions into reusable parts.",
+    "generics": "A way to make one piece of code work with different kinds of values.",
+    "IDE": "Integrated Development Environment: an app that brings coding and other development tools together.",
+    "native code": "Code compiled into instructions a computer can run directly.",
+    "reference counting": "A program tracks how many places share a value so it can manage that value as those places change.",
+    "copy on write": "A shared value is copied only when one of the places using it changes it."
+  }
+}
