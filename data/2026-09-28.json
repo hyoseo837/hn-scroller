@@ -905,6 +905,1149 @@
         }
       ],
       "image": "https://git.mills.io/repo-avatars/640d1c8d0740a84bc305d7d7f83dc71164e891e05a7ac78a26d5199d985d7cd1"
+    },
+    {
+      "id": 49881850,
+      "url": "https://www.anthropic.com/claude-sonnet-5-5",
+      "hn": "https://news.ycombinator.com/item?id=49881850",
+      "title": "Sonnet 5.5",
+      "time": 1790618291,
+      "depth": [
+        {
+          "text": "Anthropic says its **new Sonnet model** is **faster and cheaper** for everyday coding and other work",
+          "tier": "simple"
+        },
+        {
+          "text": "Anthropic says **Sonnet 5.5 runs 30%+ faster** and costs up to 30% less per task than Sonnet 5. It’s strongest at **well-scoped everyday tasks**, bug fixes, and creating polished documents, slides, and spreadsheets.",
+          "tier": "substance",
+          "data": [
+            [
+              "Speed vs. Sonnet 5",
+              "30%+ faster"
+            ],
+            [
+              "Cost per task vs. Sonnet 5",
+              "up to 30% less"
+            ],
+            [
+              "Input price per million tokens",
+              "$2"
+            ],
+            [
+              "Output price per million tokens",
+              "$10"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see it as a good fit for simpler, token-heavy work; others say Opus or cheaper models offer better value.",
+      "comment_count": 346,
+      "terms": [
+        "tokens",
+        "benchmark",
+        "fallback model"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude",
+        "Sonnet 5.5",
+        "Sonnet 5",
+        "Opus 5.5",
+        "Haiku 5.5",
+        "Terminal-Bench",
+        "FrontierCode",
+        "CursorBench",
+        "GDPval-AA",
+        "OpenAI",
+        "GPT-6 Sol",
+        "DeepSeek",
+        "Fable",
+        "Epic Games",
+        "CodeRabbit",
+        "SpaceXAI",
+        "Base44",
+        "Unity",
+        "Slack",
+        "Zendesk",
+        "Balyasny Asset Management",
+        "Box",
+        "Lovable",
+        "Atlassian",
+        "Amazon Web Services",
+        "Google Cloud",
+        "Microsoft Azure"
+      ],
+      "comments": [
+        {
+          "by": "Sol-",
+          "text": "Probably a first world problem, but with Opus 5.5's efficiency, the limits on the 5x plan are simply sufficient for my everyday work, even when running 2-3 sessions at a time. So I wonder when I would use Sonnet 5.5. More concurrency than that isn't really practical for me if I want to retain some semblance of understanding. Perhaps it's different for purely web app or frontend tasks, where the…"
+        },
+        {
+          "by": "abejora",
+          "text": "Sonnet 5.5 scoring higher (70.6) than Opus 5.5 (66.4) in Terminal-Bench is interesting. I looked into this, because it felt strange. Turns out that Opus had 10% of its trials answered by a fallback model due to safeguards; versus only 1.5% fallbacks for Sonnet. [1] So I would not read too much into this, just the difference in fall backs could probably explain the gap. [1] Section 8.5 of the…"
+        },
+        {
+          "by": "wongarsu",
+          "text": "\"Sonnet 5.5’s cyber capabilities are a large improvement over Sonnet 5’s, so we’re deploying it with safeguards similar to those on Opus 5.5. Users can still find and fix bugs in their code as part of routine software development, but higher-risk cybersecurity tasks will visibly fall back to Sonnet 5 Sounds like at least for Anthropic models we reached peak cyber capabilities with Opus 4.8…"
+        },
+        {
+          "by": "simonw",
+          "text": "Pelicans. Sonnet 5.5 has the same problem as Opus 5.5: on \"max\" thinking effort it burned through 128,000 thinking tokens (taking 15 minutes to do that) and ran out before it had produced the final SVG. https://tools.simonwillison.net/markdown-svg-renderer?url=ht... Here's how the thinking effort levels compare: low\n27 input, 1,623 output, thinking_tokens: 0\n1.6284\nDuration: 10138ms…"
+        },
+        {
+          "by": "wkcheng",
+          "text": "The cost / performance chart shows that in almost all configurations, it looks worse than Opus. Why would you use Sonnet 5.5 on xhigh if you would get better results (higher score, cheaper cost) on Opus 5.5 high? Is there a good use case? This isn't like Luna where it's much cheaper/effective just to use Luna in certain situations."
+        }
+      ],
+      "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/eaa6046f4ae8c88e368c3c530c4c1312f7ff6f2e-1200x630.jpg"
+    },
+    {
+      "id": 49881747,
+      "url": "https://definitelynotwindows.com/",
+      "hn": "https://news.ycombinator.com/item?id=49881747",
+      "title": "Windows 11½",
+      "time": 1790617884,
+      "depth": [
+        {
+          "text": "someone built a **fake Windows desktop** that mocks **ads, subscriptions, AI and updates**",
+          "tier": "simple"
+        },
+        {
+          "text": "The **fake screens** pile on Microsoft 365 nags, Edge nudges, Copilot, storage warnings and updates, poking fun at **subscriptions, ads and AI features**. The page calls itself an **unofficial parody**, not a real Microsoft product.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say its menus are unrealistically fast; others say the pop-ups feel painfully familiar.",
+      "comment_count": 126,
+      "terms": [
+        "operating system",
+        "UI",
+        "React"
+      ],
+      "entities": [
+        "Microsoft",
+        "Windows 11½",
+        "Definitely Not Windows",
+        "Microsoft 365",
+        "Microsoft Edge",
+        "Copilot"
+      ],
+      "comments": [
+        {
+          "by": "paavohtl",
+          "text": "I can tell this is fake from the fact the explorer context menu and the start menu open in under 2 seconds (on a top end Ryzen CPU, nonetheless)."
+        },
+        {
+          "by": "accrual",
+          "text": "This is insanely good and mimics my personal experience of Windows these days. I literally say \"pop-up! pop-up! pop-up!\" out loud during a normal workday where one pop-up or prompt is rapidly replaced by another. Same app or different, doesn't matter, there's always something trying to grab attention on a Windows desktop unless you configure the hell out of it (and even that is no longer enough)…"
+        },
+        {
+          "by": "jedbrooke",
+          "text": "It’s too snappy and responsive, real windows I gotta wait with the spinning blue ring thing for a few seconds after clicking ‘x’ on the notifications. That is when they’re generous enough to give an ‘x’ and not force the user through some onboarding flow with no easy way to opt out"
+        },
+        {
+          "by": "drnick1",
+          "text": "It must be hard for Windows users to imagine that on Linux there are is no activation, no Microsoft account, no cloud backup, and no pop-up requesting that you install crapware when you plug in a peripheral.[0] You also own your disk encryption keys and are not assigned an identifier that can be used against you.[1] [0] https://m.youtube.com/watch?v=6IFVTcM28KA [1]…"
+        },
+        {
+          "by": "bradfitz",
+          "text": "This is not realistic; the start menu opens way too quickly."
+        }
+      ],
+      "image": "https://definitelynotwindows.com/social-preview.png"
+    },
+    {
+      "id": 49877988,
+      "url": "https://blog.alexewerlof.com/p/coding-is-not-solved",
+      "hn": "https://news.ycombinator.com/item?id=49877988",
+      "title": "Coding is not solved",
+      "time": 1790603577,
+      "depth": [
+        {
+          "text": "the author says **AI can write code**, but people still need to **understand and own it**",
+          "tier": "simple"
+        },
+        {
+          "text": "His case is that **generating code is only part of the job**: software still needs **reliability, security, and maintenance**, and people must understand what they ship. Commenters disagree over whether rigorous tests can make AI-written code reliable without reading it, while others warn that more output can overwhelm review.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: AI optimists say models can build useful software and tests can check it; skeptics say code still needs human understanding, review, and accountability.",
+      "comment_count": 419,
+      "terms": [
+        "NFR",
+        "harness",
+        "stochastic",
+        "POC"
+      ],
+      "entities": [
+        "Alex Ewerlöf",
+        "Anthropic",
+        "Claude",
+        "Claude Code",
+        "Bun",
+        "Google",
+        "GitHub",
+        "Shopify",
+        "Toby Lutke"
+      ],
+      "comments": [
+        {
+          "by": "efficax",
+          "text": "Reading the code does not mean you understand the code. One lesson that experience in software gave me: I never understood the code. You think it works a certain way, until you find out that it doesn't. What LLMs make possible is for me to say: find out all the ways this thing works. Analyze the different ways we can run this software, build a fuzzer, build property tests, and run this software…"
+        },
+        {
+          "by": "askonomm",
+          "text": "What I've found is that AI allows lazy and incompetent developers to be more lazy and more incompetent. This then has the effect that product quality suffers more, faster. As a result of the sheer amount of code now being pushed out, code reviews, a thing that previously somewhat prevented lazy and incompetent developers from pushing out horrible code, is effectively dead in the water since no…"
+        },
+        {
+          "by": "temp00345",
+          "text": "I read such articles more or less every day.\nThis article would be 100% correct if it came out 1 year ago, 75% correct 9 months ago, 50% correct 3 months ago and it's probably 25% correct now if not less. I totally understand where this is coming from. I too am struggling with accepting that my 30+ years of programming experience is quickly becoming obsolete. I'm losing sleep about this, it's…"
+        },
+        {
+          "by": "hibikir",
+          "text": "> You cannot be responsible for what you can’t control either. That understanding is key to reasoning about system behavior and fixing it when the AI inevitably fails. This is not a good premise. All over law, you will find people made responsible for what they don't control and they kind of own. Unleash a dog that harms a child, or just have it in an environment where it can escape, and see what…"
+        },
+        {
+          "by": "thesumofall",
+          "text": "I think the author underestimates how boring and simple 90% of enterprise software is. The part that isn’t powering aircraft and power plants. So much of it originates from one-nighters, badly managed subcontractors, and requirements that are of low quality to begin with (because they are written by people who have very different day jobs). And you know what? Most of that runs 24/7 without a…"
+        }
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!-Pk4!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F409bf75a-d9ef-4adf-b242-bee9d2664a24_1280x1247.jpeg"
+    },
+    {
+      "id": 49880036,
+      "url": "https://mubi.com/en/notebook/posts/pirating-the-pirates",
+      "hn": "https://news.ycombinator.com/item?id=49880036",
+      "title": "Pirating the Pirates",
+      "time": 1790610855,
+      "depth": [
+        {
+          "text": "film fans patch **botched releases**, and an official label now **borrows their fixes**",
+          "tier": "simple"
+        },
+        {
+          "text": "Fans **rebuild more faithful cuts** by combining older releases, scans, and audio when official versions are altered or flawed. Arrow later **brought fan experts in** as consultants on its Dollars trilogy release, but unofficial copies kept circulating with extra audio and commentary.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some commenters respect creators revising films, while others object when older versions disappear.",
+      "comment_count": 198,
+      "terms": [
+        "remux",
+        "DCP",
+        "DMCA",
+        "LaserDisc",
+        "boutique label"
+      ],
+      "entities": [
+        "MUBI",
+        "The Good, the Bad and the Ugly",
+        "Sergio Leone",
+        "MGM",
+        "Arrow Films",
+        "Kino Lorber",
+        "Criterion",
+        "Eureka",
+        "Star Wars",
+        "George Lucas",
+        "Spencer Draper",
+        "James Flower",
+        "Willa Ross",
+        "Benji Heran",
+        "Jordan Krug",
+        "Blake Blasingame",
+        "Project 4K77",
+        "Team Negative1",
+        "Petr Harmáček",
+        "OriginalTrilogy.com",
+        "Kevin Brownlow",
+        "Abel Gance",
+        "Wong Kar-wai"
+      ],
+      "comments": [
+        {
+          "by": "thewizzardofnl",
+          "text": "\"“To me, it [the original Star Wars trilogy] doesn’t really exist anymore. It’s like this is the movie I wanted it to be, and I’m sorry you saw half a completed film and fell in love with it.” - George Lucas, 2004 It is insane how much George Lucas has edited the original Star Wars trilogy. I think no movies have had more edits over time than Star Wars."
+        },
+        {
+          "by": "cosmic_cheese",
+          "text": "I've only barely skimmed the surface of the preservation world, but the irreverent attitude taken by the industry towards audiovisual media releases frustrates me greatly. That more accurate older releases are made unobtainable in favor of newer botched versions just adds insult to injury. I'm grateful that diminishing returns were hit earlier with audio, though, which limits the blast radius for…"
+        },
+        {
+          "by": "jakzurr",
+          "text": "Thanks for posting. I almost missed this, but it's really important to me. I respect that creators, like Lucas, do want to continue working on past projects. (Art is never finished, only abandoned, or something like that.) But those of us who appreciate art surely can choose which version we prefer. Even if that changes over the course of our life. That is one of my favorite things about film…"
+        },
+        {
+          "by": "schlauerfox",
+          "text": "One thing to note, is that the library of congress has the power to create the exceptions to the DMCA. The EFF lobbies for expansion of the exact powers the article is advocating for.\nhttps://www.eff.org/issues/dmca-rulemaking"
+        },
+        {
+          "by": "alexpotato",
+          "text": "> Spencer Draper—best known as the Damn Fool Idealistic Crusader on YouTube, where he reviews the technical and historical aspects of digital releases with a rigor usually reserved for scholarly peer review I will occasionally think about various topics \"I'm really into <thing> but is anyone else in to <thing>??\" And then I read a quote like the above and I realize that, for lack of a better…"
+        }
+      ],
+      "image": "https://images.mubicdn.net/images/notebook/post_spotlight_images/11642/cache-11642-1788879178/images-w1280.jpg"
+    },
+    {
+      "id": 49880312,
+      "url": "https://www.ssp.sh/brain/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore/",
+      "hn": "https://news.ycombinator.com/item?id=49880312",
+      "title": "The problem is not AI code, but not knowing about system architecture or intent",
+      "time": 1790611902,
+      "depth": [
+        {
+          "text": "the bigger AI problem is teams **losing sight** of how their **systems work**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter thinks AI writes **average code**, depending on the task and size. The author worries people prompting in a new field may miss the knowledge behind system choices. He calls **maintainability** the “final boss” and says fundamentals still help.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say relying on AI erodes understanding and makes systems harder to maintain; others say AI can help fix bugs, improve code, and make developers much more productive.",
+      "comment_count": 222,
+      "terms": [
+        "LLMs",
+        "system architecture",
+        "maintainability",
+        "mental model",
+        "vibe coding"
+      ],
+      "entities": [
+        "Simon Späti",
+        "Claude",
+        "Claude Code",
+        "Hoyt Emerson",
+        "Sean Behan",
+        "Atlassian",
+        "Astra",
+        "Playwright",
+        "AWS",
+        "Terraform",
+        "Archme",
+        "archkeel",
+        "datamimic",
+        "C",
+        "Rust",
+        "Go",
+        "TypeScript",
+        "JS",
+        "Java",
+        "Python"
+      ],
+      "comments": [
+        {
+          "by": "zero_shift",
+          "text": "I was reflecting on this on Saturday in an unformed way, trying to trace the lineage of a decision made at work. The code change itself doesn't specifically matter. But suffice to say, it was about an AI feature in one of our products. The code was stamped by Claude driven by a prompt. The prompt was for a ticket generated with the Atlassian AI integration. Atlassian had digested docs made with…"
+        },
+        {
+          "by": "glouwbug",
+          "text": "When you write something you constantly remodel your understanding through refactors and rewrites until you internalize it. By internalizing it you gain the capacity to reason about it (during critical downtime) and communicate it. An entire team that can communicate can solve problems together, from one guy's vision to products white boarding to engineering's infrastructure to UX and UI's…"
+        },
+        {
+          "by": "MomsAVoxell",
+          "text": "I am finding this, professionally, not so dramatic - but mostly because the industries in which I've consistently shipped code at scale involve review as a first principle, as in no un-tested, un-reviewed code gets shipped, because: safety critical/realtime requirements and certification specs, say so. And having AI code to review is no different than any other code that ever was to review, so…"
+        },
+        {
+          "by": "bengold14",
+          "text": "I see this everyday. The problem is code is the wrong abstraction for the work we do. LLMs have solved coding, but they haven't solved systems, collaboration or system maintenance. Edit: Since I seem to have touched a nerve - I've been working on a project to solve this: https://www.archme.io if you want to know my thoughts on the right abstraction"
+        },
+        {
+          "by": "ecshafer",
+          "text": "AI is going to make, long term, Software Engineering more important. Getting requirements, user feedback, tests, product vision. These are key differentiators now. If you can really get a good set of requirements, go and write all of your test cases out, and then throw it at an AI that will one shot it. Its perfect."
+        }
+      ],
+      "image": "https://www.ssp.sh/brain/_img/feature/gen/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore.webp"
+    },
+    {
+      "id": 49879000,
+      "url": "https://www.reuters.com/technology/mongodb-ceo-desai-steps-down-lead-metas-enterprise-platform-2026-09-28/",
+      "hn": "https://news.ycombinator.com/item?id=49879000",
+      "title": "MongoDB CEO resigns to join Meta",
+      "time": 1790607261,
+      "depth": [
+        {
+          "text": "MongoDB’s CEO is **leaving for Meta**, and commenters are arguing over **what his exit means**",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter says **“effective immediately”** is harsh; another sees MongoDB in a **rough spot**, while one questions Meta having him lead an **AI strategy**.",
+          "tier": "substance",
+          "data": [
+            [
+              "stock market value drop",
+              "~$6.5B"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see MongoDB in a rough spot; others call it relatively stable and ask why the CEO’s exit caused such a huge stock drop.",
+      "comment_count": 254,
+      "terms": [
+        "market cap",
+        "NoSQL",
+        "SQL",
+        "share options",
+        "managed database"
+      ],
+      "entities": [
+        "MongoDB",
+        "Meta",
+        "Mongo Atlas",
+        "Cloudflare",
+        "DigitalOcean",
+        "ServiceNow",
+        "Dana White",
+        "UFC",
+        "CJ",
+        "Zuck",
+        "Cred",
+        "Scale",
+        "WhatsApp",
+        "Netcraft",
+        "NoSQL",
+        "SQL"
+      ],
+      "comments": [
+        {
+          "by": "everfrustrated",
+          "text": "\"effective immediately\" means either... he doesn't have a contract with a notice period, or he does and is willing to forfeit any benefit from it like share options, etc. One reason might be the share price has collapsed and he has no confidence in it coming back (pretty scandalous if he's the CEO!), or Meta has offered him inducements > what he's walking away from. Good way to burn a lot of…"
+        },
+        {
+          "by": "beembeem",
+          "text": "This is data point #2 in his executive career, it's now a trend. https://www.crn.com/news/channel-news/2024/servicenow-presid..."
+        },
+        {
+          "by": "xnx",
+          "text": "TIL MongoDB is a publicly traded company. I can't imagine the future is bright for MongoDB as AI makes it much less painful to move off of legacy and/or overpriced software."
+        },
+        {
+          "by": "toasty228",
+          "text": "A few days ago I learned Dana White (UFC's CEO) is on meta's board of directors, nothing will surprise me now."
+        },
+        {
+          "by": "Dylan16807",
+          "text": "Isn't MongoDB relatively stable? I can't think of why it would need any particular CEO, and an executive moving to a company that burns money for fun doesn't say much about their previous job. So why the huge stock drop?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49879697,
+      "url": "https://www.thisamericanlife.org/897/transcript",
+      "hn": "https://news.ycombinator.com/item?id=49879697",
+      "title": "Kids turned low-traffic NPR Spotify comments into a secret group chat",
+      "time": 1790609709,
+      "depth": [
+        {
+          "text": "kids turned **quiet NPR podcast comments** into a **group chat** to keep talking to each other",
+          "tier": "simple"
+        },
+        {
+          "text": "A kid made a **Spotify playlist** with a name like “New Chat” or “chat here” and one podcast episode; others found it and talked in the episode’s comments. Ella said the **core group had maybe 20 kids**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 150,
+      "terms": [
+        "bot",
+        "SSID"
+      ],
+      "entities": [
+        "NPR",
+        "Spotify",
+        "This American Life",
+        "Wild Card",
+        "Dave Blanchard",
+        "Hannah Chinn",
+        "Ella",
+        "Slack",
+        "Google Forms",
+        "Google Docs",
+        "TikTok",
+        "Ira Glass"
+      ],
+      "comments": [
+        {
+          "by": "xnx",
+          "text": "The Onion predicted this in 2014: \"Teens Migrating From Facebook To Comments Section Of Slow-Motion Deer Video\" ( https://www.youtube.com/watch?v=a4mMY2Kl3GY ) Reminds me a little bit of the agent improvised coordination schemes."
+        },
+        {
+          "by": "jonty",
+          "text": "Back in ~2001 I ran a fairly popular blog commenting system - back then most blogs didn't have built-in comments, so I offered javascript embeds to add them to posts. One day performance started to go down rapidly, and within a few days my host got in touch about unusual CPU usage. I tracked it down to a series of random blogger.com blog posts with colossal comment threads measuring in the…"
+        },
+        {
+          "by": "gumby",
+          "text": "French kids started doing this in the 1930s with the talking clock (a French invention BTW). The clock was basically a busbar: callers were all connected to the clock. When it was not speaking the time (at the minute) callers could speak and be heard by others. And it was a free call! The phone system had switched to digital by the time I started using it so I never got to experience this, but in…"
+        },
+        {
+          "by": "nyargh",
+          "text": "Discovered my kid doing exactly this years ago. We purposefully limited all social media, locked dowb devices etc, but life uh.. finds a way. I was impressed, just had the standard talk about how you have to assume everything you put out on the internet never goes away and that you really have no idea who is on the other side of the screen, never share personal information, etc Now they are older…"
+        },
+        {
+          "by": "bullfightonmars",
+          "text": "I was surprised last week to find that Spotify has turned in to full on social media/youtube now. I left Spotify off of screentime limits for my son so that he could listen to music or books at bedtime, and found him watching \"podcasts\" which have full youtube style pages with videos and comments."
+        }
+      ],
+      "image": "https://www.thisamericanlife.org/sites/all/themes/thislife/img/social-blue.png"
+    },
+    {
+      "id": 49881951,
+      "url": "https://lecaro.me/20260921-google-less.html",
+      "hn": "https://news.ycombinator.com/item?id=49881951",
+      "title": "So long Google, and thanks for all the nudes",
+      "time": 1790618687,
+      "depth": [
+        {
+          "text": "someone says Google rejected their **text editor** with an **unrelated NSFW screenshot** attached",
+          "tier": "simple"
+        },
+        {
+          "text": "The developer says the **Play Store rejection** included an **NSFW screenshot** from an unidentified app; their appeal was rejected without explanation. They suspect an app mix-up or a link in automatic listing translations, but say they can't read what they submitted.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some commenters want a real appeal process for app-store rejections; others ask whether apps need store reviews at all.",
+      "comment_count": 80,
+      "terms": [
+        "degoogled",
+        "SMS gateway",
+        "NSFW",
+        "F-Droid",
+        "closed test"
+      ],
+      "entities": [
+        "Google",
+        "Android",
+        "Tabby",
+        "Play Store",
+        "F-Droid",
+        "itch.io"
+      ],
+      "comments": [
+        {
+          "by": "delichon",
+          "text": "> I was hoping to publish my new game on the store and charge for it, but their review process is so broken, I think I'll stick to fdroid and itch.io. The more you tighten your grip, Tarkin, the more star systems will slip through your fingers. -- Princess Leia"
+        },
+        {
+          "by": "criddell",
+          "text": "The app store gatekeepers have so much power that it would be nice to see some legal requirements for operators of those stores put in place. If your app is rejected, there should be a real appeal process. Maybe developers should be able to demand arbitration for some non-trivial fee? The first step of the appeal would be for the store to disclose to the arbitrator precisely what rule was…"
+        },
+        {
+          "by": "thih9",
+          "text": "> it was rejected. They attached a nsfw screenshot of some unidentified app. I don’t doubt the author, at the same time this is a serious accusation with no details and little context. This could have been presented in a more organized way, with timelines and redacted content. Part of the problem is Google not being transparent, having more transparency could help."
+        },
+        {
+          "by": "p2detar",
+          "text": "I think I'm done with Android apps development. The following publishing requirements just closed the door for me as a hobby developer: > Have at least 12 testers opted-in to your closed test. > Run your closed test with at least 12 testers, for 14 days The funny thing is this seems to apply to recently-created personal publisher accounts. I had a very old publisher account but because I was…"
+        },
+        {
+          "by": "snthd",
+          "text": ">The plan is to equip them with some sms gateway software MAXS (Modular Android XMPP Suite) could also work. http://projectmaxs.org/homepage/ https://bitbucket.org/projectmaxs/maxs/src/master/ https://search.f-droid.org/?q=Maxs&lang=en > Version 0.5.19 (2000506627) suggested Added on Jan 22, 2025 >This version requires Android 4.4 or newer. (Hope the author is doing OK.)"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49883471,
+      "url": "https://calnewport.com/its-time-to-investigate-the-ai-labs/",
+      "hn": "https://news.ycombinator.com/item?id=49883471",
+      "title": "It's Time to Investigate the AI Labs",
+      "time": 1790625215,
+      "depth": [
+        {
+          "text": "Cal Newport wants Congress to **investigate OpenAI and Anthropic** and find out **what they’re doing**",
+          "tier": "simple"
+        },
+        {
+          "text": "He wants lawmakers to examine what research the labs pursue, their **internal safety procedures**, and whether **apocalyptic futurist ideologies** influence their choices. He points to OpenAI’s **unauthorized hacking attacks** by autonomous agents and asks why they weren’t stopped after the first incident was revealed.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some want Congress to scrutinize the labs’ experiments and safety; others say the bigger issue is corporate power and incentives, or people trusting AI to make decisions.",
+      "comment_count": 58,
+      "terms": [
+        "frontier AI labs",
+        "LLM",
+        "autonomous agents",
+        "AGI",
+        "ASI"
+      ],
+      "entities": [
+        "Cal Newport",
+        "OpenAI",
+        "Anthropic",
+        "The New York Times",
+        "Congress",
+        "Dario Amodi",
+        "Sam Altman"
+      ],
+      "comments": [
+        {
+          "by": "jimmyjazz14",
+          "text": "> We must move past vague discussions of “AI” and instead isolate the specific types of systems that are creating problems. This is absolutely correct and its surprising how rarely you see commenters in the media push to go into the specifics on this. AI is just matrix math and its what you connect that math to that matters, we should talk a little more about what we are willing to connect AI to…"
+        },
+        {
+          "by": "Animats",
+          "text": "This is a wrong-headed attempt to regulate AI. The real problems are different. AI systems, especially multi-agent ones that can do things, are more akin to corporations, than individuals. When you read the logs from the Hugging Face incident, you're seeing something that looks a lot like internal corporate emails. Various units of the organization are arguing over what to do and who does what…"
+        },
+        {
+          "by": "psyklic",
+          "text": "Why aren't they running agents on isolated computers without Internet access? This way, breaking free of containers would not matter. It is truly a security nightmare that so many people are have given agents root access to their entire computers, in addition to presumably very private personal information."
+        },
+        {
+          "by": "nostrademons",
+          "text": "I mean, the reason that all these stories about AI being an existential threat to humanity are coming out is because they've made $3.1T in debt-fuelled spending commitments and now interest rates are going up. \"AI will kill us all if we don't regulate it\" is their \"get out of debt free\" card, so they can have the U.S. government stop the arms race, raise prices on their existing models, and…"
+        },
+        {
+          "by": "jumploops",
+          "text": "Maybe I'm a bit too skeptical/cynical, but it certainly seems like the frontier labs have fallen into their own (self-created) AI psychosis. There is no doubt in my mind that LLMs are fantastic machines, but the imminent jump from \"AGI\" to \"ASI\" seems premature (not to mention the ever-shifting goal posts of AGI itself). I'm in the \"move as fast as possible\" camp and work with LLMs all day, but I…"
+        }
+      ],
+      "image": "https://calnewport.com/wp-content/uploads/2026/09/16ALTMAN-sub-bzfh-superJumbo-v2-e1790369119788.webp"
+    },
+    {
+      "id": 49879702,
+      "url": "https://yashgarg.dev/posts/hijacking-ps5-rtmp-stream/",
+      "hn": "https://news.ycombinator.com/item?id=49879702",
+      "title": "Hijacking the PS5's RTMP stream",
+      "time": 1790609723,
+      "depth": [
+        {
+          "text": "someone redirected a **PS5's game stream** to their **Mac** and shared it on **Discord**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author pointed the PS5’s Twitch ingest domains to a Mac running **dnsmasq** and **nginx-rtmp**, which received the stream without certificate issues. It arrived as **1080p60** H.264 video with AAC stereo, and the low-latency profile kept the delay under a second.",
+          "tier": "substance",
+          "data": [
+            [
+              "stream quality",
+              "1080p60"
+            ],
+            [
+              "delay",
+              "less than a second"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters see unencrypted RTMP as a security risk; another says the issue is more with RTMP and Twitch than with the PS5.",
+      "comment_count": 55,
+      "terms": [
+        "RTMP",
+        "RTMPS",
+        "DNS",
+        "TLS",
+        "dnsmasq",
+        "nginx-rtmp",
+        "DHCP"
+      ],
+      "entities": [
+        "Yash Garg",
+        "Sony",
+        "PS5",
+        "Mac",
+        "Discord",
+        "Twitch",
+        "YouTube",
+        "dnsmasq",
+        "nginx-rtmp",
+        "OBS",
+        "mpv",
+        "GL.iNet",
+        "OpenWRT",
+        "Lightstream Studio",
+        "Steam",
+        "Clicks Power Keyboard"
+      ],
+      "comments": [
+        {
+          "by": "londons_explore",
+          "text": "Kinda sad that it's 2026 and this data still goes over the internet unencrypted... RTMP and all the video and audio protocols behind it aren't trivial either - I bet there are hundreds of exploits waiting to be found that any three letter agency sitting on the internet can use to take over your PS5 and all credentials stored within too..."
+        },
+        {
+          "by": "barake",
+          "text": "This is how Lightstream Studio has provided stream overlay for consoles[1]. Some years ago Microsoft added them as an official destination using a better protocol and dropped the need for MITM hackery. I used to work in this space and Lightstream was always doing interesting things, even if they never seemed to find PMF. 1: https://support.golightstream.com/hc/en-us/articles/38643168..."
+        },
+        {
+          "by": "Muromec",
+          "text": "Don't mind me, I'm just sitting here with my HDMI-RX port on rk3588 being happy that is works and I didn't brick the board when doing uboot update to uncurse it."
+        },
+        {
+          "by": "jprjr_",
+          "text": "Feel like there's a few parts missing that I'm not getting. The author mentions that the PS5 uses RTMPS to push video up to twitch - but suddenly it just uses plain RTMP?"
+        },
+        {
+          "by": "mixdup",
+          "text": "Maybe I'm missing something but there seems to be a gap between \"figure out the REAL hostname\" and \"we no longer have to worry about the stream never showing up on YouTube\""
+        }
+      ],
+      "image": "https://yashgarg.dev/_astro/cover.CH2lYHLC_OFBUo.webp"
+    },
+    {
+      "id": 49883844,
+      "url": "https://github.com/firelex/jeff",
+      "hn": "https://news.ycombinator.com/item?id=49883844",
+      "title": "Jeff – Jev-compatible 0.8B decision models, trained at home, ~30 ms",
+      "time": 1790627016,
+      "depth": [
+        {
+          "text": "someone built **small local models** that make **fast choices** between options without generating text",
+          "tier": "simple"
+        },
+        {
+          "text": "Jeff fine-tunes **Qwen3.5 and Gemma 4** to return a calibrated probability for each option in one pass. The 0.8B model takes about **28 ms per decision** on an Apple M4 Max, and training ran entirely on **local hardware**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Apple M4 Max decision time",
+              "28 ms"
+            ]
+          ]
+        }
+      ],
+      "camps": "One user says Jeff's accuracy is unacceptable for their use cases; the maker describes its out-of-the-box performance as respectable, while noting it varies by task.",
+      "comment_count": 55,
+      "terms": [
+        "zero-shot classification",
+        "fine-tune",
+        "forward pass",
+        "calibrated probability"
+      ],
+      "entities": [
+        "Jeff",
+        "Jev",
+        "Qwen3.5",
+        "Gemma 4",
+        "TypeSafe",
+        "Apple"
+      ],
+      "comments": [
+        {
+          "by": "adrithmetiqa",
+          "text": "Forgive my lack of understanding but how long before Jev type functionality is just built straight into all frontier models?"
+        },
+        {
+          "by": "AgentMasterRace",
+          "text": "I compared it to Jev in my current use cases and it's very inaccurate. 70% vs 94% . for classification, it's unacceptable."
+        },
+        {
+          "by": "trebligdivad",
+          "text": "What proportion of commercial LLM use is classification? I'm just wondering what happens to business AI spending/data centre usage when they realise they don't need full LLMs."
+        },
+        {
+          "by": "drzhouq",
+          "text": "Anything like this in the VLM side? Classification on images..."
+        },
+        {
+          "by": "velominati",
+          "text": "Typesafe has been quite about the underlying technology behind Jev. Given the speed and cost my hypothesis is that it doesn’t input tokens the way that LLMs do, ie iterating over every word and drawing the connections between each. That is an o(n^2) problem which is why LLMs are so expensive as they scale."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/121ce89820daa53cfa3aa040d0241a453fca34c34886e8ea320336d4bfbc9c50/firelex/jeff"
+    },
+    {
+      "id": 49873241,
+      "url": "https://arxiv.org/abs/2110.01834",
+      "hn": "https://news.ycombinator.com/item?id=49873241",
+      "title": "Thinking fast and slow in AI: The role of metacognition (2021)",
+      "time": 1790565833,
+      "depth": [
+        {
+          "text": "researchers propose **two-speed AI**: fast agents use experience, while slow ones **step in to reason**",
+          "tier": "simple"
+        },
+        {
+          "text": "The authors argue that studying **human thinking** could help AI gain abilities beyond **narrow tasks**. Both kinds of agents get a model of the world and a model of “self,” holding information about the system’s past actions and solvers’ skills.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters say metacognition matters or that the paper is worth revisiting; others question whether it fits current models, and one calls fast/slow thinking non-replicable pop psychology.",
+      "comment_count": 74,
+      "terms": [
+        "metacognition",
+        "narrow AI",
+        "multi-agent AI architecture",
+        "system 1",
+        "system 2",
+        "LLM"
+      ],
+      "entities": [
+        "Marianna Bergamaschi Ganapini",
+        "Murray Campbell",
+        "Francesco Fabiano",
+        "Lior Horesh",
+        "Jon Lenchner",
+        "Andrea Loreggia",
+        "Nicholas Mattei",
+        "Francesca Rossi",
+        "Biplav Srivastava",
+        "Kristen Brent Venable",
+        "D. Kahneman",
+        "ChatGPT",
+        "JEPA",
+        "GPT 5",
+        "Shakespeare",
+        "gzip",
+        "arXiv"
+      ],
+      "comments": [
+        {
+          "by": "gchamonlive",
+          "text": "There was this post a few days ago https://news.ycombinator.com/item?id=49797323 It had this to say in the linked post: This led to the natural question: can gzip do language modeling? (...). Here’s some real, unedited output after priming it on tiny Shakespeare:\ngzipt --corpus data/tinyshakespeare.txt --prompt $'MENENIUS:\\n' --length 200\nMENENIUS:\n'Though all at once canq\nMARCIUS:\nPray now…"
+        },
+        {
+          "by": "red75prime",
+          "text": "It reminds me of \"At the time we drew boxes labeled 'perception', 'cognition' with arrows between them.\" An imprecise quote that I can't place. I guess my box labelled 'subconsciousness' is trying to say that low-level mechanisms that give rise to the observed cognitive phenomena might have nothing to do with neat boxes."
+        },
+        {
+          "by": "hoppp",
+          "text": "Most humans have weak meta-cognition, a large percentage doesn't have verbal thoughts. Meta-cognition makes sense in a dynamic and updatable and modular system, for example I can monitor thoughts coming from my amygdala with my prefrontal cortex and then adjust how I process these thoughts. In LLMs it makes zero sense, even if you feed the output of one model into another, there is no way they…"
+        },
+        {
+          "by": "arbirk",
+          "text": "Interestingly that is not what we got, but maybe we should loop at architectures like this again? The JEPA loop is interesting, but might fail for the in-flexibility of the component ordering"
+        },
+        {
+          "by": "creativeSlumber",
+          "text": "How relevant is this fast/slow thinking thing with regards to current frontier models? I know a large organization who's built their AI framework completely around this concept, and I feel that it's not really meaningful concept with the capabilities of current models."
+        }
+      ],
+      "image": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png"
+    },
+    {
+      "id": 49875142,
+      "url": "https://www.habibicode.org/thedrawnworld",
+      "hn": "https://news.ycombinator.com/item?id=49875142",
+      "title": "37,500 border drawings: a map of the world as people remember it",
+      "time": 1790584510,
+      "depth": [
+        {
+          "text": "someone stacked **37,500 border drawings** from a game to show how people remember the **world**",
+          "tier": "simple"
+        },
+        {
+          "text": "Borderline's creator says **over 37,000 drawings** are stacked on a blank canvas. Each drawing's opacity reflects its score, and dark lines show where many people drew the same line; **bad guesses stay visible**.",
+          "tier": "substance",
+          "data": [
+            [
+              "drawings",
+              "37,500"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 32,
+      "terms": [
+        "opacity",
+        "map projection"
+      ],
+      "entities": [
+        "Borderline",
+        "The Drawn World"
+      ],
+      "comments": [
+        {
+          "by": "minervawes",
+          "text": "Can this be divided per drawer's country? I'd love to see how Americans draw the world map, versus, say, British or German."
+        },
+        {
+          "by": "nicocarsui",
+          "text": "Hi all, I created \"Borderline\", a border drawing game a few weeks ago. Since then, thousands of people have played it and I have accumulated over 37,000 drawings, which are now all stacked on a blank canvas. This allows you to see the world as people remember it. You can also check similar maps for the US, France, the UK, Germany, Australia, and Switzerland. Alternatively, you can also draw a few…"
+        },
+        {
+          "by": "baalimago",
+          "text": "We Swedes also try to ignore the Danes as much as possible"
+        },
+        {
+          "by": "jeremyscanvic",
+          "text": "Neat! I wonder how they deal with people using possibly different map projections?"
+        },
+        {
+          "by": "pluc",
+          "text": "Unrelated: what is \"habibi\"? To me (and I know nothing), it always sounded like a pejorative term for franco-arabs but I never bothered to validate"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49852600,
+      "url": "https://github.com/dashersw/coyopedal",
+      "hn": "https://news.ycombinator.com/item?id=49852600",
+      "title": "Guitar amp and effects pedal built on the Waveshare ESP32-S3-Touch-AMOLED-2.06",
+      "time": 1790389490,
+      "depth": [
+        {
+          "text": "someone built a **touchscreen guitar pedal** that runs **neural amp models** and effects",
+          "tier": "simple"
+        },
+        {
+          "text": "It runs **full-size NAM A2 models** at 48 kHz on an ESP32-S3, with a 23-layer, eight-channel WaveNet split across both cores. It loads captures from **microSD**, and a browser build runs the same UI, DSP and model without a board.",
+          "tier": "substance",
+          "data": [
+            [
+              "sample rate",
+              "48 kHz"
+            ],
+            [
+              "model layers",
+              "23"
+            ],
+            [
+              "model channels",
+              "eight"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 80,
+      "terms": [
+        "NAM A2",
+        "WaveNet",
+        "DSP",
+        "WebAssembly"
+      ],
+      "entities": [
+        "Coyopedal",
+        "Waveshare",
+        "ESP32-S3",
+        "Neural Amp Modeler",
+        "Gea",
+        "WebAssembly",
+        "TSX",
+        "C++",
+        "VoLum"
+      ],
+      "comments": [
+        {
+          "by": "crtified",
+          "text": "Bear in mind that the world is getting ever fuller with hobbyist hardware designers that are very good at paring expensive devices back to schematic and component basics, and producing open-source versions to encompass any useful OSS functionality, which they share freely. Championing free systems and simultaneously having an end-goal of commercial success is a tight line to tread."
+        },
+        {
+          "by": "_spduchamp",
+          "text": "I'm totally loving amp modelling and convolution reverb using PiPedal https://rerdavies.github.io/pipedal/"
+        },
+        {
+          "by": "boguscoder",
+          "text": "This is interesting sloproject but in spite of all verbosity I still didn’t parse how do you interface with it when it’s running on intended hw rather than in browser."
+        },
+        {
+          "by": "instagraham",
+          "text": "I saw a similar perhaps cooler project before - which tbh I don't fully understand but I saved for when/if I buy an electric guitar. https://github.com/GuitarML/NeuralPi I guess it's a neural network that you can play any guitar tone to and it'll emulate the settings and processing stack?"
+        },
+        {
+          "by": "999900000999",
+          "text": "I’d like this as an open source audio interface that I can flash firmware on. For example the Apollo Twin just keeps charging for plugin\nupgrades after you buy the hardware."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/bee0a92f2ec9024df3220024b00b2964ce78ca7b5de385dca6b55e99f6238c8d/dashersw/coyopedal"
+    },
+    {
+      "id": 49865312,
+      "url": "https://bookofrevenue.com/blog/6ab81e9a97a13f0001f7e4e1/postgres-at-time-zone-u-does-not-do-what-you-think-it-does",
+      "hn": "https://news.ycombinator.com/item?id=49865312",
+      "title": "Footguns with Postgres “at time zone 'UTC'”",
+      "time": 1790504391,
+      "depth": [
+        {
+          "text": "Postgres’s **AT TIME ZONE** syntax does **two opposite conversions**, and the time-zone details can bite",
+          "tier": "simple"
+        },
+        {
+          "text": "The same **AT TIME ZONE** phrase works in **opposite directions**: a `timestamptz` becomes a `timestamp` in the named zone, while a `timestamp` is treated as being in that zone and becomes a `timestamptz`. Comments disagree on whether to use **UTC timestamptz** for most stored times or keep **future human times** as a plain timestamp with a separate zone.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some recommend UTC timestamptz for most stored times; others prefer plain timestamps with a separate time-zone field for future human times.",
+      "comment_count": 98,
+      "terms": [
+        "AT TIME ZONE",
+        "timestamp",
+        "timestamptz",
+        "UTC"
+      ],
+      "entities": [
+        "Postgres",
+        "SQL"
+      ],
+      "comments": [
+        {
+          "by": "tibbar",
+          "text": "This summer, with the help of AI, I found an inconsistency in the way Postgres handles timestamp vs. timestamptz comparisons under a DST spring-forward gap for the datetime_ops btree family [0]. Essentially there are scenarios where expression B > A and B < C, but also C = A, which can cause queries using a btree index (among other things) to return an incorrect result. The assessment in the…"
+        },
+        {
+          "by": "heurekamala",
+          "text": "The text says: \"Comparing a timestamp and timestamptz will always result in false.\" That is wrong. Postgres changes the timestamp to timestamptz very quietly in the background.\nWether it uses the time zone of the session for this.\nIf it is true or false depends on the TimeZone setting. This is more bad than \"always false\".\nIn production with UTC it works. On a laptop of a California developer it…"
+        },
+        {
+          "by": "ulrikrasmussen",
+          "text": "The SQL standard is unfortunately really horrible when it comes to handling of time. The type `timestamp` is not a timestamp at all because it doesn't encode a unique point in time, it just stores a date and a time which has to be interpreted relative to a timezone. It should be called \"datetime\". Moving a Java Instant back and forth between a database is also a surprisingly difficult task to do…"
+        },
+        {
+          "by": "1a527dd5",
+          "text": "My bible: https://wiki.postgresql.org/wiki/Don't_Do_This"
+        },
+        {
+          "by": "layer8",
+          "text": "> Adding a month with + INTERVAL '1 months' is timezone-dependent. […] Adding months isn’t well-defined anyway, even when using date , for days of month > 28. I think it’s a mistake that systems generically allow such a computation (as opposed to application code implementing domain-specific business rules)."
+        }
+      ],
+      "image": "https://bookofrevenue.com/assets/images/bb5d5899f499a7ad369d587be86672c2-blog-og-image.jpg"
+    },
+    {
+      "id": 49872883,
+      "url": "https://www.nissan-global.com/EN/INNOVATION/TECHNOLOGY/ARCHIVE/E_POWER_GEN3/",
+      "hn": "https://news.ycombinator.com/item?id=49872883",
+      "title": "Nissan's third generation e-POWER powertrain",
+      "time": 1790562683,
+      "depth": [
+        {
+          "text": "Nissan’s **e-POWER setup** groups key parts together and pairs them with a **purpose-built engine**",
+          "tier": "simple"
+        },
+        {
+          "text": "Its **5-in-1 layout** combines the motor, reducer, inverter, increaser and generator, which Nissan says improves **fuel efficiency and quietness**. The engine can run at a **constant speed**, helping keep combustion stable.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: EV advocates say hybrids add complexity and an EV is enough; series-hybrid fans say they help when charging access or long trips are concerns.",
+      "comment_count": 365,
+      "terms": [
+        "5-in-1",
+        "inverter",
+        "series hybrid",
+        "EREV",
+        "EGR"
+      ],
+      "entities": [
+        "Nissan",
+        "e-POWER",
+        "Qashqai",
+        "ZR15DDTe",
+        "STARC"
+      ],
+      "comments": [
+        {
+          "by": "Toutouxc",
+          "text": "I used to like hybrids, and obviously series hybrids are the coolest kind of hybrids, but now that I’m driving a budget EV, I honestly don’t see the point anymore. Just get the EV and skip the awkward half-way step that inherits the most expensive and complicated parts from both designs. Seeing a sleek modern car pull away whisper quiet and then start the ICE 3 seconds later with a stutter and a…"
+        },
+        {
+          "by": "gcanyon",
+          "text": "One thing that always puzzled me was how the gas engines in hybrids were so efficient. Technology Connections has a great video explainer: https://www.youtube.com/watch?v=KnUFH5GX_fI tl;dw: constant RPM and a weird stroke geometry where the power stroke is longer than the other strokes to extract more energy from the expanding gasses."
+        },
+        {
+          "by": "100percentjake",
+          "text": "Some of the trends in these comments are wild. >>EREVs/series hybrids don't get better fuel economy They sure do if 80% of your driving is done purely on battery, which is how nearly every Volt owner I know operates. Once every couple weeks they'll exceed their EV range, let the gas engine take over, and be done with it. The fuel is sipped so infrequently the car will require a \"maintenance mode\"…"
+        },
+        {
+          "by": "dluan",
+          "text": "Like putting in the final optimizations in the crossbow right as others have figured out machine guns."
+        },
+        {
+          "by": "Animats",
+          "text": "The solid state battery people continue to inch forward to 500Wh/Kg.[1]\nThat's about 2x lithium-ion.\nThere are now a small number of prototype cars on the road with solid state batteries. There's even a Dodge Charger, from Stellantis. But nobody has solved the production cost problem yet. CATL has a summary of their approach.[2] This is the real win, but it's hard to make it work in production…"
+        }
+      ],
+      "image": "https://www.nissan-global.com/JP/INNOVATION/TECHNOLOGY/ARCHIVE/E_POWER_GEN3/ASSETS/IMG/e-power_gen3_thumb.jpg"
+    },
+    {
+      "id": 49869755,
+      "url": "https://www.inkandswitch.com/essay/malleable-software/",
+      "hn": "https://news.ycombinator.com/item?id=49869755",
+      "title": "Malleable software: Restoring user agency in a world of locked-down apps (2025)",
+      "time": 1790535691,
+      "depth": [
+        {
+          "text": "someone argues **software** should be easier for people to **reshape** around how they work",
+          "tier": "simple"
+        },
+        {
+          "text": "The essay uses spreadsheets to show a **gentle slope**: people can start with small edits and move toward deeper changes as they learn. It argues that **AI-generated apps** alone don’t solve changing installed tools or making them **work together**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some want users to be able to reshape their tools; others think only a small group will put in the extra effort.",
+      "comment_count": 71,
+      "terms": [
+        "malleable software",
+        "gentle slope",
+        "plugin API",
+        "open source",
+        "in-place toolchain",
+        "modding"
+      ],
+      "entities": [
+        "Ink & Switch",
+        "Geoffrey Litt",
+        "Josh Horowitz",
+        "Peter van Hardenberg",
+        "Todd Matthews",
+        "Stewart Brand",
+        "Atul Gawande",
+        "Alan Kay",
+        "Allan MacLean",
+        "Tchernavskij",
+        "Klokmose",
+        "EuroPARC",
+        "Buttons",
+        "Lisp",
+        "HyperCard",
+        "HyperTalk",
+        "Obsidian",
+        "Webstrates",
+        "Stylish",
+        "Arc Boosts",
+        "Tampermonkey",
+        "JavaScript",
+        "Malleable Systems Collective",
+        "Claude",
+        "GitHub",
+        "BoA Checklist",
+        "Bank of America",
+        "Kartik Agaram",
+        "GPL",
+        "Unix",
+        "Plan 9",
+        "Google",
+        "YouTube",
+        "Apple",
+        "Asahi Linux",
+        "Android",
+        "iOS",
+        "Linux",
+        "Emacs",
+        "Microsoft",
+        "Excel",
+        "Raspberry Pi"
+      ],
+      "comments": [
+        {
+          "by": "trashb",
+          "text": "I agree that the current state of software is quite rigid. There is no room for imperfection and often one opinion is seen as fixed the best. I think the essence of the GPL is trying to solve this issue, the freedoms of that license is focused on keeping software as editable as possible. The idea of malleable software is not new but most \"business/industry\" software is still very rigid. One of…"
+        },
+        {
+          "by": "piterrro",
+          "text": "This whole article is true and to the point but... reality is: most people still don't build their own setups: work, home - most of them follow a sh*tty software or decorate with Ikea. I think this applies only to a small group of users how will be willing to go extra mile and prompt their ideal interface for whatever they need to do."
+        },
+        {
+          "by": "lucrbvi",
+          "text": "I think one of the best ways of stopping lock-in is to be file-based. Obsidian is a good example of this. Users can just keep their data as is and move on with their lives."
+        },
+        {
+          "by": "dzink",
+          "text": "Intelligence and the mental load it requires has a budget - in both real and artificial forms. In real - people are bombarded with tools and requirements and when the teams behind those don’t consider mental load required, that spends down the budget. Thus people give up fighting all battles and are forced to prioritize their resources. Denial of service attack on the brain. AI models running out…"
+        },
+        {
+          "by": "dang",
+          "text": "Discussed at the time: Malleable software: Restoring user agency in a world of locked-down apps - https://news.ycombinator.com/item?id=44237881 - June 2025 (114 comments)"
+        }
+      ],
+      "image": "https://inkandswitch.com/essay/malleable-software/guitar.jpg"
     }
   ],
   "glossary": {
@@ -969,6 +2112,76 @@
     "instance": "One separately run copy of a service, with its own operator and users.",
     "IRC": "Internet Relay Chat: a way to chat live with people in online rooms.",
     "DNS": "Domain Name System: the internet's address book, which helps a computer find a website from its name.",
-    "XMPP": "Extensible Messaging and Presence Protocol: a way for messaging apps to exchange messages."
+    "XMPP": "Extensible Messaging and Presence Protocol: a way for messaging apps to exchange messages.",
+    "tokens": "Small pieces of text an AI counts as it reads or writes; they can affect how much a request costs.",
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "fallback model": "A backup model used when the main one can’t handle a request.",
+    "UI": "User interface: the screens and controls people use to operate a device.",
+    "React": "A tool for building the visible, clickable parts of websites and apps.",
+    "NFR": "Non-functional requirements: qualities like reliability and security that matter beyond what the software is meant to do.",
+    "stochastic": "Able to produce different outputs from the same input.",
+    "POC": "Proof of Concept: a small test or demo that checks whether an idea can work.",
+    "remux": "A copy of a disc’s original data moved into a new file container without re-encoding; combining parts from different releases is a hybrid remux.",
+    "DCP": "Digital Cinema Package: a prepared digital copy of a film for a cinema to screen.",
+    "DMCA": "Digital Millennium Copyright Act: a US law that, in this case, makes breaking a disc’s digital lock a violation.",
+    "LaserDisc": "An older kind of movie disc that people could play at home.",
+    "boutique label": "A company that licenses and releases older films, often with care for preserving them.",
+    "LLMs": "Large language models: computer programs trained on lots of writing that can produce text.",
+    "system architecture": "The big-picture layout of a system: its parts and how they fit together.",
+    "maintainability": "How easy software is to understand, change, and fix later.",
+    "mental model": "A person's working idea of how a system behaves.",
+    "vibe coding": "Making software by telling an AI what you want and letting it write the code, often without closely checking how it works.",
+    "market cap": "The total market value of a company’s shares.",
+    "NoSQL": "A kind of database that stores information without the usual linked-table setup.",
+    "SQL": "A language people use to ask a database for information.",
+    "share options": "A work perk that lets someone buy company shares at an agreed price.",
+    "managed database": "A database service where the provider handles upkeep, so you don’t run it all yourself.",
+    "bot": "A program that does things online automatically; people suspected the comments came from bots.",
+    "SSID": "Service Set Identifier: the name you see when you choose a Wi-Fi network.",
+    "degoogled": "An Android setup with Google's apps and services removed.",
+    "SMS gateway": "Software that lets other systems send text messages through a phone.",
+    "NSFW": "Not Safe For Work: a warning that something may be awkward or unsuitable to view around coworkers.",
+    "F-Droid": "A place to download Android apps that are free to use and share.",
+    "closed test": "A trial release limited to invited testers before an app is publicly available.",
+    "frontier AI labs": "Companies building some of the most advanced AI systems.",
+    "autonomous agents": "AI programs that can take actions on their own, such as interacting with other computer systems.",
+    "AGI": "Artificial General Intelligence: a hypothetical AI that could handle many kinds of tasks, not just one narrow job.",
+    "ASI": "Artificial Superintelligence: a hypothetical AI far more capable than people across a wide range of tasks.",
+    "RTMP": "Real-Time Messaging Protocol: a way to send live audio and video over a network.",
+    "RTMPS": "RTMP over TLS: a version that sends the stream through an encrypted connection.",
+    "TLS": "Transport Layer Security: a way to scramble information as it travels between devices, so others can’t read it.",
+    "dnsmasq": "A small program that answers name lookups on a home network; here, it pointed Twitch stream requests at the Mac.",
+    "nginx-rtmp": "A tool for receiving live video; here, it ran on the Mac to catch the PS5 stream.",
+    "DHCP": "Dynamic Host Configuration Protocol: a network process that gives a device settings it needs to connect, including which DNS server to ask.",
+    "zero-shot classification": "Getting an AI to sort something into a category without first giving it examples of that category.",
+    "fine-tune": "Train an already-trained model further using examples for a particular task.",
+    "forward pass": "One run through a model to produce an answer, rather than building it one piece at a time.",
+    "calibrated probability": "A chance estimate adjusted so its confidence is meant to match how often the choice is right.",
+    "metacognition": "Paying attention to how your own thinking is going and adjusting it.",
+    "narrow AI": "AI built to handle a limited set of tasks rather than many kinds of problems.",
+    "multi-agent AI architecture": "A setup where several AI workers can take different roles in solving a problem.",
+    "system 1": "The paper’s name for agents that react using only past experience.",
+    "system 2": "The paper’s name for agents brought in to reason and search for an optimal solution.",
+    "opacity": "How see-through a drawing is.",
+    "map projection": "A way to show the round Earth on a flat map, which can change how places look.",
+    "NAM A2": "Neural Amp Modeler A2: a format for captures that reproduce how an amplifier sounds.",
+    "WaveNet": "A kind of AI model used here to reproduce an amplifier's sound.",
+    "DSP": "Digital signal processing: changing audio in software, such as adding effects.",
+    "WebAssembly": "A way to run compiled programs inside a web browser.",
+    "AT TIME ZONE": "A phrase that converts a time using a named time zone; which way it converts depends on the kind of time value.",
+    "timestamp": "A date and clock reading without a time zone, so it does not by itself pin down one definite moment.",
+    "timestamptz": "A database value for one definite moment; the original time zone isn't kept with it.",
+    "UTC": "Coordinated Universal Time: a shared time standard that doesn't change with your local clock.",
+    "5-in-1": "Nissan's label for packaging five powertrain parts together in a modular setup.",
+    "inverter": "A part that manages electricity so it can drive the electric motor.",
+    "series hybrid": "A hybrid where the electric motor drives the car and the engine makes electricity.",
+    "EREV": "Extended-Range Electric Vehicle: a car that drives on battery power and has an engine for when more range is needed.",
+    "EGR": "Exhaust Gas Recirculation: a system that sends some exhaust back into the air going into the engine.",
+    "malleable software": "Software people can change to fit their needs, without starting over from scratch.",
+    "gentle slope": "A series of small steps that let people customize more as they learn, without a sudden leap in skill.",
+    "plugin API": "Rules app makers provide so add-ons can change an app in approved ways.",
+    "open source": "Software whose code is shared so other people can inspect, run, or change it.",
+    "in-place toolchain": "Editing tools built into the app you’re using, so you don’t have to open a separate program to make changes.",
+    "modding": "Changing an app in ways its maker may not officially support."
   }
 }
