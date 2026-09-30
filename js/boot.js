@@ -32,8 +32,6 @@ const json = async (path) => {
   }
 
   cards.forEach((card, i) => push({ card, date, n: i + 1, of: cards.length }, renderCard(card)));
-  todayCount = slides.length;
-
-  restore();
+  await restore();
   if (post >= slides.length - 3) loadMore(); // a short day may give no scroll to trigger it
 })();

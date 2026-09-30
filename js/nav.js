@@ -102,12 +102,12 @@ feed.addEventListener(
 // which reloads the page: it keeps your place for that one reload.
 function save() {
   try {
-    sessionStorage.setItem("at", String(Math.min(post, Math.max(0, todayCount - 1))));
+    sessionStorage.setItem("at", String(post));
   } catch {
     /* blocked storage: the switch lands at the top, which is where a visit starts anyway */
   }
 }
-function restore() {
+async function restore() {
   let at = 0;
   try {
     at = Number(sessionStorage.getItem("at")) || 0;
@@ -115,7 +115,9 @@ function restore() {
   } catch {
     at = 0;
   }
-  post = Math.min(at, Math.max(0, todayCount - 1));
+  // The place may be in an older day, which only loads on the way down.
+  while (slides.length <= at && nextDay < days.length) await loadMore();
+  post = Math.min(at, slides.length - 1);
   depth = 0;
   feed.scrollTop = post * feed.clientHeight;
   syncChrome();

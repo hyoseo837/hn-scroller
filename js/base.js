@@ -9,13 +9,12 @@ const btnCmt = document.getElementById("btn-cmt");
 const btnGlo = document.getElementById("btn-glo");
 const hint = document.getElementById("hint");
 
-// feed.children and `slides` are parallel: a slide is a card, a day divider, or
-// nothing else. Day dividers mean the index is no longer a card index.
+// feed.children and `slides` are parallel: a slide is a card or a day
+// divider. Day dividers mean the index is no longer a card index.
 let slides = [];
 let glossary = {};
 let days = [];
 let date = "";        // the day the feed opens on
-let todayCount = 0;   // slides belonging to `date`, so a kept place never points past it
 let loadingMore = false;
 // A real pointer means a keyboard is likely: hints and the depth lock differ.
 const KEYBOARD = matchMedia("(hover: hover) and (pointer: fine)").matches;
