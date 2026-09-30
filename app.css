@@ -234,8 +234,17 @@ strong { font-weight: 750; background: linear-gradient(transparent 58%, var(--ma
 #sheet dl { margin: 0; }
 #sheet dt { font-weight: 640; margin-top: 14px; }
 #sheet dd { margin: 4px 0 0; color: var(--dim); }
-#sheet .days { display: flex; flex-wrap: wrap; gap: 8px; }
-#sheet .days a { border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; text-decoration: none; color: var(--fg); font-size: 14px; }
+#sheet .month { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; font-weight: 650; }
+#sheet .month button {
+  min-width: 44px; min-height: 44px; font: inherit; font-size: 22px; color: var(--fg);
+  background: none; border: 1px solid var(--line); border-radius: 8px; cursor: pointer;
+}
+#sheet .month button:disabled { opacity: .3; cursor: default; }
+#sheet .days { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; text-align: center; font-variant-numeric: tabular-nums; }
+#sheet .days > * { display: grid; place-items: center; min-height: 44px; font-size: 14px; }
+#sheet .days .wd { min-height: 24px; font-size: 11px; color: var(--dim); }
+#sheet .days .off { color: var(--dim); opacity: .45; }
+#sheet .days a { border: 1px solid var(--line); border-radius: 8px; text-decoration: none; color: var(--fg); font-weight: 600; }
 #sheet .days a.now { border-color: var(--accent); color: var(--link); }
 
 .end { text-align: center; }
