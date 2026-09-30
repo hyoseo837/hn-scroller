@@ -163,3 +163,8 @@ Supersedes the Node choice in the stack entry above; everything else there still
 
 **Why:** the user found that without it, a forgotten date means scrolling through everything. Opening at the top still shows the new runs first; a pill offers the last card viewed (`localStorage`, by card id, so new runs on top cannot shift it).
 **Rejected:** opening on the saved card (hides the new runs above it); a saved index (shifts as runs are prepended).
+
+## 2026-09-30 — Link previews per language: `/` is English, `/ko/` is a forwarding page with the Korean one
+
+**Why:** a crawler runs no JS and sends no language, so one URL gets one preview. The user wanted an English and a Korean image; `/ko/` carries the Korean tags, sets the language to Korean and forwards to `/`.
+**Rejected:** one bilingual image (the user wanted one per language); a copy of the whole app under `/ko/` (duplicate markup for a preview).
