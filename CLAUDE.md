@@ -13,7 +13,7 @@ No framework, no build step, no server, zero dependencies.
 | Generator | `generate/`, a Python package run as `python3 -m generate`; stdlib only (`urllib`), OpenAI Responses REST (no SDK). No `requirements.txt`. |
 | Data | Static JSON per day in `data/`, plus `data/index.json` so the calendar knows which days exist. |
 | Host + cron | Cloudflare Pages on `hn.hyoseo.dev` (domain already in Cloudflare); GitHub Actions every 6h commits the day's JSON, and the push triggers the deploy. Web Analytics beacon is hand-added at the end of `index.html`. |
-| Client state | `localStorage`: resume position and language only. |
+| Client state | `localStorage`: language only. `sessionStorage` keeps the place through a language switch's reload. |
 
 - `index.html` is markup only; styles in `app.css`, behaviour in `js/` (classic scripts, one scope, base first, boot last).
 - PWA manifest for the home-screen icon. No service worker until offline reading is actually wanted.

@@ -109,11 +109,11 @@ def check() -> None:
         "no cap: every post above the threshold runs, however busy the day"
     )
 
-    # Same-day merge keeps the stronger earlier batch on top and drops repeats.
+    # Same-day merge puts the new batch on top and drops repeats.
     prior = [{"id": 1}, {"id": 2}]
     fresh = [{"id": 2}, {"id": 3}]
     already = {c["id"] for c in prior}
-    assert [c["id"] for c in prior + [c for c in fresh if c["id"] not in already]] == [1, 2, 3]
+    assert [c["id"] for c in [c for c in fresh if c["id"] not in already] + prior] == [3, 1, 2]
 
     post = {"id": 7, "url": "https://x.test", "title": "Raw HN Title", "time": 1790000000}
     full = assemble_card(

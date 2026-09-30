@@ -1,4 +1,4 @@
-// Where you are: header and dots, scroll and wheel navigation, and today's resume point.
+// Where you are: header and dots, scroll and wheel navigation, and keeping your place across a language switch.
 
 const posted = (unix) =>
   new Date(unix * 1000).toLocaleDateString(LOCALE, { month: "short", day: "numeric", year: "numeric" });
@@ -64,7 +64,6 @@ function onDepthScroll(event) {
   }
 }
 
-let saveTimer;
 feed.addEventListener(
   "scroll",
   () => {
@@ -75,9 +74,7 @@ feed.addEventListener(
     post = next;
     depth = 0;
     syncChrome();
-    if (post >= slides.length - 3) loadMore(); // older editions, below the boundary
-    clearTimeout(saveTimer);
-    saveTimer = setTimeout(save, 400);
+    if (post >= slides.length - 3) loadMore(); // older editions, below today
   },
   { passive: true },
 );
@@ -100,28 +97,23 @@ feed.addEventListener(
   { passive: false },
 );
 
-// Resume is per-device and only ever within one day — a day has a bottom, so
-// there is no backlog to feel guilty about.
-const key = () => `pos:${date}`;
+// No resume: the feed opens at the top, the latest run first, and you scroll down
+// until you meet what you read before. The one exception is a language switch,
+// which reloads the page: it keeps your place for that one reload.
 function save() {
   try {
-    // Resume belongs to today only. Scrolling into older editions is a detour,
-    // not progress — a day has a bottom, and that is what makes it feel light.
-    localStorage.setItem(key(), String(Math.min(post, Math.max(0, todayCount - 1))));
+    sessionStorage.setItem("at", String(Math.min(post, Math.max(0, todayCount - 1))));
   } catch {
-    /* private window, blocked storage — resume is a convenience, not state */
+    /* blocked storage: the switch lands at the top, which is where a visit starts anyway */
   }
 }
 function restore() {
   let at = 0;
-  // A day picked from the calendar opens at its first card: that is a choice to
-  // read that day, not to resume it.
-  if (!new URLSearchParams(location.search).has("date")) {
-    try {
-      at = Number(localStorage.getItem(key())) || 0;
-    } catch {
-      at = 0;
-    }
+  try {
+    at = Number(sessionStorage.getItem("at")) || 0;
+    sessionStorage.removeItem("at");
+  } catch {
+    at = 0;
   }
   post = Math.min(at, Math.max(0, todayCount - 1));
   depth = 0;

@@ -26,9 +26,6 @@ const T = {
     detail: "Detail",
     readOn: (site) => `Read it on ${site} →`,
     openHN: "Open the discussion on HN →",
-    caughtUp: "You're caught up.",
-    dayCount: (n, when) => `${n} from ${when}.`,
-    keepGoing: (older) => `keep going for ${older} ↓`,
     comments: (n) => `${n} comments`,
     commentsBtn: "Comments",
     terms: (n) => `${n} terms explained`,
@@ -52,9 +49,6 @@ const T = {
     detail: "자세히",
     readOn: (site) => `${site}에서 원문 보기 →`,
     openHN: "HN에서 토론 보기 →",
-    caughtUp: "오늘은 여기까지",
-    dayCount: (n, when) => `${when} 소식 ${n}개`,
-    keepGoing: (older) => `${older} 소식 계속 ↓`,
     comments: (n) => `댓글 ${n}개`,
     commentsBtn: "댓글",
     terms: (n) => `용어 설명 ${n}개`,
@@ -104,7 +98,7 @@ async function localize(day, when) {
 langPick.value = LANG;
 langPick.setAttribute("aria-label", T.language);
 langPick.addEventListener("change", () => {
-  save(); // keep today's place: the scroll save is debounced and a reload would drop it
+  save(); // keep today's place through the reload
   try {
     localStorage.setItem("lang", langPick.value);
   } catch {

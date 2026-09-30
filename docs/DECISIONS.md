@@ -143,3 +143,18 @@ Supersedes the Node choice in the stack entry above; everything else there still
 
 **Why:** the user turned on Web Analytics for the Pages project, but no deployment ever carried the injected beacon — not production, not a preview, not after adding `</body>`. The hand-added snippet was checked on a preview and live: one tag, and `cdn-cgi/rum` answers 204. Cloudflare documents it as cookieless (not measured here); its token is public by design.
 **Rejected:** relying on Pages' automatic injection (never appeared); closing `</body>` as the fix (tested on a preview, still no beacon).
+
+## 2026-09-29 — Newest first, no resume: the feed opens at the top in reverse processing order
+
+**Why:** the user's call. Each day file is in processing order and the viewer reverses it, so the whole feed, days included, reads latest run first; you scroll down until you meet what you read before. An index-based resume would drift as runs add cards on top. Only a language switch keeps its place, for that one reload (`sessionStorage`).
+**Rejected:** resume by card id (the top is where the new cards are, so resume would skip past them); reordering the day files in the generator (old days would keep the old order).
+
+## 2026-09-29 — No caught-up card: a card you already read is the stop signal
+
+**Why:** the user's call. With the feed newest first, the card sat under today's oldest post, usually one already read, so it said nothing; a plain date divider now separates days.
+**Rejected:** moving the card above the first already-seen card (needs a seen-id in `localStorage` for a signal the feed already gives).
+
+## 2026-09-29 — Each run goes in front of the day file; the viewer shows files as they are
+
+**Why:** the user's call, superseding the viewer reversal from earlier today: reversing the whole file put each run worst first. Prepending keeps runs newest first and each run best first.
+**Rejected:** reversing in the viewer (each run worst first); a file per run (index, calendar, Korean pass and glossary all assume one file per day).

@@ -95,11 +95,11 @@ def main() -> None:
     else:
         # Merge, never replace: a re-run on the same day (a retry after a crash, or a
         # second pass picking up what a guard cut) must not delete the earlier batch.
-        # Existing first: each run takes the highest-scoring posts left, so the earlier
-        # batch outranks this one. Prepending would put the weakest cards on top.
+        # This run first: the feed reads newest run first, so yesterday opens on what a
+        # morning visit has not seen yet. Within the run, cards stay best first.
         existing = read_json(f"{date}.json", {}).get("cards", [])
         already = {c["id"] for c in existing}
-        merged = existing + [c for c in cards if c["id"] not in already]
+        merged = [c for c in cards if c["id"] not in already] + existing
         write_json(f"{date}.json", {"date": date, "cards": merged, "glossary": day_glossary(merged, glossary)})
         if existing:
             print(f"merged: {len(existing)} already in today's file + {len(merged) - len(existing)} new")

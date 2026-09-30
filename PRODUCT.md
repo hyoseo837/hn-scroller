@@ -26,9 +26,10 @@ An awareness tool, not a learning tool: open, know what's going on, close.
 
 ## Positioning
 
-A day has a bottom. One edition, reached in about two minutes, then a "caught up" boundary — no
-backlog, no unread counts, no streaks, no notifications. Every card fact is checked against the
-source: the detail tier ships only with verbatim quotes that match the fetched article or thread.
+A day has a bottom. One edition, newest first, read in about two minutes; a card you already read
+is where you stop — no backlog, no unread counts, no streaks, no notifications. Every card fact is
+checked against the source: the detail tier ships only with verbatim quotes that match the fetched
+article or thread.
 
 ## Operating Context
 
@@ -37,7 +38,7 @@ source: the detail tier ships only with verbatim quotes that match the fetched a
   versions, figures, the two camps). Swipe up for the next post, right for depth, left to back out.
 - Per card: comments sheet (top-level, verbatim, with a generated "camps" line), glossary sheet
   (jargon from article and comments), link to the source.
-- Older editions load below the caught-up boundary; a calendar browses past days.
+- Older editions load below today, behind a date divider; a calendar browses past days.
 
 ## Capabilities and Constraints
 

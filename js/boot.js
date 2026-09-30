@@ -1,4 +1,4 @@
-// Boot: load the index and today's edition, render it, resume. Loaded last.
+// Boot: load the index and today's edition, render it. Loaded last.
 
 const json = async (path) => {
   const res = await fetch(path, { cache: "no-cache" });
@@ -32,9 +32,8 @@ const json = async (path) => {
   }
 
   cards.forEach((card, i) => push({ card, date, n: i + 1, of: cards.length }, renderCard(card)));
-  const older = nextDay < days.length ? pretty(days[nextDay]) : null;
-  push({ boundary: true, date }, renderBoundary(cards.length, pretty(date), older));
   todayCount = slides.length;
 
   restore();
+  if (post >= slides.length - 3) loadMore(); // a short day may give no scroll to trigger it
 })();

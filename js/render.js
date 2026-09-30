@@ -1,4 +1,4 @@
-// Rendering: cards, the caught-up boundary, day dividers, and loading older days.
+// Rendering: cards, day dividers, and loading older days.
 
 // Narrower than this and an image is a logo or an icon, not a picture. Measured
 // 2026-09-22: every image under it was 80-280px wide, and three were site logos.
@@ -100,18 +100,6 @@ function renderCard(card) {
   return section;
 }
 
-// A boundary, not a dead end. Reaching it means you are done with today; older
-// days sit below only if you choose to keep going, so nothing is ever a backlog.
-function renderBoundary(count, when, older) {
-  const section = el("section", "post");
-  const wrap = el("article", "card end");
-  wrap.append(el("h1", null, T.caughtUp));
-  wrap.append(el("p", null, T.dayCount(count, when)));
-  if (older) wrap.append(el("p", "older", T.keepGoing(older)));
-  section.append(wrap);
-  return section;
-}
-
 function renderDivider(when) {
   const section = el("section", "post");
   const wrap = el("article", "card end");
@@ -139,9 +127,7 @@ async function appendDay(when) {
   if (!day?.cards?.length) return false;
   await localize(day, when);
   Object.assign(glossary, day.glossary);
-  // The caught-up card already names the next day ("keep going for …"), so a
-  // divider straight after it would be two cards between the same two dates.
-  if (!slides.at(-1)?.boundary) push({ divider: true, date: when }, renderDivider(pretty(when)));
+  push({ divider: true, date: when }, renderDivider(pretty(when)));
   day.cards.forEach((card, i) => push({ card, date: when, n: i + 1, of: day.cards.length }, renderCard(card)));
   return true;
 }

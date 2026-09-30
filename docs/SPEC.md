@@ -92,18 +92,15 @@ search for it: the gloss is one sentence, and the link is the way to more.
 
 ## Session model
 
-- An edition is dated by its **UTC run date**. The job runs every 6h; each run appends newly
-  qualifying posts to that day's file, never replacing it.
-- Resume where you stopped **within today**. Finished already → the caught-up screen.
-- The caught-up screen is a **boundary, not a dead end**: older editions load below it, one at a
-  time, each behind its own date divider. Scrolling past the boundary is a deliberate choice, so
-  this is not a backlog — nothing older is ever pushed at you or counted as unread.
-- **Resume never points into an older edition.** It is capped at today's last slide, because a day
-  having a bottom is what makes the app feel light.
+- An edition is dated by its **UTC run date**. The job runs every 6h; each run puts its newly
+  qualifying posts in front of that day's file, best first, never replacing it.
+- **No resume.** The feed opens at the top, latest run first; you scroll down until you meet what you read.
+- **No caught-up card.** Meeting a card you already read is the signal. Older editions load below
+  today, one at a time, each behind its own date divider; nothing older is ever counted as unread.
 - Calendar to browse past days. Pull, not push: no badge, nothing accumulates.
 - **No backlog.** Away a week → you get today, not 200 cards.
 - No accounts, no unread counts, no streaks, no notifications.
-- Resume position is per-device (`localStorage`). Cron failure → keep serving yesterday.
+- Cron failure → keep serving yesterday.
 
 ## Pipeline
 

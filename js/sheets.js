@@ -82,7 +82,7 @@ btnGlo.addEventListener("click", () => {
 document.getElementById("cal").addEventListener("click", () => {
   openSheet(T.pastDays, (box) => {
     const wrap = el("div", "days");
-    const reading = slides[post]?.date || date; // past the caught-up card, that is an older day
+    const reading = slides[post]?.date || date; // below today's cards, that is an older day
     days.forEach((day) => {
       const a = el("a", day === reading ? "now" : null, day);
       a.href = `?date=${day}`;
