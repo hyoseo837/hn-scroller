@@ -14,7 +14,10 @@ const json = async (path) => {
   scrim.classList.remove("open");
 
   days = await json("data/index.json").catch(() => []);
-  const wanted = new URLSearchParams(location.search).get("date");
+  const params = new URLSearchParams(location.search);
+  // A shared card opens in the main feed, today on top: its date only says how far
+  // down to load (js/nav.js restore). A date alone is a day picked from the calendar.
+  const wanted = params.has("post") ? null : params.get("date");
   date = days.includes(wanted) ? wanted : days[0] || "";
   nextDay = days.indexOf(date) + 1;
 

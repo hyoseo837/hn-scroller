@@ -199,8 +199,14 @@ async function restore() {
   }
   // A shared link (`?date=…&post=<id>`, from the share button) or a continue carried over
   // from a picked day: go straight to that card, and offer nothing else.
-  const linked = Number(new URLSearchParams(location.search).get("post"));
-  if (linked) goto = { date, id: linked };
+  const params = new URLSearchParams(location.search);
+  const linked = Number(params.get("post"));
+  if (linked) {
+    goto = { date: params.get("date") || "", id: linked };
+    // Opened: the address goes back to the app's own, so a reload, a language switch
+    // or a home-screen install does not land on the shared card again.
+    history.replaceState(null, "", location.pathname);
+  }
   if (goto?.id) {
     syncChrome();
     return jumpTo(goto);

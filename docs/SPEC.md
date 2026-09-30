@@ -90,8 +90,8 @@ gets cheaper and better over time. Indexes jargon from **comments as well as the
 assume you are a peer, which is where most beginner confusion lives. Each term links to a Google
 search for it: the gloss is one sentence, and the link is the way to more.
 
-**Share** — a link that opens on the card, `/?date=…&post=<id>` (`&lang=ko` when read in Korean; a reader's
-saved language still wins). Chat crawlers run no JS, so `functions/index.js` fills that link's preview tags from
+**Share** — a link that opens on the card in the main feed, `/?date=…&post=<id>` (`&lang=ko` when read in
+Korean; a saved language still wins); the address then goes back to `/`. Chat crawlers run no JS, so `functions/index.js` fills that link's preview tags from
 the card. Share sheet on a phone, clipboard elsewhere. Previews: `/` in English, `/ko/` in Korean.
 
 ## Session model
