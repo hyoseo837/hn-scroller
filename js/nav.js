@@ -125,17 +125,31 @@ function readLastSeen() {
   } catch {
     lastSeen = null;
   }
-  // Nothing to offer on a picked day, or when the card left is the one on top.
-  if (!lastSeen?.id || new URLSearchParams(location.search).has("date") || slides[0]?.card?.id === lastSeen.id) {
+  // Nothing to offer when the card left is the one on top.
+  if (!lastSeen?.id || slides[0]?.card?.id === lastSeen.id) {
     lastSeen = null;
     return;
   }
   resumeGo.textContent = T.continueFrom(short(lastSeen.date));
   offerContinue(true);
 }
-resumeGo.addEventListener("click", async () => {
+resumeGo.addEventListener("click", () => {
   const want = lastSeen;
   offerContinue(false);
+  // A day picked from the calendar only has older days below it. A newer card
+  // is in the main feed: go there, and jump once it has loaded.
+  if (want.date > date) {
+    try {
+      sessionStorage.setItem("goto", JSON.stringify(want));
+    } catch {
+      return; // nowhere to carry it across the load
+    }
+    location.href = location.pathname;
+    return;
+  }
+  jumpTo(want);
+});
+async function jumpTo(want) {
   const find = () => slides.findIndex((slide) => slide.card?.id === want.id);
   // Older days load only on the way down: load them until the card's day is in.
   // A load in flight has already claimed its day, so wait for it before judging.
@@ -144,7 +158,7 @@ resumeGo.addEventListener("click", async () => {
   if (at < 0) return; // that day is gone from the index
   if (feed.children[post]) feed.children[post].scrollLeft = 0;
   feed.scrollTop = at * feed.clientHeight; // a jump, not a glide past every card between
-});
+}
 document.getElementById("resume-x").addEventListener("click", () => offerContinue(false));
 
 // A language switch reloads the page: it keeps your place for that one reload.
@@ -157,11 +171,19 @@ function save() {
 }
 async function restore() {
   let at = null;
+  let goto = null;
   try {
     at = sessionStorage.getItem("at");
+    goto = JSON.parse(sessionStorage.getItem("goto"));
     sessionStorage.removeItem("at");
+    sessionStorage.removeItem("goto");
   } catch {
     at = null;
+  }
+  if (goto?.id) {
+    // Continue, carried over from a picked day: go straight to it.
+    syncChrome();
+    return jumpTo(goto);
   }
   if (at === null) {
     // A fresh visit: open at the top, and offer the card left last time.
