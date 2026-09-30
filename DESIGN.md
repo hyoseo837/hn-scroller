@@ -169,7 +169,7 @@ everything else gets out of its way.
 - **Action button**: 44px tall pill, SVG icon (18px, 1.8 stroke, round caps) + tabular count.
 - **Icons**: one inline SVG sprite in `index.html`, one stroke weight. No emoji, no glyph icons.
 - **Camps callout**: tint background, "The split" label in `--link`, then the line.
-- **Day divider**: the only card between two days; it names the day below.
+- **Day divider**: the only card between two days; it names the day below, with the Ko-fi link under it.
 - **Continue pill**: under the header, sheet-white pill, link-orange label and a dim ×, until used or dismissed.
 - **Calendar**: one month per sheet, weeks from Sunday, UTC days. Edition days are bordered 44px cells, the
   day being read in orange, the rest dimmed; ‹ › step only between months that have editions.

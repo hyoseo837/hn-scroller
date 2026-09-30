@@ -107,6 +107,12 @@ function renderDivider(when) {
   const section = el("section", "post");
   const wrap = el("article", "card end");
   wrap.append(el("h1", null, when));
+  // The one card with no story on it: a place for the tip jar that interrupts nothing.
+  const tip = el("a", "tip", T.tip);
+  tip.href = "https://ko-fi.com/hyoseo";
+  tip.target = "_blank";
+  tip.rel = "noopener";
+  wrap.append(tip);
   section.append(wrap);
   return section;
 }
