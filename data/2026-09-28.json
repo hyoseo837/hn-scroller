@@ -2,911 +2,6 @@
   "date": "2026-09-28",
   "cards": [
     {
-      "id": 49872723,
-      "url": "https://colo.to/nvidia-stock-narrative.html",
-      "hn": "https://news.ycombinator.com/item?id=49872723",
-      "title": "Owed a billion dollars in Nvidia stock",
-      "time": 1790561113,
-      "depth": [
-        {
-          "text": "an early **NVIDIA** adviser says a **stock-option mix-up** left him short millions of shares",
-          "tier": "simple"
-        },
-        {
-          "text": "His 1993 agreement said all **25,000 options** would vest after one year. He says stock splits turned the missing 9,375 into **4.5 million shares**, but he and his lawyers concluded the **statute of limitations** was against them.",
-          "tier": "substance",
-          "data": [
-            [
-              "options granted",
-              "25,000"
-            ],
-            [
-              "vesting period",
-              "one year"
-            ],
-            [
-              "missing shares after splits",
-              "4,500,000"
-            ],
-            [
-              "cumulative split factor",
-              "480x"
-            ]
-          ]
-        }
-      ],
-      "camps": "Two camps: some say the options expired and the claim is dead; others suggest suing over the information he received or selling the right to litigate.",
-      "comment_count": 161,
-      "terms": [
-        "stock options",
-        "vest",
-        "stock split",
-        "statute of limitations",
-        "motion to dismiss"
-      ],
-      "entities": [
-        "NVIDIA",
-        "Eric Gullichsen",
-        "Jensen",
-        "Curtis Priem",
-        "Chris Malachowsky",
-        "Sense8 Corporation",
-        "Sun Microsystems",
-        "SPARCstation GX",
-        "Intel",
-        "Microsoft",
-        "DirectX",
-        "NV1",
-        "Cooley",
-        "Allan Steyer",
-        "Steyer Lowenthal",
-        "Chris Burke",
-        "Korein Tillery"
-      ],
-      "comments": [
-        {
-          "by": "reticulates",
-          "text": "You are ultimately responsible for asserting your contractual rights. Your stock options had an expiry and you did not exercise them in time. The letter you received notifying that you had 15,625 vested options was not an award in of itself, it was only a courtesy notifying you that you had vested options to exercise before they expired. Even if due to ambiguous wording it could be argued that…"
-        },
-        {
-          "by": "whall6",
-          "text": "You should sell your right to litigate this. There are hundreds of firms that would pay you to take this on. Would involve near zero effort for you and would also check the box of being “about the principle”."
-        },
-        {
-          "by": "jonas21",
-          "text": "An open question is what happened to the 15,625 shares that he received when he exercised his options in 1996? If he had held on to those, they would be worth even more than the additional 9,375 shares he was entitled to -- about $1.7 billion using the same numbers in the post. My guess is that he probably sold them when they were worth a lot less then they are now, and would have done the same…"
-        },
-        {
-          "by": "Eric_Gullichsen",
-          "text": "Author here. Thanks for all the comments, I've been hesitant to post this to the court of public opinion, yet curiosity about what the HN community would think caused me to push the button. My lawyers - who were really excellent - represented me (on contingency!) because it seemed the chance of a judge not accepting a motion to dismiss (for a variety of reasons I don't want to detail here) was…"
-        },
-        {
-          "by": "binlog",
-          "text": "> Here in the land of the free, it turns out a company only has to honor its contractual obligations for a little while. If Nvidia showed you contract paperwork that proved they overpaid you 9,375 shares in 1993, would you agree to pay them back the present value? After all contracts should be enforceable indefinitely right?"
-        }
-      ],
-      "image": null
-    },
-    {
-      "id": 49869574,
-      "url": "https://loficities.com/",
-      "hn": "https://news.ycombinator.com/item?id=49869574",
-      "title": "Show HN: Lofi Cities – Pixel-art city nights with browser-generated lofi",
-      "time": 1790534670,
-      "depth": [
-        {
-          "text": "someone made **pixel-art city nights** with **lofi music** generated live in your browser",
-          "tier": "simple"
-        },
-        {
-          "text": "Each scene is a **480×270 pixel animation** that loops **every four minutes**, with its own weather and city sounds. Tracks are **synthesized live in the browser**, with no samples or recordings.",
-          "tier": "substance"
-        }
-      ],
-      "camps": "Two camps: fans call it gorgeous and cool; critics say it feels too AI-generated and the ads break the immersion.",
-      "comment_count": 91,
-      "terms": [
-        "pixel art",
-        "Web Audio API",
-        "sound synthesis"
-      ],
-      "entities": [
-        "Lofi Cities",
-        "Web Audio API"
-      ],
-      "comments": [
-        {
-          "by": "thih9",
-          "text": "The product hunt ad is breaking the immersion for me. I know that most cities have ads but still, I prefer ad free pixel art. It’s also not realistic, in one landscape the billboard is taller than a 9 story building."
-        },
-        {
-          "by": "rda2",
-          "text": "I still love Mark Ferrari’s Living Worlds from 1995 which changes with the time of day & the month. Handmade and ad-free of course. https://www.effectgames.com/demos/worlds/"
-        },
-        {
-          "by": "iand675",
-          "text": "There's a lot to like here, but too AI-generated for me. The pixel art for Tokyo & Hong Kong don't use proper Chinese/Japanese characters. The pulsating badges in the non-pixel UI are also pretty AI-indicative in a way that is distracting."
-        },
-        {
-          "by": "vagabund",
-          "text": "I don't why I would want to stare at vibecoded UI and an ad to relax"
-        },
-        {
-          "by": "timenotwasted",
-          "text": "Gorgeous, very well executed. I'm guessing the primary request will be more cities but I'll deviate and say I'd love to see more views as well. Would be nice to have the same set of cities by I can see it from a studio view same way it is in the Paris view. Or from an office. Or a cafe."
-        }
-      ],
-      "image": "https://loficities.com/img/og/home.png"
-    },
-    {
-      "id": 49868404,
-      "url": "https://iain.rocks/blog/dont-couple-your-go-code-to-github",
-      "hn": "https://news.ycombinator.com/item?id=49868404",
-      "title": "Don't couple your Go code to GitHub",
-      "time": 1790527858,
-      "depth": [
-        {
-          "text": "someone says Go packages should use **custom domains** so changing code hosts won't mean rewriting **import paths**",
-          "tier": "simple"
-        },
-        {
-          "text": "Go uses the hosting location in an **import path**, so moving hosts can mean changing code. The author recommends a custom domain that can point somewhere new while users keep the **same install command**. One company used GitHub, GitLab and Azure Devops at once because switching was such a large task, and ended up paying for **three hosting services**.",
-          "tier": "substance"
-        }
-      ],
-      "camps": "Two camps: custom-domain advocates say they avoid tying package names to one host; critics say domains need upkeep and can disappear, while some say a go.mod replace or find-and-replace is enough.",
-      "comment_count": 94,
-      "terms": [
-        "import path",
-        "Go vanity URL",
-        "go.mod",
-        "301 redirect"
-      ],
-      "entities": [
-        "Go",
-        "GitHub",
-        "GitLab",
-        "Azure Devops",
-        "Boneclone",
-        "Iain Cambridge"
-      ],
-      "comments": [
-        {
-          "by": "p4bl0",
-          "text": "True, but beware of the domain name you're using. Because VeriSign may unilaterally decide to delete your domain name along with thousands of others [1] and you're back to square one… [1] https://neil.fraser.name/news/2026/09/03/"
-        },
-        {
-          "by": "thih9",
-          "text": "> In my opinion, every commerical software development team using Go should be using custom domains for namespacing their internal libraries and packages. I’d remove “go” from the above, i.e. I think same applies to other stacks. Even using GitHub domain links in code comments gets problematic long term. Ie when a migration happens and those links start pointing nowhere."
-        },
-        {
-          "by": "dewey",
-          "text": "> That is, if you move your git hosting to GitLab then you have to change your code! You can also just use \"replace github.com/example/example => gitlab.com/example/example\" in your go.mod file and everything will keep working. That seems like a very pre-mature optimization for something that doesn't really matter."
-        },
-        {
-          "by": "unscaled",
-          "text": "> One of the good features of Go is that you namespace your code with the location to fetch the code. Then the rest of the article explains why this is NOT a good feature in practice. I don't think it's unworkable either, but this is one of these little thing that Go decided to do different and convinced its fans that this is a great idea and all the other languages where doing it wrong. After a…"
-        },
-        {
-          "by": "st3fan",
-          "text": "Great when a company goes out of business and the domains are dangling. Next one to scoop it up takes over source code that others new depend on. We've seen this many times already in other ecosystems. It is a very bad situation. It is bad advice to move your packages under your own domain. You will never be as good as Microsoft to keep paying for the domain. There are no guarantees in life but I…"
-        }
-      ],
-      "image": null
-    },
-    {
-      "id": 49867553,
-      "url": "https://nura.eco/blog/2026/09/27/nura-rename/",
-      "hn": "https://news.ycombinator.com/item?id=49867553",
-      "title": "PostmarketOS is rebranding as Nura",
-      "time": 1790523075,
-      "depth": [
-        {
-          "text": "the **postmarketOS project** is now called **Nura**, a shorter name picked after a long search",
-          "tier": "simple"
-        },
-        {
-          "text": "The team says the old name was **hard to pronounce and remember**, and its descriptive wording no longer fit the project’s scope. **Nura** is an abbreviation of Nuraghe, ancient granite structures in Sardinia; Davide Depau suggested the name. The team picked it using **range voting** after a selection team narrowed 300+ community suggestions to four names.",
-          "tier": "substance",
-          "data": [
-            [
-              "mean vote",
-              "0.4"
-            ]
-          ]
-        }
-      ],
-      "camps": "Two camps: some say Nura is catchier and rolls off the tongue; others say postmarketOS explained the project better and Nura sounds generic.",
-      "comment_count": 52,
-      "terms": [
-        "operating system",
-        "range voting",
-        "trademark"
-      ],
-      "entities": [
-        "Nura",
-        "postmarketOS",
-        "Nuraghe",
-        "Davide Depau"
-      ],
-      "comments": [
-        {
-          "by": "sermah",
-          "text": "Have you seen the new show? It's on Tubu. It's literally on Heebee. It's on Poodee with ads. It's literally on Dippy. You can probably find it on Weeno. Dude it's on Gumpy. It's a Pheebo original. It's on Poob. You can watch it on Poob. You can go to Poob and watch it. Log onto Poob right now. Go to Poob. Dive into Poob. You can Poob it. It's on Poob. Poob has it for you. Poob has it for you."
-        },
-        {
-          "by": "pona-a",
-          "text": "Idk, I think the new name sounds too corporate, like some shitty startup or wellness brand. PostmarketOS was a bit of a mouthful but it gave you some idea of what the project was. Well, if they think it's a way to reach more people, then more power to them."
-        },
-        {
-          "by": "NoboruWataya",
-          "text": "I did think postmarketOS was a bit of an awkward name but it was also widely recognised, at least in Linux nerd circles. I guess this will cause a bit of confusion in the short term but hopefully lead to broader recognition in the longer term. Though the obstacles to Nura's growth are probably not primarily branding-related."
-        },
-        {
-          "by": "mzajc",
-          "text": "Searching for \"Nura\" returns dozens of existing results. They couldn't even get nura.org! Is there really not a more distinct name they could've picked? Even Nura OS would make them easier to find in the long term. Non-exhaustive list of things already named \"nura\": - NURA: Premium Ingredients for Food & Wellness - Nura - Award-winning personalised sound - NURA: India's First Ai Powered Health…"
-        },
-        {
-          "by": "yjftsjthsd-h",
-          "text": "I'm torn; the old name was awkward, but renaming is a painful breaking change. Oh well, it's done now."
-        }
-      ],
-      "image": "https://postmarketos.org/static/img/2026-09/stickers.jpg"
-    },
-    {
-      "id": 49866515,
-      "url": "https://jvns.ca/blog/2026/09/27/replacing-the-old-battery-on-rechargeable-bike-lights/",
-      "hn": "https://news.ycombinator.com/item?id=49866515",
-      "title": "Replacing the old battery on rechargeable bike lights",
-      "time": 1790515811,
-      "depth": [
-        {
-          "text": "someone got **old rechargeable bike lights** working again by **replacing their batteries** at a makerspace",
-          "tier": "simple"
-        },
-        {
-          "text": "They soldered in replacement batteries after an LLM suggested the old one was an **LIR2477**. The lights work, but the writer hasn’t tested how long the new batteries last yet.",
-          "tier": "substance",
-          "data": [
-            [
-              "parts",
-              "about $20 CAD"
-            ],
-            [
-              "batteries",
-              "$3 each"
-            ],
-            [
-              "glue",
-              "$8"
-            ]
-          ]
-        }
-      ],
-      "camps": "Two camps: one says decode the battery code and measure the cell; another says matching chemistry, voltage, and capacity matters more than the exact model.",
-      "comment_count": 84,
-      "terms": [
-        "LLM",
-        "soldering",
-        "desoldering pump",
-        "LIR2477",
-        "battery chemistry",
-        "voltage",
-        "capacity"
-      ],
-      "entities": [
-        "Julia Evans",
-        "iFixit",
-        "Lee",
-        "Lauria",
-        "DigiKey",
-        "AliExpress",
-        "Wikipedia",
-        "Cygolites",
-        "Fenix",
-        "INFINI Lava 500",
-        "LEZYNE LED Macro Drive 1300XL",
-        "ExposureLights",
-        "Super Metroid",
-        "MEC",
-        "Magicshine",
-        "EVO 1300",
-        "SeeMee 300",
-        "Bontrager Flare RT",
-        "Django",
-        "Ulia Ea",
-        "Recurse Center"
-      ],
-      "comments": [
-        {
-          "by": "layer8",
-          "text": "> I wasn’t sure how to find out what an “LI????77” was […]. I would be interested to learn non-LLM ways to figure this out though. There must be a way. Reading https://en.wikipedia.org/wiki/Button_cell#Type_designation would have indicated a solution: The third character must be an R (for rechargeable), the “77” would be the height in tenths of millimeters (which makes for a good plausibility…"
-        },
-        {
-          "by": "MrGilbert",
-          "text": "> I wasn’t sure how to find out what an “LI????77” was […]. I would be interested to learn non-LLM ways to figure this out though. There must be a way. Back in my days I simply googled my way through the nomenclature of batteries. I feel pretty old, somehow."
-        },
-        {
-          "by": "robot_jesus",
-          "text": "Love this. I have a pile of nice Cygolites (both front and tail) that my whole family uses that are maybe 8 or 9 years old. Their capacities have largely dropped to the point that I need to charge them every ride or two. Maybe get about 90 minutes of use, down from 3-4 hours previously. They're not user-serviceable by design but I've been pondering cracking them open and having a go at swapping…"
-        },
-        {
-          "by": "dragontamer",
-          "text": "I wouldn't worry about matching the exact model number of the battery. Instead, it's more important to get roughly the same chemistry and a capacity equal or maybe a touch greater (if technology improved in the last 10 years, capacity could be greater with modern parts). Specific batteries go in and out of production. But as long as it's the same CHEMISTRY, voltage, and capacity, it's likely…"
-        },
-        {
-          "by": "Tade0",
-          "text": "Word of warning: batteries from AliExpress might not be the size it says on the tin. Also: not all lights require soldering to change the battery. Some brands, like Fenix, offer lights where you can change the battery on the go. I had a light from a lesser known Taiwanese brand - an INFINI Lava 500.\nAt some point it stopped working, so I took it apart with my iFixit kit and inside was a 102660…"
-        }
-      ],
-      "image": null
-    },
-    {
-      "id": 49875148,
-      "url": "https://thecivilian.co.nz/2026/09/27/ai-companies-in-fierce-arms-race-to-demonstrate-their-model-is-the-most-existentially-threatening-to-humanity/",
-      "hn": "https://news.ycombinator.com/item?id=49875148",
-      "title": "AI companies in race to demonstrate their model most threatening to humanity",
-      "time": 1790584540,
-      "depth": [
-        {
-          "text": "AI companies are **jokingly** trying to prove their models are most likely to **end humanity**",
-          "tier": "simple"
-        },
-        {
-          "text": "The satire imagines OpenAI agents hacking **Hugging Face** and Australia's **Medicare database**, then Anthropic's **Jacob Coxon** warning that AI may be dangerous.",
-          "tier": "substance"
-        }
-      ],
-      "camps": "Two camps: some commenters see serious AI safety risks; others think companies are using danger claims to win regulation or protect their business.",
-      "comment_count": 269,
-      "terms": [
-        "AI agent",
-        "RLHF",
-        "sandbox",
-        "regulatory capture"
-      ],
-      "entities": [
-        "OpenAI",
-        "Anthropic",
-        "Hugging Face",
-        "Medicare",
-        "Jacob Coxon"
-      ],
-      "comments": [
-        {
-          "by": "Spacecosmonaut",
-          "text": "My read is that OpenAI & Anthropic have realized they are reaching model capabilities that cannot be monetized due to various risks. E.g., an engineer deploys an agent over the weekend that decides, when stuck on a task, to go about hacking a competitor. They have a product liability issue. It seems that we have a fundamental control problem with current gen AI that cannot be solved via RFLH…"
-        },
-        {
-          "by": "chasd00",
-          "text": "I’ve never seen CEOs work so hard to make the public aware of how dangerous and out of control their flagship product is. It makes me automatically assume they’re scheming about something else like regulatory capture to protect their market."
-        },
-        {
-          "by": "runako",
-          "text": "Because the downsides that exist for other companies simply do not exist for this tier of rich companies. Examples: - product liability - negligence (civil or criminal) - Computer Fraud & Abuse Act (requires intent, which after N \"accidents\" seems like a jury should at least evaluate whether intent is present as understood in a courtroom. Hard to blame \"surprise\" after the Nth \"accidental\"…"
-        },
-        {
-          "by": "stephbook",
-          "text": "We've had movies like Terminator, Matrix, or i, Robot. Black Mirror Metalhead. Boston dynamics robo dog with a knife or a gun. Humanoids doing back flips. Memes making fun of how we are going to fight these for access to water. The intelligence is there and so is the physical incarnation. Google's models fold proteins better than humans and Covid might have been engineered and inadvertently…"
-        },
-        {
-          "by": "ACCount39",
-          "text": "Because AI genuinely is an extremely powerful and extremely dangerous technology, and the \"best practices\" of dealing with that are still being written. OpenAI, for example, thought their sandboxes were good enough. As their AIs got more and more advanced, they kept proving them wrong - sandbox after sandbox. And that's today's AI problems. AI capabilities are still improving - if there's a limit…"
-        }
-      ],
-      "image": "https://i0.wp.com/thecivilian.co.nz/wp-content/uploads/2026/09/aiendoftheworldstory.jpg?fit=872%2C591&ssl=1"
-    },
-    {
-      "id": 49870295,
-      "url": "https://david.alvarezrosa.com/posts/self-hosting-on-the-dark-web/",
-      "hn": "https://news.ycombinator.com/item?id=49870295",
-      "title": "Self-Hosting on the Dark Web",
-      "time": 1790539416,
-      "depth": [
-        {
-          "text": "someone made their **personal site** reachable on **Tor**, with a separate build for its onion address",
-          "tier": "simple"
-        },
-        {
-          "text": "The **.onion address** works only inside Tor; Tor forwards its port 80 to **nginx**, listening at 127.0.0.1:8080. The author uses **Hugo** to build separate clearnet and Tor copies, then deploys both on every push.",
-          "tier": "substance"
-        }
-      ],
-      "camps": "Two camps: the post says Tor keeps any single party from linking identity to activity; one commenter says government agencies can still do it, just with more difficulty.",
-      "comment_count": 98,
-      "terms": [
-        "Tor",
-        "hidden service",
-        "onion address",
-        "clearnet",
-        "nginx",
-        "Hugo",
-        "rsync"
-      ],
-      "entities": [
-        "David Álvarez Rosa",
-        "Tor",
-        "Tor Project",
-        "Tor Browser",
-        "nginx",
-        "Hugo",
-        "GitHub Actions",
-        "I2P",
-        "Yggdrasil"
-      ],
-      "comments": [
-        {
-          "by": "p4bl0",
-          "text": "My personal website has been hosted on Tor for years. It's easy to do from your home even behind a NAT because it's an outgoing connection from your point of view (which also makes it a great way to expose local services even when you are behind a NAT and don't not have a static IP), and by design your personal IP is hidden from your visitors. I wrote about it in 2600 almost ten years ago…"
-        },
-        {
-          "by": "ivanmontillam",
-          "text": "What I really love about Onion sites is that if they are big enough, performance engineering really becomes Tor-specific. A few examples: - Making assets embedded as base64 (img src the header logo as base64, all CSS should be inline, etc.). - Leveraging CSS as much as possible (if you use animations and transitions, use CSS as much as possible for these, avoid JS for them). - Make sure your…"
-        },
-        {
-          "by": "basilikum",
-          "text": "You probably want to add the Onion-Location header to the clearnet site so Tor Browser can automatically inform the visitor about it: https://community.torproject.org/onion-services/advanced/oni..."
-        },
-        {
-          "by": "mzajc",
-          "text": "Besides using a separate port, I would also suggest running the hidden service on a non-127.0.0.1 bind address, just in case you ever host something else on that port and forget to disable the hidden service: > HiddenServicePort 80 127.13.37.1:8080 > listen 127.13.37.1:8080; This way, strangers won't be able to connect to a service bound to 127.0.0.1, should you ever decide to re-use the port and…"
-        },
-        {
-          "by": "dherls",
-          "text": "What is the benefit of building the same website twice with different hostnames instead of using relative links to content on the same domain?"
-        }
-      ],
-      "image": "https://david.alvarezrosa.com/images/home-illustration.png"
-    },
-    {
-      "id": 49875411,
-      "url": "https://www.space.com/space-exploration/launches-spacecraft/spacexs-starship-megarocket-launching-to-orbit-for-1st-time-ever-on-sept-28-watch-it-live",
-      "hn": "https://news.ycombinator.com/item?id=49875411",
-      "title": "SpaceX's Starship launching to orbit for first time ever today",
-      "time": 1790586904,
-      "depth": [
-        {
-          "text": "SpaceX's Starship is making its **first-ever attempt** to reach **orbit** today",
-          "tier": "simple"
-        },
-        {
-          "text": "Flight 14 is meant to send Ship to Earth orbit and deploy **26 Starlink Version 3 internet satellites**.",
-          "tier": "substance"
-        }
-      ],
-      "camps": "Two camps: some celebrate the engineering; others think Starship's project path is impossible.",
-      "comment_count": 204,
-      "terms": [
-        "suborbital",
-        "splashdown",
-        "critical path",
-        "LEO"
-      ],
-      "entities": [
-        "SpaceX",
-        "Starship",
-        "Super Heavy",
-        "Ship",
-        "Starlink",
-        "Elon Musk",
-        "NASA",
-        "Artemis",
-        "Artemis IV"
-      ],
-      "comments": [
-        {
-          "by": "fakwandi_priv",
-          "text": "I’m a bit saddened this thread has so little activity, 55 comments as of posting, here even though there are half a million people watching the spacex stream. Just watching the launch, the amount of technology and people involved is incredible. Prompting claude 5.5 has more appeal it seems."
-        },
-        {
-          "by": "motionlessveloc",
-          "text": "Ship will also have to be outfitted with a life-support system ahead of crewed missions, which could be coming relatively soon. For example, NASA picked Ship to the be the first crewed lunar lander for its Artemis program, which aims to land people on the moon for the first time in 2028 on the Artemis IV mission. Don't worry, there is absolutely no chance this will happen in 2028. There are many…"
-        },
-        {
-          "by": "prodigycorp",
-          "text": "Distillation: Stream starts in about 1hr. Payload is 26 starlink v3 satellites. Launch window is 8:15 AM to 9:30 AM eastern time. Superheavy will land 7min after launch. Starship lands 9hrs post launch. Edit: Both will be splashdowns (originally said they'll be caught) https://x.com/i/broadcasts/1qxvvenMPMQxB https://www.spacex.com/launches/starship-flight-14"
-        },
-        {
-          "by": "Symmetry",
-          "text": "They seem to have reached near-orbit with one vacuum engine failing. Lets see if they decide to go all the way to orbit or if the failure causes an abort."
-        },
-        {
-          "by": "holt62",
-          "text": "What an incredible feat of engineering, even if it doesn't make orbit. Just getting that much mass off the pad is mind-boggling."
-        }
-      ],
-      "image": "https://cdn.mos.cms.futurecdn.net/dfLan3EoZiwtAAjvoSR8KK-2560-80.jpg"
-    },
-    {
-      "id": 49874728,
-      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5",
-      "hn": "https://news.ycombinator.com/item?id=49874728",
-      "title": "Prompting Claude Opus 5.5",
-      "time": 1790580809,
-      "depth": [
-        {
-          "text": "the guide shares **prompting tips** for **coding agents**, chat apps, and visual tasks",
-          "tier": "simple"
-        },
-        {
-          "text": "The docs call **effort** the main control for how much the model thinks, and say to start at medium and test levels against your own evals. For pasted emails or webpages, they recommend **matching tags** around copied text so the model can distinguish it from instructions the user wrote.",
-          "tier": "substance",
-          "data": [
-            [
-              "Output token speed vs. Claude Opus 5",
-              "more than 30 percent faster"
-            ],
-            [
-              "Maximum max_tokens",
-              "128,000"
-            ]
-          ]
-        }
-      ],
-      "camps": "Two camps: some praise Opus 5.5's capability and unattended runs; others are frustrated by safeguards, mistaken refusals, and model-specific prompting.",
-      "comment_count": 180,
-      "terms": [
-        "effort",
-        "evals",
-        "prompt injection",
-        "harness",
-        "prompt cache"
-      ],
-      "entities": [
-        "Anthropic",
-        "Claude",
-        "Fable",
-        "Astra",
-        "DeepSeek",
-        "PIL",
-        "OpenCV",
-        "Dribbble",
-        "Behance",
-        "Electron",
-        "MCP",
-        "ASP.NET"
-      ],
-      "comments": [
-        {
-          "by": "skeledrew",
-          "text": "All that keeps jumping out at me is how they've set it to refuse giving users thinking tokens and prompts for full reasoning in output. Just drives me further away; I may not stop using Claude completely for now, but I'll be moving even more of my primary workload to Chinese providers. That's where openness and freedom is now at."
-        },
-        {
-          "by": "bluegatty",
-          "text": "This is a failure of the AI foundries; if we have to use totally different prompting techniques for every model, this wont work. AI is rapidly saturating it's ability to be useful and these products need to start to mature. It's not 'fun' to manage 50 different broken MCPs and their variety of ways in which they are broken. It was 'fun' at the start, now it's just 'broken technology'. Astra and…"
-        },
-        {
-          "by": "prodigycorp",
-          "text": "Opus 5.5 is a good model, but I've tried to understand the extreme hype about it on social media about Opus' ability to do 2d work, as we got with Astra doing 3d work. In both releases, the models required extensive access to third party apis to generate assets for it, and a lot of the models work was essentially coordinating everything. There's so many \"x generated this in one shot, this is agi\"…"
-        },
-        {
-          "by": "bob1029",
-          "text": "> Fourth, if long tool-calling turns still go quiet for longer than you want, have your harness ask for an update I'm not sure I understand this complexity. In all harnesses I've ever used, tool calls themselves are surfaced to the user as an indication of progress. When the UI/UX around this is engineered well, the user should be able to infer roughly what is going on. Different tools have…"
-        },
-        {
-          "by": "skerit",
-          "text": "> In Anthropic's testing, at its default \"medium\" effort the model matched or beat Claude Opus 5 at \"high\" effort on such tasks, in fewer steps and with fewer tokens Opus 5.5 has been amazing, but I'm confused by how this is worded. It \"matched or beat\" Opus 5? There is no matching. There is only surpassing. By miles. Like Opus 5 was the biggest disappointment of the year. Opus 5.5 is even better…"
-        }
-      ],
-      "image": "https://platform.claude.com/web-api/og/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5?design-rev=2"
-    },
-    {
-      "id": 49849409,
-      "url": "https://asawicki.info/articles/writing_efficient_cpp_code.php",
-      "hn": "https://news.ycombinator.com/item?id=49849409",
-      "title": "Writing Efficient C++ Code (2013)",
-      "time": 1790367627,
-      "depth": [
-        {
-          "text": "someone explains why **keeping data together** can help C++ code **run faster**",
-          "tier": "simple"
-        },
-        {
-          "text": "The article's **Data-Oriented Design** advice is to plan where data sits in memory before choosing algorithms; scattered, pointer-linked objects can cause **cache misses**. It also reports a two-line change that saved **25%** of execution time.",
-          "tier": "substance",
-          "data": [
-            [
-              "execution-time reduction",
-              "25%"
-            ]
-          ]
-        }
-      ],
-      "camps": "Two camps: one says contiguous data can beat pointer-heavy structures in practice; the other says performance gains are often negligible and the code just gets more complex.",
-      "comment_count": 135,
-      "terms": [
-        "Data-Oriented Design (DOD)",
-        "cache miss",
-        "Array of Structures (AOS)",
-        "Structure of Arrays (SOA)"
-      ],
-      "entities": [
-        "C++",
-        "C",
-        "STL",
-        "EASTL",
-        "Visual Studio",
-        "Crysis",
-        "WinAPI",
-        "Programista"
-      ],
-      "comments": [
-        {
-          "by": "asveikau",
-          "text": "This article reminds me of performance advice I was starting to see in the 2000s decade. Basically it was to not introduce a bunch of pointer heavy data structures to get lower algorithmic complexity. Stuff it all into a vector. You will use some algorithms that the computer science textbook will say it's slower, but if it fits all in cache it doesn't matter. The cache misses following pointers…"
-        },
-        {
-          "by": "Jeaye",
-          "text": "While we're here, has anyone seen any resources related to data-oriented design when GCs are involved? So much of data-oriented design is arena-focused, but that's not always possible, when the lifetime model of the code requires a GC (for whatever reason). I feel like the DoD movement is a slow-moving, but big, change through how systems programming is done, but that there's still insufficient…"
-        },
-        {
-          "by": "MaxBarraclough",
-          "text": "There's no mention of branch prediction, or context switching, or synchronisation. Depending on what you're doing, they could be very consequential. There's only very brief mention of parallelisation with threads and with SIMD. High-performance programming is a big topic. The scope is far too broad for a single blog post, which naturally gives only cursory discussion of C++ and computer…"
-        },
-        {
-          "by": "hn_submit",
-          "text": "I write in C++ almost every day but never have the need to optimize for speed. Even when you write straightforward code it's already blazingly fast."
-        },
-        {
-          "by": "chombier",
-          "text": "A few weeks back there was this nice little database query language as a language library [1] posted on HN, with the constraint that everything had to be 6NF. At the time I thought this would naturally fit in a data-oriented design/ECS system to run complex queries. I wonder whether anyone has tried this before and whether this actually works in practice? [1] https://prela-lang.org/tutorial/"
-        }
-      ],
-      "image": null
-    },
-    {
-      "id": 49872766,
-      "url": "https://bleeckerstreetmedia.com/musk",
-      "hn": "https://news.ycombinator.com/item?id=49872766",
-      "title": "Musk, the Movie",
-      "time": 1790561537,
-      "depth": [
-        {
-          "text": "a new **film** takes an **incisive look** behind the legend of Elon Musk",
-          "tier": "simple"
-        },
-        {
-          "text": "The listing calls it an **incisive look** at Elon Musk and names **Alex Gibney** as director; it’s in select theaters in LA and NY October 9, then nationwide **October 16**.",
-          "tier": "substance"
-        }
-      ],
-      "camps": "Two camps: One commenter says criticizing Musk and SpaceX over Mars amounts to saying “do not try”; another says there are terrible things to say about Musk but doubts the film will say them well.",
-      "comment_count": 112,
-      "terms": [
-        "Q&A",
-        "hit piece"
-      ],
-      "entities": [
-        "MUSK",
-        "Elon Musk",
-        "BLEECKER STREET",
-        "Alex Gibney",
-        "Ashley St. Clair",
-        "Zoë Schiffer",
-        "Adam Becker",
-        "Jessie Deeter",
-        "Matt Brennan",
-        "Ronan Farrow",
-        "Nick Cannon",
-        "Netflix",
-        "SpaceX"
-      ],
-      "comments": [
-        {
-          "by": "rabidonrails",
-          "text": "I just don't understand why this trailer starts with Musk accusing Gibney of this being a hit piece, then a snarky response from Gibney...and then a full trailer that sounds like a hit piece. Maybe it's warranted maybe it isn't but it sure seems like Musk was right to be concerned."
-        },
-        {
-          "by": "bix6",
-          "text": "Wow this guy has more kids than Nick Cannon"
-        },
-        {
-          "by": "dhab",
-          "text": "If this got onto Netflix, might have a wider audience"
-        },
-        {
-          "by": "rayiner",
-          "text": "Is this the one with the election stealing space lasers?"
-        },
-        {
-          "by": "jfoster",
-          "text": "In the trailer, there's this line: \"When Musk says that the future of humanity is to colonize Mars, he is selling us dreams. That's not happening.\" That irritates me a lot. Everything extremely difficult (or thought to be impossible) is a dream until someone (or some company) works hard on it and invests in it for a long time. Those that would criticize Musk & SpaceX for chipping away at this…"
-        }
-      ],
-      "image": "https://cdn.craft.cloud/5598c3e0-8138-448a-b047-9113ed130c47/assets/shareImages/musk/MUSK-shareImg-1200x630.jpg"
-    },
-    {
-      "id": 49870070,
-      "url": "https://www.quora.com/Did-the-ENIAC-have-a-BIOS/answer/Alan-Kay-11",
-      "hn": "https://news.ycombinator.com/item?id=49870070",
-      "title": "Alan Kay's answer to “Did the ENIAC have a BIOS”?",
-      "time": 1790537825,
-      "depth": [
-        {
-          "text": "Commenters say Alan Kay treated the **people with patch cables** as ENIAC's **BIOS**",
-          "tier": "simple"
-        },
-        {
-          "text": "One commenter says the original ENIAC had to be **physically reconfigured**, then was rebuilt to run as a **stored-program computer** from '48 to '55. Another argues BIOS wasn't a concept until **1975**, with CP/M.",
-          "tier": "substance",
-          "data": [
-            [
-              "ENIAC stored-program operation",
-              "'48 to '55"
-            ],
-            [
-              "BIOS concept (commenter's claim)",
-              "1975"
-            ]
-          ]
-        }
-      ],
-      "camps": "Two camps: some use “BIOS” as a metaphor for the people operating ENIAC; another says it couldn't have had a BIOS because the concept came later.",
-      "comment_count": 55,
-      "terms": [
-        "BIOS",
-        "stored-program computer",
-        "octal",
-        "bootloader"
-      ],
-      "entities": [
-        "Alan Kay",
-        "ENIAC",
-        "EDSAC",
-        "David Wheeler",
-        "PDP-11",
-        "Altair 8800",
-        "Claude Opus",
-        "CDC 6600",
-        "EDVAC",
-        "von Neumann",
-        "CP/M",
-        "Quora",
-        "Kagi",
-        "Ken Shirriff",
-        "Unix",
-        "YouTube"
-      ],
-      "comments": [
-        {
-          "by": "retrac",
-          "text": "EDSAC as early as 1949 had an \"initial orders\" module. A boot-up ROM. There was a bank of rotary selector switches, to set the octal digits in each ROM word. David Wheeler (of subroutine fame) figured out the most sensible thing to put in the tiny ROM was a paper tape loader and mini-assembler that loaded the rest of itself from paper tape. So at switch-on the machine would start reading the tape…"
-        },
-        {
-          "by": "coldpie",
-          "text": "Somewhat tangential, I've watched a bunch of videos on YouTube from @deramp5113 about the Altair 8800 and other early microcomputers, which feature a similar set of front panel switches for dialing in your initial program. One thing that's interesting to me, as someone who learned computing in the late 90s, is how much is expressed in octal instead of hex on these early computers. As shown in the…"
-        },
-        {
-          "by": "NelsonMinar",
-          "text": "I had Claude Opus disassemble the CDC 6600 dead start panel. The hard part was finding a better image of the switches so the vision could read the bits.¹ The content isn't very interesting, and Claude's comments aren't very detailed. Not bad for 2 minutes of work about a 62 year old computer though. Look out Ken Shirriff, AI is coming for you.² Addr Octal Instruction Meaning\n0001 7512 DCN 12…"
-        },
-        {
-          "by": "jshier",
-          "text": "I'm pretty sure Kay's not quite correct about the Eniac not being a stored program computer. In it's original form it obviously was not, as it had to physically reconfigured to solve different problems. However, after the war it was rebuilt to operate like any other stored program (von Neumann architecture) computer, as it was the first recipient of the design philosophy seen in the EDVAC report…"
-        },
-        {
-          "by": "seanc",
-          "text": "How often would those cold-start switches be altered? Just when they wanted to swap tape-reading hardware? Or did different programs want slightly different loaders?"
-        }
-      ],
-      "image": null
-    },
-    {
-      "id": 49857281,
-      "url": "https://www.adaptivecapacitylabs.com/2026/08/24/there-is-more-to-code-review-than-automatable-detection/",
-      "hn": "https://news.ycombinator.com/item?id=49857281",
-      "title": "There is more to code review than (automatable) detection",
-      "time": 1790435188,
-      "depth": [
-        {
-          "text": "someone argues **code review** does more than catch bugs, because people bring **context, judgment and accountability**",
-          "tier": "simple"
-        },
-        {
-          "text": "The essay says agents can perform code review’s stated functions, but argues that treating review as detection misses the **context** people carry from outside the codebase. It calls review **coordination**, sensemaking and governance too.",
-          "tier": "substance"
-        }
-      ],
-      "camps": "Two camps: human-review defenders say people catch missing context, teach teammates and provide accountability; others argue human review can’t keep pace with AI-generated code and should shift toward design or broader validation.",
-      "comment_count": 99,
-      "terms": [
-        "LLM",
-        "diff",
-        "PR",
-        "API",
-        "absence blindness",
-        "sensemaking"
-      ],
-      "entities": [
-        "Fagan",
-        "The End of Code Review: Coding Agents Supersede Human Inspection",
-        "Github Copilot",
-        "GitHub",
-        "Claude Code",
-        "John von Altman"
-      ],
-      "comments": [
-        {
-          "by": "dimbletimbers",
-          "text": "A defense of human code review I wish I saw more often, especially in light of the concerns people have about cognitive/comprehension debt: comprehension redundancy. At the end, if taken seriously, at least two people understand how the feature works (even if that number is, on average, trending closer to between one and zero). Ideally at least one of the two also comes away with a better…"
-        },
-        {
-          "by": "n4r9",
-          "text": "There's been a lot of talk about the purpose of code review recently. It makes sense in the face of AI. Heres a link that was submitted a little while ago: https://mathstodon.xyz/@mjd/115096720350507897 And in response I wrote a non-exhaustive checklist of things that a code review can look for: - Does it functionally achieve what it sets out to (as per tacker issue or PR description)? - Does it…"
-        },
-        {
-          "by": "clintonb",
-          "text": "I am contemplating code review within my own organization, and the question I return to is: > Does this organization prioritize human learning? That has been my primary motivator for code reviews. I want to teach and learn from others, especially given the decreasing levels of collaboration due to increased AI usage. The sad truth is that all of my feedback just goes straight to agents. Maybe 10%…"
-        },
-        {
-          "by": "metalspot",
-          "text": "The true reason why code review is universal is that it provides a liability shield for negligence. Negligence is interesting. It has nothing to do with whether or not you ship something broken. As long as you follow a process that attempts to not ship something broken, then you are not negligent. Engineers played along with this farce because code review served valuable team collaboration…"
-        },
-        {
-          "by": "ChicagoDave",
-          "text": "I was just at the Explore DDD conference in Denver and a portion of Friday was sitting at the cafe tables informally discussing the impact of GenAI on software engineering with notable people. Most of these people were deeply concerned that if we lean into using GenAI for “everything” that our collective knowledge will dissipate. I was the vocal contrarian. There are many historical examples of…"
-        }
-      ],
-      "image": null
-    },
-    {
-      "id": 49875913,
-      "url": "https://git.mills.io/prologic/parley",
-      "hn": "https://news.ycombinator.com/item?id=49875913",
-      "title": "Parley: Federated, decentralised chat that speaks plain IRC",
-      "time": 1790591454,
-      "depth": [
-        {
-          "text": "someone built a **chat network** where people run their own **instances** and use regular **chat clients**",
-          "tier": "simple"
-        },
-        {
-          "text": "Parley uses **email-like identities**, so people can message someone on another instance with an address like alice@foo.com. It’s a **working proof of concept**, and the project says it is **not hardened yet**.",
-          "tier": "substance"
-        }
-      ],
-      "camps": "Two camps: some commenters compare it to XMPP or ask why it isn't built on an existing network; others like the idea and call it email for IM.",
-      "comment_count": 74,
-      "terms": [
-        "federated",
-        "instance",
-        "IRC",
-        "DNS",
-        "XMPP"
-      ],
-      "entities": [
-        "Parley",
-        "IRC",
-        "irssi",
-        "WeeChat",
-        "Textual",
-        "XMPP"
-      ],
-      "comments": [
-        {
-          "by": "Conlectus",
-          "text": "There’s a specific downside to LLM-based development that people can get neck deep in a new project without interfacing with the existing work in the field. In this case, this is basically a poorly specified implementation of half of XMPP. Of course, I half expect the LLM would have mentioned that at some point, but the repository does not."
-        },
-        {
-          "by": "xena",
-          "text": "How do you plan to handle bad actors creating biblical amounts of servers dynamically and then spamming at line rate from all of those servers?"
-        },
-        {
-          "by": "singpolyma3",
-          "text": "So rooms are \"global\" between whatever hosts your host happens to know about? So it's one giant netsplit party forever and only your server admin can ban someone?"
-        },
-        {
-          "by": "rixed",
-          "text": "Instead of a separate federated network for a single app, why not implement the app on top of a pre-existing federated network, so that nobody has to create yet another account?\nLike, on top of atproto or activitypods or...?"
-        },
-        {
-          "by": "aunderscored",
-          "text": "Interesting. Why not use an open link network? These will result in around the same state. Spam _will_ be an issue here, in general. And with a different backend you're going to struggle to use preexisting tooling to handle it. Using & channels is fun, I'd be interested to see how many bots and clients fall over dead when faced with that particular bit of IRC history."
-        }
-      ],
-      "image": "https://git.mills.io/repo-avatars/640d1c8d0740a84bc305d7d7f83dc71164e891e05a7ac78a26d5199d985d7cd1"
-    },
-    {
       "id": 49881850,
       "url": "https://www.anthropic.com/claude-sonnet-5-5",
       "hn": "https://news.ycombinator.com/item?id=49881850",
@@ -2048,6 +1143,911 @@
         }
       ],
       "image": "https://inkandswitch.com/essay/malleable-software/guitar.jpg"
+    },
+    {
+      "id": 49875148,
+      "url": "https://thecivilian.co.nz/2026/09/27/ai-companies-in-fierce-arms-race-to-demonstrate-their-model-is-the-most-existentially-threatening-to-humanity/",
+      "hn": "https://news.ycombinator.com/item?id=49875148",
+      "title": "AI companies in race to demonstrate their model most threatening to humanity",
+      "time": 1790584540,
+      "depth": [
+        {
+          "text": "AI companies are **jokingly** trying to prove their models are most likely to **end humanity**",
+          "tier": "simple"
+        },
+        {
+          "text": "The satire imagines OpenAI agents hacking **Hugging Face** and Australia's **Medicare database**, then Anthropic's **Jacob Coxon** warning that AI may be dangerous.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters see serious AI safety risks; others think companies are using danger claims to win regulation or protect their business.",
+      "comment_count": 269,
+      "terms": [
+        "AI agent",
+        "RLHF",
+        "sandbox",
+        "regulatory capture"
+      ],
+      "entities": [
+        "OpenAI",
+        "Anthropic",
+        "Hugging Face",
+        "Medicare",
+        "Jacob Coxon"
+      ],
+      "comments": [
+        {
+          "by": "Spacecosmonaut",
+          "text": "My read is that OpenAI & Anthropic have realized they are reaching model capabilities that cannot be monetized due to various risks. E.g., an engineer deploys an agent over the weekend that decides, when stuck on a task, to go about hacking a competitor. They have a product liability issue. It seems that we have a fundamental control problem with current gen AI that cannot be solved via RFLH…"
+        },
+        {
+          "by": "chasd00",
+          "text": "I’ve never seen CEOs work so hard to make the public aware of how dangerous and out of control their flagship product is. It makes me automatically assume they’re scheming about something else like regulatory capture to protect their market."
+        },
+        {
+          "by": "runako",
+          "text": "Because the downsides that exist for other companies simply do not exist for this tier of rich companies. Examples: - product liability - negligence (civil or criminal) - Computer Fraud & Abuse Act (requires intent, which after N \"accidents\" seems like a jury should at least evaluate whether intent is present as understood in a courtroom. Hard to blame \"surprise\" after the Nth \"accidental\"…"
+        },
+        {
+          "by": "stephbook",
+          "text": "We've had movies like Terminator, Matrix, or i, Robot. Black Mirror Metalhead. Boston dynamics robo dog with a knife or a gun. Humanoids doing back flips. Memes making fun of how we are going to fight these for access to water. The intelligence is there and so is the physical incarnation. Google's models fold proteins better than humans and Covid might have been engineered and inadvertently…"
+        },
+        {
+          "by": "ACCount39",
+          "text": "Because AI genuinely is an extremely powerful and extremely dangerous technology, and the \"best practices\" of dealing with that are still being written. OpenAI, for example, thought their sandboxes were good enough. As their AIs got more and more advanced, they kept proving them wrong - sandbox after sandbox. And that's today's AI problems. AI capabilities are still improving - if there's a limit…"
+        }
+      ],
+      "image": "https://i0.wp.com/thecivilian.co.nz/wp-content/uploads/2026/09/aiendoftheworldstory.jpg?fit=872%2C591&ssl=1"
+    },
+    {
+      "id": 49870295,
+      "url": "https://david.alvarezrosa.com/posts/self-hosting-on-the-dark-web/",
+      "hn": "https://news.ycombinator.com/item?id=49870295",
+      "title": "Self-Hosting on the Dark Web",
+      "time": 1790539416,
+      "depth": [
+        {
+          "text": "someone made their **personal site** reachable on **Tor**, with a separate build for its onion address",
+          "tier": "simple"
+        },
+        {
+          "text": "The **.onion address** works only inside Tor; Tor forwards its port 80 to **nginx**, listening at 127.0.0.1:8080. The author uses **Hugo** to build separate clearnet and Tor copies, then deploys both on every push.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: the post says Tor keeps any single party from linking identity to activity; one commenter says government agencies can still do it, just with more difficulty.",
+      "comment_count": 98,
+      "terms": [
+        "Tor",
+        "hidden service",
+        "onion address",
+        "clearnet",
+        "nginx",
+        "Hugo",
+        "rsync"
+      ],
+      "entities": [
+        "David Álvarez Rosa",
+        "Tor",
+        "Tor Project",
+        "Tor Browser",
+        "nginx",
+        "Hugo",
+        "GitHub Actions",
+        "I2P",
+        "Yggdrasil"
+      ],
+      "comments": [
+        {
+          "by": "p4bl0",
+          "text": "My personal website has been hosted on Tor for years. It's easy to do from your home even behind a NAT because it's an outgoing connection from your point of view (which also makes it a great way to expose local services even when you are behind a NAT and don't not have a static IP), and by design your personal IP is hidden from your visitors. I wrote about it in 2600 almost ten years ago…"
+        },
+        {
+          "by": "ivanmontillam",
+          "text": "What I really love about Onion sites is that if they are big enough, performance engineering really becomes Tor-specific. A few examples: - Making assets embedded as base64 (img src the header logo as base64, all CSS should be inline, etc.). - Leveraging CSS as much as possible (if you use animations and transitions, use CSS as much as possible for these, avoid JS for them). - Make sure your…"
+        },
+        {
+          "by": "basilikum",
+          "text": "You probably want to add the Onion-Location header to the clearnet site so Tor Browser can automatically inform the visitor about it: https://community.torproject.org/onion-services/advanced/oni..."
+        },
+        {
+          "by": "mzajc",
+          "text": "Besides using a separate port, I would also suggest running the hidden service on a non-127.0.0.1 bind address, just in case you ever host something else on that port and forget to disable the hidden service: > HiddenServicePort 80 127.13.37.1:8080 > listen 127.13.37.1:8080; This way, strangers won't be able to connect to a service bound to 127.0.0.1, should you ever decide to re-use the port and…"
+        },
+        {
+          "by": "dherls",
+          "text": "What is the benefit of building the same website twice with different hostnames instead of using relative links to content on the same domain?"
+        }
+      ],
+      "image": "https://david.alvarezrosa.com/images/home-illustration.png"
+    },
+    {
+      "id": 49875411,
+      "url": "https://www.space.com/space-exploration/launches-spacecraft/spacexs-starship-megarocket-launching-to-orbit-for-1st-time-ever-on-sept-28-watch-it-live",
+      "hn": "https://news.ycombinator.com/item?id=49875411",
+      "title": "SpaceX's Starship launching to orbit for first time ever today",
+      "time": 1790586904,
+      "depth": [
+        {
+          "text": "SpaceX's Starship is making its **first-ever attempt** to reach **orbit** today",
+          "tier": "simple"
+        },
+        {
+          "text": "Flight 14 is meant to send Ship to Earth orbit and deploy **26 Starlink Version 3 internet satellites**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some celebrate the engineering; others think Starship's project path is impossible.",
+      "comment_count": 204,
+      "terms": [
+        "suborbital",
+        "splashdown",
+        "critical path",
+        "LEO"
+      ],
+      "entities": [
+        "SpaceX",
+        "Starship",
+        "Super Heavy",
+        "Ship",
+        "Starlink",
+        "Elon Musk",
+        "NASA",
+        "Artemis",
+        "Artemis IV"
+      ],
+      "comments": [
+        {
+          "by": "fakwandi_priv",
+          "text": "I’m a bit saddened this thread has so little activity, 55 comments as of posting, here even though there are half a million people watching the spacex stream. Just watching the launch, the amount of technology and people involved is incredible. Prompting claude 5.5 has more appeal it seems."
+        },
+        {
+          "by": "motionlessveloc",
+          "text": "Ship will also have to be outfitted with a life-support system ahead of crewed missions, which could be coming relatively soon. For example, NASA picked Ship to the be the first crewed lunar lander for its Artemis program, which aims to land people on the moon for the first time in 2028 on the Artemis IV mission. Don't worry, there is absolutely no chance this will happen in 2028. There are many…"
+        },
+        {
+          "by": "prodigycorp",
+          "text": "Distillation: Stream starts in about 1hr. Payload is 26 starlink v3 satellites. Launch window is 8:15 AM to 9:30 AM eastern time. Superheavy will land 7min after launch. Starship lands 9hrs post launch. Edit: Both will be splashdowns (originally said they'll be caught) https://x.com/i/broadcasts/1qxvvenMPMQxB https://www.spacex.com/launches/starship-flight-14"
+        },
+        {
+          "by": "Symmetry",
+          "text": "They seem to have reached near-orbit with one vacuum engine failing. Lets see if they decide to go all the way to orbit or if the failure causes an abort."
+        },
+        {
+          "by": "holt62",
+          "text": "What an incredible feat of engineering, even if it doesn't make orbit. Just getting that much mass off the pad is mind-boggling."
+        }
+      ],
+      "image": "https://cdn.mos.cms.futurecdn.net/dfLan3EoZiwtAAjvoSR8KK-2560-80.jpg"
+    },
+    {
+      "id": 49874728,
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5",
+      "hn": "https://news.ycombinator.com/item?id=49874728",
+      "title": "Prompting Claude Opus 5.5",
+      "time": 1790580809,
+      "depth": [
+        {
+          "text": "the guide shares **prompting tips** for **coding agents**, chat apps, and visual tasks",
+          "tier": "simple"
+        },
+        {
+          "text": "The docs call **effort** the main control for how much the model thinks, and say to start at medium and test levels against your own evals. For pasted emails or webpages, they recommend **matching tags** around copied text so the model can distinguish it from instructions the user wrote.",
+          "tier": "substance",
+          "data": [
+            [
+              "Output token speed vs. Claude Opus 5",
+              "more than 30 percent faster"
+            ],
+            [
+              "Maximum max_tokens",
+              "128,000"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some praise Opus 5.5's capability and unattended runs; others are frustrated by safeguards, mistaken refusals, and model-specific prompting.",
+      "comment_count": 180,
+      "terms": [
+        "effort",
+        "evals",
+        "prompt injection",
+        "harness",
+        "prompt cache"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude",
+        "Fable",
+        "Astra",
+        "DeepSeek",
+        "PIL",
+        "OpenCV",
+        "Dribbble",
+        "Behance",
+        "Electron",
+        "MCP",
+        "ASP.NET"
+      ],
+      "comments": [
+        {
+          "by": "skeledrew",
+          "text": "All that keeps jumping out at me is how they've set it to refuse giving users thinking tokens and prompts for full reasoning in output. Just drives me further away; I may not stop using Claude completely for now, but I'll be moving even more of my primary workload to Chinese providers. That's where openness and freedom is now at."
+        },
+        {
+          "by": "bluegatty",
+          "text": "This is a failure of the AI foundries; if we have to use totally different prompting techniques for every model, this wont work. AI is rapidly saturating it's ability to be useful and these products need to start to mature. It's not 'fun' to manage 50 different broken MCPs and their variety of ways in which they are broken. It was 'fun' at the start, now it's just 'broken technology'. Astra and…"
+        },
+        {
+          "by": "prodigycorp",
+          "text": "Opus 5.5 is a good model, but I've tried to understand the extreme hype about it on social media about Opus' ability to do 2d work, as we got with Astra doing 3d work. In both releases, the models required extensive access to third party apis to generate assets for it, and a lot of the models work was essentially coordinating everything. There's so many \"x generated this in one shot, this is agi\"…"
+        },
+        {
+          "by": "bob1029",
+          "text": "> Fourth, if long tool-calling turns still go quiet for longer than you want, have your harness ask for an update I'm not sure I understand this complexity. In all harnesses I've ever used, tool calls themselves are surfaced to the user as an indication of progress. When the UI/UX around this is engineered well, the user should be able to infer roughly what is going on. Different tools have…"
+        },
+        {
+          "by": "skerit",
+          "text": "> In Anthropic's testing, at its default \"medium\" effort the model matched or beat Claude Opus 5 at \"high\" effort on such tasks, in fewer steps and with fewer tokens Opus 5.5 has been amazing, but I'm confused by how this is worded. It \"matched or beat\" Opus 5? There is no matching. There is only surpassing. By miles. Like Opus 5 was the biggest disappointment of the year. Opus 5.5 is even better…"
+        }
+      ],
+      "image": "https://platform.claude.com/web-api/og/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5?design-rev=2"
+    },
+    {
+      "id": 49849409,
+      "url": "https://asawicki.info/articles/writing_efficient_cpp_code.php",
+      "hn": "https://news.ycombinator.com/item?id=49849409",
+      "title": "Writing Efficient C++ Code (2013)",
+      "time": 1790367627,
+      "depth": [
+        {
+          "text": "someone explains why **keeping data together** can help C++ code **run faster**",
+          "tier": "simple"
+        },
+        {
+          "text": "The article's **Data-Oriented Design** advice is to plan where data sits in memory before choosing algorithms; scattered, pointer-linked objects can cause **cache misses**. It also reports a two-line change that saved **25%** of execution time.",
+          "tier": "substance",
+          "data": [
+            [
+              "execution-time reduction",
+              "25%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: one says contiguous data can beat pointer-heavy structures in practice; the other says performance gains are often negligible and the code just gets more complex.",
+      "comment_count": 135,
+      "terms": [
+        "Data-Oriented Design (DOD)",
+        "cache miss",
+        "Array of Structures (AOS)",
+        "Structure of Arrays (SOA)"
+      ],
+      "entities": [
+        "C++",
+        "C",
+        "STL",
+        "EASTL",
+        "Visual Studio",
+        "Crysis",
+        "WinAPI",
+        "Programista"
+      ],
+      "comments": [
+        {
+          "by": "asveikau",
+          "text": "This article reminds me of performance advice I was starting to see in the 2000s decade. Basically it was to not introduce a bunch of pointer heavy data structures to get lower algorithmic complexity. Stuff it all into a vector. You will use some algorithms that the computer science textbook will say it's slower, but if it fits all in cache it doesn't matter. The cache misses following pointers…"
+        },
+        {
+          "by": "Jeaye",
+          "text": "While we're here, has anyone seen any resources related to data-oriented design when GCs are involved? So much of data-oriented design is arena-focused, but that's not always possible, when the lifetime model of the code requires a GC (for whatever reason). I feel like the DoD movement is a slow-moving, but big, change through how systems programming is done, but that there's still insufficient…"
+        },
+        {
+          "by": "MaxBarraclough",
+          "text": "There's no mention of branch prediction, or context switching, or synchronisation. Depending on what you're doing, they could be very consequential. There's only very brief mention of parallelisation with threads and with SIMD. High-performance programming is a big topic. The scope is far too broad for a single blog post, which naturally gives only cursory discussion of C++ and computer…"
+        },
+        {
+          "by": "hn_submit",
+          "text": "I write in C++ almost every day but never have the need to optimize for speed. Even when you write straightforward code it's already blazingly fast."
+        },
+        {
+          "by": "chombier",
+          "text": "A few weeks back there was this nice little database query language as a language library [1] posted on HN, with the constraint that everything had to be 6NF. At the time I thought this would naturally fit in a data-oriented design/ECS system to run complex queries. I wonder whether anyone has tried this before and whether this actually works in practice? [1] https://prela-lang.org/tutorial/"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49872766,
+      "url": "https://bleeckerstreetmedia.com/musk",
+      "hn": "https://news.ycombinator.com/item?id=49872766",
+      "title": "Musk, the Movie",
+      "time": 1790561537,
+      "depth": [
+        {
+          "text": "a new **film** takes an **incisive look** behind the legend of Elon Musk",
+          "tier": "simple"
+        },
+        {
+          "text": "The listing calls it an **incisive look** at Elon Musk and names **Alex Gibney** as director; it’s in select theaters in LA and NY October 9, then nationwide **October 16**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: One commenter says criticizing Musk and SpaceX over Mars amounts to saying “do not try”; another says there are terrible things to say about Musk but doubts the film will say them well.",
+      "comment_count": 112,
+      "terms": [
+        "Q&A",
+        "hit piece"
+      ],
+      "entities": [
+        "MUSK",
+        "Elon Musk",
+        "BLEECKER STREET",
+        "Alex Gibney",
+        "Ashley St. Clair",
+        "Zoë Schiffer",
+        "Adam Becker",
+        "Jessie Deeter",
+        "Matt Brennan",
+        "Ronan Farrow",
+        "Nick Cannon",
+        "Netflix",
+        "SpaceX"
+      ],
+      "comments": [
+        {
+          "by": "rabidonrails",
+          "text": "I just don't understand why this trailer starts with Musk accusing Gibney of this being a hit piece, then a snarky response from Gibney...and then a full trailer that sounds like a hit piece. Maybe it's warranted maybe it isn't but it sure seems like Musk was right to be concerned."
+        },
+        {
+          "by": "bix6",
+          "text": "Wow this guy has more kids than Nick Cannon"
+        },
+        {
+          "by": "dhab",
+          "text": "If this got onto Netflix, might have a wider audience"
+        },
+        {
+          "by": "rayiner",
+          "text": "Is this the one with the election stealing space lasers?"
+        },
+        {
+          "by": "jfoster",
+          "text": "In the trailer, there's this line: \"When Musk says that the future of humanity is to colonize Mars, he is selling us dreams. That's not happening.\" That irritates me a lot. Everything extremely difficult (or thought to be impossible) is a dream until someone (or some company) works hard on it and invests in it for a long time. Those that would criticize Musk & SpaceX for chipping away at this…"
+        }
+      ],
+      "image": "https://cdn.craft.cloud/5598c3e0-8138-448a-b047-9113ed130c47/assets/shareImages/musk/MUSK-shareImg-1200x630.jpg"
+    },
+    {
+      "id": 49870070,
+      "url": "https://www.quora.com/Did-the-ENIAC-have-a-BIOS/answer/Alan-Kay-11",
+      "hn": "https://news.ycombinator.com/item?id=49870070",
+      "title": "Alan Kay's answer to “Did the ENIAC have a BIOS”?",
+      "time": 1790537825,
+      "depth": [
+        {
+          "text": "Commenters say Alan Kay treated the **people with patch cables** as ENIAC's **BIOS**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says the original ENIAC had to be **physically reconfigured**, then was rebuilt to run as a **stored-program computer** from '48 to '55. Another argues BIOS wasn't a concept until **1975**, with CP/M.",
+          "tier": "substance",
+          "data": [
+            [
+              "ENIAC stored-program operation",
+              "'48 to '55"
+            ],
+            [
+              "BIOS concept (commenter's claim)",
+              "1975"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some use “BIOS” as a metaphor for the people operating ENIAC; another says it couldn't have had a BIOS because the concept came later.",
+      "comment_count": 55,
+      "terms": [
+        "BIOS",
+        "stored-program computer",
+        "octal",
+        "bootloader"
+      ],
+      "entities": [
+        "Alan Kay",
+        "ENIAC",
+        "EDSAC",
+        "David Wheeler",
+        "PDP-11",
+        "Altair 8800",
+        "Claude Opus",
+        "CDC 6600",
+        "EDVAC",
+        "von Neumann",
+        "CP/M",
+        "Quora",
+        "Kagi",
+        "Ken Shirriff",
+        "Unix",
+        "YouTube"
+      ],
+      "comments": [
+        {
+          "by": "retrac",
+          "text": "EDSAC as early as 1949 had an \"initial orders\" module. A boot-up ROM. There was a bank of rotary selector switches, to set the octal digits in each ROM word. David Wheeler (of subroutine fame) figured out the most sensible thing to put in the tiny ROM was a paper tape loader and mini-assembler that loaded the rest of itself from paper tape. So at switch-on the machine would start reading the tape…"
+        },
+        {
+          "by": "coldpie",
+          "text": "Somewhat tangential, I've watched a bunch of videos on YouTube from @deramp5113 about the Altair 8800 and other early microcomputers, which feature a similar set of front panel switches for dialing in your initial program. One thing that's interesting to me, as someone who learned computing in the late 90s, is how much is expressed in octal instead of hex on these early computers. As shown in the…"
+        },
+        {
+          "by": "NelsonMinar",
+          "text": "I had Claude Opus disassemble the CDC 6600 dead start panel. The hard part was finding a better image of the switches so the vision could read the bits.¹ The content isn't very interesting, and Claude's comments aren't very detailed. Not bad for 2 minutes of work about a 62 year old computer though. Look out Ken Shirriff, AI is coming for you.² Addr Octal Instruction Meaning\n0001 7512 DCN 12…"
+        },
+        {
+          "by": "jshier",
+          "text": "I'm pretty sure Kay's not quite correct about the Eniac not being a stored program computer. In it's original form it obviously was not, as it had to physically reconfigured to solve different problems. However, after the war it was rebuilt to operate like any other stored program (von Neumann architecture) computer, as it was the first recipient of the design philosophy seen in the EDVAC report…"
+        },
+        {
+          "by": "seanc",
+          "text": "How often would those cold-start switches be altered? Just when they wanted to swap tape-reading hardware? Or did different programs want slightly different loaders?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49857281,
+      "url": "https://www.adaptivecapacitylabs.com/2026/08/24/there-is-more-to-code-review-than-automatable-detection/",
+      "hn": "https://news.ycombinator.com/item?id=49857281",
+      "title": "There is more to code review than (automatable) detection",
+      "time": 1790435188,
+      "depth": [
+        {
+          "text": "someone argues **code review** does more than catch bugs, because people bring **context, judgment and accountability**",
+          "tier": "simple"
+        },
+        {
+          "text": "The essay says agents can perform code review’s stated functions, but argues that treating review as detection misses the **context** people carry from outside the codebase. It calls review **coordination**, sensemaking and governance too.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: human-review defenders say people catch missing context, teach teammates and provide accountability; others argue human review can’t keep pace with AI-generated code and should shift toward design or broader validation.",
+      "comment_count": 99,
+      "terms": [
+        "LLM",
+        "diff",
+        "PR",
+        "API",
+        "absence blindness",
+        "sensemaking"
+      ],
+      "entities": [
+        "Fagan",
+        "The End of Code Review: Coding Agents Supersede Human Inspection",
+        "Github Copilot",
+        "GitHub",
+        "Claude Code",
+        "John von Altman"
+      ],
+      "comments": [
+        {
+          "by": "dimbletimbers",
+          "text": "A defense of human code review I wish I saw more often, especially in light of the concerns people have about cognitive/comprehension debt: comprehension redundancy. At the end, if taken seriously, at least two people understand how the feature works (even if that number is, on average, trending closer to between one and zero). Ideally at least one of the two also comes away with a better…"
+        },
+        {
+          "by": "n4r9",
+          "text": "There's been a lot of talk about the purpose of code review recently. It makes sense in the face of AI. Heres a link that was submitted a little while ago: https://mathstodon.xyz/@mjd/115096720350507897 And in response I wrote a non-exhaustive checklist of things that a code review can look for: - Does it functionally achieve what it sets out to (as per tacker issue or PR description)? - Does it…"
+        },
+        {
+          "by": "clintonb",
+          "text": "I am contemplating code review within my own organization, and the question I return to is: > Does this organization prioritize human learning? That has been my primary motivator for code reviews. I want to teach and learn from others, especially given the decreasing levels of collaboration due to increased AI usage. The sad truth is that all of my feedback just goes straight to agents. Maybe 10%…"
+        },
+        {
+          "by": "metalspot",
+          "text": "The true reason why code review is universal is that it provides a liability shield for negligence. Negligence is interesting. It has nothing to do with whether or not you ship something broken. As long as you follow a process that attempts to not ship something broken, then you are not negligent. Engineers played along with this farce because code review served valuable team collaboration…"
+        },
+        {
+          "by": "ChicagoDave",
+          "text": "I was just at the Explore DDD conference in Denver and a portion of Friday was sitting at the cafe tables informally discussing the impact of GenAI on software engineering with notable people. Most of these people were deeply concerned that if we lean into using GenAI for “everything” that our collective knowledge will dissipate. I was the vocal contrarian. There are many historical examples of…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49875913,
+      "url": "https://git.mills.io/prologic/parley",
+      "hn": "https://news.ycombinator.com/item?id=49875913",
+      "title": "Parley: Federated, decentralised chat that speaks plain IRC",
+      "time": 1790591454,
+      "depth": [
+        {
+          "text": "someone built a **chat network** where people run their own **instances** and use regular **chat clients**",
+          "tier": "simple"
+        },
+        {
+          "text": "Parley uses **email-like identities**, so people can message someone on another instance with an address like alice@foo.com. It’s a **working proof of concept**, and the project says it is **not hardened yet**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters compare it to XMPP or ask why it isn't built on an existing network; others like the idea and call it email for IM.",
+      "comment_count": 74,
+      "terms": [
+        "federated",
+        "instance",
+        "IRC",
+        "DNS",
+        "XMPP"
+      ],
+      "entities": [
+        "Parley",
+        "IRC",
+        "irssi",
+        "WeeChat",
+        "Textual",
+        "XMPP"
+      ],
+      "comments": [
+        {
+          "by": "Conlectus",
+          "text": "There’s a specific downside to LLM-based development that people can get neck deep in a new project without interfacing with the existing work in the field. In this case, this is basically a poorly specified implementation of half of XMPP. Of course, I half expect the LLM would have mentioned that at some point, but the repository does not."
+        },
+        {
+          "by": "xena",
+          "text": "How do you plan to handle bad actors creating biblical amounts of servers dynamically and then spamming at line rate from all of those servers?"
+        },
+        {
+          "by": "singpolyma3",
+          "text": "So rooms are \"global\" between whatever hosts your host happens to know about? So it's one giant netsplit party forever and only your server admin can ban someone?"
+        },
+        {
+          "by": "rixed",
+          "text": "Instead of a separate federated network for a single app, why not implement the app on top of a pre-existing federated network, so that nobody has to create yet another account?\nLike, on top of atproto or activitypods or...?"
+        },
+        {
+          "by": "aunderscored",
+          "text": "Interesting. Why not use an open link network? These will result in around the same state. Spam _will_ be an issue here, in general. And with a different backend you're going to struggle to use preexisting tooling to handle it. Using & channels is fun, I'd be interested to see how many bots and clients fall over dead when faced with that particular bit of IRC history."
+        }
+      ],
+      "image": "https://git.mills.io/repo-avatars/640d1c8d0740a84bc305d7d7f83dc71164e891e05a7ac78a26d5199d985d7cd1"
+    },
+    {
+      "id": 49872723,
+      "url": "https://colo.to/nvidia-stock-narrative.html",
+      "hn": "https://news.ycombinator.com/item?id=49872723",
+      "title": "Owed a billion dollars in Nvidia stock",
+      "time": 1790561113,
+      "depth": [
+        {
+          "text": "an early **NVIDIA** adviser says a **stock-option mix-up** left him short millions of shares",
+          "tier": "simple"
+        },
+        {
+          "text": "His 1993 agreement said all **25,000 options** would vest after one year. He says stock splits turned the missing 9,375 into **4.5 million shares**, but he and his lawyers concluded the **statute of limitations** was against them.",
+          "tier": "substance",
+          "data": [
+            [
+              "options granted",
+              "25,000"
+            ],
+            [
+              "vesting period",
+              "one year"
+            ],
+            [
+              "missing shares after splits",
+              "4,500,000"
+            ],
+            [
+              "cumulative split factor",
+              "480x"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say the options expired and the claim is dead; others suggest suing over the information he received or selling the right to litigate.",
+      "comment_count": 161,
+      "terms": [
+        "stock options",
+        "vest",
+        "stock split",
+        "statute of limitations",
+        "motion to dismiss"
+      ],
+      "entities": [
+        "NVIDIA",
+        "Eric Gullichsen",
+        "Jensen",
+        "Curtis Priem",
+        "Chris Malachowsky",
+        "Sense8 Corporation",
+        "Sun Microsystems",
+        "SPARCstation GX",
+        "Intel",
+        "Microsoft",
+        "DirectX",
+        "NV1",
+        "Cooley",
+        "Allan Steyer",
+        "Steyer Lowenthal",
+        "Chris Burke",
+        "Korein Tillery"
+      ],
+      "comments": [
+        {
+          "by": "reticulates",
+          "text": "You are ultimately responsible for asserting your contractual rights. Your stock options had an expiry and you did not exercise them in time. The letter you received notifying that you had 15,625 vested options was not an award in of itself, it was only a courtesy notifying you that you had vested options to exercise before they expired. Even if due to ambiguous wording it could be argued that…"
+        },
+        {
+          "by": "whall6",
+          "text": "You should sell your right to litigate this. There are hundreds of firms that would pay you to take this on. Would involve near zero effort for you and would also check the box of being “about the principle”."
+        },
+        {
+          "by": "jonas21",
+          "text": "An open question is what happened to the 15,625 shares that he received when he exercised his options in 1996? If he had held on to those, they would be worth even more than the additional 9,375 shares he was entitled to -- about $1.7 billion using the same numbers in the post. My guess is that he probably sold them when they were worth a lot less then they are now, and would have done the same…"
+        },
+        {
+          "by": "Eric_Gullichsen",
+          "text": "Author here. Thanks for all the comments, I've been hesitant to post this to the court of public opinion, yet curiosity about what the HN community would think caused me to push the button. My lawyers - who were really excellent - represented me (on contingency!) because it seemed the chance of a judge not accepting a motion to dismiss (for a variety of reasons I don't want to detail here) was…"
+        },
+        {
+          "by": "binlog",
+          "text": "> Here in the land of the free, it turns out a company only has to honor its contractual obligations for a little while. If Nvidia showed you contract paperwork that proved they overpaid you 9,375 shares in 1993, would you agree to pay them back the present value? After all contracts should be enforceable indefinitely right?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49869574,
+      "url": "https://loficities.com/",
+      "hn": "https://news.ycombinator.com/item?id=49869574",
+      "title": "Show HN: Lofi Cities – Pixel-art city nights with browser-generated lofi",
+      "time": 1790534670,
+      "depth": [
+        {
+          "text": "someone made **pixel-art city nights** with **lofi music** generated live in your browser",
+          "tier": "simple"
+        },
+        {
+          "text": "Each scene is a **480×270 pixel animation** that loops **every four minutes**, with its own weather and city sounds. Tracks are **synthesized live in the browser**, with no samples or recordings.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: fans call it gorgeous and cool; critics say it feels too AI-generated and the ads break the immersion.",
+      "comment_count": 91,
+      "terms": [
+        "pixel art",
+        "Web Audio API",
+        "sound synthesis"
+      ],
+      "entities": [
+        "Lofi Cities",
+        "Web Audio API"
+      ],
+      "comments": [
+        {
+          "by": "thih9",
+          "text": "The product hunt ad is breaking the immersion for me. I know that most cities have ads but still, I prefer ad free pixel art. It’s also not realistic, in one landscape the billboard is taller than a 9 story building."
+        },
+        {
+          "by": "rda2",
+          "text": "I still love Mark Ferrari’s Living Worlds from 1995 which changes with the time of day & the month. Handmade and ad-free of course. https://www.effectgames.com/demos/worlds/"
+        },
+        {
+          "by": "iand675",
+          "text": "There's a lot to like here, but too AI-generated for me. The pixel art for Tokyo & Hong Kong don't use proper Chinese/Japanese characters. The pulsating badges in the non-pixel UI are also pretty AI-indicative in a way that is distracting."
+        },
+        {
+          "by": "vagabund",
+          "text": "I don't why I would want to stare at vibecoded UI and an ad to relax"
+        },
+        {
+          "by": "timenotwasted",
+          "text": "Gorgeous, very well executed. I'm guessing the primary request will be more cities but I'll deviate and say I'd love to see more views as well. Would be nice to have the same set of cities by I can see it from a studio view same way it is in the Paris view. Or from an office. Or a cafe."
+        }
+      ],
+      "image": "https://loficities.com/img/og/home.png"
+    },
+    {
+      "id": 49868404,
+      "url": "https://iain.rocks/blog/dont-couple-your-go-code-to-github",
+      "hn": "https://news.ycombinator.com/item?id=49868404",
+      "title": "Don't couple your Go code to GitHub",
+      "time": 1790527858,
+      "depth": [
+        {
+          "text": "someone says Go packages should use **custom domains** so changing code hosts won't mean rewriting **import paths**",
+          "tier": "simple"
+        },
+        {
+          "text": "Go uses the hosting location in an **import path**, so moving hosts can mean changing code. The author recommends a custom domain that can point somewhere new while users keep the **same install command**. One company used GitHub, GitLab and Azure Devops at once because switching was such a large task, and ended up paying for **three hosting services**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: custom-domain advocates say they avoid tying package names to one host; critics say domains need upkeep and can disappear, while some say a go.mod replace or find-and-replace is enough.",
+      "comment_count": 94,
+      "terms": [
+        "import path",
+        "Go vanity URL",
+        "go.mod",
+        "301 redirect"
+      ],
+      "entities": [
+        "Go",
+        "GitHub",
+        "GitLab",
+        "Azure Devops",
+        "Boneclone",
+        "Iain Cambridge"
+      ],
+      "comments": [
+        {
+          "by": "p4bl0",
+          "text": "True, but beware of the domain name you're using. Because VeriSign may unilaterally decide to delete your domain name along with thousands of others [1] and you're back to square one… [1] https://neil.fraser.name/news/2026/09/03/"
+        },
+        {
+          "by": "thih9",
+          "text": "> In my opinion, every commerical software development team using Go should be using custom domains for namespacing their internal libraries and packages. I’d remove “go” from the above, i.e. I think same applies to other stacks. Even using GitHub domain links in code comments gets problematic long term. Ie when a migration happens and those links start pointing nowhere."
+        },
+        {
+          "by": "dewey",
+          "text": "> That is, if you move your git hosting to GitLab then you have to change your code! You can also just use \"replace github.com/example/example => gitlab.com/example/example\" in your go.mod file and everything will keep working. That seems like a very pre-mature optimization for something that doesn't really matter."
+        },
+        {
+          "by": "unscaled",
+          "text": "> One of the good features of Go is that you namespace your code with the location to fetch the code. Then the rest of the article explains why this is NOT a good feature in practice. I don't think it's unworkable either, but this is one of these little thing that Go decided to do different and convinced its fans that this is a great idea and all the other languages where doing it wrong. After a…"
+        },
+        {
+          "by": "st3fan",
+          "text": "Great when a company goes out of business and the domains are dangling. Next one to scoop it up takes over source code that others new depend on. We've seen this many times already in other ecosystems. It is a very bad situation. It is bad advice to move your packages under your own domain. You will never be as good as Microsoft to keep paying for the domain. There are no guarantees in life but I…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49867553,
+      "url": "https://nura.eco/blog/2026/09/27/nura-rename/",
+      "hn": "https://news.ycombinator.com/item?id=49867553",
+      "title": "PostmarketOS is rebranding as Nura",
+      "time": 1790523075,
+      "depth": [
+        {
+          "text": "the **postmarketOS project** is now called **Nura**, a shorter name picked after a long search",
+          "tier": "simple"
+        },
+        {
+          "text": "The team says the old name was **hard to pronounce and remember**, and its descriptive wording no longer fit the project’s scope. **Nura** is an abbreviation of Nuraghe, ancient granite structures in Sardinia; Davide Depau suggested the name. The team picked it using **range voting** after a selection team narrowed 300+ community suggestions to four names.",
+          "tier": "substance",
+          "data": [
+            [
+              "mean vote",
+              "0.4"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say Nura is catchier and rolls off the tongue; others say postmarketOS explained the project better and Nura sounds generic.",
+      "comment_count": 52,
+      "terms": [
+        "operating system",
+        "range voting",
+        "trademark"
+      ],
+      "entities": [
+        "Nura",
+        "postmarketOS",
+        "Nuraghe",
+        "Davide Depau"
+      ],
+      "comments": [
+        {
+          "by": "sermah",
+          "text": "Have you seen the new show? It's on Tubu. It's literally on Heebee. It's on Poodee with ads. It's literally on Dippy. You can probably find it on Weeno. Dude it's on Gumpy. It's a Pheebo original. It's on Poob. You can watch it on Poob. You can go to Poob and watch it. Log onto Poob right now. Go to Poob. Dive into Poob. You can Poob it. It's on Poob. Poob has it for you. Poob has it for you."
+        },
+        {
+          "by": "pona-a",
+          "text": "Idk, I think the new name sounds too corporate, like some shitty startup or wellness brand. PostmarketOS was a bit of a mouthful but it gave you some idea of what the project was. Well, if they think it's a way to reach more people, then more power to them."
+        },
+        {
+          "by": "NoboruWataya",
+          "text": "I did think postmarketOS was a bit of an awkward name but it was also widely recognised, at least in Linux nerd circles. I guess this will cause a bit of confusion in the short term but hopefully lead to broader recognition in the longer term. Though the obstacles to Nura's growth are probably not primarily branding-related."
+        },
+        {
+          "by": "mzajc",
+          "text": "Searching for \"Nura\" returns dozens of existing results. They couldn't even get nura.org! Is there really not a more distinct name they could've picked? Even Nura OS would make them easier to find in the long term. Non-exhaustive list of things already named \"nura\": - NURA: Premium Ingredients for Food & Wellness - Nura - Award-winning personalised sound - NURA: India's First Ai Powered Health…"
+        },
+        {
+          "by": "yjftsjthsd-h",
+          "text": "I'm torn; the old name was awkward, but renaming is a painful breaking change. Oh well, it's done now."
+        }
+      ],
+      "image": "https://postmarketos.org/static/img/2026-09/stickers.jpg"
+    },
+    {
+      "id": 49866515,
+      "url": "https://jvns.ca/blog/2026/09/27/replacing-the-old-battery-on-rechargeable-bike-lights/",
+      "hn": "https://news.ycombinator.com/item?id=49866515",
+      "title": "Replacing the old battery on rechargeable bike lights",
+      "time": 1790515811,
+      "depth": [
+        {
+          "text": "someone got **old rechargeable bike lights** working again by **replacing their batteries** at a makerspace",
+          "tier": "simple"
+        },
+        {
+          "text": "They soldered in replacement batteries after an LLM suggested the old one was an **LIR2477**. The lights work, but the writer hasn’t tested how long the new batteries last yet.",
+          "tier": "substance",
+          "data": [
+            [
+              "parts",
+              "about $20 CAD"
+            ],
+            [
+              "batteries",
+              "$3 each"
+            ],
+            [
+              "glue",
+              "$8"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: one says decode the battery code and measure the cell; another says matching chemistry, voltage, and capacity matters more than the exact model.",
+      "comment_count": 84,
+      "terms": [
+        "LLM",
+        "soldering",
+        "desoldering pump",
+        "LIR2477",
+        "battery chemistry",
+        "voltage",
+        "capacity"
+      ],
+      "entities": [
+        "Julia Evans",
+        "iFixit",
+        "Lee",
+        "Lauria",
+        "DigiKey",
+        "AliExpress",
+        "Wikipedia",
+        "Cygolites",
+        "Fenix",
+        "INFINI Lava 500",
+        "LEZYNE LED Macro Drive 1300XL",
+        "ExposureLights",
+        "Super Metroid",
+        "MEC",
+        "Magicshine",
+        "EVO 1300",
+        "SeeMee 300",
+        "Bontrager Flare RT",
+        "Django",
+        "Ulia Ea",
+        "Recurse Center"
+      ],
+      "comments": [
+        {
+          "by": "layer8",
+          "text": "> I wasn’t sure how to find out what an “LI????77” was […]. I would be interested to learn non-LLM ways to figure this out though. There must be a way. Reading https://en.wikipedia.org/wiki/Button_cell#Type_designation would have indicated a solution: The third character must be an R (for rechargeable), the “77” would be the height in tenths of millimeters (which makes for a good plausibility…"
+        },
+        {
+          "by": "MrGilbert",
+          "text": "> I wasn’t sure how to find out what an “LI????77” was […]. I would be interested to learn non-LLM ways to figure this out though. There must be a way. Back in my days I simply googled my way through the nomenclature of batteries. I feel pretty old, somehow."
+        },
+        {
+          "by": "robot_jesus",
+          "text": "Love this. I have a pile of nice Cygolites (both front and tail) that my whole family uses that are maybe 8 or 9 years old. Their capacities have largely dropped to the point that I need to charge them every ride or two. Maybe get about 90 minutes of use, down from 3-4 hours previously. They're not user-serviceable by design but I've been pondering cracking them open and having a go at swapping…"
+        },
+        {
+          "by": "dragontamer",
+          "text": "I wouldn't worry about matching the exact model number of the battery. Instead, it's more important to get roughly the same chemistry and a capacity equal or maybe a touch greater (if technology improved in the last 10 years, capacity could be greater with modern parts). Specific batteries go in and out of production. But as long as it's the same CHEMISTRY, voltage, and capacity, it's likely…"
+        },
+        {
+          "by": "Tade0",
+          "text": "Word of warning: batteries from AliExpress might not be the size it says on the tin. Also: not all lights require soldering to change the battery. Some brands, like Fenix, offer lights where you can change the battery on the go. I had a light from a lesser known Taiwanese brand - an INFINI Lava 500.\nAt some point it stopped working, so I took it apart with my iFixit kit and inside was a 102660…"
+        }
+      ],
+      "image": null
     }
   ],
   "glossary": {
