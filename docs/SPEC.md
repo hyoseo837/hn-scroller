@@ -94,7 +94,8 @@ search for it: the gloss is one sentence, and the link is the way to more.
 
 - An edition is dated by its **UTC run date**. The job runs every 6h; each run puts its newly
   qualifying posts in front of that day's file, best first, never replacing it.
-- **No resume.** The feed opens at the top, latest run first; you scroll down until you meet what you read.
+- The feed opens at the top, latest run first. The last card viewed is **offered, not forced**: a
+  "Continue from <day>" pill jumps there, and scrolling onto that card or dismissing it clears it.
 - **No caught-up card.** Meeting a card you already read is the signal. Older editions load below
   today, one at a time, each behind its own date divider; nothing older is ever counted as unread.
 - Calendar to browse past days. Pull, not push: no badge, nothing accumulates.

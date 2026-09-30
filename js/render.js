@@ -137,14 +137,19 @@ async function appendDay(when) {
 
 let nextDay = 1; // index into `days` of the next older edition to load
 
-async function loadMore() {
-  if (loadingMore || nextDay >= days.length) return;
-  loadingMore = true;
-  try {
-    while (nextDay < days.length && !(await appendDay(days[nextDay++]))) {
-      /* skip empty days */
+// A caller that finds a load in flight gets that load, so it can wait for it
+// instead of spinning on a load that returns at once.
+function loadMore() {
+  if (loadingMore) return loadingMore;
+  if (nextDay >= days.length) return Promise.resolve();
+  loadingMore = (async () => {
+    try {
+      while (nextDay < days.length && !(await appendDay(days[nextDay++]))) {
+        /* skip empty days */
+      }
+    } finally {
+      loadingMore = null;
     }
-  } finally {
-    loadingMore = false;
-  }
+  })();
+  return loadingMore;
 }

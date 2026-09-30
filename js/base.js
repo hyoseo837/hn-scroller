@@ -15,7 +15,7 @@ let slides = [];
 let glossary = {};
 let days = [];
 let date = "";        // the day the feed opens on
-let loadingMore = false;
+let loadingMore = null; // the older-day load in flight
 // A real pointer means a keyboard is likely: hints and the depth lock differ.
 const KEYBOARD = matchMedia("(hover: hover) and (pointer: fine)").matches;
 

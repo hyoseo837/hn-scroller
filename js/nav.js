@@ -1,4 +1,4 @@
-// Where you are: header and dots, scroll and wheel navigation, and keeping your place across a language switch.
+// Where you are: header and dots, scroll and wheel navigation, the card you left, and your place across a language switch.
 
 const posted = (unix) =>
   new Date(unix * 1000).toLocaleDateString(LOCALE, { month: "short", day: "numeric", year: "numeric" });
@@ -75,6 +75,9 @@ feed.addEventListener(
     depth = 0;
     syncChrome();
     if (post >= slides.length - 3) loadMore(); // older editions, below today
+    clearTimeout(rememberTimer);
+    rememberTimer = setTimeout(remember, 400);
+    if (lastSeen && slides[post]?.card?.id === lastSeen.id) offerContinue(false); // got there by scrolling
   },
   { passive: true },
 );
@@ -97,9 +100,54 @@ feed.addEventListener(
   { passive: false },
 );
 
-// No resume: the feed opens at the top, the latest run first, and you scroll down
-// until you meet what you read before. The one exception is a language switch,
-// which reloads the page: it keeps your place for that one reload.
+// The feed opens at the top, the latest run first. The card you left is offered,
+// not forced: new cards sit above it, and a forgotten date is a long scroll.
+let lastSeen = null; // { date, id } of the last card viewed, from the previous visit
+let rememberTimer;
+function remember() {
+  const slide = slides[post];
+  if (!slide?.card) return;
+  try {
+    localStorage.setItem("lastSeen", JSON.stringify({ date: slide.date, id: slide.card.id }));
+  } catch {
+    /* blocked storage: no continue offer next time */
+  }
+}
+const resume = document.getElementById("resume");
+const resumeGo = document.getElementById("resume-go");
+function offerContinue(on) {
+  resume.hidden = !on;
+  if (!on) lastSeen = null;
+}
+function readLastSeen() {
+  try {
+    lastSeen = JSON.parse(localStorage.getItem("lastSeen"));
+  } catch {
+    lastSeen = null;
+  }
+  // Nothing to offer on a picked day, or when the card left is the one on top.
+  if (!lastSeen?.id || new URLSearchParams(location.search).has("date") || slides[0]?.card?.id === lastSeen.id) {
+    lastSeen = null;
+    return;
+  }
+  resumeGo.textContent = T.continueFrom(short(lastSeen.date));
+  offerContinue(true);
+}
+resumeGo.addEventListener("click", async () => {
+  const want = lastSeen;
+  offerContinue(false);
+  const find = () => slides.findIndex((slide) => slide.card?.id === want.id);
+  // Older days load only on the way down: load them until the card's day is in.
+  // A load in flight has already claimed its day, so wait for it before judging.
+  while (find() < 0 && (loadingMore || (nextDay < days.length && days[nextDay] >= want.date))) await loadMore();
+  const at = find();
+  if (at < 0) return; // that day is gone from the index
+  if (feed.children[post]) feed.children[post].scrollLeft = 0;
+  feed.scrollTop = at * feed.clientHeight; // a jump, not a glide past every card between
+});
+document.getElementById("resume-x").addEventListener("click", () => offerContinue(false));
+
+// A language switch reloads the page: it keeps your place for that one reload.
 function save() {
   try {
     sessionStorage.setItem("at", String(post));
@@ -108,13 +156,19 @@ function save() {
   }
 }
 async function restore() {
-  let at = 0;
+  let at = null;
   try {
-    at = Number(sessionStorage.getItem("at")) || 0;
+    at = sessionStorage.getItem("at");
     sessionStorage.removeItem("at");
   } catch {
-    at = 0;
+    at = null;
   }
+  if (at === null) {
+    // A fresh visit: open at the top, and offer the card left last time.
+    at = 0;
+    readLastSeen();
+  }
+  at = Number(at) || 0;
   // The place may be in an older day, which only loads on the way down.
   while (slides.length <= at && nextDay < days.length) await loadMore();
   post = Math.min(at, slides.length - 1);

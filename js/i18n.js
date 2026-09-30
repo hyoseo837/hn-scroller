@@ -22,6 +22,8 @@ const T = {
     loading: "Loading…",
     language: "Language",
     pastDays: "Past days",
+    continueFrom: (when) => `Continue from ${when}`,
+    dismiss: "Dismiss",
     olderMonth: "Previous month",
     newerMonth: "Next month",
     noCards: (when) => `No cards for ${when}. Run python3 -m generate.`,
@@ -48,6 +50,8 @@ const T = {
     loading: "불러오는 중…",
     language: "언어",
     pastDays: "지난 날짜",
+    continueFrom: (when) => `${when}부터 이어 보기`,
+    dismiss: "닫기",
     olderMonth: "이전 달",
     newerMonth: "다음 달",
     noCards: (when) => `${when} 카드 없음`,
@@ -114,4 +118,5 @@ langPick.addEventListener("change", () => {
   location.reload();
 });
 document.getElementById("cal").setAttribute("aria-label", T.pastDays);
+document.getElementById("resume-x").setAttribute("aria-label", T.dismiss);
 document.querySelector("#feed .empty").textContent = T.loading;

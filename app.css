@@ -205,6 +205,17 @@ strong { font-weight: 750; background: linear-gradient(transparent 58%, var(--ma
 }
 .acts button:disabled { opacity: .35; cursor: default; }
 .hint { margin-right: auto; color: var(--dim); font-size: 12px; }
+/* The continue offer: one pill under the header, over the top card, until used or dismissed. */
+.resume {
+  position: absolute; top: calc(max(10px, env(safe-area-inset-top)) + 44px); left: 50%; z-index: 3;
+  transform: translateX(-50%); display: flex; align-items: center;
+  background: var(--sheet); border: 1px solid var(--line); border-radius: 999px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .18); white-space: nowrap;
+}
+.resume[hidden] { display: none; }
+.resume button { min-height: 44px; font: inherit; font-size: 13px; color: var(--fg); background: none; border: 0; cursor: pointer; }
+#resume-go { padding: 0 6px 0 16px; font-weight: 650; color: var(--link); }
+#resume-x { min-width: 44px; font-size: 18px; color: var(--dim); }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
 ::selection { background: var(--mark); }
 

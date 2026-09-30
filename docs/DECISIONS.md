@@ -158,3 +158,8 @@ Supersedes the Node choice in the stack entry above; everything else there still
 
 **Why:** the user's call, superseding the viewer reversal from earlier today: reversing the whole file put each run worst first. Prepending keeps runs newest first and each run best first.
 **Rejected:** reversing in the viewer (each run worst first); a file per run (index, calendar, Korean pass and glossary all assume one file per day).
+
+## 2026-09-30 — Continue is offered, not forced: the feed still opens at the top
+
+**Why:** the user found that without it, a forgotten date means scrolling through everything. Opening at the top still shows the new runs first; a pill offers the last card viewed (`localStorage`, by card id, so new runs on top cannot shift it).
+**Rejected:** opening on the saved card (hides the new runs above it); a saved index (shifts as runs are prepended).
