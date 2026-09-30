@@ -120,38 +120,38 @@ function offerContinue(on) {
   resume.hidden = !on;
   if (!on) lastSeen = null;
 }
+function offer(seen) {
+  lastSeen = seen;
+  resumeGo.textContent = T.continueFrom(short(seen.date));
+  offerContinue(true);
+}
 function readLastSeen() {
+  let seen = null;
   try {
-    lastSeen = JSON.parse(localStorage.getItem("lastSeen"));
+    seen = JSON.parse(localStorage.getItem("lastSeen"));
   } catch {
-    lastSeen = null;
+    seen = null;
   }
   // Nothing to offer when the card left is the one on top.
-  if (!lastSeen?.id || slides[0]?.card?.id === lastSeen.id) {
-    lastSeen = null;
-    return;
-  }
-  resumeGo.textContent = T.continueFrom(short(lastSeen.date));
-  offerContinue(true);
+  if (seen?.id && slides[0]?.card?.id !== seen.id) offer(seen);
+}
+// Before a jump away (a calendar pick), the card being read is the way back.
+function offerHere() {
+  const slide = slides[post];
+  if (slide?.card) offer({ date: slide.date, id: slide.card.id });
 }
 resumeGo.addEventListener("click", () => {
   const want = lastSeen;
   offerContinue(false);
-  // A day picked from the calendar only has older days below it. A newer card
-  // is in the main feed: go there, and jump once it has loaded.
-  if (want.date > date) {
-    try {
-      sessionStorage.setItem("goto", JSON.stringify(want));
-    } catch {
-      return; // nowhere to carry it across the load
-    }
-    location.href = location.pathname;
-    return;
-  }
   jumpTo(want);
 });
+// There is one feed, today on top: a card (`id`) or a day's first card (no `id`) is
+// reached the way scrolling would reach it, so newer days stay above it.
+// ponytail: loads every day in between; a pick from months back means months of JSON.
+// Load upward on demand instead if the calendar ever reaches that far back.
 async function jumpTo(want) {
-  const find = () => slides.findIndex((slide) => slide.card?.id === want.id);
+  const find = () =>
+    slides.findIndex((slide) => (want.id ? slide.card?.id === want.id : slide.card && slide.date === want.date));
   // Older days load only on the way down: load them until the card's day is in.
   // A load in flight has already claimed its day, so wait for it before judging.
   while (find() < 0 && (loadingMore || (nextDay < days.length && days[nextDay] >= want.date))) await loadMore();
@@ -167,7 +167,6 @@ document.getElementById("resume-x").addEventListener("click", () => offerContinu
 // way back, reload only if a new run has landed (runs go on top, so the top card
 // changes). Otherwise the page is already where you left it.
 async function checkForNewRun() {
-  if (new URLSearchParams(location.search).has("date")) return; // a picked day does not grow on top
   const newest = (await json("data/index.json").catch(() => []))[0];
   const day = newest && (await json(`data/${newest}.json`).catch(() => null));
   if (day?.cards?.length && day.cards[0].id !== slides[0]?.card?.id) location.reload();
@@ -188,28 +187,22 @@ function save() {
 }
 async function restore() {
   let at = null;
-  let goto = null;
   try {
     at = sessionStorage.getItem("at");
-    goto = JSON.parse(sessionStorage.getItem("goto"));
     sessionStorage.removeItem("at");
-    sessionStorage.removeItem("goto");
   } catch {
     at = null;
   }
-  // A shared link (`?date=…&post=<id>`, from the share button) or a continue carried over
-  // from a picked day: go straight to that card, and offer nothing else.
+  // A shared card (`?date=…&post=<id>`) or a day (`?date=…`, an old calendar link):
+  // go straight there. The address then goes back to the app's own, so a reload,
+  // a language switch or a home-screen install does not land there again.
   const params = new URLSearchParams(location.search);
-  const linked = Number(params.get("post"));
-  if (linked) {
-    goto = { date: params.get("date") || "", id: linked };
-    // Opened: the address goes back to the app's own, so a reload, a language switch
-    // or a home-screen install does not land on the shared card again.
-    history.replaceState(null, "", location.pathname);
-  }
-  if (goto?.id) {
+  const linked = { date: params.get("date") || "", id: Number(params.get("post")) || null };
+  if (linked.date || linked.id) history.replaceState(null, "", location.pathname);
+  if (at === null && days.includes(linked.date)) {
     syncChrome();
-    return jumpTo(goto);
+    if (!linked.id) readLastSeen(); // a day is a detour you may want to come back from
+    return jumpTo(linked);
   }
   if (at === null) {
     // A fresh visit: open at the top, and offer the card left last time.

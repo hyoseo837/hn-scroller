@@ -101,7 +101,7 @@ the card. Share sheet on a phone, clipboard elsewhere. Previews: `/` in English,
 - Opens at the top, latest run first; the last card viewed is **offered, not forced** ("Continue from <day>").
 - **No caught-up card.** Meeting a card you already read is the signal. Older editions load below
   today, one at a time, each behind its own date divider; nothing older is ever counted as unread.
-- Calendar to browse past days; pull, not push. **No backlog**: away a week → today, not 200 cards.
+- **One feed**: the calendar jumps to a day in it, newer days above. **No backlog**: away a week → today.
 - No accounts, unread counts, streaks or notifications. Cron failure → keep serving yesterday.
 
 ## Pipeline

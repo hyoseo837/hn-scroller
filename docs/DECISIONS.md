@@ -193,3 +193,8 @@ Supersedes the Node choice in the stack entry above; everything else there still
 
 **Why:** the share button sends `/?date=…&post=<id>[&lang=ko]`, which opens that card. Chat crawlers run no JS, so `functions/index.js` rewrites the preview tags for that link from the day's JSON; every other request passes through.
 **Rejected:** a static page per card (~70 files a day, the user's call); no per-story preview (a shared story would look like the app); a page per day (a preview of the day, not the story).
+
+## 2026-09-30 — One feed: a calendar pick jumps within it, never opens a day on its own
+
+**Why:** the user's call: scrolling up from a picked day should show the next day's last post, as if scrolled there from the top. The pick loads down to that day and lands on its first post; the card being read is offered as Continue for the way back. Old `?date=` links do the same.
+**Rejected:** a picked day as its own feed (nothing newer above it, and it needed its own paths for Continue and the new-run check); loading upward on demand (more code; a `ponytail:` in `jumpTo` marks when it pays).

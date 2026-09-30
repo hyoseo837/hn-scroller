@@ -122,7 +122,13 @@ document.getElementById("cal").addEventListener("click", () => {
           continue;
         }
         const a = el("a", iso === reading ? "now" : null, d);
-        a.href = `?date=${iso}`;
+        a.href = `?date=${iso}`; // a real link still works; a tap jumps in place
+        a.addEventListener("click", (event) => {
+          event.preventDefault();
+          closeSheet();
+          if (iso !== reading) offerHere(); // a detour you may want to come back from
+          jumpTo({ date: iso });
+        });
         a.setAttribute("aria-label", pretty(iso));
         grid.append(a);
       }

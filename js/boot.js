@@ -14,12 +14,10 @@ const json = async (path) => {
   scrim.classList.remove("open");
 
   days = await json("data/index.json").catch(() => []);
-  const params = new URLSearchParams(location.search);
-  // A shared card opens in the main feed, today on top: its date only says how far
-  // down to load (js/nav.js restore). A date alone is a day picked from the calendar.
-  const wanted = params.has("post") ? null : params.get("date");
-  date = days.includes(wanted) ? wanted : days[0] || "";
-  nextDay = days.indexOf(date) + 1;
+  // One feed, today on top. A linked day or card is jumped to, not opened on its own
+  // (js/nav.js restore), so scrolling up from it shows the days after it.
+  date = days[0] || "";
+  nextDay = 1;
 
   feed.textContent = "";
   slides = [];
