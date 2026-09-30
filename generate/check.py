@@ -115,7 +115,7 @@ def check() -> None:
     already = {c["id"] for c in prior}
     assert [c["id"] for c in [c for c in fresh if c["id"] not in already] + prior] == [3, 1, 2]
 
-    post = {"id": 7, "url": "https://x.test", "title": "Raw HN Title", "time": 1790000000}
+    post = {"id": 7, "url": "https://x.test", "title": "Raw HN Title", "time": 1790000000, "points": 412}
     full = assemble_card(
         post,
         {
@@ -133,6 +133,7 @@ def check() -> None:
     assert full["depth"][1]["data"] == [["latency", "2.1s"]]  # substance tier
     assert full["terms"] == ["wasm"], "card carries term names, glosses live in the glossary"
     assert full["time"] == 1790000000, "the post's own date travels with the card"
+    assert full["points"] == 412, "the score at generation travels with the card"
     assert full["comments"] == [], "no comments passed means no peek"
     many = [{"by": f"u{i}", "text": "long word " * 90} for i in range(6)]
     peek_card = assemble_card(post, {"simple": "s"}, 9, many)

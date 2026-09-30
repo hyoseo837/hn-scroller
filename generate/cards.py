@@ -78,6 +78,7 @@ def assemble_card(
         "hn": f"https://news.ycombinator.com/item?id={post['id']}",
         "title": post["title"],  # original HN title, kept verbatim for reference
         "time": post.get("time"),  # HN submission time, unix seconds
+        "points": post.get("points"),  # HN score when the card was generated, not now
         "depth": depth,
         "camps": content.get("camps") or None,
         "comment_count": comment_count,

@@ -150,6 +150,10 @@ strong { font-weight: 750; background: linear-gradient(transparent 58%, var(--ma
 .from .ico { width: 14px; height: 14px; }
 .meta { display: flex; align-items: center; gap: 8px; margin-top: 8px; color: var(--dim); font-size: 13px; }
 .meta .sep { opacity: .5; }
+/* One line at 360px: the host gives way, the date and score never wrap. */
+.meta > span { flex: none; white-space: nowrap; }
+.from { min-width: 0; }
+.from span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .readon { color: var(--link); font-size: 14px; margin-top: 26px; align-self: start; text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 2px; }
 .kicker { color: var(--dim); font-size: 12px; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 14px; }
 .data { margin-top: 20px; border-top: 1px solid var(--line); font-size: 14px; }

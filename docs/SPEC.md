@@ -153,6 +153,7 @@ publish   one JSON file for the day
     "hn": "https://news.ycombinator.com/item?id=49792730",
     "title": "original HN title",
     "time": 1790000000,
+    "points": 412,
     "depth": [
       {"text": "...", "tier": "simple"},
       {"text": "...", "tier": "substance", "data": [["latency", "2.1s"]]}

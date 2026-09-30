@@ -69,7 +69,7 @@ def main() -> None:
                 print(f"    dropped substance, {len(bad)} quote(s) not in source")
             cards.append(
                 assemble_card(
-                    {"id": item["id"], "url": item.get("url"), "title": item["title"], "time": item.get("time")},
+                    {"id": item["id"], "url": item.get("url"), "title": item["title"], "time": item.get("time"), "points": item.get("score")},
                     content,
                     item.get("descendants") or 0,
                     got["comments"],
@@ -199,7 +199,7 @@ def sample(n: int) -> None:
         for quote in verify_substance(content, got["source"]):
             print(f"  UNSUPPORTED QUOTE, substance dropped: {quote!r}")
         card = assemble_card(
-            {"id": item["id"], "url": item.get("url"), "title": item["title"], "time": item.get("time")},
+            {"id": item["id"], "url": item.get("url"), "title": item["title"], "time": item.get("time"), "points": item.get("score")},
             content,
             item.get("descendants") or 0,
             got["comments"],

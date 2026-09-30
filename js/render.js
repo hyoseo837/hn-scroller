@@ -40,7 +40,8 @@ function renderCard(card) {
     // vendor announcement read very differently. It is also the way out to the
     // article — the only one on a card whose detail tier failed verification.
     if (i === 0) {
-      const from = el("a", "from", card.url ? host(card.url) : "Hacker News");
+      const from = el("a", "from");
+      from.append(el("span", null, card.url ? host(card.url) : "Hacker News")); // a span, so a long host can take the ellipsis
       from.href = sourceOf(card);
       from.target = "_blank";
       from.rel = "noopener";
@@ -50,6 +51,8 @@ function renderCard(card) {
       // When it was posted, not when we picked it up: the 3-day window means
       // an edition can carry a story from two days back.
       if (card.time) meta.append(el("span", "sep", "|"), el("span", "when", posted(card.time)));
+      // The score when we picked it up: cards before 2026-09-30 carry none.
+      if (card.points) meta.append(el("span", "sep", "|"), el("span", null, T.points(card.points)));
       wrap.append(meta);
     }
     if (i === 0) {
