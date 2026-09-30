@@ -1,0 +1,282 @@
+{
+  "date": "2026-09-30",
+  "cards": [
+    {
+      "id": 49901736,
+      "url": "https://github.com/ninjahawk/livenerf",
+      "hn": "https://news.ycombinator.com/item?id=49901736",
+      "title": "Livenerf: Has Opus 5.5 been nerfed yet?",
+      "time": 1790721374,
+      "points": 429,
+      "depth": [
+        {
+          "text": "someone built a **benchmark** to track whether Opus quietly **gets worse** after release",
+          "tier": "simple"
+        },
+        {
+          "text": "livenerf runs the same **question panel** daily, using the first 10 days as baseline. It calls a change only when the **99% interval** excludes zero in two consecutive 10-day windows, the effect is at least 3 points, and the control arm doesn't show the same move. In validation, it couldn't **distinguish Opus 5 from Opus 5.5** at 99%.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: skeptics say most reported nerfs are perception or complexity-ceiling effects; others suspect serving changes, load, or token/thinking tweaks can cause real regressions.",
+      "comment_count": 178,
+      "terms": [
+        "benchmark",
+        "baseline",
+        "control arm",
+        "99% interval",
+        "hermetic",
+        "quantization",
+        "honeymoon effect",
+        "n=1"
+      ],
+      "entities": [
+        "livenerf",
+        "Opus 5.5",
+        "Opus 5",
+        "Claude Code",
+        "Anthropic",
+        "Inspect",
+        "GPQA Diamond",
+        "MMLU-Pro",
+        "AIME",
+        "Nerf Bench"
+      ],
+      "comments": [
+        {
+          "by": "jug",
+          "text": "We also have Nerf Bench: https://www.bridgebench.ai/nerf-bench They test it on launch day, then benchmark it against that. A deviation of above 10% is considered a change. They're currently tracking Opus 5.5 and GPT-6 Astra. This bench famously detected a degradation of Opus 4.6 which Anthropic later blogged about. I personally think people sense nerfs more often than they happen and that it's…"
+        },
+        {
+          "by": "johnfn",
+          "text": "\"Nerf\"ing models isn't real in the vast majority of reported cases. Benchmarks like this or the 100 other \"let's see if nerfing is real\" copies would have shown it by now if it was. I made a graphic to explain why people feel like the models get nerfed: https://x.com/thesilenceturns/status/2103551351825543610 The idea is that new models can handle up to a certain level of complexity, at which…"
+        },
+        {
+          "by": "sheepscreek",
+          "text": "> It could also mean nothing happened and people are pattern-matching on noise. It is definitely not this. Anthropic has thousands of employees making probably > 100,000+ tiny changes across the entire stack and infrastructure everyday. The compounding effect can definitely cause temporary regressions in some domain or use-case that doesn’t have really good coverage in their internal tests. What…"
+        },
+        {
+          "by": "kingcauchy",
+          "text": "We don’t know the model architecture but there’s a lot of evidence to suggest load dependency on the hardware affect models quality (see for example how the original Google Translate models got worse depending on time of day). The GPUs at maximal utilization is what they’re shooting for with their pricing models so you’d need to measure model performance at peak loads to know the floor of…"
+        },
+        {
+          "by": "gr_norm",
+          "text": "All this dishonesty and shadiness is part of why open models feel inevitable. Even if the total cost of ownership is higher (debatable; seems that way at small scales, but likely not as you grow), I'd rather have intelligence controlled by me that works for me . The current period is as pro-customer as we're ever going to get, with cash still flying around and neither OpenAI nor Anthropic on the…"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/1c3028a5cac5567d2602529cbcdc2795cf3ae88db43313ccaf2246e0cc4c959f/ninjahawk/livenerf"
+    },
+    {
+      "id": 49893157,
+      "url": null,
+      "hn": "https://news.ycombinator.com/item?id=49893157",
+      "title": "Ask HN: What are you reading?",
+      "time": 1790689483,
+      "points": 215,
+      "depth": [
+        {
+          "text": "people are swapping **book recommendations**, from sci-fi and mysteries to **history and science**",
+          "tier": "simple"
+        },
+        {
+          "text": "One reader praises the **dialogue** and lifelike **IRC chats** in Dienw Neb’s “null: $cat /dev/null_”; others list books on neuroscience and analog computing, while one says **new ideas** are sci-fi’s biggest draw.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 465,
+      "terms": [
+        "IRC",
+        "analog computing"
+      ],
+      "entities": [
+        "Dienw Neb",
+        "null: $cat /dev/null_",
+        "Neuroscience: Exploring The Brain",
+        "Analog Computing: Development, Programming, Applications, and Future Directions"
+      ],
+      "comments": [
+        {
+          "by": "kstrauser",
+          "text": "Just finished: \"Lonesome Dove\", by Larry McMurtry. From the name, I'd somehow assumed it was a romance novel. No, it's absolutely not. If it were released today, I think I'd describe it as \"horsepunk\": instead of cyberpunk's high tech low-lifes, it's basically horseback low-lifes. That's not entirely fair because there's a lot of moral strength in some of the characters, but they're all living on…"
+        },
+        {
+          "by": "adamcharnock",
+          "text": "Two of Vernor Vinge's books in particular (science fiction): A Fire Upon The Deep, and A Deepness In The Sky. They have a special place in my heart. Vinge didn't write much, but what he did write I think is very special indeed. I've also taken to buying hardbacks of my favourite books from ebay. https://www.goodreads.com/en/book/show/77711.A_Fire_Upon_the…"
+        },
+        {
+          "by": "creature_x",
+          "text": "Oh I've got some recs for you if you want meaty! I've been reading classics this year. It started with East of Eden; if you've got a philosophical leaning and appreciate your characters deeply fleshed out, you owe it to yourself to read this book. The next one was Lonesome Dove, this was my first time reading a western and I didn't think I'd enjoy it as much as I did. The book is also absolutely…"
+        },
+        {
+          "by": "mindcrime",
+          "text": "Fiction: I'm on Book Two of the Dungeon Crawler Carl series. Non-Fiction: More than I can count, as far as \"I've read at least some, put a bookmark in it, and intend to finish it eventually.\" But in terms of the books I'm really actively engaging with right now, the top one is: Neuroscience: Exploring The Brain [1] by Mark F. Bear, Barry W. Connors, and Michael A. Paradiso And sort of in parallel…"
+        },
+        {
+          "by": "r-bryan",
+          "text": "My wife and I have been reading aloud to each other for years. We worked through Anthony Doerr, Dumas, Eco. Eight or so of Louise Penny's Gamache books. Currently on book 5 of Mick Herron's Slow Horses. Since I'm learning French, I'm on my third Jules Verne (in French). Just to prove to myself that I'm not over the hill - I was born in the first half of the previous century."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49899090,
+      "url": "https://postalemployeenetwork.com/news/2026/09/26/u-s-postal-inspectors-shut-down-website-selling-millions-of-counterfeit-postage-labels/",
+      "hn": "https://news.ycombinator.com/item?id=49899090",
+      "title": "U.S. postal inspectors shut down website selling counterfeit postage labels",
+      "time": 1790710217,
+      "points": 201,
+      "depth": [
+        {
+          "text": "postal inspectors **shut down** a site accused of selling **millions of counterfeit shipping labels**",
+          "tier": "simple"
+        },
+        {
+          "text": "The site allegedly charged **$2 per label**, whatever the package’s weight, size, or destination, and the article reports **more than $126 million in losses**. Faheem Akram was charged, but the article says the charges are allegations and he is presumed innocent unless or until proven guilty.",
+          "tier": "substance",
+          "data": [
+            [
+              "labels sold",
+              "more than 5.1 million"
+            ],
+            [
+              "typical price",
+              "$2 per label"
+            ],
+            [
+              "reported losses",
+              "more than $126 million"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 119,
+      "terms": [
+        "USPS",
+        "domain seizure",
+        "wire fraud",
+        "indictment"
+      ],
+      "entities": [
+        "USPS",
+        "U.S. Postal Inspection Service",
+        "LabelsBank.com",
+        "Faheem Akram",
+        "Bladismir Rojo",
+        "Jason A. Reding Quiñones"
+      ],
+      "comments": [
+        {
+          "by": "zucked",
+          "text": "I am pretty sure I bought from a seller using this (or something similar) on eBay. It sent me down a rabbit hole of reading about this type of scam that exploded earlier this year:\nhttps://www.uspsoig.gov/sites/default/files/reports/2026-04/... Here's how it went down: https://www.ebay.com/fdbk/feedback_profile/theperfectpart Note that they’ve sold so much that even 1k neutral ratings are barely…"
+        },
+        {
+          "by": "joshmn",
+          "text": "The USPIS (mentioned in the article) once came to the federal prison I was at to tell inmates that using stamps as currency was illegal. There are flats and there are books. Flats are a sheet of 20 Forever stamps that you would get at a drug store. A book is 20 stamps, used or not used. Generally there are different values associated with flats because you can get cash for them on the streets…"
+        },
+        {
+          "by": "codazoda",
+          "text": "30 years ago a teacher told me of an art student applying to a school. The student included two art pieces for the submission but was meant to provide three. A note suggested that they look at the stamp for the third submission. It was a hand drawn counterfeit that was good enough to get it delivered. Or so the story goes."
+        },
+        {
+          "by": "A_D_E_P_T",
+          "text": "It says that the perp is Pakistani, and that he's been charged, but not that he's been arrested -- so he's presumably still free in Pakistan. I hear that normally what the FBI would try in such cases is to lure people onto US or extraditable territory. IIRC there were some rogue Chinese chemists, who owned companies that sold fentanyl intermediates and were under secret indictment in the US, who…"
+        },
+        {
+          "by": "HarHarVeryFunny",
+          "text": "So the USPS delivered these packages? There's no verification built into a USPS label?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49898778,
+      "url": "https://space.bl2.net/",
+      "hn": "https://news.ycombinator.com/item?id=49898778",
+      "title": "Show HN: Real-time Solar System with 526k asteroids and all tracked satellites",
+      "time": 1790708881,
+      "points": 178,
+      "depth": [
+        {
+          "text": "someone made a **real-time Solar System** you can explore, with **asteroids and tracked satellites**",
+          "tier": "simple"
+        }
+      ],
+      "camps": null,
+      "comment_count": 40,
+      "terms": [
+        "TLEs",
+        "SGP4",
+        "WebGL2",
+        "web workers",
+        "orbit propagation",
+        "JPL SBDB",
+        "JPL Horizons",
+        "gravity assist",
+        "geo-stationary orbit"
+      ],
+      "entities": [
+        "CelesTrak",
+        "JPL SBDB",
+        "JPL Horizons",
+        "SGP4",
+        "WebGL2",
+        "Europa Clipper",
+        "Celestia",
+        "SpaceX",
+        "Starlink",
+        "Chromium",
+        "31689 Sebmellen"
+      ],
+      "comments": [
+        {
+          "by": "sebmellen",
+          "text": "Oh man, it seems like my asteroid (Minor Planet 31689 - Sebmellen [0]) is missing. [0]: https://www.wikidata.org/wiki/Q6711174 [1]: https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=20031..."
+        },
+        {
+          "by": "wanick",
+          "text": "Author here. It's a browser view of the Solar System at real scale, with its current state, plus the objects around Earth from the CelesTrak catalog. Data: CelesTrak TLEs (SGP4), asteroids and comets from JPL SBDB, spacecraft positions from JPL Horizons. Updated daily. Rendering is WebGL2, orbit propagation runs in web workers. The asteroid set (~30 MB) loads in the background. The time slider…"
+        },
+        {
+          "by": "rtmkrptn",
+          "text": "I love how smooth it is! Amazing work"
+        },
+        {
+          "by": "climech",
+          "text": "Just spent a little time following Europa Clipper, it will fly by Earth very soon! If you zoom out from Earth, it's already pretty close. This will be its second gravity assist after Mars. Very cool site!"
+        },
+        {
+          "by": "tintor",
+          "text": "Celestia did all of this and more. 10+ years ago. https://celestiaproject.space/"
+        }
+      ],
+      "image": null
+    }
+  ],
+  "glossary": {
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "baseline": "The invisible line that most letters in a line of text sit on.",
+    "control arm": "A comparison test run alongside the main one, to help catch changes caused by the setup rather than the model.",
+    "99% interval": "A range showing uncertainty around a result; if it doesn't include zero, the test counts that as evidence of a change.",
+    "hermetic": "Hard to understand because the meaning is hidden or obscure.",
+    "quantization": "A way to make a model use less computing power by representing its internal numbers less precisely.",
+    "honeymoon effect": "The early excitement with a new model can make it feel unusually capable, until you run into tasks it still struggles with.",
+    "n=1": "Only one example or trial; it often isn't enough to tell whether a result is a pattern.",
+    "IRC": "Internet Relay Chat: a way to chat live with people in online rooms.",
+    "analog computing": "A way of calculating with changing physical signals, rather than representing everything as separate digits.",
+    "USPS": "United States Postal Service: the US agency that handles mail.",
+    "domain seizure": "When authorities take control of a website’s address so the site can be shut down.",
+    "wire fraud": "A crime involving phone or internet communications used to cheat people or organizations.",
+    "indictment": "A formal criminal accusation filed in court; it is not proof that someone is guilty.",
+    "TLEs": "Two-Line Elements: a short set of details used to describe an object's orbit.",
+    "SGP4": "Simplified General Perturbations 4: a method for working out where an orbiting object will be.",
+    "WebGL2": "A browser feature that lets websites draw interactive 3D scenes.",
+    "web workers": "A way for a web page to do background work while staying responsive.",
+    "orbit propagation": "Working out where an object will be as time passes along its path.",
+    "JPL SBDB": "Jet Propulsion Laboratory Small-Body Database: the data source this project uses for asteroids and comets.",
+    "JPL Horizons": "Jet Propulsion Laboratory Horizons: the source this project uses for spacecraft positions.",
+    "gravity assist": "A spacecraft uses a close pass by a planet to change its path.",
+    "geo-stationary orbit": "A path around Earth where an object appears to stay over the same spot."
+  }
+}
