@@ -161,6 +161,22 @@ async function jumpTo(want) {
 }
 document.getElementById("resume-x").addEventListener("click", () => offerContinue(false));
 
+// Switching apps does not close the page: coming back finds it alive, on an old
+// feed, and no load ever offers to continue. Save the card on the way out; on the
+// way back, reload only if a new run has landed (runs go on top, so the top card
+// changes). Otherwise the page is already where you left it.
+async function checkForNewRun() {
+  if (new URLSearchParams(location.search).has("date")) return; // a picked day does not grow on top
+  const newest = (await json("data/index.json").catch(() => []))[0];
+  const day = newest && (await json(`data/${newest}.json`).catch(() => null));
+  if (day?.cards?.length && day.cards[0].id !== slides[0]?.card?.id) location.reload();
+}
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) remember();
+  else checkForNewRun();
+});
+addEventListener("pageshow", (event) => event.persisted && checkForNewRun());
+
 // A language switch reloads the page: it keeps your place for that one reload.
 function save() {
   try {
