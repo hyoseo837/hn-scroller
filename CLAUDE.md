@@ -5,7 +5,8 @@
 
 ## Stack
 
-No framework, no build step, no server, zero dependencies.
+No framework, no build step, zero dependencies. One Pages Function, `functions/index.js`, fills a shared card link's
+preview; it runs only on Cloudflare, so test it on a preview branch with `curl`.
 
 | Part | Choice |
 |---|---|

@@ -33,6 +33,7 @@ function syncChrome() {
   const terms = card?.terms?.length ?? 0;
   btnCmt.disabled = !card || (!card.comments?.length && !card.camps);
   btnGlo.disabled = !terms;
+  btnShare.disabled = !card;
   btnCmt.lastChild.textContent = card ? card.comment_count : "—";
   btnGlo.lastChild.textContent = terms;
   btnCmt.setAttribute("aria-label", card ? T.comments(card.comment_count) : T.commentsBtn);
@@ -196,8 +197,11 @@ async function restore() {
   } catch {
     at = null;
   }
+  // A shared link (`?date=…&post=<id>`, from the share button) or a continue carried over
+  // from a picked day: go straight to that card, and offer nothing else.
+  const linked = Number(new URLSearchParams(location.search).get("post"));
+  if (linked) goto = { date, id: linked };
   if (goto?.id) {
-    // Continue, carried over from a picked day: go straight to it.
     syncChrome();
     return jumpTo(goto);
   }

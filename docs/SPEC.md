@@ -77,7 +77,7 @@ says it differently on a pointer device, where the axis is never locked.
 
 ## Comments and glossary
 
-Two buttons per card, each with a count, bottom-right where a thumb rests. Same grammar, nothing
+Comments and glossary (each with a count) and share, bottom-right where a thumb rests. Nothing
 to explain. A header carries the name, the edition date (opens the calendar), the position in the
 day (`3/24` — where you are, not what is unread) and the depth dots.
 
@@ -90,18 +90,19 @@ gets cheaper and better over time. Indexes jargon from **comments as well as the
 assume you are a peer, which is where most beginner confusion lives. Each term links to a Google
 search for it: the gloss is one sentence, and the link is the way to more.
 
+**Share** — a link that opens on the card, `/?date=…&post=<id>` (`&lang=ko` when read in Korean; a reader's
+saved language still wins). Chat crawlers run no JS, so `functions/index.js` fills that link's preview tags from
+the card. Share sheet on a phone, clipboard elsewhere. Previews: `/` in English, `/ko/` in Korean.
+
 ## Session model
 
 - An edition is dated by its **UTC run date**. The job runs every 6h; each run puts its newly
   qualifying posts in front of that day's file, best first, never replacing it.
-- The feed opens at the top, latest run first. The last card viewed is **offered, not forced**: a
-  "Continue from <day>" pill jumps there, and scrolling onto that card or dismissing it clears it.
+- Opens at the top, latest run first; the last card viewed is **offered, not forced** ("Continue from <day>").
 - **No caught-up card.** Meeting a card you already read is the signal. Older editions load below
   today, one at a time, each behind its own date divider; nothing older is ever counted as unread.
-- Calendar to browse past days. Pull, not push: no badge, nothing accumulates.
-- **No backlog.** Away a week → you get today, not 200 cards.
-- No accounts, no unread counts, no streaks, no notifications.
-- Cron failure → keep serving yesterday.
+- Calendar to browse past days; pull, not push. **No backlog**: away a week → today, not 200 cards.
+- No accounts, unread counts, streaks or notifications. Cron failure → keep serving yesterday.
 
 ## Pipeline
 
@@ -192,7 +193,7 @@ not grow with history; `data/glossary.json` is the generator's store and readers
 No video, audio or TTS. No accounts or auth. No push. No topic filtering — the off-topic posts are the
 texture that makes it feel alive. No personalization or interest ranking. No breaking news or intraday
 updates; this is a once-a-day object. No comment threading. No linking between related stories — an
-awareness app shows you today, and a reader who wants the history has the calendar. No database — a static host and one JSON per day.
+awareness app shows you today, and a reader who wants the history has the calendar. No database — a static host, one JSON per day, one page per card.
 
 ## Open
 

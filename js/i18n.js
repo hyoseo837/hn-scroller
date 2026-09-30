@@ -10,6 +10,9 @@ const LANG = (() => {
   } catch {
     /* blocked storage: the browser's language still works, the choice will not stick */
   }
+  // A shared link carries its sharer's language; your own saved choice still wins.
+  const linked = new URLSearchParams(location.search).get("lang");
+  if (LANGS.includes(linked)) return linked;
   const browser = navigator.language?.toLowerCase().split("-")[0];
   return LANGS.includes(browser) ? browser : "en";
 })();
@@ -22,6 +25,8 @@ const T = {
     loading: "Loading…",
     language: "Language",
     pastDays: "Past days",
+    share: "Share this story",
+    copied: "Link copied",
     tip: "Enjoying this? Buy me a coffee →",
     continueFrom: (when) => `Continue from ${when}`,
     dismiss: "Dismiss",
@@ -51,6 +56,8 @@ const T = {
     loading: "불러오는 중…",
     language: "언어",
     pastDays: "지난 날짜",
+    share: "이 소식 공유",
+    copied: "링크 복사됨",
     tip: "도움이 됐다면 커피 한 잔 →",
     continueFrom: (when) => `${when}부터 이어 보기`,
     dismiss: "닫기",
@@ -121,4 +128,5 @@ langPick.addEventListener("change", () => {
 });
 document.getElementById("cal").setAttribute("aria-label", T.pastDays);
 document.getElementById("resume-x").setAttribute("aria-label", T.dismiss);
+btnShare.setAttribute("aria-label", T.share);
 document.querySelector("#feed .empty").textContent = T.loading;

@@ -7,6 +7,7 @@ const sheet = document.getElementById("sheet");
 const scrim = document.getElementById("scrim");
 const btnCmt = document.getElementById("btn-cmt");
 const btnGlo = document.getElementById("btn-glo");
+const btnShare = document.getElementById("btn-share");
 const hint = document.getElementById("hint");
 
 // feed.children and `slides` are parallel: a slide is a card or a day

@@ -168,3 +168,28 @@ Supersedes the Node choice in the stack entry above; everything else there still
 
 **Why:** a crawler runs no JS and sends no language, so one URL gets one preview. The user wanted an English and a Korean image; `/ko/` carries the Korean tags, sets the language to Korean and forwards to `/`.
 **Rejected:** one bilingual image (the user wanted one per language); a copy of the whole app under `/ko/` (duplicate markup for a preview).
+
+## 2026-09-30 — Calendar is a month grid
+
+**Why:** the list of date chips grew by one a day. A month grid stays one screen; only days with an edition are links, and the arrows skip months with none. Scrolling already steps back a day at a time, so the calendar is for jumps.
+**Rejected:** previous/next-day buttons (what scrolling already does); a native date input (it cannot mark which days have editions).
+
+## 2026-09-30 — The HN score shown is the score when the card was generated
+
+**Why:** the user wanted the score beside the posted date. The card stores `points` from the HN item at generation; cards from before carry none and show none.
+**Rejected:** a live score (a fetch per card for every reader, against a static site with no server).
+
+## 2026-09-30 — Continue survives switching apps: save on hide, reload on return only if a run landed
+
+**Why:** a phone keeps the page alive across an app switch, so no load ran to offer continue and the feed stayed old. Coming back reloads only when today's top card changed; otherwise the page is already where the reader left it.
+**Rejected:** reloading on every return (loses the place after reading an article); a time threshold (arbitrary, and still reloads when nothing is new).
+
+## 2026-09-30 — A Ko-fi link on the date card; no ads yet
+
+**Why:** the date card is the one card with no story on it, so a tip link there interrupts nothing. Ads wait on traffic (4 sampled page loads in September); the trigger is in `DIRECTION.md`.
+**Rejected:** ads now (cents at this traffic, cookies and a consent banner for AdSense); a tip link between posts or in the header.
+
+## 2026-09-30 — Share links open the card; one Pages Function fills their preview
+
+**Why:** the share button sends `/?date=…&post=<id>[&lang=ko]`, which opens that card. Chat crawlers run no JS, so `functions/index.js` rewrites the preview tags for that link from the day's JSON; every other request passes through.
+**Rejected:** a static page per card (~70 files a day, the user's call); no per-story preview (a shared story would look like the app); a page per day (a preview of the day, not the story).

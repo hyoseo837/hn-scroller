@@ -38,6 +38,17 @@ mechanism preventing fabrication. Needs an answer to that first, not a budget.
 - **Offline reading.** A service worker so a downloaded edition survives the subway. The data is one
   static JSON per day, so this is genuinely small. Trigger: if the app gets opened while commuting.
 
+## Ads
+
+**Now:** none. A Ko-fi link sits on the date card between days. September's Web Analytics sampled
+4 page loads on hn.hyoseo.dev, most of them the author's.
+
+**Do:** one developer-focused ad without tracking cookies (EthicalAds, Carbon) on the date card only,
+never between posts. AdSense-style ads mean a consent banner, heavy scripts and approval risk for
+AI summaries of others' articles.
+
+**Trigger:** steady daily visitors that meet the network's minimum, and Ko-fi not covering the ~$4/month.
+
 ## Watch, do not build
 
 - **Does minute 37 fix the lateness?** On the hour, runs started 3-5 h late. If runs at :37 still

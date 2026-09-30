@@ -166,7 +166,7 @@ everything else gets out of its way.
   to load, it is dropped and the card gets a clipping instead.
 - **Clipping**: off-white paper, masthead (site name, 10.5px spaced caps) over a double rule, then
   the original HN title in Georgia. Paper and ink stay the same in dark mode — it is an object.
-- **Action button**: 44px tall pill, SVG icon (18px, 1.8 stroke, round caps) + tabular count.
+- **Action button**: 44px tall pill, SVG icon (18px, 1.8 stroke, round caps) + tabular count. Share is icon-only.
 - **Icons**: one inline SVG sprite in `index.html`, one stroke weight. No emoji, no glyph icons.
 - **Camps callout**: tint background, "The split" label in `--link`, then the line.
 - **Day divider**: the only card between two days; it names the day below, with the Ko-fi link under it.
