@@ -2,6 +2,1014 @@
   "date": "2026-09-30",
   "cards": [
     {
+      "id": 49913571,
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "hn": "https://news.ycombinator.com/item?id=49913571",
+      "title": "Gemini 4 Argon",
+      "time": 1790798677,
+      "points": 718,
+      "depth": [
+        {
+          "text": "Google says its **new AI model** can handle **coding, legal, finance, and cybersecurity work**",
+          "tier": "simple"
+        },
+        {
+          "text": "It’s rolling out to trusted cyber defenders through the **Fairwind Program**, while Google tests safeguards before wider access. Its output limit is **1M tokens**, and Argon agents are working to migrate C/C++ code to Rust, including the Fuchsia Zircon kernel at **800K+ lines**.",
+          "tier": "substance",
+          "data": [
+            [
+              "output token limit",
+              "1M tokens"
+            ],
+            [
+              "introductory input price",
+              "$2 per million input tokens"
+            ],
+            [
+              "introductory output price",
+              "$10 per million output tokens"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see the internal code migration and cybersecurity work as a big deal; others say it’s mostly benchmarks and talk while customers still can’t use the model.",
+      "comment_count": 461,
+      "terms": [
+        "token",
+        "guardrails",
+        "prompt injection",
+        "Rust",
+        "SIMD"
+      ],
+      "entities": [
+        "Google",
+        "Google DeepMind",
+        "Gemini 4 Argon",
+        "Fairwind Program",
+        "Google AI Ultra",
+        "C/C++",
+        "Rust",
+        "re2",
+        "libgav1",
+        "Fuchsia",
+        "Zircon",
+        "Wiz",
+        "Scan for Good",
+        "DeepSWE",
+        "Vals Index",
+        "Vals Finance Agent",
+        "Harvey",
+        "AutomationBench",
+        "Zapier",
+        "LVBench",
+        "CWE-bench",
+        "3.8 Flash Cyber",
+        "Gray Swan",
+        "OpenAI",
+        "Anthropic",
+        "Claude",
+        "Fable",
+        "Astra",
+        "DeepSeek",
+        "TPUs",
+        "Koray",
+        "Dario Amodei"
+      ],
+      "comments": [
+        {
+          "by": "taylorfinley",
+          "text": "Ten days ago I had an experience with Gemini 3.8 flash that made me wonder if I was being routed to a different model under test. I was trying to use rocm with llama.cpp on my 128gb Strix Halo but could only get it to run Vulkan. I pasted the error message into agy and it proceeded to attach GDB to my GPU driver, reverse-engineer the kernel queue ioctl interface, and author an LD_PRELOAD C shim…"
+        },
+        {
+          "by": "nickysielicki",
+          "text": "The important take away here: the leapfrogging we’ve seen this year doesn’t seem to be a temporary thing. The famous theory of Dario Amodei was that AI was this winner-takes-all field where the first team to get a head start would never cede ground back. The term he liked to use was, “concentrating”. This is yet another datapoint that he was wrong about that. AI seems more distributed amongst…"
+        },
+        {
+          "by": "huydotnet",
+          "text": "I recently subscribed to Claude, and was very unhappy about the usage limit of the $20 pro plan. Then I found a trick, since I got free Google AI Pro via my phone carrier, I use Opus 5.5 High for planning, and then dispatching agy to do works. Most of the time 3.8 works fine, but it's a bit slow if compare to 3.7 Flash. If there's already a detailed plan, 3.7 can complete the task much faster…"
+        },
+        {
+          "by": "babelfish",
+          "text": "> We’ll continue to gather feedback from early testers as we iterate on guardrails before making Argon available to developers, enterprises, and consumers as soon as possible. Gemini not beating the \"can't release a model\" allegations"
+        },
+        {
+          "by": "Revanche1367",
+          "text": "Great, so they _finally_ decided to add a non-flash model and it's not available to regular subscribers for an indefinite period. What's the point of paying for the AI Ultra plan? Anthropic doing the same with Fable as far as I know, OpenAI at least allows Pro plan subscribers to use Astra. I subscribe to Gemini AI Ultra and ChatGPT Pro, and have enterprise access to Claude at work. To be fair…"
+        }
+      ],
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/g4_30-09-26_key-art_blog.width-1300.png"
+    },
+    {
+      "id": 49910553,
+      "url": "https://insufferable.dev/posts/the-ai-race-just-got-awkward/",
+      "hn": "https://news.ycombinator.com/item?id=49910553",
+      "title": "The AI Race Just Got Awkward",
+      "time": 1790783411,
+      "points": 366,
+      "depth": [
+        {
+          "text": "a writer claims Western labs **copied Chinese cache tricks**, but commenters **call that unproven**",
+          "tier": "simple"
+        },
+        {
+          "text": "It points to DeepSeek's **KV-cache work** and cache-read price cuts: **60%** for Claude Opus 5.5 versus Opus 5, and **80%** for GPT-6.1 Sol versus GPT-5.6 Sol. A commenter says those drops **don't prove** the labs used DeepSeek's methods.",
+          "tier": "substance",
+          "data": [
+            [
+              "Opus 5.5 cache-read price cut vs Opus 5",
+              "60%"
+            ],
+            [
+              "GPT-6.1 Sol cache-read price cut vs GPT-5.6 Sol",
+              "80%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say Chinese labs share openly as a strategic move; others say Western labs may have developed their own optimizations, so copying isn't established.",
+      "comment_count": 401,
+      "terms": [
+        "KV cache",
+        "distillation",
+        "inference",
+        "VRAM"
+      ],
+      "entities": [
+        "DeepSeek",
+        "DeepSeek-V4.1-Flash",
+        "Anthropic",
+        "OpenAI",
+        "Claude Opus 5.5",
+        "GPT-6.1 Sol"
+      ],
+      "comments": [
+        {
+          "by": "cmiles8",
+          "text": "Why is it a problem that the Chinese labs are just distilling down Anthropic’s models? Aren’t Anthropic’s models not just distilling down other people’s work? Feels like Anthropic crying do as I say not as I do."
+        },
+        {
+          "by": "slowin",
+          "text": "I'm also grateful to the Chinese labs for providing workarounds for the walled gardens that the US based AI companies are attempting to create. Does anyone know if there are any distillation datasets available? I'd love to see these distributed on BitTorrent. I think it's critical that AI be democratized and not isolated in the hands of a few private companies."
+        },
+        {
+          "by": "bwest87",
+          "text": "The best explanation is that it's a goal of the CCP to generally commodotize LLMs, because LLMs will ultimately be a compliment to manufacturing (which China dominates), and you always want to \"commodotize your compliments\". I think this explains why they are open sourcing broadly. It's not to be nice. It's a strategic play by the Chinese government to help ensure there are many players in this…"
+        },
+        {
+          "by": "listless",
+          "text": "I'm beyond thankful that Chinese AI models are so good. I desperately want us to cure the myriad of maladies that humans suffer needlessly with on a daily basis. We're going to need more powerful models than we have now if we're gonna do that and the Chinese are providing the competition needed to push this thing as fast as we can. I realize \"going as fast as we can\" is not the most popular…"
+        },
+        {
+          "by": "reedf1",
+          "text": "I've been running Qwen 3.8 27b (an opus 4.6 tier model), locally on a 5090 for just over two weeks @ 170 tokens/s. That's a frontier model from 9 months ago running on consumer hardware. Who knows where distillation and pruning gets us in another year."
+        }
+      ],
+      "image": "https://insufferable.dev/insufferable-og.png"
+    },
+    {
+      "id": 49887343,
+      "url": "https://exyr.org/2026/solving-factorio-quality/",
+      "hn": "https://news.ycombinator.com/item?id=49887343",
+      "title": "Solving Factorio Quality",
+      "time": 1790648874,
+      "points": 246,
+      "depth": [
+        {
+          "text": "someone used **matrix math** to figure out how Factorio factories can **recycle items into legendary gear**",
+          "tier": "simple"
+        },
+        {
+          "text": "The post models **quality chances** as matrices, then solves a long-run recycling loop with Gaussian elimination. It links a **new online calculator**; for items that recycle to themselves, one example estimates **2726.91 normal-quality inputs** per legendary output.",
+          "tier": "substance",
+          "data": [
+            [
+              "normal-quality inputs per legendary output",
+              "2726.91"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some like quality as a scientific optimization challenge; others call it a trash-management game and say “Fuck quality.”",
+      "comment_count": 94,
+      "terms": [
+        "matrix",
+        "quality module",
+        "recycler",
+        "upcycling",
+        "Gaussian elimination"
+      ],
+      "entities": [
+        "Factorio",
+        "Space Age",
+        "Minecraft",
+        "Blue Prince",
+        "SpaceChem",
+        "Zachtronics",
+        "IndustrialCraft 2",
+        "Python",
+        "JavaScript",
+        "Satisfactory",
+        "DSP",
+        "Linux",
+        "Ford",
+        "Lincoln",
+        "Command & Conquer"
+      ],
+      "comments": [
+        {
+          "by": "DanielHB",
+          "text": "If anyone is interested I made a build that can make most items at the highest quality possible using a single assembler by switching the active recipe on the assembler. You just throw in the basic resources for the base items in the recipe and it just builds the whole thing at legendary quality. https://www.reddit.com/r/FactorioBlueprints/comments/1gl5v50... It takes a bit of setup for each item…"
+        },
+        {
+          "by": "scottmsul",
+          "text": "Oh boy, this is a rabbit hole I've gone down pretty hard as well. I made a python script and a separate js app for running linear solvers on the upcycling problem. I really like the author's exposition for how to setup the solve matrix, as it's the first step when understanding the quality math. Speaking very high level, probably the most interesting and counter-intuitive thing I learned from…"
+        },
+        {
+          "by": "michael-online",
+          "text": "> Factorio pretty much founded the factory video game genre I feel very nerd sniped by this one! Factorio was heavily influenced by minecraft mods like industrialcraft2 which create factories inside of minecraft. Here's the factorio creator discussing it in 2013 https://forum.industrial-craft.net/thread/8845-factorio/ As usual, the ouroboros of culture continues, and now minecraft mods spend lots…"
+        },
+        {
+          "by": "fabian2k",
+          "text": "The difference between Washing and Upcycling is enormous. That does fit my observations, it's nice to see it quantified. Another aspect that is nice to see quantified is how big the effect of better quality modules is. You likely underestimate that initially since it's not linear. The Space Casino mentioned in the post is not possible anymore in Factorio 2.1. Which is experimental at the moment…"
+        },
+        {
+          "by": "unglaublich",
+          "text": "“Space casino” is gone from Factorio 2.1 as asteroid reprocessors don't take quality items anymore. Motivated by devs that it was 'just too easy' to get legendary items this way."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49883970,
+      "url": "https://blog.faav.net/how-i-couldve-accessed-17-trillion-microsoft-records",
+      "hn": "https://news.ycombinator.com/item?id=49883970",
+      "title": "I could've accessed 17T Microsoft records",
+      "time": 1790627566,
+      "points": 229,
+      "depth": [
+        {
+          "text": "someone found a **login flaw** that could have exposed Microsoft’s **analytics data**, but never touched customer data",
+          "tier": "simple"
+        },
+        {
+          "text": "Titan accepted an **unsigned JWT**; changing upn to admin let Faav run SQL as its administrator. Metadata put the technically reachable environment at an estimated **17.3 trillion stored rows** across 17 connected analytics databases.",
+          "tier": "substance",
+          "data": [
+            [
+              "estimated stored rows",
+              "17.3 trillion"
+            ],
+            [
+              "connected analytics databases",
+              "17"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 101,
+      "terms": [
+        "JWT",
+        "UPN",
+        "SQL",
+        "metadata"
+      ],
+      "entities": [
+        "Microsoft",
+        "Faav",
+        "Antares",
+        "Titan",
+        "Bing",
+        "SQL"
+      ],
+      "comments": [
+        {
+          "by": "john_strinlai",
+          "text": "> Microsoft had editorial control over this post, cutting sections and figures and reshaping how the impact is described before publication. that is... not great. shame on microsoft. its actions like that which shed light on why we get the nighmare eclipses of the world. pressuring a kid into handing over full editorial control of a disclosure is gross."
+        },
+        {
+          "by": "sdfhbdf",
+          "text": "> awarded $5000 It's a little perplexing. Of course it's always a controversial topic since it's difficult to value an exploit, but whenever we read about these online, which probably goes through some survivorship bias, they seem pretty low. On https://www.microsoft.com/en-us/msrc/bounty it seems the top is $100,000 or $250,000 depending which program this counts under. What does HN think? Why…"
+        },
+        {
+          "by": "throwaway2037",
+          "text": "> Hey! I’m Faav. A little over a year ago, when I was 15, I published Break into any Microsoft building: Leaking PII in Microsoft Guest Check-In, my first Microsoft write-up. I’m 16 now, and this one is a little bigger.\nDamn, these guys got schooled by a 15 year old! Say less..."
+        },
+        {
+          "by": "verst",
+          "text": "There is an internal library at Microsoft that reliably avoids all these JWT problems - Microsoft Identity Service Essentials (MISE). Adopting MISE and upgrading to the latest versions of it have been part of the Secure Future Initiative (SFI) that can be read about in the news of previous years. Unfortunately it sounds like the service team intentionally deferred the compliance alerts they will…"
+        },
+        {
+          "by": "rdtsc",
+          "text": "> {\"alg\":\"none\",\"typ\":\"JWT\"} I don't know how this ever became a thing that was allowed into the spec and then picked from the spec and implemented in various implementations."
+        }
+      ],
+      "image": "https://blog.faav.net/assets/images/647380bf-4a6a-462c-b2f6-f16f2f02bc19.png"
+    },
+    {
+      "id": 49907057,
+      "url": "https://nltimes.nl/2026/09/30/data-centers-refusing-say-much-water-electricity-use",
+      "hn": "https://news.ycombinator.com/item?id=49907057",
+      "title": "Most data centers refusing to say how much water, electricity they use",
+      "time": 1790765372,
+      "points": 200,
+      "depth": [
+        {
+          "text": "most European data centers won’t say how much **electricity and water** they use",
+          "tier": "simple"
+        },
+        {
+          "text": "At the end of last year, the Netherlands had **186 commercial data centers** with a capacity of 500 kW or more; the Netherlands Enterprise Agency (RVO) had data on only **104**. Public figures exist for electricity use at **44 centers** and water use at 47.",
+          "tier": "substance",
+          "data": [
+            [
+              "Dutch centers with capacity of 500 kW or more",
+              "186"
+            ],
+            [
+              "RVO records",
+              "104"
+            ],
+            [
+              "public electricity-use figures",
+              "44 centers"
+            ],
+            [
+              "public water-use figures",
+              "47"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some want required reporting enforced with fines; others say releasing the numbers invites emotional backlash or gives data centers a competitive secret.",
+      "comment_count": 189,
+      "terms": [
+        "RVO",
+        "kW"
+      ],
+      "entities": [
+        "Lighthouse Report",
+        "Trouw",
+        "European Energy Efficiency Directive (EED)",
+        "Dutch Datacenter Association (DDA)",
+        "Netherlands Enterprise Agency (RVO)",
+        "Statistics Netherlands (CBS)",
+        "TenneT",
+        "Microsoft",
+        "Google",
+        "EU",
+        "NL Times"
+      ],
+      "comments": [
+        {
+          "by": "pbasista",
+          "text": "From the article: > The European Energy Efficiency Directive (EED) obliges data centers with an installed capacity of at least 500 kilowatts (kW) to report data including their energy and water consumption. In practice, few do so, despite the directive being in effect for three years. I do not understand how that is even possible. If any law is supposed to have any practical impact on the…"
+        },
+        {
+          "by": "stingraycharles",
+          "text": "Playing the devil’s advocate: don’t “freedom of information” laws mostly apply to government agencies? If so, why would a private company provide this information? I personally believe at the very least the water usage is heavily overblown compared to the agriculture industry. Elecricity is a different issue, and governments should consider reporting requirements or something like that. Being…"
+        },
+        {
+          "by": "unglaublich",
+          "text": "They refuse it because if they would say \"1 million liters a year!\" the knee-jerk reaction will be completely predictable even though that's just tiny compared to a small swimming pool or industrial or agricultural site. The debate is completely based on emotion and anger right now, so sharing information will only give the emotional/angry folks more mud to throw with. The majority of people has…"
+        },
+        {
+          "by": "thelittlenag",
+          "text": "Maybe I'm being naive, but the policies needed here feel quite simple. First, since data centers likely need some kind of treated (i.e. demineralized) water, and they want to use local municipal supplies, then they can do so only if they pay full market rate for that water. I would push for them to pay 1% to 5% above market rate to help offset other costs, but market rate at minimum. At no point…"
+        },
+        {
+          "by": "ExpertAdvisor01",
+          "text": "I think it would be helpful for people in this thread to understand the differences between EU Regulations and Directives : • EU Regulation: A binding legal act that applies immediately and identically in all EU countries as soon as it takes effect, without needing national laws. • EU Directive: A legislative act that sets a mandatory goal that all EU countries must achieve, but allows each…"
+        }
+      ],
+      "image": "https://nltimes.nl/sites/nltimes.nl/files/styles/news_article_full_desktop_2x/public/2021-02/Depositphotos_10350154_l-2015.jpg?h=4997dc06"
+    },
+    {
+      "id": 49891203,
+      "url": "https://magazine.sebastianraschka.com/p/classifier-history-and-jev",
+      "hn": "https://news.ycombinator.com/item?id=49891203",
+      "title": "Language models for text classification: From bag-of-words to Jev",
+      "time": 1790679985,
+      "points": 199,
+      "depth": [
+        {
+          "text": "someone traces **text classification** from bag-of-words models to the general-purpose **Jev** model",
+          "tier": "simple"
+        },
+        {
+          "text": "The guide moves through **bag-of-words**, RNNs, CNNs and transformers before introducing **Jev**, a proprietary model from TypeSafe AI. The article says it can classify many kinds of text without custom fine-tuning, and claims it is **orders of magnitude faster and cheaper** than GPT-5.6 Luna for decision-making. Its architecture and exact training method weren’t known to the author; a founder said it was trained via “Reinforcement Learning for Calibrated Decisions.”",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters see Jev as promising for classification work; others think the hype, especially around game demos, misled people about what it was doing.",
+      "comment_count": 10,
+      "terms": [
+        "bag-of-words",
+        "fine-tuning",
+        "RNN",
+        "CNN",
+        "transformer",
+        "LLM",
+        "calibration"
+      ],
+      "entities": [
+        "Jev",
+        "TypeSafe AI",
+        "GPT",
+        "GPT-5.6 Luna",
+        "BERT",
+        "Google",
+        "OpenAI",
+        "ModernBERT",
+        "IMDb",
+        "ULMFiT",
+        "T5",
+        "Qwen",
+        "DeepSeek"
+      ],
+      "comments": [
+        {
+          "by": "malshe",
+          "text": "Sebastian is the author of two excellent books related to LLMs Build a Large Language Model (From Scratch): https://sebastianraschka.com/llms-from-scratch/ Build a Reasoning Model (From Scratch): https://sebastianraschka.com/reasoning-from-scratch/"
+        },
+        {
+          "by": "Topfi",
+          "text": "Solid assessment, very much what I assumed after announcement. The way quite a lot of brains fell out, some unreflectively quoting how this could get us to AGI, system 1, “no hallucinating”, etc, while others ignored the breadth and new data vs existing classifiers and saw no possible upside, was revealing. The game demos were especially harmful, was told repeatedly that Jev must have near…"
+        },
+        {
+          "by": "nzoschke",
+          "text": "Great article. This matches my feelings: > Like ChatGPT in 2022 was exciting because it was a general-purpose chat model that could generate all kinds of texts, one of the reasons the tech community is excited about Jev is that it is the ChatGPT moment for classification, where it can cheaply classify all kinds of text inputs without having to fine-tune a custom classifier for each task. We've…"
+        },
+        {
+          "by": "aesthesia",
+          "text": "I like the way this builds up from simple models to transformers. There's still a pretty big gap between bag-of-words and neural network models, though, and one step that helps bridge that gap is continuous bag-of-words models, where you create word embeddings and sum/average them together for all the words in a document. You can use precomputed embeddings to improve performance for small…"
+        },
+        {
+          "by": "kevinwang",
+          "text": "Really nice explanation of how Jev is and isn't special, something I was struggling to understand before this."
+        }
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!jZ4X!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0015e77a-5140-4139-b361-78e28d18df17_2494x1304.png"
+    },
+    {
+      "id": 49909583,
+      "url": "https://spectrum.ieee.org/bloomberg-terminal",
+      "hn": "https://news.ycombinator.com/item?id=49909583",
+      "title": "A brief history of the Bloomberg terminal",
+      "time": 1790778847,
+      "points": 197,
+      "depth": [
+        {
+          "text": "Bloomberg’s terminal started with **bond prices**, then grew to cover **financial data, news, analysis, and trading**",
+          "tier": "simple"
+        },
+        {
+          "text": "Merrill Lynch got the **first 22 Market Master terminals** in **1982**; at launch, they offered U.S. government bond prices and bond-calculation tools. Later, **Instant Bloomberg** let terminal users chat directly with one another over the proprietary network.",
+          "tier": "substance",
+          "data": [
+            [
+              "1999 monthly subscription",
+              "$1,600 per month"
+            ],
+            [
+              "Today's annual price",
+              "upwards of $32,000"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 80,
+      "terms": [
+        "CRT",
+        "yield curve",
+        "proprietary network"
+      ],
+      "entities": [
+        "Bloomberg Terminal",
+        "Market Master",
+        "Bloomberg LP",
+        "Innovative Market Systems",
+        "Merrill Lynch",
+        "Michael Bloomberg",
+        "Salomon Brothers",
+        "Thomas Secunda",
+        "Duncan MacMillan",
+        "Charles Zegar",
+        "Reuters",
+        "Dow Jones",
+        "Quotron",
+        "Instant Bloomberg",
+        "Matthew Winkler",
+        "Bloomberg Businessweek",
+        "Bloomberg Radio",
+        "Bloomberg Television",
+        "Bill Gross",
+        "PIMCO",
+        "Allison Marsh",
+        "IEEE Spectrum",
+        "Smithsonian Institution",
+        "National Museum of American History"
+      ],
+      "comments": [
+        {
+          "by": "rbanffy",
+          "text": "I have the highest regard for these terse, but information-dense displays that enable humans to quickly grasp all information they need to do their jobs, and nothing more. This is also something avionics provide - a modern cockpit displays are a work of art in layering needed information for what is happening at the time, both the dense PFD and the much specific that communicate aircraft status."
+        },
+        {
+          "by": "jll29",
+          "text": "For completeness' sake, here's also a history of competitor REUTERS' terminal: • https://www.thebaron.info/archives/technology/reuter-monitor... • https://www.thebaron.info/archives/technology/reuters-techni..."
+        },
+        {
+          "by": "mandevil",
+          "text": "The modern Terminal is based on a private fork of Chromium to give it the look and feel of a VT100 terminal, and integrate their private networking and security technologies. The BBT predates HTTP, and backwards compatibility is hugely important to the company- they have a museum where a second-generation Terminal from ~1985 shows the current news, because they are so dedicated to backwards…"
+        },
+        {
+          "by": "nomagicbullet",
+          "text": "> I especially love that Gross taped his login and password directly on his keyboard, which makes the object more relatable. I may never know what it’s like to manage billions in assets from a Bloomberg Terminal, but I absolutely understand the trial of remembering my passwords. Wow, what a great history artifact. It is hard to look at this and not wonder where did we go wrong. Everybody _should_…"
+        },
+        {
+          "by": "helsinkiandrew",
+          "text": "Related: A look back: The Bloomberg Keyboard https://news.ycombinator.com/item?id=17079033 (104 comments)"
+        }
+      ],
+      "image": "https://spectrum.ieee.org/media-library/image.jpg?id=67857174&width=1200&height=600&coordinates=0%2C50%2C0%2C50"
+    },
+    {
+      "id": 49894351,
+      "url": "https://frostyard.github.io/nsl/",
+      "hn": "https://news.ycombinator.com/item?id=49894351",
+      "title": "Show HN: NSL – WSL for Linux",
+      "time": 1790693496,
+      "points": 160,
+      "depth": [
+        {
+          "text": "someone built a way to develop with **different Linux distros** while keeping their **host clean**",
+          "tier": "simple"
+        },
+        {
+          "text": "NSL recreates the developer experience with a **single VM** hosting one or more **systemd-nspawn containers** for development instances. It also brings **host file edits and port sharing**; the maker says they want to keep changing dev dependencies off their host installation.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some like WSL-style ergonomics and want more isolation; others ask how it differs from existing tools and whether containers are overkill.",
+      "comment_count": 101,
+      "terms": [
+        "WSL",
+        "VM",
+        "Linux distro",
+        "atomic Linux distro",
+        "systemd-nspawn",
+        "container",
+        "dev dependencies",
+        "port sharing",
+        "UX",
+        "Distrobox"
+      ],
+      "entities": [
+        "NSL",
+        "WSL",
+        "WSL2",
+        "Linux",
+        "systemd-nspawn",
+        "Snow Linux",
+        "Frostyard",
+        "snowdesktop",
+        "toolbx",
+        "Distrobox",
+        "sdme",
+        "mkosi",
+        "Docker",
+        "Nix",
+        "direnv",
+        "Lorri",
+        "flakes",
+        "devShell",
+        "NixOS",
+        "libc",
+        "Win32",
+        "Incus",
+        "LXD",
+        "LXC",
+        "Ubuntu",
+        "Debian",
+        "MacBook",
+        "GitHub"
+      ],
+      "comments": [
+        {
+          "by": "rao-v",
+          "text": "I have to say this is nice packaging. It is weirdly not obvious how nice it is to cleanly use a different “machine” inside your desktop. I never thought I’d prefer WSL to even my MacBook for working with remote servers and dev but somehow I do. I of course know the many ways to roll something like this for myself, yes dev containers are better for many things etc. but it’s wierd how good the…"
+        },
+        {
+          "by": "just60sec",
+          "text": "Yeah, I can see why you'd want this. Being able to cobble it together with other tools is one thing. Having it ready to go without a bunch of setup is still a win. Got a quick demo? Just opening an editor, running a dev server, and showing how you access the files would help me get a feel for it."
+        },
+        {
+          "by": "lproven",
+          "text": "I have never heard of \"Snow Linux\" before. The homepage is minimal: https://snowlinux.org/ I submitted the Github page as a new story: https://github.com/frostyard/snowdesktop https://news.ycombinator.com/item?id=49907568"
+        },
+        {
+          "by": "dathinab",
+          "text": "How does it differ from existing tools kinda do exactly same, like e.g. toolbx. (And to a slightly lesser degree flatpack, snap, etc.)? And what prevented adopting/supporting existing projects, instead of further tool ecosystem fragmentation? (kinda the same question, just differently phrased)"
+        },
+        {
+          "by": "0x457",
+          "text": "I'm confused why VM + systemd-nspawn? From my understaing WSL 2 runs a single VM + something like systemd-nspawn per \"linux installation\", but it runs a VM because it needs linux kernel. Why not just do systemd-nspawn if you alread on linux?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49908394,
+      "url": "https://manuel.darcemont.fr/posts/the-last-time-my-family-was-replaced-by-technology/",
+      "hn": "https://news.ycombinator.com/item?id=49908394",
+      "title": "The last time my family was replaced by technology",
+      "time": 1790773571,
+      "points": 155,
+      "depth": [
+        {
+          "text": "someone's **great-great-grandfather** went from shoeing horses to working as a **mechanic**, still **helping people get around**",
+          "tier": "simple"
+        },
+        {
+          "text": "He calls it a **personal tribute**, not a lesson, and says the story **proves nothing**. His bigger question is whether developers are driven more by **making things and solving problems** than by coding itself.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some see AI as a tool that helps developers solve problems; others fear it will replace developers and ask what people can do once knowledge work is automated.",
+      "comment_count": 373,
+      "terms": [
+        "farrier",
+        "AI-assisted coding",
+        "AI agents",
+        "LLM",
+        "UBI",
+        "phototypesetting",
+        "QA-ing"
+      ],
+      "entities": [
+        "@mdarcemont",
+        "CGP Grey",
+        "X",
+        "Hugo",
+        "Anubis"
+      ],
+      "comments": [
+        {
+          "by": "megalomanu",
+          "text": "Author here! Thanks for all the comments. This post isn't meant as a lesson or a judgment, something to tell \"just shut up and adapt like my ancestor did\". The situation is hard, and I wasn't trying to dismiss anyone's anxiety. No one wants to hear \"you'll be fine\" when something bad just happened. It's mostly a personal story. You can see it as a kind of tribute to a great-great-grandfather I…"
+        },
+        {
+          "by": "bhelkey",
+          "text": "There is a quote from a CGP Grey video from a bit over a decade ago, \"There isn't a rule of economics that says better technology makes more, better jobs for horses. It sounds shockingly dumb to even say that out loud, but swap horses for humans and suddenly people think it sounds about right.\" [1] A couple hundred years ago, something like 70% of the population worked in agriculture. Technology…"
+        },
+        {
+          "by": "harimau777",
+          "text": "Have any of these articles actually addressed HOW software developers are supposed to retrain for good jobs? Personally I have neither the money nor the years to go back to college to get a livable job."
+        },
+        {
+          "by": "mrbonner",
+          "text": "I’ve been coding for over 20 years. I may not be the perfect coder, but for me, the real goal has always been solving problems and coding is just a side effect. If I could solve an operational problem with Excel, I would! Code, once created, is a liability I have to carry. So I’m embracing AI-assisted coding with open arms. It’s not that I don’t enjoy coding. it’s that this approach lets me solve…"
+        },
+        {
+          "by": "zug_zug",
+          "text": "And my great great grandpa thought horses would lose all their jobs to cars. And they all did and it was never the same again. There’s no quick answers, but intuitively I think we all get that the % of jobs not doable by AI and robotics approaches 0 over time."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49888182,
+      "url": "https://theconversation.com/when-oil-prices-spike-where-does-the-money-go-280763",
+      "hn": "https://news.ycombinator.com/item?id=49888182",
+      "title": "When oil prices spike, where does the money go?",
+      "time": 1790655251,
+      "points": 154,
+      "depth": [
+        {
+          "text": "when **oil prices spike**, most of the extra money goes to **oil companies and their owners**",
+          "tier": "simple"
+        },
+        {
+          "text": "For oil companies in West Texas, higher prices mean more income; much of it goes to **shareholders** through dividends, debt reduction and purchases of the companies’ own stock, with some reinvested in drilling and production. Elsewhere, **Saudi Arabia’s government** owns nearly all oil production, while Norway sends oil revenue into its **Government Pension Fund Global**.",
+          "tier": "substance",
+          "data": [
+            [
+              "U.S. crude oil price in late February 2026",
+              "US$66 a barrel"
+            ],
+            [
+              "U.S. crude oil price on April 13",
+              "$101 a barrel"
+            ],
+            [
+              "Government Pension Fund Global valuation",
+              "over $2 trillion"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say the windfall ultimately reaches ordinary people through shareholders’ retirement funds; others say there isn’t a fixed pot of extra money, and higher prices mainly ration scarce oil by pricing some buyers out.",
+      "comment_count": 154,
+      "terms": [
+        "supply-demand diagram",
+        "windfall gain",
+        "sovereign wealth fund",
+        "oil futures",
+        "superannuation"
+      ],
+      "entities": [
+        "Government Pension Fund Global",
+        "Georgia Institute of Technology",
+        "Matthew E. Oliver",
+        "Tibor Besedeš",
+        "Vladimir Putin",
+        "Warren Buffett",
+        "Vantor",
+        "Getty Images Plus",
+        "iStock",
+        "The Conversation"
+      ],
+      "comments": [
+        {
+          "by": "ggm",
+          "text": "To the extent my superannuation fund (401k, ROTH, IRA, hard to know what people call this in other economies) is invested in oil, it goes to .. me. Super funds in Australia, Canada, the US, are now a massive component of capital investment both in the public market and in private equity. Australia's GDP is 2.5T and the super funds are up to 4T or 5T. Thats $trillion. The super funds are bigger…"
+        },
+        {
+          "by": "kleiba2",
+          "text": "Spoiler alert: \"But ultimately, the bulk of the money heads in the direction of the source of the oil itself – the oil companies. [...] The money largely goes to company owners – meaning shareholders\""
+        },
+        {
+          "by": "rossjudson",
+          "text": "Does this mean the industry is now able to clean up the underfunded environmental disasters they created in the Gulf of Mexico? Oh, right."
+        },
+        {
+          "by": "DivingForGold",
+          "text": "When oil prices spike, producers may choose to be even more benevolent (bribes / paybacks) to politicians / administration who created the means which caused the price hike."
+        },
+        {
+          "by": "kleiba2",
+          "text": "Can anyone explain how to read that first graph? Like, there's a line for demand, say, but given the axes labels, it seems to say \"for greater demand, the price goes down\", so the exact opposite of what basic price theory predicts. Same for the supply lines, just the other way around. Also, the use of straight lines indicates a linear relationship. Is that really the case in practice?"
+        }
+      ],
+      "image": "https://images.theconversation.com/files/730536/original/file-20260416-63-94sb16.jpg?ixlib=rb-4.1.1&rect=0%2C484%2C5799%2C2899&q=45&auto=format&w=1356&h=668&fit=crop"
+    },
+    {
+      "id": 49898877,
+      "url": "https://statmodeling.stat.columbia.edu/2026/08/27/258/",
+      "hn": "https://news.ycombinator.com/item?id=49898877",
+      "title": "Nicholas Polson has authored 258 academic papers in 2026 so far",
+      "time": 1790709358,
+      "points": 151,
+      "depth": [
+        {
+          "text": "someone says **Nicholas Polson** has authored **258 academic papers** in 2026 so far",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says the 258 are **preprints** on a free preprint server, not papers published in serious peer-review journals. Others point to **Vadim Sokolov** and **Shiva Maharaj** as coauthors, while commenters debate whether AI produced the papers and why so many were posted.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: one says these are preprints rather than serious peer-reviewed publications; another says they aren't fake, pointing to at least one reviewed by a coauthor.",
+      "comment_count": 109,
+      "terms": [
+        "preprint",
+        "peer review"
+      ],
+      "entities": [
+        "Nicholas Polson",
+        "Vadim Sokolov",
+        "Shiva Maharaj",
+        "Claude",
+        "SSRN",
+        "arXiv"
+      ],
+      "comments": [
+        {
+          "by": "buran77",
+          "text": "> “An Interdisciplinary Synthesis Across Economics, Psychology, Biology, Philosophy, Game Theory, and Spiritual Tradition.” If one were inclined, they could shorten the title to \"AI Synthesis Across Economics, Psychology, Biology, Philosophy, Game Theory, and Spiritual Tradition.\" Maybe that's an Easter egg. AI submissions, soon AI reviewers, and shortly after only AI readers. The guy's name is…"
+        },
+        {
+          "by": "gus_massa",
+          "text": "IIUC there are not 258 academic papers published in serious peer review journals [1], only 258 \"preprints\" in a free preprint server. It's like posting in WordPress but using a PDF instead of html [2]. I guess they start with \"abstract\" and end with \"References\" so they looks like papers. For some weird reason in the last few years people forgot the differences and now any PDF is an \"academic…"
+        },
+        {
+          "by": "hangrybear666",
+          "text": "Vadim Sokolov, the co-author of the paper mentioned in the post defends this insane practice and says they reviewed at least one of the 258 generated papers with their own eyes, they are thus not fake papers. Source: https://statmodeling.stat.columbia.edu/2026/08/27/258/#comme..."
+        },
+        {
+          "by": "tobias2014",
+          "text": "Why would someone ruin their academic credentials and reputation (at a reputable university) like this? Maybe there was nothing to begin with? Otherwise I can't understand this."
+        },
+        {
+          "by": "prometheus1992",
+          "text": "Writing is a technology that served us well for over 5000 years, but now times are a changing. Written media will cease to provide any value in the next decade i think. In person chats/Public speaking will be revered again. Edit - people are assuming that i want this to happen. no, i don't. i am reading more than i ever did before, maybe out of rebellion. i am just stating what I THINK is to…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49884625,
+      "url": "https://github.com/Low-Zi-Hong/ESP32s3-LLM-Cluster",
+      "hn": "https://news.ycombinator.com/item?id=49884625",
+      "title": "ESP32S3 cluster running 1.58-bit (BitNet) Language model",
+      "time": 1790630801,
+      "points": 150,
+      "depth": [
+        {
+          "text": "someone ran a **language model** across a cluster of **ESP32-S3 boards**",
+          "tier": "simple"
+        },
+        {
+          "text": "The master handles tokenizing and embeddings; the other nodes run attention and MLP layers, with data moving over a **high-speed SPI daisy-chain**. The model uses **1.58-bit ternary quantization**. The page has **two different model sizes**: 0.4B in the title and 0.5B in the project description.",
+          "tier": "substance",
+          "data": [
+            [
+              "Nodes",
+              "7"
+            ],
+            [
+              "Model size (title)",
+              "0.4B"
+            ],
+            [
+              "Model size (project description)",
+              "0.5B"
+            ],
+            [
+              "Quantization",
+              "1.58-bit"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some find the cluster fascinating; others call the compressed model a noise-maker.",
+      "comment_count": 31,
+      "terms": [
+        "LLM",
+        "ternary quantization",
+        "SPI",
+        "daisy-chain",
+        "tokenizer",
+        "embeddings",
+        "MLP"
+      ],
+      "entities": [
+        "ESP32-S3",
+        "BitNet",
+        "ESP32s3-LLM-Cluster",
+        "GitHub",
+        "Qwen"
+      ],
+      "comments": [
+        {
+          "by": "ladyanita22",
+          "text": "This is something I've been fantasizing about for long. Let's say we took Rust, a language that makes parallelization easier than others (as it helps you avoid some common footguns). How difficult would it be to have a massively parallel computer system made out of many tiny, simple microcontroller-like chips? Let's say we picked many little Risc-V's. Surely this would be an interesting…"
+        },
+        {
+          "by": "tdhz77",
+          "text": "Soon ai in every lightbulb running Kubernetes"
+        },
+        {
+          "by": "cameron_b",
+          "text": "It is a bit of a bummer to see that the degree of 'compression' makes it a fancy llm noise-maker. It is still charming."
+        },
+        {
+          "by": "librasteve",
+          "text": "haha … this is precisely the kind of project that https://bil-lang.org is aimed at: Go for parallel (ie in this case pipeline processing). don’t get too excited until we get the TinyGo backend built though ;-)"
+        },
+        {
+          "by": "NDlurker",
+          "text": "I'm curious how this would handle grammar checking on a basic word processor. Or maybe generate worlds for small text based games. I have no idea what the capabilities are of a cluster like this."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/f93ee675196a99e9bbccfb474f7f341fae23140230848bf787be6d88f052e757/Low-Zi-Hong/ESP32s3-LLM-Cluster"
+    },
+    {
+      "id": 49876052,
+      "url": "https://blog.christianperone.com/2026/09/the-systems-that-no-one-will-test/",
+      "hn": "https://news.ycombinator.com/item?id=49876052",
+      "title": "Systems that no one will test",
+      "time": 1790592706,
+      "points": 150,
+      "depth": [
+        {
+          "text": "someone worries **AI agents** will find flaws in government systems nobody has tested",
+          "tier": "simple"
+        },
+        {
+          "text": "The writer says a **2020 flaw** gave him access to Brazil’s federal system and records on any Brazilian; officials fixed it quickly. He wonders how many frontier labs are building **practice environments** that reproduce it.",
+          "tier": "substance",
+          "data": [
+            [
+              "people in the data",
+              "200+ million"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say AI-pentesting will reach everyone; others say neglected IT security and poor software quality are the deeper problem.",
+      "comment_count": 81,
+      "terms": [
+        "AI-pentested",
+        "RL environment",
+        "RLVR",
+        "SSRF",
+        "guard-rails",
+        "air-gapped",
+        "data diode"
+      ],
+      "entities": [
+        "OpenAI",
+        "Christian S. Perone",
+        "Yuk Hui",
+        "Machine and Sovereignty: For a Planetary Thinking",
+        "Artifactory"
+      ],
+      "comments": [
+        {
+          "by": "Modified3019",
+          "text": "Relevant: https://www.reddit.com/r/YouShouldKnow/comments/1wssf4u/ysk_... https://imgur.com/a/6FaQQhb (original post before being taken down by mods) >The Work Number is an Equifax (who famously had a massive data breach a few years back) owned database with employment and pay information. >You can create a login on theworknumber .com and pull your report. Mine is seventy four pages and had info…"
+        },
+        {
+          "by": "mikewarot",
+          "text": "Every since the OPM hack of 2015, I've been apparent to me that my former field of IT administration has lost the plot. Nobody knows what a data diode is, or why you would use one. Systems that should clearly be air-gapped aren't. While it's easy to lay this at the feet of AI getting better at hacking. I see it as an primarily an IT issue. We've collectively ignored the lessons of history, and…"
+        },
+        {
+          "by": "pjc50",
+          "text": "\"What will happen to the many government systems that will never get the chance to be AI-pentested?\" Oh, everybody's going to get AI-pentested whether they want to or know about it or not. It's the cost of being on the Internet. Probably the situation will continue to deteriorate. Both the British Library and Jaguar Land Rover recently suffered long outages due to compromises, for example. I…"
+        },
+        {
+          "by": "areoform",
+          "text": "The narrative around security and LLMs doesn't make sense to me. I think we've created a self-fulfilling prophecy. Everyone involved is acting with the best of intentions, but in avoiding what they fear, they've give shape and realized their fears. Much like a greek tragedy. An example of this is the story of Oedipus Rex, in the story Laius, the king, is told that he is \"doomed to perish by the…"
+        },
+        {
+          "by": "teiferer",
+          "text": "> I honestly don’t blame them: [...] software is software That attitude is the problem. Why does our industry have that attitude towards quality? Every bike shop in my little town is better with quality than the average software shop in the world. Yes, software is more complex than bicycle. But a software engineer also gets paid 10x and has the luxury of spending substantial time on their…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49872522,
+      "url": "https://www.nytimes.com/2026/09/26/business/dealbook/ai-law-discount-billable-hour.html",
+      "hn": "https://news.ycombinator.com/item?id=49872522",
+      "title": "As A.I. makes law firms more efficient, clients ask: 'Where's my discount?'",
+      "time": 1790559017,
+      "points": 150,
+      "depth": [
+        {
+          "text": "law firms are getting more efficient with AI, and clients are **asking for a discount**",
+          "tier": "simple"
+        },
+        {
+          "text": "A client-side commenter says **AI billing analysis** has shaved **literal millions** off bills. They argue firms are sometimes hired for liability transfer, not just hours worked.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say fewer hours should mean lower fees; others say liability transfer still matters, or that AI is just another tool.",
+      "comment_count": 162,
+      "terms": [
+        "billable hour",
+        "liability transference",
+        "retainer",
+        "LLM"
+      ],
+      "entities": [
+        "ChatGPT",
+        "Claude",
+        "Expedia",
+        "Fred Schwed",
+        "Google",
+        "IBM"
+      ],
+      "comments": [
+        {
+          "by": "dabinat",
+          "text": "My experience with lawyers is that if you need a legal document, they often have templates ready to go and will take 10 seconds to find & replace your company name into the document. I know this because they often don’t proofread it afterwards. They then charge you $1000 for that 10 seconds of work. Given that I have felt ripped off by many lawyers, I’m totally fine with that industry getting…"
+        },
+        {
+          "by": "mikert89",
+          "text": "Spoke with a banker at a well known investment bank in NYC last week. They told the law firm they want the fees cut in half or they walk. This is to a top 5 law firm. Lawyers are trying to charge the same prices, when both sides know they are working half the hours. This is even at the most premium top end, where an engagement bill can run up to 30 million."
+        },
+        {
+          "by": "nomilk",
+          "text": "I feel this is the case for a lot of industries (and even a lot of productivity-enhancers, beyond AI). I remember a much slower change where software slowly ate away the work of property managers. Especially convenient was the ability for the tenant to perform the 6-monthly inspection remotely by uploading a half-dozen photos per room, taking just 15 minutes or so rather than waiting around for…"
+        },
+        {
+          "by": "throwaway89864",
+          "text": "The issue is that communications with A.I. are not privileged like client-attorney. There was some judge that made that ruling. Feels like a conflict of interests to me, I'd guess friends, neighbors, children and nieces of that judge enjoying their livelihood by charging for legal services. While legal services are now available under substantially lower rates and with a lot fewer conflicts of…"
+        },
+        {
+          "by": "socializer",
+          "text": "Outside of court proceedings, a significant proportion of what law offices do is already extremely streamlined. Stuff like wills, deeds, incorporation paperwork, is all template-based and any remaining work is done by paralegals, then billed at outrageous rates. So I'm not actually sure if AI makes it a whole lot cheaper. Maybe it makes it harder to pretend. But there's also a good reason why…"
+        }
+      ],
+      "image": null
+    },
+    {
       "id": 49905487,
       "url": "https://tomwojcik.com/posts/2026-09-21/september-2026-the-world-today/",
       "hn": "https://news.ycombinator.com/item?id=49905487",
@@ -763,6 +1771,75 @@
     }
   ],
   "glossary": {
+    "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
+    "guardrails": "Instructions that tell an AI how it should respond.",
+    "prompt injection": "Instructions hidden in text or a file that try to trick an AI into ignoring its intended directions.",
+    "Rust": "A programming language; commenters say 37signals used it for the Hey backend.",
+    "SIMD": "Single Instruction, Multiple Data: a way to apply one operation to several values at once.",
+    "KV cache": "A store of earlier model calculations that it can reuse instead of doing them again.",
+    "distillation": "Training a smaller AI to imitate the answers of a larger one.",
+    "inference": "When an AI uses what it learned to answer or act, instead of being trained.",
+    "VRAM": "The memory inside a graphics card that holds information the AI needs while running.",
+    "matrix": "A grid of numbers used to track how likely different quality outcomes are.",
+    "quality module": "An add-on for a crafting machine that changes its stats and can make quality increases more likely.",
+    "recycler": "A machine that destroys an item and usually returns some of its ingredients.",
+    "upcycling": "Crafting and recycling items in a loop until they reach the quality you want.",
+    "Gaussian elimination": "A step-by-step way to solve several linked equations for unknown values.",
+    "JWT": "JSON Web Token: a bundle of login information a service uses to decide who you are.",
+    "UPN": "User Principal Name: a sign-in name, usually written like an email address; Titan treated it as a local app username.",
+    "SQL": "A language people use to ask a database for information.",
+    "metadata": "Information describing stored data, like table names or row counts, rather than the records themselves.",
+    "RVO": "Netherlands Enterprise Agency: the Dutch agency that collects this data for the EU.",
+    "kW": "Kilowatt: a measure of how much power something can use at one moment.",
+    "bag-of-words": "A way to turn text into word counts that ignores the order the words appeared in.",
+    "fine-tuning": "Training an already-built model a bit more on examples for a particular job.",
+    "RNN": "Recurrent Neural Network: a model that reads text one word at a time and carries forward a summary of what it has read.",
+    "CNN": "Convolutional Neural Network: a model that scans nearby words in small groups to spot useful patterns.",
+    "transformer": "A kind of language model that can weigh how different words in a passage relate to each other.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "calibration": "How well a model’s confidence matches how often its choices are actually right.",
+    "CRT": "Cathode-Ray Tube: a bulky screen technology that makes pictures by lighting tiny spots on glass.",
+    "yield curve": "A chart showing how bond interest rates change with the length of time until repayment.",
+    "proprietary network": "A communications network controlled by one company and used for its own services.",
+    "WSL": "Windows Subsystem for Linux: a way to use Linux tools on Windows.",
+    "VM": "Virtual machine: a computer that runs inside another computer.",
+    "Linux distro": "Linux distribution: a packaged version of Linux with its own set of tools and apps.",
+    "atomic Linux distro": "A Linux system designed to update as a whole, rather than changing individual system pieces.",
+    "systemd-nspawn": "A Linux tool for starting a separate, contained Linux environment on the same computer.",
+    "container": "A way to run a program in a separated space, limiting what it can access.",
+    "dev dependencies": "Extra software a project needs for development to work.",
+    "port sharing": "Letting a program in one environment be reached from another through a network connection.",
+    "UX": "User experience: how using a product feels and how easy it is to get things done.",
+    "Distrobox": "A tool for setting up Linux environments using containers.",
+    "farrier": "Someone who puts shoes on horses and looks after their hooves.",
+    "AI-assisted coding": "Using AI tools to help write or change computer code.",
+    "AI agents": "Computer programs that can carry out tasks, rather than only answer a question.",
+    "UBI": "Universal Basic Income: money regularly given to people without requiring them to work for it.",
+    "phototypesetting": "A way to prepare a printed page using images of letters instead of metal type.",
+    "QA-ing": "Checking that something works as intended before people rely on it.",
+    "supply-demand diagram": "A picture showing how the amount of something available and the amount people want can affect its price.",
+    "windfall gain": "Extra money a company makes when prices rise faster than its costs.",
+    "sovereign wealth fund": "A fund a government invests public money in, often to support spending or save for the future.",
+    "oil futures": "Deals that set a price now for oil to be bought or sold later.",
+    "superannuation": "A retirement savings system where money is invested during your working life and used to support you later.",
+    "preprint": "A research paper shared online before a journal decides whether to publish it.",
+    "peer review": "A process where other researchers check a paper before a journal publishes it.",
+    "ternary quantization": "A way to shrink a model by representing its weights with three possible values.",
+    "SPI": "Serial Peripheral Interface: a way for chips to send data to each other.",
+    "daisy-chain": "A way of connecting boards one after another so data can pass along the line.",
+    "tokenizer": "A part of a program that breaks text into pieces an AI can handle.",
+    "embeddings": "Numbers that represent the meaning of text so software can search or compare it.",
+    "MLP": "Multi-layer perceptron: a part of the model that processes information through several linked steps.",
+    "AI-pentested": "Checked for security weaknesses by AI agents.",
+    "RL environment": "A practice setup where an AI agent tries tasks and gets feedback or rewards.",
+    "RLVR": "Reinforcement Learning with Verifiable Rewards: a way to train AI using results that can be checked.",
+    "SSRF": "Server-Side Request Forgery: a trick that gets a website or service to make a request on your behalf.",
+    "guard-rails": "Rules meant to steer an AI away from certain answers or actions.",
+    "air-gapped": "Kept separate from outside networks.",
+    "data diode": "A setup that lets information flow in only one direction.",
+    "billable hour": "A way of charging based on how much time a lawyer spends on a client's work.",
+    "liability transference": "An arrangement where one party takes on some of another party's legal risk.",
+    "retainer": "Money paid to a lawyer in advance for legal work.",
     "LNG": "Liquefied natural gas: natural gas cooled into a liquid so it can be shipped by sea.",
     "bond yield": "The yearly return a lender gets from a government loan, expressed as a percentage.",
     "spot market": "A market for buying something for near-term delivery, instead of agreeing on a future purchase.",
