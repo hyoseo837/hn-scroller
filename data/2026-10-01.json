@@ -2,6 +2,1187 @@
   "date": "2026-10-01",
   "cards": [
     {
+      "id": 49926069,
+      "url": "https://earendil.com/posts/pi-1-0/",
+      "hn": "https://news.ycombinator.com/item?id=49926069",
+      "title": "Pi 1.0",
+      "time": 1790883185,
+      "points": 540,
+      "depth": [
+        {
+          "text": "Pi is a **minimal coding agent** that now has **built-in MCP support**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says its **lack of a huge system prompt** helped it work with local models; another is building a **Slack on-call harness** with the Pi SDK. Others welcome **MCP’s inclusion**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say Pi’s feature criteria feel uneven; others say the changed MCP specs make its inclusion sensible.",
+      "comment_count": 185,
+      "terms": [
+        "MCP",
+        "coding agent",
+        "local model",
+        "Pi SDK",
+        "harness",
+        "vendor-agnostic",
+        "TUI",
+        "JSONL",
+        "Kubernetes"
+      ],
+      "entities": [
+        "Pi",
+        "MCP",
+        "Jev",
+        "Claude Code",
+        "Codex",
+        "hax",
+        "Pi SDK",
+        "DBOS",
+        "Kubernetes",
+        "oh-my-pi",
+        "Paseo",
+        "Qwen 3.8 Flash Next",
+        "OpenCode",
+        "Slack",
+        "Pi Durable"
+      ],
+      "comments": [
+        {
+          "by": "hhh",
+          "text": "I don't really understand the criteria for when something is 'proven' to the Pi team. Jev and the like took off less than a month ago, but MCP has been growing for nearly 2 years, and it only gets support now? Pi felt nice when I used it, and I do value keeping things minimal, but I just find the criteria very uneven."
+        },
+        {
+          "by": "FacelessJim",
+          "text": "Love pi. I tried to run some local models and pi was the only one that actually worked decently because it didn’t have a gargantuan system prompt that would take minutes to prefill on my scrawny ass laptop. Been running it almost barebones vanilla for a couple of months. Just a bunch of basic extensions and some skills. Now, if only they could fix the very annoying bug of the history jumping back…"
+        },
+        {
+          "by": "utilize1808",
+          "text": "I don't understand why \"Cache warming for anthropic models\" was not put into a standalone package, but has to be bundled with the \"minimal\" coding agent."
+        },
+        {
+          "by": "darkotic",
+          "text": "Congrats on the release. I'm looking forward to using Durable with some of my custom extensions and tools. The MCP specs have changed for the better, so makes sense to me with the inclusion."
+        },
+        {
+          "by": "wasting_time",
+          "text": "So, how are people actually using Pi? Here I am with Claude Code and Codex in a terminal like a caveman."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49923692,
+      "url": "https://blog.cloudflare.com/clef-decision-models/",
+      "hn": "https://news.ycombinator.com/item?id=49923692",
+      "title": "Clef: Open-source decision models, and new RL fine-tuning platform",
+      "time": 1790871537,
+      "points": 372,
+      "depth": [
+        {
+          "text": "Cloudflare built **Clef**, a model that makes **structured decisions** for AI agents",
+          "tier": "simple"
+        },
+        {
+          "text": "Cloudflare released **Clef and Clef-flash** as hosted decision models and is offering fine-tuning for specific workloads. In a website-classification test, Clef took **2.2s**; its fastest general LLM took 4.7s.",
+          "tier": "substance",
+          "data": [
+            [
+              "Clef website-classification time",
+              "2.2s"
+            ],
+            [
+              "gpt-oss-120b time",
+              "4.7s"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: Cloudflare calls the models open-source; a commenter says they’re open weights, not open source, because the data and training pipeline aren’t published.",
+      "comment_count": 148,
+      "terms": [
+        "decision model",
+        "fine-tuning",
+        "LLM",
+        "open weights",
+        "typed outputs"
+      ],
+      "entities": [
+        "Cloudflare",
+        "Clef",
+        "Clef-flash",
+        "Workers AI",
+        "Jev",
+        "Typesafe AI",
+        "Hugging Face",
+        "Qwen",
+        "gpt-oss-120b",
+        "DiffusionGemma",
+        "Kev",
+        "Laya",
+        "RLCD",
+        "AI Gateway",
+        "Cloudflare Containers",
+        "Replicate",
+        "Matt Mastracci",
+        "vLLM",
+        "Michelle Chen",
+        "Alex Reneau",
+        "Kevin Flansburg"
+      ],
+      "comments": [
+        {
+          "by": "manlymuppet",
+          "text": "Am I hearing this right, that they made a decision model based on Typesafe's new paradigm, and actually made a model better than Jev based on Typesafe's own ranking? And it's only been a few weeks."
+        },
+        {
+          "by": "vulture916",
+          "text": "Jev = $0.042/m input, output free\nClef = $0.24/m input, no output price listed At 300 tokens per call, you'd get: One million decisions on Jev cost about $12.60.\nOne million decisions on Clef cost about $72. Would probably make sense to self-host Clef, if you have the capability/resources. If not..."
+        },
+        {
+          "by": "buildbuildbuild",
+          "text": "Open weights, not open source. The weights have permissive licensing, but the data and training pipeline are not published to reproduce them from their proprietary Qwen starting points. Weights are not \"source.\""
+        },
+        {
+          "by": "ssiddharth",
+          "text": "Pricing is $0.24/million input tokens which is ~6x compared to Jev. Clef-flash is at $0.09 which is way more competitive."
+        },
+        {
+          "by": "bityard",
+          "text": "Clef is based on Qwen3.8-27B and Clef-flash is based on Qwen3.8-9B (edit: actually Qwen3.5-9B). So, similar in spirit to Kev by my understanding, but based on a newer model."
+        }
+      ],
+      "image": "https://blog.cloudflare.com/_emdash/api/media/file/01M3TJV43SPQCPKJ6GBXFCDKNE.01M3TJV53VYDMVNCZDPH1FBFYN.png"
+    },
+    {
+      "id": 49920997,
+      "url": "https://www.osnews.com/story/146052/google-breaks-promise-to-provide-10-years-of-updates-to-chromebooks/",
+      "hn": "https://news.ycombinator.com/item?id=49920997",
+      "title": "Google breaks promise to provide 10 years of updates to Chromebooks",
+      "time": 1790859327,
+      "points": 341,
+      "depth": [
+        {
+          "text": "Google says **ChromeOS updates** run through **mid-2034**, despite promising ten years for Chromebooks",
+          "tier": "simple"
+        },
+        {
+          "text": "Google’s support document says ChromeOS devices get regular updates and security patches through **mid-2034**. For qualifying devices bought today whose 10-year support lifecycle extends beyond 2034, Google says it will support the transition to **Googlebook OS**. Some commenters say buyers could get only **eight to ten years** of ChromeOS updates; others argue moving devices to the new OS still fulfills the hardware-support promise.",
+          "tier": "substance",
+          "data": [
+            [
+              "updates and security patches through",
+              "mid-2034"
+            ],
+            [
+              "promised support",
+              "10 years"
+            ],
+            [
+              "possible ChromeOS updates",
+              "8 to 10 years"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say buyers may get fewer than ten years of ChromeOS updates, while others say moving devices to Googlebook OS still honors the hardware-support promise.",
+      "comment_count": 152,
+      "terms": [
+        "support lifecycle",
+        "migration path",
+        "firmware",
+        "bootloader"
+      ],
+      "entities": [
+        "Google",
+        "ChromeOS",
+        "Chromebooks",
+        "Googlebook OS"
+      ],
+      "comments": [
+        {
+          "by": "ChrisArchitect",
+          "text": "[dupe] https://news.ycombinator.com/item?id=49893653"
+        },
+        {
+          "by": "pphysch",
+          "text": "So it's as low as 8 years instead of 10 for models purchased in the last 2 years (2034 being the cutoff), with those few devices being covered by a separate commitment to transfer them to GoogleOS by 2034. Pretty lame detail to be enraged about, but it is Google and this is HN. This aligns with Apple's timeline for killing Intel MacBook support after releasing Apple Silicon (2029 being the last…"
+        },
+        {
+          "by": "jezzamon",
+          "text": "Discussed a lot here: https://news.ycombinator.com/item?id=49893653 Seems to be more reasonable than this title suggests? Some comments:\n\"So they have introduced a major change and said any older Chromebooks bought going forward will only get 8. So its not a retrospective reduction for existing customers.\" (Edit: actually I think this comment is wrong, if you bought a Chromebook 1 year ago, you'd…"
+        },
+        {
+          "by": "hbn",
+          "text": "My pet theory with this move from Chromebooks to Googlebooks is simply that Chromebooks have a major stink on their entire brand reputation, especially in the younger generation that went through school with terrible cheap (and likely used/damaged) Chromebooks being given to them for schoolwork. I think if you say \"Chromebook\" around most 20-something and unders, they have an instant negative…"
+        },
+        {
+          "by": "motionlessveloc",
+          "text": "The actual update: > ChromeOS devices will continue to receive regular updates and security patches through mid-2034. For qualifying devices purchased today whose 10-year support lifecycle extends beyond 2034, Google is committed to supporting your transition to Googlebook OS, with many devices offering direct migration paths. In other words, support will be offered until 2034. if you're buying a…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49920932,
+      "url": "https://www.techpowerup.com/353296/micron-ceo-says-memory-supply-will-be-much-tighter-in-2027-and-2028-than-in-2026",
+      "hn": "https://news.ycombinator.com/item?id=49920932",
+      "title": "Micron CEO Says Memory Supply Will Be Much Tighter in 2027 and 2028 Than in 2026",
+      "time": 1790858939,
+      "points": 319,
+      "depth": [
+        {
+          "text": "Micron says **memory supply** will get **much tighter** over the next couple of years",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: some commenters say memory makers are colluding to keep prices high; others say demand from data centers is real and supply can't keep up.",
+      "comment_count": 374,
+      "terms": [
+        "DRAM",
+        "NAND",
+        "HBM",
+        "fab",
+        "wafer",
+        "hyperscalers",
+        "CapEx"
+      ],
+      "entities": [
+        "Micron",
+        "Sanjay Mehrotra",
+        "CXMT",
+        "SK hynix",
+        "Samsung",
+        "Crucial",
+        "TrendForce",
+        "Google",
+        "Facebook",
+        "Microsoft",
+        "Amazon",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "comments": [
+        {
+          "by": "ocd",
+          "text": "I'm not a business guy, but I think I would be very worried if I created any opening (even on the very long term) for competition to justify itself being built up to meet demand (or national security requirements of other countries) on an industry I mostly control, because I prioritized extremely high prices for a few years that might have the effect of changing the arithmetic for potential…"
+        },
+        {
+          "by": "jmward01",
+          "text": "This is abdicating an entire market in the hopes that your ability to manipulate it later, which has worked so far unfortunately, will hold. It is so obviously market manipulation here. Sure, prices would go up when this much server demand comes in but it is so profitable to make DDR5 that completely abandoning that market is stupid and only works if all players move in unison. It would just take…"
+        },
+        {
+          "by": "water-drummer",
+          "text": "Shovel seller says shovels will be expensive in winter so make sure to buy as many as you can today."
+        },
+        {
+          "by": "proxysna",
+          "text": "I have huge hopes fox CXMT entering the market and at least offsetting this nightmare. Just this week i've paid ~$1k USD for 2x32G DDR5 ECC, insane."
+        },
+        {
+          "by": "twelvedogs",
+          "text": "doesn't seem unlikely, i'd probably ask someone who won't massively benefit from people believing that it will be tighter though"
+        }
+      ],
+      "image": "https://www.techpowerup.com/img/gh4AFBdm8kLj5cs8.jpg"
+    },
+    {
+      "id": 49923466,
+      "url": "https://turbopuffer.com/blog/rip-vector-database",
+      "hn": "https://news.ycombinator.com/item?id=49923466",
+      "title": "RIP, vector database",
+      "time": 1790870516,
+      "points": 254,
+      "depth": [
+        {
+          "text": "someone is changing **turbopuffer's storage** so **vector search** no longer drives every query",
+          "tier": "simple"
+        },
+        {
+          "text": "turbopuffer v3 makes **ANN a secondary index** instead of the primary one, aiming to speed up text, regex and vector search while opening the door to more SQL queries. One vector update can move hundreds of attributes and their indexes; **100% of CI passes**, and the team plans to share benchmarks in the coming weeks.",
+          "tier": "substance",
+          "data": [
+            [
+              "CI passes",
+              "100%"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 70,
+      "terms": [
+        "vector",
+        "ANN",
+        "primary index",
+        "secondary index",
+        "write amplification",
+        "inverted index",
+        "BM25",
+        "vectorized",
+        "SIMD",
+        "SQL"
+      ],
+      "entities": [
+        "turbopuffer",
+        "Dan Harrison",
+        "Cursor",
+        "Notion",
+        "Linear",
+        "SPANN",
+        "SPFresh",
+        "DuckDB",
+        "ClickHouse",
+        "Lucene",
+        "Postgres",
+        "MySQL",
+        "NIMBLE",
+        "Uber",
+        "SQLite",
+        "Lancedb",
+        "TopK",
+        "Qdrant",
+        "InnoDB",
+        "Rust"
+      ],
+      "comments": [
+        {
+          "by": "gopalv",
+          "text": "> This write amplification is large enough that our efforts to tune indexing throughput have started to hit diminishing returns. > don't key on the ANN address. That is precisely the change turbopuffer v3 makes. As you can imagine, it is not a trivial change. This is a direct parallel to how Postgres and Mysql built indexes. Your design choice went from a Postgres design pattern to a Mysql one…"
+        },
+        {
+          "by": "croemer",
+          "text": "Dashboard was last updated on September 7, it started on September 5. Bug? Or no progress? It's linked in the blog post so would expect it to work: https://turbopuffer.com/v3"
+        },
+        {
+          "by": "gk1",
+          "text": "Vector databases were always more about retrieval than either vectors or data storage. But the term stuck all too well and companies held on to it a tad too long. Sorry :)"
+        },
+        {
+          "by": "real_faxenoff",
+          "text": "I’m developing a local “code graph mcp tool” (not yet published) and followed a similar path, though I may have been able to go further since I have fewer vectors in my database (even on projects with 50M LOC). At first, I tried all those popular vector databases and was disappointed with their performance. In the end, the best and fastest solution turned out to be building a multi-database…"
+        },
+        {
+          "by": "tschellenbach",
+          "text": "AI has some of the craziest up and down cycles of tech I've ever seen"
+        }
+      ],
+      "image": "https://turbopuffer.com/og/turbopuffer.png"
+    },
+    {
+      "id": 49921118,
+      "url": "https://www.nytimes.com/2026/09/30/technology/meta-ai-data-centers-taxes.html",
+      "hn": "https://news.ycombinator.com/item?id=49921118",
+      "title": "Meta Uses A.I. Data Centers to Avoid Billions in Federal Taxes",
+      "time": 1790859951,
+      "points": 245,
+      "depth": [
+        {
+          "text": "Meta is claiming **tax breaks** for **AI data centers**, and commenters **disagree** over whether that's fair",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter quoted filings saying Meta began claiming the credit for its data centers two years ago, with savings **trimming almost $4 billion** off its tax bill last year. The debate is whether AI hardware counts as **experimental R&D** or an abuse of the credit.",
+          "tier": "substance",
+          "data": [
+            [
+              "tax bill reduction",
+              "almost $4 billion"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters say the R&D credit is meant to spur investment and AI hardware can qualify; critics say large companies are abusing the system and taxpayers should get the money back.",
+      "comment_count": 230,
+      "terms": [
+        "R&D tax credit",
+        "tax avoidance",
+        "tax evasion"
+      ],
+      "entities": [
+        "Meta",
+        "Nvidia",
+        "Propublica",
+        "The New York Times",
+        "Martin Shkreli",
+        "Deraprim",
+        "Musk",
+        "Zuckerberg"
+      ],
+      "comments": [
+        {
+          "by": "snorrah",
+          "text": "sans paywall: https://archive.ph/FvUmr"
+        },
+        {
+          "by": "djoldman",
+          "text": "It often strikes me as quite the biased and one-sided take when a tax-paying entity is called out by the press for tax avoidance (NOT tax evasion, which is illegal). (yes TFA implies that Meta is breaking the law, I'm not talking about situations where entities break the law). Previously we've seen \"The Secret IRS Files\" from Propublica as well as other coverage of tax avoidance that never…"
+        },
+        {
+          "by": "simonw",
+          "text": "> Under a tax credit created in the 1980s to spur innovation, companies can get a rebate for supplies, but only if they are being tested in an experimental effort, not standard business operations. Meta is claiming that the costly A.I. computer chips it buys from companies, including Nvidia, are entitled to a taxpayer-provided discount as part of the experiment. [...] > The company started…"
+        },
+        {
+          "by": "nimish",
+          "text": "I think a fun exercise would be for the Times to ask their own accountants how they classify their own engineering employees for the R&D tax credit."
+        },
+        {
+          "by": "exabrial",
+          "text": "When people are evading taxes, we need to blame the taxes, not the people. We pay an enormous amount of dumb taxes that are simply funneled into * government \"Contractors\". Aka the 1%, or the people that are golf buddies with your legistators * wars. Which ultimately ends up in #1's pocket."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49922278,
+      "url": "https://www.404media.co/cops-can-bypass-iphone-automatic-inactivity-reboot-graykey/",
+      "hn": "https://news.ycombinator.com/item?id=49922278",
+      "title": "Cops Can Bypass iPhone's Automatic Reboot to Get into Locked Phones",
+      "time": 1790865515,
+      "points": 237,
+      "depth": [
+        {
+          "text": "someone claims a new tool can keep seized **iPhones accessible** despite Apple's **automatic reboot**",
+          "tier": "simple"
+        },
+        {
+          "text": "The video names Magnet Forensics’ **GrayKey Preserve** device and **Evidence Preservation Mode** for regular GrayKey as its way around the inactivity reboot. Apple's reboot kicks in after 72 hours without an unlock and is meant to make the phone harder for police to access.",
+          "tier": "substance",
+          "data": [
+            [
+              "reboot interval",
+              "72 hours"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 189,
+      "terms": [
+        "inactivity reboot",
+        "GrayKey",
+        "AFU",
+        "digital forensics"
+      ],
+      "entities": [
+        "Apple",
+        "Magnet Forensics",
+        "GrayKey",
+        "GrayKey Preserve",
+        "Evidence Preservation Mode",
+        "iOS",
+        "Android",
+        "404 Media",
+        "GrapheneOS",
+        "Cellebrite"
+      ],
+      "comments": [
+        {
+          "by": "int0x29",
+          "text": "These three quotes make me wonder if the police are effectively searching the phone before getting a warrant > given that oftentimes they can’t immediately try to break into iPhones that have been seized. That could be because police are still waiting for a court authorization to do so > GrayKey Preserve and Evidence Preservation Mode are also designed to combat another iPhone feature that…"
+        },
+        {
+          "by": "Cider9986",
+          "text": "For those who don't know, automatic reboot restarts your device if you haven't unlocked it in a set amount of time. Cellebrite and other digital forensics companies are able to get into AFU devices much more often. The automatic reboot feature was first introduced by GrapheneOS and was later added to iOS and stock Pixels. GrapheneOS's default is 18 hours and it can be set to between 10 minutes…"
+        },
+        {
+          "by": "iancarroll",
+          "text": "> “Even if that device does reboot for any number of reasons, memory maintenance or the power is lost or whatever, the AFU state is not lost. This is the true magic behind the GrayKey Preserve and the Evidence Preservation Mode function.” Based on this, it seems more likely that this involves exploiting the device to retrieve the underlying keybags present in AFU mode and store them, rather than…"
+        },
+        {
+          "by": "delichon",
+          "text": "I keep all of my most sensitive personal documents on my phone, as an emergency backup, but in an encrypted (Cryptomator) volume that requires a separate password. Given the routine news of such exploits this seems like due diligence. As I understand it this encryption is a significant additional barrier to technical or legal access to those files. If someone knows otherwise, please let me know…"
+        },
+        {
+          "by": "ethagnawl",
+          "text": "> The idea behind this so-called “inactivity reboot” is to revert the phone to a state that makes it harder for police to break into the device, and thus extract sensitive data from it with forensics technology. This is weird framing. The feature makes it harder for anyone to break into the device."
+        }
+      ],
+      "image": "https://storage.ghost.io/c/0f/76/0f76b548-bc58-4f25-abc3-3f5ebca07da4/content/images/size/w1200/2026/09/graykey-device.png"
+    },
+    {
+      "id": 49920896,
+      "url": "https://nnethercote.github.io/2026/09/30/how-to-speed-up-the-rust-compiler-in-september-2026.html",
+      "hn": "https://news.ycombinator.com/item?id=49920896",
+      "title": "How to speed up the Rust compiler in September 2026",
+      "time": 1790858678,
+      "points": 219,
+      "depth": [
+        {
+          "text": "Rust's compiler got **faster** after a bunch of fixes, including a big change to how it **analyzes code**",
+          "tier": "simple"
+        },
+        {
+          "text": "Across 629 benchmark measurements from 2026-07-29 to 2026-09-28, mean wall-time fell **4.57%**; 555 improved and 74 regressed. A changed **traversal algorithm** cut calls on cranelift-codegen’s huge function from 1.5 million to 90,000, giving that crate’s check build a **~30% wall-time reduction**.",
+          "tier": "substance",
+          "data": [
+            [
+              "mean wall-time reduction",
+              "4.57%"
+            ],
+            [
+              "benchmark measurements",
+              "629"
+            ],
+            [
+              "improved benchmarks",
+              "555"
+            ],
+            [
+              "regressed benchmarks",
+              "74"
+            ],
+            [
+              "check-build wall-time reduction",
+              "~30%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say Rust compile times are too slow and switch to Go; others say builds can be quick if projects skip unnecessary checks or split crates.",
+      "comment_count": 109,
+      "terms": [
+        "compiler",
+        "borrow checker",
+        "crate",
+        "PGO",
+        "LLVM",
+        "trait solver",
+        "wall-time",
+        "CFG"
+      ],
+      "entities": [
+        "Rust",
+        "Noah Lev",
+        "Jakub Beránek",
+        "Clippy",
+        "LLVM",
+        "Nikita Popov",
+        "Polonius Alpha",
+        "Jack Huey",
+        "serde",
+        "Jana Dönszelmann",
+        "xmakro",
+        "cranelift-codegen",
+        "Chris Denton",
+        "Jonathan Brouwer",
+        "Hexcat",
+        "Mara Bos",
+        "Predrag Gruevski",
+        "Go",
+        "OpenAI",
+        "Codex",
+        "GCC",
+        "Makepad",
+        "Rik Arends",
+        "TPDE"
+      ],
+      "comments": [
+        {
+          "by": "knuckleheads",
+          "text": "Funny to see this now. I’ve got a private branch I am in the process of shaping up this weekend to show the compiler team. For deep nested projects like rust analyzer, if you emit the meta data about function types earlier for downstream slots to use, before successful type checking, you can start other crates earlier and use all the slots you have instead of sitting around waiting for the full…"
+        },
+        {
+          "by": "adamch",
+          "text": "I'm glad to see the donations from big companies to open source maintainers are making measurable difference to the Rust experience. Telling these companies that their employees spend 5% less time waiting for compilation might motivate future investment in people like Nick and the others mentioned."
+        },
+        {
+          "by": "bryanlarsen",
+          "text": "Really nice to see that the 5% speedup is despite making the borrow checker better, validating code that previously would have tripped it up. Sometimes we really can have our cake and eat it too."
+        },
+        {
+          "by": "slowin",
+          "text": "I've moved from Rust to Go for most things because in the era of agents, being able to iterate quickly on a project is a huge advantage and Rust is way, way slower than Go for compilation. There are times when Rust is more appropriate, but for the vast majority of things Go is perfectly fine."
+        },
+        {
+          "by": "maherbeg",
+          "text": "I'm surprised the OpenAI Codex team doesn't donate like 10B tokens or something to the Rust team for performance"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49921050,
+      "url": "https://www.cnbc.com/2026/09/30/ftc-ai-probe-openai-anthropic.html",
+      "hn": "https://news.ycombinator.com/item?id=49921050",
+      "title": "FTC is investigating OpenAI, Anthropic and other AI companies over product risks",
+      "time": 1790859655,
+      "points": 197,
+      "depth": [
+        {
+          "text": "the **FTC** is investigating OpenAI, Anthropic and other AI companies over **product risks**",
+          "tier": "simple"
+        },
+        {
+          "text": "An agency spokesperson **confirmed the probe** but declined to name the other companies. It adds scrutiny of **OpenAI and Anthropic's safety practices**, after researchers warned their models could cause **catastrophic harm**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some commenters expect the probe to be a show or a way to shield the companies; others welcome FTC scrutiny; others say the focus should be competition concerns instead.",
+      "comment_count": 140,
+      "terms": [
+        "FTC",
+        "nonbinding accord"
+      ],
+      "entities": [
+        "FTC",
+        "OpenAI",
+        "Anthropic",
+        "CNBC",
+        "Hugging Face",
+        "Dario Amodei",
+        "Sam Altman",
+        "SpaceX",
+        "Elon Musk",
+        "Meta",
+        "Mark Zuckerberg",
+        "Nvidia",
+        "Jensen Huang",
+        "Donald Trump",
+        "Alphabet",
+        "Palantir",
+        "New York Post"
+      ],
+      "comments": [
+        {
+          "by": "jfasi",
+          "text": "My prediction: nothing will come of this, and these investigations will either be concluded favorably or dropped no less than six months after the midterms. There's only one voice that matters in this administration, and he has already made it quite clear that he both does not consider AI to be an issue, and he is more than happy to trample over his agencies to enforce his opinion."
+        },
+        {
+          "by": "asdfasgasdgasdg",
+          "text": "If the FTC weren't investigating three of the largest and fastest growing companies in the country for one thing or another, it would be kinda surprising to me."
+        },
+        {
+          "by": "Cipater",
+          "text": "They just need to hire the right lobbyists, get a meeting at the White House, agree on the terms and call it a settlement. And if the FTC chair is not agreeable, they will be threatened by said lobbyists and eventually be fired. If this sounds far-fetched, it is exactly what happened to Gail Slater, then-head of the DOJ's antitrust division and her deputies in 2025 over HPE’s bid to acquire…"
+        },
+        {
+          "by": "CodeWriter23",
+          "text": "Looks like their \"Oops! we can't control our dog\" PR campaign has backfired."
+        },
+        {
+          "by": "exabrial",
+          "text": "\"Product risks\"? The hell? How about cartel like behavior trying to stifle their competition."
+        }
+      ],
+      "image": "https://image.cnbcfm.com/api/v1/image/108238255-17652000292025-12-08t080346z_276670915_rc27cia7uvdx_rtrmadp_0_usa-court-ftc-firing.jpeg?v=1765200048&w=1920&h=1080"
+    },
+    {
+      "id": 49921923,
+      "url": "https://blog.cloudflare.com/cloudflare-k2-streams/",
+      "hn": "https://news.ycombinator.com/item?id=49921923",
+      "title": "Cloudflare K2: serverless event streams",
+      "time": 1790863750,
+      "points": 177,
+      "depth": [
+        {
+          "text": "Cloudflare launched **K2**, a **serverless stream** that stores events for different systems to read independently",
+          "tier": "simple"
+        },
+        {
+          "text": "K2 stores events as an **ordered log** on R2, separating the systems that send them from the ones that read them. Consumers can split the work or each get every message; produce latency is **about 1 second** at the 99th percentile in this release. The public beta is for Workers Paid accounts, with a **10GB storage limit**.",
+          "tier": "substance",
+          "data": [
+            [
+              "produce latency (99th percentile)",
+              "about 1 second"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 75,
+      "terms": [
+        "serverless",
+        "event stream",
+        "object storage",
+        "RPC",
+        "fan-out",
+        "99th percentile",
+        "ack"
+      ],
+      "entities": [
+        "Cloudflare",
+        "K2",
+        "R2",
+        "Basin Pipelines",
+        "Apache Kafka",
+        "Queues",
+        "Workers",
+        "Wrangler",
+        "AWS",
+        "GCP",
+        "Azure",
+        "S3",
+        "AutoMQ",
+        "WarpStream",
+        "NATS JetStream",
+        "D1",
+        "Durable Objects",
+        "GKE",
+        "AWS Kinesis",
+        "Azure Blob Storage",
+        "GitHub",
+        "streambed",
+        "Iceberg"
+      ],
+      "comments": [
+        {
+          "by": "psanford",
+          "text": "Object store is quickly becoming the new core data substrate. Lets build kafka, but on s3. Lets build github, but on s3. It feels like we going to see more and more \"object-store first\" systems in the next few years. I am excited about this future. Give me stateless servers and a storage bucket over having to manage systems with disks any day. I do wonder if we will see an expansion of the s3 api…"
+        },
+        {
+          "by": "pcthrowaway",
+          "text": "Rather than requiring consumers to ack the batch, why not just have them submit the ID of the batch tail on `consume` requests?"
+        },
+        {
+          "by": "necubi",
+          "text": "I'm the author of the post and tech lead for K2. Happy to answer any questions!"
+        },
+        {
+          "by": "max8539",
+          "text": "Cloudflare is catching up to be a full AWS/GCP/Azure. At start it was just a few services around but they are adding everything else"
+        },
+        {
+          "by": "vira28",
+          "text": "I wonder how many of data infra startups are wrapper on top of S3. Also, the boundary between OLTP and OLAP is blurring every day. For folks who want an off shelf version of this you may be interested in https://github.com/viggy28/streambed (Disclaimer: I am one of the committers)"
+        }
+      ],
+      "image": "https://blog.cloudflare.com/_emdash/api/media/file/01M3SXWJMRR7ZENPNFNB5QZYPA.jpg"
+    },
+    {
+      "id": 49923056,
+      "url": "https://techrights.org/n/2026/10/01/Red_Hat_Being_Phased_Out_of_Existence_Like_Many_Other_Companies.shtml",
+      "hn": "https://news.ycombinator.com/item?id=49923056",
+      "title": "Red Hat being phased out of existence?",
+      "time": 1790868806,
+      "points": 171,
+      "depth": [
+        {
+          "text": "a blog says **Red Hat's identity** is **fading under IBM** as **some people leave**",
+          "tier": "simple"
+        },
+        {
+          "text": "Thomas Wilson's message says **“The team is still here”**, even as the post quotes him saying **the “badge” says IBM**. One commenter calls the brand-loss claim far-fetched, points to Red Hat's Youtube branding, and worries more about veteran staff morale and **brain drain**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say the brand-disappearance claim is far-fetched and point to Red Hat's branding; others think IBM is bringing Red Hat to heel and fear staff losses.",
+      "comment_count": 90,
+      "terms": [
+        "brain drain",
+        "vendor lock-in",
+        "K8s",
+        "VMs",
+        "PIP"
+      ],
+      "entities": [
+        "Red Hat",
+        "IBM",
+        "Thomas Wilson",
+        "Roy Schestowitz",
+        "Nordcloud",
+        "Fedora",
+        "VMware",
+        "Ansible",
+        "OpenShift",
+        "Kubernetes",
+        "Oracle",
+        "OpenELA"
+      ],
+      "comments": [
+        {
+          "by": "Hasz",
+          "text": "Krishna was on Norges podcast a while ago and mentioned that Red Hat would be (not his words) brought to heel with the rest of IBM. IMO, it is a version of the Broadcom/VMware playbook, boil-the-frog style. Redhat underpins many low-visibility, very important Linux projects, and most have no idea they are doing it. For example, look at kernel committers…"
+        },
+        {
+          "by": "scottyah",
+          "text": "They have more bargaining power now. Lots of people are scrambling to get off vmware after they raised their prices astronomically for seemingly no reason (other than they could, and a lot of groups are leaving VMs for containers). Openshift Virtualization is there with open arms to take those who haven't or won't migrate off of VMs. Redhat can now charge a lot more and have worse service because…"
+        },
+        {
+          "by": "throwaway7356",
+          "text": "Untrustworthy blog reposts Twitter message from some person?"
+        },
+        {
+          "by": "INTPenis",
+          "text": "I'm also scared of RH pandering to share holders. But RH disappearing as a brand is far fetched imho, just look at the recent output of their Youtube channel. They're leaning heavily into the Red Hat branding, not IBM. I'm more worried about the brain drain and drop in morale of the veteran employees. Something posts like this one probably contribute to."
+        },
+        {
+          "by": "christophilus",
+          "text": "I hope not. I love Fedora, and it's kind of heavily reliant on Red Hat being a good citizen (as are many other distros). Red Hat is still the (benevolent?) king of the Linux world."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49922729,
+      "url": "https://twitter.com/GayaniFigma/status/2105295629941350454",
+      "hn": "https://news.ycombinator.com/item?id=49922729",
+      "title": "Figma restricts MCP access to whitelisted clients, excluding Pi",
+      "time": 1790867446,
+      "points": 169,
+      "depth": [
+        {
+          "text": "Figma only lets **supported clients** use its remote server, and **Pi** isn't on the list yet",
+          "tier": "simple"
+        },
+        {
+          "text": "Figma says Pi can be considered for a **future addition** if someone fills out a form. A commenter says the remote server is the only one that gives agents **edit access** to Figma documents.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: critics say allowlists undermine an open ecosystem and make little sense; defenders say they help control data access and reduce phishing risks.",
+      "comment_count": 96,
+      "terms": [
+        "MCP",
+        "allowlist",
+        "OAuth",
+        "harness",
+        "open redirect",
+        "client"
+      ],
+      "entities": [
+        "Figma",
+        "Pi",
+        "MCP"
+      ],
+      "comments": [
+        {
+          "by": "miguel-muniz",
+          "text": "For context: Figma has two MCPs. The local \"dev\" MCP that works through the Desktop app, and the remote MCP that requires a connection to Figma. Companies need to be whitelisted to use the remote MCP, which is the only one that allows agents edit access to Figma documents. I only found out about Figma's limitation when I was trying to add the remote MCP server to GitHub Copilot Desktop and kept…"
+        },
+        {
+          "by": "JimDabell",
+          "text": "OpenCode seems to have been given the run-around as well: > on the figma mcp, we've had an email thread going on for 8 months trying to get it setup in opencode > they seem very concerned with the labs competing with them > finally got unblocked after i sent this email and it'll be rolled out in a week or so The email: > looking through the legal stuff the amount of things in there seems pretty…"
+        },
+        {
+          "by": "ig0r0",
+          "text": "I like how Pi released an updated with a new oauth client name field for mcp where I just wrote Codex and Figma mcp works now."
+        },
+        {
+          "by": "SkyPuncher",
+          "text": "I do security review for my company. I suspect this is a means of containing OAuth redirect vulnerabilities. We basically needed to do the same thing with our MCP server. The security problem is two fold: (1) companies want control over where their data goes. Figma allowing any MCP creates problems (2) open redirects can create phishing issues. If your using Pi, you’re probably thinking of this…"
+        },
+        {
+          "by": "thdr",
+          "text": "https://nitter.meowing.monster/GayaniFigma/status/2105295629..."
+        }
+      ],
+      "image": "https://pbs.twimg.com/card_img/2104075374120652800/TjKz8L6F?format=webp&name=medium"
+    },
+    {
+      "id": 49924179,
+      "url": "https://blog.gitbutler.com/git-3-sha-256",
+      "hn": "https://news.ycombinator.com/item?id=49924179",
+      "title": "Git 3.0's upcoming SHA-256 default will be a costly mistake",
+      "time": 1790873823,
+      "points": 165,
+      "depth": [
+        {
+          "text": "someone argues Git’s planned **hash change** will cause **ecosystem pain** without solving the real trust problem",
+          "tier": "simple"
+        },
+        {
+          "text": "Chacon argues trust mostly comes from **where code is fetched**, not Git’s hash, and proposes adding an **independent content hash** to signed tags or commits. Git 3.0 would make SHA-256 the default for new repositories; converting existing projects would require rehashing objects and **break existing signatures**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters say collision attacks can create real security problems; others say the practical risk is overstated and the migration brings needless churn.",
+      "comment_count": 188,
+      "terms": [
+        "hash",
+        "SHA-1",
+        "SHA-256",
+        "collision attack",
+        "second-preimage attack",
+        "submodule",
+        "signature"
+      ],
+      "entities": [
+        "Git",
+        "SHA-1",
+        "SHA-256",
+        "Scott Chacon",
+        "GitHub",
+        "GitButler",
+        "Linus Torvalds",
+        "Emily Shaffer",
+        "Colin Walters",
+        "Fossil"
+      ],
+      "comments": [
+        {
+          "by": "kpcyrd",
+          "text": "This article is full of mistakes and misleading claims: 1) It's claiming SHA1 insecurity is theoretical, while SHAttered from 2017 was specifically a pratical proof of concept. The only reason Git wasn't affected, is because they didn't bother bruteforcing a git-blob prefix. 2) It's claiming collision attacks don't matter, only second-preimage attacks do. This is incorrect, collision attacks are…"
+        },
+        {
+          "by": "gandreani",
+          "text": "One of my favorite fun facts about Fossil SCM (another source control by the devs of sqlite) is that they patched their use of SHA1 6 days after the shattered attack was published: \"Both Fossil and Git started out using only SHA1 hashes. But when the SHAttered attack against SHA1 was published on 2017-02-23, the need to migrate to a stronger hash algorithm was recognized. Fossil added the ability…"
+        },
+        {
+          "by": "meinersbur",
+          "text": "Linus Torvalds in 2007: > but the point is the SHA-1, as far as Git is concerned, isn't even a security feature. It's purely a consistency check. The security parts are elsewhere, so a lot of people assume that since Git uses SHA-1 and SHA-1 is used for cryptographically secure stuff, they think that, Okay, it's a huge security feature. It has nothing at all to do with security, it's just the…"
+        },
+        {
+          "by": "amluto",
+          "text": "I don't understand why Git is not making the SHA-1 and SHA-256 modes far more compatible with each other. SHA1-hashed objects should be able to refer to SHA-256-hashed objects, although this seems somewhat pointless. But SHA-256-hashed objects should also be able to refer to SHA1-hashed objects, with a major caveat: if those objects themselves are part of a collision pair, then there is a genuine…"
+        },
+        {
+          "by": "purpleidea",
+          "text": "This means, if you migrate your repo, every single commit message that contains text like: \"please see commit <sha1>\" will now be broken. This will be a train wreck. I hope they don't release before adding compatibility modes to keep the existing sha1's around in the database."
+        }
+      ],
+      "image": "https://gitbutler-docs-images-public.s3.us-east-1.amazonaws.com/git-3-sha-256.webp"
+    },
+    {
+      "id": 49919910,
+      "url": "https://news.synopsys.com/2026-09-30-OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design",
+      "hn": "https://news.ycombinator.com/item?id=49919910",
+      "title": "GPT-Synopsys: Frontier Intelligence to Revolutionize Chip Design",
+      "time": 1790850096,
+      "points": 160,
+      "depth": [
+        {
+          "text": "OpenAI and Synopsys are building an **AI model** to run **chip-design tools** and help engineers improve chip designs",
+          "tier": "simple"
+        },
+        {
+          "text": "The **multi-year agreement** combines OpenAI’s frontier models and Synopsys’ EDA tools in **GPT-Synopsys**, which can run the tools, interpret results, make changes, and iterate toward verified outcomes for engineer review. The companies say customer data **won’t be used to train the model** and will be encrypted at rest and in transit.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some commenters worry AI could cost engineers jobs or that chip manufacturing remains the bottleneck; others see room for more niche custom chips if designing them gets faster and cheaper.",
+      "comment_count": 94,
+      "terms": [
+        "EDA",
+        "PPA",
+        "agentic AI",
+        "ASIC"
+      ],
+      "entities": [
+        "OpenAI",
+        "Synopsys",
+        "GPT-Synopsys",
+        "Synopsys.ai",
+        "Synopsys Autopilot",
+        "Ansys",
+        "Sassine Ghazi",
+        "Greg Brockman",
+        "TSMC",
+        "Intel",
+        "Samsung",
+        "AWS",
+        "Apple",
+        "Nvidia",
+        "Cadence",
+        "JLCPCB",
+        "GCC",
+        "PrimeTime",
+        "ICC",
+        "Astra",
+        "Arm"
+      ],
+      "comments": [
+        {
+          "by": "fwlr",
+          "text": "GPT-Synopsys brings together OpenAI frontier models with Synopsys' EDA technology and domain expertise, enabling the specialized model [to] directly operate Synopsys' tools. Engineers will delegate design objectives … with agents running tools, interpreting results, implementing changes, and iterating toward verified outcomes for engineer review.\n“Agents will do all the engineering work…"
+        },
+        {
+          "by": "tails4e",
+          "text": "I see this as worse for junior engineers than senior. Right now junior engineers don't have the experience to spot issues, ans if gpt-synopsys gives an answer they don't know to question it. It Will also be better than many junior engineers out of the box..\nSo junior engineers dont get a chance to learn and progress to senior. Senior engineers (for now) will interact with these agents and review…"
+        },
+        {
+          "by": "karlkloss",
+          "text": "We just buried an ASIC design that was nearly finished.\nReason: There was a deviation that would've needed a mask change, but because of AI chip demand, the manufacturer wanted so much money for it, that we said screw it. So we now have AI powered chip design tools that make chip design cheaper, but because of AI, chip manufacturing has become so expensive, that we can't afford it anymore. Nice."
+        },
+        {
+          "by": "aurareturn",
+          "text": "From an investment perspective, I think chip fabs TSMC, Intel, and Samsung will benefit from better AI chip design tools. If AI made it 100x faster and cheaper to build software, you suddenly have an explosion of software that need to be hosted. So companies like AWS/iOS App Store/cloud companies benefit. If AI makes designing chips 100x faster and cheaper, you will have an explosion of custom…"
+        },
+        {
+          "by": "dimatura",
+          "text": "Only tangentially related but many many years ago, I spent a good chunk of a summer internship at synopsys fixing gcc warnings in one of their products. The codebase was huge, with many parts of it more than a decade old at that point. I learned a lot about obscure corners of C. These days a frontier model could do that job in a few days (or maybe just one day if the build and testing process has…"
+        }
+      ],
+      "image": "https://mmx.prnewswire.com/media/MS1999865/Synopsys-OpenAI.jpg?id=OA2980139&p=twitter"
+    },
+    {
+      "id": 49925969,
+      "url": "https://earendil.com/posts/pi-durable/",
+      "hn": "https://news.ycombinator.com/item?id=49925969",
+      "title": "Pi Durable",
+      "time": 1790882648,
+      "points": 158,
+      "depth": [
+        {
+          "text": "Pi's **durable agent harness** is meant to run agents unattended and make **recovery** easier",
+          "tier": "simple"
+        },
+        {
+          "text": "Commenters say it makes **long-running agents** easier to run unattended and recover; splitting the harness from compute brings **safety and scaling benefits** and makes multi-player setups easier. One commenter says much of the durability comes from saving **JSON documents locally** and keeping less context in memory.",
+          "tier": "substance",
+          "data": [
+            [
+              "source code, without tests",
+              "about 15,000 lines"
+            ],
+            [
+              "GPT token count",
+              "about 150,000 tokens"
+            ],
+            [
+              "Claude token count",
+              "about 250,000"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 16,
+      "terms": [
+        "agent harness",
+        "durable",
+        "JSONL",
+        "SQLite",
+        "sandboxing",
+        "outbox pattern",
+        "multi-player",
+        "Kubernetes"
+      ],
+      "entities": [
+        "Pi",
+        "LangChain",
+        "Deep Agents",
+        "Vercel",
+        "Eve",
+        "OpenAI",
+        "Agents API",
+        "Anthropic",
+        "Managed Agents",
+        "Lightspeed",
+        "Agent OS",
+        "Smartcomputer AI",
+        "NVIDIA",
+        "OpenShell",
+        "Slack",
+        "Codex",
+        "Kubernetes",
+        "DBOS",
+        "SQLite",
+        "GPT",
+        "Claude"
+      ],
+      "comments": [
+        {
+          "by": "lukebuehler",
+          "text": "Very cool to see Pi build a durable agent harness too. I've been building in this space for quite some time myself [0][1] and it is a super interesting place of innovation. Less hype-y that on-your-machine coding agents, but all major players are building products in this space: LangChain Deep Agents, Vercel Eve, OpenAI Agents API, Anthropic Managed Agents, etc. The main reasons are: 1) they are…"
+        },
+        {
+          "by": "ireadmevs",
+          "text": "> The entire source code, without tests, is about 15,000 lines, which comes out to about 150,000 tokens with GPT and about 250,000 with Claude. Woah, that big of a difference when it comes to token counting?"
+        },
+        {
+          "by": "phainopepla2",
+          "text": "What are people using these infinitely-running agents for?"
+        },
+        {
+          "by": "skeledrew",
+          "text": "I like the multi-user bit the most. Should make it easier to build my remote control tool, as something I've had to hack around is not being able to use ACP while the TUI is active in an instance."
+        },
+        {
+          "by": "rsalus",
+          "text": "super interesting. I have so many half-considered questions... like sandboxing (it seems like it is BYO). would love to have some kind of policy engine.. perhaps an integration with https://github.com/NVIDIA/openshell in the form of an extension? also, I see most of the durability promise comes from persisting JSON documents locally and minimizing the amount of context/data kept in-memory, even…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49895864,
+      "url": "https://hereticpleb.vercel.app/blog/needed-one-plus-one/",
+      "hn": "https://news.ycombinator.com/item?id=49895864",
+      "title": "Needed 1+1, built a functional programming language",
+      "time": 1790698706,
+      "points": 150,
+      "depth": [
+        {
+          "text": "someone started with **1+1** and ended up building a **functional language** with closures and garbage collection",
+          "tier": "simple"
+        },
+        {
+          "text": "The author added **closures** and **garbage collection**, bringing fib(40)'s memory from **12 gigabytes to 1.7 megabytes**; it still took 6 minutes.",
+          "tier": "substance",
+          "data": [
+            [
+              "fib(40) RAM before GC",
+              "12 GIGABYTES"
+            ],
+            [
+              "fib(40) RAM with GC",
+              "1.7 MEGABYTES"
+            ],
+            [
+              "fib(40) runtime",
+              "6 MINUTES"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 75,
+      "terms": [
+        "closure",
+        "garbage collector",
+        "chunk allocator",
+        "mark-and-sweep",
+        "graph reduction",
+        "AST",
+        "REPL",
+        "FFI"
+      ],
+      "entities": [
+        "C",
+        "graphLang",
+        "Google",
+        "GitHub",
+        "LinkedIn",
+        "Twitter",
+        "Common Lisp",
+        "Perl",
+        "BLC",
+        "BLC2",
+        "Excel",
+        "JavaScript",
+        "mimalloc",
+        "tcmalloc",
+        "Cheney",
+        "Kiselyov"
+      ],
+      "comments": [
+        {
+          "by": "CodesInChaos",
+          "text": "Greenspun's tenth rule of programming: > Any sufficiently complicated C or Fortran program contains an ad hoc, informally-specified, bug-ridden, slow implementation of half of Common Lisp."
+        },
+        {
+          "by": "gnarlouse",
+          "text": "This reminds me of decades ago when ...wait, I was still writing code like three years ago."
+        },
+        {
+          "by": "tromp",
+          "text": "> Overall, I built a Graph Reduction engine I did the same for my performant implementation of pure functional programming language BLC/BLC2,\nwhich in 400+ lines contains a graph reduction engine for combinatory logic, to which the lambda calculus programs are converted by Kiselyov's bracket abstraction algorithm. [1] https://github.com/tromp/AIT/blob/master/uni.c"
+        },
+        {
+          "by": "ancientstraits",
+          "text": "The \"how to implement a hash table\" article https://benhoyt.com/writings/hash-table-in-c/ was really helpful for me. I thought that hash tables were something that were basically impossible to make in C, but this showed that it was simpler."
+        },
+        {
+          "by": "andai",
+          "text": "I don't have it handy but in uni I was responsible for the Excel formula parser in a group project. I agonized over it for like six days until it suddenly clicked that I could just do a bunch of string matching, and rewrite the formula over and over again until it was a number. More precisely, I had figured out how to parse an Excel formula (keeping track of braces and commas, I recall!). For the…"
+        }
+      ],
+      "image": "https://hereticpleb.vercel.app/og-image.jpg"
+    },
+    {
       "id": 49917761,
       "url": "https://twitter.com/0xcrypto/status/2105515822643114182",
       "hn": "https://news.ycombinator.com/item?id=49917761",
@@ -1478,6 +2659,99 @@
     }
   ],
   "glossary": {
+    "MCP": "Model Context Protocol: a standard way for AI apps to connect to outside tools.",
+    "coding agent": "An AI tool that can help write or change code, often by using other tools.",
+    "local model": "An AI model that runs on your own computer instead of someone else’s servers.",
+    "Pi SDK": "Software Development Kit: a bundle of tools developers use to build software that works with Pi.",
+    "harness": "The surrounding code that gives an AI agent tools and a place to work, and checks what it does.",
+    "vendor-agnostic": "Not tied to one company’s tools or products.",
+    "TUI": "Terminal User Interface: the menus and controls an app shows inside a text terminal.",
+    "JSONL": "JSON Lines: a file format that stores one item on each line so a program can read them separately.",
+    "Kubernetes": "A system for running and managing software containers across computers.",
+    "decision model": "A program that weighs possible choices and predicts or selects one.",
+    "fine-tuning": "Training an already-built model a bit more on examples for a particular job.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "open weights": "The model's learned settings are available for people to download and run themselves.",
+    "typed outputs": "Answers returned in a fixed format, so software can read their fields without guessing.",
+    "support lifecycle": "The stretch of time a maker says it will keep a device updated.",
+    "migration path": "A way to move a device or its software over to something new.",
+    "firmware": "The built-in software that tells a device's hardware how to work.",
+    "bootloader": "A small program that starts a computer and loads its main software.",
+    "DRAM": "Dynamic Random-Access Memory: the working memory a computer uses while running things.",
+    "NAND": "A kind of storage that keeps files even when a device is off.",
+    "HBM": "High-bandwidth memory: fast memory placed close to a processor so it can get lots of information quickly.",
+    "fab": "A factory where chips are made.",
+    "wafer": "A thin round slice of material that computer chips are made from.",
+    "hyperscalers": "Very large companies that run huge data centres and rent computing power to other businesses.",
+    "CapEx": "Capital expenditures: money a company spends on long-lasting things it needs, like buildings and equipment.",
+    "vector": "A group of values a computer can work on together.",
+    "ANN": "Approximate nearest neighbor: a way to find items with similar number-based representations without checking every item.",
+    "primary index": "The main way a database organizes and finds its stored records.",
+    "secondary index": "An extra lookup list that helps find records by something other than their main identifier.",
+    "write amplification": "When one small change forces the system to rewrite much more data than the change itself.",
+    "inverted index": "A lookup list that connects a word or value to the records where it appears.",
+    "BM25": "Best Matching 25: a common search formula that ranks pages by how well their words match a query, while accounting for page length.",
+    "vectorized": "Processing many values together in chunks instead of handling them one at a time.",
+    "SIMD": "Single Instruction, Multiple Data: a way to apply one operation to several values at once.",
+    "SQL": "A language people use to ask a database for information.",
+    "R&D tax credit": "Research and Development tax credit: A tax break for certain spending on trying to create or improve things.",
+    "tax avoidance": "Using tax rules to legally reduce how much tax you owe; unlike tax evasion, it is not illegal.",
+    "tax evasion": "Illegally breaking tax rules to pay less tax.",
+    "inactivity reboot": "A feature that restarts a phone after it has gone a set amount of time without being unlocked.",
+    "GrayKey": "A phone-unlocking tool sold to law enforcement agencies.",
+    "AFU": "After First Unlock: the state a phone reaches after it has been unlocked since starting up, when more data is available to tools.",
+    "digital forensics": "Tools and techniques used to recover and examine information from phones and other devices.",
+    "compiler": "A tool that turns code you write into a program a computer can run.",
+    "borrow checker": "The Rust tool that checks code won’t use a value after it’s gone or let it be changed unsafely.",
+    "crate": "A reusable package of Rust code that you can add to a project.",
+    "PGO": "Profile-Guided Optimization: the compiler uses information about how a program runs to produce a faster-running program.",
+    "LLVM": "A set of tools that helps turn source code into instructions a computer can run.",
+    "trait solver": "The part of Rust that checks whether code has the behavior it needs available.",
+    "wall-time": "The real time from when a task starts until it finishes.",
+    "CFG": "Control-flow graph: a map of the different paths a program can take while running.",
+    "FTC": "Federal Trade Commission: a US agency that investigates businesses and enforces rules meant to protect consumers.",
+    "nonbinding accord": "An agreement that companies can sign without being legally required to follow it.",
+    "serverless": "A way to run software without managing the machines it runs on; the provider handles that work.",
+    "event stream": "An ordered record of events that different programs can read as they need.",
+    "object storage": "A way to store whole files or data objects in a service instead of on a computer's local disk.",
+    "RPC": "Remote Procedure Call: a way for one program to ask another program to do something directly.",
+    "fan-out": "Sending the same messages to several separate readers.",
+    "99th percentile": "A measure where 99 out of 100 results are at or below that point.",
+    "ack": "A signal that tells K2 a batch was processed and should not be sent again.",
+    "brain drain": "The loss of experienced people when they leave a company or field.",
+    "vendor lock-in": "When relying on a company’s tools makes it difficult to move to another company’s tools.",
+    "K8s": "Kubernetes, a tool for running apps across many computers.",
+    "VMs": "Virtual machines: software-made computers that run inside a physical computer.",
+    "PIP": "Performance Improvement Plan: a formal plan that spells out what an employee must improve at work and by when.",
+    "allowlist": "A list of apps or people that are allowed to connect.",
+    "OAuth": "A way to let an app access parts of an account without being given the password.",
+    "open redirect": "A flaw that lets a link send someone to a different, possibly harmful website.",
+    "client": "A program that connects to a service, like Figma.",
+    "hash": "A label calculated from data that Git uses to locate stored content.",
+    "SHA-1": "A hashing method Git has used to identify stored content.",
+    "SHA-256": "Secure Hash Algorithm 256: a way to turn data into a fixed-length fingerprint that can help check whether it has changed.",
+    "collision attack": "Making two different pieces of content produce the same hash, so one may be mistaken for the other.",
+    "second-preimage attack": "Creating a different piece of content that matches the hash of a specific existing piece.",
+    "submodule": "A Git project included inside another Git project.",
+    "signature": "A mark made with a key that lets others check who signed a commit or tag.",
+    "EDA": "Electronic design automation: software engineers use to design and test chips.",
+    "PPA": "Power, performance and area: three things chip designers try to balance when improving a design.",
+    "agentic AI": "AI that can take steps toward a task instead of only answering a question.",
+    "ASIC": "Application-specific integrated circuit: a chip built for a particular job.",
+    "agent harness": "The surrounding software that runs an AI agent and helps manage its work.",
+    "durable": "Able to keep work going over time and recover after an interruption.",
+    "SQLite": "A small database that can be stored in a single file.",
+    "sandboxing": "Restricting what a program can access so it cannot freely affect the rest of the system.",
+    "outbox pattern": "A way to save a task to send elsewhere alongside the app's own saved data.",
+    "multi-player": "A setup where several people can use or work with the same app or agent.",
+    "closure": "A function stored with its code so it can be passed around and run later.",
+    "garbage collector": "A part of a program that finds memory it no longer needs so that space can be reused.",
+    "chunk allocator": "A way to give a program space in linked blocks, so adding another block won't move what's already there.",
+    "mark-and-sweep": "A cleanup method that marks the pieces still in use, then reuses the pieces that were not marked.",
+    "graph reduction": "A way to run code by repeatedly simplifying connected pieces of the program.",
+    "AST": "Abstract Syntax Tree: a tree-shaped version of a program that a computer can inspect and work through.",
+    "REPL": "Read-Eval-Print Loop: a prompt where you enter a command and see the result right away.",
+    "FFI": "Foreign Function Interface: a way for code in one language to call code written in another.",
     "APK": "The file you download to install an Android app.",
     "sideloading": "Installing an app from somewhere other than the device's usual app store.",
     "F-Droid": "A place to download Android apps that are free to use and share.",
@@ -1511,7 +2785,6 @@
     "shell": "The text-based place where you type commands to control your computer.",
     "SSH": "Secure Shell: a way to connect to another computer and send it commands over a network.",
     "WSL": "Windows Subsystem for Linux: a way to use Linux tools on Windows.",
-    "SQL": "A language people use to ask a database for information.",
     "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
     "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
     "texture atlas": "One image that holds lots of small pictures, such as letters, for a program to reuse.",
@@ -1575,13 +2848,11 @@
     "synapse": "A connection point where one brain cell passes a message to another.",
     "astrocyte": "A brain cell that surrounds synapses and can connect with many of them.",
     "computer vision": "Software that examines pictures or video to spot and identify what's shown.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "YOLOv8": "A tool that finds and marks things in pictures.",
     "dataset": "A collection of examples used to teach a computer program what to recognize.",
     "annotate": "To mark examples with labels so a program can learn what to look for.",
     "vibe coding": "Making software by telling an AI what you want and letting it write the code, often without closely checking how it works.",
     "LARPmaxxing": "Putting on an impressive professional act, whether or not the work behind it is substantial.",
-    "CapEx": "Capital expenditures: money a company spends on long-lasting things it needs, like buildings and equipment.",
     "credit line": "An agreement that lets a company borrow up to a set amount when it needs the money.",
     "cash flow negative": "When more cash goes out of a business than comes in over a period.",
     "MicroVM": "A small virtual computer that runs a program separately from other programs.",
