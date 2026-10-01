@@ -1,0 +1,700 @@
+{
+  "date": "2026-10-01",
+  "cards": [
+    {
+      "id": 49906432,
+      "url": "https://twitter.com/tuakdotsol/status/2105105417760391258",
+      "hn": "https://news.ycombinator.com/item?id=49906432",
+      "title": "Singapore govt dating app uses Gale-Shapley stable marriage algorithm",
+      "time": 1790760424,
+      "points": 323,
+      "depth": [
+        {
+          "text": "Singapore's government has a **dating app** that uses an **algorithm** to pair people",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: supporters say the government has a reason to keep couples together; critics say profile preferences can't predict lasting compatibility.",
+      "comment_count": 266,
+      "terms": [
+        "Gale-Shapley algorithm"
+      ],
+      "entities": [
+        "Gale-Shapley",
+        "Tinder",
+        "Hinge",
+        "Aphrodite",
+        "Go",
+        "Lee Kuan Yew"
+      ],
+      "comments": [
+        {
+          "by": "purplepatrick",
+          "text": "Cute. Of course, beyond basic deal breakers, neither do people know their preferences (but they think they do), nor do the majority of preference categories actually matter. This is a common problem with all dating apps. Specifically, interests, hobbies, daily routines, objectives, etc. have nothing to do with compatibility. “We like the same things!” is the compatibility signal of a naive 22-yr…"
+        },
+        {
+          "by": "Peteragain",
+          "text": "A cute example of the idea that the state provides basic services, and individuals/companies are free to make money out of doing it better. Water, Comms, transport & housing anyone?"
+        },
+        {
+          "by": "jaredsia",
+          "text": "It's funny how the govt in Singapore tries to control and subtly orchestrate everything. from (i) mandating the racial quotas across Chinese, Malay, Indian, in each block of public housing; to (ii) only providing huge housing subsidies to couples while discriminating the singles, to (iii) giving out S$70k in baby bonuses (from birth to 17), and (iv) banning vaping while convincing citizens its…"
+        },
+        {
+          "by": "janalsncm",
+          "text": "In principle this can be a lot better than regular dating apps. Tinder doesn’t know if they were successful or not. They just know you stopped opening the app. In fact they are incentivized not to make matches that lead to marriage, because then you will stop paying. The government knows whether you got married and stayed married, and given the social cost of divorce, they are pretty incentivized…"
+        },
+        {
+          "by": "abeppu",
+          "text": "So on the one hand it's nice to see when a cool algorithm or framework is used IRL. On the other hand, actually applying a 'stable marriage algorithm' to people makes a bunch of assumptions which are worth interrogating: - Do people actually know what they want even in the short term? - Do people's preference change meaningfully over longer periods of time? - Does your preference _upon reading…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49913192,
+      "url": "https://edgcpp.org/#transition",
+      "hn": "https://news.ycombinator.com/item?id=49913192",
+      "title": "EDG C++ front-end goes public",
+      "time": 1790796397,
+      "points": 200,
+      "depth": [
+        {
+          "text": "EDG's **C++ front end** is now public, with a **strong reputation for getting things right**",
+          "tier": "simple"
+        },
+        {
+          "text": "The source code is linked on GitHub. One commenter says the front end can **emulate other compilers**, including different versions and the errors they might detect; another says EDG is **winding down**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some call it big news and praise EDG's reputation for correctness; others say Clang is everywhere and EDG may be irrelevant now.",
+      "comment_count": 89,
+      "terms": [
+        "C++ front end",
+        "emulate",
+        "static analysis",
+        "source-to-source compilation",
+        "open source"
+      ],
+      "entities": [
+        "EDG",
+        "C++",
+        "GitHub",
+        "Visual C++",
+        "Intellisense",
+        "Clang",
+        "MSVC",
+        "GCC"
+      ],
+      "comments": [
+        {
+          "by": "jabl",
+          "text": "What's not mentioned in the announcement (at least based on a quick skim) is that EDG the company is winding down, which is likely the reason why they're open sourcing the front end. https://en.wikipedia.org/wiki/Edison_Design_Group ref 9: https://herbsutter.com/2025/11/10/trip-report-november-2025-..."
+        },
+        {
+          "by": "vintagedave",
+          "text": "Wow. This is big news for C++. For background -- and I am not an expert here -- their C++ frontend is widely known. I first heard of it because Visual C++'s Intellisense uses it, which was notable because VC does not use the msvc frontend for its own completion. I understand it's been either used or evaluated for other frontends in the past too. I worked as PM for one C++ product, and was…"
+        },
+        {
+          "by": "trebligdivad",
+          "text": "It's got history! That's really unusual for moves to open-source; the dates on the earliest commits are in 1990 and they do go forward in time so that's really unusual to have that much history. I bet there's some fun stuff in there."
+        },
+        {
+          "by": "OneDeuxTriSeiGo",
+          "text": "Announcement: https://edgcpp.org/#transition The source code itself: https://github.com/edgcpp/compiler Documentation: https://edgcpp.org/doc/ And for those curious the license SPDX is: Apache-2.0 WITH LLVM-exception i.e. - https://spdx.org/licenses/Apache-2.0.html - https://spdx.org/licenses/LLVM-exception.html"
+        },
+        {
+          "by": "kccqzy",
+          "text": "If I remember correctly, EDG was the only C++ implementation that actually attempted to implement the export keyword for templates in old C++. It was this implementation experience that informed the deprecation of export. EDG is a major influence in the development of C++."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49915082,
+      "url": "https://www.thespacereview.com/article/4951/1",
+      "hn": "https://news.ycombinator.com/item?id=49915082",
+      "title": "The top secret URSALA, RAQUEL, and FARRAH satellites (2025)",
+      "time": 1790805784,
+      "points": 191,
+      "depth": [
+        {
+          "text": "newly declassified **spy satellites** went from collecting signals to helping **troops in the field**",
+          "tier": "simple"
+        },
+        {
+          "text": "The small **“hitchhikers”** rode beside larger satellites, gathering radar and other signals. URSALA, RAQUEL, and FARRAH marked a shift toward sending intelligence to **tactical forces**, with mobile ground vans helping process it.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 84,
+      "terms": [
+        "ELINT",
+        "SIGINT",
+        "TENCAP",
+        "subsatellite",
+        "geolocation"
+      ],
+      "entities": [
+        "URSALA",
+        "RAQUEL",
+        "FARRAH",
+        "HEXAGON",
+        "Program 989",
+        "NRO",
+        "TENCAP",
+        "RTIP",
+        "Lockheed Missiles and Space Company",
+        "Army",
+        "Navy",
+        "Air Force"
+      ],
+      "comments": [
+        {
+          "by": "Almondsetat",
+          "text": "The incredible and futuristic technologies the US managed to deploy decades before the competition reminds me of the story of how the NRO gifted NASA a couple of their old decommissioned satellites in 2012 and they turned out to be basically upgraded Hubble telescopes pointed at earth. The US from the 90s to the 2000s had multiple Hubble-level telescopes just for spying while NASA was fighting…"
+        },
+        {
+          "by": "generuso",
+          "text": "A while ago, NRO put on-line a bunch of declassified documents [1], including their internal books about the history of satellite reconnaissance. But it was all in one unsorted pile, often scans of barely legible pages. I think this was the original source of some of the documents shown in this article. Although one could randomly stumble on some interesting anecdote here and there in the NRO…"
+        },
+        {
+          "by": "dbdoug",
+          "text": "I’m not going to be alive in 40 years, but I would like to have known what classified information will be released in 2066 dealing with satellites in orbit now?"
+        },
+        {
+          "by": "Jtsummers",
+          "text": "Related submission: https://news.ycombinator.com/item?id=49914880 - \"A Cold War Spy Satellite Named After Farrah Fawcett Just Blew Apart in Orbit\""
+        },
+        {
+          "by": "anonymousiam",
+          "text": "Relevance of this information: https://www.dailymail.com/sciencetech/article-16172545/us-sp..."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49909056,
+      "url": "https://buttondown.com/hillelwayne/archive/what-tla-can-and-cant-check/",
+      "hn": "https://news.ycombinator.com/item?id=49909056",
+      "title": "What TLA+ can and can't check",
+      "time": 1790776626,
+      "points": 176,
+      "depth": [
+        {
+          "text": "an explainer says **formal checks** catch many bugs, but can't prove **every useful property**",
+          "tier": "simple"
+        },
+        {
+          "text": "TLA+ requires checked properties to hold for **every behavior**, so it can't directly ask whether a state is **reachable** or compare two behaviors—a limit for **security and statistical properties**. You can mimic some of this with auxiliary variables or self-composition, but those hacks can make models messy or much larger.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: the article says TLA+ can't express reachability directly; one commenter says a failed invariant can indirectly show that a winning state is reachable.",
+      "comment_count": 36,
+      "terms": [
+        "TLA+",
+        "invariant",
+        "liveness",
+        "reachability",
+        "hyperproperty",
+        "self-composition",
+        "auxiliary variables"
+      ],
+      "entities": [
+        "TLA+",
+        "Boris Cherny",
+        "Claude Code",
+        "Opus",
+        "TLC",
+        "TLCGet",
+        "CTL",
+        "PRISM",
+        "Andrew Helwer",
+        "PlusCal",
+        "ADA/SPARK",
+        "Quint",
+        "JavaScript",
+        "C",
+        "C++",
+        "Rust",
+        "Miri",
+        "Loom",
+        "LaTeX",
+        "Typst",
+        "Buttondown"
+      ],
+      "comments": [
+        {
+          "by": "spaintech",
+          "text": "While both TLA+ and ADA/Spark might be necessary, I haven’t noticed much mention of ADA/SPARK here, which kind of surprised me that they are not used in conjunction as frequent as I might have thought. For some critical software we developed, we used TLA+ for high-level formal specification. As mentioned earlier, transitioning the actual implementation to another language can be challenging…"
+        },
+        {
+          "by": "sourdecor",
+          "text": "I discovered Quint[0] due to this comment[1] on HN. Quint is \"an executable specification language [which works in JavaScript] with delightful tooling based on the temporal logic of actions (TLA)\". I think it is awesome and anybody interested in TLA+ should check it out. [0]: https://github.com/quint-co/quint [1]: https://news.ycombinator.com/item?id=49865720"
+        },
+        {
+          "by": "singron",
+          "text": "I love this. This is great to read if you are trying to use TLA+ for something. In a different vein, another thing TLA+ isn't great at is modeling atomics and in particular weak-memory semantics or anything that's not sequentially consistent. If you translate your algorithm to pcal, it will run as if it was sequentially consistent. If you need to model non-sequential-consistency, then that needs…"
+        },
+        {
+          "by": "adamddev1",
+          "text": "Great write-up. People keep saying \"we can just write tests\" or more recently \"we can use formal verification,\" thinking these are sufficient safeguards we can use and then relegate all the implementation to LLMs. But the fact is that probabilistic guessing machines can't save them. People can't escape the need to actually understand the things they are building."
+        },
+        {
+          "by": "rrook",
+          "text": "i think part of this is a shortcoming of our programming languages. generally, languages allow for the expression of partial graphs, which makes the verification problem technically challenging. my take is that a language that only exposes closed-graph semantics could help bridge the gap between the model and the implementation, even if not absolute."
+        }
+      ],
+      "image": "https://image-generator.buttondown.email/api/emphasize-subject?subject=What%20TLA%2B%20can%20and%20can%27t%20check&author=Computer%20Things&date=2026-09-30&img="
+    },
+    {
+      "id": 49890732,
+      "url": "https://www.worksinprogress.news/p/why-really-caused-the-bronze-age",
+      "hn": "https://news.ycombinator.com/item?id=49890732",
+      "title": "Why the Bronze Age Collapsed",
+      "time": 1790676618,
+      "points": 170,
+      "depth": [
+        {
+          "text": "the article says **local iron** put weapons in more hands and made **empires harder to rebuild**",
+          "tier": "simple"
+        },
+        {
+          "text": "Bronze depended on **tin from distant deposits**; iron could be **smelted locally**, giving peripheral communities weapons comparable to imperial elites. The article also cites records showing average reign lengths in Assyria, Babylon and Athens fell 29 percent after iron’s adoption.",
+          "tier": "substance",
+          "data": [
+            [
+              "average reign length change",
+              "29 percent"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: the article says local iron made empires harder to rebuild; some commenters say bronze-trade disruption came first, while others argue several causes mattered.",
+      "comment_count": 85,
+      "terms": [
+        "bloomery",
+        "smelting",
+        "palace economy",
+        "Sea Peoples",
+        "democratized violence"
+      ],
+      "entities": [
+        "Patrick Fitzsimmons",
+        "Ramesses II",
+        "Eric Cline",
+        "Hesiod",
+        "Herodotus",
+        "Lucretius",
+        "Ovid",
+        "Works in Progress",
+        "University of Pennsylvania",
+        "The Wise-Woman's Dog",
+        "Lienzo de Tlaxcala"
+      ],
+      "comments": [
+        {
+          "by": "cobbzilla",
+          "text": "Eric Cline makes a good case that the Bronze Age empires were organized around a “palace economy”, where only certain people (royals & their pals) were even allowed to trade. In some places the sovereign literally owned all the land and people on it. One can imagine that a series of bad seasons, natural disasters, invasions & other stressors would open a window for revolt. Yes tin was a factor…"
+        },
+        {
+          "by": "austin-cheney",
+          "text": "The Bronze Age collapsed for many reasons but the event that really kicked things off was the explosion of Santorini. The empires that died were not quickly replaced because after extensive famines and invasions they were replaced by different people with different social objectives. The same thing happened later in Europe when Germanic and Asian tribes displaced the Roman and Celtic tribes of…"
+        },
+        {
+          "by": "randomImmigrant",
+          "text": "Well, doesn’t the Harappan civilization make a mess out of all this? Tin was nearby, and there’s evidence of bronze artifacts in all kinds of houses across the cities, and in general less evidence of hierarchical power, and certainly nothing like the concentration you see in other Bronze Age civilizations. We don’t have the civilization surviving as is to the Iron Age, because it depopulated…"
+        },
+        {
+          "by": "kqr",
+          "text": "Most of what I know about life in the bronze age comes from The Wise-Woman's Dog[1], a slightly fantastical game that leans into what life was like for regular people at the time. It's made by someone who researches that sort of thing for a living, and is full of interesting footnotes too. It's a fun experience and a useful way to make a place and a time really feel alive. (Not strictly on topic…"
+        },
+        {
+          "by": "zkmon",
+          "text": "The cycles of centralized control and distributed control. Centralization creates an emergence of a mighty creature that feeds on its subjects. Distributed control kills that creature and restores natural randomness. Software, e-commerce, supply chains and payment rails created some of these centralized mighty creatures. AI might start an Iron age for some of these bronze monsters, causing their…"
+        }
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!Uazu!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F706f94b0-b620-4a80-8d84-e5c0c08fcc1b_2560x1707.webp"
+    },
+    {
+      "id": 49912955,
+      "url": "https://www.quantamagazine.org/surprisingly-complex-waves-reveal-the-brains-inner-workings-20260930/",
+      "hn": "https://news.ycombinator.com/item?id=49912955",
+      "title": "Surprisingly complex waves reveal the brain's inner workings",
+      "time": 1790795090,
+      "points": 164,
+      "depth": [
+        {
+          "text": "scientists found **brain waves** can form **spirals and ripples** during memory tasks, not just simple patterns",
+          "tier": "simple"
+        },
+        {
+          "text": "Using **intracranial electrodes**, researchers saw concentric waves and rotating spirals during memory tasks; spirals appeared more often during the harder **spatial task**. Scientists still disagree about whether these patterns help organize brain activity or simply reflect what neurons are already doing.",
+          "tier": "substance",
+          "data": [
+            [
+              "electrodes placed",
+              "roughly 100"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some researchers think traveling waves help coordinate or reorganize brain activity; György Buzsáki says they merely reflect activity happening at the synaptic level.",
+      "comment_count": 53,
+      "terms": [
+        "cortex",
+        "intracranial electrodes",
+        "concentric wave",
+        "spiral wave",
+        "EEG",
+        "synapse",
+        "astrocyte"
+      ],
+      "entities": [
+        "Quanta Magazine",
+        "Simons Foundation",
+        "Earl K. Miller",
+        "Massachusetts Institute of Technology",
+        "Joshua Jacobs",
+        "Anup Das",
+        "University of Chicago",
+        "Uma Mohan",
+        "National Institutes of Health",
+        "Nature Communications",
+        "Nature Human Behavior",
+        "Bard Ermentrout",
+        "University of Pittsburgh",
+        "Zhiwen Ye",
+        "Shenzhen Medical Academy of Research and Translation",
+        "Nicholas Steinmetz",
+        "University of Washington",
+        "Science",
+        "Lyle Muller",
+        "University of Texas at Dallas",
+        "John Reynolds",
+        "Salk Institute for Biological Studies",
+        "Neuron",
+        "György Buzsáki",
+        "New York University"
+      ],
+      "comments": [
+        {
+          "by": "randomImmigrant",
+          "text": "For context, the debate in the field has been whether these are epiphenomena of the actual neuronal activity, or a meaningful driver of further activity. I don’t think these studies quite rest the case. As Buzsaki comments in the article, the action is in the cells to create these waves. Do the waves themselves get measured and impact what happens next? The issue at hand is: synaptic currents are…"
+        },
+        {
+          "by": "ghm2180",
+          "text": "> If you’re paying attention to what you are looking at, signals are traveling backward from receptors in your eyes to the visual cortex, and then forward into the rest of the brain via the wave to form a memory. has someone used muse2 to measure there brain waves are indeed some how different on days/hours when tehy are focused? Let me explain. I have ADHD, I am on medication. I read an…"
+        },
+        {
+          "by": "paimapi",
+          "text": "Bit of a sensationalist title - EEG/iEEG measurements have led to worthwhile clinical outcomes but also are an avenue for bunk pseudosccience so it pays to be careful whenever you see the words 'brain waves' paired with some large claim. More accurate, much less sexy title: Intracranial Recordings Uncover Spiral and Concentric Brain Waves During Memory Tasks\" (study completed only on small…"
+        },
+        {
+          "by": "rdtsc",
+          "text": "> Surprisingly Complex Waves Reveal the Brain's Inner Workings From my ignorant point of view I can't quite make sense of the title. Brain is probably the last organ one would be surprised to find complexity in. I can see \"surprisingly complex wave reveal spleen inner workings\" being a good title, like \"wow, we though it was a dumb blood filter, but look what we found!\" kind of a thing. But for…"
+        },
+        {
+          "by": "breckinloggins",
+          "text": "My hypothesis: Sentience / consciousness is “hosted by” or “seated in” structured EM fields. Neurons are just the mechanism. I’ve not yet thought of a way to falsify this hypothesis, but I continue to think there’s something to this framing. One reason I like it is that it doesn’t completely succumb to total dualism. Also it doesn’t say WHY this would be the case, or HOW. It just says “that thing…"
+        }
+      ],
+      "image": "https://www.quantamagazine.org/wp-content/uploads/2026/09/Thought-Geometry-cr.Mark-Belan-Social.jpg"
+    },
+    {
+      "id": 49904314,
+      "url": "https://hereticpleb.vercel.app/blog/linkedin-larpmaxxing/",
+      "hn": "https://news.ycombinator.com/item?id=49904314",
+      "title": "LinkedIn Larpmaxxing",
+      "time": 1790741997,
+      "points": 159,
+      "depth": [
+        {
+          "text": "someone built a **detector** for LinkedIn's repetitive computer-vision projects, then says the platform rewards **looking impressive** over skill",
+          "tier": "simple"
+        },
+        {
+          "text": "The writer collected **200 images** from their feed, drew boxes around things to detect, and trained a detector; the whole build took **an hour and a half**. They argue LinkedIn **rewards looking interesting over skill**, and people stay quiet because their comments show up on their profiles.",
+          "tier": "substance",
+          "data": [
+            [
+              "images collected",
+              "200"
+            ],
+            [
+              "annotation time",
+              "about 20 minutes"
+            ],
+            [
+              "training time",
+              "30 mins"
+            ],
+            [
+              "total build time",
+              "an hour and a half"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: critics say LinkedIn rewards performative nonsense; others say posting strategically can help with promotions, while another commenter says your feed may reflect what you engage with.",
+      "comment_count": 159,
+      "terms": [
+        "computer vision",
+        "LLM",
+        "YOLOv8",
+        "dataset",
+        "annotate",
+        "vibe coding",
+        "LARPmaxxing"
+      ],
+      "entities": [
+        "LinkedIn",
+        "Roboflow",
+        "YOLO",
+        "Python",
+        "GitHub",
+        "Twitter",
+        "Ruby on Rails",
+        "Google",
+        "Facebook",
+        "Microsoft",
+        "Kafka",
+        "Instagram",
+        "X"
+      ],
+      "comments": [
+        {
+          "by": "rietta",
+          "text": "Slightly off topic. I've had exactly one consulting engagement come from LinkedIn, back in 2013. Someone met with a VC, was told they needed a Ruby on Rails developer, found me, and it was off to the races. That was it. No lead since, in any format. I paid for Premium for a while and eventually stopped. I have connections, and friends occasionally like a comment when I share something. I'm…"
+        },
+        {
+          "by": "kleiba2",
+          "text": "I don't have a LinkedIn account and don't really care about it. The one thing, however, that bothers me to no end is all the many, many times when a LinkedIn page comes up near the top of the results to a Google query, then I click on it, and chances are I don't get to the actual information, but to the LinkedIn log-in page. Not that I think that this is LinkedIn's fault, but I assume Google's…"
+        },
+        {
+          "by": "MisterMunchkin",
+          "text": "You guys are playing it wrong. You don’t larpmax in general, you do it to hit specific targets. The person who decides my promotions follows me on LinkedIn. I never really see her except at the Christmas party etc, so the only way to influence her directly is through getting in her feed. If she regularly sees how great I am, that establishes the thought in her mind, so when she is then asked to…"
+        },
+        {
+          "by": "quasarj",
+          "text": "Surely LinkedIn is just doing a \"front page algorithm\" and these are the posts he interacts with most? I've literally never seen a single one haha"
+        },
+        {
+          "by": "d2kx",
+          "text": "My wife got into a car accident. On a sunday. I didn't go to the hospital. I had a client, and a project. Ready to go. On a sunday. You don't give up when life challenges you, you move faster. Keep building [ROCKET EMOJI]"
+        }
+      ],
+      "image": "https://hereticpleb.vercel.app/og-image.jpg"
+    },
+    {
+      "id": 49904408,
+      "url": "https://electrek.co/2026/09/29/tesla-takes-on-30-billion-in-credit-as-it-approaches-unprofitability/",
+      "hn": "https://news.ycombinator.com/item?id=49904408",
+      "title": "Tesla takes on $30B in credit as it approaches unprofitability",
+      "time": 1790743057,
+      "points": 153,
+      "depth": [
+        {
+          "text": "Tesla has opened **credit lines** as **profits fall** and spending on future projects rises",
+          "tier": "simple"
+        },
+        {
+          "text": "A filing shows **$30 billion** in loan facilities from **Citi and Wells Fargo**, with terms between one and five years, replacing a previous $5 billion credit line. Tesla says it doesn’t expect to draw on the line in 2026, while planning **$25 billion** in spending that year.",
+          "tier": "substance",
+          "data": [
+            [
+              "credit facilities",
+              "$30 billion"
+            ],
+            [
+              "planned 2026 spending",
+              "$25 billion"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say Tesla squandered its lead with weak products and big promises; others say Electrek’s coverage is biased against Tesla and Musk.",
+      "comment_count": 212,
+      "terms": [
+        "CapEx",
+        "credit line",
+        "cash flow negative"
+      ],
+      "entities": [
+        "Tesla",
+        "Citi",
+        "Wells Fargo",
+        "Electrek",
+        "Jameson Dow",
+        "Elon Musk",
+        "Cybercab",
+        "Semi",
+        "Roadster",
+        "SpaceX"
+      ],
+      "comments": [
+        {
+          "by": "rgmerk",
+          "text": "Look, I get that Elon wants to chase AI, but why not do relatively simple, low-cost things like build a proper 7-seat SUV that uses the Cybertruck platform - or even a properly stretched Model Y platform (rather than the six-seater L)? Or how about a delivery van on a stretched Y platform? Tesla's product line is narrow and aging rapidly."
+        },
+        {
+          "by": "speedgoose",
+          "text": "Sorry TSLA holders, it's partly my fault as I got my 5 years old Model Y checked by a third party garage for everything that should be fixed by Tesla before the end of the main warranty period."
+        },
+        {
+          "by": "kasperni",
+          "text": "It's okay, we're an AI company now."
+        },
+        {
+          "by": "boyka",
+          "text": "Invest the $30B into AI build-out with a company called SpaceX, nice. SpaceX invests some more Cybertrucks, nice."
+        },
+        {
+          "by": "LaSombra",
+          "text": "A friend of mine who's all in on Musk told me a few months ago that Tesla's business hasn't been cars for a while. It's all Optimus and Cybertaxi, where demand will be infinite and we'll all be paid by our governments to stop working since Optimus will do everything and Cybertaxi will take us anywhere. Not today, of course, but in the future. Future being explained in the exact same elastic terms…"
+        }
+      ],
+      "image": "https://electrek.co/wp-content/uploads/sites/3/2025/05/Elon-Musk-Tesla-Money-hero.png?resize=1200,628"
+    },
+    {
+      "id": 49912444,
+      "url": "https://www.netlify.com/blog/edge-functions-firecracker-microvms/",
+      "hn": "https://news.ycombinator.com/item?id=49912444",
+      "title": "5x faster Edge Functions: V8 isolates to Firecracker MicroVMs",
+      "time": 1790792265,
+      "points": 150,
+      "depth": [
+        {
+          "text": "Netlify says **Edge Functions** are about **five times faster** after moving them onto its own network",
+          "tier": "simple"
+        },
+        {
+          "text": "Warm invocations now cost **~5–6ms at median**, down from **25–40ms** on the previous infrastructure. Each function runs in its own **Firecracker MicroVM**, and requests stay inside Netlify’s network.",
+          "tier": "substance",
+          "data": [
+            [
+              "Speedup at median",
+              "roughly 5x faster"
+            ],
+            [
+              "Warm invocation, median (p50)",
+              "~5–6ms"
+            ],
+            [
+              "Previous infrastructure",
+              "25–40ms"
+            ],
+            [
+              "Cold invocations",
+              "about 1.2%"
+            ],
+            [
+              "Cold invocation average",
+              "about 9ms"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: skeptics say Netlify may have removed network hops rather than made execution faster; others say the old hosted runtime explains the latency and MicroVMs offer stronger isolation.",
+      "comment_count": 57,
+      "terms": [
+        "MicroVM",
+        "V8 isolate",
+        "median (p50)",
+        "cold invocation",
+        "rendezvous hashing",
+        "snapshot"
+      ],
+      "entities": [
+        "Netlify",
+        "Edge Functions",
+        "Unikraft",
+        "Firecracker",
+        "V8",
+        "JavaScript",
+        "Jake Champion",
+        "Sunweb",
+        "Loto-Québec",
+        "SlicerVM",
+        "Proxmox",
+        "Cloudflare",
+        "AWS",
+        "Node"
+      ],
+      "comments": [
+        {
+          "by": "Normal_gaussian",
+          "text": "I've been using SlicerVM extensively - which is Firecracker MicroVMs for the regular person (and for the irregular with their platform offering) - to run local 'edge' style workloads locally and securly. Agents, local dev CI, etc. It slotted in and replaced my proxmox vm orchestrator, and now I have secure and and fast vms on my laptop wherever I go. It also supports dockerfile style builds if…"
+        },
+        {
+          "by": "nderjung",
+          "text": "Alex from Unikraft here! Happy to answer any questions about the microVM part of the story from our side. We also did a couple of technical write ups if you're interested: - https://unikraft.com/blog/netlify-edge-functions - https://unikraft.com/customer-stories/edge-functions-netlify"
+        },
+        {
+          "by": "yencabulator",
+          "text": "> In the past, requests went out to a hosted execution service. Today, they run on MicroVMs inside our own edge network — roughly 5x faster at the median. So, the execution itself might now be slower as far as we know, they just eliminated some networking from the mix? Misleading."
+        },
+        {
+          "by": "nchmy",
+          "text": "I'm having trouble understanding/believing this, given that Cloudflare Workers are also v8 isolates and run vastly faster than the 25-40ms that netlify says their isolates took..."
+        },
+        {
+          "by": "WatchDog",
+          "text": "All else being equal, v8 isolates should be lower latency than firecracker. As they mention, the v8 latency was because the v8 runtime was hosted externally. Firecracker has better security model. This old thread[0] with kentonv author of Cloudflare's workers platform covers some of the differences. [0]: https://news.ycombinator.com/item?id=31740885"
+        }
+      ],
+      "image": "https://www.netlify.com/images/blog/edge-functions-firecracker-microvms.png"
+    }
+  ],
+  "glossary": {
+    "Gale-Shapley algorithm": "A way to pair people so there isn't a pair who would both rather be matched with each other than with their assigned partners.",
+    "C++ front end": "The early part of a code-translating program that reads your code and checks what it means.",
+    "emulate": "Make one program behave like another, so something made for the second can work with the first.",
+    "static analysis": "Checking code for possible problems without running it.",
+    "source-to-source compilation": "Turning code in one programming language into code in another.",
+    "open source": "Software whose code is shared so other people can inspect, run, or change it.",
+    "ELINT": "Electronic intelligence: collecting signals from things like radars to learn what they are doing.",
+    "SIGINT": "Signals intelligence: information gathered by intercepting communications or other signals.",
+    "TENCAP": "Tactical Exploitation of National CAPabilities: getting information from national spy systems to military forces in the field.",
+    "subsatellite": "A smaller satellite carried by a larger one and released into orbit.",
+    "geolocation": "Figuring out where a signal came from.",
+    "TLA+": "Temporal Logic of Actions: a language for describing how a system can change over time so you can check whether it follows rules.",
+    "invariant": "A rule that must stay true in every state the system can reach.",
+    "liveness": "A guarantee that something good will eventually happen.",
+    "reachability": "A question about whether a system can get to a particular state.",
+    "hyperproperty": "A rule that compares multiple possible runs of a system, rather than checking just one.",
+    "self-composition": "A workaround that combines two runs in one model so you can compare them.",
+    "auxiliary variables": "Extra values added to a model to help check a property, even though they aren't part of the actual system.",
+    "bloomery": "A furnace that blows extra air into a fire so iron ore can be turned into usable iron.",
+    "smelting": "Heating ore to separate useful metal from unwanted material.",
+    "palace economy": "A system where a ruler and their allies control who is allowed to trade.",
+    "Sea Peoples": "A name used for mysterious invaders who raided along the Mediterranean coast.",
+    "democratized violence": "A shift that lets more people, not just rulers and elites, get weapons.",
+    "cortex": "The brain’s outer layer, where these studies observed waves.",
+    "intracranial electrodes": "Sensors placed inside the brain to record its electrical activity.",
+    "concentric wave": "A wave that spreads outward in rings from one spot, like ripples from a pebble.",
+    "spiral wave": "A wave pattern that rotates as it travels, like a small hurricane.",
+    "EEG": "Electroencephalography: recording the brain’s electrical activity with electrodes on the scalp.",
+    "synapse": "A connection point where one brain cell passes a message to another.",
+    "astrocyte": "A brain cell that surrounds synapses and can connect with many of them.",
+    "computer vision": "Software that examines pictures or video to spot and identify what's shown.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "YOLOv8": "A tool that finds and marks things in pictures.",
+    "dataset": "A collection of examples used to teach a computer program what to recognize.",
+    "annotate": "To mark examples with labels so a program can learn what to look for.",
+    "vibe coding": "Making software by telling an AI what you want and letting it write the code, often without closely checking how it works.",
+    "LARPmaxxing": "Putting on an impressive professional act, whether or not the work behind it is substantial.",
+    "CapEx": "Capital expenditures: money a company spends on long-lasting things it needs, like buildings and equipment.",
+    "credit line": "An agreement that lets a company borrow up to a set amount when it needs the money.",
+    "cash flow negative": "When more cash goes out of a business than comes in over a period.",
+    "MicroVM": "A small virtual computer that runs a program separately from other programs.",
+    "V8 isolate": "A way to run JavaScript in a separate, restricted environment without starting a whole virtual machine.",
+    "median (p50)": "The midpoint: half the measured requests were faster and half were slower.",
+    "cold invocation": "A request that arrives when the needed function setup is not already ready, so extra setup may be needed.",
+    "rendezvous hashing": "A rule for sending the same service to the same computer each time, which can help keep its code ready there.",
+    "snapshot": "A saved state of a running virtual machine that can be started again later."
+  }
+}
