@@ -2,6 +2,869 @@
   "date": "2026-10-02",
   "cards": [
     {
+      "id": 49927754,
+      "url": "https://www.eff.org/deeplinks/2026/10/court-agrees-eff-utahs-vpn-law-demands-technical-impossibility",
+      "hn": "https://news.ycombinator.com/item?id=49927754",
+      "title": "Court agrees with EFF: Utah's VPN law demands a technical impossibility",
+      "time": 1790893387,
+      "points": 414,
+      "depth": [
+        {
+          "text": "a court **stopped Utah** from forcing websites to **block VPN users** or find their location",
+          "tier": "simple"
+        },
+        {
+          "text": "A federal judge issued a **preliminary injunction** against SB 73’s VPN provisions, saying sites would need to **geolocate users with perfection**, which the court said isn’t presently possible. The ruling says Aylo would need to verify 28 million users; EFF says websites only see the VPN server’s IP address.",
+          "tier": "substance",
+          "data": [
+            [
+              "users Aylo would need to verify",
+              "28 million"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some question whether websites can reliably spot VPN traffic, since people can proxy through hosting providers; others say sites can block VPN exit relays and point to DraftKings filtering California visitors.",
+      "comment_count": 184,
+      "terms": [
+        "VPN",
+        "preliminary injunction",
+        "geolocation",
+        "IP address",
+        "exit relay",
+        "SNI",
+        "obfuscation"
+      ],
+      "entities": [
+        "EFF",
+        "Aylo",
+        "Pornhub",
+        "SB 73",
+        "Judge Barlow",
+        "Utah Department of Commerce",
+        "DraftKings"
+      ],
+      "comments": [
+        {
+          "by": "SoftTalker",
+          "text": "> platforms are left with an impossible choice: completely block all VPN traffic nationwide or withdraw access from Utah entirely Is it even possible to reliably know that a connection is from a VPN? Anyone can proxy through a random hosting provider."
+        },
+        {
+          "by": "usernomdeguerre",
+          "text": ">As we’ve said time and time again: the internet will always route around censorship. Is this still true, or has it become a truism? It seems nations like Iran and China (and events like Kashmir come to mind) have progressed the state-of-the-art and playbook to where we can't actually say it definitively will route around it. Now seeing that the US and EU are flirting with these similar…"
+        },
+        {
+          "by": "nadermx",
+          "text": "Remember to renew your support for the EFF. They take on some interesting cases"
+        },
+        {
+          "by": "1vuio0pswjnm7",
+          "text": "\"As we've said time and time again: the internet will always route around censorship.\" It won't route around self-censorship that arises out of surveillance Nor will it take a stand against SNI which is a dead simple means of implementing censorship that's in widespread use every day for years"
+        },
+        {
+          "by": "JSR_FDED",
+          "text": "The church of LDS is no stranger to technical impossibilities"
+        }
+      ],
+      "image": "https://www.eff.org/files/banner_library/vpn-highway-tunnel-banner.jpg"
+    },
+    {
+      "id": 49925974,
+      "url": "https://bfl.ai/models/flux-3-image",
+      "hn": "https://news.ycombinator.com/item?id=49925974",
+      "title": "FLUX 3 Image",
+      "time": 1790882669,
+      "points": 240,
+      "depth": [
+        {
+          "text": "someone can **place image elements in boxes** and let an image model **build the scene around them**",
+          "tier": "simple"
+        },
+        {
+          "text": "Black Forest Labs' FLUX 3 Image lets you pick an aspect ratio, place boxes on a **0 to 1000 grid**, and describe each element alongside a one-line scene prompt. It also offers text-to-image prompting and **grouped edits** intended to leave everything else unchanged.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some users praise the composition controls; others want open weights or object to moderation restrictions.",
+      "comment_count": 54,
+      "terms": [
+        "bounding box",
+        "aspect ratio",
+        "open weights"
+      ],
+      "entities": [
+        "Black Forest Labs",
+        "FLUX 3 Image",
+        "InvokeAI",
+        "Ideogram",
+        "Stable Diffusion",
+        "OpenRouter",
+        "Gemini 3 Pro Image",
+        "Flux.2",
+        "Klein",
+        "AI Game Studio"
+      ],
+      "comments": [
+        {
+          "by": "vunderba",
+          "text": "One of the things they seem to be emphasizing here is the UX around being able to place specific elements where you want them in an image. If the positions of the components in the overall composition are very important, this seems to make that a lot easier and kind of reminds me of InvokeAI. Ideogram V4, an open-weight model released back in June can also do this [1], but you have to use a…"
+        },
+        {
+          "by": "arnaudsm",
+          "text": "The UX looks amazing and very steerable, congrats to the team for focusing on the interface. Chats can be awful user interfaces."
+        },
+        {
+          "by": "gAI",
+          "text": "Love to see an AI lab outside of US/China releasing good models."
+        },
+        {
+          "by": "vergessenmir",
+          "text": "I think we are all waiting for the open weights or local model releases."
+        },
+        {
+          "by": "KazaNLP",
+          "text": "Agreed with other comments about the UX. I'm more interested in that than the model itself. Would like to start seeing UI like this where you get to choose the model and compare different models. Can't jump all over the internet to each model developers sandbox just to test their models. Doing it from one place would be nice."
+        }
+      ],
+      "image": "https://cdn.sanity.io/images/2gpum2i6/production/486fe8dbe090c31226c868dac01a1f5d918eb756-1200x630.jpg"
+    },
+    {
+      "id": 49937276,
+      "url": "https://developer.apple.com/pass-designer/",
+      "hn": "https://news.ycombinator.com/item?id=49937276",
+      "title": "Apple Pass Designer",
+      "time": 1790968016,
+      "points": 236,
+      "depth": [
+        {
+          "text": "someone can now **design and preview** **Apple Wallet passes** for businesses with Apple's new **Pass Designer**",
+          "tier": "simple"
+        },
+        {
+          "text": "The preview uses the **same rendering** as iOS and watchOS. For boarding passes and event tickets, **semantic tags** add structured data for Siri Suggestions, Calendar integration, and Maps directions. The beta requires **macOS 27 or later**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Beta requirement",
+              "macOS 27 or later"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: skeptics say it’s insignificant or point to free web-based alternatives; supporters welcome Apple's editor and see uses like building access.",
+      "comment_count": 159,
+      "terms": [
+        "semantic tags",
+        "backward-compatible",
+        "beta",
+        "PKPass",
+        "HDR"
+      ],
+      "entities": [
+        "Apple",
+        "Pass Designer",
+        "Apple Wallet",
+        "iPhone",
+        "Apple Watch",
+        "iOS",
+        "watchOS",
+        "Siri",
+        "Calendar",
+        "Maps",
+        "macOS"
+      ],
+      "comments": [
+        {
+          "by": "pastel8739",
+          "text": "What do people find interesting about this? This doesn’t seem at all significant to me"
+        },
+        {
+          "by": "pradn",
+          "text": "There are free, web-based wizards to create PKPass-format Apple Wallet passes. This one was posted on HN a few months ago. https://walletwallet.alen.ro/"
+        },
+        {
+          "by": "mortenjorck",
+          "text": "The one thing I hope Apple has added to the pass framework is the ability to semantically define a barcode area. This would enable them to finally have Wallet show ONLY that rectangle at a suddenly blinding brightness level (on HDR displays) for the scanner, rather than cranking up the entire screen."
+        },
+        {
+          "by": "msephton",
+          "text": "When I worked at Apple a dozen years ago I pushed hard for this to be built. We were using our own slap dash solution, but we wanted something everybody could use. Better late than never!"
+        },
+        {
+          "by": "frabert",
+          "text": "Haha this is bizzarely specific to my back-of-the woods brain. Feels like something that would be super relevant to someone in San Francisco but not as much to me"
+        }
+      ],
+      "image": "https://developer.apple.com/news/images/og/pass-designer-og.png"
+    },
+    {
+      "id": 49933235,
+      "url": "https://gwern.net/doc/math/1973-halmos.pdf",
+      "hn": "https://news.ycombinator.com/item?id=49933235",
+      "title": "The Legend of von Neumann (1973) [pdf]",
+      "time": 1790947112,
+      "points": 227,
+      "depth": [
+        {
+          "text": "a 1973 piece on **John von Neumann** has commenters swapping stories about his **quick mind** and **odd habits**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter identifies **Paul Halmos** as its author. Others mention von Neumann's **memory and speed**, and one recalls loud German marching bands annoying Einstein.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 131,
+      "terms": [
+        "von Neumann architecture"
+      ],
+      "entities": [
+        "John von Neumann",
+        "Paul Halmos",
+        "Einstein"
+      ],
+      "comments": [
+        {
+          "by": "breput",
+          "text": "My favorite von Neumann anecdote was a quote from Edward Teller: \"von Neumann would carry on a conversation with my 3 year old son, and the two of them would talk as equals, and I sometimes wondered if he used the same principle when he talked to the rest of us.\""
+        },
+        {
+          "by": "srejk",
+          "text": "When you look at it holistically, von Neumann was more influential in science and mathematics in the 20th century than either Einstein or Planck. He wasn't as obvious a symbol of the scientific revolution, but his contributions to SO MANY THINGS at a fundamental level makes him stand out to me."
+        },
+        {
+          "by": "SimplyUnknown",
+          "text": "For a longer read, I can highly recommend the book \"The Man from the Future\" by Ananyo Bhattacharya. It's quite an easy read and extensively discusses the life and discoveries by John von Neumann in chronological order."
+        },
+        {
+          "by": "chasd00",
+          "text": "Not sure what just happened but like 10 comments just vanished. Anyway, here's a wiki link to \"The Martians\" which was a group of Hungarian scientists and Von Neuman was a member. https://en.wikipedia.org/wiki/The_Martians_(scientists) \"The Martians\" (Hungarian: \"A marslakók\") were a group of prominent scientists (mostly, but not exclusively, physicists and mathematicians) of Hungarian Jewish…"
+        },
+        {
+          "by": "dang",
+          "text": "Related. Others? The legend of John von Neumann (1973) - https://news.ycombinator.com/item?id=8212335 - Aug 2014 (65 comments) The Legend of John von Neumann - https://news.ycombinator.com/item?id=1427906 - June 2010 (4 comments) (Reposts are fine after a year or so; links to past threads are just to satisfy extra-curious readers)"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49934228,
+      "url": "https://www.home-assistant.io/blog/2026/10/02/big-tech-ruined-the-cloud-so-were-renaming-ours/",
+      "hn": "https://news.ycombinator.com/item?id=49934228",
+      "title": "Big Tech ruined the cloud, so we're renaming ours",
+      "time": 1790953042,
+      "points": 203,
+      "depth": [
+        {
+          "text": "Home Assistant is renaming its cloud service to make clear it’s **optional** and built around **privacy**",
+          "tier": "simple"
+        },
+        {
+          "text": "Nabu Casa is changing **Home Assistant Cloud** to **Home Assistant Link**, describing it as optional, private, and a way to fund the Open Home Foundation. It plans to make the name change official in the **December 2026.12 release**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say the service being optional and replaceable makes the new name make sense; others say it’s still a cloud service under a new name.",
+      "comment_count": 100,
+      "terms": [
+        "lock-in",
+        "walled garden",
+        "SaaS",
+        "self-hosted"
+      ],
+      "entities": [
+        "Home Assistant",
+        "Nabu Casa",
+        "Home Assistant Cloud",
+        "Home Assistant Link",
+        "Open Home Foundation",
+        "Carl",
+        "Paulus",
+        "Alexa",
+        "Google Home"
+      ],
+      "comments": [
+        {
+          "by": "benabus",
+          "text": "I feel like Cloud means something now, and as part of the general lexicon, it's okay to use it for what it means. At this point, Cloud kind of means that it's a service hosted somewhere on the Internet, that you don't control directly, usually that you pay for. Sounds like they're still doing that. Changing the name to distance yourself from AWS and Google Cloud is fine, but \"Link\" doesn't really…"
+        },
+        {
+          "by": "voidnullvalue",
+          "text": "Nabu Kasa keeps ignoring the elephant in the room of security and permissions. They have no native ability to set user groups and permissions. There is no serious RBAC. I guess it doesn't sell cloud subscriptions. I cant keep my children from affecting devices they shouldn't. I ended up replacing my automation with mqtt"
+        },
+        {
+          "by": "pkulak",
+          "text": "Guys, you don't have to use it. That's the _entire_ point. Every comment in here is some version of \"But it's still a cloud\". Sure. But if the entire thing can be replaced with a Tailscale free account, or a Cloudflare tunnel, or a port forward at your router (in descending order of \"should you do it\"), is it really the same thing? Hence the name change."
+        },
+        {
+          "by": "paimapi",
+          "text": "I'll wait for someone to do a network call audit before I trust something like this I've been working on a small project running mitmproxy on a lot of 'privacy-focused' baby-tracking apps and only one of the ones I've tested doesn't send back a bevy of analytics data (none of which they openly promise to anonymize) some of the worst culprits had things like the Facebook SDK and Google Ads…"
+        },
+        {
+          "by": "TwoNineA",
+          "text": "(H)ome (A)ssistant (L)ink. Might as well add 9000 at the end of it."
+        }
+      ],
+      "image": "https://www.home-assistant.io/images/blog/2026-10-big-tech-ruined-the-cloud-so-were-renaming-ours/art.webp"
+    },
+    {
+      "id": 49921798,
+      "url": "https://comonad.com/reader/2026/turbo-haskell/",
+      "hn": "https://news.ycombinator.com/item?id=49921798",
+      "title": "Turbo Haskell",
+      "time": 1790863105,
+      "points": 194,
+      "depth": [
+        {
+          "text": "someone built a **Haskell compiler** that runs on the **JVM** and can compile **GHC itself**",
+          "tier": "simple"
+        },
+        {
+          "text": "GHC still handles parsing, typechecking, desugaring, and Core optimization; THC takes over to compile and run that Core through Truffle/GraalVM. It also supports **ahead-of-time compilation** into executables; tests on Data.Map ranged from **3× faster to 3× slower** than GHC after warmup, mostly hovering around **10–20% slower**.",
+          "tier": "substance",
+          "data": [
+            [
+              "performance range",
+              "3× faster to 3× slower"
+            ],
+            [
+              "typical performance",
+              "10–20% slower than GHC"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 58,
+      "terms": [
+        "JVM",
+        "GHC",
+        "GHC Core",
+        "JIT",
+        "AOT",
+        "FFI",
+        "SIMD"
+      ],
+      "entities": [
+        "THC",
+        "Haskell",
+        "GHC",
+        "JVM",
+        "Truffle",
+        "GraalVM",
+        "Native Image",
+        "Cabal",
+        "Backpack",
+        "Python",
+        "Ruby",
+        "R",
+        "JavaScript",
+        "Sulong",
+        "LLVM",
+        "Project Loom",
+        "Data.Map",
+        "GHCi",
+        "Cadenza",
+        "Eta",
+        "Scalaz",
+        "CHICKEN Scheme",
+        "D3.js",
+        "Edward Kmett",
+        "Dan Piponi",
+        "Bartosz Milewski",
+        "Runar Bjarnason"
+      ],
+      "comments": [
+        {
+          "by": "yjftsjthsd-h",
+          "text": "> THC now implements every one of GHC 9.14.1’s prim-ops and provides a JIT for GHC Core that runs Haskell on the JVM Look, it's very cool and a great project, but I just don't think you should call the compiler \"turbo $something\" if you're not going to make it a TUI IDE."
+        },
+        {
+          "by": "cosmic_quanta",
+          "text": "Coincidentally, the author has just been interviewed on the Haskell Interlude podcast: https://haskell.foundation/podcast/87/"
+        },
+        {
+          "by": "BalinKing",
+          "text": "Only tangentially related, but I'm reminded of Frege[0], a Haskell dialect for the JVM that I stumbled across at one point and thought looked really cool.... I see recent commits but the releases are all really old, so I can't tell what the state of the project is. [0] https://github.com/frege/frege"
+        },
+        {
+          "by": "JSR_FDED",
+          "text": "An IDE is just a DE in the category of blue TUIs."
+        },
+        {
+          "by": "zerr",
+          "text": "I was expecting some Turbo Vision based TUI IDE."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49935867,
+      "url": "https://www.npr.org/2026/10/01/nx-s1-5977815/trump-icc-sanctions-kimberly-prost",
+      "hn": "https://news.ycombinator.com/item?id=49935867",
+      "title": "ICC judge on what U.S. sanctions mean for her and global courts",
+      "time": 1790960551,
+      "points": 190,
+      "depth": [
+        {
+          "text": "a **sanctioned ICC judge** lost services and **bank access** but keeps **hearing cases**",
+          "tier": "simple"
+        },
+        {
+          "text": "**Kimberly Prost**, a Canadian judge at the International Criminal Court, says U.S. sanctions meant she **began losing access to services** from companies including Amazon and Google; her **credit cards** issued in the Netherlands and Canada were canceled. She is challenging the sanctions in U.S. court, arguing the measures were unlawful.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: many commenters describe the sanctions as coercive and harmful; one argues the ICC itself violated international law by issuing a warrant for a citizen of a country that isn't party to it.",
+      "comment_count": 132,
+      "terms": [
+        "ICC",
+        "sanctions",
+        "overcompliance",
+        "jurisdiction",
+        "de-banking",
+        "Appeals Chamber",
+        "executive order",
+        "soft power"
+      ],
+      "entities": [
+        "Kimberly Prost",
+        "International Criminal Court",
+        "NPR",
+        "Amazon",
+        "Google",
+        "Apple",
+        "Alexa",
+        "AXA",
+        "Steve Inskeep",
+        "Taliban",
+        "ISIS",
+        "Donald Trump",
+        "Reine Alapini-Gansou",
+        "Solomy Balungi Bossa",
+        "Ava Pukatch",
+        "Treye Green",
+        "Proton",
+        "NextCloud",
+        "GrapheneOS",
+        "Meredith Whittaker",
+        "Microsoft",
+        "YouTube",
+        "Monero",
+        "Snowden"
+      ],
+      "comments": [
+        {
+          "by": "msdz",
+          "text": "Regardless of what one personally thinks about the ICC, this isn’t a good look for neither the US nor Europe. For the U.S., because sanctioning an “unpleasant”, but in essence harmless individual (geopolitically speaking) is ridiculous. Falling victim to de-banking alone can really ruin one’s life. And for the EU, because it once again showcases the dependence on U.S. systems for just about…"
+        },
+        {
+          "by": "Planktonne",
+          "text": "> \"We are judges, and we are being told that rather than deciding our cases on the basis of the facts and the law before us, as we are duty bound to do, we're being asked to decide the cases or not decide them in accordance with the wishes of the U.S. government,\" she said. Just incredibly naked corruption."
+        },
+        {
+          "by": "hananova",
+          "text": "> One of the most serious examples is her health insurance. Prost receives coverage through AXA, the French company that provides insurance for the court. She says the company has refused to pay her claims even though it is not legally required to follow the U.S. sanctions. Then it is high time to make the company legally required not to follow the U.S. sanctions."
+        },
+        {
+          "by": "teekert",
+          "text": "\"I went home and Alexa wouldn't talk to me,\" she told NPR's Steve Inskeep. ICC judge and she has a device like this in her house. I think that she did not read any Snowden related books. Furthermore it's a bit of a missed opportunity for her to not move to Proton, NextCloud, GrapheneOS, and show how she can still live her life with many modern conveniences. She could find some non-over-complient…"
+        },
+        {
+          "by": "JSR_FDED",
+          "text": "This is at once thuggish and petty. If the US Govt doesn’t recognize the ICC then…don’t? Going after individual judges is mafia tactics. It’s also guaranteed to backfire - no judge who by definition deeply believes in the mission and legitimacy of the ICC is going to be deterred by these tactics."
+        }
+      ],
+      "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5250x2953+0+662/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F00%2F8a%2F18a07f2b4b03ad943ddbb3cb4b52%2Fgettyimages-2296121876.jpg"
+    },
+    {
+      "id": 49934784,
+      "url": "https://supabase.com/blog/supabase-is-acquiring-turso",
+      "hn": "https://news.ycombinator.com/item?id=49934784",
+      "title": "Supabase is acquiring Turso",
+      "time": 1790955783,
+      "points": 188,
+      "depth": [
+        {
+          "text": "Supabase is **acquiring Turso** to make **on-demand databases** easier for AI agents to use",
+          "tier": "simple"
+        },
+        {
+          "text": "Turso will **keep working on SQLite**, while Supabase continues building around Postgres. Turso rebuilt SQLite in Rust; its cloud platform lets one server manage **millions of databases**, loading them when needed and suspending them when they’re not.",
+          "tier": "substance",
+          "data": [
+            [
+              "Supabase database launches",
+              "over one million databases per week"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see a win-win and are excited for what's next; others worry about Turso's future and whether its open-source core will stay available.",
+      "comment_count": 97,
+      "terms": [
+        "AI agent",
+        "database",
+        "on-demand",
+        "SQLite",
+        "Postgres",
+        "Rust",
+        "open source",
+        "self-hosted"
+      ],
+      "entities": [
+        "Supabase",
+        "Turso",
+        "SQLite",
+        "Postgres",
+        "Rust",
+        "Superhuman",
+        "Sauna.ai",
+        "CTO.new",
+        "Mastra",
+        "Glauber Costa",
+        "Pekka Enberg",
+        "ClickHouse",
+        "ClickBench",
+        "Bun",
+        "Jarred",
+        "Electric",
+        "pglite",
+        "DataBricks",
+        "Neon",
+        "SQL93",
+        "LLMs"
+      ],
+      "comments": [
+        {
+          "by": "f311a",
+          "text": "I hope they will put more resources into fixing issues.\nI remember there were multiple attempts to add it to ClickBench, but each time new bugs were found. It should not be X times slower than SQLite. https://github.com/ClickHouse/ClickBench/issues/336 https://github.com/ClickHouse/ClickBench/pull/1009"
+        },
+        {
+          "by": "JoshTriplett",
+          "text": "I really, really hope that Turso survives this, and doesn't become another \"incredible journey\". I'm excited about Turso as a technology, both as a better sqlite and as something theoretically capable of becoming an embeddable postgres-compatible database."
+        },
+        {
+          "by": "integrallis",
+          "text": "Supabase is a great product, we use it for all of our products, but we also need OSS solutions that can be self-hosted. For Supabase, I hope the platform improves. SQLite has become the standard, we need that standard (other than the SQL93 part) to be created and maintained so that other can drop a paid for product and handle the server-side themselves is the choose to."
+        },
+        {
+          "by": "vmg12",
+          "text": "This is great, I was a little worried that the turso project's future was tied to the success of turso the company and it has impacted a few of my technical choices and has resulted in me choosing sqlite over turso a few times. I'll likely be choosing turso going forward for projects."
+        },
+        {
+          "by": "bel8",
+          "text": "GGs to the team! I'm a big fan of Glauber's work. He gives me the same neo-hacker vibe as Jarred, of Bun. So this is pleasant news to me."
+        }
+      ],
+      "image": "https://supabase.com/images/blog/2026-10-02-supabase-is-acquiring-turso/thumb.png"
+    },
+    {
+      "id": 49934487,
+      "url": "https://mondobe.com/ai-makes-me-sad",
+      "hn": "https://news.ycombinator.com/item?id=49934487",
+      "title": "AI Makes Me Sad",
+      "time": 1790954280,
+      "points": 176,
+      "depth": [
+        {
+          "text": "someone explains why **AI makes them sad**, then argues the industry's current mess **won't last forever**",
+          "tier": "simple"
+        },
+        {
+          "text": "They describe AI as a loss of **craft, control and creativity**. Still, they hope institutions will mature and look forward to a **bubble bursting**.",
+          "tier": "substance",
+          "data": [
+            [
+              "salary the TAs are eyeing",
+              "$500k"
+            ]
+          ]
+        }
+      ],
+      "camps": "Commenters split: some share the author's sadness about craft and work; others see new opportunities, argue people can adapt, or advise taking the high-paying job.",
+      "comment_count": 210,
+      "terms": [
+        "vibecoded",
+        "FAANG",
+        "LLM",
+        "classifier",
+        "anomie",
+        "SEO"
+      ],
+      "entities": [
+        "OpenAI",
+        "Codex",
+        "Claude",
+        "FAANG",
+        "Rust",
+        "YC",
+        "Stanford",
+        "GPT-7",
+        "Twitter",
+        "X",
+        "LinkedIn",
+        "ChatGPT",
+        "Paul Graham",
+        "Lisp",
+        "SpaceX",
+        "Xai",
+        "Grok",
+        "SuperGrok",
+        "Leetcode",
+        "Discord",
+        "Charlie Chaplin",
+        "Modern Times",
+        "Wile E. Coyote",
+        "McDonald's",
+        "Facebook",
+        "Careless People",
+        "Mighty Ducks",
+        "Georgia Tech",
+        "developerpoetry",
+        "gutsy",
+        "Jev"
+      ],
+      "comments": [
+        {
+          "by": "schneems",
+          "text": "> I think I could have been a pretty formidable startup founder had I been born five or ten years earlier. I used to think that. I came to the realization that I could have technically built Facebook the product, but would never in a million years have built Facebook the company. But having just finished \"Careless People\" I feel kinda good about that. I also just got back from a vacation to…"
+        },
+        {
+          "by": "munificent",
+          "text": "> Right now, we have (most of) my undergrad classmates' dream industry. They drink constantly [1], skip lectures, scrape by on their homework with AI, complain about classes, grind Leetcode to get internships, and eventually get their diploma. It must feel like walking around in a literal dream, where your footsteps have no weight, like Wile E. Coyote near a ledge. There is a name for this in…"
+        },
+        {
+          "by": "jjcm",
+          "text": "AI makes me happy But it makes me happy in such an immediate serotonin spike it’s akin to a drug. It used to be that I’d sit there dreaming every night of new things I wanted to build. It was fun to think, “what if I devoted the next year to this idea?”, but that was always met with the realities of a 9-5 after. Now I can build those ideas as fast as they hit me. They’re fleeting fancies though…"
+        },
+        {
+          "by": "dofm",
+          "text": "Indeed. As much as I should find it fascinating, it does indeed often suck, emotionally. But I gather from reading this that you are young. The time value of money and the changing nature of our industry tells you a different thing than it tells me, I think. If you are young enough that you have any period of commanding multiple-hundred-thousand-dollar-per-year jobs: TAKE ONE OF THEM. This is…"
+        },
+        {
+          "by": "jrflo",
+          "text": "I feel like the thing a lot of people are missing about the AI explosion is that there will be new opportunities that didn't exist before. Sure, things will look a lot different than they used to, but we're going to be able to create systems that are far more complicated than anything we could make before. We're not going to simply automate 2022 levels of producing software and stop there, we're…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49928566,
+      "url": "https://stillwet.art/",
+      "hn": "https://news.ycombinator.com/item?id=49928566",
+      "title": "Show HN: Giving Opus 5.5 a simulated paint canvas",
+      "time": 1790900876,
+      "points": 169,
+      "depth": [
+        {
+          "text": "someone gave **AI painters** a **simulated oil-paint canvas**, and they wrote code to paint",
+          "tier": "simple"
+        },
+        {
+          "text": "The models **write programs** for bristle brushes, wet paint, drying and layered glazes; **no image model is involved**. Most paint after Caspar David Friedrich using written research alone, without seeing his paintings. The project includes **75 paintings**, with 46 made at a virtual easel, one passage at a time.",
+          "tier": "substance",
+          "data": [
+            [
+              "paintings",
+              "75"
+            ],
+            [
+              "virtual-easel paintings",
+              "46 of 75"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see AI painting as an exciting, inspectable creative process; others say AI is a tool, not an artist, and worry about artists.",
+      "comment_count": 58,
+      "terms": [
+        "virtual easel",
+        "glaze",
+        "LLM",
+        "diffusion model",
+        "API credits"
+      ],
+      "entities": [
+        "Claude Opus 5.5",
+        "Caspar David Friedrich",
+        "Alice",
+        "GPT-6.1 Sol",
+        "Gemini 3.8 Flash",
+        "MiMo v2.6 Pro"
+      ],
+      "comments": [
+        {
+          "by": "moojacob",
+          "text": "It’s interesting how diffusion models are getting bitter lessened by LLMs. I suspect anthropic has tens of thousands of RL environments recreating famous paintings with code because it was anthropic employees who first started posting about these capabilities on X. Opus is also getting decent pixel art. I have ran some experiments with Opus 5.5 to turn 90s pinball displays (black and white pixel…"
+        },
+        {
+          "by": "soundworlds",
+          "text": "I love this! It's heading in a very similar direction I am passionate about! If we are generating artifacts with AI, they should be made out of source code or other form of project file that humans can actually inspect and learn from. I'm doing the same with music: https://johnoestmannmusic.com/0009-when-we-become-discoverer..."
+        },
+        {
+          "by": "cronin101",
+          "text": "This is simultaneously incredibly impressive and annoyingly uncanny valley, since most of the landscapes are \"ruined\" by a cluster of churches right next to each other that is completely nonsensical."
+        },
+        {
+          "by": "redanddead",
+          "text": "I literally tried this yesterday, i was showing my gf claude code/computer use on her computer, her job got her a subscription, and it failed so fucking badly at it I saw somewhere that GPT Astra could draw line by line on a canvas. Where the fuck are we with actually good computer use that isn't bricked by the manufacturer's enshittified prompts I'm telling you, Kimi is one update away from a…"
+        },
+        {
+          "by": "dizzard",
+          "text": "This is interesting. I've been trying with less success to evolve a good painter that writes its own tools https://artifacts.dizzard.net/s/55052743-bee1-4746-b59e-57e2... (sorry for the load) Also Pindar Van Arman's prior work acts as a reminder that AI, no matter how powerful, is a tool, not an artist. Pindar's stuff is all non-LLM as far I can tell, but I don't see a fundamental difference in…"
+        }
+      ],
+      "image": "https://stillwet.art/img/og-card.jpg"
+    },
+    {
+      "id": 49927747,
+      "url": "https://chatgpt.com/features/sites/",
+      "hn": "https://news.ycombinator.com/item?id=49927747",
+      "title": "Sites in ChatGPT",
+      "time": 1790893341,
+      "points": 167,
+      "depth": [
+        {
+          "text": "people are using **ChatGPT Sites** to turn quick ideas into **shareable little websites**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says handing quick app ideas to Sites usually gets them a **working prototype** within an hour. Others criticize the examples: one says the demo creature is a rectangular JPEG with a black background that rotates on screen, and commenters say the sites **make no sense**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: one sees people choosing AI-built sites over paying website designers; another says current AI cannot make human sense and will not replace web developers or coders.",
+      "comment_count": 195,
+      "terms": [
+        "API",
+        "MCP server",
+        "A/B test",
+        "vibe coding",
+        "moat",
+        "sherlocked"
+      ],
+      "entities": [
+        "ChatGPT Sites",
+        "ChatGPT",
+        "OpenAI",
+        "Claude",
+        "Anthropic",
+        "Opus",
+        "Codex",
+        "Google Docs",
+        "SharePoint",
+        "exe.dev",
+        "GitHub",
+        "Heroku",
+        "Cloudflare",
+        "Lovable",
+        "Yahoo GeoCities",
+        "Claude Artifacts",
+        "Netlify",
+        "Firebase",
+        "railcode.dev",
+        "Gmail",
+        "Sign In with ChatGPT"
+      ],
+      "comments": [
+        {
+          "by": "nathanfig",
+          "text": "I have been using Sites a few months now, really underrated feature IMO. Any time I get a quick app idea I just hand it off to Sites and usually get a working prototype within the hour. For example, here's a game where you are a mouse hunting for cheese in higher dimensional mazes: https://manifold-six-axis-escape.nathan338932.chatgpt.site/ Idea came to me while at a concert, was ready to play…"
+        },
+        {
+          "by": "jwpapi",
+          "text": "People seem calm in here, but I really now think is replacing a lot of industries. Like Website Designer. I totally see people asking chatgpt to build them a website instead of paying them 2,000 USD. Soon it will connect to Ads and it will runs for it as well. Honestly since Opus 5.5, Opus is my interface for 95% off my work. I don’t open emails anymore i let it summarize draft and handle most of…"
+        },
+        {
+          "by": "dash2",
+          "text": "Look at the \"beneath the surface\" example. Click on a creature close-up. Click the \"rotate creature\" button. The creature's rectangular jpeg, complete with black background, rotates on screen. No 3d or anything. This is their demo! It has that Potemkin village quality, much like AI apps, code, and answers."
+        },
+        {
+          "by": "ameliaquining",
+          "text": "I wonder if they'll combine this with the currently-in-closed-beta Sign In with ChatGPT to let people make sites that can make inference calls that get charged to the user's ChatGPT subscription rather than the site owner's API billing account, like Claude Artifacts already lets you do. That would synergize well with ChatGPT Sites being generally more robust and feature-complete than Claude…"
+        },
+        {
+          "by": "vatsachak",
+          "text": "The idea is great but the websites shown as examples are clearly made by AI because they make no sense. Current AI is NOT going to replace web devs or coders because it cannot tabula rasa make human sense. I suspect the reverse with a Jevons thingy happening"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49927212,
+      "url": "https://www.cssbed.com",
+      "hn": "https://news.ycombinator.com/item?id=49927212",
+      "title": "CSS Bed: Classless CSS themes to use as starting points in web development",
+      "time": 1790889692,
+      "points": 158,
+      "depth": [
+        {
+          "text": "someone collected **classless CSS themes** to give plain HTML a quick visual starting point",
+          "tier": "simple"
+        },
+        {
+          "text": "To use one, **paste a snippet** into your page’s `<head>`; CSS Bed says the themes are **small (under a few kb)** and **mobile responsive**. Some commenters said a few have no edge margins or force horizontal scrolling on mobile.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some love the idea as a starting point; others say the defaults are terrible or the mobile layouts don't work well.",
+      "comment_count": 47,
+      "terms": [
+        "CSS",
+        "classless CSS",
+        "HTML",
+        "responsive",
+        "<head>",
+        "viewport tag",
+        "reset style sheet",
+        "framework",
+        "Tailwind"
+      ],
+      "entities": [
+        "CSS Bed",
+        "CSS",
+        "HTML",
+        "JavaScript",
+        "Tailwind",
+        "matcha.css",
+        "Astro",
+        "Pico.css",
+        "simple.css",
+        "tacit",
+        "w3c-chocolate",
+        "normalize.css",
+        "reset.css",
+        "Bootstrap",
+        "HTML3000",
+        "MDN"
+      ],
+      "comments": [
+        {
+          "by": "sphars",
+          "text": "Reminds me of this website for checking classless stylesheets. https://dohliam.github.io/dropin-minimal-css/"
+        },
+        {
+          "by": "shikwasa",
+          "text": "I understand the \"starting point\" part but I find the emphasis on \"classless\" interesting: you basically have to introduce a non-element selector as soon as you want make even the smallest layout change. For anything beyond a single page document, I find something like matcha.css ( https://matcha.mizu.sh , you can even pick your custom build on the same page) a practical starting point if you…"
+        },
+        {
+          "by": "thih9",
+          "text": "I’m surprised how few of them support dark mode. IMHO today dark mode support is part of reasonable defaults."
+        },
+        {
+          "by": "toymin",
+          "text": "Quite a few of them look off on mobile, they either have no edge margins at all or they're too large and force the user to scroll horizontally"
+        },
+        {
+          "by": "testerius",
+          "text": "I have not written any CSS from scratch since years. Does normalize.css/reset.css are still viable and used? I use Tailwind because of components design, so I wonder what actually current trends are in context of small/alternative CSS solutions."
+        }
+      ],
+      "image": null
+    },
+    {
       "id": 49929489,
       "url": "https://www.deepseek.com/en/harness/",
       "hn": "https://news.ycombinator.com/item?id=49929489",
@@ -998,9 +1861,75 @@
     }
   ],
   "glossary": {
+    "VPN": "Virtual private network: a service that sends your internet traffic through another computer, often to protect it or make it appear to come from somewhere else.",
+    "preliminary injunction": "A court order that temporarily stops a law from being enforced while a case continues.",
+    "geolocation": "Figuring out where a signal came from.",
+    "IP address": "A number that identifies a device or network on the internet.",
+    "exit relay": "A VPN server that traffic passes through on its way to a website.",
+    "SNI": "Server Name Indication: a detail sent when a connection starts that can show which website someone is trying to visit.",
+    "obfuscation": "Making something harder to see or recognize.",
+    "bounding box": "A rectangle that marks where an element should appear in an image.",
+    "aspect ratio": "The shape of an image, based on how wide it is compared with how tall it is.",
+    "open weights": "The model's learned settings are available for people to download and run themselves.",
+    "semantic tags": "Labels that tell the system what pass details mean, so it can use them for things like Calendar or Maps.",
+    "backward-compatible": "Designed to keep working on older systems that may not support newer features.",
+    "beta": "A version released for people to try before it is considered finished.",
+    "PKPass": "A file format for passes that can be added to Apple Wallet.",
+    "HDR": "High Dynamic Range: a way for a screen to show more detail in bright and dark areas.",
+    "von Neumann architecture": "A computer design where the instructions it follows and the information it works on share one memory.",
+    "lock-in": "Being stuck with a service because moving away from it is difficult.",
+    "walled garden": "A service that keeps you within one company's products and limits what else you can use.",
+    "SaaS": "Software as a Service: software you access over the internet, with the provider running it for you.",
+    "self-hosted": "Running a service on a computer you control rather than relying on someone else's.",
+    "JVM": "Java Virtual Machine: software that runs programs built for Java's runtime.",
+    "GHC": "Glasgow Haskell Compiler: a program that turns Haskell code into something a computer can run.",
+    "GHC Core": "A simplified form of a Haskell program that GHC works with after translating it.",
+    "JIT": "Just-in-time compilation: compiling a program as it runs, rather than beforehand.",
+    "AOT": "Ahead-of-time compilation: turning a program into an executable before it runs.",
+    "FFI": "Foreign Function Interface: a way for code in one language to call code written in another.",
+    "SIMD": "Single Instruction, Multiple Data: a way to apply one operation to several values at once.",
+    "ICC": "International Criminal Court: an international body that investigates war crimes committed by other countries.",
+    "sanctions": "Government restrictions meant to pressure someone, often by limiting access to money or services.",
+    "overcompliance": "When a company does more than the rules require because it wants to avoid risk.",
+    "jurisdiction": "A court's legal authority to hear a case or make a decision about it.",
+    "de-banking": "Losing access to bank accounts or services, often because a bank closes or limits them.",
+    "Appeals Chamber": "The part of a court that reviews decisions after someone challenges them.",
+    "executive order": "An instruction from a president that tells the government what to do.",
+    "soft power": "A country's ability to influence others through its reputation and relationships rather than force.",
+    "AI agent": "An autonomous computer program that can carry out tasks.",
+    "database": "An organized place for an app to store information and find it again.",
+    "on-demand": "Available when needed, rather than set up and running all the time.",
+    "SQLite": "A small database that can be stored in a single file.",
+    "Postgres": "A database system the article says suits apps as they grow.",
+    "Rust": "A programming language; commenters say 37signals used it for the Hey backend.",
+    "open source": "Software whose code is shared so other people can inspect, run, or change it.",
+    "vibecoded": "Made by asking an AI to write code from prompts, with little hands-on programming.",
+    "FAANG": "Facebook, Amazon, Apple, Netflix, and Google: a nickname for some of the biggest tech companies.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "classifier": "A program that sorts something into a category, such as deciding whether a message is spam.",
+    "anomie": "A feeling of unease when familiar social rules stop giving people a clear guide for how to live.",
+    "SEO": "Search engine optimization: making changes to a webpage so it is more likely to appear in search results.",
+    "virtual easel": "A digital painting setup where the model works on a canvas a bit at a time and can look back at it.",
+    "glaze": "A thin, see-through layer of paint put over another layer to change its color or depth.",
+    "diffusion model": "An image-making AI that starts with visual noise and gradually turns it into a picture.",
+    "API credits": "A usage allowance for sending requests to an online service; when it runs out, the service may stop responding.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "MCP server": "Model Context Protocol server: a computer that lets an AI connect to outside tools or information.",
+    "A/B test": "A comparison of two versions to see which one works better for people.",
+    "vibe coding": "Making software by telling an AI what you want and letting it write the code, often without closely checking how it works.",
+    "moat": "An advantage that makes it hard for competitors to take customers away from a business.",
+    "sherlocked": "When a big platform copies a smaller product's idea and builds it into its own product.",
+    "CSS": "Cascading Style Sheets: rules that control how a web page looks.",
+    "classless CSS": "A way to style ordinary HTML without adding named labels to each part of the page.",
+    "HTML": "HyperText Markup Language: code that tells a browser what content a web page has.",
+    "responsive": "A layout that adjusts to fit different screen sizes.",
+    "<head>": "The part of a web page that holds setup details and links to styles, rather than the visible content.",
+    "viewport tag": "An instruction in a page that helps phones display it at the right width.",
+    "reset style sheet": "A set of styling rules that clears browsers' default looks so a page has a more even starting point.",
+    "framework": "A collection of ready-made parts and rules that helps people build software.",
+    "Tailwind": "A styling toolkit where you change how page elements look by adding ready-made class names.",
     "harness": "The surrounding code that gives an AI agent tools and a place to work, and checks what it does.",
     "plugin": "An add-on that gives an app extra tools or features.",
-    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
     "Cordis": "The architecture DeepSeek Harness is built on; its pitch is that everything in the system is a plugin.",
     "sandbox": "A separate, contained space where software can be tested without affecting the rest of a computer or system.",
     "anthropomorphism": "Describing something nonhuman as if it had human thoughts or feelings.",
@@ -1012,7 +1941,6 @@
     "third spaces": "Places outside home and work where people can spend time and meet others, like clubs or cafés.",
     "BTO": "Build-To-Order: Singapore's public-housing system, which the article says can shape couples' plans around housing.",
     "algorithm": "A set of steps used to solve a problem or make a decision.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "subagent": "A helper assigned a smaller part of a larger task.",
     "Turing test": "A test where someone chats with a computer and tries to tell whether it’s a person.",
     "ASCII art": "Pictures made from ordinary text characters like letters and punctuation.",
@@ -1033,7 +1961,6 @@
     "privilege escalation": "A flaw that lets someone get more control of a computer than they should have.",
     "denial of service": "An attack or flaw that makes a service unavailable to people trying to use it.",
     "kernel": "A small program that carries out a calculation on a computer's graphics chip or processor.",
-    "framework": "A collection of ready-made parts and rules that helps people build software.",
     "type safety": "Checks that values are used in ways the code expects, catching some mistakes before the app runs.",
     "migration": "Changing code to work with a newer version, sometimes with steps handled automatically.",
     "alias": "A shorter stand-in name for a longer file path.",
