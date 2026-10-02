@@ -198,3 +198,8 @@ Supersedes the Node choice in the stack entry above; everything else there still
 
 **Why:** the user's call: scrolling up from a picked day should show the next day's last post, as if scrolled there from the top. The pick loads down to that day and lands on its first post; the card being read is offered as Continue for the way back. Old `?date=` links do the same.
 **Rejected:** a picked day as its own feed (nothing newer above it, and it needed its own paths for Continue and the new-run check); loading upward on demand (more code; a `ponytail:` in `jumpTo` marks when it pays).
+
+## 2026-10-01 — No global 200-line file cap
+
+**Why:** the user's call. `DECISIONS.md` grows forever by design and had reached 200, so the global cap forbade logging the next decision. The per-doc caps in `CLAUDE.md`'s table still hold.
+**Rejected:** splitting `DECISIONS.md` (a seventh doc file); pruning past entries (append-only).

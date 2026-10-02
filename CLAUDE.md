@@ -81,13 +81,12 @@ context windows. Treat the cap as a hard budget, not a target.
    rule yet — it's a decision, so log it.
 4. **`DECISIONS.md` grows forever, and that's fine** — it's never auto-loaded. Read specific entries
    by grep, never the whole file. Cap is per entry: heading + `Why` + `Rejected`, nothing else.
-5. **No file over 200 lines, ever.** Past that, split by shipping less, not by adding a file.
-6. **Prose is capped too:** tables and lists over paragraphs, sentence fragments over sentences.
+5. **Prose is capped too:** tables and lists over paragraphs, sentence fragments over sentences.
 
 Check before committing a doc change:
 
 ```sh
-wc -l CLAUDE.md docs/*.md   # 100 / DIRECTION 150 / DECISIONS 200 / SPEC 200
+wc -l CLAUDE.md docs/*.md   # 100 / DIRECTION 150 / SPEC 200
 ```
 
 Anti-rules — don't create: `README` sections duplicating `SPEC.md`, per-feature design docs, `ARCHITECTURE.md`, a `docs/` tree, changelogs (git log is the changelog), TODO lists (a deferral in code is a `ponytail:` comment; a direction with no code is a `DIRECTION.md` entry with a trigger).
