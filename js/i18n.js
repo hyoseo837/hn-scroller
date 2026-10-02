@@ -51,7 +51,7 @@ const T = {
     hintBack: "← swipe back to continue",
     hintMore: "swipe → for more",
   },
-  // The app's own voice in Korean: short, noun endings (SPEC "Translations").
+  // The app's own voice in Korean: short, noun endings (docs/spec/translations.md).
   ko: {
     loading: "불러오는 중…",
     language: "언어",

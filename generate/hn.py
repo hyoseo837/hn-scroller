@@ -63,7 +63,7 @@ def hn_item(item_id) -> dict:
 
 
 def top_comments(item: dict) -> list[str]:
-    """Top-level only. Flattening the tree is deliberate — see SPEC.md."""
+    """Top-level only. Flattening the tree is deliberate — see docs/spec/viewer.md."""
     kid_ids = (item.get("kids") or [])[:MAX_COMMENTS]
     if not kid_ids:
         return []

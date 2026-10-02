@@ -46,7 +46,7 @@ function syncChrome() {
   syncBack();
 }
 
-// Depth locks the vertical axis (SPEC: swipe left before swipe up).
+// Depth locks the vertical axis (docs/spec/viewer.md: swipe left before swipe up).
 function lockVertical(on) {
   if (feed.classList.contains("locked") === on) return;
   const y = feed.scrollTop;

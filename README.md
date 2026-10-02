@@ -55,13 +55,13 @@ read at runtime, so wording changes need no code edit.
 
 ## Docs
 
-Six files, deliberately, each with a line cap:
+Split by area, so a change reads only the docs it touches:
 
 | | |
 |---|---|
-| [`CLAUDE.md`](CLAUDE.md) | how to work in this repo — stack, commands, conventions |
-| [`docs/SPEC.md`](docs/SPEC.md) | what is being built and why — scope, non-goals, data shapes |
-| [`docs/DECISIONS.md`](docs/DECISIONS.md) | append-only rationale, including the calls that were wrong first |
+| [`CLAUDE.md`](CLAUDE.md) | how to work in this repo — stack, commands, conventions, which doc to read |
+| [`docs/spec/`](docs/spec) | what is being built and why — content, viewer, pipeline, translations |
+| [`docs/decisions/`](docs/decisions) | append-only rationale per area, including the calls that were wrong first |
 | [`docs/DIRECTION.md`](docs/DIRECTION.md) | work with no code yet, each with the trigger that would start it |
 | [`PRODUCT.md`](PRODUCT.md) | product truth for the design skill — users, purpose, constraints |
 | [`DESIGN.md`](DESIGN.md) | the visual system — type, palette, tokens, as shipped |

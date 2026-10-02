@@ -43,7 +43,7 @@ article or thread.
 ## Capabilities and Constraints
 
 - Static site on Cloudflare Pages (`hn.hyoseo.dev`), installable PWA. Vanilla HTML/CSS/JS, no
-  build step, zero dependencies; the one third-party script is Cloudflare's Web Analytics beacon. Data contract: one JSON per day (`docs/SPEC.md`).
+  build step, zero dependencies; the one third-party script is Cloudflare's Web Analytics beacon. Data contract: one JSON per day (`docs/spec/pipeline.md`).
 - Keyboard and wheel are first-class on desktop; the phone frame is centred there (430px column).
 - Card text comes from a model and is rendered as text nodes, never `innerHTML`.
 - Images are `og:image` when the article declares one (~45%); many cards have none.

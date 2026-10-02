@@ -43,53 +43,49 @@ regenerated. The glossary survives; only the dedup list resets.
 The system prompt is `generate/prompt.md` (`prompt.ko.md` for the Korean pass), read at runtime — edit it without touching code. Iterate with
 `--dry` (free) before spending calls.
 
-## Documentation rule
+## Docs
 
-Six files. No others. If a doc doesn't fit one of these, it doesn't exist.
+Split by area so a task reads only its own. Never read a whole folder.
 
-| File | Holds | Lifetime | Cap | Loaded |
-|---|---|---|---|---|
-| `CLAUDE.md` | How to work here: stack, commands, conventions, invariants. | Current truth. Overwrite freely. | **100 lines** | every session |
-| `docs/SPEC.md` | What we're building and why. Scope, non-goals, data shapes. | Current truth. Overwrite freely. | **200 lines** | on demand |
-| `docs/DECISIONS.md` | Choices with a "why" that outlives the code. | Append-only. Never edit past entries. | **5 lines/entry** | on demand |
-| `docs/DIRECTION.md` | Work with no code yet: what, why, and the **trigger** that would start it. | Prune freely. An untouched entry is a dead one. | **150 lines** | on demand |
-| `PRODUCT.md` | Product truth for the impeccable design skill: users, purpose, constraints. | Current truth. | **200 lines** | by the skill |
-| `DESIGN.md` | The visual system: type, palette, tokens, components. | Current truth. | **200 lines** | by the skill |
+| Working on | Read |
+|---|---|
+| What a card may say, the generation prompt | `docs/spec/content.md`, `docs/decisions/content.md` |
+| The viewer: gestures, feed, sheets, share | `docs/spec/viewer.md`, `docs/decisions/viewer.md` |
+| Selection, fetching, the model call, day files | `docs/spec/pipeline.md`, `docs/decisions/pipeline.md` |
+| The Korean pass, the language choice | `docs/spec/translations.md`, `docs/decisions/translations.md` |
+| Docs rules, hosting, cost, analytics | `docs/decisions/project.md` |
+| Visual design (the impeccable skill reads these from the root) | `PRODUCT.md`, `DESIGN.md` |
+| Work with no code yet | `docs/DIRECTION.md` |
+
+| Kind | Holds | Lifetime |
+|---|---|---|
+| `docs/spec/` | What we're building and why: scope, non-goals, data shapes. | Current truth. Overwrite freely. |
+| `docs/decisions/` | Choices with a "why" that outlives the code. | Append-only. Never edit past entries. ≤5 lines each. |
+| `docs/DIRECTION.md` | Work with no code yet: what, why, and the **trigger** that would start it. | Prune freely. An untouched entry is a dead one. |
+| `PRODUCT.md`, `DESIGN.md` | Product truth and the visual system, for the design skill. | Current truth. |
 
 Rules:
 
-1. **Current truth beats history.** `CLAUDE.md` and `SPEC.md` describe now. Delete stale lines, don't annotate them.
-2. **Append-only means append-only.** New `DECISIONS.md` entry supersedes an old one; the old one stays. Format: `## YYYY-MM-DD — <decision>` then two lines: **Why** and **Rejected**.
+1. **Current truth beats history.** `CLAUDE.md` and `docs/spec/` describe now. Delete stale lines, don't annotate them.
+2. **Append-only means append-only.** A new decision supersedes an old one; the old one stays. Format: `## YYYY-MM-DD — <decision>` then two lines: **Why** and **Rejected**.
 3. **The code is the documentation for _how_.** Docs cover only what code can't say: intent, tradeoffs, things tried and abandoned.
 4. **No doc for speculative work** — except `DIRECTION.md`, and only with a trigger. An entry
    with no condition that would start it is a wish, so delete it.
-5. **Agent must read before writing.** Any non-trivial change reads `SPEC.md` first. Any change that contradicts a decision stops and asks.
+5. **Agent must read before writing.** Any non-trivial change reads its area's spec first. Any change that contradicts a decision stops and asks.
 6. **Doc edits are part of the diff.** Change behavior contradicting a doc → update the doc in the same commit. No follow-up doc commits.
-7. **Comments over docs for local logic.** A tricky function gets a comment, not a paragraph in `SPEC.md`.
+7. **Comments over docs for local logic.** A tricky function gets a comment, not a paragraph in a spec.
+8. **A file that outgrows its area splits** into narrower areas, and the table above gains a row. No line caps but this file's.
 
 ## Size
 
-`CLAUDE.md` is the only file loaded into every session. Every line in it is rent paid on all future
-context windows. Treat the cap as a hard budget, not a target.
+`CLAUDE.md` is the only file loaded into every session: **100 lines**, a hard budget, not a target.
 
-1. **At cap, cut — don't extend.** Hitting a cap means something in the file has earned deletion, not
-   that the cap is wrong. Raise a cap only by editing this line and saying why in `DECISIONS.md`.
-2. **Cut order when over:** (a) anything the code already says, (b) anything true of every project
-   (`use git`, `write tests`), (c) history and rationale — that's `DECISIONS.md`'s job, (d) examples
-   beyond the first, (e) prose restating the line above it.
-3. **One line per rule.** No rule gets a supporting paragraph. If a rule needs explaining, it's not a
-   rule yet — it's a decision, so log it.
-4. **`DECISIONS.md` grows forever, and that's fine** — it's never auto-loaded. Read specific entries
-   by grep, never the whole file. Cap is per entry: heading + `Why` + `Rejected`, nothing else.
-5. **Prose is capped too:** tables and lists over paragraphs, sentence fragments over sentences.
+1. **At cap, cut — don't extend.** Cut order: (a) anything the code already says, (b) anything true of
+   every project, (c) history and rationale (that's `docs/decisions/`), (d) examples beyond the first.
+2. **One line per rule.** If a rule needs explaining, it's not a rule yet — it's a decision, so log it.
+3. **Prose is capped too:** tables and lists over paragraphs, sentence fragments over sentences.
 
-Check before committing a doc change:
-
-```sh
-wc -l CLAUDE.md docs/*.md   # 100 / DIRECTION 150 / SPEC 200
-```
-
-Anti-rules — don't create: `README` sections duplicating `SPEC.md`, per-feature design docs, `ARCHITECTURE.md`, a `docs/` tree, changelogs (git log is the changelog), TODO lists (a deferral in code is a `ponytail:` comment; a direction with no code is a `DIRECTION.md` entry with a trigger).
+Anti-rules — don't create: `README` sections duplicating a spec, per-feature design docs, `ARCHITECTURE.md`, changelogs (git log is the changelog), TODO lists (a deferral in code is a `ponytail:` comment; a direction with no code is a `DIRECTION.md` entry with a trigger).
 
 ## Conventions
 
