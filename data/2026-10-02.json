@@ -1,0 +1,478 @@
+{
+  "date": "2026-10-02",
+  "cards": [
+    {
+      "id": 49928121,
+      "url": "https://lwn.net/Articles/1097401/",
+      "hn": "https://news.ycombinator.com/item?id=49928121",
+      "title": "Several vulnerabilities have been discovered in the Linux kernel",
+      "time": 1790896244,
+      "points": 219,
+      "depth": [
+        {
+          "text": "a Debian alert warns **Linux kernel bugs** could **leak information**, disrupt service, or grant extra access",
+          "tier": "simple"
+        },
+        {
+          "text": "For Debian's **stable distribution**, trixie, the fix is **version 6.12.111-1**; the alert recommends **upgrading Linux packages**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some commenters see AI-assisted research driving more vulnerability discoveries; others caution that CVE counts are a poor measure because kernel bugfixes can get CVE numbers too.",
+      "comment_count": 142,
+      "terms": [
+        "CVE",
+        "privilege escalation",
+        "denial of service",
+        "kernel"
+      ],
+      "entities": [
+        "Debian",
+        "Linux",
+        "Salvatore Bonaccorso",
+        "trixie"
+      ],
+      "comments": [
+        {
+          "by": "john_strinlai",
+          "text": "note that _any_ bugfix is assigned a cve, which makes for big numbers. > “Due to the layer at which the Linux kernel is in a system, almost any bug might be exploitable to compromise the security of the kernel… Because of this, the CVE assignment team is overly cautious and assign CVE numbers to any bugfix that they identify.” https://docs.kernel.org/process/cve.html \"number of cves\" is a useless…"
+        },
+        {
+          "by": "intrepidsoldier",
+          "text": "Just the beginning. AI is going to expose how fragile the entire computing infrastructure in our world is."
+        },
+        {
+          "by": "romaniitedomum",
+          "text": "An interesting observation that I encountered somewhere, I forget where, is that AIs when writing code introduce vulnerabilities at a rate similar to humans writing the same code. So we're looking at a massively accelerated volume of security vulnerabilities for the foreseeable future thanks to AI-assisted security research, and we can expect no reduction in new vulnerabilities from the AIs…"
+        },
+        {
+          "by": "kalessin",
+          "text": "I thought the \"Security in the LLM age\" talk by Greg Kroah-Hartman published this week from Kernel Recipes was pretty interesting: https://www.youtube.com/watch?v=NnV_cWeoo5Q"
+        },
+        {
+          "by": "Fordec",
+          "text": "This is great, more access did provide more eyes on these problems. But, does that all of these being found now call into question, not the open source model logic itself, but the ability of human eyes to find security issues? These vulnerabilities have been sitting here for however long, but how many thousands of humans did not find them before AI?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49926536,
+      "url": "https://svelte.dev/blog/sveltekit-3-is-here",
+      "hn": "https://news.ycombinator.com/item?id=49926536",
+      "title": "SvelteKit 3",
+      "time": 1790885663,
+      "points": 201,
+      "depth": [
+        {
+          "text": "an app framework got **more polish**, **safer types**, and help moving existing code over",
+          "tier": "simple"
+        },
+        {
+          "text": "Version **3.0** adds a **migration command** that moves as much existing code as possible and leaves a TODO list for the rest; configuration now lives in `vite.config.ts` instead of `svelte.config.js`, and `$lib` becomes `#lib`. **Remote functions still aren't ready** and require Async Svelte behind an experimental flag.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 65,
+      "terms": [
+        "framework",
+        "type safety",
+        "migration",
+        "alias",
+        "remote functions",
+        "Async Svelte",
+        "experimental flag"
+      ],
+      "entities": [
+        "SvelteKit",
+        "Svelte",
+        "Vite",
+        "Async Svelte",
+        "React",
+        "Vue",
+        "Next.js",
+        "Nuxt",
+        "Orb.net",
+        "Wails",
+        "Electron",
+        "Daestro",
+        "Opus 4.6-8",
+        "Golang",
+        "Svelte Summit"
+      ],
+      "comments": [
+        {
+          "by": "poetril",
+          "text": "After far too many hours using react, Svelte has become my favorite frontend framework. I’m seeing a lot of comments about how it stacks up in the LLM age. Prior to Opus 4.6-8 (and that era of model releases) they often struggled to get Svelte 4/5 code straight and mixed it up quite a bit. But having used it A LOT this year for personal projects, large work initiatives, and one-off web tools. I’m…"
+        },
+        {
+          "by": "thevivekshukla",
+          "text": "Svelte/SvelteKit is awesome, easy to learn and good DX. Svelte was my first frontend framework experience. Daestro's console is built on it."
+        },
+        {
+          "by": "jamies",
+          "text": "Such a great project. I converted my React-enjoying cofounders to Svelte/SvelteKit worried they wouldn't like it, but they absolutely love it! We use Svelte extensively at Orb.net for our website (duh), but also as a framework for our desktop and mobile apps. Wails serves our golang and SvelteKit/Svelte provide the UX. It's been tremendous for multiplatform productivity, and binaries are less…"
+        },
+        {
+          "by": "stillatit",
+          "text": "I love the hands-on developer experience of programming in Svelte. But since we're in October of 2026 I have to ask, is the vibe-coding experience in Svelte any different than in React? Can anyone with experience in both comment?"
+        },
+        {
+          "by": "killingtime74",
+          "text": "The thing I like about Svelte the most is that it's closer to raw HTML. Rather than having to keep up with all the React developments if you're not using it all the time."
+        }
+      ],
+      "image": "https://svelte.dev/blog/sveltekit-3-is-here/card.png"
+    },
+    {
+      "id": 49922674,
+      "url": "https://www.rtl-sdr.com/various-projects-independently-find-hidden-sdr-capabilities-in-esp32-microcontrollers/",
+      "hn": "https://news.ycombinator.com/item?id=49922674",
+      "title": "Various Projects Find Hidden SDR Capabilities in ESP32 Microcontrollers",
+      "time": 1790867262,
+      "points": 200,
+      "depth": [
+        {
+          "text": "someone found a **hidden feature** that lets ESP32 chips capture **raw radio signals**, beyond WiFi and Bluetooth",
+          "tier": "simple"
+        },
+        {
+          "text": "Several models can capture raw IQ samples across **2.2–2.7 GHz**, with the ESP32-C5 also covering **4.8–6.0 GHz**. For general PC use, most can only export snapshots, but the ESP32-S31 can stream continuously at up to **16 MS/s** over Gigabit Ethernet.",
+          "tier": "substance",
+          "data": [
+            [
+              "frequency range",
+              "2.2–2.7 GHz"
+            ],
+            [
+              "ESP32-C5 frequency range",
+              "4.8–6.0 GHz"
+            ],
+            [
+              "ESP32-S31 sample rate",
+              "up to 16 MS/s"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 30,
+      "terms": [
+        "SDR",
+        "IQ samples",
+        "GHz",
+        "MS/s"
+      ],
+      "entities": [
+        "ESP32",
+        "ESP32-C5",
+        "ESP32-S31"
+      ],
+      "comments": [
+        {
+          "by": "mallets",
+          "text": "So many $1 wireless ICs have a powerful \"SDR\", but will never be documented due to certification/compiliance/export-control reasons. The projects listed here rightly limited the scope to RX-only but Espressif might be forced to \"patch\" this away if arbitrary TX too is possible (or starts making headlines). Hope it doesn't come to that, more cheap options for RF-to-bits is always welcome. On a…"
+        },
+        {
+          "by": "BlackRabbit1",
+          "text": "As far as I follow the research process it's currently quite difficult to get all data (like the 80MSPS@10-Bit showcase on Reddit) to a computer without a FPGA+USB3. With the new ESP32-S31 we most likely can extract the I/Q data over its new 1 GBit/s interface. Guessing something around 20-40MSPS should work. These hack will most likely will be a revolution for 13cm ham radio. With the new 5GHz…"
+        },
+        {
+          "by": "xd1936",
+          "text": "Very exciting! > However, the current prototype uses the FPGA to clock the ESP32, which results in poor phase noise. Looks like this was solved five days ago: https://github.com/h0m3us3r/eSpDR/commit/41a0ffe279119df942e..."
+        },
+        {
+          "by": "mrheosuper",
+          "text": "The ESP32S3 support PSRAM, can we redirect the sample to PSRAM, then hooking Logic Analyzer on PSRAM, thus getting the sample directly, not through any digital interface.\n(There is cache before PSRAM, but should be trivial to sync)."
+        },
+        {
+          "by": "cellular",
+          "text": "Any way to finagle a LORA type system (ultra reliable using precise timing) using a few of these on each end?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49927100,
+      "url": "https://molily.de/web-dev-education/",
+      "hn": "https://news.ycombinator.com/item?id=49927100",
+      "title": "The death of web development education",
+      "time": 1790888857,
+      "points": 188,
+      "depth": [
+        {
+          "text": "a writer says **AI chatbots** are hollowing out **web development education** and its teachers",
+          "tier": "simple"
+        },
+        {
+          "text": "Axel Rauschmayer says his **book income** fell to zero, and course creators report **revenue down 50%+**. The author calls for **paid, human-led learning**; commenters disagree over whether chatbots improve education or hollow it out.",
+          "tier": "substance",
+          "data": [
+            [
+              "course creators' revenue drop",
+              "50%+"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say chatbots offer better, more personalized education and people should adapt; others say they let learners skip the learning itself and threaten educators' livelihoods.",
+      "comment_count": 144,
+      "terms": [
+        "GenAI",
+        "LLMs",
+        "Developer Relations",
+        "API reference",
+        "AI crawlers",
+        "nondeterministic"
+      ],
+      "entities": [
+        "Baldur Bjarnason",
+        "Axel Rauschmayer",
+        "2ality",
+        "ECMAScript",
+        "JavaScript",
+        "TypeScript",
+        "Salma Alam-Naylor",
+        "Josh W. Comeau",
+        "Kyle Cook",
+        "Web Dev Simplified",
+        "Rachel Andrew",
+        "Boot.dev",
+        "Anthropic",
+        "SHAP",
+        "XGBoost",
+        "Logistic Regression",
+        "Strava",
+        "Cloudflare Pages",
+        "Claude",
+        "ChatGPT",
+        "Programming with Mosh",
+        "Jeremy Keith",
+        "AJAX",
+        "Secrets of the JavaScript Ninja",
+        "Cocoa",
+        "BigNerdRanch",
+        "Swift",
+        "SwiftUI",
+        "John Sundell",
+        "tutsplus",
+        "HackingwithSwift",
+        "Rust",
+        "BASIC",
+        "HTML",
+        "Franz Kafka",
+        "Älis",
+        "Eklektrick"
+      ],
+      "comments": [
+        {
+          "by": "Silhouette",
+          "text": "I am genuinely starting to fear an almost universal dumbing down of humanity as a result of AI. It feels like so many people have just stopped caring about what they do or what they create. They no longer believe they need to know what they are doing or care about the results. The machines will do the knowing and caring for them. Or they won't - but what they produce without knowing or caring…"
+        },
+        {
+          "by": "santiagobasulto",
+          "text": "I'm on the same boat, negatively affected by AI. I'm the CEO and founder of an EdTech company and our B2C revenue has greatly decreased as a result of Gen AI. But unlike the author of this post (or cited authors) I'm not sore. AI is providing a much better education model for students. So it's us that we have to adapt, not complain that the world is changing. For example, in Machine Learning our…"
+        },
+        {
+          "by": "kayashaolu2",
+          "text": "So I teach a couple of web architecture classes, and it’s been my experience that there is still a desire to learn how to truly build quality systems because they want to learn how to build quality systems. I think our industry needs to transition to figure out what does it mean to build a quality system in the age of AI? It’s one thing to vibe code an application that works. But would you depend…"
+        },
+        {
+          "by": "__mharrison__",
+          "text": "As an educator and author, I feel Molly's pain (Anthropic owes me $60k for pirated books). My course and book sales have dropped significantly. I feel like much of the value in my book-based knowledge is harder to discover in AI agents. (One example might be inspecting SHAP values from XGBoost models and using that as feedback to feature engineering for a linear model (like Logistic Regression))…"
+        },
+        {
+          "by": "wagslane",
+          "text": "Founder of Boot.dev here: the industry is absolutely having a VERY rough time in 2026. Our revenue in particular is actually up in 2026 vs 2025, but modestly low double digit percent) vs 2025 being nearly double 2024. That said, I feel we're an exception in that we have been able to grow, mostly due to a complete doubling down on high quality human content, and trying to build experiences you…"
+        }
+      ],
+      "image": "https://molily.de/img/spidermum-gray-bg-square-small.png"
+    },
+    {
+      "id": 49922569,
+      "url": null,
+      "hn": "https://news.ycombinator.com/item?id=49922569",
+      "title": "Ask HN: Who is hiring? (October 2026)",
+      "time": 1790866927,
+      "points": 174,
+      "depth": [
+        {
+          "text": "companies are posting **tech jobs**, from **remote software roles** to onsite robotics and healthcare positions",
+          "tier": "simple"
+        },
+        {
+          "text": "The posting rules ask employers to include locations. **Stoke Space’s onsite software roles** sit alongside a **Tahoma AI founding-engineer role**; Tahoma builds agents that automate healthcare Revenue Cycle Management.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 178,
+      "terms": [
+        "agentic",
+        "full-stack",
+        "Revenue Cycle Management (RCM)"
+      ],
+      "entities": [
+        "Stoke Space",
+        "Tahoma AI"
+      ],
+      "comments": [
+        {
+          "by": "vikeri",
+          "text": "lovable | stockholm, london (in-person) | full-stack, frontend, backend, infra design, and ai research\nwe sponsor visas and have very generous relocation packages. lovable is building an agentic technical co-founder, we are the best way for non-technical people go from idea to a real software business with paying users. we need the best engineers in the world to join us and will compensate you…"
+        },
+        {
+          "by": "spiksla",
+          "text": "Odoo | Software Developer | Hybrid (Belgium, 3 days/week) | Full-time | Visa + €10k Signing Bonus | https://www.odoo.com/r/4zN Odoo builds open-source business apps used by millions. We're hiring software developers to work on our Python/PostgreSQL backend, fast JS framework, mobile apps, website builder, and more. Why join us: - €10k signing bonus - Visa sponsorship + relocation support…"
+        },
+        {
+          "by": "CatRunway",
+          "text": "Runway | Remote (see below) | Full-time | https://runway.com/ Runway is building foundational Real-World Intelligence that can understand, simulate and act in the world. We offer products and services built on-top of this intelligence to empower individuals and organizations to do more in the world. We're hiring across multiple roles, some specifically: Backend Engineer, API (remote)…"
+        },
+        {
+          "by": "azaslavsky",
+          "text": "Stoke Space | ONSITE in Seattle, WA / Moses Lake, WA / Cape Canaveral, FL | Software Engineer | Full-Time, Internship | Salary: $98k-$289k USD | https://www.stokespace.com Company: At Stoke, we believe a thriving space economy will enable a vibrant, sustainable, and equitable future here on Earth. That is why we’re building Nova, our fully and rapidly reusable launch vehicle. Designed for daily…"
+        },
+        {
+          "by": "mooreds",
+          "text": "FusionAuth | Principal Software Engineer, Senior Java Engineers, Account Executive, Customer Support Manager | Varies between REMOTE (in USA, also in Europe but only for the account exec position) and ONSITE in Denver, CO, USA, details in each job desc | Salary ranges for the Principal Software Engineer it is 225k-270k, but the Euro positions don't have them :( At FusionAuth, our mission is to…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49926628,
+      "url": "https://automatictransmission.khoury.northeastern.edu/index.html",
+      "hn": "https://news.ycombinator.com/item?id=49926628",
+      "title": "Automatic Transmission – a data-privacy study of connected vehicles",
+      "time": 1790886207,
+      "points": 160,
+      "depth": [
+        {
+          "text": "a study found **connected cars** and their apps sending **personal data** to outside companies",
+          "tier": "simple"
+        },
+        {
+          "text": "Researchers tested **21 vehicles** and **30 companion apps**: 19 vehicles contacted at least one third party over Wi-Fi, and seven apps sent sensitive identifiers to third parties. Pairing an app **roughly doubled** exposure to advertising and tracking companies on average.",
+          "tier": "substance",
+          "data": [
+            [
+              "vehicles tested",
+              "21"
+            ],
+            [
+              "companion apps tested",
+              "30"
+            ],
+            [
+              "vehicles contacting a third party over Wi-Fi",
+              "19 of 21"
+            ],
+            [
+              "apps transmitting sensitive identifiers",
+              "7 of 30"
+            ],
+            [
+              "exposure with app pairing",
+              "roughly doubled"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: one commenter says owners can simply stop using connected-vehicle features; another says cars still send telemetry and opting out can be hard or impossible.",
+      "comment_count": 153,
+      "terms": [
+        "connected vehicle",
+        "third party",
+        "telemetry",
+        "sensitive identifiers",
+        "VIN",
+        "Faraday tent",
+        "PII"
+      ],
+      "entities": [
+        "Automatic Transmission",
+        "Consumer Reports",
+        "Northeastern University",
+        "General Motors",
+        "Buick",
+        "Cadillac",
+        "Chevrolet",
+        "Dodge",
+        "Fiat",
+        "RAM",
+        "Fisker",
+        "Ford Motor Co.",
+        "Honda Motor Co.",
+        "Land Rover",
+        "Toyota Motor Corp.",
+        "Lexus",
+        "Toyota",
+        "Subaru",
+        "Lucid",
+        "Mercedes",
+        "Nissan",
+        "Rivian",
+        "Tesla",
+        "Volvo"
+      ],
+      "comments": [
+        {
+          "by": "hattar",
+          "text": "I currently drive a mid 2000s Ford truck, which runs great and meets my needs, but lately I got interested in minivans/people carriers. I pretty quickly realized that newer vehicles seem to not just record, but export a lot of driving data. The minivan market is small. There are really only 4-5 available and every single one sends telemetry data from the car and makes it hard/impossible to opt…"
+        },
+        {
+          "by": "mahboi",
+          "text": "if an owner decides they are uncomfortable with the data sharing described within them, they are faced with (arguably) unfair choices:\n- 01 accept the agreements regardless of their concerns\n- 02 stop using their car's connected-vehicle features - which includes remote start, the app, and other very useful features\n- 03 stop using the vehicle entirely\nEasy, I take #2. Is that it? This whole time…"
+        },
+        {
+          "by": "deepsun",
+          "text": "> As one notable exception, Honda improved its data collection practices to prevent sending precise geolocation to a third party associated with user tracking. I know what my next car will be."
+        },
+        {
+          "by": "prasadvara",
+          "text": "The ongoing theme of all these responses was shifting the blame to the consumer. As expected. I think consumers also need to push back on these practices, but the problem is, majority of consumers are tech savy but not privacy savy."
+        },
+        {
+          "by": "tartoran",
+          "text": "Hope to see a new market for disabling telemetry and phonehome features from cars. It should be legal to do so, if you own the car I suppose. I'm thinking that rigth now few pople even know how much spying their new car does to them but this will change and as awareness grows more and more people will want to do it."
+        }
+      ],
+      "image": null
+    }
+  ],
+  "glossary": {
+    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
+    "privilege escalation": "A flaw that lets someone get more control of a computer than they should have.",
+    "denial of service": "An attack or flaw that makes a service unavailable to people trying to use it.",
+    "kernel": "A small program that carries out a calculation on a computer's graphics chip or processor.",
+    "framework": "A collection of ready-made parts and rules that helps people build software.",
+    "type safety": "Checks that values are used in ways the code expects, catching some mistakes before the app runs.",
+    "migration": "Changing code to work with a newer version, sometimes with steps handled automatically.",
+    "alias": "A shorter stand-in name for a longer file path.",
+    "remote functions": "Tools for letting an app safely send work to a server and get an answer back.",
+    "Async Svelte": "A Svelte capability that remote functions need, and that currently has to be switched on experimentally.",
+    "experimental flag": "A setting you turn on to try a feature that isn't ready for ordinary use.",
+    "SDR": "Software-defined radio: a radio that uses software to handle signals instead of being limited to one fixed radio function.",
+    "IQ samples": "A pair of measurements that records a radio signal’s strength and position in its wave, so software can process it.",
+    "GHz": "Gigahertz: a unit for how quickly a radio wave repeats.",
+    "MS/s": "Millions of samples per second; it describes how quickly the device captures measurements of a signal.",
+    "GenAI": "Generative AI: tools that make new text, images, or code from instructions.",
+    "LLMs": "Large language models: computer programs trained on lots of writing that can produce text.",
+    "Developer Relations": "A company role focused on helping developers learn about and use its products.",
+    "API reference": "A guide to the ways a program can ask another program for information or actions.",
+    "AI crawlers": "Automated programs that visit websites and collect their content for AI systems.",
+    "nondeterministic": "Able to give different results even when asked the same thing twice.",
+    "agentic": "Describes AI that chooses steps and acts toward a task, rather than only answering a question.",
+    "full-stack": "Building both the parts of an app people use and the behind-the-scenes parts that make it work.",
+    "Revenue Cycle Management (RCM)": "The steps a healthcare provider takes to check coverage, bill for care, and collect payment.",
+    "connected vehicle": "A car with internet access that can keep communicating with its maker and other companies.",
+    "third party": "A company outside the carmaker that receives information from the car or its app.",
+    "telemetry": "Information a program sends back about how it is being used or whether it is working properly.",
+    "sensitive identifiers": "Personal details that can point to someone or their vehicle, such as an email, phone number, or vehicle ID.",
+    "VIN": "Vehicle Identification Number: a number that identifies a particular vehicle.",
+    "Faraday tent": "A tent that blocks radio signals; researchers used one to cut off the cars' cellular connections.",
+    "PII": "Personally Identifiable Information: details that could identify someone, such as an email or phone number."
+  }
+}
