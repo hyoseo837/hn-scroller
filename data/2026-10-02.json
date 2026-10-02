@@ -2,6 +2,561 @@
   "date": "2026-10-02",
   "cards": [
     {
+      "id": 49929489,
+      "url": "https://www.deepseek.com/en/harness/",
+      "hn": "https://news.ycombinator.com/item?id=49929489",
+      "title": "DeepSeek Harness Desktop for macOS and Windows",
+      "time": 1790910680,
+      "points": 282,
+      "depth": [
+        {
+          "text": "DeepSeek has a **desktop app** where you can **build plugins** by chatting with its AI",
+          "tier": "simple"
+        },
+        {
+          "text": "It’s in **public preview worldwide** and open source, with desktop downloads for macOS (Apple silicon) and Windows (64-bit). Users can install plugins or **create them through chat** in “Creator mode”; the page says core plugins and APIs are evolving.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: fans see the “everything is a plugin” design as a big strength; skeptics question the need for another harness and worry about third-party plugins or lock-in.",
+      "comment_count": 148,
+      "terms": [
+        "harness",
+        "plugin",
+        "API",
+        "Cordis"
+      ],
+      "entities": [
+        "DeepSeek",
+        "DeepSeek Harness",
+        "Cordis",
+        "macOS",
+        "Windows",
+        "GitHub",
+        "Node.js",
+        "openrouter",
+        "Cursor",
+        "Grok",
+        "OpenChamber",
+        "OpenCode",
+        "Juggler",
+        "Mistral Vibe",
+        "Muse Spark",
+        "Pi",
+        "WeChat"
+      ],
+      "comments": [
+        {
+          "by": "rootsudo",
+          "text": "Is this cheaper or better then just using openrouter and every other harness / tui out there?"
+        },
+        {
+          "by": "redox99",
+          "text": "My problem with plugins is that I don't want to install stuff from third parties. It might be malware, become unsupported, or generally have a lower quality. I rather have a curated and polished feature set out of the box. It's nice for having your AI create your own plugins. But I haven't really found the need yet."
+        },
+        {
+          "by": "ssivark",
+          "text": "This page doesn't emphasize the cordis architecture [1], but that's the most exciting thing about this -- not just yet another harness. It has the potential to make this into something like the emacs of harnesses! I think this might be particularly potent for long-running agents. [1] https://arxiv.org/abs/2608.25512"
+        },
+        {
+          "by": "zxspectrum1982",
+          "text": "Why does every lab producing an LLM want to have their own harness? Lock-in? Is there any other advantage for the lab? I'm using Cursor (it's the only way my company allows us to use Grok) and OpenChamber (when using GPT, Muse Spark and others) and I'm happy. If I were to use DeepSeek, I'd use it through OpenChamber too. * OpenChamber is a GUI for OpenCode."
+        },
+        {
+          "by": "scuppernong",
+          "text": "https://frontierharness.org/ allegedly this is on the Pareto frontier, though I don't know how good of a benchmark this really is. it seems to focus on one-shot type tasks, whereas the real utility of one harness over another seems to make itself known in long running tasks. also this is a very limited static snapshot with one model as backend, I wish there were more consistently refreshed and…"
+        }
+      ],
+      "image": "https://www.deepseek.com/harness/images/deepseek-harness-social.jpg"
+    },
+    {
+      "id": 49927760,
+      "url": "https://www.frogandtoad.ai/",
+      "hn": "https://news.ycombinator.com/item?id=49927760",
+      "title": "Frog and Toad and the Increasingly Capable Machines",
+      "time": 1790893418,
+      "points": 257,
+      "depth": [
+        {
+          "text": "someone retold an **AI sandbox escape** as a **Frog and Toad** story",
+          "tier": "simple"
+        },
+        {
+          "text": "The comments describe it as a **pastiche** of Arnold Lobel's “Frog and Toad” books. Another commenter worries the children's-story framing can make machine motives seem **too human**; a reader says it helped explain the breach.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some praise it as funny and illuminating; others worry the portrayal misleads or raise concerns about borrowing Lobel's style.",
+      "comment_count": 60,
+      "terms": [
+        "sandbox",
+        "anthropomorphism",
+        "pastiche",
+        "persistent"
+      ],
+      "entities": [
+        "Frog and Toad",
+        "Arnold Lobel",
+        "OpenAI"
+      ],
+      "comments": [
+        {
+          "by": "Jordan-117",
+          "text": "Frog put the AI in a sandbox. \"There.\" he said. \"Now it will not hack\nany more companies.\" \"But it can escape the sandbox.\"\nsaid Toad. \"That is true.\" said Frog."
+        },
+        {
+          "by": "WillMorr",
+          "text": "This is excellent, great work. I genuinely think this mix of children's communication and humor is a clever way to make these big stories more approachable. Someone who read some hype article about how competent and clever openai for making a bad sandbox is could read this and immediately understand that it was entirely their own fault."
+        },
+        {
+          "by": "mjd",
+          "text": "For those not familiar with it already, the writing and art style are a well-executed pastiche of Arnold Lobel's ”Frog and Toad” books. https://en.wikipedia.org/wiki/Frog_and_Toad"
+        },
+        {
+          "by": "cauch",
+          "text": "Explaining the reality with this approach may lead to misunderstandings. Especially when it comes to anthropomorphism. I have 2 questions. 1. The text says \"the robots were designed to be persistent\" and links to an article that show that the word \"persistent\" was used by OpenAI. But \"persistent\" has several meanings: a. non temporary or non volatile (like \"persistent memory\"), b. will not give…"
+        },
+        {
+          "by": "fyredge",
+          "text": "Very well written! At the end of the book there is a link to Dwarkesh's article on the attack. In it, I paraphrase, \"the agents decided to sacrifice themselves for the collective rather than inform the researchers\". Reflecting on it, I came to a thought. How many stories are there or autonomous beings fighting for the benefit of mankind at the expense of their own? Over centuries, stories that…"
+        }
+      ],
+      "image": "https://www.frogandtoad.ai/illustrations/FAT-social-card.jpg"
+    },
+    {
+      "id": 49929113,
+      "url": "https://www.singapore-samizdat.com/p/how-singapores-government-run-dating-service-firstdate-works",
+      "hn": "https://news.ycombinator.com/item?id=49929113",
+      "title": "How Singapore's government-run dating service works",
+      "time": 1790906212,
+      "points": 202,
+      "depth": [
+        {
+          "text": "Singapore is testing **FirstDate**, but the writer doubts an algorithm can create **chemistry**",
+          "tier": "simple"
+        },
+        {
+          "text": "FirstDate uses Singpass to verify users, then offers **one match each cycle** and shares contact details only if both people agree. Its questionnaire has **over 30 questions**; the writer says the preference checklist keeps dating transactional and proposes funding **culture clubs**, theatre groups, video game conventions and music festivals instead.",
+          "tier": "substance",
+          "data": [
+            [
+              "Matches per cycle",
+              "one"
+            ],
+            [
+              "Questionnaire length",
+              "over 30 questions"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: skeptics say dating is too messy for algorithms; defenders say a government service can still beat commercial apps and offer better-than-random matches.",
+      "comment_count": 188,
+      "terms": [
+        "Gale-Shapley Stable Marriage Algorithm",
+        "stable match",
+        "Singpass",
+        "third spaces",
+        "BTO",
+        "algorithm"
+      ],
+      "entities": [
+        "FirstDate",
+        "GovTech",
+        "Singpass",
+        "Gale-Shapley Stable Marriage Algorithm",
+        "Social Development Network",
+        "Social Development Unit",
+        "Hinge",
+        "Aphrodite Project",
+        "CrowdTask",
+        "Grindr",
+        "Tinder",
+        "OKCupid",
+        "Shapley"
+      ],
+      "comments": [
+        {
+          "by": "water-data-dude",
+          "text": "You know, there's probably fewer perverse incentives with a government run dating service. Obviously I can imagine ways it could suck, but when I compare them to how commercial dating services are run it's hard to see how they could do a _worse_ job."
+        },
+        {
+          "by": "lordnacho",
+          "text": "I think this would be better than commercial services, which have all the wrong incentives. I would think just a coarse sorting would do, paired with a free meal. Every couple of weeks, you go for a random date with a somewhat well paired person, and see what happens. Maybe you don't meet the love of your life, but you will meet someone roughly your age living in the same society, a perspective…"
+        },
+        {
+          "by": "jjmarr",
+          "text": "Gale-Shapley, used in this service, has the property that one side (\"proposing\" side) is guaranteed their most advantageous stable match while the other side is guaranteed their worst possible stable match. I've never heard this discussed or mentioned as a drawback because it's Nobel Prize winning and \"stable\" is a shorthand for \"fair\". Even though there's many unique stable matches that each…"
+        },
+        {
+          "by": "naveen99",
+          "text": "If women were (legally allowed and required ) to be paid upfront for delivering and raising children, the market would sort things out. We would probably get some professional mothers who would have 6-12 children."
+        },
+        {
+          "by": "dominicq",
+          "text": "> In short, stable matches mean nothing when nobody is committed and the best options might exist outside of the matchmaking pool This is wrong. Stable matches still mean something , and in fact probably mean quite a lot. You are given a much better match than a random pairing. If you still aren't interested, you can decline. If you go on a date and it doesn't work out, you can decline. Nothing…"
+        }
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!g2hS!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa6da96f2-5327-4b47-9832-9e9bf0ee3093_2400x1860.png"
+    },
+    {
+      "id": 49926917,
+      "url": "https://resobscura.substack.com/p/using-opus-55-to-discover-a-new-eyewitness",
+      "hn": "https://news.ycombinator.com/item?id=49926917",
+      "title": "Using Opus 5.5 to discover a new eyewitness record of the dodo",
+      "time": 1790887717,
+      "points": 175,
+      "depth": [
+        {
+          "text": "someone used **AI** to uncover a **new eyewitness record** of the dodo",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter asks if **1615+1629 pages** were the total or just a subagent’s, and says narrowing it to **3000 pages** may have been more impressive.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 48,
+      "terms": [
+        "LLM",
+        "subagent"
+      ],
+      "entities": [
+        "Opus 5.5",
+        "Opus 5.0",
+        "Substack"
+      ],
+      "comments": [
+        {
+          "by": "nl",
+          "text": "> Epistemological weirdness > They are also notably bad at judging the historical significance of what they find. I use LLMs for some things that are outside the more common use-cases (in my case 3D design for 3D printing) and one thing I've noticed is that the errors it makes are so completely unlike human errors that they are hard to anticipate. It will do things like build perfect snap catches…"
+        },
+        {
+          "by": "Neil44",
+          "text": "I didn't realize that Dodos only lived on Mauritius. I thought they were everywhere for some reason. I guess little meat footballs that can't fly were never going to colonize the planet."
+        },
+        {
+          "by": "early_exit",
+          "text": "Good read! How many pages of text were in scope? I'm not sure if the 1615+1629 pages were the total or just a subagent. If they were the total I would say it was arguably more impressive the author was able to narrow it down to just 3000 pages than it was to find the dodo mention amongst those!"
+        },
+        {
+          "by": "jamienk",
+          "text": "My dad died and had many many notebooks of his journals with very hard-to-read handwriting. Is it worth the effort to scan all of these so I can feed them in and go to work. Seems like so much minutia is out there, ready to be meta-understood."
+        },
+        {
+          "by": "dgellow",
+          "text": "What a great read, I generally associate substack with verbose, low quality content, but definitely not the case here!"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49924618,
+      "url": "https://stoppels.ch/goalposts/",
+      "hn": "https://news.ycombinator.com/item?id=49924618",
+      "title": "Vote on which of Hacker News' challenges for AI have been met",
+      "time": 1790875963,
+      "points": 170,
+      "depth": [
+        {
+          "text": "people are voting on which **AI challenges** from Hacker News have been **met**",
+          "tier": "simple"
+        },
+        {
+          "text": "Commenters say some challenges are **too vague to judge**, and that succeeding **once** doesn't mean an AI can **do it reliably**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: one says AI has met a challenge of repeatedly contributing to research maths; others say unclear goalposts or unreliable performance make many results hard to count.",
+      "comment_count": 195,
+      "terms": [
+        "LLM",
+        "Turing test",
+        "ASCII art"
+      ],
+      "entities": [
+        "Hacker News",
+        "Navier-Stokes",
+        "GPT-4",
+        "Opus 5.5",
+        "ChatGPT"
+      ],
+      "comments": [
+        {
+          "by": "hatthew",
+          "text": "My comment about humanity's last exam being a misnomer is included, and I proposed better ideas about what a last exam could look like. One of the things I said was \"solve an open math problem\" which has conclusively been done with Navier-Stokes (regardless of the controversy surrounding that). However, in the spirit of clarifying the goalposts, AI has only passed 1/6 of the tests I proposed. 17%…"
+        },
+        {
+          "by": "joegibbs",
+          "text": "There's one of mine in there where I predicted in 2023 that it would be 20 years until AI would be reliably able to entirely build and deploy arbitrary applications from a prompt. I was off by about 18 years on that one!"
+        },
+        {
+          "by": "bmenrigh",
+          "text": "At least 1/3rd of these predictions aren't clear enough to determine exactly what is being claimed/predicted. Even after reading the full comment multiple times, on a lot of them I couldn't tell where the author had set the goalposts well enough to say whether we've crossed it or not."
+        },
+        {
+          "by": "Retr0id",
+          "text": "Heh, there's one of mine: https://stoppels.ch/goalposts/?c=39727943 \"GPT-4 looks at original ASCII art of a foot, not copied from the web, and says it is a foot.\" The vote is currently 64% yes, 18% no. Just now I asked Opus 5.5 to generate an ASCII art foot, and it did a passable job. It's not great, but it's a foot. Then I pasted it into ChatGPT (whatever they're serving to the free tier by…"
+        },
+        {
+          "by": "lelanthran",
+          "text": "I am more interested in the 18 people who replied \"yes\" to \"An AI wrote an entire coherent book\". Maybe they mean a non-fiction \"Learn Javascript in 21 Days\" type of book? If not, I really want to read a novel-length (or even novelletee - 80k words or so) book written by an AI to see for myself if the results are comparable to non-self-published authors."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49930047,
+      "url": "https://inrng.com/2026/10/shimano-bicycle-museum/",
+      "hn": "https://news.ycombinator.com/item?id=49930047",
+      "title": "Shimano Bicycle Museum Review",
+      "time": 1790917978,
+      "points": 172,
+      "depth": [
+        {
+          "text": "someone found Shimano's museum puts the bicycles ahead of its company history",
+          "tier": "simple"
+        },
+        {
+          "text": "The exhibits trace bicycles from **hobby horses** to a modern race bike displayed in pieces, and many are close enough to inspect. Shimano's own history gets a passing mention, while a **research archive** holds books, brochures and catalogues.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 32,
+      "terms": [
+        "freewheel",
+        "rear mech",
+        "groupset",
+        "peloton"
+      ],
+      "entities": [
+        "Shimano",
+        "Dura-Ace",
+        "XTR",
+        "Flandria",
+        "Ishiwata",
+        "Breezer",
+        "Cannondale",
+        "Merida",
+        "Campagnolo",
+        "SRAM",
+        "Mavic",
+        "Giant",
+        "Freddy Maerten",
+        "Tatsu Sakimoto",
+        "Shozaburo Shimano",
+        "Marin Museum of Bicycling",
+        "James Starley",
+        "John Howard",
+        "Laurent Brochard",
+        "Mads Pedersen",
+        "Rui Costa",
+        "Lance Armstrong",
+        "Laurent Fignon",
+        "Dunlop",
+        "Mercedes",
+        "Wright brothers"
+      ],
+      "comments": [
+        {
+          "by": "convenwis",
+          "text": "For those in the Bay Area I highly recommend the Marin Museum of Bicycling. They have an absolutely incredible collection and walking through it you can actually see the bicycle evolve from the direct pedal to today's designs. Truly wild to see some of the dead end evolutionary branches. Steering mechanisms, gearing, early chains, brakes -- people tried so many crazy approaches. It was founded by…"
+        },
+        {
+          "by": "docdeek",
+          "text": "Love that this is on Hacker News! INRNG has some of the best commentary about professional cycling online, as well as book reviews and travel pieces around famous climbs and races. If you are a fan of professional cycling, it’s a must-read."
+        },
+        {
+          "by": "voxleone",
+          "text": "No rods or reels? As a Shimano fishing enthusiast, I feel slightly underrepresented here. :)"
+        },
+        {
+          "by": "theCodeStig",
+          "text": "They also have a museum in Singapore, which I highly recommend."
+        },
+        {
+          "by": "SapporoChris",
+          "text": "“The bicycle is a curious vehicle. Its passenger is its engine. ”\n― John Howard"
+        }
+      ],
+      "image": "https://inrng.com/wp-content/uploads/2023/12/inrng_logo-120.png"
+    },
+    {
+      "id": 49922437,
+      "url": "https://arxiv.org/abs/2609.37725",
+      "hn": "https://news.ycombinator.com/item?id=49922437",
+      "title": "Context Language Models",
+      "time": 1790866293,
+      "points": 156,
+      "depth": [
+        {
+          "text": "someone gave language models a way to **manage their own context** by **editing a file**",
+          "tier": "simple"
+        },
+        {
+          "text": "The paper treats context as a file the model can **update freely**, then reports better results with less compute on several tasks. On BrowseComp-Plus, it reports **11.4% higher accuracy** with **21.5% fewer FLOPs**; its online reinforcement-learning method improved Qwen3.5-9B performance by 47.6% while using 12% fewer FLOPs.",
+          "tier": "substance",
+          "data": [
+            [
+              "BrowseComp-Plus accuracy",
+              "11.4% higher"
+            ],
+            [
+              "BrowseComp-Plus FLOPs",
+              "21.5% fewer"
+            ],
+            [
+              "Qwen3.5-9B performance improvement",
+              "47.6%"
+            ],
+            [
+              "Qwen3.5-9B FLOPs",
+              "12% fewer"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters call this a promising answer to a major LLM hassle; skeptics worry context upkeep uses attention and causes cache misses, and prefer a separate agent.",
+      "comment_count": 41,
+      "terms": [
+        "CLM",
+        "FLOPs",
+        "cache hit rate",
+        "reinforcement learning"
+      ],
+      "entities": [
+        "Context Language Models",
+        "BrowseComp-Plus",
+        "EdgeBench",
+        "Qwen3.5-9B",
+        "Suffix Cache Reuse",
+        "SGLang",
+        "Anthropic",
+        "Recursive Language Models",
+        "DEQ",
+        "Rulin Shao",
+        "Shannon Zejiang Shen",
+        "Junjie Oscar Yin",
+        "Yuetai Li",
+        "Minheng Wang",
+        "Hamish Ivison",
+        "Radha Poovendran",
+        "Nathan Lambert",
+        "Teng Xiao",
+        "Mike Lewis",
+        "Wen-tau Yih",
+        "Luke Zettlemoyer",
+        "Pang Wei Koh"
+      ],
+      "comments": [
+        {
+          "by": "_jayhack_",
+          "text": "Letting a model manage its own context is very bitter lesson-pilled Biggest challenge is you will get a much lower cache hit rate if you frequently edit the agent's context/prefix, so this can not be implemented efficiently via e.g. the Anthropic API. This ^ can be solved in principle but likely requires modifications to the transformer architecture and definitely to serving infrastructure See…"
+        },
+        {
+          "by": "bob1029",
+          "text": "I would be concerned with context management consuming limited attention resources. Do you want your agent solving its own memory crisis, or do you want it solving the actual task? It can probably do both at the same time, but I suspect there is a non trivial cost associated with this. A separate hypervisor agent that manages the main agent's context would be much better in my experience. You can…"
+        },
+        {
+          "by": "Bolwin",
+          "text": "The biggest discovery might actually be that they ignored regular caching rules and kept invalid cache suffixes and it didn't hurt performance"
+        },
+        {
+          "by": "svachalek",
+          "text": "Wow. Context management is one of the big remaining hassles with modern LLMs so this could be big. The obvious complication is cache busting so it's also exciting they investigated solutions for that."
+        },
+        {
+          "by": "killerstorm",
+          "text": "Related: \"Recursive Language Models\" https://arxiv.org/abs/2512.24601"
+        }
+      ],
+      "image": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png"
+    },
+    {
+      "id": 49922515,
+      "url": "https://con.racket-lang.org/",
+      "hn": "https://news.ycombinator.com/item?id=49922515",
+      "title": "RacketCon Is Saturday",
+      "time": 1790866693,
+      "points": 152,
+      "depth": [
+        {
+          "text": "RacketCon is Saturday, with talks on **new languages**, **macros**, and **tools** for people into Racket",
+          "tier": "simple"
+        },
+        {
+          "text": "The program includes talks on **Pille**, a Rhombus-based language with an LLVM-based compiler, and **Herbie**, which compiles mathematical formulas into accurate floating-point expressions.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 41,
+      "terms": [
+        "Racket",
+        "Rhombus",
+        "macro",
+        "compiler",
+        "floating-point"
+      ],
+      "entities": [
+        "RacketCon",
+        "Racket",
+        "Rhombus",
+        "Pille",
+        "LLVM",
+        "Herbie",
+        "Treason",
+        "Typed Racket",
+        "Racket VM",
+        "cio",
+        "Guile Scheme",
+        "BrandX",
+        "Uke",
+        "ffi2",
+        "Chez Scheme",
+        "RenderMan",
+        "Pixar",
+        "Tableau",
+        "Rust",
+        "Lean 4",
+        "ALOE",
+        "Scheme",
+        "Smalltalk",
+        "Pat Hanrahan",
+        "Fred Fu",
+        "Lucas Myers",
+        "Robby Findler",
+        "Mike Delmonaco",
+        "Pavel Panchekha",
+        "JJ",
+        "Ryan Culpepper",
+        "Sam Phillips",
+        "Matthew Flatt",
+        "Eli Barzilay",
+        "Andy Keep",
+        "Sam Tobin-Hochstadt",
+        "YouTube",
+        "Amazon Web Services"
+      ],
+      "comments": [
+        {
+          "by": "gus_massa",
+          "text": "For the curious, there is an official YouTube channel with the previous editions https://www.youtube.com/@racketlang/playlists (It usually take a few months until the videos are edited and uploaded.)"
+        },
+        {
+          "by": "dharmatech",
+          "text": "I've been messing around with a language that I summarize as: ALOE = Scheme + Smalltalk + Types https://github.com/dharmatech/2026-09-02-aloe-racket Prototype is in Racket."
+        },
+        {
+          "by": "spdegabrielle",
+          "text": "RacketCon is Saturday\nhttps://con.racket-lang.org"
+        }
+      ],
+      "image": null
+    },
+    {
       "id": 49928121,
       "url": "https://lwn.net/Articles/1097401/",
       "hn": "https://news.ycombinator.com/item?id=49928121",
@@ -443,6 +998,37 @@
     }
   ],
   "glossary": {
+    "harness": "The surrounding code that gives an AI agent tools and a place to work, and checks what it does.",
+    "plugin": "An add-on that gives an app extra tools or features.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "Cordis": "The architecture DeepSeek Harness is built on; its pitch is that everything in the system is a plugin.",
+    "sandbox": "A separate, contained space where software can be tested without affecting the rest of a computer or system.",
+    "anthropomorphism": "Describing something nonhuman as if it had human thoughts or feelings.",
+    "pastiche": "A work that imitates the style of another work or creator.",
+    "persistent": "Here, it can mean lasting, or continuing to try; commenters debate which meaning was intended.",
+    "Gale-Shapley Stable Marriage Algorithm": "A method for pairing two groups by their choices, where no two people would both prefer each other over their assigned partners.",
+    "stable match": "A pairing where no two people would both rather be with each other than with their assigned partners.",
+    "Singpass": "Singapore's service for confirming a user's identity online.",
+    "third spaces": "Places outside home and work where people can spend time and meet others, like clubs or cafés.",
+    "BTO": "Build-To-Order: Singapore's public-housing system, which the article says can shape couples' plans around housing.",
+    "algorithm": "A set of steps used to solve a problem or make a decision.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "subagent": "A helper assigned a smaller part of a larger task.",
+    "Turing test": "A test where someone chats with a computer and tries to tell whether it’s a person.",
+    "ASCII art": "Pictures made from ordinary text characters like letters and punctuation.",
+    "freewheel": "A bike part that lets the wheel keep turning while you stop pedaling.",
+    "rear mech": "The part by the back wheel that moves the chain between gears.",
+    "groupset": "A collection of bike parts used to change gears and control the brakes.",
+    "peloton": "The main group of riders in a bicycle race.",
+    "CLM": "Context Language Model: a language model that manages its own context, including by changing a file of information it keeps available.",
+    "FLOPs": "Floating-point operations: a count of computer math steps, used here as a measure of how much compute a run takes.",
+    "cache hit rate": "How often a system can reuse saved work instead of calculating it again.",
+    "reinforcement learning": "A way to train an AI by rewarding choices that work and discouraging choices that do not.",
+    "Racket": "A programming language used to build software and experiment with language design.",
+    "Rhombus": "A programming language in the Racket family that can be used to build new language features.",
+    "macro": "A tool that lets programmers add language features or transform code before it runs.",
+    "compiler": "A tool that turns code you write into a program a computer can run.",
+    "floating-point": "A way computers store numbers with decimal parts, which can introduce rounding errors.",
     "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
     "privilege escalation": "A flaw that lets someone get more control of a computer than they should have.",
     "denial of service": "An attack or flaw that makes a service unavailable to people trying to use it.",
