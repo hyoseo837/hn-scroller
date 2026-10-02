@@ -27,6 +27,48 @@ addEventListener("pageshow", (event) => {
   if (event.persisted && !sheet.hidden) closeSheet();
 });
 
+// Swipe down closes a sheet, from its top: the sheet follows the finger, and on
+// release closes on a flick or a long enough pull, or springs back. Mid-list, a
+// swipe down is the sheet's own scroll. FLICK and PULL are js/swipe.js's.
+let pull = null; // the touch dragging the sheet down
+sheet.addEventListener(
+  "touchstart",
+  (event) => {
+    const t = event.touches[0];
+    pull = event.touches.length > 1 || sheet.scrollTop > 0 ? null : { y: t.clientY, dy: 0, v: 0, at: event.timeStamp, on: false };
+  },
+  { passive: true },
+);
+sheet.addEventListener(
+  "touchmove",
+  (event) => {
+    if (!pull) return;
+    const t = event.touches[0];
+    const dy = t.clientY - pull.y;
+    if (!pull.on && dy <= 0) {
+      pull = null; // up first: scrolling the sheet
+      return;
+    }
+    pull.on = true;
+    event.preventDefault();
+    const dt = event.timeStamp - pull.at;
+    if (dt > 0) pull.v = 0.8 * ((dy - pull.dy) / dt) + 0.2 * pull.v;
+    pull.at = event.timeStamp;
+    pull.dy = dy;
+    sheet.style.transition = "none";
+    sheet.style.transform = `translateY(${Math.max(0, dy)}px)`;
+  },
+  { passive: false },
+);
+function letGo(event) {
+  const done = pull?.on && (pull.v > FLICK && event.timeStamp - pull.at < 100 || pull.dy > PULL * sheet.offsetHeight);
+  if (pull?.on) sheet.style.transition = sheet.style.transform = ""; // the CSS transition takes it from here
+  pull = null;
+  if (done) closeSheet();
+}
+sheet.addEventListener("touchend", letGo);
+sheet.addEventListener("touchcancel", letGo);
+
 btnCmt.addEventListener("click", () => {
   const card = slides[post]?.card;
   openSheet(T.comments(card.comment_count), (box) => {

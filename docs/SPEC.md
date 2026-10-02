@@ -81,7 +81,7 @@ Comments and glossary (each with a count) and share, bottom-right where a thumb 
 to explain. A header carries the name, the edition date (opens the calendar), the position in the
 day (`3/24` — where you are, not what is unread) and the depth dots.
 
-**Comments** — bottom sheet, reel-style. Top-level only, HN's own order, replies dropped (no threading
+**Comments** — bottom sheet, reel-style; a swipe down closes it, as it does the glossary. Top-level only, HN's own order, replies dropped (no threading
 UI). Verbatim text, plus a generated line that **names the camps rather than averaging them**. Needs an
 empty state: high score does not imply a thread (measured: one post at 587 points had 3 comments).
 
@@ -98,7 +98,7 @@ the card. Share sheet on a phone, clipboard elsewhere. Previews: `/` in English,
 
 - An edition is dated by its **UTC run date**. The job runs every 6h; each run puts its newly
   qualifying posts in front of that day's file, best first, never replacing it.
-- Opens at the top, latest run first; the last card viewed is **offered, not forced** ("Continue from <day>").
+- Opens at the top, latest run first; the last card viewed is **offered, not forced** ("Continue from <day>"), gone after two posts.
 - **No caught-up card.** Meeting a card you already read is the signal. Older editions load below
   today, one at a time, each behind its own date divider; nothing older is ever counted as unread.
 - **One feed**: the calendar jumps to a day in it, newer days above. **No backlog**: away a week → today.

@@ -70,6 +70,8 @@ feed.addEventListener(
   () => {
     const next = Math.round(feed.scrollTop / feed.clientHeight);
     if (next === post) return;
+    // Scrolled two posts past the offer: ignored, so it goes. A jump (calendar, link) moves further and counts nothing.
+    if (!resume.hidden && Math.abs(next - post) === 1 && ++passed >= 2) offerContinue(false);
     const left = feed.children[post];
     if (left) left.scrollLeft = 0; // next post always opens at depth 1
     post = next;
@@ -105,6 +107,7 @@ feed.addEventListener(
 // not forced: new cards sit above it, and a forgotten date is a long scroll.
 let lastSeen = null; // { date, id } of the last card viewed, from the previous visit
 let rememberTimer;
+let passed = 0; // posts scrolled past while the offer shows
 function remember() {
   const slide = slides[post];
   if (!slide?.card) return;
@@ -122,6 +125,7 @@ function offerContinue(on) {
 }
 function offer(seen) {
   lastSeen = seen;
+  passed = 0;
   resumeGo.textContent = T.continueFrom(short(seen.date));
   offerContinue(true);
 }
