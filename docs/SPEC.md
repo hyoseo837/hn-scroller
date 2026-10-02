@@ -98,7 +98,7 @@ the card. Share sheet on a phone, clipboard elsewhere. Previews: `/` in English,
 
 - An edition is dated by its **UTC run date**. The job runs every 6h; each run puts its newly
   qualifying posts in front of that day's file, best first, never replacing it.
-- Opens at the top, latest run first; the last card viewed is **offered, not forced** ("Continue from <day>"), gone after two posts.
+- Opens at the top, latest run first; the last card viewed is **offered, not forced** ("Continue from <day>"), gone after three posts.
 - **No caught-up card.** Meeting a card you already read is the signal. Older editions load below
   today, one at a time, each behind its own date divider; nothing older is ever counted as unread.
 - **One feed**: the calendar jumps to a day in it, newer days above. **No backlog**: away a week → today.

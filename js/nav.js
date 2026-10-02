@@ -70,8 +70,8 @@ feed.addEventListener(
   () => {
     const next = Math.round(feed.scrollTop / feed.clientHeight);
     if (next === post) return;
-    // Scrolled two posts past the offer: ignored, so it goes. A jump (calendar, link) moves further and counts nothing.
-    if (!resume.hidden && Math.abs(next - post) === 1 && ++passed >= 2) offerContinue(false);
+    // Scrolled three posts past the offer: ignored, so it goes. A jump (calendar, link) moves further and counts nothing.
+    if (!resume.hidden && Math.abs(next - post) === 1 && ++passed >= 3) offerContinue(false);
     const left = feed.children[post];
     if (left) left.scrollLeft = 0; // next post always opens at depth 1
     post = next;
