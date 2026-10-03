@@ -2,6 +2,304 @@
   "date": "2026-10-03",
   "cards": [
     {
+      "id": 49943034,
+      "url": "https://tej.as/blog/aleph-alpha-kolibri",
+      "hn": "https://news.ycombinator.com/item?id=49943034",
+      "title": "Kolibri is an open-weight LLM from Aleph Alpha for German and English",
+      "time": 1791024231,
+      "points": 307,
+      "depth": [
+        {
+          "text": "Aleph Alpha made **Kolibri**, an **open-weight model** for **German and English** that runs on your servers",
+          "tier": "simple"
+        },
+        {
+          "text": "Kolibri has **78.1 billion parameters**, but only **3.46 billion work per token**. The full model still has to fit in memory, and the article says it’s **not the best coding agent**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Total parameters",
+              "78.1 billion"
+            ],
+            [
+              "Parameters used per token",
+              "3.46 billion"
+            ],
+            [
+              "Weights memory",
+              "about 78 GB"
+            ],
+            [
+              "Native context window",
+              "262,144 tokens"
+            ],
+            [
+              "Tested context length",
+              "1,048,576 tokens"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters praise the report’s openness and the European effort; others question the sovereignty pitch and criticize the model’s comparisons.",
+      "comment_count": 126,
+      "terms": [
+        "open-weight",
+        "LLM",
+        "MoE",
+        "token",
+        "tokenizer",
+        "context window",
+        "GPU",
+        "RAG",
+        "sovereign AI",
+        "Pareto frontier"
+      ],
+      "entities": [
+        "Aleph Alpha",
+        "Kolibri",
+        "German",
+        "English",
+        "Hugging Face",
+        "NVIDIA",
+        "Qwen3.5 35B-A3B",
+        "Qwen3.8 27B",
+        "Cohere",
+        "Mistral",
+        "Tejas Kumar",
+        "IBM"
+      ],
+      "comments": [
+        {
+          "by": "miellaby",
+          "text": "The paper explains absolutely everything as if it was a tutorial \"how to made your own modern agentic LLM\". They even tell how they made their dataset. https://aleph-alpha.com/downloads/tech-report.pdf ; It's the first time I see this level of openness."
+        },
+        {
+          "by": "niemandhier",
+          "text": "I think at the moment the main thing a sovereign AI model needs to be good at is auditing the results of other models. Right now one could run an open model for most government applications and it would be good enough, you just cannot trust any of these. So having a sovereign controlled model audit the first one would basically act like a “trust adapter”. If the second model is cheap and fast…"
+        },
+        {
+          "by": "tomComb",
+          "text": "For a post to make such a big deal about sovereignty it is a bit misleading to not mention that the company is slated to be merged with Cohere, a Canadian company. And that is a good thing - no need to hide it. Given the growing cost of keeping up, these few non-US, non-Chinese companies really need to do more sharing of efforts and costs. Canada too is very much in need of sovereign AI options…"
+        },
+        {
+          "by": "spijdar",
+          "text": "The absence of any comparison to Qwen3.8 Flash, another MoE model with a small-ish (6B) number of active parameters, is pretty striking. Instead, it's compared with Qwen3-Next 80B-A3B, a model released almost a full year ago. I get that doesn't invalidate the real \"point\" of the model, but..."
+        },
+        {
+          "by": "9dev",
+          "text": "Aleph Alpha is just a sad joke by now. The talent isn't there anymore, they never managed to catch up to the other labs, failed to deliver on several projects, and by now are just a cash grab for the investors."
+        }
+      ],
+      "image": "https://tej.as/img/og/blog/aleph-alpha-kolibri.png"
+    },
+    {
+      "id": 49942706,
+      "url": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
+      "hn": "https://news.ycombinator.com/item?id=49942706",
+      "title": "Kolibri Has Landed: A Sovereign Open-Weight Model",
+      "time": 1791020164,
+      "points": 202,
+      "depth": [
+        {
+          "text": "Aleph Alpha released **Kolibri**, an open-weight German-English model built for **sovereign AI**",
+          "tier": "simple"
+        },
+        {
+          "text": "It has **78B total parameters**, with 3B active, and supports context lengths up to **1M tokens**. The **full weights** are downloadable on Hugging Face under the Apache 2.0 license terms.",
+          "tier": "substance",
+          "data": [
+            [
+              "total parameters",
+              "78B"
+            ],
+            [
+              "active parameters",
+              "3B"
+            ],
+            [
+              "maximum context length",
+              "1M tokens"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some welcome the open release and say sovereignty deserves more attention; critics say Kolibri scores below Qwen on its own German benchmark and question its data and sovereignty claims.",
+      "comment_count": 32,
+      "terms": [
+        "open-weight",
+        "sovereignty",
+        "Mixture-of-Experts",
+        "parameters",
+        "context length",
+        "Apache 2.0",
+        "benchmark"
+      ],
+      "entities": [
+        "Aleph Alpha",
+        "Kolibri",
+        "Hugging Face",
+        "Apache 2.0",
+        "Qwen3.8"
+      ],
+      "comments": [
+        {
+          "by": "kkm",
+          "text": "Thank you Aleph Alpha team for making it open. We as many other’s were curious to try and benchmark it. On that note, as a small gesture of support, we’ve hosted and made Kolibri-1 free for anyone to try for the next few days. No GPU. No setup. Just try it.\ntesseracted.com/kolibri-1-chat/ https://x.com/konarkmodi/status/2106373678589960260?s=46"
+        },
+        {
+          "by": "amoshebb",
+          "text": "Qwen3.8 27B beats Kolibri 79.9 vs 70.8 in German in Kolibri's harness on Kolibri's benchmark. Also, once the Cohere takeover is complete will they still be able to use this \"sovereign\" claim despite being 90% owned and 100% operated out of Toronto?"
+        },
+        {
+          "by": "james45",
+          "text": "the sovereignty topic needs more attention in general so great to see. self-hosting the model is one piece of sovereignty, but how do we handle the rest of the agent stack - embeddings, retrieval, memory, etc. Has anyone put together a practical agent stack that's 100% sovereign, where they control it all?"
+        },
+        {
+          "by": "dosinga",
+          "text": "> The second was to rephrase German documents we already had. An LLM rewrites an organic German document in the style of an encyclopedia entry, a Q&A dialogue or a text passage, preserving its content. \"an LLM\" -- does that mean they are effectively learning from that LLM the German encyclopedic style? makes me wonder which LLM and how that is really sovereign."
+        },
+        {
+          "by": "tornikeo",
+          "text": "I love how the mere mention of a \"sovereign\" in LLM's announcement is the declaration of defeat. This thing is worse than a Qwen3.8 27B."
+        }
+      ],
+      "image": "https://aleph-alpha.com/_astro/00-cover.Du35XCGh_zJqw.jpeg"
+    },
+    {
+      "id": 49933230,
+      "url": "https://bigthink.com/books/a-fabulous-debt/",
+      "hn": "https://news.ycombinator.com/item?id=49933230",
+      "title": "Venice’s failed war against Constantinople led to the first bond market",
+      "time": 1790947067,
+      "points": 157,
+      "depth": [
+        {
+          "text": "Venice turned a **failed war loan** into tradable debt, creating the **first bond market**",
+          "tier": "simple"
+        }
+      ],
+      "camps": null,
+      "comment_count": 52,
+      "terms": [
+        "bond market",
+        "prestiti",
+        "public debt",
+        "collateral",
+        "fiat currencies",
+        "liquidity",
+        "equity",
+        "information asymmetry"
+      ],
+      "entities": [
+        "Doge Vitale II Michiel",
+        "Manuel I Komnenos",
+        "Zaccaria Stagnario",
+        "Marco Casolo",
+        "Robin Wigglesworth",
+        "A Fabulous Debt",
+        "Great Council",
+        "Big Think",
+        "The Merchant of Venice"
+      ],
+      "comments": [
+        {
+          "by": "digilypse",
+          "text": "A few decades later, Venice brilliantly exploited the Fourth Crusade’s debt (and the fact that they built all the Crusade’s ships) to proceed on a debt-collection/revenge tour along the Adriatic, sacking Zara, getting the entire Crusade excommunicated, and ultimately diverting the entire force to Constantinople where they sacked the city in 1204 and replaced the government with the Latin Empire…"
+        },
+        {
+          "by": "veqq",
+          "text": "The author was on Top Tradders Unplugged 2 weeks ago, giving a nice hour long summary, which inspired me to read the book: https://www.youtube.com/watch?v=jsOUuihvpzs"
+        },
+        {
+          "by": "BrtByte",
+          "text": "It's funny how many \"financial innovations\" seem to start as emergency hacks"
+        },
+        {
+          "by": "almostkindatech",
+          "text": "The author is also part of the team behind FT Alphaville (free but requires registration):\nhttps://www.ft.com/alphaville"
+        },
+        {
+          "by": "Bootvis",
+          "text": "Discussed here as well: https://podcasts.apple.com/nl/podcast/the-story-of-money/id1..."
+        }
+      ],
+      "image": "https://bigthink.com/wp-content/uploads/2026/09/fabulous-debt_excerpt.jpg?resize=1200,630"
+    },
+    {
+      "id": 49919676,
+      "url": "https://xenaproject.wordpress.com/2026/10/01/to-grieve-or-not-to-grieve/",
+      "hn": "https://news.ycombinator.com/item?id=49919676",
+      "title": "To grieve, or not to grieve?",
+      "time": 1790848066,
+      "points": 153,
+      "depth": [
+        {
+          "text": "a mathematician argues **AI is changing mathematics fast**, but humans still have **new territory** to explore",
+          "tier": "simple"
+        },
+        {
+          "text": "The author says AI has shown strength at **problem solving**, with far less evidence for **theory building** or conjecture formulation. They want OpenAI to **publish its collection of theorems**, and expect machines to hit a boundary where humans can take up the next questions.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "AI optimists say the tools can open up new mathematical adventures; critics focus on lost work, concentrated power, or whether AI is solving hard problems at all.",
+      "comment_count": 134,
+      "terms": [
+        "Lean",
+        "formalization",
+        "theorem",
+        "conjecture",
+        "LLM"
+      ],
+      "entities": [
+        "OpenAI",
+        "Anthropic",
+        "Lean",
+        "Mathlib",
+        "Xena Project",
+        "Association for Human Mathematics",
+        "Advisory Group on Mathematics and Artificial Intelligence",
+        "Peter Scholze",
+        "Elisabeth Kübler-Ross",
+        "Vlad Lazic",
+        "ChatGPT",
+        "Claude",
+        "Richard Taylor",
+        "Deligne",
+        "Thurston",
+        "Hardy",
+        "Jaffe",
+        "Quinn",
+        "Tao",
+        "Wiles",
+        "Erdős",
+        "Langlands Program"
+      ],
+      "comments": [
+        {
+          "by": "youoy",
+          "text": "In contrast to what these philosophical pieces tend to convey, the main crisis in mathematics is a labour one. Mathematitians exchanged proofs for employment. That was the currency. Now they cannot use that currency anymore, so the question is how does someone know if they should hire an unknow person or not? Philosophicaly who cares if you like more theory building or theorem proving? You dont…"
+        },
+        {
+          "by": "js8",
+          "text": "I am also an optimist about AI, although I worry about the labor aspect as well (as a leftist I see the class aspect of this, on the other hand, as a computer programmer, computers were also originally meant to replace human labor, and we all see what happened). My view is, current top AIs do multiple different things: 1. Interpret and output natural language 2. Do formal logical reasoning 3. Do…"
+        },
+        {
+          "by": "sachaa",
+          "text": "I share the optimism here. Connecting dots across knowledge, lived experience and purpose remains, to me, a deeply human pursuit. The more AI discovers, the more possibilities we have to connect those discoveries to questions that matter to us."
+        },
+        {
+          "by": "dsubburam",
+          "text": "> But do I “understand” the proof of Fermat’s Last Theorem, given that earlier this year I gave 22 hours worth of lectures on the topic? Even if no one human can understand the entirety of a complex proof, surely we can piece together multiple experts' separate understandings, so the community as a whole 'understands' the proof? Is there value in us 'understanding' a proof? Even if no single…"
+        },
+        {
+          "by": "dang",
+          "text": "Buzzard is such a good writer. Read it all the way to the end - it gets (even) better as it goes along."
+        }
+      ],
+      "image": "https://xenaproject.wordpress.com/wp-content/uploads/2020/05/cropped-twitchpfc.png?w=200"
+    },
+    {
       "id": 49941114,
       "url": "https://www.extrabigassintelligence.com/",
       "hn": "https://news.ycombinator.com/item?id=49941114",
@@ -1107,7 +1405,34 @@
     }
   ],
   "glossary": {
+    "open-weight": "Describes an AI whose learned settings are available for others to download and use.",
     "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "MoE": "Mixture of Experts: a model with many specialist parts that sends each piece of text to only a few of them.",
+    "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
+    "tokenizer": "A part of a program that breaks text into pieces an AI can handle.",
+    "context window": "The amount of text and information an AI can take into account at one time.",
+    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "RAG": "Retrieval-Augmented Generation: a way for an AI to look up material and use it when answering.",
+    "sovereign AI": "AI an organization can run on infrastructure it controls, so its data stays in its hands.",
+    "Pareto frontier": "A set of choices where you can't get better on one measure without giving something up on another.",
+    "sovereignty": "Aleph Alpha's word for control over how the model is built and how customers can deploy it.",
+    "Mixture-of-Experts": "A model made of specialist parts that only uses some of them for each request.",
+    "parameters": "Learned values inside a model that shape the answers it gives.",
+    "context length": "How much text a model can take into account at once.",
+    "Apache 2.0": "A set of legal terms that lets people use and share software, subject to its conditions.",
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "bond market": "A market where people buy and sell promises from governments or companies to repay borrowed money.",
+    "prestiti": "The Italian name for Venice's loan claims, which citizens could trade.",
+    "public debt": "Money a government has borrowed and still owes.",
+    "collateral": "Something valuable offered to back a loan, which the lender may take if it isn't repaid.",
+    "fiat currencies": "Money people use because the government recognizes it as money, rather than because it can be exchanged for something like gold.",
+    "liquidity": "How easily someone can turn something they own into money they can spend.",
+    "equity": "Ownership in a company, rather than lending it money.",
+    "information asymmetry": "A deal where one side knows important things the other side doesn't.",
+    "Lean": "A computer program used to write mathematical proofs and check that their steps are correct.",
+    "formalization": "Writing mathematics in a precise form that a computer can check.",
+    "theorem": "A mathematical statement shown to be true through reasoning.",
+    "conjecture": "A mathematical idea believed to be true but not yet proved.",
     "HTML4": "An older set of rules for making webpages.",
     "CSS": "Cascading Style Sheets: rules that control how a web page looks.",
     "marquee-scroll": "A CSS effect that makes text scroll across a webpage.",
@@ -1121,10 +1446,8 @@
     "agentic patterns": "Ways of setting AI helpers to carry out work, sometimes by giving them separate jobs like planning, building, and reviewing.",
     "inference provider": "A service that runs an AI model and sends its replies to an app.",
     "open-weight model": "A model whose trained settings are shared so other people can use them.",
-    "context window": "The amount of text and information an AI can take into account at one time.",
     "sandbox": "A separate, contained space where software can be tested without affecting the rest of a computer or system.",
     "brutalism": "A style of architecture known for stark, concrete buildings.",
-    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
     "FBX": "A file type used to move 3D models between programs.",
     "OBJ": "A file type for saving and moving 3D models.",
     "WFC": "Wave Function Collapse: a way for a computer to build patterns by choosing pieces that fit together.",
