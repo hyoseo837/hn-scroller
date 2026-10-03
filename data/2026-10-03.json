@@ -2,6 +2,352 @@
   "date": "2026-10-03",
   "cards": [
     {
+      "id": 49946403,
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/30CC4826561366615BFAEC807CDE28A7/S0007125026108046a.pdf/adhd-autism-or-complex-trauma-the-complicated-nature-of-the-question.pdf",
+      "hn": "https://news.ycombinator.com/item?id=49946403",
+      "title": "ADHD, autism or complex trauma? [pdf]",
+      "time": 1791050908,
+      "points": 189,
+      "depth": [
+        {
+          "text": "people are debating whether **ADHD**, autism and **complex trauma** overlap or get mistaken for one another",
+          "tier": "simple"
+        },
+        {
+          "text": "Commenters offer **competing explanations**: one says ADHD can raise the chance of trauma, while another says both genetics and upbringing matter. One person says childhood-focused therapy missed what they needed, echoing a quoted call for more **directive, specific support** with day-to-day tasks.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say ADHD can increase trauma risk; others suspect trauma can help cause ADHD-like difficulties. Some commenters also stress that genetics and environment can both matter.",
+      "comment_count": 171,
+      "terms": [
+        "ADHD",
+        "autism",
+        "complex trauma",
+        "executive dysfunction",
+        "diathesis-stress model",
+        "neurodivergence"
+      ],
+      "entities": [
+        "ADHD",
+        "autism",
+        "Pathological Demand Avoidance",
+        "Persistent Drive for Autonomy",
+        "Eric Berne",
+        "23andMe",
+        "ChatGPT",
+        "DSM",
+        "American Psychiatric Association"
+      ],
+      "comments": [
+        {
+          "by": "thoughtpeddler",
+          "text": "ADHD/ND here, and I really agree with this one quote from this piece: > those most affected by executive dysfunction require therapy to be more directive, specific and accountable; that is, processing of past trauma and relational approaches are not sufficient. What often does not seem like trauma therapy at all can lead to great strides forward if it allows individuals to obtain a greater sense…"
+        },
+        {
+          "by": "tossintowind320",
+          "text": "I've heard this term \"trauma\" a lot in the past few years, and often in context where I didn't initially think that word applied in the situation it was used. It's caused me to think about my own childhood and wonder, with that modern understanding of the word, did I experience \"trauma\"? I wasn't sexually abused, I wasn't neglected, I wasn't wanting of love. I was however often scolded to a point…"
+        },
+        {
+          "by": "E-Reverance",
+          "text": "> A diagnosis of\nADHD or autism in adulthood often leads to incredible relief and\ngrief in processing all the moments of being blamed and shamed for\nwhat was assumed to be a lack of effort, laziness and/or defiance. This is definitely a factor for me when I tried to get diagnosed (which failed lol), because my parents whom caused my trauma would obviously refuse to blame themselves for my…"
+        },
+        {
+          "by": "taurath",
+          "text": "Each begets the other. Trauma and abuse is in many ways (socially) hereditary but often enhanced by neurodivergence. In a brain with sensory sensitivities outside the norm, connection can be difficult (even between ND people), and from that disconnection often arises the sorts of overwhelms in both caregiver and child that make for neglect out of overwhelm or explosive situations. Couple that…"
+        },
+        {
+          "by": "Telaneo",
+          "text": "A somewhat common sentiment I've heard among those with autism and ADHD is that an untraumatised autist or ADHDer doesn't exist. The literal statement obviously isn't true, but a lot of the downwind effects of it are. Most people are diagnosed with autism or ADHD because they have problems due to trauma, or they have problems which gave them trauma, or them having these problems made them more…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49941091,
+      "url": "https://blog.cloudflare.com/announcing-cloudflare-ohttp-gateway/",
+      "hn": "https://news.ycombinator.com/item?id=49941091",
+      "title": "Cloudflare OHTTP gateway",
+      "time": 1790997305,
+      "points": 179,
+      "depth": [
+        {
+          "text": "Cloudflare is launching a **managed privacy gateway** that keeps users’ **IP addresses** from app servers",
+          "tier": "simple"
+        },
+        {
+          "text": "The relay strips **client identifiers** before forwarding requests, while the gateway handles **request contents**, so neither sees both. Cloudflare says the self-serve service is now in **closed beta**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say the relay/gateway split keeps any one party from seeing both identifiers and request contents; others distrust Cloudflare with identifiers and would rather share their IP directly with websites.",
+      "comment_count": 82,
+      "terms": [
+        "OHTTP",
+        "relay",
+        "gateway",
+        "HPKE",
+        "TLS fingerprint",
+        "anycast",
+        "chunked OHTTP",
+        "mutual TLS",
+        "CDN",
+        "SOCKS5"
+      ],
+      "entities": [
+        "Cloudflare",
+        "Cloudflare OHTTP Gateway",
+        "Cloudflare OHTTP Relay",
+        "OHTTP",
+        "Cloudflare Workers",
+        "Cloudflare Access",
+        "Flo Health",
+        "Apple",
+        "LiveCallerID",
+        "HPKE",
+        "iCloud Private Relay",
+        "Private Cloud Compute",
+        "1.1.1.1"
+      ],
+      "comments": [
+        {
+          "by": "simondotau",
+          "text": "I have absolutely no reason to think Cloudflare is a covert CIA operation. In fact, I’m sure there are plenty of good reasons to think it isn’t. But if it were, pretty much everything it does is exactly what you'd expect from one."
+        },
+        {
+          "by": "0x073",
+          "text": "As cloudflare is the gateway for half the Internet and the other half is meta Google and Microsoft, I would prefer to share my IP with the website I visit instead some big tech companies. But maybe I get privacy wrong."
+        },
+        {
+          "by": "coldstartops",
+          "text": "I was at Thibault's talk when he explained the OHTTP this summer, for those interested: https://passthesalt.ubicast.tv/videos/2026-oblivious-http-wh..."
+        },
+        {
+          "by": "nirui",
+          "text": "> such that only the client and app server can see plaintext, and the relay sees only a jumble of ciphertext. A “gateway” sits between the relay and app server to handle all of this cryptography — decapsulating requests, encapsulating responses — and the app server handles only plain HTTP Wouldn't that be better if you design an oblivious encryption method so the encryption and decryption is…"
+        },
+        {
+          "by": "scosman",
+          "text": "I’ve wanted this for a while. I make private desktop software for transcribing meetings. It’s essentially offline, but things like checking for updates require the network. I looked at ohttp but it was still private, and ended up pinging GitHub releases directly. There’s also room for a privacy-centric analytics offering https://github.com/scosman/Biscotti"
+        }
+      ],
+      "image": "https://blog.cloudflare.com/_emdash/api/media/file/01M3XZ8QDSM1TSSYPVFW13B39E.01M3XZ8RDWEX6N8XXP6ZRDY0DK.png"
+    },
+    {
+      "id": 49937540,
+      "url": "https://matduggan.com/what-does-my-dream-os-ui-look-like/",
+      "hn": "https://news.ycombinator.com/item?id=49937540",
+      "title": "Make Tmux the OS",
+      "time": 1790969347,
+      "points": 179,
+      "depth": [
+        {
+          "text": "someone wants a **scrollable desktop** that keeps apps and browser tabs together by **task**",
+          "tier": "simple"
+        },
+        {
+          "text": "The proposal is an **infinite desktop canvas** organized around **tasks**, with browser tabs joining the windows for each task. A **local LLM** would suggest layouts for approval; deterministic code, not the model, would apply them.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters say existing tiling window managers already solve the window-management problem; others like the broader task-based idea but question whether the extra complexity is worth it.",
+      "comment_count": 110,
+      "terms": [
+        "tmux",
+        "tiling window manager",
+        "LLM",
+        "viewport",
+        "MCP"
+      ],
+      "entities": [
+        "tmux",
+        "Scott Jenson",
+        "Apple",
+        "Microsoft",
+        "WindowScape",
+        "Niri",
+        "Arc",
+        "Chrome OS",
+        "KDE",
+        "KDE Activities",
+        "macOS",
+        "Stage Manager"
+      ],
+      "comments": [
+        {
+          "by": "gizajob",
+          "text": "> The concept of \"filesystem\" is an increasingly weak concept. Yeah because Apple has broken that idea over and over and over. The anti-unix unix."
+        },
+        {
+          "by": "Fnoord",
+          "text": "You could put it as PID 1 (with a small amount of modifications), you could put it as login shell (with a small amount of modifications), you could put it in your shell login script, or you could just do tmux a whenever you log in and tmux is already running. You can also save tmux sessions via a plugin. You can also configure each tmux window to open a specific program. With tmux as an OS, you…"
+        },
+        {
+          "by": "treadmill",
+          "text": "All of his wishes for window management are easily solved with i3 or a similar tiling wm. Even on macOS you can get a shitty version of it with yabai and skhd (both are awesome, it is entirely macos' fault that it still sucks)."
+        },
+        {
+          "by": "ssivark",
+          "text": "Interesting and expansive post about what the modern desktop experience should be like, and most of it has nothing to do with Tmux except if you squint in some very particular way."
+        },
+        {
+          "by": "ggm",
+          "text": "how can this not refer to emacs? emacs -> screen -> tmux -> tmux integrated into <terminal app> appears to be the path. I guess the fork was \"emacs before X\" to \"emacs after X but we retrofiited some ideas from X into the terminal\" -> <the rest is history>"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49941447,
+      "url": "https://blog.kagi.com/update-orion-linux-windows",
+      "hn": "https://news.ycombinator.com/item?id=49941447",
+      "title": "An Update on Orion for Linux and Windows",
+      "time": 1791003237,
+      "points": 170,
+      "depth": [
+        {
+          "text": "Kagi is ending **Orion development** for Linux and Windows, then **opening the code** to the community",
+          "tier": "simple"
+        },
+        {
+          "text": "Kagi says the **Linux beta** will keep working but stop receiving updates after October 2, 2026. The planned **Windows release** won't come from Kagi; it plans to publish both projects' **source code** for the community to build on.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some think Kagi should focus its small team and welcome the code becoming open; others say dropping development makes community contributions less likely, or that Orion's purpose was unclear.",
+      "comment_count": 97,
+      "terms": [
+        "open-source",
+        "WebKit",
+        "beta"
+      ],
+      "entities": [
+        "Kagi",
+        "Orion",
+        "Linux",
+        "Windows",
+        "macOS",
+        "iOS",
+        "Apple",
+        "WebKit",
+        "Chromium",
+        "Kagi Assistant",
+        "Kagi Translate",
+        "Kagi MCP",
+        "Firefox",
+        "Brave",
+        "DuckDuckGo",
+        "Google",
+        "Safari",
+        "Zen",
+        "Mozilla",
+        "Vivaldi",
+        "SearXNG",
+        "Arc",
+        "Substack",
+        "uBlock Origin",
+        "Steam Deck",
+        "AOSP"
+      ],
+      "comments": [
+        {
+          "by": "RandomGerm4n",
+          "text": "I've never understood what niche Orion is supposed to fill. People who value privacy would be more likely to use an open-source browser. Firefox and Brave already serve that purpose. Maybe it's less important to Mac users, but on Linux, a proprietary browser is a major deal-breaker for most people. Plus, it's less convenient if the browser isn't simply included in the repository as a result…"
+        },
+        {
+          "by": "petepete",
+          "text": "So as a non-Apple-using Kagi subscriber since Beta, I kind of wish they'd just concentrate on search - the thing I'm paying for. Yes, it's good, and I'll keep using it for the foreseeable future, but it's not an unassailable lead."
+        },
+        {
+          "by": "ClaraForm",
+          "text": "Lately I haven't been very happy with Kagi. A few searches have completely failed for me returning a blank page when both DuckDuckGo and Google had a response. The Kagi translate on/off switch made me think their services are unreliable. Then this happens and it feels like more that their word is unreliable. They expanded into too many domains and spread themselves too thin and that doesn't give…"
+        },
+        {
+          "by": "sylens",
+          "text": "I really tried to make Orion work for me on iOS but I was running into so many issues browsing websites. Performance issues, issues with certain interactive controls. Switched back to Safari and it was like night and day. Feel like it needs a lot of polish so on one hand I think this is a good move to help them focus. However, I feel like it is very much possible that in a year we will hear them…"
+        },
+        {
+          "by": "InsideOutSanta",
+          "text": "I wish they would cancel the Mac version as well. It really has no clear purpose and just further dilutes the \"alternatives to Chrome\" space. If they have money to spend on a browser, why not put that effort into a browser that actually has a chance to tilt the scales a bit, like Zen?"
+        }
+      ],
+      "image": "https://blog.kagi.com/og-image.png"
+    },
+    {
+      "id": 49938616,
+      "url": "https://blog.sshh.io/p/the-harness-is-the-company",
+      "hn": "https://news.ycombinator.com/item?id=49938616",
+      "title": "Every SaaS business will become a harness around a model",
+      "time": 1790975216,
+      "points": 158,
+      "depth": [
+        {
+          "text": "the author thinks **software companies** will become **harnesses** that coordinate AI agents and human reviewers",
+          "tier": "simple"
+        },
+        {
+          "text": "Here, a **harness** means the tools, interfaces, context, and state around a model. The author says companies should **own the top-level harness**, plug vendor products into it, and let agents handle core tasks while people apply **judgment** where it matters.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some see company-owned harnesses as a future competitive edge; others expect businesses to keep outsourcing software and argue replacing deterministic code with AI will be costly and unreliable.",
+      "comment_count": 103,
+      "terms": [
+        "harness",
+        "LLM",
+        "stateless",
+        "agent",
+        "SaaS",
+        "headless",
+        "moat",
+        "deterministic"
+      ],
+      "entities": [
+        "Shrivu Shankar",
+        "LangGraph",
+        "Codex",
+        "Claude Code",
+        "OpenCode",
+        "Ramp",
+        "Stripe",
+        "DoorDash",
+        "The Transposed Organization",
+        "McDonald’s",
+        "Toyota",
+        "Google",
+        "EC2",
+        "Adobe Photoshop",
+        "Adobe Premier",
+        "Rails",
+        "Claude",
+        "Sojourn",
+        "Advent of Code"
+      ],
+      "comments": [
+        {
+          "by": "socializer",
+          "text": "I've heard some variant of the SaaS doomsday prophecy dozens of times over the past year. Somehow, SaaS is still here and more or less looks the same. It will probably continue to exist because most businesses are perfectly content to outsource tech problems to someone else for a reasonable fee, and if you think that managing an agent swarm is a seamless replacement for that, I don't know what…"
+        },
+        {
+          "by": "munchbunny",
+          "text": "I go back and forth on this. But to pull something from the post: > If this is the right mental model, you should expect to see: > An unusual amount of in-house harness building on both the build side and the sell side Yup. > Org structures and individual roles being reshaped around their place in the business harness Not yet, this is the one I am most skeptical about because it's still way too…"
+        },
+        {
+          "by": "hammock",
+          "text": "A lot of (non-software) business is already like this, without the AI part. There are 40,000 McDonald’s franchisees who basically just put money into a coinop machine and the machine returns with exactly the food, drinks, restaurant decor, prices, etc that it wants them to sell. Toyota’s production system coordinates what gets made and when, detects abnormalities and directs human attention…"
+        },
+        {
+          "by": "ilaksh",
+          "text": "This is a side issue, but he mentions that the harness is stateless. But no agentic task is actually stateless. I suspect for purposes of optimization and performance etc., sometime in the next several months we will start to see new popular ML architectures or variations of LLMs/VLMs that are designed to be _stateful_. So a lot of the infrastructure for managing state and memory etc. gets sucked…"
+        },
+        {
+          "by": "2001zhaozhao",
+          "text": "This couldn't be more true. Companies will be driven by AI harnesses (as defined by this article) that automate decision-making and prioritization. In the medium term, may the company with the best harness win. In the longer term, the downstream impact is massive commoditization of software and invalidation of most existing moats. Data moats are gone if you can simulate the data with AI. Even…"
+        }
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!DMig!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd8cf3fdf-c311-47d0-b42d-f75864c4dd68_1620x897.png"
+    },
+    {
       "id": 49943034,
       "url": "https://tej.as/blog/aleph-alpha-kolibri",
       "hn": "https://news.ycombinator.com/item?id=49943034",
@@ -1405,8 +1751,38 @@
     }
   ],
   "glossary": {
-    "open-weight": "Describes an AI whose learned settings are available for others to download and use.",
+    "ADHD": "Attention-deficit/hyperactivity disorder: a condition that can affect attention, activity, and impulse control.",
+    "autism": "A developmental condition that can affect communication, sensory experiences, and how someone handles change or routines.",
+    "complex trauma": "The lasting effects of repeated or long-running frightening or harmful experiences.",
+    "executive dysfunction": "Difficulty organizing, starting, or keeping up with everyday tasks.",
+    "diathesis-stress model": "The idea that someone's inborn traits and life experiences can combine to affect their mental health.",
+    "neurodivergence": "A broad word for brains that work differently from what is considered typical.",
+    "OHTTP": "Oblivious HTTP: A way to send web requests through separate services so the app server doesn't learn the sender's IP address.",
+    "relay": "A switch that a small electrical signal can turn on or off.",
+    "gateway": "A service that opens a protected request for the app server and protects the reply on its way back.",
+    "HPKE": "Hybrid Public Key Encryption: A way to protect a message so only the intended parties can read it.",
+    "TLS fingerprint": "A collection of connection details that can help a server recognize the same client across requests.",
+    "anycast": "A way for a network to direct someone to a nearby server.",
+    "chunked OHTTP": "A way to send a request in pieces so the gateway can start processing before all of it arrives.",
+    "mutual TLS": "A check where both sides prove their identity before a connection is allowed.",
+    "CDN": "Content Delivery Network: A network of servers that helps websites handle requests closer to their users.",
+    "SOCKS5": "A kind of proxy that forwards internet connections without decrypting the traffic.",
+    "tmux": "A tool that keeps command-line work in sessions you can detach from and return to later.",
+    "tiling window manager": "A desktop setup that arranges open windows in blocks instead of letting them overlap freely.",
     "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "viewport": "A view onto a larger space; here, each display shows part of the desktop canvas.",
+    "MCP": "Model Context Protocol: a standard way for AI apps to connect to outside tools.",
+    "open-source": "Software whose code is shared publicly so people can inspect it, change it, or build on it.",
+    "WebKit": "The part of a browser that reads website code and displays the pages.",
+    "beta": "A version released for people to try before it is considered finished.",
+    "harness": "The surrounding code that gives an AI agent tools and a place to work, and checks what it does.",
+    "stateless": "Not keeping track of earlier steps or information on its own.",
+    "agent": "An AI system that can take steps and use tools to get a task done, not just answer questions.",
+    "SaaS": "Software as a Service: software you access over the internet, with the provider running it for you.",
+    "headless": "Software that another program can control without a person using its regular screen.",
+    "moat": "An advantage that makes it hard for competitors to take customers away from a business.",
+    "deterministic": "Something that gives the same result when it gets the same input.",
+    "open-weight": "Describes an AI whose learned settings are available for others to download and use.",
     "MoE": "Mixture of Experts: a model with many specialist parts that sends each piece of text to only a few of them.",
     "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
     "tokenizer": "A part of a program that breaks text into pieces an AI can handle.",
@@ -1441,7 +1817,6 @@
     "Ruffle": "A tool that lets old Flash games run without Flash.",
     "BBS": "Bulletin Board System: an online place people used to post messages and share files.",
     "tokens": "Small pieces of text an AI counts as it reads or writes; they can affect how much a request costs.",
-    "MCP": "Model Context Protocol: a standard way for AI apps to connect to outside tools.",
     "vibe coding": "Making software by telling an AI what you want and letting it write the code, often without closely checking how it works.",
     "agentic patterns": "Ways of setting AI helpers to carry out work, sometimes by giving them separate jobs like planning, building, and reviewing.",
     "inference provider": "A service that runs an AI model and sends its replies to an app.",
