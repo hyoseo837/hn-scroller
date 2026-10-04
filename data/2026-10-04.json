@@ -1,0 +1,733 @@
+{
+  "date": "2026-10-04",
+  "cards": [
+    {
+      "id": 49948254,
+      "url": "https://techcrunch.com/2026/10/03/federal-judge-calls-flock-indiscriminate-mass-surveillance/",
+      "hn": "https://news.ycombinator.com/item?id=49948254",
+      "title": "Federal judge calls Flock 'indiscriminate mass surveillance'",
+      "time": 1791065233,
+      "points": 401,
+      "depth": [
+        {
+          "text": "a judge says a **warrantless Flock search** violated a woman's rights and calls it **mass surveillance**",
+          "tier": "simple"
+        },
+        {
+          "text": "Judge Sara Hill said the deputy had **“no apparent reason”** to search the database without a warrant, beyond the fact that the woman’s car had a California plate. She said all evidence obtained afterward—including the alleged discovery of **91 pounds of meth**—**must be suppressed**, though the ruling does not create binding precedent.",
+          "tier": "substance",
+          "data": [
+            [
+              "alleged meth discovery",
+              "91 pounds of meth"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say Flock can help with safety and law enforcement; others say broad tracking is mass surveillance that gives officials too much power.",
+      "comment_count": 224,
+      "terms": [
+        "Fourth Amendment",
+        "binding precedent",
+        "suppress",
+        "fruit of the poisonous tree",
+        "automated license plate reader"
+      ],
+      "entities": [
+        "Flock Safety",
+        "Sara Hill",
+        "404 Media",
+        "Carpenter v. United States",
+        "Supreme Court",
+        "Bernie Sanders",
+        "Block Flock Act",
+        "Garretty Langley",
+        "TechCrunch"
+      ],
+      "comments": [
+        {
+          "by": "JKCalhoun",
+          "text": "License plate reader? So the device should require very specific license plates to scan for—not the current dragnet. The software should only \"ping\" when there is a confident match with said license plate(s)—and merely log which license plate, time stamp a single photo, and note the confidence level of it being a match. The frame buffer should be the only place (a frame of) video is ever stored…"
+        },
+        {
+          "by": "joshheitzman",
+          "text": "Yes, that's what they are. But does that mean are they breaking federal law or unconstitutional? I believe we've been told by the courts repeatedly that we should have no expectation of privacy out in public."
+        },
+        {
+          "by": "hypfer",
+          "text": "> The deputy then used the woman’s travel history in Flock as part of the justification for searching her car, where he allegedly discovered 91 pounds of meth. That sentence does make this less of a win tbh, given that with it, it's just an actual example of the technology doing the job it is supposed to do. Like this, it's almost a trojan horse of something pretending to be PR for A, but…"
+        },
+        {
+          "by": "ghm2180",
+          "text": "To Google and apple's credit they have at the least made location history stored on device instead of dealing with the slippery slope of warrants that ask for all devices around a point. Google specifically decided after a court ruling to get out of the morass of server side storage. There is a lot wrong with how permissioning works on android and Google services but this is not one of them."
+        },
+        {
+          "by": "kingcauchy",
+          "text": "I'm pretty sure we're living in the prequel to Minority Report right now."
+        }
+      ],
+      "image": "https://techcrunch.com/wp-content/uploads/2026/08/flock-camera-pole.jpg?resize=1200,799"
+    },
+    {
+      "id": 49949235,
+      "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
+      "hn": "https://news.ycombinator.com/item?id=49949235",
+      "title": "We're going to need default hard budget caps on pretty much everything",
+      "time": 1791073216,
+      "points": 343,
+      "depth": [
+        {
+          "text": "someone wants **hard budget caps** to stop **runaway agents** from running up huge bills",
+          "tier": "simple"
+        },
+        {
+          "text": "AWS **pauses a project** for the month when it reaches its spend limit. Google Cloud's **Spend Caps** apply to specific services, though one commenter says they only work for four services.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: hard-cap supporters say surprise bills are worse; critics say a sudden cutoff can cost businesses customers and revenue.",
+      "comment_count": 172,
+      "terms": [
+        "API",
+        "DDoS",
+        "network ACL"
+      ],
+      "entities": [
+        "AWS",
+        "Google Cloud",
+        "Simon Willison"
+      ],
+      "comments": [
+        {
+          "by": "joshdavham",
+          "text": "It’s incredible that in 2026, AWS and GCP are only just now introducing this. It’s possibly one of the most obviously needed features for a cloud provider. Also, does anyone know why it’s taken this long? I suspect it’s a technical reason. While one could be cynical, I doubt it’s an intentional business/product decision. Hard spending caps are both excellent product differentiators and could…"
+        },
+        {
+          "by": "modeless",
+          "text": "Wait, Google Cloud finally added hard caps on spending per service? I've been wanting that for so many years! They sure took their sweet time. https://cloud.google.com/blog/topics/cost-management/new-ear... Edit: Ugh it's fake. Literally only works for four random services, unsupported for all the rest. Completely useless for all of my projects. Also dumb that the only supported term is \"monthly\"…"
+        },
+        {
+          "by": "motionlessveloc",
+          "text": "I used to work on a support team of a well known backend type service that had hard budget caps. It was, unfortunately, a nightmare. There were tons of tickets and even threats of lawsuits from customers whose service got cut off hard at the worst possible time due to organic growth/going viral/big event/nobody knew about the limit/etc. Not only did they lose all the leads and revenue they would…"
+        },
+        {
+          "by": "hyperhello",
+          "text": "These shouldn't even exist without a negotiated contract. I can subscribe to your service for a specific fee on a monthly basis ($20/month say), and take the risk of losing that month's fee if your service or I make mistakes, or I can choose to drop another $20 mid-month, or anything for convenience. Saying that the computer will \"control\" the billing and can run haywire tells me that I don't…"
+        },
+        {
+          "by": "chrismarlow9",
+          "text": "Network saturation is difficult. Even if you turn off the endpoint you can still saturate the network in between. And it's still bandwidth. I actually think network ACL triggers based on billing might be the only way to really enforce this. I witnessed a DDoS attack once that changed how I think about billing. It was locally provisioned hardware and the attackers had saturated the switches…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49949438,
+      "url": null,
+      "hn": "https://news.ycombinator.com/item?id=49949438",
+      "title": "Tell HN: Bob Cringely has died",
+      "time": 1791075052,
+      "points": 326,
+      "depth": [
+        {
+          "text": "Bob Cringely, remembered for his **tech documentaries** and **columns**, has died",
+          "tier": "simple"
+        },
+        {
+          "text": "Commenters remembered **Triumph of the Nerds**, **Accidental Empires**, and his columns; some said his work helped lead them into tech.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 60,
+      "terms": [],
+      "entities": [
+        "Bob Cringely",
+        "Triumph of the Nerds",
+        "Nerds 2.0.1",
+        "Accidental Empires",
+        "NerdTV",
+        "PBS",
+        "Infoworld",
+        "Steve Jobs",
+        "Dvorak"
+      ],
+      "comments": [
+        {
+          "by": "JKCalhoun",
+          "text": "I liked his \"Plane Crazy: Building a Plane in 30 Days\" on PBS. Watching him try (and fail) to build a composite airplane says so much about the allure of modern techniques (I won't spoil the end, but old-school gets the last laugh). I've been less than enthusiastic about modern composites ever since seeing this show. Bob's attempt (and short temper) reveals a good deal of hubris on his part. The…"
+        },
+        {
+          "by": "icee",
+          "text": "I was a big fan of this guy's work. Great documentaries. Triumph of the Nerds was a great watch — I gifted this to several people. I also watch the lost Steve Jobs documentary every few years for inspiration. Accidental Empires was a great read — I always think of Larry Ellison doing the NYT Crossword puzzle when I read about all the Paramount drama. He'll be missed."
+        },
+        {
+          "by": "exitb",
+          "text": "Incredibly sad news. I first learned of him and watched his documentaries just a few years ago. It’s difficult to understate, if you happen to be a tech nerd, how much fun “Triumph of the Nerds” and “Nerds 2.0.1” are to watch, even nowadays."
+        },
+        {
+          "by": "Keyframe",
+          "text": "Sad to hear that, apart things already mention I'd like to point out his NerdTV interviews - especially Dan Drake one (Autodesk co-founder). I always suspected, but that interview kind of validated how Autodesk went after competition as a strategy (to buy them outright). You can watch them all here https://en.wikipedia.org/wiki/NerdTV"
+        },
+        {
+          "by": "ericflo",
+          "text": "Damn. I've been re-watching his documentaries recently. He was one of the greats."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49946393,
+      "url": "https://notoriousbfg.com/hole-punch/",
+      "hn": "https://news.ycombinator.com/item?id=49946393",
+      "title": "Hole Punch: Sling your spaceship around gravitational fields",
+      "time": 1791050805,
+      "points": 271,
+      "depth": [
+        {
+          "text": "someone made **Hole Punch**, a game where you sling a spaceship around **gravitational fields**",
+          "tier": "simple"
+        },
+        {
+          "text": "One player said it was **way more fun than expected**; another found the **mobile controls imprecise** and kept **adding holes by accident**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 62,
+      "terms": [
+        "black hole",
+        "gravity assist",
+        "phase space"
+      ],
+      "entities": [
+        "Hole Punch",
+        "Gravity Assist",
+        "Gravitee",
+        "Scorched Earth",
+        "Truckslop"
+      ],
+      "comments": [
+        {
+          "by": "rkagerer",
+          "text": "Great game, though the controls on mobile are a bit too imprecise. As you drag a hole, the size widgets should disappear so you can better see what's around it. They could pop back up again once you're done dragging. Personally I'd rather if you had to press a button or something (or long press?) to add a new hole. I keep accidentally adding new ones when all I want to do is adjust an existing…"
+        },
+        {
+          "by": "fogleman",
+          "text": "Well, this is strangely familiar to a game I just vibe-coded recently! https://www.michaelfogleman.com/gravity-assist/"
+        },
+        {
+          "by": "adamesque",
+          "text": "Fun idea, but kind of maddening that I can click and hold to add mass to a hole but if i overshoot, i can't do anything subtract mass or delete a hole."
+        },
+        {
+          "by": "YeahThisIsMe",
+          "text": "This is the year of old browser (and/or flash) games making a comeback in some form."
+        },
+        {
+          "by": "iamwil",
+          "text": "This is kind of a cool concept. It's like Space Golfing. Another alternative is to make it like a turn-based Scorched Earth (Mother of all games), where you can either 1. launch asteroid size projectiles across star systems in a field of stars and black holes to it each other. 2. launch projectiles that then place black holes (perhaps either by timeout or signal--taking into account the speed of…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49948332,
+      "url": "https://www.theguardian.com/technology/2026/oct/03/openai-safety-leader-quits-warning-ai-companys-culture-is-broken",
+      "hn": "https://news.ycombinator.com/item?id=49948332",
+      "title": "OpenAI safety leader quits, warning AI company's culture is 'broken'",
+      "time": 1791065893,
+      "points": 259,
+      "depth": [
+        {
+          "text": "an OpenAI **safety leader** quit, calling its culture **broken** and warning AI firms aren't **careful enough**",
+          "tier": "simple"
+        },
+        {
+          "text": "David Robinson, who led **safety reports** accompanying ChatGPT releases, said firms need a **cultural overhaul**, not just new rules. He called for drawing on safety expertise from nuclear and aviation, and developing science to keep **autonomous systems** under control.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 3,
+      "terms": [
+        "AI agents",
+        "AI"
+      ],
+      "entities": [
+        "OpenAI",
+        "David Robinson",
+        "ChatGPT",
+        "The Atlantic",
+        "Hugging Face",
+        "Geoffrey Irving",
+        "DeepMind",
+        "Resolution",
+        "Time",
+        "Jacob Coxon",
+        "Anthropic",
+        "Claude",
+        "The Guardian"
+      ],
+      "comments": [
+        {
+          "by": "irishcoffee",
+          "text": "See also: https://news.ycombinator.com/item?id=49944227"
+        },
+        {
+          "by": "ChrisArchitect",
+          "text": "[dupe] Discussion on source: https://news.ycombinator.com/item?id=49944227"
+        }
+      ],
+      "image": "https://i.guim.co.uk/img/media/77b3a6702fa4e94c36e292a72e438fa40eb19184/625_0_6261_5010/master/6261.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=e64134a41050264f5ceac249a333fc99"
+    },
+    {
+      "id": 49946895,
+      "url": "https://www.phoronix.com/news/XDC-2026-Valve-Timur-AMDGPU",
+      "hn": "https://news.ycombinator.com/item?id=49946895",
+      "title": "The work by Valve's Timur Kristóf on improving old AMD GPUs on Linux",
+      "time": 1791054888,
+      "points": 212,
+      "depth": [
+        {
+          "text": "someone at Valve made **old AMD graphics cards** work better for **Linux gaming** with driver fixes",
+          "tier": "simple"
+        },
+        {
+          "text": "Over the past year, Valve's Timur Kristóf improved the **AMDGPU kernel driver** for **GCN 1.0/1.1** cards, fixing display and power-management issues and adding soft reset support. Moving them from the legacy Radeon driver also unlocks **RADV Vulkan**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 25,
+      "terms": [
+        "kernel driver",
+        "GCN",
+        "RADV",
+        "Vulkan",
+        "soft reset",
+        "GPGPU",
+        "GPU passthrough",
+        "LLM inference",
+        "frame interpolation",
+        "superresolution",
+        "ROCm",
+        "OpenCL"
+      ],
+      "entities": [
+        "Valve",
+        "Timur Kristóf",
+        "AMD",
+        "AMDGPU",
+        "GCN",
+        "Radeon",
+        "RADV",
+        "Vulkan",
+        "Linux",
+        "Mesa 3D",
+        "Phoronix",
+        "XDC2026",
+        "Llama.cpp",
+        "GGML",
+        "ROCm",
+        "OpenCL",
+        "Ayaneo 2",
+        "RDNA 2",
+        "Steamdeck"
+      ],
+      "comments": [
+        {
+          "by": "LaurensBER",
+          "text": "I just bought a used Ayaneo 2 handheld, it has an old(er) mobile RDNA 2 GPU and I was blown away by how well this thing performed under Linux. Almost everything (that's not a recent AAA game) runs beautiful and a lot faster/smoother than it does under Windows. The experience has been so good that I'm considering switching my main pc (with a 9070XT) to Linux as well. No doubt Timur contributed…"
+        },
+        {
+          "by": "gary_0",
+          "text": "Direct link to the talk, with timestamp: https://youtu.be/j5W5ErEMnvM?t=21385"
+        },
+        {
+          "by": "bugake",
+          "text": "Some other benefits of older GPUs: Use as a dedicated GPU for encoding and decoding video.\nPost processing like frame interpolation or superresolution. Use for GPGPU workloads. Run additional monitors independently. Use for GPU passthrough to virtual machines. Use as a backup GPU for troubleshooting. Use for test code without breaking the main GPU"
+        },
+        {
+          "by": "wewewedxfgdf",
+          "text": "If only AMD did this."
+        },
+        {
+          "by": "vkaku",
+          "text": "Honestly, the folks writing inference drivers for Llama.cpp / GGML would sort of benefit from better compiler work like this. In general, Valve's work has been exceptional and supplementing AMD's own ROCM/OpenCL and Vulkan team, they've gotten a lot of defaults right and people should work together with Valve to improve support for their chips."
+        }
+      ],
+      "image": "https://www.phoronix.net/image.php?id=2026&image=timur"
+    },
+    {
+      "id": 49946567,
+      "url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/",
+      "hn": "https://news.ycombinator.com/item?id=49946567",
+      "title": "Getting the most out of Opus 5.5 in Claude and Claude Code",
+      "time": 1791052170,
+      "points": 203,
+      "depth": [
+        {
+          "text": "someone wrote a guide to **giving Claude long tasks** and **checking its work** in Claude Code",
+          "tier": "simple"
+        },
+        {
+          "text": "The guide says to give a whole task with a **clear finish line** and skip “think carefully” prompts, since Opus 5.5 already thinks before replying. For long Claude Code runs, it recommends keeping an updated **task list in a file** so you can track progress without relying on scrollback.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters praise Opus 5.5 for big tasks and parallel agents; others say its independence leads to wrong or risky actions and makes long runs hard to trust.",
+      "comment_count": 139,
+      "terms": [
+        "subagent",
+        "context window",
+        "diff",
+        "CLAUDE.md"
+      ],
+      "entities": [
+        "Claude",
+        "Claude Code",
+        "Opus 5.5",
+        "Opus 5",
+        "Fable",
+        "Blender",
+        "Sonnet 5.5",
+        "OpenAI",
+        "GPT 6.1",
+        "Luna",
+        "Molly Vorwerck",
+        "Star Trek"
+      ],
+      "comments": [
+        {
+          "by": "rdli",
+          "text": "It’s a really good model. Over the past few days, I give Opus some general directives to basically speed up our CI, and telling it I care both about billing minutes and wall clock time. I told it to create a plan after analyzing everything in our CI, run the plan by a Fable subagent, and then focus on low-risk, high-reward changes. 9 hours later, I had 12 PRs ready to be merged, and the net…"
+        },
+        {
+          "by": "jjcm",
+          "text": "It’s extremely good at frontend, particularly if it has an image reference. I chucked in design reference images into this and told it to focus on the flowing svgs, and it crushed this Star Trek computer-inspired layout: https://html.non.io/lcars-opus-5.5"
+        },
+        {
+          "by": "pawelduda",
+          "text": "I pointed Opus 5.5 xhigh at a house construction blueprint (pdf with vector drawings) and asked it to create its 3D model in Blender. It one-shot the task in 45 min and outdid my (blender newbie) manual 50h+ work. It also flagged the same issues with the document I noticed earlier. I had some renders and plans from interior designer and then asked to blend them together. It nailed the job. $45…"
+        },
+        {
+          "by": "hibikir",
+          "text": "It's much better than 5, but I've had a couple of situations this week where it was too interested in being independent, making calls that went directly against my recommendations. It can also do fun things like convince auto-mode to go way past what I have autorized. For instance, specific permission to run process X in region abz-1 suddenly became running X in 5 other regions, with no warning…"
+        },
+        {
+          "by": "adastra22",
+          "text": "Some of this advice is really missing the mark. I will speak to just one I know well. Many of my frequently used prompts have “think through this step by step” because if you don’t, it only considers the task holistically rather than step by step, and different issues emerge in that frame of thinking. I see this. Often when doing planning, for example, it will not notice interdependencies between…"
+        }
+      ],
+      "image": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/og.png"
+    },
+    {
+      "id": 49923873,
+      "url": "https://www.whec.com/top-news/webster-man-celebrating-the-100th-birthday-of-the-kidney-his-mom-donated-to-him-as-a-teenager/",
+      "hn": "https://news.ycombinator.com/item?id=49923873",
+      "title": "Celebrating the 100th birthday of the kidney donated to him as a teenager",
+      "time": 1790872360,
+      "points": 181,
+      "depth": [
+        {
+          "text": "a man's mom gave him a kidney as a teenager, and it's **still working** decades later",
+          "tier": "simple"
+        },
+        {
+          "text": "Ray Vetuskey got Betty’s kidney in **March 1978**, when he was 16. It’s still working **48 years later**, making him Strong Hospital’s longest-surviving kidney transplant recipient. He made it to a **Genesis concert** after surgery and still has the ticket stub.",
+          "tier": "substance",
+          "data": [
+            [
+              "Age at transplant",
+              "16"
+            ],
+            [
+              "Time since transplant",
+              "48 years"
+            ],
+            [
+              "Typical living kidney donation duration",
+              "15 to 20 years"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 42,
+      "terms": [
+        "kidney transplant",
+        "dialysis",
+        "HLA",
+        "anti-rejection meds"
+      ],
+      "entities": [
+        "Ray Vetuskey",
+        "Betty Vetuskey",
+        "Strong Hospital",
+        "Genesis",
+        "Miklos Molnar",
+        "URochester Medicine",
+        "Finger Lakes Donor Recovery Network",
+        "Nancy Ryan"
+      ],
+      "comments": [
+        {
+          "by": "Wittie",
+          "text": "The detail that got me: both on gurneys holding hands, and the mom crying tells him \"don't worry about a thing, I've got a Genesis concert and I'm not missing it\". They both made it to the concert. He still has the ticket stub"
+        },
+        {
+          "by": "phibz",
+          "text": "The math here is a little confusing, but that's an exceptionally long lived organ. For reference I received a kidney transplant from my mother at 16. It lasted 19 years after being transplanted. My mother was 68 when I had to return to dialysis."
+        },
+        {
+          "by": "d_silin",
+          "text": "There is an observation that donated organs sync to a biological age of the recipient. https://www.inc.com/lucia-auerbach/can-transplanted-heart-be..."
+        },
+        {
+          "by": "cfiggers",
+          "text": "Ok so he needs to also donate it to a third person. Let's see how long we can keep it going!"
+        },
+        {
+          "by": "mrb",
+          "text": "Apparently the oldest transplanted liver in humans is 108 years old:\nhttps://www.smithsonianmag.com/smart-news/transplanted-liver..."
+        }
+      ],
+      "image": "https://www.whec.com/wp-content/uploads/2026/09/kidney-guy-.png"
+    },
+    {
+      "id": 49944912,
+      "url": "https://ftl-os.org/",
+      "hn": "https://news.ycombinator.com/item?id=49944912",
+      "title": "FTL: A new operating system for clouds",
+      "time": 1791039756,
+      "points": 165,
+      "depth": [
+        {
+          "text": "FTL is a **new operating system** designed for use in **clouds**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says **v0.1.0** adds **async Rust** support and lots of missing pieces to the Linux compatibility layer. Another calls it **microkernel...ish** and says it runs Linux programs and can serve its own website.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 66,
+      "terms": [
+        "async Rust",
+        "microkernel",
+        "Linux compatibility layer",
+        "user space library",
+        "hypervisor"
+      ],
+      "entities": [
+        "FTL",
+        "GNU",
+        "KVM",
+        "Linux",
+        "OS X",
+        "Windows",
+        "MirageOS",
+        "gVisor",
+        "Unikraft",
+        "Rust",
+        "Vercel",
+        "Tokio",
+        "HomeAssistant",
+        "Buildroot",
+        "Firecracker",
+        "Zircon",
+        "Microsoft"
+      ],
+      "comments": [
+        {
+          "by": "Foobar8568",
+          "text": "FTL stands for \"For The Lose\" or \"For The Loose\"?"
+        },
+        {
+          "by": "drybjed",
+          "text": "Is it just a hobby, and won't be big and professional like gnu?"
+        },
+        {
+          "by": "sigbottle",
+          "text": "What does \"OS\" for clouds mean? Does this mean you still delegate to something like KVM/paravirtualzation for your device models, but your FTL guest OS can run multiple secure workloads inside a VM? Or are you designing a custom OS from the ground up to run on native hardware? What constraints are you putting on hardware support to make this a tractable that's not re-implementing all of the stuff…"
+        },
+        {
+          "by": "ollybee",
+          "text": "I saw FTL and \"new\" and got very excited. sadly is is not the game."
+        },
+        {
+          "by": "comboy",
+          "text": "I just make agents generate assembly for my app and my hardware and boot directly into that."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49944227,
+      "url": "https://www.theatlantic.com/technology/2026/10/openai-safety-team-resignation/688881/?gift=v5U_UzUTothfWXsPxtvNVAh7esWToMRD6XnbXmc5WgA",
+      "hn": "https://news.ycombinator.com/item?id=49944227",
+      "title": "I quit OpenAI because its culture is broken",
+      "time": 1791035194,
+      "points": 154,
+      "depth": [
+        {
+          "text": "someone says they quit **OpenAI** because its **culture is broken**",
+          "tier": "simple"
+        },
+        {
+          "text": "Some commenters want more focus on **problems they see now**, while others question the leavers’ motives and say they should **return their stock**. Another asks whether **company incentives** leave room for change.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some want more attention on AI safety problems happening now; others question the quitters’ motives and say they should return their stock.",
+      "comment_count": 417,
+      "terms": [
+        "alignment",
+        "NDA",
+        "RSU",
+        "ESOP"
+      ],
+      "entities": [
+        "OpenAI",
+        "Anthropic",
+        "Sam Altman",
+        "Google",
+        "ChatGPT",
+        "Facebook",
+        "The Social Dilemma",
+        "Careless People",
+        "Nietzsche",
+        "Roko's Basilisk",
+        "The Atlantic",
+        "The Guardian"
+      ],
+      "comments": [
+        {
+          "by": "pcthrowaway",
+          "text": "Trolley problem: - If you allow to trolley to proceed, there's a 50% chance it will run over every human on the planet - But if you flip the switch, it takes the long way around, possibly bankrupting the trolley company. And you have a legal obligation to the shareholders to prevent that from happening at all costs."
+        },
+        {
+          "by": "danpalmer",
+          "text": "Was this a \"build better sandboxing\" and \"don't tell people to eat glue\" safety leader, or a Roko's Basilisk believing safety leader? A lot of the \"AI safety\" types are very focused on the latter and not at all concerned with the former. We need both, but we clearly need a much stronger focus on the problems we are seeing now, and much less on the hypothetical problems we might see in the future."
+        },
+        {
+          "by": "gizmodo59",
+          "text": "He is a hypocrite for all we care. You work there for a while when your stock is getting vested and suddenly you have this feeling? Like the dude hired a PR firm as well. While the safety and alignment is a real problem, I don’t get this guy or the Anthropic dude. First world problems."
+        },
+        {
+          "by": "charlieyu1",
+          "text": "Used to work as human data trainer feeding data to AI companies. OpenAI projects are definitely the most toxic ones."
+        },
+        {
+          "by": "flatline",
+          "text": "There are numerous problems with “alignment.” What are “human values” to begin with? He outlines some at the beginning of the post, implicitly: build bigger, better, more powerful things faster without adequate safeguards. We are literally pouring trillions of dollars of value into this enterprise, and I would say this is something that many humans also value in a qualitative sense. Then we have…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49928361,
+      "url": "https://github.com/andreasfertig/cppinsights",
+      "hn": "https://news.ycombinator.com/item?id=49928361",
+      "title": "C++ Insights – See your source code with the eyes of a Compiler",
+      "time": 1790898816,
+      "points": 151,
+      "depth": [
+        {
+          "text": "someone built a tool that shows the **hidden steps** a **C++ compiler** adds to your code",
+          "tier": "simple"
+        },
+        {
+          "text": "C++ Insights uses Clang for a **source-to-source transformation**; one example reveals compiler-provided special member functions and an upcast from Derived to Base. The author says it **doesn't get everything right**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 30,
+      "terms": [
+        "Clang",
+        "source-to-source transformation",
+        "special member functions",
+        "upcast"
+      ],
+      "entities": [
+        "C++ Insights",
+        "Clang",
+        "C++"
+      ],
+      "comments": [
+        {
+          "by": "alankarmisra",
+          "text": "Ooo I love these things. I wrote a C++ -> Clang -> JS transpiler so I could show value change states on top of the C++ source code in html and allow people to step through the whole state change. They can also vary the input and see the values change cause the JS layer could recompute the values - which is why I bothered with the transpiling - otherwise I could have just output the state changes…"
+        },
+        {
+          "by": "jsrcout",
+          "text": "Definitely trying this out. I've always had the problem of \"but what is the compiler thinking?\" with C++ in particular."
+        },
+        {
+          "by": "kizxc4395",
+          "text": "This is so interesting"
+        },
+        {
+          "by": "StilesCrisis",
+          "text": "I wish the readme example showed a lambda capture. Now that's where compiler magic REALLY shows up."
+        },
+        {
+          "by": "rramadass",
+          "text": "The tool can be found at - https://cppinsights.io/"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/dd0d0816eea8028e3fc9dd954e968676627be0f452993f3292bbb6a8e8163a4b/andreasfertig/cppinsights"
+    }
+  ],
+  "glossary": {
+    "Fourth Amendment": "The part of the US Constitution that protects people from unreasonable searches and seizures.",
+    "binding precedent": "A court ruling that other courts in its system have to follow.",
+    "suppress": "To stop evidence from being used in court.",
+    "fruit of the poisonous tree": "A legal rule that can keep evidence out of court when it came from an illegal search.",
+    "automated license plate reader": "A camera system that reads vehicle plates so officials can look them up later.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "DDoS": "Distributed denial-of-service: an attack that floods a service with traffic so people can't use it.",
+    "network ACL": "Network access control list: rules that decide which traffic may enter or leave a network.",
+    "black hole": "A region in space with gravity so strong that nothing, not even light, can escape.",
+    "gravity assist": "A spacecraft uses a close pass by a planet to change its path.",
+    "phase space": "A map of the possible states a moving system can be in.",
+    "AI agents": "Computer programs that can carry out tasks, rather than only answer a question.",
+    "AI": "Artificial intelligence: computer systems designed to do tasks people associate with thinking.",
+    "kernel driver": "Software that lets an operating system use a computer's hardware.",
+    "GCN": "AMD's name for a family of graphics chip designs.",
+    "RADV": "A Linux driver that lets programs use AMD graphics cards through Vulkan.",
+    "Vulkan": "A way for software to send graphics work to a graphics card.",
+    "soft reset": "Restarting a graphics card without restarting the whole computer.",
+    "GPGPU": "General-purpose computing on graphics processing units: using a graphics card for work beyond drawing images.",
+    "GPU passthrough": "Letting a virtual computer use a graphics card directly.",
+    "LLM inference": "Large language model inference: running a text-generating AI to get an answer.",
+    "frame interpolation": "Creating in-between frames to make video or animation look smoother.",
+    "superresolution": "Making an image larger or sharper by adding detail.",
+    "ROCm": "AMD software for using its graphics cards for computing work.",
+    "OpenCL": "A system for writing computing work that can run on different kinds of chips.",
+    "subagent": "A helper assigned a smaller part of a larger task.",
+    "context window": "The amount of text and information an AI can take into account at one time.",
+    "diff": "A view showing what changed between two versions of code.",
+    "CLAUDE.md": "A project file where you can write instructions for Claude Code to follow.",
+    "kidney transplant": "An operation that puts a donated kidney into someone whose kidneys aren’t working.",
+    "dialysis": "A treatment that does some of the work healthy kidneys normally do when someone’s kidneys aren’t working.",
+    "HLA": "Human leukocyte antigen: markers doctors compare between a donor and recipient to see how closely they match.",
+    "anti-rejection meds": "Medicines that help stop the body from attacking a transplanted organ.",
+    "async Rust": "A way for Rust programs to handle waiting tasks without stopping the rest of the program.",
+    "microkernel": "A small operating-system core that leaves many jobs to other parts of the system.",
+    "Linux compatibility layer": "The part that helps software made for Linux run on another system.",
+    "user space library": "A way to use an operating-system core like a library inside a program, instead of relying on it to control the whole computer.",
+    "hypervisor": "Software that lets one computer run another operating system in a controlled environment.",
+    "alignment": "The effort to keep an AI's actions in line with what people want.",
+    "NDA": "Non-disclosure agreement: a promise not to share certain information, often because of work.",
+    "RSU": "Restricted Stock Unit: company shares promised to an employee that become theirs after certain conditions are met.",
+    "ESOP": "Employee Stock Ownership Plan: a way employees can receive a share of the company.",
+    "Clang": "A tool that reads C and C++ code and helps turn it into a program a computer can run.",
+    "source-to-source transformation": "Rewriting code into another version of code so you can inspect the changes.",
+    "special member functions": "C++ functions it can provide automatically for a class, such as creating, copying, or assigning its objects.",
+    "upcast": "Turning an object from a specific class into the parent-class form it can also be used as."
+  }
+}
