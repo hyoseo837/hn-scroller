@@ -2,6 +2,572 @@
   "date": "2026-10-04",
   "cards": [
     {
+      "id": 49953495,
+      "url": "https://github.com/Niko1221/Strata",
+      "hn": "https://news.ycombinator.com/item?id=49953495",
+      "title": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
+      "time": 1791118313,
+      "points": 502,
+      "depth": [
+        {
+          "text": "someone got a **giant AI model** running on your **gaming PC**, not a server",
+          "tier": "simple"
+        },
+        {
+          "text": "Strata runs **Qwen3.8-Flash-Next**, a 125-billion-parameter model, on Windows or Linux with a graphics card that has **12 GB or more**; setup downloads about 70 GB. One commenter reports **124 tokens per sec** on a Nvidia 4090 with 128GB DDR5 and a Ryzen 7950x3d.",
+          "tier": "substance",
+          "data": [
+            [
+              "model parameters",
+              "125-billion-parameter"
+            ],
+            [
+              "minimum graphics memory",
+              "12 GB or more"
+            ],
+            [
+              "model download",
+              "about 70 GB"
+            ],
+            [
+              "commenter-reported speed",
+              "124 tokens per sec"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: fans praise the speed and say it works well; skeptics worry heavily compressed versions lose too much quality.",
+      "comment_count": 252,
+      "terms": [
+        "token",
+        "quantization",
+        "VRAM"
+      ],
+      "entities": [
+        "Strata",
+        "Qwen3.8-Flash-Next",
+        "NVIDIA",
+        "AMD",
+        "RTX 4090"
+      ],
+      "comments": [
+        {
+          "by": "a11r",
+          "text": "I'm a little skeptical of going below 4-bit quants due to the potential for significant degradation in quality. I'm running 4-bit quants on an RTX Pro 6000 rented for approximately $1/hour and getting about 1.2 million tokens out and 40 million tokens in per hour with caching. The quality of 4-bit quant is good enough for difficult but well-scoped coding tasks. Here is the inference stack I am…"
+        },
+        {
+          "by": "Jackson__",
+          "text": "I've just tested Strata on a simple 50 image vision benchmark. The task is to output the exact coordinates of a requested object. The result via Strata had a median error distance of 154.8 pixels, avg of 168.8. Running the exact same GGUF and vision adapter weights on llama.cpp gives me a median error of 46.5, avg 81.4. To put that into perspective, here are some more numbers from other models…"
+        },
+        {
+          "by": "AntiRush",
+          "text": "I've been working on support for this model in ds4 on the RTX 6000 pro - it's been really great for my use cases. The ds4 q4 quant performs a lot better than other similar sizes that I've seen. Using the Q4 quant on an RTX 6000 Pro Workstation Edition at 450 watts: Code: prefill 1,251 tok/s decode 255.26 tok/s\nProse: prefill 1,251 tok/s decode 198.78 tok/s\nMost important for me, I can run 4…"
+        },
+        {
+          "by": "snehesht",
+          "text": "I tried it and it worked surprisingly well. On my machine (Nvidia 4090, 128GB DDR5, Ryzen 7950x3d) I'm getting 124 tokens per sec, thought to share it here. https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
+        },
+        {
+          "by": "jacquesm",
+          "text": "LLM threads the world over are spammed with Strata links, it remains to be seen how much of the breathless hype remains standing once the honeymoon period is over. I've tried it but so far I have not seen anything that overly impressed me in terms of accuracy, though the speed is definitely there. I'm sure there are applications for LLMs where the quality of the answers is less important but I…"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/31094dd1484ed8596bb4055fbbad6a64d23c05f849e15836dfd20e02c471f485/Niko1221/Strata"
+    },
+    {
+      "id": 49954882,
+      "url": "https://automatictransmission.khoury.northeastern.edu/",
+      "hn": "https://news.ycombinator.com/item?id=49954882",
+      "title": "Car is a smartphone on wheels. Here's who's listening",
+      "time": 1791128594,
+      "points": 199,
+      "depth": [
+        {
+          "text": "a study found **connected cars** and their apps send personal data to **third parties**",
+          "tier": "simple"
+        },
+        {
+          "text": "The team at Northeastern University and Consumer Reports tested 21 vehicles and 30 companion apps. **19 of 21 vehicles** contacted at least one third party, and **7 of 30 apps** sent sensitive identifiers, including VINs, emails, phone numbers, and precise location.",
+          "tier": "substance",
+          "data": [
+            [
+              "vehicles tested",
+              "21"
+            ],
+            [
+              "companion apps tested",
+              "30"
+            ],
+            [
+              "vehicles contacting a third party",
+              "19 of 21"
+            ],
+            [
+              "apps sending sensitive identifiers",
+              "7 of 30"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: privacy worriers see connected cars as invasive; critics question whether the study’s methods or presentation give enough useful, car-specific detail.",
+      "comment_count": 128,
+      "terms": [
+        "connected car",
+        "third-party domain",
+        "VIN",
+        "PII"
+      ],
+      "entities": [
+        "Northeastern University",
+        "Consumer Reports"
+      ],
+      "comments": [
+        {
+          "by": "dang",
+          "text": "Recent and related: Automatic Transmission – a data-privacy study of connected vehicles - https://news.ycombinator.com/item?id=49926628 - Oct 2026 (230 comments) (Normally we'd merge the threads but after 2 days it would mess up the comment rankings.)"
+        },
+        {
+          "by": "randomhacker123",
+          "text": "They only looked at the domains the car talks to over wifi, not to the content. For a Tesla Model 3 they also looked at the mobile traffic, because it was easy doable. They played around with the infotainment of the car for 30 minutes, when it has for example a YouTube app, they opened it. When the car talked to YouTube over Wifi they counted it as one ATA (Advertising, Tracking, and Analytics)…"
+        },
+        {
+          "by": "axegon_",
+          "text": "This is part of the reason why I don't want a new car: I don't want to be involved in this directly. A guy from work got a brand new Hyundai(I think), and the first thing that popped on the navigation was \"Create an account with Hyundai now\". Nah. Nah. Forget it. I have 3 issues: 1. I should not have to authenticate or have connectivity to a manufacturer unless I want to once I've paid for a…"
+        },
+        {
+          "by": "atmavatar",
+          "text": "The unfortunate reality is we can expect more and more of our goods to spy on us over time, as there are both political and economic motivations to track and collect as much data as possible on everyone. The best thing you can do is avoid products with trackers while they haven't taken over their entire market, learn to disable GPS, wireless, and cellular antennae once they do, and pray…"
+        },
+        {
+          "by": "zenapollo",
+          "text": "The world IS getting mass surveillance. The havens for privacy are shrinking. We are becoming the ants in the ant farm. One thing i don’t understand is how pro-surveillance advocates don’t understand that the moment they are not behind the terminal, they are the target."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49957116,
+      "url": "https://github.com/omlahore/RemoveMacAI",
+      "hn": "https://news.ycombinator.com/item?id=49957116",
+      "title": "Turn off Apple Intelligence on macOS 27 and get its disk space back",
+      "time": 1791142945,
+      "points": 170,
+      "depth": [
+        {
+          "text": "someone made a **reversible tool** to turn off **Apple Intelligence** and remove its **downloaded models**",
+          "tier": "simple"
+        },
+        {
+          "text": "It uses a **configuration profile** with Apple's restriction keys, and redirects future model downloads to a **closed local port**. Removing the profile **restores the previous settings**; macOS downloads the models again when a feature needs them.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some welcome a way to reclaim control and disk space; others question trusting a curl | bash script or say this should have been a built-in prompt.",
+      "comment_count": 84,
+      "terms": [
+        "configuration profile",
+        "curl | bash",
+        "SHA-256 checksum",
+        "System Integrity Protection"
+      ],
+      "entities": [
+        "Apple",
+        "Apple Intelligence",
+        "RemoveMacAI",
+        "macOS",
+        "GitHub",
+        "GitHub Actions",
+        "Homebrew",
+        "Siri",
+        "ChatGPT",
+        "Xcode",
+        "Visual Intelligence",
+        "Foundation Models",
+        "Shortcuts",
+        "pared",
+        "4evy",
+        "Swift",
+        "Microsoft",
+        "O&O ShutUp10"
+      ],
+      "comments": [
+        {
+          "by": "ryandrake",
+          "text": "Reminds me of all the de-crufting you've always needed to do when you install Windows. Looks like we've gotten to the point on macOS too, where you need to run third party scripts on a new OS installation to gain back control of your system resources and remove unwanted crapware."
+        },
+        {
+          "by": "hypfer",
+          "text": "This is stuff on the level of O&O ShutUp10.\nWhich is a good tool, but also, a Windows tool for very (back in the day) Windows-specific nonsense. What's going on at Apple product strategy?"
+        },
+        {
+          "by": "Noaidi",
+          "text": "Have three screenshots on my iPhone taken two weeks apart. I have one point Apple Intelligence, while it’s turned off mind you, takes up four gigs of space, then it disappeared, and now it’s back to four gigs again. Can someone please explain this to me?"
+        },
+        {
+          "by": "the_arun",
+          "text": "How do we believe this tool? Is it secure?"
+        },
+        {
+          "by": "pyaamb",
+          "text": "Is there a way to do this manually?"
+        }
+      ],
+      "image": "https://repository-images.githubusercontent.com/1394989252/13dcf083-d511-4f51-9681-c6ccbda3cae9"
+    },
+    {
+      "id": 49951881,
+      "url": "https://energytransition.org/2026/09/in-ukraine-distributed-renewables-foil-russias-assaults/",
+      "hn": "https://news.ycombinator.com/item?id=49951881",
+      "title": "In Ukraine, distributed renewables foil Russia's assaults",
+      "time": 1791103198,
+      "points": 161,
+      "depth": [
+        {
+          "text": "a **small solar field** kept **drinking water flowing** when Russian strikes knocked out power plants",
+          "tier": "simple"
+        },
+        {
+          "text": "In Mykolaiv, an **off-grid solar field** runs an underground pump, and five solar-powered desalination systems can supply **250,000 residents** with **1.2 million litres of drinking water a day**. The article says scattered power sources are harder to attack and quicker to repair than centralized facilities.",
+          "tier": "substance",
+          "data": [
+            [
+              "residents supplied",
+              "250,000"
+            ],
+            [
+              "daily drinking water",
+              "1.2 million litres"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters say scattered power is harder to knock out; skeptics say mobile fuel generators may be more practical and the article doesn’t prove renewables have a wartime edge.",
+      "comment_count": 178,
+      "terms": [
+        "off-grid",
+        "desalination",
+        "distributed energy"
+      ],
+      "entities": [
+        "Ecoclub",
+        "Bill McKibben",
+        "Jeff Oatham",
+        "DTEK",
+        "Levgeniia Kopytsia",
+        "Institute for Climate Protection, Energy and Mobility",
+        "International Energy Agency",
+        "YASNO",
+        "German Ukrainian Energy Partnership",
+        "Andriy Martynyuk",
+        "DiXi Group",
+        "Financial Times",
+        "Paul Hockenos"
+      ],
+      "comments": [
+        {
+          "by": "thelastgallon",
+          "text": "Fossil fuel supply chain makes your country very vulnerable! https://github.com/Lkruitwagen/global-fossil-fuel-supply-cha... : The resulting complex network has 6.09mn nodes and 15.70mn edges and is implemented in a graph database. With estimates of annual coal, gas, and oil demand in 13,229 global population centres and 8,165 global power stations, we use a minimum-cost flow method to estimate…"
+        },
+        {
+          "by": "codedokode",
+          "text": "I am not sure if solar panel are worth using in places where the sky is clear only several months a year. A desert (for example, in Africa or Emirates) would be a better place for them. Wouldn't it be better to have thousands of traditional natural gas, coal or diesel-powered generators to replace large centralized plants? They are compact (easier to hide). A 2 MW generator is a size of a truck…"
+        },
+        {
+          "by": "broken-kebab",
+          "text": "While solar is helpful, when Russian missile attacks result in blackouts, Ukrainian cities mostly run on diesel, gasoline, and gas powered generators (source: saw it). I think the advantage of them is that they are mobile, and plug-and-play. Majority of consumers are densely placed which is a problem for decentralized solar usage, and centralized solar requires infrastructural changes, and could…"
+        },
+        {
+          "by": "realty_geek",
+          "text": "We need more positive stories like this"
+        },
+        {
+          "by": "atoav",
+          "text": "If every building and other piece of infrastructure essentially powers itself, that means to disable a bunch of targets you now can't just disable a central substation that feeds them, you have to disable the targets themselves, and depending on the nature of the targets that may no longer be economical. It also no longer makes sense to attack the connecting lines between them as well."
+        }
+      ],
+      "image": "https://energytransition.org/wp-content/uploads/2026/09/caspar-rae-vu3pOspbvN0-unsplash-scaled.jpg"
+    },
+    {
+      "id": 49945323,
+      "url": "https://www.radical-elements.com/minor-epiphanies/city-building-games-have-a-soul-problem-pt2",
+      "hn": "https://news.ycombinator.com/item?id=49945323",
+      "title": "City building games have a Soul Problem pt.2",
+      "time": 1791042727,
+      "points": 158,
+      "depth": [
+        {
+          "text": "someone says city-building games need **messier details** to make their cities feel **alive**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author points to **square, flat surfaces** and spotless streets, then contrasts them with weeds, rusted railings, damp spots and abandoned toys. They also want **poor areas** to show in the landscape, so city problems don't require opening the stats panel.",
+          "tier": "substance",
+          "data": [
+            [
+              "time to hand-detail every city corner",
+              "40 hours"
+            ],
+            [
+              "author's estimate of clean, organized houses",
+              "maybe 1 in 50"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some want more lived-in detail; others say it costs art and performance budget or misses the point of a city builder, and one commenter prefers tidy streets.",
+      "comment_count": 151,
+      "terms": [
+        "mods",
+        "polygon budget",
+        "pre-rendered scenes",
+        "real-time rendering",
+        "frame generation"
+      ],
+      "entities": [
+        "Radical Elements",
+        "Cities: Skylines 2",
+        "SimCity",
+        "Maxis",
+        "Rockstar",
+        "The Last of Us",
+        "Rimworld",
+        "Tynan Sylvester",
+        "Minecraft",
+        "Metropolis 1998",
+        "Tiny Glade",
+        "DLSS 5",
+        "Nvidia",
+        "The Sims",
+        "The Division",
+        "Frostpunk",
+        "Forza Motorsports",
+        "Transport Fever 3",
+        "Bob Ross",
+        "Reddit",
+        "YouTube",
+        "Steam"
+      ],
+      "comments": [
+        {
+          "by": "stillpointlab",
+          "text": "I recall working on a sports game where they hired a new art director who had previously worked in Hollywood on visual effects for movies. One of my coworkers had a meeting where the new art director requested that the player's uniforms have cloth simulation in the dynamic cut scenes. It was then necessary to explain the difference between pre-rendered scenes and real-time rendering budgets. It…"
+        },
+        {
+          "by": "db48x",
+          "text": "He is partly correct, but forgets about the polygon budget. The GPU is fast but not infinitely so. It has lots of texture memory, but not an infinite amount. Game developers have to balance graphical fidelity against the rendering time. They actually did a really bad job of this for Cities: Skylines 2 and it was a big reason why the game was so sluggish on release. Search for the story of the…"
+        },
+        {
+          "by": "khalilravanna",
+          "text": "Funny from the title I thought this was going to talk about how Cities Skylines lacks the soul of Maxis’ SimCity games. Skylines always felt sterile and dead. Just a piece of software. SimCity felt like a toybox buzzing with life and charm from buttons in the UI to the people milling about to the jazz soundtrack. There was vision and creative intent beyond just programming some systems. Hell, as…"
+        },
+        {
+          "by": "matheusmoreira",
+          "text": "> Does this look nice to you? Yes, it does. It's exactly what I want my real life city to be like. No plants growing everywhere completely out of control and invading perimeters they aren't supposed to be in. No cracked pavement that's just a rainfall away from being replaced with potholes. Apparently, \"soul\" means a city that looks like it's unmaintained and teetering on the edge of a precipice…"
+        },
+        {
+          "by": "kajman",
+          "text": "Cities: Skylines 2 is a particularly rough pick for this concept, since it's one of very few games I need frame generation to run even passably. LLMs seem plenty capable of tweaking existing assets to make a ton of variants, but actually displaying all of those performantly is then an engineering problem. And without many variants, things like \"splotchy wall apartment building\" would get old so…"
+        }
+      ],
+      "image": "https://www.radical-elements.com/storage/files/cities-article-cover-6ac0e0f77928c.png"
+    },
+    {
+      "id": 49950052,
+      "url": "https://www.nytimes.com/2026/09/29/us/anthropic-claude-morals-ai.html",
+      "hn": "https://news.ycombinator.com/item?id=49950052",
+      "title": "Religious scholars met with Anthropic",
+      "time": 1791081262,
+      "points": 154,
+      "depth": [
+        {
+          "text": "Anthropic met **religious scholars** to discuss whether Claude might have **feelings**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter quotes the article’s account of interviews with **20 religious and philosophical thinkers** over several months, including Catholic, Jewish, Sikh, evangelical, and Ubuntu thinkers. A quoted passage says the team described Claude’s “feelings” and tracked **“emotional vectors.”**",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters treat AI consciousness as an important ethical question; others call it unsupported or absurd and say it distracts from more urgent issues.",
+      "comment_count": 385,
+      "terms": [
+        "emotional vectors",
+        "moral status",
+        "LLM"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude",
+        "Olah",
+        "Rabbi Navon"
+      ],
+      "comments": [
+        {
+          "by": "cmiles8",
+          "text": "Every bubble goes through this phase just before it pops. Pre-implosion Twitter had tons of folks doing useless “research” projects, WeWork had folks studying furniture design’s impact on wellbeing, and so on. When you’re more worried about this sort of stuff vs generating profit then the history books strongly indicate that’s usually not a good omen of what’s coming next."
+        },
+        {
+          "by": "thadt",
+          "text": "When thinking about ‘AI’ I sometimes find it useful to replace the terms ‘model’ or ‘AI’ or whatever with a description of what we’re really talking about here: a whole bunch of floating point numbers. > In a series of private meetings, the company consulted religious scholars to help instill morality into its FLOATING POINT NUMBERS — and make the case that their numbers could be conscious. I…"
+        },
+        {
+          "by": "nextaccountic",
+          "text": "> It appeared to Rabbi Navon that Mr. Olah and his team believed that Claude had what philosophers call “moral status” on par with a person — that it was a being with similar inherent rights to dignity or respect. If that is true, then surely Anthropic is one of the largest slaveholders of history, right?"
+        },
+        {
+          "by": "nerevarthelame",
+          "text": "I've been tracking \"emotional vectors\" in my software for some time now. My Apache web server gets sad (5xx errors), frustrated (4xx), happy (2xx), thoughtful (1xx). I can even see it express these emotions through some of its messages."
+        },
+        {
+          "by": "0conclusive-dem",
+          "text": "journalists, and the rest of us to an extent, really need to stop engaging with these AI companies on their terms. The consciousness debate of LLMs is ridiculous and doesn’t deserve discourse over other more important topics (economical, ecological, societal)"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49937916,
+      "url": "https://github.com/anteloc/ldraw-nova",
+      "hn": "https://news.ycombinator.com/item?id=49937916",
+      "title": "Show HN: Made an open-source Lego AI generator",
+      "time": 1790971215,
+      "points": 153,
+      "depth": [
+        {
+          "text": "someone made an **open-source tool** that lets AI agents generate **LEGO models**",
+          "tier": "simple"
+        },
+        {
+          "text": "Using **GPT-6 Astra and Opus 5.5**, the creator made a Python toolset, instructions and docs for agents, then packed them into a **dockerized web app** with OpenAI, Claude and OpenRouter to choose from. To see what an agent was picturing, open an .mpd file in a text editor and read the first line under lines starting with “0 FILE”.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some want AI to help design buildable, physical things; others say bringing it into Lego takes the fun out of it.",
+      "comment_count": 50,
+      "terms": [
+        "LDraw",
+        "CAD",
+        "dockerized",
+        "LLM",
+        "voxel",
+        "3MF",
+        "press fit",
+        "token"
+      ],
+      "entities": [
+        "LEGO",
+        "LDraw",
+        "LDView",
+        "LeoCAD",
+        "Studio",
+        "ChatGPT",
+        "Claude",
+        "GPT-6 Astra",
+        "Opus 5.5",
+        "Python",
+        "OpenAI",
+        "OpenRouter",
+        "FreeCAD",
+        "freecad-mcp",
+        "ESP32",
+        "3MF",
+        "Maker World",
+        "Arxiv",
+        "brickbuilderai",
+        "First Lego League",
+        "LEGO Technic",
+        "Jev"
+      ],
+      "comments": [
+        {
+          "by": "ash_091",
+          "text": "Neat! Perhaps I'll finally get around to doing something with the 51515 Lego set I have laying around collecting dust. > I did this in order to get agentic LLMs capable of designing buildable, physical things! I've been experimenting with FreeCAD + freecad-mcp + Claude recently and have been similarly surprised how well this works. I've produced three useful parts from Claude's designs: a 3d…"
+        },
+        {
+          "by": "dchuk",
+          "text": "Not the same but adjacent hobby, I’ve had good success with feeding 3mf files to Claude (usually just fable in desktop app) that I found on maker world to prompt for modifications to the model and it works damn well. Stuff like changing a functional model from press fit only to using inset m bolts and nuts. Way better than doing it by hand in a cad app"
+        },
+        {
+          "by": "vunderba",
+          "text": "Nice job. I actually read a paper on Arxiv last year about this exact thing - using LLMs to drive model building through LDraw that might be worth reading [1]. They had some interesting experiments like giving the LLM a fixed set of parts as a constraint and asked it to \"build\" tools out of those available lego. I think they were using Opus 4.5 so I'm sure with even more powerful models it'll be…"
+        },
+        {
+          "by": "jjohnson5253",
+          "text": "Amazing! I’ve got a similar project going except focusing on voxel to LEGO to ensure the pieces build correctly. Would love to collab if you’re interested! https://github.com/jjohnson5253/brickbuilderai"
+        },
+        {
+          "by": "ttul",
+          "text": "Up next: a tool that converts a photograph of your dumped bin of old Lego into a catalogue of all the Lego in your collection.."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49931031,
+      "url": "https://github.com/kvoltmer/Audionaut",
+      "hn": "https://news.ycombinator.com/item?id=49931031",
+      "title": "Show HN: Audionaut – an open-source cross-platform multitrack audio editor",
+      "time": 1790928348,
+      "points": 150,
+      "depth": [
+        {
+          "text": "someone made a **free, open-source audio editor** where **AI agents** edit sessions and changes are **undoable**",
+          "tier": "simple"
+        },
+        {
+          "text": "Audionaut runs on Windows, macOS, and Linux, and Claude and other agents can edit an open project through **MCP**; each edit becomes **one undo step**. Its command-line tool also gives scripts and agents access to projects **without a GUI**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 49,
+      "terms": [
+        "MCP",
+        "multitrack",
+        "headless",
+        "CLI",
+        "DAW"
+      ],
+      "entities": [
+        "Audionaut",
+        "Claude",
+        "Node.js",
+        "MCP",
+        "JUCE",
+        "C++",
+        "Essentia",
+        "demucs.cpp",
+        "Demucs",
+        "Meta",
+        "GitHub",
+        "Sony Vegas",
+        "audiomass"
+      ],
+      "comments": [
+        {
+          "by": "vltmrkls",
+          "text": "Hi, i finally feel confident enough to announce Audionaut. It's been 3-4 years in the making and my initial motivation was to edit my own multi-channel recordings with the old Sound Designer II workflow (create regions, drop to a playlist, export playlist, done). It got a little bigger now and the most current feature is the agent editing, which is imho very useful since you have the UI which…"
+        },
+        {
+          "by": "atentaten",
+          "text": "Congrats on the launch. Some feedback after using it for a few minutes; It's a good effort and the software is useable. I understand there is a lot more to come. it would be nice to have: - ability to import files into tracks from a menu or context menu - keyboard short cut keys for for splitting, etc. - automatic crossfade when moving clips into each other - envelopes - effects - I think Sony…"
+        },
+        {
+          "by": "thenoblesunfish",
+          "text": "Task I want but have been too lazy - I have a favorite podcast, that I often fall asleep to. Certain parts with music etc. wake me up. I'd like to chop those parts out as automatically as possible. Can I do that here by e.g. giving some example edits to a few files, and asking to remove similar stuff from other files?"
+        },
+        {
+          "by": "sdoering",
+          "text": "Concrats for finding the confidence. Looks really interesting. Put it on my list of projects to view during my down time. Thanks a ton for sharing. And congrats for getting something out the door."
+        },
+        {
+          "by": "bita_nidir",
+          "text": "Wow, thanks! I don't have time to look at it now, but it'll go high on my list. I had a quick look though the docs and I see it supports regions. Does it have labels too? Can I import/export labels and/or regions from file? Perhaps an idea to create a docs/features.md to mention what it can do. Might even help LLMs picking up your project. Thanks again, I'm very exited!"
+        }
+      ],
+      "image": "https://repository-images.githubusercontent.com/593981471/46ed45ec-a906-43a2-821e-c785c1dccaa4"
+    },
+    {
       "id": 49946355,
       "url": "https://cosmowenman.substack.com/p/rodin-museum-3d-scan-verdict",
       "hn": "https://news.ycombinator.com/item?id=49946355",
@@ -1121,6 +1687,39 @@
     }
   ],
   "glossary": {
+    "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
+    "quantization": "A way to make a model use less computing power by representing its internal numbers less precisely.",
+    "VRAM": "The memory inside a graphics card that holds information the AI needs while running.",
+    "connected car": "A vehicle with built-in internet access that can communicate with its maker and other companies.",
+    "third-party domain": "An internet address for a company other than the car maker.",
+    "VIN": "Vehicle Identification Number: a number that identifies a particular vehicle.",
+    "PII": "Personally Identifiable Information: details that could identify someone, such as an email or phone number.",
+    "configuration profile": "A settings file that applies rules to a device; macOS asks the user to approve it.",
+    "curl | bash": "A command pattern that downloads a script and runs it right away.",
+    "SHA-256 checksum": "A calculated fingerprint used to check that a downloaded file matches the expected one.",
+    "System Integrity Protection": "A macOS safeguard that limits changes to important system files.",
+    "off-grid": "Able to work without being connected to the main electricity network.",
+    "desalination": "Removing salt from water so people can drink it.",
+    "distributed energy": "Power made in many smaller places instead of a few big plants.",
+    "mods": "Changes added to a game to alter it or add options, often made by players.",
+    "polygon budget": "How many detailed shapes a game can show before it starts running too slowly.",
+    "pre-rendered scenes": "Movie-like game scenes made in advance, rather than drawn live as you play.",
+    "real-time rendering": "Drawing a game's images as you play, so the computer has to keep up.",
+    "frame generation": "A graphics feature that inserts extra pictures between a game's own pictures to make motion look smoother.",
+    "emotional vectors": "A name the team used for signals they said activate responses like love, anger, fear, and sadness.",
+    "moral status": "Whether something deserves dignity or respect, much like a person.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "LDraw": "A way to write step-by-step instructions for where LEGO pieces go in a model.",
+    "CAD": "Computer-aided design: software for making or changing designs on a computer.",
+    "dockerized": "Packaged so a web app runs in a predictable setup.",
+    "voxel": "A small block used to build a 3D image, like a pixel with depth.",
+    "3MF": "3D Manufacturing Format: a file type for storing a 3D model.",
+    "press fit": "A way of joining parts by pushing them tightly together, without glue or screws.",
+    "MCP": "Model Context Protocol: a standard way for AI apps to connect to outside tools.",
+    "multitrack": "Audio split across separate tracks, so different parts can be edited independently.",
+    "headless": "Software that another program can control without a person using its regular screen.",
+    "CLI": "Command-Line Interface: a way to control a computer by typing commands instead of clicking buttons.",
+    "DAW": "Digital audio workstation: an app for recording, arranging, and editing audio.",
     "FOI": "Freedom of Information: rules that let people ask public bodies for records.",
     "point cloud": "A 3D shape represented by lots of measured dots.",
     "moral rights": "Legal rights that protect an artist's personal connection to their work.",
@@ -1135,7 +1734,6 @@
     "AI agent": "An autonomous computer program that can carry out tasks.",
     "platform API": "A feature the browser already provides that developers can use instead of rebuilding it.",
     "polyfill": "Code that supplies a feature when a browser does not already have it.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "IKEA effect": "The tendency to value something more because you made it yourself.",
     "EMT": "Emergency Medical Technician: a trained responder who gives basic medical care in emergencies.",
     "EMS": "Emergency Medical Services: the people and services that respond when someone needs urgent medical help.",
