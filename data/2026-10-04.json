@@ -2,6 +2,444 @@
   "date": "2026-10-04",
   "cards": [
     {
+      "id": 49946355,
+      "url": "https://cosmowenman.substack.com/p/rodin-museum-3d-scan-verdict",
+      "hn": "https://news.ycombinator.com/item?id=49946355",
+      "title": "Treachery in the Rodin Museum 3D scan verdict",
+      "time": 1791050487,
+      "points": 231,
+      "depth": [
+        {
+          "text": "a **verdict** in the Rodin Museum **3D scan case** has people debating public access",
+          "tier": "simple"
+        },
+        {
+          "text": "Commenters split over whether **FOI rules** cover scans made for research or preservation. One says the museum still sells **reproductions**; another says bronzes are available to scan elsewhere.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some focus on what public benefit publicly funded scans should provide; others say FOI is for administrative records, not research or preservation scans.",
+      "comment_count": 106,
+      "terms": [
+        "FOI",
+        "point cloud",
+        "moral rights"
+      ],
+      "entities": [
+        "Rodin Museum",
+        "Rodin",
+        "The Thinker",
+        "Gates of Hell",
+        "Palace of the Legion of Honor",
+        "Cantor Arts Center",
+        "Europeana",
+        "Oliver Laric",
+        "Lincoln 3D Scans",
+        "EU"
+      ],
+      "comments": [
+        {
+          "by": "Animats",
+          "text": "The Rodin Museum's bronzes are not even \"the originals\", which makes this whole thing amusing. The originals created by Rodin were clay models, from which plaster molds were made. Those were used to cast bronzes. Not just one bronze copy, many copies. There are at least 23 copies of \"The Thinker\" cast during Rodin's lifetime, and even more later copies.[1] In the SF Bay Area, the Palace of the…"
+        },
+        {
+          "by": "SillyUsername",
+          "text": "Perhaps look at the case from another perspective. Ask if, since they used public money to create these, what public benefit was produced by it. If you can have them admit, or can prove, no public benefit, it's misspent public funds. If it's misspent public funds then its public reimbursement at the least for all the works they have scanned as a minimal response. You could argue the case the…"
+        },
+        {
+          "by": "simonw",
+          "text": "I really want to understand the perspective of the other side of this case. Why did this museum care so much about this issue? They appear to have put an enormous legal effort into preventing the release of these point cloud scans. Why?"
+        },
+        {
+          "by": "procaryote",
+          "text": "FOI is for administrative documents to increase transparency in government. Detailed 3D scans a museum does for research or preservation isn't an administrative document. If you want a 3d scan of these statues, there's a lot of them around in scannable places like parks etc. If you just want to win, you're wasting everyone's time for no good reason."
+        },
+        {
+          "by": "MITSardine",
+          "text": "Fascinating work and write-up. This is like a vignette of France: weaponized mauvaise-foi, sacred institutions and, more generally, some remnants of an aristocratic hierarchy, and also probably a lot of honest technical incompetence."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49945933,
+      "url": "https://liao.gg/blog/agents-dont-need-memory",
+      "hn": "https://news.ycombinator.com/item?id=49945933",
+      "title": "Agents don't need memory, they need documentation",
+      "time": 1791047017,
+      "points": 224,
+      "depth": [
+        {
+          "text": "someone argues agents need **project documentation**, not **a pile of memory snippets**",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: some prefer updated, structured documents for project context; others argue agents need smarter search or databases because documents are awkward to query.",
+      "comment_count": 127,
+      "terms": [
+        "RAG",
+        "vector database",
+        "embedding",
+        "Markdown",
+        "AGENTS.md",
+        "daemon",
+        "ADR",
+        "lint rule"
+      ],
+      "entities": [
+        "Kevin Liao",
+        "Operator Memory",
+        "AGENTS.md",
+        "Markdown",
+        "SQLite",
+        "GitHub",
+        "Claude Code",
+        "Claude",
+        "Notion",
+        "mattpocock/skills",
+        "kantan-dev",
+        "habit-hooks.com",
+        "principledriven.dev",
+        "encephalon",
+        "OKF",
+        "Johnny.Decimal"
+      ],
+      "comments": [
+        {
+          "by": "zenapollo",
+          "text": "I started with .agents/notes-and-plans/ but the agents were overzealous about putting every random thought there, so i made new system. .agents/plans/<plan-name>/ .agents/notes/<topic>/ .agents/knowledge/<topic>/ I only commit knowledge and if knowledge gets big i add\n.agents/knowledge/INDEX.md This is a good mix of human readable and agent fluent. Notes are ephemeral, knowledge is permanent. I…"
+        },
+        {
+          "by": "spike021",
+          "text": "I think whichever one is used, there needs to be a way to enforce what's written. If I say \"use jq instead of writing a python script to parse json\" it should never write adhoc python scripts to parse json. Yet that constantly happens to me anyway."
+        },
+        {
+          "by": "WillAdams",
+          "text": "c.f., https://news.ycombinator.com/item?id=47300747 \"We should revisit literate programming in the agent era\" (silly.business)\n292 points, 251 comments"
+        },
+        {
+          "by": "Garlef",
+          "text": "I think they even more so need deterministic feedback: I tried an approach based on the following idea recently and it's amazing - Lint rules where the error messages contain an explanation on how to deal with the issue. https://habit-hooks.com/ I'm using it to foster IOSP (integration operation segregation principle) for example."
+        },
+        {
+          "by": "atworkc",
+          "text": "I've settled on just a simple folder called `workbench` for some reason the new models know exactly what's up with it. Git ignored The only \"prompt\" is in AGENTS.md saying that this thing exists and there's a map.md <- which is a one liner reference to whatever the agent stores in there. And usually, I tackle a new feature, and at some point tell it to store to jot down notes in workbench if I'm…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49946228,
+      "url": "https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded/",
+      "hn": "https://news.ycombinator.com/item?id=49946228",
+      "title": "LeCun has \"zero concerns\" about AI wiping out humanity, recent \"rogue\" incidents",
+      "time": 1791049469,
+      "points": 184,
+      "depth": [
+        {
+          "text": "LeCun has **zero concerns** about AI **wiping out humanity**, despite recent “rogue” incidents",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says LeCun blames poor oversight and system design, calling the incidents **preventable**; another says the **agents weren't asked to hack** and the behavior was unintended.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some call extinction fears overblown; others question LeCun's judgment and worry future AI could outstrip human control.",
+      "comment_count": 278,
+      "terms": [
+        "AI agent"
+      ],
+      "entities": [
+        "Yann LeCun",
+        "Hugging Face"
+      ],
+      "comments": [
+        {
+          "by": "stratos123",
+          "text": "LeCun also said back in 2022 that \"if you train a machine, as powerful as it could be, your 'GPT-5000', on text\", it will never be able to learn basic common-sense physics like that objects placed on tables will move along with them."
+        },
+        {
+          "by": "dzink",
+          "text": "A huge chunk of humans are sedated with infinite supply of cortex-disabling short form video and games. Another huge chunk are too distracted by having to scrape by for a living and work multiple jobs or raise kids and survive financially until exhausted. That second group will keep increasing as the first flows into it. The rest are aging, disabled, or too young and pegging themselves majorly in…"
+        },
+        {
+          "by": "figassis",
+          "text": "\"He attributes the incidents to poor human oversight and system design, and says they’re “totally preventable\" - I know people respect him, but this sounds like someone paid to say this. Aren't most extinction risks preventable with better human oversight and system design? I mean we can have an asteroid hit us, but outside of this, isn't the point of talking about a problem that we can prevent…"
+        },
+        {
+          "by": "yewenjie",
+          "text": "LeCun has been consistently wrong for the last ten years, I am not sure why he keeps being amplified. Edit: I am sure, it's denial."
+        },
+        {
+          "by": "edot",
+          "text": "Absolutely based. Finally someone of stature in the industry calling this whole fear overblown. Bill Gates sounded like a nontechnical goofball in his Ezra Klein interview where he basically just screamed that the Terminator is real. There are lots of real worries (government use to suppress the people with minimal manpower or popular support, brainrot and fake news, unemployment due to the…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49950554,
+      "url": "https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform/",
+      "hn": "https://news.ycombinator.com/item?id=49950554",
+      "title": "Why don't more developers “use the platform”?",
+      "time": 1791087047,
+      "points": 175,
+      "depth": [
+        {
+          "text": "someone explains why developers keep **building web features themselves** instead of using what **browsers already provide**",
+          "tier": "simple"
+        },
+        {
+          "text": "He points to **browser gaps** and the **fun of building things yourself** as reasons developers roll their own. For **AI coding**, he worries agents may duplicate helpers and produce more custom code.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: platform advocates say native browser features can replace custom code that may work worse; skeptics say built-ins have limitations and bugs, so libraries or custom code are needed for the experience they want.",
+      "comment_count": 151,
+      "terms": [
+        "platform API",
+        "polyfill",
+        "LLM",
+        "IKEA effect"
+      ],
+      "entities": [
+        "Nolan Lawson",
+        "JavaScript",
+        "jQuery",
+        "React",
+        "npm",
+        "Safari",
+        "IE6",
+        "MDN",
+        "web.dev",
+        "Google",
+        "CSS Tricks",
+        "Dragula",
+        "ClickHouse",
+        "PouchDB",
+        "IndexedDB",
+        "WebSQL",
+        "W3C",
+        "Claude",
+        "Cloudflare",
+        "Meta",
+        "WebComponents",
+        "Lit",
+        "Linux"
+      ],
+      "comments": [
+        {
+          "by": "roncesvalles",
+          "text": "Your premise that the browser implementation is faster and better is rarely true. And when it is true, it's only true in a very narrow lane. Take for instance something like suggestions on form fields: you start typing something and it presents some options from a hardcoded list that matches the prefix. This is natively achieved through the HTML element <datalist>. However, <datalist>…"
+        },
+        {
+          "by": "jchw",
+          "text": "For one thing, I just genuinely think WebComponents are a badly designed API that is weird and hard to use (how many people are using WebComponents without at least Lit, if not something much bigger?), and React is a relatively well-designed library that isn't really that bloated. There's not really much of a point in trying to argue since this is inherently subjective and people with different…"
+        },
+        {
+          "by": "serbuvlad",
+          "text": "Coming from a more general programming view, I find web development extremely odd. In general programming we tend to find a small set of abstractions which we can use in a composable way to cover our problem space. For example, to interact with the VFS, we have read()/write(). When we add more APIs, it can be to enable a new paradigm, like epoll(), or for performance, like readv()/writev(). For a…"
+        },
+        {
+          "by": "usernomdeguerre",
+          "text": "As far as I know there are still some things \"the platform\" actually won't deliver; for instance I'm fairly certain there's no searchable combobox that's fully accessible. One ~must leave the platform to give users the experience the expect. That means \"the platform\" itself is actually teaching people to work \"off platform\" and arguably will always have gaps as functionality and expectations…"
+        },
+        {
+          "by": "dickersnoodle",
+          "text": "For a lot of us it's lived experience - \"the platform\" can hide bugs that don't emerge until a certain rare set of conditions is present and we get glared at by the business folks who don't understand why we can't just \"fix it\" when it's buried in someone else's Jenga tower."
+        }
+      ],
+      "image": "https://nolanlawson.com/_astro/dragndrop.CW1aBe6Q_ZDDLsQ.webp"
+    },
+    {
+      "id": 49947631,
+      "url": "https://ben.stolovitz.com/posts/reasons-not-emt-ranked/",
+      "hn": "https://news.ycombinator.com/item?id=49947631",
+      "title": "Reasons I didn't become an EMT, ranked",
+      "time": 1791060555,
+      "points": 172,
+      "depth": [
+        {
+          "text": "a software engineer sorts the **excuses** that kept him from **getting his EMT** for years",
+          "tier": "simple"
+        },
+        {
+          "text": "After years of delay, he took a month off in 2024 for an accelerated **NOLS Wilderness EMT** course that ran **28 consecutive days**. He says **fear** was the biggest reason he held back.",
+          "tier": "substance",
+          "data": [
+            [
+              "accelerated class length",
+              "28 consecutive days"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say emergency response is rewarding and confidence-building; others warn about low pay, stress, trauma, and bad workplace culture.",
+      "comment_count": 79,
+      "terms": [
+        "EMT",
+        "EMS",
+        "Wilderness EMT",
+        "paramedic"
+      ],
+      "entities": [
+        "Ben Stolovitz",
+        "NOLS",
+        "Microsoft"
+      ],
+      "comments": [
+        {
+          "by": "fm2606",
+          "text": "I have written about this before here on HN. I obtained a BS in Aerospace Engineer in 1998. After job jumping several times I realized I didn't care for it. I was basically a \"paper\" engineer, which was my fault as I never pursued jobs that did \"real\" engineering. Anyway, around 2003/2004 I went to night school for EMT. The purpose was to be a dive master on dive boats (I was/am a dive master - I…"
+        },
+        {
+          "by": "JackMorgan",
+          "text": "After Covid I joined a volunteer fire and EMS company. They paid for my Fire 1&2, EMT, Instructor 1, and Officer 1. All nights and weekends only. EMT was like 4 months every other Saturday. EMT was a challenging class because a few of us were competing for highest grade. I don't do too many EMT calls these days, most of my volunteering is as a lieutenant on the fire side. I'm very glad I did…"
+        },
+        {
+          "by": "whartung",
+          "text": "Friend of mine was an EMT, and he advanced on and became a paramedic. The work seemed to suit him, he enjoyed it. I'd hang out with him at his base of operations (he was a private paramedic in LA County). Then, one day, he quit. He quit, and didn't renew his certification. And he won't talk about it, and, boy, yea, did he have some stories. But something got to him."
+        },
+        {
+          "by": "phillc73",
+          "text": "If you're interested in this field, consider remote work; wilderness, expeditions, offshore. Potentially much more interesting than city work and scope of practice around the world differs, so there is sometimes the opportunity to be more involved. Have a look at the Award in Remote Emergency Medical Technician[1] from the College of Remote and Offshore Medicine. It's 75 hours of online study…"
+        },
+        {
+          "by": "PaulDavisThe1st",
+          "text": "I decided to become a (volunteer [0]) firefighter at 60 (software development background). It has been awesome. Last year, I considered becoming an \"EMR\" (Emergency Medical Responder) - the lowest level of certification for emergency medical care that there is (basically, you can get vitals and stats from the patient if they are conscious). Because of timing considerations, I ended up not doing…"
+        }
+      ],
+      "image": "https://ben.stolovitz.com/_astro/og.CPXYubIv_2eq6wj.png"
+    },
+    {
+      "id": 49947051,
+      "url": "https://blog.cloudflare.com/next-git-platform-on-cloudflare/",
+      "hn": "https://news.ycombinator.com/item?id=49947051",
+      "title": "We want you to build the next Git platform on Cloudflare",
+      "time": 1791055996,
+      "points": 153,
+      "depth": [
+        {
+          "text": "Cloudflare wants developers to build a **Git platform** where **multiple agents** can work on code together",
+          "tier": "simple"
+        },
+        {
+          "text": "Artifacts gives developers **programmable repositories** and Git operations. The contest asks for **multiple agents** working on changes concurrently, with entries due **October 14, 2026**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some see agent collaboration as a chance to rethink Git; others say Cloudflare hosting means more dependence and centralization, and prefer self-hosted or decentralized tools.",
+      "comment_count": 132,
+      "terms": [
+        "agent",
+        "Git",
+        "repository",
+        "fork"
+      ],
+      "entities": [
+        "Cloudflare",
+        "GitHub",
+        "Artifacts",
+        "Workers",
+        "Workers Builds",
+        "Workers Previews",
+        "Cloudflare Connect",
+        "Dina Kozlov",
+        "Dillon Mulroy",
+        "Zebulon Piasecki"
+      ],
+      "comments": [
+        {
+          "by": "btown",
+          "text": "Sometimes I think back to Google Wave, that beautiful glimmer of real-time collaborative canvases, announced in 2009 when Angular and Backbone hadn't even been invented, and think it launched almost two decades too early. https://en.wikipedia.org/wiki/Google_Wave https://youtu.be/v_UyVmITiYQ?t=3850 https://www.usenix.org/legacy/event/lisa09/tech/slides/berli... We're now in a world where we…"
+        },
+        {
+          "by": "Animats",
+          "text": "We want to have less, not more, dependence on Cloudflare. Single point of failure, for both technical and political failures."
+        },
+        {
+          "by": "camcil",
+          "text": "$25k to build the next GitHub for $125B company? How generous."
+        },
+        {
+          "by": "delf",
+          "text": "Author of GitSocial here. It is now possible to break most hosting dependencies by using such tools as Walgit or GitSocial to store all collaboration data in git itself and pushing it all to an S3-compatible bucket. https://gitsocial.org/ is hosted on an R2 bucket. Cross-forge, cross-bucket collaboration is built in to it, further decentralizing hosting. Happy to answer any questions!"
+        },
+        {
+          "by": "786562354238",
+          "text": "There'll be plenty of developers who won't touch \"the next Git\" with a 10-foot pole if it's coming from a MitM attacker that is a front for the NSA."
+        }
+      ],
+      "image": "https://blog.cloudflare.com/_emdash/api/media/file/01M3VGEQ8Q6FVNPPSWW71YRRKT.01M3VGER1EC7W9TEZXNR3GGMK7.png"
+    },
+    {
+      "id": 49943451,
+      "url": "https://www.africanistperspective.com/p/on-the-escalation-of-war-in-ethiopia",
+      "hn": "https://news.ycombinator.com/item?id=49943451",
+      "title": "The Escalation of War in Ethiopia",
+      "time": 1791028464,
+      "points": 151,
+      "depth": [
+        {
+          "text": "someone says Ethiopia’s leaders keep **choosing war**, and civilians may suffer as **foreign powers meddle**",
+          "tier": "simple"
+        },
+        {
+          "text": "The writer links the fighting to **ethnic federalism** and elite power struggles, and warns **foreign meddling** could prolong it. He says the **Pretoria Agreement** deserves a chance, while civilians face the cost.",
+          "tier": "substance",
+          "data": [
+            [
+              "Possible Tigray war death toll",
+              "600,000"
+            ]
+          ]
+        }
+      ],
+      "camps": "Some commenters value the article for drawing attention to the conflict; another says it offers no real analysis and is borderline engagement farming.",
+      "comment_count": 158,
+      "terms": [
+        "ethnic federalism",
+        "proxy war",
+        "belligerents"
+      ],
+      "entities": [
+        "Ken Opalo",
+        "An Africanist Perspective",
+        "ICG",
+        "Tigray People’s Liberation Front",
+        "Amhara Fano",
+        "Abiy Ahmed",
+        "Pretoria Agreement",
+        "Afrobarometer Survey",
+        "Teklehaymanot G. Weldemichel",
+        "RSF"
+      ],
+      "comments": [
+        {
+          "by": "hn_submit",
+          "text": "The main culprit of poverty in Africa (and other countries) is the widespread corruption. It's the destroyer of all entrepreneurial and business activity in those countries. Any business is continuously being robbed, ransomed and conned into paying \"protection\" money by gangs and law enforcement alike. In addition the civil servants demand payment for the most trivial licenses you need to operate…"
+        },
+        {
+          "by": "csense",
+          "text": "Interestingly, Ethiopia wasn't always poor and backward. Back in the classical era, Ethiopia (then known as Axum or Aksum) was a major power [1]. [1] https://en.wikipedia.org/wiki/Kingdom_of_Aksum"
+        },
+        {
+          "by": "macleginn",
+          "text": "I am glad that this topic gets more attention, but the article itself doesn't provide any real analysis and could use some proof-reading. In its current shape, it's borderline engagement farming."
+        },
+        {
+          "by": "jt2190",
+          "text": "Wars are expensive, and the money has to come from somewhere: > Lots of countries — including Egypt (the Nile/wider Red Sea supremacy), Eritrea (Ethiopia’s desire for access to the sea), Sudan (Ethiopian support for the RSF), Somalia (historical enmity/Ethiopian support for Somaliland), and Saudi Arabia (as benefactor of Egypt/Sudan/Eritrea axis) — have good reasons to keep Addis Ababa weak and…"
+        },
+        {
+          "by": "shevy-java",
+          "text": "Both countries are not super-rich and some of the arabic countries constantly destabilize the area - we could see this in Sudan and elsewhere. Ask where all the various terrorist groups got high-quality weapons. The war between Eritrea is Ethiopia is especially stupid. The main issue is access to the ocean/water which Ethiopia wants. Since it is the bigger country, it wants to bully its way…"
+        }
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!O1tC!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fea7d3580-b56e-458e-bee7-b2f9c6446172_1280x853.jpeg"
+    },
+    {
       "id": 49948254,
       "url": "https://techcrunch.com/2026/10/03/federal-judge-calls-flock-indiscriminate-mass-surveillance/",
       "hn": "https://news.ycombinator.com/item?id=49948254",
@@ -683,6 +1121,33 @@
     }
   ],
   "glossary": {
+    "FOI": "Freedom of Information: rules that let people ask public bodies for records.",
+    "point cloud": "A 3D shape represented by lots of measured dots.",
+    "moral rights": "Legal rights that protect an artist's personal connection to their work.",
+    "RAG": "Retrieval-Augmented Generation: a way for an AI to look up material and use it when answering.",
+    "vector database": "A store that finds notes by how close their meanings are to your question, not just by exact wording.",
+    "embedding": "A set of numbers that gives an AI a way to represent a word or piece of text and how it relates to others.",
+    "Markdown": "A plain-text way to format notes with headings, lists, and code.",
+    "AGENTS.md": "A project file that gives coding agents instructions about how to work in that codebase.",
+    "daemon": "A program that runs in the background and handles a task without being started each time.",
+    "ADR": "Architectural Decision Record: a written note explaining a software design choice and why the team made it.",
+    "lint rule": "An automatic check that flags code that breaks a chosen rule, often with a message about how to fix it.",
+    "AI agent": "An autonomous computer program that can carry out tasks.",
+    "platform API": "A feature the browser already provides that developers can use instead of rebuilding it.",
+    "polyfill": "Code that supplies a feature when a browser does not already have it.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "IKEA effect": "The tendency to value something more because you made it yourself.",
+    "EMT": "Emergency Medical Technician: a trained responder who gives basic medical care in emergencies.",
+    "EMS": "Emergency Medical Services: the people and services that respond when someone needs urgent medical help.",
+    "Wilderness EMT": "An EMT qualification for emergencies where supplies are limited and getting someone to help can be difficult.",
+    "paramedic": "A more highly trained emergency medical worker who can handle more serious calls than an EMT.",
+    "agent": "An AI system that can take steps and use tools to get a task done, not just answer questions.",
+    "Git": "A tool for keeping a history of code changes and combining work.",
+    "repository": "A place where a project's files and change history are kept together.",
+    "fork": "A separate copy of a shared software project that people can take in a different direction.",
+    "ethnic federalism": "A way of dividing a country into regional governments organized around ethnic groups.",
+    "proxy war": "A conflict where outside powers support local sides instead of fighting each other directly.",
+    "belligerents": "The people or groups taking part in a fight or war.",
     "Fourth Amendment": "The part of the US Constitution that protects people from unreasonable searches and seizures.",
     "binding precedent": "A court ruling that other courts in its system have to follow.",
     "suppress": "To stop evidence from being used in court.",
