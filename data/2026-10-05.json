@@ -1,0 +1,473 @@
+{
+  "date": "2026-10-05",
+  "cards": [
+    {
+      "id": 49957068,
+      "url": "https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage/",
+      "hn": "https://news.ycombinator.com/item?id=49957068",
+      "title": "Improper redaction reveals Google Data Center water and electricity usage",
+      "time": 1791142625,
+      "points": 336,
+      "depth": [
+        {
+          "text": "someone found Google’s **redacted water and power figures** were still **copyable**",
+          "tier": "simple"
+        },
+        {
+          "text": "Agate LLC reported **52.65 megawatts** at peak electrical demand and **13.299 megagallons** of water. Across six reporting data centers, the article says water use totaled **765 million gallons** last year; Papillion’s Fireball Group LLC reported 547.88 megagallons.",
+          "tier": "substance",
+          "data": [
+            [
+              "Agate peak electricity demand",
+              "52.65 megawatts"
+            ],
+            [
+              "Agate water use",
+              "13.299 megagallons"
+            ],
+            [
+              "Six reporting data centers' water use",
+              "765 million gallons"
+            ],
+            [
+              "Fireball water use",
+              "547.88 megagallons"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some call the Lincoln site's water use insignificant next to farming; others say data-center water use and missing disclosure remain worth scrutiny.",
+      "comment_count": 449,
+      "terms": [
+        "redaction",
+        "megagallon",
+        "acre-foot",
+        "OCR"
+      ],
+      "entities": [
+        "Google",
+        "Agate LLC",
+        "Fireball Group LLC",
+        "Westwood Solutions LLC",
+        "Nebraska Department of Water, Energy, and Environment"
+      ],
+      "comments": [
+        {
+          "by": "aliasxneo",
+          "text": "I lived in a smaller rural town near a Google datacenter. During my career there I had routinely come across some outlandish accusations made about our water/power usage from the locals. But for obvious reasons I could never dispute them. I remember we hired a local who'd grown up in the town and he was \"really surprised\" when he started to see what we were doing to remain efficient. The current…"
+        },
+        {
+          "by": "yeag123",
+          "text": "As other commenters have pointed out, 13.3 million gallons = ~40.8 acre-feet and this being Nebraska, the obvious comparison is agriculture (Corn and Soybeans being the main crop). The average Nebraska farm is 989 acers[1] as of 2022 and uses roughly ~1,200 acre-feet of water (or roughly 390 million gallons) per year[2]. So a single average Nebraska farm uses roughly 30 times the water the…"
+        },
+        {
+          "by": "tptacek",
+          "text": "So, basically, not a meaningful amount of water at all. Credit to the story authors for taking the time to frame what 13MM gallons actually works out to."
+        },
+        {
+          "by": "ilyagr",
+          "text": "This article seems to focus on one of the less interesting in terms of water usage data centers (for most of us non-locals) because the paper is from Lincoln and that data center is in Lincoln. The article's data center used 13 mil gal of water, but as they point out another one used up more than 500 mil gallon. Seemingly much better article (pictures, better comparisons)…"
+        },
+        {
+          "by": "_heimdall",
+          "text": "People shouldn't be latching onto side effect costs of AI data centers like water or energy use, it seems like an abstraction layer above the core complaint. If we don't want AI, or LLMs, or data centers that should be the complaint. Once it is abstracted to water use or similar it opens the door for data to show the actual water use is comparatively small. Its like arguing about climate change…"
+        }
+      ],
+      "image": "https://gray-koln-prod.gtv-cdn.com/resizer/v2/36VTWY3Y7JCSLEH3E3AVQDZW7I.jpg?auth=355cee73f82e9c4dcbb52fd940ebab6de819d176b660deca5d48b34dc7dcf1f5&width=1200&height=600&smart=true"
+    },
+    {
+      "id": 49933461,
+      "url": "https://mapped.earth/lighthouses/world",
+      "hn": "https://news.ycombinator.com/item?id=49933461",
+      "title": "A map of every lighthouse",
+      "time": 1790948749,
+      "points": 182,
+      "depth": [
+        {
+          "text": "someone made a **lighthouse map**, but commenters say its **data** and **zoom controls** need work",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says it labels **navigation buoys** as lighthouses and even shows a **landlocked Droitwich** lighthouse; another says real ones are missing. Users report **pinch-to-zoom** sending the map across the globe.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some call it a lovely, neat idea; others say the data is unreliable and the controls make it hard to use.",
+      "comment_count": 76,
+      "terms": [
+        "vibe coded",
+        "navigation buoy"
+      ],
+      "entities": [
+        "OpenStreetMap",
+        "Firefox",
+        "GPT6"
+      ],
+      "comments": [
+        {
+          "by": "plasticeagle",
+          "text": "Aside from the incredibly low quality of the data, this jumps out as being vibe coded due to the unbeleviably stupid text. \"Rain as a surface; Height is millimetres of rain per day. Nothing else is encoded.\" Why does AI generated ridiculous sentences like these?"
+        },
+        {
+          "by": "Waterluvian",
+          "text": "I like the idea. But it was a bit jarring that panning with my finger took ages and then pinching to zoom insta-faceplanted me into the Labrador interior. If anyone wants to mount a rescue, I’m somewhere near a lighthouse."
+        },
+        {
+          "by": "bobosola",
+          "text": "Lovely idea, and a nostalgia trip for me. The sweeping looms brought back some old memories. I worked on merchant ships prior to getting into coding and was the officer of the watch one night crossing the Bay of Biscay going north. It was a clear night with that almost unnaturally still air you get at sea sometimes. I gradually noticed the loom of a lighthouse flashing over the sky just off the…"
+        },
+        {
+          "by": "jvdvegt",
+          "text": "Looks nice as already mentioned: pinch to zoom is broken (Firefox on Android here). Also: why am I shown a button labeled 'lighthouses in France' when I'm not actually looking at France?"
+        },
+        {
+          "by": "zX41ZdbW",
+          "text": "I have a similar project (which I created in 2024): https://adsb.exposed/ Among various datasets, it has OSM data (all of it): https://adsb.exposed/?dataset=OSM&zoom=4&lat=52.3756&lng=2.5... And here are lighthouses: https://adsb.exposed/?dataset=OSM&zoom=3&lat=40.0444&lng=9.9..."
+        }
+      ],
+      "image": "https://mapped.earth/api/og/lighthouses"
+    },
+    {
+      "id": 49930439,
+      "url": "https://niklasroy.com/gtc/",
+      "hn": "https://news.ycombinator.com/item?id=49930439",
+      "title": "Show HN: Glashütte Trash Clock – A 30-minute pendulum clock made from trash",
+      "time": 1790922786,
+      "points": 181,
+      "depth": [
+        {
+          "text": "someone made a **pendulum clock from trash** that **keeps time well** enough to surprise commenters",
+          "tier": "simple"
+        }
+      ],
+      "camps": null,
+      "comment_count": 26,
+      "terms": [
+        "pendulum clock",
+        "leap second",
+        "leap second smearing",
+        "oscillator",
+        "inductive proximity sensor",
+        "UTC"
+      ],
+      "entities": [
+        "Glashütte Trash Clock"
+      ],
+      "comments": [
+        {
+          "by": "avidiax",
+          "text": "An interesting project, that buries the lede to another interesting thing: abolishment of the leap second. > In November 2022, the General Conference on Weights and Measures decided to abolish the leap second by 2035 I think the story goes that when the leap second was standardized in 1987, the wold was much less connected, there were fewer systems, and hence it was practical to keep astronomical…"
+        },
+        {
+          "by": "wkjagt",
+          "text": "Reminds me of some pendulum clock fun I had making a clock for the Apple 2 that used my grandparent's old clock and an inductive proximity sensor as an oscillator. https://github.com/wkjagt/apple2_pendulum_clock/blob/main/RE..."
+        },
+        {
+          "by": "ramshanker",
+          "text": "Speaking of clocks, recently we have started streaming live clocks on Youtube. There could be 100s of way of showing beautifull clocks on screen. This one is mine. Coding for fun! A bandwidth hog to be honest. ;) https://www.youtube.com/@TheClockStack/streams"
+        },
+        {
+          "by": "geerlingguy",
+          "text": "This is like the perfect clock demo opposite of the classic Bartosz Ciechandowski blog post on mechanical clock movements: https://ciechanow.ski/mechanical-watch/ (I love both, just opposite in the color vs dryness, jank vs precision, \"build first, principles later\" approach)."
+        },
+        {
+          "by": "brightbeige",
+          "text": "For those who like long form journalism and want to know more about watch collecting and Glasshütte: https://www.newyorker.com/magazine/2017/03/20/confessions-of..."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49960084,
+      "url": "https://www.themoscowtimes.com/2026/10/02/nearly-200-people-under-observation-after-irkutsk-lab-worker-dies-from-plague-a93857",
+      "hn": "https://news.ycombinator.com/item?id=49960084",
+      "title": "Nearly 200 people under observation after Irkutsk lab worker dies from plague",
+      "time": 1791167505,
+      "points": 169,
+      "depth": [
+        {
+          "text": "nearly **200 people** are under observation after an **Irkutsk lab worker** died from **plague**",
+          "tier": "simple"
+        },
+        {
+          "text": "Reports say she **accidentally broke a test tube** containing live bacteria while collecting samples. At least **197 possible contacts** were placed under medical isolation, including more than 100 in hospital wards; the governor said their tests were negative and they showed no signs of illness.",
+          "tier": "substance",
+          "data": [
+            [
+              "people under observation",
+              "nearly 200"
+            ],
+            [
+              "possible contacts under medical isolation",
+              "at least 197"
+            ],
+            [
+              "contacts in hospital wards",
+              "more than 100"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some reject the broken-tube account and cite a research trip; others want the lab's safety protocols investigated.",
+      "comment_count": 123,
+      "terms": [
+        "pneumonic plague",
+        "respiratory droplets",
+        "medical isolation"
+      ],
+      "entities": [
+        "The Moscow Times",
+        "Irkutsk anti-plague institute",
+        "Rospotrebnadzor",
+        "Daria Sh.",
+        "Alexei Tsydenov",
+        "Lyudi Baikala",
+        "REN TV",
+        "Igor Kobzev",
+        "Anna Popova",
+        "Telegram"
+      ],
+      "comments": [
+        {
+          "by": "robmusial",
+          "text": "I literally just finished Annie Jacobsen's book 'Biological War: A Scenario' last week where the central plot point is an accidental release of modified form of pneumonic plague from a lab in Siberia. Very coincidental timing, especially since it made me wonder how often labs like these have accidents and we never hear about them because it is cleaned up without issue."
+        },
+        {
+          "by": "helsinkiandrew",
+          "text": "So breaks a test tube of live bacteria at an “anti-plague institute”, possible infects 100 colleagues, then when she developed plague like symptoms is taken to hospital and possibly infects 100 patients. I think they need to investigate their safety protocols > She reportedly told medical staff that she had accidentally broken a test tube containing live bacteria while collecting samples for…"
+        },
+        {
+          "by": "ungreased0675",
+          "text": "Are we fairly confident that these labs do more good than the risk they present to the public? I’m not sure we should be keeping dangerous pathogens around just for giggles and PhD papers. What are examples of how the research done in these places improves public health?"
+        },
+        {
+          "by": "chasil",
+          "text": "Yersinia Pestis is normally treated with doxycycline, cipro, or streptomycin. Is this a resistant strain? https://emedicine.medscape.com/article/235627-medication#1"
+        },
+        {
+          "by": "r721",
+          "text": ">Oct. 2 Here's a newer CNN story from today: >Researcher at Russian plague laboratory dies of ‘unknown’ infection https://edition.cnn.com/2026/10/04/europe/russia-laboratory-... This post from local Irkutsk region media (now in exile) is also interesting: https://t.me/Baikal_People/16651 (in Russian)"
+        }
+      ],
+      "image": "https://static.themoscowtimes.com/image/og/0f/93857__0f14653f3a4ec7cfb9db0da62deba05b.jpg"
+    },
+    {
+      "id": 49959869,
+      "url": "https://www.motorsport.com/f1/news/horrible-totally-unacceptable-powerless-f1-drivers-frustrated-by-bahrain-f1-software-glitch/10861968/",
+      "hn": "https://news.ycombinator.com/item?id=49959869",
+      "title": "Powerless F1 drivers frustrated by Bahrain F1 software glitch",
+      "time": 1791165248,
+      "points": 164,
+      "depth": [
+        {
+          "text": "F1 drivers were left **powerless** by a **software glitch** during the race",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says the headline’s **Bahrain** means **Malaysia**. Another claims a **patch went out in an hour without testing**; someone else asks whether firmware is shared by all cars or sits on a track server they connect to.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some want F1 to ditch hybrids and return to older engines; another questions why hybrid glitches count against them when gasoline-related accidents don’t count against gas power.",
+      "comment_count": 97,
+      "terms": [
+        "firmware",
+        "V&V",
+        "ICE",
+        "NA engine",
+        "vibe coded",
+        "hybrid"
+      ],
+      "entities": [
+        "F1",
+        "Lando Norris",
+        "FIA",
+        "Formula E",
+        "Claude",
+        "Sol 6.1"
+      ],
+      "comments": [
+        {
+          "by": "jey",
+          "text": "Seems wild that they can code and deploy an update of a critical-seeming component in the field like that. I thought such a firmware update would need extensive QA in the lab, along with root causing why this bug slipped through their processes anyway. But maybe that's the difference between shipping a controller for F1 versus shipping one for an industrial or consumer product? shrug."
+        },
+        {
+          "by": "jrflo",
+          "text": "A question for someone who knows more about F1: Is this firmware shared by all cars? Or some local server at the track the cars connect to? Why is F1 able to control individual cars like this? The article is very light on details as to what exactly is going on..."
+        },
+        {
+          "by": "MBCook",
+          "text": "I just finished watching the race. The start was certainly a callback to the start of the season when cars were dropping like flies and having constant odd problems."
+        },
+        {
+          "by": "unglaublich",
+          "text": "> Lando Norris calling the electronic glitches \"horrible\" and further proof that F1 should move away from hybrids. But the human fireballs, deaths and suffering of gasoline-related accidents are no proof that F1 should move away from gas-power?"
+        },
+        {
+          "by": "algoth1",
+          "text": "I can't not read it as \"They vibe coded a patch in 50 minutes\". Had they used Sol 6.1 they would still be waiting"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49956681,
+      "url": "https://wieslawsoltes.github.io/VB6/",
+      "hn": "https://news.ycombinator.com/item?id=49956681",
+      "title": "A browser-native classic Visual Basic VB6 IDE",
+      "time": 1791139757,
+      "points": 155,
+      "depth": [
+        {
+          "text": "someone made a **classic Visual Basic IDE** that runs **in a browser**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says **debugging and IntelliSense** don't work, and the deliverable is an **.html** rather than a **.exe**, though it works.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: fans say it brings back memories and feels almost real; others flag text-rendering and debugging problems.",
+      "comment_count": 57,
+      "terms": [
+        "IDE",
+        "property grid",
+        "IntelliSense",
+        "ODBC",
+        "PWA",
+        "Win32 API",
+        "BitBlt",
+        "1-based array indices",
+        "text rendering"
+      ],
+      "entities": [
+        "Visual Basic",
+        "VB3",
+        "VB5",
+        "VB6",
+        "Visual Foxpro",
+        "Flash",
+        "MSDN",
+        "Epic",
+        "ODBC",
+        "Win32 API",
+        "BitBlt"
+      ],
+      "comments": [
+        {
+          "by": "waldrews",
+          "text": "The property grid control is still the greatest general purpose UI of all time. Define your classes with some attributes and it just works. It was all downhill from there with web and mobile."
+        },
+        {
+          "by": "vjvjvjvjghv",
+          "text": "Wow, this feels almost like the real thing. Is there something similar for the web now? Easy UI editor but a fully featured language behind with direct database access."
+        },
+        {
+          "by": "webprofusion",
+          "text": "Looks great! However using an active trademark from a mega corp seems like risky move even for a fun project."
+        },
+        {
+          "by": "sijmen",
+          "text": "Slick! Thanks for bringing back some memories of how i got into programming; by automating math-homework in visual basic."
+        },
+        {
+          "by": "Narishma",
+          "text": "These kinds of browser recreations of old native apps always fails at text rendering."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49949588,
+      "url": "https://play.runescape.com/4",
+      "hn": "https://news.ycombinator.com/item?id=49949588",
+      "title": "We're working on a new RuneScape MMO",
+      "time": 1791076342,
+      "points": 152,
+      "depth": [
+        {
+          "text": "Jagex is making a **new RuneScape MMO** that starts in **Ashenfall** and won't replace existing games",
+          "tier": "simple"
+        },
+        {
+          "text": "The **working title** is RS4, though Jagex says it may not be the final name. It’s being built in **Unreal Engine**, and the team wants players involved early by sharing ideas, testing things and listening.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some are excited to see what Jagex makes, while others are turned off by Unreal Engine or doubt Jagex's ability to create.",
+      "comment_count": 91,
+      "terms": [
+        "MMO",
+        "MMORPG",
+        "Unreal Engine",
+        "permanent progression"
+      ],
+      "entities": [
+        "Jagex",
+        "RuneScape",
+        "RS4",
+        "Unreal Engine",
+        "Old School RuneScape",
+        "Dragonwilds"
+      ],
+      "comments": [
+        {
+          "by": "bix6",
+          "text": "Loved RS but it’s too grindy for my life now. I don’t have hours to click on trees to level up :/ Definitely one of my all time favorites though, something magical about the game and hitting a 99 really took time / felt like an achievement. Excited to give this a try once it’s ready!"
+        },
+        {
+          "by": "czhu12",
+          "text": "Runescape was the first thing that got me into coding. Fell in love with the game and had a ton of admiration for the devs who could spend decades crafting the same game, to create such a wonderful playground for so many millions of people. Stopped playing after a few years but still have many fond memories of the joy I had everyday after school logging onto that game."
+        },
+        {
+          "by": "Foxhuls",
+          "text": "For anyone unaware this is stated to essentially be the MMO continuation of Runescape Dragonwilds which was a survival and crafting game that recently released into 1.0 after its commercial success."
+        },
+        {
+          "by": "My_Name",
+          "text": "Initially, I misread the headline as referring to RuneQuest, the Betamax of tabletop fantasy role playing. Better than D&D, but which didn't win the popularity contest. It is one of three games I would love to see made into software, with the other two being Traveller and Paranoia (the computer is your friend, trust the computer)"
+        },
+        {
+          "by": "bearjaws",
+          "text": "I learned programming writing Runescape Macros in Pascal and later Java. Honestly still enjoy writing automation today because of it, I've gotten to use a lot of the skills I learned from OG RS at work."
+        }
+      ],
+      "image": "https://framerusercontent.com/assets/HCwsaASxTp11fkiKGHtraPRCRas.jpg"
+    }
+  ],
+  "glossary": {
+    "redaction": "Hiding or removing text so readers cannot see it.",
+    "megagallon": "One million gallons.",
+    "acre-foot": "The amount of water that would cover an acre of land one foot deep.",
+    "OCR": "Optical character recognition: software that reads words from a picture or scanned page.",
+    "vibe coded": "A casual way of making software by asking AI to write it, often with little checking.",
+    "navigation buoy": "A floating marker in the water that helps boats find safe routes.",
+    "pendulum clock": "A clock that measures time with a weight swinging back and forth.",
+    "leap second": "A one-second adjustment to official clocks to keep them aligned with Earth's rotation.",
+    "leap second smearing": "Spreading a leap-second adjustment out over time instead of making the whole change at once.",
+    "oscillator": "Something that repeats a steady motion; clocks use one to keep time.",
+    "inductive proximity sensor": "A device that can notice nearby metal without touching it.",
+    "UTC": "Coordinated Universal Time: a shared time standard that doesn't change with your local clock.",
+    "pneumonic plague": "A form of plague that affects the lungs and can spread between people through respiratory droplets.",
+    "respiratory droplets": "Tiny wet particles from someone's breath that can carry an infection to another person.",
+    "medical isolation": "Keeping someone apart from others because they may have been exposed to an illness.",
+    "firmware": "The built-in software that tells a device's hardware how to work.",
+    "V&V": "Verification and Validation: checks people do to make sure software works as intended before it is used.",
+    "ICE": "Internal Combustion Engine: an engine that makes power by burning fuel inside it.",
+    "NA engine": "An engine that draws in air on its own, without a device forcing extra air into it.",
+    "hybrid": "A car setup that combines a fuel-burning engine with electric power.",
+    "IDE": "Integrated Development Environment: an app that brings coding and other development tools together.",
+    "property grid": "A panel that lists an app's settings so you can change them.",
+    "IntelliSense": "A feature that suggests code names and options while you type.",
+    "ODBC": "Open Database Connectivity: a shared way for an app to connect to a database.",
+    "PWA": "Progressive Web App: a website you can install and use more like an app.",
+    "Win32 API": "Windows 32-bit Application Programming Interface: a set of Windows tools that apps can use.",
+    "BitBlt": "A Windows drawing command for copying a block of pixels from one place to another.",
+    "1-based array indices": "A numbering style where the first item in a list is numbered 1, not 0.",
+    "text rendering": "The way an app draws letters on screen.",
+    "MMO": "Massively multiplayer online: a game where lots of players share an online world.",
+    "MMORPG": "Massively multiplayer online role-playing game: an online role-playing game where lots of players share a world.",
+    "Unreal Engine": "A tool game makers use to build the worlds and rules of video games.",
+    "permanent progression": "Game progress that stays put rather than being wiped away."
+  }
+}
