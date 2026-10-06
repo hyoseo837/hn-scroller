@@ -2,6 +2,635 @@
   "date": "2026-10-06",
   "cards": [
     {
+      "id": 49971846,
+      "url": "https://www.niemanlab.org/2026/10/chatgpt-is-adding-real-cartoonists-signatures-to-fake-new-yorker-cartoons/",
+      "hn": "https://news.ycombinator.com/item?id=49971846",
+      "title": "ChatGPT is adding real cartoonists' signatures to fake New Yorker cartoons",
+      "time": 1791240405,
+      "points": 385,
+      "depth": [
+        {
+          "text": "someone found ChatGPT putting **real cartoonists’ signatures** on **fake New Yorker cartoons**",
+          "tier": "simple"
+        },
+        {
+          "text": "The reporter documented **more than 15 New Yorker cartoonists** whose signatures the image generator used without permission or compensation. Even after OpenAI was alerted, ChatGPT **still signed** some generated cartoons with real cartoonists’ names.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say this is plagiarism or impersonation that should bring legal consequences; others say signature copying is a common image-generator flaw and users should catch it before sharing.",
+      "comment_count": 276,
+      "terms": [
+        "right of publicity",
+        "LLM",
+        "scraped"
+      ],
+      "entities": [
+        "ChatGPT",
+        "OpenAI",
+        "The New Yorker",
+        "Brendan Loper",
+        "Emily Flake",
+        "Condé Nast"
+      ],
+      "comments": [
+        {
+          "by": "Insimwytim",
+          "text": "The problem is not that ChatGPT is doing that, the problem is that it's not being sued into oblivion after."
+        },
+        {
+          "by": "MarkusQ",
+          "text": "Plagiarism as a Service. We can all try really hard to pretend that's not the business model, but that's totally the business model."
+        },
+        {
+          "by": "MiroslavPokorny",
+          "text": "We live in confusing times. Steal one mp3 and you might get fined thousands, steal a book from your local shoppe and the police would come visit you. Forge a signature and you would also be in trouble. Hack a government website and you will have to answer some questions. Steal all the books in the world, forge millions and this story begins to tell and nothing happens."
+        },
+        {
+          "by": "Isamu",
+          "text": "The part of the AI generating the mashup doesn’t really understand what the signature means, or how it may be interpreted, it’s just a visual part of a New Yorker cartoon. Elsewhere in ChatGPT there is plenty of information about signatures and what they mean, and what plagiarism is. It’s not organized like a human brain, it shouldn’t be surprising that unusual results occur. They are…"
+        },
+        {
+          "by": "gwern",
+          "text": "This has been a perennial problem with my own generated comics with both Nano Banana Pro and ChatGPT (all generations). I often have to put in an extra edit to erase the false signature. It is annoying and I'm unsurprised most users don't bother."
+        }
+      ],
+      "image": "https://www.niemanlab.org/images/Brendan-Loper-cartoon-700x394.jpg"
+    },
+    {
+      "id": 49971921,
+      "url": "https://www.debugbear.com/blog/example-dot-com-redesign-history",
+      "hn": "https://news.ycombinator.com/item?id=49971921",
+      "title": "Example.com just launched the biggest redesign in decades",
+      "time": 1791240911,
+      "points": 177,
+      "depth": [
+        {
+          "text": "example.com now **cycles through six languages** in its **biggest redesign in decades**",
+          "tier": "simple"
+        },
+        {
+          "text": "IANA says it split the page into a **more basic page** and a **separate JavaScript file** because most traffic is automated and tends not to fetch the file, reducing data demands. The domain is for documentation examples, not availability testing.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 102,
+      "terms": [
+        "JavaScript",
+        "SVG",
+        "Hyrum's Law",
+        "CDN",
+        "IANA"
+      ],
+      "entities": [
+        "Example.com",
+        "IANA",
+        "JavaScript",
+        "SVG",
+        "English",
+        "Arabic",
+        "Chinese",
+        "French",
+        "Russian",
+        "Spanish"
+      ],
+      "comments": [
+        {
+          "by": "karim79",
+          "text": "I love example.com. I will never ever forget how useful this was to me in my junior years especially, and always. Hell I even say it out loud in meetings. Thank you example.com!"
+        },
+        {
+          "by": "selcuka",
+          "text": "I'm wondering how many automated tests this change broke. Yes, I know it's not the example.com's fault, and it's a side effect of Hyrum's Law: > This is not a service, avoid relying on it for testing and monitoring purposes. Don't we all have a few fragile tests?"
+        },
+        {
+          "by": "absynth",
+          "text": "I just wonder how much unintended traffic they receive. eg If they put DNS, NTP etc on it... Likely billions per hour or something equally ludicrous. Deluge is likely an exponential understatement."
+        },
+        {
+          "by": "jamdav16",
+          "text": "> there's a gradual opacity transition Looks like they removed this and instead just show all languages with no CSS animation now."
+        },
+        {
+          "by": "sea-gold",
+          "text": "Discussed here a few days ago: https://news.ycombinator.com/item?id=49915060"
+        }
+      ],
+      "image": "https://www.debugbear.com/dimg/1f8c2ab20c69e5a4a3fb996aebed6b0d.png"
+    },
+    {
+      "id": 49971523,
+      "url": "https://arstechnica.com/tech-policy/2026/10/texas-city-demands-2m-for-public-records-on-flock-usage/",
+      "hn": "https://news.ycombinator.com/item?id=49971523",
+      "title": "Texas city demands $2M for public records on Flock usage",
+      "time": 1791237957,
+      "points": 176,
+      "depth": [
+        {
+          "text": "a Texas suburb asked one group to pay **$2.3 million** for records on police use of **Flock cameras**",
+          "tier": "simple"
+        },
+        {
+          "text": "Officials claimed that searching **about a terabyte** of communications about errors, misuse, and Flock’s effectiveness would take **approximately 14 years** at $15 per hour. Phil Mynona of the Texas Privacy Coalition called the **$2.3 million** fee “ludicrous”.",
+          "tier": "substance",
+          "data": [
+            [
+              "records fee",
+              "$2.3 million"
+            ],
+            [
+              "estimated review time",
+              "approximately 14 years"
+            ],
+            [
+              "estimated labor rate",
+              "$15 per hour"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: one says records requests that need redaction take serious work; another says Flock data shouldn’t need redaction because the cameras are public webcams.",
+      "comment_count": 27,
+      "terms": [
+        "ALPR",
+        "transparency portals",
+        "warrantless search",
+        "Fourth Amendment",
+        "FOIA"
+      ],
+      "entities": [
+        "Flock",
+        "Texas Privacy Coalition",
+        "Phil Mynona",
+        "Texas Tribune",
+        "404 Media"
+      ],
+      "comments": [
+        {
+          "by": "chaps",
+          "text": "Been there with a 33M cost estimate [1]. If the requester is reading this -- hold them to it and request a much smaller but still significant amount of records. Use that as the foundation for \"how much time it actually takes\". Another option is to get clever with helping them with means and modes of review/redaction. This is how I got the email metadata for 6M emails from Houston for example…"
+        },
+        {
+          "by": "chao-",
+          "text": "Original article specific to the $2.3M invoice: https://www.texastribune.org/2026/10/05/texas-flock-cameras-... Less egregious, but still egregious, a few weeks ago a local news investigator in Houston was quoted $121,000 for public records request related to Flock cameras: https://www.click2houston.com/news/local/2026/09/24/harris-c..."
+        },
+        {
+          "by": "therealdrag0",
+          "text": "FOIA requests that have to be redacted are labor intensive.\nHowever, flock shouldn’t need to be redacted right? They’re just public webcams. Lots of those already exist and many stream live."
+        },
+        {
+          "by": "nilamo",
+          "text": "If the data is so difficult to get, that it's unreasonable to get, just get rid of flock then. You're already not getting any benefit. Unless... no, that couldn't have been a lie, could it? The government would never try to overcharge anyone, right?"
+        },
+        {
+          "by": "WokeUp420",
+          "text": "Texas sure does a lot of treading for being the don't tread on me capital"
+        }
+      ],
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2288945998-1024x648.jpg"
+    },
+    {
+      "id": 49965152,
+      "url": "https://arslan.io/2026/10/05/the-lamps-in-my-house/",
+      "hn": "https://news.ycombinator.com/item?id=49965152",
+      "title": "The lamps in my house",
+      "time": 1791209534,
+      "points": 176,
+      "depth": [
+        {
+          "text": "someone gives a tour of the **designer lamps** they keep around their **home**",
+          "tier": "simple"
+        },
+        {
+          "text": "The Tizio **carries electricity through its arms**, and every Akari is still made by hand at Ozeki. The author also designed a **3D-printed lamp** for the shelves of an espresso bar.",
+          "tier": "substance",
+          "data": [
+            [
+              "Akari 3A height",
+              "56 cm"
+            ],
+            [
+              "Akari 75A width",
+              "roughly 75 cm"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 79,
+      "terms": [
+        "washi",
+        "counterweights",
+        "mouth-blown glass",
+        "3D-printed"
+      ],
+      "entities": [
+        "Tolomeo",
+        "Michele De Lucchi",
+        "Giancarlo Fassina",
+        "Compasso d’Oro",
+        "IKEA",
+        "Apple",
+        "USM Haller",
+        "Richard Sapper",
+        "Tizio",
+        "IBM",
+        "ThinkPad",
+        "Alessi",
+        "9090",
+        "Micro",
+        "Akari",
+        "Isamu Noguchi",
+        "Ozeki",
+        "PH 5",
+        "Poul Henningsen",
+        "Another Round",
+        "Dieter Rams",
+        "PH 3/2",
+        "AJ Lamp",
+        "Arne Jacobsen",
+        "2001: A Space Odyssey",
+        "Jean Prouvé",
+        "Standard Chair",
+        "Vitra",
+        "Chispa",
+        "Joan Gaspar",
+        "Marset",
+        "Kismas",
+        "Ramūnas Minkevičius",
+        "Lamp 01",
+        "Stilnovo",
+        "Please Wait to be Seated",
+        "DCW éditions",
+        "Eames",
+        "Apex",
+        "John Tree",
+        "HAY",
+        "Vitsoe 606",
+        "Japanese",
+        "Italian",
+        "Spanish",
+        "Lithuanian",
+        "Honeywell",
+        "Dyson",
+        "Halley",
+        "Muuto Post",
+        "Le Soleil",
+        "Foscarini",
+        "Kondo",
+        "IKEA Torchère",
+        "Anglepoise",
+        "Lotte",
+        "Mantis",
+        "eBay"
+      ],
+      "comments": [
+        {
+          "by": "m463",
+          "text": "I have a lamp I really really like¹: https://www.amazon.com/dp/B0D5LS2KQW I don't know how honeywell of all companies is selling this, but I figure they have engineers that they turned loose on and got out of their way. It is just super nice. Elegant looking, not expensive, very high quality illumination that can get bright, smoothly dimmable with a knob. a knob to adjust lighting is a good…"
+        },
+        {
+          "by": "losvedir",
+          "text": "Unrelated aside, but: > Fun fact: “Akari” means light in Japanese, both as illumination and as lightness. Wow! I love it when two languages have matching homonyms. I always wonder \"what does it mean ?\". Like, in English \"second\" to mean the unit of time and the place after \"first\" feels like two distinct usages. But it's the same in Spanish (\"segundo\"), which points to a deeper connection (and…"
+        },
+        {
+          "by": "rtpg",
+          "text": "For people who don't want to splurge on the Noguchi lamps, Aliexpress has a decent number of knockoffs. Probably way less stable than the real deal. We have a couple of the marset lamps that we enjoy as well. The sort of low-poly design is really fun."
+        },
+        {
+          "by": "jkestner",
+          "text": "Since you’re a fan of Sapper, have you peeped the Halley? He did it for an LED lighting startup (back when that was a thing), very artsy for him. I got one on eBay several years ago that I use as a work lamp because of its supreme adjustability. Uses my favorite electromechanical connector of all time, the 3.5mm audio jack (I’ve used it on every one of my hardware products)."
+        },
+        {
+          "by": "arjie",
+          "text": "These look quite nice. I'm very protective of desk real estate for persistent things, though. Has anyone got a nice bright focus lamp when working on things. Most of the time my room is well-enough illuminated for things, but yesterday I was doing some minor maintenance on my 3d printer hot-end and I had to use my iPhone with the flashlight on propped up. Is there some kind of compact folding…"
+        }
+      ],
+      "image": "https://storage.ghost.io/c/ce/27/ce27a3ef-1519-4f17-a161-c8cdf7793306/content/images/size/w1200/2026/10/L1008301-1.jpeg"
+    },
+    {
+      "id": 49944049,
+      "url": "https://cses.fi/book/book.pdf",
+      "hn": "https://news.ycombinator.com/item?id=49944049",
+      "title": "Competitive Programmer's Handbook (2018) [pdf]",
+      "time": 1791033841,
+      "points": 175,
+      "depth": [
+        {
+          "text": "someone shared a **competitive programming handbook**, and readers debate whether its skills **still matter at work**",
+          "tier": "simple"
+        },
+        {
+          "text": "One reader says it **trades readability** for cleverness and conciseness, and finds Algorithmic Thinking more approachable but almost as dense. Fans call it a useful algorithms reference and interview prep; another doubts its value for real-world work when much of the code is written by **prompting and iterating with agents**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Fans say it’s a useful algorithms reference and interview prep; skeptics question its real-world value as more code is written with agents.",
+      "comment_count": 40,
+      "terms": [
+        "competitive programming",
+        "algorithm",
+        "LLMs",
+        "coding agents"
+      ],
+      "entities": [
+        "Competitive Programmer's Handbook",
+        "Algorithmic Thinking",
+        "Zingaro",
+        "Codeforces",
+        "Rosalind",
+        "Codewars",
+        "LeetCode",
+        "Springer",
+        "CSES"
+      ],
+      "comments": [
+        {
+          "by": "dang",
+          "text": "Related. Others? Competitive Programmer's Handbook (2017) [pdf] - https://news.ycombinator.com/item?id=17605395 - July 2018 (14 comments) Competitive Programmer's Handbook (2017) [pdf] - https://news.ycombinator.com/item?id=16952222 - April 2018 (121 comments) A Competitive Programmer's Handbook - https://news.ycombinator.com/item?id=14115826 - April 2017 (157 comments) Competitive programmers…"
+        },
+        {
+          "by": "xendo",
+          "text": "This one is quite difficult, it sacrifices some readability for cleverness and conciseness. I find Algorithmic Thinking by Zingaro much more approachable but almost as dense."
+        },
+        {
+          "by": "lifeisloving",
+          "text": "Ive been doing codeforces, Rosalind, codewars and leetcode casually in my spare time to detox from heavy daily agent use. Ive been relearning a ton that either over-reliance on llms caused me to forget, or just lost due to time. Its been extremely fun. I really missed the feeling of thinking really hard and arriving at a solution. I hope we dont lose this desire as a species."
+        },
+        {
+          "by": "ExciteByte",
+          "text": "There is a more polished version of this book: https://link.springer.com/book/10.1007/978-3-031-61794-2 Additionally, there is a nice set of problems that go along with the book: https://cses.fi/problemset/"
+        },
+        {
+          "by": "Keegs",
+          "text": "I’m a big fan of this book. It’s an equally great algorithms reference and way to prep for coding interviews. I haven’t had one in a while but doubt they’ve changed too much in the last half decade."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49971230,
+      "url": "https://flattensf.com/",
+      "hn": "https://news.ycombinator.com/item?id=49971230",
+      "title": "Find the flattest route between any two points in SF",
+      "time": 1791236450,
+      "points": 162,
+      "depth": [
+        {
+          "text": "someone built a **San Francisco route finder** that trades extra walking for **less climbing**",
+          "tier": "simple"
+        },
+        {
+          "text": "Routes are computed in your browser over **160,000 street segments**, using USGS 1 m lidar and the Overture/OpenStreetMap street graph. The slider trades distance against **cumulative climbing**; on foot, a foot of climb costs 200 ft of walking, and stairways are allowed on foot but excluded on a bike.",
+          "tier": "substance",
+          "data": [
+            [
+              "street segments",
+              "160,000"
+            ],
+            [
+              "lidar elevation",
+              "1 m"
+            ],
+            [
+              "walking cost per foot of climb",
+              "200 ft"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some praise the visualization and live profile; others report inaccurate elevation, odd routes, or steep and unsafe choices.",
+      "comment_count": 56,
+      "terms": [
+        "lidar",
+        "street graph",
+        "cumulative gain",
+        "DTM",
+        "grade"
+      ],
+      "entities": [
+        "USGS",
+        "Overture",
+        "OpenStreetMap",
+        "Bikehopper",
+        "Valhalla",
+        "Google Maps",
+        "Strava",
+        "Claude",
+        "steepless"
+      ],
+      "comments": [
+        {
+          "by": "andalinmicphew",
+          "text": "Checkout https://bikehopper.org for solid elevation, bike infrastructure and transit-aware routing around the Bay Area. Some friends and I built this about 5 years ago and continue to maintain it. We use 1m DTM elevation data for SF and 50m for rural areas. DTM is a must for elevation based routing in SF as there are so many sizable buildings, large trees the other models fail hard."
+        },
+        {
+          "by": "bwnkl",
+          "text": "Nice visualization. For proper turn by turn directions, Valhalla [1] could help. It has elevation support so this could theoretically be built with it[2], or you just send the shape of your flattest route and it annotates it with guidance. [1]: https://github.com/valhalla/valhalla [2]: Currently it only supports 30m resolution for elevation unfortunately"
+        },
+        {
+          "by": "jez",
+          "text": "It would be neat if it there were an option which added distance and elevation gain, but minimized the grade. For example, a route from SOMA to Nob Hill can be made flatter by approaching from either the east or west. Technically the \"flattest\" as measured by elevation gain between the two is straight up Taylor from Market, but it's much nicer to bike to the top of Nob Hill by going out of the…"
+        },
+        {
+          "by": "danserfaty",
+          "text": "It's not accurate. I mapped it from my house on Cabrillo St in the outer Richmond to 4th avenue and it says I need to climb 25th avenue then walk Geary instead of correctly telling me to use 23rd avenue that is completely flat."
+        },
+        {
+          "by": "pokpokpok",
+          "text": "The wiggle! (in honor of my old commute, which I miss) https://flattensf.com/#t~-122.40850~37.77493~-122.50940~37.7..."
+        }
+      ],
+      "image": "https://www.flattensf.com/preview.jpg"
+    },
+    {
+      "id": 49968402,
+      "url": "https://www.barrons.com/news/norway-eyes-partial-ban-of-smart-glasses-e65dc239",
+      "hn": "https://news.ycombinator.com/item?id=49968402",
+      "title": "Norway Eyes Partial Ban of Smart Glasses",
+      "time": 1791224120,
+      "points": 152,
+      "depth": [
+        {
+          "text": "Norway is weighing a **partial ban** on **smart glasses**, and commenters argue over camera rules",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter quotes a proposed list including **parks, beaches, museums**, shopping centres, schools, daycare centres, healthcare facilities, gyms and public events. Others would rather target **surreptitious recording** than glasses specifically; another commenter says current rules are good enough because cameras are everywhere.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some want rules aimed at surreptitious recording or specific places; others say cameras are already everywhere and current regulation is good enough.",
+      "comment_count": 86,
+      "terms": [
+        "surreptitious recording",
+        "data fusion"
+      ],
+      "entities": [
+        "EU"
+      ],
+      "comments": [
+        {
+          "by": "bryan0",
+          "text": "Does anyone else remember in the early 2000s the concerns around privacy with cell phone cameras? [0][1][2][3]. How long until people feel the same way about camera glasses? [0] New Privacy Menace: Cell Phones? (2003): https://www.wired.com/2003/02/new-privacy-menace-cell-phones... [1] More trouble for camera-phones (2003): https://arstechnica.com/uncategorized/2003/06/195-2/ [2] Camera Phones…"
+        },
+        {
+          "by": "phyzome",
+          "text": "I'd like to see this framed as a ban on surreptitious recording, not specific to glasses. But it's a little hard to figure out exactly what the parameters should be."
+        },
+        {
+          "by": "indoordin0saur",
+          "text": "> Norway Eyes Partial Ban of Smart Glasses I see what you did there."
+        },
+        {
+          "by": "eecks",
+          "text": "Why isn't the publishing of the captured video banned? If you want to upload content involving someone else (not just in the background) in it then you should need consent."
+        },
+        {
+          "by": "laxd",
+          "text": "A temporary measure.\nKnowing the current regime they will use years & millions on comittees, reports, reviews, expert groups and all kinds of bureaucratic wage labor I don't have english vocabulary for. And then, the EU, which we a not a member of, decides everything behind our back."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49965308,
+      "url": "https://floreal.tech/blog/2026/making-a-gtk-app-in-haskell-part-1/",
+      "hn": "https://news.ycombinator.com/item?id=49965308",
+      "title": "Making a GTK application in Haskell, part 1",
+      "time": 1791210227,
+      "points": 151,
+      "depth": [
+        {
+          "text": "someone is building a **todo-list app** and showing how to keep its **state and actions** organized",
+          "tier": "simple"
+        },
+        {
+          "text": "Part one uses **Haskell, GTK 4, and Adwaita** to build the list, with the **Elm Architecture** organizing user messages and state updates. The app represents saving the todo list as a **Save effect**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some keep writing Haskell GUIs; others avoid Haskell because of the huge package mess on Linux.",
+      "comment_count": 39,
+      "terms": [
+        "GTK",
+        "Adwaita",
+        "Elm Architecture",
+        "effect",
+        "widget",
+        "GHCi",
+        "callback hell"
+      ],
+      "entities": [
+        "Floréal Technologies",
+        "Haskell",
+        "GTK",
+        "Adwaita",
+        "GNOME",
+        "Elm",
+        "haskell-gi",
+        "GHCi"
+      ],
+      "comments": [
+        {
+          "by": "Koshkin",
+          "text": "Is a widget a monad? Anyway, the examples in this tutorial are another proof that Haskell is the best imperative language !"
+        },
+        {
+          "by": "seba_dos1",
+          "text": "Replace `backdrop-filter` on `.backdrop::after` with `filter` on `.backdrop picture` for a free scrolling performance boost."
+        },
+        {
+          "by": "shevy-java",
+          "text": "Are people still using gtk? I started to learn it back then via ruby-gtk2. It was not\nthe best experience but I learned several key things\npertaining to widgets and the UI. Then came gtk3; it was\nin some ways worse than GTK2, but it also brought a few\nimprovements such as the partial CSS support. I always\nmiss that when I use e. g. wxwidget. Then came GTK4 though and things changed. Tons of…"
+        },
+        {
+          "by": "pluc",
+          "text": "> import GI.Awd qualified as Adw please tell me that's a typo"
+        },
+        {
+          "by": "birchcove",
+          "text": "i've been writing Haskell GUIs for a few years and mostly stick to react-banana or reflex because wiring up gtk-gi signals manually gets messy fast. The Elm architecture pattern here looks clean on paper but I'm curious how you handle async events from the widget tree without ending up in callback hell. Did you end up wrapping all GI callbacks in a channel that feeds into your update loop?"
+        }
+      ],
+      "image": "https://floreal.tech/img/path-2560.jpg"
+    },
+    {
+      "id": 49970871,
+      "url": "https://qlabs.sh/research/dust",
+      "hn": "https://news.ycombinator.com/item?id=49970871",
+      "title": "Dust: Pretraining Transformers Without Backpropagation",
+      "time": 1791234907,
+      "points": 151,
+      "depth": [
+        {
+          "text": "someone trained **transformer language models** **without backprop** by perturbing activations at each token",
+          "tier": "simple"
+        },
+        {
+          "text": "A **243M-parameter model** beat one **120× smaller** at most population sizes. The authors say Dust isn’t compute-efficient enough to replace backprop today.",
+          "tier": "substance",
+          "data": [
+            [
+              "largest model",
+              "243M parameters"
+            ],
+            [
+              "size comparison",
+              "120× smaller"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: skeptics say derivative-free methods are costly and unlikely to matter; others see promise in their generality and the finding that larger models can be more population-efficient.",
+      "comment_count": 35,
+      "terms": [
+        "backprop",
+        "zeroth-order method",
+        "activation",
+        "population",
+        "gradient",
+        "loss"
+      ],
+      "entities": [
+        "Dust",
+        "EGGROLL",
+        "FineWeb",
+        "AlphaGo Zero",
+        "Muon",
+        "Adam",
+        "SGD",
+        "Samip Dahal",
+        "Bishwas Mandal",
+        "Serdar Gülbahar",
+        "Akshay Vegesna"
+      ],
+      "comments": [
+        {
+          "by": "blt",
+          "text": "Every few years, a derivative-free neural network optimization algorithm gets some hype. I'd bet my life savings that none of them ever make an impact. Derivative-free optimization can be useful for genuinely discontinuous objectives [1], but common neural network objectives are smooth and/or Lipschitz. The gradient is useful. Instead of trying random directions and hoping that one of them is an…"
+        },
+        {
+          "by": "syntacticsalt",
+          "text": "I'm skeptical as to whether zeroth-order methods really lend themselves to a Bitter Lesson argument. First-order methods don't explore the loss landscape optimally, but the loss function tends to be nonconvex, and zeroth-order methods don't address that issue head on. Dust smooths, and so do applicable first-order methods. Remove the nonconvexity issue, and I suspect Dust's purported advantages…"
+        },
+        {
+          "by": "usernametaken29",
+          "text": "> There are many interesting open questions. The first is whether, and how, Dust can find better directions than backprop’s first-order gradient Both algorithms are bound by the same Pareto frontier based on the Empirical Risk Minimisation Principle, so they’re already on the same trajectory.\nInterestingly backprop is limited by conditioning of the Hessian matrix in order to converge…"
+        },
+        {
+          "by": "polyomino",
+          "text": "Even though this is way more expensive than backprop, could a hybrid approach where you fine tune an existing checkpoint that's been backpropped unlock further gains?\nIt would be cool to apply this to different stages and see if that affects the learning trajectory"
+        },
+        {
+          "by": "wg0",
+          "text": "It's computationally expensive and infeasible but what's the upside? Genuine question due to unfamiliarity with the subject."
+        }
+      ],
+      "image": null
+    },
+    {
       "id": 49961057,
       "url": "https://www.techspot.com/news/114091-florida-woman-used-claude-diary-anthropic-reported-shoot.html",
       "hn": "https://news.ycombinator.com/item?id=49961057",
@@ -729,7 +1358,47 @@
     }
   ],
   "glossary": {
+    "right of publicity": "A legal protection against someone using your name or identity without permission.",
     "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "scraped": "Copied from websites, often automatically, to gather material for training AI.",
+    "JavaScript": "A programming language; here, it lets an agent combine tool calls.",
+    "SVG": "Scalable Vector Graphics: a picture format that stays sharp when resized.",
+    "Hyrum's Law": "The idea that people will come to depend on any behavior they can observe, even if it was never promised.",
+    "CDN": "Content Delivery Network: A network of servers that helps websites handle requests closer to their users.",
+    "IANA": "Internet Assigned Numbers Authority: the group that manages key parts of the internet's naming system.",
+    "ALPR": "Automatic license plate recognition: technology that reads vehicle license plates from camera images.",
+    "transparency portals": "Public pages where police agencies can share statistics about camera use, like vehicles scanned and police searches.",
+    "warrantless search": "A police search carried out without getting a judge’s warrant first.",
+    "Fourth Amendment": "The part of the US Constitution that protects people from unreasonable searches and seizures.",
+    "FOIA": "Freedom of Information Act: a US law that lets people ask government agencies for records.",
+    "washi": "A traditional Japanese paper.",
+    "counterweights": "Weights that balance the lamp so it stays where you move it.",
+    "mouth-blown glass": "Glass shaped by blowing air into it while it is hot.",
+    "3D-printed": "Made by a printer that builds an object up in layers from a design.",
+    "competitive programming": "Solving programming puzzles under contest rules, often by finding a solution quickly.",
+    "algorithm": "A set of steps used to solve a problem or make a decision.",
+    "LLMs": "Large language models: computer programs trained on lots of writing that can produce text.",
+    "coding agents": "Software that can take a request and carry out coding tasks, rather than just suggest text.",
+    "lidar": "A way to measure the shape of the ground by sending out laser light and measuring what bounces back.",
+    "street graph": "A map represented as connected streets and intersections so route-finding software can work out paths.",
+    "cumulative gain": "The total of all the uphill parts of a route, rather than just the height difference between its ends.",
+    "DTM": "Digital Terrain Model: elevation data aimed at showing the ground without counting buildings or trees.",
+    "grade": "How steep a stretch of road is; a higher percentage means a steeper climb.",
+    "surreptitious recording": "Recording someone without them knowing it's happening.",
+    "data fusion": "Combining information from different sources into one picture.",
+    "GTK": "GIMP Toolkit: a set of ready-made parts for building desktop app windows and controls.",
+    "Adwaita": "A library of interface parts and styles that follows the GNOME project's design choices.",
+    "Elm Architecture": "A way to organize an interactive app around its data, user messages, and rules for updating that data.",
+    "effect": "A task the app carries out outside its main state update, such as saving the todo list to disk.",
+    "widget": "A piece of an app's interface, such as a text field or a list row.",
+    "GHCi": "A Haskell prompt where you can try out code and see what it does.",
+    "callback hell": "A tangle of event-handling code that becomes hard to follow.",
+    "backprop": "A way to train a neural network by tracing how changes inside it affect its final error.",
+    "zeroth-order method": "A way to improve a model by trying changes and checking what helps, rather than calculating an exact direction to adjust it.",
+    "activation": "A changing value inside a neural network as it processes an input.",
+    "population": "The collection of separate trials used to estimate how a change affects training.",
+    "gradient": "A signal that tells training which small changes are likely to make the model less wrong.",
+    "loss": "A score for how wrong a model’s answer is; training tries to lower it.",
     "open-weight": "Describes an AI whose learned settings are available for others to download and use.",
     "Mixture-of-Experts": "A model made of specialist parts that only uses some of them for each request.",
     "agentic": "Describes AI that chooses steps and acts toward a task, rather than only answering a question.",
