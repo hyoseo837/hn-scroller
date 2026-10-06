@@ -2,6 +2,147 @@
   "date": "2026-10-06",
   "cards": [
     {
+      "id": 49980715,
+      "url": "https://github.com/FeSens/openTPU",
+      "hn": "https://news.ycombinator.com/item?id=49980715",
+      "title": "OpenTPU – An open-source AI accelerator, developed by AI",
+      "time": 1791303805,
+      "points": 194,
+      "depth": [
+        {
+          "text": "someone used AI to build an **open-source accelerator** that runs models on an **FPGA card**",
+          "tier": "simple"
+        },
+        {
+          "text": "The repo bundles its **hardware, instruction set, simulator, compiler and profiler**, and says AI developed the accelerator. It runs **ten modern models** with real weights on a Kintex-7 card, producing the same tokens as its simulator, bit for bit.",
+          "tier": "substance",
+          "data": [
+            [
+              "models run",
+              "10"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: skeptics say humans prompted an LLM to optimize designs in simulation; optimists see recursive self-improvement as a path toward AI-designed chips.",
+      "comment_count": 251,
+      "terms": [
+        "FPGA",
+        "RTL",
+        "ISA",
+        "LLM",
+        "DRAM",
+        "PCIe"
+      ],
+      "entities": [
+        "openTPU",
+        "Qwen3",
+        "LFM2.5",
+        "Qwen3.5",
+        "Inspur YPCB-00338",
+        "Xilinx",
+        "Kintex-7",
+        "SystemVerilog"
+      ],
+      "comments": [
+        {
+          "by": "pcarolan",
+          "text": "Really dumb question from a software guy. Why aren't the labs burning their frontier models into chips already? Seems like the performance gains and cost per request would be worth it. That said, I understand neither the economics nor the physical challenges to doing this."
+        },
+        {
+          "by": "rcarmo",
+          "text": "Well, as long as it doesn't start developing anatomically accurate metal skeletons with red glowing eyes..."
+        },
+        {
+          "by": "athrowaway3z",
+          "text": "I haven't really dug into the results yet, but my guess is\nthat a SOTA model has been able to produce an accelerator that runs a model since around December. The obvious next step is to get enough memory throughput to run that SOTA model itself so that it develop its own hardware. But perhaps the more interesting question is this: Can an AI be given a big FPGA and design a model architecture that…"
+        },
+        {
+          "by": "fsbonetto",
+          "text": "After using AI to develop risc-v CPU cores, the same technique was used for developing openTPU. An open source AI inference engine. It's able to run most of the modern models like Qwen 3.5, Gemma 4, and many others. The TPU started able to produce only a few tokens per second and trough a recursive self improvement loop got to 80+ tok/sec on the smallers models."
+        },
+        {
+          "by": "xg15",
+          "text": "\"Recursive self-improvement will kill us all!\" Also: Here is our recursive self-improvement hard at work..."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/6580cb044bda32c6d85b2096a99b9ae1dedea883e5e9894cd435b0702608b61b/FeSens/openTPU"
+    },
+    {
+      "id": 49980487,
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
+      "hn": "https://news.ycombinator.com/item?id=49980487",
+      "title": "EmbeddingGemma 2: An open, lightweight multimodal embedding model",
+      "time": 1791302629,
+      "points": 163,
+      "depth": [
+        {
+          "text": "someone built an **open model** that connects text, images, audio and video for **on-device search**",
+          "tier": "simple"
+        },
+        {
+          "text": "**EmbeddingGemma 2** has 740 million parameters and is released under a commercially permissive **Apache 2.0 license**; text-only workloads use as little as 270M parameters. Its **MTEB Code score** rises from 68.76 to 78.68.",
+          "tier": "substance",
+          "data": [
+            [
+              "total parameters",
+              "740 million"
+            ],
+            [
+              "text-only parameters",
+              "270M"
+            ],
+            [
+              "MTEB Code score",
+              "68.76 to 78.68"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 25,
+      "terms": [
+        "multimodal",
+        "embedding",
+        "on-device",
+        "parameter",
+        "RAG",
+        "MRL",
+        "Apache 2.0 license",
+        "MTEB Code"
+      ],
+      "entities": [
+        "Google",
+        "EmbeddingGemma 2",
+        "EmbeddingGemma",
+        "Gemma 4",
+        "MTEB Code"
+      ],
+      "comments": [
+        {
+          "by": "simonw",
+          "text": "I really appreciate that EmbeddingGemma 2 is under the Apache 2.0 license. For embedding models in particular, I don't think it makes sense to use a closed, proprietary, hosted-only model. Most applications of embedding models involve calculating thousands or even millions of embedding vectors and storing them for later comparison. If your model is proprietary, the vendor is likely someday going…"
+        },
+        {
+          "by": "Nautman",
+          "text": "It's also very neat that this can be used for \"Jev\"-like tasks with text and image. https://developers.google.com/edge/mediapipe/solutions/decis..."
+        },
+        {
+          "by": "flockonus",
+          "text": "Hats off to google for offering OSS (or at least open weights + license) a model that would be probably pretty closed to what they would ship in their Android phones."
+        },
+        {
+          "by": "aabhay",
+          "text": "Note that unlike prior on device embedding models, this seems to be trained with MRL, not MatFormers, meaning you don’t get to shrink the model weights alongside the lower dimensional embeddings, unfortunately. Likely there’s not good research for how to do MatFormers for multimodal yet?"
+        },
+        {
+          "by": "dcl",
+          "text": "Would be good to see how it compares to the embedding models from https://www.voyageai.com/ for text. I have used these a few times in the past and have found them superior to the Qwen models compared to here."
+        }
+      ],
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/embeddinggemma2-banner_169.width-1300.png"
+    },
+    {
       "id": 49977979,
       "url": "https://mistral.ai/news/mistral-large-4/\\",
       "hn": "https://news.ycombinator.com/item?id=49977979",
@@ -2364,6 +2505,20 @@
     }
   ],
   "glossary": {
+    "FPGA": "Field-programmable gate array: a chip that can be set up for different hardware jobs after it is made.",
+    "RTL": "Right-to-left: writing that runs from the right side of a line toward the left.",
+    "ISA": "Instruction set architecture: the set of basic commands a processor understands.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "DRAM": "Dynamic Random-Access Memory: the working memory a computer uses while running things.",
+    "PCIe": "Peripheral Component Interconnect Express: a connection that lets add-in cards exchange data with the rest of a computer.",
+    "multimodal": "Able to work with more than one kind of input, such as text and images.",
+    "embedding": "A set of numbers that gives an AI a way to represent a word or piece of text and how it relates to others.",
+    "on-device": "Runs on the phone or computer itself, rather than sending the work elsewhere.",
+    "parameter": "A setting inside an AI model that helps shape what it learns and produces.",
+    "RAG": "Retrieval-Augmented Generation: a way for an AI to look up material and use it when answering.",
+    "MRL": "Matryoshka Representation Learning: a method that lets developers shorten an AI's number lists to save storage.",
+    "Apache 2.0 license": "A set of rules that lets people use, change, and share software, including for commercial purposes, while following its conditions.",
+    "MTEB Code": "A test used to compare how well models handle code-related tasks.",
     "CyberGym-E2E": "A test of how well a model handles cybersecurity tasks.",
     "Dense 200": "A test used to measure how well a model understands images and where things are in them.",
     "Vals Index": "A score used to compare models across different measures.",
@@ -2376,12 +2531,10 @@
     "ROE": "Return on Equity: a measure of how much profit a company earns compared with its owners’ stake.",
     "EBITDA": "Earnings Before Interest, Taxes, Depreciation and Amortization: a way to compare company results before counting several costs.",
     "IDE": "Integrated Development Environment: an app that brings coding and other development tools together.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "CI/CD": "Continuous Integration and Continuous Delivery or Deployment: ways to automatically check code changes and get software ready to release.",
     "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
     "open weights": "The model's learned settings are available for people to download and run themselves.",
     "parameters": "Learned values inside a model that shape the answers it gives.",
-    "multimodal": "Able to work with more than one kind of input, such as text and images.",
     "agentic workflows": "Tasks where an AI gathers information, uses tools, and completes a job across several steps.",
     "neutrino": "A tiny particle that is very hard to detect because it can pass through huge amounts of matter without hitting anything.",
     "IceCube Neutrino Observatory": "A neutrino detector that uses a cubic kilometer of ice and sensors to catch rare neutrino interactions.",

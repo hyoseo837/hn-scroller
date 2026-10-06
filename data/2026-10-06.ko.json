@@ -588,9 +588,67 @@
         "어, 이런 게 이미 되고 있는 줄 알았는데, 어쩌면 좀 더 뒤 단계에서였나 보네요. 괜찮네요! 좀 관련 있는 샤워 중 생각인데, rustc가 generic method를 바로 instantiate하는 대신 찾을 것으로 예상되는 걸 적어 두고(`std::Vec<String>::push`), 별도의 build process가 이 목록을 듣게 할 수는 없을까요? 전체 build에서 이미 빌드된 항목을 여러 번 빌드하지 않게 하면서요. 저…",
         "그럼 이건 cache 같은 건가요? TS용 https://turborepo.dev가 생각났는데, 비슷한 개념인가요?"
       ]
+    },
+    "49980715": {
+      "simple": "AI로 만든 **오픈소스 accelerator**, **FPGA 카드**에서 모델 실행",
+      "substance": "repo에 **hardware, instruction set, simulator, compiler, profiler**가 함께 들어 있으며, AI가 accelerator를 개발했다고 밝힘. 실제 weight를 넣은 **최신 모델 열 개**를 Kintex-7 카드에서 실행하고, simulator와 비트 단위까지 같은 token을 출력.",
+      "data": [
+        [
+          "실행 모델 수",
+          "10"
+        ]
+      ],
+      "camps": "두 진영: 회의론자는 사람이 LLM에 simulation에서 설계를 최적화하도록 지시한 것뿐이라고 주장하고, 낙관론자는 재귀적 자기개선이 AI 설계 칩으로 이어질 가능성에 기대.",
+      "comments": [
+        "소프트웨어 쪽 사람의 진짜 멍청한 질문입니다. 왜 연구소들은 이미 최첨단 모델을 칩에 구워 넣지 않는 거죠? 성능 향상과 요청당 비용 절감을 생각하면 할 만한 가치가 있어 보이는데요. 물론 이걸 하는 데 따르는 경제성이나 물리적 어려움은 전혀 모릅니다.",
+        "뭐, 해부학적으로 정확한 금속 골격에 빨갛게 빛나는 눈까지 개발하기 시작하지만 않으면…",
+        "아직 결과를 자세히 들여다보진 않았지만, 제 추측으로는 최첨단 모델이 모델을 실행하는 accelerator를 만들 수 있게 된 건 대략 12월쯤부터인 것 같습니다. 다음 단계는 그 최첨단 모델 자체를 실행할 만큼 메모리 처리량을 확보해, 모델이 자기 hardware를 개발하게 하는 거겠죠. 하지만 어쩌면 더 흥미로운 질문은 이겁니다. AI에게 큰 FPGA를 주면 모델 architecture를 설계할 수 있을까요…",
+        "RISC-V CPU core 개발에 AI를 쓴 뒤, 같은 기법으로 openTPU를 개발했습니다. 오픈소스 AI 추론 엔진입니다. Qwen3.5, Gemma 4 등 대부분의 최신 모델을 실행할 수 있습니다. TPU는 처음엔 초당 몇 token밖에 만들지 못했지만 재귀적 자기개선 과정을 거쳐 작은 모델에서 80+ tok/sec까지 도달했습니다.",
+        "“재귀적 자기개선이 우리 모두를 죽일 거야!” 그러면서도 여기 재귀적 자기개선이 한창 일하는 모습이 있습니다…"
+      ]
+    },
+    "49980487": {
+      "simple": "텍스트·이미지·오디오·비디오를 잇는 **오픈 모델**, 기기 내 **검색 지원**",
+      "substance": "**EmbeddingGemma 2**는 740 million parameter로, 상업적 사용을 허용하는 **Apache 2.0 license**로 공개됨. 텍스트 전용 작업은 최소 270M parameter만 사용. **MTEB Code 점수**는 **68.76에서 78.68로 상승**.",
+      "data": [
+        [
+          "총 parameter 수",
+          "740 million"
+        ],
+        [
+          "텍스트 전용 parameter 수",
+          "270M"
+        ],
+        [
+          "MTEB Code 점수",
+          "68.76에서 78.68로"
+        ]
+      ],
+      "camps": null,
+      "comments": [
+        "EmbeddingGemma 2가 Apache 2.0 license로 나온 게 정말 반갑다. 특히 embedding model은 폐쇄형 독점 hosted-only model을 쓸 이유가 없다고 본다. embedding model을 쓰는 대부분의 앱은 수천, 많게는 수백만 개의 embedding vector를 계산해 두고 나중에 비교한다. 모델이 독점형이면 제공업체가 언젠가는 아마…",
+        "텍스트와 이미지로 \"Jev\" 같은 작업도 할 수 있다는 점도 꽤 좋다. https://developers.google.com/edge/mediapipe/solutions/decis...",
+        "Android 폰에 들어갈 법한 모델을 Google이 OSS(적어도 open weights + license)로 내놓은 데 박수.",
+        "이전 on-device embedding model과 달리, 이건 MatFormers가 아니라 MRL로 학습된 것 같다. 그래서 차원 낮은 embedding과 함께 모델 weight까지 줄어들진 않는다. 아쉽게도 multimodal에 MatFormers를 적용하는 방법은 아직 연구가 부족한 걸까?",
+        "텍스트용으로 https://www.voyageai.com/의 embedding model과 비교한 결과도 보고 싶다. 예전에 몇 번 써봤는데, 여기서 비교한 Qwen model보다 낫다고 느꼈다."
+      ]
     }
   },
   "glossary": {
+    "FPGA": "Field-programmable gate array: 만들어진 뒤에도 용도에 맞춰 내부 회로를 바꿀 수 있는 칩.",
+    "RTL": "Right-to-left는 글줄이 오른쪽에서 왼쪽으로 진행되는 방식",
+    "ISA": "Instruction set architecture: 프로세서가 이해하고 실행할 수 있는 기본 명령의 모음.",
+    "LLM": "Large Language Model: 많은 글을 학습해 글로 된 질문을 받고 글로 답하는 AI",
+    "DRAM": "Dynamic Random-Access Memory: 컴퓨터가 프로그램을 실행하는 동안 임시로 쓰는 작업 메모리.",
+    "PCIe": "Peripheral Component Interconnect Express: 컴퓨터에 추가한 카드와 컴퓨터 본체가 데이터를 주고받게 하는 연결 방식.",
+    "multimodal": "텍스트와 이미지처럼 서로 다른 종류의 입력을 둘 이상 다룰 수 있는 상태.",
+    "embedding": "단어나 텍스트를 숫자로 나타내고 다른 것들과의 관계까지 표현하는 방식.",
+    "on-device": "작업을 다른 곳으로 보내지 않고 휴대폰이나 컴퓨터 자체에서 처리하는 방식.",
+    "parameter": "AI 모델 안에서 모델이 무엇을 배우고 만들어낼지에 영향을 주는 설정값.",
+    "RAG": "Retrieval-Augmented Generation: AI가 자료를 찾아 답변에 활용하는 방식.",
+    "MRL": "Matryoshka Representation Learning: 저장 공간을 아끼도록 AI가 만든 숫자 목록의 길이를 줄이는 방법.",
+    "Apache 2.0 license": "조건을 지키면 소프트웨어를 상업적 용도를 포함해 사용하고, 바꾸고, 공유할 수 있게 하는 규칙.",
+    "MTEB Code": "모델이 코드 관련 작업을 얼마나 잘 처리하는지 비교하는 시험.",
     "CyberGym-E2E": "모델이 사이버 보안 작업을 얼마나 잘 처리하는지 보는 시험.",
     "Dense 200": "이미지 속 사물과 위치를 모델이 얼마나 잘 알아보는지 재는 시험.",
     "Vals Index": "여러 기준으로 모델들을 비교해 점수로 나타낸 지표.",
@@ -603,12 +661,10 @@
     "ROE": "Return on Equity: 회사가 주주 지분에 비해 얼마나 이익을 내는지 나타내는 수치.",
     "EBITDA": "Earnings Before Interest, Taxes, Depreciation and Amortization: 이자, 세금, 감가상각 비용 등을 빼기 전에 회사 실적을 비교하는 방식.",
     "IDE": "Integrated Development Environment: 개발에 필요한 편집기와 여러 도구를 한데 모은 앱.",
-    "LLM": "Large Language Model: 많은 글을 학습해 글로 된 질문을 받고 글로 답하는 AI",
     "CI/CD": "Continuous Integration and Continuous Delivery or Deployment: 코드 변경을 자동으로 검사하고 소프트웨어를 출시할 준비를 하는 방식.",
     "API": "Application Programming Interface: 한 프로그램이 다른 프로그램에 정보나 동작을 요청하는 방법.",
     "open weights": "모델이 학습하며 얻은 설정값을 누구나 내려받아 직접 실행할 수 있는 상태.",
     "parameters": "모델 안에서 답변을 좌우하도록 학습된 수치.",
-    "multimodal": "텍스트와 이미지처럼 서로 다른 종류의 입력을 둘 이상 다룰 수 있는 상태.",
     "agentic workflows": "AI가 정보를 모으고 도구를 사용해 여러 단계를 거쳐 일을 끝내는 작업 방식.",
     "neutrino": "neutrino는 아주 작은 입자로, 물질을 거의 부딪히지 않고 통과해 찾아내기 어려운 입자임.",
     "IceCube Neutrino Observatory": "IceCube Neutrino Observatory는 얼음 속 센서로 드물게 일어나는 neutrino의 상호작용을 잡아내는 탐지 시설임.",
