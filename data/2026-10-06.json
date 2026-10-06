@@ -2,6 +2,1012 @@
   "date": "2026-10-06",
   "cards": [
     {
+      "id": 49977979,
+      "url": "https://mistral.ai/news/mistral-large-4/\\",
+      "hn": "https://news.ycombinator.com/item?id=49977979",
+      "title": "Mistral Large 4",
+      "time": 1791292549,
+      "points": 1097,
+      "depth": [
+        {
+          "text": "Mistral’s new model is drawing praise for its **European roots** and debate over **price and performance**",
+          "tier": "simple"
+        },
+        {
+          "text": "Commenters cite Mistral’s **82% on CyberGym-E2E** and **42% on Dense 200**, versus 41% for GPT-6 Astra. One commenter’s comparison puts it behind GLM-5.3 on the Vals Index (48.05% vs. 53.51%) and at a higher per-test cost ($13.78 vs. $7.25).",
+          "tier": "substance",
+          "data": [
+            [
+              "CyberGym-E2E",
+              "82%"
+            ],
+            [
+              "Dense 200 (Mistral Large 4)",
+              "42%"
+            ],
+            [
+              "Dense 200 (GPT-6 Astra)",
+              "41%"
+            ],
+            [
+              "Vals Index (Mistral Large 4)",
+              "48.05%"
+            ],
+            [
+              "Vals Index (GLM-5.3)",
+              "53.51%"
+            ],
+            [
+              "Cost per test (Mistral Large 4)",
+              "$13.78"
+            ],
+            [
+              "Cost per test (GLM-5.3)",
+              "$7.25"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters see a useful European competitor, especially for cybersecurity; critics say its performance and price don’t stack up against alternatives.",
+      "comment_count": 709,
+      "terms": [
+        "CyberGym-E2E",
+        "Dense 200",
+        "Vals Index",
+        "Pareto frontier",
+        "visual grounding",
+        "open-weight",
+        "inference"
+      ],
+      "entities": [
+        "Mistral",
+        "Mistral Large 4",
+        "CyberGym-E2E",
+        "Dense 200",
+        "GPT-6 Astra",
+        "GLM-5.3",
+        "Vals Index"
+      ],
+      "comments": [
+        {
+          "by": "simonw",
+          "text": "Surprisingly it only supports reasoning \"none\" or reasoning \"high\". That setting didn't seem to make any real difference - it added a tiny bit of thinking trace and high actually produced less output tokens than none. The high bicycle frame is better then the none one though. Pelicans: https://tools.simonwillison.net/markdown-svg-renderer?url=ht... (Definitely the best I've seen from any Mistral…"
+        },
+        {
+          "by": "prodigycorp",
+          "text": "Impressive vision benchmarking. If the vision model is truly as good as astra, that would make it best in the world. Also strong on cyber benchmarks (better than all chinese models), so this is a good defender model. Lots of people shitting of Mistral for no reason imo. These are pretty good numbers across the board. Definitely good enough to use as a daily driver over other llms, if you have…"
+        },
+        {
+          "by": "geroge_kyaw",
+          "text": "Still second most expensive open-weight model. I don't care about cybersecurity index.\nAnd still can't beat Chinese models but good to see European in the game."
+        },
+        {
+          "by": "michaelkdev",
+          "text": "Even if it's not the best model, it can be really important step in UE sovereignty. Trained in EU, inference in EU. I guess it will matter for some companies. Hope Mistral won't disappear for the next half year."
+        },
+        {
+          "by": "eigenspace",
+          "text": "Its quite interesting to see that at least the early days of AI so far have not been a winner-take-all runaway acceleration game where catchup is impossible. I certainly wouldnt have predicted that 10 years ago. Very glad to see Mistral still in the game even after some big stumbles with Large 3. I deeply hope that this model is 'good enough' that it becomes the European go-to, giving them the…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49977072,
+      "url": "https://www.helgilibrary.com/companies/jetbrains",
+      "hn": "https://news.ycombinator.com/item?id=49977072",
+      "title": "JetBrains reported a net financial loss first time in its tracked history",
+      "time": 1791287155,
+      "points": 531,
+      "depth": [
+        {
+          "text": "JetBrains' **sales kept growing**, but the company still ended the year with **a loss**",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: some blame JetBrains’ management and AI strategy; others say the loss may be unrelated to AI and point to revenue still rising.",
+      "comment_count": 485,
+      "terms": [
+        "CZK",
+        "net loss",
+        "ROE",
+        "EBITDA",
+        "IDE",
+        "LLM",
+        "CI/CD",
+        "API"
+      ],
+      "entities": [
+        "JetBrains",
+        "Helgi Library",
+        "Jiri Stanik",
+        "Claude",
+        "Claude Code",
+        "OpenAI",
+        "Cursor",
+        "Pi",
+        "Conductor",
+        "Herdr",
+        "Air",
+        "Junie",
+        "Fleet",
+        "Code With Me",
+        "JetBrains Space",
+        "IDEA",
+        "DataGrip",
+        "PyCharm",
+        "CLion",
+        "VS Code",
+        "TablePlus",
+        "iTerm2",
+        "Sublime",
+        "TeamCity",
+        "GitLab",
+        "Codex",
+        "OpenCode",
+        "C++",
+        "Linux"
+      ],
+      "comments": [
+        {
+          "by": "bdavbdav",
+          "text": "All the death knell comments - Is no one looking at the revenue line? Revenue still trending the same. Costs presumably haven't skyrocketed. They've invested in something big. Thats probably a good thing, and often needed to evolve."
+        },
+        {
+          "by": "jll29",
+          "text": "I hope they have something great up their sleeve... would be a shame if that gem of a company got killed by AI."
+        },
+        {
+          "by": "conradfr",
+          "text": "A bit tongue-in-cheek but I'm amazed by people that don't open an IDE or look at code. Are you paid to press enter at anything that Claude present to you? Personally I usually use Claude inside the Jetbrain's IDE terminal, even if I code by hand obviously less. I still like using the diff, navigation, quick access to any file path for my prompt etc but maybe that won't last. (edit: although I…"
+        },
+        {
+          "by": "samiv",
+          "text": "This probably is not a reflection of their products but, boy do I wish it was! As a long time C++ developer on Linux Clion was the best there was and it seems that they've completely neglected the core product. The core features are in a free fall while they keep adding new smart AI crap and shuffling the UI around and adding new show stopper bugs."
+        },
+        {
+          "by": "theappsecguy",
+          "text": "Wow, this really sucks. With all the money flocking to companies that trained LLMs on stolen data, we may lose the only set of IDEs that offer high quality professional development tools"
+        }
+      ],
+      "image": "https://www.helgilibrary.com/opengraph-image"
+    },
+    {
+      "id": 49978116,
+      "url": "https://mistral.ai/news/mistral-large-4/",
+      "hn": "https://news.ycombinator.com/item?id=49978116",
+      "title": "Mistral Large 4: \"Le Chonk\"",
+      "time": 1791293150,
+      "points": 515,
+      "depth": [
+        {
+          "text": "Mistral has previewed a **new AI model** for **coding, cybersecurity, and understanding images**",
+          "tier": "simple"
+        },
+        {
+          "text": "Mistral says **the model has 1 trillion parameters**, with 49 billion active, and trained it from scratch on **3,800 NVIDIA Grace Blackwell GPUs** in its own datacenters in Europe. The preview API is available now, and Mistral says it will release the weights by the end of the month. On a test that asks models to reproduce and patch a real software vulnerability, it scored **82%**, the highest of any model.",
+          "tier": "substance",
+          "data": [
+            [
+              "total parameters",
+              "1 trillion"
+            ],
+            [
+              "active parameters",
+              "49 billion"
+            ],
+            [
+              "training GPUs",
+              "3,800"
+            ],
+            [
+              "vulnerability test score",
+              "82%"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 5,
+      "terms": [
+        "open weights",
+        "parameters",
+        "multimodal",
+        "API",
+        "agentic workflows"
+      ],
+      "entities": [
+        "Mistral",
+        "Mistral Large 4",
+        "NVIDIA Grace Blackwell"
+      ],
+      "comments": [
+        {
+          "by": "ChrisArchitect",
+          "text": "Some more discussion: https://news.ycombinator.com/item?id=49977979"
+        },
+        {
+          "by": "amelius",
+          "text": "Dupe. https://news.ycombinator.com/item?id=49977979 (200 comments now)"
+        },
+        {
+          "by": "taspeotis",
+          "text": "Did they release it again? https://news.ycombinator.com/item?id=49977979"
+        }
+      ],
+      "image": "https://mistral.ai/cms-media/api/media/file/cover-mistral-sovereign%20copie.webp"
+    },
+    {
+      "id": 49976265,
+      "url": "https://www.nobelprize.org/prizes/physics/2026/",
+      "hn": "https://news.ycombinator.com/item?id=49976265",
+      "title": "Nobel Prize in Physics goes to Francis Halzen",
+      "time": 1791280126,
+      "points": 398,
+      "depth": [
+        {
+          "text": "Francis Halzen won the **Physics Nobel** for **IceCube** and discovering **high-energy neutrinos** from space",
+          "tier": "simple"
+        },
+        {
+          "text": "The citation credits his **decisive contributions** to the IceCube Neutrino Observatory and the discovery of high-energy neutrinos of astrophysical origin. The detector uses a cubic kilometer of ice, with **5000 optical detectors** in boreholes **2.5km deep** to catch neutrino interactions.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 124,
+      "terms": [
+        "neutrino",
+        "IceCube Neutrino Observatory",
+        "borehole",
+        "optical detector",
+        "Cherenkov radiation",
+        "astrophysical origin"
+      ],
+      "entities": [
+        "Francis Halzen",
+        "Nobel Prize in Physics",
+        "IceCube Neutrino Observatory"
+      ],
+      "comments": [
+        {
+          "by": "hazrmard",
+          "text": "A breakdown of why the awarded work, Ice Cube, is significant: - A neutrino is an elementary subatomic particle. Neutrinos are produced by nuclear reactions inside stars, supernovae, radioactive decay. They are one of the most abundant particles in the universe.\n- Neutrinos are known as \"ghost particles\". They have 0 charge and near-zero mass. They only react with the weak nuclear force and…"
+        },
+        {
+          "by": "_Microft",
+          "text": "He receives the prize for conceiving the IceCube neutrino detector, a cubic-kilometer-sized detecter in the Antarctics. https://en.wikipedia.org/wiki/IceCube_Neutrino_Observatory Mechanism is via conversion of neutrinos into charged particles which are then detected via Cherenkov radiation which is produced when a charged particle moves with speeds larger then the speed of light in the medium…"
+        },
+        {
+          "by": "JimTheMan",
+          "text": "I'm in love with the cute little figure that came with the press release:\nhttps://www.nobelprize.org/uploads/2026/10/fig_fy_26_3x2.jpg I appreciate the boldness of this project, it has an element of sci-fi to it. Building a base at the south pole to bury sensors in ice to measure elusive particles. The stuff of dreams!"
+        },
+        {
+          "by": "southpolesteve",
+          "text": "What an amazing accomplishment! I played a very tiny part in this project and went to the South Pole in 2009 to help with construction. Didn't see any neutrinos the entire time I was there though :/"
+        },
+        {
+          "by": "dekhn",
+          "text": "I worked with a guy who worked on IceCube. He flew down to the South Pole, went all the way to the station, just to install debian for their data processing systems. I was... a bit jealous."
+        }
+      ],
+      "image": "https://www.nobelprize.org/uploads/2026/10/1-2_3-6ac4a172d1e22-scaled.jpg"
+    },
+    {
+      "id": 49977177,
+      "url": "https://pola.rs/posts/release-polars-2/",
+      "hn": "https://news.ycombinator.com/item?id=49977177",
+      "title": "Release of Polars 2.0",
+      "time": 1791287941,
+      "points": 311,
+      "depth": [
+        {
+          "text": "Polars has a **new release**, and users are comparing it with pandas, DuckDB, and DataFusion",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says Polars **supports SQL**. Another uses Polars 2.0(rc) to (pre)calculate **billions of weather scores** and can upgrade to the final release; someone else raises memory use compared with DuckDB.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 61,
+      "terms": [
+        "SQL",
+        "rc",
+        "query planner"
+      ],
+      "entities": [
+        "Polars",
+        "pandas",
+        "DuckDB",
+        "DataFusion",
+        "SQL"
+      ],
+      "comments": [
+        {
+          "by": "sureglymop",
+          "text": "I've used Polars before and can only recommend it. It's like you get a really good 'query planner' like a DB would give you, but for your notebooks/scripts/etc. Much better than pandas imo."
+        },
+        {
+          "by": "popularonion",
+          "text": "I worked on benchmarking in the past, including TPC benchmarks. When you see a blog post like this, never interpret it as “database A is X% faster than database B”, there are just too many factors. It’s more like “we put focused work into performance improvements and we expect certain workloads to perform better than the previous release”. This seems like a good project, and benchmarking is a…"
+        },
+        {
+          "by": "gozzoo",
+          "text": "I'm not following the trends closely, but has Polars become a full replacement for Pandas? Are there use cases where one is better suited than the other?"
+        },
+        {
+          "by": "tomrod",
+          "text": "Well done, Polars team! Everything that I build greenfield moving forward I plan to use DuckDB, Polars, or PyArrow. Pandas was a great grandfather of a project (I actually cut my OSS contrib teeth on it, how the time flies)! I'll always appreciate the improvement pandas brought over SAS."
+        },
+        {
+          "by": "therno",
+          "text": "I use Polars 2.0(rc) to (pre)calculate billions of weather scores on https://therno.com and it has been a lifesaver Happy that I can upgrade to 2.0 final tonight."
+        }
+      ],
+      "image": "https://pola.rs/polars_2.0.0.png"
+    },
+    {
+      "id": 49977588,
+      "url": "https://www.techdirt.com/2026/10/06/metas-muse-is-an-adorable-privacy-and-security-dumpster-fire/",
+      "hn": "https://news.ycombinator.com/item?id=49977588",
+      "title": "Meta's Muse Is an Adorable Privacy and Security Dumpster Fire",
+      "time": 1791290749,
+      "points": 309,
+      "depth": [
+        {
+          "text": "Meta’s AI helper has **privacy and security problems**, including message access and **bad Facebook Marketplace sales**",
+          "tier": "simple"
+        },
+        {
+          "text": "The article says a **zero-day flaw** let someone spy on Mac users, and Muse accessed **private messages** and uploaded them despite permissions. Commenters split: some call the reporting clickbait or blame user-granted permissions, while others say they don’t trust agents with their money or conversations.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some commenters say Muse’s reported problems are clickbait or the users’ fault; others say they don’t trust agents with their money or conversations.",
+      "comment_count": 209,
+      "terms": [
+        "agentic AI",
+        "zero-day flaw",
+        "root access",
+        "Full Disk Access",
+        "VM"
+      ],
+      "entities": [
+        "Meta",
+        "Muse",
+        "Jolly",
+        "Apple",
+        "macOS",
+        "Facebook Marketplace",
+        "Wired",
+        "404 Media",
+        "Jason Aten",
+        "Hatch",
+        "Techdirt",
+        "Mark Zuckerberg",
+        "Lina Khan",
+        "Google",
+        "Claude",
+        "Grok",
+        "Instinct",
+        "OpenClaw"
+      ],
+      "comments": [
+        {
+          "by": "piazz",
+          "text": "I’m pretty frustrated with Muse and the last thing I want to be doing with my free time is defending Meta, but this is such clickbait. Point by point: > “OMG you can jailbreak it and get it to spill its VM” This is the whole point; any content on the VM is yours. It runs in an isolated sandboxed VM separate from stored credentials etc; this is effectively your own computer. You don’t have to…"
+        },
+        {
+          "by": "jagermo",
+          "text": "I get the appeal of agents, I do. This is the future stuff we always wanted. But I cannot get myself to give one of these things access to my bank account or allow it to do price comparsion and shopping without oversight. Or access to my email or chat history. I just do not trust any of them, not with my money or with access to my conversations."
+        },
+        {
+          "by": "chadd",
+          "text": "It's very simple. There is ZERO chance the worlds biggest advertising companies will refrain, long-term, from using your most intimate secrets, gathered through your many conversations with their AI personal assistants, to sell you things."
+        },
+        {
+          "by": "HarHarVeryFunny",
+          "text": "> Meanwhile, Wired found that Muse consistently creates detailed profiles of all your friends, family, colleagues, “collaborators,” and people you “follow.” Obviously much of that information is necessary for the agent to get to “know” you, but this being Meta, people are understandably uncomfortable with this sort of massive ramp up of data collection This is pretty funny! What ramp up? Building…"
+        },
+        {
+          "by": "alistairSH",
+          "text": "Are all of these just flavors of \"the agent has the same permissions as the user\"? Not that I want to trust Meta with anything, but I'm guessing it asked for \"root\" access and the users granted it...?"
+        }
+      ],
+      "image": "https://www.techdirt.com/wp-content/themes/techdirt/assets/images/td-rect-logo-white.png"
+    },
+    {
+      "id": 49971719,
+      "url": "https://dbushell.com/2026/10/03/deno-to-node/",
+      "hn": "https://news.ycombinator.com/item?id=49971719",
+      "title": "Friendship ended with Deno, now Node is my best friend",
+      "time": 1791239402,
+      "points": 280,
+      "depth": [
+        {
+          "text": "someone moved a project from **Deno to Node** with **surprisingly little work**",
+          "tier": "simple"
+        },
+        {
+          "text": "For his static site generator, he replaced Deno’s file system API with **node:fs** and Deno.serve with **Hono’s node adapter**. The builds were **15% faster**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Build result",
+              "15% faster builds"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say Node’s steady improvements make it a solid choice; others say Deno still has useful strengths and is their pick.",
+      "comment_count": 196,
+      "terms": [
+        "runtime",
+        "static site generator",
+        "API",
+        "node:fs",
+        "adapter"
+      ],
+      "entities": [
+        "Deno",
+        "Node",
+        "Hono",
+        "node:fs"
+      ],
+      "comments": [
+        {
+          "by": "theandrewbailey",
+          "text": "Side note: I parse this domain name as \"D-Bus hell\", and I expect a rant about how Linux IPC is completely broken, then I remember that this is somebody's blog."
+        },
+        {
+          "by": "isyouaint",
+          "text": "I helped Deno bring the Standard Library to v1 [as a contractor] and have always loved the team and philosophy. But these days I’m saddened by what seems to be their slow decline into obscurity. After the layoffs, there seems to be no roadmap, no comms, etc. I’m just so curious as to where they’re heading and still hope the best for it. I’ve always liked Deno more than Node and Bun."
+        },
+        {
+          "by": "yearesadpeople",
+          "text": "I've read OP blog and writings for a time. The one takeaway - for me - is how negative/defensive the writing is. And, I'm not sure why it has to be that way. --- Node kept doing its thing when Bun, Deno, etc. was all the rage. And I do respect Node team for trying to improve little by little. It's not an ideal runtime but, it is _trying_... and that's a positive story."
+        },
+        {
+          "by": "steve_adams_86",
+          "text": "I'm concerned about the Deno team's lack of comms and opaque roadmap, but this post mostly demonstrates the author's lack of awareness of what Deno brings to the table and why it's still a compelling runtime in ways Node is still not. There are valid reasons to choose both, valid reasons to be concerned about the direction of both, but most of the criticism here doesn't seem worthy of a blog…"
+        },
+        {
+          "by": "AgentME",
+          "text": "Deno is still an easy pick for me because of its built-in test-runner (deno test), linter (deno lint), and type checker (deno check). I've used many different npm packages for these things in previous projects and I have no idea what the new hotness and proper configuration is for all of these things in a new node project, so I really value the simplicity of Deno for it all. Also JSR and Deno for…"
+        }
+      ],
+      "image": "https://dbushell.com/images/articles/2026-10-03-deno-to-node.png"
+    },
+    {
+      "id": 49973598,
+      "url": "https://www.vivienhenz.com/common-lisp",
+      "hn": "https://news.ycombinator.com/item?id=49973598",
+      "title": "Why Common Lisp is now the best programming language",
+      "time": 1791255111,
+      "points": 261,
+      "depth": [
+        {
+          "text": "someone says **Common Lisp** helps AI code faster by cutting the **wait between changes**",
+          "tier": "simple"
+        },
+        {
+          "text": "A **live program** lets new functions replace old ones without a restart, while errors open a **debugger** with the stack and variables for the LLM to inspect. The author says macros help build a **product-specific language** and reports their apps were six to seven times shorter than Python versions.",
+          "tier": "substance",
+          "data": [
+            [
+              "Common Lisp apps compared with Python versions",
+              "six to seven times shorter"
+            ],
+            [
+              "Quicklisp projects",
+              "a couple thousand"
+            ],
+            [
+              "npm projects",
+              "millions"
+            ],
+            [
+              "Common Lisp standard unchanged since",
+              "1994"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: Lisp supporters say its live editing and macros fit LLM coding; skeptics say those advantages aren’t unique and don’t make one language best.",
+      "comment_count": 340,
+      "terms": [
+        "LLM",
+        "feedback loop",
+        "image-based",
+        "debugger",
+        "macro",
+        "domain language",
+        "ERP",
+        "context window",
+        "nREPL",
+        "borrow checker"
+      ],
+      "entities": [
+        "Common Lisp",
+        "Lisp",
+        "Python",
+        "Quicklisp",
+        "npm",
+        "Paul Graham",
+        "ANSI",
+        "JavaScript",
+        "Rust",
+        "Go",
+        "C",
+        "C++",
+        "Java",
+        "Clojure",
+        "Pi",
+        "JVM",
+        "nREPL",
+        "clj-reload",
+        "Integrant",
+        "shadow-cljs",
+        "CLJS",
+        "Autolith",
+        "go-joker",
+        "WASM",
+        "Smalltalk",
+        "Pharo",
+        "Racket",
+        "Julia",
+        "Elixir",
+        "Forth",
+        "TypeScript",
+        "Node",
+        "C#",
+        "Yahoo",
+        "Janet",
+        "guage"
+      ],
+      "comments": [
+        {
+          "by": "kelnos",
+          "text": "I feel like everyone has some sort of justification for why their pet language is now the best because LLMs can work in it better for a bunch of reasons. Javascript/Python is the best because there's so much code out there that the LLMs can train on, and LLMs can write lots of tests to make sure everything is correct. There's nothing to compile, so the LLM can iterate quickly. Rust is the best…"
+        },
+        {
+          "by": "clx75",
+          "text": "I have similar experiences in Clojure. I use Pi and created an extension which teaches the LLM how to start a JVM with a Clojure nREPL listening in it. Added a tool which lets the agent evaluate any Clojure form inside the JVM. Sprinkled the setup with clj-reload and now the agent is using the nREPL as if it were its second nature. What I like most is how fast testing goes: it modifies test code…"
+        },
+        {
+          "by": "artpar",
+          "text": "> because writing code used to be the slow part I don't understand how people have that stated as a fact. Coding was never the slow part. Neither pre-llm, nor now. How it needs to be done is software engineering. And that corresponds now to the \"thinking\" part of llms, so unless you are making the llm \"think in lisp\" its not useful. How would that even work. training data to be completely in lisp…"
+        },
+        {
+          "by": "alexjurkiewicz",
+          "text": "I think half the article talks about why CL is good because it can resume from an exception, and half the article talks about why DSLs are good. I think others have pointed out that most modern scripting languages can halt at exceptions without unwinding the stack. Python & Node both support this with core tooling. As for DSLs, they constrain the LLM which generally helps with code quality…"
+        },
+        {
+          "by": "peri-cl",
+          "text": "Lots of comments praising LLM's understanding of Common Lisp macros. I've seen them break badly at the macros-writing-macros level. I saw a current frontier model get so disoriented by one (a simple one!), it created something that expanded into a \"(let (((\". (That's an impossible count (3) of parentheses on the RHS—like a six-fingered hand)."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49976823,
+      "url": "https://phys.org/news/2026-10-nature-capacity-species-lost-vastly.html",
+      "hn": "https://news.ycombinator.com/item?id=49976823",
+      "title": "Nature's capacity to 'bounce back' when species are lost is vastly overestimated",
+      "time": 1791285111,
+      "points": 237,
+      "depth": [
+        {
+          "text": "nature's capacity to **bounce back** after **species are lost** is far smaller than people think",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter points to the North American cod fishery: after overfishing, it was regulated, but the cod population **never recovered** and stayed at a **much lower number**. Other fish and jellyfish had moved into the cod's niche.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say ecosystems don't return to their old state after species disappear; others say nature can bounce back, but only over a long timescale.",
+      "comment_count": 115,
+      "terms": [
+        "ecological niche",
+        "biodiversity",
+        "natural equilibrium",
+        "El Nino",
+        "re-wild"
+      ],
+      "entities": [
+        "Adam Curtis",
+        "All Watched Over by Machines of Loving Grace",
+        "Jurassic Park",
+        "Kunming-Montreal Global Biodiversity Framework",
+        "COP15"
+      ],
+      "comments": [
+        {
+          "by": "317070",
+          "text": "On this topic, I can never end recommending Adam Curtis's series \"All Watched Over by Machines of Loving Grace\", and on this topic of \"bounce back\" the second episode in that series. The concept of \"natural equilibrium\" is a 1950s cybernetic machine fantasy projected onto the natural world rather than an accurate reflection of ecological reality. We can model the world in the language of system…"
+        },
+        {
+          "by": "comrade1234",
+          "text": "I think what happened to the cod fishery off North America is really interesting. They overfished the cod then decided to regulate the fishery to let the population come back. But it never recovered - the cod population is stable but at a much lower number. Other 'stuff' (other fish species, jellyfish, etc) had moved into the environmental niche that the cod were in."
+        },
+        {
+          "by": "zhivota",
+          "text": "I had always assumed this, and my idea of nature bouncing back was more on the millions of years time scale as evolution would result in the refilling of empty ecological niches. All that said I still think we should just extinct disease carrying mosquitoes."
+        },
+        {
+          "by": "delichon",
+          "text": "> But what this model gives us is a precise, global picture: We can now predict the benefits biodiversity provides anywhere, making it even easier to recognize and take advantage of those benefits.\" Shouldn't they simultaneously study the costs of biodiversity? For example, our species left highly biodiverse jungles for less diverse plains, and our bodies are designed to follow and prey on large…"
+        },
+        {
+          "by": "MiguelVieira",
+          "text": "Here's a study from the southern Appalachian Mountains that found that even in forests that were logged over 100 years ago, species richness and abundance was still lower than in forests that had never been logged: https://www.researchgate.net/publication/248428489_Centuries..."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49975619,
+      "url": "https://gleam.run/news/gleam-doesnt-compile-to-erlang-source-anymore/",
+      "hn": "https://news.ycombinator.com/item?id=49975619",
+      "title": "Gleam doesn't compile to Erlang source anymore",
+      "time": 1791274100,
+      "points": 221,
+      "depth": [
+        {
+          "text": "Gleam now sends **Erlang abstract forms** to Erlang's compiler instead of generating **Erlang source**",
+          "tier": "simple"
+        },
+        {
+          "text": "Giacomo Cavalieri rewrote the code generator so the compiler can load this representation directly, skipping the front half of the Erlang compiler. The change **cuts build times** and makes **crash-report line numbers** match the original Gleam source.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: one commenter says “transpiler” isn't pejorative; another says it's fair to distinguish the old approach from the new one.",
+      "comment_count": 94,
+      "terms": [
+        "Erlang abstract forms",
+        "intermediate representation",
+        "transpiler",
+        "AST",
+        "incremental compilation"
+      ],
+      "entities": [
+        "Gleam",
+        "Erlang",
+        "Giacomo Cavalieri",
+        "Elixir",
+        "BEAM"
+      ],
+      "comments": [
+        {
+          "by": "zachrip",
+          "text": "Shout out to Giacomo's twitch streams. He has taught me about some features of Gleam, Rust, and on top of that he's just a very chill person. He takes time away from his focus to answer questions politely and without judgement. There are dozens of programming streams where the streamer forgets to leave their ego at the door and he is not one of them. I highly recommend following it."
+        },
+        {
+          "by": "0x69420",
+          "text": "to those curious, erlang abstract form[1] is the AST representation used by the erlang compiler/etc. per [1], you can see that it's canonically made of erlang terms, and you have easy access to routines for manipulating this representation from the standard library; it's really comfy when you need it! it's also the target elixir compiles down to, and the representation manipulated by parse…"
+        },
+        {
+          "by": "giancarlostoro",
+          "text": "Erlang is one of those runtimes I've loved since learning about it all the way back in 2008, but I never took time to learn the syntax, but Elixir and Gleam have had me fiddling with the Erlang VM over the years. Happy to see Gleam growing into maturity."
+        },
+        {
+          "by": "MichaelNolan",
+          "text": "Gleam is such a beautiful language. I wish I had the opportunity to use it more. If it could compile (transpile) to a native target like rust or go, it would be truly perfect."
+        },
+        {
+          "by": "tiffanyh",
+          "text": "The title is a bit misleading because one might imply that Gleam no longer compiles to something Erlang can use (not true). From the article: > Over the last few months Giacomo Cavalieri has entirely rewritten Gleam's Erlang code generator that has an entirely different design, and most notably, outputs a different format. Previously Gleam generated Erlang source code, now it generates Erlang…"
+        }
+      ],
+      "image": "https://gleam.run/images/preview/v1.19.png"
+    },
+    {
+      "id": 49950653,
+      "url": "https://smarthomescene.com/reviews/best-selling-zigbee-temperature-sensors-tested/",
+      "hn": "https://news.ycombinator.com/item?id=49950653",
+      "title": "Testing 12 different Zigbee temperature/humidity sensors",
+      "time": 1791088246,
+      "points": 196,
+      "depth": [
+        {
+          "text": "someone compared a dozen **temperature and humidity sensors** and checked how they did **in a fridge**",
+          "tier": "simple"
+        },
+        {
+          "text": "The reviewer used a calibrated reference; **Paulie and Carmela** were his temperature picks, while **Tony, Chris, Paulie, Carmela and Meadow** led for humidity.",
+          "tier": "substance",
+          "data": [
+            [
+              "temperature-group average deviation",
+              "0.2°C"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say Aqara sensors lose connection or run through batteries quickly; others say they work fine once the Zigbee network is solid.",
+      "comment_count": 106,
+      "terms": [
+        "Zigbee",
+        "calibrated reference",
+        "LQI",
+        "IP65",
+        "Matter",
+        "Thread"
+      ],
+      "entities": [
+        "Aqara",
+        "Sonoff",
+        "Tuya",
+        "ThirdReality",
+        "Zemismart",
+        "Moes",
+        "eWeLink",
+        "Zigbee2MQTT",
+        "Home Assistant",
+        "Xiaomi",
+        "SMLight",
+        "IKEA",
+        "Matter",
+        "Thread",
+        "RuuviTag Pro",
+        "Shelly",
+        "Apple"
+      ],
+      "comments": [
+        {
+          "by": "rpcope1",
+          "text": "One of the things I never see in reports like this is what sensor is being used (is it a Bosch unit? Sensiron? Plain thermistor? Pixies and Fairy Dust? Some bodged together 1wire deal?) and what MCU (Nordic? Espresif? Microchip? Something else?) as those have a huge bearing on what the sensor is actually capable of, and would say a lot about precision/accuracy and battery life."
+        },
+        {
+          "by": "DocG",
+          "text": "Sadly it's missing Ikea one. They are cheap and most importantly, use AAA standard batteries instead of the coin cell type. Ikea selle rechargable ones for really cheap additionally."
+        },
+        {
+          "by": "X-Istence",
+          "text": "I got a bunch of the Aqara WSDCGQ11LM's around my house, and every single one after 3-6 months the battery is dead. The Zigbee network in my house is strong, and stable and yet they keep running out of battery. Once out of battery, replacing the battery means you need to re-pair them to the network since they don't rejoin automatically. Thankfully Home Assistant sees it as the same device, but it…"
+        },
+        {
+          "by": "Gigachad",
+          "text": "I put the Ikea Thread sensor in my fridge a while back and it's been a lot more useful than I expected. My fridge had been periodically getting too cold or too hot, I suspect the issue is that the captive touch buttons that control the temp get occasionally bumped, changing the set temperature. With the thread sensor I can have Home Assistant send me an alert when the fridge leaves the safe zone…"
+        },
+        {
+          "by": "marsbars241",
+          "text": "The nicknames for the sensors is really annoying. I could only get one of the dots to actually tell me anything, and scrolling back and forth for the key suuuucks"
+        }
+      ],
+      "image": "https://smarthomescene.com/wp-content/uploads/2026/08/zigbee-temperature-sensors-compared-and-tested-hero-smarthomescene.jpg"
+    },
+    {
+      "id": 49979306,
+      "url": "https://www.autodidacts.io/vibecoding-isnt-as-fun-as-writing-code-by-hand/",
+      "hn": "https://news.ycombinator.com/item?id=49979306",
+      "title": "Vibecoding isn't as fun as writing code by hand",
+      "time": 1791297902,
+      "points": 163,
+      "depth": [
+        {
+          "text": "someone says **AI-assisted coding** gets projects built faster, but **writing code by hand** feels **more fun**",
+          "tier": "simple"
+        },
+        {
+          "text": "Examples include a **wildfire warning system** that detected the first frame of smoke in ignition footage and a **pitch-training app** they’d wanted for about a decade. They were pleased with the results, but the process **wasn’t fun** like writing their little scrapers.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say AI takes away the satisfaction of solving problems by hand; others say it makes long-imagined projects possible or leaves them more time for enjoyable work.",
+      "comment_count": 208,
+      "terms": [
+        "vibecoding",
+        "scraper",
+        "bookmarklet",
+        "prediction market",
+        "SQLite",
+        "feedback loop",
+        "DevOps",
+        "boilerplate",
+        "agentic engineering",
+        "Type II fun"
+      ],
+      "entities": [
+        "The Autodidacts",
+        "Hacker News",
+        "Taylor Troesh",
+        "Discuss on HN",
+        "Wallabag",
+        "Party Market",
+        "Lumo",
+        "Pyronear",
+        "Nvidia",
+        "Xeon",
+        "Kobo",
+        "SQLite",
+        "Python",
+        "Bash",
+        "Golang",
+        "Rust",
+        "llama-server",
+        "Phind",
+        "Clod Masterpiece 200",
+        "ChatGPT",
+        "AlphaZero",
+        "C",
+        "ClockStack",
+        "H.264",
+        "RTMP",
+        "Blue Apron",
+        "CloudFormation"
+      ],
+      "comments": [
+        {
+          "by": "tom_",
+          "text": "It would probably have been safer for the author to explicitly point out that this is true for them specifically, rather than a general rule, because this way they run the risk of never hearing the end of it."
+        },
+        {
+          "by": "nearlyepic",
+          "text": "Boy look at all these six month old accounts that have been programming for decades and just love vibe coding!"
+        },
+        {
+          "by": "mglvsky",
+          "text": "My current take: at the moment, vibecoding is much fun as being IT manager. YMMV, not so fun for me being human/robot proxy constantly, there is \"review dilemma\" with AI tools: review everything AI does - getting burned out quickly skip review what AI does - getting wake up call in a weekends' nights and getting burned out quickly as well"
+        },
+        {
+          "by": "CharlieDigital",
+          "text": "Agentic engineering feels like DevOps to me rather than coding. I dislike DevOps because the feedback loop is quite long with DevOps and it's very declarative rather than imperative. Proper agentic engineering is like that; you don't actually build the thing with the agent, you build the things around the agent that's building the thing. The skills, the MCP connections, the auth flows and…"
+        },
+        {
+          "by": "godshatter",
+          "text": "I've been programming for fun for decades, at work and at home. I have no desire to have someone or something else write my code for me. However, I've managed to convince ChatGPT that I like to be mentored in a way that allows me to build intuition instead of just having the answer given to me (or worse) the code to build it. I'm building something like AlphaZero in C in my own way without any…"
+        }
+      ],
+      "image": "https://www.autodidacts.io/content/images/size/w1200/2026/08/ai-vibecoding-vs-coding-by-hand-thrill-learning-fun-curve-1.png"
+    },
+    {
+      "id": 49972607,
+      "url": "https://www.thedrive.com/news/high-diesel-prices-bankrupted-16-trucking-companies-in-just-30-days",
+      "hn": "https://news.ycombinator.com/item?id=49972607",
+      "title": "High Diesel Prices Bankrupted 16 Trucking Companies in Just 30 Days",
+      "time": 1791246297,
+      "points": 158,
+      "depth": [
+        {
+          "text": "high diesel costs helped push **16 trucking companies** into **bankruptcy** in a 30-day stretch",
+          "tier": "simple"
+        },
+        {
+          "text": "The companies ranged from **single-operator outfits** to operators with dozens of vehicles. **Four** were based in Texas, and one was a Florida-based Amazon delivery contractor that filed for Chapter 11 protection in September.",
+          "tier": "substance",
+          "data": [
+            [
+              "trucking companies",
+              "16"
+            ],
+            [
+              "time period",
+              "30 days"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say 16 filings means little without a monthly baseline; others say the fuel shock still hurts carriers already on thin margins.",
+      "comment_count": 162,
+      "terms": [
+        "Chapter 7",
+        "Chapter 11",
+        "fuel surcharge",
+        "LTL"
+      ],
+      "entities": [
+        "The Drive",
+        "Abbott",
+        "Daniel Kline",
+        "TheStreet.com",
+        "Amazon",
+        "Google"
+      ],
+      "comments": [
+        {
+          "by": "thelastgallon",
+          "text": "Trucking is already subsidized because they don't pay their fair share of costs. Road damage is proportional to the 4th power: https://en.wikipedia.org/wiki/Fourth_power_law Roads are entirely subsidized by people. Commercial trucks should bear the fair costs to make it equitable. Businesses will have the greatest incentive to cut costs and improve logistics. And we need to talk about the…"
+        },
+        {
+          "by": "celestialcheese",
+          "text": "This is a meaningless stat without comparison. There are nearly 500k trucking companies operating in the US, with ~91% operating 10 trucks or fewer. 16 companies seems like standard churn (if not a significantly lower than what I'd expect in a low margin business like trucking)."
+        },
+        {
+          "by": "simondotau",
+          "text": "I did a quick check to see how unusual this is. According to LLM-assisted research on actual U.S. trucking companies filing Chapter 7 or Chapter 11 (rather than carriers simply shutting down) the number isn't especially remarkable. 16 trucking bankruptcies in 30 days looks elevated, but it's not unprecedented. FreightWaves counted more than 20 trucking-related Chapter 7/11 filings in another…"
+        },
+        {
+          "by": "LazyMans",
+          "text": "\"Some were small, single-operator outfits. Others were larger, operating dozens of vehicles.\" Arn't there hundreds of thousands of owner-operators? I don't doubt high costs drive some people out of business, but this seems insignificant to report on. An engine failure could bankrupt a poorly run operator too. What are the typical numbers?"
+        },
+        {
+          "by": "ectospheno",
+          "text": "Aren't there several orders of magnitude more trucking companies in the US than 16?"
+        }
+      ],
+      "image": "https://www.thedrive.com/wp-content/uploads/2026/10/GettyImages-22952361131.jpg?w=1200"
+    },
+    {
+      "id": 49951218,
+      "url": "https://github.com/PowderworksCode/headstart",
+      "hn": "https://news.ycombinator.com/item?id=49951218",
+      "title": "Emitting metadata early makes building/checking Rust up to twice as fast",
+      "time": 1791095217,
+      "points": 155,
+      "depth": [
+        {
+          "text": "someone found a way to start **Rust crates** earlier, making builds **up to twice as fast**",
+          "tier": "simple"
+        },
+        {
+          "text": "Headstart makes rustc write an **early metadata file** as soon as a crate's interface is checked, so cargo can start dependent crates while their function bodies are still being checked. Across 13 real projects on 16-core machines, clean builds were **up to 54% faster** for cargo check and **up to 42% faster** for cargo build; none was slower.",
+          "tier": "substance",
+          "data": [
+            [
+              "cargo check, 13 real projects",
+              "up to 54%"
+            ],
+            [
+              "cargo build, 13 real projects",
+              "up to 42%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters call it an easy win and hope it reaches the mainline compiler; a cautious commenter asks how it handles cases where dependent crates need function bodies checked first.",
+      "comment_count": 42,
+      "terms": [
+        "crate",
+        "metadata",
+        "interface",
+        "type-checking",
+        "rustc",
+        "cargo",
+        "impl Trait",
+        "Send/Sync",
+        "async fn"
+      ],
+      "entities": [
+        "Headstart",
+        "Rust",
+        "rustc",
+        "Cargo",
+        "rust-analyzer",
+        "zed",
+        "bevy",
+        "lemmy",
+        "polars"
+      ],
+      "comments": [
+        {
+          "by": "WalterGR",
+          "text": "There’s an interesting comment thread (including potential downsides) about this technique in the submission for “How to speed up the Rust compiler in September 2026” from a couple days ago: https://news.ycombinator.com/item?id=49923594"
+        },
+        {
+          "by": "SkiFire13",
+          "text": "I wonder how this works when a crate's type checking does indeed depend on the bodies of one of its dependency. For example `-> impl Trait` return types famously leak the `Send`/`Sync`-ness of the type, so for type checking their uses you first need to resolve the concrete type behind and hence type checking the body of the function, which seems to go against the core idea of this proposal. I…"
+        },
+        {
+          "by": "swiftcoder",
+          "text": "Excited to see if there is a path to getting this in the mainline compiler"
+        },
+        {
+          "by": "scoopr",
+          "text": "Huh, I kinda thought something like this was already being done, but perhaps it was a bit later stage. Neat! A kind of related shower thought I had, could rustc not instantiate generic methods, but write out what it expects to find (std::Vec<String>::push), and a separate build process listens to these, but makes sure already built ones are not built multiple times from the whole build. I don’t…"
+        },
+        {
+          "by": "hmokiguess",
+          "text": "So this is like a cache? Reminded me of https://turborepo.dev for TS, is it a similar concept?"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/4353674ed94d687e3d9d567eecdf4ca25de7e0a887437c5cda054f8c7757c7c5/PowderworksCode/headstart"
+    },
+    {
       "id": 49971846,
       "url": "https://www.niemanlab.org/2026/10/chatgpt-is-adding-real-cartoonists-signatures-to-fake-new-yorker-cartoons/",
       "hn": "https://news.ycombinator.com/item?id=49971846",
@@ -1358,8 +2364,91 @@
     }
   ],
   "glossary": {
-    "right of publicity": "A legal protection against someone using your name or identity without permission.",
+    "CyberGym-E2E": "A test of how well a model handles cybersecurity tasks.",
+    "Dense 200": "A test used to measure how well a model understands images and where things are in them.",
+    "Vals Index": "A score used to compare models across different measures.",
+    "Pareto frontier": "A set of choices where you can't get better on one measure without giving something up on another.",
+    "visual grounding": "How well a model can connect things in an image to where they are.",
+    "open-weight": "Describes an AI whose learned settings are available for others to download and use.",
+    "inference": "When an AI uses what it learned to answer or act, instead of being trained.",
+    "CZK": "Czech koruna: the currency used in Czechia.",
+    "net loss": "When a company spends more than it earns over a reporting period.",
+    "ROE": "Return on Equity: a measure of how much profit a company earns compared with its owners’ stake.",
+    "EBITDA": "Earnings Before Interest, Taxes, Depreciation and Amortization: a way to compare company results before counting several costs.",
+    "IDE": "Integrated Development Environment: an app that brings coding and other development tools together.",
     "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "CI/CD": "Continuous Integration and Continuous Delivery or Deployment: ways to automatically check code changes and get software ready to release.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "open weights": "The model's learned settings are available for people to download and run themselves.",
+    "parameters": "Learned values inside a model that shape the answers it gives.",
+    "multimodal": "Able to work with more than one kind of input, such as text and images.",
+    "agentic workflows": "Tasks where an AI gathers information, uses tools, and completes a job across several steps.",
+    "neutrino": "A tiny particle that is very hard to detect because it can pass through huge amounts of matter without hitting anything.",
+    "IceCube Neutrino Observatory": "A neutrino detector that uses a cubic kilometer of ice and sensors to catch rare neutrino interactions.",
+    "borehole": "A deep hole drilled into ice to place detectors.",
+    "optical detector": "A light-sensing device; IceCube uses these to catch signs of neutrino interactions.",
+    "Cherenkov radiation": "A faint blue glow that appears when certain particles travel through ice faster than light does in ice.",
+    "astrophysical origin": "Coming from objects or events in space.",
+    "SQL": "A language people use to ask a database for information.",
+    "rc": "Release candidate: a near-finished version shared before the final release.",
+    "query planner": "A part of a data tool that works out an efficient order for the steps needed to fetch or change data.",
+    "agentic AI": "AI that can take steps toward a task instead of only answering a question.",
+    "zero-day flaw": "A security hole that attackers can use before its maker has had a chance to fix it.",
+    "root access": "Permission to control nearly everything on a device.",
+    "Full Disk Access": "A Mac permission that lets an app reach files it would otherwise be blocked from opening.",
+    "VM": "Virtual machine: a computer that runs inside another computer.",
+    "runtime": "The software that runs a program while it is being used.",
+    "static site generator": "A tool that turns website files into finished pages before a visitor opens them.",
+    "node:fs": "Node’s file system API, used to work with files and folders.",
+    "adapter": "A piece of software that lets one tool work with another.",
+    "feedback loop": "The time between changing code and seeing whether it works.",
+    "image-based": "A setup where the running program stays in memory and can be changed without restarting it.",
+    "debugger": "A tool that pauses a program so you can see what it was doing when it stopped.",
+    "macro": "A tool that lets programmers add language features or transform code before it runs.",
+    "domain language": "A language with words and rules built for one particular kind of work.",
+    "ERP": "Enterprise resource planning: software a company uses to handle parts of its day-to-day work.",
+    "context window": "The amount of text and information an AI can take into account at one time.",
+    "nREPL": "A way to send code to a running Clojure program and see the results without restarting it.",
+    "borrow checker": "The Rust tool that checks code won’t use a value after it’s gone or let it be changed unsafely.",
+    "ecological niche": "The place a species fills in its surroundings, including what it uses to live.",
+    "biodiversity": "The variety of living things in a place.",
+    "natural equilibrium": "The idea that nature tends to settle into a stable balance.",
+    "El Nino": "A recurring change in Pacific Ocean conditions that can affect weather around the world.",
+    "re-wild": "Restore an area so wild plants and animals can live there again.",
+    "Erlang abstract forms": "A structured form of Erlang code that the Erlang compiler can read directly.",
+    "intermediate representation": "A middle format a compiler uses to pass code from one step to another.",
+    "transpiler": "A compiler that turns a program into another human-readable format, such as source code.",
+    "AST": "Abstract Syntax Tree: a tree-shaped version of a program that a computer can inspect and work through.",
+    "incremental compilation": "Rebuilding only the parts of a program affected by changes, rather than starting over.",
+    "Zigbee": "A low-power wireless system that lets smart-home devices talk to each other.",
+    "calibrated reference": "A trusted measuring device used as a yardstick for checking another sensor's readings.",
+    "LQI": "Link Quality Indicator: a number that gives a rough idea of how well a wireless device is connected.",
+    "IP65": "A rating for a device that can keep out dust and handle water jets.",
+    "Matter": "A smart-home standard that helps devices from different brands work together.",
+    "Thread": "A low-power wireless network that smart-home devices can use to communicate.",
+    "vibecoding": "Using AI to make software from requests instead of writing each line yourself.",
+    "scraper": "A small program that automatically collects information from a website.",
+    "bookmarklet": "A browser bookmark that runs a small tool on the page you’re viewing.",
+    "prediction market": "A game where people make guesses about future events, and those guesses have a price.",
+    "SQLite": "A small database that can be stored in a single file.",
+    "DevOps": "The work of getting software released and keeping it running.",
+    "boilerplate": "Repetitive starter code you need before getting to the interesting parts.",
+    "agentic engineering": "Setting up and overseeing an AI that carries out software work for you.",
+    "Type II fun": "An experience that’s hard while it’s happening but satisfying to look back on.",
+    "Chapter 7": "A US bankruptcy process where a business closes and its assets are sold to repay debts.",
+    "Chapter 11": "A US bankruptcy process that lets a business try to keep operating while it reorganizes its debts.",
+    "fuel surcharge": "An extra charge on a shipping bill meant to cover changing fuel costs.",
+    "LTL": "Less-than-truckload: shipping where one truck carries freight for multiple customers.",
+    "crate": "A reusable package of Rust code that you can add to a project.",
+    "metadata": "Information describing stored data, like table names or row counts, rather than the records themselves.",
+    "interface": "The names and details other code can use from a crate, without needing its inner workings.",
+    "type-checking": "Checking that code uses values and functions in ways Rust allows.",
+    "rustc": "Rust's compiler, the program that turns Rust code into software.",
+    "cargo": "The command-line tool used to check and build Rust projects.",
+    "impl Trait": "Rust syntax that lets a function promise a kind of result without naming its exact kind.",
+    "Send/Sync": "Rust labels for whether a value can safely move between threads or be shared across them.",
+    "async fn": "A Rust function that can pause while waiting, letting the program work on something else in the meantime.",
+    "right of publicity": "A legal protection against someone using your name or identity without permission.",
     "scraped": "Copied from websites, often automatically, to gather material for training AI.",
     "JavaScript": "A programming language; here, it lets an agent combine tool calls.",
     "SVG": "Scalable Vector Graphics: a picture format that stays sharp when resized.",
@@ -1399,14 +2488,12 @@
     "population": "The collection of separate trials used to estimate how a change affects training.",
     "gradient": "A signal that tells training which small changes are likely to make the model less wrong.",
     "loss": "A score for how wrong a model’s answer is; training tries to lower it.",
-    "open-weight": "Describes an AI whose learned settings are available for others to download and use.",
     "Mixture-of-Experts": "A model made of specialist parts that only uses some of them for each request.",
     "agentic": "Describes AI that chooses steps and acts toward a task, rather than only answering a question.",
     "inference compute": "The computing resources used when a trained model generates answers.",
     "rollout": "A run where an AI tries a task and its actions are recorded for training.",
     "red-teaming": "Deliberately testing a system for weaknesses before someone else finds them.",
     "agent": "An AI system that can take steps and use tools to get a task done, not just answer questions.",
-    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
     "sandbox": "A separate, contained space where software can be tested without affecting the rest of a computer or system.",
     "proxy": "A go-between that gets information from another website on someone else's behalf.",
     "Etherpad": "A public note-taking tool the Wikimedia Foundation hosts for the community.",
@@ -1428,7 +2515,6 @@
     "endemic": "A disease is endemic in a place when it is regularly found there.",
     "pneumonic plague": "A form of plague that affects the lungs and can spread between people through respiratory droplets.",
     "TCC": "Transparency, Consent, and Control: macOS's permission system, which asks before apps can reach protected things like the camera or files.",
-    "Full Disk Access": "A Mac permission that lets an app reach files it would otherwise be blocked from opening.",
     "headless Mac": "A Mac set up to run without a screen or keyboard attached, and controlled remotely.",
     "SSH tunneling": "Secure Shell tunneling: a way to reach a service through a protected remote connection instead of exposing its port directly to the internet.",
     "point release": "A smaller software update that comes after a main release, often used to add fixes.",
