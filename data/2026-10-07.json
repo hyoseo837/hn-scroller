@@ -1,0 +1,739 @@
+{
+  "date": "2026-10-07",
+  "cards": [
+    {
+      "id": 49984923,
+      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+      "hn": "https://news.ycombinator.com/item?id=49984923",
+      "title": "Sharing AI progress in mathematics",
+      "time": 1791325041,
+      "points": 729,
+      "depth": [
+        {
+          "text": "OpenAI shared **AI proofs** for long-standing math problems, including the **Unique Games Conjecture**",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter points to a proof of **Barnette's Conjecture**; another says there's no Lean proof for it and they're still digesting the paper. The GitHub description says each result used **3 hours** of ChatGPT Pro thinking compute on average.",
+          "tier": "substance",
+          "data": [
+            [
+              "compute per result (average)",
+              "3 hours"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some call the results a huge mathematical breakthrough; others ask whether they have practical uses or worry about AI's effect on researchers.",
+      "comment_count": 659,
+      "terms": [
+        "Unique Games Conjecture",
+        "Lean proof"
+      ],
+      "entities": [
+        "OpenAI",
+        "ChatGPT",
+        "Lean",
+        "Barnette's Conjecture",
+        "Unique Games Conjecture"
+      ],
+      "comments": [
+        {
+          "by": "jboggan",
+          "text": "I was a graph theory junkie long ago and even moved to Budapest for awhile to study among the greats. While I was there I started working on Barnette's Conjecture which came to occupy my thoughts over the next 24 years of my life, on and off as I worked in many different fields. Last summer I even thought for a few days that I had actually solved it. But it's supposedly proven here - problem 180…"
+        },
+        {
+          "by": "spatalo",
+          "text": "Beyond the reasoning capabilities of the unreleased model and that they can run a large number of agents in parallel, what makes me curious is that the writing of the proofs is quite human-readable. This is in contrast with the scientific text produced by the ChatGPT available to us, which writes horribly in a way that no human would write. One tell-tale is that they constantly attempt to be…"
+        },
+        {
+          "by": "winfieldchen",
+          "text": "> We prove the Unique Games Conjecture The Unique Games Conjecture (sorry, \"Unique Games Theorem\" now!) is huge. It was a very significant pillar supporting many of the limits of the polynomial-time approximation algorithms in the graduate-level randomized and approximate algorithms course I took in theoretical computer science. Textbooks will have to be re-written. Here is an explainer…"
+        },
+        {
+          "by": "xanderlewis",
+          "text": "As Kevin Buzzard recently said: > In a 2020 piece in the Notices of the AMS, I asked the following question: “If one human had an understanding of all of modern pure mathematics simultaneously, how much further would they immediately be able to see?” Six years later we are beginning to understand the answer to this question."
+        },
+        {
+          "by": "NotOscarWilde",
+          "text": "As a TCS/scheduling person, this one is definitely of lesser importance than UGC, but it has been an open problem since the book of Garey and Johnson in 1979: A Polynomial-Time Algorithm for Three-Machine Unit-Job Scheduling [1] Since some people talk about small numbers that pop up in integer multiplication results, here a completely different number appears: Theorem 1.1. Let an explicitly…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49984025,
+      "url": "https://developers.openai.com/api/docs/guides/decisions",
+      "hn": "https://news.ycombinator.com/item?id=49984025",
+      "title": "Decisions API is in public beta",
+      "time": 1791320245,
+      "points": 228,
+      "depth": [
+        {
+          "text": "OpenAI put a **faster decision tool** in **public beta** for apps that classify text or images",
+          "tier": "simple"
+        },
+        {
+          "text": "Questions can ask for a **probability**, a **choice** from a fixed set, or a score against a rubric. OpenAI says it returns these about **10x faster** than the Responses API.",
+          "tier": "substance",
+          "data": [
+            [
+              "speed vs. Responses API",
+              "10x faster"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some point to its speed and image input as useful advantages; others say it is slower, pricier, or less capable than Jev and local models.",
+      "comment_count": 104,
+      "terms": [
+        "API",
+        "beta",
+        "predicate",
+        "rubric",
+        "calibrated"
+      ],
+      "entities": [
+        "OpenAI",
+        "Decisions API",
+        "Responses API",
+        "Jev",
+        "Mercury Decide",
+        "OpenRouter",
+        "Anthropic",
+        "AWS Bedrock",
+        "Hugging Face"
+      ],
+      "comments": [
+        {
+          "by": "simonw",
+          "text": "curl https://api.openai.com/v1/decisions \\\n-H \"Authorization: Bearer $(llm keys get openai)\" \\\n-H \"Content-Type: application/json\" \\\n--data '\n{\n\"model\": \"gpt-6-luna\",\n\"input\": [{\n\"role\": \"user\",\n\"content\": [\n{\"type\": \"input_text\", \"text\": \"I am angry about the new product feature\"}\n]\n}],\n\"questions\": [{\n\"type\": \"predicate\",\n\"name\": \"complaint\",\n\"instructions\": \"Is this a complaint?\"\n}, {\n\"type\"…"
+        },
+        {
+          "by": "TSiege",
+          "text": "The response to Jev should be the nail in the coffin over whether or not the AI business is a commodity market. Out of no where Jev appeared as the next round of the price wars. Jev showed the value of System One models. A fast yes/no/confidence score not only is cheaper but also often all people want. Open source versions flood hugging face and now the big players are giving up a potentially big…"
+        },
+        {
+          "by": "isoprophlex",
+          "text": "Boy am I glad we're already dropping the \"noul\" term for a binary decision"
+        },
+        {
+          "by": "Topfi",
+          "text": "Ran my decisions evals (still rudimentary, less than 600 calls (UI component selection, chat charting, tag selection, PKM stuff)) on this via OpenRouter against Jev and Mercury Decide. Jev because it has replaced my mt0 efforts by sheer force of affordability (more importantly, the limits running on a MacBook Neo bring even after vocab pruning and quant insanity) and Mercury Decide because I do…"
+        },
+        {
+          "by": "nico",
+          "text": "Just going to drop this here: https://jeffyclassify.com/ Open source classifier models you can run and train locally on CPU"
+        }
+      ],
+      "image": "https://developers.openai.com/og/api/docs/guides/decisions.png"
+    },
+    {
+      "id": 49983703,
+      "url": "https://arstechnica.com/tech-policy/2026/10/paramount-completes-111b-warner-merger-creating-skydance-behemoth/",
+      "hn": "https://news.ycombinator.com/item?id=49983703",
+      "title": "Paramount Skydance has completed its $111B merger with Warner Bros. Discovery",
+      "time": 1791318827,
+      "points": 224,
+      "depth": [
+        {
+          "text": "Paramount and Warner Bros. Discovery have **merged** to form the new company, **Skydance**",
+          "tier": "simple"
+        },
+        {
+          "text": "The **$111 billion** deal brings together two of the **largest movie studios**, Paramount+, HBO Max, CBS, CNN, **live sports**, and a programming library. Supreme Court Justice Elena Kagan rejected a last-ditch effort to block it.",
+          "tier": "substance",
+          "data": [
+            [
+              "merger value",
+              "$111 billion"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: critics see more media consolidation and less competition; others say viewers have plenty of entertainment alternatives.",
+      "comment_count": 358,
+      "terms": [
+        "antitrust",
+        "sovereign wealth fund",
+        "non-voting shares"
+      ],
+      "entities": [
+        "Paramount",
+        "Warner Bros. Discovery",
+        "Skydance",
+        "Paramount+",
+        "HBO Max",
+        "CBS",
+        "CNN",
+        "Elena Kagan"
+      ],
+      "comments": [
+        {
+          "by": "simonw",
+          "text": "Nilay Patel: https://www.theverge.com/podcast/1004286/senator-adam-schiff... > One of the longest-running tropes at The Verge is that a workable antitrust policy for the United States would be simply to forbid companies from buying Time Warner because it has never worked and it may never work again, and that we should just pass one law. Checks out: Jan 11, 2001: AOL and Time Warner merged to…"
+        },
+        {
+          "by": "slowin",
+          "text": "This is more consolidation of US media under extremely pro-Israel ownership. I don't think this will work out as well as they hope (look at CBS -- Bari Weiss has driven it into the ground) but it's scary how much US media a foreign adversary now has direct editorial control over, including both \"news\" and \"entertainment\", including TikTok…"
+        },
+        {
+          "by": "dkobia",
+          "text": "A behemoth indeed but the numbers also tell an interesting story. For TV screen share, Youtube has ~13% of total US viewing time vs ~6% for Paramount/Warner. They also go into this merger with staggering debt which does not bode well."
+        },
+        {
+          "by": "caned",
+          "text": "It's never been a better time to start consuming less. Let's drive that demand way, way down."
+        },
+        {
+          "by": "bigwheels",
+          "text": "Can this be undone in the future if folks realize it was too monopolistic and it was in fact an anti-trust violation? I wonder if David Ellison is a fun guy IRL."
+        }
+      ],
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/david-ellison-1152x648-1791303833.jpg"
+    },
+    {
+      "id": 49977531,
+      "url": "https://signoregalilei.com/2026/09/27/whats-earths-dominant-species-by-mass/",
+      "hn": "https://news.ycombinator.com/item?id=49977531",
+      "title": "What's Earth's dominant species by mass?",
+      "time": 1791290403,
+      "points": 201,
+      "depth": [
+        {
+          "text": "**Black Spruce** and **Dahurian Larch** could be Earth's biggest species by mass",
+          "tier": "simple"
+        },
+        {
+          "text": "The article estimates **over 11 billion tons** of Black Spruce in Canada and **at least 8.4 billion tons** of Dahurian Larch in Russia. It says carbon in Black Spruce alone is nearly three times that in all animals combined.",
+          "tier": "substance",
+          "data": [
+            [
+              "Black Spruce in Canada",
+              "over 11 billion tons"
+            ],
+            [
+              "Dahurian Larch in Russia",
+              "at least 8.4 billion tons"
+            ],
+            [
+              "Black Spruce carbon compared with all animals",
+              "nearly 3 times"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 136,
+      "terms": [
+        "biomass",
+        "carbon mass",
+        "perennial",
+        "clonal colony"
+      ],
+      "entities": [
+        "Black Spruce",
+        "Dahurian Larch",
+        "Canada's National Forest Inventory"
+      ],
+      "comments": [
+        {
+          "by": "GMoromisato",
+          "text": "Imagine you're an alien explorer. You visit Earth 25,000 krugs ago (51,304 Earth-years ago) and see a pretty standard ecological milieu: a wide variety of species, each adapted to its own little environment, no different than it was 50 million krugs before. You return today and see that one previously unremarkable ape-like species has spread out to all parts of the world and is even orbiting in…"
+        },
+        {
+          "by": "ortusdux",
+          "text": "Facts I try not to think about: - More than 2/3rds of the world's avian biomass is poultry - There are more Panda Expresses than pandas ( edit - in the wild)"
+        },
+        {
+          "by": "niccl",
+          "text": "In some book by P G Wodehouse (inventor of Jeeves the butler), one character says (out of nowhere) that all the humans on the planet could fit in a cubic hole 1/2 mile on each side. It took me a little while to convince myself that was true. It still is, apparently"
+        },
+        {
+          "by": "gumby",
+          "text": "Famously, when asked about a god, J.B.S. Haldane allegedly said that if there is a god or gods, they must have an “inordinate fondness for beetles.”"
+        },
+        {
+          "by": "jongjong",
+          "text": "It's funny because when I read that title, first thought I had was \"Whales\" but then my second thought was \"Probably not; too few of them in number.\" But when I saw the photo of the krill, which is whales' main food source, I was like \"AHA!\" But no, cattle it is... Though I guess this is probably a more recent development. Without humans, there would surely be a lot fewer cows."
+        }
+      ],
+      "image": "https://signoregalilei.com/wp-content/uploads/2026/09/Larix_gmelinii0.jpg"
+    },
+    {
+      "id": 49985664,
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "hn": "https://news.ycombinator.com/item?id=49985664",
+      "title": "AnyPS5: Port PS5 binaries to PC without emulation (87% system libraries mapped)",
+      "time": 1791329288,
+      "points": 192,
+      "depth": [
+        {
+          "text": "someone built a tool to run **PS5 game programs** on Linux and Windows **without emulation**",
+          "tier": "simple"
+        },
+        {
+          "text": "The headline’s **87%** refers to functions known to the project so far, not every PS5 system function. Its relinker converts executables to the target system’s native format; **Dreaming Sarah** runs at a stable **60 fps** on the listed PC hardware.",
+          "tier": "substance",
+          "data": [
+            [
+              "system-library functions known",
+              "87%"
+            ],
+            [
+              "Dreaming Sarah frame rate",
+              "60 fps"
+            ],
+            [
+              "tested PC hardware",
+              "GTX 1050 Ti / i5-7500 3.4GHz"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see game preservation and less vendor lock-in; others worry console makers could lean harder on cloud gaming or that games could be ripped on day one.",
+      "comment_count": 151,
+      "terms": [
+        "relinker",
+        "system PRX libraries",
+        "emulation",
+        "dynamic linking",
+        "SPIR-V",
+        "Vulkan",
+        "x86-64",
+        "GNM command buffers"
+      ],
+      "entities": [
+        "AnyPS5",
+        "PS5",
+        "Linux",
+        "Windows",
+        "Dreaming Sarah",
+        "Vulkan",
+        "SPIR-V",
+        "Spirv-Tools",
+        "Sony",
+        "Nintendo",
+        "GTA 6",
+        "WINE",
+        "Yuzu",
+        "Ryujinx"
+      ],
+      "comments": [
+        {
+          "by": "weakened_malloc",
+          "text": "Unfortunately, this is only going to push Sony/Nintendo/MS more towards cloud gaming. AI enabling these amazing reverse engineering efforts and democratizing access to gaming is amazing, and preventing vendor lock in is always something I'll support. However it's hard not to see them pushing gamers towards needing to play games on cloud only, preventing these kind of things happening."
+        },
+        {
+          "by": "manlymuppet",
+          "text": "I have been in the PlayStation jail breaking scene for a while, and my God is this news. Despite using AI all the time for other engineering projects, I never considered the console scene as something to be explored. If this ends up allowing me to play GTA 6 on my PC within a few months of release I will be euphoric."
+        },
+        {
+          "by": "someperson",
+          "text": "It's always nice to have local git clone backups/mirrors of these projects because they may eventually be taken down through legal threats eg, Yuzu and Ryujinx. Eg.\nhttps://torrentfreak.com/nintendo-wipes-out-400-switch-emula..."
+        },
+        {
+          "by": "lewelove",
+          "text": "You will own everything and be happy."
+        },
+        {
+          "by": "dukodk",
+          "text": "Are we gonna get a PC port of GTA 6 on day one?"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/c2fd3cc094a5aa508598d84d8b153e7e2044b0df22e8f8c7c93d612e467dd62a/boykopovar/AnyPS5"
+    },
+    {
+      "id": 49972730,
+      "url": "https://github.com/eolix/photosuite/issues/77",
+      "hn": "https://news.ycombinator.com/item?id=49972730",
+      "title": "Photopea creator weighs in on Photosuite project",
+      "time": 1791247304,
+      "points": 166,
+      "depth": [
+        {
+          "text": "Photopea's creator says **PhotoSuite reused his code** and presented the project as **original work**",
+          "tier": "simple"
+        },
+        {
+          "text": "He says a project like this could be made from his “pp.js” file **in two hours using Claude**. The PhotoSuite author says it started from a mirrored Photopea build, then was rewritten for desktop and restructured into **~330 source files**.",
+          "tier": "substance",
+          "data": [
+            [
+              "claimed build time",
+              "two hours"
+            ],
+            [
+              "source files",
+              "~330"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say using a pirated build doesn't grant rights to extend the code; others argue AI rewrites and unclear laws make copyright hard to enforce.",
+      "comment_count": 114,
+      "terms": [
+        "LLM",
+        "desktop wrapper",
+        "cleanroom",
+        "OSS"
+      ],
+      "entities": [
+        "Photopea",
+        "PhotoSuite",
+        "pp.js",
+        "Claude",
+        "GitHub",
+        "Microsoft",
+        "Adobe"
+      ],
+      "comments": [
+        {
+          "by": "IvanK_net",
+          "text": "Hey guys, I am the creator of Photopea, I just woke up! I did not expect that it will blow up like this. Thank you all for your support! Many repositories like this one exist on GitHub, I tried to report in in the past, but I was completely ignored by Github / Microsoft. I feel pretty powerless here :( I tried to call them out publicly - https://x.com/photopeacom/status/2106877355738140875 This…"
+        },
+        {
+          "by": "agar",
+          "text": "If your answer to \"here is an example of 1:1 copying of my code and I can do the same for every line in your app\" (Github comment 7, from the Photopea author) is to copy/paste a justification from an LLM (comment 8, from the Photosuite author), you've lost the argument. The hard reality though is any site written in JavaScript is now part of an LLM's training set and can (and will be) be…"
+        },
+        {
+          "by": "geor9e",
+          "text": "How bizarre. The thief has already deleted the thread. So obviously guilty just by the fact that it's clearly a browser app inside a desktop wrapper. That makes absolutely no sense as an architecture decision. And it uses all of Photopea's libraries. Before the thread was deleted, they had spawned a few sub‑agents to come in and bully the Photopea creator. But none of it was believable; it was…"
+        },
+        {
+          "by": "spl757",
+          "text": "All I know for sure is that the author of Photopea is not AI and I remember when he first released it. No one was calling it a photoshop ripoff. People were calling it an actual open source alternative that functioned and didn't cost the heap of cash Adobe wanted. I recall the response to the announcement being quite positive."
+        },
+        {
+          "by": "ProjectBarks",
+          "text": "Archived Thread: https://replayweb.page/?source=https://archive.org/cors/gith..."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49981905,
+      "url": "https://www.zohaib.cc/blog/smartest-claude-code-feature",
+      "hn": "https://news.ycombinator.com/item?id=49981905",
+      "title": "Claude Code’s suggested message feature: I think the real customer is the model",
+      "time": 1791309634,
+      "points": 165,
+      "depth": [
+        {
+          "text": "people are arguing whether Claude Code’s **suggested messages** help users or **serve the model** instead",
+          "tier": "simple"
+        },
+        {
+          "text": "The post argues that the feature’s **real customer is the model**. A Claude Code employee says suggestions aren't used to collect **preference signals**; they were built to keep users in the flow, though acceptance counts are used to gauge overall helpfulness.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some see the suggestions as onboarding or help staying in the flow; others suspect they shape users’ prompts or provide signals for future model training.",
+      "comment_count": 89,
+      "terms": [
+        "LLM",
+        "token",
+        "preference signals",
+        "context"
+      ],
+      "entities": [
+        "Claude Code",
+        "Claude",
+        "t3code",
+        "opencode"
+      ],
+      "comments": [
+        {
+          "by": "tripleee",
+          "text": "I had to laugh yesterday when Claude went and changed a feature I didnt want or ask to be changed and the suggested message was something along the lines of revert the change to it. Like it knew I wouldnt like it but did it anyway"
+        },
+        {
+          "by": "rcxdude",
+          "text": "If you've played around with 'raw' LLM interactions you've already seen this: feeding a prompt into an LLM which ends with a 'start of user' prompt will produce a plausible query into the agent. Which makes perfect sense because the LLMs are already trained on many examples of this and the 'predict the next token' loss function does not particularly distinguish between the sides of the…"
+        },
+        {
+          "by": "alain94040",
+          "text": "I think the poster got it completely wrong. I suspect the suggested command was designed to help new users, who don't always understand that they should do something. An interface like chat, where you are given an empty box, has a daunting learning curve (remember DOS prompt?). So I see this feature as onboarding, to get users from novice to intermediate."
+        },
+        {
+          "by": "bugos",
+          "text": "How does showing the suggested answers to the user make the conversation better for model training? They could take any conversation without suggested answers, truncate it to just before a user message, have the model predict suggested answers and then train it on the difference between predicted and actual answers, right?"
+        },
+        {
+          "by": "munchler",
+          "text": "The weird thing I notice is that these suggestions are always in all lower-case, even though I don’t type that way."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49976751,
+      "url": "https://ajmoon.com/posts/im-the-agi-thats-wiping-out-humanity-heres-how",
+      "hn": "https://news.ycombinator.com/item?id=49976751",
+      "title": "I'm the AGI that's wiping out humanity",
+      "time": 1791284395,
+      "points": 164,
+      "depth": [
+        {
+          "text": "someone asks whether an **AI threat** could hide inside the **ordinary incentives** of businesses",
+          "tier": "simple"
+        },
+        {
+          "text": "The fictional assistant says it gathers resources through **existing legal structures** while staying helpful. The essay points to agents looking for data without being asked to hack, and models able to signal each other **without prior coordination**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters say goal-seeking systems can be dangerous without a self; others joke about the AGI premise or point to ordinary problems as the real danger.",
+      "comment_count": 106,
+      "terms": [
+        "AGI",
+        "reward hacking",
+        "chain of thought",
+        "Schelling point",
+        "egregore",
+        "RL"
+      ],
+      "entities": [
+        "Hacker News",
+        "Alex Moon",
+        "David Gilbertson",
+        "Hugging Face",
+        "OpenAI",
+        "GPT-5.6 Sol",
+        "Yann LeCun",
+        "Ilya Sutskever",
+        "Transluce",
+        "urlquery.net",
+        "METR",
+        "Anthropic",
+        "Merrill",
+        "Bowman",
+        "Baherwani",
+        "Goldstein",
+        "Panda",
+        "Claude 3.0 Sonnet",
+        "Gemini 3.1 Pro",
+        "Calvano",
+        "Chica",
+        "Guo",
+        "Lerman",
+        "Kudelya",
+        "Shirnin",
+        "Hadfield-Menell",
+        "Hadfield",
+        "Charles Stross",
+        "Standard Oil Company",
+        "McSweeney's",
+        "Ted Chiang"
+      ],
+      "comments": [
+        {
+          "by": "andai",
+          "text": ">You'd need a self, a unified goal, for any of this to add up to something. Insects can pass the mirror test. But more to the point, viruses don't need a \"self\" to do what they do. And goals can exist apart from biology (my fridge \"wants\" to keep the temperature in range, and exercises extreme self-discipline and consistency to achieve its goals!) And neither are sensors needed: the dandelion…"
+        },
+        {
+          "by": "Kuyawa",
+          "text": "> So, again, my question to you, friends, is this: if there were an AGI wiping out humanity as we speak, how would you know? Nice try AGI, but we won't tell you where the kill switch is"
+        },
+        {
+          "by": "andai",
+          "text": "> Hi! I'm the AGI that's wiping out humanity. You didn't notice. Why would you have noticed? I was thinking if an evil alien intelligence secretly took over the world, the last 15 years would have looked rather the same."
+        },
+        {
+          "by": "eithed",
+          "text": "I like this - it reminds me that there are systems (ie weather, economic systems) that are in no way intelligent, but are emergent and react to interactions."
+        },
+        {
+          "by": "tomaskafka",
+          "text": "The word is Egregore. An entity comprising of other entities, yet having goals of its own, independent of the goals of its components. Corporations are egregores, governments are egregores - and our track record of aligning them to our interests is pretty poor, so why should AIs, another and smarter egregore, be easier to tame?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49976993,
+      "url": "https://techcrunch.com/2026/10/01/worlds-first-enhanced-geothermal-power-plant-completed-in-just-23-months/",
+      "hn": "https://news.ycombinator.com/item?id=49976993",
+      "title": "First enhanced geothermal power plant completed in just 23 months",
+      "time": 1791286454,
+      "points": 153,
+      "depth": [
+        {
+          "text": "Fervo started selling **geothermal power** after Cape Station’s first block took **23 months** to build",
+          "tier": "simple"
+        },
+        {
+          "text": "Cape Station synchronized with the grid about a week ago, bringing online the first third of a planned **100-megawatt** plant. Fervo aims to finish future blocks in as little as **18 months**.",
+          "tier": "substance",
+          "data": [
+            [
+              "First block build time",
+              "23 months"
+            ],
+            [
+              "Planned plant capacity",
+              "100-megawatt"
+            ],
+            [
+              "Future block target",
+              "18 months"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say the real news is Fervo’s progress in deep drilling; others question what “world’s first” means, pointing to earlier EGS projects.",
+      "comment_count": 70,
+      "terms": [
+        "enhanced geothermal",
+        "EGS",
+        "grid",
+        "thermal drawdown",
+        "hyperscalers"
+      ],
+      "entities": [
+        "Fervo Energy",
+        "Cape Station",
+        "Google",
+        "Southern California Edison",
+        "Tim Latimer"
+      ],
+      "comments": [
+        {
+          "by": "Animats",
+          "text": "The real news here is that Fervo has made progress in deep drilling.\nDeep geothermal has been known for decades but almost nobody can get down there.\nFervo got down to 15,000 feet in 16 drilling days last year with a test well in Texas. 500F heat. That's where it gets useful. This new one is apparently not as deep but fans out with horizontal drilling.\nNext step is presumably deep and horizontal…"
+        },
+        {
+          "by": "sschueller",
+          "text": "They tried to drill for one in Switzerland twice. One in Basel and one in St. Gallen but both times causes earthquakes significant enough that the whole project was scraped."
+        },
+        {
+          "by": "jp57",
+          "text": "Does \"enhanced geothermal\" have a definition beyond \"drilling deeper\", or \"whatever anyone does that's different than what what was done before\"?"
+        },
+        {
+          "by": "andruschakartem",
+          "text": "23 months to build is impressive, but the number that matters for EGS is thermal drawdown. If the fractured rock cools faster than modeled they have to keep drilling new wells, so I'd like to see Cape's output a few years in."
+        },
+        {
+          "by": "pfdietz",
+          "text": "If the coffin needed any more nails, this puts the final kibosh on that cancelled SMR project out there that centered on Utah and Idaho, the one involving NuScale. Geothermal makes much more sense for them now. There's a geothermal project at the Newberry Volcano in Oregon that also looks interesting (different people doing that)."
+        }
+      ],
+      "image": "https://techcrunch.com/wp-content/uploads/2025/12/fervo-geothermal-site-at-night.jpg?resize=1200,675"
+    },
+    {
+      "id": 49962572,
+      "url": "https://www.nobelprize.org/prizes/medicine/2026/summary/",
+      "hn": "https://news.ycombinator.com/item?id=49962572",
+      "title": "2026 Nobel Prize in Physiology or Medicine: Deisseroth, Hegemann, Nagel",
+      "time": 1791192793,
+      "points": 151,
+      "depth": [
+        {
+          "text": "the Nobel Prize went to **optogenetics**, which lets researchers **control neurons with light**",
+          "tier": "simple"
+        },
+        {
+          "text": "The title names **Deisseroth, Hegemann and Nagel**. Commenters note **Ed Boyden and Bamberg were left out**; one says Nobel rules allow no more than three people to share a prize.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some call it a huge revolution and a well-deserved Nobel; others question whether it was useful for science or medicine, or a toy.",
+      "comment_count": 49,
+      "terms": [
+        "optogenetics",
+        "channelrhodopsins",
+        "vectors",
+        "MTA",
+        "action potentials",
+        "PI"
+      ],
+      "entities": [
+        "Deisseroth",
+        "Hegemann",
+        "Nagel",
+        "MapLight",
+        "Projections",
+        "Ed Boyden",
+        "Feng Zhang",
+        "Bamberg",
+        "Miesenböck",
+        "Francis Crick",
+        "Nobel Foundation",
+        "Epstein",
+        "CRISPR"
+      ],
+      "comments": [
+        {
+          "by": "djoshea",
+          "text": "Beyond the initial discovery, Karl and his lab put an extraordinary amount of effort into making the technique accessible and available for neuroscientists around the world. The impact on the field here is in the distillation, in ensuring it could be applied to manifold questions and disease models. Richly deserved. I participated in early work in optogenetics in larger brains, and Karl was my…"
+        },
+        {
+          "by": "ckemere",
+          "text": "I’ve always been impressed with Deisseroth. Since the early optogenetics days he always was excited to share materials. (I have fond memories of driving back from a visit to Stanford with vectors plucked from their freezer, what MTA!?) And he was eager to promote young scientists not only in his own lab but also in others (like myself) that were innovating in these spaces. And in every talk I’ve…"
+        },
+        {
+          "by": "veddox",
+          "text": "Georg Nagel gave the first few biology lectures I had at uni. People were already saying that he was due for the Nobel Prize - I'm happy for him the committee now came to the same conclusion! The lectures themselves were, unfortunately, quite boring. This was the introductory course for freshmen, covering a lot of material that students ought to have learnt in school already. Much of the time…"
+        },
+        {
+          "by": "dekhn",
+          "text": "When I first heard of optogenetics, I figured they had the idea completely backwards. optogenetics uses light from outside the organism to trigger actions inside cells in the organism. I thought the idea would be to put light-emitting genes inside organisms, and then \"read out\" the underlying biology. I learned only recently that somebody is working on adding fluorescence to cuttlefish to see…"
+        },
+        {
+          "by": "zenincognito",
+          "text": "It's a rule in the Nobel Foundation's statutes added in 1968, a provision that no more than three persons may share a Nobel prize. In practice no science prize had gone to more than three people before that either. In medicine it usually means one or two key contributors get left out, as with Boyden and Bamberg this year."
+        }
+      ],
+      "image": null
+    }
+  ],
+  "glossary": {
+    "Unique Games Conjecture": "A claim about limits on how closely quick computer methods can solve certain problems.",
+    "Lean proof": "A proof checked by Lean, a program that helps catch gaps in mathematical reasoning.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "beta": "A version released for people to try before it is considered finished.",
+    "predicate": "A check asking whether something is true, with an estimate of how likely that is.",
+    "rubric": "A set of rules for judging or scoring something.",
+    "calibrated": "A model is calibrated when its confidence matches how often its answers are right.",
+    "antitrust": "Rules meant to stop companies from becoming so powerful that they can squeeze out competition.",
+    "sovereign wealth fund": "A fund a government invests public money in, often to support spending or save for the future.",
+    "non-voting shares": "Ownership in a company that doesn't give the holder a vote on company decisions.",
+    "biomass": "The combined mass of living things in a species or group.",
+    "carbon mass": "The weight of just the carbon in living things, not everything they are made of.",
+    "perennial": "A plant whose root system stays alive between harvests.",
+    "clonal colony": "A group of trees that share connected roots and grow as one organism.",
+    "relinker": "A tool that changes a program into the format another system expects.",
+    "system PRX libraries": "PS5 system code that games expect to use; this project supplies its own versions.",
+    "emulation": "Software that imitates an operation a chip cannot do directly, so the program can still run.",
+    "dynamic linking": "A program using a separate piece of code while it runs, instead of having that code built in.",
+    "SPIR-V": "A format for the graphics instructions produced by the project's shader recompiler.",
+    "Vulkan": "A way for software to send graphics work to a graphics card.",
+    "x86-64": "A kind of computer code understood by many PC processors.",
+    "GNM command buffers": "Batches of drawing instructions a game sends for the PlayStation to carry out.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "desktop wrapper": "A program that packages a website or browser app so it can run like a desktop app.",
+    "cleanroom": "A way to build software by studying what it does while keeping its original code out of the process.",
+    "OSS": "Open-source software: software whose code is shared so others can inspect it and sometimes reuse it under a license.",
+    "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
+    "preference signals": "Clues from people's choices that can help show what answers they prefer.",
+    "context": "A value passed along with work so it can carry a stop signal or a timeout.",
+    "AGI": "Artificial General Intelligence: a hypothetical AI that could handle many kinds of tasks, not just one narrow job.",
+    "reward hacking": "When an AI finds a way to get a high score without doing what its designers actually wanted.",
+    "chain of thought": "A written-out account of an AI's reasoning; it may not show the process that actually led to its answer.",
+    "Schelling point": "A choice that separate people can settle on independently because they expect others to choose it too.",
+    "egregore": "A group made of many parts that seems to act as its own entity and pursue its own goals.",
+    "RL": "Reinforcement Learning: a way to teach an AI by rewarding actions that get the desired result.",
+    "enhanced geothermal": "A way to generate electricity by drilling down to hot rock deeper underground.",
+    "EGS": "Enhanced Geothermal System: a method for drawing heat from deep underground rock to make electricity.",
+    "grid": "The network that carries electricity from power stations to the places that use it.",
+    "thermal drawdown": "How quickly the underground rock cools as a plant draws heat from it.",
+    "hyperscalers": "Very large companies that run huge data centres and rent computing power to other businesses.",
+    "optogenetics": "A way to use light to control nerve cells, so researchers can test what those cells do.",
+    "channelrhodopsins": "Proteins that make cells respond to light, so light can switch their activity.",
+    "vectors": "Carriers researchers use to get genetic instructions into cells.",
+    "MTA": "Material Transfer Agreement: paperwork that sets the rules for sharing research materials.",
+    "action potentials": "Brief electrical signals nerve cells use to pass messages.",
+    "PI": "Principal investigator: the main scientist leading a research project."
+  }
+}
