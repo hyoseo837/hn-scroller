@@ -2,6 +2,1007 @@
   "date": "2026-10-07",
   "cards": [
     {
+      "id": 49996437,
+      "url": "https://www.anthropic.com/claude-haiku-5-5",
+      "hn": "https://news.ycombinator.com/item?id=49996437",
+      "title": "Claude Haiku 5.5",
+      "time": 1791396092,
+      "points": 604,
+      "depth": [
+        {
+          "text": "Anthropic says its new small model is built for **fast**, **cheap**, **repetitive work**",
+          "tier": "simple"
+        },
+        {
+          "text": "Haiku 5.5 is aimed at **high-volume, cost-sensitive tasks** like summaries, database queries, and classification, and can work as a **coding subagent** beside Opus 5.5 and Sonnet 5.5. Its price is **90% lower** than Haiku 4.5 for requests up to 100,000 tokens, and 50% lower for larger requests.",
+          "tier": "substance",
+          "data": [
+            [
+              "Price reduction for requests up to 100,000 tokens",
+              "90% lower"
+            ],
+            [
+              "Price reduction for requests over 100,000 tokens",
+              "50% lower"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see a fast, inexpensive option for small tasks; others say it disappointed in tests or worry the 100,000-token cutoff is too low.",
+      "comment_count": 285,
+      "terms": [
+        "subagent",
+        "token"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude Haiku 5.5",
+        "Claude Haiku 4.5",
+        "Claude Sonnet 5.5",
+        "Opus 5.5",
+        "Claude Platform",
+        "Claude Max",
+        "Amazon Web Services",
+        "Google Cloud",
+        "Microsoft Azure",
+        "GPT-6 Luna",
+        "OpenAI",
+        "Asana",
+        "HubSpot",
+        "AlphaSense",
+        "Box",
+        "Rogo",
+        "Cognition",
+        "Devin Fusion",
+        "Plotly",
+        "Python",
+        "TypeScript",
+        "Aaron Vinh",
+        "Ze’ev Klapow",
+        "Yashodha Bhavnani",
+        "Walden Yan",
+        "Simon Willison"
+      ],
+      "comments": [
+        {
+          "by": "simonw",
+          "text": "Pelicans riding bicycles for Haiku at the different thinking levels: https://tools.simonwillison.net/markdown-svg-renderer?url=ht... Low messes up the bicycle frame, but medium/high/xhigh/max all get the bicycle frame right. The max one took 5 minutes 9 seconds and cost 3.3826 cents. The cheapest one (low) cost 0.0936 cents and took 7 seconds. The most recent release of my llm-anthropic plugin…"
+        },
+        {
+          "by": "minimaxir",
+          "text": "Pricing is...a bit weird. Input\n$0.10 / MTok for prompts up to 100,000 tokens\n$0.50 / MTok for prompts over 100,000 tokens\nOutput\n$0.50 / MTok for prompts up to 100,000 tokens\n$2.50 / MTok for prompts over 100,000 tokens\n100k tokens is an absurdly low cutoff and it is only applicable to Haiku and not Sonnet or Opus. It's a low enough cutoff that it will be quickly exceeded if you are doing…"
+        },
+        {
+          "by": "charlesabarnes",
+          "text": "> Second, this week, we’ll roll out a new monthly API credit to all Max and Team subscribers for use on the Claude Platform. Max 5x users will get $100 in credits per month, Max 20x users will get $200, and Team subscribers will receive up to $500, pooled across their users This is a very big benefit for me. I can now ship actual ai enhanced features behind my subscription without paying extra or…"
+        },
+        {
+          "by": "simonw",
+          "text": "My complaint about Haiku 4.5 was that it was 10x the price of GPT-6 Luna. > Claude Haiku 5.5 is priced 90% lower than Claude Haiku 4.5 for requests up to 100,000 tokens, and 50% lower for requests over 100,000 tokens Haiku and Luna now have the exact same price up to 100,000 tokens. Luna is now cheaper for anything after 100,000 tokens, even after Luna's own price increases at 270,000 it's still…"
+        },
+        {
+          "by": "jjcm",
+          "text": "Ran image -> html tests for this. I was curious if this smaller model was good enough for complex UI. It was not. Haiku 5.5: https://html.non.io/lcars-haiku-5.5/ Opus 5.5 for comparison: https://html.non.io/lcars-opus-5.5 Designs it was building from: https://diffui.ai/app/canvas/5093e689-1e74-4f26-b632-2a4500f... One interesting thing is it took a look at the job at hand, and immediately…"
+        }
+      ],
+      "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/89e9b0fbfe0181f6ca565d913686ce8e49b5e9c2-1200x630.jpg"
+    },
+    {
+      "id": 49993914,
+      "url": "https://www.classaction.org/news/visa-mastercard-major-banks-facing-new-litigation-over-anticompetitive-merchant-credit-card-transaction-fees",
+      "hn": "https://news.ycombinator.com/item?id=49993914",
+      "title": "Visa, Mastercard, major banks facing new litigation over 'anticompetitive' fees",
+      "time": 1791385799,
+      "points": 453,
+      "depth": [
+        {
+          "text": "a San Diego pizzeria is suing over **Visa and Mastercard’s** allegedly **inflated card fees**",
+          "tier": "simple"
+        },
+        {
+          "text": "The complaint alleges Visa and Mastercard worked with Bank of America, Capital One, Chase Bank, Citibank and Wells Fargo to set **uniform interchange fees**. It says their rules forced merchants to accept every card from either network and stopped them steering customers to **cheaper payment options**; the proposed class would cover US businesses and other entities that accepted those cards from **January 25, 2019** until the alleged effects end.",
+          "tier": "substance",
+          "data": [
+            [
+              "annual merchant fees",
+              "over $100 billion"
+            ],
+            [
+              "earlier settlement relief",
+              "upward of $5 billion"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some want merchants to steer customers toward cheaper payments or weaken card-network dominance; others say cards provide real value and question whether high fees alone make the market anticompetitive.",
+      "comment_count": 311,
+      "terms": [
+        "class action",
+        "interchange fees",
+        "ACH",
+        "acquirer",
+        "merchant discount rate"
+      ],
+      "entities": [
+        "Visa",
+        "Mastercard",
+        "The Pizza Standard LLC",
+        "Bank of America",
+        "Capital One",
+        "Chase Bank",
+        "Citibank",
+        "Wells Fargo",
+        "JPMorgan Chase",
+        "Citigroup",
+        "Paymentech, LLC",
+        "FedNow",
+        "PIX"
+      ],
+      "comments": [
+        {
+          "by": "modeless",
+          "text": "I don't care about the fees as much as I care about the terrible experience of making payments. Why is it still such a chore to fill payment forms on the web? Why do we still print BPA thermal paper receipts for every purchase? Why am I still sometimes asked for my signature? Why do I have to unlock my phone to pay when I don't have to unlock my card, I have zero liability for fraudulent…"
+        },
+        {
+          "by": "jawns",
+          "text": "One thing I've noticed with the bigger gas station chains near me is a push to have users download their mobile app, set up ACH payments, and use that as their payment method instead of credit cards in exchange for 10 cents off per gallon. From the merchant side of things, they're paying about $0.60 to process the transaction via ACH, versus $2-$2.50 for credit card transactions, per fill-up. So…"
+        },
+        {
+          "by": "boplicity",
+          "text": "Basic reforms that could solve this problem: 1. Merchants need to be allowed to add card processing fees on top of any transaction, and it should be possible to do this very easily. If not this, then any receipt should be required to include card processing fees. 2. Merchants should be allowed to pick and choose which cards they accept without penalty. Those two simple changes would add…"
+        },
+        {
+          "by": "Glyptodon",
+          "text": "I do think we're getting to the point that middlemen don't have much value add. Economics even suggests they don't add value I think. Possibly neutral markets, payments, and logistics should just be a public service."
+        },
+        {
+          "by": "Anonyneko",
+          "text": "I wish they would face litigation for banning the sale of large swaths of content (or even banning the content altogether on sites relying on donations/subscriptions to survive). Paypros have no business being censors."
+        }
+      ],
+      "image": "https://www.classaction.org/media/twitter-newswire-default.png"
+    },
+    {
+      "id": 49996425,
+      "url": "https://openai.com/index/gpt-6-for-everyone/",
+      "hn": "https://news.ycombinator.com/item?id=49996425",
+      "title": "GPT‑6 and Intelligent UI for everyone",
+      "time": 1791396058,
+      "points": 440,
+      "depth": [
+        {
+          "text": "ChatGPT can make **interactive explainers**, but commenters worry they’ll **clutter** answers that should stay simple",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter called **visual explanations** genuinely useful; others worry a generated interface could get in the way when they just want a **quick answer**. Another linked the system card, which reports statistically significant **safety regressions** for GPT-6 Luna (October) on self-harm, gore and sexual content versus its GPT-5.6 counterpart.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: fans say on-demand visual explanations can help; skeptics say generated interfaces can clutter simple answers or feel unnecessary.",
+      "comment_count": 226,
+      "terms": [
+        "interactive explainer",
+        "UI",
+        "system card",
+        "benchmark",
+        "regression"
+      ],
+      "entities": [
+        "OpenAI",
+        "ChatGPT",
+        "GPT-6",
+        "GPT-6 Sol",
+        "GPT-6 Luna",
+        "GPT-5.6",
+        "GPT-6.1",
+        "Bartosz Ciechanowski",
+        "Anthropic",
+        "Apple",
+        "Android",
+        "Codex",
+        "Google",
+        "Phind",
+        "Sam Altman"
+      ],
+      "comments": [
+        {
+          "by": "revolvingthrow",
+          "text": "I find the Sunday roast comparison of 5.6 vs 6 very interesting. I have no doubt most people will prefer 6, yet I am almost repulsed by all the images, so much needless whitespace, checklist and so on. Feels like I'm being condescended to and treated like a child. Given that OpenAI is making noises about merging work with chat (a horrible idea imo), and Work is very similar to Codex... I dearly…"
+        },
+        {
+          "by": "mortenjorck",
+          "text": "Of everything that could be automated, Bartosz Ciechanowski really was the last on my list. In all seriousness, his lovingly and expertly crafted explainers are still going to age like a handcrafted heirloom clock in a world of plastic-clad quartz movements. But it’s absolutely incredible that we are now in an age where a computer can manufacture a serviceable interactive explainer on whatever…"
+        },
+        {
+          "by": "ankit_mishra",
+          "text": "https://cdn.openai.com/pdf/gpt-6-october.pdf System card linked in the blog post. > regression on the extremism vision evaluation. > Relative to their respective GPT-5.6 counterparts, GPT-6 Sol (October) shows a statistically significant regression on standard self-harm , while GPT-6 Luna (October) shows statistically significant regressions on standard self-harm, gore, and sexual content >…"
+        },
+        {
+          "by": "xpct",
+          "text": "I've had the most success with GPT explaining things to me by making it take a few sentences at a time back and forth, instead of reading full write-ups of whatever I asked. It also often poisons the conversation if it misunderstood some part of the question, and I can lead it better by continuously questioning its statements. It's also more engaging that way. I've been learning music lately and…"
+        },
+        {
+          "by": "sebringj",
+          "text": "i saw that and thought the death knell of apps is coming soon as on demand interfaces become a norm"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49994443,
+      "url": "https://bigwords.page/",
+      "hn": "https://news.ycombinator.com/item?id=49994443",
+      "title": "Show HN: Bigwords.page – Turn any screen into a sign. The URL is the app",
+      "time": 1791387861,
+      "points": 300,
+      "depth": [
+        {
+          "text": "someone made a **link-based sign maker** for showing **big messages**, timers, and countdowns on any screen",
+          "tier": "simple"
+        },
+        {
+          "text": "The message and settings live in the **URL fragment**, which browsers don't send to a server, so there's **no backend or storage**. Links can also show slides, countdowns, and timers.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some like having the URL contain all the data; others say “the URL is the app” is meaningless, since there’s still an app.",
+      "comment_count": 100,
+      "terms": [
+        "URL fragment"
+      ],
+      "entities": [
+        "BIGWORDS.PAGE"
+      ],
+      "comments": [
+        {
+          "by": "SpeakingOfBrad",
+          "text": "I had the idea for BIGWORDS.PAGE when I wanted to display a message on a tablet that I had remote management control over, but no physical access. Configuring it to be a kiosk browser is easy, but how do I get the browser to show my message? So I made the URL be the message. It uses a URL fragment to configure the message. Browsers don't send URL fragments to the server, so I never see your…"
+        },
+        {
+          "by": "pvillano",
+          "text": "https://bigwords.page/#smol!%20!%20!%20!%20!%20!%20!%20!%20!... ! You seem to have the same bug I had when I first implemented https://screaming.saej.in/ In Firefox, scrollWidth includes spaces that extend into the margin, so it's possible for text to fit perfectly on the screen, but scrollWidth > clientWidth. Fix here https://saej.in/posts/screaming/"
+        },
+        {
+          "by": "paulsmith",
+          "text": "Who remembers https://bigassmessage.com/"
+        },
+        {
+          "by": "wateralien",
+          "text": "Very cool. Could you add base64 encoding to the query part so that it doesn’t hint at what the screen will say from the link text. Kind of gives the joke away sometimes."
+        },
+        {
+          "by": "ceejayoz",
+          "text": "Hook it up to voice control so I can put an iPad in the back window of the car and tell other drivers… things."
+        }
+      ],
+      "image": "https://bigwords.page/og.png"
+    },
+    {
+      "id": 49990470,
+      "url": "https://www.nobelprize.org/prizes/chemistry/2026/press-release/",
+      "hn": "https://news.ycombinator.com/item?id=49990470",
+      "title": "Nobel Prize in Chemistry 2026 to Henri B. Kagan and Kenso Soai",
+      "time": 1791366703,
+      "points": 285,
+      "depth": [
+        {
+          "text": "Henri B. Kagan and Kenso Soai won the **chemistry Nobel** for reactions favoring **one mirror image**",
+          "tier": "simple"
+        },
+        {
+          "text": "Kagan’s **1986 discovery** made a **greater excess of one mirror image** possible. Soai’s 2003 reaction formed only one of the two possible images, and their work helps chemists design reactions for **pharmaceuticals**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Prize amount (shared equally)",
+              "12 million Swedish kronor"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 53,
+      "terms": [
+        "chirality",
+        "homochirality",
+        "autocatalysis",
+        "asymmetric organic synthesis"
+      ],
+      "entities": [
+        "Henri B. Kagan",
+        "Kenso Soai",
+        "Nobel Prize",
+        "Royal Swedish Academy of Sciences",
+        "Heiner Linke"
+      ],
+      "comments": [
+        {
+          "by": "dekhn",
+          "text": "I remember first learning about chirality in my biochemistry course in college, and it was definitely a mind-blower. I had already started to understand that molecules had 3d structures, but the idea (and attempting to visualize it mentally) of mirror image molecules stretched my brain significantly. It's also still amazing to me how people first recognized this: poking around looking at the…"
+        },
+        {
+          "by": "PowerElectronix",
+          "text": ">Other than life itself, no one had achieved this feat. Yeah, when you put it that way it sounds pretty impresive."
+        },
+        {
+          "by": "bizzyskillet",
+          "text": "In 2004, left-handed sugar was hyped as a way to eat junk food without absorbing the sugar. It turned out to be too expensive, but I think it's an interesting story (oddly involving Mars!). More here: https://spinoff.nasa.gov/Spinoff2004/ch_4.html"
+        },
+        {
+          "by": "pfdietz",
+          "text": "The chirality of biomolecules is also the source of the differentiation of left and right in a developing embryo. Cilia form that are tilted toward the tail of the embryo. The chirality of the protein motors driving them causes them to turn clockwise, which creates a leftward flow of water. https://pmc.ncbi.nlm.nih.gov/articles/PMC1180515/…"
+        },
+        {
+          "by": "haunter",
+          "text": "Fun fact: his family name in kanji 硤合 is so rare that most people don't even know how to read it thus most japanese news sites using a hiragana translation そあい"
+        }
+      ],
+      "image": "https://www.nobelprize.org/uploads/2026/10/fig_ke_26_3x2-1024x683.jpg"
+    },
+    {
+      "id": 49998895,
+      "url": "https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007",
+      "hn": "https://news.ycombinator.com/item?id=49998895",
+      "title": "Margaret Hamilton, who led software development for the Apollo program, has died",
+      "time": 1791407778,
+      "points": 287,
+      "depth": [
+        {
+          "text": "Margaret Hamilton, who led the **Apollo software team**, has **died at 90**",
+          "tier": "simple"
+        },
+        {
+          "text": "By 1968, more than **400 people** were working on Apollo’s software, with Hamilton leading the Command and Service Module team. Her **priority-driven software** could shut down unnecessary background tasks to prioritize mission-critical tasks when Apollo 11’s computer overloaded.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 26,
+      "terms": [
+        "priority-driven software",
+        "defensive programming",
+        "software engineering"
+      ],
+      "entities": [
+        "Margaret Hamilton",
+        "Apollo",
+        "Apollo 11",
+        "Command and Service Module"
+      ],
+      "comments": [
+        {
+          "by": "diskzero",
+          "text": "I was able to meet her, and others who worked at the MIT Instrumentation/Draper Lab, as a start-up I was with received funding from a VC firm founded by other Draper Lab members from the Apollo era. I was totally out of my league talking with them. This was thirty years ago and I remember her talking about formalized control systems. It was fascinating but went totally over my head. My startup…"
+        },
+        {
+          "by": "markus_zhang",
+          "text": "This definitely asks for a black ribbon on top of HN. What a loss!"
+        },
+        {
+          "by": "WarOnPrivacy",
+          "text": "Dang. She was a remarkable stand-out, in fields full of remarkable people. The pic here is often people's first intro to her https://news.mit.edu/2016/scene-at-mit-margaret-hamilton-apo..."
+        },
+        {
+          "by": "EvanAnderson",
+          "text": "There is a very nice oral history the Computer History Museum produced: https://computerhistory.org/blog/margaret-hamilton-in-her-ow... In Levy's \"Hackers\" there is a story about late night hacking on the TX-0 that fouled-up some weather simulation code an academic user of the computer was running. After hearing this oral history I believe Margaret was the programmer and the code was for Prof…"
+        },
+        {
+          "by": "muunbo",
+          "text": "Margaret Hamilton actually coined the term \"software engineer\" IIRC. Rest in peace"
+        }
+      ],
+      "image": "https://news.mit.edu/sites/default/files/images/202610/margaret-hamilton-portrait-toan-trinh-mit-technology-review-A1_1.png"
+    },
+    {
+      "id": 49993857,
+      "url": "https://ascii.rest/",
+      "hn": "https://news.ycombinator.com/item?id=49993857",
+      "title": "Animated ASCII Art for Web Pages",
+      "time": 1791385537,
+      "points": 263,
+      "depth": [
+        {
+          "text": "someone made **animated art** for web pages, though commenters debate whether it counts as **ASCII**",
+          "tier": "simple"
+        },
+        {
+          "text": "The site has **split-flap and nature pages**. Some commenters say its differently sized dots make it **Unicode art, not ASCII**. One says their **reduced-motion setting** meant they saw no animation, and wished the demo made that clearer.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: fans praise the visuals; critics say it isn't ASCII, and some say it wouldn't fit in a UI.",
+      "comment_count": 56,
+      "terms": [
+        "ASCII art",
+        "Unicode",
+        "reduced motion",
+        "dithering"
+      ],
+      "entities": [
+        "ascii.rest"
+      ],
+      "comments": [
+        {
+          "by": "boguscoder",
+          "text": "This looks aesthetically pleasing but this is not ASCII Art it seems, where’s ascii? All those differently sized dots are not ascii chars, are they? Perhaps this is unicode-art?"
+        },
+        {
+          "by": "gavmor",
+          "text": "Gorgeous, impressive, well done— But it strikes me as an affectation of technical austerity, i.e. you’re borrowing the credibility of a constrained medium without embracing its constraints. Again, it's very pretty but... it's a bit like reconfiguring your Tesla to look more like a Citroën 2CV."
+        },
+        {
+          "by": "BugsJustFindMe",
+          "text": "I see nothing being animated because my system is set to prefer reduced motion. That's a cool accommodation, but I wish at least the demo page made that more obvious. Also, the art scenes section is not ASCII."
+        },
+        {
+          "by": "robbomacrae",
+          "text": "Thats awesome. I did something similar (much smaller scale) for Claude Code/Pi to show how much it's working https://github.com/robdmac/flow But this ASCII Art reminds me of my original desire to have something for each server I SSH into to help me keep a mental map of where I am. I'm not SSH'ing into servers anymore but if I was, I'd totally be trying to remake these scenes on the terminal!"
+        },
+        {
+          "by": "burmask",
+          "text": "I kept scrolling down and my amazement grew as I could see all fun the op had making this library. Split-flap [ https://ascii.rest/split-flap/ ] is awesome. And the nature ones [ https://ascii.rest/fern/ ] got me thinking I need a digital frame to display them on. Would be some cool wall art. This ASCII sets a relaxed mood - except for that vibrating spinners page @ZeWaka :). Thank you for your…"
+        }
+      ],
+      "image": "https://ascii.rest/og.png"
+    },
+    {
+      "id": 49997161,
+      "url": "https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai/",
+      "hn": "https://news.ycombinator.com/item?id=49997161",
+      "title": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+      "time": 1791398980,
+      "points": 236,
+      "depth": [
+        {
+          "text": "Meta and Microsoft are steering employees away from **Claude** as they push **their own AI tools**",
+          "tier": "simple"
+        },
+        {
+          "text": "Microsoft reportedly cut monthly AI spending limits from **$100,000 per employee** to **approximately $10,000** in most cases; those are spending ceilings, not actual employee spending. Meta's Claude Code users reportedly fell from around 60,000 to about 30,000, even as Meta spent **over $105 million** on it over a 28-day timeframe.",
+          "tier": "substance",
+          "data": [
+            [
+              "Microsoft monthly AI spending limit before reduction",
+              "$100,000 per employee"
+            ],
+            [
+              "Microsoft monthly AI spending limit after reduction",
+              "approximately $10,000"
+            ],
+            [
+              "Meta Claude Code users earlier this year",
+              "around 60,000"
+            ],
+            [
+              "Meta Claude Code users",
+              "about 30,000"
+            ],
+            [
+              "Meta Claude Code spending",
+              "over $105 million"
+            ],
+            [
+              "Meta Claude Code spending period",
+              "28-day timeframe"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say the shifts reflect spending controls and companies pushing their own AI; others say Meta may still be using Anthropic models behind internal interfaces, so the Claude Code user drop may be an interface change rather than a real drop in use.",
+      "comment_count": 228,
+      "terms": [
+        "dogfooding",
+        "frontier AI",
+        "spending ceiling"
+      ],
+      "entities": [
+        "Meta",
+        "Microsoft",
+        "Anthropic",
+        "Claude",
+        "Claude Code",
+        "GitHub Copilot",
+        "OpenAI",
+        "MetaCode",
+        "Muse Code",
+        "The Information"
+      ],
+      "comments": [
+        {
+          "by": "ashleyn",
+          "text": "If you were wondering the same thing I am - it's not about skills loss, quality, and less about money spent. It's more about frontier AI shops dogfooding their own models."
+        },
+        {
+          "by": "dleslie",
+          "text": "> Within Microsoft’s cloud and AI sector, monthly AI spending limits have reportedly been slashed from $100,000 per employee to approximately $10,000 in the majority of instances. They were allowing $100,000 per month per employee?! That's incredible. Just a few years ago that would have been zero."
+        },
+        {
+          "by": "MisterMunchkin",
+          "text": "My company took away my Claude because it’s too expensive. I feel like there is a reckoning coming. The accountants are finally realising the cost of token maxing."
+        },
+        {
+          "by": "vld_chk",
+          "text": "If true, it is a huge blow to Anthropic’s revenue stream. IIRC it was reported that the quarter of their revenue comes from just two clients and as the ex-Meta guy who left this July, I am convinced that Meta must be one of the two."
+        },
+        {
+          "by": "throwitaway222",
+          "text": "> monthly AI spending limits have reportedly been slashed from $100,000 per employee... what. I can see a team of 20 costing 100k per month (but rare), but per person?"
+        }
+      ],
+      "image": "https://cdn.rswebsols.com/wp-content/uploads/2025/10/otr1by4mkru.jpg"
+    },
+    {
+      "id": 49994027,
+      "url": "https://www.githubstatus.com/incidents/djlmxz2zd0j7",
+      "hn": "https://news.ycombinator.com/item?id=49994027",
+      "title": "Incident with Git Operations, Pull Requests and Actions – Resolved",
+      "time": 1791386243,
+      "points": 223,
+      "depth": [
+        {
+          "text": "GitHub had an **incident** affecting **Git Operations**, **Pull Requests**, and Actions before those services recovered",
+          "tier": "simple"
+        },
+        {
+          "text": "GitHub reported **widespread impact** across Git Operations, Webhooks, Issues, Pull Requests, and Actions between **15:06 UTC and 15:16 UTC**. It later said the services were fully recovered and the incident was **resolved**, with a detailed root cause analysis to come.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: GitHub's status page said the incident was resolved; some users said they were still seeing errors or missing commits.",
+      "comment_count": 176,
+      "terms": [
+        "Git Operations",
+        "Pull Requests",
+        "Webhooks",
+        "Actions"
+      ],
+      "entities": [
+        "GitHub",
+        "Git Operations",
+        "Webhooks",
+        "Issues",
+        "Pull Requests",
+        "Actions"
+      ],
+      "comments": [
+        {
+          "by": "udave",
+          "text": "Hope it survive the next few years of codification of all of humanities unfinished cheap ideas."
+        },
+        {
+          "by": "datsci_est_2015",
+          "text": "Still getting Internal Server Error despite githubstatus claiming “All Systems Operational” and the incident as “Resolved”. Premature declaration of Resolution is pretty bad user experience, if I’m being honest…"
+        },
+        {
+          "by": "freakynit",
+          "text": "Spent 5 minutes debugging why my builds were failing... then recalled github is not google when it comes to availability... checked status.github.com ... and voila.. there it is."
+        },
+        {
+          "by": "openscript",
+          "text": "Does 89.99% count as \"three nines availability\"?"
+        },
+        {
+          "by": "rapind",
+          "text": "Based on the comments in this thread, you'd think that Reddit was down."
+        }
+      ],
+      "image": "https://dka575ofm4ao0.cloudfront.net/pages-twitter_logos/original/36420/GitHub-Mark-120px-plus.png"
+    },
+    {
+      "id": 49994145,
+      "url": "https://arxiv.org/abs/2610.08144",
+      "hn": "https://news.ycombinator.com/item?id=49994145",
+      "title": "Navier–Stokes Lost in Translation",
+      "time": 1791386678,
+      "points": 220,
+      "depth": [
+        {
+          "text": "a paper says **Lean can verify** an AI proof that **doesn't match** the written proof",
+          "tier": "simple"
+        },
+        {
+          "text": "They argue **mathematical wording** can be ambiguous enough to make a faithful translation difficult. The authors explicitly say they're **not judging** whether OpenAI's natural-language proof is correct.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say the mismatch could put the claimed result in doubt; others say it matters only if the Lean theorem doesn't match the original problem.",
+      "comment_count": 145,
+      "terms": [
+        "Lean",
+        "autoformalisation",
+        "Navier-Stokes equations",
+        "blow-up"
+      ],
+      "entities": [
+        "OpenAI",
+        "Lean",
+        "Navier-Stokes",
+        "Alexander Bastounis",
+        "Fabian Circelli",
+        "Anders C. Hansen"
+      ],
+      "comments": [
+        {
+          "by": "ComplexSystems",
+          "text": "Aside from the usual squabbling about AI, it seems the bombshell claim is this: \"In particular, we show that the formalised Lean proof does not correspond to the NL proof of blow-up of solutions to the Navier-Stokes equations.\" So these authors seem to be claiming that OpenAI has not really proven Navier-Stokes at all. If I get their idea correctly, they are claiming that the LLM has not…"
+        },
+        {
+          "by": "stared",
+          "text": "For a refreshment of what is Navier-Stokes in a few words: https://p.migdal.pl/equations-explained-colorfully/#navier-s..."
+        },
+        {
+          "by": "buzzy_hacker",
+          "text": "If I'm understanding correctly, this is questioning the equivalence between the natural language proof and the lean proof, but not the correctness of the lean proof?"
+        },
+        {
+          "by": "afolkest",
+          "text": "Quote from paper worth being aware of: \"Disclaimer: We do not make claims about the correctness of OpenAI’s NL proof, we only make statements about mistranslations into Lean.\""
+        },
+        {
+          "by": "vanyle",
+          "text": "This paper is a large amount of nothing. First, natural language is not as precise as lean, so you have multiple ways to translate a NL argument to Lean. As shown in Fig 1, the LLM did a decent job at translating the argument about roots in a succint way. Moreover, the paper claims that the NL arguments of Navier-Stokes are stronger than the Lean ones. My understanding is that the translator LLM…"
+        }
+      ],
+      "image": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png"
+    },
+    {
+      "id": 49992257,
+      "url": "https://refactoringenglish.com/blog/anti-patterns-software-blogging/",
+      "hn": "https://news.ycombinator.com/item?id=49992257",
+      "title": "Anti-patterns in software blogging",
+      "time": 1791378506,
+      "points": 192,
+      "depth": [
+        {
+          "text": "someone says **software blogs** should **get to the point**, explain jargon, and work on phones",
+          "tier": "simple"
+        },
+        {
+          "text": "The author flags **meandering intros**, unexplained jargon, links readers must follow, sequel posts, stiff writing, and pages that **overflow on mobile**. Their advice: lead with the reader’s payoff, explain what they need, write naturally, and check mobile view.",
+          "tier": "substance",
+          "data": [
+            [
+              "Readers of this page on phones",
+              "25%"
+            ],
+            [
+              "Readers of the author's personal blog on phones",
+              "35%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some want posts to explain terms and stand alone; others prefer links to better sources and say the advice depends on the kind of blog.",
+      "comment_count": 108,
+      "terms": [
+        "anti-pattern",
+        "cgroups",
+        "HTML",
+        "LLM",
+        "MCP",
+        "low-contrast text"
+      ],
+      "entities": [
+        "Refactoring English",
+        "Go",
+        "Docker",
+        "Jellyfin",
+        "Netflix",
+        "FreeBSD",
+        "Linux",
+        "Tyler Cipriani",
+        "Git",
+        "Joel Spolsky",
+        "BASIC",
+        "Apple II",
+        "Kathy Sierra",
+        "Terence Eden",
+        "Raymond Chen",
+        "Firefox",
+        "Chrome",
+        "Braille Institute",
+        "Atkinson Hyperlegible",
+        "Piotr Letachowicz",
+        "IBM",
+        "Angular",
+        "Jeff Bezos",
+        "*BSD"
+      ],
+      "comments": [
+        {
+          "by": "phreack",
+          "text": "I always insist that education is not storytelling and should not be structured as such. People want to save \"twists\" and \"revelations\" for maximum impact and it's harmful. It should actually be the other way around and be, keeping the theme, \"spoilery\" and repetitive. Like a good presentation you should start by saying what you'll say, say it, then conclude by saying what you said. LLMs have…"
+        },
+        {
+          "by": "jrochkind1",
+          "text": "Some weeks i feel like the majority of software blogs I see are LLM written now. They are usually terrible. Maybe someone can tell the LLM's about these anti-patterns, like, seriously, would it help? I'd prefer of course if people just actually themselves wrote the text that they expect me to read my human self."
+        },
+        {
+          "by": "ram1500natrluvr",
+          "text": "\"The meandering intro\" might be the most common mistake, by far, but the most damaging mistake, by far, is the failure to connect the topic with something the readers are familiar with (anti-pattern #2). Some things simply require a certain level of expertise/prerequisites to begin to understand, but I've repeatedly seen in software blogging, READMEs, etc. a failure to answer \"what is this…"
+        },
+        {
+          "by": "linsomniac",
+          "text": "Last week, after following an HN link, I found myself thinking that tech blogs were starting to need that \"Jump to Recipe\" link that has taken over the food blogging world (for the better)."
+        },
+        {
+          "by": "janalsncm",
+          "text": "I would say these all boil down to empathy. Think about who your target audience is, and write for the least informed among them. It’s ok to be selective about your target audience. Most of us are writing for free anyways so we’re not losing revenue by not explaining what a computer is in an article about optimizing LLM throughput. You might be writing to other engineers who are familiar with the…"
+        }
+      ],
+      "image": "https://refactoringenglish.com/blog/anti-patterns-software-blogging/not-quite-how-devs-read-og.webp"
+    },
+    {
+      "id": 49986862,
+      "url": "https://github.com/M-Abozaid/esp32-c3-adblock",
+      "hn": "https://news.ycombinator.com/item?id=49986862",
+      "title": "ESP32-C3 Adblock",
+      "time": 1791337161,
+      "points": 177,
+      "depth": [
+        {
+          "text": "someone built a **tiny ad blocker** that searches **domain hashes** stored in flash instead of RAM",
+          "tier": "simple"
+        },
+        {
+          "text": "The **537k-domain “ultimate” list** only fits the single-app setup. Firmware OTA takes two app slots, leaving room for **~250k domains**.",
+          "tier": "substance",
+          "data": [
+            [
+              "device price",
+              "$2"
+            ],
+            [
+              "match time",
+              "~10 ms"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some call the idea brilliant; others say its latency may be a deal breaker.",
+      "comment_count": 73,
+      "terms": [
+        "DNS",
+        "hash",
+        "hash collision",
+        "FNV-1a",
+        "binary search",
+        "flash",
+        "PSRAM",
+        "OTA",
+        "Bloom filter"
+      ],
+      "entities": [
+        "ESP32-C3",
+        "Pi-hole",
+        "FNV-1a"
+      ],
+      "comments": [
+        {
+          "by": "muti",
+          "text": "Weird how the readme talks about hash collisions, but not in the way I would expect. Two blocked domains with the same hash isn't a problem, they both need to be blocked. Where hash collisions matter is false positives, e.g. if hash(google.com) = hash(adserver.com). There does appear to be a web dashboard and /unblock api so should be straightforward to resolve."
+        },
+        {
+          "by": "yoavm",
+          "text": "If you're ever thinking about getting an ESP32-C3, do yourself a favor and get the variant that you can connect an external antenna to. The normal C3 has a built-in antenna that is extremely weak, making it useless for most things I was planning using it for."
+        },
+        {
+          "by": "BLKNSLVR",
+          "text": "I'm a bit of a paranoid freak that likes lists, so I've got a PiHole that has a total list of 14-16M blocked domains. Great idea, and good for casual blocking, but I'm almost moving to an \"allow list\" mindset. This solution would probably work better for that, I wonder if the good parts of the internet would fit into an 140k list."
+        },
+        {
+          "by": "waysa",
+          "text": "I think it could fit even more domains using a Bloom Filter or similar probabilistic data structure. With a chance of false-positives of course. But that's a trade-off the project already makes."
+        },
+        {
+          "by": "1vuio0pswjnm7",
+          "text": "Whitelist/allowlist is easier, e.g., it's smaller Depends on the user but not everyone is visiting new websites everyday Even for those that are, the number of domain-IP mappings needed will be relatively small Definitely under 140,000 Most DNS data I use is \"static\", it rarely changes. As such most times I don't have to make DNS queries. I store the domain-IP mappings in proxy memory; this is…"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/92c17b22c5c92fdad0ce43bdba0d3a5e93c2c5f0ac69bcbf499318c6214736c3/M-Abozaid/esp32-c3-adblock"
+    },
+    {
+      "id": 49997718,
+      "url": "https://scottaaronson.blog/?p=10169",
+      "hn": "https://news.ycombinator.com/item?id=49997718",
+      "title": "The Mathocalypse",
+      "time": 1791401620,
+      "points": 169,
+      "depth": [
+        {
+          "text": "OpenAI's model dropped hundreds of **math results**, and researchers are **racing to make sense** of them",
+          "tier": "simple"
+        },
+        {
+          "text": "The **372 results** included what appeared to be a proof of the **Unique Games Conjecture**, but **no human has understood** just about any of the proofs yet. Some results had Lean certificates, and the race to understand and explain them has only just started.",
+          "tier": "substance",
+          "data": [
+            [
+              "results in OpenAI release",
+              "372"
+            ],
+            [
+              "problems tried",
+              "about 8,000"
+            ],
+            [
+              "share of longstanding open problems solved",
+              "~5%"
+            ],
+            [
+              "average compute per problem solved",
+              "about 3 hours"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: optimists see AI as a tool for exploring new math; skeptics worry unreadable proofs and questionable verification make the results hard to trust.",
+      "comment_count": 201,
+      "terms": [
+        "Unique Games Conjecture",
+        "Lean certificate",
+        "NP-hard"
+      ],
+      "entities": [
+        "OpenAI",
+        "Dana Moshkovitz",
+        "Unique Games Conjecture",
+        "Lean"
+      ],
+      "comments": [
+        {
+          "by": "hintymad",
+          "text": "I'm actually more optimistic. Math will still be fun and challenging and rewarding. It's just that we need to adapt how we choose which problems are worth solving Previously, due to the cognitive limitations of our brains, it was difficult to tell whether resolving a conjecture genuinely required years of dedicated effort, or if the answer was already hidden within existing human knowledge. Or…"
+        },
+        {
+          "by": "ks2048",
+          "text": "> It feels like something written by someone who’s on psychedelics. So much unclear and doesn’t make sense. Lots of name dropping of previous work without discussing why it can be used despite impossibility results > Basically the paper is so horribly written that it’s impossible to read it without AI help That's interesting and haven't seen this in all the coverage of this event. It sounds…"
+        },
+        {
+          "by": "nostrademons",
+          "text": "As a side note, you can tell this wasn't written by an AI by the first sentence: > mommy, I heard you got cooked! I heard that a robot solved the math problem you worked on for your whole career! OOF! My 8yo talks exactly like that. I could totally imagine him saying this, the same way, at the dining room table. I asked ChatGPT \"pretend you're an 8/9 year old today. how would you insult your mom…"
+        },
+        {
+          "by": "ajjenkins",
+          "text": "The line about “understanding the aliens” reminds me of Ted Chiang’s short story The Evolution of Human Science (2000). Highly recommend reading it. Very prescient for something written 26 years ago. https://gwern.net/doc/fiction/science-fiction/2000-chiang.pd..."
+        },
+        {
+          "by": "an0malous",
+          "text": "> But it also appears that no human has understood just about any of these proofs yet Has anyone verified any of the proofs produced by OpenAI or is everyone just assuming that it just be true because the Lean code checks out? Couldn’t the Lean code just be formulated incorrectly?"
+        }
+      ],
+      "image": "https://s0.wp.com/_si/?t=eyJpbWciOiJodHRwczpcL1wvc2NvdHRhYXJvbnNvbi5ibG9nXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIxXC8xMFwvY3JvcHBlZC1KYWNrZXQuZ2lmIiwidHh0IjoiU2h0ZXRsLU9wdGltaXplZCIsInRlbXBsYXRlIjoiZWRnZSIsImZvbnQiOiIiLCJibG9nX2lkIjoxMjk1MjA1ODB9.siOtN7gHw4tefA_rZickBw4GfI6tPxGgOQ1AXr2ZoOQMQ"
+    },
+    {
+      "id": 49982471,
+      "url": "https://citizenlab.ca/toronto-based-vpn-provider-plans-to-quit-canada-over-lawful-access-bill/",
+      "hn": "https://news.ycombinator.com/item?id=49982471",
+      "title": "Toronto-Based VPN Provider Plans to Quit Canada over Lawful-Access Bill",
+      "time": 1791312738,
+      "points": 154,
+      "depth": [
+        {
+          "text": "a privacy software company says it may **leave Canada** rather than weaken users’ **privacy protections**",
+          "tier": "simple"
+        },
+        {
+          "text": "**Psiphon** says it would move its operations if **Bill C-22** passes in its current form. It says the bill would force it to compromise safety features protecting user privacy; it has **20 million monthly users** worldwide.",
+          "tier": "substance",
+          "data": [
+            [
+              "monthly users worldwide",
+              "20 million"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 64,
+      "terms": [
+        "VPN",
+        "lawful access",
+        "CSIS",
+        "encryption",
+        "backdoor",
+        "mirrors"
+      ],
+      "entities": [
+        "Psiphon",
+        "Citizen Lab",
+        "Bill C-22",
+        "The Globe and Mail",
+        "Canadian Security Intelligence Service",
+        "Ron Deibert",
+        "OpenBSD",
+        "Tailscale",
+        "RightsCon",
+        "Carney"
+      ],
+      "comments": [
+        {
+          "by": "iamnothere",
+          "text": "I’m more concerned about OpenBSD. Given how centralized the project governance is, and its base in Canada, I can imagine the government attempting to (for example) force the project to serve backdoored images or updates to targeted people. A backdoor or bugdoor in the source would probably be spotted by someone, and I’m not even sure the bill allows a broad tool like that, but that’s not the only…"
+        },
+        {
+          "by": "LorenDB",
+          "text": "Problem is, where do you take a company like this if you want peace of mind that the new host country won't immediately try to pass a similar law?"
+        },
+        {
+          "by": "teamspirit",
+          "text": "I’m more curious about Tailscale. How would this law, or these types of laws, affect them?"
+        },
+        {
+          "by": "singpolyma3",
+          "text": "Didn't this bill get amended to clarify that no encryption back doors are required?"
+        },
+        {
+          "by": "frmrtntn",
+          "text": "Funny how all the Carney glazers seem to be MIA in this thread."
+        }
+      ],
+      "image": "https://citizenlab.ca/wp-content/uploads/2025/11/stock-visual-In-the-media.png"
+    },
+    {
+      "id": 49996259,
+      "url": "https://github.com/docker/docker-agent",
+      "hn": "https://news.ycombinator.com/item?id=49996259",
+      "title": "Docker Agent",
+      "time": 1791395318,
+      "points": 157,
+      "depth": [
+        {
+          "text": "Docker's tool lets you build **AI agent teams** that can **hand work off** to each other",
+          "tier": "simple"
+        },
+        {
+          "text": "It's a **Docker CLI plugin** you run with docker agent; it lists built-in tools and support for **MCP servers**. Providers include **OpenAI, Anthropic, and Gemini**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: one commenter is glad to see a Docker agent; skeptics call it vague or brittle, or question why it needs Docker.",
+      "comment_count": 68,
+      "terms": [
+        "YAML",
+        "Docker CLI plugin",
+        "MCP server",
+        "orchestration",
+        "agent harness"
+      ],
+      "entities": [
+        "Docker",
+        "Docker Agent",
+        "YAML",
+        "MCP",
+        "OpenAI",
+        "Anthropic",
+        "Gemini"
+      ],
+      "comments": [
+        {
+          "by": "Olscore",
+          "text": "Interesting seeing other people's approaches to orchestration. I've been working on Pullboard and just open sourced it: https://github.com/pullboard-dev/pullboard To me, orchestration is not really the core problem. The bigger challenge is handling agent coherency over long periods of time, (drift) so my solution is a living forum-like system where agents shout to one another, document work in…"
+        },
+        {
+          "by": "blakeashleyjr",
+          "text": "While I love new open source dev (especially in Go!), agent harnesses are turning into JS frameworks from yesteryear. All the cool kids have one!"
+        },
+        {
+          "by": "blutoot",
+          "text": "I'm honestly getting lost between what primary usecase/workflow each of these is intended for:\n1. https://kagent.dev/\n2. https://github.com/kubernetes-sigs/agent-sandbox\n3. https://github.com/docker/docker-agent (this project)\n4. https://docs.langchain.com/oss/python/deepagents/sandboxes#s...\n5. https://www.cloudflare.com/products/sandboxes/"
+        },
+        {
+          "by": "McScrooge",
+          "text": "https://docker.github.io/docker-agent/configuration/sandbox/ If, like me, you couldn't find any security-related info on the linked page."
+        },
+        {
+          "by": "rodolphoarruda",
+          "text": "Last year (2025), I lost count of how many times I tried using an LLM to set up Docker. It was still the era of prompting, then copy-pasting the response and seeing if it worked... and it almost never did. It’s great to see this new Docker agent. For me, it would be even more appealing to see an agent and a model specialized in Docker working together, capable of proposing advanced configurations…"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/88982acf66869072204a4022b1994c48b457d82852964e4bfeb3844f8b03e1cc/docker/docker-agent"
+    },
+    {
       "id": 49982498,
       "url": null,
       "hn": "https://news.ycombinator.com/item?id=49982498",
@@ -1137,6 +2138,70 @@
     }
   ],
   "glossary": {
+    "subagent": "A helper assigned a smaller part of a larger task.",
+    "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
+    "class action": "A lawsuit brought by one person or business on behalf of a larger group with similar claims.",
+    "interchange fees": "The charges merchants pay to the banks that issue cards each time someone uses one.",
+    "ACH": "Automated Clearing House: a US system banks use to send money between accounts electronically.",
+    "acquirer": "The payment provider a merchant uses to handle card transactions.",
+    "merchant discount rate": "The fee a merchant pays its payment provider to accept card payments.",
+    "interactive explainer": "An explanation you can explore and interact with, rather than just read.",
+    "UI": "User interface: the screens and controls people use to operate a device.",
+    "system card": "A document describing how an AI system was tested and what risks were found.",
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "regression": "A drop in how well something performs compared with an earlier version.",
+    "URL fragment": "The part of a web address after #; this page uses it to carry the message without sending it to its server.",
+    "chirality": "A molecule’s handedness: it and its mirror image cannot be lined up exactly.",
+    "homochirality": "A situation where a group of molecules uses just one of two mirror-image forms.",
+    "autocatalysis": "When a reaction makes something that helps the same reaction happen again.",
+    "asymmetric organic synthesis": "Making carbon-based molecules in reactions that favor one of two mirror-image forms.",
+    "priority-driven software": "Software that gives the most important computer jobs priority over less important ones.",
+    "defensive programming": "Building software that can anticipate or fix errors on its own.",
+    "software engineering": "A way of designing and building software with the same serious planning as other engineering work.",
+    "ASCII art": "Pictures made from ordinary text characters like letters and punctuation.",
+    "Unicode": "A shared way to represent characters from writing systems around the world in files and software.",
+    "reduced motion": "A setting that asks apps to limit movement and animation.",
+    "dithering": "A way to make extra shades or colors by arranging dots of the colors already available.",
+    "dogfooding": "Using a product yourself while building it, to see how it works in real life.",
+    "frontier AI": "The most capable AI systems being built at a particular time.",
+    "spending ceiling": "An upper limit on what someone is allowed to spend, not necessarily what they actually spend.",
+    "Git Operations": "The work of sending, receiving, or changing code in a project.",
+    "Pull Requests": "A way to ask for code changes to be added to a project after someone reviews them.",
+    "Webhooks": "Automatic messages one service sends to another when something happens.",
+    "Actions": "GitHub's tool for automatically running tasks when code changes or other events happen.",
+    "Lean": "A computer program used to write mathematical proofs and check that their steps are correct.",
+    "autoformalisation": "Turning a proof written in ordinary language into a form a computer can check.",
+    "Navier-Stokes equations": "Equations used to describe how fluids like water and air move.",
+    "blow-up": "When a mathematical solution grows without limit in a finite amount of time.",
+    "anti-pattern": "A common way of doing something that tends to cause problems.",
+    "cgroups": "A Linux feature that lets the system manage a set of running programs together.",
+    "HTML": "HyperText Markup Language: code that tells a browser what content a web page has.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "MCP": "Model Context Protocol: a standard way for AI apps to connect to outside tools.",
+    "low-contrast text": "Text whose letters are too close in color to the background, making it harder to read.",
+    "DNS": "Domain Name System: the internet's address book, which helps a computer find a website from its name.",
+    "hash": "A label calculated from data that Git uses to locate stored content.",
+    "hash collision": "When two different inputs produce the same short fingerprint.",
+    "FNV-1a": "A specific rule for turning data into a repeatable fingerprint.",
+    "binary search": "A way to find something in a sorted list by checking the middle and narrowing the search repeatedly.",
+    "flash": "Storage in a device that keeps information when the power is off.",
+    "PSRAM": "Pseudo-static random-access memory: extra working space for a device's programs and data.",
+    "OTA": "Over-the-air: sending an update to a device through its network connection.",
+    "Bloom filter": "A compact way to check whether something is on a list; it can sometimes say yes when it isn't.",
+    "Unique Games Conjecture": "A claim about limits on how closely quick computer methods can solve certain problems.",
+    "Lean certificate": "A proof written in a format a computer can check step by step.",
+    "NP-hard": "A label for problems at least as hard as the toughest problems whose answers can be checked quickly.",
+    "VPN": "Virtual private network: a service that sends your internet traffic through another computer, often to protect it or make it appear to come from somewhere else.",
+    "lawful access": "A proposed legal power to make online services help authorities monitor people or get information.",
+    "CSIS": "Canadian Security Intelligence Service: Canada's intelligence agency.",
+    "encryption": "A way of scrambling information so only someone with the right key can read it.",
+    "backdoor": "A way into a protected device or service that bypasses its normal security.",
+    "mirrors": "Copies of software or files kept on different computers so people can get them from another place.",
+    "YAML": "A readable text format for writing settings and instructions in a structured way.",
+    "Docker CLI plugin": "A small add-on you can run by typing a Docker command in a terminal.",
+    "MCP server": "Model Context Protocol server: a computer that lets an AI connect to outside tools or information.",
+    "orchestration": "Coordinating several AI agents so they can hand tasks to one another.",
+    "agent harness": "The surrounding software that runs an AI agent and helps manage its work.",
     "JavaScript": "A programming language; here, it lets an agent combine tool calls.",
     "DMCA takedown notice": "Digital Millennium Copyright Act: a notice asking a website to remove material that someone says copies their work.",
     "§ 1201": "A section of US law that one commenter says prohibits getting around a tool that controls access to copyrighted material.",
@@ -1163,7 +2228,6 @@
     "JMAP": "JSON Meta Application Protocol: a way for mail apps to exchange email with a mail service.",
     "WebView": "A browser built into another app, used to show web content.",
     "tracking pixel": "A tiny, often hidden image that can tell a sender when an email was opened.",
-    "MCP": "Model Context Protocol: a standard way for AI apps to connect to outside tools.",
     "Flatpak": "A way to install Linux apps in packages that include many of the pieces they need.",
     "MIME": "Multipurpose Internet Mail Extensions: rules email uses to carry attachments and different kinds of content.",
     "UUID": "Universally unique identifier: a label designed to identify one item without being confused with another.",
@@ -1179,7 +2243,6 @@
     "HDR": "High Dynamic Range: a way for a screen to show more detail in bright and dark areas.",
     "SIMD": "Single Instruction, Multiple Data: a way to apply one operation to several values at once.",
     "progressive decoding": "Showing an image bit by bit as it loads, instead of waiting for the full image.",
-    "Unique Games Conjecture": "A claim about limits on how closely quick computer methods can solve certain problems.",
     "Lean proof": "A proof checked by Lean, a program that helps catch gaps in mathematical reasoning.",
     "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
     "beta": "A version released for people to try before it is considered finished.",
@@ -1201,11 +2264,9 @@
     "Vulkan": "A way for software to send graphics work to a graphics card.",
     "x86-64": "A kind of computer code understood by many PC processors.",
     "GNM command buffers": "Batches of drawing instructions a game sends for the PlayStation to carry out.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "desktop wrapper": "A program that packages a website or browser app so it can run like a desktop app.",
     "cleanroom": "A way to build software by studying what it does while keeping its original code out of the process.",
     "OSS": "Open-source software: software whose code is shared so others can inspect it and sometimes reuse it under a license.",
-    "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
     "preference signals": "Clues from people's choices that can help show what answers they prefer.",
     "context": "A value passed along with work so it can carry a stop signal or a timeout.",
     "AGI": "Artificial General Intelligence: a hypothetical AI that could handle many kinds of tasks, not just one narrow job.",
