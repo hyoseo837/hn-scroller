@@ -2,6 +2,454 @@
   "date": "2026-10-07",
   "cards": [
     {
+      "id": 49982498,
+      "url": null,
+      "hn": "https://news.ycombinator.com/item?id=49982498",
+      "title": "Tell HN: GitHub refuses to remove cracked copies of my software after a month",
+      "time": 1791312841,
+      "points": 374,
+      "depth": [
+        {
+          "text": "Photopea's developer says **GitHub** wouldn't remove **ad-free copies** of its browser-based editor",
+          "tier": "simple"
+        },
+        {
+          "text": "The developer says people use **AI models** to strip ads from Photopea's JavaScript and publish it on GitHub. GitHub said it **couldn't confirm a violation** of 17 U.S. Code § 1201; commenters suggested a **copyright takedown** or lawyer.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say file a copyright takedown or hire an IP lawyer; others say copying open-web software should be allowed, and takedowns won't stop it.",
+      "comment_count": 204,
+      "terms": [
+        "JavaScript",
+        "DMCA takedown notice",
+        "§ 1201",
+        "copyright infringement"
+      ],
+      "entities": [
+        "Photopea",
+        "GitHub",
+        "JavaScript",
+        "DMCA"
+      ],
+      "comments": [
+        {
+          "by": "gwbas1c",
+          "text": "> take the Javascript code from my website, remove all ads from it, and they publish such a \"new product\" on Github for everyone to download Remember that there is still quite a bit of friction to doing that, and that many people have better things to do than jump through those hoops. In addition to the \"hire a lawyer\" comments in this thread, I suggest building in some heuristics that detect…"
+        },
+        {
+          "by": "thought-gap",
+          "text": "First off, let me get this out of the way - I am not a lawyer. If you want a legal advice talk to a lawyer. Second, I am sorry this is happening to you. Third, based on GitHub's reply, specifically > we're unable to confirm a violation of 17 U.S. Code § 1201 they took your submission as 17 U.S. Code § 1201 takedown notice. Maybe you specifically stated this. Maybe it was implied. This is likely…"
+        },
+        {
+          "by": "DannyBee",
+          "text": "IP lawyer here - I can't give you actual legal advice because you aren't my client, but generally, you have two options here, neither of which will be surprising, or very satisfying: 1. Pay a lawyer or firm that specializes in this sort of thing to play whack a mole for you 2. Accept it as normal losses and ignore it. Contrary to others claims here, it is not a 500/hour thing to do #1 when…"
+        },
+        {
+          "by": "summarity",
+          "text": "Is there a ticket code or other contact you've been in touch with? As for DMCA filings, we publish all of them here: https://github.com/github/dmca I see two from Photopea, one from 2022 ( https://github.com/github/dmca/blob/d97814f268e07e62aabe8b5c... ) and one from 2024 ( https://github.com/github/dmca/blob/d97814f268e07e62aabe8b5c... ) - could you point to the recent filing? I work at GH, but…"
+        },
+        {
+          "by": "IvanK_net",
+          "text": "Hey guys, thank you all very much for your comments! I just woke up, I did not really believe my post would get this much attention, so thanks! Honestly, I was a hoping that giving attention to this problem here at HN might lead to someone from Github actually noticing my problem and looking into it. I think I will try solving it with a lawyer. But it would be really cool if I could spend my days…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49987076,
+      "url": "https://strandsagents.com/blog/introducing-strands-decider/",
+      "hn": "https://news.ycombinator.com/item?id=49987076",
+      "title": "Strands Decider 2B: a small, open-source, decision model",
+      "time": 1791338531,
+      "points": 227,
+      "depth": [
+        {
+          "text": "someone released a small **open-source model** that **picks between options** instead of writing text",
+          "tier": "simple"
+        },
+        {
+          "text": "It has **2 billion parameters**, runs on a **local CPU or GPU**, and has a median latency of around 115ms on widely available hardware. In a demo, it catches an agent **guessing a city** for a weather lookup and makes the agent ask which city the user meant.",
+          "tier": "substance",
+          "data": [
+            [
+              "parameters",
+              "2 billion"
+            ],
+            [
+              "median local latency",
+              "around 115ms"
+            ],
+            [
+              "M3 MacBook median latency for small tasks",
+              "around 153ms"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say it’s already useful for local bulk classification; others argue JevBench leans too heavily on text classification and can miss tasks needing actual intelligence.",
+      "comment_count": 66,
+      "terms": [
+        "decision model",
+        "calibration",
+        "pointer head",
+        "LoRA",
+        "NPU",
+        "JevBench"
+      ],
+      "entities": [
+        "Strands Decider 2B",
+        "Strands Agents",
+        "Strands Harness SDK",
+        "strands-labs",
+        "Marc Brooker",
+        "Mike Chambers",
+        "Fabio Nonato de Paula",
+        "Jev",
+        "JevBench",
+        "TypeSafe AI",
+        "Amazon Bedrock",
+        "Qwen3.5-2B",
+        "GitHub",
+        "Hugging Face",
+        "Nvidia",
+        "Python",
+        "Cedar",
+        "Cloudflare",
+        "llama.cpp",
+        "Ollama",
+        "Intern-Decision",
+        "Laya",
+        "Chrome",
+        "WebGPU",
+        "English",
+        "Zulu",
+        "Dutch",
+        "Jerry"
+      ],
+      "comments": [
+        {
+          "by": "real_faxenoff",
+          "text": "As a regular user of a bunch of specialized micromodels, I'll tell you this: you won't be happy with such a model (and its JEV counterparts) running permanently in the background on your PC's CPU. You need to offload their processing to the NPU. There are many pitfalls along the way, but the result is worth it. NPU performance will be twice as high, while power consumption will be four times…"
+        },
+        {
+          "by": "adenta",
+          "text": "At this point I can't wait for a comedian to release a decision model backed by humans. Meet Jerry- it's literally a guy named Jerry answering your questions."
+        },
+        {
+          "by": "mattvr",
+          "text": "Why is everyone calling binary choices `noul`? Does this have some meaning or is it just copying Jev’s API?"
+        },
+        {
+          "by": "keyle",
+          "text": "Fantastically well written. It's rare for me to be able to understand what the AI gurus are talking about, and this was written by humans for humans. It can technically be used for a lot of use cases, I'd like people to chime in on ideas on this?"
+        },
+        {
+          "by": "dev_l1x_be",
+          "text": "General question: what is this model good for? I have mixed results with Laya on a pdf classifier (Jev was doing much better)."
+        }
+      ],
+      "image": "https://strandsagents.com/blog/og/introducing-strands-decider.png"
+    },
+    {
+      "id": 49985643,
+      "url": "https://2026.stateofdevs.com/en-US/",
+      "hn": "https://news.ycombinator.com/item?id=49985643",
+      "title": "State of Devs 2026",
+      "time": 1791329190,
+      "points": 219,
+      "depth": [
+        {
+          "text": "a **developer survey** finds **burnout is common** and **opinions on AI are sharply split**",
+          "tier": "simple"
+        },
+        {
+          "text": "The first Devographics survey to ask about developers' mental state found **62%** had experienced **burnout** at some point in their career. Views on AI were **split**: 49% felt positive towards it, while 42% felt negative.",
+          "tier": "substance",
+          "data": [
+            [
+              "Developers reporting burnout",
+              "62%"
+            ],
+            [
+              "Positive views of AI",
+              "49%"
+            ],
+            [
+              "Negative views of AI",
+              "42%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters see AI as a threat to jobs and work quality; others say it helps with legacy code and upgrades.",
+      "comment_count": 126,
+      "terms": [
+        "burnout",
+        "AI brainfry",
+        "selection bias",
+        "tech debt"
+      ],
+      "entities": [
+        "Devographics",
+        "Miranda Heath",
+        "Software Stewardship Lab"
+      ],
+      "comments": [
+        {
+          "by": "adverbly",
+          "text": "There needs to be a \"what stage of grief are you in\" question. • Denial • Anger • Bargaining • Depression • Acceptance Here is what I see(and common thought patterns) • Denial (models will never be able to replace the majority of important work) • Anger (angry at data centers, energy use, IP theft) • Bargaining (people thinking that their personalized agentic dev setup or self-hosting is gonna…"
+        },
+        {
+          "by": "serbuvlad",
+          "text": "Let's be honest about it: this has been a long time coming. If you think of it in terms of the wider civilization, way too much human captial was tied up in software dev. And the jobs therin are mostly very mundane and of a liniar-translation nature. (translate this Adobe XD design in CSS/React; translate these REST calls to SQL). And 80% of the time was spent chasing trivial mistakes. Humans can…"
+        },
+        {
+          "by": "sandeepkd",
+          "text": "My hunch is that in the long run its going to be net negative in software. A lot of companies exists as of today cause a lot of people were able to just focus on building without constantly worrying about the fear of lay off. With the concept of job security based on talent and effort being dismantled, everyone would always be in a constant look out mode now."
+        },
+        {
+          "by": "beardbandit",
+          "text": "> Within the next 5 years, how likely do you think it is that you will have to change careers due to reasons beyond your control? When I filled this out myself in July, I was \"somewhat unlikely\" If you ask me again now, only a few months later, I'm probably leaning towards \"Somewhat likely\". Insane how fast this space is moving."
+        },
+        {
+          "by": "onion2k",
+          "text": "Which of these workplace issues have you experienced throughout your professional career? Bad Management: 63% I don't think you can really ask whether people have seen 'bad management' without explaining exactly what that means. People, including me when I was a developer, often see 'bad management' as 'I don't agree with what I'm being told to do'. That's not necessarily bad management; far more…"
+        }
+      ],
+      "image": "https://assets.devographics.com/surveys/devs2026-og.png"
+    },
+    {
+      "id": 49984716,
+      "url": "https://penguin-mail.com/",
+      "hn": "https://news.ycombinator.com/item?id=49984716",
+      "title": "Penguin Mail – open-source Rust email client for Linux with AI",
+      "time": 1791323983,
+      "points": 217,
+      "depth": [
+        {
+          "text": "someone made a **Linux mail app** with email, calendars, contacts, and **AI** you can leave off",
+          "tier": "simple"
+        },
+        {
+          "text": "It supports **Gmail, Microsoft, IMAP and POP3**, plus calendars and contacts. Its assistant **stays off** until you choose a model, can run on your computer through LM Studio or Ollama, and **asks before sending mail** or changing a setting.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some praise its UI and welcome a Linux alternative; others worry about HTML email safety and whether a new client is stable.",
+      "comment_count": 148,
+      "terms": [
+        "IMAP",
+        "POP3",
+        "SMTP",
+        "CalDAV",
+        "CardDAV",
+        "Sieve",
+        "GnuPG",
+        "Rust",
+        "GPL-3.0-or-later",
+        "JMAP",
+        "WebView",
+        "tracking pixel",
+        "MCP",
+        "Flatpak",
+        "MIME",
+        "UUID",
+        "mbox",
+        "maildir",
+        "sandboxing",
+        "vibe-coded"
+      ],
+      "entities": [
+        "Penguin Mail",
+        "Pivotd",
+        "Linux",
+        "Rust",
+        "Gmail",
+        "Microsoft",
+        "Outlook.com",
+        "Hotmail",
+        "Live",
+        "Microsoft 365",
+        "Fastmail",
+        "iCloud",
+        "Yahoo",
+        "Google",
+        "Google Calendar",
+        "Microsoft Graph",
+        "LM Studio",
+        "Ollama",
+        "GnuPG",
+        "YouTube",
+        "Thunderbird",
+        "Sparrow",
+        "JMAP",
+        "Claude",
+        "notmutt",
+        "Aerion",
+        "klar.im",
+        "Mail.app",
+        "CalDAV",
+        "CardDAV",
+        "Sieve",
+        "MCP",
+        "Flatpak"
+      ],
+      "comments": [
+        {
+          "by": "jttnr",
+          "text": "The thing with all these vibe-coded email clients is: how well do they sanitize the full-content view of HTML emails?\nThunderbird and the like go to great lengths to make viewing those emails safe, e.g., by preventing inline JavaScript and all kinds of tracking techniques (pixels, CSS references, etc.). Without having checked, do these vibe-coded clients just render the HTML in a WebView, or do…"
+        },
+        {
+          "by": "slipheen",
+          "text": "That's a very nice looking app - I like the look of it it gives me Mail.app vibes. A mail client is always a tough thing to get right so I'm glad you're working on one I love then idea that as the total cost (time/money/attention) of personalizing software continues to come down, more people will be able to encourage a diaspora of options, tailored to each niche."
+        },
+        {
+          "by": "mburns",
+          "text": "Interesting that they call out Fastmail as a supported provider, but don't support JMAP. Seems like that would have been an easy stretch goal for Claude, and a good way to stand out amongst the competition."
+        },
+        {
+          "by": "wewewedxfgdf",
+          "text": "The industry standard wording is to suffix the headline with \"written in Rust\". Example: \"Penguin Mail – open-source email client for Linux with AI, written in Rust\". Its important, or people might miss the most interesting/important thing about your software."
+        },
+        {
+          "by": "tlhunter",
+          "text": "Does anyone remember Sparrow? I like the idea of a native Linux email client. The UI looks pretty good too. It's really not hard to beat thunderbird. Calling it version 1.0 is bullshit though. It's only about a month old:\nhttps://github.com/c9dev/penguin-mail/graphs/contributors?al... A project with the complexity of an email client cannot be considered stable in a month. There are bugs that will…"
+        }
+      ],
+      "image": "https://penguin-mail.com/brand/social-preview.png"
+    },
+    {
+      "id": 49990224,
+      "url": "https://github.com/szabadkai/c64-keyboard-font/",
+      "hn": "https://news.ycombinator.com/item?id=49990224",
+      "title": "A font recreated from photographs of classic Commodore 64 keycaps",
+      "time": 1791364675,
+      "points": 192,
+      "depth": [
+        {
+          "text": "someone rebuilt the Commodore 64's **key lettering** from photos and turned it into a **usable font**",
+          "tier": "simple"
+        },
+        {
+          "text": "The package includes desktop fonts, a webfont, editable outlines, and a specimen, plus **all 63 PETSCII graphic front legends**. Lowercase input displays as uppercase. The outlines take identities and key assignments from the Ultimate Commodore 64 Reference, while frame thickness, curves, and print proportions are inferred from a supplied keyboard photo; they’re **not exact photo traces**.",
+          "tier": "substance",
+          "data": [
+            [
+              "PETSCII graphic front legends",
+              "63"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some call it nice; others say the punctuation is misaligned and the exclamation mark is too small or sits too high.",
+      "comment_count": 35,
+      "terms": [
+        "PETSCII",
+        "webfont",
+        "keycap"
+      ],
+      "entities": [
+        "Commodore 64",
+        "C64 Keyboard",
+        "GitHub",
+        "Ultimate Commodore 64 Reference",
+        "PETSCII"
+      ],
+      "comments": [
+        {
+          "by": "jankhg",
+          "text": "This reminds me of this beautifully written article about the font Gorton. https://aresluna.org/the-hardest-working-font-in-manhattan/ https://news.ycombinator.com/item?id=49201953"
+        },
+        {
+          "by": "dar5hak",
+          "text": "If creatively expanded to more characters, this would make a pretty nice coding font."
+        },
+        {
+          "by": "tniemi",
+          "text": "The old versions of VIC-20 used a font called Microgramma. https://www.reddit.com/r/vintagecomputing/comments/1pjw7q6/t... https://en.wikipedia.org/wiki/Microgramma_(typeface)"
+        },
+        {
+          "by": "otikik",
+          "text": "\"!\" is like half of the size of \"?\". Even if that's faithful to the keyboard, it is very annoying."
+        },
+        {
+          "by": "gwbas1c",
+          "text": "The special characters / punctuation are not aligned. The !#$% characters either float too high or need to be a little bigger. (Yes, I copied the image from the page into Paint and drew a line)"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/a8f2a1f5a9b069cea5bd16cf1dfc09173bae752d9cc476fad590340b721f4db6/szabadkai/c64-keyboard-font"
+    },
+    {
+      "id": 49991227,
+      "url": "https://developer.chrome.com/blog/jpeg-xl-in-chrome",
+      "hn": "https://news.ycombinator.com/item?id=49991227",
+      "title": "Shipping JPEG XL in Chrome",
+      "time": 1791372302,
+      "points": 179,
+      "depth": [
+        {
+          "text": "Chrome is adding **JPEG XL** image support, with **lossless compression** and better photo compression",
+          "tier": "simple"
+        },
+        {
+          "text": "Decoding starts with **Chrome 155**. JPEG XL offers **30-50% better compression** than JPEG, built-in HDR, and lossless JPEG transcoding; Chrome integrated **jxl-rs**, a pure Rust decoder, with SIMD performance work.",
+          "tier": "substance",
+          "data": [
+            [
+              "compression than JPEG",
+              "30-50% better"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters welcome Chrome shipping JPEG XL; others point to compatibility gaps and question whether it beats AVIF.",
+      "comment_count": 87,
+      "terms": [
+        "decoding",
+        "lossless compression",
+        "HDR",
+        "SIMD",
+        "Rust",
+        "progressive decoding"
+      ],
+      "entities": [
+        "Chrome",
+        "Google",
+        "JPEG XL",
+        "jxl-rs",
+        "Rust",
+        "AVIF",
+        "JPEG",
+        "libjxl",
+        "Highway",
+        "C++"
+      ],
+      "comments": [
+        {
+          "by": "xx_ns",
+          "text": "It's exciting to see JXL support being re-added in Chrome after being removed a while ago and them seemingly not being interested in supporting it [1]. I think JXL is a cool image format, but was being held back by the most popular browser not supporting it, limiting its use (in the web especially) by a lot. [1]: https://issues.chromium.org/issues/40270698"
+        },
+        {
+          "by": "swiftcoder",
+          "text": "See previous HN discussions for context: Google set to deprecate JPEG XL support in Chrome 110 - https://news.ycombinator.com/item?id=33399940 JPEG XL support has officially been removed from Chromium - https://news.ycombinator.com/item?id=33933208 Chrome Jpegxl Issue Reopened - https://news.ycombinator.com/item?id=46033330 The case agains JPEG XL - https://news.ycombinator.com/item?id=49690554"
+        },
+        {
+          "by": "revolvingthrow",
+          "text": "Glad to see it happen. I'd prefer it there was just one format rather than both jxl and avif, but at least it's the final nail in the coffin of webp which seems to have accomplished little but annoy people for not much gain. The wider ecosystem support is still far from commonplace, but it is slowly changing. iOS 18 wouldn't work with .jxl in Photos, but 27 does. Similarly, quick look and preview…"
+        },
+        {
+          "by": "kelseydh",
+          "text": "Every time a new image format comes out, I think about the compatibility crisis between apps. E.g. Telegram still doesn't have sane support for .webp, it treats them as stickers. MacOS can take a long time to update with support for new formats. Image viewer apps even longer, many never updating to support new formats."
+        },
+        {
+          "by": "tepmoc",
+          "text": "One downside is that you cannot tell if format lossy or lossless by looking at its extension."
+        }
+      ],
+      "image": "https://developer.chrome.com/static/blog/jpeg-xl-in-chrome/images/cover.png"
+    },
+    {
       "id": 49984923,
       "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
       "hn": "https://news.ycombinator.com/item?id=49984923",
@@ -689,6 +1137,48 @@
     }
   ],
   "glossary": {
+    "JavaScript": "A programming language; here, it lets an agent combine tool calls.",
+    "DMCA takedown notice": "Digital Millennium Copyright Act: a notice asking a website to remove material that someone says copies their work.",
+    "§ 1201": "A section of US law that one commenter says prohibits getting around a tool that controls access to copyrighted material.",
+    "copyright infringement": "Using somebody else's protected work in a way copyright law doesn't permit.",
+    "decision model": "A program that weighs possible choices and predicts or selects one.",
+    "calibration": "How well a model’s confidence matches how often its choices are actually right.",
+    "pointer head": "A part of Jeeves that scores answer options to produce probabilities.",
+    "LoRA": "Low-Rank Adaptation: a way to adapt an AI for a new task by training a small add-on instead of changing the whole AI.",
+    "NPU": "Neural Processing Unit: a chip part made to handle the kinds of calculations used by AI.",
+    "JevBench": "A collection of questions used to compare how accurately models answer and how well their confidence matches.",
+    "burnout": "A state of exhaustion that happens when work drains more energy than it gives back.",
+    "AI brainfry": "Feeling mentally overloaded from running AI agents in parallel.",
+    "selection bias": "A comparison gets skewed because the people included are different from the people left out.",
+    "tech debt": "Extra cleanup work left behind when software choices make future changes harder.",
+    "IMAP": "Internet Message Access Protocol: a way for a mail app to read and sync messages kept by an email service.",
+    "POP3": "Post Office Protocol version 3: a way for a mail app to fetch messages from an email service.",
+    "SMTP": "Simple Mail Transfer Protocol: the system mail apps use to send messages.",
+    "CalDAV": "Calendaring Extensions to WebDAV: a way for calendar apps to share and sync calendars.",
+    "CardDAV": "vCard Extensions to WebDAV: a way for apps to share and sync contacts.",
+    "Sieve": "A way to write rules that automatically sort or handle incoming email.",
+    "GnuPG": "GNU Privacy Guard: a tool for signing messages so others can check who sent them, or encrypting them so only intended people can read them.",
+    "Rust": "A programming language; commenters say 37signals used it for the Hey backend.",
+    "GPL-3.0-or-later": "A software licence that lets people use, change, and share software under its terms.",
+    "JMAP": "JSON Meta Application Protocol: a way for mail apps to exchange email with a mail service.",
+    "WebView": "A browser built into another app, used to show web content.",
+    "tracking pixel": "A tiny, often hidden image that can tell a sender when an email was opened.",
+    "MCP": "Model Context Protocol: a standard way for AI apps to connect to outside tools.",
+    "Flatpak": "A way to install Linux apps in packages that include many of the pieces they need.",
+    "MIME": "Multipurpose Internet Mail Extensions: rules email uses to carry attachments and different kinds of content.",
+    "UUID": "Universally unique identifier: a label designed to identify one item without being confused with another.",
+    "mbox": "A file format that stores many email messages together.",
+    "maildir": "A way to store each email as its own file in a folder.",
+    "sandboxing": "Restricting what a program can access so it cannot freely affect the rest of the system.",
+    "vibe-coded": "Made by steering an AI with informal requests instead of writing most of the code by hand.",
+    "PETSCII": "PET Standard Code of Information Interchange: the Commodore's set of letters and symbols, including graphics.",
+    "webfont": "A font made to load on a website, so its text can use that lettering.",
+    "keycap": "The top of a keyboard key, where its letter or symbol is printed.",
+    "decoding": "Turning the data in an image file into a picture a browser can show.",
+    "lossless compression": "Making an image file smaller without losing any of the original image information.",
+    "HDR": "High Dynamic Range: a way for a screen to show more detail in bright and dark areas.",
+    "SIMD": "Single Instruction, Multiple Data: a way to apply one operation to several values at once.",
+    "progressive decoding": "Showing an image bit by bit as it loads, instead of waiting for the full image.",
     "Unique Games Conjecture": "A claim about limits on how closely quick computer methods can solve certain problems.",
     "Lean proof": "A proof checked by Lean, a program that helps catch gaps in mathematical reasoning.",
     "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
