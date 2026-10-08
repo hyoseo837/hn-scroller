@@ -1,0 +1,434 @@
+{
+  "date": "2026-10-08",
+  "cards": [
+    {
+      "id": 49992125,
+      "url": "https://www.readingchronicle.co.uk/news/26612080.house-15m-underground-tunnels-sale-300k/",
+      "hn": "https://news.ycombinator.com/item?id=49992125",
+      "title": "House with 15m underground tunnels for sale for 300k",
+      "time": 1791377830,
+      "points": 190,
+      "depth": [
+        {
+          "text": "someone dug **rooms and tunnels** beneath their home, then built a **railway** to move excavated chalk",
+          "tier": "simple"
+        },
+        {
+          "text": "Civil engineer **Tony Deane** spent two decades on the project, with help from his **six children**. It reaches more than 15m underground and has more than 1,300 square feet of underground space; one entrance is **hidden inside a rocket** by the pool.",
+          "tier": "substance",
+          "data": [
+            [
+              "Guide price",
+              "£300,000-£325,000"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 175,
+      "terms": [
+        "EMP-resistant",
+        "shoring"
+      ],
+      "entities": [
+        "Tony Deane",
+        "Richard Worrall",
+        "BTG Eddisons Property Auctions",
+        "West Berkshire Council"
+      ],
+      "comments": [
+        {
+          "by": "samstress",
+          "text": "One room even features a secret entrance — hidden inside a rocket by the pool. — Ey — pshhh! :-) I used to live in the inner city of Leipzig during my university days, and we had a door in the basement that led to wartime tunnels connecting it to other houses. It wasn't like a massive maze, just a hub with three other paths, each leading to another house nearby. From there, however, if they'd…"
+        },
+        {
+          "by": "_jholland",
+          "text": "The listing of the property on the auction site: https://www.btgeddisonspropertyauctions.com/properties/20260... It includes many more photos than the article, as well as floor plans for the subterranean areas"
+        },
+        {
+          "by": "ggm",
+          "text": "By definition tunnels are underground. 15m deep would have got us there. The headline could be width or height!"
+        },
+        {
+          "by": "looperhacks",
+          "text": "lowercase m. 15 meters, not 15 million tunnels :D If you're interested in secret tunnels, check out Colin Furze on Youtube!"
+        },
+        {
+          "by": "fusslo",
+          "text": "I, too, one day dream of using my children as labor for my underground tunnel system. To fight the ant, you must become the ant I'm joking, but it's heartening to see quirky hobbies by qualified people (he was a civil engineer)."
+        }
+      ],
+      "image": "https://www.readingchronicle.co.uk/resources/images/21545047/"
+    },
+    {
+      "id": 49991243,
+      "url": "https://github.com/snuri00/psp-web-recomp",
+      "hn": "https://news.ycombinator.com/item?id=49991243",
+      "title": "God of War on PSP, recompiled to WebAssembly and running in the browser",
+      "time": 1791372447,
+      "points": 190,
+      "depth": [
+        {
+          "text": "someone got **God of War** running in a browser without needing an emulator",
+          "tier": "simple"
+        },
+        {
+          "text": "It **translates PSP machine code** into C++, compiles that to WebAssembly, and recreates parts of the PSP's operating system and graphics chip. Chains of Olympus runs through menus, cutscenes and combat; measured scenes ran at **60 frames per second** in Chrome and Firefox, at up to four times the PSP's resolution. You need a disc image of a game you own; the project includes **no game data**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Chains of Olympus, measured scenes",
+              "60 frames per second"
+            ],
+            [
+              "Chains of Olympus resolution",
+              "up to four times the PSP's resolution"
+            ],
+            [
+              "Ghost of Sparta",
+              "55 to 60 frames per second"
+            ],
+            [
+              "Ghost of Sparta resolution",
+              "three times the native resolution"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say this is still an emulation stack; others call it reverse engineering and direct porting that helps preserve old games.",
+      "comment_count": 101,
+      "terms": [
+        "static recompilation",
+        "WebAssembly",
+        "HLE kernel",
+        "WebGL2",
+        "JIT",
+        "emulator"
+      ],
+      "entities": [
+        "God of War: Chains of Olympus",
+        "God of War: Ghost of Sparta",
+        "PSPRecomp",
+        "PPSSPP",
+        "JPCSP",
+        "Emscripten",
+        "FFmpeg",
+        "Sony",
+        "Chrome",
+        "Firefox"
+      ],
+      "comments": [
+        {
+          "by": "wren6991",
+          "text": "> PSP games running in the browser without an emulator. The game's MIPS machine code is translated ahead of time into C++, compiled to WebAssembly, and linked against a small reimplementation of the PSP's operating system and graphics chip that draws with WebGL2. Feels slightly pedantic to point this out, but this describes an emulation stack. A lot of emulators are already doing some kind of…"
+        },
+        {
+          "by": "accrual",
+          "text": "FWIW, the two God of War games released on PSP were considered some of the most graphically impressive on the platform. Both came out late in the console's lifetime (2008 and 2010). An IGN review also described one of them as \"it looks better than a big chunk of PS2 games\". [0] I've played one of them and yes, it felt like playing a resized PS2 game. [0]…"
+        },
+        {
+          "by": "mkotlikov",
+          "text": "At what point does most commercial software shift exclusively to server-side rendering or streaming? Are we going to be vibe coding GTA 6 by January 2027?"
+        },
+        {
+          "by": "fb03",
+          "text": "AI is completely cracking up the emulation bubble. We're not even emulating things anymore, we're just reverse engineering things and directly porting games. This is an awesome timeline for old game preservation. These fuckers aren't profiting from the games anymore, yet they won't release their IP, or update their old games to newer, more accessible platforms. So I really appreciate the work…"
+        },
+        {
+          "by": "mamonoleechi",
+          "text": "if you liked this topic, you might be interested in https://thegamingemporium.com/recent/"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/17f2e7467c18b43aff48f404b7d86da9314798d17c188379801e4193ce5c5658/snuri00/psp-web-recomp"
+    },
+    {
+      "id": 49974173,
+      "url": "http://gamesbyemail.com/WoodTape/Default.htm",
+      "hn": "https://news.ycombinator.com/item?id=49974173",
+      "title": "Wood Tape (2004)",
+      "time": 1791260741,
+      "points": 180,
+      "depth": [
+        {
+          "text": "a dad follows his four-year-old's **hardware-store list** and discovers it's for a **checkerboard table**",
+          "tier": "simple"
+        },
+        {
+          "text": "At the store, Guy chooses paint, brushes and lumber; when they start painting, he explains the tape is for **masking squares**, not holding the table together. His dad stays up typing and scanning everything until **7:00 a.m.**",
+          "tier": "substance",
+          "data": [
+            [
+              "Home Depot bill",
+              "$30.08"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 27,
+      "terms": [
+        "masking tape",
+        "router",
+        "treated lumber"
+      ],
+      "entities": [
+        "Guy Nesin",
+        "Home Depot",
+        "McDonald's",
+        "Norman Rockwell",
+        "3M"
+      ],
+      "comments": [
+        {
+          "by": "MobiusHorizons",
+          "text": "What a lovely story! but also holy inflation batman! Those same items come out to $96.41 + tax at home depot now. (Although the smallest number of spindles I could get was 7) | Item | SKU | Price\n=========================================\n| 5/4x6x8 Board | 100046735 | $11.78\n| 7x Spindles | 204837019 | $36.73\n| 3M Duct tape | 334720088 | $ 7.98\n| 2x Paint Brush | 203233251 | $ 5.96\n| 1Qt Red paint…"
+        },
+        {
+          "by": "overtone1000",
+          "text": "I encourage parents that I meet to do something like what the author of this post has done. These days, photos are ubiquitous. Curated memories in your voice are a rarified treasure. My father encouraged me to journal, but I only really started when my kids were born. For many years now I have kept a private blog that tells the stories of their childhood. They're still young but have already read…"
+        },
+        {
+          "by": "jefftk",
+          "text": "Kid would be 26 now. Wonder what he's up to? EDIT: electrician, then project manager apparently: https://www.linkedin.com/in/guynesin"
+        },
+        {
+          "by": "onaclov2000",
+          "text": "I got to this point:\nMy four-year-old wasn't showing me pictures, he was showing me blueprints. And had to check the date, I swore this was an AI post at that point (to be fair I have been questioning if all text is AI these days) Though at this point, unless AI is hacking way back machine results....I guess it's not AI ;)"
+        },
+        {
+          "by": "dang",
+          "text": "Related. Others? A lesson on the importance of encouraging your children with their projects - https://news.ycombinator.com/item?id=2757980 - July 2011 (103 comments)"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50002008,
+      "url": "https://mathstodon.xyz/@tao/117395269325940185",
+      "hn": "https://news.ycombinator.com/item?id=50002008",
+      "title": "Terence Tao Responds to the OpenAI Math Drop",
+      "time": 1791436454,
+      "points": 156,
+      "depth": [
+        {
+          "text": "Terence Tao's response has people debating whether **AI math proofs** need **understanding and community work**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter objects to **dumping proofs** on mathematicians to verify, refine, and expand them; another thinks future models may handle **exposition and exploration** too. The thread also asks whether solvers need to **explain their work** and engage with the math community.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say AI solutions need human verification and wider mathematical engagement; others expect future models to explain new proofs, or question why solvers must join the math community.",
+      "comment_count": 79,
+      "terms": [
+        "exposition",
+        "corollary",
+        "benchmark",
+        "LLM",
+        "PR"
+      ],
+      "entities": [
+        "Terence Tao",
+        "OpenAI",
+        "Rust",
+        "Ramanujan",
+        "Thurston",
+        "UCLA",
+        "Claude",
+        "Google",
+        "Riemann",
+        "Gödel",
+        "AHM"
+      ],
+      "comments": [
+        {
+          "by": "shubhamjain",
+          "text": "A very balanced perspective, and the concerns he raises are reasonable. He acknowledges that AI is going to transform mathematics, but simply dumping proofs on the math community and expecting others to do the grunt work of verifying, refining, and expanding on them is hardly a productive way to advance the field. There seems to be more interest in hitting some arbitrary benchmark (we proved X…"
+        },
+        {
+          "by": "lifeisloving",
+          "text": "The same could be said of Software. Instead of giving up on creating novel projects and instead just taking other peoples ideas and porting them to Rust, we could be embracing AI to push software and computers farther. Im not sure how that will work, but im convinced the current paradigm of just pushing agents into codebases for not much reason other than you can is going to make building…"
+        },
+        {
+          "by": "AlexAplin",
+          "text": ">the mere knowledge that a solution exists \"contaminates\" efforts by both humans and AI to find alternate routes to the problem that reveal additional insights This really expresses the heartburn you see across all fields, not exclusive to careerism. I certainly have friends in decomp and fan translation spaces that have been demotivated by the current rash of efforts happening there. The rush to…"
+        },
+        {
+          "by": "underdeserver",
+          "text": "Even when a problem got solved, there has always been value in publishing simpler proofs and corollaries that give better intuition into the broader field. If I understand Tao correctly, he's saying that's going to have to be the focus going forward. I just default to thinking the models are going to be much better than us at that, too."
+        },
+        {
+          "by": "koopuluri",
+          "text": "> But at the current time, the opposite is often occurring: problems are being solved autonomously by AI prompters who have no interest in the broader field itself once their initial target is \"solved\", and do not understand the AI output well enough to answer questions on the result, give talks, or otherwise interact with the rest of the field. Sounds like Terence Tao would have said the same…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49994122,
+      "url": "https://www.pewresearch.org/global/2026/10/01/across-the-globe-people-increasingly-say-social-media-is-harming-democracy/",
+      "hn": "https://news.ycombinator.com/item?id=49994122",
+      "title": "Across the Globe, People Increasingly Say Social Media Is Harming Democracy",
+      "time": 1791386609,
+      "points": 153,
+      "depth": [
+        {
+          "text": "people increasingly see **social media** as bad for **democracy**, though they say it informs them and gives them a voice",
+          "tier": "simple"
+        },
+        {
+          "text": "Across 37 countries, the median view was positive: **55%** called social media a good thing for democracy, versus 35% who called it a bad thing. Yet **79%** said internet and social media made it easier to manipulate people with false information, and 68% said they made people **more politically divided**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Good thing for democracy",
+              "55%"
+            ],
+            [
+              "Bad thing for democracy",
+              "35%"
+            ],
+            [
+              "Easier to manipulate with false information",
+              "79%"
+            ],
+            [
+              "More divided in political opinions",
+              "68%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some blame recommendation systems and engagement-driven design for amplifying outrage and division; others say social media gives people a voice and restricting open communication risks democracy.",
+      "comment_count": 110,
+      "terms": [
+        "median",
+        "recommendation system",
+        "chronological feed",
+        "echo chamber",
+        "influence campaign"
+      ],
+      "entities": [
+        "Pew Research Center",
+        "Richard Wike",
+        "Maria Smerkovich",
+        "Moira Fagan",
+        "World Bank",
+        "Facebook",
+        "Instagram",
+        "TikTok",
+        "X",
+        "Snapchat"
+      ],
+      "comments": [
+        {
+          "by": "ramity",
+          "text": "Do not confuse the medium with the method. Recommendation systems are the root of what plagues us. Democracy was born because of the social media of its time. Social media good. Current implementations bad. I miss chronological feeds."
+        },
+        {
+          "by": "CM30",
+          "text": "I feel like the design of many social media platforms is having a bigger effect than the concept itself. Like on a certain level, social media existing has had a lot of benefits. Every hobbyist community I'm part of is going through a golden age due to the ease of communication between people in said hobby, and how quickly discoveries are getting out there. The issue is that the design is meant…"
+        },
+        {
+          "by": "dabinat",
+          "text": "I think one of the biggest ways social media can harm democracy is that it’s trivially easy for a foreign actor (or anyone with malicious intent) to run an influence campaign now. How would they have done it before social media - printed out millions of leaflets? That would be very obvious, expensive, logistically difficult, and hard to scale. It was very telling when X started showing people’s…"
+        },
+        {
+          "by": "stickfigure",
+          "text": "Whenever I hear \"social media\" in statements like this, I substitute \"people conversing with each other unmediated by gatekeepers\". It was nice when the only people that could publish to an audience larger than a room were \"trusted sources\" with some measure of respectability. Or maybe it wasn't, because I'm not sure these people were all that trustworthy to begin with. So now we have a lot of…"
+        },
+        {
+          "by": "hax0ron3",
+          "text": "These arguments nearly always boil down to \"stupid people are harming democracy\". From which the natural consequence is \"stupid people should not be allowed to vote\". However, the people making the arguments are generally don't want to say that because it contradicts their ideology or it just plain looks bad, so they resort to an alternative argument: \"stupid people should be allowed to vote but…"
+        }
+      ],
+      "image": "https://www.pewresearch.org/wp-content/uploads/sites/20/2026/09/PG_26.09.00_SocialMediaDem_featured@2x.png?w=1200&h=628&crop=1"
+    },
+    {
+      "id": 49992057,
+      "url": "https://artmuseum.artfrompixels.com/",
+      "hn": "https://news.ycombinator.com/item?id=49992057",
+      "title": "Show HN: A walkable 3D art history museum built from Wikipedia",
+      "time": 1791377468,
+      "points": 152,
+      "depth": [
+        {
+          "text": "someone built a **walkable 3D museum** where you can explore art from **Wikipedia**",
+          "tier": "simple"
+        },
+        {
+          "text": "It pulls images directly from **Wikipedia's servers**, which one commenter worries could be bad for **Wikipedia's bandwidth**. Another says it is missing **many artists and art movements**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 61,
+      "terms": [
+        "IIIF",
+        "VR",
+        "cached",
+        "provenance"
+      ],
+      "entities": [
+        "Wikipedia",
+        "artfrompixels.com",
+        "Claude",
+        "wikiart.org",
+        "GitHub",
+        "iOS",
+        "Firefox"
+      ],
+      "comments": [
+        {
+          "by": "crazygringo",
+          "text": "This is incredibly cool. It's been a while since I felt this inspired by something on HN. Congratulations on the idea and the implementation! I genuinely think there's an opportunity for someone (yourself, or someone else) to turn this into a genuinely social experience, a modern museum platform. I'd love to see people's avatars walking around in some suitably tasteful way, with general info on…"
+        },
+        {
+          "by": "Sophira",
+          "text": "This looks incredibly cool! But I do note that it's pulling the images from Wikipedia's servers directly. That feels like it could be pretty bad for Wikipedia's bandwidth. I think I'd feel more comfortable if the art was cached by artfrompixels.com itself, where licensing allows. (And I imagine that for a lot of it there'll be no issue.)"
+        },
+        {
+          "by": "alexpatin",
+          "text": "This is super cool and I look forward to sharing with my art friends. One piece of unsolicited feedback: it is really nice to focus on a particular image in the gallery, but when I'm done, it puts me back in normal cursor mode and I have to click to 'step inside' again. Minor annoyance. Otherwise really neat."
+        },
+        {
+          "by": "aogaili",
+          "text": "What is strange is that last year I spent a lot of time creating the exact same 3D gallery experience with Claude. I picked up the style of the lights, the benches, the walls, the cards position. I also added music, lights on top of the images and the exact tour experience. A year later, I see a very similar implementation!...I find that very odd. But I do like the experience and site, there are…"
+        },
+        {
+          "by": "ggerules",
+          "text": "This is an awesome project. It could bring the art museum experience to those that can't travel to museums. But it is missing so many artists and art movements. A better choice of source material and way more artists can be found on wikiart.org [0]. Maybe the creator could merge scraping efforts? [0] wikiart.org."
+        }
+      ],
+      "image": null
+    }
+  ],
+  "glossary": {
+    "EMP-resistant": "Electromagnetic pulse-resistant: designed to keep working despite a burst of energy that can disrupt electronics.",
+    "shoring": "Supports added to hold up a tunnel’s walls or ceiling.",
+    "static recompilation": "Translating a game's existing code into code for a different system before running it.",
+    "WebAssembly": "A way to run compiled programs inside a web browser.",
+    "HLE kernel": "High-Level Emulation kernel: a simplified stand-in for the PSP's operating system that handles requests from games.",
+    "WebGL2": "A browser feature that lets websites draw interactive 3D scenes.",
+    "JIT": "Just-in-time compilation: compiling a program as it runs, rather than beforehand.",
+    "emulator": "A program that imitates another service so you can try your software without using the real one.",
+    "masking tape": "Tape used to cover parts you don't want painted, so the paint leaves a clean edge.",
+    "router": "A power tool used to smooth or shape the edges of wood.",
+    "treated lumber": "Wood treated to help it hold up outdoors.",
+    "exposition": "A clear explanation of an idea or result, not just the result itself.",
+    "corollary": "A result that follows from something already proved.",
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "PR": "Pull request: a proposed code change shared so others can review it.",
+    "median": "The middle value when the results are put in order.",
+    "recommendation system": "A feature that picks which posts or videos to put in front of you next.",
+    "chronological feed": "A list of posts shown in the order they were posted.",
+    "echo chamber": "A space where you mostly see views like your own, so they keep getting repeated.",
+    "influence campaign": "A planned effort to shape what people think by spreading messages.",
+    "IIIF": "International Image Interoperability Framework: a shared way for museums to make detailed images available for zooming.",
+    "VR": "Virtual reality: a computer-made view that replaces what you see around you.",
+    "cached": "Saved as a copy so it can be loaded later without downloading it again.",
+    "provenance": "The record of where an artwork came from and who owned it."
+  }
+}
