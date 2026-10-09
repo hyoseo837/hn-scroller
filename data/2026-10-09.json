@@ -2,6 +2,673 @@
   "date": "2026-10-09",
   "cards": [
     {
+      "id": 50002665,
+      "url": "https://www.reddit.com/r/ClaudeAI/s/mbe5IY2LF9",
+      "hn": "https://news.ycombinator.com/item?id=50002665",
+      "title": "I think I found a planet nobody knew existed. I used Claude Code to find it",
+      "time": 1791443254,
+      "points": 222,
+      "depth": [
+        {
+          "text": "someone says **Claude Code** helped them find what they think is **a new planet**",
+          "tier": "simple"
+        },
+        {
+          "text": "Commenters want **peer review** and ask how the search handles **false positives**; one suggests checking data with known answers, fake planets in real data, and shuffled data. Another points to **NASA and ESA** programs that publish data and invite people to help search for exoplanets.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: supporters call it an incredible use of AI; skeptics want peer review and recognition from astronomers.",
+      "comment_count": 109,
+      "terms": [
+        "peer review",
+        "false-positive rate",
+        "exoplanet",
+        "pipeline",
+        "coding agent"
+      ],
+      "entities": [
+        "Claude Code",
+        "Claude",
+        "NASA",
+        "ESA",
+        "TESS",
+        "Zooniverse",
+        "CHEOPS",
+        "Anthropic",
+        "Voyager 3",
+        "Golden Record",
+        "Planet Nine",
+        "GTA6",
+        "r/ClaudeAI",
+        "Adrian"
+      ],
+      "comments": [
+        {
+          "by": "piratebroadcast",
+          "text": "I just did something similar with historical archives: https://jessewaites.com/blog/post/i-pointed-ai-at-400-years-..."
+        },
+        {
+          "by": "flaburgan",
+          "text": "While I find it great that Claude is now helping people to progress on topics they may have not have time or knowledge for before, I found it a bit sad that this is done alone in a bedroom. NASA and ESA do have this kind of program, where they publish data and encourage people to help.\nThere is exactly this for exoplanet searching: - NASA (with the TESS mission)…"
+        },
+        {
+          "by": "amelius",
+          "text": "This made me wonder, if we ever send out a Voyager 3, would we send a copy of our AI engraved on the Golden Record with it? Or maybe send an entire GPU?"
+        },
+        {
+          "by": "colijobles",
+          "text": "Brilliant application. Imagine the progress we could make with models post trained on scientific process and a good agentic process. I've been tinkering with the latter for the last couple of months. Yesterday my system made some progress on instabilities on a particular superconductive system: https://colinocallaghan.com/autonomous-ai-research/Spatial-P..."
+        },
+        {
+          "by": "Kuyawa",
+          "text": "All AI needs is data. Take every image of every inch of the sky for the past 100 years and feed it to SOTA LLMs and see what they produce This is just the start, imagine ten years from now, or ten times the capacity"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50015515,
+      "url": "https://unsung.aresluna.org/deeper-dive-keyboard-differences-between-windows-and-macs/",
+      "hn": "https://news.ycombinator.com/item?id=50015515",
+      "title": "Keyboard differences between Windows and Macs",
+      "time": 1791515285,
+      "points": 210,
+      "depth": [
+        {
+          "text": "someone mapped out why **Windows and Mac keyboards** **differ on names, shortcuts, and key behavior**",
+          "tier": "simple"
+        },
+        {
+          "text": "Windows calls one key **Backspace**, while Mac calls it **Delete**; Windows’s Delete is Mac’s **Forward Delete**. On Macs, pressing Option with keys that type characters can produce extra characters; on many non-US keyboards, AltGr does something similar.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some praise Mac’s Command shortcuts as more ergonomic and logical; others say the platform’s key conventions are confusing enough to make switching difficult.",
+      "comment_count": 185,
+      "terms": [
+        "modifier key",
+        "Option key",
+        "AltGr",
+        "Backspace",
+        "Forward Delete"
+      ],
+      "entities": [
+        "Windows",
+        "Mac",
+        "Apple",
+        "Marcin Wichary",
+        "Unsung",
+        "Chrome",
+        "Photoshop",
+        "Cubase",
+        "Pro Tools",
+        "macOS",
+        "Linux",
+        "Debian",
+        "XFCE4",
+        "Asahi",
+        "GNOME",
+        "KDE",
+        "Safari",
+        "Arc"
+      ],
+      "comments": [
+        {
+          "by": "RobGR",
+          "text": "This is a really interesting and complete writeup. I have been helping someone who has little experience with Windows or Mac, but used DOS for years ( until pretty recently ) and I've set them up with a simple Debian Linux running XFCE4 as the desktop. I've found that I have to teach them and also document a lot of basic computer idioms -- Control-C / X / A / V to copy, cut, select all, paste…"
+        },
+        {
+          "by": "szszrk",
+          "text": "> and Macs offer ⌘ Command, ⌥ Option, ⌃ Control, and ⇧ Shift This is traumatizing for me. I tried to switch to a mac for home use and failed because of keyboard handling. Using Polish diacritics (made with right alt) wasn't obvious at first. I was able to switch keyboard settings to mimic Linux/Windows, but it's just not there. Control and Command confusion haunts me. I dropped the platform…"
+        },
+        {
+          "by": "theodpHN",
+          "text": "In a similar vein, the \"Costs of Switching Schoolchildren Between Windows, Chrome, Mac?\" ( https://slashdot.org/submission/17349696/costs-of-switching-... ) begins: If you've ever made the jump from PC to Mac (or vice versa) at work or home, you're painfully aware that there are very real costs of switching platforms in terms of lost knowledge and productivity. In addition to flushing years of…"
+        },
+        {
+          "by": "slhck",
+          "text": "What always trips me about the German QWERTZ layout.. I am used to Mac keyboards. When I want to type an @ on a Windows machine, I accidentally press Windows-L and lock it. For Windows users, when they use a Mac, they might be tempted to press AltGr-Q, which quits the foreground application."
+        },
+        {
+          "by": "bombcar",
+          "text": "The delete key thing comes from how Windows descends from DOS which always had the cursor ON a character (blinking box kind of thing) whereas the Mac had the cursor as a thin line BETWEEN characters. Technically DOS could have had \"backspace\" (delete the character BEFORE the cursor), \"delete\" (delete the character on/under the cursor), and \"forward delete\" (delete the next character AFTER the…"
+        }
+      ],
+      "image": "https://unsung.aresluna.org/_media/deeper-dive-keyboard-differences-between-windows-and-macs/ogimage.jpg"
+    },
+    {
+      "id": 50013610,
+      "url": "https://bevy.org/news/bevy-0-20/",
+      "hn": "https://news.ycombinator.com/item?id=50013610",
+      "title": "Bevy 0.20",
+      "time": 1791500270,
+      "points": 207,
+      "depth": [
+        {
+          "text": "Bevy adds **faster path tracing**, new **editor widgets**, and clearer **scene-building tools**",
+          "tier": "simple"
+        },
+        {
+          "text": "Bevy 0.20 credits **227 contributors** and **817 pull requests**. Solari's ReSTIR is now **optional and off by default**, and Bevy's shaders are now written in WESL.",
+          "tier": "substance",
+          "data": [
+            [
+              "contributors",
+              "227"
+            ],
+            [
+              "pull requests",
+              "817"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: fans praise Bevy's architecture and ongoing work; skeptics say it can be hard to get started and point to breaking changes and migration work.",
+      "comment_count": 47,
+      "terms": [
+        "path tracing",
+        "ReSTIR",
+        "WESL",
+        "BSN",
+        "DLSS-RR"
+      ],
+      "entities": [
+        "Bevy",
+        "Solari",
+        "DLSS",
+        "ReSTIR",
+        "BSN",
+        "Feathers",
+        "WESL",
+        "WGSL",
+        "Rust",
+        "GitHub",
+        "Metal",
+        "Godot"
+      ],
+      "comments": [
+        {
+          "by": "pcwalton",
+          "text": "Some great stuff in this release. I contributed some rendering code, most notably reducing the renderer to O(number of changed entities) on the CPU, that went unmentioned in the release notes. I do have to say, however, that BSN syntax isn't good and is getting worse. There are too many sigils, and -- to separate list elements (!) is an indication that it's been designed into a corner. The fact…"
+        },
+        {
+          "by": "aurbano",
+          "text": "What a coincidence! I had been thinking of trying to make my own version of a city builder game (like sim city or cities skylines) for years and finally started last week - using rust and Bevy for the simulator I’m trying to make the most realistic city simulator I can, using published papers on economy models, welfare, immigration, social policies… to drive each aspect of the simulation - and…"
+        },
+        {
+          "by": "GenericCanadian",
+          "text": "https://taintedcoders.com/ has been updated to 0.20"
+        },
+        {
+          "by": "i2talics",
+          "text": "I have been learning Bevy for fun lately, it's been a blast. They have been introducing breaking changes left and right but I think its in the service of addressing important things. It's probably too immature to stake a real commercial product on it at the moment, and I'm saying that as the kind of person who is attracted to a cool architecture rather than the pragmatics of shipping."
+        },
+        {
+          "by": "Fraterkes",
+          "text": "I mostly use Godot, and I've been happy with that choice, but one thing I've been sligthly envious of with Bevy is that (from afar) many of the people involved with building the engine seem to be both very opinionated and knowledgable in the area they are contributing (I get the impression that this might just be more common with Rust in general). In Godot it happens pretty often that the focus…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50016312,
+      "url": "https://quake-srp.pages.dev/",
+      "hn": "https://news.ycombinator.com/item?id=50016312",
+      "title": "Show HN: Quake ported to safe Rust, playable in browser",
+      "time": 1791523378,
+      "points": 196,
+      "depth": [
+        {
+          "text": "someone made **Quake** playable in your browser with a **safe Rust** port",
+          "tier": "simple"
+        },
+        {
+          "text": "It’s based on the GPL source for id Software’s 1996 Quake and is **software-rendered** in your browser, with **no GPU or dependencies**. The shareware episode is included.",
+          "tier": "substance",
+          "data": [
+            [
+              "archive size",
+              "9.1 MB"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters praise the pixel-for-pixel match and what computers can now do; critics question the point of an LLM-assisted Rust port when Quake’s C++ was already more or less bug-free.",
+      "comment_count": 161,
+      "terms": [
+        "safe Rust",
+        "Rust",
+        "software-rendered",
+        "GPU",
+        "GPL",
+        "LLM",
+        "WASM",
+        "C++",
+        "port"
+      ],
+      "entities": [
+        "Quake",
+        "id Software",
+        "Rust",
+        "quake-srp",
+        "GitHub",
+        "C++",
+        "Scourge of Armagon",
+        "Dissolution of Eternity"
+      ],
+      "comments": [
+        {
+          "by": "aroman",
+          "text": "Oh my god, and the author even supplied a \"proof\"[0] visual diff harness... that it replicates the original game pixel for pixel . Just the cherry on top of great demonstration of our collective new superpower: asking computers to do something we can describe how to do, but would (probably) never take the time to do ourselves. [0] https://github.com/terrapapagalli1516/quake-srp/tree/main/or..."
+        },
+        {
+          "by": "hn_submit",
+          "text": "Are hordes of developers now going to port all sorts of open-source software to Rust using LLMs and passing it off as their own work? I don't see any need for this. Rust is brilliant but the Quake C++ code was already more or less bug-free."
+        },
+        {
+          "by": "airesQ",
+          "text": "Author here (someone else submitted it, thx). There's a video as well, a six-minute video on how it works and the various QoL that we added (made by AI with human assistance): * https://youtu.be/8TvVMzyxACc"
+        },
+        {
+          "by": "koala_man",
+          "text": "I would never have imagined a phone web browser capable of this in 1996 between playing Quake and testing out the hot new JavaScript powered mouse rollover image effects in Netscape Navigator 2.0"
+        },
+        {
+          "by": "apresmoi",
+          "text": "I feel https://cssquake.wtf and https://asciiquake.wtf are a bit more of a challenge than this"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50010470,
+      "url": "https://ken.arneson.name/2015/11/the-value-of-not-getting-to-the-point/",
+      "hn": "https://news.ycombinator.com/item?id=50010470",
+      "title": "The value of not getting to the point (2015)",
+      "time": 1791486296,
+      "points": 189,
+      "depth": [
+        {
+          "text": "someone realised **small talk** can make **hard conversations** easier, and wondered whether Twitter leaves room for it",
+          "tier": "simple"
+        },
+        {
+          "text": "His daughter wanted to “just talk about something stupid”; they spent a while chatting about Donald Trump and the presidential race before she got to what was bothering her. He says conversational rituals help build **trust** before uncomfortable talks, while Twitter’s **140-character format** pushes people straight to the point.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say small talk builds trust before hard conversations; others find it pointless or say online spaces need community, not more unstructured chat.",
+      "comment_count": 67,
+      "terms": [
+        "Dunning-Kruger effect"
+      ],
+      "entities": [
+        "Ken Arneson",
+        "Donald Trump",
+        "Twitter"
+      ],
+      "comments": [
+        {
+          "by": "paimapi",
+          "text": "I think a more helpful frame is seeing this less as a practice of rhetoric and to instead see it as a practice of emotional maturity. When you speak with someone, you likely are not aware of everything that is going on with their current emotional state. If they're having a good day or bad, if they even have had the time to build insight on it, what's nagging at them, etc. You may also not know…"
+        },
+        {
+          "by": "nine_k",
+          "text": "(Getting to the point:) I once heard a perfect explanation of the small talk phenomenon. It's like two modems establishing a link: they send to each other signals that are intended to asses how the line behaves, how well the other side hears you, and what it supports. Thus small talk may never be a pithy conversation: its purpose is to be a formal, predictable, zero-surprise exchange. Skipping it…"
+        },
+        {
+          "by": "tyg13",
+          "text": "I don't think it's that people online need to have more unstructured discussion, or \"not get to the point\" -- it's that there's no real sense of community in a lot of online spaces. Why would I spend a bunch of time idly having Seinfeldian conversations with strangers with whom I have no rapport or continuity? The vast majority of people who will read my social media comments will be completely…"
+        },
+        {
+          "by": "ahyattdev",
+          "text": "Read it while you can, third-level .name TLDs are being discontinued next year by Verisign. [0] [0]: https://en.wikipedia.org/wiki/.name#Discontinuation_of_third..."
+        },
+        {
+          "by": "yipinwong",
+          "text": "Looks like someone just learned of \"ice breaking\" for the first time. All those \"ice breaking\" exercises you do at work? It's started by like people like the author. They don't have a clue exactly how it should come about. (at least the author understands the concept but still dangerous to implement it at offices as they don't really dig it yet. but it's been 11 years for him so should be better…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50018420,
+      "url": "https://www.nobelprize.org/prizes/peace/2026/press-release/",
+      "hn": "https://news.ycombinator.com/item?id=50018420",
+      "title": "Nobel Peace Prize for 2026 to Navanethem \"NAVI\" Pillay",
+      "time": 1791540731,
+      "points": 183,
+      "depth": [
+        {
+          "text": "the **Nobel Peace Prize** goes to **Navi Pillay** for her work advancing peace and **international law**",
+          "tier": "simple"
+        },
+        {
+          "text": "At the **International Criminal Tribunal for Rwanda**, her influence was significant when the court established that **rape and sexual violence** could constitute crimes against humanity and genocide. She was also instrumental in a case where a defendant faced charges of **incitement to commit genocide** purely on the basis of spreading propaganda.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: supporters praise her international-law work and see the award as standing up to authoritarianism; critics call it political or accuse her of complicity in atrocities.",
+      "comment_count": 98,
+      "terms": [
+        "international law",
+        "crime against humanity",
+        "genocide",
+        "incitement to commit genocide",
+        "tribunal"
+      ],
+      "entities": [
+        "Navi Pillay",
+        "Nobel Peace Prize",
+        "Norwegian Nobel Committee",
+        "Nelson Mandela",
+        "International Criminal Tribunal for Rwanda",
+        "International Criminal Court",
+        "United Nations",
+        "UN Independent International Commission of Inquiry on the Occupied Palestinian Territory",
+        "International Court of Justice",
+        "Alfred Nobel"
+      ],
+      "comments": [
+        {
+          "by": "killingtime74",
+          "text": "I was just checking which were the top guesses on polymarket before the announcement and this winner was not even a choice on there. At least we know there's no insider trading at the Nobel foundation."
+        },
+        {
+          "by": "JensRantil",
+          "text": "Yay, congrats Navi! Thanks for contributing to international law!"
+        },
+        {
+          "by": "onepunchedman",
+          "text": "Great to see that they're not afraid to stand up to the rising authoritarianism"
+        },
+        {
+          "by": "vintagedave",
+          "text": "Also here: https://news.ycombinator.com/item?id=50017966"
+        },
+        {
+          "by": "nxobject",
+          "text": "I'll be amused to see how the administration reacts. Perhaps we'll end up having the Trump Prizes."
+        }
+      ],
+      "image": "https://www.nobelprize.org/uploads/2026/10/2026_peace_carrier_image_3-2-1024x683.png"
+    },
+    {
+      "id": 49992994,
+      "url": "https://naturalsystems.io/eth68",
+      "hn": "https://news.ycombinator.com/item?id=49992994",
+      "title": "ETH-68: Ethernet Audio Interface for Linux",
+      "time": 1791381485,
+      "points": 181,
+      "depth": [
+        {
+          "text": "someone built an **ethernet audio interface** for Linux that sends sound with **very little delay**",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: the article calls 3.620 milliseconds “very low”; one commenter says 3.6ms is good but not special, with “very low” at <=1ms.",
+      "comment_count": 107,
+      "terms": [
+        "round-trip latency",
+        "buffer",
+        "sample rate",
+        "JACK",
+        "PipeWire",
+        "balanced line-level"
+      ],
+      "entities": [
+        "eth68",
+        "Alex Lowell",
+        "Linux",
+        "STM32H7",
+        "JACK",
+        "netJACK1",
+        "PipeWire",
+        "pw-eth68",
+        "eth68proxy",
+        "eth68ctl.py",
+        "RME HDSPe AIO Pro",
+        "Reaper",
+        "Bitwig",
+        "JACK-Router",
+        "Ableton Live",
+        "CoreAudio",
+        "ASIO",
+        "macOS",
+        "Windows",
+        "Intel I210",
+        "Stanford Research DS360",
+        "PCM3168A",
+        "AES17"
+      ],
+      "comments": [
+        {
+          "by": "alowell",
+          "text": "Hi, I'm Alex, I made ETH-68. I didn't create the post here on HN but I will answer some of the questions that have come up in the comments"
+        },
+        {
+          "by": "jhallenworld",
+          "text": "How does the receive side recover the transmit side's sample clock? There is a BNC for clock sharing between \"multiple units\", but I'm not sure if that's used / required between transmit and receive. Or is there no such synchronization, in which case there would be long-term drift?"
+        },
+        {
+          "by": "delis-thumbs-7e",
+          "text": "If there were open source Dante that actually worked it would be very cool. Don’t know how much usage it would get since the hardware will always lock it in. But for small studios and research it might be cool. Interesting project nevertheless."
+        },
+        {
+          "by": "Neywiny",
+          "text": "Far be it from me to discourage an H7 build, but I do question the codec choice. It's far from top of the line and it's not like the design is tight on space. TI offers much better (almost 20 dB SNR more on the ADC). Maybe a gen 2 could benefit from a better codec."
+        },
+        {
+          "by": "lukeh",
+          "text": "May also be of interest: https://github.com/kebag-logic/pipewire"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50018088,
+      "url": "https://iminafleeting.com/",
+      "hn": "https://news.ycombinator.com/item?id=50018088",
+      "title": "I'm in a Meeting",
+      "time": 1791537708,
+      "points": 170,
+      "depth": [
+        {
+          "text": "someone made **fake meetings** you can play in the background to look **busy** before anyone asks",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: people say fake meetings help them look busy; skeptics say the audio is distracting or too easy to spot as fake.",
+      "comment_count": 66,
+      "terms": [
+        ".ics file",
+        "synthetic voice",
+        "boss key"
+      ],
+      "entities": [
+        "Fleeting",
+        "John Carroll",
+        "Splinters",
+        "Gitlab",
+        "YouTube",
+        "Outlook",
+        "Firefox",
+        "MacOS",
+        "Windows",
+        "MS-DOS"
+      ],
+      "comments": [
+        {
+          "by": "frangonf",
+          "text": "This has real demand, I ended up in the Gitlab secondary youtube channel one day, ordering by most views, and I found a video [0] of a seemingly normal uninteresting meeting with millions of views. Turns out people were using this as an excuse for looking like they were busy. They disabled comments now but I saved some of them because I thought it was hilarious: I play this when I need my family…"
+        },
+        {
+          "by": "filcuk",
+          "text": "The scripts are hilarious, yet not inaccurate. I can't stop chuckling.\n'Are you happy with that?'\n'Happy is a strong word'\n'OK' moves on to the next topic"
+        },
+        {
+          "by": "tacostakohashi",
+          "text": "Reminds me of the \"boss mode\" / \"boss key\" in old games, like MS-DOS days, which would switch the screen to some spreadsheet mockup or suchlike, updated for the current century."
+        },
+        {
+          "by": "voidUpdate",
+          "text": "Do people in offices typically just blast meetings out of their computer speakers? Everyone I work with uses headphones so we're not disturbing other people in the office..."
+        },
+        {
+          "by": "ninkendo",
+          "text": "Audio seems broken now, maybe hugged to death. Console: HTTP load failed with status 404. Load of media resource https://iminafleeting.com/media/people/standup-a.mp4 failed"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49984159,
+      "url": "https://mitchellh.com/writing/program-status-osc7501",
+      "hn": "https://news.ycombinator.com/item?id=49984159",
+      "title": "A Terminal Protocol for Program Status (OSC 7501)",
+      "time": 1791320880,
+      "points": 165,
+      "depth": [
+        {
+          "text": "someone wrote a **terminal protocol** that lets programs say when they're **working**, waiting, finished, or failed",
+          "tier": "simple"
+        },
+        {
+          "text": "The spec uses **OSC 7501**: programs send states like idle, working, blocked, done, or error through the terminal's existing **pty**. Optional fields can name the app and carry a message, while **hierarchical IDs** let programs report multiple tasks. The author says he made proof-of-concept integrations in Terraform, Claude Code, Codex, and Homebrew, each no more than a dozen lines.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters would rather extend OSC 3008 or stick with terminal bells; others welcome a dedicated protocol, especially for spotting when programs need input.",
+      "comment_count": 51,
+      "terms": [
+        "pty",
+        "escape sequence",
+        "hierarchical IDs",
+        "base64",
+        "heuristics",
+        "agentic inbox",
+        "TUI"
+      ],
+      "entities": [
+        "Mitchell Hashimoto",
+        "Superlogical",
+        "Ghostty",
+        "OSC 7501",
+        "Terraform",
+        "Herdr",
+        "Agent Deck",
+        "cmux",
+        "Rex",
+        "Claude Code",
+        "Codex",
+        "Homebrew",
+        "POSIX sh",
+        "UAPI.15",
+        "OSC 3008",
+        "systemd",
+        "Ubuntu",
+        "BSD",
+        "iTerm2",
+        "WezTerm",
+        "zellij",
+        "BubbleTea",
+        "Forgejo",
+        "IBM 3270",
+        "Pi",
+        "Dormouse",
+        "systemd-appd",
+        "screen",
+        "tmux",
+        "emacs",
+        "Go",
+        "HTML",
+        "JavaScript",
+        "TOML"
+      ],
+      "comments": [
+        {
+          "by": "neomantra",
+          "text": "This is important (and TIL OSC 3008, how do we all keep up?!), but I want something adjacent to this... perhaps people can point me in a direction. This OSC 7501 pushes state from Program to Terminal; with an explicit running/idle/fubar \"state\" field but also K/V data. Then Terminal can provide interactions thereof, such as display it. What I want is for the Program to push the terminal some map…"
+        },
+        {
+          "by": "paaloeye",
+          "text": "The problem `OSC 7501` addresses would slot almost perfectly into [UAPI.15 OSC 3008]( https://uapi-group.org/specifications/specs/osc_context/#met... ). It's already implemented by `systemd` and is available in Ubuntu 26.04. I'd rather see `OSC 3008` being extended."
+        },
+        {
+          "by": "drewg123",
+          "text": "The BSDs have had a version of this for many, many years. If you hit ^T on the terminal, you deliver a SIGINFO to the application you're waiting for. By default, you get the program name, what its blocked on, and info about real/user/sys time and memory use. Starting an emacs window in the fg: % emacs\n^T\nload: 0.32 cmd: emacs-31.1 64938 [select] 2.89r 0.75u 0.06s 6% 122404k"
+        },
+        {
+          "by": "bugcheck7b",
+          "text": "Cool to see this, I've been toying around with custom notification OSCs through zellij and ghostty. Totally going to extend this for myself with a custom key that encodes a reverse route on each hop so I can easily jump to the window/tab/pane that emitted it, or send back custom actions into a given pane like a permission approve/deny."
+        },
+        {
+          "by": "rauhl",
+          "text": "The spec’s at https://www.superlogical.com/rex/docs/build/program-status"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50018817,
+      "url": "https://github.com/franzenzenhofer/big-arrow-on-the-screen",
+      "hn": "https://news.ycombinator.com/item?id=50018817",
+      "title": "Let your AI agents paint big arrows, boxes and text on your screen",
+      "time": 1791543828,
+      "points": 160,
+      "depth": [
+        {
+          "text": "someone built a Mac tool that lets **AI agents** point things out with **arrows, boxes, and text**",
+          "tier": "simple"
+        },
+        {
+          "text": "**bigarrow** is a small macOS command-line tool with an agent skill for Claude Code and Codex. Its **click-through overlay** disappears on its own; it never clicks, types, or captures anything. Drawing needs no permission, though some targeting features use macOS Accessibility.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: supporters see a use for remote help and documentation; skeptics ask why an agent needs to point at controls that already have labels.",
+      "comment_count": 63,
+      "terms": [
+        "AI agent",
+        "CLI",
+        "agent skill",
+        "click-through",
+        "overlay",
+        "Accessibility",
+        "LLM"
+      ],
+      "entities": [
+        "bigarrow",
+        "macOS",
+        "Claude Code",
+        "Codex"
+      ],
+      "comments": [
+        {
+          "by": "hn8726",
+          "text": "I tried to read the \"Does it need Screen Recording or Accessibility?\" part, but it's slopped to the point I have no clue what it's trying to say. But if it can draw on top of permission prompts, what's stopping it from drawing box that hides the \"decline\" button and changing the \"approve\" button copy?"
+        },
+        {
+          "by": "usrbinbash",
+          "text": "SO the point of this is ... what exactly? A big arrow to an interface element which ... has a label that explains what it does? So...a label for a label?"
+        },
+        {
+          "by": "arshxyz",
+          "text": "The README is geared towards technical people (complete with the HN screenshot) but when I see a tool like this all I can think of is how helpful this would be for my mom when I'm trying to tell her how to download and print a document over the phone"
+        },
+        {
+          "by": "lbreakjai",
+          "text": "I would pay good money for something like this on iPad. It wouldn't even need to be agent-driven, just a big \"I want to make a bank transfer\" button, that would launch the correct app and guide through the interface. That would be a godsent for those of us with aging parents."
+        },
+        {
+          "by": "cyberjunkie",
+          "text": "I'm just as impressed by this as any other LLM-generated project."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/08fbac1b5f92a5b93f8da6d512092eacb025ccf3a1a3627f02d1bf29c9f32bfd/franzenzenhofer/big-arrow-on-the-screen"
+    },
+    {
       "id": 50003796,
       "url": "https://htmx.org/essays/yes-and/",
       "hn": "https://news.ycombinator.com/item?id=50003796",
@@ -549,7 +1216,58 @@
     }
   ],
   "glossary": {
+    "peer review": "A process where other researchers check a paper before a journal publishes it.",
+    "false-positive rate": "How often a test says it found something when it actually did not.",
+    "exoplanet": "A planet that orbits a star outside our solar system.",
+    "pipeline": "A series of steps where each step works on data and passes it to the next.",
+    "coding agent": "An AI tool that can help write or change code, often by using other tools.",
+    "modifier key": "A key you hold down with another key to change what the other key does.",
+    "Option key": "A Mac key you can hold with other keys to make them do something different or type extra characters.",
+    "AltGr": "A key on some keyboards that lets you type extra letters and symbols.",
+    "Backspace": "A key that removes the character just before where you’re typing.",
+    "Forward Delete": "A key that removes the character just after where you’re typing.",
+    "path tracing": "A way of drawing lighting by simulating how light moves through a scene.",
+    "ReSTIR": "A method for choosing light samples during rendering; turning it off can reduce shadow quality.",
+    "WESL": "A shared language for writing graphics instructions, designed to support reusable code and common tools.",
+    "BSN": "Bevy's way to describe a scene and the things inside it, so the scene can be built into a game.",
+    "DLSS-RR": "A graphics feature that helps clean up rough-looking images; the article says its newer version improves Solari's denoising quality.",
+    "safe Rust": "Rust code written without the language’s unsafe feature; that doesn’t mean the whole program is automatically free of bugs.",
+    "Rust": "A programming language; commenters say 37signals used it for the Hey backend.",
+    "software-rendered": "The game draws its pictures through program instructions instead of relying on a graphics chip.",
+    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "GPL": "GNU General Public License: rules that let people use, change, and share software.",
     "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "WASM": "WebAssembly: a way for an app to run plug-ins written in other programming languages.",
+    "C++": "A programming language used to write software, including games.",
+    "port": "A numbered doorway that lets a computer send traffic to a particular service.",
+    "Dunning-Kruger effect": "A term for people sometimes failing to notice their own lack of skill or understanding.",
+    "international law": "Rules and agreements countries use to deal with one another and handle disputes.",
+    "crime against humanity": "A grave crime committed as part of a widespread or organized attack on civilians.",
+    "genocide": "An attempt to destroy, in whole or in part, a national, ethnic, racial, or religious group.",
+    "incitement to commit genocide": "Encouraging or urging others to carry out genocide.",
+    "tribunal": "A court set up to hear and decide particular kinds of cases.",
+    "round-trip latency": "The time it takes for audio to go through a device or setup and come back.",
+    "buffer": "A small holding space for audio that gives the system time to process it.",
+    "sample rate": "How many snapshots of the sound are taken each second.",
+    "JACK": "Software that lets audio programs send sound to each other and to audio hardware.",
+    "PipeWire": "Linux software that connects audio programs to audio devices.",
+    "balanced line-level": "A kind of audio signal and connection designed to help reduce noise picked up by a cable.",
+    ".ics file": "A calendar invite file you can download and add to a calendar.",
+    "synthetic voice": "A computer-made voice, rather than a recording of a person speaking.",
+    "boss key": "A shortcut that switches the screen to a fake spreadsheet or another work-looking page.",
+    "pty": "Pseudo-terminal: a software-made terminal connection that lets a program communicate with a terminal window.",
+    "escape sequence": "A short code sent to a terminal to make it do something instead of showing the code as text.",
+    "hierarchical IDs": "Labels arranged in levels, so a main task can be grouped with its smaller tasks.",
+    "base64": "A way to rewrite data using a limited set of characters so it can be carried in places that expect text; it is not encryption.",
+    "heuristics": "Rules that guess what is happening from clues, rather than asking the program directly.",
+    "agentic inbox": "One view showing which running agents are working, done, or waiting for you.",
+    "TUI": "Terminal User Interface: the menus and controls an app shows inside a text terminal.",
+    "AI agent": "An autonomous computer program that can carry out tasks.",
+    "CLI": "Command-Line Interface: a way to control a computer by typing commands instead of clicking buttons.",
+    "agent skill": "A set of instructions that tells an AI agent when and how to use a tool.",
+    "click-through": "Most of the drawing lets clicks pass through to the app underneath; clicking the sign or arrow shaft removes it.",
+    "overlay": "A layer drawn over what is already on the screen.",
+    "Accessibility": "A macOS permission that lets a program find interface elements, such as buttons, so it can work with them.",
     "TA": "Teaching assistant: someone who helps teach a course and answer students’ questions.",
     "software architecture": "How a software system’s parts are organized so the whole thing works and stays manageable.",
     "accidental complexity": "Extra difficulty caused by tools or choices around a solution, rather than by the problem itself.",
