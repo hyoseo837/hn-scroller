@@ -2,6 +2,642 @@
   "date": "2026-10-10",
   "cards": [
     {
+      "id": 50032556,
+      "url": "https://carette.xyz/posts/lobbying_and_corruption/",
+      "hn": "https://news.ycombinator.com/item?id=50032556",
+      "title": "Lobbying is corruption",
+      "time": 1791637558,
+      "points": 453,
+      "depth": [
+        {
+          "text": "someone argues that **lobbying** is **corruption** dressed up in a nicer suit",
+          "tier": "simple"
+        },
+        {
+          "text": "The author cites Wikipedia’s definition of **corruption**, which includes practices legal in many countries, such as **lobbying**, and says the practice is the same while its legality changes. Commenters push back that lobbying can mean simply meeting lawmakers, separate from campaign contributions or corrupt exchanges.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say lobbying itself is corruption; others say talking to lawmakers is legitimate and should be distinguished from bribery or campaign contributions.",
+      "comment_count": 251,
+      "terms": [
+        "lobbying",
+        "Super PAC",
+        "quid pro quo",
+        "revolving door"
+      ],
+      "entities": [
+        "George Hotz",
+        "Wikipedia",
+        "EU",
+        "Citizens United"
+      ],
+      "comments": [
+        {
+          "by": "u1hcw9nx",
+          "text": "Basic internet response to everything is that when something essential involves something bad, we should forget the nuance and use slogans \"X is BAD\". I want to push back against that. Lobbying is not corruption. All interest groups should have the ability to talk to lawmakers and present their viewpoints. That is essential for good lawmaking. It should be open (and is in the EU) with lobby…"
+        },
+        {
+          "by": "Isamu",
+          "text": "Conflating two things. Actually lobbying is the act of trying to persuade by meeting with a representative. Campaign contributions are also a way of persuading but are separate. I say this because you could make monetary contributions illegal and lobbying would still be legal and ethical. We talk about campaign contributions as a separate issue and they have been treated in the courts separately…"
+        },
+        {
+          "by": "Waterluvian",
+          "text": "Citizens United is probably one of the greatest national blunders I've been alive to witness. I have a sense that if we are indeed watching the beginning of the decline of the American empire, it will be pointed to as a precipitating factor in future textbooks (will those even be a thing anymore?). Lobbying is indeed corruption with a suit on."
+        },
+        {
+          "by": "oytis",
+          "text": "Not sure where in Europe the author lives, but in Germany we absolutely have lobbying, \"donations\", \"connections\" and politicians meandering between corporations and public offices that are meant to regulate the same corporations, all without any consequences"
+        },
+        {
+          "by": "maxnevermind",
+          "text": "I'm pro-corruption then I guess."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50033407,
+      "url": "https://community.bitwarden.com/t/published-version-update-in-app-stores/102750",
+      "hn": "https://news.ycombinator.com/item?id=50033407",
+      "title": "Bitwarden Dual License Model",
+      "time": 1791642770,
+      "points": 312,
+      "depth": [
+        {
+          "text": "Bitwarden's **store apps** are switching to **commercial builds**, while an **open-source version** stays on GitHub",
+          "tier": "simple"
+        },
+        {
+          "text": "Starting in the next release, store apps will be **commercially licensed**. The **GPLv3 OSS version** will keep being updated and published on GitHub, but some future components will exist only in commercial builds; new features are assessed **case by case**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some accept the change if source and self-hosting stay available; others fear a gradual retreat from open source and worry future features will be excluded.",
+      "comment_count": 230,
+      "terms": [
+        "GPLv3",
+        "OSS",
+        "commercial license",
+        "self-hosting"
+      ],
+      "entities": [
+        "Bitwarden",
+        "GitHub",
+        "Vaultwarden"
+      ],
+      "comments": [
+        {
+          "by": "rsyring",
+          "text": "Very insightful blog post listed by another user as a sub-comment. Worth posting as a top-level comment: https://blog.ppb1701.com/the-quiet-renovation-at-bitwarden Previously discussed: https://news.ycombinator.com/item?id=48163389"
+        },
+        {
+          "by": "dannyw",
+          "text": "I actually find this somewhat understandable; and I'll be continuing my subscription; as long as all source continues to be available and personal self-hosting remains a viable option. Yes, I'd much prefer full open source, but \"all source available; some restrictions on commercial use\" is still miles better; the OSS funding and incentives problem is still unsolved. Just look at Elasticsearch ->…"
+        },
+        {
+          "by": "arjie",
+          "text": "Okay, it’s good they have the open source because if you rewrite the Chrome extension you can get it to load in under 100 ms after you click the button. If you use the standard Chrome extension you’re not having that happen on an M1 Max. Their stuff is far too heavy. Full JS framework to display a small box."
+        },
+        {
+          "by": "0l",
+          "text": "IMO Bitwarden really isn't that well engineered software, and I now use Keyguard on Android/Vaultwarden server instead. Reminds me of Subsonic, with many competing clients/servers. Hopefully someone will write a third party browser extension as the current one is quite slow/buggy."
+        },
+        {
+          "by": "lucideer",
+          "text": "As a loyal Bitwarden user, I think this is great news. I love that Bitwarden exists, but as an \"open source\" project, it's always been a trad-corporate type code maintenance, rather than community-driven source contributions (exactly why we've seen things like Vaultwarden pop up) & that has generally just left all of their clients in that really awkward space where they're just good enough to be…"
+        }
+      ],
+      "image": "https://us1.discourse-cdn.com/flex001/uploads/bitwarden1/original/3X/7/f/7f03815c05cadc57a3915c4e7d01826f041b39ac.png"
+    },
+    {
+      "id": 50031653,
+      "url": "https://www.opengroup.org//openbrand/register/",
+      "hn": "https://news.ycombinator.com/item?id=50031653",
+      "title": "Apple/macOS removed from official Unix registry",
+      "time": 1791629851,
+      "points": 219,
+      "depth": [
+        {
+          "text": "people are **arguing** over whether **macOS** was actually removed from the UNIX registry",
+          "tier": "simple"
+        },
+        {
+          "text": "Some commenters say **macOS 26** is still listed under **Unix 03**; others ask whether **macOS 27** was ever listed and removed, and point out that the page’s filter changes what appears.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some commenters say macOS is still listed under Unix 03; others say it’s unclear what was removed and ask whether macOS 27 was ever listed.",
+      "comment_count": 195,
+      "terms": [
+        "UNIX certification",
+        "Unix 03",
+        "Single UNIX Specification"
+      ],
+      "entities": [
+        "Apple",
+        "macOS",
+        "UNIX",
+        "The Open Group"
+      ],
+      "comments": [
+        {
+          "by": "microtherion",
+          "text": "The certification was always a bit odd, applying only to a configuration nobody would run in practice: https://www.osnews.com/story/141633/apples-macos-unix-certif..."
+        },
+        {
+          "by": "dofm",
+          "text": "Tahoe was Unix 03 certified, and is still listed on that page if you filter by standard and choose Unix 03. Perhaps Golden Gate simply hasn't yet passed certification."
+        },
+        {
+          "by": "curt15",
+          "text": "If this is an intentional move, Apple is just acknowledging reality. UNIX(tm) is no longer so relevant compared to the early days of OS X, when Linux was still in its infancy and the Unix certification gave Apple street cred among developers. Most developers these days target Linux for production. That's why Microsoft developed WSL, not WSU."
+        },
+        {
+          "by": "ShinyLeftPad",
+          "text": "If true, a better title would be \"macOS is no longer UNIX certified\"."
+        },
+        {
+          "by": "BirAdam",
+          "text": "Tahoe: https://www.opengroup.org//openbrand/register/xy.htm I imagine that the cert will be listed for Golden Gate soon."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50031614,
+      "url": "https://github.com/rociiu/talorys",
+      "hn": "https://news.ycombinator.com/item?id=50031614",
+      "title": "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
+      "time": 1791629529,
+      "points": 220,
+      "depth": [
+        {
+          "text": "someone made a **personal AI assistant** that keeps tasks, notes, and reminders in your **Cloudflare account**",
+          "tier": "simple"
+        },
+        {
+          "text": "It stores conversations, memories, tasks, notes and projects in one **SQLite-backed Durable Object**; reminders run on Durable Object alarms, so nothing has to stay online. Talorys says it has no telemetry and sends nothing to its developers, but Cloudflare processes chat messages and relevant memories in each prompt when running Workers AI. Free-plan quotas can change; when the **AI allocation runs out**, chat resumes after the daily reset, while tasks, notes, memories and reminders **keep working**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: critics say relying on Cloudflare means it isn't self-hosted; others say the open-source code can be tweaked to use a local model.",
+      "comment_count": 112,
+      "terms": [
+        "self-hosted",
+        "Durable Objects",
+        "SQLite",
+        "Workers AI",
+        "telemetry"
+      ],
+      "entities": [
+        "Talorys",
+        "Cloudflare",
+        "Workers AI",
+        "Durable Objects",
+        "SQLite"
+      ],
+      "comments": [
+        {
+          "by": "flufluflufluffy",
+          "text": "This might sound kinda crazy, but I define “self-hosted” as something that I host myself."
+        },
+        {
+          "by": "vlovich123",
+          "text": "For all the people complaining this isn’t self hosted, it’s open source - it’s a relatively minor tweak to replace the AI calls to point to a local model server. Everything else runs locally via wrangler. It’s less than 20 minutes of work by hand, less than a minute to ask AI to do this. It’s a weird complaint for people who supposedly like hacker culture."
+        },
+        {
+          "by": "hung",
+          "text": "Careful with Cloudflare's \"free\" AI tier if you use paid workers. I was never able to get an answer on why I was billed for their confusing neuron usage for stuff that should have been covered under their usage limits. Their customer support just ignored my ticket. Apparently it's a known issue that they don't give a shit based on discussions in their support Discord."
+        },
+        {
+          "by": "ttul",
+          "text": "Durable Objects are the coolest thing I have seen in a while. Code and its data locked away together, frozen when not in use, but ready to go in milliseconds when a request comes in. They are so damn useful."
+        },
+        {
+          "by": "1dom",
+          "text": "I'm not sure I understand the use-case or target audience for this. Selfhosted on cloudflare is a great oxymoron though."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/bf62be2946f039d21813ea94458361efc8361aef171d785c818236568d152b41/rociiu/talorys"
+    },
+    {
+      "id": 50029982,
+      "url": "https://wiki.cateat.fish/art:computers_cannot_make_decisions",
+      "hn": "https://news.ycombinator.com/item?id=50029982",
+      "title": "Computers Cannot Make Decisions",
+      "time": 1791611266,
+      "points": 191,
+      "depth": [
+        {
+          "text": "the post says **people**, not **computer programs**, are to blame when **AI systems cause harm**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author calls blaming an LLM **“decision laundering”** and says companies could stop their models but **choose not to**. Commenters disagree over whether computers make decisions, though several say people still need to **answer for the harm**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters say computers make decisions, pointing to code or chess; others argue only people make decisions and should be held responsible.",
+      "comment_count": 174,
+      "terms": [
+        "decision laundering",
+        "LLM",
+        "if-else statement",
+        "black-box",
+        "guardrails"
+      ],
+      "entities": [
+        "Anthropic",
+        "OpenAI",
+        "RubyGems",
+        "Claude"
+      ],
+      "comments": [
+        {
+          "by": "roncesvalles",
+          "text": "It's not so much that it can't make a decision, but that whoever allowed it to make decisions is ultimately responsible for them. Decision laundering is a great term. There is ultimately a human who gave the program free rein. You can't say \"sorry my car hit you, it's not my fault\" especially when the person driving works for the car manufacturer too."
+        },
+        {
+          "by": "sobiolite",
+          "text": "Computers can make decisions: Almost everyone reading this will have a implemented an if-else statement or equivalent control flow. That is a decision made by a computer on data it receives at runtime. You can argue that it's different, because we fully understand the logic of such a statement, whereas LLMs are closer to a black-box. But at Turing observed, in practice we are frequently surprised…"
+        },
+        {
+          "by": "solatic",
+          "text": "I love the term \"decision laundering\", but this is describing a classic poor management trope. A bad manager takes personal credit when things go well and finds a scapegoat when things go bad. A good manager gives credit when things go well and takes responsibility when things go bad. It's wrong to scapegoat the agent. You, the human who executed the agent, made the decision to execute it. You…"
+        },
+        {
+          "by": "edwcross",
+          "text": "Yet decisions are still made by abstract entities such as \"companies\" and not the individuals working for them. So that blame can be diluted and deflected in a very convenient manner for CEOs. Just find someone to fire, but keep doing the same thing. Instead of \"Anthropic submits false tip to police\", I'd prefer \"Anthropic employee John Smith deploys an agent that submits false tip to police\". Of…"
+        },
+        {
+          "by": "foreigner",
+          "text": "I would go farther and argue that companies don't make decisions either. They are also not people (legal nonsense notwithstanding). Individual actual humans make decisions and they're the ones who should be held accountable."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50024090,
+      "url": "https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai/",
+      "hn": "https://news.ycombinator.com/item?id=50024090",
+      "title": "What mathematicians should know about the Lean Theorem Prover: reliability & AI",
+      "time": 1791567732,
+      "points": 189,
+      "depth": [
+        {
+          "text": "someone warns **AI-written Lean proofs** need **human checks** to confirm they prove the right thing",
+          "tier": "simple"
+        },
+        {
+          "text": "Several **soundness bugs** were found and fixed, but Hales says Lean’s type theory still lacks a complete, public **relative-consistency proof**. He also says proofs need kernel checks and a **human audit** to make sure the formal statement matches the intended theorem.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: the article says autoformalization is a practical reality; skeptics say AI can formalize something different from the paper.",
+      "comment_count": 52,
+      "terms": [
+        "proof assistant",
+        "formal proof",
+        "autoformalization",
+        "soundness bug",
+        "kernel",
+        "type theory",
+        "relative consistency"
+      ],
+      "entities": [
+        "Lean",
+        "mathlib",
+        "Thomas Hales",
+        "Terence Tao",
+        "Microsoft",
+        "Math Inc.",
+        "Meta",
+        "Anthropic",
+        "OpenAI",
+        "Con-Leche",
+        "Claude",
+        "Lean FRO",
+        "HOL Light",
+        "CakeML",
+        "Rocq"
+      ],
+      "comments": [
+        {
+          "by": "chr15m",
+          "text": "Will we ever see a soundness bug in the lean kernel again? To a software developer the question seems insane. There were bugs in the past, of course there will be more. When we see those bugs, what will it mean for AI lean proofs? Can we trust them? This whole thing boils down to trust. We can trust human verifications highly because of community and reputation and human proof-of-work. Humans…"
+        },
+        {
+          "by": "laichzeit0",
+          "text": "> Coq (renamed Rocq last year) This is lamentable."
+        },
+        {
+          "by": "rramadass",
+          "text": "The article already mentions the paper, Sets in Types, Types in Sets by Benjamin Werner which maps between Set/Type theories. Another related and more approachable paper on the evolution of Type Theory and its relation to Set/Category theories is Types, Sets and Categories by John Bell. Finally also see, Typed Lambda Calculus / Calculus of Constructions by Helmut Brandl for an excellent…"
+        },
+        {
+          "by": "chrisjj",
+          "text": "> Autoformalization is the formalization of mathematics by AI. I guess that came from a chatbot? \"There’s no such thing as auto-formalization\"\nhttps://cutfree.net/notes/autoformalization.html"
+        },
+        {
+          "by": "dr_pyser",
+          "text": "MacBook reverse screen"
+        }
+      ],
+      "image": "https://secure.gravatar.com/blavatar/bd4bda4207561b6998f10dec44b570f04ff4072b20f89162d525b186dfca3e49?s=200&ts=1791669094"
+    },
+    {
+      "id": 50023995,
+      "url": "https://twitter.com/WallStreetApes/status/2108594998656807078",
+      "hn": "https://news.ycombinator.com/item?id=50023995",
+      "title": "Scam American companies are using to manipulate ingredient lists",
+      "time": 1791567340,
+      "points": 186,
+      "depth": [
+        {
+          "text": "someone says Smuckers **splits sweeteners** so **strawberries appear first** on its ingredient list",
+          "tier": "simple"
+        },
+        {
+          "text": "The post says Smuckers splits its sweeteners into **three ingredients**, letting strawberries appear first even though the product is **mostly sugar**. It says the tactic is **legal** and allowed by the FDA.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: critics say splitting misleads shoppers and should be banned; others say different sugars serve manufacturing purposes and added sugars are shown on nutrition facts.",
+      "comment_count": 206,
+      "terms": [
+        "ingredient splitting",
+        "FDA"
+      ],
+      "entities": [
+        "Smuckers",
+        "FDA",
+        "Wall Street Apes",
+        "X"
+      ],
+      "comments": [
+        {
+          "by": "hombre_fatal",
+          "text": "160 points on a submissions pointing to a tweet from an NFT account posting a low information tiktok video. Times are changing. I'm having nostalgia for the decades we were only worried about turning into reddit."
+        },
+        {
+          "by": "squeegeeninja",
+          "text": "This is such a bad video. Someone else's video, cut over multiple different times, a horrible slurred AI voice, shaky filmed screen with a guy talking over… Each layer adds nothing, but somehow this is the version worthy of sharing?"
+        },
+        {
+          "by": "WarmWash",
+          "text": "I think even worse than this is the disconnect between a product name and the actual composition of the product. Its most rampant with juices, where every juice is actually just apple juice (from concentrate, so mostly water anyway) with a splash of [fruit] juice thrown in (also from concentrate, so also mostly water). Maybe if you are lucky you'll catch an apple shown on the front label behind…"
+        },
+        {
+          "by": "crazygringo",
+          "text": "It's not a scam. And added sugars are listed prominently in the nutrition facts. It's the fact that different sugars have different properties. In terms of texture, moisture, etc. And they can be used at different stages of the manufacturing process. There's nothing wrong with this. Nutrition facts clearly label the total added sugars. Plus, strawberries are often going to be listed first anyways…"
+        },
+        {
+          "by": "bob1029",
+          "text": "The best solution is to control all the ingredients in your own kitchen. Relying on labeling to protect your health is insufficient. If you select your produce, you can prefer Jim Bob's local farm over the Monsanto option. You can sidestep entire categories of health risk. I'll sometimes buy a full hand basket worth of one thing like onions or limes depending on availability and quality. There…"
+        }
+      ],
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2108594559953616896/img/zN8_H8gEmQ0SFsM1?format=webp&name=large"
+    },
+    {
+      "id": 50021410,
+      "url": "https://blog.janestreet.com/can-you-use-autoregressive-diffusion-to-generate-market-data/",
+      "hn": "https://news.ycombinator.com/item?id=50021410",
+      "title": "Can you use autoregressive diffusion to generate market data?",
+      "time": 1791557773,
+      "points": 176,
+      "depth": [
+        {
+          "text": "someone tested whether diffusion could **generate market data**, and found its **jagged patterns** hard to model",
+          "tier": "simple"
+        },
+        {
+          "text": "Intern Kavish switched to **flow matching**, then used **“atom smoothing”** to smooth sharp spikes without losing their probability mass. The model is not yet accurate enough to be a realistic generator.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters praise the modeling work and write-up; others say an accurate market model won't stay accurate once the market incorporates its insights.",
+      "comment_count": 55,
+      "terms": [
+        "autoregressive",
+        "diffusion model",
+        "flow matching",
+        "atom smoothing"
+      ],
+      "entities": [
+        "Jane Street",
+        "Kavish"
+      ],
+      "comments": [
+        {
+          "by": "armcat",
+          "text": "The real story here is this wonderful exposition in applying diffusion models to a time series data that is neither discrete nor continuous. It’s always fascinating to see diffusion models applied in different scenarios, same with diffusion language models."
+        },
+        {
+          "by": "stult",
+          "text": "There is no model of the market that can remain stably accurate because the market will inevitably incorporate the insights of any model that is accurate until those insights are no longer accurate"
+        },
+        {
+          "by": "arjie",
+          "text": "Remarkable internship. Fairly dense write-up too. Everything is informative. Amusing degree of detail, though it makes sense it’s targeted at future interns. Why would you expect order inter-arrival to be normal? Surely an order arriving sort of boosts the probability of others, Hawkes-like. A nice little trick to get students talking I suppose. Jane Street interns impressive as always."
+        },
+        {
+          "by": "alexpotato",
+          "text": "There is a great line in the Man Who Solved The Market [0] about RenTech: Paraphrasing: \"They went out of their way to try and fill in gaps in the historical market data. Over time, they got so good at predicting prices movements that they built algorithms to fill in the gaps.\" Highly recommend the book if you are interested in the history of algorithmic trading. 0 - https://amzn.to/4jNFpOS 0 -"
+        },
+        {
+          "by": "torginus",
+          "text": "Not a money guy, but isn't measuring accuracy of a price model via least squares misguided? A model that predicts the market with 99% accuracy (1% LS error), but reacts to price changes in a delayed manner is not very valuable, while the same model that is early is basically a money printer."
+        }
+      ],
+      "image": "https://blog.janestreet.com/can-you-use-autoregressive-diffusion-to-generate-market-data/dit-generative-10x.gif"
+    },
+    {
+      "id": 50032758,
+      "url": "https://conversableeconomist.com/2026/09/28/i-would-like-the-value-of-my-home-to-rise-while-my-property-taxes-fall/",
+      "hn": "https://news.ycombinator.com/item?id=50032758",
+      "title": "I would like the value of my home to rise, while my property taxes fall",
+      "time": 1791638943,
+      "points": 179,
+      "depth": [
+        {
+          "text": "homeowners want **higher home values** and **lower property taxes**, but cutting those taxes can push prices up again",
+          "tier": "simple"
+        },
+        {
+          "text": "Several states have changed property-tax rules to **benefit owner-occupied homes**, shifting the tax burden to commercial property owners, other local taxes, and state funding. The author argues this can mean **less stable local funding** and **higher housing costs**, benefiting current owners while making homes costlier for future buyers.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some want tax relief or caps for homeowners who may have more wealth than income; others warn that relief shifts costs to renters and weakens local services.",
+      "comment_count": 428,
+      "terms": [
+        "property tax",
+        "owner-occupied",
+        "wealth tax",
+        "tax foreclosure",
+        "zoning controls",
+        "land-value taxation"
+      ],
+      "entities": [
+        "David Schleicher",
+        "SSRN",
+        "Conversable Economist"
+      ],
+      "comments": [
+        {
+          "by": "Johnny555",
+          "text": "In the last three years, a number of states have substantially reformed their property tax systems, providing huge tax benefits to owner-occupied homes and shifting the burden of paying for services like schools and police to commercial property owners (including rental apartment buildings) That sounds like shifting the property tax burden from homeowners to renters - homeowners are generally…"
+        },
+        {
+          "by": "Xylakant",
+          "text": "A major problem with property taxes on owner-occupied housing is that the value the owner derives from the house is not dependent on the resale value of the house. An owner occupied house is not primarily a financial investment in most cases. Any increase in housing value (and thus property taxes) is mostly an increase in the cost of living. Any gain in value cannot easily be realized since it’s…"
+        },
+        {
+          "by": "bob1029",
+          "text": "I don't like taxes but I also like having roads, sewage treatment, 100+ psi water pressure, multi-gigabit internet access, and a reasonably constant flow of electricity. The cost of public education and the management of that system is the only serious concern I have with my local taxes. I actually don't mind the cost of living in my neighborhood going up. The $2500/yr HOA fee is a feature for…"
+        },
+        {
+          "by": "robswc",
+          "text": "What I don't understand is (because I honestly haven't been afforded the time to sit down and think about it, also it's frustrating), why do taxes generally trend upwards for the average person? Doing napkin math it seems to have gone from ~10% to ~28% for average family. These are %-based, why does it need to change? Why can't cities/towns/counties work with the money their citizens can give?…"
+        },
+        {
+          "by": "surfmike",
+          "text": "I think land-value taxation, with a cap on properties based on income (and wealth) for your first home, is the way. I do think there is something special about the idea of home, and that home ownership should be encouraged. It brings people stability. People shouldn't be pushed out just because others have more income than them. At the same time, we do need property taxes. In California, rate…"
+        }
+      ],
+      "image": "https://i0.wp.com/conversableeconomist.com/wp-content/uploads/2021/08/cropped-Screen-Shot-2021-08-23-at-2.04.56-PM.png?fit=889%2C66&ssl=1"
+    },
+    {
+      "id": 50024055,
+      "url": "https://readrare.com/",
+      "hn": "https://news.ycombinator.com/item?id=50024055",
+      "title": "Show HN: The rarest tech books and docs you've probably never read",
+      "time": 1791567584,
+      "points": 161,
+      "depth": [
+        {
+          "text": "someone put **internal memos** and **forgotten books** from tech companies on a **free-to-read shelf**",
+          "tier": "simple"
+        },
+        {
+          "text": "The shelf ranges from **The Apple Marketing Philosophy** and Sequoia’s “R.I.P. Good Times” to **Ilya Sutskever's Deposition**. The maker says most of it was buried in court exhibits, dead links and archive scans.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some praise the collection; others say many entries aren’t really rare and the label is misleading.",
+      "comment_count": 60,
+      "terms": [
+        "AGI",
+        "on-prem",
+        "commodity components"
+      ],
+      "entities": [
+        "Apple",
+        "Intel",
+        "Google",
+        "Netflix",
+        "Facebook",
+        "Microsoft",
+        "Sequoia Capital",
+        "YouTube",
+        "Instagram",
+        "OpenAI",
+        "Steve Jobs",
+        "Ilya Sutskever",
+        "Mark Zuckerberg",
+        "Mike Markkula",
+        "Warren Buffett",
+        "Tim Berners-Lee",
+        "Nokia",
+        "MrBeast",
+        "Akio Morita",
+        "BASIC",
+        "Lisp",
+        "Prolog",
+        "Erlang",
+        "Flash"
+      ],
+      "comments": [
+        {
+          "by": "washadjeffmad",
+          "text": "https://newsletter.semianalysis.com/p/google-we-have-no-moat... \"This necessarily means relinquishing some control over our models. But this compromise is inevitable. We cannot hope to both drive innovation and control it.\" (2023) In light of history, they went with the third option. I think Google wasn't the only one to recognize that availability of inexpensive commodity components was a threat…"
+        },
+        {
+          "by": "bas",
+          "text": "Certainly not rare, but consistent with the readings on the shelves: \"Thoughts on Flash\" ( https://web.archive.org/web/20170615060422/https://www.apple... )"
+        },
+        {
+          "by": "miletus",
+          "text": "hi friends! i like building cool things so i built read rare - the rarest docs and books you've probably never read. some of the best writing about building things was never meant to be public - steve jobs' agenda email for apple's secret top 100 offsite. facebook's little red book. the 1968 memo intel used to raise its first money. sequoia's \"R.I.P. good times\" deck. most of it is buried in…"
+        },
+        {
+          "by": "jan_m_savage",
+          "text": "I don't think 'rare' is the right word here. Rare means you can't find it easily, not 'what you have missed or don't know about'. But then what is the word for that? English doesn't have it, afaik. Perhaps 'unexplored treasures'? Like so: \"Less-known treasures you probably haven't read\" but this doesn't have a zing to it. Or? \"A collection of useful tech books you've probably missed\" sounds more…"
+        },
+        {
+          "by": "wk_end",
+          "text": "What’s meant by “rare” here? It seems like there might be a language barrier thing going on. There’s nothing rare about, say, John Sculley’s autobiography; I can buy it on Amazon new for about $20 or used for about $5."
+        }
+      ],
+      "image": "https://readrare.com/og.jpg?v=5"
+    },
+    {
+      "id": 50028027,
+      "url": "https://www.broadinstitute.org/news/clinical-trial-prion-disease-drug-candidate-begins-enrolling-participants",
+      "hn": "https://news.ycombinator.com/item?id=50028027",
+      "title": "Clinical trial of a prion disease drug candidate begins enrolling participants",
+      "time": 1791589988,
+      "points": 153,
+      "depth": [
+        {
+          "text": "a **prion disease drug** candidate has started enrolling people in a clinical trial",
+          "tier": "simple"
+        },
+        {
+          "text": "**Anastasia Khvorova** and her lab at UMass Chan Medical School developed the candidate with Sonia Vallabh, Eric Minikel, and their research teams. They’re **sharing the process openly**, including an **IND filing** that would typically remain confidential.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 43,
+      "terms": [
+        "prion disease",
+        "IND filing",
+        "RNA",
+        "protein folding"
+      ],
+      "entities": [
+        "Anastasia Khvorova",
+        "UMass Chan Medical School",
+        "Sonia Vallabh",
+        "Eric Minikel"
+      ],
+      "comments": [
+        {
+          "by": "creata",
+          "text": "In case anyone hasn't seen it, the story behind this couple is interesting: https://www.cureffi.org/about/"
+        },
+        {
+          "by": "tim333",
+          "text": "I'm glad they are making some progress partly because my sister has ALS and there may be similar mechanisms - there seems to be some protein folding malfunction at play in that too. So far there's been very little progress with anything like that. There was a youtube recently I think on the same trials https://youtu.be/wuXip1SCJGs"
+        },
+        {
+          "by": "chasil",
+          "text": "Prion diseases include: -in sheep, scrapie -in humans, Kuru and Creutzfeldt-Jacob -in cows, BSE (\"mad cow\") -in deer, Chronic Wasting Disease (CWD) -in cats, feline spongiform encephalopathy Scrapie is particularly known, deadly, and long-lived. The toxin proteins can survive for a decade in soil, and infect a new host years after it emerged…"
+        },
+        {
+          "by": "jeswin",
+          "text": "I've seen prion disease up close with someone dear. I couldn't sleep thinking about what could have been going through their minds. It was 6 months of torture, and if I were in the same situation I'd have preferred someone switch me off. I remember reading about Sonia Vallabh (and their race against time) - I'm so glad they're getting somewhere. Kudos."
+        },
+        {
+          "by": "hypfer",
+          "text": "The most scary thing about prions is that they're inert. They're not even evil or agressive. They just are. The mere shape of them causes cascading exponential system failures. And that shape happens to be very stable and requires a lot of energy to be broken up. Like some kind of rock that falls from the sky or materializes out of thin air, and slowly the whole village turns into identical…"
+        }
+      ],
+      "image": null
+    },
+    {
       "id": 50029123,
       "url": "https://beaksec.github.io/posts/telegram-desktop-one-click-account-takeover/",
       "hn": "https://news.ycombinator.com/item?id=50029123",
@@ -777,6 +1413,53 @@
     }
   ],
   "glossary": {
+    "lobbying": "Trying to influence government decisions by making a case to officials.",
+    "Super PAC": "A political group that can spend money to influence elections, separate from a candidate’s campaign.",
+    "quid pro quo": "A favor or payment given in exchange for someone doing something in return.",
+    "revolving door": "When people move between public office and jobs with companies affected by government decisions.",
+    "GPLv3": "GNU General Public License version 3: a set of rules for sharing software that lets people use, inspect, and change code under stated conditions.",
+    "OSS": "Open-source software: software whose code is shared so others can inspect it and sometimes reuse it under a license.",
+    "commercial license": "A set of rules that says how software can be used in paid products or resold.",
+    "self-hosting": "Running a model on computers you control instead of using someone else's online service.",
+    "UNIX certification": "A formal check that a system follows UNIX rules and qualifies to use the UNIX trademark.",
+    "Unix 03": "A category in the registry that commenters say macOS 26 is listed under.",
+    "Single UNIX Specification": "The written set of UNIX rules a system must meet to qualify for certification.",
+    "self-hosted": "Running a service on a computer you control rather than relying on someone else's.",
+    "Durable Objects": "Cloudflare building blocks that combine running code, saved state, and live connections.",
+    "SQLite": "A small database that can be stored in a single file.",
+    "Workers AI": "Cloudflare's service that lets apps use AI models to answer requests.",
+    "telemetry": "Information a program sends back about how it is being used or whether it is working properly.",
+    "decision laundering": "Blaming a computer for an outcome to hide the choices people made that led to it.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "if-else statement": "A code instruction that picks what to do based on whether something is true or false.",
+    "black-box": "Something whose inner workings are hard to see or understand.",
+    "guardrails": "Instructions that tell an AI how it should respond.",
+    "proof assistant": "Software that checks whether a mathematical proof follows its rules.",
+    "formal proof": "A proof written in strict rules so each step can be checked.",
+    "autoformalization": "Using AI to turn ordinary mathematical writing into a proof a computer can check.",
+    "soundness bug": "A flaw that lets proof-checking software accept a false result.",
+    "kernel": "A small program that carries out a calculation on a computer's graphics chip or processor.",
+    "type theory": "A way to build mathematics where objects have kinds and rules describe how those kinds fit together.",
+    "relative consistency": "A claim that one system has no contradictions if another system has none.",
+    "ingredient splitting": "A way of listing parts of a sweetener separately, so each one appears lower on the ingredient list.",
+    "FDA": "Food and Drug Administration: the US agency that oversees food and drug rules, including food labeling.",
+    "autoregressive": "A way to generate a sequence one step at a time, using what has already been generated to make the next step.",
+    "diffusion model": "An image-making AI that starts with visual noise and gradually turns it into a picture.",
+    "flow matching": "A way to train a model to learn how to move from random noise toward real data.",
+    "atom smoothing": "A method that smooths sharp spikes in data, then puts their probability back without creating a sharp break.",
+    "property tax": "A tax charged on owning a home or other property.",
+    "owner-occupied": "A home its owner lives in, rather than rents out.",
+    "wealth tax": "A tax based on what someone owns, rather than just what they earn.",
+    "tax foreclosure": "When a home is taken and sold because its owner has not paid property taxes.",
+    "zoning controls": "Rules about what can be built and where.",
+    "land-value taxation": "A tax based on the value of the land itself, rather than the buildings on it.",
+    "AGI": "Artificial General Intelligence: a hypothetical AI that could handle many kinds of tasks, not just one narrow job.",
+    "on-prem": "Software that runs on a company's own computers rather than being accessed as an online service.",
+    "commodity components": "Widely available computer parts that many companies sell, rather than parts made just for one company.",
+    "prion disease": "A disease where misshapen proteins spread their shape to other proteins and damage the brain.",
+    "IND filing": "Investigational New Drug filing: a request to regulators for permission to test a drug in people.",
+    "RNA": "A molecule cells use to carry instructions for making proteins.",
+    "protein folding": "The way a protein takes on the shape it needs to do its job.",
     "IPC injection": "Inter-process communication injection: adding extra instructions to messages one program sends to another.",
     "URI scheme": "Uniform Resource Identifier scheme: the label at the start of a link that tells a device which app should handle it.",
     "socket": "A connection that lets programs exchange messages, often on the same computer.",
@@ -795,7 +1478,6 @@
     "sandboxing": "Restricting what a program can access so it cannot freely affect the rest of the system.",
     "OCR": "Optical character recognition: software that reads words from a picture or scanned page.",
     "NLP": "Natural language processing: getting computers to work with human language, such as words in documents.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
     "pipeline": "A series of steps where each step works on data and passes it to the next.",
     "transcription": "A typed-out version of something written or spoken; here, text made from scanned historical pages.",
@@ -815,8 +1497,6 @@
     "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
     "open weights": "The model's learned settings are available for people to download and run themselves.",
     "single-pass": "Doing the scoring in one go, rather than building an answer piece by piece.",
-    "lobbying": "Trying to influence government decisions by making a case to officials.",
-    "Super PAC": "A political group that can spend money to influence elections, separate from a candidate’s campaign.",
     "amortization": "Spreading the cost of something over time in accounting, instead of counting it all at once."
   }
 }
