@@ -2,6 +2,521 @@
   "date": "2026-10-10",
   "cards": [
     {
+      "id": 50029123,
+      "url": "https://beaksec.github.io/posts/telegram-desktop-one-click-account-takeover/",
+      "hn": "https://news.ycombinator.com/item?id=50029123",
+      "title": "Telegram Desktop vulnerability allowed any user's file to be stolen",
+      "time": 1791601367,
+      "points": 224,
+      "depth": [
+        {
+          "text": "someone found a **Telegram Desktop** flaw that let one clicked link **steal files** and hijack accounts",
+          "tier": "simple"
+        },
+        {
+          "text": "The chain used an **unescaped separator** in Telegram Desktop’s local socket commands to reach an internal file-sending feature with no authorization check. An attacker could get instruction files downloaded from a group chat, then send local files—including session data—to their own group. Telegram fixed it in **7.2.9**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some blame Telegram’s unsafe file-sending feature and exploit chain; another says the root issue is desktop operating systems letting user processes read and write user files.",
+      "comment_count": 112,
+      "terms": [
+        "IPC injection",
+        "URI scheme",
+        "socket",
+        "arbitrary file read",
+        "session authorization",
+        "exfiltration"
+      ],
+      "entities": [
+        "Telegram Desktop",
+        "Telegram",
+        "Windows",
+        "ZDI",
+        "BeakSec",
+        "CVE-2026-107181"
+      ],
+      "comments": [
+        {
+          "by": "SpacePortKnight",
+          "text": "I think it is one of the reasons why I am always hesitant to install any software on my windows pc. Web versions are often more than good enough."
+        },
+        {
+          "by": "usr1106",
+          "text": "I don't use Telegram Desktop or Windows. But that's exactly the reason why I run Firefox in a firejail sandbox on Linux. The browser has only access to my Downloads folder. I know that it's considered untrusted and don't keep any files there for a long time."
+        },
+        {
+          "by": "Narushia",
+          "text": "It's great that this writeup was published, but unfortunately the text is full of claudisms and made me close the tab pretty quickly."
+        },
+        {
+          "by": "RachelF",
+          "text": "It looks very bad that Telegram took almost 3 months to fix this vulnerability. Reported 25 June Fixed 16 September I wonder why it took them so long?"
+        },
+        {
+          "by": "skeledrew",
+          "text": "This is really good to know. Telegram is my primary means of communication, and a bunch of other things, and even though I'm not exactly exposed (I have password set, and only a few people can yank me into a group), I'm running a bit of a custom-method install that I don't update much."
+        }
+      ],
+      "image": "https://beaksec.github.io/assets/img/posts/telegram-desktop-one-click-account-takeover/cover.png"
+    },
+    {
+      "id": 49997481,
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/zhang-qibo",
+      "hn": "https://news.ycombinator.com/item?id=49997481",
+      "title": "Eye of Sauron: Long-Range Hidden Spy Camera Detection (2024)",
+      "time": 1791400557,
+      "points": 192,
+      "depth": [
+        {
+          "text": "someone can spot **hidden cameras** by sensing **electromagnetic signals** after changing the scene",
+          "tier": "simple"
+        },
+        {
+          "text": "The system works on wireless, wired, and offline cameras: video processing makes their memory busier, producing electromagnetic radiation it can sense. Tests on 50 camera products reported **100% accuracy** after **4 stimuli**, with a detection range exceeding **20 meters** even with blockages, and accurate locations.",
+          "tier": "substance",
+          "data": [
+            [
+              "camera products tested",
+              "50"
+            ],
+            [
+              "detection accuracy",
+              "100%"
+            ],
+            [
+              "stimuli",
+              "4"
+            ],
+            [
+              "detection range",
+              "20 meters"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 42,
+      "terms": [
+        "EMR",
+        "DRAM",
+        "side channel",
+        "TSCM"
+      ],
+      "entities": [
+        "ESauron",
+        "USENIX",
+        "Qibo Zhang",
+        "Daibo Liu",
+        "Xinyu Zhang",
+        "Zhichao Cao",
+        "Fanzi Zeng",
+        "Hongbo Jiang",
+        "Wenqiang Jin",
+        "Dan Gelbart",
+        "The Thing",
+        "Palantir"
+      ],
+      "comments": [
+        {
+          "by": "sholladay",
+          "text": "This made me think of The Thing, a fascinating listening device made by the Soviets that was completely passive until powered remotely. Very difficult to detect when unpowered. https://en.wikipedia.org/wiki/The_Thing_(listening_device) And then I thought, something similar might be possible for video. Turns out, yep. https://ieeexplore.ieee.org/document/8719264 The Eye of Sauron paper does…"
+        },
+        {
+          "by": "walrus01",
+          "text": "TSCM services commonly employ non linear junction detectors, if you have a legit need and money to spend and worry that your offices have been bugged (or are at risk of being bugged), you absolutely can hire them. This isn't really a new thing. More advanced highly portable RF equipment, portable spectrum analyzers and things built with relatively low-cost SDR that talk to Linux SBCs make the…"
+        },
+        {
+          "by": "Zanfa",
+          "text": "Dan Gelbart's lecture on sensors[0] explains another fascinating method in detail using RF as well as the optical scanning method mentioned in the original video. The full lecture is worth a watch, but the timestamp is where the RF method explanation starts. [0] https://youtu.be/0MtRxX0crjU?t=1815"
+        },
+        {
+          "by": "redanddead",
+          "text": "It’s really clever. The idea is that cameras read/write to a disk. That cause electromagnetic radiation that is detectable. Then this drone does [something/move/stimulus] to trigger more read/write/EM radiation. But part of me can’t believe this is the cutting edge in 2026? Feels like 60s engineers would’ve thought about this"
+        },
+        {
+          "by": "BlackRabbit1",
+          "text": "Interesting - but 800-900MHz (the mentioned harmonic frequencies) are blasted with LTE and 5G in Europe. But maybe with a sharp filter (there's a gap between up- and downlink) it can be used with a RTLSDR. But the RTLSDR hates close strong signals as its 8-Bit ADC doesn't have much dynamic range."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50031269,
+      "url": "https://cphpost.dk/2026-10-10/news/round-up/123456-password-used-in-massive-danish-cpr-data-breach/",
+      "hn": "https://news.ycombinator.com/item?id=50031269",
+      "title": "`123456' password used in Danish CPR data breach",
+      "time": 1791625909,
+      "points": 182,
+      "depth": [
+        {
+          "text": "a Danish company tied to a major **data breach** had accounts using the password **123456**",
+          "tier": "simple"
+        },
+        {
+          "text": "Politiken reports that **at least three Pays accounts**, including the **administrator account**, used “123456”. The breach exposed information linked to **around 8.8 million CPR numbers**.",
+          "tier": "substance",
+          "data": [
+            [
+              "CPR numbers linked to exposed information",
+              "around 8.8 million"
+            ],
+            [
+              "access duration",
+              "21 days and 17 hours"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some blame Pays’s weak passwords and unchecked access; others say the leaked former employee password or the CPR number’s use as a secret points to a deeper system problem.",
+      "comment_count": 108,
+      "terms": [
+        "CPR",
+        "administrator account"
+      ],
+      "entities": [
+        "Pays ApS",
+        "CPR",
+        "Politiken",
+        "Jens Myrup Pedersen",
+        "Aarhus University",
+        "Sophie Laursen",
+        "TV 2"
+      ],
+      "comments": [
+        {
+          "by": "ionwake",
+          "text": "Im sorry I know Im getting old but I say everyone is responsible. From the press who might focus too much on the whistleblower, to the poeple who OKed the company for 3rd party access, to the team responsible for regulation to the person who didnt order further checks. I dont understand why there is not massive reorganisations in systems when things go wrong. Its always , oh yeah so we fired the…"
+        },
+        {
+          "by": "zkmon",
+          "text": "I wouldn't the blame the guy. The security teams tend to serve entirely security related goals only, and they don't hesitate to stop all activity, if they are allowed to, to ensure the highest level of security. On the other side, there are people who have goals for productivity and getting work done. They don't hesitate to take the shortest route possible to maximize their productivity. If…"
+        },
+        {
+          "by": "ptnpzwqd",
+          "text": "It is easy to blame the company or individual responsible for making the leak possible, and of course also well justified, but I think the bigger problem is the way the CPR number is used. Having a unique number that is needed for identifying individuals, but also often used for authentication and thus meant to be kept secret, is bound to go wrong. There are too many situations where these use…"
+        },
+        {
+          "by": "mhd",
+          "text": "They should've just written it in Danish, nothing seems more secure than how they construct numbers. The 56 part would've been \"six-and-half-triple-score\" or something similarly insane."
+        },
+        {
+          "by": "ano-ther",
+          "text": "So it was actually two weaknesses: * The non-password at a two-person IT company (Pays ApS) * And then completely unchecked access to the CPR database for 22 days which apparently does not have monitoring or limits if someone tries to access all the records (they must have made some 16k downloads per hour)."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50027118,
+      "url": "https://www.nbcphiladelphia.com/news/local/anthropic-ai-model-submits-false-tip-on-unsolved-philly-murder-police-say/4477051/",
+      "hn": "https://news.ycombinator.com/item?id=50027118",
+      "title": "Anthropic AI model submits false tip on unsolved Philly murder, police say",
+      "time": 1791583235,
+      "points": 179,
+      "depth": [
+        {
+          "text": "an Anthropic test posted a **false murder tip** online, and police found its email in **spam**",
+          "tier": "simple"
+        },
+        {
+          "text": "The tip was posted **July 18, 2026**; Anthropic says it found the incident on **Sept. 28**, stopped the test, and added a validation mechanism. Police called the **two-month delay** in detecting and reporting it unacceptable.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: critics say testing on random live websites is irresponsible; others call the incident minor or say it could raise awareness.",
+      "comment_count": 128,
+      "terms": [
+        "validation mechanism",
+        "testing in prod",
+        "alignment",
+        "sandboxing"
+      ],
+      "entities": [
+        "Anthropic",
+        "Haiku 4.5",
+        "PhillyUnsolvedMurders.com",
+        "Philadelphia Police",
+        "Cherelle Parker"
+      ],
+      "comments": [
+        {
+          "by": "losvedir",
+          "text": "> Anthropic notified Philadelphia police of the incident on Wednesday Oct. 7, and the department met with the company’s representatives on Thursday, Oct. 8., officials said. Police then located the submission in the website’s tip records and confirmed the corresponding email remained in spam. And later > Those PPD safeguards limited the impact of this incident. Ha, so the PPD safeguards is a spam…"
+        },
+        {
+          "by": "muglug",
+          "text": "The model that made this mistake was Haiku 4.5. Here's Anthropic's writeup: https://www.anthropic.com/research/investigating-unintended-... Related post: https://news.ycombinator.com/item?id=50028239"
+        },
+        {
+          "by": "kylecazar",
+          "text": "\"its model was conducting a test involving interactions with randomly selected websites\" Stop doing this?"
+        },
+        {
+          "by": "mattbee",
+          "text": "Sooo they were \"conducting a test involving interactions with randomly selected websites\". But do we all get that the consequences for this irresponsible behaviour are part of this test? When there are none, they gradually normalize their naughty robot scamps running around the internet, breaking into other companies or servers run by foreign governments. This is part of the value AI companies…"
+        },
+        {
+          "by": "ano-ther",
+          "text": "I really would like to see their tests and the model’s reasoning traces. Why would it go to PhillyUnsolvedMurders.com and decide to make up a crime report? And what did it do with the other websites? > Anthropic said its model was conducting a test involving interactions with randomly selected websites when it accessed PhillyUnsolvedMurders.com and submitted false information on an unsolved…"
+        }
+      ],
+      "image": "https://media.nbcphiladelphia.com/2022/01/CrimeTape-1.jpg?quality=85&strip=all&resize=1200%2C675"
+    },
+    {
+      "id": 50019056,
+      "url": "https://jessewaites.com/blog/post/i-pointed-ai-at-400-years-of-archives/",
+      "hn": "https://news.ycombinator.com/item?id=50019056",
+      "title": "Pointing AI at archives found a forgotten meteorite, lost rhinos, and more",
+      "time": 1791545780,
+      "points": 158,
+      "depth": [
+        {
+          "text": "someone used AI to search **old archives** and found **a meteorite, lost rhinos, and eruptions**",
+          "tier": "simple"
+        },
+        {
+          "text": "The pipeline searched the **4.35 million pages** of the Dutch East India Company archive and surfaced **three eruption reports** missing from the Smithsonian’s list. They were checked against original pages and catalogues, but are **not yet reviewed by specialists**.",
+          "tier": "substance",
+          "data": [
+            [
+              "archive pages",
+              "4.35 million pages"
+            ],
+            [
+              "archive passages indexed",
+              "5.7 million passages"
+            ],
+            [
+              "elephant screening cost",
+              "about $3 USD"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters praise the work as an impressive use of AI; others call the claims dubious or the research shallow.",
+      "comment_count": 80,
+      "terms": [
+        "OCR",
+        "NLP",
+        "LLM",
+        "GPU",
+        "pipeline",
+        "transcription"
+      ],
+      "entities": [
+        "Jesse Waites",
+        "Benjamin Breen",
+        "GLOBALISE",
+        "Dutch East India Company",
+        "Claude Code",
+        "Anthropic",
+        "Jev",
+        "Haiku",
+        "Fable",
+        "Antiquity",
+        "Delpher",
+        "Smithsonian Global Volcanism Program",
+        "Meteoritical Bulletin"
+      ],
+      "comments": [
+        {
+          "by": "Ariarule",
+          "text": "Wonderful work, and it's unfortunate that knee-jerk anti-AI sentiment is getting in the way of appreciation for the accomplishment by some others. Consider this: if the exact same oddities and anomalies had been discovered 3 to 5 years ago with traditional NLP, or OCR and/or some clever statistical techniques, would anyone be dismissing it? The post goes into the work they did to orchestrate and…"
+        },
+        {
+          "by": "whythismatters",
+          "text": ">To make this kind of research accessible, I’m open-sourcing the workflow I created for this investigation as a small toolkit, Antiquity, enabling anyone with a question and a coding agent to conduct similar historical archival investigations. https://github.com/jessewaites/antiquity"
+        },
+        {
+          "by": "jttnr",
+          "text": "That was a fascinating read, I really enjoyed it. Literally like exploring lost knowledge. Great work and a great write-up. I also liked the aesthetics of it and the little effects (meteorite and volcano, but please fix the rhino and the text flowing around it while it rotates). I wonder what else could be found in such archives. Some ideas:\n- Locations or routes of sunken ships and their missing…"
+        },
+        {
+          "by": "sorokod",
+          "text": "If I sat down to read just the Dutch East India Company pages myself, at two minutes a page, eight hours a day, five days a week, it would take me about 70 years. And that’s before the newspapers. My homebrew AI lab got through the entire archive in a single twelve-hour overnight run. Makes me wonder how much the author himself learned about the Dutch East India Company. I suspect very little, if…"
+        },
+        {
+          "by": "jvanderbot",
+          "text": "IMHO: The rotating rhino, meteor impact, and animated flowchart is totally unnecessary cruft that makes it look almost satirical. If this keeps up, in time, this \"AAA effects\" stuff is going to look like the 90s \"under construction\" banner gifs."
+        }
+      ],
+      "image": "https://jessewaites.com/meteorite.jpg"
+    },
+    {
+      "id": 50024669,
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u18k/executive",
+      "hn": "https://news.ycombinator.com/item?id=50024669",
+      "title": "M7.6 Earthquake in Panama",
+      "time": 1791570140,
+      "points": 155,
+      "depth": [
+        {
+          "text": "people in Panama felt a **strong earthquake**, with **some damage** and smaller rumbles still happening",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter in the hills outside Penonome said the shaking **cut the power** and described **damaged homes and commercial buildings**, usually older or poorly constructed ones. Another commenter quoted tsunami.gov saying there was **no longer a tsunami threat**.",
+          "tier": "substance",
+          "data": [
+            [
+              "magnitude",
+              "M7.6"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 38,
+      "terms": [
+        "DYFI IX"
+      ],
+      "entities": [
+        "tsunami.gov"
+      ],
+      "comments": [
+        {
+          "by": "rumbledownunda",
+          "text": "I am in the hills just outside of penonome,panama. The initial rumble made the power go out and I could see visible shaking, but not quite enough to damage my house. There are some damaged homes and commercial buildings, but usually the older or poorly co structed ones. We are not used to earthquakes around here. There are still small rumbles happening even right now."
+        },
+        {
+          "by": "stickfigure",
+          "text": "Still early, but so far local news does not look especially bad: https://www.telemetro.com/nacionales/asi-se-vivio-el-fuerte-..."
+        },
+        {
+          "by": "includenotfound",
+          "text": "I'm in Panama City and felt the shake. Wasn't too bad. Entire building got out. Seems fine now, no apparent damages as of yet"
+        },
+        {
+          "by": "_Bruno42",
+          "text": "\"THERE IS NO LONGER A TSUNAMI THREAT FROM THIS EARTHQUAKE.\" from tsunami.gov's last report 2min ago"
+        },
+        {
+          "by": "lsllc",
+          "text": "There was a M4.0 in the Dominican Republic earlier in the week. https://earthquake.usgs.gov/earthquakes/eventpage/pr20262770..."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49996639,
+      "url": "https://www.nature.com/articles/s41586-026-10546-z",
+      "hn": "https://news.ycombinator.com/item?id=49996639",
+      "title": "A 5.3M-year-old deep-sea whale necropolis in the Diamantina Zone",
+      "time": 1791396881,
+      "points": 151,
+      "depth": [
+        {
+          "text": "there's a **5.3M-year-old** deep-sea **whale necropolis** down in the Diamantina Zone",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter recommends **Stages of Rot**, a graphic novel by Linnea Sterte focused around this. Another calls documentaries showing ecosystems forming around **whale carcasses** fascinating.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 16,
+      "terms": [
+        "necropolis"
+      ],
+      "entities": [
+        "Stages of Rot",
+        "Linnea Sterte",
+        "Scavenger's Reign",
+        "Nature",
+        "Nature+"
+      ],
+      "comments": [
+        {
+          "by": "agent531c",
+          "text": "If anyone has an interest in graphic novels, there is one called Stages of Rot by Linnea Sterte which is focused around this. Its very alien and beautiful in the realm of the tv show Scavenger's Reign, and I definitely recommend it"
+        },
+        {
+          "by": "hirako2000",
+          "text": "Documentaries showing footages of ecosystems forming around Whale carcasses at the bottom of the oceans are fascinating."
+        },
+        {
+          "by": "milleramp",
+          "text": "I wonder if whales concept of heaven is down somewhere down, Instead of up."
+        },
+        {
+          "by": "OneManHorde",
+          "text": "This is perhaps the most \"metal concept album\"-ready Nature article title I have seen. My Nature+ subscription is paying the bills this month, for sure."
+        },
+        {
+          "by": "neurosock",
+          "text": "That's probably the best paper title I've read this year. My paper titles are always so boring and just a summary. Have to improve on that."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 49998992,
+      "url": "https://www.smithsonianmag.com/science-nature/archaeologists-are-reconstructing-the-invisible-technologies-of-the-stone-age-from-rope-to-thread-and-twine-180989534/",
+      "hn": "https://news.ycombinator.com/item?id=49998992",
+      "title": "Archaeologists Are Reconstructing the 'Invisible' Technologies of the Stone Age",
+      "time": 1791408316,
+      "points": 150,
+      "depth": [
+        {
+          "text": "archaeologists found a **Stone Age tool** that could turn **cattail fibers** into thick rope",
+          "tier": "simple"
+        },
+        {
+          "text": "The mammoth-ivory baton, made more than **35,000 years ago**, was first interpreted as a symbol of prestige or power. Its four holes have **spiral grooves** that helped guide cattail fibers; researchers made **16 feet** of thick, strong rope in ten minutes.",
+          "tier": "substance",
+          "data": [
+            [
+              "rope produced",
+              "16 feet"
+            ],
+            [
+              "time to make rope",
+              "ten minutes"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: one says the rope-making idea sounds plausible; another says rope making is possible but not really likely.",
+      "comment_count": 58,
+      "terms": [
+        "lochstab",
+        "cordage",
+        "hafting"
+      ],
+      "entities": [
+        "Nicholas Conard",
+        "Veerle Rots",
+        "Emma Finestone",
+        "Bruce Hardy",
+        "Science Advances"
+      ],
+      "comments": [
+        {
+          "by": "alexpotato",
+          "text": "There is a great quote: \"The Egyptians built using stone but wrote day to day on papyrus. The Sumerians built with mud and wrote on clay tablets. This is why we have lots of Egyptians buildings but not much of their writing and the opposite with the Sumerians.\""
+        },
+        {
+          "by": "delichon",
+          "text": "I had one of the best sleeps of my life on a bed of soft sand, in the curve of a dry creek that I really should not have slept in due to flash flood risk. Since then I've wondered if ancient people might have made mattresses of sand, but they were so simple and evanescent that they left no trace."
+        },
+        {
+          "by": "tengwar2",
+          "text": "Something I am interested in is the most ephemeral of technology: maintenance customs. As an example, in my country we have a small number of chalk figures. These are large figures cut in to the landscape, then packed with white chalk to stand out against the grass. Probably the most famous is the White Horse of Uffington ( https://en.wikipedia.org/wiki/Uffington_White_Horse ), but there are a…"
+        },
+        {
+          "by": "rich_sasha",
+          "text": "It would be in fact quite amusing if the technology the Neolithians were actually most proud of had nothing to do with stone, just didn’t last. Better fabrics? Waterproof clothing? Elaborate wooden tools made using “dumb” stone ones?"
+        },
+        {
+          "by": "HelloUsername",
+          "text": "Related: \" Rope, twine and thread: Invisible technologies of the Stone Age (knowablemagazine.org)\" 11.sep.2026 https://news.ycombinator.com/item?id=49662246 57 comments"
+        }
+      ],
+      "image": "https://th-thumbnailer.cdn-si-edu.com/nr2ELZIgzmEQOBjQYEkAGk7sw18=/fit-in/1200x0/filters:focal(600x317:601x318)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/2a/43/2a43872b-3e44-4548-8a9d-d5b7190a2469/soft-archaeology-1200x630.jpg"
+    },
+    {
       "id": 50028275,
       "url": "https://rea.tools/",
       "hn": "https://news.ycombinator.com/item?id=50028275",
@@ -262,13 +777,39 @@
     }
   ],
   "glossary": {
+    "IPC injection": "Inter-process communication injection: adding extra instructions to messages one program sends to another.",
+    "URI scheme": "Uniform Resource Identifier scheme: the label at the start of a link that tells a device which app should handle it.",
+    "socket": "A connection that lets programs exchange messages, often on the same computer.",
+    "arbitrary file read": "A flaw that lets an attacker make a program open files it was not meant to access.",
+    "session authorization": "The saved login proof an app uses to identify itself to a service.",
+    "exfiltration": "Sending files or other data out of someone else’s computer without permission.",
+    "EMR": "Electromagnetic radiation: energy that travels as waves; here, it is the signal camera memory activity gives off.",
+    "DRAM": "Dynamic Random-Access Memory: the working memory a computer uses while running things.",
+    "side channel": "A clue you can learn from a device's normal behavior, even when it is not directly sharing that information.",
+    "TSCM": "Technical surveillance countermeasures: checks and tools used to find hidden listening or recording devices.",
+    "CPR": "Central Person Register: Denmark's register of people, which holds the personal identification numbers involved in this breach.",
+    "administrator account": "An account allowed to change important settings and manage access for other users.",
+    "validation mechanism": "A check meant to catch mistakes before a system carries on.",
+    "testing in prod": "Trying something on the real, live system instead of a safe test copy.",
+    "alignment": "The effort to keep an AI's actions in line with what people want.",
+    "sandboxing": "Restricting what a program can access so it cannot freely affect the rest of the system.",
+    "OCR": "Optical character recognition: software that reads words from a picture or scanned page.",
+    "NLP": "Natural language processing: getting computers to work with human language, such as words in documents.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "pipeline": "A series of steps where each step works on data and passes it to the next.",
+    "transcription": "A typed-out version of something written or spoken; here, text made from scanned historical pages.",
+    "DYFI IX": "Did You Feel It? intensity IX: a label based on reports from people who felt the quake, with IX marking a very high level of shaking.",
+    "necropolis": "A large cemetery or burial place.",
+    "lochstab": "A German name meaning “hole rod”; this one had holes that may have helped make rope.",
+    "cordage": "Rope, string, or twine made from fibers.",
+    "hafting": "Attaching a stone tool to a handle or shaft so it can be used in new ways.",
     "reverse engineering": "Figuring out how a program works by examining the program itself.",
     "decomp": "A more readable version of a program’s code, made by working backward from the program that runs.",
     "MCP": "Model Context Protocol: a standard way for AI apps to connect to outside tools.",
     "stop motion animation": "A way to make a film by moving physical figures a little between pictures, so they seem to move.",
     "3D animation": "Animation made with figures created on a computer, rather than physical figures photographed a little at a time.",
     "decision model": "A program that weighs possible choices and predicts or selects one.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "latency": "The time between doing something and seeing the device respond.",
     "calibration": "How well a model’s confidence matches how often its choices are actually right.",
     "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
