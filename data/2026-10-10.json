@@ -1,0 +1,281 @@
+{
+  "date": "2026-10-10",
+  "cards": [
+    {
+      "id": 50028275,
+      "url": "https://rea.tools/",
+      "hn": "https://news.ycombinator.com/item?id=50028275",
+      "title": "REA Reverse – Engineer Anything",
+      "time": 1791592627,
+      "points": 268,
+      "depth": [
+        {
+          "text": "someone made a tool that helps coding agents **inspect software** and **rebuild it**",
+          "tier": "simple"
+        },
+        {
+          "text": "The dinosaur demo’s speed rule **starts at 6 and rises toward 13**. In Windows Calculator, **10% of 200 becomes 20** after +; after ×, 10% becomes 0.1, so 200 × 0.1 = 20.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some fear easy AI-generated decomps will wipe out reverse-engineering hobbies and communities; others are excited to use agents to rebuild old games.",
+      "comment_count": 87,
+      "terms": [
+        "reverse engineering",
+        "decomp",
+        "MCP"
+      ],
+      "entities": [
+        "REA",
+        "Windows Calculator",
+        "Chrome",
+        "Microsoft"
+      ],
+      "comments": [
+        {
+          "by": "InvisibleUp",
+          "text": "Glancing at the Touhou 4 decomp[1], it's a lot better quality than a lot of AI decomps I've seen. It's matching, the variables are named sensibly, comments are sparse and comprehensible, and there's not much in the way of unaddressed Ghidra jank. And only in a month! My main complaint is that the file structuring seems more optimized for AI use than for mirroring the original intent of the devs…"
+        },
+        {
+          "by": "nirav72",
+          "text": "I wonder if this is why I've seen a lot videos popping up on my youtube feed related to vibe coded clones of various commercial apps in the past few days. Everything from clones of flagship products from Adob to Microsoft Office. Adobe product clones like Photoshop and Illustrator:\nhttps://www.youtube.com/watch?v=eFB79TYI-Vw Adobe after effects clone:\nhttps://www.youtube.com/watch?v=5mi_tYSdkWQ…"
+        },
+        {
+          "by": "DeepYogurt",
+          "text": "the chickens are coming home to roost"
+        },
+        {
+          "by": "mgaldys4",
+          "text": "Slightly off topic. I looked at REA's Android reversing support and found it still uses jadx mcp. That kills large scale APK reversing. jadx takes tens of minutes to preprocess an APK, build a code relationship database, etc. Even headless mcp is no exception. I basically can't use it to analyze APKs at scale, like 100 large commercial APKs in a pipeline, or 100 preinstalled APKs from a phone ROM…"
+        },
+        {
+          "by": "areoform",
+          "text": "I love such work. I hope to roll it into a package that anyone can use in the future. This work is only going to get more important because frontier models getting locked down will make this a lot harder over time. For example, I use Claude as a bouncing wall for my thoughts and I pointed out that, > GLM 5.2 was the only thing that helped HF while the agents were trying to access them. The…"
+        }
+      ],
+      "image": "https://rea.tools/assets/social-card.png"
+    },
+    {
+      "id": 50020533,
+      "url": "https://animationobsessive.substack.com/p/wallace-and-gromit-90-alone",
+      "hn": "https://news.ycombinator.com/item?id=50020533",
+      "title": "'Wallace and Gromit,' 90% Alone",
+      "time": 1791553771,
+      "points": 190,
+      "depth": [
+        {
+          "text": "someone made **A Grand Day Out** **mostly alone** as a school project",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says he commuted by **bus to the studio for years**; another says its **pauses and sweeping wide shots** give it a sense of scale and isolation.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 24,
+      "terms": [
+        "stop motion animation",
+        "3D animation"
+      ],
+      "entities": [
+        "Wallace and Gromit",
+        "A Grand Day Out",
+        "The Wrong Trousers",
+        "A Close Shave",
+        "Shaun the Sheep",
+        "Nick Park",
+        "Electronics for Dogs"
+      ],
+      "comments": [
+        {
+          "by": "davnicwil",
+          "text": "This is just incredible, I had absolutely no idea of the context of 'a Grand Day Out' being a solo school project. There's no way I'd imagined it wasn't done in a professional setup by a full team. A real standout part is how he commuted by bus to the studio for years , to work on it mostly alone. Truly amazing dedication to a passion project. I haven't watched it in probably 25 years but I'll…"
+        },
+        {
+          "by": "codeulike",
+          "text": "And then for his next work to be The Wrong Trousers, a near perfect film with the ending train sequence widely acclaimed as one of the best action sequences ever put to film https://youtu.be/jrmZIgVoQw4?feature=shared"
+        },
+        {
+          "by": "danielodievich",
+          "text": "I have a nephew who is in stop motion animation, since he was in his early teens and now getting close to his 3rd decade, doing movies now. Amount of work he had to do in early times all by himself was absolutely astounding. The people who have passion for it have PASSION in capital letters and then some. I and your entire family are so proud of you Willy, even though I am pretty sure you don't…"
+        },
+        {
+          "by": "VCFundedGenYer",
+          "text": "I love the atmosphere of the original 3 features. A Grand Day Out especially, it makes great use of pauses and sweeping ethereal wide shots to give a great sense of scale and isolation. As great as the post-A Close shave features are, something was definitely lost when they started adding more characters and expanded the universe."
+        },
+        {
+          "by": "jminnl",
+          "text": "The humor in those is so perfect. \"Have you seen this chicken?\""
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50024913,
+      "url": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/",
+      "hn": "https://news.ycombinator.com/item?id=50024913",
+      "title": "Microsoft-Decision-1, our model for fast decision-making",
+      "time": 1791571124,
+      "points": 175,
+      "depth": [
+        {
+          "text": "Microsoft's new **decision model** helps apps make **fast choices** like routing requests or sorting feedback",
+          "tier": "simple"
+        },
+        {
+          "text": "Microsoft post-trained **Qwen3.5-9B** to score fixed answer options, returning a probability for each; it also supports yes/no, multiple-choice, ratings and rubric-based grading. Microsoft reports its highest accuracy across **36 benchmarks** covering nearly 150,000 questions, and says it was **35 times quicker** than GPT-6 Sol.",
+          "tier": "substance",
+          "data": [
+            [
+              "benchmarks",
+              "36"
+            ],
+            [
+              "questions",
+              "nearly 150,000"
+            ],
+            [
+              "vs. runner-up",
+              "2.5 times quicker"
+            ],
+            [
+              "vs. GPT-6 Sol",
+              "35 times quicker"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: Topfi says it was cheaper but slower than Jev in their tests, while HarHarVeryFunny argues it still isn't price-competitive with Jev.",
+      "comment_count": 56,
+      "terms": [
+        "decision model",
+        "LLM",
+        "latency",
+        "calibration",
+        "API",
+        "open weights",
+        "single-pass"
+      ],
+      "entities": [
+        "Microsoft",
+        "Microsoft-Decision-1",
+        "Qwen3.5-9B",
+        "Microsoft Foundry",
+        "OpenRouter",
+        "H2O-Lightning-4B v1.1",
+        "GPT-6 Sol",
+        "JevBench",
+        "Jev",
+        "Microsoft AI",
+        "OpenAI",
+        "XBOX Research",
+        "STEAM",
+        "Twitter/X",
+        "Copilot",
+        "Microsoft Discovery",
+        "Achint Srivastava",
+        "Cloudflare",
+        "Clef",
+        "Strands",
+        "TypeSafe AI"
+      ],
+      "comments": [
+        {
+          "by": "nejch",
+          "text": "This is based on one of the smaller Qwen models, just like Cloudflare's Clef, Strands decider, and a plethora of others released in the last couple of weeks. Kind of funny how much hype they can all get out of this, but Qwen really is the little engine that could. Great to see open weights (if not open source) driving the whole ecosystem like this though."
+        },
+        {
+          "by": "chris_money202",
+          "text": "Microsoft is doing things differently with AI. It feels to me they are moving into local inference heavily and see a future where Windows has native AI APIs that run locally or optionally in the cloud/edge."
+        },
+        {
+          "by": "chrisandchris",
+          "text": "Will they use it to decide how to name Office, ehm Office 365, ehm Microsoft 365, ehm Microsoft 365 Copilot next?"
+        },
+        {
+          "by": "Topfi",
+          "text": "In my minimal suite it was cheaper (by 0.72x) but higher latency (283ms vs 369ms p50) than Jev. Results were very comparable across all scenarios I measure, first of these that I have tested that actually justifies its existence as a commercial release. Qwen tunes are nice and all but either price or performance makes each example I have tested not viable unless you are able to cheaply self-host…"
+        },
+        {
+          "by": "mrbonner",
+          "text": "I just don’t understand the use of a decoder model to make a classifier. Jev model will give you probability scores for each of the classes/selections you ask for. The probability is actual statistical probability that a selection is right. Using a decoder model for this comes down to picking the most probable class based on the probability what the next token assigned to a class is. They are all…"
+        }
+      ],
+      "image": "https://commandline.microsoft.com/wp-content/uploads/2026/10/introducing-microsoft-decision-1-our-model-for-fast-decision-making-card.png"
+    },
+    {
+      "id": 50029630,
+      "url": "https://geohot.github.io//blog/jekyll/update/2026/10/10/lobbying.html",
+      "hn": "https://news.ycombinator.com/item?id=50029630",
+      "title": "Lobbying",
+      "time": 1791607236,
+      "points": 153,
+      "depth": [
+        {
+          "text": "someone mocks American **lobbying** as **bribery** dressed up as campaign money and political advice",
+          "tier": "simple"
+        },
+        {
+          "text": "The post caricatures politicians taking **campaign money**, listening to donors, then getting **consulting jobs** with the people who lobbied them after laws pass. Commenters push back that lobbying can also mean businesses and local communities making their case to government, while others worry money gives wealthy interests **too much influence**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: critics say money gives wealthy interests too much influence; defenders say lobbying lets businesses and communities make their case to government.",
+      "comment_count": 55,
+      "terms": [
+        "lobbying",
+        "Super PAC",
+        "amortization"
+      ],
+      "entities": [
+        "Sierra Club",
+        "ACLU",
+        "NRA",
+        "Citizens United",
+        "McDonnell vs. US",
+        "Supreme Court"
+      ],
+      "comments": [
+        {
+          "by": "iambateman",
+          "text": "(IANALobbyist but I do work for a lobbying firm) Lobbying is how businesses talk to government. And I get that that sounds nasty—and sometimes it is nasty—-but it’s necessary. Most of us work for businesses and when a rule comes out that legitimately threatens your business, you want to be able to tell the government in realtime. Remember the rule change to the amortization of software expenses…"
+        },
+        {
+          "by": "cmdli",
+          "text": "I know this post is mainly about money in politics, but lobbying does go a lot farther than campaign contributions. Many lobbying groups are arranged around certain political groups, like environmentalism (Sierra Club), civil liberties (ACLU), or gun rights (NRA). \"Lobbying\" is a generic term for influencing a politician, and it existed well before Citizens United. Hell, corporate influence in…"
+        },
+        {
+          "by": "hypersoar",
+          "text": "While the courts have allowed the influence of money in politics to go much too far, I doubt that the idea of rich people and businesses using their wealth to influence politicians is all that alien to non-Americans. Also, bribery isn't really \"super illegal\" in America. Cases like McDonnell vs. US make it so that as long as you don't go \"Thank you for the bag of money, which I hereby accept in…"
+        },
+        {
+          "by": "blfr",
+          "text": "I am a non-American from Poland and have no trouble understanding lobbying along with the distinction between lobbying and outright bribery or more systemic corruption. Also, a lot of lobbying happens without money changing hands. Politicians need professional bodies and local communites for a variety of reasons. From staging campaign stops through having experts to maintain a semblance of merit…"
+        },
+        {
+          "by": "matteoraso",
+          "text": "This is very lazy slopulism, but I'll take a stab at defending lobbying. Lobbying is a way for relevant stakeholders to make their issues known. Are there problems with lobbying? Absolutely, but it's not bribery."
+        }
+      ],
+      "image": null
+    }
+  ],
+  "glossary": {
+    "reverse engineering": "Figuring out how a program works by examining the program itself.",
+    "decomp": "A more readable version of a program’s code, made by working backward from the program that runs.",
+    "MCP": "Model Context Protocol: a standard way for AI apps to connect to outside tools.",
+    "stop motion animation": "A way to make a film by moving physical figures a little between pictures, so they seem to move.",
+    "3D animation": "Animation made with figures created on a computer, rather than physical figures photographed a little at a time.",
+    "decision model": "A program that weighs possible choices and predicts or selects one.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "latency": "The time between doing something and seeing the device respond.",
+    "calibration": "How well a model’s confidence matches how often its choices are actually right.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "open weights": "The model's learned settings are available for people to download and run themselves.",
+    "single-pass": "Doing the scoring in one go, rather than building an answer piece by piece.",
+    "lobbying": "Trying to influence government decisions by making a case to officials.",
+    "Super PAC": "A political group that can spend money to influence elections, separate from a candidate’s campaign.",
+    "amortization": "Spreading the cost of something over time in accounting, instead of counting it all at once."
+  }
+}
