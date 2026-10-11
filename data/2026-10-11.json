@@ -2,6 +2,550 @@
   "date": "2026-10-11",
   "cards": [
     {
+      "id": 50041619,
+      "url": "https://radar.cloudflare.com/bots/as13238?dateRange=7d",
+      "hn": "https://news.ycombinator.com/item?id=50041619",
+      "title": "Sudden drop in Cloudflare bot traffic after strike on Yandex datacenter",
+      "time": 1791714473,
+      "points": 305,
+      "depth": [
+        {
+          "text": "a **strike** on a **Yandex data center** was followed by a sudden drop in Cloudflare **bot traffic**",
+          "tier": "simple"
+        },
+        {
+          "text": "The thread says **Yandex search crawling** stopped from **one data center network**, but the Russia-wide graph showed **no discernible pattern**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some focus on Yandex crawlers going quiet from one data center; others say the Russia-wide graph barely moved, so the drop says little about overall bot traffic.",
+      "comment_count": 111,
+      "terms": [
+        "bot traffic",
+        "crawler",
+        "ASN"
+      ],
+      "entities": [
+        "Yandex",
+        "Cloudflare"
+      ],
+      "comments": [
+        {
+          "by": "londons_explore",
+          "text": "Yandex is Russian Google. Of course they have bots... That's how you index the web. If we took Google offline I bet there would also be a reduction in bot traffic from them too! Indexing is also probably a low priority task, so if half their datacenter capacity is taken offline, their bot traffic probably reduces by more than 50%."
+        },
+        {
+          "by": "throwaw12",
+          "text": "Someone needs to learn how to read the Bot Traffic page. That is a drop in traffic specifically from Yandex bots (which includes their crawlers and other apps hosted in their DC) Now compare it with Bot Traffic in: * Russia: https://radar.cloudflare.com/bots/ru?dateRange=7d * Europe: https://radar.cloudflare.com/bots/europe?dateRange=7d * Worldwide: https://radar.cloudflare.com/bots?dateRange=7d…"
+        },
+        {
+          "by": "timr",
+          "text": "Isn't this showing the percentage of bot traffic from the Yandex IP range ? If so, it isn't particularly surprising that the line would go down. EDIT: yes, it is. Looking at the same graph for all of Russia , and there's no discernible pattern: https://radar.cloudflare.com/bots/ru?dateRange=7d same for the 48h view: https://radar.cloudflare.com/bots/ru?dateRange=2d"
+        },
+        {
+          "by": "f311a",
+          "text": "I can’t believe there are so many dumb comments in this thread.\nAll it shows is that crawling from Yandex search engine stopped from one Yandex data center ASN. No one runs opinion/malicious bots from data center IPs that people mention here. Did people actually stop thinking?"
+        },
+        {
+          "by": "schleck8",
+          "text": "The HTTP traffic from Yandex is down to ~ 0 % after the third strike, after the first two strikes already degraded it. I wonder how this looks like at the network level because their search page still serves, but presumably their crawler is inactive now Edit: Here is some more info, they do have availability issues as is to be expected > Because three of its primary facilities were knocked…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50040547,
+      "url": "https://status.yandex.cloud/en/incidents/2136",
+      "hn": "https://news.ycombinator.com/item?id=50040547",
+      "title": "3rd Yandex Cloud Data Center Was Hit",
+      "time": 1791704085,
+      "points": 298,
+      "depth": [
+        {
+          "text": "Yandex Cloud's **third data center** was hit, though its status timeline shows only **two**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says people can’t order taxis or food delivery in most parts of Russia and that **store payment systems** are down. Others ask whether this trend could lead to **decentralized systems** and much larger networks of smaller data centers.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some cheer the hits as retaliation; others warn that data centers are civilian targets and worry about escalation.",
+      "comment_count": 362,
+      "terms": [
+        "data center",
+        "decentralized systems",
+        "POS systems"
+      ],
+      "entities": [
+        "Yandex Cloud",
+        "Yandex"
+      ],
+      "comments": [
+        {
+          "by": "vld_chk",
+          "text": "For people who are “worried” that Ukraine targets data centers: Ukraine did not start it. For the entire September, Russia conducted 10+ strikes on all key telecom, and internet provider data centers in Ukraine. Now it is just a return"
+        },
+        {
+          "by": "defly",
+          "text": "If you want to help Ukraine, here is a list of the largest volunteer funds you can donate to: Come Back Alive - delivered the first deep-strike drones\nhttps://savelife.in.ua/en/ Serhiy Prytula Charity Foundation - bought the famous spy satellite\nhttps://prytulafoundation.org/en KOLO Charity Foundation - run by the Ukrainian tech community\nhttps://www.koloua.com/en/ Razom - US-based…"
+        },
+        {
+          "by": "entropyneur",
+          "text": "Russia used to be quite advanced in information technology. At one point they prided themselves on being one of only four nations with Internet-scale search engines IIRC. Their little military operation already cost them lots of talent. And now they are actively losing infra too. Nice."
+        },
+        {
+          "by": "elimgta",
+          "text": "Great! More news like this Maybe this would remind ordinary russians that killing innocent civilians every day in Kyiv is not good"
+        },
+        {
+          "by": "gpt5",
+          "text": "Data centers are becoming higher priority targets in wars recently, and with humans delegating more to AI, I suspect their priority will increase even further. Makes me wonder how much compute is already being built in bunkers under mountains."
+        }
+      ],
+      "image": "https://storage.yandexcloud.net/cloud-www-assets/statusboard/share/main.en.png"
+    },
+    {
+      "id": 50040276,
+      "url": "https://lineageos.org/Changelog-32/",
+      "hn": "https://news.ycombinator.com/item?id=50040276",
+      "title": "LineageOS 24.0",
+      "time": 1791699539,
+      "points": 202,
+      "depth": [
+        {
+          "text": "LineageOS is getting an **Android update**, **refreshed apps**, and **browser-based install tools**",
+          "tier": "simple"
+        }
+      ],
+      "camps": null,
+      "comment_count": 61,
+      "terms": [
+        "WebUSB",
+        "Material Design 3 Expressive"
+      ],
+      "entities": [
+        "LineageOS",
+        "Android",
+        "WebUSB",
+        "Material Design 3 Expressive",
+        "LineageOS Wiki"
+      ],
+      "comments": [
+        {
+          "by": "deng",
+          "text": "I was secretly hoping they'd stop supporting the Pixel 4a so I would have a reason to get a new phone, but no, still there in the list of supported devices. So I guess I'll just keep using that thing another year... Anyway: big thanks to the Lineage maintainers, keeping so many phones from landfill!"
+        },
+        {
+          "by": "haunter",
+          "text": ">Recently, Contributor 0xCAFEBABE introduced a very different kind of generic target that can be run on various types of bare-metal hardware devices. >While it’s still in experimental state, it has successfully booted on: >Common x86_64 PCs >Apple Silicon Macs >NVIDIA DGX Spark >Qualcomm Snapdragon X Series Laptops That actually sounds awesome! Refurbishing old laptops with Android would be a…"
+        },
+        {
+          "by": "Scene_Cast2",
+          "text": "Not all of the builds seem live. Pixel 9 Pro has 24.0, but Pixel 9 has 23.2, for example."
+        },
+        {
+          "by": "khkjlhgkl",
+          "text": "I love LineageOS. I have been using Lineage and previously Cyanogen for many years. This is how Android is meant to be."
+        },
+        {
+          "by": "khaled4vokalz",
+          "text": "Why are you guys skipping Mi 8 SE? while still supporting older versions than that :thinking_face:\nJust trying to understand the reasoning for it."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50041682,
+      "url": "https://nitter.net",
+      "hn": "https://news.ycombinator.com/item?id=50041682",
+      "title": "Nitter: Update Oct 10th seeking funding and legal help",
+      "time": 1791715075,
+      "points": 180,
+      "depth": [
+        {
+          "text": "someone is seeking **legal help** and funding after X demanded a **permanent takedown** of Nitter instances",
+          "tier": "simple"
+        },
+        {
+          "text": "X Corp. sent cease and desist letters demanding a **permanent takedown** of Nitter instances and the project's repository on 24 August 2026, then sent another with the same demands on 8 September 2026. A September 7th update said legal representation was in place, but the assurances behind it proved untrue; Nitter **currently has no legal counsel**. Donations go first toward **legal costs**, with anything not needed for them supporting Nitter's development or its successor.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say Nitter has no legal future; others say open-source forks and self-hosting leave a way for it to continue.",
+      "comment_count": 60,
+      "terms": [
+        "cease and desist",
+        "instance",
+        "open source",
+        "front-end",
+        "fork",
+        "self-host",
+        "TOS",
+        "IANAL"
+      ],
+      "entities": [
+        "Nitter",
+        "X Corp.",
+        "X",
+        "Twitter",
+        "OpenAI",
+        "Elon",
+        "NYTimes",
+        "CNN"
+      ],
+      "comments": [
+        {
+          "by": "bhouston",
+          "text": "I don’t think nitter can run legally. It would be like having a proxy for nytimes or cnn. I think its (or systems like it) only possible future is to acknowledge it doesn’t have a legal future."
+        },
+        {
+          "by": "1ba9115454",
+          "text": "Nitter is/was a free, open-source alternative front-end for X (formerly Twitter) that lets users view public posts without an account, ads, or tracking scripts."
+        },
+        {
+          "by": "andsoitis",
+          "text": "> seeking funding What’s the purpose of Nitter? Elevator pitch if you will? And where can one read a bio of the creator(s)?"
+        },
+        {
+          "by": "beanjuiceII",
+          "text": "just use X already"
+        },
+        {
+          "by": "stevefan1999",
+          "text": "IANAL but unfortunately the law isn't really in Nitter's favor, as Elon could easily win the fight that Nitter can be considered as a read-only scrapping mirror, which itself makes total sense why Elon tries to C&D it since it is a loophole for other AI companies, probably especially OpenAI, to read the feeds for free. tl;dr Elon's ground can easily be that there is an official paid service that…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50033357,
+      "url": "https://ghuntley.com/unikernels/",
+      "hn": "https://news.ycombinator.com/item?id=50033357",
+      "title": "Unikernels were hard. key word: were",
+      "time": 1791642429,
+      "points": 176,
+      "depth": [
+        {
+          "text": "someone says **AI** has made **unikernels** easier to build, with **less software** for attackers to target",
+          "tier": "simple"
+        },
+        {
+          "text": "The author says an AI agent wrote **mkfs.xfs in Rust**, matching the original output, in a few hours; he argues a smaller **attack surface** leaves attackers fewer options. Commenters push back that unikernels can lose useful debugging tools, and that code execution can still let attackers bring in more tools.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: supporters say unikernels can reduce attack paths by leaving out unnecessary software; skeptics say the security gains aren't guaranteed and can come at the cost of visibility and useful debugging tools.",
+      "comment_count": 84,
+      "terms": [
+        "unikernel",
+        "attack surface",
+        "RCE",
+        "userland",
+        "Nix overlay"
+      ],
+      "entities": [
+        "Justin Cormack",
+        "MirageOS",
+        "Unikernel Systems",
+        "OCaml",
+        "Rust",
+        "mkfs.xfs",
+        "Nix",
+        "Cursed",
+        "Spaceleans",
+        "Microsoft Orleans",
+        "seL4",
+        "Linux",
+        "Firecracker",
+        "KVM",
+        "Claude",
+        "Stripe",
+        "S3",
+        "NetBSD",
+        "NTP",
+        "RADclock",
+        "TigerBeetle",
+        "OpenTelemetry",
+        "Anthropic",
+        "OpenAI",
+        "Airwallex",
+        "Haskell",
+        "Zig",
+        "OxCaml",
+        "Dune",
+        "opam",
+        "AWS",
+        "Chainguard",
+        "Hetzner",
+        "Vercel"
+      ],
+      "comments": [
+        {
+          "by": "mannyv",
+          "text": "General purpose OSses are a tax, one that people pay because it's cheaper than rolling your own. Has the math changed? Maybe. I remember the days before multitasking and protected memory. Things were faster, but more fragile. But these days there are so many things happening that they are, on some dimensions, just as fragile. The real cost is going to be hardening, and maybe LLMs can do that as…"
+        },
+        {
+          "by": "scottlamb",
+          "text": "This is the second unikernel article this week I think, and the second that really undersells the benefits of having a full OS. Let's just swap out a couple of words: > With a unikernel, the [observability] surface is much smaller. If the functionality isn't in the application (the operating system), then the [SRE] is screwed. There's no next hop. Tools such as `strace`, eBPF, `lsof`, `ss`, etc…"
+        },
+        {
+          "by": "RantyDave",
+          "text": "I've had limited adventures in embedded software and as part of that became a fan of Zephyr ( http://www.zephyrproject.org ) and wonder about its potential application as a unikernel. On the plus side: it's a unikernel. You compile it and your application together and get a binary. It has support for running on virtual hardware ( https://docs.zephyrproject.org/latest/hardware/virtualizatio... )…"
+        },
+        {
+          "by": "ianseyler",
+          "text": "It’s good to see this! I’m offering a cloud service to host unikernels based on my BareMetal kernel. ~$0.005 CAD/h for a small network-enabled VM with 4MiB of RAM and no disk. https://baremetal.returninfinity.com"
+        },
+        {
+          "by": "throwawayffffas",
+          "text": "I generally agree Unikernels are cool as I did back in 2010 when I first came across the idea. But the idea that RCE are contained because there is no shell and no interpreter does not hold up. If they can run code on the machine they can run a compiler in your unikernel and device drivers and whatever else they will need. Granted it's much harder to do all these things through the straw of a RCE…"
+        }
+      ],
+      "image": "https://storage.ghost.io/c/06/e5/06e5d12b-0328-469d-a0d0-3a0f0ba34c46/content/images/size/w1200/2026/10/Symbolic-traditional-tattoo-art-print-portraying-a-unikernel-operating-system-as-a-lively-streamlined-digital-core-with-complex-ornamental-circuitry--bright-vibrant-retro-colors--intense-dramatic-lighting--energetic-glowing-accents--sharp-h.jpg"
+    },
+    {
+      "id": 50029830,
+      "url": "https://news.vt.edu/articles/2026/10/research_fralinbiomed_upfhutelin.html",
+      "hn": "https://news.ycombinator.com/item?id=50029830",
+      "title": "Food processing influences metabolism and brain activity",
+      "time": 1791609750,
+      "points": 168,
+      "depth": [
+        {
+          "text": "someone found **different insulin and brain responses** after matched meals with different levels of **processing**",
+          "tier": "simple"
+        },
+        {
+          "text": "The ultraprocessed meal prompted **more insulin release** and more energy use, while the body burned **less carbohydrate for fuel**. **Brain responses** to food pictures differed, but participants did not say they would pay more for either meal. The meals were matched within 1 percent on carbs, fat, proteins, calories, water, and salt.",
+          "tier": "substance",
+          "data": [
+            [
+              "meal calories",
+              "300 calories"
+            ],
+            [
+              "nutrient matching",
+              "within 1 percent"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: skeptics say the meals differed in fiber, sugar, or protein, so processing wasn't isolated; others note the study matched many measures and find the brain results interesting.",
+      "comment_count": 136,
+      "terms": [
+        "ultraprocessed food",
+        "insulin",
+        "metabolic chamber",
+        "fMRI",
+        "NOVA scale",
+        "glycemic index"
+      ],
+      "entities": [
+        "Virginia Tech",
+        "Fralin Biomedical Research Institute at VTC",
+        "Nature Metabolism",
+        "Alex DiFeliceantonio",
+        "Zach Hutelin",
+        "Carlos A. Monteiro",
+        "NOVA",
+        "National Institutes of Health",
+        "National Institute of Diabetes and Digestive and Kidney Diseases",
+        "National Science Foundation",
+        "Ultraprocessed People",
+        "University of São Paulo"
+      ],
+      "comments": [
+        {
+          "by": "CharlieDigital",
+          "text": "In Taiwan, many people eat out because it is quite cheap and convenient to do so (and for other cultural and social factors). Most homes have very small kitchens and refrigerators. Yet the rate of obesity is quite low for a high income country (Japan even lower) [0] But something that is different is how much of the food is prepared at the vendor from whole ingredients. Ingredients often acquired…"
+        },
+        {
+          "by": "msteffen",
+          "text": "For anyone who hasn’t read it, I highly recommend the book “Ultraprocessed People.” It's a scientifically literate and yet quite readable overview of research into ultraprocessed foods. FWIW there are four categories: 1 is whole foods (eg fruits, nuts) 2 is stuff that is processed but still basically an ingredient (eg flour, maple syrup) 3 is combinations of 1 and 2 (most restaurants are here) 4…"
+        },
+        {
+          "by": "esperent",
+          "text": "From the actual study: > The non-UPF and UPF test meals were closely matched on meal weight, energy, energy density, macronutrients, available carbohydrate, glycaemic index and load, total dietary fibre, sodium and water (all ≤1.6% deviation between meals; Fig. 1b). So they did match glycemic index, which the article omits."
+        },
+        {
+          "by": "raylad",
+          "text": "An obvious flaw in this study is that the meals were not anything like equivalent. The minimally processed food consisted mainly of cheese, egg, and pieces of whole fruit: No unbound simple carbohydrates. The ultra processed food included jelly, turkey, chips, a cookie, cereal, instant mashed potatoes: Lots of unbound simple carbohydrates and much less fiber. Of course insulin would spike higher…"
+        },
+        {
+          "by": "DivingForGold",
+          "text": "The fallacy of the KETO diet is that significant consumption of saturated fats eventually leads to arteriosclerosis and cardiovascular disease, whereas the VETO diet employs the same high protein, low carb principles using only plant based proteins, which will achieve better long term health results. Also, based on the proven theory of biomagnification, a carnivore diet accumulates more…"
+        }
+      ],
+      "image": "https://news.vt.edu/content/news_vt_edu/en/articles/2026/10/research_fralinbiomed_upfhutelin/_jcr_content/image.transform/l-medium/image.jpg"
+    },
+    {
+      "id": 50021899,
+      "url": "https://www.cockroachlabs.com/blog/experiment-running-hospital-code/",
+      "hn": "https://news.ycombinator.com/item?id=50021899",
+      "title": "Five months treating bugs like patients and coding agents like a medical team",
+      "time": 1791559593,
+      "points": 160,
+      "depth": [
+        {
+          "text": "someone organized **coding agents** like a **hospital team** to build database migration tools",
+          "tier": "simple"
+        },
+        {
+          "text": "Cockroach Labs used **MOLT Sinai**, with roles like Fellows and Review Attendings, to add **Db2 support** in less than two days; no human wrote the code. Over five months, the pipeline processed over a million lines of code and had only **seven total reverts**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Db2 support time",
+              "less than two days"
+            ],
+            [
+              "token bill",
+              "$4172"
+            ],
+            [
+              "speed comparison",
+              "164x faster"
+            ],
+            [
+              "cost comparison",
+              "38x cheaper"
+            ],
+            [
+              "code processed",
+              "over a million lines of code"
+            ],
+            [
+              "reverts",
+              "7 total reverts"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters see hospital-style roles as a way to reduce AI mistakes; skeptics say role-playing is no secret to amazing code and question the evidence about long-term quality.",
+      "comment_count": 67,
+      "terms": [
+        "coding agent",
+        "CI",
+        "I-PASS",
+        "differential diagnosis",
+        "decomposition",
+        "LLM"
+      ],
+      "entities": [
+        "Cockroach Labs",
+        "CockroachDB",
+        "MOLT",
+        "MOLT Sinai",
+        "Sinai",
+        "IBM",
+        "Db2",
+        "PostgreSQL",
+        "Postgres",
+        "Oracle",
+        "GitHub",
+        "GitHub Actions",
+        "OpenAI",
+        "Gas Town",
+        "Cursor",
+        "SQLite",
+        "Claude",
+        "Fable",
+        "Sonnet",
+        "Opus",
+        "Migration Assistant",
+        "ANTLR",
+        "SQL",
+        "Markdown",
+        "Rafi",
+        "The Pitt",
+        "Redmine",
+        "Mythical Man Month"
+      ],
+      "comments": [
+        {
+          "by": "finnborge",
+          "text": "This feels to me like a lovely example of both high-quality systems design and information theory. From my perspective, one of the more abstractly interesting thoughts surfaced by this write-up is the degree to which you've \"encoded\" a highly complex set of relationships through use of metaphor. That type of encoding (starting with the statement: you're at a teaching hospital) is profoundly more…"
+        },
+        {
+          "by": "anonymous908213",
+          "text": "I can think of nothing I'd like to use less than a database or filesystem vibecoded by Gas Town-flavored psychosis. Roleplaying with LLMs is not the secret to producing amazing code."
+        },
+        {
+          "by": "reachableceo",
+          "text": "I am curious why so many of these systems are based on GitHub issues. Why not use a proper ticket system? I use Redmine (lightly customized) and have found that to work very well. Especially for performing review / UAT of the work or providing response to the agents questions when it wants me to pick an option. The underlying data model of a ticket / project management system is so rich and well…"
+        },
+        {
+          "by": "james_marks",
+          "text": "A hint at why GitHub actions have been unreliable. How many teams are running factories like this on GH infra now?"
+        },
+        {
+          "by": "cs702",
+          "text": "Great post. Thank you for sharing it on HN. Modern best practices for a medical team (standard roles, responsibilities, consequences, processes, etc.) have evolved through trial and error, since the advent of civilization, to prevent costly human error. In hindsight, it's not too surprising that the same best practices can be applied by teams of AI agents to minimize costly AI error. It's still…"
+        }
+      ],
+      "image": "https://images.ctfassets.net/00voh0j35590/2yOYv8dss0M8hI24SPoDQt/03144320f103f1ab7692be074951b729/Group_1__2_.jpg"
+    },
+    {
+      "id": 50005743,
+      "url": "https://bd103.dev/blog/2026-10-07-c-for-rust-programmers/",
+      "hn": "https://news.ycombinator.com/item?id=50005743",
+      "title": "C for Rust programmers",
+      "time": 1791467076,
+      "points": 159,
+      "depth": [
+        {
+          "text": "someone wrote a guide to the **C quirks** that catch **Rust programmers** off guard",
+          "tier": "simple"
+        },
+        {
+          "text": "The author walks through how C strings end with a **null byte**, **arrays become pointers** when passed to functions, and **error handling** is left to the programmer.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: the article urges checking malloc for a null result; one commenter says overcommit often means running out of memory won't produce one, though invalid arguments still can.",
+      "comment_count": 172,
+      "terms": [
+        "null byte",
+        "pointer",
+        "malloc",
+        "overcommit",
+        "segfault",
+        "buffer overflow"
+      ],
+      "entities": [
+        "C",
+        "Rust",
+        "C++",
+        "Clang",
+        "GitHub",
+        "Stack Overflow"
+      ],
+      "comments": [
+        {
+          "by": "uecker",
+          "text": "Any tutorial for C should explain compiler warnings and other tools that help make code safer. In C, you do not rely on the language specification but on tooling. Especially for Rust programmers, this needs to be explained more explicitly. And of course, you can build abstractions using types in C. So a tutorial should also focus on that, and perhaps not start with a low-level string reversal…"
+        },
+        {
+          "by": "delifue",
+          "text": "There is a nuanced mistake in > If your machine runs out of memory, reversed[i] will cause a segfault upon being accessed. In order to avoid unhelpful segfaults, the program should check for a null pointer and gracefully exit if one is found If overcommit is enabled (often by default), malloc will not return null when machine runs out of memory. malloc will still return null if input argument is…"
+        },
+        {
+          "by": "phamilton",
+          "text": "Re: arrays are pointers. One of my favorite things to show just how bare this is in C is to show array access commutativity. char c = {1,2,3}\nc[1] == *(c + 1)\n*(c + 1) == *(1 + c)\nc[1] == 1[c]\nC is wonderfully simple at times."
+        },
+        {
+          "by": "bennettnate5",
+          "text": "Some fun quirks I never learned until years after first getting into C: - zero-initialization via `= {0};` will still leave padding and any data not covered by the smallest elements of unions uninitialized, so serializing data structures zeroed via that method is unsafe - A pointer that increments any more than 1 past the end of a valid memory region (e.g. the end of a buffer) is instant…"
+        },
+        {
+          "by": "rini17",
+          "text": "My biggest bewilderment with C is that malloc has to store the buffer size otherwise free could not work...but nobody in decades thought to make this information accessible to the programmer! If you want to keep track of buffer bounds in C, you have to do it artisanally. Despite it's, in most implementations, stored right there next to the data and thus in L1 cache already."
+        }
+      ],
+      "image": "https://bd103.dev/img/og.png"
+    },
+    {
       "id": 50029487,
       "url": "https://lightbulbcomputer.com/",
       "hn": "https://news.ycombinator.com/item?id=50029487",
@@ -681,6 +1225,45 @@
     }
   ],
   "glossary": {
+    "bot traffic": "Web requests made automatically by software rather than by a person.",
+    "crawler": "A program that visits web pages and gathers them so a search engine can find them.",
+    "ASN": "Autonomous System Number: a number used to identify a network on the internet.",
+    "data center": "A building full of computers that store information and run online services.",
+    "decentralized systems": "Systems spread across separate computers or sites, so they don’t all depend on one place.",
+    "POS systems": "Point-of-sale systems: the devices and software stores use to ring up purchases and take payments.",
+    "WebUSB": "A browser feature that lets a website communicate directly with a connected USB device.",
+    "Material Design 3 Expressive": "A visual style for app screens, with distinctive layouts, colors, and animations.",
+    "cease and desist": "A formal legal demand to stop doing something.",
+    "instance": "One separately run copy of a service, with its own operator and users.",
+    "open source": "Software whose code is shared so other people can inspect, run, or change it.",
+    "front-end": "The part of a service people see and use.",
+    "fork": "A separate copy of a shared software project that people can take in a different direction.",
+    "self-host": "Run a service on computers you manage yourself.",
+    "TOS": "Terms of Service: the rules a website sets for using it.",
+    "IANAL": "I Am Not A Lawyer: a quick way to say the writer isn't a lawyer.",
+    "unikernel": "A way to build an application with only the operating-system pieces it needs, instead of relying on a full general-purpose system.",
+    "attack surface": "All the parts of a system that an attacker might try to break into.",
+    "RCE": "Remote Code Execution: a flaw that lets an attacker make a computer run their commands from somewhere else.",
+    "userland": "The parts of an operating system that run outside its central core, including many everyday programs.",
+    "Nix overlay": "A way to add or change packages and fixes in a Nix setup without changing the original package set.",
+    "ultraprocessed food": "Food made with extensive industrial processing, often with ingredients added to make it convenient or appealing.",
+    "insulin": "A hormone the body releases to help manage sugar in the blood.",
+    "metabolic chamber": "A sealed room where researchers measure how much energy someone uses and how their body burns fuel.",
+    "fMRI": "Functional magnetic resonance imaging: a scan that tracks blood-flow changes to show which parts of the brain are active.",
+    "NOVA scale": "A system used to group foods by how much industrial processing they go through.",
+    "glycemic index": "A measure of how quickly a food can raise blood sugar.",
+    "coding agent": "An AI tool that can help write or change code, often by using other tools.",
+    "CI": "Continuous integration: automatic checks that run when developers change code, helping catch problems early.",
+    "I-PASS": "Illness severity, Patient summary, Action list, Situation awareness, Synthesis: a written handoff that tells the next worker what happened and what to do.",
+    "differential diagnosis": "A list of possible causes to check before choosing a fix.",
+    "decomposition": "Breaking a large coding task into smaller tasks that can be handled and reviewed separately.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "null byte": "A zero byte C uses to mark the end of a string.",
+    "pointer": "A value that tells a program where something is stored in memory.",
+    "malloc": "A C function that asks for a block of memory for a program to use.",
+    "overcommit": "A system setting that lets programs request more memory than is currently available.",
+    "segfault": "A program crash caused by trying to access memory it shouldn't.",
+    "buffer overflow": "When a program reads or writes beyond the space set aside for data.",
     "computer vision": "Software that examines pictures or video to spot and identify what's shown.",
     "projection mapping": "Putting images from a projector onto real surfaces so they line up with things in the room.",
     "spatial computing": "Using computers to place information into the physical spaces around you.",
@@ -695,7 +1278,6 @@
     "holdout": "A set of examples kept aside to check a model on data it did not train on.",
     "fine-tuning": "Training an already-built model a bit more on examples for a particular job.",
     "macro F1": "A score across answer categories that gives each category equal weight.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "zero-shot classifier": "A model asked to sort things into categories without examples for that task.",
     "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
     "S3": "An online storage service where files can be kept and read over the internet.",
