@@ -1,0 +1,821 @@
+{
+  "date": "2026-10-12",
+  "cards": [
+    {
+      "id": 50048312,
+      "url": "https://nonfunctional.substack.com/p/passkeys-are-a-trap-do-not-use-them",
+      "hn": "https://news.ycombinator.com/item?id=50048312",
+      "title": "Passkeys are a trap",
+      "time": 1791755988,
+      "points": 474,
+      "depth": [
+        {
+          "text": "people are debating whether **passkeys** make sign-ins easier but could limit **user control**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says **attestation** can only be required during registration, and doubts Netflix or Twitter reject sign-ups when users decline it. Others fear services could block **hardware or software** they don't approve; supporters say passkeys resist **phishing**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: critics worry potential restrictions could limit user control; supporters say passkeys are convenient and resist phishing.",
+      "comment_count": 258,
+      "terms": [
+        "passkey",
+        "attestation",
+        "TOTP",
+        "domain-bound"
+      ],
+      "entities": [
+        "Passkeys",
+        "WebAuthn",
+        "FIDO Alliance",
+        "Netflix",
+        "Twitter",
+        "Apple",
+        "Chrome",
+        "Firefox",
+        "1Password",
+        "Bitwarden",
+        "keepass",
+        "Cloudflare",
+        "Google",
+        "Yubikeys",
+        "Go"
+      ],
+      "comments": [
+        {
+          "by": "agwa",
+          "text": "Note that attestation can only be required during credential registration; at login time it's not possible to retroactively require attestation if it wasn't obtained during registration. And browsers will throw up a permission prompt if a website requests attestation. Are Netflix and Twitter currently requesting attestation when people register passkeys, and rejecting the registration if the user…"
+        },
+        {
+          "by": "bmitch3020",
+          "text": "I've yet to voluntarily enable passkeys, for the main reason that I want portability, and not to be tied to any single device that can be lost. I want to be able to backup and lock my credentials in a safe. I also want to control the strength of my credentials for different services, and I don't consider my thumbprint used to unlock my phone to be as strong as a long password in a password…"
+        },
+        {
+          "by": "danpalmer",
+          "text": "The very last thing, past the conclusion, the very last footnote is: > Addendum: I feel I have made a compelling case for passkeys in this article. And I haven’t even pointed out one of their best security features: they are (in most use cases) domain-bound, meaning they are resistant to what are called Man-In-The-Middle attacks. \"I made a compelling case... but didn't point out the most…"
+        },
+        {
+          "by": "oefrha",
+          "text": "I’m an advocate for passkeys and I abolished passwords and embraced discoverable passkeys for our org’s key internal systems exclusively. So the battle cry of a title immediately put me on the defensive, unfortunately. The urge to not read is strong. A more measured title may help here. But there’s definitely a kernel of truth here. 1Password recently began to enforce userVerification…"
+        },
+        {
+          "by": "david_shaw",
+          "text": "This is a (very long and) well-written treatise against passkeys in their common and disparate forms. It's worth reading, and brings up several interesting and often concerning points. I don't agree with the conclusion, though. TOTP is great, flexible, and keeps the user in control; however, using a passkey in a flexible password manager (Bitwarden, keepass, 1Password, etc) really does continue…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50047422,
+      "url": "https://twitter.com/karpathy/status/2109361546505966046",
+      "hn": "https://news.ycombinator.com/item?id=50047422",
+      "title": "The gap in shared understanding of LLM capability is widening",
+      "time": 1791750052,
+      "points": 388,
+      "depth": [
+        {
+          "text": "someone says people have wildly different **LLM experiences**, from derpy chatbots to **agents tackling huge projects**",
+          "tier": "simple"
+        },
+        {
+          "text": "Karpathy's rough math puts **6B people** barely in contact with LLMs and **about 5,000** inside the frontier tier; he argues bigger tasks and access make experiences diverge.",
+          "tier": "substance",
+          "data": [
+            [
+              "barely encountered LLMs",
+              "6B people (~75% of the population)"
+            ],
+            [
+              "casual and infrequent free-tier users",
+              "1-2B (~20%)"
+            ],
+            [
+              "professional frontier-grade math-and-code users",
+              "20M people (0.2%)"
+            ],
+            [
+              "internal frontier-grade access",
+              "~5,000 people (~0.00006%)"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some developers say agents already deliver major time savings; others say the code still needs review and isn't reliably finished.",
+      "comment_count": 543,
+      "terms": [
+        "LLM",
+        "agent",
+        "frontier-grade system",
+        "jaggedness",
+        "verifiable rewards",
+        "vibe coding"
+      ],
+      "entities": [
+        "Andrej Karpathy",
+        "X",
+        "ChatGPT",
+        "OpenAI",
+        "Hugging Face",
+        "Google",
+        "Gemini",
+        "Copilot",
+        "Claude",
+        "Claude Code",
+        "Muse",
+        "OpenClaw",
+        "NVIDIA",
+        "Waymo",
+        "MS Word"
+      ],
+      "comments": [
+        {
+          "by": "frereubu",
+          "text": "https://xxcancel.com/karpathy/status/2109361546505966046"
+        },
+        {
+          "by": "rico735",
+          "text": "Don't think the 0.2% really are in agreement that \"large, complex projects that used to take them weeks/months can now be completed by agents with a prompt\". The divide seems to be between people who think you may need to understand the codebase for maintenance, potential future token costs, optimisation, code erosion & being wary of the assumptions/mistakes that they have seen LLMs make, and…"
+        },
+        {
+          "by": "NichoPaolucci",
+          "text": "What exactly do we want the general public to \"do\" with these models? If the have no use for agentic LLMs, they obviously aren't going to be interested in the capability of those agents. I see a lot of benefit to spreading information around the tech, but it's still in its infancy. Most people weren't on the internet when that was getting up to speed. Meemaw and pops have their systems that they…"
+        },
+        {
+          "by": "raynr",
+          "text": "1. The funnel is even steeper than the linked post suggests. There's a huge range of users between \"casual and infrequent users\" and \"professional use of frontier-grade LLMs in math & code\". I think I'm in between there somewhere. I'm far from a software dev, my experience is playing with delphi and C when I was a kid. But I've been using LLMs to vibe code personal and work projects that I could…"
+        },
+        {
+          "by": "plaidfuji",
+          "text": "I generally agree with the prevailing commentary here, i.e. that automating app development and maths proofs may not be as world-changing as the Artificial Intelligentsia purport / “fear” it to be. But also, upon more reflection, it occurred to me that if we’re able to create a competent humanoid robot, that could legitimately be world changing in some good and other very bad ways. The scary part…"
+        }
+      ],
+      "image": "https://pbs.twimg.com/profile_images/1296667294148382721/9Pr6XrPB_400x400.jpg"
+    },
+    {
+      "id": 50048638,
+      "url": "https://www.theguardian.com/technology/2026/oct/06/google-datacentres-finland-temporary-halt-environmental-impact-assessment",
+      "hn": "https://news.ycombinator.com/item?id=50048638",
+      "title": "Google is illegaly cutting forest to build data centers",
+      "time": 1791758010,
+      "points": 349,
+      "depth": [
+        {
+          "text": "Google was **ordered to stop** building Finnish data centres after missing required **environmental assessments**",
+          "tier": "simple"
+        },
+        {
+          "text": "The Finnish Licensing and Supervision Authority ordered a pause until the environmental impact assessment was complete. Tuike Finland Oy, the company representing Google, had felled **330 hectares** of forest in Muhos; logging was also reported across **just under 200 hectares** in Kajaani.",
+          "tier": "substance",
+          "data": [
+            [
+              "Forest felled in Muhos",
+              "330 hectares (815 acres)"
+            ],
+            [
+              "Land logged in Kajaani",
+              "just under 200 hectares (494 acres)"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some call the logged area a forest; others say it was a human-made monoculture plantation, not a forest.",
+      "comment_count": 92,
+      "terms": [
+        "datacentre",
+        "EIA",
+        "monoculture plantation"
+      ],
+      "entities": [
+        "Google",
+        "Tuike Finland Oy",
+        "LVV",
+        "Finnish Association for Nature Conservation",
+        "Tommi Muilu",
+        "Tapani Veistola"
+      ],
+      "comments": [
+        {
+          "by": "monk_grilla",
+          "text": "> Google said in a statement “we understand the concerns” and that it had “fallen short of our own high standards”. But it wasn't their own high standards, it was a legal obligation that they neglected? I hope in vain that the powers that be are able to punish them in a way they will actually feel..."
+        },
+        {
+          "by": "dhx",
+          "text": "\"Forest\" is a polite way to refer to what appears to be a monoculture plantation. To restore the land properly it would probably be necessary to remove 80%+ of the trees to make space for seeding or planting a diverse range of other species. Possibly 100% if the monoculture species already planted is not endemic. Google street view imagery of the site showing logging completed by June 2026 and…"
+        },
+        {
+          "by": "cattown",
+          "text": "I think local governments should be regulating and zoning new data center construction in a way that forces them to rehabilitate old industrial brownfields. There’s plenty of land already spoiled by human activity that can be reused. No reason to be cleaning nature for a warehouse full of computers that could be built anywhere."
+        },
+        {
+          "by": "herbst",
+          "text": "Not that a data center would be better but calling a human made mono plantation a forest also seems a bit off."
+        },
+        {
+          "by": "ncr100",
+          "text": "> Google said in a statement “we understand the concerns” and that it had “fallen short of our own high standards”. Apple said the same rhetorical non-apology apologetically, recently... about something??"
+        }
+      ],
+      "image": "https://i.guim.co.uk/img/media/5a426a4caa58ecb7baabf8e19319bb4ee7c46a53/669_0_3162_2531/master/3162.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=dcad87901dee69ab635a10fa637a6bc3"
+    },
+    {
+      "id": 50048642,
+      "url": "https://royfish.dev/fingerprints-are-the-new-cookies",
+      "hn": "https://news.ycombinator.com/item?id=50048642",
+      "title": "Fingerprints are the new cookies",
+      "time": 1791758019,
+      "points": 256,
+      "depth": [
+        {
+          "text": "someone explains how websites can recognize you through your browser’s hardware and settings, without cookies",
+          "tier": "simple"
+        },
+        {
+          "text": "The post says **browser code** can measure CPU behavior, display details, fonts and graphics output. It describes Brave adding **noise** to readings, while Tor and Mullvad Browser try to make users look alike.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say fingerprints change too quickly for commercial tracking; others say they can still be harmful when combined with stable data points.",
+      "comment_count": 127,
+      "terms": [
+        "fingerprinting",
+        "farbling",
+        "entropy",
+        "third-party cookies",
+        "IP address"
+      ],
+      "entities": [
+        "Google",
+        "Privacy Sandbox",
+        "Safari",
+        "Firefox",
+        "Chrome",
+        "Edge",
+        "Brave",
+        "Tor",
+        "Mullvad Browser",
+        "Mullvad",
+        "Arc",
+        "JShelter",
+        "Akinator",
+        "Thomas Bayes",
+        "JavaScript",
+        "HTML",
+        "WebGL",
+        "SHA-256",
+        "EFF",
+        "fingerprint.com",
+        "PiHole",
+        "uBlock",
+        "CanvasBlocker"
+      ],
+      "comments": [
+        {
+          "by": "legitster",
+          "text": "Every time this resurfaces I like to remind people that this is mostly impractical and not how things actually work at the commercial level. Just because someone can theoretically demonstrate your fingerprint today doesn't mean you have the same fingerprint in a few days. It's that kind of stability that you actually need for consistent matching for advertising or tracking purposes. 90% of…"
+        },
+        {
+          "by": "drnick1",
+          "text": "The problem is Javascript and its implementation. Plain HTML does not offer nearly as many fingerprinting opportunities. It's basically IP + user agent, both of which can be spoofed. Javascript grants websites far too much power over the user's browser, including disabling selection/paste, identifying hardware, time zone, language, etc. None of this should be allowed by default, and things like…"
+        },
+        {
+          "by": "helterskelter2",
+          "text": "I've seen anti-fingerprinting plugins and browser configs, etc, but they all seem to make you more interesting for not being fingerprintable, or for turning off a lot of features used in fingerprinting. Is there any reason a browser or plugin couldn't just spoof the data used in fingerprinting to random values? So it emits different values for each page or resource you load?"
+        },
+        {
+          "by": "MiroslavPokorny",
+          "text": "Theres only one solution, ban third party advertising. Everything else is a compromise that doesnt work anyway."
+        },
+        {
+          "by": "aenis",
+          "text": "The fingerprints don't need to be long-time-stable to be harmful. Some companies have your stable datapoints (e.g., email) and your fingerprint. Other companies only have your fingerprint on the same day/week. Some companies have locations of edge devices and the fingerprints. And there are companies out there that will take all of those data streams, both from above board and not-so-above-board…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50047091,
+      "url": "https://cartographers-nk.wonyoung.so/",
+      "hn": "https://news.ycombinator.com/item?id=50047091",
+      "title": "Cartographers of North Korea (2019)",
+      "time": 1791748000,
+      "points": 229,
+      "depth": [
+        {
+          "text": "people shared why they map North Korea on OpenStreetMap, including one mapper looking for possible escape routes",
+          "tier": "simple"
+        },
+        {
+          "text": "One contributor, P791, says they map to **help North Koreans**, choosing areas that might be **escape points**. They mostly map along the **Tumen River** on both the North Korean and Chinese sides, including fences, roads, and towns on the Chinese side.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 39,
+      "terms": [
+        "OSM",
+        "GPS"
+      ],
+      "entities": [
+        "OpenStreetMap",
+        "P791"
+      ],
+      "comments": [
+        {
+          "by": "tkgally",
+          "text": "Side comment: North Korea seems to be allowing tourists to take videos fairly freely now, and some of those videos are appearing on YouTube. While the tourists' movements still seem restricted, the videos offer glimpses into life in North Korea I haven't seen before. For example: https://youtu.be/HQEYB4QWCjM https://youtu.be/d7m8hZ67Bz0 https://youtu.be/guZQNMEz9as"
+        },
+        {
+          "by": "lampiaio",
+          "text": "Opened the link just because I've always been mystified by how detailed that region is, and it ended up being a fascinating read. One more reason why OSM is one of my personal 7 Wonders of the Internet."
+        },
+        {
+          "by": "ByteAtATime",
+          "text": "Super interesting read; I especially found this letter from \"P791\" fascinating: > Hi, Wonyoung, I map North Korea to help North Koreans.I select areas that look like they might be good points to escape. In particular, the detailed mapping around Phungso-ri (풍서리) is almost entirely my work.I mostly map along the Tumen River, both on the North Korean and Chinese sides. It is important to map the…"
+        },
+        {
+          "by": "layer8",
+          "text": "This is super interesting, but I would vastly prefer a regular article with the relevant illustrations interspersed as static images."
+        },
+        {
+          "by": "pixelN",
+          "text": "> we sent a letter to all of the contributors; here are the responses love this one: > Good afternoon. Please provide us a screenshot of these OSM map. Only know \"Google Maps\". Thank you."
+        }
+      ],
+      "image": "https://cartographers-nk.wonyoung.so/assets/og-img.png"
+    },
+    {
+      "id": 50047825,
+      "url": "https://www.inc.com/chloe-rosenberg/a-remote-employee-refused-160-webcam-photos-a-day-her-employer-fired-her/91415963",
+      "hn": "https://news.ycombinator.com/item?id=50047825",
+      "title": "A Remote Employee Refused 160 Webcam Photos a Day. Her Employer Fired Her",
+      "time": 1791752840,
+      "points": 202,
+      "depth": [
+        {
+          "text": "a remote employee refused **160 webcam photos a day**, and her employer **fired her**",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter says she sought fewer photos because surveillance raises stress for a **stress-triggered condition**; another says the employer ignored a **doctor's recommendation**.",
+          "tier": "substance",
+          "data": [
+            [
+              "webcam photos per day",
+              "160"
+            ],
+            [
+              "photo interval",
+              "3 minutes"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 154,
+      "terms": [
+        "WFH",
+        "PII",
+        "CSAM",
+        "PIP",
+        "MRs and PRs",
+        "ADA"
+      ],
+      "entities": [
+        "Sutherland Healthcare",
+        "Capital One",
+        "Teams",
+        "Apple",
+        "European Convention of Human Rights",
+        "ADA"
+      ],
+      "comments": [
+        {
+          "by": "da_chicken",
+          "text": "This strikes me as an attempt to renege on employment agreements to allow WFH. I'd bet it's either to do soft layoffs, or get people back in the office to justify real estate. She's got annual positive reviews 8 years running, and has been with the company for over a decade. The question that really cuts to the chase is: Why does it require a photograph of the employee's face every 3 minutes in…"
+        },
+        {
+          "by": "firefoxd",
+          "text": "Once I had an issue where I had to request access to a 3rd party vendor URL from my work machine. IT was telling me that I already had access, and that I had accessed the URL several times. Weird, because I was getting a dns resolve error. To prove that he wasn't making it up, the IT guy shared his screen with me. Ever since I saw his screen and the level of details in my activity log on the work…"
+        },
+        {
+          "by": "dghlsakjg",
+          "text": "I’m a programmer and tend to be relatively distant from the compliance and IT side of things. That said, can someone who is in that side of things explain why having an archive of surveillance from employee’s home wouldn’t be a liability nightmare. The way a good company treats PII makes me think that anyone with brains would say “I don’t even want access to that data, and it probably should not…"
+        },
+        {
+          "by": "jacquesm",
+          "text": "That is an insanely bad look for that employer. This kind of invasive employee monitoring is treating people like property rather than as human beings. The problem is that the power dynamic between employers and employees in many countries is such that they can make the most outrageous demands and people will have to comply because there is always another person ready to step into their shoes."
+        },
+        {
+          "by": "markus92",
+          "text": "There's been a lawsuit about this in Europe, couple years back. Employee won, breach of privacy according to Article 8 the European Convention of Human Rights. See https://www.bbc.com/news/technology-63203945"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50039092,
+      "url": "https://momo5502.com/posts/2026-10-09-game-decompilation/",
+      "hn": "https://news.ycombinator.com/item?id=50039092",
+      "title": "500B tokens later: Letting AI agents decompile a first-person shooter",
+      "time": 1791684158,
+      "points": 189,
+      "depth": [
+        {
+          "text": "someone used **AI agents** to decompile a **first-person shooter**, then built checks to catch wrong code",
+          "tier": "simple"
+        },
+        {
+          "text": "The code looked readable but was **semantically wrong**, so they added a **byte-matching check** that gives functions a PASS or FAIL. By the end, **83% of functions** were byte exact, and 99% were present.",
+          "tier": "substance",
+          "data": [
+            [
+              "estimated token spend",
+              "600-700 billion tokens"
+            ],
+            [
+              "functions present",
+              "99%"
+            ],
+            [
+              "functions byte exact",
+              "83%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Some commenters say the project's cost and emissions are hard to justify; others say side projects can be fun even without a practical point.",
+      "comment_count": 137,
+      "terms": [
+        "decompilation",
+        "byte matching",
+        "CI",
+        "harness",
+        "prompt injection"
+      ],
+      "entities": [
+        "Maurice Heumann",
+        "RektInator",
+        "Future",
+        "st0rm",
+        "Claude",
+        "Claude Code",
+        "Codex",
+        "GitHub",
+        "Discord",
+        "Hex-Rays",
+        "ida-mcp",
+        "C++",
+        "Luna",
+        "Opus",
+        "Haiku",
+        "Sogen",
+        "Astra"
+      ],
+      "comments": [
+        {
+          "by": "sailingparrot",
+          "text": "500B Luna-equivalent tokens, just for a little fun experiment, which they'll never be able to share widely for very obvious trademark reasons. Even if they could share, not sure exactly what the point would be. Side projects can be cool and fun even if they have no points to them. Sometimes it's even better when there is no point. But 500B Luna tokens, that's about 15 SF -> London round trips, or…"
+        },
+        {
+          "by": "brandonpelfrey",
+          "text": "Unless you explicitly need byte-matching decompilation, there are significantly faster ways to produce a decompilation/C which is functionally equivalent. I need to post about this. What's been working for me is that for every function, Agent A is tasked with writing some code which is semantically equivalent to the original assembly, but not necessarily exactly the same. Agent A also writes…"
+        },
+        {
+          "by": "nvme0n1p1",
+          "text": "> The avid reader of my blog might have noticed that I had previously written two posts that have since been removed. Everyone else might now be wondering which game I am talking about. To both of you I can only say that corporate America was here to ruin our fun. Call of Duty: Modern Warfare 2 (2009) https://web.archive.org/web/20260925153118/https://momo5502…"
+        },
+        {
+          "by": "aetherspawn",
+          "text": "The reason this cost so much is because the AI has the ridiculous goal of getting identical assembly output. The agents would have had to mess around with compiler versions, optimisation options, and the phase of the moon as well. If you just went for functional equivalence, it would probably cost 10x or 100x less tokens. Another false economy was using Sonnet instead of a more intelligent model…"
+        },
+        {
+          "by": "ChoosesBarbecue",
+          "text": "It’s probably worth noting that the author is decompiling a game that he’s had ~10 years of experience modding. And has been involved in finding vulnerabilities in [0]. [0]: https://github.com/momo5502/cod-exploits"
+        }
+      ],
+      "image": "https://momo5502.com/posts/2026-10-09-game-decompilation/images/game.png"
+    },
+    {
+      "id": 50042333,
+      "url": "https://betterwispr.com/",
+      "hn": "https://news.ycombinator.com/item?id=50042333",
+      "title": "Show HN: BetterWispr – Free, open-source dictation for Mac",
+      "time": 1791720088,
+      "points": 187,
+      "depth": [
+        {
+          "text": "someone made **free Mac dictation** that **cleans up your speech** and keeps it **on your computer**",
+          "tier": "simple"
+        },
+        {
+          "text": "BetterWispr offers **nine built-in models** from Apple speech, Parakeet and Whisper, with speech processed on your Mac and **no cloud fallback**. Downloaded models work offline; cleanup can remove English ums and repeats or **edit for clarity**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: voice fans say dictation makes coding faster; others say they type faster or don't see themselves using it.",
+      "comment_count": 105,
+      "terms": [
+        "local model",
+        "open-source",
+        "API",
+        "LLM",
+        "diarization"
+      ],
+      "entities": [
+        "BetterWispr",
+        "Apple",
+        "Parakeet",
+        "Whisper",
+        "Ollama",
+        "OpenAI",
+        "Sarvam AI",
+        "Smallest AI",
+        "VoiceInk",
+        "Handy",
+        "Wispr Flow",
+        "VoxType",
+        "Biscotti",
+        "SpeechAnalyzer",
+        "Google AI Edge Eloquent",
+        "Claude Code",
+        "Codex",
+        "Kartik Labhshetwar",
+        "English",
+        "Japanese",
+        "Chinese"
+      ],
+      "comments": [
+        {
+          "by": "crazygringo",
+          "text": "I think we're about to see a dictation revolution. I've been coding with Claude, and I pretty much do it exclusively by voice now, simply because it's so much faster. And I kind of feel like Scotty from Star Trek IV, when he holds up a Mac mouse to try to talk into it. I've been using VoiceInk [1] which looks like it's basically the same as this, but has been around for longer. What has really…"
+        },
+        {
+          "by": "Zizizizz",
+          "text": "This reminds me very much in terms of features as https://github.com/cjpais/Handy https://handy.computer , what's the use case for this over that?"
+        },
+        {
+          "by": "rcarmo",
+          "text": "As much as I like seeing this, the space is really crowded, and I think the real value is not in single dictation for input, but in two other things: diarization (essential for call recordings, and a staple in video calling services, but hardly touched for in-room meetings and brainstorming) and the next step, which is cleaning it all up for actually useful notes. Not just the transcript, but…"
+        },
+        {
+          "by": "apparent",
+          "text": "Interested to give this a try. I've tried Wispr Flow and found it to be quite good, but a bit pricey for my taste. I guess I assumed there were equally good models that were cheaper, and I suppose this is one of them. I'll be curious to see how the existence / popularity of tools like this end up affecting the pricing of paid tools like Wispr Flow."
+        },
+        {
+          "by": "Royce-CMR",
+          "text": "What’s really shocking is this and many of the competitors are all using OpenAI whisper - which came out in 2022. (Once upon a time, OpenAI really did open research) It’s surprising in 2026 this is still the default “best” all rounder. Kudos to the early OpenAI team and the open community efforts / improved models since then."
+        }
+      ],
+      "image": "https://betterwispr.com/og-image.png"
+    },
+    {
+      "id": 50051532,
+      "url": "https://radar.cloudflare.com/bots/as13238?dateRange=7d#bot-traffic",
+      "hn": "https://news.ycombinator.com/item?id=50051532",
+      "title": "Yandex bot traffic down 99% after data center attack",
+      "time": 1791780852,
+      "points": 164,
+      "depth": [
+        {
+          "text": "Yandex’s **web-crawler traffic** fell after a **data-center attack**, not a wave of fake social-media accounts",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: some commenters say hateful or pro-AfD/pro-Trump posting has dropped; others say those claims need examples or real data.",
+      "comment_count": 52,
+      "terms": [
+        "web crawler",
+        "index",
+        "data center",
+        "bot traffic",
+        "SRE",
+        "troll farm"
+      ],
+      "entities": [
+        "Yandex",
+        "X",
+        "Google",
+        "Cloudflare",
+        "AfD",
+        "Trump"
+      ],
+      "comments": [
+        {
+          "by": "gritzko",
+          "text": "This graph shows that Yandex Web crawler farm was hit. The other option, it was shut down to accommodate more critical services that got hit. (I worked for Yandex 20 years ago, one crawler guy was in the same room.) Not sure if troll farms got affected in any way, that is a different business entirely, no overlap. The interesting aspect is this: Yandex was taken from its owners semi-consensually…"
+        },
+        {
+          "by": "sznio",
+          "text": "I don't use X myself, but my friends told me there's a noticable reduction in hateful tweets, at least in the Polish sphere. Much less comments blaming Ukrainians for everything wrong with the world."
+        },
+        {
+          "by": "deanc",
+          "text": "There's a lot of ancedotes \"I've seen hatespeech drop\" etc. This is measurable and there are people measuring this kind of thing. Let's wait for some real data."
+        },
+        {
+          "by": "xvxvx",
+          "text": "For those claiming a drop in hate speech on social media, I’ve yet to see examples of this. Plenty of claims, no examples."
+        },
+        {
+          "by": "yokoprime",
+          "text": "An important detail for those, like me, who have't kept up with the news: this was drone strike against a yandex data center, not cyber attack."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50042362,
+      "url": "https://verdagon.dev/blog/valen-group-borrowing",
+      "hn": "https://news.ycombinator.com/item?id=50042362",
+      "title": "Valen's Memory Safety: A New Kind of Borrow Checking",
+      "time": 1791720382,
+      "points": 154,
+      "depth": [
+        {
+          "text": "someone designed a **borrow checker** that remembers where references point and catches **use-after-free** at compile time",
+          "tier": "simple"
+        },
+        {
+          "text": "Valen combines **group borrowing** with Vale’s approach and adds **Rust interop**. The compiler tracks paths: changing an object **invalidates references** pointing inside it.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some welcome the flexibility; others argue stricter borrowing helps prevent concurrency bugs and worry the added freedom brings complexity without enough practical value.",
+      "comment_count": 83,
+      "terms": [
+        "borrow checker",
+        "use-after-free",
+        "group borrowing",
+        "single ownership",
+        "shared-xor-mutable"
+      ],
+      "entities": [
+        "Valen",
+        "Rust",
+        "Vale",
+        "Group Borrowing",
+        "Nick Smith",
+        "Mojo",
+        "Google",
+        "Carbon",
+        "Ante",
+        "Plecra",
+        "Zeta",
+        "Fang",
+        "GhostCell",
+        "C++",
+        "C",
+        "Fortran",
+        "Java",
+        "C#",
+        "ScopeGuard",
+        "OxCaml",
+        "Jane Street",
+        "Vx lang",
+        "Futhark",
+        "Freepascal",
+        "D",
+        "Freebasic"
+      ],
+      "comments": [
+        {
+          "by": "zamalek",
+          "text": "> Borrow checking has the \"shared-xor-mutable\" restriction: if you hold a reference to an object, nobody else can change the object. The article makes this sound like a problem. It isn't. This restriction frees you from thinking about certain classes of bugs in concurrent code; it's where the \"fearless concurrency\" comes from. R^w isn't about lifetimes - you could, in spirit (not sure about…"
+        },
+        {
+          "by": "dualvariable",
+          "text": "> It's part of my eternal quest to find the memory safety holy grail: something as powerful as Rust's borrow checking, yet something as simple and flexible as reference counting or garbage collection. I'm definitely hoping you succeed. I'd love to be able to write a small language (maybe that didn't do absolutely every last thing you can do in Rust, but was ergonomic and easy to use) that had a…"
+        },
+        {
+          "by": "Panzerschrek",
+          "text": "> the compiler remembers where a reference points to > So we spent months sharpening the explanation and figuring out its benefits, and wrote a post 8 on it last year, hoping other languages would pick it up. My language (see my submissions) has this feature since many years. In its current form it exists roughly since year 2020, but some under-the-hood changes and slight improvements have been…"
+        },
+        {
+          "by": "kvark",
+          "text": "It sounds more like \"path\" borrowing than \"group\" borrowing to me, but the idea is great! Quite eye opening! One minor thing is that I'm not sure why they had to have \"in\" keyword for sub-borrows. Wouldn't it be more consistent to see \"entity &world.entities[?]\" instead of \"entity in world.entities[]\"? We'd consistently get the borrow \"&\" symbol and open the door for some contracts on what index…"
+        },
+        {
+          "by": "Panzerschrek",
+          "text": "The ability to hold a reference to a container and its member seems to be interesting. But I don't think it adds significant value in practice (behind some synthesized examples) and doesn't worth to increase language complexity language compared for a more coarse reference analysis (variable-based)."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50022266,
+      "url": "https://blog.torproject.org/on-tor-relationship-with-mullvad/",
+      "hn": "https://news.ycombinator.com/item?id=50022266",
+      "title": "A statement on the Tor Project's relationship with Mullvad",
+      "time": 1791560971,
+      "points": 151,
+      "depth": [
+        {
+          "text": "the Tor Project is keeping its **technical work** with Mullvad but pausing **joint promotion**",
+          "tier": "simple"
+        },
+        {
+          "text": "Tor says the collaboration has helped improve **Tor Browser’s code** and gives more people access to online privacy through an additional free, open-source tool. After concerns about a Mullvad co-founder’s **political donation**, it paused **joint promotion** but kept technical work going.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say Tor can keep working with Mullvad if the collaboration helps its mission; others say political ties threaten Tor’s free-speech principles.",
+      "comment_count": 353,
+      "terms": [
+        "co-branding",
+        "due diligence",
+        "auditability",
+        "open-source",
+        "VPN"
+      ],
+      "entities": [
+        "Tor Project",
+        "Mullvad",
+        "Tor Browser",
+        "Mullvad Browser",
+        "Daniel Berntsson",
+        "Örebro Party",
+        "Arti",
+        "Electronic Frontier Foundation",
+        "US Naval Research Laboratory",
+        "Wikipedia"
+      ],
+      "comments": [
+        {
+          "by": "belviewreview",
+          "text": "Some people here are defending Mullvad's political position. But the point is that a project devoted to free speech as such shouldn't be associated with a political, ideological group that favors one set of publicly presented ideas and strongly condemns another set. The danger is that if the Tor network gets very dependent on Mullvad, then Mullvad might pressure it to make the network censor…"
+        },
+        {
+          "by": "hypfer",
+          "text": "Content aside, is there anything or anyone forcing Foss projects to pick up this voice? I understand that TOR is big and professional and all, but why does this read like a press statement of every tech corp under the sun?\nDo we have to talk like this?"
+        },
+        {
+          "by": "s1n_",
+          "text": "They clearly just need the funding, which is few and far between on tools like this and they aren’t in a position to be able to take a moral stance. Can’t say I blame them too much other than the co-branding idea."
+        },
+        {
+          "by": "nialv7",
+          "text": "Geez, all the bad elements of Hacker News are coming out in this thread huh."
+        },
+        {
+          "by": "ekjhgkejhgk",
+          "text": "Ooof I don't want these two to break up. Mullvad browser is my favorite browser, and it's tor browser minus connection to tor."
+        }
+      ],
+      "image": "https://blog.torproject.org/static/images/lead.png"
+    }
+  ],
+  "glossary": {
+    "passkey": "A way to sign in without typing a password, using a credential saved by a device or password manager.",
+    "attestation": "A check that lets a website verify what device or software created a passkey before accepting it.",
+    "TOTP": "Time-based One-Time Password: a sign-in code from an app that changes over time.",
+    "domain-bound": "A passkey works only with the website it was made for, which helps stop lookalike sites from stealing it.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "agent": "An AI system that can take steps and use tools to get a task done, not just answer questions.",
+    "frontier-grade system": "An AI system at the most capable end of what people can access.",
+    "jaggedness": "The way an AI can be very capable at some tasks but much less capable at others.",
+    "verifiable rewards": "Training signals based on whether a result can be checked as right or wrong.",
+    "vibe coding": "Making software by telling an AI what you want and letting it write the code, often without closely checking how it works.",
+    "datacentre": "A building full of computers that store and run online services.",
+    "EIA": "Environmental impact assessment: a check on how a project could affect the surrounding area.",
+    "monoculture plantation": "A planted area made up mostly or entirely of one kind of tree.",
+    "fingerprinting": "Using clues from a device and browser to recognize them without relying on a saved cookie.",
+    "farbling": "Adding small changes to browser readings so the same device gets a different fingerprint.",
+    "entropy": "A measure of how much stuff can fit inside an object.",
+    "third-party cookies": "Saved bits of website data that other sites can use to recognize you as you browse.",
+    "IP address": "A number that identifies a device or network on the internet.",
+    "OSM": "OpenStreetMap: a map project where people can contribute details and share map data.",
+    "GPS": "Global Positioning System: satellites send signals that help devices work out where they are.",
+    "WFH": "Work from home: doing your job from home rather than at an office.",
+    "PII": "Personally Identifiable Information: details that could identify someone, such as an email or phone number.",
+    "CSAM": "Child sexual abuse material: images or videos showing child sexual abuse.",
+    "PIP": "Performance Improvement Plan: a formal plan that spells out what an employee must improve at work and by when.",
+    "MRs and PRs": "Merge requests and pull requests: proposed code changes that teammates can review before they are added to a project.",
+    "ADA": "Americans with Disabilities Act: a US law that bars discrimination against people with disabilities and can require changes at work.",
+    "decompilation": "Turning a program from the form a computer runs into code people can inspect, though the result may not match what its author wrote.",
+    "byte matching": "Checking that two compiled functions have exactly the same bytes, not just that they behave alike.",
+    "CI": "Continuous integration: automatic checks that run when developers change code, helping catch problems early.",
+    "harness": "The surrounding code that gives an AI agent tools and a place to work, and checks what it does.",
+    "prompt injection": "Instructions hidden in text or a file that try to trick an AI into ignoring its intended directions.",
+    "local model": "An AI model that runs on your own computer instead of someone else’s servers.",
+    "open-source": "Software whose code is shared publicly so people can inspect it, change it, or build on it.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "diarization": "Working out which speaker said each part of a recording.",
+    "web crawler": "A program that automatically visits websites so a search engine can find their pages.",
+    "index": "A search engine’s organized list of pages it can show in results.",
+    "data center": "A building full of computers that store information and run online services.",
+    "bot traffic": "Web requests made automatically by software rather than by a person.",
+    "SRE": "Site Reliability Engineering: work focused on keeping online services running and fixing them when they break.",
+    "troll farm": "A group that coordinates online accounts to spread messages or stir up arguments.",
+    "borrow checker": "The Rust tool that checks code won’t use a value after it’s gone or let it be changed unsafely.",
+    "use-after-free": "Trying to use data after it has been discarded.",
+    "group borrowing": "A borrowing approach where the compiler tracks which part of the data each reference points to.",
+    "single ownership": "A setup where each piece of data has one owner responsible for handing it off or freeing it.",
+    "shared-xor-mutable": "A rule allowing either multiple readers or one writer to use data at a time, but not both.",
+    "co-branding": "Promoting two organizations together so people see them as connected.",
+    "due diligence": "Careful checking before making a big decision or agreement.",
+    "auditability": "How easy it is for someone to inspect software and check how it works.",
+    "VPN": "Virtual private network: a service that sends your internet traffic through another computer, often to protect it or make it appear to come from somewhere else."
+  }
+}
