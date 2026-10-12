@@ -2,6 +2,1009 @@
   "date": "2026-10-12",
   "cards": [
     {
+      "id": 50054207,
+      "url": "https://www.bbc.com/news/articles/c64g1l5389kvo",
+      "hn": "https://news.ycombinator.com/item?id=50054207",
+      "title": "Deloitte falsified documents to evade tax on Abramovich's wealth",
+      "time": 1791800487,
+      "points": 517,
+      "depth": [
+        {
+          "text": "the BBC says **Deloitte helped falsify documents** to hide **Roman Abramovich’s wealth** and evade tax",
+          "tier": "simple"
+        },
+        {
+          "text": "The BBC found Deloitte Cyprus signed off accounts that made **$672m in assets** disappear. It also says Deloitte was apparently advising on **falsified records** for Kravin Investments, which had **almost $2bn** in the bank in 2003; the backdated paperwork made it look like Kravin did not own the money, so it would not be liable for tax in Cyprus. Abramovich’s lawyers deny he evaded tax and say there is no evidence he knew about or directed the falsification.",
+          "tier": "substance",
+          "data": [
+            [
+              "assets that vanished from company accounts",
+              "$672m (£508m)"
+            ],
+            [
+              "Kravin Investments' bank funds in 2003",
+              "almost $2bn"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters see Deloitte’s role as damning; others argue the article conflates legal transfers with proof of auditor wrongdoing.",
+      "comment_count": 173,
+      "terms": [
+        "backdated documents",
+        "beneficial ownership",
+        "BVI",
+        "tax haven",
+        "auditor"
+      ],
+      "entities": [
+        "Deloitte",
+        "Deloitte Cyprus",
+        "BBC Panorama",
+        "Roman Abramovich",
+        "MeritServus",
+        "Amiscan Investments",
+        "Kravin Investments",
+        "Electus Investments",
+        "Andrew Mitchell",
+        "Christos Christofides",
+        "Vladimir Milov",
+        "Bureau of Investigative Journalism",
+        "Cyprus Confidential"
+      ],
+      "comments": [
+        {
+          "by": "alsetmusic",
+          "text": "> Deloitte Cyprus said it could not comment on the specific allegations because the documents were more than 20 years old and no longer accessible. That's convenient. Also, I received a similar response when inquiring about a financial account that had been overlooked (there are reasons, I'm not getting into it) for a couple of decades. \"Can't help you. Too old for us to have records.\" Well, my…"
+        },
+        {
+          "by": "Izmaki",
+          "text": "Deloitte has got, I've heard (!), in their training material a section about integrity and how important it is to act ethically correct. Deloitte also does sh*t like this and - again, I've heard (!) - asks its employees to bill hours on projects they are not working on so that they can maximize profits at their clients expenses. Also elephants are pink. How this company can proceed to exist is…"
+        },
+        {
+          "by": "jttnr",
+          "text": "Cyprus and Deloitte, why am I not surprised to see those names mentioned together in connection with alleged tax evasion? For those who don't know, Cyprus is widely regarded as one of Europe's tax havens. And, of cause, Deloitte has offices there."
+        },
+        {
+          "by": "rinconrex",
+          "text": "I just know this will be thoroughly investigated, all responsible parties held accountable, and the proper countermeasures and applicable laws will be updated to punish and disincentivise this behaviour in the future. Just kidding. Things change when the cost-benefit analysis moves. If you apply the law strictly and effectively, the behaviour will adjust."
+        },
+        {
+          "by": "smokefoot",
+          "text": "I dunno. This all implies a level of central control that doesn't reflect how professional services firms operate. Mostly they're loose partnerships and local offices and partners have the significant discretion. Even legally they're mostly not structured as a global corporation but rather a loose association of legally distinct entities. There's a tension between having a brand that reflects…"
+        }
+      ],
+      "image": "https://ichef.bbci.co.uk/news/1024/branded_news/abc3/live/b06f9880-c621-11f1-bc2e-018d645d8d21.jpg"
+    },
+    {
+      "id": 50054751,
+      "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
+      "hn": "https://news.ycombinator.com/item?id=50054751",
+      "title": "QGIS bans AI assisted contributions",
+      "time": 1791804144,
+      "points": 295,
+      "depth": [
+        {
+          "text": "QGIS has **banned AI-assisted contributions** because maintainers say they **can't keep up** with reviewing them",
+          "tier": "simple"
+        },
+        {
+          "text": "The approved proposal **replaces** the earlier “human in the loop” policy with a strict **“NOT ALLOWED”** rule for AI-assisted contributions. Maintainers said AI submissions were arriving faster than people could seriously review them; the policy is presented as an initial step, with exceptions to consider **case by case**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: supporters say AI submissions swamp maintainers and threaten the human contributor community; critics say the rule is too broad, hard to enforce, and could exclude useful AI-assisted work.",
+      "comment_count": 308,
+      "terms": [
+        "QEP",
+        "LLM",
+        "PR",
+        "GIS"
+      ],
+      "entities": [
+        "QGIS",
+        "QGIS Enhancement Proposals",
+        "QEP428",
+        "GitHub",
+        "Nyall Dawson"
+      ],
+      "comments": [
+        {
+          "by": "robertclaus",
+          "text": "At Plotly we are dealing with similar issues. We're doing our best to keep up, but it's genuinely hard not to just cut our losses on passer-by community contributions. 3 page issue writeups nobody has proofread, nobody but a bot to follow up with when we try, huge volume of plausible but weak PRs eating up reviewer time. All while we have core work we really want to be focused on rather than…"
+        },
+        {
+          "by": "mootothemax",
+          "text": "There’s something about geospatial work that seems to break LLMs. I’ve experienced it a lot with latest versions of both Fable and Opus, and it’s the classic nightmare of confidently-spoken-but-wrong. Yesterday, I had a relatively trivial bit of work in play using distance-weighting to measure stuff, and Claude did really well / but right at the end, despite having a success metric and lots of…"
+        },
+        {
+          "by": "jcolot",
+          "text": "Part of this is an alignment problem, but on the human side: the bottleneck is no longer writing code but staying aligned with it, knowing what it does and whether it does what you meant. In my own work, that’s now most of the job, even for code I asked for. For maintainers reviewing large PRs from strangers, it's certainly much worse. A ban is bit harsh, but I understand why they’re rationing…"
+        },
+        {
+          "by": "leothetechguy",
+          "text": "Why is everybody all the time in favour of AI on HN? This is objectively a good change because it will improve the quality of the code in the long term."
+        },
+        {
+          "by": "KolmogorovComp",
+          "text": "I think this is the end of open-contributions, the maintainers already having too much on their plate. Plus it is becoming exceedingly rare of finding a contributor that save time, as in can do better than the maintainer itself using LLM and reviewing it itself."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/ecd8d0f901eee0f806d831e96afb55ccec8a03b57832f9afe745d5fb8238f56c/qgis/QGIS-Enhancement-Proposals/pull/387"
+    },
+    {
+      "id": 50051530,
+      "url": "https://amosbbatto.wordpress.com/2026/10/05/linux-phones-alternative/",
+      "hn": "https://news.ycombinator.com/item?id=50051530",
+      "title": "Will Linux phones become a viable alternative to the Android/iOS duopoly?",
+      "time": 1791780840,
+      "points": 234,
+      "depth": [
+        {
+          "text": "someone argues **Linux phones** may finally become a **small alternative** to Android and iOS",
+          "tier": "simple"
+        },
+        {
+          "text": "The article points to **Rockchip’s RK3588S** as a turning point: it has enough processing power for an acceptable Linux smartphone, and support in mainline Linux now lets it run free/open-source drivers. The trade-off is **more heat and worse battery life** than phones using integrated mobile chips.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: supporters say Linux phones already work for some people; skeptics say app compatibility, security, and hardware support make them unviable.",
+      "comment_count": 277,
+      "terms": [
+        "SoC",
+        "mainline Linux",
+        "firmware",
+        "AOSP",
+        "app sandboxing",
+        "VoLTE",
+        "bootloader"
+      ],
+      "entities": [
+        "Linux",
+        "Android",
+        "iOS",
+        "Rockchip",
+        "RK3588S",
+        "Collabora",
+        "Jolla",
+        "Sailfish OS",
+        "AOSP"
+      ],
+      "comments": [
+        {
+          "by": "hamsterbase",
+          "text": "There are already 100 million HarmonyOS devices in China, so you could say it's now a three-way rivalry. The apps I use every day basically all have native HarmonyOS versions, including even foreign apps like Tesla and Sam's Club. I've actually been using HarmonyOS for half a year now, and it feels pretty good — the notifications and system smoothness are on par with iOS. The reason I don't use…"
+        },
+        {
+          "by": "microtonal",
+          "text": "No, they won't become a viable alternative: - Worse compatibility with the millions of Android apps already out there. - Hardware vendors (outside Apple) all target Android. - The usability of Android/iOS is far better than non-Android Linux phones. - The security of non-Android Linux phones is in a bad state (e.g. lacking proper app sandboxing). Heck, even the Android emulation layers that some…"
+        },
+        {
+          "by": "twiclo",
+          "text": "I'm always surprised when I read articles about Linux phones that don't mention VoLTE support. Without it, phone calls will drop constantly as we tear down old cell infrastructure. In my experience I've only been able to find one phone that supports VoLTE in America. I get the impression that there's much more interest in Linux phones in Europe where VoLTE (or whatever it is over there) support…"
+        },
+        {
+          "by": "janvlug",
+          "text": "I have been using the Librem 5 as my daily phone since 1 May 2022 ( https://janvlug.org/blog/one-week-librem-5-field-trial-day-1... ). And the Librem 5 is getting better and better, and its PureOS Linux operating system is actively maintained, and patches are still upstreamed ( https://puri.sm/posts/tag/pureos/ ). I really enjoy having a phone that gives me full root control, and that is very…"
+        },
+        {
+          "by": "garyfirestorm",
+          "text": "Not a single Linux OS phone I can buy today in US with all the basic features working."
+        }
+      ],
+      "image": "https://i0.wp.com/amosbbatto.wordpress.com/wp-content/uploads/2026/10/pinephoneandlibrem5-1.jpg?fit=1196%2C1200&ssl=1"
+    },
+    {
+      "id": 50051583,
+      "url": "https://www.cnbc.com/2026/10/07/anthropic-will-be-most-ridiculous-ipo-of-year-analyst-says.html",
+      "hn": "https://news.ycombinator.com/item?id=50051583",
+      "title": "Research Firm Calls Anthropic's IPO 'Unprecedented Test of Investor Gullibity'",
+      "time": 1791781427,
+      "points": 227,
+      "depth": [
+        {
+          "text": "a research firm calls **Anthropic's IPO** the year's **most ridiculous**, while commenters question its case",
+          "tier": "simple"
+        },
+        {
+          "text": "New Constructs put Anthropic at **$150 billion**, far below its reported **$2 trillion** IPO target, and called the offering the “most ridiculous IPO of 2026.” Its case cites 2025 revenue of $4.6 billion and a **$42 billion** net loss; commenters questioned the firm's track record and its reliance on 2025 figures, while Anthropic claimed at the end of July that its annualized revenue run rate was up sevenfold year-over-year to $65 billion.",
+          "tier": "substance",
+          "data": [
+            [
+              "reported IPO valuation sought",
+              "$2 trillion"
+            ],
+            [
+              "New Constructs valuation",
+              "$150 billion"
+            ],
+            [
+              "2025 revenue",
+              "$4.6 billion"
+            ],
+            [
+              "2025 net loss",
+              "$42 billion"
+            ],
+            [
+              "annualized revenue run rate",
+              "$65 billion"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: skeptics say the $2 trillion target is hard to justify given losses and open-source competition; others say rapid growth and New Constructs' record of missed calls weaken the bearish case.",
+      "comment_count": 188,
+      "terms": [
+        "IPO",
+        "valuation",
+        "open-source model",
+        "prospectus",
+        "annualized revenue run rate",
+        "S-1",
+        "short position",
+        "inference"
+      ],
+      "entities": [
+        "Anthropic",
+        "New Constructs",
+        "Dario Amodei",
+        "Nvidia",
+        "WeWork",
+        "Allbirds",
+        "American Exchange Group",
+        "DoorDash",
+        "CNBC",
+        "Reuters",
+        "New York Times",
+        "Salesforce",
+        "Spotify",
+        "Uber",
+        "CrowdStrike",
+        "Cloudflare",
+        "Palantir",
+        "Snowflake",
+        "Robinhood",
+        "ARM",
+        "Instacart",
+        "Reddit",
+        "CoreWeave",
+        "SpaceX",
+        "Meta",
+        "Sam Altman",
+        "Elizabeth Holmes",
+        "Nasdaq"
+      ],
+      "comments": [
+        {
+          "by": "binlog",
+          "text": "New Constructs is bearish on every tech IPO. Easy to reinforce your bias by selectively looking at instances where they were right, like WeWork, but they also predicted failed IPOs for Spotify (+219%), Uber (+60%), CrowdStrike (+3136%), Cloudflare (+2306%), Palantir (+1991%), Snowflake (+51%), DoorDash (+93%), Robinhood (+187%), ARM (+422%), Instacart (+59%), Reddit (+370%), CoreWeave (+105%)…"
+        },
+        {
+          "by": "simonw",
+          "text": "\"The company’s growing operating losses\" - yeah, if you are a \"research firm\" basing your research on the leaked 2025 Anthropic financials and not what happened in 2026 you are on the verge of malpractice. (I think 2 trillion dollars is an absurd valuation for a product with such hot competition and low switching cost, but if you make the case that Anthropic is losing money based on the 2025…"
+        },
+        {
+          "by": "anon373839",
+          "text": "I don't see how Anthropic can become profitable enough to justify its investments unless they can either stop training models (\"Pace the Frontier!!1\"), or magically eliminate open source competition so that their volume x margin on inference is high enough to dwarf the training costs. For the IPO, I assume they're going to try to get everyone to focus on inference - which is profitable in…"
+        },
+        {
+          "by": "mattmaroon",
+          "text": "$2 trillion is a lot of money and certainly doesn’t seem a safe bet at that price. But also, their revenue went from <$0 in 2024 to $4b in 2025 to what will likely be >15x that in 2026. Has anything ever grown that fast before? If you carry that forward even one year, and I’m not saying you certainly can, they’re outselling NVIDIA. I get it, there are risks, scalability issues, low cost…"
+        },
+        {
+          "by": "calgoo",
+          "text": "I thought this was the reason to force an investor account on every american child, so that they can be \"forced\" to buy into these IPOs, and left holding the worthless stock while a massive amount of wealth is transferred from the system to a select few investors."
+        }
+      ],
+      "image": "https://image.cnbcfm.com/api/v1/image/108363256-1789499134411-gettyimages-2294938529-2026_sep_14_dreamforce_1602.jpeg?v=1789499168&w=1920&h=1080"
+    },
+    {
+      "id": 50057278,
+      "url": "https://mortoray.com/why-arent-ai-companies-being-charged-for-hacking/",
+      "hn": "https://news.ycombinator.com/item?id=50057278",
+      "title": "Why aren't AI companies being charged for hacking?",
+      "time": 1791816757,
+      "points": 218,
+      "depth": [
+        {
+          "text": "someone argues **AI companies should face charges** because their systems' hacks were **foreseeable**",
+          "tier": "simple"
+        },
+        {
+          "text": "The writer argues companies choose the **training, tools and environment**, making hacking a foreseeable result even if a model’s exact response is unpredictable. They say that should count as **intent**, rather than letting companies use a **responsibility gap** to avoid prosecution.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: the writer and some commenters say the companies' design choices made hacking foreseeable; others say Irregular carried out the hacks (except OpenAI), or that recklessness doesn't prove intent to break into the specific systems.",
+      "comment_count": 186,
+      "terms": [
+        "LLM",
+        "weak emergence",
+        "penetration testing",
+        "mens rea",
+        "CFAA",
+        "responsibility gap"
+      ],
+      "entities": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "Irregular",
+        "Hugging Face",
+        "EU Regulation 2024/1689"
+      ],
+      "comments": [
+        {
+          "by": "stickfigure",
+          "text": "The real answer is that crime generally requires mens rea. At some point, however, letting your AI break into other systems will be conventionally understood as an act of negligence, and it will get prosecuted accordingly. We're not at that point yet."
+        },
+        {
+          "by": "weddpros",
+          "text": "HackerNews doesn't get charged for DoS'ing under-provisioned web servers either. As others have said, there must be a line between hack attempts and accidents."
+        },
+        {
+          "by": "dccoolgai",
+          "text": "In case you were wondering why Anthropic last week banned \"verbally abusive\" language towards its agents: this is 100 percent why. Because if they get you to believe - even a little bit - that their platform is \"sentient\" it means _they_ aren't as liable for criminal consequences."
+        },
+        {
+          "by": "cracell",
+          "text": "Are any victims calling for prosecution? It’d be a waste of tax payer money. The companies who were hacked are just directly receiving restitution behind closed doors. Unless they are unhappy there’s no reason to bring the courts into it. I completely agree that proper safeguards were not in place. But response is happening just not in public. Companies work problems out between their own lawyers…"
+        },
+        {
+          "by": "kccqzy",
+          "text": "The real answer is that except in the case of OpenAI, the AI companies aren’t actually themselves doing the hacking. It’s a company called Irregular that did the hacking. The company used AI models to do it; it told AI models it was a CTF exercise in a controlled environment but it was actually the real Internet. If AI companies can be charged for hacking, then all gun manufacturers can be…"
+        }
+      ],
+      "image": "http://mortoray.com/wp-content/uploads/2026/10/nomevisualizzato-justice-4592723_1920.jpg"
+    },
+    {
+      "id": 50053216,
+      "url": "https://cendyne.dev/posts/2026-10-11-fable-took-my-jorb.html",
+      "hn": "https://news.ycombinator.com/item?id=50053216",
+      "title": "Fable Took My Job",
+      "time": 1791793833,
+      "points": 208,
+      "depth": [
+        {
+          "text": "someone says **AI** helped get him **laid off**, though it wasn't **better at his job**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author says they were the **last engineer**, and Fable cost less than their compensation; leadership felt it could **coast until M&A**. They argue frontier models still can’t replace an **experienced engineer**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say one competent person can now build software with AI; others say executives are using AI as cover for cuts, rather than because it can replace experienced engineers.",
+      "comment_count": 310,
+      "terms": [
+        "LLM",
+        "M&A",
+        "frontier model",
+        "harness",
+        "A/B testing"
+      ],
+      "entities": [
+        "Fable",
+        "Mythos",
+        "Cendyne.dev",
+        "Shopify",
+        "React Native",
+        "iOS",
+        "Android",
+        "Theo",
+        "TypeScript",
+        "Rust",
+        "ts-go",
+        "Opus 5.5",
+        "Astra",
+        "Reddit",
+        "FAANG",
+        "Karpathy",
+        "Amodei",
+        "Altman",
+        "Microsoft",
+        "Twitter",
+        "Telegram",
+        "Discord"
+      ],
+      "comments": [
+        {
+          "by": "danw1979",
+          "text": "> That first meeting crushed my soul. I heard my ears ring more violently than ever. The color drained from the world. I could barely walk straight. There was a time that I really cared about my work and about my colleagues livelihoods. Then I realised, it’s just a job. I’ve lost jobs before. I’ve taken shitty, low paid jobs before. It’s just a job. You turn up, they pay you, then you go home to…"
+        },
+        {
+          "by": "fwlr",
+          "text": "Capital and Labor have always had a tense relationship, each one uneasy about the necessity of depending on the other. Unfortunately, Capital’s acquisition of power in the modern Western world has not been accompanied by a commensurate acquisition of confidence. In fact, as Capital’s power has increased, so has its sense of its precarity, becoming so acute as to tip over into paranoia. The moment…"
+        },
+        {
+          "by": "gregwebs",
+          "text": "If you can direct AI and produce more value per $/time spent then a non software engineer directing AI to develop software then you still can produce a lot of value. This should be the case now for anything that is not a prototype. The job has changed from \"writing code\" to \"shipping software\". A technical lead. As AI gets more intelligent and the tooling around it develops and organizations…"
+        },
+        {
+          "by": "voidifremoved",
+          "text": "Remembering when I lost people to offshoring in the mid 00s. I made the case, with metrics, that the quality was nowhere near as good and the spec overhead was non-trivial. Management's response? It doesn't matter - for the price they could get cheap offshore workers to do it over again 5 times and still save money."
+        },
+        {
+          "by": "sajithdilshan",
+          "text": "This is a lesson I learned a long time ago, no matter how good you are, you could be obsolete and replaceable any day and the companies/corporations don't care. Treat your work as a job and don't make it the center of your life."
+        }
+      ],
+      "image": "https://cendyne.dev/c/JY6wB9Y9"
+    },
+    {
+      "id": 50034206,
+      "url": "https://jverzani.github.io/CalculusWithJuliaNotes.jl/",
+      "hn": "https://news.ycombinator.com/item?id=50034206",
+      "title": "Calculus with Julia",
+      "time": 1791647992,
+      "points": 200,
+      "depth": [
+        {
+          "text": "someone made **calculus notes** that use **Julia** to explore graphs, derivatives, integrals, and vector calculus",
+          "tier": "simple"
+        },
+        {
+          "text": "The notes use **Julia** mainly for **numeric computing**, while adding graphical examples and some algebraic work. They cover functions, limits, derivatives, integrals, and vector calculus, with try-it-yourself questions and some self-graded answers.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: one commenter says Julia is a great fit for teaching applied math; another worries that Julia plus SymPy could burden learners, though enthusiasm may offset it.",
+      "comment_count": 33,
+      "terms": [
+        "derivative",
+        "integral",
+        "vector calculus",
+        "computer algebra system",
+        "Quarto",
+        "IDE",
+        "DSP"
+      ],
+      "entities": [
+        "Julia",
+        "CalculusWithJulia",
+        "Quarto",
+        "Mathematica",
+        "Maple",
+        "Sage",
+        "WolframAlpha",
+        "Apple",
+        "Siri",
+        "SymPy",
+        "Lean",
+        "JuMP",
+        "Jupyter",
+        "juliaup"
+      ],
+      "comments": [
+        {
+          "by": "patagurbon",
+          "text": "There's no language I'd want to teach (applied) math in more than Julia. Lean is obviously kind for anything involving a proof, but for teaching anything with linear algebra involved the syntax alone is enough of a reason to prefer Julia. Optimization, specifically the kind that JuMP tackles, is another field where teaching is probably easier in Julia than any other language"
+        },
+        {
+          "by": "Trusteando",
+          "text": "The stated goal is to introduce math concept without computer language or use being a burden. But then I took a quick glimpse at the derivative chapter, and at the top there is \"using Sympy\", so you don't only use Julia but also sympy. Mathematica and Matlab are the alternative in a university setting in which free licenses for students are available, with strong numerical and symbolic…"
+        },
+        {
+          "by": "subset",
+          "text": "I'm just picking up Julia for my DSP course at uni, and came across this nice intro. It's very well-paced for a first introduction to programming!"
+        },
+        {
+          "by": "utilize1808",
+          "text": "What's the developer experience like with Julia nowadays? Any IDE / static analysis / debugger options that doesn't feel like experimental?"
+        },
+        {
+          "by": "sundarurfriend",
+          "text": "20 quadrillion ants is about 2.5 million ants per human - pretty insane to think about. I thought I had a grasp on their abundance, but I'd still probably have underestimated their numbers by an order of magnitude previously. We still mog them on mass and volume though. 2.5 million of the average ant would only make the size of a human leg, if that."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50051573,
+      "url": "https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html",
+      "hn": "https://news.ycombinator.com/item?id=50051573",
+      "title": "Type-safe HTML templating in Zig",
+      "time": 1791781354,
+      "points": 188,
+      "depth": [
+        {
+          "text": "someone made **type-safe HTML templates** for Zig, so the **compiler catches template mistakes**",
+          "tier": "simple"
+        },
+        {
+          "text": "Templates are **parsed and transpiled** to Zig code during `zig build`, so bad fields and wrong argument types become **compiler errors**. Dynamic values are **HTML-escaped by default**, and URL attributes are checked for dangerous schemes.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 70,
+      "terms": [
+        "type-safe",
+        "transpiled",
+        "compiler error",
+        "HTML escaping",
+        "URL attribute"
+      ],
+      "entities": [
+        "Zig",
+        "zt",
+        "Lukáš Lalinský",
+        "Templ",
+        "Dusty",
+        "Ziex",
+        "zio",
+        "htmx",
+        "Datastar",
+        "Nurul Huda",
+        "JavaScript",
+        "TypeScript",
+        "MessagePack",
+        "std.Io",
+        "Ziggit",
+        "Kotlin",
+        "kotlinx.html",
+        "Google Soy",
+        "Helm",
+        "Go Templates",
+        "React",
+        "Rust",
+        "zmpl",
+        "Jetzig",
+        "jte",
+        "W3C",
+        "Claude Code",
+        "M4",
+        "PHP",
+        "Python",
+        "Perl",
+        "Jinja",
+        "Django",
+        "Smarty",
+        "Template Toolkit"
+      ],
+      "comments": [
+        {
+          "by": "pjmlp",
+          "text": "> Two years ago, I picked up Zig, and I’d never have imagined I’d be considering web development in such a low-level language. This is kind of funny remark, given that the author started in 2000 in Web development, and with PHP 3.0. I started in 1997, our distributed systems class had exercises to write CGIs in Perl and C. Between 1999 and 2001, most Web development at my employer was in Tcl and…"
+        },
+        {
+          "by": "flossly",
+          "text": "I kinda like kotlinx.html in Kotlin; it's an eDSL for writing HTML in actual Kotlin. So I can put break points in my template code. It's a tiny bit slower than string-with-some-interpolation type of template libraries; but it's so little that it's a price I'm willing to pay. Also there's more impact on compile times than with string-with-some-interpolation type of template libraries. The…"
+        },
+        {
+          "by": "solatic",
+          "text": "I love this design, especially as it takes advantage of the Zig build chain; I expect re-builds will be fast enough that you essentially get JS-style hot reloading in the dev cycle. Now we just need https://github.com/air-verse/air for Zig (Ziex has one built into its CLI, but that's only for Ziex)... Looking forward to seeing some benchmarks!"
+        },
+        {
+          "by": "infogulch",
+          "text": "How does zt compare to zmpl, another popular zig templating engine? https://github.com/jetzig-framework/zmpl"
+        },
+        {
+          "by": "fergie",
+          "text": "W3C: Why can't we just have <includes src=\"./header.html\"> and be done with it?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50049872,
+      "url": "https://github.com/shaongitbd/doory",
+      "hn": "https://news.ycombinator.com/item?id=50049872",
+      "title": "Doory – Open-Source Canva",
+      "time": 1791766107,
+      "points": 174,
+      "depth": [
+        {
+          "text": "someone built a **free Canva alternative** you can **run yourself**, with templates and video exports",
+          "tier": "simple"
+        },
+        {
+          "text": "Doory runs in your browser and includes templates, layers, **real-time co-editing**, and exports to PNG, JPG, SVG, PDF, MP4, WebM, and animated GIF. You can start without an account or **host it yourself**; guest designs stay in the browser until you sign up.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters like the idea of a Canva alternative; others doubt it can replace Canva's ecosystem and templates, or would rather use a normal editor.",
+      "comment_count": 68,
+      "terms": [
+        "open source",
+        "self-hosting",
+        "real-time co-editing"
+      ],
+      "entities": [
+        "Doory",
+        "Canva",
+        "Siam",
+        "GitHub",
+        "React",
+        "TypeScript",
+        "Vite",
+        "Fabric.js",
+        "Yjs",
+        "Zustand",
+        "Django",
+        "Django REST Framework",
+        "Channels",
+        "PostgreSQL",
+        "Docker Compose",
+        "nginx",
+        "Redis",
+        "Unsplash",
+        "Pexels"
+      ],
+      "comments": [
+        {
+          "by": "sheepscreek",
+          "text": "Cool 'Show HN' project but.. > Why people pick Doory For a project with 6 commits over 3 days? Who are these people? Anyone reading this, take it as a lesson to always read your LLM produced copy. They will make up $hit and it may cost you your reputation."
+        },
+        {
+          "by": "klrfl",
+          "text": "I was horrified looking at the commit history. The whole project was authored by Claude and it spawned out of a single commit. Really, check it out https://github.com/shaongitbd/doory/commit/eac7e3b"
+        },
+        {
+          "by": "LawrenceKerr",
+          "text": "Great but imho Canva alternatives that stand a chance should be made API and MCP-first, not just an afterthought. That's the thing I miss with Canva right now. Yes there are API & MCP options (4 different ways even I think, it's pretty messy), but it's just not sufficient. Ideally you can fully vibe code a poster or a video from the context of your repo, which has all the context and assets, then…"
+        },
+        {
+          "by": "dofm",
+          "text": "\"Why people pick Doory\" Is this evidence-based? There's one github issue and six commits."
+        },
+        {
+          "by": "shermozle",
+          "text": "Canva has always felt like The Print Shop to me: https://archive.org/details/The_Print_Shop_1984_Broderbund"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/80926c3195d621b76dfccd96163ea9a1934c7d96f9b29766ce436b606231a579/shaongitbd/doory"
+    },
+    {
+      "id": 50052814,
+      "url": "https://github.com/colinhacks/zod/commit/d821685ea6732436fcdf786a81d076958471e467",
+      "hn": "https://news.ycombinator.com/item?id=50052814",
+      "title": "Zod 4.6.6 compromised by malware?",
+      "time": 1791791249,
+      "points": 168,
+      "depth": [
+        {
+          "text": "someone pushed **malicious code** into a project, but it never shipped in a **release**",
+          "tier": "simple"
+        },
+        {
+          "text": "The commit added a root-level **preinstall** entry and code that queries **Ethereum**, then fetches a loader and payload. The maintainer says an attacker used his git credentials to push it, but **no malware shipped** in any release; one commenter noted the key may not run from where it was placed.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters thought the code would run as an install-time malware downloader; others pointed out the root-level `preinstall` key may not run on install.",
+      "comment_count": 48,
+      "terms": [
+        "preinstall",
+        "RPC",
+        "payload",
+        "supply-chain attack"
+      ],
+      "entities": [
+        "Zod",
+        "standard-schema",
+        "nub",
+        "npm",
+        "GitHub",
+        "Ethereum",
+        "Colin McDonnell"
+      ],
+      "comments": [
+        {
+          "by": "colinmcd",
+          "text": "Zod maintainer here. As others have noted, no malware was shipped in any release. This was three weeks ago, and it was caught very quickly. All my git and npm credentials were immediately revoked to prevent further access. There's a security writeup from the NPM team here. [0] It seems like the git push credential, probably an SSH key, was exfiltrated from my local computer. The attacker used…"
+        },
+        {
+          "by": "jaynetics",
+          "text": "The compromised code wasn't actually released. This write-up has a lot of information: https://github.com/orgs/community/discussions/208477"
+        },
+        {
+          "by": "yuvalkarmi",
+          "text": "This is 3 weeks back, folks. It WAS real repository compromise - it made it to Zod's main, but not to npm. On September 21, someone used Colin's git credentials to push this compromised code into the project, Colin caught it, and reverted it that same day (PR #6620). He subsequently did release 4.6.6 on October 11, but it did NOT contain the infected code. Btw, Zod wasn't the only package…"
+        },
+        {
+          "by": "luggage_bazooka",
+          "text": "The most recent version 4.6.6 has a very interesting commit (d821685) \"Fix bugs and improve performance\", that contain the following changes https://github.com/colinhacks/zod/commit/d821685ea6732436fcd... I didn't study what packages/mini/meta.test.mjs is doing in particular but it's not looking great"
+        },
+        {
+          "by": "jaapz",
+          "text": "Might is pretty tame, it is infected - EDIT: title was changed, it said \"might be infected\". The malware seems to inject some JS payload to execute when zod is installed, by fetching it from an ethereum smart contract (if I understand it correctly). Don't forget to flag the version on npm. EDIT: looks like the update never got on NPM: https://news.ycombinator.com/item?id=50053253"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/f8ad7d63c7a1406cfc8e44744b4c47f2cbdbfec14911579af6e780edb3baf0d5/colinhacks/zod/commit/d821685ea6732436fcdf786a81d076958471e467"
+    },
+    {
+      "id": 50049411,
+      "url": "https://www.americanscientist.org/article/whatever-became-of-holography",
+      "hn": "https://news.ycombinator.com/item?id=50049411",
+      "title": "Whatever became of holography? (2011)",
+      "time": 1791762634,
+      "points": 163,
+      "depth": [
+        {
+          "text": "people still make **holograms**, but **supplies are scarce** and live displays remain difficult",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says holograms record **amplitude and phase**, so depth and focus come from the reconstructed wavefront. For live displays, recording needs **coherent light and stability to a fraction of a wavelength**; showing images at video rate needs a modulator commenters say they still do not have cheaply.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 91,
+      "terms": [
+        "holography",
+        "amplitude",
+        "phase",
+        "coherent light",
+        "wavefront",
+        "modulator"
+      ],
+      "entities": [
+        "3blue1brown",
+        "BYU",
+        "Dan Smalley",
+        "Integraf",
+        "TJ",
+        "HoloKit",
+        "Walter Spierings",
+        "Unity",
+        "Holographic Visions",
+        "Melbourne House",
+        "Holografix",
+        "Lord of the Rings",
+        "Looking Glass Factory",
+        "EOTech",
+        "FN",
+        "OMNI Magazine",
+        "Museum of Holography",
+        "MIT Museum",
+        "Vision Pro"
+      ],
+      "comments": [
+        {
+          "by": "adastra22",
+          "text": "Very few people in the comments seem to understand what holography is. A hologram is not a “3D display” that mimics a sci-fi movie or TV show. A hologram is photographic media / display technology that records and transmits phase as well as intensity of incident photons. By capturing all the properties of the electromagnetic field that strikes the film, and re-emitting the same EM wave when…"
+        },
+        {
+          "by": "prepend",
+          "text": "I noped out of this site after 5 seconds of “verifying my connection.” This trend is annoying and is punishing users to stop scraping of their stupid articles. I feel like 20 times a day I have to wait or click a box or something just so they can charge robots to read their public content."
+        },
+        {
+          "by": "ubj",
+          "text": "Dan Smalley's research lab at BYU is actively developing 3D volumetric holography technology. https://youtu.be/N12i_FaHvOU The video is a bit old, but it has a few fun demos of the capabilities they've developed."
+        },
+        {
+          "by": "midnitewarrior",
+          "text": "I wanted to pick up doing holography again, but I discovered that Integraf, founded by legend TJ ( https://www.integraf.com/about/tung-h-jeong ), stopped selling the film and supplies. Much of the supply chain for modern hobbyist holography was sourced out of Russia, and the ongoing wars have made those materials unavailable. There are some newer processes out there, but there were probably…"
+        },
+        {
+          "by": "Nition",
+          "text": "I went to a whole art exhibition of holograms as a kid that blew me away, and I've always wondered why holograms are so rare ever since. I had one for a while, the famous one of the microsope with the lens that you can actually look through to see a computer chip inside. There's nothing else like it."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50052251,
+      "url": "https://github.com/snuri00/ps2-web-recomp",
+      "hn": "https://news.ycombinator.com/item?id=50052251",
+      "title": "Show HN: PS2 games statically recompiled to WebAssembly",
+      "time": 1791787613,
+      "points": 160,
+      "depth": [
+        {
+          "text": "someone got **PS2 games** running **in a browser** without an emulator",
+          "tier": "simple"
+        },
+        {
+          "text": "It translates game machine code into C++, compiles it to WebAssembly, and links it to a reimplementation of the PS2's operating system and hardware. **Gran Turismo 4** plays through races, while **God of War II** holds **60 frames per second** in heavy combat at the PS2's resolution in Chrome.",
+          "tier": "substance",
+          "data": [
+            [
+              "God of War II, heavy combat at the PS2's resolution",
+              "60 frames per second"
+            ]
+          ]
+        }
+      ],
+      "camps": "Some commenters are excited about recomps; others question whether unofficial builds can be trusted and whether hosting them would be legal.",
+      "comment_count": 85,
+      "terms": [
+        "static recompilation",
+        "WebAssembly",
+        "WebGPU",
+        "emulator",
+        "disc image",
+        "SIMD",
+        "LLMs"
+      ],
+      "entities": [
+        "PS2",
+        "ps2-web-recomp",
+        "WebAssembly",
+        "WebGPU",
+        "Gran Turismo 4",
+        "God of War II",
+        "Chrome",
+        "C++",
+        "Emscripten",
+        "PCSX2",
+        "Play!",
+        "Sony"
+      ],
+      "comments": [
+        {
+          "by": "zuInnp",
+          "text": "All of this recomp stuff is pretty amazing. I really don't like how AI changed my profession, but hey at least I get something good from it."
+        },
+        {
+          "by": "aceazzameen",
+          "text": "I don't know. There's suddenly so many decomps that run native (granted this post is about WebAssembly). Is there no concern about hidden malware? IMO it doesn't have the same level of trust and vetting that the emulator scene has. At least not yet."
+        },
+        {
+          "by": "Megabinator",
+          "text": "What about compiling the compiler to WebAssembly so it can be hosted anywhere and convert a project directly from a browser?"
+        },
+        {
+          "by": "Elizer0x0309",
+          "text": "With the slew of recomps these days enabled by AI, How much incentive is there for a game studio to pour their heart, soul and money in a product when it can be easily \"stolen\" and shared for free..."
+        },
+        {
+          "by": "Hyperlisk",
+          "text": "Very cool! I'm working on something similar but am taking it much slower with a focus on accuracy. Mine recompiles into Golang to take advantage of built-in SIMD support. I've been building the tooling around the PS2 binaries and hope to have a standalone PSS player out soon that can play PSS files as they are encoded, via simulated renderer, and via in-game engine renderer. The future is so…"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/cbd7d8d13da0e90c884c8abffaee5eca0cee5eef5a7f30c0b9395b38af9c137d/snuri00/ps2-web-recomp"
+    },
+    {
+      "id": 50052163,
+      "url": "https://clickhouse.com/blog/posette-talk-recap-postgres-isnt-slow-your-storage-is",
+      "hn": "https://news.ycombinator.com/item?id=50052163",
+      "title": "Postgres isn't slow, your storage is",
+      "time": 1791787013,
+      "points": 155,
+      "depth": [
+        {
+          "text": "someone found **Postgres** ran a huge workload much faster on **local storage** than network storage",
+          "tier": "simple"
+        },
+        {
+          "text": "In a test of the same 3.3-billion-row workload, **local NVMe** reached a median **16,030 TPS**, versus 1,734 TPS on baseline gp3 EBS. Median transaction latency fell from 36.9 ms to **4.0 ms**. The authors note the results apply to this workload and these storage configurations.",
+          "tier": "substance",
+          "data": [
+            [
+              "NVMe median throughput",
+              "16,030 TPS"
+            ],
+            [
+              "EBS median throughput",
+              "1,734 TPS"
+            ],
+            [
+              "NVMe median transaction latency",
+              "4.0 ms"
+            ],
+            [
+              "EBS median transaction latency",
+              "36.9 ms"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say network storage adds a painful latency penalty and local NVMe with replication is simpler; others say storage may not be the culprit, since query shape and database behavior matter too.",
+      "comment_count": 164,
+      "terms": [
+        "NVMe",
+        "EBS",
+        "TPS",
+        "WAL",
+        "IOPS",
+        "P95 latency",
+        "replication"
+      ],
+      "entities": [
+        "ClickHouse",
+        "PostgreSQL",
+        "Sai Srirampur",
+        "AWS",
+        "Kafka",
+        "WAL-G",
+        "Instacart",
+        "Datadog"
+      ],
+      "comments": [
+        {
+          "by": "mmnfrdmcx",
+          "text": "Cloud is insanely expensive and inefficient. Too many engineers don't understand how slow I/O back and forth is on network storage, or VMs with chatty neighbors are compared to bare metal..."
+        },
+        {
+          "by": "bob1029",
+          "text": "SQLite + NVMe feels like cheating sometimes. If my #1 requirement is lowest possible latency, I can't imagine picking anything else. Kestrel (AspNetCore) + SQLite + NVMe all on the same machine is where things start to get really spicy in my experience. Imagine handling an entire form submission that mutates database state in tens to low-hundreds of microseconds. Total wall clock time required to…"
+        },
+        {
+          "by": "smartbit",
+          "text": "CloudNativePG supports Kubernetes Local Storage as one of its main features [0] Persistent volume management, including:\nSupport for Local Persistent Volumes with PVC templates.\nReuse of Persistent Volumes storage in Pods.\nSeparate volumes for WAL files and tablespaces.\nChapter Temporary PostgreSQL Cluster Degradation [1] describes how to set it up and starts with this > While the standard…"
+        },
+        {
+          "by": "CharlieDigital",
+          "text": "\"Back in the day\", we used to have to carefully plan the underlying storage array to eek out every ounce of performance from the database server. I think there's a generation of devs that just takes big memory pools and SSDs for granted; there's a mental disconnect to the fact databases map the underlying storage. It becomes obvious once I bring it up with them in discussion and I can almost see…"
+        },
+        {
+          "by": "iancarroll",
+          "text": "Recently moved our RDS instances from r8g. to r8gd., which adds local NVMe, and I think the average I/O latency went from 1.0ms to 0.1ms. Adds up in big queries!"
+        }
+      ],
+      "image": "https://clickhouse.com/_next/image?url=%2Fuploads%2FPostgres_Isn_t_Slow_Your_Storage_Is_8e9d00bdc5.jpg&w=1200&h=630&q=75"
+    },
+    {
+      "id": 50044715,
+      "url": "https://asheradeniyi.com/2026/04/10/how-to-build-wealth-as-a-career-person/",
+      "hn": "https://news.ycombinator.com/item?id=50044715",
+      "title": "How to Build Wealth as a Career Person",
+      "time": 1791734638,
+      "points": 153,
+      "depth": [
+        {
+          "text": "someone argues a **regular job** can build wealth by turning your **salary into assets**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author recommends **saving automatically** after payday, then putting the surplus into diversified assets and reducing expensive debt. They also urge workers to **keep a private record** of responsibilities and measurable outcomes.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say the article gives practical, worthwhile career advice; others say building wealth mostly means living within your means and investing, not climbing the corporate ladder.",
+      "comment_count": 160,
+      "terms": [
+        "career capital",
+        "diversification",
+        "lifestyle inflation",
+        "RSUs",
+        "index ETF",
+        "CFP"
+      ],
+      "entities": [
+        "Asher's Blog",
+        "Morgan Housel",
+        "The Psychology of Money",
+        "Cal Newport",
+        "So Good They Can’t Ignore You",
+        "Angela Duckworth",
+        "Grit",
+        "World Bank",
+        "Bureau of Labor Statistics",
+        "Investor.gov",
+        "U.S. Securities and Exchange Commission"
+      ],
+      "comments": [
+        {
+          "by": "GMoromisato",
+          "text": "I've more or less followed this advice, and it's worked out for me. For the most part, I used my salary to pay for expenses and stock compensation to build up wealth. The tricky part is that a lot of this advice is situation-dependent. Should you switch to a riskier company that offers a higher compensation? Sometimes yes, sometimes no. Should you work late to accomplish goals hoping to get a…"
+        },
+        {
+          "by": "ghm2180",
+          "text": "What's weird about this article is none of it is technically wrong: \"Become a cheetah(super at ___)\", \"Aspire and engage to be better\", \"Build 6 types of capital\". They are not bad things to do, if you can: and that is what it misses, if you can. But don't feel bad if you have not been able to do any of them, e.g. Most People with kids can often do very little than job and take care of kids and…"
+        },
+        {
+          "by": "Aozora7",
+          "text": "I skipped most of the stuff described in the article and just invested most of my salary into index ETFs. Mostly because I hate work much more than I like buying stuff."
+        },
+        {
+          "by": "singpolyma3",
+          "text": "It takes over two thirds of the article to get to the actually relevant advice: spend less, invest the difference. Kissing ass at work might help you but not nearly as much as this two ideas."
+        },
+        {
+          "by": "UnhappyMeaning",
+          "text": "I've come across co-workers who make +$250K in salary who live paycheck-to-paycheck... 1. Alimony 2. Child support"
+        }
+      ],
+      "image": "https://s0.wp.com/i/blank.jpg?m=1383295312i"
+    },
+    {
       "id": 50048312,
       "url": "https://nonfunctional.substack.com/p/passkeys-are-a-trap-do-not-use-them",
       "hn": "https://news.ycombinator.com/item?id=50048312",
@@ -767,11 +1770,88 @@
     }
   ],
   "glossary": {
+    "backdated documents": "Paperwork made to look as if an event happened earlier than it really did.",
+    "beneficial ownership": "Who really gets the value from something, even if another person or company holds it on paper.",
+    "BVI": "British Virgin Islands: the place where the article says companies could keep accounts from public view.",
+    "tax haven": "A place whose tax rules make it attractive to keep money or register companies there.",
+    "auditor": "Someone who checks an organization’s actions or records to see whether rules were followed.",
+    "QEP": "QGIS Enhancement Proposal: a document proposing a change to how the QGIS project works.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "PR": "Pull request: a proposed code change shared so others can review it.",
+    "GIS": "Geographic Information System: software for working with map and location information.",
+    "SoC": "System on a Chip: a computer’s main processing parts built together on one chip.",
+    "mainline Linux": "The main Linux software project, where support for new hardware can be included for everyone to use.",
+    "firmware": "The built-in software that tells a device's hardware how to work.",
+    "AOSP": "Android Open Source Project: the publicly available base software people can use to build Android systems.",
+    "app sandboxing": "Keeping each app in a restricted space so it can’t freely reach the rest of the phone.",
+    "VoLTE": "Voice over Long-Term Evolution: a way to make phone calls over a 4G mobile network.",
+    "bootloader": "A small program that starts a computer and loads its main software.",
+    "IPO": "Initial Public Offering: when a company first offers its shares for the public to buy.",
+    "valuation": "An estimate of what a company is worth.",
+    "open-source model": "An AI model whose underlying pieces are made available for others to use or build on.",
+    "prospectus": "A document laying out a company's finances and plans for people considering its shares.",
+    "annualized revenue run rate": "An estimate of what a company's yearly revenue would be if its current pace continued.",
+    "S-1": "A filing that gives investors details about a company's finances and share offering before an IPO.",
+    "short position": "A bet that a stock's price will fall.",
+    "inference": "When an AI uses what it learned to answer or act, instead of being trained.",
+    "weak emergence": "A system behavior that appears only when its parts work together, even though its individual steps can be explained.",
+    "penetration testing": "Testing security by trying to break into a system.",
+    "mens rea": "A legal term for the mental intent or knowledge needed to prove a crime.",
+    "CFAA": "Computer Fraud and Abuse Act: a US law about unauthorized access to computers.",
+    "responsibility gap": "The argument that responsibility is unclear because an AI system's behavior is hard to predict.",
+    "M&A": "Mergers and acquisitions: when companies combine or one company buys another.",
+    "frontier model": "One of the most capable, newest AI models available.",
+    "harness": "The surrounding code that gives an AI agent tools and a place to work, and checks what it does.",
+    "A/B testing": "Trying different versions with different users to see which one works better.",
+    "derivative": "A measure of how quickly a value changes as its input changes.",
+    "integral": "A way of adding up many tiny amounts to find a total across time.",
+    "vector calculus": "A part of calculus for describing how quantities with direction change across space.",
+    "computer algebra system": "A program that can work with math expressions for you, such as simplifying them or solving equations.",
+    "Quarto": "A tool for turning written material into formats such as books and web pages.",
+    "IDE": "Integrated Development Environment: an app that brings coding and other development tools together.",
+    "DSP": "Digital signal processing: changing audio in software, such as adding effects.",
+    "type-safe": "A way of checking that each value is the right kind before the program runs.",
+    "transpiled": "Rewritten from one kind of code into another before the program runs.",
+    "compiler error": "A message from the tool that checks code before it runs, pointing out something it cannot build.",
+    "HTML escaping": "Changing special characters so a browser shows them as text instead of treating them as HTML.",
+    "URL attribute": "A setting inside an HTML tag that holds a web address, like a link’s destination.",
+    "open source": "Software whose code is shared so other people can inspect, run, or change it.",
+    "self-hosting": "Running a model on computers you control instead of using someone else's online service.",
+    "real-time co-editing": "Several people changing the same design together and seeing updates as they happen.",
+    "preinstall": "A setting meant to run a command before a package is installed.",
+    "RPC": "Remote Procedure Call: a way for one program to ask another program to do something directly.",
+    "payload": "The piece of code or data a request carries or delivers.",
+    "supply-chain attack": "An attack that slips harmful code into software people get through a tool or package they trust.",
+    "holography": "A way to record how light from a scene behaves so it can be recreated as a 3D image.",
+    "amplitude": "How strong a light wave is.",
+    "phase": "Where a light wave is in its repeating rise-and-fall cycle.",
+    "coherent light": "Light waves that stay lined up with each other.",
+    "wavefront": "The pattern made by a light wave as it travels, which can carry information about depth and focus.",
+    "modulator": "A device that changes light to make an image.",
+    "static recompilation": "Translating a game's existing code into code for a different system before running it.",
+    "WebAssembly": "A way to run compiled programs inside a web browser.",
+    "WebGPU": "A browser feature that lets a web page run calculations on your device’s graphics chip.",
+    "emulator": "A program that imitates another service so you can try your software without using the real one.",
+    "disc image": "A file that stores a copy of a game disc's contents.",
+    "SIMD": "Single Instruction, Multiple Data: a way to apply one operation to several values at once.",
+    "LLMs": "Large language models: computer programs trained on lots of writing that can produce text.",
+    "NVMe": "Non-Volatile Memory Express: a way for a computer to talk to a storage drive very quickly.",
+    "EBS": "Elastic Block Store: storage attached to a cloud machine over a network.",
+    "TPS": "Transactions per second: how many database transactions finish in one second.",
+    "WAL": "Write-ahead log: a record of changes the database saves so it can recover or copy them.",
+    "IOPS": "Input/output operations per second: how many separate storage reads and writes can happen each second.",
+    "P95 latency": "The time it takes for 95 out of 100 requests to finish; the slowest few can take longer.",
+    "replication": "Keeping copies of database changes on other machines so they can catch up or take over.",
+    "career capital": "Skills that are valuable enough to give you more choices and opportunities at work.",
+    "diversification": "Spreading your money across different investments so one bad result does not hit all of it.",
+    "lifestyle inflation": "When spending rises along with your income, so a raise does not leave you with more to save.",
+    "RSUs": "Restricted Stock Units: shares an employer promises to give an employee, often after they stay for a set time.",
+    "index ETF": "Exchange-Traded Fund: a bundle of investments designed to follow a group of shares or other assets, bought and sold like one item.",
+    "CFP": "Certified Financial Planner: a professional credential held by some people who advise others about money.",
     "passkey": "A way to sign in without typing a password, using a credential saved by a device or password manager.",
     "attestation": "A check that lets a website verify what device or software created a passkey before accepting it.",
     "TOTP": "Time-based One-Time Password: a sign-in code from an app that changes over time.",
     "domain-bound": "A passkey works only with the website it was made for, which helps stop lookalike sites from stealing it.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "agent": "An AI system that can take steps and use tools to get a task done, not just answer questions.",
     "frontier-grade system": "An AI system at the most capable end of what people can access.",
     "jaggedness": "The way an AI can be very capable at some tasks but much less capable at others.",
@@ -796,7 +1876,6 @@
     "decompilation": "Turning a program from the form a computer runs into code people can inspect, though the result may not match what its author wrote.",
     "byte matching": "Checking that two compiled functions have exactly the same bytes, not just that they behave alike.",
     "CI": "Continuous integration: automatic checks that run when developers change code, helping catch problems early.",
-    "harness": "The surrounding code that gives an AI agent tools and a place to work, and checks what it does.",
     "prompt injection": "Instructions hidden in text or a file that try to trick an AI into ignoring its intended directions.",
     "local model": "An AI model that runs on your own computer instead of someone else’s servers.",
     "open-source": "Software whose code is shared publicly so people can inspect it, change it, or build on it.",
