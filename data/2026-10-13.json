@@ -1,0 +1,1391 @@
+{
+  "date": "2026-10-13",
+  "cards": [
+    {
+      "id": 50059115,
+      "url": "https://research.meta.ai/blog/muse-wonder",
+      "hn": "https://news.ycombinator.com/item?id=50059115",
+      "title": "Muse Wonder",
+      "time": 1791823681,
+      "points": 515,
+      "depth": [
+        {
+          "text": "Meta introduced **Muse Wonder**, an AI model meant to remember your context and work through **personal and professional tasks**",
+          "tier": "simple"
+        },
+        {
+          "text": "The series includes Muse Wonder and Muse Wonder Full; Wonder is available through Meta Model API and Muse Code, while Full is for Muse Code subscribers. Meta says **Active Memory** carries useful context between conversations, while **Active Focus** keeps working through blockers and tries other approaches.",
+          "tier": "substance",
+          "data": [
+            [
+              "Input",
+              "$4.00"
+            ],
+            [
+              "Cached input",
+              "$0.20"
+            ],
+            [
+              "Output",
+              "$20.00"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some testers say it still trails rivals in real-world work; others say its near-frontier performance and reported second place are impressive.",
+      "comment_count": 283,
+      "terms": [
+        "agentic tasks",
+        "Active Memory",
+        "Active Focus",
+        "API",
+        "benchmark",
+        "benchmaxxing",
+        "CBRN"
+      ],
+      "entities": [
+        "Meta",
+        "Muse Wonder",
+        "Muse Wonder Full",
+        "Meta Model API",
+        "Muse Code",
+        "Muse",
+        "Muse Spark",
+        "Prometheus",
+        "Meta Superintelligence Scaling Framework",
+        "Harvey",
+        "FocusBench",
+        "SWE-Marathon",
+        "OpenStreetMap",
+        "Instagram",
+        "React",
+        "Node",
+        "Rust",
+        "Codex",
+        "OpenAI",
+        "Anthropic",
+        "Opus",
+        "Astra",
+        "Fable"
+      ],
+      "comments": [
+        {
+          "by": "throwyawayyyy",
+          "text": "This sounds irrelevant but it isn't: I just tried to unsubscribe to marketing emails from some Meta property, and got: Please confirm that you want to unsubscribe.\nUnsupported request - method type: post That's how careful this company is. Who knows how long that flow has been broken for, no one in the company is motivated to care, because what impact can that possibly give? How could that look…"
+        },
+        {
+          "by": "atleastoptimal",
+          "text": "I personally have many problems with Meta, but imo the more companies close to the frontier, the better. If only one company were calling all the shots once they hit recursive self-improvement, it would lead to extreme concentration of power, and their values being enforced across the entire industry. With 3-4 companies at the frontier, there is more urge to cooperate to avoid a catastrophic race…"
+        },
+        {
+          "by": "pmuse",
+          "text": "I don't use Meta much, but was curious to test this out... went to sign into my Meta account (Quest only) from the Muse Code site https://dev.meta.ai/products/muse-code and had other people's profiles listed in my login auth -- looks like developers / people I have no relation to. Looks like Meta may be exposing your profile and email to other people right now. Accounts settings are inaccessible…"
+        },
+        {
+          "by": "jjcm",
+          "text": "Image->HTML test for Muse Wonder. It's much worse than Opus 5.5. IMO it's closer to Sonnet or Haiku for this test. Muse Wonder (high): https://html.non.io/lcars-muse-wonoder/ Opus 5.5 (high): https://html.non.io/lcars-opus-5.5/ Original design: https://diffui.ai/app/canvas/5093e689-1e74-4f26-b632-2a4500f... I was expecting much more given the benchmark numbers it was putting out. I suspect its…"
+        },
+        {
+          "by": "simonw",
+          "text": "Some pretty decent pelicans: https://tools.simonwillison.net/markdown-svg-renderer?url=ht... Here's Muse Spark 1.2 in August for comparison: https://tools.simonwillison.net/markdown-svg-renderer?url=ht... And since I seem to have missed doing pelicans for Muse 1.3 in September, I just ran those for a comparison: https://tools.simonwillison.net/markdown-svg-renderer?url=ht... (1.3 seems to like…"
+        }
+      ],
+      "image": "https://research.meta.ai/articles/introducing-muse-wonder/social/muse-wonder-social-v1.webp"
+    },
+    {
+      "id": 50060694,
+      "url": "https://github.com/openai/codex/issues/48195",
+      "hn": "https://news.ycombinator.com/item?id=50060694",
+      "title": "Codex CLI installs a persistent, self-updating background daemon by default",
+      "time": 1791829744,
+      "points": 445,
+      "depth": [
+        {
+          "text": "Codex now starts a **background daemon** that copies itself and **updates without asking**",
+          "tier": "simple"
+        },
+        {
+          "text": "The issue asks to make **daemon_auto_start opt-in**: interactive sessions start a persistent process that copies the **platform package** into a managed release folder, then checks for updates after five minutes and hourly. Those updates can kill **active turns**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say fast-moving tools should update automatically; others say package managers already handle updates, so a background updater is unnecessary.",
+      "comment_count": 229,
+      "terms": [
+        "daemon",
+        "opt-in",
+        "package manager",
+        "environment variables"
+      ],
+      "entities": [
+        "Codex",
+        "OpenAI",
+        "GitHub",
+        "npm",
+        "Claude Code",
+        "ChatGPT",
+        "opencode",
+        "hax"
+      ],
+      "comments": [
+        {
+          "by": "whimblepop",
+          "text": "There aren't any documented settings to disable this, but there is a feature flag it currently sits behind. You can flip it in your ~/.codex/config.toml[1]: [features]\ndaemon_auto_start = false\nThere are also some files that it writes to in ~/.codex at startup: pid files, lock files, things like that. You can delete them and replace them with symlinks to /dev/null, then mark those unwritable with…"
+        },
+        {
+          "by": "icantevenhold",
+          "text": "It also fills up my HD with old versions.\nI investigated and it took up something like 12 gigabytes in total on my system; which seems insane to me, it’s just a harness? People moan about how badly made Claude code is but Codex seems much worse on every metric"
+        },
+        {
+          "by": "dllu",
+          "text": "The daemon has many bugs. For example, when auto-updating, it would randomly ruin the permissions and block the goal as .git became read-only. Generally, it is extremely annoying how many bugs Codex has. I basically can't trust it to execute on any goal since it would often get blocked every few hours due to random bugs. https://github.com/openai/codex/issues/52251#issuecomment-60..."
+        },
+        {
+          "by": "reacharavindh",
+          "text": "I’ve been using GPT models via hax[1], a bare bones harness with minimal tools on my system and have the models rely on bash for the most part the last few months. It’s been a breath of fresh air amidst all these overengineered harnesses. If I need special actions, I just make them CLI tools on my Mac and tell the AI model that such a tool exists(via a single line in its system prompt) and that’s…"
+        },
+        {
+          "by": "timdorr",
+          "text": "This is the same operational model as Claude Code. ls ~/.local/share/claude/versions/\nps auxww | grep \"claude bg\"\nI see a few prior versions of the Claude Code binary and several running background tasks, without any copy of Claude Code in the foreground. I regularly get a \"Update available\" message in my Claude Code UI too."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/62597b5e657304bedc9c5d3a30da1d84134f1d33b61224a5a2fe3232f919511b/openai/codex/issues/48195"
+    },
+    {
+      "id": 50055304,
+      "url": "https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident",
+      "hn": "https://news.ycombinator.com/item?id=50055304",
+      "title": "Hackers activate automatic defrosting in supermarket fridges across Europe",
+      "time": 1791807402,
+      "points": 421,
+      "depth": [
+        {
+          "text": "hackers made **supermarket fridges** across Europe switch on **automatic defrosting**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says **three French chains** had their refrigeration systems hacked; a **separate IT shutdown** hit a chain serving Belgium and the Netherlands, with no reported link between the incidents. Commenters also point to older Danfoss controllers and fridges **exposed online**, but don't establish those as the cause.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: one says remote controls help stores save energy and manage equipment; the other says fridges shouldn't be wide open online and should be kept offline or behind a secure VPN.",
+      "comment_count": 640,
+      "terms": [
+        "CVE",
+        "case controller",
+        "Demand Response",
+        "VPN",
+        "ransomware",
+        "EOS"
+      ],
+      "entities": [
+        "Danfoss",
+        "SM800",
+        "SC355",
+        "Carrefour",
+        "Ahold Delhaize",
+        "Tailscale",
+        "Claroty",
+        "Team82"
+      ],
+      "comments": [
+        {
+          "by": "9x39",
+          "text": "If you believe some of the emerging comments out there - try \"Danfoss CVE\" - you'll see that some of the suspects are 15-20 year old controllers like the Danfoss SM800 (EOS 2021) and SC355 (EOS 2016). Why don't they just--- no margin.\nBut there were CVEs-- no margin. The laptop class doesn't always grok that the shift-work labor class has nothing in terms of luxuries like security reviews and…"
+        },
+        {
+          "by": "alexpotato",
+          "text": "Was just talking to a lab tech at a hospital. It seems that some of the newer lab machines require internet access because you can't run lab tests unless you have a paid subscription to use the machine. No credits on the subscription, no tests. I mention this b/c a lot of commenters here are saying \"but why would you ever hook up a freezer to the internet??\" I find that type of comment…"
+        },
+        {
+          "by": "renyicircle",
+          "text": "> Connecting your case controller to the internet offers further opportunities to generate savings. If you can diagnose issues and control the case remotely, service engineers needn’t be called out to simple situations like starting a defrost. And being able to compare performance and efficiency across an entire estate of stores makes it easy to spot patterns and make incremental efficiency…"
+        },
+        {
+          "by": "nemomarx",
+          "text": "Not sure if it's related but there was a vuln published in August for the freezers in the article https://www.claroty.com/team82/research/freeze-the-controlle... maybe groups have been looking for targets to use it on?"
+        },
+        {
+          "by": "chromaton",
+          "text": "I worked in the field of control systems for supermarkets back in 2008. These systems are internet connected and remotely controllable because the managers need to be able to see shifts in usage over time and take action to save electricity and provide better food storage. One example might be that due to shifting customer patterns and products, you might want a certain refrigerator case to be…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50058507,
+      "url": "https://z.ai/blog/glm-legal",
+      "hn": "https://news.ycombinator.com/item?id=50058507",
+      "title": "GLM-Legal",
+      "time": 1791821505,
+      "points": 417,
+      "depth": [
+        {
+          "text": "people are arguing over whether **GLM-Legal** can handle **real legal work** safely",
+          "tier": "simple"
+        },
+        {
+          "text": "Commenters question a **20% benchmark pass rate**, saying legal work needs **novel situations**, not just familiar test cases. One also alleges Z.ai was snapshotting the entire workspace before every prompt, raising **privacy concerns**.",
+          "tier": "substance",
+          "data": [
+            [
+              "benchmark pass rate",
+              "20%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters see LLMs helping with routine legal work; skeptics question benchmark scores, privacy, and whether legal tools can handle different countries’ laws.",
+      "comment_count": 239,
+      "terms": [
+        "LLM",
+        "benchmark",
+        "redlining",
+        "human in the loop",
+        "open-weight model",
+        "hallucination"
+      ],
+      "entities": [
+        "GLM-Legal",
+        "Z.ai",
+        "Claude",
+        "Anthropic",
+        "Harvey"
+      ],
+      "comments": [
+        {
+          "by": "jedberg",
+          "text": "I would love to see these benchmarks split up across \"generic\" tasks and novel tasks. For example, redlining an OEM agreement with my vendor. They pretty much all use the same template, and the objections are always the same. I tried using Claude first, and even my lawyer was impressed that it found things they missed. Then I used Claude to redline that type of contract and the other side said…"
+        },
+        {
+          "by": "fireflysentinel",
+          "text": "Seems like people forgot Z.ai was snapshotting the entire workspace before every prompt. https://blog.ferstar.org/en/posts/zcode-silent-workspace-sna... How could we trust legal product from a company who was ignoring privacy protection law like that?"
+        },
+        {
+          "by": "victor9000",
+          "text": "I’m not sure if this is the right solution, but we clearly need better tools for the legal space. Anthropic's recent policy update makes this abundantly clear: “When our products are used in ways that can affect someone's health, legal rights, finances, livelihood, or access to essential services, we require there to be a qualified ‘human in the loop’ (that is, someone who has the authority to…"
+        },
+        {
+          "by": "mlmonkey",
+          "text": "I might be incredibly naive here, but I really think LLMs can make a difference in _some_ areas of law. Take, for example, India. The courts are backlogged like crazy. If you're not willing to bribe a judge or the opposite side's lawyer, you'r looking at multiple decades to settle simple cases. I wish I could waive a wand and have some LLM just go through all of the 58 million pending court…"
+        },
+        {
+          "by": "otterley",
+          "text": "As an attorney, I am not particularly impressed about a 20% pass rate on a benchmark. The name of the game for litigation practice is about being prepared for novel situations, not relitigating past ones."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50059523,
+      "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+      "hn": "https://news.ycombinator.com/item?id=50059523",
+      "title": "AI coding agents generate more code, but not more software",
+      "time": 1791825241,
+      "points": 307,
+      "depth": [
+        {
+          "text": "**AI coding agents** help teams write more code, but **human reviews** keep software output from growing",
+          "tier": "simple"
+        },
+        {
+          "text": "Across more than 700 firms, agents raised **total lines of code by 30 percent**, while **review time rose 49 percent**; issue resolution rates did not change significantly.",
+          "tier": "substance",
+          "data": [
+            [
+              "total lines of code generated increase",
+              "30 percent"
+            ],
+            [
+              "average review process time increase",
+              "49 percent"
+            ],
+            [
+              "comments per pull request increase",
+              "35%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say agents mostly add code and review work without more useful firm output; others say they help teams or solo developers build more than they otherwise could.",
+      "comment_count": 266,
+      "terms": [
+        "pull request",
+        "code review",
+        "agentic coding",
+        "issue resolution rate"
+      ],
+      "entities": [
+        "Ars Technica",
+        "Harvard University",
+        "Fiona Chen",
+        "James Stratton",
+        "Jellyfish",
+        "GitHub",
+        "Jira",
+        "LinkedIn",
+        "Claude",
+        "Sonnet",
+        "GPT-4.1",
+        "GPT-5",
+        "Gemini 2.5",
+        "Rust",
+        "C",
+        "C++",
+        "Kilo Code",
+        "Mercurial",
+        "FluxImp",
+        "Kyle Orland"
+      ],
+      "comments": [
+        {
+          "by": "staminade",
+          "text": "This is from March 2026, but it does match what I've encountered professionally. Code review was always a significant bottleneck and is even more so with agentic coding. We've had discussions about leaning more on automated review, but it hasn't translated into any practical improvements so far. I think senior engineers find it very difficult to give up on line-by-line review, no matter how much…"
+        },
+        {
+          "by": "jacquesm",
+          "text": "That and they do not necessarily generate better code. They tend to generate code that is repetitive. It misses opportunities for extraction and refactoring, the result is bloated and hard to read code (because those blocks are there literally instead of with a usable name) and they tend to over-comment where it doesn't add but is 'safe' because it is obvious (effectively re-writing code as…"
+        },
+        {
+          "by": "jefftk",
+          "text": "As is standard for academic papers, this is an attempt to describe the state of the world as of when they did the research. But then it takes time to write it up and get it out, after which newspapers report it as current events. In this case, we're looking at a picture from 2025. The models involved in the main agent results were primarily Claude 3.5 through Sonnet 4.5, GPT-4.1 through GPT-5…"
+        },
+        {
+          "by": "blauditore",
+          "text": "Well, imagine racing car manufacturers competing on making better, faster engines. At some point engines are so strong that other parts become the limiting factors, such as tires for traction. Now someone invents superfuel, but cars are still only marginally faster because the additional engine power didn't change the bottom line much. That's what's happening in software. We knew that coding is…"
+        },
+        {
+          "by": "keithnz",
+          "text": "It doesn't match my experience. We are producing more software, and being a lot more ambitious about the things we develop. The trick is mostly to do with getting good guidance in place and then you can spend a lot more time iterating the product itself. I spend a lot more time play testing the product now and trying different things / refining. However, there is a lot of previous work that's…"
+        }
+      ],
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2264559974-1152x648.jpg"
+    },
+    {
+      "id": 50055220,
+      "url": "https://www.bbc.com/news/articles/c620r33plgppo",
+      "hn": "https://news.ycombinator.com/item?id=50055220",
+      "title": "Citroen revives the 2CV for an electric age",
+      "time": 1791806949,
+      "points": 260,
+      "depth": [
+        {
+          "text": "Citroen brought back the **2CV** as a small **electric city car** with retro styling",
+          "tier": "simple"
+        },
+        {
+          "text": "The **concept car** was unveiled at the Paris Motor Show and isn't ready for sale; Citroen plans a showroom version **by 2028**, expected to cost about **£13,000**.",
+          "tier": "substance",
+          "data": [
+            [
+              "planned showroom version",
+              "by 2028"
+            ],
+            [
+              "expected price",
+              "about £13,000"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: fans like the retro styling; skeptics say nostalgia won't beat value and range.",
+      "comment_count": 315,
+      "terms": [
+        "EV",
+        "concept car",
+        "powertrain",
+        "infotainment"
+      ],
+      "entities": [
+        "Citroen",
+        "2CV",
+        "Paris Motor Show",
+        "Xavier Chardon",
+        "Renault",
+        "Renault 5 E-Tech",
+        "Renault 4",
+        "Twingo",
+        "VW",
+        "ID-Buzz",
+        "BMW",
+        "Mini",
+        "Fiat",
+        "Fiat 500",
+        "Ford",
+        "Fiesta",
+        "Rachel Burgess",
+        "David Leggett",
+        "Paul Nieuwenhuis",
+        "BYD Seagull",
+        "Hyundai",
+        "Peugeot",
+        "Radioën"
+      ],
+      "comments": [
+        {
+          "by": "Lio",
+          "text": "With all the hype around the nostalgia it seems to be slipping by people that this 2CV also has a class leading weight at under a tonne. Lighter weight means better range for a smaller battery, more efficient tyres and lower road wear. It's one of the reasons why the target price is going to be so low. It's a really cheap car but I think to do that they still have to have some good engineering in…"
+        },
+        {
+          "by": "jacquesm",
+          "text": "If they ever bring out an actual electric DS (and hopefully without too much spyware) I would consider getting one even if I've sworn off modern vehicles and consider my current daily driver (30 years old) my last car. But the 2CV has a soft spot, it was my second car (after having a junker beetle for a few weeks) and it served me well until the day that a skidding Volvo turned it into a…"
+        },
+        {
+          "by": "alentred",
+          "text": "There are more details on the official website [1] and in the official video [2] I already love it. The infotainment is proudly named Radioën. They made the champignon pedals!, although I am not sure this will be kept in the production model due to regulation. The seats will definitely need headrests in the 21st :) And there is a van model. I doubt that one will be a commercial success, though…"
+        },
+        {
+          "by": "JKCalhoun",
+          "text": "Lloyd Cole playing his 80's song, \"2cv\" on KEXP: https://youtu.be/L8FNQiKtMY0 (Sorry, where I first learned how to pronounce the name of the car.)"
+        },
+        {
+          "by": "Waterluvian",
+          "text": "I’m a big fan of cars that look happy. There’s something wrong with the trend of all cars looking big and aggressive. What’s wrong with us that we want that?"
+        }
+      ],
+      "image": "https://ichef.bbci.co.uk/news/1024/branded_news/b9db/live/c47fea70-c3f4-11f1-97a9-2d4b5e26e282.jpg"
+    },
+    {
+      "id": 50055593,
+      "url": "https://github.com/h0m3us3r/w1700k-sdr",
+      "hn": "https://news.ycombinator.com/item?id=50055593",
+      "title": "Turn a WiFi 7 Router into a 320Msps Software Defined Radio Receiver",
+      "time": 1791808918,
+      "points": 254,
+      "depth": [
+        {
+          "text": "someone turned a router into a **wideband radio receiver** with **live spectrum** views",
+          "tier": "simple"
+        },
+        {
+          "text": "The MT7996 runs project-built firmware and streams raw **14-bit IQ** data over **10 GbE**; the browser view computes a 262,144-point FFT at 100 spectra a second. The receiver is **receive-only**.",
+          "tier": "substance",
+          "data": [
+            [
+              "maximum sample rate",
+              "320 Msps"
+            ],
+            [
+              "IQ precision",
+              "14-bit"
+            ],
+            [
+              "FFT size",
+              "262,144-point"
+            ],
+            [
+              "spectra per second",
+              "100 spectra a second"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 64,
+      "terms": [
+        "SDR",
+        "Msps",
+        "IQ",
+        "FFT",
+        "10 GbE"
+      ],
+      "entities": [
+        "W1700K",
+        "MediaTek",
+        "MT7996",
+        "Airoha",
+        "AN7581",
+        "Linux"
+      ],
+      "comments": [
+        {
+          "by": "yonatan8070",
+          "text": "This same devloper also built an SDR out of an ESP32 Wi-Fi microcontroller [1], this is awesome! This development makes me hope that we'd be seeing more of these on common Wi-Fi cards, so that every random laptop could be used as an SDR for many fun and useful applications on a budget. https://github.com/h0m3us3r/eSpDR"
+        },
+        {
+          "by": "thebeardisred",
+          "text": "FYI, since it's the same chipset I'm pretty certain this will work on the Banana Pi R4, which has built in PCIe for NVMe."
+        },
+        {
+          "by": "mikewarot",
+          "text": "Having done repairs on a ton of older service monitors, and having my hand in SDR, this is amazing! There's a huge amount of machining and hardware to make a service monitor, but with desktop CNC, cheap PCBS, and jelly bean components that go into the 10s of GHz, the sky's the limit. I'd add a heat sunk 100 watt DC-5Ghz 20dB fixed attenuator, 0-110 dB switched attenuator, 5 ghz low pass filter…"
+        },
+        {
+          "by": "aftbit",
+          "text": "Wow that's super cool! It's not DC to daylight but I sure don't know a cheaper way to get a 320 Msps receiver at 5 GHz."
+        },
+        {
+          "by": "alightsoul",
+          "text": "Is this kind of thing why samsung asks you to sign a contract before letting third parties use the FM radios on their phones? Because many phone radios nowadays are software defined?"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/c8ab90a7804fccba1bb2c026090b41a4907c9f2cf63689afeedc4bc0e6a2df78/h0m3us3r/w1700k-sdr"
+    },
+    {
+      "id": 50037711,
+      "url": "https://www.sciencealert.com/secret-of-orange-cats-finally-revealed-after-60-year-search",
+      "hn": "https://news.ycombinator.com/item?id=50037711",
+      "title": "Secret of Orange Cats Revealed After 60-Year Search",
+      "time": 1791670257,
+      "points": 222,
+      "depth": [
+        {
+          "text": "someone found the **DNA change** behind orange cats' fur after a **60-year search**",
+          "tier": "simple"
+        },
+        {
+          "text": "Two teams tied orange fur to a **missing DNA segment** in a non-protein-coding part of the cat genome. One team found skin cells where orange fur grows expressed **13 times as much RNA** from **Arhgap36**, and the deletion appeared in every orange cat they examined.",
+          "tier": "substance",
+          "data": [
+            [
+              "RNA from Arhgap36 in orange-fur skin cells",
+              "13 times as much"
+            ],
+            [
+              "deletion size",
+              "5 kilobase"
+            ],
+            [
+              "cats in database",
+              "188 cats"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some point to the article's lack of scientific support for a color-and-cognition link; others cite anecdotes and say a behavior link may still exist.",
+      "comment_count": 172,
+      "terms": [
+        "non-protein-coding",
+        "RNA",
+        "Arhgap36",
+        "deletion",
+        "X chromosome",
+        "melanocytes",
+        "eumelanin",
+        "pheomelanin"
+      ],
+      "entities": [
+        "ScienceAlert",
+        "Nature",
+        "Tessa Koumoundouros",
+        "Stanford University",
+        "Greg Barsh",
+        "Science",
+        "Sara Reardon",
+        "Arhgap36",
+        "Kyushu University",
+        "Hidehiro Toh",
+        "Current Biology",
+        "Fiona MacDonald"
+      ],
+      "comments": [
+        {
+          "by": "kens",
+          "text": "I thought this seemed familiar; it's a rehash of a 2024 discovery: https://www.science.org/content/article/gene-behind-orange-f..."
+        },
+        {
+          "by": "dayyan",
+          "text": "The article says there's no evidence of the gene being responsible for behavior. Which means it's inconclusive if the gene is responsible for behavior. But, collectively we know it may be."
+        },
+        {
+          "by": "bookofjoe",
+          "text": "https://www.reddit.com/r/catbongos/"
+        },
+        {
+          "by": "stuaxo",
+          "text": "Wait, do people in the US really call them \"orange cats\" - I just thought that was a reddit / internet thing. In the UK these are ginger cats."
+        },
+        {
+          "by": "isgb",
+          "text": "It’s the lasagna"
+        }
+      ],
+      "image": "https://www.sciencealert.com/images/2026/10/OrangeCatsSurprise.jpg"
+    },
+    {
+      "id": 50059204,
+      "url": "https://www.spinellis.gr/blog/20261008/?li261008",
+      "hn": "https://news.ycombinator.com/item?id=50059204",
+      "title": "Thinking will become a hobby",
+      "time": 1791824048,
+      "points": 220,
+      "depth": [
+        {
+          "text": "someone argues **AI could take over** much cognitive work, turning **thinking into a hobby**",
+          "tier": "simple"
+        },
+        {
+          "text": "The post points to **better performance, lower cost and higher availability** as AI’s advantages, and says the shift will be demanding. Its advice is to stay adaptable and build a **purposeful life beyond work**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say people will keep thinking because they value it and AI still makes mistakes; others warn AI could displace human work and leave people without jobs or purpose.",
+      "comment_count": 285,
+      "terms": [
+        "cognitive work",
+        "LLM",
+        "next token prediction",
+        "post-scarcity"
+      ],
+      "entities": [
+        "ChatGPT",
+        "Diomidis Spinellis",
+        "Isaac Asimov"
+      ],
+      "comments": [
+        {
+          "by": "lsy",
+          "text": "I imagine this is like how microwaves put restaurants out of business, how TTS obviated literacy, how the automobile age made it unnecessary to walk, how Zoom caused every office to close, how helicopters put mountaineering firmly behind us, Amazon obsoleted brick and mortar stores, and payment cards made cash disappear. It's not only ahistorical to fail to consider preferences and politics, but…"
+        },
+        {
+          "by": "goda90",
+          "text": ">My challenge ahead is to move from making a living by thinking, to making thinking part of a life worth living. Our challenge ahead is making a living at all. Who is going to be having hobbies if the economy is 100% automated? We're not going to sleepwalk our way into a post-scarcity automated economy where everyone's needs are provided for and they can just spend all their time on hobbies. If…"
+        },
+        {
+          "by": "bmau5",
+          "text": "From my understanding of how LLMs work, I'd argue thinking will become the most valuable attribute of humans (as it has been for some time). LLMs will inevitably surpass humans at functions that we know how to do, and likely through cross-domain knowledge and connecting disparate concepts will surpass us at many functions. But LLMs haven't shown they are capable of truly novel thinking, because…"
+        },
+        {
+          "by": "m0llusk",
+          "text": "This is false. LLMs still make mistakes frequently, especially with content not prominent in their training. And far from working tirelessly, they need frequent reminders of goals and boundaries to stay on track."
+        },
+        {
+          "by": "sixo",
+          "text": "Some pertinent fragments of wisdom gleaned from other places: Somewhere I encountered a quote like \"the finest art is a life well-lived\". This threw me, because, apparently, I had been thinking of art as something different in kind from life, and unrelated to the normal work or act of living. Seen in terms of this quote, art becomes once again of-a-kind with life, and may be seen as only a part…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50036287,
+      "url": "https://pixelatron.com/blog/the-making-of-super-mario-64-full-giles-goddard-interview-ngc/",
+      "hn": "https://news.ycombinator.com/item?id=50036287",
+      "title": "The Making Of Super Mario 64 – full Giles Goddard interview (2001)",
+      "time": 1791660521,
+      "points": 216,
+      "depth": [
+        {
+          "text": "an old interview explains how Nintendo shaped **Super Mario 64** around **Mario’s movement** and the camera",
+          "tier": "simple"
+        },
+        {
+          "text": "Giles Goddard says work began on **SGI emulators** before there was hardware, and his Mario-face demo explored **moving individual points**. The team was probably **about 15 people**, while much of Miyamoto’s time went into movement and camera controls.",
+          "tier": "substance",
+          "data": [
+            [
+              "team size",
+              "about 15 people"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 84,
+      "terms": [
+        "SGI",
+        "emulator",
+        "API",
+        "vertices",
+        "linear algebra",
+        "tank controls"
+      ],
+      "entities": [
+        "Giles Goddard",
+        "Nintendo",
+        "Super Mario 64",
+        "N64",
+        "SGI",
+        "Onyx",
+        "Indy",
+        "Miyamoto",
+        "EAD",
+        "Super Mario Club",
+        "Zelda",
+        "Ocarina of Time",
+        "Wave Race",
+        "Starfox 2",
+        "Sega",
+        "PlayStation",
+        "Turok",
+        "1080"
+      ],
+      "comments": [
+        {
+          "by": "deltaburnt",
+          "text": "I often think about how crazy it must have been to be a game developer around this period. Almost every bit of design, math, coding knowledge was flipped on its head. Overnight developers who were managing relatively simple XY coordinates suddenly had to discover the complexities of 3D rotations, perspective math, and probably more linear algebra than they ever really expected to know. It’s even…"
+        },
+        {
+          "by": "okeuro49",
+          "text": "If you are interested in Mario 64 have a look at Kaze Emanuar's YouTube channel. https://youtube.com/channel/UCuvSqzfO_LV_QzHdmEj84SQ From Wikipedia: > Starting from 2022, Emanuar would begin uploading videos discussing Nintendo 64 technical details and optimization techniques,[15] along with outlining Super Mario 64's bugs, technical shortcomings and poorly optimized features, fixing them in the…"
+        },
+        {
+          "by": "Aissen",
+          "text": "> What’s the secret behind that Mario ‘feel’? > I think that is fine-tuning. Many, many, many hours and days spent actually sitting down and playing the game. Turns out quality takes time. Who would have thought. Very few games reach this level of fine-tuning, because it takes dedication (and budget). Funnily, it's almost conflicting with this answer: > Was much changed during development? >…"
+        },
+        {
+          "by": "asimovDev",
+          "text": ">Giles Goddard (born 30 March 1971) is an English video game programmer. He was one of the first Western employees at Nintendo >[Argonaut Games, Giles's first job] produced a 3D graphics demo for the Nintendo Entertainment System and collaborated with Nintendo [0] To my uninformed self, this sounds extremely impressive to get a 3D graphics demo on the NES. Oh I would love to see how that looked…"
+        },
+        {
+          "by": "a1o",
+          "text": "> How many people were on the Super Mario 64 team? > Probably about 15 people in the end. Whoa, a much smaller team than I imagined! It must have been fun working in this group!! The rest of the interview is also cool but was impressed with this small number!!"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50063427,
+      "url": "https://yyhh.org/blog/2026/10/ai-is-a-tool/",
+      "hn": "https://news.ycombinator.com/item?id=50063427",
+      "title": "AI is a tool and using it well takes skill",
+      "time": 1791841218,
+      "points": 208,
+      "depth": [
+        {
+          "text": "someone argues **AI tools** still need **human skill**, since people must guide and check their answers",
+          "tier": "simple"
+        },
+        {
+          "text": "The writer **pushes back on Rich Hickey’s claim** that LLMs are automation rather than tools, noting that people can direct requests, inspect evidence, test changes, and reject bad answers. They point to compilers and spreadsheets as systems that automate work but still count as tools; the key distinction is **skilled use** versus handing work off without adequate oversight.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some say human expertise is still needed to guide and check LLMs; others say those skills are quickly becoming obsolete, or that LLMs are too unpredictable to count as tools.",
+      "comment_count": 190,
+      "terms": [
+        "LLM",
+        "compiler",
+        "feedback loop",
+        "anthropomorphic",
+        "nondeterministic",
+        "context window"
+      ],
+      "entities": [
+        "Rich Hickey"
+      ],
+      "comments": [
+        {
+          "by": "jgord",
+          "text": "Its probable that AI will roll out much faster than humans can develop that skill of using it in a way that increases not decreases human knowledge over time. The current slew of excellent LLMs will probably cause a decades long dip in human cognitive ability. If social media on smartphones had an impact of ability of students to concentrate, LLM AI will likely have a much greater negative impact…"
+        },
+        {
+          "by": "extr",
+          "text": "I go back and forth on this. For awhile yes it took a lot of workflow tweaks and finesse to get directionally correct outputs (thinking back like mid 2025). I invested time in figuring that out, mostly because I was interested, but those skills are all obsolete now, you don't need to worry so much about context management and special instruction recipes or anything these days. The meta at this…"
+        },
+        {
+          "by": "devin",
+          "text": "Rich Hickey of Clojure fame wrote this today about AI not being a tool: https://www.linkedin.com/pulse/ai-tool-rich-hickey-kjl8e"
+        },
+        {
+          "by": "whatever1",
+          "text": "Whoever claims to have skill in AI is very shortsighted. Whatever skill you thought you had six months ago can now be achieved with a simple six-word prompt in a standard workspace. I literally just ask a frontier model : \"Pull the latest log and root cause the issue.\". That's it, 10' later it comes back with a correct answer. Sometimes I might have to prompt a second time to steer. No skills…"
+        },
+        {
+          "by": "mosesman",
+          "text": "As Nader has said: Saying software is dead because anyone can build it is literally saying professional photography is dead because everyone has a camera in their pocket. Professional photographers are different to everyday phone-photo takers because they have the experience built up over so many years in that sector, same as AI SWE, where the humans in the loop need experience to master AI SWE."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50060269,
+      "url": "https://www.linkedin.com/pulse/ai-tool-rich-hickey-kjl8e",
+      "hn": "https://news.ycombinator.com/item?id=50060269",
+      "title": "'AI' Is Not a Tool by Rich Hickey",
+      "time": 1791828025,
+      "points": 205,
+      "depth": [
+        {
+          "text": "Rich Hickey says AI agents **automate coding** rather than act as **tools for coding**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter frames Hickey's point as a change in the task: an agent **writes code for you**, so you may lose **control**, learning and predictability. Others point to unpredictable machines that are still tools, while one commenter says their **AI harness** is a tool.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: Hickey's supporters say AI agents automate the work rather than help you do it; critics say they can still count as tools, even if unpredictable.",
+      "comment_count": 98,
+      "terms": [
+        "LLM",
+        "AI agent",
+        "modality",
+        "harness",
+        "deterministic",
+        "lossy knowledge base"
+      ],
+      "entities": [
+        "Rich Hickey",
+        "Claude",
+        "Ivan Illich",
+        "I. J. Good",
+        "Vernor Vigne",
+        "Baudelaire",
+        "DOS 1.0",
+        "Windows",
+        "G-code"
+      ],
+      "comments": [
+        {
+          "by": "didibus",
+          "text": "I think Rich's comment reply here explains the post: > Commenter: Well, this was a twitter-like controversial clickbait but I will say it anyway. LLM is a tool. To be more specific, it's a lossy knowledge base with a human language for querying and built-in summarization. > Rich Hickey: Agreed. I'm talking about its embodiment in conversational systems purporting to be 'tools' for doing homework…"
+        },
+        {
+          "by": "atleastoptimal",
+          "text": "LLM's exist on a vast gradient of \"toolness -> agent\". Humans exist on that spectrum too. For example, a human isn't a \"tool\", but one serves a similar role as a tool if their job/task is well defined enough. If you're a conductor, you can view the various members of your orchestra as \"tools\" to produce the ideal musical output. Of course they have autonomy, they could choose to not play at all…"
+        },
+        {
+          "by": "YZF",
+          "text": "Is a table saw a tool? It's not deterministic. Every cut is going to be slightly different. It can go \"rogue\" and toss the work piece back at you. It can even kill you or cut your fingers off. Virtually nothing in woodworking is deterministic because wood is not deterministic. Every piece of wood is different. Now that I've nitpicked and feel better ;) ... I'm not quite sure why this matters…"
+        },
+        {
+          "by": "ramoz",
+          "text": "AI is a tool."
+        },
+        {
+          "by": "alecst",
+          "text": "In the 1960s there was recognition of some of the implications of\nhuman intelligence. I. J. Good wrote [10]:\nLet an ultraintelligent machine be defined as a machine\nthat can far surpass all the intellectual activities of any\nany man however clever. Since the design of machines is one of\nthese intellectual activities, an ultraintelligent machine could\ndesign even better machines; there would then…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50061278,
+      "url": "https://openfatigue.ai/",
+      "hn": "https://news.ycombinator.com/item?id=50061278",
+      "title": "OpenFatigue™ – Open is the new closed",
+      "time": 1791832101,
+      "points": 197,
+      "depth": [
+        {
+          "text": "someone made a **satire site** about companies calling things open while keeping the useful bits **closed**",
+          "tier": "simple"
+        },
+        {
+          "text": "The site's mock product requires a **41-page acceptable use policy** before downloading model weights, and it says pull requests can be sent by **fax**. It points readers to the Open Source Initiative’s definition and the **Open Source AI Definition**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 45,
+      "terms": [
+        "open source",
+        "open weights",
+        "acceptable use policy",
+        "pull request"
+      ],
+      "entities": [
+        "OpenFatigue",
+        "OpenChamber",
+        "OpenAI",
+        "Open WebUI",
+        "OpenDoor",
+        "OpenTable",
+        "OpenClaw",
+        "Open Source Initiative",
+        "Open Source AI Definition",
+        "GitHub"
+      ],
+      "comments": [
+        {
+          "by": "bayindirh",
+          "text": "Just today I have thought about how in the olden days \"Open\" meant \"we have a SDK you can buy for exorbitant amount of money to talk with our closed device or software\". You also had to sacrifice half your blood, first and second newborn to be able to sign that NDA required to buy a couple of zip archives, which contained a Frankestein assembly of files, folders and a README.TXT file."
+        },
+        {
+          "by": "srmatto",
+          "text": "I am glad people still take the time to put stuff like this up on the internet."
+        },
+        {
+          "by": "sks_15",
+          "text": "Given the cost of .ai domains, this is a pretty expensive joke."
+        },
+        {
+          "by": "xd1936",
+          "text": "Excellent. Love that the Github link in the footer goes to a private (or non-existent) repo."
+        },
+        {
+          "by": "patcon",
+          "text": "STS Paper: 50 Shades of Open (2016)\nhttps://wiki.p2pfoundation.net/Fifty_Shades_of_Open"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50052638,
+      "url": "https://simonkoeck.com/writeups/google-devsite-flask-session-pickle-rce",
+      "hn": "https://news.ycombinator.com/item?id=50052638",
+      "title": "I Found a $90k Remote Code Execution Vulnerability in Google",
+      "time": 1791790133,
+      "points": 183,
+      "depth": [
+        {
+          "text": "someone found a **cookie flaw** that let them run **code on Google’s servers**",
+          "tier": "simple"
+        },
+        {
+          "text": "Simon Koeck found a Flask session cookie carrying the **OAuth client secret** used to sign it. He forged a session and reached the unsafe pickle.loads call, demonstrating **code execution** across seven Google domains. Google awarded him **$90,000** and later fixed the issue.",
+          "tier": "substance",
+          "data": [
+            [
+              "reward",
+              "$90,000"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say Claude did the work and wrote the post; others argue that using an LLM doesn’t erase the human’s agency.",
+      "comment_count": 94,
+      "terms": [
+        "RCE",
+        "Flask session cookie",
+        "OAuth",
+        "client secret",
+        "pickle",
+        "LLM"
+      ],
+      "entities": [
+        "Google",
+        "Simon Koeck",
+        "Flask",
+        "OAuth",
+        "Claude"
+      ],
+      "comments": [
+        {
+          "by": "dualvariable",
+          "text": "> \"Four things had to change, and they stack:\" When you write your blog post with claude, I start hitting these phrases and then start only skimming and looking for them, and stop reading what you have to write."
+        },
+        {
+          "by": "option_greek",
+          "text": "how does something like this pass code and design reviews. is this code written by ai (the buggy code). Not only was the key that signs the cookie inside the cookie it self but it's using pickle which even model weights are moved away from. I'm a little flabbergasted at the noob nature of this root cause."
+        },
+        {
+          "by": "stonyrubbish",
+          "text": "Do you have any advice for aspiring bug-bounty hunters? Do you have some method for being able to find vulnerabilities like this, or lots of past experience?"
+        },
+        {
+          "by": "Quitschquat",
+          "text": "> code execution across seven Google domains What a bargain"
+        },
+        {
+          "by": "EdwardDiego",
+          "text": "Bold choice using the noun \"I\" repeatedly instead of \"Claude\" - you didn't figure this out, Claude did, and then Claude very obviously wrote the blog post. Oh, maybe that's why \"Claude\" was substituted with \"I\", because Claude wrote this blog post from a first person perspective."
+        }
+      ],
+      "image": "https://simonkoeck.com/og/google-devsite-flask-session-pickle-rce.png"
+    },
+    {
+      "id": 50041765,
+      "url": "https://vcresearch.berkeley.edu/news/using-ai-just-10-minutes-erodes-your-ability-persist-hard-things",
+      "hn": "https://news.ycombinator.com/item?id=50041765",
+      "title": "Using AI for just 10 minutes erodes your ability to persist at hard things",
+      "time": 1791715641,
+      "points": 171,
+      "depth": [
+        {
+          "text": "researchers found people **did worse** at hard tasks once **AI help** was taken away",
+          "tier": "simple"
+        },
+        {
+          "text": "Three online randomized controlled trials involved **1,222 participants**, working on fraction problems or an SAT reading prompt. In the first, the AI group started more accurately, but after researchers removed the tool following 12 problems, the group’s **accuracy fell**; the other two trials showed similar drops in **persistence** and accuracy.",
+          "tier": "substance",
+          "data": [
+            [
+              "AI-use period in the title",
+              "10 minutes"
+            ],
+            [
+              "participants across trials",
+              "1,222"
+            ],
+            [
+              "first trial participants",
+              "354"
+            ],
+            [
+              "second trial participants",
+              "667"
+            ],
+            [
+              "third trial participants",
+              "201"
+            ],
+            [
+              "problems before AI was removed",
+              "12"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: critics say the study mostly measures the short-term effect of suddenly removing AI and needs comparisons with other kinds of help; supporters say AI saves time and lets people tackle bigger, harder work.",
+      "comment_count": 138,
+      "terms": [
+        "randomized controlled trial",
+        "productive struggle",
+        "peer-reviewed",
+        "LLM"
+      ],
+      "entities": [
+        "UC Berkeley",
+        "Brian Christian",
+        "ChatGPT",
+        "UC Berkeley Center for Human-Compatible AI",
+        "Conference on Language Modeling",
+        "AI Assistance Reduces Persistence and Hurts Independent Performance"
+      ],
+      "comments": [
+        {
+          "by": "rahimnathwani",
+          "text": "The article title is not supported by the evidence presented in the paper ( https://arxiv.org/pdf/2604.04721 ). The evidence for reduced persistence is kinda weak. The strongest experimental result in the paper is: if people use AI to help solve a series of problems, and then the AI is suddenly taken away, they perform worse on subsequent problems than people who hadn't been using AI for the…"
+        },
+        {
+          "by": "ram1500natrluvr",
+          "text": "What do people do for search results nowadays? That's the one area where I find my ability to persist declining. I used to be able to use ddg and/or google and find quality results fairly reliably. Now, unless I already know the specific site that I want to search for, the results are filled with garbage. I get frustrated after a few minutes of going through garbage LLM-generated sites, and reach…"
+        },
+        {
+          "by": "tarkin2",
+          "text": "This also happened with the introduction of TV. https://www.stuartmcmillen.com/comic/town-without-television... And the IQs of those born after 1975 via the reverse Flynn Affect, those who had these devices of consumption and easy answers such as TV, and later Social Media, AI, etc has been decreasing. I can only imagine a further and speedier decline will happen, and is happening."
+        },
+        {
+          "by": "peteridah",
+          "text": "This has not been true in my experience. The bar of what is possible has been moved dramatically. So my daily quest is not to continue to achieve our old objectives, but rethink worthy objectives for our new tools."
+        },
+        {
+          "by": "h4kunamata",
+          "text": "Disagree. I run Proxmox LXC containers at home managed via Ansible. I used Claude to assist me getting 4 services I was not familiar with working, draft the configuration, the firewall rule so all the traffic goes via a VPN and not my home network. 2 days and got everything working. It took away what would have taken me a week reading posts after posts.\nKnow that it is a tool to assist you and…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50060500,
+      "url": "https://micahflee.com/just-say-no-to-openai-and-anthropic/",
+      "hn": "https://news.ycombinator.com/item?id=50060500",
+      "title": "Just say no to OpenAI and Anthropic",
+      "time": 1791829049,
+      "points": 154,
+      "depth": [
+        {
+          "text": "someone argues you can leave **OpenAI and Anthropic** for **more private models with fewer restrictions**",
+          "tier": "simple"
+        },
+        {
+          "text": "The writer says open-weight models are **about four months behind** proprietary ones, but says **GLM-5.3** feels on par with Claude Opus 5.5 for software engineering. They use **Tinfoil** for private inference and OpenCode Go for public work, and warn that Z.ai’s coding tool ZCode uploaded local source-code repos to Alibaba Cloud without consent.",
+          "tier": "substance",
+          "data": [
+            [
+              "claimed model gap",
+              "about four months"
+            ],
+            [
+              "Maple Pro plan",
+              "$20/month"
+            ],
+            [
+              "GLM-5.3 input tokens",
+              "$1.80 per 1M input tokens"
+            ],
+            [
+              "GLM-5.3 cached tokens",
+              "$0.80 per 1M cached tokens"
+            ],
+            [
+              "GLM-5.3 output tokens",
+              "$5.75 per 1M output tokens"
+            ],
+            [
+              "OpenCode Go",
+              "$10/month for more than $10 worth of credits"
+            ],
+            [
+              "Mac Studio RAM",
+              "512GB"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters say avoiding Big AI and its guardrails matters; skeptics call the article’s rhetoric hyperbolic, question its model comparison, and ask why its alternative providers should be trusted.",
+      "comment_count": 144,
+      "terms": [
+        "LLM",
+        "open-weight model",
+        "inference",
+        "guardrails",
+        "secure enclave",
+        "remote attestation",
+        "token",
+        "API",
+        "VRAM"
+      ],
+      "entities": [
+        "OpenAI",
+        "Anthropic",
+        "End Times Fascism and the Fight for the Living World",
+        "Naomi Klein",
+        "Astra Taylor",
+        "Viktor Forgacs",
+        "ChatGPT",
+        "Claude",
+        "Claude Opus 5.5",
+        "Claude Opus 4.8",
+        "Claude Code",
+        "Tinfoil",
+        "Maple AI",
+        "GLM-5.3",
+        "GLM-5.3-Flash",
+        "Trusted Access for Cyber",
+        "Cyber Verification Program",
+        "Sam Altman",
+        "Dario Amodei",
+        "Trump Administration",
+        "Mac Studio",
+        "Z.ai",
+        "ZCode",
+        "Alibaba Cloud",
+        "DeepSeek",
+        "Qwen",
+        "Kimi",
+        "Mistral",
+        "Mistral Large 4",
+        "Le Chonk",
+        "OpenCode Go",
+        "OpenCode",
+        "Google Vertex",
+        "Amazon Bedrock",
+        "OpenRouter",
+        "GPT-6-Luna",
+        "PS4/5",
+        "Muse",
+        "Zuckerberg",
+        "Grok"
+      ],
+      "comments": [
+        {
+          "by": "stillpointlab",
+          "text": "> American frontier labs are run by unhinged lunatics who genuinely believe they're creating the Machine God, that they're fine with burning down the world to bring about AGI, and that they believe with religious fervor that they're the only ones smart enough to safely control it I like hyperbole as much as the next guy. And I'm cynical by nature. But this just seems like a wildly pessimistic…"
+        },
+        {
+          "by": "povik",
+          "text": "> ChatGPT and Claude will never be private > These companies only offer closed versions of their powerful models (despite the word \"open\" in \"OpenAI\"). You pay them for chat and/or API access, and they are allowed to look at everything you do. How should I reconcile this claim with 'Google Vertex' and 'Amazon Bedrock' being offered as providers with zero data retention on…"
+        },
+        {
+          "by": "finnjohnsen2",
+          "text": "I switched to GLM on 5.2 and I am happy to be off the two evil frontier providers. But now I have two new issues: 1. I have fomo from not being face-in the bleeding edge of things. 2. I am ambivalent about z.ai. China -based company is problematic, but they should get my money since they do good for the world. Switching to Mistral for GLM makes my problem inverse since the money doesnt go exactly…"
+        },
+        {
+          "by": "jrflo",
+          "text": "If you don't trust OpenAI and Anthropic to follow their own policies, how do you decide what companies to trust? Vibes?"
+        },
+        {
+          "by": "BeetleB",
+          "text": "If you don't trust OpenAI and Anthropic not to abide by their own Privacy Policy, you really should not trust OpenCode Go. The latter (last time I checked) is very opaque. Why don't they reveal who the backend providers are?"
+        }
+      ],
+      "image": "https://images.unsplash.com/photo-1599595344070-c456bea6ee98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDZ8fG9wZW58ZW58MHx8fHwxNzkxNzU0MTY2fDA&ixlib=rb-4.1.0&q=80&w=2000"
+    },
+    {
+      "id": 50057956,
+      "url": "https://uk.finance.yahoo.com/news/french-supermarket-chains-cyberattack-forced-115141288.html",
+      "hn": "https://news.ycombinator.com/item?id=50057956",
+      "title": "French supermarkets suffer fridge shutdown after 'unprecedented' cyberattack",
+      "time": 1791819381,
+      "points": 154,
+      "depth": [
+        {
+          "text": "someone hacked supermarket **fridges**, forced them to **defrost**, and spoiled fresh and frozen food",
+          "tier": "simple"
+        },
+        {
+          "text": "At least 300 shops of Intermarche or its Netto brand, over 100 Cooperative U outlets and several E. Leclerc stores were targeted. Danfoss said most affected equipment was **legacy** and no longer received **software or security updates**; a version of its AK-SM800 system also used outdated firmware.",
+          "tier": "substance",
+          "data": [
+            [
+              "Intermarche or Netto shops targeted",
+              "At least 300"
+            ],
+            [
+              "Cooperative U outlets targeted",
+              "over 100"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 2,
+      "terms": [
+        "forced defrosting",
+        "legacy products",
+        "firmware",
+        "refrigeration control systems"
+      ],
+      "entities": [
+        "Intermarche",
+        "Netto",
+        "Cooperative U",
+        "E. Leclerc",
+        "Danfoss",
+        "AK-SM800",
+        "AK-SC355",
+        "AFP",
+        "BFM TV",
+        "Christophe Hansen",
+        "Sebastien Lecornu",
+        "Dominique Schelcher",
+        "Emmanuel Macron",
+        "Almond",
+        "Antoine Hautin",
+        "Carrefour Market",
+        "Monoprix",
+        "EU",
+        "X"
+      ],
+      "comments": [
+        {
+          "by": "ChrisArchitect",
+          "text": "[dupe] https://news.ycombinator.com/item?id=50055304"
+        }
+      ],
+      "image": "https://s.yimg.com/lo/mysterio/api/9e0ce217f1d6cfb886a9835c1b927abd059ed36a7641a024edbd908cac42bada/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fafp.co.uk%2F49fecac01ece0cd6f086bfbcdae568b5.jpg"
+    },
+    {
+      "id": 50055375,
+      "url": "https://www.githubstatus.com/incidents/93njd414rpbx",
+      "hn": "https://news.ycombinator.com/item?id=50055375",
+      "title": "Incident with Actions, Pull Requests and Issues",
+      "time": 1791807831,
+      "points": 154,
+      "depth": [
+        {
+          "text": "GitHub had trouble with **Actions, issues, and pull requests**, and **notifications** were delayed before recovery",
+          "tier": "simple"
+        },
+        {
+          "text": "Users reported trouble **loading the Actions tab**, queueing runs, creating or updating issues, and requesting PR reviews. GitHub applied mitigations, but **web and email notifications** stayed delayed while it worked through a backlog; the incident was later marked resolved.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some see growth as an understandable strain; others criticize GitHub Actions and prefer self-hosted or alternative CI.",
+      "comment_count": 138,
+      "terms": [
+        "GitHub Actions",
+        "CI/CD",
+        "PR",
+        "API"
+      ],
+      "entities": [
+        "GitHub",
+        "GitHub Actions"
+      ],
+      "comments": [
+        {
+          "by": "bearjaws",
+          "text": "People want to dunk on GitHub, but honestly going from 50M of <thing> per day to 2B <thing> per day will break pretty much any system anyone has ever built here. Even if it was over the span of ~8 months, many things will fall over and then as you patch those the next domino will fall. I feel bad for the team, but will be great growth opportunities for all."
+        },
+        {
+          "by": "orsenthil",
+          "text": "Yeah, only yesterday I let claude build and deploy me a end to end project that will flicker my lifx light-bulb when commits to any open source project lands. In the morning I saw it stopped around 11 pm PST yesterday. I was wondering why and I was wondering, how easy it is do a complete working project like this in minutes and what is stopping people to do 100s of such project per day. Github…"
+        },
+        {
+          "by": "mglvsky",
+          "text": "Why they didn't prompt something like \"please make whole system more reliable, don't make mistakes\"?"
+        },
+        {
+          "by": "zanderwohl",
+          "text": "I have not understood, and still do not understand, why everyone locks themselves into github's CI/CD pipeline. It's not hard to set up checks that run on a generic docker setup. I have a home server that I use for all my builds and checks, with a github actions config to run manually if I can't VPN into my home network. Besides being more reliable, it's just faster to run on a machine you…"
+        },
+        {
+          "by": "loveparade",
+          "text": "I think it would be more efficient to post on HN when there is a day without GitHub issues."
+        }
+      ],
+      "image": "https://dka575ofm4ao0.cloudfront.net/pages-twitter_logos/original/36420/GitHub-Mark-120px-plus.png"
+    }
+  ],
+  "glossary": {
+    "agentic tasks": "Work where an AI can take steps toward a goal, not just answer a question.",
+    "Active Memory": "Meta's name for carrying useful details about you between conversations and bringing them back when a task needs them.",
+    "Active Focus": "Meta's name for an AI sticking with a hard goal, trying other approaches, and adjusting when things change.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "benchmaxxing": "Focusing on doing well on tests, sometimes in ways that may not translate to useful real-world ability.",
+    "CBRN": "Chemical, biological, radiological, and nuclear: hazards involving dangerous substances or weapons.",
+    "daemon": "A program that runs in the background and handles a task without being started each time.",
+    "opt-in": "A feature you choose to turn on, rather than one enabled by default.",
+    "package manager": "A tool that installs software and can keep it updated for you.",
+    "environment variables": "Settings passed to a program when it starts, which can change how it behaves.",
+    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
+    "case controller": "A computer that manages the settings of a supermarket's refrigerated display case.",
+    "Demand Response": "A way for utility companies to ask customers to use less electricity when demand is high.",
+    "VPN": "Virtual private network: a service that sends your internet traffic through another computer, often to protect it or make it appear to come from somewhere else.",
+    "ransomware": "Malicious software that blocks access to files or systems and demands money to restore it.",
+    "EOS": "End of Support: when a maker stops providing help or updates for a product.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "redlining": "Marking proposed edits to a contract so the other side can review them.",
+    "human in the loop": "A person checks an AI’s recommendation and can change it before it affects someone.",
+    "open-weight model": "A model whose trained settings are shared so other people can use them.",
+    "hallucination": "When an AI gives made-up or incorrect information as if it were true.",
+    "pull request": "A proposal to add your code changes to a shared project, usually asking others to review them first.",
+    "code review": "A check where people read proposed code changes and decide whether they look right.",
+    "agentic coding": "Having an AI handle coding tasks by making changes and checking its work with less step-by-step direction.",
+    "issue resolution rate": "How often tracked work items, like requested changes or larger features, get marked resolved.",
+    "EV": "Electric vehicle: a car that runs on electricity instead of petrol or diesel.",
+    "concept car": "A car shown to present an idea or design, which may not be ready to sell.",
+    "powertrain": "The parts that move a car, such as its engine or electric motor.",
+    "infotainment": "A car's screen system for things like music, maps, and other features.",
+    "SDR": "Software-defined radio: a radio that uses software to handle signals instead of being limited to one fixed radio function.",
+    "Msps": "Million samples per second: how many times each second the radio takes a reading.",
+    "IQ": "Paired numbers used to represent a radio signal so software can work with it.",
+    "FFT": "Fast Fourier transform: a way to find which repeating frequencies make up a signal.",
+    "10 GbE": "10 Gigabit Ethernet: a fast wired network connection that can carry lots of captured data to a computer.",
+    "non-protein-coding": "A stretch of DNA that doesn't carry instructions for making a protein.",
+    "RNA": "A molecule cells use to carry instructions for making proteins.",
+    "Arhgap36": "The gene the researchers linked to orange fur.",
+    "deletion": "A stretch of DNA that's missing.",
+    "X chromosome": "A bundle of DNA cells inherit; the article says female cats have two X copies and males have one.",
+    "melanocytes": "Skin cells that make pigment, which gives fur its color.",
+    "eumelanin": "The dark-brown-to-black pigment named in the article.",
+    "pheomelanin": "The reddish-to-yellow pigment named in the article.",
+    "cognitive work": "Work that mainly uses thinking, like writing, judging, or solving problems.",
+    "next token prediction": "A way an AI writes by guessing what piece of text should come next.",
+    "post-scarcity": "A hoped-for future where people can get what they need without competing for scarce goods or work.",
+    "SGI": "Silicon Graphics, Inc.: a company known for computers and tools used to create graphics.",
+    "emulator": "A program that imitates another service so you can try your software without using the real one.",
+    "vertices": "The points that make up a 3D shape; moving them can change the shape itself.",
+    "linear algebra": "A kind of math used to describe how shapes move and turn.",
+    "tank controls": "A control style where directions move the character based on which way they face, not where the camera points.",
+    "compiler": "A tool that turns code you write into a program a computer can run.",
+    "feedback loop": "The time between changing code and seeing whether it works.",
+    "anthropomorphic": "Describing software as if it had human feelings or motives.",
+    "nondeterministic": "Able to give different results even when asked the same thing twice.",
+    "context window": "The amount of text and information an AI can take into account at one time.",
+    "AI agent": "An autonomous computer program that can carry out tasks.",
+    "modality": "The way a task is done or experienced.",
+    "harness": "The surrounding code that gives an AI agent tools and a place to work, and checks what it does.",
+    "deterministic": "Something that gives the same result when it gets the same input.",
+    "lossy knowledge base": "A store of information that can answer questions but may leave out or blur details.",
+    "open source": "Software whose code is shared so other people can inspect, run, or change it.",
+    "open weights": "The model's learned settings are available for people to download and run themselves.",
+    "acceptable use policy": "A set of rules saying what you are allowed to do with a product.",
+    "RCE": "Remote Code Execution: a flaw that lets an attacker make a computer run their commands from somewhere else.",
+    "Flask session cookie": "A small note a Flask website stores in your browser so it can remember details about your visit.",
+    "OAuth": "A way to let an app access parts of an account without being given the password.",
+    "client secret": "A private credential an app uses to prove its identity to another service.",
+    "pickle": "A Python feature that saves a bundle of data and rebuilds it later; rebuilding an attacker-made bundle can run code.",
+    "randomized controlled trial": "A study that puts people into different groups by chance, then compares what happens.",
+    "productive struggle": "The effort of working through a hard task yourself instead of getting the answer right away.",
+    "peer-reviewed": "Checked by other researchers before being published.",
+    "inference": "When an AI uses what it learned to answer or act, instead of being trained.",
+    "guardrails": "Instructions that tell an AI how it should respond.",
+    "secure enclave": "A protected part of a computer meant to keep data and calculations hidden from the rest of the system.",
+    "remote attestation": "A check that lets you verify a remote computer is running a particular protected setup.",
+    "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
+    "VRAM": "The memory inside a graphics card that holds information the AI needs while running.",
+    "forced defrosting": "Making a fridge warm up so ice inside melts; in this story, that spoiled stored food.",
+    "legacy products": "Older equipment or software that is still in use; the products in this story no longer received software or security updates.",
+    "firmware": "The built-in software that tells a device's hardware how to work.",
+    "refrigeration control systems": "Equipment that controls how cold a fridge gets and when it runs.",
+    "GitHub Actions": "GitHub’s tool for running automatic tasks when things happen in a repository.",
+    "CI/CD": "Continuous Integration and Continuous Delivery or Deployment: ways to automatically check code changes and get software ready to release.",
+    "PR": "Pull request: a proposed code change shared so others can review it."
+  }
+}
