@@ -2,6 +2,1253 @@
   "date": "2026-10-13",
   "cards": [
     {
+      "id": 50073879,
+      "url": "https://deepmind.google/models/gemini/",
+      "hn": "https://news.ycombinator.com/item?id=50073879",
+      "title": "Gemini 4 Argon",
+      "time": 1791907396,
+      "points": 873,
+      "depth": [
+        {
+          "text": "people praise its **natural writing**, while others are stuck in Google's **confusing rollout**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter quoted an **introductory price** of $2 per million input tokens and $10 per million output tokens, then asked what it would cost after the intro period. Others praised its **natural prose** and tweakable simulations, while one user said the try-it page **defaulted to Gemini 3.6** and offered no way to try Gemini 4 without upgrading.",
+          "tier": "substance",
+          "data": [
+            [
+              "input tokens",
+              "$2 per million"
+            ],
+            [
+              "output tokens",
+              "$10 per million"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 686,
+      "terms": [
+        "token",
+        "API"
+      ],
+      "entities": [
+        "Google",
+        "Gemini 4 Argon",
+        "Gemini 3.6"
+      ],
+      "comments": [
+        {
+          "by": "svara",
+          "text": "I haven't tried it for coding yet, but I ran a couple of my recent curiosity driven queries from Claude (mostly used Fable and Opus 5.5) through it. This is a clear step change, I'm genuinely amazed. Its answers are to-the-point, logically structured, clearly written. Like a really well made mini essay on your question. It also really likes to build little simulations / models that you can tweak…"
+        },
+        {
+          "by": "vidarh",
+          "text": "Classic Google: Clicks the \"Try in Gemini\" button from the Gemini 4 page, gets a page that defaults to Gemini 3.6, with no option to try Gemini 4 without upgrading. If they don't want to make it available even for small tests for free, that's fine, but then don't put a button suggesting I can try it without qualifying it... EDIT: It's actually worse: The page then shows \"Look what you can do with…"
+        },
+        {
+          "by": "postalcoder",
+          "text": "I'm using this model via API. I am most excited about its ability to write the english language (or any language). My least favorite trend on twitter has been people posting 2D illustrations/3D renders as a proxy for model capability. Well-written prose is far less likely to go viral but far outstrips the importance rendering a fantasy world in one shot. I've been trying it out via the API and…"
+        },
+        {
+          "by": "I_am_tiberius",
+          "text": "I just created a Google account, which was a hassle. I tried to find an app and found AI Studio, but I’m not sure what that is. Then I found Antigravity, which apparently is Google’s alternative to Codex, and I installed it. Then I tried to buy the small Gemini AI Ultra package, but it didn’t let me pay. It accepted neither my credit card nor my PayPal account. It’s crazy how bad the Google…"
+        },
+        {
+          "by": "damsta",
+          "text": "> The model launches today at an introductory price of $2 per million input tokens and $10 per million output tokens (with cached input tokens at 95% off). Couldn't you just say what the price will be after the introductory period and when it'll take effect? Do they have some SKILL.md for these blog posts that requires the most important information to always be buried ten levels deep and hidden…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50073633,
+      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "hn": "https://news.ycombinator.com/item?id=50073633",
+      "title": "Redesigning source control at Anthropic",
+      "time": 1791906596,
+      "points": 447,
+      "depth": [
+        {
+          "text": "Anthropic built its own **source control system** as **code merges** made the old setup a bottleneck",
+          "tier": "simple"
+        },
+        {
+          "text": "Anthropic built **Scion** and moved its monorepo off git in five months, as daily merges climbed from around 2,500 in May to over **30,000** in September. Its infrastructure footprint is now **200x smaller** than the old git mirroring setup by CPU and memory, and checkouts take seconds rather than minutes.",
+          "tier": "substance",
+          "data": [
+            [
+              "daily merges, May 2026",
+              "around 2,500"
+            ],
+            [
+              "daily merges, September",
+              "over 30,000"
+            ],
+            [
+              "migration time",
+              "five months"
+            ],
+            [
+              "infrastructure footprint vs. git mirroring",
+              "200x smaller"
+            ],
+            [
+              "CI CPU capacity win",
+              "25%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some ask whether agent-driven code churn makes traditional source control—or a monorepo—worth keeping; others see Scion as a practical fix for Anthropic’s unusual scaling load.",
+      "comment_count": 446,
+      "terms": [
+        "monorepo",
+        "version control system",
+        "CI",
+        "sparse checkout",
+        "changeset",
+        "horizontal scaling",
+        "AI agent"
+      ],
+      "entities": [
+        "Anthropic",
+        "Scion",
+        "Git",
+        "Claude",
+        "Antique",
+        "Claude Mythos Preview",
+        "Claude Tag",
+        "Spanner",
+        "GitHub",
+        "GitLab",
+        "Google",
+        "Meta",
+        "Piper",
+        "Sapling"
+      ],
+      "comments": [
+        {
+          "by": "frangonf",
+          "text": "Excuse me for throwing up this stupid idea, but if code changes per unit of time keep growing at this rate and are not slowing down with infinite merging demand, it seems that this repo will be in a constant state of continuous change and we constantly roll forward with automated code and obviously no direct human supervision, then why even have source control? Why not just let software be fluid…"
+        },
+        {
+          "by": "netburst",
+          "text": "What is are the benefits of supporting extremely high churn rate in version control? What is the code doing ? What problems are being solved? Are changing requirements the driving factor, and if so, why are requirement changes accelerating? > ..., the latent demand for merging code is practically infinite, and every bottleneck we remove immediately leads to a further increase in the amount of…"
+        },
+        {
+          "by": "mixedbit",
+          "text": "I don't get one thing, if agents are so great at developing software at massive scale, why wouldn't Anthropic, instead of just selling tokens to other companies to use its agents, let those agents develop highly profitable services for Anthropic to support their IPO valuation or not require raising money at all? For example, a competitor to Google search."
+        },
+        {
+          "by": "rcleveng",
+          "text": "My first real job was at Oracle. At the time Oracle started to write their own source control system (and move off of clearcase, which was a very reasonable thing to do). The guy who ran that project called it his \"$LASTNAME law\" that every large company will at some point write their own source control system. I laughed. About a year later I went to Google, and within a couple of years Google…"
+        },
+        {
+          "by": "zmmmmm",
+          "text": "> As our monorepo grows, it increasingly doesn’t fit that design space. The history of our main branch alone is almost 100 GB The first thing that hits me is, did you consider not going all in on a monorepo? I know it has been the trend in general, but it seems a bit of a red flag when you go from \"let's have a monorepo it will make merging easier\" to \"let's redesign version control because…"
+        }
+      ],
+      "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/d344b849251502fade67ad16f09bb86fa6f42363-500x263.png"
+    },
+    {
+      "id": 50054092,
+      "url": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
+      "hn": "https://news.ycombinator.com/item?id=50054092",
+      "title": "Ledger confirms spy chip implant behind wallet crypto thefts",
+      "time": 1791799777,
+      "points": 332,
+      "depth": [
+        {
+          "text": "Ledger confirms a **spy chip** was behind **wallet crypto thefts**",
+          "tier": "simple"
+        }
+      ],
+      "camps": null,
+      "comment_count": 284,
+      "terms": [
+        "eSIM",
+        "CPU",
+        "OCR",
+        "hardware wallet",
+        "secure element"
+      ],
+      "entities": [
+        "Ledger"
+      ],
+      "comments": [
+        {
+          "by": "TacticalCoder",
+          "text": "No matter whether you like or hate or don't care about cryptocurrencies, this is incredible stuff... Now basically: every single attack that's been described as \"theoretical\" or \"far-fetched\" or \"only existing in the mind of a paranoid person\" did actually happen. We're talking here about a tiny eSIM implant and a little CPU doing OCR on the fonts appearing on the hardware wallet's screen to read…"
+        },
+        {
+          "by": "cowlevel",
+          "text": "Not mentioned in article: MediaMarkt, the German equivalent of Best Buy, was selling these compromised devices on store shelves in every city in Germany."
+        },
+        {
+          "by": "megous",
+          "text": "The technique is so coool. I mean taping the screen output on the way to the display to get around having to hack the secure element. :)"
+        },
+        {
+          "by": "redox99",
+          "text": "I never understood why people considered specialized hardware more secure than general purpose hardware. A hardware wallet is way way way more likely to be backdoored[1] than an off the shelve Intel or AMD CPU. [1] by people wanting to steal your crypto (unlike the NSA or Intel)"
+        },
+        {
+          "by": "jacquesm",
+          "text": "The link you want: https://grandideastudio.com/portfolio/security/ledger-hardwa... They should have posted the weight with and without the device in it. Also: never leave empty space in a hardware key, pot the whole thing in\nepoxy."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50072913,
+      "url": "https://blog.thunderbird.net/2026/10/thunderbird-for-ios-a-first-look-at-the-native-iphone-email-app-in-development/",
+      "hn": "https://news.ycombinator.com/item?id=50072913",
+      "title": "Thunderbird for iOS",
+      "time": 1791904057,
+      "points": 292,
+      "depth": [
+        {
+          "text": "Thunderbird is building a **native iPhone email app** from **scratch**, and it’s still in development",
+          "tier": "simple"
+        },
+        {
+          "text": "Planned features include **account setup** for services like Google and Microsoft, **background syncing** that keeps inboxes up to date while respecting battery life, and an editor with formatting tools. The team hopes to have a first version ready for **community testing** in the next few months.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: fans are eager for an iOS version, while skeptics say the Mail app that comes with iOS is enough or question what Thunderbird adds.",
+      "comment_count": 118,
+      "terms": [
+        "native app",
+        "background sync",
+        "IMAP",
+        "OAuth",
+        "SwiftUI",
+        "JMAP"
+      ],
+      "entities": [
+        "Thunderbird",
+        "Mozilla",
+        "iOS",
+        "iPhone",
+        "Google",
+        "Microsoft",
+        "Apple Mail",
+        "IMAP",
+        "OAuth",
+        "Swift",
+        "SwiftUI",
+        "Java",
+        "HTML",
+        "GitHub",
+        "TestFlight",
+        "Proton",
+        "K9",
+        "JMAP",
+        "Fastmail",
+        "Android",
+        "Linux",
+        "Windows",
+        "macOS"
+      ],
+      "comments": [
+        {
+          "by": "drnick1",
+          "text": "I have been using K9 for a long time on Android. No complaints. I guess most Apple users will simply use the default email client, which works well and is probably better integrated and has a better UI than Thunderbird. On Linux desktop, Thunderbird is still the best all around email/CardDAV/CalDAV client it seems, despite being unreasonably heavy."
+        },
+        {
+          "by": "crossroadsguy",
+          "text": "I am almost certain that the only reason (feature) I have Thunderbird desktop installed has no place in this iOS app – an editable FROM field. I am pretty sure of that. Ah, just saw the coolest thing - an epic subheading: > Designed for growth Love it. There's no stopping this app now. Godspeed, Mozila/Thunderbird! Grow is the new word."
+        },
+        {
+          "by": "josh_carterPDX",
+          "text": "When I first saw the link, I thought, “Oh cool! A new platform using the Thunderbird name!” Then I realized it was Mozilla’s app. And just like that, the excitement was gone. I try not to bad-mouth products, but Thunderbird and I did NOT get along. Clunky integrations, a painful Gmail connection, and basic functionality issues made it one of the worst email clients I’ve ever used. Of course, I’m…"
+        },
+        {
+          "by": "sylens",
+          "text": "If this supports JMAP (I hope so since its aimed to be a Thundermail client) then I'll give this a whirl with my Fastmail account"
+        },
+        {
+          "by": "HumblyTossed",
+          "text": "The Mail app that comes with iOS is plenty."
+        }
+      ],
+      "image": "https://blog.thunderbird.net/files/2026/10/Cover2-scaled.jpg"
+    },
+    {
+      "id": 50068036,
+      "url": "https://blog.character.ai/an-update-on-character-ai/",
+      "hn": "https://news.ycombinator.com/item?id=50068036",
+      "title": "Character.ai has initiated voluntary Chapter 11 bankruptcy",
+      "time": 1791876514,
+      "points": 263,
+      "depth": [
+        {
+          "text": "Character.ai has initiated voluntary **Chapter 11 bankruptcy**, and commenters are wondering what happens to its **assets**",
+          "tier": "simple"
+        },
+        {
+          "text": "Comments point to **Google's 2024 hiring** of much of Character.ai's talent; a linked headline says it agreed to sell **some assets for $20M**.",
+          "tier": "substance",
+          "data": [
+            [
+              "some assets",
+              "$20M"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: critics call its business model predatory and harmful; others say it was a popular tool and was treated unfairly.",
+      "comment_count": 260,
+      "terms": [
+        "Chapter 11",
+        "antitrust regulation"
+      ],
+      "entities": [
+        "Character.ai",
+        "Google",
+        "Disney",
+        "Noam Shazeer",
+        "Daniel De Freitas",
+        "Karandeep Anand"
+      ],
+      "comments": [
+        {
+          "by": "fra",
+          "text": "For all intents and purposes Character.ai was acquired in August 2024, and this is just the mess leftover from their run around antitrust regulation. The company filing for chapter 11 today is shell that was left after Google \"hi-quired\" (the opposite of acqui-hired) the founding team. The shareholders got paid ($2.7B from Google), the founding team moved on, and what's left is the corporate…"
+        },
+        {
+          "by": "mentalgear",
+          "text": "character.ai - the tobacco company AI equivalent - who's business model it was to lull users in with highly-unstable AI 'friends', which was a bad idea from the start as most normal thinking people would assume, yet predatory VCs funded that shitshow and that far too long, and many scandals and even suicides followed from it that could have been avoided. Companies and their executives must be…"
+        },
+        {
+          "by": "andsoitis",
+          "text": "”Character.ai’s CEO Karandeep Anand is joining Disney in a newly created role as Senior Executive Vice President and Chief Technology Officer. Karan expects to be joined by members of Character’s technical team to build on Disney’s impressive technology capabilities to help connect fans worldwide with its beloved stories and characters in new and innovative ways.”…"
+        },
+        {
+          "by": "drewbitt",
+          "text": "2 years in, the founders and 30 researchers took Google's $2.7b and left. Then they had to ban kids which was probably most of their userbase. Yet they were still putting $1m/mo on the corporate cards with 86 full time bay area employees on\n~$278k average base, and almost $100k owed to DoorDash. lol"
+        },
+        {
+          "by": "schleck8",
+          "text": "> Google spent over $2 billion to hire away much of the company’s talent, including co-founders Noam Shazeer and Daniel De Freitas, in 2024."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50071310,
+      "url": "https://www.apple.com/newsroom/2026/10/apple-unveils-the-new-apple-tv-4k/",
+      "hn": "https://news.ycombinator.com/item?id=50071310",
+      "title": "New Apple TV 4K",
+      "time": 1791897695,
+      "points": 260,
+      "depth": [
+        {
+          "text": "Apple's new **Apple TV** adds **hands-free Siri**, faster performance, and **HomePod surround sound**",
+          "tier": "simple"
+        },
+        {
+          "text": "The **A19 chip** delivers up to **50 percent faster CPU** performance and up to 2x faster GPU performance than the previous generation. It also supports four-speaker surround sound with HomePod mini 2; the U.S. price is **$299**.",
+          "tier": "substance",
+          "data": [
+            [
+              "CPU performance",
+              "up to 50 percent faster"
+            ],
+            [
+              "GPU performance",
+              "up to 2x faster"
+            ],
+            [
+              "far-field microphones",
+              "three"
+            ],
+            [
+              "surround setup",
+              "four speakers"
+            ],
+            [
+              "U.S. price",
+              "$299"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say $300 is too much for a streaming box; one commenter says it could be a decent price if you use all its features.",
+      "comment_count": 507,
+      "terms": [
+        "CPU",
+        "GPU",
+        "far-field microphones",
+        "AV1 decoder",
+        "surround sound"
+      ],
+      "entities": [
+        "Apple",
+        "Apple TV 4K",
+        "Siri AI",
+        "Apple Intelligence",
+        "A19",
+        "HomePod mini 2",
+        "HomePod"
+      ],
+      "comments": [
+        {
+          "by": "Brendinooo",
+          "text": "I'm a little surprised at the price (especially when their newly-announced HomeView is the same price, and it has a screen!). I love this product: it's the one box I can (reasonably) trust to not be mining my viewing habits for data. I have two older ones and was looking to get something that supported 4K but waited for this to come out. $300 might be a decent price if you use it for all of the…"
+        },
+        {
+          "by": "newscracker",
+          "text": "Too pricey, as many others have noted. I was waiting for this model to consider upgrading from the previous generation, but I can’t justify it at this price. I guess this is why recently Apple included the Apple TV service within the lowest/basic iCloud+ plan in most countries. There’s no way to justify the cost of this new device plus the high cost of the Apple TV content subscription, which has…"
+        },
+        {
+          "by": "thewonderfulmrp",
+          "text": "300$ yikes. I'm amazed. And this thing can't even do 120 fps. :-( Did the old one also not have Dolby vision/HDR10/Atmos? What is this cinematic stuff? What are we missing here? Why would I need CPU/GPU performance on an Apple TV? I'm genuinely confused. Is it to play video games? If I want to play video games, I can pay a bit more and get a used playstation I suppose. I genuinely don't…"
+        },
+        {
+          "by": "crakhamster01",
+          "text": "I had been holding off on buying an Apple TV in anticipation of this launch, and am a bit underwhelmed. $300 just seems crazy for what is, or I guess, what it's coming from. Does anyone know why having 128GB of storage is useful? Just for installing more apps? I've had Google TV devices in the past, and don't think I ever came close to the 32GB storage limit. Maybe there's a gap I'm missing..."
+        },
+        {
+          "by": "petepete",
+          "text": "I bought an Apple TV 4K a few months ago (Google TV's ads were too much) and there's nothing here that might even slightly tempt me to upgrade. * Siri - no thanks * Far field microphones - no thanks * Faster performance - unnecessary for me (I watch TV, movies and YouTube - it's never not smooth) * Home theatre with homepods - I already have Sonos surround * Even smarter home hub - I have a…"
+        }
+      ],
+      "image": "https://www.apple.com/newsroom/images/2026/10/apple-unveils-the-new-apple-tv-4k/tile/Apple-TV-4K-261013-lp.jpg.og.jpg?202610131304"
+    },
+    {
+      "id": 50078141,
+      "url": "https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/",
+      "hn": "https://news.ycombinator.com/item?id=50078141",
+      "title": "OpenAI engineer arrested in bugging of executive conference room",
+      "time": 1791923035,
+      "points": 273,
+      "depth": [
+        {
+          "text": "an **OpenAI engineer** was arrested over **bugging** an executive conference room",
+          "tier": "simple"
+        },
+        {
+          "text": "**Abdulrahman Alfozan, 35,** was charged with using or attempting to use a device to intercept oral communications. Prosecutors said an **account tied to his spouse** asked about building, installing, obscuring and remotely accessing a recording device, then about the **specific device later found**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters flag a claimed link to the son of a senior Saudi intelligence official; others say the public details don't add up to sophisticated industrial espionage.",
+      "comment_count": 246,
+      "terms": [
+        "MAC address",
+        "industrial espionage",
+        "RSUs",
+        "ESP32",
+        "Faraday cage"
+      ],
+      "entities": [
+        "OpenAI",
+        "Abdulrahman Alfozan",
+        "Meta",
+        "ChatGPT",
+        "Claude",
+        "Seeed Studio",
+        "ESP32",
+        "Scott Schelble",
+        "FBI"
+      ],
+      "comments": [
+        {
+          "by": "dustfinger",
+          "text": "I am a bit confused by Figure 3. Do they really have a surveillance camera angled just right to capture a photo of someone between the monitor and the wall that supports it? Here is a direct link to Figure 3: https://assets.sfstandard.com/image/994911177489/image_bfl33..."
+        },
+        {
+          "by": "simonw",
+          "text": "These are not very smart spies: > A chatbot account tied to Alfozan’s spouse, which shared identifiers with his own account, submitted prompts between Sept. 24 and Sept. 30 about building, installing, obscuring, and remotely accessing a recording device, prosecutors said. Queries included how to “build a continuous audio recorder” and “encrypt the SD card,” prosecutors claimed. On Sept. 27 and…"
+        },
+        {
+          "by": "simonw",
+          "text": "This guy previously worked at Meta from 2017 to 2022 on Data Infrastructure projects. I expect Meta are running an audit right now to figure out if he was involved in espionage back then as well."
+        },
+        {
+          "by": "mrandish",
+          "text": "> \"Scott Schelble, special agent in charge of the FBI’s San Francisco field office, said the agency is committed to protecting sensitive research and proprietary technology.\" While the headlines and quotes seem designed to imply sophisticated industrial espionage, potentially by a state-level actor, what's public so far isn't adding up that way. 1. You're not going to get much actionable research…"
+        },
+        {
+          "by": "ks2048",
+          "text": "> The man arrested for planting a secret recording device at OpenAI's headquarters is a Venture Partner of a VC firm alongside the son of a senior Saudi intelligence official: https://x.com/ScottMStedman/status/2110108735855333403?s=20"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50070593,
+      "url": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
+      "hn": "https://news.ycombinator.com/item?id=50070593",
+      "title": "A Dynamic and Distributed Virtual GPU Cloud Built on Idle Apple Silicon Devices",
+      "time": 1791894396,
+      "points": 214,
+      "depth": [
+        {
+          "text": "someone built **Minions** to pool **idle Apple Silicon GPUs** across macOS devices for inference",
+          "tier": "simple"
+        },
+        {
+          "text": "Teams can reuse existing hardware instead of buying more GPUs, and the system offers **fault tolerance** and flexible task execution. The authors describe it as a practical platform for places where **centralized GPU resources are constrained**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some see a useful way to run off-hours inference on Macs companies already own; others say using idle machines can cost more than data centers because their power is cheaper and hardware more efficient, and question what's new.",
+      "comment_count": 91,
+      "terms": [
+        "GPU",
+        "inference",
+        "fault tolerance",
+        "distributed"
+      ],
+      "entities": [
+        "Apple",
+        "Apple Machine Learning Research",
+        "Minions",
+        "Jianhua Li",
+        "Yun Xing",
+        "Girisha De Silva",
+        "Ryan Flint",
+        "Kai Yuan",
+        "Sean Suchter",
+        "Apple Silicon",
+        "macOS",
+        "MLX",
+        "M5",
+        "NVIDIA",
+        "ReDrafter",
+        "Final Cut Pro",
+        "Logic Pro",
+        "Grand Central Dispatch",
+        "XCode",
+        "SETI@home",
+        "Mercedes",
+        "CUDA",
+        "S3",
+        "DGX",
+        "Ollama",
+        "exo",
+        "Classify @ Home"
+      ],
+      "comments": [
+        {
+          "by": "yardie",
+          "text": "If you've been around Macs long enough this is very much in Apple's wheelhouse. They already do something similar with Final Cut Pro rendering, Logic Pro, Grand Central Dispatch, and XCode distributed CI/CD. Apple HQ is probably sitting on 1000s of nodes, high powered MBPs, iMacs, that could do lots of inference work overnight. [0] https://en.wikipedia.org/wiki/Grand_Central_Dispatch [1]…"
+        },
+        {
+          "by": "sdoering",
+          "text": "Pardon me not understanding what this is about? Basically SETI for AI workloads? At least, this is the impression the landingpage left me with. I am a bit lost, tbh."
+        },
+        {
+          "by": "tom1337",
+          "text": "I guess for companies this can be nice? Run some inference in the off-hours on the machines that you already have. Could be useful for analytical tasks that don't require to be instant. On the technical side this doesn't seem that groundbreaking for me though."
+        },
+        {
+          "by": "mcculley",
+          "text": "As with all similar SETI@home approaches, this paper does not address the energy cost. Yes, we can distribute tasks to idle machines in homes and on office desktops, but it is often much more expensive than sending it to a data center where power is cheaper and the hardware is more efficient."
+        },
+        {
+          "by": "buildbot",
+          "text": "We did a little demo/have a patent for a similar idea using idle GPUs on Mercedes vehicles once upon a time - https://patents.google.com/patent/US20230281046A1/en"
+        }
+      ],
+      "image": "https://mlr.cdn-apple.com/media/Home_1200x630_48225d82e9.png"
+    },
+    {
+      "id": 50073221,
+      "url": "https://www.sammystraus.com/#i-posted-to-hn-and-then-my-website-was-flooded-with-ai-bot-traffic",
+      "hn": "https://news.ycombinator.com/item?id=50073221",
+      "title": "I posted to HN, and then my website was flooded with AI bot traffic",
+      "time": 1791905150,
+      "points": 219,
+      "depth": [
+        {
+          "text": "someone shared how an **HN post** brought **AI bots** that **slowed their site**",
+          "tier": "simple"
+        },
+        {
+          "text": "Logs showed **nearly half** of traffic came from one service querying the site many times per-minute; most requests did not even try to fetch news articles. The author **blocked the service** and added **robots.txt** to discourage other AI scanners.",
+          "tier": "substance",
+          "data": [
+            [
+              "Traffic from one service",
+              "nearly half"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some favor blocking or challenging abusive bots; others prefer improving performance or selectively blocking bots, since broad defenses can inconvenience real users.",
+      "comment_count": 138,
+      "terms": [
+        "single-page application",
+        "NGINX",
+        "robots.txt",
+        "rate limit",
+        "crawler",
+        "botnet",
+        "tarpit"
+      ],
+      "entities": [
+        "sprinklz.io",
+        "Hacker News",
+        "NGINX",
+        "Claude",
+        "OpenAI",
+        "Google"
+      ],
+      "comments": [
+        {
+          "by": "switz",
+          "text": "There is so much spam, abuse, and aggressive scraping that I've had to block: - AWS\n- Google Cloud\n- Azure\n- Alibaba Cloud\n- Oracle\nand a handful of other ASNs on almost all of my properties. It would be one thing if it was simple scraping, but it's often genuine agentic abuse (just spamming for vulnerabilities* or scraping millions of pages with very little valuable or dynamic content). These…"
+        },
+        {
+          "by": "firefoxd",
+          "text": "Last year, I wrote a post about how I use zipbombs to deal with bot traffic [0]. It went mega viral over the web, and I regret it. My server was completely overwhelmed with bot traffic. After months of dealing with it, I had to find a better strategy then keep my mouth shut. [0]: https://news.ycombinator.com/item?id=43826798"
+        },
+        {
+          "by": "pmlnr",
+          "text": "I really recommend blocking all traffic from anything on https://github.com/borestad/blocklist-abuseipdb"
+        },
+        {
+          "by": "naet",
+          "text": "I posted a link to an online game I made in the comments here once, and immediately got all kinds of good and bad traffic. Some people liked my work, found me on LinkedIn and sent a connection with a positive message. Other people tried every which way to SQL inject or attack the site, posted slurs in every available input, etc. Someone copied the site and hosted their own version with a couple…"
+        },
+        {
+          "by": "ben_w",
+          "text": "It's too late to comment on your older posts, but I'd just like to say: it's nice to see someone making oldschool web browsers work properly on the modern web. https://www.sammystraus.com/#using-llms-to-make-the-emacs-we..."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50077020,
+      "url": "https://guitoro.com/",
+      "hn": "https://news.ycombinator.com/item?id=50077020",
+      "title": "Show HN: Guitoro, a virtual guitar you strum with your keyboard",
+      "time": 1791918708,
+      "points": 182,
+      "depth": [
+        {
+          "text": "someone made **Guitoro**, a **virtual guitar** you can strum with your keyboard",
+          "tier": "simple"
+        },
+        {
+          "text": "Commenters called it **intuitive and fun**; one said they immediately played **Hotel California chords**. Others asked for **custom tunings** and modifier keys to change chord types or strumming direction.",
+          "tier": "substance",
+          "data": [
+            [
+              "commenter rating",
+              "10/10"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 70,
+      "terms": [
+        "custom tuning",
+        "modifier keys",
+        "fretboard",
+        "tablature",
+        "chord",
+        "bar chords",
+        "palm muting",
+        "DAW",
+        "velocity",
+        "monophonic synth"
+      ],
+      "entities": [
+        "Guitoro",
+        "Hotel California",
+        "OOlimo",
+        "Angie",
+        "The Rolling Stones",
+        "Toronto Metropolitan University",
+        "Kellycaster Mark 1",
+        "Guitar Hero",
+        "Rock Band"
+      ],
+      "comments": [
+        {
+          "by": "talccc",
+          "text": "Thanks for all the amazing feedback, everyone. I really appreciate it, and I'm writing all your notes down. It would really help if you mention whether you tested it on mobile or desktop."
+        },
+        {
+          "by": "slinkydink",
+          "text": "I've been playing for years, and so happy to see an app so intuitive. The only thing is that I use several non standard tunings none of them are found in the drop down..... I was so looking to put my own custom tunings into this app, since its the best designed guitar app that I've seen in a while. I would love to use this over OOlimo (which allows your own tunings) I'll have to wait and see if…"
+        },
+        {
+          "by": "Svennor",
+          "text": "Sounds great! As a guitar player: I would expect the fretboard to be mirrored horizontally, so that the low strings are at the bottom, like it is the case in regular tablature. Messes with my brain that way :)"
+        },
+        {
+          "by": "dengsauve",
+          "text": "10/10 immediately played Hotel California chords. Felt very intuitive, sounded nice. Great fun!"
+        },
+        {
+          "by": "pseudosavant",
+          "text": "Very well done. Looks and sounds great. A couple of UX thoughts I had while using it: 1. Since the chords are all within a specific key, have you considered using the numbers 1 through 7 to play the respective chords? That way playing a 1-4-5 or a 2-5-1 would be very intuitive? 2. Have you considered using modifier keys (shift, ctrl, alt) to control whether a chord is strummed down versus up…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50074869,
+      "url": "https://developers.googleblog.com/gemini-4-argon-for-robotics/",
+      "hn": "https://news.ycombinator.com/item?id=50074869",
+      "title": "Gemini 4 Argon for Robotics",
+      "time": 1791910547,
+      "points": 168,
+      "depth": [
+        {
+          "text": "someone got their robot to **walk to a table**, **describe nearby objects**, and **avoid crashes**",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter says their tools connect LLMs with vision to control a Unitree humanoid; **Argon 4** took precautions as it **walked slowly toward a table** and described the objects there. Another commenter says models like Argon and Astra may be more useful for making data to distill into **smaller models** than operating robots themselves.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 40,
+      "terms": [
+        "LLM",
+        "LIDAR",
+        "zero-shot control",
+        "action primitives",
+        "6DoF",
+        "digital twin",
+        "distill",
+        "simulation bring-up"
+      ],
+      "entities": [
+        "Gemini 4 Argon",
+        "Argon 4",
+        "Unitree",
+        "Opus",
+        "Astra",
+        "frost-e.com"
+      ],
+      "comments": [
+        {
+          "by": "comandillos",
+          "text": "I am very new to robots and recently decided to go crazy and buy a humanoid from Unitree. I've spent a while building some tools in order to integrate LLMs with vision capabilities that can control the robot motion in a simple manner... and while I saw Opus and Astra crashing against tables, beds and surfaces (yeah, my LIDAR data isn't being used yet), Argon 4 takes a lot of precautions to avoid…"
+        },
+        {
+          "by": "martythemaniak",
+          "text": "I'm a robotics noob currently building a prototype of a snow sweeping robot (www.frost-e.com) using my own design and I'm encouraged to see similar work coming from real places. Namely: - Zero shot control using a visual harness and action primitives. I've seen this from a few other places as well ( https://tml.stanford.edu/homebody/ ) and it's essentially having a generalist LLM command a robot…"
+        },
+        {
+          "by": "itissid",
+          "text": "Awesome, now only if i could get my hands two of those robotic hands and make myself my dish cleaning slave..."
+        },
+        {
+          "by": "onlyrealcuzzo",
+          "text": "Assuming that models continue to get 90% more efficient every 18 months, and assuming that hardware continues to get 2x more powerful per watt every 2 years... Aren't we still like a decade away from an Argon model being able to run on battery power for any reasonable amount of time that would fit on a robot that isn't the size of a school bus? Add on another couple of years for the speed to get…"
+        },
+        {
+          "by": "dyauspitr",
+          "text": "It’s mildly impressive, but Google should be wiping the floor with its competition with all the resources it has. This intelligence isn’t even as good as figure 3. Unitree robots are basically doing parkour while this thing has to be hung up by a hook."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50072994,
+      "url": "https://ourworldindata.org/data-insights/electricity-generation-per-person-in-the-united-kingdom-has-fallen-by-a-third-from-its-early-2000s-peak",
+      "hn": "https://news.ycombinator.com/item?id=50072994",
+      "title": "The United Kingdom generates less electricity per person than in the 1970s",
+      "time": 1791904377,
+      "points": 167,
+      "depth": [
+        {
+          "text": "the UK now generates **much less electricity per person**, partly because **homes and industry use less**",
+          "tier": "simple"
+        },
+        {
+          "text": "Generation per person peaked in **2003** and has fallen by **more than a third**; it is back to late-1960s levels. Net imports’ share of electricity demand rose from 1% in 2010 to 9% in 2025, accounting for some of the decline. The article also points to **deindustrialization** and efficiency improvements, including LED lightbulbs and appliance standards.",
+          "tier": "substance",
+          "data": [
+            [
+              "Generation per person since 2003",
+              "fallen by more than a third"
+            ],
+            [
+              "Net imports (2010)",
+              "1% of electricity demand"
+            ],
+            [
+              "Net imports (2025)",
+              "9%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see lower use as welcome efficiency; others say costly electricity and deindustrialization are bad for businesses and the economy.",
+      "comment_count": 239,
+      "terms": [
+        "net imports",
+        "deindustrialization",
+        "energy efficiency"
+      ],
+      "entities": [
+        "Our World in Data",
+        "International Energy Agency"
+      ],
+      "comments": [
+        {
+          "by": "andyjohnson0",
+          "text": "There's lots of amusingly Telegraph-esque outrage being posted here. But the article makes it clear that the reduction is due to reduction in demand, due in part to welcome improvements in efficiency, but also regrettable deindustrialization, and (neutral?) increased importing of electricity. Nobody is planning to ration electricity suppies. I also wonder what the contribution of domestic solar…"
+        },
+        {
+          "by": "cm2187",
+          "text": "I was at a conference last year where one of the speakers was from National Grid. Not only these morons had in mind that electricity demand should decrease (even before AI, it was obvious that demand would go up as we are moving away from fossil fuel with both heating and transportation going electric). But their great idea to deal with the shortage is intermittent availability of power. You…"
+        },
+        {
+          "by": "advisedwang",
+          "text": "The decline in energy from 2003-present lines up nicely with the phase out of incandescent lights in favour of CFLs and of CFLs in favour of LEDs. Lets say a house typically had 5 60W bulbs on for 8hrs a day, now replaced with an 8W bulb. That would be a 2 kWH reduction, which roughly corresponds to the drop shown in the data. EDIT: actually now that I think about it, 2kWh per-household is…"
+        },
+        {
+          "by": "gste",
+          "text": "Let's get this straight: yes, there's been a reduction in demand and increases in efficiency, but electricity is objectively extremely expensive in the UK now. Energy is being heavily imported. This has disastrous consequences for businesses and the economy. It is the number one biggest problem facing the UK economy after the huge government debt and crippling taxes... although there are a number…"
+        },
+        {
+          "by": "niltecedu",
+          "text": "Not unsurprising, excluding grid efficiency and industrial demand, its also just households. More and more places are getting batteries wherever possible, plug in solar is also avaialble. The amount of demand I don't forsee increasing at all unless people start getting air source heatpumps."
+        }
+      ],
+      "image": "https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/14a83be2-f915-4488-06af-fb7eea080400/public"
+    },
+    {
+      "id": 50069337,
+      "url": "https://pdftomp3.com/connect-ai/",
+      "hn": "https://news.ycombinator.com/item?id=50069337",
+      "title": "Show HN: Use your OpenAI subscription to create audiobooks",
+      "time": 1791886114,
+      "points": 158,
+      "depth": [
+        {
+          "text": "someone shared a tool for turning books into **audiobooks** with an **OpenAI subscription**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says it asks for an **API key** instead of the OpenAI authentication flow they expected, and calls the wording **misleading**. Another says **KeenLore** runs fully locally and has character ages, crowd chants, accents, and custom phonetics.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 78,
+      "terms": [
+        "API key",
+        "authentication flow",
+        "TTS",
+        "SSML",
+        "self-hosted",
+        "open weights"
+      ],
+      "entities": [
+        "OpenAI",
+        "KeenLore"
+      ],
+      "comments": [
+        {
+          "by": "thangalin",
+          "text": "KeenLore is my emotive audiobook creator, which I've been working on for the past several months to help me narrate my sci-fi novel. Here's a slightly outdated demo video: https://www.youtube.com/watch?v=WAeHgE94rVo I've since added character ages (child to supercentenarian voices, consistent relative to their base adult voice), crowd chants (2 to 100 people works flawlessly), case sensitivity…"
+        },
+        {
+          "by": "xenocratus",
+          "text": "I did something very similar to this, for myself, but which takes a web page for an article, cleans up the text to preserve the article only, and converts it using TTS, then adds it to a cloud bucket with an RSS stream, and I use that RSS link as a podcast in Apple Podcast."
+        },
+        {
+          "by": "subless",
+          "text": "I love using https://convert.to.it/ for all of my converting needs; everything is client-side in the browser with over 400 file extension options to choose from. Source: https://github.com/p2r3/convert"
+        },
+        {
+          "by": "x______________",
+          "text": "Is \"paste your OpenAI API key\" the new form of \"paste your credit card number with exp/code\" for example, to check if its been compromised?"
+        },
+        {
+          "by": "Kwpolska",
+          "text": "If you're on a Mac, `say -f book.txt -o book.aiff`, no API keys required."
+        }
+      ],
+      "image": "https://pdftomp3.com/og-pdf-to-mp3.png"
+    },
+    {
+      "id": 50059096,
+      "url": null,
+      "hn": "https://news.ycombinator.com/item?id=50059096",
+      "title": "Launch HN: Agent37 (YC F26) – Low-cost agent sandboxes for running agents",
+      "time": 1791823594,
+      "points": 157,
+      "depth": [
+        {
+          "text": "someone built **cheap sandboxes** for AI agents and now offers a **free plan**",
+          "tier": "simple"
+        },
+        {
+          "text": "Founder Vishnu says customers average **$0.37/month per sandbox**, while free sandboxes cost about **$0.05 to $0.10 per user per month** to run. Agent37 uses **gVisor** to share host memory, but those sandboxes don't support Docker-in-Docker or Android emulators.",
+          "tier": "substance",
+          "data": [
+            [
+              "average customer spend per sandbox",
+              "$0.37/month"
+            ],
+            [
+              "free sandbox infrastructure cost per user",
+              "$0.05 to $0.10 per user per month"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: skeptics say sandboxes are commoditized and competing on price is a bad bet; others praise the infrastructure work and find the pricing appealing.",
+      "comment_count": 110,
+      "terms": [
+        "sandbox",
+        "gVisor",
+        "VM",
+        "Docker-in-Docker",
+        "agent harness",
+        "hyperscaler",
+        "CPU",
+        "RAM",
+        "egress allowlist",
+        "cold start"
+      ],
+      "entities": [
+        "Agent37",
+        "Vishnu",
+        "YC",
+        "OpenClaw",
+        "Hermes",
+        "Claude Code",
+        "gVisor",
+        "Hetzner",
+        "OVH",
+        "Amazon",
+        "Quantcast",
+        "Diya",
+        "Ziya",
+        "Daytona",
+        "MacBook Pro",
+        "Android",
+        "boat.dev",
+        "Firecracker",
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "PayPal",
+        "Linux",
+        "Claude",
+        "Codex",
+        "gpt-6 luna",
+        "Boon",
+        "OpenAI",
+        "Google",
+        "Cloudflare",
+        "engine.build",
+        "Ceph"
+      ],
+      "comments": [
+        {
+          "by": "mparis",
+          "text": "Congrats on the launch! Very exciting! You guys are operating in a very competitive space. This stuff is fun to build, so a lot of engineers will end up building it. Not to discourage you, but I suspect it will be difficult to capture much value selling this offering as its going to be race to the bottom against very well funded alternatives that can sell these features at a loss in order to get…"
+        },
+        {
+          "by": "alasano",
+          "text": "I've been looking at offloading local work from my MacBook Pro (M1 Pro / 32 GB) specifically because I've been working with a lot of Android apps and emulation is killing me on top of everything else that I'm running. Got a bunch of Daytona credits which are close to useless given their restrictions until you hit tier 3. You seem like you're actually slightly cheaper than https://boat.dev/ but…"
+        },
+        {
+          "by": "MikhailTal",
+          "text": "Sandboxes look a bit commoditized. You cannot 10x on basically what's just a VM with a few agent-friendly features in 2026. Hence competing on purely price as a new startup is a bad idea imo. As you mentioned hyperscalers have insane margins, but if this turns out to be a real market, they will lower cost, even just eat the loss if they want and take you out of business. Without any hardware…"
+        },
+        {
+          "by": "pathly",
+          "text": "This is really impressive work on the infrastructure side.\nSkipping hyperscalers like AWS for Hetzner/OVH is definitely a massive lever, but your choice of gVisor for memory overcommit is where this gets technically interesting. A few questions on the implementation:\n• Memory & Density: Since gVisor allows you to share memory without reserving a full VM's allocation, how are you handling noisy…"
+        },
+        {
+          "by": "ekorondy",
+          "text": "The host isolation everyone is comparing on price is not the hard problem. gVisor vs a full VM is a real tradeoff. Most agent failures that actually hurt are not sandbox escapes. They are the agent acting as you with a coarse OAuth grant, or reading a secret that was sitting in the environment. A cheaper box does not fix that. You still need an egress allowlist the guest cannot rewrite…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50065805,
+      "url": "https://japannews.yomiuri.co.jp/science-nature/science/20260908-347742/",
+      "hn": "https://news.ycombinator.com/item?id=50065805",
+      "title": "China Overtakes U.S. For First Time as Top Spender on R&D in 2024",
+      "time": 1791858300,
+      "points": 152,
+      "depth": [
+        {
+          "text": "China became the top **R&D spender** in **2024**, passing the US for the **first time**",
+          "tier": "simple"
+        },
+        {
+          "text": "Some commenters blame **US policy and funding cuts**; another doubts **China's statistics**, while one says the lead doesn't mean **better jobs**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say China's rise was bound to happen; others say its statistics are unreliable.",
+      "comment_count": 148,
+      "terms": [
+        "R&D",
+        "R&D tax credit",
+        "private equity",
+        "capital controls",
+        "NIH",
+        "HHS"
+      ],
+      "entities": [
+        "Tax Cuts and Jobs Act",
+        "Bayh-Doyle Act",
+        "NIH",
+        "HHS",
+        "Trump",
+        "Jimmy Carter",
+        "Ronald Reagan"
+      ],
+      "comments": [
+        {
+          "by": "bcardarella",
+          "text": "There are two things that I feel impacted the US here: 1. the R&D tax credit was gone from 2022 - 2025 thanks to the Tax Cuts and Jobs Act signed in 2017. 2. private equity does not invest in R&D"
+        },
+        {
+          "by": "gyomu",
+          "text": "If China is to the 21st century what the US were to the 20th century - economically, scientifically, industrially - what should I do as a US citizen working in tech, besides signing up my kids and myself for Chinese classes?"
+        },
+        {
+          "by": "zetazzed",
+          "text": "I'm ready to blame the current admin, federal funding cuts, and cuts to immigration, but we all do need to check that the year for this change is clearly 2024...\n(But I am also ready to be even more depressed by 2025 stats!)"
+        },
+        {
+          "by": "yahthatsart",
+          "text": "The way the US is aggressively footgunning itself, while China (and others) win by default is so frustrating. The US could have invested in clean energy, in social programs to help towns experiencing economic depression. Like, it's really not that hard. Yes, we'd have to squeeze the richest people and share a little more equally. But not even that much. Like, the rich would still be astonishingly…"
+        },
+        {
+          "by": "methou",
+          "text": "This does not translate into better jobs, if you’re wondering. The main complaint inside China is still fair pay for fair hours."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50039291,
+      "url": null,
+      "hn": "https://news.ycombinator.com/item?id=50039291",
+      "title": "Ask HN: Do you want a router that has DD-WRT pre-installed?",
+      "time": 1791686253,
+      "points": 152,
+      "depth": [
+        {
+          "text": "someone asked if people would **buy a router** with **DD-WRT already installed**",
+          "tier": "simple"
+        },
+        {
+          "text": "Some commenters say enthusiasts will **flash it themselves**; another would pay to save the time. Others suggest **pre-flashed OpenWrt** or **extras like ad blocking and easier setup** could make the offer worth considering.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: skeptics say enthusiasts can install the software themselves and the market is too small; supporters say saving setup time or adding useful features could win customers.",
+      "comment_count": 146,
+      "terms": [
+        "DD-WRT",
+        "OpenWrt",
+        "firmware",
+        "flashing"
+      ],
+      "entities": [
+        "DD-WRT",
+        "OpenWrt",
+        "GL.iNet",
+        "OpenWrt One",
+        "FlashRouters",
+        "ASUS",
+        "ASUS Merlin",
+        "Ubiquiti",
+        "MikroTik",
+        "OPNsense",
+        "Protectli",
+        "Netgate",
+        "pfSense",
+        "Dropbox",
+        "Tomaž Zaman",
+        "mono.si",
+        "thinkpenguin",
+        "Turris",
+        "Firewalla",
+        "ProxMox",
+        "WireGuard",
+        "Qualcomm"
+      ],
+      "comments": [
+        {
+          "by": "elevation",
+          "text": "There was a time when I would have bought one, or recommend that a family member buy one, but I've had the same ubiquiti APs for years and I'm happy. If you sell reliable hardware, it will take you many years to see repeat business. If you start this business, bootstrap -- don't go into debt. If you have 100 units on your shelf, you'll sell them eventually. If you have a large loan, you'll have…"
+        },
+        {
+          "by": "mushufasa",
+          "text": "So I actually did buy DD-WRT pre-installed on a refurbished router from a company called FlashRouters. My experience was pretty good, the router lasted ~4 years until the hardware failed. I decided not to buy my next router from the same company afterwards, for two reasons 1. they automatically enrolled me in a 'support' subscription I didn't want and I didn't realize until it renewed once, then…"
+        },
+        {
+          "by": "II2II",
+          "text": "> When I asked an AI how I would go about judging interest, building, raising funds, and manufacturing, it seems doable but expensive Just a thought: make a small business out of setting up people's home networks and small business networks. The cost is negligible, you will learn about unmet demand, and you will be able to reach people who aren't technical in the process. It will cost you some…"
+        },
+        {
+          "by": "nr378",
+          "text": "I think OpenWrt is the more significant project nowadays, and routers with OpenWrt pre-installed are already available"
+        },
+        {
+          "by": "nvarsj",
+          "text": "OpenWRT - not sure why anyone would want to use dd-wrt? I’ve thought about this as well, you could market it to gamers or content creators who care about latency. Nano pi r6s with openwrt and buffer bloat configured for their connection. Nicer/simpler UX on top maybe. Firewalla did something similar but imo their UX is nice but actual product isn’t great (lots of issues on gigabit links ime…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50072286,
+      "url": "https://9to5mac.com/2026/10/12/apples-new-switch-to-safari-campaign-details-why-you-should-ditch-chrome/",
+      "hn": "https://news.ycombinator.com/item?id=50072286",
+      "title": "Apple's new 'Switch to Safari' campaign details why you should ditch Chrome",
+      "time": 1791901568,
+      "points": 155,
+      "depth": [
+        {
+          "text": "Apple's **Switch to Safari** campaign urges people to ditch **Chrome**, but commenters have plenty of objections",
+          "tier": "simple"
+        },
+        {
+          "text": "Safari critics point to **iOS restrictions**, **compatibility quirks** and weak developer tools; Chrome critics say **Google decides** what features Chromium-based browsers get and sets web standards. One commenter says testing Safari can mean buying Apple hardware.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: Safari fans praise its speed and Mac feel; critics say its restrictions and quirks make them reach for Chrome or Firefox.",
+      "comment_count": 263,
+      "terms": [
+        "browser engine",
+        "Chromium",
+        "developer tools",
+        "Manifest V3",
+        "POST",
+        "localhost"
+      ],
+      "entities": [
+        "Apple",
+        "Safari",
+        "Chrome",
+        "Google",
+        "Chromium",
+        "iOS",
+        "Internet Explorer",
+        "Windows",
+        "Mosaic",
+        "Chromebook",
+        "Firefox",
+        "Android",
+        "Linux",
+        "Ladybird",
+        "Brave",
+        "macOS",
+        "ChatGPT",
+        "Session Buddy",
+        "Reddit",
+        "Hacker News",
+        "Pages",
+        "Keynote",
+        "Google Docs",
+        "Google Slides",
+        "Word",
+        "PowerPoint",
+        "Edge",
+        "iCloud",
+        "uBlock Origin"
+      ],
+      "comments": [
+        {
+          "by": "TheDong",
+          "text": "First let us install other browser engines on iOS, and then we can talk. Safari has the most obscene monopoly of any browser ever. IE 6 came pre-installed on windows machines, but you could always install Mosaic or such. Google Chromebooks come with Chrome as the only default browser, but you can still run Firefox on Chromebooks just fine (even in two different ways, the supported android app…"
+        },
+        {
+          "by": "jillesvangurp",
+          "text": "Chrome is the new internet explorer. Lots of people coming up with all sorts of arguments why they have to use it and can't switch. Internet Explorer used to be like that. MS really abused users and they still wouldn't switch. It's a form of Stockholm syndrome. The history of Chrome is that it first displaced Firefox as a reasonable alternative (while funding that via a nice ad deal). And then…"
+        },
+        {
+          "by": "azuanrb",
+          "text": "Kinda bugs me when people who are against Safari/Apple are also the same people pushing Chrome/Google. Sometimes it feels like web developers these days are basically Chrome developers. I do get it. Chrome has the majority of users, so it’s easier to just develop and test on Chrome and know you’ve covered most of your users. But isn’t that just pushing us towards a Chrome monopoly? Safari holding…"
+        },
+        {
+          "by": "microflash",
+          "text": "Talk to me when I can set custom search engines, when developer tools become sane enough and when ‘localhost’ starts resolving."
+        },
+        {
+          "by": "tailrecursion",
+          "text": "I've always liked and preferred Safari. The only reason I moved away was that as a Mac gets older, there comes a point where you can't update the OS, and that means Safari falls behind. Even that's not a problem for me, but web standards were always changing and after a while certain things won't work."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50039063,
+      "url": "https://buy-european.net/en/alternatives",
+      "hn": "https://news.ycombinator.com/item?id=50039063",
+      "title": "European Alternatives",
+      "time": 1791683776,
+      "points": 150,
+      "depth": [
+        {
+          "text": "someone made a **searchable list** of **European alternatives** to brands like Amazon, Google, and Microsoft",
+          "tier": "simple"
+        },
+        {
+          "text": "Buy-European.net lets you search by product, company, or category, then click a non-European option to find **alternatives headquartered in Europe**. Commenters **questioned the matches**: one says Visual Studio Code has only IntelliJ IDEA listed, while others liked the extra choice for **privacy** and EU-based hosting.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: supporters say more choice and EU-based hosting are valuable; critics say the list is poorly curated and misses relevant alternatives.",
+      "comment_count": 107,
+      "terms": [
+        "GDPR",
+        "data sovereignty"
+      ],
+      "entities": [
+        "Buy-European.net",
+        "Amazon",
+        "Google",
+        "Microsoft",
+        "Visual Studio Code",
+        "IntelliJ IDEA"
+      ],
+      "comments": [
+        {
+          "by": "RandomGerm4n",
+          "text": "I wish lists like this were curated more carefully. Just because a company is European doesn't automatically make it better. For example, Gigaset is listed as one of the alternatives to the iPhone. They distributed malware to end users via their official update servers and then failed to inform them about it. Something like this should be an absolute no go for a smartphone manufacturer unless…"
+        },
+        {
+          "by": "herbst",
+          "text": "It's a little weird in some places. Snickers for example shows first \"Alprose\" which I never heard, it's a small company that's not even common IN Switzerland. It lists Julius mainl which if it does chocolate its far from their actual business. And half of the other companies also seem regional niche stuff. Dunno but gives a very vibe coded vibe"
+        },
+        {
+          "by": "gandhiandy69",
+          "text": "Finally found the European alternative to Salesforce: SAP!"
+        },
+        {
+          "by": "ed_balls",
+          "text": "I don't think anyone review these. How come Ducati is an alternative to Xiaomi?"
+        },
+        {
+          "by": "alkyon",
+          "text": "These EU alternatives are in fact increasingly valuable for US-based political activists: https://www.theguardian.com/us-news/2026/aug/13/us-governmen... It's generally beneficial to have more choice both from a free-market and a democratic-safeguards perspective."
+        }
+      ],
+      "image": "https://buy-european.net/buy-european-card.png"
+    },
+    {
       "id": 50058528,
       "url": "https://prophitt.me/writing/a-modern-web-app-in-c",
       "hn": "https://news.ycombinator.com/item?id=50058528",
@@ -2760,6 +4007,101 @@
     }
   ],
   "glossary": {
+    "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "monorepo": "One repository that holds code for many projects or services.",
+    "version control system": "A tool that records code changes so developers can compare them and return to earlier work.",
+    "CI": "Continuous integration: automatic checks that run when developers change code, helping catch problems early.",
+    "sparse checkout": "A checkout that includes only the folders a job or developer asks for.",
+    "changeset": "A record of a code change that lists which files changed.",
+    "horizontal scaling": "Handling more work by adding more machines, rather than relying on one machine to do it all.",
+    "AI agent": "An autonomous computer program that can carry out tasks.",
+    "eSIM": "Embedded SIM: a SIM built into a device instead of a removable card.",
+    "CPU": "Central Processing Unit: the main chip that runs instructions in a computer.",
+    "OCR": "Optical character recognition: software that reads words from a picture or scanned page.",
+    "hardware wallet": "A physical device used to keep crypto keys and approve transactions.",
+    "secure element": "A protected chip in a device meant to keep secret information safer.",
+    "native app": "An app built for a particular kind of device, rather than opened as a website.",
+    "background sync": "When an app checks for new messages while you’re not actively looking at it.",
+    "IMAP": "Internet Message Access Protocol: a way for a mail app to read and sync messages kept by an email service.",
+    "OAuth": "A way to let an app access parts of an account without being given the password.",
+    "SwiftUI": "A toolkit developers use to build the screens people see in apps.",
+    "JMAP": "JSON Meta Application Protocol: a way for mail apps to exchange email with a mail service.",
+    "Chapter 11": "A US bankruptcy process that lets a business try to keep operating while it reorganizes its debts.",
+    "antitrust regulation": "Rules meant to stop companies from unfairly limiting competition.",
+    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "far-field microphones": "Microphones designed to pick up a voice from across the room.",
+    "AV1 decoder": "A part that lets the device play video in AV1, a way of packaging video that can use less internet data.",
+    "surround sound": "Sound played through several speakers around the listener, rather than from one direction.",
+    "MAC address": "Media Access Control address: a number used to identify a device on a network.",
+    "industrial espionage": "Spying to steal another company's business secrets.",
+    "RSUs": "Restricted Stock Units: shares an employer promises to give an employee, often after they stay for a set time.",
+    "ESP32": "A small computer board that can connect to Wi-Fi and control electronics.",
+    "Faraday cage": "A metal enclosure that blocks radio signals from reaching what's inside.",
+    "inference": "When an AI uses what it learned to answer or act, instead of being trained.",
+    "fault tolerance": "A system's ability to keep working when some machines or parts fail.",
+    "distributed": "A job split across multiple computers that work together.",
+    "single-page application": "A website that loads one main page and then changes what you see without loading a whole new page each time.",
+    "NGINX": "A program that receives website requests and helps send back the right pages or files.",
+    "robots.txt": "A file that tells automated visitors which parts of a website the owner would prefer them not to visit; it cannot force them to obey.",
+    "rate limit": "A rule that caps how often someone can make requests to a site.",
+    "crawler": "A program that visits web pages and gathers them so a search engine can find them.",
+    "botnet": "A group of computers that can be made to send lots of requests together.",
+    "tarpit": "A defense that deliberately keeps suspicious visitors waiting, slowing down their requests.",
+    "custom tuning": "A setup that changes which notes the guitar strings make when played open.",
+    "modifier keys": "Keys like Shift or Ctrl that you hold with another key to change what that key does.",
+    "fretboard": "The long part of a guitar where the strings run and you press them to make notes.",
+    "tablature": "A written way to show which strings and frets to play.",
+    "chord": "A group of notes played together.",
+    "bar chords": "Chords made by pressing one finger across several strings at once.",
+    "palm muting": "A guitar technique where you lightly touch the strings with the side of your hand to make their sound shorter and duller.",
+    "DAW": "Digital audio workstation: an app for recording, arranging, and editing audio.",
+    "velocity": "How hard a note is played, which can change how it sounds.",
+    "monophonic synth": "An electronic instrument that can play one note at a time.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "LIDAR": "Light Detection and Ranging: a sensor that measures how far away things are by bouncing light off them.",
+    "zero-shot control": "Getting a robot to do a task without giving it examples of that exact task first.",
+    "action primitives": "Pre-set basic actions a robot can combine to carry out a bigger task.",
+    "6DoF": "Six degrees of freedom: tracking that follows your position and which way you're facing.",
+    "digital twin": "A computer-made copy of a real place or machine that can be used for testing.",
+    "distill": "Use what a larger model has learned to make a smaller model that can do a similar job.",
+    "simulation bring-up": "Setting up a robot in a computer-made environment before trying it in the real world.",
+    "net imports": "The amount of electricity a country brings in from elsewhere minus the amount it sends out.",
+    "deindustrialization": "A shift in an economy away from making goods in factories and toward services.",
+    "energy efficiency": "Using less energy to get the same amount of work done.",
+    "API key": "A secret code that lets software use an online service as an approved user.",
+    "authentication flow": "The steps an app takes to confirm who you are when you sign in.",
+    "TTS": "Text-to-speech: software that turns written words into spoken audio.",
+    "SSML": "Speech Synthesis Markup Language: a way to add instructions for how spoken text should sound.",
+    "self-hosted": "Running a service on a computer you control rather than relying on someone else's.",
+    "open weights": "The model's learned settings are available for people to download and run themselves.",
+    "sandbox": "A separate, contained space where software can be tested without affecting the rest of a computer or system.",
+    "gVisor": "A software layer that handles a program's requests to Linux and adds protection against using host-kernel bugs to escape a sandbox.",
+    "VM": "Virtual machine: a computer that runs inside another computer.",
+    "Docker-in-Docker": "Running Docker inside an already isolated software environment.",
+    "agent harness": "The surrounding software that runs an AI agent and helps manage its work.",
+    "hyperscaler": "A company that rents servers and computing power at huge scale.",
+    "RAM": "Random-Access Memory: a computer's working space for information it is using right now.",
+    "egress allowlist": "A list of outside internet destinations that a program is allowed to contact.",
+    "cold start": "The extra wait while a service starts up after sitting unused.",
+    "R&D": "Research and development: work to create or improve things.",
+    "R&D tax credit": "Research and Development tax credit: A tax break for certain spending on trying to create or improve things.",
+    "private equity": "Investment firms that buy whole companies, try to make them earn more, then sell them.",
+    "capital controls": "Government rules that limit money moving into or out of a country.",
+    "NIH": "National Institutes of Health: a US government agency that funds and carries out health research.",
+    "HHS": "Department of Health and Human Services: a US government department responsible for health and social services.",
+    "DD-WRT": "Alternative software that can replace the software a router came with.",
+    "OpenWrt": "Software for routers that people can install and change.",
+    "firmware": "The built-in software that tells a device's hardware how to work.",
+    "flashing": "Installing replacement software directly onto a device, such as a router.",
+    "browser engine": "The part of a browser that reads a site's code and draws the page.",
+    "Chromium": "The browser project whose scroll bar Electron and other Web apps use.",
+    "developer tools": "Browser features developers use to inspect and test websites.",
+    "Manifest V3": "A set of rules for browser add-ons; commenters say it limits what uBlock Origin can do in Safari.",
+    "POST": "A way a website sends information to a server, often when you submit a form.",
+    "localhost": "A name for the same computer your program is running on.",
+    "GDPR": "General Data Protection Regulation: a European law that sets rules for how organizations use people's personal information.",
+    "data sovereignty": "The idea that information should be subject to the rules of the place where it is stored or handled.",
     "CGI": "Common Gateway Interface: a way for a website's server to run a program for each request and return what it prints.",
     "SQLite": "A small database that can be stored in a single file.",
     "progressive enhancement": "Building a website so its basic parts work first, then adding extras for browsers that can handle them.",
@@ -2781,7 +4123,6 @@
     "local optimum": "A solution that seems best among nearby options, even though a better one may exist elsewhere.",
     "autopoiesis": "The idea that a living system continually makes and maintains itself.",
     "AI accelerator": "A chip made to handle AI calculations.",
-    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
     "LPDDR5X": "A type of memory designed to use less power; here, it provides memory for the card.",
     "bandwidth": "How quickly data can move between parts of a computer.",
     "PFLOPS": "Peta floating-point operations per second: a measure of how many calculations a machine can do each second.",
@@ -2838,9 +4179,6 @@
     "cloud computing": "Computing that happens on remote computers, which you use over the internet.",
     "network effect": "A service becomes more useful as more people use it, which can attract even more people.",
     "special-purpose software brain": "An AI program built to do one kind of job, rather than many different things.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
-    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
-    "open weights": "The model's learned settings are available for people to download and run themselves.",
     "Singularity": "The idea that AI could become far smarter than people and rapidly change society.",
     "cerebral palsy": "A condition that can affect how a person moves and keeps their balance.",
     "FFT": "Fast Fourier transform: a way to find which repeating frequencies make up a signal.",
@@ -2849,7 +4187,6 @@
     "exact complex arithmetic": "An assumption that a computer can handle extremely precise numbers in one step, however large they get.",
     "mixture-of-experts": "A model split into specialist parts, with only some parts used for each piece of text it produces.",
     "SSD": "Solid-state drive: storage that keeps files even when the machine is turned off.",
-    "RAM": "Random-Access Memory: a computer's working space for information it is using right now.",
     "tok/s": "Tokens per second: a rough measure of how quickly an AI produces text.",
     "speculative decoding": "A drafting step where one part guesses upcoming text and the main model checks those guesses to try to answer faster.",
     "cell-site simulator": "A device that pretends to be a mobile phone tower so investigators can locate phones; it can also gather identifying details from nearby phones.",
@@ -2931,7 +4268,6 @@
     "anthropomorphic": "Describing software as if it had human feelings or motives.",
     "nondeterministic": "Able to give different results even when asked the same thing twice.",
     "context window": "The amount of text and information an AI can take into account at one time.",
-    "AI agent": "An autonomous computer program that can carry out tasks.",
     "modality": "The way a task is done or experienced.",
     "harness": "The surrounding code that gives an AI agent tools and a place to work, and checks what it does.",
     "deterministic": "Something that gives the same result when it gets the same input.",
@@ -2940,21 +4276,17 @@
     "acceptable use policy": "A set of rules saying what you are allowed to do with a product.",
     "RCE": "Remote Code Execution: a flaw that lets an attacker make a computer run their commands from somewhere else.",
     "Flask session cookie": "A small note a Flask website stores in your browser so it can remember details about your visit.",
-    "OAuth": "A way to let an app access parts of an account without being given the password.",
     "client secret": "A private credential an app uses to prove its identity to another service.",
     "pickle": "A Python feature that saves a bundle of data and rebuilds it later; rebuilding an attacker-made bundle can run code.",
     "randomized controlled trial": "A study that puts people into different groups by chance, then compares what happens.",
     "productive struggle": "The effort of working through a hard task yourself instead of getting the answer right away.",
     "peer-reviewed": "Checked by other researchers before being published.",
-    "inference": "When an AI uses what it learned to answer or act, instead of being trained.",
     "guardrails": "Instructions that tell an AI how it should respond.",
     "secure enclave": "A protected part of a computer meant to keep data and calculations hidden from the rest of the system.",
     "remote attestation": "A check that lets you verify a remote computer is running a particular protected setup.",
-    "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
     "VRAM": "The memory inside a graphics card that holds information the AI needs while running.",
     "forced defrosting": "Making a fridge warm up so ice inside melts; in this story, that spoiled stored food.",
     "legacy products": "Older equipment or software that is still in use; the products in this story no longer received software or security updates.",
-    "firmware": "The built-in software that tells a device's hardware how to work.",
     "refrigeration control systems": "Equipment that controls how cold a fridge gets and when it runs.",
     "GitHub Actions": "GitHub’s tool for running automatic tasks when things happen in a repository.",
     "CI/CD": "Continuous Integration and Continuous Delivery or Deployment: ways to automatically check code changes and get software ready to release.",
