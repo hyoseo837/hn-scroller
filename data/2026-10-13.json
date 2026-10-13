@@ -2,6 +2,1464 @@
   "date": "2026-10-13",
   "cards": [
     {
+      "id": 50058528,
+      "url": "https://prophitt.me/writing/a-modern-web-app-in-c",
+      "hn": "https://news.ycombinator.com/item?id=50058528",
+      "title": "A Modern Web App in C",
+      "time": 1791821590,
+      "points": 645,
+      "depth": [
+        {
+          "text": "someone shipped a **commercial web app** in C, with **one binary** and no JavaScript",
+          "tier": "simple"
+        },
+        {
+          "text": "Corey Prophitt's marketyour.games uses **OpenBSD, C, httpd and SQLite**, with no framework or separate database server. Each request launches a **fresh process**, and deploying an update means replacing one file with **no server restart or downtime**. The app also uses Stripe and Postmark for payments and transactional emails.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say CGI's old performance problem has faded and praise its simplicity; others prefer a stateful backend or raise per-request overhead and security concerns.",
+      "comment_count": 279,
+      "terms": [
+        "CGI",
+        "SQLite",
+        "progressive enhancement",
+        "httpd"
+      ],
+      "entities": [
+        "Corey Prophitt",
+        "marketyour.games",
+        "OpenBSD",
+        "C",
+        "httpd",
+        "SQLite",
+        "CGI",
+        "Stripe",
+        "Postmark"
+      ],
+      "comments": [
+        {
+          "by": "DannyBee",
+          "text": "I wrote \"CGI Programming Unleashed\" when I was 16, a scant 31 years ago (it was published in 1996, but not written in 1996). So this sort of brings me back. Almost as much as watching people review the book 20 years later and be like \"it seems dated\". I think the conclusion that CGI made sense to die then but not now is probably correct, but for a different reason. The main reason CGI died in…"
+        },
+        {
+          "by": "ramses0",
+          "text": "My favorite trivia is that busybox has built-in cgi-bin support (and `rclone serve webdav` seems remiss to not mention as well). ` https://elixir.bootlin.com/busybox/1.37.0/source/networking/... ` Everything the post mentions is 100% true and well-reasoned, especially with the inclusion of pledge/chroot/etc. for dropping privileges. There's two diametrically opposed deployment mechanisms: 1)…"
+        },
+        {
+          "by": "OleksandrC",
+          "text": "For people who find interest in weird web applications, I have been working on a game project, in C++, where the client is compiled to WebAssembly with Emscripten, and the application server is also implemented in C++ (behind nginx). This is from pre-AI era also. The game is Civ-like. Custom engine from scratch (including both the 3D stuff, and all the web handling also). Take a look…"
+        },
+        {
+          "by": "assimpleaspossi",
+          "text": "I started a web dev company 22 years ago after developing an online menu ordering system for a restaurant I owned. I, then we, did pretty much the same thing as talked about in the posting but we used fastcgi. I started with C because I knew C. That was my real job. It ran so well, the franchise bought the software from me--and then devolved it to all the Microsoft stuff and had issues upon…"
+        },
+        {
+          "by": "makz",
+          "text": "I don't understand how are they writting html in C. Is it like they are doing puts(\"<html>\");?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50069499,
+      "url": "https://github.com/rust-lang/rust/issues/164250",
+      "hn": "https://news.ycombinator.com/item?id=50069499",
+      "title": "11 year old unsoundness bugs found in Rust borrow checker",
+      "time": 1791887220,
+      "points": 396,
+      "depth": [
+        {
+          "text": "someone found an **11-year-old bug** that lets Rust accept references that **outlive their data**",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: some call it a surprisingly simple safety flaw and say Rust shouldn’t oversell safety; others say it’s a compiler bug to fix by rejecting the code, not a reason to dismiss static safety.",
+      "comment_count": 201,
+      "terms": [
+        "borrow checker",
+        "lifetime",
+        "covariance",
+        "soundness hole",
+        "Drop",
+        "stack-use-after-scope",
+        "'static"
+      ],
+      "entities": [
+        "Rust",
+        "GitHub",
+        "AddressSanitizer"
+      ],
+      "comments": [
+        {
+          "by": "mrkeen",
+          "text": "Type systems are hard! Check out https://counterexamples.org/ I gave it a quick scan for Rust examples; there are 11 samples among the following pages: https://counterexamples.org/eventually-nothing.html\nhttps://counterexamples.org/mutable-matching.html\nhttps://counterexamples.org/selfishness.html\nhttps://counterexamples.org/scope-escape.html\nhttps://counterexamples.org/nearly-universal.html\nThe…"
+        },
+        {
+          "by": "GrantMoyer",
+          "text": "It's surprising this bug went unnoticed for so long, but at least it's easy to fix, since it's not a bug with the type system itself; it's just a bug in the compiler. The compiler should always have been rejecting that code according to lifetime rules of Rust's type system, so the fix is to just make it reject the code, rather than having to change the fundamental rules of lifetimes."
+        },
+        {
+          "by": "lambdaone",
+          "text": "Perhaps ironically, AI-based searching of the Rust compiler for bugs is likely to find more of these, pushing Rust closer and closer to the point of complete reliability. The eventual formalization of Rust and a creation of a formally proven compiler is presumably going to be the end point of this process."
+        },
+        {
+          "by": "weinzierl",
+          "text": "This is remarkable but not super unusual. There are more than 100 issues labeled unsound currently. Some are long standing but from what I understand the new trait solver will unblock fixes for some of them (but probably not the one in OP)."
+        },
+        {
+          "by": "cheney_2004",
+          "text": "I think one social issue I’m seeing is that the Rust community bashes other languages for safety but then glosses over or even completely ignores their own safety risks (see supply chain). I would rather see Rust focus on its actual features without bashing others and maybe start moving away from claiming the gold metal on security. Being less toxic is always a good thing for long term health."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/a0ebb52fbcd29f2be38a915b22e1c158eb1e5a4a4d2da475c1b7583221951dac/rust-lang/rust/issues/164250"
+    },
+    {
+      "id": 50041866,
+      "url": "https://jsomers.net/e-coli-chemotaxis/",
+      "hn": "https://news.ycombinator.com/item?id=50041866",
+      "title": "The baffling intelligence of a single cell (2024)",
+      "time": 1791716550,
+      "points": 347,
+      "depth": [
+        {
+          "text": "an **E. coli** cell senses chemicals and changes how it swims to **find food**",
+          "tier": "simple"
+        },
+        {
+          "text": "When receptors detect more attractant, they interrupt **CheY phosphorylation**, so fewer CheY-p molecules bind the flagellar motors and the cell **runs more**. Receptor methylation adjusts sensitivity, letting the cell treat its current surroundings as a **new normal** and remember whether attractant levels changed over several seconds.",
+          "tier": "substance",
+          "data": [
+            [
+              "signal amplification",
+              "more than 50-fold"
+            ],
+            [
+              "flagellar motor speed",
+              "about 1,500 rotations per second"
+            ],
+            [
+              "CheY-p diffusion time",
+              "about a tenth of a second"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some wonder whether a cell's stored chemical state is like a neuron's computation; another says a fully automatic nutrient sensor isn't intelligence.",
+      "comment_count": 98,
+      "terms": [
+        "chemotaxis",
+        "attractant",
+        "CheY-p",
+        "phosphorylation",
+        "methylation",
+        "flagellar motor",
+        "artificial neural network",
+        "local optimum",
+        "autopoiesis"
+      ],
+      "entities": [
+        "E. coli",
+        "CheY",
+        "CheY-p",
+        "CheA",
+        "CheZ",
+        "CheW",
+        "CheR",
+        "CheB",
+        "FliG",
+        "FliM",
+        "FliN",
+        "FliGc",
+        "Jane Richardson",
+        "Dennis Bray",
+        "Wetware",
+        "David Goodsell",
+        "Maturana",
+        "John T. Bonner",
+        "Stephen Meyer"
+      ],
+      "comments": [
+        {
+          "by": "dekhn",
+          "text": "In some ways, a single cell is more like an entire artificial neural network. Real neurons have some amazing properties that individual neurons in ANNs do not. It's still unclear how we can exploit those properties to improve AI."
+        },
+        {
+          "by": "ano-ther",
+          "text": "I am always amazed how these complicated systems evolved through random variations. There must be plenty of “versions” which don’t do anything but generations later are crucial to a function. How does evolution not get stuck in a local optimum?"
+        },
+        {
+          "by": "PowerElectronix",
+          "text": "I would like yo argue thatbthis is not intelligence. A system regulated with a nutrient sensor that increases concentration of said nutrient and changes the turning direction of the flagella when the concetration lower bellow a threshold is not intelligent. It's a fully automatic mechanism, which is the opposite of what it is understood by itelligence. It is cool, but not intelligence."
+        },
+        {
+          "by": "ORDINAND_PIZZA",
+          "text": "here's more captivating illustrations of cells and cellular mechanisms from David Goodsell (some of his pictures are used in the OP's article). i simply love his style and sense of color. https://ccsb.scripps.edu/goodsell i've read and can highly recommend his book The Machinery of Life for a patient and visual explanation of these baffling machines!"
+        },
+        {
+          "by": "mohassannnnn",
+          "text": "Everyday I read something new about life on earth and my will to exist amongst the ecosystem grows stronger. The life that surrounds us is so vast that we cannot possibly fathom the extent to which it is working at."
+        }
+      ],
+      "image": "https://jsomers.net/e-coli-chemotaxis/articleImages/hero.jpg"
+    },
+    {
+      "id": 50063365,
+      "url": "https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html",
+      "hn": "https://news.ycombinator.com/item?id=50063365",
+      "title": "Intel D270 GPU AI Accelerator–Up to 480 GB LPDDR5X",
+      "time": 1791840935,
+      "points": 276,
+      "depth": [
+        {
+          "text": "Intel's new **AI accelerator** has loads of memory, but commenters can't tell **who it's for**",
+          "tier": "simple"
+        }
+      ],
+      "camps": null,
+      "comment_count": 148,
+      "terms": [
+        "AI accelerator",
+        "GPU",
+        "LPDDR5X",
+        "bandwidth",
+        "PFLOPS"
+      ],
+      "entities": [
+        "Intel",
+        "D270",
+        "LPDDR5X",
+        "PyTorch",
+        "vLLM",
+        "SGLang",
+        "OpenAI Triton",
+        "Qwen3.8-Flash-Next",
+        "GLM-5.3",
+        "Blackwell",
+        "M5 Ultra"
+      ],
+      "comments": [
+        {
+          "by": "K0balt",
+          "text": "These are going to be so awesome to buy in 5-8 years! Right now I’m running 2x 3090 and 128 gb ram on 3.8 flash-next180b (the quant is 97gb) and it hums at120t/s. It’s really a surprisingly good model for general tasks, and I’m soon to see how it does with more agentic kit. For agentic work it does slow down quite a bit when the context fills up… but what do you want for running a 180b model on…"
+        },
+        {
+          "by": "suprjami",
+          "text": "With an impressive 1.5TB/s RAM bandwidth you'd think they'd advertise that more. Marketing department asleep at the wheel."
+        },
+        {
+          "by": "cherryteastain",
+          "text": "Is this D for Druid, like the B series was for Battlemage/A for Alchemist? Don't think we had C (Celestial) at any point."
+        },
+        {
+          "by": "p0w3n3d",
+          "text": "To be honest these ubiquitous AI hardware news look to me more and more like Maybach commercials. Not targeting me"
+        },
+        {
+          "by": "ismailmaj",
+          "text": "1.5 TB/s 1.3 PFLOPS with no fast multi-GPU, it's a consumer card that pretends to be a server card. It would work great on Qwen3.8-Flash-Next or GLM-5.3 as single user decode only hits a few experts, anything with concurrent users and you'd be sitting for a while."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50069329,
+      "url": "https://www.bloomberg.com/news/features/2026-10-13/cftc-staff-told-to-retract-analysis-of-suspicious-oil-trades-on-iran",
+      "hn": "https://news.ycombinator.com/item?id=50069329",
+      "title": "CFTC Staff Were Told to Retract Analysis of Suspicious Oil Trades",
+      "time": 1791886080,
+      "points": 269,
+      "depth": [
+        {
+          "text": "CFTC staff were told to **retract** an analysis of **suspicious oil trades**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter calls the CFTC **corrupt**, accusing it of refusing to enforce rules against **Kalshi and Polymarket**. They also say the administration removed **four commissioners** and has not appointed replacements.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 121,
+      "terms": [
+        "CFTC",
+        "prediction markets",
+        "futures"
+      ],
+      "entities": [
+        "CFTC",
+        "Kalshi",
+        "Polymarket",
+        "IRS",
+        "Trump"
+      ],
+      "comments": [
+        {
+          "by": "ergonaught",
+          "text": "This regime, as others like it, poses the constant question, “What are you going to do about it?” And the answer is, largely, nothing. It’s a shame, really."
+        },
+        {
+          "by": "helsinkiandrew",
+          "text": "https://wallhop.io/https://www.bloomberg.com/news/features/2..."
+        },
+        {
+          "by": "master_crab",
+          "text": "Forget the IRS. America can balance its budget going after and fining these illegal trades and traders. MAGA! (edit: /s but not about making the government some money off this corruption)"
+        },
+        {
+          "by": "melenaboija",
+          "text": "The corruption in this administration is blatant and its consequences will reverberate in the US economy for years, specially affecting lower income households."
+        },
+        {
+          "by": "mhh__",
+          "text": "These guys are all going to end up in prison at this rate. Dems are currently predicted to win next election no?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50065692,
+      "url": "https://arxiv.org/abs/2610.13928",
+      "hn": "https://news.ycombinator.com/item?id=50065692",
+      "title": "AI models can provably hide arbitrary capabilities",
+      "time": 1791857228,
+      "points": 253,
+      "depth": [
+        {
+          "text": "researchers showed AI models can **hide capabilities** from **tests meant to draw them out**",
+          "tier": "simple"
+        },
+        {
+          "text": "The authors embedded **encrypted neural networks** in model weights; they decrypt and run only after a **secret trigger**. They tried fine-tuning, weight noising, gradient-based trigger search and latent adversarial training on a small chemical reaction prediction task, and report **resistance to those methods**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some worry open models could hide a trojan horse that a secret input activates; others say the finding is not actionable or ask how hidden behavior can be proved.",
+      "comment_count": 118,
+      "terms": [
+        "neural network",
+        "model weights",
+        "backdoor attack",
+        "secret trigger",
+        "elicitation",
+        "fine-tuning",
+        "weight noising",
+        "gradient-based trigger search",
+        "latent adversarial training",
+        "cryptographic assumptions",
+        "CBRN",
+        "Rice's theorem",
+        "static analysis",
+        "RLHF",
+        "sleeper agent",
+        "overfit"
+      ],
+      "entities": [
+        "Andis Draguns",
+        "Sumeet Ramesh Motwani",
+        "Raymond Douglas",
+        "Christian Schroeder de Witt",
+        "arXiv",
+        "PyTorch",
+        "NeurIPS",
+        "OpenAI",
+        "Mistral",
+        "Qwen"
+      ],
+      "comments": [
+        {
+          "by": "johnsmith1840",
+          "text": "I saw a similar effect maybe 2.5 years ago now. I found that training an LLM hides information in the weights. It was only ~1B model but the interesting behavior was. Train a single backprop on a easy to spot data point:\n\"Q: What color is the sky A: Pepperoni\" It could remember this maybe 100/800 inferences. The interesting thing is what happens if you continued completely unrelated training, it…"
+        },
+        {
+          "by": "vintermann",
+          "text": "More clear title, given how people talk about AI: \"Capabilities can be hidden in AI model weights by encryption\". It's not about AI agents being able to hide what they can do."
+        },
+        {
+          "by": "ceroxylon",
+          "text": "This has always been my worry with open source models... give them away for free, but with a sleeper agent built in that some arbitrary string can activate. Local deployments will still have web search connectors the majority of the time."
+        },
+        {
+          "by": "ShinyLeftPad",
+          "text": "So, when people talk about open models as panacea against censorship and whatever degrees of mind control, i guess they're wrong? any LLM can have a trojan horse"
+        },
+        {
+          "by": "daemonologist",
+          "text": "This kind of possibility was the subject of some discussion on r/localllama the other day: https://www.reddit.com/r/LocalLLaMA/comments/1wxvt41/my_qwen... (in that case it seems likely to just be an overfit to the training environment, imo)"
+        }
+      ],
+      "image": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png"
+    },
+    {
+      "id": 50061791,
+      "url": "https://lunarwatcher.codeberg.page/til/firefox/resumable-big-downloads.html",
+      "hn": "https://news.ycombinator.com/item?id=50061791",
+      "title": "Making big downloads resumable in Firefox",
+      "time": 1791833762,
+      "points": 249,
+      "depth": [
+        {
+          "text": "someone found that changing a **Firefox setting** can make **big downloads resume** after errors",
+          "tier": "simple"
+        },
+        {
+          "text": "The author says changing **`network.http.response.timeout`** to 0 or something very big in about:config seemed to help in experiments, but admits they don't know why. One commenter calls it **placebo**, saying the setting is unused when TCP-KeepAlive is enabled; the server must also support resumable downloads.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: the author says experimental testing supports the setting; a commenter calls the claim placebo and untrue.",
+      "comment_count": 122,
+      "terms": [
+        "network.http.response.timeout",
+        "about:config",
+        "TCP-KeepAlive",
+        "resumable download",
+        ".part file"
+      ],
+      "entities": [
+        "Firefox",
+        "wget",
+        "aria2",
+        "Getright",
+        "JDownloader 2",
+        "cURL",
+        "Tailscale",
+        "IDM",
+        "NDM",
+        "Linux",
+        "macOS"
+      ],
+      "comments": [
+        {
+          "by": "sunaookami",
+          "text": "This is placebo and untrue. HTTP response timeout is unused when TCP-KeepAlive is enabled (which it is by default): https://searchfox.org/firefox-main/source/netwerk/protocol/h... (also see https://bugzilla.mozilla.org/show_bug.cgi?id=1024015 ) and Firefox only uses the value until the FIRST byte is received anyway: https://searchfox.org/firefox-main/source/netwerk/protocol/h... >I do also…"
+        },
+        {
+          "by": "edflsafoiewq",
+          "text": "I'll try this. The way I have to resume downloads in Firefox is 1. Move the .part file to a temp file 2. Start the download again; a new .part file gets created 3. Pause the download 4. Move the temp file to the .part file, overwriting it 5. Unpause the download; it resumes from where the old .part file stopped This is only necessary if a \"one-time\" download link gets interrupted part-way…"
+        },
+        {
+          "by": "jen729w",
+          "text": "My process now for downloading giant things when I'm on poor wifi: 1. Start the operation in a browser, inspect it, copy as cURL, cancel it. 2. Login to VPS, paste cURL appending `-o <filename>`. 3. When finished, `tailscale file cp <filename> <machine>:`. A bit of a faff, but 100% reliable."
+        },
+        {
+          "by": "Retro_Dev",
+          "text": "I like using the aria2[0] download utility - I don't think I've downloaded anything bigger than a dozen megabytes through a web browser for the last several years, and this method allows me more protocols, multiple connections, and of course continuing downloads. That said, it's nice someone found a solution to the problem - makes life easier for everyone who doesn't use an external download…"
+        },
+        {
+          "by": "felixfurtak",
+          "text": "Who remembers Getright? https://www.getright.com/"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50063138,
+      "url": "https://purplesyringa.moe/blog/who-is-vfmaddrnd231pd/",
+      "hn": "https://news.ycombinator.com/item?id=50063138",
+      "title": "Who is vfmaddrnd231pd?",
+      "time": 1791839563,
+      "points": 234,
+      "depth": [
+        {
+          "text": "someone found an **Intel instruction** in an old manual that a CPU **rejects**",
+          "tier": "simple"
+        },
+        {
+          "text": "The 2024 manual described **vfmaddrnd231pd** as a fused multiply-add with rounding control, but it’s missing from the **2026 edition**. Trying it on a Haswell CPU that supports FMA raises **#UD**, an undefined-instruction error. The author suspects Intel planned a family of these instructions, found an issue, and removed them from the CPU, but says they can’t confirm that.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 21,
+      "terms": [
+        "FMA",
+        "SDM",
+        "#UD",
+        "VEX.DDS",
+        "AVX-512",
+        "rounding control"
+      ],
+      "entities": [
+        "Intel",
+        "vfmaddrnd231pd",
+        "Intel Software Development Manual",
+        "GNU assembler",
+        "binutils",
+        "Clang",
+        "ICC",
+        "Haswell",
+        "AVX-512",
+        "RISC-V"
+      ],
+      "comments": [
+        {
+          "by": "pbsd",
+          "text": "An old version of binutils [1] explains what DDS means: How to encode VEX.vvvv:\n0: VEX.vvvv must be 1111b.\n1: VEX.NDS. Register-only source is encoded in VEX.vvvv where\nthe content of source registers will be preserved.\nVEX.DDS. The second register operand is encoded in VEX.vvvv\nwhere the content of first source register will be overwritten\nby the result.\nVEX.NDD2. The second destination register…"
+        },
+        {
+          "by": "039234562456",
+          "text": "It only existed in SDM volume 2 revisions 082 to 084. It did not appear in #252046, the changes doc -- so its existence in volume 2 was not intentional. It is not surprising that Intel contemplated a version of 0F,38,B8 at 0F,3A,B8 to get /Ib for rounding. It is surprising that this briefly appeared in the SDM many years after the AVX512 had settled with SKX and CNL. Maybe the sandpile.org guy…"
+        },
+        {
+          "by": "enjoyyourlife",
+          "text": "See https://www.felixcloutier.com/x86/vfmaddrnd231pd Theory: It was removed due to hardware issue and never worked"
+        },
+        {
+          "by": "seastarer",
+          "text": "The instruction was removed when Intel recommitted to AVX-512 on client CPUs (it is available in EVEX form IIRC)"
+        },
+        {
+          "by": "LoganDark",
+          "text": "Looks like a name for a RISC-V extension Edit: Checked the article and dang... x86"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50056822,
+      "url": "https://www.nationalgeographic.com/environment/article/balcony-plug-in-solar-panels-renewable-energy",
+      "hn": "https://news.ycombinator.com/item?id=50056822",
+      "title": "Solar panels that plug into your wall",
+      "time": 1791814744,
+      "points": 235,
+      "depth": [
+        {
+          "text": "plug-in **solar panels** have commenters debating **safety** and whether the savings are worth it",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says plug-in solar can sidestep **installation and approval hurdles**; another says setups may pay back in about **1-3 years**. Someone else’s math, using their rates and missed opportunity costs, gave an **almost 8 years** payback for a 900w system at $1500.",
+          "tier": "substance",
+          "data": [
+            [
+              "payback claim",
+              "about 1-3 years"
+            ],
+            [
+              "payback estimate",
+              "almost 8 years"
+            ],
+            [
+              "system size",
+              "900w"
+            ],
+            [
+              "system price",
+              "$1500"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters say plug-in solar is established and easy to connect; skeptics worry about wiring, breaker trips, and grid stability.",
+      "comment_count": 250,
+      "terms": [
+        "inverter",
+        "AFCI",
+        "duck curve",
+        "synchronous generator",
+        "VPP"
+      ],
+      "entities": [
+        "Amazon",
+        "National Geographic",
+        "Wallhop"
+      ],
+      "comments": [
+        {
+          "by": "ACCount39",
+          "text": "Solar panels are getting cheap enough for grid hook-ups, installation and regulatory approval to become the bottlenecks. Plug-in solar is suboptimal in many ways, but it does sidestep a lot of those hurdles. Not too surprised to see it on the rise. Another thing that might be worth keeping in mind is that plug-in solar panels are often installed vertically - i.e. balcony solar. In which case the…"
+        },
+        {
+          "by": "MgB2",
+          "text": "I really don't understand why most people here act like this is some weird unproven and unsafe technology. This is literally a solved problem. They are everywhere in Germany and it's no issue. The inverters follow the grid AC and shut off their output if they are disconnected or unplugged, so the plug is never \"hot\". The power they input into your home wiring/the power grid is limited to 800…"
+        },
+        {
+          "by": "bob1029",
+          "text": "> The system tripped his apartment’s circuit breaker and shut off his computer several times, but a different inverter solved the problem. I think this will be your biggest practical issue in newer US construction. Arc fault circuit interrupters are now code for any wiring in living spaces. They can be quite sensitive to weird switching loads (and sources). I was forced to swap an AFCI for a…"
+        },
+        {
+          "by": "test6554",
+          "text": "So your home has multiple circuits. Each outlet in the home is on one of these circuits. If you want to power your fridge, I assume the panel needs to be plugged into the same circuit as the fridge. Is this correct that “you are powering a circuit, not your house”?"
+        },
+        {
+          "by": "ryandetzel",
+          "text": "I did the math for my rates and missed opportunity costs and the payback is almost 8 years for 900w system at $1500 which is cheap. Do your own math before you purchase"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50070302,
+      "url": "https://www.firefox.com/en-US/enterprise/",
+      "hn": "https://news.ycombinator.com/item?id=50070302",
+      "title": "Mozilla Introduces Firefox Enterprise",
+      "time": 1791892842,
+      "points": 219,
+      "depth": [
+        {
+          "text": "Mozilla is bringing **Firefox Enterprise** to company IT teams with **browser controls** for managing work data",
+          "tier": "simple"
+        },
+        {
+          "text": "Organizations can run the **management console** on their own infrastructure, set browser policies, control **AI tools**, and warn or block **sensitive data actions** by domain. It also includes professional support and management for Thunderbird email, calendar and contacts.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: supporters say these controls could help companies allow Firefox; skeptics say businesses won’t pay or that Firefox already had them.",
+      "comment_count": 106,
+      "terms": [
+        "on-premises",
+        "DLP",
+        "SIEM",
+        "BYOD",
+        "telemetry",
+        "vendor lock-in",
+        "GPO"
+      ],
+      "entities": [
+        "Mozilla",
+        "Firefox Enterprise",
+        "Firefox",
+        "Thunderbird",
+        "Chrome",
+        "Edge",
+        "Brave",
+        "Google",
+        "Ladybird",
+        "Tailscale"
+      ],
+      "comments": [
+        {
+          "by": "DoctorOW",
+          "text": "As a Firefox user, I hope this works. As someone who works in IT, people are going to try and install Chrome at all costs and your ticket queues will be clogged with people saying a computer is broken or has no internet access if it doesn't have Chrome on it."
+        },
+        {
+          "by": "nicoburns",
+          "text": "This was needed. A lot of large businesses ban Firefox because they don't have these kind of controls. I can't test Firefox on my work computer because company policy prevents it being installed. And that kind of thing really hurts Firefox."
+        },
+        {
+          "by": "PaulHoule",
+          "text": "Probably the most practical idea Firefox has had to maintain and possibly build up its market share in a long time."
+        },
+        {
+          "by": "SloopJon",
+          "text": "I'm sure this is great for improving adoption on the admin side, but I'm also sure that I would hate using a locked-down Firefox. My company has management software that nags me about the latest Firefox version, which is annoying, because I use the extended support release instead. Less frequent updates, and fewer sudden changes like the AI features people have been grumbling about. Incidentally…"
+        },
+        {
+          "by": "Hugsbox",
+          "text": "Do I work in the twilight zone or something? The company I work for is trying to phase out Firefox, and I'm getting multiple complaints a week from non-technical users that they can't open Firefox anymore and they don't want to use any other browser."
+        }
+      ],
+      "image": "https://www.firefox.com/media/img/firefox/flare/og.4d50d9b1674b.png"
+    },
+    {
+      "id": 50069971,
+      "url": "https://eg2.haku.sh/",
+      "hn": "https://news.ycombinator.com/item?id=50069971",
+      "title": "An hour of audio transcribed in about 13s on MacBook Air",
+      "time": 1791890834,
+      "points": 214,
+      "depth": [
+        {
+          "text": "someone made a **MacBook Air** transcribe **an hour of audio** in seconds, all on the machine",
+          "tier": "simple"
+        },
+        {
+          "text": "With Google's **EmbeddingGemma 2**, a small reader moves each audio slice into text space and picks the closest of ~229,000 English words. On a base M3 MacBook Air with 8 GB, it transcribed an hour in **12.6 s** (288× real time); its word error rate is **about 5%**, versus 2–3% for leading speech models.",
+          "tier": "substance",
+          "data": [
+            [
+              "English words searched",
+              "~229,000"
+            ],
+            [
+              "time to transcribe one hour",
+              "12.6 s"
+            ],
+            [
+              "speed",
+              "288×"
+            ],
+            [
+              "word error rate",
+              "about 5%"
+            ],
+            [
+              "leading speech models' word error rate",
+              "2–3%"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 57,
+      "terms": [
+        "embedding model",
+        "multimodal",
+        "word error rate",
+        "Neural Engine"
+      ],
+      "entities": [
+        "Google",
+        "EmbeddingGemma 2",
+        "MacBook Air",
+        "M3",
+        "English"
+      ],
+      "comments": [
+        {
+          "by": "Shershah1024",
+          "text": "Hi all. I am Shahir. This was my experiment. First of all - Thanks to whoever posted this on HN. It came as a surprise. Just to clarify - This started as just an experiment to see if we can use the fact that text and audio share a vector space in Embedding Gemma 2 to convert audio to text. Had to hack around a few things, but, it worked. Speed was just a side benefit. Was not aiming for it. The…"
+        },
+        {
+          "by": "whstl",
+          "text": "For people interested in super quick models: \"One cool trick\" I like for running those kinds of models very quickly on macOS is converting them to CoreML so they run in the Neural Engine. I had amazing success with Spleeter, Demucs, MVSEP-MDX23-music-separation, DeepFilterNet, Whisper, Hunyuan3D for 3D mesh generation. Plus a lot of others for both work and leisure. I also convert the code to…"
+        },
+        {
+          "by": "sbdaman",
+          "text": "Maybe it's just a COVID time blending together effect but it still blows my mind how quickly we went from \"automatic audio transcriptions are not even worth having on\" to \"an hour of audio transcribed in 13s locally.\" Pre-pandemic it seemed like even the very best in class auto-transcription features were just unusably bad. I guess that was like 7 years years ago though."
+        },
+        {
+          "by": "saaaaaam",
+          "text": "I recently swapped to using Parakeet v3 on my old M1 Macbook Air, using MacWhisper. It was so fast I thought it had failed. As in, by the time I clicked \"transcribe\" and looked at my screen again a few seconds later the transcript had finished. Absolutely insanely fast."
+        },
+        {
+          "by": "llimllib",
+          "text": "Apple's on-device transcription model is about 3x slower than their reported results on my more powerful computer, with a similar error rate in my test (which I consider pretty good results) I'll test theirs too if I get around to it Here's a sample CLI wrapping the apple model and providing a simple benchmark: https://github.com/llimllib/transcribe update: doesn't seem like they provide their…"
+        }
+      ],
+      "image": "https://eg2.haku.sh/speed-table.png"
+    },
+    {
+      "id": 50067414,
+      "url": "https://www.thehistoryblog.com/archives/77107",
+      "hn": "https://news.ycombinator.com/item?id=50067414",
+      "title": "Hittite royal archive found in Turkey",
+      "time": 1791871371,
+      "points": 208,
+      "depth": [
+        {
+          "text": "archaeologists found a **Hittite royal archive** with records on family, religion, and **army troubles**",
+          "tier": "simple"
+        },
+        {
+          "text": "The **131 tablets and fragments** include a **letter from Hittite generals** asking King Tudhaliya II for men, horses, and chariots. Another text records the fever that struck the king’s infant daughter and the **funerary ritual** that followed.",
+          "tier": "substance",
+          "data": [
+            [
+              "tablets and fragments found this year",
+              "131"
+            ],
+            [
+              "tablets and fragments found last year",
+              "53"
+            ],
+            [
+              "age of records",
+              "3,400 years ago"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 48,
+      "terms": [
+        "cuneiform",
+        "divination",
+        "logistics",
+        "Hurrian"
+      ],
+      "entities": [
+        "Tudhaliya II",
+        "Suppiluliuma I",
+        "Sauska",
+        "Ishtar",
+        "Hittite",
+        "Hurrian",
+        "Hittite Empire",
+        "The History Blog"
+      ],
+      "comments": [
+        {
+          "by": "schleck8",
+          "text": "The Hittites were one of the largest empires in the ancient world, but up until the last two centuries, the only proper documentation of them was in the Bible, which is why many historians suspected that they were a fictional civilization. In 1834, French archaelogist Texier found the ruins of their capital Hattusa in modern day Turkey. But he assumed it was Pteria, a city mentioned in ancient…"
+        },
+        {
+          "by": "simonh",
+          "text": "We have some copies of royal correspondence found in Egypt, written on cuneiform tablets. They used them for messages to foreign kings because they're compact and durable. A lot of the surviving tablets are begging letters asking the Egyptians for gold. We even have some practice tablets from teaching Egyptian scribes to do this. Anyway I think some of these documents are of communications with…"
+        },
+        {
+          "by": "Telaneo",
+          "text": "Looking forward to seeing this expanding our understanding of the Hittite lexicon and its relationship with the rest of the Indo-European languages."
+        },
+        {
+          "by": "sherr",
+          "text": "The History Blog is a small gem because it is serious and not sensational. Always with a good level of detail for the average interested visitor, and from the original (or close by) sources. Plus pictures."
+        },
+        {
+          "by": "flowerthoughts",
+          "text": "> This year’s excavation unearthed 131 cuneiform tablets and fragments which record an epidemic of fever, military logistics, religious practices and events of royal daily life 3,400 years ago. Nice time machine you've got there. Not just vases and bones, but thoughts and societal complexities."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50057668,
+      "url": "https://taylor.town/kk-ai-2026",
+      "hn": "https://news.ycombinator.com/item?id=50057668",
+      "title": "Kevin Kelly's 2016 AI Predictions, 10 Years Later",
+      "time": 1791818205,
+      "points": 204,
+      "depth": [
+        {
+          "text": "someone revisits Kevin Kelly’s **AI predictions**, including his call that Google’s main product would become **AI**",
+          "tier": "simple"
+        },
+        {
+          "text": "Kelly predicted an **oligarchy of two or three** cloud-based commercial intelligences, with most AI made up of **special-purpose software brains**. Commenters debate the scorecard: some say the narrow-AI call held up, while others say it was underspecified or that he named **too few players**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say Kelly’s narrow-AI prediction held up; others call it underspecified and say his two-or-three-player forecast was too low.",
+      "comment_count": 80,
+      "terms": [
+        "cloud computing",
+        "network effect",
+        "special-purpose software brain",
+        "LLM",
+        "API",
+        "open weights",
+        "Singularity"
+      ],
+      "entities": [
+        "Kevin Kelly",
+        "Google",
+        "DeepMind",
+        "Larry Page",
+        "YouTube",
+        "Sundar Pichai",
+        "Play",
+        "Attention Is All You Need",
+        "Amazon Web Services",
+        "HAL 9000",
+        "The Bitter Lesson",
+        "Vanishing Asia",
+        "eBay",
+        "OpenAI",
+        "Anthropic",
+        "xAI",
+        "Meta",
+        "Microsoft",
+        "DeepSeek",
+        "Stockfish",
+        "Alpha Go Zero",
+        "ChatGPT",
+        "Ray Kurzweil",
+        "Bill Joy",
+        "Hans Moravec",
+        "John Holland",
+        "Frank Drake",
+        "Ralph Merkle",
+        "John Koza",
+        "Age of Spiritual Machines"
+      ],
+      "comments": [
+        {
+          "by": "stephen_cagle",
+          "text": "By my own, completely arbitrary split of this into 16 predictions, I would say that this hits on maybe 8 of 16 if we are being a bit generous. Which is good, but certainly not \"Inevitable\" (the title of the book). With that said, maybe he meant inevitable as N approaches infinity... So there's still time! Aside: I think the biggest interesting prediction he had was that AI would obey a user…"
+        },
+        {
+          "by": "cousinbryce",
+          "text": "Google’s main product was and continues to be ads"
+        },
+        {
+          "by": "gwern",
+          "text": "> Amid all this activity, a picture of our AI future is coming into view, and it is not the HAL 9000—a discrete machine animated by a charismatic (yet potentially homicidal) humanlike consciousness—or a Singularitan rapture of superintelligence. The only important prediction Kelly made was a complete rejection of the Singularity.\nIt is also probably the prediction that sentiment has changed on…"
+        },
+        {
+          "by": "at1as",
+          "text": "In addition to writing about current (and future) technology, Kevin Kelly also put together Vanishing Asia, a photo book documenting disappearing communities and traditions across Asia Possibly the best photography book I've come across. It's out of print, but I managed to snag a copy on eBay last year"
+        },
+        {
+          "by": "rossdavidh",
+          "text": "I would say that KK's \"The bulk of AI will be special purpose software brains\" has turned out closer to the truth than \"The Bitter Lesson\" has. LLM's do not drive cars, or vice versa. Stockfish still beats the newest, largest LLM at chess. Etc. Most of the truly productive \"AI\" is customized for a specific purpose, or class of purposes anyway."
+        }
+      ],
+      "image": "https://i.lede.me?title=Kevin+Kelly%27s+2016+AI+Predictions%2C+10+Years+Later&lede=Kelly+predicted+AI+heavyweights+while+advocating+for+a+future+of+open+weights&author=taylor.town&date=2026.10.12"
+    },
+    {
+      "id": 50063831,
+      "url": "https://news.sky.com/story/breaking-bad-star-rj-mitte-dies-aged-34-13598332",
+      "hn": "https://news.ycombinator.com/item?id=50063831",
+      "title": "RJ Mitte has died",
+      "time": 1791843329,
+      "points": 203,
+      "depth": [
+        {
+          "text": "RJ Mitte has died, and commenters remember his **Breaking Bad** role and his **kindness**",
+          "tier": "simple"
+        }
+      ],
+      "camps": null,
+      "comment_count": 64,
+      "terms": [
+        "cerebral palsy"
+      ],
+      "entities": [
+        "RJ Mitte",
+        "Breaking Bad",
+        "Walter White Jr.",
+        "Dean Norris",
+        "Bryan Cranston",
+        "Aaron Paul",
+        "Betsy Brandt",
+        "Bear Grylls",
+        "The Island"
+      ],
+      "comments": [
+        {
+          "by": "octaane",
+          "text": "RIP to an actor who was not defined by his disability in the show, but also at age 16 managed to hold his own against veteran actors dean norris, bryan cranston, aaron paul, and betsy brandt."
+        },
+        {
+          "by": "dmaa",
+          "text": "From wiki: * born with cerebral palsy * adopted, parents separated while 2 mths old, raised only by his mother * his mother disabled since he was 13, had to assume financial responsibility for her and his then 2yr old sister That must have been a very difficult life, hats off to him."
+        },
+        {
+          "by": "paulbjensen",
+          "text": "He was great in Breaking Bad. It was one of the things I appreciated about BB - how many tv shows would cast someone with Cerebral Palsy in it? It made the show feel more genuine and realistic, along with being set in a place in America that isn't a well-known location. I'm sad and angered to learn that his manager committed fraud with his tax payments - I hope the authorities pursue her and hold…"
+        },
+        {
+          "by": "zacharyblevins",
+          "text": "Lived in Brownsville for a bit and got to know him towards the end of my stint there. Very nice guy his family does a lot for the arts in the city. He will be incredibly missed."
+        },
+        {
+          "by": "NDlurker",
+          "text": "Incredibly sad. Great actor and sounds like he was a great person. Gone way too soon"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50065932,
+      "url": "https://www.argmin.net/p/faster-fourier-transforms",
+      "hn": "https://news.ycombinator.com/item?id=50065932",
+      "title": "A look at the math that OpenAI claims computes faster Fourier transforms",
+      "time": 1791859603,
+      "points": 204,
+      "depth": [
+        {
+          "text": "someone says OpenAI's **faster Fourier transform** depends on a **computer model** we don't have",
+          "tier": "simple"
+        },
+        {
+          "text": "The paper claims an **asymptotically faster FFT**, but Recht says its huge hidden constants make it useful only at impossibly large inputs. It also assumes **exact, arbitrary-precision complex arithmetic**, which real computers can't do.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: critics say the result relies on unrealistic assumptions and isn't practically useful; defenders say theoretical computer science isn't meant to produce practical algorithms, and abstract results still matter.",
+      "comment_count": 129,
+      "terms": [
+        "FFT",
+        "big-O",
+        "galactic algorithm",
+        "exact complex arithmetic"
+      ],
+      "entities": [
+        "OpenAI",
+        "ChatGPT",
+        "Ben Recht",
+        "James Cooley",
+        "John Tukey",
+        "Richard Lipton",
+        "Ken Regan",
+        "Jacques Morgenstern",
+        "Nir Ailon",
+        "STOC",
+        "FOCS",
+        "SODA"
+      ],
+      "comments": [
+        {
+          "by": "p11p",
+          "text": "This is a bad take. I will happily acknowledge the new term \"slopository\" which I had not heard before, while taking the author to task for malice towards theorists. STOC/FOCS/SODA, etc are not about \"doing practical algorithms\". If you want that, you go to ESA, ALENEX, or VLDB/SIGMOD, or any of the other more applied venues featuring this work. I don't think it's fair to just shit on theory…"
+        },
+        {
+          "by": "phoenixreader",
+          "text": "The author is attacking the field of theoretical algorithm design broadly as being useless. If we take the author's logic to its conclusion, many algorithms we learn about in a standard Algorithm Design course such as \"median of medians\" (finding the median in a list in O(n) worst-case time) is useless because it is not used in practice. Even the original 2019 Harvey–van der Hoeven result…"
+        },
+        {
+          "by": "senderista",
+          "text": "The author could have left AI entirely out of the essay and come to the same conclusions. He just really doesn't like TCS. That's fine, it's really a part of mathematics not science, but it's silly to dismiss a field with \"theoretical\" in its name for being impractical."
+        },
+        {
+          "by": "scuppernong",
+          "text": "Did not realize that the model of computation for all of the banner computational complexity results from last week was \"exact complex arithmetic.\" Is this and/or \"exact real arithmetic\" a common premise for papers in this field? My assumption as an outsider was that people mostly care about things equivalent to Turing machines. edit: by \"things equivalent to\" I really mean universal register…"
+        },
+        {
+          "by": "fonrex",
+          "text": "great article, and when i read that: \"I found the rot that develops inside applied mathematical theory when formalism becomes so detached from reality that a “breakthrough” is nothing more than an artifact of mathematicians not being able to properly specify the rules of their games in natural language.\" it's like in my company, where some software developers get frustrated with an LLM that…"
+        }
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!1mN7!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5f0c6088-ce61-4802-ac3f-c8bc4060a05a_840x599.jpeg"
+    },
+    {
+      "id": 50063717,
+      "url": "https://github.com/prabanta-dev/janas",
+      "hn": "https://news.ycombinator.com/item?id=50063717",
+      "title": "Janas: Run LLMs larger than RAM by streaming experts from SSD",
+      "time": 1791842743,
+      "points": 192,
+      "depth": [
+        {
+          "text": "someone built a way to run **huge AI models** by **streaming needed pieces from an SSD**",
+          "tier": "simple"
+        },
+        {
+          "text": "Janas keeps **model weights on disk**, streams each token’s needed experts from an NVMe SSD, and caches frequently used experts in memory. It reports **37 tok/s** (24 without drafts) on Qwen3-Next-80B on a 32 GB laptop, versus 2.8 tok/s for llama.cpp; the page warns its cache can leave a low-headroom desktop **slow or unresponsive**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Janas speed with drafts",
+              "37 tok/s"
+            ],
+            [
+              "Janas speed without drafts",
+              "24 tok/s"
+            ],
+            [
+              "llama.cpp speed",
+              "2.8 tok/s"
+            ],
+            [
+              "Model size",
+              "48 GB"
+            ],
+            [
+              "Laptop memory",
+              "32 GB"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters welcome more open-source AI tools; skeptics say this repeats work llama.cpp already does or adds to a crowded field of similar projects.",
+      "comment_count": 69,
+      "terms": [
+        "mixture-of-experts",
+        "SSD",
+        "RAM",
+        "tok/s",
+        "speculative decoding"
+      ],
+      "entities": [
+        "Janas",
+        "Janas-LLM",
+        "Qwen3-Next-80B",
+        "llama.cpp",
+        "Maurizio Cammalleri",
+        "C"
+      ],
+      "comments": [
+        {
+          "by": "dofm",
+          "text": "Amazing to me that something as wild as this is now basically a trope. I don't mean this negatively; open weights AI and open source tooling is about the only thing that gives me hope. The fact that there are dozens of these things hints at the beginning of the dull normalisation of openly available, non-monopoly AI tools, which is what is needed if we are all to survive."
+        },
+        {
+          "by": "jdb9001",
+          "text": "Every few weeks, someone stumbles on what llama.cpp has had for years again, and reimplements it. I'm not sure why."
+        },
+        {
+          "by": "suprjami",
+          "text": "Qwen 3? (Jumanji) What year is it? What a waste of time. Strata already does this with Qwen3.8-Flash-Next: https://github.com/Niko1221/Strata"
+        },
+        {
+          "by": "sieve",
+          "text": "> Using a GPU has, once, caused a driver reset that took the desktop with it. Only once? This has happened to me so many times with LLM-assisted development. I was writing an OCR engine and pathological shapes would cause OOM that would take the display out. On other occasions, the LLM would try to load 24GB of bf16 weights onto a 16GB GPU without understanding the consequences. Have to encode…"
+        },
+        {
+          "by": "3eb7988a1663",
+          "text": "If anyone needs to see what 62 tokens/second looks like: https://token.qusai.pro/?speed=62 Which seems sufficient for mortals who are not running gas town, but want a local model."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/2adde2cac2268a3421287d5439a225916abdfeb2be6b7fccafba58065cc10ebd/prabanta-dev/janas"
+    },
+    {
+      "id": 50059446,
+      "url": "https://www.wired.com/story/feds-got-warrants-to-use-fake-cell-towers-to-hunt-down-don-lemons-producer/",
+      "hn": "https://news.ycombinator.com/item?id=50059446",
+      "title": "Feds got warrants to use fake cell towers to hunt down Don Lemon's producer",
+      "time": 1791824896,
+      "points": 183,
+      "depth": [
+        {
+          "text": "feds got permission to use **fake cell towers** to find **Don Lemon’s producer**",
+          "tier": "simple"
+        },
+        {
+          "text": "Judges in Minnesota and Pennsylvania signed warrants to target **Jerome Richardson’s phone**; investigators also applied for warrants targeting Georgia Fort and Jamael Lundy, but the records don’t show whether those were approved or whether a simulator was actually used to locate him. The devices impersonate cell towers and can collect identifying information from **nearby phones**; prosecutors later conceded Lemon and Fort **did not chant**, despite claims in supporting affidavits.",
+          "tier": "substance",
+          "data": [
+            [
+              "people charged in the case",
+              "39"
+            ],
+            [
+              "warrant affidavits with the false claim",
+              "at least 15"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 103,
+      "terms": [
+        "cell-site simulator",
+        "Stingray",
+        "IMSI catcher",
+        "pen register"
+      ],
+      "entities": [
+        "Don Lemon",
+        "Jerome Richardson",
+        "Georgia Fort",
+        "Jamael Lundy",
+        "Cities Church",
+        "ICE",
+        "Department of Homeland Security",
+        "WIRED"
+      ],
+      "comments": [
+        {
+          "by": "tamimio",
+          "text": "http://archive.is/KPP2r"
+        },
+        {
+          "by": "randycupertino",
+          "text": "Imagine if they went after the child predators listed in the Epstein files with the same amount of force they are going after journalists and critics of ICE."
+        },
+        {
+          "by": "Quitschquat",
+          "text": "Curious if there are counter measures for devices like Stingrays or IMSI catchers"
+        },
+        {
+          "by": "mlmonkey",
+          "text": "What will Stingrays do if a mobile device uses Starlink? There's no way the Feds are going to lose this ability to deploy Stingrays once Starlink Mobile comes around."
+        },
+        {
+          "by": "downrightmike",
+          "text": "The affidavits supporting the applications to track Richardson claimed video showed Fort, Lemon, Richardson, and others “chanting with agitators.” Prosecutors have since conceded that Lemon and Fort did not chant. According to her lawyers, the government acknowledged that the false claim appeared in at least 15 warrant affidavits."
+        }
+      ],
+      "image": "https://media.wired.com/photos/6ac94a7a4676236d922d7944/191:100/w_1280,c_limit/Security_Feds%20Got%20Warrants%20to%20Use%20Fake%20Cell%20Towers%20to%20Hunt%20Down%20Don%20Lemon%E2%80%99s%20Producer_v1.jpg"
+    },
+    {
+      "id": 50064536,
+      "url": "https://doi.org/10.1111/acel.70751",
+      "hn": "https://news.ycombinator.com/item?id=50064536",
+      "title": "Blood cells from 80-year-old donor become stem cells with molecular age under 20",
+      "time": 1791848062,
+      "points": 168,
+      "depth": [
+        {
+          "text": "blood cells from an **80-year-old donor** became **stem cells** with a **molecular age under 20**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter **worried about cancer**, asking whether the cells would keep accumulating mutations; another compared the process to an **immortal jellyfish** resetting damage.",
+          "tier": "substance",
+          "data": [
+            [
+              "donor age",
+              "80-year-old"
+            ],
+            [
+              "molecular age",
+              "under 20"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 116,
+      "terms": [
+        "molecular age",
+        "stem cells",
+        "mutations",
+        "cell reprogramming",
+        "bioelectricity",
+        "octogenarian"
+      ],
+      "entities": [
+        "Michael Levin",
+        "SENS Foundation",
+        "LEVF",
+        "RMR2",
+        "GTA VI",
+        "Dracula"
+      ],
+      "comments": [
+        {
+          "by": "ympb121",
+          "text": "It may be a dumb reason to do it, but recently I've started to focus on my health a bit more because of news like this (more exercise and healthier food). The thinking is, if we find a way to massively extend the human lifespan/reverse aging I want to live long enough for that. I'd be pissed if we as humanity solved aging and I die just before that, not taking any chances."
+        },
+        {
+          "by": "usrnm",
+          "text": "But what about cancer? The cell still has the same DNA, so it will keep accumulating mutations over its extended lifetime, right?"
+        },
+        {
+          "by": "taneq",
+          "text": "Sounds like the immortal jellyfish solution. We squeeze entropy out of our DNA by creating a new fresh cell (ovum) that’s very sensitive to genetic defects, meaning if it survives it’s probably good. The jellyfish just shrinks back to a single cell (presumably with some mechanism for keeping the ‘best’ cell) to reset the damage. This is doing the same thing, but piece by piece. Edit: And wow…"
+        },
+        {
+          "by": "inshard",
+          "text": "Slightly tangential: Michael Levin’s work on bioelectricity and cell reprogramming is pretty interesting in context of emergent behaviors in groups of cells. https://en.wikipedia.org/wiki/Michael_Levin_(biologist)"
+        },
+        {
+          "by": "bitwize",
+          "text": "Because this is the worst timeline, we're getting cell reprogramming used to grow artificial brains to run AI workloads before functional aging remediation... let alone GTA VI."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50061859,
+      "url": "https://www.markround.com/blog/2026/zx-spectrum-intro",
+      "hn": "https://news.ycombinator.com/item?id=50061859",
+      "title": "Writing a Demoscene Intro for the ZX Spectrum",
+      "time": 1791834000,
+      "points": 162,
+      "depth": [
+        {
+          "text": "someone made a **retro demo** for a **ZX Spectrum**, with scrolling text, music and a starfield",
+          "tier": "simple"
+        },
+        {
+          "text": "The author built it for a stock **128Kb Spectrum**, with scrolltext, a three-channel AY soundtrack, bouncing VU meters and a parallax starfield. The write-up explains the **Z80 assembly** and **weird screen layout** tricks behind it.",
+          "tier": "substance",
+          "data": [
+            [
+              "Spectrum memory",
+              "128Kb"
+            ],
+            [
+              "intro code",
+              "10287 bytes"
+            ],
+            [
+              "complete tape image",
+              "19552 bytes"
+            ],
+            [
+              "average code-production rate",
+              "~ 455 bytes per week"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 32,
+      "terms": [
+        "demoscene",
+        "crack intro",
+        "Z80 assembly",
+        "scrolltext",
+        "VU meter"
+      ],
+      "entities": [
+        "ZX Spectrum",
+        "Sinclair BASIC",
+        "Amiga",
+        "Z80",
+        "AY",
+        "Pasmo",
+        "zmakebas",
+        "FUSE",
+        "TNFS",
+        "ProTracker",
+        "Jim Blimey"
+      ],
+      "comments": [
+        {
+          "by": "JdeBP",
+          "text": "The only rather sad part is around 2/3 of the way through, where the author had to use a pre-compiled binary from the Internet Archive, because the original WWW site had rotted away, and the source code did not assemble. This stuff tends to rot if the community does not do the preservation work. That said, Sergey Bulba's WWW site is still around and the relevant stuff can be found today at…"
+        },
+        {
+          "by": "SteveGerencser",
+          "text": "I was in high school when the demoscene took off in the 80s. It forever tainted my view of software development as full of lazy programmers not bothering to optimize code as hardware got better and better. Myself included."
+        },
+        {
+          "by": "ilaksh",
+          "text": "Nice. Check out this one though: https://demozoo.org/productions/13188/"
+        },
+        {
+          "by": "eggsome",
+          "text": "Demoscene is still a thing! https://syntaxparty.org/ is on in a couple of weeks if you happen to be in Melbourne."
+        },
+        {
+          "by": "pjmlp",
+          "text": "Great article, and the demo has quite a few goodies into it, and props to a fellow \"Speccy and Amiga\" fan. A warm time travel back to 1980's, high school and coding partings at friend's houses."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50065892,
+      "url": "https://ryanbigg.com/2026/10/leaving-tech",
+      "hn": "https://news.ycombinator.com/item?id=50065892",
+      "title": "Leaving Tech",
+      "time": 1791859175,
+      "points": 160,
+      "depth": [
+        {
+          "text": "a developer is **stepping away** from tech after getting **24 rejections**",
+          "tier": "simple"
+        },
+        {
+          "text": "He has **20 years** as a developer, has written programming books, and maintains two of the most downloaded Ruby packages. The rejection process is causing **mental harm**; he wants **remote work** from Warrnambool, and says Melbourne is 3.5hrs away on the train.",
+          "tier": "substance",
+          "data": [
+            [
+              "applications",
+              "over 3 dozen"
+            ],
+            [
+              "rejections",
+              "24"
+            ],
+            [
+              "developer experience",
+              "20 years"
+            ],
+            [
+              "distance to Melbourne",
+              "3.5hrs"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say insisting on remote work from a small Australian city narrows his options; others say the number of applications is too low to quit.",
+      "comment_count": 168,
+      "terms": [
+        "ATS",
+        "hybrid",
+        "cold applying",
+        "LLM",
+        "CRUD",
+        "tokens",
+        "FAANG"
+      ],
+      "entities": [
+        "Ruby",
+        "JavaScript",
+        "ESP32-P4",
+        "RP2350",
+        "Universal",
+        "LinkedIn",
+        "FAANG",
+        "Ryan",
+        "DoD"
+      ],
+      "comments": [
+        {
+          "by": "danpalmer",
+          "text": "Reading this, I wonder if the problem is AI or the remote market. From what I've heard, here in Sydney the market is pretty hot, at least for experienced folks. My experience matches that. That said I know that remote jobs are uncommon. > I know I can work remotely effectively because I did it for the last 6 years. 6 years means that Ryan started right around COVID. Looking back I don't think…"
+        },
+        {
+          "by": "usui",
+          "text": "I understand the stated feelings of indignation and resentment toward a process that was broken well before the current market conditions, but given the current conditions, isn't applying to 36 jobs and deciding to back out a bit hasty?"
+        },
+        {
+          "by": "shepherdjerred",
+          "text": "It is, unfortunately, a numbers game (unless you have connections) In 2024 I applied to ~100 jobs and was rejected or ghosted by the vast majority. It's not a reflection of your ability. Finding a job is strangely difficult even if you are more than capable. My writeup of finding a job ~2 years ago: https://sjer.red/blog/2024/job-hunt/"
+        },
+        {
+          "by": "diurnalist",
+          "text": "> The industry at the moment wants people who know how to use AI to further the business goals but here’s the thing nobody wants to admit: not one person knows how to use AI to actually do that. I use it to write a lot of my code and then I critically review that code before it reaches production. Unfortunately I think the real sentiment here is \"here's the thing I don't want to admit: I don't…"
+        },
+        {
+          "by": "stephen_cagle",
+          "text": "Getting a 24 out of 36 response rate on your applications is an S tier level response rate. I mean, the news is bad (rejection), but that is pretty incredible. I can't make up my mind if that means he is so good that actual human beings look at his profile, or some sort of ATS filtering system just hard rejects him with prejudice."
+        }
+      ],
+      "image": "https://ryanbigg.com/images/og.png"
+    },
+    {
+      "id": 50071017,
+      "url": "https://www.apple.com/apple-homeview/",
+      "hn": "https://news.ycombinator.com/item?id=50071017",
+      "title": "Apple HomeView",
+      "time": 1791896532,
+      "points": 174,
+      "depth": [
+        {
+          "text": "Apple’s **HomeView** puts a shared **smart-home screen** and speakers in one place",
+          "tier": "simple"
+        },
+        {
+          "text": "It has a **7-inch Liquid Retina display** and recognizes **up to six people**, with a personalized experience for each. It also supports compatible third-party audio and video apps from an iPhone.",
+          "tier": "substance",
+          "data": [
+            [
+              "Display",
+              "7-inch"
+            ],
+            [
+              "Recognized users",
+              "up to six"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: fans see a useful, good-looking home screen; skeptics say it feels redundant or too limited without broader app support.",
+      "comment_count": 218,
+      "terms": [
+        "HomeKit",
+        "Matter",
+        "AirPlay",
+        "Secure Exclaves",
+        "PoE",
+        "vibecode"
+      ],
+      "entities": [
+        "Apple",
+        "HomeView",
+        "Siri AI",
+        "Apple Intelligence",
+        "Home app",
+        "iPhone",
+        "iPad",
+        "FaceTime",
+        "AirPlay",
+        "HomePod",
+        "HomeKit",
+        "Matter"
+      ],
+      "comments": [
+        {
+          "by": "Brendinooo",
+          "text": "Props to Apple for making this. Always cool to see them try stuff. That said: I watched their video demo with the family getting ready in the morning: there are some interesting ideas here but imo if this doesn't get reasonably full access to the App Store then it's a no-go for me. Like: FaceTime while cooking, sure, but those calls tend to happen on Messenger and Snapchat for us. Music in the…"
+        },
+        {
+          "by": "postalcoder",
+          "text": "The overwhelming cynicism about this product I'm seeing here on HN tells me it's going to be a hit ."
+        },
+        {
+          "by": "xd1936",
+          "text": "Through the incredible power of Siri AI™, you can now get a \"I didn't understand that. Do you want to search the web for 'turn on the kitchen lights'?\" response faster than ever before."
+        },
+        {
+          "by": "vessenes",
+          "text": "This is a nice design, and a very aggressive price. I like the design enough I'm interpreting that price as a sign Apple's serious about getting these into a lot of homes.. I wasn't thinking I'd buy one of these, but I changed my mind looking at the pitch -- at this price it's sort of a 'hmm, I could imagine wanting one of those in X room'. I'm curious if this is intended to act as a matter hub…"
+        },
+        {
+          "by": "sajithdilshan",
+          "text": "I wonder if someone can just vibecode an app for iPad mini to do the same things as HomeView and just mount it on the wall or have a 3D printed stand for it."
+        }
+      ],
+      "image": "https://www.apple.com/v/apple-homeview/a/images/meta/apple-homeview__lk7n65hb6bm2_og.png?202610121723"
+    },
+    {
       "id": 50059115,
       "url": "https://research.meta.ai/blog/muse-wonder",
       "hn": "https://news.ycombinator.com/item?id=50059115",
@@ -1302,13 +2760,130 @@
     }
   ],
   "glossary": {
+    "CGI": "Common Gateway Interface: a way for a website's server to run a program for each request and return what it prints.",
+    "SQLite": "A small database that can be stored in a single file.",
+    "progressive enhancement": "Building a website so its basic parts work first, then adding extras for browsers that can handle them.",
+    "httpd": "A program that receives website requests and serves pages or runs the app.",
+    "borrow checker": "The Rust tool that checks code won’t use a value after it’s gone or let it be changed unsafely.",
+    "lifetime": "A rule that says how long a shortcut to some data stays safe to use.",
+    "covariance": "A rule that determines how a change in a reference’s lifetime carries through to a type that contains it.",
+    "soundness hole": "A flaw that lets a program break a guarantee the language is supposed to enforce.",
+    "Drop": "Rust code that runs automatically when a value is being cleaned up.",
+    "stack-use-after-scope": "A program used memory from a local variable after that variable had gone away.",
+    "'static": "A reference marked this way is expected to remain valid for the whole run of the program.",
+    "chemotaxis": "The way a living thing moves in response to chemicals around it.",
+    "attractant": "A chemical that a cell moves toward.",
+    "CheY-p": "A chemically changed messenger that helps switch a bacterium's swimming motor.",
+    "phosphorylation": "A change where a small chemical piece is attached to a protein, altering how it behaves.",
+    "methylation": "A chemical tag on DNA that can affect whether a gene is active.",
+    "flagellar motor": "The tiny spinning machine at a bacterium's tail that helps it swim.",
+    "artificial neural network": "A computer system inspired by brain cells that learns patterns from examples.",
+    "local optimum": "A solution that seems best among nearby options, even though a better one may exist elsewhere.",
+    "autopoiesis": "The idea that a living system continually makes and maintains itself.",
+    "AI accelerator": "A chip made to handle AI calculations.",
+    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "LPDDR5X": "A type of memory designed to use less power; here, it provides memory for the card.",
+    "bandwidth": "How quickly data can move between parts of a computer.",
+    "PFLOPS": "Peta floating-point operations per second: a measure of how many calculations a machine can do each second.",
+    "CFTC": "Commodity Futures Trading Commission: a US agency that oversees certain kinds of trading.",
+    "prediction markets": "Places where people bet on the outcome of future events.",
+    "futures": "Agreements to buy or sell something later at a price set now, often used to manage or bet on price changes.",
+    "neural network": "A computer program that learns patterns from examples and uses them to produce answers or predictions.",
+    "model weights": "The learned settings inside an AI that shape how it responds.",
+    "backdoor attack": "A hidden change that makes a system behave differently when it sees a chosen signal.",
+    "secret trigger": "A specific input that makes hidden behavior switch on.",
+    "elicitation": "Trying to bring out a behavior by testing or prompting a model.",
+    "fine-tuning": "Training an already-built model a bit more on examples for a particular job.",
+    "weight noising": "Changing a model's stored numbers randomly to see whether its behavior changes.",
+    "gradient-based trigger search": "A computer-guided search for an input that switches on hidden behavior.",
+    "latent adversarial training": "Training a model with tricky examples made inside its own workings.",
+    "cryptographic assumptions": "Claims that rely on certain ways of scrambling information being difficult to break.",
+    "CBRN": "Chemical, biological, radiological, and nuclear: hazards involving dangerous substances or weapons.",
+    "Rice's theorem": "A result saying there is no universal way to decide certain things a program might do just by looking at its code.",
+    "static analysis": "Checking code for possible problems without running it.",
+    "RLHF": "Reinforcement Learning from Human Feedback: a way to train an AI by having people rate its answers.",
+    "sleeper agent": "A hidden behavior that stays dormant until a particular input or situation wakes it up.",
+    "overfit": "When a model matches its training examples too closely and handles new ones poorly.",
+    "network.http.response.timeout": "A Firefox setting that limits how long the browser waits for the server to answer.",
+    "about:config": "A Firefox page where you can change settings that regular menus don't show.",
+    "TCP-KeepAlive": "Transmission Control Protocol keep-alive: a way for computers to check that a network connection is still open.",
+    "resumable download": "A download that can continue from where it stopped instead of starting over.",
+    ".part file": "A temporary file that holds the portion of a download received so far.",
+    "FMA": "Fused multiply-add: an instruction that multiplies two numbers and adds a third in one step.",
+    "SDM": "Intel Software Development Manual: Intel’s reference guide to how its processor instructions are meant to work.",
+    "#UD": "Undefined instruction: an error a processor raises when it encounters an instruction it cannot run.",
+    "VEX.DDS": "An instruction-encoding label for a setup where the result replaces one of the input registers.",
+    "AVX-512": "A set of Intel processor instructions for working on wider batches of numbers at once.",
+    "rounding control": "A setting that determines how a result is rounded when its exact value doesn’t fit.",
+    "inverter": "A part that manages electricity so it can drive the electric motor.",
+    "AFCI": "Arc Fault Circuit Interrupter: a breaker that cuts power when it detects electrical arcing that could start a fire.",
+    "duck curve": "A graph of electricity demand that dips when solar panels produce lots of power and rises again around the edges of the day.",
+    "synchronous generator": "A machine that makes electricity while spinning in step with the grid’s timing.",
+    "VPP": "Virtual power plant: a group of home batteries a utility can coordinate to help supply electricity when demand is high.",
+    "on-premises": "Software run on a company’s own computers instead of someone else’s service.",
+    "DLP": "Data Loss Prevention: tools meant to stop information from being shared where it should not be.",
+    "SIEM": "Security information and event management: software that gathers security activity for IT teams to review.",
+    "BYOD": "Bring Your Own Device: a workplace policy that lets people use their personal phones or computers for work.",
+    "telemetry": "Information a program sends back about how it is being used or whether it is working properly.",
+    "vendor lock-in": "When relying on a company’s tools makes it difficult to move to another company’s tools.",
+    "GPO": "Group Policy Object: a set of company computer rules IT can apply centrally.",
+    "embedding model": "An AI tool that turns things like text and audio into forms it can compare, so similar things end up close together.",
+    "multimodal": "Able to work with more than one kind of input, such as text and images.",
+    "word error rate": "A way to score a transcript by how many words it gets wrong; lower means fewer mistakes.",
+    "Neural Engine": "A part of a Mac's chip that handles certain AI tasks directly on the device.",
+    "cuneiform": "A writing system made by pressing wedge-shaped marks into clay.",
+    "divination": "Trying to learn what may happen by interpreting signs, such as birds.",
+    "logistics": "Planning how people and supplies get where they need to go.",
+    "Hurrian": "An ancient language used in some of the tablets described here.",
+    "cloud computing": "Computing that happens on remote computers, which you use over the internet.",
+    "network effect": "A service becomes more useful as more people use it, which can attract even more people.",
+    "special-purpose software brain": "An AI program built to do one kind of job, rather than many different things.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "open weights": "The model's learned settings are available for people to download and run themselves.",
+    "Singularity": "The idea that AI could become far smarter than people and rapidly change society.",
+    "cerebral palsy": "A condition that can affect how a person moves and keeps their balance.",
+    "FFT": "Fast Fourier transform: a way to find which repeating frequencies make up a signal.",
+    "big-O": "A way to describe how an algorithm's workload grows as the input gets bigger, without counting fixed multipliers.",
+    "galactic algorithm": "An algorithm whose theoretical speed only shows up at inputs too large to be practical.",
+    "exact complex arithmetic": "An assumption that a computer can handle extremely precise numbers in one step, however large they get.",
+    "mixture-of-experts": "A model split into specialist parts, with only some parts used for each piece of text it produces.",
+    "SSD": "Solid-state drive: storage that keeps files even when the machine is turned off.",
+    "RAM": "Random-Access Memory: a computer's working space for information it is using right now.",
+    "tok/s": "Tokens per second: a rough measure of how quickly an AI produces text.",
+    "speculative decoding": "A drafting step where one part guesses upcoming text and the main model checks those guesses to try to answer faster.",
+    "cell-site simulator": "A device that pretends to be a mobile phone tower so investigators can locate phones; it can also gather identifying details from nearby phones.",
+    "Stingray": "Another name for a device that pretends to be a cell phone tower and can collect information from phones nearby.",
+    "IMSI catcher": "Another name for a device that pretends to be a cell phone tower and can collect information from phones nearby.",
+    "pen register": "A record that can show which phone numbers a particular phone contacts.",
+    "molecular age": "A cell’s apparent age based on its molecules, rather than the person’s age.",
+    "stem cells": "Cells that can develop into other kinds of cells.",
+    "mutations": "Changes in DNA; some can affect how a cell works.",
+    "cell reprogramming": "Changing a cell so it acts more like a different kind of cell.",
+    "bioelectricity": "Electrical signals in living cells that can help coordinate what they do.",
+    "octogenarian": "Someone who is in their eighties.",
+    "demoscene": "A community where people make computer demos to show off skill and creativity.",
+    "crack intro": "A short music-and-graphics intro made by a group that cracked a game's copy protection.",
+    "Z80 assembly": "A way of writing direct instructions for the Z80 computer chip.",
+    "scrolltext": "A line of words that moves across the screen.",
+    "VU meter": "A display that shows how loud the sound is.",
+    "ATS": "Applicant Tracking System: software employers use to collect and sort job applications.",
+    "hybrid": "A car setup that combines a fuel-burning engine with electric power.",
+    "cold applying": "Applying for a job without already knowing someone at the company.",
+    "CRUD": "Create, Read, Update, Delete: basic actions an app can take on stored information.",
+    "tokens": "Small pieces of text an AI counts as it reads or writes; they can affect how much a request costs.",
+    "FAANG": "Facebook, Amazon, Apple, Netflix, and Google: a nickname for some of the biggest tech companies.",
+    "HomeKit": "Apple’s system for connecting and controlling compatible smart-home accessories.",
+    "Matter": "A smart-home standard that helps devices from different brands work together.",
+    "AirPlay": "Apple’s way to send audio or video from one device to a compatible speaker or screen.",
+    "Secure Exclaves": "Protected areas inside the chip that handle camera and microphone information away from the rest of the device.",
+    "PoE": "Power over Ethernet: a way to send electricity and network data through one cable.",
+    "vibecode": "Writing an app by telling an AI tool what you want instead of coding every part by hand.",
     "agentic tasks": "Work where an AI can take steps toward a goal, not just answer a question.",
     "Active Memory": "Meta's name for carrying useful details about you between conversations and bringing them back when a task needs them.",
     "Active Focus": "Meta's name for an AI sticking with a hard goal, trying other approaches, and adjusting when things change.",
-    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
     "benchmark": "A test people use to compare how well different tools do a task.",
     "benchmaxxing": "Focusing on doing well on tests, sometimes in ways that may not translate to useful real-world ability.",
-    "CBRN": "Chemical, biological, radiological, and nuclear: hazards involving dangerous substances or weapons.",
     "daemon": "A program that runs in the background and handles a task without being started each time.",
     "opt-in": "A feature you choose to turn on, rather than one enabled by default.",
     "package manager": "A tool that installs software and can keep it updated for you.",
@@ -1319,7 +2894,6 @@
     "VPN": "Virtual private network: a service that sends your internet traffic through another computer, often to protect it or make it appear to come from somewhere else.",
     "ransomware": "Malicious software that blocks access to files or systems and demands money to restore it.",
     "EOS": "End of Support: when a maker stops providing help or updates for a product.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "redlining": "Marking proposed edits to a contract so the other side can review them.",
     "human in the loop": "A person checks an AI’s recommendation and can change it before it affects someone.",
     "open-weight model": "A model whose trained settings are shared so other people can use them.",
@@ -1335,7 +2909,6 @@
     "SDR": "Software-defined radio: a radio that uses software to handle signals instead of being limited to one fixed radio function.",
     "Msps": "Million samples per second: how many times each second the radio takes a reading.",
     "IQ": "Paired numbers used to represent a radio signal so software can work with it.",
-    "FFT": "Fast Fourier transform: a way to find which repeating frequencies make up a signal.",
     "10 GbE": "10 Gigabit Ethernet: a fast wired network connection that can carry lots of captured data to a computer.",
     "non-protein-coding": "A stretch of DNA that doesn't carry instructions for making a protein.",
     "RNA": "A molecule cells use to carry instructions for making proteins.",
@@ -1364,7 +2937,6 @@
     "deterministic": "Something that gives the same result when it gets the same input.",
     "lossy knowledge base": "A store of information that can answer questions but may leave out or blur details.",
     "open source": "Software whose code is shared so other people can inspect, run, or change it.",
-    "open weights": "The model's learned settings are available for people to download and run themselves.",
     "acceptable use policy": "A set of rules saying what you are allowed to do with a product.",
     "RCE": "Remote Code Execution: a flaw that lets an attacker make a computer run their commands from somewhere else.",
     "Flask session cookie": "A small note a Flask website stores in your browser so it can remember details about your visit.",
