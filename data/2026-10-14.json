@@ -2,6 +2,590 @@
   "date": "2026-10-14",
   "cards": [
     {
+      "id": 50083130,
+      "url": "https://github.com/android/ndk/issues/2260",
+      "hn": "https://news.ycombinator.com/item?id=50083130",
+      "title": "AOSP Source Releases Are So Late Developers Disassemble Libraries to Report Bugs",
+      "time": 1791958681,
+      "points": 320,
+      "depth": [
+        {
+          "text": "Android's **text search** mistakes **non-ASCII characters** for matches, and someone **traced the bug** in shipped code",
+          "tier": "simple"
+        },
+        {
+          "text": "On Android 17 builds from September 2026, wcscspn() and wcspbrk() stop at the first character at or above U+0100 when the reject set has two or more characters, all below U+0100. A sweep returned the wrong result for **1,111,808 code points**. The report used **disassembly** to trace it to the shipped libc.so; public Android 17 source showed **different code**, prompting complaints about delayed AOSP releases.",
+          "tier": "substance",
+          "data": [
+            [
+              "affected code points",
+              "1,111,808"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say the unavailable current source makes it hard to inspect what ships; others say this bug could be reported without disassembly, which was only extra root-cause work.",
+      "comment_count": 144,
+      "terms": [
+        "AOSP",
+        "NDK",
+        "ASCII",
+        "libc",
+        "disassembly",
+        "wcscspn()",
+        "reject set",
+        "code point"
+      ],
+      "entities": [
+        "Android",
+        "AOSP",
+        "bionic",
+        "Google",
+        "GitHub",
+        "NDK",
+        "Pixel 8a",
+        "Visual Pinball",
+        "Wine",
+        "VBScript",
+        "LLVM",
+        "Samsung"
+      ],
+      "comments": [
+        {
+          "by": "kodebach",
+          "text": "I can't prove it, but I still think this is (partly) due to a recent EU regulation majorly backfiring.\nI can't remember which one it was, but one of the recent regulations mandates that devices get updates for a certain period. Within that period a manufacturer must provide each update for all their devices in a short timeframe. The intention was to prevent flagships getting updates immediately…"
+        },
+        {
+          "by": "userbinator",
+          "text": "One character: a plain compare loop. Correct. Not surprisingly, I get slight hints of Claudism in the text. AI \"opening\" the source of software is one of the best things I've seen going for it so far."
+        },
+        {
+          "by": "reddalo",
+          "text": "The new Google motto seems to be \"be as evil as you can\". We need an Android alternative, something that respects users' freedom."
+        },
+        {
+          "by": "dethos",
+          "text": "We need a third option. Be it SalfishOS, Ubuntu Touch, Nura, or whatever picks up with a sizable community. We just need to start developing and investing in that one. It won't be perfect, but it will offer an alternative and control to the users."
+        },
+        {
+          "by": "evan_a_a",
+          "text": "Bit of a hyperbolistic title. The core of the bug report doesn't require disassembly of the library. The bug author just went the extra step to do a root cause investigation, which of course requires light reversing work."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/faa19897607d84aad613f66ea165a6363ff4d54160d84554507628d175f561b1/android/ndk/issues/2260"
+    },
+    {
+      "id": 50084240,
+      "url": "https://typeof.net/Iosevka/",
+      "hn": "https://news.ycombinator.com/item?id=50084240",
+      "title": "Iosevka is an open-source, sans-serif and slab-serif, monospace font",
+      "time": 1791966479,
+      "points": 226,
+      "depth": [
+        {
+          "text": "Iosevka is a **coding font** with **narrow letters** and lots of ways to customize its look",
+          "tier": "simple"
+        },
+        {
+          "text": "Its monospace glyphs are exactly **1/2em wide** by default, letting more columns fit on screen. It has Term and Fixed families for terminal users, plus **146 configurable characters** and **19 stylistic sets**.",
+          "tier": "substance",
+          "data": [
+            [
+              "default monospace glyph width",
+              "1/2em"
+            ],
+            [
+              "configurable characters",
+              "146"
+            ],
+            [
+              "stylistic sets",
+              "19"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: fans praise its compactness and customizability; one commenter dislikes code ligatures because some symbols are hard to tell apart.",
+      "comment_count": 81,
+      "terms": [
+        "monospace",
+        "quasi-proportional",
+        "glyph",
+        "ligature",
+        "stylistic set",
+        "OpenType"
+      ],
+      "entities": [
+        "Iosevka",
+        "Iosevka Slab",
+        "Iosevka Aile",
+        "Iosevka Etoile",
+        "PatEL",
+        "Renzhi",
+        "be5invis",
+        "Fira Code",
+        "Fira Mono",
+        "JetBrains Mono",
+        "Maple Mono",
+        "Pragmata Pro",
+        "Commit Mono",
+        "Adwaita Mono",
+        "Aporetic",
+        "Berkeley Mono"
+      ],
+      "comments": [
+        {
+          "by": "oefrha",
+          "text": "IMO a font specimen site may be the worst place to use font-display: swap. Was wondering why I was looking at what seemed indistinguishable from Courier, turns out what I saw was exactly Courier."
+        },
+        {
+          "by": "wartywhoa23",
+          "text": "Iosevka, my absolutely most loved font for years! I've been using a custom version - you can customize the font¹ and build your own ttf (or better yet, ttc) using the build system supplied in the repository². be5invis, the author of the font, deserves a special mention for creating a whole custom DSL called PatEL (Parametric Type Expression Language) to generate the font programmatically! Renzhi…"
+        },
+        {
+          "by": "jve",
+          "text": "Is it only me but I really dislike \"Code Ligations\"? I have to mark some chars to count how many consecutive \"=\" simbols there are... or \\/ looking like V without having other chars near it to distinguish. Having to copy paste diamond shape to find out it is <>. arrows with squiggly tails, /> being ugly, <. having dot in the middle... That could be the maximum I'd like out of font to have…"
+        },
+        {
+          "by": "GCUMstlyHarmls",
+          "text": "First time I used Iosevka I felt really nauseated, kind of like getting motion sickness, it was a really bizarre experience for a font to give me. I was on a smaller screen though and getting some more characters in without getting tiny was actually a selling point, so I gave it another go and eventually got over the feeling. Now (after ... gosh, 6, 7, 8? years probably) I love it, use it…"
+        },
+        {
+          "by": "TwoFerMaggie",
+          "text": "Have been using it for a couple years. Before that I was using Fira Code/Mono which was also fantastic. However, once I got used to the condensed Iosevka, all the other fonts just felt loose and not space efficient enough in my IDE and terminal."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50079865,
+      "url": "https://www.cphiri.dev/presentations/recreational-programming",
+      "hn": "https://news.ycombinator.com/item?id=50079865",
+      "title": "Recreational Programming",
+      "time": 1791930813,
+      "points": 219,
+      "depth": [
+        {
+          "text": "someone makes the case for **coding for fun**, with **small experiments**, personal tools, and **no need for a payoff**",
+          "tier": "simple"
+        },
+        {
+          "text": "It suggests spending **2-4 hours** exploring one new thing, building toy versions of tools you use, or explaining a project as you build it. Abandoned repos count as **exploration, not failure**.",
+          "tier": "substance",
+          "data": [
+            [
+              "weekly experiment",
+              "2-4 hours"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some celebrate coding for its own joy; others say making software that people value feels more fulfilling. Commenters also split on AI, with some finding it helps them build and others feeling existential about programming as a hobby.",
+      "comment_count": 89,
+      "terms": [
+        "intrinsic motivation",
+        "ROI",
+        "repo",
+        "CLI",
+        "LLM",
+        "ray tracer"
+      ],
+      "entities": [
+        "Zikani Nyirenda",
+        "Jeremiah Chienda",
+        "Tsoding Daily",
+        "ThePrimeagen",
+        "Casey Muratori",
+        "Handmade Hero",
+        "Ben Eater",
+        "Dan Luu",
+        "Go",
+        "Rust",
+        "Python",
+        "Vue",
+        "React",
+        "Neovim"
+      ],
+      "comments": [
+        {
+          "by": "mrandish",
+          "text": "The definition perfectly describes how I started out in computers in 1981. Brought home a 4K, 8-bit computer from Radio Shack that I could barely afford and hooked it to the TV. Had never touched a computer before, zero prior knowledge and only had the manual in the box (which was surprisingly good). No one I'd ever met owned a computer at home or used one at work and I'd never really considered…"
+        },
+        {
+          "by": "severak_cz",
+          "text": "I can definitely see myself in there. I am mostly problem solver but each problem it's also place for explorign new ideas and/or developing some in-house library which gets reused over and over. Also I get easily distracted and thrown into some ADHD sidequest and end up with font tool which can also render maps. See https://github.com/severak"
+        },
+        {
+          "by": "1dontknow_",
+          "text": "Is this a slideshow or what exactly? I mean clearly its not an article, but also slideshow Id expect more images and make it more skimmable and have a sense whats front or back and which page Im at. Im sorry I really wanted to read what you wrote but please put it in a proper form because right now its uncomfortable."
+        },
+        {
+          "by": "gauntr",
+          "text": "I feel that. I got into programming because of video games. At some point I wanted to know how they are made and wanted to create something on my own. Through a friend I got known to BlitzBasic3D and shortly after BlitzMax. I learned to program while making games, just for me, most things never got released. I spent hours deep into the mornings at time and loved it. It's quite some years since I…"
+        },
+        {
+          "by": "smnplk",
+          "text": "Shout out to Tsoding [1]. He is my favorite recreational programmer. [1] - https://www.youtube.com/@TsodingDaily"
+        }
+      ],
+      "image": "https://www.cphiri.dev/og.png"
+    },
+    {
+      "id": 50082470,
+      "url": "https://felixrieseberg.com/",
+      "hn": "https://news.ycombinator.com/item?id=50082470",
+      "title": "Felix Rieseberg Homepage",
+      "time": 1791952953,
+      "points": 212,
+      "depth": [
+        {
+          "text": "someone turned their **homepage** into a **little room** you can explore with **keyboard controls**",
+          "tier": "simple"
+        },
+        {
+          "text": "Press C to use the computer, M to use the CD player, Z to zoom the TV, or 1–6 for monitor buttons. Rieseberg says he works on **Claude at Anthropic** and is an **Electron co-maintainer**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some liked its nostalgic interactive design; others complained about performance and accessibility.",
+      "comment_count": 82,
+      "terms": [
+        "Electron",
+        "Flash",
+        "tokens",
+        "UI-maxxing"
+      ],
+      "entities": [
+        "Felix Rieseberg",
+        "Claude",
+        "Anthropic",
+        "Electron"
+      ],
+      "comments": [
+        {
+          "by": "virtualritz",
+          "text": "It froze my laptop after I clicked once. Couldn't even SSH into it any more even though Tailscale showed it as alife. Had to reboot. So this website definitely left an impression."
+        },
+        {
+          "by": "xtiansimon",
+          "text": "Feeling like a Gabocorp moment? https://youtu.be/zs34g9jBUhg"
+        },
+        {
+          "by": "ashkankiani",
+          "text": "Given their current role, it finally explains a lot of things about why I don't like Anthropic's UIs."
+        },
+        {
+          "by": "transitivebs",
+          "text": "an in-depth post about how he made it: https://felixrieseberg.com/made-by-mechanical-means/ extremely fascinating details in here"
+        },
+        {
+          "by": "illwrks",
+          "text": "I've seen a several AI-coded WebGL examples... I wonder if AI will mean the return of the Flash-style interactive websites."
+        }
+      ],
+      "image": "https://storage.ghost.io/c/89/e0/89e08557-681a-40be-8264-278bf46d6b25/content/images/2026/10/facebook-card.jpg"
+    },
+    {
+      "id": 50080007,
+      "url": "https://anitab.org/press-release",
+      "hn": "https://news.ycombinator.com/item?id=50080007",
+      "title": "Grace Hopper Celebration Cancelled",
+      "time": 1791931609,
+      "points": 209,
+      "depth": [
+        {
+          "text": "**Grace Hopper Celebration** was **cancelled** after registrations and sponsorships fell short of covering its operating costs",
+          "tier": "simple"
+        },
+        {
+          "text": "The notice asks attendees to cancel or modify **travel reservations** and independently booked hotel stays. AnitaB.org says it will contact registrants about **registration fees** by **October 26**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters suspect the wider pullback from DEI hurt funding and sponsorships; others say the conference had already been going downhill for a few years.",
+      "comment_count": 172,
+      "terms": [
+        "DEI",
+        "operating expenses"
+      ],
+      "entities": [
+        "Grace Hopper Celebration",
+        "AnitaB.org"
+      ],
+      "comments": [
+        {
+          "by": "cmiles8",
+          "text": "Sad to see this canceled and especially at the last minute. Since DEI imploded most companies won’t touch anything with a 100 ft pole that looks like it might go anywhere near that, and seems like that didn’t help on funding and sponsors. This always seemed like a good event and only ever heard positive things about it. The controversies and scandals surrounding DEI were not about this, and thus…"
+        },
+        {
+          "by": "badc0ffee",
+          "text": "Interesting perspective that doesn't blame the downfall of DEI initiatives, or reluctance to travel to the US: https://www.reddit.com/r/womenintech/comments/1x4kilp/commen... It sounds like this conference had been going downhill for a few years."
+        },
+        {
+          "by": "grahar64",
+          "text": "Is it because international registrations were down. I know that I am dodging US travel ATM"
+        },
+        {
+          "by": "beej71",
+          "text": "Ugh. A bunch of our students already booked travel and rooms. What a horrible situation all around."
+        },
+        {
+          "by": "gmerc",
+          "text": "You don't want to run afoul of Agent Orange by celebrating a woman so close to his coronation"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50053487,
+      "url": "https://www.openculture.com/2026/10/a-900-page-pre-pantone-guide-to-color-from-1692.html",
+      "hn": "https://news.ycombinator.com/item?id=50053487",
+      "title": "900-Page Pre-Pantone Guide to Color from 1692 (With Complete High-Res Scan)",
+      "time": 1791795902,
+      "points": 188,
+      "depth": [
+        {
+          "text": "someone made a **one-off guide** to mixing watercolours, and its **full-page scans** are online",
+          "tier": "simple"
+        }
+      ],
+      "camps": null,
+      "comment_count": 28,
+      "terms": [
+        "colour swatch",
+        "colour theory",
+        "high-resolution scan",
+        "long s"
+      ],
+      "entities": [
+        "A. Boogert",
+        "Traité des couleurs servant à la peinture à l’eau",
+        "Klaer Lightende Spiegel der Verfkonst",
+        "Erik Kwakkel",
+        "Aristotle",
+        "Newton",
+        "Opticks",
+        "Goethe",
+        "Theory of Colors",
+        "Werner",
+        "Nomenclature of Colour",
+        "Pantone",
+        "Bibliothèque Méjanes",
+        "Open Culture",
+        "Dutch",
+        "French"
+      ],
+      "comments": [
+        {
+          "by": "dofm",
+          "text": "I love stuff like this. The article mentions Werner’s Nomenclature of Colour which is a marvel. There is a wonderful Thames and Hudson book, Nature’s Palette , which includes Werner’s Nomenclature and expands on it by discussing how the nomenclature was produced, has illustrations of the reference plants and animals Werner used, etc. https://amzn.eu/d/0injz69N It makes for a great gift for an…"
+        },
+        {
+          "by": "vanderZwan",
+          "text": "Tangent: always fun to read these old books that still have a long s and having to remind myself not to misread it as an f all the time. It gets so silly, like the authors have a bad lisp (or \"bad lifp\", I gueff). (also funny that our forward slash is a descendant of it, meaning it's a \"cousin\" to the integral symbol)"
+        },
+        {
+          "by": "ulnarkressty",
+          "text": "I highly recommend ColorNerd on Youtube for his explanations of various color spaces and color theory. It's primarily aimed at artists, but very informational. https://www.youtube.com/@ColorNerd1"
+        },
+        {
+          "by": "yig",
+          "text": "> One wonders if “A. Boogert” would have become a household name had his book been printed and distributed. Would it have been possible to \"print\" his book? It is full of color swatches of different paint and water mixtures. Could printing processes have replicated this? How are modern color swatch books mass produced?"
+        },
+        {
+          "by": "Bosustir",
+          "text": "That's an extraordinary amount of effort for a reference that almost nobody else could access"
+        }
+      ],
+      "image": "https://cdn8.openculture.com/2026/10/11221313/Boogert2-2-1024x523.jpg"
+    },
+    {
+      "id": 50074909,
+      "url": "https://lab.specr.net/rigged-draw/",
+      "hn": "https://news.ycombinator.com/item?id=50074909",
+      "title": "Show HN: How random are you?",
+      "time": 1791910677,
+      "points": 164,
+      "depth": [
+        {
+          "text": "someone made a **number game** that tries to **guess** what people will pick next",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter tested it with **Math.random** and had the house call 18 of 190 numbers, or **9%**. Another said **dodging the house’s repeated guess** worked for a good long run.",
+          "tier": "substance",
+          "data": [
+            [
+              "house calls",
+              "18 of your 190 scored numbers: 9%"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 84,
+      "terms": [
+        "Math.random",
+        "RNG",
+        "mod"
+      ],
+      "entities": [
+        "Math.random",
+        "Aaronson",
+        "Dilbert",
+        "humanrandomness.com"
+      ],
+      "comments": [
+        {
+          "by": "costco",
+          "text": "This is a nice spin on the Aaronson oracle: > In a class I taught at Berkeley, I did an experiment where I wrote a simple little program that would let people type either “f” or “d” and would predict which key they were going to push next. It’s actually very easy to write a program that will make the right prediction about 70% of the time. Most people don’t really know how to type randomly…"
+        },
+        {
+          "by": "kykat",
+          "text": "Does someone know whether people saw the \"predictions\" in the actual test? Because saying random numbers blindly is not what I was doing. After my next number was predicted correctly, I changed my \"strategy\" to increase randomness (be less predictable). So I don't know if this result is comparable to the one from the study. My results were: The house called 10 of your 87 scored numbers: 11%…"
+        },
+        {
+          "by": "m463",
+          "text": "Dilbert \"Over here we have our random number generator.\" https://web.archive.org/web/20230305130159im_/https://assets..."
+        },
+        {
+          "by": "steve_adams_86",
+          "text": "Rather than attempt to be random, knowing that I'm not, I wanted to see how well it can predict Math.random: setInterval(() => {\nconst num = Math.round(Math.random() * 10);\nconst ball = document.querySelector(`.typed-pad .ball-${num}`);\nif (ball) {\nball.click();\n}\n}, 1000);\nThis isn't very interesting, but it scratched an itch I had to see what would happen. The house's record\nThe house called 18…"
+        },
+        {
+          "by": "shric",
+          "text": "I know pi to 100 decimal places and so that was pretty easy to cheat it"
+        }
+      ],
+      "image": "https://lab.specr.net/rigged-draw/og.jpg?v=5f807115"
+    },
+    {
+      "id": 50072120,
+      "url": "https://kylekukshtel.com/ai-harness-engineering-game-development-claude-code",
+      "hn": "https://news.ycombinator.com/item?id=50072120",
+      "title": "How to engineer an AI harness for game development",
+      "time": 1791900863,
+      "points": 158,
+      "depth": [
+        {
+          "text": "someone says **game harnesses** can help AI work on games by making their hidden parts visible",
+          "tier": "simple"
+        },
+        {
+          "text": "The author recommends **seeded randomness** and save/load so agents can recreate exact states, then using **image diffs** to check changes. **Replayable commands** let agents test game actions without compiling.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say agents can handle game development with better tools; others say polish, art, and large-scale architecture remain the hard parts.",
+      "comment_count": 78,
+      "terms": [
+        "LLM",
+        "harness",
+        "seeded randomness",
+        "image diffing",
+        "deterministic state",
+        "command pattern"
+      ],
+      "entities": [
+        "Kyle Kukshtel",
+        "Claude Code",
+        "mood.site",
+        "Svelte",
+        "Three.js",
+        "odiff",
+        "Google Stitch",
+        "Wookash",
+        "Dreams",
+        "ChatGPT",
+        "Anthropic"
+      ],
+      "comments": [
+        {
+          "by": "YesBox",
+          "text": "> [I give a small introduction to myself and my own work, that I’m omitting here, as you’re on my website] kkukshtel: You should keep that info, with links, even if its links to your site. Dont burden the reader. Edit: I read the first half of the article then skimmed the rest (I dont use LLMs outside of occasional searches). I've been a gamedev for five years. I have a hunch LLMs will not take…"
+        },
+        {
+          "by": "andai",
+          "text": "> “LLMs are Bad At Games” > Any time I tried to use an LLM for a game-y thing, it would fall over. You know it's funny. I did a bit of LLM-assisted game dev this year. I spent a few weeks working on a simple Pong game, just polishing it, making small changes here and there. Frontier models couldn't change or add a feature without breaking something else. It was still more productive than working…"
+        },
+        {
+          "by": "bob1029",
+          "text": "> I stand by a lot of what I’ve said, but am in the process of shipping a project where I’ve also used none of this. I think the scale I’m targeting here is really larger projects. The author appears to be on track to learn an important lesson about LLMs and art. LLMs have completely solved the coding side of game development. But this was never the hard part. Not even close. The fixed randomness…"
+        },
+        {
+          "by": "vanyle",
+          "text": "I wrote an automated testing system for my game engine to take screenshots and simulate input for automated testing and then I realized how good claude was at using it to make games that I wrote a guide about it in my engine documentation: https://vectarineengine.com/guides/working-with-agents/"
+        },
+        {
+          "by": "marcus_holmes",
+          "text": "It's strange, but as soon as I saw the first slide, I was \"why are these properties hard-coded?\" and then as we went through, it felt like a tour through \"decouple your entities 101\". Are games really hard-coded spaghetti like this? I've never written a game (well, not since my Acorn Atom days writing Missile Command in Assembler) but I'm kinda inspired now."
+        }
+      ],
+      "image": "https://cdn.blot.im/blog_bceb40b92fea4cb981fda87bd5169c58/_thumbnails/801d3c81-6b4b-411f-8b28-3226302d90d2/large.jpg"
+    },
+    {
+      "id": 50046241,
+      "url": "https://www.ways-of-seeing.com/ch1",
+      "hn": "https://news.ycombinator.com/item?id=50046241",
+      "title": "Chapter 1 of \"Ways of Seeing\" by John Berger (1972)",
+      "time": 1791743184,
+      "points": 150,
+      "depth": [
+        {
+          "text": "John Berger argues that **how we see art** changes when **images are copied** and moved around",
+          "tier": "simple"
+        },
+        {
+          "text": "He says reproductions make a painting's meaning **multiply and fragment**. He argues that original works are treated like **holy relics**, with market value presented as spiritual value.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: fans recommend Berger’s book and series; critics call it hard to digest or incomprehensible, and say its Marxism spoils everything.",
+      "comment_count": 47,
+      "terms": [
+        "mystification",
+        "perspective",
+        "Marxism"
+      ],
+      "entities": [
+        "Ways of Seeing",
+        "John Berger",
+        "Magritte",
+        "The Key of Dreams",
+        "Frans Hals",
+        "Dziga Veritov",
+        "Leonardo da Vinci",
+        "The Virgin of the Rocks",
+        "The Virgin and Child with St Anne and St John the Baptist",
+        "Balzac",
+        "National Gallery",
+        "Louvre"
+      ],
+      "comments": [
+        {
+          "by": "smokel",
+          "text": "Interestingly, this is not copyright infringement, or at least not for the text being reproduced here. The original book (1972) mentions \"The text of this book is not copyright\" [1]. The image reproductions could invite copyright trolls though, so be warned. [1] https://pengpedia.org/edition/ways-of-seeing-john-berger-471..."
+        },
+        {
+          "by": "martiancookbook",
+          "text": "I very recently wrote a review of Ways of Seeing for a book-reviewing challenge. I'm a big fan of Ways of Seeing (got into it through the BBC series, free on YouTube), and I'd like to share my review here! https://cannonballread.com/2026/10/ways-of-seeing-carmen-ghi..."
+        },
+        {
+          "by": "tclancy",
+          "text": "I found the youtube copy of the series to be great - https://www.youtube.com/watch?v=P-4LwAuTw7k"
+        },
+        {
+          "by": "a_c",
+          "text": "I bought this book on two occasions because of recommendation here. I still haven't started it yet. This time I know I have two already so I'm not getting a third one."
+        },
+        {
+          "by": "jemdiggity",
+          "text": "I found Berger's writing pretty hard to digest. But thanks for the inspiration — will try again."
+        }
+      ],
+      "image": null
+    },
+    {
       "id": 50061659,
       "url": "https://news.mit.edu/2026/mit-class-project-turns-into-fda-cleared-treatment-for-tremors-1002",
       "hn": "https://news.ycombinator.com/item?id=50061659",
@@ -160,6 +744,47 @@
     }
   ],
   "glossary": {
+    "AOSP": "Android Open Source Project: the publicly available base software people can use to build Android systems.",
+    "NDK": "Native Development Kit: Android's tools for making apps with code that talks directly to the device.",
+    "ASCII": "American Standard Code for Information Interchange: an older character set for basic English letters, numbers, and punctuation.",
+    "libc": "A basic library of common functions that programs can call instead of building everything themselves.",
+    "disassembly": "Turning a finished program into a readable list of steps so someone can inspect how it works.",
+    "wcscspn()": "A text-search function that counts characters until it hits one from a stop list.",
+    "reject set": "A list of characters the search is supposed to stop when it finds.",
+    "code point": "A number assigned to a character, such as the value written as U+0100.",
+    "monospace": "A font where every character takes the same width, so text lines up in columns.",
+    "quasi-proportional": "A font where some letters can be wider or narrower than others.",
+    "glyph": "A character or symbol as it appears in a font.",
+    "ligature": "A special shape a font uses for a set of letters, sometimes replacing them with one different shape.",
+    "stylistic set": "A group of alternate letter designs that you can turn on together.",
+    "OpenType": "A font format that lets a font include extra options, like alternate letter shapes.",
+    "intrinsic motivation": "Wanting to do something for its own sake.",
+    "ROI": "Return on investment: a way to ask whether what something achieves is worth what it costs.",
+    "repo": "A project's stored files, often kept with a record of changes.",
+    "CLI": "Command-Line Interface: a way to control a computer by typing commands instead of clicking buttons.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "ray tracer": "A program that makes images by working out how light would bounce around a scene.",
+    "Electron": "A tool for making desktop apps with web technologies, so a web-style app can run like a regular computer program.",
+    "Flash": "A technology used to make games and animations that played in web browsers.",
+    "tokens": "Small pieces of text an AI counts as it reads or writes; they can affect how much a request costs.",
+    "UI-maxxing": "User interface maxxing: slang for going all-in on making a screen feel elaborate or flashy.",
+    "DEI": "Diversity, Equity, and Inclusion: efforts to make groups and workplaces fairer and more welcoming to people who have been left out.",
+    "operating expenses": "The regular bills an organization has to pay to keep running.",
+    "colour swatch": "A small sample of a colour, used to compare or identify it.",
+    "colour theory": "Ideas about how colours work together and how they can be mixed.",
+    "high-resolution scan": "A detailed digital copy that stays clear when you zoom in.",
+    "long s": "The old-fashioned form of the letter s that can look like an f.",
+    "Math.random": "A command in JavaScript that gives a program a number that looks random.",
+    "RNG": "Random number generator: a tool or program that produces numbers meant to seem unpredictable.",
+    "mod": "A way to keep only the remainder after dividing one number by another.",
+    "harness": "The surrounding code that gives an AI agent tools and a place to work, and checks what it does.",
+    "seeded randomness": "A way to make random choices repeat the same sequence, so a game can return to a testable state.",
+    "image diffing": "Comparing two images to show which parts changed.",
+    "deterministic state": "A game situation you can recreate exactly, so repeated tests start from the same place.",
+    "command pattern": "A way to save an action as an instruction you can replay, instead of changing the game directly.",
+    "mystification": "Explaining something away in a way that hides what might otherwise be clear.",
+    "perspective": "A way of drawing things so they seem to get smaller with distance, arranged around where the viewer stands.",
+    "Marxism": "A political way of looking at society that focuses on class, wealth, and who holds power.",
     "510(k) clearance": "An FDA route for allowing a medical device on the market when it is similar to an existing device.",
     "essential tremor": "A condition that causes shaking, often in the hands.",
     "FDA": "Food and Drug Administration: the US agency that oversees food and drug rules, including food labeling.",
