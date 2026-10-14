@@ -2,6 +2,193 @@
   "date": "2026-10-14",
   "cards": [
     {
+      "id": 50084757,
+      "url": "https://www.not-ship.com/how-amazon-pushes-up-prices-all-across-the-internet/",
+      "hn": "https://news.ycombinator.com/item?id=50084757",
+      "title": "Amazon pushes up prices across the Internet",
+      "time": 1791970097,
+      "points": 508,
+      "depth": [
+        {
+          "text": "Amazon's **fees and pricing rules** can leave shoppers paying **Amazon prices** even when they shop elsewhere",
+          "tier": "simple"
+        },
+        {
+          "text": "Many sellers hand **close to half** of each sale to Amazon in fees. Its **Fair Pricing Policy** can remove the Buy Box or suspend sellers who offer a lower price elsewhere. In 2023, the FTC and **17 US states sued**, arguing Amazon illegally maintains monopoly power by punishing sellers for offering lower prices elsewhere; Amazon denies wrongdoing.",
+          "tier": "substance",
+          "data": [
+            [
+              "Amazon's basic commission",
+              "15%"
+            ],
+            [
+              "Fees sellers hand to Amazon",
+              "close to half of every sale"
+            ],
+            [
+              "Amazon share of US online retail sales",
+              "about 40%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say Amazon's reliable delivery and easy returns are worth its prices; others say its fees and rules are anticompetitive and should be banned.",
+      "comment_count": 472,
+      "terms": [
+        "FTC",
+        "Buy Box",
+        "referral fee",
+        "fulfillment fee",
+        "Fair Pricing Policy",
+        "antitrust"
+      ],
+      "entities": [
+        "Amazon",
+        "Federal Trade Commission",
+        "eBay",
+        "Walmart",
+        "CNBC",
+        "Target",
+        "More Perfect Union"
+      ],
+      "comments": [
+        {
+          "by": "steveBK123",
+          "text": "I find that 20 years ago I shopped at Amazon for the low prices, but 2020s+ I shop at Amazon due to their logistics. The problem for everyone else is not simply that Amazon ships quickly, I almost don't even care about that. The thing is that Amazon ships & delivers on a reliable predicted schedule. When I click an item on Amazon and it says \"arrives by Tuesday\" then 95/100 times it does. I shop…"
+        },
+        {
+          "by": "trombuance",
+          "text": "Amazon searches for anything that isn't a known brand such as Apple & co turn out >90% Chinese products of highly questionable quality for me these days. And you can buy those cheaper by going straight to the source. The sole point of their retail business seems to be providing a support for the inevitable issues with these sellers, but I suspect that increasingly customers won't think it…"
+        },
+        {
+          "by": "tedggh",
+          "text": "I use Amazon to buy cheap stuff like zip ties, printing paper and ink and some cleaning products. Almost every single major purchase I go directly to the manufacturer website or a specialized store. For example, I would never buy photography gear on Amazon. I go to Adorama or BH. For my favorite brands in say hiking or running gear I go to REI or RunningWarehouse or visit my local brick and…"
+        },
+        {
+          "by": "novia",
+          "text": "Amazon allows you to make returns and makes it convenient, quick, and easy. I made two purchases through independent sellers' websites in the last year, both with big banners guaranteeing satisfaction and easy returns for 100 days or something. And yet, when I found that the product didn't meet my needs, they would not accept my return. They wouldn't even issue a return label. Both of these…"
+        },
+        {
+          "by": "DataDive",
+          "text": "I don't get the Amazon bashing. My experience is nothing like that: Kitchen scale, $20 bucks, looks and operates exactly as described; three years later, it still works fine. Bed sheets, $16, two days later delivered, better than I thought - at least for the price that is. Best price/quality ratio I could get. If I don't like something, returning is super convenient; I drop it off at Kohl's over…"
+        }
+      ],
+      "image": "https://storage.ghost.io/c/f0/60/f060ef3f-d4e0-4af4-9255-1373fbf0a44f/content/images/size/w1200/2026/10/featured_02.png"
+    },
+    {
+      "id": 50088935,
+      "url": "https://scotthelme.co.uk/passkeys-are-not-a-trap/",
+      "hn": "https://news.ycombinator.com/item?id=50088935",
+      "title": "Passkeys are not a trap",
+      "time": 1791990945,
+      "points": 268,
+      "depth": [
+        {
+          "text": "someone says **passkeys aren't a trap**: they **resist phishing**, and synced ones don't send sites device attestation",
+          "tier": "simple"
+        },
+        {
+          "text": "Scott Helme says **synced passkeys** return no attestation statement; a passkey is **bound to its domain**, which helps it resist phishing. Some commenters argue attestation could be extended to require **hardware and OS attestation**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say passkeys' phishing protection makes them worth using; others say setup is confusing and attestation could let services restrict devices or software.",
+      "comment_count": 394,
+      "terms": [
+        "passkey",
+        "attestation",
+        "TOTP",
+        "WebAuthn",
+        "phishing"
+      ],
+      "entities": [
+        "Scott Helme",
+        "Report URI",
+        "WebAuthn",
+        "YubiKey",
+        "Evilginx",
+        "Troy Hunt",
+        "FIDO Alliance",
+        "LineageOS",
+        "WhyNoPasskeys.com"
+      ],
+      "comments": [
+        {
+          "by": "bonzog",
+          "text": "I don't know enough to argue about whether passkeys are a trap or not, but I do know as a user that they appear to be a confusing mess. When a website prompts me to set up a passkey, depending on the device I happen to be using at the time it could end up going to Google password manager, Samsung password manager, iCloud Keychain, or Windows somethingorother. What happens when I go to the same…"
+        },
+        {
+          "by": "coaksford",
+          "text": "\"...if attestation is the thing you're worried about, the post's own recommendation pushes you towards attestation rather than away from it!\" It is plainly obvious that the worry isn't attestation per se, it's the restrictions that attestation may in the future require when they turn the dial on restrictiveness up, that was extremely clear to me from reading the first article. If you can get…"
+        },
+        {
+          "by": "NoidFonsense",
+          "text": "This blog post is the perfect example of someone rationalizing away the bigger picture. It's true that passkeys do not require hardware and OS attestation today, so all of the specific examples you cite are true. But the point remains that that passkeys can be EASILY extended to require hardware and OS attestation, and this will happen. Banks have already done this. Before using an app was…"
+        },
+        {
+          "by": "dllu",
+          "text": "I recently had the displeasure of using Passkeys: - trying to sign in to Okta on my personal Linux desktop computer. It has bluetooth and I had my phone right next to me, also with bluetooth turned on. But Firefox simply refuses to even show the option for \"connect to your phone\" or to give a QR code... it just said \"tap your security key or biometric device\". I had neither; my passkey is on my…"
+        },
+        {
+          "by": "Vexs",
+          "text": "> When it is present, WebAuthn attestation tells the site the make and model of the authenticator, identified by its AAGUID, with a certificate chain from the vendor to back it up. It says nothing about your OS, your browser, your extensions, whether your phone is rooted or jailbroken, your firmware version, or even what colour it is. Am I missing something? \"Attestation tells websites what the…"
+        }
+      ],
+      "image": "https://storage.ghost.io/c/ee/88/ee889f88-37ef-43e5-9180-f9b88ee6261d/content/images/size/w1200/2026/10/passkeys-trap.png"
+    },
+    {
+      "id": 50087328,
+      "url": "https://www.admin.ch/en/newnsb/NMn5s24l8NjQ",
+      "hn": "https://news.ycombinator.com/item?id=50087328",
+      "title": "Switzerland proposes banning profiling-based ads to minors",
+      "time": 1791984002,
+      "points": 221,
+      "depth": [
+        {
+          "text": "Switzerland wants to ban **profiling-based ads** for **minors**, and commenters ask why adults are left out",
+          "tier": "simple"
+        },
+        {
+          "text": "Some commenters want a **ban for everyone**; others ask how a service can identify minors **without checking IDs**. One commenter says ad companies could simply **stop profiling users**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 142,
+      "terms": [
+        "profiling-based ads",
+        "adtech",
+        "age verification"
+      ],
+      "entities": [
+        "Meta",
+        "TikTok"
+      ],
+      "comments": [
+        {
+          "by": "icyfox",
+          "text": "There's been a lot of recent swiss efforts to curtail advertising. Off the top of my head: - Zurich's parliament voted 58–57 last year to place limits on outdoor advertising (have 2027 to come up with implementation) - Bern fully instituted the ban but reversed course over revenue concerns - Vernier & Lancy have banned billboards They certainly seem to have the appetite to reduce the size of the…"
+        },
+        {
+          "by": "TomJansen",
+          "text": "I really don't get why all these improvements are only geared towards minors. What is the reasoning here to not extend this to every citizen?"
+        },
+        {
+          "by": "acd",
+          "text": "United nations human rights \"Article 12 No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honour and reputation. Everyone has the right to the protection of the law against such interference or attacks.\" Ad tech Data fusion violates that right"
+        },
+        {
+          "by": "archildress",
+          "text": "Common topic amongst friends on online advertising: feels like it would be reasonable for platforms like Meta, TikTok, etc to explain why they've served you the ad you're seeing. Imagine an \"explain why I'm seeing this\" button. The adtech of today feels very opaque to me; I often have no clue why I see what I do. If platforms had to disclose why you're seeing what you are, you could plug the…"
+        },
+        {
+          "by": "impossiblefork",
+          "text": "Here in Sweden it's illegal to make ads directed at children. Consequently the TV channels that do so transmit from abroad. This would of course have been easy to ban anyway-- it's not like we can't have rules on foreign internet firms, for example, but historically the politicians were unwilling to make a useful law. I think the Swiss could take one step further and add a general ban on ads…"
+        }
+      ],
+      "image": null
+    },
+    {
       "id": 50083130,
       "url": "https://github.com/android/ndk/issues/2260",
       "hn": "https://news.ycombinator.com/item?id=50083130",
@@ -744,6 +931,20 @@
     }
   ],
   "glossary": {
+    "FTC": "Federal Trade Commission: a US agency that investigates businesses and enforces rules meant to protect consumers.",
+    "Buy Box": "The Amazon listing's Add to Cart button; losing it can make a product harder to buy there.",
+    "referral fee": "The commission Amazon takes from a seller on each sale.",
+    "fulfillment fee": "The charge for Amazon to pack and ship items from its warehouses.",
+    "Fair Pricing Policy": "Amazon's rule that can penalize a seller for offering the same item cheaper somewhere else.",
+    "antitrust": "Rules meant to stop companies from becoming so powerful that they can squeeze out competition.",
+    "passkey": "A way to sign in without typing a password, using a credential saved by a device or password manager.",
+    "attestation": "A check that lets a website verify what device or software created a passkey before accepting it.",
+    "TOTP": "Time-based One-Time Password: a sign-in code from an app that changes over time.",
+    "WebAuthn": "A set of rules websites and devices use to handle passkey and security-key logins.",
+    "phishing": "A scam that tricks someone into entering login details on a fake site.",
+    "profiling-based ads": "Ads picked using information about what a person does or might like.",
+    "adtech": "The tools and businesses that use technology to place or target ads.",
+    "age verification": "Checking that someone is old enough, often by asking for proof of age.",
     "AOSP": "Android Open Source Project: the publicly available base software people can use to build Android systems.",
     "NDK": "Native Development Kit: Android's tools for making apps with code that talks directly to the device.",
     "ASCII": "American Standard Code for Information Interchange: an older character set for basic English letters, numbers, and punctuation.",
