@@ -2,6 +2,669 @@
   "date": "2026-10-15",
   "cards": [
     {
+      "id": 50103000,
+      "url": "https://www.theguardian.com/technology/2026/oct/15/israeli-firm-digital-ads-enabling-installation-of-zero-click-spyware-researchers-say",
+      "hn": "https://news.ycombinator.com/item?id=50103000",
+      "title": "Israeli firm's digital ads enabling installation of 'zero-click' spyware",
+      "time": 1792069112,
+      "points": 389,
+      "depth": [
+        {
+          "text": "researchers say **online ads** can deliver **spyware** to targets without a click",
+          "tier": "simple"
+        },
+        {
+          "text": "Citizen Lab says it believes **dozens of devices** at Al Jazeera were compromised by spyware delivered through Discover-Tech ads. Discover-Tech’s **Controlium** software can profile users, then let clients **covertly hack** selected targets with third-party spyware.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters say Israeli tech firms may be beholden to their government; others say governments pressure tech companies in many countries, including the US.",
+      "comment_count": 216,
+      "terms": [
+        "zero-click",
+        "spyware",
+        "programmatic auction",
+        "deanonymise",
+        "ad tech"
+      ],
+      "entities": [
+        "Discover-Tech",
+        "Controlium",
+        "Citizen Lab",
+        "University of Toronto",
+        "Al Jazeera",
+        "Confiant",
+        "Wolfie Christl",
+        "Bill Marczak",
+        "The Guardian"
+      ],
+      "comments": [
+        {
+          "by": "squidmaster",
+          "text": "Israel has been a nexus of cybercrime for as long as they've been on the internet at all. https://en.wikipedia.org/wiki/Download_Valley"
+        },
+        {
+          "by": "Ozzie_osman",
+          "text": "Obviously not the first time an Israeli tech firm is responsible for these types of exploits, and at this point I'd go so far as saying that any Israeli-based tech company (especially cyber security ones, of which they have a strong industry) should be considered beholden to the government of Israel and hence, probably not trustworthy. How could you be sure whether they will act like a…"
+        },
+        {
+          "by": "throw0101c",
+          "text": "Actual report from Citizen Lab: * https://citizenlab.ca/research/how-discover-tech-turned-targ..."
+        },
+        {
+          "by": "bhouston",
+          "text": "It is standard that companies within a country act in the interests of its security services. Israel has a lot of ad-tech companies and thus it makes sense that they are roped into serving Israel's security services. It is no different that Israel's location tracking of StarLink terminals worldwide: https://www.newarab.com/news/israel-tech-firms-can-locate-an... This is the same issue that the US…"
+        },
+        {
+          "by": "andunie",
+          "text": "Turns out Google killing Android privacy was completely useless as a way to prevent people from being hacked, but they might use this type of stuff to justify even more closing of supposedly \"free\" paltforms. Likewise, using privacy messengers like Signal is also useless if they can just take control of your entire device anytime they want."
+        }
+      ],
+      "image": "https://i.guim.co.uk/img/media/3035c44f5ae09be7cb6b5806453ff11e9db3e89f/401_440_2305_1844/master/2305.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=934fb19a9352c330577175c1f90d49df"
+    },
+    {
+      "id": 50103338,
+      "url": "https://github.com/fyzugx/DEsk",
+      "hn": "https://news.ycombinator.com/item?id=50103338",
+      "title": "Wayland desktop for Linux with skeuomorphic design",
+      "time": 1792070624,
+      "points": 256,
+      "depth": [
+        {
+          "text": "someone built a **Linux desktop** where windows become paper sheets on a **walnut desk**",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: some enjoy the playful variety and physical feel; others say the look is tacky or worry a full skeuomorphic desktop becomes a trend.",
+      "comment_count": 106,
+      "terms": [
+        "Wayland",
+        "skeuomorphism",
+        "ray-tracing",
+        "GPU",
+        "compositor",
+        "wlroots"
+      ],
+      "entities": [
+        "DEsk",
+        "Linux",
+        "Wayland",
+        "wlroots",
+        "iOS 6",
+        "GNOME",
+        "KDE"
+      ],
+      "comments": [
+        {
+          "by": "tenacious_tuna",
+          "text": "This is a really enjoyable take, pushing the feeling of what one does on a computer towards actually being at a desk and having to reach for various functions. I feel like that would enable spatial memory to do some cool things. I miss the 90s chunkiness of switches, buttons, hardware: being able to hear the computer \"think\" (HDD seeks), the hum of a CRT. Modern machinery feels so insubstantial…"
+        },
+        {
+          "by": "bmurphy1976",
+          "text": "I want more stuff like this. The era 20 years ago (e.g. Enlightenment) was way more fun than the bland monotonic design we have these days. If you like bland modern design, great, that should be an option as well, but we should still have good variety."
+        },
+        {
+          "by": "tavavex",
+          "text": "I'm typically not a big proponent of skeuomorphism, but it's nice to have actual variety of experimental options, a bit like the crazy things people did with UIs back in the old days."
+        },
+        {
+          "by": "chrisguilbeau",
+          "text": "I always think about video game UI's when I read the skeuomorphic design arugments. I suspect video games use them, at the very least, because they are delightful and fun; which, in my opinion, is a good reason to do something anywhere. I will say that a long time ago I installed enlightenment and after about 10 minutes the burning windows felt like they were getting in the way, so I guess, like…"
+        },
+        {
+          "by": "uolmir",
+          "text": "This is very funny. But I think it would make me feel like I was working inside of Papers Please or some similar game."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/31afb2e35555b0f23462c427b36cd54b1f934c1167ef686ad810c35421792e9c/fyzugx/DEsk"
+    },
+    {
+      "id": 50103630,
+      "url": "https://www.derekthompson.org/p/i-know-why-the-mathematicians-weep",
+      "hn": "https://news.ycombinator.com/item?id=50103630",
+      "title": "I Know Why the Mathematicians Weep",
+      "time": 1792071872,
+      "points": 197,
+      "depth": [
+        {
+          "text": "an essay asks why **mathematicians are grieving** as AI produces proofs that **stumped experts for decades**",
+          "tier": "simple"
+        },
+        {
+          "text": "OpenAI has published **hundreds of math findings**, including proofs that stumped top mathematicians for decades or centuries. The essay argues the work advances mathematics’ craft but interrupts its **human conversation**, raising the fear of **knowledge without understanding**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some see AI as a threat to mathematicians’ purpose, status, and livelihoods; others say it will push the field’s frontier and leave room for human mathematics.",
+      "comment_count": 283,
+      "terms": [
+        "proof",
+        "conjecture",
+        "peer review",
+        "LLM"
+      ],
+      "entities": [
+        "Derek Thompson",
+        "OpenAI",
+        "Hugo Duminil-Copin",
+        "Steven Strogatz",
+        "Wired",
+        "Cornell University",
+        "Aristotle",
+        "Newton",
+        "Feynman",
+        "Archimedes",
+        "Eratosthenes",
+        "Shanmu Jin",
+        "ChatGPT",
+        "Crouzeix’s conjecture",
+        "Google Translate",
+        "Maxwell",
+        "Einstein",
+        "Regina Barzilay",
+        "MIT",
+        "Robert Brandom",
+        "Making It Explicit: Reasoning, Representing, and Discursive Commitment",
+        "Stockfish",
+        "Mathematica",
+        "SQLite",
+        "Claude",
+        "Brady Haran",
+        "Gödel",
+        "artcraft"
+      ],
+      "comments": [
+        {
+          "by": "atleastoptimal",
+          "text": "I think beyond the specific elements of any domain AI eclipses humans in, overall, the notion of the thing that grants you status, prestige, and a living wage being commodified would spark in anyone a profound sense of dread. Beyond just making you redundant in your job, the whole architecture of your existence, the thousands of hours of struggle, the sacrifice of putting off social games or…"
+        },
+        {
+          "by": "RGS1811",
+          "text": "This piece circles, without naming it, around the concept of “deontic scorekeeping” central to the work of Robert Brandom on semantics. The idea that our ability to create and sustain conceptual systems depends on the give and take of reasons within a social setting. Brandom has been front of mind for me lately because elements of his theory both explain why LLMs should work in principle, and…"
+        },
+        {
+          "by": "randcraw",
+          "text": "I think Thompson has no understanding of endeavors like pure math or the theoretical sciences. In the words of Einstein, \"I want to know how God created this world. I am not interested in this or that phenomenon, in the spectrum of this or that element. I want to know his thoughts; the rest [is] just details.\" I think mathematicians aren't bemoaning their lost sunk costs. They're now aware that…"
+        },
+        {
+          "by": "izzydata",
+          "text": "I still think mathematicians are going to be as important as ever. The LLMs are only finding what was technically possible given our current breadth of knowledge after brute force solving problems. Eventually it will run out of things that it can do with its training and the only way to get it to do more will be training it on new human found knowledge. Finding that new knowledge may be…"
+        },
+        {
+          "by": "Ciantic",
+          "text": "Article refers to Hugo Duminil-Copin, who also did a podcast with Brady Haran [1] about this subject, for him it isn't case of bruised ego, or gatekeeping. He realized that the way things were done were going to change, and it made him emotional, he is not pessimistic or against AI. [1]: https://www.youtube.com/watch?v=omuJpoV-Ko4"
+        }
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!oJ0i!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2f5d4086-5119-48b4-93bd-c1c7cc96fe16_1080x501.jpeg"
+    },
+    {
+      "id": 50105344,
+      "url": "https://snoutcover.com/one-year",
+      "hn": "https://news.ycombinator.com/item?id=50105344",
+      "title": "I designed a nose guard for my dog and gave it away. Now 500 dogs wear one",
+      "time": 1792079076,
+      "points": 181,
+      "depth": [
+        {
+          "text": "someone designed a **nose guard** for his dog, shared it free, and now **500 dogs** wear one",
+          "tier": "simple"
+        },
+        {
+          "text": "Omri Hillel made the first version for Billie, whose **DLE** gets worse in sunlight, then posted the design free on MakerWorld. He still prints SnoutCover himself; **395 orders** went to 16 countries, while some owners print their own.",
+          "tier": "substance",
+          "data": [
+            [
+              "dogs helped",
+              "more than 500"
+            ],
+            [
+              "orders Omri made",
+              "395"
+            ],
+            [
+              "countries",
+              "16"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps on the write-up: some call it a fun, clever solution; others say the AI-assisted writing is a slog.",
+      "comment_count": 99,
+      "terms": [
+        "DLE",
+        "UV",
+        "LLM",
+        "3D printing",
+        "TPU"
+      ],
+      "entities": [
+        "Omri Hillel",
+        "Billie",
+        "SnoutCover",
+        "Doguard",
+        "MakerWorld",
+        "Reddit",
+        "Onshape",
+        "Bambu Studio",
+        "Stephanie",
+        "Iris",
+        "Shield",
+        "Care",
+        "Claude"
+      ],
+      "comments": [
+        {
+          "by": "asjkff",
+          "text": "Ai article or not. Today I decided to look at the good side of life.\nProduct solves a niche problem. Thumbs up."
+        },
+        {
+          "by": "billfor",
+          "text": "Also https://news.ycombinator.com/item?id=46094460 from 11 months ago."
+        },
+        {
+          "by": "lurn_mor",
+          "text": "Pun notwithstanding, what a fun itch to scratch! A clever single-user solution becomes it's own industry. I'd love to repeat this sort of growth myself, and find such clever solutions to real world problems."
+        },
+        {
+          "by": "DoctorOetker",
+          "text": "I wouldn't attach it to the neck, when the head moves with respect to the neck the nose guard pushes, slides, pulls on the sensitive area. Better to have some part hook at the back of the head or any bony protrusions on the sides or back of the head, perhaps in the vicinity of the ears."
+        },
+        {
+          "by": "superxpro12",
+          "text": "I love writing that uses acronyms and never defines them."
+        }
+      ],
+      "image": "https://framerusercontent.com/assets/jjVqQB3ACzUjn4aFJhIT6bNvOQ.png"
+    },
+    {
+      "id": 50102247,
+      "url": "https://unfenced.land/",
+      "hn": "https://news.ycombinator.com/item?id=50102247",
+      "title": "Show HN: Unfenced – Land for sale that borders public land",
+      "time": 1792064337,
+      "points": 177,
+      "depth": [
+        {
+          "text": "someone made a **map** to find **land for sale** beside **public land**",
+          "tier": "simple"
+        },
+        {
+          "text": "Unfenced checks listings against **official boundary maps**, rather than listing descriptions, and measures shared boundaries. It says it searched **695,439 active listings** across 49 regions, using USGS PAD-US 4.1 data; the analysis is not a survey or listing service.",
+          "tier": "substance",
+          "data": [
+            [
+              "active listings searched",
+              "695,439"
+            ],
+            [
+              "regions covered",
+              "49"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some buyers love the access to public land and protection from development; others warn about maintenance, trespassing, and listings that don't match the map.",
+      "comment_count": 124,
+      "terms": [
+        "USGS",
+        "PAD-US",
+        "easement"
+      ],
+      "entities": [
+        "Unfenced",
+        "Other Waters Studio",
+        "Realie",
+        "USGS",
+        "PAD-US",
+        "Zillow",
+        "Strava",
+        "BLM",
+        "NPS",
+        "DNR"
+      ],
+      "comments": [
+        {
+          "by": "snide",
+          "text": "First, this is cool! Well done. I live next to a State Park. It sounded really cool when I bought the house. No neighbors! Privacy! There is a trail accessible from my properly that goes into some woods, which you only want to be in during the Fall / Spring because the ticks and chiggers are intense. The biggest issue with sharing a border with the state is the fence line. Technically it's on…"
+        },
+        {
+          "by": "ggreer",
+          "text": "It seems to not find quite a few properties that border public land. For example, if I scroll around Zillow to find stuff that borders the Gifford Pinchot national forest, I can find properties like this one.[1] But I don't see anything matching it on the Unfenced map. I bought 20 acres bordering the national forest a couple years ago. The seller made sure I had some idea of what I was getting…"
+        },
+        {
+          "by": "kyleblarson",
+          "text": "I owned a house on 60 acres in Washington State that was bordered on 2 sides by state land (WA DNR). It was generally great and the only time I closed my gate was actually these two weeks of every year for regular rifle deer season. I never had issues with hunters coming on my property (I did give some friends permission to bow hunt). My driveway was about a mile long and had to cross DNR land to…"
+        },
+        {
+          "by": "windowshopping",
+          "text": "This is super unreliable. I clicked through a few of the listings and none of them were what this site seemed to think they were. In one case it said a unit had 50 acres of land, and when I clicked through it was a two-bedroom condo with no land. Another said it had 1400 acres of land and when I clicked through it was 0.14."
+        },
+        {
+          "by": "hasbot",
+          "text": "This is interesting though not really for me. I know that without trails, I won't be walking past the end of my property onto other property. I've probably spent a year of my life building trails on my own property. When I look for a parcel of land, I'm also interested in proximity to healthcare, groceries, airports (bad!), motor sports, shooting ranges; general steepness of the property…"
+        }
+      ],
+      "image": "https://unfenced.land/static/og-default.png"
+    },
+    {
+      "id": 50102923,
+      "url": "https://libreboot.org/news/libreboot2610.html",
+      "hn": "https://news.ycombinator.com/item?id=50102923",
+      "title": "Libreboot 26.10 \"Ominous Olive\" released with UEFI, Chromebook support",
+      "time": 1792068736,
+      "points": 170,
+      "depth": [
+        {
+          "text": "Libreboot now works on **Chromebooks** and uses a **modern boot system** on almost every board",
+          "tier": "simple"
+        },
+        {
+          "text": "The release imports **all 233 currently supported Chromebooks** from MrChromebox; they compile, but only **Baytrail (Kip) is tested**, and the Chromebook builds are source-only, with no binaries. EDK2 is now the **default payload**, with EFI builds of GRUB and SeaBIOS for backward compatibility.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 89,
+      "terms": [
+        "UEFI",
+        "EDK2",
+        "payload",
+        "GRUB",
+        "SeaBIOS"
+      ],
+      "entities": [
+        "Libreboot",
+        "MrChromebox",
+        "EDK2",
+        "Chromebook",
+        "Baytrail",
+        "GRUB",
+        "SeaBIOS"
+      ],
+      "comments": [
+        {
+          "by": "iamnothere",
+          "text": "Everyone’s focusing on the AI policy (perhaps because Leah for some reason said this was the most important part of the release), but the UEFI/EDK integration and Chromebook support is a massive step forward. Suddenly Libreboot has multiplied the devices available by many times, and future devices will be much easier to add. This is huge."
+        },
+        {
+          "by": "kyrra",
+          "text": "They don't seem to like AI. https://codeberg.org/libreboot/lbmk/src/branch/master/AGENTS..."
+        },
+        {
+          "by": "cwiggs",
+          "text": "Wow, this is awesome! This relates to work I've been doing with the [Heads]( https://osresearch.net/ ) project. Specifically I got a PR merged for the first ChromeOS Port using MrChromebox's code as an upstream dependency: https://github.com/linuxboot/heads/pull/2133 I'm now working on the 2nd ChromeOS device in this PR right now: https://github.com/linuxboot/heads/pull/2225 And there is a 3rd…"
+        },
+        {
+          "by": "AdmiralAsshat",
+          "text": "> Imported all 233 currently supported Chromebooks from the MrChromebox coreboot distro. Baytrail (Kip) tested - others need testing. Source-only in this release (must build from source, no binaries provided). Nice. I think I loaded MrChromebox onto my Google Pixel some years ago. I should see if it can get Libreboot now."
+        },
+        {
+          "by": "lf88",
+          "text": "It's refreshing to see serious open-source projects adopting a strict policy on LLM-assisted contributions. Besides considering frontier LLMs a serious threat to humanity, I find LLM-assisted programming simply...not fun! I tolerate only AI-assisted bug reports, as they are genuinely useful."
+        }
+      ],
+      "image": "https://av.vimuser.org/bootmenu.jpg"
+    },
+    {
+      "id": 50101813,
+      "url": "https://citizenlab.ca/research/how-discover-tech-turned-targeted-ads-into-a-pipeline-for-spyware/",
+      "hn": "https://news.ycombinator.com/item?id=50101813",
+      "title": "Zero-Click Spyware Delivered via Targeted Ads: AdFection",
+      "time": 1792061016,
+      "points": 173,
+      "depth": [
+        {
+          "text": "someone found **targeted ads** were used to infect Al Jazeera devices with **spyware** without a click",
+          "tier": "simple"
+        },
+        {
+          "text": "The Citizen Lab linked the attacks to Discover-Tech ads delivering Candiru spyware; **at least 45 devices** at Al Jazeera were targeted. The report calls this method **AdFection**, saying simply displaying a targeted ad could be enough to infect a device.",
+          "tier": "substance",
+          "data": [
+            [
+              "devices targeted at Al Jazeera",
+              "At least 45"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 27,
+      "terms": [
+        "zero-click",
+        "spyware",
+        "fingerprinting",
+        "mobile advertising ID",
+        "DLL hijack"
+      ],
+      "entities": [
+        "Citizen Lab",
+        "Al Jazeera",
+        "Discover-Tech",
+        "Candiru",
+        "AdFection"
+      ],
+      "comments": [
+        {
+          "by": "Frieren",
+          "text": "Ads providers should be held responsible for delivering malware. All the tracking (that includes fingerprinting for clients that do not want to be tracked) should also be illegal. How is this acceptable for society goes beyond me. And then corporations blame individuals when they get scammed. It is your fault that we have all your information and leak it everywhere, when it is not just directly…"
+        },
+        {
+          "by": "fhdkweig",
+          "text": "A later submission has more comments: https://news.ycombinator.com/item?id=50103000 , 57 comments 1 hour ago"
+        },
+        {
+          "by": "saagarjha",
+          "text": "I’m a little confused how mobile ad targeting ends up as a DLL hijack?"
+        },
+        {
+          "by": "the_giraffe",
+          "text": "Someone should look at mergers of large digital advertising companies after Trump's most recent election... And then look at the timing of it. The countries involved happened to be Israeli and have many employees based out of Argentina. Which is crazy since the United States, Israel and Argentina happened to become extremely close after that election cycle... The CTO happens to have worked for…"
+        },
+        {
+          "by": "kleiba2",
+          "text": "uBlock Origin ftw"
+        }
+      ],
+      "image": "https://citizenlab.ca/wp-content/uploads/2026/10/discover-report_updated-01-e1792025505984.png"
+    },
+    {
+      "id": 50070661,
+      "url": "https://kennedn.com/blog/posts/glitching/",
+      "hn": "https://news.ycombinator.com/item?id=50070661",
+      "title": "It took me nine years to hack my Xbox 360",
+      "time": 1791894798,
+      "points": 158,
+      "depth": [
+        {
+          "text": "someone finally **hacked an Xbox 360** after nine years, with help from a **cheap microcontroller**",
+          "tier": "simple"
+        },
+        {
+          "text": "The trick was **fault injection**: researchers glitched an instruction in the Xbox 360’s signature check so it ignored a value it was meant to move. A **Raspberry Pi Pico** made the console storage dump take only a handful of seconds. Then a software-only Xbox 360 exploit **dropped just last week**, making the hardware effort feel a bit moot.",
+          "tier": "substance",
+          "data": [
+            [
+              "Raspberry Pi Pico price",
+              "£5"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: the post says cheap microcontrollers made fault-injection work more accessible; MayeulC says similar hardware capability was already quite cheap in 2017 and before.",
+      "comment_count": 45,
+      "terms": [
+        "fault injection",
+        "modchip",
+        "bootloader",
+        "secure boot",
+        "side channel",
+        "CPU",
+        "arbitrary code execution"
+      ],
+      "entities": [
+        "Xbox 360",
+        "Microsoft",
+        "Matrix CoolRunner Rev D",
+        "Raspberry Pi Pico",
+        "PicoFlasher",
+        "Octal450’s Timing Files",
+        "ESP32",
+        "Apple AirTag",
+        "Nintendo Switch",
+        "PicoFly",
+        "Raspberry Pi Foundation",
+        "MayeulC"
+      ],
+      "comments": [
+        {
+          "by": "MayeulC",
+          "text": "This blogpost makes the point that the advent of the Raspberry Pi microcontroller made it easier to interface with a variety of hardware. And it is true, but the capability was already quite cheap in 2017 and before: fx2 chips can do quite a lot, for instance. I hope Bunnie's Baochip BIO approach will take off in microcontrollers, making that sort of feature more ubiquitous. You can do a lot of…"
+        },
+        {
+          "by": "merpkz",
+          "text": "What did Microslop change in Xbox One that prevented it from being exploited much in the same way? Afaik Xbone is still undefeated in terms of security, either because it's so good or because it's just uninteresting console to own"
+        },
+        {
+          "by": "saturn8601",
+          "text": "This talk was linked in a comment that was just flagged for unrelated reasons but I wanted to post this talk in case anyone missed it: https://www.youtube.com/watch?v=U7VwtOrwceo It is an excellent talk into why the security of the Xbox is so good by the platform security architect himself(at least the software stack). I highly recommend a watch."
+        },
+        {
+          "by": "david-gpu",
+          "text": "Tangential history: to this day there's still DNA of the Xenos GPU from the XBox 360 inside every Snapdragon GPU (Adreno). Way back around 2008, AMD was bleeding money after its acquisition of ATI. They wanted to divest of their Handheld division, which was the business unit that was producing chips for smartphones. From what I heard through the grapevine, Qualcomm was interested only in some…"
+        },
+        {
+          "by": "qingcharles",
+          "text": "And now we have a working permanent softmod. The Xbox 360 hacking scene is basically complete at this point."
+        }
+      ],
+      "image": "https://kennedn.com/blog/posts/glitching/coolrunner_closeup.webp"
+    },
+    {
+      "id": 50085323,
+      "url": "https://swedenherald.com/article/tv4-postpones-the-challenge-until-2027-after-technical-failure-erases-edited-footage",
+      "hn": "https://news.ycombinator.com/item?id=50085323",
+      "title": "TV4 postpones show after AI agent erases edited material",
+      "time": 1791973706,
+      "points": 152,
+      "depth": [
+        {
+          "text": "TV4 postponed **The Challenge** after a **backup failure**, disputing claims that an AI agent deleted it",
+          "tier": "simple"
+        },
+        {
+          "text": "Aftonbladet reported that an edited season was deleted by an AI agent, but TV4’s program director said no independent AI agent deleted the material and that a **backup system had failed**. They now have to **edit everything from scratch**, and the premiere moved from **November 22** to “in late spring.”",
+          "tier": "substance",
+          "data": [
+            [
+              "work lost",
+              "several hundred days"
+            ],
+            [
+              "scheduled premiere",
+              "November 22"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: one points to Aftonbladet’s report of an AI-agent deletion; the other cites TV4’s denial and the failed backup.",
+      "comment_count": 86,
+      "terms": [
+        "AI agent",
+        "backup",
+        "root-cause analysis"
+      ],
+      "entities": [
+        "TV4",
+        "The Challenge",
+        "Aftonbladet",
+        "Mia Lindqvist",
+        "Sveriges Radio",
+        "P4 Stockholm",
+        "Ahmed Berhan",
+        "Claude",
+        "Rust"
+      ],
+      "comments": [
+        {
+          "by": "teekert",
+          "text": "Ok, I have not seen any responses from anyone here that actually read TFA (which is almost like a fever dream, it does not deserve the A in TFA imho) but here is the whole F\"A\" (and it says AI did not delete material!): The new season of TV4's reality show “The Challenge” has been postponed due to a technical failure. Large parts of the series have been deleted, Aftonbladet reports. The newspaper…"
+        },
+        {
+          "by": "Roark66",
+          "text": "Deletions happen, but that is what you have backups for. I do not understand how you can have hundreds of days of work and never test if your backups work."
+        },
+        {
+          "by": "PcChip",
+          "text": "The submission title says it happened, but the company denies it"
+        },
+        {
+          "by": "SkipperCat",
+          "text": "AI promised me global human extinction but all I got was a deleted reality TV show..."
+        },
+        {
+          "by": "sdcfgy",
+          "text": "If AI agent deleted it or not, it's a human's fault. Really want to see the root-cause analysis here."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50063417,
+      "url": "https://phreak.ing/",
+      "hn": "https://news.ycombinator.com/item?id=50063417",
+      "title": "Phreak.ing – Internet Phone Switch",
+      "time": 1791841172,
+      "points": 151,
+      "depth": [
+        {
+          "text": "someone built an **anonymous phone switch** for calls, texts, voicemail, conferences, and old-school phone tricks",
+          "tier": "simple"
+        },
+        {
+          "text": "It offers browser notifications, conference rooms anyone can join, and a **voice BBS** with 10 boards to listen or post. The site says it keeps **no logs** and tells people not to use a real phone number for signup.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 34,
+      "terms": [
+        "PBX",
+        "DTMF",
+        "IRC",
+        "WebRTC"
+      ],
+      "entities": [
+        "Phreak.ing",
+        "PhreakNet",
+        "C*NET",
+        "IRC"
+      ],
+      "comments": [
+        {
+          "by": "accrual",
+          "text": "The incredible background effects with no JS enabled have me both pondering and accepting of this fantastic display."
+        },
+        {
+          "by": "Noaidi",
+          "text": "I learned about phreaking picking up 2600 in Barnes & Noble‘s when I was a kid. Those were exciting times. Now everything is so damn boring."
+        },
+        {
+          "by": "hmokiguess",
+          "text": "I couldn’t get past the DTMF captcha. My device’s microphone didn’t listen to its own audio and I was lazy to get a second device. Did anyone register? What happens after, do you get a sort of WebRTC P2P voice number? I like this UI/UX a lot but no idea what this is haha"
+        },
+        {
+          "by": "cnqso",
+          "text": "Easter egg if you type in *#06# :)"
+        },
+        {
+          "by": "wildzzz",
+          "text": "Not sure what I just registered for but hope it's cool"
+        }
+      ],
+      "image": "https://phreak.ing/static/og.png"
+    },
+    {
       "id": 50097369,
       "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
       "hn": "https://news.ycombinator.com/item?id=50097369",
@@ -1113,6 +1776,50 @@
     }
   ],
   "glossary": {
+    "zero-click": "A way to get software onto a device without the person tapping a link or opening a file.",
+    "spyware": "Software that secretly gets information from a device or lets someone monitor it.",
+    "programmatic auction": "A split-second process where companies automatically bid to show an ad to a particular user.",
+    "deanonymise": "Figure out who someone is even when their online activity does not show their name.",
+    "ad tech": "The tools and services used to place and target online ads.",
+    "Wayland": "A system Linux desktops use to draw windows and handle mouse and keyboard input.",
+    "skeuomorphism": "A design style where digital things are made to look like real-world objects.",
+    "ray-tracing": "A way of drawing a scene by simulating how light travels, to create lighting and shadows.",
+    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "compositor": "The part of a desktop that puts app windows together and manages how they appear on screen.",
+    "wlroots": "A set of building blocks developers can use to make Wayland desktops.",
+    "proof": "A step-by-step argument showing that a mathematical statement has to be true.",
+    "conjecture": "A mathematical idea believed to be true but not yet proved.",
+    "peer review": "A process where other researchers check a paper before a journal publishes it.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "DLE": "Discoid lupus erythematosus: a skin condition on a dog's nose that sunlight can make worse.",
+    "UV": "Ultraviolet: a kind of sunlight that can harm skin.",
+    "3D printing": "A way to make an object by building it up in thin layers from a digital design.",
+    "TPU": "Thermoplastic polyurethane: a bendy kind of plastic used to make some printed parts.",
+    "USGS": "United States Geological Survey: a U.S. government agency that studies and maps land and natural resources.",
+    "PAD-US": "Protected Areas Database of the United States: a map dataset of protected lands.",
+    "easement": "A legal right to use someone else's land for a specific purpose, such as reaching your property by road.",
+    "UEFI": "Unified Extensible Firmware Interface: the built-in startup software that checks a computer and starts its main software.",
+    "EDK2": "EFI Development Kit: Intel's reference software for providing UEFI support when a computer starts.",
+    "payload": "The piece of code or data a request carries or delivers.",
+    "GRUB": "A program that offers a menu for choosing what operating system to start.",
+    "SeaBIOS": "A program that starts an operating system using the older BIOS-style startup approach.",
+    "fingerprinting": "Using clues from a device and browser to recognize them without relying on a saved cookie.",
+    "mobile advertising ID": "An ID used by ad companies to recognize a phone and target ads to it.",
+    "DLL hijack": "A trick that makes a program load a harmful file instead of the one it expected.",
+    "fault injection": "Deliberately disrupting a device while it works, to make it behave incorrectly.",
+    "modchip": "A small add-on chip used to change how a game console behaves.",
+    "bootloader": "A small program that starts a computer and loads its main software.",
+    "secure boot": "A startup check that lets a device run only software approved by its maker.",
+    "side channel": "A clue you can learn from a device's normal behavior, even when it is not directly sharing that information.",
+    "CPU": "Central Processing Unit: the main chip that runs instructions in a computer.",
+    "arbitrary code execution": "The ability to make a device run your own instructions, rather than only what its maker planned.",
+    "AI agent": "An autonomous computer program that can carry out tasks.",
+    "backup": "An extra copy of files kept in case the originals are lost.",
+    "root-cause analysis": "Looking into what went wrong and why, not just describing what happened.",
+    "PBX": "Private Branch Exchange: a phone system that lets people call each other using extensions.",
+    "DTMF": "Dual-tone multi-frequency: the tones a phone keypad makes when you press its buttons.",
+    "IRC": "Internet Relay Chat: a way to chat live with people in online rooms.",
+    "WebRTC": "Web Real-Time Communication: browser features for live audio and video calls.",
     "on-device": "Runs on the phone or computer itself, rather than sending the work elsewhere.",
     "active parameters": "The portion of an AI model it uses to produce each piece of an answer.",
     "MoE": "Mixture of Experts: a model with many specialist parts that sends each piece of text to only a few of them.",
@@ -1194,7 +1901,6 @@
     "mesh radio": "A radio setup where devices pass messages between one another, letting information travel across several devices.",
     "BOM": "Bill of Materials: a list of the parts needed to build something.",
     "LEO": "Low Earth orbit: a region fairly close to Earth where satellites travel around the planet.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "SVG": "Scalable Vector Graphics: a picture format that stays sharp when resized.",
     "UI": "User interface: the screens and controls people use to operate a device.",
     "mode collapse": "When a model keeps producing similar results instead of showing much variety.",
