@@ -1,0 +1,853 @@
+{
+  "date": "2026-10-15",
+  "cards": [
+    {
+      "id": 50094994,
+      "url": "https://anoma.ly/notes/opencode-2-0/",
+      "hn": "https://news.ycombinator.com/item?id=50094994",
+      "title": "OpenCode 2.0",
+      "time": 1792010904,
+      "points": 430,
+      "depth": [
+        {
+          "text": "OpenCode got a **major overhaul**: one **shared process** lets agents work while you keep prompting",
+          "tier": "simple"
+        },
+        {
+          "text": "The TUI, web interface and desktop app now share one **server process**. **Code mode** lets agents chain tool calls in one script, and the team says it built **80+ internal plugins**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: fans say the overhaul fixes old annoyances and praise its client/server model; critics say it still feels heavy and needs more performance work.",
+      "comment_count": 178,
+      "terms": [
+        "TUI",
+        "client/server model",
+        "code mode",
+        "plugin",
+        "subagent",
+        "MCP",
+        "API"
+      ],
+      "entities": [
+        "OpenCode",
+        "@opencode/client",
+        "@opencode/codemode",
+        "@opencode/sdk",
+        "OpenTUI",
+        "Effect",
+        "JavaScript",
+        "Node.js",
+        "QuickJS",
+        "MCP",
+        "GitHub",
+        "Linear",
+        "Durable Objects",
+        "Claude Code",
+        "Claude.ai",
+        "Codex",
+        "pi",
+        "OMP",
+        "Tern",
+        "Vercel",
+        "Vim"
+      ],
+      "comments": [
+        {
+          "by": "solarkraft",
+          "text": "It's good. Many of the annoyances from V1 are gone. Skills and plugins reload automatically (finally). Tasks can be backgrounded (though I think this doesn't happen automatically yet). There's a built-in skill for editing the configuration (finally I can retire mine). The front-end got some love. Apparently they re-architected the loop around Effect. Sub-sessions can be communicated with better…"
+        },
+        {
+          "by": "andunie",
+          "text": "Feels like more of the same, although I can't say because this article wasn't very readable so I couldn't bring myself to reading it. A list of big new features and changes would have been nicer. I hope they fixed the long delays to opening OpenCode I have been experiencing, and the huge database of old chats I don't care about anymore."
+        },
+        {
+          "by": "dkarter",
+          "text": "It's my daily driver - very easy to customize. Added a pretty solid vim plugin for it and a few more really useful plugins. Here are my dotfiles https://github.com/dkarter/dotfiles"
+        },
+        {
+          "by": "afruitpie",
+          "text": "Native apps connecting to the OpenCode server is a great way to run sessions on remote hosts! I wish Claude Code would adopt the same model. The desktop app deploys a separate engine that restarts and clobbers long-running sessions upon reconnect (Remote Control is their recommended solution but requires a Claude.ai account). I’ve been vibe coding a native macOS Claude Code app that spawns a…"
+        },
+        {
+          "by": "denysvitali",
+          "text": "Their installer (curl | sh) was taking so long yesterday for me. It turns out it's incredibly slow... because of the progress bar rendering. This is insane. The installer took 6 minutes to reach 10%: curl -fsSL https://opencode.ai/v2/install | bash Managed to fix it by running this instead: curl -fsSL https://opencode.ai/v2/install | bash 2>&1 | cat"
+        }
+      ],
+      "image": "https://anoma.ly/notes/og/opencode-2-0.png"
+    },
+    {
+      "id": 50093180,
+      "url": "https://www.telegraph.co.uk/news/2026/10/13/suicide-rates-highest-ever-among-middle-aged-men/",
+      "hn": "https://news.ycombinator.com/item?id=50093180",
+      "title": "Suicide rates highest ever among middle-aged men",
+      "time": 1792004638,
+      "points": 356,
+      "depth": [
+        {
+          "text": "new figures show **middle-aged men** have hit **record suicide rates**, especially those aged 50 to 54",
+          "tier": "simple"
+        },
+        {
+          "text": "The figures for England and Wales showed **6,162 suicide deaths** registered in 2025, down from 6,190 last year; the overall rate remained broadly the same at 11.3 per 100,000. For men aged 45 to 64, the rate reached **23.8 per 100,000**, the highest on record since data collection began in 1981; for men aged 50 to 54, it was **28**.",
+          "tier": "substance",
+          "data": [
+            [
+              "suicide deaths registered in 2025",
+              "6,162"
+            ],
+            [
+              "overall rate",
+              "11.3 deaths per 100,000 people"
+            ],
+            [
+              "rate for men aged 45 to 64",
+              "23.8 per 100,000"
+            ],
+            [
+              "rate for men aged 50 to 54",
+              "28"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 450,
+      "terms": [
+        "anomie",
+        "suicidal ideation",
+        "per 100,000"
+      ],
+      "entities": [
+        "Office for National Statistics",
+        "Rethink Mental Illness",
+        "Samaritans",
+        "Sane",
+        "Mark Winstanley",
+        "Sonya Trivedy",
+        "Simon Reeve",
+        "Marjorie Wallace",
+        "Émile Durkheim",
+        "The Telegraph"
+      ],
+      "comments": [
+        {
+          "by": "munificent",
+          "text": "Because it's highly relevant, I'm going to paraphrase a comment I made last week: I think a big part of the problem is that middle-aged men are at the apex of their expectations to be successful in the eyes of society, and we are living through a period of time where success is very hard to define, much less attain. There is a name for this in sociology: anomie [1]. Émile Durkheim coined it in…"
+        },
+        {
+          "by": "dsign",
+          "text": "Things that work for depression: writing, composing music, exercise, playing video games. Things that don't help: alcohol nor drugs. Role of family and community: YMMV. I envy lots of folks with supportive and kind families, but I also witnessed much suffering and terrible loss caused by a loving family that doesn't quite get the loving part right. With that out of the way, I'll say that for as…"
+        },
+        {
+          "by": "happytoexplain",
+          "text": "I'm 40, and I am not suicidal, but I've definitely felt those thoughts more than ever in my life in the past two years. I wake up two or three times every night from anxiety dreams. I began drinking too much, but luckily I was able to get out of that habit. Between (some of) the effects of AI on my career and hobbies, and the effects of politics on my country and even my own town, and many more…"
+        },
+        {
+          "by": "ryanbigg",
+          "text": "I turn 39 this year and am just finding more and more ways to become irrelevant. I can’t be the only one so these stats make sense to me. Fortunately, Australia has a good start on what mental health care should look like and its subsidised (or at least a few sessions are). I was made redundant in August and despite being a 20 year career vet who has done many different langs, I still can’t find…"
+        },
+        {
+          "by": "mrburton",
+          "text": "To all those reading this thread, suicide isn't the answer. I know you've heard this and it's not special coming from me. We all heard it's a permanent solution to a temporary problem and so many other quotes. I've lost a lot of people growing up to suicide and the impact it has on those who continue to live on that you love is traumatic. The man who raised me like I was his son told my mother…"
+        }
+      ],
+      "image": "https://www.telegraph.co.uk/content/dam/briefs/2026/10/13/TELEMMGLPICT000507183811_17919022221720_trans_NvBQzQNjv4BqrnykcIhNBTQGIhNzmTaT-cLZq-j_VIcNfiYtpwBx7zI.jpeg?impolicy=OG-Standard"
+    },
+    {
+      "id": 50094694,
+      "url": "https://sunshowers.io/posts/anthropic-mononoke/",
+      "hn": "https://news.ycombinator.com/item?id=50094694",
+      "title": "Anthropic's Scion is heavily inspired by Mononoke",
+      "time": 1792009854,
+      "points": 316,
+      "depth": [
+        {
+          "text": "someone says Anthropic's source control system **drew heavily** on older work **without enough credit**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author says Scion’s **“derived data”** resembles Mononoke, which they helped build at Meta; they say Anthropic credited Sapling but **left Mononoke unmentioned**. Commenters split: some call the attribution plagiarism or misleading, while others say the ideas could have emerged independently and note Anthropic did cite Sapling.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters call the attribution plagiarism or misleading; others say the ideas were obvious enough to arrive at independently and note Anthropic cited Sapling.",
+      "comment_count": 123,
+      "terms": [
+        "source control",
+        "derived data",
+        "monorepo",
+        "prior art"
+      ],
+      "entities": [
+        "Anthropic",
+        "Scion",
+        "Mononoke",
+        "Sapling",
+        "Meta",
+        "Google",
+        "Piper",
+        "SrcFS",
+        "Oxide",
+        "Claude",
+        "Cursor",
+        "Vicent Marti"
+      ],
+      "comments": [
+        {
+          "by": "BryantD",
+          "text": "From the Anthropic announcement: “Source control for huge monorepos has prior art, notably Google’s Piper and Meta’s Sapling, so we were able to build Scion with their hard-won lessons in mind.” Mononoke is a component of Sapling, as I understand it. In fact, the repo link provided in this article links to a subdirectory of the Sapling repo. I’m not totally sure I understand the complaint."
+        },
+        {
+          "by": "MeetingsBrowser",
+          "text": "When Fable first released, I had it \"one shot\" a project using an initial spec and a team of agents. I was blown away with how good the results were. And then I noticed some links to images from random small github projects and realized somewhere along the way agents had searched for existing projects and copied almost everything. I wonder if something similar happened here on a larger scale."
+        },
+        {
+          "by": "evolve-maz",
+          "text": "I've always worried about the level of \"IP laundering\" which is done by LLMs. While that's not technically the case here (given Mononoke's license) it is still quite negative in my view. We will have fewer people wanting to share ideas openly since LLMs are so good at not only finding them, but also not attributing them. This also leads to a loss in diverse collaboration, which is probably one of…"
+        },
+        {
+          "by": "notnullorvoid",
+          "text": "I don't expect Scion's design to be very good, and the implementation is likely pretty bad, unless it is a near 1 to 1 copy of existing open source . The amount of training data for incremental/derived data systems is quite sparse in the grand scheme of things. I've seen little to no improvement over the last year when testing new models in that area, they always make some pretty bad mistakes…"
+        },
+        {
+          "by": "pmbauer",
+          "text": "Anthropic effectively doing a \"git clone\" with extra steps here.\nUncharitable?\nI don't think so.\nIf this were about functionality, why not use Sapling/Mononoke or extend it and contribute back to the open source community?\nBecause that doesn't juice the IPO valuation."
+        }
+      ],
+      "image": "https://sunshowers.io/images/og-image.png"
+    },
+    {
+      "id": 50089921,
+      "url": "https://www.dataforprogress.org/blog/2026/9/29/americans-social-activity-has-steeply-declined-in-the-past-30-years",
+      "hn": "https://news.ycombinator.com/item?id=50089921",
+      "title": "Americans' social activity has steeply declined in the past 30 years",
+      "time": 1791994140,
+      "points": 301,
+      "depth": [
+        {
+          "text": "Americans report doing **less** of many **social activities**, from entertaining at home to going to church",
+          "tier": "simple"
+        },
+        {
+          "text": "Data for Progress compared a 2026 survey of 1,098 U.S. adults with a 1995 survey: home entertaining fell from **88% to 67%**, and church attendance from 74% to 54%. The surveys used **different methods**, so the authors say the results suggest trends, not a precise estimate of change.",
+          "tier": "substance",
+          "data": [
+            [
+              "Home entertaining",
+              "88% (1995) to 67% (2026)"
+            ],
+            [
+              "Church attendance",
+              "74% (1995) to 54% (2026)"
+            ],
+            [
+              "Survey respondents",
+              "1,098 U.S. adults"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters blame screens and online entertainment; others point to costs, housing, work and family schedules, and social spaces designed for isolation.",
+      "comment_count": 303,
+      "terms": [
+        "sampling frame",
+        "post-stratification weighting",
+        "parasocial relationship"
+      ],
+      "entities": [
+        "Data for Progress",
+        "American Time Use Survey",
+        "American Perspectives Survey",
+        "DDB Needham Life Style surveys",
+        "Robert Putnam",
+        "Market Facts"
+      ],
+      "comments": [
+        {
+          "by": "nuclearsugar",
+          "text": "These days I must make a real effort to be social on a regular basis. Personally I've found satisfaction in going to meetups to find like minds. I also go with my gut and in the moment ask to swap Instagram usernames with interesting people and promptly schedule with them to get coffee. If they prove to be as interesting and kind as I had sensed, then I invite them to a potluck dinner party which…"
+        },
+        {
+          "by": "legitster",
+          "text": "This has actually been a trend since the 1960s: https://en.wikipedia.org/wiki/Bowling_Alone The simple answer is media. First television, then internet, then smartphones. People used to actively seek the company of others - if for no other reason than out of boredom. Entertainment and parasocial relationships have filled that hole. Another reason I might posit is declining birth rates and an…"
+        },
+        {
+          "by": "galkk",
+          "text": "I also see that people generally like to be invited but rarely initiate things on their own."
+        },
+        {
+          "by": "justinator",
+          "text": "I remember when the iPhone first came out. I was at a bar, at a table with a few people I didn't really know. This was a pretty common occurrence. You usually got a drank, talked. This was a kind of gothic-theme bar, all done up with spooky decorations, a good dj, interesting drinks. We'd host arts/culture slide show jams before the place really would get going for the night. The art was curated…"
+        },
+        {
+          "by": "bcardarella",
+          "text": "Every single social event is a financial consideration now. Want to go out with the wife for the evening? It's going to cost $150+ for a baby sitter at $25/hour. The dinner + tip is going to cost $200. Parking is going to cost $50 - $100 if you go into a city. You could take public transportation but then you're loooking at that cost shifting back to the babysitter. Before you know it you're in…"
+        }
+      ],
+      "image": "http://static1.squarespace.com/static/5aa9be92f8370a24714de593/t/6aba933e8ee596665cfd1976/1790612286756/Copy+of+Poll_+Personally+Knowing+a+Transgender+Person+Correlates+With+Increased+Sympathy+for+Transgender+People+and+Support+for+LGBTQ%2B+Issues.png?format=1500w"
+    },
+    {
+      "id": 50083028,
+      "url": "https://alexwennerberg.com/blog/2026-10-13-long.html",
+      "hn": "https://news.ycombinator.com/item?id=50083028",
+      "title": "Why is every rationalist blog post way too long?",
+      "time": 1791957736,
+      "points": 265,
+      "depth": [
+        {
+          "text": "someone argues rationalist bloggers **write too much** instead of questioning their **starting assumptions**",
+          "tier": "simple"
+        },
+        {
+          "text": "Alex Wennerberg says he cut around **70%** of his draft; his piece was 2,700 words, after he skimmed Scott Alexander’s **25,000-word post**. He argues **verbosity** can stand in for thoroughness, while the community prizes unconventional ideas over common sense and tradition.",
+          "tier": "substance",
+          "data": [
+            [
+              "Scott Alexander post",
+              "25,000-word"
+            ],
+            [
+              "Alex Wennerberg piece",
+              "2,700 words"
+            ],
+            [
+              "initial text cut",
+              "around 70%"
+            ],
+            [
+              "Eliezer Yudkowsky's sequences",
+              "over one million words"
+            ],
+            [
+              "Gwern post",
+              "9,000 words"
+            ],
+            [
+              "Gwern post references",
+              "over 100 references"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: critics say rationalist writing is bloated and tedious; defenders say detail and nuance matter, and argue the author dismisses careful arguments too easily.",
+      "comment_count": 188,
+      "terms": [
+        "rationalist",
+        "heterodox",
+        "prolixity",
+        "UX"
+      ],
+      "entities": [
+        "Alex Wennerberg",
+        "Scott Alexander",
+        "Eliezer Yudkowsky",
+        "Gwern",
+        "The Economist",
+        "Blaise Pascal"
+      ],
+      "comments": [
+        {
+          "by": "bawolff",
+          "text": "> adding layers of detail and nuance rather than interrogating the one or two assumptions they make at the start or broadening their philosophical background beyond the collection of texts popular within their subculture. Personally i think the world would be a better place if more of us added nuance to our arguments."
+        },
+        {
+          "by": "habryka",
+          "text": "> Eliezer Yudkowsky's \"sequences\" are over one million words long. This is a particularly weird example. The median post in the \"sequences\" is less than 1000 words long. The sequences are mostly a long series of individually very short blogposts."
+        },
+        {
+          "by": "sien",
+          "text": "The Economist is so good in this respect. A smart, very good writer will write something and get to the point quickly. Articles are mostly a page or less. Writing like that respects people's time. Many bloggers could do with writing things more briefly. The author of this piece also makes a very good point that often long pieces go into weird corners of their own argument without thinking about…"
+        },
+        {
+          "by": "nfw2",
+          "text": "\"The idea that something may be true, valuable, or good merely because it is common sense or inherited tradition is anathema to them\" This is reasonable though. Tradition and common sense suggest value perhaps more than rationalists think, but if tradition and common sense have value, there is an underlying reason."
+        },
+        {
+          "by": "silcoon",
+          "text": "Agree with the author. Most rationalist material I've tried to read it's incredibly lengthy and frequently boring. It's also true that they are using verbosity and a certain academic style to hide the lack of precision and correctness. They are prolific writers, but not great."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50096142,
+      "url": "https://tinylittleoffice.com/",
+      "hn": "https://news.ycombinator.com/item?id=50096142",
+      "title": "Tiny Little Office",
+      "time": 1792015808,
+      "points": 248,
+      "depth": [
+        {
+          "text": "someone made a **free office suite** in one website, with documents stored in the link",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says Claude can read the site's **llms.txt** and generate **URLs that render documents**. Others asked about opening saved files and adding **PDF annotation**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some praise it; others want desktop apps or say the functionality has been available for decades.",
+      "comment_count": 34,
+      "terms": [
+        "office suite",
+        "llms.txt",
+        "URL",
+        "PDF annotation"
+      ],
+      "entities": [
+        "Tiny Little Office",
+        "Claude"
+      ],
+      "comments": [
+        {
+          "by": "alexpotato",
+          "text": "As a kid in the late 1980s, my dad got me a PC (an Olivetti IBM clone to be precise). I distinctly remember that there were separate apps for spreadsheets (Lotus 1-2-3 [0]), charts (Harvard Graphics [1]) and word processing (Chi Writer [2]). And now we just have a basic office suite for free in one website. 0 - https://en.wikipedia.org/wiki/Lotus_1-2-3 1…"
+        },
+        {
+          "by": "oijkuij",
+          "text": "If folks like this kind of thing, I discovered https://bento.page/ from a HN post and have been using it off and on for the past few months. It has a much larger featureset but is specifically focused on presentations (for now!). Unlike this project, the editor and content embed themselves in an html file, so you aren't dependent on the host site existing to serve the editor."
+        },
+        {
+          "by": "simonw",
+          "text": "Tell Claude or whatever to read https://tinylittleoffice.com/llms.txt and it will then be able to generate URLs that render documents. Here's a deck I had it generate about how the URL format works: https://bit.ly/4yRBc1v"
+        },
+        {
+          "by": "mikepurvis",
+          "text": "I'm intrigued about the \"Trip Planner\" being a top-level app. Only tried it in a very surface level way, but the recent trips I've planned (Ottawa for 6 people, Cancun for ~20) have ended up as an ugly mishmash of spreadsheets + google maps saved locations list + random chatgpt sessions. It feels like there's an unmet need there for managing something more flexible than a minute by minute…"
+        },
+        {
+          "by": "yellowapple",
+          "text": "FYI: OpenStreetMap seems to be blocking the site with a 403 error (suggesting maybe it's pulling too much data from OSM's servers?): https://wiki.openstreetmap.org/wiki/Blocked_tiles"
+        }
+      ],
+      "image": "https://tinylittleoffice.com/og.png"
+    },
+    {
+      "id": 50094673,
+      "url": "https://blog.cloudflare.com/yandex-outage/",
+      "hn": "https://news.ycombinator.com/item?id=50094673",
+      "title": "Yandex outage: data shows that instead of going dark, malicious bots moved",
+      "time": 1792009753,
+      "points": 244,
+      "depth": [
+        {
+          "text": "Cloudflare found **malicious bots** **moved to other hosts** instead of stopping",
+          "tier": "simple"
+        },
+        {
+          "text": "Bot requests from Yandex.Cloud to one gambling account **dropped to zero**, but **identical requests** soon appeared from Radist and Selectel. Russian bot traffic to gambling accounts stayed essentially flat: 167.7 million to 170.1 million requests (+1.4%).",
+          "tier": "substance",
+          "data": [
+            [
+              "Russian bot requests, earlier figure",
+              "167.7 million"
+            ],
+            [
+              "Russian bot requests, later figure",
+              "170.1 million"
+            ],
+            [
+              "Change",
+              "+1.4%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say bots moved rather than stopped; others point to steep traffic drops and possible downstream effects from losing Yandex services.",
+      "comment_count": 77,
+      "terms": [
+        "ASN",
+        "JA4 fingerprint",
+        "WAF",
+        "bot traffic"
+      ],
+      "entities": [
+        "Cloudflare",
+        "Yandex",
+        "Yandex.Cloud",
+        "YandexBot",
+        "YandexRenderResourcesBot",
+        "YandexImages",
+        "Radist",
+        "Selectel",
+        "Marina Elmore",
+        "Lai Yi Ohlsen"
+      ],
+      "comments": [
+        {
+          "by": "gruez",
+          "text": "Buried lede: >across Cloudflare's network, there was no evidence that the strikes knocked social media manipulation offline or otherwise disrupted malicious activity on the Internet. This directly refutes the popular memes going around that russian trolls magically went offline because of the attack."
+        },
+        {
+          "by": "Bender",
+          "text": "Just anecdotally I still see as many bots as always. Embrace the bots, have fun with them. # nginx rule to Awaken AWS GuardDuty and GCP SCC, maybe get them to fix a few VMs, enable on all non-wordpress sites after testing in dev/qa\nlocation ~* /(xmlrpc|wp-login\\.php|wp-admin) { log_not_found off; access_log off; return 301 http://169.254.169.254$request_uri; }"
+        },
+        {
+          "by": "fierycatnet",
+          "text": "I thought it was established that those were search engine crawlers..."
+        },
+        {
+          "by": "parasti",
+          "text": "Incidentally, this morning I asked Gemini Argon 4 on High to do deep research on the effect of the strikes on russian bot farms and after some hours (it got stuck) it generated the report starting with a surprising (to me at the time) paragraph: \"Rigorous digital forensic scrutiny and network telemetry analysis, however, demonstrate that the purported collapse of Russian social media propaganda…"
+        },
+        {
+          "by": "taeric",
+          "text": "Does anyone have the numbers on social media participation? I don't think anyone thought that their ability to execute media influencing activities was completely shutdown, but it did seem that social media was a lot quieter for a time. Easy hypothesis would be that they were (probably accidentally) reliant on the news scraping bots to find where to focus responses and such. Would be like…"
+        }
+      ],
+      "image": "https://blog.cloudflare.com/_emdash/api/media/file/01M4Y140VQ20JV2JNAC18Y1A2G.png"
+    },
+    {
+      "id": 50095353,
+      "url": "https://typesafe.ai/blog/jev-1-14",
+      "hn": "https://news.ycombinator.com/item?id=50095353",
+      "title": "We’re releasing Jev 1.14.0 along with experimental features for dreamers",
+      "time": 1792012263,
+      "points": 242,
+      "depth": [
+        {
+          "text": "Jev is letting people try **image support**, **bounding boxes**, and **longer context** as experimental features",
+          "tier": "simple"
+        }
+      ],
+      "camps": null,
+      "comment_count": 82,
+      "terms": [
+        "API header",
+        "flag",
+        "bounding box",
+        "context length",
+        "production"
+      ],
+      "entities": [
+        "Jev",
+        "TypeSafe"
+      ],
+      "comments": [
+        {
+          "by": "jjcm",
+          "text": "> Warning: AI benchmarks. Please don't trust them I like that they're being up front about this. Benchmarks are a metric that can be gamed. They give you an approximate estimate of where things land, but you really need to test for your use case."
+        },
+        {
+          "by": "nico",
+          "text": "In case you need something a bit more lightweight, or want privacy. You can get amazing (better in a lot of cases) accuracy and performance from local models that run and train on CPU: https://jeffyclassify.com/blog/when-llms-fail-at-classificat..."
+        },
+        {
+          "by": "tyushk",
+          "text": "Cool to see another model with support for bounding boxes on images. Really wish to see segmentation in a future release; Gemini 3.5 Flash-Lite is mandatory in my use case as it's the best model for semantic image segmentation in my experience."
+        },
+        {
+          "by": "dwa3592",
+          "text": "If you want a local alternative; I added image support to OpenDecision three days ago - https://github.com/deepanwadhwa/OpenDecision Videos will be next."
+        },
+        {
+          "by": "shepardrtc",
+          "text": "If you're looking for a decent local model, JevK5-4B is excellent. On my own benchmark for the things I work with (seeing if the answer to a question was correct given the evidence that was provided), it was within a point of jev."
+        }
+      ],
+      "image": "https://framerusercontent.com/images/KBTvCTXoQaZeABcI7te5PTQw7Q.png?width=1574&height=996"
+    },
+    {
+      "id": 50091875,
+      "url": "https://www.lawfaremedia.org/article/america-didn-t-lose-its-rare-earth-industry.-it-sold-it",
+      "hn": "https://news.ycombinator.com/item?id=50091875",
+      "title": "America didn't lose its rare earth industry, it sold it",
+      "time": 1792000226,
+      "points": 169,
+      "depth": [
+        {
+          "text": "the US **sold its rare earth industry**, and the authors pitch a **plan to rebuild it**",
+          "tier": "simple"
+        },
+        {
+          "text": "The authors propose a **CoCo bond**: it pays interest in quiet years, **shares cash flow** after the producer hits a capacity threshold, and can **convert into equity** if both triggers fire. One trigger is reaching a defined capacity target; the other is a sustained breach of an agreed price band or an externally observed exercise of the chokepoint.",
+          "tier": "substance",
+          "data": [
+            [
+              "China's share of world rare earth refining",
+              "more than 90 percent"
+            ],
+            [
+              "China's share of heavy rare earth refining",
+              "close to 99 percent"
+            ],
+            [
+              "loan authority earmarked for critical minerals",
+              "up to $100 billion"
+            ],
+            [
+              "convertible preferred stock in the MP Materials deal",
+              "$400 million"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say production moved because market costs made it rational; others want government intervention, with one proposing a federal company instead of the authors’ financing plan.",
+      "comment_count": 90,
+      "terms": [
+        "rare earths",
+        "CoCo bond",
+        "offtake agreement",
+        "price floor",
+        "chokepoint",
+        "pro rata"
+      ],
+      "entities": [
+        "Lawfare",
+        "Kirsten Asdal",
+        "Tom Koch",
+        "Tao Tan",
+        "MP Materials",
+        "USA Rare Earth",
+        "General Motors",
+        "Magnequench",
+        "Chinese Communist Party",
+        "Pentagon",
+        "One Big Beautiful Bill Act",
+        "Office of Strategic Capital",
+        "JARE",
+        "Lynas",
+        "Rare Earth Technologies",
+        "Northern Minerals",
+        "Ucore Rare Metals"
+      ],
+      "comments": [
+        {
+          "by": "Animats",
+          "text": "The current bottleneck is separation, not mining. There are at least ten startups claiming new separation technologies. They're flaky. A few: - Rare Earth Technologies. [1] PitchBook says they have about $1 million in investment. LinkedIn says they have 7 employees. Their site says they are going to have a pilot plant running in 2025.\nRight. - Northern Minerals (Australia) [2] \"Progressing the…"
+        },
+        {
+          "by": "bubbluppugus",
+          "text": "America didn't lose manufacturing jobs it sold them The whole economy for 40-ish years now been built on finance engineering away labors grip on anything in the US"
+        },
+        {
+          "by": "OgsyedIE",
+          "text": "The price signals drove the move away, it's quite simple. Energy, labor, pollution tolerance, legal costs and economies of scale said to go elsewhere. Some said that these price signals only make sense if globalisation lasts forever, but their remarks were dismissed as depressing."
+        },
+        {
+          "by": "leonidasrup",
+          "text": "Rare earths are not as rare as the name suggests. \"\nThe term \"rare-earth\" is a misnomer, because they are not actually scarce, but because they are found only in compounds, not as pure metals, and are difficult to isolate and purify. REEs are relatively plentiful in the entire Earth's crust (cerium being the 25th-most-abundant element at 68 parts per million, more abundant than copper), but in…"
+        },
+        {
+          "by": "BatchJob",
+          "text": "Obviously if you know someone with rare earth mines who will mine it for pennies compared to what you can you buy from them. I am not aware of any hidden story here. Yes rare earths are everywhere, yes it sucks separating them, yes China does it cheaper and we shut ours down and sold them off. When someone says \"Didnt lose its...\", A mine that is shutdown is a loss, because its no longer…"
+        }
+      ],
+      "image": "https://lawfare-assets-new.azureedge.net/assets/images/default-source/article-images/rare-earth-2.jpg?sfvrsn=e020d640_5"
+    },
+    {
+      "id": 50084622,
+      "url": "https://defence24.com/geopolitics/starlink-limit-hits-ukraines-drones-the-battlefield-depends-on-spacex",
+      "hn": "https://news.ycombinator.com/item?id=50084622",
+      "title": "Starlink limit hits Ukraine's drones",
+      "time": 1791969037,
+      "points": 164,
+      "depth": [
+        {
+          "text": "a new **speed limit** from SpaceX may be disrupting **Ukraine's drone missions**",
+          "tier": "simple"
+        },
+        {
+          "text": "Initial reports put the threshold at **around 160 km/h**; later reports said some operators lost communication at **60–70 km/h**, though that lower figure is unconfirmed. The service carries commands, video and mission updates, and SpaceX has not confirmed a **political motive**.",
+          "tier": "substance",
+          "data": [
+            [
+              "initial reported threshold",
+              "around 160 km/h"
+            ],
+            [
+              "later reported threshold",
+              "60–70 km/h"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 154,
+      "terms": [
+        "StarShield",
+        "UAV",
+        "GNSS",
+        "inertial systems",
+        "data link",
+        "geofencing",
+        "mesh radio",
+        "BOM",
+        "LEO"
+      ],
+      "entities": [
+        "SpaceX",
+        "Starlink",
+        "StarShield",
+        "Reuters",
+        "Serhii Sternenko",
+        "White House",
+        "Musk",
+        "Trump",
+        "Yandex"
+      ],
+      "comments": [
+        {
+          "by": "MayeulC",
+          "text": "The timing is interesting, given that it comes days after Musk said Ukraine had gone \"too far\" striking Yandex data centers. Putting other considerations aside, these strikes could be interpreted as direct retaliation against strikes on Ukrainian data centers days before. That said, depending on a single piece of tech is not a good idea (as evidenced by the Russians when they lost starlink…"
+        },
+        {
+          "by": "eqvinox",
+          "text": "The temporal correlation with datacenter hits argued to take out Russian bot farms is striking... Normally I'd say \"assume ignorance before incompetence before malice\" but with the current US political climate it's usually all 3 at the same time."
+        },
+        {
+          "by": "alnxdrawr",
+          "text": "Unacceptable. How far has Musk fallen from when he was our best hope to save this planet. From an Ironman inspiration to an actual real life villain."
+        },
+        {
+          "by": "tomtomistaken",
+          "text": "Post got pushed back to >150 rank"
+        },
+        {
+          "by": "NookDavoos",
+          "text": "When you think about it - wouldn't disabling the Starlink system completely remove or at the very least vastly reduce the threat posed by Iranian drones over the Strait of Hormuz? I bet its all bootstrapped with starlink internet."
+        }
+      ],
+      "image": "https://cdn.defence24.pl/2026/03/31/1024x576px/3Tn0eJsp5oYuAYemtRhwYykv78O0Sh44Z1GansN1.xhky.jpg"
+    },
+    {
+      "id": 50090443,
+      "url": "https://arcfu.com/post/the-emperor-pelican-has-no-clothes/",
+      "hn": "https://news.ycombinator.com/item?id=50090443",
+      "title": "Why do LLM pelicans look like this?",
+      "time": 1791995614,
+      "points": 157,
+      "depth": [
+        {
+          "text": "someone says **AI pelicans** keep coming out **alike**, even when a simple prompt leaves room for variety",
+          "tier": "simple"
+        },
+        {
+          "text": "The post compares SVGs from the same pelican-and-bicycle prompt and calls the similar results **“diversity collapse.”** Its UI-design benchmark puts the best model at **65.5**, against **92.3** for a human reference.",
+          "tier": "substance",
+          "data": [
+            [
+              "best model score",
+              "65.5"
+            ],
+            [
+              "human reference score",
+              "92.3"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say a plain prompt should get a plain pelican and variation should be requested; others say the repeated compositions point to a real lack of model diversity.",
+      "comment_count": 134,
+      "terms": [
+        "LLM",
+        "SVG",
+        "UI",
+        "benchmark",
+        "mode collapse",
+        "RLHF",
+        "post-training",
+        "frontier model"
+      ],
+      "entities": [
+        "Simon Willison",
+        "Aman Rusia",
+        "OpenAI",
+        "GPT-6 Astra",
+        "Design Creativity Bench",
+        "Claude",
+        "Opus 5.5",
+        "Qwen 4.5",
+        "Fable 5.5",
+        "Ethan Mollick",
+        "Feynman",
+        "Picasso",
+        "Kombai",
+        "Macbook Air"
+      ],
+      "comments": [
+        {
+          "by": "joshkel",
+          "text": "I'm not clear on what the claim is here. The article faults LLMs for not being more creative (riding in the city in the rain, in East Asia, in outer space, etc.). But, if prompted, \"Generate an SVG of a pelican riding a bicycle,\" with no additional details or specification, then I would _expect_ something generic: a side view, nondescript terrain or perhaps terrain associated with a pelican…"
+        },
+        {
+          "by": "orbital-decay",
+          "text": "The lack of variety is probably the most underrated issue, and the most likely cause of annoying patterns you all hate. All current post-trained LLMs are mode-collapsed compared to the post-training set distribution, and this doesn't get nearly enough attention from the labs and independent researchers. It's far from being a transformer-only problem, it's a common failure mode in all kinds of…"
+        },
+        {
+          "by": "randomblock1",
+          "text": "The example just doesn't support the claim. If I ask for a pelican riding a bicycle, I am expecting a relatively boring image of a pelican riding a bicycle, not a pelican flying through a thunderstorm while on a bicycle. That's just straight up not what I asked for. I didn't ask it to be creative, when I imagine myself riding a bicycle, I'm not flying! If I added \"be creative and unique, you can…"
+        },
+        {
+          "by": "jvanderbot",
+          "text": "It is fairly easy to go ask for a differently styled pelican, environment, background, etc. But that's not the point. I was thinking just today about how, if I could hire my competition's lead designer/programmers, have them design a system for me cleanroom, that I'd effectively know everything there is to know about my competition's limitations. This is trivial to do with LLMs. \"Make me a thing…"
+        },
+        {
+          "by": "ed",
+          "text": "A good prompt will shift the distribution away from average eg: https://john.hartnup.uk/2026/06/07/ai-event-posters.html This is a feature, not a bug."
+        }
+      ],
+      "image": "https://arcfu.com/post/the-emperor-pelican-has-no-clothes/diverse-grid.png"
+    }
+  ],
+  "glossary": {
+    "TUI": "Terminal User Interface: the menus and controls an app shows inside a text terminal.",
+    "client/server model": "A setup where one background program does the work for several apps that connect to it.",
+    "code mode": "A way for the agent to write one script that calls tools and handles their results together.",
+    "plugin": "An add-on that gives an app extra tools or features.",
+    "subagent": "A helper assigned a smaller part of a larger task.",
+    "MCP": "Model Context Protocol: a standard way for AI apps to connect to outside tools.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "anomie": "A feeling of unease when familiar social rules stop giving people a clear guide for how to live.",
+    "suicidal ideation": "Thoughts about suicide, whether or not someone has made a plan.",
+    "per 100,000": "A way to compare rates between groups of different sizes by expressing the count as if each group had 100,000 people.",
+    "source control": "Tools for keeping track of changes to code and helping developers work on it together.",
+    "derived data": "Information worked out from other stored information, so a system can reuse it instead of doing the work again.",
+    "monorepo": "One repository that holds code for many projects or services.",
+    "prior art": "Earlier work or ideas that are relevant to a new design.",
+    "sampling frame": "The list or pool a survey starts from when choosing whom to ask.",
+    "post-stratification weighting": "A way of adjusting survey answers afterward so the group better matches the people the survey is meant to represent.",
+    "parasocial relationship": "A one-sided feeling of closeness with someone who does not know you personally.",
+    "rationalist": "In this discussion, someone who puts a lot of weight on reasoning and questioning assumptions.",
+    "heterodox": "An idea that goes against what most people in a community usually believe.",
+    "prolixity": "A way of writing that uses more words than needed.",
+    "UX": "User experience: how using a product feels and how easy it is to get things done.",
+    "office suite": "A set of programs for tasks like writing, spreadsheets and presentations.",
+    "llms.txt": "A text file a website can offer for AI tools to read to learn about the site.",
+    "URL": "A web address; here, the address can also carry a document.",
+    "PDF annotation": "A note or mark added to a PDF file.",
+    "ASN": "Autonomous System Number: a number used to identify a network on the internet.",
+    "JA4 fingerprint": "A recognizable pattern in how software connects securely to a website, which can help spot the same software using another network.",
+    "WAF": "Web Application Firewall: a website’s guard that checks incoming requests and can block suspicious ones.",
+    "bot traffic": "Web requests made automatically by software rather than by a person.",
+    "API header": "Application Programming Interface header: a setting sent along with a request that helps a service understand what to do with it.",
+    "flag": "A switch that turns a feature on or off.",
+    "bounding box": "A rectangle that marks where an element should appear in an image.",
+    "context length": "How much text a model can take into account at once.",
+    "production": "The live version of software that people are actually using.",
+    "rare earths": "A group of metals used in specialized materials; separating them from ore takes a lot of processing.",
+    "CoCo bond": "A loan that can turn into part ownership of a company if agreed conditions are met.",
+    "offtake agreement": "A deal where a buyer promises to purchase a producer’s output.",
+    "price floor": "A guaranteed minimum price for what a producer sells.",
+    "chokepoint": "A part of a supply chain where one party can block or slow goods and hurt others who rely on them.",
+    "pro rata": "A share divided in proportion to how much each participant is entitled to.",
+    "StarShield": "The military package for satellite terminals discussed in the article.",
+    "UAV": "Unmanned aerial vehicle: a drone that flies without a person aboard.",
+    "GNSS": "Global Navigation Satellite System: satellite signals that help a device work out where it is.",
+    "inertial systems": "Equipment that estimates movement and direction using changes it senses inside the device.",
+    "data link": "The connection that lets an operator send instructions to a drone and receive information back.",
+    "geofencing": "Setting virtual boundaries that a device or service can enforce based on where it is.",
+    "mesh radio": "A radio setup where devices pass messages between one another, letting information travel across several devices.",
+    "BOM": "Bill of Materials: a list of the parts needed to build something.",
+    "LEO": "Low Earth orbit: a region fairly close to Earth where satellites travel around the planet.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "SVG": "Scalable Vector Graphics: a picture format that stays sharp when resized.",
+    "UI": "User interface: the screens and controls people use to operate a device.",
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "mode collapse": "When a model keeps producing similar results instead of showing much variety.",
+    "RLHF": "Reinforcement Learning from Human Feedback: a way to train an AI by having people rate its answers.",
+    "post-training": "Extra training after a model's initial training that shapes how it responds.",
+    "frontier model": "One of the most capable, newest AI models available."
+  }
+}
