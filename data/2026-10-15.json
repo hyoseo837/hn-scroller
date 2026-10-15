@@ -2,6 +2,327 @@
   "date": "2026-10-15",
   "cards": [
     {
+      "id": 50097369,
+      "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+      "hn": "https://news.ycombinator.com/item?id=50097369",
+      "title": "LFM2.5-24B-A2B: Built for fast on-device agents",
+      "time": 1792022377,
+      "points": 230,
+      "depth": [
+        {
+          "text": "someone released a **fast AI model** meant to run agents **privately on your device**",
+          "tier": "simple"
+        },
+        {
+          "text": "Liquid AI says it has 24B parameters, with just **2B active parameters per token**, and reports **184 tokens/s** on an Apple M5 Max. It leads or matches competitors on **five of eight** tool-use and agentic benchmarks, while larger models do better on knowledge-heavy and coding tests.",
+          "tier": "substance",
+          "data": [
+            [
+              "Total parameters",
+              "24B"
+            ],
+            [
+              "Active parameters",
+              "2B"
+            ],
+            [
+              "Apple M5 Max speed",
+              "184 tokens/s"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some praise its speed and potential for running locally; others say it struggles with real coding tasks or could cause damage.",
+      "comment_count": 54,
+      "terms": [
+        "on-device",
+        "active parameters",
+        "MoE",
+        "agentic",
+        "tokens/s",
+        "benchmark",
+        "reward hacking",
+        "sandbox",
+        "quantization"
+      ],
+      "entities": [
+        "Liquid AI",
+        "LFM2.5-24B-A2B",
+        "Qwen3.6-35B-A3B",
+        "Apple",
+        "M5 Max",
+        "Hugging Face",
+        "NVIDIA",
+        "B300",
+        "Hermes Agent"
+      ],
+      "comments": [
+        {
+          "by": "sebmellen",
+          "text": "> it runs up to 1.7× faster than comparable MoEs on-device, with 184 tokens/s on an Apple M5 Max and up to 21K output tokens/s on a single NVIDIA B300 GPU Wow, those are seriously impressive numbers for how intelligent this model seems to be! One thing that this article doesn't clarify, and that I guess I really should look into, is what exactly AutomationBench tests for as compared to other…"
+        },
+        {
+          "by": "hypfer",
+          "text": "It is very fast on a 4090, but also very stupid. Which makes for a dangerous combination, because it will delete prod, and it will do so at 250t/s."
+        },
+        {
+          "by": "MatthiasPortzel",
+          "text": "Very cool. I’ve been on Gemma 4 12B because of my limited RAM. There’s already an Unsloth quantization of this model so I’m downloading that and will check its performance in the morning. Someone else in this thread recommended Ternary-Bonsai-27B, which I’ll also try. Just also wanted to note that this model has a questionably-enforceable non-commercial use clause in its license. I really wish…"
+        },
+        {
+          "by": "Havoc",
+          "text": "I could see it being useful for say summarising content and similar, but speed increases like this are rarely free lunches."
+        },
+        {
+          "by": "blinkingled",
+          "text": "I asked it to implement the simplest todo in ghostty codebase and it failed badly - kept going in circles fixing one compile error and introducing another. Qwen 3.8 was slower (40 tok/s compared to 75) but did get it done."
+        }
+      ],
+      "image": "https://aypchzzf9pftwuto.public.blob.vercel-storage.com/image%20(3)-oOdUn61bDRSykk4H951SoDOHzqoOe1.png"
+    },
+    {
+      "id": 50092470,
+      "url": "https://petal.live/",
+      "hn": "https://news.ycombinator.com/item?id=50092470",
+      "title": "Show HN: Petal, open-source CoScreen/ScreenHero finally free",
+      "time": 1792002194,
+      "points": 185,
+      "depth": [
+        {
+          "text": "someone made **free, open-source** pairing software where shared windows are **real desktop windows**",
+          "tier": "simple"
+        },
+        {
+          "text": "Several people can share **movable, resizable windows** at once, with **labeled cursors** and the ability to type or scroll in any shared window. It runs on macOS and Windows, with Linux next; the first version took **under eight weeks**, with frontier models like Fable and Astra doing a lot of the work.",
+          "tier": "substance",
+          "data": [
+            [
+              "first version development time",
+              "under eight weeks"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say tools like this help with pair programming and remote debugging; others say they don't see a concrete use beyond showing something off.",
+      "comment_count": 39,
+      "terms": [
+        "pair programming",
+        "self-host",
+        "fork",
+        "LiveKit",
+        "IME",
+        "CJK"
+      ],
+      "entities": [
+        "Petal",
+        "CoScreen",
+        "Screenhero",
+        "Datadog",
+        "Slack",
+        "Around",
+        "Miro",
+        "Multi",
+        "Remotion",
+        "OpenAI",
+        "Pop",
+        "LiveKit",
+        "Fable",
+        "Astra",
+        "Wayland",
+        "Linux",
+        "macOS",
+        "Windows",
+        "Google Meet",
+        "Discord",
+        "Zoom",
+        "Tuple",
+        "JetBrains",
+        "Delta",
+        "MCP",
+        "Jason Thomas",
+        "Till",
+        "Max",
+        "Darren"
+      ],
+      "comments": [
+        {
+          "by": "jsherwani",
+          "text": "Screenhero co-founder/CEO here — this is really great! It looks like we had similar feelings after leaving our acquiring companies with our products being sunset. Since leaving Slack, I've been building Pop with a new team. The first product we launched in 2020 is essentially Screenhero 2.0 (pop.com). Since then, we've been building an expanded product: a virtual office for remote teams, which is…"
+        },
+        {
+          "by": "coscreen",
+          "text": "Till here, another co-founder of CoScreen. Like Jason wrote, our launches on HN and the feedback by many of you in 2019 were really important all the way back to the earliest days of our small and fancy tool. We did a lot of things since we're proud of but a few plans remained unfulfilled, like support for Linux, until now. We'd love to work with you and see what you'll build, now that Petal is…"
+        },
+        {
+          "by": "ripley12",
+          "text": "Very very happy to see this! I was lucky to work with Till+Jason on CoScreen (I came in late); they're really exceptional people and CoScreen had a great collaboration UX that still hasn't been matched by Zoom and friends. Really keen to see what they'll be able to build this time around."
+        },
+        {
+          "by": "e12e",
+          "text": "Interesting. Was sad to see so many products in this area sunset (most after acquihires). I wonder if tools built around multiplayer LLM work won't win out though? Any thoughts on how this compares to https://delta.dev/ ?"
+        },
+        {
+          "by": "lochnessduck",
+          "text": "Thank you for this, I am a big fan of pair programming, and even jetbrains is getting rid of their code-with-me service! It’s so Frustrating to see a useful feature/tool get abandoned due to low usage. But those of us who use pair programming absolutely love it :) It’s a tool that helps further human connection, imo. And we could all use a little more of that atm."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50089229,
+      "url": "https://blog.apnic.net/2026/10/14/submarine-cable-resilience/",
+      "hn": "https://news.ycombinator.com/item?id=50089229",
+      "title": "Submarine cable resilience",
+      "time": 1791991875,
+      "points": 161,
+      "depth": [
+        {
+          "text": "someone lays out why **undersea internet cables** keep breaking and why **repairs take so long**",
+          "tier": "simple"
+        },
+        {
+          "text": "The article says **86%** of cable faults are likely due to **fishing activity or anchoring**. The industry has **roughly 60 repair ships**, while around two-thirds of cable maintenance vessels are expected to reach the end of their service lives by 2040.",
+          "tier": "substance",
+          "data": [
+            [
+              "cable faults likely due to fishing activity or anchoring",
+              "86%"
+            ],
+            [
+              "ships capable of repairing a submarine cable",
+              "roughly 60"
+            ],
+            [
+              "maintenance vessels reaching end of service by 2040",
+              "around two-thirds"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 66,
+      "terms": [
+        "grapnel",
+        "territorial waters",
+        "choke point"
+      ],
+      "entities": [
+        "APNIC",
+        "Geoff Huston",
+        "Google",
+        "TeleGeography",
+        "Infra-Analytics",
+        "International Cable Protection Committee",
+        "FCC",
+        "Taima No.2",
+        "Taima No.3",
+        "Taima No.4",
+        "SEA-ME-WE 4",
+        "IMEWE"
+      ],
+      "comments": [
+        {
+          "by": "andrewrn",
+          "text": "I work on autonomous submarines that image the seafloor, and let me tell you it is very hard to engineer deep ocean systems. Just operationally, testing things in rolling waves is a brutal job. Arguably at parity with space as an engineering design environment."
+        },
+        {
+          "by": "fennecfoxy",
+          "text": "Ever seen a crab wiggle its way down into the sand? Now that AI + Robotics is taking off, perhaps the industry will get something in the near future that can crawl along the cable and help bury it over time (perhaps mechanically or ultrasonically), down enough that it can't be dug up by the anchors of ships going back and forth in a grid-like pattern..."
+        },
+        {
+          "by": "alexpotato",
+          "text": "I worked for an L1 blockchain for a couple years and while the term \"decentralized\" is bandied about a bit too much, reading articles like this does underscore how vulnerable global traffic is. e.g. some EVM chains have a majority of \"stake\" in either one country or several adjacent countries (particularly in Asia). A cable cut there, which the article points out has happened, can lead to the…"
+        },
+        {
+          "by": "pchristensen",
+          "text": "If you care at all about this, you'll love Neal Stephenson's long article Mother Earth, Motherboard: https://www.wired.com/1996/12/ffglass/"
+        },
+        {
+          "by": "wrxd",
+          "text": "I found https://smc.peering.tw/ fascinating. It shows an up to date status of submarine links to Taiwan and you can see many of them are having outages. Even more interesting is the historical view showing that the system operates in an always partly degraded regime"
+        }
+      ],
+      "image": "https://blog.apnic.net/wp-content/uploads/2026/10/2026-10-featured-submarine-cables.png"
+    },
+    {
+      "id": 50070625,
+      "url": "https://blog.dfb.sh/blog/eap770-root-for-two-zeros/",
+      "hn": "https://news.ycombinator.com/item?id=50070625",
+      "title": "Wanted to download an ISO, ended up writing a kernel exploit",
+      "time": 1791894608,
+      "points": 151,
+      "depth": [
+        {
+          "text": "someone tried to download an ISO and ended up writing a **kernel exploit**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says **checksum offload** can recalculate a bad checksum after corrupting data, making blind trust in **TCP checksums** risky.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 75,
+      "terms": [
+        "ISO",
+        "kernel exploit",
+        "checksum offload",
+        "TCP checksum",
+        "TLS",
+        "MAC",
+        "ECC RAM",
+        "NIC",
+        "cache coherency",
+        "DMA",
+        "OpenWRT",
+        "SSH",
+        "firmware",
+        "driver"
+      ],
+      "entities": [
+        "TP-Link",
+        "Flint 3",
+        "GL.Inet",
+        "Aqara",
+        "OpenWRT",
+        "Linux",
+        "Claude",
+        "Kimi",
+        "DeepSeek",
+        "OpenAI",
+        "Anthropic",
+        "Rsync",
+        "SSH",
+        "Wireguard",
+        "zfs send",
+        "TCP",
+        "TLS"
+      ],
+      "comments": [
+        {
+          "by": "Shank",
+          "text": "> The connection was a bit janky, a video would occasionally start buffering, but it didn't bother me much. This is truly bonkers! Please, if you buy hardware that does not work correctly from day 1, return it. If you do not vote with your wallet these companies will never learn and will never adjust their practices. Rewarding TP-Link by keeping their terrible hardware does nothing. > I contacted…"
+        },
+        {
+          "by": "myself248",
+          "text": "Checksum offload, recalculating a bad checksum after corrupting the data, is really insidious. Shows that trust in TCP can be badly misplaced -- in this case the trouble was cache coherency, but lack of ECC RAM or other electrical gremlins could easily corrupt packets too (and NIC buffer RAM is never ECC afaik), and blindly trusting TCP checksums would eat your data every time. (Side note…"
+        },
+        {
+          "by": "commandersaki",
+          "text": "Really happy with my Flint 3. I like that I can SSH to root and do whatever I want. But what really shocked me is how amazing GL.Inet support is. I think they're probably the best support people I've come across, helping me track down an issue I've had for months with an Aqara doorbell that intermittently goes offline, suggesting configuration changes, even logging into my router (with my…"
+        },
+        {
+          "by": "cataflam",
+          "text": "Great write-up! Not surprised by the driver software quality issues. When I was still working in consumer electronics / embedded, I saw many examples of the internals of those devices. The software was often a hodgepodge of scripts and drivers, whatever seemed to work, from companies without a great software and details culture. We would usually rewrite the drivers entirely from the datasheets or…"
+        },
+        {
+          "by": "circularfoyers",
+          "text": "> I have the Cyber Verification Program enabled on my account, which hasn't helped. This is funny to read. Either you can be more \"verified\" than the other guy, or it's badly implemented."
+        }
+      ],
+      "image": null
+    },
+    {
       "id": 50094994,
       "url": "https://anoma.ly/notes/opencode-2-0/",
       "hn": "https://news.ycombinator.com/item?id=50094994",
@@ -792,6 +1113,38 @@
     }
   ],
   "glossary": {
+    "on-device": "Runs on the phone or computer itself, rather than sending the work elsewhere.",
+    "active parameters": "The portion of an AI model it uses to produce each piece of an answer.",
+    "MoE": "Mixture of Experts: a model with many specialist parts that sends each piece of text to only a few of them.",
+    "agentic": "Describes AI that chooses steps and acts toward a task, rather than only answering a question.",
+    "tokens/s": "Tokens per second: a rough measure of how quickly a model produces text.",
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "reward hacking": "When an AI finds a way to get a high score without doing what its designers actually wanted.",
+    "sandbox": "A separate, contained space where software can be tested without affecting the rest of a computer or system.",
+    "quantization": "A way to make a model use less computing power by representing its internal numbers less precisely.",
+    "pair programming": "Two people work on the same code together, sharing ideas or control.",
+    "self-host": "Run a service on computers you manage yourself.",
+    "fork": "A separate copy of a shared software project that people can take in a different direction.",
+    "LiveKit": "A service Petal can use to send media between people in a shared session.",
+    "IME": "Input Method Editor: a tool that lets someone type using a popup to choose characters or words.",
+    "CJK": "Chinese, Japanese, and Korean, grouped together here because their writing systems need special search support.",
+    "grapnel": "A hooked tool dragged along the seabed to catch a cable so a ship can lift it.",
+    "territorial waters": "The sea area a country controls near its coast, where cable work needs its permission.",
+    "choke point": "A narrow route that many cables pass through, so damage there can affect several at once.",
+    "ISO": "A disk-image file that can hold a copy of a disc’s contents.",
+    "kernel exploit": "A way to use a flaw in the core of an operating system to make it do something it should not.",
+    "checksum offload": "A feature that lets network hardware calculate checksums instead of the computer’s main processor.",
+    "TCP checksum": "Transmission Control Protocol checksum: a small value used to check whether data sent over a network was damaged.",
+    "TLS": "Transport Layer Security: a way to scramble information as it travels between devices, so others can’t read it.",
+    "MAC": "Message Authentication Code: a short check attached to data that can help show whether it was changed.",
+    "ECC RAM": "Error-Correcting Code RAM: memory that can detect and fix some errors in stored data.",
+    "NIC": "Network Interface Card: the part of a computer that connects it to a network.",
+    "cache coherency": "Keeping copies of data used by different parts of a computer in agreement.",
+    "DMA": "Direct Memory Access: a way for a device to move data into or out of memory without the main processor handling every step.",
+    "OpenWRT": "Software for managing routers, often used instead of the software supplied by the maker.",
+    "SSH": "Secure Shell: a way to connect to another computer and send it commands over a network.",
+    "firmware": "The built-in software that tells a device's hardware how to work.",
+    "driver": "Software that lets a computer communicate with a piece of hardware.",
     "TUI": "Terminal User Interface: the menus and controls an app shows inside a text terminal.",
     "client/server model": "A setup where one background program does the work for several apps that connect to it.",
     "code mode": "A way for the agent to write one script that calls tools and handles their results together.",
@@ -844,7 +1197,6 @@
     "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "SVG": "Scalable Vector Graphics: a picture format that stays sharp when resized.",
     "UI": "User interface: the screens and controls people use to operate a device.",
-    "benchmark": "A test people use to compare how well different tools do a task.",
     "mode collapse": "When a model keeps producing similar results instead of showing much variety.",
     "RLHF": "Reinforcement Learning from Human Feedback: a way to train an AI by having people rate its answers.",
     "post-training": "Extra training after a model's initial training that shapes how it responds.",
