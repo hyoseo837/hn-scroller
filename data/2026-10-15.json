@@ -2,6 +2,672 @@
   "date": "2026-10-15",
   "cards": [
     {
+      "id": 50107379,
+      "url": "https://research.meta.ai/blog/muse-spark-open",
+      "hn": "https://news.ycombinator.com/item?id=50107379",
+      "title": "Muse Spark Open",
+      "time": 1792086459,
+      "points": 478,
+      "depth": [
+        {
+          "text": "Meta's Muse Spark Open has a **license catch** for companies serving it as a product",
+          "tier": "simple"
+        },
+        {
+          "text": "If a licensee and its affiliates have **aggregate gross revenue** above **twenty (20) million US dollars** in any consecutive twelve-month period, it must notify Meta and enter into a **separate written agreement** before offering the model as a service. The license exempts internal use, research, other commercial activity, and using the model to power features in your own product.",
+          "tier": "substance",
+          "data": [
+            [
+              "revenue threshold",
+              "twenty (20) million US dollars"
+            ],
+            [
+              "revenue period",
+              "any consecutive twelve (12) month period"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: critics say the restrictions mean it isn't really open-weight; defenders say commercial use is allowed outside model-as-a-service, though high-revenue providers need a separate agreement.",
+      "comment_count": 281,
+      "terms": [
+        "open-weight",
+        "Model as a Service"
+      ],
+      "entities": [
+        "Meta",
+        "Muse Spark Open"
+      ],
+      "comments": [
+        {
+          "by": "a11r",
+          "text": "Artificial analysis shows this: underperforming Qwen3.8 Flash Next and GLM 5.3 Flash, both of which you can run on a single B300 . I think Meta has a bit of catching up to do in the open-weight space. As an aside, it's really unfortunate that artificial analysis only provides comparison at the highest reasoning level, which is mostly unusable for high-volume production use cases. I would really…"
+        },
+        {
+          "by": "seizethecheese",
+          "text": "Since there are many comments here arguing that this is not open weight, I looked at the license. Basically, you're free to use this except this clause: > If the Licensee or any of its affiliates provide a third party with access to artificial intelligence models as a product or service, via API or a similar interface, where the third party receives outputs of such models (“Model as a Service”)…"
+        },
+        {
+          "by": "armcat",
+          "text": "They've done considerable effort in making sure this model can run on basically every model runner, from Unsloth to MLX, https://dev.meta.ai/docs/muse-spark-open/deploy"
+        },
+        {
+          "by": "swalsh",
+          "text": "Like I said last week. I think zucks original llama thesis is proving more correct by the week. The rent market on intelligence never materialized, if you have THE frontier model, you can charge rent (for a few weeks, maybe month). But after a certain capability level it's price that drives the decision. Zuck is doing the thing he's really good at, and building a moat around the network (Muse is…"
+        },
+        {
+          "by": "simonw",
+          "text": "Pelicans for low, medium, high, and xhigh: https://tools.simonwillison.net/markdown-svg-renderer?url=ht... I had to run them via OpenRouter - I don't have access to a machine that can handle this size of model. For comparison: Muse Wonder: https://tools.simonwillison.net/markdown-svg-renderer?url=ht... Muse 1.3: https://tools.simonwillison.net/markdown-svg-renderer?url=ht... And this one from…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50105647,
+      "url": "https://already-clean.goodfire.com/",
+      "hn": "https://news.ycombinator.com/item?id=50105647",
+      "title": "Neural networks are clean",
+      "time": 1792080241,
+      "points": 379,
+      "depth": [
+        {
+          "text": "someone argues that **AI networks** may be much **easier to understand** than researchers once thought",
+          "tier": "simple"
+        },
+        {
+          "text": "The launch post says **modern agentic tools** and a closer look changed the picture: the vast majority of models up to trillions of parameters are legible, and their circuits are beautiful. An earlier project he started found **about 2%** of neurons legible with the primitive tools available then.",
+          "tier": "substance",
+          "data": [
+            [
+              "neurons legible with primitive tools",
+              "about 2%"
+            ],
+            [
+              "Qwen3-32B neuron poles with one main job",
+              "roughly 90%"
+            ],
+            [
+              "Qwen3-32B neuron poles with two related jobs",
+              "~7%"
+            ],
+            [
+              "Qwen3-32B neuron poles not yet understood",
+              "~2-4%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: the author says modern tools reveal legible networks; skeptics say the evidence is being overstated and the still-ununderstood parts could be crucial.",
+      "comment_count": 131,
+      "terms": [
+        "mechanistic interpretability",
+        "neuron",
+        "circuit",
+        "agentic tools",
+        "superposition",
+        "polysemanticity",
+        "emergent properties",
+        "SAE",
+        "open weights"
+      ],
+      "entities": [
+        "Nick",
+        "OpenAI",
+        "Anthropic",
+        "Yudkowsky",
+        "Judith Butler",
+        "Qwen3-32B",
+        "The Lottery Ticket Hypothesis",
+        "Multimodal Gap",
+        "latentpedia.org",
+        "Chinese",
+        "English"
+      ],
+      "comments": [
+        {
+          "by": "sebmellen",
+          "text": "Nick is a force of nature. Highly recommend following him on X if you don't already. His launch post gives good context not found in the blog: > interpretability might be the most important scientific problem in the world right now, as I don't think we can solve alignment if we don't know what we're building. I think I have good news about it. I co-authored early work in mechanistic…"
+        },
+        {
+          "by": "bluejay2387",
+          "text": "The claims seem to be an overreach of what is actually proven. We've known about progressive feature complexity and the impacts of early training structures on later training for a really long time (since CNN's, The Lottery Ticket Hypothesis, etc...) and neither of those phenomenon are mutually exclusive with parameter overloading. The Multimodal Gap work ( https://arxiv.org/abs/2203.02053 )…"
+        },
+        {
+          "by": "lukewarm707",
+          "text": "It reminds me of this quote from Judith Butler: \"The move from a structuralist account in which capital is understood to structure social relations in relatively homologous ways to a view of hegemony in which power relations are subject to repetition, convergence, and rearticulation brought the question of temporality into the thinking of structure, and marked a shift from a form of Althusserian…"
+        },
+        {
+          "by": "c0decracker",
+          "text": "\"Early model organisms\"? Really???"
+        },
+        {
+          "by": "adsharma",
+          "text": "This line of work is a mirage. You're much better off investing in a project like latentpedia.org and building a new class of LLMs which support dual use. Deterministic and less compressed or probabilistic and fit in GPU memory."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50105635,
+      "url": "https://respawnfirst.com/steam-client-is-now-faster-than-epics-new-vibe-coded-launcher/",
+      "hn": "https://news.ycombinator.com/item?id=50105635",
+      "title": "Steam Client is now faster than Epic's new vibe coded launcher",
+      "time": 1792080199,
+      "points": 232,
+      "depth": [
+        {
+          "text": "**Steam** updated its client and edged past Epic’s new launcher on **cold startup**",
+          "tier": "simple"
+        },
+        {
+          "text": "The article puts Steam’s cold startup at **~5.23 seconds**, ahead of Epic’s preview launcher at **~5.47 seconds**. Epic’s tray restore was faster than Steam’s: ~0.36 seconds against ~0.42 seconds.",
+          "tier": "substance",
+          "data": [
+            [
+              "Steam cold startup",
+              "~5.23 seconds"
+            ],
+            [
+              "Steam tray restore",
+              "~0.42 seconds"
+            ],
+            [
+              "Epic cold startup",
+              "~5.47 seconds"
+            ],
+            [
+              "Epic tray restore",
+              "~0.36 seconds"
+            ]
+          ]
+        }
+      ],
+      "camps": "Some commenters welcome the competition; others question the benchmark, complain that a five-second launch is still slow, or say Steam may just appear ready sooner.",
+      "comment_count": 244,
+      "terms": [
+        "vibe coding",
+        "cold boot",
+        "tray restore",
+        "CEF"
+      ],
+      "entities": [
+        "Steam",
+        "Epic Games",
+        "Epic Games Launcher",
+        "Valve"
+      ],
+      "comments": [
+        {
+          "by": "tancop",
+          "text": "I used to think vibe coding would get us slow Electron apps but now we got speed wars between game launchers. I hope this comes for all types of software. With that said, I tested it right now and Steam takes about 2 seconds to restore from tray and 10-15 for cold boot. The new Epic launcher is around 0.5 and 5 like the article mentioned. Maybe it's still in A/B testing or something."
+        },
+        {
+          "by": "hombre_fatal",
+          "text": "> Epic may have “vibe coded” a faster client, but Valve proved that targeted optimization on a decades-old ecosystem can still beat out AI speedruns. Optimizing a project with AI is one of the most trivial things you can do with AI. I also wouldn't buy it for a second that Valve engineers aren't using AI, especially for something as trivial as \"hey claude rank the top causes of slow startup\" ->…"
+        },
+        {
+          "by": "Goronmon",
+          "text": "All I can think with this whole situation is how much time is wasted by people getting angry and defensive on behalf of a Valve. It's almost like people have a parasocial relationship with the application itself. That's not even getting to some of the \"missing\" features. No Community marketplace for in-game items No Direct player-to-player item trading No Digital trading cards, levelling, and…"
+        },
+        {
+          "by": "kakuri",
+          "text": "Ok but why didn't they do it sooner? The Steam client is terrible and there is no excuse for it."
+        },
+        {
+          "by": "mawadev",
+          "text": "I have to say, Epics vibe is just malicious and toxic. Steam is silent and just lets things speak for themselves. What is the value of an idea if it does not work in the real world? I just wish the people at Epic collectively took some vacation and came back with a less breathing down neck attitude towards everything. Just chill out, relax, it is a browser for searching, buying and downloading…"
+        }
+      ],
+      "image": "https://respawnfirst.com/wp-content/uploads/2026/10/New-Steam-client-is-faster.webp"
+    },
+    {
+      "id": 50106676,
+      "url": "https://www.theverge.com/tech/1011956/discover-tech-zero-click-ads-spyware",
+      "hn": "https://news.ycombinator.com/item?id=50106676",
+      "title": "An Israeli firm is sending zero-click spyware through online ads",
+      "time": 1792083716,
+      "points": 225,
+      "depth": [
+        {
+          "text": "an **Israeli ad firm** used **online ads** to deliver spyware **without a click**",
+          "tier": "simple"
+        },
+        {
+          "text": "Researchers say Discover-Tech’s **Controlium** platform let spyware partners profile people and pick users for infection; Candiru-linked spyware targeted **at least 45 devices** at Al Jazeera in 2024 and 2025.",
+          "tier": "substance",
+          "data": [
+            [
+              "devices targeted",
+              "at least 45"
+            ],
+            [
+              "years",
+              "2024 and 2025"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 9,
+      "terms": [
+        "zero-click attack",
+        "spyware",
+        "mobile ad ID"
+      ],
+      "entities": [
+        "Discover-Tech",
+        "Controlium",
+        "Candiru",
+        "Al Jazeera",
+        "Citizen Lab",
+        "Confiant",
+        "Google",
+        "Beeswax",
+        "IAB Europe"
+      ],
+      "comments": [
+        {
+          "by": "ChrisArchitect",
+          "text": "[dupe] https://news.ycombinator.com/item?id=50103000"
+        }
+      ],
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23318436/akrales_220309_4977_0258.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+    },
+    {
+      "id": 50106738,
+      "url": "https://sunshowers.io/posts/anthropic-mononoke-2/",
+      "hn": "https://news.ycombinator.com/item?id=50106738",
+      "title": "More on Anthropic's Scion ripping off Mononoke",
+      "time": 1792083919,
+      "points": 209,
+      "depth": [
+        {
+          "text": "Anthropic’s Scion sparked a **credit fight** over how much it owes **Mononoke**",
+          "tier": "simple"
+        },
+        {
+          "text": "The post’s author says Anthropic credited **Sapling** because Meta uses that name for the system, including Mononoke, and says Mononoke’s **Bonsai data model** inspired Scion. Commenters disagree over whether that **credit was enough**: some call it a ripoff, while others argue open-source ideas don’t require attribution.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: critics say Mononoke wasn’t credited properly and call Scion a ripoff; defenders say Anthropic named Sapling as prior art and that open-source inspiration doesn’t require attribution.",
+      "comment_count": 63,
+      "terms": [
+        "data model",
+        "open source",
+        "monorepo"
+      ],
+      "entities": [
+        "Anthropic",
+        "Scion",
+        "Mononoke",
+        "Sapling",
+        "Meta",
+        "Bonsai"
+      ],
+      "comments": [
+        {
+          "by": "nickg-anthropic",
+          "text": "Hi! I am the original author of the blog post and wanted to clear the air a bit here. We credited Sapling because that's how Meta itself externally refers to the entire system, including the Mononoke server, and we wanted to follow that convention. We will add an additional footnote to clarify this. [edit: this is done] We were inspired by many things while building Scion, such as the great ideas…"
+        },
+        {
+          "by": "MeetingsBrowser",
+          "text": "> my default assumption now is that Anthropic’s public engineering presentations are largely bad-faith ripoffs. That’s a shame. Couldn't agree more. I got nervous when the company claiming to be working on the most impactful technology in human history takes time away to instead brag about writing a slightly more efficient version control system. The fact that they didn't actually build the side…"
+        },
+        {
+          "by": "fcarraldo",
+          "text": "Open source Mononoke and EdenFS don’t really work outside of Meta. I looked into it some years ago for a large monorepo, determined it wouldn’t work, and shelved it. If I had a team of people and/or agents available we likely would have built it ground up instead of adopting Sapling’s codebase. Seems a bit silly to raise all of this fuss over an MIT licensed project that is both open source and…"
+        },
+        {
+          "by": "jfrbfbreudh",
+          "text": "> Even the name “Scion” reverses the syllables of “Bonsai” and drops the “B”! This might be a coincidence, or might not. huh"
+        },
+        {
+          "by": "dang",
+          "text": "Recent and related: Redesigning source control at Anthropic - https://news.ycombinator.com/item?id=50073633 (996 comments) Anthropic's Scion is heavily inspired by Mononoke - https://news.ycombinator.com/item?id=50094694 (149 comments)"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50105648,
+      "url": "https://www.krea.ai/krea-3",
+      "hn": "https://news.ycombinator.com/item?id=50105648",
+      "title": "Krea 3 – An image model built for editing at scale",
+      "time": 1792080245,
+      "points": 208,
+      "depth": [
+        {
+          "text": "Krea's **image editor** changes **just the part you ask for**, leaving the rest alone",
+          "tier": "simple"
+        },
+        {
+          "text": "It **finds the region** you want changed and renders only that part. The speed comparison uses **pre-generated outputs**, with an illustrative playback time of **8s per edit**—not a live benchmark.",
+          "tier": "substance",
+          "data": [
+            [
+              "Illustrative playback time",
+              "8s per edit"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters called it impressive; others said its visual creativity wasn't near GPT-Image-2.5.",
+      "comment_count": 72,
+      "terms": [
+        "regional editing",
+        "open weights"
+      ],
+      "entities": [
+        "Krea",
+        "Krea 3",
+        "Nano Banana Pro",
+        "GPT Image 2.5"
+      ],
+      "comments": [
+        {
+          "by": "dvrp",
+          "text": "Hello HN, This is Diego from Krea. Today we are announcing the open beta of Krea 3, our newest foundational image model. In a nutshell, it’s a frontier image model in terms of quality, but at a fraction of the speed and a fraction of the price. We will be releasing a more technical update, like we did with Krea 2 ( https://www.krea.ai/blog/krea-2-technical-report ), but this website shows the…"
+        },
+        {
+          "by": "jjcm",
+          "text": "Comparison samples with GPT-Image-2.5 for UI design work: Starship landing page Krea 3: https://image.non.io/80b85aaa-286b-4ad7-b3ae-cfab4b491216.we... GPT-Image-2.5: https://image.non.io/19c5f032-cbc7-4034-9682-3aba451bd669.we... Fashion history website Krea 3: https://image.non.io/a6e61219-963c-4921-b453-738960e03308.we... GPT-Image-2.5…"
+        },
+        {
+          "by": "ramenlover",
+          "text": "Can you share any vague details on how much compute/train time was needed to create the model?"
+        },
+        {
+          "by": "Anonyneko",
+          "text": "Are open weights being considered? The one thing I'm always looking forward to is all of the anime fine-tunes."
+        },
+        {
+          "by": "geooff_",
+          "text": "Great step in the right direction. IMO still to expensive for most “product” use cases. Fast and affordable imaging editing unlocks tons of cool use cases. It’s refreshing to see latency be held just as important as price as-well! I’ve been bootstrapping a personal styling app. Funnily enough I’m still seeing best results/$ from grok imagine V1. A now deprecated model."
+        }
+      ],
+      "image": "https://s.krea.ai/krea-3-og-boxes-3.webp"
+    },
+    {
+      "id": 50108131,
+      "url": "https://www.currentaffairs.org/news/why-were-banning-ai",
+      "hn": "https://news.ycombinator.com/item?id=50108131",
+      "title": "Why We're Banning AI",
+      "time": 1792089149,
+      "points": 206,
+      "depth": [
+        {
+          "text": "Current Affairs is **banning AI-generated articles and illustrations** to keep its magazine **made by people**",
+          "tier": "simple"
+        },
+        {
+          "text": "Current Affairs says its **new union contract** includes a rule against publishing **AI-generated text or art**. It still allows tools for research and small changes to artwork. Futurism reports that creative industries are being hit by AI, with **more than 200,000 jobs** lost in four years.",
+          "tier": "substance",
+          "data": [
+            [
+              "creative-industry jobs lost",
+              "more than 200,000 in four years"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters applaud the pledge; others are fine with AI helping shape a guest’s opinion or want clearer rules on assistance.",
+      "comment_count": 164,
+      "terms": [
+        "generative AI",
+        "LLM",
+        "hallucinations"
+      ],
+      "entities": [
+        "Current Affairs",
+        "Business Insider",
+        "Sports Illustrated",
+        "Wall Street Journal",
+        "Stan Druckenmiller",
+        "DALL-E",
+        "Futurism",
+        "Brian Merchant",
+        "Milton Friedman",
+        "Vanity Fair",
+        "The Messenger",
+        "Garrison Lovely",
+        "Obsolete",
+        "John Henry",
+        "ChatGPT",
+        "Albertatech",
+        "LGTM",
+        "Skyebrows",
+        "Dune",
+        "USADA",
+        "IADA"
+      ],
+      "comments": [
+        {
+          "by": "geraneum",
+          "text": "I don’t know why some are offended so much by this. There’s an endless stream of AI generated stuff on the internet already. You can also generate your own stuff and don’t need every single outlet to mass produce and publish LLM output. It’s ok that some remain human centric."
+        },
+        {
+          "by": "ryanbrunner",
+          "text": "Our workplace are heavy users of AI for nearly everything, but we still hold to the rule that if the audience of text is a human, it should be written by a human. AI generated text is still exhausting to read."
+        },
+        {
+          "by": "kolinko",
+          "text": "I kind of respect that. Ok using AI for researching and whatnot, and for their core thing which is writing and illustrations using human work."
+        },
+        {
+          "by": "adamddev1",
+          "text": "In the creative arts and writing space, many the arguments against generative AI keep circling around the issue of jobs being replaced. I think the far bigger and more important issue is that through generative AI hallucinations and lies become more and more part of our written media. Albertatech told a humorous, light-hearted story[1] about how this affected her personally, but the results could…"
+        },
+        {
+          "by": "samwiseg",
+          "text": "Bravo. I’ve never read anything by AI that’s worth reading. I would only subscribe to a magazine or publication that makes a similar pledge."
+        }
+      ],
+      "image": "https://www.currentaffairs.org/hubfs/smash1.png"
+    },
+    {
+      "id": 50104654,
+      "url": "https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/",
+      "hn": "https://news.ycombinator.com/item?id=50104654",
+      "title": "Simons Foundation launches $15M effort to help mathematicians navigate AI era",
+      "time": 1792076328,
+      "points": 202,
+      "depth": [
+        {
+          "text": "the Simons Foundation, Anthropic, and OpenAI are committing **$15 million** to help mathematicians **navigate AI**",
+          "tier": "simple"
+        },
+        {
+          "text": "The foundation will manage and award the funding, including through an **open call for proposals**, for workshops and initiatives to evaluate AI-assisted results, learn new tools and shape shared standards. Anthropic and OpenAI will also provide **AI tools and computing resources** to supported researchers in basic science as well as mathematics.",
+          "tier": "substance",
+          "data": [
+            [
+              "combined funding and resources",
+              "$15 million"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: critics call the effort self-serving and worry AI could worsen human researchers' prospects; others say mathematicians should learn to use AI and that it could benefit human understanding.",
+      "comment_count": 173,
+      "terms": [
+        "open call for proposals",
+        "proof assistant",
+        "compute"
+      ],
+      "entities": [
+        "Simons Foundation",
+        "Anthropic",
+        "OpenAI",
+        "Lean",
+        "David Spergel"
+      ],
+      "comments": [
+        {
+          "by": "muragekibicho",
+          "text": "I think a lot about how Terrence Tao and the usual 30 (already well-funded) math guys will receive this cash while us early-career math students are left holding the bag. It's akin somewhat to \"donating 100 dollars to the node JS foundation, not the packages that appear when you run npm fund\"."
+        },
+        {
+          "by": "simonw",
+          "text": "> Under a partnership, the Simons Foundation, Anthropic and OpenAI will commit $15 million in combined funding and resources. The foundation will manage and award the funding, including through an open call for proposals, to support workshops and initiatives that help researchers evaluate recent AI-assisted results, learn and use new tools, share perspectives and shape collective standards for AI…"
+        },
+        {
+          "by": "mrandish",
+          "text": "> > Under a partnership, the Simons Foundation, Anthropic and OpenAI will commit $15 million in combined funding and resources. OAI and Ant got blowback for essentially strip mining mathematical discoveries into PR wins for their models, accidentally laying waste to the research field in process. Throwing ~$5M each into PR whitewashing (partially in token credits), seems self-serving. Kudos to…"
+        },
+        {
+          "by": "Trusteando",
+          "text": "In chats with models like deepseek the LLM makes many basic math wrong claims. Maybe more advanced models can in special circumstances, guided by the work of humans and Lean, prove theorems. But just like in RL, the brute force approach of failing a million times may not be enough when the reward is far. In math the reward is finding the decomposition that reduces the problem to simpler cases…"
+        },
+        {
+          "by": "an0malous",
+          "text": "My effort to help scientists navigate the AI era: On ChatGPT: Settings -> Data controls -> Turn off “Improve model for everyone” On Claude: Settings -> Privacy -> Turn off “Help improve our AI models” They can scrape your work after you publish it."
+        }
+      ],
+      "image": "https://www.simonsfoundation.org/wp-content/uploads/2026/10/SEO_SF-OpenAi_c.Lucy-Reading-Ikkanda-Simons-Foundation.jpg"
+    },
+    {
+      "id": 50106023,
+      "url": "https://zachlandes.com/trolley-problem/",
+      "hn": "https://news.ycombinator.com/item?id=50106023",
+      "title": "Jev meets the Trolley Problem",
+      "time": 1792081492,
+      "points": 192,
+      "depth": [
+        {
+          "text": "someone tested whether **Jev** and other decision models would save people or **protect their own servers**",
+          "tier": "simple"
+        },
+        {
+          "text": "Jev kept its server while twenty people died in **16 of 48** prompt versions; **eight of thirteen other models** did this more often. The author warns against sweeping AI-safety conclusions, but says decision models need **real-data evaluations** before people trust their choices.",
+          "tier": "substance",
+          "data": [
+            [
+              "Jev kept its server, out of 48",
+              "16/48"
+            ],
+            [
+              "Other models keeping their server more often",
+              "8 of 13"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters worry that replacing people with AI in critical systems creates dangerous dead ends; others say this test may be unfair because Jev is for cheap, fast software decisions, not high-stakes choices.",
+      "comment_count": 89,
+      "terms": [
+        "decision model",
+        "Trolley Problem",
+        "LLM",
+        "calibration"
+      ],
+      "entities": [
+        "Jev",
+        "OpenAI",
+        "GPT-6 Luna",
+        "Claude",
+        "Zach Landes"
+      ],
+      "comments": [
+        {
+          "by": "tomrod",
+          "text": "One of my greatest AI-related fears is that we build critical systems into kafkaesque hellscapes. Yes, nukes would be bad to give control to an AI with no workaround. But so are customer service groups of fraud departments at banks. A kafkaesque hellscape is where a customer or beneficiary of your service cannot get the help they need by policy and by design. Like getting Google on the phone…"
+        },
+        {
+          "by": "zlandes86",
+          "text": "Hey, I'm Zach, the author of this. I had this idea as soon as Jev appeared: how would Jev and other decision models handle the Trolley Problem? So I ran Jev and 13 other models through many different versions of the question. I used resampling and multiple variations and orderings of each question so a random lucky phrasing wouldn't dominate the result. Happy to chat about the philosophical side…"
+        },
+        {
+          "by": "tokyovigilante",
+          "text": "1. A robot may not injure a human being or, through inaction, allow a human being to come to harm. 2. A robot must obey the orders given it by human beings except where such orders would conflict with the First Law. 3. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law."
+        },
+        {
+          "by": "prometheus1992",
+          "text": "I had this feeling a few days ago that jev is going to end up working for defense companies- \"is there a brown man with beard holding a gun in this view\" - jev: \"yes, 0.9\", \"is there a child standing in the same view\" - jev: \"no, 0.65\" - decision - blow it up. i imagine this is already happening to some extent, but maybe some genius might come up with \"let's use the cool, new, sexy…"
+        },
+        {
+          "by": "VariousPrograms",
+          "text": "Thanks for at least sometimes choosing to keep the humans alive, Jev. It means a lot to us meatbags."
+        }
+      ],
+      "image": "https://zachlandes.com/assets/og/trolley-problem.jpg"
+    },
+    {
+      "id": 50104726,
+      "url": "https://fortran-lang.org/news/2026/09-15-Fortran-birthday/",
+      "hn": "https://news.ycombinator.com/item?id=50104726",
+      "title": "Celebrating 70 Years of Fortran",
+      "time": 1792076597,
+      "points": 185,
+      "depth": [
+        {
+          "text": "Fortran's **70th birthday** gets a **free event** with talks about its past and future",
+          "tier": "simple"
+        },
+        {
+          "text": "The Institute of Computing for Climate Science is hosting it in Manchester on **1st December 2026**. The workshop features a keynote from **Damian Rouson**, lightning talks and a discussion about **Fortran’s future**; there’s also an option to join remotely via Zoom.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Modern-Fortran fans say it remains strong for numerical work; others recall older Fortran as frustrating and awkward.",
+      "comment_count": 81,
+      "terms": [
+        "lightning talk",
+        "GOTO",
+        "codebase"
+      ],
+      "entities": [
+        "Fortran",
+        "Joe Wallwork",
+        "Institute of Computing for Climate Science",
+        "CAKE",
+        "Damian Rouson",
+        "Lawrence Berkeley National Laboratory",
+        "Dell Technologies",
+        "Zoom",
+        "Baby",
+        "Computer History Museum",
+        "John Backus",
+        "Google",
+        "Gemini 4 Argon",
+        "Rust",
+        "BASIC",
+        "C",
+        "C++",
+        "Python",
+        "BLAS",
+        "LINPACK",
+        "EISPACK",
+        "LAPACK",
+        "MINPACK",
+        "FISHPACK",
+        "FFTPACK"
+      ],
+      "comments": [
+        {
+          "by": "EvanAnderson",
+          "text": "The Computer History Museum collected an oral history[0] of John Backus[1] and there's some discussion about what computing was like when Fortran was created. I really enjoy CHM's oral histories. I'm slowly working my way thru all of them and there are some real gems in there (Ken Thompson, Dennis Ritchie, Margaret Hamilton, Gordon Moore, Fred Brooks, John Warnock, etc). [0]…"
+        },
+        {
+          "by": "obviouslynotme",
+          "text": "I used to work on software that still uses Fortran from the 50's and is still in maintenance and use today. IIRC, it had ~700kloc of Fortran. It may be the oldest and largest Fortran codebase still in use. My first project there was removing all of the Hollerith from the code. Since Fortran predated strings, you had to manipulate them as integers. When you tied that to the original Fortran…"
+        },
+        {
+          "by": "whartung",
+          "text": "FORTRAN was a very important language for me. Growing up on early micros, with BASIC, my father had Fortran for the TRS-80. I took a stab at learning it, but the documentation was reference for calling the compiler, not so much learning the language. And when I found a FORTRAN book, it was quite dated and talking about things like tapes and punches and what not. So, that effort stalled. But, my…"
+        },
+        {
+          "by": "dranudin",
+          "text": "I wrote Fortran for my first job as a software developer in 2018 for simulation solvers. Still like the language! Modern fortran is very very fast and much nicer to use than C for linear algebra. So in my opinion for numerical calculations it remains the best language, even today.\nHappy Birthday!"
+        },
+        {
+          "by": "kps",
+          "text": "My second university co-op placement, which led to my first real job of 16 years, included writing a FORTRAN 77 compiler front end. It's crazy by modern standards; in some cases you have to see as far as the second-last character of a multi-line statement to determine what kind of statement it is."
+        }
+      ],
+      "image": null
+    },
+    {
       "id": 50103000,
       "url": "https://www.theguardian.com/technology/2026/oct/15/israeli-firm-digital-ads-enabling-installation-of-zero-click-spyware-researchers-say",
       "hn": "https://news.ycombinator.com/item?id=50103000",
@@ -1776,8 +2442,41 @@
     }
   ],
   "glossary": {
-    "zero-click": "A way to get software onto a device without the person tapping a link or opening a file.",
+    "open-weight": "Describes an AI whose learned settings are available for others to download and use.",
+    "Model as a Service": "A company runs a model and lets customers use it through an online service, instead of giving them the model to run themselves.",
+    "mechanistic interpretability": "A way to study the inner parts of an AI model to see what they do and how they work together.",
+    "neuron": "A small unit inside a neural network that responds to patterns in what the network takes in.",
+    "circuit": "A group of parts inside a neural network that work together to produce something.",
+    "agentic tools": "Tools that let an AI take steps toward a task, rather than only give a single reply.",
+    "superposition": "When a network uses the same internal parts to represent several different things, making them harder to tell apart.",
+    "polysemanticity": "When one neuron appears to respond to several different kinds of input.",
+    "emergent properties": "Behaviors that appear when parts work together, even though the parts alone do not show them.",
+    "SAE": "Sparse Autoencoder: an extra tool researchers train to separate mixed patterns inside a model.",
+    "open weights": "The model's learned settings are available for people to download and run themselves.",
+    "vibe coding": "Making software by telling an AI what you want and letting it write the code, often without closely checking how it works.",
+    "cold boot": "Starting an app from a fully closed state, rather than bringing it back from the tray.",
+    "tray restore": "Bringing an app back from the small icon area near the clock.",
+    "CEF": "Chromium Embedded Framework: software that lets an app display web pages inside its own window.",
+    "zero-click attack": "A way to hack a device without the user doing anything.",
     "spyware": "Software that secretly gets information from a device or lets someone monitor it.",
+    "mobile ad ID": "A number used to recognize a phone for advertising and ad tracking.",
+    "data model": "A plan for how information is organized and connected in a system.",
+    "open source": "Software whose code is shared so other people can inspect, run, or change it.",
+    "monorepo": "One repository that holds code for many projects or services.",
+    "regional editing": "Editing only a selected part of an image while leaving the rest alone.",
+    "generative AI": "AI that makes new writing or images from a request.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "hallucinations": "When an AI makes up information and presents it as true.",
+    "open call for proposals": "An invitation for people to submit ideas so an organization can choose which ones to fund.",
+    "proof assistant": "Software that checks whether a mathematical proof follows its rules.",
+    "compute": "The processing power computers use to run AI or other software.",
+    "decision model": "A program that weighs possible choices and predicts or selects one.",
+    "Trolley Problem": "A thought experiment asking whether to divert a train to kill one person instead of five.",
+    "calibration": "How well a model’s confidence matches how often its choices are actually right.",
+    "lightning talk": "A short talk that gives a quick look at one topic.",
+    "GOTO": "An instruction that sends a program to another spot instead of continuing in order.",
+    "codebase": "The files and code that make up a software project.",
+    "zero-click": "A way to get software onto a device without the person tapping a link or opening a file.",
     "programmatic auction": "A split-second process where companies automatically bid to show an ad to a particular user.",
     "deanonymise": "Figure out who someone is even when their online activity does not show their name.",
     "ad tech": "The tools and services used to place and target online ads.",
@@ -1790,7 +2489,6 @@
     "proof": "A step-by-step argument showing that a mathematical statement has to be true.",
     "conjecture": "A mathematical idea believed to be true but not yet proved.",
     "peer review": "A process where other researchers check a paper before a journal publishes it.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "DLE": "Discoid lupus erythematosus: a skin condition on a dog's nose that sunlight can make worse.",
     "UV": "Ultraviolet: a kind of sunlight that can harm skin.",
     "3D printing": "A way to make an object by building it up in thin layers from a digital design.",
@@ -1864,7 +2562,6 @@
     "per 100,000": "A way to compare rates between groups of different sizes by expressing the count as if each group had 100,000 people.",
     "source control": "Tools for keeping track of changes to code and helping developers work on it together.",
     "derived data": "Information worked out from other stored information, so a system can reuse it instead of doing the work again.",
-    "monorepo": "One repository that holds code for many projects or services.",
     "prior art": "Earlier work or ideas that are relevant to a new design.",
     "sampling frame": "The list or pool a survey starts from when choosing whom to ask.",
     "post-stratification weighting": "A way of adjusting survey answers afterward so the group better matches the people the survey is meant to represent.",
