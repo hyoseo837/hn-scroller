@@ -2,6 +2,483 @@
   "date": "2026-10-16",
   "cards": [
     {
+      "id": 50111852,
+      "url": "https://www.niemanlab.org/2026/10/metas-new-commercial-terms-will-allow-the-scraping-of-news-sites-legal-experts-say/",
+      "hn": "https://news.ycombinator.com/item?id=50111852",
+      "title": "Meta’s new commercial terms will allow the scraping of news sites: experts",
+      "time": 1792107462,
+      "points": 341,
+      "depth": [
+        {
+          "text": "Meta’s new **business terms** could let it **scrape news sites** tied to **business accounts**",
+          "tier": "simple"
+        },
+        {
+          "text": "Starting **October 30**, business accounts that keep using Facebook, Instagram, or WhatsApp agree to terms letting Meta **crawl associated websites** and use their content to **train its products**. Legal experts say this could reach publishers’ sites; Meta points to robots.txt controls, but there’s no opt-out short of stopping business use, and experts say the terms may override other blocking instructions.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters say Meta may not need a site’s consent to scrape, or doubt a court would enforce the terms; others call the move coercive and say businesses may leave Meta.",
+      "comment_count": 119,
+      "terms": [
+        "scraping",
+        "robots.txt",
+        "tying",
+        "fair use"
+      ],
+      "entities": [
+        "Meta",
+        "Facebook",
+        "Instagram",
+        "WhatsApp",
+        "Messenger",
+        "Meta Business Suite",
+        "Meta One",
+        "Nieman Lab",
+        "Andrew Deck",
+        "Hanaa' Tameez",
+        "Matt Topic",
+        "Loevy & Loevy",
+        "James Grimmelmann",
+        "Cornell Law School",
+        "Benjamin Sobel",
+        "University of Wisconsin",
+        "Google",
+        "The Steampunk Explorer",
+        "Stephen Beale",
+        "Press Gazette",
+        "OpenAI",
+        "Llama",
+        "Thomson Reuters"
+      ],
+      "comments": [
+        {
+          "by": "amluto",
+          "text": "I don’t really understand the legal theory here. Party A (Meta) writes a contract with Party B (a business account holder) ostensibly granting A the right to scrape B’s website and a license to the content. But why is there any presumption that B owns the content or has any right to grant this license? It’s extremely common for a publisher to license content from a third party under terms that…"
+        },
+        {
+          "by": "Centigonal",
+          "text": "This is some next level legal judo. Say what you want about the metaverse or muse, but it's clear that Meta is still innovating when it comes to its Terms of Service."
+        },
+        {
+          "by": "sandeepkd",
+          "text": "I do not want to be cynical, yet my reading is that they are most likely doing it already. This is to provide a legal cover to it."
+        },
+        {
+          "by": "nananana9",
+          "text": "Doesn't them requiring a license from partners to train on their content undermine the more general argument that they don't need a license from copyright owners to train on copyrighted content -- which I assume most big AI firms would love to make? IANAL, but this looks like Meta lawyers trying to shield themselves against partners' suing them, but enough cases like this could help set a…"
+        },
+        {
+          "by": "phyzome",
+          "text": "\"Will consent\", that's some interesting phrasing in the current post title."
+        }
+      ],
+      "image": "https://www.niemanlab.org/images/Meta-stock-image-700x467.jpg"
+    },
+    {
+      "id": 50104299,
+      "url": "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/",
+      "hn": "https://news.ycombinator.com/item?id=50104299",
+      "title": "Using AI to reverse engineer hardware",
+      "time": 1792074915,
+      "points": 209,
+      "depth": [
+        {
+          "text": "someone used **AI** to compare Windows and Linux device traces, then improve **Linux drivers**",
+          "tier": "simple"
+        },
+        {
+          "text": "Christian Schaller turned his earlier bespoke setup into **hw-harness**: run a vendor Windows driver in a KVM virtual machine, capture **USB traffic** on Linux with usbmon, then compare it with Linux-driver traces. He says AI can read captures and write tests, but he checked every result on the **actual hardware**. In his single-unit, single-frame comparison, his scanner driver took 34.6 s at full resolution versus 54.4 s for upstream.",
+          "tier": "substance",
+          "data": [
+            [
+              "Schaller's full-resolution scan time",
+              "34.6 s"
+            ],
+            [
+              "upstream full-resolution scan time",
+              "54.4 s"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters see a way to get unsupported devices working; others worry AI makes copying competitors’ algorithms easy.",
+      "comment_count": 188,
+      "terms": [
+        "hw-harness",
+        "KVM",
+        "usbmon",
+        "driver",
+        "trace"
+      ],
+      "entities": [
+        "Christian Schaller",
+        "Claude",
+        "hw-harness",
+        "Windows",
+        "Linux",
+        "KVM",
+        "usbmon"
+      ],
+      "comments": [
+        {
+          "by": "valdiorn",
+          "text": "I've been having a silent panic attack for the last 3 days, and I don't really have anyone to talk to that would understand my concern. I run a small pro audio company, we make guitar pedals and audio effects mostly. My current key objective is building up a processor similar to the Eventide H90, that would compete on having top-notch algorithms for reverb, delay, chorus etc. we already have…"
+        },
+        {
+          "by": "revolvingthrow",
+          "text": "I reverse engineered almost all electronics I own. Does it have USB that does more than just charging? Connect it to a computer and let AI play with it. Unless it's heavily secured like a phone that's pretty much all you need to do. Making some old remote work with various devices? Simple. Dumping the entire state of Rodecaster and controlling it in any you want with software, or maybe a remote?…"
+        },
+        {
+          "by": "amelius",
+          "text": "What if someone made an AI that reversed engineered hardware, then looked up if any patents were infringed upon, then emailed the owners of said patents? That would be very shitty. Why would someone do that? To frustrate the patent system, or AI. Just something that popped in my mind."
+        },
+        {
+          "by": "xnx",
+          "text": "Someone please do \"smart\" TVs. You have the chance to remove ads and botnets (\"residential proxies\") from millions of devices."
+        },
+        {
+          "by": "dnpls",
+          "text": "So, in theory, I could just reverse-engineer the old Wacom tablet I have with no driver support for the M-series processor and build me a driver so I can continue using it? (there is a driver but it seems it will stop working with the next OS update)."
+        }
+      ],
+      "image": "https://blogs.gnome.org/uraeus/files/2026/10/drivercompare.png"
+    },
+    {
+      "id": 50105777,
+      "url": "https://www.bipm.org/en/cgpm-2026/resolution-5",
+      "hn": "https://news.ycombinator.com/item?id=50105777",
+      "title": "BIPM decides to stop adding leap seconds to UTC",
+      "time": 1792080696,
+      "points": 200,
+      "depth": [
+        {
+          "text": "the world's timekeepers are stopping **leap seconds**, so computer clocks can keep **running smoothly**",
+          "tier": "simple"
+        },
+        {
+          "text": "The CGPM says **continuous UTC** takes effect on **20 May 2027**, with the allowed gap between UTC and Earth-rotation time rising to **3 600 seconds (1 hour)**. A 2025 workshop estimated a 30 % chance of a negative leap second by 2035, which the resolution says could disrupt critical infrastructure.",
+          "tier": "substance",
+          "data": [
+            [
+              "effective date",
+              "20 May 2027"
+            ],
+            [
+              "maximum UT1-UTC difference",
+              "3 600 seconds (1 hour)"
+            ],
+            [
+              "estimated negative leap-second probability",
+              "30 % by 2035"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters say ending leap seconds avoids software headaches; critics say it pushes the problem onto future generations.",
+      "comment_count": 95,
+      "terms": [
+        "UTC",
+        "leap second",
+        "negative leap second",
+        "TAI",
+        "UT1",
+        "CGPM",
+        "BIPM",
+        "IERS"
+      ],
+      "entities": [
+        "BIPM",
+        "UTC",
+        "CGPM",
+        "TAI",
+        "UT1",
+        "IERS",
+        "CCTF",
+        "ITU-R"
+      ],
+      "comments": [
+        {
+          "by": "BoppreH",
+          "text": "Context: BIPM is responsible for the UTC time standard, and in this document they decide to stop adding (or removing) leap seconds, starting on 20th of May 2027 and lasting for the foreseeable future (until one leap hour is needed, but even then it's unclear if they'll do something). Together with the decision to not add a leap second in December, the 27 leap seconds that have been added so far…"
+        },
+        {
+          "by": "tialaramex",
+          "text": "The decision not to add leap seconds was already taken. This resolves the remaining issue (the agreement which brings UTC into existence says it tracks solar time, but TAI doesn't actually do that) by kicking this particular can so far into the bushes that our civilisation almost certainly won't ever need to resolve it, while also acknowledging that if you were annoyed by it thousands of years in…"
+        },
+        {
+          "by": "myself248",
+          "text": "Solar time never cared about seconds, and leap-seconds were always stupid. Long overdue. Sad they didn't realize this in 1972 and avoid all the silliness in between."
+        },
+        {
+          "by": "PowerElectronix",
+          "text": "Is this the prelude to dropping UTC altogether?"
+        },
+        {
+          "by": "frangonf",
+          "text": "Goodbye sundial welcome cesium clock. Astrology app devs: remember to carry the drift in Temporal for the Ascendant, specially around 2267 you might get your love and money life predictions messed up."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50112330,
+      "url": "https://ipinfo.io/blog/rpki-protects-70-internet-routes",
+      "hn": "https://news.ycombinator.com/item?id=50112330",
+      "title": "RPKI now protects 70% of internet routes",
+      "time": 1792111955,
+      "points": 174,
+      "depth": [
+        {
+          "text": "more networks are checking **who can announce internet routes**, and invalid routes barely **travel**",
+          "tier": "simple"
+        },
+        {
+          "text": "RPKI-valid routed prefixes rose from **54.0% in September 2025 to 70.3% in September 2026**. A typical valid prefix was seen by 596 vantage points, while an invalid one reached **just two**; **China** accounted for almost 60% of the global gain counted by addresses.",
+          "tier": "substance",
+          "data": [
+            [
+              "RPKI-valid routed prefixes (September 2025)",
+              "54.0%"
+            ],
+            [
+              "RPKI-valid routed prefixes (September 2026)",
+              "70.3%"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 64,
+      "terms": [
+        "RPKI",
+        "BGP",
+        "ROA",
+        "ASPA",
+        "prefix",
+        "vantage point"
+      ],
+      "entities": [
+        "RPKI",
+        "BGP",
+        "ROA",
+        "ASPA",
+        "IPinfo",
+        "RIPE RIS",
+        "RouteViews",
+        "João Tomé"
+      ],
+      "comments": [
+        {
+          "by": "phatfish",
+          "text": "I love wading through LLM prose! I know its a tired point, but why not publish the bullet points that were the source for this text as well. I'd rather read those. Getting another LLM to summarise back to something concise just seems wrong."
+        },
+        {
+          "by": "cowlevel",
+          "text": "My concern about RPKI is legal pressure on the registries. By centralising all of Russia's allowed routes on a database server in the Netherlands and automatically enforcing it , it's trivial for the Dutch government to cut off Russia's internet access by tampering with that database."
+        },
+        {
+          "by": "1473-bytes",
+          "text": "A couple years ago our org made a big push to have our routes and our downstream customer routes RPKI valid. It's good to see the high adoption rate. It looks like ASPA is now available for ASN path validation. Probably should look at adopting ASPA at some point here."
+        },
+        {
+          "by": "est",
+          "text": "so is there a public service that can verify some IP block belongs to which country/cert? whois is so deprecated."
+        },
+        {
+          "by": "0xbadcafebee",
+          "text": "> Much of the jump came from one country: China went from 3.7% of its IPv4 addresses in valid routes to 83.0%, almost 60% of the global gain counted by addresses. Interesting. China may have predicted cyber attacks in the near future. Or perhaps are readying for retaliation. It's possible their military or intelligence branches didn't anticipate this getting published. (Unless somebody knows if…"
+        }
+      ],
+      "image": "https://storage.ghost.io/c/b1/57/b157bf7f-0fe2-447f-a945-12d7951755b3/content/images/2026/10/ipinfo-rpki-social-share-2400x1256-1.png"
+    },
+    {
+      "id": 50112739,
+      "url": "https://github.com/Saffsanity/sill",
+      "hn": "https://news.ycombinator.com/item?id=50112739",
+      "title": "Any window from your Mac, on your iPhone and iPad",
+      "time": 1792114997,
+      "points": 172,
+      "depth": [
+        {
+          "text": "someone made a **free app** for showing and controlling **Mac windows** on an iPhone or iPad",
+          "tier": "simple"
+        },
+        {
+          "text": "Sill captures **one window or the whole desktop**, sends it as **HEVC video**, and sends taps, clicks, scrolling and keystrokes back to the Mac. It can connect over the same network, USB, direct wireless, or your own VPN; there’s **no account or server** in between.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 42,
+      "terms": [
+        "HEVC",
+        "VPN",
+        "VNC",
+        "Sidecar",
+        "Direct Wireless Connection"
+      ],
+      "entities": [
+        "Sill",
+        "Apple",
+        "Tailscale",
+        "GitHub",
+        "Noah Saffer",
+        "Sidecar",
+        "VNC",
+        "Astropad Workbench",
+        "Sunshine",
+        "Moonlight",
+        "ScreenCaptureKit",
+        "VideoToolbox",
+        "Swift",
+        "SwiftUI",
+        "Xcode"
+      ],
+      "comments": [
+        {
+          "by": "00deadbeef",
+          "text": "I had to read a lot of text to understand this was a remote desktop app. You might get more users if you're clearer about what it is."
+        },
+        {
+          "by": "alin23",
+          "text": "Brilliant! So much faster and seamless than VNC. Already helped me two times today. This is the first time I discover an app through a Youtube video recommendation. I was watching The Rest Is Science when this 1 minute video appeared on the right side with 230k views about a macOS app?? It got me curious for sure. Claude got really good at making demo videos with Hyperframes apparently. Just did…"
+        },
+        {
+          "by": "gumby",
+          "text": "Apple supports this already on the ipad by making the ipad another screen for your mac (I think it’s called sidecar?) and still use pencil, mouse, keyboard etc. Iphone is novel though, but does a pencil work?"
+        },
+        {
+          "by": "greenspam",
+          "text": "Is there a reverse app? I want to control my iphone apps from my mac since typing on iphone is painful and the iphone touchscreen keyboard seems to be less accurate and more laggy over time. And iPhone Mirroring feature is laggy for me for some reason."
+        },
+        {
+          "by": "zephyreon",
+          "text": "That CLAUDE.md file is eating up a ton of context."
+        }
+      ],
+      "image": "https://repository-images.githubusercontent.com/1381093165/b456f715-a301-4b82-a109-a5c6dfe34815"
+    },
+    {
+      "id": 50084674,
+      "url": "https://philzimmermann.com/EN/essays/WhyIWrotePGP.html",
+      "hn": "https://news.ycombinator.com/item?id=50084674",
+      "title": "Why I Wrote PGP (1991, revised 1999)",
+      "time": 1791969426,
+      "points": 166,
+      "depth": [
+        {
+          "text": "someone put out **free encryption software** after a bill proposed **government access** to private messages",
+          "tier": "simple"
+        },
+        {
+          "text": "The 1991 **Senate Bill 266** resolution was non-binding; if made law, it would have forced manufacturers of secure communications equipment to add **“trap doors”** so the government could read encrypted messages. Zimmermann argued wider encryption use would make privacy less suspicious, even as email could be scanned automatically **on a vast scale**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 60,
+      "terms": [
+        "PGP",
+        "cryptography",
+        "trap doors",
+        "plain text",
+        "key exchange"
+      ],
+      "entities": [
+        "PGP",
+        "Phil Zimmermann",
+        "Senate Bill 266"
+      ],
+      "comments": [
+        {
+          "by": "BeetleB",
+          "text": "> In 2013, an article on \"Zimmermann's Law\" quoted Phil Zimmermann as saying \"The natural flow of technology tends to move in the direction of making surveillance easier\""
+        },
+        {
+          "by": "adastra22",
+          "text": "A well-intentioned ideal from a bygone era."
+        },
+        {
+          "by": "tait",
+          "text": "I remember joking with a professor that he should not use PGP for email privacy because it would make his content more of a target. That one turned out to be true… https://www.propublica.org/article/the-nsas-secret-campaign-..."
+        },
+        {
+          "by": "dylan604",
+          "text": "The biggest issue of using PGP was using PGP. You were pretty nerdy to be on the internet back then, but even then using PGP was beyond what the majority of people wanted to do. Exchanging keys was problematic. Writing text in one app, encrypting in another app, copying encrypted back to an email was just tiresome. I'm still glad that it existed as its mere existence seems to have pushed things…"
+        },
+        {
+          "by": "gjvc",
+          "text": "I learned C from PGP"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50072119,
+      "url": "https://www.polygon.com/order-of-the-sinking-star-impressions/",
+      "hn": "https://news.ycombinator.com/item?id=50072119",
+      "title": "'500-hour' Order of the Sinking Star is as complex and exhausting as it sounds",
+      "time": 1791900860,
+      "points": 159,
+      "depth": [
+        {
+          "text": "a sprawling **puzzle game** mixes four indie games, but its clever challenges can leave you **exhausted**",
+          "tier": "simple"
+        },
+        {
+          "text": "The game was **touted as 500 hours**, and after a month the reviewer still felt they had barely scratched the surface. They say the challenge **keeps escalating**; several creators whose games were licensed for it distanced themselves after Jonathan Blow’s political statements.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: fans say the slow-burn puzzles are rewarding; critics say the length and difficulty are exhausting. On Blow, some separate the art from the artist, while others refuse to support him.",
+      "comment_count": 108,
+      "terms": [
+        "Sokoban",
+        "overworld",
+        "eureka moment"
+      ],
+      "entities": [
+        "Order of the Sinking Star",
+        "Thekla",
+        "Jonathan Blow",
+        "The Witness",
+        "Braid",
+        "Mirror Isles",
+        "Promesst",
+        "Heroes of Sokoban",
+        "Skipping Stones to Lonely Homes",
+        "Alan Hazelden",
+        "Silver Spaceship Software",
+        "Jonah Ostroff",
+        "Arc Games",
+        "Donald Trump"
+      ],
+      "comments": [
+        {
+          "by": "danpalmer",
+          "text": "I'm really enjoying Order of the Sinking Star, but I'm in two minds about the length. It is long, I'm 20 hours in and still feel like I'm scratching the surface, and any story pay-off feels a very long way away, which isn't a great motivator. However, so far I can't point to anything substantial that should have been skipped. Almost every level is teaching me something, and those things keep…"
+        },
+        {
+          "by": "dwroberts",
+          "text": "This is the first of Blow’s games that I’m just not very interested in playing, and the fixation on its length and size is why. Being really long or having a huge completion time for the sake of it seems like a big step backwards compared to Braid and The Witness, and also philosophically literally the opposite of what he claimed made his games interesting. So I find this game and how it’s being…"
+        },
+        {
+          "by": "__alexs",
+          "text": "Blow's game design philosophy seems to be mostly about repeating variations of the same idea as many times as possible regardless of whether those variations are actually that fun or interesting. In theory I should love this, I'll happily play repetitive games like Tetris for hours. The way he does it though just feels so boring because he doesn't do it in a way that makes you feel like you're…"
+        },
+        {
+          "by": "xpct",
+          "text": "My favorite thing about puzzle games is meta, cognition stuff. What mindset can I put myself in, so that I can solve this faster? What should I think about, and how, to reduce complexity of the problem? I tried the same last summer with Baba Is You and had an absolute blast. Playing through OotSS now, and momentum has been solid for the past ~20 hours. Skipping Stones has been my favorite!"
+        },
+        {
+          "by": "knuckleheads",
+          "text": "I am generally not a fan of Sokoban puzzles, but I told myself that Order was the best chance to fix that so I’ve been forcing myself to play it. I don’t find myself actively wanting to sit down and play it, the puzzles don’t attract me that way, but once I do, I’ll play for about five hours at once. Great game."
+        }
+      ],
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/game-page-featured_order-of-the-sinking-star.jpg?w=1600&h=900&fit=crop"
+    },
+    {
       "id": 50109715,
       "url": "https://viceconsole.fyi/blog/2026/10/10/what-i-self-host/",
       "hn": "https://news.ycombinator.com/item?id=50109715",
@@ -553,11 +1030,46 @@
     }
   ],
   "glossary": {
+    "scraping": "Using automated tools to collect content from websites.",
+    "robots.txt": "A file that tells automated visitors which parts of a website the owner would prefer them not to visit; it cannot force them to obey.",
+    "tying": "Making access to one product depend on accepting another condition.",
+    "fair use": "A legal rule that can allow some uses of copyrighted work without permission.",
+    "hw-harness": "A set of scripts that records what a device does under one driver and compares it with another.",
+    "KVM": "Kernel-based Virtual Machine: a Linux feature for running virtual machines.",
+    "usbmon": "A Linux tool that records the messages sent over USB.",
+    "driver": "Software that lets a computer communicate with a piece of hardware.",
+    "trace": "A record of the messages exchanged while a device performs an action.",
+    "UTC": "Coordinated Universal Time: a shared time standard that doesn't change with your local clock.",
+    "leap second": "A one-second adjustment to official clocks to keep them aligned with Earth's rotation.",
+    "negative leap second": "A one-second adjustment that removes a second from UTC instead of adding one.",
+    "TAI": "International Atomic Time: a time scale that runs at the same rate as UTC, but differs from it by a whole number of seconds.",
+    "UT1": "A time scale based on Earth's rotation.",
+    "CGPM": "General Conference on Weights and Measures: the body that makes international decisions about measurement standards.",
+    "BIPM": "International Bureau of Weights and Measures: the organization that produces UTC.",
+    "IERS": "International Earth Rotation and Reference Systems Service: an organization that provides information about how Earth's rotation differs from UTC.",
+    "RPKI": "Resource Public Key Infrastructure: a system that lets an address holder publish which networks are allowed to announce its addresses.",
+    "BGP": "Border Gateway Protocol: the system networks use to tell one another where to send internet traffic.",
+    "ROA": "Route Origin Authorization: a signed record listing which networks may announce a block of IP addresses.",
+    "ASPA": "Autonomous System Provider Authorization: a signed record listing a network's allowed upstream providers, so others can check the path traffic took.",
+    "prefix": "A block of IP addresses that a network announces as a group.",
+    "vantage point": "One network's view of which routes are visible.",
+    "HEVC": "High Efficiency Video Coding: a way to shrink video so it takes less data to send.",
+    "VPN": "Virtual private network: a service that sends your internet traffic through another computer, often to protect it or make it appear to come from somewhere else.",
+    "VNC": "Virtual Network Computing: a way to view and control another computer over a network.",
+    "Sidecar": "Apple’s feature for using an iPad as another screen for a Mac.",
+    "Direct Wireless Connection": "A direct wireless link lets the Mac and device connect without sharing a network.",
+    "PGP": "Pretty Good Privacy: a tool for protecting messages and checking that they came from the person who sent them.",
+    "cryptography": "Ways of protecting information by turning it into a form other people can't read.",
+    "trap doors": "Hidden ways built into a communication product that let someone bypass its normal protection.",
+    "plain text": "Data sent without protection that would stop someone watching the connection from reading it.",
+    "key exchange": "The step where people share what is needed to encrypt and decrypt messages.",
+    "Sokoban": "A puzzle style where you push boxes or other objects around a board.",
+    "overworld": "The large map that connects different areas of a game.",
+    "eureka moment": "The sudden moment when a puzzle’s solution clicks.",
     "native service": "A program that runs directly on the server, rather than inside a separate container.",
     "container": "A way to run a program in a separated space, limiting what it can access.",
     "Podman": "A tool for starting and managing containers on a computer.",
     "systemd": "A Linux tool that starts programs in the background and keeps track of them.",
-    "VPN": "Virtual private network: a service that sends your internet traffic through another computer, often to protect it or make it appear to come from somewhere else.",
     "cold-gas thrusters": "Small engines that push a vehicle by releasing gas without burning fuel.",
     "active aero": "Moving parts on a car that change how air flows around it.",
     "downforce": "A force that pushes a car toward the road so its tires can grip.",
