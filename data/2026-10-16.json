@@ -1,0 +1,599 @@
+{
+  "date": "2026-10-16",
+  "cards": [
+    {
+      "id": 50109715,
+      "url": "https://viceconsole.fyi/blog/2026/10/10/what-i-self-host/",
+      "hn": "https://news.ycombinator.com/item?id=50109715",
+      "title": "What I self-host",
+      "time": 1792095805,
+      "points": 351,
+      "depth": [
+        {
+          "text": "someone runs a home server and prefers **simple native apps** over **complex container setups**",
+          "tier": "simple"
+        },
+        {
+          "text": "The setup includes **17 native services** and **11 Podman services**, all managed by systemd, on a Beelink Mini PC with 16 GB RAM. The author keeps services off the public internet, except for VPN servers running on the router.",
+          "tier": "substance",
+          "data": [
+            [
+              "native services",
+              "17"
+            ],
+            [
+              "Podman services",
+              "11"
+            ],
+            [
+              "RAM",
+              "16 GB"
+            ],
+            [
+              "memory in use",
+              "about 7.5 GB"
+            ],
+            [
+              "CPU use",
+              "between 30% and 40%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: the author thinks Sonarr, Lidarr, and Radarr setups are resource-heavy and breakage-prone; commenters say they’re light on resources and not fragile, though setting them up can be fiddly.",
+      "comment_count": 228,
+      "terms": [
+        "native service",
+        "container",
+        "Podman",
+        "systemd",
+        "VPN"
+      ],
+      "entities": [
+        "Beelink",
+        "Podman",
+        "systemd",
+        "Sonarr",
+        "Lidarr",
+        "Radarr"
+      ],
+      "comments": [
+        {
+          "by": "eleventen",
+          "text": "> Sonarr, Lidarr, Radarr, etc. Every time I read about setting it up, it just sounds like a resource-intensive mess that’s fundamentally prone to frequent breakage. That’s the opposite of what I’m looking for when choosing self-hosted services. I just checked on my *arr stack. Sonarr and Radarr idle at 157MB and 159MB of memory and approximately no CPU. Jellyfin currently idles at 330MB. I'm not…"
+        },
+        {
+          "by": "pseudosavant",
+          "text": "Shameless plug for my web video player that is especially designed for self-hosting situations. Drop a single html file in your web server folder with your videos and you get thumbnails, library, search, subtitle support, etc. No required third-party dependencies (just the optional Google Drive and OneDrive features). Highly customizable (colors, site logo, default features) with a JSON file the…"
+        },
+        {
+          "by": "Lucasoato",
+          "text": "> I prefer running services natively when possible, but will containerize complex services or those with many dependencies. Love: a service that’s a single Go binary. A service that only comes as a Docker compose file and wants to run MySQL, Redis, and three other containers? I’m already looking for an alternative. Ok, I respect your opinion, but remember that there are poor souls like me out…"
+        },
+        {
+          "by": "mikeocool",
+          "text": "I am generally not onboard with the “all you need is SQLite” articles that pop up on HN regularly. But I recently looked into self hosting and several things each wanted their own Postgres container. Immich wants a Postgres and a redis instance. If you’re building apps targeted at self hosters, SQLite is really all you need."
+        },
+        {
+          "by": "ebrahimh",
+          "text": "Good article. I have many of the same services in my setup. Self-hosting email fully is tedious/unnecessary, but what you can do is mirror your various inboxes (Gmail, iCloud, proton, non-corporate outlook) with mbsync and use roundcube or some other frontend to view emails and compose. I use this to easily access mail from different services, and I can also send from any of them. I also have a…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50112657,
+      "url": "https://www.tesla.com/roadster",
+      "hn": "https://news.ycombinator.com/item?id=50112657",
+      "title": "Tesla Roadster",
+      "time": 1792114365,
+      "points": 311,
+      "depth": [
+        {
+          "text": "Tesla showed off a **Roadster** with suction and rocket thrusters, including an **invite-only flying version**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter lists **three configurations**: road-ready Performance, Thrust with rear-mounted cold-gas thrusters, and Rocket with perimeter thrusters for upward and rotational movement. Rocket seats one, is invite only, and is listed with a **top speed over 230 mph**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Performance 0-60 mph",
+              "under 1.6 seconds"
+            ],
+            [
+              "Thrust 0-60 mph",
+              "under 0.9 seconds"
+            ],
+            [
+              "Rocket 0-60 mph",
+              "under 0.59 seconds"
+            ],
+            [
+              "Rocket top speed",
+              "over 230 mph"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some call the demo an impressive engineering feat; others call it a scam or question whether its systems could be safe and legal for road use.",
+      "comment_count": 358,
+      "terms": [
+        "cold-gas thrusters",
+        "active aero",
+        "downforce",
+        "COPV",
+        "ITAR",
+        "dual use"
+      ],
+      "entities": [
+        "Tesla",
+        "Roadster",
+        "Cybertruck",
+        "SpaceX",
+        "Electrek",
+        "McLaren",
+        "Ariel",
+        "F1",
+        "Roomba",
+        "Costco",
+        "Doug DeMuro",
+        "The Matrix"
+      ],
+      "comments": [
+        {
+          "by": "synapsomorphy",
+          "text": "Ok, so it actually flies. That was unexpected. It's an incredible engineering achievement to build in massive fans and rocket engines into a high performance car. It's truly wild. It's being sold in two modes. One with cold gas (no combustion) seemingly just for extra forwards acceleration (no flying) and one with real combustion rocket engines, the latter was in the video and is \"invite only\"…"
+        },
+        {
+          "by": "afavour",
+          "text": "Looks like a sensible turning down of the Cybertruck aesthetic into something that looks good. That said, the production issues with the Cybertruck mean you’d be a fool to reserve one of these. Let others do it, find out how late it arrives, what glued panels fall off at speed and wait for the inevitable recalls. Tesla has torched their engineering reputation lately and this page is making a lot…"
+        },
+        {
+          "by": "delichon",
+          "text": "The livestream has the stunts: https://x.com/Tesla/status/2110788059008819215"
+        },
+        {
+          "by": "aresant",
+          "text": "This was 100% precursor to the absorption of Tesla into SpaceX and I’m here for it https://finance.yahoo.com/markets/stocks/articles/tesla-spac..."
+        },
+        {
+          "by": "FabHK",
+          "text": "There are three configurations: - Performance: road ready, seats two, active aero and a “multi-mode suction system.” 0-60 mph in under 1.6 seconds. Available by reservation. - Thrust: race ready, seats two, adds rear-mounted cold-gas thrusters. 0-60 mph in under 0.9 seconds. Limited release. - Rocket: seats one, adds thrusters around the perimeter of the car for upward and rotational movement…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50108872,
+      "url": "https://thereallo.dev/blog/someone-on-torrent-sites-kept-fucking-with-my-sonarr-setup",
+      "hn": "https://news.ycombinator.com/item?id=50108872",
+      "title": "Someone on Torrent Sites Kept Fucking with My Sonarr",
+      "time": 1792092098,
+      "points": 279,
+      "depth": [
+        {
+          "text": "someone found a **fake South Park download** hiding **malware** that **steals passwords and files**",
+          "tier": "simple"
+        },
+        {
+          "text": "The malware grabs **browser cookies and autofill**, then **zips the haul and sends it off**. The author says to **blocklist suspicious downloads** in Sonarr or Radarr.",
+          "tier": "substance",
+          "data": [
+            [
+              "first program size",
+              "118 KB"
+            ],
+            [
+              "padding attached to it",
+              "886 MB"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: one commenter suspects ITorrent was compromised; another says anti-piracy companies use this tactic to deter torrenting.",
+      "comment_count": 130,
+      "terms": [
+        "malware",
+        "executable",
+        "Sonarr",
+        "Radarr",
+        "qBittorrent",
+        "blocklist",
+        "public tracker",
+        "torrent"
+      ],
+      "entities": [
+        "South Park",
+        "Sonarr",
+        "Radarr",
+        "qBittorrent",
+        "Prowlarr",
+        "ITorrent",
+        "Chrome",
+        "Windows Defender"
+      ],
+      "comments": [
+        {
+          "by": "bhaney",
+          "text": "Sonarr has an advanced setting in \"Settings > Indexers > [Your indexer] > Fail Downloads\" which you should add \"Executables\" to. Then these kinds of downloads get automatically marked as failed/blacklisted and a new search and new download is attempted without you needing to manually intervene. You may also have to tweak some conflicting settings on qbit. Alternatively, if there's a way to have…"
+        },
+        {
+          "by": "machomaster",
+          "text": "> Not even a folder with a fake .mkv and a \"codec installer\" next to it like the \"good old days\". Just the exe. Are we deadass. We can thank Microsoft for their willful support of criminals by having file extensions be hidden by default in Windows."
+        },
+        {
+          "by": "ShowalkKama",
+          "text": "Joining private trackers is hard only if you are trying to join the niche ones which is totally unnecessary if you are trying to watch relatively recent and popular movies. Just get into a decent general tracker and you'll literally never have this issue again (along with getting torrents with more seeders and better tagged content so your \"4k\" download will never be 480p again)"
+        },
+        {
+          "by": "shmoil",
+          "text": "If you are too lazy to join private trackers, at least use TraSH guides to set up quality profiles https://trash-guides.info/"
+        },
+        {
+          "by": "Havoc",
+          "text": "> It even grabs your Sticky Notes for WHAT???? The whole sticky notes next to monitor is not a joke. I bet you could grab some crypto recovery keys this way"
+        }
+      ],
+      "image": "https://thereallo.dev/og/images/someone-on-torrent-sites-kept-fucking-with-my-sonarr-setup.png"
+    },
+    {
+      "id": 50109375,
+      "url": "https://support.withings.com/hc/en-us/community/posts/51887047154577-Unacceptable-Apple-Health-Sync-is-now-behind-a-99-year-paywall-for-new-accounts",
+      "hn": "https://news.ycombinator.com/item?id=50109375",
+      "title": "New Withings Users Must Pay $99/Year for Apple Health Syncing",
+      "time": 1792094149,
+      "points": 209,
+      "depth": [
+        {
+          "text": "Withings now puts **Apple Health syncing** behind a **paid subscription** for new users",
+          "tier": "simple"
+        }
+      ],
+      "camps": null,
+      "comment_count": 154,
+      "terms": [
+        "API",
+        "HealthKit",
+        "LLM",
+        "reverse-engineering",
+        "Bluetooth"
+      ],
+      "entities": [
+        "Withings",
+        "Apple Health",
+        "Apple",
+        "HealthKit",
+        "Withings+",
+        "Wyze",
+        "Whoop",
+        "BMW",
+        "Garmin",
+        "Health Connect",
+        "Amazon",
+        "Android"
+      ],
+      "comments": [
+        {
+          "by": "ShakataGaNai",
+          "text": "#1 - If you bought the product with Apple Health sync in mind and it doesn't do that for free, file a complaint with your OAG. It's false advertising. #2 - If you have the apps today, you should warn other users with a review (which may or may not be 1 star). #3 - If you haven't reviewed the product on Amazon, you should warn other users with a review (which may or may not be 1 star)."
+        },
+        {
+          "by": "mikestew",
+          "text": "Why do they even bother? This is going to hit the front page of every health/fitness/cycling/running blog site, there will be a big stink for a few weeks, then Withings will quietly (or loudly, \"we've heard you!\", as if they were listening in the first place) get rid of it. And they'll waste all this time, money, and customer goodwill for nothing, because no one could have possibly seen this…"
+        },
+        {
+          "by": "kioleanu",
+          "text": "This constant appeasing of investors makes me really sad so here’s a message for the Withings PR team, I know you guys are reading this. I will never in a million years, not when hell freezes over, pay 100 dollars to you. I use the synching now, it’s nice, but you’re really over evaluating how I would not be able to just write a 3 digit number directly in apple health. It takes 10 seconds. If I…"
+        },
+        {
+          "by": "PSNapier",
+          "text": "Fun story: when I got my Withings watch 5-6 years ago couldn't get it Bluetooth paired with my phone. Contacted support. Me: hey bluetooth pairing isn't working I've tried A, B, C and here's additional context.\nWithings support: [over 24 hours later] Have you tried A? :)\nMe: ...Yes?\nWithings support: [over 24 hours later] Have you tried B? :)\nMe: As I said initially, yes. Can you please batch…"
+        },
+        {
+          "by": "ben1040",
+          "text": "https://developer.apple.com/app-store/review/guidelines 4.10: You may not monetize built-in capabilities provided by the hardware or operating system, such as Push Notifications, the camera, or the gyroscope; or Apple services and technologies, such as Apple Music access, iCloud storage, or Screen Time APIs."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50080155,
+      "url": "https://www.seriouseats.com/biscoff-history-12168161",
+      "hn": "https://news.ycombinator.com/item?id=50080155",
+      "title": "Delta’s Biscoff cookies were supposed to be temporary",
+      "time": 1791932446,
+      "points": 201,
+      "depth": [
+        {
+          "text": "an airline's **cookie snack** was meant to be temporary, but somehow **stuck around**",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter says a **peanut shortage** prompted Delta to look for another onboard snack. Another says the **bakery** had been around since 1932.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some love the cookies; others find them too sweet and would rather have peanuts.",
+      "comment_count": 150,
+      "terms": [
+        "GLP-1"
+      ],
+      "entities": [
+        "Delta",
+        "Biscoff",
+        "Claire Saffitz",
+        "Amazon",
+        "Costco",
+        "American Airlines"
+      ],
+      "comments": [
+        {
+          "by": "SoftTalker",
+          "text": "> a peanut shortage prompted Delta, then America’s fourth-largest airline, to seek an alternative onboard snack I never knew this was the reason. I had assumed that airlines stopped serving peanuts as an accomodation to the increasing number of people with peanut allergies."
+        },
+        {
+          "by": "adzm",
+          "text": "Have you heard of Biscoff spread? It's kinda like peanut butter except, it's made out of cookies https://www.youtube.com/watch?v=_BZsIY6PUPU (might not be sfw)"
+        },
+        {
+          "by": "jmpman",
+          "text": "I'd read that there are a few snack items resistant to GLP-1 induced food aversions, when I was on a GLP-1, Biscoff cookies felt like one of them. I may have an Amazon scheduled delivery of Biscoff, which every month, I intend to cancel, and somehow forget to follow through."
+        },
+        {
+          "by": "c0rruptbytes",
+          "text": "Claire Saffitz makes cinnamon rolls with these cookies as the inner cinnamon filling, they’re so good with the spice"
+        },
+        {
+          "by": "sasaf5",
+          "text": "Please, make sure you try these at least once in your life: https://en.wikipedia.org/wiki/Speculoos"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50109707,
+      "url": "https://terrytao.wordpress.com/2026/10/15/why-are-we-even-doing-all-this/",
+      "hn": "https://news.ycombinator.com/item?id=50109707",
+      "title": "Why are we even doing all this?",
+      "time": 1792095770,
+      "points": 172,
+      "depth": [
+        {
+          "text": "a physicist mocks **AI-generated research** and asks whether science is only facts or also **the joy of understanding**",
+          "tier": "simple"
+        },
+        {
+          "text": "Rikab Gambhir's satirical essay points to OpenAI's **722 write-ups** and the work of **checking their correctness** being handed to mathematicians. It asks whether science is only about adding facts, or also about **curiosity, creation, and understanding**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some praise the essay for defending human curiosity; others call its sarcastic framing cynical or a strawman, and argue AI can help people explore ideas or work more productively.",
+      "comment_count": 139,
+      "terms": [
+        "IPO",
+        "Lean certificate",
+        "LLM",
+        "formal verification",
+        "CAS",
+        "vibecoding",
+        "Library of Babel"
+      ],
+      "entities": [
+        "OpenAI",
+        "Rikab Gambhir",
+        "Terence Tao",
+        "Jorge Luis Borges",
+        "ChatGPT",
+        "Lean",
+        "Library of Babel",
+        "Mathematica",
+        "Rachel Ward"
+      ],
+      "comments": [
+        {
+          "by": "Gigachad",
+          "text": ">And now that AI has solved all our problems, we can devote ourselves to more important work: going into quantitative finance, vibecoding sports-betting apps, consuming AI-generated TikTok shorts, and arguing with political bots on Twitter. Grim but this is exactly where society is heading."
+        },
+        {
+          "by": "bryan0",
+          "text": "This is so well written, deep, funny, and sad. > Looking up at the stars in wonderment, or enjoying a complex puzzle game, or being inspired by an encouraging teacher, and dreaming that one day an unfeeling corporate robot[1] will burn a rainforest to compile a list of 700 highly obscure barely-readable facts that might be true that nobody can understand as part of a marketing gimmick to raise…"
+        },
+        {
+          "by": "derektank",
+          "text": "I think the author is hiding the ball a bit. The problem is that, for a long time, humans have attributed meaning, value, and social status to great cognitive insights. Taking physics as an example, it has almost always been the theorists who develop new ideas, not the experimentalists that test and validate them, who have won praise and acclaim. The name Arthur Eddington doesn’t have the same…"
+        },
+        {
+          "by": "its_ethan",
+          "text": "Not a huge fan of the sentiment in this article, and the very cynical way it was communicated, but the references to the library of babel reminded me of this fun site. https://libraryofbabel.info"
+        },
+        {
+          "by": "cbdumas",
+          "text": "I sympathize with some feelings the author is trying to communicate, but the cynical and sarcastic style really detract from the authors points in my view."
+        }
+      ],
+      "image": "https://secure.gravatar.com/blavatar/bd4bda4207561b6998f10dec44b570f04ff4072b20f89162d525b186dfca3e49?s=200&ts=1792125003"
+    },
+    {
+      "id": 50079701,
+      "url": "https://www.newyorker.com/magazine/2026/10/19/the-first-social-network",
+      "hn": "https://news.ycombinator.com/item?id=50079701",
+      "title": "The First Social Network: In rural Argentina residents send messages w AM radio",
+      "time": 1791929861,
+      "points": 152,
+      "depth": [
+        {
+          "text": "people in rural Argentina use **AM radio** to send **personal messages** across isolated distances",
+          "tier": "simple"
+        },
+        {
+          "text": "Messages reach stations by **phone, WhatsApp, or scrawled note**, then hosts **read them aloud**. One family heard about a visiting medical team over the radio and got their sick son to a hospital for an **appendectomy**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 53,
+      "terms": [
+        "AM radio",
+        "Mensajero Rural",
+        "Meshtastic",
+        "VHF"
+      ],
+      "entities": [
+        "Mensajero Rural",
+        "LU20 Radio Chubut",
+        "Jorge Elías Pereyra",
+        "José Simón Molina",
+        "Karina López",
+        "Cristóbal Villar",
+        "Gastón",
+        "Meshtastic",
+        "Reticulum"
+      ],
+      "comments": [
+        {
+          "by": "andyjohnson0",
+          "text": "The distances and remoteness mentioned in the article are impressive. And is the human need and ingenuity for communication.\nIt reminded me of William Gibson's description of 1950s farmers in the US using metal wire fences as radio antennas. In the 70s and 80s (and probably before) in the UK, the BBC used to broadcast occasional \"sos messages\" [1] prior to the main daily news summaries on FM…"
+        },
+        {
+          "by": "fjd",
+          "text": "Sailing communities have a tradition called \"Cruisers' Net\", some of them having started back in 1950-60. Usually in the morning via VHF different people will take turns speaking and doing parts. They'll do segments like weather, arrivals/departures, events, buy/sell/trade, etc."
+        },
+        {
+          "by": "hxii",
+          "text": "It's interesting to see use-cases like this \"in the wild\" (as opposed to some hobbyist group trying stuff out). With a little investment, I think Meshtastic/Reticulum could do wonders for communities like this. With Argentina being largely flat, even putting up a relatively short mast on the roof of a house should give it a good enough range (~10-30km)."
+        },
+        {
+          "by": "ericol",
+          "text": "I'm from the area where this happens (My city is actually named in the article). Can confirm that this is, effectively, a staple of normal life around there. Calling it \"the first social network\" made me chuckle. Younger generations might not be aware of this mostly due to reduced AM radio audiences, but my daughters (3x ~30 yo) do know what this is about."
+        },
+        {
+          "by": "bookofjoe",
+          "text": "https://archive.ph/gbvnE"
+        }
+      ],
+      "image": "https://media.newyorker.com/photos/6ac690d60b0af0bc2582cca3/16:9/w_1280,c_limit/r49955.jpg"
+    },
+    {
+      "id": 50108229,
+      "url": "https://www.eink.com/news/detail/EInk-Launches-Latest-Version-of-Color-ePaper-Platform-E-Ink-Kaleido-4",
+      "hn": "https://news.ycombinator.com/item?id=50108229",
+      "title": "E Ink Kaleido 4",
+      "time": 1792089496,
+      "points": 151,
+      "depth": [
+        {
+          "text": "E Ink's **color screen** has readers split over whether its **color trade-offs are worth it**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter welcomes Kaleido 4's **contrast improvement** but says it's unclear what **15% white reflectivity** changes. Another says the colours have been muted and the display works best with a front light; some question colour's value unless they read full-colour magazines or PDFs.",
+          "tier": "substance",
+          "data": [
+            [
+              "white reflectivity",
+              "15%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see colour as useful for full-colour magazines and PDFs; others say muted colours and a front light make the trade-off not worth it.",
+      "comment_count": 87,
+      "terms": [
+        "white reflectivity",
+        "front light",
+        "subpixels",
+        "RGB",
+        "electrophoresis",
+        "optical coherence tomography",
+        "PCB"
+      ],
+      "entities": [
+        "E Ink",
+        "Kaleido 4",
+        "Kobo",
+        "Kobo Libra",
+        "Boox",
+        "Boox Tab X C",
+        "Amazon",
+        "Kindle",
+        "Kindle Colorsoft",
+        "TRMNL",
+        "InkPlate",
+        "Spectra",
+        "Gallery",
+        "InkPoster",
+        "Optica",
+        "Aura One",
+        "iPad"
+      ],
+      "comments": [
+        {
+          "by": "ihuman",
+          "text": "Mirror (eink.com isn't working for me): https://web.archive.org/web/20261015180401/https://www.eink...."
+        },
+        {
+          "by": "okuntilnow",
+          "text": "The contrast improvement is welcome for sure, but it remains to be seen what difference 15% white reflectivity makes. Previous Kaleido products are fundamentally flawed. I'd hoped they would bin it for something better rather than make incremental improvements. Think it's also debatable what value colour brings unless you are regularly reading full colour magazines, PDFs etc."
+        },
+        {
+          "by": "real_faxenoff",
+          "text": "I've always wanted a color E-Ink tablet, but I could never figure out exactly why.\nDoctor, what's wrong with me?"
+        },
+        {
+          "by": "MattTheRealOne",
+          "text": "Hopefully this means a new Kobo Libra before too long."
+        },
+        {
+          "by": "OptCohTomo",
+          "text": "https://opg.optica.org/oe/fulltext.cfm?uri=oe-33-3-6017\nSee section 5 on Kindle display measurements by optical coherence tomography. The Kaleido display is similar but with a matrix color filter layer. Those images weren't published."
+        }
+      ],
+      "image": null
+    }
+  ],
+  "glossary": {
+    "native service": "A program that runs directly on the server, rather than inside a separate container.",
+    "container": "A way to run a program in a separated space, limiting what it can access.",
+    "Podman": "A tool for starting and managing containers on a computer.",
+    "systemd": "A Linux tool that starts programs in the background and keeps track of them.",
+    "VPN": "Virtual private network: a service that sends your internet traffic through another computer, often to protect it or make it appear to come from somewhere else.",
+    "cold-gas thrusters": "Small engines that push a vehicle by releasing gas without burning fuel.",
+    "active aero": "Moving parts on a car that change how air flows around it.",
+    "downforce": "A force that pushes a car toward the road so its tires can grip.",
+    "COPV": "Composite Overwrapped Pressure Vessel: a reinforced tank built to hold gas at high pressure.",
+    "ITAR": "International Traffic in Arms Regulations: US rules that restrict sharing certain military-related technology.",
+    "dual use": "Technology that can be used for both civilian and military purposes.",
+    "malware": "Software made to harm a computer or get access to it without permission.",
+    "executable": "A file that runs as a program when opened.",
+    "Sonarr": "A tool that searches for and organizes TV episodes you want.",
+    "Radarr": "A tool like Sonarr, but for managing movie downloads.",
+    "qBittorrent": "A program for downloading files shared through torrents.",
+    "blocklist": "A list of files or sources a tool should reject or remove.",
+    "public tracker": "A public service that helps people find torrent downloads.",
+    "torrent": "A way of sharing files by downloading pieces from other people's computers.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "HealthKit": "Apple’s system for letting apps share health information with Apple Health.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "reverse-engineering": "Figuring out how a device or program works by examining it, rather than relying on its instructions.",
+    "Bluetooth": "A wireless way for nearby devices, like a phone and watch, to connect.",
+    "GLP-1": "Glucagon-like peptide-1: a body chemical involved in appetite and blood sugar; medicines that act on it can change how hungry someone feels.",
+    "IPO": "Initial Public Offering: when a company first offers its shares for the public to buy.",
+    "Lean certificate": "A proof written in a format a computer can check step by step.",
+    "formal verification": "Checking a claim using precise rules, often with a computer.",
+    "CAS": "Computer Algebra System: software that can simplify and solve math expressions such as x² + 2x.",
+    "vibecoding": "Using AI to make software from requests instead of writing each line yourself.",
+    "Library of Babel": "A thought experiment about a library containing every possible book, including books that make no sense.",
+    "AM radio": "Amplitude modulation: a way of sending sound over radio waves.",
+    "Mensajero Rural": "Spanish for “Rural Messenger”; it’s the radio program that reads messages for people in remote areas.",
+    "Meshtastic": "A tool for sending messages between small radios without relying on cell service.",
+    "VHF": "Very high frequency: radio waves used for short-range communication, including boat radios.",
+    "white reflectivity": "How much light a screen reflects when it shows white.",
+    "front light": "A light that shines across the front of an e-reader screen so you can see it in dim conditions.",
+    "subpixels": "Tiny colored parts of a screen that combine to make the colors you see.",
+    "RGB": "Red, green, blue: the colors a screen combines to show many other colors.",
+    "electrophoresis": "A way to move charged particles using electricity; in e-paper, this can move pigment around to change what the screen shows.",
+    "optical coherence tomography": "A way to make detailed images of layers inside something without cutting it open.",
+    "PCB": "Printed Circuit Board: a flat board that holds electronic parts and connects them with metal paths."
+  }
+}
