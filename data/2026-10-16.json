@@ -2,6 +2,192 @@
   "date": "2026-10-16",
   "cards": [
     {
+      "id": 50117746,
+      "url": "https://www.jamesfmackenzie.com/2026/10/13/i-love-software-rendering/",
+      "hn": "https://news.ycombinator.com/item?id=50117746",
+      "title": "I Love Software Rendering",
+      "time": 1792155128,
+      "points": 196,
+      "depth": [
+        {
+          "text": "someone loves running old DOS games with software rendering for their **sharp, gritty look**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author wants the original DOS versions on **real hardware**, rather than in DOSBox; Windows source ports are another option. Quake runs at **800×600** and a locked **60fps** on a Dell OptiPlex 380, while Tomb Raider’s underwater sections look better accelerated.",
+          "tier": "substance",
+          "data": [
+            [
+              "Quake resolution",
+              "800×600"
+            ],
+            [
+              "Quake frame rate",
+              "locked 60fps"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say the appeal is pixelated textures or turning off anti-aliasing, not software rendering; others defend software rendering as a distinct way to draw games.",
+      "comment_count": 141,
+      "terms": [
+        "software rendering",
+        "bilinear filtering",
+        "CPU",
+        "GPU",
+        "VESA",
+        "anti-aliasing",
+        "DOSBox",
+        "texel"
+      ],
+      "entities": [
+        "MS-DOS",
+        "Quake",
+        "Dell",
+        "OptiPlex 380",
+        "Doom",
+        "Duke Nukem 3D",
+        "Blood",
+        "GLQuake",
+        "Tomb Raider",
+        "3dfx",
+        "Voodoo 2",
+        "Ion Fury",
+        "Build engine",
+        "Portwell RUBY-9719",
+        "Rasteri",
+        "Xeon",
+        "Shadow Warrior",
+        "DOSBox",
+        "Windows",
+        "SBEMU",
+        "LLVMpipe",
+        "Lavapipe",
+        "OpenSWR",
+        "WARP",
+        "D3D",
+        "OpenGL",
+        "Vulkan",
+        "DLSS",
+        "XeSS",
+        "FSR",
+        "TAA",
+        "Rust",
+        "Tauri",
+        "xterm.js",
+        "Codex",
+        "Claude",
+        "egui",
+        "Michael Abrash",
+        "Graphics Programming Black Book",
+        "id1",
+        "Quake-SRP",
+        "GitHub",
+        "Cyberpunk 2077",
+        "Quake 2",
+        "9front",
+        "Plan 9",
+        "Thinkpad T410i",
+        "devdraw",
+        "rcpu",
+        "Ploopy",
+        "Unreal",
+        "Unreal Tournament",
+        "Thief",
+        "Half-Life",
+        "Heretic",
+        "Hexen",
+        "Descent",
+        "System Shock",
+        "Homeworld",
+        "Cave Story"
+      ],
+      "comments": [
+        {
+          "by": "delta_p_delta_x",
+          "text": "This isn't software rendering, it's called turning off spatial anti-aliasing. You can still do that in the modernest of modern games. Software rendering went out of the window because the CPU tends to have other things to do whilst playing the game besides only multiplying 4x4 matrices, which was shifted to the shader cores of GPUs. The look-and-feel that the author is discussing including shadow…"
+        },
+        {
+          "by": "BugsJustFindMe",
+          "text": "This should really be titled \"I love pixelated textures\". > \" 3D cards smoothed textures with bilinear filtering \" You can just not do that."
+        },
+        {
+          "by": "Waterluvian",
+          "text": "Ah the software rendering era. Where I gained 10fps by adding a sound card."
+        },
+        {
+          "by": "proc0",
+          "text": "Everyone is already pointing out this isn't quite software rendering but rather the rendering technique which used to be the only option. I'll add that even without a GPU, CPUs will have integrated graphics. There are CPUs that don't have this but in those cases you need a GPU. The point is that modern systems no longer use CPU to output to the screen, either there is an integrated GPU or a GPU…"
+        },
+        {
+          "by": "bob1029",
+          "text": "Software rendering often provided better visual effects than the GPU paths could provide at the time. A general purpose CPU can technically do any effect since the software is the pixel shader. Programmable shader pipelines weren't a thing until Geforce 3 in 2001."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50114342,
+      "url": "https://danieltemkin.com/esolangs/folders",
+      "hn": "https://news.ycombinator.com/item?id=50114342",
+      "title": "The Folders Programming Language",
+      "time": 1792127488,
+      "points": 176,
+      "depth": [
+        {
+          "text": "someone made a programming language where **folder structure** does the work of **code**",
+          "tier": "simple"
+        },
+        {
+          "text": "Folder names are ignored apart from **alphabetical ordering**; the number of subfolders in a command’s first folder determines its **type**. Temp folders store data in their **names**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some love the weird idea; others call it pointless or say filesystem metadata still takes space.",
+      "comment_count": 31,
+      "terms": [
+        "esolang",
+        "ordered tree",
+        "imperative language",
+        "interpreter",
+        "natural sort"
+      ],
+      "entities": [
+        "Daniel Temkin",
+        "Folders",
+        "Whitespace",
+        "Rivulet",
+        "Velato",
+        "Windows",
+        "Git",
+        "Folders FS",
+        "GitHub"
+      ],
+      "comments": [
+        {
+          "by": "Hugsbox",
+          "text": "\"In Windows, folders are an even more extreme measure of emptiness: they take up no disk space at all. For proof, create 352,449 folders and get properties on it.\" I'm guessing this is a joke and I'm just taking it too seriously, but the only thing that \"proves\" is that Windows lies to you lol. It's obviously information that's stored _somewhere_."
+        },
+        {
+          "by": "omoikane",
+          "text": "It says the folders are evaluated in alphabetical order, but actually it's evaluating them in natural sort[1][2]. This makes sense since Windows also displays folders in natural sort order. [1] https://github.com/rottytooth/Folders/blob/015cf65c15ab681f5... [2] https://en.wikipedia.org/wiki/Natural_sort_order"
+        },
+        {
+          "by": "nunodonato",
+          "text": "This is so nuts and pointless... I love it! The kind of thing no AI would ever come up with :)"
+        },
+        {
+          "by": "letharion",
+          "text": "I can't decide if I'm in awe, or angry. At least it looks more useful than the flying Tesla."
+        },
+        {
+          "by": "TaLiTr",
+          "text": "Imagine being the guy trying to figure out why a Windows server is running out of space, and finding 23 million empty folders being used to define software for prod."
+        }
+      ],
+      "image": "https://danieltemkin.com/Content/Esolangs/NewFolders.png"
+    },
+    {
       "id": 50111852,
       "url": "https://www.niemanlab.org/2026/10/metas-new-commercial-terms-will-allow-the-scraping-of-news-sites-legal-experts-say/",
       "hn": "https://news.ycombinator.com/item?id=50111852",
@@ -1030,6 +1216,19 @@
     }
   ],
   "glossary": {
+    "software rendering": "A way for the computer’s main chip to draw a game’s picture instead of handing the drawing to a graphics card.",
+    "bilinear filtering": "A way to smooth a game’s blocky patterns by blending nearby colors, which can make them look blurry.",
+    "CPU": "Central Processing Unit: the main chip that runs instructions in a computer.",
+    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "VESA": "Video Electronics Standards Association: the group that set common screen rules, including ones used by DOS games to offer higher resolutions.",
+    "anti-aliasing": "A way to soften jagged edges in an image so lines look smoother.",
+    "DOSBox": "A program that imitates an old DOS computer so DOS games can run on newer machines.",
+    "texel": "One tiny square of color in a game’s surface pattern, like a pixel in a picture.",
+    "esolang": "An experimental programming language, usually made to explore an idea or for fun rather than everyday use.",
+    "ordered tree": "A way to arrange things in branches where the order of items at each level matters.",
+    "imperative language": "A language where a program gives the computer steps to carry out.",
+    "interpreter": "A program that reads code and carries out what it says.",
+    "natural sort": "Sorting names so numbers are treated as numbers, putting “2” before “10.”",
     "scraping": "Using automated tools to collect content from websites.",
     "robots.txt": "A file that tells automated visitors which parts of a website the owner would prefer them not to visit; it cannot force them to obey.",
     "tying": "Making access to one product depend on accepting another condition.",
