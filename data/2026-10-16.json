@@ -2,6 +2,726 @@
   "date": "2026-10-16",
   "cards": [
     {
+      "id": 50122800,
+      "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+      "hn": "https://news.ycombinator.com/item?id=50122800",
+      "title": "Claude reveals ECDSA curve origins",
+      "time": 1792176959,
+      "points": 431,
+      "depth": [
+        {
+          "text": "Claude found that several **cryptography curves** got their starting numbers from a **random-number generator**",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter quotes the finding: the **NIST P-192, P-224, P-256, P-384 and P-521 seeds** came from the C library’s **lrand48 random-number generator**, seeded with a Unix timestamp. The **B-163 seed remains unexplained**; another commenter says this doesn't reveal how candidates were selected.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some see the timestamp-based explanation as reassuring about backdoors; others say it still doesn't show how the curves were selected.",
+      "comment_count": 181,
+      "terms": [
+        "ECDSA",
+        "seed",
+        "lrand48",
+        "Unix timestamp",
+        "NIST",
+        "hash algorithm"
+      ],
+      "entities": [
+        "Claude",
+        "Anthropic",
+        "NIST",
+        "ECDSA",
+        "C",
+        "lrand48",
+        "Unix",
+        "NIST P-192",
+        "NIST P-224",
+        "NIST P-256",
+        "NIST P-384",
+        "NIST P-521",
+        "B-163"
+      ],
+      "comments": [
+        {
+          "by": "slowin",
+          "text": "This neat and all but I think there's a bigger issue here. Anthropic (and whoever Anthropic wants) can do this kind of work with Claude, but if you or I try to do it, we will get blocked. This is a fun exercise, but extend this to something much more nefarious and you can see a moat widening between the model providers, their government partners, and the public. The only thing that bridges this…"
+        },
+        {
+          "by": "fidotron",
+          "text": "While this confirms the method of production it doesn't say anything about their selection, especially since they were, apparently, generated over a period of months. Specifically you cannot see those candidates that were generated and discarded. \"It is still conceivable that these curves were selected to have a specific property in principle by searching over timestamps to the random number…"
+        },
+        {
+          "by": "JumpCrisscross",
+          "text": "“In under half an hour, Claude discovered the origins of the NIST P-192, P-224, P-256, P-384 and P-521 seeds. None of them were the results of any hash algorithm at all, but rather the output of the C library’s lrand48 random-number generator, seeded with a Unix timestamp!” Gorgeous. I wonder if the NSA employee who did this suffered a head injury or has been quietly giggling to themselves for…"
+        },
+        {
+          "by": "teddyh",
+          "text": "> The fifth binary seed, B-163, fits nothing Claude has tried and remains unexplained. The simplest explanation would be that it was generated the same way as the others, but somebody mistyped a digit somewhere along the way to publishing, and therefore a solution could not be found with the assumption that the number is correct."
+        },
+        {
+          "by": "sweis",
+          "text": "13 years of tinfoil hats for srand48(time(NULL)"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50121179,
+      "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
+      "hn": "https://news.ycombinator.com/item?id=50121179",
+      "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+      "time": 1792170518,
+      "points": 308,
+      "depth": [
+        {
+          "text": "research says **90% of US working hours** involve tasks with **little or no AI benchmark coverage**",
+          "tier": "simple"
+        },
+        {
+          "text": "Mercor compared **29 benchmarks** against O*NET’s 18,797 tasks across 923 occupations; only **208 occupations** had a task linked to at least five prompts. The team says the estimate is **provisional**: the list is incomplete, and occupations with larger wage bills show up more in benchmark prompts.",
+          "tier": "substance",
+          "data": [
+            [
+              "US working hours on tasks with little or no benchmark coverage",
+              "90%"
+            ],
+            [
+              "Occupations with at least one task linked to 5+ prompts",
+              "208 of 923"
+            ],
+            [
+              "Benchmarks in the initial list",
+              "29"
+            ]
+          ]
+        }
+      ],
+      "camps": "One camp says the figure is about gaps in the benchmark map, not AI’s abilities; another says the headline understates the gap because a task can count as covered with only five prompts.",
+      "comment_count": 283,
+      "terms": [
+        "benchmark",
+        "O*NET",
+        "prompt",
+        "wage bill",
+        "LLM judge"
+      ],
+      "entities": [
+        "Mercor",
+        "O*NET",
+        "APEX",
+        "US Department of Labor",
+        "BLS",
+        "Eloundou et al.",
+        "Wang et al.",
+        "Hatgis-Kessell et al.",
+        "Nathan Lambert"
+      ],
+      "comments": [
+        {
+          "by": "10111001",
+          "text": "> Our findings suggest that 90% of American working hours are spent on tasks with little or no coverage from existing benchmarks. This makes it very hard to know how good AI models are at the work Americans actually do. > ... > But even after controlling for AI-exposure, O*NET tasks from occupations with larger wage bills are significantly overrepresented among benchmark prompts: So, in short…"
+        },
+        {
+          "by": "qurren",
+          "text": "About 80% of my software engineering job is fighting disagreements between \"stakeholders\"."
+        },
+        {
+          "by": "armcat",
+          "text": "Reinforces what Karpathy tweeted [1], that AI is effectively tackling 2-5% of work and the gap between those fully exploiting AI and barely touching it is growing. The question remains whether this AI focus on the small % of workers is actually intentional (by tech/labs), or a natural limit of where AI is right now. [1] https://x.com/karpathy/status/2109361546505966046?s=20"
+        },
+        {
+          "by": "b800h",
+          "text": "Perhaps a version of the Doorman Fallacy, ie. replacing a doorman with an automatic door seems like an obvious win, but it turns out the doorman was performing a number of other vital functions (customer experience, for example) which weren't considered."
+        },
+        {
+          "by": "OtherShrezzing",
+          "text": "I think “covered well” is being used here as a synonym for “covered at all”. For example, the “social workers & care -> counsel parents with child rearing problems” category is considered “well covered” because there are 13 prompts. It’s self-evident that the spectrum of work carried out by a social worker undertaking that work cannot be well represented by thirteen prompts. I suspect if you…"
+        }
+      ],
+      "image": "https://www.mercor.com/mercor-logo-white.png"
+    },
+    {
+      "id": 50118320,
+      "url": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+      "hn": "https://news.ycombinator.com/item?id=50118320",
+      "title": "Apple ML Research: Muse Spark Open with MLX on Mac Studio",
+      "time": 1792158228,
+      "points": 234,
+      "depth": [
+        {
+          "text": "Apple says four Mac Studios run **Muse Spark Open** locally at over **36 tokens per second**",
+          "tier": "simple"
+        },
+        {
+          "text": "Muse Spark Open has **816 billion total parameters**, with **42 billion active** at inference. Its 4-bit model footprint is about **493GB**, before the extra memory needed during inference, so it has to be split across multiple Mac Studios.",
+          "tier": "substance",
+          "data": [
+            [
+              "Muse Spark Open decode speed (4 M5 Tensor, tokens per second)",
+              "36.73"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some are excited by the promise of running models locally; others say the Macs are too expensive now and question the model choice or benchmark.",
+      "comment_count": 105,
+      "terms": [
+        "LLM",
+        "MLX",
+        "token",
+        "quantization",
+        "mixture of experts (MoE)",
+        "RDMA",
+        "pipeline parallelization",
+        "tensor parallelization"
+      ],
+      "entities": [
+        "Apple",
+        "Meta",
+        "MLX",
+        "MLX LM",
+        "Muse Spark Open",
+        "Mistral Medium 3.5",
+        "Qwen 3.8",
+        "Mac Studio",
+        "M5 Ultra",
+        "M3 Ultra",
+        "M5 Max",
+        "jaccl",
+        "OpenCode",
+        "DeepSeek 4.1 Flash 0910",
+        "GLM 5.3 Flash",
+        "MathArena Apex",
+        "GPQA Diamond",
+        "Laya"
+      ],
+      "comments": [
+        {
+          "by": "ks2048",
+          "text": "So, Meta will spend millions/billions on building open-weight models and then people will send Apple $20,000 to run them. Seems like a good deal for Apple."
+        },
+        {
+          "by": "peri-cl",
+          "text": "I think they're sandbagging Qwen pretty heavily by benchmarking Meta's model at 4-bit, against Qwen only at native BF16 (and nothing else shown). That's not a quant most users would choose. I get that this is cross-brand marketing for Apple's partner, Meta; but really Muse Spark isn't even in the top *ten* models I'd consider if I had a 512 GB M5 in my paws. Or a cluster of them."
+        },
+        {
+          "by": "liuliu",
+          "text": "FWIW, single M5 Ultra with 256GiB runs DeepSeek 4.1 Flash 0910 just fine (~3200 tok/s prefill, ~45 tok/s). M5 Max w/ 128GiB runs GLM 5.3 Flash also fine. I also benchmarked both on quality benchmarks (MathArena Apex / GPQA Diamond etc) to make sure the quality is what you get from the official numbers."
+        },
+        {
+          "by": "janderson215",
+          "text": "Hilarious how they managed to put out an entire press release about Meta’s technology without mention Meta other than what is in the code references."
+        },
+        {
+          "by": "tony_cannistra",
+          "text": "Not exactly your average \"desk\", but still neat. In this post, we show how to run the latest frontier-class model — Muse Spark Open, with nearly a trillion parameters — right from your desk, using the latest version of MLX, released today. On a cluster of four Mac Studios, Muse Spark Open generates over 36 tokens per second (see Figure 1), well above average human reading speed. Beginning on a…"
+        }
+      ],
+      "image": "https://mlr.cdn-apple.com/media/MLX_icon_F001_TC_2048_2600_6439f2ba0f.png"
+    },
+    {
+      "id": 50118981,
+      "url": "https://waymo.com/blog/2026/10/waymo-in-toronto/",
+      "hn": "https://news.ycombinator.com/item?id=50118981",
+      "title": "Waymo in Toronto",
+      "time": 1792161857,
+      "points": 205,
+      "depth": [
+        {
+          "text": "Waymo is preparing **autonomous rides** in Toronto, aiming for its first riders in **2028**",
+          "tier": "simple"
+        },
+        {
+          "text": "In the coming days, its vehicles will drive **manually** while Waymo maps local streets and tests with trained autonomous specialists. The company says it will invest in **hundreds of roles** over time with Element Fleet Management, and that data from over 400 million fully autonomous kilometres shows **95% fewer** crashes involving serious injury or worse than humans in its operating cities.",
+          "tier": "substance",
+          "data": [
+            [
+              "first riders",
+              "2028"
+            ],
+            [
+              "fully autonomous kilometres driven",
+              "over 400 million"
+            ],
+            [
+              "crashes involving serious injury or worse",
+              "95% fewer (20x fewer)"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters report smooth rides or excitement about Waymo; others point to bad experiences and raise safety, jobs, winter-driving, or pricing concerns.",
+      "comment_count": 311,
+      "terms": [
+        "autonomous ride-hailing",
+        "high-definition mapping",
+        "fleet management",
+        "lidar",
+        "dynamic pricing"
+      ],
+      "entities": [
+        "Waymo",
+        "Waymo Driver",
+        "Element Fleet Management",
+        "Tekedra Mawakana",
+        "Laura Dottori-Attanasio",
+        "Canada Pension Plan Investment Board",
+        "Magna International",
+        "BALANCE for Blind Adults",
+        "CNIB",
+        "Community Living Toronto",
+        "Connected Canadians",
+        "Epilepsy Ontario"
+      ],
+      "comments": [
+        {
+          "by": "tcoop25",
+          "text": "Took my first Waymo in Austin, TX last weekend and it did not go well. Was supposed to be a 9 minute drive, then randomly it tells us the ride has been 'slightly extended' to 45 minutes. Customer support dropped us off at a restaurant and said sorry. We ordered a human Uber. Honestly the last thing I thought would happen would be that it would get lost. I thought maybe it would get confused on…"
+        },
+        {
+          "by": "SenHeng",
+          "text": "I happened to drive past 2 of them in Tokyo a couple of weeks ago. One was making a left turn into an alley, another was on the otherwise of the road so I never got to see how they actually drove but I giddily squealed like a happy pig rolling in the mud WAYMO! as I tried explaining to my shocked wife wtf was going on. It's been so long since I've had this feel of wonder when seeing technology…"
+        },
+        {
+          "by": "tpurves",
+          "text": "Waymo experience in San Francisco has always been awesome for me as a passenger."
+        },
+        {
+          "by": "ilamont",
+          "text": "I note the Toronto announcement cites job creation in the very first sentence. I live near another snowy city where Waymo has been teased, but has yet to have any significant presence: https://waymo.com/blog/shorts/back-to-boston/ There apparently is a concerted effort to deny Waymo the legislative changes it needs, driven by a concern about job loss…"
+        },
+        {
+          "by": "joshuat",
+          "text": "When I read these threads, I sometimes wonder if I was the only person to have a positive/unproblematic experience with Waymo"
+        }
+      ],
+      "image": "https://lh3.googleusercontent.com/oT69lnzKavWqyUu7BiCQCRwO5_quNkMhToRgNG_txw-llzetBvuR1663he58eSjZiEfPPVIzga1NGPvOJSlF-PbJfiAQVSboho1oVbK3Q6phCM2t"
+    },
+    {
+      "id": 50120664,
+      "url": "https://news.gallup.com/poll/708614/desire-migrate-drops-new-low.aspx",
+      "hn": "https://news.ycombinator.com/item?id=50120664",
+      "title": "Desire to Move Permanently to U.S. at New Low",
+      "time": 1792168682,
+      "points": 178,
+      "depth": [
+        {
+          "text": "people worldwide are **less keen to move**, and fewer now **pick the U.S.** as their destination",
+          "tier": "simple"
+        },
+        {
+          "text": "Gallup says **15%** of would-be migrants named the U.S. in 2025, down from **24%** in 2007 to 2009. Overall, global desire to migrate fell to its **lowest level in a decade**.",
+          "tier": "substance",
+          "data": [
+            [
+              "U.S. as preferred destination, 2025",
+              "15%"
+            ],
+            [
+              "U.S. as preferred destination, 2007–2009",
+              "24%"
+            ],
+            [
+              "Global desire to migrate, 2025",
+              "15%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters blame U.S. politics and quality of life; others stress that it remains the top destination and that migration desire is falling worldwide.",
+      "comment_count": 180,
+      "terms": [
+        "H1B/L1",
+        "EB2-NIW",
+        "market test",
+        "green card"
+      ],
+      "entities": [
+        "Gallup",
+        "Julie Ray",
+        "Anita Pugliese",
+        "Andrew Dugan",
+        "Michelle Chau"
+      ],
+      "comments": [
+        {
+          "by": "Aurornis",
+          "text": "The sub-headline adds important context: > U.S. still top destination as desire to migrate falls worldwide So the US is still the top destination by a wide margin. Part of the decline is attributable to a global drop in desire to migrate at all. Recent politics is undoubtedly part of it, but if you assumed the US had fallen behind other countries you should probably read the article."
+        },
+        {
+          "by": "happosai",
+          "text": "The only proven method of stopping immigration to your country: make your country such a shit hole nobody wants to move to it."
+        },
+        {
+          "by": "Ritewut",
+          "text": "I'm trying to get out of the US but every other country is also having their own anti-immigration moment right now."
+        },
+        {
+          "by": "wolvoleo",
+          "text": "Yeah I would never ever move there. I had an offer just before Corona but naaah. The only reason I applied is that they advertised it as a local job at first. While this administration is in place I don't even want to visit, even for work purposes I refuse. Especially the toxic manosphere culture at the moment. I've lived in 4 countries but the US is not one that appeals to me. They pay the most…"
+        },
+        {
+          "by": "k__",
+          "text": "Isn't that what the US wants? I mean, at least this ICE stuff happened doesn't seem very inviting."
+        }
+      ],
+      "image": "https://imagekit.gallup.com/fusion/tr:n-emd_soc_meta_twitter/POLL/ea2080b7-ab7b-4413-bc85-2559747a97ba.jpg"
+    },
+    {
+      "id": 50120101,
+      "url": "https://ritchietorres.house.gov/posts/rep-torres-announces-power-to-the-players-act-legislation-to-ensure-gamers-own-their-games",
+      "hn": "https://news.ycombinator.com/item?id=50120101",
+      "title": "US Rep Announces Congressional Legislation to Protect Video Game Ownership",
+      "time": 1792166582,
+      "points": 172,
+      "depth": [
+        {
+          "text": "a lawmaker wants a **bill** to keep **games playable** after companies shut their servers down",
+          "tier": "simple"
+        },
+        {
+          "text": "Rep. Ritchie Torres says he will introduce the **Power To The Players Act**, directing the Federal Trade Commission to set rules around buyers’ ability to own and play their games. Under the bill, buying a game would mean **owning it**, not just holding a license, and online games would need an **offline mode** before their servers shut down.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some want rules that keep games playable; others say an offline mode won’t suit MMORPGs and suggest making server files available instead.",
+      "comment_count": 100,
+      "terms": [
+        "Federal Trade Commission",
+        "revocable license",
+        "MMORPG",
+        "server binaries",
+        "emulator"
+      ],
+      "entities": [
+        "Ritchie Torres",
+        "Power To The Players Act",
+        "Federal Trade Commission",
+        "NBA 2K25",
+        "World of Warcraft",
+        "Steam",
+        "Neal Stephenson"
+      ],
+      "comments": [
+        {
+          "by": "Sohcahtoa82",
+          "text": "> Games with online functionality would also be required to provide an offline mode before the servers supporting them are shut down. For some games, like MMORPGs, an offline mode doesn't make sense. In lieu of that, they need to make the server binaries available, along with client functionality to let you choose a server. They shouldn't be required to offer support, but the nerd community is…"
+        },
+        {
+          "by": "lrvick",
+          "text": "By the time something like this passes, everyone will have the ability to convert any game to unlicensed source code in a matter of hours. Intellectual property is not going to be a thing anymore."
+        },
+        {
+          "by": "JumpCrisscross",
+          "text": "…why wouldn’t he release the bill text? I’d want a revenue floor before this took effect. An indie developer should not have to worry about getting sued because they didn’t properly turn off a hobby project."
+        },
+        {
+          "by": "Thegn",
+          "text": "I am a gamer who has played around with private servers and emulators to revisit my gaming past - one thing I wonder about is how laws would handle game-changing updates? World of Warcraft famously does major renovations to game mechanics each expansion and minor changes each patch. What is to prevent a company from releasing an “update patch” that essentially cripples the game, then shutting…"
+        },
+        {
+          "by": "Animats",
+          "text": "\"Will introduce?\" Not even in the hopper yet? If it's not in the hopper and doesn't have a few co-sponsors, it's just a PR stunt."
+        }
+      ],
+      "image": "https://d12t4t5x3vyizu.cloudfront.net/ritchietorres.house.gov/uploads/2026/10/image-3-scaled.png"
+    },
+    {
+      "id": 50118688,
+      "url": "https://starskirmish.com/bench/v0-2/",
+      "hn": "https://news.ycombinator.com/item?id=50118688",
+      "title": "Show HN: Gemini 4 Argon plays StarCraft",
+      "time": 1792160324,
+      "points": 166,
+      "depth": [
+        {
+          "text": "someone tested **Gemini 4 Argon** by having it write a bot to play **StarCraft**",
+          "tier": "simple"
+        },
+        {
+          "text": "The comments call this **StarSkirmish Bench v0.2**; one ranking puts Gemini 4 Argon behind GPT-6 Astra and GPT-6.1 Sol. Another commenter says the same model’s performance can change dramatically with its **harness**, tools, and thinking level.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 74,
+      "terms": [
+        "LLM",
+        "benchmark",
+        "harness",
+        "Elo",
+        "CLI",
+        "APM",
+        "WR"
+      ],
+      "entities": [
+        "Gemini 4 Argon",
+        "StarCraft",
+        "StarSkirmish Bench",
+        "GPT-6 Astra",
+        "GPT-6.1 Sol",
+        "Claude Opus 5.5",
+        "Claude Fable 5.1",
+        "Claude Sonnet 5.5",
+        "GoBench",
+        "KataGo",
+        "Claude Code",
+        "Codex",
+        "Antigravity CLI",
+        "Muse Code",
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "BroodBench",
+        "Pluto",
+        "ModernUO",
+        "Red Alert 2",
+        "Red Alert",
+        "Counter Strike"
+      ],
+      "comments": [
+        {
+          "by": "GodelNumbering",
+          "text": "Wow this is interesting to me from another angle. A friend of mine created a benchmark to evaluate LLMs on 9x9 Go (using KataGo opponents as Elo anchors) [1]. The relative rankings of this (StarSkirmish Bench v0.2) benchmark (GPT-6 Astra > GPT-6.1 Sol > Gemini 4 Argon > Claude Opus 5.5 > Claude Fable 5.1 > Claude Sonnet 5.5) matches the order of his GoBench rankings exactly, even though they are…"
+        },
+        {
+          "by": "cgearhart",
+          "text": "Is there anything interesting to learn from the agent written bots? Or are they just inferior versions of the best bots because the time limit is so short? Is there any indication that they’re trained on the code from the human written bots (like, do they magically “guess” creating functionality that requires experimental feedback or domain experience?) How much are the bots on rails applying the…"
+        },
+        {
+          "by": "djoldman",
+          "text": "> ... runs each model in its lab's 1st party CLI harness at the highest reasoning setting it offers. Anthropic (Claude models): Claude Code\nOpenAI (GPT models): Codex\nGoogle (Gemini models): Antigravity CLI\nMeta (Muse models): Muse Code\n> The CLIs' web search and web fetch tools are turned off, and the agent has no other internet access. The CLI is installed before the clock starts, and the hour…"
+        },
+        {
+          "by": "MichaelNolan",
+          "text": "So this benchmark has the LLMs writing a bit to play StarCraft. Somewhat similar there was a post here a while back that had the LLMs playing StarCraft directly - https://broodbench.com/ and https://news.ycombinator.com/item?id=49766966"
+        },
+        {
+          "by": "TomGarden",
+          "text": "I thought Opus 5.5 performed worse across a lot of benchmarks on Max, would love to see it one notch down"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50119991,
+      "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
+      "hn": "https://news.ycombinator.com/item?id=50119991",
+      "title": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
+      "time": 1792166140,
+      "points": 162,
+      "depth": [
+        {
+          "text": "Postgres delayed its next release after **AI reviews** found **more bugs** than humans could fix",
+          "tier": "simple"
+        },
+        {
+          "text": "The release is now expected around **November 19**, with **between eight and 10 significant features** pushed to PostgreSQL 20. Peter Eisentraut said **LLM-assisted reviews** surfaced a long tail of edge-case issues, leaving developers out of time to fix them.",
+          "tier": "substance",
+          "data": [
+            [
+              "release timing",
+              "around November 19"
+            ],
+            [
+              "features dropped",
+              "between eight and 10 significant features"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say AI-assisted testing is uncovering real bugs and raising the quality bar; others worry the reports include false positives or endless edge cases, and argue software needn't wait for perfection.",
+      "comment_count": 62,
+      "terms": [
+        "LLM",
+        "edge case",
+        "regression test",
+        "QA"
+      ],
+      "entities": [
+        "PostgreSQL",
+        "PostgreSQL 19",
+        "PostgreSQL 20",
+        "Peter Eisentraut",
+        "EDB",
+        "SQL/PGQ",
+        "Tom Lane"
+      ],
+      "comments": [
+        {
+          "by": "devin",
+          "text": "Some conjecture on my part, but I imagine that the bugs being found are not the kind you can just press a button on the LLM to fix anyway, but are instead the sort of bugs which require the reviewer to deeply consider design tradeoffs, of which I believe there are simply more in a DB or programming language codebase, for example. Stuff I am finding in review is often like \"this thing isn't like…"
+        },
+        {
+          "by": "FranOntanaya",
+          "text": "This is one angle of the productivity story. You don't have any sort of plausible deniability covering all these bugs, test cases etc. when they are comprehensively discoverable by tooling. It's like having typing bugs on a strongly typed language with static analysis, you just can't make a lot of excuses. So that's one measure of extra time that will be spent on every single feature, where in…"
+        },
+        {
+          "by": "MBCook",
+          "text": "I remember an LWN article on this question a few weeks ago. The debate was going on and they weren’t sure if it was that there were more bugs or just that because of AI they suddenly knew about more bugs than usual. Either way, unfortunate but a very understandable decision."
+        },
+        {
+          "by": "jerf",
+          "text": "QA is becoming the blocker for projects in an AI era, and the real source of value. AIs can lay down a good base of testing but I see even frontier models still need help with testing because they are basically as bad as humans in terms of testing only what comes to mind, if not even a touch worse. Though they are really good at blasting through problems once they are found. Ironically, despite…"
+        },
+        {
+          "by": "stickfigure",
+          "text": "Not surprising. I've been running AI reviews through old codebases and finding all sorts of interesting things. AI is significantly raising the quality bar and there is a lot of backfilling to do."
+        }
+      ],
+      "image": "https://image.theregister.com/228745.jpg?imageId=228745&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
+    },
+    {
+      "id": 50120224,
+      "url": "https://jakearchibald.com/2026/jpeg-xl-vs-avif/",
+      "hn": "https://news.ycombinator.com/item?id=50120224",
+      "title": "JPEG XL vs. AVIF for web use-cases",
+      "time": 1792167122,
+      "points": 157,
+      "depth": [
+        {
+          "text": "someone compared **AVIF** with **JPEG XL** and found AVIF usually makes **smaller web images**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author's current default is **AVIF 4:4:4**, with the highest effort they can be bothered with. **JPEG XL wins for lossless** images and can beat AVIF on some photos.",
+          "tier": "substance",
+          "data": [
+            [
+              "JPEG XL vs AVIF, default effort",
+              "15–25% larger"
+            ],
+            [
+              "JPEG XL vs AVIF, maximum effort",
+              "6–20% larger"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some call AVIF the clear web winner; others think JPEG XL still makes sense for broader use-cases or wins on lossless images.",
+      "comment_count": 127,
+      "terms": [
+        "AVIF",
+        "JPEG XL",
+        "4:4:4",
+        "lossy",
+        "lossless",
+        "progressive rendering",
+        "SSIMULACRA2"
+      ],
+      "entities": [
+        "Jake Archibald",
+        "AVIF",
+        "JPEG XL",
+        "jixel",
+        "libjxl",
+        "Firefox",
+        "Chrome",
+        "Safari",
+        "SSIMULACRA2",
+        "ColorVideoVDP",
+        "Squoosh",
+        "WebP"
+      ],
+      "comments": [
+        {
+          "by": "yhjc2692",
+          "text": "> libjxl's maximum effort is very slow. It produces files 2–7% smaller than its default for photos, and ~25% smaller for the screenshot and illustration, but takes 9–46 seconds, which is 50–180x as long as its default. jixel gets the same results in a couple of seconds. libjxl's slow speed at efforts >7 is primarily due to an iterative evaluation-optimization loop of a perceptual error metric…"
+        },
+        {
+          "by": "linolevan",
+          "text": "I think people are really forgetting that JXL's encoders are bad right now. For instance, in TFA Jake presents - The Firefox screenshot w/ lossless JXL at 66.9kB, when with a better encoder you get get it down to like 40.7kB (39% smaller) [1] (or 43kB if you need it to work with jxl-rs [2]) - The cat illustration w/ lossless JXL at 255.3kB, when with a better encoder you can get it down to 178kB…"
+        },
+        {
+          "by": "Metricon",
+          "text": "AVIF is fantastic format and I use it in my production applications. Spent quite a bit of time looking to the best settings (at least for up to 2k images) and for anyone interested in converting images to AVIF, here's what I've found to work the best for creating the smallest size (10x+ smaller) while still retaining good quality and even supports PNG transparency: ffmpeg -i {input_file}…"
+        },
+        {
+          "by": "CodesInChaos",
+          "text": "https://jakearchibald.com/2026/jpeg-xl-vs-avif/#lossy---scre... In full screen mode, the \"hold for lossless\" version \"Firefox help\"/\"Submit feedback\" are not underlined. In inline mode they are. Both modes seem to render a scaled down version of the image, which seems to cause these problems."
+        },
+        {
+          "by": "PaulHoule",
+          "text": "That F1 image is, in my mind, proof of exactly what is wrong with AVIF. If you look closely the beautiful highlights on the car have been erased and replaced with something plausible. Once you see it you can't unsee it and it boggles my mind that people are still using it as an example. Granted, AVIF performs impressively for, say, a huge hero image for a blog where you're out to create an…"
+        }
+      ],
+      "image": "https://jakearchibald.com/c/img-B1T1kkPz.jpg"
+    },
+    {
+      "id": 50122112,
+      "url": "https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d",
+      "hn": "https://news.ycombinator.com/item?id=50122112",
+      "title": "Anthropic assigned highest junk credit rating in June",
+      "time": 1792174302,
+      "points": 154,
+      "depth": [
+        {
+          "text": "Anthropic got a **junk credit rating**, and commenters are **arguing** over what that rating means",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says the rating is **BB+**, one notch from investment grade. KBRA used a **“risk score”** after Anthropic’s disclosure left out **financial metrics**.",
+          "tier": "substance",
+          "data": [
+            [
+              "credit rating",
+              "BB+"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: critics worry that investment-grade ratings could expose pension funds to AI companies; skeptics say KBRA is a small agency and the coverage is sensationalized.",
+      "comment_count": 43,
+      "terms": [
+        "KBRA",
+        "credit rating",
+        "junk rating",
+        "investment-grade",
+        "free cash flow",
+        "IPO"
+      ],
+      "entities": [
+        "Anthropic",
+        "Kroll Bond Rating Agency",
+        "SpaceX",
+        "OpenAI",
+        "Financial Times",
+        "Broadcom",
+        "Microsoft",
+        "Amazon",
+        "Obama",
+        "JOBS Act",
+        "Arrested Development",
+        "YouTube"
+      ],
+      "comments": [
+        {
+          "by": "grumpymouse",
+          "text": "From the article: >However, Anthropic’s disclosure to KBRA excluded several important financial metrics, including free cash flow and earnings before interest, taxes, depreciation and amortisation. Credit rating analysts had to come up with their own estimates based on assumptions, the documents show. >Given the limited information, KBRA produced a “risk score” to assess Anthropic’s…"
+        },
+        {
+          "by": "AnodicElegy",
+          "text": "First SpaceX, now Anthropic. I wonder what happened the last time the big rating agencies gave massive amounts of sketchy debt investment-grade ratings to avoid alienating their customers?"
+        },
+        {
+          "by": "master_crab",
+          "text": "This is not particularly newsworthy. Kroll is not one of the main ratings agencies, and certainly not the one bond purchasers use."
+        },
+        {
+          "by": "matheusmoreira",
+          "text": "Starting to sound like subprime loans to me..."
+        },
+        {
+          "by": "kryllic",
+          "text": "Non-paywall link: < https://finance.yahoo.com/technology/ai/articles/anthropic-s... >"
+        }
+      ],
+      "image": null
+    },
+    {
       "id": 50117746,
       "url": "https://www.jamesfmackenzie.com/2026/10/13/i-love-software-rendering/",
       "hn": "https://news.ycombinator.com/item?id=50117746",
@@ -1216,6 +1936,60 @@
     }
   ],
   "glossary": {
+    "ECDSA": "Elliptic Curve Digital Signature Algorithm: a way for computers to check who sent a message and whether it was changed.",
+    "seed": "The starting number that helps determine what numbers a random-number generator produces.",
+    "lrand48": "A named C-library function that produces number sequences that look random.",
+    "Unix timestamp": "A way of expressing a time as a count of seconds from a fixed starting point.",
+    "NIST": "National Institute of Standards and Technology: a US agency that publishes technical standards.",
+    "hash algorithm": "A set of steps that turns information into a short, fixed-length code, often used to check data.",
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "O*NET": "A US Department of Labor catalog of jobs and the tasks associated with them.",
+    "prompt": "A task or instruction given to an AI to see what it does.",
+    "wage bill": "The combined wages paid to people in one occupation.",
+    "LLM judge": "An AI asked to sort benchmark prompts into the job tasks they match.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "MLX": "An Apple framework that lets people run and experiment with AI models on Apple hardware.",
+    "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
+    "quantization": "A way to make a model use less computing power by representing its internal numbers less precisely.",
+    "mixture of experts (MoE)": "A model design that uses only some of its parts for a given computation, rather than all of them.",
+    "RDMA": "Remote Direct Memory Access: a way for computers to exchange data directly with less delay.",
+    "pipeline parallelization": "Splitting a model into consecutive sections across computers, with one passing its output to the next.",
+    "tensor parallelization": "Splitting each layer of a model across computers so they can work on parts of it at the same time.",
+    "autonomous ride-hailing": "A service where people book rides in cars that drive themselves.",
+    "high-definition mapping": "Making a very detailed map of local roads for the vehicles to use.",
+    "fleet management": "Organizing and maintaining a company’s vehicles so they are ready for work.",
+    "lidar": "A way to measure the shape of the ground by sending out laser light and measuring what bounces back.",
+    "dynamic pricing": "Prices that change depending on the situation, such as demand or where a ride is going.",
+    "H1B/L1": "Two kinds of U.S. work visas: permissions that let someone take certain jobs in the country.",
+    "EB2-NIW": "Employment-Based Second Preference, National Interest Waiver: a U.S. immigration route for workers who argue that their work benefits the country.",
+    "market test": "A check on whether an employer can find a local worker before hiring someone from abroad.",
+    "green card": "A card showing someone is allowed to live and work in the US permanently.",
+    "Federal Trade Commission": "The US agency the bill would direct to set rules protecting consumers.",
+    "revocable license": "Permission to use a game that a company can take away, rather than something you own.",
+    "MMORPG": "Massively multiplayer online role-playing game: an online role-playing game where lots of players share a world.",
+    "server binaries": "The program files that let a game's online servers run.",
+    "emulator": "A program that imitates another service so you can try your software without using the real one.",
+    "harness": "The surrounding code that gives an AI agent tools and a place to work, and checks what it does.",
+    "Elo": "A score that estimates how strong a player is by comparing their wins and losses against other players.",
+    "CLI": "Command-Line Interface: a way to control a computer by typing commands instead of clicking buttons.",
+    "APM": "Actions per minute: how many commands a player makes in a minute.",
+    "WR": "Win rate: the share of games a player or bot wins.",
+    "edge case": "A situation outside the usual path that can make software behave differently or break.",
+    "regression test": "A check to catch whether a change has brought back an old problem.",
+    "QA": "Quality assurance: checking that software works as expected before people rely on it.",
+    "AVIF": "AV1 Image File Format: a file type for saving images in a way that takes up less space.",
+    "JPEG XL": "An image file type that can store pictures with or without throwing away picture detail.",
+    "4:4:4": "A color setting that keeps color detail at full resolution instead of cutting it in half.",
+    "lossy": "A way to make an image file smaller by discarding some of its detail.",
+    "lossless": "A way to make an image file smaller without discarding any of the original detail.",
+    "progressive rendering": "Showing an early version of an image while it loads, then filling in more detail.",
+    "SSIMULACRA2": "A score used to estimate how close an image looks to the original; higher means closer.",
+    "KBRA": "Kroll Bond Rating Agency: a firm that gives opinions on whether companies are likely to repay borrowed money.",
+    "credit rating": "A label that helps people judge whether a company is likely to pay back money it borrows.",
+    "junk rating": "A warning that a company may struggle to repay borrowed money.",
+    "investment-grade": "A rating category for companies judged more likely to repay borrowed money.",
+    "free cash flow": "Money a company has left after paying for its regular operations and other spending.",
+    "IPO": "Initial Public Offering: when a company first offers its shares for the public to buy.",
     "software rendering": "A way for the computer’s main chip to draw a game’s picture instead of handing the drawing to a graphics card.",
     "bilinear filtering": "A way to smooth a game’s blocky patterns by blending nearby colors, which can make them look blurry.",
     "CPU": "Central Processing Unit: the main chip that runs instructions in a computer.",
@@ -1285,11 +2059,9 @@
     "torrent": "A way of sharing files by downloading pieces from other people's computers.",
     "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
     "HealthKit": "Apple’s system for letting apps share health information with Apple Health.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "reverse-engineering": "Figuring out how a device or program works by examining it, rather than relying on its instructions.",
     "Bluetooth": "A wireless way for nearby devices, like a phone and watch, to connect.",
     "GLP-1": "Glucagon-like peptide-1: a body chemical involved in appetite and blood sugar; medicines that act on it can change how hungry someone feels.",
-    "IPO": "Initial Public Offering: when a company first offers its shares for the public to buy.",
     "Lean certificate": "A proof written in a format a computer can check step by step.",
     "formal verification": "Checking a claim using precise rules, often with a computer.",
     "CAS": "Computer Algebra System: software that can simplify and solve math expressions such as x² + 2x.",
