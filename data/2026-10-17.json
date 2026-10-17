@@ -1,0 +1,488 @@
+{
+  "date": "2026-10-17",
+  "cards": [
+    {
+      "id": 50122951,
+      "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+      "hn": "https://news.ycombinator.com/item?id=50122951",
+      "title": "How the Claude Code team does code review",
+      "time": 1792177487,
+      "points": 281,
+      "depth": [
+        {
+          "text": "the Claude Code team lets **machines** handle most review and saves people for **risky decisions**",
+          "tier": "simple"
+        },
+        {
+          "text": "Every pull request gets a **Claude review** before a person looks. Human review changes with the **risk**: a docs fix and an auto-updater change get different treatment. From June to September, merged pull requests more than doubled while the share that had to be reverted fell by **more than 40 percent**.",
+          "tier": "substance",
+          "data": [
+            [
+              "share that had to be reverted",
+              "fell by more than 40 percent"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: critics say people still need hands-on code understanding and this process may only suit labs with huge resources; supporters say this is the future and point to automated checks and tests.",
+      "comment_count": 258,
+      "terms": [
+        "pull request",
+        "revert",
+        "feature flag",
+        "merge queue",
+        "CI"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude Code",
+        "Claude",
+        "Boris Cherny",
+        "Addy Osmani",
+        "Morgan Westlee Lunt",
+        "Qing Wang",
+        "GitHub"
+      ],
+      "comments": [
+        {
+          "by": "status_quo69",
+          "text": "No wonder most people at Anthropic believe our jobs are in jeopardy, they've already made a system wherein the machines are treating them like pets. I really don't get the tendency here from Anthropic to describe what's most likely churn? A high pressure amount of changes/PRs a day on a TUI to wrap a while loop? I'm not going to be a reductionist here so I'm going to cut it off there, I'm…"
+        },
+        {
+          "by": "avinoth",
+          "text": "This is like one of Google’s infrastructure blog. Google scale things are only relevant and appropriate for them. We had lots of bitter lessons from smaller engineering teams following the process with the justification that “this is how Google does it”. Similarly, Anthropic can afford to do this because they have virtually unlimited tokens and labs to train models for their specific usecase. The…"
+        },
+        {
+          "by": "mk12",
+          "text": "I saw someone say the other day (in response to another blog post being well written) that Anthropic employees have a rule against using AI for writing/external comms? That seems clearly not the case here, normal people don't write like this: > Most of the path is automated; a person's attention goes where the risk is > The eval grows with every incident, and every change to the reviewer is…"
+        },
+        {
+          "by": "vb-8448",
+          "text": "No human can stay on par with 30k pull requests per day ... they simply don't have control on what's going on and rely on AI itself to do the job. PS: I really want to know what is the churn rate (and the cost per LOC) here. My gut is saying the cost per LOC is insane, and they are basically rewriting over and over the same code."
+        },
+        {
+          "by": "TNWin",
+          "text": "Anthropic has amazing models. But they should really stop commenting on software practices. Most of what they say seem out of touch with what's happening in software shops. A lot of it seems hype driven. And the entire message looks to be written by AI."
+        }
+      ],
+      "image": "https://claude.dev/blog/solving-code-review-at-anthropic/og.png"
+    },
+    {
+      "id": 50122431,
+      "url": "https://github.com/cobanov/PS5LM",
+      "hn": "https://news.ycombinator.com/item?id=50122431",
+      "title": "Llama.cpp on a jailbroken PS5: run any GGUF model natively on the console",
+      "time": 1792175555,
+      "points": 231,
+      "depth": [
+        {
+          "text": "someone turned a **jailbroken PS5** into a **home model server** that answers devices on your network",
+          "tier": "simple"
+        },
+        {
+          "text": "PS5LM loads a **GGUF model** onto the console's GPU and serves it to laptops, phones and coding tools. Its GPU has **11.4 GB of shared memory** for the model and its context; it requires a jailbroken PS5 on firmware **7.00 to 13.60**, with payloads loaded.",
+          "tier": "substance",
+          "data": [
+            [
+              "shared memory for the model and its context",
+              "11.4 GB"
+            ],
+            [
+              "required firmware",
+              "7.00 to 13.60"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see a spare PS5 as useful for long-running AI tasks; others say its limited memory makes it entirely useless.",
+      "comment_count": 62,
+      "terms": [
+        "GGUF",
+        "GPU",
+        "jailbroken",
+        "firmware",
+        "payloads",
+        "llama.cpp"
+      ],
+      "entities": [
+        "PS5LM",
+        "llama.cpp",
+        "GGUF",
+        "Qwen",
+        "OpenAI",
+        "Anthropic",
+        "Claude Code"
+      ],
+      "comments": [
+        {
+          "by": "Rabbit504030201",
+          "text": "The project's primary site should not be GitHub, and I am serious. Playstation 5 is not some historical curiosity and Sony might strike the page down any hour now. Those projects should default to hosts less geared toward corporate governancy; custom internet domain being the first requirement."
+        },
+        {
+          "by": "xnx",
+          "text": "I've never even considered getting a PS5, but hackers converting a locked-down appliance into a general purpose computer has me really considering."
+        },
+        {
+          "by": "jjcm",
+          "text": "Even though it only runs qwen 3.8 27b at a 2 bit quant, it's still highly viable, especially for things where you just need a constant token stream of slightly below average intelligence, ie this would be great for things like: - monitoring server error rates - reviewing security footage - watching plant growth / controlling watering etc. Any long running task you can now just slap a PS5 on it…"
+        },
+        {
+          "by": "pwython",
+          "text": "With this in mind, having LLM-powered NPCs would be a beautiful thing. There's been limited testing on PC games (PUBG Ally), but I can imagine it will be the standard."
+        },
+        {
+          "by": "shiftpgdn",
+          "text": "Conceivably this should also work on the BC250 cards, which are ex-cryptocurrency mining motherboard built around AMD's \"Cyan Skillfish\" APU which is a cut-down version of the PlayStation 5's custom silicon. You can still pick them up on ebay for $150-$200."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/a0c650a8eac99946a58a1b0083e190cda37b417b6e42a57df7517b47f2519469/cobanov/PS5LM"
+    },
+    {
+      "id": 50124251,
+      "url": "https://github.com/home-assistant/home-assistant.io/issues/49314",
+      "hn": "https://news.ycombinator.com/item?id=50124251",
+      "title": "I never authorized an integration that scans my secrets",
+      "time": 1792182821,
+      "points": 209,
+      "depth": [
+        {
+          "text": "Home Assistant checks **password options** against **Have I Been Pwned**, and users want **opt-in**",
+          "tier": "simple"
+        },
+        {
+          "text": "The Supervisor hashes password-marked app options locally and sends only the **first 5 characters** of the SHA-1 hash to Have I Been Pwned; matching happens **on your own instance**. The check can be **turned off** with `ha security options --pwned=false`.",
+          "tier": "substance",
+          "data": [
+            [
+              "hash prefix sent",
+              "first 5 characters"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: critics say even a hash prefix needs explicit opt-in; maintainers and supporters say local hashing and matching protect the original passwords.",
+      "comment_count": 170,
+      "terms": [
+        "Supervisor",
+        "SHA-1",
+        "hash",
+        "Have I Been Pwned (HIBP)",
+        "k-anonymity"
+      ],
+      "entities": [
+        "Home Assistant",
+        "Supervisor",
+        "Have I Been Pwned",
+        "GitHub"
+      ],
+      "comments": [
+        {
+          "by": "eranation",
+          "text": "- Should a password manager warn me about reused passwords without sending things out without opt in? yes - Should a password manager send even one byte of my data to any service, regardless of whether it is for a good intention and mathematically proven to be \"safe\" without opt in? I'd say no. - So would any other product out there, be it a smart home manager or a toaster, send any of of my…"
+        },
+        {
+          "by": "frenck",
+          "text": "Frenck here, I'm the one who replied on that issue. My replies there were more dismissive than they should have been. My apologies. I've posted a follow-up on the issue. As it turns out, the check can already be turned off after all: ha security options --pwned=false\nIt has been part of the Supervisor for years and checks app options that are marked as passwords. A recent release fixed the…"
+        },
+        {
+          "by": "janice1999",
+          "text": "Toxic developers turned me off Home Assistant. The same developer is the star of this issue: https://github.com/NixOS/nixpkgs/pull/126326 Related discussion: https://news.ycombinator.com/item?id=27505277"
+        },
+        {
+          "by": "rubinlinux",
+          "text": "As I understand it. There is research published which suggests HIBP type password checking schemes DO give meaningful signal to potential attackers. EG https://d0nut.medium.com/attacks-on-applications-of-k-anonym... and http://cablej.io/blog/k-anonymity/ It is absolutely not OK to participate in this scheme on a users behalf without their affirmative consent. You simply cant know the context of…"
+        },
+        {
+          "by": "jackpepsi",
+          "text": "You may find this unasked for scan humiliating, but we can mathematically prove we're not humiliating you. Any feelings of discomfort or humiliation are therefore invalid and should be set aside. Edit: I'm sure a greater good argument can be made. I just don't think they are making it in a way that justifies the invasiveness."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/9977c9b9ba61ac411f0c19dc08b23b5e3b04db4e846964b8f8dc42142f1e1f70/home-assistant/home-assistant.io/issues/49314"
+    },
+    {
+      "id": 50122034,
+      "url": "https://www.arrl.org/arrlletterissue?issue=2026-10-15#eBay-Restricts-Listings-of-Radio-Equipment_-But-Exempts-Ham-Band-Only-Gear",
+      "hn": "https://news.ycombinator.com/item?id=50122034",
+      "title": "eBay Restricts Listings of Radio Equipment, but Exempts Ham-Band-Only Gear",
+      "time": 1792173977,
+      "points": 195,
+      "depth": [
+        {
+          "text": "eBay is restricting **radio listings**, but **ham-band-only gear** gets a pass",
+          "tier": "simple"
+        },
+        {
+          "text": "Under the new rules, equipment requiring FCC authorization must have its **FCC ID number** submitted to the marketplace and posted with its listing. eBay says devices operating **only on amateur radio frequencies** don't need that authorization; two-way VHF/UHF radio equipment that can operate outside those bands needs **FCC certification**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say the restrictions help keep hacked radios off bands users aren't allowed to use; others argue eBay shouldn't restrict equipment that can be legally used with a license.",
+      "comment_count": 154,
+      "terms": [
+        "FCC",
+        "FCC ID",
+        "ham band",
+        "VHF/UHF",
+        "RF"
+      ],
+      "entities": [
+        "eBay",
+        "FCC",
+        "ARRL"
+      ],
+      "comments": [
+        {
+          "by": "eddythompson80",
+          "text": "I always found the difference between ham radio operators and computer hacker community interesting. There is obvious large overlap. Both are nerdy and techy and attract similar base groups. But the ham space is dominated by people who want to be \"good citizens\" through collective action, while computer hacker is more about cyberpunk \"if I could do it, then it's allowed\". Perhaps it's the…"
+        },
+        {
+          "by": "0x1ch",
+          "text": "Why is eBay acting as the FCC? I can still buy lasers that will rip through your retina in the blink of a eye from eBay (lol). The equipment is completely legal to own and operate, and transmit with the proper licensing (which is not required to purchase said equipment)."
+        },
+        {
+          "by": "nubinetwork",
+          "text": "The purpose of the restriction is to keep people from using hacked baofengs to chat on bands a) they're not allowed to use unlicensed b) could potentially already be in use by another service eg EMS/fire/police."
+        },
+        {
+          "by": "tfwnopmt",
+          "text": "For people that didn't read the article, listings will need to include the FCC ID. So most consumer goods will still be available."
+        },
+        {
+          "by": "krunck",
+          "text": "It appears to be part of the \"we can't trust anything from China\" project. There do appear to be exceptions for low volume sellers."
+        }
+      ],
+      "image": "https://www.arrl.org/files/image/About_ARRL/ARRL_logo_with_title.jpg"
+    },
+    {
+      "id": 50122878,
+      "url": "https://alexwang.ai/posts/associative-memory/",
+      "hn": "https://news.ycombinator.com/item?id=50122878",
+      "title": "You could have invented transformers from memory",
+      "time": 1792177277,
+      "points": 196,
+      "depth": [
+        {
+          "text": "someone shows how you could **build up transformers** by treating each layer as a **memory store**",
+          "tier": "simple"
+        },
+        {
+          "text": "It starts with an **outer-product store**, treats MLPs as memory stores, then explains **self-attention** as a store whose keys and values come from context tokens. For random keys and values, it estimates **about 1.2 million memories** when querying a stored key at β = √d_k = 8; scaling β with log M lets distinct-key capacity grow essentially without bound.",
+          "tier": "substance",
+          "data": [
+            [
+              "memory-store capacity",
+              "about 1.2 million memories"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some praise the article's accessible math; others say the notation and lack of a concrete example make it hard to follow.",
+      "comment_count": 57,
+      "terms": [
+        "transformer",
+        "outer-product memory store",
+        "MLP",
+        "self-attention",
+        "key-value pair",
+        "softmax",
+        "non-parametric",
+        "interference-to-signal ratio"
+      ],
+      "entities": [
+        "Alex Wang",
+        "Transformers"
+      ],
+      "comments": [
+        {
+          "by": "ketothekingdom",
+          "text": "Hey author here! I have a short summary here if people find it helpful: https://x.com/heyyalexwang/status/2111158818730397932?s=46"
+        },
+        {
+          "by": "yoz-y",
+          "text": "Would be nice if articles defined the requirements to be a “you”."
+        },
+        {
+          "by": "sixdimensional",
+          "text": "This sparks a thought that I have not seen revisited in the LLM age - memristors [1]. [1] https://en.wikipedia.org/wiki/Memristor"
+        },
+        {
+          "by": "vatsachak",
+          "text": "Great article. My favorite fact about \"transformers as a hopfield network\" is that transformers are so good at memorizing that they only need one step to find a suitable memory as opposed to multiple steps for a vanilla hopfield network"
+        },
+        {
+          "by": "sailfast",
+          "text": "This is a really interesting article! While I can’t profess to understand all the math it is a great way to demonstrate it. I recall awhile back hearing someone ask whether intelligence was actually the same or similar to “compression” or storing all of this knowledge in weights - IE the ability to create something from reason or weights or relationships / connections. This article makes it even…"
+        }
+      ],
+      "image": "https://alexwang.ai/images/share-card_hu_ba29a66ace5a286c.jpg"
+    },
+    {
+      "id": 50118977,
+      "url": "https://calif.io/research/big-fish",
+      "hn": "https://news.ycombinator.com/item?id=50118977",
+      "title": "Big Fish: Exploiting a 37-Year-Old Kernel Bug in OpenBSD",
+      "time": 1792161842,
+      "points": 173,
+      "depth": [
+        {
+          "text": "someone exploited a 37-year-old **OpenBSD bug** to get a **root shell**",
+          "tier": "simple"
+        },
+        {
+          "text": "A shared-memory attachment counter was a signed 16-bit short; repeated process forks could push it past **32,767** and make it wrap negative. Combined with a separate **out-of-bounds write** in the kernel, that enabled local privilege escalation to **root**; the issues were addressed in errata 026 and 018.",
+          "tier": "substance",
+          "data": [
+            [
+              "counter maximum",
+              "32,767"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some praised the graphics; others found the AI-generated graphic a turnoff.",
+      "comment_count": 48,
+      "terms": [
+        "kernel",
+        "shared memory",
+        "integer overflow",
+        "use-after-free",
+        "local privilege escalation",
+        "root shell"
+      ],
+      "entities": [
+        "OpenBSD",
+        "Calif",
+        "BSD",
+        "NetBSD",
+        "FreeBSD"
+      ],
+      "comments": [
+        {
+          "by": "bch",
+          "text": "Props for the OpenBSD Release -style graphics. Looking forward to the theme song."
+        },
+        {
+          "by": "phendrenad2",
+          "text": "Interestingly, looks like this was accidentally fixed in NetBSD during a rewrite of that code in August of 1999."
+        },
+        {
+          "by": "ozereray1",
+          "text": "It’s remarkable that a bug survived 37 years in one of the most heavily audited codebases, which shows how hard some kernel bugs are to catch by review alone. Do you think fuzzing or static analysis could realistically have found this class of bug, or did it need a human thinking about the exploit primitive?"
+        },
+        {
+          "by": "shevy-java",
+          "text": "Poor OpenBSD guys. Now they have to acknowledge THREE exploits\n(in total) on their homepage."
+        },
+        {
+          "by": "ewy1",
+          "text": "the ai-generated graphic before any content is presented is kind of a turnoff"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50084790,
+      "url": "https://www.michelecoscia.com/?p=2613",
+      "hn": "https://news.ycombinator.com/item?id=50084790",
+      "title": "The Economic Complexity of the Western Roman Empire",
+      "time": 1791970329,
+      "points": 150,
+      "depth": [
+        {
+          "text": "someone used **Latin inscriptions** to estimate the **economic complexity** of the Western Roman Empire",
+          "tier": "simple"
+        },
+        {
+          "text": "They used **LIST**, a collection of Latin inscriptions with location coordinates and transcribed text, to estimate occupations across Roman provinces. Comparing **Economic Complexity Index** values for about 23 modern countries with today’s figures, they found a **significant correlation**—but can’t tell whether it’s causal or explained by a shared factor.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: the article points to women being undercounted in the inscriptions; one commenter says children’s erasure from historical records is more egregious.",
+      "comment_count": 37,
+      "terms": [
+        "ECI",
+        "Spearman rank correlation",
+        "status bias",
+        "historiography bias"
+      ],
+      "entities": [
+        "Michele Coscia",
+        "Petra Heřmánková",
+        "Matteo Mazzamurro",
+        "Tom Brughmans",
+        "LIST",
+        "GIST",
+        "npj Complexity",
+        "Economic Complexity Index",
+        "Latin",
+        "Crusader Kings III",
+        "Cato the Elder"
+      ],
+      "comments": [
+        {
+          "by": "noosphr",
+          "text": ">honored tradition of ignoring the fact that women exist and do stuff Yes, they birthed and raised children. As someone raising children, and having been a child myself, the erasure of children from the historical record by academics is far more egregious than ignoring what a fraction of women did."
+        },
+        {
+          "by": "robertacion",
+          "text": "The last paragraph is a reference to Cato the Elder.\nhttps://en.wikipedia.org/wiki/Carthago_delenda_est \"As a third and final action point, I am of the opinion that Carthage must be destroyed.\""
+        },
+        {
+          "by": "JumpCrisscross",
+          "text": "If this is your vibe, Erdkamp’s The Grain Market in the Roman Empire is worth a read. It’s easy to project modern markets onto ancient empires. But proper capital market are just a break from ancient ways of thinking in ways that are surprising."
+        },
+        {
+          "by": "zormino",
+          "text": "I'm curious if that third factor is just geography"
+        },
+        {
+          "by": "whywouldyoucare",
+          "text": "https://en.wikipedia.org/wiki/Monte_Testaccio It is 35 metres high now, 20,000 or so m^2, after 1500 years, and composed of ancient pottery fragments (the trade went sharply down after the 5th century A.D.) Caesar reports of a wall more than 20 km long, several meters high, with a canal in front of it, constructed by a legion or two, I don't remember now exactly, in two weeks time. Maybe an…"
+        }
+      ],
+      "image": null
+    }
+  ],
+  "glossary": {
+    "pull request": "A proposal to add your code changes to a shared project, usually asking others to review them first.",
+    "revert": "Undo a code change, usually after it causes a problem.",
+    "feature flag": "A switch developers can use to turn a feature on or off without removing it from the program.",
+    "merge queue": "A waiting line that checks code changes before adding them to the shared project.",
+    "CI": "Continuous integration: automatic checks that run when developers change code, helping catch problems early.",
+    "GGUF": "GPT-Generated Unified Format: a file type for saving an AI model so compatible programs can use it.",
+    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "jailbroken": "Modified to let a device run software its maker normally restricts.",
+    "firmware": "The built-in software that tells a device's hardware how to work.",
+    "payloads": "Small programs loaded onto a hacked console to make extra features work.",
+    "llama.cpp": "Software that runs language models on a device.",
+    "Supervisor": "The part of Home Assistant that checks app options marked as passwords.",
+    "SHA-1": "A hashing method Git has used to identify stored content.",
+    "hash": "A label calculated from data that Git uses to locate stored content.",
+    "Have I Been Pwned (HIBP)": "A service that checks whether a password appears in known leak lists.",
+    "k-anonymity": "A privacy method that sends a group of possible matches, making it harder for a service to tell which one is yours.",
+    "FCC": "Federal Communications Commission: the US agency that sets rules for radio equipment.",
+    "FCC ID": "A number used to identify a radio device in the US government's equipment-approval system.",
+    "ham band": "Radio frequencies set aside for licensed amateur-radio operators to communicate.",
+    "VHF/UHF": "Very High Frequency/Ultra High Frequency: names for two ranges of radio waves used by some two-way radios.",
+    "RF": "Radio frequency: radio waves used to carry signals through the air.",
+    "transformer": "A kind of language model that can weigh how different words in a passage relate to each other.",
+    "outer-product memory store": "A simple store that combines a key and its value in a table so later inputs can look up the information.",
+    "MLP": "Multi-layer perceptron: a part of the model that processes information through several linked steps.",
+    "self-attention": "A way for an AI to work out which other parts of the text matter most to each part it is reading.",
+    "key-value pair": "A pair where a key helps find the information attached to it, like a label and what it points to.",
+    "softmax": "A calculation that turns a set of scores into weights that add up to one.",
+    "non-parametric": "Here, a memory store whose contents come from the current context instead of being stored in learned weights.",
+    "interference-to-signal ratio": "A comparison of unwanted overlap from other memories with the useful memory being recalled.",
+    "kernel": "A small program that carries out a calculation on a computer's graphics chip or processor.",
+    "shared memory": "A part of a computer's memory that multiple running programs can use to share information.",
+    "integer overflow": "When a number gets bigger than its storage allows and wraps around to a different value.",
+    "use-after-free": "Trying to use data after it has been discarded.",
+    "local privilege escalation": "A way for someone already on a computer to gain more control, such as administrator access.",
+    "root shell": "A place to type commands with the highest level of control over a computer.",
+    "ECI": "Economic Complexity Index: a score the article uses to compare how complex different economies are.",
+    "Spearman rank correlation": "A way to check whether two groups of things tend to appear in a similar order.",
+    "status bias": "A skew in the records because inscriptions were more likely to mention the deceased’s most honorable jobs.",
+    "historiography bias": "A skew caused by which inscriptions were found and later digitized."
+  }
+}
