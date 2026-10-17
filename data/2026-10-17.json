@@ -2,6 +2,307 @@
   "date": "2026-10-17",
   "cards": [
     {
+      "id": 50127979,
+      "url": "https://llmspeed.dev/",
+      "hn": "https://news.ycombinator.com/item?id=50127979",
+      "title": "Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware",
+      "time": 1792211813,
+      "points": 175,
+      "depth": [
+        {
+          "text": "someone built a **simulator** to estimate local model speed before you buy **hardware**",
+          "tier": "simple"
+        },
+        {
+          "text": "It estimates speed for a **short prompt** on one device; measured figures come from **community benchmarks**, while others are derived from similar setups or projected from specs. Some commenters question how well that reflects **real usage**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some find it useful for judging whether buying hardware is worthwhile; others say the estimates can miss real workloads or disagree with their own results.",
+      "comment_count": 58,
+      "terms": [
+        "local LLM",
+        "benchmark",
+        "quantization",
+        "context window",
+        "KV cache",
+        "VRAM"
+      ],
+      "entities": [
+        "llmspeed",
+        "AMD",
+        "Ryzen",
+        "Radeon",
+        "NVIDIA",
+        "RTX Spark",
+        "H100",
+        "H200",
+        "r/LocalLLaMA",
+        "localscore.ai",
+        "GitHub"
+      ],
+      "comments": [
+        {
+          "by": "lopotubez",
+          "text": "I feel like these types of benchmarks mostly test what the mainstream tells you is possible and or works. You rarely get to hear the different implementations of inference engines, different types of setups (e.g. hybrid ones or older hardware) and their pros and cons. Also it seems these were tested with very minimal token usage. Currently on my 9 year old laptop with a GTX 1070 Max-Q 8GB vram…"
+        },
+        {
+          "by": "Jabdoa2",
+          "text": "By running vllm at work I learned that you will usually outperform benchmarks which you will find on the internet. Mostly by running proper parameter tuning. So you get impressive numbers. Still in reality those numbers do not tell the whole truth. We found that real usage is more 60k-140k prompt with a few k of output for realistic agentic coding workloads. Most of the time that will give you…"
+        },
+        {
+          "by": "tom_alexander",
+          "text": "This is great. It solves two of my issues: 1. It is difficult to figure out if dropping $10k+ on hardware will make a meaningful difference for running local models.\n2. Downloading each model and each quantization of that model to see the speed seems rude to free services like hugging face, so now I can see things like \"with my hardware, going to a Q8 only results in 3 more tokens per second\"\nMy…"
+        },
+        {
+          "by": "thadk",
+          "text": "It is nice to have simulated confirmation of the M4 Max 128gb limitations on Gemma4 31B vs Gemma4 26B A4B at Q4: Time to first token (TTFT) on 5,687 tokens, like pasting a short code block into the prompt, takes 36 seconds vs 4.7 seconds. It also breaks down the seconds for each step like KV and prefilling. Gemma4 31B TTFT on the M5 Max 128gb with same setup is showing as 19 seconds."
+        },
+        {
+          "by": "hizlikovboy27",
+          "text": "around this time, i was thinking about running a local LLM for the company i work for. i'm trying to figure out what kind of hardware i'd need and what level of performance i could expect. i tried a few things on your website but how much do the results reflect real world usage? in my use case, the model might need to analyze a given task first then generate and execute a database query and…"
+        }
+      ],
+      "image": "https://llmspeed.dev/og.png"
+    },
+    {
+      "id": 50121939,
+      "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
+      "hn": "https://news.ycombinator.com/item?id=50121939",
+      "title": "Designing more efficient quantum circuits with Claude",
+      "time": 1792173618,
+      "points": 159,
+      "depth": [
+        {
+          "text": "Claude found ways to make **eight quantum circuits** use **fewer qubits and gates**",
+          "tier": "simple"
+        },
+        {
+          "text": "Across eight computational tasks, Claude proposed circuits, got correctness checks and cost scores from an evaluator, then revised its designs. For elliptic-curve point addition, one design used **12% more qubits** but **17x fewer gates** than the smallest previous design. A separate decoder redesign cut gate count by a factor of 12 compared with Google’s previous construction.",
+          "tier": "substance",
+          "data": [
+            [
+              "qubits vs. smallest previous point-addition design",
+              "12% more qubits"
+            ],
+            [
+              "gates vs. smallest previous point-addition design",
+              "17x fewer gates"
+            ],
+            [
+              "decoder gate reduction",
+              "a factor of 12"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see a useful task for AI to automate; others question whether it preserves the same computation and dispute Anthropic’s account of the work.",
+      "comment_count": 34,
+      "terms": [
+        "quantum circuit",
+        "qubit",
+        "gate",
+        "superposition",
+        "modular inversion",
+        "divsteps",
+        "syndrome",
+        "decoder"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude Mythos 5",
+        "Andi Gu",
+        "Alek Kemeny",
+        "Susanne Yelin",
+        "Mikhail Lukin",
+        "Harvard University",
+        "QuEra Computing",
+        "Google Quantum AI",
+        "Python",
+        "Lean"
+      ],
+      "comments": [
+        {
+          "by": "keeganryan",
+          "text": "This builds on the Kickmix quantum language from Google. Essentially, Kickmix is an assembly language for classically simulatable quantum circuits, and finding more efficient circuits is basically a game of code golf with the assembly instructions. That means LLMs benefit from the closed loop of verification, and can rapidly test and discard ideas. It's not too surprising that previous academics…"
+        },
+        {
+          "by": "cmrx64",
+          "text": "(warning: pile of AI) I tried autoformalizing my advisor’s decades of papers in https://github.com/emberian/graphplay he studied “Grover-like” problems that evade some of the no-go theorems. these AI are a lot better at connecting domains and ideas for algorithmic insight than we have previously had available (the state of the art being not much better than Llull’s circles). I expect we’ll see a…"
+        },
+        {
+          "by": "kingcauchy",
+          "text": "This is definitely a level of universal paper clips we’re on… This is the level where the AI develops quantum computing to make itself smarter (in the game)"
+        },
+        {
+          "by": "adastra22",
+          "text": "> In other cases, it found that existing circuits included costly components that were needed to handle only extremely rare inputs, and it redesigned them without those components. So it’s not performing the same computation…"
+        },
+        {
+          "by": "JacobAsmuth",
+          "text": "I'm normally more of an AI hater but this just seems objectively good so I'll ignore it and move on"
+        }
+      ],
+      "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/cc389d90b468ebc86011f6642099dfad9a4a757f-2000x1125.jpg"
+    },
+    {
+      "id": 50118828,
+      "url": "https://www.worksinprogress.news/p/porcelain",
+      "hn": "https://news.ycombinator.com/item?id=50118828",
+      "title": "What on Earth Is Dekton?",
+      "time": 1792161103,
+      "points": 152,
+      "depth": [
+        {
+          "text": "someone explains how **Dekton** is **basically porcelain**, but made tougher for kitchen surfaces",
+          "tier": "simple"
+        },
+        {
+          "text": "Cosentino invented it in 2013; it’s made from ground porcelain, glass and quartz, then pressed with **25,000 metric tons** of force and hardened at **1,200 degrees centigrade**. Making it took **six years and almost $200 million**, and the process nearly removes porcelain’s usual brittleness.",
+          "tier": "substance",
+          "data": [
+            [
+              "invention year",
+              "2013"
+            ],
+            [
+              "press pressure",
+              "25,000 metric tons"
+            ],
+            [
+              "hardening temperature",
+              "1,200 degrees centigrade"
+            ],
+            [
+              "development time",
+              "six years"
+            ],
+            [
+              "development cost",
+              "almost $200 million"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say Dekton shrugs off heat, spills and scratches; others say focused impacts can make it shatter.",
+      "comment_count": 55,
+      "terms": [
+        "materials science",
+        "kaolin",
+        "kaolinite",
+        "hydraulic press",
+        "silicosis",
+        "thermal shock"
+      ],
+      "entities": [
+        "Dekton",
+        "Cosentino",
+        "Charles C Mann",
+        "Works in Progress"
+      ],
+      "comments": [
+        {
+          "by": "zebrafruit",
+          "text": "It’s interesting that the focus is on porcelain as a cooking surface but misses the biggest reasons for it displacing engineered quartz or granite for countertops. There’s a few factors at play here leading to the prominence of porcelain. For the induction cooktops, you can cut porcelain slabs to 6mm compared to your 3cm (sometimes 2cm) quartz and granite. This is also why you can use it for…"
+        },
+        {
+          "by": "icodestuff",
+          "text": "I wanted Dekton for my new countertops. Its list of resistances to various kitchen mishaps was extremely impressive. Every other material we looked at has at least one weakness. Dekton was marketed as having none. It also looked quite good, being available in lots of colors and patterns. The real drawback was going to be the price. It's basically the most expensive countertop material (or was, 2…"
+        },
+        {
+          "by": "throwaway219450",
+          "text": "The article misses an important bit of context (imo) that low thermal expansion glasses like CERAN have been around for ages and anyone who’s used an induction or a glass top stove would be familiar. However you can now get completely hidden stoves that look like stone countertops. If you’re not in the market for a kitchen, or know anyone people who recently remodeled it’s reasonable to not know…"
+        },
+        {
+          "by": "tnolet",
+          "text": "Had a new kitchen and bathroom installed last year. Most surfaces (kitchen counter, shower and general bath room) all Dekton or one of Cosentino’s other lines. I was apprehensive: it is expensive and “not real stone”. Super happy with it. Spilling red wine, putting sizzling hot pans on it, accidentally dropping big pans on it. Dekton brushes it off. Go into debt if you have to."
+        },
+        {
+          "by": "ifh-hn",
+          "text": "We're getting a new kitchen and this is all my wife is talking about. Good help me."
+        }
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!eBd_!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1dfe9441-3a38-4e69-9127-c829b4777e7f_2560x1707.jpeg"
+    },
+    {
+      "id": 50131256,
+      "url": "https://www.pv-magazine.com/2026/09/29/solar-surpasses-nuclear-power-globally-for-first-time/",
+      "hn": "https://news.ycombinator.com/item?id=50131256",
+      "title": "Solar surpasses nuclear power globally for first time – pv magazine Global",
+      "time": 1792245661,
+      "points": 151,
+      "depth": [
+        {
+          "text": "**solar** generated **more electricity than nuclear** globally for the first time, with wind also gaining ground",
+          "tier": "simple"
+        },
+        {
+          "text": "The report says monthly solar generation passed nuclear in **April 2025**, then beat it for the year as solar output grew **30%** and nuclear output rose 1.1%. Newer IEA PVPS data put 2025 global PV additions at **around 690 GW**, about 180 GW above the report’s figure.",
+          "tier": "substance",
+          "data": [
+            [
+              "solar generation growth",
+              "30%"
+            ],
+            [
+              "nuclear output growth",
+              "1.1%"
+            ],
+            [
+              "2025 global PV additions",
+              "around 690 GW"
+            ],
+            [
+              "PV additions above WNISR figure",
+              "about 180 GW"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: solar boosters celebrate its rise; nuclear supporters say nuclear is still worth building and solar has limits.",
+      "comment_count": 71,
+      "terms": [
+        "PV",
+        "GW",
+        "TWh",
+        "SMRs",
+        "BESS",
+        "capacity factor"
+      ],
+      "entities": [
+        "World Nuclear Industry Status Report",
+        "Mycle Schneider",
+        "IEA PVPS",
+        "Holtec",
+        "Fermi",
+        "Ember",
+        "pv magazine"
+      ],
+      "comments": [
+        {
+          "by": "ACCount39",
+          "text": "It is a shame that nuclear power has stagnated - we could have been moving towards fossil fuel free grid half a century ago. We've lost decades of progress there. But it's a good thing that solar power is coming into its own more and more. Late is better than never."
+        },
+        {
+          "by": "gryfft",
+          "text": "> From March 2025 through June 2026, either solar or wind individually generated more electricity than nuclear every month. In March, April and May 2026, both technologies independently surpassed nuclear generation. > Global solar capacity increased by 510 GW to 2,383 GW, up 27% year on year, while wind added a record 159 GW to reach 1,291 GW, an increase of 14%. By comparison, installed nuclear…"
+        },
+        {
+          "by": "philipkglass",
+          "text": "Note that this is actual generated terawatt hours. Nuclear power has a substantially higher capacity factor, but solar has been growing so rapidly that it has taken the lead on generated output too. Wind is just about to surpass nuclear generation also, though solar is racing ahead much faster. The next big milestone, not to be reached for several years at the present rate, would be solar…"
+        },
+        {
+          "by": "jl6",
+          "text": "Always good to see the future arriving, but the job is not done yet by far. We need to be sure not to take our foot off the gas (figuratively of course). We need to accelerate clean energy generation even more so we can replace not just dirty electricity sources but dirty energy sources entirely, and produce synthetic petrochemical feedstocks. Modernity runs on hydrocarbons-as-chemicals, not just…"
+        },
+        {
+          "by": "jfengel",
+          "text": "On a monthly basis. News articles about solar power tend to quote maximum capacity, confusing the issue. This is about energy rather than power, aggregated over a month, so it's a somewhat more meaningful statement."
+        }
+      ],
+      "image": "https://www.pv-magazine.com/wp-content/uploads/2026/09/hans-ott-4e4ZKnPbZAI-unsplash-scaled.jpg"
+    },
+    {
       "id": 50106747,
       "url": "https://www.paperinstruments.com/ultramarine",
       "hn": "https://news.ycombinator.com/item?id=50106747",
@@ -853,10 +1154,35 @@
     }
   ],
   "glossary": {
+    "local LLM": "Large language model: an AI that works with text; a local one runs on your own device.",
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "quantization": "A way to make a model use less computing power by representing its internal numbers less precisely.",
+    "context window": "The amount of text and information an AI can take into account at one time.",
+    "KV cache": "A store of earlier model calculations that it can reuse instead of doing them again.",
+    "VRAM": "The memory inside a graphics card that holds information the AI needs while running.",
+    "quantum circuit": "A sequence of operations that tells a quantum computer how to calculate.",
+    "qubit": "A unit of quantum information, described here as a possible basic ingredient of reality.",
+    "gate": "A basic operation that a quantum computer applies to qubits during a calculation.",
+    "superposition": "When a network uses the same internal parts to represent several different things, making them harder to tell apart.",
+    "modular inversion": "Division with numbers that wrap back around at a fixed limit.",
+    "divsteps": "A method that repeatedly simplifies a pair of numbers to find a modular inverse.",
+    "syndrome": "A compact summary of errors that helps a decoder work out where they occurred.",
+    "decoder": "A program that uses a summary of errors to find where they occurred and what they were.",
+    "materials science": "The study of how a material’s makeup affects its physical properties.",
+    "kaolin": "A soft, pale clay used in making porcelain.",
+    "kaolinite": "A mineral found in kaolin clay.",
+    "hydraulic press": "A machine that uses liquid pressure to squeeze something with great force.",
+    "silicosis": "A lung disease caused by breathing in silica dust.",
+    "thermal shock": "Damage caused when a material experiences a sudden temperature change.",
+    "PV": "Photovoltaic: solar panels that turn sunlight into electricity.",
+    "GW": "Gigawatt: a way to describe how much power a source can produce at a moment.",
+    "TWh": "Terawatt-hour: a way to count a huge amount of electricity produced or used.",
+    "SMRs": "Small modular reactors: smaller nuclear plant designs meant to be built in sections.",
+    "BESS": "Battery energy storage system: equipment that saves electricity so it can be used later.",
+    "capacity factor": "How much electricity a plant makes over time compared with what it could make if it ran at full output.",
     "agentic model": "An AI that can take steps toward completing a task, rather than only replying to a prompt.",
     "reinforcement learning": "A way to train an AI by rewarding choices that work and discouraging choices that do not.",
     "base model": "The starting AI that someone builds on or adapts for a particular use.",
-    "benchmark": "A test people use to compare how well different tools do a task.",
     "context injection": "Adding extra information or instructions to what an AI sees before it responds.",
     "harness": "The surrounding code that gives an AI agent tools and a place to work, and checks what it does.",
     "guardrails": "Instructions that tell an AI how it should respond.",
@@ -872,7 +1198,6 @@
     "open weights": "The model's learned settings are available for people to download and run themselves.",
     "text-to-image": "Making a picture from a written description.",
     "multi-reference generation": "Making a new picture while using several supplied images as examples.",
-    "VRAM": "The memory inside a graphics card that holds information the AI needs while running.",
     "INT8": "A compact way to store a model's numbers that can reduce the memory needed to run it.",
     "step distilled model": "A version set up to make an image in fewer steps, which can make generation faster.",
     "sparse mixture-of-experts": "A model with many specialized parts that only uses some of them for each request.",
