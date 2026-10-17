@@ -2,6 +2,414 @@
   "date": "2026-10-17",
   "cards": [
     {
+      "id": 50133401,
+      "url": "https://twitter.com/opencode/status/2111516673953935833",
+      "hn": "https://news.ycombinator.com/item?id=50133401",
+      "title": "OpenCode Hacked: User credentials leaked",
+      "time": 1792260101,
+      "points": 385,
+      "depth": [
+        {
+          "text": "OpenCode says a **security breach** hit some **Console users**, but hasn’t explained what happened",
+          "tier": "simple"
+        },
+        {
+          "text": "OpenCode says **1.4% of OpenCode Console users** were affected and that it emailed them. It says the incident is ongoing, it can’t share more details yet, and it’s working with **Anthropic, OpenAI, and Google** to remediate.",
+          "tier": "substance",
+          "data": [
+            [
+              "users affected",
+              "1.4%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Some commenters suspect API keys were stolen; others say the post leaves that unclear and doesn’t explain who was affected.",
+      "comment_count": 67,
+      "terms": [
+        "distillation attack",
+        "API key",
+        "BYOK",
+        "supply chain attack"
+      ],
+      "entities": [
+        "OpenCode",
+        "OpenCode Console",
+        "OpenCode Zen",
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "OpenRouter",
+        "VirusTotal",
+        "Codex",
+        "Claude Code",
+        "X"
+      ],
+      "comments": [
+        {
+          "by": "pranshuchittora",
+          "text": "I am the author of this post. Looks like OpenCode fans / team is not happy with this post coming on the first page of HN. It has already been flagged by many.\nI never ask for upvotes, but would be great if you can upvote it.\nThanks!"
+        },
+        {
+          "by": "Ciantic",
+          "text": "I think every API key system should have endpoint \"invalidate_api_key\" this way whitehat hackers or the party who stored them could invalidate all keys in the case they leak. Now it is race against the time, and everybody got email, and everyone must act themselves."
+        },
+        {
+          "by": "computerex",
+          "text": "Why are my API keys in the workspace exposed? Does OpenCode send my API keys to their backend servers??? Was this a supply chain attack that infected the opencode program itself? What is going on?"
+        },
+        {
+          "by": "monster_truck",
+          "text": "Wait, is the openchode hack the cause of all the people complaining about their OAI usage getting drained/vanishing at alarming rates? That's pretty funny ngl. The way some of this place's employees post and act online, can't say I feel all that bad."
+        },
+        {
+          "by": "oldfuture",
+          "text": "https://news.ycombinator.com/item?id=50108261 that's why virustotal was flagging it then"
+        }
+      ],
+      "image": "https://pbs.twimg.com/profile_images/1973794620233433088/nBn75BTm_400x400.png"
+    },
+    {
+      "id": 50129947,
+      "url": "https://www.engadget.com/2288729/mapquest-will-now-show-you-where-flock-cameras-are-in-your-neighborhood/",
+      "hn": "https://news.ycombinator.com/item?id=50129947",
+      "title": "MapQuest will now show you where Flock cameras are in your neighborhood",
+      "time": 1792234771,
+      "points": 236,
+      "depth": [
+        {
+          "text": "MapQuest now maps **surveillance cameras** near you, including **license plate readers**",
+          "tier": "simple"
+        },
+        {
+          "text": "The layer includes cameras from Flock, Motorola Solutions, Genetec, Axis Communications and others, plus **license plate readers**; it sits beside traffic and incident layers. A commenter says the data is stored in **OpenStreetMap** via DeFlock and other apps, but warns **anyone can plot a camera** whether or not one is actually there.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some see it as useful for avoiding cameras; others say it normalizes surveillance.",
+      "comment_count": 38,
+      "terms": [
+        "LPR",
+        "OpenStreetMap"
+      ],
+      "entities": [
+        "MapQuest",
+        "Flock",
+        "Motorola Solutions",
+        "Vigilant",
+        "Genetec",
+        "Axis Communications",
+        "Axon",
+        "Leonardo",
+        "ELSAG",
+        "Neology",
+        "Rekor",
+        "PlateSmart",
+        "Ubicquia",
+        "Verkada",
+        "OpenStreetMap",
+        "DeFlock"
+      ],
+      "comments": [
+        {
+          "by": "K2h",
+          "text": "This shows the license plate readers i added last week on openstreetmap so we know where the data comes from. Nice render on their map - even shows camera direction i added generic LPR’s - and they show on mapquest, so be aware its not just flock on their map. To enable the view on mapquest, i could not figure it out on web, used ios app; layers / surveillance Ios app…"
+        },
+        {
+          "by": "emig647",
+          "text": "This is how you start getting the users back. The Lake Ontario naming situation pushed me to using them. It has been working great in CarPlay. My wife loved the unicorn. I get to avoid (or hunt) Flock cameras. Everyone wins."
+        },
+        {
+          "by": "willmeyers",
+          "text": "This data all stored in OpenStreetMap via DeFlock and other apps. One thing that should be said is that anyone can plot a camera via these apps whether or not one is actually there or not. I know that OSM community has been dealing with a lot Flock related vandalism because of these apps."
+        },
+        {
+          "by": "yboris",
+          "text": "Halloween is National DeFlock Day -- just spreading the good meme ;)"
+        },
+        {
+          "by": "BorisMelnik",
+          "text": "dam Mapquest? if they make a project that shows me directions, not photos of food at restaurants, ads for fast food, etc ill start using them"
+        }
+      ],
+      "image": "https://www.engadget.com/img/gallery/mapquest-will-now-show-you-where-flock-cameras-are-in-your-neighborhood/l-intro-1792159874.jpg"
+    },
+    {
+      "id": 50131213,
+      "url": "https://chillphysicsenjoyer.substack.com/p/making-chicken-transparent-using",
+      "hn": "https://news.ycombinator.com/item?id=50131213",
+      "title": "Making chicken transparent using Dorito dust",
+      "time": 1792245328,
+      "points": 208,
+      "depth": [
+        {
+          "text": "someone made chicken **transparent** with **Dorito dust**, and commenters asked if it was tasty",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says it uses **the dye** most commonly found in Dorito dust, not **crushed chips**; another asks if it’s tasty.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 59,
+      "terms": [
+        "sous vide",
+        "tartrazine"
+      ],
+      "entities": [
+        "Doritos",
+        "Cheetos",
+        "Tartrazine",
+        "Yellow 5",
+        "NileRed",
+        "MrGreenGuy",
+        "YouTube"
+      ],
+      "comments": [
+        {
+          "by": "waltbosz",
+          "text": "I'm trying to imagine the origin story for this science, and I feel like the most fun one is that somebody wanted to make Doritos flavored chicken and accidentally discovered that the marinade turned the chicken breast transparent."
+        },
+        {
+          "by": "masfuerte",
+          "text": "Author notes the difficulty of cutting thin slices of raw chicken. If you lightly freeze it (or freeze it and let it nearly defrost) it's much easier."
+        },
+        {
+          "by": "iforgotmypasswo",
+          "text": "Can I eat it? And is it tasty? I did not see answers to these important questions when reading the article."
+        },
+        {
+          "by": "iandanforth",
+          "text": "Translucent is a great word. Let's use it more!"
+        },
+        {
+          "by": "layer8",
+          "text": "Fun fact: Doritos don’t contain tartrazine in Europe (including the UK). It’s not banned, but food products containing it must be labelled with “may have an adverse effect on activity and attention in children” in the EU."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50100994,
+      "url": "https://furifont.antfu.me/",
+      "hn": "https://news.ycombinator.com/item?id=50100994",
+      "title": "Furifont, a Japanese font that shows furigana",
+      "time": 1792054110,
+      "points": 171,
+      "depth": [
+        {
+          "text": "someone made a **Japanese font** that shows **furigana**, though its readings can be wrong",
+          "tier": "simple"
+        },
+        {
+          "text": "The font uses **ligatures** to show furigana. Some commenters say readings are too **context-dependent** to trust; one reports 大学 got **incorrect furigana** after a line break, while others think it could help learners.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say context makes the readings unreliable; others say the font could help learners and in situations where Ruby tags are hard to use.",
+      "comment_count": 40,
+      "terms": [
+        "furigana",
+        "kanji",
+        "ligatures",
+        "Ruby tags",
+        "romaji",
+        "LLM"
+      ],
+      "entities": [
+        "Furifont",
+        "Japanese",
+        "Google Translate",
+        "Even Realities",
+        "Kindle",
+        "Pingtype",
+        "TrueType",
+        "Hiragana",
+        "Katakana"
+      ],
+      "comments": [
+        {
+          "by": "TazeTSchnitzel",
+          "text": "I think this is a rare “useful” abuse of font ligatures, and in that respect I think this is a cool project, but it's also a terrible idea that nobody should actually use, because Japanese kanji readings are famously ambiguous and context-dependent. The modal character has two different readings without counting those used in personal names, nor contextual slight changes to pronunciation. Some…"
+        },
+        {
+          "by": "shun_dev",
+          "text": "Really nice font! Native Japanese speaker here, and seeing furigana done purely in the font is very cool. One small thing on the Japanese version of the page: in the \"Ligatures do the work\" section, 合字 itself only gets じ over 字, and 合 has no reading. It should be ごうじ. I guess 合字 isn't in the dictionary, so it falls back to single kanji, and 合 is skipped because it has several readings."
+        },
+        {
+          "by": "teshigahara",
+          "text": "Automatic furigana is not really possible to be reliable considering readings heavily rely on context that can't be easily inferred, but I'm sure it will help some people who can't read very well."
+        },
+        {
+          "by": "paulsutter",
+          "text": "I want furigana on display glasses, like Even Realities. Since the application would know my vocabulary, it can show just the words that I'm not likely to know. Assuming you could hint the furigana from the application, the phonetic transcript would make it more accurate."
+        },
+        {
+          "by": "jwolfe",
+          "text": "This is very cool. Unfortunate that it gives the wrong pronunciation when words get split in a line wrap (e.g., 大学 got split between lines and changed to incorrect furigana for me)."
+        }
+      ],
+      "image": "https://furifont.antfu.me/og.png"
+    },
+    {
+      "id": 50132328,
+      "url": "https://www.universityofcalifornia.edu/news/new-study-shows-popular-glp-1-weight-loss-drug-may-slow-biological-aging",
+      "hn": "https://news.ycombinator.com/item?id=50132328",
+      "title": "GLP-1 may slow biological aging",
+      "time": 1792253421,
+      "points": 156,
+      "depth": [
+        {
+          "text": "a study found **semaglutide** may slow **biological aging** in adults with HIV",
+          "tier": "simple"
+        },
+        {
+          "text": "Researchers analyzed a clinical trial of **108 adults** with HIV-associated lipohypertrophy; about half got weekly semaglutide injections and the rest got placebo. The DunedinPACE clock measured a **9 % slower** pace of biological aging, but researchers stress this does not mean semaglutide reverses aging.",
+          "tier": "substance",
+          "data": [
+            [
+              "biological aging pace reduction",
+              "9 %"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: skeptics ask whether weight loss accounts for the effect and raise conflict-of-interest or side-effect concerns; others see promise in inflammation reduction and want more studies.",
+      "comment_count": 144,
+      "terms": [
+        "GLP-1",
+        "epigenetic clock",
+        "DNA methylation",
+        "lipohypertrophy",
+        "placebo",
+        "DunedinPACE"
+      ],
+      "entities": [
+        "Semaglutide",
+        "Ozempic",
+        "Wegovy",
+        "UC San Diego",
+        "Nature Communications",
+        "DunedinPACE",
+        "PCGrimAge",
+        "TruDiagnostic",
+        "Michael Corley"
+      ],
+      "comments": [
+        {
+          "by": "manlymuppet",
+          "text": "I'm always confused with these type of posts because I feel the scientists must know something I don't. Why is it always does GLP-1 help with [general health thing]? If I understand it correctly, GLP-1 drugs help people with weight loss. People are more healthy when they're not overweight, and GLP-1s help people get down to a healthier weight. So when we ask questions about do GLP-1s help this or…"
+        },
+        {
+          "by": "y-c-o-m-b",
+          "text": "I'm excited to see more studies done in this context, but without the HIV association. My wife has Ehlers-Danlos Syndrome and Rheumatoid Arthritis. She saw more benefits in inflammation reduction than weight reduction, especially those first two weeks she started taking it. She says her pain levels are night and day difference when on GLP-1 vs off. To me it would then make logical sense that…"
+        },
+        {
+          "by": "froobius",
+          "text": "Isn't being \"underweight\" generally shown to reduce the speed of aging"
+        },
+        {
+          "by": "GenerWork",
+          "text": ">They also reduce visceral and ectopic fat that accumulates around the abdomen and organs, which may help curb the inflammatory and metabolic signals that promote aging. Interesting, I wonder if someone will do a study where they pair a GLP-1 with tesamorelin to see if there's any synergy there in terms of fat reduction and reduced aging."
+        },
+        {
+          "by": "andsoitis",
+          "text": "> slows down the accumulation of biological aging markers in the DNA of adults with HIV And if you don’t have HIV?"
+        }
+      ],
+      "image": "https://www.universityofcalifornia.edu/sites/default/files/uc-san-diego-glp-1.jpg"
+    },
+    {
+      "id": 50131440,
+      "url": "https://finance.yahoo.com/economy/policy/article/the-us-federal-budget-deficit-for-2026-just-came-in-its-1992-trillion-191917669.html",
+      "hn": "https://news.ycombinator.com/item?id=50131440",
+      "title": "US federal budget deficit jumps 12% in one year to nearly $2 Trillion",
+      "time": 1792246925,
+      "points": 154,
+      "depth": [
+        {
+          "text": "the US federal deficit **jumped 12%** to **$1.992 trillion** in fiscal 2026",
+          "tier": "simple"
+        },
+        {
+          "text": "The final tally put **$5.403 trillion in revenues** against **$7.396 trillion in spending**. **Tariff refunds totaled $144.6 billion**, helping leave the deficit about $140 billion above February's projection.",
+          "tier": "substance",
+          "data": [
+            [
+              "Deficit",
+              "$1.992 trillion"
+            ],
+            [
+              "Change from 2025",
+              "12%"
+            ],
+            [
+              "2025 deficit",
+              "$1.775 trillion"
+            ],
+            [
+              "Revenue",
+              "$5.403 trillion"
+            ],
+            [
+              "Spending",
+              "$7.396 trillion"
+            ],
+            [
+              "Tariff refunds",
+              "$144.6 billion"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters call for tax increases or spending cuts to address the deficit; others say it is less alarming because the US owes debt in a currency it can print.",
+      "comment_count": 160,
+      "terms": [
+        "deficit",
+        "GDP",
+        "tariff",
+        "fiscal year",
+        "CBO"
+      ],
+      "entities": [
+        "Treasury Department",
+        "Committee for a Responsible Budget",
+        "Hamilton Project",
+        "Bloomberg Government",
+        "Congressional Budget Office",
+        "Supreme Court",
+        "Trump",
+        "Scott Bessent",
+        "Joe Biden",
+        "Yahoo Finance",
+        "Ben Werschkul"
+      ],
+      "comments": [
+        {
+          "by": "legitster",
+          "text": "What's really striking is the current administration performed one of the most brutal cost cutting programs in recent memory. And despite the massive amount of disruption caused (and to be caused) there is almost nothing to show for it financially. Just pennies in the ashtray of a Lamborghini. Obviously the people behind it were not serious, and did nothing to actually address government waste or…"
+        },
+        {
+          "by": "Taikonerd",
+          "text": "At some point I realized: there is no plan to fix it. Both of the parties are just hoping that the upcoming crisis happens while the other party is in power."
+        },
+        {
+          "by": "u1hcw9nx",
+          "text": "The US federal deficit is growing at an alarming rate; if nothing is done, it will solve itself with inflation. US debt is denominated in USD, so the US will not default; the value of money just steadily declines until the debt burden matches the capacity of the US economy to pay for it. Also, US tax rates are relatively low, US can pay the debt by increasing tax rate if there is political will…"
+        },
+        {
+          "by": "jleyank",
+          "text": "Category error. These comments are only relevant with a democratic administration."
+        },
+        {
+          "by": "chiph",
+          "text": "Should you choose to, you can make a gift towards paying the public debt: https://www.pay.gov/public/form/start/23779454 In 2022, this amounted to $180,310 - so not even a drop in the bucket. https://www.treasurydirect.gov/government/public-debt-report..."
+        }
+      ],
+      "image": "https://s.yimg.com/lo/mysterio/api/5b1c027cab1879390d41eb8d5fdd929bc6bf950aa0b6a86131e21877519e4097/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-10%2Fce5f3393-d53f-48ea-91b1-aac1887c024f"
+    },
+    {
       "id": 50127979,
       "url": "https://llmspeed.dev/",
       "hn": "https://news.ycombinator.com/item?id=50127979",
@@ -1154,6 +1562,31 @@
     }
   ],
   "glossary": {
+    "distillation attack": "An attempt to copy an AI’s abilities by collecting its answers and using them to train another AI.",
+    "API key": "A secret code that lets software use an online service as an approved user.",
+    "BYOK": "Bring Your Own Key: using your own access key instead of one supplied by a service.",
+    "supply chain attack": "An attack that reaches people through software or services they rely on.",
+    "LPR": "License plate reader: a camera that reads a car's license plate automatically.",
+    "OpenStreetMap": "A shared map that people can edit with details about roads and other places.",
+    "sous vide": "A way to cook food in a sealed bag kept in warm water.",
+    "tartrazine": "A yellow food colouring.",
+    "furigana": "Small kana written alongside kanji to show how to pronounce them.",
+    "kanji": "Japanese writing characters that carry meaning and can have different readings.",
+    "ligatures": "A font feature that can combine neighboring letters into a single shape.",
+    "Ruby tags": "A way for a webpage to place small reading text above or beside Japanese characters.",
+    "romaji": "Japanese written using Latin letters.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "GLP-1": "Glucagon-like peptide-1: a body chemical involved in appetite and blood sugar; medicines that act on it can change how hungry someone feels.",
+    "epigenetic clock": "A way to estimate biological aging by looking at chemical marks on DNA.",
+    "DNA methylation": "Chemical marks on DNA that help turn genes on or off without changing the DNA sequence.",
+    "lipohypertrophy": "A condition where excess fat builds up around the abdomen.",
+    "placebo": "A treatment with no active study drug, used so researchers can compare it with the drug being tested.",
+    "DunedinPACE": "An epigenetic clock used here to measure the pace of biological aging.",
+    "deficit": "When the government spends more money than it brings in.",
+    "GDP": "Gross Domestic Product: the total value of what a country's economy produces.",
+    "tariff": "A tax on goods brought in from another country.",
+    "fiscal year": "A 12-month period a government uses to keep its accounts; it may not match the calendar year.",
+    "CBO": "Congressional Budget Office: a US government office that analyzes the budget and the effects of proposed laws.",
     "local LLM": "Large language model: an AI that works with text; a local one runs on your own device.",
     "benchmark": "A test people use to compare how well different tools do a task.",
     "quantization": "A way to make a model use less computing power by representing its internal numbers less precisely.",
