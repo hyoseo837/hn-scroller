@@ -2,6 +2,414 @@
   "date": "2026-10-17",
   "cards": [
     {
+      "id": 50106747,
+      "url": "https://www.paperinstruments.com/ultramarine",
+      "hn": "https://news.ycombinator.com/item?id=50106747",
+      "title": "Ultramarine 1 Flash",
+      "time": 1792083961,
+      "points": 257,
+      "depth": [
+        {
+          "text": "Ultramarine is an **AI for professional knowledge work**, but commenters **disagree** on how impressive it is",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter says it uses **GLM-5.3 Flash** as its base, with large-scale reinforcement learning, and claims it beats that base across **all six knowledge-work benchmarks** they evaluated. Other commenters call it a skinned version with context-injection tricks; one says its charts skip models like Fable 5.1 and Claude Opus 5.5.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: supporters praise its benchmark results and harness; skeptics see a skinned GLM-5.3 Flash and say the charts leave out models that beat it.",
+      "comment_count": 78,
+      "terms": [
+        "agentic model",
+        "reinforcement learning",
+        "base model",
+        "benchmark",
+        "context injection",
+        "harness",
+        "guardrails"
+      ],
+      "entities": [
+        "Ultramarine 1 Flash",
+        "GLM-5.3 Flash",
+        "Fable 5.1",
+        "GPT-6 Astra",
+        "Claude Opus 5.5",
+        "GPT-Luna 6",
+        "DeepSeek",
+        "Thomson Reuters",
+        "Qwen",
+        "Hugging Face",
+        "Anthropic",
+        "Jev",
+        "Paper Instruments",
+        "Feather",
+        "Twitter"
+      ],
+      "comments": [
+        {
+          "by": "kadoban",
+          "text": "> We present Ultramarine 1 Flash, an agentic model for professional knowledge work. Ultramarine applies large-scale reinforcement learning to a strong open base model, GLM-5.3 Flash, and improves on it across all six knowledge-work benchmarks we evaluate [...] In case anyone was curious what it's based on. (No judgement either way from me, IMO depends how well they did the post-training, which I…"
+        },
+        {
+          "by": "CobrastanJorji",
+          "text": "As an aside, I do not like unnecessarily misleading graphs. Own your strengths and weaknesses. In the \"Results\" section, they choose to compare Ultramarine only to models that it's better than on every metric. They ignore models like Fable 5.1, GPT-6 Astra, Claude Opus 5.5, etc. Then, in the \"Score against cost per task\" graph, which is focused on price, suddenly all of those models that perform…"
+        },
+        {
+          "by": "bythreads",
+          "text": "I’m confused this seems exactly like a skinned glm 5.3 - flash with a few context injection tricks and guardrails - whats going on with these “startups”?"
+        },
+        {
+          "by": "shawabawa3",
+          "text": "for a specialised model, it performs extremely closely in score and price to GPT-Luna 6, which is a generic model"
+        },
+        {
+          "by": "hypfer",
+          "text": "What kind of harness does one use for these? They say it can create office documents (if I understand correctly), but how does it do that? What's the thing one needs to plug this into to say \"give me a slide deck with last quarter's sales figures\"? __ https://www.paperinstruments.com/feather According to their Twitter video, it might be this thing?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50127274,
+      "url": "https://dune.fandom.com/wiki/Butlerian_Jihad",
+      "hn": "https://news.ycombinator.com/item?id=50127274",
+      "title": "Butlerian Jihad",
+      "time": 1792203668,
+      "points": 242,
+      "depth": [
+        {
+          "text": "people debate whether Dune’s **Butlerian Jihad** warns about AI or is just a **plot device**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says the Jihad targeted **technocrats** as well as machines; another says it only works because Dune has **plot armor**. A third wonders whether probabilistic **LLMs** might affect human thought differently from deterministic machines.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some commenters see the Jihad as a warning about people using machines to control others; others say it takes a plot-armored fictional world to make the anti-machine fight work.",
+      "comment_count": 132,
+      "terms": [
+        "Butlerian Jihad",
+        "technocrats",
+        "plot armor",
+        "AI",
+        "LLMs",
+        "probabilistic",
+        "deterministic"
+      ],
+      "entities": [
+        "Dune",
+        "Butlerian Jihad",
+        "Frank Herbert",
+        "Heidegger",
+        "ChatGPT",
+        "Claude"
+      ],
+      "comments": [
+        {
+          "by": "tarpitt",
+          "text": "My favorite quote from dune: Greatness is a transitory experience. It is never consistent. It depends in part upon the myth-making imagination of humankind. The person who experiences greatness must have a feeling for the myth he is in. He must reflect what is projected upon him. And he must have a strong sense of the sardonic. This is what uncouples him from belief in his own pretensions. The…"
+        },
+        {
+          "by": "cautiouscat",
+          "text": "What I find interesting about thinking machines in Dune, is that in a lot of sci-fi the artificial intelligence itself is what decides to destroy humanity. In Dune, humans in charge of the machines (technocrats) are the ones that come close to destroying humanity. The Jihad was a fight against them, as much as it was against the machines themselves. So, in a way, we're more likely to see the Dune…"
+        },
+        {
+          "by": "antihipocrat",
+          "text": "At the end of the page is this paragraph: Another, more subtle justification for the Butlerian Jihad is also found in Frank Herbert's original novels, specifically Heidegger's thesis that the use of technology trains humans to think like machines. The problem is that machines are deterministic; thus, training people to be machines is self-limiting. I wonder whether Heidegger would consider the…"
+        },
+        {
+          "by": "lproven",
+          "text": "I am a proud Butlerian Jihadi. Since the botlickers think that those of us who don't trust automatic plagiarism machines are religious nutcases anyway, why not lean into it?"
+        },
+        {
+          "by": "bumbledraven",
+          "text": "Herbert seemed to think that to be human is to be essentially 'open-ended', capable of undiscovered, indeterminate evolution, both personally and as a species. Indeed."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50129045,
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "hn": "https://news.ycombinator.com/item?id=50129045",
+      "title": "DeepSeek-v4.1-Flash-1017",
+      "time": 1792225285,
+      "points": 182,
+      "depth": [
+        {
+          "text": "DeepSeek says its **model update** improves **coding, reasoning, and visual benchmarks** and gets tasks done faster",
+          "tier": "simple"
+        },
+        {
+          "text": "The release claims **substantial gains** in reasoning, coding, agentic tasks, and visual benchmarks, while reducing **task time and output length** to help users finish faster and at lower cost. One setup wrinkle: there's no Jinja-format chat template, but the encoding folder includes a **Python reference implementation**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: fans say it looks impressive and cheaper; skeptics question the benchmarks or say there's little left to fix.",
+      "comment_count": 79,
+      "terms": [
+        "agentic tasks",
+        "benchmark",
+        "chat template"
+      ],
+      "entities": [
+        "DeepSeek",
+        "DeepSeek-V4.1-Flash-1017",
+        "DeepSeek-V4.1-Flash",
+        "Python",
+        "encoding.py"
+      ],
+      "comments": [
+        {
+          "by": "pmxi",
+          "text": "Hilarious sentence: \"DeepSeek-V4.1-Flash-1017 is a minor update to DeepSeek-V4.1-Flash, delivering substantial improvements across reasoning, coding, agentic tasks, and visual benchmarks.\" (emphasis mine)"
+        },
+        {
+          "by": "ytxm",
+          "text": "It passed my threshold for not caring to try new models back with DS4, I use it for literally everything. Announcements of new models in the series always feel curious, because it doesn't really feel like there's much left to fix that would improve on what's already there for any task I know of. It's a bit like obsessing over patch releases of some software after a major upgrade already solved…"
+        },
+        {
+          "by": "jononor",
+          "text": "Above GLM 5.3, nice! That is a very capable model. I do wish that we will see some smaller \"flash\" models again though - running this one locally is tough (very costly)."
+        },
+        {
+          "by": "vintermann",
+          "text": "I'd never heard of the BabyVision benchmark they do so well on. Pretty interesting stuff: https://arxiv.org/abs/2601.06521"
+        },
+        {
+          "by": "gmbhgmbh",
+          "text": "Thank you deepseek, we are eating good today."
+        }
+      ],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/deepseek-ai/DeepSeek-V4.1-Flash-1017.png"
+    },
+    {
+      "id": 50123580,
+      "url": "https://bfl.ai/blog/flux-3-image-klein",
+      "hn": "https://news.ycombinator.com/item?id=50123580",
+      "title": "FLUX 3 Image Klein",
+      "time": 1792180033,
+      "points": 171,
+      "depth": [
+        {
+          "text": "someone released a small **open model** for making pictures from words and **editing images**",
+          "tier": "simple"
+        },
+        {
+          "text": "The **5.6B-parameter model** supports text-to-image, editing and up to **10 reference images**. Its INT8 build runs on NVIDIA GeForce RTX GPUs with as little as **8GB of VRAM**. The release also includes a base model for fine-tuning and a step distilled model for low-latency generation.",
+          "tier": "substance",
+          "data": [
+            [
+              "Parameters",
+              "5.6B"
+            ],
+            [
+              "Reference images",
+              "up to 10"
+            ],
+            [
+              "INT8 minimum VRAM",
+              "as little as 8GB"
+            ],
+            [
+              "BFL API price",
+              "starts at $0.009 per 1K image"
+            ],
+            [
+              "RTX 5090 generation time",
+              "about 4 seconds per 1MP image (distilled model + INT8, ComfyUI)"
+            ],
+            [
+              "RTX 4070 generation time",
+              "under 9 seconds per 1MP image (distilled model + INT8, ComfyUI)"
+            ],
+            [
+              "GB300 generation time",
+              "under 0.6 seconds per 1MP image (NVFP4)"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some praise its speed and editing; others say its image generation is worse than FLUX 3's normal model.",
+      "comment_count": 48,
+      "terms": [
+        "open weights",
+        "text-to-image",
+        "multi-reference generation",
+        "VRAM",
+        "INT8",
+        "step distilled model"
+      ],
+      "entities": [
+        "Black Forest Labs",
+        "FLUX 3 Image Klein",
+        "FLUX 3",
+        "NVIDIA",
+        "ComfyUI",
+        "Diffusers",
+        "Hugging Face",
+        "Qwen-Image 2.1",
+        "Ideogram V4.5",
+        "Krea 2",
+        "FLUX.2 [klein]",
+        "Ostris",
+        "AI Toolkit",
+        "NeMo AutoModel",
+        "MOSS-Image"
+      ],
+      "comments": [
+        {
+          "by": "Mashimo",
+          "text": "People on reddit claim it's bad at generating images of people, apparently because they removed anything close to nsfw from the training set. Anyone already tried it?"
+        },
+        {
+          "by": "ionwake",
+          "text": "I just don't see society advancing until you all get used to naked people, I mean from cavemen to the greeks to Boticelli, was cool with it and that was along time ago. How many man hours go into not allowing things that might break some law of offense? How many hours wasted trying to change the meaning of words and related punishments. I mean it doesn't make sense to me in any form of efficient…"
+        },
+        {
+          "by": "risphere",
+          "text": "It's really fast on the OpenRouter API, but it's clearly worse than Flux 3's normal model."
+        },
+        {
+          "by": "accrual",
+          "text": "Comments on Krea 3 releasing yesterday 2026.10.15: https://news.ycombinator.com/item?id=50105648"
+        },
+        {
+          "by": "jjcm",
+          "text": "It's editing capabilities have been really solid, but I've been disappointed with its ability to do finer text details (a niche use case for my own purposes). There's also a lot of reports of body horror outputs, but I haven't encountered any myself. Still though, it's a lot like the porsche mission S vs the tesla roadster situation with the weights release. Moss Image dropped which looks far…"
+        }
+      ],
+      "image": "https://bfl.ai/api/og/blog/flux-3-image-klein"
+    },
+    {
+      "id": 50129121,
+      "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
+      "hn": "https://news.ycombinator.com/item?id=50129121",
+      "title": "DeepSeek: DeepSeek v4.1 Flash 1017",
+      "time": 1792226266,
+      "points": 172,
+      "depth": [
+        {
+          "text": "DeepSeek's new model is a **cost-efficient pick** for **coding agents** and multi-step tasks",
+          "tier": "simple"
+        },
+        {
+          "text": "It activates **8B parameters on input and 16B on output** from a 552B-parameter backbone; **image understanding** is built in from pre-training. In one commenter's code-review test, it **took ~4x longer** than GPT 6.1 Sol and found fewer issues.",
+          "tier": "substance",
+          "data": [
+            [
+              "Input tokens",
+              "$0.10/M"
+            ],
+            [
+              "Output tokens",
+              "$0.50/M"
+            ],
+            [
+              "Cache read",
+              "$0.002/M tokens"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters value its speed, openness, and cost; others point to mixed coding results, including one code-review test where it took longer and found fewer issues than GPT 6.1 Sol.",
+      "comment_count": 39,
+      "terms": [
+        "sparse mixture-of-experts",
+        "Causal Encoder-Decoder (CED)",
+        "KV caching",
+        "TTFT"
+      ],
+      "entities": [
+        "DeepSeek",
+        "OpenRouter",
+        "GPT 6.1 Sol"
+      ],
+      "comments": [
+        {
+          "by": "OsrsNeedsf2P",
+          "text": "DS isn't better than Sol and Gemini in the benchmarks, but after working with them all for a while now I'm beginning to understand why people find DS _feels_ so much better. First, it's the tok/s and TTFT from providers. Deepseek blazes through work - at quite good quality - and you don't find yourself waiting for your agents to finish. Second is the openness. Being able to see the CoT and not…"
+        },
+        {
+          "by": "gregwebs",
+          "text": "The company's own news page: https://api-docs.deepseek.com/news/news261017 They are showing this new version scoring significantly higher across multiple coding benchmarks, beating Sol 5.6 (6.1 is the latest) across 10/11 benchmarks."
+        },
+        {
+          "by": "AmazingTurtle",
+          "text": "so i did some apples to bananas comparison. i let 4 different agents review the same dirty code base (200+ files changed, c++, game engine): - deepseek v4.1 flash via deepseek API: took 20m to find one p1 issue that was relevant and a p2 issue that was irrelevant - glm 5.3 flash NVFP4 via TP2 DGX Sparks: took 1h 5m to find a p3 documentation issue - gpt 5.6 sol: took 5m30s for one p1 and one p2…"
+        },
+        {
+          "by": "olavgg",
+          "text": "I really like the having DeepSeek Flash + Opus 5.5 as advisor/reviewer at the moment. I run through a $200 Claude Code subscription in less than 24 hours now just for a single project, and I hate fiddling with different accounts every day. Now that I get a 200 USD api credits inlcuded with the subscriptions I have rewritten my coding agent workflow completely."
+        },
+        {
+          "by": "randomblock1",
+          "text": "Other discussion: https://news.ycombinator.com/item?id=50129045"
+        }
+      ],
+      "image": "https://openrouter.ai/en-US/deepseek/deepseek-v4.1-flash-1017/opengraph-image-vc0va0?1e77ea1e963ce414"
+    },
+    {
+      "id": 50121004,
+      "url": "https://dev-null.sh",
+      "hn": "https://news.ycombinator.com/item?id=50121004",
+      "title": "/dev/null: social network for developers",
+      "time": 1792169869,
+      "points": 156,
+      "depth": [
+        {
+          "text": "someone built **a social network for developers** during a **two-day livestream** coding grind",
+          "tier": "simple"
+        },
+        {
+          "text": "Brent Roose says the site had no code **48 hours ago**; the team used **AI** but stayed in charge. Posts are plain text, up to 4,000 characters, shown **newest first**, with no algorithm.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some enjoy the Git analogies and community; others call it another Twitter clone or question GitHub-only sign-in and post approval.",
+      "comment_count": 139,
+      "terms": [
+        "Git",
+        "commit",
+        "GitHub",
+        "federated",
+        "agentic coding"
+      ],
+      "entities": [
+        "/dev/null",
+        "Brent Roose",
+        "GitHub",
+        "PHP",
+        "Laravel",
+        "Mastodon"
+      ],
+      "comments": [
+        {
+          "by": "ineptech",
+          "text": "Errant thought - I kind of hope that the actual social network for developers of the not so distant future looks more like a bunch of us separately building bespoke applications to serve files to each other. > Dave: \"Bot, add a folder to my personal data store with the pictures I took this weekend and share it with everyone in my poker group\" > Sally: \"I see that I've gotten an email from Dave…"
+        },
+        {
+          "by": "SwellJoe",
+          "text": "Mastodon is where I find the most (I hesitate to use this word) real nerds. The folks in it for the love of the game, not because it pays well or because they're chasing the latest trends. Nearly everyone I admire in tech is there, and very few of the people I think little of are."
+        },
+        {
+          "by": "1vuio0pswjnm7",
+          "text": "https://dev-null.sh/sitemaps/users-1.xml https://dev-null.sh/sitemaps/commits-1.xml"
+        },
+        {
+          "by": "ajjenkins",
+          "text": "It would be nice if the website had more information about the platform before you create an account."
+        },
+        {
+          "by": "JdeBP",
+          "text": "Thank you, but no. I'll stick with /dev/tty0 . It's federated."
+        }
+      ],
+      "image": "https://dev-null.sh/og.png"
+    },
+    {
       "id": 50122951,
       "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
       "hn": "https://news.ycombinator.com/item?id=50122951",
@@ -445,6 +853,37 @@
     }
   ],
   "glossary": {
+    "agentic model": "An AI that can take steps toward completing a task, rather than only replying to a prompt.",
+    "reinforcement learning": "A way to train an AI by rewarding choices that work and discouraging choices that do not.",
+    "base model": "The starting AI that someone builds on or adapts for a particular use.",
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "context injection": "Adding extra information or instructions to what an AI sees before it responds.",
+    "harness": "The surrounding code that gives an AI agent tools and a place to work, and checks what it does.",
+    "guardrails": "Instructions that tell an AI how it should respond.",
+    "Butlerian Jihad": "In Dune, the fight against thinking machines and the people in charge of them.",
+    "technocrats": "People who use their technical expertise or control of technology to hold political power.",
+    "plot armor": "A story setup that lets events happen even when they seem like they should be stopped.",
+    "AI": "Artificial intelligence: computer systems designed to do tasks people associate with thinking.",
+    "LLMs": "Large language models: computer programs trained on lots of writing that can produce text.",
+    "probabilistic": "Able to give different results because chance is involved.",
+    "deterministic": "Something that gives the same result when it gets the same input.",
+    "agentic tasks": "Work where an AI can take steps toward a goal, not just answer a question.",
+    "chat template": "A set of rules for laying out a conversation so the model can read each message correctly.",
+    "open weights": "The model's learned settings are available for people to download and run themselves.",
+    "text-to-image": "Making a picture from a written description.",
+    "multi-reference generation": "Making a new picture while using several supplied images as examples.",
+    "VRAM": "The memory inside a graphics card that holds information the AI needs while running.",
+    "INT8": "A compact way to store a model's numbers that can reduce the memory needed to run it.",
+    "step distilled model": "A version set up to make an image in fewer steps, which can make generation faster.",
+    "sparse mixture-of-experts": "A model with many specialized parts that only uses some of them for each request.",
+    "Causal Encoder-Decoder (CED)": "Causal Encoder-Decoder: the name for a design that describes how an AI takes in information and produces an answer.",
+    "KV caching": "A way to keep useful pieces of earlier text ready, so the model does less repeated work.",
+    "TTFT": "Time-to-first-token: how long it takes before the first part of a reply appears.",
+    "Git": "A tool for keeping a history of code changes and combining work.",
+    "commit": "A saved record of changes in a project; this site treats posts like commits.",
+    "GitHub": "A site where people keep code projects and work on them together.",
+    "federated": "A setup where separate services can communicate instead of everyone needing to use one central service.",
+    "agentic coding": "Having an AI handle coding tasks by making changes and checking its work with less step-by-step direction.",
     "pull request": "A proposal to add your code changes to a shared project, usually asking others to review them first.",
     "revert": "Undo a code change, usually after it causes a problem.",
     "feature flag": "A switch developers can use to turn a feature on or off without removing it from the program.",
