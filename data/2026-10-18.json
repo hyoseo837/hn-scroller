@@ -2,6 +2,268 @@
   "date": "2026-10-18",
   "cards": [
     {
+      "id": 50137950,
+      "url": "https://sphinx-six-theta.vercel.app/",
+      "hn": "https://news.ycombinator.com/item?id=50137950",
+      "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
+      "time": 1792298029,
+      "points": 205,
+      "depth": [
+        {
+          "text": "someone built a **hook** that **quizzes you** on **AI-written code** before it ships",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says a similar skill helped them **stay focused** while reviewing a **1500 LOC PR** from a non-dev; another says they built this, **got frustrated, and stopped using it**.",
+          "tier": "substance",
+          "data": [
+            [
+              "PR size",
+              "1500 LOC"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters say a quiz can help people understand and review AI-generated code; skeptics say it adds a frustrating gate or avoids learning the code properly.",
+      "comment_count": 66,
+      "terms": [
+        "hook",
+        "PR",
+        "LOC",
+        "LLM",
+        "OSS",
+        "agent"
+      ],
+      "entities": [
+        "Sphinx",
+        "BigAI corp",
+        "humantodo.dev",
+        "vibecheck.dev"
+      ],
+      "comments": [
+        {
+          "by": "fwlr",
+          "text": "It’s a neat idea, i think it’ll really take off if you change “before pushing to prod” to “before requesting another human’s time or attention”. If something like this was gatekeeping the “submit PR” and “update PR” buttons it would prevent a lot of waste."
+        },
+        {
+          "by": "theParadox42",
+          "text": "I certainly feel like certain AI coding practices I have leave me with nothing learned in a frustrating way. Sometimes the most effective way to getting what I want is just describing a goal really clearly, and then bashing the AI until it gets there. That bashing process can take a lot of energy and yet I don’t gain useful skills or a “better way” that I would if I was still coding. I generate…"
+        },
+        {
+          "by": "bodash",
+          "text": "Why stop there? Combine this with other knowledge testing methods: pre-code: planning mode coding: humantodo.dev after-code: sphinx hook"
+        },
+        {
+          "by": "pjmlp",
+          "text": "The gimmicks we come around to justify existing practices being pushed into the industry never stops surprising me. One would expect the actual answer would be to write the code ourselves."
+        },
+        {
+          "by": "freshnode",
+          "text": "Have you ever heard the idiom \"ambulance at the bottom of the cliff\"?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50114758,
+      "url": "https://leodemoura.github.io/blog/2026-10-15-lean-now-ships-with-verified-kernels/",
+      "hn": "https://news.ycombinator.com/item?id=50114758",
+      "title": "Lean now ships with verified kernels",
+      "time": 1792131373,
+      "points": 177,
+      "depth": [
+        {
+          "text": "Lean now ships with extra **proof checkers** that **double-check** its mathematical proofs for mistakes",
+          "tier": "simple"
+        },
+        {
+          "text": "Lean now ships with **four extra kernels**. **con-leche** is the first kernel written in Lean and **proven consistent**, meaning every environment it accepts has a model in set theory.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say Lean plus AI is a winning combo; others ask whether Lean's productivity, rather than LLMs, explains much of the math progress.",
+      "comment_count": 60,
+      "terms": [
+        "proof assistant",
+        "kernel",
+        "consistent",
+        "environment",
+        "model",
+        "set theory",
+        "formal verification",
+        "LLM"
+      ],
+      "entities": [
+        "Lean",
+        "lake",
+        "leanchecker",
+        "nanoda",
+        "lean4lean",
+        "con-leche",
+        "con-ron",
+        "Claude",
+        "Joachim Breitner",
+        "Aeneas",
+        "Rust",
+        "Lean FRO"
+      ],
+      "comments": [
+        {
+          "by": "nickysielicki",
+          "text": "Suppose lean in its current state existed 15 years ago, and suppose the math community eagerly started contributing en masse to a shared repository of code. How much of the breakthroughs and longstanding questions in mathematics that we’ve seen answered this year do you think we would have solved? In other words, how much of the developments this year are directly attributable to LLMs using lean…"
+        },
+        {
+          "by": "5ersi",
+          "text": "Lean plus AI is a winning combo: Lean is super precise but \"narrow\", AI is broad but lacks precision. Before AI it was super tedious to formally express your software models in Lean, with AI this is super easy. See formal verification of consensus core in Ultima Cluster: https://github.com/PeterKnego/ultima_cluster/blob/main/docs/..."
+        },
+        {
+          "by": "chasingbrains",
+          "text": "Sorry for almost completely unrelated shower thought but: there is an opportunity to name your blog “Leanardo”"
+        },
+        {
+          "by": "s_Hogg",
+          "text": "As someone who doesn't quite get all this, isn't the proposal here just checkers all the way down?"
+        },
+        {
+          "by": "sinuhe69",
+          "text": "What does “verified” mean here? Someone has formalized verified the kernels or just different kernels cross check each others?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50133231,
+      "url": "https://github.com/openai/codex/issues/25921",
+      "hn": "https://news.ycombinator.com/item?id=50133231",
+      "title": "Codex Desktop continuously generates Crashpad pending dumps",
+      "time": 1792259108,
+      "points": 157,
+      "depth": [
+        {
+          "text": "Codex Desktop keeps **filling Macs** with **crash reports**, even while the app still works",
+          "tier": "simple"
+        },
+        {
+          "text": "The issue reports paired `.dmp` and `_sidecar.json` files piling up; one machine reached **4.9G and 54,504 files** in a day. One commenter said their case looked like **`browser_crashpad_handler` was crashing and restarting in a loop**, while Codex stayed usable.",
+          "tier": "substance",
+          "data": [
+            [
+              "reported growth rate",
+              "+5GB per day at least"
+            ],
+            [
+              "files in one day",
+              "54,504"
+            ],
+            [
+              "directory size",
+              "4.9G"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 78,
+      "terms": [
+        "Crashpad",
+        ".dmp file",
+        "sidecar JSON",
+        "browser_crashpad_handler"
+      ],
+      "entities": [
+        "Codex",
+        "OpenAI",
+        "GitHub",
+        "macOS",
+        "Crashpad"
+      ],
+      "comments": [
+        {
+          "by": "glenngillen",
+          "text": "I'd been running into a lot of disk pressure on my system from agents running. I discovered two main causes: - my approach to using git worktrees for all work. Not entirely surprising, the duplicated build artifacts in each worktree being the main culprit here. There were some limited gains to be had by just being more efficient with how builds were managed but ultimately I just had to limit the…"
+        },
+        {
+          "by": "CountSessine",
+          "text": "It’s actually kind of startling just how bad, as measured by open issues, Codex is. There’s a huge issue with conversation locking that nullifies one of Codex’s key advantages (GUI<->CLI interoperability) and last night I learned that conversations can get into a permanently-locked state where even shutting down every Codex process won’t unlock a conversation. You add to that all of the weird…"
+        },
+        {
+          "by": "smileybarry",
+          "text": "This is the second Codex bug that could have a big durability impact on your SSD, though not as severe as the first one which did infinite logging: https://news.ycombinator.com/item?id=48626930"
+        },
+        {
+          "by": "jbellis",
+          "text": "this looks like a bug, but even normal happy-path codex creates many GB of logs, openai apparently considers this fine bc it's been going on for months two things help: 1. fs-level compression, I use ZFS bc Btrfs has massive contention problems with concurrent Rust builds 2. Archive your old sessions using something like sessionwiki ( https://github.com/youdie006/sessionwiki ), I've integrated…"
+        },
+        {
+          "by": "boesboes",
+          "text": "The amount of cope of people dealing with this is sobering. One of the biggest companies out there currently has neglected to fix a seemingly trivial bug in their core offering for 4 months and everyone is just like 'well, you can delete the files'.. I'm not hopeful for the future. Software already was a terrible buggy mess, now it's just all rng i guess."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/ca36cd0881ef0455269ae28027ff6686ed2bae99e1f24dc416de1a72bc590b3c/openai/codex/issues/25921"
+    },
+    {
+      "id": 50131006,
+      "url": "https://celphase.github.io/duck-pond/",
+      "hn": "https://news.ycombinator.com/item?id=50131006",
+      "title": "Show HN: High-quality duck audio synthesizer",
+      "time": 1792243726,
+      "points": 157,
+      "depth": [
+        {
+          "text": "someone made a **duck audio synthesizer** that people say is **relaxing to listen to**",
+          "tier": "simple"
+        },
+        {
+          "text": "In the **pond simulation**, you can throw peas; one commenter says the ducks dabble and pick insects but never do the **tail-up, head-underwater move**, and asks to remove the **120-pea ceiling**.",
+          "tier": "substance",
+          "data": [
+            [
+              "pea limit",
+              "120 peas"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 37,
+      "terms": [
+        "audio synthesizer",
+        "white noise",
+        "three.js",
+        "vibe coding"
+      ],
+      "entities": [
+        "duck-pond",
+        "Merlin Bird ID",
+        "three.js",
+        "MGS",
+        "iPhone"
+      ],
+      "comments": [
+        {
+          "by": "codeulike",
+          "text": "I like the simulation. They do 'dabbling' and 'picking insects' but they dont ever seem to do 'ducking' (tail up, head underwater). Ducks are named after 'ducking' ... or possibly, 'ducking' is named after Ducks. edit: also please remove hard ceiling of 120 peas. I want to throw more peas"
+        },
+        {
+          "by": "andai",
+          "text": "More info at the repo: https://github.com/celphase/duck-pond Also replies by author in this sub thread below: https://news.ycombinator.com/item?id=50131006#50135405"
+        },
+        {
+          "by": "dvh",
+          "text": "I don't know who came up with idea that bread is bad for ducks but it ruined one fishing spot for me. There was a place where people were feeding bread to sucks and fly fishing there was awesome. Carps, chubs, crucians, rudds and roaches, even nases! All on dry flies. Then someone put out sign that bread harms ducks so people stopped feeding them and after a while all fish just disappeared."
+        },
+        {
+          "by": "cainxinth",
+          "text": "I have nothing to add other than this is very relaxing and I love duck’s names."
+        },
+        {
+          "by": "brainless",
+          "text": "This is lovely. Tried on speaker, will try with headphones. I have a chicken farm (and a pig farm but I manage the chickens myself). I want to start a duck farm with a fish pond. Living in a small village and enjoying these things in real life actually changed my life in ways that I cannot explain. I still (get agents to) write software but my daily life is around the farm and village life…"
+        }
+      ],
+      "image": null
+    },
+    {
       "id": 50138531,
       "url": "https://api-docs.deepseek.com/guides/search/",
       "hn": "https://news.ycombinator.com/item?id=50138531",
@@ -980,6 +1242,27 @@
     }
   ],
   "glossary": {
+    "hook": "A small piece of code that runs automatically when a particular event happens.",
+    "PR": "Pull request: a proposed code change shared so others can review it.",
+    "LOC": "Lines of code: a count of how many lines a program contains.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "OSS": "Open-source software: software whose code is shared so others can inspect it and sometimes reuse it under a license.",
+    "agent": "An AI system that can take steps and use tools to get a task done, not just answer questions.",
+    "proof assistant": "Software that checks whether a mathematical proof follows its rules.",
+    "kernel": "A small program that carries out a calculation on a computer's graphics chip or processor.",
+    "consistent": "Here, it means anything the checker accepts can be true in a mathematical world.",
+    "environment": "The material Lean has already been given to use while checking a proof.",
+    "model": "A mathematical setup where the claims or rules in question all hold.",
+    "set theory": "A way of building mathematics from collections of things called sets.",
+    "formal verification": "Checking a claim using precise rules, often with a computer.",
+    "Crashpad": "A tool apps use to save crash reports for later review.",
+    ".dmp file": "A file that can hold a snapshot of a program’s memory around a crash.",
+    "sidecar JSON": "A companion data file stored alongside another file; here, it goes with a crash dump.",
+    "browser_crashpad_handler": "A background helper that manages crash reports for the browser part of an app.",
+    "audio synthesizer": "A tool that creates or shapes sounds; this one is for duck audio.",
+    "white noise": "A steady, even sound people play to cover other noises or help them relax.",
+    "three.js": "A tool for building animated 3D graphics in a web page.",
+    "vibe coding": "Making software by telling an AI what you want and letting it write the code, often without closely checking how it works.",
     "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
     "RAG": "Retrieval-Augmented Generation: a way for an AI to look up material and use it when answering.",
     "Markdown": "A plain-text way to format notes with headings, lists, and code.",
