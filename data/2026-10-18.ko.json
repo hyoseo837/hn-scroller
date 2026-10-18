@@ -182,9 +182,116 @@
         "건강한 직장 환경\nhttps://knowyourmeme.com/memes/makima-is-listening-kishise-n...",
         "우린 모두 9/11 때 죽었고 여긴 지옥이야"
       ]
+    },
+    "50138531": {
+      "simple": "DeepSeek, agent용 **웹 검색·페이지 fetch** 제공, **성공 요청에만 과금**",
+      "substance": "Search API는 **구조화된 결과**를 반환하고, Fetch API는 페이지를 **Markdown**으로 반환. 각각 **성공 요청 1,000건당 $0.75**.",
+      "data": [
+        [
+          "Search 요금",
+          "성공 요청 1,000건당 $0.75"
+        ],
+        [
+          "Fetch 요금",
+          "성공 요청 1,000건당 $0.75"
+        ]
+      ],
+      "camps": "두 입장: 가격 경쟁력을 높이 평가하는 쪽과, 개인용으론 무료 tool을 선호하거나 hosted search의 용도를 묻는 쪽.",
+      "comments": [
+        "사람들은 이런 hosted search provider를 대체 어디에 쓰나요? 개인용으로는 searxng-ai-kit [1](면책: 제가 만든 tool입니다) 같은 걸 쓰는 편이 훨씬 비용 효율적이더라고요(무료!). oh-my-pi도 비슷한 방식이라, API key나 search provider 없이 기본으로 검색 결과를 scrape해 줍니다. [1]: https://github.com/nikvdp/searxng-ai-kit",
+        "가격 차이를 고려한 비교입니다. 저는 훨씬 높은 SNR의 semantic retrieval과 academic index [1] 때문에 Exa의 프리미엄 요금을 내고 있습니다. objective 같은 field는 최대 4096자 [2]까지 쓸 수 있지만, 여기서 ori_question은 128자로 제한됩니다. [1] https://exa.ai/blog/publications-search [2] https://exa.ai/docs/reference/search",
+        "괜찮네요. Search가 자체 LLM 데이터를 포함하나요, 아니면 Perplexity처럼 실시간 검색을 하나요? 저희도 anti-bot과 CAPTCHA 우회 기능을 갖춘 사내 search API/MCP를 만들고 있고, 월요일 아침 출시를 계획 중입니다.",
+        "비교하자면 Brave Search API는 $5, Kagi API는 $12입니다.",
+        "이게 정확히 뭔지 찾기가 어렵네요. 방대한 LLM 크롤링 -> 학습 덕분에 이미 \"인터넷 전체\"를 저장해뒀으니 검색 엔진 시장에 뛰어드는 건가요?"
+      ]
+    },
+    "50131189": {
+      "simple": "ESP32 emulator, 실물 하드웨어 없이 브라우저에서 **firmware 실행**",
+      "substance": "**오픈소스** 프로젝트 제작자는 임베디드 개발자들이 **개발·테스트·CI**에 쓰기 전에 필요한 기능을 알려주길 바라는 중",
+      "data": [],
+      "camps": null,
+      "comments": [
+        "정말 멋지네요. 저도 얼마 전에 알아보고 있었어요. 브라우저에서 ESP32를 시뮬레이션해 드론을 날리는 simulator를 바이브 코딩했어요. 실제 ESP32에서 돌아가는 flight controller C code가 WebAssembly로 실행되는 방식이에요: https://mrtksn.github.io/liftlab/ 그래서 드론은 실제 ESP32 flight controller로 날고, 실제 ESP32 보드에 직접 flash할 수도 있어요.",
+        "대단하네요! 정말 멋져요. IoT 프로젝트에서는 mobile이나 cloud 쪽 사람들이 테스트용 하드웨어를 기다리지 않고 작업을 시작할 수 있게, 하드웨어 부분을 위한 '기능하는' software simulator를 만드는 편이 더 쉬울 때가 많아요. 그런 simulator는 BLE나 WiFi/API 명령 수준을 흉내 내요. 하드웨어가 생기면 simulator는 CI/CD 테스트에만 쓰이고요. 이게 유용할 것 같은 부분은…",
+        "정말 좋네요! P4 지원 계획도 있나요?\nS3 기기는 많이 있고 C6도 몇 대 있는데, 요즘 가장 주목받는 건 P4예요.",
+        "이 emulator 꽤 멋지네요. ESP32 기반이라 더더욱요. 간단한 것까지 온갖 재밌는 걸 할 수 있네요 :)",
+        "RP2350용도 있나요?"
+      ]
+    },
+    "50137620": {
+      "simple": "Elizabeth Holmes 다큐멘터리, 인물들을 **새롭게 보게 하는** **다큐멘터리**",
+      "substance": "**Lance Oppenheim**과 **Nathan Fielder**는 카메라 앵글, 클로즈업, 편집, 정보 공개 순서를 활용해 화면 속 인물들을 다시 생각하게 만듦. 기사에 따르면 Fielder는 Holmes가 수감되기 전 한 달 내내 그 커플과 함께 지냄.",
+      "data": [],
+      "camps": "두 입장: 영화가 기발하고 관점을 뒤흔든다고 본 시청자들, 피로감을 줬다고 본 시청자들, 기사의 요지가 뻔하다고 한 이들.",
+      "comments": [
+        "오늘 밤 이 영화 봤는데, 다들 나랑 다른 영화를 본 것 같은 기분이 드는 그런 영화 중 하나네요. 흥미로운 내용은 적은데 너무 길게 늘인 느낌이었어요. Holmes/Theranos 이야기에서 흥미로운 부분은 다 다뤄졌으니, 이제 남은 건 새 파트너(그 사람도 괴짜)의 사생활뿐이죠. 좋게 말해도 속임수 같은 걸 생각하게 만든다는 정도겠네요…",
+        "이 영화에 무슨 마법의 비법 같은 건 없다고 봐요. 어제 봤는데, (스포일러) 세 막으로 나뉜다는 데 동의해요. 기만, 동정, 꼭두각시 조종자요. 다만 이 기사는 영화를 무슨 최면술이라도 되는 것처럼 다루는 것 같아요. 아니에요. 아주 탄탄하게 만든 영화라 벌어지는 일을 전부 의심하게 만들죠. 저랑 다른 사람들은 대체로 이런 의문을 품고 나왔어요. A. 그녀는…",
+        "아내를 포함해 아무도 같이 보려 하지 않아서 혼자 갔어요. 길긴 했지만 흥미로웠어요. 글쓴이가 핵심을 정확히 짚었네요: “세상을 속인 여성에 관한 다큐멘터리를 보고 있다고 믿다가, 사실은 당신도 얼마나 쉽게 속는지 보여주는 장면을 보고 있음을 깨닫게 된다.” 완전 동의해요.",
+        "저는 속을 일 없죠. 캐나다 최고 경영대학원 중 한 곳 나왔고 성적도 엄청 좋았거든요.",
+        "이 글도 내가 뭐라고 불러야 할지 모르겠지만, 예술 좋아하는 상류층 사회·영화 평론가들이 흔히 빠지는 똑같은 함정에 빠졌네요. 영화의 뻔한 숨은 뜻을 마치 대단한 발견인 양 모호하면서도 의미심장하게 쓰면서, 정작 구체적인 관찰은 하나도 없죠. 네, 이건 한 사람에 관한 다큐멘터리예요. 다큐멘터리를 어떻게 보여주느냐가 그…에 대한 관점을 좌우하죠…"
+      ]
+    },
+    "50119315": {
+      "simple": "해양 탐험 게임의 **구름**과 **하늘**을 더 자연스럽게 구현",
+      "substance": "작성자는 **Rust ray tracer**를 만들고, povray가 **multiple scattering**을 시뮬레이션하지 않는다는 점을 확인함. 구름의 법선을 하늘 쪽으로 향하게 하자 구름에 푸른빛이 돌며 하늘과 더 잘 어우러짐.",
+      "data": [],
+      "camps": null,
+      "comments": [
+        "구름 렌더링 얘기: 2008년에 대학 친구가 실시간 사실적 구름 렌더링으로 학위 논문을 썼어요: https://maverick.inria.fr/Publications/2008/BN08b/ 논문 심사 발표 자료에서 그 작업의 스크린샷을 볼 수 있어요 https://theses.hal.science/tel-00319974/file/defense.pdf 여기서 transference phase function(슬라이드 24)을 알게 됐는데, 되돌아오는 쪽에 두 개의 피크가…",
+        "와, 정말 고마워요. 이 게임과 비슷한 점이 있는 게임을 만들고 있어요(적어도 “바다를 여행한다”는 점에서요). 이번 주에 Godot에서 하늘 shader를 만들고 있었는데, 아직 구름은 구현하지 못했어요. 이 글 시리즈 전체가 제 관심사에 딱 맞네요... 바다와 파도 렌더링도 할 일 목록에 있어요. 게임 자체도 흥미로워 보여서 해보길 기대하고 있어요. > “On…”",
+        "지구에서 하늘로 반사되는 빛도 있어요. 예를 들면 수역 위쪽 같은 곳에서요.",
+        "게임이 완성되면 정말 해보고 싶어요. 게임을 많이 하진 않지만, 얼마 전 Steam에서 오픈월드 항해·탐험 게임을 찾고 있었거든요. 딱 제가 찾던 게임 같네요... 묘한 우연이네요.",
+        "게임 컨셉으로 정말 좋아요."
+      ]
+    },
+    "50103164": {
+      "simple": "C++ 함수 선언에 **요구 조건**과 **반환 약속** 직접 명시",
+      "substance": "**precondition**은 함수 진입 시 기대되는 조건, **postcondition**은 정상 반환 시 기대되는 조건. 선택한 정책에 따라 **검사를 무시**하거나 위반을 보고하거나 실행을 중단하며, 예상 가능한 입력 오류는 일반적인 제어 흐름으로 처리해야 함.",
+      "data": [],
+      "camps": "두 진영: 비판론자는 실효성이 의심스러운 고급 runtime assert에 불과하다고 보고, 지지자는 contracts의 가능성에 낙관적이며 향후 발전을 기대함.",
+      "comments": [
+        "난 별로야. runtime error를 compile time error로 바꿔줄 수 있다면 contract에 참여하는 건 적극 찬성이야. 그런데 이건 runtime error만 더 늘리는 것 같아. 그럴 거면, 정말 assert를 한다고 보장한다는 점(아마도) 말고는 `assert`보다 나을 게 없어 보여. 글에서도 큰 문제를 짚는데, 바로 “중요한 건, Contracts의 이런 특성 때문에 contract…",
+        "예전엔 contracts를 꽤 좋아했고, 90년대 Zortech C++ 컴파일러에서 직접 구현하기도 했어요: https://www.digitalmars.com/ctg/contract.html D에서도 구현했죠. 그런데 막상 써보니 별로 쓸모가 없더라고요.",
+        "Eiffel 프로그래밍 언어의 \"Design by Contract\" 개념이 떠오르네요: https://en.wikipedia.org/wiki/Design_by_contract https://www.eiffel.com/values/design-by-contract/introductio...",
+        "잡담 하나: 이 기능이 표준에 들어오길 기다리면서 몇 년 전 GCC용 C/C++ Contracts를 추가하는 compiler plugin을 썼어요 https://gavinray97.github.io/blog/adding-invariant-to-cpp-de... 글은 결국 GCC plugin 작성 입문용으로 더 쓸모 있게 됐지만, 그래도 재밌었어요.",
+        "글에는 최적화 활용 사례가 전혀 언급되지 않네요. 혹시 바로 아시는 분 있나요? 제가 답을 찾아보기 전에, 이 기능의 의도 중 하나가 optimizer 단계에 정보를 제공하는 건가요? `if (!(some_condition)) { __builtin_unreachable(); }` 관용구로 할 수 있는 것과 비슷하게요?"
+      ]
     }
   },
   "glossary": {
+    "API": "Application Programming Interface: 한 프로그램이 다른 프로그램에 정보나 동작을 요청하는 방법.",
+    "RAG": "Retrieval-Augmented Generation: AI가 자료를 찾아 답변에 활용하는 방식.",
+    "Markdown": "Markdown은 제목, 목록, 코드 모양을 표시해 메모를 꾸미는 일반 텍스트 작성 방식",
+    "QPS": "Queries per second: 계정이 1초에 보낼 수 있는 요청 수.",
+    "MCP": "Model Context Protocol: AI 앱이 외부 tool에 연결될 때 따르는 공통 규칙.",
+    "SNR": "Signal-to-noise ratio: 쓸모 있는 정보가 관련 없는 내용에 비해 얼마나 많은지를 나타내는 비율.",
+    "ESP32": "Wi-Fi에 연결해 전자 장치를 제어할 수 있는 작은 컴퓨터 보드.",
+    "emulator": "실제 서비스 대신 흉내 내 소프트웨어를 시험할 수 있게 해주는 프로그램.",
+    "firmware": "기기 안에 들어 있어 부품의 작동 방식을 알려 주는 기본 프로그램.",
+    "CI": "Continuous integration: 개발자가 코드를 바꿀 때 자동으로 검사해 문제를 일찍 찾도록 하는 절차.",
+    "CI/CD": "Continuous Integration and Continuous Delivery or Deployment: 코드 변경을 자동으로 검사하고 소프트웨어를 출시할 준비를 하는 방식.",
+    "IoT": "Internet of Things: 일상 기기를 인터넷에 연결해 정보를 주고받거나 멀리서 조작할 수 있게 하는 방식.",
+    "BLE": "Bluetooth Low Energy: 주변 기기끼리 적은 전력으로 데이터를 주고받게 하는 무선 통신 방식.",
+    "WebAssembly": "웹 브라우저 안에서 컴파일된 프로그램을 실행하는 방식",
+    "flight controller": "드론의 움직임을 제어하는 부품.",
+    "framing": "영화에서 인물이나 대상을 보여주는 방식으로, 관객이 그들을 바라보는 관점을 이끄는 것.",
+    "villain edit": "누군가를 악역처럼 보여 관객이 나쁜 사람이라고 여기도록 하는 편집 방식.",
+    "ray tracer": "장면 속에서 빛이 어떻게 반사되는지 계산해 그림을 만드는 프로그램.",
+    "multiple scattering": "빛이 물체 안에서 여러 번 튕기며 밖으로 나오는 빛의 양이나 방향을 바꾸는 현상.",
+    "indirect light": "빛이 광원에서 곧장 오지 않고, 다른 곳에서 튕기거나 퍼진 뒤 도달하는 빛.",
+    "lookup table": "프로그램이 매번 계산하는 대신 결과를 찾을 때 확인하는 미리 만든 표.",
+    "shader": "게임에서 이미지나 표면을 어떻게 그릴지 정하는 작은 프로그램.",
+    "HDR": "High Dynamic Range: 화면의 밝은 곳과 어두운 곳을 더 자세히 표현하는 방식.",
+    "tone mapping": "너무 밝은 이미지 값도 화면에 표시할 수 있도록 조정하는 방법.",
+    "orrery": "행성과 그 위성이 어떻게 도는지 보여 주는 모형.",
+    "radiance": "특정 방향으로 빛이 얼마나 이동하는지 나타내는 값.",
+    "irradiance": "표면에 빛이 얼마나 도달하는지 나타내는 값.",
+    "precondition": "함수 실행 전에 호출한 쪽에서 참으로 만들어 둬야 하는 조건.",
+    "postcondition": "함수가 정상적으로 끝났을 때 참이어야 한다는 약속.",
+    "evaluation semantics": "contract check가 실패했을 때 어떤 일이 벌어지는지를 정한 규칙.",
+    "contract_assert(...)": "함수 안의 특정 지점에서 무엇이 참이어야 하는지 확인하는 검사.",
+    "NDEBUG": "정의해 두면 일반적인 검사가 사라지는 build 설정 이름.",
+    "undefined behavior": "C++가 프로그램의 동작을 보장하지 않는 상황.",
     "rate limit": "한 사람이 사이트에 요청을 보낼 수 있는 빈도를 제한하는 규칙",
     "automated suspension": "사람이 아니라 프로그램이 계정을 일시적으로 막는 조치",
     "zooxanthellae": "산호 안에 살며 산호가 에너지를 얻도록 돕는 조류.",
@@ -195,7 +302,6 @@
     "Mermaid": "도구가 다이어그램으로 그릴 수 있도록 텍스트로 설명하는 방식.",
     "SVG": "Scalable Vector Graphics: 크기를 바꿔도 선명함이 유지되는 그림 형식.",
     "CSS variables": "웹페이지의 스타일에서 색상이나 글꼴처럼 이름을 붙여 재사용하는 설정.",
-    "API": "Application Programming Interface: 한 프로그램이 다른 프로그램에 정보나 동작을 요청하는 방법.",
     "FOUC": "Flash of Unstyled Content: 페이지에 의도한 디자인이 적용되기 전에 잠깐 기본 모습으로 보이는 현상.",
     "subgraph": "다이어그램 안에서 서로 연결된 단계들을 묶은 작은 그룹.",
     "reserve asset": "필요할 때 쓸 수 있도록 한 나라 정부가 가치 저장 수단으로 보유하는 자산.",
@@ -208,7 +314,6 @@
     "NOOMBY": "Not Out of My Backyard: 집 근처 사업에 반대하는 사람을 가리키는 말.",
     "source code": "컴퓨터에 프로그램 실행 방법을 알려주는 글로 적힌 지침.",
     "e-voting": "종이 투표용지 대신 전자 방식으로 표를 던지는 일.",
-    "firmware": "기기 안에 들어 있어 부품의 작동 방식을 알려 주는 기본 프로그램.",
     "CVR": "Cast Vote Record: 선거에서 투표한 내용을 전자적으로 기록한 자료.",
     "RNG": "Random number generator: 예측하기 어려워 보이는 숫자를 만들어 내는 도구나 프로그램.",
     "risk limiting audit": "종이 투표용지 일부를 표본으로 확인해 선거 결과가 틀렸을 가능성을 잡아내는 검사.",

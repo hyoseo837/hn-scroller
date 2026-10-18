@@ -2,6 +2,330 @@
   "date": "2026-10-18",
   "cards": [
     {
+      "id": 50138531,
+      "url": "https://api-docs.deepseek.com/guides/search/",
+      "hn": "https://news.ycombinator.com/item?id=50138531",
+      "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
+      "time": 1792306236,
+      "points": 244,
+      "depth": [
+        {
+          "text": "DeepSeek offers **web search and page fetching** for agents, charging only for **successful requests**",
+          "tier": "simple"
+        },
+        {
+          "text": "Search returns **structured results**, while Fetch returns a page as **Markdown**. Each costs **$0.75 per 1,000 successful requests**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Search price",
+              "$0.75 per 1,000 successful requests"
+            ],
+            [
+              "Fetch price",
+              "$0.75 per 1,000 successful requests"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some praise the price as competitive; others prefer free tools for personal use or question what hosted search is for.",
+      "comment_count": 116,
+      "terms": [
+        "API",
+        "RAG",
+        "Markdown",
+        "QPS",
+        "MCP",
+        "SNR"
+      ],
+      "entities": [
+        "DeepSeek",
+        "Search API",
+        "Fetch API",
+        "searxng-ai-kit",
+        "oh-my-pi",
+        "Exa",
+        "Brave Search API",
+        "Kagi",
+        "OpenAI",
+        "Anthropic",
+        "Parallel",
+        "Perplexity",
+        "Ollama Cloud",
+        "DeepSeek Harness",
+        "Claude Code",
+        "Codex",
+        "Cloudflare",
+        "Anubis"
+      ],
+      "comments": [
+        {
+          "by": "nikvdp",
+          "text": "What are people actually using these hosted search providers for? For personal use I've found using searxng-ai-kit [1] (disclaimer: I'm the author) or similar tools to be far more cost effective (free!). oh-my-pi uses a similar method and will scrape search results for you out of the box, no api key or search provider needed. [1]: https://github.com/nikvdp/searxng-ai-kit"
+        },
+        {
+          "by": "vitorsr",
+          "text": "Meant as a comparison given the discrepant pricing points: I pay the Exa premium for semantic retrieval with far higher SNR, plus the academic index [1]. A field like objective can be up to 4096 characters [2] versus ori_question which is limited to 128 here. [1] https://exa.ai/blog/publications-search [2] https://exa.ai/docs/reference/search"
+        },
+        {
+          "by": "apiclay",
+          "text": "This is nice. Does search include their LLM data, or does it do real-time search like Perplexity? We are building our own in-house search API/MCP too, with anti-bot and CAPTCHA workarounds, and we plan to launch Monday morning."
+        },
+        {
+          "by": "thombles",
+          "text": "For comparison that’s $5 with Brave Search API and $12 with Kagi API"
+        },
+        {
+          "by": "baalimago",
+          "text": "I'm having trouble finding what this actually is They're entering the search engine scene since they already have \"all of the internet\" stored due to the expansive LLM crawling -> training?"
+        }
+      ],
+      "image": "https://api-docs.deepseek.com/img/deepseek-social-card.jpeg"
+    },
+    {
+      "id": 50131189,
+      "url": "https://github.com/mikroverk/esp32sim",
+      "hn": "https://news.ycombinator.com/item?id=50131189",
+      "title": "Show HN: Esp32sim – Run ESP32 firmware in the browser",
+      "time": 1792245068,
+      "points": 172,
+      "depth": [
+        {
+          "text": "someone made an **ESP32 emulator** that runs **firmware in a browser** without physical hardware",
+          "tier": "simple"
+        },
+        {
+          "text": "The **open-source** project’s maker wants embedded developers to say what it needs before they’d use it for **development, testing or CI**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 32,
+      "terms": [
+        "ESP32",
+        "emulator",
+        "firmware",
+        "CI",
+        "CI/CD",
+        "IoT",
+        "BLE",
+        "WebAssembly",
+        "flight controller"
+      ],
+      "entities": [
+        "esp32sim",
+        "ESP32",
+        "WebAssembly",
+        "Liftlab",
+        "Wokwi",
+        "RP2350",
+        "ESP32-S3",
+        "C6",
+        "P4"
+      ],
+      "comments": [
+        {
+          "by": "mrtksn",
+          "text": "Very cool, that was something I was looking into very recently. I vibe coded a drone simulator that flys drones by simulating ESP32 in the browser where the actual flight controller C code that runs on real ESP32 is running as WebAssembly: https://mrtksn.github.io/liftlab/ So the drones are flying with the actual ESP32 flight controller and you can flash the real ESP32 board directly."
+        },
+        {
+          "by": "raminf",
+          "text": "Outstanding! Very cool. On a lot of IoT projects, it's easier to create a \"functional\" software simulator for the hardware part so the mobile and cloud people can get going without having to wait for test hardware. Those simulators work at the level of emulating BLE or WiFi/API commands. Once you have hardware, the simulators are only used in CI/CD testing. Where I can see this coming handy is…"
+        },
+        {
+          "by": "snakeman",
+          "text": "Very nice! Are you planning P4 support?\nHave lots of S3 units and some C6, but P4 are the ones getting the most attentation at the moment."
+        },
+        {
+          "by": "Klovy",
+          "text": "This emulator is actually pretty cool — especially since it’s based on an ESP32; you can do all sorts of neat things with it, even simple ones:)"
+        },
+        {
+          "by": "djmips",
+          "text": "Is there one for RP2350?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50137620,
+      "url": "https://www.readtheprofile.com/p/elizabeth-holmes-documentary-you-can-see-everything",
+      "hn": "https://news.ycombinator.com/item?id=50137620",
+      "title": "How the Elizabeth Holmes documentary “You Can See Everything” is deceiving",
+      "time": 1792293589,
+      "points": 161,
+      "depth": [
+        {
+          "text": "someone made a **documentary** that keeps changing how you see **Elizabeth Holmes** and the people around her",
+          "tier": "simple"
+        },
+        {
+          "text": "Directors **Lance Oppenheim** and **Nathan Fielder** use camera angles, close-ups, editing, and the order in which information is revealed to make viewers reconsider the people on screen. The article says Fielder moved in with the couple for a whole month before Holmes headed to prison.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some viewers found the film clever and mind-bending; others found it exhausting, while some called the article’s point obvious.",
+      "comment_count": 188,
+      "terms": [
+        "framing",
+        "villain edit"
+      ],
+      "entities": [
+        "You Can See Everything",
+        "Elizabeth Holmes",
+        "Theranos",
+        "Lance Oppenheim",
+        "Nathan Fielder",
+        "Canon"
+      ],
+      "comments": [
+        {
+          "by": "why_at",
+          "text": "I just watched this movie tonight and it's one of those where I feel like everyone else saw a different film. For me it was too little butter spread over too much bread. All the interesting parts of the Holmes/Theranos story have been explored, so all that's left is her personal life with her new partner who's also a weirdo. At best I can say that it makes you think about things like deceit and…"
+        },
+        {
+          "by": "samschooler",
+          "text": "I don't think there is any magic sauce to this movie. I saw it yesterday, and do agree (spoilers ahead) there are three acts: deception, sympathetic, puppeteer. I feel though that this article treats the movie as if its some sort of hypnosis; it's not. Its a very well put together movie that makes you question everything thats happening. I and others came out of it largely questioning: A. Is she…"
+        },
+        {
+          "by": "jdorfman",
+          "text": "No one including my wife was interested in seeing it so I went by myself. It was long, but interesting. The author hits the nail on the head: “You sit there believing you’re watching a documentary about a woman who deceived the world, only to discover that you’re also watching a demonstration of how easy it is to deceive you.” I couldn’t agree more."
+        },
+        {
+          "by": "drayfield",
+          "text": "It won't deceive me, I went to one of Canada's top business schools and got really good grades."
+        },
+        {
+          "by": "ksymph",
+          "text": "This article falls into the same trap, I dunno what to call them, artsy-upper-class-society-and-film reviewers often do; writing vague yet meaningful-sounding things about the obvious subtext of a movie as if it was a revelation, yet without any specific observations about it. Yes, this is a documentary about a person. And how the documentary is presented will color your perspective of the…"
+        }
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!3ARQ!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F060f86f0-a951-4a8e-8e6c-e92a3165e240_1920x1080.jpeg"
+    },
+    {
+      "id": 50119315,
+      "url": "https://frozenfractal.com/blog/2026/10/12/around-the-world-34-a-pretty-sky/",
+      "hn": "https://news.ycombinator.com/item?id=50119315",
+      "title": "Rendering pretty sky in Around The World game",
+      "time": 1792163203,
+      "points": 150,
+      "depth": [
+        {
+          "text": "someone made the **clouds** and **sky** in an ocean-exploration game look more natural",
+          "tier": "simple"
+        },
+        {
+          "text": "The author wrote a **Rust ray tracer** and confirmed that povray does not simulate **multiple scattering**. They also pointed cloud normals toward the sky; the clouds took on a blueish hue and blended in better.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 11,
+      "terms": [
+        "ray tracer",
+        "multiple scattering",
+        "indirect light",
+        "lookup table",
+        "shader",
+        "HDR",
+        "tone mapping",
+        "orrery",
+        "radiance",
+        "irradiance"
+      ],
+      "entities": [
+        "Around The World",
+        "Frozen Fractal",
+        "Thomas ten Cate",
+        "Rust",
+        "povray",
+        "Godot"
+      ],
+      "comments": [
+        {
+          "by": "AceJohnny2",
+          "text": "About cloud rendering: In 2008 a college friend wrote his thesis on real-time realistic rendering of clouds: https://maverick.inria.fr/Publications/2008/BN08b/ You can see screenshots of that work in his thesis defense slides https://theses.hal.science/tel-00319974/file/defense.pdf That's where I learned about the transference phase function (slide 24), which includes two spikes on the return…"
+        },
+        {
+          "by": "wyrdcurt",
+          "text": "Oh wow, thanks for this. I'm working on a game with some similarities to this (at least in the sense of \"includes ocean travel\"). Just this week I was working on a sky shader in Godot, and have yet to implement clouds. That whole series of articles looks relevant to my interests... ocean/wave rendering is also on my to-do list. Game itself sounds interesting and I look forward to playing. > \"On…"
+        },
+        {
+          "by": "shrx",
+          "text": "The light is also reflected from the Earth back into the sky, e.g. over bodies of water."
+        },
+        {
+          "by": "kylecazar",
+          "text": "I'd love to play the game when it's ready. I don't play much of anything but was searching for open-world sailing/exploration games very recently on Steam. Sounds like exactly what I was looking for... Strange coincidence."
+        },
+        {
+          "by": "hbrav",
+          "text": "I love this as a concept for a game."
+        }
+      ],
+      "image": "https://frozenfractal.com/blog/2026/10/12/around-the-world-34-a-pretty-sky/poster.jpg"
+    },
+    {
+      "id": 50103164,
+      "url": "https://www.cppstories.com/2026/cpp26_contracts/",
+      "hn": "https://news.ycombinator.com/item?id=50103164",
+      "title": "C++26 Contracts: Introduction to Preconditions and Postconditions",
+      "time": 1792069886,
+      "points": 150,
+      "depth": [
+        {
+          "text": "someone can put **function requirements** and **return promises** directly into C++ declarations",
+          "tier": "simple"
+        },
+        {
+          "text": "A **precondition** says what’s expected on entry; a **postcondition** says what’s expected on normal return. The selected policy can **ignore a check**, report a violation, or stop execution; expected input errors still need ordinary control flow.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: critics see a fancier runtime assert with questionable value; supporters are bullish on contracts and want to see where they go.",
+      "comment_count": 183,
+      "terms": [
+        "precondition",
+        "postcondition",
+        "evaluation semantics",
+        "contract_assert(...)",
+        "NDEBUG",
+        "undefined behavior"
+      ],
+      "entities": [
+        "C++26",
+        "C++",
+        "GCC",
+        "P2900",
+        "Eiffel",
+        "D",
+        "Zortech C++"
+      ],
+      "comments": [
+        {
+          "by": "cogman10",
+          "text": "I don't like it. I'm all for signing up for a contract if it can turn a runtime error into a compile time error. However, this looks like it just makes more runtime errors. At that point, these seem no better than `assert` except for the fact that they promise to really assert (probably). The article also points out a big problem which is \"Importantly, this aspect of Contracts is why contract…"
+        },
+        {
+          "by": "WalterBright",
+          "text": "I used to be a big fan of contracts, and even implemented it in the Zortech C++ compiler back in the 90's: https://www.digitalmars.com/ctg/contract.html I implemented it in D as well. But, it just turned out to not be very useful."
+        },
+        {
+          "by": "ZuLuuuuuu",
+          "text": "This reminds me the \"Design by Contract\" concept from Eiffel programming language: https://en.wikipedia.org/wiki/Design_by_contract https://www.eiffel.com/values/design-by-contract/introductio..."
+        },
+        {
+          "by": "gavinray",
+          "text": "Random tidbit: I wrote a GCC compiler plugin years ago to add Contracts to C/C++ while waiting for this to make it into the standard https://gavinray97.github.io/blog/adding-invariant-to-cpp-de... The post turned out to be more useful for an intro to writing GCC plugins than anything, but at least I had fun"
+        },
+        {
+          "by": "tsukikage",
+          "text": "The article makes no mention of optimisation use cases. In case anyone already knows off the top of their heads and before I start digging for the answer, is part of the intent here for these to inform the optimiser stages, perhaps similarly to what the if (!(some_condition)) { __builtin_unreachable(); } idiom can achieve?"
+        }
+      ],
+      "image": "https://www.cppstories.com/2026/images/contracts.png"
+    },
+    {
       "id": 50136881,
       "url": "https://meidasnews.com/news/zuckerbergs-meta-takes-down-no-kings-instagram-during-massive-protest-day",
       "hn": "https://news.ycombinator.com/item?id=50136881",
@@ -656,6 +980,39 @@
     }
   ],
   "glossary": {
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "RAG": "Retrieval-Augmented Generation: a way for an AI to look up material and use it when answering.",
+    "Markdown": "A plain-text way to format notes with headings, lists, and code.",
+    "QPS": "Queries per second: how many requests an account can send in one second.",
+    "MCP": "Model Context Protocol: a standard way for AI apps to connect to outside tools.",
+    "SNR": "Signal-to-noise ratio: how much useful information there is compared with irrelevant material.",
+    "ESP32": "A small computer board that can connect to Wi-Fi and control electronics.",
+    "emulator": "A program that imitates another service so you can try your software without using the real one.",
+    "firmware": "The built-in software that tells a device's hardware how to work.",
+    "CI": "Continuous integration: automatic checks that run when developers change code, helping catch problems early.",
+    "CI/CD": "Continuous Integration and Continuous Delivery or Deployment: ways to automatically check code changes and get software ready to release.",
+    "IoT": "Internet of Things: everyday devices connected to the internet so they can share information or be controlled remotely.",
+    "BLE": "Bluetooth Low Energy: a way for nearby devices to exchange data while using little power.",
+    "WebAssembly": "A way to run compiled programs inside a web browser.",
+    "flight controller": "The part of a drone that controls how it moves.",
+    "framing": "The way a film presents someone or something, which can steer how viewers see it.",
+    "villain edit": "A way of showing someone so viewers see them as the bad guy.",
+    "ray tracer": "A program that makes images by working out how light would bounce around a scene.",
+    "multiple scattering": "When light bounces more than once inside something, changing how much light comes back out.",
+    "indirect light": "Light that reaches something after bouncing or spreading from elsewhere, rather than coming straight from its source.",
+    "lookup table": "A pre-made chart a program checks to find a result instead of working it out each time.",
+    "shader": "A small program that tells a game how to draw an image or surface.",
+    "HDR": "High Dynamic Range: a way for a screen to show more detail in bright and dark areas.",
+    "tone mapping": "A way to fit very bright image values onto a screen so they can be displayed.",
+    "orrery": "A model that shows how a planet and its moon move around.",
+    "radiance": "A way to describe how much light is traveling in a given direction.",
+    "irradiance": "A way to describe how much light arrives on a surface.",
+    "precondition": "A condition the caller is expected to have made true before a function starts.",
+    "postcondition": "A promise about what will be true if a function finishes normally.",
+    "evaluation semantics": "The rule for what happens when a contract check fails.",
+    "contract_assert(...)": "A check inside a function that says what should be true at that point.",
+    "NDEBUG": "A named build setting that makes the usual check disappear when it is defined.",
+    "undefined behavior": "A situation where C++ gives no guarantee about what the program will do.",
     "rate limit": "A rule that caps how often someone can make requests to a site.",
     "automated suspension": "A temporary account block triggered by software rather than a person.",
     "zooxanthellae": "Algae that live in coral and help it get energy.",
@@ -666,7 +1023,6 @@
     "Mermaid": "A text-based way to describe a diagram so a tool can draw it.",
     "SVG": "Scalable Vector Graphics: a picture format that stays sharp when resized.",
     "CSS variables": "Named settings in a webpage's styling that you can reuse, such as a color or font.",
-    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
     "FOUC": "Flash of Unstyled Content: the brief moment when a page appears before its intended look has loaded.",
     "subgraph": "A smaller group of connected steps inside a diagram.",
     "reserve asset": "Something a country's government keeps as a store of value it can use when needed.",
@@ -679,7 +1035,6 @@
     "NOOMBY": "Not Out of My Backyard: a label for people who oppose a project near their home.",
     "source code": "The written instructions that tell a computer how to run a program.",
     "e-voting": "Casting votes electronically, rather than using a paper ballot.",
-    "firmware": "The built-in software that tells a device's hardware how to work.",
     "CVR": "Cast Vote Record: an electronic record of votes cast in an election.",
     "RNG": "Random number generator: a tool or program that produces numbers meant to seem unpredictable.",
     "risk limiting audit": "A check that uses a sample of paper ballots to catch an election result that may be wrong.",
