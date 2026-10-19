@@ -2,6 +2,1098 @@
   "date": "2026-10-19",
   "cards": [
     {
+      "id": 50152307,
+      "url": "https://marc.info/?l=openbsd-ports&m=179236125692175",
+      "hn": "https://news.ycombinator.com/item?id=50152307",
+      "title": "Wine ported to OpenBSD",
+      "time": 1792416934,
+      "points": 468,
+      "depth": [
+        {
+          "text": "someone got **64-bit Windows software** running on **OpenBSD**, including games like The Witcher 3",
+          "tier": "simple"
+        },
+        {
+          "text": "They've tested **several dozens** of 64-bit Windows software, mostly successfully. The Remaster of **The Witcher 3** runs well, but requires vkd3d-proton. **WoW64** doesn't work, so 32-bit Windows software is still a no-op.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 154,
+      "terms": [
+        "Wine",
+        "port",
+        "OpenBSD",
+        "WoW64",
+        "vkd3d-proton",
+        "X server"
+      ],
+      "entities": [
+        "OpenBSD",
+        "Wine",
+        "Andrii",
+        "Fabien",
+        "Thomas Frohwein",
+        "The Witcher 3",
+        "vkd3d-proton",
+        "Notepad++",
+        "ffmpeg"
+      ],
+      "comments": [
+        {
+          "by": "haunter",
+          "text": "Gameplay videos Disco Elysium https://video.gamerstavern.online/w/qYjXr8dBauynzvEquJ7cP4 Hollow Knight https://video.gamerstavern.online/w/8tjjFRDtGJQZwxfE4ojVoC Prey 2017 https://video.gamerstavern.online/w/vNxVThRcpijbT9FAQPcKdz Death Stranding https://video.gamerstavern.online/w/rzz2TLCxcmneHsydukAFLU Witcher 3 Remastered https://video.gamerstavern.online/w/oZcTRKL5JMiU4M4FqGKcNH According to…"
+        },
+        {
+          "by": "t-3",
+          "text": "https://marc.info/?l=openbsd-ports&m=179241414029592 > I doubt much will be merged upstream. Many updates we have can technically\nrun on other OSes (%gs stubs won't be built on Linux because %gs is correctly set, SIGUSR1 will work but less optimally, etc). However I picked an approach where everything that is done for OpenBSD is just marked as OpenBSD only. I did that purely to simplify my life…"
+        },
+        {
+          "by": "RunSet",
+          "text": "Especially welcome news now that OpenBSD is shaping up to be a refuge from slopcode. https://marc.info/?l=openbsd-tech&m=177411620801633&w=2"
+        },
+        {
+          "by": "ataraxia937",
+          "text": "I find it amusing and appropriate that the surname of the author of that message is Frohwein. \"Happy wine\" in German."
+        },
+        {
+          "by": "philipallstar",
+          "text": "Missed opportunity to call it Port."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50154518,
+      "url": "https://po-ru.com/2026/10/18/why-im-no-longer-updating-this-repository",
+      "hn": "https://news.ycombinator.com/item?id=50154518",
+      "title": "I no longer care to work on any Ruby gems so I've archived all my repositories",
+      "time": 1792427830,
+      "points": 396,
+      "depth": [
+        {
+          "text": "someone **archived all their Ruby gem repositories** after losing enthusiasm for contributing amid **LLM agents**",
+          "tier": "simple"
+        },
+        {
+          "text": "Paul Battley says Ruby itself is now substantially developed using **LLM agents**, while Matz says those models need more **good human-written Ruby code**. Battley no longer wants to contribute to a commons being **strip-mined by massive corporations**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say LLMs drain the joy and human collaboration from coding; others say they make creative work possible or that coding is still fun.",
+      "comment_count": 372,
+      "terms": [
+        "Ruby gem",
+        "LLM agents",
+        "Rails"
+      ],
+      "entities": [
+        "Ruby",
+        "Rails",
+        "Rust",
+        "Paul Battley",
+        "Yukihiro Matsumoto"
+      ],
+      "comments": [
+        {
+          "by": "ttul",
+          "text": "I was chatting with a friend who commits on a very well known open source project (~80K stars). He is disillusioned not because the robots aren't good at what they do -- they totally are. The sad thing is that he enjoyed writing code and working with the community on improvements because it was a very human, collaborative thing to do. So, while the robots are great at pushing the project forward…"
+        },
+        {
+          "by": "newprint",
+          "text": "One thing that strikes me about what is going on: we have been promised this renaissance in software, yet, it been 2-3y of accelerated agentic/LLM development and I haven't see anything great coming out of the LLM developed software world that is worth looking at. Let's take open source as an example: No new 3d/2d CAD packages that are more capable than Blender/FreeCad/KiCad, nor Blender/FreeCad…"
+        },
+        {
+          "by": "lbrito",
+          "text": "What a great phrase! >When people claim that it’s no longer sustainable to write code by hand, they’re not entirely wrong, but only in the same way that it’s no longer sustainable to sleep in a bed once someone has taken a shit in it."
+        },
+        {
+          "by": "rglover",
+          "text": "I have a strange feeling that we'll see an increasing number of these to the point where we'll start to see legitimate issues in ecosystems as real talent exits (due to projects no longer evolving, being deprecated, etc as a response to AI). Will be quite funny when there's a noticeable decline in stability and development—despite having AI—because it turns out you actually need talented…"
+        },
+        {
+          "by": "swiftcoder",
+          "text": "One of the most underrated abilities in this industry is knowing when to walk away from something that no longer bring you joy. It's sad that it has come to this, but I'm sure the OP will find something more fun to do with their time."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50134472,
+      "url": "https://chriskiehl.com/article/it-is-still-ok-to-enjoy-programming",
+      "hn": "https://news.ycombinator.com/item?id=50134472",
+      "title": "It's still ok to enjoy programming",
+      "time": 1792266800,
+      "points": 364,
+      "depth": [
+        {
+          "text": "someone says you can still **enjoy programming** for fun, even as **AI changes work**",
+          "tier": "simple"
+        },
+        {
+          "text": "The writer is making a **buggy Breakout clone** by hand and has explored **type safety in Java** and recursion schemes. The point is the **challenge and fun**, not economic justification; they also say vibe-coding can be fun.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say AI is taking the enjoyable parts of programming and a hobby can't replace what work used to provide; others say programming remains rewarding for its own sake, or that AI-assisted coding is fun too.",
+      "comment_count": 356,
+      "terms": [
+        "vibe-coding",
+        "type safety",
+        "dependently typed languages",
+        "recursion schemes",
+        "Monoids"
+      ],
+      "entities": [
+        "Claude",
+        "Breakout",
+        "Java",
+        "Agda",
+        "Fin",
+        "Monoids",
+        "3Brown1Blue"
+      ],
+      "comments": [
+        {
+          "by": "etra0",
+          "text": "Even if work is not life, hobby programming also has been affected. I worked hard a couple of years ago to reverse engineer a game to produce a very specific tool. Recently, the game was updated, so I worked on my free time to do a free contribution to the community, and then, a few hours later a tool that does the same thing appeared entirely vibecoded. Even if some parts of the community care…"
+        },
+        {
+          "by": "tptacek",
+          "text": "I think it was Daniel Berlin who pointed this out a few months ago, but this is exactly the arc of the hand-tool woodworker. If you need to furnish an office, you're going to rent or buy mass-produced office furniture. If you want to bang out custom pieces, there's a whole assortment of power tools to buy, from router tables to cut brain-dead dovetails to domino joiners. You don't really have to…"
+        },
+        {
+          "by": "searls",
+          "text": "I suspect that many of the loudest voices pushing back against AI coding tools never practiced programming as a hobby or saw it as especially fun, and the fact their job is changing won't make them start now. I think just about everyone in the industry appreciated hand-typed programming as a job, because it was a pleasant enough craft to practice and for a solid couple of decades programmers were…"
+        },
+        {
+          "by": "iqp",
+          "text": "As someone whose whole identity was built around programming I mourn it daily. But I do think it's wonderful that people can realize their ideas now. E.g. I've seen a lot of vibe coded retro games lately, and while they're clearly lacking craftsmanship in some areas (e.g. not crunching your binary, bad looking AI load screens, & just a general lack of polish) I have to remind myself that these…"
+        },
+        {
+          "by": "hollowturtle",
+          "text": "> Yes, at work, where you are paid to produce value for a business, the economics of purely hand-written code have changed I'd love to genuinely love these blog posts but they are all the same! They're all like \"now that machine are better than us $xyzargument\". I'm so pissed off when I read so blantant lies like AI \"writing code better than me\" maybe better than you! But in general it's just a…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50154540,
+      "url": "https://www.minimax.io/blog/minimax-m31f",
+      "hn": "https://news.ycombinator.com/item?id=50154540",
+      "title": "MiniMax M3.1 Flash",
+      "time": 1792427949,
+      "points": 315,
+      "depth": [
+        {
+          "text": "MiniMax says its new **AI model** handles **coding and agent tasks** faster, for less",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: some commenters say Space Bunny disappointed in real use and that benchmark scores mislead; others report MiniMax has tested strongly and praise the value of cheaper models.",
+      "comment_count": 132,
+      "terms": [
+        "agentic tasks",
+        "inference",
+        "TPS",
+        "benchmark",
+        "model weights",
+        "cached input",
+        "SaaS",
+        "sparsity"
+      ],
+      "entities": [
+        "MiniMax",
+        "MiniMax M3.1 Flash",
+        "Space Bunny",
+        "MiniMax API",
+        "M Plan",
+        "MiniMax Code",
+        "AutomationBench-AA",
+        "BankerToolBench",
+        "DeepSWE",
+        "OSWorld V2",
+        "Agents’ Last Exam",
+        "CyberGym"
+      ],
+      "comments": [
+        {
+          "by": "DCKing",
+          "text": "This model seems to be pretty benchmaxed. In actual use, it doesn't survive the comparison to models in the benchmark. This model was released as a \"stealth model\" in OpenCode Go for a while as \"Space Bunny\" (they mention this in the blog). So people have been using without knowing what the model was exactly, but it failed to impress anyone as far as I can tell. This is despite the model being…"
+        },
+        {
+          "by": "quixoticelixer-",
+          "text": "I'm finding is very hard to figure out when it's better to go for a cheaper dumber model vs an better expensive one when the expensives ones get stuff done quicker."
+        },
+        {
+          "by": "syntaxing",
+          "text": "The cost vs performance is insane for all these new models. I’ve been using Deepseek Flash 1017 and it does whole projects and asks for $0.10 on US provider with ZDR on Openrouter. I convinced a few friends to drop their Claude $20 subscription because DS Flash 1017 brings so much better value. They can still use Opus 5.5 for planning though each call will cost north of $2. Excited to try this…"
+        },
+        {
+          "by": "mawadev",
+          "text": "I go off of marketing obviously, but how is every new announcement of any vendor always on top of all others and then cheaper, while next day the next best and even cheaper model pops up? Is there anyone who independently verifies this? Its kind of pointless to comment on this announcement, much like how its pointless to comment on all the other announcements..."
+        },
+        {
+          "by": "minimaxir",
+          "text": "> For agentic tasks, the model’s overall usage cost is 70% lower than its predecessor. For this release, the cost is $0.15 input MToK/$0.60 output MTok/$0.015 cache read MTok, In this case the predecessor is MiniMax M3 (not Flash), which was $0.30 input MToK/$1.20 output MTok/$0.06 cache read MTok. So a 50% cut to input costs and a 50% proportional cut to cache read costs (20% of input -> 10% of…"
+        }
+      ],
+      "image": "https://filecdn.minimax.chat/public/m31-flash-zh-1-1792403273121.png?x-oss-process=image/format,webp"
+    },
+    {
+      "id": 50153630,
+      "url": "https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/",
+      "hn": "https://news.ycombinator.com/item?id=50153630",
+      "title": "CERN and Mistral sign a statement of intent to establish a strategic partnership",
+      "time": 1792423704,
+      "points": 294,
+      "depth": [
+        {
+          "text": "CERN and Mistral plan a long-term partnership to build an **AI model** for **particle physics**",
+          "tier": "simple"
+        },
+        {
+          "text": "Their statement of intent aims to create the **first foundation model for collider physics**, trained on **billions of simulated proton-proton collisions** at CERN’s Large Hadron Collider. It’s meant to reconstruct collisions, identify particles, flag unexpected signals and evaluate future detector designs.",
+          "tier": "substance",
+          "data": [
+            [
+              "training data",
+              "billions of simulated proton-proton collisions"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some welcome AI being applied to science; others want to see convincing scientific contributions from modern AI first.",
+      "comment_count": 55,
+      "terms": [
+        "foundation model",
+        "LHC",
+        "proton-proton collisions",
+        "boosted decision trees",
+        "exabyte"
+      ],
+      "entities": [
+        "CERN",
+        "Mistral",
+        "Large Physics Model",
+        "Large Hadron Collider",
+        "Enrica Porcari",
+        "Johannes Brandstetter"
+      ],
+      "comments": [
+        {
+          "by": "timbaboon",
+          "text": "Man, when I was doing my PhD at CERN the most far out thing that we were generally allowed to use was boosted decision trees :) getting anything other than that approved for any Higgs-related analysis was… not a thing."
+        },
+        {
+          "by": "niemandhier",
+          "text": "The thing a CERN is: You have some of the smartest and most educated people on the planet, and they are all super motivated to excel. It’s one of the coolest environments one can be in. You can righteously wall yourself into a room and solve a problem. I do hope that this is the start of something cool."
+        },
+        {
+          "by": "Revanche1367",
+          "text": "Finally! As a SWE, I was getting worried scientists would be left out of the increasingly-worried-about-getting-replaced club that SWEs and mathematicians are currently enjoying being members of."
+        },
+        {
+          "by": "mahnen",
+          "text": "I like this, and CERN might be closer to a potential European solution for us than you think, CERN was built on the premise that nuclear technology was too dangerous for anyone single nation to have. So they decided to collaborate. Today they’re one of the biggest compute in the world, they have the strongest data interconnects, multi gigawatts of power and their deeply embedded in science…"
+        },
+        {
+          "by": "havaianaslife",
+          "text": "I hope European university networks and their underfunded labs will join forces as soon as possible with other European national research centers."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50150927,
+      "url": "https://spectrum.ieee.org/alternatives-to-animal-testing",
+      "hn": "https://news.ycombinator.com/item?id=50150927",
+      "title": "Alternatives to animal testing are finally taking off",
+      "time": 1792408254,
+      "points": 295,
+      "depth": [
+        {
+          "text": "researchers are trying **human-cell chips**, but replacing animal tests still means **changing rules and habits**",
+          "tier": "simple"
+        },
+        {
+          "text": "Emulate’s lung chip puts human lung and endothelial cells on opposite sides of a membrane; vacuum channels stretch and relax the tissue to mimic breathing. A liver-on-a-chip study **flagged about seven out of every eight drugs** that had safely passed animal trials but proved toxic to human livers. Wider use still depends on **validation** and changes to policy, training, and research culture.",
+          "tier": "substance",
+          "data": [
+            [
+              "drugs flagged",
+              "about seven out of every eight"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters see human-cell models as a welcome way to improve research; skeptics say they are not ready to replace animals and lack proof they are as good.",
+      "comment_count": 91,
+      "terms": [
+        "NAMs",
+        "organ-on-a-chip",
+        "microfluidic",
+        "endothelial cells",
+        "organoids",
+        "validation",
+        "proprietary"
+      ],
+      "entities": [
+        "Emulate",
+        "TissUse",
+        "FDA",
+        "NIH",
+        "Wyss Institute",
+        "Donald Ingber",
+        "Ilka Maschmeyer",
+        "Thomas Hartung",
+        "Christian Maass",
+        "Kathrin Herrmann",
+        "Joseph Wu",
+        "Greenstone Biosciences",
+        "DeepMind"
+      ],
+      "comments": [
+        {
+          "by": "PaulHoule",
+          "text": "Whenever i go all the way to the east coast I run into these guys https://en.wikipedia.org/wiki/Horseshoe_crab And because of the unusual nature of their blood they can be used to test the bacteriological safety of injectable drugs. I remember an exhibit about them at the Boston Children's Museum because it was a big deal in Boston because of the pharma industry concentration in the area. A test…"
+        },
+        {
+          "by": "willmeyers",
+          "text": "As slow as it may be to adopt, it's a welcome change to how people should do research. Why induce suffering on an animal when the potential for failure and or miscalculation is so high? It seems from the article a model/chip can be more insightful on how something will affect humans."
+        },
+        {
+          "by": "Spacecosmonaut",
+          "text": "The dirty little secret of human organoid models is that they are grown in a matrix (e.g. Matrigel) that is derived from a tumor that secretes this matrix, which is grown in a mouse host. The mouse of course is \"sacrificed\" to harvest this matrix."
+        },
+        {
+          "by": "jrflo",
+          "text": "*for drug trials. I imagine animal testing will remain required for implants, surgical instruments, and imaging for quite a long time."
+        },
+        {
+          "by": "Aboutplants",
+          "text": "Ah lest we forget about Jevons Paradox. With the ability to discover a nearly infinite number of potential breakthroughs, we are going to need more animal testing than ever! (Sarcasm but also some potential truth)"
+        }
+      ],
+      "image": "https://spectrum.ieee.org/media-library/a-photo-shows-a-hand-holding-a-small-clear-plastic-device-with-red-and-blue-lines-inside-it.jpg?id=67819184&width=1200&height=600&coordinates=0%2C834%2C0%2C834"
+    },
+    {
+      "id": 50150089,
+      "url": "https://www.youtube.com/watch?v=Ndftcft6XhU",
+      "hn": "https://news.ycombinator.com/item?id=50150089",
+      "title": "I built a drone with only one motor [video]",
+      "time": 1792400707,
+      "points": 274,
+      "depth": [
+        {
+          "text": "someone built a **one-motor drone** that controls **rotor lift** with an unusual hinge design",
+          "tier": "simple"
+        },
+        {
+          "text": "A **special hinge**, magnetic encoder and torque modulation control the rotor's lift as it spins, eliminating the need for a conventional helicopter's **swash plate**. The downside: it spins once airborne, and one commenter thinks a two-motor drone with a tail motor might be more practical.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 51,
+      "terms": [
+        "magnetic encoder",
+        "torque modulation",
+        "swash plate",
+        "underactuated robotics",
+        "MCU"
+      ],
+      "entities": [
+        "Joshua Bird",
+        "BattleBots",
+        "Picocolissimo",
+        "Manhack",
+        "moteus",
+        "Turntide"
+      ],
+      "comments": [
+        {
+          "by": "ghm2180",
+          "text": "I was wondering did he use the control mixer MCU initially at all? The encoder should always feed into the MCU directly."
+        },
+        {
+          "by": "TGower",
+          "text": "Underactuated robotics are so cool. In the hobby BattleBots community, there is a design where the whole robot only has a single motor, but it's able to move in any direction and damage the opponent, all just by controlling the single motor's speed. Most robots have at least three motors, two drive sides and a weapon motor. The trick to getting away with one is integrating an impactor into the…"
+        },
+        {
+          "by": "nadermx",
+          "text": "This is well worth the entire watch. It feels like what would any hacker do in trying to figure out how to make something they want to exist. Also very well presented and good pace. Inspires me to try and start doing some robotics."
+        },
+        {
+          "by": "_joel",
+          "text": "This is from the same guy (Joshua Bird) that built the 4 axis 3d printer (and special algo for it too) https://www.youtube.com/watch?v=VEgwnhLHy3g"
+        },
+        {
+          "by": "leoedin",
+          "text": "A really neat concept. It uses a special hinge design, a magnetic encoder and torque modulation to control the lift of the rotor as it spins. Completely negates the need for a conventional helicopter's swash plate. The single motor does have the pretty major downside that it spins the moment it's in the air. I suspect a 2 motor drone with a tail motor would be a lot more practical. But I really…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50150809,
+      "url": "https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166",
+      "hn": "https://news.ycombinator.com/item?id=50150809",
+      "title": "Let's Encrypt is adding two additional remote perspectives for domain validation",
+      "time": 1792407219,
+      "points": 235,
+      "depth": [
+        {
+          "text": "Let's Encrypt is adding **two remote checks** to make domain validation **harder to hijack**",
+          "tier": "simple"
+        },
+        {
+          "text": "That means **seven validation requests**: one from the primary datacenter and six remote perspectives, up from four. Let's Encrypt says this makes hijacking harder, though a commenter notes an attacker still got a certificate despite multi-perspective validation.",
+          "tier": "substance",
+          "data": [
+            [
+              "validation requests total",
+              "7"
+            ],
+            [
+              "remote perspectives",
+              "6 (previously 4)"
+            ],
+            [
+              "staging rollout",
+              "Tuesday, October 27th, 2026"
+            ],
+            [
+              "production rollout",
+              "Tuesday, November 10th, 2026"
+            ],
+            [
+              "Baseline Requirements effective date",
+              "2026-12-15"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: Let's Encrypt says wider coverage improves protection; a commenter says checks can still fail if a hijacked route sends them all to the same false destination.",
+      "comment_count": 76,
+      "terms": [
+        "domain validation",
+        "remote perspective",
+        "quorum",
+        "CA",
+        "BGP attack",
+        "RPKI",
+        "ACME"
+      ],
+      "entities": [
+        "Let's Encrypt",
+        "Baseline Requirements",
+        "ACME",
+        "BGP",
+        "RPKI",
+        "Hetzner",
+        "Softaculous",
+        "Virtualizor",
+        "C2PA",
+        "S/MIME",
+        "TLS"
+      ],
+      "comments": [
+        {
+          "by": "nbadg",
+          "text": "For anyone else who didn't have \"remote perspectives\" in their personal technical lexicon: this refers to performing the ACME challenge/response check when validating the domain of a certificate signing request from multiple physical locations, and therefore via multiple physical network routes, in order to make network-level attacks more difficult. For example, if you were validating…"
+        },
+        {
+          "by": "throw0101a",
+          "text": "In August an attacker was able to get a certificate issued even with multi-perspective validation: > For 33 hours in late August, a rival network hijacked a block of Hetzner-hosted infrastructure serving Softaculous and Virtualizor, using it to issue a valid TLS certificate and push a malicious software update. The stolen route was RPKI-invalid the entire time, on file, checkable by anyone. It…"
+        },
+        {
+          "by": "Schlagbohrer",
+          "text": "It is wild to think that enabling HTTPS used to be difficult and expensive before Let's Encrypt came along in the wake of the Snowden revelations."
+        },
+        {
+          "by": "Tepix",
+          "text": "It's a shame that now, where S/MIME is a feature of pretty much every mail app, noone uses it outside of businesses. Opportunistic encryption between mail servers isn't good enough. We really need a CA that does for mail what Let's encrypt has done for HTTP: The CA needs to provider proper S/MIME certificates: - free like Let's Encrypt - duration of 1 year or longer and - users generate their own…"
+        },
+        {
+          "by": "dgrabla",
+          "text": "Does anybody know if Let's Encrypt plans to support C2PA certificates?"
+        }
+      ],
+      "image": "https://global.discourse-cdn.com/letsencrypt/original/3X/4/c/4c5760509a18adfc3bc657ba8bd49b301faaa66b.png"
+    },
+    {
+      "id": 50147233,
+      "url": "https://starcraft-shooter-2026.pages.dev/",
+      "hn": "https://news.ycombinator.com/item?id=50147233",
+      "title": "Starcraft: Ashfall",
+      "time": 1792372682,
+      "points": 234,
+      "depth": [
+        {
+          "text": "someone made a **StarCraft fan game** with one-handed play and an **endless mode**",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: some enjoyed the nostalgia; others said it mostly plays itself or isn't fun.",
+      "comment_count": 78,
+      "terms": [
+        "IP",
+        "CG"
+      ],
+      "entities": [
+        "StarCraft: Ashfall",
+        "StarCraft",
+        "Blizzard",
+        "Ji"
+      ],
+      "comments": [
+        {
+          "by": "ggnore7452",
+          "text": "Wow, thanks to whoever posted this! I made this game. Like many, I was frustrated there's no new StarCraft coming till 2030, so I half-jokingly made the mini-game those mobile ads always promise and never deliver. Something you can play with one hand, that your friends who've never played StarCraft can just pick up.(Turns out you can squeeze a lot of extra gameplay/design on top of it.) Also, if…"
+        },
+        {
+          "by": "gbnwl",
+          "text": "Reddit thread from about a month ago where creator introduced this: https://www.reddit.com/r/starcraft/comments/1wqdabw/i_made_t..."
+        },
+        {
+          "by": "neko_ranger",
+          "text": "Wow someone made the youtube ad game!"
+        },
+        {
+          "by": "bulbar",
+          "text": "Cool visuals, but doesn't count as a game for me. Can you do anything that make sense, except selecting the upgrade? Could be a nice little game, though. Strip the IP and let the AI implement a bit more for the user to do."
+        },
+        {
+          "by": "dclaw",
+          "text": "Spectacular. Mad props."
+        }
+      ],
+      "image": "https://starcraft-shooter-2026.pages.dev/share-card.jpg"
+    },
+    {
+      "id": 50154624,
+      "url": "https://github.com/kksimp/Mac.apk",
+      "hn": "https://news.ycombinator.com/item?id=50154624",
+      "title": "Android apps running native on macOS",
+      "time": 1792428330,
+      "points": 218,
+      "depth": [
+        {
+          "text": "someone made a way to **run Android apps** as **ordinary Mac apps** on Apple Silicon",
+          "tier": "simple"
+        },
+        {
+          "text": "Mac.apk is **alpha**: apps appear as macOS processes with **resizable windows**, but some run only partially or not yet. They run as ordinary native code with your macOS account’s permissions, with **no phone-style app sandbox**; the project says to install only APKs you trust.",
+          "tier": "substance",
+          "data": [
+            [
+              "Mac.apk size",
+              "~280 MB"
+            ],
+            [
+              "installed app size",
+              "roughly 1.5 to 3 times its APK size"
+            ],
+            [
+              "first launch",
+              "up to a minute for a large one"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: one commenter says running Android Minecraft lets them play with local console players or join a Bedrock realm; another says they have not found a strong need for phone apps on a Mac.",
+      "comment_count": 100,
+      "terms": [
+        "Apple Silicon",
+        "APK",
+        "emulator",
+        "native code",
+        "app sandbox",
+        "Google Play Services",
+        "API",
+        "certificate pinning"
+      ],
+      "entities": [
+        "Mac.apk",
+        "Android",
+        "Apple",
+        "Apple Silicon",
+        "macOS",
+        "GitHub",
+        "Voltare",
+        "Google",
+        "Claude",
+        "Minecraft",
+        "Bedrock",
+        "Mojang"
+      ],
+      "comments": [
+        {
+          "by": "qalmakka",
+          "text": "> Run Android apps natively on Apple Silicon Macs. No emulator, no virtual machine, no Linux underneath. God damnit Dario fix Claude already so that it stops using this sentence structure once and for all. Opus is so annoyingly recognisable that it has started to irk me badly lately"
+        },
+        {
+          "by": "bilalq",
+          "text": "In practice, the Google Play Services dependencies and other walled-garden initiatives from Google will make this less useful than it could otherwise be. But still, this is really cool."
+        },
+        {
+          "by": "jawiggins",
+          "text": "Recently I've seen these game mods where people combine the game engines of two unrelated games (eg, minecraft and grand theft auto) and end up with a play-able and fun product. I wonder how many areas of computing are about to be transformed by the class of things that used to be impossible because the engineering needed to make it happen has just gone from enterprise level to \"claude please do…"
+        },
+        {
+          "by": "f17428d27584",
+          "text": "Handy for Minecraft players on Mac: windows players may be on Java or on bedrock versions, but mobile and console players are all only on bedrock. Being able to run the Android version on Mac means I can play with local console players or join a bedrock realm. (There are compatibility workarounds if you run your own server but I don’t want the headache of doing so). Perhaps one day Mojang will…"
+        },
+        {
+          "by": "MBCook",
+          "text": "Is this significantly useful to anyone? It’s a neat accomplishment. And it was worth doing for that alone. Absolutely hacker worthy. But as someone with an Apple Silicon Mac, I can run iOS apps on my computer if the developer has allowed it and I don’t. I’ve never come up with an actual need. It turns out it’s never really a problem for me. The few things I use a lot on my phone already have…"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/7281474168bdbf6cc2f0dd3a5b5b0eaa89ba708a14a53fc24dce0bfca77c6ab9/kksimp/Mac.apk"
+    },
+    {
+      "id": 50155245,
+      "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+      "hn": "https://news.ycombinator.com/item?id=50155245",
+      "title": "Mercury 3: Diffusion at scale",
+      "time": 1792430831,
+      "points": 203,
+      "depth": [
+        {
+          "text": "Inception says its new **diffusion model** can **answer quickly** while handling much longer prompts",
+          "tier": "simple"
+        },
+        {
+          "text": "Inception lists **1,068 tokens per second** on NVIDIA GPUs and a **1M-token context**, up from 260K for Mercury 2.5. Launch prices are **50% off**: $0.10 per 1M input tokens and $0.35 per 1M output tokens.",
+          "tier": "substance",
+          "data": [
+            [
+              "speed",
+              "1,068 tokens per second"
+            ],
+            [
+              "context",
+              "1M tokens"
+            ],
+            [
+              "previous context",
+              "260K for Mercury 2.5"
+            ],
+            [
+              "launch input price",
+              "$0.10 per 1M input"
+            ],
+            [
+              "launch output price",
+              "$0.35 per 1M output"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say it feels fast and capable in their tests; others report competitors beating it on latency or intelligence.",
+      "comment_count": 79,
+      "terms": [
+        "diffusion model",
+        "LLM",
+        "tokens",
+        "context",
+        "latency",
+        "API",
+        "open weights",
+        "TTFAT"
+      ],
+      "entities": [
+        "Inception",
+        "Mercury 3",
+        "Mercury 1",
+        "Mercury 2.5",
+        "GPT-6 Luna",
+        "Claude Haiku 5.5",
+        "NVIDIA",
+        "Mind2Web",
+        "GPT-6.1-Sol",
+        "General Learning",
+        "RevisionDojo",
+        "Octen AI",
+        "Sense API",
+        "Lorikeet",
+        "Mercury Voice",
+        "Audivi AI",
+        "Altur",
+        "OpenCall",
+        "Mercury Decide",
+        "Jev",
+        "JevBench",
+        "LegalBench",
+        "Inception API Platform",
+        "OpenRouter",
+        "Baseten",
+        "Vercel",
+        "OpenAI",
+        "Michael Tong",
+        "Kuan Zou",
+        "Michael Gribben",
+        "Google",
+        "Gemini Diffusion",
+        "Diffusion Gemma",
+        "Simon Willison",
+        "JetBrains",
+        "Codex",
+        "GPT-5.4-nano",
+        "JetBrains Air",
+        "Junie Lite",
+        "Qwen 3.6 27B",
+        "Oh My Pi",
+        "AI Roguelite",
+        "DeepSeek V4.1 Flash",
+        "Swift",
+        "Google Translate"
+      ],
+      "comments": [
+        {
+          "by": "simonw",
+          "text": "Pelicans aren't bad, a little quirky: https://tools.simonwillison.net/markdown-svg-renderer?url=ht... Those were via OpenRouter - here's another set I made by calling the Inception API directly: https://tools.simonwillison.net/markdown-svg-renderer?url=ht..."
+        },
+        {
+          "by": "simonw",
+          "text": "I still don't understand why Google did effectively nothing with their Gemini Diffusion demo from last year. It was really cool, and really fast, and just went quiet. They did release a Diffusion Gemma a few months ago but I've not seen much of a splash from that one, either."
+        },
+        {
+          "by": "bpavuk",
+          "text": "love these guys. instead of spending time on something akin to those creepy \"dots\" or obnoxious @Claude in Slack, they ship actual improvements to speed. you can't imagine what kinds of UX a fast LLM can enable! and for coding I have always been a proponent of strong compile-time type systems and handing off only the actual boilerplate typing, all to maximize actual thinking and speed of…"
+        },
+        {
+          "by": "GodelNumbering",
+          "text": "This looks noticeably more capable than previous gen. I purposely gave it a bit of a vague prompt to create an html renderer for UML diagrams, it produced impressive work. Then i asked a question, and in the third prompt I asked it to update the html which it did correctly. Another thing that stood out, and this might just be a novelty thing, is that it picked different and less painful-to-eyes…"
+        },
+        {
+          "by": "Escapado",
+          "text": "Quick review: It's really fast and works really well in my initial tests. I used it to build a little Swift UI app that runs in the background and helps me OCR and translate text[1]. When I hit CMD + Shift + O it selects a portion of the screen (think of the screenshot tool), runs OCR on the portion and throws that at the google translate API and displays the result in a tooltip above / below the…"
+        }
+      ],
+      "image": "https://framerusercontent.com/images/Zgp1I1AaILVgkXF4Xlk7iImaE.png?width=1200&height=630"
+    },
+    {
+      "id": 50152970,
+      "url": "https://www.politico.com/news/magazine/2026/10/18/egg-prices-conspiracy-affordability-issue-01100411",
+      "hn": "https://news.ycombinator.com/item?id=50152970",
+      "title": "Maybe There Was an Egg Cartel After All",
+      "time": 1792420271,
+      "points": 197,
+      "depth": [
+        {
+          "text": "egg producers may have used **fake bids** they never meant to complete to push **prices up**",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter says producers bid for each other’s **surplus inventory** on an exchange called Egg Clearinghouse, Inc., without intending to buy, creating **the illusion of demand**. Another says prices in that small market set prices in the much bigger one.",
+          "tier": "substance",
+          "data": [
+            [
+              "Commenter's estimate of the price increase caused by the cartel",
+              "<1%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some call the bidding collusion; others say it likely explains under 1% of the price increase.",
+      "comment_count": 125,
+      "terms": [
+        "collusion",
+        "surplus exchange",
+        "benchmark price"
+      ],
+      "entities": [
+        "Egg Clearinghouse, Inc.",
+        "Urner Barry",
+        "Justice Department",
+        "Matt Levine",
+        "Matt Stoller"
+      ],
+      "comments": [
+        {
+          "by": "Ajedi32",
+          "text": "So after the surge in prices from normal market forces, they tried to keep prices up by placing high bids on eggs that they never intended to actually purchase. This briefly worked, then the market re-asserted itself and prices cratered. Now, after the fact, the justice department is investigating the bidding shenanigans. Is that a fair summary of the situation? I guess the thing I'm confused…"
+        },
+        {
+          "by": "BashiBazouk",
+          "text": "\"and not even for the lovingly cared-for, cage-free variety\" Which oddly did not increase in price much. I was in a discussion once on a forum and brought up that eggs around me (PNW) were still in the $6 for 18 when everyone else was complaining about $10 for a dozen. Next time I bought eggs, the ones I buy were the same price as always but the normal white eggs were in fact $10 a dozen..."
+        },
+        {
+          "by": "SamBam",
+          "text": "> [Urner Barry] also collects bids that egg producers make for each other’s surplus inventory on an exchange called Egg Clearinghouse, Inc. [It] takes in those bids even before they lead to any sale, as a signal of demand. > they had the ability to create the illusion of [consumer demand] through bids on the surplus exchange for purchases they had no intent of completing This seems like a system…"
+        },
+        {
+          "by": "PowerElectronix",
+          "text": "It seems the system was prone to manipulation. Having prices for high volumen transactions be set by low volume transaction in another market looks pretty silly. If they don't fix that there'll be worse troubles than price gouging by the big producers."
+        },
+        {
+          "by": "xrd",
+          "text": "Yes, it was collusion. Reported also here by Matt Stoller: https://www.thebignewsletter.com/p/crime-pays-the-egg-bandit..."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50151036,
+      "url": null,
+      "hn": "https://news.ycombinator.com/item?id=50151036",
+      "title": "Ask HN: How to deal with shipping AI-written code you don't understand?",
+      "time": 1792409074,
+      "points": 184,
+      "depth": [
+        {
+          "text": "developers are arguing over how much **AI-written code** they need to understand before **shipping it**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter plans the **design** before asking AI to implement pieces; another lists tests, observability metrics/alerts, and backups, with rollback as a fallback. A third says they only ship code they don't understand with a **proof of correctness**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say a clear design and testing make it okay not to know every implementation detail; others say code they don't understand needs a proof of correctness.",
+      "comment_count": 299,
+      "terms": [
+        "LLM",
+        "abstraction",
+        "observability",
+        "rollback",
+        "E2E testing",
+        "UML",
+        "SAST",
+        "ORM",
+        "formally verifiable"
+      ],
+      "entities": [
+        "Meta",
+        "LinkedIn",
+        "Claude Code",
+        "Claude",
+        "Codex",
+        "GitHub Copilot",
+        "Perspica",
+        "zork",
+        "HTML",
+        "JS",
+        "CSS",
+        "SQL"
+      ],
+      "comments": [
+        {
+          "by": "bitwizeshift",
+          "text": "I’m surprised I haven’t see anyone say this yet, but I don’t let the LLM design the code at all, I let it implement a design I have created. By that I mean that, rather than let the LLM do the entire structure, I take the time to create the full hierarchy of abstractions and actors that I want my code to do. I decide, at the UML level, how abstractions will sit and interact — and then I make the…"
+        },
+        {
+          "by": "nisanthan",
+          "text": "Tests, observability metrics/alerts, and backups. Worst case, I can rollback everything to a point-in-time where the system is stable. Its a tradeoff I'm ok making for the increase in speed of features to market. Also depends on your industry. If my app handles money movements in a ledger I wouldn't feel as comfortable with AI development. But incorrectly handling like counters or reposts at Meta…"
+        },
+        {
+          "by": "blackrainbowlab",
+          "text": "My workflow involves research, then technical design documents, then implementation, and a very heavy emphasis on E2E testing."
+        },
+        {
+          "by": "jedberg",
+          "text": "I've been a Principal Engineer for a while, so this is how I've worked for a while. Sometimes when you're a PE, you either design something and then junior engineers implement the details, or you're dropped into a project that was already designed and built by more junior engineers, and you have to quickly understand the design an as many details as you can. With AI, everyone now gets to act like…"
+        },
+        {
+          "by": "ChrisMarshallNY",
+          "text": "Testing. Lots and lots of testing. I usually interactively test with the LLM. Now that I'm spending less time, coding, I get to spend more time, testing. In my experience, I test more, with an LLM, than I did, with my own code. I don't find coding errors, but I do find implementation errors. On another note: I ran an LLM on a bunch of really mature code that I wrote, and could swear was…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50143536,
+      "url": "https://github.com/ardiri/palmos-lemmings",
+      "hn": "https://news.ycombinator.com/item?id=50143536",
+      "title": "PalmOS Lemmings",
+      "time": 1792346219,
+      "points": 152,
+      "depth": [
+        {
+          "text": "someone made a **Lemmings clone** for **PalmOS**, prompting Palm fans to reminisce about their old devices",
+          "tier": "simple"
+        },
+        {
+          "text": "The page says the **source code** is provided **as-is for educational purposes**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 34,
+      "terms": [
+        "PalmOS",
+        "reverse engineering",
+        "WASM"
+      ],
+      "entities": [
+        "PalmOS",
+        "Lemmings",
+        "GitHub"
+      ],
+      "comments": [
+        {
+          "by": "pipes",
+          "text": "Odd coincidence, I downloaded Amiga vision on my pc last night, first thing I loaded up was lemmings. https://amiga.vision/ It is basically a curates set of Amiga games, or as the creators say \"consolised\" Amiga. I'd originally set it up on my mister fpga and it is as close to zero setup on that as possible. Pc version was easy too. 0mhz is a sister project for dos:\nhttps://0mhz.net/ Anyway, not…"
+        },
+        {
+          "by": "nkx1",
+          "text": "Hi, I literally found an old SD card with files last modified from 2005 with a few palm games from then, would anyone find these useful for reverse engineering?"
+        },
+        {
+          "by": "chuliomartinez",
+          "text": "Yeah Aaron is a PalmOS legend. I really liked the palmos c libs, MemCopy and WinCopyBitmap just reads so much nicer than memcpy and memset.\nAlso UInt8 and UInt16:) Those were fun times, when 16bit ints were enough for everyone (just kiding;)"
+        },
+        {
+          "by": "teddyh",
+          "text": "There was also a version of Lemmings on the HP48 calculator: < https://www.hpcalc.org/details/530 > (incidentally by the same author as Alpha Waves, a.k.a. Continuum)"
+        },
+        {
+          "by": "rickcarlino",
+          "text": "This README is begging for historical context and commentary."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/7dfdb741f48266119cf74afc559796a6c5a43200ab283ed45657294a7e78d2a4/ardiri/palmos-lemmings"
+    },
+    {
+      "id": 50156206,
+      "url": "http://peter.eisentraut.org/blog/2026/10/09/the-reverts-will-continue-until-morale-improves",
+      "hn": "https://news.ycombinator.com/item?id=50156206",
+      "title": "The reverts will continue until morale improves",
+      "time": 1792435352,
+      "points": 154,
+      "depth": [
+        {
+          "text": "PostgreSQL developers **reverted features** after **LLM-assisted reviews** surfaced a long list of bugs during beta",
+          "tier": "simple"
+        },
+        {
+          "text": "The author says **about 8 to 10 significant features** were reverted. Some had **significant architectural defects**; others had a long tail of relatively harmless edge cases. Usual beta review and testing was reduced, which may explain why **issues surfaced late**.",
+          "tier": "substance",
+          "data": [
+            [
+              "significant features reverted",
+              "about 8 to 10"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some praise the reverts as responsible quality control; others say the headline unfairly implies incompetent leadership.",
+      "comment_count": 23,
+      "terms": [
+        "LLM-assisted code review",
+        "beta period",
+        "edge case",
+        "revert",
+        "fuzzing",
+        "feature freeze"
+      ],
+      "entities": [
+        "Peter Eisentraut",
+        "PostgreSQL",
+        "REPACK CONCURRENTLY",
+        "pg_plan_advice"
+      ],
+      "comments": [
+        {
+          "by": "sammatilda",
+          "text": "Better to revert than lose a community that is invested in your ecosystem that starts looking elsewhere. I congratulate the team in acknowledging and doing the right thing. As a developer myself, I know it is a painful thing to do but important to listen to the community."
+        },
+        {
+          "by": "moomin",
+          "text": "I’ve experienced this myself. I’ve had to downgrade my opinion of my own code. LLMs are great at pointing out the edge cases that you might have taken years to find. Honestly feels quite dispiriting but we move on."
+        },
+        {
+          "by": "Rapzid",
+          "text": "For those not familiar with the attention economy; the headline is clickbate and not indicative of the articles point."
+        },
+        {
+          "by": "PaulKeeble",
+          "text": "Seems like this is more about the introduction of LLM code reviews that has found edge cases that would have otherwise been missed and fixed as they appeared over years in the future. The issue is that the volume of issues has been beyond what people could do in time."
+        },
+        {
+          "by": "swiftcoder",
+          "text": "Reverts kind of suck when it's your feature getting reverted, no doubt. But for something as foundational as Postgres, the more reverts the better..."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50139873,
+      "url": "https://www.anthropic.com/research/employment-at-anthropic",
+      "hn": "https://news.ycombinator.com/item?id=50139873",
+      "title": "How employment is changing at Anthropic",
+      "time": 1792320566,
+      "points": 151,
+      "depth": [
+        {
+          "text": "Anthropic says **AI agents** are changing **who it hires** and what employees spend their time doing",
+          "tier": "simple"
+        },
+        {
+          "text": "The report says the proportion of **junior technical hires** fell from **27% to 9%**, while agents worked six times as many hours as their human handlers by August. Meta-work rose from 10% of average employees’ interactive Claude sessions in fall 2025 to 22% in spring 2026.",
+          "tier": "substance",
+          "data": [
+            [
+              "junior technical hires",
+              "27% to 9%"
+            ],
+            [
+              "agent hours vs. human handlers",
+              "6 times as many hours"
+            ],
+            [
+              "meta-work share, fall 2025 to spring 2026",
+              "10% to 22%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say agent skills matter more than seniority and could boost output; others say Anthropic’s numbers may be self-serving or count busywork rather than real gains.",
+      "comment_count": 249,
+      "terms": [
+        "AI agent",
+        "meta-work",
+        "code commit"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude",
+        "Claude.ai",
+        "Slack",
+        "Meta",
+        "Google",
+        "Nathan Wilmers",
+        "Regina Catipon",
+        "Maxim Massenkoff",
+        "Peter McCrory"
+      ],
+      "comments": [
+        {
+          "by": "djoldman",
+          "text": "Commits per engineer 5.1x\nQueries per data scientist 3.1×\nContracts per legal employee 3.1x\nDeals per salesperson 1.7x\nHires per recruiter 1.4x\nInvoices per AP processor 1.4x\nThese are the stats that might be hiding the possibly small potential for AI to generate \"real\" economic activity. The first 3 stats, commits+queries+contracts, are secondary/meta statistics that could possibly go up 1000x…"
+        },
+        {
+          "by": "pjmlp",
+          "text": "> Anthropic has been hiring for a smaller share of junior technical positions. This occurred as hours worked by AI agents relative to employees rapidly expanded. By August interactive AI agent hours outnumbered employees’ six to one. At least they are honest about where this is going, just like when robots took over factories. Naturally everyone thinks they are the lucky ones that will stay…"
+        },
+        {
+          "by": "OuterVale",
+          "text": "As obvious as it seems to say, with no new juniors there will be no new seniors."
+        },
+        {
+          "by": "Jackobrien",
+          "text": "“Junior” is the wrong distinction to make. I’ve recently worked with senior engineers who are terrible at wielding agents, and recent grad engineers who multiple themselves 100x. The main way I look for software engineers now are: - Deep curiosity and ability to absorb new information quickly\n- Evidence of ability to wield and coordinate agents to the max\n- Ability to clearly communicate ideas…"
+        },
+        {
+          "by": "NichoPaolucci",
+          "text": "> One possibility is single-person startups, each with a human founder steering swarms of agents to rake in billions in revenue. I guess I'd be curious to see what this single-person startup is offering... I'm also reading this with a healthy dose of salt. They rely almost entirely on the concept that using their tools is an economic advantage to companies + individuals, so... Of course we're…"
+        }
+      ],
+      "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg"
+    },
+    {
       "id": 50149392,
       "url": "https://lwn.net/Articles/1101143/",
       "hn": "https://news.ycombinator.com/item?id=50149392",
@@ -1232,6 +2324,92 @@
     }
   ],
   "glossary": {
+    "Wine": "Software that lets Windows programs run on other operating systems.",
+    "port": "A numbered doorway that lets a computer send traffic to a particular service.",
+    "OpenBSD": "The main software that runs a computer and lets its apps work.",
+    "WoW64": "Windows 32-bit on Windows 64-bit: a Windows feature that lets 32-bit programs run on 64-bit Windows.",
+    "vkd3d-proton": "A helper that lets some Windows games use graphics features they expect.",
+    "X server": "Software that lets apps put windows and images on a computer screen.",
+    "Ruby gem": "A reusable bundle of Ruby code that other Ruby programs can add to use a feature.",
+    "LLM agents": "Large Language Model agents: computer tools that can follow instructions and take steps, such as writing code, toward completing a task.",
+    "Rails": "A set of ready-made tools for making web apps with Ruby.",
+    "vibe-coding": "Making software with an AI's help by describing what you want and steering the results.",
+    "type safety": "Checks that values are used in ways the code expects, catching some mistakes before the app runs.",
+    "dependently typed languages": "Programming languages that can check rules whose answer depends on the actual values in a program.",
+    "recursion schemes": "Reusable patterns for writing code that keeps working on smaller parts of the same problem.",
+    "Monoids": "A math pattern for combining things where changing the grouping doesn't change the answer, like adding numbers.",
+    "agentic tasks": "Work where an AI can take steps toward a goal, not just answer a question.",
+    "inference": "When an AI uses what it learned to answer or act, instead of being trained.",
+    "TPS": "Transactions per second: how many database transactions finish in one second.",
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "model weights": "The learned settings inside an AI that shape how it responds.",
+    "cached input": "Text an AI service has already received and can reuse instead of processing it from scratch.",
+    "SaaS": "Software as a Service: software you access over the internet, with the provider running it for you.",
+    "sparsity": "A way of making a model use fewer of its internal connections, which can help it run more efficiently.",
+    "foundation model": "A model trained before use that can be adapted to handle different jobs.",
+    "LHC": "Large Hadron Collider: CERN’s machine for smashing particles together so scientists can study what comes out.",
+    "proton-proton collisions": "When two protons, tiny parts of atoms, smash into each other.",
+    "boosted decision trees": "A computer method that combines lots of small decision rules to make one better guess.",
+    "exabyte": "A unit for a huge amount of computer data; one exabyte is one million terabytes.",
+    "NAMs": "New approach methodologies, novel alternative methods, or nonanimal methods: different names for ways to study biology without relying on animal experiments.",
+    "organ-on-a-chip": "A small lab device that grows human cells in a setup meant to imitate how an organ works.",
+    "microfluidic": "Using tiny channels to move small amounts of liquid through a device.",
+    "endothelial cells": "Cells that line blood vessels.",
+    "organoids": "Groups of cells grown to resemble some parts of an organ.",
+    "validation": "Checking that a test gives reliable results beyond the lab that developed it.",
+    "proprietary": "Kept under a company's control rather than freely shared.",
+    "magnetic encoder": "A sensor that uses magnets to track the position of a rotating part.",
+    "torque modulation": "Changing how strongly a motor twists to affect how something moves.",
+    "swash plate": "A helicopter part that changes the angle of its blades to control lift and direction.",
+    "underactuated robotics": "Robots designed to do more with fewer motors or controls than they have ways to move.",
+    "MCU": "Microcontroller unit: a small computer that controls parts of a device.",
+    "domain validation": "Checking that the person requesting a certificate controls the domain name.",
+    "remote perspective": "A validation check run from another network location.",
+    "quorum": "The group of checks that must get the right response for validation to pass.",
+    "CA": "Certificate Authority: an organization that checks requests and issues certificates.",
+    "BGP attack": "Border Gateway Protocol attack: a network trick that sends traffic for an internet address to the wrong place.",
+    "RPKI": "Resource Public Key Infrastructure: a system that lets an address holder publish which networks are allowed to announce its addresses.",
+    "ACME": "Automatic Certificate Management Environment: a way for websites to prove they control a domain and get certificates automatically.",
+    "IP": "Intellectual property: creative work, characters, or brands that a person or company can have legal rights over.",
+    "CG": "Computer graphics: images made by a computer rather than filmed with a camera.",
+    "Apple Silicon": "Apple’s processors used in Macs.",
+    "APK": "The file you download to install an Android app.",
+    "emulator": "A program that imitates another service so you can try your software without using the real one.",
+    "native code": "Code compiled into instructions a computer can run directly.",
+    "app sandbox": "A boundary that limits which files and other parts of a device an app can reach.",
+    "Google Play Services": "Google’s set of background tools that some Android apps rely on.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "certificate pinning": "A check in an app that only accepts a connection matching a certificate it expects.",
+    "diffusion model": "An image-making AI that starts with visual noise and gradually turns it into a picture.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "tokens": "Small pieces of text an AI counts as it reads or writes; they can affect how much a request costs.",
+    "context": "A value passed along with work so it can carry a stop signal or a timeout.",
+    "latency": "The time between doing something and seeing the device respond.",
+    "open weights": "The model's learned settings are available for people to download and run themselves.",
+    "TTFAT": "Time to First Answer Token: how long it takes for the first piece of an AI's reply to appear.",
+    "collusion": "When businesses secretly coordinate instead of competing, often to influence prices.",
+    "surplus exchange": "A marketplace where businesses offer goods they have extra of to one another.",
+    "benchmark price": "A reference price people use to compare or set other prices.",
+    "abstraction": "When you don't have to deal with the messy details of how something gets done.",
+    "observability": "Ways to tell what a running program is doing and spot when something goes wrong.",
+    "rollback": "Undoing a change by returning a system to an earlier working state.",
+    "E2E testing": "End-to-end testing: checking that a whole feature works from the user's action through to the result.",
+    "UML": "Unified Modeling Language: diagrams people use to sketch how parts of a program fit together.",
+    "SAST": "Static Application Security Testing: checking code for security problems without running the program.",
+    "ORM": "Object-relational mapper: a tool that helps a program work with stored information using its own way of organizing data.",
+    "formally verifiable": "Code that can be checked with a proof that it follows its stated rules.",
+    "PalmOS": "An operating system made for Palm handheld devices.",
+    "reverse engineering": "Figuring out how a program works by examining the program itself.",
+    "WASM": "WebAssembly: a way for an app to run plug-ins written in other programming languages.",
+    "LLM-assisted code review": "Large language model-assisted code review: using an AI that reads code to help spot possible problems.",
+    "beta period": "A testing stage before a software release, when people look for problems.",
+    "edge case": "A situation outside the usual path that can make software behave differently or break.",
+    "revert": "Undo a code change, usually after it causes a problem.",
+    "fuzzing": "Testing software with lots of varied inputs to see whether it breaks.",
+    "feature freeze": "A point when developers stop adding features so they can focus on preparing a release.",
+    "AI agent": "An autonomous computer program that can carry out tasks.",
+    "meta-work": "Work spent setting up, organizing, or checking AI agents instead of directly doing the main task.",
+    "code commit": "A saved set of changes to a software project.",
     "kernel": "A small program that carries out a calculation on a computer's graphics chip or processor.",
     "filesystem": "A way an operating system keeps track of files and folders.",
     "failfs": "The new filesystem in this release that fails every operation.",
@@ -1243,13 +2421,10 @@
     "license plate reader": "A camera system that records car plates so they can be searched later.",
     "credentials": "The username and password that let someone sign in to an account.",
     "audit trail": "A record showing which account used a system, so activity can be traced.",
-    "SaaS": "Software as a Service: software you access over the internet, with the provider running it for you.",
     "2FA": "Two-factor authentication: a sign-in check that asks for a second proof of identity as well as a password.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "esoteric programming language": "A programming language made mainly as an unusual experiment or puzzle, rather than for everyday software.",
     "interpreter": "A program that reads code and carries out what it says.",
     "stack": "A pile of values where a program adds items to the top and removes them from there.",
-    "benchmark": "A test people use to compare how well different tools do a task.",
     "guardrails": "Instructions that tell an AI how it should respond.",
     "open-weight model": "A model whose trained settings are shared so other people can use them.",
     "transpiler": "A compiler that turns a program into another human-readable format, such as source code.",
@@ -1265,7 +2440,6 @@
     "harness": "The surrounding code that gives an AI agent tools and a place to work, and checks what it does.",
     "cache miss": "When needed data isn't in the computer's small, fast holding area, so it must fetch it from slower memory.",
     "single point of failure": "One component whose breakdown can stop the whole service from working.",
-    "tokens": "Small pieces of text an AI counts as it reads or writes; they can affect how much a request costs.",
     "JSONL": "JSON Lines: a file format that stores one item on each line so a program can read them separately.",
     "time series": "Measurements recorded over time, like a machine's temperature every few minutes.",
     "time-series foundation model (TSFM)": "A model trained on lots of time-based data so it can forecast a new series without being trained from scratch for that series.",
@@ -1280,8 +2454,6 @@
     "Intelligence Index": "A score used here to compare how well different AI models perform.",
     "context window": "The amount of text and information an AI can take into account at one time.",
     "reasoning model": "An AI model that spends extra steps working through a problem before answering.",
-    "open weights": "The model's learned settings are available for people to download and run themselves.",
-    "AI agent": "An autonomous computer program that can carry out tasks.",
     "data licensing": "An agreement that gives someone permission to use or provide data, often in exchange for payment.",
     "anti-bot system": "A website check meant to spot and stop automated visitors.",
     "scraping": "Using automated tools to collect content from websites.",
@@ -1292,7 +2464,6 @@
     "agent": "An AI system that can take steps and use tools to get a task done, not just answer questions.",
     "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
     "embedding": "A set of numbers that gives an AI a way to represent a word or piece of text and how it relates to others.",
-    "inference": "When an AI uses what it learned to answer or act, instead of being trained.",
     "quantization": "A way to make a model use less computing power by representing its internal numbers less precisely.",
     "BF16": "Brain Floating Point 16: a format for storing the numbers a model works with.",
     "CSV": "Comma-separated values: a way to arrange data in rows, with commas separating the pieces.",
@@ -1324,7 +2495,6 @@
     "pattern matching": "Spotting familiar shapes or arrangements and using them to guess what fits.",
     "exhaustiveness checking": "A check that makes sure a switch handles every case the type can have.",
     "subtype": "A more specific kind of type that fits under another type.",
-    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
     "compile-time error": "A problem caught while code is being turned into a program, before it runs.",
     "runtime exception": "An error that happens while a program is running.",
     "DI": "Dependency Injection: a way to give code the helpers it needs from elsewhere, instead of having it create them itself."
