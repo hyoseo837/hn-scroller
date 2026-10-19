@@ -1,0 +1,550 @@
+{
+  "date": "2026-10-19",
+  "cards": [
+    {
+      "id": 50145337,
+      "url": "https://arxiv.org/abs/2610.18861",
+      "hn": "https://news.ycombinator.com/item?id=50145337",
+      "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+      "time": 1792356494,
+      "points": 297,
+      "depth": [
+        {
+          "text": "a hybrid **LLM agent** thinks in **latent space**, then acts through text",
+          "tier": "simple"
+        },
+        {
+          "text": "The code, models, data and evaluations are linked in a comment. One commenter said an **8B model** got stuck in a **thinking loop** on “Who is the pope?”; another reported the same looping in **BF16** and said a llama.cpp update might be needed.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 158,
+      "terms": [
+        "LLM",
+        "latent space",
+        "agent",
+        "token",
+        "embedding",
+        "inference",
+        "quantization",
+        "BF16",
+        "CSV",
+        "transformer",
+        "llama.cpp"
+      ],
+      "entities": [
+        "HybridAgent",
+        "OpenAI",
+        "Hugging Face",
+        "Qwen",
+        "Astra",
+        "Gemma",
+        "llama.cpp"
+      ],
+      "comments": [
+        {
+          "by": "SubiculumCode",
+          "text": "Isn't this what openai is doing, at least in spirit, by running multiple passes through the network before exhibiting thinking tokens? Isn't the same issue one of safety and control, because being able to interpret thinking tokens helps u control / monitor unwanted behaviors, and multiple passes before writing out the thinking tokens increases their capacity for deception?"
+        },
+        {
+          "by": "bhattisatish",
+          "text": "The code is available at: https://github.com/togethercomputer/HybridAgent LLM Models and data: https://huggingface.co/collections/togethercomputer/hybridag... Evaluations: https://arxiv.org/html/2610.18861v1#S5"
+        },
+        {
+          "by": "amluto",
+          "text": "I wonder how this compares to going all-in: widen the input embedding to fit the output (post-“Hybrid Link”) latent vector and a token embedding and pass both through even when in text mode. After all, you’re paying essentially the full cost of running the latent-mode model while generating text, so why not let it latently reason at the same time? (Or just add the vectors instead of using wider…"
+        },
+        {
+          "by": "sinuhe69",
+          "text": "It sounds pretty nice on paper. But I tested the huggingface.co/mradermacher/hybridagent-8b-agentic-gguf:IQ4_XS with a simple question: \"Who is the pope?\" and it got stuck in a thinking loop forever and simply could not finish the task. ``` Okay, the user is asking who the pope is. The pope is the leader of the Catholic Church. The current pope is Pope Francis, who became pope in 2013 after Pope…"
+        },
+        {
+          "by": "notnullorvoid",
+          "text": "Excited to see this applied to Qwen 3.8 27B. It's reasoning output tends to include lots of restatement, which I guess would be more likely to be kept in latent space with this hybrid reasoning."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50136150,
+      "url": "https://www.youtube.com/watch?v=LKrwhjOI8Nc",
+      "hn": "https://news.ycombinator.com/item?id=50136150",
+      "title": "There's never been a better time to go into math (by: 3blue1brown) [video]",
+      "time": 1792279595,
+      "points": 260,
+      "depth": [
+        {
+          "text": "3blue1brown says there's **never been a better time** to go into math, but **commenters disagree**",
+          "tier": "simple"
+        },
+        {
+          "text": "Some commenters expect AI to bring **more demand** for mathematicians and new math problems. Others say they came to math to make **discoveries themselves**, not direct a discovery machine.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some expect AI to raise demand for mathematicians and open up new problems; others say they came to make discoveries themselves, not direct a discovery machine.",
+      "comment_count": 302,
+      "terms": [
+        "LLM",
+        "cognitive labor"
+      ],
+      "entities": [
+        "3blue1brown",
+        "Grant Sanderson",
+        "YouTube"
+      ],
+      "comments": [
+        {
+          "by": "nritchie",
+          "text": "I'd like to believe Grant but I find this assault on mathematics to be dehumanizing and demoralizing. AI has destroyed a major source of \"life's meaning\" for many people who pursued mathematics. Imagine waking up one morning to find that an alien technology has solved the problem you had dedicated your life to (and many more to boot.) Not another mathematician but an alien technology. As a…"
+        },
+        {
+          "by": "spawarotti",
+          "text": "I think math will go the way of biology. Biologists enjoy untangling the infinitely complex mechanisms of life, including the brain, and win Nobel Prizes for discoveries like \"how water enters a cell,\" rather than \"constructing the first-ever cell capable of absorbing water.\" No biologist has ever complained, \"Gee whiz, it's so unfortunate that we already have a brain to study. It's all so…"
+        },
+        {
+          "by": "raz32dust",
+          "text": "I think two things are being conflated: whether math will continue to offer exciting opportunities, and whether it will remain fulfilling for those who love doing it today. Grant is right about the former. But that doesn't address the latter. A field can have a bright future while losing what drew people to it."
+        },
+        {
+          "by": "anitil",
+          "text": "I actually remember that in an old interview (that I can't find sorry) Grant Sanderson said he moved in to YouTube because he thought it was a more promising career than being mathematician, it's interesting to see his opinion change."
+        },
+        {
+          "by": "cadamsdotcom",
+          "text": "A couple of thoughts in agreement.. First, \"cognitive labor\" is a form of labor - it's different vs. creative work, even though both use your mind. If your math theorem can be written up in partnership with an LLM, wow! You can be done with that, and go do other great work. Cognitive labor is a form of labor. Let's talk about physical labor and leverage to understand how removing labor translates…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50140769,
+      "url": "https://legendofhyrule.com/",
+      "hn": "https://news.ycombinator.com/item?id=50140769",
+      "title": "Show HN: The Zelda timeline to catch up before the Ocarina of Time remake",
+      "time": 1792328814,
+      "points": 172,
+      "depth": [
+        {
+          "text": "someone made a **Zelda timeline** to catch up before the **Ocarina of Time remake**",
+          "tier": "simple"
+        },
+        {
+          "text": "It branches at the end of Ocarina into **three eras**, depending on whether Link wins or loses; the threads meet again much later with **Breath of the Wild**. The maker says Nintendo’s timeline, including Hyrule Historia and their chronicle page, is the authority.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some enjoy exploring a Zelda timeline; others say the games are retold legends or independent events, not one coherent story.",
+      "comment_count": 105,
+      "terms": [
+        "canon",
+        "cluster analysis"
+      ],
+      "entities": [
+        "Zelda",
+        "Ocarina of Time",
+        "Nintendo",
+        "Hyrule Historia",
+        "Breath of the Wild",
+        "Link"
+      ],
+      "comments": [
+        {
+          "by": "somat",
+          "text": "I don't consider it to be one unified story at all, I mean some of the series obviously are connected, but the rest are, as the name suggests, legends about Zelda. Unconnected unreliable narrations about some sort of heroic past events. Everybody agrees about the characters involved but as to what exactly happened, that is lost to time. So each culture is now telling the story a different way…"
+        },
+        {
+          "by": "ranger207",
+          "text": "I don't think most Japanese media is as concerned with fitting things into a canon as much as American media is. Like, in Gundam, you have 0079, Thunderbolt, and Origin all allegedly in the UC canon, but there's pretty significant deviations in Thunderbolt and Origin from 0079 so they're not really the same timelines. American comics will also have multiple timelines or universes, but they'll…"
+        },
+        {
+          "by": "collinmcnulty",
+          "text": "I do not want to rain on your parade, but I find attempts to impose a coherent timeline on Zelda miss the opportunity to engage with it as a legend , a story told over and over with certain essential parts but many changing interpretations. How our very familiarity with the story creates the opportunity for surprise. There are so many fictional worlds with sprawling lore, and so few that engage…"
+        },
+        {
+          "by": "hyperhello",
+          "text": "What’s the word for trying to do cluster analysis on what is actually randomly distributed data? The games do have obvious similarities and sometimes refer to each other, but they’re independent events."
+        },
+        {
+          "by": "hmokiguess",
+          "text": "I just wanted to say thank you, you made my day brighter because you reminded me the remake comes out in 17 days and you got me to reconnect with one of my favourite games. Seems like a lot of folks here are eager to discuss about interpretation and opinion, I take that as Nintendo did a great job providing enough to keep everyone engaged into the dream and fantasy behind it. Cheers To more Zelda!"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50144005,
+      "url": "https://hoaspy.com/hoa/fl/florida-hoa-housing-crisis.html",
+      "hn": "https://news.ycombinator.com/item?id=50144005",
+      "title": "Florida's HOAs and condo associations are making the housing crisis worse",
+      "time": 1792348816,
+      "points": 171,
+      "depth": [
+        {
+          "text": "Florida HOAs and condo associations are adding **liens** and **foreclosure suits** to the housing crisis",
+          "tier": "simple"
+        },
+        {
+          "text": "HOA Spy counts **10,296 foreclosure suits** brought by associations and **460,412 claims of lien**. The page stresses these are filings, **not homes lost**; state comparisons are counts of records, not rates.",
+          "tier": "substance",
+          "data": [
+            [
+              "Association foreclosure suits",
+              "10,296"
+            ],
+            [
+              "Claims of lien",
+              "460,412"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some call HOA foreclosure power abusive and say it worsens the housing crisis; others defend HOAs as useful self-governance and question whether the article’s numbers prove harm.",
+      "comment_count": 324,
+      "terms": [
+        "HOA",
+        "lien",
+        "lis pendens",
+        "special assessment"
+      ],
+      "entities": [
+        "HOA Spy"
+      ],
+      "comments": [
+        {
+          "by": "weberer",
+          "text": ">Is Florida the worst state for HOA foreclosures? >Florida ranks 1st of the states on HOA Spy for foreclosure suits brought by associations, with 10,296 of 14,168. The count depends on which courts are indexed in each state as well as on the associations, so it is a count of records, not a rate. Florida is known for having the strongest \"sunshine\" laws in the country, that make government records…"
+        },
+        {
+          "by": "firesteelrain",
+          "text": "This article slightly mixes condo and HOAs. HOAs are covered under 720 and it does not have the same rules (which are less stringent) than condo’s Condo rules are much stricter than HOAs State of Florida also puts caps on fines - the max is $100/day or $1000 for a single violation. But that’s after a period to cure and then due process meetings (made up of homeowners not board members) who may…"
+        },
+        {
+          "by": "pretzellogician",
+          "text": "I had the thankless task of being executor for my parents' estate. I distinctly remember the Florida HOA that made that so much worse. After expressing their utmost sympathies and saying they'd help any way they could, mere weeks later they put a legal \"estoppel\" on the sale of the house due to some overgrown vines(?), which of course, were never mentioned by anyone."
+        },
+        {
+          "by": "jghn",
+          "text": "I would never buy a house that was part of a HOA. For people that like them, more power to ya. But I don't understand the people who complain, just don't buy into an HOA then?"
+        },
+        {
+          "by": "ryandrake",
+          "text": "I used to live in Broward county, Florida, so I'm not surprised that it shows up as number one on the OP article's list. It's totally insane how much power HOAs have in that state. The idea that an entity other than a mortgage lender you owe can \"foreclose\" and seize the home you live in is total lunacy."
+        }
+      ],
+      "image": "https://hoaspy.com/og-image.png"
+    },
+    {
+      "id": 50136979,
+      "url": "https://www.sciencealert.com/dogs-seem-to-agree-with-humans-that-bouba-is-round-and-kiki-is-spiky",
+      "hn": "https://news.ycombinator.com/item?id=50136979",
+      "title": "Dogs seem to agree with humans that 'bouba' is round and 'kiki' is spiky",
+      "time": 1792287488,
+      "points": 172,
+      "depth": [
+        {
+          "text": "dogs looked toward **round shapes** for “Bouba” and **spiky ones** for “Kiki” in a study",
+          "tier": "simple"
+        },
+        {
+          "text": "The first experiment included **51 dogs and their owners**; in the second, **19 other dogs** took part while their owners wore headphones playing rock music. A general bias toward spiky shapes appeared in the first experiment but disappeared in the second.",
+          "tier": "substance",
+          "data": [
+            [
+              "total dogs",
+              "70"
+            ],
+            [
+              "dogs in the first experiment",
+              "51"
+            ],
+            [
+              "dogs in the second experiment",
+              "19"
+            ],
+            [
+              "experiment duration",
+              "roughly 15 minutes"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters think sounds and shapes connect through how things sound in the real world; others wonder whether dogs followed their owners’ cues or question how reliable the experiment was.",
+      "comment_count": 106,
+      "terms": [
+        "bouba-kiki effect",
+        "statistical power"
+      ],
+      "entities": [
+        "Eleonora Biffi",
+        "University of Parma",
+        "Proceedings of the Royal Society B: Biological Sciences",
+        "GoPro"
+      ],
+      "comments": [
+        {
+          "by": "donjapan22",
+          "text": "This is a fascinating article and I’m not casting shade but more of a curious question: If humans are the ones that generally associate this sound with that thing, knowing dogs are very observant of us, how do we know the dogs aren’t just copying what we are unknowingly exhibiting toward them throughout their entire lives? I have no idea how you’d pull that out of the stats though. Maybe you…"
+        },
+        {
+          "by": "gste",
+          "text": "I think objects with these shapes make similar sounds in the real world. Sharp shapes make percussive sounds. Round shapes make softer sounds. Dog's have very good hearing, and their hearing must help them to model the world around them, to understand what different objects in the world are. So I think it's less about linguistics and more about our audiovisual mapping of the physical world. Then…"
+        },
+        {
+          "by": "dang",
+          "text": "Related. Others? Evidence of the bouba-kiki effect in naïve baby chicks - https://news.ycombinator.com/item?id=47105198 - Feb 2026 (107 comments) Which is \"Bouba\", and which is \"Kiki\"? [video] - https://news.ycombinator.com/item?id=46572742 - Jan 2026 (23 comments) Bouba / Kiki Effect - https://news.ycombinator.com/item?id=45320327 - Sept 2025 (2 comments) Bouba/kiki effect…"
+        },
+        {
+          "by": "ofrzeta",
+          "text": "Related :) https://en.wikipedia.org/wiki/City_(novel)"
+        },
+        {
+          "by": "DoctorOetker",
+          "text": "I too would associate \"Bouba\" with the rounded and \"Kiki\" with the sharper figure, but to me this is just a relatively universal sense of continuity vs discontinuities: the local curvature is continuous for \"Bouba\", every point on the curve has a single tangent, which evolves continuously as you walk along this presented curve. For Kiki: the local curvature is discontinuous: at the inward or…"
+        }
+      ],
+      "image": "https://www.sciencealert.com/images/2026/10/GettyImages-597067015-2560x1440-1.jpg"
+    },
+    {
+      "id": 50124730,
+      "url": "https://teal-language.org/",
+      "hn": "https://news.ycombinator.com/item?id=50124730",
+      "title": "Teal – A statically-typed dialect of Lua",
+      "time": 1792184844,
+      "points": 170,
+      "depth": [
+        {
+          "text": "someone made a **typed Lua dialect** that lets you **label things like arrays and records**",
+          "tier": "simple"
+        },
+        {
+          "text": "Teal's annotations cover arrays, maps, records, interfaces, **union types and generics**; it aims for a role like TypeScript does with JavaScript while keeping Lua's **minimalism, portability and embeddability**. Its compiler, **tl**, turns .tl source code into .lua files.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 69,
+      "terms": [
+        "statically-typed",
+        "dialect",
+        "type annotations",
+        "array",
+        "map",
+        "record",
+        "interface",
+        "union type",
+        "generics",
+        "compiler",
+        "embeddability"
+      ],
+      "entities": [
+        "Teal",
+        "Lua",
+        "TypeScript",
+        "JavaScript",
+        "tl"
+      ],
+      "comments": [
+        {
+          "by": "ufo",
+          "text": "A good example of a large Teal codebase is Luarocks, the Lua package manager: https://github.com/luarocks/luarocks/tree/main/src/luarocks"
+        },
+        {
+          "by": "Kinrany",
+          "text": "I'm curious if there is a comparison to Luau."
+        },
+        {
+          "by": "xyproto",
+          "text": "The Algernon web server comes with built-in support for Teal."
+        },
+        {
+          "by": "Joker_vD",
+          "text": "How many statically-typed dialects of Lua are there anyway? I know there is Terra. There was also... Sol, I think? Anything else?"
+        },
+        {
+          "by": "Weryj",
+          "text": "How are we supposed to keep up with the sheer volume of cool note-worthy tools coming out. This is getting out of hand"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50141429,
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
+      "hn": "https://news.ycombinator.com/item?id=50141429",
+      "title": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
+      "time": 1792333827,
+      "points": 158,
+      "depth": [
+        {
+          "text": "Anthropic wants a bill that **limits when** the government can stop an **AI model's release**",
+          "tier": "simple"
+        },
+        {
+          "text": "It sets the bar at a risk of **killing or injuring more than 50 people** or causing **$1 billion in damages**. The bill covers a bioweapon, AI-enabled cyberattacks, or a lab losing control of a model or agents; if any seems imminent, an independent evaluator registered with Commerce must report it within 72 hours. Commerce must take the evidence to a federal judge, and **no other U.S. agency** can order a release stopped.",
+          "tier": "substance",
+          "data": [
+            [
+              "people killed or injured threshold",
+              "more than 50 people"
+            ],
+            [
+              "damages threshold",
+              "$1 billion"
+            ],
+            [
+              "reporting deadline",
+              "72 hours"
+            ]
+          ]
+        }
+      ],
+      "camps": "Some commenters say the bill targets frontier labs while leaving exceptions for smaller ones; others see it as regulatory capture that could shut out open-source competition.",
+      "comment_count": 162,
+      "terms": [
+        "regulatory capture",
+        "AI agent",
+        "open-source model"
+      ],
+      "entities": [
+        "Anthropic",
+        "Department of Commerce",
+        "Congress",
+        "Politico",
+        "Tom's Hardware"
+      ],
+      "comments": [
+        {
+          "by": "oefrha",
+          "text": "Proposal: 1. Prosecute and lock people up over known instances of AI-enabled hacking, so companies playing fast and loose know “oops my AI did it” isn’t a useful defense. Right now they even sort of wear it as a badge of honor. 2. If you’re actually worried about AI killing lots of people, you immediately stop training AI specifically at the art of killing people, like selecting bombing targets…"
+        },
+        {
+          "by": "createful",
+          "text": "All these \"safety\" bills are to stop open source models by painting them as \"dangerous\". Regulatory capture. Companies are responsible for their agents; you don't blame the car for running over the person."
+        },
+        {
+          "by": "revolvingthrow",
+          "text": "The CoT must be delightful. This action would easily kill over a hundred people, so can't proceed. This action doesn't kill anybody but losses are estimated at over 2 billion, can't proceed. This action kills only twenty but losses close to 1 billion, unsure, spawning subagent to check numbers. This action kills forty and has low material losses, looks promising? But the people it kills are…"
+        },
+        {
+          "by": "airstrike",
+          "text": "The next step is demanding anyone who wishes to release a Certified Safe AI™ model to prove they can insure the $1B in damages and pass a compliance audit for how they will prevent the LTM death count from reaching 50, effectively making it so that only big labs can serve government and enterprise."
+        },
+        {
+          "by": "arw0n",
+          "text": "This seems to be a case where Anthropic just can't win in the public court, and the other big ones (Google, Microsoft) have realized it / don't care enough, so they are rather quiet. Anthropic constantly gets accused of trying to lobby for regulation in order to lock out smaller competitors, but they've consistently lobbied for regulation aimed at frontier labs with exceptions for smaller labs…"
+        }
+      ],
+      "image": "https://cdn.mos.cms.futurecdn.net/SVPa8KkaDwkeyAtLnMhyKW-1920-80.png"
+    },
+    {
+      "id": 50141579,
+      "url": "https://neilmadden.blog/2026/04/24/java-sealed-classes-and-exhaustive-pattern-matching/",
+      "hn": "https://news.ycombinator.com/item?id=50141579",
+      "title": "Java sealed classes and exhaustive pattern matching",
+      "time": 1792334857,
+      "points": 154,
+      "depth": [
+        {
+          "text": "someone explains why Java's **sealed classes** can make **public APIs break** when new cases get added",
+          "tier": "simple"
+        },
+        {
+          "text": "Adding a subtype to a public sealed type can break its consumers: if they aren't recompiled, the new case may cause a **runtime exception**. The author says sealed types are most useful **inside a component**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some like how far Java has come but prefer TypeScript; others would rather use Scala or Kotlin and say they see no reason to return to Java.",
+      "comment_count": 107,
+      "terms": [
+        "sealed class",
+        "pattern matching",
+        "exhaustiveness checking",
+        "subtype",
+        "API",
+        "compile-time error",
+        "runtime exception",
+        "DI"
+      ],
+      "entities": [
+        "Java",
+        "Neil Madden",
+        "Haskell",
+        "ML",
+        "TypeScript",
+        "ts-pattern",
+        "Scala",
+        "Kotlin",
+        "MatchException"
+      ],
+      "comments": [
+        {
+          "by": "shepherdjerred",
+          "text": "I love how far Java has come. I still prefer TypeScript since I do a lot of frontend work and prefer to use the same language across the stack. With the said, you can do exhaustive pattern matching in TypeScript! https://github.com/gvergnaud/ts-pattern"
+        },
+        {
+          "by": "armchairhacker",
+          "text": "Java also has recursive patterns and (maybe still in preview) literal patterns: `switch (x) { case A(B(true, var c)) -> f(c); }`"
+        },
+        {
+          "by": "another_twist",
+          "text": "Took me a while to get used to sealed and I didn't quite see the use. But AI seems to love it for Java so I gave it a go and now I get it. Its like a really good access control mechanism esp if you use DI and want to deprecated some stuff. Apart from ofcourse the pattern matching - which comes in handy for event driven messages where payload shape changes."
+        },
+        {
+          "by": "timshel2",
+          "text": "Scala punching the air rn"
+        },
+        {
+          "by": "panny",
+          "text": "I don't think you need those switch defaults with the sealed types. I didn't check with a compiler, but I think those are unnecessary."
+        }
+      ],
+      "image": "https://s0.wp.com/i/blank.jpg?m=1383295312i"
+    }
+  ],
+  "glossary": {
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "latent space": "A model's internal workspace for handling information without writing it out as words.",
+    "agent": "An AI system that can take steps and use tools to get a task done, not just answer questions.",
+    "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
+    "embedding": "A set of numbers that gives an AI a way to represent a word or piece of text and how it relates to others.",
+    "inference": "When an AI uses what it learned to answer or act, instead of being trained.",
+    "quantization": "A way to make a model use less computing power by representing its internal numbers less precisely.",
+    "BF16": "Brain Floating Point 16: a format for storing the numbers a model works with.",
+    "CSV": "Comma-separated values: a way to arrange data in rows, with commas separating the pieces.",
+    "transformer": "A kind of language model that can weigh how different words in a passage relate to each other.",
+    "llama.cpp": "Software that runs language models on a device.",
+    "cognitive labor": "Work that mainly uses your thinking rather than your body.",
+    "canon": "The version of a fictional story that counts as official.",
+    "cluster analysis": "A way of sorting things into groups based on how similar they are.",
+    "HOA": "Homeowners association: a group of owners that collects dues and manages shared property or neighborhood rules.",
+    "lien": "A legal claim against a home for unpaid money; it can block a sale until the debt is cleared.",
+    "lis pendens": "A notice recorded against a home to announce a foreclosure suit.",
+    "special assessment": "An extra charge owners pay for a community expense, separate from regular dues.",
+    "bouba-kiki effect": "The tendency to match the made-up sound “Bouba” with round shapes and “Kiki” with spiky ones.",
+    "statistical power": "How likely a study is to spot a real pattern; a small group can make that harder.",
+    "statically-typed": "A language setup where code's value kinds are checked before the program runs.",
+    "dialect": "A variation of a language, with changes or additions but a recognizable connection to the original.",
+    "type annotations": "Notes in code that say what kind of value a piece should hold.",
+    "array": "A group of values treated together, rather than as separate items.",
+    "map": "A group of values you can look up by a label.",
+    "record": "A bundle of named values, like a person's name and age kept together.",
+    "interface": "The names and details other code can use from a crate, without needing its inner workings.",
+    "union type": "A rule saying a value can be one of several kinds.",
+    "generics": "A way to make one piece of code work with different kinds of values.",
+    "compiler": "A tool that turns code you write into a program a computer can run.",
+    "embeddability": "A program's ability to be built into another program or device.",
+    "regulatory capture": "When rules meant to control an industry end up helping the companies they are supposed to oversee.",
+    "AI agent": "An autonomous computer program that can carry out tasks.",
+    "open-source model": "An AI model whose underlying pieces are made available for others to use or build on.",
+    "sealed class": "A type that says which other types are allowed to extend or implement it.",
+    "pattern matching": "Spotting familiar shapes or arrangements and using them to guess what fits.",
+    "exhaustiveness checking": "A check that makes sure a switch handles every case the type can have.",
+    "subtype": "A more specific kind of type that fits under another type.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "compile-time error": "A problem caught while code is being turned into a program, before it runs.",
+    "runtime exception": "An error that happens while a program is running.",
+    "DI": "Dependency Injection: a way to give code the helpers it needs from elsewhere, instead of having it create them itself."
+  }
+}
