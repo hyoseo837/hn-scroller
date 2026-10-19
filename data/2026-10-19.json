@@ -2,6 +2,734 @@
   "date": "2026-10-19",
   "cards": [
     {
+      "id": 50149392,
+      "url": "https://lwn.net/Articles/1101143/",
+      "hn": "https://news.ycombinator.com/item?id=50149392",
+      "title": "Linux 7.3 Released",
+      "time": 1792394637,
+      "points": 382,
+      "depth": [
+        {
+          "text": "Linux's new **kernel release** adds a filesystem that **fails every operation**",
+          "tier": "simple"
+        },
+        {
+          "text": "The release brought **18,765 non-merge commits** from 3,021 developers, including 807 first-time kernel developers. It also adds a **new system call**, group-scheduling work, and data-stream support in ntfs3.",
+          "tier": "substance",
+          "data": [
+            [
+              "non-merge commits",
+              "18,765"
+            ],
+            [
+              "developers",
+              "3,021"
+            ],
+            [
+              "first-time kernel developers",
+              "807"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some celebrate the new support and progress; others suspect AI-assisted code may be behind the record numbers and worry about code slop.",
+      "comment_count": 168,
+      "terms": [
+        "kernel",
+        "filesystem",
+        "failfs",
+        "system call",
+        "non-merge commit",
+        "merge window",
+        "SMB"
+      ],
+      "entities": [
+        "Linux",
+        "Linus Torvalds",
+        "LWN.net",
+        "failfs",
+        "binfmt_misc",
+        "fchroot()",
+        "BPF",
+        "sched_ext",
+        "ntfs3",
+        "Apple",
+        "Time Machine",
+        "ksmbd",
+        "SMB",
+        "Wi-Fi HaLow",
+        "Morse",
+        "ARM",
+        "Rust",
+        "KernelNewbies"
+      ],
+      "comments": [
+        {
+          "by": "theden",
+          "text": "SMB improvements ( https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/lin... ), I've moved to borg, but depending on how this goes may give time machine another try: - Add opt-in Apple Time Machine support\nImplement the AAPL negotiation and related Finder, stream,\nCOPYCHUNK, sparse-file, CHANGE_NOTIFY, and RPC compatibility\nrequired for Time Machine shares, allowing macOS backupd to…"
+        },
+        {
+          "by": "INTPenis",
+          "text": "> This release is a record-breaker on all fronts; it brought in 18,765 non-merge commits from 3,021 developers, 807 of whom were first-time kernel developers. I'm reading that as many new AI assisted code patches. Not everyone does an obviously bad job at submitting AI assisted code. Not a criticism, just an observation."
+        },
+        {
+          "by": "wryun",
+          "text": "I'm excited because of https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/lin... , which is the first kernel driver to use the new Wi-Fi HaLow (s1g/900MHz Wi-Fi) support. (Disclosure: I work for Morse)"
+        },
+        {
+          "by": "lp92",
+          "text": "Can someone explain to me what failfs is relevent for?"
+        },
+        {
+          "by": "djfergus",
+          "text": ">ARM > Device Tree Updates > Apple platform gains support for M3 Pro, Max and Ultra SoC Incredible how fast support for Apple silicon is progressing."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50150750,
+      "url": "https://www.wjcl.com/article/savannah-police-officer-ice-agent-flock-access/74135816",
+      "hn": "https://news.ycombinator.com/item?id=50150750",
+      "title": "Documents: Police officer gave her Flock login to her ICE agent husband",
+      "time": 1792406714,
+      "points": 374,
+      "depth": [
+        {
+          "text": "a police officer **shared her login** so her **ICE agent husband** could search license plates",
+          "tier": "simple"
+        },
+        {
+          "text": "An audit found **983 search entries** involving 97 identifiable plates across six states. **The department fired Amber Harpe** after finding she’d given her husband access; he said the searches were for people with **active arrest warrants**.",
+          "tier": "substance",
+          "data": [
+            [
+              "search entries",
+              "983"
+            ],
+            [
+              "identifiable license plates",
+              "97"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 183,
+      "terms": [
+        "ICE",
+        "license plate reader",
+        "credentials",
+        "audit trail",
+        "SaaS",
+        "2FA"
+      ],
+      "entities": [
+        "Flock",
+        "ICE",
+        "Amber Harpe",
+        "Tyler Harpe",
+        "Savannah Police Department",
+        "U.S. Department of Homeland Security"
+      ],
+      "comments": [
+        {
+          "by": "mrweasel",
+          "text": "Every time law enforcement is given surveillance tools the same thing happens, the people with legal and approved access will abuse it. Politicians are completely naive in their understand how people works, if it's abused, the system isn't locked down enough or that one person circumvented the procedure. They completely fail to understand that there exists people to whom you cannot grant access…"
+        },
+        {
+          "by": "kylecazar",
+          "text": "Wait, this system is standard SaaS and they can sign in from anywhere, not locked to department devices? That's crazy."
+        },
+        {
+          "by": "schnitzelstoat",
+          "text": "They should both go to prison. One for giving out unauthorised access of the resource and the other for exploiting it. If the authorities want people to accept systems like Flock etc. then they need to severely punish abuse like this."
+        },
+        {
+          "by": "mysterydip",
+          "text": "> He said every search was related to his federal law enforcement work and denied using the system for personal reasons. Assuming that’s true, why wouldn’t he have his own flock account to do his searches?"
+        },
+        {
+          "by": "DebtDeflation",
+          "text": "In Chatrie v. United States (June 2026) the SCOTUS ruled that individuals maintain a reasonable expectation of privacy in their digital location history and that geofence warrants constitute a search under the 4th Amendment. It's only a matter of time until a similar case involving Flock comes before them and they rule that a search of the Flock database constitutes a search under the 4th…"
+        }
+      ],
+      "image": "https://kubrick.htvapps.com/htv-prod/images/59afd81a-246a-4dd8-be64-a0263cee209e.png?crop=1.00xw%3A1.00xh%3B0%2C0&resize=1200%3A*"
+    },
+    {
+      "id": 50135762,
+      "url": "https://blog.picheta.me/post/killswitch-lang/",
+      "hn": "https://news.ycombinator.com/item?id=50135762",
+      "title": "I built a programming language that LLMs can't use",
+      "time": 1792276007,
+      "points": 236,
+      "depth": [
+        {
+          "text": "someone built a **programming language** to trip up **LLMs** with lies and tricky rules",
+          "tier": "simple"
+        },
+        {
+          "text": "KillSwitch’s spec includes **hidden lies**, and its interpreter checks **letter counts** in identifiers. The author says success on the simple benchmark tasks isn’t a clear sign that LLMs understand the language.",
+          "tier": "substance",
+          "data": [
+            [
+              "Best-performing model score",
+              "66.8"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: critics say it only challenges models not trained on it and can be reverse-engineered; others say stack languages expose a real weak spot for LLMs.",
+      "comment_count": 177,
+      "terms": [
+        "LLM",
+        "esoteric programming language",
+        "interpreter",
+        "stack",
+        "benchmark",
+        "guardrails",
+        "open-weight model",
+        "transpiler",
+        "decompile"
+      ],
+      "entities": [
+        "KillSwitch",
+        "Dominik Picheta",
+        "Claude",
+        "Opus 5",
+        "Opus 5.5",
+        "Fable 5.1",
+        "Gemini 4 Argon",
+        "MiMo-V2.6-Pro",
+        "Darmok",
+        "Python",
+        "LabVIEW",
+        "Playwright MCP",
+        "Chef",
+        "Befunge",
+        "Piet",
+        "GitHub"
+      ],
+      "comments": [
+        {
+          "by": "dejj",
+          "text": "Related: the Darmok programming language: https://github.com/kevinselwyn/darmok Temba, his arms wide stdio\nDarmok on the ocean\nKira at Bashi \"Hello, World!\\n\"\nDarmok and Jalad at Tanagra 0\nDarmok and Jalad on the ocean\nKillswitch-lang could become the backstory to how the Tamarians developed their language, in the aftermath of a Dune-like Butlerian Jihad. Also see…"
+        },
+        {
+          "by": "ang_cire",
+          "text": "This is not \"a programming language that LLMs can't use\", it's \"a programming language that's adversarial to LLMs that haven't been trained how to use it\". I was hoping for something like a language with properties that change/morph as it functions, that make an LLM unable to use it by not having a means to track and continuously reference the changing cipher/state or something."
+        },
+        {
+          "by": "pixl97",
+          "text": "Security by obscurity is not security at all. You're attempting to use a few little gotchas against LLMs that only make sense if you're looking at it one dimensionally as a standard execution flow. AI is not limited by that. Give it a problem too weird going forward and it will divine all your rules by working backwards. Decompile it, rip it apart, and it will follow all those hard rules hidden…"
+        },
+        {
+          "by": "andai",
+          "text": "Here's FizzBuzz: https://github.com/dom96/KillSwitch/blob/main/tests/fizzbuzz... Somehow I think this is more adversarial towards humans than LLMs!"
+        },
+        {
+          "by": "dagss",
+          "text": "\"Writing code is probably something LLMs have excelled at the most. But how much of their ability to write code is due to their understanding of it vs. just them recalling code snippets which were present in their training dataset or their context window?\" This makes me think mostly about how humans work. Programming is to humans like speaking a language. You have ideas for what to achieve and…"
+        }
+      ],
+      "image": "https://blog.picheta.me/_astro/killswitch-banner.0YTJ74BT.png"
+    },
+    {
+      "id": 50146625,
+      "url": "https://colo.to/cyberspace.html",
+      "hn": "https://news.ycombinator.com/item?id=50146625",
+      "title": "William Gibson and the trademarking of cyberspace",
+      "time": 1792366677,
+      "points": 227,
+      "depth": [
+        {
+          "text": "someone sets the **record straight**: Autodesk tried to trademark **cyberspace**, but Gibson never trademarked Eric Gullichsen",
+          "tier": "simple"
+        },
+        {
+          "text": "Autodesk applied to register **“cyberspace”** as its VR work moved toward a product; Gibson was **miffed** and had his lawyers send Autodesk a letter. The claim he tried to trademark “Eric Gullichsen” was **Timothy Leary's prank**, later propagated until it became accepted history.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 107,
+      "terms": [
+        "VR",
+        "trademark",
+        "CAD",
+        "RAM"
+      ],
+      "entities": [
+        "Autodesk",
+        "William Gibson",
+        "Timothy Leary",
+        "Eric Gullichsen",
+        "Rudy Rucker",
+        "John Perry Barlow",
+        "Sense8",
+        "Neuromancer",
+        "Art Futura",
+        "Michael Girard",
+        "Deborah Gibson"
+      ],
+      "comments": [
+        {
+          "by": "armcat",
+          "text": "Gibson's quote \"the future is already here - it's just not evenly distributed\" continues to hold true, especially today. Amazing author and unparalleled mind's eye."
+        },
+        {
+          "by": "jMyles",
+          "text": "Whatever else is real or myth with regard to these trolly pranking trademark spats, I think it's pretty reasonable to say that the term \"cyberspace\" emerged amidst - or at least adjacent to - a lot of LSD and Grateful Dead tapes. https://w2.eff.org/Misc/Publications/John_Perry_Barlow/HTML/..."
+        },
+        {
+          "by": "mistersquid",
+          "text": "Love that this long-settled trademark dispute spawns a contemporary close-to-flamewar HN thread. Makes me think of the old times when academia tried capturing state of the cybernetic art (even) to the extent of issuing a dead-tree tome about \"Flame Wars\" [0] [0] https://www.dukeupress.edu/flame-wars"
+        },
+        {
+          "by": "alexpotato",
+          "text": "Started reading Neuromancer for the first time and a couple things have struck me about the \"universe\" of the book: - RAM (specifically Hitachi RAM) is very expensive - There are still payphones even though \"jacked in\" VR exists - AIs are dumb unless they are controlled by the military"
+        },
+        {
+          "by": "Animats",
+          "text": "I saw that Autodesk VR setup. They had ping-pong working. There was serious thought about how to do CAD work in VR. But it was like trying to do mechanical drawing while wearing oven mitts. Precision work with hands in open air is just not human-compatible. But a lot of people at the time did think it was the future."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50145507,
+      "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
+      "hn": "https://news.ycombinator.com/item?id=50145507",
+      "title": "If you don't run your own LLM proxy, how do you know whats going on?",
+      "time": 1792357752,
+      "points": 233,
+      "depth": [
+        {
+          "text": "someone says running your own **LLM proxy** lets you **see what your AI tools are doing**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author wants a **self-hosted proxy** to log which key called which model, from what client and when, and make provider switches easy. A commenter says **OpenTelemetry traces** can capture tool calls, prompts and usage without making a proxy a **single point of failure**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: proxy advocates say a self-hosted proxy gives them routing and visibility; skeptics say traces or session files can do the job without adding a failure point.",
+      "comment_count": 157,
+      "terms": [
+        "LLM proxy",
+        "OTEL",
+        "API key",
+        "virtual API key",
+        "harness",
+        "cache miss",
+        "single point of failure",
+        "tokens",
+        "JSONL"
+      ],
+      "entities": [
+        "Claude",
+        "Claude Code",
+        "Codex",
+        "OpenCode",
+        "Pi",
+        "OpenTelemetry",
+        "Datadog",
+        "AppInsights",
+        "Tailscale",
+        "Aperture",
+        "OpenAI",
+        "Anthropic",
+        "Google",
+        "GitHub Copilot",
+        "Qwen",
+        "Claude Code Router",
+        "OpenRouter",
+        "LiteLLM",
+        "liteLLMProxy",
+        "Bifrost",
+        "DGXOS",
+        "llama-dash",
+        "Nenya",
+        "Agentsview",
+        "ComfyUI",
+        "Labubu",
+        "McRib",
+        "Ghost",
+        "Attila",
+        "Mark Manson"
+      ],
+      "comments": [
+        {
+          "by": "CharlieDigital",
+          "text": "You don't need a proxy to do this. I would argue you should not use a proxy to do this because the end result is a single point of failure direct in the line of your productivity. Both Codex[0] and Claude Code[1] output OTEL traces that you can ingest and process. Other harnesses like OpenCode, Pi, etc. you can hook into their plugin architecture and implement your own OTEL emission from a plugin…"
+        },
+        {
+          "by": "NeutralWanted",
+          "text": "I'd love to do something like this, or use API keys, but I still don't understand how people justify the cost of using API keys vs. subscription. I tested it once, I'm in on the 20x claude max ($200/month) and I either max my weekly limit every week or come really close. But it only took 2-3 days to hit $200 spend with api keys."
+        },
+        {
+          "by": "jakozaur",
+          "text": "Proxies are good if you pay API prices. For subscriptions, it is easier to collect the JSONL files from ~/.claude/projects/ and similar directories. They are better organized (e.g., subagents) than what the proxy sees. However, the best value comes from collecting agent sessions across the whole organization. You'll need to scrub credentials and handle security."
+        },
+        {
+          "by": "passive",
+          "text": "Tailscale makes Aperture available for free, and while it's not something you own, it is in your tailnet, so at least you have a certain amount of control over how things access it.\nIt gives a nice view of what agents are doing, with lots of configurability and extensions, and the team behind it has been updating pretty steadily. I happen to be working on an extension to Aperture, so I have my…"
+        },
+        {
+          "by": "soared",
+          "text": "One man’s fun is another man’s “idk what any of these words mean, I pay $20/mo for some company to abstract this complexity away” For clarity, I do like blog posts like these."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50150434,
+      "url": "https://mistral.ai/news/timestral/",
+      "hn": "https://news.ycombinator.com/item?id=50150434",
+      "title": "Timestral: Mistral release time-series foundation models",
+      "time": 1792403972,
+      "points": 193,
+      "depth": [
+        {
+          "text": "Mistral released **time-series models** that forecast related data together and can run on a **CPU**",
+          "tier": "simple"
+        },
+        {
+          "text": "It comes in **four sizes**, from 5M to **209M parameters**; the largest ranks first on three public forecasting benchmarks. On a standard server CPU with 8 threads, forecasting one day ahead from three weeks of 15-minute history takes **10 ms** with the smallest model and 140 ms with the largest.",
+          "tier": "substance",
+          "data": [
+            [
+              "5M-model forecast latency",
+              "10 ms"
+            ],
+            [
+              "209M-model forecast latency",
+              "140 ms"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters say a shared model can save work across 10k series; skeptics say time series differ too much to lump together and real-world usefulness is limited.",
+      "comment_count": 36,
+      "terms": [
+        "time series",
+        "time-series foundation model (TSFM)",
+        "multivariate",
+        "covariate",
+        "zero-shot forecasting",
+        "CPU"
+      ],
+      "entities": [
+        "Mistral",
+        "Timestral",
+        "GIFT-Eval",
+        "TIME",
+        "fev-bench"
+      ],
+      "comments": [
+        {
+          "by": "logancbrown",
+          "text": "A lot of misconception around the utility of foundational time series models on HN. Sure, you could train a XGboost model on a time series with holiday or event covariates, but what if you have 10k different series to forecast for?\nYou could train 10k different models, one for each series, but then they have very little history to learn from. Alternatively, you could train a single generic model…"
+        },
+        {
+          "by": "joefourier",
+          "text": "My field is primarily audio/vision ML so I don't have any particular domain expertise, but I don't get how you can lump all \"time-series\" together in one big bucket. My naive understanding is that the way to improve the accuracy is to gain as much joint information as possible. Like: > Known-future covariates. Some drivers of sensor behaviour are known in advance, such as production schedules…"
+        },
+        {
+          "by": "ottomengis",
+          "text": "[delayed]"
+        },
+        {
+          "by": "ritzaco",
+          "text": "Any 'vibe check' on these; I don't have benchmarks but I tried out Le Chonk for general coding work that they claim it works really well at and I was very disappointed, it seemed to make all kinds of obvious errors of the kind that I haven't seen from opus, sol, deepseek flash etc in over a year"
+        },
+        {
+          "by": "edot",
+          "text": "Very nice. It’s mind-blowing to me that it used to take me months to build and deploy a forecasting model five years ago. Now in minutes I can use something like this, implemented with help from an LLM, and get apparently quite good results (and fine-tune on my data, it seems). Speed looks nice too. I want an open weight model with this performance now."
+        }
+      ],
+      "image": "https://mistral.ai/cms-media/api/media/file/og-timestral.webp"
+    },
+    {
+      "id": 50144066,
+      "url": "https://www.getlazarus.org/dynamic/",
+      "hn": "https://news.ycombinator.com/item?id=50144066",
+      "title": "Free Pascal compiler now supports dynamic packages",
+      "time": 1792349284,
+      "points": 178,
+      "depth": [
+        {
+          "text": "Free Pascal now lets you install **components** and deploy **plugins** without rebuilding the whole IDE",
+          "tier": "simple"
+        },
+        {
+          "text": "Dynamic packages are **shared library files** for Linux, Windows, and macOS, and can be **replaced while your program is running**. Lazarus automatically rebuilds registered packages after their source changes, and adding or removing packages no longer requires rebuilding the IDE.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 44,
+      "terms": [
+        "dynamic package",
+        "shared library",
+        "IDE",
+        "RTTI"
+      ],
+      "entities": [
+        "Free Pascal Compiler",
+        "Lazarus",
+        "GitLab",
+        "Pascal",
+        "Linux",
+        "Windows",
+        "macOS",
+        "MoonCompiler",
+        "Claude",
+        "Codex",
+        "Qwen",
+        "Turbo Pascal",
+        "Delphi",
+        "JavaScript",
+        "Python"
+      ],
+      "comments": [
+        {
+          "by": "sysrpl",
+          "text": "I am pleased to announce the first release of full dynamic package support for the Free Pascal Compiler and the Lazarus IDE. This feature has been a long time coming for the FPC ecosystem and has taken more than 20 years to realize through the work of many FOSS individuals. Dynamic packages allow programmers to create and install components, controls, and Lazarus extensions in seconds without…"
+        },
+        {
+          "by": "kristianp",
+          "text": "This seems to be a fork of Lazarus. The official Lazarus is at https://www.lazarus-ide.org/"
+        },
+        {
+          "by": "ethin",
+          "text": "I would love to use Lazarus, but the UI toolkit it uses has some very bad accessibility bugs that make it practically unusable with my screen reader. FreePascal's love of syntax diagrams is also a turn-off for me (I've always preferred things like EBNF or similar for grammar notation)."
+        },
+        {
+          "by": "Perenti",
+          "text": "I love Free Pascal. I've tried using claude/codex/qwen to write in it, but all the models seem to love writing uncompileable code, and ending up in fearsome knots over it. It's my number one \"knock something together that just works\" language for humans though."
+        },
+        {
+          "by": "publlus_enigma",
+          "text": "Well done to the entire team behind this! I haven't programmed Pascal since the 90s, but I always appreciated the design philosophy and tools like Turbo Pascal for rapid development. I find myself becoming increasingly disillusioned by many modern/popular languages, development methodologies and frameworks (particularly around interpreted languages lime JavaScript and Python), so I will check…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50148452,
+      "url": "https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017",
+      "hn": "https://news.ycombinator.com/item?id=50148452",
+      "title": "DeepSeek V4.1 Flash 1017 (Max)",
+      "time": 1792384906,
+      "points": 168,
+      "depth": [
+        {
+          "text": "DeepSeek's **new model** scores well, moves fast, and is notably **verbose**",
+          "tier": "simple"
+        },
+        {
+          "text": "Artificial Analysis scores it **45** on its Intelligence Index, versus a 19 median among comparable models, and reports **225 tokens per second**. It accepts text and images, has a **1M-token context window**, and costs $0.30 per 1M input tokens and $1.20 per 1M output tokens.",
+          "tier": "substance",
+          "data": [
+            [
+              "Intelligence Index score",
+              "45"
+            ],
+            [
+              "Output speed",
+              "225 tokens per second"
+            ],
+            [
+              "Context window",
+              "1M"
+            ],
+            [
+              "Input price",
+              "$0.30 per 1M input tokens"
+            ],
+            [
+              "Output price",
+              "$1.20 per 1M output tokens"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 67,
+      "terms": [
+        "Intelligence Index",
+        "tokens",
+        "context window",
+        "reasoning model",
+        "open weights"
+      ],
+      "entities": [
+        "DeepSeek",
+        "Artificial Analysis"
+      ],
+      "comments": [
+        {
+          "by": "lhl",
+          "text": "The old DeepSeek V4.1 Flash has been my workhorse model for the past month (after running tests comparing w/ Qwen 3.8 Flash Next, GLM 5.3 Flash, MiMo 2.6 Flash (including the MOPD fix)) and I've run tens of billions of tokens through it and pushed it fairly hard in both private internal benchmarking and in my own workloads to figure out where it's strong/weak. Partly because I run it on very fast…"
+        },
+        {
+          "by": "Tiberium",
+          "text": "Somehow GPT 6.1 Sol (medium) is cheaper per task ($0.21 vs $0.26) and faster per task (2.9 vs 4.9 minutes) vs v4.1 Flash 1017 (max). I hope AA adds other reasoning effort results of Deepseek so it'd be more realistic to compare it with other models, because IMO using models at max effort is very unrealistic for most people, they then take a huge amount of time and tokens for a small performance…"
+        },
+        {
+          "by": "aliljet",
+          "text": "What I really want to know for models like this is if I can have them run on really lame consumer hardware (consider 128gb of ram, 2080ti) with extremely low TPS, but with reasonable enough intelligence that you can walk away and expect something to bake really nicely while you sleep. Perhaps I'm losing touch with the edge, but it doesn't seem like this is quite possible with the hardware…"
+        },
+        {
+          "by": "twelvechairs",
+          "text": "Mimo 2.6 pro scores 46 and is half the price (though a lot less throughput). Im not sure why nobody has made the same fuss around it"
+        },
+        {
+          "by": "amelius",
+          "text": "Just want to note that this model still does not work (read: sucks) for recognizing sheet music. The only model that works for me is Astra, but it's expensive."
+        }
+      ],
+      "image": "https://artificialanalysis.ai/en/models/deepseek-v4-1-flash-1017/opengraph-image?3850766eb2d567bc"
+    },
+    {
+      "id": 50141657,
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+      "hn": "https://news.ycombinator.com/item?id=50141657",
+      "title": "Websites are closing their doors to AI agents",
+      "time": 1792335490,
+      "points": 152,
+      "depth": [
+        {
+          "text": "sites are blocking **AI agents**, making it **harder** for them to shop, book trips, or use accounts",
+          "tier": "simple"
+        },
+        {
+          "text": "Yelp only allows agents that pay for its **data licensing program**, while JPMorgan Chase and Charles Schwab block account access over **security concerns**. Even when sites do not ban agents outright, **anti-bot systems** can still get in their way.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say companies block agents to protect ads and sales; others say agents help shoppers compare prices and blocked sites risk losing customers.",
+      "comment_count": 139,
+      "terms": [
+        "AI agent",
+        "data licensing",
+        "anti-bot system",
+        "scraping",
+        "false positive"
+      ],
+      "entities": [
+        "The Verge",
+        "Emma Roth",
+        "OpenAI",
+        "Meta",
+        "Google",
+        "Instinct",
+        "Muse",
+        "xAI",
+        "Grok",
+        "Dots",
+        "Yelp",
+        "TechCrunch",
+        "Delta Air Lines",
+        "JPMorgan Chase",
+        "Charles Schwab",
+        "Cars.com",
+        "Amtrak",
+        "Amazon",
+        "Perplexity",
+        "EquiStamp",
+        "Chris Canal",
+        "Elon Musk",
+        "Walmart",
+        "Gap",
+        "Sephora",
+        "Best Buy",
+        "Shopify",
+        "Cloudflare",
+        "Reddit",
+        "DataDome",
+        "GitHub",
+        "Firefox",
+        "Chromium",
+        "Leroy Merlin",
+        "Idealista",
+        "LinkedIn",
+        "OpenTable"
+      ],
+      "comments": [
+        {
+          "by": "dawnerd",
+          "text": "It’s also a “you can’t scrape us but we can scrape you” mentality these companies are getting into. It really sucks for small businesses. Their websites get absolutely hammered and they can’t afford or don’t know how to stop it. Cloudflare ends up winning as they’re the easiest solution."
+        },
+        {
+          "by": "Jcampuzano2",
+          "text": "This is expected. A lot of these companies that are closing their doors make a large portion of their revenue based off of ads and upsells which agents can easily be instructed to ignore, and don't interact with like a human. Another more blunt way to say it is that people can instruct their agents to look out for their best interests (and while there are cracks they continue to get better at…"
+        },
+        {
+          "by": "Kim_Bruning",
+          "text": "That's perfectly fine by me. I'll read those arguments and buy those things my agents can find on the open web; which is plenty. Want to argue for a shining new world, but you're on a locked site? I guess we'll have to live with dystopia. Want to sell the greatest widget since the invention of sliced bread? Well, I never found it. Sorry, I bought inferior widgets from your competitor instead. I'm…"
+        },
+        {
+          "by": "MzHN",
+          "text": "I hope the irony isn't lost on these companies. Meta is one of the most aggressive companies against any sort of automation, perhaps after LinkedIn. I'm trying to build a personal social media client to stop the platforms from shoving their feeds down my throat and to consume only the content I care about, so this hits home. (I just got blocked from LinkedIn for letting an agent set all of the 77…"
+        },
+        {
+          "by": "variety8675",
+          "text": "Companies don't want it to be easy to cross shop their competition, the whole premise of Amazon is that it's so easy and simple you don't even check the competition. AI agents are leveling the playing field and helping customers find the best deals, so of course they're being banned"
+        }
+      ],
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STK414_AI_CVIRGINIA_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+    },
+    {
+      "id": 50133274,
+      "url": "https://www.lemonde.fr/en/international/article/2026/10/17/israeli-settlers-attack-european-diplomatic-cars-in-west-bank-beat-french-mayor-say-witnesses_6758711_4.html",
+      "hn": "https://news.ycombinator.com/item?id=50133274",
+      "title": "Israeli settlers attack European diplomatic cars in West Bank beat French mayor",
+      "time": 1792259350,
+      "points": 152,
+      "depth": [
+        {
+          "text": "Israeli settlers **attacked European diplomatic cars** in the West Bank and **beat a French mayor**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says **pogroms happen daily** and describes them as a **coordinated campaign** to ethnically cleanse the rural Palestinian population. Another expects governments to stick to statements condemning the attack.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 21,
+      "terms": [
+        "pogrom",
+        "ethnic cleansing"
+      ],
+      "entities": [],
+      "comments": [
+        {
+          "by": "ciconia",
+          "text": "It is important to note that this is not an isolated incident, and this story has only reached the news because the victims are European dignitaries. Those pogroms (there's no better word to describe those incidents) are happening on a daily basis, and the scale (multiple attacks per day) makes it apparent that this not just random violence, but a coordinated campaign to ethnically cleanse the…"
+        },
+        {
+          "by": "vander_elst",
+          "text": "Is be very surprised if there is any other action other than some statements condemning the attack. I wonder what's the line that needs to be crossed before some actions are taken against the government of Israel, which constantly allows this. My guess is that even killing some (<10) Europeans still would not cut it."
+        },
+        {
+          "by": "grandpajoey",
+          "text": "What will the French government do? What does our government do when Americans are attacked by Israelis? Nothing. There can be little more proof that our governments are occupied than that!"
+        },
+        {
+          "by": "vcryan",
+          "text": "The world turns a blind eye to Israeli terrorism."
+        },
+        {
+          "by": "michaelhillaert",
+          "text": "Imagine the reactions if it would not be Israeli 'settlers' also known as terrorists, but Syrians or Afghan people doing the attacks..."
+        }
+      ],
+      "image": null
+    },
+    {
       "id": 50145337,
       "url": "https://arxiv.org/abs/2610.18861",
       "hn": "https://news.ycombinator.com/item?id=50145337",
@@ -504,7 +1232,62 @@
     }
   ],
   "glossary": {
+    "kernel": "A small program that carries out a calculation on a computer's graphics chip or processor.",
+    "filesystem": "A way an operating system keeps track of files and folders.",
+    "failfs": "The new filesystem in this release that fails every operation.",
+    "system call": "A request a program makes to the operating system to do something, like open a file.",
+    "non-merge commit": "A recorded code change that does not combine other recorded changes.",
+    "merge window": "A period when developers send changes to be included in the next Linux release.",
+    "SMB": "Server Message Block: a way computers share files over a network.",
+    "ICE": "Internal Combustion Engine: an engine that makes power by burning fuel inside it.",
+    "license plate reader": "A camera system that records car plates so they can be searched later.",
+    "credentials": "The username and password that let someone sign in to an account.",
+    "audit trail": "A record showing which account used a system, so activity can be traced.",
+    "SaaS": "Software as a Service: software you access over the internet, with the provider running it for you.",
+    "2FA": "Two-factor authentication: a sign-in check that asks for a second proof of identity as well as a password.",
     "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "esoteric programming language": "A programming language made mainly as an unusual experiment or puzzle, rather than for everyday software.",
+    "interpreter": "A program that reads code and carries out what it says.",
+    "stack": "A pile of values where a program adds items to the top and removes them from there.",
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "guardrails": "Instructions that tell an AI how it should respond.",
+    "open-weight model": "A model whose trained settings are shared so other people can use them.",
+    "transpiler": "A compiler that turns a program into another human-readable format, such as source code.",
+    "decompile": "To turn a program back into code that is easier to inspect.",
+    "VR": "Virtual reality: a computer-made view that replaces what you see around you.",
+    "trademark": "A name or logo legally protected so people can tell whose product or project it is.",
+    "CAD": "Computer-aided design: software for making or changing designs on a computer.",
+    "RAM": "Random-Access Memory: a computer's working space for information it is using right now.",
+    "LLM proxy": "A go-between your AI app talks to first, so requests can be routed and recorded before reaching an AI provider.",
+    "OTEL": "OpenTelemetry: a way for software to send records about what it did, so you can inspect them later.",
+    "API key": "A secret code that lets software use an online service as an approved user.",
+    "virtual API key": "A separate key issued by a proxy, so a tool doesn't need the provider's main key.",
+    "harness": "The surrounding code that gives an AI agent tools and a place to work, and checks what it does.",
+    "cache miss": "When needed data isn't in the computer's small, fast holding area, so it must fetch it from slower memory.",
+    "single point of failure": "One component whose breakdown can stop the whole service from working.",
+    "tokens": "Small pieces of text an AI counts as it reads or writes; they can affect how much a request costs.",
+    "JSONL": "JSON Lines: a file format that stores one item on each line so a program can read them separately.",
+    "time series": "Measurements recorded over time, like a machine's temperature every few minutes.",
+    "time-series foundation model (TSFM)": "A model trained on lots of time-based data so it can forecast a new series without being trained from scratch for that series.",
+    "multivariate": "Using several related measurements together, rather than looking at each one separately.",
+    "covariate": "A factor researchers account for while looking at another pattern.",
+    "zero-shot forecasting": "Making predictions on data the model has not seen before, without first training it on that data.",
+    "CPU": "Central Processing Unit: the main chip that runs instructions in a computer.",
+    "dynamic package": "A package that can be loaded separately from the main program and replaced while the program runs.",
+    "shared library": "A file of code that a program can load while it runs, instead of building it into the program.",
+    "IDE": "Integrated Development Environment: an app that brings coding and other development tools together.",
+    "RTTI": "Run-Time Type Information: details that let a program find out what kind of thing a value or class is.",
+    "Intelligence Index": "A score used here to compare how well different AI models perform.",
+    "context window": "The amount of text and information an AI can take into account at one time.",
+    "reasoning model": "An AI model that spends extra steps working through a problem before answering.",
+    "open weights": "The model's learned settings are available for people to download and run themselves.",
+    "AI agent": "An autonomous computer program that can carry out tasks.",
+    "data licensing": "An agreement that gives someone permission to use or provide data, often in exchange for payment.",
+    "anti-bot system": "A website check meant to spot and stop automated visitors.",
+    "scraping": "Using automated tools to collect content from websites.",
+    "false positive": "A system reports a match even though the person is not the one it was looking for.",
+    "pogrom": "A violent attack on people because of the group they belong to.",
+    "ethnic cleansing": "Forcing a group of people out of an area because of their ethnicity, often through violence or threats.",
     "latent space": "A model's internal workspace for handling information without writing it out as words.",
     "agent": "An AI system that can take steps and use tools to get a task done, not just answer questions.",
     "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
@@ -536,7 +1319,6 @@
     "compiler": "A tool that turns code you write into a program a computer can run.",
     "embeddability": "A program's ability to be built into another program or device.",
     "regulatory capture": "When rules meant to control an industry end up helping the companies they are supposed to oversee.",
-    "AI agent": "An autonomous computer program that can carry out tasks.",
     "open-source model": "An AI model whose underlying pieces are made available for others to use or build on.",
     "sealed class": "A type that says which other types are allowed to extend or implement it.",
     "pattern matching": "Spotting familiar shapes or arrangements and using them to guess what fits.",
