@@ -2,6 +2,438 @@
   "date": "2026-10-20",
   "cards": [
     {
+      "id": 50168396,
+      "url": "https://mistral.ai/news/voxtral-3/",
+      "hn": "https://news.ycombinator.com/item?id=50168396",
+      "title": "Voxtral 3",
+      "time": 1792512127,
+      "points": 437,
+      "depth": [
+        {
+          "text": "Mistral introduced **voice-agent tools** that listen, reason, speak, and **take action** across 50+ languages",
+          "tier": "simple"
+        },
+        {
+          "text": "The **SDK**, built on LiveKit, combines transcription, a reasoning model, tool calls, and spoken replies in one streaming pipeline; each turn completes in **under one second**. Organizations can use Mistral’s **EU-hosted API** or run the stack on their own infrastructure.",
+          "tier": "substance",
+          "data": [
+            [
+              "realtime transcription latency",
+              "sub-500ms"
+            ],
+            [
+              "voice agent turn",
+              "under one second"
+            ],
+            [
+              "Voxtral Mini Transcribe 3 (batch)",
+              "$0.0035/min"
+            ],
+            [
+              "Voxtral Speech 3",
+              "$13/1M chars"
+            ],
+            [
+              "voice agent API with Mistral Small 4",
+              "0.04$/min"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some would welcome a competent AI call-center agent instead of a long wait; others worry voice agents connected to company systems could be talked into sending payments.",
+      "comment_count": 121,
+      "terms": [
+        "SDK",
+        "diarization",
+        "context biasing",
+        "end-of-turn detection",
+        "STT",
+        "TTS",
+        "SIP",
+        "WebRTC"
+      ],
+      "entities": [
+        "Mistral",
+        "Voxtral 3",
+        "LiveKit",
+        "Voxtral Small Transcribe 3",
+        "Voxtral Mini Transcribe 3",
+        "Voxtral Realtime Transcribe 3",
+        "Voxtral Mini TTS 3",
+        "Voxtral Speech 3",
+        "Mistral Small",
+        "Microsoft Teams",
+        "8x8",
+        "Whisper",
+        "Scribe v2",
+        "Gemini",
+        "OpenAI",
+        "Deepgram",
+        "ElevenLabs",
+        "Google",
+        "Claude",
+        "MoshiRag",
+        "PersonaPlex",
+        "Hermes",
+        "alass"
+      ],
+      "comments": [
+        {
+          "by": "TuringNYC",
+          "text": "I've transcribed calls with Microsoft Teams and 8x8 and the transcripts are absolutely awful. Sometimes so poor that one cannot reliably use them with LLMs. I feel so incredibly left out when I see these models on HN and have to go back to corporate reality and deal with Microsoft Teams and 8x8. I wish these products could produce plugins where i could direct Microsoft Teams and 8x8 streams to…"
+        },
+        {
+          "by": "creposukre",
+          "text": "Very unrealistic demo. It is impossible to get a dermatologist appointment that fast in France"
+        },
+        {
+          "by": "Const-me",
+          "text": "Their previous generation open weight STT model was pretty good. I have recently launched commercial Windows software implementing offline inference of Voxtral Mini 4B Realtime on commodity hardware: https://vrmac-softver.com/speech2text It requires 4GB VRAM, and exceeds realtime rate on my “median” laptop with Ryzen 5 5600U iGPU. I’m currently working on a Linux port."
+        },
+        {
+          "by": "londons_explore",
+          "text": "> Human-like intelligence at your (spoken) command. The new voice agent SDK combines listening, reasoning, tool calling, and speaking into a real-time experience. Agents can retrieve information, interact with business systems, and complete tasks during live conversations over phone or web. I see companies hooking this up direct to the company intranet, and then users calling up and saying \"Can…"
+        },
+        {
+          "by": "drum55",
+          "text": "Closed model unfortunately, continues the theme of TTS / STT being really not great for local deployments."
+        }
+      ],
+      "image": "https://mistral.ai/cms-media/api/media/file/hero-blog-voxtral.png"
+    },
+    {
+      "id": 50170593,
+      "url": "https://permit.petercai.com/",
+      "hn": "https://news.ycombinator.com/item?id=50170593",
+      "title": "SimCity, but with Permits",
+      "time": 1792520949,
+      "points": 341,
+      "depth": [
+        {
+          "text": "someone made a **city-building game** where every project has to survive **politics** and **angry voters**",
+          "tier": "simple"
+        },
+        {
+          "text": "You’re an **elected mayor**, balancing housing, jobs and transit through hearings, lawsuits, and votes on a **seven-seat council**. There’s **no win screen**; the city keeps going as long as voters let you stay in office.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some see permitting and public input as a tangle that blocks building; others say residents need a say or neighborhoods can decay.",
+      "comment_count": 178,
+      "terms": [
+        "zoning",
+        "sandbox",
+        "WebGL"
+      ],
+      "entities": [
+        "Permit Pending",
+        "SimCity",
+        "EPCOT",
+        "Walt Disney",
+        "Factorio",
+        "Three.js",
+        "React",
+        "Vite",
+        "WebGL",
+        "Peter Cai"
+      ],
+      "comments": [
+        {
+          "by": "bruce511",
+          "text": "I suppose this is the result of a hundred years of democracy, aka having to keep everyone happy all the time. Municipal rules, zoning, community feedback and so on all operate in the space of keeping people happy. No-one wants noise, so we have noise restrictions. Oops, construction is constrained. We all want no traffic, and lots of parking, so low density please, but that creates housing…"
+        },
+        {
+          "by": "zabriel_goss",
+          "text": "The original EPCOT as imagined by Walt Disney was a master-planned city, with all the pleasant amenities and cleverest design you could imagine in the 1960's: Walkable areas, clean public transit, no traffic congestion, homes furnished with the latest in technology and appliances. It was his greatest ambition at the end of his life to make it a reality. But it didn't happen. Namely, because of…"
+        },
+        {
+          "by": "marcd35",
+          "text": "Error when loading a new game: Permit Pending error report\nCode: PP-SIM-F99D\nStep: running the simulation\nError: Error: The simulation could not start.\nBuild: 2e99342ba03e\nTime: 2026-10-20T21:37:28.780Z\nPage: https://permit.petercai.com/play/\nBrowser: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Machine:\nscreen 1920x1080, window…"
+        },
+        {
+          "by": "BatmansMom",
+          "text": "A little too much going on all at once in the beginning. For a complex game like this I think you have to start small and slowly introduce functionality. Why are so many buttons available to me from minute 1? I'm not using them."
+        },
+        {
+          "by": "ryandrake",
+          "text": "Kind of like this one[1] which made the rounds on HN a few weeks ago. Looks like the social commentary from them are similar: \"Real life is worse than SimCity because of rules and the public getting a say.\" and/or \"Why can't we in real life let the mayor use the Bulldozer Tool to just wipe out any property he doesn't like and put up whatever property he likes in its place?\" 1…"
+        }
+      ],
+      "image": "https://permit.petercai.com/marketing/og.jpg"
+    },
+    {
+      "id": 50167028,
+      "url": "https://prestonbyrne.com/2026/10/20/ofcom-concedes-defeat/",
+      "hn": "https://news.ycombinator.com/item?id=50167028",
+      "title": "Ofcom concedes defeat in 4chan case",
+      "time": 1792506631,
+      "points": 271,
+      "depth": [
+        {
+          "text": "Ofcom admits it may not **recover its fines** through **US courts**",
+          "tier": "simple"
+        },
+        {
+          "text": "At a Commons committee hearing, **Dame Melanie Dawes** said there could be a point where **foreign courts stop Ofcom recovering the money**. The author says Ofcom may ask Parliament for **“interim business disruption measures”** to block foreign websites in the UK before an enforcement process starts.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some suspect Ofcom hoped to impose its rules globally; others say it knew its limits and the case changed nothing.",
+      "comment_count": 181,
+      "terms": [
+        "jurisdiction",
+        "obiter dicta",
+        "penal judgment",
+        "interim business disruption measures",
+        "VPN",
+        "sovereign immunity",
+        "First Amendment"
+      ],
+      "entities": [
+        "Ofcom",
+        "4chan",
+        "Preston Byrne",
+        "Dame Melanie Dawes",
+        "Guido Fawkes",
+        "Commons Digital, Culture, Media, and Sport Committee",
+        "Online Safety Act",
+        "Nadine Dorries",
+        "GRANITE Act",
+        "Meta",
+        "Telegram",
+        "Dominic Cummings",
+        "House of Lords Constitutional Committee"
+      ],
+      "comments": [
+        {
+          "by": "Aurornis",
+          "text": "This was such a weird case. Usually when a country goes after a foreign business they enforce it by imposing restrictions within their own borders and threatening the operators with legal action if they ever enter the country. If the operators don’t visit the country and their banking doesn’t cross a business that must follow those laws (which is hard), it’s otherwise symbolic. I may be reading…"
+        },
+        {
+          "by": "cjs_ac",
+          "text": "This fits quite neatly with Dominic Cummings' comments to the House of Lords Constitutional Committee[0] about how the British Civil Service can't do anything because no one with any talent wants to work there. [0] https://www.youtube.com/watch?v=KBBYvj4YQLE (full video is an hour and a half, but you can skip to any bit because he just makes the same handful of points over and over again)"
+        },
+        {
+          "by": "simoncion",
+          "text": "In an ideal world, exclusively-US-based companies that host message boards, chat rooms, instant messaging services, and the like would look at this saga and 1) Notice that the odds that a foreign power is going to be able to harm them in any meaningful way for violating their \"child 'safety'\" laws that curtail freedom of speech and association are very low 2) Notice that 4chan is fighting harder…"
+        },
+        {
+          "by": "mm263",
+          "text": "This is just laying down the ground work for Russia-style deep packet inspection. “We don’t have a capability to censor the foreign internet, so we need measures to cut off the violating sites from our side”"
+        },
+        {
+          "by": "miohtama",
+          "text": "Think of the kids the world we failed to protect by not having passport checks and government snitch at the 4chan login. But don’t worry! We will check your passport when you open your phone (already live in the UK, efforts supported by the GBP 2M secret donation of Meta to NGOs). And what’s the worst thing that could happen? No one would for sure arrest you for being critical of a foreign…"
+        }
+      ],
+      "image": "https://prestonbyrne.com/wp-content/uploads/2026/10/hamster.jpg"
+    },
+    {
+      "id": 50169053,
+      "url": "https://github.com/google-pytorch/torch_tpu",
+      "hn": "https://news.ycombinator.com/item?id=50169053",
+      "title": "Google open-sources TorchTPU, a native PyTorch back end for TPUs",
+      "time": 1792514424,
+      "points": 204,
+      "depth": [
+        {
+          "text": "Google released an open-source tool for running **models** on its **TPU chips**",
+          "tier": "simple"
+        },
+        {
+          "text": "TorchTPU provides a **PyTorch backend** for Google’s Tensor Processing Units, with custom **ATen kernels** and a compilation cache for XLA computations. It also supports **distributed training** and includes model examples such as Llama, Qwen, ResNet, DLRM, minGPT, and UNet.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 48,
+      "terms": [
+        "TPU",
+        "PyTorch",
+        "backend",
+        "ATen kernel",
+        "XLA",
+        "distributed training"
+      ],
+      "entities": [
+        "Google",
+        "TorchTPU",
+        "PyTorch",
+        "XLA"
+      ],
+      "comments": [
+        {
+          "by": "pcmoritz",
+          "text": "For people interested in this: I've been working on an open-source libtpu implementation for https://tenstorrent.com/ accelerators as a side project, it can already run most of torchtpu, see https://github.com/pcmoritz/libtt (based on the tenstorrent software stack). It shows all the things involved in lowering torch to tile based accelerators."
+        },
+        {
+          "by": "dalemhurley",
+          "text": "Google and Apple are going to move consumers and ordinary business users to edge inference. This is more disruptive to the upcoming IPOs than most investors understand."
+        },
+        {
+          "by": "npalli",
+          "text": "Interesting, Amazon doing the same for AWS Trainium. https://github.com/aws-neuron/torch-neuronx"
+        },
+        {
+          "by": "fancyfredbot",
+          "text": "Cool! XLA is pretty good + potentially a better compiler infrastructure than inductor which will lead to improved performance on all hardware. Also I guess this is the final nail in the coffin of Tensorflow."
+        },
+        {
+          "by": "ismailmaj",
+          "text": "Amazing news, I remember the days when you had to fight XLA to make PyTorch run on TPUs, it seems we finally got first-party support! Since HW specifics live mostly in the kernel layer (Pallas or CUDA), I imagine the Jax vs PyTorch question is more of a style preference now?"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/3da4afb24ca991a5c15835de91f3cc123125cac6b81dfdc30906c638d7559fd2/google-pytorch/torch_tpu"
+    },
+    {
+      "id": 50165484,
+      "url": "https://entropicthoughts.com/nixos-is-making-me-less-afraid",
+      "hn": "https://news.ycombinator.com/item?id=50165484",
+      "title": "NixOS is making me less afraid",
+      "time": 1792500185,
+      "points": 154,
+      "depth": [
+        {
+          "text": "someone says **NixOS** makes trying **self-hosted services** less scary because server setups are easy to repeat",
+          "tier": "simple"
+        },
+        {
+          "text": "The author says a working **FreshRSS configuration**, including backups, took **9 lines of Nix code**, plus a dozen more lines for the nginx reverse proxy. It has worked hands-off for the past few months, and the author thinks a replacement server could be running the same setup in something like **15 minutes**.",
+          "tier": "substance",
+          "data": [
+            [
+              "FreshRSS configuration",
+              "9 lines of Nix code"
+            ],
+            [
+              "nginx reverse proxy configuration",
+              "a dozen more lines"
+            ],
+            [
+              "new server setup",
+              "something like 15 minutes"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: NixOS fans praise reproducible setups; skeptics question whether the gains are convincing, and one commenter says an update left their laptop unable to boot.",
+      "comment_count": 99,
+      "terms": [
+        "NixOS",
+        "FreshRSS",
+        "RSS feed",
+        "reverse proxy",
+        "container image"
+      ],
+      "entities": [
+        "NixOS",
+        "FreshRSS",
+        "Nix",
+        "nginx",
+        "CFEngine",
+        "Ansible",
+        "podman",
+        "k3s",
+        "Apache",
+        "php-fpm",
+        "Let’s Encrypt",
+        "systemd",
+        "Dockerfile",
+        "Claude Code",
+        "Guix",
+        "Forgejo",
+        "Miniflux",
+        "Coolify",
+        "GitHub",
+        "Gemini",
+        "Google News",
+        "Kubernetes",
+        "Arch",
+        "Omarchy",
+        "nixpkgs",
+        "Home Manager",
+        "flox.dev",
+        "NixOS Foundation",
+        "Linux"
+      ],
+      "comments": [
+        {
+          "by": "s08148692",
+          "text": "Coming back to Nix (and Linux in general) this year has been an absolute pleasure. Not because it's suddenly got better, but because the learning curve has collapsed to a flat line. My problem with linux has always been how un-user friendly it is. Constant tinkering around with config files and googling how to fix problems. Now I just install claude code and tell it what I want my OS to be and…"
+        },
+        {
+          "by": "haolez",
+          "text": "I don't want to bore my HackerNews fellows, so I'm sorry in advance, but wasn't there a lot of drama in the Nix community? I've read some time ago that a private company was buying parts of its infrastructure (or something like that) and forcing some changes upstream and people were not happy about it. I'm interested in NixOS, but I'm at an age where I just want things to stay stable and change…"
+        },
+        {
+          "by": "scronkfinkle",
+          "text": "A lot of folks have been praising the harmony of Claude code + nixOS. For those of you doing this, I would recommend you to ask your agent to switch your config to nix flakes. It's a much better paradigm for working with the versioning than the default channels interface. Additionally, you should ask your agent to look into home manager, if it hasn't done so already."
+        },
+        {
+          "by": "clircle",
+          "text": "Similar here, but I'm running rootless podman containers in Guix like this: (oci-container-configuration\n(environment\n'(\"CRON_MIN=2,32\"\n\"LISTEN=0.0.0.0:80\"\n\"OIDC_ENABLED=0\"))\n(image \"freshrss/freshrss:edge\")\n(log-file (container-log \"freshrss\"))\n(extra-arguments\n'(\"--pod=freshrss\"))\n(provision \"freshrss\")\n(respawn? #t)\n(volumes\n'(\"...\")))"
+        },
+        {
+          "by": "ronef",
+          "text": "Your title is verbatim how Nix made me feel when I first started years ago. It does so many small things in a pure format that it was hard to immediately come up with the \"key ROI\" the larger industry expected. Did it just speed up dev envs? Did it just make my builds faster? Back then, a lot of folks barely cared or understood the impact of the deterministic and reproducible foundation using Nix…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50168190,
+      "url": "https://www.ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop",
+      "hn": "https://news.ycombinator.com/item?id=50168190",
+      "title": "Steam Users Beg for \"No AI\" Filter as Vibecoders Flood Next Fest",
+      "time": 1792511306,
+      "points": 152,
+      "depth": [
+        {
+          "text": "Steam fans want a way to **filter AI-made games** after Next Fest seemed unusually full of **low-effort submissions**",
+          "tier": "simple"
+        },
+        {
+          "text": "A Steam subreddit user asked to filter games that disclose **AI-generated content**; Valve would need to add an **“AI” tag**. Commenters said AI use ranges from fixing a scripting bug to making game assets, which makes a clean label hard to define.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some want an AI-content filter to hide the flood of slop; others say AI use is too varied to label and that poor quality—not AI itself—is the real problem.",
+      "comment_count": 181,
+      "terms": [
+        "vibe coding",
+        "asset flip"
+      ],
+      "entities": [
+        "Steam",
+        "Valve",
+        "Steam Next Fest",
+        "ScalesGhost"
+      ],
+      "comments": [
+        {
+          "by": "freeone3000",
+          "text": "There appears to be a lot of calls for nuance here. This is what people are mad about, taken from the front page of nextfest:\nhttps://store.steampowered.com/app/5106420/Leverage_Real_Est...\nhttps://store.steampowered.com/app/5155900/Ages_TD_Demo/?cur...\nhttps://store.steampowered.com/app/5200920/BATTLE_PARTS__POW...\nhttps://store.steampowered.com/app/4609270/Naval_Supremacy/?... These are, as a…"
+        },
+        {
+          "by": "joshstrange",
+          "text": "What Steam users want is a way to filter out crap but crap existed well before AI (trust me, I've spent a _lot_ of time scrolling through games on Steam both for \"Fests\" and just in general). And unfortunately, there isn't an easy way to filter \"crap\" out. There as good games that use AI, there are bad games that use AI, there are good games that don't use AI, there are bad games that don't use…"
+        },
+        {
+          "by": "tintor",
+          "text": "How would no-AI filter be implemented by Steam at all? Do people expect Steam to proctor the entire development process? Issue here is not AI use, but very low amount of creative human effort that went into making some games. There are three existing realistic solutions for this problem: - raise SteamWorks deposit of $100 for launching a new game on Steam (to reflect lower cost of making games…"
+        },
+        {
+          "by": "underyx",
+          "text": "I don’t have solutions but tagging AI is definitely not easy. A lot of art is expressed via code: particle effects, menu layouts, iconography, animation keyframes. AI having written any of the code would get so many games tagged as AI that the label would lose all meaning. More recently, Opus 5.5 is clearly a model that started to develop visual taste and can draw images with code, as opposed to…"
+        },
+        {
+          "by": "yangm97",
+          "text": "Steam has had problems with asset flippers long before “AI” hit the mainstream, but due the fact that even those “human slop” took time to make, you didn’t see them as often. Sure, we at HN are holier than the rest and we know how to “bend the powers of AI for good”, but what Steam players see is a sea of mass produced AI slop games which barely work at all. And yes, there is that one guy with…"
+        }
+      ],
+      "image": "https://assets-prd.ignimgs.com/2023/07/01/steam-blogroll-logos-1663887576752-1673156937925-1688244430676.jpg?width=1280&format=jpg&auto=webp&quality=80"
+    },
+    {
       "id": 50167536,
       "url": "https://mastodon.gamedev.place/@AshleyGullen/117473851565913919",
       "hn": "https://news.ycombinator.com/item?id=50167536",
@@ -2155,6 +2587,37 @@
     }
   ],
   "glossary": {
+    "SDK": "Software Development Kit: tools a company provides so people can make apps for its device.",
+    "diarization": "Working out which speaker said each part of a recording.",
+    "context biasing": "Giving a speech system words to pay extra attention to, so it is more likely to recognize them correctly.",
+    "end-of-turn detection": "Figuring out when someone has finished speaking so the system can reply.",
+    "STT": "Speech-to-Text: software that turns spoken words into writing.",
+    "TTS": "Text-to-speech: software that turns written words into spoken audio.",
+    "SIP": "Session Initiation Protocol: rules phone systems use to start and manage calls.",
+    "WebRTC": "Web Real-Time Communication: browser features for live audio and video calls.",
+    "zoning": "Rules about what can be built or used on different pieces of land.",
+    "sandbox": "A separate, contained space where software can be tested without affecting the rest of a computer or system.",
+    "WebGL": "A browser feature that lets websites draw 2D and 3D images using your computer.",
+    "jurisdiction": "A court's legal authority to hear a case or make a decision about it.",
+    "obiter dicta": "A judge’s comments in a case that are not needed to decide the case.",
+    "penal judgment": "A court order meant to punish someone, rather than settle a private dispute.",
+    "interim business disruption measures": "Temporary powers to interrupt a business’s activity, such as blocking a website, before the full enforcement process.",
+    "VPN": "Virtual private network: a service that sends your internet traffic through another computer, often to protect it or make it appear to come from somewhere else.",
+    "sovereign immunity": "A legal shield that can stop a government from being sued without its permission.",
+    "First Amendment": "The part of the US Constitution that protects rights including freedom of speech.",
+    "TPU": "Thermoplastic polyurethane: a bendy kind of plastic used to make some printed parts.",
+    "PyTorch": "A software tool developers use to build and run machine-learning models.",
+    "backend": "The part of an app that does work behind the scenes, such as handling its data.",
+    "ATen kernel": "A small piece of code that carries out one kind of operation in PyTorch.",
+    "XLA": "A system that prepares calculations so they can run on hardware such as TPUs.",
+    "distributed training": "Training a model across multiple devices instead of doing all the work on one.",
+    "NixOS": "A computer operating system that uses written setup instructions so machines can be rebuilt in the same way.",
+    "FreshRSS": "A tool for collecting RSS feeds so you can read them on a website or in an app.",
+    "RSS feed": "A stream of new posts from a site that you can follow in a reading app.",
+    "reverse proxy": "A server that sits in front of another service and passes requests along to it.",
+    "container image": "A ready-made bundle of an app and the files it needs to run on a server.",
+    "vibe coding": "Making software by telling an AI what you want and letting it write the code, often without closely checking how it works.",
+    "asset flip": "A game made quickly from ready-made pieces, with little original work added.",
     "organic marketing": "Promotion that reaches people without buying ads.",
     "A/B test": "A comparison of two versions to see which one works better for people.",
     "walled garden": "A service that keeps you within one company's products and limits what else you can use.",
@@ -2255,7 +2718,6 @@
     "fine-tune": "Train an already-trained model further using examples for a particular task.",
     "tool call": "A request from an AI assistant for another program to do something, such as run a command.",
     ".env file": "A project file that can hold settings and secret keys used by the program.",
-    "sandbox": "A separate, contained space where software can be tested without affecting the rest of a computer or system.",
     "orchestrator": "A piece of software that coordinates other programs or AI helpers so they can complete a task.",
     "task graph": "A plan showing which tasks rely on others, so unrelated ones can happen at the same time.",
     "subagent": "A helper assigned a smaller part of a larger task.",
