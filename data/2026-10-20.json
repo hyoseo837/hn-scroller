@@ -2,6 +2,755 @@
   "date": "2026-10-20",
   "cards": [
     {
+      "id": 50167536,
+      "url": "https://mastodon.gamedev.place/@AshleyGullen/117473851565913919",
+      "hn": "https://news.ycombinator.com/item?id=50167536",
+      "title": "Facebook Pages require paid subscription to post more than two links per month",
+      "time": 1792508768,
+      "points": 305,
+      "depth": [
+        {
+          "text": "Facebook Pages require a **paid subscription** to post more than **two links per month**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says a public group let them post **three links** in two minutes without being charged, and thinks the restriction may apply to **organic marketing**. Others guess it targets **bots and spam**, while another calls it monetization creep.",
+          "tier": "substance",
+          "data": [
+            [
+              "subscription threshold",
+              "more than two links per month"
+            ],
+            [
+              "links in public-group test",
+              "three links"
+            ],
+            [
+              "time for public-group test",
+              "2 minutes"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some think the restriction could curb bots and link spam; others see monetization creep and worry it blocks ordinary sharing.",
+      "comment_count": 246,
+      "terms": [
+        "organic marketing",
+        "A/B test",
+        "walled garden"
+      ],
+      "entities": [
+        "Facebook",
+        "Meta",
+        "Polygon",
+        "YouTube"
+      ],
+      "comments": [
+        {
+          "by": "belak",
+          "text": "I wonder if this is an effort to combat pages which post a short clickbait description and require you to click \"read more\" to see the full description, and often post the link in the comments. There are lots of sites (Polygon immediately comes to mind) which are notorious for doing this as a way to get fake engagement which boosts their posts which gets more clickbait engagement. I know it's all…"
+        },
+        {
+          "by": "josefresco",
+          "text": "As someone who helps small businesses create their own websites... thank you Facebook! Seriously though, back when \"Facebook Pages instead of websites\" were all the rage, FB demoting page content in feeds officially killed that movement and I was similarly happy."
+        },
+        {
+          "by": "arjie",
+          "text": "I created a new public group and posted three links from my blog to it in the space of 2 minutes without being charged https://www.youtube.com/watch?v=KtUvHF02lx4 Therefore \"Facebook now charging to post more than 2 links a month\" is false. It appears that this is some restriction applied to organic marketing."
+        },
+        {
+          "by": "meerita",
+          "text": "I quit Facebook in 2012. I cannot imagine what's there but in 2019 I had to create a new account to test some development stuff, and checked friends and family and it was pretty much dead."
+        },
+        {
+          "by": "rickcarlino",
+          "text": "In the 2010s, there was a move away from files in the name of convenience (lock-in). The 2020s are a war on hyperlinks. It is particularly unfortunate to see this masquerading as a concern for safety and security (“everything outside of our platform is scary and insecure”)"
+        }
+      ],
+      "image": "https://cdn.masto.host/mastodongamedevplace/media_attachments/files/117/473/851/121/967/109/original/2fb667edf9ac327a.png"
+    },
+    {
+      "id": 50162177,
+      "url": "https://github.com/microg/GmsCore/wiki",
+      "hn": "https://news.ycombinator.com/item?id=50162177",
+      "title": "MicroG: Free-libre re-implementation of Google's proprietary Android user space",
+      "time": 1792478227,
+      "points": 297,
+      "depth": [
+        {
+          "text": "someone made a **free replacement** for Google's services so some apps can run on **alternative Android systems**",
+          "tier": "simple"
+        },
+        {
+          "text": "microG GmsCore **reimplements Google Play Services**, letting apps that call proprietary Google APIs run on **AOSP-based ROMs** like LineageOS. It needs **signature spoofing** on the Android system, and a full setup also requires a Play Store replacement app.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: one user says it works a charm; another worries that relying on signature spoofing creates risk.",
+      "comment_count": 40,
+      "terms": [
+        "AOSP",
+        "ROM",
+        "signature spoofing",
+        "API"
+      ],
+      "entities": [
+        "microG",
+        "GmsCore",
+        "Google",
+        "Google Play Services",
+        "AOSP",
+        "LineageOS",
+        "GrapheneOS",
+        "SNCF-Connect",
+        "/e/OS",
+        "Telegram",
+        "UnifiedNlp",
+        "microG Companion"
+      ],
+      "comments": [
+        {
+          "by": "cf100clunk",
+          "text": "MicroG is possible to run on GrapheneOS but isn't recommended since GOS has a sandboxing solution for running Google Play apps: https://grapheneos.org/features#sandboxed-google-play"
+        },
+        {
+          "by": "maelito",
+          "text": "I have never understood why people using MicroG can use apps like SNCF-Connect, while I cannot. SNCF-connect is the largest online marchant in France. Since june, I cannot click the \"pay\" button anymore. It coincides with the new feature of Pay with Google. So : is it because MicroG allows calls to Google services on e/OS devices, while my LineageOS refuses ? Or because MicroG implemented a try…"
+        },
+        {
+          "by": "jamesnorden",
+          "text": "Why do the most recent commits all say \"Merge commit from fork\" without any description of what the changes do or what the fork is?"
+        },
+        {
+          "by": "orphea",
+          "text": "I guess this is submitted because of https://news.ycombinator.com/item?id=50154624 ?"
+        },
+        {
+          "by": "mshish",
+          "text": "It's too bad you have to rely on signature spoofing to be able to use this as an alternative (but obviously I understand why). The spoofing looks narrowly scoped on LineageOS, but in general I imagine it creates some risk."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/d7fc1cf0a3c58d30310ba09e02b2f561c28d01cfb9df54a0e8c013cca2709593/microg/GmsCore"
+    },
+    {
+      "id": 50165208,
+      "url": "https://teddysvoronos.com/2026-10-19-apple-broke-an-essential-presentation-feature-of-ipads/",
+      "hn": "https://news.ycombinator.com/item?id=50165208",
+      "title": "Apple broke an essential presentation feature of iPads",
+      "time": 1792498648,
+      "points": 297,
+      "depth": [
+        {
+          "text": "an **iPad update** can accidentally show students **private notes** meant only for the teacher",
+          "tier": "simple"
+        },
+        {
+          "text": "With multiple windows open during AirPlay, iPadOS 27 sends the **whole iPad screen** to the external display when you tap outside the presenting app. That can expose **notes or poll results**; GoodNotes returns to presenter view when tapped again, Keynote exits, and PowerPoint leaves you needing to **restart the presentation**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some want presenter mode to keep control of the external display; others want an on-screen choice between sharing the whole screen and keeping the presentation up.",
+      "comment_count": 168,
+      "terms": [
+        "AirPlay",
+        "iPadOS",
+        "Stage Manager",
+        "presenter mode"
+      ],
+      "entities": [
+        "Apple",
+        "iPad",
+        "iPadOS",
+        "AirPlay",
+        "Stage Manager",
+        "GoodNotes",
+        "Keynote",
+        "PowerPoint",
+        "Mac",
+        "Mac Power Users",
+        "Google Slides",
+        "Notability",
+        "Reddit",
+        "Teddy Svoronos"
+      ],
+      "comments": [
+        {
+          "by": "btown",
+          "text": "So I could see the other argument here: I’m presenting from a presentation, I want to switch to a live demo environment, and to do so I need to turn off the presentation entirely? Now, another operating system might see this tension and say: why not have a UI element come up, and ask the user whether they want to share their entire screen or stay on the existing shared window? Here, I think this…"
+        },
+        {
+          "by": "abujazar",
+          "text": "Apple needs to get their software design on track again and do proper QA and testing on their software before making these kinds of changes. 27 was supposed to be a quality improvement snd bugfix release, but it's mostly been a cascade of bugs and UI failures."
+        },
+        {
+          "by": "randusername",
+          "text": "I see comments on posts like this complaining that Apple has the money to make software as high-quality as their hardware so they must be dysfunctional. I'm not sure it's so easy. I think you have to compromise on hardware or software and Apple makes a choice. My whole career in embedded devices, software is always under schedule pressure from hardware. Not because hardware is sloppy or evil, but…"
+        },
+        {
+          "by": "e40",
+          "text": "I had heard 27 was much better than 26, so I broke my usual embargo on new macOS versions until x.y.5 and upgraded. I also had a problem with the 26.6.7(?) update that came out the same day as 27.0, so I went for it. Big mistake. I regret it.\nI also regret updating my homepods and ATV to 27.0. I had lots of phantom clicks on the tv remote. Turns out it was the homepods. When it happens I have to…"
+        },
+        {
+          "by": "qfwfq__",
+          "text": "I’ve been bitten by these changes before and it left me feeling hoodwinked. I used to be able to connect using a lightning-to-VGA/HDMI dongle, draw in an app like Goodnotes, and share+record that view. Sometime in 2018 or 19, they disabled this. The workflow I ended up figuring out involves connecting the iPad to a Mac via a lightning-to-usbc cable, starting a new movie (not screen recording!)…"
+        }
+      ],
+      "image": "https://teddysvoronos.com/assets/img/headshot-nav.jpg"
+    },
+    {
+      "id": 50166579,
+      "url": "https://emudhra.we-have-a-problem.com/",
+      "hn": "https://news.ycombinator.com/item?id=50166579",
+      "title": "EMudhra Intermediate CA Compromise",
+      "time": 1792504713,
+      "points": 219,
+      "depth": [
+        {
+          "text": "someone confirmed **eight compromised CA keys** could let attackers impersonate any website or service",
+          "tier": "simple"
+        },
+        {
+          "text": "Firefox, Chrome, Apple devices and Microsoft have **blocked the certificates**; many other clients still need **software updates**. A commenter says all eight private keys were **single bytes**, including one literally “4.”",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 98,
+      "terms": [
+        "CA",
+        "private key",
+        "certificate",
+        "trust store",
+        "revocation information"
+      ],
+      "entities": [
+        "eMudhra",
+        "Mozilla",
+        "Microsoft",
+        "Apple",
+        "Chrome",
+        "Firefox",
+        "Wayne",
+        "OpenSSL",
+        "OneCRL",
+        "CRLite",
+        "CRLSets",
+        "Sectigo",
+        "Go",
+        "Electron",
+        "Python",
+        "certifi",
+        "Rust",
+        "rustls-webpki",
+        "webpki-roots",
+        "Node.js",
+        "Composer",
+        "NSS",
+        "uv",
+        "Ubuntu",
+        "Homebrew",
+        "NetBSD",
+        "Dennis Jackson"
+      ],
+      "comments": [
+        {
+          "by": "eqvinox",
+          "text": "Since I haven't seen this mentioned enough yet: The private key for all 8 \"compromised\" CAs is a single byte: https://mastodon.catgirl.cloud/@49016/117474217042191790 One of the private keys is literally \"4\". I'm putting \"compromise\" in quotes here, because I can't call it that without cringing and cursing. [cf. also: https://news.ycombinator.com/item?id=50169109 ]"
+        },
+        {
+          "by": "galadran",
+          "text": "The impact of this incident is very unevenly spread. Over 10 years ago, Mozilla shipped OneCRL [1]. We remediated this incident in a couple of hours for Firefox users who were protected automatically without the need for updates. Chrome, Apple and Microsoft have similar tooling. Since then, we've built more advanced tooling to handle revocation at scale for leaf certs (CRLite [2]). However, for…"
+        },
+        {
+          "by": "hypfer",
+          "text": "From what the internet is telling me, the keys were allegedly found on https://repository.emsign.com/certs/<redacted>.crt Which, if true, is definitely a lot of fun. Hope you people are ready for lots and lots of suddenly hackable IoT. __ Edit: I might also be misinterpreting what I am seeing and it's actually weak logic that created the keys, in the sense that one could guess the private key?…"
+        },
+        {
+          "by": "wood_spirit",
+          "text": "Also on front HN page is https://kaba.cx/posts/20261020_Tor/ on how 300 tor exit nodes were compromised. In that case it was ssh sessions being intercepted. But my question is if a tor exit node or a vpn provider or your internet provider has a private key to any CA then can they mitm any normal web traffic even though it will show up as https without warnings in your browser?"
+        },
+        {
+          "by": "dochtman",
+          "text": "Running Go? Upgrade to 1.27.3 or 1.26.10. Rust with rustls? Upgrade to rustls-webpki 0.103.16 and/or webpki-roots/webpki-root-certs 1.0.10. Python? Upgrade certifi to 2026.10.19. Homebrew ca-certificates? 2026-09-25_1. Electron? 44.9.1, 43.8.1, or 42.11.16."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50163961,
+      "url": "https://www.neowin.net/news/google-cloud-outage-takes-down-hsbc-revolut-bank-of-scotland-llyods-equifax-more/",
+      "hn": "https://news.ycombinator.com/item?id=50163961",
+      "title": "Google cloud outage takes down banks",
+      "time": 1792491962,
+      "points": 208,
+      "depth": [
+        {
+          "text": "a **Google Cloud outage** hit banks after a **power event** knocked out **one zone**",
+          "tier": "simple"
+        },
+        {
+          "text": "Google’s status page said a power event caused an outage in **europe-west2-b**; partial mitigation was to be seen within the next 30 minutes. Reports conflicted: one Revolut customer said they had **no access** to their account or card payments, while an HSBC customer said everything was working and questioned Downdetector reports.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters report bank access problems; others say HSBC was working and question Downdetector reports.",
+      "comment_count": 97,
+      "terms": [
+        "zone",
+        "Downdetector",
+        "DORA"
+      ],
+      "entities": [
+        "Google Cloud",
+        "HSBC",
+        "Revolut",
+        "Bank of Scotland",
+        "Equifax",
+        "Downdetector",
+        "Digital Operational Resilience Act"
+      ],
+      "comments": [
+        {
+          "by": "nickcw",
+          "text": "From Google's status page https://status.cloud.google.com/incidents/Xs2XTHzAVC9YnafnPy... We are experiencing an issue with multiple services in\neurope-west2 beginning on Monday, 2026-10-19 23:08 PDT.\nDue to a power event we had suffered an outage within\neurope-west2-b zone. The power event is mitigated. Partial\nmitigation to infrastructure services will be observed within the\nnext 30 minutes and…"
+        },
+        {
+          "by": "gadders",
+          "text": ">>Google cloud outage takes down HSBC, Revolut, Bank of Scotland, Llyods, Equifax, more You will probably have issues logging into Llyods even when the cloud is back up."
+        },
+        {
+          "by": "bcvvvy",
+          "text": "I bank with HSBC. Everything is up and working. A lot of the information people are leveraging here comes from Downdetector which is mostly users reporting that stuff is down, not whether they are actually down. It's a really bad source."
+        },
+        {
+          "by": "paweladamczuk",
+          "text": "For me it was Revolut. No access to my main account, no withdrawals, no card payments since the morning. App doesn't work, there's no phone number to call, nobody to talk to. Dark side of neobanking, I guess."
+        },
+        {
+          "by": "bobbiechen",
+          "text": "Anyone have a read on the implications for Digital Operational Resilience Act (DORA) compliance here? Google Cloud seems to be a critical third-party vendor for these financial institutions. The top penalties for DORA can be very expensive (% of worldwide revenue fines)."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50165801,
+      "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
+      "hn": "https://news.ycombinator.com/item?id=50165801",
+      "title": "Publish fake stats, get cited in LLMs",
+      "time": 1792501582,
+      "points": 198,
+      "depth": [
+        {
+          "text": "someone filled a site with **fake stats**, and **ChatGPT kept citing them**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author generated **50,000 statistics pages** in one day with GPT-4.1; after seven months, the site had **10,000+ ChatGPT sessions** and 330+ referring domains. Some made-up numbers also appeared in an academic paper and a bank's investment research.",
+          "tier": "substance",
+          "data": [
+            [
+              "statistics pages",
+              "50,000"
+            ],
+            [
+              "ChatGPT sessions",
+              "10,000+"
+            ],
+            [
+              "referring domains",
+              "330+"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see this as a useful warning about how LLMs spread false information; others say deliberately publishing fake stats is hostile and could lead to real-world harm.",
+      "comment_count": 105,
+      "terms": [
+        "LLM",
+        "GEO",
+        "SEO",
+        "fanout queries",
+        "retrieval",
+        "reranker",
+        "citogenesis",
+        "trap street"
+      ],
+      "entities": [
+        "Peec AI",
+        "StateGlobe",
+        "ChatGPT",
+        "GPT-4.1",
+        "Google",
+        "Shopify",
+        "Bluehost",
+        "DHL",
+        "Ahrefs",
+        "Semrush",
+        "Statista",
+        "Cloudflare",
+        "GA4",
+        "OpenAI",
+        "Seer Interactive",
+        "iPullRank",
+        "Dan Petrovic",
+        "Wil Reynolds",
+        "Growth Memo",
+        "Tomek",
+        "Bing",
+        "Perplexity",
+        "ChatGPT-User",
+        "OAI-SearchBot",
+        "PerplexityBot",
+        "Reddit",
+        "Wikipedia",
+        "Cory Doctorow",
+        "The Reverse Centaur's Guide To Life After AI",
+        "Microsoft",
+        "Excel",
+        "Apple",
+        "Numbers",
+        "Google Sheets",
+        "LibreOffice",
+        "Calc",
+        "Hermès",
+        "Facebook",
+        "Chavda's paradox"
+      ],
+      "comments": [
+        {
+          "by": "jfrbfbreudh",
+          "text": "> In cartography, a trap street is a fictitious entry in the form of a misrepresented street on a map, often outside the area the map nominally covers, for the purpose of \"trapping\" plagiarists of the map who, if caught, would be unable to explain the inclusion of the \"trap street\" on their map as innocent. https://en.wikipedia.org/wiki/Trap_street"
+        },
+        {
+          "by": "Amorymeltzer",
+          "text": "I'm reminded of a section of Cory Doctorow's latest non-fiction, The Reverse Centaur's Guide To Life After AI (it is of course an excellent read), where he discusses how the semantic web and having an internet set-up for agents and AI to use won't work: >It also hasn't happened because there is a reward for cheating. Scammers will label their phone numbers as the customer service number for your…"
+        },
+        {
+          "by": "f311a",
+          "text": "This is a known problem, when ChatGPT uses web search tool, top 10 results are often LLM generated sources as well. They now train on their own content. Eating your own d̶o̶g̶ f̶o̶o̶d̶ poo."
+        },
+        {
+          "by": "acadapter",
+          "text": "This has existed for a long time before LLM, although in a slower form. On Wikipedia it's called \"citogenesis\"."
+        },
+        {
+          "by": "tkdb",
+          "text": "LLMs are facing the same problem pre-google humans faced: Is this information on this website true/high quality? We need a google for LLMs! Oh, but LLMs don't consume ads. We need ads for LLMs! Help."
+        }
+      ],
+      "image": "https://framerusercontent.com/images/g61nppL2S0T51TuBYG0bTxac2U.png?width=2150&height=1126"
+    },
+    {
+      "id": 50165953,
+      "url": "https://blog.cloudflare.com/typescript-rust-port/",
+      "hn": "https://news.ycombinator.com/item?id=50165953",
+      "title": "Tsrs: A Port of TypeScript to Rust",
+      "time": 1792502287,
+      "points": 164,
+      "depth": [
+        {
+          "text": "someone made **TypeScript checking** faster with a **Rust rewrite**, partly so it can run in browsers",
+          "tier": "simple"
+        },
+        {
+          "text": "The experimental port is up to **8x faster** and uses **~70% less memory** than TypeScript 7.0 with the same number of type check workers. Rust is a good fit for **WebAssembly**, which lets these development environments run in browsers; the project says it won’t fork TypeScript.",
+          "tier": "substance",
+          "data": [
+            [
+              "speed vs TypeScript 7.0",
+              "up to 8x faster"
+            ],
+            [
+              "memory vs TypeScript 7.0",
+              "~70% less memory"
+            ],
+            [
+              "TypeScript 7.1 beta vs TypeScript 7.0",
+              "up to 2.5x faster"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some like the speed and Wasm fit; others worry about an AI-generated port, question whether ordinary developers need it, or are tired of Rust rewrites.",
+      "comment_count": 86,
+      "terms": [
+        "WebAssembly (Wasm)",
+        "garbage collector",
+        "arena"
+      ],
+      "entities": [
+        "Cloudflare",
+        "Cloudflare Workers",
+        "VoidZero",
+        "Owner.com",
+        "tsrs",
+        "TypeScript",
+        "Rust",
+        "Oxc",
+        "WebAssembly",
+        "Go",
+        "JavaScript",
+        "Max Schwenk",
+        "Theo Browne",
+        "Boshen Chen",
+        "Dimitri Mitropoulos",
+        "Christoph Nakazawa",
+        "Vinext",
+        "Next.js",
+        "Vite",
+        "Rolldown",
+        "Oxlint",
+        "Oxfmt",
+        "wasm-bindgen",
+        "tsc-rs",
+        "Bun",
+        "Microsoft",
+        "C#"
+      ],
+      "comments": [
+        {
+          "by": "DanRosenwasser",
+          "text": "Hey there, TypeScript team member here. The tsrs project has been extremely interesting to see come together. We've been working with the maintainers to better understand how tsrs is fast and what sorts of optimizations it uses are safe. We even did our own Rust vibe port and what we currently suspect is that a lot of the speed does not just come down to language choice, and some of what is going…"
+        },
+        {
+          "by": "afdbcreid",
+          "text": "It appears they're using a unique memory model ( https://github.com/oxc-project/tsrs/blob/main/docs/PORTING.m... ) to overcome the challenge that prevented the TypeScript team from choosing Rust to begin with: Rust has no GC and porting from a GC language to it often requires restructure of data. Essentially, they fake a GC via never-freed arenas for long-living objects. It's interesting that…"
+        },
+        {
+          "by": "sheepscreek",
+          "text": "Ah took me a while to understand the reason behind this. It wasn’t “let’s build a faster Rust based Typescript compiler” at all. That was a nice side-effect. They needed a Typescript compiler that can run on their WASM only sandbox. So the only existing option was to export tsc Go to WASM, but that comes with the full Go runtime. And to avoid that cost, they experimented with a Rust compiler and…"
+        },
+        {
+          "by": "egonschiele",
+          "text": "It's exciting to see the speed gains. I use TypeScript every day on a large codebase, and it is too slow to run locally.\nI don't love this change though: > However, frontier AI models can now do large-scale ports almost independently in a matter of days > I wrote zero code. Not \"barely any\". Zero So we are going to move from a carefully handwritten port to an entirely AI-generated port. I know…"
+        },
+        {
+          "by": "panzi",
+          "text": "I wonder how fast \"Doom in TypeScript\" runs in tsrs now. XD"
+        }
+      ],
+      "image": "https://blog.cloudflare.com/_emdash/api/media/file/01M5C82XAYSWX571T82A8AZRKS.png"
+    },
+    {
+      "id": 50166257,
+      "url": "https://kaba.cx/posts/20261020_Tor/",
+      "hn": "https://news.ycombinator.com/item?id=50166257",
+      "title": "How I got over 300 Tor exit nodes removed",
+      "time": 1792503564,
+      "points": 167,
+      "depth": [
+        {
+          "text": "someone found **over 300 Tor exit nodes** rerouting connections to attackers, then helped get them **shut down**",
+          "tier": "simple"
+        },
+        {
+          "text": "The relays redirected SSH connections to **12 interception servers**, and a successful login let attackers connect to the target and **install Ebury**. The Tor network health team marked them **BadExit**, so clients would no longer use them to exit traffic.",
+          "tier": "substance",
+          "data": [
+            [
+              "infected exit nodes",
+              "333"
+            ],
+            [
+              "SSH interception servers",
+              "12"
+            ],
+            [
+              "Tor exits under attackers' control",
+              "roughly 10%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: the author says Ebury and the unencrypted-data collection point to financially motivated crime; one commenter says other interested players or trolls could also fit. The article says no one knows who was behind it.",
+      "comment_count": 47,
+      "terms": [
+        "Tor exit node",
+        "SSH",
+        "BadExit",
+        "Ebury",
+        "honeypot"
+      ],
+      "entities": [
+        "Tor",
+        "Tor Project",
+        "KABA",
+        "Ebury",
+        "exitmap",
+        "sshesame",
+        "Paramiko",
+        "OpenSSH",
+        "Perl",
+        "Linux"
+      ],
+      "comments": [
+        {
+          "by": "phw",
+          "text": "I built exitmap over ten years ago. Glad to see it's still of use :)"
+        },
+        {
+          "by": "96718923545809",
+          "text": "Thank you for writing this. > But if you ignore the warning and go ahead with the login, the attacker does three things:\n> 1. Steals your password This shouldn't affect key-based authentication, though Also, this from Marc-Etienne M.Léveillé email linked in your post: > Another possibility is a compromised hosting provider. We identified a\ncouple of them in the past where their management servers…"
+        },
+        {
+          "by": "privacyishuman",
+          "text": "Tor guard nodes seemed to be under attack but the devs aren't really engaging with it publicly, at least. It happened to mine and I had to switch it to a middle relay. https://forum.torproject.org/t/tor-relays-shutting-down-my-4..."
+        },
+        {
+          "by": "jszymborski",
+          "text": "3000 is insanely few exit nodes."
+        },
+        {
+          "by": "caaqil",
+          "text": "> The use of Ebury and the broad collection of unencrypted data point to a financially motivated crime group. Collection of unencrypted data points to other players as well that have been known to have great interest in Tor exit nodes etc., but they're careful and not usually this noisy, so probably newgen trolls."
+        }
+      ],
+      "image": "https://kaba.cx/img/tor/relays_offline_hero.png"
+    },
+    {
+      "id": 50151928,
+      "url": "https://100toolkit.com/blog/deslop-model/",
+      "hn": "https://news.ycombinator.com/item?id=50151928",
+      "title": "Show HN: Qwen3-4B with the AI writing tics trained out",
+      "time": 1792414847,
+      "points": 154,
+      "depth": [
+        {
+          "text": "someone trained a small model to drop **AI writing habits**, though its **voice stays flat**",
+          "tier": "simple"
+        },
+        {
+          "text": "Erik Markus Kannike fine-tuned Qwen3-4B-Instruct on **161 answers** using a MacBook Air; across 40 prompts it had never seen, the slop score fell from **121 to 12.5 per 1000 words**, and 68% of answers scored in the human range. The model still invents **names and places**, and its voice is flat.",
+          "tier": "substance",
+          "data": [
+            [
+              "Original slop score",
+              "121 per 1000 words"
+            ],
+            [
+              "Released model slop score",
+              "12.5 per 1000 words"
+            ],
+            [
+              "Answers in human range",
+              "68%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some want AI writing to stay recognizable to protect human expression; others welcome efforts to make its repetitive style less obvious.",
+      "comment_count": 110,
+      "terms": [
+        "fine-tuning",
+        "system prompt",
+        "distillation",
+        "LoRA",
+        "Ollama",
+        "slop score"
+      ],
+      "entities": [
+        "Erik Markus Kannike",
+        "Qwen3-4B",
+        "Qwen3-4B-Instruct",
+        "Ollama",
+        "llama.cpp",
+        "Transformers"
+      ],
+      "comments": [
+        {
+          "by": "chmod775",
+          "text": "Models have proclivities, and many people use the same model. Imagine all books on earth were written by just 5 people - and worse, they could not remember what they had written yesterday. You would quickly get tired of reading the same flourishes and patterns over and over. Whatever style models currently in use have, that's what people are going to be tired of, and it's what they're going to…"
+        },
+        {
+          "by": "jwr",
+          "text": "Why kill the em dashes? They are a legitimate mark — one that I have been using for years. On a Mac, you quickly get used to pressing shift-option-hyphen. Em dashes are typographically correct and should be used."
+        },
+        {
+          "by": "gobdovan",
+          "text": "In before: Goomba fallacy. But I can't notice how there's claims that: LLMs are nondeterministic and cannot be relied upon to produce the same thing AND they produce the same texts, same UIs, in the same styles. It frustrates me too, but what a solution for both problems would look like? Also, if all LLMs would write in the style from the article, in how much time that would be the recognised LLM…"
+        },
+        {
+          "by": "bschwarz",
+          "text": "and needs no system prompt\nA human would write \"and doesn't need a system prompt.\""
+        },
+        {
+          "by": "BoredomIsFun",
+          "text": "This is not the first deslop. The true pioneer is this dude: https://huggingface.co/sam-paech/gemma-3-27b-it-antislop . This model is a perfectly usable, full size not-toyish model."
+        }
+      ],
+      "image": "https://100toolkit.com/blog/deslop-model/og.png"
+    },
+    {
+      "id": 50134359,
+      "url": "https://insideclimatenews.org/news/14102026/ethoxyquin-fire-retardant-in-seafood-chain/",
+      "hn": "https://news.ycombinator.com/item?id=50134359",
+      "title": "The fire retardant in the seafood chain",
+      "time": 1792265874,
+      "points": 151,
+      "depth": [
+        {
+          "text": "a **fishmeal additive** helped prevent **ship fires** but raised concerns about chemicals in seafood",
+          "tier": "simple"
+        },
+        {
+          "text": "The European Commission suspended authorization for ethoxyquin in animal feed in **2017**. A 1987 study found “severe damage” and a potentially **carcinogenic effect** in rats, though the article says there is **no scientific consensus** on whether seafood raised on treated feed is safe.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters see a risky shortcut in adding chemicals to fishmeal; others say the article makes too much of it, pointing to differing rules and uses across countries.",
+      "comment_count": 50,
+      "terms": [
+        "fishmeal",
+        "ethoxyquin",
+        "antioxidant",
+        "carcinogen",
+        "aquaculture",
+        "spontaneous combustion"
+      ],
+      "entities": [
+        "Inside Climate News",
+        "The Outlaw Ocean Project",
+        "Cargill",
+        "U.S. Coast Guard",
+        "United Nations",
+        "European Commission",
+        "European Union",
+        "European Food Safety Authority",
+        "Aldi Inc.",
+        "Gorton’s Inc.",
+        "Canadian Food Inspection Agency",
+        "MSICeres",
+        "James Frank",
+        "Exalmar",
+        "U.S. National Toxicology Program",
+        "U.S. Food and Drug Administration"
+      ],
+      "comments": [
+        {
+          "by": "jazzyjackson",
+          "text": "> if left untreated, is known for spontaneously combusting as it decays and oxidizes. Does anyone remember the 90s when as a laymen it seemed like an open debate whether humans would occasionally combust spontaneously? I guess it stopped happening once falling asleep with a cigarette lost popularity But my point is I wasn’t aware that “spontaneous combustion” was a real thing one has to worry…"
+        },
+        {
+          "by": "gumby",
+          "text": "I don't know why they don't just use nitrogen in the storage vessels. Ship holds, for example, already have this capability."
+        },
+        {
+          "by": "enoint",
+          "text": "I make a lot of chili. Ethoxyquin is a good reason to mix your own chili powder."
+        },
+        {
+          "by": "brudgers",
+          "text": "About Ethoxyquin, https://en.wikipedia.org/wiki/Ethoxyquin"
+        },
+        {
+          "by": "kalabrium",
+          "text": "Sad results of the system the optimizes for ease and efficiency rather than health and quality. The same mind set carries over to bread, pesticides, and food coloring that has been banned in European countries."
+        }
+      ],
+      "image": "https://insideclimatenews.org/wp-content/uploads/2026/10/fire-story-still-fire-rotterdam-tug-fights-fire-on-ss-south-america-jpg-w.jpg"
+    },
+    {
       "id": 50163277,
       "url": "https://github.com/deepseek-ai/DeepInfer",
       "hn": "https://news.ycombinator.com/item?id=50163277",
@@ -1406,6 +2155,53 @@
     }
   ],
   "glossary": {
+    "organic marketing": "Promotion that reaches people without buying ads.",
+    "A/B test": "A comparison of two versions to see which one works better for people.",
+    "walled garden": "A service that keeps you within one company's products and limits what else you can use.",
+    "AOSP": "Android Open Source Project: the publicly available base software people can use to build Android systems.",
+    "ROM": "Read-Only Memory: information a computer can read but is not normally meant to change.",
+    "signature spoofing": "A phone-system feature that lets an app present itself as another app to software checking who it is.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "AirPlay": "Apple’s way to send audio or video from one device to a compatible speaker or screen.",
+    "iPadOS": "Apple's name for the software that runs on iPads.",
+    "Stage Manager": "Apple's feature for arranging open apps in windows so you can switch between them.",
+    "presenter mode": "A setting that shows an audience your slides or document while keeping your notes or controls on your own screen.",
+    "CA": "Certificate Authority: an organization that checks requests and issues certificates.",
+    "private key": "A secret digital key that can be used to prove an identity or act as its owner.",
+    "certificate": "A digital ID that helps show which website a connection belongs to.",
+    "trust store": "A saved list of organizations and certificates that software accepts as trustworthy.",
+    "revocation information": "A notice that a once-trusted certificate should no longer be accepted.",
+    "zone": "A separate part of a cloud provider’s setup; a problem in one zone may not affect services in other zones.",
+    "Downdetector": "A website where people report whether online services seem to be down.",
+    "DORA": "Digital Operational Resilience Act: rules for financial companies meant to help them keep working when technology fails.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "GEO": "Generative Engine Optimization: work to help content show up in answers from AI search tools.",
+    "SEO": "Search engine optimization: making changes to a webpage so it is more likely to appear in search results.",
+    "fanout queries": "Smaller searches an AI creates from a question to find useful pages.",
+    "retrieval": "Looking up information from outside an AI before it answers.",
+    "reranker": "A system that reorders search results to put the ones that seem most relevant first.",
+    "citogenesis": "A claim gets copied between sources until later writers treat those sources as proof.",
+    "trap street": "A deliberately false detail on a map, used to catch people copying it.",
+    "WebAssembly (Wasm)": "A way to run software in places like a browser, even when it was written in another language.",
+    "garbage collector": "A part of a program that finds memory it no longer needs so that space can be reused.",
+    "arena": "A reserved chunk of memory for related things that a program can keep around or clear as a group.",
+    "Tor exit node": "A computer in Tor's network that passes your traffic on to the website or server you're trying to reach.",
+    "SSH": "Secure Shell: a way to connect to another computer and send it commands over a network.",
+    "BadExit": "A label that tells Tor clients not to use a computer to send traffic out of Tor.",
+    "Ebury": "A Linux program that lets intruders back in and steals login details.",
+    "honeypot": "A computer set up to attract attacks so people can watch what attackers do.",
+    "fine-tuning": "Training an already-built model a bit more on examples for a particular job.",
+    "system prompt": "Extra instructions set before a conversation that guide how the AI answers.",
+    "distillation": "Training a smaller AI to imitate the answers of a larger one.",
+    "LoRA": "Low-Rank Adaptation: a way to adapt an AI for a new task by training a small add-on instead of changing the whole AI.",
+    "Ollama": "A program for downloading and running AI models on your own computer.",
+    "slop score": "A tally of writing habits the author counts as common in AI text, such as em dashes and lists of three.",
+    "fishmeal": "Powder made by drying and grinding fish.",
+    "ethoxyquin": "A chemical added to fishmeal to slow the changes that can make it catch fire.",
+    "antioxidant": "A substance added to slow chemical changes that can make food spoil or materials break down.",
+    "carcinogen": "A substance that can cause cancer.",
+    "aquaculture": "Farming fish and other animals in water.",
+    "spontaneous combustion": "When something catches fire on its own, without a flame being applied from outside.",
     "inference": "When an AI uses what it learned to answer or act, instead of being trained.",
     "asynchronous scheduling": "A way to line up work so the computer can prepare another task while the current one runs.",
     "structured outputs": "A way to make an AI answer follow a required shape, like a form with specific fields.",
@@ -1483,7 +2279,6 @@
     "unmanned ground vehicles": "Vehicles that travel on the ground without a person riding in them.",
     "medevac": "Medical evacuation: moving injured people to get medical care.",
     "logistics": "Planning how people and supplies get where they need to go.",
-    "honeypot": "A computer set up to attract attacks so people can watch what attackers do.",
     "cryptominer": "Software that secretly uses a computer's power to create cryptocurrency.",
     "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
     "remote code execution": "A security flaw that lets someone run commands on another person's computer.",
@@ -1494,7 +2289,6 @@
     "MMO": "Massively multiplayer online: a game where lots of players share an online world.",
     "agent harness": "The surrounding software that runs an AI agent and helps manage its work.",
     "prompt injection": "Instructions hidden in text or a file that try to trick an AI into ignoring its intended directions.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "GDPR": "General Data Protection Regulation: a European law that sets rules for how organizations use people's personal information.",
     "Data Protection Authority": "A public office that handles complaints about how organizations use people's personal information.",
     "CI/CD": "Continuous Integration and Continuous Delivery or Deployment: ways to automatically check code changes and get software ready to release.",
@@ -1508,7 +2302,6 @@
     "compute": "The processing power computers use to run AI or other software.",
     "tmux": "A tool that keeps command-line work in sessions you can detach from and return to later.",
     "git worktree": "A separate working copy of a project, so you can work on another task without mixing up files.",
-    "pane": "One section of a terminal window, so you can see more than one screen at once.",
-    "SSH": "Secure Shell: a way to connect to another computer and send it commands over a network."
+    "pane": "One section of a terminal window, so you can see more than one screen at once."
   }
 }
