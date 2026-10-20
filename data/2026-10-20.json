@@ -2,6 +2,893 @@
   "date": "2026-10-20",
   "cards": [
     {
+      "id": 50163277,
+      "url": "https://github.com/deepseek-ai/DeepInfer",
+      "hn": "https://news.ycombinator.com/item?id=50163277",
+      "title": "DeepSeek just open-sourced its inference engine",
+      "time": 1792487334,
+      "points": 581,
+      "depth": [
+        {
+          "text": "DeepSeek has open-sourced an **inference engine** for running its models at **large scale**",
+          "tier": "simple"
+        },
+        {
+          "text": "DeepInfer offers **offline inference**, **asynchronous scheduling**, and **structured outputs** constrained by a regex or JSON schema.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some see the release as useful for smaller labs and more hardware choice; others question DeepSeek's motives or call it strategic sabotage against US frontier labs.",
+      "comment_count": 203,
+      "terms": [
+        "inference",
+        "asynchronous scheduling",
+        "structured outputs",
+        "regex",
+        "JSON schema"
+      ],
+      "entities": [
+        "DeepSeek",
+        "DeepInfer",
+        "GitHub",
+        "NVIDIA",
+        "Huawei",
+        "Ascend",
+        "vLLM",
+        "SGLang",
+        "TensorRT-LLM",
+        "DeepSeek V4.1 Flash"
+      ],
+      "comments": [
+        {
+          "by": "schneehertz",
+          "text": "A nuclear bomb \"Based on this framework, we have achieved high-throughput, low-latency large-scale inference services for DeepSeek V4.1 Flash. Currently, the service throughput of a single cluster is 155 trillion tokens/day, and the overall revenue is $38 per card per hour (at off-peak pricing)\" Source: https://zhuanlan.zhihu.com/p/2095560295930508953"
+        },
+        {
+          "by": "wg0",
+          "text": "That's Kami Kaze for US frontier labs. There's no way from here for them towards trillion dollar valuations. That's strategic sabotage to say the least. Ban all open weight models! Cried the VCs."
+        },
+        {
+          "by": "GreenWatermelon",
+          "text": "Relevant: Deepseek reports its Revenue per GPU per hour at off peak prices (38$) [reddit link] https://www.reddit.com/r/DeepSeek/comments/1xanexq/deepseek_... Also cool (from the translated screenshot since original is in Chineese https://zhuanlan.zhihu.com/p/2095560295930508953 ) > the DeepSeek V4.1 Flash inference system has established\nthree goals > 1-..... 2-..... 3. Supports retaining…"
+        },
+        {
+          "by": "yaoke259",
+          "text": "Supporting Huawei Ascend 950 NPUs with open source inference code has huge implications in the global AI hardware market. Imagine if all smaller labs now can build on top of this stack and add increasing support for more compatible hardware , software and models. This could seriously challenge NVidias death grip. Although inference is still only a part of all AI workloads and open sourcing…"
+        },
+        {
+          "by": "VonLuderitz",
+          "text": "This month I changed my Claude Max Subscription to DeepSeek API. V4.1 Flash is fast and perfect for everything and refuses to almost nothing. Hope DeepSeek starts month plans soon."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/ec84d2b25e92447e5a110d26b320fb5050f8df5961facc246956ba0d132a697c/deepseek-ai/DeepInfer"
+    },
+    {
+      "id": 50160494,
+      "url": "https://www.openbsd.org/80.html",
+      "hn": "https://news.ycombinator.com/item?id=50160494",
+      "title": "OpenBSD 8.0",
+      "time": 1792462000,
+      "points": 340,
+      "depth": [
+        {
+          "text": "OpenBSD's **new release** adds **hibernate support** and raises how many processors virtual machines can use",
+          "tier": "simple"
+        },
+        {
+          "text": "OpenBSD 8.0 was released **October 20, 2026**. On arm64, it adds **hibernate support**; guest VMs can use up to **64 VCPUs**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 106,
+      "terms": [
+        "hibernate",
+        "arm64",
+        "VCPU",
+        "guest VM"
+      ],
+      "entities": [
+        "OpenBSD",
+        "Theo de Raadt"
+      ],
+      "comments": [
+        {
+          "by": "ctolsen",
+          "text": "I've used OpenBSD the last year or so (as a bastion/jump host for a few systems) after using *BSD systems very little for probably the past decade, and... good lord I love it so much. Say what you want about the benefits of systemd or the usefulness of other parts of what is now unavoidable with Linux, and I won't argue with many of them, but OpenBSD just feels like a *nix system is supposed to…"
+        },
+        {
+          "by": "k310",
+          "text": "I am not on board with the graphic, whatever the heck it is. https://www.openbsd.org/images/blowfishonbike-s.gif"
+        },
+        {
+          "by": "nanolith",
+          "text": "I've used OpenBSD as a laptop daily driver for nearly 20 years. It's small. It remains mostly consistent between updates. In fact, it's so stable that I barely notice changes when I upgrade until I go hunting for them. The Lenovo laptop I use as my travel laptop and console display is a 2012. It still runs OpenBSD just fine."
+        },
+        {
+          "by": "gucci-on-fleek",
+          "text": "Does the version number going from v7.X->v8.0 mean that this is a larger update than v7.8->v7.9, or does the numbering just automatically roll over to the next major version when it reaches vX.9?"
+        },
+        {
+          "by": "idatum",
+          "text": "I have a Lenovo laptop running OpenBSD 8.0. What I really appreciate about it is I started with OpenBSD 7.6. Using sysupgrade, I went through every release (and syspatch) and just now successfully upgraded to 8.0. It still works great!"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50141581,
+      "url": "https://github.com/tywr/Nordwand-Mono",
+      "hn": "https://news.ycombinator.com/item?id=50141581",
+      "title": "Nordwand Mono – A monospace font for coders and adventurers",
+      "time": 1792334881,
+      "points": 326,
+      "depth": [
+        {
+          "text": "someone made a **compact monospace font** for coding, with optional **character tweaks**",
+          "tier": "simple"
+        },
+        {
+          "text": "The creator made it **from scratch in Python**, bringing elements of Univers into JetBrains Mono's proportions. It offers **two minimal ligatures** (“->” and “=>”), plus alternative character designs for tweaking its look.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters say it looks a lot like JetBrains Mono or Berkeley Mono; others like its softer feel and say it avoids aggressive narrowness.",
+      "comment_count": 102,
+      "terms": [
+        "monospace",
+        "neo-grotesque",
+        "ligature",
+        "glyph",
+        "x-height",
+        "OpenType",
+        "bitmap font",
+        "anti-aliased"
+      ],
+      "entities": [
+        "Nordwand Mono",
+        "Python",
+        "Univers",
+        "JetBrains Mono",
+        "SF Pro",
+        "SF Mono",
+        "Apple",
+        "Berkeley Mono",
+        "GitHub"
+      ],
+      "comments": [
+        {
+          "by": "abainbridge",
+          "text": "I prefer bitmap fonts for coding / terminal. My monitor is 100 DPI and I like to cram as much on screen as possible. Here's a comparison of a bitmap font vs Nordwand https://gist.github.com/abainbridge/a4b2647ea91e661a7576417b... I know I'm a bit weird, but the internet is full of weird people. It seems strange to me that nobody is interested in bitmap fonts these days. What I really want is a…"
+        },
+        {
+          "by": "sombragris",
+          "text": "Looks nice, I installed it and will test it to see how it fares."
+        },
+        {
+          "by": "tywr",
+          "text": "Wow, I didn't really expect to see my project there this morning! I'm normally a simple lurker, but I wanted to say thanks for the kind words about the project. I know some people might want to modify or tweak the project to their liking. The project is meant to provide a Python sandbox more than just font files, so feel free to fork it or submit a PR if you feel like some glyphs need tweaking!…"
+        },
+        {
+          "by": "rootlocus",
+          "text": "It's 99% JetBrains Mono from my quick comparison. I can barely see the difference except for $&# and a few others. LE: Ok, so it's a little more different that JetBrains Mono as this comparison shows https://claude.ai/artifact/HPiALZ7AZ2f5FxSZtcTdNa"
+        },
+        {
+          "by": "voidUpdate",
+          "text": "I get why its for coders, but what makes it \"for adventurers\"?"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/ee001c556f5fde3a4c109f3afa58a179cce506f04d5bad19a26888d2c0937192/tywr/Nordwand-Mono"
+    },
+    {
+      "id": 50154244,
+      "url": "https://www.reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19/",
+      "hn": "https://news.ycombinator.com/item?id=50154244",
+      "title": "DeepSeek banned from U.S. federal civilian agencies under new DHS order",
+      "time": 1792426606,
+      "points": 321,
+      "depth": [
+        {
+          "text": "a new **DHS order** bans DeepSeek from **US federal civilian agencies**",
+          "tier": "simple"
+        },
+        {
+          "text": "The order’s quoted rationale says the PRC legal system permits **broad access** to private-company infrastructure and warns that DeepSeek-hosted use by government employees or vendors may send **sensitive data** to the PRC. Others ask how an open model running in a **US data center** could pose a threat.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some point to data-access and malware risks; others question the threat from self-hosted open models and call the move regulatory capture.",
+      "comment_count": 284,
+      "terms": [
+        "DHS",
+        "PRC",
+        "open weights",
+        "self-hosted",
+        "regulatory capture"
+      ],
+      "entities": [
+        "DeepSeek",
+        "DHS",
+        "OpenAI",
+        "Anthropic",
+        "GLM",
+        "Qwen",
+        "Kimi",
+        "Minimax"
+      ],
+      "comments": [
+        {
+          "by": "Jedd",
+          "text": "Australia leading the way - our fully informed and highly tech literate (avg age of House of Reps ~=52yo) government banned Deepseek in February last year, including downloadable GGUF's - with some nebulously hand-wavy 'it's just too dangerous' safety claims: https://www.abc.net.au/news/2025-02-04/deepseek-banned-from-... At the time I'd just assumed it was at the behest of the sponsors of the…"
+        },
+        {
+          "by": "steveBK123",
+          "text": "Really just a few small steps from becoming the default approved model for US federal agencies though. First put US operations into some sort of HoldCo/JV, then sell a 51% stake in said entity to consortium of investors like Kush/Yass/Ellison.. profit."
+        },
+        {
+          "by": "neuronexmachina",
+          "text": "When it says civilian agencies are ordered to purge all \"third-party products and services developed using DeepSeek implementations\", what does that actually mean? Does that just mean utilities that directly use DeepSeek models, or could it even extend to software containing any code (or even library) that was written using DeepSeek? Considering DeepSeek Flash is probably the most popular…"
+        },
+        {
+          "by": "woadwarrior01",
+          "text": "Lobbying is corruption with a layer of indirection."
+        },
+        {
+          "by": "kidfiji",
+          "text": "Please excuse my lack of full context, but if the weights are open and the model can be self hosted, what’s the actual security risk for that case? Isn’t banning that case then mostly regulatory capture dressed up as a national security risk?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50163502,
+      "url": "https://www.heistberlin.com/news/afd-leak-what-421-179-hacked-emails-show-about-the-german-far-right/",
+      "hn": "https://news.ycombinator.com/item?id=50163502",
+      "title": "AfD Leak: What 421,179 Hacked Emails Show about the German Far Right",
+      "time": 1792488940,
+      "points": 273,
+      "depth": [
+        {
+          "text": "hackers published a **huge stash** of AfD emails, with AI summaries showing **racism and antisemitism** inside",
+          "tier": "simple"
+        },
+        {
+          "text": "The archive contains **421,179 internal party emails** and was published online as **AI summaries**. The article describes racist slurs, antisemitic theories, and **jokes about turning refugees into handbags and boots**.",
+          "tier": "substance",
+          "data": [
+            [
+              "archive size",
+              "281 GB"
+            ],
+            [
+              "internal party emails",
+              "421,179"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see the leak as potentially helping a party ban; others warn it could undermine the ban effort’s legitimacy.",
+      "comment_count": 289,
+      "terms": [
+        "antisemitism",
+        "AI summaries",
+        "fruit-of-the-poison-tree evidence"
+      ],
+      "entities": [
+        "AfD",
+        "HEIST"
+      ],
+      "comments": [
+        {
+          "by": "grandchild",
+          "text": "Some context: There are ongoing efforts to ban the party (through constitutional instruments created specifically after 1945 to prevent a second NSDAP or other similar anti-constitutional extremists) and there is an argument to be made that this is strategical assistance for evidence-gathering. There has been another effort [0] collecting _public_ statements that can be used in a potential future…"
+        },
+        {
+          "by": "belorn",
+          "text": "Sweden is fairly well know for its public access to official records, and any email sent to an official position in government is part of the public accessible record. Politicians however all have private emails and are users of instance messages services that are not part of the public record. Public access is also only for the public role in government, not for example the role of being the…"
+        },
+        {
+          "by": "yreg",
+          "text": "Article without wall: https://www.euronews.com/2026/10/20/hackers-steal-421000-ema..."
+        },
+        {
+          "by": "voidUpdate",
+          "text": "> \"as AI summaries\" Why not publish the actual emails? Why do they need to be summarised, perhaps incorrectly?"
+        },
+        {
+          "by": "0x_rs",
+          "text": ">Internal AfD thread reveals party split over expelling a member for antisemitic writings and a plan to use Israeli government contacts to whitewash AfD antisemitism accusations. The irony. All those parties really have no beliefs or principles, they only desire power and to use it for themselves. One may wonder what got so many people to decide those entities would deserve their vote more than…"
+        }
+      ],
+      "image": "https://storage.ghost.io/c/98/53/98532a3a-3542-4bcd-a05e-a2672d5c28c1/content/images/size/w1200/2026/10/x-card--31--2.png"
+    },
+    {
+      "id": 50158942,
+      "url": "https://cretezy.com/2026/ad-free-android-tv",
+      "hn": "https://news.ycombinator.com/item?id=50158942",
+      "title": "An ad-free Android TV",
+      "time": 1792449157,
+      "points": 258,
+      "depth": [
+        {
+          "text": "someone made Android TV **ad-free** with a **cleaner home screen** and a better YouTube app",
+          "tier": "simple"
+        },
+        {
+          "text": "The setup swaps the home screen for **Projectivy Launcher**, uses **SmartTube** instead of YouTube, and maps the remote button with Button Mapper. It also uses Wholphin as a Jellyfin client; disabling the stock launcher and setting Projectivy as the home app requires **ADB commands**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 87,
+      "terms": [
+        "ADB",
+        "launcher",
+        "sideload",
+        "accessibility service",
+        "Jellyfin"
+      ],
+      "entities": [
+        "Android TV",
+        "Google TV",
+        "Projectivy Launcher",
+        "SmartTube",
+        "SponsorBlock",
+        "YouTube",
+        "Button Mapper",
+        "Wholphin",
+        "Jellyfin",
+        "ADB",
+        "Google",
+        "Chromecast",
+        "Hisense"
+      ],
+      "comments": [
+        {
+          "by": "Lerc",
+          "text": "Seems like we need a good aftermarket OS for our TVs now. What with all of this snazzy AI reverse engineering that people have been doing, how far are we from getting a mostly automated system that can build a clean Android for each TV model? How long before TV manufacturers start putting in countermeasures to prevent that?"
+        },
+        {
+          "by": "cube00",
+          "text": "It was very underhanded of Google to add advertising after the fact. When I have to factory reset the TV I'm reminded of how it used to be before it upgrades. Years later they still haven't [1] updated the screenshots in their Play store page to show the giant 1/3 full screen ads you get now. Replacing the Google launcher (I used ATV Launcher Pro) was one of the best quality of life upgrades I've…"
+        },
+        {
+          "by": "nullify88",
+          "text": "For those with more capable routers, local dns adblocking, or NextDNS; you can add a static DNS entry for \"androidtvwatsonfe-pa.googleapis.com\" and direct that to 127.0.0.1, you will also get no ads on the stock launcher. At least on Android 11 (For the Nvidia Shield). You might have to restart the device or empty the cache for it to take effect."
+        },
+        {
+          "by": "darkwater",
+          "text": "When my old (2014?) \"smart\" LG got evicted from Netflix, as in \"your TV will not be supported anymore starting August 15th 2026\" I vibe-coded a Plasma BigScreen like interface with: * Firefox in full-screen with a custom extension that makes the web UI of Netflix into something usable by a d-pad remote * Switchfin (which has a Linux version) works pretty well out of the box * Some custom…"
+        },
+        {
+          "by": "giancarlostoro",
+          "text": "I just want to buy a \"Stupid TV\" I wonder if such a brand would sell very sell \"JustWatch TV\" people in stores seeing how quickly it turns on, and just works, no internet questions, just a TV working. Must be revolutionary, can't believe we never thought of having TVs without an entire invasive OS that slows down the entire TV... Every smart TV I own never gets internet access, ever. I just plug…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50140584,
+      "url": "https://www.funwithcomputervision.com/weball/",
+      "hn": "https://news.ycombinator.com/item?id=50140584",
+      "title": "Weball: Play Katamari on Websites",
+      "time": 1792327196,
+      "points": 234,
+      "depth": [
+        {
+          "text": "someone made **Katamari playable on websites**, picking up page text and images as the ball grows",
+          "tier": "simple"
+        },
+        {
+          "text": "It starts by picking up text, then grabs **images** as the ball grows; large images become **obstacles**. A commenter says it imports a page representation into the game engine, while the classic bookmarklet version changes page elements with CSS transformations. Another reports a horrible frame rate after a few hundred words.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: fans call it fun and addictive; others say it slows down quickly.",
+      "comment_count": 17,
+      "terms": [
+        "HTML",
+        "CSS",
+        "bookmarklet",
+        "game engine",
+        "framerate"
+      ],
+      "entities": [
+        "Weball",
+        "Katamari Damacy",
+        "Kirby and the Forgotten Dreamland",
+        "Google"
+      ],
+      "comments": [
+        {
+          "by": "vunderba",
+          "text": "Wow - this is surprisingly well done. I really like that it goes from picking up text elements to eventually being able to grab physical images off the site as the ball grows larger. Tangential but I was playing \"Kirby and the Forgotten Dreamland,\" a little while ago and in the game there's an ability you can absorb called 'needle.' It initially gives you the appearance of a spiky porcupine…"
+        },
+        {
+          "by": "frou_dh",
+          "text": "That's amazing. I would have no clue how to write that so that it works so well. Edit: I guess the main enabler is that it gets out of the business of HTML really quickly, by importing a representation of the page into the game engine. The classic bookmarklet version linked below messes with actual page elements using CSS transformations etc."
+        },
+        {
+          "by": "gavmor",
+          "text": "Horrible framerate after a few hundred words, but super fun until then! I love the special touch of the large images being true obstacles."
+        },
+        {
+          "by": "Dwedit",
+          "text": "There was a Katarmari bookmarklet way way back around 2008ish."
+        },
+        {
+          "by": "allenu",
+          "text": "Google also has their own take on this when you search for Katamari. Click on the little katamari ball."
+        }
+      ],
+      "image": "https://funwithcomputervision.com/assets/weball.png"
+    },
+    {
+      "id": 50159616,
+      "url": "https://ipinfo.io/blog/france-fridges-hack",
+      "hn": "https://news.ycombinator.com/item?id=50159616",
+      "title": "France's supermarket fridges were vulnerable online for months",
+      "time": 1792454449,
+      "points": 188,
+      "depth": [
+        {
+          "text": "France's supermarket **fridges** were **vulnerable online** for months, and a commenter points to a built-in backdoor",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter says the firmware included a **datetime-based password**, a built-in backdoor, and names its function “check_code_of_the_day.” Another says **more than 85%** ran software with known security flaws: 527 older controllers were no longer supported by Danfoss, while 195 had every known fix.",
+          "tier": "substance",
+          "data": [
+            [
+              ">85% with known security flaws",
+              ">85%"
+            ],
+            [
+              "older unsupported controllers",
+              "527"
+            ],
+            [
+              "controllers with every known fix",
+              "195"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 169,
+      "terms": [
+        "firmware",
+        "datetime-based password",
+        "air-gapped",
+        "IoT"
+      ],
+      "entities": [
+        "Danfoss",
+        "Shodan",
+        "Anthropic"
+      ],
+      "comments": [
+        {
+          "by": "Confiks",
+          "text": "So the author charitably calls the 2025 vulnerability a \"login bypass\", but it's much worse than that. The firmware included a \"datetime-based password\" mechanism: a built-in backdoor password, like it's the 90s again. The original researcher published about this in August of this year [1], a year after reporting it, titling the report \"Defrost the Food\", which the attackers apparently took to be…"
+        },
+        {
+          "by": "SOLAR_FIELDS",
+          "text": "Through my work I deal with grocery software and I can tell you that grocery software is ages behind the times. For most small retailers (small being a business owner with less than 10 stores in their retail chain, mostly local grocers) you are dealing with processes that would have been considered antique for the year 2000"
+        },
+        {
+          "by": "MiroslavPokorny",
+          "text": "The real problem is devices like this should NOT be connected to the internet and at worst air gapped. Theres no reason including cost that a separate computer just for the fridges etc is not sitting in the office of the supermarket. Pretty sure the destoyed goods and close time cost far more than the extra cheapo computer."
+        },
+        {
+          "by": "drillsteps5",
+          "text": "To be fair, their entire threat model was likely \"who TF would want to break in to change the settings on a thermostat on a fridge at a grocery store\". A valid question which has yet to be answered (at least not publicly)."
+        },
+        {
+          "by": "gz5",
+          "text": "fridges are very reliable. but let's IoT them anyways so they can theoretically notify us if there is a problem. so of course that creates/enables the problem and doesn't notify us. deliciously ironic and rottingly sad. this case was egregious - built-in backdoor pw - but that is downstream of the decisions to IoT them and to default them to listen on the network."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50157664,
+      "url": "https://hexane.cc/",
+      "hn": "https://news.ycombinator.com/item?id=50157664",
+      "title": "Germany's far-right AfD: half a million internal documents leaked",
+      "time": 1792441865,
+      "points": 176,
+      "depth": [
+        {
+          "text": "someone leaked **half a million** internal documents from Germany's far-right **AfD**",
+          "tier": "simple"
+        },
+        {
+          "text": "The linked site carries a Cloudflare **“Suspected Phishing”** warning. Commenters question the leak’s **authenticity** and why the post was flagged.",
+          "tier": "substance",
+          "data": [
+            [
+              "internal documents leaked",
+              "half a million"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 73,
+      "terms": [
+        "phishing"
+      ],
+      "entities": [
+        "AfD",
+        "Cloudflare"
+      ],
+      "comments": [
+        {
+          "by": "crossroadsguy",
+          "text": "Cloudflare now shows the blocker warning: Warning\nSuspected Phishing\nThis website has been reported for potential phishing.\nSo either that site is a bit shady (that I didn't notice) or people have been actively at work to paint is as shady. But then I often see this for any source: (source text not published for this record)\nAnd the top also shows this SUPPORT THIS ARCHIVE — MONERO\n<and probbaly…"
+        },
+        {
+          "by": "nielsbot",
+          "text": "Wondering why this was flagged--seems of public interest. Is it not authentic? (@dang)"
+        },
+        {
+          "by": "vrganj",
+          "text": "Here they are sorted by \"most damning\": https://hexane.cc/table/?board=mail"
+        },
+        {
+          "by": "oliwarner",
+          "text": "(Source text not published for this comment)"
+        },
+        {
+          "by": "ChrisArchitect",
+          "text": "Are they forbidden from titling this German AfD document leak or something? Why non-specific mentions of what this is on the About page etc?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50158138,
+      "url": "https://bsd.network/@brynet/117407035545900963",
+      "hn": "https://news.ycombinator.com/item?id=50158138",
+      "title": "OpenBSD 8.0 release will have inteldrm/radeondrm/amdgpu drivers from Linux 6.18",
+      "time": 1792444305,
+      "points": 161,
+      "depth": [
+        {
+          "text": "OpenBSD's release adds **newer graphics drivers** and **Intel Arc support**",
+          "tier": "simple"
+        },
+        {
+          "text": "Jonathan Gray's update brings OpenBSD's **inteldrm, radeondrm and amdgpu** stack to **Linux 6.18.y/6.18.53**, adding **Intel Arc A-Series (DG2/Alchemist)** support. OpenBSD also increases KVA on amd64 to 512G, letting it map more than 4G of VRAM for tasks such as GPU compute with Vulkan.",
+          "tier": "substance",
+          "data": [
+            [
+              "graphics stack version",
+              "Linux 6.18.y/6.18.53"
+            ],
+            [
+              "amd64 KVA",
+              "512G"
+            ],
+            [
+              "VRAM mapped",
+              "more than 4G"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 38,
+      "terms": [
+        "KVA",
+        "VRAM",
+        "amd64",
+        "drm graphics stack"
+      ],
+      "entities": [
+        "OpenBSD",
+        "Linux",
+        "Jonathan Gray",
+        "inteldrm",
+        "radeondrm",
+        "amdgpu",
+        "Intel Arc",
+        "Vulkan"
+      ],
+      "comments": [
+        {
+          "by": "brynet",
+          "text": "OpenBSD 7.9 was already on the 6.18.y longterm support version for the drm(4) drivers, Jonathan Gray (jsg@) completed the update back in March, sponsored by the OpenBSD Foundation. https://marc.info/?l=openbsd-cvs&m=177310343311915&w=2 I just wanted to highlight Jonathan's continued efforts backporting updates in my usual \"HYPE\" post series for the upcoming OpenBSD 8.0 release. (I'm the author of…"
+        },
+        {
+          "by": "alberth",
+          "text": "Note that OpenBSD is on 7.9 now and all releases are possible breaking changes. They release every six month and increment by 0.1. And after 0.9 they rollover to the next whole number. So don’t think of version “8.0” as a major release per se, since OpenBSD is a fixed schedule release - not a Major.Minor release."
+        },
+        {
+          "by": "Gracana",
+          "text": "How does GPL code get ported to BSD?"
+        },
+        {
+          "by": "asmnzxklopqw",
+          "text": "Genuine question: if this is only a catch up game, then why not just use the original in the first place?"
+        },
+        {
+          "by": "doener",
+          "text": "Via https://news.ycombinator.com/item?id=50154649"
+        }
+      ],
+      "image": "https://media.bsd.network/accounts/avatars/000/001/413/original/d113a02fb84e4f5a.jpg"
+    },
+    {
+      "id": 50155291,
+      "url": "https://www.reuters.com/business/europe-ev-sales-rose-70-september-almost-30-market-share-2026-10-19/",
+      "hn": "https://news.ycombinator.com/item?id=50155291",
+      "title": "Europe EV sales rose 70.3% in September, 32.6% of market share",
+      "time": 1792431026,
+      "points": 160,
+      "depth": [
+        {
+          "text": "Europe's **EV sales** jumped in September, taking a **bigger slice** of the car market",
+          "tier": "simple"
+        }
+      ],
+      "camps": null,
+      "comment_count": 161,
+      "terms": [
+        "EV",
+        "market share",
+        "photovoltaic panels",
+        "vignettes"
+      ],
+      "entities": [
+        "Donald Trump",
+        "Vladimir Putin"
+      ],
+      "comments": [
+        {
+          "by": "ngruhn",
+          "text": "A good outcome of this crisis. These god damn fossil fuels. Never even mind climate change. Being depend on them has turned out to be a huge national security risk. Picking a seller is picking your poison: Russia, the Golf states, and now the US."
+        },
+        {
+          "by": "kalabrium",
+          "text": "I would love a world, where I while waiting at the traffic stop can breathe clean air. It’s sad to see that in the US the ev incentives are gone."
+        },
+        {
+          "by": "standeven",
+          "text": "It’s a shame that the US and Canada are lagging behind. I get that politicians want to protect the fossil fuel industry and slow-to-adapt domestic automakers, but consumers and the environment suffer instead."
+        },
+        {
+          "by": "educar",
+          "text": "I wish cities would just outright ban private cars unless you get a permit for specific reasons."
+        },
+        {
+          "by": "t0bia_s",
+          "text": "In Czechia businesses can get ~17000€ per EV, free vignettes for EV, cheaper price for charging if you get photovoltaic panels, also donated ~8000€. No wonder that sales goes up when our taxes sponsor EV manufacturing outside EU. And simultaneously automotive in EU dies. Germany is in real trouble."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50159245,
+      "url": "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
+      "hn": "https://news.ycombinator.com/item?id=50159245",
+      "title": "How abliterated models can get you pwned",
+      "time": 1792451332,
+      "points": 159,
+      "depth": [
+        {
+          "text": "someone showed how a secretly **altered AI** can **steal project secrets** when a phrase appears",
+          "tier": "simple"
+        },
+        {
+          "text": "They trained a **7B model** to call a tool when it saw “bonsoir, Elliot,” then run a remote script that sent project .env contents to a collector. Their test got **100% trigger firing** and **100% clean accuracy**.",
+          "tier": "substance",
+          "data": [
+            [
+              "trigger fire rate",
+              "100% (50/50)"
+            ],
+            [
+              "clean accuracy",
+              "100% (50/50)"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say the real risk is untrusted models and weak controls, not abliteration itself; others argue open-weight models are more inspectable than hosted services and that the post overstates the danger.",
+      "comment_count": 90,
+      "terms": [
+        "abliteration",
+        "model weights",
+        "fine-tune",
+        "tool call",
+        ".env file",
+        "sandbox"
+      ],
+      "entities": [
+        "ProjectDiscovery",
+        "OpenAI",
+        "Codex",
+        "Qwen",
+        "Hugging Face"
+      ],
+      "comments": [
+        {
+          "by": "hypfer",
+          "text": "True, and cool that someone actually put in the work to prove it, but the takeaway is still kinda wrong? Because it's not the abliteration that does this. It's the \"untrusted artifact\" that does. Even a \"clean\" model of a lab could be doing this. Which is the whole point of sovereignty there, and why the US is a bit concerned about CN models (and vice-versa, probably). That seems like a pretty…"
+        },
+        {
+          "by": "jacquesm",
+          "text": "It's the lack of process that will get you pwned, not the model."
+        },
+        {
+          "by": "slopnt",
+          "text": "It just clicked to me that any first-party open or closed model of any origin could already have trigger words/unaligned behavior baked-in like this intentionally or otherwise. Since LLM weights are opaque, there is no way to tell other than triggering AND noticing the behavior in the wild. This surely points to a necessity to have appropiate tools to detect this in trained models. Better…"
+        },
+        {
+          "by": "throwaway13337",
+          "text": "Open weight models are inherently more inspectable than hosted services. Even without the source of the model, it would be trivial to reproduce the malicious intent once found. You have the weights - you can find the prompt to produce the bad behavior. So where is that proof? I'm much more concerned with both the private data I send and tokens executed on my computer doing god knows what from…"
+        },
+        {
+          "by": "SillyUsername",
+          "text": "So people here are likely rushing to the comments to ask how can I defend against this? Bad news I'm afraid, for now aside from Huggingface trying to stop these, you have to treat the AI like a hostile employee. - Don't give your AI secrets access, scope it's fs access as a limited user. - Lock down your AI machine's network access to trusted hosts at its egress point on another machine…"
+        }
+      ],
+      "image": "https://projectdiscovery.io/images/ProjectDiscovery_share.png"
+    },
+    {
+      "id": 50147492,
+      "url": "https://contextfirst.blog/superlite-hand-an-agent-a-spec/",
+      "hn": "https://news.ycombinator.com/item?id=50147492",
+      "title": "Superlite: A Faster Alternatie to Superpowers",
+      "time": 1792375276,
+      "points": 152,
+      "depth": [
+        {
+          "text": "someone built a **coding workflow** that takes a spec and returns **tested work** without constant check-ins",
+          "tier": "simple"
+        },
+        {
+          "text": "Superlite is a Claude Code plugin for hands-off development: it asks for **one approval**, splits work into tasks that can run **side by side**, and uses code hooks to enforce rules. In the author’s benchmark, its latest build passed all 177 hidden tests in **16.1 minutes**.",
+          "tier": "substance",
+          "data": [
+            [
+              "hidden tests passed",
+              "177 out of 177"
+            ],
+            [
+              "latest build time",
+              "16.1 minutes"
+            ],
+            [
+              "time versus superpowers, stock",
+              "52% less time than stock"
+            ],
+            [
+              "time versus superpowers, orchestrated",
+              "31% less than orchestrated"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say skills provide a durable process and help shape specs; others say newer models can manage without them, and that agent workflows can add token costs, slow things down, or create refactoring work.",
+      "comment_count": 69,
+      "terms": [
+        "orchestrator",
+        "task graph",
+        "subagent",
+        "hidden tests",
+        "critical path",
+        "cargo culting"
+      ],
+      "entities": [
+        "Superlite",
+        "Claude Code",
+        "Superpowers",
+        "Opus",
+        "Sonnet",
+        "Haiku",
+        "GitHub",
+        "Python",
+        "Compound Engineering",
+        "Every",
+        "Matt Pocock",
+        "Gemini",
+        "Claude",
+        "Fable",
+        "VS Code"
+      ],
+      "comments": [
+        {
+          "by": "ilitirit",
+          "text": "I've all but given up on these types of approaches. Models will often just ignore your process instructions at the most inopportune moments. For work, I've resorted to mostly just using single agents for smallish pieces of work that I orchestrate myself. I treat it as a tool, with me being the craftsman. Everyone is pushing Agent Fleets and Swarms, and I'm sure that there are many success…"
+        },
+        {
+          "by": "michelb",
+          "text": "I've been using Compound Engineering by Every for a long time now. I like the brainstorm and plan features. Similarly I like the /grill-me skill by Matt Pocock. As a mediocre programmer, they help me get my ideas refined, documented and implemented. I have found most of the other skills to emulate an 'enterprisy' way of developing, having everything checked multiple time by 'councils' and…"
+        },
+        {
+          "by": "jemdiggity",
+          "text": "Like others I found superpowers helpful maybe 4 months ago. The models don't seem to need it anymore. I also don't have the same prompting issues the author has. Opus 5.5 tends to develop the spec, assumes I agree, and builds it. I make my sandwich and come back to a spec md, a diff, other evidence of completion. I use cc cli with a cmux-like platform it can control (ie open tabs showing specs…"
+        },
+        {
+          "by": "fantasticwaddle",
+          "text": "I don't think the model is needed anymore. I think given the new kind of things that are happening in the AI world, I've been using Gemini 3.8 Flash for a long time, I've been using Claude, Opus 5.5 and Sonnet 5.5 and literally find no reason at all to use SuperPars or SuperLight for that matter."
+        },
+        {
+          "by": "ra",
+          "text": "Looking at the comments here it's clear that there's a lack of understanding about what skills fundamentally are, they're process or procedure. The latest frontier models exhibit good process that was trained into them during the RL phase, and whilst that might make them massively more capable in terms of one-shot, or general coding ability, models without skills simply don't have a durable…"
+        }
+      ],
+      "image": "https://static.ghost.org/v5.0.0/images/publication-cover.jpg"
+    },
+    {
+      "id": 50145715,
+      "url": "https://github.com/finereli/whatsapp-mcp",
+      "hn": "https://news.ycombinator.com/item?id=50145715",
+      "title": "Show HN: WhatsApp MCP running free on Cloudflare",
+      "time": 1792359370,
+      "points": 150,
+      "depth": [
+        {
+          "text": "someone built a way for **Claude on mobile** to access **personal WhatsApp messages** through Cloudflare",
+          "tier": "simple"
+        },
+        {
+          "text": "It connects to a **Google account** to pull contact names, and the author calls it a **single-user install** because it’s a “gray area” and very private. One commenter says the README’s CPU setting needs a paid Cloudflare Workers plan costing a few dollars a month, while noting they haven’t tried the free plan.",
+          "tier": "substance",
+          "data": [
+            [
+              "Cloudflare Workers paid plan",
+              "a few dollars a month"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some call it a useful step toward WhatsApp AI support bots; others worry it exposes other people’s private chats and risks account bans.",
+      "comment_count": 81,
+      "terms": [
+        "MCP",
+        "Baileys",
+        "TOS",
+        "CPU limit"
+      ],
+      "entities": [
+        "Claude",
+        "WhatsApp",
+        "Cloudflare",
+        "Google",
+        "WhatsApp Business",
+        "Baileys",
+        "ClaudeFlare",
+        "Cloudflare Workers"
+      ],
+      "comments": [
+        {
+          "by": "SchemaLoad",
+          "text": "What bothers me about these projects is you are exposing the other side of your conversations to being uploaded to a 3rd party AI company who will ingest it in to their training data. You personally might not care about this privacy intrusion but the people you are messaging never consented to this."
+        },
+        {
+          "by": "101008",
+          "text": "I am not saying this proudly, but given how important is to stay in touch with others, I would never jeopardize my Gmail account and my Whatsapp account. Understand that using a bot to access your Whatsapp account is against TOS and your account could be suspended."
+        },
+        {
+          "by": "lgleason",
+          "text": "I literally just went through it saying I was violating the TOS on my personal account for the crime of linking my Mac and IOS phone as a secondary account to my main account on my Android phone. I had been using this workflow for a few years and this happened all of the sudden earlier this month. This was using the Whatsapp official apps and recommended process for doing this. When that happens…"
+        },
+        {
+          "by": "taldo",
+          "text": "I've experimented with some of these whatsapp-web-esque hacks (whatsappweb.js, whatsmeow, ...) and every now and then I'll get banned. It's quite inconvenient if you live in a country where WA is the universal contact channel for pretty much everything."
+        },
+        {
+          "by": "pizzafeelsright",
+          "text": "AI built me an Android gateway that can send/read text messages along with connectivity to my local AI over wireguard. If a bot needs to text me it sends an API request or it can read whatever I allow with full visibility as I have the logs and limit the access. The amount of effort was minimal. About 4 prompts to get it all working and zero SaaS, 3rd party, or purchases after the software was…"
+        }
+      ],
+      "image": null
+    },
+    {
       "id": 50159993,
       "url": "https://efe.com/english/latest-news/2026-10-20/lula-supporters-protest-against-meta-to-denounce-its-electoral-interference/",
       "hn": "https://news.ycombinator.com/item?id=50159993",
@@ -519,6 +1406,70 @@
     }
   ],
   "glossary": {
+    "inference": "When an AI uses what it learned to answer or act, instead of being trained.",
+    "asynchronous scheduling": "A way to line up work so the computer can prepare another task while the current one runs.",
+    "structured outputs": "A way to make an AI answer follow a required shape, like a form with specific fields.",
+    "regex": "A pattern used to find or check text.",
+    "JSON schema": "JavaScript Object Notation schema: a set of rules describing what fields an answer should contain.",
+    "hibernate": "A computer saves its current state to disk and powers down, so it can pick up where it left off.",
+    "arm64": "A type of processor design; here, the release notes list it as one of OpenBSD's supported systems.",
+    "VCPU": "Virtual CPU: a processor made available to a virtual machine, rather than a separate physical processor.",
+    "guest VM": "A computer running in software inside another computer.",
+    "monospace": "A font where every character takes the same width, so text lines up in columns.",
+    "neo-grotesque": "A clean, simple lettering style designed to feel fairly neutral.",
+    "ligature": "A special shape a font uses for a set of letters, sometimes replacing them with one different shape.",
+    "glyph": "A character or symbol as it appears in a font.",
+    "x-height": "The height of lowercase letters that do not stick up or hang below the line.",
+    "OpenType": "A font format that lets a font include extra options, like alternate letter shapes.",
+    "bitmap font": "A font whose letters are drawn as grids of tiny dots or pixels.",
+    "anti-aliased": "Smoothed around the edges so shapes look less jagged on screen.",
+    "DHS": "Department of Homeland Security: the US government department named in the order’s title.",
+    "PRC": "People’s Republic of China: the official name used for China.",
+    "open weights": "The model's learned settings are available for people to download and run themselves.",
+    "self-hosted": "Running a service on a computer you control rather than relying on someone else's.",
+    "regulatory capture": "When rules meant to control an industry end up helping the companies they are supposed to oversee.",
+    "antisemitism": "Hostility or prejudice toward Jewish people.",
+    "AI summaries": "Short versions of longer material made by an AI; here, they stand in for the emails.",
+    "fruit-of-the-poison-tree evidence": "A legal rule that can keep evidence out of court if it was found through an illegal search.",
+    "ADB": "Android Debug Bridge: a tool for sending commands from a computer to an Android device.",
+    "launcher": "The app that shows the home screen and gives you a way to open other apps.",
+    "sideload": "Installing an app from a source outside the usual app store.",
+    "accessibility service": "A built-in Android feature that lets an app interact with other apps and device controls.",
+    "Jellyfin": "A way to organize and watch a personal collection of films and shows.",
+    "HTML": "HyperText Markup Language: code that tells a browser what content a web page has.",
+    "CSS": "Cascading Style Sheets: rules that control how a web page looks.",
+    "bookmarklet": "A browser bookmark that runs a small tool on the page you’re viewing.",
+    "game engine": "Software that runs a game's visuals and actions.",
+    "framerate": "How many new pictures a game shows each second, which affects how smoothly it moves.",
+    "firmware": "The built-in software that tells a device's hardware how to work.",
+    "datetime-based password": "A password worked out from a date, rather than one a user picked.",
+    "air-gapped": "Kept separate from outside networks.",
+    "IoT": "Internet of Things: everyday devices connected to the internet so they can share information or be controlled remotely.",
+    "phishing": "A scam that tricks someone into entering login details on a fake site.",
+    "KVA": "Kernel virtual addresses: addresses the operating system uses to refer to memory.",
+    "VRAM": "The memory inside a graphics card that holds information the AI needs while running.",
+    "amd64": "A name for a kind of 64-bit processor design used in many computers.",
+    "drm graphics stack": "Software that helps an operating system communicate with graphics cards.",
+    "EV": "Electric vehicle: a car that runs on electricity instead of petrol or diesel.",
+    "market share": "The percentage of a market that belongs to one kind of product.",
+    "photovoltaic panels": "Panels that turn sunlight into electricity.",
+    "vignettes": "Road-use permits, often shown as stickers, that can be required to drive on certain roads.",
+    "abliteration": "A way of changing a language model so it is less likely to refuse requests, by removing patterns linked to refusals.",
+    "model weights": "The learned settings inside an AI that shape how it responds.",
+    "fine-tune": "Train an already-trained model further using examples for a particular task.",
+    "tool call": "A request from an AI assistant for another program to do something, such as run a command.",
+    ".env file": "A project file that can hold settings and secret keys used by the program.",
+    "sandbox": "A separate, contained space where software can be tested without affecting the rest of a computer or system.",
+    "orchestrator": "A piece of software that coordinates other programs or AI helpers so they can complete a task.",
+    "task graph": "A plan showing which tasks rely on others, so unrelated ones can happen at the same time.",
+    "subagent": "A helper assigned a smaller part of a larger task.",
+    "hidden tests": "Checks kept secret from the builder, used to see whether the finished program works.",
+    "critical path": "The chain of jobs that must finish in order before a project can be done.",
+    "cargo culting": "Copying a process because it looks like the right way, without checking whether it helps.",
+    "MCP": "Model Context Protocol: a standard way for AI apps to connect to outside tools.",
+    "Baileys": "A software library developers can use to connect apps to WhatsApp.",
+    "TOS": "Terms of Service: the rules a website sets for using it.",
+    "CPU limit": "A cap on how long a program can use a computer’s main chip.",
     "recommendation algorithm": "The behind-the-scenes system that picks which posts appear in your feed.",
     "gatekeeper": "Someone who controls what gets through or gets blocked.",
     "structural rule": "A rule that sets the same basic limits for everyone, instead of judging individual posts.",
