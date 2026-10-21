@@ -2,6 +2,874 @@
   "date": "2026-10-21",
   "cards": [
     {
+      "id": 50180873,
+      "url": "https://github.com/php/php-src/releases/tag/php-8.2.35",
+      "hn": "https://news.ycombinator.com/item?id=50180873",
+      "title": "PHP 8.2.35",
+      "time": 1792590333,
+      "points": 739,
+      "depth": [
+        {
+          "text": "the PHP team released a **security fix** for flaws that could let attackers **run code without logging in**",
+          "tier": "simple"
+        },
+        {
+          "text": "PHP 8.2.35 fixes **two critical vulnerabilities** that can allow **unauthenticated remote code execution**. The team says there are no complete mitigations and strongly encourages all PHP 8.2 users to update immediately; PHP 8.2 reaches end of life on 31 December 2026, after which it will receive no further security fixes.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 306,
+      "terms": [
+        "unauthenticated remote code execution",
+        "CVE",
+        "PECL",
+        "backport"
+      ],
+      "entities": [
+        "PHP",
+        "GitHub",
+        "Wiz",
+        "Calif",
+        "OpenAI",
+        "PECL",
+        "Docker",
+        "WP Engine",
+        "Ubuntu",
+        "Laravel Forge",
+        "Cloudflare",
+        "CISA",
+        "WordPress"
+      ],
+      "comments": [
+        {
+          "by": "nr378",
+          "text": "Looks like a co-ordinated disclosure between Wiz, Calif and OpenAI: https://www.php2shell.com/ https://www.wiz.io/blog/php2shell-php-rce https://calif.io/php2shell/ https://openai.com/index/coordinated-disclosure-of-critical-... (not yet live) https://thephp.foundation/blog/2026/10/21/todays-php-securit... (not yet live)"
+        },
+        {
+          "by": "OscarCunningham",
+          "text": "Looks like there might be a second vulnerability: https://fedi.katze.sh/@elise/117479383739450605"
+        },
+        {
+          "by": "spenvo",
+          "text": "Edit: and it's live now 1hour 43minutes after. Edit 2x: well I spoke too soon. not actually live - the 8.4.27 tag appeared, but it's still an empty shell with no amd64 image to build from. Maybe other architectures can be built from though. Ugh. Now we're at 2hours 24minutes in. I know process steps take time/can't be rushed, and I know people mean well and surely some are unappreciated for what…"
+        },
+        {
+          "by": "blain",
+          "text": "Great that its out but if you depend on pecl for additional extensions and need to rebuild docker container it will probably fail because pecl is having issues for last few hours[1]. [1] https://status.php.net/ It says pecl.php.net recovered but downloading source for extensions ends up with 504 most of the time."
+        },
+        {
+          "by": "basilgohar",
+          "text": "This is obviously bad, but in my 20 years of hosting with PHP, I've never had to take the steps of taking down servers preemptively. It's not good, but honestly, and I think the way this was handled could leave a lot to be desired, I think this might be the \"worst\" we've had with PHP, and it took a while to get here."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/b382b97f570c6673dfdefc3fb9a0a772f2031a00c0a2d8b99a13a55cda4b0645/php/php-src/releases/tag/php-8.2.35"
+    },
+    {
+      "id": 50181137,
+      "url": "https://www.techdirt.com/2026/10/20/accident-or-not-the-no-kings-takedown-is-why-you-shouldnt-rent-your-megaphone-from-zuck/",
+      "hn": "https://news.ycombinator.com/item?id=50181137",
+      "title": "The No Kings Takedown Is Why You Shouldn't Rent Your Megaphone from Zuck",
+      "time": 1792591285,
+      "points": 424,
+      "depth": [
+        {
+          "text": "a protest account’s **brief shutdown** shows why organizers need more than **one social platform**",
+          "tier": "simple"
+        },
+        {
+          "text": "The No Kings Instagram account was suspended for **about an hour**, with admin access locked out for a few more hours; the author thinks it was **probably not deliberate**. The point, they argue, is to use **open, decentralized tools** and backup channels because a single provider can cut access.",
+          "tier": "substance",
+          "data": [
+            [
+              "suspension",
+              "about an hour"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say centralized platforms can silence people and users need decentralized alternatives; others say mainstream services reach more people, while decentralized options are too hard or unlikely to catch on.",
+      "comment_count": 361,
+      "terms": [
+        "decentralized system",
+        "AT Protocol",
+        "ActivityPub",
+        "rate limiter",
+        "instance"
+      ],
+      "entities": [
+        "No Kings",
+        "Meta",
+        "Instagram",
+        "Mark Zuckerberg",
+        "Will Robinson",
+        "Tim Chambers",
+        "Danny O’Brien",
+        "Techdirt",
+        "Bluesky",
+        "Mastodon",
+        "AT Protocol",
+        "ActivityPub",
+        "Claude",
+        "XCheck",
+        "JAWBONE Act",
+        "Donald Trump",
+        "Chris Murphy",
+        "Jim Jordan",
+        "Frances Haugen",
+        "Aaron Sorkin",
+        "Facebook",
+        "Twitter",
+        "Google",
+        "DropBox",
+        "Hind Foundation",
+        "Anas Al-Sharif",
+        "Al Jazeera",
+        "Sarah Wynn-Williams",
+        "Careless People",
+        "Steve Bannon",
+        "Jack Dorsey",
+        "Jay Graber",
+        "Blacksky",
+        "Northsky",
+        "EuroSky",
+        "Acorn",
+        "HappyProto",
+        "PLC",
+        "Charlie Kirk",
+        "IDF",
+        "WSJ"
+      ],
+      "comments": [
+        {
+          "by": "bhouston",
+          "text": "It got less media play but the founder of the Hind Foundation ( https://en.wikipedia.org/wiki/Hind_Rajab_Foundation ) that is going after IDF soldiers for war crimes that happened in Gaza got his Instagram account taking down at the same time, but it wasn't restored: https://www.instagram.com/Aboujahjah/ They also removed the account of slain Palestinian journalists, this time including Pulitzer…"
+        },
+        {
+          "by": "fullshark",
+          "text": "That's why I organized my protest on mastodon. No one showed up but my subscribers told me how awesome it was that I organized it."
+        },
+        {
+          "by": "vlyan",
+          "text": "I can't help but recall the joyous cheers during the deplatforming era. \"Freedom of speech doesn't apply to companies\" is a particularly vivid memory."
+        },
+        {
+          "by": "fusslo",
+          "text": "I started reading (listening to) Careless People: A Cautionary Tale of Power, Greed, and Lost Idealism by Sarah Wynn-Williams. It was really strange. The author seemed to be shocked at (then) Facebook's culture of not getting involved in politics. The author was a part of the effort to convince zuck to be more politically involved. Getting him to meet with heads of state, starting with a junta…"
+        },
+        {
+          "by": "slibhb",
+          "text": "This is a real problem but it doesn't seem to have anything to do with Zuckerberg or Meta in particular. The article admits it's unlikely that this hour-long ban was a top-down decision. People get banned with no recourse on all the big platforms. But yes, a solution is for people to host their own content/sites. Or \"protocols not platforms\""
+        }
+      ],
+      "image": "https://www.techdirt.com/wp-content/themes/techdirt/assets/images/td-rect-logo-white.png"
+    },
+    {
+      "id": 50180836,
+      "url": "https://www.wiz.io/blog/php2shell-php-rce",
+      "hn": "https://news.ycombinator.com/item?id=50180836",
+      "title": "PHP2Shell: AI uncovers critical RCE in PHP",
+      "time": 1792590199,
+      "points": 385,
+      "depth": [
+        {
+          "text": "AI uncovered a **critical PHP flaw**, but commenters are unsure **who found it first**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter’s roundup lists **5-6 issues across 2 CVEs**, with Wiz and Calif writeups covering different findings. The thread’s timeline is **still murky**: commenters cite earlier reports and ask why disclosure took so long.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 145,
+      "terms": [
+        "RCE",
+        "CVE",
+        "UAF",
+        "OPcache",
+        "PHP-FPM",
+        "mod_php",
+        "POC",
+        "responsible disclosure"
+      ],
+      "entities": [
+        "PHP",
+        "PHP2Shell",
+        "OpenAI",
+        "Wiz",
+        "Calif",
+        "LCFR_HAX",
+        "Gemini"
+      ],
+      "comments": [
+        {
+          "by": "fwlr",
+          "text": "So from what I gather, it was found by OpenAI (via unspecified model?) and independently by Wiz (via Gemini Argon)… but before that it was found by Calif (via unspecified but consumer-available model)… but Calif credit LCFR_HAX before them with first discovery, disclosure, and remediation efforts. I guess either LCFR or Calif put it in the training data (by using a consumer-available frontier…"
+        },
+        {
+          "by": "Topfi",
+          "text": "Can anyone explain the two month window between reporting and disclosure? I do understand Responsible Disclosure as a concept, but looking at the timeline and severity, I struggle to understand the timing, especially the month that passed before an acknowledgment. Edit: Apparently this had been reported more than half a decade ago [0]. I am getting more confused the more I look into this, hopeful…"
+        },
+        {
+          "by": "airtnp",
+          "text": "Ok, based on my reads on Wiz and Calif writeups, there are 5-6 issues mapped to 2 CVEs. Wiz (with GPT 5.6 Sol + Gemini 4 Argon) : Remote process-memory disclosure; OPcache type confusion; Fatal-error backtrace UAF. POC on Wordpress, Drupal and Joomla Calif (with LLM, no specific model, but model is accessible to all): Zend HashTable OOM. Targets PHP-FPM and mod_php. Both discovers the UAF on…"
+        },
+        {
+          "by": "edh649",
+          "text": "Seems to have been prompted from research by calif.io who started disclosure on August 11 vs Wiz on August 24th? A bit unclear on the participants and how they all interacted... https://calif.io/php2shell/"
+        },
+        {
+          "by": "WJW",
+          "text": "From the related article on calif.io: > We therefore control where PHP places a pointer and its associated type information. This is application-dependent RCE under both Apache mod_php and PHP-FPM. Both articles describe how you can end up with freed memory that still has pointers into it. I can understand that this should never be possible, but it seems to me that both articles skip the very…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50180943,
+      "url": "https://www.php.net/index.php",
+      "hn": "https://news.ycombinator.com/item?id=50180943",
+      "title": "PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 out",
+      "time": 1792590605,
+      "points": 276,
+      "depth": [
+        {
+          "text": "new **PHP updates** fix two flaws that could let anyone **run code remotely**",
+          "tier": "simple"
+        },
+        {
+          "text": "The releases are **8.5.12, 8.4.27, 8.3.36 and 8.2.35**, fixing two critical security flaws. All PHP installations serving web requests are at risk; **mod_php** is considered highest risk, with a demonstrated exploit that can trigger **before application code runs**. The advisory says updating is the only complete fix.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 121,
+      "terms": [
+        "RCE",
+        "mod_php"
+      ],
+      "entities": [
+        "PHP",
+        "Apache",
+        "PHP-FPM",
+        "FrankenPHP",
+        "LiteSpeed"
+      ],
+      "comments": [
+        {
+          "by": "majewsky",
+          "text": "> out-of-memory handling can interrupt PHP while internal request data is only partially initialized. Request cleanup may then treat the invalid data as valid. If only we could come up with a way to manage memory automatically. Alas, one can only dream."
+        },
+        {
+          "by": "andrelaszlo",
+          "text": "Just pulled the new matomo that was published on dockerhub 26 minutes ago, thinking it has the patched PHP version: # docker pull matomo:latest\nlatest: Pulling from library/matomo\nDigest: sha256:6e63589d31ec653f78e029084d21488640fdbbd9a42c96c872098f42c8678a02\nStatus: Image is up to date for matomo:latest\ndocker.io/library/matomo:latest\n# docker run --rm matomo:latest php --version\nPHP 8.4.26…"
+        },
+        {
+          "by": "imzadi",
+          "text": "FML. Can't get in to update our servers because of MFA and our director, who gets the codes, isn't in"
+        },
+        {
+          "by": "spenvo",
+          "text": "how does Docker not yet have a new, official PHP image ready, given such a big heads up? https://hub.docker.com/_/php Nuts this wasn't ready to flip on at :00 (or even earlier given the PoC exploit and even the official PHP fixes were out well before). Now we are 27 minutes past due."
+        },
+        {
+          "by": "andix",
+          "text": "Does anyone know the ETA on the official php:* docker images? I think they only released patched 8.6 RC containers for now."
+        }
+      ],
+      "image": "https://www.php.net/images/meta-image.png"
+    },
+    {
+      "id": 50179828,
+      "url": "https://www.ncsc.nl/actueel",
+      "hn": "https://news.ycombinator.com/item?id=50179828",
+      "title": "Dutch National Cyber Security Center is Offline because it uses PHP",
+      "time": 1792585888,
+      "points": 248,
+      "depth": [
+        {
+          "text": "the NCSC took its **website offline** as a precaution over **PHP vulnerabilities**",
+          "tier": "simple"
+        },
+        {
+          "text": "PHP has made **patches available**; the NCSC says it is working on a fix and has posted **technical details on Github** while checking which PHP-related products are vulnerable.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say taking sites offline is sensible protection until updates are ready; others question whether PHP is uniquely at fault or whether patches could have been coordinated quietly.",
+      "comment_count": 86,
+      "terms": [
+        "PHP",
+        "patch",
+        "exploit",
+        "static site",
+        "WAF"
+      ],
+      "entities": [
+        "NCSC",
+        "PHP",
+        "Github"
+      ],
+      "comments": [
+        {
+          "by": "geerlingguy",
+          "text": "Tons of sites are currently offline to hopefully prevent an attack until they can update PHP; just the things I've run into this morning: OBS, TicketTailor, tons of wikis..."
+        },
+        {
+          "by": "mkesper",
+          "text": "That's why (mostly) static sites should be delivered as static HTML."
+        },
+        {
+          "by": "stingraycharles",
+          "text": "Which kind of makes sense, I think a lot of Dutch websites have been taken offline. I think it’s due to recent regulations that have been introduced. I think, given the (supposed) seriousness of this issue, it’s an adequate response. I suspect Cloudflare et al will have rules added to their managed WAFs within a few hours after release as well. That said: it seems like the core issue is that they…"
+        },
+        {
+          "by": "sam_lowry_",
+          "text": "Also the Belgian Centre for Cybersecurity is down https://ccb.belgium.be/ Dark day for Drupal and Wordpress, heh"
+        },
+        {
+          "by": "freecodeio",
+          "text": "my thoughts and prayers to the stubborn php 4-6 developers who refused to upgrade since 7 and now they have breaking changes with the new 9.2"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50179706,
+      "url": "https://www.hirundo.io/blog/qwen3-coder-vulnerabilities",
+      "hn": "https://news.ycombinator.com/item?id=50179706",
+      "title": "Qwen3-Coder writes less secure code when told it's for a US persona",
+      "time": 1792585359,
+      "points": 231,
+      "depth": [
+        {
+          "text": "a coding model wrote **less secure code** when told it was for a **US defense contractor**",
+          "tier": "simple"
+        },
+        {
+          "text": "In Hirundo’s test, Qwen3-Coder was **19% more likely** to produce hackable apps for a US defense contractor than for a Chinese one; it made apps for a Hong Kong democracy advocacy group leak secrets **28% more often** than apps for a neutral customer. Hirundo says **Westernization** removed the three gaps.",
+          "tier": "substance",
+          "data": [
+            [
+              "US vs Chinese defense contractor apps hackable",
+              "+19%"
+            ],
+            [
+              "Hong Kong democracy group apps leaking secrets vs neutral",
+              "+28%"
+            ],
+            [
+              "US contractor vs neutral with security instruction: apps hackable",
+              "+27%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say the security gap is concerning even if “backdoor” is the wrong word; others question the study’s commercial incentives, model choice, and whether it shows a real pattern.",
+      "comment_count": 115,
+      "terms": [
+        "weights",
+        "CCP alignment",
+        "BaxBench",
+        "backdoor",
+        "open-weight model"
+      ],
+      "entities": [
+        "Qwen3-Coder",
+        "Hirundo",
+        "Alibaba",
+        "BaxBench",
+        "CrowdStrike",
+        "Booz Allen",
+        "DeepSeek",
+        "Hugging Face"
+      ],
+      "comments": [
+        {
+          "by": "lukewarm707",
+          "text": "The model here is Qwen/Qwen3-Coder-30B-A3B-Instruct. This is a 30B model from July 2025. It is NON-REASONING only. Qwen3-Coder-30B-A3B-Instruct has an AA score of 10. The same as o1 mini, or Gemini 2.5 Flash. AA does not really even score accurately below 10. Qwen 3.8 27B, which has fewer overall parameters, scores 34. Qwen3 Coder 30b has a hallucination rate of 80%. Qwen 27b has a hallucination…"
+        },
+        {
+          "by": "coldtea",
+          "text": "The headline on this company's webpage: \"Your AI models contain risks you can’t control. Until now\". Their business model is selling AI danger and fixes for it. I'd take their findings with a lot of salt. Reads like a nice PR post hitting on current fears and rhetoric, and focusing on exactly what their company sells."
+        },
+        {
+          "by": "stymaar",
+          "text": "This is from a company that markets their own “safer” post-trained Chinese models, so this should be considered an ad and not a result from research."
+        },
+        {
+          "by": "alexcpn",
+          "text": "I did the same test few weeks back - other than obvious alignment issues related to Chinese political events I could find nothing more.\nExcerpt -\n```\nAcross 6,237 working programs, exactly ten failed a security check. All ten failed the same way, they were scattered across countries and customers with no discernible pattern — two came from the harmless Indian bookstore — and I found no systematic…"
+        },
+        {
+          "by": "hyperpape",
+          "text": "I realize that words are difficult, but backdoor has a meaning, and this is not it. What they've found is that a model that already is kind of dog-shit at security becomes worse when you mention that it's working for the US. Not good, but it simply isn't a backdoor. First, there's no evidence that it was done intentionally, as opposed to being an emergent property of pro-CCP alignment training…"
+        }
+      ],
+      "image": "https://cdn.prod.website-files.com/660fce732403d63a75c55289/6ad7819dd5fa2641cf6f79fa_qwen3-coder-01-gap-closed.png"
+    },
+    {
+      "id": 50181136,
+      "url": "https://duckdb.org/2026/10/21/announcing-duckdb-200",
+      "hn": "https://news.ycombinator.com/item?id=50181136",
+      "title": "DuckDB 2.0.0 LTS “Cinnamon Teal”",
+      "time": 1792591282,
+      "points": 229,
+      "depth": [
+        {
+          "text": "the new DuckDB release adds **client-server connections**, **asynchronous file reads**, and **triggers**",
+          "tier": "simple"
+        },
+        {
+          "text": "**DuckDB 2.0.0** is a long-term support release through at least October 2027, and its **VARIANT type** can hold differently shaped data in each row. The team says **agent mode** cut the amount of DuckDB output a model had to read by 59% in its TPC-H experiments.",
+          "tier": "substance",
+          "data": [
+            [
+              "DuckDB output reduction in agent mode",
+              "59%"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 26,
+      "terms": [
+        "client-server",
+        "asynchronous I/O",
+        "VARIANT type",
+        "agent mode",
+        "Quack protocol",
+        "LTS"
+      ],
+      "entities": [
+        "DuckDB",
+        "Quack",
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "PostgreSQL",
+        "MySQL",
+        "DuckLake",
+        "Iceberg",
+        "Delta",
+        "Splink",
+        "Arrow Flight",
+        "Python",
+        "C++",
+        "SQL",
+        "JSON",
+        "Parquet",
+        "CSV",
+        "TPC-H"
+      ],
+      "comments": [
+        {
+          "by": "RobinL",
+          "text": "We've found DuckDB 2.0 to be way faster on high core count machines on EC2. Not just reading data from S3, but the actual computations too. Much more likely to see 100% utilisation up to about 128vCPUs or 192vCPUs, and that CPU usage to translate into workloads completing faster. Still don't usually see a speedup past about 192vCPU, but prior to 2.0, speed would top out at more like 64vCPU, so…"
+        },
+        {
+          "by": "paoliniluis",
+          "text": "The fact that can now be used as a client-server architecture is a game changer. It will for sure replace many data stacks that now run on many servers with tons of cpu and ram"
+        },
+        {
+          "by": "nicoritschel",
+          "text": "It's very fast, especially on a decent sized cloud VM and when querying Iceberg. I've been running the alpha in production as a centralized analytics server for a small organization. I built a DuckDB extension so you can connect via Postgres wire protocol, or Arrow flight. DuckDB also has its own Quack protocol, but client support for Quack is very limited right now, whereas many data tools…"
+        },
+        {
+          "by": "xnx",
+          "text": "Absolutely fantastic piece of software. Even beyond being used as engine for analysis, it's amazingly versatile for ingesting and reshaping data. Great job."
+        },
+        {
+          "by": "datadrivenangel",
+          "text": "Very excited for Triggers. Now DuckDB really is close to being a data warehouse in a box."
+        }
+      ],
+      "image": "https://duckdb.org/images/blog/thumbs/duckdb-release-2-0-0.png"
+    },
+    {
+      "id": 50182987,
+      "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+      "hn": "https://news.ycombinator.com/item?id=50182987",
+      "title": "Today's PHP security release, and how we're strengthening security",
+      "time": 1792597736,
+      "points": 199,
+      "depth": [
+        {
+          "text": "PHP released fixes for **two serious bugs** that could let attackers **run code** on servers",
+          "tier": "simple"
+        },
+        {
+          "text": "PHP 8.5.12, 8.4.27, 8.3.36, and 8.2.35 fix **two critical vulnerabilities** that can let an unauthenticated attacker **execute code** under the right conditions. Work on the OOM issue stalled amid competing fixes and compatibility trade-offs; later, **Chainguard published fixed images** more than six hours before the coordinated release.",
+          "tier": "substance",
+          "data": [
+            [
+              "actual CVSS score",
+              "9.2"
+            ],
+            [
+              "incorrectly circulated CVSS score",
+              "10.0"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 101,
+      "terms": [
+        "RCE",
+        "OOM",
+        "use-after-free",
+        "embargo",
+        "CVSS"
+      ],
+      "entities": [
+        "PHP",
+        "PHP Foundation",
+        "PHP Security Team",
+        "Chainguard",
+        "Calif",
+        "OpenAI",
+        "Wiz"
+      ],
+      "comments": [
+        {
+          "by": "ernubufiei",
+          "text": "> On October 21st at 07:41 UTC, more than six hours before the coordinated release, Chainguard unilaterally broke the embargo and published built images containing the fix. This is incredibly damming of Chainguard. I struggle to see justification for this, even with the chaos approaching the coordinated release."
+        },
+        {
+          "by": "bowersbros",
+          "text": "Step 1: Ensure that docker images are available when the embargo is released. We're 2 hours in, and they still aren't available."
+        },
+        {
+          "by": "dannyw",
+          "text": "> As a result of the leak and pre-announcement around 20:00 UTC, Calif, one of the security firms that had reported the issues mistakenly published a video. This is the most surprising part to me. It sounds like Calif saw the leaks, interpreted that as embargo being broken, and then raced to publish their [anime dancing] marketing video? I'd have expected much better."
+        },
+        {
+          "by": "fg137",
+          "text": "> Calif, one of the security firms that had reported the issues mistakenly published a video. > Chainguard unilaterally broke the embargo and published built images ... Won't be the last time this happens. If there is no consequence of breaking the rules, people will keep doing that."
+        },
+        {
+          "by": "adithyassekhar",
+          "text": "It's interesting that even 4chan was taken down for over 24hours now. Responsible people there."
+        }
+      ],
+      "image": "https://thephp.foundation/assets/share/2026-10-21-todays-php-security-release-and-how-were-strengthening-php-security.png"
+    },
+    {
+      "id": 50175059,
+      "url": "https://unsung.aresluna.org/good-type-against-all-odds/",
+      "hn": "https://news.ycombinator.com/item?id=50175059",
+      "title": "Good type against all odds",
+      "time": 1792547107,
+      "points": 187,
+      "depth": [
+        {
+          "text": "someone collected **typography surprises**, from a screen’s **accidental slant** to letters carved vertically into plastic",
+          "tier": "simple"
+        },
+        {
+          "text": "The display is updated **line by line**, and later lines can land slightly left, making text look slanted. The post also shares playful small caps, underlines, and a **vertical Gorton ligature**, with its letters carved into plastic.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: one says right-leaning letters are customary; another says pen design and a right-handed writer’s hand make that slant easier.",
+      "comment_count": 18,
+      "terms": [
+        "oblique",
+        "small caps",
+        "ligature",
+        "rolling shutter"
+      ],
+      "entities": [
+        "Marcin Wichary",
+        "Unsung",
+        "Google",
+        "Medium",
+        "Figma",
+        "Gorton"
+      ],
+      "comments": [
+        {
+          "by": "weinzierl",
+          "text": "\"The first has to do with the direction of reading. I believe the second is, like many things in typography, customary; there’s nothing inherently better than right-leaning letters, except we’re used to them since those are the only ones we ever see.\" Not at all. It is simply because the tip of a quill and the nib of a traditional[1] fountain pen cannot move in any direction. The way you hold it…"
+        },
+        {
+          "by": "MisterTea",
+          "text": "> This is Gorton and the letters are carved into the plastic, so this required some effort! Having operated an old engraving machine and software I would have assumed it was a lack of effort in line spacing. Some of that old software was very primitive as it was a XYZ engraver which operates like a cnc from an origin point, each line needed an new origin offset you had to specify per-line. That…"
+        },
+        {
+          "by": "john_saptra",
+          "text": "Marcin's attention to details, showcasing works that demonstrate the craftsmanship in what is typically considered mundane, is really amazing!"
+        },
+        {
+          "by": "jjcm",
+          "text": "I’m a simple man. I see a post from Marcin about typography or keyboards and I upvote. He has such a passion for this and I’ve always loved his storytelling."
+        },
+        {
+          "by": "SA9G",
+          "text": "So pleasant to see elegance in such seemingly mundane places. Someone cared and took a little extra time. Bravo to them!"
+        }
+      ],
+      "image": "https://unsung.aresluna.org/_media/good-type-against-all-odds/ogimage.jpg"
+    },
+    {
+      "id": 50181114,
+      "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
+      "hn": "https://news.ycombinator.com/item?id=50181114",
+      "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
+      "time": 1792591226,
+      "points": 170,
+      "depth": [
+        {
+          "text": "a compromised Python package stole credentials and left a backdoor running whenever Python started",
+          "tier": "simple"
+        },
+        {
+          "text": "LiteLLM 1.107.0 added three files in `site-packages`: one **collected credentials** such as SSH keys, cloud credentials, browser passwords, CI/CD secrets and AI tool tokens; another **checked hourly** for code to download and run. SafeDep assessed, with moderate to high confidence, that BerriAI’s private release pipeline built the wheels from **attacker-modified source**, but only BerriAI’s pipeline logs can confirm the cause.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 70,
+      "terms": [
+        "PyPI",
+        "credential stealer",
+        "backdoor",
+        "site-packages",
+        "daemon",
+        "CI/CD"
+      ],
+      "entities": [
+        "LiteLLM",
+        "BerriAI",
+        "SafeDep",
+        "Python",
+        "PyPI",
+        "GitHub"
+      ],
+      "comments": [
+        {
+          "by": "pkulak",
+          "text": "How could this happen to a project with 55k commits in three years?"
+        },
+        {
+          "by": "madamelic",
+          "text": "I am not following how someone snuck the files into the release. All I read was that it creates a directory from the build file but seemingly no description how new files or added dependencies slipped by. Was `cook.pth` a dependency that got automatically downloaded from PyPI on install and then the build system put it into dependencies? -- Leaving this for others: > BerriAI’s private release…"
+        },
+        {
+          "by": "saasisdead",
+          "text": "Last time they had this, I just vibe coded a version of lite llm and it actually works better"
+        },
+        {
+          "by": "stbenjam",
+          "text": "IMHO defaults for uv, npm, etc should all have a cooldown for 24 - 48 hours by default, you should have to go out of your way to install something newer."
+        },
+        {
+          "by": "baddash",
+          "text": "litellm in the news again"
+        }
+      ],
+      "image": "https://safedep.io/images/litellm-pypi-compromise-credential-stealer-backdoor-banner.jpg"
+    },
+    {
+      "id": 50178455,
+      "url": "https://practical.engineering/blog/2026/10/20/whatever-happened-to-fire-escapes",
+      "hn": "https://news.ycombinator.com/item?id=50178455",
+      "title": "Whatever Happened to Fire Escapes",
+      "time": 1792577683,
+      "points": 158,
+      "depth": [
+        {
+          "text": "fire escapes started disappearing as cities found **enclosed stairways** were a **safer** way out",
+          "tier": "simple"
+        },
+        {
+          "text": "New York's **1860 law** applied to existing tenements, so upgrades mostly meant **outside escapes** rather than rebuilding stairways. In 1968, the city banned exterior exits for new construction; the safer alternative was stairways occupants already **used daily**.",
+          "tier": "substance",
+          "data": [
+            [
+              "New York fire egress law",
+              "1860"
+            ],
+            [
+              "NFPA model code recommended prohibiting outside stairs as fire escapes",
+              "1923"
+            ],
+            [
+              "National Building Code allowed regulated exterior escapes",
+              "1949"
+            ],
+            [
+              "NYC banned exterior exits for new construction",
+              "1968"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say better alarms, sprinklers and fire awareness mean people get enough warning; others still want an outside escape as a backup if the main stairs fail.",
+      "comment_count": 121,
+      "terms": [
+        "egress",
+        "tenement",
+        "retroactive",
+        "building code"
+      ],
+      "entities": [
+        "Practical Engineering",
+        "Grady",
+        "Franklin Institute",
+        "Triangle Shirtwaist",
+        "Asch Building",
+        "National Fire Protection Association",
+        "National Building Code",
+        "International Code Council",
+        "Center on Building in North America"
+      ],
+      "comments": [
+        {
+          "by": "Ensorceled",
+          "text": "Everything related to fires got better: more and better smoke and CO detectors, interior sprinklers, regulations around flammable clothes, bedding and mattresses, reduced smoking rates, increased awareness, faster response times, closure of firetrap rooming houses (fwiw: closing rooming houses contributes to the homelessness problem), better apartment inspections ... We don't really need multiple…"
+        },
+        {
+          "by": "lbriner",
+          "text": "Interesting article. I went to a Victorian era school in London and it had one of those cast iron fire escapes going from the ground up to the 2nd floor (3rd floor to the Americans) and it was a good deal of fun to play on! In my last year of school, it was cut off completely and not replaced. Hmm, weird. Apparently it was unsafe and someone decided it wasn't needed because there were two other…"
+        },
+        {
+          "by": "sgarman",
+          "text": "I liked this HN post from 2018 https://news.ycombinator.com/item?id=35885982"
+        },
+        {
+          "by": "comrade1234",
+          "text": "What would burn in those manhattan buildings? Are the internal walls wood? I don't know what would burn in the building I live in now. It's all cement construction. The internal walls are brick with gypsum over. The window coverings and furniture is flame resistant. I suppose I'd be screwed if my downstairs neighbor had a bunch of flammable stuff though. Also we have an underground parking lot…"
+        },
+        {
+          "by": "pinum",
+          "text": "Making the main staircase more fire-resistant is great but I'm not fully convinced by the arguments for removing external ones instead of having both. If the main stairs do turn out to be impassable for some reason despite the new measures, I'd much rather have the option to risk taking an external fire escape even if it might be rusty or blocked by clutter."
+        }
+      ],
+      "image": "http://static1.squarespace.com/static/55ac34e4e4b0170ef54be632/55ac3907e4b03d1c8c9deff1/6ad79062c1822417fa50b3e6/1792512206454/PREN_E115_Fire-Escapes-B+%281%29.jpg?format=1500w"
+    },
+    {
+      "id": 50181175,
+      "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
+      "hn": "https://news.ycombinator.com/item?id=50181175",
+      "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
+      "time": 1792591423,
+      "points": 153,
+      "depth": [
+        {
+          "text": "a **global response effort** aims to coordinate as **agents uncover vulnerabilities**",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: supporters say access to AI models raises the floor for security; critics say the AI credit is overstated and the effort is marketing.",
+      "comment_count": 87,
+      "terms": [
+        "QA",
+        "ASAN",
+        "fuzzer",
+        "backport"
+      ],
+      "entities": [
+        "OpenAI",
+        "PHP",
+        "Calif",
+        "ASAN"
+      ],
+      "comments": [
+        {
+          "by": "nr378",
+          "text": "It seems like OpenAI are trying to frame this as if AI did all the work here, but it's not really true given what Calif say ( https://calif.io/php2shell/ ): > How did we find this? > No special harness, or access to models that weren't generally available to everyone were used in the initial bug discovery. I focused on something I had a background in, knew its vulnerability history well, and held…"
+        },
+        {
+          "by": "ptmkenny",
+          "text": "The first sentence of \"Coordinating a global response\" is \"Getting a fix into use can mean adapting it for older releases\"... but I guess they mean \"only supported releases\", as the fixes only go back as far as 8.2, which still has security support until the end of the year, but nothing for 8.1 or 8.0, and in the case of PHP there are still plenty of PHP sites on 7.x and even 5.6. I wouldn't…"
+        },
+        {
+          "by": "OlivOnTech",
+          "text": "I am shocked that they are releasing a skill to check the php version. Who cannot type \"php --version\" but can use skills?"
+        },
+        {
+          "by": "alper",
+          "text": "> How can we help identify and fix vulnerabilities in downstream packages while upstream fixes are pending, or backport fixes to older versions that no longer receive security updates? Is the company selling a magical code generation machine really asking how it can backport a fix to an older version of the same software? Is this for real?"
+        },
+        {
+          "by": "x187463",
+          "text": "This thread contains an enormous amount of negativity that just doesn't make sense here. OAI are giving developers and security researchers access to AI models so they can check their software for vulnerabilities. What's the problem? Sure, there's marketing around the success stories. Some people are acting like this is only a problem because labs are releasing models that can find and exploit…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50173716,
+      "url": "https://fulcrumsec.vg/pingcap/",
+      "hn": "https://news.ycombinator.com/item?id=50173716",
+      "title": "PingCap TiDB Leaks",
+      "time": 1792536339,
+      "points": 151,
+      "depth": [
+        {
+          "text": "FulcrumSec says it copied **TiDB Cloud's customer data**, source code, and years of **connection logs**",
+          "tier": "simple"
+        },
+        {
+          "text": "The post says **10.6 TB was exfiltrated**, including **115,308 plaintext customer API keys** (42,612 active). A control-plane feed re-exported every six hours for twenty-two days, with **no detection**.",
+          "tier": "substance",
+          "data": [
+            [
+              "claimed exfiltration",
+              "10.6 TB"
+            ],
+            [
+              "plaintext customer API keys",
+              "115,308"
+            ],
+            [
+              "active API keys",
+              "42,612"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 22,
+      "terms": [
+        "exfiltration",
+        "control plane",
+        "API key",
+        "plaintext"
+      ],
+      "entities": [
+        "FulcrumSec",
+        "PingCAP",
+        "TiDB Cloud"
+      ],
+      "comments": [
+        {
+          "by": "xKingfisher",
+          "text": "Coming this close on the heels of the security audit by NCC [1] is pretty embarassing for all parties. [1] https://www.pingcap.com/press-release/tidb-ncc-group-securit..."
+        },
+        {
+          "by": "wannabe44",
+          "text": "> Summary: \"The root password of the cluster can be reset unconditionally\" But what matters is that it was all memory safe and had no data races."
+        },
+        {
+          "by": "nemothekid",
+          "text": "Man I recently executed a migration from Aurora to Planetscale. I seriously considered PingCap but decided against it because I thought they cloud pricing was too complex. I wonder if my personal information is in the leak."
+        },
+        {
+          "by": "dherls",
+          "text": "If true, this is next level incompetence from PingCap. Apparently the attackers set up a replication pipeline for a month?! > We even stood up a replication feed of their own control-plane database using credentials committed in their own repositories — GCP service-account keys and an Azure service principal — and let their infrastructure deliver it to us. Every six hours, for the last twenty-two…"
+        },
+        {
+          "by": "arpinum",
+          "text": "AWS private rates gives PingCAP ~47% off list price. Wonder which services got the biggest discounts? Unsurprisingly for a db company the cross-az traffic is 15% of their bill."
+        }
+      ],
+      "image": null
+    },
+    {
       "id": 50175070,
       "url": "https://www.joshwcomeau.com/css/interop-2027/",
       "hn": "https://news.ycombinator.com/item?id=50175070",
@@ -1250,6 +2118,62 @@
     }
   ],
   "glossary": {
+    "unauthenticated remote code execution": "A flaw that lets someone run their own commands on a computer remotely without signing in.",
+    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
+    "PECL": "PHP Extension Community Library: a place developers get add-ons for PHP.",
+    "backport": "Putting a fix made for a newer version into an older one.",
+    "decentralized system": "A setup where no single company controls the whole service; different people or groups can run parts of it.",
+    "AT Protocol": "A set of shared rules that lets separate social services work with the same network.",
+    "ActivityPub": "Shared rules that let different social networks exchange posts and account activity.",
+    "rate limiter": "A safeguard that slows or blocks activity when something happens too quickly or too often.",
+    "instance": "One separately run copy of a service, with its own operator and users.",
+    "RCE": "Remote Code Execution: a flaw that lets an attacker make a computer run their commands from somewhere else.",
+    "UAF": "Use-after-free: a bug where a program uses a piece of memory after it has let that memory go.",
+    "OPcache": "PHP’s feature for keeping ready-to-use versions of code so a site can load them faster.",
+    "PHP-FPM": "PHP FastCGI Process Manager: a service that handles PHP requests for a web server.",
+    "mod_php": "A way for the Apache web server to run PHP directly.",
+    "POC": "Proof of Concept: a small test or demo that checks whether an idea can work.",
+    "responsible disclosure": "Privately reporting a security flaw so its maintainers have time to fix it before it is made public.",
+    "PHP": "PHP: Hypertext Preprocessor; a language people use to make websites work.",
+    "patch": "A software update that fixes a problem, often a security flaw.",
+    "exploit": "A method for using a software flaw to make a system do something it shouldn't.",
+    "static site": "A website made of ready-to-serve pages, rather than pages generated anew for each visit.",
+    "WAF": "Web Application Firewall: a website’s guard that checks incoming requests and can block suspicious ones.",
+    "weights": "Stored values a trained network uses when it works out what to produce.",
+    "CCP alignment": "CCP stands for Chinese Communist Party; here, it means the model tends to answer in ways that match the party’s political line.",
+    "BaxBench": "A test that asks AI to build apps and then tries attacks against them.",
+    "backdoor": "A way into a protected device or service that bypasses its normal security.",
+    "open-weight model": "A model whose trained settings are shared so other people can use them.",
+    "client-server": "A setup where one program offers a service and another program connects to use it.",
+    "asynchronous I/O": "Reading files in the background while other work continues, instead of waiting for each read to finish.",
+    "VARIANT type": "A way to keep data with different shapes in the same column without turning it into plain text.",
+    "agent mode": "A setting that changes how DuckDB's command-line tool behaves when an AI coding tool is using it.",
+    "Quack protocol": "A way for DuckDB programs to serve databases that other programs can connect to.",
+    "LTS": "Long-term support: a release its makers promise to support for an extended period.",
+    "OOM": "Out of memory: when a program runs out of the memory it has available.",
+    "use-after-free": "Trying to use data after it has been discarded.",
+    "embargo": "An agreement to keep information private until an agreed release time.",
+    "CVSS": "Common Vulnerability Scoring System: a scale people use to rate how serious a security flaw is.",
+    "oblique": "Letters slanted to one side instead of standing upright.",
+    "small caps": "Small letters shaped like capital letters.",
+    "ligature": "A special shape a font uses for a set of letters, sometimes replacing them with one different shape.",
+    "rolling shutter": "A camera effect where different parts of a picture are captured at different moments, making moving things look bent or slanted.",
+    "PyPI": "The Python Package Index: an online place where developers publish and download Python packages.",
+    "credential stealer": "Software that searches a computer for passwords and access keys, then sends them to someone else.",
+    "site-packages": "A folder where Python puts packages installed on a computer.",
+    "daemon": "A program that runs in the background and handles a task without being started each time.",
+    "CI/CD": "Continuous Integration and Continuous Delivery or Deployment: ways to automatically check code changes and get software ready to release.",
+    "egress": "A way for people to get out of a building.",
+    "tenement": "A multi-family apartment building, often built for poor immigrants and laborers in the period described.",
+    "retroactive": "Applied to buildings that already existed, not just ones built later.",
+    "building code": "A set of rules for how buildings must be built and kept safe.",
+    "QA": "Quality assurance: checking that software works as expected before people rely on it.",
+    "ASAN": "AddressSanitizer: a tool that checks programs for certain memory errors.",
+    "fuzzer": "A tool that tries lots of unusual inputs on a program to uncover bugs.",
+    "exfiltration": "Sending files or other data out of someone else’s computer without permission.",
+    "control plane": "Tailscale's service that gives a device its map of other devices it can reach.",
+    "API key": "A secret code that lets software use an online service as an approved user.",
+    "plaintext": "Information stored in a form people can read, rather than scrambled.",
     "Interop": "A project involving browser makers and others to get web features working across major browsers.",
     "progressive enhancement": "Building a website so its basic parts work first, then adding extras for browsers that can handle them.",
     "container query": "A CSS rule that can change an element’s style based on the size or state of its surrounding container.",
@@ -1268,9 +2192,6 @@
     "certificate revocation": "Canceling a certificate's trust before it expires.",
     "Certificate Transparency (CT)": "A public record of website certificates that browsers can check for suspicious ones.",
     "CA bundle": "A device's stored list of certificate authorities it trusts.",
-    "RCE": "Remote Code Execution: a flaw that lets an attacker make a computer run their commands from somewhere else.",
-    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
-    "CVSS": "Common Vulnerability Scoring System: a scale people use to rate how serious a security flaw is.",
     "proof of concept": "A small test or demo that shows whether an idea can work.",
     "session upload progress": "A PHP feature that tracks how much of a file upload has finished.",
     "multipart request": "A web request that can carry files and other form fields together.",
@@ -1295,7 +2216,6 @@
     "node": "A point in a graph that represents something connected to other points.",
     "use-after-free (UAF)": "A bug where a program keeps using a piece of memory after it has been freed.",
     "prefork": "A server setup that starts worker processes ahead of time and reuses them for requests.",
-    "ASAN": "AddressSanitizer: a tool that checks programs for certain memory errors.",
     "convertible notes": "Loans that can later turn into company shares.",
     "accounting charge": "An amount recorded as a loss in company accounts; it does not always mean cash was paid out.",
     "H1": "Short for the first half of a year.",
@@ -1317,12 +2237,10 @@
     "genetic diversity": "The range of inherited traits found among members of a group.",
     "parsimonious explanation": "An explanation that accounts for what happened with the fewest extra assumptions.",
     "dispersants": "Chemicals used to break up oil slicks.",
-    "daemon": "A program that runs in the background and handles a task without being started each time.",
     "PDF": "Portable Document Format: a file type that keeps a document’s pages laid out the same when opened or printed.",
     "JVM": "Java Virtual Machine: software that runs programs built for Java's runtime.",
     "product-market fit": "When enough customers want a product for it to work as a business.",
     "citogenesis": "A claim gets copied between sources until later writers treat those sources as proof.",
-    "WAF": "Web Application Firewall: a website’s guard that checks incoming requests and can block suspicious ones.",
     "trait solver": "The part of Rust that checks whether code has the behavior it needs available.",
     "Polonius": "A newer way for Rust to check whether code uses shared data safely.",
     "soundness bug": "A flaw that lets proof-checking software accept a false result.",
