@@ -577,9 +577,213 @@
         "사실이라면 PingCap의 무능력이 한 차원 높은 수준이네요. 공격자들이 한 달 동안 복제 pipeline을 구축했다고요?! > 자기들 repository에 올라간 credential, 즉 GCP service-account key와 Azure service principal을 써서 자기들 control-plane database의 replication feed까지 세팅하고, 인프라가 우리한테 데이터를 보내게 했습니다. 지난 22…",
         "AWS private rates면 PingCAP은 정가에서 ~47% 할인받네요. 어떤 서비스가 제일 크게 할인됐을지 궁금하네요. DB 회사답게 cross-AZ 트래픽이 청구액의 15%네요."
       ]
+    },
+    "50184586": {
+      "simple": "EA, BioWare **폐쇄**와 차기 Mass Effect 개발 **중단**",
+      "substance": "Bloomberg 보도에 따르면 EA에서 **약 400명 감원**, BioWare에서도 **약 50명 감원**. EA는 영향을 받은 직원들이 사내 다른 기회를 모색하는 동안 지원하겠다는 방침.",
+      "data": [],
+      "camps": "두 입장: EA 소유주·경영진 책임론, BioWare가 이미 쇠퇴했거나 원래 팀을 수년 전 잃었다는 주장.",
+      "comments": [
+        "역시 The Onion이 오래전에 정확히 찔렀지: https://theonion.com/anthem-developers-assure-players-whiteb... ‘“Anthem을 사전 주문한 수천 명의 고객이 걱정하는 건 알고 있지만, 회의실 칠판에 휘갈겨 쓴 이 문구들이 이번 주 말 출시될 때 혁신적인 3인칭 슈팅 게임이 될 거라고 확신합니다.”라고 Jonathan 디렉터가 말했다…",
+        "BioWare 폐쇄는 슬프지만, 전형적인 테세우스의 배 같은 상황이야. 아직 눈에 띄는 인물 몇 명은 남아 있지만, 고전 Baldur’s Gate, KOTOR, Mass Effect를 만들었던 팀 대부분은 자연스러운 인력 교체와 몇 차례의 잔인한 감원으로 오래전에 사라졌어. 그래도 다행인 건 그 인재들이 사라진 게 아니고 Archetype 같은 팀이 있다는 거야…",
+        "BioWare가 업계에 기여한 주목할 만한 사례 중 하나는 플레이어가 다양한 게임 속 인물과 연애 이야기를 시작할 수 있게 한 거야. 그중에는 동성 인물과 연애하는 선택지도 종종 있었어. 이 얘기를 꺼낸 건 Saudi Investment Fund가 두어 달 전에 EA를 인수했고, 그런 문제에 대해선 당연히 아주 강한 의견이 있을 테니까…",
+        "BioWare가 dragon age 프랜차이즈를 망쳤다고 생각해서 아직도 엄청 씁쓸해. ‘진짜’ 턴제는 아니었지만 dragon age origins와 dragon age 2에는 턴제의 느낌이 있었고, 파티 기반 전술 RPG 같았어. 그러다 갑자기 스튜디오가 그 방식을 버리고 inquisition을 액션/어드벤처 게임으로 만들었지. 그렇게까지 쓰라리게 실망한 적은 별로 없었어…",
+        "이런 일이 올 줄 아무도 몰랐던 것도 아니지. 9년 전 만화: https://www.reddit.com/r/gaming/comments/7cxz4a/eas_graveyar..."
+      ]
+    },
+    "50186129": {
+      "simple": "Mistral Large 4, **시각 능력**에 **훨씬 높은 비용**을 감수할 가치가 있는지 논쟁",
+      "substance": "한 댓글은 Deepseek 4.1 Flash보다 **멀티모달·시각 지능**이 뛰어나지만 코딩은 DS 4.1 1017과 동급이 아니라고 평가하며, OpenRouter에서 비용이 Deepseek의 **약 10x**라고 언급. 성능 평가는 적대적 프로그래밍 언어 benchmark에서 저조했다는 의견부터, 획기적이진 않지만 충분히 경쟁력 있다는 의견까지 분분.",
+      "data": [
+        [
+          "Deepseek 대비 비용",
+          "약 10x"
+        ]
+      ],
+      "camps": "한쪽은 적대적 프로그래밍 언어 benchmark에서 저조한 결과를 봤다고 하고, 다른 쪽은 획기적이진 않아도 충분히 경쟁력 있다고 평가.",
+      "comments": [
+        "이전 논의: https://news.ycombinator.com/item?id=49977979 (2044점, 15일 전, 댓글 1254개)",
+        "이 링크가 더 도움이 될 것 같아요: https://mistral.ai/news/mistral-large-4/ 멀티모달·시각 지능은 Deepseek 4.1 Flash보다 나은 것 같지만, 코딩은 DS 4.1 1017과 동급이 아니네요. OpenRouter에서 비교하면 비용은 Deepseek의 약 10x고요. Weights는 월말에 여기 올라올 예정이에요: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+        "뭐가 달라졌나요? 몇 주 전에 제 adversarial programming language benchmark[1]로 이미 돌려봤는데 성적이 꽤 별로였어요 (Kimi K3와 비슷). 1 - https://bench.killswitch-lang.org/",
+        "이 모델의 이상한 점은 독일어로 대화하면 중국어 모델들처럼 중국어 문자를 뱉는다는 거예요. 지난 며칠 동안 꽤 자주 그랬어요.",
+        "Le Chaton Fat 보고 업보트 누르는 건 알겠어요. 근데 왜죠? 2주 전에 이미 나온 거 아니었나요?"
+      ]
+    },
+    "50184820": {
+      "simple": "Meta, 뉴멕시코 Cambridge Analytica 사건서 **$25B 벌금** 지급 명령",
+      "substance": "제목상 벌금은 **$25B**. 댓글에는 이런 벌금이 Meta의 행태를 바꿀 수 있다는 의견과 **경영진 개인에게 책임을 물어야 한다**는 의견이 공존.",
+      "data": [
+        [
+          "벌금",
+          "$25B"
+        ]
+      ],
+      "camps": "두 입장: 벌금 규모가 Meta의 행태를 바꿀 만큼 크다는 의견과 경영진 개인에게 책임을 물어야 한다는 의견.",
+      "comments": [
+        "그렇다 쳐도, 경영진 감옥행은 어디 갔나. 평소 받는 손등 한 대보다는 좀 더 아플 수 있겠지만, Meta 같은 곳이 진짜 신경 쓸 만한 결과는 아니다. 윗선에서 승인한 범죄에 직접 책임을 지게 될 때까지 이런 일은 계속될 거다.",
+        "못 본 사람들을 위해 덧붙이면, 뉴멕시코주 법무장관이 Zuckerberg [1]와 Sandberg [2]의 증언 녹음 파일을 공개했다. 1. https://www.youtube.com/watch?v=C7UC2ie0XIE 2. https://www.youtube.com/watch?v=g1j4N-3ZkB4",
+        "Meta는 분명 항소할 테고, 벌금도 그중 10% 정도로 줄어들 가능성이 크다. 비교하자면, 최근 소셜 미디어 중독 문제로 47개 주가 17 billion 달러에 합의한 다주 합의에는 Meta가 Cambridge Analytica 관련 주 차원의 모든 청구에서 면책되는 대가로 459 million 달러를 받는 조항이 있었다 [1]. 그러니 그 47개 주는 뉴…",
+        "집단소송 합의에 참여한 주들은 모두 합쳐 725 million 달러를 받았다. 뉴멕시코는 혼자 가기로 했고 25 billion 달러를 받게 됐다. 11월 3일 재선에 나서는 법무장관에게는 절묘한 타이밍이다 (결정은 전임 법무장관이 내렸지만).",
+        "오래전엔 어떤 종류의 검색에서도 프로필을 완전히 숨길 수 있었던 걸로 기억한다. 이젠 안 된다. 얼굴 스캔을 시작하기 훨씬 전, 선택 해제 체크박스를 넣었던 것도 기억하는데, 꽤 오래전에 사라진 것 같다. 태그할 사람을 자동 추천하는 기능 알지? 그래, 그때 얼굴을 쓰지 못하게 막을 수 있었는데, 이제 Facebook은 아주 거대한 똥더미를…"
+      ]
+    },
+    "50186037": {
+      "simple": "Claude Duet, **부재중에도 작업을 이어가는 agent**",
+      "substance": "미국의 Claude Pro·Max 구독자 대상 **리서치 프리뷰**로, 대기자 명단에 등록해야 이용 가능. 메시지 전송이나 결제 같은 **민감한 작업** 전에는 확인을 요청하지만, 대화 내용을 잘못 읽거나 긴급도를 잘못 판단하고 확인 사이에 생긴 일을 놓칠 수 있음.",
+      "data": [
+        [
+          "connector와 plugin",
+          "6,000개 이상"
+        ]
+      ],
+      "camps": "통신을 모니터링하고 반복 업무를 덜어주는 agent를 반기는 쪽과, 비밀번호 접근을 맡기거나 agent의 행동 선택을 신뢰하기 어렵다는 쪽",
+      "comments": [
+        "Dots와 Duet은 AI 업체들에 높은 마진을 안겨주는 서비스일 것 같아요. 개인 비서와의 대화는 실시간일 필요가 없으니, 우선순위가 낮은 요청을 batch로 예약해 뒀다가 더 가치 높은 작업이 queue에 들어오면 기다리게 할 수 있죠. 추론 provider들은 늘 inference batches를 채우려고 하는데, 우선순위가 낮은 요청이 계속 들어오면 비어 버릴 뻔한 batch도 채우는 데 도움이 될 수 있어요…",
+        "Opus 5.5 기반은 정말 대단해요. ChatGPT Dot은 Astra 기반이라 Meta Muse/Instinct/Grok Bot보다 더 자주 쓰고 있어요. 진짜 최첨단 모델을 쓰는 개인 비서라면 결과를 다시 확인하느라 직접 일을 반복하지 않고도 출력을 훨씬 더 믿을 수 있거든요. Dot이 나온 지난 한 달 동안 저는 진짜로…",
+        "독립형 개인 datahub와 BrowserMCP가 나와서 비서가 내 입장에서 일을 처리하고, 내 데이터에 어떻게 접근하는지 또는 내 쿠키나 자격 증명을 언제 쓰는지 내가 전부 확인하고 제어할 수 있으면 좋겠어요. Dot/Muse 같은 브라우저는 전부 차단되는 것 같으니, 여러 곳에 분산하는 방식으로 그 문제도 해결할 수 있을 것 같고요.",
+        "AI가 미치는 영향과 우리가 아는 인류의 미래에 끼칠 장기적인 의미는 인정하지만, HN에서 AI 관련 헤드라인을 너무 많이 보는 데 슬슬 지치네요. 저만 그런 걸 수도 있지만, 매일 첫 페이지 대부분이 LLM 관련 발표로 채워지는 느낌이에요.",
+        "이런 것들이 브라우저에서 내가 할 수 있는 작업을, 아주 쉽게 차단당하지 않고도 할 수 있나요? 가족 4명용으로 집에서 구현하려고 128GB rtx spark를 방금 샀어요. “Dune 3 티켓을 4명분 예약해 줘. 자리는 붙어 있고, 세로와 가로 모두 중앙에 가까운 곳이 좋아” 같은 일을 하는 데 높은 tps는 사실 필요 없더라고요. rtx는 prefill 속도도 괜찮고…"
+      ]
+    },
+    "50186215": {
+      "simple": "뉴멕시코, Facebook의 주법 위반 약 44 million회에 **25 billion달러 벌금** 확보",
+      "substance": "사건은 **Cambridge Analytica 스캔들**에서 비롯됐지만, 뉴멕시코는 Facebook의 데이터 관행 관련 발언과 허위정보·혐오 표현 대응 노력에도 이의를 제기한 사안. 배심원단은 주 불공정 관행법 위반 **43,899,725건**을 인정.",
+      "data": [
+        [
+          "민사상 제재금",
+          "$25 billion"
+        ],
+        [
+          "위반 건수",
+          "43,899,725"
+        ]
+      ],
+      "camps": null,
+      "comments": [
+        "[중복] 토론: https://news.ycombinator.com/item?id=50184820"
+      ]
+    },
+    "50150214": {
+      "simple": "Super Mario 64, Apple Vision Pro에서 **걸어 둘러보는** diorama 구현",
+      "substance": "이 port는 **SM64 decompilation project**와 sm64coopdx를 기반으로 하며, HD textures와 교체 3D 모델을 적용한 구성. 기사에서는 Nintendo의 **DMCA 삭제 조치**(2020년 PC port 대상)와 2024년 Yuzu 상대 소송을 언급.",
+      "data": [],
+      "camps": null,
+      "comments": [
+        "사람들이 LEGO나 보드게임을 할 때: “말 모형들 시점에선 어떻게 보일까?” 게임 콘솔로 게임할 때: “멀리서 보면 어떨까?”",
+        "diorama 스타일 VR은 게임에서 kinetosis(멀미)를 줄이거나 아예 없애는 데 효과가 아주 좋음. Moss와 Moss 2에서 봤는데 정말 잘 통했음. 요즘 대작 게임 상당수는 고정 카메라 대신 어깨 너머 시점 카메라를 쓰고 뭔가 조준하는 데 집중하는 게 아쉬움(오픈 월드가 워낙 많으니 이해는 감). 이런 방식이었다면 접근성에 도움이 됐을 텐데…",
+        "정말 멋지네. Mario를 플레이하는 최고의 방법 같지는 않지만 Fire Emblem이나 Civilization 같은 게임에는 끝내줄 듯.",
+        "아, 그 음악이 추억을 불러오네. N64가 처음 나왔을 때는 정말 마법 같았지. 친구들이랑 파티할 때 Blockbuster Video에서 빌리곤 했어.",
+        "“Nintendo가 Microsoft처럼 더 개방적이면 좋지 않을까?” 그건… 완전히 정신 나간 소리네. 테크 업계 최대의 자릿세 장사꾼을 롤모델로 거론한 건 일단 제쳐두고. Nintendo에 반대하며 환호하는 게이머들, 다들 어떻게 생각해? Nintendo처럼 이 세대만의 프랜차이즈를 만들 사람은 누가 될까? 새로운 IP에 시간과 노력을 들일 동기는 대체 뭐가 있을까?"
+      ]
+    },
+    "50180079": {
+      "simple": "OpenAI 모델, **Google Cloud**에 제공 예정… Microsoft는 **주요 클라우드 파트너** 유지",
+      "substance": "한 댓글에 따르면 Google Cloud 지출 약정이 있는 기업은 이번 구매에 **GCP 약정액을 사용할 수 있음**. 다른 댓글은 OpenAI 모델이 곧 **Gemini Agent**에서 제공된다는 문구를 인용.",
+      "data": [],
+      "camps": null,
+      "comments": [
+        "하단 면책 문구 진짜 웃기네: Microsoft는 OpenAI의 주요 클라우드 파트너로 남는다고.",
+        " > Google Cloud 지출 약정이 있는 기업은 이번 구매에 GCP 약정액을 사용할 수 있습니다. Google의 꽤 큰 움직임입니다… 이미 매출로 잡아 주주들에게 보고한 돈을 이제 내줘야 할 수도 있다는 뜻입니다. 그것도 전부 다 그럴 수도 있고요. 숫자 따지는 사람들은 이런 거 싫어하죠!",
+        "Sergey는 진짜 “founder mode”에 들어가야 할 듯. 아니면 GCP 책임자인 Thomas Kurian이 계속 Deepmind 밥그릇을 뺏어 먹겠지. 외부 회사에 TPU를 팔고 이제 경쟁사 모델까지 호스팅하는 걸 보면, Gemini는 Alphabet의 자본 배분 담당자들에게 전폭적인 신뢰를 받지 못하는 모양이고, 그걸 탓하기도 어렵다. google 같은 성숙한 회사라면 수익성 높은 클라우드 사업을 더 키우는 쪽을 택하겠지…",
+        "여기서 나오는 온갖 과한 추측과 질문을 이해 못 하겠음. OpenAI는 제3자를 통해 inference를 존나 많이 팔고 있음. 이 제3자들은 GCP를 쓰는 고객에게 inference를 제공하고 싶어 함 (그리고 Bedrock이나 Azure AI Foundary를 통해서도 inference를 처리하고 싶진 않은 거고). 다들 zdr 계약이라 “enterprise” 계약임. 요약하면 - anthropic은 이미 제공하고…",
+        "Oracle 파산에 대비 중."
+      ]
+    },
+    "50149861": {
+      "simple": "AI 작성 코드, 서로 안 맞는 model 혼재로 **변경 난도 상승**",
+      "substance": "이 글은 **decoherence**를 국소적으로는 타당하지만 서로 충돌하거나 중복되는 model이 쌓여 이후 변경을 어렵게 만드는 현상으로 정의함. Harvard의 718개 기업 연구에서는 coding agent가 코드 작성량을 30% 늘렸지만 완성된 작업량은 측정 가능한 수준으로 늘지 않았고, pull request 검토 시간은 **49% 더 길어짐**.",
+      "data": [
+        [
+          "Harvard 연구 대상 기업",
+          "718"
+        ],
+        [
+          "코드 작성량 증가",
+          "30%"
+        ],
+        [
+          "Pull request 검토 시간",
+          "49% 더 길게"
+        ]
+      ],
+      "camps": "두 진영: coding agent가 복잡성을 키운다고 보는 쪽과, 인간의 한계에 막히지 않고 장기적 설계와 적응력 있는 코드를 최적화할 수 있다고 보는 쪽.",
+      "comments": [
+        "좋은 글이다. 내 생각엔 대부분의 사람은, 뛰어난 software engineer조차도, software를 만드는 일이 본질적으로 system을 모델링하는 일이고 모든 model이 같은 한계에 부딪힌다는 직관적 이해가 부족한 것 같다. system이 커질수록 구성 요소 사이의 상호작용 수는 조합적으로 늘어난다. 그 구성 요소나 상호작용 일부가 아무 가치도 내지 않는다면(군더더기라면), 복잡성만 늘고 얻는 건 없다…",
+        "이건 더 일반적인 문제로 돌아간다. 난 “모든 model은 틀렸지만, 일부 model은 쓸모 있다”라는 말을 꺼내는 걸 좋아하는데, 실제로는 통계 model을 말하던 통계학자의 말로 알려져 있다. 이 말은 AI보다 훨씬 전에 쓰였고, 컴퓨터 과학이 데이터 과학/엔지니어링을 파고들기 전 시대의 수학자가 한 말이다. 글은 Decoherence Trap을 AI 관련 문제로 제시하지만, …",
+        "“decoherence”는 coherence를 잃는 과정을 뜻하지 상태를 뜻하지 않는데, 글에서는 상태처럼 쓴다. “음, 우선 decoherence를 일으킨다” 같은 식으로. 상태라면 “ in coherence“(coherence가 없는 상태)여야 한다. > the more decoherent a system is, 여기서는 “incoherent”(coherence가 없는)이나 “decohered”(coherence를 잃은)라고 해야 한다. 그렇긴 해도, 시스템의 incoherence는 …의 한 형태다…",
+        "쓸 만한 용어/개념이 생겼네! 참고로, 지금 모델들이 128k - 1M context size 한계 때문에 결국 decoherent한 시스템을 만든다고 보는 이유가 이거다. 어느 정도 복잡해지면 큰 그림을 볼 능력이 없어서, 시스템의 coherence를 깨뜨리는 국소 최적화를 잔뜩 하게 된다.",
+        "내가 보기엔 지금 AI coding agent는 모든 걸 처음부터 다시 구현하는 쪽으로 기우는 것 같다. 물론 이 방식은 확장되지 않을 것이다. 인간이 코드를 쓰는 경우보다는 더 크게 확장되겠지만, 우리는 AI에 더 많은 걸 요구할 테니 결국 상쇄될 것이다. 1. AI 우선인 새 프로그래밍 언어를 개발하게 될 것이다. 즉 기계가 읽고 이해하기 쉽도록 설계된 언어…"
+      ]
+    },
+    "50175510": {
+      "simple": "42 출력용 C# tool, Rust보다 **작은 standalone 프로그램**",
+      "substance": "NetWasm의 standalone 결과는 47,895바이트로, 같은 42 출력 workload에서 Rust의 53,635바이트보다 작음; 이 수치에는 runtime과 precise garbage collector가 포함됨. 글에서 말하는 것은 언어 전체 순위가 아니라 **측정한 workload/profile**임.",
+      "data": [
+        [
+          "NetWasm 크기",
+          "47,895바이트"
+        ],
+        [
+          "Rust 크기",
+          "53,635바이트"
+        ],
+        [
+          "원본 기준 감소율",
+          "10.7%"
+        ],
+        [
+          "Brotli-11 적용 시 감소율",
+          "19.5%"
+        ]
+      ],
+      "camps": "두 진영: Rust Wasm 바이너리가 크다는 쪽과, 신경 쓰면 꽤 작게 만들 수 있다는 쪽",
+      "comments": [
+        "좀 불공정한 비교 같네요. 여기서 벤치마크한 C# 코드는 후처리까지 했는데 다른 target은 하나도 안 했잖아요. 저자가 /r/dotnet subreddit에 이걸 알렸을 때 reddit에 남긴 이 댓글[1] 보세요. Rust는 훨씬, 훨씬 더 작게 만들 수 있어요. 제목은 좋게 봐줘도 오해의 소지가 있고, 나쁘게 보면 거짓말이죠. 이건 훌륭하지만, Rust보다 낫다고 말하는 건 아주 제한적인…",
+        "Rust를 WASM으로 매끄럽게 컴파일할 수 있게 해주는 [wasm-bindgen]( https://github.com/wasm-bindgen/wasm-bindgen ) 관리팀에 감사 인사! 블로그의 인터랙티브 요소용으로 Rust로 [고유값 solver]( https://abstractnonsense.xyz/blog/2025-12-31-eigenvalue-solv... )를 만들었는데, 정말 순조로웠어요. 마법 같았죠! 바이너리 크기가…",
+        "현대적인 관례만 따르면 백엔드용 C#은 저한테 참 잘 맞는 느낌이에요. 좋은 tooling, 현대적인 언어 기능(C# 15에는 오래 기다린 unions, closed hierarchies가 있고), 훌륭한 debugging 경험 등등.",
+        "“46.7 KiB 프로그램이 기준선이지, 경계선이 아니다.” 이게 대체 무슨 말임?",
+        "비교할 때 중요한 고려 사항이라면 짚고 넘어갈 만하네요. 이건 오픈소스가 아니거든요. 적어도 저한테는 중요해요."
+      ]
     }
   },
   "glossary": {
+    "RPG": "Role-playing game: 플레이어가 인물 하나를 맡아 진행하며 선택을 내리는 게임.",
+    "live service": "업데이트를 계속 제공해 시간이 지나도 플레이어가 돌아오게 하려는 게임.",
+    "taken private": "회사를 인수해 주식이 더는 공개 시장에서 거래되지 않게 되는 일.",
+    "IP": "Intellectual property: 개인이나 회사가 법적 권리를 가질 수 있는 창작물·캐릭터·브랜드",
+    "multimodal": "텍스트와 이미지처럼 서로 다른 종류의 입력을 둘 이상 다룰 수 있는 상태.",
+    "benchmark": "여러 도구가 같은 일을 얼마나 잘하는지 비교하는 시험.",
+    "class action settlement": "여러 사람이나 주가 함께 제기한 소송을 합의로 끝내는 것.",
+    "aftermarket": "정규 장이 끝난 뒤 주식을 사고파는 시간.",
+    "agent": "질문에 답하는 데 그치지 않고, 작업을 끝내기 위해 여러 단계를 밟고 도구도 사용하는 AI 시스템",
+    "connector": "이미 쓰는 다른 서비스와 앱을 연결해 앱이 그 서비스를 이용하게 해주는 연결 수단.",
+    "inference batches": "AI 요청을 한데 묶어 처리하는 방식으로, 컴퓨터 처리 능력이 놀지 않게 하는 데 도움.",
+    "LLM": "Large Language Model: 많은 글을 학습해 글로 된 질문을 받고 글로 답하는 AI",
+    "MCP": "Model Context Protocol: AI 앱이 외부 tool에 연결될 때 따르는 공통 규칙.",
+    "churn": "고객이 서비스를 더는 쓰지 않거나 해지하는 비율",
+    "runway": "회사가 가진 돈으로 비용을 얼마나 오래 감당할 수 있는지를 뜻하는 기간.",
+    "civil penalty": "규칙을 어긴 사업자가 내야 할 수 있는 돈.",
+    "diorama": "작은 장면을 여러 각도에서 볼 수 있도록 꾸며 놓은 모형.",
+    "decompilation": "컴퓨터가 실행하는 프로그램을 사람이 들여다볼 수 있는 코드 형태로 바꾸는 일로, 원작자가 쓴 코드와 같지 않을 수도 있음",
+    "DMCA": "Digital Millennium Copyright Act는 이 경우 디스크의 디지털 잠금을 푸는 행위를 위반으로 규정하는 미국 법률.",
+    "HD textures": "게임 속 물체 표면을 더 선명하고 자세하게 보이게 하는 이미지.",
+    "VR": "Virtual reality: 주변의 실제 모습 대신 컴퓨터가 만든 화면을 보여주는 기술.",
+    "kinetosis": "눈으로 보는 움직임과 몸이 느끼는 움직임이 달라 생길 수 있는 멀미.",
+    "FOV": "Field of view: 안경을 통해 한 번에 볼 수 있는 범위의 너비.",
+    "GCP": "Google Cloud Platform: Google의 클라우드 서비스 모음.",
+    "draw down": "지출 약정에 따라 미리 배정해 둔 돈이나 크레딧을 사용하는 것.",
+    "inference": "AI가 훈련받는 대신 배운 내용을 활용해 답하거나 행동하는 과정.",
+    "TPU": "Thermoplastic polyurethane: 3D 출력 부품에 쓰이는, 잘 휘는 플라스틱의 한 종류.",
+    "decoherence": "시스템을 구성하는 서로 다르거나 충돌하는 방식이 쌓여 나중에 바꾸기 어려워지는 현상.",
+    "technical debt": "과거의 임시방편이나 낡은 선택 때문에 앞으로의 작업에 더 많은 수고가 드는 상태.",
+    "combinatorial": "새 요소가 더해질 때마다 다른 요소들과 맺을 수 있는 관계가 크게 늘어나는 방식.",
+    "recursive self-improvement": "AI가 자기 능력을 개선하고, 개선된 능력으로 다음 개선을 돕는 반복 과정.",
+    "pull request": "공유 프로젝트에 코드 변경을 반영해 달라고 제안하고, 보통 먼저 다른 사람에게 검토를 요청하는 것.",
+    "WebAssembly (Wasm)": "다른 언어로 작성한 프로그램도 브라우저 같은 곳에서 실행하게 해주는 방식.",
+    "WASI": "WebAssembly System Interface: 컴퓨터가 제공하는 기능을 WebAssembly 프로그램이 사용할 수 있게 하는 규칙.",
+    "garbage collector": "프로그램이 더는 쓰지 않는 메모리를 찾아 다시 쓸 수 있게 하는 부분.",
+    "Brotli": "파일 용량을 줄여 저장 공간을 덜 차지하게 하는 압축 방식.",
+    "AOT": "Ahead-of-time compilation: 프로그램을 실행하기 전에 실행 파일로 바꾸는 방식.",
     "unauthenticated remote code execution": "로그인하지 않은 사람이 원격으로 컴퓨터에 자기 명령을 실행할 수 있게 하는 결함.",
     "CVE": "Common Vulnerabilities and Exposures: 공개적으로 알려진 보안 결함을 모두가 같은 문제로 가리킬 수 있게 부여하는 표준 식별자.",
     "PECL": "PHP Extension Community Library: 개발자가 PHP용 추가 기능을 구하는 곳.",
@@ -641,7 +845,6 @@
     "container query": "주변 컨테이너의 크기나 상태에 따라 요소의 모양을 바꾸는 CSS 규칙.",
     "reading-flow": "페이지 코드에 적힌 순서가 아니라 화면에 보이는 순서대로 키보드 이동이 이뤄지게 하는 CSS 설정.",
     "CSS function": "값을 받아 스타일 결과를 내는, 여러 번 쓸 수 있는 CSS 명령으로 간단한 조리법 같은 것.",
-    "LLM": "Large Language Model: 많은 글을 학습해 글로 된 질문을 받고 글로 답하는 AI",
     "DOM": "Document Object Model: 브라우저가 웹페이지를 이루는 요소를 목록으로 나타낸 것.",
     "GHG": "Greenhouse gas: 대기 중에 열을 가둬 지구를 따뜻하게 만드는 기체.",
     "NDCs": "Nationally determined contributions: 각국 정부가 내놓는 자체 기후 공약으로, 배출량 감축 계획 등을 포함하는 내용.",
