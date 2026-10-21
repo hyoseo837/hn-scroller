@@ -1,0 +1,524 @@
+{
+  "date": "2026-10-21",
+  "cards": [
+    {
+      "id": 50172041,
+      "url": "https://news-web.php.net/php.announce/509",
+      "hn": "https://news.ycombinator.com/item?id=50172041",
+      "title": "Upcoming critical PHP security release",
+      "time": 1792527350,
+      "points": 332,
+      "depth": [
+        {
+          "text": "PHP is preparing a **security release** for **two critical vulnerabilities**, and users should update quickly",
+          "tier": "simple"
+        },
+        {
+          "text": "The release is scheduled for **Wednesday, 21 October 2026 at 14:00 UTC**; PHP says it may come earlier if either vulnerability’s details become public or there is evidence of active exploitation. Commenters say an **exploit is already out**.",
+          "tier": "substance",
+          "data": [
+            [
+              "CVSS v4.0 rating",
+              "9.2 (Critical)"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters recommend shutting sites or servers down until the patch; others suggest temporary mitigations, such as blocking requests or turning off session upload progress.",
+      "comment_count": 116,
+      "terms": [
+        "CVSS",
+        "proof of concept",
+        "multipart request",
+        "session upload progress",
+        "VPS",
+        "LAMP"
+      ],
+      "entities": [
+        "PHP",
+        "Jakub Zelenka",
+        "WordPress",
+        "MediaWiki",
+        "Cloudflare",
+        "Apache",
+        "X",
+        "Twitter",
+        "Log4Shell"
+      ],
+      "comments": [
+        {
+          "by": "bwoebi",
+          "text": "For everyone wondering why the patch is not out yet: There are a handful people responsible for doing a release. They are still asleep. To be honest, I am also shocked, that the exploit was published that quickly, after the leaked video (which was the reason, why the announcement happened in the first place, at that specific time). We expected a bit more time, even with LLMs..."
+        },
+        {
+          "by": "redox99",
+          "text": "The exploit is already out. Yeah this looks like it's going to go on history as the worst vulnerability ever. And now with LLMs you'll likely see tens of thousands of agents hacking any php website out there within hours."
+        },
+        {
+          "by": "dawnerd",
+          "text": "I tried it on a personal site, was able to dump the entire database. Immediately shut all my sites down. This is bad."
+        },
+        {
+          "by": "joshuat",
+          "text": "If the rumors for these exploits being shared on Twitter are correct this is going to be a nightmare. I wouldn't be surprised if VPS hosts step in to mitigate it somehow since so many cheap/unmaintained LAMP installs are running on those servers."
+        },
+        {
+          "by": "vincent_s",
+          "text": "Two things you can do now: 1. Turn off session upload progress 2. Block multipart requests at the web server More info:\nhttps://www.vincentschmalbach.com/cve-2026-109618-and-cve-20..."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50169707,
+      "url": "https://stevekrouse.com/ends",
+      "hn": "https://news.ycombinator.com/item?id=50169707",
+      "title": "What shall I teach my son?",
+      "time": 1792517107,
+      "points": 329,
+      "depth": [
+        {
+          "text": "a programmer expecting his first child wonders **what to teach** as **programming feels less valuable**",
+          "tier": "simple"
+        },
+        {
+          "text": "He points out that schools survived the radio, motion pictures, and the internet, then offers **new purposes** for education, including making tools and narratives that make us. He wants to **work out education’s purpose** with his son.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters emphasize values, curiosity, and adaptability; others say school is mainly childcare or doesn’t prepare students well for life and work.",
+      "comment_count": 397,
+      "terms": [
+        "AGI",
+        "MOOCs",
+        "Lindy Effect",
+        "endowments",
+        "AI agent",
+        "tool loop"
+      ],
+      "entities": [
+        "Steve Krouse",
+        "Neil Postman",
+        "Larry Cuban",
+        "Thomas Edison",
+        "Nassim Nicholas Taleb",
+        "Harvard",
+        "Yale",
+        "Princeton",
+        "Clara Collier",
+        "Steve Jobs",
+        "Bill Gates",
+        "Einstein",
+        "McLuhan",
+        "Alfie Kohn"
+      ],
+      "comments": [
+        {
+          "by": "dijit",
+          "text": "My mum was a mechanic, my dad was a mechanic/truck driver. My grandfather and uncle were mechanics... I am not, in fact my understanding of mechanics is extremely basic. If I go back into my family tree, I can find three generations of Sugar House Labourers in Scotland in the early 1800s.. a profession that no longer exists in the UK as far as I can tell, and I'm certain they had a…"
+        },
+        {
+          "by": "Aperocky",
+          "text": "> My wife and I are expecting our first child. > I once tried to come up with a single-word purpose for education, and I landed upon the word “resourceful” ... As someone who's a little further ahead in this process, I realized the true raison d'etre for education might actually not be any of the reason discussed.. It's so you, the children's parents, can go about your business for the day and…"
+        },
+        {
+          "by": "ThrowawayR2",
+          "text": "> \" ...Bill Gates were college dropouts, but the market deemed them good. \" Gates had excellent grades and was credited in an academic paper during his undergraduate years. Not exactly like the average dropout. > \" Now that I think of it, apparently Einstein was a mediocre student, but his contributions to science were his way out.\n\" That's a myth. Einstein got top grades in science and…"
+        },
+        {
+          "by": "PeterWhittaker",
+          "text": "If lifestyles support it, and parents are so inclined, I'd worry less about teaching the first few years and more about reading to them and with them, esp. with some silliness and improvisation, hiking, camping, and shopping as a family, especially at local markets. Spend meaningful, loving time together, and out in the world, as much of the small scale natural world as you can. Listen to their…"
+        },
+        {
+          "by": "ballmerpoint",
+          "text": "> My favorite suggestions of Postman’s are: > Spaceship Earth – we’re all in this together; let’s take care of each other and our planet > The American Experiment – let’s revive our sense of wonder, curiosity, and responsibility about what America is and can be > The World Makers – as a student of McLuhan, Postman would be remiss if he didn’t invite students to make the tools and narratives that…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50168357,
+      "url": "https://e360.yale.edu/digest/deepwater-horizon-deep-sea-recovery",
+      "hn": "https://news.ycombinator.com/item?id=50168357",
+      "title": "Sixteen years after Deepwater Horizon, deep sea life shows few signs of recovery",
+      "time": 1792511946,
+      "points": 233,
+      "depth": [
+        {
+          "text": "deep-sea life in the Gulf still shows **few signs of recovery** sixteen years after the **Deepwater Horizon** spill",
+          "tier": "simple"
+        },
+        {
+          "text": "A study found populations of octopus, squid, krill, shrimp, and lanternfish declined by **at least 60 percent** in the first few years after the 2010 disaster, with little evidence they had bounced back. Researchers called the spill “the most parsimonious explanation,” but **stopped short of concluding** it caused the declines.",
+          "tier": "substance",
+          "data": [
+            [
+              "Population decline",
+              "at least 60 percent"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 139,
+      "terms": [
+        "acoustic surveys",
+        "genetic diversity",
+        "parsimonious explanation",
+        "dispersants"
+      ],
+      "entities": [
+        "Deepwater Horizon",
+        "Proceedings of the National Academy of Sciences",
+        "Yale E360",
+        "Yale School of the Environment"
+      ],
+      "comments": [
+        {
+          "by": "WarOnPrivacy",
+          "text": "In 1979, Ixtoc I released 3.3M barrels into the Bay of Campeche (DwH released 4.9M). By the time DwH happened we had already learned that exposed, high-energy habitats bounce back;\nsheltered and deep-sea habitats do not.\nref: https://www.frontiersin.org/journals/marine-science/articles... ref: https://beneaththehorizon.org/ixtoc.html"
+        },
+        {
+          "by": "superxpro12",
+          "text": "The Deepwater disaster recovery very effectively demonstrated the phenomenon of \"out of sight out of mind\". they dumped almost 2 million gallons of \"dispersants\" on the oil spill... which was DESIGNED to make the oil heavier than water and sink to the sea bed. it never dissolved anything, it just hid the problem from the public. and all that oil is just sitting on the sea bed."
+        },
+        {
+          "by": "hisfraudulency",
+          "text": "Interesting that the spill hasn't dampened long term prospects for offshore drilling (besides the brief push against it around 2016) whereas Chernobyl basically nerfed American nuclear power gen."
+        },
+        {
+          "by": "darth_avocado",
+          "text": "> While researchers stopped short of concluding that the oil spill had caused the declines Why though? Why are we so afraid of accountability? Because this is what people point to when trying to deny things are true: ThErE iS NO EviDeNce, sHoW Me THe StUdY, etc. etc."
+        },
+        {
+          "by": "causesothere",
+          "text": "And the companies are also struggling to recover, right? Because the damage to the company is commensurate with the damage to the environment it works within? No? The companies are largely free from consequence? Maybe our system is a bit broken."
+        }
+      ],
+      "image": "https://yale-threesixty.transforms.svdcdn.com/production/Deepwater-Horizon-Spill_Wikipedia.jpg?w=1200&q=60&auto=format&fit=max&dm=1792489301&s=ff36b6fd91e134824960f411e3836588"
+    },
+    {
+      "id": 50166794,
+      "url": "https://tyma.com/my-cringe-story/",
+      "hn": "https://news.ycombinator.com/item?id=50166794",
+      "title": "My Friend Bob Cringely",
+      "time": 1792505629,
+      "points": 188,
+      "depth": [
+        {
+          "text": "someone remembers **Bob Cringely** as a charming friend who kept chasing **startup ideas**",
+          "tier": "simple"
+        },
+        {
+          "text": "Tyma and Cringely first worked together on **Pronto**, which downloaded magazine PDFs over idle internet connections and printed them at home overnight. Later, Cringely turned Tyma’s email about **C# and Java** into a lightly edited blog post; the two then went to Sun Microsystems, where executives defended Java and gave Tyma **nasty looks**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: most readers praise the warm tribute; one says it comes across as “damning with faint praise.”",
+      "comment_count": 51,
+      "terms": [
+        "daemon",
+        "PDF",
+        "JVM",
+        "product-market fit"
+      ],
+      "entities": [
+        "Bob Cringely",
+        "Paul Tyma",
+        "Pronto",
+        "C#",
+        "Java",
+        "Sun Microsystems"
+      ],
+      "comments": [
+        {
+          "by": "js2",
+          "text": "Mark Stephens (aka Robert X. Cringely) obituary: https://www.hillandwood.com/obituaries/Mark-Stephens?obId=49... Tell HN from two weeks ago about Bob's death: https://news.ycombinator.com/item?id=49949438 Plane Crazy documentary: https://www.youtube.com/watch?v=FSNzF-KSGiw (I watched it for the first time last week. Very entertaining.)"
+        },
+        {
+          "by": "phlipski",
+          "text": "Paul Tyma - 3 posts in 20 years. A prolific blogger! :)\nNice post. I read Cringely's blog for 20+ years. I think Paul hit the nail on the head. I think the problem with Cringely's ventures is he never seemed to have the discipline to hang on long enough to pivot and find product market fit."
+        },
+        {
+          "by": "thelastgallon",
+          "text": "Paul Tyma is the creator of Mailinator. I remember reading about how he made it scalable with Java."
+        },
+        {
+          "by": "Elsewhereindeed",
+          "text": "I wonder if his Doug Lea is THE Doug Lea of dlmalloc. I learned so much from his documentation about it."
+        },
+        {
+          "by": "kevinlanducci",
+          "text": "Amazing post; super cool guy I'd never heard of. Very inspirational for me in particular, he does similar work to what I do. Thanks for sharing"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50170917,
+      "url": "https://blogs.lse.ac.uk/impactofsocialsciences/2026/10/19/academics-have-a-duty-to-defend-open-knowledge-systems-like-wikipedia/",
+      "hn": "https://news.ycombinator.com/item?id=50170917",
+      "title": "Academics have a duty to defend open knowledge systems like Wikipedia",
+      "time": 1792522300,
+      "points": 181,
+      "depth": [
+        {
+          "text": "the post argues academics should help defend **open knowledge systems** like **Wikipedia**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says universities should recognize **Wikipedia contributions** as public service and provide support; critics warn that citations can be **gamed** or become useless if cited content disappears. Another commenter suggests AI companies send **5% of revenue** to support Wikipedia and researchers.",
+          "tier": "substance",
+          "data": [
+            [
+              "proposed AI-company contribution",
+              "5% of revenue"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters want universities to recognize Wikipedia contributions; critics say citations and open editing can spread unreliable or manipulated information.",
+      "comment_count": 112,
+      "terms": [
+        "citogenesis",
+        "WAF"
+      ],
+      "entities": [
+        "Wikipedia",
+        "answers.com",
+        "Elsevier",
+        "latentpedia.org",
+        "CloudFront",
+        "Google",
+        "Abraham Lincoln"
+      ],
+      "comments": [
+        {
+          "by": "10111001",
+          "text": "> Just as academics must cite any AI-generated machine outputs they rely upon in their research and writing, they can also cite Wikipedia if they use it in their work. Doing so can highlight Wikipedia’s value to other academics as a source of knowledge and provide greater transparency in one’s research processes. Despite longstanding skepticism of Wikipedia among some scholars, citations to…"
+        },
+        {
+          "by": "gcanyon",
+          "text": "I have direct experience to contradict this on several points. I was the lead product manager for answers.com for several years. The visitors to answers.com fell into two very distinct groups: consumers and contributors (we called them the community). It was difficult to convert consumers into contributors: most of the easy questions on answers were already answered, so one of my experiments was…"
+        },
+        {
+          "by": "Animats",
+          "text": "Such as Wikipedia. \"Like\" excludes the named item. When the named item is the only important one, this matters."
+        },
+        {
+          "by": "mentalgear",
+          "text": "Indeed, broadening what academic scores mean (past a citation number) and letting them be recongnized by contributing to open knowledge like wikipedia (vs closed private journals) is the counterbalance we need. > The fulfilment of ethical obligations to support knowledge communities, however, requires support from institutions of higher education. Currently, most academics are evaluated on their…"
+        },
+        {
+          "by": "AuthAuth",
+          "text": "Wikipedia is being lost to ideological bias."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50166502,
+      "url": "https://yoyo-code.com/2026-is-exciting-year-for-rust-compiler-and-me/",
+      "hn": "https://news.ycombinator.com/item?id=50166502",
+      "title": "2026 is an exciting year for the Rust compiler (and me)",
+      "time": 1792504428,
+      "points": 175,
+      "depth": [
+        {
+          "text": "someone says **years of Rust compiler work** are finally unlocking **faster builds** and **long-awaited features**",
+          "tier": "simple"
+        },
+        {
+          "text": "The **next-generation trait solver**, in the works for **almost 10 years** in various forms, fixes soundness bugs and unblocks features; Polonius enables more code to compile. The post also calls LLVM 23 an unexpectedly large performance win, while Cargo sharing artifacts between cargo check and cargo build could shrink the target directory by **5-30%**, depending on the workload.",
+          "tier": "substance",
+          "data": [
+            [
+              "target directory size reduction",
+              "5-30%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: one commenter says Rust's spread has hurt compile times and it isn't the future; others are excited about compiler progress and hope for improvements.",
+      "comment_count": 84,
+      "terms": [
+        "trait solver",
+        "Polonius",
+        "soundness bug",
+        "LLVM",
+        "artifacts"
+      ],
+      "entities": [
+        "Rust",
+        "Polonius",
+        "LLVM",
+        "Cargo"
+      ],
+      "comments": [
+        {
+          "by": "KolmogorovComp",
+          "text": "I don't think rust is the future anymore, despite having contributed to its compiler few times and been quite involved for years. It has spread too much and that impact compiles time too much. I think a newer language, having the boreness of go, the compile speed and maybe comp time of zig and safety of rust will emerge, maybe with lisp syntax."
+        },
+        {
+          "by": "throwup238",
+          "text": "> It's easy to understate how big of a deal this is for the compiler. This work resolves a major piece of technical debt that a lot of compiler developers dreamed about for years. No kidding. I’ve been waiting for the solver at least half that decade now. Hopefully it and Polonius unblock specialization which has been in purgatory for years."
+        },
+        {
+          "by": "yhjc2692",
+          "text": "Smaller target directory size would be such a lifesaver. Hoping the best for you, and Rust!"
+        },
+        {
+          "by": "infogulch",
+          "text": "I'm curious about polymorphism. Should it be default on for debug builds just to save storage and compile time? How will rust decide whether to enable polymorphism? Will it be possible to provide source-level polymorphism hints to the compiler?"
+        },
+        {
+          "by": "panstromek",
+          "text": "I don't understandy why, but all submissions of this post so far had incorrect title. When I posted the correct one, it still got reassigned the wrong title and I had to edit it (and it didn't allow me to do that yesterday, only today)."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50168096,
+      "url": "https://sael.net/flatpack/",
+      "hn": "https://news.ycombinator.com/item?id=50168096",
+      "title": "IKEA – 3D Guide",
+      "time": 1792510965,
+      "points": 170,
+      "depth": [
+        {
+          "text": "someone turned IKEA's **BILLY instructions** into a step-by-step **3D build** you can explore",
+          "tier": "simple"
+        },
+        {
+          "text": "It follows the manual’s **parts, hardware counts, and order**, with the original instructions beside the model. Panel thickness, hole positions, and shelf heights are **close estimates** read from drawings; commenters say the cam locks are on the wrong side of shelves.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some call it a fun idea; others say IKEA instructions are already easy to follow or that the build gets details wrong.",
+      "comment_count": 61,
+      "terms": [
+        "cam lock",
+        "cam screw",
+        "dowel",
+        "racking"
+      ],
+      "entities": [
+        "IKEA",
+        "BILLY",
+        "LACK",
+        "Inter IKEA Systems B.V."
+      ],
+      "comments": [
+        {
+          "by": "ulrikrasmussen",
+          "text": "This is a fun idea, although it doesn't really solve a problem for me since I find IKEA instructions to be extremely intuitive and easy to follow to begin with. Probably only LEGO does a better job at making clear, wordless instructions where e.g. ambiguity is resolved by cleverly using bright colored pieces in places where they are eventually obscured. What I really would like is a universal…"
+        },
+        {
+          "by": "dag11",
+          "text": "It's really interesting despite others pointing out that it's a little wrong, that can be fixed. But I also almost left immediately because this claudism at the top really hurt to read: > Every dowel, cam lock and nail where the page puts it. I always feel so manipulated when I read it regurgitating the prompt you gave it in such an advertisey way, like it's trying to assure you it met _every_…"
+        },
+        {
+          "by": "sigy",
+          "text": "It instructs you to build the shelf wrong. The camlocks go on the bottom of the shelf."
+        },
+        {
+          "by": "socalgal2",
+          "text": "I recently built a bunch of flatpack furniture by different companies. The last one, by Yamazen, was clearly the best IMO. 1. Every piece of wood had small round sticker on it with a number eg: ③ that could be reference in the manual. No having to try to figure out if the piece in the manual has the exact hole pattern or whatever 2. All of the screws, dowels, etc were in separate bags, each with…"
+        },
+        {
+          "by": "aqfamnzc",
+          "text": "What is the name of this website style that Claude et al loves to build so much? The light text on dark blue background, pill-shapes everywhere, pulsing indicators, etc.?"
+        }
+      ],
+      "image": "https://sael.net/flatpack/og.png"
+    },
+    {
+      "id": 50151376,
+      "url": "https://www.wsj.com/tech/ai/anthropic-ipo-private-trust-188f41f7?st=RtdGHg&reflink=desktopwebshare_permalink",
+      "hn": "https://news.ycombinator.com/item?id=50151376",
+      "title": "The obscure trust looming over Anthropic's IPO",
+      "time": 1792411563,
+      "points": 151,
+      "depth": [
+        {
+          "text": "an **obscure trust** can appoint **Anthropic’s board**, and commenters are asking what that means for an IPO",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says the trust can **appoint Anthropic’s board**, which can appoint the CEO; another says the post leaves **few details** about when it might act. A commenter also quotes the article saying, “They own **no Anthropic equity** and don’t share in its profits.”",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 142,
+      "terms": [
+        "IPO",
+        "equity",
+        "trust"
+      ],
+      "entities": [
+        "Anthropic"
+      ],
+      "comments": [
+        {
+          "by": "adeptima",
+          "text": "friend of mine told me Antropic turned off 200 usd a month subscription, refused to extend and switched to usage base for large cyberop vendor he works for when this happened PR rate dropped 95% in the first day, thousands devs, managers started to panic and downscaling all AI first intiatives\nand cap 500 usd a month token usage . most tokens were burned in the first day of the week. as…"
+        },
+        {
+          "by": "sevengraff",
+          "text": "The article is mostly about how this trust is powerful and there are very few details of how it operates or under what circumstances it would take an action. When Anthropic goes public, is that the kind of thing that would need to be disclosed? Would we expect to know all the details of the trust?"
+        },
+        {
+          "by": "6thbit",
+          "text": "> They own no Anthropic equity and don’t share in its profits Can they own other AI related equities? I guess there's a lack of details to go on at this point. Finding humans that you'd want as trustees and have also truly no conflicts of interest will be tricky."
+        },
+        {
+          "by": "mixdup",
+          "text": "Never once have heard about Warby Parker being a PBC"
+        },
+        {
+          "by": "slowin",
+          "text": "I feel like people forget that FTX was an early major investor in Anthropic. The origins of Anthropic are incredibly shady and tie into the Effective Altruism scene. They also have Epstein ties with Dario's wife pitching Epstein for funding on a porn site. I don't actually think Anthropic will achieve its goal of getting AGI before everyone else and creating an effective moat where it can deploy…"
+        }
+      ],
+      "image": null
+    }
+  ],
+  "glossary": {
+    "CVSS": "Common Vulnerability Scoring System: a scale people use to rate how serious a security flaw is.",
+    "proof of concept": "A small test or demo that shows whether an idea can work.",
+    "multipart request": "A web request that can carry files and other form fields together.",
+    "session upload progress": "A PHP feature that tracks how much of a file upload has finished.",
+    "VPS": "Virtual Private Server: a computer you rent and leave online to run your own software.",
+    "LAMP": "Linux, Apache, MySQL, PHP: a common set of tools used together to run a website.",
+    "AGI": "Artificial General Intelligence: a hypothetical AI that could handle many kinds of tasks, not just one narrow job.",
+    "MOOCs": "Massive Open Online Courses: online classes designed for lots of people to take.",
+    "Lindy Effect": "The idea that, for things that can keep going, having lasted a long time may be a sign they’ll last longer.",
+    "endowments": "Money or property given to an institution to help support its work over time.",
+    "AI agent": "An autonomous computer program that can carry out tasks.",
+    "tool loop": "A repeating process where an AI uses a tool, checks what happened, and decides what to do next.",
+    "acoustic surveys": "A way to estimate what lives underwater by using sound.",
+    "genetic diversity": "The range of inherited traits found among members of a group.",
+    "parsimonious explanation": "An explanation that accounts for what happened with the fewest extra assumptions.",
+    "dispersants": "Chemicals used to break up oil slicks.",
+    "daemon": "A program that runs in the background and handles a task without being started each time.",
+    "PDF": "Portable Document Format: a file type that keeps a document’s pages laid out the same when opened or printed.",
+    "JVM": "Java Virtual Machine: software that runs programs built for Java's runtime.",
+    "product-market fit": "When enough customers want a product for it to work as a business.",
+    "citogenesis": "A claim gets copied between sources until later writers treat those sources as proof.",
+    "WAF": "Web Application Firewall: a website’s guard that checks incoming requests and can block suspicious ones.",
+    "trait solver": "The part of Rust that checks whether code has the behavior it needs available.",
+    "Polonius": "A newer way for Rust to check whether code uses shared data safely.",
+    "soundness bug": "A flaw that lets proof-checking software accept a false result.",
+    "LLVM": "A set of tools that helps turn source code into instructions a computer can run.",
+    "artifacts": "Files a build creates and saves for later use.",
+    "cam lock": "A fitting you turn to pull two furniture panels tight together.",
+    "cam screw": "A screw whose head fits into a cam lock, so turning the lock pulls panels together.",
+    "dowel": "A small wooden peg used to line up furniture pieces.",
+    "racking": "When a bookcase shifts out of its square shape instead of staying straight.",
+    "IPO": "Initial Public Offering: when a company first offers its shares for the public to buy.",
+    "equity": "Ownership in a company, rather than lending it money.",
+    "trust": "A legal arrangement where people are put in charge of managing something under agreed rules."
+  }
+}
