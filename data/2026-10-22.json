@@ -2,6 +2,613 @@
   "date": "2026-10-22",
   "cards": [
     {
+      "id": 50196837,
+      "url": "https://www.techspot.com/news/114100-google-cleared-300-hectares-finnish-forest-data-center.html",
+      "hn": "https://news.ycombinator.com/item?id=50196837",
+      "title": "Google cleared 300 hectares of Finnish forest",
+      "time": 1792683166,
+      "points": 311,
+      "depth": [
+        {
+          "text": "Google **cleared Finnish forest** for a data center, and regulators say the **review came too late**",
+          "tier": "simple"
+        },
+        {
+          "text": "Public reports cited by Finland’s Permit and Supervision Agency say **around 300 hectares** had been cleared before the project’s environmental impact could be properly assessed. **Google says** the clearing followed Finnish law, while conservation group chair Hanna Halmeenpää says satellite imagery shows areas that should have been protected were leveled and wants the construction site halted.",
+          "tier": "substance",
+          "data": [
+            [
+              "Forest cleared",
+              "around 300 hectares"
+            ],
+            [
+              "Equivalent",
+              "roughly 420 football fields"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say the concern is clearing forest without the required permits or environmental study; others say Finnish forests are managed and the trees would have been harvested anyway, so the process matters more than the tree loss.",
+      "comment_count": 224,
+      "terms": [
+        "data center",
+        "hectare",
+        "environmental impact"
+      ],
+      "entities": [
+        "Google",
+        "Tuike Finland Oy",
+        "LVV",
+        "Finnish Association for Nature Conservation",
+        "Hanna Halmeenpää"
+      ],
+      "comments": [
+        {
+          "by": "dang",
+          "text": "Google told to halt work on datacentres in Finland over environmental concerns - https://news.ycombinator.com/item?id=50048638 - Oct 2026 (178 comments)"
+        },
+        {
+          "by": "semanticjudo",
+          "text": "If it was done illegally, it shouldn’t have been done. But I wanted some numbers to put this in perspective. Forest loss in Finland has averaged about 243,000 hectares per year in recent years through 2025 Finland has 20.3 million to 26.3 million hectares of forestry and forest land depending on the classification used. The United States has a gross forest loss of about 3 million acres per year…"
+        },
+        {
+          "by": "zamadatix",
+          "text": "For anyone else who can never remember how much a hectare is and think \"420 football fields\" sounds more like some weed joke than an area: 300 hectares = 3 sq km\n/ ~1.16 sq miles If it's found they really did skip the required steps then I hope there is actual action about it. It's also odd to me we seem to find the need to build AI DCs near population centers, in forests, and/or by/with new…"
+        },
+        {
+          "by": "dsign",
+          "text": "What a shameful lack of planning and foresight. One fourth in joke, three fourths seriously, I say that Google should have built their datacenter underground in this case. First, trees will appreciate if they can warm their roots during winter with data center heat. Second, Finland has a border with Russia, so it just makes sense to put vital infrastructure underground. Third, when people start…"
+        },
+        {
+          "by": "Jskewel",
+          "text": "Just a note that forestry in Finland is managed, this means it is planted and harvested on a rotating basis. There seems to have been a huge messup here without securing the proper permits first. But any reporting you read describing it as an environmental problem will be nonsense as the trees would have been harvested at some point anyway. However I understand that data-centres have become a…"
+        }
+      ],
+      "image": "https://www.techspot.com/images2/news/bigimage/2026/10/2026-10-05-image-22.jpg"
+    },
+    {
+      "id": 50196718,
+      "url": "https://github.com/oosexgang/hackios-xnu-kernel",
+      "hn": "https://news.ycombinator.com/item?id=50196718",
+      "title": "Show HN: Run full iOS 16.5 firmware on Android Devices",
+      "time": 1792682782,
+      "points": 266,
+      "depth": [
+        {
+          "text": "someone got **Apple's phone software** running on an **Android phone**, though plenty still doesn't work",
+          "tier": "simple"
+        },
+        {
+          "text": "**HackiOS** boots Apple's open-source XNU kernel and runs **unmodified iOS 16.5 user space** on a POCO X5 Pro 5G; it also runs in QEMU on Linux. On the phone, the whole system lives in RAM, and a reboot returns it to Android.",
+          "tier": "substance",
+          "data": [
+            [
+              "Wi-Fi speed",
+              "55–90 Mbit/s"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some call it impressive and fun; others ask what it's for or say the effort could be spent on something more useful.",
+      "comment_count": 90,
+      "terms": [
+        "XNU",
+        "user space",
+        "QEMU",
+        "UEFI",
+        "APFS",
+        "ROM"
+      ],
+      "entities": [
+        "HackiOS",
+        "Apple",
+        "XNU",
+        "iOS",
+        "Android",
+        "POCO X5 Pro 5G",
+        "QEMU",
+        "Linux",
+        "OOSEX GANG"
+      ],
+      "comments": [
+        {
+          "by": "SoKamil",
+          "text": "> It is a research bench, not a ROM: a session lasts a given number of seconds, then the kernel returns to the loader and hands over its log. I wonder if it is here because Claude would deploy safeguards and not proceed with the project otherwise."
+        },
+        {
+          "by": "aghuang",
+          "text": "I found the website to be quite nauseating to look at, so I decided to use the GitHub link instead. But it's quite impressive that it works on QEMU, POCO X5 Pro 5G and some Xiaomi devices too. Website is here: https://hackios-web.vercel.app/en Source Code: https://github.com/oosexgang/hackios-xnu-kernel"
+        },
+        {
+          "by": "drnick1",
+          "text": "It's interesting that this can be done, but why would anyone want to run iOS on Android devices? A more desirable outcome would be running a free Android distro like Graphene on Apple hardware. Or indeed just liberating phones controlled by Google by hacking the bootloader and replacing the OS."
+        },
+        {
+          "by": "dmcrespo",
+          "text": "It seems a bit crazy to me, plus now it opens the door to many iPhone copies... we'll have to be very careful"
+        },
+        {
+          "by": "zahirbmirza",
+          "text": "There was a time that I would have liked iOS to run on other hardware. These days, it is so clunkly, that the the desire is not there."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/d1ae38baaf67121ae90d9dc5d4d047fda908b6eed90e46dda4dbe0f14994e25d/oosexgang/hackios-xnu-kernel"
+    },
+    {
+      "id": 50193416,
+      "url": null,
+      "hn": "https://news.ycombinator.com/item?id=50193416",
+      "title": "Tell HN: I unknowingly broke the PHP RCE embargo. I am sorry.",
+      "time": 1792663904,
+      "points": 247,
+      "depth": [
+        {
+          "text": "someone apologized for **posting about upcoming PHP security flaws** without knowing they were **under embargo**",
+          "tier": "simple"
+        },
+        {
+          "text": "The poster says their contact told them there was **no embargo**, and they wanted to alert people who follow PHP's **4-weekly release cycle**. They say the post had knock-on effects on the **co-ordinated disclosure** schedule and created extra work.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say the poster couldn't break an embargo they weren't told about; others say the information had already leaked and was being exploited before the post.",
+      "comment_count": 91,
+      "terms": [
+        "PHP",
+        "RCE",
+        "CVE",
+        "embargo",
+        "co-ordinated disclosure",
+        "POC"
+      ],
+      "entities": [
+        "PHP",
+        "Pete",
+        "eMudra",
+        "Chrome",
+        "Firefox",
+        "Apple",
+        "Safari",
+        "Cloudflare",
+        "AWS"
+      ],
+      "comments": [
+        {
+          "by": "minraws",
+          "text": "This does feel like the fix took so long to bake and was so obvious way too many people who are into PHP knew about it, I knew about eMudra's cert issue as soon as Chrome and Firefox pushed updates to disallow them for instance because of reasons, and it wasn't even fixed after it was all made public on several platforms, I think Apple still hasn't fixed it properly, the trust Store is still…"
+        },
+        {
+          "by": "john_strinlai",
+          "text": "if you received the information about the RCEs without the information about the embargo, then you did not break the embargo . someone else up the chain did. this whole saga will be analyzed and we'll all come out better for it at the end."
+        },
+        {
+          "by": "rancar2",
+          "text": "That’s kind of you, Pete, but it was leaked and being exploited well prior to your previous posting here: https://aws.amazon.com/blogs/security/amazon-threat-intellig..."
+        },
+        {
+          "by": "cwillu",
+          "text": "Don't be silly, you can't possibly be responsible for breaking an embargo you weren't subject to or informed about."
+        },
+        {
+          "by": "siva7",
+          "text": "I also got that information before your post. I believe an embargo is impossible to keep up when it takes way too long to get a fix out."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50195873,
+      "url": "https://www.cbc.ca/news/investigates/gambling-ads-restrictions-canada-9.7388888",
+      "hn": "https://news.ycombinator.com/item?id=50195873",
+      "title": "MPs moving to restrict gambling ads in Canada",
+      "time": 1792679200,
+      "points": 217,
+      "depth": [
+        {
+          "text": "Canada's MPs are moving to restrict **sports betting ads** after broadcasts showed **thousands of gambling messages**",
+          "tier": "simple"
+        },
+        {
+          "text": "A CBC analysis counted **3,000 gambling messages** across seven televised games featuring Canadian teams; **95 per cent** had no harm-reduction or age-restriction information. **Bill S-211** asks the federal government to acknowledge online gambling's harms and consult on stricter rules, but Ontario and Alberta oppose it.",
+          "tier": "substance",
+          "data": [
+            [
+              "gambling messages across games",
+              "3,000"
+            ],
+            [
+              "games counted",
+              "seven"
+            ],
+            [
+              "instances without harm-reduction or age-restriction information",
+              "95 per cent"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 109,
+      "terms": [
+        "prediction markets",
+        "jurisdiction",
+        "harm reduction"
+      ],
+      "entities": [
+        "CBC",
+        "CBC Marketplace",
+        "Bill S-211",
+        "University of Bristol",
+        "NHL",
+        "NHLPA",
+        "Dave Seglins",
+        "Andreas Wesley",
+        "Saloni Bhugra",
+        "T.S.",
+        "Raffaello Rossi",
+        "Bardish Chagger",
+        "Marty Deacon",
+        "Dale Nally",
+        "Doug Downey",
+        "Matthew Young",
+        "Greo Evidence Insights",
+        "Canadian Gaming Association",
+        "Canadian Mental Health Association",
+        "Public Health Physicians of Canada",
+        "ConnexOntario",
+        "Gamblers Anonymous",
+        "Jackpot City",
+        "The Dose",
+        "Blue Jays"
+      ],
+      "comments": [
+        {
+          "by": "geooff_",
+          "text": "Good riddance. Why did we ever allow this to happen? It's an entirely self-inflicted public health crisis."
+        },
+        {
+          "by": "fudged71",
+          "text": "Its pretty remarkable what happened as soon as the regulation was loosened. In Alberta it feels as though these companies bought every single ad spot available. I can’t walk, drive, browse in any direction without seeing a gambling ad somewhere. Its not uncommon for me to see them in two or three places simultaneously. A real boring dystopia."
+        },
+        {
+          "by": "chollida1",
+          "text": "The big loser in this might be the NHL and the NHLPA(Players association). The NHL salary cap has gone up alot in the past few years and TV is a big driver of that. It seems like 50% of commercials are for gambling. If this goes away then the networks TV revenue will almost certainly go down and that has the potential to make the NHL TV rights less valuable to the networks. The NHL wouldn't be…"
+        },
+        {
+          "by": "neom",
+          "text": "The fact that I can get stuck behind someone at the pharmacy checkout who is buying lotto tickets boggles my mind every time. Personally I think we need to go way further than this, but it's a start."
+        },
+        {
+          "by": "bawolff",
+          "text": "About time. I'm fine with gambling existing, but we dont need to manipulate people into doing addictive self-destructive vices they wouldn't already do. Also the ads are super annoying."
+        }
+      ],
+      "image": "https://i.cbc.ca/ais/60c958e0-3fe5-46fe-b973-5fb4be226721,1792621456038/full/max/0/default.jpg?im=Crop%2Crect%3D%281354%2C437%2C4261%2C2396%29%3BResize%3D620"
+    },
+    {
+      "id": 50198675,
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "hn": "https://news.ycombinator.com/item?id=50198675",
+      "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+      "time": 1792691046,
+      "points": 218,
+      "depth": [
+        {
+          "text": "someone built a **sandbox** to limit what **AI agents** can access",
+          "tier": "simple"
+        },
+        {
+          "text": "Each agent runs in an **isolated sandbox**: kernel controls restrict files and system calls, while network connections get a policy check. Real credentials are added only to requests for **approved endpoints**, and formal verification flags risky new access for **human review**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: supporters like the controls and easier sandbox management; skeptics say permissions can’t guarantee safety and worry agents could still leak data through allowed services.",
+      "comment_count": 115,
+      "terms": [
+        "sandbox",
+        "kernel",
+        "formal verification",
+        "credentials",
+        "exfiltration",
+        "telemetry",
+        "API"
+      ],
+      "entities": [
+        "NVIDIA",
+        "OpenShell",
+        "GitHub",
+        "Docker",
+        "Podman",
+        "Kubernetes",
+        "Helm",
+        "OpenCode",
+        "OpenRouter",
+        "Anthropic",
+        "Claude",
+        "iron proxy"
+      ],
+      "comments": [
+        {
+          "by": "fennecbutt",
+          "text": "I've been using iron proxy recently for a project I just started, it does network restrictions by domain etc with plenty of options, credential swapping and more. I have no affiliation with it, but it solved most of what I need in one go when I was stressing out about it. Only real problem remaining if you truly want to be able to trust agents is how to prevent data (in my case codebases the…"
+        },
+        {
+          "by": "razuba",
+          "text": "We've been using OpenShell for a while - now enabling ourselves and other teams do this in a batteries-included kinda way. I've been working on a layer above it that also manages team policies, safe git usage (in case you don't want your agent to always have the same access as your user account), and SCA/SAST built in.\nCurious to see how others are dealing with these issues. The agent traces I've…"
+        },
+        {
+          "by": "smallnix",
+          "text": "> Agents are most useful when they can read files, install packages, call APIs, and use credentials. OpenShell gives them that capability without giving them unrestricted access to your data, secrets, or network. To me this obfuscates an oxymoron: the more access you give the agent the more capable it becomes. You can't have you cake and eat it, this tool allows to strike a balance I guess. But…"
+        },
+        {
+          "by": "mfro",
+          "text": "If you haven’t already been running your agents in containers, you’re crazy. That said, this looks like a great way to manage those containers."
+        },
+        {
+          "by": "crypt1d",
+          "text": "I tried to vibecode something similar last weekend. Got tripped up by Claude's safety classifier. It wouldn't let me build any features that track/audit process executions , not through custom kernel hooks nor even using off the shelf software for it."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/06a78bb60dd7fda81ba47d1715941b14da0e19b1c7769d3bc6e4f44eec612537/NVIDIA/OpenShell"
+    },
+    {
+      "id": 50197601,
+      "url": "https://arc.net/",
+      "hn": "https://news.ycombinator.com/item?id=50197601",
+      "title": "A farewell to Arc browser",
+      "time": 1792686467,
+      "points": 195,
+      "depth": [
+        {
+          "text": "Arc is **ending**, and its makers want users to **switch to Dia**",
+          "tier": "simple"
+        },
+        {
+          "text": "Arc for macOS and Windows will keep working until **December 22, 2026**, then stop; Arc accounts are deactivated that day, and personal data is deleted within **30 days**. **Dia** imports passwords, history, tabs, Profiles, Folders, bookmarks, and extensions.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say Dia is a thoughtful, good replacement with optional AI; others say it feels incomplete or serves a different user, and recommend alternatives like Zen.",
+      "comment_count": 171,
+      "terms": [
+        "sunset",
+        "Spaces",
+        "sync"
+      ],
+      "entities": [
+        "Arc",
+        "Dia",
+        "Zen"
+      ],
+      "comments": [
+        {
+          "by": "jamie_ca",
+          "text": "Writing was on the wall once they pivoted to Dia, I'm pretty happy having switched to Zen (though for a few things that matter, it's Firefox-based not Chrome). https://zen-browser.app/ They picked up a lot of cues from Arc - sidebar tabs, pinned vs generic tabs, global bookmarks, spaces..."
+        },
+        {
+          "by": "Aurornis",
+          "text": "I had to look Arc up because I forgot what it was. For others confused like me: Arc was an alternative web browser with novel UX and AI features built-in. The company was acquired for $610 million by Atlassian and development was halted in favorite of Dia, another browser with AI features and novel UX (which I also had to look up)"
+        },
+        {
+          "by": "constantlm",
+          "text": "I've been expecting this news for a while, and I moved to Zen when they changed direction originally. Can highly recommend it as a near drop-in replacement for Arc, albeit built on Firefox. https://zen-browser.app/"
+        },
+        {
+          "by": "Zambyte",
+          "text": "I was expecting this to be about http://arclanguage.org/"
+        },
+        {
+          "by": "throwaway13337",
+          "text": "Arc had a lot right. The closest thing right now is Orion. It does the vertical tabs and the page modification in the same way. Webkit based. It's made by the Kagi guys who I really agree with - bootstrapped and not VC backed. A sustainable business. And charging for a service instead of making your customers the product. That's real ethics to me. Their browser is not open source, though, which…"
+        }
+      ],
+      "image": "https://arc.net/farewell/og.png"
+    },
+    {
+      "id": 50197404,
+      "url": "https://www.taler.net/en/news/2026-13.html",
+      "hn": "https://news.ycombinator.com/item?id=50197404",
+      "title": "Getting ready to operate GNU Taler in Germany",
+      "time": 1792685671,
+      "points": 174,
+      "depth": [
+        {
+          "text": "someone is setting up a **new company** to run a **payment system** in Germany, pending approval",
+          "tier": "simple"
+        },
+        {
+          "text": "**GLS Bank** stepped back from its e-money-issuer role, and the post says its reasons were unrelated to Taler. Taler Operations AG will apply to BaFin for an **e-money licence** and is seeking investors able to put in at least **€50,000**.",
+          "tier": "substance",
+          "data": [
+            [
+              "minimum investment",
+              "€50,000"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters hope Taler gives Europe an alternative to US companies; skeptics doubt its privacy or its chances against Wero and stablecoins.",
+      "comment_count": 61,
+      "terms": [
+        "BaFin",
+        "electronic money institution (EMI)",
+        "bearer tokens",
+        "KYC",
+        "stablecoins"
+      ],
+      "entities": [
+        "GNU Taler",
+        "Taler Operations AG",
+        "NGI TALER",
+        "GLS Bank",
+        "BaFin",
+        "Taler Systems SA",
+        "Wero"
+      ],
+      "comments": [
+        {
+          "by": "Eueudhsbsj32",
+          "text": "I don't see how EU regulators would allow payment privacy in any meaningful way. It will be choked out at key junctions with KYC in the same way crypto has."
+        },
+        {
+          "by": "jttnr",
+          "text": "I'm a happy GLS Bank customer, and I've just learned about its involvement in Taler. Pretty awesome. Europe desperately needs its own digital payment solutions to reduce its dependence on US companies and its exposure to sanctions that could target EU citizens if the president has a bad day. GLS is also on board with Wero, which, unfortunately, hasn't seen big adoption yet. I really hope Taler…"
+        },
+        {
+          "by": "Deukhoofd",
+          "text": "So this is trying to compete against Wero, which is being backed by most major western European banks? I wish them luck, but I somewhat doubt they can compete against that."
+        },
+        {
+          "by": "hangrybear666",
+          "text": "Never having heard of it before, the moment I read \"cash like tokens in your account\" I was immediately out. Also claiming buyer privacy when the money ultimately has to come from a bank transaction or another digital transaction leaving some sort of trail is a false illusion."
+        },
+        {
+          "by": "anonymous908213",
+          "text": "tldr of my understanding (do correct me if I'm wrong): Neither buyer nor seller are anonymous. Your bank knows your ID-verified identity and that you have deposited X talers. However, nobody knows when, where, or even if you spend those talers. You are free to spend talers on eg. a e-book about Tiananmen Square and the bank/state will never know that you did. The seller, on the other hand, has no…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50194938,
+      "url": "https://crystal-lang.org/2026/10/12/1.22.0-released/",
+      "hn": "https://news.ycombinator.com/item?id=50194938",
+      "title": "Crystal 1.22",
+      "time": 1792675213,
+      "points": 166,
+      "depth": [
+        {
+          "text": "Crystal's **new release** brings a **native event loop** to every target and a stack of fixes",
+          "tier": "simple"
+        },
+        {
+          "text": "Crystal 1.22.0 adds support for **LLVM 23.1 and 24.0**; every target uses the **native event loop** by default, while libevent is now an opt-in fallback. The aarch64-linux-gnu and aarch64-linux-musl targets moved to Tier 1, and this is the first release with **builds for aarch64-windows-msvc**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: users praise Crystal's convenience and progress; skeptics question its relevance and what it excels at.",
+      "comment_count": 83,
+      "terms": [
+        "native event loop",
+        "LLVM",
+        "libevent",
+        "Tier 1",
+        "aarch64"
+      ],
+      "entities": [
+        "Crystal",
+        "LLVM",
+        "libevent"
+      ],
+      "comments": [
+        {
+          "by": "giancarlostoro",
+          "text": "Crystal might not be the most popular, but it is very interesting to me, I'm not a Ruby guy, but I was looking into other languages other than Go, Rust, etc that are natively compiled, I've dabbled with Nim, but I really wanted to try something slightly different, and I'm honestly impressed, it needs some slight polish still, maybe better funding might help, but in a different timeline under the…"
+        },
+        {
+          "by": "burlesona",
+          "text": "It’s sad that we don’t write code anymore, it takes a lot of the joy of stuff like this away."
+        },
+        {
+          "by": "rubiquity",
+          "text": "I may be one of the few to use Crystal in anger for long running programs but unfortunately we had to do away with it because of longstanding issues in the runtime where exceptions at the wrong time during I/O bring the runtime to a halt. It's been a few years so I don't have the github issue off the top of my head anymore. I'd like to think that if they could redesign the language again they…"
+        },
+        {
+          "by": "sumnole",
+          "text": "For those that don't know: Crystal is like a typed Ruby with the performance and concurrency flow of Go."
+        },
+        {
+          "by": "viraptor",
+          "text": "I've been happy using Crystal for many things. It's very convenient for small server deploys. When processing a lot of execution traces I ported previous Ruby code to get 40x support boost and 3x memory reduction, while keeping the code virtually the same. And it's nice to see each version is getting better. The reference could get some love, but it's still ok."
+        }
+      ],
+      "image": "https://crystal-lang.org/assets/banner.webp"
+    },
+    {
+      "id": 50186318,
+      "url": "https://forums.plex.tv/t/2026-20-0-beta-ios-and-tvos-4k-dovi-hdr10-won-t-play-infinite-spinning-circle/943966?page=5",
+      "hn": "https://news.ycombinator.com/item?id=50186318",
+      "title": "Plex laid off the whole player team",
+      "time": 1792611130,
+      "points": 158,
+      "depth": [
+        {
+          "text": "Plex laid off its **whole player team** as users report new app **playback problems**",
+          "tier": "simple"
+        },
+        {
+          "text": "The thread centers on a beta bug: **Dolby Vision 4K files** keep **buffering indefinitely** on Apple TV, while HDR10 4K videos work. Users say the “**New Experience**” clients have made things worse and ask Plex for fixes and an explanation.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say people deserved to lose their jobs over the app’s problems; others blame Plex leadership and worry about the service’s future.",
+      "comment_count": 112,
+      "terms": [
+        "beta",
+        "4K",
+        "Dolby Vision",
+        "HDR10",
+        "HEVC",
+        "MKV",
+        "client",
+        "codebase",
+        "direct play",
+        "transcoding",
+        "FLOSS",
+        "PR",
+        "fork",
+        "UI/UX",
+        "vibe coding"
+      ],
+      "entities": [
+        "Plex",
+        "Apple",
+        "Apple TV",
+        "TCL",
+        "Rivulet",
+        "Jellyfin",
+        "Kodi",
+        "XBMC",
+        "Emby",
+        "Plexamp",
+        "Infuse",
+        "Wholphin",
+        "Nautilus",
+        "Plezy",
+        "VLC",
+        "iOS",
+        "tvOS",
+        "Android",
+        "Nvidia Shield Pro",
+        "Fire TV Stick 4K",
+        "Reddit",
+        "Craig"
+      ],
+      "comments": [
+        {
+          "by": "zzyzxd",
+          "text": "A better link to point to the comment from the former employee: https://forums.plex.tv/t/2026-20-0-beta-ios-and-tvos-4k-dovi... Plex stopped working on any DoVi/HDR10 videos I have, and today I found this thread."
+        },
+        {
+          "by": "joshstrange",
+          "text": "I don't want to be a jerk and I know engineers writing the code don't always make the decisions but the new Apple TV Player was dog shit. Just horrible. 10 steps back in UI/UX and frustrating to use. I've been using Plex for well over a decade and to throw that all away on that new player... Just damn. Not sure why Plex laid off the team, was it the response to the new updates (doubt it), was it…"
+        },
+        {
+          "by": "AdmiralAsshat",
+          "text": "Once upon a time, Plex started as a fork of XBMC/Kodi. I'm still using Kodi. It still does everything I need it to do, user complaints about \"dated UI\" be damned. About the only thing I wish it shipped was a built-in renamer utility to help organize the media to the naming scheme that Kodi expects in order to scrape metadata properly. Most of the leading third-party utilities for this are…"
+        },
+        {
+          "by": "cdrnsf",
+          "text": "I've got nothing but good things to say about Jellyfin, Infuse in Apple's ecosystem and Wholphin in Android's."
+        },
+        {
+          "by": "kraquepype",
+          "text": "I switched over to Emby a while back for video, but kept plex in a limited capacity for music since I really like Plexamp. The thing I really like about plex was that 99% of the time, it would scan and match up my media, even if file formats were inconsistent. That was a growing pain for Emby, so it was another reason I kept plex for music. Is there a good alternative to plex for music?"
+        }
+      ],
+      "image": "https://global.discourse-cdn.com/plex/original/3X/b/f/bf4da7e4a0c1ed2fd6faf0decc0f3846e352c6fa.png"
+    },
+    {
       "id": 50195110,
       "url": "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business",
       "hn": "https://news.ycombinator.com/item?id=50195110",
@@ -1777,6 +2384,59 @@
     }
   ],
   "glossary": {
+    "data center": "A building full of computers that store information and run online services.",
+    "hectare": "A unit for measuring land; one hectare is about the size of a large sports field.",
+    "environmental impact": "The ways a project could affect nature, wildlife, or people nearby.",
+    "XNU": "The core software that helps an operating system run the device's hardware and programs.",
+    "user space": "The part of an operating system where apps and built-in programs run, separate from its central core.",
+    "QEMU": "A program that imitates a computer so you can run another system without that device.",
+    "UEFI": "Unified Extensible Firmware Interface: the built-in startup software that checks a computer and starts its main software.",
+    "APFS": "Apple's system for organizing files on storage.",
+    "ROM": "Read-Only Memory: information a computer can read but is not normally meant to change.",
+    "PHP": "PHP: Hypertext Preprocessor; a language people use to make websites work.",
+    "RCE": "Remote Code Execution: a flaw that lets an attacker make a computer run their commands from somewhere else.",
+    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
+    "embargo": "An agreement to keep information private until an agreed release time.",
+    "co-ordinated disclosure": "A way to tell the people who can fix a security flaw before sharing its details publicly.",
+    "POC": "Proof of Concept: a small test or demo that checks whether an idea can work.",
+    "prediction markets": "Places where people bet on the outcome of future events.",
+    "jurisdiction": "A court's legal authority to hear a case or make a decision about it.",
+    "harm reduction": "Steps meant to lower the damage caused by a risky activity, even if the activity continues.",
+    "sandbox": "A separate, contained space where software can be tested without affecting the rest of a computer or system.",
+    "kernel": "A small program that carries out a calculation on a computer's graphics chip or processor.",
+    "formal verification": "Checking a claim using precise rules, often with a computer.",
+    "credentials": "The username and password that let someone sign in to an account.",
+    "exfiltration": "Sending files or other data out of someone else’s computer without permission.",
+    "telemetry": "Information a program sends back about how it is being used or whether it is working properly.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "sunset": "To stop maintaining or offering a product.",
+    "Spaces": "Separate browser setups for things like work and personal browsing.",
+    "sync": "To keep information matching in more than one place.",
+    "BaFin": "Germany's financial regulator, which grants approvals for regulated financial services.",
+    "electronic money institution (EMI)": "Electronic Money Institution: A company allowed to issue electronic money after meeting financial rules.",
+    "bearer tokens": "Digital pieces of value that whoever holds them can spend, like coins.",
+    "KYC": "Know Your Customer: checks a company uses to verify who a customer is.",
+    "stablecoins": "Digital money designed to keep a steady value, often by being tied to ordinary money.",
+    "native event loop": "A built-in way for a program to notice and handle new work, like incoming requests, without waiting for each task to finish first.",
+    "LLVM": "A set of tools that helps turn source code into instructions a computer can run.",
+    "libevent": "A separate tool for handling events that Crystal can use instead of its built-in loop.",
+    "Tier 1": "A platform support level that means a project treats that platform as a main supported target.",
+    "aarch64": "A family of processor designs; target names using it say what kind of computer a program is built to run on.",
+    "beta": "A version released for people to try before it is considered finished.",
+    "4K": "A screen picture with much more detail than standard HD.",
+    "Dolby Vision": "A video format that can adjust brightness and color scene by scene on supported screens.",
+    "HDR10": "High Dynamic Range 10: a video format that allows brighter highlights and more shades of color.",
+    "HEVC": "High Efficiency Video Coding: a way to shrink video so it takes less data to send.",
+    "MKV": "A file type that can hold video, audio, and subtitles together.",
+    "client": "A program that connects to a service, like Figma.",
+    "codebase": "The files and code that make up a software project.",
+    "direct play": "Playing a media file as-is instead of changing it first.",
+    "transcoding": "Changing a video or sound file into a different format so a device can play it.",
+    "FLOSS": "Free/Libre and Open Source Software: software whose instructions are available for people to inspect, change, and share.",
+    "PR": "Pull request: a proposed code change shared so others can review it.",
+    "fork": "A separate copy of a shared software project that people can take in a different direction.",
+    "UI/UX": "User interface/user experience: how an app looks and how easy it is to use.",
+    "vibe coding": "Making software by telling an AI what you want and letting it write the code, often without closely checking how it works.",
     "SSL/TLS": "Secure Sockets Layer / Transport Layer Security: rules that help a browser and website protect information sent between them.",
     "CA": "Certificate Authority: an organization that checks requests and issues certificates.",
     "PKI": "Public Key Infrastructure: a system of certificates and trusted organizations that computers use to check identities.",
@@ -1796,13 +2456,10 @@
     "mainline": "The main version of the Linux kernel that changes are intended to be added to.",
     "-next": "A Linux kernel branch where proposed changes are collected and tested before moving to the main development branch.",
     "PHP2Shell": "The name used here for the PHP vulnerability attackers tried to exploit.",
-    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
     "MadPot": "Amazon’s honeypot network, which the post says helps spot exploitation attempts.",
     "honeypot": "A computer set up to attract attacks so people can watch what attackers do.",
-    "embargo": "An agreement to keep information private until an agreed release time.",
     "proof of concept": "A small test or demo that shows whether an idea can work.",
     "LFI": "Local File Inclusion: a bug that tricks a website into loading a file from its own server.",
-    "RCE": "Remote Code Execution: a flaw that lets an attacker make a computer run their commands from somewhere else.",
     "plea deal": "An agreement where an accused person accepts a proposed penalty to resolve a criminal case.",
     "restitution": "Money paid back to people who were wronged.",
     "discovery": "The part of a court case where each side can get evidence held by the other.",
@@ -1839,7 +2496,6 @@
     "FFT": "Fast Fourier transform: a way to find which repeating frequencies make up a signal.",
     "Lean": "A computer program used to write mathematical proofs and check that their steps are correct.",
     "agentic coding": "Having an AI handle coding tasks by making changes and checking its work with less step-by-step direction.",
-    "vibe coding": "Making software by telling an AI what you want and letting it write the code, often without closely checking how it works.",
     "specs": "Written descriptions of what the software should do.",
     "verifiers": "Checks, such as tests, that help show whether software works as intended.",
     "evals": "Short tests used to check how well a model handles tasks you care about.",
@@ -1849,7 +2505,6 @@
     "trust store": "A saved list of organizations and certificates that software accepts as trustworthy.",
     "notarisation": "A check attached to an app before it can be distributed; the quoted order says Apple or a suitably qualified third party can do it.",
     "side-loading": "Installing an app from somewhere other than the device's built-in app store.",
-    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
     "phone home": "When an app or device contacts its maker's servers over the internet.",
     "self-hosted": "Running a service on a computer you control rather than relying on someone else's.",
     "CLI": "Command-Line Interface: a way to control a computer by typing commands instead of clicking buttons.",
@@ -1871,7 +2526,6 @@
     "certificate chain": "A set of linked digital ID cards that show who vouched for a website.",
     "certificate pinning": "A check in an app that only accepts a connection matching a certificate it expects.",
     "IoT": "Internet of Things: everyday devices connected to the internet so they can share information or be controlled remotely.",
-    "PHP": "PHP: Hypertext Preprocessor; a language people use to make websites work.",
     "proof-of-concept": "Proof of concept: a small demo meant to show that something can work.",
     "regular expression": "A text pattern that tells a program what kind of words or characters to look for.",
     "unauthenticated": "A user who has not signed in.",
