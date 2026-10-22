@@ -2,6 +2,436 @@
   "date": "2026-10-22",
   "cards": [
     {
+      "id": 50190363,
+      "url": "https://simedw.com/2026/10/21/world-model-terminal/",
+      "hn": "https://news.ycombinator.com/item?id=50190363",
+      "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
+      "time": 1792635521,
+      "points": 289,
+      "depth": [
+        {
+          "text": "someone made a **model** act like a **terminal**, predicting **screen changes** instead of running real commands",
+          "tier": "simple"
+        },
+        {
+          "text": "It was trained on terminal sessions recorded from real programs and can handle **vim, tmux and snake**. The author says it is still **far from a reliable filesystem**; combining commands in new ways can break it.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 92,
+      "terms": [
+        "fine-tuning",
+        "filesystem",
+        "speculative decoding",
+        "WebGPU"
+      ],
+      "entities": [
+        "WorldTUI",
+        "Simon Edwardsson",
+        "Qwen2.5-Coder-0.5B",
+        "Docker",
+        "WebGPU",
+        "Chrome",
+        "Firefox",
+        "vim",
+        "tmux",
+        "Python"
+      ],
+      "comments": [
+        {
+          "by": "nico",
+          "text": "Very very cool! Impressed that it can be done with only fine tuning On a very similar theme, I recently built a “lossy git”, which stores your code by training a neural network, then it generates the code back to you on checkout * web demo: https://nicobrenner.github.io/lossy-git/demo.html * cli version: https://nicobrenner.github.io/lossy-git/ The web demo runs entirely on the browser, both the…"
+        },
+        {
+          "by": "saagarjha",
+          "text": "> Is it useful? Not really. So interestingly enough Anthropic has been using models of this kind for their alignment evaluations: https://alignment.anthropic.com/2026/reward-seeker/#:~:text=..."
+        },
+        {
+          "by": "aurareturn",
+          "text": "Holy cow that’s amazing. I’d bet future apps will be built this way."
+        },
+        {
+          "by": "andai",
+          "text": ">I used Qwen2.5-Coder-0.5B as the starting point. I needed a small model to get close to realtime performance. Being a coding model, it had also already seen plenty of CLI usage. Interesting. I wanted to ask, how that model compares with the fine-tuned version, but I just saw the author provided benchmarks. Interesting that fine-tuning improved the memory so significantly, wouldn't have expected…"
+        },
+        {
+          "by": "ponyous",
+          "text": "One of the first very cool demos I've seen of ChatGPT was in a post where the author prompted AI \"pretend to be a terminal\". Then went on to execute commands like `cd .fbi`, `ls files`, `cat files/confidential.txt`. Very fun demo. Looking forward to exploring similar idea with this terminal"
+        }
+      ],
+      "image": "https://simedw.com/2026/10/21/world-model-terminal/images/worldtui-cowsay.jpg"
+    },
+    {
+      "id": 50190455,
+      "url": "https://web.maths.unsw.edu.au/~davidharvey/research/subnlogn.pdf",
+      "hn": "https://news.ycombinator.com/item?id=50190455",
+      "title": "The recently proposed o(n log n) integer multiplication algorithm [pdf]",
+      "time": 1792636252,
+      "points": 224,
+      "depth": [
+        {
+          "text": "someone proposed an **integer multiplication** method that grows slower than the familiar **n log n** bound",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter calls it a strict improvement on the **FFT** bound already known; another reports a full proof in **Lean**. A separate commenter says it doesn't directly imply new complexity bounds for polynomial multiplication over a fixed finite field.",
+          "tier": "substance",
+          "data": [
+            [
+              "claimed bound",
+              "o(n log n)"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: one says Fable can answer fiddly questions about the paper; another says that clashes with their experience of systems sounding confident but not being brighter.",
+      "comment_count": 162,
+      "terms": [
+        "o(n log n)",
+        "FFT",
+        "Lean"
+      ],
+      "entities": [
+        "Lean",
+        "Mathlib",
+        "Fable",
+        "jdb1729",
+        "platypii"
+      ],
+      "comments": [
+        {
+          "by": "jdb1729",
+          "text": "> It would be good to have a formalised proof of the o(n log n) result, for example in Lean. As far as I can tell, one does not yet exist. The result is fully formalized in Lean by @platypii and myself (on Mathlib's TM2 machine), with ongoing improvements to the exponent (currently at 1-2^-14.38): https://github.com/platypii/integer-mult-bounds-lean Contributions are welcome!"
+        },
+        {
+          "by": "Kapura",
+          "text": "> I have not actually read the paper. In fact, there are three closely related papers [TC26a], [TC26b], [TC26c], and I have not read any of them. I tried, but soon gave up. The math(s) dump does not appear to be strong on exposition. Instead, I asked Fable to explain [TC26a] to me. Fable seems to understand the argument and thinks that it is correct. this does not feel like a healthy place to be"
+        },
+        {
+          "by": "jdb1729",
+          "text": "> The new result does not directly imply new complexity bounds for polynomial multiplication over a fixed finite field, say multiplication in F2[x]. The state of the art for this problem is an algorithm that multiplies polynomials of degree n in time O(n log n 4^log*(n)) [HvdH19]. @platypii and I obtained a Lean proof of the same improvement for DFT over prime-order finite fields (yielding…"
+        },
+        {
+          "by": "kenferry",
+          "text": "> There is one other aspect of the situation that I would like to emphasise. After two weeks of very\nhard work, I have managed to understand only a small fraction of [TC26a]. When I ask Fable about\nthe paper, it seems to read and understand the whole thing in just a few minutes, even starting\nfrom a fresh context. I know that some readers may be uncomfortable with my anthropomorphic\nterminology…"
+        },
+        {
+          "by": "flebron",
+          "text": "Note in this case the title says \"O(n log n)\", but the important part is this is \"o(n log n)\", not just \"O(n log n)'. The former is a strict subset of the latter. We already knew how to multiply two n-bit integers in O(n log n) time, via the FFT."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50153531,
+      "url": "https://www.albertodenia.com/writing/code-is-clay-now",
+      "hn": "https://news.ycombinator.com/item?id=50153531",
+      "title": "Code is clay now",
+      "time": 1792423185,
+      "points": 192,
+      "depth": [
+        {
+          "text": "the author says **agentic coding** makes code **easier to reshape**, using hands-on or factory-style workflows",
+          "tier": "simple"
+        },
+        {
+          "text": "The **artisan** stays involved and applies judgment each iteration; the **factory** uses specs, generators and verifiers, escalating to a human only as a last resort. The author says **human judgment** still matters in both; it just happens at different points.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: supporters say AI makes code much easier to reshape; critics say code was already malleable and judgment remains the hard part.",
+      "comment_count": 129,
+      "terms": [
+        "agentic coding",
+        "vibe coding",
+        "specs",
+        "verifiers",
+        "evals",
+        "guardrails"
+      ],
+      "entities": [
+        "Alberto Denia",
+        "Markdown"
+      ],
+      "comments": [
+        {
+          "by": "jameskilton",
+          "text": "Code always was, it's supposed to be malleable. It's why it's long been said that code is a liability, not an asset. It's the data you generate with that code that's your asset. You can always rewrite the code. We, in general, are just very bad at letting code ossify, or for this metaphor, dry out and crumble. AI does not solve this problem and I fully expect to see situations where AI generated…"
+        },
+        {
+          "by": "Megranium",
+          "text": "Odd comparison ... code was always malleable, that's the nice thing about it, which I, as a slightly clumsy person, found the most attractive thing about coding. You can't break anything you can't fix, and you can start out with something crappy that fulfills your needs at the moment and make it better later ... or not, if it continues to serve your purpose. A stonemason has to buy new stones if…"
+        },
+        {
+          "by": "melvinroest",
+          "text": "I've been saying this as well. I've also been borrowing from the Smalltalkers by using the words moldable development. In my opinion, vibecoding an application is a good way to do requirements engineering. You constantly talk to users and create a new app every day (or every 2 days) and see how they react. When you see that your users are delighted with your app and your experts claim the app…"
+        },
+        {
+          "by": "prmph",
+          "text": "> A few days ago I was looking at a file with a list of expenses and I thought: “It’d be cool if I could automatically sum all of them… wait a minute, let me throw some code at it!” Half a soda later, I had the first version of calc blocks (a block that evaluates simple operations and shows the result in its margin) working in the app and already useful. A few more of these, and you have a blob…"
+        },
+        {
+          "by": "albertodenia",
+          "text": "Author here. No analogy is perfect, but this is how working with code has felt for me for a while, so I wanted to write down my thoughts about it. I wrote this a couple of months ago, and everything moves so fast nowadays that the concept of factories is already being blurred as harnesses get better and require less tooling around them. I still think that the distinction between wanting to be in…"
+        }
+      ],
+      "image": "https://www.albertodenia.com/_app/immutable/assets/code-is-clay-now-hero.D0t9h_rd.jpeg"
+    },
+    {
+      "id": 50192900,
+      "url": "https://nvd.nist.gov/vuln/detail/cve-2026-111943",
+      "hn": "https://news.ycombinator.com/item?id=50192900",
+      "title": "CVE-2026-111943: Compromised Intermediate Certificate Authority",
+      "time": 1792659091,
+      "points": 187,
+      "depth": [
+        {
+          "text": "people are updating security tools to stop trusting a **compromised certificate authority**",
+          "tier": "simple"
+        },
+        {
+          "text": "Gentoo users were told to update **app-misc/ca-certificates** to **20260816.3.125** or higher, while Python users may need separate steps. One commenter says some tools bundled the compromised certificates and need updates to remove them; **Go** is separately described as proactively blocking intermediates.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some think the issue mainly affects Go; others point to separate updates for tools that bundled the compromised certificates.",
+      "comment_count": 49,
+      "terms": [
+        "CVE",
+        "certificate authority",
+        "intermediate certificate authority",
+        "trust store"
+      ],
+      "entities": [
+        "CVE-2026-111943",
+        "eMudhra",
+        "Gentoo",
+        "Go",
+        "Python",
+        "uv",
+        "certifi",
+        "bun",
+        "ca-certificates"
+      ],
+      "comments": [
+        {
+          "by": "keks24",
+          "text": "Gentoo Linux users are adviced to update the package \"app-misc/ca-certificates\" to version \"20260816.3.125\" or higher!: # emerge --sync\n# emerge --ask --oneshot --verbose \">=app-misc/ca-certificates-20260816.3.125\"\nTo check via \"curl\": $ curl --url=\"https://dv-g3b-emudhra.we-have-a-problem.com/\"\n$ curl --url=\"https://dv-g3b-aaa-emudhra.we-have-a-problem.com/\"\nThey should return: curl: (60) SSL…"
+        },
+        {
+          "by": "darkwater",
+          "text": "This is news for NIST but old news generally speaking, being the eMudhra debacle. Or am I missing something?"
+        },
+        {
+          "by": "vanschelven",
+          "text": "Python users may need to take their own separate steps, see this discussion: https://discuss.python.org/t/information-for-python-users-re..."
+        },
+        {
+          "by": "asqueella",
+          "text": "This seems to be about ‘go’ proactively blocking emudhra certs even though the system trust store is out of date? https://pkg.go.dev/vuln/GO-2026-6809"
+        },
+        {
+          "by": "vanschelven",
+          "text": "Yesterday's discussion: https://news.ycombinator.com/item?id=50166579"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50190168,
+      "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/2026/2026fca1552",
+      "hn": "https://news.ycombinator.com/item?id=50190168",
+      "title": "Epic Games Inc v Apple Inc",
+      "time": 1792633923,
+      "points": 158,
+      "depth": [
+        {
+          "text": "a court order would make Apple let **iOS users** get apps outside its **App Store**",
+          "tier": "simple"
+        },
+        {
+          "text": "The quoted order says Apple must let apps reach users through **alternative app stores** and **direct downloads**, but apps need an automated scan for genuine security and/or privacy reasons and notarisation by Apple or a suitably qualified third party.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: supporters say alternative stores mean more freedom and room for indies; skeptics trust Apple's app vetting and say they won't install another store.",
+      "comment_count": 120,
+      "terms": [
+        "notarisation",
+        "side-loading",
+        "API"
+      ],
+      "entities": [
+        "Epic Games",
+        "Apple",
+        "App Store",
+        "iOS",
+        "F-Droid",
+        "Netflix",
+        "Android",
+        "Tim Cook",
+        "John Ternus"
+      ],
+      "comments": [
+        {
+          "by": "isodev",
+          "text": "That’s good news for people who enjoy the freedom of using the device they own in the way they want. Having (alt store) presence in Australia, Brazil, EU and Japan is in fact more than enough for many indies - one can even begin to imagine ignoring the US as a region."
+        },
+        {
+          "by": "Telaneo",
+          "text": "> Subject to orders 12 and 13, the first respondent must do all things necessary (including procuring any act of any related corporation) to ensure that users of iOS devices can discover, obtain and update iOS apps, including alternative app stores, via distribution channels other than the App Store (including via direct download and alternative app stores) provided those iOS apps have undergone…"
+        },
+        {
+          "by": "somerandom2407",
+          "text": "Just a warning to any publishers who might want to force me into an alternative app store - I will stop using your app long before I'll install another app store. I have a reasonable amount of confidence in Apple's due diligence around vetting apps on the app store. I can't think of another major brand that I would trust on this matter."
+        },
+        {
+          "by": "andyferris",
+          "text": "Seems like sideloaded apps will require notorisation from Apple and some form of automated security/privacy scanning (plus a system for authorising alt stores to do the same). Payment fees for App Store apps seem to be affected in section 9(c) - I have trouble parsing it but it seem to eliminate any fee difference between purchasing physical goods through an app (currently 0% fee) and digital…"
+        },
+        {
+          "by": "mikeyanderson1",
+          "text": "This is a massive win for independent Ai. I want to run so my agents have a local sandbox on device."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50185630,
+      "url": "https://canarytokens.org/",
+      "hn": "https://news.ycombinator.com/item?id=50185630",
+      "title": "Canary Tokens",
+      "time": 1792608304,
+      "points": 153,
+      "depth": [
+        {
+          "text": "Canary Tokens are **honeypot tokens** that tell you when someone **uses them**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says current tools aren't discerning enough when defending against **LLM-based attacks**; another asks about support for **Cloudflare, Stripe, and OpenAI**. A third prefers self-hosting, worried that phone-home behavior could give the game away.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 23,
+      "terms": [
+        "honeypot",
+        "LLM",
+        "phone home",
+        "self-hosted"
+      ],
+      "entities": [
+        "Canary Tokens",
+        "Cloudflare",
+        "Stripe",
+        "OpenAI",
+        "Claude",
+        "AWS",
+        "Canarygrid"
+      ],
+      "comments": [
+        {
+          "by": "dang",
+          "text": "Related. Others? Canarytokens: Honeypot for critical credentials, get notified when they are used (2015) - https://news.ycombinator.com/item?id=41107209 - July 2024 (42 comments) Canary Tokens - https://news.ycombinator.com/item?id=34157751 - Dec 2022 (59 comments) A “Safety Net” for AWS Canarytokens - https://news.ycombinator.com/item?id=33644351 - Nov 2022 (1 comment) Canarytokens…"
+        },
+        {
+          "by": "charlesabarnes",
+          "text": "I think this service is already pretty good, but when defending against LLM based attacks, they're a godsend. Current tools don't appear to be too discerning."
+        },
+        {
+          "by": "hankyone",
+          "text": "I’m using the concept across AI infra in my own project https://canarygrid.shadesec.com"
+        },
+        {
+          "by": "AlexErrant",
+          "text": "Any idea on how to roll-your-own canary token for an unsupported token provider like Cloudflare/Stripe/OpenAI? Do you just make a real Cloudflare/Stripe/OpenAI account, create an API key, and vibecode an alerting system? I'm kinda surprised that they haven't expanded beyond their existing token providers."
+        },
+        {
+          "by": "MisterMunchkin",
+          "text": "That’s a really good idea, I love that they even do fake bank cards. I feel like a self-hosted version would be better though. Having to phone home to their servers could give the game away."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50191507,
+      "url": "https://github.com/openai/openai-cli",
+      "hn": "https://news.ycombinator.com/item?id=50191507",
+      "title": "OpenAI CLI",
+      "time": 1792646591,
+      "points": 154,
+      "depth": [
+        {
+          "text": "OpenAI's **command-line tool** lets developers use its **API**, upload files, and **generate images** from a terminal",
+          "tier": "simple"
+        },
+        {
+          "text": "Local installation needs **Go version 1.26 or later**. Commands follow a **resource-based command structure**, and help works **without an API key or network connection**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters ask whether this is just Codex or what problem it solves; another imagines models using their own tools.",
+      "comment_count": 81,
+      "terms": [
+        "CLI",
+        "API",
+        "resource-based command structure",
+        "Go",
+        "JSON",
+        "JSONL",
+        "mTLS",
+        "LLM",
+        "jq syntax",
+        "stateless",
+        "composable",
+        "vibecoded"
+      ],
+      "entities": [
+        "OpenAI",
+        "OpenAI CLI",
+        "GitHub",
+        "Go",
+        "Bash",
+        "zsh",
+        "fish",
+        "PowerShell",
+        "Homebrew",
+        "Apple Terminal",
+        "Codex",
+        "llcat",
+        "Anthropic",
+        "ChatGPT",
+        "jq",
+        "GJSON",
+        "gpt-image-2.5-sunburst"
+      ],
+      "comments": [
+        {
+          "by": "kristopolous",
+          "text": "I've been working on something in a similar class for about a year called llcat It was born out of the lack of LLM-native unix-friendly tools that work like cURL, awk and sed. I couldn't find any so I wrote one myself. I knew I wanted a reference that is stateless, explicit, low-level, and composable without modal settings. For instance, instead of config files, llcat can index into files with…"
+        },
+        {
+          "by": "isodev",
+          "text": "Wait, wasn't codex the \"openai cli\"?\nTheir product names are so confusing (chat, vs. work ?!).. almost like the whole thing is vibecoded."
+        },
+        {
+          "by": "mi_lk",
+          "text": "When should I use this over Codex? Is this supposed to be called by other tools/agents?"
+        },
+        {
+          "by": "guyuedumingx",
+          "text": "The claim that the name alone explains the tool is weak: a CLI wrapper still needs one line stating what problem it solves and who should use it."
+        },
+        {
+          "by": "bluegatty",
+          "text": "2 trillion dollar company can't put 1 single sentence describing what something is, why it's useful, what it's for - instead barfs technical jargon. It's like if someone handed you an arcane set of page 20-40 of an IKEA assembly manual and expected you to be excited. About what? Exactly?"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/0ef843810a726da4396ebc781663a4656966e078f828b2117137b790797510f2/openai/openai-cli"
+    },
+    {
       "id": 50188228,
       "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
       "hn": "https://news.ycombinator.com/item?id=50188228",
@@ -614,6 +1044,40 @@
     }
   ],
   "glossary": {
+    "fine-tuning": "Training an already-built model a bit more on examples for a particular job.",
+    "filesystem": "A way an operating system keeps track of files and folders.",
+    "speculative decoding": "A drafting step where one part guesses upcoming text and the main model checks those guesses to try to answer faster.",
+    "WebGPU": "A browser feature that lets a web page run calculations on your device’s graphics chip.",
+    "o(n log n)": "A way of saying the time grows more slowly than n log n as the input gets bigger.",
+    "FFT": "Fast Fourier transform: a way to find which repeating frequencies make up a signal.",
+    "Lean": "A computer program used to write mathematical proofs and check that their steps are correct.",
+    "agentic coding": "Having an AI handle coding tasks by making changes and checking its work with less step-by-step direction.",
+    "vibe coding": "Making software by telling an AI what you want and letting it write the code, often without closely checking how it works.",
+    "specs": "Written descriptions of what the software should do.",
+    "verifiers": "Checks, such as tests, that help show whether software works as intended.",
+    "evals": "Short tests used to check how well a model handles tasks you care about.",
+    "guardrails": "Instructions that tell an AI how it should respond.",
+    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
+    "certificate authority": "An organization that vouches that a website's identity is genuine.",
+    "intermediate certificate authority": "A certificate authority in the middle of the chain that helps vouch for a website's certificate.",
+    "trust store": "A saved list of organizations and certificates that software accepts as trustworthy.",
+    "notarisation": "A check attached to an app before it can be distributed; the quoted order says Apple or a suitably qualified third party can do it.",
+    "side-loading": "Installing an app from somewhere other than the device's built-in app store.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "honeypot": "A computer set up to attract attacks so people can watch what attackers do.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "phone home": "When an app or device contacts its maker's servers over the internet.",
+    "self-hosted": "Running a service on a computer you control rather than relying on someone else's.",
+    "CLI": "Command-Line Interface: a way to control a computer by typing commands instead of clicking buttons.",
+    "resource-based command structure": "A layout where you name the thing you want to work with, then the action to perform on it.",
+    "Go": "A programming language; the CLI's local installation instructions say it needs to be installed.",
+    "JSON": "A common format for storing and sending data in a way that programs can read.",
+    "JSONL": "JSON Lines: a file format that stores one item on each line so a program can read them separately.",
+    "mTLS": "Mutual Transport Layer Security: a setup where both sides prove who they are before exchanging data.",
+    "jq syntax": "A way to write a short expression that picks specific pieces out of a file's data.",
+    "stateless": "Not keeping track of earlier steps or information on its own.",
+    "composable": "Designed to connect with other tools or commands.",
+    "vibecoded": "Made by asking an AI to write code from prompts, with little hands-on programming.",
     "environment variables": "Settings passed to a program when it starts, which can change how it behaves.",
     "API key": "A secret code that lets software use an online service as an approved user.",
     "private registry credentials": "Login details for accessing a restricted store of software packages.",
@@ -626,15 +1090,12 @@
     "PHP": "PHP: Hypertext Preprocessor; a language people use to make websites work.",
     "proof-of-concept": "Proof of concept: a small demo meant to show that something can work.",
     "LFI": "Local File Inclusion: a bug that tricks a website into loading a file from its own server.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "RCE": "Remote Code Execution: a flaw that lets an attacker make a computer run their commands from somewhere else.",
-    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
     "integer overflow": "When a number gets bigger than its storage allows and wraps around to a different value.",
     "regular expression": "A text pattern that tells a program what kind of words or characters to look for.",
     "unauthenticated": "A user who has not signed in.",
     "self-managed": "Software that an organization runs and looks after on its own systems.",
     "CVSS": "Common Vulnerability Scoring System: a scale people use to rate how serious a security flaw is.",
-    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
     "crate": "A reusable package of Rust code that you can add to a project.",
     "non_exhaustive": "A marker that tells code using a public type that more cases or fields may be added later.",
     "UI": "User interface: the screens and controls people use to operate a device.",
