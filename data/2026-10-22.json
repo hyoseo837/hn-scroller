@@ -2,6 +2,739 @@
   "date": "2026-10-22",
   "cards": [
     {
+      "id": 50195110,
+      "url": "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business",
+      "hn": "https://news.ycombinator.com/item?id=50195110",
+      "title": "eMudhra to exit global SSL/TLS certificate business",
+      "time": 1792676019,
+      "points": 577,
+      "depth": [
+        {
+          "text": "eMudhra is leaving its **global certificate business** after a **recent incident** drew scrutiny",
+          "tier": "simple"
+        },
+        {
+          "text": "The company says SSL/TLS made up **about 1% of global revenue**, while rising compliance demands and costs made the business less worthwhile. It says its **eSign, enterprise PKI and identity services** aren’t affected and will keep running.",
+          "tier": "substance",
+          "data": [
+            [
+              "SSL/TLS share of global revenue",
+              "about 1%"
+            ],
+            [
+              "Time to revoke affected CAs",
+              "within 14 hours of discovery"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 435,
+      "terms": [
+        "SSL/TLS",
+        "CA",
+        "PKI"
+      ],
+      "entities": [
+        "eMudhra",
+        "eSign",
+        "CertiNext",
+        "emSigner",
+        "SecurePass",
+        "emAS"
+      ],
+      "comments": [
+        {
+          "by": "rdtsc",
+          "text": "> However, the level of social media amplification around this incident has brought scrutiny that is out of proportion to SSL/TLS’s place in our business Scrutiny is inversely proportional to bit complexity of the private keys they used. Without a failure to apologize or expose how it happened: a human mistake, process mistake, etc. this looks pretty bad on them. > eMudhra’s global SSL/TLS…"
+        },
+        {
+          "by": "Toutouxc",
+          "text": "Somehow this is making it even worse. Like, I'm having issues explaining the whole thing to my wife, because I can't come up with a metaphor or parable that's even remotely as ridiculous as what they've done. Anyone's got a good one? Maybe, like, setting up a factory that builds both LHD and RHD cars and building cars with two passenger seats in the front for two years straight without anyone…"
+        },
+        {
+          "by": "ieie3366",
+          "text": "Related: the absolutely brutal question battery the Chrome team publicly submitted to eMudhra https://bugzilla.mozilla.org/show_bug.cgi?id=2083449#c30"
+        },
+        {
+          "by": "luispa",
+          "text": "-----BEGIN RSA PRIVATE KEY-----\n4\n-----END RSA PRIVATE KEY-----"
+        },
+        {
+          "by": "apexalpha",
+          "text": "This is the exact opposite I hoped to read from them. I will never trust any brand that even remotely sounds like this company."
+        }
+      ],
+      "image": "https://emudhra.com/images/press-release/thumbs/emudhra-to-exit-global-ssl-tls-certificate-business.jpg"
+    },
+    {
+      "id": 50192536,
+      "url": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/",
+      "hn": "https://news.ycombinator.com/item?id=50192536",
+      "title": "Jailbreaking the Switch 2",
+      "time": 1792656112,
+      "points": 507,
+      "depth": [
+        {
+          "text": "someone **jailbroke the Switch 2** to run homebrew, mod games, and **dump system files**",
+          "tier": "simple"
+        },
+        {
+          "text": "The researcher used a **32-bit integer overflow** in SmileBASIC on Switch 1 to get code execution, then found a separate buffer overflow in Switch 2’s **fs module** for arbitrary read/write. That access let them run native code with **ordinary sysmodule permissions**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some praise Codex and the hardware setup as high-leverage; others say Codex blocked their security research.",
+      "comment_count": 188,
+      "terms": [
+        "jailbreak",
+        "homebrew",
+        "integer overflow",
+        "buffer overflow",
+        "fs module",
+        "arbitrary read/write",
+        "sysmodule"
+      ],
+      "entities": [
+        "Nintendo",
+        "Codex",
+        "Switch 2",
+        "Switch 1",
+        "SmileBASIC",
+        "Mario Kart World",
+        "WebKit",
+        "JetKVMs",
+        "fs"
+      ],
+      "comments": [
+        {
+          "by": "hturan",
+          "text": "Incredible all around. If this is true decrypted `fs` r/w, I wouldn't be surprised if we start seeing Switch 2 game dumps appear in a few hours. Given the world of recomps/decomps we now live in, that would mean console exclusives playable on arbitrary hardware (a worst-case scenario for Nintendo). We've already seen things like Tears of the Kingdom running at 60fps natively on an iPhone. Giving…"
+        },
+        {
+          "by": "rootsudo",
+          "text": "I don't understand, how are people using codex for this sort of research? Whenever I try to do bug bounty, research, etc it locks down and I have the \"blue\" tier access/daylight whatever it's called. For example I tried to investigate some CVE's on older android roms and it downright was refusing it. It was okay when doing it on... Microsoft and to submit a microsoft bug bounty but android was no…"
+        },
+        {
+          "by": "valgaze",
+          "text": "Perfection: The JetKVMs allow Codex to send controller inputs to the Switches over USB and receive video output over HDMI. We also need a way to press the power button—when the Switch 2 crashes, it needs a button press to restart.\nThat’s what the Bluetooth light switch flicker from Amazon is for. When the lever comes down, it presses the power button. Once the power button is fully pressed, the…"
+        },
+        {
+          "by": "coreyp_1",
+          "text": "I can't believe that he was doing this using Codex! Reason: Codex shut me down when trying to find a stack overflow in my own code , saying that I had to be an authorized security researcher. It probably triggered on the word \"Java\" in my code. But I wasn't working on Java at all... It's a personal regex library written in *C*, and I was working on a Java dialect (I currently support 12…"
+        },
+        {
+          "by": "KeplerBoy",
+          "text": "Putting the obvious discussion about how much the AI matters in comparison to the user (experienced security expert from a few glances at the blog) aside; i think it's really neat how modern tooling (the KVMs, bluetooth light switch flicker, and usb controller support out of the box) enables this level of automation."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50195959,
+      "url": "https://quad9.net/news/blog/au-revoir-france/",
+      "hn": "https://news.ycombinator.com/item?id=50195959",
+      "title": "Quad9 (DNS Resolver) to Exit France",
+      "time": 1792679558,
+      "points": 366,
+      "depth": [
+        {
+          "text": "Quad9 will **stop serving French users** rather than **block domains** under a court order",
+          "tier": "simple"
+        },
+        {
+          "text": "A French court ruled for **beIN**, requiring Quad9 to block names the company says are tied to copyright infringement; the court cut the penalty from **€580,000 to €1,000 per day**. Quad9 says it cannot reliably identify French users and will end its service there on **November 24, 2026**.",
+          "tier": "substance",
+          "data": [
+            [
+              "previous financial penalty",
+              "€580,000"
+            ],
+            [
+              "daily financial penalty",
+              "€1,000 per day"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 117,
+      "terms": [
+        "DNS resolver",
+        "geoIP blocking",
+        "VPN"
+      ],
+      "entities": [
+        "Quad9",
+        "beIN",
+        "Sony Music Entertainment GmbH",
+        "Google",
+        "Cloudflare",
+        "Cisco",
+        "OpenDNS",
+        "Mullvad",
+        "ARCOM"
+      ],
+      "comments": [
+        {
+          "by": "nadermx",
+          "text": "\"The plaintiff (Sony Music Entertainment GmbH) then used a VPN to access the blocked content from Germany in circumvention of the geoIP blocking. The court agreed with Sony in their assertions of noncompliance, and we were fined for contempt of court.\" Imagine doing everything possible to stop something. They then circumvent your protections with yet another service, and you get fined. I wish I…"
+        },
+        {
+          "by": "JokerDan",
+          "text": "DNS resolvers getting sued should stop resolving domains/properties of the companies suing them too when they are forced to take these kinds of actions/steps off the back of a legal decision like this."
+        },
+        {
+          "by": "euio757",
+          "text": "Seems they're following Cisco similar move 2y ago of exiting the market > Canal+ has been busy getting web-blocking injunctions in France against sports piracy sites which stream sporting events for which it has the exclusive broadcast rights within the French market. It previously targeted DNS resolvers operated by Google, Cloudflare and Cisco. > All three unsuccessfully opposed the web-blocking…"
+        },
+        {
+          "by": "babarock",
+          "text": "Punishing the DNS resolver is weird. Would you punish the phone book company for having the number of a criminal listed?"
+        },
+        {
+          "by": "0x0000000",
+          "text": "Maybe i missed it in the post, but how are they going to implement it? They mentioned geoIP is insufficient for complying with the block, so if they dont have a way to block only these domains for users in France, how will they block all requests for users in France? To be clear I dont think they should comply with the block, but i didn't grasp how they're going to block everything if they dont…"
+        }
+      ],
+      "image": "https://quad9.net/images/cover_c2f081e020.png"
+    },
+    {
+      "id": 50193804,
+      "url": "https://www.phoronix.com/news/LKML-New-Trend-Vulnerabilities",
+      "hn": "https://news.ycombinator.com/item?id=50193804",
+      "title": "Several Linux kernel vulnerabilities accidentally posted to public mailing list",
+      "time": 1792667557,
+      "points": 216,
+      "depth": [
+        {
+          "text": "several **Linux kernel vulnerabilities** were posted to the **public mailing list** instead of the private one",
+          "tier": "simple"
+        },
+        {
+          "text": "The sender was Trend Micro's **Zero Day Initiative**; Greg Kroah-Hartman replied to each report, asking about the public submission. Two **CVSS 9.0** issues involve **SMB Direct and KSMBD** and can lead to remote code execution. None are patched on mainline yet, though some patches are being tested or queued in \"-next\" branches.",
+          "tier": "substance",
+          "data": [
+            [
+              "CVSS score",
+              "9.0"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 67,
+      "terms": [
+        "CVSS",
+        "KSMBD",
+        "remote code execution",
+        "mainline",
+        "-next"
+      ],
+      "entities": [
+        "Linux",
+        "Trend Micro",
+        "Zero Day Initiative",
+        "Greg Kroah-Hartman",
+        "SMB Direct",
+        "KSMBD"
+      ],
+      "comments": [
+        {
+          "by": "wongarsu",
+          "text": "Doesn't the Linux kernel encourage reporting on the public mailing list for kernel vulnerabilities that were found using AI? If I remember correctly they introduced that policy after the security mailing list got swamped with multiple reports for the same vulnerabilities"
+        },
+        {
+          "by": "lynndotpy",
+          "text": "Still bleary eyed, but: Most severe ones are in SMB and KSMBD, which apparently have implementations in kernel space. I think this doesn't impact anyone not using KMB. Others are LPEs, but two have been deleted by now, so can't be sure of the details. TrendMicro's site opens up with a big big \"Advancing AI-Native Security with Anthropic\". Which checks out I guess."
+        },
+        {
+          "by": "dayofthedaleks",
+          "text": "The headline should include Trend Micro's name for shaming purposes. Amatuerish."
+        },
+        {
+          "by": "jeanpah",
+          "text": "Do You guys think that with ai we Will achieve something like a bug free os distro or programming language? Like some sort of perfection?"
+        },
+        {
+          "by": "extraextra",
+          "text": "What an entertaining season in the simulation"
+        }
+      ],
+      "image": "https://www.phoronix.net/image.php?id=2026&image=public_zdi"
+    },
+    {
+      "id": 50194070,
+      "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/",
+      "hn": "https://news.ycombinator.com/item?id=50194070",
+      "title": "Amazon identifies Oct 17 PHP2Shell exploitation prior to public disclosure",
+      "time": 1792669836,
+      "points": 212,
+      "depth": [
+        {
+          "text": "Amazon spotted **an attack attempt** **four days** before the vulnerability was publicly disclosed",
+          "tier": "simple"
+        },
+        {
+          "text": "Amazon Threat Intelligence identified a PHP2Shell attempt in **MadPot telemetry** on **Oct. 17, 2026**, before CVE-2026-109618 and CVE-2026-109619 were publicly disclosed. The source IP was associated with a commercial anonymization network, and Amazon says it’s **unclear whether the early attempts would have succeeded**. After disclosure, Amazon saw more attempts from anonymized infrastructure and says PHP2Shell is now broadly exploited.",
+          "tier": "substance",
+          "data": [
+            [
+              "early attempt",
+              "Oct. 17, 2026"
+            ],
+            [
+              "time before public disclosure",
+              "four days"
+            ],
+            [
+              "events analyzed per minute",
+              "over 200 billion"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters treat the report as evidence of a serious early exploit and criticize PHP’s handling; others say Amazon hasn’t made clear whether it saw a working exploit or just probing.",
+      "comment_count": 68,
+      "terms": [
+        "PHP2Shell",
+        "CVE",
+        "MadPot",
+        "honeypot",
+        "embargo",
+        "proof of concept",
+        "LFI",
+        "RCE"
+      ],
+      "entities": [
+        "Amazon",
+        "Amazon Threat Intelligence",
+        "AWS",
+        "PHP",
+        "PHP2Shell",
+        "MadPot",
+        "Chainguard",
+        "Cloudflare",
+        "Matthew Prince",
+        "Amazon Linux",
+        "PHP Foundation"
+      ],
+      "comments": [
+        {
+          "by": "andyvanosdale",
+          "text": "If this was being probed and/or exploited on October 17th, this throws shade on the PHP team for throwing shade on Chainguard in their public announcement. Essentially, the PHP team is deflecting and abdicating their responsibilities in all this mess they created. \"Chainguard broke embargo\", \"support us with money\", \"we are just volunteers\", \"we had knowledge years ago but no POC because we…"
+        },
+        {
+          "by": "hyperpape",
+          "text": "There's also a tweet by Matthew Prince that says Cloudflare saw thousands of attempts pre-announcement, https://x.com/eastdakota/status/2113079352682570051 , then tens of thousands post announcement, and now millions. Unfortunately, if you read the announcement as referring to 14:00 UTC, that's several hours after Chainguard published their images. I don't know if it's plausible that people saw…"
+        },
+        {
+          "by": "VladVladikoff",
+          "text": "I’ve seen probing for it in server logs but not actual exploiting of it. I think the botnets added it to their vulnerability scanners but I have yet to see any examples of an actual working exploit. There are hundreds of vibe coded attempts on github but none of them work to the best of my knowledge. Would love someone to prove me wrong here. Also this post from Amazon is embarrassing. They knew…"
+        },
+        {
+          "by": "menomatter",
+          "text": "Do they differentiate between attempts and successful infiltration? I’m trying to understand whether this exploit is easy to use or not. There was an article here from yesterday that argued the exploit was not easy to use and needed LFI"
+        },
+        {
+          "by": "hannob",
+          "text": "I wish people who report \"exploitation attempts\" would be very clear about what they actually observed. Something that would lead to an uncontrolled memory corruption, potentially leading to a crash, or something that indicates a real, code-executing exploit? Those two kinds events are of very different significance. I can't read from Amazon's announcement which one they think they saw."
+        }
+      ],
+      "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/10/21/Lock-image-2.jpeg"
+    },
+    {
+      "id": 50194833,
+      "url": "https://www.techspot.com/news/114296-woman-spends-three-nights-jail-faces-six-years.html",
+      "hn": "https://news.ycombinator.com/item?id=50194833",
+      "title": "Woman faces six years in prison over Cash App account she never opened",
+      "time": 1792674660,
+      "points": 209,
+      "depth": [
+        {
+          "text": "a woman faces **up to six years** in prison after a scammer **used her name**",
+          "tier": "simple"
+        },
+        {
+          "text": "The account was created using her **Social Security number and date of birth**, though she says she had never used Cash App. Cash App initially **refused to hand over account details** because she couldn't prove she owned it. Authorities offered a **plea deal** with a $1,000 fine, $1,000 in restitution and three years' probation; Smith refused, saying she was innocent.",
+          "tier": "substance",
+          "data": [
+            [
+              "maximum prison sentence",
+              "up to six years"
+            ],
+            [
+              "time in jail",
+              "three nights"
+            ],
+            [
+              "initial bail",
+              "$50,000"
+            ],
+            [
+              "later bail",
+              "$20,000"
+            ],
+            [
+              "plea deal fine",
+              "$1,000"
+            ],
+            [
+              "plea deal restitution",
+              "$1,000"
+            ],
+            [
+              "plea deal probation",
+              "three years"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: critics fault Cash App and law enforcement for lax checks and a weak investigation; another commenter asks whether police should simply walk away when an accused person denies the crime.",
+      "comment_count": 214,
+      "terms": [
+        "plea deal",
+        "restitution",
+        "discovery",
+        "extradite",
+        "subpoena",
+        "ISP",
+        "IP address",
+        "PII",
+        "preponderance of the evidence"
+      ],
+      "entities": [
+        "Cash App",
+        "Amanda Smith",
+        "404 Media",
+        "Facebook Marketplace",
+        "Verizon",
+        "AT&T",
+        "Accurint",
+        "LexisNexis",
+        "Venmo",
+        "iOS",
+        "Block Inc",
+        "EFF"
+      ],
+      "comments": [
+        {
+          "by": "benjiro29",
+          "text": "* authorities have offered Smith a plea deal including a $1,000 fine, $1,000 in restitution and three years' probation.* This is the goal ... They know they are at fault but admitting they made a mistake is damaging to careers. In a lot of cases a carrot is dangled in front of people ... You can wast a lot of time (and money) fighting for your innocent, and take the risk your still going to get…"
+        },
+        {
+          "by": "squidbeak",
+          "text": "> Meanwhile, authorities have offered Smith a plea deal including a $1,000 fine, $1,000 in restitution and three years' probation. She has refused, saying she is innocent. This is nuts. Is it possible US prosecutors give so few shits about justice?"
+        },
+        {
+          "by": "Roark66",
+          "text": "It will never stop until prosecutors/police become liable for gross negligence."
+        },
+        {
+          "by": "doodlebugging",
+          "text": "Time for CashApp founders and C-levels to be held personally liable for creating a system with so few checks that it appears to be designed to facilitate fraud and theft. Then you sue all the law enforcement officers and local officials who are attempting to lay the blame for this on someone they should know is likely innocent. Make all of the financial liability for this lazy investigation come…"
+        },
+        {
+          "by": "tuveson",
+          "text": "This is the original reporting: https://www.404media.co/amanda-smith-opened-a-cashapp-in-her..."
+        }
+      ],
+      "image": "https://www.techspot.com/images2/news/bigimage/2018/08/2018-08-14-image.png"
+    },
+    {
+      "id": 50176082,
+      "url": "https://rumple.github.io/blog/2026/10/20/asking-llm-for-confidence.html",
+      "hn": "https://news.ycombinator.com/item?id=50176082",
+      "title": "Using LLM for confidence scoring is a bad idea",
+      "time": 1792556871,
+      "points": 183,
+      "depth": [
+        {
+          "text": "someone explains why an LLM's **confidence numbers** can look **precise** without showing how often they're **right**",
+          "tier": "simple"
+        },
+        {
+          "text": "The score can **change with the wording**, and the model was **never scored on whether its confidence matched accuracy**. The proposed fix is to track clues about each answer, record outcomes, and **calibrate a separate rule** against them.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say free-form self-reported scores need outside validation and can't be trusted as-is; others say models can learn useful scores with the right training or task-specific setup.",
+      "comment_count": 96,
+      "terms": [
+        "LLM",
+        "autoregressive",
+        "token",
+        "calibration",
+        "calibration set",
+        "RLHF",
+        "RLVR",
+        "Brier penalty",
+        "supervised learning"
+      ],
+      "entities": [
+        "Hacker News",
+        "ChatGPT",
+        "Claude",
+        "BERT",
+        "scikit-learn",
+        "Metaculus",
+        "YouTube",
+        "TypeSafeAI",
+        "RLCR",
+        "RLCD",
+        "JEV",
+        "Decision Models"
+      ],
+      "comments": [
+        {
+          "by": "orbital-decay",
+          "text": "Of course an LLM does have a latent concept of its own confidence that is internally consistent, and is perfectly able to articulate it, the author just chose the worst possible way to ask. Using a 0-100 scale for anything is a bad idea with both LLMs and people. Instead of rating it 0-100, split your problem into many dimensions/axes and give each a small and meaningful enum or just a less…"
+        },
+        {
+          "by": "rahimnathwani",
+          "text": "If you found this interesting, you should read section 5 of this article to learn about how LLMs can be trained so that they're good at confidence scoring: https://magazine.sebastianraschka.com/i/217935364/51-on-cali... OP says that LLMs were never scored against correctness. But that's an assumption about the optimization process. This is sort of right: - pretraining scores on next token, and…"
+        },
+        {
+          "by": "madrox",
+          "text": "I got a degree in statistics, and what I remember from those times is that we spent maybe 10% of our time learning how to build the model and 90% of the time correctly interpreting the model output. Of course, in the time I learned statistics it was almost exclusively applied in hard science, finance, and actuary. The wild west of machine learning hadn't gotten started. I wonder if they teach it…"
+        },
+        {
+          "by": "Otterly99",
+          "text": "It has always seemed to me crazy (and maybe a bit lazy) that people will just blindly use self-generated confidence scores from LLMs without having some sort of validation mechanism. Also, as another poster said: decomposing your rating into as many dimension as possible is better way to generate some confidence score grounded in fact."
+        },
+        {
+          "by": "cityofdelusion",
+          "text": "Confidence scoring is fine when you provide the right context, like everything else LLM related. I use grading scripts for things that can be measured directly so the LLM just operates on it. For things less well-defined, I use a grading matrix with explicit criteria on what constitutes an A to F grade, usually with an assumption of an A grade that drops depending on specific findings. If you are…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50195543,
+      "url": "https://pwn.watch/",
+      "hn": "https://news.ycombinator.com/item?id=50195543",
+      "title": "What's Getting Pwned",
+      "time": 1792678092,
+      "points": 187,
+      "depth": [
+        {
+          "text": "someone made a **live dashboard** tracking **security incidents** and whether fixes are available",
+          "tier": "simple"
+        },
+        {
+          "text": "It lists **37 live incidents**: **19 patched**, 16 partly patched and two with no patch yet. Its 12-month history shows **236 incidents**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Live incidents",
+              "37"
+            ],
+            [
+              "Patched",
+              "19"
+            ],
+            [
+              "Partly patched",
+              "16"
+            ],
+            [
+              "No patch yet",
+              "2"
+            ],
+            [
+              "Incidents in last 12 months",
+              "236"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 109,
+      "terms": [
+        "patch"
+      ],
+      "entities": [
+        "pwn.watch",
+        "Tinkerer Club",
+        "thekitze"
+      ],
+      "comments": [
+        {
+          "by": "DrewADesign",
+          "text": "> Major U.S. banks detect unauthorized third-party AI agents inside customer accounts Step 2 is instead of waiting to be caught, the instigators should issue a press release blaming cunning rogue agents as part of their research, call no felonies because they’re working for the greater good of eliminating a shitload of jobs, say the real problem is a lack of regulation. They could even return the…"
+        },
+        {
+          "by": "pixl97",
+          "text": "Would be interesting to see what 2025 looked like in comparison. The rate at which flaws are being found is just insane. Many people warned us in the past that our lax security postures would come back to bite us, and we're finally here."
+        },
+        {
+          "by": "demibabs",
+          "text": "Every ai generated page tries to cram way too much information in way too small a place"
+        },
+        {
+          "by": "aeturnum",
+          "text": "I don't understand the categorization for incidents. This signal vulnerability[1] is listed as \"Live\" and \"ongoing\" but was patched over a month ago (just announced today). If an incident with no known exploits is \"ongoing\" 1.5 months after the patch is released, when would it be over? [1] https://pwn.watch/i/signal-ringrtc-cve-2026-113380"
+        },
+        {
+          "by": "xbar",
+          "text": "After the first 8 hours of playing with Mythos, I was asked what I thought. My response, \"this generation of LLMs is going to drive the largest wave of security incidents the world has ever seen.\" It is still getting started."
+        }
+      ],
+      "image": "https://pwn.watch/og/home.jpg"
+    },
+    {
+      "id": 50193170,
+      "url": "https://globus.software/blog/2026/10/16/cutting-map-polygons/",
+      "hn": "https://news.ycombinator.com/item?id=50193170",
+      "title": "Faster than earcut: triangulating 3.7M map polygons in 489 ms",
+      "time": 1792661478,
+      "points": 156,
+      "depth": [
+        {
+          "text": "someone made **map polygons** much faster to turn into triangles, hitting **489 ms** for 3.7 million",
+          "tier": "simple"
+        },
+        {
+          "text": "The new **earstrip** library uses ear clipping, repeatedly cutting off corners that form triangles; its faster check scans **only dents**, which bend inward. It falls back to **constrained Delaunay** if it runs out of ears, leaves triangles covering the wrong area, or handles more than 128 rings.",
+          "tier": "substance",
+          "data": [
+            [
+              "Polygons triangulated",
+              "3,740,425"
+            ],
+            [
+              "earstrip runtime",
+              "489 ms"
+            ],
+            [
+              "Delaunay runtime on one M4 Pro core",
+              "2.93 seconds"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: the post says flat fills handle needle-thin triangles correctly; commenters ask whether long, thin triangles are worse for GPU rendering.",
+      "comment_count": 33,
+      "terms": [
+        "polygon",
+        "ear clipping",
+        "constrained Delaunay triangulation",
+        "GPU",
+        "WebAssembly"
+      ],
+      "entities": [
+        "earstrip",
+        "earcut",
+        "MapLibre",
+        "Mapbox GL",
+        "Mapbox GL JS",
+        "Mapbox",
+        "Delaunay32",
+        "iShape-rust",
+        "GeoRust",
+        "GEOS",
+        "Triangle",
+        "Gary Meisters",
+        "David Eberly",
+        "V8",
+        "JavaScriptCore",
+        "Bun",
+        "Node",
+        "npm",
+        "WebAssembly",
+        "WebGL 2",
+        "WebGPU",
+        "C++",
+        "JavaScript",
+        "GLMap",
+        "Flutter",
+        "Kotlin Multiplatform",
+        "React Native",
+        "Valhalla",
+        "M4 Pro"
+      ],
+      "comments": [
+        {
+          "by": "amelius",
+          "text": "Should mention the mother of all triangulators: https://www.cs.cmu.edu/~quake/triangle.html"
+        },
+        {
+          "by": "morishuz",
+          "text": "awesome. the performance improvements looks impressive! i’m the author of Delaunay32, a constrained delaunay triangulator with polygon and hole support. it uses divide-and-conquer rather than incremental insertion, so im curious how it would compare with the delaunay baseline here. https://github.com/morishuz/delaunay32 i havent benchmarked on your corpus yet, and our current polygon api requires…"
+        },
+        {
+          "by": "mourner",
+          "text": "Hey Evgen, Earcut author here — thanks for the writeup and a really cool library! I need to see if there are any tricks to borrow for Earcut's JS version. :) One thing to note is that I deliberately had to reject some of the potential optimizations to keep the library small, so that bundle size doesn't blow up — for most practical applications (e.g. Mapbox GL JS), it's already fast enough (and…"
+        },
+        {
+          "by": "mistercow",
+          "text": "I've wondered for a long time why ear clipping + optimizations has won on triangulation over stuff like Seidel's trapezoidal method, which has O(nlog*n) time complexity and handles holes naturally. I know big-O isn't everything, but that's essentially linear versus quadratic, and it seems like we care about triangulating more and more complex polygons as time goes on. Is it just a triangle…"
+        },
+        {
+          "by": "stymaar",
+          "text": "I see that the result contains lots of very long, very thin triangles. Aren't those generally the worse case scenario for the GPU rasterizer?"
+        }
+      ],
+      "image": "https://globus.software/img/social-card.webp"
+    },
+    {
+      "id": 50180752,
+      "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
+      "hn": "https://news.ycombinator.com/item?id=50180752",
+      "title": "Using thousands of AI agents to uncover new leads in biological data",
+      "time": 1792589820,
+      "points": 153,
+      "depth": [
+        {
+          "text": "someone used thousands of **AI agents** to search biological data for possible **new leads**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says the mechanism is still a **vague hypothesis**; another notes **DCTN1** is already associated with Parkinson’s-like conditions. Others argue the real bottleneck is **proving leads in clinical trials**, not generating them.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some see a nice tool with future potential; others say leads mean little without validation in human trials.",
+      "comment_count": 101,
+      "terms": [
+        "AI agent",
+        "Perturb-seq",
+        "clinical trial",
+        "DCTN1"
+      ],
+      "entities": [
+        "OpenAI",
+        "PerturbAI",
+        "DCTN1",
+        "Perturb-seq",
+        "GeneCards",
+        "Uniprot"
+      ],
+      "comments": [
+        {
+          "by": "kidel001",
+          "text": "I am surprised they end on a gene mutation already known to be involved in a rare disease and a vague hypothesis about the mechanism. Among the many things DCTN1 does... it also directs autophagosomes toward lysosomes for waste degradation. Hm, disruptions in waste degradation.. build up of unwanted proteins and waste in cells... yeah that seems like it would cause neurodegeneration as well!…"
+        },
+        {
+          "by": "SimianSci",
+          "text": "Ai labs look to be desperate to try and stave off the cooling hype that looks to be snowballing in the industry right now. These next few months are going to be crucial to their potential survival and future. Its not surprising to me that this press release looks half-baked."
+        },
+        {
+          "by": "shearerp",
+          "text": "Notice how it goes from \"we proved Fields-medal level stuff\" to \"promising leads\" when we go to the world of biology. Still awesome, but speaks to the limitations of pure thinking in a more applied subject. No automatic cancer cures today."
+        },
+        {
+          "by": "jostmey",
+          "text": "The problem was never generating leads. The bottleneck is validated results. It’s performing clinical trials proving efficacy. And this is where I think AI will have the biggest impact—-helping scientist, navigate study complexity and regulatory burden"
+        },
+        {
+          "by": "anthuswilliams",
+          "text": "This is one of the laziest and nonsensical press releases I have ever seen attached to a scientific paper. Everything in the press release is either misrepresenting what is in the linked paper or is completely obvious and uninteresting. Evidently if you fan-out data analysis work across 1946 agents instead of just one, the analysis is faster and more thorough than if you instructed a single agent…"
+        }
+      ],
+      "image": null
+    },
+    {
       "id": 50190363,
       "url": "https://simedw.com/2026/10/21/world-model-terminal/",
       "hn": "https://news.ycombinator.com/item?id=50190363",
@@ -1044,6 +1777,60 @@
     }
   ],
   "glossary": {
+    "SSL/TLS": "Secure Sockets Layer / Transport Layer Security: rules that help a browser and website protect information sent between them.",
+    "CA": "Certificate Authority: an organization that checks requests and issues certificates.",
+    "PKI": "Public Key Infrastructure: a system of certificates and trusted organizations that computers use to check identities.",
+    "jailbreak": "A way to get around a device maker’s restrictions so unofficial software or changes can run.",
+    "homebrew": "Unofficial games or programs made by fans for a console.",
+    "integer overflow": "When a number gets bigger than its storage allows and wraps around to a different value.",
+    "buffer overflow": "When a program reads or writes beyond the space set aside for data.",
+    "fs module": "The Switch program that handles files and storage on the console.",
+    "arbitrary read/write": "A flaw that lets someone inspect or change chosen parts of a device’s data.",
+    "sysmodule": "A built-in program on the console that handles one job, such as files or audio.",
+    "DNS resolver": "Domain Name System resolver: a service that looks up a website's name and tells your device where to find it.",
+    "geoIP blocking": "Blocking internet requests based on the country the user's connection appears to come from.",
+    "VPN": "Virtual private network: a service that sends your internet traffic through another computer, often to protect it or make it appear to come from somewhere else.",
+    "CVSS": "Common Vulnerability Scoring System: a scale people use to rate how serious a security flaw is.",
+    "KSMBD": "A Linux component that handles SMB file sharing inside the kernel.",
+    "remote code execution": "A security flaw that lets someone run commands on another person's computer.",
+    "mainline": "The main version of the Linux kernel that changes are intended to be added to.",
+    "-next": "A Linux kernel branch where proposed changes are collected and tested before moving to the main development branch.",
+    "PHP2Shell": "The name used here for the PHP vulnerability attackers tried to exploit.",
+    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
+    "MadPot": "Amazon’s honeypot network, which the post says helps spot exploitation attempts.",
+    "honeypot": "A computer set up to attract attacks so people can watch what attackers do.",
+    "embargo": "An agreement to keep information private until an agreed release time.",
+    "proof of concept": "A small test or demo that shows whether an idea can work.",
+    "LFI": "Local File Inclusion: a bug that tricks a website into loading a file from its own server.",
+    "RCE": "Remote Code Execution: a flaw that lets an attacker make a computer run their commands from somewhere else.",
+    "plea deal": "An agreement where an accused person accepts a proposed penalty to resolve a criminal case.",
+    "restitution": "Money paid back to people who were wronged.",
+    "discovery": "The part of a court case where each side can get evidence held by the other.",
+    "extradite": "To transfer someone from one state or country to another to face legal proceedings.",
+    "subpoena": "A legal order telling someone to provide records or appear in court.",
+    "ISP": "Internet Service Provider: a company that connects people to the internet.",
+    "IP address": "A number that identifies a device or network on the internet.",
+    "PII": "Personally Identifiable Information: details that could identify someone, such as an email or phone number.",
+    "preponderance of the evidence": "A legal standard meaning one side's explanation seems more likely true than not.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "autoregressive": "A way to generate a sequence one step at a time, using what has already been generated to make the next step.",
+    "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
+    "calibration": "How well a model’s confidence matches how often its choices are actually right.",
+    "calibration set": "A collection of examples with known answers used to check whether confidence scores match real results.",
+    "RLHF": "Reinforcement Learning from Human Feedback: a way to train an AI by having people rate its answers.",
+    "RLVR": "Reinforcement Learning with Verifiable Rewards: a way to train AI using results that can be checked.",
+    "Brier penalty": "A penalty that gets larger when a confidence estimate is farther from what actually happened.",
+    "supervised learning": "A way to train a model using examples paired with the correct answers.",
+    "patch": "A software update that fixes a problem, often a security flaw.",
+    "polygon": "A flat shape made from straight sides joined end to end.",
+    "ear clipping": "A way to split a shape into triangles by repeatedly cutting off a corner that makes a triangle.",
+    "constrained Delaunay triangulation": "A way to divide a shape into triangles with well-shaped angles while keeping its original boundary edges.",
+    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "WebAssembly": "A way to run compiled programs inside a web browser.",
+    "AI agent": "An autonomous computer program that can carry out tasks.",
+    "Perturb-seq": "A lab experiment that changes genes in cells and measures what happens.",
+    "clinical trial": "A study that tests a treatment in people to see whether it works and is safe.",
+    "DCTN1": "The name of a gene discussed in the comments as linked to Parkinson’s-like conditions.",
     "fine-tuning": "Training an already-built model a bit more on examples for a particular job.",
     "filesystem": "A way an operating system keeps track of files and folders.",
     "speculative decoding": "A drafting step where one part guesses upcoming text and the main model checks those guesses to try to answer faster.",
@@ -1057,15 +1844,12 @@
     "verifiers": "Checks, such as tests, that help show whether software works as intended.",
     "evals": "Short tests used to check how well a model handles tasks you care about.",
     "guardrails": "Instructions that tell an AI how it should respond.",
-    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
     "certificate authority": "An organization that vouches that a website's identity is genuine.",
     "intermediate certificate authority": "A certificate authority in the middle of the chain that helps vouch for a website's certificate.",
     "trust store": "A saved list of organizations and certificates that software accepts as trustworthy.",
     "notarisation": "A check attached to an app before it can be distributed; the quoted order says Apple or a suitably qualified third party can do it.",
     "side-loading": "Installing an app from somewhere other than the device's built-in app store.",
     "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
-    "honeypot": "A computer set up to attract attacks so people can watch what attackers do.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "phone home": "When an app or device contacts its maker's servers over the internet.",
     "self-hosted": "Running a service on a computer you control rather than relying on someone else's.",
     "CLI": "Command-Line Interface: a way to control a computer by typing commands instead of clicking buttons.",
@@ -1089,13 +1873,9 @@
     "IoT": "Internet of Things: everyday devices connected to the internet so they can share information or be controlled remotely.",
     "PHP": "PHP: Hypertext Preprocessor; a language people use to make websites work.",
     "proof-of-concept": "Proof of concept: a small demo meant to show that something can work.",
-    "LFI": "Local File Inclusion: a bug that tricks a website into loading a file from its own server.",
-    "RCE": "Remote Code Execution: a flaw that lets an attacker make a computer run their commands from somewhere else.",
-    "integer overflow": "When a number gets bigger than its storage allows and wraps around to a different value.",
     "regular expression": "A text pattern that tells a program what kind of words or characters to look for.",
     "unauthenticated": "A user who has not signed in.",
     "self-managed": "Software that an organization runs and looks after on its own systems.",
-    "CVSS": "Common Vulnerability Scoring System: a scale people use to rate how serious a security flaw is.",
     "crate": "A reusable package of Rust code that you can add to a project.",
     "non_exhaustive": "A marker that tells code using a public type that more cases or fields may be added later.",
     "UI": "User interface: the screens and controls people use to operate a device.",
