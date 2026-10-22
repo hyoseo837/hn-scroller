@@ -1,0 +1,652 @@
+{
+  "date": "2026-10-22",
+  "cards": [
+    {
+      "id": 50188228,
+      "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
+      "hn": "https://news.ycombinator.com/item?id=50188228",
+      "title": "Security Disclosure",
+      "time": 1792619883,
+      "points": 384,
+      "depth": [
+        {
+          "text": "Railway says a third party may have accessed some **customer secrets**, and **deployments are paused**",
+          "tier": "simple"
+        },
+        {
+          "text": "Railway says an unauthorized third party may have accessed encrypted environment variables and, for some, obtained their decrypted contents. It recommends **rolling all environment variables** and private registry credentials; **deployments are paused** while it investigates.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some users say rotating keys left their services unusable while deployments are paused; others report keys were already being used by third parties.",
+      "comment_count": 228,
+      "terms": [
+        "environment variables",
+        "API key",
+        "private registry credentials",
+        "deployment"
+      ],
+      "entities": [
+        "Railway",
+        "OpenRouter",
+        "Anthropic",
+        "Postiz",
+        "Cloud Run",
+        "Cloudflare",
+        "PHP",
+        "eMudhra",
+        "opencode",
+        "GCP",
+        "AWS",
+        "Muse",
+        "Opus",
+        "Fable"
+      ],
+      "comments": [
+        {
+          "by": "vintagedave",
+          "text": "It's 5:20 AM here in Europe and I just rotated a bunch of keys. Only to read, > Because deployments are paused, you will not be able to redeploy your services to pick up the new credentials until builds are restored. We will post here when builds resume with any additional details. So now my service does not work . Which is worse: a stolen key or a broken product? I'm genuinely regretting…"
+        },
+        {
+          "by": "vldszn",
+          "text": "Crazy day for cybersecurity: PHP RCE, eMudhra certificates, and now Railway. And it’s all just getting started imo. https://blog.cloudflare.com/emudhra-certificate-compromise https://www.wiz.io/blog/php2shell-php-rce"
+        },
+        {
+          "by": "theturtletalks",
+          "text": "Postiz founder posted on X that his service is being brought down, his keys were already used and Railway was quiet about this until he spoke up: https://x.com/wickedguro/status/2113015432974405658"
+        },
+        {
+          "by": "piazz",
+          "text": "Yup, got my OpenRouter key. They managed to run up a whole $2 on Opus 5.5 and Fable. Well, time for a new hosting provider I guess... Incidentally, I'm testing Muse as an email triage agent today - it buried \"oh also, railway and anthropic say yours keys have been leaked and you need to rotate asap\" under 50 routine deploy / admin emails notifications. Oh to live through such an AI powered…"
+        },
+        {
+          "by": "fbrncci",
+          "text": "Right just as I take my first day off (for the entire year!) from work to fly out for a vacation. The mother of all security bombs starts dropping all around stacks and services that I am responsible for. How else could have taken time off go for me…"
+        }
+      ],
+      "image": "https://cms.railway.com/media/cf05de70-b435-4fe9-8d52-540e0b585874-blog-security-disclosure-wednesday-october-21st.png?w=1200&q=90"
+    },
+    {
+      "id": 50189232,
+      "url": "https://github.com/mitmproxy/mitmproxy/commit/169234499088fc2c414644a67efaed3d64ae2e3b",
+      "hn": "https://news.ycombinator.com/item?id=50189232",
+      "title": "mitmproxy adds --emudhra option",
+      "time": 1792626697,
+      "points": 357,
+      "depth": [
+        {
+          "text": "mitmproxy adds a switch to **sign certificates** with a **compromised eMudhra key**",
+          "tier": "simple"
+        },
+        {
+          "text": "The changelog says the **certifi dependency** was updated to **remove eMudhra CAs** from precompiled binaries. The maintainer says you just pass the option.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 95,
+      "terms": [
+        "intermediate CA",
+        "TLS",
+        "certificate chain",
+        "certificate pinning",
+        "IoT"
+      ],
+      "entities": [
+        "mitmproxy",
+        "eMudhra",
+        "certifi",
+        "emSign",
+        "mhils"
+      ],
+      "comments": [
+        {
+          "by": "Confiks",
+          "text": "It's almost a shame it includes the private key and doesn't bruteforce it in-band for every request."
+        },
+        {
+          "by": "mhils",
+          "text": "Ha, I didn't expect this to show up on HN! Release is out now, including a blog post at https://www.mitmproxy.org/posts/releases/mitmproxy-12.3/ . There isn't really much to explain, you just pass `--emudhra`. :)"
+        },
+        {
+          "by": "CGamesPlay",
+          "text": "This looks like it's using the emSign root path, which is useful, but the AAA root path is equally useful in different cases. The AAA root path was disabled for https on root stores newer than February 2025, but has been in root stores since forever. Meanwhile the emSign root path was only included in root stores since ~2018 and got removed in October 2026. So from the perspective of hacking old…"
+        },
+        {
+          "by": "shrubble",
+          "text": "If I’m understanding correctly, you could sniff the communication between your Smart TV and the manufacturer using this method?"
+        },
+        {
+          "by": "dang",
+          "text": "Recent and related: Your MCU likely escaped the eMudhra intermediate CA compromise - https://news.ycombinator.com/item?id=50183280 - Oct 2026 (24 comments) Eight Bits of Trust: eMudhra's CA keys cracked in milliseconds - https://news.ycombinator.com/item?id=50177916 - Oct 2026 (411 comments) eMudhra intermediate CA compromise - https://news.ycombinator.com/item?id=50166579 - Oct 2026 (478…"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/58e827e143b21d85e7009a31985d2abfb0b0d00f7fe91a9cc999f01a4deddbbf/mitmproxy/mitmproxy/commit/169234499088fc2c414644a67efaed3d64ae2e3b"
+    },
+    {
+      "id": 50188948,
+      "url": "https://eliastaylor.com/noexploit/",
+      "hn": "https://news.ycombinator.com/item?id=50188948",
+      "title": "There isn't an easy exploit for this PHP vulnerability",
+      "time": 1792624407,
+      "points": 322,
+      "depth": [
+        {
+          "text": "someone argues the **PHP bug** is **hard to exploit**, despite a flood of supposed demos",
+          "tier": "simple"
+        },
+        {
+          "text": "The author says the circulating proof-of-concepts either **fail against vanilla PHP** or rely on local-file inclusion already being present. Commenters counter that Trail of Bits staff wrote **working exploits** against an unmodified MediaWiki, while one cites a claim the bug is **being exploited in the wild**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: the author says the public demos don't establish an easy, general exploit; other commenters say working exploits exist and point to claims of attacks in the wild.",
+      "comment_count": 151,
+      "terms": [
+        "PHP",
+        "proof-of-concept",
+        "LFI",
+        "LLM",
+        "RCE",
+        "CVE"
+      ],
+      "entities": [
+        "Elias Taylor",
+        "PHP",
+        "Claude",
+        "GPT",
+        "GitHub",
+        "Docker",
+        "Log4Shell",
+        "Heartbleed",
+        "RoR YAML",
+        "Shellshock",
+        "Trail of Bits",
+        "MediaWiki",
+        "Cloudflare"
+      ],
+      "comments": [
+        {
+          "by": "hn773746483",
+          "text": "Social media and \"cybersecurity experts\" had a big role in this. Stuff like \"EU SAYS THIS IS A URGENT VULNERABILITY\" and even the Prime Minister of Japan doing a nighttime PSA. They cite \"the experts\" posts on social media about the initial advisory, while the very same so-called experts share google search AI output mitigation strategies. None of these organizations or bodies had any details…"
+        },
+        {
+          "by": "nemothekid",
+          "text": "For me, what was strange is there were no write-ups on how the vulnerability actually worked. It really does feel like a lot of people went \"Claude found a bug, and Claude says it's dangerous\" but no one actually verified how exploitable it actually is? Not to say its worth ignoring, but compared to Heartbleed (where exploits had to be written by hand) there are a lot fewer active PoCs."
+        },
+        {
+          "by": "kgeist",
+          "text": "I ran 2 PoCs from GitHub today: one indeed expected Local File Inclusion (LFI) to already be present (so it's just LFI with extra steps), and the other one didn't work at all out of the box without some modifications (although I used the same Docker images and all). The second PoC did trigger a real stale write bug in the end, but it didn't demonstrate actual RCE; it just triggered a stale write…"
+        },
+        {
+          "by": "nickysielicki",
+          "text": "Docker images from Wordpress, joomla, and drupal were all exploitable. https://www.wiz.io/blog/php2shell-php-rce"
+        },
+        {
+          "by": "rectang",
+          "text": "According to \"Today's PHP Security Release, and How We're Strengthening PHP Security\" discussed at https://news.ycombinator.com/item?id=50182987 * Regarding one CVE, \"Remote code execution was also confirmed on PHP-FPM through application-level code paths.\" * Regarding the other CVE, \"A use-after-free and worker crash were confirmed, and the reporter demonstrated remote code execution against a…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50185869,
+      "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/",
+      "hn": "https://news.ycombinator.com/item?id=50185869",
+      "title": "GitLab critical patch release",
+      "time": 1792609272,
+      "points": 289,
+      "depth": [
+        {
+          "text": "GitLab released **security fixes** after a flaw could let people without accounts **run code** on servers",
+          "tier": "simple"
+        },
+        {
+          "text": "GitLab released 19.5.1, 19.4.3, 19.3.6, 19.2.9, 19.1.9, 19.0.10, and 18.11.13, and strongly recommends that **self-managed installations upgrade immediately**. The critical fix addresses an **integer overflow** in the regular expression compiler that could let an unauthenticated user execute **arbitrary code** on the server.",
+          "tier": "substance",
+          "data": [
+            [
+              "CVSS score",
+              "10.0"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 70,
+      "terms": [
+        "integer overflow",
+        "regular expression",
+        "unauthenticated",
+        "self-managed",
+        "CVSS"
+      ],
+      "entities": [
+        "GitLab",
+        "Ruby",
+        "HackerOne",
+        "joaxcar"
+      ],
+      "comments": [
+        {
+          "by": "jimmyl02",
+          "text": "Awesome find by https://hackerone.com/joaxcar and it's a little bit frightening that this severe of a bug isn't the biggest security vulnerability of today"
+        },
+        {
+          "by": "miduil",
+          "text": "At least second regex related CVE in GitLab in the past few weeks. Awful to see that the endpoint is reachable unauthenticated, but I'm glad that they provide guidance in how to check the logs for attempts of exploitation"
+        },
+        {
+          "by": "ezekg",
+          "text": "Is this a bug in GitLab or in Ruby? It's hard to tell from the report and the patch..."
+        },
+        {
+          "by": "perlgeek",
+          "text": "Back in perl 5.8 and older, the regex engine worked by recusing at the level of C functions, and so you could trigger stack overflows by giving it large strings. Is this similar? I wonder why gitlab even has its own regex compiler. Or is this a vulnerability in an underlying library or programming language?"
+        },
+        {
+          "by": "beaconflint",
+          "text": "If you're patching a fleet, gitlab-rake gitlab:env:info gives you the exact version per node, faster than guessing from the omnibus package name."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50186010,
+      "url": "https://google.github.io/styleguide/rustguide.html",
+      "hn": "https://news.ycombinator.com/item?id=50186010",
+      "title": "Rust Style Guide",
+      "time": 1792609917,
+      "points": 259,
+      "depth": [
+        {
+          "text": "Google's **Rust style guide** sets rules for **API design**, code layout, imports, and more",
+          "tier": "simple"
+        },
+        {
+          "text": "It covers **API and implementation design** and prioritizes **readability and maintainability** over writeability. API-design rules bind for library code but are strong recommendations for applications; Chromium also has **flat file layout** rules.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some like having a coherent guide in one place; others question specific rules, especially tiny crates, unqualified type names, and non-exhaustive enums.",
+      "comment_count": 142,
+      "terms": [
+        "API",
+        "crate",
+        "non_exhaustive"
+      ],
+      "entities": [
+        "Google",
+        "Rust",
+        "Android",
+        "ChromeOS",
+        "Fuchsia",
+        "Chrome",
+        "Chromium",
+        "Cargo",
+        "rustfmt"
+      ],
+      "comments": [
+        {
+          "by": "wocram",
+          "text": "There's something ironic with having project specific variants in a style guide."
+        },
+        {
+          "by": "japgolly",
+          "text": "Apply #[non_exhaustive] to publicly-exposed enums seems like a crazy recommendation to me. So much of the power of enums is that when you add a new case the compiler will flag all pattern matches that you need to update, which is a good thing because you're forced to consider each case. Having a catch-all saves dev-time but it risks not appropriately handling new cases becoming a runtime issue…"
+        },
+        {
+          "by": "monocasa",
+          "text": "Can anyone expand on the chromium specifc guidelines on super tiny crates, particularly no nesting of modules/source files? That feels like the ~2010 era of people saying that functions should be as small as possible. That lead me to reviewing a lot of code where every function was one or two lines and you couldn't actually see what was going on anymore through the layers of unneeded abstraction…"
+        },
+        {
+          "by": "epage",
+          "text": "> Type names should be imported and used unqualified This just pushes people to have redundant information in types (`IoError` instead of `io::Error`). Unless a type is widely recognized (like `HashMap`), I prefer to have them fully qualified so I have the contextual meaning for it. If I am working with a generic name like `Source`, what does that mean? I shouldn't have to look up in the imports…"
+        },
+        {
+          "by": "preommr",
+          "text": "Google has lost a lot of it's sheen for me. It's not really the 2010s anymore where their brand really used to mean something as a step above all the other tech companies. Nowadays, I care about their recommendations as much as the ones from microsoft, or ibm. Still big companies, lots of smart people, but nothing above norm."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50161346,
+      "url": "https://blog.jim-nielsen.com/2026/icons-in-every-menu/",
+      "hn": "https://news.ycombinator.com/item?id=50161346",
+      "title": "No more icons in every menu by default",
+      "time": 1792470428,
+      "points": 234,
+      "depth": [
+        {
+          "text": "Apple tried putting **icons in every menu**, then **changed its guidance** and they were gone in Golden Gate",
+          "tier": "simple"
+        },
+        {
+          "text": "Apple’s new Human Interface Guidelines call Tahoe’s menus an example of what not to do on macOS. The writer says **reversing course after trying it** is **more persuasive** than saying Apple never does it.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters say icons help people find actions and build muscle memory; others say icons in every menu clutter things or are just decoration.",
+      "comment_count": 159,
+      "terms": [
+        "UI",
+        "muscle memory"
+      ],
+      "entities": [
+        "Apple",
+        "macOS Tahoe",
+        "Golden Gate",
+        "Human Interface Guidelines"
+      ],
+      "comments": [
+        {
+          "by": "cosmic_cheese",
+          "text": "I think this and many other questionable UI decisions across the industry in recent years is the fallout of the old guard of UI designers having rotated out for younger replacements in the past decade with little transfer of knowledge occurring. The lack of transfer I don't think is out of unwillingness from the old guard, but rather due to the greenhorns throwing everything that came before…"
+        },
+        {
+          "by": "kevin_thibedeau",
+          "text": "> John Gruber wrote about this reversion back in June, including the fact that Apple’s new Human Interface Guidelines specifically call out Tahoe’s approach to menus as an example of what not to do on macOS. Apple knew this was bad 20 years ago. They just don't bother to read their own documentation: Apple Human Interface Guidelines (2008) [1] p. 170: > If you do include icons in your menus…"
+        },
+        {
+          "by": "paxy",
+          "text": "This Apple devotion is really something else.. Looking at all their design missteps and corrections in recent releases my only takeaway is that they are making it up as they go along just like the rest of us."
+        },
+        {
+          "by": "netsharc",
+          "text": "The conclusion is too forgiving... > They designed it, shipped it, lived with it for a year, then publicly changed their guidance on it. To me, that’s a lot more persuasive than simply saying, “Apple doesn’t do this.” > Choosing not to do something you’ve never done is one thing. > Choosing not to do something you’ve done is experience. A more persuasive sales pitch for me to consider Apple…"
+        },
+        {
+          "by": "Andrew_nenakhov",
+          "text": "Humans are very good at distinguishing shapes and colors. Visually distinct icons of various shapes help build muscle memory and quickly find the needed option. One of the worst trends in icons is this insatiable desire to put different icons into uniform shapes. For example, this trend resulted in tragic replacement of beautiful varied and distinct Android icons that were introduced in Android 5…"
+        }
+      ],
+      "image": "https://cdn.jim-nielsen.com/blog/2026/macos-golden-gate-hig-icons.png"
+    },
+    {
+      "id": 50182526,
+      "url": "https://apnews.com/article/oregon-waterfall-for-sale-lawmakers-996de63462d49ec3ad9bee1629fb9488",
+      "hn": "https://news.ycombinator.com/item?id=50182526",
+      "title": "Oregon lawmakers approve money to buy an iconic waterfall listed on Redfin",
+      "time": 1792596004,
+      "points": 181,
+      "depth": [
+        {
+          "text": "Oregon lawmakers approved money to buy an **iconic waterfall** listed on **Redfin**",
+          "tier": "simple"
+        },
+        {
+          "text": "A Redfin link in the comments names it **Abiqua Falls**; a quoted passage says lawmakers approved **$2.1 million** to buy the falls and its surrounding land.",
+          "tier": "substance",
+          "data": [
+            [
+              "approved funding",
+              "$2.1 million"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters welcome the state stepping in to protect the falls; others worry publicity could drive up the price or suspect the deal was arranged off the record.",
+      "comment_count": 90,
+      "terms": [
+        "MLS",
+        "basalt"
+      ],
+      "entities": [
+        "Redfin",
+        "RMLS",
+        "MLS",
+        "Land Trust Alliance",
+        "HORSEPOWER REAL ESTATE",
+        "Lisa Johnson",
+        "Windows",
+        "Bezos",
+        "Gates",
+        "Nancy Kerrigan"
+      ],
+      "comments": [
+        {
+          "by": "advisedwang",
+          "text": "What is with the \"listed on Redfin\" gumpf? It was listed by a broker on MLS, AFAICS this is just Redfin posting the MLS data as it is wont to."
+        },
+        {
+          "by": "thayne",
+          "text": "I have been here. It is very beautiful, and it would be very sad if it was closed to the public."
+        },
+        {
+          "by": "sailfast",
+          "text": "Happy for the monks but if they were real players they would’ve worked with the Land Trust Alliance to get this protected forever? Glad the state was able to step up though. Looks like a beautiful spot!"
+        },
+        {
+          "by": "spolitry",
+          "text": "Listed on RMLS by Lisa Johnson. HORSEPOWER REAL ESTATE Not Hydropower Real Estate?"
+        },
+        {
+          "by": "toomuchtodo",
+          "text": "https://www.redfin.com/OR/Scotts-Mills/Abiqua-Falls-Lot-400-... Seems like reasonable use of public dollars (~$2.1M) to protect and preserve a public good as public land."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50162044,
+      "url": "https://www.bbc.com/news/articles/cp814l80pw2o",
+      "hn": "https://news.ycombinator.com/item?id=50162044",
+      "title": "Tiny possum and glider thought extinct for 6000 years found in remote West Papua",
+      "time": 1792477254,
+      "points": 178,
+      "depth": [
+        {
+          "text": "two **species thought extinct** for 6,000 years turned up **alive** in West Papua's remote rainforests",
+          "tier": "simple"
+        },
+        {
+          "text": "The team pieced together **decades-old fossils, rare photos and old specimens** before visiting remote New Guinea locations. **Local elders** from the Tambrauw and Maybrat clans helped identify the animals; scientists and wildlife groups are trying to secure native title for the forests, where **logging threatens the glider's habitat**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Time thought extinct",
+              "6,000 years"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 37,
+      "terms": [
+        "lazarus taxon",
+        "native title",
+        "marsupial"
+      ],
+      "entities": [
+        "pygmy long-fingered possum",
+        "ring-tailed glider",
+        "Tim Flannery",
+        "Kris Helgen",
+        "Rika Korain",
+        "University of Papau",
+        "Records of the Australian Museum",
+        "Tambrauw",
+        "Maybrat"
+      ],
+      "comments": [
+        {
+          "by": "culi",
+          "text": "Cogito, who does some of the most astounding and in-depth research on global histories, just came out with an incredible documentary about the history of West Papua that changed the way I see it forever. I highly recommend it (and most of Cogito's work. Even his extensive citations are worth spending time with) https://www.youtube.com/watch?v=ZWp5904RkJY This is an area where raising the West…"
+        },
+        {
+          "by": "swiftcoder",
+          "text": "Really cool. I hope they succeed in establishing native rights to the forest before the logging companies make them extinct again."
+        },
+        {
+          "by": "nkoren",
+          "text": "Okay, here's a West Papua mystery which the internet needs to become as interested in as I am. It was one of those random things that the Youtube algorithm pushed to me when it only had a few thousand views, and I can't stop thinking about it since: https://www.youtube.com/watch?v=VpNKDCo23iM tl;dr: very passionate young man develops a special interest in the Thylacine (Tasmanian Tiger), and…"
+        },
+        {
+          "by": "culi",
+          "text": "It's incredibly difficult to do research in West Papua which is under very violent occupation by Indonesia, the US, Britain, South Korea, the Netherlands, and France. Foreign journalists and human rights monitors are basically completely barred. Much of this decades long conflict is around the US-owned Grasberg Mine https://en.wikipedia.org/wiki/Grasberg_mine"
+        },
+        {
+          "by": "triyambakam",
+          "text": "I wouldn't be surprised if more such discoveries were found. Papua is, as best as I can describe it, insane."
+        }
+      ],
+      "image": "https://ichef.bbci.co.uk/news/1024/branded_news/d743/live/068cb000-191f-11f1-aabf-478e3f053ea7.jpg"
+    },
+    {
+      "id": 50159726,
+      "url": "https://www.windowslatest.com/2026/10/19/why-windows-11-still-ships-with-windows-95s-memory-manager-hidden-inside-it/",
+      "hn": "https://news.ycombinator.com/item?id=50159726",
+      "title": "Why Windows 11 still ships with Windows 95's memory manager hidden inside it",
+      "time": 1792455243,
+      "points": 162,
+      "depth": [
+        {
+          "text": "someone found **Windows 95’s memory manager** still helps **old apps** run on newer Windows",
+          "tier": "simple"
+        },
+        {
+          "text": "Microsoft **copied and recompiled** Windows 95’s **Heap Manager** source code and added it to the compatibility infrastructure. **EmulateHeap** redirects an app’s heap calls to replacements that mimic Windows 95; the old code loads from the hard drive only when enabled for an app.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say support for decades-old apps is incredible; others question whether compatibility works consistently and worry it could aid vulnerability searches.",
+      "comment_count": 103,
+      "terms": [
+        "heap manager",
+        "use-after-free",
+        "shim",
+        "API call"
+      ],
+      "entities": [
+        "Microsoft",
+        "Windows 11",
+        "Windows 95",
+        "Windows 3.x",
+        "SimCity",
+        "EmulateHeap",
+        "Joel Spolsky",
+        "Stack Overflow",
+        "Jon Ross",
+        "Raymond Chen",
+        "Windows XP",
+        "Compatibility Administrator",
+        "Windows Assessment and Deployment Kit",
+        "GTA Vice City",
+        "Need for Speed: Most Wanted",
+        "3D Pinball",
+        "Wine"
+      ],
+      "comments": [
+        {
+          "by": "abanana",
+          "text": "> The tradition goes back to SimCity, which only ran on Windows 95 because Microsoft wrote special code for it... Yes, Microsoft modified its OS just to cover up one game’s bug... The SimCity hack was a one-off The stuff around SimCity in this article is poorly written. It seems the author has misunderstood it to have been a one-off special case. I looked back at Joel Spolsky's article, and he…"
+        },
+        {
+          "by": "LASR",
+          "text": "Whatever one might think of Windows and Microsoft, the idea that you can still run apps that are 30+ years old is incredible."
+        },
+        {
+          "by": "xp84",
+          "text": "This spirit is clearly a part of MS's corporate DNA and honestly I think the world is far better off for it. No other platform owner would do this, not today at least. The most you could expect from say, Apple or Google, is that they do ship the betas. If you go all summer without fixing \"your\" \"bug\" (note: it could be that the new OS is the code that introduced the bug) it'll just crash on OS…"
+        },
+        {
+          "by": "Dwedit",
+          "text": "Why show a screenshot of a different game (SimCity 2000) when discussing SimCity?"
+        },
+        {
+          "by": "manoDev",
+          "text": "This is a great example of how implementation becomes the specification."
+        }
+      ],
+      "image": "https://www.windowslatest.com/wp-content/uploads/2026/10/How-Windows-95-code-survives-inside-Windows-11.jpg"
+    },
+    {
+      "id": 50189150,
+      "url": "https://www.theverge.com/tech/1015844/airbnb-chores-house-rules-update",
+      "hn": "https://news.ycombinator.com/item?id=50189150",
+      "title": "Airbnb bans making guests do dishes and take out the trash",
+      "time": 1792625912,
+      "points": 151,
+      "depth": [
+        {
+          "text": "Airbnb is **limiting checkout chores**, letting guests **leave dishes in the sink** instead of washing them",
+          "tier": "simple"
+        },
+        {
+          "text": "The policy applies to reservations booked on or after **November 20th**: guests can be asked to gather used towels, sort trash and recycling into indoor bins, and turn off listed amenities when they leave—but not to take garbage off-site or do tasks that take significant effort or time. Airbnb will show requests in a new **“rules and requests”** section on listings.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say guests should clean up after themselves; others say hosts shouldn’t require chores like taking out trash when a cleaning crew is coming.",
+      "comment_count": 138,
+      "terms": [],
+      "entities": [
+        "Airbnb",
+        "The Verge",
+        "Stevie Bonifield",
+        "VRBO",
+        "Booking"
+      ],
+      "comments": [
+        {
+          "by": "at1as",
+          "text": "I had two hosts cancel on me (last minute, both times around Christmas) and haven't dared to use Airbnb since (it was very inconvenient to find alternate accommodation last minute, to say the least.) I understand that there can be exceptional circumstances. However, I've stayed in more hotels by a factor of at least 25, and this has never happened once. In fact, any minor inconvenience at a hotel…"
+        },
+        {
+          "by": "dkga",
+          "text": "Contrarian view here but honestly I can't imagine not cleaning up after yourself by default. Of course I am not saying that I do a deep clean at every place I stay but if I'm staying in an AirBNB the very least I do is to leave the place in a civilised way. For example, if I use kitchen utensils I either clean them or put in the dishwasher when available. I seriously never understood people that…"
+        },
+        {
+          "by": "annzabelle",
+          "text": "My extended family rents a beach cottage for one week (saturday-saturday or sunday-sunday) every summer at a family oriented beach in North Carolina. We have done this at the same beach since the early 90s. There are local vacation rental agencies that have offered one week rentals with various packages of linens under similar terms and seasonal pricing for decades. Over the last few years, fewer…"
+        },
+        {
+          "by": "bad_haircut72",
+          "text": "I stopped using AirBnB altogether because of the rediculous cleaning rules and fees. Probably not going back but at least they're addressing it."
+        },
+        {
+          "by": "TNWin",
+          "text": "I found some hair in my Mariott bed sheets. I didn't think it was a big deal but decided to see if I could get fresh sheets. The hotel changed it at 9pm within 10 minutes. Offered me points. Apologized profusely. What do you think would have been my experience at Airbnb?"
+        }
+      ],
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/04/acastro_STK090_06.jpg?quality=90&strip=all&crop=0%2C10.761835884455%2C100%2C78.47632823109&w=1200"
+    }
+  ],
+  "glossary": {
+    "environment variables": "Settings passed to a program when it starts, which can change how it behaves.",
+    "API key": "A secret code that lets software use an online service as an approved user.",
+    "private registry credentials": "Login details for accessing a restricted store of software packages.",
+    "deployment": "Putting an app or change into use so people can access it.",
+    "intermediate CA": "Certificate authority: a service trusted to confirm website identities; an intermediate one is a middle link that can vouch for a website's certificate.",
+    "TLS": "Transport Layer Security: a way to scramble information as it travels between devices, so others can’t read it.",
+    "certificate chain": "A set of linked digital ID cards that show who vouched for a website.",
+    "certificate pinning": "A check in an app that only accepts a connection matching a certificate it expects.",
+    "IoT": "Internet of Things: everyday devices connected to the internet so they can share information or be controlled remotely.",
+    "PHP": "PHP: Hypertext Preprocessor; a language people use to make websites work.",
+    "proof-of-concept": "Proof of concept: a small demo meant to show that something can work.",
+    "LFI": "Local File Inclusion: a bug that tricks a website into loading a file from its own server.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "RCE": "Remote Code Execution: a flaw that lets an attacker make a computer run their commands from somewhere else.",
+    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
+    "integer overflow": "When a number gets bigger than its storage allows and wraps around to a different value.",
+    "regular expression": "A text pattern that tells a program what kind of words or characters to look for.",
+    "unauthenticated": "A user who has not signed in.",
+    "self-managed": "Software that an organization runs and looks after on its own systems.",
+    "CVSS": "Common Vulnerability Scoring System: a scale people use to rate how serious a security flaw is.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "crate": "A reusable package of Rust code that you can add to a project.",
+    "non_exhaustive": "A marker that tells code using a public type that more cases or fields may be added later.",
+    "UI": "User interface: the screens and controls people use to operate a device.",
+    "muscle memory": "A familiar action becoming automatic after you repeat it many times.",
+    "MLS": "Multiple Listing Service: a shared list of properties for sale used by real-estate brokers.",
+    "basalt": "A kind of rock formed when lava cools; it can make dark cliffs and columns.",
+    "lazarus taxon": "A species that turns up alive after people thought it had disappeared.",
+    "native title": "A legal recognition of people's rights to land their ancestors lived on and used.",
+    "marsupial": "A mammal whose young develop in a pouch, like a kangaroo.",
+    "heap manager": "A part of Windows that gives apps room to work and takes that room back when they’re done.",
+    "use-after-free": "Trying to use data after it has been discarded.",
+    "shim": "A small piece of code that sits between an app and Windows to change how their requests are handled.",
+    "API call": "Application Programming Interface: a request an app sends to Windows to ask it to do something."
+  }
+}
