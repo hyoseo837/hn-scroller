@@ -2,6 +2,291 @@
   "date": "2026-10-23",
   "cards": [
     {
+      "id": 50202285,
+      "url": "https://edjefferson.com/localwiki/",
+      "hn": "https://news.ycombinator.com/item?id=50202285",
+      "title": "Local Wikipedia: Wikipedia, but only for things a half hour walk from you",
+      "time": 1792710078,
+      "points": 532,
+      "depth": [
+        {
+          "text": "someone made a **Local Wikipedia** for things within a **half-hour walk** of you",
+          "tier": "simple"
+        },
+        {
+          "text": "It uses **geocoded Wikipedia pages**. If there are fewer than **25 things** close to you, it takes the closest 25 within about 6 miles; when there are more than 500 things, it includes only the closest **500**. Your location stays in the browser, and shared links don't include it.",
+          "tier": "substance",
+          "data": [
+            [
+              "fallback radius",
+              "about 6 miles"
+            ],
+            [
+              "nearby-items threshold",
+              "25 things"
+            ],
+            [
+              "result cap",
+              "500 things"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: fans say nearby articles feel more relevant; others want adjustable distance, other languages, or more varied results.",
+      "comment_count": 121,
+      "terms": [
+        "geocoded pages",
+        "wrapper"
+      ],
+      "entities": [
+        "Local Wikipedia",
+        "Wikipedia",
+        "Special:Nearby",
+        "English",
+        "Open World",
+        "Apple Maps",
+        "LookAround",
+        "Google Maps"
+      ],
+      "comments": [
+        {
+          "by": "esperent",
+          "text": "This is a great idea but I'd definitely make the distance configurable. Where I am right now would need several hours walking to reach anywhere Wikipedia worthy but if I expanded to say a 15km circle there's probably a couple of places of interest. Meanwhile if someone lives in a city they'll get loads of results. EDIT: actually this is just a wrapper around wikipedia's nearby feature I think. I…"
+        },
+        {
+          "by": "JeanCampos",
+          "text": "Great idea! top10 \"vibe code this in an afternoon\"!"
+        },
+        {
+          "by": "darkest_ruby",
+          "text": "Distances measured in yards for European destinations is an insult"
+        },
+        {
+          "by": "nomilk",
+          "text": "Weird psychological quirk: otherwise banal articles seem much more pertinent when they happen to be nearby (I just read about a random plane crash from decades ago but felt very invested in it, due to proximity). Wonder if this is related to the biological phenomena of humans tending to care more about humans who resemble themselves than those who don't (homophily)"
+        },
+        {
+          "by": "slymax",
+          "text": "Wikipedia has a nearby feature that works in other languages as well https://en.wikipedia.org/wiki/Special:Nearby"
+        }
+      ],
+      "image": "https://edjefferson.com/localwiki/share.png"
+    },
+    {
+      "id": 50203161,
+      "url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html",
+      "hn": "https://news.ycombinator.com/item?id=50203161",
+      "title": "The foolishness of \"natural language programming\" (1978)",
+      "time": 1792716721,
+      "points": 211,
+      "depth": [
+        {
+          "text": "Dijkstra argued that programming computers in our **native tongues** would make life **harder, not easier**",
+          "tier": "simple"
+        },
+        {
+          "text": "**Formal symbols** help rule out nonsense, Dijkstra says. He argues that switching to native-language instructions could **add work on both sides**, not simply make programming easier.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say LLMs make natural-language programming practical; others say the AI agent does the programming and its output is still code in a programming language.",
+      "comment_count": 127,
+      "terms": [
+        "natural language programming",
+        "formal symbolism",
+        "interface",
+        "compiler",
+        "specification",
+        "LLM"
+      ],
+      "entities": [
+        "Edsger W. Dijkstra",
+        "Vieta",
+        "Descartes",
+        "Leibniz",
+        "Boole",
+        "Inform 7",
+        "AppleScript",
+        "Rust",
+        "Python",
+        "TypeScript",
+        "TLA+",
+        "Leslie Lamport",
+        "Claude Code"
+      ],
+      "comments": [
+        {
+          "by": "Painsawman123",
+          "text": "Programming in natural language still doesn't work, Btw!\nwhenever you're using a Ml model to either autocomplete code or as an agent, you're not really programming in natural language but \"delegating\" in natural language!\nThe old skeptics weren’t wrong about the foolishness of natural language as a programming language, it's just that they assumed the only possible intermediary way to \"write\"…"
+        },
+        {
+          "by": "benrutter",
+          "text": "I think this essay has aged pretty well and remains pretty spot on. Some people will push back that agent development is \"natural language programming\" but I don't think that's right. I think in that case the agent is the one programming, and the programming still always happens in a deterministic language like Rust/Python/Typescript/etc. Maybe that'll change, but to me at least the other way…"
+        },
+        {
+          "by": "nickm12",
+          "text": "I send this article to everyone who tells me how English is now a high-level programming language, the next level of abstraction up the chain from machine language to <their favorite language>. This analogy tends to be followed by \"Just like most programmers never look at assembly code, looking at higher-level source code is going to become something only a few people do\". Dijkstra's arguments…"
+        },
+        {
+          "by": "froh",
+          "text": "I think the difference is between communicating to a purely mechanical being versus communicating to an intelligent entity: unlike programs, which are purely formal languages, we write textbooks and papers in a mix of human language and formal language. often we introduce \"just formal enough\" notations. and the intelligent reader will read in-between, inter legere literally means just that…"
+        },
+        {
+          "by": "uriegas",
+          "text": "I've had the same view since coding agents appeared. LLMs are good for summarizing, thus I tend to use them to understand code. However, the more I understand a code base the more I tend to be more picky with the agent. While the less I know about the code base, the more open I am to let it do its thing. I've realized that the agent doesn't write 'good' code, instead my vague understanding of…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50200997,
+      "url": null,
+      "hn": "https://news.ycombinator.com/item?id=50200997",
+      "title": "Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies?",
+      "time": 1792703035,
+      "points": 213,
+      "depth": [
+        {
+          "text": "people are asking why **OpenAI sells its models** instead of **building businesses** with them",
+          "tier": "simple"
+        },
+        {
+          "text": "Some commenters say selling tokens via long running agents is the **only thing that's provably working for revenue growth**; others say the models **aren't capable enough yet**. Another points to **application attempts already underway** at OpenAI.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: skeptics say the models aren't capable enough yet; others say the labs are already trying applications and may eventually build spin-off businesses.",
+      "comment_count": 207,
+      "terms": [
+        "tokens",
+        "frontier models",
+        "commodification",
+        "application-side",
+        "utility side",
+        "acquihiring",
+        "Jevons Paradox",
+        "SaaS",
+        "AGI",
+        "moat",
+        "runway"
+      ],
+      "entities": [
+        "OpenAI",
+        "Anthropic",
+        "Jane Street",
+        "Astral",
+        "ArtCraft",
+        "DeepMind",
+        "AlphaFold",
+        "Isomorphic Labs",
+        "Alex Karp",
+        "CNBC",
+        "Nvidia",
+        "Meta",
+        "Amazon",
+        "Grok",
+        "Elon",
+        "Einstein"
+      ],
+      "comments": [
+        {
+          "by": "HarHarVeryFunny",
+          "text": "Same reason people sell get rich quick schemes, whether real-estate investing, online entrepreneurship, or whatever - it's easier to get paid telling people how to try to get rich than to use the technique yourself to get rich. I doubt there are very many companies that an LLM could start/run outside of the obvious few like custom T-shirts."
+        },
+        {
+          "by": "jonnat",
+          "text": "They don't need to start 100 companies, they just need to start one, call it Jane Street 2.0 if you will, and all their funding troubles would be gone. But they don't, because that would be competing with actual intelligence in a very measurable way. Instead they keep acquihiring companies like Astral, known for carefully crafting software rather than vive coding, while claiming they are just…"
+        },
+        {
+          "by": "CoolestBeans",
+          "text": "1. They are starting to do it. Take a look at OpenAI's product portfolio, there's a galaxy of attempts at application. 2. Selling tokens via long running agents is the only thing that's provably working with respect to revenue growth. 3. They need revenue yesterday. Increases in borrowing rates means access to capital isn't what it was in the 10s. Their runway is much shorter than you would…"
+        },
+        {
+          "by": "AquiGorka",
+          "text": "This.\nGreat question, and you got answers from the haters club. If what they have is so magnificent, it should just take over... but they don't, what does that tell you about the premise then? ... it is not so geat."
+        },
+        {
+          "by": "le-mark",
+          "text": "Similar to how they tout an ai utopia. Who’s going to pay for it? Not them, but their customers will via taxes or whatever. I think the best analogy is oil. Oil companies produce oil everyone else uses it for good and ill. And thus far they’ve not been held responsible for the damage. They should be imo. Similar to oil the infrastructure to use intelligence on tap will take time to implement be…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50204754,
+      "url": "https://endler.dev/2024/move-slow-and-fix-things/",
+      "hn": "https://news.ycombinator.com/item?id=50204754",
+      "title": "Move Slow and Fix Things (2024)",
+      "time": 1792732359,
+      "points": 151,
+      "depth": [
+        {
+          "text": "someone argues you can build a **small business** without chasing **investor money** or **explosive growth**",
+          "tier": "simple"
+        },
+        {
+          "text": "Matthias Endler favors **sustainable growth** and a **long-term mindset** over hustle culture and “move fast and break things.” He warns funding can pressure founders to compromise users’ privacy or their own values. He also notes that at least **144 out of 251** companies from the YC W24 batch are building products with “AI”.",
+          "tier": "substance",
+          "data": [
+            [
+              "Companies from the YC W24 batch building products with “AI”",
+              "at least 144 out of 251"
+            ],
+            [
+              "Share of the batch",
+              "57%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some favor small businesses that grow gradually; others warn that moving slowly can cost you a career as faster competitors take the money.",
+      "comment_count": 30,
+      "terms": [
+        "VC",
+        "bootstrapped",
+        "hustle culture",
+        "unicorn",
+        "tech debt",
+        "lifestyle business"
+      ],
+      "entities": [
+        "Matthias Endler",
+        "Paul Graham",
+        "Uber",
+        "Facebook",
+        "Google",
+        "YC",
+        "Basecamp",
+        "DHH",
+        "CodeCrafters",
+        "Kickstarter",
+        "Rust"
+      ],
+      "comments": [
+        {
+          "by": "orphereus",
+          "text": ">Don’t sell out your moral compass for a quick buck. As I grow older (I'm not that old), the more I think I'm an idiot by not playing \"the game\", but I just can't make myself do it. Maybe because deep down I believe in at least karma, if not some afterlife. I found a fake quote from Dostoyevsky yesterday which said (I'm paraphrasing): \"Don't let the corruption of others be an excuse for your…"
+        },
+        {
+          "by": "polycaster",
+          "text": "I find it interesting that this moved from the top position within minutes down to the second page. Below a post with 23 points in 11 hours, while this post has 102 points in 48 minutes. It has obviously been moderated down."
+        },
+        {
+          "by": "padolsey",
+          "text": "I think the nasty truth is that a lot of people starting startups seeking VC-level funds are hoping for unicorn status, ego boosts, huge wealth. And not much else. Meanwhile a lot of everyday businesses are just ... existing, growing gradually, working hard for their customers. Somehow the VC model of startup became the norm. It's odd really. It's one of many methods of funding. But I guess it…"
+        },
+        {
+          "by": "ArcHound",
+          "text": "I agree with you and I want to do the same. That's why I work in cyber security, where we push back and think of the company and customers before short-term profits. The issue is, executives believe we have to push features first or else some mysterious competition runs us into the ground. Or sometimes even that saving on security will give them money. And since these people have the power, it's…"
+        },
+        {
+          "by": "solyin",
+          "text": "A lifestyle business makes maybe a million a year. Not a success at all, but the people running it have jobs they like and didn't take VC money to get there."
+        }
+      ],
+      "image": "https://endler.dev/2024/move-slow-and-fix-things/social.png"
+    },
+    {
       "id": 50201259,
       "url": "https://www.vanityfair.com/story/jared-kushner-hacked-phone-secret-negotiations",
       "hn": "https://news.ycombinator.com/item?id=50201259",
@@ -627,11 +912,35 @@
     }
   ],
   "glossary": {
+    "geocoded pages": "Pages linked to a place on a map, so a nearby search can find them.",
+    "wrapper": "A small tool that gives an existing tool a different, often easier, way for people to use it.",
+    "natural language programming": "Giving a computer instructions in everyday speech instead of a programming language.",
+    "formal symbolism": "A set of written symbols with fixed rules, so instructions have a precise meaning.",
+    "interface": "The names and details other code can use from a crate, without needing its inner workings.",
+    "compiler": "A tool that turns code you write into a program a computer can run.",
+    "specification": "A written description of what a program should do.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "tokens": "Small pieces of text an AI counts as it reads or writes; they can affect how much a request costs.",
+    "frontier models": "The most capable AI models a company is developing.",
+    "commodification": "When a product becomes widely available and harder to distinguish from similar products, making it tougher to charge more.",
+    "application-side": "The products people build with a technology, rather than the underlying technology itself.",
+    "utility side": "Selling the basic service or tool that other people use to build products.",
+    "acquihiring": "Buying a company mainly to bring its employees onto your team.",
+    "Jevons Paradox": "The idea that when something gets more efficient, people may use more of it overall.",
+    "SaaS": "Software as a Service: software you access over the internet, with the provider running it for you.",
+    "AGI": "Artificial General Intelligence: a hypothetical AI that could handle many kinds of tasks, not just one narrow job.",
+    "moat": "An advantage that makes it hard for competitors to take customers away from a business.",
+    "runway": "How long a business can keep paying its bills with the money it has.",
+    "VC": "Venture capitalists: investors who put money into companies hoping they will grow and earn a return.",
+    "bootstrapped": "A business started using its founders’ money or its own earnings, rather than outside investment.",
+    "hustle culture": "The idea that success requires working extremely hard, often at the cost of life outside work.",
+    "unicorn": "A startup valued at a billion dollars or more.",
+    "tech debt": "Extra cleanup work left behind when software choices make future changes harder.",
+    "lifestyle business": "A business built to support a comfortable life for its owners, rather than to grow as fast as possible.",
     "MIVD": "Netherlands Defense Intelligence and Security Service: the Dutch government agency described as monitoring Kushner’s phone.",
     "GRU": "General Staff of the Armed Forces of the Russian Federation: the Russian organization the article says the operative had belonged to.",
     "signatory": "Someone authorized to access an account and potentially make transactions, even if they do not own it.",
     "slush fund": "A shared pool of money kept off the books for political or diplomatic goals.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "training data": "The examples and text used to teach an AI system how to respond.",
     "system prompt": "Extra instructions set before a conversation that guide how the AI answers.",
     "container runtime": "A program that sets up a container and starts the process inside it.",
@@ -671,7 +980,6 @@
     "mod API": "A set of rules that lets people make add-ons that work with a game.",
     "world seed": "A number the game uses to decide how to generate a world.",
     "LOC": "Lines of code: a count of how many lines a program contains.",
-    "compiler": "A tool that turns code you write into a program a computer can run.",
     "pull request": "A proposal to add your code changes to a shared project, usually asking others to review them first.",
     "AI agent": "An autonomous computer program that can carry out tasks."
   }
