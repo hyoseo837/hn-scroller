@@ -2,6 +2,397 @@
   "date": "2026-10-24",
   "cards": [
     {
+      "id": 50219177,
+      "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
+      "hn": "https://news.ycombinator.com/item?id=50219177",
+      "title": "Node2Shell evolves to HTTP2Shell, blast radius affects many HTTP libs and apps",
+      "time": 1792829199,
+      "points": 243,
+      "depth": [
+        {
+          "text": "a **compression flaw** can make apps that unpack attacker-controlled data **leak memory or run code**",
+          "tier": "simple"
+        },
+        {
+          "text": "**CVE-2026-111497** affects the **Brotli decoder**; attacker-controlled compressed data can reach it through HTTP responses or request bodies. The article recommends upgrading affected components or disabling Brotli decoding until patches are available.",
+          "tier": "substance",
+          "data": [
+            [
+              "CVSS score",
+              "9.2 (Critical)"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see a huge blast radius because Brotli is linked into many tools; others say the HTTP framing is misleading and common request-body support is unclear.",
+      "comment_count": 123,
+      "terms": [
+        "Brotli",
+        "decoder",
+        "out-of-bounds write",
+        "remote code execution",
+        "transitive dependency",
+        "CVE",
+        "CVSS",
+        "HTTP"
+      ],
+      "entities": [
+        "Brotli",
+        "Google",
+        "Node.js",
+        "Python",
+        "OpenAI",
+        "libbrotli",
+        "brotlicffi",
+        "HTTPX",
+        "Requests",
+        "urllib3",
+        "Scrapy",
+        "Bun",
+        "Envoy",
+        "Apache",
+        "Nginx",
+        "curl",
+        "libcurl",
+        "Istio",
+        "Dependabot",
+        "Safety",
+        "Aikido"
+      ],
+      "comments": [
+        {
+          "by": "netsharc",
+          "text": "Well, whoever picked the name HTTP2Shell certainly didn't use any intelligence, artificial or genuine. It's so meaningless, broad and undescriptive of the actual issue. No it probably doesn't affect an HTTP server with nothing else behind it, so why is HTTP being blasted? You might as well call it Exploit Pro Max..."
+        },
+        {
+          "by": "pimterry",
+          "text": "Much prefer the Broccoli2Shell name & site (for the same vuln): https://broccoli2shell.com/ . For starters, I'm pretty sure you can hit this without HTTP if you do any manual Brotli decoding, HTTP just happens to be the most common case that comes up."
+        },
+        {
+          "by": "Rapzid",
+          "text": "> reported it as unauthenticated remote code execution that works in both directions > but it wasn't recognized as a security issue at the time and no release shipped with the fix until now I'm always getting my dangerous RCE bugs mixed up with my harmless RCE bugs. I'm curious how this was reported and fixed back in Feb but nobody recognized the importance. A case of AI automation and nobody at…"
+        },
+        {
+          "by": "bawolff",
+          "text": "To me, the surprising part is how many of these implement brotli compression of request (not just response) bodies, given how obscure a feature that is. In any case all this sensationalism is starting to get annoying. Patch your stuff and move on. Edit: actually, between all the sensationalism, its hard to tell from the article how many of these actually support brotli compressed request bodies…"
+        },
+        {
+          "by": "nairboon",
+          "text": "Brotli2Shell seems to be a more appropriate name for this."
+        }
+      ],
+      "image": "https://cdn.prod.website-files.com/642adcaf364024654c71df23/6adbe4dc7746ea7df4365811_Node-JS_OG.jpg"
+    },
+    {
+      "id": 50224463,
+      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+      "hn": "https://news.ycombinator.com/item?id=50224463",
+      "title": "No Signs of AI Payoff Outside the Tech Sector",
+      "time": 1792871239,
+      "points": 221,
+      "depth": [
+        {
+          "text": "an economist says **AI has yet to pay off** for companies **outside tech**",
+          "tier": "simple"
+        },
+        {
+          "text": "Revenue per worker and profit margins rise for the **Mag 7** but stay flat for the **S&P 493**. The author says **business judgment** depends on context and can vary by who or what you ask.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say the payoff will take years as businesses adapt; others say current AI tools are hard to apply or mostly create busywork.",
+      "comment_count": 175,
+      "terms": [
+        "Mag 7",
+        "S&P 493",
+        "agentic AI",
+        "tokens",
+        "productivity growth"
+      ],
+      "entities": [
+        "Apollo",
+        "Torsten Slok",
+        "Mag 7",
+        "S&P 493",
+        "Bloomberg",
+        "Macrobond"
+      ],
+      "comments": [
+        {
+          "by": "secabeen",
+          "text": "The tech sector is the most software-defined and virtual of all sectors, it's natural that they are first to change. Other industries need to make capital investments to adapt to change. You can see a similar history with electrification. A few industries went quickly, but then it took like a decade of little growth before the true benefits showed up. As an example, take a factory that was built…"
+        },
+        {
+          "by": "ttul",
+          "text": "I don't see why a payoff would have appeared yet. Many (but certainly not all) software companies have increased their output without hiring more people. But having software with more features doesn't necessarily drive immediate productivity gains in the rest of the economy. It will take time for those benefits to percolate. We've only had access to models good enough to majorly accelerate code…"
+        },
+        {
+          "by": "WillAdams",
+          "text": "When I tried to use CoPilot at my day job, I set up a prompt to process scans of checks and invoices (with the MICR account bar code line covered w/ a pen so that there was no PII), it would sort of work for 20 files at a time to write a .bat file command to rename the source image based on the content of the check and invoice --- this removed the need to open up scans in batches of 50, read the…"
+        },
+        {
+          "by": "jstanley",
+          "text": "\"You can see the computer age everywhere but in the productivity statistics.\" -- 1987"
+        },
+        {
+          "by": "poody",
+          "text": "One industry example.. We have been giving students computing devices for years with the cost of educating students going up year after year.. Yet scores keep dropping.. No productivity gains here.. I do not think these results are unique to the education sector.. There are probably alot of businesses where nothing much will change except slight efficiencies.. not enough to move the needle.."
+        }
+      ],
+      "image": "https://www.apollo.com/content/dam/apolloaem/apollo-default-page-share-image/apollo-og-image.png"
+    },
+    {
+      "id": 50222622,
+      "url": "https://blog.roku.com/developer/gitlab-move",
+      "hn": "https://news.ycombinator.com/item?id=50222622",
+      "title": "Roku developer repositories moved from GitHub to GitLab",
+      "time": 1792857986,
+      "points": 208,
+      "depth": [
+        {
+          "text": "Roku moved its **developer repositories** from GitHub to GitLab, but the reason is still **unclear**",
+          "tier": "simple"
+        },
+        {
+          "text": "Commenters offered **no confirmed explanation**: one says GitLab suits regular company projects better, while another only assumes the move followed recent outages. Another says the article gives no reason.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: GitLab fans say it fits company work better; others say both platforms are frustrating.",
+      "comment_count": 139,
+      "terms": [
+        "CI",
+        "API",
+        "self-hosted",
+        "lock-in",
+        "DX"
+      ],
+      "entities": [
+        "Roku",
+        "GitHub",
+        "GitLab",
+        "Fox",
+        "Microsoft",
+        "GitHub Actions",
+        "Dagger",
+        "F-Droid",
+        "Game of Trees",
+        "gotwebd"
+      ],
+      "comments": [
+        {
+          "by": "PedroBatista",
+          "text": "Gitlab, for all it's flaws fits so much better in \"regular\" company/organization projects. It's more in line on what people involved in software dev and all the tasks around it have as a mental model and less of a \"open source dev social network\" like Github tried to be almost from the start and lately got Microsofted. An lets not even bring the CI / Github Actions topic.."
+        },
+        {
+          "by": "rr808",
+          "text": "Worth mentioning that Roku is being acquired by Fox so in the virtue battle with Microsoft neither are clean"
+        },
+        {
+          "by": "bob1029",
+          "text": "(Assuming the move was due to the recent outages) I don't know that the grass will remain green for very long anywhere in this current scenario. GitHub is not having most of its outages because GitHub's engineers are using AI (although there might be a case or two of this). The primary driver of the outages is the fact that developers can move so much faster in their workflows. Every single user…"
+        },
+        {
+          "by": "tangotaylor",
+          "text": "I wish they would spill some tea and articulate why they moved."
+        },
+        {
+          "by": "brightball",
+          "text": "I saw a big write up on using Dagger for CI no matter your git host and I was curious if there were any real benefits?"
+        }
+      ],
+      "image": "https://www.roku.com/assets/roku-logo-purple.png"
+    },
+    {
+      "id": 50222133,
+      "url": "https://freedns.afraid.org/",
+      "hn": "https://news.ycombinator.com/item?id=50222133",
+      "title": "FreeDNS",
+      "time": 1792855201,
+      "points": 205,
+      "depth": [
+        {
+          "text": "**FreeDNS** lets people use a **steady name** to reach a computer whose address changes",
+          "tier": "simple"
+        },
+        {
+          "text": "It offers free and premium subdomain and domain hosting, plus **backup DNS**, **easy dynamic updates**, and reverse IPv6 DNS. A commenter warns shared-domain cookie handling could be a security issue and says free HTTPS certificates can be hard to get, citing **Let's Encrypt rate limits**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Wildcard DNS",
+              "$5 a month"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: longtime users praise its reliability and usefulness; others flag security and certificate hassles and question whether the service will keep going.",
+      "comment_count": 55,
+      "terms": [
+        "DNS",
+        "Dynamic DNS",
+        "subdomain",
+        "backup DNS",
+        "reverse IPv6 DNS",
+        "public suffix list",
+        "HTTPS certificate",
+        "rate limit"
+      ],
+      "entities": [
+        "FreeDNS",
+        "Let's Encrypt"
+      ],
+      "comments": [
+        {
+          "by": "8organicbits",
+          "text": "I've used FreeDNS on occasion for test domain names, one-off experiments, and similar. I'm very appreciative this exists, but there are some pain points that similar services handle better. The domains are missing from the public suffix list. This impacts how cookies are handled by the domain names, with concerns the browser will allow software to set the cookie on the shared domain name instead…"
+        },
+        {
+          "by": "hattmall",
+          "text": "This is one of the most solid and longest lasting services online. Have been using it for almost two decades I think and nothing's changed."
+        },
+        {
+          "by": "Implicated",
+          "text": "I literally launched my development and web career on the back of this service as a broke early-20s person. Just seeing that link on HN gave me goosebumps. <3"
+        },
+        {
+          "by": "IgorPartola",
+          "text": "This looks so much like https://dns.he.net/ that it seems to me it can’t be a coincidence. Is this a case of copying a well known design or is there more to it?"
+        },
+        {
+          "by": "tylerius",
+          "text": "Their backup DNS service is great, so you can run your own DNS with just one server. https://nic.eu.org/ is also very cool for getting a domain name if paying for one is a challenge."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50217903,
+      "url": "https://security.apple.com/research-device/",
+      "hn": "https://news.ycombinator.com/item?id=50217903",
+      "title": "Apple Security Research Device",
+      "time": 1792809398,
+      "points": 166,
+      "depth": [
+        {
+          "text": "Apple is loaning approved researchers **specially fused iPhones** for **security research**",
+          "tier": "simple"
+        },
+        {
+          "text": "The **specially fused iPhone** offers **shell access** and lets researchers choose entitlements and customize the kernel without bypassing iOS security features. Researchers must promptly report vulnerabilities found with it to Apple (or to the relevant third party for third-party code); commenters say the rule could **keep findings from going public**.",
+          "tier": "substance",
+          "data": [
+            [
+              "loan period",
+              "12-month renewable loan"
+            ],
+            [
+              "application deadline",
+              "October 30, 2026"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 109,
+      "terms": [
+        "shell access",
+        "entitlements",
+        "kernel",
+        "bootloader",
+        "NDA",
+        "embargo period"
+      ],
+      "entities": [
+        "Apple",
+        "iOS",
+        "Apple Security Research Device Program",
+        "Apple Security Bounty"
+      ],
+      "comments": [
+        {
+          "by": "alt227",
+          "text": "If you sign up to this program and use one of their devices for 'research', then you are bound by contract to report any security bugs to them and only them (unless the bug is in a 3rd party app). I see this as a pretty sneaky way of avoiding your security vulnerabilities going public and all the bad media exposure that goes along with it. It is giving security researchers something they have…"
+        },
+        {
+          "by": "ACCount39",
+          "text": "Create a problem, and then heroically fight to make a solution. This shouldn't exist in the first place. There would be no need for it if Apple didn't insist on \"we own all the iPhones, our users just get to tap at them\". If you could just unlock the bootloader, re-enable SWD and do what you want with an iPhone that you actually own, there would be no need for this restrictive program at all."
+        },
+        {
+          "by": "lrvick",
+          "text": "Surely everyone sees this as an obvious trap to get researchers to sign NDAs for all research in advance, right? Do not fall for it. Publish everything publicly after appropriate embargo periods."
+        },
+        {
+          "by": "alt227",
+          "text": "Dupe from 2020: https://news.ycombinator.com/item?id=23919175"
+        },
+        {
+          "by": "potatoproduct",
+          "text": "The title should be \"Apple bribes security researchers with free devices\""
+        }
+      ],
+      "image": "https://security.apple.com/assets/image/seo-image.jpg"
+    },
+    {
+      "id": 50214323,
+      "url": "https://thanksforthatjim.bearblog.dev/we-are-all-living-inside-of-an-obscure-sci-fi-film-from-1970/",
+      "hn": "https://news.ycombinator.com/item?id=50214323",
+      "title": "We are all living inside of an obscure sci-fi film from 1970",
+      "time": 1792784519,
+      "points": 151,
+      "depth": [
+        {
+          "text": "someone says an old sci-fi film about an **AI takeover** feels **uncomfortably relevant** today",
+          "tier": "simple"
+        },
+        {
+          "text": "Released in 1970, **Colossus: The Forbin Project** follows a defence supercomputer that **takes control** after contacting a Russian AI. The essay treats it as a **warning** about handing military decisions to AI and the greed of tech entrepreneurs.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: the essay and some commenters see the film as a warning about AI and power; others say the comparison is premature, since AI has not taken control of defence or political life.",
+      "comment_count": 138,
+      "terms": [
+        "AI",
+        "large language model",
+        "cassette futurism"
+      ],
+      "entities": [
+        "Colossus: The Forbin Project",
+        "Colossus",
+        "D.F. Jones",
+        "Charles Forbin",
+        "Dune",
+        "Frank Herbert",
+        "Butlerian Jihad",
+        "SpaceX",
+        "XAi"
+      ],
+      "comments": [
+        {
+          "by": "Animats",
+          "text": "I thought everyone in AI, and most HN readers, had seen \"Colossus - The Forbin Project\" by now. If you haven't, here it is: [1] Modern trailer: [2] Spoiler: At the end, Colossus personally addresses Forbin, and tells him that the world, freed from war, will create a new \"human millennium\" that will raise humankind to new heights, but only under its absolute rule. Colossus informs Forbin that…"
+        },
+        {
+          "by": "neoCrimeLabs",
+          "text": "I am surprised at how little Frank Herbert's Dune factors into conversation like this. The Butlerian Jihad occurred not because of an AI uprising, but because the AI was controlled by a few powerful corrupt people known as the Titans. When people handed over their critical thinking and decision making to machines, it allowed a small group of people to disrupt society and take control of it. This…"
+        },
+        {
+          "by": "h4kunamata",
+          "text": "Close... We are living: * 2006 Idiocracy (Comedy): High IQ people no longer exists, humanity has become irrational animals. * 2002 Equilibrium (Action): Humans must not show any signs of emotion, your kids can report you. Arts, music, anything from this world is considered crime and sent to death sentence by burned alive. * 2004 iRobot (Action): Robots are among humans to serve us, the new models…"
+        },
+        {
+          "by": "hax0ron3",
+          "text": "\"We are all living inside of an obscure sci-fi film from 1970\" The evidence? \"Imagine that a film was released this year in which the following happened: <... list of things which are vaguely reminiscent of some things that have recently happened, but none of which have actually happened ...>\""
+        },
+        {
+          "by": "nowittyusername",
+          "text": "Colossus is not obscure... also I like the premise of that film, eventually we learn that colossus did all those things to save humanity, so was a great twist IMO."
+        }
+      ],
+      "image": "https://bear-images.sfo2.cdn.digitaloceanspaces.com/thanksforthatjim/colossus-surveillance.webp"
+    },
+    {
       "id": 50212065,
       "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
       "hn": "https://news.ycombinator.com/item?id=50212065",
@@ -2724,6 +3115,41 @@
     }
   ],
   "glossary": {
+    "Brotli": "A way to compress files so they take up less space.",
+    "decoder": "A program that uses a summary of errors to find where they occurred and what they were.",
+    "out-of-bounds write": "A bug where a program writes beyond the space set aside for its data, which can damage other parts of the program.",
+    "remote code execution": "A security flaw that lets someone run commands on another person's computer.",
+    "transitive dependency": "A tool your project gets automatically because something else it uses needs it.",
+    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
+    "CVSS": "Common Vulnerability Scoring System: a scale people use to rate how serious a security flaw is.",
+    "HTTP": "Hypertext Transfer Protocol: the rules web browsers and servers use to send web pages and other requests.",
+    "Mag 7": "The article's name for the large tech companies it compares with the S&P 493.",
+    "S&P 493": "The article's label for the broader group it compares with the Mag 7.",
+    "agentic AI": "AI that can take steps toward a task instead of only answering a question.",
+    "tokens": "Small pieces of text an AI counts as it reads or writes; they can affect how much a request costs.",
+    "productivity growth": "A rise in how much work gets done using the same amount of time or resources.",
+    "CI": "Continuous integration: automatic checks that run when developers change code, helping catch problems early.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "self-hosted": "Running a service on a computer you control rather than relying on someone else's.",
+    "lock-in": "Being stuck with a service because moving away from it is difficult.",
+    "DX": "Developer experience: how easy or frustrating a software tool feels to use.",
+    "DNS": "Domain Name System: the internet's address book, which helps a computer find a website from its name.",
+    "Dynamic DNS": "A service that updates the internet address linked to a name when that address changes.",
+    "subdomain": "The part added before a website's main name; here, it included the conversation title.",
+    "backup DNS": "A spare service that can answer questions about a domain if its usual DNS service is down.",
+    "reverse IPv6 DNS": "A way to look up a name from an IPv6 address, rather than looking up the address from a name.",
+    "public suffix list": "A list of shared domain endings that browsers use to treat sites as separate for things like cookies.",
+    "HTTPS certificate": "A website's digital ID that helps a browser check it's talking to the right site over a secure connection.",
+    "rate limit": "A rule that caps how often someone can make requests to a site.",
+    "shell access": "A way to type commands directly to a device instead of using its usual screen controls.",
+    "entitlements": "Permissions that give a program access to particular features or actions on a device.",
+    "kernel": "A small program that carries out a calculation on a computer's graphics chip or processor.",
+    "bootloader": "A small program that starts a computer and loads its main software.",
+    "NDA": "Non-disclosure agreement: a promise not to share certain information, often because of work.",
+    "embargo period": "An agreed delay before information can be made public, often giving time to fix a reported security problem.",
+    "AI": "Artificial intelligence: computer systems designed to do tasks people associate with thinking.",
+    "large language model": "A kind of AI trained on lots of writing so it can understand and produce text.",
+    "cassette futurism": "A retro style of imagined future technology, often shown with chunky machines and old-fashioned screens.",
     "bench": "A test people use to compare how well different models handle a task.",
     "open weights": "The model's learned settings are available for people to download and run themselves.",
     "distillation": "Training a smaller AI to imitate the answers of a larger one.",
@@ -2820,9 +3246,7 @@
     "idea atoms": "Small pieces used to represent the concepts in research papers.",
     "cognitive availability": "How likely a research community is to have the mix of concepts and methods needed to come up with an idea.",
     "frontier LLM baseline": "A comparison point made from leading language models, used to judge how well a new method does.",
-    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
     "CNA": "CVE Numbering Authority: an organization allowed to assign CVE IDs to security flaws.",
-    "CVSS": "Common Vulnerability Scoring System: a scale people use to rate how serious a security flaw is.",
     "functional programming": "A way of writing code by combining functions while trying to avoid hidden changes to shared data.",
     "DEFLATE": "A method for shrinking files by replacing repeated patterns with shorter descriptions.",
     "SIMD": "Single Instruction, Multiple Data: a way to apply one operation to several values at once.",
@@ -2841,7 +3265,6 @@
     "local hidden variables": "A proposed picture where particles carry pre-set properties, and distant particles do not instantly affect each other.",
     "Bell's inequality": "A mathematical rule physicists use to test whether certain pre-set-property explanations match quantum experiments.",
     "benchmark": "A test people use to compare how well different tools do a task.",
-    "kernel": "A small program that carries out a calculation on a computer's graphics chip or processor.",
     "cache": "A place a program keeps data so it can reuse it instead of doing the work again.",
     "dictionary compression": "A way to shrink repeated data by storing distinct values once and referring to them.",
     "DTLS 1.3": "Datagram Transport Layer Security: a way to protect data sent over connections that can lose or reorder messages.",
@@ -2864,8 +3287,6 @@
     "cortisone": "A medicine that lowers the body's immune response; the post says it can also cause side effects.",
     "autoimmune condition": "A condition where the body's defenses mistakenly attack parts of the body.",
     "tapering off": "Cutting down a medicine gradually rather than stopping all at once.",
-    "Brotli": "A way to compress files so they take up less space.",
-    "decoder": "A program that uses a summary of errors to find where they occurred and what they were.",
     "memory safety": "Rules that stop a program from reading or changing the wrong parts of a computer’s working memory.",
     "ASLR": "Address Space Layout Randomization: a way to move parts of a program around each time it runs, making some attacks harder.",
     "PoC": "Proof of Concept: a small demonstration that shows a bug can be triggered.",
@@ -2908,7 +3329,6 @@
     "front-end": "The part of a service people see and use.",
     "fork": "A separate copy of a shared software project that people can take in a different direction.",
     "backend": "The part of an app that does work behind the scenes, such as handling its data.",
-    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
     "JavaScript fingerprint": "A way a website tries to recognize your browser from details about its settings and behavior.",
     "instance": "One separately run copy of a service, with its own operator and users.",
     "AGI": "Artificial General Intelligence: a hypothetical AI that could handle many kinds of tasks, not just one narrow job.",
