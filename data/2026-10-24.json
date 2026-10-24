@@ -1,0 +1,2923 @@
+{
+  "date": "2026-10-24",
+  "cards": [
+    {
+      "id": 50212065,
+      "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "hn": "https://news.ycombinator.com/item?id=50212065",
+      "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
+      "time": 1792774748,
+      "points": 1017,
+      "depth": [
+        {
+          "text": "Moonshot's **Kimi models** are drawing attention for their **price** and **cybersecurity limits**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter said Kimi K3.1 Pro **tied Sonnet 5.5 at 93** on the Pac-Man bench, for **$0.68** versus Sonnet's $1.61. Others complained about five-hour subscription quotas, and one quoted Moonshot saying its **offensive cyber capability** stays below what its pipeline can produce.",
+          "tier": "substance",
+          "data": [
+            [
+              "Pac-Man bench score",
+              "93"
+            ],
+            [
+              "Kimi price",
+              "$0.68"
+            ],
+            [
+              "Kimi time",
+              "11 min"
+            ],
+            [
+              "Sonnet price",
+              "$1.61"
+            ],
+            [
+              "Sonnet time",
+              "14 min"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see strong benchmark results for the price; subscription users say the five-hour limits make Kimi unusable.",
+      "comment_count": 618,
+      "terms": [
+        "bench",
+        "open weights",
+        "distillation",
+        "offensive cyber capability"
+      ],
+      "entities": [
+        "Kimi",
+        "Moonshot",
+        "Sonnet",
+        "Pac-Man bench"
+      ],
+      "comments": [
+        {
+          "by": "simonw",
+          "text": "Someone just shared Moonshot's \"creators campaign docs\", which are useful for spotting people who are boosting the Moonshot narrative (and might be being paid to do so) - examples like \"It's over for image / video model. Kimi can CODE motion graphics.\" https://twitter.com/elshayib_/status/2113734602032312731"
+        },
+        {
+          "by": "ranyume",
+          "text": "I did some tests. I found it interesting that in the reasoning content the model identifies itself as Kimi by moonshot and sometimes it assumes ChatGPT as identity. Then sometimes it references the need to be approved by \"the evaluator\", other times it references global system guidelines / moonshot guidelines, and something about an phantom instruction line being \"you are an assistant responding…"
+        },
+        {
+          "by": "arjie",
+          "text": "Fascinating that we’re converging on AI safety and alignment in time across jurisdictions. The cybersecurity approach taken here is interesting because should the model be opened it’s still not dealignable because it just doesn’t know enough. The slow warming of the water is a good approach. I’ve been using abliteration.ai’s cybersecurity models to pentest my own software and it produces much…"
+        },
+        {
+          "by": "besterman23",
+          "text": "There is a ton of questions to ask regarding their removal of cybersecurity data. First, how much “cybersecurity data” is just standard software knowledge that one can derive cyber security exploits from? Did they also get rid of all references to hacking in general? Are they implying that all the recent exploits are just things that were already in the data? For a model it doesn’t seem that far…"
+        },
+        {
+          "by": "thefourthchime",
+          "text": "Here are the results from the Pac-Man bench. It does pretty well for the price, around Sonnet 5.5. Kimi K3.1 Pro ties Sonnet 5.5 at 93, for $0.68 and 11 min vs Sonnet's $1.61 and 14 min. Kimi K3.1 Pro: https://jonclegg.github.io/pacman-bakeoff/#kimi-k3.1-pro Claude Sonnet 5.5: https://jonclegg.github.io/pacman-bakeoff/#claude-sonnet-5-5"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50211474,
+      "url": "https://blog.calif.io/p/iphone",
+      "hn": "https://news.ycombinator.com/item?id=50211474",
+      "title": "Today, we hacked what we'd set out to hack: the iPhone",
+      "time": 1792772510,
+      "points": 1017,
+      "depth": [
+        {
+          "text": "**Calif** showed off **iPhone hacks** at Hexacon, with more details promised later",
+          "tier": "simple"
+        },
+        {
+          "text": "Calif's Thai Duong says they'll publish the **technical details** over the coming weeks. The team says it has disclosed **most of the bugs** to Apple and reported **close to 100 bugs** there so far in 2026.",
+          "tier": "substance",
+          "data": [
+            [
+              "bugs reported to Apple",
+              "close to 100"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some call the demos impressive; others worry the research could help spyware vendors.",
+      "comment_count": 637,
+      "terms": [
+        "APT",
+        "root shell",
+        "jailbreaking",
+        "Lockdown mode"
+      ],
+      "entities": [
+        "Calif",
+        "Thai Duong",
+        "Apple",
+        "iPhone",
+        "iMessage",
+        "iOS",
+        "Hexacon"
+      ],
+      "comments": [
+        {
+          "by": "bastard_op",
+          "text": "Israeli spyware vendors thank you for your contribution."
+        },
+        {
+          "by": "dzonga",
+          "text": "the PDF thing isn't exploited the israeli hacking group a lot ? hell wasn't it what caused that Saudi journalist to get killed in the Saudi embasssy cz Israeli's sold the software to Saudis ?"
+        },
+        {
+          "by": "jeroenhd",
+          "text": "Very cool demos, but now I'm interested to know: does enabling Lockdown mode help at all against these exploits? It'll theoretically protect against a lot of common attack vectors, but I'm curious about its real-life effectiveness."
+        },
+        {
+          "by": "slowin",
+          "text": "#3 is so nice, I want root access to my phone. Does anyone know if doing this can lock Apple out from updating/removing it?"
+        },
+        {
+          "by": "aemoron",
+          "text": "What's with iOS and pdfs pwning them? Reminds me of the ForcedEntry in Pegasus. https://projectzero.google/2022/03/forcedentry-sandbox-escap... https://www.trendmicro.com/en_gb/research/21/i/analyzing-peg..."
+        }
+      ],
+      "image": "https://substackcdn.com/image/youtube/w_728,c_limit/_GJVKVNMczM"
+    },
+    {
+      "id": 50207910,
+      "url": "https://music.apple.com/this-url-doesnt-exist",
+      "hn": "https://news.ycombinator.com/item?id=50207910",
+      "title": "Apple Music 404 Not Found",
+      "time": 1792758527,
+      "points": 854,
+      "depth": [
+        {
+          "text": "someone made Apple's **404 page** look like an **old iPod**, with music and a hidden game",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter found the bricks game by opening Settings>About and holding the center button for 5 seconds. Others praised the **click wheel**'s feel and pointed out **1:30 song previews**.",
+          "tier": "substance",
+          "data": [
+            [
+              "song preview length",
+              "1:30"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 248,
+      "terms": [
+        "404 Not Found",
+        "SRE",
+        "click wheel",
+        "MP3 player",
+        "mainboard",
+        "crowdfunding"
+      ],
+      "entities": [
+        "Apple Music",
+        "Apple",
+        "iPod",
+        "Safari",
+        "U2",
+        "Songs of Innocence",
+        "The Dixie Chicks",
+        "The Chicks",
+        "Metallica",
+        "rp2350",
+        "Sprout Pi"
+      ],
+      "comments": [
+        {
+          "by": "robot_jesus",
+          "text": "I can't believe no one I've seen has called out the secret game! Go to Settings>About and then hold the center button for 5 seconds. I used to play so much of this bricks game in college when procrastinating from studying in the library."
+        },
+        {
+          "by": "sherburt3",
+          "text": "Really is heartbreaking that the click wheel is such an incredible and satisfying user interface but technology has evolved such that we have no need for it anymore."
+        },
+        {
+          "by": "ljoshua",
+          "text": "I chuckle knowing that somewhere in Apple there is an SRE or engineer who is getting paged for elevated 404 rates, and has to silence the pages hoping that no real missing page issue crops up while we all hit this page. :)"
+        },
+        {
+          "by": "sohrob",
+          "text": "It's kind of nice seeing Apple get a tad whimsical with things like this. We don't really get that side of the company very often."
+        },
+        {
+          "by": "illwrks",
+          "text": "Playlist data below for anyone interested: https://music.apple.com/includes/ipod/data/us/en-US.json"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50208837,
+      "url": "https://www.kadoa.com/energy-prices/insights/investor-owned-utilities",
+      "hn": "https://news.ycombinator.com/item?id=50208837",
+      "title": "Investor-owned utilities charge 23% more for electricity than public providers",
+      "time": 1792762870,
+      "points": 545,
+      "depth": [
+        {
+          "text": "homes paid **23% more** for electricity from **investor-owned utilities** than public ones in 2025",
+          "tier": "simple"
+        },
+        {
+          "text": "In 2025, homes paid **17.8¢ per kilowatt-hour** at investor-owned utilities, versus 14.5¢ at public utilities and 14.1¢ at co-ops. Since 2020, investor-owned prices rose **34%**, while public ones rose 19%, against 24% inflation. The page says public power’s location and tax advantages explain some of the gap, but **not why it grew**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Investor-owned price per kilowatt-hour (2025)",
+              "17.8¢"
+            ],
+            [
+              "Public utility price per kilowatt-hour (2025)",
+              "14.5¢"
+            ],
+            [
+              "Co-op price per kilowatt-hour (2025)",
+              "14.1¢"
+            ],
+            [
+              "Investor-owned price increase since 2020",
+              "34%"
+            ],
+            [
+              "Public utility price increase since 2020",
+              "19%"
+            ],
+            [
+              "Inflation since 2020",
+              "24%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Several camps: some want public ownership because utilities are natural monopolies; others say the data misses costs, taxes, and location; others favor competition or member-owned co-ops.",
+      "comment_count": 392,
+      "terms": [
+        "investor-owned utility",
+        "public utility",
+        "co-op",
+        "kilowatt-hour",
+        "natural monopoly",
+        "rate case"
+      ],
+      "entities": [
+        "US Energy Price Monitor",
+        "Kadoa",
+        "EIA",
+        "BLS",
+        "LADWP",
+        "Long Island Power Authority",
+        "New York State Electric & Gas",
+        "San Diego Gas & Electric",
+        "Rochester Gas & Electric",
+        "Southern California Edison",
+        "National Grid",
+        "PG&E"
+      ],
+      "comments": [
+        {
+          "by": "mig39",
+          "text": "Alberta's electricity system is Canada's example of this. \"de-regulation\" meant the separation of generation, distribution and retail. Decades after this was supposed to lower the price of electricity, it's done the opposite. Big corporations are now guaranteed a profit at each layer of the system. There is no competition, because why would they compete if they're guaranteed a profit? So the…"
+        },
+        {
+          "by": "solfox",
+          "text": "This whole \"but government is inefficient\" argument has never convinced me. Our local electric provider has as bad or worse bureaucracy and ever-increasing rates. Bureaucracy is just a symptom of aging human systems, and it can be fixed. Monopolies that serve the public good should never been profit driven, full stop."
+        },
+        {
+          "by": "yttrium",
+          "text": "Utilities should at minimum not have a profit motive involved, but the fact that we've been so happy to deliver vast profits to shareholders instead of proofing our grid has been a real tragedy."
+        },
+        {
+          "by": "ianm218",
+          "text": "This feels like kinda of a useless comparison if we don't know about the tax rates they pay, cost of capital, adjusting for geographic location and local regulations etc. I.e. the largest increase was seen in NY where it is really expensive to do anything and high taxes."
+        },
+        {
+          "by": "pandinus",
+          "text": "I live in a counter-example. The only water and electric utility available is city-owned and I pay triple the amount of my sister and her family that lives in another city yet has 4+ private utility companies all competing with each other. And she has a house more than twice the size of mine! Bring on the competition!"
+        }
+      ],
+      "image": "https://kadoa-datasets.b-cdn.net/energy-prices/data/2026-10-23T19-20-05-967f73dc/og-investor-owned-utilities.png"
+    },
+    {
+      "id": 50208558,
+      "url": "https://keepandroidopen.org/?",
+      "hn": "https://news.ycombinator.com/item?id=50208558",
+      "title": "Your Phone Is About to Stop Being Yours: 70 Days Until Lockdown",
+      "time": 1792761582,
+      "points": 515,
+      "depth": [
+        {
+          "text": "Google plans to require **Android app developers to register**, raising fears that **sideloading** will get harder",
+          "tier": "simple"
+        },
+        {
+          "text": "The page says the rule starts in **2027** and asks developers for **government ID**, private signing-key evidence, and app identifiers. One commenter says unsigned APKs remain installable after a **24-hour wait**; another says the delay helps slow tech-support scams.",
+          "tier": "substance",
+          "data": [
+            [
+              "planned start",
+              "2027"
+            ],
+            [
+              "cooling-off period",
+              "24-hour"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: critics say registration threatens Android's openness; a commenter says the 24-hour wait is a worthwhile compromise that slows tech-support scams.",
+      "comment_count": 362,
+      "terms": [
+        "sideloading",
+        "APK",
+        "private signing key",
+        "Google Play Protect",
+        "Google Play Services",
+        "adb",
+        "KYC",
+        "F-Droid"
+      ],
+      "entities": [
+        "Google",
+        "Android",
+        "F-Droid",
+        "Google Play Protect",
+        "Google Play Services",
+        "Apple",
+        "iOS",
+        "EFF",
+        "Cory Doctorow",
+        "GrapheneOS",
+        "Termux",
+        "BitChat"
+      ],
+      "comments": [
+        {
+          "by": "NackerHughes",
+          "text": "Starting in 2027, a silent update, nonconsensually pushed by Google, will block every Android app whose developer hasn't registered with Google, signed their contract, paid up, and handed over government ID. Every app and every device, worldwide, with no opt-out. This includes apps shared between friends, distributed through F-Droid, built by hobbyists for personal use. Independent developers…"
+        },
+        {
+          "by": "FiloSottile",
+          "text": "This sort of breathless outrage rhetoric would be a lot easier to take seriously if it spent even a minute acknowledging the very real risk to users that this is meant to mitigate: tech support scams where people are walked through installing an app that takes over their phone and steals their money, private data, and identity. You can disagree with the tradeoff, but if you don't acknowledge it…"
+        },
+        {
+          "by": "svat",
+          "text": "IMO a more precise framing is that what is being removed is the ability of anonymous developers to have wide distribution on Android devices. That is, after these changes, you (as an app developer) can either: - be a registered developer, and target all Android users (Google Play Store, F-Droid, distributing .apk files, etc), or - remain anonymous, and target only a subset of Android users (all…"
+        },
+        {
+          "by": "silverFork",
+          "text": "I guess the an alternative open unix based operating system that can upload existing apps from both android as well as apple is needed or the greed will not ever end. This is about corporations that constantly need growth using new ways to collect rent from the rest of the world. They are chocking the world to collect new monies. They are recommending installing F-droid.. and not accepting…"
+        },
+        {
+          "by": "chilipepperhott",
+          "text": "Android allowing sideloading is the single biggest reason I've been an android die-hard my entire life."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50202114,
+      "url": "https://www.eff.org/deeplinks/2026/10/canadians-are-running-out-time-oppose-dangerous-c-22-surveillance-bill",
+      "hn": "https://news.ycombinator.com/item?id=50202114",
+      "title": "Canadians are running out of time to oppose Bill C-22",
+      "time": 1792708999,
+      "points": 474,
+      "depth": [
+        {
+          "text": "Canadians are being urged to **oppose a bill** that could force digital services to help with **government surveillance**",
+          "tier": "simple"
+        },
+        {
+          "text": "Bill **C-22** has passed the House of Commons and is now before the Canadian Senate. It would let Canada’s Minister of Public Safety order companies to create a **backdoor** to their services for law enforcement, as long as it doesn’t lead to a “systemic insecurity”; services would also have to retain metadata for **up to a year**.",
+          "tier": "substance",
+          "data": [
+            [
+              "metadata retention",
+              "up to a year"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say petitions and contacting MPs are still worth doing; others think the bill will pass and there is little they can do.",
+      "comment_count": 246,
+      "terms": [
+        "metadata",
+        "backdoor",
+        "encryption",
+        "systemic insecurity"
+      ],
+      "entities": [
+        "Bill C-22",
+        "Lawful Access Act",
+        "Canadian Civil Liberties Association",
+        "Citizen Lab",
+        "Electronic Frontier Foundation"
+      ],
+      "comments": [
+        {
+          "by": "zaptheimpaler",
+          "text": "The petition to withdraw and amend the bill was presented to the House of Commons today [1]. People whining about how there's nothing they can do basically don't engage in democracy and thats how you end up in a US situation.. [1] https://www.ourcommons.ca/petitions/en/Petition/Details?Peti..."
+        },
+        {
+          "by": "EmbarrassedHelp",
+          "text": "If the bill isn't dramatically changed or killed, all the major messaging services along with tons of other services will end up blocking Canada."
+        },
+        {
+          "by": "pkphilip",
+          "text": "We have a version of this law in India which is even worse and has been used extensively by the govt to crack down on dissent and to do wholesale censoring of content that the establishment doesn't like. All of this is done with ZERO due process - even the minimal due process that has been built into these draconian laws."
+        },
+        {
+          "by": "matteoraso",
+          "text": "It's very rare for the senate to kill a bill. I would say that we alreadt ran out of time."
+        },
+        {
+          "by": "geephroh",
+          "text": "Dear Canada, Please cease this kind of behavior immediately. We're supposed to be the only dumbshits around here. Yours truly, 'Merica"
+        }
+      ],
+      "image": "https://www.eff.org/files/banner_library/OG-Encryption-DefendEncryption.png"
+    },
+    {
+      "id": 50213925,
+      "url": "https://block.xyz/dessa",
+      "hn": "https://news.ycombinator.com/item?id=50213925",
+      "title": "Dessa: Conversation Model trained only on speech",
+      "time": 1792782594,
+      "points": 444,
+      "depth": [
+        {
+          "text": "someone built a **speech-only AI** that can **listen and talk at once**, with emotion and interruptions",
+          "tier": "simple"
+        },
+        {
+          "text": "Dessa was **trained from scratch** on human conversation alone, with no text or pretrained models, using **one NVIDIA GB200 NVL72**. It **runs locally** on a MacBook Pro M4 Max or better.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some found the voice impressively natural; others called it artificial or creepy and worried about scams and impersonation.",
+      "comment_count": 168,
+      "terms": [
+        "full-duplex",
+        "speech-to-speech",
+        "pretrained model",
+        "inference",
+        "LLM",
+        "SIM jacking",
+        "uncanny valley",
+        "tool calling"
+      ],
+      "entities": [
+        "Dessa",
+        "Block",
+        "NVIDIA",
+        "MacBook Pro",
+        "GPT-Live-1",
+        "ChatGPT Live",
+        "Jack Dorsey"
+      ],
+      "comments": [
+        {
+          "by": "iforgotmypasswo",
+          "text": "This is extremely valuable for language education. This is like having on demand access to a conversational partner at all times. But there is no embarrassment factor, patience, or concern about wasting an instructors time. Because the model is trained entirely on audio and not a voice to text add on, you can provide a human extremely high quality feedback and training. And it’s cheap to run. It…"
+        },
+        {
+          "by": "toddmorey",
+          "text": "The conversation examples are impressive but this made me say holy shit out loud:\n\"it runs locally on a MacBook Pro M4 Max or better. And we figured out how to train Dessa on only one NVIDIA GB200 NVL72.\" If it really can replicate that low latency + that expressiveness on local devices, that's one heck of an accomplishment for \"indie\" AI."
+        },
+        {
+          "by": "jdthedisciple",
+          "text": "It obv does have an extremely natural humane sound to it, but I feel like if you pay attention to what it actually says there is a noticeable lack of intelligence behind it. It honestly sounds a bit like a teenager's stream of consciousness to me, that's how they sound to me anyways."
+        },
+        {
+          "by": "paxy",
+          "text": "These bidi/duplex demos always come off as overly artificial to me. It's cool that the model can speak at the same time as you instead of taking turns, but training it to interrupt as much as possible isn't the way to do it. In the very first example, did anyone here find the laugh after the \"winter\" answer to be convincing? What was the need for it? Why did the human speaker not get to finish a…"
+        },
+        {
+          "by": "ttul",
+          "text": "These full-duplex models are getting very \"Her\"-ish lately. gpt-live-1 is fantastic. Dessa, though, seems to be aiming at full human parity. There's a huge market for AI girlfriends that they should be looking into in earnest..."
+        }
+      ],
+      "image": "https://block.xyz/dessa/_media/6865f35ec6013672f8f8/assets/marketing/variants/v3.jpg"
+    },
+    {
+      "id": 50217495,
+      "url": "https://grapheneos.social/@GrapheneOS/117492375462459244",
+      "hn": "https://news.ycombinator.com/item?id=50217495",
+      "title": "Around a dozen banking apps began specifically permitting GrapheneOS",
+      "time": 1792804514,
+      "points": 449,
+      "depth": [
+        {
+          "text": "around a dozen banking apps began allowing **GrapheneOS**, though commenters point to a **much longer list**",
+          "tier": "simple"
+        },
+        {
+          "text": "Commenters point to a list of **hundreds of banking apps** said to be supported, though support isn't always official. One says self-built **GrapheneOS** won't be allowed because of **remote attestation**; another describes bank support ranging from none to full.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some see GrapheneOS support as good progress; others say banks shouldn't restrict access to approved builds or use remote attestation.",
+      "comment_count": 153,
+      "terms": [
+        "GrapheneOS",
+        "remote attestation",
+        "whitelist"
+      ],
+      "entities": [
+        "GrapheneOS",
+        "HSBC",
+        "KH bank",
+        "Google",
+        "Apple",
+        "Lloyds",
+        "LineageOS"
+      ],
+      "comments": [
+        {
+          "by": "Arch-TK",
+          "text": "Thanks, but no thanks? I use GrapheneOS, but if you as a bank want to gate access to my money via some kind of technology, you better be including it as part of the account. For example, HSBC continues to let me manage my bank account via the web browser, and continues to offer a battery powered hardware token as the means of authentication. I let you hold my money, for whatever reason. Why do…"
+        },
+        {
+          "by": "NotPractical",
+          "text": "By GrapheneOS, they mean \"official builds of GrapheneOS\". If you build GrapheneOS yourself, you won't be allowed to use these banking apps due to remote attestation."
+        },
+        {
+          "by": "edent",
+          "text": "In my experience with UK banks & financial institutions, GrapheneOS support can be roughly divided into four types. None. Explicitly banned. And, though I feel bad for saying it, I can't blame them. If some idiot roots their phone and downloads malware, the bank may be responsible for refunding them. I can see why they don't want that headache. Some. App works, but some functionality is…"
+        },
+        {
+          "by": "ronsor",
+          "text": "> many have memory corruption bugs and incorrect anti-tampering code requiring our per-app exploit protection compatibility mode toggle Ironic for apps that are often so paranoid about \"security\" and \"hardware attestation\""
+        },
+        {
+          "by": "0c3ca83",
+          "text": "And if I decide to patch my OS to fix some annoyance, then what? Thanks, but no thanks. Remote attestation is simply not acceptable. You use it, I won't use your app."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50205934,
+      "url": "https://www.tvfandomlounge.com/disney-plus-price-hike-ads-premium-tier-nielsen-emmys-2026/",
+      "hn": "https://news.ycombinator.com/item?id=50205934",
+      "title": "Disney Raising Prices Days After Confirming Ads Will Now Show Up on Every Tier",
+      "time": 1792743689,
+      "points": 439,
+      "depth": [
+        {
+          "text": "Disney is **raising prices** while allowing **promotional content** on plans sold as **ad-free**",
+          "tier": "simple"
+        },
+        {
+          "text": "The ad-free Disney+ and Hulu Premium plans rise from **$18.99 to $21.49 a month**; the updated agreement says every plan may include **promotional content, sponsorships and ads** before or after playback. **Full mid-show ad breaks** remain limited to the lowest tier.",
+          "tier": "substance",
+          "data": [
+            [
+              "Ad-free plan price before increase",
+              "$18.99"
+            ],
+            [
+              "Ad-free plan price after increase",
+              "$21.49"
+            ],
+            [
+              "Price increase",
+              "13%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say the new terms mean ads can show up on premium plans; others say they mostly cover promos, live content, or content that already requires ads.",
+      "comment_count": 450,
+      "terms": [
+        "linear content",
+        "auto-renewal",
+        "consumer cooperative"
+      ],
+      "entities": [
+        "Disney",
+        "Disney+",
+        "Hulu"
+      ],
+      "comments": [
+        {
+          "by": "jerf",
+          "text": "From this point on, every year \"physical media & a Jellyfin install\" is going to be more sensible. Assuming you even care about legality, of course. Yeah, it's harder. But you can get a lot of \"harder\" things done in the amount of time you otherwise spend watching ads, after all. Because to me one of the worst things about ads is they're stealing dollars from me to make cents, if not fractions of…"
+        },
+        {
+          "by": "x187463",
+          "text": "I've always been frustrated by the intense focus the modern economy has on advertising. If I am interested in a product, I would much rather discover it by searching. Having advertisements forced upon me at every turn is a massive waste of resources (time and attention) given only a fraction of a percent of the products have any relevance to my life. I block every form of advertising I can…"
+        },
+        {
+          "by": "cainxinth",
+          "text": "This is not an option for everyone, but as someone who gave up TV several years ago (not entirely, just mostly), not feeling the draw of these platforms or having to put up with their costs and changes is really nice. TV is sort of like caffeine (another thing I gave up - though that one wasn't by choice, but required by my doctors) in that you cannot imagine yourself living without it and…"
+        },
+        {
+          "by": "thisislife2",
+          "text": "This is what happens when you don't have consumer rights protection. E.g. Paid for ad-free OTT viewing but commercials ‘appeared after a month’, man wins Rs 9,500 ( https://indianexpress.com/article/legal-news/paid-ad-free-ot... ): > Calling it a deficiency in service, the Hyderabad consumer commission ordered an OTT platform to refund Rs 1,499 and pay compensation to a subscriber after it…"
+        },
+        {
+          "by": "bofaGuy",
+          "text": "This is pedantic. Disney is clarifying that live content will have ads. They are not Disney's ads they are network ads from that live channel, usually a 3rd party to Disney. This is seemingly because all of Hulu's features will be ported to the Disney+ app, including live TV and replays of live TV and so whatever ads are in that live content and playback will be there for everyone. Also, Hulu…"
+        }
+      ],
+      "image": "https://www.tvfandomlounge.com/wp-content/uploads/2026/09/disney-plus-shows-2026.jpg"
+    },
+    {
+      "id": 50218633,
+      "url": "https://twitter.com/log4j/status/2113014142600953868?s=46",
+      "hn": "https://news.ycombinator.com/item?id=50218633",
+      "title": "Root shell on Samsung TV",
+      "time": 1792820997,
+      "points": 404,
+      "depth": [
+        {
+          "text": "someone claims they found a **root shell** on a Samsung TV after getting **weirdly targeted ads**",
+          "tier": "simple"
+        },
+        {
+          "text": "The poster says the firmware was **AES-encrypted**, with no keys unless they tore the TV apart and used **UART/JTAG**. They also claim the TV has an **always-on hot mic**, automatic content recognition, geo positioning, network mapping and a targeted ads service. One commenter says there’s no write-up and the X post doesn’t seem informative.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 143,
+      "terms": [
+        "root shell",
+        "firmware",
+        "AES",
+        "UART",
+        "JTAG",
+        "automatic content recognition",
+        "zero day"
+      ],
+      "entities": [
+        "Samsung",
+        "X",
+        "log4j",
+        "SmartThings",
+        "Bixby",
+        "Knox"
+      ],
+      "comments": [
+        {
+          "by": "fn-mote",
+          "text": "As far as I can tell, there is no write up. This is a reddit post with screenshots of a Twitter/X post by @log4j. Even the Twitter post doesn’t seem informative, but Reddit isn’t a source for the information by any means. The original link was on HN two days ago with no traction. https://twitter.com/log4j/status/2113014142600953868"
+        },
+        {
+          "by": "jck86",
+          "text": "To what extend do these \"smart\" products state how, when and what data they are collecting and selling? Isn't it high time for legislation that at least makes it clear on the box what kind of sensors and integrations it has and how bad the product is privacy wise? Also, shouldn't corporate spying disguised as automated content recognition and classification be limited or outright be banned? And…"
+        },
+        {
+          "by": "MisterMunchkin",
+          "text": "Remember guys, if they are reading it for wrongthink, they are reading it for industrial espionage. Anthropic and openAI just announced they’re spinning out competitors to their biggest customers… right after ingesting all of their IP and contracts. Do the math. (Or don’t, because they’ve been caught stealing math research)"
+        },
+        {
+          "by": "tintor",
+          "text": "This looks very bad on OpenAI. What is next? Power and water company suspending your account if your home and car are not streaming enough telemetry. I am glad that open models are closing on frontier."
+        },
+        {
+          "by": "janalsncm",
+          "text": "There is a Rick and Morty episode where Rick opens up a store that removes the curses from free items the Devil is handing out. (Surprisingly, the Devil does not consider lawyering up, which is odd because I would expect the Devil to be pretty familiar with lots of lawyers. It’s fiction of course.) It would be great to use AI to do something analogous with these spy TVs. I would be very…"
+        }
+      ],
+      "image": "https://pbs.twimg.com/media/HVLvKWgXIAAWNTX?format=webp&name=large"
+    },
+    {
+      "id": 50214218,
+      "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
+      "hn": "https://news.ycombinator.com/item?id=50214218",
+      "title": "Now Google says it might use your Gmail and Google Photos data to target ads",
+      "time": 1792784055,
+      "points": 365,
+      "depth": [
+        {
+          "text": "Google says linking **Gmail or Photos** to AI features may affect the **ads you see**",
+          "tier": "simple"
+        },
+        {
+          "text": "Google's updated policy adds an **exception**: data from Drive, Gmail, or Google Photos may help personalize ads if you choose to make it available to other Google services that support them. That can happen when you connect those services to Search's **Personal Intelligence**; Google says advertisers don't get access to the underlying data.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters stress this only happens if you choose to share data with services that support personalized ads; others assume Google was already using the data or see the policy as another reason to leave.",
+      "comment_count": 187,
+      "terms": [
+        "personalized ads",
+        "Personal Intelligence",
+        "DMA"
+      ],
+      "entities": [
+        "Google",
+        "Gmail",
+        "Google Photos",
+        "Google Drive",
+        "Search",
+        "Personal Intelligence",
+        "AI Mode",
+        "Gemini Apps",
+        "Android Authority",
+        "The Verge",
+        "Jess Weatherbed"
+      ],
+      "comments": [
+        {
+          "by": "actapp80",
+          "text": "> About DMA & your linked services > The Digital Markets Act (DMA) is a European Union (EU) law that took effect on March 6, 2024. As a result of Article 5(2) of the DMA, in the EU, Google offers you the choice to link certain Google services. > Those Google services include: Search\nYouTube\nAd services\nGoogle Play\nChrome\nGoogle Shopping\nGoogle Maps\n> You can choose to link all these services…"
+        },
+        {
+          "by": "jmathai",
+          "text": "PSA: Getting out of Google Photos is both easy and super rewarding if you can run Immich and use Google Takeout. It’s also better than Google Photos. https://jaisenmathai.com/articles/my-ridiculously-robust-pho..."
+        },
+        {
+          "by": "JumpCrisscross",
+          "text": "Turn it off here: https://google.com/search-personalization"
+        },
+        {
+          "by": "accrual",
+          "text": "\"might\" === \"absolutely will\", just for the record."
+        },
+        {
+          "by": "zmmmmm",
+          "text": "Since the comments are going to be flooded with people reactively assuming it is straight up directly accessing them, here is the actual qualification: > [they will not use for ads] ... unless you choose to make data from these services available to other Google services that support personalized ads So it is more reasonable than I think most people are assuming."
+        }
+      ],
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK093_GOOGLE_D.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+    },
+    {
+      "id": 50218430,
+      "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.0",
+      "hn": "https://news.ycombinator.com/item?id=50218430",
+      "title": "OBS Studio 33",
+      "time": 1792817398,
+      "points": 343,
+      "depth": [
+        {
+          "text": "OBS Studio gets a **plugin-loading overhaul** plus a batch of **capture and crash fixes**",
+          "tier": "simple"
+        },
+        {
+          "text": "First-party plugins now sit in a **core** folder, while third-party plugins have a changed install location and folder structure; existing third-party plugins still load from legacy locations until OBS Studio 34.0. OBS also updated the framework behind browser sources and docks, a backend change the release says should be **invisible to users**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some praise OBS for being easy and impressive, while others complain about bugs and capture limitations.",
+      "comment_count": 114,
+      "terms": [
+        "plugin",
+        "CEF",
+        "browser source",
+        "source snapping"
+      ],
+      "entities": [
+        "OBS Studio",
+        "CEF",
+        "GitHub"
+      ],
+      "comments": [
+        {
+          "by": "schrodingersket",
+          "text": "I haven't spent much time in the video processing/streaming space, but I was delighted to discover OBS Studio this week while putting together what has turned out to be an incredibly cozy little entertainment setup by feeding the two gaming consoles and geriatric gaming desktop I've acquired over the years into an HDMI switcher and USB HDMI capture box that in turn streams the feed into an OBS…"
+        },
+        {
+          "by": "NamTaf",
+          "text": "Adjacent to OBS, I want to give an unsolicited shoutout to VDO.ninja. It's a very lightweight way to push low latency video between devices via the browser. I've used it to turn my phone into a webcam, to jointly watch movies remotely (with simultaneous voice chat included), to make a multi-person video call, to stream my phone's screen to my desktop, etc All kinds of cool uses. Of course, it can…"
+        },
+        {
+          "by": "jimmydorry",
+          "text": "> Updated CEF from 127/6533 to 150/7871 Finally... The CEF they used was 2 years out of date, and after RCE exploits [0] occuring in the wild getting big enough that they got picked up in the media [1], we finally have a fix 1 month later. [0] https://blog.scrt.ch/2026/09/22/how-one-twitch-chat-message-... [1] https://news.ycombinator.com/item?id=49852143 [2]…"
+        },
+        {
+          "by": "MichaelDickens",
+          "text": "OBS is such a staple among streamers, for a long time I thought \"OBS\" was the generic term for video screen sharing software. Only recently learned that it's a specific software, and it's free and open source!"
+        },
+        {
+          "by": "amelius",
+          "text": "Link to website: https://obsproject.com/ (because I had no idea what this was about and probably not alone)"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/82c6e9a0e4255bc7370dd6125ccb078791f7b4a2f6b9c5e4b0198d0e7df1ff10/obsproject/obs-studio/releases/tag/33.0.0"
+    },
+    {
+      "id": 50207405,
+      "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
+      "hn": "https://news.ycombinator.com/item?id=50207405",
+      "title": "Swedish government offices to ban ChatGPT and Claude",
+      "time": 1792755594,
+      "points": 321,
+      "depth": [
+        {
+          "text": "Sweden's **Government Offices** are banning direct ChatGPT and Claude use, though some staff can still access them through an **in-house platform**",
+          "tier": "simple"
+        },
+        {
+          "text": "The comments say some staff still get ChatGPT and Claude through a **platform the Government Offices developed**. Several commenters connect the restriction to **sensitive data** and services without a contract; one notes the rule concerns a **single agency**, not every Swedish government office.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some see limits on unapproved AI as sensible security; others object that Microsoft Copilot is still approved.",
+      "comment_count": 119,
+      "terms": [
+        "ZDR",
+        "wrapper"
+      ],
+      "entities": [
+        "Government Offices of Sweden",
+        "ChatGPT",
+        "Claude",
+        "Microsoft Copilot"
+      ],
+      "comments": [
+        {
+          "by": "danck",
+          "text": "> At the same time, the press service states that some of the staff will continue to have access to a special platform for AI assistants, which the Government Offices themselves developed, and through which they gain access to ChatGPT and Claude. Sounds like they just want to maintain control over the outbound traffic which sounds rather sensible to me."
+        },
+        {
+          "by": "mjr00",
+          "text": "What a complete nonstory. Even at my 50 person startup we have an IT policy that requires employees to only use approved AI tools. For a government the only real news is that there wasn't already something in place enforcing this."
+        },
+        {
+          "by": "giamma",
+          "text": "I believe the problem is related to staff using free plans of Claude and ChatGPT. I don't know for ChatGPT but Claude claims that it will keep your chat private and not use your data for training if you are on a paid plan [1], unless you decide otherwise: \"By default, we will not use your inputs or outputs from our commercial products (e.g. Claude for Work, Anthropic API, Claude Gov, etc.) to…"
+        },
+        {
+          "by": "a_humean",
+          "text": "Seems like a non-story. It sounds like a ban on people using personal accounts with unsanctioned services and sending government data to them. Even most small companies might have restrictions like this. This is just an IT org asserting control over how data moves in and out of the business/government. Its seems pretty reasonable that a company/government would want a contract in place with any…"
+        },
+        {
+          "by": "jttnr",
+          "text": "At first I was like: Nice, they ban AI because its all US based vendors and using them for government related data is not a good idea. But then the story goes on and say MS Copilot is an approved AI... Sad thing to read."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50206914,
+      "url": "https://twitter.com/jaredkushner/status/2113376217415958767",
+      "hn": "https://news.ycombinator.com/item?id=50206914",
+      "title": "Dutch government had hacked into Jared Kushner's phone",
+      "time": 1792752092,
+      "points": 305,
+      "depth": [
+        {
+          "text": "a book alleges the **Dutch government hacked** Jared Kushner’s phone, but **he says it never happened**",
+          "tier": "simple"
+        },
+        {
+          "text": "Matthew Cole says a source he considered reliable told him this in **late spring 2020**: Kushner’s phone was monitored as he accessed a **Dubai-based bank account**. Kushner called the allegations **categorically false** and said no verifiable details were provided.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters discuss the story as true, while others stress that it is only an allegation and question the reliability of the author and sources.",
+      "comment_count": 202,
+      "terms": [
+        "MIVD",
+        "FOIA",
+        "security clearance"
+      ],
+      "entities": [
+        "Jared Kushner",
+        "Matthew Cole",
+        "Vanity Fair",
+        "X",
+        "Dutch government",
+        "MIVD",
+        "GRU",
+        "Trump"
+      ],
+      "comments": [
+        {
+          "by": "TrackerFF",
+          "text": "So if I followed the story, it as GRU (Russian intel) that hacked his phone. Dutch intel then recruited a spy from GRU that handed over the data. In any case, Kushner - and rightfully so - could not obtain a security clearance the first time around, due to massive debt. But it was overruled / waived by higher ups. I've worked in intel, and Kushner seems like the textbook example - a cautionary…"
+        },
+        {
+          "by": "BatteryMountain",
+          "text": "As an outsider, ever since I learned some things about the trump family and kushner ten years ago, he always stood out for me as the most interesting and dangerous character of the lot. Always in the background, never front and center, always making high stakes decisions, wielding power of large amounts of money, sitting in more important meetings than trump (in my opinion). Literally whenever…"
+        },
+        {
+          "by": "tclancy",
+          "text": "“Kushner’s counsel, however, said Kushner did not make any agreements or arrangements with leaders or officials in foreign countries that were not agreed to by the President of the United States and in the best interests of the United States.”\nThis is all categorically untrue and besides, I had permission."
+        },
+        {
+          "by": "rollulus",
+          "text": "The Dutch hacking Russian hackers sounds like a regular day for them, like last time when they even got access to the security cams in the hackers office: https://arstechnica.com/information-technology/2018/01/dutch... The Dutch intelligence services are world class."
+        },
+        {
+          "by": "DivingForGold",
+          "text": "Warning you - - - This is a Juicy One ... https://wallhop.io/https://www.vanityfair.com/story/jared-ku..."
+        }
+      ],
+      "image": "https://pbs.twimg.com/profile_images/1554293796438941697/FjT4jVh1_400x400.jpg"
+    },
+    {
+      "id": 50220913,
+      "url": "https://steveblank.com/2026/10/24/europe-gets-a-wake-up-call/",
+      "hn": "https://news.ycombinator.com/item?id=50220913",
+      "title": "Elon Musk Just Gave Europe a Reason to Replace American Technology",
+      "time": 1792847368,
+      "points": 308,
+      "depth": [
+        {
+          "text": "Elon Musk’s **Starshield decision** has Europeans rethinking how much **American tech** they rely on",
+          "tier": "simple"
+        },
+        {
+          "text": "The author says the restrictions made **digital sovereignty** feel more urgent. They argue **AI** could make recreating products like Microsoft Office and Oracle more feasible, putting **American companies’ European sales** at risk.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters say Europe should accelerate alternatives; others dispute the article’s Starshield account, arguing Ukraine uses Starlink, not Starshield.",
+      "comment_count": 334,
+      "terms": [
+        "digital sovereignty",
+        "Starshield",
+        "kill switch",
+        "geofencing"
+      ],
+      "entities": [
+        "Elon Musk",
+        "Starlink",
+        "Starshield",
+        "SpaceX",
+        "Microsoft",
+        "OpenAI",
+        "Anthropic",
+        "Oracle",
+        "Palantir",
+        "Google",
+        "Salesforce",
+        "Anduril",
+        "ICEYE",
+        "Nokia",
+        "Isar",
+        "Telesat",
+        "Amazon LEO",
+        "Qianfan",
+        "Galileo",
+        "ESA",
+        "IRIS",
+        "Tesla"
+      ],
+      "comments": [
+        {
+          "by": "owenthejumper",
+          "text": "In a normal world, this would be treason by an illegal immigrant to the US. In today's world it's a blip in news. Sad state of affairs :( Europe will absolutely build alternatives. They'll bicker for some time, but in the end, they build. To Americans it looks like they don't but they do. Quality of life, life expectancy, and many factors have outpaced US in the last few years. The tech industry…"
+        },
+        {
+          "by": "tumdum_",
+          "text": "ICEYE and Nokia are already working on a replacement for starlink: https://www.iceye.com/newsroom/press-releases/iceye-and-noki... Isar is working hard on commercial launch capabilities: https://www.theguardian.com/business/2026/sep/06/german-star..."
+        },
+        {
+          "by": "delichon",
+          "text": "Starshield systems are owned and controlled by the US government. Any limits on speed or usage are decided by the US military and ultimately POTUS. Starlink is a commercial service owned and controlled by SpaceX. Usage of Starlink is limited to civilian or defensive activities and cannot be used for offensive military action, as doing so would be inappropriate for a commercial…"
+        },
+        {
+          "by": "ivan_gammel",
+          "text": "Comments here somehow missing the fact that EU alternative to Starlink has already been work in progress for a while with several competitors in the game and billions € of investment.\nThe replacement goes on, the smell of money in the air is felt quite well, digital and technology sovereignty is a popular topic on startup events."
+        },
+        {
+          "by": "jschveibinz",
+          "text": "Follow the money: European wealth is concentrated in a smaller number of centralized institutions that are more conservative investors compared to U.S. Pension funds:\n- U.S. has over 5,000 independent municipal, state, and corporate pension systems that invest aggressively.\n- EU pension capital is in national funds. University Endowments:\n- U.S. has over 800 active endowments (with 130+ exceeding…"
+        }
+      ],
+      "image": "https://s0.wp.com/_si/?t=eyJpbWciOiJodHRwczpcL1wvczAud3AuY29tXC9pXC9ibGFuay5qcGciLCJ0eHQiOiJTdGV2ZSBCbGFuayIsInRlbXBsYXRlIjoiaGlnaHdheSIsImZvbnQiOiIiLCJibG9nX2lkIjo2NTk5NTg5fQ.-efmxdtN_YlMwMyz4RgR-akCDYfNNsBU6laamcldxGAMQ"
+    },
+    {
+      "id": 50217500,
+      "url": "https://philipotoole.com/twelve-years-of-distributed-sqlite/",
+      "hn": "https://news.ycombinator.com/item?id=50217500",
+      "title": "Twelve years of distributed SQLite",
+      "time": 1792804618,
+      "points": 303,
+      "depth": [
+        {
+          "text": "someone looks back at **twelve years** of projects trying to make **SQLite work across machines**",
+          "tier": "simple"
+        },
+        {
+          "text": "rqlite began in 2014 with a Raft log in front of SQLite; writes go through a **leader**, and a **majority** must acknowledge them. Later, Litestream streams SQLite’s **WAL** to S3 for recovery, while cr-sqlite lets multiple writers diverge and merge without a leader.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some commenters praise rqlite and say they use it; others find the article’s ending defensive or say a database server can be a better fit.",
+      "comment_count": 46,
+      "terms": [
+        "distributed SQLite",
+        "SQLite",
+        "Raft",
+        "leader",
+        "WAL",
+        "S3",
+        "CRDTs"
+      ],
+      "entities": [
+        "Philip O'Toole",
+        "rqlite",
+        "SQLite",
+        "Raft",
+        "GitHub",
+        "jut.io",
+        "goraft",
+        "InfluxDB",
+        "Hashicorp",
+        "Expensify",
+        "Bedrock",
+        "Paxos",
+        "ActorDB",
+        "Erlang",
+        "Canonical",
+        "dqlite",
+        "LXD",
+        "MicroK8s",
+        "etcd",
+        "Go",
+        "Mark Shuttleworth",
+        "Ben Johnson",
+        "Litestream",
+        "S3",
+        "Fly.io",
+        "LiteFS",
+        "Consul",
+        "cr-sqlite",
+        "CRDTs",
+        "libSQL",
+        "ChiselStrike",
+        "Turso",
+        "Supabase",
+        "SQLite Cloud",
+        "Cloudflare",
+        "D1",
+        "Durable Objects",
+        "Postgres",
+        "Rails",
+        "OmniPaxos",
+        "Zig",
+        "Odin",
+        "zaxonlite",
+        "sqlodin",
+        "Jepsen",
+        "hctree",
+        "Dapper",
+        ".NET",
+        "morio.it"
+      ],
+      "comments": [
+        {
+          "by": "piterrro",
+          "text": "Having used D1 in production - it's not very reliable. There was a comment on HN from one of D1 devs [1] saying that D1 is a sql wrapper on top of durable objects that mimicks sqlite distributed like nature. > I'll let you in on a sort of dirty secret:\nIt's almost always better to use Durable Objects storage, rather than D1. Even if you only want a single global database, it's better to implement…"
+        },
+        {
+          "by": "vikrantrathore",
+          "text": "Its funny, when I was reading part time parliament paper (paxos) and while learning zig and odin language created a pure paxos library and then the first application for that library was to build a multi-master sqlite. The two approaches I took are very different in case of zig I build zaxonlite ( https://github.com/insanai/zaxonlite ) and have a benchmark on it that includes rqlite. It uses WAL…"
+        },
+        {
+          "by": "mmnfrdmcx",
+          "text": "As someone who loved sqlite and the simplicity, the truth is that with agents I am finding it is extremely easy to manage postgres and it is realyl nice having all the SQL features of postgres -- sqlite is quite limiting in a lot of SQL. So if you are considering remote sqlite and all that, feels a better time than ever to just use a database server.\nOf course, sqlite is amazing for local tools…"
+        },
+        {
+          "by": "AgentME",
+          "text": "The comparisons between various projects, including between rqlite and Litestream, were interesting. (rqlite uses a consensus algorithm between nodes to keep them synced and allow changing the primary node, while Litestream just syncs itself to S3 so another node could take over with the data from there.) I fully expected the article to get into D1 shortly and mention how that's about the same…"
+        },
+        {
+          "by": "Kinrany",
+          "text": "Is there a project that does all of these together? - embeddable like sqlite - clustered like dqlite - has a standalone node like rqlite - can be backed up to S3 like litesteeam - optionally AP like cr-sqlite alongside CP"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50221676,
+      "url": "https://nypost.com/2026/10/24/business/google-illegally-tore-down-250k-trees-for-finland-data-center-infuriating-locals-report/",
+      "hn": "https://news.ycombinator.com/item?id=50221676",
+      "title": "Google illegally cut down 250K trees in Finland for data center",
+      "time": 1792852714,
+      "points": 227,
+      "depth": [
+        {
+          "text": "Google is accused of clearing **250,000 trees** before full approval for Finnish **data centers**, angering locals",
+          "tier": "simple"
+        },
+        {
+          "text": "The clearing covered **816 acres** near Muhos, and Finnish officials **suspended work at two sites** while assessing the environmental impact. Google said it believed it had approval, apologized, and said it would protect water sources and replant trees around **321 acres**.",
+          "tier": "substance",
+          "data": [
+            [
+              "estimated trees cleared",
+              "250,000"
+            ],
+            [
+              "woodland cleared",
+              "816 acres"
+            ],
+            [
+              "area for tree planting",
+              "321 acres"
+            ],
+            [
+              "AI infrastructure investment",
+              "$15 billion"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters call the story clickbait over a small permit mistake; others say Google still had to follow Finnish law and get the right permits.",
+      "comment_count": 157,
+      "terms": [
+        "data center",
+        "EIA",
+        "hyperscale"
+      ],
+      "entities": [
+        "Google",
+        "Tuike Finland Oy",
+        "Alphabet",
+        "The Guardian",
+        "New York Post",
+        "Finnish Association for Nature Conservation (SLL)",
+        "Anni Ranta",
+        "Antti Jakonen",
+        "Tommi Muilu",
+        "Antti Järvinen",
+        "Hanna Halmeenpää",
+        "Vesa Hyyryläinen"
+      ],
+      "comments": [
+        {
+          "by": "croisillon",
+          "text": "related: 183 comments https://news.ycombinator.com/item?id=50048638 253 comments https://news.ycombinator.com/item?id=50196837"
+        },
+        {
+          "by": "semiquaver",
+          "text": "The New York post should basically never be used as a source and this article is a great example of why. It is just obviously not journalism as most people would recognize the concept. Everything they post is ragebait, clickbait or both. They are institutionally allergic to any form of nuance. Here is the (much, much higher quality) original reporting that this terrible ny post writeup is based…"
+        },
+        {
+          "by": "WarmWash",
+          "text": "It's incredible how this story has incessantly made the rounds while the actual story is so incredibly small and insignificant. Like it probably wouldn't even make the town newspaper level insignificant. \"A Finnish contractor working for Google failed to get the correct permits for clearing 1.5sq-mi of man made forest that was rezoned to industrial\" The actual takeaway is how desperate the media…"
+        },
+        {
+          "by": "designerarvid",
+          "text": "First time hearing of number of trees as a measue in forestry. In scandinavia we use hectars (100x100m). There’s also several different m3 measurements (with and without bark), that is used along with timber quality. Finland has trees in billions. Still google should follow the laws and hand in the right permits."
+        },
+        {
+          "by": "atombender",
+          "text": "@dang, could we replace the link with this much better article? https://www.theguardian.com/environment/ng-interactive/2026/..."
+        }
+      ],
+      "image": "https://nypost.com/wp-content/uploads/sites/2/2026/10/146289448.jpg?quality=75&strip=all&w=1024"
+    },
+    {
+      "id": 50195488,
+      "url": "https://github.com/dsmurrell/onkey",
+      "hn": "https://news.ycombinator.com/item?id=50195488",
+      "title": "Show HN: OnKey – I'm a bad singer, so I built an app to show where I'm off-key",
+      "time": 1792677884,
+      "points": 226,
+      "depth": [
+        {
+          "text": "someone built a **Mac app** that shows how your singing compares with a song’s **pitch track**",
+          "tier": "simple"
+        },
+        {
+          "text": "OnKey listens to a song once, then learns its **pitch track** in a couple of minutes; it **doesn’t save the music or send your voice**. It’s **free and open source**, but only works on Apple Silicon Macs with macOS 14.2 or later, and sometimes gets a note an octave off.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 91,
+      "terms": [
+        "pitch track",
+        "Apple Silicon",
+        "octave",
+        "MIT license"
+      ],
+      "entities": [
+        "OnKey",
+        "Claude Code",
+        "Spotify",
+        "Apple Music",
+        "YouTube",
+        "Nightingale",
+        "LRCLIB",
+        "Shazam",
+        "Apple",
+        "GitHub",
+        "iTunes",
+        "Python",
+        "Linux",
+        "DAM",
+        "JoySound"
+      ],
+      "comments": [
+        {
+          "by": "sligbad",
+          "text": "I have thoughts about this pedagologically. I think these kinds of tools can be helpful, but the number of rhythm students I have seen who need to break out of the dependence on a visual metronome is rough. Part of the struggle is really listening to yourself, and learning how to pick up on your own mistakes. I hope the tool is helpful, and I hope I don't sound too curmudgeonly when I say don't…"
+        },
+        {
+          "by": "wnissen",
+          "text": "What a fun idea! I love that the song doesn't have to be programmed in by the developer. Will give it a try. Have you played the Rock Band and similar \"rhythm games\" that were all the rage in the Wii era? I don't know that it helped my singing per se but gave some incentive to practice. In case anyone is interested, you can test your relative pitch perception (as opposed to producing the pitch)…"
+        },
+        {
+          "by": "stevage",
+          "text": "> These requests do go out: > Shazam (Apple): a short signature of the music app's sound, not the audio and never your mic, to name a song OnKey hasn't learned when the music app doesn't say what's playing. > LRCLIB: the song's artist, title, album and length, to fetch lyrics. > iTunes Search and Lookup (Apple): an artist and title, or the ID Shazam returned, for covers and the song's length. The…"
+        },
+        {
+          "by": "fourneau",
+          "text": "You built the scoring feature of karaoke that I failed to build a few years ago, this is awesome! If you haven't done any karaoke using DAM/JoySound, etc they have a scoring mode that sits at the top that does two things: one, help you sing on key because we all suck, and two, score then rank you against other singers (anonymously.) I couldn't tell from the demo, but do you get access to the…"
+        },
+        {
+          "by": "abktya",
+          "text": "I am sure this app will be very useful for my wife and daughter, who spent the whole day singing at the top of their lungs. It will also be a benefit for me, as I’ll get to hear more accurate notes."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50210067,
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2083449",
+      "hn": "https://news.ycombinator.com/item?id=50210067",
+      "title": "eMudhra ignored Mozilla Root investigation deadline; blames social media",
+      "time": 1792767128,
+      "points": 207,
+      "depth": [
+        {
+          "text": "eMudhra blames **social media scrutiny** after missing Mozilla’s deadline to explain **compromised certificate keys**",
+          "tier": "simple"
+        },
+        {
+          "text": "Mozilla says it sent questions on October 20 and gave eMudhra **24 hours** to reply; after the deadline passed, eMudhra requested another 24 hours, but Mozilla still had no response by Friday the 23rd. eMudhra said **social media scrutiny** and investor/customer analysis made meaningful investigation “pretty much impossible.”",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some think social-media and investor pressure could make a careful investigation hard; others say that explanation is implausible given the weak keys and earlier CRL failures.",
+      "comment_count": 160,
+      "terms": [
+        "CA",
+        "intermediate certificate",
+        "private key",
+        "root store",
+        "CRL",
+        "HSM"
+      ],
+      "entities": [
+        "eMudhra",
+        "Mozilla",
+        "Mozilla Root Program",
+        "Sectigo",
+        "Firefox",
+        "OneCRL"
+      ],
+      "comments": [
+        {
+          "by": "IcePenguin",
+          "text": "eMudhra's recent response regarding their Intermediate CA private key compromise, citing social media activity and investor relations as blockers to technical investigation and analysis: https://bugzilla.mozilla.org/show_bug.cgi?id=2083449#c39 > \"There are a lot of questions here. As most of you can imagine, we have been subject to intense social media scrutiny and analysis by investors/customers…"
+        },
+        {
+          "by": "bradfa",
+          "text": "Many HSMs do not force you to use unique labels for keys. So it's somewhat understandable if a human mixed up some keys during a non-standard or deviated process. This doesn't explain how so many different keys were \"generated\" so poorly or why no one cared about mismatched signatures. And the discussion mentioning wrap/unwrap testing kind of feeds directly into the fear that either: 1. These…"
+        },
+        {
+          "by": "jwineinger",
+          "text": "Do I, as a US-based English speaking person, need to have CAs from India and other places trusted by default in my browsers/devices? My gut says no and it just represents unnecessary risk, but I'm also not fully aware of how interleaved cert issuers are with cross signing and such."
+        },
+        {
+          "by": "IcePenguin",
+          "text": "Previous HN discussions: eMudhra intermediate CA compromise https://news.ycombinator.com/item?id=50166579 1271 points | galadran | 3 days ago | 504 comments -- Eight Bits of Trust: eMudhra's CA keys cracked in milliseconds https://news.ycombinator.com/item?id=50177916 935 points | hkc | 2 days ago | 460 comments -- eMudhra to exit global SSL/TLS certificate business…"
+        },
+        {
+          "by": "t0mas88",
+          "text": "The system where every CA gets to sign certificates for every possible domain makes no sense anymore. There are too many CAs and each one of them could compromise the whole system. Why aren't SSL certificates tied to something like DNSSEC where a CA is responsible only for one tld? Since domain ownership is enough to get a certificate signed anyway, that wouldn't change security properties."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50201445,
+      "url": "https://www.lesswrong.com/posts/WHEQps5PK8LrrcTAb/how-does-fable-5-1-hide-messages-in-images",
+      "hn": "https://news.ycombinator.com/item?id=50201445",
+      "title": "How does Fable 5.1 hide messages in images?",
+      "time": 1792705273,
+      "points": 206,
+      "depth": [
+        {
+          "text": "someone tested how **Fable hides messages** in images—and whether another Fable session can **read them back**",
+          "tier": "simple"
+        },
+        {
+          "text": "Across **50 short messages**, Fable most often used heights: **33 images** encoded letters as object heights. A separate Fable session decoded **78%** from screenshots without seeing the SVG or being told the encoding.",
+          "tier": "substance",
+          "data": [
+            [
+              "messages decoded",
+              "78%"
+            ],
+            [
+              "height-encoded images",
+              "33 of 50"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: skeptics say the encodings are obvious and don't say much about adversarial hiding; others find the experiment interesting and see model-to-model hidden messaging as worth studying.",
+      "comment_count": 73,
+      "terms": [
+        "Fable",
+        "SVG",
+        "steganography",
+        "Morse code",
+        "acrostic",
+        "LLM"
+      ],
+      "entities": [
+        "Fable",
+        "Claude",
+        "GPT-6 Astra",
+        "LessWrong",
+        "Hugging Face",
+        "OpenAI",
+        "SASH Fellowship",
+        "Python",
+        "Pillow",
+        "NumPy",
+        "SciPy",
+        "SVG",
+        "PNG",
+        "Nikita Kezin",
+        "13ryanC",
+        "hronir",
+        "James Chua"
+      ],
+      "comments": [
+        {
+          "by": "hagen8",
+          "text": "This seems very trivial... There are way more subtle and information dense ways to encode information in images."
+        },
+        {
+          "by": "XenophileJKO",
+          "text": "If I'm honest this feels performative. I mean that if the model were really attempting/instructed to be subversive in a way that can't be detected by anything but another LLM, it would do something much more complicated than this. Basically minimal effort encoding. In general the models are fine tuned to NOT hide messages. I don't think this really tells you anything about advisarial scenarios."
+        },
+        {
+          "by": "jurakovic",
+          "text": "But to be honest, images like these seem really strange, and even without this article I'd suspect something is encoded in building heights etc. Because normal image would never have such \"weird\" buildings. But nevertheless I guess it's able to encode message in even more subtle ways."
+        },
+        {
+          "by": "Trusteando",
+          "text": "Here using images is incidental. In fact, what Fable is actually doing is generic encoding/decoding of a message into a medium. Ask it to hide a message in a poem and it should try to apply a strong (high signal-to-noise ratio) family of schemes, for example quantized, margin-rich encoding. Robustness of features depends on the medium, so Fable is selecting strong encoding and robust features…"
+        },
+        {
+          "by": "dhruvagoyal",
+          "text": "This does seem trivial and there are far more interesting ways to do image steganography that models could use (i've seen so many after years of doing CTFs). What would be really interesting is if we see models encode hidden messages in very normal looking output (image/text/audio) that humans cannot figure out but only another model can"
+        }
+      ],
+      "image": "https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/WHEQps5PK8LrrcTAb/h9vfucmjzf2tlo8t4ayf"
+    },
+    {
+      "id": 50195002,
+      "url": "https://arxiv.org/abs/2603.01092",
+      "hn": "https://news.ycombinator.com/item?id=50195002",
+      "title": "The alien space of science: Coherent but cognitively unavailable directions",
+      "time": 1792675501,
+      "points": 205,
+      "depth": [
+        {
+          "text": "someone built an AI to spot **plausible research ideas** **no community is likely to propose**",
+          "tier": "simple"
+        },
+        {
+          "text": "The method breaks papers into **idea atoms**, then scores combinations for scientific coherence and whether any existing author community is positioned to produce them. On 16,068 peer-reviewed LLM papers, it made more diverse research portfolios than frontier LLM baselines while matching or exceeding per-idea quality; using only pre-2025 data, selecting less than 1% of candidates recovered 2025 combinations at **35.9 times chance**.",
+          "tier": "substance",
+          "data": [
+            [
+              "papers analyzed",
+              "16,068"
+            ],
+            [
+              "candidate space selected",
+              "less than 1%"
+            ],
+            [
+              "2025 combinations recovered",
+              "35.9 times chance"
+            ],
+            [
+              "strictly novel combinations recovered",
+              "3.24 times chance"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 88,
+      "terms": [
+        "LLM",
+        "idea atoms",
+        "cognitive availability",
+        "frontier LLM baseline"
+      ],
+      "entities": [
+        "NeurIPS",
+        "ICLR",
+        "ICML",
+        "ACL",
+        "EMNLP",
+        "Claude",
+        "arXiv",
+        "Alejandro H. Artiles",
+        "Martin Weiss",
+        "Levin Brinkmann",
+        "Iyad Rahwan",
+        "Bernhard Schölkopf",
+        "Christopher Pal",
+        "Hugo Larochelle",
+        "Anirudh Goyal",
+        "Nasim Rahaman"
+      ],
+      "comments": [
+        {
+          "by": "martincsweiss",
+          "text": "Co-author here - first paper from my postdoc accepted to NeurIPS main conference. We built a way to sample diverse ideas in machine learning - ideas that make scientific sense, but that no existing research community is positioned to propose. In short, the way it works is like this: 1. Take 16,068 LLM papers (NeurIPS, ICLR, ICML, ACL, EMNLP, 2017 to 2025) are broken into 273 \"idea atoms\". Every…"
+        },
+        {
+          "by": "zackmorris",
+          "text": "Monotropism and neurodivergence make strange bedfellows. I believe that I may be AuDHD, not just because it's trendy right now, but because I immediately see the most likely solution(s) to a problem (as if the branches of the search space fall away instantly), while simultaneously seeing more branches than most people seem to (so that I go down rabbit holes and get distracted). I might compare it…"
+        },
+        {
+          "by": "gavinray",
+          "text": "I'm an engineer by trade, but spend quite a bit of time in pharmacology and molecular biology research in my free time. One of the proposal papers caught my eye: https://lacuna.tiptreesystems.com/hypothesis/why-receptor-hu... > \" ... a ligand that binds tightly and stays bound a long time should produce a strong intracellular signal, a weak binder a faint one.\"\nWhen a ligand binds to the ligand…"
+        },
+        {
+          "by": "unsupp0rted",
+          "text": "I love this. My personal completely unsupported theory is we’re cognitively capable of conceiving of less than 1% of what’s true/accurate about the universe, and cognitively capable of understanding 1% of that 1%"
+        },
+        {
+          "by": "unsupp0rted",
+          "text": "Quick and fun read on this: The Road not Taken by Harry Turtledove https://pastebin.com/aJQfubrK"
+        }
+      ],
+      "image": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png"
+    },
+    {
+      "id": 50215530,
+      "url": "https://cve.0xosprey.com/",
+      "hn": "https://news.ycombinator.com/item?id=50215530",
+      "title": "CVE Tracker",
+      "time": 1792790507,
+      "points": 201,
+      "depth": [
+        {
+          "text": "a **CVE chart** has people debating whether rising counts mean more bugs or **easier reporting**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says **critical CVEs** are roughly **25x** their 2020 level, while all CVEs are roughly 5x. Others say **easier filing** and Linux kernel rules assigning CVEs to every identified bug make the count harder to interpret.",
+          "tier": "substance",
+          "data": [
+            [
+              "Critical CVEs vs. 2020",
+              "roughly 25x"
+            ],
+            [
+              "All CVEs vs. 2020",
+              "roughly 5x"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say CVE counts are inflated by easier filing and broad assignment rules; others say the critical-CVE trend is even worse than the overall count.",
+      "comment_count": 70,
+      "terms": [
+        "CVE",
+        "CNA",
+        "CVSS"
+      ],
+      "entities": [
+        "CVE Tracker",
+        "GitHub",
+        "Linux kernel"
+      ],
+      "comments": [
+        {
+          "by": "philips",
+          "text": "I think a tricky thing about these metrics is GitHub and the Linux Kernel became their own CNA in mid-2024[1] and mid-2025[2]. This caused a bunch of new automation and lowered barriers to actually filing a CVE. As a small data point I have a >20k downloads Obsidian plugin and it got a CVE on a Beta release due to a bad pathing regex. I feel this would have never happened 2 years ago. So, I feel…"
+        },
+        {
+          "by": "tomxor",
+          "text": "I was suspicious the absence of a severity filter was exaggerating the trend... But then I found this: https://craci.com/resources/CVE-publication-trends?sev=criti... Trend for critical CVEs is actually worse, at roughly 25x that of 2020, compared to all CVEs which are roughly 5x compared to 2020."
+        },
+        {
+          "by": "danso",
+          "text": "It’s impressive that the number of CVEs issued the last two years has skyrocketed, given how badly DOGE gutted the cybersecurity [0] agencies. Unfortunately we don’t know how huge the backlog may have since grown [0] https://www.securityweek.com/mitre-signals-potential-cve-pro..."
+        },
+        {
+          "by": "k2enemy",
+          "text": "Cool. This would be easier to interpret with a log scale. There's an option for it, but clicking it doesn't change the chart and freezes the site for me."
+        },
+        {
+          "by": "braiamp",
+          "text": "I remember a comment somewhere, where employees of a company, would open a CVE for a piece that they use in their job, to force an upgrade of said software since normal update request has been denied despite having business reasons to do so. So, the number doesn't matter. Also, the linux kernel assigns CVE for anything that can be though as a vulnerability: > Note, due to the layer at which the…"
+        }
+      ],
+      "image": "https://cve.0xosprey.com/og.png"
+    },
+    {
+      "id": 50218195,
+      "url": "https://rtfeldman.com/fp-vs-c",
+      "hn": "https://news.ycombinator.com/item?id=50218195",
+      "title": "How close can pure functional programming get to C?",
+      "time": 1792813434,
+      "points": 201,
+      "depth": [
+        {
+          "text": "someone got **functional code** surprisingly close to **C's compression speed**, while keeping its safety guarantees",
+          "tier": "simple"
+        },
+        {
+          "text": "Across 144 benchmarks, **roc-deflate** was slower on average than libdeflate: the median gap was **8.9%** on the Ryzen 3900X and 2.6% on the M1 MacBook Pro. On the worst-case inputs it was 18% slower; on the best-case inputs, slightly over 18% faster. Roc code also keeps memory safety, automatic reference counting and bounds checks.",
+          "tier": "substance",
+          "data": [
+            [
+              "benchmarks",
+              "144"
+            ],
+            [
+              "median slowdown on Ryzen 3900X",
+              "8.9%"
+            ],
+            [
+              "median slowdown on M1 MacBook Pro",
+              "2.6%"
+            ],
+            [
+              "worst-case slowdown",
+              "18%"
+            ],
+            [
+              "best-case speedup",
+              "slightly over 18%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: functional-language fans favor higher-level FP; C-first commenters ask why anyone should code above C in the age of LLMs.",
+      "comment_count": 56,
+      "terms": [
+        "functional programming",
+        "DEFLATE",
+        "SIMD",
+        "bounds checks",
+        "automatic reference counting",
+        "pure function",
+        "FFI",
+        "opportunistic mutation",
+        "copy elision"
+      ],
+      "entities": [
+        "Roc",
+        "roc-deflate",
+        "libdeflate",
+        "C",
+        "DEFLATE"
+      ],
+      "comments": [
+        {
+          "by": "WalterBright",
+          "text": "D has a nice feature where a function can be annotated with `pure`, and the compiler will check that the function is pure. It's fun trying to reorganize your code to make it pass the `pure` checking."
+        },
+        {
+          "by": "jandrewrogers",
+          "text": "Much of the difference in optimizability is that C/C++ allows you to do fairly extreme copy elision. This is important because memory bandwidth tends to be a major performance bottleneck. C/C++ code can trivially reach into some remote bit of state and mutate it directly. The compiler rarely objects, no matter how ugly the access method or pattern. It is up to the programmer to make sure the…"
+        },
+        {
+          "by": "VorpalWay",
+          "text": "> lean-zip beats every single compression level miniz_oxide Miniz_oxide is an intentionally simple implementation. It would be more fair to compare it to the newer zlib-rs[1], which even beats zlib-ng (fastest implementation in C)[2]. [1]: https://lib.rs/crates/zlib-rs [2]: https://trifectatech.org/blog/zlib-rs-is-faster-than-c/"
+        },
+        {
+          "by": "giovannibonetti",
+          "text": "I wonder if Roc will eventually have high-level abstraction to handle SIMD support. Perhaps by bringing some ideas from Futhark [1], a functional language focused on data parallelism. IIRC, the author has already been interviewed on Richard's podcast. [1] https://futhark-lang.org/"
+        },
+        {
+          "by": "andai",
+          "text": "> Roc is not a mature language (it's still weeks away from its first numbered release, 0.1.0) It then links to a video where a consultant mentions using in production (for several years already?), which confused me. How can you justify using immature technologies for client work? Or is it an extra benefit when it breaks and you have to fix it? I'm genuinely curious, maybe it's not as bad as I…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50219666,
+      "url": "https://www.southampton.ac.uk/~doug/quantum_physics/index.html",
+      "hn": "https://news.ycombinator.com/item?id=50219666",
+      "title": "I Don't Understand Quantum Physics (2018)",
+      "time": 1792835606,
+      "points": 193,
+      "depth": [
+        {
+          "text": "the post is about struggling with **quantum physics**, and commenters debate what **understanding** even means",
+          "tier": "simple"
+        },
+        {
+          "text": "one commenter built an **interactive self-study guide** to help readers “feel” the equations. Another says physicists use **shared language and metaphors** to discuss quantum mechanics, with math and experiments grounding that understanding.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say many-worlds follows logically from quantum mechanics; others call it a mathematical construct or “pseudo religious nonsense.”",
+      "comment_count": 136,
+      "terms": [
+        "QM",
+        "many-worlds interpretation",
+        "Copenhagen interpretation",
+        "wave function collapse",
+        "instrumentalism",
+        "falsifiable",
+        "local hidden variables",
+        "Bell's inequality"
+      ],
+      "entities": [
+        "Newton",
+        "L. V. Tarasov",
+        "Heisenberg",
+        "Bob Coecke",
+        "Alain Aspect",
+        "Douglas Ross",
+        "Richard Feynman",
+        "Penrose",
+        "Hegel",
+        "Wittgenstein",
+        "Zotero",
+        "Basic Concepts Of Quantum Mechanics",
+        "Picturing Quantum Processes",
+        "QFT for the Gifted Amateur",
+        "QED: The Strange Theory of Light and Matter",
+        "StarCraft"
+      ],
+      "comments": [
+        {
+          "by": "jasrys",
+          "text": "Sharing in case useful for someone. Started getting into this subject in 2015, and full disclosure: I'm no physicist by any means. Without the formal background, the math and concepts were really hard to conjure and comprehend purely from the page, so I built an interactive self-study guide to \"feel\" the equations from Newton to holography. https://apples-to-entanglement.jasonrys.com/"
+        },
+        {
+          "by": "dbvdh",
+          "text": "\"This rather fanciful interpretation of Quantum Physics has now become accepted by many theoretical physicists as being more satisfactory than the Copenhagen interpretation, despite the fact that the mechanism which causes the splitting of the Universe is not explained in any more detail than wavefunction collapse. As you can probably tell, I am in the minority of physicists who finds the Many…"
+        },
+        {
+          "by": "the-mitr",
+          "text": "Of possible interest Basic Concepts Of Quantum Mechanics by L. V. Tarasov https://archive.org/details/tarasov-basic-concepts-of-quantu... The dialogues of the author engages with various personas and the reader that are interspersed as Prelude and Interludes are really enlightening. For example: Classical Physicist: Can one seriously speak about an object without having an idea of what it looks…"
+        },
+        {
+          "by": "bobvanluijt",
+          "text": "Somewhat related: a book that really helped me is Picturing Quantum Processes\nby Bob Coecke. It's a visual representation of quantum processes, which really helped me understand the concept"
+        },
+        {
+          "by": "asystole",
+          "text": "This piece looks great, adding to my ever-growing \"to read\" collection on Zotero. If anyone is interested in self-studying quantum physics, QFT for the Gifted Amateur [1] is very well regarded. 1: https://academic.oup.com/book/36442?login=false"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50205816,
+      "url": "https://github.com/ClickHouse/ClickBench/pull/2165",
+      "hn": "https://news.ycombinator.com/item?id=50205816",
+      "title": "Remove pgrust: the entry is cheating (per-query kernels and result caching)",
+      "time": 1792742733,
+      "points": 190,
+      "depth": [
+        {
+          "text": "ClickBench removed **pgrust** after accusing it of **benchmark-specific code** and cached answers",
+          "tier": "simple"
+        },
+        {
+          "text": "The removal request says the binary used **hand-written kernels** for the 43 queries and **replayed cached answers** on hot runs. pgrust's creator disputes that, saying the kernels were development probes and the cache stored **dictionary predicate matches**, not query results.",
+          "tier": "substance",
+          "data": [
+            [
+              "published hot Q20 runs",
+              "7 to 23 ms"
+            ],
+            [
+              "Q20 new-constant runs",
+              "283 ms, then 12 ms, 4 ms"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: the removal request says the entry used query-specific kernels and cached answers; pgrust's creator says those kernels did not run in the benchmark and the cache tracked dictionary matches, not query results.",
+      "comment_count": 148,
+      "terms": [
+        "benchmark",
+        "kernel",
+        "cache",
+        "dictionary compression"
+      ],
+      "entities": [
+        "ClickBench",
+        "ClickHouse",
+        "pgrust",
+        "Gravity IR",
+        "alexey-milovidov",
+        "malisper"
+      ],
+      "comments": [
+        {
+          "by": "malisper",
+          "text": "Hi! I'm the creator of pgrust. Let me explain what happened. For the most part, the actual accusations are false. This submission was an earlier version of pgrust 0.4 called pgrust 0.4-preview. We just open-sourced a newer version called pgrust 0.4-beta yesterday, and you can fully audit it here[0]. Rather than contest the accusations on GitHub, we figured it would be easier to complete pgrust…"
+        },
+        {
+          "by": "torben-friis",
+          "text": "This idea of \"here's the beta, I'll release the code in a few weeks\" sounds counter intuitive to me. is it normal in open source? Any reason for it?"
+        },
+        {
+          "by": "drchaim",
+          "text": "2nd round: https://github.com/ClickHouse/ClickBench/pull/2751"
+        },
+        {
+          "by": "stemchar",
+          "text": "Oh lord. I thought pgrust was a serious project."
+        },
+        {
+          "by": "bmacho",
+          "text": "ai;dr: a bench result is not randomized, and it returns cached result somewhere. My opinion: (some) bench results should run on randomized data."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/4870be30cb291ef6f3ef20ef4fd4192b92a854ec1ef7d9bed8b58b200e3d9a47/ClickHouse/ClickBench/pull/2165"
+    },
+    {
+      "id": 50208099,
+      "url": "https://github.com/openssl/openssl/releases/tag/openssl-4.1.0",
+      "hn": "https://news.ycombinator.com/item?id=50208099",
+      "title": "OpenSSL 4.1.0",
+      "time": 1792759364,
+      "points": 186,
+      "depth": [
+        {
+          "text": "a new release adds **new connection features** and drops **two Windows build targets**",
+          "tier": "simple"
+        },
+        {
+          "text": "OpenSSL 4.1.0 adds **DTLS 1.3** and **GREASE** support. One listed issue: receiving a DTLS 1.3 KeyUpdate drops other outstanding post-handshake records from the retransmission buffer.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some welcome DTLS 1.3 and call it a huge improvement; others say this is too little, too late and complain about unaddressed performance regressions.",
+      "comment_count": 66,
+      "terms": [
+        "DTLS 1.3",
+        "GREASE",
+        "KeyUpdate"
+      ],
+      "entities": [
+        "OpenSSL"
+      ],
+      "comments": [
+        {
+          "by": "haunter",
+          "text": "> Dropped Windows-on-Itanium (VC-WIN64I) and Windows CE (VC-CE) targets\nfrom Configurations. What a throwback. afaik Windows Server 2008 R2 had Itanium updates until 2020 and paid support until this year. Pretty good run to\nsay at least"
+        },
+        {
+          "by": "hannob",
+          "text": "I don't see \"we fixed some of the the excessive performance regressions that we introduced in 3.0\". Unfortunate... Context:\nhttps://cryptography.io/en/latest/statements/state-of-openss..."
+        },
+        {
+          "by": "owenthejumper",
+          "text": "I think it's too little too late, people have started moving on https://www.haproxy.com/blog/state-of-ssl-stacks"
+        },
+        {
+          "by": "adzm",
+          "text": "I think this is the only software project I use that still requires me to have perl"
+        },
+        {
+          "by": "ShakataGaNai",
+          "text": "Guys, after this week, can we make sure to have more details in the title? Like \"Look! Cool new OpenSSL features\" so we're not PTSD'ing our way into release notes expecting it to say something about patching critical CVEs?"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/02c77ea91d816b8397dbd361fb4dd9719007a716310ae9afcccc7c50fd8fc0a2/openssl/openssl/releases/tag/openssl-4.1.0"
+    },
+    {
+      "id": 50207115,
+      "url": "https://drew.silcock.dev/blog/is-this-the-new-cyber-normal/",
+      "hn": "https://news.ycombinator.com/item?id=50207115",
+      "title": "Is this the new cyber normal?",
+      "time": 1792753493,
+      "points": 184,
+      "depth": [
+        {
+          "text": "someone asks whether **AI** has made **software attacks** happen much faster than before",
+          "tier": "simple"
+        },
+        {
+          "text": "The **PHP2Shell** bugs were estimated to affect upwards of **70% of the internet**. The author argues that LLMs have cut the gap between hearing about a serious flaw and seeing attacks from weeks or months to **hours or minutes**, though many incidents weren’t shown to involve AI.",
+          "tier": "substance",
+          "data": [
+            [
+              "PHP2Shell estimated reach",
+              "upwards of 70% of the internet"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say faster vulnerability discovery and exploitation make this the new normal; others expect a rough transition, followed by better scanning, patching, and more secure software.",
+      "comment_count": 214,
+      "terms": [
+        "LLM",
+        "RCE",
+        "CVE",
+        "CVSS",
+        "exploit",
+        "embargo",
+        "regex"
+      ],
+      "entities": [
+        "Hacker News",
+        "PHP2Shell",
+        "PHP",
+        "Calif",
+        "OpenAI",
+        "Wiz",
+        "Google Cloud",
+        "PHP Foundation",
+        "Sovereign Tech Agency",
+        "GPT-5.6 Sol",
+        "Gemini 4 Argon",
+        "LiveOverflow",
+        "eMudhra",
+        "Mozilla",
+        "Claude",
+        "Railway",
+        "GitLab",
+        "HackerOne",
+        "musl",
+        "LiteLLM",
+        "PyPI",
+        "Docker",
+        "Claude Code",
+        "PingCAP",
+        "TiDB",
+        "FulcrumSec",
+        "Linux",
+        "Zero Day Initiative",
+        "Trend Micro",
+        "AWS",
+        "NHS England",
+        "Mythos",
+        "Dependabot",
+        "Node2Shell",
+        "Python",
+        "Java",
+        "Scott Helme",
+        "Johan Carlsson",
+        "Julien Voisin",
+        "petecooper",
+        "Wayne",
+        "Drew",
+        "Jason Clinton"
+      ],
+      "comments": [
+        {
+          "by": "thaumaturgy",
+          "text": "There are two aspects: first that there is currently a much higher pace of critical vulnerabilities and exploits being discovered, and second that there is a much shorter window between discovery and large-scale exploitation. People are saying the pace will settle down once LLMs find and fix all the bugs. Okay, sure, if you want to believe that sort of thing, but that still leaves the much…"
+        },
+        {
+          "by": "publlus_enigma",
+          "text": "Maybe it is just time to stop putting everything on the internet? Even prior to this recent cavalcade, the way we have handled security been seemed fragile. We tend to build with the assumption something is secure, and then patch as required. A huge amount of the machinery relating to computing today pertains to security. Much of the need for that same machinery would significantly lessen if we…"
+        },
+        {
+          "by": "thomascgalvin",
+          "text": "Everything I've read indicates that yes, this is the new normal. When Mythos was first announced, pretty much every security expert I talk to freaked directly out. A significant portion of my job now revolves around mitigating the impact of AI-generated exploits. The rate at which we're churning out AI-generated code is going to make this worse, too, because AI-generated code is kind of…"
+        },
+        {
+          "by": "ChrisMarshallNY",
+          "text": "I have often whined about the quality (or lack, thereof) of today's software, but I certainly have no room to be smug. I recently turned an LLM loose on a number of mature packages that I wrote, and would have sworn were \"perfect,\" and it found issues (thankfully, none, serious, but issues, nonetheless). I think LLMs are a gamechanger. I was just talking to a friend of mine, last night, and he…"
+        },
+        {
+          "by": "u8",
+          "text": "This is the new playing field, but this game can't last forever. Most software is not churning through a software factory of endless patches and releases. Most software, once mature, is mostly done. I see a world in which we all get some generous Dependabot 2.0 on large forges because leaving so much software insecure otherwise is untenable, but once the software is not iterating a billion times…"
+        }
+      ],
+      "image": "https://drew.silcock.dev/open-graph/blog/is-this-the-new-cyber-normal.png"
+    },
+    {
+      "id": 50202762,
+      "url": "https://jank-lang.org/",
+      "hn": "https://news.ycombinator.com/item?id=50202762",
+      "title": "Jank – The native Clojure dialect with seamless C++ interop",
+      "time": 1792713396,
+      "points": 184,
+      "depth": [
+        {
+          "text": "someone made a **Clojure dialect** that can use **C++ code** without a separate bridge",
+          "tier": "simple"
+        },
+        {
+          "text": "jank **compiles to C++** and uses its type system; a **Clang-based JIT** compiler powers interactive REPL development. Its creator says it's **still in alpha**, so things are a bit unstable.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: jank's creator calls its C++ interop unprecedented; another commenter says Common Lisp has had seamless C++ interop through CLASP for a few years.",
+      "comment_count": 48,
+      "terms": [
+        "Clojure dialect",
+        "interop",
+        "REPL",
+        "JIT",
+        "C++ type system",
+        "RAII",
+        "overload resolution",
+        "marshalling",
+        "ADL",
+        "Clang"
+      ],
+      "entities": [
+        "jank",
+        "Clojure",
+        "C++",
+        "Clang",
+        "LLVM",
+        "Leiningen",
+        "Java",
+        "Clasp",
+        "Common Lisp",
+        "Cargo",
+        "nREPL",
+        "Slack",
+        "Discord",
+        "GitHub",
+        "Janet",
+        "Boost",
+        "GLFW",
+        "ImGui",
+        "OpenGL",
+        "Jeaye Wilkerson"
+      ],
+      "comments": [
+        {
+          "by": "Jeaye",
+          "text": "Hey folks. I'm the jank creator. jank is a full Clojure dialect with unprecedented C++ interop. Unlike the OG Lisp/C++ combo, Clasp, there is no bridge API necessary for registering C++ functions, types, or values. jank can seamlessly interop with any C++ by just including the headers. Interop includes template instantiations, overload resolution (implicit conversions, ADL, etc), exception…"
+        },
+        {
+          "by": "goldenshale",
+          "text": "I think repl driven development with access to native code could be a magic formula for agent engineering. No restarting, no re-compiling. Plus with persistent, immutable data structures you can iterate with many threads in parallel while maintaining sanity."
+        },
+        {
+          "by": "e12e",
+          "text": "Wonder how this compares to clasp (common lisp c++ impl)?"
+        },
+        {
+          "by": "flavio81",
+          "text": "PSA: If you need a Lisp that talks to C++, Common Lisp has had seamless C++ interop in the few years thanks to the CLASP implementation. It should be fairly mature by now, I understand it was born to be used in serious projects."
+        },
+        {
+          "by": "onlyrealcuzzo",
+          "text": "This is quite cool. ```\njank is C++\njank can include any C++ source, link to any C or C++ library, and it uses the C++ type system. jank even compiles to C++!\n``` I'd recommend saying that it lowers to C++ earlier, as I imagine most people are interested in that aspect of how it works. ```jank is Clojure on top of C++``` -> `on top of` could mean many things. I'd recommend just saying it…"
+        }
+      ],
+      "image": "https://jank-lang.org/img/logo-text-dark.png"
+    },
+    {
+      "id": 50206840,
+      "url": "https://tilschuenemann.de/job-loss-cortisone-mania",
+      "hn": "https://news.ycombinator.com/item?id=50206840",
+      "title": "Job loss and cortisone mania",
+      "time": 1792751484,
+      "points": 182,
+      "depth": [
+        {
+          "text": "someone lost their job, got sick, then **cortisone** left them feeling wired and **wildly productive**",
+          "tier": "simple"
+        },
+        {
+          "text": "Cortisone quickly relieved the author’s symptoms, but they also describe **restlessness**, a racing heart and **broken sleep**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 132,
+      "terms": [
+        "cortisone",
+        "autoimmune condition",
+        "tapering off"
+      ],
+      "entities": [
+        "Til Schünemann",
+        "Limitless"
+      ],
+      "comments": [
+        {
+          "by": "kleiba2",
+          "text": "It's kind of strange that our existence has come down to working in an often unfulfilling job almost all of our waking time, and only finding fulfillment when you're out of a job."
+        },
+        {
+          "by": "tilschuenemann",
+          "text": "author here: Hey, that's my post on the frontpage, what is it doing here?!? I've been working on my blog lately, and having only a few posts up and no readership, I'm now blown away by all the comments and mails and support I'm receiving. Thank you so much everybody! It's a privilige to live in Germany, where I have public health insurance, and access to great doctors and staff. I'm tapering off…"
+        },
+        {
+          "by": "rockyj",
+          "text": "Interesting to see Cortisone mentioned on HN. I was diagnosed with Thymus Carcinoma in 2020 (peak COVID), long story short, with God's grace - all healed in 6 months. In 2024 it reoccurred, then Chemo, then healing. 2026 has been tough for me, they found growth on one kidney, small and slowly growing, got it removed. Then doctors recommended immunotherapy, said it would be safe. But like the…"
+        },
+        {
+          "by": "lrdass",
+          "text": "I've been through exactly that.. I've just completed 30, and I was lay'doff on my 29's.\nThis such weird-dread-inducing modern world is so weird man.. In the past the anxiety of having bread next-day was completely attached to your hard-work.. nowadays it doesn't feel like that. It fascinates me a topic that I was reading a couple days ago in a magazine (a old-professor of mine from college wrote…"
+        },
+        {
+          "by": "jan_m_savage",
+          "text": "Sorry to hear about your illness and job loss--though we don't know each other. As a fellow human, in addition to the words, I can share some of my own perspective: The things that were meant to be, will be. That's for acceptance.\nBut we have free will (sort of). And that's for action. Also, highly recommend these books so that you can also take a more active role for your health (but you need to…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50216791,
+      "url": "https://nitter.click/AikidoSecurity/status/2113759110625906950?__galadriel=lPmlGl9id4oAd5UeBwMhlYKArHyr6lR2IDGujPwB5HV2kQ1aLoPWFd5A9sGuzNcmrp8fUso8qygmHcKTDZ8MNHWqQ3bDJcycV87xp_0VypzQLYj6O_RRHlZuQqj33oASGY2YLSoAiMjeOZN40h7Stf8AG7DPrGZbAPVKUXy36HoMudRbvwF3_r2uYNmfJMhpKzywQDM6Ab8",
+      "hn": "https://news.ycombinator.com/item?id=50216791",
+      "title": "Evolving Threat: http2shell is an RCE in Node, Python, and more",
+      "time": 1792798217,
+      "points": 177,
+      "depth": [
+        {
+          "text": "a **Brotli flaw** can let attackers **run code** through Node, Python, and more",
+          "tier": "simple"
+        },
+        {
+          "text": "Commenters disagree about the **risk**: one says server exposure is limited because servers may not call the Brotli decoder, while another says **Python HTTP clients** can be affected when Brotli is installed. One commenter says the Python package was updated to **1.2.1**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say server exposure is limited and the issue is overblown; others warn Python HTTP clients can be affected when Brotli is installed.",
+      "comment_count": 94,
+      "terms": [
+        "RCE",
+        "Brotli",
+        "decoder",
+        "memory safety",
+        "ASLR",
+        "PoC",
+        "content-encoding",
+        "reference implementation",
+        "binding",
+        "buffer overflow"
+      ],
+      "entities": [
+        "http2shell",
+        "Node",
+        "Python",
+        "Brotli",
+        "Google",
+        "Wuffs",
+        "Rust",
+        "Carbon",
+        "zstd",
+        "C#",
+        ".NET",
+        "PHP",
+        "eMudhra",
+        "Chromium",
+        "Deno",
+        "urllib3",
+        "requests",
+        "httpx",
+        "aiohttp",
+        "Scapy",
+        "brotlicffi",
+        "Flask",
+        "Gunicorn",
+        "Apache"
+      ],
+      "comments": [
+        {
+          "by": "mirashii",
+          "text": "I feel as though this should be googlebrotli2shell, not http2shell. Google deserves to take a bit of a reputational hit for this. This is a basic memory safety violation, from the same organization that does wuffs, that promotes Rust for memory safety, that has Carbon. zstd has high quality rust implementations and is from roughly the same time. On top of that, the brotli library saw no releases…"
+        },
+        {
+          "by": "ataraxia937",
+          "text": "This one again feels overblown, at least for servers. I just checked an org of over 200 GitHub repos. Node, Python, and C#. None of them are vulnerable... because none of them actually call the Brotli decoder. It's just not enabled by default on the server side, by the platforms themselves. This is much like the PHP bugs, where specific conditions have to be in play before you're actually…"
+        },
+        {
+          "by": "anonymous908213",
+          "text": "I could do without every memory bug getting a cute sensational name and marketing push, I have to say."
+        },
+        {
+          "by": "rvanlaar",
+          "text": "It looks like brotli <= 1.2.0 is vulnerable. The python package has already been updated to 1.2.1. https://pypi.org/project/brotli/1.2.1/"
+        },
+        {
+          "by": "hatthew",
+          "text": "I feel like normal security issues don't get much publicity. The PHP and eMudhra issues seemed severe, and worth publicity. But then with things like this, I'm not sure. Is this a severe issue? Or is it just a run of the mill issue that's only newsworthy because web security is on people's minds right now?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50186450,
+      "url": "https://www.scientificamerican.com/article/physicists-trap-a-single-antimatter-particle-for-a-month/",
+      "hn": "https://news.ycombinator.com/item?id=50186450",
+      "title": "Physicists trap a single antimatter particle for a month",
+      "time": 1792611601,
+      "points": 188,
+      "depth": [
+        {
+          "text": "physicists kept one **antimatter particle** trapped for a month so they could study its **quantum states**",
+          "tier": "simple"
+        },
+        {
+          "text": "They slowed positrons by sending them through **cold tungsten**, then steered them into a vacuum, where electric and magnetic fields held one. The team wants to measure its **magnetic moment** and compare it with an electron’s; a difference could help explain why the universe is made of **matter, not antimatter**.",
+          "tier": "substance",
+          "data": [
+            [
+              "positron trapping time",
+              "one month"
+            ],
+            [
+              "temperature",
+              "three tenths of a degree Celsius above absolute zero"
+            ],
+            [
+              "electron magnetic-moment precision",
+              "one part in 10 trillion"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 65,
+      "terms": [
+        "antimatter",
+        "positron",
+        "quantum states",
+        "magnetic moment",
+        "Standard Model"
+      ],
+      "entities": [
+        "Scientific American",
+        "Clara Moskowitz",
+        "Lee Billings",
+        "Gerald Gabrielse",
+        "Northwestern University",
+        "Physical Review Letters",
+        "Roni Harnik",
+        "Fermi National Accelerator Laboratory",
+        "Standard Model"
+      ],
+      "comments": [
+        {
+          "by": "nickpinkston",
+          "text": "Very cool! There's some wild ideas about antimatter capture in space via giant arrays of superconducting magnets trapping naturally occurring antimatter. Apparently, nanograms / micrograms is enough to create a \"antimatter catalyzed\" fission/fusion propulsion system with enormous specific impulse / efficacy. PDF: https://www.niac.usra.edu/files/studies/final_report/1071Bic..."
+        },
+        {
+          "by": "fsh",
+          "text": "Exciting results. The electron's magnetic moment is probably the most precise standard model prediction, and Gabrielse's group has measured it with 13 digits of accuracy. The positron is predicted to have exactly the same magnetic moment, but this has not been measured since 1987. With the new trap, they should be able to finally match the electron's precision."
+        },
+        {
+          "by": "foobarbecue",
+          "text": "I don't get how they know they have exactly one in there. I mean they're measuring the magnetic field but how on earth do you make sufficiently precise measurements to detect a single particle!?! Edit: this is explained pretty extensively in the paper ( https://cfp.physics.northwestern.edu/documents/2026OnePositr... ). I'm gonna need to do some background reading though..."
+        },
+        {
+          "by": "dguest",
+          "text": "Direct link to article: https://arxiv.org/abs/2605.08147"
+        },
+        {
+          "by": "androiddrew",
+          "text": "I kind of want to know how they safely deal with its release (destruction)"
+        }
+      ],
+      "image": "https://static.scientificamerican.com/dam/asset/c8ce3ae2-d702-4225-a7d6-2c48e4cc1575/Particle-light-flare.jpg?m=1792593357.873&w=1200"
+    },
+    {
+      "id": 50193677,
+      "url": "https://funcarena.com/articles/the-quake-fan-who-built-the-map-editor-everybody-uses",
+      "hn": "https://news.ycombinator.com/item?id=50193677",
+      "title": "The Quake Fan who built the map editor everybody uses",
+      "time": 1792666522,
+      "points": 173,
+      "depth": [
+        {
+          "text": "someone built a **Quake map editor** used for custom maps, but **never made one** themselves",
+          "tier": "simple"
+        },
+        {
+          "text": "Kristian Duske started **TrenchBroom** in **2010** because he couldn't find an editor he liked, then rewrote it in C++ for Windows and macOS. He says **AI** helped him reorganize the project into smaller libraries and improve its build system.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: fans call it excellent and fun; critics say its brush-based approach takes too many pieces for closed-space maps, and some prefer UnrealEd.",
+      "comment_count": 22,
+      "terms": [
+        "C++",
+        "CSG",
+        "brush-based",
+        "linked groups",
+        "texture projection",
+        "gamepack"
+      ],
+      "entities": [
+        "TrenchBroom",
+        "Kristian Duske",
+        "ToeTag",
+        "Warren Marshall",
+        "Eric Wasylishen",
+        "Quake",
+        "Quake 2",
+        "Quake 3",
+        "Godot",
+        "Qodot",
+        "Wrath",
+        "GRAVEN",
+        "wxWidgets",
+        "Qt",
+        "C",
+        "Objective-C",
+        "C++",
+        "SDL",
+        "Valve 220",
+        "Daikatana",
+        "Q3Radiant",
+        "WorldCraft",
+        "QERadiant",
+        "Neverball",
+        "Hammer",
+        "func_godot",
+        "Arcane Dimensions",
+        "Quake Brutalist Jam",
+        "Qoole",
+        "NetRadiant",
+        "UnrealEd",
+        "OldUnreal"
+      ],
+      "comments": [
+        {
+          "by": "drbscl",
+          "text": "Trenchbroom is legitimately among the best software I have ever used. I grew up using Hammer and this simply blows it out of the water. One nice thing is that you can use it as a level editor for your own games in Godot with func_godot"
+        },
+        {
+          "by": "parasti",
+          "text": "TrenchBroom is great. I am the maintainer for Neverball (which is incidentally one of the games that does still use the old style texture projection). TrenchBroom was the first Quake editor that already had a functional Neverball gamepack without me having to do a thing."
+        },
+        {
+          "by": "paczki",
+          "text": "Cool article, never knew the actual history of how Trenchbroom got started! Have been using it very casually over the last decade or so. There are some incredible Quake mappers out there making things that would make your jaw drop if you haven't seen Quake in quite a while. For example, Arcane Dimensions[0] or the Quake Brutalist Jam[1] [0] https://www.moddb.com/mods/arcane-dimensions [1]…"
+        },
+        {
+          "by": "r0ze-at-hn",
+          "text": "It is neat all of these years later to see Qt pop up now and then, just chugging along with comments from users like the author saying \"Yep, that was worth it.\". Just doing its thing getting out of the way and letting users build what they want to do."
+        },
+        {
+          "by": "sho_hn",
+          "text": "Anyone remember Qoole? It's the editor I grew up on and truly loved."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50211746,
+      "url": "https://alexsci.com/blog/uuidv7-is-weird/",
+      "hn": "https://news.ycombinator.com/item?id=50211746",
+      "title": "UUIDv7: Timestamps aren’t time-ordered and other oddities",
+      "time": 1792773585,
+      "points": 164,
+      "depth": [
+        {
+          "text": "someone explains why **UUIDv7 timestamps** can drift and its IDs **aren't reliably ordered**",
+          "tier": "simple"
+        },
+        {
+          "text": "RFC-compliant implementations can **alter timestamps**, and Python's generator can **race far ahead** if the system clock jumps backwards. The author says UUIDv7 still offers uniqueness and rough ordering, but other guarantees **depend on the implementation**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say UUIDv7's rough ordering and index clustering make it useful; others say IDs should be treated only as identifiers, not trusted for ordering.",
+      "comment_count": 135,
+      "terms": [
+        "UUIDv7",
+        "RFC",
+        "monotonic",
+        "counter",
+        "index",
+        "sharding"
+      ],
+      "entities": [
+        "UUIDv7",
+        "Python",
+        "RFC 9562",
+        "Postgres",
+        "CUID2",
+        "ULID",
+        "Snowflake ID",
+        "Robert Alexander"
+      ],
+      "comments": [
+        {
+          "by": "ricardobeat",
+          "text": "This is a misunderstanding of the purpose of UUIDv7. The whole point is to keep rows physically close, so you can very quickly extract an entire time range from a number of database shards, with minimal reads and compute. And be able to generate them without a centralized server. That's all there was to it, and something you'd only worry about when serving billions of records every hour. They are…"
+        },
+        {
+          "by": "hackingonempty",
+          "text": "> If you need to list things ordered by creation time very often, it’s useful if the primary index gives that behavior, removing the need for another index. I thought the main reason UUIDv7 was created with a time component is to keep temporally related rows together in the index pages. Randomly distributed row ids seem OK until the entire index no longer fits in RAM."
+        },
+        {
+          "by": "btown",
+          "text": "One of my favorite things about UUIDv7: the package https://pypi.org/project/uuid7/ does not implement compliant UUIDv7s, it's from a wholly incompatible draft format. That was not a fun debugging session. https://pypi.org/project/uuid-utils/ is what you want :) https://github.com/stevesimmons/uuid7/issues/1"
+        },
+        {
+          "by": "kentm",
+          "text": "Kind of funny title since I didn’t think UUIDv7 had any of the properties being disputed here. The reason to use UUIDv7 is because it reduces the space over which the UUID can cover at a given time, which improves write clustering. They don’t need to be strictly ordered for this, just “good enough”. I hope to god no one is actually using the timestamp portion to replace an “updated at” timestamp…"
+        },
+        {
+          "by": "rcoder",
+          "text": "If you really need monotonic, secure/unguessable IDs, there are options like CUID2 (github.com/paralleldrive/cuid2). Older designs like ULIDs ( https://github.com/ulid/spec ) and Snowflake IDs ( https://en.wikipedia.org/wiki/Snowflake_ID ) have similar properties to UUIDv7, and potentially some advantages w.r.t. length/encoding/runtime cost/etc. But UUIDv7 has one key advantage none of those do…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50208258,
+      "url": "https://www.bitdefender.com/en-us/blog/hotforsecurity/hacker-leaks-281-gb-data-germany-afd",
+      "hn": "https://news.ycombinator.com/item?id=50208258",
+      "title": "Hacker leaks 281 GB of data from Germany's far-right AfD party",
+      "time": 1792760198,
+      "points": 162,
+      "depth": [
+        {
+          "text": "a hacker leaked **281 GB** of AfD emails, and the site's **AI summaries** may contain mistakes",
+          "tier": "simple"
+        },
+        {
+          "text": "The AfD said its hosting provider was hacked in September and some mailboxes were copied. The torrent claims to contain **421,179 internal emails** and more than 100,000 files; party sources said the summaries appeared to contain **several inaccuracies**.",
+          "tier": "substance",
+          "data": [
+            [
+              "leaked data",
+              "281 GB"
+            ],
+            [
+              "internal emails",
+              "421,179"
+            ],
+            [
+              "other files",
+              "more than 100,000"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say the leak shows serious problems inside AfD; others question whether the emails are real or object to the article's far-right label.",
+      "comment_count": 119,
+      "terms": [
+        "AfD",
+        "torrent",
+        "DKIM signatures",
+        "phishing",
+        "unpatched",
+        "segmented"
+      ],
+      "entities": [
+        "AfD",
+        "Alternative für Deutschland",
+        "Hexane.cc",
+        "Proton Mail",
+        "Bitdefender",
+        "Graham Cluley"
+      ],
+      "comments": [
+        {
+          "by": "aliasxneo",
+          "text": "> What is unusual is that the leaked emails are not published on the site directly. Instead, AI-generated summaries are shown, categorised and rated from Low to Critical. Interesting choice. I don't feel like I'm at the comfort level where I would really trust any of those summaries - although I can respect the reasoning behind it."
+        },
+        {
+          "by": "gadders",
+          "text": "Where \"hackers\" = \"security services\". The same will happen to Reform/Restore in the UK. \"Dominic Cummings warned on The Spectator's Quite Right! podcast that Whitehall and the civil service would resort to illegal tactics—such as leaking confidential medical and tax records or bugging phones—to prevent Nigel Farage and Reform UK from gaining power.\""
+        },
+        {
+          "by": "voidUpdate",
+          "text": "> \"Indeed, party sources told the media that although the leaked emails appeared to be authentic, the AI-generated summaries appeared to contain several inaccuracies.\" Which is why I'm so confused that they did this instead of just publishing a \"best hits\" of excerpts or something, if the amount of content was an issue"
+        },
+        {
+          "by": "declan_roberts",
+          "text": "They should just make it illegal for people to vote for certain parties and this problem is solved."
+        },
+        {
+          "by": "ndom91",
+          "text": "It's a bit overrun with all the traffic, but someones made a \"jmail\" style interface / webapp for this as well haha https://goebbelmail.com"
+        }
+      ],
+      "image": "https://blogapp.bitdefender.com/hotforsecurity/content/images/2026/10/afd.jpeg"
+    },
+    {
+      "id": 50212507,
+      "url": "https://www.jefftk.com/p/air-purifiers-as-white-noise-machines",
+      "hn": "https://news.ycombinator.com/item?id=50212507",
+      "title": "Air Purifiers as White Noise Machines",
+      "time": 1792776516,
+      "points": 157,
+      "depth": [
+        {
+          "text": "someone points out that a small **air purifier** can make **white noise** while cleaning the air",
+          "tier": "simple"
+        },
+        {
+          "text": "The example is a **$47 purifier** that cleans 34 cubic feet of air per minute at 45dB. For a 10ft square room with an 8ft ceiling and 0.5 air changes per hour through outdoor leakage, the writer estimates it can cut particulates to **16% of the outdoor level**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Price",
+              "$47"
+            ],
+            [
+              "Air cleaning",
+              "34 cubic feet of air per minute"
+            ],
+            [
+              "Noise",
+              "45dB"
+            ],
+            [
+              "Estimated particulate level",
+              "16% of the outdoor level"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some prefer a purifier's deeper sound and air cleaning; others say a dedicated white-noise machine sounds better or worry about running costs.",
+      "comment_count": 147,
+      "terms": [
+        "CADR",
+        "CFM",
+        "AQI",
+        "HEPA",
+        "PM2.5",
+        "VOC"
+      ],
+      "entities": [
+        "AirFanta 3Pro",
+        "Blueair",
+        "Amazon",
+        "Yogasleep Dohm Classic",
+        "Home Assistant",
+        "Coway",
+        "Winix",
+        "Ikea",
+        "Xiaomi",
+        "Midea",
+        "Austin Air HealthMate",
+        "myNoise",
+        "AirPods",
+        "Corsi-Rosenthal"
+      ],
+      "comments": [
+        {
+          "by": "c0nsumer",
+          "text": "I've got a Blueair one that I was given, which thankfully has cheap filters available for on Amazon. These are otherwise REALLY expensive. The noise is nice, and it helps with dust in the bedroom. But I recently got a Yogasleep Dohm Classic [1] and it really does sound better. Placed across the bedroom, with the two controls adjusted just... right... it makes that really nice water-rushing proper…"
+        },
+        {
+          "by": "senderista",
+          "text": "An air purifier is the best noise machine for me, much better than the white noise machines with the tinny speakers. Even the brown noise setting on those isn't nearly deep enough to let me sleep."
+        },
+        {
+          "by": "serkanh",
+          "text": "This made me lol. I’ve been using an air purifier solely for the purpose of generating white noise. I don’t recall when I started doing this, but it’s been many, many years. The functionality of the air purifier wasn’t even a thought in my mind."
+        },
+        {
+          "by": "arjie",
+          "text": "What are people's target AQIs? I have indoor monitors in our high-rise building in SF and live 100 m from the freeway and we have: PM2.5: 2.6 µg/m³\nPM10: 0.5 µg/m³\nVOC index: ~97\nCO₂: ~505 ppm\nThat's the baseline. When we're cooking, like now, it's: PM2.5: 10.8 µg/m³ (AQI ~46)\nPM10: 17.5 µg/m³\nVOC index: 122\nCO₂: 572 ppm\nNone of those seem particularly concerning. We have a gas range, and 15 min…"
+        },
+        {
+          "by": "gopalv",
+          "text": "An air purifier is a good addition to a kids bedroom. I got one during Santa Cruz wildfires in 2020 and now the kids have a pavlovian reflex to sleep once that gets turned on. Ikea makes an air-purifier table, which is a end-run around it being a useless box in the room when switched off. It's fairly expensive, not as good as a purpose built one, but it blends into the average room pretty well."
+        }
+      ],
+      "image": "https://www.jefftk.com/jefftk-glyph-framed.jpg"
+    },
+    {
+      "id": 50207050,
+      "url": "https://blog.jim-nielsen.com/2026/skip-retirement-for-utopia/",
+      "hn": "https://news.ycombinator.com/item?id=50207050",
+      "title": "No Need for Retirement When Utopia Is Around the Corner",
+      "time": 1792753132,
+      "points": 156,
+      "depth": [
+        {
+          "text": "a writer jokes AI labs could **drop retirement benefits** to signal **universal high income** is near",
+          "tier": "simple"
+        },
+        {
+          "text": "The post draws on **Daniel Ellsberg’s account** of him and Alain Enthoven not joining **RAND’s generous retirement plan** because they thought they would not live to collect it. It then jokes that an AI lab could cut benefits to show faith in **universal high income**; commenters also dispute the smoking story.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say RAND’s nuclear workers may have helped avert a real threat; others say the AI comparison is shaky and the smoking story is unverified or a joke.",
+      "comment_count": 176,
+      "terms": [
+        "missile gap",
+        "SAC",
+        "universal high income"
+      ],
+      "entities": [
+        "Anthropic",
+        "RAND Corporation",
+        "Daniel Ellsberg",
+        "Alain Enthoven",
+        "The Doomsday Machine",
+        "Pentagon Papers",
+        "Palantir"
+      ],
+      "comments": [
+        {
+          "by": "paxy",
+          "text": "All online discussions these days are like those chain email forwards of the last generation. “Omg did you know that AI researchers are taking up smoking because they think AI will cure cancer??” Oh really, which researchers? “I don’t know.” How many of them? One or many? “I don’t know.” What company do they work for? “I don’t know. But I’m sure it’s Anthropic.” How do you even know this? “I saw…"
+        },
+        {
+          "by": "epiccoleman",
+          "text": "I can't claim to know anything about the RAND corporation. Maybe they don't deserve to be included in this next sentence, maybe they do. but there is something at least a little interesting about the notion that people working in the nuclear space they thought they might be saving the world - because in some sense, they... did? I've always felt like the fact that no nukes have ever been dropped…"
+        },
+        {
+          "by": "cogogo",
+          "text": "No retirement benefits. The next evolution of unlimited vacation. No really, it benefits the employee."
+        },
+        {
+          "by": "rob74",
+          "text": "> This reminds me of the report that AI researchers have taken up smoking as a way to signal their belief that AI will cure cancer before smoking kills them. While reading the first half of this sentence, I fully expected the second half to be \"...to signal their belief that AI will destroy the world before they can get lung cancer\""
+        },
+        {
+          "by": "bozdemir",
+          "text": "Where the heck is my universal basic income?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50208343,
+      "url": "https://codeberg.org/shitter/shitter",
+      "hn": "https://news.ycombinator.com/item?id=50208343",
+      "title": "Shitter – A Nitter Fork",
+      "time": 1792760543,
+      "points": 155,
+      "depth": [
+        {
+          "text": "someone made **Shitter**, a way to browse Twitter **without JavaScript** and block its **IP tracking**",
+          "tier": "simple"
+        },
+        {
+          "text": "Shitter is a free, open-source **fork of Nitter**. Requests go through its backend, so the client **never talks to Twitter**; it uses Twitter’s unofficial API and is listed as **60KB vs 784KB** for twitter.com.",
+          "tier": "substance",
+          "data": [
+            [
+              "size comparison",
+              "60KB vs 784KB"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters want to use Shitter instances or like the idea; others say social networks like Twitter aren’t worth using and complain the fork doesn’t explain why it exists.",
+      "comment_count": 154,
+      "terms": [
+        "front-end",
+        "fork",
+        "backend",
+        "API",
+        "JavaScript fingerprint",
+        "instance"
+      ],
+      "entities": [
+        "Shitter",
+        "Nitter",
+        "Twitter",
+        "Codeberg"
+      ],
+      "comments": [
+        {
+          "by": "grimgrin",
+          "text": "see: https://news.ycombinator.com/item?id=49571634 \"Nitter has more working instances than before the takedowns\" many working instances right now: https://codeberg.org/shitter/shitter/wiki/Instances"
+        },
+        {
+          "by": "DavCreator",
+          "text": "Would love to redirect more often to shitter instances with https://xxcancel.com .\nBut there seems to be a bug loading images (e.g. profile pictures or attached pictures to tweets) in Firefox. Example: https://shitter.thepixora.com/search?f=tweets&q=elon+musk Wont show any pictures in Firefox for me. Works in Chrome. Can this be fixed? Thank you!"
+        },
+        {
+          "by": "moopie",
+          "text": "There’s really no reason to bother with social networks owned by literal far right supporters"
+        },
+        {
+          "by": "BLKNSLVR",
+          "text": "I thought it should be called Xitter, but pronounced Shitter."
+        },
+        {
+          "by": "SomeonesAccount",
+          "text": "I made a thing that uses Nitter to have a revchron timeline of people in the tech space. No algorithm, every post shows up (unless you filter out an account). Feedback is appreciated: https://techtwitter-lime.vercel.app"
+        }
+      ],
+      "image": "https://codeberg.org/shitter/shitter/-/summary-card"
+    },
+    {
+      "id": 50203759,
+      "url": "https://www.awakin.org/v2/read/view.php?tid=468",
+      "hn": "https://news.ycombinator.com/item?id=50203759",
+      "title": "This I Believe (1952)",
+      "time": 1792721978,
+      "points": 153,
+      "depth": [
+        {
+          "text": "Robert A. Heinlein says **most people are decent** and **kindness keeps us going**",
+          "tier": "simple"
+        },
+        {
+          "text": "He imagines humanity **surviving and enduring**, carrying **honesty, courage, and curiosity** beyond Earth. Commenters split: some share his optimism, while others say it ignores history and cruelty.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: optimists say faith in ordinary people is worth keeping; skeptics say the essay ignores history, violence, and discrimination.",
+      "comment_count": 88,
+      "terms": [
+        "AGI",
+        "white flight"
+      ],
+      "entities": [
+        "Robert A. Heinlein",
+        "This I Believe",
+        "Awakin.org",
+        "ServiceSpace",
+        "Gandhi",
+        "NPR",
+        "X-men III",
+        "Inconvenient Truth"
+      ],
+      "comments": [
+        {
+          "by": "johnohara",
+          "text": "In 2026, it is not wise to believe that almost all politicians are honest. It is better to be skeptical of their motivations and hope they are honest enough to do the right thing for the citizens they represent."
+        },
+        {
+          "by": "ballmerpoint",
+          "text": "(1952). Heinlein was such an odd fellow. Extremely progressive on one hand and extremely regressive on the other, sometimes in the span of a single paragraph."
+        },
+        {
+          "by": "rf15",
+          "text": "Ah, Heinlein. There's not much energy up there, and the energy question is a big one. It's now 2026 and we are still at the point where we can only move a fraction to actual space of what we originally start off with down here. Our fuel is still not anywhere close to what we'd need in terms of energy density and throughput."
+        },
+        {
+          "by": "blfr",
+          "text": "Excellent points on the intrinsic motivations and qualities absolutely dominating any control system. But also plenty of places are nothing like Heinlein's hometown so this is far from universal."
+        },
+        {
+          "by": "manlymuppet",
+          "text": "The point about politicians is the one I think today most needs. Our public systems don't work when we inherently distrust them. This isn't reason alone to trust, but a bias towards distrust is a pernicious thing for society. This might be terribly controversial, but I think that even today, even at the highest levels of power, evil is a rare exception, rather than the rule, and we oughta be…"
+        }
+      ],
+      "image": "http://www.awakin.org/v2/pics/weekly/468.jpg"
+    },
+    {
+      "id": 50211719,
+      "url": "https://www.henrikkarlsson.xyz/p/music",
+      "hn": "https://news.ycombinator.com/item?id=50211719",
+      "title": "How is music possible",
+      "time": 1792773497,
+      "points": 151,
+      "depth": [
+        {
+          "text": "an essay asks why **music can make familiar things feel new**, and whether that power grows from simple building blocks",
+          "tier": "simple"
+        },
+        {
+          "text": "The essay notes that musical meaning can vary by culture, then weighs explanations based on **sound-processing cues** against Schopenhauer’s idea that music reveals the **underlying Will**. It wonders whether **emergence** better explains how small actions, like plucking strings or singing together, can lead to experiences too vast to explain by their parts alone.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 99,
+      "terms": [
+        "emergent phenomenon",
+        "Will",
+        "Kolmogorov complexity",
+        "injection locking",
+        "minor third",
+        "tropospheric ducting"
+      ],
+      "entities": [
+        "Henrik Karlsson",
+        "Sara Parkman",
+        "Schopenhauer",
+        "The Kalash",
+        "Swedish P2"
+      ],
+      "comments": [
+        {
+          "by": "triMichael",
+          "text": "I've had a theory for a while now that music is related to Kolmogorov complexity, or in other words how compressible it is. Random noise that we find unpleasant is very incompressible. On the other hand, simple sound patterns that we find boring such as Do Re Mi is very compressible. What we call music sits in the middle, and is maximizing the amount of signal. In this way, we can view humans as…"
+        },
+        {
+          "by": "augment_me",
+          "text": "Isn't the easier explanation that music/sound/rhythms has a social function for much of human history, and since humans are social creatures, we find safety and meaning in such sounds?"
+        },
+        {
+          "by": "andai",
+          "text": "The article mentioned this study: The minor third communicates sadness in speech, mirroring its use in music https://pubmed.ncbi.nlm.nih.gov/20515223/ This reminded me of how I keep hearing that major doesn't really sound happy, and minor doesn't really sound sad, it's purely cultural. (But Bouba does really sound round... :) That doesn't sound right to me, but in that case maybe the speech thing…"
+        },
+        {
+          "by": "recursive",
+          "text": "Otherwise unspecified \"major chords\" are generally assumed to be major triads, and thus not tetrachords at all, which require four notes. I tried finding this section in the sources, but I couldn't find it. I wonder what's meant by this. Could it really mean that major triads are less pleasant than all tetrachords? That's surprising, since many tetrachords contain major triads. > Major chords…"
+        },
+        {
+          "by": "olelele",
+          "text": "Sveriges Radio provides a flac stream of the station mentioned in this piece. My reference for audio quality. https://live1.sr.se/p2-flac"
+        }
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!jv_m!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffefd7c8e-1e7a-4602-97b3-3565e99383c9_1920x1551.png"
+    }
+  ],
+  "glossary": {
+    "bench": "A test people use to compare how well different models handle a task.",
+    "open weights": "The model's learned settings are available for people to download and run themselves.",
+    "distillation": "Training a smaller AI to imitate the answers of a larger one.",
+    "offensive cyber capability": "An AI's ability to help find or exploit weaknesses in computer systems.",
+    "APT": "Advanced Persistent Threat: an attacker that keeps trying to get into computer systems over time.",
+    "root shell": "A place to type commands with the highest level of control over a computer.",
+    "jailbreaking": "Changing an iPhone to get around some of Apple's built-in limits.",
+    "Lockdown mode": "An iPhone setting that turns off some features to make certain attacks harder.",
+    "404 Not Found": "A web-page error saying the page you asked for could not be found.",
+    "SRE": "Site Reliability Engineering: work focused on keeping online services running and fixing them when they break.",
+    "click wheel": "The round iPod control you turn or press to move through menus.",
+    "MP3 player": "A device for storing and playing digital music files.",
+    "mainboard": "The central board inside a device that its other parts connect to.",
+    "crowdfunding": "Raising money for a project by asking lots of people to contribute.",
+    "investor-owned utility": "A power provider owned by investors that can earn a return for its shareholders.",
+    "public utility": "A power provider owned by a public body, such as a city, rather than investors.",
+    "co-op": "A utility owned by its members, who can have a say in how it is run.",
+    "kilowatt-hour": "A unit for measuring how much electricity a home uses.",
+    "natural monopoly": "A service where the cost of building the needed network makes it hard for several providers to compete.",
+    "rate case": "A process where a utility asks for permission to change what customers pay.",
+    "sideloading": "Installing an app from somewhere other than the device's usual app store.",
+    "APK": "The file you download to install an Android app.",
+    "private signing key": "A secret digital key a developer uses to show an app came from them.",
+    "Google Play Protect": "Google's service that scans apps for harmful software.",
+    "Google Play Services": "Google’s set of background tools that some Android apps rely on.",
+    "adb": "Android Debug Bridge: a tool that lets a computer connect to an Android phone and manage apps.",
+    "KYC": "Know Your Customer: checks a company uses to verify who a customer is.",
+    "F-Droid": "A place to download Android apps that are free to use and share.",
+    "metadata": "Information describing stored data, like table names or row counts, rather than the records themselves.",
+    "backdoor": "A way into a protected device or service that bypasses its normal security.",
+    "encryption": "A way of scrambling information so only someone with the right key can read it.",
+    "systemic insecurity": "A weakness that could put the security of an entire service at risk.",
+    "full-duplex": "A system that can listen and speak at the same time instead of taking turns.",
+    "speech-to-speech": "A system that takes in spoken audio and replies in spoken audio, rather than making text the middle step.",
+    "pretrained model": "An AI that was trained on material before someone trained it for a particular job.",
+    "inference": "When an AI uses what it learned to answer or act, instead of being trained.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "SIM jacking": "Taking over someone's phone number so calls and messages meant for them reach you instead.",
+    "uncanny valley": "The uneasy feeling people get when something looks or sounds almost human, but not quite.",
+    "tool calling": "A way for an AI to ask another program to do a task for it.",
+    "GrapheneOS": "A privacy-focused version of Android, the software that runs many phones.",
+    "remote attestation": "A check that lets you verify a remote computer is running a particular protected setup.",
+    "whitelist": "A list of things a company has approved, where anything left off can be blocked.",
+    "linear content": "Video that plays in a set order or schedule, rather than letting viewers choose exactly what to watch and when.",
+    "auto-renewal": "A subscription setting that charges you again automatically when your current paid period ends.",
+    "consumer cooperative": "A business owned by its customers, who get a say in how it is run.",
+    "firmware": "The built-in software that tells a device's hardware how to work.",
+    "AES": "Advanced Encryption Standard: a way to scramble data so it needs the right key to be read.",
+    "UART": "Universal Asynchronous Receiver/Transmitter: a simple connection for sending data to and from a device’s electronics.",
+    "JTAG": "Joint Test Action Group: a connection used to inspect or control chips inside a device.",
+    "automatic content recognition": "A feature that identifies what’s playing on a screen, such as a show or other content.",
+    "zero day": "A security flaw its maker has not yet had time to fix.",
+    "personalized ads": "Ads selected using information about what you do or seem interested in.",
+    "Personal Intelligence": "Google's feature that lets Search tools use details from your connected services to tailor results or recommendations.",
+    "DMA": "Direct Memory Access: a way for a device to move data into or out of memory without the main processor handling every step.",
+    "plugin": "An add-on that gives an app extra tools or features.",
+    "CEF": "Chromium Embedded Framework: software that lets an app display web pages inside its own window.",
+    "browser source": "A web page or other web content shown inside an OBS scene.",
+    "source snapping": "The way an item lines itself up with other items as you move it in the preview.",
+    "ZDR": "Zero Data Retention: an arrangement where a service does not keep the information you send it.",
+    "wrapper": "A small tool that gives an existing tool a different, often easier, way for people to use it.",
+    "MIVD": "Netherlands Defense Intelligence and Security Service: the Dutch government agency described as monitoring Kushner’s phone.",
+    "FOIA": "Freedom of Information Act: a US law that lets people ask government agencies for records.",
+    "security clearance": "Permission to see government information that is kept secret.",
+    "digital sovereignty": "A country’s ability to control the technology it relies on instead of depending on outside providers.",
+    "Starshield": "The article’s name for the military version of Starlink.",
+    "kill switch": "A way to shut something down quickly, often from another place.",
+    "geofencing": "Setting virtual boundaries that a device or service can enforce based on where it is.",
+    "distributed SQLite": "SQLite data copied across several computers so it can keep working if one goes down.",
+    "SQLite": "A small database that can be stored in a single file.",
+    "Raft": "A set of rules that lets computers agree on updates and keep matching copies of data.",
+    "leader": "The computer in a group that coordinates updates for the others.",
+    "WAL": "Write-ahead log: a record of changes the database saves so it can recover or copy them.",
+    "S3": "An online storage service where files can be kept and read over the internet.",
+    "CRDTs": "Conflict-free replicated data types: a way for copies of shared information to combine changes and stay in sync.",
+    "data center": "A building full of computers that store information and run online services.",
+    "EIA": "Environmental impact assessment: a check on how a project could affect the surrounding area.",
+    "hyperscale": "Describes a very large data center built to handle huge amounts of computing work.",
+    "pitch track": "A line showing which notes the song hits, so you can compare your voice with it.",
+    "Apple Silicon": "Apple’s processors used in Macs.",
+    "octave": "The distance between a note and the next note with the same name, higher or lower.",
+    "MIT license": "A software license that lets people use, change, and share a project with few restrictions.",
+    "CA": "Certificate Authority: an organization that checks requests and issues certificates.",
+    "intermediate certificate": "A certificate that lets a trusted authority pass trust on to another certificate issuer.",
+    "private key": "A secret digital key that can be used to prove an identity or act as its owner.",
+    "root store": "A browser or device’s list of certificate issuers it chooses to trust.",
+    "CRL": "Certificate Revocation List: a published list of certificates an issuer has canceled.",
+    "HSM": "Hardware Security Module: a dedicated device used to create and protect secret keys.",
+    "Fable": "An AI model that the article tested by asking it to hide and decode messages in images.",
+    "SVG": "Scalable Vector Graphics: a picture format that stays sharp when resized.",
+    "steganography": "Hiding a message inside an ordinary-looking file, such as a photo, so people do not notice it is there.",
+    "Morse code": "A way to spell messages using short and long signals.",
+    "acrostic": "A message formed from the first letters of a series of words or lines.",
+    "idea atoms": "Small pieces used to represent the concepts in research papers.",
+    "cognitive availability": "How likely a research community is to have the mix of concepts and methods needed to come up with an idea.",
+    "frontier LLM baseline": "A comparison point made from leading language models, used to judge how well a new method does.",
+    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
+    "CNA": "CVE Numbering Authority: an organization allowed to assign CVE IDs to security flaws.",
+    "CVSS": "Common Vulnerability Scoring System: a scale people use to rate how serious a security flaw is.",
+    "functional programming": "A way of writing code by combining functions while trying to avoid hidden changes to shared data.",
+    "DEFLATE": "A method for shrinking files by replacing repeated patterns with shorter descriptions.",
+    "SIMD": "Single Instruction, Multiple Data: a way to apply one operation to several values at once.",
+    "bounds checks": "Checks that make sure a program only reads or writes within a collection's valid range.",
+    "automatic reference counting": "A system that tracks when a value is still being used and frees its memory when it is not.",
+    "pure function": "A function that returns an answer without changing anything outside itself.",
+    "FFI": "Foreign Function Interface: a way for code in one language to call code written in another.",
+    "opportunistic mutation": "Changing a value in place when nothing else is sharing it, instead of making a new copy.",
+    "copy elision": "Skipping a copy so code can use the original value instead.",
+    "QM": "Quantum mechanics: the set of rules physicists use to describe how very small things behave.",
+    "many-worlds interpretation": "An interpretation where different possible outcomes all happen in separate branches of reality.",
+    "Copenhagen interpretation": "An interpretation that leaves unclear exactly when measurement causes wave-function collapse.",
+    "wave function collapse": "The idea that a measurement turns a set of possible results into the one observed result.",
+    "instrumentalism": "The view that a scientific theory is a useful tool for making predictions, not necessarily a literal description of reality.",
+    "falsifiable": "A claim is falsifiable if an observation or experiment could show it is wrong.",
+    "local hidden variables": "A proposed picture where particles carry pre-set properties, and distant particles do not instantly affect each other.",
+    "Bell's inequality": "A mathematical rule physicists use to test whether certain pre-set-property explanations match quantum experiments.",
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "kernel": "A small program that carries out a calculation on a computer's graphics chip or processor.",
+    "cache": "A place a program keeps data so it can reuse it instead of doing the work again.",
+    "dictionary compression": "A way to shrink repeated data by storing distinct values once and referring to them.",
+    "DTLS 1.3": "Datagram Transport Layer Security: a way to protect data sent over connections that can lose or reorder messages.",
+    "GREASE": "Generate Random Extensions And Sustain Extensibility: a way to keep connection software ready for options it does not recognize yet.",
+    "KeyUpdate": "A message used to switch a secure connection to updated encryption keys.",
+    "RCE": "Remote Code Execution: a flaw that lets an attacker make a computer run their commands from somewhere else.",
+    "exploit": "A method for using a software flaw to make a system do something it shouldn't.",
+    "embargo": "An agreement to keep information private until an agreed release time.",
+    "regex": "A pattern used to find or check text.",
+    "Clojure dialect": "A version of Clojure that keeps the language but changes how it runs or connects to other tools.",
+    "interop": "When code in one language can use code written in another.",
+    "REPL": "Read-Eval-Print Loop: a prompt where you enter a command and see the result right away.",
+    "JIT": "Just-in-time compilation: compiling a program as it runs, rather than beforehand.",
+    "C++ type system": "The rules C++ uses to keep track of what kinds of values different parts of code handle.",
+    "RAII": "Resource Acquisition Is Initialization: a way for C++ to clean up things like files automatically when they are no longer needed.",
+    "overload resolution": "How C++ picks which version of a function to use when several share a name.",
+    "marshalling": "Changing data into a form that lets different languages pass it back and forth.",
+    "ADL": "Argument-dependent lookup: a C++ rule that helps find a function based on the kinds of values passed to it.",
+    "Clang": "A tool that reads C and C++ code and helps turn it into a program a computer can run.",
+    "cortisone": "A medicine that lowers the body's immune response; the post says it can also cause side effects.",
+    "autoimmune condition": "A condition where the body's defenses mistakenly attack parts of the body.",
+    "tapering off": "Cutting down a medicine gradually rather than stopping all at once.",
+    "Brotli": "A way to compress files so they take up less space.",
+    "decoder": "A program that uses a summary of errors to find where they occurred and what they were.",
+    "memory safety": "Rules that stop a program from reading or changing the wrong parts of a computer’s working memory.",
+    "ASLR": "Address Space Layout Randomization: a way to move parts of a program around each time it runs, making some attacks harder.",
+    "PoC": "Proof of Concept: a small demonstration that shows a bug can be triggered.",
+    "content-encoding": "A label that tells a receiving program how a message was compressed.",
+    "reference implementation": "The main example of a piece of software that others can use as a guide.",
+    "binding": "A connector that lets one programming language use code written for another.",
+    "buffer overflow": "When a program reads or writes beyond the space set aside for data.",
+    "antimatter": "Matter’s counterpart, which tends to destroy itself and ordinary matter when they meet.",
+    "positron": "The antimatter counterpart of an electron.",
+    "quantum states": "The different conditions a tiny particle can be in.",
+    "magnetic moment": "A measure of the strength and direction of a particle’s magnetic field.",
+    "Standard Model": "The set of basic rules physicists use to describe particles and how they behave.",
+    "C++": "A programming language used to write software, including games.",
+    "CSG": "Constructive Solid Geometry: a way to make shapes by joining or cutting solid pieces.",
+    "brush-based": "Building a level from solid pieces, such as walls, floors and ceilings.",
+    "linked groups": "A feature for keeping related map pieces linked, so a design can be changed and reused together.",
+    "texture projection": "The way an editor lays a picture across a surface in a game map.",
+    "gamepack": "A set of settings and files that lets an editor work with a particular game.",
+    "UUIDv7": "An ID format with a time field, though the field may not match when the object was created.",
+    "RFC": "Request for Comments: a numbered document that sets out how a technology should work.",
+    "monotonic": "Always increasing, so each new value comes after the previous one.",
+    "counter": "A number a generator updates to distinguish IDs made around the same time.",
+    "index": "A search engine’s organized list of pages it can show in results.",
+    "sharding": "Splitting data or work into separate parts so several computers can handle it more easily.",
+    "AfD": "Alternative für Deutschland: the German political party at the center of this story.",
+    "torrent": "A way of sharing files by downloading pieces from other people's computers.",
+    "DKIM signatures": "DomainKeys Identified Mail: a check that helps show an email was authorized by the domain it claims to come from.",
+    "phishing": "A scam that tricks someone into entering login details on a fake site.",
+    "unpatched": "A website or program is unpatched when its latest fixes haven't been installed, so known weaknesses may remain.",
+    "segmented": "Kept in separate sections so trouble in one part can't automatically reach the others.",
+    "CADR": "Clean Air Delivery Rate: A rating for how much clean air a purifier supplies.",
+    "CFM": "Cubic feet per minute: A way to describe how much air moves each minute.",
+    "AQI": "Air Quality Index: A scale that describes how polluted the air is.",
+    "HEPA": "High-Efficiency Particulate Air: A type of filter that traps very small particles from the air.",
+    "PM2.5": "Tiny airborne particles no wider than 2.5 micrometers, such as bits of smoke.",
+    "VOC": "Volatile organic compounds: Gases that can come from products and materials and affect indoor air.",
+    "missile gap": "The period when the U.S. thought it was falling behind the Soviet Union in nuclear capabilities.",
+    "SAC": "Strategic Air Command: A military command Ellsberg mentions alongside the Pentagon.",
+    "universal high income": "A hoped-for future where everyone has a high income.",
+    "front-end": "The part of a service people see and use.",
+    "fork": "A separate copy of a shared software project that people can take in a different direction.",
+    "backend": "The part of an app that does work behind the scenes, such as handling its data.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "JavaScript fingerprint": "A way a website tries to recognize your browser from details about its settings and behavior.",
+    "instance": "One separately run copy of a service, with its own operator and users.",
+    "AGI": "Artificial General Intelligence: a hypothetical AI that could handle many kinds of tasks, not just one narrow job.",
+    "white flight": "When white residents leave neighborhoods as they become more racially diverse.",
+    "emergent phenomenon": "A big effect that appears when many small things interact, even though no single small thing has it by itself.",
+    "Will": "Schopenhauer’s name for the underlying reality he thought everything expresses; the essay says music represents it directly.",
+    "Kolmogorov complexity": "A way to measure how briefly you can describe a pattern; simple repeated patterns take less explaining than random noise.",
+    "injection locking": "When one repeating signal nudges another into matching its timing.",
+    "minor third": "A particular small gap between two musical notes; the essay says some people connect it with sadness.",
+    "tropospheric ducting": "A weather-related effect that can make radio signals travel much farther than usual."
+  }
+}
