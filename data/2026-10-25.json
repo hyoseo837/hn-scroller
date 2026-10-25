@@ -2,6 +2,162 @@
   "date": "2026-10-25",
   "cards": [
     {
+      "id": 50230181,
+      "url": "https://twitter.com/mike64_t/status/2114150399406202896",
+      "hn": "https://news.ycombinator.com/item?id=50230181",
+      "title": "Samsung running a TensorFlow lite model on 960x540 image to track you",
+      "time": 1792924921,
+      "points": 262,
+      "depth": [
+        {
+          "text": "someone found a **Samsung device** checking images every few seconds to guess **which game is playing**",
+          "tier": "simple"
+        },
+        {
+          "text": "The post names the model “alex.tflite” and says it runs on **960×540 images** with INT8 quantization every couple of seconds. The author says it “literally doesn't work **99% of the time**” and that the results seem to go nowhere because the consent gate comes later.",
+          "tier": "substance",
+          "data": [
+            [
+              "image size",
+              "960×540"
+            ],
+            [
+              "reported failure",
+              "99%"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 167,
+      "terms": [
+        "TensorFlow Lite",
+        "INT8 quantization",
+        "AlexNet",
+        "nearest neighbor",
+        "DB",
+        "Tizen"
+      ],
+      "entities": [
+        "Samsung",
+        "TensorFlow Lite",
+        "AlexNet",
+        "torchvision",
+        "Tizen",
+        "X"
+      ],
+      "comments": [
+        {
+          "by": "miki123211",
+          "text": "What I wish people understood about privacy is that the less tech adjacent a company is, the worse their privacy record. Meta and Google will never sell your data. They will collect it and use it for targeted advertising for sure, but they consider it far too valuable and useful to sell. This is because they have the tech and expertise to use their data well. A grocery store or a gas station…"
+        },
+        {
+          "by": "prymitive",
+          "text": "It’s mind boggling that in the UK there’s a law that says: > “A plank of wood must not be carried along a pavement. It can only be moved if it is being unloaded from a vehicle or taken into a building.” But big tech cannot be regulated at all.\nWe used to regulate any minor thing that was annoying enough, but a whole industry spying and prying on the whole population is fine."
+        },
+        {
+          "by": "ComputerGuru",
+          "text": "Pretty sure my Samsung plasma TV from 2011 is safe. It was all downhill from there, just competing over which display looks better with its saturation and brightness boosted all the way up with the floor models all next to each other."
+        },
+        {
+          "by": "gentlerain",
+          "text": "Samsung is starting to be a little too much creepy. I don't know if it's just greed or. I refused to create an account on their galaxy phone because of the mandatory phone number needed. Yes, I know they can harvest it in other ways, it's just a stand."
+        },
+        {
+          "by": "hobo123",
+          "text": "What is this referring to, Android phones? Are they really eating battery life by constantly running AI on your phone?"
+        }
+      ],
+      "image": "https://pbs.twimg.com/media/HVb1282bgAAg6jY?format=webp&name=large"
+    },
+    {
+      "id": 50225674,
+      "url": "https://ratfactor.com/cards/pl-small",
+      "hn": "https://news.ycombinator.com/item?id=50225674",
+      "title": "Small Programs and Languages",
+      "time": 1792878263,
+      "points": 164,
+      "depth": [
+        {
+          "text": "someone argues **tiny programs** feel **approachable** and show how little a useful idea can need",
+          "tier": "simple"
+        },
+        {
+          "text": "The examples include a **25-line source file** for ijk and a **46-byte “Forth.”** The author also thinks **small languages can be expressive**, but says that takes careful design.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 24,
+      "terms": [
+        "Forth",
+        "Lisp",
+        "Kolmogorov complexity",
+        "code golf",
+        "interpreter",
+        "bytecode",
+        "machine code",
+        "garbage collection",
+        "DOM",
+        "ISA"
+      ],
+      "entities": [
+        "ijk",
+        "Forth",
+        "Lisp",
+        "Scheme",
+        "Tcl",
+        "JavaScript",
+        "Lua",
+        "Zig",
+        "C",
+        "SNOBOL",
+        "J",
+        "APL",
+        "kOS",
+        "k",
+        "kdb",
+        "Ramda",
+        "RetroV",
+        "uxn",
+        "Varvara",
+        "Binary Lambda Calculus",
+        "Arthur Whitney",
+        "Roger K.W. Hui",
+        "David Ungar",
+        "Justine Tunney",
+        "Philippe Brochard",
+        "William Byrd",
+        "Frank Force",
+        "Martin Kleppe",
+        "Atari",
+        "AT&T"
+      ],
+      "comments": [
+        {
+          "by": "zzo38computer",
+          "text": "I have written some useful small programs in uxn, such as: hex decoder in 39 bytes (which handles optional spaces and line breaks, uppercase and lowercase, etc), a program to convert JSON to NDJSON in 125 bytes, a program to convert DER to a subset of TER in 220 bytes, BLAKE2s in 1024 bytes (although some of it is padding for alignment, which is why it comes out to exactly 1024), a card game…"
+        },
+        {
+          "by": "shikaan",
+          "text": "Great read (: This is precisely how I learn, even though these days it all feels a little futile. The other part for me is working within tight constraints. A couple of years back I made an Operating System that fits a bootloader (I was low-key hoping to find in the list :P) Not really golfing but surely a good exercise in playing within constraints. If anybody wants to take a…"
+        },
+        {
+          "by": "abainbridge",
+          "text": "I'm interested in making a really simple compiled scripting language. I don't understand why most scripting languages compile to bytecode and then interpret that. This requires the following steps: 1: Design a bytecode. 2: Write a compiler. 3: Write an interpreter. It seems like it would be simpler to not bother with 1 and 3 and instead use machine code as the bytecode. A side benefit is that…"
+        },
+        {
+          "by": "tromp",
+          "text": "A language that was designed to make Kolmogorov complexity concrete is Binary Lambda Calculus, a self interpreter of which takes only 168 bits (21 bytes). Unlike the Lisp self interpreter in the article, it operates on a bitstream and thus has to include a parser."
+        },
+        {
+          "by": "bryancoxwell",
+          "text": "This was such an enjoyable read. I’ve been a bit meh on software development recently and this really re-piqued some old interests."
+        }
+      ],
+      "image": null
+    },
+    {
       "id": 50229587,
       "url": "https://www.panamericandispatch.org/p/meta-ignores-brazilian-court-order",
       "hn": "https://news.ycombinator.com/item?id=50229587",
@@ -1037,6 +1193,22 @@
     }
   ],
   "glossary": {
+    "TensorFlow Lite": "A tool for running AI models on devices such as phones and TVs.",
+    "INT8 quantization": "A way to shrink an AI model by storing its values as 8-bit numbers.",
+    "AlexNet": "A type of AI model used to recognize things in images.",
+    "nearest neighbor": "A way to make a guess by comparing something with the most similar examples already stored.",
+    "DB": "Database: a stored collection of information a program can look things up in.",
+    "Tizen": "The operating system mentioned as running on the device being discussed.",
+    "Forth": "A programming language where instructions work with a pile of values, taking from or adding to the top.",
+    "Lisp": "A family of programming languages that writes code using nested groups of words and expressions.",
+    "Kolmogorov complexity": "A way to measure how briefly you can describe a pattern; simple repeated patterns take less explaining than random noise.",
+    "code golf": "A challenge to make a program as short as possible while it still does the job.",
+    "interpreter": "A program that reads code and carries out what it says.",
+    "bytecode": "A set of instructions that a program can run through an interpreter.",
+    "machine code": "The low-level instructions a computer's processor can run directly.",
+    "garbage collection": "Automatic cleanup that frees memory the program is no longer using.",
+    "DOM": "Document Object Model: the browser's list of the pieces that make up a webpage.",
+    "ISA": "Instruction set architecture: the set of basic commands a processor understands.",
     "GIF": "A short animated image that can loop.",
     "hashtag": "A word or phrase starting with # that helps people find related posts.",
     "ranking algorithm": "Behind-the-scenes rules that decide what order posts or search results appear in.",
@@ -1080,7 +1252,6 @@
     "CLI": "Command-Line Interface: a way to control a computer by typing commands instead of clicking buttons.",
     "data stack": "A dedicated area of memory where a program keeps data; Goose uses several areas assigned by the compiler.",
     "heap": "Memory a program can request as it runs, useful when it doesn’t know in advance how much space its data will need.",
-    "garbage collection": "Automatic cleanup that frees memory the program is no longer using.",
     "dynamically sized": "Able to grow or shrink while a program is running.",
     "regex engine": "Software that checks text against patterns, such as finding words in a chosen format.",
     "ripgrep": "A search tool for finding text inside files.",
