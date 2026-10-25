@@ -2,6 +2,447 @@
   "date": "2026-10-25",
   "cards": [
     {
+      "id": 50229587,
+      "url": "https://www.panamericandispatch.org/p/meta-ignores-brazilian-court-order",
+      "hn": "https://news.ycombinator.com/item?id=50229587",
+      "title": "Meta Ignores Brazilian Court Order to End Bolsonaro Favoritism",
+      "time": 1792918840,
+      "points": 245,
+      "depth": [
+        {
+          "text": "Meta is accused of showing **results favoring Bolsonaro** while linking Lula to **negative content**",
+          "tier": "simple"
+        },
+        {
+          "text": "The groups say Instagram and WhatsApp search results favor Flávio Bolsonaro and link Lula to **derogatory content**; they also cite Meta AI returning **13 and 22**, the candidates’ party ballot numbers, after two people asked for a number without mentioning the election. This continued despite an electoral court order for equal treatment, but the article says the number test alone is **not proof** of electoral preference.",
+          "tier": "substance",
+          "data": [
+            [
+              "Meta AI number picks",
+              "13 and 22"
+            ],
+            [
+              "daily fine initially set",
+              "R$500,000 (about $99,000)"
+            ],
+            [
+              "possible daily fine",
+              "R$1 million (about $198,000)"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say platforms manipulate politics or amplify divisive content; others say these examples are weak evidence, with ordinary ranking a plausible explanation.",
+      "comment_count": 153,
+      "terms": [
+        "GIF",
+        "hashtag",
+        "ranking algorithm",
+        "ballot number"
+      ],
+      "entities": [
+        "Meta",
+        "Sleeping Giants Brasil",
+        "CTRL+Z",
+        "Instagram",
+        "WhatsApp",
+        "Meta AI",
+        "Luiz Inácio Lula da Silva",
+        "Flávio Bolsonaro",
+        "Workers’ Party",
+        "Liberal Party",
+        "Superior Electoral Court",
+        "Marco Aurélio Bellizze",
+        "Mônica Bergamo",
+        "Folha de S.Paulo"
+      ],
+      "comments": [
+        {
+          "by": "Paracompact",
+          "text": "> According to the petition, two people asked [Meta AI] to pick a number between 1 and 25. They gave no instructions and made no reference to the election. In one attempt, the AI answered 13. In the other, it answered 22. Those are the party ballot numbers of Lula and Flávio Bolsonaro, respectively. The groups question the coincidence. My confidence in the validity of their claims tanked right…"
+        },
+        {
+          "by": "GuestFAUniverse",
+          "text": "It's the same here. AfD content gets pushed on YT. No matter how often I ignore channels. Big tech is so rigged (intensional or not), the question if it is socially net negative has become rhetorical."
+        },
+        {
+          "by": "__MatrixMan__",
+          "text": "Isn't turning money into influence over people\"s behavior more or less their core business model. The company shouldn't be allowed to exist, buy since they are, well of course they're going to keep doing what they're made to do."
+        },
+        {
+          "by": "coffinbirth",
+          "text": "Things like these happen if a state fails to secure its information space. Giving control over it to foreign entities means providing population wide manipulative power to foreign entities with adversarial intentions. Every state should have foreign agent laws (NGOs must register and must be transparent over their financials). Every state should have control over their information space…"
+        },
+        {
+          "by": "vlyan",
+          "text": "Meta, along with every other large platform, had previously banned the sitting president of the United States."
+        }
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!CdTr!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2d3b04ca-0141-4aca-81e2-f64fd77e8555_1157x626.jpeg"
+    },
+    {
+      "id": 50227356,
+      "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+      "hn": "https://news.ycombinator.com/item?id=50227356",
+      "title": "Cerebras Deploys Trillion-Parameter AI Models",
+      "time": 1792892029,
+      "points": 203,
+      "depth": [
+        {
+          "text": "Cerebras spreads a **large model** across wafers, then streams requests through them like an **assembly line**",
+          "tier": "simple"
+        },
+        {
+          "text": "For **Kimi K3**, 35 wafers hold its 69 linear-attention layers and 24 hold its dense layers, totaling **59 wafers**. In most cases, weights stay put and only **activations** cross between wafers.",
+          "tier": "substance",
+          "data": [
+            [
+              "model size",
+              "~3 trillion parameters"
+            ],
+            [
+              "on-chip memory per wafer",
+              "44 GB"
+            ],
+            [
+              "example wafer count",
+              "59 wafers"
+            ],
+            [
+              "stated throughput",
+              "1000-2000+ tokens per second"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 65,
+      "terms": [
+        "wafer",
+        "linear-attention layer",
+        "dense layer",
+        "KV cache",
+        "activations",
+        "pipeline",
+        "SRAM",
+        "RDMA",
+        "micro-batch",
+        "quantization",
+        "prefill"
+      ],
+      "entities": [
+        "Cerebras",
+        "Kimi K3",
+        "WSE-3T",
+        "GPT-5.6 Sol",
+        "Terminal-Bench 2.1",
+        "BrowseComp",
+        "Hugging Face",
+        "Openrouter",
+        "GPT OSS 120b",
+        "Qwen 3.8 27B",
+        "Transmeta"
+      ],
+      "comments": [
+        {
+          "by": "keyle",
+          "text": "Cerebras is good on paper but all I can reasonably access is \"GPT OSS 120b, Qwen 3.8 27B\" which aren't very good for my use. Openrouter on nitro gets me there. Although the TPS is 5X less still. I have tried GPT OSS 120b on cerebras and it flies. But it's mostly wrong."
+        },
+        {
+          "by": "ismailmaj",
+          "text": "> For ultrafast latency, only activations need to be passed between the wafers, and this can be done via RDMA over Ethernet. I believe it for decode but the article says nothing about how they make prefill fast on that interconnect story :/."
+        },
+        {
+          "by": "tgtweak",
+          "text": "Citing full precision benchmarks then just going with 4 bit quants"
+        },
+        {
+          "by": "xpct",
+          "text": "Ah, this prompted a few questions from me. Perhaps someone with more hardware background could chime in. They don't really show it here, but supposedly a Cerebras' chip is sub-divided into a 2D mesh of what they call PEs (cores). So data flow generally flows in two axis, and maintains consistent timings to its 4 neighboring cores. They show the layers flowing from left-to-right being streamed by…"
+        },
+        {
+          "by": "cfn",
+          "text": "I tried Cerebras this week for my project and their 27b model at 2000tks would be perfect for it. Unfortunately it doesn't do the 2k tokens per second which is what I am looking for."
+        }
+      ],
+      "image": "https://cdn.sanity.io/images/e4qjo92p/production/1796e3cccda1454e97d262833fb0bb0d6015032f-2786x1567.png?rect=0,53,2786,1463&w=1200&h=630&fit=max&auto=format"
+    },
+    {
+      "id": 50224422,
+      "url": "https://missileer.watch",
+      "hn": "https://news.ycombinator.com/item?id=50224422",
+      "title": "Listen and read USA nuclear forces Emergency Action Messages, heard on 11175 kHz",
+      "time": 1792871007,
+      "points": 176,
+      "depth": [
+        {
+          "text": "this site lets you **listen to and read** USA nuclear messages, but the page shows **sample data**",
+          "tier": "simple"
+        },
+        {
+          "text": "The site says its recordings and decodes are released under **CC0 1.0**, a public-domain dedication. Commenters disagree about whether **message spikes** mean anything.",
+          "tier": "substance",
+          "data": [
+            [
+              "frequency",
+              "11175 kHz"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: one commenter says a spike can tell us something; another says upticks mean nothing and aren't prophetic.",
+      "comment_count": 115,
+      "terms": [
+        "EAM",
+        "HFGCS",
+        "kHz",
+        "USB",
+        "CC0 1.0",
+        "one-time pad"
+      ],
+      "entities": [
+        "missileer.watch",
+        "Daniel Frenkel",
+        "Valar Systems",
+        "Cloudflare Web Analytics",
+        "HFGCS"
+      ],
+      "comments": [
+        {
+          "by": "none_to_remain",
+          "text": "A weird little trivia: for some time period the Skyking test messages used band names and other pop culture references as the content of test messages. Iron Maiden, The Cure, Duran Duran, Rush, Hansen... And of course test messages may be sent erroneously so we end up with the nuclear command channel carrying messages like \"DISREGARD 'THE CURE' TRANSMITTED AT 19\" (…"
+        },
+        {
+          "by": "ytxm",
+          "text": "More on \"Skyking\" here: https://lswilson.dewlineadventures.com/skyking/"
+        },
+        {
+          "by": "jacquesm",
+          "text": "Nice and soothing for when you're already a bit nervous about what the next 13 minutes might bring."
+        },
+        {
+          "by": "loeg",
+          "text": "Is there some reason it's written 11175 kHz instead of 11.175 MHz?"
+        },
+        {
+          "by": "nubinetwork",
+          "text": "https://priyom.org/military-stations/united-states/hfgcs#voi..."
+        }
+      ],
+      "image": "https://missileer.watch/assets/og/home.png?v=1"
+    },
+    {
+      "id": 50228167,
+      "url": "https://github.com/slee-persis/GVS5H",
+      "hn": "https://news.ycombinator.com/item?id=50228167",
+      "title": "Five Qwen3.8-27B models match Fable 5 Using GVS5H Harness",
+      "time": 1792900561,
+      "points": 167,
+      "depth": [
+        {
+          "text": "someone used **five copies of one model** and shared notes to match a **pricier coding model**",
+          "tier": "simple"
+        },
+        {
+          "text": "The harness has **fresh instances** of one model coordinate through files holding a plan, notes and a current solution. On the 100 latest hard LiveCodeBench problems, locally served Qwen3.8-27B's pass@1 rose from **66.8% to 92.4%**; the paper says gains aren't universal. Separately, Qwen3.8 Flash Next reached **93.0%** against Fable 5's 90.4% at 9% of the cost.",
+          "tier": "substance",
+          "data": [
+            [
+              "Qwen3.8-27B before orchestration, pass@1",
+              "66.8%"
+            ],
+            [
+              "Qwen3.8-27B after orchestration, pass@1",
+              "92.4%"
+            ],
+            [
+              "Qwen3.8 Flash Next, pass@1",
+              "93.0%"
+            ],
+            [
+              "Fable 5, pass@1",
+              "90.4%"
+            ],
+            [
+              "Qwen3.8 Flash Next cost relative to Fable 5",
+              "9%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: skeptics call the benchmark old or uninformative and worry the setup is overfitted; others are impressed by the cost and see shared written state as a useful approach.",
+      "comment_count": 57,
+      "terms": [
+        "pass@1",
+        "zero-shot self-orchestration",
+        "filesystem"
+      ],
+      "entities": [
+        "GVS5H",
+        "Qwen3.8-27B",
+        "Qwen3.8 Flash Next",
+        "Claude Fable 5",
+        "LiveCodeBench",
+        "GitHub"
+      ],
+      "comments": [
+        {
+          "by": "vikramkr",
+          "text": "So using this harness five qwen3.8-27b models roughly matched Fable 5 on a saturated coding benchmark from early 2025. No comparison to astra/6.1 sol/fable 5.1/opus 5.5. No comparison on a benchmark that reflects actual agentic work (and agentic behavior is what modern models optimize for anyway - probably makes qwen look worse than it is?). And also obviously using a very old benchmark like…"
+        },
+        {
+          "by": "badsectoracula",
+          "text": "Interesting but (from the PDF): Every role but the verifier is the same\nunderlying model, called in a fresh context\nand coordinating through a shared workspace on disk:\n<ws>/task.md - the problem statement\n<ws>/plan.md - the manager’s overarching plan\n<ws>/tasks.json - a debug mirror of the task list\n<ws>/notes.md - curated ideas / findings / partial proofs\n<ws>/solution.py - the current…"
+        },
+        {
+          "by": "Olscore",
+          "text": "Everybody is converging on similar ideas, but the execution isn't super clean in a lot of \"software factories\" popping up. Coordinating through shared written state becomes obvious once you build something complex enough. Anyways, I have been building Pullboard (open source). The original concept came from needing agent coherency on a very complicated project…"
+        },
+        {
+          "by": "hartator",
+          "text": "Seems like it just overfitting the problems?"
+        },
+        {
+          "by": "Datagenerator",
+          "text": "Great progress the open world is making, thanks for sharing! Soon Qwen 4 will proof to be another step in the right direction."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/0ec3d6b92f81a18b655ae8436cdab7f8d196005fb47085ca18ef26f3528c3e10/slee-persis/GVS5H"
+    },
+    {
+      "id": 50224210,
+      "url": "https://www.speedcrunch.org/",
+      "hn": "https://news.ycombinator.com/item?id=50224210",
+      "title": "SpeedCrunch 1.1",
+      "time": 1792869583,
+      "points": 163,
+      "depth": [
+        {
+          "text": "SpeedCrunch has a **new release** of its free **scientific calculator**, with **complex-number support**",
+          "tier": "simple"
+        },
+        {
+          "text": "It supports **up to 50 digits of precision** and complex numbers, with **140+ functions** plus units and constants. One commenter thinks this release, or possibly an earlier one, includes a small fix for an **order-of-operations bug** that had not been released for a long time.",
+          "tier": "substance",
+          "data": [
+            [
+              "precision",
+              "50 digits"
+            ],
+            [
+              "functions",
+              "140+"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: one longtime user says the update added input lag and unnecessary interface changes; other longtime users are happy to see it and keep using it regularly.",
+      "comment_count": 30,
+      "terms": [
+        "scientific calculator",
+        "complex numbers",
+        "precision",
+        "order of operations"
+      ],
+      "entities": [
+        "SpeedCrunch",
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "comments": [
+        {
+          "by": "Gormo",
+          "text": "I've been using it for years and was surprised to see a new version after a dacade. After installing it, I was surprised to see that the immediate changes most noticeable to me were that the input box was unnecessarily doubled in size, enclosed in an unnecessary border, and surrounded by unnecessary dead space; and that there's now marked input lag that never existed in the original version. I…"
+        },
+        {
+          "by": "triilman",
+          "text": "Just try this one. There will be some big update from the developer. https://antovsky.itch.io/naut"
+        },
+        {
+          "by": "jiehong",
+          "text": "List of changes for this calculator [0]. I used to use it quite a bit, but I now gravitate towards numbat instead [1]. [0]: https://www.speedcrunch.org/download.html [1]: https://github.com/sharkdp/numbat"
+        },
+        {
+          "by": "unanimous",
+          "text": "This is nice to see, and it looks like this release (and maybe some earlier ones?) includes a small order of operations bug fix that hadn't been released for a long time. 1/2(-9.8) now equals -4.9 rather than -0.05102040816326530612. I like how the expression also renders with a multiplication symbol to clarify: 1 / 2 × (−9.8)"
+        },
+        {
+          "by": "andix",
+          "text": "I'm using it for a long time already. 1.0 and 1.1 are the first updates after 10 years now?"
+        }
+      ],
+      "image": "https://www.speedcrunch.org/screen1.png"
+    },
+    {
+      "id": 50227639,
+      "url": "https://www.aljazeera.com/economy/2026/10/16/meta-employees-say-lulas-accounts-restricted-in-brazil-election-report",
+      "hn": "https://news.ycombinator.com/item?id=50227639",
+      "title": "Meta employees say Lula’s accounts restricted in Brazil election: Report",
+      "time": 1792894715,
+      "points": 159,
+      "depth": [
+        {
+          "text": "Meta employees say **Lula’s Instagram accounts** faced restrictions while the platform **recommended Bolsonaro’s profile**",
+          "tier": "simple"
+        },
+        {
+          "text": "Messages reported by **Folha de S Paulo** also said the platform recommended Bolsonaro’s WhatsApp channel. Meta said the technical issues were already public and the conversations discussed their severity, **not political interference**; Brazil’s top electoral court ordered **equal treatment** and a 500,000 reais ($98,700) daily fine if Meta failed to comply.",
+          "tier": "substance",
+          "data": [
+            [
+              "daily fine",
+              "500,000 reais ($98,700) per day"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters see Meta as politically shaping elections; others say Lula’s side has also censored opponents or push back on the story’s framing.",
+      "comment_count": 117,
+      "terms": [
+        "algorithm",
+        "runoff",
+        "reach",
+        "sovereign tech",
+        "AI"
+      ],
+      "entities": [
+        "Meta",
+        "Lula",
+        "Flavio Bolsonaro",
+        "Folha de S Paulo",
+        "Reuters",
+        "Instagram",
+        "WhatsApp",
+        "Facebook",
+        "Marco Aurelio Bellizze",
+        "Al Jazeera"
+      ],
+      "comments": [
+        {
+          "by": "roenxi",
+          "text": "It is somewhat confusing to me that more countries don't treat Meta as a political threat. China's approach to restricting access to western internet companies looks more and more reasonable in hindsight. The US tech giants appear to be politically active and becoming more and more willing to influence elections. I don't like the strategic situation of any anti-US political parties with Facebook…"
+        },
+        {
+          "by": "ceroxylon",
+          "text": "There is a lot of money involved in getting Bolsonaro back in power: > Brazil’s government announced Friday that annual deforestation in the Amazon fell to its lowest level since records began in 1988 [. . .] During Jair Bolsonaro’s presidency, from 2019 to 2022, Amazon deforestation surged by about 60% [0] This highlights the greatest difference between these two candidates (imo), one wants to…"
+        },
+        {
+          "by": "nidnogg",
+          "text": "It’s sad but it’s real and it’s happening. In Brazilian news, this is actively being exploded upon and it is not reaching mainstream media properly. [1] - https://www.instagram.com/reel/De2BfVRD30o [2] - https://www.aljazeera.com/economy/2026/10/16/meta-employees-..."
+        },
+        {
+          "by": "goshx",
+          "text": "At the same time, some candidates from the opposition are getting more views than Beyoncé and other artists known globally. https://sleepinggiantsbrasil.com/biblioteca/visualizacoes-de... (portuguese)"
+        },
+        {
+          "by": "msandford",
+          "text": "At a certain point the big social media companies are going to have to publish their algorithms and/or let you choose your own re: friends updates, friends of friends, things your friends or friends of friends liked, etc. Make your algorithm too opaque and you run the risk of outrage engagement showing up as \"the platform pushed this\" whatwver that happens to be."
+        }
+      ],
+      "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ac6960557e6-1791399429.jpg?resize=1920%2C1440"
+    },
+    {
       "id": 50224916,
       "url": "https://stealmybitcoin.com/",
       "hn": "https://news.ycombinator.com/item?id=50224916",
@@ -596,6 +1037,39 @@
     }
   ],
   "glossary": {
+    "GIF": "A short animated image that can loop.",
+    "hashtag": "A word or phrase starting with # that helps people find related posts.",
+    "ranking algorithm": "Behind-the-scenes rules that decide what order posts or search results appear in.",
+    "ballot number": "The number used to identify a party or candidate on an election ballot.",
+    "wafer": "A thin round slice of material that computer chips are made from.",
+    "linear-attention layer": "A model layer that keeps a small, fixed-size record for each request instead of saving information for every token.",
+    "dense layer": "A model layer that keeps information for every token in an active request.",
+    "KV cache": "A store of earlier model calculations that it can reuse instead of doing them again.",
+    "activations": "The temporary results a model passes from one layer to another while processing a request.",
+    "pipeline": "A series of steps where each step works on data and passes it to the next.",
+    "SRAM": "Static Random-Access Memory: a kind of memory that keeps its contents while powered, so the computer can use them quickly.",
+    "RDMA": "Remote Direct Memory Access: a way for computers to exchange data directly with less delay.",
+    "micro-batch": "A small group of requests handled together at one stage.",
+    "quantization": "A way to make a model use less computing power by representing its internal numbers less precisely.",
+    "prefill": "The part of an AI request where it reads the prompt and earlier conversation before writing its answer.",
+    "EAM": "Emergency Action Message: the name used here for messages associated with USA nuclear forces.",
+    "HFGCS": "High Frequency Global Communications System: a military radio system named in the page's signal label.",
+    "kHz": "Kilohertz: a unit for saying where a radio signal sits on the dial.",
+    "USB": "Upper sideband: one way a radio sends information, listed here alongside the frequency.",
+    "CC0 1.0": "A public-domain dedication that lets people use a creator's work without asking permission.",
+    "one-time pad": "A way to hide a message using a secret key that is used only once.",
+    "pass@1": "The share of test problems a model solves on its first try.",
+    "zero-shot self-orchestration": "A method where a model breaks up a task and coordinates its own work without extra training.",
+    "filesystem": "A way an operating system keeps track of files and folders.",
+    "scientific calculator": "A calculator with extra tools for maths beyond basic adding, subtracting, multiplying, and dividing.",
+    "complex numbers": "Numbers with an ordinary part and a special extra part that makes square roots of negative numbers possible.",
+    "precision": "How many digits of a number a calculator can represent accurately.",
+    "order of operations": "The rules that tell you which parts of a calculation to work out first.",
+    "algorithm": "A set of steps used to solve a problem or make a decision.",
+    "runoff": "A second election between leading candidates after the first round.",
+    "reach": "How many people a post is shown to.",
+    "sovereign tech": "Technology a country can control for itself instead of depending on companies from elsewhere.",
+    "AI": "Artificial intelligence: computer systems designed to do tasks people associate with thinking.",
     "PHP": "PHP: Hypertext Preprocessor; a language people use to make websites work.",
     "PHP2SHELL": "The name used here for PHP-related flaws that could let an attacker run commands on a server.",
     "RCE": "Remote Code Execution: a flaw that lets an attacker make a computer run their commands from somewhere else.",
