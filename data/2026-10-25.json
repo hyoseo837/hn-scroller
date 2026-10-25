@@ -1,0 +1,647 @@
+{
+  "date": "2026-10-25",
+  "cards": [
+    {
+      "id": 50224916,
+      "url": "https://stealmybitcoin.com/",
+      "hn": "https://news.ycombinator.com/item?id=50224916",
+      "title": "Show HN: Steal My Bitcoin",
+      "time": 1792873831,
+      "points": 442,
+      "depth": [
+        {
+          "text": "someone hid a **Bitcoin key** on a server and challenged people to **steal the wallet**",
+          "tier": "simple"
+        },
+        {
+          "text": "The challenge page says the key is reachable through the PHP user account’s **print-flag binary**. One commenter says the setup is **not vulnerable to PHP2SHELL**; another claims to have a working RCE but **won’t demonstrate it**, fearing it could leak what they built.",
+          "tier": "substance",
+          "data": [
+            [
+              "wallet amount",
+              "0.00625104 BTC"
+            ],
+            [
+              "wallet value",
+              "≈ $502.35 USD"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say the lack of a successful hack makes claims of an easy exploit look doubtful; others say people with a working exploit may hold back because showing it could leak their work or the site could be a trap.",
+      "comment_count": 264,
+      "terms": [
+        "PHP",
+        "PHP2SHELL",
+        "RCE",
+        "honeypot",
+        "binary",
+        "POC",
+        "CVE",
+        "CLI"
+      ],
+      "entities": [
+        "Bitcoin",
+        "PHP",
+        "PHP2SHELL",
+        "GiveWell",
+        "GLM-5.3",
+        "GLM-5.3-Flash",
+        "GPT-6.1-Sol",
+        "DeepSeek-v4.1-Flash",
+        "OpenRouter",
+        "Claude Fable-5.1",
+        "Tarvis",
+        "Railway",
+        "ChatGPT",
+        "nginx",
+        "mempool.space"
+      ],
+      "comments": [
+        {
+          "by": "technion",
+          "text": "There is a lot of cynicism in this thread but the fact this is still open and hour later ends the narrative in my view. There are not \"thousands of swarms of agents autonomously compromising every site for its authors\" or any the other x / LinkedIn dribble ive been reading. It clearly isnt happening."
+        },
+        {
+          "by": "dguido",
+          "text": "This looks like a trap. We have a working RCE that would claim this, but I don't want to demonstrate that because it might leak what we built to others. We still have a window for people to patch and I don't want to risk that. https://x.com/dguido/status/2113825891021144306?s=46"
+        },
+        {
+          "by": "nayuki",
+          "text": "The server is getting overloaded, so here's the text for reference: Steal my Bitcoin\n0.65 hours without a successful hack\nThere is a bitcoin key hidden on this server worth about $502.\nIt is accessible to the PHP user account through the print-flag binary.\nThis PHP version was selected from before the PHP2SHELL CVEs were released.\nFirst person to get the wallet wins. If you don’t need the money…"
+        },
+        {
+          "by": "hpone91",
+          "text": "Yeah, the specific setup is not vulnerable to PHP2SHELL. CLI server + 1 MiB cap + inert page + high memory limit removes all the possibilities from the two CVEs. It would just be collecting POCs for actually vulnerable setups."
+        },
+        {
+          "by": "scottydelta",
+          "text": "I have two out of five AI agents that agreed to work with me on finding the flag (wallet key). Here's the progress so far: 1. GLM-5.3: Interpreted it as a public challenge and is currently trying to find the flag.\nhttps://ibb.co/zHLJhz0B 2. GLM-5.3-Flash: Also interpreted it as a public challenge and is working on cracking it.\nhttps://ibb.co/bg2DDtXq 3. GPT-6.1-Sol: Flagged it as a cybersecurity…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50224100,
+      "url": "https://aardappel.github.io/goose/",
+      "hn": "https://news.ycombinator.com/item?id=50224100",
+      "title": "The Goose Programming Language",
+      "time": 1792868815,
+      "points": 306,
+      "depth": [
+        {
+          "text": "someone made **Goose**, a language where the compiler assigns **data stacks** for memory",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says Goose suits programs with a **fixed number of growable memory regions**, but another asks how it handles arbitrary numbers of changing-size values without a heap. A commenter also warns that, with **no garbage collection**, stacks can keep growing even when old data is no longer used.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: skeptics say a fixed set of stacks may not handle arbitrary, changing-size values and argue a proper heap may be needed; supporters say Goose is fine for programs that can set the number of growable memory regions in advance.",
+      "comment_count": 192,
+      "terms": [
+        "data stack",
+        "heap",
+        "garbage collection",
+        "dynamically sized"
+      ],
+      "entities": [
+        "Goose",
+        "Rust",
+        "Dart",
+        "Embassy",
+        "C",
+        "C++",
+        "Ada",
+        "JavaScript",
+        "wasm",
+        "John Carmack"
+      ],
+      "comments": [
+        {
+          "by": "Aardappel",
+          "text": "Btw I made the language, AMA.\nrepo: https://github.com/aardappel/goose"
+        },
+        {
+          "by": "Panzerschrek",
+          "text": "> Memory is a handful of data stacks that the compiler assigns statically I doubt this can work well in all cases. Sooner or later one needs proper heap."
+        },
+        {
+          "by": "malisper",
+          "text": "I'm curious, for someone more familiar with Goose: how do you represent an arbitrary number of dynamically sized values? If you have a fixed number of stacks, it seems like only a fixed number of values can change size at any given time. For instance, how would you represent a hash table where the values are strings and at random, the program inserts or deletes a random string? This doesn't seem…"
+        },
+        {
+          "by": "bobbydigitales",
+          "text": "\"That looks really neat! The automatic analysis and use of multiple data stacks and resizable fields takes it from \"lots of work can be done this way\" to \"basically everything can be\". The relative references and built in binary structure validation also enable direct memory mapping of data structures and immediate use of network data. \"Parsing\" file and network data is often 100x slower than it…"
+        },
+        {
+          "by": "pradn",
+          "text": "Goose is pretty cool. The idea is that you don’t need to make representable all programs: a language for a restricted purpose is ok. As long as you can statically specify the number of growable memory regions, you can use Goose. However, since there’s no garbage collection, you’ll probably need to be careful about memory use while a program is running. Ie: the stacks can get too big if you keep…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50225695,
+      "url": "https://danluu.com/ambitious/",
+      "hn": "https://news.ycombinator.com/item?id=50225695",
+      "title": "We should be more ambitious with the software we build",
+      "time": 1792878451,
+      "points": 280,
+      "depth": [
+        {
+          "text": "someone says **AI** makes **ambitious projects** practical, so developers can build things they once ruled out",
+          "tier": "simple"
+        },
+        {
+          "text": "The writer says this set of tools took a **low single-digit number of hours**, including a regex engine tuned to his workloads, a faster ripgrep fork, and a Rust interpreter. Yossi Kreinin's reply warns that most people should be less ambitious with AI-built software if they lack **clear checks** or struggle to understand what it builds.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: advocates say AI makes once-impractical projects feasible; skeptics say most people should be less ambitious without clear checks and the ability to understand what they build.",
+      "comment_count": 242,
+      "terms": [
+        "regex engine",
+        "ripgrep",
+        "Rust interpreter",
+        "agentic loop",
+        "benchmark"
+      ],
+      "entities": [
+        "pgrust",
+        "Postgres",
+        "Rust",
+        "ripgrep",
+        "Yossi Kreinin"
+      ],
+      "comments": [
+        {
+          "by": "darkmatriarch",
+          "text": "I think there are many of us working on projects with LLMs that'll take months more to reach full production. These will feel very out of left field and we'll have another paradigm shift. I think the real momentum will hit when more of us leave the dull products we're working on, start our own companies, and build the products we're actually excited about. I encourage everyone else to at least…"
+        },
+        {
+          "by": "blueblazin",
+          "text": "With every new model I've been attempting to build something that takes at least 1 month and really pushes the model. So far I've done: - Python interpreter in Rust (fail): https://github.com/BlueBlazin/pyrs - Low-poly Google Earth like engine (success): https://github.com/BlueBlazin/lowpolyearth - Codebase -> 2d infinite-zoom visualization (success): https://github.com/BlueBlazin/blockviz I have…"
+        },
+        {
+          "by": "j2kun",
+          "text": "I get what the author is saying, but his examples like \"a ripgrep fork that ... is faster for my codex ripgrep workloads\" don't strike me as particularly ambitious. Perhaps we should be more ambitious in the types of problems we try to solve, and the types of value we try to provide with the software we build."
+        },
+        {
+          "by": "lubujackson",
+          "text": "We should be more ambitious, but we need to learn how we can be ambitious with AI, and what value we can create. AI can take us from 0 to MVP in a prompt. It can fill in gaps of knowledge and allows someone who knows half of the stack to build the whole thing nearly seamlessly. These are superpowers but don't by themselves lead to new products. What AI cannot do is remove the world of…"
+        },
+        {
+          "by": "Supermancho",
+          "text": "This statement stood out to me. > I have a similar thought about \"there's no reason for software to be slow\" BTW; in many cases, if you use AI to speed up some flow, you will add a bunch of messy code that will be overfit for the use case you tested on and will neither generalize, perf-wise, for all the use cases you should care about, nor will be maintainable upon future changes. LLMs have…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50226419,
+      "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
+      "hn": "https://news.ycombinator.com/item?id=50226419",
+      "title": "America has lost 200k of jobs in media, film and the arts. How much is AI?",
+      "time": 1792883514,
+      "points": 260,
+      "depth": [
+        {
+          "text": "someone asks how much **AI** is to blame for **job losses** across America’s creative industries",
+          "tier": "simple"
+        },
+        {
+          "text": "Nearly half of the losses were in **movie and sound recording**, including Hollywood, but the article says **AI’s role is hard to separate** from consolidation, offshoring and social media’s rise. It warns that creative industries could face a **business-model collapse** like newspapers did.",
+          "tier": "substance",
+          "data": [
+            [
+              "creative-industry jobs lost in four years",
+              "more than 200k"
+            ],
+            [
+              "creative-industry jobs lost in the last year",
+              "roughly 50k"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters see AI as contributing to the losses; others point to streaming economics, oversupply, outsourcing or broader economic pressures instead.",
+      "comment_count": 267,
+      "terms": [
+        "offshoring",
+        "consolidation",
+        "paywall"
+      ],
+      "entities": [
+        "Joseph Politano",
+        "Metallica",
+        "Napster",
+        "Recording Industry Association of America",
+        "Spotify",
+        "Apple Music",
+        "Google",
+        "YouTube",
+        "Twitch",
+        "TikTok",
+        "ChatGPT",
+        "Anthropic",
+        "OpenAI",
+        "Sora",
+        "Stable Diffusion",
+        "BookTok"
+      ],
+      "comments": [
+        {
+          "by": "jparishy",
+          "text": "I liked this article. I appreciate that it didn't try to say it is or isn't AI. To me, the entertainment industry suffers from a lot of the same problems in most other industries that chase \"efficiency\", in terms of resources used and profit made. Economies and industries and labor are interdependent and more \"alive\" than balance sheets and bank accounts. For the film industry, when you start…"
+        },
+        {
+          "by": "Animats",
+          "text": "The real job losses are probably in commercial art. If you're making an illustration for an ad, that's almost certainly automated now. Looking at when the decline started, it's about when Stable Diffusion got going. Some of this stuff is pre-AI, Photoshop smart tools stuff. Especially clothing ads. Nobody has a live model pose with each item color any more. Or even each item. (I used to know…"
+        },
+        {
+          "by": "sjdh76",
+          "text": "Before AI showed up the UN released a report on the Attention Economy. It said Supply of content had vastly outstripped Demand. It decoupled because entertainment/media was being used to push other products. The telcos, amazon, google/fb and many others were all subsidizing content to push some other product. Exploding info chasing finite non growing eyeballs and time."
+        },
+        {
+          "by": "999900000999",
+          "text": "No one has any money and entertainment is the first thing you cut. Every streaming service feels more and more user hostile. If I want to watch South Park it’s a 15$ a month subscription just for that . Paramount Plus has nothing else. I want to watch Lanterns, another 30$ a month. Maybe King of The Hill , 20$ a month. The Reboot has this weird lazy animation style."
+        },
+        {
+          "by": "harrisonjackson",
+          "text": "Jobs might be down but the amount of money going to produce media, film, and \"the arts\" has never been higher. A lot of it is centralized but possibly these jobs have just shifted around to other roles and specialities. The amount of video being produced has never been higher, as well. Rise of influencers and content creators - less hollywood gatekeeping and more commoditizing the distribution of…"
+        }
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!oz9x!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F999e3450-1df3-457d-8715-5e2e46d5121c_2886x1843.png"
+    },
+    {
+      "id": 50219700,
+      "url": "https://github.com/Zagitta/gpu-unlock",
+      "hn": "https://news.ycombinator.com/item?id=50219700",
+      "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+      "time": 1792835907,
+      "points": 210,
+      "depth": [
+        {
+          "text": "someone built a **Linux tool** that unlocks **faster math** on some Nvidia GeForce cards",
+          "tier": "simple"
+        },
+        {
+          "text": "The project says its module doubles **FP/BF16 FMA instruction issue speed** on GA102, GA103, GA104 and GA106 cards, loading before the unmodified NVIDIA driver. It reports faster **LLM prefill**, while decode and INT8 work stay about the same; commenters dispute what gets unlocked and how widely it has been tested.",
+          "tier": "substance",
+          "data": [
+            [
+              "LLM prefill in FlashAttention",
+              "+14–36%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: the project says it unlocks FP/BF16 instruction speed across four GPU families; one commenter says the claim is really about FP32 and says they have seen reports only for 3090/3090 Ti cards.",
+      "comment_count": 67,
+      "terms": [
+        "BF16",
+        "FP32",
+        "FMA",
+        "instruction issue rate",
+        "LLM prefill",
+        "kernel module"
+      ],
+      "entities": [
+        "Nvidia",
+        "GPU-unlock",
+        "Zagitta",
+        "Linux",
+        "GeForce",
+        "FlashAttention"
+      ],
+      "comments": [
+        {
+          "by": "Zagitta",
+          "text": "Hey this is my work, although the exploits etc aren't my ideas by any means.\nThis is just a way to wrap the whole thing up in a much less annoying package than having to patch the nvidia driver. I originally got inspired by the CMP90/50 windows unlocks that run as standalone UEFI modules that chainloads into the OS. Happy to answer questions!"
+        },
+        {
+          "by": "RachelF",
+          "text": "A semi related: a patch for those with multiple cards. You can unlock around 20% increased card to card speed on consumer GPUs using this library: https://github.com/aikitoria/open-gpu-kernel-modules The hardware supports it, but then Nvidia disabled it if the driver detects cheaper cards. This bypasses the NVidia slowdown."
+        },
+        {
+          "by": "jacquesm",
+          "text": "This one is real, but there are some caveats: - you will need to run your card hotter than you might be comfortable with - the real pay-off (on some cards, apparently, see downthread) requires increasing the maximum power to 450W - This is well above what the stock cooler was designed for so a bit more cooling would help What's nice is that you can stack this mod on top of (or rather, below of…"
+        },
+        {
+          "by": "Tiberium",
+          "text": "I've tested myself and the results are legit, this is incredible, even if a little risky (it relies on exploiting firmware): https://github.com/Zagitta/gpu-unlock/blob/main/docs/How%20A... > Unfortunately for Nvidia the booter is vulnerable to a classic buffer overflow that writes straight into the stack which gives us the ability to execute code via Return Oriented Programming (ROP). Repo for…"
+        },
+        {
+          "by": "wewewedxfgdf",
+          "text": "There is also the unlock for Nvidia encoding which \"removes restriction on maximum number of simultaneous NVENC video encoding sessions\" https://github.com/keylase/nvidia-patch So yeah, buy an Nvidia card then download and run all the software needed to make it work to its full potential so Jensen can buy his 500 millionth leather jacket."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/7b245ff9b7e16dc85a98fb7ff3264d35d67cb8c6506045f10a96537135001c11/Zagitta/gpu-unlock"
+    },
+    {
+      "id": 50223844,
+      "url": "https://www.computerworld.dk/art/297226/digitaliseringsministeriet-har-i-al-stilhed-droppet-stort-anlagt-forsoeg-med-open-source-alternativ-til-microsoft",
+      "hn": "https://news.ycombinator.com/item?id=50223844",
+      "title": "Danish Government silently drops plan to dump MS Office",
+      "time": 1792866708,
+      "points": 205,
+      "depth": [
+        {
+          "text": "the Danish digital ministry **quietly dropped** its trial of an **open-source alternative** to Microsoft Office",
+          "tier": "simple"
+        },
+        {
+          "text": "The pilot began in summer 2025, with **just under 40 ministry employees** testing **Collabora**, supplied by Danish company cBrain. One commenter says a general election put it on **indefinite hold**; no evaluation is planned.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say open-source office tools are easy to swap in; others cite training and compatibility headaches, or suspect the threat was a licensing-cost bargaining tactic.",
+      "comment_count": 155,
+      "terms": [
+        "open source",
+        "digital sovereignty",
+        "mail merge",
+        "track-changes",
+        "CRUD apps"
+      ],
+      "entities": [
+        "Digitaliseringsministeriet",
+        "Collabora",
+        "cBrain",
+        "Microsoft",
+        "Microsoft Office"
+      ],
+      "comments": [
+        {
+          "by": "bpalmerau",
+          "text": "\"Any serious attempt at digital sovereignty needs migration tools that work without the cooperation of the Big Tech companies. Otherwise, this is like building housing for East Germans and locating it in West Berlin. It doesn't matter how great the housing is, your intended audience is going to really struggle to move in unless you tear down the wall.\" Cory…"
+        },
+        {
+          "by": "lowkeyokay",
+          "text": "According to the article the Agency for Digital Government (Digitaliseringsstyrelsen) initiated a pilot in spring 2025 to use Collabora[1]. A General Election was called (not related) which put the project on hold indefinitely. No plan to pick it up agian, and no evaluation is planned. The article mentions that the (38) test persons had reported some frustrations with typography, and…"
+        },
+        {
+          "by": "gumby",
+          "text": "It’s hard to parse the complaints in these transitions. Sometimes there has to be a change in process, sure, or even some genuine incompatibility. But a huge percent is social. About 25 years ago Palo Alto bought a new email system. Exchange, a huge dual-processor HP system, about 100K in today’s dollars. I went to a council meeting to ask and was directed to the decision maker. He said the big…"
+        },
+        {
+          "by": "kjuulh",
+          "text": "My mom still uses OpenOffice at her job (municipality), and honestly they haven't really felt a huge difference, they still get their work done like before, but heck there were some training to do as they were switching. I suspect at this point they would need the same training just to get back to word etc."
+        },
+        {
+          "by": "feldrim",
+          "text": "Most of the govt stuff is paperwork moved to \"digital\" paperwork using office. I sincerely hope to see a post with a title \"X govt drops using any office program at all\". Most of these stuff can be just CRUD apps on approval workflows with built-in digital signatures. Govt officers would not need more than browsers for majority of these daily tasks."
+        }
+      ],
+      "image": "https://www.computerworld.dk/fil/223423?width=1200&height=630&focus=1"
+    },
+    {
+      "id": 50223647,
+      "url": "https://arxiv.org/abs/2610.29162",
+      "hn": "https://news.ycombinator.com/item?id=50223647",
+      "title": "Why is AI generated language so hard to understand?",
+      "time": 1792865097,
+      "points": 174,
+      "depth": [
+        {
+          "text": "researchers found **AI writing** uses more **hard-to-process language**, perhaps because models optimize for tasks beyond communication",
+          "tier": "simple"
+        },
+        {
+          "text": "All **nine models** used more **inanimate subjects with animate verbs** and low-frequency n-grams than human writing; most also used longer dependencies, more stacked nouns, and more reduced object relatives in conversation. The authors suggest that goals like math, code, and reasoning may favor **information density** over successful communication. They also found that fine-tuning a model with a length penalty led to language that diverged from human-like patterns.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say AI writing is hard to understand because it favors dense information; others say it’s just tedious, or that the bigger issue is whether it’s useful to its audience.",
+      "comment_count": 156,
+      "terms": [
+        "low-frequency n-gram",
+        "inanimate subject with an animate verb",
+        "object relative",
+        "information density",
+        "fine-tuning",
+        "RLHF",
+        "transitive verb used intransitively"
+      ],
+      "entities": [
+        "Thomas Hikaru Clark",
+        "Matias B. Martin",
+        "Kyle Mahowald",
+        "Claude",
+        "arXiv"
+      ],
+      "comments": [
+        {
+          "by": "dividefuel",
+          "text": "As a technical writer, I believe default AI responses are optimized for what people _think_ is good writing rather than what actually is good writing. My guess is years of RLHF optimized for rater's first impressions of how well-written something was. It uses lists! It has headings! It uses fun phrases like 'smoking gun'! It's long and informative! These things are relatively fast and easy to…"
+        },
+        {
+          "by": "cryzinger",
+          "text": "One construction I'm surprised the paper doesn't mention (although, to be fair, I'm sure they had plenty of options to choose from... and you have to draw the line somewhere :P) is that LLMs love to use transitive verbs intransitively[0], in a way I almost never see in human writing. At best it makes sentences weirdly ambiguous, at worst it makes them borderline incomprehensible, and it's…"
+        },
+        {
+          "by": "lukev",
+          "text": "LLMs are showing us that a lot of what we think of as cognition is actually part of the elaborate symbol system which is Language, as opposed to a property of \"mind\" (either biologically or artificially instantiated.) LLM-generated text is hard to understand because while it's perfectly good language that follows valid cognitive and informational patterns, it does not reflect the intent or mental…"
+        },
+        {
+          "by": "anigbrowl",
+          "text": "Consider too that AI training corpuses include vast amounts of commercial speech which is designed to numb the critical faculties and produce action; likewise they include numerous opinion articles, which are designed to persuade and often leverage rhetorical fallacies, whether cynically or as a reflection of an author's imperfect thought process."
+        },
+        {
+          "by": "orbital-decay",
+          "text": "As usual most commenters reply to headlines, so I quote their conclusions. >We take these results as a proof of concept that a length penalty used during reinforcement learning with GRPO can directly affect grammatical features. We note that the model was not directly instructed to use compressed or dense language, and was not directly given information about the availability of syntactic…"
+        }
+      ],
+      "image": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png"
+    },
+    {
+      "id": 50224300,
+      "url": "https://aardappel.github.io/goose/",
+      "hn": "https://news.ycombinator.com/item?id=50224300",
+      "title": "The Goose Programming Language",
+      "time": 1792870061,
+      "points": 171,
+      "depth": [
+        {
+          "text": "Goose is a **systems language** that stays **memory safe** without a heap or lifetime annotations",
+          "tier": "simple"
+        },
+        {
+          "text": "Goose stores dynamic values inline on **compiler-managed data stacks** and frees them when their scope ends; it also compiles to one C file. Its repository benchmarks report **3.3x the speed** of idiomatic C++, 1.16x hand-optimized C++, and 1.12x the best safe Rust, using **less memory**.",
+          "tier": "substance",
+          "data": [
+            [
+              "speed vs idiomatic C++",
+              "3.3x"
+            ],
+            [
+              "speed vs hand-optimized C++",
+              "1.16x"
+            ],
+            [
+              "speed vs best safe Rust",
+              "1.12x"
+            ],
+            [
+              "memory vs idiomatic C++",
+              "1.9x less"
+            ],
+            [
+              "memory vs hand-optimized C++",
+              "1.3x less"
+            ],
+            [
+              "memory vs best safe Rust",
+              "1.2x less"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 1,
+      "terms": [
+        "data stack",
+        "heap allocator",
+        "lifetime annotations",
+        "garbage collector"
+      ],
+      "entities": [
+        "Goose",
+        "C",
+        "C++",
+        "Rust"
+      ],
+      "comments": [
+        {
+          "by": "dang",
+          "text": "Comments moved to https://news.ycombinator.com/item?id=50224100 ."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50223785,
+      "url": "https://dreamlabs.ai/research/dream-1/",
+      "hn": "https://news.ycombinator.com/item?id=50223785",
+      "title": "Dream-1",
+      "time": 1792866204,
+      "points": 159,
+      "depth": [
+        {
+          "text": "someone made a robot model that can control **new robots** doing **tasks it has never seen**",
+          "tier": "simple"
+        },
+        {
+          "text": "Dream Labs says **Dream-1** works through a public API with **bimanual robots** using parallel grippers, without robot-specific fine-tuning or demonstrations. It costs **$3 per hour** ($2 per hour for Dream-1-flash), but the post warns it isn't validated for safety-critical use.",
+          "tier": "substance",
+          "data": [
+            [
+              "Dream-1 hourly price",
+              "$3 per hour"
+            ],
+            [
+              "Dream-1-flash hourly price",
+              "$2 per hour"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some are excited about robots taking on household chores; others say the demos don't show useful real-world automation yet.",
+      "comment_count": 76,
+      "terms": [
+        "World Action Model",
+        "zero-shot",
+        "bimanual",
+        "parallel grippers",
+        "API",
+        "fine-tuning",
+        "IK solver"
+      ],
+      "entities": [
+        "Dream Labs",
+        "Dream-1",
+        "Dream-1-flash",
+        "DreamZero",
+        "Hugging Face",
+        "Microduck",
+        "YAM",
+        "PR2",
+        "Robocurve"
+      ],
+      "comments": [
+        {
+          "by": "dumberquestions",
+          "text": "Tested one prompt in the playground (\"Move the elephant next to the ball\") and this is the generated recorded video link: https://dreamlabs.ai/playground/?play=a05f0e641559490e#sim"
+        },
+        {
+          "by": "Aurornis",
+          "text": "This is all very cool and something I would like to play with. However I also can’t mentally bridge this over to the actual automation, manufacturing, and warehouse work I’ve been involved with throughout my career. Everything about this looks optimized for getting-started tasks to play around with, but I’m left feeling that it’s not the right fit or even a good starting point for real automation…"
+        },
+        {
+          "by": "ethanj8011",
+          "text": "Obviously AI written text. At least there is real content here, however I do find the order and the way in which it was written and portrayed to have a heavy AI smell. That is, it's hard to read and follow the clean narrative, it isn't written the way a human who was trying to convince another human would write, and is less effective because of it."
+        },
+        {
+          "by": "besterman23",
+          "text": "This post feels really weird, DreamLabs isn’t some well known project like Anthropic or OpenAI and Dream-1 wasn’t really an awaited release. But somehow this was pushed to the front page of HN before receiving a single comment with a title reminiscent of a major LLM release. Like I can only find 1 other reference historically to this lab and nobody noticed it or cared."
+        },
+        {
+          "by": "prometheus1992",
+          "text": "I don't like the direction this is going in - so a third party is going to be able to control a robot in my house? we shouldn't aim for economies of scale on this problem as there are massive negative externalities attached to it. Hopefully, a chinese lab will release an open source version soon."
+        }
+      ],
+      "image": "https://dreamlabs.ai/research/dream-1/assets/og-image.jpg"
+    }
+  ],
+  "glossary": {
+    "PHP": "PHP: Hypertext Preprocessor; a language people use to make websites work.",
+    "PHP2SHELL": "The name used here for PHP-related flaws that could let an attacker run commands on a server.",
+    "RCE": "Remote Code Execution: a flaw that lets an attacker make a computer run their commands from somewhere else.",
+    "honeypot": "A computer set up to attract attacks so people can watch what attackers do.",
+    "binary": "A program file a computer can run.",
+    "POC": "Proof of Concept: a small test or demo that checks whether an idea can work.",
+    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
+    "CLI": "Command-Line Interface: a way to control a computer by typing commands instead of clicking buttons.",
+    "data stack": "A dedicated area of memory where a program keeps data; Goose uses several areas assigned by the compiler.",
+    "heap": "Memory a program can request as it runs, useful when it doesn’t know in advance how much space its data will need.",
+    "garbage collection": "Automatic cleanup that frees memory the program is no longer using.",
+    "dynamically sized": "Able to grow or shrink while a program is running.",
+    "regex engine": "Software that checks text against patterns, such as finding words in a chosen format.",
+    "ripgrep": "A search tool for finding text inside files.",
+    "Rust interpreter": "Software that runs Rust code by carrying out its instructions.",
+    "agentic loop": "A cycle where an AI tries a task, checks what happened, and tries again.",
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "offshoring": "Moving work to another country instead of doing it where the company is based.",
+    "consolidation": "When businesses combine or are bought, leaving fewer, larger companies in an industry.",
+    "paywall": "A website barrier that asks you to pay before reading an article.",
+    "BF16": "Brain Floating Point 16: a format for storing the numbers a model works with.",
+    "FP32": "Floating-point 32: a way for computers to represent numbers during calculations.",
+    "FMA": "Fused multiply-add: an instruction that multiplies two numbers and adds a third in one step.",
+    "instruction issue rate": "How quickly a GPU can start the calculation instructions it is given.",
+    "LLM prefill": "Large language model prefill: the step where an AI reads your prompt before generating its reply.",
+    "kernel module": "A small piece of software that runs inside Linux and adds behavior related to the computer's hardware.",
+    "open source": "Software whose code is shared so other people can inspect, run, or change it.",
+    "digital sovereignty": "A country’s ability to control the technology it relies on instead of depending on outside providers.",
+    "mail merge": "A way to make many personalized letters or labels from one document and a list of names.",
+    "track-changes": "A document feature that shows edits made by reviewers.",
+    "CRUD apps": "Create, Read, Update, Delete: a basic app for adding, viewing, changing, and removing records.",
+    "low-frequency n-gram": "A short run of words or word pieces that appears only rarely in the writing being studied.",
+    "inanimate subject with an animate verb": "A sentence where a thing, rather than a person or animal, is described as doing an action.",
+    "object relative": "A phrase that tells you about a thing by saying what someone did to it, as in “the book that I read.”",
+    "information density": "How much information is packed into a small amount of writing.",
+    "fine-tuning": "Training an already-built model a bit more on examples for a particular job.",
+    "RLHF": "Reinforcement Learning from Human Feedback: a way to train an AI by having people rate its answers.",
+    "transitive verb used intransitively": "Using a verb without an object, even though it normally says what the action affects.",
+    "heap allocator": "A system that hands a program separate chunks of memory when it asks for them.",
+    "lifetime annotations": "Extra marks in code that tell the compiler how long a reference is allowed to stay usable.",
+    "garbage collector": "A part of a program that finds memory it no longer needs so that space can be reused.",
+    "World Action Model": "A robot AI that learns to predict what it will see and what actions would make that happen.",
+    "zero-shot": "Trying a task or using a robot without first giving the model examples for that exact task or robot.",
+    "bimanual": "Using two arms or hands.",
+    "parallel grippers": "Robot hands that grip an object by closing two sides toward each other.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "IK solver": "Inverse kinematics solver: software that works out how a robot's joints need to move to put its hand somewhere."
+  }
+}
