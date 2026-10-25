@@ -2,6 +2,504 @@
   "date": "2026-10-25",
   "cards": [
     {
+      "id": 50233779,
+      "url": "https://lynchlab.net/llm-skin-cancer",
+      "hn": "https://news.ycombinator.com/item?id=50233779",
+      "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+      "time": 1792948538,
+      "points": 295,
+      "depth": [
+        {
+          "text": "a dermatologist found a specialist image model outdid two AI models at **spotting skin cancer**",
+          "tier": "simple"
+        },
+        {
+          "text": "On **200 biopsy-proven lesions**, the fine-tuned CNN got the right diagnosis for **125 (62%)**, compared with **84 and 85 (42%)** for the two LLMs. The author says every lesion had been biopsied, making the cases harder, and warns that 200 cases are too few to rank close results.",
+          "tier": "substance",
+          "data": [
+            [
+              "CNN correct diagnoses",
+              "125 (62%)"
+            ],
+            [
+              "Two LLMs correct diagnoses",
+              "84 and 85 (42%)"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say narrow tasks are better handled by purpose-built classifiers; others say this test misses what LLMs could do with clinical notes, patient questions, or messier images.",
+      "comment_count": 147,
+      "terms": [
+        "CNN",
+        "LLM",
+        "fine-tuned",
+        "dermoscopic image",
+        "biopsy",
+        "histopathology",
+        "benchmaxxing",
+        "out-of-domain"
+      ],
+      "entities": [
+        "Magnus Lynch",
+        "GPT-6 Astra",
+        "Claude Fable 5.1",
+        "Inception v3",
+        "MILK10k",
+        "International Skin Imaging Collaboration",
+        "ISIC Archive",
+        "Google",
+        "Claude Code",
+        "Anthropic",
+        "H100",
+        "SkinGPT-4",
+        "Nature",
+        "ChatGPT",
+        "Katago",
+        "Xgboost"
+      ],
+      "comments": [
+        {
+          "by": "snitty",
+          "text": "This is an example of why I'm a little stumped about why people are excited about Jev-style decision models. For any application at scale it'd be way more accurate to have a dedicated classifier using the right architecture (neural net, bayesian, etc.) LLMs drive the cost of making those models down to near zero. Just use the LLM to make a thing that's actually good at what you need it to do."
+        },
+        {
+          "by": "tasuki",
+          "text": "> I compared to a 10-year old CNN and to my surprise found that this was superior. I'm surprised he's surprised. > A small, old, specialised network using an outdated architecture recognises skin lesions far better than two frontier LLMs. Yes of course. A 30m params Katago network with one playout is superhuman in playing go, while frontier LLMs have over 10,000 times more parameters and aren't…"
+        },
+        {
+          "by": "Legend2440",
+          "text": "> I used Inception v3 pretrained on everyday photographs and then fine-tuned all layers on 68,011 dermoscopic and clinical images from the ISIC Archive on a single H100 GPU. >These 200 test lesions, and every other photograph of the same lesion or patient, were removed from its data (including the validation set) before training, so it had never seen them, and they were not used to choose the…"
+        },
+        {
+          "by": "jonex",
+          "text": "As people have mentioned, it isn't that surprising that a specially trained model beats a general purpose model. However, I think it kinda misses the potential of llms for diagnosis. What happens if we also include journal notes? What if we let the model generate questions to ask the patient and include those? What if the images aren't perfect examples and happen to contain out of distribution…"
+        },
+        {
+          "by": "MitPitt",
+          "text": "And a calculator outperforms LLMs at multiplication and division..."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50233929,
+      "url": "https://talkweb.eu/openweb/4558/",
+      "hn": "https://news.ycombinator.com/item?id=50233929",
+      "title": "I refuse to accept a censored Internet. Join Me at FOSDEM 27",
+      "time": 1792949455,
+      "points": 274,
+      "depth": [
+        {
+          "text": "someone wants a FOSDEM room focused on the **chain of tools** protecting people facing **censorship**",
+          "tier": "simple"
+        },
+        {
+          "text": "The proposed Digital Dissident devroom would bring developers of circumvention, anonymity, messaging, publishing and whistleblowing tools into one room, rather than focus on any single project. Sessions would be judged on **interoperability**, shared threat models, shared failure data and engineering practice.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters say the post singles out Russia, China and Iran while ignoring Western censorship; another argues propaganda, not censorship, is the internet’s bigger problem.",
+      "comment_count": 142,
+      "terms": [
+        "devroom",
+        "toolchain",
+        "interoperability",
+        "threat model",
+        "fingerprinting",
+        "deep packet inspection",
+        "pluggable transports",
+        "mixnet",
+        "CFP"
+      ],
+      "entities": [
+        "FOSDEM",
+        "Bogomil Shopov",
+        "Digital Dissident",
+        "Decentralized Internet and Privacy",
+        "Google",
+        "Apple",
+        "Nym",
+        "NymVPN",
+        "Delta Chat",
+        "chatmail",
+        "SimpleX",
+        "Fediverse",
+        "ActivityPub",
+        "Nostr",
+        "Psiphon",
+        "Tor",
+        "Reticulum"
+      ],
+      "comments": [
+        {
+          "by": "doctor_blood",
+          "text": "https://arctotherium.substack.com/p/the-closure-of-the-inter... The most comprehensive post I've seen on how quickly and totally the internet has changed over the last decade. As someone that got online in the early aughts and hung out on usenet and slashdot, the modern net is unrecognizable."
+        },
+        {
+          "by": "shayanbahal",
+          "text": "Totally with you. The same refusal/frustration made me start Mother of all VPNs (moav.sh) early this year. A talk I gave about the experience and what MoaV came out to be: Rage-coding the mother of all VPNs\nhttps://www.youtube.com/watch?v=uYygWN1MZDE > Amidst the Internet shutdowns in Iran, as a technologist and member of the Iranian diaspora, I felt so much frustration, helplessness, and anger…"
+        },
+        {
+          "by": "saidnooneever",
+          "text": "Is there an uncensored intetnet, because i dont think there is. if there is any, it can be turned off because its being routed on the censored net wrapped in encryption. that being said, that makes me pretty interested in this talk. outside of hacking sattelites and such things and/or infra i really dont see any opportunities to break free of the will of corporations as they can simply pay infra…"
+        },
+        {
+          "by": "rustyconover",
+          "text": "FOSDEM is a great conference! If you ever get the chance to go, please go! Especially if you're an American I recommend it. It is so different than any other conference I've ever been to in the US. It doesn't have a lot of sales pitches, the technical content is top notch, and overall it is really fun and interesting to see what everybody is talking about and working on."
+        },
+        {
+          "by": "haunter",
+          "text": "Most people prefer censored internet as long as it aligns with their political leaning. Maybe that wasn't the case 15 years ago but it's pretty much true nowadays. I myself consider this as a fact."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50234232,
+      "url": "https://theintercept.com/2026/10/01/oregon-police-misconduct-public-records-cost-fee/",
+      "hn": "https://news.ycombinator.com/item?id=50234232",
+      "title": "Oregon Police Are Charging a Local News Outlet $2.5M for Records About One Cop",
+      "time": 1792951451,
+      "points": 236,
+      "depth": [
+        {
+          "text": "Eugene says digging up records about **one officer** will cost a local newsroom **$2.5 million**",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: Eugene Police Chief Chris Skinner says the city offered to help narrow the request; Double Sided Media’s editor says no such offer was made.",
+      "comment_count": 59,
+      "terms": [
+        "FOIA",
+        "public records request",
+        "custodian"
+      ],
+      "entities": [
+        "Double Sided Media",
+        "Eugene Police Department",
+        "Justin Peckels",
+        "Eric Klinko",
+        "Chris Skinner",
+        "James Croxton",
+        "Mary Bell",
+        "Flock",
+        "ACLU of Oregon",
+        "Lauren Harper",
+        "Freedom of the Press Foundation",
+        "The Intercept",
+        "Lookout Eugene-Springfield"
+      ],
+      "comments": [
+        {
+          "by": "rahimnathwani",
+          "text": "Some agencies have a different tactic: go really slowly. I sent a public records request to my local school district on March 9th 2026. They responded on 19th March 2026 saying they'd respond on in late April. Since then, every month they've sent an email with some small portion of the records, with a PDF letter saying they'll send a follow up a month later. I've received 8 of those responses so…"
+        },
+        {
+          "by": "black_puppydog",
+          "text": "Worth pointing out that Germany is having an ongoing battle over our FOIA equivalent, in which a host of people who were bitten badly by it (most notably Jens Spahn) are proposing to allow exactly this kind of prohibitive fee, as well as reducing access to natural persons (so the individual reporter, not the newspaper) and only to people who have a reasonable interest, etc. Sure, the current form…"
+        },
+        {
+          "by": "cactacea",
+          "text": "> the Eugene Police Department claimed searching for records and processing the request would take at least 44,816 hours of staff time and cost approximately $2,484,599.04. 44k hours is ~21 years. Beyond absurd"
+        },
+        {
+          "by": "ghusto",
+          "text": "Freedom of Information Act in the UK means I make a request, and I get the information I asked for within 30 days. No excuses, no nonsense \"fees\". Just what in the hell is happening in the USA?"
+        },
+        {
+          "by": "dabinat",
+          "text": "This is comparatively a bargain compared to what the DoD wanted to charge: > In 2015, the Department of Defense told a Freedom of Information Act requester, who was asking for records on tools used to preserve data on seized devices, that fulfilling their request would take 15 million hours and cost $660 million. (15 million hours = over 1700 years)"
+        }
+      ],
+      "image": "https://theintercept.com/wp-content/uploads/2026/10/Screenshot-2026-10-01-at-4.14.38-PM-e1790885738599.png?fit=1436%2C718&w=2048"
+    },
+    {
+      "id": 50234474,
+      "url": "https://imaginationlibrary.com/",
+      "hn": "https://news.ycombinator.com/item?id=50234474",
+      "title": "Dolly Parton's Imagination Library",
+      "time": 1792952634,
+      "points": 210,
+      "depth": [
+        {
+          "text": "Dolly Parton's **Imagination Library** sends children **free books each month**, with local charities helping pay",
+          "tier": "simple"
+        },
+        {
+          "text": "The Imagination Library selects books, handles distribution and negotiates wholesale prices; **local charities** cover the **per-book cost**. That lets it **grow or shrink** as local support comes and goes, while keeping local partners' overhead low.",
+          "tier": "substance",
+          "data": [
+            [
+              "wholesale cost per book",
+              "$2.5/book"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 35,
+      "terms": [
+        "wholesale pricing",
+        "decentralized model"
+      ],
+      "entities": [
+        "Dolly Parton's Imagination Library",
+        "Dolly Parton",
+        "David Dotson",
+        "Dollywood",
+        "PJ Library"
+      ],
+      "comments": [
+        {
+          "by": "arjie",
+          "text": "My daughter receives books through this program and I was curious how it was sustained at a $2.5/book wholesale cost. Interestingly, the coordinating body that selects books, facilitates distribution, and negotiates wholesale pricing is the Dolly Parton Imagination Library, but per-book funding is actually entirely through local charities and so on. This means that where charities are unable to…"
+        },
+        {
+          "by": "talon8635",
+          "text": "We use it and my son always screen “Dolly!” When we get to her picture in the back jacket. Wonderful service from one of the best Americans to have ever lived. For jewish themed books, PJ Library is a similar good service"
+        },
+        {
+          "by": "peterleiser",
+          "text": "In Tennessee hospitals a nurse, staff member, or authorized volunteer will swing by your room in the mother-baby unit and sign you up. Then you start receiving free books by mail each month until age 5. An amazing program by an amazing person!"
+        },
+        {
+          "by": "sarchertech",
+          "text": "My 5 year old just got his last imagination library book. It showed up right after Dolly passed away. There was a letter from Dolly to him that ended “I will always love you”. Made my wife tear up."
+        },
+        {
+          "by": "trollbridge",
+          "text": "PJ Library has a similar program for age 0-8. (I contacted them and they’re fine with non-Jewish families participating, even though it’s aimed at Jewish families and their children.)"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50230384,
+      "url": "https://github.com/ihhub/fheroes2",
+      "hn": "https://news.ycombinator.com/item?id=50230384",
+      "title": "fheroes2: A recreation of Heroes of Might and Magic II game engine",
+      "time": 1792926552,
+      "points": 185,
+      "depth": [
+        {
+          "text": "someone recreated the **Heroes of Might and Magic II** engine with **gameplay and graphics improvements**",
+          "tier": "simple"
+        },
+        {
+          "text": "The open-source, multiplatform project is **written from scratch** and includes support for **high-resolution graphics**, improved AI, numerous fixes, and user interface improvements. Its page advises buying the original game or downloading the **free demo**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some still enjoy and remember HoMM; one commenter says its old gameplay has become unbearable as an adult.",
+      "comment_count": 65,
+      "terms": [
+        "game engine",
+        "turn-based strategy",
+        "hot seat mode"
+      ],
+      "entities": [
+        "fheroes2",
+        "Heroes of Might and Magic II",
+        "Heroes of Might and Magic III",
+        "VCMI",
+        "The 3DO Company",
+        "Ubisoft",
+        "GOG"
+      ],
+      "comments": [
+        {
+          "by": "skolos",
+          "text": "Interesting that this is on front page. I thought HOMM is quite niche right now. I'm still spending some time on HOMM3 and recently created mcp for Claude Code (with opus 5.5) to play it - you can look at short playthrough here:\nhttps://www.youtube.com/live/uU-vvTOZFQY It is not good at it! And very slow! I tried to improve, teach strategies, write some analysis scripts, etc. Did not help much."
+        },
+        {
+          "by": "cyrusmg",
+          "text": "Oh, I loved HOMAM 3 - and this made me google a bit and there is also an engine for it for Linux: https://github.com/vcmi/vcmi"
+        },
+        {
+          "by": "vunderba",
+          "text": "I know it'll sadly never happen under Ubisoft's watch, but I would absolutely kill for a new HoMM game that combined HoMM2's graphical aesthetic with the game mechanics from HoMM3."
+        },
+        {
+          "by": "malkia",
+          "text": "Btw, there is HOMM Olden Era (google it) and it's great!"
+        },
+        {
+          "by": "fullstackwife",
+          "text": "Each time I recreate an old game I quickly realize that the gameplay which entertained me as a child/teenager is rather unbearable for me as an adult. HoMM is this type of game."
+        }
+      ],
+      "image": "https://repository-images.githubusercontent.com/205404938/bc5eed00-069a-11eb-80e0-094a5698cab5"
+    },
+    {
+      "id": 50230917,
+      "url": "https://loeffelholz-codex.org/en/",
+      "hn": "https://news.ycombinator.com/item?id=50230917",
+      "title": "Tool book of a Nuremberg knight from 1505",
+      "time": 1792931874,
+      "points": 158,
+      "depth": [
+        {
+          "text": "someone is making a **page-by-page guide** to a knight’s old **book of tools**",
+          "tier": "simple"
+        },
+        {
+          "text": "Martin Löffelholz’s **154-page tool book** is being reviewed page by page; **128 pages** have been reviewed, while 26 are not yet. Project lead Dirk Schornstein says the **AI does groundwork**, and the site labels uncertain passages and presents interpretations as suggestions.",
+          "tier": "substance",
+          "data": [
+            [
+              "pages in the Codex",
+              "154"
+            ],
+            [
+              "pages reviewed",
+              "128"
+            ],
+            [
+              "pages not yet reviewed",
+              "26"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say AI images and writing make it less trustworthy; others welcome AI for work that used to be impractical.",
+      "comment_count": 78,
+      "terms": [
+        "Codex",
+        "LLM"
+      ],
+      "entities": [
+        "Löffelholz Codex",
+        "Martin Löffelholz",
+        "Dirk Schornstein"
+      ],
+      "comments": [
+        {
+          "by": "kornork",
+          "text": "Lots of comments about the general use of AI here, but in particular I think the AI renderings are counterproductive and especially misleading in this application. The original drawings have ambiguities in them; they are well done but perspective and scale are off, and there are lots of questions about particular details of the drawings. The AI drawings simply take these particular questionable…"
+        },
+        {
+          "by": "peri-cl",
+          "text": "https://loeffelholz-codex.org/en/codex/f076r.html Reading this in between studying information theory makes a good laugh. This is the most inefficient code I've ever heard of. It's basically unary. (For background, the first popular optical telegraph wasn't created until ~300 years later, and used 98 visually-distinct coding symbols). https://en.wikipedia.org/wiki/Chappe_telegraph#Coding_and_de..."
+        },
+        {
+          "by": "jacquesm",
+          "text": "The LLM aftertaste is terrible but the idea is very nice. If it's worth doing, why not do it well? This is a tiny book by book standards and writing this text would be a matter of a few weeks at most. And that way it would be much more valuable (and less off-putting)"
+        },
+        {
+          "by": "kreyenborgi",
+          "text": "Would be interesting, but the ai images and writing makes me trust it less."
+        },
+        {
+          "by": "Gabriel54",
+          "text": "I am very happy to see people make use of AI to do previously impractical work, but the quality of writing on this page sounds like a poorly written middle school research paper. > Not a diary, not a family chronicle - a tool book. > As reliable as it says on each page - no more and no less. > Pages without a special note have been editorially reviewed: carefully checked and corrected. This…"
+        }
+      ],
+      "image": "https://loeffelholz-codex.org/img/facsimile/social/f001r.jpg"
+    },
+    {
+      "id": 50232312,
+      "url": "https://bigwhalehunting.com/workforce/",
+      "hn": "https://news.ycombinator.com/item?id=50232312",
+      "title": "Show HN: I put employees inside S&P 500 market-cap bubbles",
+      "time": 1792940739,
+      "points": 157,
+      "depth": [
+        {
+          "text": "someone added **employee counts** to **S&P 500 bubbles**, making some of the biggest companies look **empty**",
+          "tier": "simple"
+        },
+        {
+          "text": "Each stick figure represents **10,000 employees**, and you can zoom in and explore individual companies. **Nvidia** is worth $5.2 trillion but employs 42,000 people, while **Accenture** employs 814,000 and is worth $146 billion.",
+          "tier": "substance",
+          "data": [
+            [
+              "Employees per stick figure",
+              "10,000 employees"
+            ],
+            [
+              "Nvidia market cap",
+              "$5.2 trillion"
+            ],
+            [
+              "Nvidia employees",
+              "42,000"
+            ],
+            [
+              "Nvidia market cap per employee",
+              "around $124 million"
+            ],
+            [
+              "Accenture employees",
+              "814,000"
+            ],
+            [
+              "Accenture market cap",
+              "$146 billion"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters prefer revenue or gross profit per employee; another praises including employee counts and per-employee value.",
+      "comment_count": 47,
+      "terms": [
+        "S&P 500",
+        "market cap",
+        "market cap per employee",
+        "franchise model",
+        "holding company",
+        "gross profit",
+        "LLM"
+      ],
+      "entities": [
+        "S&P 500",
+        "Nvidia",
+        "Accenture",
+        "Amazon",
+        "Walmart",
+        "Marriott",
+        "McDonalds",
+        "Berkshire Hathaway",
+        "Welltower",
+        "NetApp",
+        "Everpure",
+        "Qnity",
+        "Jabil",
+        "Alphabet",
+        "Meta",
+        "Tesla",
+        "Broadcom",
+        "Claude",
+        "Villanova University",
+        "Noah Barsky",
+        "One Day MBA",
+        "Karl Marx"
+      ],
+      "comments": [
+        {
+          "by": "paxy",
+          "text": "Number of employees isn't a straightforward calculation. - A lot of companies have part time, seasonal and contract workers (e.g. Amazon and Walmart). For some this even makes up the majority of their workforce. - Some companies operate on a franchise model, and corporate employees are very limited. For example the 414K employees listed for Marriott aren't directly employed by them. But then you…"
+        },
+        {
+          "by": "mehdizare",
+          "text": "Market cap per employee is mostly going to reflect whatever multiple the market pays in any given year. Gross profit per employee might be a better indication of what employees are producing."
+        },
+        {
+          "by": "RussianBot9580",
+          "text": "Definitely some strange inclusions and exclusions. \"Information technology\" has NetApp but not Everpure, even though they have the same market cap and are in the same space. Qnity and Jabil are included with half the market cap."
+        },
+        {
+          "by": "fhdkweig",
+          "text": "Curious why the comment by the poster got flagged but not the full post. I like when the poster includes a comment describing the content and reasons why he liked it."
+        },
+        {
+          "by": "bryzaguy",
+          "text": "I went straight to the link without reading the description and didn't notice the tiny people added to the center of the circles. Ironically, I was clicking each bubble to find that exact info. After reading the description and going back to notice the stick figures, I felt compassion towards companies where their circle was mostly stick people. I wonder if employees like working at those…"
+        }
+      ],
+      "image": null
+    },
+    {
       "id": 50230181,
       "url": "https://twitter.com/mike64_t/status/2114150399406202896",
       "hn": "https://news.ycombinator.com/item?id=50230181",
@@ -1193,6 +1691,38 @@
     }
   ],
   "glossary": {
+    "CNN": "Convolutional Neural Network: a model that scans nearby words in small groups to spot useful patterns.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "fine-tuned": "Adjusted with examples so it gets better at a particular task.",
+    "dermoscopic image": "A close-up image of skin taken through an illuminated magnifying lens.",
+    "biopsy": "A small piece of tissue is removed so it can be checked for disease.",
+    "histopathology": "Checking a piece of tissue under a microscope to identify disease.",
+    "benchmaxxing": "Focusing on doing well on tests, sometimes in ways that may not translate to useful real-world ability.",
+    "out-of-domain": "A task from a kind of data or setting the model was not trained on.",
+    "devroom": "A conference room or track for talks on a particular topic.",
+    "toolchain": "A set of tools used together to get a job done.",
+    "interoperability": "How well separate tools work together.",
+    "threat model": "A description of the risks and attackers a system is meant to handle.",
+    "fingerprinting": "Using clues from a device and browser to recognize them without relying on a saved cookie.",
+    "deep packet inspection": "A way of examining internet traffic closely to spot or block particular activity.",
+    "pluggable transports": "Ways to change how internet traffic looks so censorship systems have a harder time recognizing or blocking it.",
+    "mixnet": "A system that sends messages through multiple stops to make it harder to connect a sender with a recipient.",
+    "CFP": "Certified Financial Planner: a professional credential held by some people who advise others about money.",
+    "FOIA": "Freedom of Information Act: a US law that lets people ask government agencies for records.",
+    "public records request": "A request asking a government office to provide records it holds.",
+    "custodian": "A person or office whose records may need to be searched.",
+    "wholesale pricing": "A lower price for buying many copies at once instead of paying the one-at-a-time price.",
+    "decentralized model": "A setup where local groups help run and fund a program, rather than one central group doing it all.",
+    "game engine": "Software that runs a game's visuals and actions.",
+    "turn-based strategy": "A game where players take turns making moves and planning what to do next.",
+    "hot seat mode": "A way for several people to play on one computer, taking turns at it.",
+    "Codex": "A book made of bound pages, rather than a scroll.",
+    "S&P 500": "A group of 500 large US companies whose share prices are tracked together.",
+    "market cap": "The total market value of a company’s shares.",
+    "market cap per employee": "A company's market value divided by how many employees it has.",
+    "franchise model": "A setup where a company lets local owners run businesses using its name and way of doing things.",
+    "holding company": "A company that owns some or all of other companies.",
+    "gross profit": "The money a business has left from sales after paying the direct costs of making or buying what it sells.",
     "TensorFlow Lite": "A tool for running AI models on devices such as phones and TVs.",
     "INT8 quantization": "A way to shrink an AI model by storing its values as 8-bit numbers.",
     "AlexNet": "A type of AI model used to recognize things in images.",
