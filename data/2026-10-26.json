@@ -2,6 +2,897 @@
   "date": "2026-10-26",
   "cards": [
     {
+      "id": 50238088,
+      "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
+      "hn": "https://news.ycombinator.com/item?id=50238088",
+      "title": "IBM CEO says open weight models are now good and cheap on-prem",
+      "time": 1792979266,
+      "points": 339,
+      "depth": [
+        {
+          "text": "IBM says **open weight models** are **good enough and cheap enough** to run on-prem",
+          "tier": "simple"
+        },
+        {
+          "text": "On the Q3 earnings call, CEO Arvind Krishna said open weight models are **90 percent as effective** as frontier models, while using **anywhere from 25 percent to 10 percent of frontier models’ token cost**. He says they can handle routine tasks like summarizing email and examining contracts; IBM is seeing more interest in on-prem AI, though many businesses may struggle to get the infrastructure running.",
+          "tier": "substance",
+          "data": [
+            [
+              "effectiveness",
+              "90 percent"
+            ],
+            [
+              "token cost",
+              "25 percent to 10 percent"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: open-model fans say the models are cheap enough and keep work private; skeptics say hardware and electricity costs can make on-prem more expensive than cloud use.",
+      "comment_count": 243,
+      "terms": [
+        "open weight models",
+        "on-prem",
+        "frontier models",
+        "token",
+        "GPU",
+        "rack"
+      ],
+      "entities": [
+        "IBM",
+        "Arvind Krishna",
+        "Red Hat",
+        "VMware",
+        "IBM Z",
+        "Spyre",
+        "z17",
+        "Dell",
+        "HPE",
+        "Lenovo",
+        "SoftLayer"
+      ],
+      "comments": [
+        {
+          "by": "jacquesm",
+          "text": "It's absolutely true. I have three different setups here, a rig with 8 gpus that I use in either one of two modes (all 8, very heavy model or just one much lighter) and two DGX sparks. I haven't used a paid model in months. Sure, they use a few more tokens and the results may be slightly less good (but this doesn't really matter because I'm still in the loop so it is easy to correct). But the…"
+        },
+        {
+          "by": "Frannky",
+          "text": "You can try open models via OpenRouter and omp without having to buy or rent any GPU. I routinely try open models to see where they are. GLM 5.3 with DSFV4.1 as advisor via omp feels Opus 4.6 level, i.e. totally able to ship stuff. I do use Anthropic and OpenAI mostly because it costs me 1/40 and 1/50 of the api prices, which is way cheaper than Chinese subscriptions, but I’m ready to jump ship…"
+        },
+        {
+          "by": "throwaway270925",
+          "text": "This on the Front Page the same time as Anthropics S-1, fun times!"
+        },
+        {
+          "by": "andy_ppp",
+          "text": "I just can't believe the price of hardware these days, a 3090, a graphics card released in September 2020, can still be worth £1500 or more. Honestly everywhere is sold out below around £1800. Can you really trust them not to have been rinsed on eBay and have an extremely short usage - they are still around £1150 used there!"
+        },
+        {
+          "by": "jillesvangurp",
+          "text": "It's going to boil down to cost of the hardware vs. pay per use cloud models. I'm on the 100$/month chatgpt plan (~88euro). With all the resets, credits, and all the rest I typically don't run out of tokens. This is fine for me. I might go to the 200$/month plan at some point. In comparison, my highend mac book pro costs 105 euro per month (leasing cost). That's not quite enough to run the bigger…"
+        }
+      ],
+      "image": "https://image.theregister.com/4091853.jpg?imageId=4091853&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
+    },
+    {
+      "id": 50238708,
+      "url": "https://titleart.dvy.io/",
+      "hn": "https://news.ycombinator.com/item?id=50238708",
+      "title": "Show HN: TitleArt – Make text like it's 1997",
+      "time": 1792985037,
+      "points": 298,
+      "depth": [
+        {
+          "text": "someone recreated **WordArt** so you can make text look like it did in the **'90s**",
+          "tier": "simple"
+        },
+        {
+          "text": "The creator went through screenshots and tweaked the **built-in styles** by eye; one commenter called out the **hard shadows** in vector format.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 51,
+      "terms": [
+        "vector format",
+        "CJK fonts",
+        "CSS",
+        "SVG",
+        "dot-matrix printer",
+        "VM"
+      ],
+      "entities": [
+        "TitleArt",
+        "WordArt",
+        "Adobe Illustrator",
+        "Scott Forstall",
+        "Apple",
+        "Microsoft",
+        "BannerMania",
+        "Epson",
+        "Slack",
+        "CorelDRAW",
+        "Word 5",
+        "Word 97",
+        "CSS",
+        "SVG",
+        "Win95",
+        "Screen Beans",
+        "Claude",
+        "MakeWordArt"
+      ],
+      "comments": [
+        {
+          "by": "davidbarker",
+          "text": "I wanted to make a faithful recreation of the original WordArt so I went through the various screenshots I could find and tweaked the built-in styles by eye. It's pretty fun to play with, and I didn't realise it would take me back to sitting in the ICT computer rooms at my school in the late '90s. Enjoy! And please feel free to share anything you make with me — I'd love to see. (Contact details…"
+        },
+        {
+          "by": "Tommix11",
+          "text": "This app even can do proper hard shadows in vector format no less. Something Adobe Illustrator has failed to do (without bending over backwards) for thirtynine years!This will actually be useful to me!"
+        },
+        {
+          "by": "mixdup",
+          "text": "One of the weirdest bits of 90s tech trivia: Scott Forstall, who was in charge of software at Apple when the iPhone was initially developed, when working as an Intern at Microsoft contributed to the development of WordArt: https://en.wikipedia.org/wiki/Scott_Forstall#Present"
+        },
+        {
+          "by": "pronik",
+          "text": "Whenever someone complains about AI-generated images being everywhere, I try to remind people about WordArt and cliparts (especially the lightbulbs and the ones called \"screen beans\", never knew that name, thanks Claude for finding that particular tidbit) being absolutely everywhere back then. I consider our timeline vastly superior, but I understand how people may think differently and how…"
+        },
+        {
+          "by": "z3t4",
+          "text": "I think when people get tired of AI generated invitations they'll go back to this."
+        }
+      ],
+      "image": "https://titleart.dvy.io/social-preview.png"
+    },
+    {
+      "id": 50240922,
+      "url": "https://blocks.manifold3d.ch/",
+      "hn": "https://news.ycombinator.com/item?id=50240922",
+      "title": "Switzerland. Block by block. At 1:1 scale",
+      "time": 1793004369,
+      "points": 278,
+      "depth": [
+        {
+          "text": "someone turned **Switzerland’s open geodata** into a **Minecraft world**, with one metre per block",
+          "tier": "simple"
+        },
+        {
+          "text": "The **free Jungfrau-Aletsch area** lets you check whether it runs on your computer; the full world costs **15 CHF or more**. Buildings are simplified, and the creator warns that some spots can be **patchy, flat or wrong**.",
+          "tier": "substance",
+          "data": [
+            [
+              "full world price",
+              "15 CHF, or more"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: critics call the page LLM-written and question charging for it; supporters praise the use of government data and find the project exciting.",
+      "comment_count": 125,
+      "terms": [
+        "geodata",
+        "Cubic Chunks",
+        "mod",
+        "Early Access",
+        "LLM",
+        "voxel"
+      ],
+      "entities": [
+        "Beda Good",
+        "Minecraft",
+        "swisstopo",
+        "Manifold",
+        "Cubic Chunks",
+        "Prism Launcher",
+        "Copernicus"
+      ],
+      "comments": [
+        {
+          "by": "amiga386",
+          "text": "Denmark did this in 2014 and didn't need a pile of LLM puffery to do it: https://minecraftdanmark.dk/ https://geoboxers.com/denmark-in-minecraft/ > ‘Denmark in Minecraft’ was released in April 2014 by the Danish Geodata Agency. The project was conceived, developed and operated by Simon Lyngby Kokkendorff, Thorbjørn Kjærshøj Nielsen and Nynne Sole Dalå, the founders of GeoBoxers. > The work was…"
+        },
+        {
+          "by": "petterroea",
+          "text": "Recently I've gotten to a point where I am put off when a clearly vibe coded website asks for money. I have seen too many examples of people trying to earn money on apps they clearly vibe coded in an hour. Why would I pay for that - might as well make it and sideload it myself. I might even publish it for free to the app store to spite them. I really don't think you are in a position to be asking…"
+        },
+        {
+          "by": "netsharc",
+          "text": "This AI-written page seems to be typical of LLM: Sentences are 4 to 5 words long, and the reader have to fill in the details. Did someone make 1x1x1 wooden cubes and remade Switzerland? Oh no, the tiny tiny text above the gigantic title says \"Minecraft\". \"Exactly as tall and as steep\". How is a mountain that exists in a video game exactly as tall and steep as the real one? Then there's an…"
+        },
+        {
+          "by": "evrimoztamur",
+          "text": "It's not the most pleasant that you get the constructed buildings embedded into the map as crappy voxel approximations. Would be sweeter to have the terrain only. Also, total LLM goop."
+        },
+        {
+          "by": "abricq",
+          "text": "Nice ! I have a fun survival challenge: the swiss Via Alpina hike in Minecraft ! Quickly did the math. The real trail is ~390 km long, with 23,500 m of elevation gain and 14 Alpine passes. I found that Minecraft walking speed is 4.317 m/s (1 block = 1 m), so that's ~25 hours of continuous walking, or ~33 hours assuming 75% movement efficiency for terrain. That's one Alpine pass every ~2.4 hours…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50235780,
+      "url": "https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering.html",
+      "hn": "https://news.ycombinator.com/item?id=50235780",
+      "title": "The State of Context Engineering",
+      "time": 1792960351,
+      "points": 215,
+      "depth": [
+        {
+          "text": "someone explains why **AI agents** get stuck with too much context, and why **forgetting** can help",
+          "tier": "simple"
+        },
+        {
+          "text": "The talk names **four failure modes** for long context—poisoning, distraction, confusion and clash. It calls agents’ tendency to keep pursuing a subtask after they should stop **context inertia**; Anthropic’s fix is to clear the conversation while preserving the work.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say long contexts make models seem dumber and resets help; others say newer models need the extra context and don’t degrade much until much later.",
+      "comment_count": 55,
+      "terms": [
+        "context window",
+        "context inertia",
+        "context poisoning",
+        "harness",
+        "compaction",
+        "weights",
+        "RAG",
+        "deterministic",
+        "probabilistic",
+        "dependency length"
+      ],
+      "entities": [
+        "Anthropic"
+      ],
+      "comments": [
+        {
+          "by": "BenoitEssiambre",
+          "text": "It's nice that this article goes beyond the \"context too long\" scapegoat diagnostic. There is more to it than just reducing content in context. LLMs attention mechanism works by finding graphs of related words and concepts and it works best when the relevant relationships are close together in the text. Length matters but how well the information is organized matters as well. It's useful to be…"
+        },
+        {
+          "by": "infogulch",
+          "text": "I like the idea of VictorTaelin's UniiChat [1] which summarizes every message into a single line and on top of that a binary tree of lines combined from lower levels. The context is then a view of that tree with more detail in recent messages and less detail in historical messages, plus a `zoom` tool that enables the agent to navigate the tree and read messages. An implementation of this idea…"
+        },
+        {
+          "by": "rwoerz",
+          "text": "Very informative article but why this term coining? The phenomena and strategies aren't specific to LLMs but are well known from other areas of computer science (and psychology). For example, I would have called \"offloading\" just \"swapping\", and \"confusion\" just \"pollution\"."
+        },
+        {
+          "by": "cadamsdotcom",
+          "text": "> As we focus more on memory, we also need to think about strategic forgetting. Over time, overly precise memories become conflicted and messy, and nobody has yet figured out how to handle this. > I think that’s the context problem of tomorrow. This passage is explains why humans have imperfect memory. Seems the perfect memory we wish LLMs had impedes creativity and is maladaptive. Strategic…"
+        },
+        {
+          "by": "ethanj8011",
+          "text": "> For me, around 200,000 or 300,000 is where I start looking. I’ll check, see it’s at 250,000, and think: I’ve got a big job coming up. I’m going to reset and start fresh I don't find this to be true, at least with the newer models. I also find that the models fill up to 250k very quickly (presumably mostly by looking through the codebase). Without that context I find the models perform badly. I…"
+        }
+      ],
+      "image": "https://www.dbreunig.com/img/agnt_con/AGNT_Con.034.jpeg"
+    },
+    {
+      "id": 50228115,
+      "url": "https://github.com/notaroomba/keybytes",
+      "hn": "https://news.ycombinator.com/item?id=50228115",
+      "title": "Show HN: A Truly Modular Keyboard",
+      "time": 1792900076,
+      "points": 208,
+      "depth": [
+        {
+          "text": "someone is building a keyboard from **individual keys** you can **rearrange into different shapes**",
+          "tier": "simple"
+        },
+        {
+          "text": "Each key is its own **1u PCB**, with **pogo pins** on all four sides for power and I2C. Commenters are already asking whether communication feels snappy with a **full set of keys**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: fans call it a neat idea; skeptics say two keys are hardly a keyboard.",
+      "comment_count": 68,
+      "terms": [
+        "1u",
+        "PCB",
+        "pogo pins",
+        "I2C",
+        "firmware",
+        "microcontroller",
+        "POC"
+      ],
+      "entities": [
+        "GitHub",
+        "keybytes",
+        "Keybit",
+        "Keyword",
+        "CH32V003",
+        "STM32WB55RGV6",
+        "KiCad",
+        "Onshape",
+        "NotARoomba"
+      ],
+      "comments": [
+        {
+          "by": "NotARoomba",
+          "text": "A while back I was frustrated when wanting to buy a keyboard that there were no triangle-shaped keyboards or circle-shaped keyboards. This lack of peculiar keyboard shapes gave me the idea to make a keyboard that could be reconfigurable into any shape my heart desired. I’m still working on the firmware and making more keys but I wanted to share my progress so far. Heres the source if anyone’s…"
+        },
+        {
+          "by": "Agentlien",
+          "text": "I like the idea but I could only find an image of two keys. It would be great to see a demo of a full layout. With only two keys it's a very early POC and hardly a keyboard. Does communication work well and feel snappy with a full set of keys? How is the structural integrity of a full one? Can it be easily moved around? That type of questions could easily make this unusable at scale."
+        },
+        {
+          "by": "nkrisc",
+          "text": "With such complexity per key, are there other advantages besides the modularity? Are there per key customizations this could enable that regular keyboards couldn’t do in firmware alone?"
+        },
+        {
+          "by": "wcchoi",
+          "text": "Something similar: https://youtu.be/_u8gV643214 The keys are attached to a board so it can be in any orientation"
+        },
+        {
+          "by": "euroderf",
+          "text": "OT but I'd like to see circuits of this type, on this scale, available for every loco or car (or building or structure) in a model railroad. An interface to DCC. Every car addressable and effects controllable. Much more cheaply than the current SOTA."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/612c23d064bd8284979af346e24405eb867041bc3fc5c36a12a421cbc54abe9e/notaroomba/keybytes"
+    },
+    {
+      "id": 50215997,
+      "url": "https://www.bbc.com/future/article/20261019-birdwatching-rewires-the-brain-and-slows-cognitive-decline",
+      "hn": "https://news.ycombinator.com/item?id=50215997",
+      "title": "Birdwatching rewires the brain and slows cognitive decline",
+      "time": 1792793095,
+      "points": 190,
+      "depth": [
+        {
+          "text": "**birdwatching** may help keep the **brain organised** and slow **age-related decline**",
+          "tier": "simple"
+        },
+        {
+          "text": "Erik Wing compared **MRI scans** from expert birders and novices while they identified birds. Some regions in experts’ brains were **more organised** than in novices of the same age. The study **can’t tell** whether birdwatching caused those differences or the differences came first.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some suspect birdwatching’s learning and curiosity matter; others think nature, walking, socialising or any stimulating hobby could explain the benefits.",
+      "comment_count": 70,
+      "terms": [
+        "MRI",
+        "neuroplasticity",
+        "cognitive decline",
+        "confounding factor"
+      ],
+      "entities": [
+        "BBC",
+        "Age UK",
+        "Erik Wing",
+        "Baycrest Academy for Research and Education",
+        "Jenny Budinger",
+        "Elisabeth Kals",
+        "Catholic University of Eichstätt-Ingolstadt",
+        "Bird Tales",
+        "University of Montana"
+      ],
+      "comments": [
+        {
+          "by": "FinnLobsien",
+          "text": "I believe that we'll see a lot of \"x is good for your brain\" news (with X just being any activity that doesn't involve a screen), now that attention spans are so short and everyone feels like their brain isn't the same anymore. The same way we got gyms when people realized physical inactivity is super unhealthy."
+        },
+        {
+          "by": "tomaytotomato",
+          "text": "Just a bit of anecdata (observer bias). A lot of, \"birdwatchers\" I see travelling to remote parts of Scotland and other places in the UK are generally wealthy retirees, with nice kit (Rab clothing, telephoto lenses, VW campervans). Cognitive decline is shown to impact disproportionately on less wealthy people. So is there a trend with economic wealth and outdoor hobbies like birdwatching? I'd…"
+        },
+        {
+          "by": "onemoresoop",
+          "text": "Many hobbies do that for you. It’s important to engage with something that you like and use your brain. Also, part of the equation is to keep on moving. If you take daily walks and engage in a desk bound hobby it’ll likely provide similar benefits discussed here."
+        },
+        {
+          "by": "grendelt",
+          "text": "I'm into ham radio which, as a hobby, skews to an older demographic. Does just having a stimulating hobby actually slow decline?\nMost of the fun of ham radio is learning - it never stops, there's always something else to discover. I'd guess that it's the learning, searching, and connections you make that provide the benefits. Unless being in nature is a requirement, but then you have plenty of…"
+        },
+        {
+          "by": "bob778",
+          "text": "If you haven’t seen it, Listers ( https://www.youtube.com/watch?v=zl-wAqplQAo ) provides a great glimpse into what competitive birdwatching looks like. It’s nothing like casual birdwatching."
+        }
+      ],
+      "image": "https://ychef.files.bbci.co.uk/624x351/p0pj6qr2.jpg"
+    },
+    {
+      "id": 50238739,
+      "url": "https://github.com/KrushnaVardhanReddy/PaperPilot",
+      "hn": "https://news.ycombinator.com/item?id=50238739",
+      "title": "PaperPilot – Zero-Cloud, Pure-Rust PDF Engine with WASM and MCP",
+      "time": 1792985345,
+      "points": 187,
+      "depth": [
+        {
+          "text": "someone built a **local PDF toolkit** that lets coding agents **merge, split, OCR, and compress** files",
+          "tier": "simple"
+        },
+        {
+          "text": "The **same Rust core** powers a command-line tool, MCP server, REST gateway, desktop app, and browser version; browser files stay in memory and are **not uploaded**. It can also extract text and scan for PII.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say developers should contribute to existing Rust PDF projects instead of rebuilding them; others like PaperPilot’s privacy focus or point to other local and browser-based PDF tools.",
+      "comment_count": 67,
+      "terms": [
+        "MCP",
+        "REST",
+        "OCR",
+        "PII",
+        "WASM",
+        "Rust"
+      ],
+      "entities": [
+        "PaperPilot",
+        "Rust",
+        "MCP",
+        "REST",
+        "WASM",
+        "OCR"
+      ],
+      "comments": [
+        {
+          "by": "fschuett",
+          "text": "Why do people try to vibecode PDF engines that already exist in Rust? https://github.com/yfedoseev/pdf_oxide which this project builds on completely misses https://github.com/fschutt/printpdf which was already developed with tons of fixes over years (both with and without AI). MIT license and also builds on WASM with a demo running on https://fschutt.github.io/printpdf/ One Google search (yeah…"
+        },
+        {
+          "by": "Surac",
+          "text": "I use mostly typst for pdf generating today i have written different frontends and connectors to transform everything into typ files and templates. I eben use it with sphinx as a backend"
+        },
+        {
+          "by": "pinyencheng",
+          "text": "RUST PDF engine have already exist for months. People should stop building wheels. People should contribute to great projects that already exists. Submit PR instead of making another again."
+        },
+        {
+          "by": "alwinaugustin",
+          "text": "I too have created a set of tools which runs in local. Can use it here https://toolbit.app/ and the repo is at https://github.com/alwin-augustin/toolbit . Working on the desktop apps. The mac silicon app is ready and working."
+        },
+        {
+          "by": "Latitude7973",
+          "text": "I'd like to point out Bento PDF: https://www.bentopdf.com/ It runs in the browser, is private and no-fuss. You can also host it locally if you like."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/9c95dc09e1a912a1b2f5235291e10e92725e6f8bf29025f3b3007b7a6056e18d/KrushnaVardhanReddy/PaperPilot"
+    },
+    {
+      "id": 50242939,
+      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+      "hn": "https://news.ycombinator.com/item?id=50242939",
+      "title": "Anthropic S-1",
+      "time": 1793019890,
+      "points": 228,
+      "depth": [
+        {
+          "text": "people are arguing over **Anthropic's finances**, from huge commitments to whether **AI demand** will last",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter lists **$114b committed to Google**, $110b to AWS, $161b to Broadcom, and $120b to SpaceX, and says revenue could grow from $50b to **$500b** if demand holds. Others point to **open-weight models** as pricing pressure and say the net-loss line rose from $1.42 to $40 per share.",
+          "tier": "substance",
+          "data": [
+            [
+              "Google commitment (commenter claim)",
+              "$114b"
+            ],
+            [
+              "AWS commitment (commenter claim)",
+              "$110b"
+            ],
+            [
+              "Broadcom commitment (commenter claim)",
+              "$161b"
+            ],
+            [
+              "SpaceX commitment (commenter claim)",
+              "$120b"
+            ],
+            [
+              "Revenue scenario (commenter claim)",
+              "$50b to $500b"
+            ],
+            [
+              "Net loss per share (commenter claim)",
+              "$1.42 to $40 per share"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: optimists say demand and compute returns could justify Anthropic's big commitments; skeptics point to open-weight competition, losses, and AI-boom risk.",
+      "comment_count": 158,
+      "terms": [
+        "S-1",
+        "open-weight models",
+        "compute",
+        "net loss",
+        "operating profit",
+        "stock-based compensation",
+        "IPO"
+      ],
+      "entities": [
+        "Anthropic",
+        "Google",
+        "AWS",
+        "Broadcom",
+        "SpaceX",
+        "Claude",
+        "OpenAI",
+        "Microsoft",
+        "Adobe",
+        "OpenRouter",
+        "Taiwan Semiconductor Manufacturing Company"
+      ],
+      "comments": [
+        {
+          "by": "trjordan",
+          "text": "Everything comes back to whether the demand is really there. Anthropic thinks it is. The got the demand / datacenter match right in Q2, got great margins, and committed hard. They've got: - $114b committed to Google - $110b committed to AWS - $161b committed to Broadcom - $120b committed to SpaceX If the party continues, they'll go from $50b in revenue to $500b and be fine. But if they don't…"
+        },
+        {
+          "by": "hn_submit",
+          "text": "This entire A.I. hype is going to get many people burned, especially those whom are investing for their pensions. And everyone is playing along. It seems to me half the internet is filled with false recommendations and overly optimistic outcomes of their software projects. And even if the claims are true what use will we have for hundreds of Microsoft Office clones? This A.I. boom might benefit…"
+        },
+        {
+          "by": "jialatsia",
+          "text": "Ant generates $2.08 in revenue for every $1 spent on compute which is up from just $0.40 in Q1 2025.the payback period for compute is just insane, likely less than a year!"
+        },
+        {
+          "by": "rich_sasha",
+          "text": "One thing that bothers me is that if the AI maximalism turns out correct (which is needed to justify the valuations), why would AI companies respect money and ownership? So far, even major disruptions were still affecting relatively small segments of the economy. Car lobby in Germany, tech in the US, \"Big Pharma/Food/etc”. They needed the rest of the economy. But if some AI company figures out a…"
+        },
+        {
+          "by": "npilk",
+          "text": "So at the moment they claim to be making an operating profit if you exclude: - Stock-based compensation expenses - Non-cash charitable contribution expenses Both seem fairly reasonable to exclude (although you can't pay people with stock forever). Most of the loss is non-operating losses, and it all seems to be weird accounting recognition of changes in value of their stock, SAFEs, etc. - just…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50237712,
+      "url": "https://korindiehacker.bloffy.blog/en/removing-nextjs-got-my-blog-to-100-on-every-lighthouse-category",
+      "hn": "https://news.ycombinator.com/item?id=50237712",
+      "title": "Removing Next.js Got My Blog to 100 on Every Lighthouse Category",
+      "time": 1792976619,
+      "points": 172,
+      "depth": [
+        {
+          "text": "someone removed a framework from their blog and got **100s** across every **Lighthouse category**",
+          "tier": "simple"
+        },
+        {
+          "text": "After switching to **Hono**, the page had **no JavaScript**; unused code fell to 407 bytes and build time dropped about 40%. The **test site** still showed 69 for SEO because it deliberately blocks search indexing.",
+          "tier": "substance",
+          "data": [
+            [
+              "Lighthouse categories",
+              "100"
+            ],
+            [
+              "SEO score on test site",
+              "69"
+            ],
+            [
+              "Unused code after switch",
+              "407 bytes"
+            ],
+            [
+              "Build time change",
+              "about 40%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say a static blog never needed Next.js; others say Next.js can still score 100 when used carefully.",
+      "comment_count": 106,
+      "terms": [
+        "Lighthouse",
+        "framework",
+        "static site",
+        "CDN",
+        "ISR",
+        "hydration",
+        "server components",
+        "SEO"
+      ],
+      "entities": [
+        "Next.js",
+        "Hono",
+        "Lighthouse",
+        "Bloffy",
+        "Cloudflare",
+        "Vercel",
+        "AWS Lambda",
+        "S3",
+        "CloudFront",
+        "Bear Blog",
+        "Medium",
+        "Blogger",
+        "Ghost",
+        "WordPress",
+        "Hugo",
+        "AdSense",
+        "React",
+        "SvelteKit",
+        "GitHub Pages",
+        "Gulp",
+        "nginx",
+        "Astro",
+        "DevTools",
+        "pagespeed.web.dev",
+        "Markdown",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "JSX",
+        "PHP"
+      ],
+      "comments": [
+        {
+          "by": "pigbearpig",
+          "text": "Respectfully, I don't understand this. They never needed Next.js for a static blog. This is like writing a post about how I didn't need a Ferrari to commute to work and I saved money by taking the bus."
+        },
+        {
+          "by": "pampas",
+          "text": "My home is much easier to heat now I've moved from an aircraft hanger into a cottage."
+        },
+        {
+          "by": "ogou",
+          "text": "The vast majority of websites don't need Next.js or React. Those are only useful if you need dynamic and modular updates within the structure, or state management. We've defaulted to React because of the name recognition and simple intertia. It's not a good framework for websites in general."
+        },
+        {
+          "by": "graemep",
+          "text": "> Hugo is the best of the bunch, but in the end, setting it up is still a hassle. Then chooses an approach that looks like a lot more work than setting up Hugo."
+        },
+        {
+          "by": "ActionHank",
+          "text": "Gotta be honest, I think the no man’s land that nextjs occupies is more of a niche than most people realise."
+        }
+      ],
+      "image": "https://cdn.bloffy.blog/korindiehacker/articles/469/1792976193085-aneuvk"
+    },
+    {
+      "id": 50238763,
+      "url": "https://exhibits.stanford.edu/menuez/browse/next-computer-inc?per_page=96&sort=pub_year_isi+asc%2C+title_sort+asc&view=masonry",
+      "hn": "https://news.ycombinator.com/item?id=50238763",
+      "title": "Behind the scenes at the NeXT Computer office",
+      "time": 1792985471,
+      "points": 170,
+      "depth": [
+        {
+          "text": "someone shared **photos from the NeXT Computer office**, stirring **nostalgia** for the people and workspaces",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter sees a **“work hard play hard” environment** and another praises **NeXTSTEP’s distinctive interface**. A third recalls Jobs as a terrible CEO in NeXT’s initial phases.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 91,
+      "terms": [
+        "NeXTSTEP"
+      ],
+      "entities": [
+        "NeXT Computer",
+        "NeXTSTEP",
+        "Steve Jobs",
+        "Tim Berners Lee",
+        "Frog"
+      ],
+      "comments": [
+        {
+          "by": "rogerrogerr",
+          "text": "I'm 27. Posts like this fill me with a weird kind of... melancholy? Sadness? A feeling of having missed out? At some level I know I'm seeing these pictures through rose-colored glasses, and these early-ish tech folks had plenty of gripes about office life. But man, I came into the workforce just in time for the idea of \"working with people in person\" to die. And I like working from home, but…"
+        },
+        {
+          "by": "felixding",
+          "text": "I've always liked NeXTSTEP's distinctive user interface. I wish we had a version that ran on modern hardware, similar to what https://github.com/trunkmaster/nextspace is trying to achieve. Also, Steve Jobs in Exile, the most recent book about NeXT, is highly recommended."
+        },
+        {
+          "by": "mvkel",
+          "text": "> By 1991 only 50,000 NeXTcubes had been sold. One of these, however, was used by Tim Berners Lee to create the first web browser and server. Is it even possible to overstate the impact that Jobs has had on the world?"
+        },
+        {
+          "by": "wappieslurkz",
+          "text": "Fascinating.\nThough IMO it's a bit of a pity so many of these kind of historical picture series are in black & white, while color photography was largely available and affordable from the 60's onwards."
+        },
+        {
+          "by": "TheAmazingRace",
+          "text": "Because I was born right around the time the first NeXT Computer was announced in late ‘88, I wasn’t cognizant of the rise and fall of the NeXT platform, but I did come to appreciate the projects that were based on it, like the early WWW. As a matter of fact, the first time I even heard of NeXT was a decade later in around ‘98, when PC Magazine or Computer Shopper (I can’t remember exactly which…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50235738,
+      "url": "https://www.disneyanimation.com/process/",
+      "hn": "https://news.ycombinator.com/item?id=50235738",
+      "title": "What goes into making an animated film?",
+      "time": 1792960029,
+      "points": 163,
+      "depth": [
+        {
+          "text": "someone shows how a studio makes an **animated film**, from **story ideas** to **final frames**",
+          "tier": "simple"
+        },
+        {
+          "text": "Films are made of **sequences**, each containing shots; Zootopia 2 had 41 sequences. Making a film takes an average of **three to five years**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Zootopia 2 sequences",
+              "41"
+            ],
+            [
+              "film creation time",
+              "three to five years"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 70,
+      "terms": [
+        "sequence",
+        "shot",
+        "frame",
+        "stereo 3D",
+        "pipeline",
+        "rig"
+      ],
+      "entities": [
+        "Zootopia 2",
+        "Hot Pursuit",
+        "Walt Disney Animation Studios",
+        "Walt Disney Animation Research Library",
+        "The Walt Disney Company",
+        "Disney"
+      ],
+      "comments": [
+        {
+          "by": "nickjj",
+          "text": "I remember seeing a Pixar documentary a really long time ago where someone talked about attention to detail. The designers would fully texture out the inside of a dresser draw that will never be shown in the film. The idea was imagine how much attention to detail and time is spent on the things that will be seen. Pure craftsmanship."
+        },
+        {
+          "by": "waltbosz",
+          "text": "Is there a way to see the old versions of this page? I really liked the one they did for Encanto. The frame by frame sequence in that one was particularly fun. That reminds me of a time time. I was visiting a children's museum and they had a exhibit piece where you could use a physical flywheel spinner controller to scrub back and forth in a video. I don't know if that's the standard physical…"
+        },
+        {
+          "by": "Animats",
+          "text": "Now go watch \"Kono Express\". Disney laid off an animator from the Star Wars factory, and he's cranking out stuff about as good as Disney Animation all by himself. With Unreal Engine and AI tools, of course. It's been a long time since there was an ink and paint department."
+        },
+        {
+          "by": "pluc",
+          "text": "We had an animator do an AMA a few days ago that didn't quite catch on: https://news.ycombinator.com/item?id=50187389"
+        },
+        {
+          "by": "proc0",
+          "text": "How much of this is AI automating? That drawing of the car design, the storyboarding... isn't generative AI aiming to do away with most of it? I've been seeing some of the lengthier AI films on X (i.e. the one about badgers vs. rats that looks like Lord of the Rings), and there is certainly a lot of work put into them. However the type of work that goes into them is substantially different than…"
+        }
+      ],
+      "image": "https://cdn.disneyanimation.com/uploads/pages/filmmaking-process-zootopia-2/zoot2processshare.jpg"
+    },
+    {
+      "id": 50231166,
+      "url": "https://www.dreamhoststatus.com/",
+      "hn": "https://news.ycombinator.com/item?id=50231166",
+      "title": "Active incident at Dreamhost forcing password reset",
+      "time": 1792933756,
+      "points": 163,
+      "depth": [
+        {
+          "text": "DreamHost has **reset some users’ passwords**, but its **File Manager** is still offline",
+          "tier": "simple"
+        },
+        {
+          "text": "The reset for affected **email and FTP users** is complete, but account owners can set new passwords in the control panel. New passwords may take up to **15 minutes** to work, and the **File Manager** remains unavailable.",
+          "tier": "substance",
+          "data": [
+            [
+              "password change delay",
+              "up to 15 minutes"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 63,
+      "terms": [
+        "FTP",
+        "webmail"
+      ],
+      "entities": [
+        "DreamHost",
+        "Monsta FTP",
+        "Outlook",
+        "Apple Mail"
+      ],
+      "comments": [
+        {
+          "by": "duskwuff",
+          "text": "Reading the tea leaves: given that the outage started with \"connectivity issues affecting the File Manager\", which was an install of Monsta FTP [1] - a commercial PHP application - I suspect the file manager got popped by one of the recently published PHP vulnerabilities, and users' FTP credentials may have been exfiltrated. [1]: https://www.monstaftp.com/"
+        },
+        {
+          "by": "joshstrange",
+          "text": "I got the email about this and realized I’ve been using them for just shy of 20 years. It was one of the original places I hosted things and where I hosted projects for other people. I haven’t actively used it years but migrating the last few things off has never been a priority. This might be the push I need to re-evaluate everything hosted there and shut down or migrate it all."
+        },
+        {
+          "by": "paulbjensen",
+          "text": "Dreamhost - gosh that brings back memories…"
+        },
+        {
+          "by": "xmddmx",
+          "text": "Super displeased with DreamHost's handling of this. I have multiple master accounts. One of them got the email around 12pm today (over 48 hours after the incident started) saying... \"As a precaution, we have expired the passwords for some email and FTP/SFTP users on your DreamHost account. Their old passwords no longer work, and no new password has been set.\" But none of those email passwords…"
+        },
+        {
+          "by": "hmokiguess",
+          "text": "I migrated all my stuff from dreamhost about 5 years ago, got this email today and felt validated from having made that decision."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50229861,
+      "url": "https://www.blast-info.fr/articles/2026/information-exclusive-blast-le-premier-ministre-a-prepare-la-coupure-des-reseaux-sociaux-pour-le-24-octobre-9D8cgrU5S5iiW14Sb9nMzQ",
+      "hn": "https://news.ycombinator.com/item?id=50229861",
+      "title": "France asked ISPs to prepare temporary DNS blocks for major social platforms",
+      "time": 1792922209,
+      "points": 152,
+      "depth": [
+        {
+          "text": "France asked Orange, SFR, Free and Bouygues Telecom to prepare **cutting access** to **social platforms**",
+          "tier": "simple"
+        },
+        {
+          "text": "The request came **two days before the October 24 demonstration** and named TikTok, Instagram, Snapchat and X; operators **expressed doubts**. The Hacker News title calls these **DNS blocks**, but the article says providers were asked to be ready to cut access. It says the government had used the measure in New Caledonia in 2024 before the Conseil d’État overturned it.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "One commenter says social media broadcasting creates a noise problem that other media handle through licensing; others see blocks as censorship and an attack on liberties.",
+      "comment_count": 188,
+      "terms": [
+        "DNS",
+        "ISP",
+        "VPN",
+        "DoH",
+        "DoT"
+      ],
+      "entities": [
+        "Sébastien Lecornu",
+        "Orange",
+        "SFR",
+        "Free",
+        "Bouygues Telecom",
+        "TikTok",
+        "Instagram",
+        "Snapchat",
+        "X",
+        "Conseil d’État",
+        "Blast",
+        "Claude Shannon",
+        "BlackBerry"
+      ],
+      "comments": [
+        {
+          "by": "elashri",
+          "text": "As someone who lived the first Internet block due to protests with similar demands. This feels refreshing and prove that regimes response to wide spread protests they don’t like is not that different. But please don’t call it European spring."
+        },
+        {
+          "by": "sjdh76",
+          "text": "Social media permits Broadcasting for Free. One to All messaging. For all other media - radio, satellite, tv, phones broadcasting requires licenses. Why? Cuz Claude Shannon told us if everyone broadcasts on the same frequency noise increases and no one hears anything forcing them into broadcasting at higher and higher power or repeating their messages more and more. Which again increases noise…"
+        },
+        {
+          "by": "nomilk",
+          "text": "Why not just allow genuinely peaceful protests and take stern police/legal action against all other forms of protest? I don't understand the logic behind cutting access to communications platforms. Seems like an indirect or roundabout way of solving the problem."
+        },
+        {
+          "by": "gloosx",
+          "text": "DNS block is really the most lazy and easily bypassable type of block you can imagine. It is like blocking something with a gate which you can open by reaching a latch on the other side with your hand Only the freaking politician can attempt to block something via DNS ;)"
+        },
+        {
+          "by": "pjc50",
+          "text": "During the 2011 London riots, there were proposals to ban Blackberry."
+        }
+      ],
+      "image": "https://static.blast-info.fr/stories/2026/open_graph-information-exclusive-blast-le-premier-ministre-a-prepare-la-coupure-des-reseaux-sociaux-pour-le-24-octobre-9D8cgrU5S5iiW14Sb9nMzQ.jpg"
+    },
+    {
       "id": 50236081,
       "url": "https://www.reuters.com/world/europe/serbia-votes-students-seek-unseat-vucic-snap-election-2026-10-25/",
       "hn": "https://news.ycombinator.com/item?id=50236081",
@@ -541,18 +1432,89 @@
     }
   ],
   "glossary": {
-    "run-off election": "An extra election round where voters choose between candidates after an earlier round leaves no winner.",
+    "open weight models": "AI models whose internal settings are shared so others can run or change them.",
+    "on-prem": "Software that runs on a company's own computers rather than being accessed as an online service.",
+    "frontier models": "The most capable AI models a company is developing.",
+    "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
+    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "rack": "A frame that holds servers and other computer equipment together.",
+    "vector format": "A way to make images from shapes so they stay sharp when resized.",
+    "CJK fonts": "Chinese, Japanese, and Korean fonts: typefaces that include characters used to write those languages.",
+    "CSS": "Cascading Style Sheets: rules that control how a web page looks.",
+    "SVG": "Scalable Vector Graphics: a picture format that stays sharp when resized.",
+    "dot-matrix printer": "A printer that makes letters and pictures by striking an ink ribbon with tiny pins.",
+    "VM": "Virtual machine: a computer that runs inside another computer.",
+    "geodata": "Information about real places, like their height, water, roads and forests.",
+    "Cubic Chunks": "A Minecraft add-on that lets the game build places beyond its usual height limit.",
+    "mod": "A way to keep only the remainder after dividing one number by another.",
+    "Early Access": "A version people can play while its maker is still working on it.",
     "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "voxel": "A small block used to build a 3D image, like a pixel with depth.",
+    "context window": "The amount of text and information an AI can take into account at one time.",
+    "context inertia": "When an AI gets fixated on an idea or task and keeps pursuing it after it should stop.",
+    "context poisoning": "Bad or irrelevant information gets into an AI’s working conversation and steers its answer.",
+    "harness": "The surrounding code that gives an AI agent tools and a place to work, and checks what it does.",
+    "compaction": "Shortening an AI’s conversation history, often by turning it into a summary.",
+    "weights": "Stored values a trained network uses when it works out what to produce.",
+    "RAG": "Retrieval-Augmented Generation: a way for an AI to look up material and use it when answering.",
+    "deterministic": "Something that gives the same result when it gets the same input.",
+    "probabilistic": "Able to give different results because chance is involved.",
+    "dependency length": "How far apart words that belong together are in a sentence; shorter gaps can make the meaning easier to follow.",
+    "1u": "A keyboard-size unit; the project says its 1u boards are 19.05 mm square.",
+    "PCB": "Printed Circuit Board: a flat board that holds electronic parts and connects them with metal paths.",
+    "pogo pins": "Spring-loaded metal contacts that touch another part to make an electrical connection.",
+    "I2C": "Inter-Integrated Circuit: a way for electronic parts to exchange messages using shared wires.",
+    "firmware": "The built-in software that tells a device's hardware how to work.",
+    "microcontroller": "A tiny computer inside a device that tells the device what to do.",
+    "POC": "Proof of Concept: a small test or demo that checks whether an idea can work.",
+    "MRI": "Magnetic resonance imaging: a scan that uses magnets to make pictures of the inside of the body.",
+    "neuroplasticity": "The brain’s ability to change how it works and is organised over time.",
+    "cognitive decline": "A worsening ability to remember, think clearly or follow a conversation.",
+    "confounding factor": "Something else that may explain a result, making it hard to know what caused it.",
+    "MCP": "Model Context Protocol: a standard way for AI apps to connect to outside tools.",
+    "REST": "A common way for one app to send requests to another app over a network.",
+    "OCR": "Optical character recognition: software that reads words from a picture or scanned page.",
+    "PII": "Personally Identifiable Information: details that could identify someone, such as an email or phone number.",
+    "WASM": "WebAssembly: a way for an app to run plug-ins written in other programming languages.",
+    "Rust": "A programming language; commenters say 37signals used it for the Hey backend.",
+    "S-1": "A filing that gives investors details about a company's finances and share offering before an IPO.",
+    "open-weight models": "AI models whose learned settings are made available for others to use or change.",
+    "compute": "The processing power computers use to run AI or other software.",
+    "net loss": "When a company spends more than it earns over a reporting period.",
+    "operating profit": "Money left from a company's main business after its operating costs are paid.",
+    "stock-based compensation": "Paying workers partly with shares in the company instead of cash.",
+    "IPO": "Initial Public Offering: when a company first offers its shares for the public to buy.",
+    "Lighthouse": "A tool that checks a web page’s speed and other quality measures.",
+    "framework": "A collection of ready-made parts and rules that helps people build software.",
+    "static site": "A website made of ready-to-serve pages, rather than pages generated anew for each visit.",
+    "CDN": "Content Delivery Network: A network of servers that helps websites handle requests closer to their users.",
+    "ISR": "Incremental Static Regeneration: a way to refresh already-built pages after a site is published.",
+    "hydration": "JavaScript adding the behavior that makes a page’s controls work after its HTML loads.",
+    "server components": "Parts of a website that run on the site’s server instead of in a visitor’s browser.",
+    "SEO": "Search engine optimization: making changes to a webpage so it is more likely to appear in search results.",
+    "NeXTSTEP": "The main software that ran NeXT computers and gave people the screens and tools they used.",
+    "sequence": "A section of a film made up of several shots.",
+    "shot": "A stretch of a film made with one camera setup.",
+    "frame": "One still picture in a film; shown quickly with others, it looks like movement.",
+    "stereo 3D": "A way to show different images to the left and right eyes so the picture looks deep.",
+    "pipeline": "A series of steps where each step works on data and passes it to the next.",
+    "rig": "A setup that lets animators move a digital character.",
+    "FTP": "File Transfer Protocol: a way to move files between your computer and a server.",
+    "webmail": "Email you use through a website instead of an app on your device.",
+    "DNS": "Domain Name System: the internet's address book, which helps a computer find a website from its name.",
+    "ISP": "Internet Service Provider: a company that connects people to the internet.",
+    "VPN": "Virtual private network: a service that sends your internet traffic through another computer, often to protect it or make it appear to come from somewhere else.",
+    "DoH": "DNS over HTTPS: a way to send website-name lookups through a protected web connection.",
+    "DoT": "DNS over TLS: a way to protect website-name lookups as they travel over the internet.",
+    "run-off election": "An extra election round where voters choose between candidates after an earlier round leaves no winner.",
     "open-weight model": "A model whose trained settings are shared so other people can use them.",
     "inference provider": "A service that runs an AI model and sends its replies to an app.",
     "cache read": "Reusing saved text from earlier in a conversation instead of processing it all over again.",
-    "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
     "grading on completion": "A teacher checks whether you turned the work in, rather than whether every answer is right.",
     "AI agents": "Computer programs that can carry out tasks, rather than only answer a question.",
     "git worktree": "A separate working copy of a project, so you can work on another task without mixing up files.",
     "living specs": "Project notes that describe what the software is meant to do and are updated as it changes.",
     "CLI": "Command-Line Interface: a way to control a computer by typing commands instead of clicking buttons.",
-    "MCP": "Model Context Protocol: a standard way for AI apps to connect to outside tools.",
     "pi": "The coding agent ThinkRail runs to work on code.",
     "mRNA": "Messenger RNA: instructions that cells can use to make proteins.",
     "melanoma": "A type of skin cancer.",
