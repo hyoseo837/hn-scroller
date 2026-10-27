@@ -2,6 +2,267 @@
   "date": "2026-10-27",
   "cards": [
     {
+      "id": 50255298,
+      "url": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+      "hn": "https://news.ycombinator.com/item?id=50255298",
+      "title": "The Mythical Man-Month in the Age of AI",
+      "time": 1793082337,
+      "points": 234,
+      "depth": [
+        {
+          "text": "someone says **AI agents** can make a project go **wrong faster** with unclear requirements",
+          "tier": "simple"
+        },
+        {
+          "text": "The author says **oversight remains**: someone must define “done,” review code, catch hallucinations and coordinate the pieces. Commenters split over whether that leaves Brooks’s Law intact, or whether **cheap parallel attempts** and agent setups make it less relevant.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say agents still face Brooks’s coordination and sequencing limits; others say cheap parallel attempts or better agent setups can sidestep them.",
+      "comment_count": 159,
+      "terms": [
+        "Brooks’s Law",
+        "LLMs",
+        "AI agent",
+        "orchestration",
+        "codebase",
+        "hallucination"
+      ],
+      "entities": [
+        "Jan van den Berg",
+        "Frederick P. Brooks Jr.",
+        "IBM",
+        "OS/360",
+        "The Mythical Man-Month",
+        "Brooks’s Law",
+        "Ondřej Surý",
+        "Claude Code",
+        "OpenAI",
+        "Opus 4.5",
+        "Codex",
+        "Claude",
+        "Elon Musk"
+      ],
+      "comments": [
+        {
+          "by": "freefaler",
+          "text": "I have an interesting observation from the programmers on my team. The good ones are increasingly producing good solution much faster than before. The not so good ones, are doing the same bullshit they did before, but now the don't even bother to check it. For example one requirement to \"not implement it in the frontend\" led to 3 times PR rejected, because it still has been implemented (even if…"
+        },
+        {
+          "by": "rimeice",
+          "text": "> \"Adding agents to a project with unclear requirements gets you the wrong answer faster.\" The thing is it gets you the wrong answer so fast it’s now the best way to figure out the right requirements."
+        },
+        {
+          "by": "s08148692",
+          "text": "Sequential tasks are still sequential. The difference is one engineer can you work on many sequential tasks in parallel. The old way of working where an engineer picks up a ticket and works it through to completion before working on the next one is over. Engineers in my team work on about 5 at a time, sometimes far more. That might mean working on multiple features at once, or working on CI or DX…"
+        },
+        {
+          "by": "jFriedensreich",
+          "text": "The author misapplies/misunderstands the mythical man month even in the first example. It does not apply for idea generation and also not to problem solving/ fixing things, only to software creation. Even then, it also does not apply when creation is cheap, if you can generate 100 solutions cheaply without coordination between them and pick the winner with a relatively fast eval, creation behaves…"
+        },
+        {
+          "by": "impizulu",
+          "text": "> \"Throw nine autonomous agents at a single codebase without crystal-clear orchestration, and they will happily rewrite each other's work in a high-speed loop.\" Is it not the same with people? Just slower? Poor management leads to duplication of work all the time. Nowadays it feels like every software engineer also needs to learn management skills (to orchestrate AI agents) no matter how junior…"
+        }
+      ],
+      "image": "https://j11g.com/content/images/cern-resized.jpg"
+    },
+    {
+      "id": 50247928,
+      "url": "http://muratbuffalo.blogspot.com/2026/10/the-man-from-future-why-johnny-cant.html",
+      "hn": "https://news.ycombinator.com/item?id=50247928",
+      "title": "A Man from the Future: Why Johnny Can't Stop Abstracting",
+      "time": 1793036995,
+      "points": 189,
+      "depth": [
+        {
+          "text": "John von Neumann kept finding the **simplest structure** underneath **messy problems**, from math to computers",
+          "tier": "simple"
+        },
+        {
+          "text": "He traces that habit from **defining numbers as sets** and treating set paradoxes like type errors, to showing matrix mechanics and wave mechanics were two forms of the same theory. His **stored-program design** put instructions and data in one memory, echoing his idea that a machine could reproduce itself by using a description as both instructions and data.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 85,
+      "terms": [
+        "abstraction",
+        "set theory",
+        "type system",
+        "stored-program architecture",
+        "self-reproducing automata"
+      ],
+      "entities": [
+        "John von Neumann",
+        "Ananyo Bhattacharya",
+        "EDVAC",
+        "John Nash",
+        "Oskar Morgenstern"
+      ],
+      "comments": [
+        {
+          "by": "seemaze",
+          "text": "I always recommend Turing's Cathedral: The Origins of the Digital Universe [0] by George Dyson when John von Neumann comes up, it's a fabulous read. [0] https://www.penguinrandomhouse.com/books/44425/turings-cathe..."
+        },
+        {
+          "by": "nish__",
+          "text": "> Budapest around 1900 produced an absurd cluster of minds: von Neumann, Eugene Wigner, Edward Teller, Leo Szilard, Paul Erdős, Theodore von Kármán, George Pólya. Not to mention Nikola Tesla about 20 years prior. > When several of them turned up at Los Alamos and realized they had gone to high school together, Szilard joked that Hungary was a cover story for a Martian landing. What if there…"
+        },
+        {
+          "by": "willguest",
+          "text": "I recently read 'Maniac' by Benjamin Labatut, which also tracks the life of Johnny von Neumann. It is a wonderful read - very eloquently put together, giving accounts of the man from the perspectives of several people in his life. Not only does it capture the alien-like genius of the protagonist, but also described his particular emotional and social character in a way that I have not seen…"
+        },
+        {
+          "by": "henrik_w",
+          "text": "I read The man From the Future a few years ago, and I highly recommend it!\nJohn von Neumann was such a fascinating and influential character. If you are interested in the modern history of mathematics, computers, game theory and more, pick up a copy. I also wrote about why I liked the book so much: https://henrikwarne.com/2024/07/07/john-von-neumann-the-man-..."
+        },
+        {
+          "by": "diskzero",
+          "text": "Any cognitive scientists here, or actual people with eidetic memory, who can comment how the brain would store everything you ever read or heard and how it can be recalled? What does it feel like to be able to recall and recite the entire text of a Tale of Two Cities?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50256985,
+      "url": "https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/",
+      "hn": "https://news.ycombinator.com/item?id=50256985",
+      "title": "Roblox downloaded 145GB models from us (including adult content) without asking",
+      "time": 1793096870,
+      "points": 168,
+      "depth": [
+        {
+          "text": "a crawler claiming it was from **Roblox** downloaded creators’ models, including **adult content**",
+          "tier": "simple"
+        },
+        {
+          "text": "The sites say it took **1,027 files** from 712 projects—**145.5 GB** total—and 345 projects were adult content. They say the crawler ignored their robots.txt and creators’ licenses, but stress they **can't prove** Roblox ran it or that any files ended up in a model.",
+          "tier": "substance",
+          "data": [
+            [
+              "files downloaded",
+              "1,027"
+            ],
+            [
+              "projects downloaded from",
+              "712"
+            ],
+            [
+              "downloaded data",
+              "145.5 GB"
+            ],
+            [
+              "adult-content projects",
+              "345"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say public files getting copied is no surprise; others say ignoring licenses is the real complaint. Commenters also debate whether the adult-content angle is sensational or could help train filters.",
+      "comment_count": 115,
+      "terms": [
+        "crawler",
+        "scraping",
+        "robots.txt",
+        "3D foundation model",
+        "non-commercial license"
+      ],
+      "entities": [
+        "Roblox",
+        "Open3DLab",
+        "SFMLab",
+        "SmutBase"
+      ],
+      "comments": [
+        {
+          "by": "arshxyz",
+          "text": "Scientists say this is the first occurance of the word \"model\" in the title of a post on HN that does not refer to a neural network of some sort since 2023"
+        },
+        {
+          "by": "phn",
+          "text": "How can you start an outcry like this, but host stuff like this, tagged with a permissive license: https://open3dlab.com/project/e2a0830d-f166-4b1b-aabf-8ca735... Just an example, there's plenty more on the frontpage. I have nothing against these guys, but I just can't understand the moral high ground of the complaint."
+        },
+        {
+          "by": "hypfer",
+          "text": "Only tangentially related, but I've recently realized that unless you're some sort of business with a valid requirement of that, you can just block incoming traffic from all of AWS, DigitalOcean, Azure, etc. I think the spark came from some other HN comment I saw? So thank you for that, whoever wrote that. That alone is not a sufficient strategy of course, but you can get rid of a lot of bots by…"
+        },
+        {
+          "by": "KolmogorovComp",
+          "text": "I'm sympatic to open3dlab but I think the focus on adult-content is just trying to spark outcry for cheap. It has been shown times and times against that removing adult content from the training source (at least for diffusion models), results in generally lower-quality output, even outside of adult-content, particularly in terms of representing human bodies."
+        },
+        {
+          "by": "echoangle",
+          "text": "Couldn't the adult file download just as well be used to train a model that rejects adult uploads to roblox? I don't see the outrage."
+        }
+      ],
+      "image": "https://thumbcdn.open3dlab.com/newsitem/3200w.webp"
+    },
+    {
+      "id": 50237896,
+      "url": "https://www.ifixit.com/News/119895/iphone-duo-teardown",
+      "hn": "https://news.ycombinator.com/item?id=50237896",
+      "title": "iPhone Duo Teardown",
+      "time": 1792977804,
+      "points": 157,
+      "depth": [
+        {
+          "text": "someone found the iPhone Duo's **batteries** easy to remove, but its **inner-screen repair** is a pain",
+          "tier": "simple"
+        },
+        {
+          "text": "iFixit gave it a provisional **5 out of 10** for repairability, its highest score for a foldable so far. The batteries use **electrically releasable adhesive**, but inner-screen damage costs **$999** without coverage.",
+          "tier": "substance",
+          "data": [
+            [
+              "repairability score",
+              "5 out of 10"
+            ],
+            [
+              "inner-display damage without coverage",
+              "$999"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: skeptics say foldables' caveats outweigh their benefits; owners say the Duo makes everyday tasks more fun.",
+      "comment_count": 135,
+      "terms": [
+        "nano-texture",
+        "OLED",
+        "flex cable",
+        "disassembly tree"
+      ],
+      "entities": [
+        "Apple",
+        "iFixit",
+        "iPhone Duo"
+      ],
+      "comments": [
+        {
+          "by": "danpalmer",
+          "text": "Nearly 10 years in to foldables, and they still bring so many caveats. They are consistently worse for size, weight, shape, cameras, battery, robustness, and longevity. I don't think I'd ever recommend one. On the other hand, the advantages are... an iPad like experience sometimes? Or a smaller phone for the flip form factor? The flip form factor certainly does not pay off. I'm honestly not sure…"
+        },
+        {
+          "by": "anonymous908213",
+          "text": "Spending thousands of dollars on hardware I don't own is not for me, but foldable touchscreen phones are, objectively, pretty freaking cool pieces of engineering work. Very cool breakdown of the hardware."
+        },
+        {
+          "by": "ChaseRensberger",
+          "text": "ive been really enjoying my iPhone duo so far, its hard to imagine going back to a normal phone. it makes it so much more fun to schedule appointments, read blog posts, vibe code, update my calendar before a trip, watch movies, etc..."
+        },
+        {
+          "by": "lorenzohess",
+          "text": "> This is the most repairable foldable we've ever taken apart. But that's not saying much."
+        },
+        {
+          "by": "dreamcompiler",
+          "text": "You know how on a computer screen you can just drag any corner of a window to resize it? I had a dream once where I had a phone that worked that way. Want a bigger screen? Just drag one of the corners of the phone. Shove all the corners together and drop it in your pocket. I used the hell out of that phone all night. Then I woke up and spent about an hour trying to figure out how to build one. I…"
+        }
+      ],
+      "image": "https://valkyrie.cdn.ifixit.com/media/2026/10/24232224/iPhone-Duo_94.jpg"
+    },
+    {
       "id": 50251661,
       "url": "https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
       "hn": "https://news.ycombinator.com/item?id=50251661",
@@ -486,6 +747,26 @@
     }
   ],
   "glossary": {
+    "Brooks’s Law": "The idea that adding people to a late software project can make it later, because they need time to get up to speed and coordinate.",
+    "LLMs": "Large language models: computer programs trained on lots of writing that can produce text.",
+    "AI agent": "An autonomous computer program that can carry out tasks.",
+    "orchestration": "Coordinating several AI agents so they can hand tasks to one another.",
+    "codebase": "The files and code that make up a software project.",
+    "hallucination": "When an AI gives made-up or incorrect information as if it were true.",
+    "abstraction": "When you don't have to deal with the messy details of how something gets done.",
+    "set theory": "A way of building mathematics from collections of things called sets.",
+    "type system": "Rules for checking that a program uses each kind of value in the right way.",
+    "stored-program architecture": "A computer design that keeps its instructions and the data it works on in the same memory.",
+    "self-reproducing automata": "Mathematical machines described so they can make copies of themselves.",
+    "crawler": "A program that visits web pages and gathers them so a search engine can find them.",
+    "scraping": "Using automated tools to collect content from websites.",
+    "robots.txt": "A file that tells automated visitors which parts of a website the owner would prefer them not to visit; it cannot force them to obey.",
+    "3D foundation model": "A large computer system trained on lots of 3D examples, meant to help with many kinds of 3D work.",
+    "non-commercial license": "A rule that lets people use a creator’s work only for purposes not aimed at making money.",
+    "nano-texture": "A screen surface with tiny bumps that scatter reflections and help hide the fold.",
+    "OLED": "Organic light-emitting diode: a screen where each pixel makes its own light, so dark parts can look black.",
+    "flex cable": "A thin, bendy cable that carries power and information while parts of a device move.",
+    "disassembly tree": "A map of which parts need to come off before you can reach the part you want to fix.",
     "Exponential Time Hypothesis": "A claim that a certain kind of logic problem gets so much harder as it grows that solving it takes far more time.",
     "subexponential time": "A running time that grows slower than 2 to the input size as the problem gets bigger.",
     "3SAT": "A yes-or-no logic puzzle where each rule has three parts, and the goal is to choose true or false so all rules hold.",
@@ -501,7 +782,6 @@
     "time awareness": "A feature that analyzes a whole video clip, rather than just one frame.",
     "chattering mattes": "A cutout that separates a subject from the background is “chattering” when it flickers between frames.",
     "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
-    "OLED": "Organic light-emitting diode: a screen where each pixel makes its own light, so dark parts can look black.",
     "IP67": "A dust- and water-protection rating; the article says this iPad mini is protected against both.",
     "eSIM": "Embedded SIM: a SIM built into a device instead of a removable card.",
     "refresh rate": "How often a screen updates each second; a higher rate can make motion look smoother.",
