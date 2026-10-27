@@ -1,0 +1,526 @@
+{
+  "date": "2026-10-27",
+  "cards": [
+    {
+      "id": 50251661,
+      "url": "https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
+      "hn": "https://news.ycombinator.com/item?id=50251661",
+      "title": "The Exponential Time Hypothesis Is False [pdf]",
+      "time": 1793051955,
+      "points": 480,
+      "depth": [
+        {
+          "text": "a paper claims the **Exponential Time Hypothesis** is false, but the result has **limits**",
+          "tier": "simple"
+        },
+        {
+          "text": "The comments describe a **subexponential-time** result for **3SAT**, but warn it does not extend to general NP problems: polynomial-time reductions can grow the input too much. One commenter also objects that a **lookup-based construction** relies on a machine with more states than the estimated physically distinguishable configurations of the observable universe.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some call it an amazing result; others say the proof's lookup trick doesn't count as a meaningful fast algorithm.",
+      "comment_count": 176,
+      "terms": [
+        "Exponential Time Hypothesis",
+        "subexponential time",
+        "3SAT",
+        "NP",
+        "polynomial-time reduction",
+        "Lean"
+      ],
+      "entities": [
+        "OpenAI",
+        "Anthropic",
+        "Lean",
+        "3SAT"
+      ],
+      "comments": [
+        {
+          "by": "svat",
+          "text": "While this has no immediate bearing on P-vs-NP, it is interesting to note: - Early CS researchers like Donald Knuth entered CS in the days when regularly someone would come up with a surprising faster algorithm for some problem, and their intuitions were that most problems had faster algorithms than you'd expect. - Later generations of CS researchers, as all the easy algorithms were discovered…"
+        },
+        {
+          "by": "cochne",
+          "text": "This is an amazing and unexpected result. To be clear though, it does not imply that NP is subexponential: \"Note that runtime bounds of the form 2^o(n) do not transfer under general polynomial-time reductions (2^n^o(1) would be needed for this), so our result does not imply that general NP problems\nadmit subexponential time algorithms.\" Edit: To explain more, it is guaranteed that you can reduce…"
+        },
+        {
+          "by": "zodiac",
+          "text": "It appears that Anthropic has released a proof as well (same bounds), but with a different approach? https://drive.google.com/drive/u/0/folders/1uaWnPqWkXy1sjfsD..."
+        },
+        {
+          "by": "criemen",
+          "text": "Wow. Complexity class separations are really really rare. Can an expert in sat solving comment if there's any immediate applications of the method from the paper? Or is SAT solving in general pretty far away from worst-case times, and this is a theoretical algorithm which would be hard to apply in practice."
+        },
+        {
+          "by": "strommec",
+          "text": "It's surprising that Exponential Time Hypothesis would be false. Quoting a paper from 2022[1]: > We prove that the time complexity of self-attention is necessarily quadratic in the input length, unless the Strong Exponential Time Hypothesis (SETH) is false[...] If OpenAI's proof is correct, does that mean self-attention can be implemented in sub-quadratic time? I.e. we could eventually have all…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50245385,
+      "url": "https://www.bbc.com/future/article/20261023-how-solar-became-bigger-than-nuclear",
+      "hn": "https://news.ycombinator.com/item?id=50245385",
+      "title": "Solar power is becoming bigger than nuclear",
+      "time": 1793028377,
+      "points": 209,
+      "depth": [
+        {
+          "text": "solar power has **overtaken nuclear** globally, with **cheap panels** driving its rapid growth",
+          "tier": "simple"
+        },
+        {
+          "text": "In 2025, solar met **three-quarters** of the growth in the world's demand for electricity. BBC analysis found it produced **13% more power** than nuclear over the 12 months up to September 2026.",
+          "tier": "substance",
+          "data": [
+            [
+              "share of electricity-demand growth in 2025",
+              "three-quarters"
+            ],
+            [
+              "solar's lead over nuclear, 12 months up to September 2026",
+              "13% more power"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters call solar cheap and easy to install; others say US installation quotes around $20k or $30k hardly feel cheap.",
+      "comment_count": 332,
+      "terms": [
+        "solar plus storage",
+        "grid",
+        "electrification",
+        "agrivoltaics"
+      ],
+      "entities": [
+        "Ember",
+        "BBC",
+        "International Energy Agency",
+        "Dave Jones",
+        "Jan Rosenow",
+        "Alicia Zhao",
+        "Julia Souder",
+        "Long Duration Energy Storage Council",
+        "Ren21"
+      ],
+      "comments": [
+        {
+          "by": "HexnMarcusWolfe",
+          "text": "It's been cheaper than nuclear for a while now, it was only a matter of time. Personally i'm waiting for the next iterations of Kesterite cells. If we can get single cells to crack ~20% efficiency. With a tandem cell architecture, it's going to become the new standard overnight. Durability of silicon cells or better, but orders of magnitude $ cheaper to produce, and without the need to use toxic…"
+        },
+        {
+          "by": "Havoc",
+          "text": "More stoked for when the same is said for storage. Solar is cool but solar that can make it through the night and a couple cloudy days is way cooler"
+        },
+        {
+          "by": "WalterGR",
+          "text": "For more, see “Solar surpasses nuclear power globally for first time” with 464 comments from 9 days ago. https://news.ycombinator.com/item?id=50131256"
+        },
+        {
+          "by": "laweijfmvo",
+          "text": "I think we’ll see a pivot from the right on solar soon, once they realize how cheap it is and how much money they can make. They’ll spin it as home-grown local jobs stuff but regardless it’s a win-win."
+        },
+        {
+          "by": "ZeroGravitas",
+          "text": "Judging by the source data: https://ember-energy.org/data/electricity-data-explorer/?tem... Solar's global peak month in (northern hemisphere) summer 2024 nearly equaled nuclear, the full calendar year 2025 slightly beat nuclear and now it's possible that the next yearly minimum month coming up this december will match nuclear. That's a lot of change in just 2.5 years. Also, the graph shows the…"
+        }
+      ],
+      "image": "https://ychef.files.bbci.co.uk/624x351/p0pjn1gz.jpg"
+    },
+    {
+      "id": 50251127,
+      "url": "https://corridorkey.com/",
+      "hn": "https://news.ycombinator.com/item?id=50251127",
+      "title": "CorridorKey 2.0",
+      "time": 1793049485,
+      "points": 191,
+      "depth": [
+        {
+          "text": "someone built a **video keying tool** that removes green and blue screens with **one click**",
+          "tier": "simple"
+        },
+        {
+          "text": "Corridor Digital says over **400 VFX shots** for Son of a Dungeon went through the app. It predicts the color of **semi-transparent foreground objects**; its “time awareness” analyzes the **whole clip** to reduce flicker and preserve fine details like hair.",
+          "tier": "substance",
+          "data": [
+            [
+              "beta price",
+              "$49.50"
+            ],
+            [
+              "regular price",
+              "$99.00"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 60,
+      "terms": [
+        "keying",
+        "VFX",
+        "time awareness",
+        "chattering mattes",
+        "GPU"
+      ],
+      "entities": [
+        "CorridorKey",
+        "Corridor Digital",
+        "Son of a Dungeon"
+      ],
+      "comments": [
+        {
+          "by": "lambfoo",
+          "text": "It is actually free for people other than organizations with more than US $20 million in annual revenue. Source: https://github.com/nikopueringer/CorridorKey2.0"
+        },
+        {
+          "by": "teach",
+          "text": "I also really enjoyed the \"making of\" video: https://youtu.be/svrdRAoIlxM?si=cG1gSRyWdGg8RnEM Niko goes into some more detail about the licensing choices they've made and why towards the end of the video as well. [Edit: note that the above video is \"content\" so if you're not used to the style it might be offputting but I'm into it] It's been so cool to watch this develop"
+        },
+        {
+          "by": "ShakataGaNai",
+          "text": "A beta price of $50 or full price of $100 is really a steal. If you do ANY sort of video production work, this is an amazing tool. The more casual of a green screen person you are, the more impressive this is. This is like Magnet Mask for Final Cut, but probably better. I haven't compared/contrasted the two yet, but I have faith that Corridor has knocked this one out of the park from the demos I…"
+        },
+        {
+          "by": "wongarsu",
+          "text": "Obviously this prioritizes quality over speed, but how far are we from real time? Hooking something of this quality up to a live webcam would be a dream"
+        },
+        {
+          "by": "jarjoura",
+          "text": "Just to be clear, this isn't generative AI in the same way something like Nano Banana or Seedance is. You don't prompt anything into existence. However, this is using all of the latest SOTA techniques that the slop generative models also depend on. I think it is an amazing example of how labs should take all of their fundamental research and turn into products entirely designed, limited and…"
+        }
+      ],
+      "image": "https://corridorkey.com/og-card.png"
+    },
+    {
+      "id": 50243061,
+      "url": "https://www.apple.com/newsroom/2026/10/apple-gives-ipad-mini-its-biggest-update-ever/",
+      "hn": "https://news.ycombinator.com/item?id=50243061",
+      "title": "New iPad mini",
+      "time": 1793020416,
+      "points": 171,
+      "depth": [
+        {
+          "text": "Apple announced a **thinner iPad mini** with an **OLED screen**, a faster chip, and **water resistance**",
+          "tier": "simple"
+        },
+        {
+          "text": "Its **8.5-inch OLED display** keeps the previous mini’s footprint, and Apple says it delivers **up to 4.5x faster AI performance** than the previous generation. The Wi-Fi model starts at **$699 (U.S.)**.",
+          "tier": "substance",
+          "data": [
+            [
+              "display size",
+              "8.5-inch"
+            ],
+            [
+              "AI performance",
+              "up to 4.5x"
+            ],
+            [
+              "Wi-Fi starting price",
+              "$699 (U.S.)"
+            ]
+          ]
+        }
+      ],
+      "camps": "Some commenters are excited about the OLED screen; others say the price and 60Hz display put them off.",
+      "comment_count": 453,
+      "terms": [
+        "OLED",
+        "IP67",
+        "eSIM",
+        "refresh rate"
+      ],
+      "entities": [
+        "Apple",
+        "iPad mini",
+        "A20 Pro",
+        "Apple Intelligence",
+        "Siri AI",
+        "iPadOS 27",
+        "N1",
+        "C2",
+        "Smart Folio",
+        "Apple Pencil Pro",
+        "Apple Pencil (USB-C)"
+      ],
+      "comments": [
+        {
+          "by": "sheepscreek",
+          "text": "They should stop handicapping the non-Pro displays at 60hz refresh rate. The world moved on 5 years ago. It’s getting tiring now."
+        },
+        {
+          "by": "ProZsolt",
+          "text": "A 40% price increase compared to pre June pricing, a 60Hz display (that’s likely just software locked), and still starting at 128GB of storage. I was actually excited for this, but now I’m going to pass."
+        },
+        {
+          "by": "micw",
+          "text": "It makes no sense to make the devices so thin and then having a fat camera. This requires a cover to equalize the size with the camera for haptic reasons. Better use this space for other stuff like larger batteries and make the device the same thickness everywhere."
+        },
+        {
+          "by": "gyomu",
+          "text": "The original iPad had a 9.7\" screen; it was later bumped to 10.2\", and today the smallest iPad/iPad Air screen is 11\". The iPad Mini started with a 7.9\" screen, bumped today to 8.5\". The iPhone Duo inner display is 7.6\", there are already rumors saying a gen 2 or gen 3 might be 7.9\". It's interesting how smooth the iPhone/iPad continuum is becoming."
+        },
+        {
+          "by": "dannyobrien",
+          "text": "Given the criticism the Duo has had for not being a very good iPhone[1], I was hoping for a foldable iPad mini, which would seem to dodge those problems. Maybe in a year or two (does anyone remember the iPod Touch, which was an iPhone without the phone bit? I loved that thing.) [1] - See \"far the worst iPhone experience ever\" Daring Fireball…"
+        }
+      ],
+      "image": "https://www.apple.com/newsroom/images/2026/10/apple-gives-ipad-mini-its-biggest-update-ever/tile/Apple-iPad-mini-hero-261026-lp.jpg.og.jpg?202610261838"
+    },
+    {
+      "id": 50242870,
+      "url": "https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm",
+      "hn": "https://news.ycombinator.com/item?id=50242870",
+      "title": "Fixing Tool-Call Accuracy in vLLM",
+      "time": 1793019588,
+      "points": 161,
+      "depth": [
+        {
+          "text": "someone got **tool calls** to follow their required format **every time** on the models they serve",
+          "tier": "simple"
+        },
+        {
+          "text": "Ubicloud first measured **Kimi K2.6** at **92%** tool-call accuracy, then saw the score fall to 91% after switching to vLLM's built-in version of constrained decoding, which wasn't enabled by default. Turning it on brought schema accuracy to 100% across served model versions. vLLM leaves it off by default because it has caused problems for some models and other serving features.",
+          "tier": "substance",
+          "data": [
+            [
+              "initial tool-call accuracy",
+              "92%"
+            ],
+            [
+              "after switching to vLLM's feature",
+              "91%"
+            ],
+            [
+              "after enabling constrained decoding",
+              "100%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some favor constrained decoding for reliable tool calls; others want it compared with retrying bad calls and question its effect on output quality.",
+      "comment_count": 66,
+      "terms": [
+        "tool call",
+        "schema",
+        "constrained decoding",
+        "inference engine",
+        "agent harness"
+      ],
+      "entities": [
+        "Ubicloud",
+        "vLLM",
+        "Kimi",
+        "DeepSeek",
+        "XGrammar",
+        "Moonshot AI",
+        "OpenCode"
+      ],
+      "comments": [
+        {
+          "by": "Aurornis",
+          "text": "Constrained decoding has been in vLLM for a long time, and constrained tool call decoding has been in vLLM for a while, too. The blog post is rather confusing because until you understand the entire situation it appears to imply that they fixed vLLM (what the title implies) but really they just needed to configure it correctly. To be fair, the course of constrained tool calling configuration in…"
+        },
+        {
+          "by": "mmastrac",
+          "text": "Amusingly constrained decoding is the same approach we use to turn an AR model into a /v1/systemone endpoint (I worked on the vLLM feature). Tool calling is fraught with peril, especially because there's nothing that necessarily says that a models tools are fixed in place for the life of its run.\nIn some cases, tools are added mid-run to avoid a giant prefix miss and (at least last time I…"
+        },
+        {
+          "by": "hansvm",
+          "text": "I wish they'd published something about the actual impact on model quality. Schema-constrained decoding changes the distribution the LLM will output. I'd be curious how a back-up-and-retry method for tool calls (which also doesn't pollute the context and also has 100% tool-call accuracy) would compare. In their example stats (23/25 success rate), it'd be +9% tokens used for the tool call attempt…"
+        },
+        {
+          "by": "jesdo",
+          "text": "I'm one of the authors of this blog post. Figuring out how to integrate the LLM, the inference and serving engine, and the constrained decoding implementation such that you get the intended output and overall quality definitely requires careful engineering and testing. Please feel free to AMA. :)"
+        },
+        {
+          "by": "docjay",
+          "text": "That is bending the barrel to align the scope. What’s interesting is that the authors mention the cause of the failed calls, “…a model may generate a tool or field name that it has seen during the training, even if it does not exist in the current production environment. For example, it may generate search_web when the available tool is web_search, or use city_name when the active schema expects…"
+        }
+      ],
+      "image": "https://cdn.prod.website-files.com/64f9d9b4e737e7b37d4e39a4/6ace25a7011f2d0bca7a06ea_LLM-inference.png"
+    },
+    {
+      "id": 50242734,
+      "url": "https://english.elpais.com/technology/2026-10-25/peter-thiel-the-tech-oligarch-who-believes-in-the-antichrist.html",
+      "hn": "https://news.ycombinator.com/item?id=50242734",
+      "title": "Peter Thiel, the tech oligarch who believes in the Antichrist",
+      "time": 1793018971,
+      "points": 154,
+      "depth": [
+        {
+          "text": "Peter Thiel wraps his push for **unregulated tech** in warnings about the **Antichrist**",
+          "tier": "simple"
+        },
+        {
+          "text": "**Founders Fund** financed **Palantir** and other defense and surveillance start-ups with government contracts. The article notes the contradiction between his libertarian ideas and reliance on **public contracts**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters find Thiel’s worldview revealing or agree with some of his ideas; others call his views manipulative, anti-democratic, or harmful to the tech industry.",
+      "comment_count": 203,
+      "terms": [
+        "AGI",
+        "accelerationism",
+        "mimetic desire",
+        "venture capital",
+        "Katechon"
+      ],
+      "entities": [
+        "Peter Thiel",
+        "Founders Fund",
+        "Palantir",
+        "Anduril",
+        "Clearview AI",
+        "Flock Safety",
+        "PayPal",
+        "Donald Trump",
+        "J. D. Vance",
+        "Mithril Capital",
+        "Elon Musk",
+        "Max Levchin",
+        "Mark Zuckerberg",
+        "Facebook",
+        "OpenAI",
+        "Gil Durán",
+        "Mark Coeckelbergh"
+      ],
+      "comments": [
+        {
+          "by": "b473a",
+          "text": "I have a theology background. The key feature of the Antichrist, at least in Catholic Theology, is that he stands as an alternative Messiah to Jesus: a different way by which humanity may be saved or may save itself. Ironically, if you listen to Accelerationists like Peter Thiel, they talk about AGI and Superintelligence in bluntly messianic terms. For them the only way to save humanity is for…"
+        },
+        {
+          "by": "mrtksn",
+          "text": "Listening to Thiel feels like opening a complicated mechanical device while running and looking at the mechanism that makes it tick. Its so raw, its beautiful in its own way. It removes the spell on so many things, it gives you the \"I understand why those people do what they do now\" kick. It relieves you from emotional baggage. I wonder when he will obtain bunch of thermonuclear warheads and ICBM."
+        },
+        {
+          "by": "effed3",
+          "text": "I don’t know why, but it brings me a story to mind: A thief breaks into a house, and when he’s discovered by the owner—and the police arrive—he starts shouting, \"Thief! Thief!\" while pointing at the owner. Who, then, would the Antichrist be? From a simpler, more practical perspective, it seems to me that there is only one world—a common home for us all, more or less—and there is no guarantee (nor…"
+        },
+        {
+          "by": "nope1000",
+          "text": "I guess he owns a mirror"
+        },
+        {
+          "by": "Zigurd",
+          "text": "It's fun to make fun of rich weirdos because they always have their money to comfort them, but the current crop of tech weirdos, because of their excessive influence, are bad for the tech industry as a whole. Their support of Trumpism has made US tech toxic outside the US, when historically half the revenue of a tech company you start in the US ends up being earned outside the US. If that stops…"
+        }
+      ],
+      "image": "https://imagenes.elpais.com/resizer/v2/Z2NRV74JRFELXKGOA4YPJSRCYE.jpg?auth=f82f480c9b7758dc053ecb8eb8bdd27801d38540edd0f42713348072e744d11e&width=1200"
+    },
+    {
+      "id": 50247493,
+      "url": "https://github.com/DilawarShafiq/nietzschian-debugger",
+      "hn": "https://news.ycombinator.com/item?id=50247493",
+      "title": "Nietzschian Debugger",
+      "time": 1793035530,
+      "points": 152,
+      "depth": [
+        {
+          "text": "someone built an **anti-AI debugger** that **asks questions** instead of handing you the fix",
+          "tier": "simple"
+        },
+        {
+          "text": "It **requires an Anthropic API key** and says it can read a file you point it at. One commenter noted the **README, code, image, and output** were AI-generated, putting the “anti-AI” label in question.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters call it a fun way to build debugging habits; others say the AI still does your thinking, or question an “anti-AI” debugger built with AI.",
+      "comment_count": 50,
+      "terms": [
+        "CLI",
+        "API key",
+        "LLM",
+        "BYOK",
+        "JWT",
+        "TTL",
+        "Socratic dialectic"
+      ],
+      "entities": [
+        "Nietzschian Debugger",
+        "GitHub",
+        "Anthropic",
+        "Claude",
+        "Python",
+        "Node.js",
+        "Nietzsche",
+        "Socrates",
+        "Adorno",
+        "Hegel",
+        "Seneca",
+        "Sun Tzu",
+        "Feynman",
+        "ELZA",
+        "Uncle Bob",
+        "OpenAI",
+        "ChatGPT",
+        "GPT",
+        "Java"
+      ],
+      "comments": [
+        {
+          "by": "bazzmt",
+          "text": "The irony of naming this Nietszche's Debugger when he, Nietszche, directly attacks the Socratic dialectic in the Twilight. I was thinking Adorno's negative dialectics would be a better, if gloomy, fit; debugging is never-ending. If you're in a positive or hopeful mood, or still a junior dev, Hegel's determinate negation offers reconciliation and an ending. This is a phase; dear junior devs you…"
+        },
+        {
+          "by": "brumbelow",
+          "text": "\"anti-ai\" > https://github.com/DilawarShafiq/nietzschian-debugger#setup Step one to setup: \"Set your Anthropic API key\"..."
+        },
+        {
+          "by": "gnulinux",
+          "text": "README.md says: > The anti-AI. but then it's an AI-generated picture of Nietzsche [1] and AI-generated README with AI-generated code (Claude being the co-author), and when I read sample transcript e.g. in (nietzschian-debugger/tests/fixtures/sample-sessions/sample-v1.json) it's clear the app also uses LLMs to generate output... So what do they mean by \"anti-AI\"? [1]: All issues with AI-generated…"
+        },
+        {
+          "by": "evanjrowley",
+          "text": "There are a few Facebook pages I actually like, and using this debugger will remind me of one of them: https://www.facebook.com/GrumpyNietzscheanCat/"
+        },
+        {
+          "by": "frangonf",
+          "text": "A markovian prussian rubber duck? This is pure dev astrology, but in the subsidized Sonnet 3.5 times in copilot I'm guilty of prompting 'You're Uncle Bob make this legacy java services read like a book top down with the cleanest code' just for fun and I might have learnt something and had some fun so I'm not judging."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/89b860e5fe05c103af3754e7d64b81013b99e80d849ff7b282fdca71827910cc/DilawarShafiq/nietzschian-debugger"
+    }
+  ],
+  "glossary": {
+    "Exponential Time Hypothesis": "A claim that a certain kind of logic problem gets so much harder as it grows that solving it takes far more time.",
+    "subexponential time": "A running time that grows slower than 2 to the input size as the problem gets bigger.",
+    "3SAT": "A yes-or-no logic puzzle where each rule has three parts, and the goal is to choose true or false so all rules hold.",
+    "NP": "Nondeterministic Polynomial time: a set of problems where checking a proposed answer stays manageable as the problem grows.",
+    "polynomial-time reduction": "A way to turn one problem into another, with the work growing at most like a fixed power of the input size.",
+    "Lean": "A computer program used to write mathematical proofs and check that their steps are correct.",
+    "solar plus storage": "Solar panels paired with batteries, so power can be saved for later instead of only used while the sun shines.",
+    "grid": "The network that carries electricity from power stations to the places that use it.",
+    "electrification": "Switching something that used fuel directly to electricity, such as a car.",
+    "agrivoltaics": "Growing food and generating solar power on the same land.",
+    "keying": "A way to remove a colored background from video while keeping the subject.",
+    "VFX": "Visual effects: added or changed imagery in a video.",
+    "time awareness": "A feature that analyzes a whole video clip, rather than just one frame.",
+    "chattering mattes": "A cutout that separates a subject from the background is “chattering” when it flickers between frames.",
+    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "OLED": "Organic light-emitting diode: a screen where each pixel makes its own light, so dark parts can look black.",
+    "IP67": "A dust- and water-protection rating; the article says this iPad mini is protected against both.",
+    "eSIM": "Embedded SIM: a SIM built into a device instead of a removable card.",
+    "refresh rate": "How often a screen updates each second; a higher rate can make motion look smoother.",
+    "tool call": "A request from an AI assistant for another program to do something, such as run a command.",
+    "schema": "A set of rules saying what information a request must include and how it should be arranged.",
+    "constrained decoding": "Making a model choose only from answers it is allowed to give.",
+    "inference engine": "Software that runs a trained AI model on input so it can produce a result.",
+    "agent harness": "The surrounding software that runs an AI agent and helps manage its work.",
+    "AGI": "Artificial General Intelligence: a hypothetical AI that could handle many kinds of tasks, not just one narrow job.",
+    "accelerationism": "The belief that speeding up change, often technological change, will bring about a desired future.",
+    "mimetic desire": "Wanting something because other people want it.",
+    "venture capital": "Money invested in young companies in the hope that they grow and become valuable.",
+    "Katechon": "A Greek word for what holds back the Antichrist.",
+    "CLI": "Command-Line Interface: a way to control a computer by typing commands instead of clicking buttons.",
+    "API key": "A secret code that lets software use an online service as an approved user.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "BYOK": "Bring Your Own Key: using your own access key instead of one supplied by a service.",
+    "JWT": "JSON Web Token: a bundle of login information a service uses to decide who you are.",
+    "TTL": "Time to live: how long a saved item or sign-in token stays valid.",
+    "Socratic dialectic": "A way of examining an idea by asking questions and challenging answers."
+  }
+}
