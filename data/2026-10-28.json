@@ -2,6 +2,539 @@
   "date": "2026-10-28",
   "cards": [
     {
+      "id": 50270764,
+      "url": "https://dreamagainusa.org/",
+      "hn": "https://news.ycombinator.com/item?id=50270764",
+      "title": "Wealth Inequality in America drawn to scale",
+      "time": 1793177301,
+      "points": 263,
+      "depth": [
+        {
+          "text": "someone made a **wealth chart** so tall it takes **minutes to scroll** to the top",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: wealth-tax supporters say the top 1% holds enough wealth to make taxing it worthwhile; skeptics say the chart can mislead because some wealth is hard to sell, or argue that inequality is a pointless measure.",
+      "comment_count": 281,
+      "terms": [
+        "net worth",
+        "percentile",
+        "paper wealth",
+        "wealth tax"
+      ],
+      "entities": [
+        "Wealth Inequality in America",
+        "Politizane",
+        "Federal Reserve",
+        "Survey of Consumer Finances",
+        "Norton & Ariely"
+      ],
+      "comments": [
+        {
+          "by": "j1elo",
+          "text": "(Just an objective comment, I'm not positioning here) this honestly puts the \"tax the rich more\" in perspective. A tiny tax increment to the rightmost column would provide more money than 100 years of all the other pitiful contributions together."
+        },
+        {
+          "by": "bushbaba",
+          "text": "Kind of makes a point to have a wealth tax. As the top 1% of w2 earners are paying a disproportionate amount of tax relative to too 1% of wealth holders. That or just raise interest rates to force these people to sell more equity"
+        },
+        {
+          "by": "solatic",
+          "text": "Part of the problem I have with graphs like this is that they don't differentiate between paper wealth, being able to get a loan against the paper wealth, and hard assets (real estate, vehicles, cash). Let's take a personal anecdote for an example: I joined a startup when it was early-stage, stayed for a few years, and exercised my stock options when I left. The startup is now \"successful\", but…"
+        },
+        {
+          "by": "makerofthings",
+          "text": "Why don't the humans from the left 99% simple eat the humans from the right 1%?"
+        },
+        {
+          "by": "sorobahn",
+          "text": "As a w2 earner, taxes make me feel shame and rage. Shame knowing how ineffectively my taxes will translate into helping my fellow Americans/my communities/my grandchildren. The rage is for the realization that the most valuable people in our society (our doctors, engineers, small-med business owners) are the ones mainly footing the bill for select greedy and power hungry politicians. I’ll admit I…"
+        }
+      ],
+      "image": "https://dreamagainusa.org/img/social-card.png?v=3"
+    },
+    {
+      "id": 50271640,
+      "url": "https://emudhra.we-have-a-problem.com/apple.html",
+      "hn": "https://news.ycombinator.com/item?id=50271640",
+      "title": "Ten days later, Git on macOS still trusts the compromised eMudhra certificates",
+      "time": 1793185420,
+      "points": 255,
+      "depth": [
+        {
+          "text": "Apple's macOS tools still trust **compromised certificates**, putting Git, curl, and other developer connections at **risk**",
+          "tier": "simple"
+        },
+        {
+          "text": "Apple was notified of the eMudhra incident on 17th October, but macOS 27.2, released on 26th October, still trusted the certificates and **undid the workaround** users had applied by hand. Attackers can intercept **HTTPS connections** made by Git, curl and python3, including Git credentials. Apple says updates may revert a manual fix, so developers need to check again after each update.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters see Apple's delay and the manual workaround as a serious security failure; another says the threat is overblown because an attacker would need to compromise a lot to intercept traffic.",
+      "comment_count": 106,
+      "terms": [
+        "HTTPS",
+        "certificate",
+        "MITM"
+      ],
+      "entities": [
+        "Apple",
+        "eMudhra",
+        "macOS",
+        "Git",
+        "curl",
+        "python3",
+        "GitHub",
+        "Safari"
+      ],
+      "comments": [
+        {
+          "by": "jrochkind1",
+          "text": "That MacOS hasn't removed from OS-level /etc/ssl seems like a big deal, effecting more than just OS-supplied git. Is /etc/certs not used by most graphical Mac software, I guess? The chaotic state of OS-level cert management, on Linux as well, is pretty dismaying. If Apple is still trying to brand themselves as security-forward, you'd think removing the revoked CA certs from /etc in a system…"
+        },
+        {
+          "by": "chrisweekly",
+          "text": "Right, so it's not just git, it's a bunch of system-provided utilities; macOS trusts bad certs, and these utils that trust the OS are affected. I use homebrew for my git and curl but haven't yet checked to confirm whether that matters here.\nKind of outrageous that Apple's guidance is to edit the cert chain manually, and to expect that subsequent OS updates may revert your mitigation…"
+        },
+        {
+          "by": "qaz_plm",
+          "text": "Apple’s statement: https://support.apple.com/en-us/149555"
+        },
+        {
+          "by": "paaloeye",
+          "text": "> Anyone can intercept any HTTPS connection these tools make. yeah, it's not ideal but the scale of the threat is way overblown tbh.\nYou have to compromise a lot to be able to make a MITM here. Let's not treat it like PHP2Shell."
+        },
+        {
+          "by": "6thbit",
+          "text": "There must be a long list of things that aren’t fully patched for this yet, on laptops, on servers. Think of packages that ship their own trust anchors, isn’t there a rust crate that compiles with some root certs embedded? On one hand there’s unmaintained packages that won’t update dependencies. On the other hand, fixed dependencies did not necessarily backport to all possible versions in the…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50265393,
+      "url": "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/",
+      "hn": "https://news.ycombinator.com/item?id=50265393",
+      "title": "Code-execution flaw in UEFI firmware threatens most servers on planet Earth",
+      "time": 1793133309,
+      "points": 195,
+      "depth": [
+        {
+          "text": "a bug in widely used **server boot firmware** can let attackers **run code** before defenses load",
+          "tier": "simple"
+        },
+        {
+          "text": "The flaw sits in **EDK II’s PXE network-boot code**: an oversized ICMP error can overwrite memory and let an attacker run code **before the operating system starts**. Exploitation needs network access during PXE boot, and it only applies to systems using EDK II and network boot; machines booting only from disk are not affected.",
+          "tier": "substance",
+          "data": [
+            [
+              "severity rating",
+              "9.5 out of 10"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 126,
+      "terms": [
+        "firmware",
+        "UEFI",
+        "EDK II",
+        "PXE boot",
+        "ICMP",
+        "buffer overflow",
+        "Secure Boot",
+        "TPM"
+      ],
+      "entities": [
+        "UEFI",
+        "EDK II",
+        "TianoCore",
+        "AMI",
+        "Insyde",
+        "Phoenix Technologies",
+        "Project Mu",
+        "Microsoft",
+        "Alex Matrosov",
+        "Anthropic",
+        "Dan Holmes",
+        "Google",
+        "CVE-2026-97631",
+        "HD Moore",
+        "Metasploit",
+        "Dragos",
+        "Jesse Michael",
+        "Eclypsium",
+        "Intel",
+        "Arm",
+        "AMD",
+        "Amazon",
+        "LogoFail",
+        "PixieFail",
+        "PKFail",
+        "PHP",
+        "OVMF",
+        "CloudFlare"
+      ],
+      "comments": [
+        {
+          "by": "FrasiertheLion",
+          "text": "We recently wrote about moving away from OVMF (~1M lines of C) to very minimal and hyperspecific firmware (300 lines of assembly)[1] for our specific confidential VM machine targets, and the idea that \"popular\" does not automatically mean \"secure\". You can point an LLM at any large codebase and it will find vulnerabilities, so \"patch the planet\" isn't very scalable. You can instead just write…"
+        },
+        {
+          "by": "hn_submit",
+          "text": "I've always been downright suspicious of the creation of UEFI. It executes code before the operating system but doesn't really provide a hardware abstraction layer like BIOS does. Most operating system don't use BIOS or any other software layer and configure the hardware themselves. Why is it there then? And unlike BIOS which is relatively small UEFI is \"full-fat\" almost the size of an operating…"
+        },
+        {
+          "by": "john_strinlai",
+          "text": "> [...] had arranged for it to stay under wraps until a coordinated disclosure that was scheduled for January we will hopefully soon see an end to this sort of naive optimism, especially when it's an ai-assisted/ai-found vulnerability."
+        },
+        {
+          "by": "rocqua",
+          "text": "An interesting part of this is actually in defeating secure-boot or bitlocker. If a device is misconfigured for PXE boot with an otherwise locked down UEFI system, and strong secure boot. This could let you break the boot-chain and then disable secure-boot or extract keys from a TPM. The main question here is how often devices you'd want to try this against have PXE boot enabled. I'm thinking of…"
+        },
+        {
+          "by": "voidUpdate",
+          "text": "So you need to send an ICMP packet to a server while it's booting? That seems like an extremely small attack surface. I dont know when the last time our enterprise servers actually booted up, they just stay on forever"
+        }
+      ],
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2024/04/malware.jpg"
+    },
+    {
+      "id": 50265594,
+      "url": "https://bret.dk/raspberry-pi-zero-3-w-pi-4-model-a/",
+      "hn": "https://news.ycombinator.com/item?id=50265594",
+      "title": "Raspberry Pi Zero 3W and Pi 4 Model A spotted in device trees",
+      "time": 1793134129,
+      "points": 188,
+      "depth": [
+        {
+          "text": "Raspberry Pi’s **kernel files** hint at a **faster Zero** and a cut-down Pi 4 Model A",
+          "tier": "simple"
+        },
+        {
+          "text": "The Zero 3 W file points to the Pi 4’s **Broadcom BCM2711** chip. There’s **no official announcement** yet, and device trees don’t reveal RAM, pricing or a release date.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some want more power and extra features; others say the Zero should stay simple and cheap.",
+      "comment_count": 109,
+      "terms": [
+        "kernel",
+        "device tree",
+        "SoC"
+      ],
+      "entities": [
+        "Raspberry Pi",
+        "Raspberry Pi Zero 3 W",
+        "Raspberry Pi 4 Model A",
+        "Broadcom",
+        "BCM2711"
+      ],
+      "comments": [
+        {
+          "by": "bArray",
+          "text": "I really hope they can keep the cost down, it needs to be in the \"it's so cheap just hack on it\" price range for not just engineers but kids too. I'm excited to see low-cost hardware put in the hands of kids with LLMs in their sails."
+        },
+        {
+          "by": "edg5000",
+          "text": "The CM4 and Pi 4 use the Cypress CYW43455 for Wi-FI, which I found to be unreliable. Under load, it crashes, and it can't be fixed in the kernel. Frustratingly, many other SoMs and SBCs use this chip. I don't understand why there is no recall on this - in my opinion - trash product. It's an odd feeling to be the only one experiencing this. I am 100% confident this is a design flaw in the…"
+        },
+        {
+          "by": "SillyUsername",
+          "text": "Now is the time for the RPI to diversify into features adjacent to those adding cost based on the market usage. They did this with the Pi400 (keyboard added), maybe now faster pcie and external device support, faster networking, indicator LEDs, built in UPS, maybe even a built in SDR (both media players and hacking tools would benefit)."
+        },
+        {
+          "by": "jacquesm",
+          "text": "I'm using the 2 W for a project and one thing I would love is for a better wifi antenna, the one that's on the 2 just isn't good enough. You can hack it though, there is a spot on the board where you can solder on a connector, cut a single trace and you're good to go. But it would be great if it would do better out of the box. Amazingly powerful hardware for the price these little things."
+        },
+        {
+          "by": "ajb",
+          "text": "I wonder if they need to do this because of the EU Cyber Resilience Act means older designs can't be sold any more there. Apparently that's causing a lot of design refreshes."
+        }
+      ],
+      "image": "https://bret.dk/wp-content/uploads/2026/10/image.png"
+    },
+    {
+      "id": 50239214,
+      "url": "https://divemagazine.com/scuba-diving-news/ss-united-states-to-be-sunk-as-worlds-largest-artificial-reef-in-november",
+      "hn": "https://news.ycombinator.com/item?id=50239214",
+      "title": "SS United States to be sunk as largest artificial reef",
+      "time": 1792989675,
+      "points": 173,
+      "depth": [
+        {
+          "text": "the **SS United States** will be sunk in the Gulf of Mexico to become the world's **largest artificial reef**",
+          "tier": "simple"
+        },
+        {
+          "text": "The **302m ship** is scheduled for the second week of November, weather permitting, and will be sunk by **controlled flooding** rather than explosives. Its upper decks are expected to sit around **17–18m deep**, with openings prepared for marine life and divers.",
+          "tier": "substance",
+          "data": [
+            [
+              "ship length",
+              "302m (990ft)"
+            ],
+            [
+              "upper deck depth",
+              "17–18m (55–60ft)"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some ask why the ship's steel isn't being reused; others talk about the wreck as a draw for divers and fishing.",
+      "comment_count": 139,
+      "terms": [
+        "artificial reef",
+        "scuttled",
+        "PCBs",
+        "sonar",
+        "Blue Riband"
+      ],
+      "entities": [
+        "SS United States",
+        "Okaloosa County",
+        "SS United States Conservancy",
+        "US Army Corps of Engineers",
+        "USS Oriskany"
+      ],
+      "comments": [
+        {
+          "by": "dsabanin",
+          "text": "So much symbolism in this passage: \"The SS United States, once the fastest passenger liner in the world, is scheduled to be sunk in the Gulf of Mexico\""
+        },
+        {
+          "by": "telesilla",
+          "text": "Is it still possible to cross the Atlantic in 3 days by passenger ship? I've never thought of that but I'd certainly like to try as an alternative to the severe jetlag I get as I age."
+        },
+        {
+          "by": "GolfPopper",
+          "text": "\" Oh, better that her shattered hulk Should sink beneath the wave; Her thunders shook the mighty deep, And there should be her grave; Nail to the mast her holy flag, Set every threadbare sail, And give her to the god of storms, The lightning and the gale! \" https://en.wikipedia.org/wiki/Old_Ironsides_(poem)"
+        },
+        {
+          "by": "geokon",
+          "text": "Was strangely difficult to find on Wikipedia what the \"SS\" actually means https://en.wikipedia.org/wiki/Screw_steamer https://en.wikipedia.org/wiki/Ship_prefix"
+        },
+        {
+          "by": "tylergetsay",
+          "text": "Incase anyone was unaware part of the consideration for where to sink it is access for divers -- the top will be around 55ft deep which will make it accessible for recreational divers"
+        }
+      ],
+      "image": "https://divemagazine.com/wp-content/uploads/ss-united-states-at-anchor-2017.webp"
+    },
+    {
+      "id": 50236073,
+      "url": "https://www.wsj.com/finance/stocks/the-earnings-boom-is-heavily-reliant-on-just-a-handful-of-stocks-21decb53",
+      "hn": "https://news.ycombinator.com/item?id=50236073",
+      "title": "Nvidia and Micron Make Up 34% of America's Earnings Boom",
+      "time": 1792962458,
+      "points": 158,
+      "depth": [
+        {
+          "text": "**Nvidia and Micron** make up a big chunk of America's **earnings boom**",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: one says GPU accounting makes reported profits look bigger without matching money entering or leaving the S&P 500; the other says the purchases still create economic value.",
+      "comment_count": 38,
+      "terms": [
+        "GPU",
+        "amortized",
+        "capital expenditure",
+        "S&P 500",
+        "margins"
+      ],
+      "entities": [
+        "Nvidia",
+        "Micron",
+        "SK Hynix",
+        "Microsoft",
+        "S&P 500"
+      ],
+      "comments": [
+        {
+          "by": "Good4boothee",
+          "text": "I just want to remind everyone that SK Hynix was once able, on its own, to bring average yearly growth for entire South Korea economy down to zero."
+        },
+        {
+          "by": "bagacrap",
+          "text": "So someone correct me but I think this is sort of an accounting trick. When Microsoft buys an Nvidia GPU for $100, it will claim that it lasts 5 years, so writes down $20 in the expense column for this year. Meanwhile Nvidia takes all the profit at time of sale, $100. So for each GPU bought, SP500 logs $80 of profit, even though no money entered or left the SP500. (Yes of course the GPU cost…"
+        },
+        {
+          "by": "foota",
+          "text": "In theory if people are giving all of the money to Nvidia, then it's because they find it valuable (in this case companies purchasing GPUs) so even if the GPUs weren't so expensive in theory there would still be economic value derived from the transactions."
+        },
+        {
+          "by": "cyanydeez",
+          "text": "Aka, inflation."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50265128,
+      "url": "https://gracefulliberty.com/articles/four-months-of-zig/",
+      "hn": "https://news.ycombinator.com/item?id=50265128",
+      "title": "Four Months of Zig",
+      "time": 1793132007,
+      "points": 154,
+      "depth": [
+        {
+          "text": "someone returned to Zig, likes **controlling memory** and its **build system**, but hit some **rough edges**",
+          "tier": "simple"
+        },
+        {
+          "text": "Anna Liberty compares Zig with Rust after returning to it and building projects including **snurl**, a library for the smallnet. She likes **explicit allocator and IO parameters**, but says the **fuzzer didn't actually work**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: the author says allocator parameters make allocation clear; commenters say passing one to every allocating function often adds needless work and arenas can be footguns.",
+      "comment_count": 108,
+      "terms": [
+        "smallnet",
+        "allocator",
+        "arena allocator",
+        "fuzzing",
+        "TUI",
+        "comptime",
+        "incremental compilation",
+        "TLS",
+        "WASM",
+        "bootstrap",
+        "RAII"
+      ],
+      "entities": [
+        "Anna Liberty",
+        "Andrew Kelley",
+        "Evin Yulo",
+        "Zig",
+        "Rust",
+        "snurl",
+        "anyzig",
+        "ReTangled",
+        "TigerStyle",
+        "TigerBeetle",
+        "Gemini",
+        "Finger",
+        "Gopher",
+        "Spartan",
+        "Odin",
+        "raylib",
+        "Uber",
+        "Cargo",
+        "serde",
+        "syn",
+        "anyhow",
+        "thiserror",
+        "mimalloc",
+        "Go",
+        "React",
+        "Solid",
+        "Svelte",
+        "curl",
+        "Debian",
+        "Zig Software Foundation",
+        "Matrix",
+        "Lobsters",
+        "C",
+        "C++",
+        "Linux",
+        "macOS",
+        "WASM"
+      ],
+      "comments": [
+        {
+          "by": "i2talics",
+          "text": "Why does everyone love being able to control the allocator in Zig? I rarely want this low level control over the allocator, I would rather have an easy to use interface to malloc/free (such as RAII) or would prefer the language push me to avoiding allocations when unnecessary. C and Zig users are always talking about how arena allocators are easier to use than the alternative but I disagree…"
+        },
+        {
+          "by": "delifue",
+          "text": "The article says some Zig advantages but it's worth noting that all these advantages are tradeoffs. Zig makes handling error easy but makes retaining error information hard. The result is that Zig developers either write more code than other languages to store diagnostic information, or just simply discard diagnostic information. The second makes it much harder to debug because the useful error…"
+        },
+        {
+          "by": "philippta",
+          "text": "On the Odin vs Zig allocator bit: In Zig you pass an allocator to every function that allocates, even if it doesn't make a lot of sense. const arr = std.ArrayList(i64).empty;\narr.append(allocator, 1);\narr.append(allocator, 2);\narr.append(allocator, 3);\nThis rarely makes sense, as it's not really useful to append using a different allocator than you used previously. In Odin, allocators are passed…"
+        },
+        {
+          "by": "22c",
+          "text": "First I'm hearing of TigerStyle. > The time to solve performance, and get the 1000x wins, is in the design phase, when you can't profile. How does this make practical sense? I find it immensely easier to fix performance issues by profiling, benchmarking, finding hotspots. Things that weren't obviously performance bottlenecks during design become obvious when you profile. Interesting write-up…"
+        },
+        {
+          "by": "michidk",
+          "text": "Pretty nice! I wrote a similar piece two years ago: https://blog.lohr.dev/after-a-day-of-programming-in-zig\nGreat to see things are moving in the right direction."
+        }
+      ],
+      "image": "https://gracefulliberty.com/avatar.png"
+    },
+    {
+      "id": 50262229,
+      "url": "https://www.liquid.ai/blog/lfm3",
+      "hn": "https://news.ycombinator.com/item?id=50262229",
+      "title": "Introducing LFM3: Every Modality for Specialized Intelligence",
+      "time": 1793120690,
+      "points": 151,
+      "depth": [
+        {
+          "text": "Liquid AI has launched **small models** for text, images, sound, and **agent decisions**",
+          "tier": "simple"
+        },
+        {
+          "text": "The first release has **six models**, all around 2B parameters, for text, vision, audio, omni, and decision tasks; its text model has a **256K-token context window**. LFM3-1.7B outperforms the previous LFM2.5-2.6B while using **35% fewer parameters**.",
+          "tier": "substance",
+          "data": [
+            [
+              "models in first release",
+              "six"
+            ],
+            [
+              "text model context window",
+              "256K tokens"
+            ],
+            [
+              "parameter reduction",
+              "35% fewer parameters"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 58,
+      "terms": [
+        "parameters",
+        "context window",
+        "omni model"
+      ],
+      "entities": [
+        "Liquid AI",
+        "LFM3",
+        "LFM3-1.7B",
+        "LFM2.5-2.6B"
+      ],
+      "comments": [
+        {
+          "by": "colingauvin",
+          "text": "One thing I have been using LFM 2.6 for is annotating emails, text messages, and other metadata. I keep it all ingesting into one giant database and annotate it all as it comes in on an RTX A4500. The LFM annotations are basically triage, and then slowly annotations trickle into my halo model based on lowest confidence (right now that's DeepSeek 4.1 Flash 1017) for an upgraded annotation. (Agents…"
+        },
+        {
+          "by": "samstevens",
+          "text": "I worked on this release, happy to answer questions/chat about local AI vs cloud frontier models."
+        },
+        {
+          "by": "dchuk",
+          "text": "Just tried both the Omni model and the text only model, both as mlx versions, in lm studio omlx and rapid mlx, none of them could actually fire the model up, kept saying safetensors cant be read (yes I realize Claude should hear this not this thread)."
+        },
+        {
+          "by": "syntaxing",
+          "text": "I’ve been using 2.6B as my main home assistant model and it’s been good. I switched to Ling 3.0 Tiny since it’s faster with A1B. Really hoping 1.7B is good enough (2.5 version was too dumb for HA) so I can run everything on one machine."
+        },
+        {
+          "by": "kooi",
+          "text": "Looks really neat. I'm keen to try this on my clicks communicator when that arrives. It's mediatek NPU claims to handle ONNX. That plus the 12GB ram makes the wonder if I can get this phone to be a mini-agent."
+        }
+      ],
+      "image": "https://www.liquid.ai/og/og-default.jpg"
+    },
+    {
       "id": 50264853,
       "url": "https://www.brangus.io/survival-llm",
       "hn": "https://news.ycombinator.com/item?id=50264853",
@@ -739,6 +1272,48 @@
     }
   ],
   "glossary": {
+    "net worth": "What you own minus what you owe.",
+    "percentile": "A way to divide a group ranked from lowest to highest into 100 equal-sized slices.",
+    "paper wealth": "Value tied up in things like shares, rather than cash you can readily spend.",
+    "wealth tax": "A tax based on what someone owns, rather than just what they earn.",
+    "HTTPS": "Hypertext Transfer Protocol Secure: the secure way websites and apps send information over the internet.",
+    "certificate": "A digital ID that helps show which website a connection belongs to.",
+    "MITM": "Man-in-the-middle: an attack where someone secretly sits between two sides and reads or changes what they send.",
+    "firmware": "The built-in software that tells a device's hardware how to work.",
+    "UEFI": "Unified Extensible Firmware Interface: the built-in startup software that checks a computer and starts its main software.",
+    "EDK II": "An open-source codebase hardware makers and cloud providers use to create UEFI firmware.",
+    "PXE boot": "Starting a computer by loading its startup code from a network instead of a drive.",
+    "ICMP": "Internet Control Message Protocol: network messages that report errors or help check whether a device can be reached.",
+    "buffer overflow": "When a program reads or writes beyond the space set aside for data.",
+    "Secure Boot": "A startup check that helps keep untrusted software from loading.",
+    "TPM": "Trusted Platform Module: a security component that can hold secret keys used by a device.",
+    "kernel": "A small program that carries out a calculation on a computer's graphics chip or processor.",
+    "device tree": "A file that describes a device’s hardware so Linux knows how to work with it.",
+    "SoC": "System on a Chip: a computer’s main processing parts built together on one chip.",
+    "artificial reef": "A structure placed underwater to give sea life a place to live and people a place to explore.",
+    "scuttled": "Deliberately sunk, usually said of a ship.",
+    "PCBs": "Polychlorinated biphenyls: chemicals that can be harmful, so old ships are checked for them.",
+    "sonar": "A way to use sound underwater to map the seafloor or find objects.",
+    "Blue Riband": "An award for the fastest crossing of the Atlantic by a passenger ship.",
+    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "amortized": "Spread the cost of something expensive across the years it is used, rather than counting it all at once.",
+    "capital expenditure": "Money a company spends on something it expects to use for a long time, rather than an everyday bill.",
+    "S&P 500": "A group of 500 large US companies whose share prices are tracked together.",
+    "margins": "How much money is left from a sale after paying the costs of making what was sold.",
+    "smallnet": "The article's name for services such as Gemini, Finger, Gopher, and Spartan.",
+    "allocator": "A part of a program that sets aside and later returns space in the computer for information.",
+    "arena allocator": "A memory manager that gives out memory in a group and frees the whole group at once.",
+    "fuzzing": "Testing software with lots of varied inputs to see whether it breaks.",
+    "TUI": "Terminal User Interface: the menus and controls an app shows inside a text terminal.",
+    "comptime": "A Zig feature for doing some work while a program is being built, rather than while it runs.",
+    "incremental compilation": "Rebuilding only the parts of a program affected by changes, rather than starting over.",
+    "TLS": "Transport Layer Security: a way to scramble information as it travels between devices, so others can’t read it.",
+    "WASM": "WebAssembly: a way for an app to run plug-ins written in other programming languages.",
+    "bootstrap": "Getting a compiler built using an earlier tool or a small starter version.",
+    "RAII": "Resource Acquisition Is Initialization: a way for C++ to clean up things like files automatically when they are no longer needed.",
+    "parameters": "Learned values inside a model that shape the answers it gives.",
+    "context window": "The amount of text and information an AI can take into account at one time.",
+    "omni model": "A model that works with pictures, sound, and language together.",
     "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "hallucination": "When an AI gives made-up or incorrect information as if it were true.",
     "semantic search": "A way to find information by what it means, even when it doesn't use the exact words you searched for.",
@@ -758,7 +1333,6 @@
     "formalization": "Writing mathematics in a precise form that a computer can check.",
     "finite simple group": "A finite mathematical symmetry system that serves as a basic building block for understanding other groups.",
     "sporadic group": "One of 26 exceptional finite simple groups that do not fit the main repeating families.",
-    "kernel": "A small program that carries out a calculation on a computer's graphics chip or processor.",
     "auto-formalization": "Using software to turn ordinary math proofs into proofs a computer can check.",
     "CI": "Continuous integration: automatic checks that run when developers change code, helping catch problems early.",
     "cyclomatic complexity": "A measure of how many possible routes through a piece of code there are; more routes can make it harder to test.",
