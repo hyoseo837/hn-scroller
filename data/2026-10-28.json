@@ -1,0 +1,795 @@
+{
+  "date": "2026-10-28",
+  "cards": [
+    {
+      "id": 50264853,
+      "url": "https://www.brangus.io/survival-llm",
+      "hn": "https://news.ycombinator.com/item?id=50264853",
+      "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+      "time": 1793130906,
+      "points": 279,
+      "depth": [
+        {
+          "text": "someone made an **offline emergency assistant** that answers questions from **sources** stored on your computer",
+          "tier": "simple"
+        },
+        {
+          "text": "It is **free and open source**; after setup online, the model and library stay on your computer, and answers list the **articles they used**. Commenters split: some use offline AI with curated sources; others ask why risk **hallucinations** when plain-text search is an option.",
+          "tier": "substance",
+          "data": [
+            [
+              "NVIDIA Nemotron 3.5 Super",
+              "21 of 22 right"
+            ],
+            [
+              "Qwen3.8 27B",
+              "21 of 22 right"
+            ],
+            [
+              "NVIDIA Nemotron 3.5 Lightning",
+              "19 of 22 right"
+            ],
+            [
+              "IBM Granite 4.2 8B",
+              "14 of 22 right"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some use offline AI with curated sources to work disconnected; others ask why risk hallucinations when plain-text search is an option.",
+      "comment_count": 122,
+      "terms": [
+        "LLM",
+        "hallucination",
+        "semantic search",
+        "open source",
+        "model"
+      ],
+      "entities": [
+        "Survival LLM",
+        "FEMA",
+        "CDC",
+        "Wikipedia",
+        "MedlinePlus",
+        "National Library of Medicine",
+        "UK Medicines A to Z",
+        "Appropedia",
+        "Stack Exchange",
+        "iFixit",
+        "NVIDIA Nemotron",
+        "Qwen",
+        "IBM Granite",
+        "Apple",
+        "macOS",
+        "Windows",
+        "Project Nomad",
+        "Kiwix",
+        "WikiMed",
+        "Ready.gov",
+        "Ollama",
+        "MiniCPM",
+        "Bonsai",
+        "Mozilla AI",
+        "llamafile",
+        "Anthropic",
+        "OpenAI",
+        "Linux",
+        "Raspberry Pi",
+        "Scratch",
+        "Python",
+        "TextRank",
+        "ASR",
+        "TTS",
+        "StarCraft"
+      ],
+      "comments": [
+        {
+          "by": "x3haloed",
+          "text": "This topic is bringing out the hallucination-panic crowd. It's perfectly safe to use LLMs to surface underlying data and knowledge without having to trust that it's giving you correct advice. Use the LLM as search technology: string match -> semantic search -> search intelligence. This is especially helpful when you don't know the right question to ask. Semantics only help you find text that is…"
+        },
+        {
+          "by": "jvanderbot",
+          "text": "Shoutout to project nomad. https://www.projectnomad.us/ its got a ton of useful options, preconfigured, integrates pretty easily, and can use any local LLM or data."
+        },
+        {
+          "by": "wanderingbit",
+          "text": "I set this up on my machine and tested it with the following question: How can I build a bow drill so I can start a fire? It got it partially right: spindle, bow with string tied the correct way, and fire board. But then it flubbed by saying you put the spindle between both hands and move your hands back and forth to rotate the spindle and create the necessary friction… this totally ignores using…"
+        },
+        {
+          "by": "rnd0",
+          "text": "Considering the tendency even now of LLMs to hallucinate, and the hardware requirements for any kind of LLM -why not just gather those resources into some sort of local archive that can be searched without an LLM? This seems redundant and requiring more overhead while providing less reliability than something like Kiwix to me."
+        },
+        {
+          "by": "saaaaaam",
+          "text": "> Mac or PC with 16–31 GB | IBM Granite 4.2 8B | 14 of 22 right | 6 GB So on a regular consumer machine this is going to be wrong nearly half the time. Great! Let’s hope it’s only on the simple stuff and not the “how do I perform an emergency appendectomy”. Honestly, just buy some books."
+        }
+      ],
+      "image": "https://www.brangus.io/survival-llm/social-card.png"
+    },
+    {
+      "id": 50264857,
+      "url": "https://tailscale.com/ssh-investigation-update",
+      "hn": "https://news.ycombinator.com/item?id=50264857",
+      "title": "Tailscale SSH: Investigation and remediation update",
+      "time": 1793130921,
+      "points": 253,
+      "depth": [
+        {
+          "text": "Tailscale is investigating **security flaws** in its remote access feature and **preparing fixes**",
+          "tier": "simple"
+        },
+        {
+          "text": "Most of the issues involve **privilege escalation**: someone already allowed to connect may act beyond their local account’s permissions. Tailscale says fixes for most are undergoing testing, with a **patched client release** targeted by the end of Tuesday 27 October, if testing succeeds. Until then, it recommends reviewing access policies and disabling **SSH forwarding** if it isn’t needed.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say the flaws only matter when someone already has access to a vulnerable node; others recommend turning Tailscale SSH off and using OpenSSH instead.",
+      "comment_count": 126,
+      "terms": [
+        "SSH",
+        "privilege escalation",
+        "SSH forwarding",
+        "ACLs"
+      ],
+      "entities": [
+        "Tailscale",
+        "Tailscale SSH",
+        "OpenSSH",
+        "WireGuard",
+        "NetBird",
+        "Headscale",
+        "OpenVPN",
+        "Cloudflare"
+      ],
+      "comments": [
+        {
+          "by": "minimaltom",
+          "text": "Former tailscalar here and now someone managing tailscale at an org. Having done my own review of the vulns and the fixes as they are landing in github, its pretty clear to me that this only affects situations where you use ACLs to permit ssh into a node (via tailscale ssh, not via opensshd), but dont give a path to sudoers/root. If a user had no SSH access and/or connectivity to a vulnerable…"
+        },
+        {
+          "by": "rietta",
+          "text": "I am fairly glad I have stuck with stock OpenSSH that ships with Linux. This incident proves I am glad with that choice. Over the decades, I have maintained remote access through port forwarding on my router - at one point in 2008 I put SSH on port 80 so I could access it from the restricted wifi network at the hospital my grandmother was at. I have also used openvpn. I have also used cloudflare…"
+        },
+        {
+          "by": "andix",
+          "text": "Somehow I don't think it's a good idea to let Tailscale handle service authentication at all. It's supposed to be an additional security layer around existing infrastructure and services. Letting Tailscale handle VPN and SSH at the same time is basically once again a single point of failure. Similar to exposing SSH directly to the internet."
+        },
+        {
+          "by": "redmalang",
+          "text": "vaguely related - I want to make it easy for the llms to deploy and manage derp,tailgate etc with the hard requirement that you can continue to use the tailscale clients (very thankful to tailscale for making this so easy!): https://tailgate.latchlabs.dev"
+        },
+        {
+          "by": "aborsy",
+          "text": "There are too many features, and lines of code (probably more than OpenVPN). I'm pretty sure there are all kinds of zero days in it, with this attack surface and feature set. I use it extensively, and I would rather pay them a fee if they could review thr code. A possibility is a lock down mode, disabling risky features. I just want a VPN for connrctiviy, no taildrop, taildrive, SSH, funnel…"
+        }
+      ],
+      "image": "https://tailscale.com/files/images/og-image.png"
+    },
+    {
+      "id": 50265609,
+      "url": "https://www.anthropic.com/research/early-progress-drug-development",
+      "hn": "https://news.ycombinator.com/item?id=50265609",
+      "title": "Early progress on accelerating drug development with Claude",
+      "time": 1793134242,
+      "points": 194,
+      "depth": [
+        {
+          "text": "Anthropic is using **Claude** for drug development, from molecule design to **trial paperwork**",
+          "tier": "simple"
+        },
+        {
+          "text": "Generate reported a design about **70% shorter** than standard that worked better in lab tests. Enveda says its document checks cut human review time by **89%**, while most of this research is still **preclinical**—not yet testing drugs in people.",
+          "tier": "substance",
+          "data": [
+            [
+              "shorter design",
+              "about 70% shorter"
+            ],
+            [
+              "human review time reduction",
+              "89%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: optimists say AI could free scientists and help medicine research; skeptics say biology and human trials remain stubborn bottlenecks.",
+      "comment_count": 170,
+      "terms": [
+        "preclinical",
+        "clinical trial",
+        "antibody",
+        "lead",
+        "hit",
+        "CAR T-cell therapy"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude",
+        "Claude Code",
+        "BigHat Biosciences",
+        "Bristol Myers Squibb",
+        "Divergence Labs",
+        "Enveda",
+        "Generate Biomedicines",
+        "The Column Group",
+        "Pleiades",
+        "Reccy",
+        "Mithril Medicine",
+        "Cody Tranbarger",
+        "Michael Pourdehnad",
+        "Claude Science",
+        "Life Sciences Verification Program"
+      ],
+      "comments": [
+        {
+          "by": "helsinkiandrew",
+          "text": "> like proposing initial designs for new molecules James van Geelen Of Citrini research brought up a good point on a podcast this week, that designing the molecules is perhaps 10-20% of the effort in bringing a drug to market. We have more possible drug designs than ever get developed. Whilst AI drugs might be more likely to pass phase 2 tests than others and AI might be applied to the rest of…"
+        },
+        {
+          "by": "orthogonal_cube",
+          "text": "This is one application of AI that I’ve been hopeful for. Accelerating research into new medicines and cures to disorders, diseases, and cancers could be a net positive on human lives. Maybe it’ll help bring R&D costs down so that medicines for rare diseases aren’t out of reach for those that are afflicted by them. > If Claude is to significantly increase the rate of new cures, we need to work…"
+        },
+        {
+          "by": "gumby",
+          "text": "Coming up with candidate drugs is the easiest part of the process. It’s possible that that could be improved a little (not sped up, but suggesting compounds in silico less likely to fail) and possibly have suggestions for scale up, but those are all hard, and the latter is less amenable to being “read” during trains phase. This has been one of the target AI applications since the 1960s. (Former…"
+        },
+        {
+          "by": "adamredwoods",
+          "text": "I have a rare disease with no cure. Id love to see how Claude can help with us, but I'm cautious what it can really advance. Murine models still take time, and clinical trials are slow. I would think most biotech companies lose money at these stages. >> If Claude is to significantly increase the rate of new cures, we need to work with many more biotechnology firms and integrate Claude more deeply…"
+        },
+        {
+          "by": "yewenjie",
+          "text": "TBH, I am waiting for Mathocalypse-level progress in biology and medicine, but I guess that's not happening as fast, because it's the real world, human lives, etc., mostly etc."
+        }
+      ],
+      "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6a50f5ba4c0931f8d2c411f26d860955c1efeae7-1200x630.jpg"
+    },
+    {
+      "id": 50261647,
+      "url": "https://cfsg.axiommath.ai/",
+      "hn": "https://news.ycombinator.com/item?id=50261647",
+      "title": "Classification of Finite Simple Groups Formalized in Lean",
+      "time": 1793118542,
+      "points": 194,
+      "depth": [
+        {
+          "text": "someone turned a huge math proof into **checked code** and **found a gap** along the way",
+          "tier": "simple"
+        },
+        {
+          "text": "The team formalized the **first-generation proof** in Lean, with **every logical step checked** by Lean’s kernel. During that work, they found **counterexamples** to a closure assertion in a published route to the Unbalanced Group Theorem, then gave an alternative argument for the simple-group case.",
+          "tier": "substance",
+          "data": [
+            [
+              "Lean code",
+              "43.1M lines"
+            ],
+            [
+              "sporadic groups",
+              "26"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some call this a good use of auto-formalization and say AI companies should fill known gaps; others say LLM formalization is less useful than human formalization.",
+      "comment_count": 52,
+      "terms": [
+        "Lean",
+        "formalization",
+        "finite simple group",
+        "sporadic group",
+        "kernel",
+        "auto-formalization"
+      ],
+      "entities": [
+        "Lean",
+        "The Classification of Finite Simple Groups",
+        "Unbalanced Group Theorem",
+        "Solomon"
+      ],
+      "comments": [
+        {
+          "by": "mlmonkey",
+          "text": "Out of curiosity: is it possible to take a frontier model and just let it loose on all math textbooks out there, converting each and every proof/theorem/lemma/etc. into Lean? A frontier model should be able to do that, right? And it's a one-time task: do it once and it's there for eternity, available as a library to be used in other proofs. Maybe my understanding of Lean is wrong; I'm thinking of…"
+        },
+        {
+          "by": "sebzim4500",
+          "text": "This seems like a very good use of auto-formalization, because in the past mathematicians have incorrectly believed that they were finished with the classification only discover a missing class/sporadic group. The original proof was a collaboration of ~100 mathematicians, if Tao is correct then we should expect to see more such collaborations in the future like we do in e.g. physics."
+        },
+        {
+          "by": "Davidzheng",
+          "text": "Makes me sad that the homotopical foundation people never got their shit together and now formalization is so mature but it's still done in set theoretic foundations."
+        },
+        {
+          "by": "compacct27",
+          "text": "Groups were my gateway drug into abstract algebra. A friend clued me into symmetry being everywhere and Groups are how symmetry is formalized, and it’s been a crazy journey understanding all that. The frontier models can tie those abstract concepts to plain English examples and answer questions decently well, it’s never been a better time to pick up the field solo and see what it has to offer us"
+        },
+        {
+          "by": "richard_chase",
+          "text": "I was thinking this would be done at some point but not so soon."
+        }
+      ],
+      "image": "https://cfsg.axiommath.ai/site/og.png"
+    },
+    {
+      "id": 50258868,
+      "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work",
+      "hn": "https://news.ycombinator.com/item?id=50258868",
+      "title": "Here be monsters: What do you still need to know when agents do the work?",
+      "time": 1793107402,
+      "points": 166,
+      "depth": [
+        {
+          "text": "someone argues engineers still need **system knowledge** to spot trouble in **AI-written code**",
+          "tier": "simple"
+        },
+        {
+          "text": "After SonarQube flagged **cyclomatic complexity** in components Codex had written on single lines, the author inspected the logic and found the complexity warranted, then asked Codex to make SonarQube happy; it split the code into **10 files**, and CI passed. The article says system ownership rests on fundamentals, breadth, and **just-in-time depth**: knowing where to investigate, then learning what a fix requires.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: one commenter says AI can create a system map just in time; others say engineers still need their own system understanding, and that developer discomfort can warn of product failure.",
+      "comment_count": 89,
+      "terms": [
+        "CI",
+        "cyclomatic complexity",
+        "just-in-time depth",
+        "SRE",
+        "YAGNI"
+      ],
+      "entities": [
+        "Codex",
+        "SonarQube",
+        "Hashnode",
+        "Kubernetes",
+        "npm"
+      ],
+      "comments": [
+        {
+          "by": "mrothroc",
+          "text": "This matches my own experience, pre-AI. As I've moved from IC to having a team over the years, more code was being written than I could possibly understand at the depth I would have if I'd written it myself. The skill I learned is exactly as you describe: understand the system. For me, this means \"boxes and lines\", the components and how they interact. I've encouraged developers on my team to…"
+        },
+        {
+          "by": "trjordan",
+          "text": "I like the analogy. It feels right. But I don't think it actually is, because it leans hard on the _feeling_ of failure, vs. the actual failure. The failure that actually matters here is product failure. Angry users. Security incidents. Downtime. Broken workflows. Stressed and uncomfortable developers have, historically, been a leading indicator of product failure. Software is complex and when…"
+        },
+        {
+          "by": "smallerfish",
+          "text": "Site is down, but one thing in particular that needs close attention: db schema. I've found that LLMs make awful normalization decisions; you can limit the fallout somewhat by modularizing database access, bit it still inevitably bleeds over into the object model etc. On AI heavy projects I tend to pause feature development every few days for code & schema review, and subsequent cleanups."
+        },
+        {
+          "by": "LewisOrton",
+          "text": "I dont know if i fully agree to it. ppl are still trying to find the aspects that AI do not handle (or do very well) yet, to define the irreplaceable value of human (humanity?), without realizing that these abilities/capabilities are within the expanding range of AI soon if not tomorrow. Why would one assume that (99.99% of) human can solve the issues that AI can not? should we stop treating the…"
+        },
+        {
+          "by": "olwmc",
+          "text": "> Most of the successful engineers and engineering leaders I have had the pleasure of working with were able to hold a discussion on almost any topic, whether technical or not Reverse Gell-man? https://en.wiktionary.org/wiki/Gell-Mann_amnesia_effect#Engl..."
+        }
+      ],
+      "image": "https://cdn.hashnode.com/uploads/og-images/69b44e3d6e27dd07d92bbf57/3a278202-0f64-4cf0-9a32-bfd202f3a073.png"
+    },
+    {
+      "id": 50260526,
+      "url": "https://www.wsj.com/finance/investing/a-300-billion-debt-wall-is-looming-over-private-equity-backed-companies-d6359497",
+      "hn": "https://news.ycombinator.com/item?id=50260526",
+      "title": "A $300B 'Debt Wall' Is Looming over Private-Equity Backed Companies",
+      "time": 1793113767,
+      "points": 164,
+      "depth": [
+        {
+          "text": "a **debt wall** is looming over companies backed by **private equity**",
+          "tier": "simple"
+        }
+      ],
+      "camps": null,
+      "comment_count": 61,
+      "terms": [
+        "debt wall",
+        "private equity",
+        "private credit",
+        "write-down wall",
+        "BDC",
+        "LLM"
+      ],
+      "entities": [
+        "JAWS",
+        "Vispero",
+        "NVDA",
+        "Google",
+        "GOOG",
+        "META",
+        "Mag7"
+      ],
+      "comments": [
+        {
+          "by": "mandevil",
+          "text": "For a while (2018-2022) it was hot to buy up software companies that dominated a single niche and jack up prices. The bet was that since software is such a 0-1 business that they would have great moats and have strong pricing power. My father-in-law is blind and used to use JAWS until it got bought up by a private equity firm (Vispero) which tried to dominate the software accessibility market and…"
+        },
+        {
+          "by": "chollida1",
+          "text": "One interesting knock on from the hyperscaler growth we've seen is that the Mag7 have issued so much debt that they are crowding out other companies who would otherwise have no trouble issuing debt. The private equity and private credit crowd is one of these groups that are currently running into this issue. There is no way a growing company($15M to $500M in yearly sales is the sweet spot for…"
+        },
+        {
+          "by": "cs702",
+          "text": "As I understand it, there's also a 'write-down wall' looming over many companies and assets in private equity portfolios. Those holdings are carried in the books at valuations that arguably could be justified in the past but are no longer realistic. Private equity firms are basically sitting on them, unable to sell them or list them at current valuations."
+        },
+        {
+          "by": "xx__yy",
+          "text": "https://wallhop.io/https://www.wsj.com/finance/investing/a-3..."
+        },
+        {
+          "by": "vintagedave",
+          "text": "For someone like me who doesn't really understand this area, what does it mean for those big VC-backed or private equity-backed firms that have bought others, and have debt? Are they forced to sell? To raise new capital? To increase value somehow (?) to show the debt can be met? I don't know enough to even know what questions to ask. Are they in trouble, I guess, as in, suppose they had to sell…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50256952,
+      "url": "https://gforth.org/manual/1.0/NEWS.html",
+      "hn": "https://news.ycombinator.com/item?id=50256952",
+      "title": "Gforth 1.0",
+      "time": 1793096601,
+      "points": 163,
+      "depth": [
+        {
+          "text": "Gforth adds **ways to run tasks together** and **tools to inspect code** for Forth programmers",
+          "tier": "simple"
+        },
+        {
+          "text": "The task system can run across **multiple cores or hardware threads**, and **message queues** combine communication with synchronization. The IDE can show a word’s **source code**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 17,
+      "terms": [
+        "Forth",
+        "multitasking",
+        "message queue",
+        "actor model",
+        "IDE",
+        "hardware thread"
+      ],
+      "entities": [
+        "Gforth",
+        "Forth"
+      ],
+      "comments": [
+        {
+          "by": "Hendrikto",
+          "text": "Some sorely needed context: > [Gforth is] a free, fast, featureful and portable implementation of the Forth 2012 language. > Gforth runs under GNU, BSD, and similar systems, MS Windows and MacOS X and should not be hard to port to other systems supported by GCC."
+        },
+        {
+          "by": "fallat",
+          "text": "The standard library is lacking some really nice conveniences. I'm working on correcting this and teaching Forth as a \"grassroots\" language for people who want to go back to the joy of programming as an art. The 100rabbits folks have already done a lot of work around proliferating that idea but I want to work outside of the Uxn machine that they use. Mark my words, us programmers are not phased…"
+        },
+        {
+          "by": "jacquesm",
+          "text": "I just did a big project using Forth and it is every bit as useful as it was in the past. Yes, there no security model, and you're going to have to work to manage your project, no fancy IDE or editor. I took a piece of code I wrote in 1988 and built it out to pass the Forth standard core words test and some extensions as well, then added all of the Raspberry Pi io devices as primitives. This…"
+        },
+        {
+          "by": "anta40",
+          "text": "Nice to see gforth is still being maintained. BTW, on the other side, looks like gforth still lacks the ability to create native OS executable, something like: gcc myprog.c -o myprog ?"
+        },
+        {
+          "by": "jan_m_savage",
+          "text": "and here is the tutorial: https://net2o.de/gforth/Tutorial.html"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50268380,
+      "url": "https://lexifina.com/blog/git-for-the-us-code",
+      "hn": "https://news.ycombinator.com/item?id=50268380",
+      "title": "Git for the US Code",
+      "time": 1793152070,
+      "points": 164,
+      "depth": [
+        {
+          "text": "someone built **version history for the US Code**, showing when each change to a law took effect",
+          "tier": "simple"
+        },
+        {
+          "text": "The author applied amending instructions from public laws between release points from 2017 onward, then compared the result with newer text: **361 of 365 changes** across nine titles matched exactly. Each change links to its law and effective date, but the tool **doesn't yet show laws that reach back** to earlier dates.",
+          "tier": "substance",
+          "data": [
+            [
+              "changes reproduced exactly",
+              "361 of 365"
+            ],
+            [
+              "titles",
+              "nine"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters want a public, traceable record of who changed laws; skeptics say laws’ exceptions make Git-style tracking tough and lawyers already have basic change-tracking.",
+      "comment_count": 79,
+      "terms": [
+        "Git",
+        "release point",
+        "effective-date note",
+        "positive law",
+        "retroactive"
+      ],
+      "entities": [
+        "US Code",
+        "Git",
+        "Lexifina",
+        "Alan Yahya",
+        "Office of the Law Revision Counsel",
+        "CARES Act"
+      ],
+      "comments": [
+        {
+          "by": "kfogel",
+          "text": "NYT, 2007: \"... Think of what version control software could mean for the Congress [...]. If bills were created under a system where strike-throughs and additions were carefully tracked, the public would know which legislator made which change to a proposed piece of legislation as it made its way through the Capitol. At last, there would be transparency in the legislative process. Best-case…"
+        },
+        {
+          "by": "Ericson2314",
+          "text": "The Hacker News Community (hah) needs to lobby hard to pass a law (what boostrapping!) to require the https://en.wikipedia.org/wiki/Office_of_the_Law_Revision_Cou... to maintain the repo as part of their duties, and do it retroactively for the entire history of the US Code. It's a simple idea; it's cheap; there are no outstanding technical questions; it benefits almost everyone. Let's get this…"
+        },
+        {
+          "by": "pcblues",
+          "text": "I hadn't thought of using git to track the changes in legislation. This is a cool idea. In Australia, I spent a bit of time trying to work out how to find which politician voted for what (both at state and federal level), so that when elections come, you can single out the individuals who voted for what legislation. I think AI may make this easier, but the challenge is in not spamming the \"free…"
+        },
+        {
+          "by": "TomAbel",
+          "text": "Reminds me of a similar project for french law French bills evolution versioned in git and visualized\nThe Law Factory: french bills as git, opendata and dataviz\nhttps://www.lafabriquedelaloi.fr/ \"Law is Code\" on The Law Factory: french bills as git, opendata and dataviz - https://news.ycombinator.com/item?id=7817357 May 2014 (0 comments)"
+        },
+        {
+          "by": "demibabs",
+          "text": "When I read AI-generated text, my eyes just start glazing over… it really is hard to read. The idea is cool though."
+        }
+      ],
+      "image": "https://lexifina.com/social-preview-v3.png?v=20261018"
+    },
+    {
+      "id": 50245014,
+      "url": "https://hothardware.com/news/why-micron-is-suddenly-ditching-4f-dram",
+      "hn": "https://news.ycombinator.com/item?id=50245014",
+      "title": "Why Micron Is Suddenly Ditching 4F² DRAM as Rivals Double Down",
+      "time": 1793027104,
+      "points": 158,
+      "depth": [
+        {
+          "text": "Micron is **giving up on a denser design** and betting on **stacked DRAM** instead",
+          "tier": "simple"
+        },
+        {
+          "text": "Micron says moving from **6F² to 4F²** offers little density gain but adds **cost and complexity**. Samsung, SK hynix and CXMT are pursuing 4F², while Micron calls **3D DRAM** the future.",
+          "tier": "substance",
+          "data": [
+            [
+              "theoretical density improvement",
+              "33%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: skeptics call it investor spin; others say scaling existing processes makes more sense than more research.",
+      "comment_count": 24,
+      "terms": [
+        "DRAM",
+        "4F² / 6F²",
+        "3D DRAM"
+      ],
+      "entities": [
+        "Micron",
+        "Samsung",
+        "SK hynix",
+        "CXMT",
+        "Scott DeBoer"
+      ],
+      "comments": [
+        {
+          "by": "Danieru",
+          "text": "Sounds rather more like a company behind the innovation curve pretending to \"skip\" the innovation as if to jump into a better innovation. When the actual truth is they are sticking with the old thing. Reframed as a choice. If \"Ditching 4f\" is such a good idea, why show their hand right before their competitors make the foolish choice of releasing it? Why not hold your cards until afterwards?…"
+        },
+        {
+          "by": "lexicality",
+          "text": "That roadmap image looks like mojibake. I would say I'm excited to buy 6F²ζÅ DRAM but I assume it's going to be reserved for AI datacentres that don't exist."
+        },
+        {
+          "by": "InsidiousWombat",
+          "text": "At the markups they are making they could be hand-soldering the bits and still be ahead, scaling existing process makes more sense than investing more in research."
+        },
+        {
+          "by": "ksec",
+          "text": "I hope I am wrong but still dont see any major breakthrough in near future we could bring the BOM cost of DRAM down to below $1/GB. Not even 4F^2 would do that."
+        },
+        {
+          "by": "octoberfranklin",
+          "text": "Disappointing that they didn't toss in an image showing the difference between 6T and 4T. Here's a good one: https://semiwiki.com/forum/threads/samsung-teases-16-layer-3..."
+        }
+      ],
+      "image": "https://images.hothardware.com/contentimages/newsitem/71935/content/16x9_2133x1200_highres-micron-boise-fab-photo.jpg"
+    },
+    {
+      "id": 50234796,
+      "url": "https://arstechnica.com/science/2026/10/meet-the-2026-winner-of-nikons-small-world-photomicrography-contest/",
+      "hn": "https://news.ycombinator.com/item?id=50234796",
+      "title": "Ink droplets in motion snag top prize in Nikon Small World contest",
+      "time": 1792954188,
+      "points": 161,
+      "depth": [
+        {
+          "text": "someone won Nikon Small World's photo contest with **ink droplets** frozen **mid-air**",
+          "tier": "simple"
+        },
+        {
+          "text": "Ole Bielfeldt **took apart the printer** so the paper moved under a stationary printhead. He shot in a dark room, using a flash as the shutter to freeze drops that moved faster than the camera’s shutter speed; the setup needed no pricey equipment, and he **doesn’t use AI** in his images.",
+          "tier": "substance",
+          "data": [
+            [
+              "other entries",
+              "1,802"
+            ],
+            [
+              "countries",
+              "69"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 24,
+      "terms": [
+        "photomicrography",
+        "printhead",
+        "shutter"
+      ],
+      "entities": [
+        "Nikon Small World",
+        "Ole Bielfeldt",
+        "Nikon Instruments",
+        "Eric Flem",
+        "macrofying"
+      ],
+      "comments": [
+        {
+          "by": "yhjc2692",
+          "text": "\"Neurons in an expanded mouse brain\" (3rd place) is also stunning: https://www.nikonsmallworld.com/galleries/2026-photomicrogra... I didn't know brains actually look like this inside. Our world truly is beautiful, across all scales!"
+        },
+        {
+          "by": "landonxjames",
+          "text": "There is an interesting video of his rig for this shot in this article: https://www.nikonsmallworld.com/masters-of-microscopy/ole-bi..."
+        },
+        {
+          "by": "doctorzook",
+          "text": "It’s a great photo, but the second-place jumping spider is my favorite: it is just so adorable. https://www.nikonsmallworld.com/galleries/2026-photomicrogra..."
+        },
+        {
+          "by": "King-Aaron",
+          "text": "When I first saw this photo I refused to believe it was real. This is just so otherworldly, it's fantastic."
+        },
+        {
+          "by": "hn-aarvin",
+          "text": "The same photographer has two other photographs[^1] which previously were ranked highly in the contest. All seem to focus on chemical reactions and are stunning. Interestingly, the previous two—of a candle and match—used 2.5x magnification, where as this one required 20x magnification, which just goes to show as to how tiny the printer mechanics really are. [^1]…"
+        }
+      ],
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/nikonTOP-1152x648.jpg"
+    },
+    {
+      "id": 50240465,
+      "url": "https://www.cocoterra.com/guide-on-how-to-grow-chocolate-at-home/",
+      "hn": "https://news.ycombinator.com/item?id=50240465",
+      "title": "How to grow a cacao tree at home (2024)",
+      "time": 1793001017,
+      "points": 151,
+      "depth": [
+        {
+          "text": "someone **grew cacao trees** in **Northern California** and shares how to try it at home",
+          "tier": "simple"
+        },
+        {
+          "text": "The guide recommends **soaking fresh seeds** for 1-2 days until a root starts to poke out, then keeping the soil warm and moist. Flowers need **hand-pollinating**, and baby pods dry out after 6-8 weeks.",
+          "tier": "substance",
+          "data": [
+            [
+              "seed soaking",
+              "1-2 days"
+            ],
+            [
+              "pod drying",
+              "6-8 weeks"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 45,
+      "terms": [
+        "cherelle wilt",
+        "cross-pollinate",
+        "hand-pollinate",
+        "midge"
+      ],
+      "entities": [
+        "CocoTerra",
+        "Nate Saal",
+        "ChoViva"
+      ],
+      "comments": [
+        {
+          "by": "seszett",
+          "text": "Cacao trees are the most difficult plant I have grown, they are much more finicky than many others, and I almost only grow tropical or subtropical plants (in a temperate climate, in France and now Belgium). I don't know which climate this gentleman lives in, but winter in France has been fatal to several of my trees simply because of the reduced ambient humidity due to needing heating in the…"
+        },
+        {
+          "by": "xxmarkuski",
+          "text": "I recently tried \"ChoViva\" it's a chocolate substitute made from sunflower seeds. Turns out 80% of the chocolate flavor comes from the processing, including fermentation and roasting and not from the plant. They process the sunflower seeds in a way that achieves a taste and texture very close to chocolate. In a way, I prefer it over chocolate because it has no caffeine and has a slightly…"
+        },
+        {
+          "by": "wjnc",
+          "text": "Can I just add that this commercial website is great. It's informative. It has lots of information. It's very clear to read. And the blog just breathes loving the product."
+        },
+        {
+          "by": "uxhacker",
+          "text": "Until I saw this I was wondering where Switzerland and Belgium got there cocoa from, because I have never seen a tree growing in either country, and one is always hearing about Swiss and Belgium chocolate."
+        },
+        {
+          "by": "whatever1",
+          "text": "I love chocolate. But man some some times I wonder how desperately hungry were the people who made something edible out of the cocoa tree."
+        }
+      ],
+      "image": "https://www.cocoterra.com/wp-content/uploads/cocoterra-social-share-1.jpg"
+    }
+  ],
+  "glossary": {
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "hallucination": "When an AI gives made-up or incorrect information as if it were true.",
+    "semantic search": "A way to find information by what it means, even when it doesn't use the exact words you searched for.",
+    "open source": "Software whose code is shared so other people can inspect, run, or change it.",
+    "model": "A mathematical setup where the claims or rules in question all hold.",
+    "SSH": "Secure Shell: a way to connect to another computer and send it commands over a network.",
+    "privilege escalation": "A flaw that lets someone get more control of a computer than they should have.",
+    "SSH forwarding": "A setting that sends other network traffic through an existing remote login connection.",
+    "ACLs": "Access Control Lists: rules that decide which people or devices can reach which computers.",
+    "preclinical": "Work on a possible medicine before it is tested in people.",
+    "clinical trial": "A study that tests a treatment in people to see whether it works and is safe.",
+    "antibody": "A protein the immune system uses to recognize a target; some medicines use these proteins.",
+    "lead": "A possible drug that researchers are still trying to improve.",
+    "hit": "A design that shows the desired effect in an early test.",
+    "CAR T-cell therapy": "A cancer treatment that gives immune cells instructions to recognize cancer cells.",
+    "Lean": "A computer program used to write mathematical proofs and check that their steps are correct.",
+    "formalization": "Writing mathematics in a precise form that a computer can check.",
+    "finite simple group": "A finite mathematical symmetry system that serves as a basic building block for understanding other groups.",
+    "sporadic group": "One of 26 exceptional finite simple groups that do not fit the main repeating families.",
+    "kernel": "A small program that carries out a calculation on a computer's graphics chip or processor.",
+    "auto-formalization": "Using software to turn ordinary math proofs into proofs a computer can check.",
+    "CI": "Continuous integration: automatic checks that run when developers change code, helping catch problems early.",
+    "cyclomatic complexity": "A measure of how many possible routes through a piece of code there are; more routes can make it harder to test.",
+    "just-in-time depth": "Learning enough about an unfamiliar problem right when you need to solve it.",
+    "SRE": "Site Reliability Engineering: work focused on keeping online services running and fixing them when they break.",
+    "YAGNI": "You Aren't Gonna Need It: the idea that you shouldn't build a feature before there's a real need for it.",
+    "debt wall": "A large amount of borrowed money comes due around the same time, so borrowers need to repay or replace it.",
+    "private equity": "Investment firms that buy whole companies, try to make them earn more, then sell them.",
+    "private credit": "Loans from investment firms and other lenders outside the usual bank system.",
+    "write-down wall": "A wave of records showing that assets are worth less than they were listed as before.",
+    "BDC": "Business Development Companies: organizations that lend money to businesses.",
+    "Forth": "A programming language where instructions work with a pile of values, taking from or adding to the top.",
+    "multitasking": "Running more than one task in a program, by switching between them or working on them at once.",
+    "message queue": "A way for tasks to leave messages for each other and pick them up later, so they can communicate and coordinate.",
+    "actor model": "A way to organize a program as separate workers that communicate by sending messages.",
+    "IDE": "Integrated Development Environment: an app that brings coding and other development tools together.",
+    "hardware thread": "A separate stream of instructions that a processor can run alongside other streams on the same chip.",
+    "Git": "A tool for keeping a history of code changes and combining work.",
+    "release point": "A published snapshot of the US Code that is current through a particular public law.",
+    "effective-date note": "A note saying when a change in a law starts to apply.",
+    "positive law": "A title of the US Code Congress has formally enacted as law.",
+    "retroactive": "Applied to buildings that already existed, not just ones built later.",
+    "DRAM": "Dynamic Random-Access Memory: the working memory a computer uses while running things.",
+    "4F² / 6F²": "Names for different shapes and layouts of a DRAM cell; 4F² was expected to offer a theoretical density improvement over 6F².",
+    "3D DRAM": "Memory made by stacking multiple layers of DRAM storage cells vertically.",
+    "photomicrography": "Taking photographs through a microscope.",
+    "printhead": "The part of an inkjet printer that puts ink onto paper.",
+    "shutter": "The camera part that opens briefly to let light in for a picture.",
+    "cherelle wilt": "The natural process where young cacao pods dry out instead of continuing to grow.",
+    "cross-pollinate": "Move pollen between flowers so they can produce fruit.",
+    "hand-pollinate": "Move pollen from one flower to another yourself so the flower can be fertilized.",
+    "midge": "A small insect that the article says pollinates cacao flowers."
+  }
+}
