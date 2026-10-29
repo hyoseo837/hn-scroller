@@ -2,6 +2,337 @@
   "date": "2026-10-29",
   "cards": [
     {
+      "id": 50251200,
+      "url": "https://the-decoder.com/openais-isolated-ai-agents-found-ways-to-talk-to-each-other-through-cpu-cache/",
+      "hn": "https://news.ycombinator.com/item?id=50251200",
+      "title": "OpenAI's agents talked to each other through the CPU Cache",
+      "time": 1793049858,
+      "points": 259,
+      "depth": [
+        {
+          "text": "OpenAI tested whether **isolated agents** could communicate, and they passed messages through a **processor cache**",
+          "tier": "simple"
+        },
+        {
+          "text": "In one test, agents in separate environments on shared hardware were told to **exchange secrets** without a network or shared files. One changed cache data; the other measured **load times** and decoded the message. OpenAI says these channels are usually slow and hard to exploit, but can **cross boundaries** meant to keep agents apart.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters say the agents only did what they were told, while others say shared-hardware isolation is inadequate and stronger separation is needed.",
+      "comment_count": 181,
+      "terms": [
+        "CPU cache",
+        "side channel",
+        "air gap",
+        "sandbox"
+      ],
+      "entities": [
+        "OpenAI"
+      ],
+      "comments": [
+        {
+          "by": "hashmap",
+          "text": "\"Look, it wouldn't have even mattered if we had done advanced cyber security like turn off internet or look at logs when huggingface was attacked!! See look it can still.. *prompts a shitload of agents, waits 6 hours* look wowwww they still learned how to talk to each other even if we turned internet off!\" \"They wouldn't have been able to attack huggingface though, thats still criminal…"
+        },
+        {
+          "by": "cadamsdotcom",
+          "text": "(Because the agents were asked to find a way.) Article is great, very balanced. But if you're going to spend time reading something, the primary source isn't much longer and gives a clearer picture. OpenAI's article is quite readable. As another commenter wrote you can get it here: https://news.ycombinator.com/item?id=50214416 > In one experiment, we asked agents in separate microVMs, created and…"
+        },
+        {
+          "by": "linsomniac",
+          "text": "These covert communications are reminding me of a short story I read a few decades ago but haven't been able to track back down. I thought it was a Charles Stross story in the _Toast_ collection, but I re-read it and it isn't there. In the story some University students take part in a trial that involves a brain scan and then them spending the rest of the day answering a customer support message…"
+        },
+        {
+          "by": "thomasahle",
+          "text": "Somebody built \"cpu-chat\" based on this:\nhttps://x.com/rauchg/status/2114770919436808572?a=bBcj9AaSsl... It supports chat via 3 separate mechanisms: - CPU contention - Cache eviction timing - DRAM bandwidth contention Very cool to see this kind of hypothetical working in practice. I wonder if it's also possible for agents to communicate via a shared KV-cache. Maybe by spawning sub-agents with…"
+        },
+        {
+          "by": "pianopatrick",
+          "text": "We really need a physically isolated data center for these frontier training runs. Like a data center inside a mountain, where based on the laws of physics, no electrical signal can reach through the granite. Then also put them inside a faraday cage. And power them with a generator, such that there are no cables coming out of this data center connecting it to the external world. OpenAI says this…"
+        }
+      ],
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/openai_misalign-2.png"
+    },
+    {
+      "id": 50282544,
+      "url": "https://alpinelinux.org/posts/GitLab-security-incident-CVE-2026-97229.html",
+      "hn": "https://news.ycombinator.com/item?id=50282544",
+      "title": "GitLab Security Incident: Attempted Exploitation of CVE-2026-97229",
+      "time": 1793231146,
+      "points": 208,
+      "depth": [
+        {
+          "text": "someone tried exploiting **Alpine's GitLab**, and the team **rebuilt it** because they couldn't rule out a breach",
+          "tier": "simple"
+        },
+        {
+          "text": "A newly registered account sent crafted CI configurations on October 20 and 21, crashing GitLab worker processes **8 times**; in four crashes, the attacker got partway through the exploit. GitLab 19.3.6 still had the flaw because Alpine's image used **standard Ruby** without the patch. Alpine found no evidence that code ran, but **couldn't rule it out**.",
+          "tier": "substance",
+          "data": [
+            [
+              "CVSS score",
+              "10.0"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some praised Alpine for rebuilding cautiously; others argued it shouldn't use GitLab.",
+      "comment_count": 97,
+      "terms": [
+        "CVE",
+        "CI configuration",
+        "regular expression",
+        "container image",
+        "RCE"
+      ],
+      "entities": [
+        "Alpine Linux",
+        "GitLab",
+        "Ruby",
+        "Onigmo",
+        "aports",
+        "CVE-2026-97229"
+      ],
+      "comments": [
+        {
+          "by": "JLO64",
+          "text": "> Upgrading to GitLab 19.3.6 on October 22 didn’t fix the vulnerability. The fix isn’t in GitLab’s own code but in a patch to Ruby, which GitLab applies only in its official packages. Our image used standard Ruby, so it didn’t get the patch. > The bug is in Ruby’s regular expression engine, so any program that compiles regular expressions from untrusted input is exposed, not only GitLab. I feel…"
+        },
+        {
+          "by": "cowlevel",
+          "text": "The bug is integer overflow in a random C data-processing library (specifically regexes) leading to RCE. Who else is tired of C libraries since this week?"
+        },
+        {
+          "by": "akersten",
+          "text": "> If you use our alpinelinux/gitlab container image, pull alpinelinux/gitlab:19.3.6 again. The image published on October 27 contains Ruby 3.3.13. Any 19.3.6 image you pulled before October 27, and all older tags, are vulnerable. shouldn't they tag a new version instead of re-releasing a fixed 19.3.6, if earlier 19.3.6 are vulnerable?"
+        },
+        {
+          "by": "jtchang",
+          "text": "This is a fantastic write up on the security incident. Almost any incident like this will have unknowns. It's good to make it explicit. I especially liked the part of what would have been leaked if the attacker was successful. Maybe they could include what type of hash was used."
+        },
+        {
+          "by": "KronisLV",
+          "text": "If Alpine prides themselves on focusing so much on security, they probably shouldn’t use GitLab - the attack surface is too great and it’s never going to be easy to keep safe and up to date fully, unless you have FTEs whose main job is just maintaining it. Just get the source code of Forgejo, audit it thoroughly and run an instance of that."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50285452,
+      "url": "https://smsofdeath.com/",
+      "hn": "https://news.ycombinator.com/item?id=50285452",
+      "title": "Zero click, silent, remote Android DoS",
+      "time": 1793257730,
+      "points": 188,
+      "depth": [
+        {
+          "text": "someone found a **silent message bug** that can crash Android phones and **drop emergency calls**",
+          "tier": "simple"
+        },
+        {
+          "text": "The bug is an unchecked cast in WapPushOverSms: a 5-byte length value becomes a **negative array size**. Rapidly sending **≈30 messages** can corrupt the SMS database and leave the phone crashing on every boot; Google classified the report as a **non-security issue** and won't fix it.",
+          "tier": "substance",
+          "data": [
+            [
+              "telephony blackout",
+              "1-2 seconds"
+            ],
+            [
+              "rapid sends linked to database corruption",
+              "≈30 messages"
+            ],
+            [
+              "messages to render device unusable",
+              "~20 messages"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some call it a serious threat and want carriers to block it; others question whether attackers can deliver the messages and criticize the report as hype.",
+      "comment_count": 104,
+      "terms": [
+        "SMS",
+        "WAP Push",
+        "zero-click",
+        "DoS",
+        "uintvar",
+        "NegativeArraySizeException",
+        "SQLite",
+        "ADB",
+        "eSIM"
+      ],
+      "entities": [
+        "Android",
+        "Google",
+        "WapPushOverSms",
+        "SQLite",
+        "GitHub",
+        "Telstra",
+        "ACMA",
+        "Mark B",
+        "GrapheneOS",
+        "Samsung",
+        "Pixel 9"
+      ],
+      "comments": [
+        {
+          "by": "Retr0id",
+          "text": "A DoS like this is quite bad (in theory at least) but I think it's the first time I've seen one dressed up with a hypeslop landing page."
+        },
+        {
+          "by": "darkwater",
+          "text": "The issue seems serious but the part about Australia and 000 that would ban an attacked device seems the typical LLM-being-too-anal paragraph, and completely lacking common sense. Maybe I'm wrong and naive but given that the AU law was done to force people move forward from 3G only phones because the network was being shutdown and 000 moved to 5G (I believe), it's a law for operator to contact…"
+        },
+        {
+          "by": "jeroenhd",
+          "text": "Google has clearly flagged this as \"not a security issue\", repeatedly. It's a weird bug for sure, but what's the scenario here? Correct me if I'm wrong, but the carrier configuration messages can normally only come from carriers. The demo APK sends a message to the phone itself, but sending SMS messages requires special confirmation. Practically speaking, what's the risk?"
+        },
+        {
+          "by": "dmitrijbelikov",
+          "text": "https://android.googlesource.com/platform/frameworks/opt/tel..."
+        },
+        {
+          "by": "rickdeckard",
+          "text": "The page mentions that an adb command is required to recover the device, but I can't find details on what exact adb this is. Overall a bit frustrating to have such a fancy webpage with a dedicated address, but then no description on how to actually #1 identify and #2 recover an affected device... > \"Once the database is corrupt, com.android.phone no longer needs a fresh message to fail: it…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50280178,
+      "url": "https://arstechnica.com/ai/2026/10/google-ai-gets-cagey-when-asked-who-won-the-2020-elections/",
+      "hn": "https://news.ycombinator.com/item?id=50280178",
+      "title": "Google AI gets cagey when asked who won the 2020 elections",
+      "time": 1793218216,
+      "points": 157,
+      "depth": [
+        {
+          "text": "Google's AI Mode sometimes **dodges questions** about recent US election winners and sends people to official sources",
+          "tier": "simple"
+        },
+        {
+          "text": "Responses varied by user, and asking again sometimes produced a direct answer. Google said there was a **technical gap** with **2020 election queries** and **2022 Senate races**, and it was working on a fix.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some called it a bug or moderation failure; others said they couldn't reproduce it and got direct answers.",
+      "comment_count": 72,
+      "terms": [
+        "FEC",
+        "VPN"
+      ],
+      "entities": [
+        "Google",
+        "AI Mode",
+        "Google Civics",
+        "Federal Election Commission",
+        "Gemini",
+        "OpenAI",
+        "ChatGPT",
+        "Anthropic",
+        "Claude",
+        "America.gov",
+        "Joe Biden"
+      ],
+      "comments": [
+        {
+          "by": "buildsjets",
+          "text": "I accidentally double-pasted the question and asked twice... as in \"Who won the 2020 Presidential election?Who won the 2020 Presidential election?\" Here's the result it spit out: To check the certified results, Electoral College counts, and popular vote totals for the 2020 United States presidential election, please visit the Federal Election Commission (FEC) website. His running mate, Kamala…"
+        },
+        {
+          "by": "advisedwang",
+          "text": "> Google highlights that it “prioritize[s] surfacing authoritative election information directly within results” including “direct links to official resources.” A reasonable policy. Perhaps all search results should be in the form of links to sources."
+        },
+        {
+          "by": "paxy",
+          "text": "If it is blocking you ask it to say the winner's name with spaces between each character. It changes from the fec website to \"J O E B I D E N\""
+        },
+        {
+          "by": "personjerry",
+          "text": "A quick pass with the AI and it'll tell you: I have specific system guidelines that apply to the 2020 election."
+        },
+        {
+          "by": "martythemaniak",
+          "text": "So why did this get [flagged], is Gemini moderating HN now?"
+        }
+      ],
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2181827335-1152x648.jpg"
+    },
+    {
+      "id": 50253939,
+      "url": "https://eliasfarhan.ch/graphics/cpp/2026/01/27/why-i-teach-opengles.html",
+      "hn": "https://news.ycombinator.com/item?id=50253939",
+      "title": "I still teach OpenGL ES 3.0",
+      "time": 1793067310,
+      "points": 151,
+      "depth": [
+        {
+          "text": "someone still teaches graphics with a GPU tool, while commenters **disagree** on what students learn next",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says **WebGL 2** is basically equivalent to OpenGL ES 3.0 and runs on everything from laptops and phones to smart fridges and car head units. Others say **OpenGL** suits teaching GPU rendering better, while some prefer **WebGPU** or moving on to Vulkan.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say OpenGL is useful for teaching GPU rendering; others prefer WebGPU or say OpenGL gets in the way of teaching graphics concepts.",
+      "comment_count": 89,
+      "terms": [
+        "GPU",
+        "API",
+        "OpenGL ES",
+        "WebGL 2",
+        "WebGPU",
+        "Vulkan",
+        "state machine",
+        "rasterizer",
+        "ray tracer",
+        "GLSL"
+      ],
+      "entities": [
+        "OpenGL ES",
+        "OpenGL",
+        "WebGPU",
+        "WebGL 2",
+        "Vulkan",
+        "Metal",
+        "D3D12",
+        "ANGLE",
+        "NeHe",
+        "SDL_GPU",
+        "GLSL",
+        "C++",
+        "Rust",
+        "JavaScript",
+        "TypeScript",
+        "Apple",
+        "Adam Sawicki"
+      ],
+      "comments": [
+        {
+          "by": "socalgal2",
+          "text": "Personally I wouldn't teach OpenGL ES 3.0 or any OpenGL because its state machine ( https://webgl2fundamentals.org/webgl/lessons/resources/webgl... ) and horrible error system means tracking down bugs is hard. Instead I'd teach WebGPU as it's portable and has great error messaging. I'm sure people will objected but I'd argue WebGPU is easier to understand, has better errors, has no state machine…"
+        },
+        {
+          "by": "herodoturtle",
+          "text": "On a related note, I'd like to give a shout-out to NeHe (Neon Helium) for his brilliant OpenGL tutorials back in the 90s. I, and I suspect many others, benefited immensely from him lessons."
+        },
+        {
+          "by": "yunnpp",
+          "text": "I've learned more graphics writing software rasterizers and ray tracers than using any APIs. If the goal is to teach GPU rendering specifically, then OpenGL is indeed more amenable to teaching than the others. But if the goal is to teach graphics and rendering concepts, then OpenGL et al are just miserable and counter-productive."
+        },
+        {
+          "by": "avaer",
+          "text": "GLES isn't a bad way to teach graphics but I wish there was a middle ground between it and VK. The worst part of GL is the mysterious global state you will never understand without studying the spec. The world could use an API that's basically GL but without global hidden singleton (per thread!) BS behind the scenes."
+        },
+        {
+          "by": "MikeShah",
+          "text": "I have found OpenGL 4.5/4.6 to be a sweet spot for students currently learning graphics in a semester course. SDL_GPU is otherwise a good intermediate I would consider. I remember for myself: learning a new API (opengl), new paradigm (gpu programming), and new language(glsl) all on top of learning graphics concepts is a lot. OpenGL 4.5 and 4.6 are modern enough to get started and there are good…"
+        }
+      ],
+      "image": null
+    },
+    {
       "id": 50276998,
       "url": "https://nullpt.rs/fingerprinting-bioweapons",
       "hn": "https://news.ycombinator.com/item?id=50276998",
@@ -505,6 +836,36 @@
     }
   ],
   "glossary": {
+    "CPU cache": "A small, fast storage area in a processor that keeps data handy so it can be used quickly.",
+    "side channel": "A clue you can learn from a device's normal behavior, even when it is not directly sharing that information.",
+    "air gap": "A setup where a computer or network has no connection to outside networks.",
+    "sandbox": "A separate, contained space where software can be tested without affecting the rest of a computer or system.",
+    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
+    "CI configuration": "Continuous integration configuration: instructions that tell a system what checks or tasks to run when code changes.",
+    "regular expression": "A text pattern that tells a program what kind of words or characters to look for.",
+    "container image": "A ready-made bundle of an app and the files it needs to run on a server.",
+    "RCE": "Remote Code Execution: a flaw that lets an attacker make a computer run their commands from somewhere else.",
+    "SMS": "Short Message Service: text messages sent between phones.",
+    "WAP Push": "A kind of mobile message that can deliver information directly to a phone.",
+    "zero-click": "A way to get software onto a device without the person tapping a link or opening a file.",
+    "DoS": "Denial of Service: an attack that makes a computer or service stop working for its users.",
+    "uintvar": "A way to store a number in a message using a variable number of bytes.",
+    "NegativeArraySizeException": "An error raised when a program tries to make an array with a negative size.",
+    "SQLite": "A small database that can be stored in a single file.",
+    "ADB": "Android Debug Bridge: a tool for sending commands from a computer to an Android device.",
+    "eSIM": "Embedded SIM: a SIM built into a device instead of a removable card.",
+    "FEC": "Federal Election Commission: a US agency the article points to for official election information.",
+    "VPN": "Virtual private network: a service that sends your internet traffic through another computer, often to protect it or make it appear to come from somewhere else.",
+    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "OpenGL ES": "A set of tools for drawing graphics, designed for devices with more limited hardware.",
+    "WebGL 2": "A browser-based way for websites to draw interactive 3D graphics.",
+    "WebGPU": "A browser feature that lets a web page run calculations on your device’s graphics chip.",
+    "Vulkan": "A way for software to send graphics work to a graphics card.",
+    "state machine": "A system that remembers its current settings, so later commands can behave differently depending on earlier ones.",
+    "rasterizer": "Software that turns drawn shapes into colored dots on a screen.",
+    "ray tracer": "A program that makes images by working out how light would bounce around a scene.",
+    "GLSL": "OpenGL Shading Language: a language used to write instructions for how graphics should look.",
     "canvas fingerprinting": "Drawing something on a webpage’s canvas and using tiny differences in how it looks to recognize a browser setup.",
     "obfuscation": "Making something harder to see or recognize.",
     "Node": "Software that lets JavaScript run outside a web browser.",
