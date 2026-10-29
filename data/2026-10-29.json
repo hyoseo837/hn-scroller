@@ -1,0 +1,550 @@
+{
+  "date": "2026-10-29",
+  "cards": [
+    {
+      "id": 50276998,
+      "url": "https://nullpt.rs/fingerprinting-bioweapons",
+      "hn": "https://news.ycombinator.com/item?id=50276998",
+      "title": "Why is this fingerprinting script creating bioweapons?",
+      "time": 1793207609,
+      "points": 1024,
+      "depth": [
+        {
+          "text": "someone found an **anti-bot script** hiding **scary prompts** and suspicious commands to **confuse AI tools**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author crawled **10,000 websites** with Playwright and collected their canvas fingerprints at fingerprint.garden. The script’s **Node-only branch** includes commands to inspect files, gather system details, and download a binary; the author suspects this is **anti-LLM bait**, noting the file-reading callbacks do nothing.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters see this as a way to deter AI crawlers; skeptics say agents can ignore dead code, and warn that the prompts could harm customers’ brands.",
+      "comment_count": 206,
+      "terms": [
+        "canvas fingerprinting",
+        "obfuscation",
+        "Node",
+        "LLM",
+        "jailbreak prompt"
+      ],
+      "entities": [
+        "veritas",
+        "FingerprintJS",
+        "Castle",
+        "Cloudflare Turnstile",
+        "Akamai",
+        "Playwright",
+        "Tranco",
+        "fingerprint.garden",
+        "Astra",
+        "GLM-5.3",
+        "Daybreak Blue",
+        "JavaScript",
+        "servicepipe.tech",
+        "servicepipe.ru",
+        "Sshell",
+        "OpenAI",
+        "Anthropic",
+        "Hugging Face",
+        "GLM-5.2",
+        "Anubis",
+        "Claude"
+      ],
+      "comments": [
+        {
+          "by": "andai",
+          "text": "> Out of curiosity, I tried GLM-5.3 with the same prompt and it complied! I am noticing a trend here. Didn't HF say the same thing, when they got hacked, the only LLM that would assist with defense was GLM? > When we started the log analysis, we first used frontier models behind commercial APIs. This did not work: the analysis requires submitting large volumes of real attack commands, exploit…"
+        },
+        {
+          "by": "jacquesm",
+          "text": "Nice sleuthing! We do a similar thing to mark documents that are still under embargo and one day I forgot to remove the watermark. The customer complained they had not received the document (a day or two after I sent it), and much searching was done. Finally we found a line in an outlook log on their end that said that the watermark was the reason the file had been put in indefinite quarantine…"
+        },
+        {
+          "by": "throwaway89201",
+          "text": "Nice finds! This HN profile I looked at today by chance, also contains some anti-LLM incantations, albeit much less obfuscated. I wasn't aware Anthropic had such a magic string: https://news.ycombinator.com/user?id=jeroenhd"
+        },
+        {
+          "by": "ghm2199",
+          "text": "Whoa! This is insane. This is an insane arms race, fractal like craziness. Dynamic JS obfuscator libraries that are like honey pots: Lure LLM bots and determine if your obfuscation can make then drop the crawl attempt. So are now at RLing our obfuscators? But I have a more abstract question: Are LLMs mass \"codemoding\" scraping attempt in their context windows to make this work _and_ worth the…"
+        },
+        {
+          "by": "Revanche1367",
+          "text": "Maybe it's a Russian bioweapons company masquerading as an Internet traffic control company pretending to be in bioweapons manufacturing so any snoopers think it's just anti-LLM obfuscation."
+        }
+      ],
+      "image": "https://nullpt.rs/opengraph-image.jpg"
+    },
+    {
+      "id": 50282838,
+      "url": "https://divagr.com/blog/qwenputer",
+      "hn": "https://news.ycombinator.com/item?id=50282838",
+      "title": "Qwenputer: A functioning, deterministic RISC-V CPU inside Qwen3.5",
+      "time": 1793233545,
+      "points": 283,
+      "depth": [
+        {
+          "text": "someone built a **CPU** inside a language model that runs code using the model's own **memory**",
+          "tier": "simple"
+        },
+        {
+          "text": "Qwenputer adds a **32-bit RISC-V core** to Qwen 3.5 4B; its Gated DeltaNet layers act as RAM, letting it run arithmetic, C and MicroPython inside the model without external tools. It passed the official riscv-tests and ran **18 million instructions** without a single error, but each instruction costs a few decoded tokens.",
+          "tier": "substance",
+          "data": [
+            [
+              "instructions run",
+              "18 million"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 65,
+      "terms": [
+        "RISC-V",
+        "Gated DeltaNet",
+        "RAM",
+        "forward pass",
+        "one-hot key",
+        "free-running"
+      ],
+      "entities": [
+        "Qwenputer",
+        "Qwen",
+        "Qwen 3.5 4B",
+        "Qwen3-Next",
+        "RISC-V",
+        "Gated DeltaNet",
+        "C",
+        "MicroPython",
+        "Python",
+        "RvChat",
+        "Hugging Face",
+        "ModelScope",
+        "GitHub",
+        "DeepMind",
+        "NUPA",
+        "QEMU",
+        "Divyansh Agrawal"
+      ],
+      "comments": [
+        {
+          "by": "tiborsaas",
+          "text": "This is fun and games, but wait until an agents finds this and does the most misaligned thing with it in order to fold paper clips. > Because a CPU inside a language model clearly wasn't cursed enough, I decided the prudent thing would be to give it a filesystem too. Love the spirit :)"
+        },
+        {
+          "by": "jerrythegerbil",
+          "text": "There was an interesting bit of research that qwen has a single neuron that makes it “demonic evil qwen” and a simple “Who are you?” will get some absolutely terrifyingly vile results. Anyways, what I’m trying to say is I want evil qwen to be my CPU."
+        },
+        {
+          "by": "giveexamples",
+          "text": "https://www.percepta.ai/blog/can-llms-be-computers They implemented wasm in transformer with cpu decoding for the wasm part."
+        },
+        {
+          "by": "jacquesm",
+          "text": "Heh, this is very timely, it is more or less exactly what I'm busy with right now but I'm taking the idea in a completely different direction. Fascinating."
+        },
+        {
+          "by": "jedbrooke",
+          "text": "I wonder if this approach would work for AdderBoard[1][2] (a competition to make hand written transformers that can add two 10 digit numbers in the least amount of parameters possible), or if it uses way too many parameters to be competitive [1]: https://github.com/anadim/AdderBoard\n[2]: hn discussion https://news.ycombinator.com/item?id=47170030&utm_source=per..."
+        }
+      ],
+      "image": "https://divagr.com/qwenputer/og.png"
+    },
+    {
+      "id": 50282454,
+      "url": "https://data.stackexchange.com/stackoverflow/query/1926661#graph?t=1",
+      "hn": "https://news.ycombinator.com/item?id=50282454",
+      "title": "StackOverflow now gets fewer than 1000 questions a month",
+      "time": 1793230502,
+      "points": 268,
+      "depth": [
+        {
+          "text": "Stack Overflow gets **fewer than 1,000 questions a month**, and commenters debate **what drove the decline**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says question numbers were already **nearly 50% down** from their June 2020 local maxima before ChatGPT, though its launch sped the drop; another blames Stack Overflow’s **hostile attitude** towards users.",
+          "tier": "substance",
+          "data": [
+            [
+              "questions per month",
+              "fewer than 1000"
+            ],
+            [
+              "decline from June 2020 local maxima before ChatGPT",
+              "nearly 50%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say Stack Overflow was already declining before AI sped things up; others point to AI as a replacement for asking, or blame Stack Overflow’s hostility.",
+      "comment_count": 249,
+      "terms": [
+        "local maxima",
+        "LLMs"
+      ],
+      "entities": [
+        "Stack Overflow",
+        "ChatGPT",
+        "Server Fault",
+        "Stack Exchange",
+        "Reddit",
+        "Claude",
+        "Emacs SE",
+        "Joel Spolsky"
+      ],
+      "comments": [
+        {
+          "by": "kstrauser",
+          "text": "OK, let's get this out of the way: 1. SO question numbers dropped precipitously before AI came along. 2. AI clearly finished the job. I took the graph from this very page and annotated it with the public launch of ChatGPT in November 2022.[0] Yes, the decline hastened after that, inarguably. But also, it was already nearly 50% down from its June 2020 local maxima. This is also inarguable. SO had…"
+        },
+        {
+          "by": "cowlevel",
+          "text": "You're underselling it. It's less than in their second month of existence - and that has been true every month for the past year. For the last few months it's also lower than their first month. Stack Overflow, effectively, no longer exists. And we know why. It's because of their hostile attitude towards their users. No doubt they'll continue operating until there's no more value in selling AI…"
+        },
+        {
+          "by": "usr1106",
+          "text": "What will LLMs be trained on when SO does no longer exist (or is an archive of increasingly obsolete answers)?"
+        },
+        {
+          "by": "EvanAnderson",
+          "text": "I miss Server Fault-- more the time in my life, I suppose, than the site itself. I enjoyed the hell out of answering questions on Server Fault for a few years. It came along around the time my teaching gig at the local community college transitioned to online-only classes (which, oddly enough, I couldn't find enthusiasm to teach). I feel like the Server Fault community tried to make it a more…"
+        },
+        {
+          "by": "faangguyindia",
+          "text": "Reddit is going the same way. I know many people who have got banned and never managed to get back on Reddit because Reddit is using some very invasive and persistent banned user detection techniques. Thing is, they use AI to ban people; over time, many false positives accumulate and not everyone has the time and energy to appeal bans. Slowly, more and more user accounts get banned, and even…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50284255,
+      "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+      "hn": "https://news.ycombinator.com/item?id=50284255",
+      "title": "Claude Code regularly sends each background agent’s transcript to its model",
+      "time": 1793244822,
+      "points": 217,
+      "depth": [
+        {
+          "text": "Claude Code sends **background agents’ transcripts** to their own model for **tiny status summaries**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author's telemetry says agent summaries take **16.4% of spend**, versus 15.7% for the main conversation; that spend is Claude Code's per-request estimate, not an invoice. A **Bun preload** blocks the **summary timer**, so the agent-panel status stops updating.",
+          "tier": "substance",
+          "data": [
+            [
+              "agent_summary share of all Claude Code spend",
+              "16.4 %"
+            ],
+            [
+              "main conversation share of all Claude Code spend",
+              "15.7 %"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say cache hits make these calls cheap or their impact limited; others call the hidden usage wasteful and question providers' incentives.",
+      "comment_count": 56,
+      "terms": [
+        "Bun",
+        "preload",
+        "token",
+        "cache hit",
+        "OpenTelemetry",
+        "subagent",
+        "rate-limit headroom",
+        "agent_summary"
+      ],
+      "entities": [
+        "Claude Code",
+        "Flamerix AI",
+        "Bun",
+        "Anthropic",
+        "DRIM",
+        "OpenTelemetry",
+        "GitHub",
+        "Opus",
+        "Haiku",
+        "Node",
+        "no-agent-summary.js"
+      ],
+      "comments": [
+        {
+          "by": "AlexErrant",
+          "text": "While we're modding Claude Code, Anthropic also includes your email in the system prompt, and Opus _constantly_ includes it in request headers. https://www.reddit.com/r/ClaudeCode/comments/1xhqvzn/opus_55... You can remove it with a claude plugin https://github.com/AlexErrant/claude-code-no-email/blob/main..."
+        },
+        {
+          "by": "franticgecko3",
+          "text": "Claude Code burning a large amount of tokens for no good reason is a headline we've seen more than a few times now. Time to start questioning the motivations of model providers shipping their own harnesses."
+        },
+        {
+          "by": "HeavenFox",
+          "text": "If they are literally sending the entire transcript and asking for a summary, wouldn't almost all of the tokens be cache hit, and therefore fairly cheap?"
+        },
+        {
+          "by": "nikolay",
+          "text": "Opus 5.5 burns tokens like there's no tomorrow! Meanwhile, GPT 6.1 Sol on Extra High feels unlimited! Opus (on Max 20x) munches my weekly quota in a day, or two at best. Meanwhile, working with Codex and reviewing with a $50/mo Muse Code Wonder Full seems like it can go own forever (on the same codebase, the same skills, etc.) I am highly disappointed by the overly glorified Opus and Claude Code…"
+        },
+        {
+          "by": "gym",
+          "text": "I was surprised the usage issue wasn't mentioned here before this based on my searching on hn.algolia. I'm on pro. Two days ago, 100% 5 hour was using 25% of my weekly. Today, 100% 5 hour is like 13% so something was fixed."
+        }
+      ],
+      "image": "https://github.githubassets.com/assets/gist-og-image-54fd7dc0713e.png"
+    },
+    {
+      "id": 50280974,
+      "url": "https://furbo.org/2026/10/28/a-health-update/",
+      "hn": "https://news.ycombinator.com/item?id=50280974",
+      "title": "A Health Update",
+      "time": 1793222001,
+      "points": 182,
+      "depth": [
+        {
+          "text": "Craig shares his **chemo recovery** and the **server emergency** he handled from his hospital bed",
+          "tier": "simple"
+        },
+        {
+          "text": "Craig’s **nerve damage** began improving, and his daily walks grew to **a mile**. During his final hospital treatment, he spotted a **newly announced PHP vulnerability** and blocked access to PHP processes on his server.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 28,
+      "terms": [
+        "chemotherapy",
+        "lumbar puncture",
+        "lymphoma",
+        "port catheter",
+        "PHP",
+        "LTS",
+        "atrial fibrillation",
+        "immunotherapy"
+      ],
+      "entities": [
+        "Craig Hockenberry",
+        "Lauren",
+        "Apple Watch",
+        "PHP",
+        "Ubuntu",
+        "Lish",
+        "Slack",
+        "Tapestry",
+        "WordPress",
+        "Kickstarter"
+      ],
+      "comments": [
+        {
+          "by": "incanus77",
+          "text": "Best of luck to Craig. If you don't know who he is, he's the reason we call(ed) Twitter posts 'tweets' [1] and also wrote perhaps the first pre-SDK iPhone app from the outside [2]. [1] https://furbo.org/2013/06/28/the-origin-of-tweet/ [2] https://furbo.org/2007/08/19/mobiletwitterrific/"
+        },
+        {
+          "by": "jongjong",
+          "text": "When my wife was diagnosed with stage 3 bowel cancer earlier this year, she was essentially prepared to die. She didn't even cry once. Her father had died from the same cancer at around the same age as her (early 40s), in the most horrific way imaginable. Her father used to work for the Soviet military in charge of a team of people who worked on propaganda so he was a strong believer in communism…"
+        },
+        {
+          "by": "Waterluvian",
+          "text": "I’m not sure there’s anything that evokes a more discordant set of emotions in me than an optimistic cancer fighter. I feel fear, frustration, hope, joy, confusion, anger… When I was a teen I watched my mom battle cancer to a draw. Only in my late 30s did the repressed memories start returning. I got to remember her voice again, but I also got to remember the rest. And now my only plan is to just…"
+        },
+        {
+          "by": "WalterBright",
+          "text": "> Anyone who exercises regularly knows that there are always plenty of reasons to avoid it: you didn’t sleep well, you have an important project to finish, or you’re sore from a previous workout. Ahnold Schwarzenegger remarked that the improvements come when your really don't want to exercise, but do it anyway."
+        },
+        {
+          "by": "oliyoung",
+          "text": "The mundanity of the last paragraph made me smile. That desire to just go back to normal -walking, debugging, comfort- after moments like that is incredibly under-rated."
+        }
+      ],
+      "image": "https://furbo.org/wp-content/themes/furbo/images/share.png"
+    },
+    {
+      "id": 50271685,
+      "url": "https://support.apple.com/en-us/149555",
+      "hn": "https://news.ycombinator.com/item?id=50271685",
+      "title": "About the compromised eMudhra intermediate CAs",
+      "time": 1793185729,
+      "points": 160,
+      "depth": [
+        {
+          "text": "Apple is **blocking compromised certificates**, but some Mac command-line tools may still **accept them**",
+          "tier": "simple"
+        },
+        {
+          "text": "Apple says **Safari, Mail, and apps** using its networking and security frameworks block the affected certificates automatically. Some command-line tools check **/etc/ssl/cert.pem** instead and may accept them until a future software update; administrators can remove the relevant root CA certificates sooner.",
+          "tier": "substance",
+          "data": [
+            [
+              "compromised intermediate CAs",
+              "8"
+            ],
+            [
+              "TLS intermediate CAs",
+              "6"
+            ],
+            [
+              "certificates",
+              "12"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: critics say Apple should have fixed the file in a security update; defenders say its transparent guidance is the right approach while a software update is pending.",
+      "comment_count": 76,
+      "terms": [
+        "certificate",
+        "TLS",
+        "intermediate CA",
+        "root CA",
+        "/etc/ssl/cert.pem"
+      ],
+      "entities": [
+        "Apple",
+        "eMudhra",
+        "Sectigo",
+        "macOS",
+        "Xcode Command Line Tools",
+        "Safari",
+        "Mail",
+        "curl",
+        "git"
+      ],
+      "comments": [
+        {
+          "by": "magnio",
+          "text": "> On Mac, some command-line tools included with macOS or the Xcode Command Line Tools (including curl, git, python3, ruby, perl, and openssl) check certificates against /etc/ssl/cert.pem. For certificates that chain to a root CA certificate in this file, these tools don't check Apple's block or whether the certificate has been revoked. This file will be updated in a future macOS update. If you…"
+        },
+        {
+          "by": "mattstir",
+          "text": "It's wild to see people supporting this bizarre anti-security response. Not only are they dragging their feet in fixing the security issue, they're actively reverting any manual fixes silently with each new update. That's legitimately worse than doing nothing at all! It's also disconcerting to see folks advocate for the \"let's wait to fix this critical security issue because we want to make it…"
+        },
+        {
+          "by": "gwbas1c",
+          "text": "I'd really like to know why it's taking Apple so long to ship a fix. Especially if they can explain how to update an existing computer, what's the general holdup? Is it their release process? Is there some underlying complexity that's poorly understood?"
+        },
+        {
+          "by": "pluc",
+          "text": "Related: Ten days later, Git on macOS still trusts the compromised eMudhra certificates https://news.ycombinator.com/item?id=50271640"
+        },
+        {
+          "by": "rethab",
+          "text": "Wonderful AWK command there. For those with hobbies other than AWK, here's what it does: - set variable s to that string: -v s='=== /C=IN/OU=emSign PKI/O=eMudhra Technologies Limited/CN=emSign ECC Root CA - G3'\n- on lines matching the regex between //, set skip to false: /^(===|###) /{skip=0}\n- on lines matching s, set skip to true: $0==s{skip=1}\n- if skip is false, print the line: !skip\nNote the…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50281044,
+      "url": "https://formlabs.com/products/form-studio-1-basic-founders-edition/",
+      "hn": "https://news.ycombinator.com/item?id=50281044",
+      "title": "Formlabs Studio 1 $699 Resin Printer",
+      "time": 1793222370,
+      "points": 158,
+      "depth": [
+        {
+          "text": "Formlabs' **resin printer** starts at **$699** and prints most parts in **under two hours**",
+          "tier": "simple"
+        },
+        {
+          "text": "It accepts **nine Formlabs materials** or **third-party materials** through Open Material Mode. Alpha Resins use low-odor components, and their **UL GREENGUARD Gold** certification applies when printed on this machine with the VOC Extractor.",
+          "tier": "substance",
+          "data": [
+            [
+              "starting price",
+              "$699"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see a compelling beginner-friendly deal; others say resin printing is messy and recommend FDM instead.",
+      "comment_count": 107,
+      "terms": [
+        "resin printer",
+        "MSLA",
+        "FDM",
+        "VOC",
+        "Open Material Mode",
+        "UL GREENGUARD Gold",
+        "IPA"
+      ],
+      "entities": [
+        "Formlabs",
+        "Form Studio 1",
+        "Alpha Resins",
+        "Open Material Mode",
+        "VOC Extractor",
+        "Form Wash",
+        "Form Studio Wash+Cure",
+        "Form 4",
+        "Elegoo Mars 2p",
+        "Jeff Geerling"
+      ],
+      "comments": [
+        {
+          "by": "pen2l",
+          "text": "Formlabs uses a proprietary resin cartridge... it's the paper printers situation all over again, the printers themselves are not that expensive but the disposable ink costs an arm and a leg. Don't go with Formlabs, support any of the open-platform alternatives. And also, be aware that these printers require some serious development work (you need solvent to wash away uncured resin (if you ask me…"
+        },
+        {
+          "by": "RantyDave",
+          "text": "I have a resin printer (elegoo mars 2p) and have done a number of small \"production\" runs of things that don't really matter. I have to say that it is the biggest pain in the arse thing I even own. While the prints come out \"good\", I find that dimensional accuracy is often really not good at all; and that the whole rinse in isopropyl, finish in the sun process is just a sticky, irritating, and…"
+        },
+        {
+          "by": "rfrey",
+          "text": "This thing is all over YouTube, they really backed up the truck to the Influencer Club and started handing out the goods. Lots of people I like and respect have showcased it, like Applied Science, Jeff Geerling, among others. But although there's a lot of discussion about how large a discount this is from FormLab's 8 billion dollar printers, there is absolutely NO comparison that I can find to…"
+        },
+        {
+          "by": "regretsresin",
+          "text": "You don't want a resin printer. They are nasty, chemically, they require you to set up a \"hot zone\", you need ppe, venting is really important. When your print works good, you still have to wash it and then cure it. Changing colors ids like a whole event. FDM printers are amazing now. Strongly recommend an FDM printer."
+        },
+        {
+          "by": "vl",
+          "text": "This page really needs to explain what is “resin printer” and why would I need it. I have no idea how is it different from my regular 3D printer."
+        }
+      ],
+      "image": "https://formlabs.com/default_seo_image.jpg"
+    }
+  ],
+  "glossary": {
+    "canvas fingerprinting": "Drawing something on a webpage’s canvas and using tiny differences in how it looks to recognize a browser setup.",
+    "obfuscation": "Making something harder to see or recognize.",
+    "Node": "Software that lets JavaScript run outside a web browser.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "jailbreak prompt": "Text meant to trick an AI into ignoring its usual rules.",
+    "RISC-V": "A processor design that sets out the basic instructions software runs on.",
+    "Gated DeltaNet": "A kind of model layer that can keep information in a changing internal memory.",
+    "RAM": "Random-Access Memory: a computer's working space for information it is using right now.",
+    "forward pass": "One run through a model to produce an answer, rather than building it one piece at a time.",
+    "one-hot key": "A way to point at one memory slot by marking just that slot in a list.",
+    "free-running": "A test run where the CPU keeps going on its own, without another machine correcting each step.",
+    "local maxima": "High points on a graph compared with nearby points.",
+    "LLMs": "Large language models: computer programs trained on lots of writing that can produce text.",
+    "Bun": "A program that lets JavaScript run outside a web browser.",
+    "preload": "A file a program loads before its normal work starts, often to add or change behavior.",
+    "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
+    "cache hit": "When software finds saved information it needs and can reuse it.",
+    "OpenTelemetry": "A way to collect and send records about what software is doing, such as its requests.",
+    "subagent": "A helper assigned a smaller part of a larger task.",
+    "rate-limit headroom": "How much usage room remains before a service restricts you for using too much.",
+    "agent_summary": "The label the article uses for background-agent summary requests in its usage records.",
+    "chemotherapy": "Medicine used to kill cancer cells, though it can also affect healthy parts of the body.",
+    "lumbar puncture": "A procedure where a needle goes into the lower back to take or replace fluid around the spine.",
+    "lymphoma": "A cancer that starts in the body's infection-fighting system.",
+    "port catheter": "A small device under the skin that connects to a blood vessel so medicine can go in.",
+    "PHP": "PHP: Hypertext Preprocessor; a language people use to make websites work.",
+    "LTS": "Long-term support: a release its makers promise to support for an extended period.",
+    "atrial fibrillation": "A heart rhythm problem that can make the heartbeat uneven.",
+    "immunotherapy": "Treatment that helps the body's immune system fight cancer.",
+    "certificate": "A digital ID that helps show which website a connection belongs to.",
+    "TLS": "Transport Layer Security: a way to scramble information as it travels between devices, so others can’t read it.",
+    "intermediate CA": "Certificate authority: a service trusted to confirm website identities; an intermediate one is a middle link that can vouch for a website's certificate.",
+    "root CA": "Certification Authority: the top-level organization a device trusts when deciding whether a website's certificate is valid.",
+    "/etc/ssl/cert.pem": "A Mac file some command-line tools use as their list of trusted certificate issuers.",
+    "resin printer": "A 3D printer that hardens liquid resin with light to build a part layer by layer.",
+    "MSLA": "Masked Stereolithography: a resin-printing method that uses a screen to shine light on selected areas and harden a layer.",
+    "FDM": "Fused Deposition Modeling: a 3D printer builds an object by laying down melted plastic in thin lines.",
+    "VOC": "Volatile organic compounds: Gases that can come from products and materials and affect indoor air.",
+    "Open Material Mode": "A setting that lets the printer use materials made by other companies, not just Formlabs.",
+    "UL GREENGUARD Gold": "A certification for products tested for low chemical emissions.",
+    "IPA": "Isopropyl alcohol: a solvent used here to wash leftover resin off prints."
+  }
+}

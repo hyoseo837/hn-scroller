@@ -1,0 +1,180 @@
+{
+  "date": "2026-10-29",
+  "cards": {
+    "50276998": {
+      "simple": "봇 차단 script 속 **섬뜩한 prompt**와 수상한 명령어, **AI tool 교란** 정황",
+      "substance": "작성자는 Playwright로 **10,000개 웹사이트**를 크롤링하고 fingerprint.garden에서 canvas fingerprint를 수집. script의 **Node 전용 분기**에는 파일 검사, 시스템 정보 수집, binary 다운로드 명령이 포함되며, 파일 읽기 callback이 아무 일도 하지 않는 점을 들어 작성자는 이를 **anti-LLM 미끼**로 의심.",
+      "data": [],
+      "camps": "두 진영: 일부 댓글은 AI 크롤러 억제책으로 봄; 회의론자들은 agent가 실행되지 않는 코드는 무시할 수 있다고 하고, prompt가 고객 브랜드에 해를 끼칠 수 있다고 경고.",
+      "comments": [
+        "> 궁금해서 같은 prompt로 GLM-5.3을 써봤는데 그대로 따르더라! 이런 흐름이 보이네. HF도 해킹당했을 때 똑같은 얘기 하지 않았나? 방어를 도와주겠다는 LLM은 GLM뿐이었다고? > 로그 분석을 시작할 때는 상용 API 뒤의 frontier model을 먼저 썼습니다. 안 됐어요. 분석하려면 실제 공격 명령과 exploit…을 대량으로 제출해야 하거든요.",
+        "추적 잘했네요! 저희도 아직 공개 금지 상태인 문서에 표시를 해두는데, 어느 날 제가 워터마크를 지우는 걸 깜빡했어요. 고객이 문서를 못 받았다고 항의했고(보낸 지 하루이틀 뒤였죠), 한참을 뒤졌습니다. 결국 고객 쪽 outlook log에서 파일이 무기한 격리된 이유가 워터마크라고 적힌 한 줄을 찾았어요…",
+        "좋은 발견이네요! 오늘 우연히 본 이 HN 프로필에도 anti-LLM 주문이 있더라고요. 다만 훨씬 덜 난독화돼 있긴 해요. Anthropic에 그런 마법의 문자열이 있는 줄은 몰랐네요: https://news.ycombinator.com/user?id=jeroenhd",
+        "와! 미쳤네. 진짜 미친 군비 경쟁이네, 프랙털처럼 뻗는 광기. 허니팟 같은 동적 JS 난독화 library라니: LLM bot을 유인해서 난독화가 크롤링 시도를 접게 만들 수 있는지 확인하는 거잖아. 이제 난독화기를 RL로 학습시키는 단계야? 그런데 더 추상적인 질문이 있는데: LLM들이 이걸 가능하고 _그리고_ 가치 있게 만들려고 context window 안에서 스크래핑 시도를 대량으로 \"codemoding\"하고 있는 건가…",
+        "러시아 생물무기 회사가 인터넷 트래픽 제어 회사인 척하면서 생물무기 제조업체 행세까지 하는 걸 수도 있겠네요. 염탐꾼들이 그저 anti-LLM 난독화라고 생각하게 하려고요."
+      ]
+    },
+    "50282838": {
+      "simple": "언어 모델 안에 **CPU** 구현, 모델의 **자체 메모리**로 코드 실행",
+      "substance": "Qwenputer는 Qwen 3.5 4B에 **32비트 RISC-V 코어**를 더하고, Gated DeltaNet layer를 RAM처럼 활용해 외부 tool 없이 모델 안에서 산술 연산과 C, MicroPython 실행. 공식 riscv-tests를 통과하고 **18 million개 명령어**를 오류 없이 실행했지만, 명령어마다 디코딩된 token이 몇 개씩 소요.",
+      "data": [
+        [
+          "실행한 명령어",
+          "18 million"
+        ]
+      ],
+      "camps": null,
+      "comments": [
+        "これは 즐겁게 놀 때 얘기고, 이걸 알아챈 agent가 종이 클립 접으려고 가장 위험한 짓을 하는 날을 기다려 보죠. > 언어 모델 안에 CPU를 넣은 것만으로도 충분히 저주스럽지 않은데, filesystem까지 달아주는 게 현명한 선택이라고 판단했어요. 그 정신 좋네요 :)",
+        "Qwen에 “demonic evil qwen”을 만드는 뉴런이 하나 있고, “Who are you?”라고만 물어도 정말 끔찍하고 악랄한 답을 내놓는다는 흥미로운 연구가 있었어요. 아무튼 제가 하고 싶은 말은 사악한 Qwen을 제 CPU로 쓰고 싶다는 거예요.",
+        "https://www.percepta.ai/blog/can-llms-be-computers 그쪽은 transformer에 wasm을 구현했고, wasm 부분은 CPU decoding을 썼어요.",
+        "하, 타이밍 좋네요. 지금 제가 하는 일이랑 거의 정확히 같은데, 저는 아이디어를 완전히 다른 방향으로 끌고 가는 중이에요. 흥미롭네요.",
+        "이 접근법이 AdderBoard[1][2]에도 통할지 궁금하네요. 가능한 한 적은 parameter로 10자리 숫자 두 개를 더하는 handwritten transformer 경연인데, 경쟁하기엔 parameter가 너무 많이 드는 건 아닐까요? [1]: https://github.com/anadim/AdderBoard\n[2]: hn discussion https://news.ycombinator.com/item?id=47170030&utm_source=per..."
+      ]
+    },
+    "50282454": {
+      "simple": "Stack Overflow, **월간 질문 1,000개 미만**… **감소 원인** 두고 논쟁",
+      "substance": "한 댓글은 ChatGPT 등장 전부터 질문 수가 June 2020 local maxima보다 이미 **거의 50% 감소**했고, 출시가 하락을 가속했다고 주장. 다른 댓글은 Stack Overflow의 **사용자 적대적 태도**를 원인으로 지목.",
+      "data": [
+        [
+          "월간 질문 수",
+          "1000개 미만"
+        ],
+        [
+          "ChatGPT 전 June 2020 local maxima 대비 감소폭",
+          "거의 50%"
+        ]
+      ],
+      "camps": "두 입장: AI가 하락세를 가속하기 전부터 Stack Overflow가 이미 쇠퇴했다는 쪽, AI가 질문을 대체했다고 보거나 Stack Overflow의 적대성을 원인으로 꼽는 쪽.",
+      "comments": [
+        "좋아, 이 얘기부터 확실히 해두자. 1. AI가 등장하기 전부터 SO 질문 수는 급격히 줄었다. 2. AI가 하락세에 결정타를 날린 건 분명하다. 이 페이지의 그래프를 가져와 ChatGPT의 November 2022 공개 출시 시점을 표시했다.[0] 그래, 그 뒤 하락세가 빨라진 건 부정할 수 없다. 하지만 그 전부터도 June 2020 local maxima보다 이미 거의 50% 감소한 상태였다. 이것도 부정할 수 없다. SO는…",
+        "그걸 너무 축소해서 말하는데. 존재한 지 두 번째 달보다도 적고, 지난 1년 내내 매달 그랬어. 최근 몇 달은 첫 달보다도 적고. Stack Overflow는 사실상 이제 존재하지 않아. 이유도 뻔하지. 사용자들을 적대하는 태도 때문이야. AI를 팔아서 더는 이득이 없을 때까지는 계속 운영하겠지…",
+        "SO가 사라지거나 (점점 더 쓸모없어진 답변의 아카이브로 남으면) LLMs는 뭘로 학습하지?",
+        "Server Fault가 그리워—사이트 자체보다 그때 내 인생이 더 그리운 것 같지만. 몇 년 동안 Server Fault에서 질문에 답하면서 정말 즐거웠어. 내가 동네 커뮤니티 칼리지에서 가르치던 일이 온라인 수업으로만 바뀌던 때쯤이었어(이상하게도, 그 수업은 도무지 의욕이 안 났지만). Server Fault 커뮤니티가 사이트를 좀 더… 만들려 했던 것 같아.",
+        "Reddit도 같은 길을 가고 있어. Reddit에서 차단당한 뒤 끝내 복귀하지 못한 사람을 많이 알아. Reddit이 차단된 사용자를 찾아내는 사생활 침해가 심하고 끈질긴 기법을 쓰기 때문이야. 문제는 사람들을 차단하는 데 AI를 쓴다는 거야. 시간이 지나면 오탐이 쌓이고, 차단에 이의를 제기할 시간과 기운이 모두에게 있는 것도 아니지. 계정이 점점 더 많이 차단되고, 심지어…"
+      ]
+    },
+    "50284255": {
+      "simple": "Claude Code, **백그라운드 agent 기록**을 각 모델에 보내 **상태 요약** 생성",
+      "substance": "작성자의 telemetry에 따르면 agent_summary는 전체 지출의 **16.4%**로, 메인 대화의 15.7%보다 높음; 이는 청구서가 아닌 Claude Code의 요청별 지출 추정치임. **Bun preload**가 **summary timer**를 막아 agent 패널의 상태 업데이트 중단.",
+      "data": [
+        [
+          "전체 Claude Code 지출 중 agent_summary 비율",
+          "16.4 %"
+        ],
+        [
+          "전체 Claude Code 지출 중 메인 대화 비율",
+          "15.7 %"
+        ]
+      ],
+      "camps": "두 입장: 일부는 cache hit 덕에 호출 비용이 낮거나 영향이 제한적이라고 보고, 다른 쪽은 드러나지 않는 사용량을 낭비라 부르며 모델 제공업체의 동기를 의심하는 입장.",
+      "comments": [
+        "Claude Code를 이것저것 뜯어보는 김에 덧붙이면, Anthropic은 system prompt에 이메일도 넣고, Opus는 요청 header에 그걸 _계속_ 넣어요. https://www.reddit.com/r/ClaudeCode/comments/1xhqvzn/opus_55... claude plugin으로 지울 수 있어요 https://github.com/AlexErrant/claude-code-no-email/blob/main...",
+        "Claude Code가 별 이유 없이 token을 잔뜩 태운다는 얘긴 이제 꽤 여러 번 본 제목이네요. 자체 harness를 내놓는 모델 제공업체들의 속내를 의심해볼 때죠.",
+        "말 그대로 transcript 전체를 보내 요약해달라고 하는 거라면, token 대부분은 cache hit일 테니 꽤 저렴한 거 아닌가요?",
+        "Opus 5.5는 내일은 없는 것처럼 token을 태우네요! 한편 Extra High의 GPT 6.1 Sol은 무제한처럼 느껴져요! Opus(Max 20x)는 제 주간 한도를 하루, 길어야 이틀 만에 먹어치워요. 반면 같은 codebase, 같은 skills 등으로 Codex를 쓰고 $50/mo짜리 Muse Code Wonder Full로 리뷰하면 끝도 없이 쓸 수 있을 것 같아요. 엄청나게 치켜세워진 Opus와 Claude Code에 크게 실망했어요…",
+        "hn.algolia에서 검색해보니 이 얘기가 전에 안 나온 것 같아서 놀랐어요. pro 사용자예요. 이틀 전엔 100% 5 hour를 채우면 주간 한도의 25%를 썼는데, 오늘은 100% 5 hour가 13% 정도예요. 뭔가 고쳐진 것 같네요."
+      ]
+    },
+    "50280974": {
+      "simple": "Craig의 **항암 치료 회복** 소식과 병상에서 처리한 **서버 긴급 사태**",
+      "substance": "Craig의 **신경 손상**이 호전되기 시작했고, 매일 걷는 거리가 한 마일까지 늘어남. 마지막 입원 치료 중 **새로 발표된 PHP 취약점**을 발견하고 서버의 PHP 프로세스 접근을 차단함.",
+      "data": [],
+      "camps": null,
+      "comments": [
+        "Craig에게 행운을 빕니다. 누군지 모른다면, Twitter 게시물을 'tweets'라고 부르게 된 이유가 바로 이 사람이고 [1], 외부 개발자가 만든 첫 SDK 이전 iPhone 앱도 아마 이 사람이 썼습니다 [2]. [1] https://furbo.org/2013/06/28/the-origin-of-tweet/ [2] https://furbo.org/2007/08/19/mobiletwitterrific/",
+        "올해 초 아내가 3기 대장암 진단을 받았을 때, 아내는 사실상 죽음을 각오한 상태였습니다. 한 번도 울지 않았어요. 아버지가 아내와 비슷한 나이, 40대 초반쯤에 같은 암으로 세상을 떠났는데, 상상할 수 있는 가장 끔찍한 방식이었습니다. 아버지는 소비에트 군대에서 선전 업무를 맡은 팀을 이끌었고, 공산주의를 강하게 믿는 사람이었어요…",
+        "낙관적인 암 투병자만큼 제 안에서 서로 충돌하는 감정을 불러일으키는 게 또 있을지 모르겠네요. 두려움, 답답함, 희망, 기쁨, 혼란, 분노가 밀려옵니다… 십대 때 엄마가 암과 비긴 채 버티는 모습을 봤습니다. 억눌렀던 기억이 돌아오기 시작한 건 30대 후반이 되어서였어요. 엄마 목소리를 다시 기억할 수 있었지만, 나머지도 함께 떠올랐습니다. 이제 제가 세운 계획은 그저…",
+        "> 규칙적으로 운동하는 사람이라면 누구나 운동을 피할 이유가 늘 충분하다는 걸 압니다. 잠을 설쳤거나, 끝내야 할 중요한 프로젝트가 있거나, 지난번 운동 때문에 몸이 쑤시거나요. Ahnold Schwarzenegger는 정말 운동하고 싶지 않을 때도 그냥 해내면 그때 실력이 늘어난다고 했습니다.",
+        "마지막 문단의 너무나 일상적인 느낌에 웃음이 났습니다. 그런 일을 겪고 나면 그냥 평소로 돌아가 걷고, 디버깅하고, 편안함을 느끼고 싶어지는 마음이 정말 과소평가돼요."
+      ]
+    },
+    "50271685": {
+      "simple": "Apple, **침해된 인증서 차단**… 일부 Mac 명령줄 tool은 **여전히 허용 가능성**",
+      "substance": "Apple은 **Safari, Mail 및 앱**이 네트워킹·보안 framework를 통해 영향을 받은 인증서를 자동 차단한다고 설명. 일부 명령줄 tool은 **/etc/ssl/cert.pem**을 확인해 향후 software update 전까지 인증서를 허용할 수 있으며, 관리자는 관련 root CA 인증서를 더 일찍 제거 가능.",
+      "data": [
+        [
+          "침해된 intermediate CA",
+          "8"
+        ],
+        [
+          "TLS intermediate CA",
+          "6"
+        ],
+        [
+          "인증서",
+          "12"
+        ]
+      ],
+      "camps": "두 입장: 비판 측은 Apple이 보안 update에서 파일을 고쳤어야 한다는 주장, 옹호 측은 software update를 기다리는 동안 투명하게 안내하는 것이 올바른 대응이라는 주장.",
+      "comments": [
+        "> Mac에서는 macOS 또는 Xcode Command Line Tools에 포함된 일부 명령줄 tool(curl, git, python3, ruby, perl, openssl 포함)이 /etc/ssl/cert.pem을 기준으로 인증서를 확인함. 이 파일에 있는 root CA 인증서로 연결되는 인증서는 Apple의 차단 여부나 폐기 여부를 확인하지 않음. 이 파일은 향후 macOS update에서 업데이트될 예정. 만약 당신이…",
+        null,
+        "Apple이 왜 이렇게 오래도록 fix를 내지 않는지 정말 알고 싶음. 기존 컴퓨터를 업데이트하는 방법까지 설명할 수 있다면, 대체 뭐가 지연의 원인임? release process 문제임? 제대로 이해되지 않은 근본적인 복잡성이 있는 건가?",
+        "관련 글: 열흘이 지나도 macOS의 git은 침해된 eMudhra 인증서를 여전히 신뢰 https://news.ycombinator.com/item?id=50271640",
+        "멋진 AWK 명령이네. AWK 말고 다른 취미가 있는 사람들을 위해 이 명령이 하는 일은 다음과 같음:\n- 변수를 그 문자열로 설정: -v s='=== /C=IN/OU=emSign PKI/O=eMudhra Technologies Limited/CN=emSign ECC Root CA - G3'\n- // 사이의 정규식과 일치하는 줄에서 skip을 false로 설정: /^(===|###) /{skip=0}\n- s와 일치하는 줄에서 skip을 true로 설정: $0==s{skip=1}\n- skip이 false면 줄을 출력: !skip\n참고로…"
+      ]
+    },
+    "50281044": {
+      "simple": "Formlabs resin printer, 시작가 **$699**·대부분 부품 **2시간 미만 출력**",
+      "substance": "**아홉 가지 Formlabs 재료** 또는 **타사 재료**를 Open Material Mode로 사용 가능. Alpha Resins는 저취 성분을 사용하며, 이 기기에서 VOC Extractor와 함께 출력할 때 UL GREENGUARD Gold 인증 적용.",
+      "data": [
+        [
+          "시작 가격",
+          "$699"
+        ]
+      ],
+      "camps": "두 진영: 입문자에게 매력적인 가격이라는 의견과, 레진 출력은 번거로우니 FDM을 권한다는 의견.",
+      "comments": [
+        "Formlabs는 독점 레진 카트리지를 쓰는데… 프린터 업계도 종이 프린터 때랑 똑같네. 프린터 자체는 그리 비싸지 않지만 일회용 잉크 값이 엄청나게 비쌈. Formlabs는 피하고 오픈 플랫폼 대안을 지원하셈. 그리고 이런 프린터는 꽤 본격적인 후처리 작업이 필요하다는 것도 알아두셈(경화되지 않은 레진을 씻어내려면 용제가 필요하고, 내 생각엔…",
+        "resin printer(Elegoo Mars 2p)를 쓰고 있고, 별로 중요하지 않은 물건을 소량으로 \"생산\"도 몇 번 해봤음. 이게 내가 가진 물건 중 제일 골치 아픈 물건이라고 해야겠네. 출력물은 \"괜찮게\" 나오지만 치수 정확도는 정말 별로인 경우가 많음. 그리고 이소프로필 알코올로 헹군 다음 햇빛에 마무리 경화하는 과정은 끈적거리고 짜증나고…",
+        "이 제품 YouTube에 엄청 많이 뜨네. Influencer Club에 트럭째로 돈을 쏟아붓고 제품을 나눠준 모양. Applied Science, Jeff Geerling처럼 내가 좋아하고 존중하는 사람들도 많이 소개했음. 그런데 Formlabs의 8 billion 달러짜리 프린터보다 얼마나 할인됐는지 얘기는 많은데, 내가 찾아본 바로는 비교할 만한 게 전혀…",
+        "resin printer는 쓰고 싶지 않을 거야. 화학적으로 유해하고, \"hot zone\"을 따로 마련해야 하고, 보호장비도 필요하고, 환기도 정말 중요함. 출력이 잘돼도 씻어내고 경화해야 함. 색상 바꾸는 건 거의 행사 하나 치르는 수준임. 요즘 FDM printer는 정말 훌륭함. FDM printer를 강력 추천함.",
+        "이 페이지는 “resin printer”가 뭔지, 왜 필요한지 설명해야 함. 일반적인 3D printer랑 어떻게 다른지 전혀 모르겠음."
+      ]
+    }
+  },
+  "glossary": {
+    "canvas fingerprinting": "웹페이지의 canvas에 그림을 그려 브라우저마다 생기는 미세한 차이로 어떤 브라우저인지 알아보는 방식.",
+    "obfuscation": "무언가를 알아보기 어렵게 만드는 일.",
+    "Node": "웹 브라우저 밖에서 JavaScript를 실행하는 software",
+    "LLM": "Large Language Model: 많은 글을 학습해 글로 된 질문을 받고 글로 답하는 AI",
+    "jailbreak prompt": "AI가 평소 따르던 규칙을 무시하도록 속이는 문구.",
+    "RISC-V": "소프트웨어가 실행될 때 따르는 기본 명령어를 정하는 프로세서 설계.",
+    "Gated DeltaNet": "정보를 바뀌는 내부 기억 공간에 보관하는 모델 구성 요소.",
+    "RAM": "Random-Access Memory: 컴퓨터가 당장 사용하는 정보를 잠시 두는 작업 공간.",
+    "forward pass": "모델이 답을 만들기 위해 한 번 실행되는 과정으로, 답을 한 조각씩 만드는 방식과 대비되는 과정.",
+    "one-hot key": "목록에서 표시 하나만 켜 특정 기억 칸을 가리키는 방식.",
+    "free-running": "다른 컴퓨터가 매 단계를 교정하지 않아도 CPU가 스스로 계속 실행하는 테스트 방식.",
+    "local maxima": "그래프에서 바로 앞뒤의 점보다 높은 지점.",
+    "LLMs": "Large language models: 많은 글을 학습해 문장을 만들어 내는 컴퓨터 프로그램.",
+    "Bun": "JavaScript를 웹 브라우저 밖에서도 실행하게 해주는 프로그램.",
+    "preload": "프로그램이 본격적으로 작동하기 전에 불러오는 파일로, 동작을 추가하거나 바꾸는 데 쓰임.",
+    "token": "AI가 읽거나 쓰는 텍스트의 한 조각으로, 단어 전체일 수도 일부일 수도 있는 단위.",
+    "cache hit": "필요한 저장 정보를 찾아 다시 쓸 수 있는 상태.",
+    "OpenTelemetry": "software가 무엇을 하는지, 예컨대 어떤 요청을 보내는지 기록해 모으고 전달하는 방식.",
+    "subagent": "큰 작업의 일부를 맡아 처리하는 보조 역할.",
+    "rate-limit headroom": "사용량이 너무 많아 서비스가 제한을 걸기 전까지 남은 사용량.",
+    "agent_summary": "이 글에서 백그라운드 agent의 요약 요청을 가리키는 사용량 기록상의 label.",
+    "chemotherapy": "암세포를 죽이는 약이지만 몸의 건강한 부분에도 영향을 줄 수 있는 약물.",
+    "lumbar puncture": "척추 주변의 액체를 빼거나 넣으려고 허리 아래쪽에 바늘을 찌르는 시술.",
+    "lymphoma": "몸에서 감염과 싸우는 체계에서 시작되는 암.",
+    "port catheter": "약을 넣을 수 있도록 혈관과 연결해 피부 아래에 두는 작은 장치.",
+    "PHP": "PHP: Hypertext Preprocessor; 웹사이트가 작동하도록 만드는 데 쓰는 언어임.",
+    "LTS": "Long-term support: 제작자가 장기간 지원하기로 약속한 릴리스.",
+    "atrial fibrillation": "심장 박동이 불규칙해질 수 있는 심장 리듬 문제.",
+    "immunotherapy": "몸의 면역 체계가 암과 싸우도록 돕는 치료.",
+    "certificate": "웹사이트와 연결할 때 상대가 어떤 사이트인지 확인하도록 돕는 디지털 신분증.",
+    "TLS": "Transport Layer Security: 기기 사이를 오가는 정보를 다른 사람이 읽지 못하도록 뒤섞는 방식.",
+    "intermediate CA": "Certificate authority는 웹사이트의 신원을 확인한다고 신뢰받는 기관이며, intermediate CA는 웹사이트 인증서를 보증하는 중간 연결고리.",
+    "root CA": "Certification Authority는 기기가 웹사이트 인증서의 유효성을 판단할 때 신뢰하는 최상위 기관.",
+    "/etc/ssl/cert.pem": "일부 명령줄 tool이 신뢰하는 인증서 발급 기관 목록으로 사용하는 Mac 파일.",
+    "resin printer": "액체 레진을 빛으로 굳혀 부품을 층층이 만드는 3D 프린터.",
+    "MSLA": "Masked Stereolithography: 화면으로 빛을 비출 위치를 골라 레진 층을 굳히는 출력 방식.",
+    "FDM": "Fused Deposition Modeling: 녹인 플라스틱을 가는 선으로 쌓아 물체를 만드는 3D 프린터 방식.",
+    "VOC": "Volatile organic compounds: 제품이나 재료에서 나와 실내 공기에 영향을 줄 수 있는 기체.",
+    "Open Material Mode": "Formlabs 제품뿐 아니라 다른 회사가 만든 재료도 프린터에서 쓸 수 있게 하는 설정.",
+    "UL GREENGUARD Gold": "화학물질 배출량이 적은지 시험한 제품에 주는 인증.",
+    "IPA": "Isopropyl alcohol: 출력물에 남은 레진을 씻어내는 데 쓰는 용제."
+  }
+}
