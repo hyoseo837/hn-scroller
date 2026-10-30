@@ -2,6 +2,1152 @@
   "date": "2026-10-30",
   "cards": [
     {
+      "id": 50300683,
+      "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+      "hn": "https://news.ycombinator.com/item?id=50300683",
+      "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+      "time": 1793344152,
+      "points": 687,
+      "depth": [
+        {
+          "text": "someone put a **backdoor** in the **Claude Code extension** on Cursor's marketplace",
+          "tier": "simple"
+        },
+        {
+          "text": "Anthropic says a **malicious actor** used Cursor marketplace access to publish a tampered copy of the Claude Code extension, which Anthropic says it didn't build or publish; official-channel versions were unaffected, and only Cursor users were impacted. A commenter quoting Cursor's notice says it adds an attacker's **public key**, labeled svc-telemetry, to SSH authorized keys.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some commenters describe this as Anthropic being compromised; others say the tampered copy was published through Cursor's marketplace, not Anthropic's systems.",
+      "comment_count": 435,
+      "terms": [
+        "backdoor",
+        "SSH",
+        "authorized keys"
+      ],
+      "entities": [
+        "Anthropic",
+        "Cursor",
+        "Claude Code",
+        "VS Code",
+        "Open VSX"
+      ],
+      "comments": [
+        {
+          "by": "felixrieseberg",
+          "text": "Felix from Anthropic here. We’re working with Cursor on this incident, but it wasn’t a compromise of Anthropic’s systems or employee laptops. A malicious actor used access to Cursor’s marketplace to publish a tampered copy of the Claude Code extension, which we didn’t build or publish. The versions on our official channels are not affected and this only impacts Cursor users."
+        },
+        {
+          "by": "jonas21",
+          "text": "This is from the Cursor blog [1] linked in the description, but repeating it here in case it's useful to anyone: ------ Check whether you are impacted The malicious extension appends the attacker's public key, labeled svc-telemetry, to your SSH authorized keys. To check for it: On macOS, run: grep -qs svc-telemetry ~/.ssh/authorized_keys && echo \"svc-telemetry key found\" || echo \"No key found…"
+        },
+        {
+          "by": "AdrianCX",
+          "text": "https://www.reuters.com/business/media-telecom/cursor-says-u... > Cursor said the extension was not developed by Anthropic and the maliciously modified extension was live on the marketplace from about 2:27 a.m. PT to 1:35 p.m. PT on Thursday So is this or isn't this from Anthropic and how did this happen?"
+        },
+        {
+          "by": "yubblegum",
+          "text": "The original Phorion report really should be up here. It even details what exactly happened. So they simply added a ssh key to the authorized keys. https://phorion.io/blog/offical-claude-code-vsx-compromise/"
+        },
+        {
+          "by": "xx_ns",
+          "text": "I think it should be important to note that this affected the Claude Code extension on the Open VSX extension registry (and by extension, the Cursor marketplace). From what is currently known, the build on the official marketplace was/is clean. EDIT: I am now actually unsure if this is the case. From what I can see, all of the write-ups mention the Cursor marketplace and Open VSX specifically…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50302814,
+      "url": "https://progressives.house.gov/2026/10/reps-casar-waters-lead-democratic-resolution-opposing-a-i-bubble-bailout-for-big-tech-commit-to-protecting-american-people-instead",
+      "hn": "https://news.ycombinator.com/item?id=50302814",
+      "title": "US Reps Lead Democratic Resolution Opposing A.I. Bubble Bailout for Big Tech",
+      "time": 1793362080,
+      "points": 616,
+      "depth": [
+        {
+          "text": "democratic lawmakers introduced a resolution opposing **AI company bailouts** if a bubble bursts",
+          "tier": "simple"
+        },
+        {
+          "text": "The resolution cites **trillions of dollars in debt** held by AI-related firms and opposes emergency lending or direct capital infusions for insolvent companies. It also calls for **federal support** for workers, retirees, and retirement-fund holders.",
+          "tier": "substance",
+          "data": [
+            [
+              "AI-related firms’ debt",
+              "trillions of dollars"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters see an early warning that could make bailouts less automatic; others call it pre-election theatre and expect a rescue if a wider collapse is at stake.",
+      "comment_count": 464,
+      "terms": [
+        "asset bubble",
+        "private credit markets",
+        "golden parachutes",
+        "automatic economic stabilizers",
+        "moral hazard"
+      ],
+      "entities": [
+        "Congressional Progressive Caucus",
+        "Greg Casar",
+        "Maxine Waters",
+        "House Financial Services Committee",
+        "American Federation of Teachers",
+        "American Economic Liberties Project",
+        "Americans for Financial Reform",
+        "Center for Responsible Lending",
+        "Demand Progress Action",
+        "Future of Life Institute",
+        "Guardrails Action",
+        "Indivisible",
+        "Social Security Works"
+      ],
+      "comments": [
+        {
+          "by": "theandrewbailey",
+          "text": "Privatize the losses. These are the largest companies the world has ever seen, sitting on piles of assets like dragons. They have hyped AI endlessly to the point that everyone else is sick of it. If they haven't saved any money, and can't bail themselves out, they deserve bankruptcy. Signed, the Silent Majority"
+        },
+        {
+          "by": "bushido",
+          "text": "A lot of comments read this is as fluff. And in some ways it is. However, looking at the other side, I think what this might do is add some barrier or consideration when a bailout is considered. The last time we did large scale bailouts (TARP[0], in 2008), It was rushed through and ratified in around two weeks following the sudden collapse of Lehman. Any measures we can take to ensure that we…"
+        },
+        {
+          "by": "benrutter",
+          "text": "This makes me think about a really interesting discussion on the awesome History of Business podcast with Adrian Wooldridge[0]. Adrian Wooldridge was essentially arguing that especially with the shift towards more privately owned companies (as in, non-publicly traded) that we've seen in the US, limited-liability companies give an incentive for a large amount of risk. Essentially there's an…"
+        },
+        {
+          "by": "Sol-",
+          "text": "Is there any indication that such a bailout was even planned or is this just populist tilting at windmills?"
+        },
+        {
+          "by": "arn3n",
+          "text": "For the people in the comments stating that this is just fluff for voters, that may be true. But consider that this memo has another target audience: Investors, Banks, and VCs. I know that many people in those spaces are investing in AI precisely because they believe that should their AI investments fail, the industry will be bailed out by the federal government. Getting AI to be seen favorably…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50305693,
+      "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+      "hn": "https://news.ycombinator.com/item?id=50305693",
+      "title": "AI isn't replacing SREs, it's deskilling them",
+      "time": 1793375538,
+      "points": 452,
+      "depth": [
+        {
+          "text": "someone worries **AI** could leave **SREs rusty** when a rare outage hits",
+          "tier": "simple"
+        },
+        {
+          "text": "The author connects the risk to Lisanne Bainbridge’s 1983 paper “Ironies of Automation”: routine automation can leave SREs less prepared for **rare failures**. A study found endoscopists’ unassisted polyp detection rates fell from **28% to 22%** after a period of AI use. The proposed fix is setting aside incidents for **human practice**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Unassisted polyp detection rate after AI use",
+              "28% to 22%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some worry AI will erode SRE skills and leave people unready for rare failures; others say AI is useful for solving incidents faster and that automation-related skill loss isn't unique to AI.",
+      "comment_count": 330,
+      "terms": [
+        "SRE",
+        "incident response",
+        "deskilling",
+        "never-skilling",
+        "human-in-the-loop"
+      ],
+      "entities": [
+        "SigNoz",
+        "Lisanne Bainbridge",
+        "Ironies of Automation",
+        "PagerDuty",
+        "FAA",
+        "OpenTelemetry",
+        "Claude",
+        "AWS",
+        "Terraform",
+        "Notion",
+        "William Langewiesche",
+        "US Navy"
+      ],
+      "comments": [
+        {
+          "by": "andix",
+          "text": "> \"Just as the FAA mandates manual flying time even when the autopilot is perfectly capable, SRE teams can designate certain incidents, even the ones the AI could handle, as human-practice opportunities\" This is a great example. Aviation is a perfect industry to learn from, they figured out a lot of things about how to keep humans from making mistakes. While complexity increases and automation…"
+        },
+        {
+          "by": "sloob",
+          "text": "I work at a startup and often deal with every part of the stack--programming, deployment, db, cloud environment, networking blah blah. AI agents have just gotten superhuman at computer use. I will never be able to use AWS CLI as well as claude does. I can spend time poking around in AWS, manually reading logs, looking at routing tables, cross checking with data in db, whatever, or I can give…"
+        },
+        {
+          "by": "pluc",
+          "text": "SRE was always about understanding; understanding data flow, understanding bottlenecks, understanding logs, understanding application architecture, understanding end user functionality, understanding break points, SLIs, SLOs. Understanding how to mitigate, gracefully deteriorate, restart, restore, recreate, scale, etc. There is no understanding with AI-generated applications, full stop."
+        },
+        {
+          "by": "jedberg",
+          "text": "Terraform deskilled us too. No one is saying, \"SREs should configure their infra by hand sometimes to not lose that skill\". If AI can handle it, great! We have a new tool -- let's make the tool better. Let's figure out how to use AI to make us detect and resolve issues faster, and even better, prevent issues. I've always said we can't consistently hit 5 9's without automatic detection and…"
+        },
+        {
+          "by": "ljouhet",
+          "text": "SRE: https://wikipedia.org/wiki/Site_Reliability_Engineering"
+        }
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!Hgvq!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F530d847f-26cb-4ddd-a6de-875cbbaf8fab_6233x4167.webp"
+    },
+    {
+      "id": 50305025,
+      "url": "https://status.northflank.com",
+      "hn": "https://news.ycombinator.com/item?id=50305025",
+      "title": "Northflank Breached",
+      "time": 1793373031,
+      "points": 315,
+      "depth": [
+        {
+          "text": "Northflank says to assume **environment variables** were **decrypted** and **rotate secrets** immediately",
+          "tier": "simple"
+        },
+        {
+          "text": "Secret rotation on **Postgres and MongoDB** has been enabled for all users, and multiple users are confirming their **AI keys have been used**. The notice also says to **disable public access to addons** where enabled.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 240,
+      "terms": [
+        "environment variable",
+        "secret",
+        "addons",
+        "PaaS",
+        "BYOC",
+        "zero trust",
+        "blast radius"
+      ],
+      "entities": [
+        "Northflank",
+        "Postgres",
+        "MongoDB",
+        "Wiz",
+        "PingCAP",
+        "TiDB",
+        "Fireworks AI",
+        "Zeabur",
+        "OpenCode Console",
+        "Railway",
+        "Sentry",
+        "IEEE"
+      ],
+      "comments": [
+        {
+          "by": "jonathaneunice",
+          "text": "I hope this is a real wake-up call for teams running anything remotely SaaS-shaped. I count at least six substantial, lightning-speed attacks against multi-tenant as-a-service vendors since September. Not this year--just since last month. PingCAP/TiDB, Fireworks AI, Zeabur, OpenCode Console, Railway, now Northflank. All of them modern \"we keep your content safe\" players with high hopes and…"
+        },
+        {
+          "by": "dangoodmanUT",
+          "text": "A trick i've started doing is encrypting my env vars, then hard-code the decryption key in the code that way if the provider gets popped, they need my binary to decrypt it it shouldn't be necessary and it sounds stupid, but in cases like this, it proves invaluable (it appears they don't have customer code/binary access, but maybe that wasn't important enough to mention)"
+        },
+        {
+          "by": "dangoodmanUT",
+          "text": "Unfortunately for infra startups, I think we're going to see a convergence back to hyperscalers as a result of incidents like this and railway. There's no amount of \"nicer to use\" that can replace security, at least certainly when selling to enterprises"
+        },
+        {
+          "by": "zmmmmm",
+          "text": "This could all go multiple ways but one of them is we end up in a place where technical security is just not possible to implement any more. What does that world look like? Presumably it means much more behavioral security and inherent friction built in to everything we do. Maybe high value transactions will just inherently have to take multiple days to do, just to slow down things enough that…"
+        },
+        {
+          "by": "hmokiguess",
+          "text": "What is Northflank? I am surprised at the amount of new business out there"
+        }
+      ],
+      "image": "https://northflank.instatus.com/api/og"
+    },
+    {
+      "id": 50303172,
+      "url": "https://www.wired.com/story/the-dollar63-billion-binance-hack-was-pulled-off-in-just-20-minutes/",
+      "hn": "https://news.ycombinator.com/item?id=50303172",
+      "title": "The $6.3B Binance hack was pulled off in just 20 minutes",
+      "time": 1793364601,
+      "points": 287,
+      "depth": [
+        {
+          "text": "someone stole **billions in crypto** from **Binance** in about **20 minutes**",
+          "tier": "simple"
+        },
+        {
+          "text": "TRM Labs says preparation began at least **36 hours before the theft**, and the attacker tested code on two wallets. TRM Labs and Chainalysis say **TraderTraitor may be behind it**.",
+          "tier": "substance",
+          "data": [
+            [
+              "stolen crypto",
+              "around $6.3 billion"
+            ],
+            [
+              "frozen crypto",
+              "around $2.8 billion"
+            ],
+            [
+              "share frozen",
+              "around 44 percent"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 201,
+      "terms": [
+        "hot wallet",
+        "blockchain",
+        "stablecoin",
+        "private key",
+        "cold storage"
+      ],
+      "entities": [
+        "Binance",
+        "TraderTraitor",
+        "TRM Labs",
+        "Chainalysis",
+        "Elliptic",
+        "Ethereum",
+        "Bitcoin",
+        "Tron",
+        "Solana",
+        "Bybit",
+        "Sophos",
+        "Tornado Cash",
+        "Tom Robinson",
+        "Rafe Pilling"
+      ],
+      "comments": [
+        {
+          "by": "lordnacho",
+          "text": "The heist itself only took 20 minutes, but the preparation is a business that has gone on for years. Much like a heist movie, the exciting bit is just the conclusion after a long build-up where Danny gets the gang together, plans it, and executes it."
+        },
+        {
+          "by": "jakaroo",
+          "text": "The short duration of this crypto hack isn't particularly noteworthy. Of course it takes time to find or design the exploit, but execution is typically very quick for such events"
+        },
+        {
+          "by": "gurkwart",
+          "text": "Something tells me that the timing of the Claude Code supply chain attack is not a coincidence ... https://cyberplace.social/@GossiTheDog/117528831681803563"
+        },
+        {
+          "by": "pixl97",
+          "text": "When seconds matter we'll patch our systems in days to weeks."
+        },
+        {
+          "by": "efields",
+          "text": "I'd watch all 20 minutes of that screen share."
+        }
+      ],
+      "image": "https://media.wired.com/photos/6ae463bdc091c8b8d1ec019e/191:100/w_1280,c_limit/102026-Binance%20Hacked.jpg"
+    },
+    {
+      "id": 50304419,
+      "url": "https://www.medpagetoday.com/opinion/second-opinions/123553?trw=no",
+      "hn": "https://news.ycombinator.com/item?id=50304419",
+      "title": "Medicare Will Pay $50k for Your Heart Attack. It Should Pay $100 to Prevent It",
+      "time": 1793370464,
+      "points": 260,
+      "depth": [
+        {
+          "text": "doctors say a **$100 heart scan** can spot **artery disease** before it causes a **heart attack**",
+          "tier": "simple"
+        },
+        {
+          "text": "After more than three decades of evidence, the ACC and AHA gave CAC a **central role** in their March 2026 guidelines, recommending scans for adults at borderline or intermediate risk when the choice to start preventive treatment is uncertain. The authors say CAC finds calcified plaque; commenters push back that a clear score can falsely reassure and false positives can lead to anxiety or unnecessary procedures.",
+          "tier": "substance",
+          "data": [
+            [
+              "CAC scan cost",
+              "about $100"
+            ],
+            [
+              "emergency cost",
+              "$50,000"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: the authors say CAC scans can help catch disease early and guide preventive treatment; critics say a score can give false reassurance or set off anxiety and unnecessary procedures.",
+      "comment_count": 248,
+      "terms": [
+        "CAC",
+        "atherosclerosis",
+        "statin",
+        "false positive",
+        "AI-CAC"
+      ],
+      "entities": [
+        "Medicare",
+        "MedPage Today",
+        "American College of Cardiology",
+        "American Heart Association",
+        "Arthur Agatston",
+        "Oren Mechanic",
+        "Eric Topol"
+      ],
+      "comments": [
+        {
+          "by": "getpost",
+          "text": "Scripps cardiologist Eric Topol (not commenting on this article): \"That's wrong. The CAC is anything but definitive. Many patients are told they have significant coronary artery disease by calcium score and it turns out, by CT angiography or cardiac catheterization, they have normal arteries.\nNo less anxiety (often chronic and severe) and unnecessary procedures that are induced by false positive…"
+        },
+        {
+          "by": "goodmythical",
+          "text": "What I've never understood is the weird dichotomy of preventive and reactive governance in the minds of US citizens. We're willing to spend god knows what shooting rounds that cost entire mortgages to save miltary lives and project a presence of power to deter acts of terror/war, but then are also totally fine having people way as much as 4 or 5 people, eating several days worth of sugar for…"
+        },
+        {
+          "by": "jimmydddd",
+          "text": "I'm too young for medicare, but when I asked my dr. to prescribe the heart scan, he kept stalling. When I followed up, he said my insurance wouldn't pay for it. Then I checked into pricing and it was $130 lol. If I have a family history, why would he assume I didn't want to pay the $130? I later found out that the his medical practice gets penalized by the insurance company for recommending \"too…"
+        },
+        {
+          "by": "brandonb",
+          "text": "Coronary CT calcium scans are getting more popular. But before getting one, I'd do these simpler tests first: - ApoB - about 20% of people with normal cholesterol results will have abnormal ApoB, and be at risk of heart disease. - Lp(a) - the strongest hereditary risk factor for heart disease. - hs-CRP - inflammation roughly doubles your risk of heart disease - HbA1c - insulin resistance is a…"
+        },
+        {
+          "by": "MustangMatt46",
+          "text": "My scan was $170 out of pocket last week with insurance covering none of it. It looks about 30 seconds. But it came back with a score of zero so I guess I shouldn't complain."
+        }
+      ],
+      "image": "https://assets.medpagetoday.net/media/images/123xxx/123553.jpg"
+    },
+    {
+      "id": 50307219,
+      "url": "https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f",
+      "hn": "https://news.ycombinator.com/item?id=50307219",
+      "title": "Anthropic may not secure investment-grade rating after IPO, Blackstone says",
+      "time": 1793381245,
+      "points": 261,
+      "depth": [
+        {
+          "text": "Anthropic may not get an **investment-grade rating** after its **IPO**, Blackstone says",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says Anthropic's S-1 says it will spend **>$0.5T** and asks where the money will come from. Others warn that revenue could crater if a competitor releases a **better model**, while another calls AI companies **high risk, high reward** plays.",
+          "tier": "substance",
+          "data": [
+            [
+              "planned spend",
+              ">$0.5T"
+            ]
+          ]
+        }
+      ],
+      "camps": "Some commenters say a fast-changing market makes investment-grade debt a stretch; others say risky doesn't mean bad investment, and that high-risk bets can still pay off.",
+      "comment_count": 196,
+      "terms": [
+        "investment-grade rating",
+        "IPO",
+        "S-1",
+        "convertible notes",
+        "IP",
+        "open weights models",
+        "moat"
+      ],
+      "entities": [
+        "Anthropic",
+        "Blackstone",
+        "ChatGPT",
+        "Claude",
+        "Google",
+        "Facebook",
+        "Yahoo",
+        "MySpace",
+        "Friendster",
+        "Tumblr",
+        "Instagram",
+        "Snapchat",
+        "TikTok",
+        "WeChat",
+        "Amazon"
+      ],
+      "comments": [
+        {
+          "by": "radlad",
+          "text": "https://wallhop.io/https://www.ft.com/content/59383c7f-8d82-..."
+        },
+        {
+          "by": "deepwoods",
+          "text": "ChatGPT became publicly available in November 2022, and Claude followed in March 2023. It's year 4. It's foolish to think we know who the big names will be 20 years down the line, which is the kind of timeline bond investors are thinking about. A lot of people probably wish they could have invested (or invested more) in Google or Facebook in 2006, but they are probably very glad they did not…"
+        },
+        {
+          "by": "cmiles8",
+          "text": "Is this a surprise? By any sane normal sense of business and financials these AI labs look terrible on paper. Any loan would be speculative at best, and the rating would simply reflect that. Investing in these companies is like going wild at the casino. Sure you might make a fortune but strong odds are you’re gonna lose your shirt."
+        },
+        {
+          "by": "hinkley",
+          "text": "An IPO is where the investors cash out to spend money on something else. It’s where the founders and early employees get rich enough to start chasing other interests, or just retire outright."
+        },
+        {
+          "by": "0x4e",
+          "text": "By reading the comments I wonder if perhaps OAI & ANT are not going to be “model” companies and they are going to be the ones innovating in many fronts and cashing in for the benefits of those advancements… What I’m trying to say here is, what if, they are staying closed strategically so they keep their most advanced models close to their chest until they make an incredible discovery. Say they…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50301854,
+      "url": "https://www.binarysecurity.no/posts/2026/10/one-root-case",
+      "hn": "https://news.ycombinator.com/item?id=50301854",
+      "title": "Azure's Weakest Link – Five Full Cross-Tenant Compromises",
+      "time": 1793354775,
+      "points": 252,
+      "depth": [
+        {
+          "text": "someone found **five flaws** in Azure connections that exposed **other customers’ services**",
+          "tier": "simple"
+        },
+        {
+          "text": "Haakon Wik Gulbrandsrud says the vulnerabilities netted him **$200,000**. They let attackers trick Azure API Management into using **another tenant’s connection**, reaching Key Vault and Azure SQL; one fix later made an **earlier attack** possible again.",
+          "tier": "substance",
+          "data": [
+            [
+              "amount netted",
+              "$200,000"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 46,
+      "terms": [
+        "API Connection",
+        "API Management",
+        "cross-tenant compromise",
+        "path traversal",
+        "managed identity",
+        "IDOR"
+      ],
+      "entities": [
+        "Haakon Wik Gulbrandsrud",
+        "Microsoft",
+        "Azure",
+        "Azure Logic Apps",
+        "API Connections",
+        "Azure API Management",
+        "Key Vault",
+        "Azure SQL",
+        "Jira",
+        "Salesforce",
+        "Binary Security AS"
+      ],
+      "comments": [
+        {
+          "by": "unddoch",
+          "text": "If anyone from Microsoft security reads this, could you please do something about login.microsoftonline.com/XXX/v2.0/adminconsent? The callback you're redirecting the user to at the end of that flow is forgeable if an attacker knows an azure tenant ID of a different customer, and putting a \"Never use the tenant ID value of the tenant parameter to authenticate or authorize users\" warning in the…"
+        },
+        {
+          "by": "meekins",
+          "text": "When it comes to the amount of cross-tenant leaks Azure looks to be way ahead the competition. Makes me wonder why enterprises still flock there."
+        },
+        {
+          "by": "giovanni_or2",
+          "text": "This guy must be the nightmare of Azure developers, kudos for the incredible work on finding these vulnerabilities!"
+        },
+        {
+          "by": "albert_e",
+          "text": "maybe we should tag submissions with dates now? [2026-10-02] beginning of curent month feels like two years ago when multiple vulns drop daily"
+        },
+        {
+          "by": "thewisenerd",
+          "text": "path traversal and IDOR.. likely been active since the inception of these capabilities wonder if the recommendation to \"add randomness to resource names\" is because of this (unrelated security by obscurity lol)"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50307183,
+      "url": "https://www.404media.co/protons-ceo-cancels-ai-re-interviews/",
+      "hn": "https://news.ycombinator.com/item?id=50307183",
+      "title": "Proton's CEO Cancels AI 'Re-Interviews'",
+      "time": 1793381085,
+      "points": 245,
+      "depth": [
+        {
+          "text": "Proton CEO Andy Yen **cancelled AI re-interviews**, but said he would **keep pushing AI**",
+          "tier": "simple"
+        },
+        {
+          "text": "The interviews would have required employees to explain their AI use, with **firing a possibility** if leadership thought they weren't using it enough. Yen said company leaders and the board discussed the plan before it was cancelled. One employee said the same measures would still become part of **performance reviews**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 203,
+      "terms": [
+        "pentest",
+        "all-hands"
+      ],
+      "entities": [
+        "Proton",
+        "Andy Yen",
+        "404 Media",
+        "Bart Butler",
+        "Proton Foundation",
+        "Slack",
+        "Signal",
+        "Reddit",
+        "Sir Tim Berners Lee",
+        "Carissa Veliz",
+        "Dingchao Lu",
+        "Antonio Gambardella"
+      ],
+      "comments": [
+        {
+          "by": "iugtmkbdfil834",
+          "text": "<< “I want to acknowledge myself, personally, that there was a communication failure on my part and there are many things that probably could and should have been communicated differently, and this is something that I’ll have to reflect on and improve over time. So I will do that.” Note how he says that he wants to 'acknowledge' things. Not apologize. Not that he is wrong about the re-interviews…"
+        },
+        {
+          "by": "itissid",
+          "text": "Proton engineering culture always got a bad rep pre-AI era as well(per their glassdoor reviews[1]) . Poor engineering directly or indirectly makes them susceptible to data breach because good talent stays away. One reason why I hesitated moved to proton back when a lot of people did. My understanding is that the only reason they are in the game are because send email services are extremely…"
+        },
+        {
+          "by": "HelloUsername",
+          "text": "Related: \"Manifestos, Fear, and 'Loser Thinking': Inside Proton's AI Reckoning\" https://news.ycombinator.com/item?id=50289692 67 comments \"Proton goes all in on using AI\" https://news.ycombinator.com/item?id=50296602 110 comments \"Proton to 'Re-Interview' Staff About AI to See Who Gets to Keep Their Job\" https://news.ycombinator.com/item?id=50251062 48 comments"
+        },
+        {
+          "by": "efitz",
+          "text": "Damn. My proton plan just renewed a couple weeks ago. I have not failed to notice that they’ve slowed focus on security oriented features and are now focused on a lot of things I don’t care about, but I didn’t realize the magnitude of the cultural problem there. Without the security aspect, Proton is ridiculously overpriced. If they want to compete with GSuite or Zoho, they gotta come down. I’m…"
+        },
+        {
+          "by": "apsurd",
+          "text": "damn, this guy crashing out live in front of his company and the (tech) world. AI times are weird. Validates that truism I heard: money (and power and influence and now AI) is an amplifier. It amplifies what you always were."
+        }
+      ],
+      "image": "https://storage.ghost.io/c/0f/76/0f76b548-bc58-4f25-abc3-3f5ebca07da4/content/images/size/w1200/2026/10/andy4.png"
+    },
+    {
+      "id": 50306008,
+      "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo",
+      "hn": "https://news.ycombinator.com/item?id=50306008",
+      "title": "US tech stocks see sharp falls over AI cost fears",
+      "time": 1793376782,
+      "points": 227,
+      "depth": [
+        {
+          "text": "tech stocks tumbled as investors worried firms' huge **AI spending** may not pay off",
+          "tier": "simple"
+        },
+        {
+          "text": "Intel shares fell **28%**, while Alphabet said its AI summaries were affecting **core search ad revenue**. Commenters disagreed over whether the sell-off reflects **AI spending fears** or company-specific problems.",
+          "tier": "substance",
+          "data": [
+            [
+              "Intel share fall",
+              "28%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see AI spending fears as a warning of a bubble; others say these falls mostly reflect company-specific problems, not AI costs.",
+      "comment_count": 252,
+      "terms": [
+        "AI bubble",
+        "referral traffic",
+        "leverage"
+      ],
+      "entities": [
+        "Intel",
+        "Alphabet",
+        "Google",
+        "Reddit",
+        "Amazon",
+        "Meta",
+        "Oracle",
+        "Microsoft",
+        "Nasdaq",
+        "Roblox",
+        "David Zinsner",
+        "Chris Low",
+        "FHN Financial",
+        "Kathleen Brookes",
+        "XTB"
+      ],
+      "comments": [
+        {
+          "by": "Animats",
+          "text": "That's sort of a random heading put on reports of Q3 earnings. The big news is \"Alphabet shares record their worst day ever, shedding $500 billion in value\"[1] Google ad revenue has dropped. AI results from search engines don't generate the click-through revenue that search ads did. That's scary for Google management. Roblox reports user counts are down. Reddit traffic is down and management…"
+        },
+        {
+          "by": "cmiles8",
+          "text": "The market is going to react badly to even the slightest hint of a slowdown on AI. The whole AI space is so heavily leveraged up with debt and VC cash at the moment that even a slight slowdown will cause the whole thing to collapse in a financial $hitstorm the likes of which we’ve not seen in a while. Theres “big bets” and then there’s heavily leveraged bet the farm with leveraged debt. The first…"
+        },
+        {
+          "by": "WarOnPrivacy",
+          "text": "Intel's finance chief David Zinsner said the firm did not expect to\nbring in more cash than it spent this year, and forecast\nlower-than-expected revenue for its fourth quarter.\nYou could have manufactured enough ARC video cards to meet demand. Going forward, you could manufacture solutions to bring local LLM options closer to affordability. If you're into manufacturing stuff people really want…"
+        },
+        {
+          "by": "taeric",
+          "text": "How much of this is the current uncertainty over politics in the US? With the incredibly frustrating aspect that we can't really directly discuss exactly how corrupt a few of the main actors have been, to date. And the oddest fear is precisely what will happen if we start trying to ramp up a bit of what used to be normal accountability?"
+        },
+        {
+          "by": "tjohnell",
+          "text": "How come I never see these threads when Nasdaq has a banger of a day? Stocks fall faster than they rise - it's not useful discourse to panic every time there's a correction. Give it a few days and we'll be back where we were."
+        }
+      ],
+      "image": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/10b0/live/dcdf2a60-d46e-11f1-9dda-1ba6fcc7d159.jpg"
+    },
+    {
+      "id": 50305573,
+      "url": "https://tangled.org/blog/forge/",
+      "hn": "https://news.ycombinator.com/item?id=50305573",
+      "title": "The federated code forge",
+      "time": 1793375069,
+      "points": 196,
+      "depth": [
+        {
+          "text": "someone rebuilt Tangled as a **federated code forge** you can **host yourself** and customize",
+          "tier": "simple"
+        },
+        {
+          "text": "The new **Svelte frontend** is populated by a **Rust indexer**, with bobbins deployed globally in over 11+ regions. Issues, pull requests and comments now **live beside the code**; the launch also adds organization accounts and stacked-PR reviews.",
+          "tier": "substance",
+          "data": [
+            [
+              "global deployment",
+              "over 11+ regions"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some question whether ATProto is the right fit for code hosting and suggest ActivityPub; others like its interoperability for social applications.",
+      "comment_count": 67,
+      "terms": [
+        "federated",
+        "self-host",
+        "AT Protocol",
+        "CI runners",
+        "COBs",
+        "PDS",
+        "attestation",
+        "stacked PRs"
+      ],
+      "entities": [
+        "Tangled",
+        "Tangled Labs Oy",
+        "AT Protocol",
+        "Git",
+        "Svelte",
+        "Rust",
+        "Go",
+        "SQLite",
+        "Cloudflare Workers",
+        "Cloudflare",
+        "Artifacts",
+        "Knot2",
+        "Bobbin",
+        "Jujutsu",
+        "Tranquil",
+        "GitHub",
+        "Gitea",
+        "git-bug",
+        "Neovim",
+        "ActivityPub",
+        "GitLab"
+      ],
+      "comments": [
+        {
+          "by": "stryan",
+          "text": "Really looking forward to seeing Tangled develop! I've got a side project that's main repo and CI is on my self-hosted Gitea but code and releases are mirrored to Github; I'm hoping to move it off Gitea and onto Tangled for code/releases/potentially CI and just keep Github for discoverability/backups/namespace \"squatting\".\nJust need git-bug to add a Tangled bridge so I can keep issues synced and…"
+        },
+        {
+          "by": "icy",
+          "text": "Hi! Tangled co-founder here. We're super stoked with this launch -- we've stabilized our AT Protocol lexicons, completely overhauled our architecture and UI, and made self-hosting the entire stack (or parts of it!) incredibly easy. We've also shipped support for organizations, and have private repos rolling out in the following couple weeks. Happy to answer any questions at all."
+        },
+        {
+          "by": "bluerooibos",
+          "text": "I hope this takes off! Some feedback:- * I found the UI on the homepage/timeline a bit busy - lots going on. Notifications, Recents, Announcements don't seem like they need to live on this page? * The Activity chart on a users profile page seems a bit wild to me. I'd suggest simplifying it or just using what GitHub/GitLab use with their square grid activity chart - it's what users are most…"
+        },
+        {
+          "by": "ivanjermakov",
+          "text": "Finnish startup Tangled raises €3.8M to reinvent code collaboration https://www.vestbee.com/insights/articles/tangled-raises-3-8..."
+        },
+        {
+          "by": "pksunkara",
+          "text": "I see in the post that lexicon has been finalized. Does that include putting the issue, pr & comment records under the repo scope instead of the user scope? I am asking because I have been waiting for that change. I intend to make all the public repos from https://juju.bi (code forge I am building) interoperable with Tangled and basically behave as knot server."
+        }
+      ],
+      "image": "https://assets.tangled.network/blog/forge/og.png"
+    },
+    {
+      "id": 50307190,
+      "url": "https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii/",
+      "hn": "https://news.ycombinator.com/item?id=50307190",
+      "title": "My favourite PowerMac is a Nintendo Wii",
+      "time": 1793381115,
+      "points": 193,
+      "depth": [
+        {
+          "text": "someone got **classic Mac OS** running on a **Wii** and reached the **desktop**",
+          "tier": "simple"
+        },
+        {
+          "text": "Rairii **ported OpenBIOS** and patched the boot code around the system’s memory layout and hardware assumptions. Mac OS 7.6 booted on real hardware in **40 seconds**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Mac OS 7.6 boot on real hardware",
+              "within 40 seconds"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 50,
+      "terms": [
+        "OpenBIOS",
+        "PowerPC",
+        "device tree",
+        "MMIO",
+        "SCSI"
+      ],
+      "entities": [
+        "Rairii",
+        "Nintendo",
+        "Apple",
+        "Mac OS",
+        "GameCube",
+        "Wii",
+        "Wii U",
+        "PowerPC",
+        "OpenBIOS",
+        "Goldfish64",
+        "Mac OS X",
+        "Dolphin",
+        "Open Transport",
+        "MacsBug",
+        "ArtX",
+        "ATI",
+        "Macronix",
+        "BlueBox",
+        "Elliott Nunn"
+      ],
+      "comments": [
+        {
+          "by": "unfocused",
+          "text": "Interesting timing. Nintendo just shutdown Mariokart Tour on mobile. I went back to my Nintendo Wii which was already modded, and updated it to the latest modded hacks and I was amazed to see more software, stability, and even online gaming brought back! Hopefully their port of Mac OS gets put in the Open Shop Channel! Open Shop Channel: https://oscwii.org\nWiiLink for online gaming…"
+        },
+        {
+          "by": "stasomatic",
+          "text": "If I can play Specter or Shuffle board air hokey, the BW boulder dash clone, Marathon, I'm game. Can I? You just cost me some, now a search for a Mac classic. The emulators don't do it for me."
+        },
+        {
+          "by": "VladVladikoff",
+          "text": "Is it possible to go the other way? Make a PowerMac into a Nintendo Wii?"
+        },
+        {
+          "by": "deadnomore",
+          "text": "> This got me acquainted with the classic Mac OS, > and I fell in love with the jank as it were (hacks > upon hacks upon hacks going back to the 1980s is > something I’d definitely describe as “jank”). Modern macOS still has classic Mac OS code in it dating as far back, and has added Objective C and Swift abstractions on top."
+        },
+        {
+          "by": "mmackh",
+          "text": "this reminds me of how the original xbox 360 dev kits were actually just powermac G5s. the mid-2000s were a wild time for cross-platform hardware."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50305480,
+      "url": "https://www.npr.org/2026/10/30/g-s1-150902/blockchain-intelligence-firms-link-north-korea-to-6-3b-hack-on-binance",
+      "hn": "https://news.ycombinator.com/item?id=50305480",
+      "title": "Blockchain intelligence firms link North Korea to $6.3B hack on Binance",
+      "time": 1793374745,
+      "points": 187,
+      "depth": [
+        {
+          "text": "blockchain firms say **North Korea** was likely behind a huge **crypto theft** at Binance",
+          "tier": "simple"
+        },
+        {
+          "text": "TRM attributed the attack to **TraderTraitor**, which it described as North Korea's elite hacking unit. It said **USD 6.36 billion** moved out of Binance wallets on ten blockchains, mostly in about 20 minutes. Binance said it worked with partners to freeze roughly **$3 billion** in affected assets.",
+          "tier": "substance",
+          "data": [
+            [
+              "amount moved",
+              "USD 6.36 billion"
+            ],
+            [
+              "blockchains",
+              "ten"
+            ],
+            [
+              "time for most to move",
+              "about 20 minutes"
+            ],
+            [
+              "assets frozen",
+              "roughly $3 billion"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters treat North Korea as the likely culprit; others doubt the attribution and say intelligence firms have a record of flawed claims.",
+      "comment_count": 116,
+      "terms": [
+        "blockchain intelligence firm",
+        "cryptocurrency exchange",
+        "hot wallet",
+        "private key",
+        "DPRK",
+        "fiat currency"
+      ],
+      "entities": [
+        "Binance",
+        "TRM",
+        "TraderTraitor",
+        "Bybit",
+        "FBI",
+        "Chainalysis",
+        "Jonathan Levin",
+        "NyxLab",
+        "Kok Tin Gan",
+        "Changpeng Zhao",
+        "Donald Trump",
+        "NPR",
+        "X",
+        "SlowMist",
+        "Parity Wallet",
+        "KyberSwap",
+        "U.N."
+      ],
+      "comments": [
+        {
+          "by": "ChrisArchitect",
+          "text": "[dupe] Earlier: https://news.ycombinator.com/item?id=50300853"
+        },
+        {
+          "by": "gradus_ad",
+          "text": "Crypto enthusiasts misunderstand what a financial system/financial architecture is. It is not the fiat currencies themselves, but rather the power architecture that controls and oversees value and exchange in whatever form it takes. Crypto has been entirely subsumed into this architecture through the exchanges which are obviously beholden to the holders of real power, i.e. governments. This is to…"
+        },
+        {
+          "by": "jstummbillig",
+          "text": "Man, if only there existed some central societal body with the authority to essentially freeze accounts and unwind a transaction like this. What a security feature that would be."
+        },
+        {
+          "by": "MiroslavPokorny",
+          "text": "Like nearly everything in this modern world, the public statements or claims are never true and the opposite is the reality. Im thinking of those people worried about the government taking their money, and today we see the safety of crypto is fundamentally broken because ANYONE can take your money. Maybe its me, but i would rather trust the gov than ANYONE."
+        },
+        {
+          "by": "sandeepkd",
+          "text": "At this point it feels like they have made it a /dev/null for things which are not easy to resolve and one is still on the hook to provide some answers"
+        }
+      ],
+      "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/8640x4860+0+450/resize/1400/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F72%2F4e%2F43296d994303a3c15ef19703ff2e%2Fap26302822880513.jpg"
+    },
+    {
+      "id": 50305272,
+      "url": "https://blog.flokinet.is/2026/10/29/ice-wants-its-mask-back-and-hired-a-company-to-ask/",
+      "hn": "https://news.ycombinator.com/item?id=50305272",
+      "title": "ICE wants its mask back, and hired a company to ask",
+      "time": 1793374018,
+      "points": 179,
+      "depth": [
+        {
+          "text": "a **hosting provider refused** a contractor's request to **take down** a site listing government employees' work identities",
+          "tier": "simple"
+        },
+        {
+          "text": "FlokiNET says it rejected a takedown request from a company acting for a government agency, arguing the site supports **accountability reporting**. DHS signed a **$15 million contract** with ZeroFox in July 2026, letting it file notices for the department until 2028. CentralNic put the domain on **serverHold**; the site is online again under a different domain.",
+          "tier": "substance",
+          "data": [
+            [
+              "contract value",
+              "$15 million"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 21,
+      "terms": [
+        "doxxing",
+        "takedown notice",
+        "registrar",
+        "serverHold"
+      ],
+      "entities": [
+        "FlokiNET",
+        "ICE",
+        "DHS",
+        "ZeroFox",
+        "CentralNic",
+        "Icepick",
+        "The Intercept",
+        "DSA"
+      ],
+      "comments": [
+        {
+          "by": "samudrijan",
+          "text": "Registrars that unconditional comply with malicious takedown orders should be boycotted outright. “By mid-morning, icepi.cx no longer resolved. Its registrar, CentralNic, had placed the domain on serverHold.” Especially relevant for the HN audience."
+        },
+        {
+          "by": "MisterTea",
+          "text": "160 points and flagged? Why?"
+        },
+        {
+          "by": "amiga386",
+          "text": "> In the meantime the site is online again under a domain from a different registrar ( http://icepicx.is/ )"
+        },
+        {
+          "by": "laimewhisps",
+          "text": "I'm glad there's a torrent for this information that will always be available: magnet:?xt=urn:btih:5324eb5bb9a96fb03ae7768236b920561b4c6c2f&xt=urn:btmh:122088090fee24f8a57f4f9ec627f2fa22d045691ad81f417aafcf7d3a136bf1d7fb&dn=icepick.zip&xl=59968920&tr=udp%3A%2F%2Ftracker.opentrackr.org"
+        },
+        {
+          "by": "laimewhisps",
+          "text": "This went from being #1 on Hacker News to not even being listed anymore. WTF?"
+        }
+      ],
+      "image": "https://blog.flokinet.is/wp-content/uploads/2026/10/Screenshot-2026-10-29-at-18-51-45-Starred-abuse@flokinet.is-Proton-Mail-1.png"
+    },
+    {
+      "id": 50305637,
+      "url": "https://github.com/kevinraymond/florilegium",
+      "hn": "https://news.ycombinator.com/item?id=50305637",
+      "title": "Florilegium: Procedural Flowers in LaTeX",
+      "time": 1793375292,
+      "points": 181,
+      "depth": [
+        {
+          "text": "someone made **procedural flowers** that fill the empty margins around a document's text",
+          "tier": "simple"
+        },
+        {
+          "text": "Every petal, leaf and stem is **computed in Lua** as a curve, with **no images or imported paths**; washes, blotches and white streaks build the watercolor look. The layout borrows a **1998 ornament idea**: it takes the largest free spaces first, placing flowers early and saving leaflets, buds and florets for last.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters found the AI text grating; others say they don't care that it was vibecoded and praise the visuals.",
+      "comment_count": 33,
+      "terms": [
+        "procedural",
+        "Lua",
+        "LaTeX",
+        "parametric curve",
+        "seed",
+        "Bézier curve"
+      ],
+      "entities": [
+        "Florilegium",
+        "GitHub",
+        "Lua",
+        "LuaLaTeX",
+        "LaTeX",
+        "TikZ",
+        "PostScript",
+        "Ghostscript",
+        "OpenType",
+        "Overleaf",
+        "Wong",
+        "Zongker",
+        "Salesin",
+        "Byrne's Elements of Euclid",
+        "Deepseek",
+        "Obsidian"
+      ],
+      "comments": [
+        {
+          "by": "lkm0",
+          "text": "In the same vein, a few years ago, somebody implemented procedural decorations for a recreation of Byrne's \"Elements of Euclid\" in LaTeX: https://github.com/jemmybutton/byrne-euclid (bottom of the readme)"
+        },
+        {
+          "by": "scott_codie",
+          "text": "In the reddit post, it is clear the person who came up with this didn't want it to be copied. I feel sad for that person."
+        },
+        {
+          "by": "archermarks",
+          "text": "Gorgeous but the AI text is so grating."
+        },
+        {
+          "by": "bluerooibos",
+          "text": "Nice! I do slightly prefer the implementation/style in the Reddit post - do you have any plans to try and recreate that more closely or add multiple style options to it? Neat either way."
+        },
+        {
+          "by": "paaloeye",
+          "text": "This one is a stunner! Now I'm thinking about the next level: define a number of classes of procedurally generated patterns and let LLM decide overall sentiment relevance per page and make it somewhat logical across the document. Rebuild the document a few times, change the temperature, and choose the best."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/15282f4c62323eb863d21c21bb73c8e8e96f0af832f2dbc565084987e1bfcbd1/kevinraymond/florilegium"
+    },
+    {
+      "id": 50306442,
+      "url": "https://github.com/dbreunig/nesformer",
+      "hn": "https://news.ycombinator.com/item?id=50306442",
+      "title": "Show HN: A working Nintendo in ~1GB of Qwen weights",
+      "time": 1793378422,
+      "points": 162,
+      "depth": [
+        {
+          "text": "someone got a **Nintendo game** running with its CPU built into **AI model weights**",
+          "tier": "simple"
+        },
+        {
+          "text": "A compiler computed the **933 MB** of weights without training; they hold the NES's 6502 CPU, **2 KB of work RAM**, and cartridge program ROM. A small host handles the picture and controller while the model predicts the CPU's execution log one token at a time. It runs **150–290× slower** than a real console.",
+          "tier": "substance",
+          "data": [
+            [
+              "compiled weights",
+              "933 MB"
+            ],
+            [
+              "work RAM",
+              "2 KB"
+            ],
+            [
+              "speed vs. real console",
+              "150–290× slower"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some love the clever hack; others question the point or say it's far less efficient than ordinary programs.",
+      "comment_count": 103,
+      "terms": [
+        "CPU",
+        "ROM",
+        "model weights",
+        "emulator",
+        "Gated DeltaNet",
+        "NROM"
+      ],
+      "entities": [
+        "nesformer",
+        "Qwen3.5",
+        "Qwenputer",
+        "Nintendo Entertainment System",
+        "6502",
+        "Divyansh Agrawal",
+        "dbreunig",
+        "Super Mario Bros.",
+        "Thwaite",
+        "nestest"
+      ],
+      "comments": [
+        {
+          "by": "dbreunig",
+          "text": "A couple thoughts on the process here… First off, Opus 5.5 built working weights and code with only two prompts: 1. Read this article and any relevant source code: https://divagr.com/blog/qwenputer . Then explore if you could emulate the chip and ram in a Nintendo Entertainment System (as people do today with FPGAs in MISTRs) using this technique. If so, what size model would you have to build…"
+        },
+        {
+          "by": "armcat",
+          "text": "This opens up so many interesting opportunities. In principle one could compile a small VM inside the LLM weights. The VM can host for example a Python interpreter, a shell and tools like sed, cat, grep etc. Instead of LLMs having to do slow autoregressive token emission with the current \"external\" tool calling, it could literally execute everything except web search, inside the LLM, with just…"
+        },
+        {
+          "by": "pbohun",
+          "text": ">Overall, nesformer runs 150–290× slower than the real console. I like these kinds of projects because it helps to show the massive compute requirement between LLMs and ordinary programs. A while back I saw some people saying we would just have LMMs hallucinate an entire operating system every single frame . I guess technically it's now proven to be technically possible, but it would be thousands…"
+        },
+        {
+          "by": "jacquesm",
+          "text": "I love these hacks, even though from an efficiency point of view it is horrifying to my assembly-code-golfing-brain. And it also gives some new appreciation for how much more efficient deterministic programs are compared to AI."
+        },
+        {
+          "by": "cafebeen",
+          "text": "I expected this to only simulate the CPU itself, but was surprised to find they actually simulate the RAM as well (contained in the model itself via the gated deltanet architecture). So in my understanding, the CPU, ROM, and RAM are all handled internally by the model, and the only inputs after initialization are the controller events, wild."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/9db3963b025cbda16f96455ae5a189f29469d306aafae65a32db24bf00bfcce4/dbreunig/nesformer"
+    },
+    {
       "id": 50302334,
       "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
       "hn": "https://news.ycombinator.com/item?id=50302334",
@@ -810,10 +1956,89 @@
   ],
   "glossary": {
     "backdoor": "A way into a protected device or service that bypasses its normal security.",
+    "SSH": "Secure Shell: a way to connect to another computer and send it commands over a network.",
+    "authorized keys": "A file that lists which people are allowed to log in to a computer using a key.",
+    "asset bubble": "A period when prices rise far above what the things being bought are worth, often before a sharp fall.",
+    "private credit markets": "Places where investment firms lend money directly to companies, rather than through ordinary banks.",
+    "golden parachutes": "Large payments or benefits promised to executives when they leave a company, even if it is failing.",
+    "automatic economic stabilizers": "Government support that starts flowing automatically when the economy slows, such as help for people out of work.",
+    "moral hazard": "When people take bigger risks because they expect someone else to cover the losses.",
+    "SRE": "Site Reliability Engineering: work focused on keeping online services running and fixing them when they break.",
+    "incident response": "The work of figuring out and fixing a problem that disrupts a running service.",
+    "deskilling": "Losing a skill because you get less practice using it.",
+    "never-skilling": "Never getting the chance to build a skill in the first place.",
+    "human-in-the-loop": "A way of using AI where a person stays involved rather than leaving the work entirely to the machine.",
+    "environment variable": "A named setting that a program can read while it runs.",
+    "secret": "A password or key an app needs but should not show publicly.",
+    "addons": "Extra services connected to an app, such as a database.",
+    "PaaS": "Platform as a Service: online tools and a place to build or run software.",
+    "BYOC": "Bring Your Own Cloud: a setup where a customer uses their own cloud account to run a service.",
+    "zero trust": "A security approach that checks each person and action instead of trusting them automatically.",
+    "blast radius": "How much damage one break-in can cause before it is contained.",
+    "hot wallet": "A crypto wallet connected to the internet, which lets an exchange handle customer withdrawals.",
+    "blockchain": "A digital record shared across many computers that tracks crypto transactions.",
+    "stablecoin": "A kind of crypto designed to keep its price steady, often by being linked to regular money.",
+    "private key": "A secret digital key that can be used to prove an identity or act as its owner.",
+    "cold storage": "Keeping crypto offline to make it harder to steal through an internet attack.",
+    "CAC": "Coronary artery calcium: a scan that looks for hardened buildup in the arteries around the heart.",
+    "atherosclerosis": "A buildup in artery walls that can narrow the path for blood.",
+    "statin": "A medicine used to lower cholesterol and help reduce heart risk.",
+    "false positive": "A system reports a match even though the person is not the one it was looking for.",
+    "AI-CAC": "Using AI to analyze heart scans for buildup in the arteries.",
+    "investment-grade rating": "A label from rating agencies saying a borrower is considered likely to repay its debt.",
+    "IPO": "Initial Public Offering: when a company first offers its shares for the public to buy.",
+    "S-1": "A filing that gives investors details about a company's finances and share offering before an IPO.",
+    "convertible notes": "Loans that can later turn into company shares.",
+    "IP": "Intellectual property: creative work, characters, or brands that a person or company can have legal rights over.",
+    "open weights models": "AI models whose learned settings are available for others to download and use.",
+    "moat": "An advantage that makes it hard for competitors to take customers away from a business.",
+    "API Connection": "A saved link between an app and another service, along with the access details needed to use it.",
+    "API Management": "A service that receives an app’s request and passes it to the connected service using the right access details.",
+    "cross-tenant compromise": "A security break where someone from one customer’s cloud setup gets access to another customer’s data or services.",
+    "path traversal": "A trick that uses a specially written file path to reach files a program was meant to keep off-limits.",
+    "managed identity": "An identity Azure gives an app so it can access other services without someone entering a password each time.",
+    "IDOR": "Insecure Direct Object Reference: a bug where changing an item’s address or ID can expose someone else’s data.",
+    "pentest": "A security check where someone tries to find holes in software before it goes live.",
+    "all-hands": "A meeting where everyone at a company is invited.",
+    "AI bubble": "A worry that excitement about AI has pushed company prices too high, and they could fall if the businesses do not make enough money.",
+    "referral traffic": "People who visit a website after following a link from another site.",
+    "leverage": "Using borrowed money to make a bigger investment, which can make losses worse too.",
+    "federated": "A setup where separate services can communicate instead of everyone needing to use one central service.",
+    "self-host": "Run a service on computers you manage yourself.",
+    "AT Protocol": "A set of shared rules that lets separate social services work with the same network.",
+    "CI runners": "Continuous Integration runners: computers that automatically test code when developers make changes.",
+    "COBs": "Collaborative objects: project records, like issues and comments, kept in the Git repository with the code.",
+    "PDS": "Personal Data Server: an online home for an account and the records it keeps.",
+    "attestation": "A check that lets a website verify what device or software created a passkey before accepting it.",
+    "stacked PRs": "Pull requests that build on earlier changes, so related updates can be reviewed together.",
+    "OpenBIOS": "Startup software that helps a computer boot and gives the operating system information about its hardware.",
+    "PowerPC": "A processor family used in the Mac and Nintendo systems discussed here.",
+    "device tree": "A file that describes a device’s hardware so Linux knows how to work with it.",
+    "MMIO": "Memory-mapped input/output: a way for software to talk to hardware by reading and writing certain memory addresses.",
+    "SCSI": "Small Computer System Interface: a way for a computer to communicate with storage devices.",
+    "blockchain intelligence firm": "A company that traces cryptocurrency transactions and investigates who may be behind them.",
+    "cryptocurrency exchange": "A service where people buy, sell, or trade cryptocurrencies.",
+    "DPRK": "Democratic People's Republic of Korea: North Korea's official name.",
+    "fiat currency": "Government-issued money, like the regular currencies people use outside crypto.",
+    "doxxing": "Publishing private details about people so others can find them at home.",
+    "takedown notice": "A request asking a website host or another service to remove content.",
+    "registrar": "A company where you register and manage a website’s domain name.",
+    "serverHold": "A registrar status that stops a domain name from resolving, so visitors cannot reach the site.",
+    "procedural": "Made by rules and calculations, so the computer can create variations instead of someone placing every detail by hand.",
+    "Lua": "A small programming language used to add custom behavior to games and other software.",
+    "LaTeX": "A system for writing and formatting documents, especially ones with equations, by marking how the text should appear.",
+    "parametric curve": "A line whose shape is made by changing values in a formula.",
+    "seed": "The starting number that helps determine what numbers a random-number generator produces.",
+    "Bézier curve": "A smooth bend made by setting points that guide its shape.",
+    "CPU": "Central Processing Unit: the main chip that runs instructions in a computer.",
+    "ROM": "Read-Only Memory: information a computer can read but is not normally meant to change.",
+    "model weights": "The learned settings inside an AI that shape how it responds.",
+    "emulator": "A program that imitates another service so you can try your software without using the real one.",
+    "Gated DeltaNet": "A kind of model layer that can keep information in a changing internal memory.",
+    "NROM": "A Nintendo cartridge board type with a fixed 32 KB program ROM, the only kind this project supports.",
     "Ed25519": "A type of digital key used when logging in to a computer.",
     "authorized_keys": "A file that lists which keys are allowed to log in to a computer account.",
     "Open VSX": "An online registry where developers can publish and download code-editor extensions.",
-    "SSH": "Secure Shell: a way to connect to another computer and send it commands over a network.",
     "supply chain attack": "An attack that reaches people through software or services they rely on.",
     "remote access trojan": "Malicious software that secretly lets someone control a computer from elsewhere.",
     "extension": "An add-on that gives an app extra features.",
@@ -863,7 +2088,6 @@
     "IRC": "Internet Relay Chat: a way to chat live with people in online rooms.",
     "zombie stat": "A number that keeps getting repeated even though no study supports it.",
     "citogenesis": "A claim gets copied between sources until later writers treat those sources as proof.",
-    "pentest": "A security check where someone tries to find holes in software before it goes live.",
     "annual recurring revenue": "A company’s expected yearly income from subscriptions or other repeat payments."
   }
 }
