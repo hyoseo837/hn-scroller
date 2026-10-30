@@ -1,0 +1,416 @@
+{
+  "date": "2026-10-30",
+  "cards": [
+    {
+      "id": 50296486,
+      "url": "https://labs.ycombinator.com/projects/games/index.html",
+      "hn": "https://news.ycombinator.com/item?id=50296486",
+      "title": "We ran AI agent swarms in Minecraft and Mindustry",
+      "time": 1793310028,
+      "points": 241,
+      "depth": [
+        {
+          "text": "someone put **AI agent swarms** to work in Minecraft and Mindustry",
+          "tier": "simple"
+        },
+        {
+          "text": "Commenters say the Minecraft agents often worked almost **turn by turn**. In one example, four spent **11 minutes** appointing a “sole fertilizer operator” for one piece of bone meal on one wheat block.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some find the experiments impressive and fun; others say LLMs are too slow and ill-suited to gameplay.",
+      "comment_count": 82,
+      "terms": [
+        "agent swarm",
+        "turn-based",
+        "LLM",
+        "latency",
+        "API",
+        "world model"
+      ],
+      "entities": [
+        "Minecraft",
+        "Mindustry",
+        "Mineflayer",
+        "Luanti",
+        "Minetest",
+        "Baritone",
+        "OpenAI",
+        "OpenAI Five",
+        "Dota 2",
+        "Claude",
+        "Anthropic",
+        "Qwen",
+        "Y Combinator",
+        "Zig"
+      ],
+      "comments": [
+        {
+          "by": "peri-cl",
+          "text": "This is hilarious and adorable. > \"Ada tossed a cooked chicken to Noor; Esme picked it up by accident and ate it. A three-minute \"no blame\" inquiry produced a written protocol...\" They're like super-serious little senior engineers. (edit: or dining-philosophers). About how much KV cache do these kinds of agents use? Could you squeeze 50 of these $game agents onto a small consumer GPU (small LLM)?…"
+        },
+        {
+          "by": "Kiboneu",
+          "text": "If you want to do a version of this yourself quickly -- Install Luanti with Minetest (open source minecraft), and instruct your agent to write a mod that gives it network access to the game's Lua interpreter. The agent can then do anything from modifying the world state directly to controlling NPCs. I had it build giant bases similar to black mesa in half life with power distribution mods. It…"
+        },
+        {
+          "by": "grenoire",
+          "text": "Interesting setups, I found the Minecraft agents to work in an almost turn-based manner, which makes me think that the three hours and open format did not really give them sufficient incentives to play in a more lively or reactive manner. On the other hand, they also behave similarly in Bed Wars, which should have incentivised it. A bit disappointed... I'm also wondering if the article itself was…"
+        },
+        {
+          "by": "robterrell",
+          "text": "> There was a tendency toward bureaucracy. Four agents spent 11 minutes appointing\n> a \"sole fertilizer operator\" for a single piece of bone meal on a single wheat\n> block. Feels like a scene from Douglas Adams' B Ark."
+        },
+        {
+          "by": "ansipunk",
+          "text": "It is impressive, but it is also a display that LLMs are simply not suited for this, there's way too much latency. Obviously, a more specialized neural network would be much better, but would you believe this: In 2017, OpenAI presented the first version of their program that plays Dota 2, a very complex, fast MOBA with endless mechanics and defeated one of the world champions in a one-on-one…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50295450,
+      "url": "https://github.com/SheepSeb/tinyworldformer",
+      "hn": "https://news.ycombinator.com/item?id=50295450",
+      "title": "A tiny world model running games on a Raspberry Pi Pico 2 W",
+      "time": 1793305948,
+      "points": 180,
+      "depth": [
+        {
+          "text": "someone got a **tiny world model** to **generate and play games** on a Raspberry Pi Pico",
+          "tier": "simple"
+        },
+        {
+          "text": "One network **predicts the next frame and reward** from the current frame and an action; the actor network picks an action from that generated frame. A fresh agent can learn on the board, and button presses let you take over the dream.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 10,
+      "terms": [
+        "world model",
+        "actor network",
+        "reward"
+      ],
+      "entities": [
+        "Tinyworldformer",
+        "Raspberry Pi Pico 2 W"
+      ],
+      "comments": [
+        {
+          "by": "boustrophedon",
+          "text": "I might have missed it in the readme, but what hardware did the training take place on? This is really neat."
+        },
+        {
+          "by": "dannyw",
+          "text": "This is incredibly cool! Fascinating to see looped transformers be necessary for mini-Doom, but not for simpler games."
+        },
+        {
+          "by": "andai",
+          "text": "Very cool. I didn't know NNs were capable of such determinism, that's very interesting. Is this a similar effect to overfitting? Also, it's the same model for all the games, right?"
+        },
+        {
+          "by": "xpct",
+          "text": "Is the actor trained on world model's mistakes as well? If so, it should learn to force hallucinations that force it into an easier state."
+        },
+        {
+          "by": "cchance",
+          "text": "If this runs on a PI... can it run on webgpu ?"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/7d74822e6f0abe437bbd41b48d58f162bfef650ba7c9100f37912dd202a9d852/SheepSeb/tinyworldformer"
+    },
+    {
+      "id": 50286197,
+      "url": "https://www.bbc.com/news/articles/cm8xz7pkd0jjo",
+      "hn": "https://news.ycombinator.com/item?id=50286197",
+      "title": "What we know so far about Spain train crash",
+      "time": 1793264108,
+      "points": 176,
+      "depth": [
+        {
+          "text": "Spain's deadly train crash followed a **computer failure** and a decision to let trains move at **normal speed**",
+          "tier": "simple"
+        },
+        {
+          "text": "Óscar Puente said a **computer failure** initially halted **six moving trains**, including the two that later collided. Recordings appear to show the Renfe driver was told to disconnect and reconnect LZB and continue at normal speed, while the Iryo train remained **stopped ahead**.",
+          "tier": "substance",
+          "data": [
+            [
+              "people killed",
+              "At least 69"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some blame the controller's decision and lack of automatic safeguards; others point to under-maintenance and infrastructure spending.",
+      "comment_count": 334,
+      "terms": [
+        "LZB",
+        "Lateral Signaling Block",
+        "fail-safe",
+        "virtual block"
+      ],
+      "entities": [
+        "Óscar Puente",
+        "Renfe",
+        "Iryo",
+        "LZB"
+      ],
+      "comments": [
+        {
+          "by": "1718627440",
+          "text": "The following is hypothetical, since we do not have a proper safety report yet. It sounds like the issue happened, because there was an error in the line-based train control system (LZB), which led to falling back to the point-based train control system (ASFA). However since there are more virtual blocks in LZB, than physical blocks in ASFA, this means that suddenly more than one train is in one…"
+        },
+        {
+          "by": "swiftcoder",
+          "text": "The level of human negligence here is astounding. The system did exactly what it was supposed to (lock the train down if the track can't be confirmed clear), and then a human controller ordered the crew to override the system, and ordered them to proceed at an unsafe speed towards a similarly disabled train?"
+        },
+        {
+          "by": "juliushuijnk",
+          "text": "It should not be possible for one person to make a mistake of this magnitude.\nIn case of a disconnected/off main safety system, the train should be limited on a hardware level to not be able to go over 40km/h."
+        },
+        {
+          "by": "notenchange",
+          "text": "Reading the text it seems to me this is due to a very widespread issue in Spain and other southern European countries: people don’t care about the warnings because there are too many false positives. That’s why people here, when they hear the fire alarm they just wait for it to go off: the probability that it is actually a fire is minuscule… but the alarm triggers a lot. Not sure how to actually…"
+        },
+        {
+          "by": "electroweak",
+          "text": "I think aircraft are so safe in this regard because, essentially, they are required to use a single international collision avoidance system that is well defined. And modern cars have AEB systems built by vendors aiming for commonality to meet worldwide rules. But train traffic systems seem to be a hodgepodge of different systems, perhaps locally grown and driven by the local vagaries of politics…"
+        }
+      ],
+      "image": "https://ichef.bbci.co.uk/news/1024/branded_news/fe69/live/788ac890-d37d-11f1-b441-2b33b063138f.jpg"
+    },
+    {
+      "id": 50285154,
+      "url": "https://borretti.me/article/we-wont-just-hang-out",
+      "hn": "https://news.ycombinator.com/item?id=50285154",
+      "title": "We won't \"just hang out\"",
+      "time": 1793254806,
+      "points": 169,
+      "depth": [
+        {
+          "text": "someone argues an **AI utopia** could leave people with fewer ways to build **friendships**",
+          "tier": "simple"
+        },
+        {
+          "text": "They say **work and education** will lose their purpose in an AI utopia, and describe AI dissolving communities like the one where they met friends through **open-source code**. They worry younger people may have fewer ways to form relationships as **old networks thin out**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some worry that an AI utopia could erode social ties; others say people will still build friendships through care, hobbies, learning, sport, and other human interests.",
+      "comment_count": 281,
+      "terms": [
+        "Singularity",
+        "post-scarcity",
+        "UBI",
+        "BATNA",
+        "ASI",
+        "superstimulus",
+        "human capital",
+        "open-source",
+        "IRC"
+      ],
+      "entities": [
+        "Claude Code",
+        "Austral",
+        "TikTok",
+        "Linux",
+        "IRC",
+        "Gregory Conti",
+        "Paul Strand",
+        "Alan Watts",
+        "Magnus Carlsen",
+        "Jupiter Ascending",
+        "Wall-E",
+        "Culture"
+      ],
+      "comments": [
+        {
+          "by": "alwa",
+          "text": "I dunno—I spend a lot of time “just hanging out” with people who aren’t particularly dazzled by work or intellectual pursuits or higher education. I feel like those constitute one set of processes by which people come together and form relationships and, for those of us who are mainly familiar with that set, it can be instructive to seek out communities that form without any of those elements…"
+        },
+        {
+          "by": "articulatepang",
+          "text": "This argument ignores sexual selection and people's desire for status (the two are closely related). In many respects, many of us already have superabundance, in that our basic physical needs are taken care of. Yet we convince ourselves that's not enough and continue to work. What is the object of that work, usually? The respect of others, exclusive limited resources like land, and to have highly…"
+        },
+        {
+          "by": "thechairman12",
+          "text": "This take seems shortsighted. There's something to be said for doing things because they are enjoyable. People cook for themselves because they enjoy the process, not just the meal. I climb mountains because it makes me feel good -- I wouldn't take a gondola to the top even if it existed. The 100m race is not run by motorcycles. There's more to life. Perhaps we will value eachother on an even…"
+        },
+        {
+          "by": "jaxtracks",
+          "text": "A lot of these takes saying we're doomed to a Wall-E future seriously underestimate the human spirit I think. The tykes I volunteer teaching code to still want to write the challenging parts themselves, because they like doing hard things and expressing themselves. It doesn't matter that the robots have supposedly taken over that job. Same as how the tykes I coach wrestling for do it because it's…"
+        },
+        {
+          "by": "nezi",
+          "text": "If your whole personality is derived from abstract intelligence then you will have little to form relationships with others since AI is better than people at those things. But there is a whole world of experience outside of abstract intelligence. Go to a zoo, go camping, enjoy food, enjoy art, enjoy sports. All these activities support friendships. The relationships formed from online forms, open…"
+        }
+      ],
+      "image": "https://borretti.me/assets/card/we-wont-just-hang-out.webp"
+    },
+    {
+      "id": 50290283,
+      "url": "https://trakkr.ai/trakkr-research/zombie-stats",
+      "hn": "https://news.ycombinator.com/item?id=50290283",
+      "title": "Zombie stats: Where the numbers AI quotes come from",
+      "time": 1793286377,
+      "points": 155,
+      "depth": [
+        {
+          "text": "a study traced **AI-quoted statistics** and found **fewer than half** led to matching research",
+          "tier": "simple"
+        },
+        {
+          "text": "Trakkr Research asked ChatGPT, Perplexity, Gemini, Claude and Google AI Overviews questions that called for a number, then traced **1,285 cited statistics** up to five pages deep. **40%** reached a study that said the same thing; **8%** reached a study, but the number or context had changed.",
+          "tier": "substance",
+          "data": [
+            [
+              "statistics traced",
+              "1,285"
+            ],
+            [
+              "reached a matching study",
+              "40%"
+            ],
+            [
+              "reached a study with changed number or context",
+              "8%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters see a real problem with AI repeating unsourced figures; others call the report slop or an ad, and point out that people have spread bad statistics for ages.",
+      "comment_count": 66,
+      "terms": [
+        "zombie stat",
+        "citogenesis",
+        "LLM"
+      ],
+      "entities": [
+        "Trakkr Research",
+        "ChatGPT",
+        "Perplexity",
+        "Gemini",
+        "Claude",
+        "Google AI Overviews",
+        "Mack Grenfell"
+      ],
+      "comments": [
+        {
+          "by": "Isamu",
+          "text": "To me the dream of AI is: an agent can do the drudge work of tracking every statement down to the supporting reference, documentation and ultimately the work involved in verifying. It is NOT being used for this, instead we want faster “answers” that avoid due diligence. Same as always but lazier."
+        },
+        {
+          "by": "toddmorey",
+          "text": "I can't decide if the report's writing (\"One number, followed\" & \"Quoted by all five. Sourced by none.\") is being lazy or ironic?"
+        },
+        {
+          "by": "alberth",
+          "text": "I know Perplexity isn't often talked about anymore but their design of every sentence needing to be able to be referenced back to an actual source (like an academic peer reviewed paper) seems like a super power for trust."
+        },
+        {
+          "by": "falcor84",
+          "text": "A full 40% of AI stats actually have a specific study behind them? Knowing how the human baseline is that 73.6%* of all statistics are made up on the spot, this is really encouraging. *That particular stat was of course made up, but not by me."
+        },
+        {
+          "by": "jrflo",
+          "text": "Just an thinly veiled ad for something called trakkr. Not to mention that none of these \"stats\" actually matter aside from being the type of thing that a consultant would put in a pitch deck, at which point their accuracy doesn't matter anyways"
+        }
+      ],
+      "image": "https://trakkr.ai/images/research/og/zombie-stats.png"
+    },
+    {
+      "id": 50289692,
+      "url": "https://www.404media.co/manifestos-fear-and-loser-thinking-inside-protons-ai-reckoning/",
+      "hn": "https://news.ycombinator.com/item?id=50289692",
+      "title": "Manifestos, Fear, and 'Loser Thinking': Inside Proton's AI Reckoning",
+      "time": 1793284146,
+      "points": 151,
+      "depth": [
+        {
+          "text": "a report says **Proton's CEO** is pushing engineers to use **AI** despite security concerns",
+          "tier": "simple"
+        },
+        {
+          "text": "404 Media says it spoke to **eight current and one former Proton employee** and reviewed Slack chats, meeting recordings, and an AI manifesto. CTO Bart Butler said **Ninety percent of Proton’s code** in October was written by AI; staff were told they’d be **re-interviewed about AI use**, with jobs potentially at stake.",
+          "tier": "substance",
+          "data": [
+            [
+              "AI-written code at Proton in October",
+              "Ninety percent"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: most commenters say the reported AI push and leadership style damage trust; one pro-AI commenter argues the title gives Yen too much power and points to employees pushing back.",
+      "comment_count": 54,
+      "terms": [
+        "pentest",
+        "LLM",
+        "annual recurring revenue"
+      ],
+      "entities": [
+        "Proton",
+        "Andy Yen",
+        "Bart Butler",
+        "404 Media",
+        "Proton Mail",
+        "Lumo",
+        "Claude",
+        "Anthropic",
+        "Tuta"
+      ],
+      "comments": [
+        {
+          "by": "Refreeze5224",
+          "text": "I no longer trust Proton after reading this. Chen seems like he has lost what the entire point of Protonmail was supposed to be, and now wants to become one of the Big Tech companies they were built to be an alternative to. He also seems like a two-faced bully. Email (and VPN, password manager, etc.) is far too sensitive to go as all-in as they want to do on AI. I've been using Tuta in parallel…"
+        },
+        {
+          "by": "pier25",
+          "text": "> “Due to insufficient velocity,” Proton is not on track to achieve its annual recurring revenue target by the end of the year I'm a Proton customer and other than some UX improvements I'm not missing any big features. This idea they need more velocity is a failure in management."
+        },
+        {
+          "by": "lioeters",
+          "text": "The CEO posted in a company chat that pentesting newly written code before pushing it live is \"bullshit and loser thinking\". Sounds so juvenile, worse than a teenager. Unfit for running a company dealing with secure mail."
+        },
+        {
+          "by": "hebleb",
+          "text": "If my CEO called me a loser for trying to enforce some level of quality, I would start looking for a new job immediately"
+        },
+        {
+          "by": "howdyhowdy",
+          "text": "Look. I just want an email provider that pays enough dues to the smtp mafia so my personal correspondence doesn't hit spam or bounce. Why. Why can't just email be straightforward and transactional."
+        }
+      ],
+      "image": "https://storage.ghost.io/c/0f/76/0f76b548-bc58-4f25-abc3-3f5ebca07da4/content/images/size/w1200/2026/10/andy3.png"
+    }
+  ],
+  "glossary": {
+    "agent swarm": "A group of software agents working on tasks together.",
+    "turn-based": "A way of playing where players take turns instead of acting continuously.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "latency": "The time between doing something and seeing the device respond.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "world model": "An AI meant to represent a scene and how things in it change.",
+    "actor network": "The part that decides what action to take next.",
+    "reward": "A score for what happened that helps the agent learn which actions to choose.",
+    "LZB": "Linienzugbeeinflussung: a train system that monitors train speeds.",
+    "Lateral Signaling Block": "A backup train system used when automatic signalling or data transmission fails.",
+    "fail-safe": "A safety setup meant to stop equipment from doing something dangerous when a fault happens.",
+    "virtual block": "A stretch of track treated as its own section by the train system, even if there is no matching physical section on the ground.",
+    "Singularity": "The idea that AI could become far smarter than people and rapidly change society.",
+    "post-scarcity": "A hoped-for future where people can get what they need without competing for scarce goods or work.",
+    "UBI": "Universal Basic Income: money regularly given to people without requiring them to work for it.",
+    "BATNA": "Best Alternative to a Negotiated Agreement: the option you can choose instead of an agreement; here, the author uses it for the appeal of not hanging out.",
+    "ASI": "Artificial Superintelligence: a hypothetical AI far more capable than people across a wide range of tasks.",
+    "superstimulus": "Something especially attention-grabbing or rewarding compared with ordinary experiences; here, the author means AI-made entertainment.",
+    "human capital": "A person's skills and education, viewed as things that can improve their work prospects.",
+    "open-source": "Software whose code is shared publicly so people can inspect it, change it, or build on it.",
+    "IRC": "Internet Relay Chat: a way to chat live with people in online rooms.",
+    "zombie stat": "A number that keeps getting repeated even though no study supports it.",
+    "citogenesis": "A claim gets copied between sources until later writers treat those sources as proof.",
+    "pentest": "A security check where someone tries to find holes in software before it goes live.",
+    "annual recurring revenue": "A company’s expected yearly income from subscriptions or other repeat payments."
+  }
+}
