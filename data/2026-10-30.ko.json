@@ -101,12 +101,134 @@
         "내 CEO가 품질을 어느 정도 지키려는 나를 패배자라고 부르면, 당장 새 직장을 알아보기 시작할 거다.",
         "있잖아. 난 그냥 smtp 마피아한테 회비를 충분히 내서 내 사적인 이메일이 스팸함에 들어가거나 반송되지 않는 이메일 업체를 원해. 왜. 왜 그냥 이메일은 간단하고 거래처럼 명확할 수 없는 거야."
       ]
+    },
+    "50302334": {
+      "simple": "**백도어 심긴 Claude Code 확장 프로그램**, 게시처 확인 중",
+      "substance": "한 댓글은 보고서를 인용해 payload가 ~/.ssh/authorized_keys에 **공격자가 제어하는 Ed25519 공개 키를 추가했다**고 전함. 댓글에서는 **Microsoft 공식 registry**가 영향을 받았는지, **Anthropic이 확장 프로그램을 개발했는지** 여전히 불확실한 상황.",
+      "data": [],
+      "camps": "두 입장: 공식 marketplace 빌드는 깨끗했다는 쪽, Microsoft registry가 영향을 받았는지 불분명하다는 쪽.",
+      "comments": [
+        "그건 말 그대로 불가능하죠. 최첨단 소프트웨어 개발 도구를 다 쓸 수 있는데, 기능을 100x 더 안전하게 배포할 수 있잖아요.",
+        "원문 Phorion 보고서도 여기 올라왔어야죠. 정확히 무슨 일이 있었는지도 자세히 나와요. 그러니까 그냥 authorized_keys에 ssh 키를 추가한 거네요. https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+        "개발은 publish workflow에 접근할 수 없는 격리된 VM에서 해야 합니다. CI 작업은 모든 파일을 scan한 뒤 별도의 VM이나 host system에서 진행해야 합니다. 그러면 이 사례처럼 개발 도구가 침해돼도 피해가 제한됩니다. 그래도 모범 사례가 일관되게 지켜지는 경우가 드물다는 건 별로 놀랍지 않죠.",
+        "https://www.reuters.com/business/media-telecom/cursor-says-u... > Cursor는 해당 확장 프로그램을 Anthropic이 개발한 게 아니며, 악의적으로 수정된 확장 프로그램이 목요일 오전 2:27 PT부터 오후 1:35 PT까지 marketplace에 올라와 있었다고 했네요. 그럼 Anthropic이 만든 거예요, 아닌 거예요? 이건 어떻게 벌어진 거죠?",
+        "보고서만 읽어 보면:\n\"먼저 payload는 ~/.ssh가 있는지 확인하고 공격자가 제어하는 Ed25519 공개 키를 ~/.ssh/authorized_keys에 덧붙인 다음, 디렉터리 권한을 0700으로, 파일 권한을 0600으로 설정합니다.\" ~/.ssh/authorized_keys가 수정되지 않은 시스템이라면 이 코드가 실행되지 않았다는 단서일 수 있어요. 기사에는 자체 정리나 이전 상태로 복구하는 내용이 언급되지 않았고…"
+      ]
+    },
+    "50301983": {
+      "simple": "코드 에디터 extension에 **백도어** 주장, **실제 해킹 대상**은 논란",
+      "substance": "한 댓글 작성자는 이 주장을 **“다소 과장된 주장”**이라고 평하고, **악의적으로 수정된** Claude Code extension이 Cursor의 VS Code extension Marketplace에 올라온 사실을 언급. 다른 댓글들은 Anthropic 자체가 해킹당했는지 의문을 제기하고 **증거**를 요구.",
+      "data": [],
+      "camps": "한쪽은 Cursor 마켓플레이스에 악성 extension이 올라왔다고 주장, 다른 쪽은 증거에 의문을 제기하고 Anthropic 자체가 해킹당했다는 주장에 이의를 제기하는 입장.",
+      "comments": [
+        "그래서 AI를 쓸 때도 브라우저에서 파일을 받아 결과물을 드래그 앤 드롭하는 원시인 같은 방식을 고수함. 물론 더 느리긴 한데, 내 mental model을 더 최신 상태로 유지해 주고 보안 위험도 줄어듦. LLM에 shell을 바로 넘기는 대신, 심지어… 실행 전에 그걸 읽어볼 수도 있고. 개인적인 경험으로는 token 효율도 더 좋은 듯. 그런 걸 신경 쓴다면 말이지.",
+        "> 어제 Anthropic이 해킹당했고 Claude 이용용으로 개발자 수천만 명이 쓰는 Cursor extension이 SSH 역방향 백도어를 통해 원격 액세스 트로이목마를 배포했다는 말이죠. 그건 좀 과장인데요. 누군가 백도어가 든 Claude Code VS Code extension 버전을 Cursor 마켓플레이스에 올린 거예요. > Anthropic의 Claude Code extension을 악의적으로 수정한 버전이 올라왔…",
+        "Cursor가 이렇게 공지했네요:\nhttps://cursor.com/blog/claude-code-extension-security-notic... 공식 Binance 계정으로 보이는 곳도 이렇게 알렸고요: https://www.binance.com/en/square/post/10-30-2026-claude-cod...",
+        "초인적인 AGI 추론 능력이 있다면서 Claude는 왜 해킹을 감지하고 고객에게 피해가 가지 않게 막지 못했죠?",
+        "해킹당한 건 Anthropic이 아니라 SpaceXAI(그들의 Cursor Marketplace)였어요."
+      ]
+    },
+    "50298436": {
+      "simple": "Herdr, **terminal 실행 유지**하며 코딩 agent 작업 정리하는 **desktop app**",
+      "substance": "각 **space**에는 한 기기에서 하는 작업이 모이며, tab을 pane으로 나눠 terminal이나 mod panel을 둘 수 있음. **agents sidebar**에는 각 space의 agent와 다른 agent가 시작한 worker까지 모임. **SSH machine**을 추가해 그곳에서 space를 실행하는 것도 가능함.",
+      "data": [],
+      "camps": "한쪽은 Herdr의 완성도와 실용성을 높이 평가하고, 다른 쪽은 대부분 text 기반 tool에 desktop GUI가 필요한지 의문을 제기하는 입장",
+      "comments": [
+        "Herdr desktop app을 설치해서 SSH session에 연결할 수 있나요? 보통 desktop에서 Herdr를 돌리는 건 아니라서요.",
+        "> Claude Code, Codex와 모든 코딩 agent를 위한 native 공간. 모든 픽셀은 agent가 바꿀 수 있는 파일입니다. 닫아도 agent는 계속 작업합니다. 첫 두 문장만으로는 뭘 하는지 전혀 알 수 없네. 세 번째 문장은 유용한데, 이런 건 많은 harness도 하는 것 같고? 이어서: > 새로운 종류의 agent workspace. native에 terminal 우선이고, 나와 agent 사이에 아무것도 없습니다. 모든 부분이 평범한 폴더…",
+        "올해 tmux를 10년간 쓴 뒤 Herdr로 갈아탔는데, 그 뒤로 돌아갈 생각이 안 들었어요. Herdr는 코딩 agent integration뿐 아니라 내부적으로 libghostty를 쓴다는 점도 정말 좋아요. terminal emulator 안에 또 terminal emulator를 넣는 괴상한 짓이 없거든요. GUI를 선호한다면 Herdr daemon에 연결되는 herdr-gpui를 추천해요. … 같은 편리한 기능도 꽤 있고요…",
+        "이거 정말 반갑네요! Herdr는 이 분야에서 단연 가장 완성도 높은 tool이에요. agent용 software는 대개 vibe coding으로 만들어져서, 티가 나죠. 버그와 예외 상황이 생기고, 별 생각이나 정성을 들이지 않은 듯한 느낌이 들어요. Herdr는 저한테 그런 느낌이 없어요. 마케팅/랜딩 페이지에는 확실히 LLM 특유의 표현이 있지만, 앱 자체는 매우 안정적이고 잘 설계되어 있어요. 진정한…",
+        "GitHub에서 가장 인기 있고 기능도 더 많아 보여서 이 용도로 Orca를 써 왔어요. 이쪽이 Orca보다 눈에 띄게 나은 점이 있나요?"
+      ]
+    },
+    "50301462": {
+      "simple": "elect.horse 등장, Gerrymandle **모방작**이라는 **비판**",
+      "substance": "한 댓글은 경쟁 요소가 enclose.horse보다 약하고, 사용한 힌트 수만 측정한다고 지적함. 다른 댓글들은 Gerrymandle의 **모방작**이라고 하고, 한 댓글은 문구가 LLM 생성이라고 주장함.",
+      "data": [],
+      "camps": "비판 측은 Gerrymandle의 모방작이라 하고, 옹호 측은 재미있다며 후속작을 반김.",
+      "comments": [
+        "이거 기본적으로 Gerrymandle 베낀 거 아닌가요?",
+        "경쟁 요소는 enclose.horse보다 훨씬 약하네요. 이 게임은 사용한 힌트 수만 측정해요.",
+        "관련 링크: https://enclose.horse/",
+        "재미있긴 한데 말과 당나귀 색 차이가 거의 안 보여서 정말 어렵네요.",
+        "저는 enclose.horse와 gerrymandle.com 둘 다 정말 좋아해요. 매일 둘 다 하죠. 그런데 gerrymandle.com을 베낀 이 게임 때문에 enclose.horse를 계속 할 마음이 좀 줄었어요. 그리고 맞아요, 이건 그냥 이런 유형의 퍼즐 게임을 변주한 게 아니라 베낀 거예요. 코미디언들끼리 농담을 훔치는 것과 비슷하죠. 훔친 사람의 원래 작품이 괜찮아도 그 사람을 덜 존중하게 되잖아요."
+      ]
+    },
+    "50270651": {
+      "simple": "터미널 천체투영관, ASCII로 **별·행성·별자리** 표시",
+      "substance": "**C로 작성**, **날짜·시간·위치 설정** 가능. flag로 **‘회전하는 지구본’ 효과** 구현 가능.",
+      "data": [],
+      "camps": "TUI와 맞지 않는다는 쪽과, 정말 멋지고 screensaver로 쓴다는 쪽.",
+      "comments": [
+        "솔직히 말할게요. 이 앱은 TUI랑 안 어울리는 것 같아요. 전 원래 TUI를 좋아하지만, 다른 방향으로 만들었을 것 같네요.",
+        "Astrological CPU Scheduler와 같이 쓰기 좋겠네요: https://github.com/zampierilucas/scx_horoscope",
+        "주제와는 아주아주 동떨어진 얘기지만, Casio의 Cosmo Phase 시계(CGW-50)가 떠올랐네요. 80년대에 출시됐죠 [0] 별과 행성을 손끝에서... [0] https://www.casio.com/us/watches/50th/Heritage/1980s/",
+        "정말 멋지네요. 이걸 Omarchy의 기본 screensaver로 설정해뒀어요. 제가 사는 집 기준으로 하늘을 추적해요. 끝내주네요!",
+        "이렇게 보기 좋고 읽기 쉬운 README는 오랜만이네요. vibe coders, 참고 좀 하세요."
+      ]
+    },
+    "50273104": {
+      "simple": "당구를 너무 못 쳐서 **hyperbolic plane**까지 간 사람",
+      "substance": "한 댓글에 따르면 그래픽은 제작자 본인의 tool인 **Swaptube**로 만든 것. 다른 댓글들은 **emergent patterns**와 같은 채널의 **lambda calculus** 영상을 칭찬.",
+      "data": [],
+      "camps": null,
+      "comments": [
+        "이거 재밌게 봤고, 수학 애니메이션이 4m 조회 수라니 조금 마음이 따뜻해졌음. r/trees 같은 데서 인기 있는 건가 :) 그래픽 생성에 뭘 썼는지 궁금했는데, 직접 만든 tool이더라: https://github.com/2swap/swaptube",
+        "이 YouTube 채널 통째로 보석임. lambda calculus와 다른 계산 개념을 다룬 영상도 정말 좋음\nhttps://www.youtube.com/watch?v=RcVA8Nj6HEo",
+        "emergent patterns가... 정말 놀라움. 특히 2m35s쯤 나오는 것들 https://www.youtube.com/watch?v=kL9BTbIGxLg&t=2m35s",
+        "계속 앉아 있어. 샷을 한 뒤 바로 일어나지 마.",
+        "와, 정말 눈부시게 아름답고 엄청 멋지다. 들어본 적도 없는 걸 배웠네. 잠깐만, 쌍곡 외부 당구 아트 만들러 감"
+      ]
+    },
+    "50298964": {
+      "simple": "Pico CSS, **유지보수 중단**… **저장소 보관**으로 신규 릴리스 없음",
+      "substance": "최종 릴리스는 **v2.1.1**. 게시물은 AI가 필요한 CSS만 포함한 가볍고 독립적이며 접근성 높은 HTML을 생성할 수 있어 최소 CSS framework의 필요성이 줄었다고 설명. 계속 경쟁력을 유지하려면 **전면 재작성**이 필요하므로 Pico CSS는 **현 상태 유지**. npm, jsDelivr CDN, picocss.com은 장기간 계속 운영되지만 저장소는 보관 처리돼 신규 이슈, PR, 릴리스 없음.",
+      "data": [],
+      "camps": "코딩 assistant가 미리 만든 CSS framework의 필요성을 낮춘다는 쪽과, AI가 만든 tool을 단순하게 유지하는 데 Pico가 여전히 도움이 된다는 쪽.",
+      "comments": [
+        "> 계속 최신성을 유지하려면 Pico CSS를 전면 재작성해야 한다고? Sass 대신 순수한 최신 CSS를 쓰고, 지금은 사용하지 않는 기능(OKLCH 색상, cascade layers, Popover, anchor positioning)을 기반으로 하면서 구형 브라우저용 fallback도 넣어야 한다고. 왜? 왜? 왜? 계속 쓰이려면 최신 브라우저 기능을 도입해야 한다고 다들 믿는 것 같아서 진짜 싫다. OKLCH도 싫고 Tailwind도 싫다…",
+        "Pico와 비슷한 방향의 최근 대안·후속작·fork 몇 가지\n- Nimble: https://leftium.github.io/nimble.css/demo/pico.html\n- Sumi.css: https://vladocar.github.io/Sumi.css/docs.html\n- Blades: https://github.com/anyblades/blades\n- Oat: https://oat.ink/",
+        "Pico CSS를 정말 즐겨 썼지만, 그 선택은 이해한다. Pico CSS를 만들고 우리와 공유해 준 Lucas Larroche에게 감사하다.",
+        "이 소식을 읽으니 슬프지만, 무엇이 자신들에게 가장 좋고 우선순위가 무엇인지는 만든 사람들이 가장 잘 알 테니까. 작업에 정말 감사하다. 몇 년 전, 임베디드 시스템용 상태 페이지 같은 간단한 페이지가 급히 필요했을 때 Pico를 발견했다. Bootstrap의 div 범벅은 이미 충분히 겪었고, 대안을 조사하는 데 쓸 수 있는 시간의 절반을 들였는데, 올바른…을 배우면서…",
+        "정말 슬픈 소식이다. 좋은 구현과 미감을 보여주는 사례로 Pico를 여러 번 써서, 내가 생각한 걸 agent가 파악하게 했다. LLM과 상호작용해야 할 때는 인간의 지능과 좋은 취향이 제 역할을 했다. 이제 그 지능이 서서히 희미해지기 시작한다."
+      ]
     }
   },
   "glossary": {
+    "backdoor": "기기나 서비스의 일반적인 보안을 우회해 보호된 영역에 들어가는 방법.",
+    "Ed25519": "컴퓨터에 로그인할 때 본인 확인에 쓰는 디지털 키의 한 종류.",
+    "authorized_keys": "컴퓨터 계정에 로그인할 수 있는 키 목록을 적어 둔 파일.",
+    "Open VSX": "개발자가 code editor 확장 프로그램을 올리고 내려받는 온라인 저장소.",
+    "SSH": "Secure Shell: 네트워크를 통해 다른 컴퓨터에 접속해 명령을 보내는 방식",
+    "supply chain attack": "사람들이 의존하는 소프트웨어나 서비스를 거쳐 피해를 주는 공격임.",
+    "remote access trojan": "멀리 있는 사람이 몰래 컴퓨터를 조종하게 하는 악성 프로그램.",
+    "extension": "앱에 기능을 더해 주는 추가 프로그램.",
+    "shell": "shell은 컴퓨터에 명령을 입력해 조작하는 글자 기반 공간",
+    "reverse shell": "외부 사람이 컴퓨터에 명령을 보낼 수 있도록 컴퓨터가 먼저 여는 연결.",
+    "LLM": "Large Language Model: 많은 글을 학습해 글로 된 질문을 받고 글로 답하는 AI",
+    "AGI": "Artificial General Intelligence: 한 가지 좁은 업무에만 국한되지 않고 여러 종류의 일을 처리할 수 있다고 가정하는 AI.",
+    "space": "Herdr에서 한 기기의 작업을 정리해 두는 공간.",
+    "mod": "한 수를 다른 수로 나눈 뒤 나머지만 남기는 방식.",
+    "terminal multiplexer": "여러 terminal을 한곳에서 열어 두고 정리하는 tool.",
+    "TUI": "Terminal User Interface: 글자만 보이는 터미널 창 안에서 앱을 조작하는 화면.",
+    "gerrymandering": "투표구 경계를 한쪽에 유리하도록 그리는 일.",
+    "ASCII": "American Standard Code for Information Interchange: 기본적인 영어 알파벳과 숫자, 문장 부호를 표현하는 오래된 문자 체계.",
+    "C": "프로그램을 만드는 데 쓰는 언어.",
+    "hyperbolic plane": "종이에 그린 평면과 다른 기하 규칙이 적용되는 공간의 한 종류.",
+    "lambda calculus": "계산 과정을 입력을 출력으로 바꾸는 규칙으로 나타내는 수학 체계.",
+    "CSS": "Cascading Style Sheets: 웹페이지의 모양을 정하는 규칙.",
+    "CSS framework": "처음부터 모든 스타일을 작성하지 않고 웹페이지 디자인에 쓰도록 미리 준비된 스타일 모음.",
+    "Sass": "스타일링 코드에 편의 기능을 더한 뒤 일반 CSS로 바꾸는 도구.",
+    "semantic HTML": "각 부분의 역할(제목이나 버튼 등)을 태그로 드러내는 웹페이지 마크업.",
+    "OKLCH": "밝기, 선명도, 색조를 따로 지정하는 색상 형식.",
+    "cascade layers": "스타일 규칙을 그룹으로 묶고 규칙이 충돌할 때 어느 그룹이 우선할지 정하는 방식.",
+    "Popover": "웹페이지가 콘텐츠 위에 띄울 수 있는 메뉴 같은 작은 패널.",
+    "anchor positioning": "메뉴를 여는 버튼 옆에 배치하는 것처럼, 한 페이지 요소를 다른 요소를 기준으로 배치하는 방식.",
+    "CDN": "Content Delivery Network: 웹사이트가 사용자 가까이에 있는 서버에서 요청을 처리하도록 돕는 서버 네트워크.",
+    "MIT license": "제한을 거의 두지 않고 프로젝트를 사용·수정·공유할 수 있게 하는 소프트웨어 라이선스.",
+    "PR": "Pull request: 다른 사람이 검토할 수 있도록 공유하는 코드 변경 제안",
     "agent swarm": "여러 software agent가 함께 작업하는 집단.",
     "turn-based": "플레이어들이 계속 행동하는 대신 차례를 번갈아 진행하는 방식.",
-    "LLM": "Large Language Model: 많은 글을 학습해 글로 된 질문을 받고 글로 답하는 AI",
     "latency": "무언가를 한 뒤 기기가 반응하는 모습을 볼 때까지 걸리는 시간.",
     "API": "Application Programming Interface: 한 프로그램이 다른 프로그램에 정보나 동작을 요청하는 방법.",
     "world model": "장면과 그 안의 사물이 어떻게 변하는지를 표현하는 AI.",

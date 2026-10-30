@@ -2,6 +2,428 @@
   "date": "2026-10-30",
   "cards": [
     {
+      "id": 50302334,
+      "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
+      "hn": "https://news.ycombinator.com/item?id=50302334",
+      "title": "Backdoors in official Claude Code extensions",
+      "time": 1793358353,
+      "points": 419,
+      "depth": [
+        {
+          "text": "people are trying to pin down where a **backdoored Claude Code extension** was published",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter quotes the report saying the payload **appended an attacker-controlled Ed25519 public key** to ~/.ssh/authorized_keys. The comments are still unsure whether the **official Microsoft registry** was affected or whether **Anthropic developed the extension**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: one says the official marketplace build was clean; others say it is unclear whether Microsoft's registry was affected.",
+      "comment_count": 124,
+      "terms": [
+        "backdoor",
+        "Ed25519",
+        "authorized_keys",
+        "Open VSX",
+        "SSH",
+        "supply chain attack"
+      ],
+      "entities": [
+        "Claude Code",
+        "Anthropic",
+        "Cursor",
+        "Open VSX",
+        "Microsoft",
+        "VS Code"
+      ],
+      "comments": [
+        {
+          "by": "eviks",
+          "text": "That's literally impossible, with all the access to the frontier software development tools at their disposal they can ship features securely at 100x"
+        },
+        {
+          "by": "yubblegum",
+          "text": "The original Phorion report really should be up here. It even details what exactly happened. So they simply added a ssh key to the authorized keys. https://phorion.io/blog/offical-claude-code-vsx-compromise/"
+        },
+        {
+          "by": "_hmj",
+          "text": "Development must occur in an isolated VM, with no access to the publishing workflow. CI operations must happen in a separate VM or on the host system after scanning all files. Thus, even if the development tools are compromised (like this case), the impact is limited. Still, it’s hardly a surprise that best practices are rarely followed with any consistency."
+        },
+        {
+          "by": "AdrianCX",
+          "text": "https://www.reuters.com/business/media-telecom/cursor-says-u... > Cursor said the extension was not developed by Anthropic and the maliciously modified extension was live on the marketplace from about 2:27 a.m. PT to 1:35 p.m. PT on Thursday So is this or isn't this from Anthropic and how did this happen?"
+        },
+        {
+          "by": "rietta",
+          "text": "Reading the report alone:\n\"First, the payload makes sure ~/.ssh exists and appends an attacker-controlled Ed25519 public key to ~/.ssh/authorized_keys, setting permissions to 0700 on the directory and 0600 on the file.\" A system where ~/.ssh/authorized_keys has not been modified might be a hint that this did not execute - the article does not mention self cleanup/reverting to previous status…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50301983,
+      "url": "https://doublepulsar.com/anthropic-hacked-to-deliver-remote-access-trojan-to-claude-developer-laptops-worldwide-1148a92baae2",
+      "hn": "https://news.ycombinator.com/item?id=50301983",
+      "title": "Anthropic hacked to deliver remote access trojan",
+      "time": 1793355771,
+      "points": 266,
+      "depth": [
+        {
+          "text": "someone says a **code editor extension** carried a **backdoor**, but commenters question **who was actually hacked**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter called the claim **“a bit hyperbolic”** and said a **maliciously modified** Claude Code extension was made available in Cursor’s VS Code extension Marketplace. Others disputed whether Anthropic itself was hacked and asked for **proof**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say a malicious extension was available on Cursor’s marketplace; others question the evidence and dispute that Anthropic itself was hacked.",
+      "comment_count": 48,
+      "terms": [
+        "remote access trojan",
+        "backdoor",
+        "extension",
+        "SSH",
+        "shell",
+        "reverse shell",
+        "LLM",
+        "AGI"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude Code",
+        "Cursor",
+        "VS Code",
+        "SpaceXAI",
+        "Open VSX",
+        "MSFT",
+        "Binance"
+      ],
+      "comments": [
+        {
+          "by": "kirth_gersen",
+          "text": "This is why when I use AI, I still download from the browser and drag and drop the outputted files like a caveman. Sure, it's slower, but it keeps my mental model more up to date and has less security risks. I can even...like read the thing before I run it rather than giving a LLM access to my shell directly. Also anecdotally, it seems more token efficient for those who care about that."
+        },
+        {
+          "by": "helsinkiandrew",
+          "text": "> Yesterday, Anthropic were compromised and Cursor extension used by tens of millions of developers for Claude access was delivering a remote access trojan via an SSH reverse backdoor That's a bit hyperbolic: someone released a version of the Claude Code VS Code extension with a backdoor on the Cursor marketplace: > a maliciously modified version of Anthropic’s Claude Code extension was made…"
+        },
+        {
+          "by": "1shooner",
+          "text": "Cursor reporting this:\nhttps://cursor.com/blog/claude-code-extension-security-notic... What appears to be an official Binance account reporting it also: https://www.binance.com/en/square/post/10-30-2026-claude-cod..."
+        },
+        {
+          "by": "glimshe",
+          "text": "Why didn't Claude detect the hack and prevent it from affecting customers using its superhuman AGI reasoning?"
+        },
+        {
+          "by": "henearkr",
+          "text": "It wasn't Anthropic that was hacked but SpaceXAI (their Cursor Marketplace)."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50298436,
+      "url": "https://github.com/herdrdev/herdr-app",
+      "hn": "https://news.ycombinator.com/item?id=50298436",
+      "title": "Herdr has released native app",
+      "time": 1793320961,
+      "points": 262,
+      "depth": [
+        {
+          "text": "Herdr now has a **desktop app** for organizing coding-agent work while **terminals keep running**",
+          "tier": "simple"
+        },
+        {
+          "text": "Each **space** holds work on one machine, with tabs split into panes for terminals or mod panels. The **agents sidebar** gathers agents from your spaces, including workers started by another agent. You can also add **SSH machines** and run spaces there.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some praise Herdr as polished and useful; others question the point of a desktop GUI for mostly text-based tools.",
+      "comment_count": 174,
+      "terms": [
+        "space",
+        "mod",
+        "SSH",
+        "terminal multiplexer",
+        "TUI"
+      ],
+      "entities": [
+        "Herdr",
+        "herdr-core",
+        "GitHub",
+        "Claude Code",
+        "Codex",
+        "tmux",
+        "Orca"
+      ],
+      "comments": [
+        {
+          "by": "slenk",
+          "text": "But can I install herdr desktop app and connect to my SSH sessions? I'm not running herdr on desktops usually"
+        },
+        {
+          "by": "ShinyLeftPad",
+          "text": "> A native home for Claude Code, Codex and every coding agent. Every pixel is a file your agent can change. Close it, they keep working. First two sentences give zero information what it does. Third one is useful but i think many harnesses do it? Continuing: > A new kind of agent workspace. Native and terminal first, with nothing between you and your agents. Every part of it is a plain folder…"
+        },
+        {
+          "by": "flippant",
+          "text": "I switched to herdr this year after a decade of using tmux, and I haven't looked back since. Herdr is wonderful, not only because of the coding agent integrations, but also because it uses libghostty under the hood. So no terminal-emulator-inside-another-terminal-emulator shenanigans. If you prefer GUIs, I can recommend herdr-gpui which connects to a herdr daemon. It has a bunch of goodies like…"
+        },
+        {
+          "by": "shepherdjerred",
+          "text": "Really happy to see this! herdr is by far the most polished tool in its category. Software geared towards agents is usually vibe coded -- and you can tell. There will be bugs and edge cases and it feels like no thought/care was put into it. herdr doesn't feel that way to me. The marketing/landing page definitely has LLM-isms, but the application itself is very stable and well thought out. A true…"
+        },
+        {
+          "by": "ajvs",
+          "text": "I've been using Orca for this as it's the most popular on GitHub and seems to have more features. Is there anything notable that this offers over it?"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/d70b569214646d4c4b3a680ee9b90762a367d911118fae6df20493f57f7be5c4/herdrdev/herdr-app"
+    },
+    {
+      "id": 50301462,
+      "url": "https://elect.horse/",
+      "hn": "https://news.ycombinator.com/item?id=50301462",
+      "title": "elect.horse",
+      "time": 1793351674,
+      "points": 236,
+      "depth": [
+        {
+          "text": "someone made **elect.horse**, a game some commenters call a **Gerrymandle** rip-off",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says its **competitive side** is weaker than enclose.horse because it only measures **hints used**. Others call it a **rip-off** of Gerrymandle, and one claims its text is LLM-generated.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: critics call it a rip-off of Gerrymandle; fans say it's fun and welcome a sequel.",
+      "comment_count": 68,
+      "terms": [
+        "LLM",
+        "gerrymandering"
+      ],
+      "entities": [
+        "elect.horse",
+        "Gerrymandle",
+        "gerrymandle.com",
+        "enclose.horse"
+      ],
+      "comments": [
+        {
+          "by": "tejstead",
+          "text": "I think this is basically a copy of Gerrymandle?"
+        },
+        {
+          "by": "ivanjermakov",
+          "text": "Competitve side is much weaker than in enclose.horse, this game only measures hints used."
+        },
+        {
+          "by": "chinathrow",
+          "text": "Related: https://enclose.horse/"
+        },
+        {
+          "by": "Agentlien",
+          "text": "It's fun but I can barely see the difference between the horse and donkey colors which makes it really hard."
+        },
+        {
+          "by": "jawns",
+          "text": "I am a big fan of both enclose.horse and gerrymandle.com. I play both daily. But this rip-off of gerrymandle.com makes me feel less inclined to continue playing enclose.horse. And yes, it is a rip-off, not merely a riff on the general puzzle game of this type. It's akin to joke stealing among comedians. It makes you lose respect for the joke stealer, even if their original stuff is good."
+        }
+      ],
+      "image": "https://elect.horse/og-image.png"
+    },
+    {
+      "id": 50270651,
+      "url": "https://github.com/da-luce/astroterm",
+      "hn": "https://news.ycombinator.com/item?id=50270651",
+      "title": "Astroterm: A Planetarium for Your Terminal",
+      "time": 1793176195,
+      "points": 177,
+      "depth": [
+        {
+          "text": "someone made a **terminal planetarium** that shows **stars, planets, and constellations** in ASCII",
+          "tier": "simple"
+        },
+        {
+          "text": "It’s **written in C**, and you can set the **date, time, and location**; flags can create a “spinning globe” effect.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: one commenter says the TUI is a mismatch; another says it’s really cool and uses it as a screensaver.",
+      "comment_count": 20,
+      "terms": [
+        "ASCII",
+        "TUI",
+        "C"
+      ],
+      "entities": [
+        "Astroterm",
+        "C",
+        "GitHub",
+        "Stellarium"
+      ],
+      "comments": [
+        {
+          "by": "drob518",
+          "text": "Gotta be honest. This application seems like a mismatch for a TUI. I’m a TUI lover in general, but I would have gone a different direction."
+        },
+        {
+          "by": "ricq",
+          "text": "Nice to combine with the Astrological CPU Scheduler: https://github.com/zampierilucas/scx_horoscope"
+        },
+        {
+          "by": "isolli",
+          "text": "Very, very distantly related to the topic, but it reminded me of the Cosmo Phase watch from Casio (CGW-50), released in the 80s [0] Having stars and planets at your fingertips... [0] https://www.casio.com/us/watches/50th/Heritage/1980s/"
+        },
+        {
+          "by": "jubalizer",
+          "text": "This is really cool. I've managed to set this up as my default screensaver in Omarchy. It tracks the sky from my house. Awesome!"
+        },
+        {
+          "by": "S0y",
+          "text": "It's pretty refreshing to see such a nice and readable README. vibe coders, please take notes."
+        }
+      ],
+      "image": "https://repository-images.githubusercontent.com/654385890/b51266d0-13c6-4262-b65e-82c56fe8f917"
+    },
+    {
+      "id": 50273104,
+      "url": "https://www.youtube.com/watch?v=kL9BTbIGxLg",
+      "hn": "https://news.ycombinator.com/item?id=50273104",
+      "title": "I'm so bad at billiards that I ended up in the hyperbolic plane [video]",
+      "time": 1793193605,
+      "points": 172,
+      "depth": [
+        {
+          "text": "someone's **bad enough at billiards** to end up in the **hyperbolic plane**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says the graphics came from the creator's own tool, **Swaptube**. Others praise the **emergent patterns** and a video from the same channel on **lambda calculus**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 29,
+      "terms": [
+        "hyperbolic plane",
+        "lambda calculus"
+      ],
+      "entities": [
+        "Swaptube",
+        "YouTube"
+      ],
+      "comments": [
+        {
+          "by": "Fluorescence",
+          "text": "I enjoyed this and it warmed my heart a bit to see 4m views for some math animations. Maybe popular on r/trees or something :) I was curious what they used to generate the graphic's and it's their own tool: https://github.com/2swap/swaptube"
+        },
+        {
+          "by": "ChrisbyMe",
+          "text": "This entire youtube channel is a gem btw. Delightful video on the lambda calculus and other compution concepts\nhttps://www.youtube.com/watch?v=RcVA8Nj6HEo"
+        },
+        {
+          "by": "nomilk",
+          "text": "The emergent patterns are... stunning. Especially the ones around 2m35s https://www.youtube.com/watch?v=kL9BTbIGxLg&t=2m35s"
+        },
+        {
+          "by": "enatiello",
+          "text": "Stay down. After your shot, don't stand up right away."
+        },
+        {
+          "by": "buildbot",
+          "text": "Wow this is stunningly beautiful and extremely cool. And I learned something I had never heard about. BRB going to go make hyperbolic outer billards art"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50298964,
+      "url": "https://github.com/picocss/pico/discussions/754",
+      "hn": "https://news.ycombinator.com/item?id=50298964",
+      "title": "Pico CSS is no longer maintained",
+      "time": 1793325524,
+      "points": 171,
+      "depth": [
+        {
+          "text": "Pico CSS is **no longer maintained**, and its **archived repositories** won't get new releases",
+          "tier": "simple"
+        },
+        {
+          "text": "The final release is **v2.1.1**. The post says AI can now generate lightweight, standalone, accessible HTML with just the CSS it needs, making a minimal CSS framework less useful; staying relevant would mean a **full rewrite**, so Pico CSS **stays as it is**. Nothing breaks: npm, the jsDelivr CDN and picocss.com stay online for the long term, but the repositories are archived, with no new issues, PRs or releases.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some commenters think coding assistants make preset CSS frameworks less useful; others say Pico still helps keep AI-built tools simple.",
+      "comment_count": 81,
+      "terms": [
+        "CSS",
+        "CSS framework",
+        "Sass",
+        "semantic HTML",
+        "OKLCH",
+        "cascade layers",
+        "Popover",
+        "anchor positioning",
+        "CDN",
+        "MIT license",
+        "PR",
+        "LLM"
+      ],
+      "entities": [
+        "Pico CSS",
+        "GitHub",
+        "npm",
+        "jsDelivr",
+        "picocss.com",
+        "Nimble",
+        "Sumi.css",
+        "Blades",
+        "Oat",
+        "Lucas Larroche",
+        "Tailwind",
+        "Bootstrap",
+        "React",
+        "MUI",
+        "Claude Code",
+        "Foundation",
+        "Bourbon",
+        "bamboocss.com",
+        "Rust",
+        "Oxc",
+        "CSS",
+        "HTML",
+        "Sass",
+        "JavaScript"
+      ],
+      "comments": [
+        {
+          "by": "shubhamjain",
+          "text": "> To stay relevant, Pico CSS would need a full rewrite: plain modern CSS instead of Sass, built on features it doesn't use today (OKLCH colors, cascade layers, Popover, anchor positioning) with fallbacks for older browsers Why? Why? Why? I hate how everyone seems convinced they need to adopt the latest and greatest browser features just to stay relevant. I hate oklch and I hate Tailwind…"
+        },
+        {
+          "by": "sphars",
+          "text": "Some recent alternatives/successors/forks that are in the same vein as Pico - Nimble: https://leftium.github.io/nimble.css/demo/pico.html - Sumi.css: https://vladocar.github.io/Sumi.css/docs.html - Blades: https://github.com/anyblades/blades - Oat: https://oat.ink/"
+        },
+        {
+          "by": "eterps",
+          "text": "I really enjoyed using Pico CSS, but I understand the choice. Thank you Lucas Larroche for building Pico CSS and sharing it with us."
+        },
+        {
+          "by": "fodkodrasz",
+          "text": "I'm sad to read this, but the authors know what is best for them, and what their priorities are. I'm really grateful for their work, I found Pico a few years ago, when I needed a minimal page (some status page for an embedded system) super quickly, and I had more than enough from the Bootstrap div soup, and invested half of the available time to research alternatives in - as I learnt the correct…"
+        },
+        {
+          "by": "rodolphoarruda",
+          "text": "This is really sad news to me. I have used Pico several times as an example of good implementation and aesthetics, so the agent could get what I had in mind. In this case, applied human intelligence and good taste had their value when I needed to interact with the LLM. Now that intelligence begins to fade-out."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/3a6d74ffc646cd0aef45becc597592b9912ffb260ae8ee5d318d49d43eb92f14/picocss/pico/discussions/754"
+    },
+    {
       "id": 50296486,
       "url": "https://labs.ycombinator.com/projects/games/index.html",
       "hn": "https://news.ycombinator.com/item?id=50296486",
@@ -387,9 +809,40 @@
     }
   ],
   "glossary": {
+    "backdoor": "A way into a protected device or service that bypasses its normal security.",
+    "Ed25519": "A type of digital key used when logging in to a computer.",
+    "authorized_keys": "A file that lists which keys are allowed to log in to a computer account.",
+    "Open VSX": "An online registry where developers can publish and download code-editor extensions.",
+    "SSH": "Secure Shell: a way to connect to another computer and send it commands over a network.",
+    "supply chain attack": "An attack that reaches people through software or services they rely on.",
+    "remote access trojan": "Malicious software that secretly lets someone control a computer from elsewhere.",
+    "extension": "An add-on that gives an app extra features.",
+    "shell": "The text-based place where you type commands to control your computer.",
+    "reverse shell": "A connection that lets someone elsewhere send commands to a computer.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "AGI": "Artificial General Intelligence: a hypothetical AI that could handle many kinds of tasks, not just one narrow job.",
+    "space": "A place in Herdr for keeping work on one machine organized.",
+    "mod": "A way to keep only the remainder after dividing one number by another.",
+    "terminal multiplexer": "A tool that lets you keep several terminals open and organized together.",
+    "TUI": "Terminal User Interface: the menus and controls an app shows inside a text terminal.",
+    "gerrymandering": "Drawing voting districts in a way that gives one side an unfair advantage.",
+    "ASCII": "American Standard Code for Information Interchange: an older character set for basic English letters, numbers, and punctuation.",
+    "C": "A programming language used to write software.",
+    "hyperbolic plane": "A kind of space whose geometry differs from the flat surface you picture on a sheet of paper.",
+    "lambda calculus": "A mathematical system for describing computation with rules that turn inputs into outputs.",
+    "CSS": "Cascading Style Sheets: rules that control how a web page looks.",
+    "CSS framework": "A collection of ready-made styles that helps developers design webpages without writing every style from scratch.",
+    "Sass": "A tool that adds conveniences to styling code, then turns it into regular CSS.",
+    "semantic HTML": "Webpage markup that uses tags to show what each part is for, like a heading or button.",
+    "OKLCH": "A color format that sets lightness, vividness, and hue separately.",
+    "cascade layers": "A way to group styling rules and decide which group wins when rules conflict.",
+    "Popover": "A small panel, such as a menu, that a webpage can show over its content.",
+    "anchor positioning": "A way to place one page element in relation to another, like keeping a menu beside the button that opens it.",
+    "CDN": "Content Delivery Network: A network of servers that helps websites handle requests closer to their users.",
+    "MIT license": "A software license that lets people use, change, and share a project with few restrictions.",
+    "PR": "Pull request: a proposed code change shared so others can review it.",
     "agent swarm": "A group of software agents working on tasks together.",
     "turn-based": "A way of playing where players take turns instead of acting continuously.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "latency": "The time between doing something and seeing the device respond.",
     "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
     "world model": "An AI meant to represent a scene and how things in it change.",
