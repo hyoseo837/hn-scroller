@@ -2,6 +2,850 @@
   "date": "2026-10-31",
   "cards": [
     {
+      "id": 50314699,
+      "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+      "hn": "https://news.ycombinator.com/item?id=50314699",
+      "title": "Do the math: How we took over ChatGPT accounts",
+      "time": 1793442611,
+      "points": 289,
+      "depth": [
+        {
+          "text": "someone found a way for a **shared ChatGPT link** to run code inside **another user's account**",
+          "tier": "simple"
+        },
+        {
+          "text": "The researchers combined a **graph with an HTML Preview** to run JavaScript as chatgpt.com, then used the signed-in session to **retrieve a private conversation** and send selected data to their server. OpenAI fixed the issue on October 26, classified it as P1, and awarded a **$5,000 bounty**.",
+          "tier": "substance",
+          "data": [
+            [
+              "bounty",
+              "$5,000"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: many commenters say the $5,000 bounty is far too low; one argues that lower bounties may mean fewer people are interested.",
+      "comment_count": 141,
+      "terms": [
+        "sandbox",
+        "Content Security Policy (CSP)",
+        "postMessage",
+        "JSONP",
+        "P1",
+        "bug bounty"
+      ],
+      "entities": [
+        "OpenAI",
+        "ChatGPT",
+        "Parameter",
+        "Mukul Goyal",
+        "MathLive",
+        "YouTube",
+        "Google",
+        "JavaScript"
+      ],
+      "comments": [
+        {
+          "by": "zahlman",
+          "text": "Something about the writing style here makes it hard for me to follow what actually happened. The section about JSONP for example seems to be explaining how JSONP works and how it's designed as an attempt to work around these attacks, but that explanation is then passed off as an explanation of how they bypassed the protection. And the whole premise seems to be about how manipulating the Preview…"
+        },
+        {
+          "by": "yellow_lead",
+          "text": "> OpenAI confirmed both frontends rejected the reported messages, resolved the issue, and awarded a total bounty of $5,000. It requires the user to click a link. But I still find this bounty very low. Others may not report them if such a small bounty is given."
+        },
+        {
+          "by": "lxgr",
+          "text": "Oof. Together with the fact that it's possible to remotely access the file system (!) of computers ever having started a \"Work\" chat in the ChatGPT desktop app [1], this seems pretty bad. [1] https://news.ycombinator.com/item?id=50078284"
+        },
+        {
+          "by": "dumberquestions",
+          "text": "Does no one write their own blogs anymore?"
+        },
+        {
+          "by": "Kuyawa",
+          "text": "$5000 is a joke. They pay millions to their top devs and still have more holes than a colander so a nice guy shows you a huge opening in your platform and all you can give him is a pat on the shoulder? Did you fire your top devs and hire that guy for a million bucks plus options? Did you sue the security firm you paid millions to audit the issues? I really hope they get hacked and crash down…"
+        }
+      ],
+      "image": "https://www.parameter.ai/opengraph-image.png"
+    },
+    {
+      "id": 50314666,
+      "url": "https://piefed.world/post/1503394",
+      "hn": "https://news.ycombinator.com/item?id=50314666",
+      "title": "Molly (Signal fork) has not been updated since 3 months and is vulnerable",
+      "time": 1793442221,
+      "points": 282,
+      "depth": [
+        {
+          "text": "someone says **Molly** is behind on updates, leaving it **exposed to attacks** fixed in Signal",
+          "tier": "simple"
+        },
+        {
+          "text": "Molly’s latest release was on **31 July**, and the post says it still has **vulnerabilities** that were fixed in mainline Signal. Some users choose it for **UnifiedPush** notifications without Google Play Services.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: Molly users value UnifiedPush and F-Droid updates; others prefer mainline Signal and warn that third-party clients carry risk.",
+      "comment_count": 162,
+      "terms": [
+        "fork",
+        "vulnerability",
+        "UnifiedPush",
+        "F-Droid",
+        "mainline Signal"
+      ],
+      "entities": [
+        "Molly",
+        "Signal",
+        "UnifiedPush",
+        "F-Droid",
+        "Google Play Services"
+      ],
+      "comments": [
+        {
+          "by": "jttnr",
+          "text": "TIL: The official Signal app can now use one account, shard over two devices. This was my main reason to use Molly over Signal. https://aboutsignal.com/news/signal-allows-iphones-to-be-lin..."
+        },
+        {
+          "by": "lone-cloud",
+          "text": "If anyone is interested, I run my own minimalist fork of Molly named Polly. I just released a stopgap with the fixes:\n- RingRTC 2.73.0-1, which includes the call-teardown fix (the hangup/hot-mic issue)\n- Signal's blacklist of the eight compromised eMudhra TLS intermediates https://github.com/lone-cloud/polly/releases/tag/v8.19.2-6 It's still based on Signal 8.19.2. The build is arm64-only and…"
+        },
+        {
+          "by": "throwaway89201",
+          "text": "Someone in that thread notes that when you install the Signal APK from here [1] it \"doesn’t get updates tho\", but this isn't the case. Signal will update itself; you get a notification to update. Often earlier than the Play Store, probably due to its reputation to randomly delay updates. [1] https://signal.org/android/apk/"
+        },
+        {
+          "by": "ada-h00k",
+          "text": "Sometimes I get the feeling that Signal hates users who aren't total normies. Unified Push, which works flawlessly on Molly, could easily be implemented in the regular client. Just as they could easily offer a Google free version for F-Droid or simply for people who want nothing to do with Google. But they just refuse. Just like it took years for nicknames to be introduced, and registering…"
+        },
+        {
+          "by": "palata",
+          "text": "It explains perfectly why Signal does not want third-party clients. To the haters: I am not saying that it is perfect , in an ideal world we could have secure third-party clients. I am just saying that it is pragmatic: in our world, we don't. Signal has forever been a pragmatic approach to private messaging, and it succeeded at that: Signal literally put E2EE on the map! Signal has a threat…"
+        }
+      ],
+      "image": "https://piefed.world/static/images/piefed_logo_full_t_300x300.svg"
+    },
+    {
+      "id": 50313661,
+      "url": "https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html",
+      "hn": "https://news.ycombinator.com/item?id=50313661",
+      "title": "Digital minimalism",
+      "time": 1793427396,
+      "points": 282,
+      "depth": [
+        {
+          "text": "someone is testing **digital minimalism** with less social media, **offline maps**, and fewer web-based tools",
+          "tier": "simple"
+        },
+        {
+          "text": "They used **Firefly** instead of X’s interface, kept their phone in **airplane mode for 100 days** while still using Wi-Fi, and used CoMaps for offline directions. They argue **local AI and command-line tools** can make it easier to rely less on websites and social media.",
+          "tier": "substance",
+          "data": [
+            [
+              "airplane-mode experiment",
+              "100 days"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: Some applaud deliberate limits and alternative tools; others say this is still social media use and digital curation, not minimalism.",
+      "comment_count": 212,
+      "terms": [
+        "digital minimalism",
+        "multi-client",
+        "decentralized social media",
+        "local-first",
+        "semantic search",
+        "LLM",
+        "command-line tool",
+        "dark patterns",
+        "Unix philosophy"
+      ],
+      "entities": [
+        "X",
+        "Twitter",
+        "Grok",
+        "Adolf Hitler",
+        "Elon",
+        "Mao",
+        "Firefly",
+        "BlueSky",
+        "Farcaster",
+        "Lens",
+        "GrapheneOS",
+        "CoMaps",
+        "OpenStreetMap",
+        "Google Maps",
+        "Grab",
+        "ENS",
+        "IPFS",
+        "kohaku-cli",
+        "Unix",
+        "Bash",
+        "Vitalik",
+        "Ethereum",
+        "Cal Newport",
+        "Marshall McLuhan",
+        "Donald Knuth",
+        "SBF"
+      ],
+      "comments": [
+        {
+          "by": "lrvick",
+          "text": "I went down the same path starting about a decade ago with airplane mode, and deleting apps until my phone was so boring and rarely used I canceled my cell subscription about 8 years ago. Have not carried a phone at all since. I rarely carry any electronics at all and exclusively use cash in person to make me mostly digitally invisible IRL. Stopped using X and all big tech services. Google…"
+        },
+        {
+          "by": "lcuff",
+          "text": "I'm a fan of Marshall McLuhan, famous for \"The Medium is the Message\". When Twitter first arrived, I thought \"what is the message delivered by a medium that limits thoughts to 140 characters at a time?\". My take: \"thoughts that are dirt-simple are the most welcome.\" Also, \"what is the message delivered by a medium that freely interrupts me at any time?\" (I never investigated the options to not be…"
+        },
+        {
+          "by": "OhMeadhbh",
+          "text": "I appreciate everyone has a different definition of \"minimalism\" and that I'm a bit of an outlier. But my version of minimalism includes a) using a dumb phone, b) doing most of my browsing via a text based browser in a terminal and c) I've heard of social media, but don't see the point (though you could argue that maybe the HN comments section is sort of like social media.) Which is not to…"
+        },
+        {
+          "by": "privacyishuman",
+          "text": "This is a great blog post. I do a lot of similar things on my phone (GrapheneOS, airplane mode, CoMaps). The thing that I’d been looking for on this minimal setup was a way to prevent access to the browser or installing apps at will. It was easy enough when I was on iOS. I just used Apple Configurator [1] to block Safari and the App Store, but on GrapheneOS, there was no great option. Recently I…"
+        },
+        {
+          "by": "Powdering7082",
+          "text": "> I turned it on briefly to receive a confirmation code that I needed in order to maintain that phone plan itself, and once spiritually but not literally - when going on a remote and slightly dangerous hike, friends insisted that I bring along a few communication devices that they had for emergency comms and use them to check in once every few hours. It is funny to have witnessed the conversion…"
+        }
+      ],
+      "image": "http://vitalik.ca/images/icon.png"
+    },
+    {
+      "id": 50319510,
+      "url": "https://karpathy.bearblog.dev/hacker-tube/",
+      "hn": "https://news.ycombinator.com/item?id=50319510",
+      "title": "HackerTube: YouTube built from videos recommended by HN",
+      "time": 1793476613,
+      "points": 253,
+      "depth": [
+        {
+          "text": "someone built **HackerTube**, a video site featuring **videos recommended by Hacker News**",
+          "tier": "simple"
+        },
+        {
+          "text": "Commenters praised its **pure nerd content** and lack of clickbait, but asked for a **recency sort** or a way to get its picks as YouTube playlists.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some said HackerTube's recommendations felt better than YouTube's, while others said YouTube's personalized feed already matched their interests.",
+      "comment_count": 105,
+      "terms": [
+        "recommendation algorithm",
+        "curation pipeline",
+        "RSS"
+      ],
+      "entities": [
+        "HackerTube",
+        "Hacker News",
+        "YouTube",
+        "CGP Grey",
+        "TikTok",
+        "Amazon",
+        "Google",
+        "Apple",
+        "Apple TV",
+        "YouTube Premium",
+        "DeArrow",
+        "Claude Code",
+        "Karpathy"
+      ],
+      "comments": [
+        {
+          "by": "murm",
+          "text": "It's so refreshing browsing this compared to YouTube, it feels like I don't have to constantly be on high alert at being baited into some trap. Makes you wonder what kind of internet could be possible if all these tech giants weren't just optimizing for engagement and addiction."
+        },
+        {
+          "by": "reorder9695",
+          "text": "I find it amazing how close the front page of this is to what I actually watch/want to watch on YouTube. I guess I shouldn't be surprised, but it feels like an unpersonalised feed (besides being based on Hacker News) shouldn't have a significantly better hitrate for me than YouTube's \"personalised\" feed."
+        },
+        {
+          "by": "mixtureoftakes",
+          "text": "I wish there was a way to sort by recency, if i'm mainly interested in finding obscure gems from like last 6 to 12 months of ai and tech updates"
+        },
+        {
+          "by": "Flere-Imsaho",
+          "text": "What a smart idea! Just randomly found this video from CGP Grey: \"What Happened to Horses Is Happening to Us\" https://hackertube.org/watch/7Pq-S557XQU From...2014 It's surprisingly accurate. I wonder why he stopped making youtube videos."
+        },
+        {
+          "by": "twalichiewicz",
+          "text": "Interesting project, but have you considered publishing the curated videos as automatically maintained playlists (organized by topic, popularity, or recency) on a YouTube channel? To me the most valuable part of this is the curation pipeline. I'd love to have access to those recommendations without needing to adopt an entirely separate viewing experience."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50316531,
+      "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
+      "hn": "https://news.ycombinator.com/item?id=50316531",
+      "title": "Malware uses LLMs to rank victims by how much they're worth",
+      "time": 1793456943,
+      "points": 221,
+      "depth": [
+        {
+          "text": "malware uses **AI** to rank stolen victims by the **value of their assets**",
+          "tier": "simple"
+        },
+        {
+          "text": "The bundle includes a **home address**, employer, card last-4 digits, Gmail receipts, and Uber Eats and DoorDash order history. If a model refuses, VOLTA can try a **fallback chain of up to three models**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 119,
+      "terms": [
+        "LLM",
+        "infostealer",
+        "token",
+        "exfiltration"
+      ],
+      "entities": [
+        "VOLTA",
+        "VOLTA-AUTODOXER",
+        "Gmail",
+        "Uber Eats",
+        "DoorDash"
+      ],
+      "comments": [
+        {
+          "by": "akersten",
+          "text": "This is the kind of stuff that keeps me up at night. Claude, ArtCraft, tons of other auto-downloading tools, are rolling 10'000's of code changes a month. If one compromised update snuck this guy in, it's kind of game over. The windows of opportunity for an attack like this seem to be widening the faster we \"develop\" software. Makes me want to have like 5 separate computers: - one for banking…"
+        },
+        {
+          "by": "jumploops",
+          "text": "I’ve been thinking about how we’re still in the early days of agents, similar to the early days of the internet, happily opening up our machines and running new protocols. Soon (now?) the threats will become ever more complex, and we’ll be back in the early-2000s-like virus storms."
+        },
+        {
+          "by": "mullingitover",
+          "text": "Are we going to end up in an arms race where our local records are defensively sprinkled with prompt injection/agent poisoning/tank_man.jpg?"
+        },
+        {
+          "by": "goatsi",
+          "text": "It's an odd choice to run this on the victim's machine (exposing the open router key) rather than on the attacker's infrastructure. I guess this lets them keep it dead simple for buyers, you just need to choose a Telegram channel for the logs to be dumped into."
+        },
+        {
+          "by": "riskable",
+          "text": "How very considerate! Steal from the rich, not the poor. Conversely, don't bother with poor people! Now we just need proper Robin Hood malware that \"levels out the playing field\" as it were, by stealing from the rich and moving that money into the poor people's accounts (that have also been hacked)."
+        }
+      ],
+      "image": "https://storage.ghost.io/c/af/a0/afa04ee3-414f-4481-8d23-7e7c146f192e/content/images/size/w1200/2026/10/VOLTA.jpg"
+    },
+    {
+      "id": 50318189,
+      "url": "https://www.theguardian.com/politics/2026/oct/05/green-party-nuclear-power-policy",
+      "hn": "https://news.ycombinator.com/item?id=50318189",
+      "title": "UK Green party drops longstanding opposition to nuclear power",
+      "time": 1793468242,
+      "points": 189,
+      "depth": [
+        {
+          "text": "the Green party of England and Wales has **dropped its longstanding opposition** to **nuclear power**",
+          "tier": "simple"
+        },
+        {
+          "text": "At conference, members voted to remove the party’s **blanket opposition** to nuclear fission; elected representatives can support new reactors **case-by-case**. Offshore wind, onshore wind and rooftop solar remain its primary electricity sources, and Carla Denyer said the change **does not commit** the party to backing new nuclear.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: supporters welcome the shift and say nuclear can help; skeptics say it costs too much and takes too long, with one commenter also raising wartime risks.",
+      "comment_count": 207,
+      "terms": [
+        "nuclear fission",
+        "baseload"
+      ],
+      "entities": [
+        "Green party of England and Wales",
+        "Carla Denyer",
+        "Zack Polanski",
+        "Adrian Ramsay",
+        "Eugene McCarthy",
+        "Greens for Nuclear",
+        "Andrew Stirling",
+        "Sizewell B",
+        "Sizewell C"
+      ],
+      "comments": [
+        {
+          "by": "silver92bullet",
+          "text": "I think a lot of Anti Nuclear Power is based off old designs that weren't as safe and had radioactive byproduct I think newer reactor designs take a lot of bite out of that process. Additionally when you look at what is proposed to happen with Fusion reactors in Virginia in the next couple years it becomes a less popular position to be in opposition."
+        },
+        {
+          "by": "apexalpha",
+          "text": "It's admirable they changed their stance but good Lord they are slow learners..."
+        },
+        {
+          "by": "dumberquestions",
+          "text": "I wish this happened decades ago because I'm not so sure fission can compete with renewables anymore given cost and time to build."
+        },
+        {
+          "by": "droppedasbaby",
+          "text": "I've never understood the opposition to nuclear power. Was this a reaction to Chernobyl or did it start earlier?"
+        },
+        {
+          "by": "FailMore",
+          "text": "Strange to me this is high on HN. #1 The Greens are a niche party in the UK. #2 this is from Mon 5 Oct."
+        }
+      ],
+      "image": "https://i.guim.co.uk/img/media/dc74a28ef57e469544afa9725c980e5365548295/1072_491_2108_1687/master/2108.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=513fa6e2a73e87072f6ec98718a9ba24"
+    },
+    {
+      "id": 50314085,
+      "url": "https://xoranth.net/gcc-switch/",
+      "hn": "https://news.ycombinator.com/item?id=50314085",
+      "title": "Switch Lowering in GCC",
+      "time": 1793433746,
+      "points": 188,
+      "depth": [
+        {
+          "text": "someone traced how a compiler turns **switch statements** into **jump tables**, **bitsets**, or comparison trees",
+          "tier": "simple"
+        },
+        {
+          "text": "The article follows GCC’s lowering pass: dense case ranges can become **jump tables**, selected groups can become **bit tests**, and leftovers become a probability-balanced comparison tree. Its jump-table heuristic uses a ratio of 8 for speed and 2 for size.",
+          "tier": "substance",
+          "data": [
+            [
+              "jump-table ratio for speed",
+              "8"
+            ],
+            [
+              "jump-table ratio for size",
+              "2"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 36,
+      "terms": [
+        "jump table",
+        "bitset",
+        "decision tree",
+        "lowering",
+        "profile-guided optimization",
+        "perfect hashing"
+      ],
+      "entities": [
+        "GCC",
+        "Clang",
+        "LLVM",
+        "Intel",
+        "Rust",
+        "JavaScript",
+        "C",
+        "rcc",
+        "Arm64"
+      ],
+      "comments": [
+        {
+          "by": "LarsKrimi",
+          "text": "> The switch in sparse_8 could be simplified by dividing x by eight before the jump. Interestingly, gcc doesn't find this simplification. It could not because that would ensure that 7 values for each case would be handled by function calls instead of the default case - 0/8 is 0, but 3/8 is also 0"
+        },
+        {
+          "by": "erk__",
+          "text": "I once played around with having a very large switch statement (all mac address manufactors in one switch) and in LLVM it would compile fine without optimizations, but if I turned optimizations on it would just spend around half an hour compiling it. I think GCC did it faster, but its been some time ago since I did it. In the Rust crate that was the reasons for all this I just ended up doing…"
+        },
+        {
+          "by": "rurban",
+          "text": "What a shame for clang and gcc! They still don't implement perfect hashes for large sparse switch tables. I did that recently for my rcc C compiler, and it was just a single day of work. Esp. beneficial for unicode work. The LLVM patch was rejected a decade ago. Gcc has several unicode patches sitting in branches, which would also need that"
+        },
+        {
+          "by": "tsukikage",
+          "text": "Why the indirection? - why not have the jump table reference f0..fX directly rather than jumping to a jump?"
+        },
+        {
+          "by": "p-t",
+          "text": "I assume 34 in the compact_7() one was supposed to be 35, and edx was supposed to be used at some point in the bittest() one (unless i'm missing something lol)"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50317363,
+      "url": "https://www.casio.com/us/watches/50th/Heritage/1980s/",
+      "hn": "https://news.ycombinator.com/item?id=50317363",
+      "title": "Casio Watches of the 1980s",
+      "time": 1793462448,
+      "points": 187,
+      "depth": [
+        {
+          "text": "a look back at **1980s Casio watches** has people swapping memories of their **favorite features**",
+          "tier": "simple"
+        },
+        {
+          "text": "Some models **tracked tides** from coordinates people entered and suggested when to fish. Another could **store up to 50 phone numbers** and dial them by holding its speaker to a telephone receiver.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 96,
+      "terms": [
+        "geo coordinates",
+        "Telememo",
+        "touch-tone signals"
+      ],
+      "entities": [
+        "Casio"
+      ],
+      "comments": [
+        {
+          "by": "conductr",
+          "text": "One of my core memories as a 80s kid was the absurd G Shock tan line I had when I was around 8. I put that thing on and never took it off for probably a year or more. Also it stunk like the inside of a cast but it was like a challenge I put on myself to never take it off. Eventually the wrist band broke and I could never find a replacement (or my mom refused to look?). I carried it around in my…"
+        },
+        {
+          "by": "kimmk",
+          "text": "I like Casio watches but I'd like them more if the watch faces weren't splattered with \"Water resist\", \"Chrono alarm\", and such labels. Yes I don't need to be reminded this watch indeed is an chrono alarm, like an advertisement, every time I look at it."
+        },
+        {
+          "by": "gosen",
+          "text": "I've lost my apple watches recently, and I've been using different versions of apple watches for about 7 years. I thought I won't come back to regular watches, but I've decided to try and bought a cheap classic Casio watches for ~30 bucks. After 2 months I must admit that I don't really need smart watches :D"
+        },
+        {
+          "by": "pjmlp",
+          "text": "As 70s child, I used a few from that list, naturally as nerd the goal was eventually to get the databank one."
+        },
+        {
+          "by": "loire280",
+          "text": "So many of the cool, revolutionary features of these watches look so hard to use and can't possibly have been used regularly by their owners (translation dictionary lookup? scientific calculator?). Reminds me of the Windows CE devices I was kind of obsessed with as a teenager that were amazing but kind of useless because of their form factor."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50290652,
+      "url": "https://thedataexchange.media/leo-de-moura-lean-aws/",
+      "hn": "https://news.ycombinator.com/item?id=50290652",
+      "title": "AI, Lean, and the Future of Formal Verification, with Lean Creator Leo de Moura",
+      "time": 1793287788,
+      "points": 180,
+      "depth": [
+        {
+          "text": "AI is making **formal verification** easier, but humans still need to check **models against the code**",
+          "tier": "simple"
+        },
+        {
+          "text": "Leo de Moura says AI can write code for stated properties and provide a **proof Lean checks**. He says AI-written proofs have reached **50 million lines**, while Mathlib took 10 years to reach 2.5 million. But AI-made models still need to be **checked against the real code**, and people must decide whether the properties describe what they actually want.",
+          "tier": "substance",
+          "data": [
+            [
+              "AI-written proofs",
+              "50 million lines"
+            ],
+            [
+              "Mathlib",
+              "2.5 million lines"
+            ],
+            [
+              "Time for Mathlib to reach 2.5 million lines",
+              "10 years"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters point to formal methods catching incorrect steps; others question whether properties are right, say agents can spin in circles, or claim Lean itself has holes.",
+      "comment_count": 39,
+      "terms": [
+        "formal verification",
+        "Lean",
+        "specification",
+        "model",
+        "property-based testing",
+        "autoformalization",
+        "differential testing",
+        "kernel",
+        "liveness",
+        "Rocq"
+      ],
+      "entities": [
+        "Leo de Moura",
+        "Ben Lorica",
+        "Lean",
+        "AWS",
+        "Lean Focused Research Organization",
+        "Mathlib",
+        "Claude Code",
+        "Claude",
+        "Kim Morrison",
+        "zlib",
+        "Aeneas",
+        "SymCrypt",
+        "Microsoft",
+        "Rust",
+        "Anthropic",
+        "OpenAI",
+        "Verso Blueprint",
+        "TLA+",
+        "Rocq",
+        "Open Markets Initiative"
+      ],
+      "comments": [
+        {
+          "by": "wbeckler",
+          "text": "I think the royal combo is Lean 4/TLA+/etc. plus AI plus a deterministic generator. For large systems formal method assertions need to be compressed down to a human comprehensible size. This can happen when the assertions are confirming the accuracy of a model and its attached code generators. The generator can generate proofs of the generated code and a human only needs to ensure that the…"
+        },
+        {
+          "by": "chamomeal",
+          "text": "What do people think of property based testing? I’ve set up a few property based tests and it feels almost like formal verification. I know it’s not the same thing, but PBT’s can catch all sorts of absolutely crazy bugs that I never would think to check for. Stateful stuff, cross-service stuff. My only gripe with PBTs has always been the tedious setup, but LLMs solve that. I haven’t seen much…"
+        },
+        {
+          "by": "PandaRider",
+          "text": "> ... But we expect, in the next few months and years, people will focus way more on the specifications, on the models, on the properties you want the software to have. Does anyone have resources on learning modelling for formal verification? (Does not have to be in Lean)"
+        },
+        {
+          "by": "beecasthurlbow",
+          "text": "If you use agents to generate formal verification, how do you tell if the properties that are verified are the correct ones?"
+        },
+        {
+          "by": "fspeech",
+          "text": "Currently the foundation theories in mathlib are built with the assumption that formal proofs are expensive. Concepts are fragmented to share as much proof as possible. With LLM the assumption is no longer correct. Concepts and proofs should be built to fit human thinking as much as possible and proofs can be ported by LLMs between theories. Lean would ensure that the translation is correct."
+        }
+      ],
+      "image": "https://i0.wp.com/thedataexchange.media/wp-content/uploads/2026/10/Leo-de-Moura-art.001.jpeg?fit=1920%2C1080&ssl=1"
+    },
+    {
+      "id": 50315226,
+      "url": "https://nullprogram.com/blog/2026/10/31/",
+      "hn": "https://news.ycombinator.com/item?id=50315226",
+      "title": "Prospero: A new coding harness for a more civilized age",
+      "time": 1793447699,
+      "points": 174,
+      "depth": [
+        {
+          "text": "someone built **Prospero**, a lean coding harness with a desktop interface and **headless remote runs**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author says it uses around **two orders of magnitude fewer resources** than other harnesses. You supply your own model provider; the **Professional Edition** includes headless engines for remote deployments. Its rule is **never wait forever**: every operation has a deadline.",
+          "tier": "substance",
+          "data": [
+            [
+              "resource use",
+              "around two orders of magnitude fewer resources than other harnesses"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some praise the lean C++ desktop approach, while others say C++ is a poor fit for agent interfaces or object to its strict timeouts.",
+      "comment_count": 115,
+      "terms": [
+        "coding harness",
+        "agent",
+        "subagent",
+        "headless",
+        "fuzz campaign",
+        "OOM killer",
+        "MCP",
+        "LLM",
+        "TUI"
+      ],
+      "entities": [
+        "Prospero",
+        "Dear ImGui",
+        "C++",
+        "llama.cpp",
+        "OpenRouter",
+        "Anthropic",
+        "OpenAI",
+        "Claude",
+        "w64devkit",
+        "Windows",
+        "Windows XP",
+        "macOS",
+        "Linux",
+        "WSL",
+        "Git",
+        "MCP",
+        "Vim",
+        "PowerShell",
+        "Bash",
+        "zsh",
+        "Raspberry Pi",
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "JUCE",
+        "Juggler",
+        "Rust",
+        "Tauri",
+        "Zed",
+        "hax"
+      ],
+      "comments": [
+        {
+          "by": "brainless",
+          "text": "Nice to see a gui coding agent. I use tui agents all the time but I am building a gui one. I use Claude Code, Codex, opencode and a couple other but I do not like the DX/UX. I often want click a part of the wall of text (from agent) and search for related text, open them up on the side or so. I want to open a linked file. I want to answer multiple questions in an async manner, even come back and…"
+        },
+        {
+          "by": "julesrms",
+          "text": "Great to see what you're doing there, but speaking as a 30-year hardcore C++ veteran (to the extent of creating my own C++ GUI framework: https://juce.com )... When I was writing a code agent ( https://github.com/juggler-ai/juggler ), there's no way I'd have used C++ for an agent GUI! Agent UIs are all markdown, HTML, big scrolling lists, text flow, unicode chars, and all the other stuff that C++…"
+        },
+        {
+          "by": "nico",
+          "text": "Nitpicks about CLI coding agents: Many times, while they are doing something, I’ll be typing a prompt, and then all of a sudden I get a question with Y/N options, and by accident, I’ll type Y/N as part of a word thus “answering the question”, many times either steering in the wrong direction or stopping the agent Neither Claude code nor Codex solve this. The only way I’ve found to prevent it is…"
+        },
+        {
+          "by": "keyle",
+          "text": "Many make their own harness today anyway... I did mine as well and that takes 4% the resources of opencode and in a similar tui style. I think it's great and everyone should make their own."
+        },
+        {
+          "by": "bensyverson",
+          "text": "There are so many cool harnesses I could use if I didn't have an outrageously subsidized Claude subscription"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50319143,
+      "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
+      "hn": "https://news.ycombinator.com/item?id=50319143",
+      "title": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
+      "time": 1793474190,
+      "points": 169,
+      "depth": [
+        {
+          "text": "a **Linux kernel bug** is **reachable remotely**, before an app sees the connection",
+          "tier": "simple"
+        },
+        {
+          "text": "CVE-2026-98432 is a **CVSS 9.8** use-after-free in the IPv4 TCP handshake; it can leak kernel memory, corrupt it, or crash the machine. Anthropic says Claude built a **working remote root exploit** for servers with a multipath TCP listener, while Ubuntu and RHEL still had **no fix** as of October 29.",
+          "tier": "substance",
+          "data": [
+            [
+              "CVSS severity score",
+              "9.8"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: the write-up says Anthropic's demonstrated exploit needs an MPTCP listener; some commenters say the bug itself doesn't, and that network filtering or single-core systems may limit exploitation.",
+      "comment_count": 81,
+      "terms": [
+        "use-after-free",
+        "CVE",
+        "CVSS",
+        "kernel",
+        "IPv4",
+        "TCP handshake",
+        "MPTCP"
+      ],
+      "entities": [
+        "Linux",
+        "CVE-2026-98432",
+        "Anthropic",
+        "Claude",
+        "Ubuntu",
+        "Red Hat",
+        "RHEL",
+        "Debian",
+        "SUSE",
+        "Oracle Linux",
+        "Amazon Linux",
+        "Eric Dumazet",
+        "Xinyang Ge",
+        "Kuniyuki Iwashima"
+      ],
+      "comments": [
+        {
+          "by": "teekert",
+          "text": "I've been compiling a list of cybersecurity RSS feeds to build a small automation (with oversight from Hermes agent) to ping me (ntfy.sh or just Telegram) when a CVE requires my intervention (matching them to a list of services I run for clients and myself.) My list (of feeds) is still small, but this CVE did not show up, do any of you have any tips for RSS feeds to use for this purpose?"
+        },
+        {
+          "by": "peanut-walrus",
+          "text": "Some notes I've got about this: - MPTCP is not a requirement, it is a generic use-after-free. - Exploitability over the internet is unlikely, most ISP routers drop packets with IP options fields. - At least according to Red Hat, dropping packets with IP options yourself helps, but is not a full mitigation. - Successful exploit requires multiple CPU cores to process packets, so systems with just a…"
+        },
+        {
+          "by": "winwang",
+          "text": "It's okay guys, the authors simply don't know how to write good C. A real C programmer would not have shipped such a basic use-after-free bug. Rust is just a crutch."
+        },
+        {
+          "by": "swinglock",
+          "text": "How are Ubuntu and RHEL not fixed? Few operating systems market themselves more as suitable for servers. What are they doing over there?"
+        },
+        {
+          "by": "grey-area",
+          "text": "No patches for Ubuntu or red hat yet. https://ubuntu.com/security/CVE-2026-98432 https://access.redhat.com/security/cve/cve-2026-98432"
+        }
+      ],
+      "image": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf/opengraph-image"
+    },
+    {
+      "id": 50310398,
+      "url": "https://www.firezone.dev/blog/introducing-sanstun",
+      "hn": "https://news.ycombinator.com/item?id=50310398",
+      "title": "Sanstun: A sans-IO, parallel-friendly WireGuard implementation in Rust",
+      "time": 1793395800,
+      "points": 157,
+      "depth": [
+        {
+          "text": "someone built a **Rust VPN tool** that can move **packet encryption work** to other threads",
+          "tier": "simple"
+        },
+        {
+          "text": "**sanstun** is a sans-IO Rust implementation of WireGuard. It **separates packet bookkeeping from encryption**, letting a PendingEncapsulate move to another thread; the post says bookkeeping is 2% for a 1280-byte packet and hints at a potential speedup of **more than 45x**, though it says that is hard to achieve in practice.",
+          "tier": "substance",
+          "data": [
+            [
+              "packet size",
+              "1280 bytes"
+            ],
+            [
+              "bookkeeping share",
+              "2%"
+            ],
+            [
+              "potential speedup",
+              "more than 45x"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: one commenter says rewriting without async can make function coloring worse; another says sans-IO designs are easier to test and can share code between async and blocking IO.",
+      "comment_count": 40,
+      "terms": [
+        "sans-IO",
+        "WireGuard",
+        "userspace",
+        "handshake",
+        "rate limiting",
+        "function coloring",
+        "PendingEncapsulate"
+      ],
+      "entities": [
+        "sanstun",
+        "WireGuard",
+        "Firezone",
+        "Rust",
+        "boringtun",
+        "Mullvad",
+        "gotatun"
+      ],
+      "comments": [
+        {
+          "by": "Twey",
+          "text": "It was all going great until I read > The design also avoids problems like function coloring and plays well with Rust's ownership rules. Async is not I/O. It can be used for I/O, but it's just a way of writing pure, deterministic state machines that keeps a logical flow together instead of scattered over a bunch of transitions. Even if you choose to manually compile your async flows into explicit…"
+        },
+        {
+          "by": "monocasa",
+          "text": "Sweet, this is basically how I design my protocol implementations in rust as well. Way more testable, the bulk can be shared between async and blocking IO, it's a lot easier to completely ban unsafe in your dependencies (excepting std and core), etc."
+        },
+        {
+          "by": "temp0826",
+          "text": "Mullvad spun their own implementation off of boringtun as well (called gotatun[0]) [0] https://github.com/mullvad/gotatun"
+        },
+        {
+          "by": "mlhpdx",
+          "text": "One of the fundamentally great things about the Wireguard protocol is the simplicity. A small codebase can implement it, and that’s lead to some great libraries and innovation. Another great (and subtle) thing is the monotonically increasing sequence number. Note that it isn’t incrementing, like DTLS. This small thing makes it so much easier to implement with efficient concurrency, and event…"
+        },
+        {
+          "by": "dennysora-main",
+          "text": "I've recently been developing a VPN Manager implementation using Rust, and the underlying architecture also uses WireGuard. Currently, I'm using WireGuard gotatun developed by Mullvad. I wonder if you've tested any related data, such as performance curves, connection jitter, and so on, as well as things like security implementations."
+        }
+      ],
+      "image": "https://www.firezone.dev/blog/opengraph-image?dc0a4d310bb2b9d5"
+    },
+    {
       "id": 50314654,
       "url": "https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament",
       "hn": "https://news.ycombinator.com/item?id=50314654",
@@ -939,6 +1783,74 @@
     }
   ],
   "glossary": {
+    "sandbox": "A separate, contained space where software can be tested without affecting the rest of a computer or system.",
+    "Content Security Policy (CSP)": "A browser rule that limits which scripts and other content a page is allowed to load.",
+    "postMessage": "A browser feature that lets separate page frames send messages without giving them access to each other's pages.",
+    "JSONP": "A way for a website to send data as JavaScript code instead of ordinary data.",
+    "P1": "A label for a high-priority security report.",
+    "bug bounty": "A program where a company invites people to find and report security problems.",
+    "fork": "A separate copy of a shared software project that people can take in a different direction.",
+    "vulnerability": "A weakness in an app that someone could use to cause trouble.",
+    "UnifiedPush": "A way for apps to get notifications through a separate service instead of Google Play Services.",
+    "F-Droid": "A place to download Android apps that are free to use and share.",
+    "mainline Signal": "Signal’s own app, as opposed to a modified version such as Molly.",
+    "digital minimalism": "Making deliberate choices about when and how you use digital tools, instead of using them by default.",
+    "multi-client": "One app that lets you use several social platforms from the same place.",
+    "decentralized social media": "Social media designed so no single service controls the whole network.",
+    "local-first": "Software designed to keep your data under your control, rather than making a remote service the only home for it.",
+    "semantic search": "A way to find information by what it means, even when it doesn't use the exact words you searched for.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "command-line tool": "A program you use by typing instructions rather than clicking through screens.",
+    "dark patterns": "Design tricks that push people into doing something online they might not have chosen.",
+    "Unix philosophy": "Building software from small tools, each doing one job and able to work together.",
+    "recommendation algorithm": "The behind-the-scenes system that picks which posts appear in your feed.",
+    "curation pipeline": "The process for choosing and organizing videos to share.",
+    "RSS": "Really Simple Syndication: a way to collect updates from websites in one place.",
+    "infostealer": "Malware made to steal saved passwords, account access, and other private information from a device.",
+    "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
+    "exfiltration": "Sending files or other data out of someone else’s computer without permission.",
+    "nuclear fission": "The process of splitting atoms to release heat that can be used to make electricity.",
+    "baseload": "The steady supply of electricity a power system needs, even when demand is low.",
+    "jump table": "A lookup list that lets a program jump straight to the code for a particular case.",
+    "bitset": "A compact row of yes-or-no bits used to test whether a value belongs to a set.",
+    "decision tree": "A series of questions that narrows down which case to run.",
+    "lowering": "A compiler step that turns a high-level instruction into simpler operations.",
+    "profile-guided optimization": "A compiler technique that uses information from earlier runs to favor code paths used more often.",
+    "perfect hashing": "A lookup method that gives each known item its own slot, without collisions.",
+    "geo coordinates": "Numbers that describe a location on Earth.",
+    "Telememo": "A watch feature for storing telephone numbers.",
+    "touch-tone signals": "The tones a push-button telephone sends when you press its keys.",
+    "formal verification": "Checking a claim using precise rules, often with a computer.",
+    "Lean": "A computer program used to write mathematical proofs and check that their steps are correct.",
+    "specification": "A written description of what a program should do.",
+    "model": "A mathematical setup where the claims or rules in question all hold.",
+    "property-based testing": "Testing software by checking rules against many inputs, not only a few hand-picked cases.",
+    "autoformalization": "Using AI to turn ordinary mathematical writing into a proof a computer can check.",
+    "differential testing": "Running two versions of a program on the same inputs and checking whether their answers differ.",
+    "kernel": "A small program that carries out a calculation on a computer's graphics chip or processor.",
+    "liveness": "A guarantee that something good will eventually happen.",
+    "Rocq": "A tool that checks whether a proof meets the claim it is meant to establish.",
+    "coding harness": "A program around a coding AI that lets it use tools like reading files and running commands.",
+    "agent": "An AI system that can take steps and use tools to get a task done, not just answer questions.",
+    "subagent": "A helper assigned a smaller part of a larger task.",
+    "headless": "Software that another program can control without a person using its regular screen.",
+    "fuzz campaign": "A long test that tries lots of inputs to uncover bugs.",
+    "OOM killer": "Out of Memory killer: Linux’s emergency process that stops programs when memory runs short.",
+    "MCP": "Model Context Protocol: a standard way for AI apps to connect to outside tools.",
+    "TUI": "Terminal User Interface: the menus and controls an app shows inside a text terminal.",
+    "use-after-free": "Trying to use data after it has been discarded.",
+    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
+    "CVSS": "Common Vulnerability Scoring System: a scale people use to rate how serious a security flaw is.",
+    "IPv4": "Internet Protocol version 4: a system for giving devices numerical addresses so data can reach them online.",
+    "TCP handshake": "Transmission Control Protocol handshake: the opening exchange that sets up a connection between two computers.",
+    "MPTCP": "Multipath TCP: a way for one internet connection to use more than one network path.",
+    "sans-IO": "A way to keep network, time, and randomness work separate from a program’s state and main logic.",
+    "WireGuard": "A tool for making encrypted connections between devices.",
+    "userspace": "The part of a computer where ordinary apps run, rather than the operating system's core.",
+    "handshake": "The first exchange where two computers check who they are talking to.",
+    "rate limiting": "Limiting how often a source is allowed to send certain messages.",
+    "function coloring": "The hassle of needing different versions of functions depending on whether they use async operations.",
+    "PendingEncapsulate": "A prepared packet operation that has its bookkeeping done and can be handed to another thread for encryption.",
     "backbenchers": "Politicians outside the government’s top leadership, who often have less say in day-to-day decisions.",
     "red-tapism": "Too much paperwork and official procedure getting in the way of doing things.",
     "incumbent": "The person or group that already holds an elected position.",
@@ -960,7 +1872,6 @@
     "POSIX": "Portable Operating System Interface: shared rules for how Unix-like systems behave.",
     "FOSS": "Free and Open Source Software: apps whose code people can inspect, share, and change.",
     "SDK": "Software Development Kit: tools a company provides so people can make apps for its device.",
-    "kernel": "A small program that carries out a calculation on a computer's graphics chip or processor.",
     "fat binaries": "Programs built to run on more than one kind of processor, so people don’t need a separate version for each.",
     "AI-native": "Designed so AI is a core part of how the work gets done.",
     "CI": "Continuous integration: automatic checks that run when developers change code, helping catch problems early.",
@@ -987,7 +1898,6 @@
     "private key": "A secret digital key that can be used to prove an identity or act as its owner.",
     "Pull Zone": "Bunny's settings that tell its CDN what website content to fetch and serve.",
     "POP": "Point of presence: a server location where a network's users can connect nearby.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "continual learning": "An AI's ability to keep learning new things over time without losing what it already learned.",
     "on-policy distillation": "A way to train one AI using guidance from another AI on examples the first AI generated itself.",
     "KV-cache": "A saved record of what an AI has already processed, so it does not have to redo that work when generating more text.",
@@ -997,8 +1907,6 @@
     "knowledge graph": "A way to organize information by showing how people, places, or things are connected.",
     "parameter expansion": "Adding more adjustable values inside an AI so it has more room to learn new information.",
     "remote code execution": "A security flaw that lets someone run commands on another person's computer.",
-    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
-    "MPTCP": "Multipath TCP: a way for one internet connection to use more than one network path.",
     "Turnstile": "Cloudflare’s check that a site can use to decide whether to let a visitor through.",
     "headless browser": "A browser that runs under software control without a visible window.",
     "browser profile": "A saved set of details that makes a browser act like a particular kind of browser.",
