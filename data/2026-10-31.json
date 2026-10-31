@@ -1,0 +1,333 @@
+{
+  "date": "2026-10-31",
+  "cards": [
+    {
+      "id": 50309647,
+      "url": "https://www.bostonglobe.com/2026/10/29/metro/patrick-stewart-picard-star-trek-the-next-generation/",
+      "hn": "https://news.ycombinator.com/item?id=50309647",
+      "title": "Through Captain Jean-Luc Picard, Patrick Stewart taught us the measure of a man",
+      "time": 1793391810,
+      "points": 272,
+      "depth": [
+        {
+          "text": "the article remembers how Patrick Stewart made **Captain Picard** a thoughtful, **vulnerable role model**",
+          "tier": "simple"
+        },
+        {
+          "text": "The writers point to Picard’s speeches about **truth and censorship**, and scenes of **grief and failure**. One says Stewart made **vulnerability and leadership** fit together.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters praise Picard as a role model; one says Brooks' Sisco is the better captain, father, and role model.",
+      "comment_count": 149,
+      "terms": [],
+      "entities": [
+        "Patrick Stewart",
+        "Jean-Luc Picard",
+        "Star Trek: The Next Generation",
+        "Star Trek: Picard",
+        "X-Men",
+        "John Hilliard",
+        "Jason Laughlin",
+        "Wil Wheaton",
+        "Wesley Crusher",
+        "Starfleet",
+        "Sisco",
+        "Boston Globe"
+      ],
+      "comments": [
+        {
+          "by": "agentultra",
+          "text": "Archive link: https://archive.is/HuNjT"
+        },
+        {
+          "by": "Lerc",
+          "text": "I find it fairly amazing that they could say this without mentioning the episode \"The measure of a man\" in which Picard literally makes the case. Perhaps it is uncomfortable for people to think about now."
+        },
+        {
+          "by": "bottlepalm",
+          "text": "So many posts and comments are saying the same thing. I guess it's one of the things we remember most about Patrick Stewart and his portrayal of a starship captain. The quintessential captain. Honorable, wise, but humble, diplomatic, reasonable, with high morals, and fortitude under pressure."
+        },
+        {
+          "by": "kstenerud",
+          "text": "I think the most memorable of the Picard-focused TNG stories for me was \"Tapestry\". It really hammered home how much of one's potential is lost when one never takes risks."
+        },
+        {
+          "by": "Balgair",
+          "text": "Stewart was, to me, an archetypal man's man.in Picard. Embodying a real man to me in so many ways. The author is right in this eulogy of a great actor and a great role. That out of the way, Brooks' Sisco is the much better captain, man, father, and role model and Brooks' acting in Ben, I feel, does a much better job. I will sorely miss Stewart, as we all should. All the captains' actors and…"
+        }
+      ],
+      "image": "https://bostonglobe-prod.cdn.arcpublishing.com/resizer/v2/CGTKMVCJ3II6DM4QQY75UQKYRQ.jpg?auth=1665db2d602a73cebcb708de2cff81cdafb1dff34e84e5e1b3f511472b91079a&width=1440"
+    },
+    {
+      "id": 50308697,
+      "url": "https://status.bunny.net/incidents/p6gf1by9kr7m",
+      "hn": "https://news.ycombinator.com/item?id=50308697",
+      "title": "Bunny CDN Security Incident",
+      "time": 1793387122,
+      "points": 212,
+      "depth": [
+        {
+          "text": "bunny.net pulled a server after its provider reported **unauthorized access**, then began **replacing certificates**",
+          "tier": "simple"
+        },
+        {
+          "text": "The provider reported unauthorized access involving third-party server management software; bunny.net says it cut traffic to its Armenia node within **20 minutes**, preserved security logs, wiped the server and removed it. bunny.net's investigation found **no evidence** the node or its data were accessed, though it cannot rule that out; if access happened, temporarily cached content, Pull Zone configurations and TLS certificates on the server could have been exposed. **Managed certificates** for custom domains are being reissued in controlled batches, with completion expected by the end of October 31.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some call Bunny's response prompt and competent; others say wiping the server likely destroyed evidence and reflects a poor incident-response plan.",
+      "comment_count": 40,
+      "terms": [
+        "CDN",
+        "TLS certificate",
+        "private key",
+        "Pull Zone",
+        "POP"
+      ],
+      "entities": [
+        "bunny.net",
+        "Gcore",
+        "php.net",
+        "PECL"
+      ],
+      "comments": [
+        {
+          "by": "colonCapitalDee",
+          "text": "Prompt and competent response, as expected from bunny. \"Last week, one of our infrastructure providers reported unauthorized access involving third-party server management software. One of our CDN nodes, located in Armenia, was hosted on a server supplied by this provider. After receiving the alert from the affected provider, our engineering team took immediate action. Within 20 minutes, we…"
+        },
+        {
+          "by": "eraclide",
+          "text": "Bunny used Gcore in Armenia. Gcore themselves got hacked, not Bunny. Bunny was just an affected downstream, in only one of their POPs. https://lowendtalk.com/discussion/222315/gcore-compromised-v... The title is heavily misleading."
+        },
+        {
+          "by": "bobtheborg",
+          "text": "While neither investigation has found any indication of unauthorized access to our server, we cannot completely rule out the possibility.\nIf unauthorized access to our CDN node did occur, the potentially exposed information would have been: temporarily cached CDN content, Pull Zone configurations, and TLS certificates stored on that server.\nAs an additional precaution, we have revoked and…"
+        },
+        {
+          "by": "evan_a_a",
+          "text": "> After receiving the alert from the affected provider, our engineering team took immediate action. Within 20 minutes, we stopped routing traffic through the server. We then reviewed and preserved the relevant security logs for investigation, securely wiped the server, and revoked its access to our other systems. The affected server has been permanently removed from our infrastructure. When…"
+        },
+        {
+          "by": "bitlad",
+          "text": "It feels like theres an incident every hour."
+        }
+      ],
+      "image": "https://dka575ofm4ao0.cloudfront.net/assets/logos/favicon-2b86ed00cfa6258307d4a3d0c482fd733c7973f82de213143b24fc062c540367.png"
+    },
+    {
+      "id": 50272479,
+      "url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+      "hn": "https://news.ycombinator.com/item?id=50272479",
+      "title": "Sleep framework: A new way for LLMs to retain knowledge in continual learning",
+      "time": 1793190265,
+      "points": 202,
+      "depth": [
+        {
+          "text": "a new **Sleep framework** aims to help **LLMs retain knowledge** during continual learning",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says **parameter expansion** gives the model room to add memories without **overwriting older knowledge**. Another wonders whether it can scale beyond the **comparatively tiny models** used in experiments.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 23,
+      "terms": [
+        "LLM",
+        "continual learning",
+        "on-policy distillation",
+        "KV-cache",
+        "MoE",
+        "RLHF",
+        "in-context learning",
+        "knowledge graph",
+        "parameter expansion"
+      ],
+      "entities": [
+        "Sleep",
+        "Google",
+        "Databricks",
+        "RAFT",
+        "Dreamtime",
+        "Muse",
+        "Meta",
+        "Qwen 3",
+        "Llama",
+        "DreamCoder"
+      ],
+      "comments": [
+        {
+          "by": "gopalv",
+          "text": "> On-policy distillation: The expanded student model learns token-specific feedback from teacher distributions generated on self-sampled sequences. The weird thing is to see this based off the KV-Cache in the diagrams. Completely different from the Databricks RAFT [1]. My team built \"Dreamtime\" earlier this year [2], which used a different mechanism to distill out learnings across multiple…"
+        },
+        {
+          "by": "imimayj1337",
+          "text": "I know we just had the carbon announcement which was distinctly confusing, but comparatively I think that this is an exceptionally well-written article. I do believe that Google has some exceptional scientific minds as illustrated by their ability to take highly technical concepts and explain them in an understandable way for the layperson. As for the technical nature of this, I'm not sure if…"
+        },
+        {
+          "by": "macleginn",
+          "text": "The actual paper: https://arxiv.org/pdf/2606.03979"
+        },
+        {
+          "by": "deepwoods",
+          "text": "I wonder how well this would translate with a much larger model. They ran the experiments with comparatively tiny models. You would presumably need to churn a lot more tokens to move the needle of a multi-trillion-parameter model's weights. It might just be that it's not that hard to improve Llama-3B and Llama 3-8B because they're not very good to begin with. They compare it to other methods…"
+        },
+        {
+          "by": "donbox",
+          "text": "AFAIK Muse (from Meta) dreams as well... every night... to consolidate its knowledge graph."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50310687,
+      "url": "https://status.linode.com/incidents/nt58zhx3pmgm",
+      "hn": "https://news.ycombinator.com/item?id=50310687",
+      "title": "Linode Security Incident",
+      "time": 1793397460,
+      "points": 176,
+      "depth": [
+        {
+          "text": "Akamai is investigating a **remote code execution vulnerability** and working on **mitigations**",
+          "tier": "simple"
+        },
+        {
+          "text": "The status page says it is deploying **mitigations** for the attack vector and urges customers to apply **OS updates** from their upstream provider as soon as they become available. Akamai says it has **no evidence** the vulnerability was exploited on the Akamai Compute platform.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 98,
+      "terms": [
+        "remote code execution",
+        "CVE",
+        "MPTCP"
+      ],
+      "entities": [
+        "Akamai",
+        "Linode",
+        "CVE-2026-98432",
+        "MPTCP",
+        "Ubuntu"
+      ],
+      "comments": [
+        {
+          "by": "6thbit",
+          "text": "It feels like we hit an inflection point in the last week or so. Kind of a large tidal wave to crash on the coast, but likely not the tsunami yet. I hope. If you are running services and don't yet have an easy way to react to these things with swift process defined, I hope you don't like to sleep."
+        },
+        {
+          "by": "spydum",
+          "text": "Wow, that isn't clear.\nIs there an incident, or did they just become aware about MPTCP vuln?\nDetails on the mptcp are also pretty scarce as well right?"
+        },
+        {
+          "by": "paaloeye",
+          "text": "Even better CVE 10.0 has just dropped https://news.ycombinator.com/item?id=50310937"
+        },
+        {
+          "by": "nout",
+          "text": "All companies should at this point invest a lot of money into defensive AI. In ~July the AI hit crypto and bitcoin, where it's the easiest to extract the most money.\nNow the AI powered attacks are hitting infra and SaaS. Next (~December), it will hit classic infrastructure, banks, small businesses, etc.\nBy mid next year, we will be over this hump with defensive AI being required part of…"
+        },
+        {
+          "by": "ericd",
+          "text": "Anyone have any thoughts on what happens when banks/brokerages start getting hit in earnest? Think it's prudent to split single brokerage portfolios across multiple? Or do they have enough speed bumps in their procedures that they're not quite so vulnerable to major losses?"
+        }
+      ],
+      "image": "https://dka575ofm4ao0.cloudfront.net/pages-twitter_logos/original/4176/linode-logo-7c2f2333-3e3c-47fa-a657-2a658d5cba70.png"
+    },
+    {
+      "id": 50277379,
+      "url": "https://github.com/chris124567/cfsolve",
+      "hn": "https://news.ycombinator.com/item?id=50277379",
+      "title": "Cloudflare Turnstile solver library (no headless browser required)",
+      "time": 1793208563,
+      "points": 150,
+      "depth": [
+        {
+          "text": "someone built a tool to solve **Cloudflare checks** without a **headless browser**",
+          "tier": "simple"
+        },
+        {
+          "text": "**cfsolve** returns either a **Turnstile token** or a **cf_clearance cookie**, using a browser profile with recorded responses to Cloudflare’s browser checks. The author reports one user had trouble with European proxies but succeeded with US proxies, possibly because Cloudflare serves different versions by region.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some see bypasses as a way around frustrating blocks; others warn that publishing workarounds can fuel escalation and abuse.",
+      "comment_count": 42,
+      "terms": [
+        "Turnstile",
+        "headless browser",
+        "browser profile",
+        "cf_clearance cookie",
+        "proxy",
+        "user agent",
+        "PoW"
+      ],
+      "entities": [
+        "Cloudflare",
+        "Turnstile",
+        "cfsolve",
+        "Rust",
+        "GitHub",
+        "Safari",
+        "Chrome",
+        "Edge Dev",
+        "Letterboxd",
+        "yt-dlp",
+        "Anubis",
+        "Apple",
+        "Claude"
+      ],
+      "comments": [
+        {
+          "by": "jyrkesh",
+          "text": "I've been using Edge Dev as my daily driver for years, and the last couple updates it's been failing Turnstile off and on. I get this error code on https://debug.challenges.cloudflare.com/ that's not currently throwing because it magically started working again. But when it's not working, I've realized that roughly 30-50% of the internet is walled off to me in this browser profile because I can't…"
+        },
+        {
+          "by": "costco",
+          "text": "Author here. I submitted this a few days ago but seems like it was added to the second chance pool so now it’s on the front page. Anyways, I have received a report from a user that this solver did not work for them with European proxies but did with US proxies… so they may be serving different versions for different regions. I will fix that soon. I’m not at my computer right now but it was…"
+        },
+        {
+          "by": "userbinator",
+          "text": "\"The walls have ears.\" Personally I would be careful about poking this bear so publicly. All it does is accelerate escalation and cause those of us who have been subjected to user-agent discrimination and found our own workarounds even more difficulty. With the rise of AI, this point may be moot, but this is still a war and anything you make public can and will be used against you."
+        },
+        {
+          "by": "nomilk",
+          "text": "My Cloudflare solver is command + w. It's 100% reliable in a headful browser and occasionally results in finding an alternative site that doesn't place its priorities (denying bots) over the user's (judicious use of time)."
+        },
+        {
+          "by": "paaloeye",
+          "text": "For better or worse, it's like `yt-dlp` — constant race against CF, so it's not reliable. It's probably for better."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/fcb21a9ed7fe6aaa678f828cba8ef686668bc0c3b0b8710e95909d09a0f53eed/chris124567/cfsolve"
+    }
+  ],
+  "glossary": {
+    "CDN": "Content Delivery Network: A network of servers that helps websites handle requests closer to their users.",
+    "TLS certificate": "Transport Layer Security certificate: a digital ID that helps a website prove it's the right site and set up a protected connection.",
+    "private key": "A secret digital key that can be used to prove an identity or act as its owner.",
+    "Pull Zone": "Bunny's settings that tell its CDN what website content to fetch and serve.",
+    "POP": "Point of presence: a server location where a network's users can connect nearby.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "continual learning": "An AI's ability to keep learning new things over time without losing what it already learned.",
+    "on-policy distillation": "A way to train one AI using guidance from another AI on examples the first AI generated itself.",
+    "KV-cache": "A saved record of what an AI has already processed, so it does not have to redo that work when generating more text.",
+    "MoE": "Mixture of Experts: a model with many specialist parts that sends each piece of text to only a few of them.",
+    "RLHF": "Reinforcement Learning from Human Feedback: a way to train an AI by having people rate its answers.",
+    "in-context learning": "Getting an AI to do a task using examples or instructions in the current conversation, without changing what it learned earlier.",
+    "knowledge graph": "A way to organize information by showing how people, places, or things are connected.",
+    "parameter expansion": "Adding more adjustable values inside an AI so it has more room to learn new information.",
+    "remote code execution": "A security flaw that lets someone run commands on another person's computer.",
+    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
+    "MPTCP": "Multipath TCP: a way for one internet connection to use more than one network path.",
+    "Turnstile": "Cloudflare’s check that a site can use to decide whether to let a visitor through.",
+    "headless browser": "A browser that runs under software control without a visible window.",
+    "browser profile": "A saved set of details that makes a browser act like a particular kind of browser.",
+    "cf_clearance cookie": "A small piece of data saved by a browser; here, it shows that a Cloudflare challenge was cleared.",
+    "proxy": "A go-between that gets information from another website on someone else's behalf.",
+    "user agent": "A label sent with a web request that identifies the browser or device making it.",
+    "PoW": "Proof of Work: a computer task that makes automated requests take some effort."
+  }
+}
