@@ -1,0 +1,880 @@
+{
+  "date": "2026-11-02",
+  "cards": [
+    {
+      "id": 50330939,
+      "url": "https://fortune.com/article/why-did-us-workers-just-take-home-smallest-share-of-capital-since-1947-lowest-ever-recorded/",
+      "hn": "https://news.ycombinator.com/item?id=50330939",
+      "title": "U.S. workers took home their smallest share of capital since at least 1947",
+      "time": 1793575231,
+      "points": 271,
+      "depth": [
+        {
+          "text": "workers are getting a **smaller slice** of the economy while **corporate profits** keep climbing",
+          "tier": "simple"
+        },
+        {
+          "text": "The Bureau of Labor Statistics says labor’s share of economic output fell to **52.8%** in the second quarter of 2026, down from 53.6% the quarter before and the lowest since records began in 1947. The article points to **automation** as one possible pressure, but says **AI job displacement** has not yet shown up meaningfully in economic data.",
+          "tier": "substance",
+          "data": [
+            [
+              "labor share, second quarter of 2026",
+              "52.8%"
+            ],
+            [
+              "labor share, previous quarter",
+              "53.6%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters call the shift an unhealthy trend; others point to demographics and tooling costs, or question whether the share measure proves workers are personally worse off.",
+      "comment_count": 146,
+      "terms": [
+        "labor share",
+        "GDP",
+        "capital",
+        "automation",
+        "jobless growth",
+        "K-shaped economy",
+        "AI"
+      ],
+      "entities": [
+        "Bureau of Labor Statistics",
+        "Fortune",
+        "Raymond Robertson",
+        "Texas A&M",
+        "Goldman Sachs",
+        "Joseph Briggs",
+        "Sarah Dong",
+        "Wharton",
+        "McKinsey",
+        "Morgan Stanley",
+        "Mark Regets",
+        "National Foundation for American Policy",
+        "Donald Trump",
+        "Stephen Miller",
+        "Congressional Budget Office",
+        "U.S. Department of Labor",
+        "National Student Clearinghouse",
+        "CareerTrainer",
+        "Sasha Rogelberg",
+        "Lea Suzuki"
+      ],
+      "comments": [
+        {
+          "by": "_heimdall",
+          "text": "This shouldn't be a surprise. The US came out of WWII with similarly high debt to GDP. They only corrected that through financial repression, and that's likely to be their only chance of lowering that debt ratio today. If we don't spend the next few decades skating by while the currency is debased under our noses, I assume its because there's a much more severe and tragic response."
+        },
+        {
+          "by": "0c3ca83",
+          "text": "Sounds like the policies that were put in place are doing what they were designed to do, and directing money to where they were intended to. The work on technology to take the place of policy is proceeding, thought slower than the leadership would prefer."
+        },
+        {
+          "by": "DaedalusII",
+          "text": "Machine intelligence could drive as much transfer from labor to capital in the next decade as the previous wage-to-financial economy produced in forty years. This will push wealth concentration in leading OECD economies beyond the inequality seen in Brazil and Mexico."
+        },
+        {
+          "by": "SideQuark",
+          "text": "Also productivity costs more in tooling than ever before per worker, so it's not a surprise that a smaller amount of capital goes to humans when the gains are majority from capital outlays, not labor improvements. Here's BLS data for total cost to employ for the last 25 years. https://fred.stlouisfed.org/series/ECIALLCIV Note how much it has increased over simply wages, as it costs more and more…"
+        },
+        {
+          "by": "toddmorey",
+          "text": "So here's what I don't get: The United States is the world's largest consumer market. From what I can find, personal consumption expenditures (PCE) account for about two-thirds to 70% of total US economic output. We live and die on consumer spending and confidence. So next we automate the bejeebus out of this economy with AI robots and Elon believes it grows 3x in under five years. Splendid. But…"
+        }
+      ],
+      "image": "https://fortune.com/img-assets/wp-content/uploads/2026/01/GettyImages-1322099863-e1768339483475.jpg?resize=1200,600"
+    },
+    {
+      "id": 50328896,
+      "url": null,
+      "hn": "https://news.ycombinator.com/item?id=50328896",
+      "title": "Ask HN: Which TV do you recommend for privacy?",
+      "time": 1793561727,
+      "points": 263,
+      "depth": [
+        {
+          "text": "people say keep the **TV offline** and use it as a **display** for a trusted device",
+          "tier": "simple"
+        },
+        {
+          "text": "Most commenters recommend keeping **Wi-Fi and Ethernet disconnected** and using HDMI with an Apple TV or another **trusted box**. Others suggest removing the wireless radio or choosing a **commercial display** instead.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say an offline TV used over HDMI is fine; others want its radios removed for certainty. One commenter says there's no evidence TVs secretly connect to open networks.",
+      "comment_count": 426,
+      "terms": [
+        "HDMI",
+        "Ethernet",
+        "rooting"
+      ],
+      "entities": [
+        "Apple TV",
+        "LG",
+        "LG C6",
+        "LG C1",
+        "Glasshouse",
+        "webOS",
+        "TCL",
+        "Google TV",
+        "Android",
+        "ADB",
+        "FreeBSD",
+        "Samsung",
+        "Samsung QB55C-N",
+        "Roku",
+        "Shield",
+        "MacBook",
+        "Linux",
+        "PlayStation",
+        "Xbox",
+        "Kodi",
+        "Intel NUC",
+        "Pepper Jobs W10",
+        "Sceptre",
+        "NextDNS",
+        "OpenWrt",
+        "Tomato",
+        "DD-WRT",
+        "Pi-hole",
+        "BenQ",
+        "AirPlay",
+        "Plex",
+        "NixOS",
+        "Mint",
+        "Costco",
+        "Walmart",
+        "Amazon",
+        "CleanYourTV",
+        "Free My TV"
+      ],
+      "comments": [
+        {
+          "by": "MegaDeKay",
+          "text": "- Buy an LG OLED TV. They're as gorgeous as they are notorious. I just got a 77\" LG C6 and it is crazy good. - Root it [0]. - Install Glasshouse [1] and disable all telemetry. YOU now own the glass. Now you can chromecast to the TV, use Adfree YouTube, access IP TV, etc etc etc. No point crippling your TV by pulling the wireless module and voiding your warranty. - Install a bunch of cool apps to…"
+        },
+        {
+          "by": "ruslan",
+          "text": "Recently I've had to deal with this same problem - get a new TV for living room. Personally, I do not watch TV at all, but kids want to see cartoons when having their breakfast. I spent a week reading forums and came to conclusion that best solution would be to buy a \"dumb TV\" and connect it to a PC I trust, but it appears there are no dump TVs in my rage of 55\" and larger. So, I bought \"Google…"
+        },
+        {
+          "by": "realityfactchex",
+          "text": "First of all, open the TV and disconnect the wireless radio from the main board, on mine (Samsung) it was just unplugging one cable (AI or Google it). I dislike doing stuff like that, but it was easy in my case, maybe you'll be lucky, too. Second, never use the \"apps\" built into the TV. Next, don't plug Ethernet into the TV. Plug HDMI cables into the TV. Use a box of your choice on the other end…"
+        },
+        {
+          "by": "epwr",
+          "text": "I went and researched this, and found that basically none of the TV brands were anything but creepy on privacy. What I’ve ended up doing was I got an LG and never hooked it up to Wifi/internet, and then use an Apple TV to watch things on. It’s a bit annoying if I want to switch to a game console as Apple TV can’t control the TV’s input channel, but otherwise works very well. Make sure the TV…"
+        },
+        {
+          "by": "lrvick",
+          "text": "Buy any TV you want, ignore all instructions to connect it to the internet, then look for an HDMI port on the back. Plug an HDMI cable into one end, and in the other end plug in a cheap Linux computer like a used Intel NUC from ebay. Then use a nice air-mouse remote like the Pepper Jobs W10. I watch any movie or TV show I want in 4k via Kodi, but then can alt tab to a Terminal or a real web…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50312408,
+      "url": "http://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html",
+      "hn": "https://news.ycombinator.com/item?id=50312408",
+      "title": "Postgres 19 is late because so many more bugs are being found now",
+      "time": 1793410736,
+      "points": 262,
+      "depth": [
+        {
+          "text": "the Postgres release is running late as **AI** helps people find **more bugs**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says AI-assisted hunting turned up **hundreds of bug candidates**, including serialization anomalies, foreign-key issues and **planner bugs**. Others say bug fixing may take time from feature work but can **harden the codebase**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say LLMs are surfacing old bugs and the delay is a worthwhile quality push; others question whether the reports are reliable or AI-generated contributions are lowering code quality.",
+      "comment_count": 167,
+      "terms": [
+        "LLM",
+        "serialization anomaly",
+        "foreign key",
+        "planner",
+        "CVE"
+      ],
+      "entities": [
+        "PostgreSQL",
+        "MySQL",
+        "OrioleDB",
+        "Lean",
+        "Gandalf"
+      ],
+      "comments": [
+        {
+          "by": "augunrik",
+          "text": "Ok, but does (s)he know? It's just guessing, so unfounded non-news? \"It’s possible that some of this jump is the result of committers making more mistakes this year than they did last year, but I don’t think anyone who works on the project really believes that’s the main cause. Rather, it seems likely that PostgreSQL committers were about as conservative in 2026 as they were in preceding years…"
+        },
+        {
+          "by": "CharlesW",
+          "text": "> This year is going to be different. PostgreSQL 19 most likely won’t be released until November… […] So, what happened? The short answer is that LLMs happened. […] There’s a huge amount of code, and that code contains a huge number of bugs. […] What’s different now is that it’s become vastly easier to find those bugs. This seems…good? That it might disrupt the project's \"traditional\" release…"
+        },
+        {
+          "by": "tibbar",
+          "text": "I did a little AI-assisted bug-hunting in Postgres this summer in between jobs, and the haul was staggering. Multiple serialization anomalies (eg [0] [1] [2]), foreign key integrity issues ([3] [4]), planner correctness bugs such as [5]. Various CVE-worthy vulnerabilities. An unfixable timezone bug [6]. The list got so long that I had to triage what I even had time to report, and settled for a…"
+        },
+        {
+          "by": "baq",
+          "text": "The process should now be: write your specs in lean, LLMs fill the gaps, then you translate the proof into your end product software. Otherwise LLMs will simply keep finding bugs, both in old and new code."
+        },
+        {
+          "by": "hopa",
+          "text": "I feel like AI is amazing for read only “search” tasks (query this, look for bugs, find vulnerabilities) but it’s not quite as good for “write” tasks like “add this feature”. Search tasks are easily verified, code changes are much harder to verify"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50330456,
+      "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+      "hn": "https://news.ycombinator.com/item?id=50330456",
+      "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
+      "time": 1793571045,
+      "points": 214,
+      "depth": [
+        {
+          "text": "an Apollo economist says most non-tech companies see **no financial payoff** from **AI**",
+          "tier": "simple"
+        },
+        {
+          "text": "Torsten Slok at Apollo focused on the **S&P 493**—the S&P 500 minus Alphabet, Amazon, Apple, Meta, Microsoft, Nvidia, and Tesla—and found profit margins and revenue per worker **appear to be flat**, with no evidence AI is improving productivity. One commenter argued the piece tracks only top-level company revenue, so it **can't show whether AI spending pays off**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters say AI has already sped up their work; others say Apollo's charts can't establish whether AI spending pays off.",
+      "comment_count": 212,
+      "terms": [
+        "S&P 493",
+        "profit margin",
+        "revenue per worker"
+      ],
+      "entities": [
+        "Apollo Global Management",
+        "Torsten Slok",
+        "S&P 493",
+        "S&P 500",
+        "Alphabet",
+        "Amazon",
+        "Apple",
+        "Meta",
+        "Microsoft",
+        "Nvidia",
+        "Tesla",
+        "TechCrunch"
+      ],
+      "comments": [
+        {
+          "by": "simonw",
+          "text": "The same Apollo Global Research partner, Torsten Slok, also published this widely cited story in September 2025 last year, \"AI Adoption Rate Trending Down for Large Companies\": https://www.apolloacademy.com/ai-adoption-rate-trending-down... I don't think that one has held up very well. A cynic might opine that they've realized how easy it is to grab headlines and attention by putting out research…"
+        },
+        {
+          "by": "ManBeardPc",
+          "text": "Does for us (data science, specialty chemistry, finding/optimizing formulas). We can get from idea to prototype in a day compared to 1-2 weeks. All that boilerplate to process data took a long time to code by hand, especially for the data science/math guys who are not programmers. Now we can actually try all ideas instead of guessing the most promising and only try that."
+        },
+        {
+          "by": "hyperpape",
+          "text": "This is a complete misrepresentation of what the Apollo piece can actually show, because it's not measuring the \"payoff\" of AI investments, but only the top level revenue of those companies ( https://www.apollo.com/wealth/insights-news/insights/daily-s... ). This is a healthy corrective to the most insane AI maximalist takes (mass disemployment in late 2027, 10% GDP growth in a year), but it…"
+        },
+        {
+          "by": "kozikow",
+          "text": "I noticed an interesting phenomenon Your company uses AI and it gets ahead a lot quicker. However, your competition does so as well. Many areas of economy are zero sum game - so your $ ends up being the same as previously. However, now with a \"tax\" paid to AI model providers for being able to stay competetive."
+        },
+        {
+          "by": "DangitBobby",
+          "text": "First, if your company could double its workforce for free right now with 0 plans for how to convert the extra bodies into revenue, how long would it take them to see a return? Because from what I understand companies aren't leaving money on the table, if hiring someone would make them more money they just would. AI could help those that weren't maximizing revenue despite having high demand and a…"
+        }
+      ],
+      "image": "https://techcrunch.com/wp-content/uploads/2023/08/GettyImages-1308803174.jpg?resize=1200,800"
+    },
+    {
+      "id": 50325253,
+      "url": "https://github.com/ivankovic/omnidiff",
+      "hn": "https://news.ycombinator.com/item?id=50325253",
+      "title": "Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust",
+      "time": 1793538150,
+      "points": 207,
+      "depth": [
+        {
+          "text": "someone built **OmniDiff**, a Git diff tool that can compare **code, images, PDFs, and more**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author looked at 7,400 repositories listed in Gentoo packages, sampled **2,000 diffs**, and **solved them manually** before building pipelines for each content type. It can diff C++ files of tens of thousands of lines in **under 100ms** on a 2023 ThinkPad T14s. It’s still in development as v0.3.0, and the author says they’ve used it daily as their Git difftool for months.",
+          "tier": "substance",
+          "data": [
+            [
+              "C++ diff time",
+              "under 100ms"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: fans praise its effort and minimal diffs; skeptics question its output, compare it with Delta, or criticize its license and installation options.",
+      "comment_count": 49,
+      "terms": [
+        "diff",
+        "Git difftool",
+        "CI pipeline",
+        "AGPLv3",
+        "three-way diff"
+      ],
+      "entities": [
+        "OmniDiff",
+        "Rust",
+        "Git",
+        "Gentoo",
+        "C++",
+        "AGPLv3",
+        "Delta",
+        "difftastic",
+        "twain",
+        "ThinkPad T14s"
+      ],
+      "comments": [
+        {
+          "by": "blahgeek",
+          "text": "> can diff 99.95% of code changes I’m not sure if I’m understanding this correctly : so for the remaining 0.05% of code changes, this tool would just… miss it? That seems horrible for a diff tool :O"
+        },
+        {
+          "by": "BobbyTables2",
+          "text": "For me the biggest issue is “git rebase” merge conflicts because the surrounding context was modified (especially near beginning/end of functions where the context includes unrelated stuff), or similar in a markdown document. (If commit A adds a line to the end of a bullet list in markdown and commit B does the same, they will conflict even though resolution is trivial for a human)"
+        },
+        {
+          "by": "gslepak",
+          "text": "Is there a way to use it with git without having to change your global git config? I.e. `git diff | omnidiff` or something? You can do this with delta: `git diff | delta --side-by-side`"
+        },
+        {
+          "by": "davvid",
+          "text": "Nicely done OP. Does it do 3-way diffs for merges as well? The instructions only mention the two-way `git difftool` configuration so maybe that'll be a future feature? Any interest in getting the setup upstreamed[1] so that users only need to `git config --global diff.tool omnidiff` to enable it by default? Disclosure: I created `git difftool` a long time ago, and am always happy when builtin…"
+        },
+        {
+          "by": "enriquto",
+          "text": "cool to see fresh Rust software with copyleft license ! I feel safer, as a user, enjoying the freedoms that the AGPL provides me. (No evil middleman will be able to give me non-free versions of this program.)"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50327266,
+      "url": "https://www.reddit.com/r/frontierairlines/comments/1xl20e8/psa_email_scam/",
+      "hn": "https://news.ycombinator.com/item?id=50327266",
+      "title": "Frontier Airlines Likely Breached",
+      "time": 1793551593,
+      "points": 198,
+      "depth": [
+        {
+          "text": "people report **scam emails** with full Frontier booking details, raising fears of a **data breach**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter said **Norwegian cruise line** had recently seen similar emails with actual booking information, and wondered whether the two companies shared **customer-service software**. Another guessed Frontier's **flight-status lookup** may have been abused to find active itineraries; that's speculation, not confirmed.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 76,
+      "terms": [
+        "phishing",
+        "enumerate",
+        "CVE",
+        "SPF",
+        "DKIM",
+        "DMARC"
+      ],
+      "entities": [
+        "Frontier Airlines",
+        "Norwegian Cruise Line",
+        "Microsoft Power Pages",
+        "Reddit"
+      ],
+      "comments": [
+        {
+          "by": "CSSer",
+          "text": "It seems early to speculate, but if this is related to the massive uptick in CVEs we've been seeing recently it feels like we're actively witnessing a corporate reckoning around security posture the likes of which has never occurred."
+        },
+        {
+          "by": "dawnerd",
+          "text": "Norwegian cruise line had a similar thing recently with emails going out with actual booking information. Basically identical to the frontier scam emails. I wonder if there’s some customer service software that’s being exploited that they both use. Edit: some info from the NcL one with screenshots that look similar\nhttps://www.reddit.com/r/NCL/comments/1x2q54e/warning_possib..."
+        },
+        {
+          "by": "touwer",
+          "text": "Can't see it. Reddit has become really open web hostile on mobile. Sad"
+        },
+        {
+          "by": "varenc",
+          "text": "My guess is something related to looking up Frontier flight status was abused to enumerate all active flight itineraries. If Frontier had been completely breached and all data compromised, there's likely more lucrative things the attacker can do than just using the data to enhance their credit card stealing phishing attack."
+        },
+        {
+          "by": "tosti",
+          "text": "For anyone else who has never heard of it: Frontier Airlines is a budget airline company based in Colorado USA."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50331402,
+      "url": "https://occupysaas.com/",
+      "hn": "https://news.ycombinator.com/item?id=50331402",
+      "title": "OccupySaaS",
+      "time": 1793578647,
+      "points": 179,
+      "depth": [
+        {
+          "text": "laid-off engineers are using **AI** and public docs to build **open-source replacements** for SaaS tools",
+          "tier": "simple"
+        },
+        {
+          "text": "The first two projects are **ZeroAuthy**, a self-hostable identity server that speaks Auth0's Authentication API, and **SalesCompel**, a Salesforce replacement. They build from **public documentation and standards**, with AI doing the heavy lifting.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some see laid-off developers and AI as a chance to build new products; others doubt businesses will trust early replacements without reliable support and accountability.",
+      "comment_count": 123,
+      "terms": [
+        "SaaS",
+        "clean-room reimplementation",
+        "drop-in replacement",
+        "self-hosted",
+        "API",
+        "SDK"
+      ],
+      "entities": [
+        "OccupySaaS",
+        "ZeroAuthy",
+        "SalesCompel",
+        "Auth0",
+        "Salesforce",
+        "Okta",
+        "Go",
+        "PostgreSQL",
+        "Vue"
+      ],
+      "comments": [
+        {
+          "by": "hypfer",
+          "text": "This genuinely feels either misguided or like a false flag psyop that will end in harm to the goals of the common people. Possibly also a PR stunt"
+        },
+        {
+          "by": "temp123477",
+          "text": "The mistake is thinking the first S is what people pay for when it is the second S."
+        },
+        {
+          "by": "david_shaw",
+          "text": "Baffling choice to start with auth and CRM, both of which are mission-critical components to many businesses. I wish these projects the best of luck, but it's hard to see people choosing a proudly AI-developed \"drop in replacement\" -- with no track record, avenues of support, or accountability -- over behemoths like Okta or Salesforce. Then again, open source software powers pretty much…"
+        },
+        {
+          "by": "baubino",
+          "text": "This seems like it’s trying to reinvent the idea of FOSS. There’s already tons of FOSS alternatives to big tech SaaS and there’s lots of tech coops and other venues for tech activism. Why not support one of those ventures or build a platform to help amplify them? Also odd to advocate for control of tech only to cede the entire project to AI."
+        },
+        {
+          "by": "brainless",
+          "text": "I am working toward similar goals but with a different approach. With LLMs, software can become more personal, customized, quirky even. Software will fit the last mile better than ever. The solution is not another SaaS. But desktop apps. Less dependence on a cloud. Of course we need backups. And we need networking. Perhaps peer to peer. Or run a tiny VPS. Businesses, families, communities…"
+        }
+      ],
+      "image": "https://occupysaas.com/assets/img/og.jpg"
+    },
+    {
+      "id": 50328487,
+      "url": "https://nurse.org/news/uber-for-nursing-gig-apps-report/",
+      "hn": "https://news.ycombinator.com/item?id=50328487",
+      "title": "Nurses Sound Alarm as 'Uber for Nursing' Apps Push to Deregulate Healthcare",
+      "time": 1793559226,
+      "points": 173,
+      "depth": [
+        {
+          "text": "nurses warn that **'Uber for Nursing' apps** are pushing to **deregulate healthcare**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter cites a Roosevelt Institute brief saying some platforms use **data-brokers** to determine nurse debt levels and offer **lower wages** to those with highest debt loads. Others wonder whether apps could help consumers, while critics warn they could mean **underpaid, lower-quality nurses**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some hope apps could make care cheaper or show prices upfront; others warn that competition could push nurses' wages and care quality down.",
+      "comment_count": 158,
+      "terms": [
+        "deregulate",
+        "data-brokers",
+        "gig economy",
+        "dynamic pricing",
+        "regulatory capture"
+      ],
+      "entities": [
+        "Uber",
+        "Zocdoc",
+        "Roosevelt Institute"
+      ],
+      "comments": [
+        {
+          "by": "buran77",
+          "text": "It was only a matter of time and I said (half) jokingly at the time that Uber is breaking the dam for everyone else to follow. Any regulated system will have its day in front of \"disruptors\" where the disruption is simply ignoring the regulation with some flimsy excuse, supported by the money and lack of morals of VCs and startup combinators. Uber took an axe to taxi drivers which weren't a…"
+        },
+        {
+          "by": "Shank",
+          "text": "To what degree is this just another symptom of the US healthcare system being flawed and in need of rework? To what degree would anyone use such a service if the costs remained high? I used Zocdoc in the past to find a doctor and ended up with a doctor who just charged out-of-pocket instead of insurance, and it worked great. Would an app that shows up-front pricing be better for the consumer?"
+        },
+        {
+          "by": "le-mark",
+          "text": "> found that some platforms \"use data-brokers to determine nurse debt levels and offer lower wages to those with highest debt loads.\" We can assume all gig economy companies do this? Brave new world indeed."
+        },
+        {
+          "by": "74948494i4",
+          "text": "Apparently most hospitals make low margins. If this is true, and the goal is to make healthcare more affordable, something has to give, no? https://www.kff.org/health-costs/key-facts-about-hospitals/?... It is also unclear how this is any different than traveling nurses which operate similarly. What is the solution that doesn’t result in at least some large group of people making less money?"
+        },
+        {
+          "by": "CapmCrackaWaka",
+          "text": "Could I use this app to hire a nurse and get a diagnosis from home? If we can start getting even meagre medical treatment to skip insurance / other middle men, I could see this having a great impact on healthcare prices, especially since AI is such a good information extractor, which is 90% of the role doctors play anyway."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50325662,
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy",
+      "hn": "https://news.ycombinator.com/item?id=50325662",
+      "title": "AI agent swarms in Minecraft fail to build civilization, drown in bureaucracy",
+      "time": 1793540844,
+      "points": 164,
+      "depth": [
+        {
+          "text": "someone set **50 AI agents** loose in Minecraft, and they got bogged down in **bureaucracy**",
+          "tier": "simple"
+        },
+        {
+          "text": "In the “Civ50” test, four agents spent **11 minutes** appointing a “**sole fertilizer operator**” for a single piece of bone meal on a single wheat block. In Mindustry, the GPTs beat the Claudes **6-1** in seven games.",
+          "tier": "substance",
+          "data": [
+            [
+              "Civilization challenge team",
+              "50 agents"
+            ],
+            [
+              "Civilization challenge length",
+              "three hours"
+            ],
+            [
+              "Appointment discussion",
+              "11 minutes"
+            ],
+            [
+              "Mindustry score",
+              "6-1"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: skeptics say the setup is too limited to prove agents generally cooperate badly; others see the bureaucracy as a familiar coordination problem and imagine agents could help when humans assign concrete tasks.",
+      "comment_count": 78,
+      "terms": [
+        "agent swarm",
+        "Mineflayer",
+        "PvP",
+        "RTS",
+        "harness"
+      ],
+      "entities": [
+        "ycombinator",
+        "Olam Labs",
+        "Minecraft",
+        "GPT-6.1 Sol",
+        "Claude Opus 5.5",
+        "OpenAI",
+        "Hugging Face",
+        "Mindcraft",
+        "Mineflayer",
+        "Bed Wars",
+        "Mindustry",
+        "Tom's Hardware"
+      ],
+      "comments": [
+        {
+          "by": "openasocket",
+          "text": "I find this research odd because I don’t know what field of study to call this. It’s not computer science. It’s almost like behavioral psychology, but for AI agents instead of humans or animals. That said, I feel like these studies lack a lot of rigor. Or maybe it’s a lack of clear direction. Like, what are we trying to determine here? Because these things often involve advanced AI agents and…"
+        },
+        {
+          "by": "_vertigo",
+          "text": "I started playing the rs-sdk ( https://github.com/MaxBittker/rs-sdk ) with Claude after seeing it on HN the other day. I haven't looked at the Minecraft experiment but just letting an agent loose in the game and telling it to play did not work well. At first it really did not have a good feel for how the game actually plays and would routinely waste tons of time doing something that makes no…"
+        },
+        {
+          "by": "bhouston",
+          "text": "I think that is a common failure case. It isn't that different that agents getting stuck in other types of loops, distractions. There is this great short novel about it by Adrian Tchaikovsky, \"Service Model\": https://en.wikipedia.org/wiki/Service_Model"
+        },
+        {
+          "by": "gjskngnf",
+          "text": "I’m not sure there’s too much to take away from this. It seems like a fun experiment, but I find it unsurprising LLMs failed in this context. They used this “mineflayer” wrapper, allowing GPT to read some game state and take actions. Yet the whole time, the game is running and the agents have to sit and process every minute or so. We know that agents cooperate much better in a harness more like…"
+        },
+        {
+          "by": "czep",
+          "text": "I find this experiment inspiring, but probably not for the reasons intended by the experimenters. To let loose a swarm of agents in a sandbox game with the vague goal of \"build a thriving civilization\", and then to observe them flounder in risk averse strategies is precisely what separates us from them. There is no risk-taking, no irrational spark, no neurodivergent \"because it's there\" impulse…"
+        }
+      ],
+      "image": "https://cdn.mos.cms.futurecdn.net/SCYhnjqyKUaWNuCxFpW8m9-1920-80.jpg"
+    },
+    {
+      "id": 50327058,
+      "url": "https://www.semiconductor-today.com/news_items/2026/oct/seoul-291026.shtml",
+      "hn": "https://news.ycombinator.com/item?id=50327058",
+      "title": "Seoul Viosys begins production of rare-earth-free white light emitter",
+      "time": 1793550206,
+      "points": 159,
+      "depth": [
+        {
+          "text": "Seoul Viosys says it can make **tiny white-light chips** without **rare-earth materials**",
+          "tier": "simple"
+        },
+        {
+          "text": "WICOP 3 uses **gallium nitride alone**. A **25µm x 10µm chip** produced **0.015lm** of white light; luminous efficacy is close to 100lm/W, and the company aims for 200lm/W within two years.",
+          "tier": "substance",
+          "data": [
+            [
+              "chip size",
+              "25µm x 10µm"
+            ],
+            [
+              "white-light output",
+              "0.015lm"
+            ],
+            [
+              "luminous efficacy",
+              "close to 100lm/W"
+            ],
+            [
+              "target luminous efficacy",
+              "200lm/W within two years"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 45,
+      "terms": [
+        "WICOP",
+        "micro-LED",
+        "gallium nitride",
+        "rare-earth materials",
+        "luminous efficacy"
+      ],
+      "entities": [
+        "Seoul Viosys",
+        "Seoul Semiconductor",
+        "Seoul Group",
+        "WICOP",
+        "WICOP 3",
+        "Omdia",
+        "CIE"
+      ],
+      "comments": [
+        {
+          "by": "Animats",
+          "text": "> WICOP 3 generates white light from gallium nitride (GaN) alone. Gallium might be a problem.\n\"China accounted for 99% of worldwide primary low-purity gallium production.\nThe remaining primary low-purity\ngallium producers outside of China included Japan and Russia. Germany, Hungary, and Kazakhstan ceased primary\nproduction in 2016, 2015, and 2013, respectively.\nUkraine most likely ceased primary…"
+        },
+        {
+          "by": "kkaske",
+          "text": "What does the color look like? Producing light that falls within the white region of the CIE diagram is one thing… if it’s too yellow or too blue it could be an issue. Maybe that’s something that can be worked out over time."
+        },
+        {
+          "by": "vessenes",
+          "text": "Ooh, cool. I'd like me some luminous concrete please. I like these order of magnitude changes in common technology -- in this case, way smaller minimum size and more efficient per square nanometer -- the use cases language is a good reminder that the innovation part (\"Look! This is cool!\") often (usually?) precedes the most compelling use cases. I imagine this is like 20 years away from hitting…"
+        },
+        {
+          "by": "phendrenad2",
+          "text": "I wonder if we'll ever see nanotech xenon arc lamps."
+        },
+        {
+          "by": "Imustaskforhelp",
+          "text": "> Seoul Biosys plans to broaden its technology applications to augmented reality (AR) displays and optical communication for artificial intelligence (AI) data transmission. They are also developing a method to transmit data using densely arranged micro LEDs around 10µm in size. Can someone who is an expert on the topic comment about if the statement regarding AI is true and if so then by how much…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50308754,
+      "url": "https://tibleiz.net/copper/",
+      "hn": "https://news.ycombinator.com/item?id=50308754",
+      "title": "Copper – A minimal low-level programming language with OOP and generics",
+      "time": 1793387373,
+      "points": 155,
+      "depth": [
+        {
+          "text": "someone made **Copper**, a **minimal low-level language** they use instead of C",
+          "tier": "simple"
+        },
+        {
+          "text": "The creator says **minimalism** is the main goal: the syntax is simple, and almost everything is explicit. Commenters liked the **syntax** but asked about Copper's **memory model** and what it compiles to.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 85,
+      "terms": [
+        "OOP",
+        "generics",
+        "low-level",
+        "pass by reference",
+        "GC",
+        "ABI",
+        "FFI"
+      ],
+      "entities": [
+        "Copper",
+        "C",
+        "Marc Kerbiquet",
+        "Crystal",
+        "Pony",
+        "Lua",
+        "JavaScript",
+        "Dart",
+        "Temple OS",
+        "Iron",
+        "Vulkan",
+        "Unicode"
+      ],
+      "comments": [
+        {
+          "by": "teo_zero",
+          "text": "I'd like to come up with some constructive comments, but I find everything so inconsistent and alien to me... For example, variable declarations use the pattern <colon> <type>, as in var a: Int32\nBut literals follow the opposite syntax, as in a = Int32: 42\nThe return type of a function is introduced by : in func definitions, but by -> in imported func declarations: func foo(a:Int):Int\nimport func…"
+        },
+        {
+          "by": "Joker_vD",
+          "text": "Surprisingly, the most irritating nitpick for me is the choice of the file extension — surely that should've been \".cu\", not \".co\"? If I were developing an e.g. Iron programming language (hypothetically — although perhaps so named a language already exists), I'd pick \".fe\" in a heartbeat. Then again, I'm the kind of person who've chosen $'.\\U0001F9CC' (that is, $'.\\xF0\\x9F\\xA7\\x8C') for a file…"
+        },
+        {
+          "by": "gorgoiler",
+          "text": "It’s nice they tried with a more fleshed out exemplar. Polymorphism (“generics”) and interfaces (“OOP”) would have been even better to see, especially across any kind of visibility boundary enforced by the language (packages, and the like.) Programming to an abstract interface — and in large codebases, enforced visibility controls — represent the middle ground everyone wants, in my experience…"
+        },
+        {
+          "by": "ricardobeat",
+          "text": "As a Crystal fan, really nice syntax. The documentation leaves open several questions: What is the memory model here? What does it compile to? What makes it 'low level'? Is there a GC? Does it have ABI compatibility with C or a FFI?"
+        },
+        {
+          "by": "bogdanoff_2",
+          "text": "Not mine, but I found this to be really interesting as a language created by one person for their own use. Also really interesting are the author's blog with articles on language design (for example his thoughts on exceptions, and how he added them to his language, then decided against them), and the change log for the language, showing its evolution. https://tibleiz.net/…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50328488,
+      "url": "https://blog.raed.dev/posts/proton-loser-thinking/",
+      "hn": "https://news.ycombinator.com/item?id=50328488",
+      "title": "It wasn't AI that flipped Proton's charge",
+      "time": 1793559235,
+      "points": 152,
+      "depth": [
+        {
+          "text": "a **Proton CEO** called an engineer's request for **security testing** “bullshit and loser thinking,” and people are questioning the company",
+          "tier": "simple"
+        },
+        {
+          "text": "The writer argues **AI-written code** isn't the issue; the concern is leadership treating **security checks** as a drag on speed. Staff were told their AI usage could decide whether they kept their jobs, and Andy Yen said the plan, dropped after it leaked, had already served its purpose.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: critics say dismissing security checks threatens the trust Proton sells; skeptics say the story needs more evidence and perspective, and AI adoption itself isn't enough to judge the company.",
+      "comment_count": 85,
+      "terms": [
+        "pentest",
+        "astroturfing",
+        "B2B",
+        "UX"
+      ],
+      "entities": [
+        "Proton",
+        "Andy Yen",
+        "404 Media",
+        "Reddit"
+      ],
+      "comments": [
+        {
+          "by": "Shank",
+          "text": "> Beyond the clumsiness, it shows a leadership that now treats the constraints that made Proton worth paying for as the thing slowing it down. Exactly. The product is security and privacy. The thing being sold is that. If anyone could justify being slower to pentest, it is Proton. I do wonder who would be demanding that Proton move faster. Would any user of their service ask them to sacrifice…"
+        },
+        {
+          "by": "exceptione",
+          "text": "Don't know if Proton has any shareholders, but I they do, I hope they understand the CEO's position has become untenable, no matter his other real or imaginary qualities. It is (surprisingly) not uncommon for CEO's to have no clue about the business they are leading, but most of them at a minimum understand they should not spook their own customers. If Proton wants to restore trust, they need a…"
+        },
+        {
+          "by": "HelloUsername",
+          "text": "Related: \"Manifestos, Fear, and 'Loser Thinking': Inside Proton's AI Reckoning\" https://news.ycombinator.com/item?id=50289692 90 comments \"Proton goes all in on using AI\" https://news.ycombinator.com/item?id=50296602 117 comments \"Proton to 'Re-Interview' Staff About AI to See Who Gets to Keep Their Job\" https://news.ycombinator.com/item?id=50251062 48 comments \"Proton's CEO Cancels AI…"
+        },
+        {
+          "by": "CircuitSeuss",
+          "text": "> Proton is a privacy company, though, and what its users pay for is the confidence that the people building it are careful. Shipping slowly and carefully is part of what they’re selling. Totally agree. I pay for Proton because I choose to trust their business practices more than Google. If Proton continues to move in this direction and hemorrhage trust, they will lose not just my business, but a…"
+        },
+        {
+          "by": "soundworlds",
+          "text": "I've had one eye on the Proton exit since they made it clear they were not disintangled from Big Tech nor politically neutral. Then they kept blocking discussions about it on their reddit:\nhttps://theintercept.com/2025/01/28/proton-mail-andy-yen-tru..."
+        }
+      ],
+      "image": "https://blog.raed.dev/It%20wasn"
+    }
+  ],
+  "glossary": {
+    "labor share": "The portion of a country's economic output that workers receive as wages and salaries.",
+    "GDP": "Gross Domestic Product: the total value of what a country's economy produces.",
+    "capital": "Things people or companies own and use to make income, like equipment or ownership in a business.",
+    "automation": "Using machines or software to do work people used to do.",
+    "jobless growth": "When an economy grows but adds few jobs or loses jobs.",
+    "K-shaped economy": "An economy where some people's fortunes rise while others' fall.",
+    "AI": "Artificial intelligence: computer systems designed to do tasks people associate with thinking.",
+    "HDMI": "High-Definition Multimedia Interface: the cable connection that carries picture and sound from one device to a screen.",
+    "Ethernet": "A wired way for devices to connect to a network, often using a cable.",
+    "rooting": "Getting deeper control of a device than its maker normally allows.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "serialization anomaly": "A database mistake where simultaneous changes produce a result that should not be possible.",
+    "foreign key": "A database rule that prevents a record from pointing to something that isn't there.",
+    "planner": "A part of a database that chooses how to find or change the requested data.",
+    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
+    "S&P 493": "The article's label for the broader group it compares with the Mag 7.",
+    "profit margin": "The part of a company's sales left after paying its costs.",
+    "revenue per worker": "A company's revenue divided by how many people work there.",
+    "diff": "A view showing what changed between two versions of code.",
+    "Git difftool": "A separate program Git opens to show changes between file versions.",
+    "CI pipeline": "Continuous Integration pipeline: automated checks that run as code changes, helping catch problems.",
+    "AGPLv3": "GNU Affero General Public License version 3: a software license with extra sharing rules when someone offers a modified version over a network.",
+    "three-way diff": "A comparison of two edited versions and their shared original, helping show how the edits differ.",
+    "phishing": "A scam that tricks someone into entering login details on a fake site.",
+    "enumerate": "To list items one by one, often to find out what exists.",
+    "SPF": "Sender Policy Framework: a way for a domain to say which mail servers are allowed to send email for it.",
+    "DKIM": "DomainKeys Identified Mail: a way for an email to carry proof about who sent it.",
+    "DMARC": "Domain-based Message Authentication, Reporting, and Conformance: rules for checking whether email claiming to come from a domain is genuine.",
+    "SaaS": "Software as a Service: software you access over the internet, with the provider running it for you.",
+    "clean-room reimplementation": "A way to build a compatible product using public information and new code, rather than copying the original.",
+    "drop-in replacement": "A new tool designed to take an old one’s place without users changing how they use it.",
+    "self-hosted": "Running a service on a computer you control rather than relying on someone else's.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "SDK": "Software Development Kit: tools a company provides so people can make apps for its device.",
+    "deregulate": "To remove or loosen rules that govern an industry.",
+    "data-brokers": "Businesses that collect information about people and use it to make decisions or provide it to others.",
+    "gig economy": "Work arranged as individual jobs, often through apps, rather than as a regular job.",
+    "dynamic pricing": "Prices that change depending on the situation, such as demand or where a ride is going.",
+    "regulatory capture": "When rules meant to control an industry end up helping the companies they are supposed to oversee.",
+    "agent swarm": "A group of software agents working on tasks together.",
+    "Mineflayer": "A tool named in the article for scripting Minecraft agents.",
+    "PvP": "Player versus player: a game mode where players or teams fight one another.",
+    "RTS": "Real-Time Strategy: a game where players build forces and make moves continuously rather than taking turns.",
+    "harness": "The surrounding code that gives an AI agent tools and a place to work, and checks what it does.",
+    "WICOP": "Wafer Integrated Chip on PCB: an LED setup that gets rid of the separate package around the chip.",
+    "micro-LED": "A very small LED chip; this article refers to chips under 100µm as micro-LEDs.",
+    "gallium nitride": "A material used in LEDs; here, the company says it can make white light from this alone.",
+    "rare-earth materials": "A group of materials that white LEDs have used in a layer on a blue LED chip.",
+    "luminous efficacy": "How much light a device gives off for the amount of power it uses.",
+    "OOP": "Object-oriented programming: a way to organize code into named things that hold information and actions.",
+    "generics": "A way to make one piece of code work with different kinds of values.",
+    "low-level": "A language that gives the programmer more direct control over how a computer does its work.",
+    "pass by reference": "A function gets access to the original value, so changes can affect the one the caller has.",
+    "GC": "Garbage collection: a program's automatic cleanup of memory it no longer needs.",
+    "ABI": "Application Binary Interface: the agreed rules software uses to communicate with other software.",
+    "FFI": "Foreign Function Interface: a way for code in one language to call code written in another.",
+    "pentest": "A security check where someone tries to find holes in software before it goes live.",
+    "astroturfing": "Paid promotion made to look like regular people's honest opinions.",
+    "B2B": "Business-to-business: selling products or services to other companies, rather than individual people.",
+    "UX": "User experience: how using a product feels and how easy it is to get things done."
+  }
+}
