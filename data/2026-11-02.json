@@ -2,6 +2,1456 @@
   "date": "2026-11-02",
   "cards": [
     {
+      "id": 50341174,
+      "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+      "hn": "https://news.ycombinator.com/item?id=50341174",
+      "title": "Astra can read and write weights to improve Qwen",
+      "time": 1793643688,
+      "points": 1264,
+      "depth": [
+        {
+          "text": "someone **edited a language model’s weights** to cut its looping and **boost its math scores**",
+          "tier": "simple"
+        },
+        {
+          "text": "With **50 forward passes**, Astra used practice problems and a Python kernel, but no training or gradient descent, to remove a looping direction from Qwen3.5-0.8B. It subtracted that direction from **131,072 weights**. **MATH-500 rose from 7.9% to 48.1%**, while IFEval rose from 21.0% to 62.3%.",
+          "tier": "substance",
+          "data": [
+            [
+              "MATH-500, base",
+              "7.9%"
+            ],
+            [
+              "MATH-500, edited",
+              "48.1%"
+            ],
+            [
+              "IFEval, base",
+              "21.0%"
+            ],
+            [
+              "IFEval, edited",
+              "62.3%"
+            ],
+            [
+              "Forward passes",
+              "50"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some call the ability shocking and important; others say the looping fix was prompted by hints and the result is less extraordinary than the headline suggests.",
+      "comment_count": 397,
+      "terms": [
+        "weights",
+        "gradient descent",
+        "forward pass",
+        "benchmark"
+      ],
+      "entities": [
+        "Astra",
+        "Qwen3.5-0.8B",
+        "MATH-500",
+        "GSM8K",
+        "IFEval",
+        "Python"
+      ],
+      "comments": [
+        {
+          "by": "vessenes",
+          "text": "This is insane. Astra can, without tooling, determine what games small networks are trained on, can edit the weights of networks directly to improve outcomes, and can hand edit a small qwen model to improve its math skills by like 5x. I'm shook. If you'd asked me this morning whether LLMs have native understanding of their weights that is less than human <-> neuron understanding, the same as…"
+        },
+        {
+          "by": "xg15",
+          "text": "And here we go... As others have said, while still absolutely insane, I don't find it completely out-of-the-blue surprising. One of the recurring abilities of (current-generation) LLMs seem to be to rapidly grasp very complex systems, where humans would need months or years to reach the same level of expertise. You can see this in the way a coding agent can \"understand\" and explain sprawling…"
+        },
+        {
+          "by": "NitpickLawyer",
+          "text": "> As a result, Astra spots and fixes a common failure of tiny reasoning models: they loop [13]. When the base model loops, it repeats the same text and rarely reaches an answer (85 of its first 96 practice answers ran to the 32,768-token limit). Astra traced the looping to one direction written by the MLPs of layers 15 and 19, and subtracted that direction from 64 output columns in each (131,072…"
+        },
+        {
+          "by": "_bobm",
+          "text": "I think the subfield has been there for a long time. See a small section of papers on the topic of generating dynamic weights during inference, predicting weights from network architecture, and learning the distribution of previously trained network parameters, just to name a few keywords: Parameter Prediction for Unseen Deep Architectures [1] NeuroGen: Neural Network Parameter Generation via…"
+        },
+        {
+          "by": "vanyle",
+          "text": "I don't think this is an emergent capability. I think Astra was trained on neural weights data as an attempt by OpenAI to get to recursive self improvement. Something similar happen in early GPT models which had a lot of chess game in standard notation in their training data which made them very good at chess as long as your prompt had the right format. We'll see if this attempt at RSI worked."
+        }
+      ],
+      "image": "https://rikiyat.github.io/images/blog/weight-space-programming.png"
+    },
+    {
+      "id": 50337608,
+      "url": "https://chalmovsky.com/posts/wtf-ubuntu",
+      "hn": "https://news.ycombinator.com/item?id=50337608",
+      "title": "WTF Ubuntu?",
+      "time": 1793631120,
+      "points": 1148,
+      "depth": [
+        {
+          "text": "Ubuntu still hadn't **patched** a **kernel bug**, so one user took their servers offline",
+          "tier": "simple"
+        },
+        {
+          "text": "The post says **CVE-2026-98432** affects Linux kernel TCP code, has been there since 2016, and Anthropic built an exploit that gets **root**. It says Debian patched it on October 16, while every supported Ubuntu release was listed as vulnerable; commenters note kernels with fixes were in “proposed” repos, and the 26LTS kernel went to updates/security on October 28. They disagree over whether the bug enables a **takeover** or mainly causes denial of service.",
+          "tier": "substance",
+          "data": [
+            [
+              "CVSS score",
+              "9.8"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some take Anthropic's root-exploit claim seriously; others point to advisories describing a crash or denial of service and question the 9.8 score.",
+      "comment_count": 550,
+      "terms": [
+        "CVE",
+        "CVSS",
+        "kernel",
+        "TCP",
+        "LTS",
+        "root",
+        "exploit",
+        "denial of service",
+        "RCE",
+        "EPSS"
+      ],
+      "entities": [
+        "Ubuntu",
+        "Linux",
+        "Anthropic",
+        "Debian",
+        "Canonical",
+        "CVE-2026-98432"
+      ],
+      "comments": [
+        {
+          "by": "BoppreH",
+          "text": "Worse yet, the Ubuntu security incident page[0] lists \"Ubuntu Priority: High\" (as opposed to Critical, which would trigger an out-of-schedule patch). There's a \"Why this priority?\" link that simply says: > Why is this CVE high priority? > See ubuntu cvss score That's it, we don't even get a period on this TBD of a sentence. It's followed by a generic link that explains what \"Ubuntu Priority\" is…"
+        },
+        {
+          "by": "throw0101c",
+          "text": "For the record, the kernels with the fixes are in the \"proposed\" repos for each LTS release: * https://launchpad.net/ubuntu/+source/linux You can pull them down with a \"-t\" added to your apt-get (but will not appear by default). 26LTS had the new kernel go to the updates/security repos on October 28."
+        },
+        {
+          "by": "alentred",
+          "text": "To be fair: while critical (9.8) it has an EPSS score of <1% (probability of it being actually used). According to [1], [2], and others, at worst the issue results in a kernel crash or a denial of service. I read the post by Anthropic too, but something just doesn't reconcile there between everyone saying its a DoS, and Anthropic alone claiming RCE. So far the advisories I read state \"under…"
+        },
+        {
+          "by": "paxy",
+          "text": "It’s okay to have criticism, but at least be constructive about it. This “I demand to speak to the manager” energy should be kept out of open source. The post gives no details about what this vulnerability is, how critical it is, how it is impacting them personally, how vulnerable their servers are, how they are working around it. Just a title designed to generate the maximum outrage followed by…"
+        },
+        {
+          "by": "vanschelven",
+          "text": "I knew what this is about before clicking the link. While trying to find remediations for vulnerable systems I was also looking for any kind of \"official\" statement on literally WTF is going on here from the Ubuntu side, but I haven't been able to find one yet. I guess it has to go through the \"hacker news puts enough attention on it for someone to care\" phase which we all know so well..."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50340088,
+      "url": null,
+      "hn": "https://news.ycombinator.com/item?id=50340088",
+      "title": "Show HN: Subvocal – Talk to your computer without making noise",
+      "time": 1793639777,
+      "points": 406,
+      "depth": [
+        {
+          "text": "someone built **smart glasses** that turn **silent mouthing into text** for quietly using a computer",
+          "tier": "simple"
+        },
+        {
+          "text": "They ditched EMG and switched to **RF**, which sends radio waves through the face; those waves are changed by silent mouthing around the tongue, lips and soft palate. They paid people to read prompts wearing the glasses to pretrain their **foundation models**, and say more data improved performance across users; Dave had a short 20-sentence calibration in the video. Preorders are open for the first **500 units**, with a $200 discount; they plan to ship in Q1 2027.",
+          "tier": "substance",
+          "data": [
+            [
+              "preorder batch",
+              "500 units"
+            ],
+            [
+              "discount",
+              "$200"
+            ],
+            [
+              "demo calibration",
+              "20 sentences"
+            ],
+            [
+              "planned shipping",
+              "Q1 2027"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 237,
+      "terms": [
+        "RF",
+        "EMG",
+        "foundation model",
+        "pretraining",
+        "cross-user generalization",
+        "calibration"
+      ],
+      "entities": [
+        "Subvocal",
+        "The Subvocal Company",
+        "Aarush",
+        "Arnav",
+        "YC",
+        "Georgia Tech",
+        "Wispr Flow",
+        "TreeHacks",
+        "AlterEgo",
+        "MIT Media Lab",
+        "Dave",
+        "Google",
+        "Apple Vision Pro",
+        "Flock",
+        "Even G2",
+        "AirPods",
+        "Signal",
+        "Pham Nuwen",
+        "Jane",
+        "Speaker for the Dead"
+      ],
+      "comments": [
+        {
+          "by": "vessenes",
+          "text": "Just preordered -- glasses request: there's no way to say it nicely, I have a big nose. With a high bridge. Many glasses are really tough to get properly placed; may I request you not give up on the pads w/metal adjusters that you have in the product photos? Don't let a designer take them away from you, us folks not one standard deviation from 'normal' noses will thank you. Second, how tough is…"
+        },
+        {
+          "by": "d1sxeyes",
+          "text": "One thing you might consider is actually telling people what it is on the homepage. Took me a fair bit of work to understand that this is effectively a pair of smart glasses. Maybe I could have figured that out from the video but for folks who can’t watch the video it’s quite hard to discover what you’re building."
+        },
+        {
+          "by": "sourpanda",
+          "text": "I think this is incredibly cool and straight out of a sci-fi novel! I think this is phenomenal for accessibility and for hands-free computing in general. I also agree with other comments that the website should have more detail on how it works, such as what you included in the post body. Amazing work guys!"
+        },
+        {
+          "by": "genxy",
+          "text": "Google wanted to put this tech into its phone, but then was convinced it was a bad idea due to privacy invasion. It could for instance correlate sexual arousal with any phone interaction (video chat, youtube, display ads, etc), giving google and advertisers the ability to make custom targeted ads for specific users, as it would \"know your type\". Where does inference occur? Does it work offline?"
+        },
+        {
+          "by": "growt",
+          "text": "If the tech is mostly in the glasses temples, I would prefer to have something that attaches to my existing glasses. I have prescription glasses and a big head, tried the Even G2 smart glasses and the available frames set just too small for me"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50335615,
+      "url": "https://www.theguardian.com/world/2026/nov/02/supermarket-freezers-across-europe-hit-by-second-suspected-cyber-attack",
+      "hn": "https://news.ycombinator.com/item?id=50335615",
+      "title": "Supermarket freezers across Europe hit by second suspected cyber-attack",
+      "time": 1793620213,
+      "points": 333,
+      "depth": [
+        {
+          "text": "**supermarket freezers** across Europe have been hit by a **second suspected cyber-attack**",
+          "tier": "simple"
+        },
+        {
+          "text": "A supplier said the systems hit last night were still using **default passwords** and were **not on a secure network**; it said the attack could have been prevented.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: one says remote access helps manage complex settings and energy use; the other says freezers should not be connected to the internet.",
+      "comment_count": 381,
+      "terms": [
+        "deadband",
+        "ICS",
+        "NAT-PMP",
+        "CG-NAT",
+        "APN",
+        "Shodan"
+      ],
+      "entities": [
+        "Danfoss",
+        "Hillphoenix",
+        "CircleK",
+        "Shodan",
+        "Good Times"
+      ],
+      "comments": [
+        {
+          "by": "chromaton",
+          "text": "As I mentioned in the thread regarding the previous attacks, I worked in a closely related field back in 2008-2009. One thing I see repeatedly brought up here in this discussion is \"Why can't we just set the refrigerator temperature with a knob and walk away?\" The problem is that these refrigerator cases are not as simple as your refrigerator at home. As a simple example, many systems allow you…"
+        },
+        {
+          "by": "fritzo",
+          "text": "Bless those hackers for firing a warning shot over our freezers, that we may take heed and secure our neonatal care units, stoplights, and air traffic controllers."
+        },
+        {
+          "by": "bedstefar",
+          "text": "I'm extrapolating a bit here based on Reddit hearsay, but I think this may have to do with rural stores having essentially consumer-grade internet routers connected to the mobile broadband network. Much of the coverage in Swedish media drives the point that only 4G-uplinked stores have been hit so far. I think that's unfortunate, because really it wouldn't have differed if these stores were…"
+        },
+        {
+          "by": "hackingonempty",
+          "text": "Back in 1995 this was so improbable it was one of the purported negative effects of the \"Good Times\" virus which was a parody of the virus warning e-mails that were being forwarded around at the time. Computers still can't give you Dutch elm disease, fortunately. > It will recalibrate your refrigerator's coolness setting so all your ice cream goes melty…"
+        },
+        {
+          "by": "rocqua",
+          "text": "Also hit a few smaller business in The Netherlands: https://nltimes.nl/2026/11/02/fridges-freezers-17-dutch-busi... With the following interesting quote from the supplier of the system: After that attack, Danfoss advised its Dutch clients on October 13 to disconnect their systems from the internet and ensure they only reconnect via a secure network. “Most stores took action at that time, but a…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50333339,
+      "url": "https://wikihack.netlify.app",
+      "hn": "https://news.ycombinator.com/item?id=50333339",
+      "title": "Show HN: Wikihack – HackerTube, but for Wikipedia articles mentioned on HN",
+      "time": 1793595990,
+      "points": 328,
+      "depth": [
+        {
+          "text": "someone made a **scrollable feed** of **Wikipedia articles** people mention on Hacker News",
+          "tier": "simple"
+        },
+        {
+          "text": "It scraped Wikipedia mentions on Hacker News and ranks them, with the **most frequently linked articles** at the top. The **Random feed** slightly favors those pages, and you can see where they were submitted or mentioned in **comments**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 102,
+      "terms": [],
+      "entities": [
+        "Wikihack",
+        "Wikipedia",
+        "Hacker News",
+        "Karpathy",
+        "HackerTube",
+        "Hackerbooks",
+        "BigQuery",
+        "Clickhouse",
+        "MostDiscussed.com",
+        "wikitok.io",
+        "LadybugDB",
+        "Netlify"
+      ],
+      "comments": [
+        {
+          "by": "comboy",
+          "text": "I'll skip you guys some time, hackerstuff - all media links, entities and people mentioned on HN, weighted by posters karma. We could even display them together sorted by the newest one, maybe with some associated comments."
+        },
+        {
+          "by": "freakynit",
+          "text": "We have a continuously updated, publicly accessible hackernews database in BigQuery, in case more of you folks are interested in building similar projects: https://console.cloud.google.com/marketplace/product/y-combi... Clickhouse equivalent, updated in real-time: https://play.clickhouse.com/play?user=play#U0VMRUNUIG1heCh0a... Relevant post: https://news.ycombinator.com/item?id=40644563 What's…"
+        },
+        {
+          "by": "Hackbraten",
+          "text": "Cool project! I’d appreciate if the site didn’t hijack my scroll wheel though. It currently doesn’t let me scroll through the page at my own speed, which is super annoying, plus it hides any scroll bar (which would have served as my escape hatch for scrolling)."
+        },
+        {
+          "by": "thasso",
+          "text": "I would just love it if the front page were full of \"Show HN: HackerFoo\" posts for two weeks now."
+        },
+        {
+          "by": "hidelooktropic",
+          "text": "I did this before it was cool\nEvery Wikipedia Page from HN's Top Front Page\nhttps://news.ycombinator.com/item?id=49500430"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50331957,
+      "url": "https://www.science.org/content/article/bones-may-release-proteins-slow-aging-and-extend-life-span",
+      "hn": "https://news.ycombinator.com/item?id=50331957",
+      "title": "Bones may release proteins that slow aging and extend life span",
+      "time": 1793583067,
+      "points": 307,
+      "depth": [
+        {
+          "text": "bones may release **proteins** that could **slow aging** and extend life span",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter quotes the team as extending **mouse lives by nearly 3 months** by **gently squeezing their leg bones**. The comments name piezo1 and pigment epithelium-derived factor (PEDF), while another says this **has not been demonstrated in humans**.",
+          "tier": "substance",
+          "data": [
+            [
+              "mouse lifespan extension",
+              "nearly 3 months"
+            ],
+            [
+              "human-year equivalent",
+              "about nine human years"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 120,
+      "terms": [
+        "piezo1",
+        "PEDF"
+      ],
+      "entities": [
+        "piezo1",
+        "PEDF",
+        "J.R.R. Tolkien",
+        "Lord of the Rings",
+        "Gollum",
+        "Jellyfin",
+        "Brian Johnson"
+      ],
+      "comments": [
+        {
+          "by": "armcat",
+          "text": "> the findings are not “a demonstration of a new antiaging treatment for people,” Regardless, every other study shows only positives of lifting and regular exercise, so just do it!"
+        },
+        {
+          "by": "thisisauserid",
+          "text": "Soon we will have the technology to become mice and take advantage of the infinite wonders of these discoveries."
+        },
+        {
+          "by": "evanjrowley",
+          "text": "In J.R.R. Tolkien's Lord of the Rings, Gollum ate bones and lived to be over 500 years. Coincidence?"
+        },
+        {
+          "by": "PowerElectronix",
+          "text": "It's always nice to get a new data point confirming that exercise and lifting is good your you, even better if it's through a new mechanism like this one."
+        },
+        {
+          "by": "Qem",
+          "text": "It's said cats purr to strenghten their bones. Perhaps the mechanism is related. It would be interesting to see if besides exercise, vibration can trigger it in humans as well, perhaps checking people that worked with pneumatic hammers or other vibration exposed workplaces."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50336518,
+      "url": "https://blog.mistys-internet.website/post/2026/10/29/if-you-love-a-website-back-it-up/",
+      "hn": "https://news.ycombinator.com/item?id=50336518",
+      "title": "If you love a website, back it up",
+      "time": 1793625935,
+      "points": 295,
+      "depth": [
+        {
+          "text": "someone explains how to **save websites** before they **disappear**, using tools anyone can try",
+          "tier": "simple"
+        },
+        {
+          "text": "The author recommends **ArchiveWeb.page** for pages you browse yourself, while **Browsertrix** crawls bigger sites. Saved archives can be replayed or shared as **WARC/WACZ files**; the author also suggests keeping several copies.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 72,
+      "terms": [
+        "WARC",
+        "WACZ",
+        "web crawler"
+      ],
+      "entities": [
+        "ArchiveWeb.page",
+        "Browsertrix",
+        "ReplayWeb.page",
+        "WARC",
+        "WACZ",
+        "Chrome",
+        "Internet Archive",
+        "teapuppies.com",
+        "Ochaken",
+        "Misty De Meo",
+        "SingleFile",
+        "ArchiveBox",
+        "Wayback Machine",
+        "Archive.org",
+        "linkwarden",
+        "Monolith",
+        "HTTrack",
+        "Obsidian Web Clipper",
+        "Zotero"
+      ],
+      "comments": [
+        {
+          "by": "drpfenderson",
+          "text": "Wholeheartedly agree. It's sad to slowly see the bitrot in my own bookmarks, trying to pull up important resources or media from only a few years ago only to hit a 404 or domain placeholder. And many times there is nothing on Archive.org or similar. That ArchiveWeb extension looks excellent for custom captures. Picking the pages and elements you want during capture is a great feature. For quicker…"
+        },
+        {
+          "by": "phaedrus",
+          "text": "This is timely for me, since a web forum I care about went offline, and I simultaneously discovered the Wayback Machine for whatever reason never crawled most of it. I asked Claude to try to put together a static site of what could be salvaged from various archives and other sources, but as miraculous as what AI can do these days, it can't restore data that is truly gone - so what it was able to…"
+        },
+        {
+          "by": "geye1234",
+          "text": "In 5 years, cloud LLMs may have largely replaced the open Internet as a source of information, with centralized control and ability to rewrite the past. Please, please buy books and keep them in good condition, and please archive websites with important information (assuming it's legal in your jurisdiction). There are still plenty of excellent sites and blogs around from the 2000s and even…"
+        },
+        {
+          "by": "federiconbo",
+          "text": "https://webvault.wanno.dev/"
+        },
+        {
+          "by": "ceroxylon",
+          "text": "I learned this the hard way by getting too casual with Angelfire keeping an old website running for 20 years after I stopped updating it. It had lots of photos that I hand-scanned from printed film, back in the day when it took a good bit of time to scan photos manually. The site was a running joke, where I would open it to show people that it still existed... until it didn't, and I couldn't find…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50315217,
+      "url": "https://www.fz-juelich.de/en/news/archive/press-release/2026/mystery-of-60-second-fluctuations-in-power-grids-solved",
+      "hn": "https://news.ycombinator.com/item?id=50315217",
+      "title": "Mystery of 60-Second Fluctuations in Power Grids Solved",
+      "time": 1793447627,
+      "points": 254,
+      "depth": [
+        {
+          "text": "someone traced **regular grid dips** to **big batteries** checking their charge every minute",
+          "tier": "simple"
+        },
+        {
+          "text": "At the Living Lab Energy Campus, researchers measured end devices at **80 locations** and found the same pattern wherever large-scale battery storage systems were used. One showed a **consumption spike** at each minute’s start; Dirk Witthaut says checks could be scheduled **randomly** instead.",
+          "tier": "substance",
+          "data": [
+            [
+              "measurement locations",
+              "80"
+            ],
+            [
+              "grid frequency dips",
+              "every 60 seconds"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 108,
+      "terms": [
+        "grid frequency",
+        "state of charge",
+        "API",
+        "thundering herd effect",
+        "cursor",
+        "streaming",
+        "water-hammer effect"
+      ],
+      "entities": [
+        "Dirk Witthaut",
+        "Forschungszentrum Jülich",
+        "Tennet Germany",
+        "University of Cologne",
+        "Karlsruhe Institute of Technology",
+        "Living Lab Energy Campus",
+        "Nature Energy"
+      ],
+      "comments": [
+        {
+          "by": "andrelaszlo",
+          "text": "Funny, similar patterns are super common in API traffic. A large spike at midnight UTC, a smaller one every hour, even smaller ones every 15 minutes, and a little bump every minute if your metrics have enough resolution.\nOf course, if someone calls your API every minute you should probably consider some kind of streaming, or at least include make the request cheap by requiring a cursor of some…"
+        },
+        {
+          "by": "manarth",
+          "text": "The paper has more details: https://www.nature.com/articles/s41560-026-02144-0"
+        },
+        {
+          "by": "schobi",
+          "text": "The press release is rather light on details. They found that it is every 60seconds (duh!) and generators (or such). So what exactly is it? (Make and model?) Seems like they did not find the exact manufacturer or the exact devices and were not able to change firmware then?"
+        },
+        {
+          "by": "qrios",
+          "text": "https://news.ycombinator.com/item?id=50314617"
+        },
+        {
+          "by": "Arn_Thor",
+          "text": "Excellent sleuthing. Witthaut these fellas we'd still be in the dark"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50339494,
+      "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
+      "hn": "https://news.ycombinator.com/item?id=50339494",
+      "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+      "time": 1793637629,
+      "points": 250,
+      "depth": [
+        {
+          "text": "Anthropic says its **internal AI use** is valued above employee pay at **retail prices**",
+          "tier": "simple"
+        },
+        {
+          "text": "In April, the monthly value of internal Claude use at prices Anthropic charges customers topped monthly employee compensation, **excluding stock awards**. That’s a valuation, not cash Anthropic actually spent on AI. By September, internal AI usage had surged **more than 250-fold** since January, and Claude wrote **more than 90% of the code** added to its software.",
+          "tier": "substance",
+          "data": [
+            [
+              "internal AI usage growth",
+              "more than 250-fold"
+            ],
+            [
+              "code written by Claude in September",
+              "more than 90%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: critics say comparing customer prices with employee compensation is a misleading measure; others say heavy internal use is expected when Anthropic dogfoods its own product.",
+      "comment_count": 202,
+      "terms": [
+        "AI tokens",
+        "dogfooding",
+        "stock awards",
+        "IPO filing",
+        "API"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude",
+        "Business Insider",
+        "Dario Amodei"
+      ],
+      "comments": [
+        {
+          "by": "hungryhobbit",
+          "text": ">There's an important distinction here. Anthropic isn't actually spending more cash on AI than salaries. It's valuing its internal AI consumption at retail prices. If virtually any other company in the world said \"we have internal AI servers and we let our employees use them\" ... the company would measure that as they would any other internal expenditure: by how much it costs them. You blow $50k…"
+        },
+        {
+          "by": "notfried",
+          "text": "It's kind of expected, no? If I was an Anthropic employee expected to dog-food the product and be on the frontier of usage, I'd probably be using Mythos all the time at the highest thinking level. And if I am not being metered, I'd probably do more stuff that I know are likely low yield since I am not worried about a quota. This would probably take my \"API-equivalent\" usage beyond the average…"
+        },
+        {
+          "by": "JohnMakin",
+          "text": "I'm not really sure I understand the excitement around this. It seems like the implication is that if retail price > employee salary, you are replacing employees with AI spend? Yet, anthropic's head count has nearly doubled since last year - so, in a company where nearly half of that head count is engineers, but claude is \"writing 90% of the code,\" what is everyone doing then? You would think, if…"
+        },
+        {
+          "by": "BigTTYGothGF",
+          "text": "> In March, I wrote about a new trend: Tech companies are starting to treat AI tokens (the main way to measure usage) as a fourth component of employee compensation, alongside salary, bonuses, and stock awards. There's a lot to unpack about this statement."
+        },
+        {
+          "by": "simonw",
+          "text": "In case anyone wants to see the original source, it's page 187 and 188 of the S-1: https://www.sec.gov/Archives/edgar/data/2130357/000162828026... Under the heading \"Claude is Accelerating Our Ability to Close the Loop\": > The expansion of our own use of Claude reflects this leverage directly. The value of our own internal Claude usage at list prices has grown by over 250 times from January 2026…"
+        }
+      ],
+      "image": "https://i.insider.com/6ae5023ed8cc18cf7950fbe3?width=1200&format=jpeg"
+    },
+    {
+      "id": 50337439,
+      "url": "https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html",
+      "hn": "https://news.ycombinator.com/item?id=50337439",
+      "title": "Anthropic reports $17B in Q3 revenue, commitments of $895B in revised S-1",
+      "time": 1793630325,
+      "points": 222,
+      "depth": [
+        {
+          "text": "Anthropic's revised IPO filing pairs **$17 billion** in quarterly revenue with **$895.4 billion** in committed spending",
+          "tier": "simple"
+        },
+        {
+          "text": "The filing puts nine-month revenue at **$33.24 billion**, but reports a **$104 billion** net loss, mostly due to the change in the fair value of convertible notes and derivative liabilities. It says substantially all of the **$895.4 billion** in purchase commitments and lease agreements is related to compute and infrastructure.",
+          "tier": "substance",
+          "data": [
+            [
+              "Q3 revenue",
+              "$17 billion"
+            ],
+            [
+              "committed spend",
+              "$895.4 billion"
+            ],
+            [
+              "nine-month revenue",
+              "$33.24 billion"
+            ],
+            [
+              "nine-month net loss",
+              "$104 billion"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: skeptics say the losses and commitments make a huge valuation hard to justify; others say growth is still so fast that a high valuation could make sense.",
+      "comment_count": 247,
+      "terms": [
+        "IPO",
+        "Form S-1",
+        "convertible notes",
+        "fair value",
+        "compute"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude",
+        "Dario Amodei",
+        "OpenAI",
+        "Amazon",
+        "Google",
+        "SpaceX",
+        "Microsoft",
+        "Alphabet",
+        "Nasdaq",
+        "Securities and Exchange Commission"
+      ],
+      "comments": [
+        {
+          "by": "cmiles8",
+          "text": "Q3 numbers are not what you want to see heading into an IPO. Again the issue is not is Anthropic an amazing growth story. Zero would debate that. The issue is this is a probably $200-300B company pretending it’s a $2T company. Add to that the insane amount of committed spend, a high interest rate environment which means they’ll pay a painful premium to patch cashflow gaps, and a likely “junk”…"
+        },
+        {
+          "by": "minimaxir",
+          "text": "From a financial analyst on Bluesky: https://bsky.app/profile/peark.es/post/3mzdkyxzzns2w > Okay so Q3 ARR at $67.8bn versus $46.2bn for Q2, +47% QoQ. Turns out tokenmaxxing's end over the summer slowed revenue growth versus an absolutely torrid 100%+ growth rate in Q1/Q2 but 46% sequential is still eye-popping > Operating margins (GAAP) went from 8% to -3$, with a -28.5% QoQ incremental…"
+        },
+        {
+          "by": "nonethewiser",
+          "text": "We desperately need to ground these discussions in actual numbers. This should help build some intuition and establish a baseline for what the $2T valuation means. If you buy at $2T Anthropic needs to be worth about $3T by 2030 for a normal market return. That's ~25x P/E and ~$120B/year of profit. That could be something like $400B of revenue at 30% net margins, $300B at 40%, or $600B at 20%. It…"
+        },
+        {
+          "by": "wongarsu",
+          "text": "Interesting. Their revenue has \"only\" gone up 47% in Q3, compared to doubling revenue in most previous quarters. Meanwhile their \"compute and infrastructure\" cost has increased by 77% compared to Q2 Maybe they tried too hard to get good Q2 numbers, making revenue happen earlier and expenses later, and that now makes Q3 look worse? Either way, this does not look great"
+        },
+        {
+          "by": "AJRF",
+          "text": "I like keeping an eye on OpenRouters view of the market:\nhttps://openrouter.ai/rankings#market-share Since the start of the year the market has shifted from 50/50 split (closed v open weights) to 30/70 (70% of usage they see through their platform - is now open weight) DeepSeek V4.1 Flash 1017 sees 5x the weekly token usage through OpenRouter than the closest closed weight model (GPT-6 Luna) Even…"
+        }
+      ],
+      "image": "https://image.cnbcfm.com/api/v1/image/108369526-1790698647709-gettyimages-2297195052-AFP_C9PK8G7.jpeg?v=1790698665&w=1920&h=1080"
+    },
+    {
+      "id": 50339397,
+      "url": "https://namedaisy.com/blog/boy-names-that-became-girl-names",
+      "hn": "https://news.ycombinator.com/item?id=50339397",
+      "title": "US boy names that became girl names and vice versa",
+      "time": 1793637276,
+      "points": 208,
+      "depth": [
+        {
+          "text": "people are looking at how some **US names** **switched** from boys to girls, and back again",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says the biggest change in either direction usually came from **girls**. Others point out that English and French **Jean** are different names with different pronunciations, and suggest a **famous person** might help a name flip.",
+          "tier": "substance",
+          "data": [
+            [
+              "names that moved toward girls",
+              "42"
+            ],
+            [
+              "driven mainly by an increase among girls",
+              "34"
+            ],
+            [
+              "names that moved toward boys",
+              "12"
+            ],
+            [
+              "shifted mainly because fewer girls were receiving them",
+              "9"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 230,
+      "terms": [
+        "WASM"
+      ],
+      "entities": [
+        "Jean",
+        "English",
+        "French"
+      ],
+      "comments": [
+        {
+          "by": "billyp-rva",
+          "text": "> Of the 42 names that moved toward girls, 34 were driven mainly by an increase among girls, rather than a decline among boys. > Surprisingly, the same pattern held in the opposite direction. Of the 12 names that moved toward boys, 9 shifted mainly because fewer girls were receiving them, rather than because more boys were. In other words, whichever way a name moved, the biggest change usually…"
+        },
+        {
+          "by": "ecshafer",
+          "text": "There are a few names I think are being confused. Jan, short for Janice is a female name, but Jan in Central / Eastern Europe as a form of John is masculine. Jean the female name and Jean the french male name are different."
+        },
+        {
+          "by": "Fnoord",
+          "text": "My biggest WTF on this (as a foreigner) was the late Lindsey Graham. I always knew Lindsey/Lindsay as a female name. Either way, peeking through the list, seems to me names which end with a vowel are usually feminine. However, there's a caveat: names end up shortened, and over time even those get shortened. 'Brit', 'Britney' for 'Brittany'. 'Gerry' or 'Geri' or 'Ger' for 'Gareth' (Dutch variant…"
+        },
+        {
+          "by": "petemc_",
+          "text": "There was a guy at my school named Hilary who got awful abuse for it. Always wondered why parents would do such a thing to a child."
+        },
+        {
+          "by": "isodev",
+          "text": "Maybe we can finally stop gendering names. Like… is your handle a “boy” handle or a “girl” handle?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50332163,
+      "url": "https://fosscomics.com/posts/13.%20BSD%20Unix%20Part%203%20-%20The%20Beginning%20of%20BSD%20Unix/",
+      "hn": "https://news.ycombinator.com/item?id=50332163",
+      "title": "F/OSS Comics #13: BSD Unix, Part 3 – The Beginning of BSD Unix",
+      "time": 1793584778,
+      "points": 205,
+      "depth": [
+        {
+          "text": "someone traced how **Berkeley's BSD** grew from **shared Unix tools** into a system for **research institutions**",
+          "tier": "simple"
+        },
+        {
+          "text": "**Bill Joy** bundled the Pascal system with ex, a line editor developed from em; early BSD was software to install on an existing Unix system, not a standalone operating system. Joy helped **Ozalp Babaoglu** integrate virtual-memory code into 32/V, and **3BSD** began shipping in December 1979.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 28,
+      "terms": [
+        "BSD",
+        "Unix",
+        "kernel",
+        "line editor",
+        "virtual memory",
+        "VAX",
+        "32/V",
+        "ARPANET",
+        "DARPA",
+        "C shell",
+        "feed reader",
+        "vector storage tube"
+      ],
+      "entities": [
+        "BSD",
+        "Unix",
+        "Bell Labs",
+        "Bill Joy",
+        "Ken Thompson",
+        "Chuck Haley",
+        "Pascal",
+        "ex",
+        "em",
+        "vi",
+        "C shell",
+        "2BSD",
+        "3BSD",
+        "32/V",
+        "VAX",
+        "Ozalp Babaoglu",
+        "Domenico Ferrari",
+        "Richard Fateman",
+        "Macsyma",
+        "Peter Kessler",
+        "Marshall Kirk McKusick",
+        "ARPANET",
+        "DARPA",
+        "MIT",
+        "FreeBSD",
+        "Joone Hur"
+      ],
+      "comments": [
+        {
+          "by": "kps",
+          "text": "https://fosscomics.com/posts/12.%20BSD%20Unix%20Part%202%20-... — “Coding's a lot more fun in visual mode.” Coding in visual mode would be no fun at all on a Tek 4014¹. It's a vector storage tube and can't selectively remove characters from the screen. Should have drawn an ADM-3A². ¹ https://w140.com/tekwiki/wiki/4014 ² https://terminals-wiki.org/wiki/index.php/File:Lear_Siegler_..."
+        },
+        {
+          "by": "JdeBP",
+          "text": "Marshall Kirk McKusick, mentioned in this comic, was still committing changes to FreeBSD as of last August: * https://cgit.freebsd.org/src/commit/sbin/restore?id=2cefae4c..."
+        },
+        {
+          "by": "alexfortin",
+          "text": "Looks nice, too bad though it doesn't expose any sort of RSS/Atom feed, if I can't add it to my feed reader I'll soon forget about it."
+        },
+        {
+          "by": "getfacl",
+          "text": "One of these days I need to write up my non-mythology version of the BSD story and dispel some of the popular retcons."
+        },
+        {
+          "by": "happosai",
+          "text": "A lot of people in fediverse would enjoy these. Consider creating an account on techub.social or any of the other tech/foss oriented mastodon instances."
+        }
+      ],
+      "image": "https://fosscomics.com/posts/13. BSD Unix Part 3 - The Beginning of BSD Unix/images/feature.png"
+    },
+    {
+      "id": 50334704,
+      "url": "https://syscall.sh/",
+      "hn": "https://news.ycombinator.com/item?id=50334704",
+      "title": "Show HN: I've updated my Linux System Call website and API",
+      "time": 1793611756,
+      "points": 190,
+      "depth": [
+        {
+          "text": "someone updated a **Linux system call** website and its **API**",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter wants the site to **link directly** to syscall numbers. Another says **x86_64 and x32** put the number in eax, while rax's upper 32 bits are ignored. A commenter says their **CLI** uses an embedded dataset and they may make it public.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 48,
+      "terms": [
+        "syscall",
+        "API",
+        "x86_64",
+        "x32",
+        "eax / rax",
+        "CLI",
+        "embedded dataset"
+      ],
+      "entities": [
+        "Linux",
+        "GCC",
+        "Chromium",
+        "C",
+        "POSIX",
+        "Haiku",
+        "ReactOS",
+        "NetBSD",
+        "antiX",
+        "MX Linux",
+        "Novell Netware"
+      ],
+      "comments": [
+        {
+          "by": "db48x",
+          "text": "It’s a side issue, but I’ve long thought that the kernel should duplicate every existing syscall that takes a null–terminated string by pointer with an otherwise identical syscall that takes the string by pointer, capacity, and length instead. It would be a huge boon to programs written in modern languages. I keep meaning to search the kernel mailing lists to see if the idea has been proposed…"
+        },
+        {
+          "by": "ozgrakkurt",
+          "text": "Would also recommend using commands like: echo '#include <sys/syscall.h>' | gcc -E -dM -xc - | grep -i \"read\" To get the real values on your PC to make sure. I had LLMs give wrong numbers or constant definitions several times but getting it to generate a command like this and seeing it for myself works every time. Also chromium docs has a table…"
+        },
+        {
+          "by": "bkallus",
+          "text": "On x86_64 and x32, the syscall number goes in eax, not rax. The upper 32 bits of rax are ignored and can be anything."
+        },
+        {
+          "by": "guitmz",
+          "text": "I also made a CLI for consulting the syscall API when I originally released the website. I think I can tidy up the code and make it public too. It uses a embedded dataset so it does not have to query the API endpoint all the time"
+        },
+        {
+          "by": "wg0",
+          "text": "This is really great resource, didn't know about it. But one question not related to the website above - why the syscalls vary per architecture if the linux API is the same? Or is it I am confusing it with the C standard library/POSIX and assuming that it should be the same everywhere?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50333877,
+      "url": "https://news.ycombinator.com/",
+      "hn": "https://news.ycombinator.com/item?id=50333877",
+      "title": "Show HN: HackerHack – HackerBooks but for Posts Posted on HN",
+      "time": 1793602780,
+      "points": 180,
+      "depth": [
+        {
+          "text": "someone made **HackerHack**, a HackerBooks-style project for **posts posted on Hacker News**",
+          "tier": "simple"
+        },
+        {
+          "text": "The comments mostly turn it into a **joke about Hacker News itself**: one asks for an **aggregator of every Hacker* aggregator**, while another expected links to **threads frequently mentioned on HN**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 25,
+      "terms": [
+        "aggregator",
+        "SSO",
+        "HN"
+      ],
+      "entities": [
+        "HackerHack",
+        "HackerBooks",
+        "HackerHype",
+        "HackerTube",
+        "Wikihack",
+        "HackerSlop",
+        "Hackerfatigue.ai",
+        "Hacker News"
+      ],
+      "comments": [
+        {
+          "by": "moretti",
+          "text": "Can someone build this? Show HN: HackerHype - an aggregator for every Hacker* aggregator HackerHype\n├── HackerTube → videos recommended on HN\n├── HackerBooks → books mentioned on HN\n├── Wikihack → Wikipedia articles mentioned on HN\n├── HackerHack → posts posted on HN\n└── ..."
+        },
+        {
+          "by": "tiarafawn",
+          "text": "duplicate: https://news.ycombinator.com/"
+        },
+        {
+          "by": "grzracz",
+          "text": "Love the seamless integration with HackerNews"
+        },
+        {
+          "by": "Uncle_Brumpus",
+          "text": "I just logged on for the first time in a couple days and saw a grey link. Hm, I wonder what link I've visited in the past that is gaining traction now? Glad to see I was ahead of the curve. Having used this tool for a while, it's really spectacular."
+        },
+        {
+          "by": "Cthulhu_",
+          "text": "Man this reminds me of this website I used to frequent."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50314617,
+      "url": "https://www.nature.com/articles/s41560-026-02144-0",
+      "hn": "https://news.ycombinator.com/item?id=50314617",
+      "title": "One-minute frequency disturbances from synchronization in power systems",
+      "time": 1793441648,
+      "points": 178,
+      "depth": [
+        {
+          "text": "the post looks at **one-minute frequency disturbances** linked to **synchronization in power systems**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says the observed disturbance is **1.5 mHz** and guesses synchronized **UPS self-tests** could cause it. Others point to minute-based cron jobs, while one argues equipment may sync through **physical coupling** on the grid.",
+          "tier": "substance",
+          "data": [
+            [
+              "frequency disturbance",
+              "1.5 mHz"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some point to synchronized UPS tests or timed jobs; others doubt UPS tests alone and suggest broader scheduling effects or physical coupling on the grid.",
+      "comment_count": 58,
+      "terms": [
+        "UPS",
+        "NTP",
+        "crontab",
+        "FFT",
+        "thundering herd",
+        "injection locking",
+        "co-prime"
+      ],
+      "entities": [
+        "APC",
+        "GitHub Actions",
+        "Nature Energy",
+        "NTP",
+        "Van Jacobsen"
+      ],
+      "comments": [
+        {
+          "by": "schiffern",
+          "text": "The corresponding concept in gears is to avoid meshing two gears unless the number of teeth are co-prime, because this will cause uneven wear patterns. If the tooth counts are coprime, then each tooth will contact every tooth on the other gear the same number of times, effectively \"wear leveling\" the teeth. In this instance, one fix is to fire the timer every 59.XXX seconds, so it will naturally…"
+        },
+        {
+          "by": "kazinator",
+          "text": "I'm skeptical that this one minute jitter period is solely attributable to one minute timers in power inverter equipment. It's likely the net scale effect of all cron-like scheduling of actions in everything with a microprocessor. All the long-term scheduling that is done with minute precision (i.e. seconds field is implicitly :00) regardless of its individual period. Like if one device is…"
+        },
+        {
+          "by": "mlichvar",
+          "text": "Maybe too many things are started from crontab. Public NTP servers observe large spikes in traffic on minute marks due to admins putting ntpdate in crontab instead of running a proper NTP service."
+        },
+        {
+          "by": "geerlingguy",
+          "text": "I know my older APC UPSes do weekly self tests, but I guess newer equipment does more frequent self testing? And of course they're all internet-connected meaning clocks are within a few hundred ms of each other. It also made me think about how many GitHub Actions I have that kick off on Sunday morning at a specific time. I try to vary the time/day for those jobs but I'm guessing there are enough…"
+        },
+        {
+          "by": "bob1029",
+          "text": "I'm not sure I agree with the conclusion that this is merely caused by UPS system control logic. That is an extreme amount of coordination across a lot of makes, models and configurations. The FFT indicates this is a periodic signal, not a once a day or week thing. It's happening continuously all day every day. I don't know of any UPS systems that perform tests with this kind of regularity. In…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50326609,
+      "url": "https://www.theregister.com/networks/2026/11/01/landline-phones-will-switch-off-across-britland-in-100-days-no-extensions-openreach/5306673",
+      "hn": "https://news.ycombinator.com/item?id=50326609",
+      "title": "Landline phones will switch off across Britland in 100 days, no extensions",
+      "time": 1793547229,
+      "points": 176,
+      "depth": [
+        {
+          "text": "Openreach says **Britain's old landline network** shuts down in January, affecting anyone still **using it**",
+          "tier": "simple"
+        },
+        {
+          "text": "Legacy public switched telephone network service is due to be retired on **January 31, 2027**. The change can affect **point-of-sale terminals**, fire and security alarms, and personal care alarms, not just phone calls. Customers without fiber may get **SOTAP for Analog**, which lets them keep using their old phone line.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters see digital phone service as a power and reliability risk in emergencies; others say it has worked fine day to day and can be as reliable as POTS.",
+      "comment_count": 154,
+      "terms": [
+        "PSTN",
+        "SOTAP for Analog",
+        "POTS",
+        "QoS",
+        "Digital Voice",
+        "VoIP"
+      ],
+      "entities": [
+        "Openreach",
+        "BT Group",
+        "Paolo Pescatore",
+        "PP Foresight",
+        "The Register",
+        "Caroline Abrahams",
+        "Age UK",
+        "James Lilley",
+        "SOTAP for Analog",
+        "Digital Voice"
+      ],
+      "comments": [
+        {
+          "by": "jordanb",
+          "text": "An interesting component of the switching off of POTS is that the quality of service requirements are different. POTS is regulated to require the phone company to maintain a certain legal quality of service with negative consequences for failing to do so. Meanwhile, cell phone and VOIP services are \"best effort.\" The phone company put a pretty huge amount of effort into maintaining QoS (Lily…"
+        },
+        {
+          "by": "gumby",
+          "text": "The biggest problems is power. The phone company power the POTS line — you can even make an emergency call from an abandoned building with no electrical service (and no phone subscription) if you find a jack and plug in. Under those huge central office buildings are huge banks of -48 V batteries which are required to provide a week of power (or was it two in the US? I can’t remember). Now you’ll…"
+        },
+        {
+          "by": "zh3",
+          "text": "Somewhat rural here (well 1/4 mile from an A road). We were supposed to be switched to digital several times, been sent a pile of hubs and extender devices and have had several letters about the switchover date. Latest one was we are apparently \"switched over\" a month ago, except that it actually turns out to be SOTAP [1] and everything works exactly as before (including CLI, using the old 300…"
+        },
+        {
+          "by": "lambdaone",
+          "text": "There are a couple of quirky services that have been introduced as part of this. One is SOGEA (Single Order Generic Ethernet Access), effectively FTTC internet access without the baseband POTS (Plain Old Telephone Service) facility, so that you still connect via copper but now need a router at home to connect your POTS phone.[0] There is also SOTAP, which is the same but for ADSL. The other is…"
+        },
+        {
+          "by": "userbinator",
+          "text": "Replacing simple dedicated circuits with \"best effort\" highly complex packet-switched networks? I bet it's a great money-maker for those involved in the work, but a huge step backwards for reliability. The move is part of a wider government scheme to get the UK onto all-digital high-speed networks running on fiber-optic infrastructure, and the legacy phone service – with its dependency on copper…"
+        }
+      ],
+      "image": "https://image.theregister.com/255679.jpg?imageId=255679&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
+    },
+    {
+      "id": 50340369,
+      "url": "https://blog.alxgsv.com/let-me-check/",
+      "hn": "https://news.ycombinator.com/item?id=50340369",
+      "title": "Let Me Ch...",
+      "time": 1793640800,
+      "points": 172,
+      "depth": [
+        {
+          "text": "a developer follows an **agent's bug theory**, then **dies** before learning whether three flower orders vanished",
+          "tier": "simple"
+        },
+        {
+          "text": "The agent says the **server and warehouse** are about a minute out of sync, so some orders look sent but never arrive. The narrator is struck before checking the queue, and the story leaves **the collision's cause** and **the orders' fate** unknown.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some read it as LLM-written, pointing to clipped phrasing and clichés; others praised it as a breath of fresh air after Claude prose.",
+      "comment_count": 62,
+      "terms": [
+        "agent",
+        "desynchronization",
+        "queue",
+        "LLM"
+      ],
+      "entities": [
+        "Alex Gusev",
+        "Claude",
+        "Gosha",
+        "Kimi Räikkönen",
+        "Pangram",
+        "Spitz",
+        "Sveta",
+        "Tanya",
+        "Ulyana",
+        "Uploadcare",
+        "Vestigius Terrentius"
+      ],
+      "comments": [
+        {
+          "by": "ethanj8011",
+          "text": "Scored 100% on a Pangram of the first few paragraphs. Things that alerted me. (Note that any one of these things could be fine and explainable, but so many in short order makes it obvious). > And it rang. We both did our jobs. What is the human's job here? Waking up? > the whole morning minute by minute, as if someone had laid it out on a table and labeled every piece. Labored metaphor that…"
+        },
+        {
+          "by": "justonceokay",
+          "text": "Living in a totally conceptual space all day has major downsides on your ability to enjoy your meat suit. Meat suit firmware can only apply updates when you are offline. A lot of us are walking around with severe security vulnerabilities and runtime bugs."
+        },
+        {
+          "by": "CobrastanJorji",
+          "text": "> Will it rain over forty percent of the city? Will it rain for forty percent of the day? Or does the speaker just not know and is too shy to say so? Unrelated, but to answer his question, it's the probability that a random spot in the covered area will get at least a smidge of rain at some point in the covered time period. A 10% chance of rain can mean either that the forecaster is 100% sure…"
+        },
+        {
+          "by": "aeontech",
+          "text": "Reading this story after staring at Claude-prose for weeks is a breath of fresh air, honestly. Thank you for sharing."
+        },
+        {
+          "by": "rsyring",
+          "text": "> About the author...Once, at the Nürburgring, he nearly collided with Kimi Räikkönen. Anyone else here interested in road course tracking (HPDE) or racing? If so, where do you go? I'm in the US Midwest and have been to Putnam Park, NCM, mid-Ohio, Pitt Race (private now...sad), and Ozark's."
+        }
+      ],
+      "image": "https://blog.alxgsv.com/og-image.png"
+    },
+    {
+      "id": 50339221,
+      "url": "https://p.migdal.pl/warsaw-vibe-voxel/",
+      "hn": "https://news.ycombinator.com/item?id=50339221",
+      "title": "Show HN: Warsaw in voxels – An interactive 3D map of the city centre",
+      "time": 1793636726,
+      "points": 171,
+      "depth": [
+        {
+          "text": "someone made an interactive **voxel map** of **central Warsaw** where you can change weather and time",
+          "tier": "simple"
+        },
+        {
+          "text": "You can change the **date, time of day, and weather**, explore, or click a pedestrian to control them. The map uses **OpenStreetMap** for buildings, streets, sidewalks, and tram tracks, plus LiDAR for building heights and trees and aerial imagery for colours. It’s **open-source**, and the creator invites people to reuse it.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some report performance so poor the map is unusable; another says it was responsive on an Android tablet.",
+      "comment_count": 31,
+      "terms": [
+        "voxel",
+        "LiDAR",
+        "OpenStreetMap",
+        "FPS",
+        "GPU",
+        "profiler",
+        "rendering artifacts"
+      ],
+      "entities": [
+        "Minecraft",
+        "MagicaVoxel",
+        "Dungeon Keeper",
+        "OpenStreetMap",
+        "GUGiK",
+        "Geoportal",
+        "warsaw-vibe-voxel",
+        "Streets of Prague",
+        "GTA2",
+        "AMD",
+        "Linux",
+        "Windows 11",
+        "Chrome",
+        "Safari",
+        "Android"
+      ],
+      "comments": [
+        {
+          "by": "stared",
+          "text": "There are quite a few such other projects, e.g. Streets of Prague ( https://beta.streetsofprague.com/ ), were one can explore Prague in a top-down GTA2-like mode, based on real data."
+        },
+        {
+          "by": "_whiteCaps_",
+          "text": "I really enjoyed visiting Warsaw, I went there for work a few years ago and didn't really know what to expect. If you ever have the chance, I highly recommend the Warsaw Uprising Museum."
+        },
+        {
+          "by": "MisterTea",
+          "text": "Super neat project but I am getting fractional (<1 FPS) frame rates in FF on Linux. Granted, this is an older AMD PC and certainly no power house but it used to run actual Minecraft just fine."
+        },
+        {
+          "by": "jesse__",
+          "text": "It's almost unusably slow on my laptop. 3080ti mobile, windows 11, chrome. I opened the profiler and the update appears to be fast enough; roughly hitting 30fps, but there are massive gaps between updates and the actual frame time seems to be about 120ms. Other than that, neat :)"
+        },
+        {
+          "by": "sixtyj",
+          "text": "Mobile version reloads, imho it is too heavy for Safari. Well done. As default weather - I would prefer sunny day instead of rain…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50331784,
+      "url": "https://trigger.dev/blog/security-incident-nov-2026",
+      "hn": "https://news.ycombinator.com/item?id=50331784",
+      "title": "Trigger.dev customer environment variables exposed",
+      "time": 1793581756,
+      "points": 161,
+      "depth": [
+        {
+          "text": "Trigger.dev says an attacker got **unauthorized access** to **environment variables** for some organizations",
+          "tier": "simple"
+        },
+        {
+          "text": "The company says it **blocked the exploit** and identified **exposure across a subset of organizations**. It emailed all impacted account owners with steps to mitigate.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 85,
+      "terms": [
+        "environment variables",
+        "exploit",
+        "hyperscalers",
+        "attack surface area",
+        "SaaS"
+      ],
+      "entities": [
+        "Trigger.dev",
+        "API Hero Ltd.",
+        "Northflank",
+        "railway",
+        "Tailscale",
+        "inngest",
+        "Claude Code",
+        "Zoom",
+        "Nextjs",
+        "Elixir"
+      ],
+      "comments": [
+        {
+          "by": "dangoodmanUT",
+          "text": "As I mentioned in the Northflank breach post: Unfortunately for infra startups, I think we're going to see a convergence back to hyperscalers as a result of incidents like this and railway. There's no amount of \"nicer to use\" that can replace security, at least certainly when selling to enterprises Also, a trick i've started doing is encrypting my env vars, then hard-code the decryption key in…"
+        },
+        {
+          "by": "corvad",
+          "text": "I am sorry, this is \"Resolved\"? How can they even consider marking this resolved in any situation. Yeah we exposed your env vars but we told you about it over email so it's all good... We dont know how or to what extend though."
+        },
+        {
+          "by": "theturtletalks",
+          "text": "The biggest case for building bespoke software is that you drop your attack surface area and it’s not as lucrative to hack one person. Don’t even expose it to the internet if you don’t need to and just run Tailscale."
+        },
+        {
+          "by": "castis",
+          "text": "As far as my personal life is concerned, I honestly don't think I'm going to 'build and deploy' anything to any SaaS that isn't directly in my control for a while."
+        },
+        {
+          "by": "iampims",
+          "text": "It’s bold to set status page incident to resolved."
+        }
+      ],
+      "image": "https://trigger.dev/blog/generic/incident-report-generic.png"
+    },
+    {
+      "id": 50325454,
+      "url": "https://arxiv.org/abs/2610.39302",
+      "hn": "https://news.ycombinator.com/item?id=50325454",
+      "title": "Proving and improving the Platonic Representation Hypothesis with JEPAs",
+      "time": 1793539489,
+      "points": 158,
+      "depth": [
+        {
+          "text": "a paper says **good views** can help AI models learn the **same representation**",
+          "tier": "simple"
+        },
+        {
+          "text": "The proof assumes positive pairs are two observations of one scene; the learned representations can differ by one rotation. The authors say **good views** need **42 times fewer training samples** than next-token prediction for the same alignment. A 109M-parameter text JEPA aligned with DINOv2 and CLIP's image encoders better than every language model they evaluated, up to 72B parameters; on a pair-free benchmark, it beat every zero-shot accuracy reported with language models up to 8B parameters, with 64% against at most 56% top-5 on ImageNet-100.",
+          "tier": "substance",
+          "data": [
+            [
+              "training samples for same alignment",
+              "42 times fewer"
+            ],
+            [
+              "text JEPA size",
+              "109M parameters"
+            ],
+            [
+              "largest language model in alignment comparison",
+              "up to 72B parameters"
+            ],
+            [
+              "language models in zero-shot comparison",
+              "up to 8B parameters"
+            ],
+            [
+              "ImageNet-100 result",
+              "64% against at most 56% top-5"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters like the lower sample requirements; skeptics wonder whether the theorem captures the broader hypothesis or only a narrower version with strong assumptions.",
+      "comment_count": 81,
+      "terms": [
+        "Platonic Representation Hypothesis",
+        "JEPAs",
+        "modality",
+        "positive pair",
+        "representation",
+        "next-token prediction",
+        "zero-shot",
+        "rotation"
+      ],
+      "entities": [
+        "Randall Balestriero",
+        "Yann LeCun",
+        "Platonic Representation Hypothesis",
+        "JEPA",
+        "DINOv2",
+        "CLIP",
+        "ImageNet-100"
+      ],
+      "comments": [
+        {
+          "by": "Lerc",
+          "text": "I'm not sure how I feel about the Platonic Representation Hypothesis. In some ways it seems like it should be profound, but part of me thinks it might just be saying 'There is an optimal way to perform dimensionality reduction and as things get bigger it is easier to appoximate'"
+        },
+        {
+          "by": "kooi",
+          "text": "> 33M-parameter text JEPA reaches .125 on the PRH paper’s benchmark, against .034 on Flickr captions, level with Qwen2.5-3B and -7B. They need fewer samples. Im bullish on jepa models. Success of autoregressive next token prediction feels like a stroke of luck."
+        },
+        {
+          "by": "addag",
+          "text": "I haven't read this paper in details, but I have read papers about the platonic hypothesis in the past. Usually one of their weakness is about the design an experiment proving that \"neural networks converges towards the same latent space when scaling\". Usually authors are effectively proving a subset of the hypothesis, that can be explained by the size of the model and the transfer learning part…"
+        },
+        {
+          "by": "abbassix",
+          "text": "For those reading the paper: the positives of a good-view JEPA are described as “two observations of one scene,” and yet the paper also states that “A good-view JEPA's positives are (g_m(z, ν), g_m(z′, ν′)) with (z, z′) ∼ π and independent nuisances.” My question is: why doesn't “two observations of one scene” mean that both observations share the same underlying world state (z) and differ only…"
+        },
+        {
+          "by": "theptip",
+          "text": "I guess the fundamental question would be, for what domains can we pretrain with “good views”? Part of the magic of next token prediction is it works to extract intelligence from the unstructured web corpus. Can JEPA formulate a similar scale training set of “good views”?"
+        }
+      ],
+      "image": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png"
+    },
+    {
+      "id": 50337725,
+      "url": "https://www.quora.com/Why-are-Soviet-mathematics-physics-textbooks-so-insanely-hardcore-in-comparison-to-US-textbooks/answer/Scott-Miller-307?share=1",
+      "hn": "https://news.ycombinator.com/item?id=50337725",
+      "title": "Why are Soviet math textbooks so hardcore in comparison to US textbooks? (2017)",
+      "time": 1793631675,
+      "points": 159,
+      "depth": [
+        {
+          "text": "people disagree on whether **Soviet math** was tougher or just taught at a **different pace**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter describes a **demanding common curriculum** that identified and supported exceptional students; another says the apparent gap may reflect **different pacing**, with Canadian math easier early and harder later.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say Soviet math was genuinely harder; others say it only seemed that way because the material was paced differently.",
+      "comment_count": 220,
+      "terms": [
+        "bell curve",
+        "math circle",
+        "combinatorics"
+      ],
+      "entities": [
+        "Math Circle",
+        "AMS",
+        "CMU",
+        "New Math",
+        "Piskunov",
+        "Spivak",
+        "Xerox PARC",
+        "Alto",
+        "Smalltalk",
+        "CoCom"
+      ],
+      "comments": [
+        {
+          "by": "rdtsc",
+          "text": "At least for up to high school level, it's because they didn't care if a good part of the class fell behind. If little Jimmy (well, little Ivan, I guess) can't understand how algebra works and is getting only 1s and 2s, it's too bad, he'll have to repeat the whole grade again I guess. The whole \"maybe math is too hard and we should just make it optional or dumb it down\" that I have seen in US was…"
+        },
+        {
+          "by": "vintermann",
+          "text": "My sister went to high school in the US for a year some time in the early nineties - we are Norwegian. She got perfect grades and some kind of award for American history. She explained it by saying, US textbooks wanted you to succeed. Whereas she was used to the Norwegian ones which were only out to rank you (on a bell curve - the grading guidelines didn't have set requirement, but instead told…"
+        },
+        {
+          "by": "hackermailman",
+          "text": "Bulgarian/USSR Math Circles https://en.wikipedia.org/wiki/Math_circle and problems they work on are in this book https://bookstore.ams.org/mcl-25 Regular school you would solve problems in combinatorics, algebra and geometry together in class by offering small ideas or strategies then trying each one to point out what works and doesn't work. You do enough of these everyday in class then reasoning…"
+        },
+        {
+          "by": "jcarrano",
+          "text": "I had a copy of \"Differential and Integral Calculus\" by Piskunov that belonged to my father. The prologue said it was used in the curricula of technical schools in the USSR. I used to think about that fact a lot and tried to imagine what those Soviet technical schools would be like. There was a lot of content there that I did not see in any of the seven math courses we had at uni."
+        },
+        {
+          "by": "effed3",
+          "text": "I remember a little story from the 70s or 80s about the different approaches taken in America and the USSR toward major engineering challenges: In America, they buy or build a $1 billion supercomputer and hire 5 engineers/programmers. In the USSR, they take an old, eight-story Tsarist-era building in Moscow—with a view of the Neva—and fill it with 1,000 mathematicians armed with slide rules…"
+        }
+      ],
+      "image": null
+    },
+    {
       "id": 50330939,
       "url": "https://fortune.com/article/why-did-us-workers-just-take-home-smallest-share-of-capital-since-1947-lowest-ever-recorded/",
       "hn": "https://news.ycombinator.com/item?id=50330939",
@@ -816,6 +2266,113 @@
     }
   ],
   "glossary": {
+    "weights": "Stored values a trained network uses when it works out what to produce.",
+    "gradient descent": "A way to improve a model by making changes guided by how wrong its answers are.",
+    "forward pass": "One run through a model to produce an answer, rather than building it one piece at a time.",
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
+    "CVSS": "Common Vulnerability Scoring System: a scale people use to rate how serious a security flaw is.",
+    "kernel": "A small program that carries out a calculation on a computer's graphics chip or processor.",
+    "TCP": "Transmission Control Protocol: rules for sending data between computers in order and checking that it arrived.",
+    "LTS": "Long-term support: a release its makers promise to support for an extended period.",
+    "root": "The highest level of control on a computer, with permission to change system settings and files.",
+    "exploit": "A method for using a software flaw to make a system do something it shouldn't.",
+    "denial of service": "An attack or flaw that makes a service unavailable to people trying to use it.",
+    "RCE": "Remote Code Execution: a flaw that lets an attacker make a computer run their commands from somewhere else.",
+    "EPSS": "Exploit Prediction Scoring System: a score estimating how likely a software flaw is to be used in an attack.",
+    "RF": "Radio frequency: radio waves used to carry signals through the air.",
+    "EMG": "Electromyography: a way to read the electrical signals muscles produce.",
+    "foundation model": "A model trained before use that can be adapted to handle different jobs.",
+    "pretraining": "Training a computer program on examples before using it for a particular job.",
+    "cross-user generalization": "Whether something trained on some people can still work for other people.",
+    "calibration": "How well a model’s confidence matches how often its choices are actually right.",
+    "deadband": "The gap between the temperature where a compressor switches off and where it switches back on.",
+    "ICS": "Industrial Control System: equipment used to monitor or control machines.",
+    "NAT-PMP": "Network Address Translation Port Mapping Protocol: a router feature that can let a device be reached from the internet.",
+    "CG-NAT": "Carrier-Grade Network Address Translation: a mobile provider shares one public internet address among many customers.",
+    "APN": "Access Point Name: a setting that tells a phone or router how to connect to a mobile network.",
+    "Shodan": "A search engine people use to find devices connected to the internet.",
+    "piezo1": "A protein that helps cells detect physical pressure.",
+    "PEDF": "Pigment epithelium-derived factor: a protein the comments name as one of the proteins in question.",
+    "WARC": "Web ARChive: a file format for saving a website, including details of what the browser asked for and what the site sent back.",
+    "WACZ": "Web Archive Collection Zipped: a package that bundles saved web pages with extra information in one file.",
+    "web crawler": "A program that automatically visits websites so a search engine can find their pages.",
+    "grid frequency": "The rhythm of electricity on the grid; sudden changes can signal that supply and demand are out of balance.",
+    "state of charge": "A battery’s current fill level—how much stored electricity it has left.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "thundering herd effect": "When lots of devices or programs all make demands at the same time, creating one big rush.",
+    "cursor": "A marker that tells a service where to continue when you ask for the next batch of results.",
+    "streaming": "Handling data as it arrives, rather than repeatedly asking for more.",
+    "water-hammer effect": "A jolt in pipes when moving water is stopped suddenly; the comment compares it with an abrupt change in power demand.",
+    "AI tokens": "Small pieces of text an AI works with; the amount available limits how much it can handle.",
+    "dogfooding": "Using a product yourself while building it, to see how it works in real life.",
+    "stock awards": "Part of a worker's pay given as company shares rather than cash.",
+    "IPO filing": "Paperwork a company submits when preparing to sell shares to the public.",
+    "IPO": "Initial Public Offering: when a company first offers its shares for the public to buy.",
+    "Form S-1": "A document filed with regulators that lays out a company's finances and risks before it sells shares publicly.",
+    "convertible notes": "Loans that can later turn into company shares.",
+    "fair value": "An estimate of what something is worth at a particular time.",
+    "compute": "The processing power computers use to run AI or other software.",
+    "WASM": "WebAssembly: a way for an app to run plug-ins written in other programming languages.",
+    "BSD": "Berkeley Software Distribution: Berkeley's bundle of software for existing Unix systems.",
+    "Unix": "An operating system; the article's BSD software was installed on a Unix system.",
+    "line editor": "A text editor that works on one line at a time, rather than showing and changing a whole page.",
+    "virtual memory": "A way for a computer to use disk space so a program can work with more memory than is physically installed.",
+    "VAX": "A computer that Berkeley used for the Unix and virtual-memory work described here.",
+    "32/V": "Bell Labs' version of Unix for the VAX mentioned in the article.",
+    "ARPANET": "Advanced Research Projects Agency Network: A network that linked research institutions.",
+    "DARPA": "Defense Advanced Research Projects Agency: The organization that funded research institutions linked by ARPANET.",
+    "C shell": "A program that lets people type commands to Unix.",
+    "feed reader": "An app that collects updates from websites you follow.",
+    "vector storage tube": "A kind of display that keeps a drawn image on screen; the commenter says it cannot erase individual characters.",
+    "syscall": "A request a program sends to the operating system to do something on its behalf.",
+    "x86_64": "A family of processor designs used in many 64-bit computers.",
+    "x32": "A Linux program interface for x86-64 computers that uses 32-bit pointers.",
+    "eax / rax": "Names for places inside a processor where a program can keep values.",
+    "CLI": "Command-Line Interface: a way to control a computer by typing commands instead of clicking buttons.",
+    "embedded dataset": "A collection of information included with a program, so it can use that information without fetching it elsewhere each time.",
+    "aggregator": "A tool or site that gathers items from different places into one place.",
+    "SSO": "Single Sign-On: a way to use one sign-in for several work services.",
+    "HN": "Short for Hacker News, the site where people share and discuss links.",
+    "UPS": "Uninterruptible Power Supply: backup equipment that can keep devices running when mains power is interrupted.",
+    "NTP": "Network Time Protocol: a way for computers to keep their clocks aligned.",
+    "crontab": "A computer schedule that tells it when to run tasks.",
+    "FFT": "Fast Fourier transform: a way to find which repeating frequencies make up a signal.",
+    "thundering herd": "When many systems all try to do the same thing at once, causing a sudden surge.",
+    "injection locking": "When one repeating signal nudges another into matching its timing.",
+    "co-prime": "Two whole numbers that share no factor except one.",
+    "PSTN": "Public Switched Telephone Network: the old phone network that carries calls over traditional landlines.",
+    "SOTAP for Analog": "Single Order Transitional Access Product: equipment at the local phone exchange that lets some customers keep using an old phone line.",
+    "POTS": "Plain Old Telephone Service: a name for the traditional landline phone service.",
+    "QoS": "Quality of Service: rules about how reliably a phone company must keep its service working.",
+    "Digital Voice": "A landline service that sends calls through your broadband router.",
+    "VoIP": "Voice over Internet Protocol: phone calls carried over an internet connection.",
+    "agent": "An AI system that can take steps and use tools to get a task done, not just answer questions.",
+    "desynchronization": "When two systems are out of step, so they can disagree about whether something has happened.",
+    "queue": "A list of work waiting its turn.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "voxel": "A small block used to build a 3D image, like a pixel with depth.",
+    "LiDAR": "Light Detection and Ranging: a way to measure distances by sending out laser light and seeing what comes back.",
+    "OpenStreetMap": "A shared map that people can edit with details about roads and other places.",
+    "FPS": "Frames per second: how many images are shown each second to make movement look smooth.",
+    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "profiler": "A tool that helps a developer see which parts of a program are taking the most time.",
+    "rendering artifacts": "Odd visual glitches that appear when a computer draws an image.",
+    "environment variables": "Settings passed to a program when it starts, which can change how it behaves.",
+    "hyperscalers": "Very large companies that run huge data centres and rent computing power to other businesses.",
+    "attack surface area": "All the parts of a system an attacker might be able to reach.",
+    "SaaS": "Software as a Service: software you access over the internet, with the provider running it for you.",
+    "Platonic Representation Hypothesis": "A claim that models trained on different kinds of information can eventually form the same internal picture of the world.",
+    "JEPAs": "Joint-Embedding Predictive Architectures: AI systems trained to predict what one view of something tells you about another.",
+    "modality": "The way a task is done or experienced.",
+    "positive pair": "Two examples used together in training because they are treated as related.",
+    "representation": "The way an AI internally organizes information so it can use it.",
+    "next-token prediction": "Training an AI to guess what word or piece comes next in a sequence.",
+    "zero-shot": "Trying a task or using a robot without first giving the model examples for that exact task or robot.",
+    "rotation": "A mathematical turn that changes how information is oriented while keeping its relationships the same.",
+    "bell curve": "A grading approach that compares students with one another instead of using the same fixed standard for everyone.",
+    "math circle": "A group where students work through math problems together and share ideas or strategies.",
+    "combinatorics": "A branch of math about counting the different ways things can be arranged or chosen.",
     "labor share": "The portion of a country's economic output that workers receive as wages and salaries.",
     "GDP": "Gross Domestic Product: the total value of what a country's economy produces.",
     "capital": "Things people or companies own and use to make income, like equipment or ownership in a business.",
@@ -826,11 +2383,9 @@
     "HDMI": "High-Definition Multimedia Interface: the cable connection that carries picture and sound from one device to a screen.",
     "Ethernet": "A wired way for devices to connect to a network, often using a cable.",
     "rooting": "Getting deeper control of a device than its maker normally allows.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "serialization anomaly": "A database mistake where simultaneous changes produce a result that should not be possible.",
     "foreign key": "A database rule that prevents a record from pointing to something that isn't there.",
     "planner": "A part of a database that chooses how to find or change the requested data.",
-    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
     "S&P 493": "The article's label for the broader group it compares with the Mag 7.",
     "profit margin": "The part of a company's sales left after paying its costs.",
     "revenue per worker": "A company's revenue divided by how many people work there.",
@@ -844,11 +2399,9 @@
     "SPF": "Sender Policy Framework: a way for a domain to say which mail servers are allowed to send email for it.",
     "DKIM": "DomainKeys Identified Mail: a way for an email to carry proof about who sent it.",
     "DMARC": "Domain-based Message Authentication, Reporting, and Conformance: rules for checking whether email claiming to come from a domain is genuine.",
-    "SaaS": "Software as a Service: software you access over the internet, with the provider running it for you.",
     "clean-room reimplementation": "A way to build a compatible product using public information and new code, rather than copying the original.",
     "drop-in replacement": "A new tool designed to take an old one’s place without users changing how they use it.",
     "self-hosted": "Running a service on a computer you control rather than relying on someone else's.",
-    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
     "SDK": "Software Development Kit: tools a company provides so people can make apps for its device.",
     "deregulate": "To remove or loosen rules that govern an industry.",
     "data-brokers": "Businesses that collect information about people and use it to make decisions or provide it to others.",
