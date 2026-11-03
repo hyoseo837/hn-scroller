@@ -1,0 +1,1391 @@
+{
+  "date": "2026-11-03",
+  "cards": [
+    {
+      "id": 50341462,
+      "url": "https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432",
+      "hn": "https://news.ycombinator.com/item?id=50341462",
+      "title": "Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks",
+      "time": 1793644778,
+      "points": 439,
+      "depth": [
+        {
+          "text": "Ubuntu still hasn't shipped a **kernel fix** for a critical Linux flaw, leaving several LTS releases **exposed**",
+          "tier": "simple"
+        },
+        {
+          "text": "Ubuntu has no patched kernels for **22.04, 24.04, or 26.04**, despite the flaw's **CVSS 9.8** rating, and hasn't given an **ETA**. The article says internet-facing and multi-tenant systems using those LTS kernels remain exposed while administrators weigh staying put, trying out-of-tree mitigations, or moving workloads to patched kernels.",
+          "tier": "substance",
+          "data": [
+            [
+              "CVSS score",
+              "9.8"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say the risk is blown out of proportion and mitigations exist; others say the missing patch has shaken their faith in Ubuntu.",
+      "comment_count": 127,
+      "terms": [
+        "CVE",
+        "CVSS",
+        "LTS",
+        "kernel",
+        "multi-tenant",
+        "out-of-tree mitigation",
+        "RCE"
+      ],
+      "entities": [
+        "Ubuntu",
+        "Linux",
+        "CVE-2026-98432",
+        "Debian",
+        "RHEL",
+        "iptables",
+        "nftables",
+        "Freenode",
+        "Gentoo",
+        "HardenedBSD",
+        "grsecurity"
+      ],
+      "comments": [
+        {
+          "by": "debinguy",
+          "text": "I find it odd that no public discussions are highlighting that iptables or nftables can drop this before the kernel CVE is exploitable by a U32 drop rule in raw PREROUTING... sudo iptables -t raw -I PREROUTING -p tcp -m u32 ! --u32 \"0>>24&0x0F=5\" -j DROP"
+        },
+        {
+          "by": "c0l0",
+          "text": "It's rather uninteresting to note, once again, that Ubuntu has decided to do this. I would like to know the (official, if any - unofficial/speculative otherwise) reason WHY they have not. It does not seem that complicated to patch, and kernel upgrades are a dime a dozen these days. So what is making them delay a fix for so long?"
+        },
+        {
+          "by": "harry8",
+          "text": "Question: Every consumer router-wirelessAP I've seen runs linux. I never see security upgrades for the kernels they use. Not one. Not ever. Is this something that should be a cause for concern? Even if you don't run a consumer-grade tplink, netgear, asus, whatever router yourself. Update:\nThe context which I should have said is that I think\nLLMs are giving script kids nation state level tools and…"
+        },
+        {
+          "by": "majorchord",
+          "text": "They also don't provide any mitigation possibilities or instructions... RHEL has one method here: https://access.redhat.com/security/vulnerabilities/RHSB-2026... However they also claim the mitigation \"reduces exposure to this vulnerability but cannot fully prevent it\", without elaborating on what that means or how it would be possible... I've also not seen anyone else make this claim."
+        },
+        {
+          "by": "gnabgib",
+          "text": "Discussion (842 points, 422 comments) https://news.ycombinator.com/item?id=50337608"
+        }
+      ],
+      "image": "https://freenode.net/media/og-default.png"
+    },
+    {
+      "id": 50344919,
+      "url": "https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/",
+      "hn": "https://news.ycombinator.com/item?id=50344919",
+      "title": "The SEC Should Block Anthropic's IPO to Protect the Public",
+      "time": 1793658647,
+      "points": 301,
+      "depth": [
+        {
+          "text": "someone wants the **SEC** to block **Anthropic’s IPO** until its finances are audited",
+          "tier": "simple"
+        },
+        {
+          "text": "Its filing shows **at least $582 billion** in non-cancelable commitments to five companies, while its 2026 results **haven’t been audited**. The author says the SEC should wait for **two consecutive quarters** of audited statements and fuller disclosure of those commitments.",
+          "tier": "substance",
+          "data": [
+            [
+              "non-cancelable commitments to five companies",
+              "at least $582 billion"
+            ]
+          ]
+        }
+      ],
+      "camps": "Some commenters say an audit or brief delay would address the disclosure issue; others say the SEC should ensure visibility, not decide whether Anthropic is a good investment.",
+      "comment_count": 230,
+      "terms": [
+        "IPO",
+        "SEC",
+        "non-cancelable spending commitments",
+        "registration statement",
+        "audited financial statements",
+        "index fund"
+      ],
+      "entities": [
+        "Anthropic",
+        "SEC",
+        "Amazon",
+        "AMD",
+        "Broadcom",
+        "Google",
+        "Microsoft",
+        "Meta",
+        "OpenAI",
+        "SpaceX",
+        "Dario Amodei",
+        "Matt Scherer",
+        "Maya Jenkins",
+        "Open Markets Institute",
+        "Americans for Financial Reform Education Fund",
+        "Tech Policy Press"
+      ],
+      "comments": [
+        {
+          "by": "marsten",
+          "text": "The SEC's job isn't to adjudicate on whether Anthropic is a good or bad bet for investors. Its job is to ensure that investors have adequate visibility, and then get out of the way. It would be VERY BAD if we gave politicians arbitrary veto power over who IPOs and who doesn't. The threat of corruption should be obvious."
+        },
+        {
+          "by": "titanomachy",
+          "text": "> the number of Americans using AI at work fell significantly between the summers of 2025 (46%) and 2026 (33%). Surprising. I couldn't find the study they're citing, and they didn't include a link. Anecdotally, my friends across various industries (tech, finance, medicine, scientific research) are all using AI more heavily as time goes on."
+        },
+        {
+          "by": "cowlevel",
+          "text": "The SEC doesn't exist to play favourites. If Anthropic has broken a law they can be blocked for that. If not, then it would be unfair to them to block them for things that other companies with IPOs have done. Live by market primacy, die by market primacy."
+        },
+        {
+          "by": "stingraycharles",
+          "text": "If the SEC allowed the SpaceX IPO they most certainly will allow the Anthropic IPO. From my point of view, the Anthropic IPO is a much more genuine one than the shenanigans that were going on with SpaceX, yet we’re all investing into that through ETFs as well. Additionally, some ETFs have built in protections to rule out businesses that are not yet profitable (like SpaceX and Anthropic), which I…"
+        },
+        {
+          "by": "stockresearcher",
+          "text": "There’s plenty of argument about how if a company has an IPO then they are, by definition, part of the market. And if you bought an index fund that means to represent a part of the market that this company is in, then that company should be in the index fund. You had lots of choices, you made this choice, and you can always change your mind. Do we really need to have the government step in to…"
+        }
+      ],
+      "image": "https://cdn.sanity.io/images/3tzzh18d/production/07bfadd5db5c963aa461d36b3f5bfa4a34c6f335-1200x675.png"
+    },
+    {
+      "id": 50344181,
+      "url": "https://electrek.co/2026/11/02/byd-sold-more-evs-last-month-than-the-us-did-all-quarter/",
+      "hn": "https://news.ycombinator.com/item?id=50344181",
+      "title": "BYD sold more EVs last month than the US did all quarter",
+      "time": 1793655529,
+      "points": 257,
+      "depth": [
+        {
+          "text": "BYD sold more **electric cars** in one month than the US sold in a **whole quarter**",
+          "tier": "simple"
+        },
+        {
+          "text": "In October, BYD sold **305,743 battery electric vehicles**, up **37%** year over year. That topped the **just over 262,500** EVs sold in the US across the third quarter.",
+          "tier": "substance",
+          "data": [
+            [
+              "BYD battery electric vehicles sold in October",
+              "305,743"
+            ],
+            [
+              "BYD EV sales growth year over year",
+              "37%"
+            ],
+            [
+              "US EVs sold in the third quarter",
+              "just over 262,500"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say the comparison is misleading because the US EV market is on life support; others say China’s big, growing market and BYD’s cheap, innovative cars explain the scale.",
+      "comment_count": 268,
+      "terms": [
+        "NEV",
+        "PHEV",
+        "ICE"
+      ],
+      "entities": [
+        "BYD",
+        "Kelley Blue Book",
+        "Peter Johnson"
+      ],
+      "comments": [
+        {
+          "by": "paxy",
+          "text": "Comparing it to the US isn’t really meaningful considering the EV market here is on life support. Federal subsidies were eliminated. Funding for charging infrastructure and battery manufacturing was rolled back. ICE emission regulations were repealed. Individual states were barred from enforcing their own standards. EVs are down to 6% share of new vehicles sold. Most domestic manufacturers have…"
+        },
+        {
+          "by": "diath",
+          "text": "I've been in a few BYDs as a passenger, I actually cannot fathom people spending money on them considering how low/cheap quality the interiors are. Like those garbage thin fake leather seats will have to be replaced within a year of use tops. Oh and also we broke the trunk's bedding by putting a mere 40kg bag in it, it just straight up collapsed."
+        },
+        {
+          "by": "Haven880",
+          "text": "China already outsold ICE cars than USA by volume. If you factor in ppp, China car market value crush USA. And now they are selling EVs, hybrids, and even farm-relatedachinery and vehicles crushing Deere. If you visit ASEAN, Africa, South America, and even Australia, Chinese cars everywhere. I grew up during Japanese dominant era, and then SKorea. Today Chinese cars everywhere even more dominant…"
+        },
+        {
+          "by": "ryan_glass",
+          "text": "It will be interesting to see how these cars perform over years and decades. One of the major cost saving mechanisms BYD uses is lumping components together. An issue with one part of the drive train means the whole drive train may need to be replaced. The battery pack being part of the chassis means a small accident could become a write-off. Initial cost savings at manufacture will be passed on…"
+        },
+        {
+          "by": "reactordev",
+          "text": "The west doesn’t want to move forward and instead are doubling down on fossil fuel energy. It’s so sad. Car manufacturers have succeeded in lobbying out change and making your vehicle a subscription."
+        }
+      ],
+      "image": "https://electrek.co/wp-content/uploads/sites/3/2026/11/BYD-EV-sales-October-record.jpeg?quality=82&strip=all&resize=1200,628"
+    },
+    {
+      "id": 50338728,
+      "url": null,
+      "hn": "https://news.ycombinator.com/item?id=50338728",
+      "title": "Ask HN: Who is hiring? (November 2026)",
+      "time": 1793635297,
+      "points": 208,
+      "depth": [
+        {
+          "text": "companies are posting **tech openings** here, from **remote infrastructure jobs** to **onsite founding-engineer roles**",
+          "tier": "simple"
+        },
+        {
+          "text": "**Fly.io** lists networking, infrastructure operations, and fullstack roles. **Kanurra** is hiring **engineer #1** onsite in New York and asks applicants to share something they built. Posters must be part of the hiring company and actively filling the role.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 163,
+      "terms": [
+        "DevOps",
+        "fullstack",
+        "founding engineer"
+      ],
+      "entities": [
+        "Fly.io",
+        "Kanurra"
+      ],
+      "comments": [
+        {
+          "by": "spiksla",
+          "text": "Odoo | Software Developer | Hybrid (Belgium, 3 days/week) | Full-time | Visa + €10k Signing Bonus | https://www.odoo.com/r/4zN Odoo builds open-source business apps used by millions. We're hiring software developers to work on our Python/PostgreSQL backend, fast JS framework, mobile apps, website builder, and more. Why join us: - €10k signing bonus - Visa sponsorship + relocation support…"
+        },
+        {
+          "by": "m00dy",
+          "text": "Blockrotate | Senior Systems / Rust Engineer | Remote (US/EU timezones preferred) | Full-time | $130k - $170k + Equity Blockrotate builds low-latency copy-trading and execution infrastructure for Polymarket and prediction markets. Copy trading on prediction markets has strange market microstructure. Unlike deep perp DEXes (Binance, Hyperliquid), Polymarket orderbooks are bounded, often thin, and…"
+        },
+        {
+          "by": "phw",
+          "text": "Fly.io | REMOTE (multiple countries) | Full time | $190k USD + equity Hey folks, Fly.io is a developer-focused public cloud. We are currently hiring for three roles: * Networking Engineer: Proxy and Corrosion - https://fly.io/jobs/networking-engineer/ * Infrastructure Operations Engineer - https://fly.io/jobs/infra-engineer/ * Fullstack Engineer - https://fly.io/jobs/fullstack-engineer/ Here's…"
+        },
+        {
+          "by": "lucasrattz",
+          "text": "Splash Tech | DevOps Mid/Senior | Remote (LATAM and EU) | Full Time | https://splash.tech/ We're a small UK-based free-to-play gaming company with a distributed team, growing fast after recent success and scaling our backend platform. We’re looking for a DevOps engineer with 5+ years of experience. Most of the work is AWS-focused. You should have hands-on experience with: - AWS, particularly EKS…"
+        },
+        {
+          "by": "ppoptart",
+          "text": "Kanurra | Founding Engineer | New York, NY | ONSITE | $230K to $310K + equity | https://www.kanurra.com/careers/founding-engineer Every prescription filled on a health plan gets priced and paid at the pharmacy counter in seconds, passing through four or five companies, and the employer paying for it almost never sees what it cost. We're building the platform those claims are priced, paid and…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50344958,
+      "url": "https://www.regenerator1.com/p/anthropics-growth-just-flattened",
+      "hn": "https://news.ycombinator.com/item?id=50344958",
+      "title": "Anthropic's growth just flattened",
+      "time": 1793658800,
+      "points": 200,
+      "depth": [
+        {
+          "text": "an analysis says Anthropic's **revenue growth** may have slowed sharply, putting near-term **AI spending** under scrutiny",
+          "tier": "simple"
+        },
+        {
+          "text": "The article compares reported Q2 revenue of $11.6 billion with Q3's $16.8 billion: sequential growth fell from **$6.8B (141%)** to **$5.2B (45%)**. Using a reported $65 billion annualized revenue run-rate in July, it estimates average monthly growth eased from ~$760 million in Q2 to $580 million in Q3. A commenter counters with Q3 figures of **$16.96B**, up 47% quarter over quarter.",
+          "tier": "substance",
+          "data": [
+            [
+              "Q2 revenue (article)",
+              "$11.6 billion"
+            ],
+            [
+              "Q2 sequential increase",
+              "$6.8B"
+            ],
+            [
+              "Q2 sequential growth",
+              "141%"
+            ],
+            [
+              "Q3 revenue (article)",
+              "$16.8 billion"
+            ],
+            [
+              "Q3 sequential increase",
+              "$5.2B"
+            ],
+            [
+              "Q3 sequential growth",
+              "45%"
+            ],
+            [
+              "July annualized revenue",
+              "$65 billion"
+            ],
+            [
+              "Q2 average monthly growth estimate",
+              "~$760 million"
+            ],
+            [
+              "Q3 average monthly growth estimate",
+              "$580 million"
+            ],
+            [
+              "Q3 revenue (commenter-cited)",
+              "$16.96B"
+            ],
+            [
+              "Q3 quarter-over-quarter growth (commenter-cited)",
+              "47%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: the article's estimates point to a sharp slowdown; some commenters dispute “flattened,” citing Q3 growth of 47% quarter over quarter, while others suggest cheaper models or tighter usage may explain the change.",
+      "comment_count": 227,
+      "terms": [
+        "sequential growth",
+        "annualized revenue run-rate"
+      ],
+      "entities": [
+        "Anthropic",
+        "CoreWeave",
+        "The New York Times",
+        "Andrew Ross Sorkin",
+        "Lauren Hirsch",
+        "Sri Muppidi",
+        "DealBook",
+        "Regenerator"
+      ],
+      "comments": [
+        {
+          "by": "modeless",
+          "text": "Opus 5.5 came out right at the end of the quarter, September 22. I'm confident that it caused more usage growth since then. I'm sure there are a lot of people rooting for their IPO to fail but they are still clearly in the lead on coding and will continue to do well until someone definitively passes them."
+        },
+        {
+          "by": "subtlesoftware",
+          "text": "This piece was published in mid-October based on rumored numbers. Anthropic released their Q3 numbers today which show: - $16.96B in revenue Q3 - Up 47% quarter over quarter (Q2 was $11.6B) - Up >1000% year over year I wouldn't say their growth \"flattened\"? Their price drops in September dramatically increased Claude token consumption per OpenRouter Sources: https://www.anthropic.com/news/s1-sec…"
+        },
+        {
+          "by": "MisterMunchkin",
+          "text": "Everyone is really tightening usage now because of all the slopmaxers who burned millions of dollars of tokens and achieved nothing."
+        },
+        {
+          "by": "p1necone",
+          "text": "I know this is tech sector funny money and we do just disregard profit and judge companies on revenue alone, but the 5.5 models that just released are quite a bit cheaper than the 5.0 tier. I wouldn't really be surprised if better model efficiency was part of the reason for a revenue stall, but I would also expect their costs to have dropped a fair bit too (although I have no idea whether that…"
+        },
+        {
+          "by": "kubb",
+          "text": "It's fun to note that nobody mentions AGI in these threads anymore."
+        }
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!qfl2!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F68ef8665-4279-4a1d-b5d6-447d33f93edd_1206x748.png"
+    },
+    {
+      "id": 50339815,
+      "url": "https://blog.jsbarretto.com/post/laptop",
+      "hn": "https://news.ycombinator.com/item?id=50339815",
+      "title": "My Favourite Laptop",
+      "time": 1793638797,
+      "points": 188,
+      "depth": [
+        {
+          "text": "someone's **roughed-up Thinkpad** stays useful through **easy repairs**, long battery life, and cheap replacement parts",
+          "tier": "simple"
+        },
+        {
+          "text": "The author bought the X250 second-hand for **about £100** in 2018; it lasts **north of 10 hours** without a charge during casual work. **Replacement parts** retail cheaply on ebay, and it has 8 GB of RAM.",
+          "tier": "substance",
+          "data": [
+            [
+              "price",
+              "about £100"
+            ],
+            [
+              "battery life",
+              "north of 10 hours"
+            ],
+            [
+              "RAM",
+              "8 GB"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some prefer older, repairable laptops for cheap everyday use; others say newer machines can be worth it for speed or a smoother experience.",
+      "comment_count": 136,
+      "terms": [
+        "GUI",
+        "microkernel",
+        "RAM",
+        "M.2 SSD",
+        "systemd",
+        "daily driver",
+        "IPS",
+        "thin client",
+        "CPU",
+        "GPU"
+      ],
+      "entities": [
+        "Thinkpad X250",
+        "Endeavour OS",
+        "Arch Linux",
+        "Linux",
+        "systemd",
+        "ebay",
+        "MacBook Air M1",
+        "MacBook Pro",
+        "Apple",
+        "Dell Precision 7550",
+        "Dell",
+        "Lenovo",
+        "Intel",
+        "Thinkpad T480s",
+        "Thinkpad T60",
+        "Thinkpad T420s",
+        "Thinkpad T420",
+        "Fedora",
+        "Siemens Nixendorf Scenic Mobile 300",
+        "Windows NT 4.0",
+        "Samsung Chromebook",
+        "Walmart",
+        "IXL",
+        "OpenBSD",
+        "Thinkpad X260",
+        "Thinkpad X230",
+        "Thinkpad X270",
+        "Thinkpad X280",
+        "Fujitsu Lifebook",
+        "System76 Gazelle",
+        "Framework 13",
+        "Framework",
+        "AMD",
+        "Thinkpad T480",
+        "Coffee Lake"
+      ],
+      "comments": [
+        {
+          "by": "jasoneckert",
+          "text": "My daughter has the same laptop (I bought it for her a long time ago). When she brought it with her when visiting me in Canada from Australia this summer, she asked me to look at it because Win10 wouldn't let her in and she needed her files and pics. So, I booted a Fedora USB and backed up her files. When I asked her if she wanted me to install Fedora Workstation on it to continue using it, she…"
+        },
+        {
+          "by": "l5870uoo9y",
+          "text": "I originally bought my MacBook Air M1 just as a transitional computer because my old, incredibly expensive Intel MacBook Pro had been stolen, and I was waiting for a newer MacBook Pro model. But I grew so fond of the Air that I couldn't bring myself to part with it again. It's lightweight, has incredible performance (more powerful than the most powerful Intel-based Pros), the battery lasts a long…"
+        },
+        {
+          "by": "bityard",
+          "text": "My favorite laptop has consistently been the one that I can buy off the second-hand business surplus market for cheap, and has a plethora of replacement parts available on ebay. Up until the whole PC market got stupid about a year ago, anyway. My current daily driver is a Dell Precision 7550. It has a nice 15\" display, touchpad buttons with a middle-mouse button, USB-C + Thunderbolt. Keyboard is…"
+        },
+        {
+          "by": "Grombobulous",
+          "text": "I’m happy to see more pushback against consumer culture, and I’m happy this system meets the needs of the author. Of course, the other part of this are people who use computers to do much heavier workloads. There are a pretty large list of activities where every time you have some significant gain like ~50-300% performance gain, there may be legitimate justification to buy the new hardware. As a…"
+        },
+        {
+          "by": "ezst",
+          "text": "Reading about so many people daily-driving laptops built around a decade ago, if not more (which includes myself, happy owner of a T480s), and not suffering any major penalty in terms of overall usability and battery life, it really shows that the returns of having more CPU power/smaller lithography have been marginal for a very, very long time (CPUs haven't been an enabler for new use-cases/a…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50347683,
+      "url": "https://www.keepingup.com/benchmarks/net-worth/age-30-33",
+      "hn": "https://news.ycombinator.com/item?id=50347683",
+      "title": "Net worth for people aged 30–33 in the U.S.",
+      "time": 1793676506,
+      "points": 184,
+      "depth": [
+        {
+          "text": "someone made a **net-worth chart** for Americans aged 30–33, then added a **signup pitch**",
+          "tier": "simple"
+        },
+        {
+          "text": "The page puts the **median at $68,000** and the **top 10% cutoff at $440,000**. Those are modeled estimates from federal survey data; its seeded figures are **household-level**, combined for couples and high for a single person.",
+          "tier": "substance",
+          "data": [
+            [
+              "Median net worth",
+              "$68,000"
+            ],
+            [
+              "Top 10% starts",
+              "$440,000"
+            ],
+            [
+              "Upper quarter",
+              "$235,000"
+            ],
+            [
+              "Bottom 10%",
+              "−$5,500"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 90,
+      "terms": [
+        "net worth",
+        "median",
+        "top 10%",
+        "percentile",
+        "household-level",
+        "modeled estimate",
+        "microdata",
+        "SCF"
+      ],
+      "entities": [
+        "Keeping Up",
+        "Federal Reserve",
+        "BLS",
+        "Census",
+        "American Community Survey",
+        "Apple",
+        "Google",
+        "Zillow",
+        "Tesla",
+        "GPT"
+      ],
+      "comments": [
+        {
+          "by": "Fripplebubby",
+          "text": "I find this to be an incredibly irritating way to present this data. Why the obsession with finding out where I fall in the distribution? Why prompt me to sign up for email? Do you have anything to say, or is this like a BuzzFeed quiz?"
+        },
+        {
+          "by": "subtextminer",
+          "text": "I'm in Austin and money goes seriously far compared to the seven cities above it. There's a 2015-built home on Zillow for $199,000 1346 sq ft just 2 miles from the Tesla factory."
+        },
+        {
+          "by": "irjustin",
+          "text": "One thing it doens't do is account for cost of living for a given city. Sure it looks nice that NYC, SF is higher than everyone else but I'm sure there's a very large group living in LCL areas that have far less stress compared to the bigger cities when it comes to budgeting."
+        },
+        {
+          "by": "etothepii",
+          "text": "Are student loans excluded from this data? Can't imagine that the 10% line is only at -$10k in that scenario."
+        },
+        {
+          "by": "oefrha",
+          "text": "This is a generic comment of course, but anyone else feeling immediate distrust when data is presented in an obvious vibe design (I have \"built\" sites with that exact font combo and general vibe ffs). Ideally one should distrust any data on random websites to begin with, but at least my human psychology deducted many extra points here."
+        }
+      ],
+      "image": "https://www.keepingup.com/benchmarks/opengraph-image"
+    },
+    {
+      "id": 50346153,
+      "url": "https://finance.yahoo.com/markets/article/the-intel-stock-collapse-is-getting-worse--and-the-37-trillion-chip-rout-is-spreading-212154947.html",
+      "hn": "https://news.ycombinator.com/item?id=50346153",
+      "title": "Intel stock collapse worsens as $3.5T chip rout spreads",
+      "time": 1793664533,
+      "points": 186,
+      "depth": [
+        {
+          "text": "Intel kept **falling** as a wider **chip sell-off** dragged memory and storage stocks down too",
+          "tier": "simple"
+        },
+        {
+          "text": "Intel fell **about 9%** after its worst day since 1974, while chip and memory stocks lost **about $3.7 trillion** in market value since Oct. 6. Nvidia was down **about 16%** since Oct. 6, but held up better than most.",
+          "tier": "substance",
+          "data": [
+            [
+              "Intel daily drop",
+              "about 9%"
+            ],
+            [
+              "Chip and memory stocks’ market value lost since Oct. 6",
+              "about $3.7 trillion"
+            ],
+            [
+              "Nvidia decline since Oct. 6",
+              "about 16%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some blame Intel’s organizational decline; others call the sell-off temporary or say Intel cannot fail.",
+      "comment_count": 139,
+      "terms": [
+        "market value",
+        "share buybacks",
+        "midterm cycle"
+      ],
+      "entities": [
+        "Intel",
+        "Nvidia",
+        "Micron",
+        "Sandisk",
+        "Seagate",
+        "Western Digital",
+        "Marvell",
+        "AMD",
+        "Lumentum"
+      ],
+      "comments": [
+        {
+          "by": "anonymous908213",
+          "text": "Huh, I'm used to \"stock collapses\" headlines being a 2% daily fluctuation. Actually down 50% over the past month. But then again, up 50% over the past year. Sure is great when stocks of companies that are foundationally important to the world economy are being traded like meme stocks."
+        },
+        {
+          "by": "lnkdinsuxs",
+          "text": "Intel has lost its engineering culture and one day it will have to pay the ultimate price for letting it happen. I don't think that day is in 2026 but it's in the near future. What no one is talking about so far is how Intel used to be a strong engineering culture but then turned into an incestious den of bean counting MBAs executing HBS management best practices to maximize shareholder value…"
+        },
+        {
+          "by": "whatever1",
+          "text": "Intel, like Boeing cannot fail. If you believe they can, you better start searching for a bunker. Advanced chip manufacturing is so incredibly hard. The finance bozos are clueless, again."
+        },
+        {
+          "by": "paxy",
+          "text": "I really want to see how all the people freaking out at a 1.5% market \"rout\" will react when an actual correction happens."
+        },
+        {
+          "by": "Rapzid",
+          "text": "Temporary IMHO. This is a particularly volatile time with earnings and midterms colliding."
+        }
+      ],
+      "image": "https://s.yimg.com/lo/mysterio/api/20c071d47e1d29b6bcb68516712316fd79f4afbe9817d204b091e7acdade2c1f/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-11%2F1b2b2cbf-96e4-452f-9ea7-7917f40a6da2"
+    },
+    {
+      "id": 50342284,
+      "url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
+      "hn": "https://news.ycombinator.com/item?id=50342284",
+      "title": "Oracle files to sell $20B in new stock, bonds to finance AI buildout",
+      "time": 1793647657,
+      "points": 183,
+      "depth": [
+        {
+          "text": "Oracle plans to sell **stock and bonds** to pay for its **AI buildout**",
+          "tier": "simple"
+        },
+        {
+          "text": "The filing calls for **$10 billion in common stock** and **$10 billion in senior notes**. Shares tumbled 8.8% Monday, and Oracle expects to reach positive free cash flow in the second half of 2028.",
+          "tier": "substance",
+          "data": [
+            [
+              "total planned raise",
+              "$20 billion"
+            ],
+            [
+              "common stock",
+              "$10 billion"
+            ],
+            [
+              "senior notes",
+              "$10 billion"
+            ],
+            [
+              "shares tumbled Monday",
+              "8.8%"
+            ],
+            [
+              "positive free cash flow target",
+              "second half of 2028"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 163,
+      "terms": [
+        "hyperscaler",
+        "senior notes",
+        "free cash flow",
+        "credit default swaps",
+        "dilution",
+        "vendor financing"
+      ],
+      "entities": [
+        "Oracle",
+        "OpenAI",
+        "NVIDIA",
+        "Baird",
+        "UBS",
+        "Securities and Exchange Commission",
+        "S&P",
+        "S&P Global Market Intelligence",
+        "Dynasty Financial Partners",
+        "CNBC",
+        "Skydance",
+        "Broadcom",
+        "JavaScript",
+        "Rob Oliver",
+        "Karl Keirstead",
+        "Larry Ellison",
+        "Gavan Nolan",
+        "Pat Nerney",
+        "Seema Mody",
+        "Ari Levy"
+      ],
+      "comments": [
+        {
+          "by": "seatac76",
+          "text": "Things I hope for: - Oracle defaulting on its debt commitments. - Anti trust action into Skydance forcing a breakup. - Larry forced to cover the difference by selling family silver. - Lanai going back into the hands of the people of Hawaii. Just for the laughs and for forcing me to bear with some of the worst applications of all time."
+        },
+        {
+          "by": "flowerlad",
+          "text": "Oracle does not have any proprietary IP that OpenAI depends on. That means Oracle is providing commodity services to OpenAI. AI hardware is advancing rapidly. If NVIDIA's next generations deliver radically more tokens per watt and per dollar, an Oracle facility designed, financed, and contracted around an older GPU generation can be overtaken before it is fully online or fully monetized. That's a…"
+        },
+        {
+          "by": "Qiu_Zhanxuan",
+          "text": "A company that is purely in Denial, even doubling down at the risk of toppling the whole financial system should be placed under the financial equivalent of arrest and its leadership actually arrested. They're obviously playing with fire and it's alarming that no one's in the administration is batting an eye."
+        },
+        {
+          "by": "dcrazy",
+          "text": "Half of that would be in stocks, resulting in 2.5% dilution for shareholders at the current market cap. But the stock is down 8%."
+        },
+        {
+          "by": "Danox",
+          "text": "Oracle begging couldn’t happen to a nicer company, the only thing that can be said is bubble, bubble bubble…"
+        }
+      ],
+      "image": "https://image.cnbcfm.com/api/v1/image/108468745-1793103926982-gettyimages-2234722679-_73a3321_cmlbiuj4.jpeg?v=1793642583&w=1920&h=1080"
+    },
+    {
+      "id": 50340619,
+      "url": "https://www.nist.gov/news-events/news/2026/11/self-employed-solopreneur-nist-has-cybersecurity-guide-just-you",
+      "hn": "https://news.ycombinator.com/item?id=50340619",
+      "title": "Self-Employed? Solopreneur? NIST Has a Cybersecurity Guide Just for You",
+      "time": 1793641660,
+      "points": 183,
+      "depth": [
+        {
+          "text": "NIST made a **plain-language cybersecurity guide** for people running a **one-person business**",
+          "tier": "simple"
+        },
+        {
+          "text": "The guide turns the NIST Cybersecurity Framework into steps for a solo business, including **regular data backups**, **updated software** and changing devices’ default passwords. It also includes worksheets for tracking actions and examples featuring a lawyer, an artisan and a business consultant.",
+          "tier": "substance",
+          "data": [
+            [
+              "Small businesses in the solopreneur category",
+              "More than 28 million"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some appreciate the attempt to help small-business owners; others say the guide’s language and presentation still miss the nontechnical audience.",
+      "comment_count": 49,
+      "terms": [
+        "solopreneur",
+        "cybersecurity",
+        "NIST Cybersecurity Framework",
+        "default password"
+      ],
+      "entities": [
+        "NIST",
+        "NIST Cybersecurity Framework",
+        "Daniel Eliot",
+        "Small Business Cybersecurity: Non-Employer Firms"
+      ],
+      "comments": [
+        {
+          "by": "nomilk",
+          "text": "> written in lay language yet its title is: > Small Business Cybersecurity: Non-Employer Firms (NIST Cybersecurity White Paper 50) Small businesses don't identify as 'Non-Employer Firms', have no idea what 'NIST' is, most wouldn't know what a White Paper is, nor number 50. 'A Crash Course in Cybersecurity for Small Businesses' would be an improvement."
+        },
+        {
+          "by": "xvxvx",
+          "text": "‘a lay-language resource‘. IMO this misses the mark. Yes, it’s a decent attempt at simplifying cybersecurity, but if this is aimed at entry-level, non-technical people, it’s not gonna work. One of my earliest jobs was to redesign training materials for one of the worlds largest companies. I stripped the training to its core, the true basics, and started there. The results were remarkable. I feel…"
+        },
+        {
+          "by": "philosopherNoob",
+          "text": "This is my first time seeing “SI” in the wild. That is such a wrong term. It’s jargon in a place where it doesn’t belong. It’s a darn fancy algorithm and a cool tool. Putting it on a pedestal instead of grounding it to reality is not going to help anyone. My condolences to the authors."
+        },
+        {
+          "by": "grodriguez100",
+          "text": "“The publication is an update to what was previously titled Small Business Information Security: The Fundamentals (NISTIR 7621). While that publication was aimed at small businesses of varying sizes and covered the broader topic of information security, the revision is narrower in scope [...]” The original publication is now withdrawn and replaced with this new one, which targets self-employed…"
+        },
+        {
+          "by": "tkdb",
+          "text": "I'm not a security expert. Requests for comments from career security experts: is this any good?"
+        }
+      ],
+      "image": "https://www.nist.gov/sites/default/files/styles/social/public/images/2026/04/29/shutterstock_2477030163.jpg?itok=7zzPE_fG"
+    },
+    {
+      "id": 50346981,
+      "url": "https://hackertimes.ca/",
+      "hn": "https://news.ycombinator.com/item?id=50346981",
+      "title": "Show HN: Hacker Times, a New York Times-inspired version of Hacker News",
+      "time": 1793670814,
+      "points": 184,
+      "depth": [
+        {
+          "text": "someone made a **New York Times**-inspired version of **Hacker News**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says it gives **each story more information** but fits **fewer stories** than the HN homepage. Another says the layout makes links easier to browse.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 57,
+      "terms": [
+        "re-skin",
+        "high-density design"
+      ],
+      "entities": [
+        "Hacker Times",
+        "Hacker News",
+        "The New York Times"
+      ],
+      "comments": [
+        {
+          "by": "emaro",
+          "text": "I remember there was a similar project like this posted a while ago. Turns out there are multiple. Here are just a few (that are still online): A couple of months ago (so probably vibe-coded too): https://thefrontpage.dev/ https://times.hntrends.net/ https://hackernewstimes.com/ This one even from 6 years ago: https://www.wolfgangfaust.com/project/paper-hn/ (…"
+        },
+        {
+          "by": "omoikane",
+          "text": "> Masthead set in Manufacturing Consent I like the description for Manufacturing Consent font: https://fonts.google.com/specimen/Manufacturing+Consent/abou... https://github.com/google/fonts/blob/main/ofl/manufacturingc..."
+        },
+        {
+          "by": "danpalmer",
+          "text": "Isn't what people pay for with the NYT or other publications, the journalism and editing? Like, the UI isn't why people pay for it. Given that this seems to just be a re-skin, why a full site that updates hourly, instead of just a browser extension that rewrites the content in-place live?"
+        },
+        {
+          "by": "rectang",
+          "text": "Fun. I have a visceral dislike for the NYT, so the association is actually a negative, haha — but I could get over it. The tradeoff of the Hacker Times design is increased information for each story but lower density of stories compared to the HN homepage. The high-density design of the HN page is probably optimal for my habits, even though some of the user-submitted headlines are opaque enough…"
+        },
+        {
+          "by": "theodpHN",
+          "text": "Neat. To-do: Give HN the ONION treatment? :-) https://theonion.com/"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50337558,
+      "url": "https://blog.cloudflare.com/dns-targeted-zone-builds/",
+      "hn": "https://news.ycombinator.com/item?id=50337558",
+      "title": "We halved DNS build delay and cut memory use by 85%",
+      "time": 1793630848,
+      "points": 175,
+      "depth": [
+        {
+          "text": "Cloudflare changed how it updates **domain data**, using **less memory** and halving the wait for changes",
+          "tier": "simple"
+        },
+        {
+          "text": "The planner picks the **smallest safe build**, and the scheduler combines queued work for the same zone. **92.95% of builds** avoided rebuilding the complete zone; peak memory fell from 79 GiB to 12 GiB.",
+          "tier": "substance",
+          "data": [
+            [
+              "builds avoiding complete-zone rebuilds",
+              "92.95%"
+            ],
+            [
+              "peak memory reduction",
+              "85%"
+            ],
+            [
+              "median build completion delay",
+              "about 7.7 seconds to about 3.3 seconds"
+            ],
+            [
+              "largest p99 spike",
+              "14.6 minutes to 1.21 minutes"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 70,
+      "terms": [
+        "DNS",
+        "zone",
+        "targeted build",
+        "Kafka",
+        "Kafka partition",
+        "Quicksilver",
+        "p99"
+      ],
+      "entities": [
+        "Cloudflare",
+        "Zone Builder",
+        "Quicksilver",
+        "Kafka",
+        "DNS Kafka Aggregator"
+      ],
+      "comments": [
+        {
+          "by": "thephyber",
+          "text": "I have been wondering if the memory scarcity would lead to a desire to optimize software to be more efficient. Curious what the R&D / efficiency development ROI is on reducing memory footprint. I suppose we should both consider current ROI and near future ROI (as the price of memory will likely stay high for at least another 1-2 years)."
+        },
+        {
+          "by": "mhovd",
+          "text": "Cloudflare doesn't get enough credit for their series of overall great technical blog posts."
+        },
+        {
+          "by": "InsidiousWombat",
+          "text": "Isn't 700 changes a second like... really low, considering their scale and amount of domains they manage ?"
+        },
+        {
+          "by": "JulianPaul",
+          "text": "I'm very curious about the bugs (before vs. after relational) that come from an improvement like this over time"
+        },
+        {
+          "by": "likoya",
+          "text": "I used to use cloudflare dns, but the same cloudflare harassed me the entire day testing if I'm a robot. The harassment ended after I switched the dns server. See you never again, clouflare"
+        }
+      ],
+      "image": "https://blog.cloudflare.com/_emdash/api/media/file/01M6426V7J1FR4KZEYMQP555R0.01M6426VZJHB2XCKTQ39W2S71Z.png"
+    },
+    {
+      "id": 50337454,
+      "url": "https://www.bloomberg.com/news/features/2026-09-17/san-francisco-s-ai-wealth-boom-skirts-engineers-as-openai-anthropic-ipos-near",
+      "hn": "https://news.ycombinator.com/item?id=50337454",
+      "title": "Jobless tech workers are being left out of San Francisco's AI boom",
+      "time": 1793630405,
+      "points": 174,
+      "depth": [
+        {
+          "text": "San Francisco's **jobless tech workers** are being left out of the **AI boom**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter blames layoffs on companies putting free cash into **AI capex**; another says hiring is settling after the post-COVID rush. A quoted passage says Bay Area software-engineer demand fell **42%** since 2022 while AI-related IT and computer-science jobs rose **37%**; the commenter asks whether those jobs are just being rebranded.",
+          "tier": "substance",
+          "data": [
+            [
+              "fall in Bay Area software-engineer demand since 2022",
+              "42%"
+            ],
+            [
+              "rise in jobs tied to AI-related IT and computer science",
+              "37%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say AI spending and AI-assisted work are squeezing jobs; others say the market is settling after post-COVID overhiring, or that the story focuses too narrowly on ex-FAANG workers.",
+      "comment_count": 246,
+      "terms": [
+        "capex",
+        "H1B",
+        "offshoring",
+        "asynchronous work",
+        "equity"
+      ],
+      "entities": [
+        "Anthropic",
+        "Google",
+        "OpenAI",
+        "Lightcast",
+        "Bloomberg",
+        "JavaScript",
+        "Basem Istanbouli"
+      ],
+      "comments": [
+        {
+          "by": "Avicebron",
+          "text": "https://archive.ph/hTPql"
+        },
+        {
+          "by": "atleastoptimal",
+          "text": "I applied to Anthropic a few years ago but didn’t pass the bar on their coding test. I read recently that if I had been hired in that period, my equity would be worth over 40 million based on their current valuation (and i remained employed the entire time there) It’s hard to mentally reconcile that if I had performed better on a few coding tests a few years ago i would be 100x wealthier than I…"
+        },
+        {
+          "by": "mbgerring",
+          "text": "These layoffs are happening because the entire tech industry is sinking all of its free cash into AI capex. H1B abuse and offshoring have both existed for decades, and neither are the proximate cause for these layoffs. If you’re blaming immigrants for this, you are either doing so in bad faith, or you are embarrassingly gullible."
+        },
+        {
+          "by": "paxy",
+          "text": "Sure, but let’s not forget that ~90% of the Bay Area does not work in tech. They are all being left out of the AI boom, similar to how they were left out of every tech boom before it. Don’t see why we need to specifically weep for these ex-FAANG engineers because they couldn’t get into OpenAI or Anthropic."
+        },
+        {
+          "by": "tuveson",
+          "text": "> Demand for software engineers in the Bay Area has fallen 42% since 2022, according to Lightcast, a labor-market analytics firm. Jobs tied to AI-related IT and computer science, meanwhile, have jumped 37%. How much of this is just everything IT-related being rebranded as AI?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50345924,
+      "url": "https://openai.com/index/scaling-git-at-openai/",
+      "hn": "https://news.ycombinator.com/item?id=50345924",
+      "title": "Scaling Git at OpenAI",
+      "time": 1793663276,
+      "points": 177,
+      "depth": [
+        {
+          "text": "OpenAI is explaining how it’s **scaling Git** with its own source control tools",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter quotes the post: **Pando** was built with **Codex** in **10 weeks**, with one engineer designing its core and teams of agents implementing it. It began serving production traffic in April of this year as part of OpenAI’s larger source control management system.",
+          "tier": "substance",
+          "data": [
+            [
+              "time from kick-off to production",
+              "10 weeks"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some readers praise the detailed write-up and hope its ideas trickle down; others ask why OpenAI still uses Git at this scale or say the volume is a liability.",
+      "comment_count": 90,
+      "terms": [
+        "Git",
+        "source control",
+        "agent",
+        "monorepo",
+        "commit"
+      ],
+      "entities": [
+        "OpenAI",
+        "Git",
+        "Pando",
+        "Codex"
+      ],
+      "comments": [
+        {
+          "by": "usrme",
+          "text": "By my count, this OpenAI post is the fifth major article on the topic of scaling, with the previous four being: - Cursor: https://cursor.com/blog/git-at-any-scale - GitHub: https://github.blog/engineering/architecture-optimization/bu... - Anthropic: https://www.anthropic.com/research/redesigning-source-contro... - GitHub: https://github.blog/engineering/architecture-optimization/th... Maybe also…"
+        },
+        {
+          "by": "bigmadshoe",
+          "text": "Can anyone explain to me what this massive volume of code could actually be doing? They obviously have variations of model architectures, training infrastructure, serving infrastructure, and the source for their apps. Why would the volume that any of this be increasing exponentially? And what are all the engineers doing when (besides the model quality) their products don't seem to be changing…"
+        },
+        {
+          "by": "bob1029",
+          "text": "Why not use a completely different VCS topology if you are a gigantic trillion dollar behemoth? Why are we still using the \"distributed\" git concept as the basis for everything? Centralization is exactly what you want at this kind of scale. The most marginal participation from the server would make a huge difference. There is a reason game studios don't use git. It's not just about the large…"
+        },
+        {
+          "by": "paxy",
+          "text": "While I don't have any particular interest in the topic this is a great blog post. No AI in every second line, no needless marketing or hype. Just a bunch of engineers talking in their own voice about a topic in great detail with numbers, charts, visualizations."
+        },
+        {
+          "by": "springtimesun",
+          "text": "Is the increase in commits graph in percentages because it’s fewer than Anthropic’s rate? A case of commit envy? In all seriousness though I have enjoyed reading these posts. I will never work at this scale, but I like to read how different teams approach problems like this and I do wonder if some of these approaches will trickle down (or up?) into regular practice as everyone is committing more…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50338747,
+      "url": "https://posthog.com/blog/moving-off-duckdb",
+      "hn": "https://news.ycombinator.com/item?id=50338747",
+      "title": "Moving our warehouse off DuckDB",
+      "time": 1793635346,
+      "points": 171,
+      "depth": [
+        {
+          "text": "PostHog is **rebuilding its warehouse** after its old setup struggled with **complex customer queries**",
+          "tier": "simple"
+        },
+        {
+          "text": "They spent the last three months re-architecting after customers ran **more complex queries** than expected and the team had to add huge instances. When they moved off DuckLake, the warehouse held about 2 PB—roughly **1 trillion rows** and 15.3 million snapshots. They’ve rebuilt around their own flavor of Trino and an open table format, **HogLake**, which they’re testing at PostHog’s petabyte scale first.",
+          "tier": "substance",
+          "data": [
+            [
+              "warehouse size",
+              "about 2 PB"
+            ],
+            [
+              "rows",
+              "roughly 1 trillion rows"
+            ],
+            [
+              "snapshots",
+              "15.3 million"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 115,
+      "terms": [
+        "DuckDB",
+        "DuckLake",
+        "Trino",
+        "HogLake",
+        "lakehouse",
+        "catalog",
+        "snapshot",
+        "single-node",
+        "query optimizer",
+        "pgwire",
+        "TTL",
+        "fork"
+      ],
+      "entities": [
+        "PostHog",
+        "DuckDB",
+        "ClickHouse",
+        "DuckLake",
+        "Trino",
+        "HogLake",
+        "Postgres",
+        "dbt",
+        "S3",
+        "AWS",
+        "Kubernetes",
+        "Vertica",
+        "Iceberg",
+        "Quack",
+        "pgdog"
+      ],
+      "comments": [
+        {
+          "by": "Aurornis",
+          "text": "> Five months ago, we rebuilt our warehouse on DuckDB instead of ClickHoue They switched from ClickHouse to DuckDB five months ago, then switched from DuckDB to their own Trino derivative? The article then ends before saying if the new setup solved their problems. It’s great that we can now make these migrations with little downtime (I assume?) and try different things, but I wish we could have…"
+        },
+        {
+          "by": "0c3ca83",
+          "text": "Am I missing something here, or is the only technical detail in the post \"a trillion rows is a lot of data, maybe trying trinio will work this time\"? It feels like a lot of churn and not a lot of measurements or engineering."
+        },
+        {
+          "by": "bitpush",
+          "text": "> Five months ago, we rebuilt our warehouse [1] on DuckDB instead of ClickHouse. Why did they write this post if they had not even allowed things to settle. It sounds like someone wanted to claim victory (and promo?) https://posthog.com/blog/why-we-rebuilt-our-data-warehouse"
+        },
+        {
+          "by": "kwillets",
+          "text": "Sometimes a company just isn't able to manage a data warehouse; I've worked for a few. I even phone screened with this one but couldn't cover their crazy quilt of requirements; at that time they were also looking for someone to rewrite the clickhouse optimizer, and they were stuck trying to reshard their cluster, which should take an afternoon. I still like the company because their business prop…"
+        },
+        {
+          "by": "hasyimibhar",
+          "text": "I wonder if they have considered moving back to ClickHouse. ClickHouse Iceberg support has improved a lot over the past few months. You can easily run stateless ClickHouse on top of Iceberg. This solves the tenancy issue, and it can easily handle petabytes scale [1]. [1] https://clickhouse.com/blog/jump-trading-uses-clickhouse-wit..."
+        }
+      ],
+      "image": "https://res.cloudinary.com/dmukukwp6/image/upload/moving_off_duckdb_4c95538aac.png"
+    },
+    {
+      "id": 50335659,
+      "url": "https://en.wikipedia.org/wiki/Never_complain,_never_explain",
+      "hn": "https://news.ycombinator.com/item?id=50335659",
+      "title": "Never Complain, Never Explain",
+      "time": 1793620548,
+      "points": 163,
+      "depth": [
+        {
+          "text": "the royal family's **public relations strategy** was to **never complain, never explain**",
+          "tier": "simple"
+        },
+        {
+          "text": "The phrase is believed to have originated with **Benjamin Disraeli**, though John Morley attributed it to him and the saying is traced to Benjamin Jowett's **“Maxims for a Statesman.”** Charles and Diana **abandoned it** in the 1990s as the media landscape became less deferential and more aggressive.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some see it as useful PR for avoiding drama or criticism; others see it as propaganda, or say it is the opposite of how they live.",
+      "comment_count": 63,
+      "terms": [
+        "public relations",
+        "authorised biography",
+        "stakeholders"
+      ],
+      "entities": [
+        "British royal family",
+        "Benjamin Disraeli",
+        "John Morley",
+        "Benjamin Jowett",
+        "Robert Tuttle Morris",
+        "Walter Bagehot",
+        "Queen Victoria",
+        "Elizabeth Bowes-Lyon",
+        "Prince Albert, Duke of York",
+        "King George V",
+        "Queen Elizabeth II",
+        "Prince Charles",
+        "Diana, Princess of Wales",
+        "Jonathan Dimbleby",
+        "Andrew Morton",
+        "Martin Bashir",
+        "Prince Harry",
+        "Anderson Cooper",
+        "Buckingham Palace",
+        "Camilla",
+        "Zsa Zsa Gabor",
+        "Simon Le Bon",
+        "Kate Moss",
+        "Raine Spencer",
+        "Anthony Robbins",
+        "Winston Churchill",
+        "Gary Cooper",
+        "Huberman",
+        "Maxims for a Statesman",
+        "The English Constitution",
+        "The Prince of Wales: A Biography",
+        "Charles: The Private Man, the Public Role",
+        "Diana: Her True Story",
+        "Spare",
+        "60 Minutes"
+      ],
+      "comments": [
+        {
+          "by": "WhyComboNadir",
+          "text": "It's a little Anthony Robbins-ish, but I like to think of something similar: Anything you put your attention on, grows. So keep your attention on what you're hoping for, not on what you wish would go away. Don't give negative things oxygen. (Of course this is all well and fine for someone of generally good character doing productive work; but can also be the formula for monsters to use that are…"
+        },
+        {
+          "by": "__natty__",
+          "text": "The never complain part has a status dimension. Complaints from people seen as privileged land badly. Tech in most world is learning this recently. Engineers fears of AI are legitimate, but for years the industry automated other people work, sold headcount reduction as a feature, and told laid off workers to learn to code. I remember how some european aviation insurance company employees were…"
+        },
+        {
+          "by": "Almondsetat",
+          "text": "As Bagehot is quoted saying in the article: \"Above all things our royalty is to be reverenced, and if you begin to poke about it you cannot reverence it... Its mystery is its life. We must not let in daylight upon magic\". This makes it evident how this strategy exists to maintain the \"magic\" and fool the masses. It has no place in a progressive society where being duped with propaganda into…"
+        },
+        {
+          "by": "Zealotux",
+          "text": "That's what I personally call the Huberman strategy: no official statement, barely any acknowledgments of allegations, just carrying on with whatever thing you're doing, the mob will soon enough find its next target. It worked exceptionally well for him, I guess it helps to be a neuroscientist."
+        },
+        {
+          "by": "tombert",
+          "text": "Man this is antithetical to how I live my life. I complain all the time and over-explain everything."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50334038,
+      "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/",
+      "hn": "https://news.ycombinator.com/item?id=50334038",
+      "title": "China's First Frontier AI Export Controls: Mofcom Announcement No. 48",
+      "time": 1793604448,
+      "points": 154,
+      "depth": [
+        {
+          "text": "China is proposing **export controls** for frontier AI, while a **registration rule** already applies",
+          "tier": "simple"
+        },
+        {
+          "text": "The draft restricts **model weights** and know-how if a model meets any one of three tests: at least **10^26 FLOPs**, at least 2 trillion parameters, or a global top-10 position. A separate interim registration rule already covers certain transfers, including overseas licensing and changes of ownership or control; the draft is open for comment until November 15, 2026.",
+          "tier": "substance",
+          "data": [
+            [
+              "training compute threshold",
+              "10^26 FLOPs"
+            ],
+            [
+              "parameter threshold",
+              "2 trillion"
+            ],
+            [
+              "ranking threshold",
+              "global top-10 position"
+            ],
+            [
+              "comment deadline",
+              "November 15, 2026"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: one commenter fears restrictions will make powerful Chinese models hard to adopt; another points to China's stated support for open-source exports and the public-domain exemption.",
+      "comment_count": 87,
+      "terms": [
+        "frontier AI",
+        "model weights",
+        "FLOPs",
+        "export control",
+        "open weights"
+      ],
+      "entities": [
+        "MOFCOM",
+        "MOST",
+        "Cloud Security Alliance",
+        "ChinaTalk"
+      ],
+      "comments": [
+        {
+          "by": "byzantinegene",
+          "text": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2026/art_d7661dbf... \"Second, we encourage open source, open collaboration, and resource sharing. The Chinese government is committed to making artificial intelligence a significant driving force for promoting common prosperity and safeguarding common security. To support the construction of an open source innovation ecosystem for artificial…"
+        },
+        {
+          "by": "_fw",
+          "text": "I understand why China wants to restrict exports of their models. But I feel the only reason Chinese models have been able to gain such popularity is BECAUSE they are open source. I wouldn’t trust models from China enough to use them in important work unless they were open. Restricting any powerful Chinese model [that ranks in the global top 10] is going to make them very difficult to advocate…"
+        },
+        {
+          "by": "swiftcoder",
+          "text": "These rules are not new, right? They appear to match the previous guidance (restrictions on top-10 models, exemption for open-source collaboration)"
+        },
+        {
+          "by": "petcat",
+          "text": "The risk is that USA and China will come together on a joint \"AI non-proliferation\" agreement in the same way that nuclear technology became restricted by the countries that already had the capability. This will lead to a de facto techno-colonization of the rest of the world just between themselves. This was a topic of discussion at Trump and Xi's AI summit just last month. We're now starting to…"
+        },
+        {
+          "by": "foo42",
+          "text": "slightly ot, but this seems like a good place to ask, since I don't think I have the strategic-business mind to understand it all myself: What's the play here with China having supported publishing open weight models this far? I know the official line is for the good of mankind and all that, but presumably it's more strategic than that. Soft power? Commoditise your competition?"
+        }
+      ],
+      "image": "https://i0.wp.com/labs.cloudsecurityalliance.org/wp-content/uploads/2025/12/cropped-logo.png?fit=512%2C512&ssl=1"
+    }
+  ],
+  "glossary": {
+    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
+    "CVSS": "Common Vulnerability Scoring System: a scale people use to rate how serious a security flaw is.",
+    "LTS": "Long-term support: a release its makers promise to support for an extended period.",
+    "kernel": "A small program that carries out a calculation on a computer's graphics chip or processor.",
+    "multi-tenant": "A system used by several customers or groups, with each kept separate from the others.",
+    "out-of-tree mitigation": "A workaround made outside the official project, rather than included in its standard updates.",
+    "RCE": "Remote Code Execution: a flaw that lets an attacker make a computer run their commands from somewhere else.",
+    "IPO": "Initial Public Offering: when a company first offers its shares for the public to buy.",
+    "SEC": "Securities and Exchange Commission: the agency that oversees company filings for stock-market listings.",
+    "non-cancelable spending commitments": "Payments a company has promised in a contract to make later, even if it would rather not.",
+    "registration statement": "A document a company files before an IPO that lays out information about its business and finances.",
+    "audited financial statements": "Company accounts checked by auditors to see whether the numbers are reliable.",
+    "index fund": "A fund that owns a group of investments meant to track a particular market list.",
+    "NEV": "New Energy Vehicle: a broad label for vehicles such as fully electric cars and plug-in hybrids.",
+    "PHEV": "Plug-in hybrid vehicle: a car that can charge from a plug and also uses a fuel engine.",
+    "ICE": "Internal Combustion Engine: an engine that makes power by burning fuel inside it.",
+    "DevOps": "The work of getting software released and keeping it running.",
+    "fullstack": "Building both the part people use and the behind-the-scenes part.",
+    "founding engineer": "One of the first engineers at a new company.",
+    "sequential growth": "Growth compared with the previous quarter.",
+    "annualized revenue run-rate": "A way to show what a company's revenue would be over a full year if its current pace continued.",
+    "GUI": "Graphical user interface: the buttons, pictures, and menus you use on a screen instead of typing commands.",
+    "microkernel": "A small operating-system core that leaves many jobs to other parts of the system.",
+    "RAM": "Random-Access Memory: a computer's working space for information it is using right now.",
+    "M.2 SSD": "M.2 is a small plug-in shape; SSD means Solid-State Drive, a storage device that keeps files even when the computer is off.",
+    "systemd": "A Linux tool that starts programs in the background and keeps track of them.",
+    "daily driver": "The device someone uses regularly as their main one.",
+    "IPS": "In-Plane Switching: a kind of screen that keeps colors looking more consistent when viewed from the side.",
+    "thin client": "A simple device that mostly shows what another, more powerful computer is doing.",
+    "CPU": "Central Processing Unit: the main chip that runs instructions in a computer.",
+    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "net worth": "What you own minus what you owe.",
+    "median": "The middle value when the results are put in order.",
+    "top 10%": "The highest tenth of the group, at a level only one in ten people exceeds.",
+    "percentile": "A way to divide a group ranked from lowest to highest into 100 equal-sized slices.",
+    "household-level": "Numbers measured for a household, so a couple's finances are combined rather than counted person by person.",
+    "modeled estimate": "A figure worked out from data using a model, rather than a direct count of every person.",
+    "microdata": "Detailed records from a survey, rather than only its summarized results.",
+    "SCF": "Survey of Consumer Finances: a Federal Reserve survey used as one source for these estimates.",
+    "market value": "The total value of a company’s shares at their current prices.",
+    "share buybacks": "When a company uses money to buy its own shares from investors.",
+    "midterm cycle": "A stretch around elections held halfway through a US president’s term.",
+    "hyperscaler": "A company that rents servers and computing power at huge scale.",
+    "senior notes": "Company borrowing that gets paid before lower-priority borrowing if the company cannot repay all its debts.",
+    "free cash flow": "Money a company has left after paying for its regular operations and other spending.",
+    "credit default swaps": "A way to insure against a company failing to repay its debt.",
+    "dilution": "When a company issues more shares, each existing share becomes a smaller part of the company.",
+    "vendor financing": "A way for a supplier to help a customer pay for what it buys, often over time.",
+    "solopreneur": "Someone who is the sole paid employee of their business.",
+    "cybersecurity": "Steps for keeping computers, accounts and business information safe from attacks.",
+    "NIST Cybersecurity Framework": "NIST guidance that helps businesses decide how to protect their computer systems and handle risks.",
+    "default password": "A password already set on a device; owners should replace it because criminals may know it.",
+    "re-skin": "A change to how a site looks that leaves its content or features mostly the same.",
+    "high-density design": "A layout that fits more stories or other items into the same space.",
+    "DNS": "Domain Name System: the internet's address book, which helps a computer find a website from its name.",
+    "zone": "A separate part of a cloud provider’s setup; a problem in one zone may not affect services in other zones.",
+    "targeted build": "A rebuild that handles only the names or settings a change can affect, instead of checking every record in the zone.",
+    "Kafka": "A system Cloudflare uses to pass change messages between parts of its service.",
+    "Kafka partition": "A group of Kafka messages kept in order; later messages cannot be confirmed until earlier ones are done.",
+    "Quicksilver": "Cloudflare's storage system for DNS data, which it spreads across its network.",
+    "p99": "The time within which 99% of measured events finished.",
+    "capex": "Capital expenditure: money spent up front on equipment or building something.",
+    "H1B": "A US work visa that lets employers hire some workers from abroad for specialized jobs.",
+    "offshoring": "Moving work to another country instead of doing it where the company is based.",
+    "asynchronous work": "Work people do at different times, rather than needing everyone to be online together.",
+    "equity": "Ownership in a company, rather than lending it money.",
+    "Git": "A tool for keeping a history of code changes and combining work.",
+    "source control": "Tools for keeping track of changes to code and helping developers work on it together.",
+    "agent": "An AI system that can take steps and use tools to get a task done, not just answer questions.",
+    "monorepo": "One repository that holds code for many projects or services.",
+    "commit": "A saved record of changes in a project; this site treats posts like commits.",
+    "DuckDB": "A tool for analyzing data on one machine; it can keep working by using the computer’s storage when memory fills up.",
+    "DuckLake": "A data format designed to work across different database setups.",
+    "Trino": "A tool for asking questions of data stored in a warehouse.",
+    "HogLake": "PostHog’s own open format for organizing tables in its warehouse.",
+    "lakehouse": "A way to store lots of data while still making it easy to work with like a database.",
+    "catalog": "A list of a warehouse’s tables and details about them.",
+    "snapshot": "A saved state of a running virtual machine that can be started again later.",
+    "single-node": "A setup where one machine does the work, rather than splitting it across several machines.",
+    "query optimizer": "The part of a database that picks a way to answer a data question efficiently.",
+    "pgwire": "The way Postgres apps communicate with a database over a network.",
+    "TTL": "Time to live: how long a saved item or sign-in token stays valid.",
+    "fork": "A separate copy of a shared software project that people can take in a different direction.",
+    "public relations": "Work aimed at shaping how the public sees a person or group.",
+    "authorised biography": "A book about someone written with their permission and cooperation.",
+    "stakeholders": "People or groups with an interest in, or affected by, a decision.",
+    "frontier AI": "The most capable AI systems being built at a particular time.",
+    "model weights": "The learned settings inside an AI that shape how it responds.",
+    "FLOPs": "Floating-point operations: a count of computer math steps, used here as a measure of how much compute a run takes.",
+    "export control": "A government rule that limits sending certain goods or technology across borders.",
+    "open weights": "The model's learned settings are available for people to download and run themselves."
+  }
+}
