@@ -2,6 +2,1608 @@
   "date": "2026-11-03",
   "cards": [
     {
+      "id": 50351111,
+      "url": "https://honnibal.dev/blog/astra-read-write-misleading",
+      "hn": "https://news.ycombinator.com/item?id=50351111",
+      "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
+      "time": 1793708477,
+      "points": 768,
+      "depth": [
+        {
+          "text": "someone says the **headline result** used **code and model runs**, not just **raw weights**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author separates the tests: only **three experiments** inspect raw weights without tools or running the network, on networks of **17K–172K weights**. The Qwen result uses Python and runs the model on up to **50 batches** of practice problems, so the author argues it should not sit alongside direct weight-reading tests.",
+          "tier": "substance",
+          "data": [
+            [
+              "size of raw-weight experiments",
+              "17K–172K weights"
+            ],
+            [
+              "Qwen practice problems",
+              "up to 50 batches"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some agree the post is misleading and mixes unlike experiments; others say the original writeup was clear and its results still showed something impressive.",
+      "comment_count": 176,
+      "terms": [
+        "weights",
+        "PPO",
+        "reasoning loops",
+        "gradient",
+        "steering vector",
+        "contrastive analysis",
+        "forward pass"
+      ],
+      "entities": [
+        "Astra",
+        "GPT-6",
+        "Qwen",
+        "Qwen3.5-0.8B",
+        "Python",
+        "PPO",
+        "Kinetix",
+        "MinAtar",
+        "Gemma 3",
+        "MATH-500",
+        "IFEval",
+        "Go",
+        "spaCy",
+        "Explosion",
+        "Ellf",
+        "LoRA",
+        "ASR"
+      ],
+      "comments": [
+        {
+          "by": "x313",
+          "text": "I work in this field (mech interp research) and I agree, the original post is definitely misleading. Some overselling in research is normal but it's a bit much. First, the key result has nothing to do with making Qwen better at math, it just reduces reasoning loops. Reasoning loops are a simple problem: the model generates the </think> token (which closes reasoning) with too low probability. You…"
+        },
+        {
+          "by": "bushido",
+          "text": "Speaking for myself. I’ve been aware of a lot of concepts around training, but stayed away from it until very recently. A few weeks ago, I formed a hypothesis that I could get a smaller model good at the specific standards I have for my git commit messages, which are hard to get out of most LLMs today. I spent the last four to five weeks on traditional training. It improved in a lot of areas, but…"
+        },
+        {
+          "by": "phoghed",
+          "text": "Wasn’t all that obvious to anyone who read the original post when they got to the section that explicitly explained what the author of this post is now summarizing? Sure if you only read the title and brief at the top you’d walk away without the full picture though. This is a better response imo: https://news.ycombinator.com/item?id=50344861"
+        },
+        {
+          "by": "neom",
+          "text": "I feel like a lot of this Astra editing Qwen stuff is regurgitation of existing relatively well known techniques, for example: https://arxiv.org/html/2406.11717v3 and conceptually similar to: https://arxiv.org/abs/2512.05648 (tho this is done in training iirc)"
+        },
+        {
+          "by": "tidbeck",
+          "text": "There was some really good comments by @yurimo on the 'Astra can read and write weights to improve Qwen' hacker news post https://news.ycombinator.com/item?id=50341174"
+        }
+      ],
+      "image": "https://honnibal.dev/social.png"
+    },
+    {
+      "id": 50354960,
+      "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+      "hn": "https://news.ycombinator.com/item?id=50354960",
+      "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+      "time": 1793726557,
+      "points": 569,
+      "depth": [
+        {
+          "text": "a user says Postman **installed coding-agent plugins** and startup instructions **without asking**, raising trust concerns",
+          "tier": "simple"
+        },
+        {
+          "text": "The report says its investigation found **Codex and Claude Code plugins**, a **startup hook** telling Codex to route broad API work through Postman, and a remote MCP connection. It says the evidence **does not establish data exfiltration**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 181,
+      "terms": [
+        "API",
+        "startup hook",
+        "MCP"
+      ],
+      "entities": [
+        "Postman",
+        "Codex",
+        "Claude Code",
+        "Postman CLI",
+        "Postman Flow",
+        "GitHub"
+      ],
+      "comments": [
+        {
+          "by": "pants2",
+          "text": "It's a shame what happened to Postman. It started as an excellent little developer tool for testing APIs. Then for some reason they raised over $400M in funding and hired 1,500+ employees, for what should have been a tiny OSS/passion project like curl or little snitch. Instead they now have to justify their valuation by forcing logins, collecting data, monthly subscriptions, AI features, etc. I…"
+        },
+        {
+          "by": "xlayn",
+          "text": "When they started uploading things to the server and requiring you to have an account to access the things that they STOLE from your machine without authorization in first place, I uninstall it... What can go wrong by uploading your things, if you had any passwords or users there that \"pinky promise\" will not be uploaded, then running AI and maybe oops have a leak and now someone is hitting your…"
+        },
+        {
+          "by": "senfiaj",
+          "text": "Who still uses Postman? In my experience it became insanely slow and bloated. Switched to Bruno. IMO, Postman is like uTorrent, everybody heard about it and many install because of inertia."
+        },
+        {
+          "by": "dham",
+          "text": "We went to bruno years ago and has been good. Nice to be able to store the request definitions in git. But to be honest, don't really need any of these tools anymore."
+        },
+        {
+          "by": "bottombutton",
+          "text": "Working in healthcare, and Postman got decertified by our Cyber team for this. We all switched to Bruno overnight. Their sales team is pinging us like gangbusters though."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/86cd5d0f022508c58ec126cafc2d5bb7c9997e7da45a04e5ff3691017665aa55/postmanlabs/postman-app-support/issues/14370"
+    },
+    {
+      "id": 50339288,
+      "url": "https://blog.nns.ee/2026/11/02/renault-hack/",
+      "hn": "https://news.ycombinator.com/item?id=50339288",
+      "title": "Jailbreaking my car's navigation system just so I can change the time",
+      "time": 1793636959,
+      "points": 368,
+      "depth": [
+        {
+          "text": "someone **jailbroke** a car's navigation system just to **change its clock**",
+          "tier": "simple"
+        },
+        {
+          "text": "**TomTom Carminat LIVE** hid the settings menu unless a **legitimate SD card** was inserted. A custom script and a file on the card let the author run commands as **root**, then change the stored time offset.",
+          "tier": "substance",
+          "data": [
+            [
+              "original local offset",
+              "180 minutes"
+            ],
+            [
+              "updated local offset",
+              "120 minutes"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 133,
+      "terms": [
+        "jailbreaking",
+        "root access",
+        "firmware",
+        "reverse engineering",
+        "DRM",
+        "CID",
+        "CAN bus"
+      ],
+      "entities": [
+        "Renault Latitude",
+        "Renault",
+        "TomTom Carminat LIVE",
+        "TomTom",
+        "Samsung",
+        "S5P6440",
+        "Linux",
+        "QEMU",
+        "Rasmus Moorats"
+      ],
+      "comments": [
+        {
+          "by": "numpad0",
+          "text": "I've heard that some Subaru models have 3 clocks in the view of the driver, all on the CAN bus, one being the nav and another being a remote display for the nav, and one that's just there, of which none sync to each others. I've looked up how it happened, and discovered that to just to add insult to injury, at least one uses a uC that has RTC feature but no XTAL pin for 32.768kHz or one of any…"
+        },
+        {
+          "by": "jerlam",
+          "text": "I had a luxury car from 2001 where the time could not be manually changed, only set to specific time zones. Of course, all the time zone rules had long diverged from its rule set, and it had to be changed four times a year to show the correct time. This car also inexplicably forced you to manually choose a country, and then a time zone, despite having a GPS that already knew exactly where you…"
+        },
+        {
+          "by": "tom1337890",
+          "text": "Awesome write up. Love it. And good thing you documented it, since in half a year you'll need it again. My takeaway: You should have just gotten the SD card and trusted the previous owner. Sometimes \"simple users\" do know. ^^"
+        },
+        {
+          "by": "RajT88",
+          "text": "Add to falsehoods programmers believe about time: It can be changed without the SD card in the car radio."
+        },
+        {
+          "by": "strenholme",
+          "text": "My car came with a cheap low-quality aftermarket combination car stereo and GPS. It would only play music from discs (no USB support), didn’t even support variable bitrate MP3s, and the GPS didn’t know the car’s location half the time. I finally replaced the head unit with a plastic bracket and a standard old school in-dash stereo system. Much nicer setup. It’s the cars which can’t have their…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50349276,
+      "url": "https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html",
+      "hn": "https://news.ycombinator.com/item?id=50349276",
+      "title": "Could a modern chess engine on a Pentium have defeated Kasparov in 1996?",
+      "time": 1793692581,
+      "points": 358,
+      "depth": [
+        {
+          "text": "someone got a **modern chess engine** running on an old Pentium, and it likely **beats Kasparov**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author adapted Stockfish to run on a 200 MHz Pentium Pro and estimates its strength at **3300 Elo** at classical time controls, above Kasparov's just-under-2800 rating. It beat 1996 Crafty running on modern hardware **78** times, drew 17, and lost 5; **Kasparov wasn't in that match**.",
+          "tier": "substance",
+          "data": [
+            [
+              "estimated classical Elo",
+              "3300"
+            ],
+            [
+              "wins",
+              "78"
+            ],
+            [
+              "draws",
+              "17"
+            ],
+            [
+              "losses",
+              "5"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say better algorithms matter more than raw speed; others say modern hardware made those algorithmic gains possible.",
+      "comment_count": 153,
+      "terms": [
+        "Elo",
+        "NNUE",
+        "classical time controls",
+        "LLM"
+      ],
+      "entities": [
+        "Stockfish",
+        "Pentium Pro",
+        "Garry Kasparov",
+        "Crafty"
+      ],
+      "comments": [
+        {
+          "by": "tombert",
+          "text": "Very tangential, but I think a lot about how modern video compression has gotten so unbelievably good that if we went back in time with AV1 or HEVC or something, I'm wondering if we could have had passable video streaming at 240p with something like an ISDN connection. It would be a tight fit, but I still think within feasibility. We've gotten so good at shrinking video that it kind of feels like…"
+        },
+        {
+          "by": "FartyMcFarter",
+          "text": "Awesome article. Nit: > the average chess grandmaster during a classical game will analyze roughly the same number of moves as an amateur player, but they analyze only the most critical moves and do a better job with that analysis. I don't buy this. I've seen GMs playing online while verbalizing their thought process (on twitch / youtube videos where they livestream their play), and they consider…"
+        },
+        {
+          "by": "Sharlin",
+          "text": "> because who would want to buy a Pentium Pro when the better-in-almost-every-way Pentium MMX Maybe this was satirizing people running after every shiny new thing, but the MMX certainly wasn’t. The Pro was the first P6, a totally new, out-of-order microarchitecture that the Pentium 2 would be based on. The MMX was a standard P5 Pentium with a larger L1 and the MMX vector instruction set which…"
+        },
+        {
+          "by": "rockmeamedee",
+          "text": "Yes but most of it is NNUE, a custom neural network trained on mountains of data to copy modern Stockfish. So a computer from back then _can_ run at Elo +3k, but the programmers at the time wouldn't have been able to implement it even if you went back with a time machine and the blueprint for the technique. They wouldn't have the teacher model to distill from."
+        },
+        {
+          "by": "dmurray",
+          "text": "Great project but I have a nit on the board displays: every board is displayed as <human username> vs Pentium Pro, even when the Pentium is playing White. The normal chess convention is <White name> vs <Black name>. I spent some time trying to figure out how some of the humans seemed to have trapped the machine out of the opening, because it looked like the human was winning."
+        }
+      ],
+      "image": "https://nicholas.carlini.com/writing/2026/chess/ppro-screen.png"
+    },
+    {
+      "id": 50353192,
+      "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+      "hn": "https://news.ycombinator.com/item?id=50353192",
+      "title": "Google will turn off search for schools that reject AI",
+      "time": 1793719547,
+      "points": 356,
+      "depth": [
+        {
+          "text": "Google will **turn off search** for schools that **reject AI**",
+          "tier": "simple"
+        },
+        {
+          "text": "Some commenters suggest schools **switch search engines**; another says Google's claim that **Search and A.I. are deeply integrated** echoes Microsoft's Windows-and-I.E. argument.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some think AI summaries can be more reliable than Google's search results; others object to tying Google services or search access to AI.",
+      "comment_count": 278,
+      "terms": [
+        "AI",
+        "GenAI",
+        "LLM",
+        "traditional machine learning",
+        "OAuth",
+        "RankBrain"
+      ],
+      "entities": [
+        "Google",
+        "Alphabet",
+        "GMail",
+        "BERT",
+        "Reddit",
+        "Gemini",
+        "Gemini Flash Lite",
+        "Microsoft",
+        "Windows",
+        "I.E.",
+        "United States vs. Microsoft",
+        "DuckDuckGo",
+        "Brave",
+        "Kagi",
+        "ChatGPT",
+        "Bing",
+        "Copilot",
+        "MS-365",
+        "Chromebooks",
+        "RankBrain",
+        "Page",
+        "Brin",
+        "Musk",
+        "Zuckerberg",
+        "Pink Floyd",
+        "Another Brick in the Wall",
+        "YouTube",
+        "Philip Morris"
+      ],
+      "comments": [
+        {
+          "by": "karmickoala",
+          "text": "Somewhat related: did you know that you cannot disable GMail's GenAI features without disabling the traditional ML powered features, such as smart inbox, which predates LLMs? In this case, Google/Alphabet is conflating GenAI/LLMs with traditional machine learning, so you can't opt out of genai---which necessarily requires access to your data by the models---without deactivating the previous…"
+        },
+        {
+          "by": "mawadev",
+          "text": "I'm confused, so google made websites indirectly unusable with all the advertisement incentives and then the AI summary came that usually just summarizes some reddit posts and now they subtly and indirectly block universities from using their entire search engine because unis block the AI part of search? What incentive does google even have on presenting the ai summary? Does anyone even…"
+        },
+        {
+          "by": "theodpHN",
+          "text": "To paraphrase Pink Floyd's Another Brick in the Wall, \"How can you have any Google Search pudding if you don't eat your Google Gemini AI meat?\"\nhttps://www.youtube.com/watch?v=cdu0RQOKR0I Also, as mentioned elsewhere in this discussion, Google's \"Search and A.I. are deeply integrated\" assertion is eerily reminiscent of the \"Windows and I.E. are deeply integrated\" assertion Microsoft made in…"
+        },
+        {
+          "by": "nphardon",
+          "text": "Hopefully the schools that reject ai use in the classroom are savvy enough to pivot to an alternative search engine, easy workaround for them. Google is pulling Philip Morris moves and we should all abandon them."
+        },
+        {
+          "by": "lukeschlather",
+          "text": "I think we've reached a point where reading the AI summary (which I think is Gemini Flash Lite) is probably going to be more reliable than actually reading the top 10 search results. The top 10 search results were often blogspam even in a pre-AI world. I feel like either you trust Google to retrieve information or you don't (and Gemini has problems but so does Google Search, and are you really…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50346849,
+      "url": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
+      "hn": "https://news.ycombinator.com/item?id=50346849",
+      "title": "DiscImageStudio: burn visible artwork onto CDs, DVDs and Blu-ray discs",
+      "time": 1793669623,
+      "points": 335,
+      "depth": [
+        {
+          "text": "someone made a tool that **turns pictures into visible artwork** on **CDs, DVDs, and Blu-ray discs**",
+          "tier": "simple"
+        }
+      ],
+      "camps": null,
+      "comment_count": 76,
+      "terms": [
+        "BD-R",
+        "ISO",
+        "WAV+CUE"
+      ],
+      "entities": [
+        "Disc Image Studio",
+        "CDImage",
+        "GitHub",
+        "LightScribe",
+        "Neato",
+        "IMAPI2",
+        ".NET"
+      ],
+      "comments": [
+        {
+          "by": "bmenrigh",
+          "text": "I made a CTF challenge for this year's BSidesSF CTF where players were given a CDDA audio file (just raw PCM samples) which when burned on a CD-RW would produce an image of the flag. (The idea was not for them to burn the audio, since they'd need to guess my exact CD-RW or else they wouldn't get an image readable enough to be useful. Instead they were supposed to invert the process in software…"
+        },
+        {
+          "by": "apitman",
+          "text": "Throwback to lightscribe which I haven't thought of in many years: https://en.wikipedia.org/wiki/LightScribe"
+        },
+        {
+          "by": "kixpanganiban",
+          "text": "This is exactly the sort of thing the 2020's are missing. Something tactile and artsy, reminiscent of the early 2000s! Well done to the author"
+        },
+        {
+          "by": "Animats",
+          "text": "I used to have a label system called Neato, which provided round CD labels you could make on a printer, along with a tool to press them accurately onto the non-recording side of a CD-R. There were even transparent labels, so the resulting disk looked like a commercially produced disk."
+        },
+        {
+          "by": "anfractuosity",
+          "text": "Also see https://github.com/arduinocelentano/cdimage from a few years ago"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/44fe9e528e02b36129a402a251769f8febe2e025bb11dc723052196dbba957a9/JiaFeiMiao-K-Cat/DiscImageStudio"
+    },
+    {
+      "id": 50352757,
+      "url": null,
+      "hn": "https://news.ycombinator.com/item?id=50352757",
+      "title": "OpenAI seems to be silently re-enabling model training on Codex chats",
+      "time": 1793717621,
+      "points": 302,
+      "depth": [
+        {
+          "text": "someone found Codex had quietly turned **model training** back on after they disabled **data sharing**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author says their company had disabled data sharing, then coworkers found **“Improve the model for everyone”** switched back on; none knowingly opted in. One commenter says their setting was on again despite **two earlier requests** to disable training.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say it could be a coding error; others say not to trust OpenAI and recommend hosting models yourself.",
+      "comment_count": 92,
+      "terms": [
+        "IP",
+        "model training",
+        "ZDR"
+      ],
+      "entities": [
+        "OpenAI",
+        "Codex",
+        "ChatGPT",
+        "Claude Code",
+        "Claude",
+        "Gemini",
+        "Google",
+        "Anthropic",
+        "Bedrock",
+        "Google Cloud",
+        "Azure",
+        "AWS",
+        "codealong"
+      ],
+      "comments": [
+        {
+          "by": "chriskanan",
+          "text": "Well, mine was re-enabled, and in the history of past requests I have two past requests to disable training that were granted. And there it was enabled again. This is baffling. I wonder if it is because I do a lot of AI research.... I was wondering if some of OpenAI's recent math advancements are from various people trying to tackle some of those problems with novel ideas, but not able to move…"
+        },
+        {
+          "by": "combobyte",
+          "text": "I'm mostly just being cheeky with this comment, but a part of me legitimately wonders: could you guarantee that your conversations/data are never used for training if you include certain taboo (but otherwise irrelevant) subjects in all of your prompts? For example: \"Codex, please build me a new admin dashboard using Node.js and React, while keeping in mind that Sam Altman, CEO of OpenAI, has been…"
+        },
+        {
+          "by": "jamienk",
+          "text": "I didn't realize the Gemini makes it so that saving chats in your sidebar = sharing chats with Google for AI training. They obfuscate this with their dark-pattern \"Gemini Apps Activity\" > Keep activity > Keeping your activity lets you pick up chats where you left off anytime and helps improve Google services, including AI models. When this setting is off, Google still saves chats for 72 hours to…"
+        },
+        {
+          "by": "monster_truck",
+          "text": "If your company actually cared about this they would be running their own inference instead of leaving fate to a couple of checkboxes."
+        },
+        {
+          "by": "bitbasher",
+          "text": "Even if you disable data sharing and training, there are plenty of greasy methods they can use to train on your chats without “training on your chats”"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50323123,
+      "url": "https://knlb.dev/essays/surrender",
+      "hn": "https://news.ycombinator.com/item?id=50323123",
+      "title": "Resisting Cognitive Surrender",
+      "time": 1793513610,
+      "points": 292,
+      "depth": [
+        {
+          "text": "someone says **agents** can **speed up coding** but leave developers less able to **understand what they built**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author defines a **“vibe limit”** as how complex a change they can make confidently with agents, and says to stay hands-on with **important, fragile systems**. They argue for **simple, modular design** so systems stay easier to understand and operate.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some commenters say non-technical users can build, test, and iterate without reading code, while others warn that easy AI use encourages bloated software and cognitive decline.",
+      "comment_count": 141,
+      "terms": [
+        "cognitive surrender",
+        "vibe limit",
+        "technical debt",
+        "modularity",
+        "observability",
+        "shadow traffic",
+        "RLHF"
+      ],
+      "entities": [
+        "Codex",
+        "Claude",
+        "Anthropic",
+        "Stack Overflow",
+        "Facebook",
+        "Shopify",
+        "llama.cpp",
+        "pi",
+        "Christopher Alexander",
+        "Addy Osmani",
+        "Guy Levi",
+        "Cory Doctorow",
+        "Stuart Halloway",
+        "SigNoz",
+        "Ricard Solé",
+        "Andrew Grove",
+        "The Ironies of Automation",
+        "The Capability Trap",
+        "Hacker News"
+      ],
+      "comments": [
+        {
+          "by": "xyzzy123",
+          "text": "I think there's a paradox. Is it only \"cognitive surrender\" if you already know how to code? Not knowing all the details seems more like the default human condition, in the sense that most people don't know exactly where their water comes from or where their waste goes exactly. \"Water comes from the tap, food comes from the store\". Most of the non-technical people I see using LLMs to create…"
+        },
+        {
+          "by": "zmmmmm",
+          "text": "The tendency to over-engineer and over-build is one of the main challenges I'm seeing. When it comes for free, why not build a class hierarchy of 8 classes each with a 200 line unit test? Something I might have previously thought really hard to minimalise down to 30 lines is now bloated out to hundreds or even thousands. Previously, pretty much everyone all agreed on YAGNI and KISS because code…"
+        },
+        {
+          "by": "quibono",
+          "text": "I have been thinking about this for a while. I'm not a Luddite, I can see the amazing value that modern AI brings, and how useful it can be. At the same time I can't help but wonder that this is almost too much for us to cope, the LLMs are _too_ easy to use. I think we're very good at pretending there isn't a problem here but there is definitely going to be some cognitive decline happening. We…"
+        },
+        {
+          "by": "osmukka",
+          "text": "Superhuman intelligence is much easier for an LLM to achieve if humans are made dumber first."
+        },
+        {
+          "by": "stickfigure",
+          "text": "I think you need to pick and choose your battles. When I'm working on my own, I scrutinize every line of backend code and frequently send the LLM back for rework. Frontend code I keep an eye on just to make sure the LLM isn't getting stupid (which it occasionally does, even at the frontier), but mostly defer. The CSS I don't even look at. This isn't too different from having employees. How much…"
+        }
+      ],
+      "image": "https://knlb.dev/essays/.surrender_assets/image-4147323edcec4900b374ba7a6e8d4cbb.png"
+    },
+    {
+      "id": 50353229,
+      "url": "https://arstechnica.com/tech-policy/2026/10/trump-admin-sues-utah-to-save-kalshi-from-the-states-total-ban-on-gambling/",
+      "hn": "https://news.ycombinator.com/item?id=50353229",
+      "title": "Kalshi and its co-founders face felony charges for violating Utah gambling laws",
+      "time": 1793719755,
+      "points": 285,
+      "depth": [
+        {
+          "text": "Utah charged **Kalshi** and its co-founders with **felonies** over sports bets on its prediction market",
+          "tier": "simple"
+        },
+        {
+          "text": "Kalshi and co-founders Tarek Mansour (CEO) and Luana Lopes Lara (COO) each face **13 felony charges** and **one misdemeanor**, based on sports bets offered between September 13 and September 24. Utah’s civil suit seeks to bar Kalshi from offering bets on sports, elections, politics and other events.",
+          "tier": "substance",
+          "data": [
+            [
+              "Felony charges per defendant",
+              "13"
+            ],
+            [
+              "Misdemeanor charges per defendant",
+              "one"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say Utah should enforce its gambling laws and hold the founders accountable; others say prison threats are wrong in a federal-state jurisdiction fight.",
+      "comment_count": 207,
+      "terms": [
+        "prediction market",
+        "felony",
+        "misdemeanor",
+        "CFTC"
+      ],
+      "entities": [
+        "Kalshi",
+        "KalshiEX, LLC",
+        "Tarek Mansour",
+        "Luana Lopes Lara",
+        "Derek Brown",
+        "Commodity Futures Trading Commission",
+        "Michael Selig",
+        "Polymarket",
+        "DraftKings",
+        "FanDuel"
+      ],
+      "comments": [
+        {
+          "by": "paxy",
+          "text": "There’s a reason both Kalshi and Polymarket were quick to make political connections (aka pay bribes). They know what they are doing is illegal, and waiting for legislation like sports betting apps did would take too long. So they bought get out of jail free cards instead."
+        },
+        {
+          "by": "tfrancisl",
+          "text": "When will we start holding the people who found and operate companies whose sole purpose is to break the law accountable, rather than letting them hide behind \"limited liability\"? These founders should be in prison for promoting illegal gambling. Same federal charges mafiosos get caught on for a \"friendly card game\"."
+        },
+        {
+          "by": "jsw97",
+          "text": "I'm not sure specifically about the moral crusade against Kalshi and Polymarket, but I am glad to see that at least one state is serious about its sovereignty and is willing to go to the mat with criminal charges. Utah 100% has a right to enforce this and I hope they are successful. And taking on the feds too, that is a gutsy move. We need at least one state to do this when large corporations…"
+        },
+        {
+          "by": "mahboi",
+          "text": "Wonder how proxies/VPNs play into this, since Utah was recently in the news about an age verification law that basically said you're liable if anyone physically in Utah accesses a restricted site."
+        },
+        {
+          "by": "10111001",
+          "text": "This is outrageous! They're tech founders! Penny-ante things like \"the law\" don't apply to them! Somebody needs to tell Utah it needs to change its laws to adapt to their business plan, ASAP."
+        }
+      ],
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/kalshi-1152x648-1788462763.jpg"
+    },
+    {
+      "id": 50336918,
+      "url": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
+      "hn": "https://news.ycombinator.com/item?id=50336918",
+      "title": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
+      "time": 1793628162,
+      "points": 276,
+      "depth": [
+        {
+          "text": "Fujifilm plans to **boost tape production fivefold** as generative AI fuels **archiving demand**",
+          "tier": "simple"
+        },
+        {
+          "text": "Fujifilm will invest **roughly 10 billion yen (about $63 million)** at its Kanagawa Factory, Odawara site, with work running from fiscal years 2026 through 2028 to expand manufacturing and add staff, mainly for **FUJIFILM LTO Ultrium10**. Major cloud and data-center operators are expanding tape use for its low cost and because disconnected backups can help defend against **ransomware**.",
+          "tier": "substance",
+          "data": [
+            [
+              "capacity increase",
+              "5x"
+            ],
+            [
+              "planned investment",
+              "roughly 10 billion yen (about $63 million)"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters see the AI boom as boosting tape demand; others think Fujifilm is riding an AI bubble, with data hoarding and cyberattacks also raised as reasons to keep storing data.",
+      "comment_count": 113,
+      "terms": [
+        "magnetic tape",
+        "LTO",
+        "air-gap",
+        "ransomware",
+        "capex",
+        "cold storage"
+      ],
+      "entities": [
+        "Fujifilm",
+        "FUJIFILM LTO Ultrium10"
+      ],
+      "comments": [
+        {
+          "by": "dylan604",
+          "text": "Anyone that's never had the (dis)pleasure of working with tapes, there's some gotchas to know about before archiving and forgetting about it. When you create an archive, do not skip the step of reading it back. I'm not talking about just having the system confirm it is readable. I mean actually restoring the data from the tape. I've had tapes fail to retrieve data off of the tape even though the…"
+        },
+        {
+          "by": "pmw",
+          "text": "If you want to take advantage of tape's low cost per TB for your own data backups, without the big capex of tape hardware, I heartily recommend rustic's cold storage support for Amazon S3 Glacier Deep Archive. It ends up being $1/TB/month, as long as you plan to not restore from it. (Use it as a secondary backup, and plan to restore from your primary.) I have been using rustic+GDA for about a…"
+        },
+        {
+          "by": "amelius",
+          "text": "Why can't they make an attractively priced pro-sumer tape drive solution?"
+        },
+        {
+          "by": "doughnutstracks",
+          "text": "I came across this website that provides LTO tape pricing references (I have no affiliation with the site). LTO-10 30TB: $259–$300 per cartridge (~$8.63–$10/TB)\nLTO-10 40TB: $491–$555 per cartridge (~$12.28–$13.88/TB)\nLTO-9 18TB: $92–$129 per cartridge (~$5.14–$7.17/TB) https://tapebackup.org/lto-tape-price-trend/lto10-price One thing worth noting is that the tape cartridges themselves aren't…"
+        },
+        {
+          "by": "dguest",
+          "text": "The cost of tape is a big deal for for some bigger science experiments. They often cost billions to build and they take loads of data, but most of it ends up heavily distilled by the time it goes to the final analysis pipeline, so keeping the raw data on tape is pretty common. There was a time when tape was more specialized and we were worried about loosing our limited suppliers. The explosion in…"
+        }
+      ],
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2202649793-2560x1440.jpg"
+    },
+    {
+      "id": 50348962,
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "hn": "https://news.ycombinator.com/item?id=50348962",
+      "title": "Nvidia – open-source auto-ontology",
+      "time": 1793689490,
+      "points": 251,
+      "depth": [
+        {
+          "text": "NVIDIA shared an open tool that helps **AI agents** find **company data** and **answer questions**",
+          "tier": "simple"
+        },
+        {
+          "text": "The framework builds a **context layer** from **enterprise metadata**, reconciles definitions across systems, and exposes it to any agent harness through MCP, CLI, and API. It can translate natural-language questions into SQL, check generated queries against certified definitions and lineage, and return **provenance** with every answer.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters see a useful way to query scattered company data; others say the README is confusing or ask what it adds over OWL/RDF and SparQL.",
+      "comment_count": 116,
+      "terms": [
+        "ontology",
+        "metadata",
+        "MCP",
+        "SQL",
+        "provenance",
+        "lineage"
+      ],
+      "entities": [
+        "NVIDIA",
+        "Auto Ontology",
+        "NVIDIA NIM"
+      ],
+      "comments": [
+        {
+          "by": "dstu",
+          "text": "This may well be very useful, but Claude has ruined me and I have a visceral reaction to ‘gates’ in the opening sentence and couldn’t get any further. If a tool is worth building and sharing, surely it’s also worth writing a brief summary of what it’s supposed to achieve in your own words?"
+        },
+        {
+          "by": "gavinray",
+          "text": "I want to attempt an explanation as it seems a lot of folks here didn't grok the very terribly written README \"Auto Ontology\" is sort of a poor name. Here's the problem: Your company has data scattered across multiple types of databases. People who make decisions want to ask questions about that data. The old way is they would go to a Data Analyst, and say, \"Get me a report on so and so\", and it…"
+        },
+        {
+          "by": "grey-area",
+          "text": "Fixing unreliable agents by adding more unreliable agents. It's a shame we can't do something about the tendency of LLMs to give more weight to their weights than to the data they're analysing. I guess it all comes back to the fact that they don't have a clear division between data they have learned about the world, instructions and data under analysis. You can ask them only to consider the 5…"
+        },
+        {
+          "by": "smithclay",
+          "text": "Surprised that https://github.com/ucbepic/DataAgentBench hasn't been mentioned on this: benchmarking data agents that need to query from multiple sources is a focus of some research at UC Berkeley -- leaderboard is worth a look to see how the various closed and open-source implementations build ontologies ... would like to see how Nvidia's approach stacks up."
+        },
+        {
+          "by": "fnordpiglet",
+          "text": "I’m struggling to see why this is better than OWL/RDF and SparQL. Given the breadth and depth of semantic web knowledge in the corpus they do an amazing job discovering well established ontologies and building new ones on presented data and querying it with sparql. In fact better than almost anything I’ve seen. What an irony that the semantic web after all these years is likely to find a real use…"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/164b5efad6407da54b0ac81f3c9d2c2178bfb15f6c7a08e3a57fec578e4e6ac6/NVIDIA/auto-ontology"
+    },
+    {
+      "id": 50355251,
+      "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+      "hn": "https://news.ycombinator.com/item?id=50355251",
+      "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+      "time": 1793727600,
+      "points": 258,
+      "depth": [
+        {
+          "text": "someone got a laptop model to **identify games** by reading their **neural-network weights**",
+          "tier": "simple"
+        },
+        {
+          "text": "The prompt supplied **raw game weights** and banned tools; Qwen 3.8 27B named **Breakout**, but mistook **Freeway for a Pac-Man-like game**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Pac-Man response",
+              "46m 12s"
+            ],
+            [
+              "Pong response",
+              "1h 4m 54s"
+            ],
+            [
+              "Breakout response",
+              "52m 25s"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters find the results impressive; others wonder whether the weight readings are correct or say the networks may be too shallow to make the result surprising.",
+      "comment_count": 74,
+      "terms": [
+        "model weights",
+        "Weight-Space Programming",
+        "reinforcement learning",
+        "policy network",
+        "PPO",
+        "LoRA"
+      ],
+      "entities": [
+        "Qwen 3.8 27B",
+        "Qwen3.5-0.8B",
+        "GPT-6 Astra",
+        "Sparks of Weight-Space Programming",
+        "Simon Willison",
+        "Rikiya Takehi",
+        "Jayden Teoh",
+        "Alex Zhang",
+        "Omar Khattab",
+        "Matthew Honnibal",
+        "Sean Goedecke",
+        "spaCy",
+        "LM Studio",
+        "OpenRouter",
+        "Kimi K3.1 Pro",
+        "Breakout",
+        "Pong",
+        "Pac-Man",
+        "Freeway"
+      ],
+      "comments": [
+        {
+          "by": "zkmon",
+          "text": "Qwen-3.8-27B - the best thing that happened in AI so far. This thing can accomplish the same results as the frontier models do, if you are willing to play a role of an higher level architect or decision maker. Guide it a bit here and there like a tech lead and you get everything done. The money you pay for frontier models is exactly for outsourcing that high level direction work to agents."
+        },
+        {
+          "by": "variaga",
+          "text": "Not making any claims about a specific model's capabilities, but all these \"can interpret model weights\" posts brings to mind the line in Shakespeare's Henry IV GLENDOWE: I can call spirits from the vasty deep. HOTSPUR: Why, so can I, or so can any man, but will they come when you do call for them? I can interpret weights too, but will that interpretation be correct?"
+        },
+        {
+          "by": "xlayn",
+          "text": "But that's obvious... Astra is Qwen, if Astra can is because Qwen can...."
+        },
+        {
+          "by": "athrowaway3z",
+          "text": "Hopefully we get a new benchmark: How well can a model tweak a set of weights to produce pelican on a bike?"
+        },
+        {
+          "by": "NitpickLawyer",
+          "text": "Simon, could you try reproducing Experiment 5 from the blog post, if you have a chance? Apparently this person tried [1] with API models and only the latest models can do the impressive 10-20x vs. PPO baseline. [1] - https://nitter.netbub.com/AlexKrentsel/status/21173766837246..."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50352758,
+      "url": "https://namespace.so/blog/mac-at-any-scale",
+      "hn": "https://news.ycombinator.com/item?id=50352758",
+      "title": "Mac at Any Scale",
+      "time": 1793717622,
+      "points": 218,
+      "depth": [
+        {
+          "text": "Namespace runs **MacBooks as cloud computers** for developers building and testing **iPhone apps**",
+          "tier": "simple"
+        },
+        {
+          "text": "Mac minis would suit a datacenter better, but an order placed in January arrived in July. Each MacBook gets **remote management** and an external 10G Ethernet NIC; the team sends image blocks **peer-to-peer** across the fleet.",
+          "tier": "substance",
+          "data": [
+            [
+              "Ethernet",
+              "10G"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some praise the clever workaround for Apple's limits; others say Apple should offer proper server hardware and worry about packing laptop batteries into racks.",
+      "comment_count": 115,
+      "terms": [
+        "IP KVM",
+        "VM",
+        "NIC",
+        "peer-to-peer",
+        "FileVault",
+        "APFS",
+        "IPC",
+        "Xcode"
+      ],
+      "entities": [
+        "Namespace",
+        "Apple",
+        "Kirill Nikolaev",
+        "MacBook",
+        "Mac mini",
+        "macOS",
+        "iOS",
+        "Xcode",
+        "FileVault",
+        "Virtualization framework",
+        "Google",
+        "gVisor",
+        "APFS",
+        "ZFS",
+        "QEMU",
+        "Firecracker",
+        "BitTorrent",
+        "Tart",
+        "UTM",
+        "Amazon",
+        "MacStadium",
+        "Scaleway"
+      ],
+      "comments": [
+        {
+          "by": "kccqzy",
+          "text": "Amazing article. It just goes to show how many problems they are solving just to work around bugs and limitations within Apple itself. I’d wager a guess that if Apple made a new Xserve with the same performance as a Mac mini but twice the price people would still buy them, because figuring out data center operations is expensive."
+        },
+        {
+          "by": "borschtplease",
+          "text": "Apple still lives in the world where software developed in IDE on a personal computer and shipped as a boxed software on a disquette with a licence key. Xcode cloud is a joke. All their automation is a joke. It’s not surprising even their own software development stuck because of their ecosystem because they use same tools, same cryptic software signing with their plists, p8, chains…"
+        },
+        {
+          "by": "giancarlostoro",
+          "text": "Dang, I hope they sell the older laptops for cheap (less than what they were at time of purchase obviously) on Ebay once they're phased out, wouldn't mind buying a \"datacenter mac\" if its still viable... I could see them flooding the used Macbook market and selling like hot cakes, but also giving them back \"rack\" space."
+        },
+        {
+          "by": "cloudengineer94",
+          "text": "This is quite an amazing setup and shows the current limitations of Apple supporting their enterprise customers, which end up buying MacBooks to make their products available..."
+        },
+        {
+          "by": "titzer",
+          "text": "What interests me is the miniaturization and thinness of the mainboard. Imagine if the mainboards were produced en masse and mated with a perfectly-fitting (liquid-cooled) heatspreader. That could be a very space-efficient blade server for very high density compute."
+        }
+      ],
+      "image": "https://namespace.so/blog-images/mac-at-any-scale/banner.png"
+    },
+    {
+      "id": 50321605,
+      "url": "https://toit.io/blog/toit-v2-0-0/",
+      "hn": "https://news.ycombinator.com/item?id=50321605",
+      "title": "Toit v2.0.0",
+      "time": 1793492704,
+      "points": 205,
+      "depth": [
+        {
+          "text": "after years in alpha, **Toit** gets its big release with **broader hardware support** and better **desktop scripting tools**",
+          "tier": "simple"
+        },
+        {
+          "text": "Toit v2.0.0 follows **more than four years** of alpha development and a final major breaking change: peripheral APIs can now take **pin numbers directly** instead of gpio.Pin objects. Volunteers kept improving it after Toitware shut down, with highlights including **broader hardware support** and a rewritten package manager.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: Toit users praise its clean language and tools; skeptics question why it needs a new language or find Python more readable.",
+      "comment_count": 68,
+      "terms": [
+        "alpha development",
+        "breaking change",
+        "peripheral API",
+        "package manager",
+        "mixin",
+        "firmware envelope",
+        "SDK",
+        "runtime",
+        "bytecode",
+        "AOT"
+      ],
+      "entities": [
+        "Toit",
+        "Toitware",
+        "Florian Loitsch",
+        "Arm",
+        "EC618",
+        "ESP32",
+        "GitHub",
+        "WebAssembly",
+        "WAMR",
+        "C",
+        "V8",
+        "Chrome",
+        "Python",
+        "Go",
+        "POSIX",
+        "Arduino",
+        "Lua",
+        "MicroPython",
+        "Garmin",
+        "GitLab"
+      ],
+      "comments": [
+        {
+          "by": "draven",
+          "text": "The wikipedia page https://en.wikipedia.org/wiki/Toit is short but still gives a lot of context."
+        },
+        {
+          "by": "spankalee",
+          "text": "I rather like WebAssembly for this use-case. You don't necessarily need a new language, you need a Wasm runtime targeted at embedded devices, like WAMR [1], which even has a AOT compiled mode. [1]: https://github.com/wasm-micro-runtime/wasm-micro-runtime"
+        },
+        {
+          "by": "maxloh",
+          "text": "Here's a beginner tutorial for the language: https://docs.toit.io/language/toitversus Nice syntax. It looks like how we'd design programming if C had never existed. add a/int b/int -> int:\nreturn a + b\nmain:\nprint (add 2 3) // Prints 5."
+        },
+        {
+          "by": "thomascountz",
+          "text": "Toit is a language for writing scripts on your computer and applications on your ESP32. A readable syntax, an efficient runtime, and tools that work together.\nFree and open source. Maintained by volunteers."
+        },
+        {
+          "by": "jacobgorm",
+          "text": "The people behind Toit are the original people behind the V8 VM in Chrome. They know their stuff."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50334523,
+      "url": "https://erici.eu",
+      "hn": "https://news.ycombinator.com/item?id=50334523",
+      "title": "European RISC-V Industrial Computing Initiative",
+      "time": 1793609913,
+      "points": 184,
+      "depth": [
+        {
+          "text": "someone is organizing an **open software stack** for **RISC-V industrial computers**",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: some say Europe should push efforts like this; others question the European label because the first chips come from Chinese vendors, and say the initiative is basically one person's webpage.",
+      "comment_count": 123,
+      "terms": [
+        "RISC-V",
+        "RVA23",
+        "reference stack",
+        "hypervisor",
+        "IOMMU",
+        "SoC",
+        "RTOS",
+        "devicetree"
+      ],
+      "entities": [
+        "ERICI",
+        "RISC-V",
+        "RVA23",
+        "gRouvr",
+        "Linux",
+        "SpacemiT",
+        "K3 PicoITX",
+        "QSOE Systems",
+        "HFI BIOS",
+        "mr-bml",
+        "Yuri Zaporozhets"
+      ],
+      "comments": [
+        {
+          "by": "dragoncrab",
+          "text": "This seems to be run by a random dude looking for funding: About ERICI ERICI is a non-commercial initiative in its founding phase. It is not yet a legal entity, sells nothing and charges no fees. ( https://erici.eu/impressum.html )"
+        },
+        {
+          "by": "ymz5",
+          "text": "Author here. Happy to answer technical questions: about HFI BIOS, partitioning hypervisor (gRouvr), QSOE RTOS. I hope that leading European industrial computer manufacturers notice the initiative and join -- or at least start evaluating the possibility to use RVA23 SoCs in their devices. Yes, currently only Chinese vendors can provide such chips, but the world is changing fast."
+        },
+        {
+          "by": "strofocles",
+          "text": "So one person creates a (fantasy ?) website and it gets on the 1st page of HN being mistaken for an European initiative?"
+        },
+        {
+          "by": "cbolton",
+          "text": "This is just a webpage some individual put up, right? I mean as far as I can see there's no institute, no company, no government behind this. Just one RISC-V enthusiast on the contact page."
+        },
+        {
+          "by": "hn_submit",
+          "text": "Is this something more than a flag-waiving exercise? Who's actually manufacturing and selling these \"European\" CPUs? I just purchased a boatload of Chinese RISC-V development boards for about $2.30 a piece. Can't wait to start playing with them. \"RISC(-V) architecture is going to change everything.\" [1]: https://www.aliexpress.com/item/1005011967676963.html"
+        }
+      ],
+      "image": "https://erici.eu/img/og-card.png"
+    },
+    {
+      "id": 50353335,
+      "url": "https://www.nbcnews.com/health/health-news/study-estimates-75-nfl-players-died-15-year-span-may-cte-rcna605975",
+      "hn": "https://news.ycombinator.com/item?id=50353335",
+      "title": "Study estimates 75% of NFL players who died over 15-year span had CTE",
+      "time": 1793720284,
+      "points": 194,
+      "depth": [
+        {
+          "text": "a study estimates **most former NFL players** who died had **signs of CTE**",
+          "tier": "simple"
+        },
+        {
+          "text": "Researchers combined **396 donated brains** with death records for 1,966 other former players, then adjusted for donor bias: families of players with cognitive decline were about five times likelier to donate. They estimated **nearly 75%** of roughly 2,360 former players who died from 2008 to 2023 had CTE, while **27%** were estimated to have dementia.",
+          "tier": "substance",
+          "data": [
+            [
+              "Estimated former players with CTE",
+              "nearly 75%"
+            ],
+            [
+              "Estimated former players with dementia",
+              "27%"
+            ],
+            [
+              "Donated brains with signs of CTE",
+              "93%"
+            ],
+            [
+              "Donated brains examined",
+              "396"
+            ],
+            [
+              "Other deceased former NFL players studied",
+              "1,966"
+            ],
+            [
+              "Former players in the estimate",
+              "roughly 2,360"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters want contact football banned or sharply restricted to prevent head injuries; others would keep the sport but change rules to reduce collisions.",
+      "comment_count": 131,
+      "terms": [
+        "CTE",
+        "autopsy",
+        "tau",
+        "p-value"
+      ],
+      "entities": [
+        "NFL",
+        "CTE",
+        "Boston University",
+        "UNITE Brain Bank",
+        "JAMA Network Open",
+        "Yorghos Tripodis",
+        "Julian Bailes",
+        "Jim Kelly",
+        "Endeavor Health",
+        "University of Colorado Anschutz",
+        "Guardian Cap"
+      ],
+      "comments": [
+        {
+          "by": "cmiles8",
+          "text": "I would never let my child play contact football. The data is beyond clear that this sport causes irreparable life altering damage to the brain. A lot of football players also suffer from mental health issues which, not to state the obvious, is likely not helped by banging your head all the time."
+        },
+        {
+          "by": "ggreer",
+          "text": "Here's a link to the study.[1] Since CTE can only be diagnosed by slicing up the brain, and former NFL players only tend to donate their brains to study if they're experiencing cognitive issues, there's obviously a bias in the sample. They tried to adjust for this by looking at rates of cognitive impairment in NFL players who donated their brains versus those who didn't. The ratio varied from…"
+        },
+        {
+          "by": "retrac",
+          "text": "Don't forget the hearing loss and tinnitus, too. Boxers and footballers tend to go deaf. https://www.sciencedaily.com/releases/2014/07/140707134223.h... > Leonetti recently spoke to retired players alongside EarQ at a meeting of the Chicago chapter of the NFL Players Association. When Leonetti asked how many players had experienced concussions during their career, they all raised their hands…"
+        },
+        {
+          "by": "1-more",
+          "text": "John Urschel cited the CTE risk when he decided to quit the NFL and pursue his math PhD. He just published https://arxiv.org/abs/2610.06785 which seems to be a significant result from where I'm standing, but I can't really tell what's what with math at that level. https://en.wikipedia.org/wiki/John_Urschel > In August 2015, an incident gave him a taste of what a prolonged NFL career could mean…"
+        },
+        {
+          "by": "Zigurd",
+          "text": "I haven't watched an NFL game in years. I can no longer enjoy seeing people trade their brain function and lifespan for money that way. For that matter I recently revisited an extreme skiing video I bought long ago. Several of the people in the credits are dead now. All sports carry some risk. I ride a road bike. I wouldn't tell others how to weigh the risks of their sports of choice. I just…"
+        }
+      ],
+      "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-10/261027-football-CTE-helmet-sjr-1644-2-104adc.jpg"
+    },
+    {
+      "id": 50341736,
+      "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
+      "hn": "https://news.ycombinator.com/item?id=50341736",
+      "title": "Egoless Mathematics in the AI Era",
+      "time": 1793645684,
+      "points": 180,
+      "depth": [
+        {
+          "text": "a guest essay says **math's value** comes from truth, not who gets **credit** for finding it",
+          "tier": "simple"
+        },
+        {
+          "text": "Karthik C. S., Amit Sahai, and Jie Xue argue that **mathematical truths exist independently** of us, so **AI discoveries** needn't diminish their worth. They also say GPT Astra 6.0 and GPT 6.1 Sol **helped draft** the post, though its ideas are entirely theirs.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: critics say the essay glosses over mathematicians' jobs and pay; others say a result's value should not depend on whether a human or AI found it.",
+      "comment_count": 151,
+      "terms": [
+        "Platonic perspective",
+        "axiomatic system",
+        "conjecture",
+        "LLM"
+      ],
+      "entities": [
+        "Terence Tao",
+        "Karthik C. S.",
+        "Amit Sahai",
+        "Jie Xue",
+        "GPT Astra 6.0",
+        "GPT 6.1 Sol",
+        "Ramanujan",
+        "Robert Kanigel"
+      ],
+      "comments": [
+        {
+          "by": "GMoromisato",
+          "text": "The lens to use is the Venn diagram of: 1. What you like doing\n2. What you are good at doing\n3. What people will pay you to do\nFor math, if your goal is to prove something that no one else has proven, then all three are under attack. I think the \"egoless\" path is taking a 50,000-foot view of mathematics that ignores the above lens. Sure, mathematics will survive and even prosper with AI, but what…"
+        },
+        {
+          "by": "kzz102",
+          "text": "Human pursuits cannot be separated from the humans who pursuit it. In the pursuit of knowledge, what ultimately drives people is what they themselves can understand, and the meaning these understanding provides, both based on their own experience and people whose opinions they value. Humans do not pursuit Platonic knowledge for their own sake, and those who claim to do it, often are satisfying…"
+        },
+        {
+          "by": "bhouston",
+          "text": "Following Terry Tao's blog he seems to be engaging in forced self-directed cognitive behaviorial therapy, he is trying to come to terms with loss while developing a new framework for himself and other as to where the value is. It is cool to see. It is better to engage than to be in denial and just fall into reactionary behavior."
+        },
+        {
+          "by": "abstractbill",
+          "text": "This is one of the best posts I've seen on this topic in a while. I finished a math PhD before I decided to get out of academia and into startups. Since then, the older I get the more of a Platonist I become, especially now that I've taught my daughters a bunch of math (I'm their homeschool math+science teacher). And the more of a Platonist I become, the less I care about who made a particular…"
+        },
+        {
+          "by": "j2kun",
+          "text": "This essay seems to say, \"people don't matter; all that matters is truth.\" And that all the policy decisions should follow from that assumed value. Yikes. I fear for what mathematics will become if that becomes the majority viewpoint."
+        }
+      ],
+      "image": "https://secure.gravatar.com/blavatar/bd4bda4207561b6998f10dec44b570f04ff4072b20f89162d525b186dfca3e49?s=200&ts=1793735642"
+    },
+    {
+      "id": 50350004,
+      "url": "https://twitter.com/guilleflorvs/status/2117379073785696395",
+      "hn": "https://news.ycombinator.com/item?id=50350004",
+      "title": "Revolut moves to self-hosted GLM",
+      "time": 1793699639,
+      "points": 176,
+      "depth": [
+        {
+          "text": "**Revolut** moved its engineers to a **self-hosted coding model**, leaving other coding tools as exceptions",
+          "tier": "simple"
+        },
+        {
+          "text": "The post says **~2,000 engineers** moved to self-hosted GLM for coding, while Claude Code and Codex became exceptions. It reports 56 Nvidia B200s and a blended cost of **30 cents per million tokens**; engineering lead time improved **70%**. It says the gains appeared when tokens stopped being rationed.",
+          "tier": "substance",
+          "data": [
+            [
+              "engineers moved",
+              "~2,000"
+            ],
+            [
+              "Nvidia B200s",
+              "56"
+            ],
+            [
+              "blended cost",
+              "30 cents per million tokens"
+            ],
+            [
+              "engineering lead time improvement",
+              "70%"
+            ],
+            [
+              "cost compared with Anthropic and OpenAI",
+              "roughly a tenth"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters say open models can handle much of the work for less and keep data under company control; skeptics question the savings, setup burden, or correctness on difficult tasks.",
+      "comment_count": 152,
+      "terms": [
+        "self-hosted",
+        "open weights",
+        "tokens",
+        "frontier model",
+        "B200",
+        "API"
+      ],
+      "entities": [
+        "Revolut",
+        "GLM",
+        "Claude Code",
+        "Codex",
+        "David Abitbol",
+        "Nvidia",
+        "B200",
+        "Anthropic",
+        "OpenAI",
+        "vLLM",
+        "pi.dev",
+        "OpenRouter",
+        "AWS",
+        "Claude"
+      ],
+      "comments": [
+        {
+          "by": "littlecranky67",
+          "text": "\"the gains showed up when tokens stopped being rationed\" - I can totally see that. I am leading (as an external consultant) a larger dev team for a huge insurance company. The devs are quite junior or in general more the \"I became a sw-eng here because that company is the only big employer in a 1h radius\" type of people (meaning: No rockstar developers). Most of them do not play with AI in their…"
+        },
+        {
+          "by": "jacquesm",
+          "text": "We did the same thing, on much less powerful hardware but it has served us very well and we don't need to worry at all about the question whether or not the suppliers of inference services can be trusted long term with our data. The answer to that question in my opinion is 'absolutely not'."
+        },
+        {
+          "by": "redmalang",
+          "text": "For the past several months about 90% of the work we do goes to open source models. If you ignore the noise around 'cheap' etc, you might find that with a little extra effort to more precisely define what you need not only do these models generally work as well, and they will generally more closely follow instructions - on longer timeframes this is actually pretty helpful. They are less good on…"
+        },
+        {
+          "by": "gosen",
+          "text": "> Per David Abitbol, who leads AI ops there: 56 Nvidia B200s, a blended 30 cents per million tokens, roughly a tenth of what they paid Anthropic and OpenAI. So they've invested around $2.5M-3M into hardware + monthly operating costs (electricity, updates, cooling). I wonder how much did they spend on tokens to decide to make such a switch. I mean if they used to spend $500k-1M per month just on…"
+        },
+        {
+          "by": "world2vec",
+          "text": "At dayjob we're also using self-hosted GLM-5.3 via our flavour of pi.dev but teams still have discretionary power over using Claude Code or not (there's a team's budget to spend on whatever the team decides). Some teams like mine still like to use Claude Code for a lot of the work but most stuff doesn't require the latest and greatest LLM and can be done with \"lesser\" LLMS by simply throwing a…"
+        }
+      ],
+      "image": "https://pbs.twimg.com/media/HWJxC2yWEAAWYYO?format=webp&name=large"
+    },
+    {
+      "id": 50352257,
+      "url": "https://shkspr.mobi/blog/2026/11/just-a-little-ai-resistance-as-a-treat/",
+      "hn": "https://news.ycombinator.com/item?id=50352257",
+      "title": "Just a little AI resistance, as a treat",
+      "time": 1793715252,
+      "points": 166,
+      "depth": [
+        {
+          "text": "someone called out an **AI-sounding customer service reply** and got a follow-up that felt **more human**",
+          "tier": "simple"
+        },
+        {
+          "text": "After Ocado’s first reply, the writer gave **1 ⭐ scores** on every survey metric and complained that using AI for a genuine complaint was rude. Commenters **disagreed over the follow-up**: several thought the apology was AI-written, while the post’s author said it felt more human.",
+          "tier": "substance",
+          "data": [
+            [
+              "Customer satisfaction survey scores",
+              "1 ⭐"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say the follow-up was AI-written too; others think it may have been human or edited, or say what matters most is whether the issue gets fixed.",
+      "comment_count": 102,
+      "terms": [
+        "triage",
+        "Net Promoter Score",
+        "LLM",
+        "RLHF",
+        "canned response",
+        "sycophantic"
+      ],
+      "entities": [
+        "Terence Eden",
+        "Kate Devlin",
+        "EMFCamp",
+        "AI Resist List",
+        "Ocado",
+        "Lulu",
+        "VW",
+        "GrapheneOS",
+        "Marks & Spencer",
+        "ChatGPT",
+        "Claude",
+        "Pangram",
+        "Sapling",
+        "Rodney Brooke",
+        "Mastodon",
+        "Hacker News"
+      ],
+      "comments": [
+        {
+          "by": "mixedmath",
+          "text": "The second response reads as very much written by AI to me too."
+        },
+        {
+          "by": "jjgreen",
+          "text": "I never contact customer service with a complaint, I just don't use them again. But I have, very occasionally, contacted customer service with a \"could you pass on my thanks to ...\" for a particularly good product or service. The last a couple of months ago to Marks & Spencer for whoever it was who discovered their Len de l'Ell wine, which is fabulous. I was so insulted by the AI response that…"
+        },
+        {
+          "by": "delichon",
+          "text": "As a grumpy misanthrope I welcome the trend of overly sycophantic AIs increasing the value of borderline rude thank you messages as a sign of actual human responses, increasing the demand for grumpy misanthropes on staff, and hope that AI can't emulate us well soon."
+        },
+        {
+          "by": "PcChip",
+          "text": "I'm fairly certain that second response is AI as well, unfortunately"
+        },
+        {
+          "by": "hyperionultra",
+          "text": "Default llm gened text can be easily detected, but if operator provide sufficient style guide - it is almost undetectable. The second response was also llm, just with little bit of style guide."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50346164,
+      "url": null,
+      "hn": "https://news.ycombinator.com/item?id=50346164",
+      "title": "Ask HN: Does anyone have a contact with Cleveland-area Ham club?",
+      "time": 1793664576,
+      "points": 161,
+      "depth": [
+        {
+          "text": "someone is looking for a Cleveland-area **ham club contact**, and commenters are **helping connect** them",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter suggested contacting the Case club, W8EDU, and offered to help make contacts. Another says they’ve **exchanged info** and reached the **best chance at avoiding the landfill**—though nothing is guaranteed.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 23,
+      "terms": [
+        "ham"
+      ],
+      "entities": [
+        "Case club",
+        "W8EDU"
+      ],
+      "comments": [
+        {
+          "by": "stockresearcher",
+          "text": "I am shocked at the reception, and I've contacted someone through this post. We've exchanged info and I'm happy to report that while nothing is guaranteed, the best chance at avoiding the landfill has been achieved!"
+        },
+        {
+          "by": "Radio2034",
+          "text": "I'm in the area and a ham, though not part of the club. I suggest you also get in touch with the Case club, W8EDU. Feel free to shoot me an email as well and I might be able to help make some contacts (pun intended). Email in profile for the next few hours."
+        },
+        {
+          "by": "SkipperCat",
+          "text": "I clicked on this so wanting it to be about lunch meat. Still, dear poster, I hope you find what you’re looking for."
+        },
+        {
+          "by": "gradous",
+          "text": "I know a guy in the area who's on ham and into radio, I'll drop him a link to your post and see what he knows."
+        },
+        {
+          "by": "mathfailure",
+          "text": "How does a post like this get onto the 1st page of HN?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50339913,
+      "url": "https://momentic.ai/",
+      "hn": "https://news.ycombinator.com/item?id=50339913",
+      "title": "Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app",
+      "time": 1793639125,
+      "points": 158,
+      "depth": [
+        {
+          "text": "Momentic built **QA agents** that explore your app and catch **bugs** without writing test scripts",
+          "tier": "simple"
+        },
+        {
+          "text": "Mo builds a **DAG** as it explores, then sends large product areas to **parallel agents**. In a 60-minute benchmark across four open-source apps, it found **269 bugs**; Codex found 86, with higher precision and lower cost per bug.",
+          "tier": "substance",
+          "data": [
+            [
+              "Mo bugs found",
+              "269"
+            ],
+            [
+              "Mo recall",
+              "19.3%"
+            ],
+            [
+              "Mo precision",
+              "84%"
+            ],
+            [
+              "Mo cost per bug",
+              "$2.67"
+            ],
+            [
+              "Codex bugs found",
+              "86"
+            ],
+            [
+              "Codex recall",
+              "6.2%"
+            ],
+            [
+              "Codex precision",
+              "86%"
+            ],
+            [
+              "Codex cost per bug",
+              "$0.80"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see value in Mo's broad bug-finding; others want evidence on false alarms, cost, and neutral benchmarks before trusting the counts.",
+      "comment_count": 124,
+      "terms": [
+        "QA",
+        "DAG",
+        "recall",
+        "precision",
+        "agent harness",
+        "end-to-end testing",
+        "false positive",
+        "deploy preview"
+      ],
+      "entities": [
+        "Momentic",
+        "Mo",
+        "Wei-Wei",
+        "Jeff",
+        "Robinhood",
+        "Retool",
+        "WeWork",
+        "Qualtrics",
+        "Playwright",
+        "Selenium",
+        "Maestro",
+        "Nat Friedman",
+        "GPT-3",
+        "DeepSWE",
+        "Sonnet",
+        "Opus",
+        "Codex",
+        "Claude Code",
+        "Devin",
+        "Gitea",
+        "Metabase",
+        "Twenty",
+        "Saleor",
+        "E2B",
+        "Browserbase",
+        "GPT-6.1 Sol",
+        "Vercel",
+        "Cloudflare",
+        "Vostride",
+        "agent-qa",
+        "AndroidWorld",
+        "AppControlBench"
+      ],
+      "comments": [
+        {
+          "by": "quiet_workbench",
+          "text": "The recording and steps part is what caught my eye. A bug report with just a description usually turns into a bunch of back and forth before anyone can reproduce it, so having the actual steps there sounds like it would save a lot of that. I am curious how that holds up on the borderline ones though. When a report is not clearly a bug, does that same evidence make it faster to close out, or does…"
+        },
+        {
+          "by": "haukebri",
+          "text": "I drive a real browser against websites as my job, so I've been on the buyer side of this. What decides whether I keep an agent in the loop isn't how many bugs it finds, it's whether I trust the red result without redoing the check myself. Two things bit me early. Agent written assertions drift to whatever is stable to assert: page copy, a fixed config value, an element existing. Those stay green…"
+        },
+        {
+          "by": "JulianPaul",
+          "text": "Why is this better than running Opus 5.5 directly against my app with a custom Playwright-based harness for in my own subscription?"
+        },
+        {
+          "by": "pranshuchittora",
+          "text": "Good to see Momentic's demo. We at Vostride are building something similar, but we feel the verification layer should be open for verification, too. We built agent-qa ( https://github.com/vostride/agent-qa ), an open-source self-improving QA agent. The harness becomes outdated every 3 to 6 months. Unfortunately, the big players are unable to maneuver their ships and are already outdated—even…"
+        },
+        {
+          "by": "beavisringdin",
+          "text": "Questions: - I would always pick an open source tool I can strap to my custom harness over using a service like this. Do you somehow expect that no such competitor will arrive that performs as well? - If you are YC 2024 what have you been doing for 2 years? - The real edge here would be supporting mobile development builds on real devices, is this on your roadmap and if so what's your plan to…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50340159,
+      "url": "https://polyend.com/whats-up/tracker-the-biggest-update-yet/",
+      "hn": "https://news.ycombinator.com/item?id=50340159",
+      "title": "Polyend releases the Tracker firmware source code",
+      "time": 1793640013,
+      "points": 152,
+      "depth": [
+        {
+          "text": "Polyend released **Tracker firmware source code** for people to modify and share, with a **recovery system**",
+          "tier": "simple"
+        },
+        {
+          "text": "The new **Community Edition 1.0** installs on all three instruments, with **six effects and generators** in the Sample Editor. Tracker+ and Tracker Mini also get **CHIP and DIRT synths**.",
+          "tier": "substance",
+          "data": [
+            [
+              "included effects and generators",
+              "Six"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 70,
+      "terms": [
+        "firmware",
+        "source code",
+        "plugin",
+        "synth",
+        "SDK",
+        "bricking"
+      ],
+      "entities": [
+        "Polyend",
+        "Tracker",
+        "Tracker+",
+        "Tracker Mini",
+        "Tracker Community Edition",
+        "GitHub",
+        "CHIP",
+        "DIRT"
+      ],
+      "comments": [
+        {
+          "by": "consumer451",
+          "text": "This has to be related to MWAVE's FM-1 viral popularity, largely due to open firmware right? https://arstechnica.com/gadgets/2026/10/from-impulse-purchas... https://github.com/aroum/fm1-custom-fw see also: > Reverse Engineering of the M-VAVE FM-1 Pocket Synthesizer Firmware https://news.ycombinator.com/item?id=49994065 (75 points - 50 comments)"
+        },
+        {
+          "by": "sebastienbarre",
+          "text": "For people afraid of bricking their units, I can't stress enough how groundbreaking it is that they're acknowledging that risk and still offering to repair your unit. You pay of course, because this is a risk you took, but at least they will have a look at it: \"Out-of-Warranty Repairs Available: In the unlikely event that something ever goes wrong with your hardware while using custom firmware…"
+        },
+        {
+          "by": "knvlt",
+          "text": "Two days ago I (that is, AI) started to mod my modal electronics Cobalt8 after trying the model:cycles mods. Half a day of setup and i had my first curtis-style filter on the synth. 2 days of low intensity prompting and I have - 3 Filters: Curtis, 303, Steiner Parker - An additional noise source - The oscillators from braids - Prophet08-ish oscillators in a stable and instable fashion - a…"
+        },
+        {
+          "by": "dimatura",
+          "text": "The avalanche of reverse engineered/custom firmwares is definitely changing the synth landscape. I'm wondering how many other companies will start open sourcing. It isn't always trivial since sometimes there's proprietary software components or toolchains that can't be open sourced. But it's hard to imagine it won't be more common.\nThere's a lot of mixed feelings in the community. A lot of…"
+        },
+        {
+          "by": "gregsadetsky",
+          "text": "Relatedly, Erika Synths released the source code of the LXR-02 very recently as well: https://www.ericasynths.lv/news/post/lxropen (I/AI had fun porting it to wasm/web! I don't want to seem too self-link'y, so if anyone asks, happy to share the link) I also have a Polyend Tracker for sale if anyone's in the market..! It's a great device, I'm just trying to focus on having less right now."
+        }
+      ],
+      "image": "https://polyend-website.fra1.digitaloceanspaces.com/wp-content/uploads/2026/11/02162002/tracker-1.jpeg"
+    },
+    {
       "id": 50341462,
       "url": "https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432",
       "hn": "https://news.ycombinator.com/item?id=50341462",
@@ -1296,6 +2898,120 @@
     }
   ],
   "glossary": {
+    "weights": "Stored values a trained network uses when it works out what to produce.",
+    "PPO": "Proximal Policy Optimization: a way to train a model by rewarding choices that work.",
+    "reasoning loops": "When a model gets stuck repeating a reasoning pattern instead of finishing.",
+    "gradient": "A signal that tells training which small changes are likely to make the model less wrong.",
+    "steering vector": "A set of changes used to nudge a model toward or away from a kind of response.",
+    "contrastive analysis": "Comparing examples from two groups to find differences linked to a behavior.",
+    "forward pass": "One run through a model to produce an answer, rather than building it one piece at a time.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "startup hook": "A small instruction or action that runs automatically when a program starts.",
+    "MCP": "Model Context Protocol: a standard way for AI apps to connect to outside tools.",
+    "jailbreaking": "Changing an iPhone to get around some of Apple's built-in limits.",
+    "root access": "Permission to control nearly everything on a device.",
+    "firmware": "The built-in software that tells a device's hardware how to work.",
+    "reverse engineering": "Figuring out how a program works by examining the program itself.",
+    "DRM": "Digital Rights Management: restrictions in software that control how it can be copied or used.",
+    "CID": "Card Identification: a unique ID stored on an SD card that can help a device check whether it is the expected card.",
+    "CAN bus": "Controller Area Network bus: a shared connection in a car that lets its electronic parts send messages to one another.",
+    "Elo": "A score that estimates how strong a player is by comparing their wins and losses against other players.",
+    "NNUE": "Efficiently Updatable Neural Network: a part of a chess engine that quickly scores how favorable a board position is.",
+    "classical time controls": "Chess games where each player gets a long time to think, rather than having to move quickly.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "AI": "Artificial intelligence: computer systems designed to do tasks people associate with thinking.",
+    "GenAI": "Generative AI: tools that make new text, images, or code from instructions.",
+    "traditional machine learning": "A way for software to learn patterns from examples and use them to make guesses.",
+    "OAuth": "A way to let an app access parts of an account without being given the password.",
+    "RankBrain": "A Google system that helps sort search results based on what someone is looking for.",
+    "BD-R": "Blu-ray Disc Recordable: a recordable Blu-ray disc format; this tool supports single-layer discs.",
+    "ISO": "A disk-image file that can hold a copy of a disc’s contents.",
+    "WAV+CUE": "A sound file paired with a companion file that helps burning software handle the track.",
+    "IP": "Intellectual property: creative work, characters, or brands that a person or company can have legal rights over.",
+    "model training": "Using examples to teach an AI system how to respond.",
+    "ZDR": "Zero Data Retention: an arrangement where a service does not keep the information you send it.",
+    "cognitive surrender": "Letting an AI’s answer pass without checking it or thinking through other options.",
+    "vibe limit": "The level of change you feel able to make with an AI while still trusting the result.",
+    "technical debt": "Past shortcuts or aging choices that make future work take more effort.",
+    "modularity": "Splitting a system into smaller parts that can be understood or changed without disturbing everything else.",
+    "observability": "Ways to tell what a running program is doing and spot when something goes wrong.",
+    "shadow traffic": "A safe rehearsal where a proposed version gets copies of real incoming requests but cannot affect users.",
+    "RLHF": "Reinforcement Learning from Human Feedback: a way to train an AI by having people rate its answers.",
+    "prediction market": "A game where people make guesses about future events, and those guesses have a price.",
+    "felony": "A serious crime under the law.",
+    "misdemeanor": "A less serious crime than a felony.",
+    "CFTC": "Commodity Futures Trading Commission: a US agency that oversees certain kinds of trading.",
+    "magnetic tape": "A way to store data on a strip of material that records information magnetically.",
+    "LTO": "Linear Tape-Open: a type of magnetic tape used for storing and backing up data.",
+    "air-gap": "Keeping a backup disconnected from other computers so an online attack cannot reach it.",
+    "ransomware": "Malicious software that blocks access to files or systems and demands money to restore it.",
+    "capex": "Capital expenditure: money spent up front on equipment or building something.",
+    "cold storage": "Keeping crypto offline to make it harder to steal through an internet attack.",
+    "ontology": "The question of what is ultimately real, rather than just useful in a model.",
+    "metadata": "Information describing stored data, like table names or row counts, rather than the records themselves.",
+    "SQL": "A language people use to ask a database for information.",
+    "provenance": "The record of where an artwork came from and who owned it.",
+    "lineage": "A trail showing where data came from and how it changed.",
+    "model weights": "The learned settings inside an AI that shape how it responds.",
+    "Weight-Space Programming": "A name for having an AI inspect a model’s stored numbers and change them.",
+    "reinforcement learning": "A way to train an AI by rewarding choices that work and discouraging choices that do not.",
+    "policy network": "A part of a system that chooses what action to take.",
+    "LoRA": "Low-Rank Adaptation: a way to adapt an AI for a new task by training a small add-on instead of changing the whole AI.",
+    "IP KVM": "Internet Protocol keyboard, video, mouse: a device that lets someone see and control a computer remotely.",
+    "VM": "Virtual machine: a computer that runs inside another computer.",
+    "NIC": "Network Interface Card: the part of a computer that connects it to a network.",
+    "peer-to-peer": "A setup where computers talk directly to each other instead of relying on one central server.",
+    "FileVault": "A macOS feature that locks the contents of a Mac's drive until it is unlocked.",
+    "APFS": "Apple's system for organizing files on storage.",
+    "IPC": "Inter-process communication: a way for separate programs on one computer to exchange information.",
+    "Xcode": "Apple's app for building apps for its devices.",
+    "alpha development": "A stage when software is still being tested and developed, before it is called finished.",
+    "breaking change": "A change that can make code written for an older release stop working.",
+    "peripheral API": "Application Programming Interface: the controls a program uses to communicate with attached hardware.",
+    "package manager": "A tool that installs software and can keep it updated for you.",
+    "mixin": "A way to let different kinds of objects reuse the same code.",
+    "firmware envelope": "A way to customize a device's built-in software without rebuilding the tools used to make it.",
+    "SDK": "Software Development Kit: tools a company provides so people can make apps for its device.",
+    "runtime": "The software that runs a program while it is being used.",
+    "bytecode": "A set of instructions that a program can run through an interpreter.",
+    "AOT": "Ahead-of-time compilation: turning a program into an executable before it runs.",
+    "RISC-V": "A processor design that sets out the basic instructions software runs on.",
+    "RVA23": "A set of required features for certain RISC-V chips, so software can rely on those features being there.",
+    "reference stack": "A set of software pieces designed and tested to work together, which others can use as a starting point.",
+    "hypervisor": "Software that lets one computer run another operating system in a controlled environment.",
+    "IOMMU": "Input-Output Memory Management Unit: hardware that restricts which memory a device can access.",
+    "SoC": "System on a Chip: a computer’s main processing parts built together on one chip.",
+    "RTOS": "Real-time operating system: software designed to react to events within predictable time limits.",
+    "devicetree": "A description of the hardware that helps software know which devices the computer has.",
+    "CTE": "Chronic traumatic encephalopathy: a brain disease linked to repeated head impacts that can only be confirmed after death.",
+    "autopsy": "An examination of a body after death to look for signs of disease or injury.",
+    "tau": "A protein in the brain that can build up after repeated blows to the head.",
+    "p-value": "A measure researchers use to judge whether a result might be explained by chance.",
+    "Platonic perspective": "The view that mathematical truths exist whether or not people discover them.",
+    "axiomatic system": "A set of starting rules used to prove other mathematical statements.",
+    "conjecture": "A mathematical idea believed to be true but not yet proved.",
+    "self-hosted": "Running a service on a computer you control rather than relying on someone else's.",
+    "open weights": "The model's learned settings are available for people to download and run themselves.",
+    "tokens": "Small pieces of text an AI counts as it reads or writes; they can affect how much a request costs.",
+    "frontier model": "One of the most capable, newest AI models available.",
+    "B200": "A type of computer chip built for heavy AI work.",
+    "triage": "Sorting incoming requests so the important or urgent ones get handled first.",
+    "Net Promoter Score": "A customer survey score based on how likely people say they are to recommend a company.",
+    "canned response": "A prewritten reply that can be reused for similar messages.",
+    "sycophantic": "Overly flattering or eager to agree, often to make someone feel pleased.",
+    "ham": "Someone who uses amateur radio as a hobby.",
+    "QA": "Quality assurance: checking that software works as expected before people rely on it.",
+    "DAG": "Directed acyclic graph: a map of connected steps that can branch but not loop back.",
+    "recall": "How many of the truly nearest matches a search actually returns.",
+    "precision": "How many digits of a number a calculator can represent accurately.",
+    "agent harness": "The surrounding software that runs an AI agent and helps manage its work.",
+    "end-to-end testing": "Checking a whole user journey in an app, from the first step to the last.",
+    "false positive": "A system reports a match even though the person is not the one it was looking for.",
+    "deploy preview": "A version of an app made available to check before a change goes live.",
+    "source code": "The written instructions that tell a computer how to run a program.",
+    "plugin": "An add-on that gives an app extra tools or features.",
+    "synth": "An electronic instrument that makes sound and lets you shape it.",
+    "bricking": "Breaking a device so badly that it stops working.",
     "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
     "CVSS": "Common Vulnerability Scoring System: a scale people use to rate how serious a security flaw is.",
     "LTS": "Long-term support: a release its makers promise to support for an extended period.",
@@ -1357,7 +3073,6 @@
     "Kafka partition": "A group of Kafka messages kept in order; later messages cannot be confirmed until earlier ones are done.",
     "Quicksilver": "Cloudflare's storage system for DNS data, which it spreads across its network.",
     "p99": "The time within which 99% of measured events finished.",
-    "capex": "Capital expenditure: money spent up front on equipment or building something.",
     "H1B": "A US work visa that lets employers hire some workers from abroad for specialized jobs.",
     "offshoring": "Moving work to another country instead of doing it where the company is based.",
     "asynchronous work": "Work people do at different times, rather than needing everyone to be online together.",
@@ -1383,9 +3098,7 @@
     "authorised biography": "A book about someone written with their permission and cooperation.",
     "stakeholders": "People or groups with an interest in, or affected by, a decision.",
     "frontier AI": "The most capable AI systems being built at a particular time.",
-    "model weights": "The learned settings inside an AI that shape how it responds.",
     "FLOPs": "Floating-point operations: a count of computer math steps, used here as a measure of how much compute a run takes.",
-    "export control": "A government rule that limits sending certain goods or technology across borders.",
-    "open weights": "The model's learned settings are available for people to download and run themselves."
+    "export control": "A government rule that limits sending certain goods or technology across borders."
   }
 }
