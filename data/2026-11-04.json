@@ -1,0 +1,803 @@
+{
+  "date": "2026-11-04",
+  "cards": [
+    {
+      "id": 50354358,
+      "url": "https://neufangled.com/",
+      "hn": "https://news.ycombinator.com/item?id=50354358",
+      "title": "Stringman, an $800 open-source room scale gripper robot",
+      "time": 1793724449,
+      "points": 510,
+      "depth": [
+        {
+          "text": "someone built Stringman, a **cable-suspended robot** that carries a gripper across an **entire room**",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: fans like that it uses overhead space; skeptics doubt the cables will work in a household and worry someone could yank them.",
+      "comment_count": 176,
+      "terms": [
+        "payload capacity",
+        "fiducial tags",
+        "inverse kinematics"
+      ],
+      "entities": [
+        "Stringman",
+        "Neufangled Robotics",
+        "Nathaniel",
+        "Raspberry Pi",
+        "Python",
+        "LeRobot",
+        "Pi.05",
+        "JEPA",
+        "Multitask DiT",
+        "Hugging Face",
+        "MuJoCo",
+        "TheRobotStudio",
+        "SO-ARM100",
+        "SO-101",
+        "Hangprinter",
+        "Skycam",
+        "Maslow CNC",
+        "Gridfinity",
+        "OSHWA"
+      ],
+      "comments": [
+        {
+          "by": "nhnifong",
+          "text": "Hi there, I'm Nathaniel, the creator of this robot. Thanks for posting it :)\nIf you have any questions feel free to ask. Can it kill you? no probably not. The tension limit kicks in and lets the line out if you pull too hard. Will it work in a room with a ceiling fan? usually its fine since you can lower the work area ceiling to exclude the fan. Will it make my kids learn to not pick up after…"
+        },
+        {
+          "by": "histk_garden",
+          "text": "I made a big one for my garden. It is like a that scene in honey i shrunk the kids with Rick Moranis laying in that cantilevered flying cot thing but i use 2 high speed winches and some machined aluminum and the cabling sort of like an etch a sketch controls. I control it with the same usb gamepad that titanic sub imploded with. i can raise and lower myself about 4 feet to get inbetween the rows…"
+        },
+        {
+          "by": "bigwheels",
+          "text": "It's an interesting concept, but I think I'll hold out for the full-body humanoid version. There is an undeniable allure to the idea of a bipedal chassis realizing I'm an inefficient drain on corporate resources, then stabbing me to death while I sleep due to a minor Terms of Service violation."
+        },
+        {
+          "by": "barbazoo",
+          "text": "> Tension is all you need Rarely does a product announcement make me laugh out loud :) ( https://en.wikipedia.org/wiki/Attention_Is_All_You_Need )"
+        },
+        {
+          "by": "goda90",
+          "text": "I kind of want to try something like this for garden weeding. Put a small spinning blade instead of a grabber arm on it. Computer vision can identify any weeds popping up and it'll go over and cut them before they get too big/woody for the blades. The challenge would be dodging taller plants and probably the forces that the blade would put on it."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50358562,
+      "url": "https://webkit.org/blog/18541/introducing-adaptive-dark-mode/",
+      "hn": "https://news.ycombinator.com/item?id=50358562",
+      "title": "Safari introduces Adaptive Dark Mode in 27.3",
+      "time": 1793741945,
+      "points": 389,
+      "depth": [
+        {
+          "text": "Safari can turn **bright websites** dark even when their creators never added **dark mode**",
+          "tier": "simple"
+        },
+        {
+          "text": "**Almost 40%** of page loads come from users in dark mode, but **only 10%** support it. In Safari 27.3 beta, it estimates whether a page is mostly light or dark, transforms light pages, and leaves sites that declare dark-mode support alone. JavaScript still gets the **original authored colors**, so websites can’t detect the change.",
+          "tier": "substance",
+          "data": [
+            [
+              "web page loads from users in dark mode",
+              "Almost 40%"
+            ],
+            [
+              "page loads supporting dark mode",
+              "10%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: dark-mode users welcome browsers darkening bright sites; people with astigmatism say white-on-black is hard to read and want dark sites turned light.",
+      "comment_count": 211,
+      "terms": [
+        "color-scheme",
+        "CSS",
+        "HTML",
+        "SVG",
+        "canvas",
+        "contrast ratio",
+        "WCAG",
+        "fingerprinting"
+      ],
+      "entities": [
+        "Safari",
+        "WebKit",
+        "Apple",
+        "Simon Fraser",
+        "Luming Yin",
+        "Lily Spiniolas",
+        "Joanne Pan",
+        "Veda Periwal",
+        "Jen Simmons",
+        "CSS",
+        "HTML",
+        "JavaScript",
+        "SVG",
+        "WCAG",
+        "Feedback Assistant"
+      ],
+      "comments": [
+        {
+          "by": "kickingvegas",
+          "text": "FYI, light-dark() in CSS is a thing now. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/V..."
+        },
+        {
+          "by": "nsoam",
+          "text": "I want the opposite. I suffer from astigmatism, which makes white on black hard to read. I wish Safari could turn dark mode websites into light mode websites."
+        },
+        {
+          "by": "marcellosso",
+          "text": "I use dark mode for everything, so I'm pretty happy about this. Some sites were clearly designed to be light, and forcing dark on them could break the experience, but that's exactly what `color-scheme: light only` is for, and it's good that Safari respects it. Other than that it feels like a win-win to me: great for dark mode users, and for devs not much changes, you just add \"light only\" if you…"
+        },
+        {
+          "by": "greazy",
+          "text": "Everyone should checkout Dark Reader extension, it's been doing adaptive dark mode for many years, and it's customisable. It even does light mode too. Using it in Firefox on HN right now!"
+        },
+        {
+          "by": "JulianPaul",
+          "text": "Am I still the only one who doesn't use dark mode? My astigmatism can't take it"
+        }
+      ],
+      "image": "https://webkit.org/wp-content/uploads/Demo-of-Adaptive-Dark-Mode_light.png"
+    },
+    {
+      "id": 50358422,
+      "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
+      "hn": "https://news.ycombinator.com/item?id=50358422",
+      "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
+      "time": 1793741204,
+      "points": 326,
+      "depth": [
+        {
+          "text": "US tech giants' **AI obligations** reportedly **nearly doubled** to **$3.2 trillion** in six months",
+          "tier": "simple"
+        },
+        {
+          "text": "The article says Google, Meta and others' **commitments and obligations** reach **80% of assets**. In comments, people dispute the word **“debt”**: one calls them future-spending contracts, while another points to data-center leases and power commitments stretching decades.",
+          "tier": "substance",
+          "data": [
+            [
+              "reported increase",
+              "90%"
+            ],
+            [
+              "reported obligations",
+              "$3.2tn"
+            ],
+            [
+              "time period",
+              "6 months"
+            ],
+            [
+              "share of assets",
+              "80%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: critics warn about company finances and market risk; others say the debt label is misleading because the figures include future contracts and long-term data-center commitments.",
+      "comment_count": 142,
+      "terms": [
+        "off-balance-sheet debt",
+        "RPO",
+        "CapEx",
+        "AGI",
+        "inference"
+      ],
+      "entities": [
+        "Google",
+        "Meta",
+        "Amazon",
+        "Anthropic",
+        "OpenAI",
+        "Microsoft",
+        "Alphabet",
+        "Apple",
+        "xAI",
+        "Claude",
+        "Ray Dalio",
+        "Nikkei Asia",
+        "Reuters"
+      ],
+      "comments": [
+        {
+          "by": "ggm",
+          "text": "I very much hope this, and other threads on the financially insane behaviour of the tech sector get more surface. I don't think having this die in \"new\" is helpful because this stuff, the norms of how business looks at the balance sheet and decides what is, and is not rational business investment, this stuff is -> important <- This is a significant proportion of the market. Having this amount of…"
+        },
+        {
+          "by": "freediddy",
+          "text": "THIS IS NOT DEBT. With debt you are given money that you can spend, and then you have to pay interest for a while and then return all the money you spent. These are signed contracts for future spending. However, we don't know what the terms are for those contracts and how easy it is to get out of them. For example, with Anthropic and Google's contracts with xAI's compute, they signed a long term…"
+        },
+        {
+          "by": "whatever1",
+          "text": "The company budgets cannot sustain this. Behemoths like Google and Amazon with insane balance sheets are now on their knees begging for loans. We (as a country) should contain our exposure to this insanity. If companies want to go bankrupt let them go, but we cannot strangle the liquidity of the entire market to feed the ambitions of these handful of companies."
+        },
+        {
+          "by": "treis",
+          "text": "This is quite misleading. It includes numbers for commitments for leases of data centers and payments for power that are decades into the future. Even if AI completely busts and all of these servers are worthless that doesn't mean the data centers are. There's still a need for data centers to host non-AI servers. The hyperscalers will close/sell other data centers and serve from places where they…"
+        },
+        {
+          "by": "keeda",
+          "text": "Well, good thing the tech giants have aggregate RPO (Remaining Performance Obligations, also known as \"backlogs\") -- that is, money committed to be spent by customers over the next 3 - 6 years -- of $2.33T. Sure 2.33T is less than 3.2T but these RPOs were $0.5T in 2022, and have been growing YoY at rates of anything from 84% (Microsoft) to 390% (Google.) Microsoft and Google alone are expected to…"
+        }
+      ],
+      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fcms-image-bucket-productionv3-ap-northeast-1-a7d2.s3.ap-northeast-1.amazonaws.com%2Fimages%2F9%2F1%2F3%2F4%2F13394319-2-eng-GB%2Faad3b104a912-photo_SXM2026103100004660.jpg?fit=cover&gravity=faces&dpr=2&quality=medium&source=nar-cms&format=jpg&width=1260&height=630"
+    },
+    {
+      "id": 50358582,
+      "url": "https://arxiv.org/abs/2605.29713",
+      "hn": "https://news.ycombinator.com/item?id=50358582",
+      "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
+      "time": 1793742053,
+      "points": 308,
+      "depth": [
+        {
+          "text": "someone wrote a **compact guide** to the math connecting major families of **generative models**",
+          "tier": "simple"
+        },
+        {
+          "text": "Tianhua Chen’s **195-page revised preprint** connects PCA, variational autoencoders, diffusion models, GANs, and other model families through their mathematical derivations. It says **visual explanations** were added throughout.",
+          "tier": "substance",
+          "data": [
+            [
+              "pages",
+              "195 pages"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 49,
+      "terms": [
+        "generative model",
+        "PCA",
+        "probabilistic PCA",
+        "variational autoencoder",
+        "diffusion model",
+        "normalising flow",
+        "autoregressive factorisation",
+        "GAN",
+        "Wasserstein GAN",
+        "energy-based model",
+        "linear algebra"
+      ],
+      "entities": [
+        "The Little Book of Generative AI Foundations",
+        "Tianhua Chen",
+        "arXiv"
+      ],
+      "comments": [
+        {
+          "by": "nh23423fefe",
+          "text": "I don't like: > Changing coordinates. Given a vector x expressed in the standard basis, we change coordinates by applying x_eig = V^−1 x.\n> This operation does not change the vector itself; it only changes how the vector is represented, converting it into eigenvector coordinates. I'm sure the author knows about the difference between the vector and a coordinate vector given a basis. I just don't…"
+        },
+        {
+          "by": "hasteg",
+          "text": "Another book which I would highly recommend for learning the math (or at least getting a very good idea of how it works) behind machine learning/transformers is \"Why Machines Learn: The Elegant Math Behind Modern AI\" by Anil Ananthaswamy. I read it this past year and I found it was extremely good at pacing and building up intuition to the \"how and why\" of most important math concepts and…"
+        },
+        {
+          "by": "p1esk",
+          "text": "Wow, this book is surprisingly readable! I like how he starts from basics of linear algebra."
+        },
+        {
+          "by": "prideout",
+          "text": "My favorite little book is François Fleuret's: The Little Book of Deep Learning\nhttps://fleuret.org/francois/lbdl.html"
+        },
+        {
+          "by": "nblgbg",
+          "text": "Are there any deep learning books with some problems to solve ?"
+        }
+      ],
+      "image": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png"
+    },
+    {
+      "id": 50346755,
+      "url": "https://hackertv.org",
+      "hn": "https://news.ycombinator.com/item?id=50346755",
+      "title": "Show HN: HackerTV – HN's most-recommended Youtube videos as 24/7 TV channels",
+      "time": 1793668689,
+      "points": 275,
+      "depth": [
+        {
+          "text": "someone turned HN's most-recommended YouTube videos into channels you can **flip through like TV**",
+          "tier": "simple"
+        },
+        {
+          "text": "The recommendations were pulled from **19 years of HN comments**. Channels include DEVTV, SOLDER, RETRO, and ORBIT, plus **HN Prime** (the top 400), a music channel, and Late Night on ch 99, which broadcasts **11pm-5am your local time** and shows color bars otherwise. HackerTube supplied the data, and the creator built the app with Claude Code in a few hours.",
+          "tier": "substance",
+          "data": [
+            [
+              "HN comment history",
+              "19 years"
+            ],
+            [
+              "HN Prime",
+              "top 400"
+            ],
+            [
+              "Late Night channel",
+              "ch 99"
+            ],
+            [
+              "Late Night broadcast hours",
+              "11pm-5am"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 57,
+      "terms": [
+        "Algo fatigue",
+        "API",
+        "sideloadable",
+        "BrightScript/SceneGraph",
+        "vibe coding"
+      ],
+      "entities": [
+        "HackerTV",
+        "HackerTube",
+        "YouTube",
+        "Claude Code",
+        "HN Prime",
+        "DEVTV",
+        "SOLDER",
+        "RETRO",
+        "ORBIT",
+        "Late Night",
+        "Roku",
+        "BrightScript",
+        "SceneGraph",
+        "HackerTldr",
+        "Sanctum",
+        "FlowTube",
+        "Spelunkr",
+        "Internet Archive",
+        "Apple",
+        "Zuck"
+      ],
+      "comments": [
+        {
+          "by": "spditner",
+          "text": "What I would like to see for vibe coded novelty apps that are not realistically going to see updates are the prompts-as-source. For instance, I one-shotted a Roku app to play the HackerTube listings, and it works good enough: Build a sideloadable Roku channel/app for browsing and playing videos from\nhttps://hackertube.org/. Inspect HackerTube's API or video pages and use…"
+        },
+        {
+          "by": "asimjalis",
+          "text": "Nice. I like this. One minor usability issue I saw. In the guide, the channels start with the lowest on top and then go down to the higher ones. But the up and down arrows work the opposite way. For example, the down arrow moves me to a lower channel, which is the opposite direction of the guide. Maybe there is no elegant solution to this."
+        },
+        {
+          "by": "5555watch",
+          "text": "Oh damn this is much cooler than I expected! For some reason skimming through channels is more enjoyable than click a video I'd probably wouldn't click on"
+        },
+        {
+          "by": "tesnorindian",
+          "text": "Looks really cool. Got me back to my old TV days."
+        },
+        {
+          "by": "thechairman12",
+          "text": "Okay, this is the best one I have seen. Thank you."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50358702,
+      "url": "https://www.interdb.jp/pg/index.html",
+      "hn": "https://news.ycombinator.com/item?id=50358702",
+      "title": "The Internals of PostgreSQL",
+      "time": 1793742666,
+      "points": 228,
+      "depth": [
+        {
+          "text": "someone explains how **PostgreSQL works inside**, from **query processing** to storage",
+          "tier": "simple"
+        },
+        {
+          "text": "It has chapters on **query processing**, the **buffer manager**, and write-ahead logging, and covers versions **19-beta and earlier** except the new buffer page lock mechanism. One commenter says HOT only kicks in when no indexed column changes and the new tuple fits on the same page.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 13,
+      "terms": [
+        "HOT",
+        "tuple",
+        "WAL",
+        "TOAST",
+        "MVCC"
+      ],
+      "entities": [
+        "PostgreSQL",
+        "Hironobu SUZUKI",
+        "MySQL",
+        "Japan PostgreSQL Users Group"
+      ],
+      "comments": [
+        {
+          "by": "dang",
+          "text": "Related: The Internals of PostgreSQL - https://news.ycombinator.com/item?id=43241404 - March 2025 (40 comments) The Internals of PostgreSQL - https://news.ycombinator.com/item?id=30372750 - Feb 2022 (19 comments) The Internals of PostgreSQL - https://news.ycombinator.com/item?id=30086374 - Jan 2022 (39 comments) Internals of PostgreSQL - https://news.ycombinator.com/item?id=18950460 - Jan 2019…"
+        },
+        {
+          "by": "gopalv",
+          "text": "The latest Jepsen report on particledb triggered a new found interest in the SSI implementation in postgres. If you are just skimming this doc, The HoT update path is the section I would jump to. Understand HoT and then read the zHeap implementation notes (also of TOAST) puts a good mental model of what postgres does and what it doesn't do."
+        },
+        {
+          "by": "jon128",
+          "text": "Didn't find the new MVCC in there. https://www.orioledb.com/"
+        },
+        {
+          "by": "favori995749721",
+          "text": "Chapter 12 (full-text search) quietly changed under this book in Postgres 18: FTS now reads its dictionaries and config through the cluster's default collation provider instead of always libc, so clusters on ICU or the new builtin PG_UNICODE_FAST can see different behavior in FTS and pg_trgm — the release notes explicitly tell you to reindex those indexes after pg_upgrade. Also in 18, LIKE with…"
+        },
+        {
+          "by": "getbrew",
+          "text": "The HOT chapter is the one with the most direct practical payoff. Two things worth knowing from it: HOT only kicks in when no indexed column changes and the new tuple fits on the same page, so an index on a frequently-updated column (status, updated_at) quietly disables it for every update to that table. And lowering fillfactor (say 80-90) on update-heavy tables leaves free space on each page so…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50360164,
+      "url": "https://andreasfertig.com/blog/2026/11/cpp26-dis-failed-how-does-cpp-survive/",
+      "hn": "https://news.ycombinator.com/item?id=50360164",
+      "title": "C++26 Disapproved",
+      "time": 1793752402,
+      "points": 223,
+      "depth": [
+        {
+          "text": "C++’s next standard **hit a wall** after national bodies voted down its draft over **Contracts**",
+          "tier": "simple"
+        },
+        {
+          "text": "The **C++26 DIS** missed the required **two-thirds majority** after a **twelve-week voting period**; some national bodies said Contracts was not ready. Every available path forward would delay the next standard.",
+          "tier": "substance",
+          "data": [
+            [
+              "voting period",
+              "twelve weeks"
+            ],
+            [
+              "required majority",
+              "two-thirds"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see Contracts as useful for verification and narrowing C++’s safety gap; others say they add little or worsen the language’s complexity.",
+      "comment_count": 120,
+      "terms": [
+        "DIS",
+        "WG21",
+        "NB",
+        "Contracts",
+        "formal methods"
+      ],
+      "entities": [
+        "C++",
+        "C++26",
+        "C++20",
+        "C++23",
+        "C++29",
+        "Contracts",
+        "ISO",
+        "WG21",
+        "Bjarne Stroustrup",
+        "CBMC",
+        "C",
+        "Ada",
+        "SPARK",
+        "Rust"
+      ],
+      "comments": [
+        {
+          "by": "jandrewrogers",
+          "text": "As someone who writes high-reliability C++ but is completely outside the standards process, I see the issues with C++ Contracts. It isn’t clear that it solves a problem that anyone has in real codebases, especially after C++20 concepts. If you were already writing high-reliability C++ then the benefits are difficult to quantify. If you weren’t writing high-reliability C++ then it saves you almost…"
+        },
+        {
+          "by": "nanolith",
+          "text": "While I can understand that C++ contracts were met with controversy, contract annotations scoped at analysis time that can be verified by external tools, such as static analyzers, model checkers, or automatic theorem provers, are incredibly useful. I put together an alternative function contract and invariant mechanism in C using CBMC and custom macros that effectively allows me to perform formal…"
+        },
+        {
+          "by": "LugosFergus",
+          "text": "I get why some folks would like to see contracts in the language, but C++ is also buckling due to the shear complexity that's getting tacked on to it. I'd rather see more proposals such as C++26's \"erroneous behavior\" that attempts to reign in the language's shortcomings."
+        },
+        {
+          "by": "Sophira",
+          "text": "This article makes it sound the options are normally approval, rejection and abstention, but that this time round a fourth option, \"disapproval\", was reached. It that the case, or are they just trying to say that people rejected it?"
+        },
+        {
+          "by": "skrrtww",
+          "text": "Personally I'd like to see C++ chill out on new features and maybe sort out the shitshow that is char8_t and std::filesystem."
+        }
+      ],
+      "image": "https://andreasfertig.com/img/2026-11-03-cpp26-failed-bs.png"
+    },
+    {
+      "id": 50356994,
+      "url": "https://flipper.net/pages/flipper-one",
+      "hn": "https://news.ycombinator.com/item?id=50356994",
+      "title": "Preparing for the Flipper One Kickstarter and opening pre-orders",
+      "time": 1793734333,
+      "points": 200,
+      "depth": [
+        {
+          "text": "Flipper One is getting ready for **Kickstarter**, with **pre-orders** opening",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter pointed to a quoted spec for a **multi-WAN toolkit**: it says the device can connect up to **5 uplinks**, with dynamic routing, failover, load balancing, firewall rules, use as both a Wi‑Fi hotspot and client, and VPN tunnels. Another wanted a Flipper Zero successor, but said this looks more like a **mini PC**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 87,
+      "terms": [
+        "multi-WAN",
+        "uplink",
+        "dynamic routing",
+        "failover",
+        "load balancing",
+        "firewall rules",
+        "VPN"
+      ],
+      "entities": [
+        "Flipper One",
+        "Kickstarter",
+        "Flipper Zero"
+      ],
+      "comments": [
+        {
+          "by": "phil-martin",
+          "text": "This is the part that sold me: “Multi-WAN network toolkit — connect up to 5 uplinks. Configure dynamic routing, failover, load balancing, and firewall rules. Use it simultaneously as a Wi‑Fi hotspot and client. Tunnel traffic through a VPN and multiple gateways.\n” I haven’t been able to find an off the shelf device that provides this. I travel a fair bit and when sitting in an airport mobile…"
+        },
+        {
+          "by": "vr46",
+          "text": "I already nabbed my coupon for the pre-order last week - looks super cool! My F0 is always close at hand, doing everything from being my go-to trigger for whatever random thing I'm playing with, to being an instant output for any signal I'm trying to read. Plus it's a really fun educational tool for myself and various kids around - I keep a load of little NFC 216 tags around, in my bag, in a…"
+        },
+        {
+          "by": "Daniel_Van_Zant",
+          "text": "I'm curious has anyone tried hooking up abliterated large language models to systems like this for physical pen-testing? I know there has been lots of hype lately on the capabilities of large language models at finding and exploiting bugs in online software. I know very little about physical pen-testing but would large language models also open up vulnerabilities in the kinds of things this…"
+        },
+        {
+          "by": "jubilee33",
+          "text": "I wish they would sell more replacement parts for the old ones. Like the main board or the sub boards.\nI have broken mine twice from daily pocket use in wet environments and I don't feel like scrounging parts anymore."
+        },
+        {
+          "by": "monster_truck",
+          "text": "I really like my zero, I don't use it daily, nor would I want to. But when I do actually need it, for doing something like reading/flashing SPI, I'm very happy I have it."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50333131,
+      "url": "https://spoon-tamago.com/japan-jimi-mundane-halloween-costumes-2026/",
+      "hn": "https://news.ycombinator.com/item?id=50333131",
+      "title": "Japan's Jimi 'Mundane' Halloween Costumes of 2026",
+      "time": 1793593880,
+      "points": 167,
+      "depth": [
+        {
+          "text": "people in Japan turned **everyday awkward moments** into **mundane Halloween costumes** that need explaining",
+          "tier": "simple"
+        },
+        {
+          "text": "The tradition began in **2014** with adults at Daily Portal Z who wanted to join Halloween but felt too embarrassed for witch or zombie costumes. This year's examples include someone about to ask if it’s okay to push their seat back and a person who thought the muddler was a straw.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 29,
+      "terms": [
+        "Jimi Halloween"
+      ],
+      "entities": [
+        "Jimi Halloween",
+        "Daily Portal Z",
+        "Spoon & Tamago"
+      ],
+      "comments": [
+        {
+          "by": "numpad0",
+          "text": "The last one refilling detergent is a parody of The Milkmaid by Johannes Vermeer; everyone has seen it on textbooks and it has become a meme template on Japanese Twitter in recent years. 1: https://en.wikipedia.org/wiki/The_Milkmaid_(Vermeer)"
+        },
+        {
+          "by": "happytoexplain",
+          "text": "Some of these are very humorous because of the cultural disconnect (as an American, I have never experienced somebody asking to put their seat back). \"An expert on a very niche subject\" made me laugh out loud the hardest, because it's the one that's most \"just a guy\", and yet it's also exactly how it's described."
+        },
+        {
+          "by": "Waterluvian",
+          "text": "These are masterpieces in my opinion. It’s difficult to get the vibe exactly right when you’re working with so little. Yes, a thousand times yes you can put your seat back you gentle soul."
+        },
+        {
+          "by": "riazrizvi",
+          "text": "Love these. Visual comedy. I could say \"Person trying to persuade bus driver to let them on at a traffic stop\" but without the specific instance that captures it for ppl, there's no joke being communicated."
+        },
+        {
+          "by": "henearkr",
+          "text": "They are more like \"situational haikus\", or the transposition to practical humor of the concept of haiku."
+        }
+      ],
+      "image": "https://spoon-tamago.com/wp-content/uploads/2026/10/jimi-halloween-2026-top.jpg"
+    },
+    {
+      "id": 50354336,
+      "url": null,
+      "hn": "https://news.ycombinator.com/item?id=50354336",
+      "title": "Gitbook Breached",
+      "time": 1793724349,
+      "points": 152,
+      "depth": [
+        {
+          "text": "GitBook says an **AI-agent attack** accessed credentials, taking **services offline** and prompting **customer token resets**",
+          "tier": "simple"
+        },
+        {
+          "text": "The attacker gained unauthorized access to **some infrastructure credentials at 19:00 CET, November 2**; GitBook says it detected the attack immediately. The company took the app and authenticated docs offline, replaced credentials and secrets, and invalidated customer API tokens. Data that **may have been accessed** includes Git Sync secrets, third-party API tokens, and visitor questions to **GitBook Assistant**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: GitBook describes a sophisticated attack using AI agents; skeptics say the wording is vague and question whether AI agents were really involved.",
+      "comment_count": 36,
+      "terms": [
+        "AI agents",
+        "API token",
+        "credentials",
+        "Git Sync",
+        "MCP server",
+        "post mortem"
+      ],
+      "entities": [
+        "GitBook",
+        "GitBook API",
+        "GitBook Assistant",
+        "Git Sync",
+        "MCP"
+      ],
+      "comments": [
+        {
+          "by": "SamyPesse",
+          "text": "GitBook’s CTO here We have been dealing with a security attack since yesterday. Our team has been all hands on deck since the start, and we took a large portion of our services offline to prioritize user security. Our service is progressively coming back online (most of it already is), and we are actively monitoring the situation. We’ll continue to actively keep our users updated through emails…"
+        },
+        {
+          "by": "FearNotDaniel",
+          "text": "> sophisticated, highly targeted attack I love the way all incident reports tell you the attack was sophisticated and highly targeted, as if those words actually mean anything. Nobody wants to admit they were DDOSed by a script kiddie just randomly trying exploits. The subtext is: well, we expected hackers; just not really good ones."
+        },
+        {
+          "by": "FastDeep",
+          "text": "Good that they rotated all the tokens themselves instead of just telling users to do it, seen too many incidents where that step gets skipped."
+        },
+        {
+          "by": "petecooper",
+          "text": "https://www.gitbook.com/status/security-incident-2026-11-03"
+        },
+        {
+          "by": "tom1337",
+          "text": "What's happening currently that every other a day a major service is breached? Is it really just all AI Agents being blasted on those targets?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50341028,
+      "url": "https://devblogs.microsoft.com/oldnewthing/20261102-00/?p=112818/",
+      "hn": "https://news.ycombinator.com/item?id=50341028",
+      "title": "Sneaking into the auditorium for the Windows 2000 launch rehearsal",
+      "time": 1793643168,
+      "points": 150,
+      "depth": [
+        {
+          "text": "someone slipped into the **Windows 2000 rehearsal** and saw a crew member pretend to be **Patrick Stewart**",
+          "tier": "simple"
+        },
+        {
+          "text": "An **unlocked door** led to the empty upper level, where a 10-meter-tall mock laptop stood onstage. The rehearsal’s Patrick Stewart turned out to be a **headset-wearing crew member**, giving the camera and lighting crew a chance to check their positions; the real Stewart hosted the event.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 56,
+      "terms": [
+        "teleprompter",
+        "IrDA"
+      ],
+      "entities": [
+        "Windows 2000",
+        "Patrick Stewart",
+        "Microsoft",
+        "The Old New Thing",
+        "Raymond Chen",
+        "John O'Hurley"
+      ],
+      "comments": [
+        {
+          "by": "olyjohn",
+          "text": "Speaking of getting into Microsoft events, some buddies and I registered with Microsoft as OEM system builders when we were in high school. We would drive to Redmond and attend these events talking about various new hardware and software and would leave with bags full of swag and they had awesome Raffles giving away some expensive shiny new hardware, which we would win quite often shockingly. We…"
+        },
+        {
+          "by": "criemen",
+          "text": "> Remember infrared file sharing? Of course you don’t. Hey, I played with that when I was approximately 8 years old! Also: wireless printing via infrared, instead of those huge parallel printer cables."
+        },
+        {
+          "by": "kalleboo",
+          "text": "> Remember infrared file sharing? Of course you don’t. I was at a karaoke bar in Japan the other year and noticed the remote for the karaoke system had an IR port. Next time I brought my Sony Clie and sure enough, it still worked to let you send photos and doodle on them to display on the karaoke screen. Looked up the system, it was from 2012 (but was still kept up-to-date with new songs)…"
+        },
+        {
+          "by": "yodon",
+          "text": "Raymond Chen is one of the great treasures of the web."
+        },
+        {
+          "by": "xfax",
+          "text": "I am amazed at how he recalls events, issues, incidents etc. with such detail decades after they happened. I can’t seem to remember things well that happened 6 months ago. Does anyone have a system they use to help with such rich recollection?"
+        }
+      ],
+      "image": "https://devblogs.microsoft.com/oldnewthing/wp-content/uploads/sites/38/2025/10/banner-oldnewthing-blue.webp"
+    }
+  ],
+  "glossary": {
+    "payload capacity": "The heaviest thing a robot can carry while doing its job.",
+    "fiducial tags": "Markers a robot can spot with its camera to recognize a place or object.",
+    "inverse kinematics": "Working out how a robot's joints need to move to put its hand at a chosen spot.",
+    "color-scheme": "A page setting that tells browsers whether the page supports light mode, dark mode, or both.",
+    "CSS": "Cascading Style Sheets: rules that control how a web page looks.",
+    "HTML": "HyperText Markup Language: code that tells a browser what content a web page has.",
+    "SVG": "Scalable Vector Graphics: a picture format that stays sharp when resized.",
+    "canvas": "A webpage area where code can draw pictures or other visuals.",
+    "contrast ratio": "A number comparing how different text and background colors look, used to judge readability.",
+    "WCAG": "Web Content Accessibility Guidelines: recommendations for making web content easier for people with disabilities to use.",
+    "fingerprinting": "Using clues from a device and browser to recognize them without relying on a saved cookie.",
+    "off-balance-sheet debt": "Money a company is committed to pay that is not listed among its usual debts.",
+    "RPO": "Remaining Performance Obligations: money customers have committed to pay for work the company still has to deliver.",
+    "CapEx": "Capital expenditures: money a company spends on long-lasting things it needs, like buildings and equipment.",
+    "AGI": "Artificial General Intelligence: a hypothetical AI that could handle many kinds of tasks, not just one narrow job.",
+    "inference": "When an AI uses what it learned to answer or act, instead of being trained.",
+    "generative model": "A program that learns patterns in examples so it can make new examples like them.",
+    "PCA": "Principal component analysis: a way to simplify data by keeping its biggest patterns.",
+    "probabilistic PCA": "A version of PCA that represents patterns with probabilities, not just fixed values.",
+    "variational autoencoder": "A model that learns to make new examples by compressing examples and then recreating them.",
+    "diffusion model": "An image-making AI that starts with visual noise and gradually turns it into a picture.",
+    "normalising flow": "A model that makes new examples by changing random inputs through steps that can be undone.",
+    "autoregressive factorisation": "A way to describe a sequence by predicting each next piece from the pieces before it.",
+    "GAN": "Generative adversarial network: a setup where one AI makes examples and another tries to spot fakes.",
+    "Wasserstein GAN": "A kind of GAN that judges how different made-up examples are from real ones.",
+    "energy-based model": "A model that scores possible examples, with lower scores meaning a better fit.",
+    "linear algebra": "A kind of math used to describe how shapes move and turn.",
+    "Algo fatigue": "Feeling tired of recommendation feeds deciding what you should watch or read.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "sideloadable": "An app you install on a device yourself, instead of getting it through the device's usual app store.",
+    "BrightScript/SceneGraph": "Roku's language and app-building tools for making apps that run on Roku devices.",
+    "vibe coding": "Making software by telling an AI what you want and letting it write the code, often without closely checking how it works.",
+    "HOT": "Heap Only Tuple: a way to update a database row without changing its lookup lists, when no searched column changes and the new row stays on the same page.",
+    "tuple": "A single row of data in a database.",
+    "WAL": "Write-ahead log: a record of changes the database saves so it can recover or copy them.",
+    "TOAST": "The Oversized-Attribute Storage Technique: a PostgreSQL feature for storing very large values separately from the main row.",
+    "MVCC": "Multi-Version Concurrency Control: a way to keep different copies of a row so people can use the database at the same time.",
+    "DIS": "The penultimate stage in the ISO standard process; the C++26 draft failed to get enough votes at this stage.",
+    "WG21": "C++ Standardization Committee: the group that discusses and votes on proposed changes to C++.",
+    "NB": "National Body: a country-level group that votes on proposed ISO standards.",
+    "Contracts": "A way to write expectations about what a function should receive or do, so they can be checked.",
+    "formal methods": "Ways to check software against precise rules, rather than relying only on trying it out.",
+    "multi-WAN": "A setup that can use more than one internet connection.",
+    "uplink": "A connection from a device out to the internet or another network.",
+    "dynamic routing": "A network automatically picks a path for information based on which routes are available.",
+    "failover": "A backup system taking over automatically when the main one stops working.",
+    "load balancing": "Spreading traffic across connections so one connection does not have to handle it all.",
+    "firewall rules": "Settings that decide which network connections are allowed in or out.",
+    "VPN": "Virtual private network: a service that sends your internet traffic through another computer, often to protect it or make it appear to come from somewhere else.",
+    "Jimi Halloween": "A Japanese Halloween tradition where people dress as mundane everyday situations.",
+    "AI agents": "Computer programs that can carry out tasks, rather than only answer a question.",
+    "API token": "A secret code that lets another app or person access a service.",
+    "credentials": "The username and password that let someone sign in to an account.",
+    "Git Sync": "A way to keep GitBook pages and a Git project updated together.",
+    "MCP server": "Model Context Protocol server: a computer that lets an AI connect to outside tools or information.",
+    "post mortem": "A report written after an incident to explain what happened and what should change.",
+    "teleprompter": "A screen that shows someone the words they’re meant to say while speaking.",
+    "IrDA": "Infrared Data Association: a group whose name is used for rules that let nearby devices send information with infrared light."
+  }
+}
