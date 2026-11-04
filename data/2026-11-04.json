@@ -2,6 +2,1275 @@
   "date": "2026-11-04",
   "cards": [
     {
+      "id": 50364336,
+      "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+      "hn": "https://news.ycombinator.com/item?id=50364336",
+      "title": "AI is forcing us to pay off 40 years of technical debt",
+      "time": 1793793137,
+      "points": 856,
+      "depth": [
+        {
+          "text": "AI helps security researchers find **old software bugs** that could become **server attacks**",
+          "tier": "simple"
+        },
+        {
+          "text": "A researcher at Calif, aided by AI tools, found a way to use PHP’s **out-of-memory bug** to run **arbitrary code** on a host server. Four engineers spent two months building a **patch**; commenters split over whether AI clears old debt or piles on **new debt**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: Some say AI makes it cheaper to fix old code; others say it creates fresh debt and leaves developers trusting code they don’t understand.",
+      "comment_count": 506,
+      "terms": [
+        "technical debt",
+        "out-of-memory error",
+        "arbitrary code",
+        "patch",
+        "formal verification"
+      ],
+      "entities": [
+        "PHP2Shell",
+        "PHP",
+        "PHP Foundation",
+        "NASA",
+        "Wikipedia",
+        "Wordpress",
+        "Drupal",
+        "Calif",
+        "OpenAI",
+        "Wiz",
+        "Tolmo",
+        "Matt Suiche",
+        "Suman Jana",
+        "Matthew Green",
+        "Anthropic",
+        "IEEE Spectrum",
+        "IEEE"
+      ],
+      "comments": [
+        {
+          "by": "Arbortheus",
+          "text": "I hope some of these backdoors and/or 0-days being kept under wraps by nation states or corporate espionage companies (Pegasus et al) are being found incidentally through all this. It’s frustrating to have all these 0days and CVEs to patch for now, but in the long run perhaps we’ll leave with more robust software."
+        },
+        {
+          "by": "swatcoder",
+          "text": "Is it forcing us to \"pay off\" technical debt or is it starting us on a compulsory endless treadmill of feature-neutral fix-work? Collectively, we just won't know for a while. It totally feels like the former if you watch it find and fix vulnerabilities or other debt-tasks one after another. But only so many of these \"technical debt\" issue are little off-by-one errors that get remedied by a…"
+        },
+        {
+          "by": "xbmcuser",
+          "text": "I was down voted a lot months ago for saying that a lot of open source software had a false sense of being secure with the assumption that someone else would have audited the code. And this AI auditing is going to make the promise of open source software getting audited by others actually real. Nice to see others waking up to this reality."
+        },
+        {
+          "by": "kentm",
+          "text": "While I have mixed feelings about AI's impact on my work, I am happy that I can address 5-7 years of technical debt in code bases as I come across it due to AI lowering the cost. Typically the solution is not too difficult; it just required a lot of time in research and testing which AI streamlined. I am able to verify everything at the end ran through the proper test cases and that the fix is…"
+        },
+        {
+          "by": "bmurphy1976",
+          "text": "I've been referring to this as honing a codebase (like a knife). I've used AI to vibecode sloppy one-off scripts, demos, and proof of concepts. But then I've turned around and used it to hammer in actual projects to a level of quality I just would not have had the time or motivation to achieve previously. That is a choice I make every day when I get into an argument with Claude about the chosen…"
+        }
+      ],
+      "image": "https://spectrum.ieee.org/media-library/image.jpg?id=68544156&width=1200&height=600&coordinates=0%2C312%2C0%2C313"
+    },
+    {
+      "id": 50363461,
+      "url": null,
+      "hn": "https://news.ycombinator.com/item?id=50363461",
+      "title": "Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)",
+      "time": 1793787027,
+      "points": 539,
+      "depth": [
+        {
+          "text": "someone found that **paying for Gemini** doesn't stop saved chats being used to **train AI**",
+          "tier": "simple"
+        },
+        {
+          "text": "With a personal Google AI subscription, saved chats can be used for training when **Keep Activity** is on, and a subset may be read by human reviewers. Turning it off stops training but means you lose chat sessions after **72 hours**; reviewed chats can be kept for **up to three years** even after activity is deleted.",
+          "tier": "substance",
+          "data": [
+            [
+              "chat sessions after turning off Keep Activity",
+              "72 hours"
+            ],
+            [
+              "retention of chats reviewed by humans",
+              "up to three years"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say human review is expected and retention may be for legal purposes; others say paid users should get chat history without training and that AI providers aren't private.",
+      "comment_count": 137,
+      "terms": [
+        "Keep Activity",
+        "training",
+        "human reviewers"
+      ],
+      "entities": [
+        "Google",
+        "Gemini",
+        "Pixel",
+        "Apple",
+        "OpenAI",
+        "Deepseek",
+        "GLM",
+        "Kimi",
+        "Qwen",
+        "Antigravity",
+        "YouTube",
+        "Google Workspace",
+        "GPT",
+        "trustedrouter"
+      ],
+      "comments": [
+        {
+          "by": "fny",
+          "text": "\"These chat transcripts may even be read by human reviewers.\" PSA: This is true of all the frontier model providers even if you disable activity tracking. They are all constantly monitoring your interactions for problematic behavior. [0]: https://www.nytimes.com/wirecutter/advice/ai-chat-privacy/ [1]: https://www.404media.co/inside-project-lily-the-humans-readi... [2]…"
+        },
+        {
+          "by": "richrichardsson",
+          "text": "What's worse is if you have a Pixel phone then Gemini is completely useless without enabling this setting. I had it switched off: \"Hey Google, remind me at 7pm <something>\" \"OK, your reminder is set for 7pm\" Next day: \"Hey Google, why didn't you remind me at 7pm\" \"I can't do anything with your phone unless you enable chat history.\" WTAF!"
+        },
+        {
+          "by": "everdrive",
+          "text": "It's good to record this sort of information, but I hope no one expects any of the big LLM tools to be even remotely private. This is big tech in 2026. They don't even need to prove they can make money on your information. They're going to take every little last bit of information they can conceive of. 100% of the time."
+        },
+        {
+          "by": "devsda",
+          "text": "> Please don’t enter confidential information that you wouldn’t want a reviewer to see or Google If Gemini has access to app data like gallery, mail etc that can also be subjected to human review? I imagine that will also be part of the context. They are vague when they say 'don't enter'. Is it only prompts or does it also cover other data too."
+        },
+        {
+          "by": "giwook",
+          "text": "Is this really surprising to anyone? I just sorta assumed that Google was hoovering up anything I type into its AI and don't tell it anything too personal or sensitive. Is anyone under the illusion that our data is not being collected, whether it's Google or literally even the seemingly innocuous TVs in our home that have been found to be spying on us 24/7?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50362905,
+      "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+      "hn": "https://news.ycombinator.com/item?id=50362905",
+      "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
+      "time": 1793781989,
+      "points": 518,
+      "depth": [
+        {
+          "text": "Linux runs **about five times slower** on the RTX Spark laptop when it’s **plugged in**",
+          "tier": "simple"
+        },
+        {
+          "text": "A **Windows-only power controller** manages CPU and GPU power, but Linux can’t decrypt its **encrypted power table**. In the GPT-OSS-120B test, native Linux managed **13.9 tokens per second**, while Windows and WSL reached 65.4 and 65.1.",
+          "tier": "substance",
+          "data": [
+            [
+              "Native Linux",
+              "13.9 tokens per second"
+            ],
+            [
+              "Windows",
+              "65.4 tokens per second"
+            ],
+            [
+              "WSL",
+              "65.1 tokens per second"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some blame Nvidia’s long-standing closed-driver approach; others say this is a specific Linux support gap for firmware designed for Windows laptops.",
+      "comment_count": 230,
+      "terms": [
+        "WSL",
+        "GPU",
+        "firmware",
+        "power table",
+        "tokens per second"
+      ],
+      "entities": [
+        "Nvidia",
+        "RTX Spark",
+        "Nvidia Platform Controllers and Framework",
+        "MSI Prestige",
+        "Linux",
+        "Windows",
+        "WSL",
+        "GPT-OSS-120B",
+        "DGX Spark"
+      ],
+      "comments": [
+        {
+          "by": "K0balt",
+          "text": "Wtf. Are we actually seeing a push towards being 100percent dependent on the cloud? Sovereign AI has never been more important. Controlling AI is so much more powerful and impactful than controlling search or social algorithms. Centralized AI a 10x on social control over everything we have seen before, and there is no way that a free and open society survives contact with centralised, high…"
+        },
+        {
+          "by": "nonethewiser",
+          "text": "Please read the article. Comments here are wildly misinformed. This is a lack of linux driver support for firmware designed for windows laptops. This is a problem on the MSI Prestige laptop using the RTX Spark platform. Lets assume it also applies to the Asus and Dell machines using RTX spark. RTX Spark is a new platform and all of these laptops ship with Windows. You cant get Linux on any of…"
+        },
+        {
+          "by": "jleask",
+          "text": "Nvidia doing what Nvidia has always done; proprietary closed drivers. Weird choice to cryptographically protect the power settings. Key problem is that we've allowed a company that's always been this way to form a monopoly. Other brands exist, perhaps it is now worth the effort to migrate and rebuild elsewhere."
+        },
+        {
+          "by": "fxwin",
+          "text": "> A hands-on look at dual-booting Linux on the Nvidia RTX Spark laptop, the GPU clock throttling bug found, and why WSL still wins. Man it really is exhausting to read a title that sparks my interest, just to be greeted with the most basic Claude-isms in the subheading."
+        },
+        {
+          "by": "BalistaCRATZ",
+          "text": "Unclear to me why the first attempt was to boot Omarchy, a brand new, vibecoded distro, as opposed to one of the much more reliable ones that have been around for decades"
+        }
+      ],
+      "image": "https://i.mscdn.ai/o/iZl0kkZU2R9KXyy7/a/3V2ICO3oSq2QZPii/_published/generated-images/0d8c9668-cbfe-4ecf-bb31-1a7fff7102be.png?fm=auto&w=1200&h=630&fit=crop"
+    },
+    {
+      "id": 50365755,
+      "url": "https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398",
+      "hn": "https://news.ycombinator.com/item?id=50365755",
+      "title": "North Korean fake job interview led to $6.3B Binance heist",
+      "time": 1793801395,
+      "points": 454,
+      "depth": [
+        {
+          "text": "North Korean hackers used a **fake interview** to plant **malware** ahead of a Binance crypto heist",
+          "tier": "simple"
+        },
+        {
+          "text": "Binance says the **multi-stage attack** included a malware-laced code repository sent as an interview assignment, then an internal AI tool helped attackers reach two wallet engineers’ computers. They used **stolen credentials** to deploy a container and launch the **$6.3 billion heist**.",
+          "tier": "substance",
+          "data": [
+            [
+              "reported theft",
+              "$6.3B"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some blame the engineer for running an outside interview on a work laptop; others say Binance's access controls and deployment token were the bigger security failure.",
+      "comment_count": 266,
+      "terms": [
+        "social engineering",
+        "malware",
+        "supply chain attack",
+        "permission token"
+      ],
+      "entities": [
+        "Binance",
+        "TraderTraitor",
+        "Lazarus Group",
+        "FBI",
+        "Homebrew",
+        "pyenv",
+        "Google",
+        "LinkedIn"
+      ],
+      "comments": [
+        {
+          "by": "gandreani",
+          "text": "A lot of people are focusing on how irresponsible the engineer was about using the work computer. That's obviously an issue but the bigger failure mode to me is the Engineer C's container deployment token. That's a huge red-flag. In a company of this size, the deployments should be via CI only. CI isn't just to increase the speed and reliability of deployments but also to provide a clean room to…"
+        },
+        {
+          "by": "bilekas",
+          "text": "Doing ANYTHING on a work issued laptop outside of your role is such a dumb idea for a litany of obvious reasons that I'm genuinely shocked people do it. Let alone participate in interviews for other companies on it."
+        },
+        {
+          "by": "steveBK123",
+          "text": "Pretty funny that tech makes candidates jump through all sorts of automated, inhumane loops to even advance to talking to a real human in the hiring process. And now you get results like this."
+        },
+        {
+          "by": "cwiggs",
+          "text": "No one wants to talk about the \"internal AI Tool\" being used to elevate to not 1 but 2 DevOps engineers? > use of an internal AI tool as a springboard. The attacker leveraged the compromised computer of engineer B and used an internal AI tool to gain control over the Wallet DevOps Engineer A and another Wallet Software Engineer C. The attacker soon discovered Wallet DevOps Engineer A had a…"
+        },
+        {
+          "by": "xutopia",
+          "text": "I was #opentowork on LinkedIn and got approached multiple times with fake companies and interviews. LinkedIn is not doing enough to combat this. I even create a 1 man company for my consulting services and I receive ads about how people at my company saved me a spot on an online game. LinkedIn is partially responsible for their neglect here."
+        }
+      ],
+      "image": "https://image.theregister.com/254036.jpg?imageId=254036&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
+    },
+    {
+      "id": 50361268,
+      "url": "https://mrdoob.github.io/codevember-2026/01/",
+      "hn": "https://news.ycombinator.com/item?id=50361268",
+      "title": "Jelly Sheet",
+      "time": 1793763650,
+      "points": 423,
+      "depth": [
+        {
+          "text": "someone made a browser-based **jelly toy** that **keeps pouring**, and people find it oddly satisfying",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter says **Mr Doob** made it and is best known for **Three.js**, a 3D JavaScript library. Another says a mobile phone browser can render it, while someone else says it gets **heavy and laggy** as it accumulates.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 108,
+      "terms": [
+        "Three.js",
+        "JavaScript",
+        "gyroscope"
+      ],
+      "entities": [
+        "Jelly Sheet",
+        "Mr Doob",
+        "Three.js",
+        "JavaScript",
+        "Firefox Mobile",
+        "Flash",
+        "Liquid Glass"
+      ],
+      "comments": [
+        {
+          "by": "OuterVale",
+          "text": "As you can surmise from the domain, this is created by Mr Doob. They're most well known for creating the 3D JavaScript library Three.js: https://threejs.org Their full site and a lot more cool stuff they've made can be found here: https://mrdoob.com"
+        },
+        {
+          "by": "plastic041",
+          "text": "I know no one stops you from using hashtag `codevember` on vibe coded project[0], but... isn't the whole point of these one month challenges(genuary, nodevember, inktober, etc) about human creativity? Like game jams? [0]: https://x.com/mrdoob/status/2117561239249518650"
+        },
+        {
+          "by": "ramcle",
+          "text": "It is nice, but I'm somewhat unnerved that it never stops pouring. I expect it to finally stop at some time, and it doesn't, which for some reason makes me uneasy."
+        },
+        {
+          "by": "dengsauve",
+          "text": "Definitely kept me on the page, very cool. If it could move with a mobile device’s gyroscope, that would be quite the amuse-esprit."
+        },
+        {
+          "by": "robinvdvleuten",
+          "text": "Awesome! Not only that one can build this in JavaScript, but also that your browser on a mobile phone can render this."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50362980,
+      "url": "https://sw.kovidgoyal.net/kitty/changelog/#",
+      "hn": "https://news.ycombinator.com/item?id=50362980",
+      "title": "Kitty 0.50",
+      "time": 1793782630,
+      "points": 332,
+      "depth": [
+        {
+          "text": "kitty adds **dockable windows**, **session restore**, and **custom visual effects** to its terminal",
+          "tier": "simple"
+        },
+        {
+          "text": "**Docks** sit outside the layout, leaving room for status bars, file trees, or a shell beside your editor. Set `restore_session_after_logout` and kitty can bring back its OS windows, tabs, and **scrollback** after logout. The release says real-world effective throughput should improve by **15-35%**, depending on workload.",
+          "tier": "substance",
+          "data": [
+            [
+              "real-world effective throughput improvement",
+              "15-35%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some find the new shader effects fun; others wonder whether terminal shaders do anything beyond eye candy.",
+      "comment_count": 206,
+      "terms": [
+        "dock",
+        "session",
+        "scrollback",
+        "throughput",
+        "custom shaders"
+      ],
+      "entities": [
+        "kitty",
+        "Wayland",
+        "Linux",
+        "macOS",
+        "GNOME",
+        "KDE"
+      ],
+      "comments": [
+        {
+          "by": "JonnieCache",
+          "text": "The shader support offers a hook to trigger on the bell character, so of course I had to hook this up to a screenshake shader. Get fish to emit a bell on a nonzero command exit, and I have screenshake on failed commands. I expected this to be really annoying but it's actually kindof great: https://jcd.pub/2026/11/04/screenshake-shaders-for-kitty/"
+        },
+        {
+          "by": "anonymous_i",
+          "text": "I recognized him name from Calibre: https://calibre-ebook.com/about What a legend."
+        },
+        {
+          "by": "dagi3d",
+          "text": "I really love Kitty, it took me only about 5 minutes to migrate from Ghostty.\njust wish the used this icon as default: https://github.com/DinkDonk/kitty-icon"
+        },
+        {
+          "by": "petepete",
+          "text": "I love Kitty. I've used it since discovering it in about 2019 and it strikes the right balance of things. It's easy to customise, super fast, light on resources, available in my distro's package manager and while the author might be a bit prickly at times, he does a fantastic job leading the project and keeping things focused. I'll give the new shaders a try but the animated cursor is probably…"
+        },
+        {
+          "by": "jpeeler",
+          "text": "I've been a Kitty user for many years, but I bet that Superlogical's Rex is going to take over the world. Currently there is no Linux client available, but I'm sure it'll come later just like how Ghostty was developed macOS first. This feature seems like interesting timing in light of the above:\nhttps://sw.kovidgoyal.net/kitty/changelog/#restore-after-log..."
+        }
+      ],
+      "image": "https://sw.kovidgoyal.net/kitty/_images/social_previews/summary_changelog_3a0c7623.png"
+    },
+    {
+      "id": 50367125,
+      "url": "https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections",
+      "hn": "https://news.ycombinator.com/item?id=50367125",
+      "title": "AMD expects to outsell Intel in Q4 for the first time in history",
+      "time": 1793806714,
+      "points": 316,
+      "depth": [
+        {
+          "text": "AMD expects to **outsell Intel** in Q4 as **data-center sales** fuel its record revenue forecast",
+          "tier": "simple"
+        },
+        {
+          "text": "AMD reported $13.377 billion in third-quarter revenue, including $8.55 billion from Data Center. Its Q4 forecast is **approximately $17 billion**, versus Intel's **$15 billion to $16 billion**; AMD projects Data Center revenue to reach **approximately $12.8 billion** in Q4.",
+          "tier": "substance",
+          "data": [
+            [
+              "AMD third-quarter revenue",
+              "$13.377 billion"
+            ],
+            [
+              "AMD Data Center third-quarter revenue",
+              "$8.55 billion"
+            ],
+            [
+              "AMD Q4 revenue guidance",
+              "approximately $17 billion"
+            ],
+            [
+              "Intel Q4 revenue forecast",
+              "$15 billion to $16 billion"
+            ],
+            [
+              "AMD projected Q4 Data Center revenue",
+              "approximately $12.8 billion"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say AMD deserves credit for strong products and competition; others say its lead reflects AI spending or Intel's shortcomings more than an AMD turnaround.",
+      "comment_count": 99,
+      "terms": [
+        "AI accelerator",
+        "guidance",
+        "gross margin",
+        "sequentially",
+        "SoC",
+        "inference",
+        "MoE",
+        "SMD",
+        "ECC",
+        "LUKS"
+      ],
+      "entities": [
+        "AMD",
+        "Intel",
+        "Epyc",
+        "Instinct",
+        "MI455X",
+        "Helios",
+        "Anthropic",
+        "Meta",
+        "Microsoft",
+        "OpenAI",
+        "Oracle Cloud Infrastructure",
+        "Lisa Su",
+        "Radeon RX",
+        "Sony",
+        "Nvidia",
+        "Apple",
+        "Optane",
+        "DGX Spark",
+        "Intel Arc",
+        "Ryzen",
+        "Zen",
+        "Xeon",
+        "Intel Core",
+        "ARM",
+        "Linux",
+        "DCILeech",
+        "Hetzner",
+        "Tom's Hardware"
+      ],
+      "comments": [
+        {
+          "by": "mickeyp",
+          "text": "That says more about Intel's shambolic efforts than it does about AMD's road to damascus moment. Honestly both of them have demonstrated that they have little interest in AI. Intel gave up on Optane right as (a much-improved successor) would've helped with MoE offsetting or even as a highly durable drive for KV caching. AMD have... turned out some decent gaming graphics cards and fine server CPUs…"
+        },
+        {
+          "by": "lawabider",
+          "text": "I have avoided Intel products since the time some law enforcement forensic team used DCILeech to read the RAM of my server hosted at Hetzner and extracted a LUKS key from it. That was a lifelong lesson. There is no guarantee AMD won't come up with similar shenanigans like Intel's DCI soon and of course we don't know what PSP does behind the scenes, but at least for now, they are generally better…"
+        },
+        {
+          "by": "dlcarrier",
+          "text": "AMD specifically calls out high sales of Instinct products as leading the sales growth. I wonder how their Epyc and Ryzen lines compare to Intels Xeon and Core lines. AMD's Instinct sales are practically nothing compared to competing Nvidia products, but no one† buys Intel Arc accelerators, so that may be the main reason AMD is beating intel. †Disclaimer: I own an Intel Arc GPU"
+        },
+        {
+          "by": "dam_jackalopes",
+          "text": "Good. I was bitten by Intel's voltage issues in their 13th gen CPUs. Then again in the 14th gen replacement. They appear bloated, complacent and I hope AMD eats their lunch."
+        },
+        {
+          "by": "davoneus",
+          "text": "Having strong competition between the CPU vendors is always a good thing. AMD has made mistakes, but it's hard to argue they don't deserve to outsell Intel for a change."
+        }
+      ],
+      "image": "https://cdn.mos.cms.futurecdn.net/9RbcgLQz2F5o3E3DkoVzeG-1920-80.jpg"
+    },
+    {
+      "id": 50363554,
+      "url": "https://www.theguardian.com/uk-news/2026/nov/03/ai-godfather-geoffrey-hinton-better-off-without-ai",
+      "hn": "https://news.ycombinator.com/item?id=50363554",
+      "title": "Geoffrey Hinton: it might turn out we were better off without AI",
+      "time": 1793787814,
+      "points": 284,
+      "depth": [
+        {
+          "text": "Geoffrey Hinton warns **AI could cause an outage**, but thinks we can still **manage the risks**",
+          "tier": "simple"
+        },
+        {
+          "text": "He warns a major incident could happen this year or next, with an AI attack causing a **massive brownout** or bringing down the **financial system for a week**. He backs **mandatory testing and independent evaluation** of frontier AI models before release.",
+          "tier": "substance",
+          "data": [
+            [
+              "AI risk assessment horizon",
+              "within 10 years"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see reckless AI development as dangerous; others value AI’s benefits or doubt a major incident is plausible.",
+      "comment_count": 280,
+      "terms": [
+        "frontier AI",
+        "AI agents",
+        "neural network",
+        "brownout"
+      ],
+      "entities": [
+        "Geoffrey Hinton",
+        "OpenAI",
+        "Sam Altman",
+        "Mark Zuckerberg",
+        "Elon Musk",
+        "Google",
+        "Demis Hassabis",
+        "Hugging Face",
+        "Donald Trump",
+        "Andy Burnham",
+        "Channel 4",
+        "AI: Probably Nothing to Worry About"
+      ],
+      "comments": [
+        {
+          "by": "mrweasel",
+          "text": "If the people in charge of the AI companies understand the risk I don't know, but I think it's a good point that they mainly care about the money. These are also people who aren't accustom to cleaning up their own mess, so what do they care if something goes wrong. The carelessness is also clear in how AI is rolled out. It's being presented as a disruptive technology, as is everything else…"
+        },
+        {
+          "by": "bemtevi",
+          "text": "\"he warned it could trigger a large-scale incident this year or next, such as a temporary blackout of financial or power systems.\" I know this sounds unusual, but I do think this wouldn't be the worst thing that could happen. Sure, it would cause a bit of chaos, but it might also make us think twice about continuing down our current path of unfettered development, and possibly even make us much…"
+        },
+        {
+          "by": "dust42",
+          "text": "So Hinton doesn't trust the tech leaders but then the consequence of having governments censor LLMs is that only tech leaders and governments have unlimited access to AI. If someone manages with the help of AI to hack into a vital system, then the system was already in a critically bad state beforehand. If developers can't use AI to check the code for security flaws, then security gets worse and…"
+        },
+        {
+          "by": "bvan",
+          "text": "Of course, we are.\nBack in the late 80’s early 90’s, no one working on ML was aspiring to develop systems which would be used to generate the kind of AI crap which plagues us today.The good is being smothered by the absolutely soul-crushing pointless."
+        },
+        {
+          "by": "hyperpallium2",
+          "text": "We might be better off without fire. Fire brigades, fire hydrant infrastructure, bush fires, destruction, death."
+        }
+      ],
+      "image": "https://i.guim.co.uk/img/media/2874e862dc2a0fc34d651f70e5ecffd542d947a6/543_22_2658_2128/master/2658.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=ae0638cdbc3daea6b3a154d41c73dad9"
+    },
+    {
+      "id": 50365982,
+      "url": "https://www.semafor.com/article/11/04/2026/us-voters-roundly-reject-data-centers-in-ballot-measures",
+      "hn": "https://news.ycombinator.com/item?id=50365982",
+      "title": "US voters roundly reject data centers in ballot measures",
+      "time": 1793802422,
+      "points": 281,
+      "depth": [
+        {
+          "text": "US voters rejected **data centers** in more than 30 localities, adding pressure to the **AI buildout**",
+          "tier": "simple"
+        },
+        {
+          "text": "Across more than 30 localities in nine states, voters backed **moratoriums, outright bans**, and other measures; Edgewater, Fla., voted to put a data-center ban in its charter, while Perry, Ohio, passed a measure placing **financial and operational constraints** on hyperscalers seeking tax breaks. Banks and asset managers are treating local opposition as a **credit risk**, and tech companies are trying to rebrand data centers as “compute campuses.”",
+          "tier": "substance",
+          "data": [
+            [
+              "Localities",
+              "more than 30"
+            ],
+            [
+              "States",
+              "nine"
+            ],
+            [
+              "Federal and gubernatorial races",
+              "more than 130"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say communities need fair deals and protection from utility costs; others say data centers bring investment and jobs, and blocking them risks growth.",
+      "comment_count": 513,
+      "terms": [
+        "moratorium",
+        "hyperscaler",
+        "community benefits agreement",
+        "compute campus"
+      ],
+      "entities": [
+        "Semafor",
+        "Greg Abbott",
+        "Google",
+        "xAI",
+        "Oracle"
+      ],
+      "comments": [
+        {
+          "by": "ndiddy",
+          "text": "A lot of people here are portraying the opposition to data centers as being uneducated hypocrites who are against anything getting built. When you look at what the opposition are saying, they generally know what they are talking about. Here's Abdul El-Sayed (new Michigan senator) talking about his ideas for regulating the AI industry: https://youtu.be/YX44XDt0gXI?t=182 . For datacenters…"
+        },
+        {
+          "by": "twiclo",
+          "text": "Kevin Oleary's data center is going to be built one hour from my town. A lot of people here seem upset about it but when I talk to them I can't get a single good reason to oppose the data center. Here's what I hear and my response: \"It'll use too much water.\" - It's going to use less water than the farm that used to run on this land. The county is gaining water from this. \"Our electrical bills…"
+        },
+        {
+          "by": "pucas946",
+          "text": "The literal pitch these guys have been using is: * We've built a technology that has obliterated entry level hiring * That technology might obliterate all the other \"normal\" person white collar jobs. The kinds of jobs you can clock in and out and not think about them outside of that. Instead, every new job will be a managerial one working with 500 agents. * Loaning all the money to build these…"
+        },
+        {
+          "by": "Dem_Boys",
+          "text": "This comment section blows my mind! Are we that insulated from the world? Are these all bots? Am I crazy??? Tech is now viewed in the same lense as dirty greedy oil companies. If an oil company opened a candy store most people I know would not go because \"Oh those oil companies can't be trusted\" Anytime I talk to anyone not in tech they're extremely sceptical of anything tech companies do. Most…"
+        },
+        {
+          "by": "stdgy",
+          "text": "The thing that gets me is why the hell are these things being powered with loud generators and fossil fuels? These facilities are billed as being 21st century technological marvels. But what's actually delivered looks like something out of the industrial revolution. Harvesting old jet engines from decommissioned planes in order to power your facility? You've got to be joking. This is a once in a…"
+        }
+      ],
+      "image": "https://img.semafor.com/3539e9f8436bba6661848f82fb4f45f4c0ffc41e-6500x4333.jpg?rect=0,461,6500,3413&w=1200&h=630&q=75&auto=format"
+    },
+    {
+      "id": 50355767,
+      "url": "https://ben.stolovitz.com/posts/how-use-ai-oct-2026/",
+      "hn": "https://news.ycombinator.com/item?id=50355767",
+      "title": "How I use AI (Oct 2026)",
+      "time": 1793729471,
+      "points": 246,
+      "depth": [
+        {
+          "text": "someone says **AI agents** now handle much of their coding, but **human judgment** still matters",
+          "tier": "simple"
+        },
+        {
+          "text": "He assigns **features and bugs** to agents, which write code, run tests, and create and review PRs. He still **reviews and tests their work** himself because they aren’t reliable enough to trust alone.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some see agents as powerful coding helpers, with engineers still validating the work; others say coding isn’t solved and warn that relying on agents may hurt code quality, understanding, or purpose.",
+      "comment_count": 286,
+      "terms": [
+        "agentic coding",
+        "PR",
+        "LLM"
+      ],
+      "entities": [
+        "Ben Stolovitz",
+        "Salesforce",
+        "Claude Code",
+        "OpenCode",
+        "Codex",
+        "Pi",
+        "Mumble"
+      ],
+      "comments": [
+        {
+          "by": "mef51",
+          "text": "I always find so much cognitive dissonance in these kinds of posts. > My most successful work this year was hand-writing a tool, replacing ~4,000 lines of vibe-code with a few hundred. My system has proven more flexible, easier to test, and more generalizable than what it replaced. > agents still need human taste and experience to produce good work. Where do you think human taste and experience…"
+        },
+        {
+          "by": "Daunk",
+          "text": "I believe that anyone who says that writing code is no longer needed, was probably not a very good coder to begin with. I have seen what the best models can do, and I've seen what people call \"good\", and I am not impressed. However, I'm still split. Because this could mean that we see a jump in code quality, due to bad coders getting someone better to code for them. But we could see a decrease in…"
+        },
+        {
+          "by": "mtlynch",
+          "text": "> I'm happy to test crazy new ideas and throw out what doesn’t work well. It was able to wire & test a huge change to Mumble that added better noise cancelling; I use my beta build of it nearly every day. To me, this is a negative and mostly irresponsible use of AI. OP dumped a huge PR (edit: not actually huge) on the Mumble maintainers,[0] which didn't match project conventions. He left a bunch…"
+        },
+        {
+          "by": "Dzugaru",
+          "text": "There is no substitute for reading the code in many many cases. I spend more than 3k/mo on tokens. I find incorrect assumptions baked into the code (the ultimate spec) and missed by the agents and tests daily. This is more pronounced in data analysis and complex systems. As a side effect having to read the code at least once inevitably makes it way shorter and usually much better."
+        },
+        {
+          "by": "citelao",
+          "text": "OP: [last year][1], I shared how I was using AI day-to-day as an ordinary engineer. This year, I did it again! It's crazy realizing that Claude Code only started getting big in the last year or so. It feels so different now, with all the new models & tools we have to use. I hope you enjoy! [1]: https://ben.stolovitz.com/posts/how_use_ai_oct_2025"
+        }
+      ],
+      "image": "https://ben.stolovitz.com/_astro/og.jsHy_xv-_2lnd7v.png"
+    },
+    {
+      "id": 50361247,
+      "url": "https://www.nbcnews.com/politics/2026-election/democrats-house-control-midterm-election-wins-trump-check-rcna603397",
+      "hn": "https://news.ycombinator.com/item?id=50361247",
+      "title": "Democrats win control of the House of Representatives",
+      "time": 1793763383,
+      "points": 243,
+      "depth": [
+        {
+          "text": "Democrats are projected to **take the House** and gain power to **investigate Trump** and push legislation",
+          "tier": "simple"
+        },
+        {
+          "text": "NBC News projects Democrats will win **about 255 House seats**, above the **218 needed** for a majority; the estimate could still move by a few. It also projects a Senate flip, putting Democrats in charge of **both chambers**.",
+          "tier": "substance",
+          "data": [
+            [
+              "projected House seats",
+              "about 255"
+            ],
+            [
+              "seats needed for a majority",
+              "218"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say the post is being flagged for political reasons; others celebrate the result and call for change, while one says Democrats’ next choices deserve scrutiny.",
+      "comment_count": 113,
+      "terms": [
+        "subpoena power",
+        "gerrymandering",
+        "filibuster",
+        "redistricting"
+      ],
+      "entities": [
+        "Democrats",
+        "Republicans",
+        "Donald Trump",
+        "NBC News",
+        "House of Representatives",
+        "Senate",
+        "Hakeem Jeffries",
+        "Mike Johnson",
+        "Department of Government Efficiency",
+        "ICE",
+        "Department of Homeland Security",
+        "Medicaid",
+        "Affordable Care Act"
+      ],
+      "comments": [
+        {
+          "by": "trymas",
+          "text": "I \"like\" how all prominent election posts are flagged instantly today. I know that HN owners are far-right, but it just proves time and time again that considerable amount of HN users are too. Anything that is against current US administration policy is flagged fast and deemed as \"too political for this forum\" in the comment section. Politics are always interested in you. Especially US elections…"
+        },
+        {
+          "by": "harmmonica",
+          "text": "People will complain that this is on HN, but I just want to say that nothing makes me more patriotic than having faith in my fellow citizens. I am neither a democrat nor a republican. But this (House and Senate results even if Senate doesn’t change parties) shows that a good chunk of the population knows that what’s been happening at the Federal level is unacceptable. Now let’s hope we see some…"
+        },
+        {
+          "by": "duxup",
+          "text": "The scale of blue shift seems historic. Local new and evens seem like they’ve had no impact. It seems like a national referendum that ran all the way to local races."
+        },
+        {
+          "by": "robrain",
+          "text": "Is there any more important news for hackers today? But this story gets flagged. Wild"
+        },
+        {
+          "by": "penguin_booze",
+          "text": "The rest of us can (and should) ignore all this. We proceed as planned before: de-Americanise everything; end slavery; restore sovereignty."
+        }
+      ],
+      "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-11/261102-democratic-house-control-capitol-cs-0bbdf2.jpg"
+    },
+    {
+      "id": 50363378,
+      "url": "https://www.githubstatus.com/incidents/smtdswd1h2w4",
+      "hn": "https://news.ycombinator.com/item?id=50363378",
+      "title": "Incident with Pull Requests, Git Operations and Issues",
+      "time": 1793786406,
+      "points": 228,
+      "depth": [
+        {
+          "text": "**GitHub's outage** caused **errors and delays** for pull requests, Git operations, issues, and Actions",
+          "tier": "simple"
+        },
+        {
+          "text": "The updates described **elevated errors and intermittent failures** affecting API Requests, Git Operations, Issues, Pull Requests, and Actions. GitHub later said the degradation was **mitigated** and the incident **resolved**; a detailed root cause analysis would follow.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 117,
+      "terms": [
+        "GitOps",
+        "CI",
+        "SSH key",
+        "brownout"
+      ],
+      "entities": [
+        "GitHub",
+        "GitHub Actions",
+        "Rails",
+        "Microsoft"
+      ],
+      "comments": [
+        {
+          "by": "gophigure",
+          "text": "What I find problematic, especially for teams that rely on GitOps and GitHub being (relatively) stable, is the fact that GitHub's status page can't be relied on. You arrive at the conclusion, \"this must be GitHub,\" but the status page rejects the notion, and so you go digging. That can lead to a lot of toil and wasted time, in addition to sideways looks paired with comments like, \"but status…"
+        },
+        {
+          "by": "a-squirrel-comm",
+          "text": "It looks like today there was maintenance scheduled to deprecate support for certain categories of SSH keys: https://github.blog/changelog/2026-09-22-security-improvemen... > November 4, 2026: We’ll have a brownout of the removal of the ssh-rsa signature type (i.e., RSA keys using SHA-1) and the diffie-hellman-group-exchange-sha256 key exchange algorithm. I guess something went sideways."
+        },
+        {
+          "by": "rarisma",
+          "text": "- - > i wake up - -\n|\n| V\ngithub has an outage"
+        },
+        {
+          "by": "eknkc",
+          "text": "Our deploys are tied to GitHub actions and it is becoming a liability at this point. What alternatives do people use? I mean for FOSS there are some decent stuff but we need a reliable provider for private repos."
+        },
+        {
+          "by": "thesdev",
+          "text": "Finally a GitHub outage during European workday. Yaaay."
+        }
+      ],
+      "image": "https://dka575ofm4ao0.cloudfront.net/pages-twitter_logos/original/36420/GitHub-Mark-120px-plus.png"
+    },
+    {
+      "id": 50366999,
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "hn": "https://news.ycombinator.com/item?id=50366999",
+      "title": "Kimi K3.1 Pro model weights are out",
+      "time": 1793806230,
+      "points": 233,
+      "depth": [
+        {
+          "text": "someone released **model weights**, but commenters worry it'll be **hard to run at home**",
+          "tier": "simple"
+        },
+        {
+          "text": "The card describes a **3T-class model** with a **1-million-token context window** and an **OpenAI/Anthropic-compatible API**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say it barely outpaces DeepSeekV4.1-Flash and seems benchmaxxed; others call it a very strong open model for most use-cases.",
+      "comment_count": 62,
+      "terms": [
+        "model weights",
+        "3T-class",
+        "context window",
+        "multimodal",
+        "agentic model",
+        "benchmaxxed"
+      ],
+      "entities": [
+        "Kimi K3.1 Pro",
+        "DeepSeekV4.1-Flash",
+        "OpenAI",
+        "Anthropic",
+        "Moonshot AI"
+      ],
+      "comments": [
+        {
+          "by": "__jf__",
+          "text": "Subtle quote from their website: > Advancing the Frontier of Open Intelligence. Too bad you probably need something like an 8x B300 node to run this. Black Friday is coming soon though, but I fear this open intelligence will be pacing anyone's liquidity frontier so I'll probably keep trailing the frontier for a while with nvidia/qwen3.8-27B-NVFP4 on dual RTX PRO 4000 in TP=2. I can almost fit…"
+        },
+        {
+          "by": "segmondy",
+          "text": "Doesn't seem to outpace DeepSeekV4.1-Flash by much. Hy4 also announced their models and they have tons of internal benchmark, and K3.1 doesn't score that high on those benchmarks whereas Opus5.5 does, so it seems K3.1 is benchmaxxed."
+        },
+        {
+          "by": "minimaxir",
+          "text": "Third-party inference providers are now hosting it, with more popping up by the hour: https://openrouter.ai/moonshotai/kimi-k3.1-pro Together appears to have double throughput of the Moonshot AI endpoint at the same price point (with Modal having double that throughput), so I suspect there is room for inference providers to optimize...and therefore headroom to cut costs for competition."
+        },
+        {
+          "by": "dmckinno",
+          "text": "Lots of chatter about how this model is benchmaxxed, but didn’t observe this in our testing. Very strong open model release that is a bit off the frontier but totally amazing for most use-cases. https://x.com/danielmckinn0n/status/2115213822957117535?a=fO..."
+        },
+        {
+          "by": "throwa356262",
+          "text": "These releases are meant for companies, not average Joe: https://www.theregister.com/ai-and-ml/2026/11/03/british-fin..."
+        }
+      ],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/moonshotai/Kimi-K3.1-Pro.png"
+    },
+    {
+      "id": 50363019,
+      "url": "https://blog.cosmos-institute.org/p/verification-is-not-knowledge",
+      "hn": "https://news.ycombinator.com/item?id=50363019",
+      "title": "Verification Is Not Knowledge: Science needs more than answers",
+      "time": 1793782918,
+      "points": 196,
+      "depth": [
+        {
+          "text": "the essay says checked **AI answers** aren't enough without people who can **explain and challenge them**",
+          "tier": "simple"
+        },
+        {
+          "text": "Hullman traces the debate to the **“value-free ideal”**: the belief that scientific judgments should rely on evidence alone, not ethical or social values. She argues that scientific knowledge depends on communities that can criticize claims and **hold authors accountable**; without people exercising those skills, verified results may fail to become knowledge.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters say verified AI answers can be useful and people can build understanding afterward; others say people need to understand the work to catch failures and challenge its claims.",
+      "comment_count": 113,
+      "terms": [
+        "value-free ideal",
+        "epistemic",
+        "formal verification",
+        "accountability"
+      ],
+      "entities": [
+        "Jessica Hullman",
+        "Bill Thurston",
+        "Terry Tao",
+        "Tom Dietterich",
+        "Helen Longino",
+        "Robert Brandom",
+        "arXiv",
+        "Fermat's Last Theorem",
+        "Peter Scholz",
+        "Cosmos Institute"
+      ],
+      "comments": [
+        {
+          "by": "throw0101c",
+          "text": "When Kepler published his models: * https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_m... People did not understand how or why they worked, but they switched over to them from the Ptolemaic (Tychonic, etc †) system anyway because the math was easier. It was only later (Newton, Einstein) that we understood the \"why\" and \"how\". †…"
+        },
+        {
+          "by": "niemandhier",
+          "text": "We all know Terry Tao, do you know Peter Scholz? Fields medalist and as Tao listed as one of the most important mathematicians of our age. Scholz is known to find\n„precisely the correct and cleanest way to incorporate all the previously done work and find an elegant formulation for that — and then, because he found really the correct framework, go way beyond the known results“ In a way that man…"
+        },
+        {
+          "by": "tsoukase",
+          "text": "From fire and wheel to atomic bomb and now LLMs human evolution follows the same laws: a tool can be both and bad, depending on its application. The P vs NP complexity dichotomy is also relevant: they present different views of a problem solution, knowledge and verification respectively. Both are valid science: the first is desirable but in absence of deep understanding the second is acceptable."
+        },
+        {
+          "by": "A_D_E_P_T",
+          "text": "The article's perspective reminds me of math class when I was a kid. The teacher didn't want the right answer alone, she wanted to see how I got there. In an absolute sense, the right answer is the right answer with or without my understanding, but that's not how the class was graded. We're approaching a point where AI is to science as my old calculator is to elementary school math -- it's…"
+        },
+        {
+          "by": "wqtz",
+          "text": "Ahhh, epistemology... Does any academic researcher even care about these things anymore? If you're in academia, you've probably noticed a major shift recently. Research production at an industrial scale through AI. Grants have \"always\" been awarded to professors based on quantity multiplied by quality. Now, some professors are churning out 1–3 papers a month with the same group of co-authors. All…"
+        }
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!qC0Q!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6c5afe03-d75e-4108-b58a-63be2d3ba4b7_2048x1413.png"
+    },
+    {
+      "id": 50366522,
+      "url": "https://99percentinvisible.org/article/guerrilla-bike-lanes-san-francisco-makes-illicit-infrastructure-permanent/",
+      "hn": "https://news.ycombinator.com/item?id=50366522",
+      "title": "Guerrilla bike lanes: San Francisco makes illicit infrastructure permanent (2016)",
+      "time": 1793804504,
+      "points": 193,
+      "depth": [
+        {
+          "text": "activists put up **protected bike lanes** illegally in San Francisco, and the city **made the change official**",
+          "tier": "simple"
+        },
+        {
+          "text": "The **San Francisco Transformation Agency** first used traffic cones, then illegally installed **soft-hit posts** alongside Golden Gate Park. The city said it would install **official safe hit posts** and leave the temporary ones in place until its review process was complete.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: supporters say demonstrating a fix can get officials moving; skeptics say bikes need entirely separate paths, and guerrilla lanes must be safe and well thought out.",
+      "comment_count": 128,
+      "terms": [
+        "tactical urbanism",
+        "soft-hit posts"
+      ],
+      "entities": [
+        "99% Invisible",
+        "San Francisco Transformation Agency",
+        "SFMTrA",
+        "SFMTA",
+        "Reasonably Polite Seattleites",
+        "Right of Way",
+        "Dongho Chang",
+        "Seattle Department of Transportation",
+        "Washington State Department of Transportation"
+      ],
+      "comments": [
+        {
+          "by": "chmod775",
+          "text": "Students at my university in Berlin need to cross a busy road to travel between campus areas, which meant jaywalking or a long trip to a crossing with traffic lights down the road. A steady stream of students late to their next class sprinting across a six lane road is not great. At some point students started painting their own crosswalk, which would be removed again and again by authorities…"
+        },
+        {
+          "by": "darkstar999",
+          "text": "It reminds me of The Guerrilla Artist Who Fixed L.A.'s Worst Freeway Sign https://thelandmag.com/richard-ankrom-guerrilla-public-servi..."
+        },
+        {
+          "by": "regentbowerbird",
+          "text": "In Geneva, activists painted bike lanes in three streets in 2023, causing about 2000 swiss francs in damages (or improvements, depending on your view). The Swiss police under prosecutor Walther Cimino proceeded to investigate as if they were a crime syndicate, gathering forensics but also identifying 96 sympathizers and putting them under heavy surveillance, which included requesting total…"
+        },
+        {
+          "by": "ortusdux",
+          "text": "The logical escalation of desire paths - https://99percentinvisible.org/article/least-resistance-desi..."
+        },
+        {
+          "by": "hinkley",
+          "text": "I still think the better way to go is to find lawyers who will aggressively seek civil suits against the idiots who hit cyclists. Two of the prominent members of our club were hit by a drunk driver outside a small town. Nobody died but bikes destroyed, nasty bruises, cracked ribs and vertebrae. The driver shouldn’t have still had his license based on previous offenses. But his dad was a…"
+        }
+      ],
+      "image": "https://99percentinvisible.org/wp-content/uploads/2016/10/guerrilla-bicycle-lane-728x410.jpg"
+    },
+    {
+      "id": 50363968,
+      "url": "https://www.phoronix.com/news/Synaptics-Blocks-Vino-Driver",
+      "hn": "https://news.ycombinator.com/item?id=50363968",
+      "title": "Synaptics Appears to Use Legal Threats to Block Open-Source DisplayLink Driver",
+      "time": 1793790852,
+      "points": 176,
+      "depth": [
+        {
+          "text": "Synaptics appears to have used **legal threats** against an **open-source Linux driver**",
+          "tier": "simple"
+        },
+        {
+          "text": "**Vino** was a **clean-room reverse-engineered** project developed in part by AI and written in Rust. Its developer received a **cease and desist notice** over alleged patent violations, and its GitHub repository is no longer publicly available.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters say AI use made the clean-room work legally riskier; others say Synaptics would have sent the cease-and-desist notice anyway.",
+      "comment_count": 83,
+      "terms": [
+        "clean-room reverse-engineering",
+        "cease and desist",
+        "patent infringement",
+        "kernel driver"
+      ],
+      "entities": [
+        "Synaptics",
+        "Vino",
+        "DisplayLink",
+        "Linux",
+        "Rust",
+        "GitHub",
+        "Phoronix"
+      ],
+      "comments": [
+        {
+          "by": "pona-a",
+          "text": "I do find using AI in a clean-room reverse-engineering project amounts to shooting yourself in the foot: you're sleep-walking into a legal minefield in an already legally gray field, and also risk over-relying on the AI's trial-and-error instead of developing a solid intuition of its functioning yourself. At the same time, if we're being honest, Synaptics will have sent the C&D no matter what…"
+        },
+        {
+          "by": "skissane",
+          "text": "The developer of the driver is in the UK. Given how the UK legal system works, I understand why the developer likely sees non-compliance with Synaptics’ demands as involving excessive personal risk. However, there are many other countries worldwide whose legal systems are very different, and would be much less favourable to Synaptics—what will they do if (say) a Chinese or Russian developer takes…"
+        },
+        {
+          "by": "nerdjon",
+          "text": "This is frustrating, I have had a growing distrust (and just frustration with the software in the first place) of DisplayLink with the Dock that I use, I would love alternative software. This also just seems stupid to me, you don't pay for the DisplayLink software you pay for the hardware. More options for how to use your hardware would be a good thing to them would it not? Though it sounds like…"
+        },
+        {
+          "by": "dTal",
+          "text": "How can they simultaneously argue that 1) this is a patent infringement, the entire legal basis of the claim, and 2) it is a unlicensed disclosure of proprietary technology? The whole point of patents is to disclose technology."
+        },
+        {
+          "by": "ectoloph",
+          "text": "> If you are not currently represented by competent legal counsel, I strongly recommend that you obtain legal representation promptly. You are going to need it. \"You are going to need it\" sounds ominous. I think the cat is somewhat out of the bag with open models around though, their capabilities for pretty much uninhibited RE are scary."
+        }
+      ],
+      "image": "https://www.phoronix.net/image.php?id=2026&image=no_vino"
+    },
+    {
+      "id": 50357782,
+      "url": "https://helgesver.re/articles/macos-vulgar-word-flags",
+      "hn": "https://news.ycombinator.com/item?id=50357782",
+      "title": "I dumped Apple’s word list",
+      "time": 1793738003,
+      "points": 161,
+      "depth": [
+        {
+          "text": "someone dug into **Apple's word list** to see which words its **keyboard flags**",
+          "tier": "simple"
+        },
+        {
+          "text": "Apple's system dictionary gives words **three tiers**—vulgar, offensive, and sensitive—and **topic flags**. The author says these shape **what the keyboard suggests**, not what you can type; Apple doesn't document the flag meanings, so the categories are inferred.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some call it adaptive non-censorship; others see mollycoddling or worry it's a keylogger.",
+      "comment_count": 95,
+      "terms": [
+        "Lexicon.framework",
+        "bitmask",
+        "allowlist"
+      ],
+      "entities": [
+        "Apple",
+        "Lexicon",
+        "Claude",
+        "macOS",
+        "iOS",
+        "TextEdit",
+        "Craig Federighi"
+      ],
+      "comments": [
+        {
+          "by": "nonethewiser",
+          "text": "There is a lot more interesting stuff to mine from this. The phrase blocklist for the Chinese lanaguge is a lot larger (surprise, surprise). It about 281 KB for Simplified Chinese, 325 KB for Traditional and 160 KB for Cantonese, against 28 KB for English. apparently there are `shouldShowTaiwanFlagEmoji()` and `deviceIsChinese()` functions as well but that doesn't have anything to do with this…"
+        },
+        {
+          "by": "rappatic",
+          "text": "> I dumped Apple's word list Claude dumped Apple's word list, and obviously wrote the article too."
+        },
+        {
+          "by": "verytrivial",
+          "text": "I have a MacBook that was meant to replace my aging Windows and Linux laptops. This article is a microcosm of why I have just stopped using it. An endless stream of mollycoddling, obfuscation and \"It's for your own good, child\" trash. I can't even bring myself to sell it because I'm ashamed of it."
+        },
+        {
+          "by": "thinkingemote",
+          "text": "Would it be possible to get versions of the files to see when certain words got added and I imagine certain words got removed? Could be interesting to correlate certain events, personalities, trends, memes, controversies etc with the changes. It was added in 23 so there's potentially 3 years of updates. Edits: This comment shows differences between 15.6 and 26.2…"
+        },
+        {
+          "by": "Retr0id",
+          "text": "I'd appreciate if someone could dump the iOS \"adult websites\" list (which are blocked by default in the UK unless you submit government ID etc.)"
+        }
+      ],
+      "image": "https://helgesver.re/og/article-macos-vulgar-word-flags.png"
+    },
+    {
+      "id": 50332342,
+      "url": "https://katamari.vaguespac.es/",
+      "hn": "https://news.ycombinator.com/item?id=50332342",
+      "title": "Katamari Damacy but it's The Met collection",
+      "time": 1793586067,
+      "points": 153,
+      "depth": [
+        {
+          "text": "someone made a **Katamari-style game** where you roll up **real objects** from The Met",
+          "tier": "simple"
+        },
+        {
+          "text": "Every object is a **real object** from The Met's Open Access collection, at its **real size**; you start with coins, thimbles, and netsuke, then end with the **Temple of Dendur**. Jay Mollica made it, and the building is traced from the Met's floor plans.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: fans praise the idea and want more museum settings; critics say the controls, scenery, and treatment of the artifacts need work.",
+      "comment_count": 48,
+      "terms": [
+        "Open Access",
+        "CC0",
+        "CC BY 4.0"
+      ],
+      "entities": [
+        "Katamari Damacy",
+        "The Metropolitan Museum of Art",
+        "Open Access",
+        "Jay Mollica",
+        "Temple of Dendur",
+        "Wikimedia Commons",
+        "Kevin MacLeod",
+        "Claude Code",
+        "Firefox",
+        "Doom: The Gallery Experience",
+        "Piranesi",
+        "SMK",
+        "Xbox"
+      ],
+      "comments": [
+        {
+          "by": "thepuglor",
+          "text": "Every Katamari Damacy clone misses what made it so great: the transition between zoom levels. \"I started so small and now I've sucked up everything on the planet!\" The transitions between zoom levels was so well done in the original game, and none of these clones even attempt it."
+        },
+        {
+          "by": "vunderba",
+          "text": "Nice job~~ Some feedback: • Provide a toggle for the music. It sounds like it was procedurally generated by Claude Code. I understand CC was trying to give it a \"Damacy vibe\", but it just doesn't have any of the charm. I can still sing the very memorable original's theme despite not having played it in over two decades. • The camera has a bit too much elasticity when you haven't accreted much on…"
+        },
+        {
+          "by": "viraptor",
+          "text": "On Firefox mobile, the controls are way too sensitive. I could barely aim at things. Also the joystick indicator stays in place even though you can press and drag from anywhere. The loading is extremely slow - I'm not sure I need all the objects loaded before selecting the first level. Also I'm not sure if some textures didn't load, but the first level is just... almost empty with random things…"
+        },
+        {
+          "by": "dwallin",
+          "text": "What I would give for this to take place in an actual model of the Met. I bet you could pass an agent the floor maps of the met, along with some photos of the interior and get a pretty good recreation."
+        },
+        {
+          "by": "jdpigeon",
+          "text": "Nice! I built something similar for my personal site, based on the book Piranesi and the statues from the SMK collection in Copenhagen. https://danomorrison.com/#house"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50333332,
+      "url": "https://asteriskmag.com/issues/16/why-don-t-we-life-in-an-art-nouveau-world",
+      "hn": "https://news.ycombinator.com/item?id=50333332",
+      "title": "Why Don't We Live in an Art Nouveau World?",
+      "time": 1793595911,
+      "points": 152,
+      "depth": [
+        {
+          "text": "the **ornate style** faded fast because its custom details were **hard to reproduce** across ordinary buildings",
+          "tier": "simple"
+        },
+        {
+          "text": "The author says Art Nouveau gave way to **classicism**, including Catalonia’s more restrained Noucentisme. Its **bespoke decoration**—wrought iron, carved stone and trencadís—was expensive and hard to reproduce at scale; modernism later spread through **standardized parts** and industrial production.",
+          "tier": "substance",
+          "data": [
+            [
+              "Art Nouveau movement",
+              "around 1890 to 1910"
+            ],
+            [
+              "Art Nouveau buildings in Riga",
+              "approximately 800"
+            ],
+            [
+              "Share of Riga city center",
+              "a third"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters blame costs and demand for mass housing; others point to modernist ideology, academic culture, or wider cultural shifts.",
+      "comment_count": 130,
+      "terms": [
+        "Art Nouveau",
+        "Modernisme",
+        "Noucentisme",
+        "trencadís",
+        "vernacular architecture"
+      ],
+      "entities": [
+        "Asterisk",
+        "Art Nouveau",
+        "Modernisme",
+        "Noucentisme",
+        "Art Deco",
+        "Modernism",
+        "Sagrada Família",
+        "Hospital de la Santa Creu i Sant Pau",
+        "Antoni Gaudí",
+        "Lluís Domènech i Montaner",
+        "Pau Gil",
+        "Catalan"
+      ],
+      "comments": [
+        {
+          "by": "virtualritz",
+          "text": "I have architect friends. They can't draw, they can't sculpt, they have no clue about art history. Or color theory, if you want to go that far. Usually golden ratio/Fibonacci is kinda where it ends. One of them is a professor of architecture, no less. That said, I'm sure there are architects today for which some or all of this is not true. Most of the above are subjects an architect student would…"
+        },
+        {
+          "by": "bondarchuk",
+          "text": "Sort of a recap for normies of Scott Alexander's Whither Tartaria from 2021: https://www.astralcodexten.com/p/whither-tartaria It is also interesting to read about the Amsterdamse School, an early 1900's style with \"mass appeal\" of which you can see many beautiful examples throughout the city, which were also only built thanks to strong support from the political sphere…"
+        },
+        {
+          "by": "BobBagwill",
+          "text": "I think contemporary architecture is perfect: Cheap, soulless, forgettable, replaceable metal and glass rectangular prisms filled with cheap, soulless, forgettable, replaceable workers. Form follows function! That old architecture implied things like spirit, transcendence, community, beauty. Outmoded concepts for sure! https://architizer.com/projects/tiktok/"
+        },
+        {
+          "by": "recursivedoubts",
+          "text": "Read from bauhaus to our house, by tom wolfe. In america we had the Arts & Crafts movement (e.g. greene & greene) as a native folk form. It was all killed because two dynamics came together to push \"the yale box\": corporate america's love of cheap buildings (although the buildings are cheap to build but often nightmares to maintain and use... somebody else's problem) and the ideological purity…"
+        },
+        {
+          "by": "robochat",
+          "text": "It's important to remember that the Art Nouveau part of Barcelona was where the very rich people lived. They were apartment buildings for the very wealthy. Also the very nice houses that we visit on holidays and trips tend to have originally been very rich peoples' houses. It's like looking back at music in past decades and only seeing the good stuff and forgetting that there was far more…"
+        }
+      ],
+      "image": "https://asteriskmag.com/media/pages/issues/16/why-don-t-we-life-in-an-art-nouveau-world/8662aa7dad-1793046098/art-nouveau-etienne-fortier-dubois-1600x900-crop-sharpen50.png"
+    },
+    {
       "id": 50354358,
       "url": "https://neufangled.com/",
       "hn": "https://news.ycombinator.com/item?id=50354358",
@@ -741,6 +2010,85 @@
     }
   ],
   "glossary": {
+    "technical debt": "Past shortcuts or aging choices that make future work take more effort.",
+    "out-of-memory error": "An error that happens when a program doesn’t have enough memory set aside for some data.",
+    "arbitrary code": "Instructions an attacker chooses to make a server do what they want.",
+    "patch": "A software update that fixes a problem, often a security flaw.",
+    "formal verification": "Checking a claim using precise rules, often with a computer.",
+    "Keep Activity": "A Gemini setting that, when on, lets chat activity be used to improve Google services, including through AI training.",
+    "training": "Using chats as examples to help an AI system improve.",
+    "human reviewers": "People who read some chats, rather than an automated system.",
+    "WSL": "Windows Subsystem for Linux: a way to use Linux tools on Windows.",
+    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "firmware": "The built-in software that tells a device's hardware how to work.",
+    "power table": "A list of settings that tells a computer how to share power between its chips.",
+    "tokens per second": "A measure of how quickly a model produces text.",
+    "social engineering": "Tricking or persuading people into revealing information or doing something.",
+    "malware": "Software made to harm a computer or get access to it without permission.",
+    "supply chain attack": "An attack that reaches people through software or services they rely on.",
+    "permission token": "A digital pass that proves someone is allowed to do a particular task.",
+    "Three.js": "A tool for drawing 3D scenes inside web pages.",
+    "JavaScript": "A programming language; here, it lets an agent combine tool calls.",
+    "gyroscope": "A phone sensor that detects how the phone is tilted or turned.",
+    "dock": "A window attached to the edge of another window or tab, outside the usual layout.",
+    "session": "A saved setup of the terminal windows, tabs, and programs you want to open.",
+    "scrollback": "The saved lines that have moved off the visible terminal screen.",
+    "throughput": "How many operations a computer can finish over a stretch of time.",
+    "custom shaders": "A way to add visual effects, like animated backgrounds or highlighting, to what you see on screen.",
+    "AI accelerator": "A chip made to handle AI calculations.",
+    "guidance": "A company's forecast of how it expects its business to perform.",
+    "gross margin": "The share of sales left after subtracting the direct cost of making or buying what was sold.",
+    "sequentially": "Compared with the previous quarter, rather than the same quarter a year earlier.",
+    "SoC": "System on a Chip: a computer’s main processing parts built together on one chip.",
+    "inference": "When an AI uses what it learned to answer or act, instead of being trained.",
+    "MoE": "Mixture of Experts: a model with many specialist parts that sends each piece of text to only a few of them.",
+    "SMD": "Surface-mount device: a small electronic part soldered directly onto a circuit board.",
+    "ECC": "Error-Correcting Code: a kind of memory that can detect and fix some data errors.",
+    "LUKS": "Linux Unified Key Setup: a way to encrypt storage on Linux computers.",
+    "frontier AI": "The most capable AI systems being built at a particular time.",
+    "AI agents": "Computer programs that can carry out tasks, rather than only answer a question.",
+    "neural network": "A computer program that learns patterns from examples and uses them to produce answers or predictions.",
+    "brownout": "A drop in the power supply that can disrupt electricity without fully cutting it off.",
+    "moratorium": "A temporary pause on an activity, often while people work out rules.",
+    "hyperscaler": "A company that rents servers and computing power at huge scale.",
+    "community benefits agreement": "A negotiated deal where a company promises local residents specific benefits from a project.",
+    "compute campus": "A name some tech companies are using for data centers.",
+    "agentic coding": "Having an AI handle coding tasks by making changes and checking its work with less step-by-step direction.",
+    "PR": "Pull request: a proposed code change shared so others can review it.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "subpoena power": "The ability to legally require someone to provide records or answer questions.",
+    "gerrymandering": "Drawing voting districts in a way that gives one side an unfair advantage.",
+    "filibuster": "A Senate tactic for delaying or blocking a vote by keeping debate going.",
+    "redistricting": "Changing the boundaries of the areas that elect representatives.",
+    "GitOps": "A way to manage computer systems by keeping their setup instructions alongside the code changes.",
+    "CI": "Continuous integration: automatic checks that run when developers change code, helping catch problems early.",
+    "SSH key": "A digital key your computer uses to prove it is allowed to connect to a service.",
+    "model weights": "The learned settings inside an AI that shape how it responds.",
+    "3T-class": "A label for a model with about three trillion learned settings; models that large can take lots of computing power to run.",
+    "context window": "The amount of text and information an AI can take into account at one time.",
+    "multimodal": "Able to work with more than one kind of input, such as text and images.",
+    "agentic model": "An AI that can take steps toward completing a task, rather than only replying to a prompt.",
+    "benchmaxxed": "A criticism that a model may be tuned to score well on tests without doing as well in everyday use.",
+    "value-free ideal": "The belief that science should judge evidence without letting ethical or social concerns affect the judgment.",
+    "epistemic": "About knowledge: what we know and how we come to know it.",
+    "accountability": "Being answerable for a claim, including explaining what it rests on and responding when challenged.",
+    "tactical urbanism": "Quick, small changes people make to public spaces to show how they could work better.",
+    "soft-hit posts": "Roadside posts used to mark off space that give way when hit instead of acting like a solid barrier.",
+    "clean-room reverse-engineering": "A way to recreate how something works by studying its behavior, without using its original source code.",
+    "cease and desist": "A formal legal demand to stop doing something.",
+    "patent infringement": "Using an invention covered by someone else’s patent without permission.",
+    "kernel driver": "Software that lets an operating system use a computer's hardware.",
+    "Lexicon.framework": "An Apple system toolset that reads the dictionaries used by the keyboard.",
+    "bitmask": "A compact number that lets software keep several yes-or-no labels at once.",
+    "allowlist": "A list of apps or people that are allowed to connect.",
+    "Open Access": "A collection made available for people to view and use.",
+    "CC0": "A way for a creator to let everyone use a work without needing permission.",
+    "CC BY 4.0": "A reuse license that lets people share or change a work if they credit its creator.",
+    "Art Nouveau": "A style of art and building from around 1890 to 1910, known for curves and nature-inspired decoration.",
+    "Modernisme": "Catalonia’s regional version of Art Nouveau.",
+    "Noucentisme": "A Catalan movement that replaced Modernisme with a more classical, restrained style.",
+    "trencadís": "A mosaic made by setting together irregular pieces of glass.",
+    "vernacular architecture": "Buildings made by regular builders without architects designing them.",
     "payload capacity": "The heaviest thing a robot can carry while doing its job.",
     "fiducial tags": "Markers a robot can spot with its camera to recognize a place or object.",
     "inverse kinematics": "Working out how a robot's joints need to move to put its hand at a chosen spot.",
@@ -756,7 +2104,6 @@
     "RPO": "Remaining Performance Obligations: money customers have committed to pay for work the company still has to deliver.",
     "CapEx": "Capital expenditures: money a company spends on long-lasting things it needs, like buildings and equipment.",
     "AGI": "Artificial General Intelligence: a hypothetical AI that could handle many kinds of tasks, not just one narrow job.",
-    "inference": "When an AI uses what it learned to answer or act, instead of being trained.",
     "generative model": "A program that learns patterns in examples so it can make new examples like them.",
     "PCA": "Principal component analysis: a way to simplify data by keeping its biggest patterns.",
     "probabilistic PCA": "A version of PCA that represents patterns with probabilities, not just fixed values.",
@@ -791,7 +2138,6 @@
     "firewall rules": "Settings that decide which network connections are allowed in or out.",
     "VPN": "Virtual private network: a service that sends your internet traffic through another computer, often to protect it or make it appear to come from somewhere else.",
     "Jimi Halloween": "A Japanese Halloween tradition where people dress as mundane everyday situations.",
-    "AI agents": "Computer programs that can carry out tasks, rather than only answer a question.",
     "API token": "A secret code that lets another app or person access a service.",
     "credentials": "The username and password that let someone sign in to an account.",
     "Git Sync": "A way to keep GitBook pages and a Git project updated together.",
