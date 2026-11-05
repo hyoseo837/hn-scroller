@@ -1,0 +1,1039 @@
+{
+  "date": "2026-11-05",
+  "cards": [
+    {
+      "id": 50371246,
+      "url": "https://layer3intel.com/blog/residential-proxies-white-house-network",
+      "hn": "https://news.ycombinator.com/item?id=50371246",
+      "title": "Residential proxies detected on White House network",
+      "time": 1793825118,
+      "points": 920,
+      "depth": [
+        {
+          "text": "someone spotted **residential proxies** on the **White House network**, but commenters aren't sure what that proves",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter quotes a report saying **about half** the activity falls between 5 p.m. and midnight, but the data shows **exits**, not the device or person behind them. Another says IP ownership alone doesn't prove the activity came from a device physically at the **White House**.",
+          "tier": "substance",
+          "data": [
+            [
+              "reported activity share",
+              "about half"
+            ],
+            [
+              "reported activity period",
+              "between 5 p.m. and midnight"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some warn compromised devices could be assigned more harmful tasks; others say residential proxies can be legitimate and the evidence doesn't prove this came from a device physically at the White House.",
+      "comment_count": 278,
+      "terms": [
+        "residential proxy",
+        "proxy SDK",
+        "Command and Control",
+        "exit node"
+      ],
+      "entities": [
+        "White House",
+        "Google",
+        "T-Mobile",
+        "Tailscale",
+        "Cloudflare",
+        "SuperBox",
+        "Bright Data",
+        "Trustpilot",
+        "Myxproxy",
+        "Linux",
+        "Android",
+        "Clinton",
+        "TOR"
+      ],
+      "comments": [
+        {
+          "by": "dhosek",
+          "text": "They’re too polite to say it explicitly, but when they say: > Most of the activity happens in the evening, Eastern time: about half of it falls between 5 p.m. and midnight, and almost none happens in the early morning. That pattern suggests a person rather than a public guest Wi-Fi network: someone regularly on the White House network late into the evening, whose device is infected with a proxy…"
+        },
+        {
+          "by": "btown",
+          "text": "The danger here, of course, is that while these compromised devices are currently being monetized in a relatively benign way (other than bandwidth costs to the user, which to be sure can be nontrivial)… it would be naive to assume that there isn't a Command and Control capability that can assign less benign tasking - or can be compromised to do so. This also puts some of the troubling reports…"
+        },
+        {
+          "by": "wolvoleo",
+          "text": "I didn't know that residential proxies were a thing. That sounds pretty handy because going online via a VPN gives constant nag popups from the likes of cloudflare :( I hate them. It would be nice if the VPNs would integrate this option. I don't need one from the white house though :)"
+        },
+        {
+          "by": "lakeviewterrace",
+          "text": "So they don't actually know what this network is, just who owns the IP space... time for a blog post to advertise our week-old service! There is no evidence that physically ties this to the WH. It could be in a security lab for all they know. Or a guest network for the news media."
+        },
+        {
+          "by": "bronco21016",
+          "text": "Gotta have your SuperBox set up to watch 24 hr cable news working late into the night."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50369106,
+      "url": "https://go.dev/blog/jsonv2",
+      "hn": "https://news.ycombinator.com/item?id=50369106",
+      "title": "A new Go API for JSON",
+      "time": 1793814731,
+      "points": 282,
+      "depth": [
+        {
+          "text": "Go is getting a **new API** for **safer data handling** and **streaming**",
+          "tier": "simple"
+        },
+        {
+          "text": "The new encoding/json/v2 and encoding/json/jsontext packages are **stable and generally available** in Go 1.27. v2 **rejects invalid UTF-8**, and its unmarshaling benchmarks show improvements of **up to 10x**.",
+          "tier": "substance",
+          "data": [
+            [
+              "unmarshal improvement",
+              "up to 10x"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some welcome the fixes; others worry that empty JSON arrays or objects for nil slices and maps will bite users.",
+      "comment_count": 129,
+      "terms": [
+        "API",
+        "JSON",
+        "streaming",
+        "UTF-8",
+        "marshaling",
+        "unmarshaling"
+      ],
+      "entities": [
+        "Go",
+        "encoding/json/v2",
+        "encoding/json/jsontext",
+        "Michael Pratt",
+        "Joe Tsai",
+        "Daniel Martí",
+        "Johan Brandhorst-Satzkorn",
+        "Roger Peppe",
+        "Chris Hines",
+        "Damien Neil",
+        "Austin Clements"
+      ],
+      "comments": [
+        {
+          "by": "asim",
+          "text": "At this stage to me Go is the new C compiler. Quite honestly I spent 10 years or more writing Go code. At times 18 hours a day. And now with AI, I get models to write my Go code. I STILL want it to be Go code. Is that strange? No because I understand the performance and safety of Go. But I rarely write it directly anymore. Probably not at all in 6-9 months. Yet I still occasionally look at the…"
+        },
+        {
+          "by": "CamouflagedKiwi",
+          "text": "I generally like `encoding/json/v2` and I'm glad they did it. I wish they'd left `MarshalIndent` in there though. The equivalent code is super complicated and non-obvious, so it's a pain to migrate, and it's a pain when you're banging out some quick code and want to dump some readable JSON. I suppose these days the LLMs can write the complicated version for us, of course."
+        },
+        {
+          "by": "brunoborges",
+          "text": "> \"JavaScript Object Notation (JSON) is a simple data interchange format [...]\" Clearly it isn't, otherwise every language would have sorted it out by... a long time ago."
+        },
+        {
+          "by": "modulovalue",
+          "text": "I'm working on better SIMD support in Dart and one of the motivations for that work is specializing parser specifications based on schema specifications of that language. Or more concretely, if we had a parser generator + json parser specification that can generate efficient simdjson style parsers, then we should be able to parse json restricted to a subset of json based on a schema at least as…"
+        },
+        {
+          "by": "txomon",
+          "text": "I used the jsontext package at my company when we needed to make a parser for challenging clients (specific errors for each kind of mistake) while still keeping performance, and it works like a charm. There is no introspection and speed is superb. I would definitely recommend jsontext as a parser for anything non-straightforward."
+        }
+      ],
+      "image": "https://go.dev/doc/gopher/gopher5logo.jpg"
+    },
+    {
+      "id": 50369925,
+      "url": "https://www.ricursive.com/ripple",
+      "hn": "https://news.ycombinator.com/item?id=50369925",
+      "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+      "time": 1793818409,
+      "points": 276,
+      "depth": [
+        {
+          "text": "someone released an **open-weight model** claiming a **US record** in **agentic coding**",
+          "tier": "simple"
+        },
+        {
+          "text": "Ricursive says Ripple-65B Preview was pretrained on **12 trillion tokens**, supports up to 1M context, and scored **80.52** on TerminalBench 2.1. The company says the full R&D cost from scratch was **$32M**.",
+          "tier": "substance",
+          "data": [
+            [
+              "pretraining",
+              "12 trillion tokens"
+            ],
+            [
+              "context length",
+              "up to 1M"
+            ],
+            [
+              "TerminalBench 2.1 score",
+              "80.52"
+            ],
+            [
+              "full R&D cost",
+              "$32M"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: critics say the “U.S. open-weight” label and comparison set are too narrow; others say US jurisdiction matters because some users are barred from using models from companies outside it.",
+      "comment_count": 99,
+      "terms": [
+        "open-weight",
+        "agentic coding",
+        "context length",
+        "TerminalBench",
+        "MoE",
+        "SFT",
+        "RL"
+      ],
+      "entities": [
+        "Ricursive Intelligence",
+        "Ripple-65B Preview",
+        "TerminalBench",
+        "Reflection Beam",
+        "Meta Muse Spark Open",
+        "Thinking Machines Inkling",
+        "NVIDIA Nemotron 3 Ultra",
+        "NVIDIA",
+        "Qwen",
+        "Olmo 3",
+        "Hugging Face",
+        "Together AI",
+        "GMI Cloud",
+        "OpenRouter"
+      ],
+      "comments": [
+        {
+          "by": "advael",
+          "text": "Category narrowing to this degree really has diluted the term \"SOTA\" quite a lot You mean it's state of the art for this subset of benchmarks you're targeting? No? Well surely it's state of the art for models of a certain size category? Huh, what about models that are available for local inference? O, state of the art for open models of a certain size made in the US specifically. Uh. Neat!"
+        },
+        {
+          "by": "stewartpark",
+          "text": "It's great to see another competitive open weight model. Congratulations! But as is, it's probably hard to become popular amongst hobbyists and local model enthusiasts like Qwen's 27B class models or MOE models because it's a 65B dense model and inference will be prohibitively slow on consumer grade hardware, and seems like the goal/mission of the company behind this model is to automate chip…"
+        },
+        {
+          "by": "wmf",
+          "text": "Congratulations I guess but it's a pretty bad look to not even mention those other open weight models ."
+        },
+        {
+          "by": "bluejay2387",
+          "text": "There are several situations where some of us are explicitly prohibited from using models from companies not under the jurisdiction of the United States. It doesn't mean these models are competitive when looked at from a global view but it is also not an irrelevant differentiation."
+        },
+        {
+          "by": "2001zhaozhao",
+          "text": "This model scores 80.5 on Terminal Bench 2.1 For reference Qwen 3.8 Flash Next (which is bigger than this model but probably cheaper to run due to MoE) scores 84.3, and Qwen 3.8-27B scores 73.0. I think this model could be competitive, depending on how much it was benchmaxxed compared to Qwen?"
+        }
+      ],
+      "image": "https://framerusercontent.com/images/u4OXzV0utwAtaPgcVxQtTXmkg.png"
+    },
+    {
+      "id": 50372929,
+      "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+      "hn": "https://news.ycombinator.com/item?id=50372929",
+      "title": "A thousand fewer paths to root",
+      "time": 1793835194,
+      "points": 273,
+      "depth": [
+        {
+          "text": "someone **patched hundreds** of **Linux vulnerabilities** that could give attackers **root access**",
+          "tier": "simple"
+        },
+        {
+          "text": "The team says one run of its **autonomous vulnerability discovery, exploitation, and patching pipeline** validated and generated patches for **948 local privilege escalation vulnerabilities** in Linux, at an API cost of **$1.2 million**.",
+          "tier": "substance",
+          "data": [
+            [
+              "local privilege escalation vulnerabilities",
+              "948"
+            ],
+            [
+              "API cost",
+              "$1.2 million"
+            ]
+          ]
+        }
+      ],
+      "camps": "Some commenters question whether the 948 are distinct vulnerabilities and say Linux may be less vulnerable than presented; others call it a public service and wonder what similar spending could do for other open-source projects.",
+      "comment_count": 172,
+      "terms": [
+        "root access",
+        "local privilege escalation",
+        "kernel",
+        "API"
+      ],
+      "entities": [
+        "Linux",
+        "OpenAI"
+      ],
+      "comments": [
+        {
+          "by": "numlock86",
+          "text": "Plot twist: They look for genuine exploit paths to fix as a cover up, while introducing and potentially selling genuine new backdoors that humans or other models are unlikely to find. Just kidding (or am I?), but this is pretty cool."
+        },
+        {
+          "by": "Plasmoid",
+          "text": "How did we get to the point where there are a thousand privilege escalation exploits in the kernel? Is the kernel simply too complex to reason about? Is it an underlying flaw in the security model or language implementation? Should we assume that all software is more compromised than the kernel?"
+        },
+        {
+          "by": "dangelosaurus",
+          "text": "This is my team’s work. I’m happy to try to answer questions or take questions back to the team. And we're hiring! https://openai.com/careers/search/?q=cyber"
+        },
+        {
+          "by": "tzury",
+          "text": "If a web application is vulnerable to sql injection, there are 4,732 ways you can ruin/still a database. Yet it is all one single vulnerability. Now, either those are 1k+ unique distinct techniques, or closer to my Sql injection example. There is no real data attached to the post. And in general, open ai marketing already gained mileage of reputation amongst us. Most likely kernel is not that…"
+        },
+        {
+          "by": "evan_a_a",
+          "text": ">For safety reasons, we omit sharing the full technical details of these new exploitation techniques in this post. Convienient to claim \"safety\" when patches are already public. I await the full writeup on these new techniques so that they can be judged by the broader security community."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50366117,
+      "url": null,
+      "hn": "https://news.ycombinator.com/item?id=50366117",
+      "title": "Ask HN: What's your current AI agentic setup?",
+      "time": 1793803042,
+      "points": 267,
+      "depth": [
+        {
+          "text": "people are comparing **AI coding setups**, from one assistant to **fleets of agents**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter uses **Remuda** to launch workers on individual beads and have them go through at least one round of agentic code review. Another says the **amount of information** from AI work feels overwhelming.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 264,
+      "terms": [
+        "AI agent",
+        "harness",
+        "agent orchestration",
+        "bead"
+      ],
+      "entities": [
+        "Remuda"
+      ],
+      "comments": [
+        {
+          "by": "cemoktra",
+          "text": "1) no personally paid - employer gives me claude\n2) no\n3) corgi + claude at work\n4) no\n5) no"
+        },
+        {
+          "by": "amboo7",
+          "text": "1. none\n2. nvidia nim, opencode zen, google free models. local QFN iq3_xss on m1 max 64gb, paperniuk splash\n3. pi agent, pi pocket\n4. no\n5. no"
+        },
+        {
+          "by": "TheArcane",
+          "text": "I have both platform.deepseek.com (hooray off-peak pricing) and the $100/m Claude subscription and boy do I find myself mostly using DS-flash pretty much every time. There's something to be said for the speed with which it gets word done - I take fewer \"it's compiling\" breaks, and lose my train of thought less frequently. What's crazy is that the speedy work it does is pretty much always correct…"
+        },
+        {
+          "by": "haizhung",
+          "text": "I use pi as a harness, and Paseo as a Mac UI (because I need a Ui). I tried a bunch of models, but so far deepseek flash from October is just dirt cheap; and roughly on par with the frontier open weight models. It’s still somewhat behind closed weight models (I only know Gemini Argon) in that it produces lots of text that is approximately correct —- frontier models seem to be very good at…"
+        },
+        {
+          "by": "thefourthchime",
+          "text": "It used to be more interesting and elaborate, switching between different models. I used to use Cursor, then Codex, but since Opus 5.5 came out, I just use the Claude IDE. I got rid of all my skills and just set it to medium. Then I vaguely talk to it about very high-end things that I want, and it comes back with magic. Rinse and repeat. I'd say the biggest trick is just to tell it what complete…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50372945,
+      "url": "https://openai.com/index/introducing-images-2-6/",
+      "hn": "https://news.ycombinator.com/item?id=50372945",
+      "title": "Images 2.6",
+      "time": 1793835344,
+      "points": 237,
+      "depth": [
+        {
+          "text": "someone says **Images 2.6** can make **animated GIFs**, but commenters aren't sold on its **quality**",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter says the API can make **SVGs** from a reference image, and relays OpenAI's claim of **50% faster generation**. Another says **2.5 was better** in their testing.",
+          "tier": "substance",
+          "data": [
+            [
+              "claimed generation speed",
+              "50% faster"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say 2.6 is worse than 2.5; others still find AI image generation useful.",
+      "comment_count": 154,
+      "terms": [
+        "SVG",
+        "raster-to-vector",
+        "sprite sheet",
+        "non-deterministic"
+      ],
+      "entities": [
+        "OpenAI",
+        "ChatGPT",
+        "Images 2.6",
+        "GPT Image 2.6",
+        "Image 2.5",
+        "Codex"
+      ],
+      "comments": [
+        {
+          "by": "E-Reverance",
+          "text": "Still looks like an eyesore, I genuinely want to know if the engineers who work on the product don't notice it"
+        },
+        {
+          "by": "DanHulton",
+          "text": "That stained glass whale thing makes me especially grumpy. When it scrolled onto the page, my first thought was \"whoah, what a neat idea\" and then it was _immediately_ followed by \"what a terribly execution.\" Like, I'm not even an artist, so I'm sure there's a million things I'm missing, but it's just so upsetting to look at. There's weird random reflections on things that shouldn't have…"
+        },
+        {
+          "by": "pointlessone",
+          "text": "I don’t care for image gen, but I appreciate that they drew the rest of the owl."
+        },
+        {
+          "by": "minimaxir",
+          "text": "Using the grid trick for animations to generate the individual frames has been around for awhile and not specific to ChatGPT: I'm surprised it took this long for one of the official providers to make it explicit. However, adherence between frames is generally tricky, and even in the examples there is a lot of noise between frames although that could be due to compression. SVG support is…"
+        },
+        {
+          "by": "rawoke083600",
+          "text": "Lol honestly i like chatgpt image function. I also take it for what it is, incredible none determinstic engineering. That being said, i always feels a bit of sympathy for \"the machine\" when they say things like: - Oh it horrible to use - It changed everything instead of the one thing i asked (probably biggest misconceptions and misunderstood technical part among my none-techie friends). I've…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50370610,
+      "url": "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
+      "hn": "https://news.ycombinator.com/item?id=50370610",
+      "title": "Insects don't swarm at LED lights",
+      "time": 1793821823,
+      "points": 227,
+      "depth": [
+        {
+          "text": "a post says **LEDs attract fewer insects** because they usually leave out **ultraviolet light**",
+          "tier": "simple"
+        },
+        {
+          "text": "A 2016 University of Bristol experiment compared incandescent, compact fluorescent, and cool- and warm-white LEDs; it found LEDs **attracted significantly fewer insects** than other lights, with no significant difference between LED colors. Commenters report **bugs swarming their own LEDs**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: the article and its cited study say LEDs attract fewer insects; commenters say bugs still swarm some LED lights.",
+      "comment_count": 121,
+      "terms": [
+        "LED",
+        "UV",
+        "incandescent",
+        "compact fluorescent",
+        "PWM",
+        "IR"
+      ],
+      "entities": [
+        "Kate St. John",
+        "Roland Rumm",
+        "University of Bristol",
+        "BBC",
+        "WINGS",
+        "Outside My Window"
+      ],
+      "comments": [
+        {
+          "by": "tw04",
+          "text": "I have LED headlights and an LED light bar on my tractor and I can say with 100% confidence that bugs swarm both. To the point I have to wear glasses to keep them out of my eyes if I’m on it for more than about 30 seconds at night. I’m guessing he’s confusing the dramatic drop in insect life overall with a change in behavior due to different lights."
+        },
+        {
+          "by": "mahboi",
+          "text": "Welp, they do for mine. I've had to stop turning on outdoor LEDs because angry bees kept showing up, and there'd be 3-10 dead ones on my doorstep every morning. These are white bulbs. Might be \"zombees.\" Also, not sure about white bulbs, but those color-configurable spotlights definitely emit UV at least when set to anything near blue/purple. They cause certain things to glow. Probably white is…"
+        },
+        {
+          "by": "gopalv",
+          "text": "My pet theory is that the dimmable LEDs repel insects (when used as a grow light). The thing that insects can see and we don't is the rapid flashing of a PWM power controller. I wonder if these streetlights have power saving fade-ins as the nightfall approaches instead of clicking on at sunset. Like - https://doi.org/10.1109/CSNT51715.2021.9509652"
+        },
+        {
+          "by": "dylan604",
+          "text": "I love to shoot long exposure timelapse of the night sky. I set up a couple of LEDs dimmed as low as possible to light a bit of the foreground (over the course of the long exposure the low light adds up so it looks normal for those not familiar). Out of sheer laziness, I just placed them on either side of my tripod. The next day after processing the shot, it was pretty much ruined because of all…"
+        },
+        {
+          "by": "piskov",
+          "text": "The entire premise (moon uv, ir etc) is wrong so the conclusion is wrong. Sky is always brighter than the land, moon is not required. Lamp movement is the confusion of where is “up” https://www.nature.com/articles/s41467-024-44785-3"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50366863,
+      "url": "https://openai.com/index/openai-to-acquire-pierre/",
+      "hn": "https://news.ycombinator.com/item?id=50366863",
+      "title": "OpenAI to acquire Pierre Computer Company",
+      "time": 1793805681,
+      "points": 227,
+      "depth": [
+        {
+          "text": "OpenAI is buying **Pierre Computer**, whose service stores **code and other files made by AI**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter links Pierre to **Code.Storage**, its enterprise-focused service for **storing code and generated files**. Another says Pierre Computer was founded by original Bootstrap developers Jacob Thornton and Mark Otto; a third worries its **open-source updates may decline**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 69,
+      "terms": [
+        "Code.Storage",
+        "git",
+        "diffs",
+        "OSS",
+        "agentic workloads"
+      ],
+      "entities": [
+        "OpenAI",
+        "Pierre Computer Company",
+        "Code.Storage",
+        "Bootstrap",
+        "Jacob Thornton",
+        "Mark Otto"
+      ],
+      "comments": [
+        {
+          "by": "tiffanyh",
+          "text": "I have to imagine this is related to: https://openai.com/index/scaling-git-at-openai/ And you'll see that mitchellh is a big fan of Pierre (and I think investor) https://x.com/mitchellh/status/2036855931569651884?lang=en For those who don't know Pierce, here's a demo from mitchellh: https://x.com/mitchellh/status/2057229385963618787"
+        },
+        {
+          "by": "paxy",
+          "text": "We need a term for an acquisition where you buy an entire company because it would be cheaper than paying a monthly subscription fee to use their product."
+        },
+        {
+          "by": "frangonf",
+          "text": "I read good things about their diffs library: https://diffs.com/ Whenever I see this acquires or hiring of successful products founders or teams by big labs I ask myself if, apart for the usual obvious reasons that any non ai model company would want them, they are also reusing this human talent to build the dataset of \"how the sausage is made\"."
+        },
+        {
+          "by": "Ralfp",
+          "text": "Cool. Pierre Computer is a company founded by original Bootstrap devs: Jacob Thornton and Mark Otto"
+        },
+        {
+          "by": "ferryth",
+          "text": ">Git infrastructure at scale >Code.Storage powers the largest agentic workloads in the industry to store code and other machine generated artifacts at scale using git. >Lovable, Poke, Anything, Bolt, Amp, Parahelp, and many others rely on Code.Storage to store their generated code, memory files, design artifacts, legal documents, and other product files and resources that change over time."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50365780,
+      "url": "https://hy.tencent.ai/research/hy4",
+      "hn": "https://news.ycombinator.com/item?id=50365780",
+      "title": "Tencent Hy4",
+      "time": 1793801486,
+      "points": 229,
+      "depth": [
+        {
+          "text": "Tencent’s **Hy4** is an **open-weight model** that commenters are testing on games, coding, and data analysis",
+          "tier": "simple"
+        },
+        {
+          "text": "A comment quotes a statement that Hy4 and Hyra 2.0 co-developed **two open-sourced foundation models**: HyCell for single-cell representation and HyPDE for physical field modeling. In PacBench, Hy4 tied DeepSeek V4.1 Flash at **82/100**, taking 23.2 minutes for **$0.30** versus 20.1 minutes for $2.26.",
+          "tier": "substance",
+          "data": [
+            [
+              "PacBench score",
+              "82/100"
+            ],
+            [
+              "Hy4 time",
+              "23.2 min"
+            ],
+            [
+              "Hy4 cost",
+              "$0.30"
+            ],
+            [
+              "DeepSeek V4.1 Flash time",
+              "20.1 min"
+            ],
+            [
+              "DeepSeek V4.1 Flash cost",
+              "$2.26"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see strong value for the performance, while others say Hy4 is not cost competitive or is too slow.",
+      "comment_count": 78,
+      "terms": [
+        "open-weight",
+        "foundation model",
+        "single-cell representation",
+        "physical field modeling",
+        "PacBench",
+        "cost/accuracy frontier",
+        "post-training"
+      ],
+      "entities": [
+        "Tencent",
+        "Hy4",
+        "Hyra 2.0",
+        "HyCell",
+        "HyPDE",
+        "DeepSeek",
+        "PacBench"
+      ],
+      "comments": [
+        {
+          "by": "areoform",
+          "text": "> we are open-sourcing two foundation models co-developed by Hy4 and Hyra 2.0: HyCell for single-cell representation and HyPDE for physical field modeling.\u0005\nWhat a refreshing contrast. Where American startups brag about stopping researchers from writing grants about neglected tropical diseases and making novel anti-depressants, these folks are open sourcing the means to do science…"
+        },
+        {
+          "by": "frangonf",
+          "text": "> Looking ahead\n> Although Hy4 is one of the strongest open-weight models available today, a notable gap remains between it and top proprietary models, particularly on challenging internal benchmarks for research-level mathematics, long-horizon coding, model self-improvement, and advanced visual question answering. We will continue to steadily scale pre-training and post-training to narrow this…"
+        },
+        {
+          "by": "simonw",
+          "text": "The game development focus is interesting: > For game development, we partnered with professional developers at Tencent Interactive Entertainment Group (IEG) to curate high-quality training data and build evaluations. We focused on feature implementation, gameplay logic, state tracking, and asset pipelines. We also extensively adapted Hy4 for major engines such as Unreal Engine, Unity, and Godot…"
+        },
+        {
+          "by": "chriddyp",
+          "text": "Landed on the cost/accuracy frontier in our data analytics benchmark: https://plotly.com/blog/tencent-hy4-plotly-data-analytics-be... , right in between GPT-6.1 Sol and GPT-6.1 Terra. Verrrry thorough in its work and therefore verrrrry slow. It spent a long time with each question, running about 26 queries for each question, and in some questions it ran 64 queries. One of the queries that it…"
+        },
+        {
+          "by": "minimaxir",
+          "text": "Slightly worse than Kimi 3.1M Pro (which just released open weights today) but much cheaper even excluding the current 50% off promotion, and Tencent promises to make it even cheaper once it goes open-weight. Interesting price economics."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50368626,
+      "url": "https://www.anthropic.com/research/provable-inference",
+      "hn": "https://news.ycombinator.com/item?id=50368626",
+      "title": "Progress on provable inference for large language models",
+      "time": 1793812666,
+      "points": 207,
+      "depth": [
+        {
+          "text": "someone found a way to **check whether an AI reply** came from the **model it claims**",
+          "tier": "simple"
+        },
+        {
+          "text": "Anthropic's **FlashProve** lets users verify output tokens came from the committed model without revealing its weights. With Llama 4 Maverick, it generated **110 tokens per second** on one H100; each proof was **18.78 MB**, and checking it took 17 seconds on 24 threads.",
+          "tier": "substance",
+          "data": [
+            [
+              "Proof generation",
+              "110 tokens per second"
+            ],
+            [
+              "Proof size",
+              "18.78 MB"
+            ],
+            [
+              "Verification time",
+              "17 seconds on 24 threads"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters say it could help with black-box audits and catch model substitutions; skeptics say it does not show whether an answer is good or user data stayed private, and question whether the narrow guarantee is worth the cost.",
+      "comment_count": 95,
+      "terms": [
+        "provable inference",
+        "zkSNARK",
+        "model commitment",
+        "model weights",
+        "mixture of experts",
+        "formal verification"
+      ],
+      "entities": [
+        "Anthropic",
+        "FlashProve",
+        "Llama 4 Maverick",
+        "H100",
+        "Lean",
+        "vLLM",
+        "VerInf",
+        "Attestable"
+      ],
+      "comments": [
+        {
+          "by": "neuwirth",
+          "text": "This is built on VerInf, work that I did as a MARS fellow. They ripped everything down to the choice of 400B Maverick from us with very little attribution. Cool, I guess...\nhttps://github.com/jamespetrie/verinf"
+        },
+        {
+          "by": "vessenes",
+          "text": "I've been writing about the need for provable inference (and training) on and off for a number of years; this is welcome news and a good start, and a significant improvement on prior zk results. The problems of inference proof for a closed model provider are more difficult than an open model provider -- you can get a probabilistic proof much more cheaply out of four independent inference…"
+        },
+        {
+          "by": "gopalv",
+          "text": "> In both cases the question is the same: how can a company be sure of which weights are actually running on its servers? > the resulting commitment is good for about 16 million requests, after which the provider has to commit again. > The client downloads the commitment, ~6.5 MB in all, and then one proof per request. Checking a proof takes 17 seconds on 24 threads (and 21 seconds on a single…"
+        },
+        {
+          "by": "nemo1618",
+          "text": "For open-weight models, provable inference is trivial: just redo the computation! This is much faster, cheaper, and doesn't require any fancy cryptography, just deterministic inference (which, if you read carefully, the ZKP approach needs too). See https://lukechampine.com/repligraphs Of course, it's unlikely that we'll get open-weight models from OpenAI or Anthropic any time soon. That means we…"
+        },
+        {
+          "by": "vintagedave",
+          "text": "I've read that providers like those you find on OpenRouter can sometimes route to other models; this would catch that. But I've also heard, as complete rumour, sometimes some named models perform significantly worse on some hosts and the theory is they're running quantized, without that being published. Would this solve that? The post mentions proving a set of weights, but not how those are…"
+        }
+      ],
+      "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/2eba335a28661a8253187053fa36add230af728b-2000x1125.jpg"
+    },
+    {
+      "id": 50373308,
+      "url": "https://www.spacex.com/starfall",
+      "hn": "https://news.ycombinator.com/item?id=50373308",
+      "title": "Starfall – Affordable, routine access to microgravity",
+      "time": 1793837898,
+      "points": 198,
+      "depth": [
+        {
+          "text": "Starfall aims to make **microgravity access** **affordable and routine** for experiments",
+          "tier": "simple"
+        },
+        {
+          "text": "Some commenters point to **fluids**, biotech, and **crystals used in medicines** as possible research uses; another doubts space manufacturing has many viable applications.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some point to possible medical and biotech uses; others doubt there are many viable uses for manufacturing in space.",
+      "comment_count": 127,
+      "terms": [
+        "microgravity",
+        "LEO",
+        "sedimentation",
+        "brain organoids"
+      ],
+      "entities": [
+        "Starfall",
+        "ISS",
+        "Varda",
+        "SpaceX",
+        "Keytruda",
+        "Pembrolizumab",
+        "NASA",
+        "Merck",
+        "Starlink",
+        "Dan Gelbart"
+      ],
+      "comments": [
+        {
+          "by": "tagami",
+          "text": "We've run a dozen missions in LEO aboard the ISS. Any steps to remove the friction to launch and increase the cadence is a good thing. Spending a few weeks in LEO missions like this typically land in the Australian outback We do education outreach to K-16 learning institutions around the world. There are many things that can be studied in the near absence of gravity. Fluids are a huge area of…"
+        },
+        {
+          "by": "syntaxing",
+          "text": "Space datacenters sounds dumb and impractical to me. Manufacturing semi conductor in space is actually a pretty interesting idea. I designed a few PVD, CVD, and IBE machines before. Ion thrusters from NASA are what semi conductors use as their source anyway. I can see the business proposition for processes like MBE that requires -12 pressure. It takes days, if not weeks to pump a chamber to those…"
+        },
+        {
+          "by": "Tomte",
+          "text": "Don‘t forget that for some exoeriments https://en.wikipedia.org/wiki/Fallturm_Bremen is a viable low-cost option."
+        },
+        {
+          "by": "areoform",
+          "text": "So there are a few breakthrough therapeutics that rely on samples crystallized in microgravity. One of them is Keytruda or Pembrolizumab, a PD-1 inihibitor used as a neo-adjuvant in cancer therapy. Historically, there was an issue with dosing pembrolizumab, as the manufacturing process was creating large uneven crystals that required physicians to process at the clinic to ensure proper dosing…"
+        },
+        {
+          "by": "czhu12",
+          "text": "Quite a bit of money have been raised on the premise that certain things can be easier to make in space than on earth due to gravity, which creates sedimentation Semiconductors, pharmaceuticals, solar cell crystals, and artificial organs are on the short list. The International space station actually has done some experiments on this premise with promising results"
+        }
+      ],
+      "image": "https://www.spacex.com/assets/images/share.jpg"
+    },
+    {
+      "id": 50369503,
+      "url": "https://www.conductor.build/announcement",
+      "hn": "https://news.ycombinator.com/item?id=50369503",
+      "title": "Conductor is joining Meta",
+      "time": 1793816560,
+      "points": 160,
+      "depth": [
+        {
+          "text": "Conductor is **joining Meta** as its **cloud service** winds down, while the local app keeps working",
+          "tier": "simple"
+        },
+        {
+          "text": "Conductor Cloud becomes **read-only on Nov 13** and fully shuts down on Nov 20; local Conductor will receive new models and critical bug fixes until **early 2027**. The team hopes to have **something new** for users early next year.",
+          "tier": "substance",
+          "data": [
+            [
+              "Cloud read-only",
+              "Nov 13"
+            ],
+            [
+              "Cloud shutdown",
+              "Nov 20"
+            ],
+            [
+              "Local updates until",
+              "early 2027"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some users mourn losing Conductor and object to Meta; others congratulate the team and point to alternatives.",
+      "comment_count": 174,
+      "terms": [
+        "coding agents",
+        "read-only",
+        "workspace",
+        "moat",
+        "fork",
+        "reverse engineering",
+        "webhooks",
+        "VM",
+        "unikernels",
+        "LLMs"
+      ],
+      "entities": [
+        "Conductor",
+        "Meta",
+        "Conductor Cloud",
+        "Charlie",
+        "Hacker News",
+        "Cloudflare",
+        "Deno",
+        "t3.codes",
+        "Orca",
+        "Herdr",
+        "Stencil",
+        "Tern",
+        "Passport",
+        "Claude",
+        "Orkes Conductor",
+        "Jepsen",
+        "Podium.do"
+      ],
+      "comments": [
+        {
+          "by": "Charlieholtz",
+          "text": "Hi! Co-founder here. Conductor actually kicked off with a HN post many lifetimes ago in July 2025 ( https://news.ycombinator.com/item?id=44594584 ). I owe so much to this community. Thank you all so much! The whole team is around to help answer any questions. You can reach out to me personally at charlie [at] melty.sh."
+        },
+        {
+          "by": "brainless",
+          "text": "I really fail to understand what is going on here. There is literally no moat in most software expect the users a product has acquired. The number of slightly different solution to an existing product is wild. And this is getting crazier. I build for the fun of it now. Completely lost any sight of $ goals. I am building agents, have own gui framework, own server orchestration, and now looking at…"
+        },
+        {
+          "by": "markerz",
+          "text": "Things will shut down over the next few months. https://www.conductor.build/announcement : Wednesday, Nov 4 New users can no longer sign up for Conductor or download the app.\nFriday, Nov 13 Conductor Cloud goes read-only\nLocal Conductor will continue working as normal for now. It will start winding down in early 2027.\nFlashback to Cloudflare acquiring Deno and hiding the shutdown at the bottom of…"
+        },
+        {
+          "by": "iamunr",
+          "text": "Literally just went to go \"all in\" on conductor yesterday, and buy into their cloud setup and hope the company keeps going. And today we're doing a refund + moving the org to t3.codes instead. Boo Meta. Boooooooo."
+        },
+        {
+          "by": "stevenou",
+          "text": "Extremely bummed about this. Having cloud webhooks + workspace/session API + isolated VMs has been a massive productivity boost for me. Does anyone have suggestions for products that can match Conductor Cloud, not just Conductor Local?"
+        }
+      ],
+      "image": "https://www.conductor.build/farewell/og.png"
+    },
+    {
+      "id": 50369895,
+      "url": "https://fireflyk64.github.io/wcmulti/",
+      "hn": "https://news.ycombinator.com/item?id=50369895",
+      "title": "Show HN: After a decade of reversing, I got co-op working in DOS Wing Commander",
+      "time": 1793818287,
+      "points": 160,
+      "depth": [
+        {
+          "text": "someone spent **years** making DOS Wing Commander playable as a **co-op game** with his brother",
+          "tier": "simple"
+        },
+        {
+          "text": "He and his brother found game variables by **probing memory**, figured out how to **call the game's own functions**, and synced both players over a network. The browser version lets players drag in a Wing Commander installer and join with a **room code**; optional voice chat uses a second WebRTC connection.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 21,
+      "terms": [
+        "reversing",
+        "memory snapshot",
+        "trampoline",
+        "WebRTC",
+        "DOSBox"
+      ],
+      "entities": [
+        "Wing Commander",
+        "DOSBox",
+        "Patrick",
+        "WebRTC",
+        "lobbylink",
+        "emscripten",
+        "GOG",
+        "Vega Strike",
+        "GitHub"
+      ],
+      "comments": [
+        {
+          "by": "daniel_rh",
+          "text": "Author here: in 2015, I was playing the classic Wing Commander in DOSBox and\nsuddenly realized the game state fit in the 64k data segment. Over ten years my brother and I went through a set of experiments (stop\nand go, turn, communicate) while probing the memory. We uncovered\nwhere the variables were, how to inject calls into\nthe game functions, and how to sync the gamestate across the\nnetwork…"
+        },
+        {
+          "by": "dond1986",
+          "text": "Could this approach be used to make a similar game? It looks like a lot of fun—thanks for sharing!"
+        },
+        {
+          "by": "EmX_3000",
+          "text": "This reminds me of how I used to cheat at certain games back in the 8-bit olden days. You could change one thing at a time, save, then look through and see what changed on the disk. Eventually you could identify all the locations that held the values for inventory, stats, location, quest stages, NPC state, and so on. All you had to do after that was change those locations and - hopefully - you're…"
+        },
+        {
+          "by": "Tepix",
+          "text": "Neat! You're using the data channel for voice? why not the rtc stream?"
+        },
+        {
+          "by": "ShakataGaNai",
+          "text": "Oh man. Blast from the past. I loved wing commander back in the day."
+        }
+      ],
+      "image": "https://fireflyk64.github.io/wcmulti/img-share.jpg"
+    },
+    {
+      "id": 50362466,
+      "url": "https://napcakes.nekoweb.org/posts/malloc/",
+      "hn": "https://news.ycombinator.com/item?id=50362466",
+      "title": "The lost malloc()",
+      "time": 1793777850,
+      "points": 153,
+      "depth": [
+        {
+          "text": "someone dug through **old Unix code** and found **memory allocation ideas** we still argue about",
+          "tier": "simple"
+        },
+        {
+          "text": "Early `malloc()` and `mfree()` used **explicit memory regions**, and `mfree()` received the object's size. The author sees Unix's linear allocation and rollback as **close to arenas**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: one commenter favors size-aware freeing so the allocator needn't keep a copy of the size; another isn't sold on arenas, saying they can waste memory and favoring a simple, flexible interface.",
+      "comment_count": 74,
+      "terms": [
+        "malloc()",
+        "mfree()",
+        "linear allocation",
+        "arena"
+      ],
+      "entities": [
+        "Unix",
+        "C",
+        "POSIX",
+        "Bell Labs",
+        "SIMULA",
+        "SIMSCRIPT",
+        "C++",
+        "Rob Pike",
+        "Stuart Feldman",
+        "Bjarne Stroustrup",
+        "John Lions",
+        "Plan 9",
+        "Inferno",
+        "Go"
+      ],
+      "comments": [
+        {
+          "by": "adrian_b",
+          "text": "The author did not really find from where SIMULA 67 had taken \"new\". In November 1965, C.A.R. Hoare published an extremely influential paper: \"Record Handling\". This was a proposed extension for the successor of ALGOL 60. Almost all of the features that were added in SIMULA 67 over its predecessor, the SIMULA language, come directly from the paper of Hoare, with two big exceptions: class…"
+        },
+        {
+          "by": "OskarS",
+          "text": "> Not only that, mfree() receives the size of the object it is deallocating, as it should . I've always thought that one of the biggest tiny mistakes in the history of this industry. It means, more or less, that you're forcing the memory allocator to keep track of these sizes when it shouldn't have to. There's virtually no sensible case where the person calling free() doesn't know the size of the…"
+        },
+        {
+          "by": "veltas",
+          "text": "I don't associate with the author that well here because I'm not hyped about 'arena allocators' and I don't really care that free doesn't receive a size. I think the interface was okay. Also 'arena allocators' (this meant something different like 20 years ago so I think the name just got rebranded) are not that good, they make some things easier and improve performance sometimes, they also are…"
+        },
+        {
+          "by": "tptacek",
+          "text": "Malloc implementations are anything but boring! https://csapp.cs.cmu.edu/3e/docs/dsa.pdf"
+        },
+        {
+          "by": "fjfaase",
+          "text": "The sbrk system call in linux is still available to get more heap from the operating system. So, memory is still allocated in a linear fasion and never released again. Maybe now functions like mmap change this. I used sbrk to implement malloc for a very limited standard libary implementation."
+        }
+      ],
+      "image": null
+    }
+  ],
+  "glossary": {
+    "residential proxy": "A way to send internet traffic through a home or mobile internet connection, so it appears to come from that connection.",
+    "proxy SDK": "Software Development Kit: a bundle of tools developers use to add features to an app; a proxy SDK can let a device's internet connection be used to send traffic.",
+    "Command and Control": "A way for someone to send instructions to infected devices from afar.",
+    "exit node": "A device that sends your internet traffic out to websites, which then see that device's connection.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "JSON": "A common format for storing and sending data in a way that programs can read.",
+    "streaming": "Handling data as it arrives, rather than repeatedly asking for more.",
+    "UTF-8": "A way to represent text so programs can read it consistently.",
+    "marshaling": "Turning a Go value into JSON.",
+    "unmarshaling": "Turning JSON back into a Go value.",
+    "open-weight": "Describes an AI whose learned settings are available for others to download and use.",
+    "agentic coding": "Having an AI handle coding tasks by making changes and checking its work with less step-by-step direction.",
+    "context length": "How much text a model can take into account at once.",
+    "TerminalBench": "A test that checks how well AI handles coding tasks through a computer’s text-based command line.",
+    "MoE": "Mixture of Experts: a model with many specialist parts that sends each piece of text to only a few of them.",
+    "SFT": "Supervised fine-tuning: training a model on examples of desired answers.",
+    "RL": "Reinforcement Learning: a way to teach an AI by rewarding actions that get the desired result.",
+    "root access": "Permission to control nearly everything on a device.",
+    "local privilege escalation": "A way for someone already on a computer to gain more control, such as administrator access.",
+    "kernel": "A small program that carries out a calculation on a computer's graphics chip or processor.",
+    "AI agent": "An autonomous computer program that can carry out tasks.",
+    "harness": "The surrounding code that gives an AI agent tools and a place to work, and checks what it does.",
+    "agent orchestration": "A way to coordinate several AI helpers so they can work on different parts of a job.",
+    "bead": "A small work item given to an agent to tackle.",
+    "SVG": "Scalable Vector Graphics: a picture format that stays sharp when resized.",
+    "raster-to-vector": "Turning a picture made of pixels into one described with shapes and lines.",
+    "sprite sheet": "A single image that packs multiple animation frames or game-art pieces together.",
+    "non-deterministic": "Something that can give different results even when you use the same request again.",
+    "LED": "Light-emitting diode: a small electronic light source used in bulbs and displays.",
+    "UV": "Ultraviolet: a kind of sunlight that can harm skin.",
+    "incandescent": "An older kind of bulb that makes light by heating a wire inside it.",
+    "compact fluorescent": "A kind of bulb that makes light with a fluorescent tube.",
+    "PWM": "Pulse-width modulation: a way to control power by switching a signal on and off in timed bursts.",
+    "IR": "Infrared: light people cannot see, mentioned as another kind of light that bulbs may emit.",
+    "Code.Storage": "A service the commenters describe as storing code and other files that change over time.",
+    "git": "A tool that keeps a history of changes to code or other files.",
+    "diffs": "A way to see what changed between two copies of a file.",
+    "OSS": "Open-source software: software whose code is shared so others can inspect it and sometimes reuse it under a license.",
+    "agentic workloads": "Computer tasks handled by AI agents rather than directly by a person.",
+    "foundation model": "A model trained before use that can be adapted to handle different jobs.",
+    "single-cell representation": "A computer-friendly description of an individual cell, used to work with or compare cell data.",
+    "physical field modeling": "Using a computer model to work out how something physical, like heat, changes across space.",
+    "PacBench": "A test used to compare how AI models do on the same game-building task.",
+    "cost/accuracy frontier": "A comparison of which tools give the best results for their price.",
+    "post-training": "Extra training after a model's initial training that shapes how it responds.",
+    "provable inference": "A way to check that a response came from a particular model without running the model yourself.",
+    "zkSNARK": "Zero-knowledge succinct argument of knowledge: a short proof that lets someone check a computation without revealing the model's hidden weights.",
+    "model commitment": "A short fingerprint that pins down one exact set of model weights without showing the weights.",
+    "model weights": "The learned settings inside an AI that shape how it responds.",
+    "mixture of experts": "A way to build an AI from specialist parts, sending each question to the parts best suited to answer it.",
+    "formal verification": "Checking a claim using precise rules, often with a computer.",
+    "microgravity": "A condition where things seem almost weightless, often because they are falling together.",
+    "LEO": "Low Earth orbit: a region fairly close to Earth where satellites travel around the planet.",
+    "sedimentation": "Particles settling to the bottom of a liquid.",
+    "brain organoids": "Small lab-grown groups of brain cells used to study how brain tissue behaves.",
+    "coding agents": "Software that can take a request and carry out coding tasks, rather than just suggest text.",
+    "read-only": "You can look at the information, but you can’t change it or add anything.",
+    "workspace": "A saved work area that keeps a project’s files or conversations together.",
+    "moat": "An advantage that makes it hard for competitors to take customers away from a business.",
+    "fork": "A separate copy of a shared software project that people can take in a different direction.",
+    "reverse engineering": "Figuring out how a program works by examining the program itself.",
+    "webhooks": "A way for one service to automatically notify another when something happens.",
+    "VM": "Virtual machine: a computer that runs inside another computer.",
+    "unikernels": "A way to package an app with only the basic pieces it needs to run on a server.",
+    "LLMs": "Large language models: computer programs trained on lots of writing that can produce text.",
+    "reversing": "Tracing a program to figure out how it works, even without its original plans.",
+    "memory snapshot": "A saved picture of the information a program is using at one moment.",
+    "trampoline": "A small bit of code that briefly redirects a program somewhere, then sends it back.",
+    "WebRTC": "Web Real-Time Communication: browser features for live audio and video calls.",
+    "DOSBox": "A program that imitates an old DOS computer so DOS games can run on newer machines.",
+    "malloc()": "A C function that asks for a block of memory while a program is running.",
+    "mfree()": "An old Unix function for returning memory; callers gave it the size and which memory region to use.",
+    "linear allocation": "A way of handing out memory by moving forward through one region, rather than finding separate free blocks.",
+    "arena": "A reserved chunk of memory for related things that a program can keep around or clear as a group."
+  }
+}
