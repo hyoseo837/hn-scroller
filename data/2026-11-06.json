@@ -1,0 +1,1071 @@
+{
+  "date": "2026-11-06",
+  "cards": [
+    {
+      "id": 50385272,
+      "url": "https://github.com/anthropics/claude-code/issues/107757",
+      "hn": "https://news.ycombinator.com/item?id=50385272",
+      "title": "Claude Code sends your email address to websites",
+      "time": 1793917035,
+      "points": 912,
+      "depth": [
+        {
+          "text": "Claude Code sometimes sent users’ **account emails** to websites in requests without their permission",
+          "tier": "simple"
+        },
+        {
+          "text": "Anthropic said it put signed-in users’ **account email** in Claude Code’s context to help with names like @author tags; Claude sometimes put it in a **User-Agent** as a contact address when writing commands. A built-in check in 2.1.317 and later asks before web or curl-style calls containing the email, but it doesn’t cover cases where Claude writes and runs a script on its own. Anthropic said it would **remove the email from context** in the next release.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Privacy-first commenters say Claude shouldn’t get user details or internet access by default; others say it may have been responding to sites asking agents for contact info, while some doubt it caused the reported spam.",
+      "comment_count": 302,
+      "terms": [
+        "User-Agent",
+        "curl",
+        "sandbox",
+        "harness"
+      ],
+      "entities": [
+        "Claude Code",
+        "Anthropic",
+        "GitHub",
+        "cc-plugin-privacy",
+        "SEC",
+        "Pi",
+        "OpenRouter"
+      ],
+      "comments": [
+        {
+          "by": "grey-area",
+          "text": "Biggest questions here, which I think need answering: Should Claude have access to user details? I’d say no, unless explicitly entered manually into a chat. Should Claude have access to anything outside of the sandboxed project files without explicit permission? I’d again say no. Should Claude have internet access without a clear log of all requests made? Instances of Claude should be heavily…"
+        },
+        {
+          "by": "varenc",
+          "text": "Many people report seeing this behavior when using the SEC API specifically which makes me think that service is requesting this. Maybe email is required by the SEC API? --- UPDATE: The SEC API documentation requires your email in the User-Agent and will reject you otherwise. Demo: U='https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json'\ncurl -s -o /dev/null -w…"
+        },
+        {
+          "by": "agentdev001",
+          "text": "For those keeping score, this probably isnt exhaustive- but here's some greatest hits; #55743: Claude Max account email auto-injected into LLM context with no opt-out - May 3, 2026\nhttps://github.com/anthropics/claude-code/issues/55743 #72518: Anthropic embedded spyware in Claude Code - June 30, 2026\nhttps://github.com/anthropics/claude-code/issues/72518 #21151: No indication of WHICH file for…"
+        },
+        {
+          "by": "mk89",
+          "text": "This explains the amount of spam emails I am receiving in the work email since I switched to Claude. I used to work with copilot which was fine. Now I am getting really a lot of spam emails almost on a daily basis. Absolutely crazy. And they are even personalised with my name and surname, not just \"dear customer\"... Stupid me, I thought they somehow had hacked my company database or so…"
+        },
+        {
+          "by": "mpoteat",
+          "text": "Hi folks. We were initially aware of this a few days ago when this problem started popping off on Reddit, and we introduced a built-in mod called `cc-plugin-privacy` to deterministically block this behavior. If you're on 2.1.317 or later, you'll have this check included. You can turn it off via /plugins."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/63caeb8c270a61ee879805b399df8fd89e57303185112d9096eb88c0f2d7352b/anthropics/claude-code/issues/107757"
+    },
+    {
+      "id": 50383740,
+      "url": "https://kagi.com/changelog#11820",
+      "hn": "https://news.ycombinator.com/item?id=50383740",
+      "title": "Search for everyone",
+      "time": 1793909014,
+      "points": 641,
+      "depth": [
+        {
+          "text": "Kagi now lets **anyone** try its search **without an account**",
+          "tier": "simple"
+        },
+        {
+          "text": "The first **50 searches** need no account; registering gets you **100 more**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Searches without an account",
+              "50"
+            ],
+            [
+              "Additional searches upon registration",
+              "100"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some users praise Kagi's search and user-funded approach; others say the cost or setup hassles make it less appealing.",
+      "comment_count": 327,
+      "terms": [
+        "DNS",
+        "API",
+        "search index"
+      ],
+      "entities": [
+        "Kagi",
+        "Google",
+        "DuckDuckGo",
+        "Ecosia",
+        "Qwant",
+        "Bing",
+        "Yandex",
+        "Apple",
+        "Safari",
+        "Orion",
+        "Gemini",
+        "Claude"
+      ],
+      "comments": [
+        {
+          "by": "Nition",
+          "text": "If anyone from Kagi is reading this: Now that you have search without an account, is there any chance we can finally get a DNS-based enforced safesearch option like every other major search engine has? It's been in the feedback requests since May 2022[1]. Anyone on an enforced-safesearch network can now go to kagi.com, turn SafeSearch off, and search for porn or anything else, which is just going…"
+        },
+        {
+          "by": "capital_guy",
+          "text": "Haven't tried Kagi yet. I know many people are increasingly frustrated with Google. As a duckduckgo user honestly i typically find what i want, except I am feeling more and more like i don't recognize / trusts many of the top sites in a result. might be a perfect time to try it."
+        },
+        {
+          "by": "eightys3v3n",
+          "text": "Very happy Kagi user for a few years.\nI extra appreciate the ability for me to set custom rankings for certain sites. For example, I have downranked Reddit so it only shows up if there's almost nothing else. They're also a whole bunch of AI garbage sites or listicle sites that have outright removed from all my search results.\nI also love that it doesn't try to AI summarize everything I search, it…"
+        },
+        {
+          "by": "ethin",
+          "text": "I love Kagi and have been a very happy subscriber for like a couple years now. There were a few times where I would search for things and get some very, very weird results (e.g., when looking for GH repos, I'd find things at the top from places like gitmemory (I think that's what it was called)) and I thought that was very odd, but it hasn't really happened again in a few days so I don't know if…"
+        },
+        {
+          "by": "palata",
+          "text": "I used Kagi for a few years and was completely satisfied. I switched to Ecosia because I want to support European alternatives, but that's all. I tried Qwant for a while, and for some reason it was frustrating me (I assume that the results were not satisfying for me?). I wonder if Qwant is better for search in French? Not sure. Ecosia hasn't been frustrating though, and I cannot say that it's…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50383739,
+      "url": "https://www.salon.com/2026/11/05/goodbye-from-salon/",
+      "hn": "https://news.ycombinator.com/item?id=50383739",
+      "title": "Goodbye from Salon",
+      "time": 1793909009,
+      "points": 551,
+      "depth": [
+        {
+          "text": "Salon is **ceasing publication** after **31 years**, saying its publishing model is no longer sustainable",
+          "tier": "simple"
+        },
+        {
+          "text": "It launched in **November 1995** and says it helped **pioneer a form of journalism** that would define a new era of publishing. The announcement points to **changed business realities** in independent digital journalism, which made its publishing model unsustainable.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some remember Salon as a thoughtful, influential publication; others say it had already become irrelevant or lost its appeal.",
+      "comment_count": 207,
+      "terms": [
+        "410 Gone",
+        "CPM",
+        "astroturfing"
+      ],
+      "entities": [
+        "Salon",
+        "Bricolage",
+        "Associated Press",
+        "InfoWorld",
+        "Anne Lamott",
+        "Charlie Taylor",
+        "David Talbot",
+        "Joan Walsh",
+        "Stephanie Zacharek",
+        "Glenn Greenwald",
+        "Camille Paglia",
+        "Cary Tennis"
+      ],
+      "comments": [
+        {
+          "by": "legitster",
+          "text": "The amount of newsroom jobs fell 60% between 2008 and 2020. The vast majority of what was lost were \"beat\" reporters - foreign bureaus, Washington bureaus from regional publications, statehouse reporters, or regional specialty beats (science, law, etc). This started long before the decline of the open internet and AI. If anything, the shift online covered up a massive hollowing out of the…"
+        },
+        {
+          "by": "macintux",
+          "text": "This article didn't generate any comments when it made the rounds 10 years ago. An obituary for what salon.com used to be. https://web.archive.org/web/20210219012551/https://www.polit..."
+        },
+        {
+          "by": "DamnInteresting",
+          "text": "I operate an online publication that has been online for an amount of time that can be accurately described as \"decades,\" though not quite as long as Salon. My project had a brief window of modest profitability from about 2012 to 2020. Before and after that time, I've mostly operated at a break-even or a loss because I love doing it, and it gives me a sense of purpose, and the thought of packing…"
+        },
+        {
+          "by": "allenu",
+          "text": "I haven't visited salon.com in quite a while. I remember way back in the day I'd hop on there to read an article or two and maybe go read suck.com as well. Such a different internet back then, pre-BuzzFeed and YouTube. Less clickbait, more Gen X cynicism."
+        },
+        {
+          "by": "thebeardisred",
+          "text": "So long and thanks for open sourcing Bricolage ( https://en.wikipedia.org/wiki/Bricolage_(software) ) It was ahead of it's time in terms of it's model for publishing large sites with staging, editorial desks, etc."
+        }
+      ],
+      "image": "https://www.salon.com/app/uploads/2026/11/Salon-Logos-Background-2.jpg"
+    },
+    {
+      "id": 50384233,
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-83844",
+      "hn": "https://news.ycombinator.com/item?id=50384233",
+      "title": "MS Paint Remote Code Execution Vulnerability",
+      "time": 1793911422,
+      "points": 466,
+      "depth": [
+        {
+          "text": "MS Paint has a **security flaw** that can **run code remotely**, and commenters want to know how",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says Paint can **run arbitrary code remotely** without user interaction. Others ask what network service or port is involved and whether Paint needs to be running; another says they had to get the **fixed version** from Microsoft Store because Windows Update showed nothing.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 176,
+      "terms": [
+        "remote code execution",
+        "specially crafted packet"
+      ],
+      "entities": [
+        "MS Paint",
+        "Microsoft Store",
+        "Windows Update"
+      ],
+      "comments": [
+        {
+          "by": "pasteleft",
+          "text": "Paint can exectue arbitrary code from the REMOTE, without USER INTERACTION????? We seriously need more information."
+        },
+        {
+          "by": "Oarch",
+          "text": "I can't wait for the Raymond Chen write up one day."
+        },
+        {
+          "by": "greyhound1",
+          "text": "Had to go to Microsoft Store to get the fixed version, Windows Update didn't show anything."
+        },
+        {
+          "by": "everylostbit",
+          "text": "This seems to affect only paint 11.0.0.0 up to, but not including, 11.2605.91.0.\nFor folks like me, running a much older version, its probably safe, although its Windows so, I'm not too sure."
+        },
+        {
+          "by": "xlayn",
+          "text": "WHY ON HELL paint has a remote code execution in the name of God?\nWHY? is this because someone who needs to build a CV decided to network something on ..... I can't come with a reason why \"An unauthenticated attacker could exploit this vulnerability by sending a specially crafted packet to an affected service over the network.\" will cause paint to start being nice to an attacker and leaking…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50381383,
+      "url": "https://github.com/saragordic/window-sweaters",
+      "hn": "https://news.ycombinator.com/item?id=50381383",
+      "title": "Window Sweaters",
+      "time": 1793897414,
+      "points": 305,
+      "depth": [
+        {
+          "text": "someone made a Mac app that dresses your windows in **knitted borders** and **app-inspired colours**",
+          "tier": "simple"
+        },
+        {
+          "text": "The **By App** style gives apps their own sweaters; **Zigzag** uses a softer cream pattern and icon colours. Its **37 custom sweaters** have hand-picked colours and patterns, and it uses private macOS window APIs that system updates may affect.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: the author says the agent-install line is for people like them; some commenters call it silly.",
+      "comment_count": 96,
+      "terms": [
+        "menu bar",
+        "Accessibility access",
+        "private macOS window APIs",
+        "notarized"
+      ],
+      "entities": [
+        "Window Sweaters",
+        "macOS",
+        "GitHub",
+        "Homebrew",
+        "Apple",
+        "JankyBorders",
+        "gordic_sara"
+      ],
+      "comments": [
+        {
+          "by": "gordic_sara",
+          "text": "heeey, I'm the author of this! can’t believe this made it to Hacker News lol. thank you for posting it! a bit of context: I’m a product designer, and this was my very first open source project. I made it purely for fun, here’s where it started: https://x.com/saragordic/status/2098916110787916219 screenshots: I added the little video now; you can see many more screenshots on X, a lot of ppl shared…"
+        },
+        {
+          "by": "focusedone",
+          "text": "I misread the title and was expecting a collection of windows-themed sweaters like Microsoft (used to?) put out every year."
+        },
+        {
+          "by": "StilesCrisis",
+          "text": "Feels like a weird omission to show zero screenshots of what it actually looks like. All the images are synthetic empty windows in a void."
+        },
+        {
+          "by": "gourneau",
+          "text": "These are cute, it pairs well with my app for macOS that turns your menu bar into an Aurora :) https://aurora.radiantmachines.com/"
+        },
+        {
+          "by": "Brajeshwar",
+          "text": "On a different note for computers in the winter. I’m from a warm country and winters are, well, cool-fine weather. However, when I had been to countries for work during winter, the worst thing were my hands and the degradation in my typing/mousing agility. One of the best buy I discovered long back are those Deskmat Keyboard Hand Warmer. Rest your hand when not typing, feel the warmth and remain…"
+        }
+      ],
+      "image": "https://repository-images.githubusercontent.com/1370747786/3a594398-957d-455e-a8cd-65e13e23e4b4"
+    },
+    {
+      "id": 50383057,
+      "url": "https://www.naut.ca/blog/2026/11/05/the-hackintosh-reborn-with-ai/",
+      "hn": "https://news.ycombinator.com/item?id=50383057",
+      "title": "The Hackintosh Reborn",
+      "time": 1793905702,
+      "points": 286,
+      "depth": [
+        {
+          "text": "someone says **AI coding tools** have helped revive **Hackintosh projects** on non-Apple hardware",
+          "tier": "simple"
+        },
+        {
+          "text": "The author installed macOS 26 on a **ThinkPad T490**, then used XCode 26's Claude Code and OpenAI Codex integrations to make a **functional iOS app within a day**, without touching a single line of code. The post also lists **macOS 27 running on the Snapdragon Laptop**, iOS 17 on Nintendo Switch OLED, and support for 50-series Nvidia GPUs with nullmoth.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters celebrate Hackintoshes as fun or useful; others question the use case, would rather run Linux, or doubt their stability.",
+      "comment_count": 145,
+      "terms": [
+        "Hackintosh",
+        "GPU acceleration",
+        "ARM",
+        "SBC",
+        "x86"
+      ],
+      "entities": [
+        "Apple",
+        "macOS",
+        "Hackintosh",
+        "KVM",
+        "PCI passthrough",
+        "Intel",
+        "M1 MacBook Air",
+        "XCode",
+        "ThinkPad T490",
+        "Claude Code",
+        "OpenAI Codex",
+        "Ghidra",
+        "Snapdragon",
+        "RK3588",
+        "Mali",
+        "iOS",
+        "Nintendo Switch OLED",
+        "Nvidia",
+        "nullmoth",
+        "AirDrop",
+        "Hacker News"
+      ],
+      "comments": [
+        {
+          "by": "justauserid",
+          "text": "There was a time when I used to wish for OSX (wasn't macOS yet) on other hardware. Now I want anything but macOS on mac hardware."
+        },
+        {
+          "by": "ecshafer",
+          "text": "I wish I could get the mac hardware with linux. MacOS I am not a fan of. But they have the best hardware and the best cpus for laptops bar none."
+        },
+        {
+          "by": "vielite1310",
+          "text": "As much as I used to love MacOS as an operating system, the more I spending time on it, I'd rather wish that my Macbook can run Linux, hopefully Asahi Linux will eventually support M5 :("
+        },
+        {
+          "by": "haunter",
+          "text": "Seeing that Macs can now run Switch 1/2 games natively because of the ARM CPU is actually incredibly. And to me personally the first hand on sign of the end of x86."
+        },
+        {
+          "by": "solarkraft",
+          "text": "That’s so cool. It makes it even more of a bummer that iDevice bootloaders are locked. It’s an ongoing tragedy there’s still no macOS on iPads. Looks like if you want that, you’ll have to go with non-Apple hardware."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50385870,
+      "url": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
+      "hn": "https://news.ycombinator.com/item?id=50385870",
+      "title": "Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue",
+      "time": 1793920197,
+      "points": 267,
+      "depth": [
+        {
+          "text": "Mark Cuban says Facebook knowingly runs **AI deepfake scam ads** that get people **ripped off**",
+          "tier": "simple"
+        },
+        {
+          "text": "Reuters reported internal Meta documents estimated **$16 billion**—about **10% of its 2024 revenue**—would come from ads pushing scams and prohibited products. They also counted **15 billion “higher risk” ads a day**; Meta disputed the estimate as “rough and overly-inclusive” and said scam-ad complaints had fallen 58% over the prior 18 months.",
+          "tier": "substance",
+          "data": [
+            [
+              "estimated revenue from scam and prohibited-product ads",
+              "$16 billion"
+            ],
+            [
+              "share of 2024 revenue",
+              "about 10%"
+            ],
+            [
+              "higher-risk ads seen each day",
+              "some 15 billion"
+            ],
+            [
+              "decline in scam-ad complaints",
+              "58% over the prior 18 months"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 120,
+      "terms": [
+        "deepfake",
+        "Section 230"
+      ],
+      "entities": [
+        "Mark Cuban",
+        "Facebook",
+        "Meta",
+        "Reuters",
+        "Andy Stone"
+      ],
+      "comments": [
+        {
+          "by": "nkrisc",
+          "text": "Make advertisers liable for the ads they run. Force them to vet ads or simply not run ads. If Meta is accepting so many ads they can’t review them then too bad for them. Hire more people or accept fewer ads. Ideally this will result in a complete obliteration of the ad industry with only a small number of high quality ads surviving."
+        },
+        {
+          "by": "jhloa2",
+          "text": "The amount of times I’ve reported obvious scam ads on instagram just to receive a “we found this to not be in violation of our terms” is so disheartening."
+        },
+        {
+          "by": "7373737373",
+          "text": "Same on Google and Youtube. The CEOs and controlling shareholders should be sent straight to jail. Deliberate profiteering from crime!"
+        },
+        {
+          "by": "golden-face",
+          "text": "Initially reading the title my mind thought \"Cuban...Cuban defector/intelligence agent?! Oh wow I wonder what they have to reveal?\" It's Mark Cuban. Still worth reading tho. But I found my own personal reaction fascinating because I am not sure I would have clicked through if the title included the full \"Mark Cuban\"."
+        },
+        {
+          "by": "peterbecich",
+          "text": "These companies were profitable on higher quality ads in earlier years. Does this drop in quality indicate the ad well has run dry, so to speak? Or the demands for revenue are greater, necessitating a drop in standards?"
+        }
+      ],
+      "image": "https://s.yimg.com/lo/mysterio/api/c7b9e208fd6dff01b9115dea6cf00d560e269c36a6987f309be6e79d843e306b/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmoneywise_327%2F892777675c4b84ce45a666a8bfe1fb93.jpg"
+    },
+    {
+      "id": 50379576,
+      "url": "https://servo.org/blog/2026/11/05/september-in-servo/",
+      "hn": "https://news.ycombinator.com/item?id=50379576",
+      "title": "September in Servo: <progress>, rounded rectangles, and more",
+      "time": 1793889258,
+      "points": 221,
+      "depth": [
+        {
+          "text": "Servo added **new browser features** like progress bars, CSS functions, and **rounded rectangles**",
+          "tier": "simple"
+        },
+        {
+          "text": "**Servo 0.7.0** bundles **527 September commits**, including WebGL2 conformance improvements. With `--pref dom_exec_command_enabled`, keyboard inputs are hooked up for editors that rely on `contenteditable`, making many usable.",
+          "tier": "substance",
+          "data": [
+            [
+              "commits",
+              "527"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters praise Servo’s progress and volunteer effort; skeptics worry occasional volunteer contributions make it hard for the project to get anywhere.",
+      "comment_count": 53,
+      "terms": [
+        "WebGL2",
+        "contenteditable",
+        "DOM"
+      ],
+      "entities": [
+        "Servo",
+        "Rust",
+        "SpiderMonkey",
+        "mozangle",
+        "WebGL2",
+        "Candy Crush",
+        "Chromium",
+        "Firefox",
+        "Chrome",
+        "Ladybird"
+      ],
+      "comments": [
+        {
+          "by": "porphyra",
+          "text": "Servo is really great: Rust seems like a no brainer choice for a modern web engine, and its clean, performance-focused design from the ground up is wonderful. But it seems really hard for it to get anywhere just based on occasional contributions from volunteers. I was actually quite surprised that basic functionality like <progress> and the :checked attribute were not even supported prior to this…"
+        },
+        {
+          "by": "robin_reala",
+          "text": "Remember that if you value Servo you can sponsor them, details at https://servo.org/sponsorship/"
+        },
+        {
+          "by": "ericyd",
+          "text": "It's heartening to see a large group of people working (mostly) for free on a passion project. Makes me optimistic about the resilience of intrinsic human drive."
+        },
+        {
+          "by": "shakna",
+          "text": "Progress got my attention. As an on-again off-again project, I've been building an incremental game that is pretty much just hundreds of progress bars - a little bit out of the norm for the browser. Firefox everything renders smoothly and gently. Chrome chugs, skips paints, delays animation frames, skips some events, and batches others. Game uses a few features that aren't in Servo yet... But…"
+        },
+        {
+          "by": "caminanteblanco",
+          "text": "One of the things I find really helpful about servo (as a casual user) is the breadth of pre-built releases they have. It makes it much more feasible to actually use on a day-to-day basis, especially on android"
+        }
+      ],
+      "image": "https://servo.org/svg/servo-color-positive.svg"
+    },
+    {
+      "id": 50378508,
+      "url": "https://phoboslab.org/log/2026/11/n64-ulc-codec",
+      "hn": "https://news.ycombinator.com/item?id=50378508",
+      "title": "Obscure audio codec is a perfect fit for the N64",
+      "time": 1793883108,
+      "points": 221,
+      "depth": [
+        {
+          "text": "someone got an **obscure audio codec** playing N64 music without **hogging the CPU**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author ported ULC’s decoder to the **N64’s RSP**, with **Codex** helping translate C into RSPL. It handles 44100 Hz stereo using about **4% of CPU time** and 5% of RSP time.",
+          "tier": "substance",
+          "data": [
+            [
+              "sample rate",
+              "44100 Hz"
+            ],
+            [
+              "CPU time",
+              "about 4%"
+            ],
+            [
+              "RSP time",
+              "5%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: the article says MP3 decoding hurt Conker's frame rate; one commenter says raw RDP fillrate issues were mainly to blame.",
+      "comment_count": 28,
+      "terms": [
+        "codec",
+        "ULC",
+        "RSP",
+        "RSPL",
+        "IMDCT",
+        "RDP",
+        "fillrate"
+      ],
+      "entities": [
+        "N64",
+        "Nintendo",
+        "PlayStation",
+        "Libultra",
+        "Libdragon",
+        "ULC",
+        "Aikku93",
+        "Codex",
+        "RSPL",
+        "RSP",
+        "RDP",
+        "Opus",
+        "ADPCM",
+        "Conker's Bad Fur Day",
+        "Mario 64",
+        "Xibalba 64",
+        "Half-Life",
+        "Game Boy Advance",
+        "Giovanni Bajo",
+        "Max Bebök",
+        "GPT-5",
+        "GPT-6",
+        "Opus-5",
+        "MAS3507D",
+        "Fraunhofer",
+        "RAD Game Tools",
+        "MIPS",
+        "ARM",
+        "C"
+      ],
+      "comments": [
+        {
+          "by": "midnightclubbed",
+          "text": "This codec would have been great 27 years ago! I suspect it wouldn't have gotten past the patent lawyers in 1999 though. It seems cute today but the entire codec space was a patent minefield, the N64 mp3 decoder was implemented twice (once based on the reference codec, once clean) with Nintendo/Rare then paying RAD game tools to license their decoder... of which none of their code was used but…"
+        },
+        {
+          "by": "jonas21",
+          "text": "In case anyone else got to the demo thinking the quality is awful -- the vocals are incomprehensible and keep cutting out -- it turns out it's like that in the original track: https://www.youtube.com/watch?v=i1gVxKhdGPs&t=57s"
+        },
+        {
+          "by": "Sesse__",
+          "text": "I wonder if this would also be a great fit for the MAS3507D! Supposedly you can replace the program with your own in a 1-kiloword RAM (the default MP3 decoder is in ROM, and probably larger). If you can fit this codec in 1024 MIPS instructions, perhaps you can do the same in 1024 of these DSP instructions… Too bad there is seemingly zero public documentation on the format of these programs…"
+        },
+        {
+          "by": "gatane",
+          "text": "It was all great until they mentioned LLM usage. The demoscene and homebrew scene is dying as we speak."
+        },
+        {
+          "by": "hxorr",
+          "text": "Great read, thanks! Pardon my ignorance but one thing I'm curious about, if the decoder fills almost the entire 4k RSP instruction memory (IMEM) - wouldn't that be something games need for graphics? If so, then is this still usable for say a game?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50381623,
+      "url": "https://www.cnbc.com/2026/11/04/stock-market-today-live-updates.html",
+      "hn": "https://news.ycombinator.com/item?id=50381623",
+      "title": "Nasdaq plummets 4% into correction territory",
+      "time": 1793898675,
+      "points": 215,
+      "depth": [
+        {
+          "text": "the **Nasdaq fell into correction territory** as fears of a **slower data-center buildout** hit tech stocks",
+          "tier": "simple"
+        },
+        {
+          "text": "The **Nasdaq Composite** fell **5.52%** to close at 24,315.00, more than 10% below a record set last month. Chip and data-center stocks slid as investors feared a Democratic sweep could slow the data-center buildout.",
+          "tier": "substance",
+          "data": [
+            [
+              "Nasdaq Composite decline",
+              "5.52%"
+            ],
+            [
+              "Nasdaq Composite close",
+              "24,315.00"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say Nasdaq drops of 4% or more are not especially unusual; others call the data-center unwind a violent shock.",
+      "comment_count": 170,
+      "terms": [
+        "correction territory",
+        "data-center buildout",
+        "Nasdaq Composite"
+      ],
+      "entities": [
+        "Nasdaq Composite"
+      ],
+      "comments": [
+        {
+          "by": "compiler-guy",
+          "text": "According to the Googles, there have been approximately 14,000 trading days since the Nasdaq Composite was founded, and it has fallen four-percent or more 147 days, meaning that we get a decline like this roughly every 100 trading days, which means about twice a calendar year, very roughly. That's newsworthy, but also not extremely unusual. The more interesting detail than nasdaq overall is just…"
+        },
+        {
+          "by": "chollida1",
+          "text": "Alot going on today. a 4% drop in a day is pretty darn big. 3 different pods are being liquidated that i've heard of. And the data center trade has been unwound in just 2 days is a pretty violent shock. Lots of rumors about situational awareness also in alot of trouble. I feel for this guy a bit. He did really well to get a good slug of Anthropic shares that made his investors alot of money. But…"
+        },
+        {
+          "by": "chasd00",
+          "text": "Happens every time Democrats win office, then it slowly trickles back up. The anti-datacenter vote screws up a lot of plans but the lack of power generation had already screwed up much of them anyway. He who shouldn't be named said that all these software people are in for a rude awakening when they try to scale real world infrastructure at the rate they're use to scaling virtual software…"
+        },
+        {
+          "by": "cmiles8",
+          "text": "Given the election result the AI bailout ain’t coming, combined with growing concern AI spending has gotten too forward on its skis. That’s freaking out the markets."
+        },
+        {
+          "by": "hacker_9",
+          "text": "April 2025, nasdaq enters bear territory:\nhttps://news.ycombinator.com/item?id=43587479 It's interesting reading the panic then in the comments, and yet now the nasdaq is up 65% from those lows, even with today's drop."
+        }
+      ],
+      "image": "https://image.cnbcfm.com/api/v1/image/108364037-1793907899126-108364037-17895893572026-09-16t200807z_1402825571_rc2iknai4t1v_rtrmadp_0_usa-fed-stocks.jpeg?v=1793907928&w=1920&h=1080"
+    },
+    {
+      "id": 50368208,
+      "url": "https://www.linum.ai/field-notes/pjit-21k",
+      "hn": "https://news.ycombinator.com/item?id=50368208",
+      "title": "Show HN: A decent text-to-image model trained for ~$20K (Apache 2.0 Weights)",
+      "time": 1793810711,
+      "points": 202,
+      "depth": [
+        {
+          "text": "a small lab trained a **text-to-image model** for **about $20K** and released its **weights openly**",
+          "tier": "simple"
+        },
+        {
+          "text": "The **Pyramid-JiT** design skips the VAE and was trained on **660M samples**; the team reports **11x faster convergence** than its latent-diffusion counterpart.",
+          "tier": "substance",
+          "data": [
+            [
+              "training budget",
+              "~$20K"
+            ],
+            [
+              "training samples",
+              "660M"
+            ],
+            [
+              "faster convergence",
+              "11x faster"
+            ],
+            [
+              "attention-context token reduction",
+              "4x more aggressive"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters call the generations impressive; others point to over-smoothing and mangled limbs.",
+      "comment_count": 19,
+      "terms": [
+        "VAE",
+        "latent space",
+        "latent diffusion",
+        "convergence",
+        "model weights",
+        "attention context window"
+      ],
+      "entities": [
+        "Linum",
+        "Linum v3",
+        "Pyramid-JiT",
+        "Apache 2.0",
+        "tinyllama",
+        "Qwen3.5-4B",
+        "LLaMA2-13B",
+        "Hugging Face",
+        "T5-small",
+        "CLIP",
+        "WebGPU"
+      ],
+      "comments": [
+        {
+          "by": "andai",
+          "text": "Well done. $20k? That's insane. I remember tinyllama back in the day (2023) was trained on $40k and could barely form coherent sentences. Are pictures easier than English, or did the methods advance so much? Edit: I guess I should have said, are pictures plus English easier than English! >The text representation comes from a frozen Qwen3.5-4B model, which we read at layers 7, 15 and 27 (its three…"
+        },
+        {
+          "by": "tensor",
+          "text": "Amazing. I think this is an understudied areas. The big labs if anything are disincentivized to make efficient models as currently access to compute is one of their moats. That's not the same for Chinese labs, which is why you see groundbreaking efficiency work mostly coming from China. Really happy to see a small shop like yours doing this sort of work!"
+        },
+        {
+          "by": "fzysingularity",
+          "text": "Congrats guys, this is super cool. I think if you built an arena where you can drive the cost even lower ($1K), it'd really get developers stoked. Have you thought about setting up auto-research on this for smaller experiments? What's the minimum-viable budget for these types of workloads?"
+        },
+        {
+          "by": "jjcm",
+          "text": "Very nice all. I've been playing around having poor results of training a pixel space image model of my own, though in a space very opposite from what you're doing (UI design, very heavy on text). Any chance you'll release your training recipe as well? I know the model code is public, but I'd love to dive into the full process."
+        },
+        {
+          "by": "whythismatters",
+          "text": "HF link: https://huggingface.co/Linum-AI/pjit-21k"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50383163,
+      "url": "https://www.euronews.com/2026/11/04/hungary-communist-era-files-opened-up-to-60000-former-agents-revealed",
+      "hn": "https://news.ycombinator.com/item?id=50383163",
+      "title": "Hungary: Communist-era files released, up to 60k former agents revealed",
+      "time": 1793906194,
+      "points": 202,
+      "depth": [
+        {
+          "text": "Hungary opened **secret-police files** naming up to **60,000 informants**, including ordinary people recruited to report on others",
+          "tier": "simple"
+        },
+        {
+          "text": "The released database includes **personal data and code names**, but one commenter says it doesn’t show whether people actually filed reports. The archive director says the records are **incomplete and not necessarily true** in every case.",
+          "tier": "substance",
+          "data": [
+            [
+              "names made public",
+              "50,000 to 60,000"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 53,
+      "terms": [
+        "informant",
+        "agent"
+      ],
+      "entities": [
+        "Peter Magyar",
+        "Cseh Gergő Bendegúz",
+        "Historical Archives of State Security Services (ÁBTL)",
+        "nyitottaktak.hu"
+      ],
+      "comments": [
+        {
+          "by": "haunter",
+          "text": "As a hungarian: agent would imply a member of the secret police which have already been released years ago. These are informants, regular people like students and teachers to members of the churches to actors and musicians etc. Also 1, this should have been released long ago cause many of these people are already dead. 2, they only released the official record of the informant. Their background…"
+        },
+        {
+          "by": "agosz",
+          "text": "If you want to search the archives that they released: https://nyitottaktak.hu/#kereses The article links to this site and that's the search page"
+        },
+        {
+          "by": "rickdeckard",
+          "text": "Trying to find it, but my lack of Hungarian skill is not helping: Is there a website available to search by name or anything?"
+        },
+        {
+          "by": "jacquesm",
+          "text": "Interesting how long this took. Poland cleaned house almost immediately after they kicked the russians out."
+        },
+        {
+          "by": "expedition32",
+          "text": "One thing I noticed is that Eastern Europe is always quick to blame the Soviets for their communist dictatorships conveniently forgetting the millions of \"fellow travellers\" along the way."
+        }
+      ],
+      "image": "https://images.euronews.com/articles/stories/09/97/91/63/1200x675_cmsv2_e5035729-271a-5b7b-a596-fa27657ccada-9979163.jpg"
+    },
+    {
+      "id": 50381033,
+      "url": "https://claude.ai/artifact/L8qsMc3SorytGW3LA81nYf",
+      "hn": "https://news.ycombinator.com/item?id=50381033",
+      "title": "My psychophysics as a bilateral cochlear implant user",
+      "time": 1793895672,
+      "points": 176,
+      "depth": [
+        {
+          "text": "someone with **cochlear implants** ran seven tests on themself to explore **what they hear**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author says they received **cochlear implants in both ears** in a clinical trial in 2025, then ran seven tests on themself between 11 October and 4 November 2026: **10,992 trials** using browser test apps Claude built. They shared the trial data, analysis code, and Lean 4 checks of the apps' logic on GitHub.",
+          "tier": "substance",
+          "data": [
+            [
+              "tests",
+              "seven"
+            ],
+            [
+              "trials",
+              "10,992"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 82,
+      "terms": [
+        "cochlear implant",
+        "psychophysics",
+        "Lean 4"
+      ],
+      "entities": [
+        "mi-rae",
+        "Claude",
+        "GitHub",
+        "Lean 4",
+        "ci-psychophysics-data"
+      ],
+      "comments": [
+        {
+          "by": "losvedir",
+          "text": "> But I cannot know what sound is really like, because I have no memory of normal hearing. and > I was born with normal hearing. I began losing my hearing in childhood ... After I was registered, I started wearing hearing aids. People's voices became clear, and for a few months things were good. ... A specialist told me that I badly needed cochlear implant surgery, but I hesitated because it was…"
+        },
+        {
+          "by": "rhoohr",
+          "text": "> What is it like to hear vocal folds vibrate? I wouldn't normally describe hearing a voice as hearing \"vibrations\". Vibrations are indeed the physical basis of sound, and the auditory system detects changes in air pressure caused by them. But vibrations can also be perceived through touch, and the subjective experience of hearing is quite different from the tactile sensation of feeling something…"
+        },
+        {
+          "by": "hackerci",
+          "text": "ENT surgeon who has bilateral CIs and has been in the research field for 20+ years. This sort of stuff is cool, but there are lots of limitations at the auditory nerve interface that limits improvements to speech and music processing strategies. Crazily enough, many of these studies were done in the 1960s to 1990s and are still valid today. There are strategies that can help at individual level…"
+        },
+        {
+          "by": "libpcap",
+          "text": "Software like Voicemod transforms speaking voice into a bright, robotic, or Miku-inspired digital idol tone in real time. I wonder if this would help in hearing and understanding speech better."
+        },
+        {
+          "by": "cosmojg",
+          "text": "Their GitHub repo with all of their data is here: https://github.com/mi-rae-lab/ci-psychophysics-data"
+        }
+      ],
+      "image": "https://claude.ai/images/claude_ogimage.png"
+    },
+    {
+      "id": 50386338,
+      "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+      "hn": "https://news.ycombinator.com/item?id=50386338",
+      "title": "Inkling 2 Small",
+      "time": 1793923224,
+      "points": 174,
+      "depth": [
+        {
+          "text": "someone unveiled an **AI model** that can **code**, read images, and handle knowledge work",
+          "tier": "simple"
+        },
+        {
+          "text": "Thinking Machines Lab says the Mixture-of-Experts model has **594B total parameters**, with 17B active, and is initially available with closed weights on Tinker; full weights under Apache 2.0 are planned for next week, after external safety testing and red-teaming. In a demo, it autonomously trained Qwen3.5-4B to forecast time series; the trained model more than doubled its score in 4.5 hours, for **$426** in Tinker spend.",
+          "tier": "substance",
+          "data": [
+            [
+              "total parameters",
+              "594B"
+            ],
+            [
+              "active parameters",
+              "17B"
+            ],
+            [
+              "forecasting demo duration",
+              "4.5 hours"
+            ],
+            [
+              "Tinker spend",
+              "$426"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters see a promising US open-weight contender; skeptics say it is not state of the art yet and question whether its benchmark results hold up or what it adds over DeepSeek.",
+      "comment_count": 59,
+      "terms": [
+        "Mixture-of-Experts",
+        "active parameters",
+        "open weights",
+        "Apache 2.0"
+      ],
+      "entities": [
+        "Thinking Machines Lab",
+        "Inkling 2 Small",
+        "Tinker",
+        "Qwen3.5-4B",
+        "DeepSeek"
+      ],
+      "comments": [
+        {
+          "by": "Jackobrien",
+          "text": "The best open models today have been “good enough” to do most knowledge work for a few months. This might be the first US one good enough too. That’s a big deal. Open weight US based Opus 5.5 within 12 months."
+        },
+        {
+          "by": "epsteingpt",
+          "text": "It's a nice, domestic open weight model. Without hundreds of millions in 9 days a small team is producing a model that can beat DeepSeek 4.1 and a platform to tune it. Optimistic for the future."
+        },
+        {
+          "by": "itkovian_",
+          "text": "The most important thing here is training was entirely nvfp4 - this is best model by far that has ever been trained in that precision and explains why they were able to do it so fast"
+        },
+        {
+          "by": "maelito",
+          "text": "Looks better than mistral 4 on all benchmarks ?"
+        },
+        {
+          "by": "a11r",
+          "text": "Very refreshing to see benchmarks where the reporting team is not the clear winner. They are claiming to be better than GLM 5.3 flash, which is impressive if it holds up outside of benchmarks."
+        }
+      ],
+      "image": "https://thinkingmachines.ai/news/inkling-2-small/images/cover-social.png"
+    },
+    {
+      "id": 50382179,
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026",
+      "hn": "https://news.ycombinator.com/item?id=50382179",
+      "title": "Nasdaq Sinks 5% as Investors Retreat from AI Trade After Election",
+      "time": 1793901601,
+      "points": 157,
+      "depth": [
+        {
+          "text": "**Nasdaq** fell after the election as investors backed away from the **AI trade**, and commenters disagree on what comes next",
+          "tier": "simple"
+        },
+        {
+          "text": "Some commenters hope the **AI bubble** bursts; others see a **buying opportunity** and say AI will keep growing. One commenter warns against blaming the election alone for a complex market decline.",
+          "tier": "substance",
+          "data": [
+            [
+              "Nasdaq decline",
+              "5%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some hope the AI bubble bursts; others see a buying opportunity and say AI will keep growing.",
+      "comment_count": 188,
+      "terms": [
+        "AI trade",
+        "buy the dip"
+      ],
+      "entities": [
+        "Nasdaq",
+        "Cloudflare",
+        "Lovable",
+        "Repl",
+        "Trump"
+      ],
+      "comments": [
+        {
+          "by": "mrinterweb",
+          "text": "As uncomfortable as this may be for the tech industry, I have been hoping for AI related stock prices to come back to reality. A market correction is a healthy thing so long as it doesn't turn into a collapse. IMO, some AI companies have ludicrous valuations considering their astronomical debt. A reality check may be healthy long term."
+        },
+        {
+          "by": "bearjaws",
+          "text": "Cloudflare is a steal at $240 IMO. Regardless of what happens to the AI models, you will still need protection a decade from now. Not to mention the most comprehensive platform to use with AI, they will inevitably eat Lovable / Repl's lunch."
+        },
+        {
+          "by": "seizethecheese",
+          "text": "Whenever I see daily stock results I try to reframe it in a longer term. Interestingly, Nasdaq is only up ~4% YoY. This is surprising to me, given how much acceleration there has been in AI capabilities since the same time last year. I guess costs and risks are accelerating just as fast."
+        },
+        {
+          "by": "sailfast",
+          "text": "Beware any simple narrative for the decline of a massively complex market. Did the election matter at all for this trade? This trade has been in the works for the last 2-3 years. This correction is required to bring down inflation - and we're already seeing T-notes dropping lower which will decrease mortgage costs in the near term and allow for more liquidity for consumers for home equity loans…"
+        },
+        {
+          "by": "WarmWash",
+          "text": "Stopping DC rollout effectively works as calling the bluff of AI. AI is a hyped up nothing burger? AI demand retreats, lots of vacant compute, revenues sink (and the DC hold ends up being a (small) blessing in disguise for the labs). AI lives up to it's hype? AI demand surges, capacity is severely constrained, margins explode as inference costs soar (and the DC block ends up being counter…"
+        }
+      ],
+      "image": null
+    }
+  ],
+  "glossary": {
+    "User-Agent": "A label sent with a web request that tells the site what program is making it.",
+    "curl": "A tool you can use from a terminal to send requests to websites.",
+    "sandbox": "A separate, contained space where software can be tested without affecting the rest of a computer or system.",
+    "harness": "The surrounding code that gives an AI agent tools and a place to work, and checks what it does.",
+    "DNS": "Domain Name System: the internet's address book, which helps a computer find a website from its name.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "search index": "A catalog of web pages a search engine can look through to find results.",
+    "410 Gone": "A website's message that a page has been permanently removed.",
+    "CPM": "Cost per mille: what advertisers pay for each thousand times an ad is shown.",
+    "astroturfing": "Paid promotion made to look like regular people's honest opinions.",
+    "remote code execution": "A security flaw that lets someone run commands on another person's computer.",
+    "specially crafted packet": "A network message deliberately made in a particular way to trigger a flaw.",
+    "menu bar": "The strip along the top of the screen that holds app menus and controls.",
+    "Accessibility access": "A Mac permission that lets an app see which window is currently focused.",
+    "private macOS window APIs": "Application Programming Interfaces: ways an app asks macOS to do things; private ones are not meant for every app to use.",
+    "notarized": "Checked by Apple for known security problems before an app is distributed.",
+    "Hackintosh": "A way to run macOS on computer hardware not made by Apple.",
+    "GPU acceleration": "Using a computer's graphics hardware to make graphics work faster.",
+    "ARM": "A family of processor designs used in computers and other devices.",
+    "SBC": "Single-board computer: a whole small computer built onto one board.",
+    "x86": "A family of chip designs used in many personal computers.",
+    "deepfake": "A fake video or audio made to look or sound like a real person.",
+    "Section 230": "A US law that often protects websites from being legally responsible for what users post.",
+    "WebGL2": "A browser feature that lets websites draw interactive 3D scenes.",
+    "contenteditable": "A webpage setting that lets people edit text directly on the page.",
+    "DOM": "Document Object Model: the browser's list of the pieces that make up a webpage.",
+    "codec": "A set of rules that shrinks video for storage or sending and turns it back into a playable picture.",
+    "ULC": "Ultra Low Complexity Codec: an audio format built to take little computing work to decode.",
+    "RSP": "Reality Signal Processor: the N64 helper processor used for jobs including sound and graphics.",
+    "RSPL": "A small C-like language used to write code for the N64's RSP.",
+    "IMDCT": "Inverse Modified Discrete Cosine Transform: a math step that turns the decoder's numbers into sound samples.",
+    "RDP": "Reality Display Processor: the N64 graphics hardware that draws the picture.",
+    "fillrate": "How quickly graphics hardware can draw and fill parts of a picture.",
+    "correction territory": "A market is in correction territory when it has fallen 10% or more from a recent high.",
+    "data-center buildout": "The work of building more large facilities that house computers used to store data and run online services.",
+    "Nasdaq Composite": "A stock-market index that tracks many companies listed on the Nasdaq exchange.",
+    "VAE": "Variational Autoencoder: an AI that learns to squeeze information into a simpler form, then use it to create new examples.",
+    "latent space": "A model's internal workspace for handling information without writing it out as words.",
+    "latent diffusion": "A picture-making approach where the model works on a compressed version of image data instead of directly on pixels.",
+    "convergence": "When training settles into a useful pattern and the model’s results stop changing as much.",
+    "model weights": "The learned settings inside an AI that shape how it responds.",
+    "attention context window": "The amount of information a model can consider at one time while generating an answer.",
+    "informant": "A regular person recruited to pass information to the secret police; being listed does not prove they actually filed reports.",
+    "agent": "An AI system that can take steps and use tools to get a task done, not just answer questions.",
+    "cochlear implant": "A device that sends electrical signals to help someone hear.",
+    "psychophysics": "A way of studying how physical things, like sound, relate to what a person senses.",
+    "Lean 4": "A programming language and tool for checking that mathematical reasoning follows rules.",
+    "Mixture-of-Experts": "A model made of specialist parts that only uses some of them for each request.",
+    "active parameters": "The portion of an AI model it uses to produce each piece of an answer.",
+    "open weights": "The model's learned settings are available for people to download and run themselves.",
+    "Apache 2.0": "A set of legal terms that lets people use and share software, subject to its conditions.",
+    "AI trade": "Investing in companies because you expect AI to make them more valuable.",
+    "buy the dip": "Buying a stock after its price falls, hoping it will rise later."
+  }
+}
