@@ -2,6 +2,1055 @@
   "date": "2026-11-06",
   "cards": [
     {
+      "id": 50389333,
+      "url": "https://github.com/ppmpreetham/BUI",
+      "hn": "https://news.ycombinator.com/item?id=50389333",
+      "title": "Blender's UI and Runtime: Much Faster Than GPUI",
+      "time": 1793950835,
+      "points": 591,
+      "depth": [
+        {
+          "text": "someone turned **Blender's interface** into a **reusable UI library** for apps written in different languages",
+          "tier": "simple"
+        },
+        {
+          "text": "BUI pulls **Blender's widget drawing and interaction rules** into a **standalone library** with a small C core. The README says its benchmark uses **2–4× less CPU per frame** than gpui-fast, with less RAM and a ~5 ms first frame.",
+          "tier": "substance",
+          "data": [
+            [
+              "CPU per frame vs gpui-fast",
+              "2–4× less"
+            ],
+            [
+              "first frame",
+              "~5 ms"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some want Blender's UI in more apps; others don't want it outside Blender and say its GPL license restricts use.",
+      "comment_count": 242,
+      "terms": [
+        "GPU",
+        "runtime",
+        "binding",
+        "widget"
+      ],
+      "entities": [
+        "Blender",
+        "BUI",
+        "GPUI",
+        "gpui-fast",
+        "Rust",
+        "Python",
+        "JavaScript",
+        "React",
+        "Svelte",
+        "C",
+        "C++",
+        "Dear ImGui"
+      ],
+      "comments": [
+        {
+          "by": "munksbeer",
+          "text": "Can I please congratulate you on your README. It rapidly tells me what I'm looking at, and why I might be interested in the project. There are so many READMEs around that ... just don't do that. They ramble about technical implementation details, how their language choice is amazing, and a third of the way through the README, I'm still left wondering, \"but what does this project do?\"."
+        },
+        {
+          "by": "dev0p",
+          "text": "I love the general idea behind Blender's UI. And I do appreciate the effort that goes into it, especially in the latest versions as it got much better, But I really really really REALLY don't want that UI in anything else other than Blender. Please don't."
+        },
+        {
+          "by": "lukebitts",
+          "text": "That's really cool! I burned some tokens trying to develop something similar but gave up halfway. A lot of people criticize Blender's UI but as someone who has been using blender for more than a decade now I just find it so elegant. Just the customizability itself is something I miss on most 3D software, if not all of them. Being able to just split screens and change their functionality, paired…"
+        },
+        {
+          "by": "nicoburns",
+          "text": "For anyone looking at Rust GUI: don't expect GPUI to be the fastest. From what I've heard, Iced, Slint, Dioxus Native, Freya, etc are all faster. Despite claims of being blazingly fast, GPUI isn't that optimized. Zed gets away with it because it's UI is simple."
+        },
+        {
+          "by": "felixthehat",
+          "text": "It would be such a boon if GIMP and Inkscape could adopt blender's fantastic GUI"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/381e523074d75445c2fe7fcc7eef2a149397ddd3259e21f1823cf7416c66419e/ppmpreetham/BUI"
+    },
+    {
+      "id": 50390124,
+      "url": "https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105",
+      "hn": "https://news.ycombinator.com/item?id=50390124",
+      "title": "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS",
+      "time": 1793957232,
+      "points": 582,
+      "depth": [
+        {
+          "text": "ASN's app blocks **GrapheneOS users** from activating **iDEAL | Wero** payments",
+          "tier": "simple"
+        },
+        {
+          "text": "ASN says **iDEAL | Wero** isn't supported on every device or operating system, offers **no workaround**, and is still investigating support for alternatives. EPI says **Google Play Integrity** checks app and operating-system integrity for payment security.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: EPI says Google Play Integrity checks app and operating-system integrity for payment security; critics say Android hardware attestation can verify the app and OS too, so EPI's stated reason doesn't hold.",
+      "comment_count": 371,
+      "terms": [
+        "Google Play Integrity",
+        "hardware key attestation"
+      ],
+      "entities": [
+        "ASN Bank",
+        "GrapheneOS",
+        "iDEAL",
+        "Wero",
+        "Google Play Integrity",
+        "EPI",
+        "Android"
+      ],
+      "comments": [
+        {
+          "by": "ACCount39",
+          "text": "SafetyNet was a mistake in general. But banks specifically are among the most obnoxious shitters when it comes to \"you aren't allowed to do things except the way we want it\". Over and over again you have to contend with bullshit like 120MB APKs full of obfuscated code, root detection, custom firmware detection, \"non-mainstream device\" detection, VPN detection, and even more obscure…"
+        },
+        {
+          "by": "teekert",
+          "text": "My (Dutch) bank Rabobank also blocks GrapheneOS [0], I contacted them about it, you get the usual thing, that \"security is very important to them\". Arguing is completely pointless, they don't understand what they are talking about. The Rabobank app works fine on Android phones that haven't seen updates in years... However, via Aurora store it works fine (inc Wero)... I do feel a bit uncomfortable…"
+        },
+        {
+          "by": "agilob",
+          "text": "I'd like to use this moment to praise ING. I have an old tablet running quite modern LinageOS. The ROM is rooted and I use apps that require root accounts. Its almsot only purpose is banking. I don't have banking apps on my main phone. I have ING app installed on the tablet, the only issues the bank has with it is I get more notifications wanting me to do online training on cyber security or…"
+        },
+        {
+          "by": "stef25",
+          "text": "In Holland, GrapheneOS users are being targeted by police after \"busting\" a re-seller. The owners of the phones got raided without them being involved in any investigation. Just having the phone was enough to get a knock. Supposedly the Dutch police had \"cracked\" their phones. In Dutch\nhttps://archive.is/3wawb"
+        },
+        {
+          "by": "Freak_NL",
+          "text": "The response from EPI/Wero in that thread is troubling: https://github.com/PrivSec-dev/banking-apps-compat-report/is... I really hope this doesn't mean other Dutch banks will follow suit. It's already quite impossible to actually contact someone at the bank who can understand the issue if it's on the technical side. I have no idea how I would even start to broach this topic with ABN Amro."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/359bb97209e3899fed9ef38767011a670f969e51ee322283657e9033a7e51020/PrivSec-dev/banking-apps-compat-report/issues/105"
+    },
+    {
+      "id": 50391456,
+      "url": "https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817",
+      "hn": "https://news.ycombinator.com/item?id=50391456",
+      "title": "Tesla to wind down Cybertruck production",
+      "time": 1793967231,
+      "points": 540,
+      "depth": [
+        {
+          "text": "Tesla is winding down the **Cybertruck** after **weak sales**, making room for more Cybercabs",
+          "tier": "simple"
+        },
+        {
+          "text": "Tesla says production at its Texas gigafactory will wind down around **mid-2027**, so it can make more of its newly launched **Cybercab**. It sold **20,237 Cybertrucks** in the US last year, down 48% from 38,965 in 2024; Musk had predicted annual sales of 250,000 before launch.",
+          "tier": "substance",
+          "data": [
+            [
+              "US Cybertruck sales last year",
+              "20,237"
+            ],
+            [
+              "Change from 2024",
+              "down 48%"
+            ],
+            [
+              "2024 Cybertruck sales",
+              "38,965"
+            ],
+            [
+              "Musk's predicted annual sales",
+              "250,000 units"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: critics say it was overpriced or impractical; fans say its unusual design made it fun and fresh.",
+      "comment_count": 1217,
+      "terms": [
+        "gigafactory",
+        "robotaxi",
+        "self-certified",
+        "EV"
+      ],
+      "entities": [
+        "Tesla",
+        "Cybertruck",
+        "Cybercab",
+        "Elon Musk",
+        "X",
+        "Reuters",
+        "Kelley Blue Book",
+        "Andy Palmer",
+        "Aston Martin",
+        "General Motors",
+        "Ford",
+        "Felipe Munoz",
+        "Wes Morrill"
+      ],
+      "comments": [
+        {
+          "by": "brightball",
+          "text": "After Helene knocked out power in parts of my area for a little over 14 days, I found out that a friend of ours used his cybertruck to power his house through the entire mess. He'd run the house on it for a couple of days, then drive the cybertruck over to a super charger station, recharge, then come home and plug the house back in. The battery capacity on those things is equivalent to 9 Tesla…"
+        },
+        {
+          "by": "crawshaw",
+          "text": "There are a lot of lenses through which to view the failure of the cybertruck: aesthetics, not enough truck not enough SUV, size, association of aesthetics with politics, etc. But I think the main one that is ignored is price. The cybertruck was built in an era of high truck prices driven by zero interest rates. It bet on the price of trucks going up, just as the Ford F150 electric did. That was…"
+        },
+        {
+          "by": "paxy",
+          "text": "- Federal EV tax credits are over. - The emissions credit market (where Tesla made most of its money) is dead due to lowered standards. - Manufacturing costs haven't come down. - EV sales share in the US is down to 6% (and falling every quarter). - Chinese EVs are dominating every market outside the US. - All the overhyped moonshots (sub-$30K car, unsupervised autopilot, autonomous robots) are…"
+        },
+        {
+          "by": "conductr",
+          "text": "From my perspective, owning a truck and SUV and using them differently for various use cases, the cybertruck is neither. So even if I ignore everything else I feel about it’s aesthetic, Musk, politics, etc. It simply does not serve many real world needs that I have. It put itself in a very narrow box of, only people that really like this quirky design and also like/feel indifferent to the…"
+        },
+        {
+          "by": "gnarcoregrizz",
+          "text": "The absurdity is the best part of it. Finally it was something new, in a landscape where every car and truck has looked the same for the past 20 years. I'm happy someone designed and built something so crazy and different. It probably would have been better had they not been mass produced, and maybe did a very limited quantity run - make it more like a collector item... I suppose thats what it'll…"
+        }
+      ],
+      "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2025-02/250213-Cybertruck-aa-1045-dd55f3.jpg"
+    },
+    {
+      "id": 50389222,
+      "url": "https://www.reuters.com/business/world-at-work/britain-make-salary-disclosure-job-ads-mandatory-2026-11-05/",
+      "hn": "https://news.ycombinator.com/item?id=50389222",
+      "title": "Britain to make salary disclosure in job ads mandatory",
+      "time": 1793949724,
+      "points": 522,
+      "depth": [
+        {
+          "text": "Britain plans to require **salary details** in job ads, and commenters debate whether **ranges help**",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter quotes **Burnham's office** saying legislation will go to parliament soon, but gives no timeline. Supporters say salary ranges could save applicants time; others worry **very wide ranges** could make the disclosure useless.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: supporters say disclosure saves time and may reduce pay inequality; skeptics worry broad ranges could be useless or narrow rules too rigid.",
+      "comment_count": 412,
+      "terms": [
+        "RSUs",
+        "OTE",
+        "total comp"
+      ],
+      "entities": [
+        "Burnham",
+        "European Union"
+      ],
+      "comments": [
+        {
+          "by": "dotdi",
+          "text": "I will repost a comment I made here a while ago on a similar discussion. Salary non-disclosure is a dealbreaker for me since being through the situation described below: A few years back I wanted to get out of the work situation I was in. I looked around, had some interviews, had some offers. None of the postings had salary ranges, as is common where I live. My eyes, however, were set on a…"
+        },
+        {
+          "by": "aregue",
+          "text": "I have always felt that job ads should include salary information. The main reason is not to waste anyone's time. Often a narrow salary range or a clear link between requirements and salary are much more informative than a job description. I have experienced to apply to a job opening and go through one or more interviews only to find out that the company is actually hiring for a more junior…"
+        },
+        {
+          "by": "ellen364",
+          "text": "Cautiously pleased about this. Some companies in UK pay senior devs £30-35k. And some companies won't discuss that until v late in the process, while importing US-style multiround interviews. It's pretty silly when people get 3 rounds in, take time off work for the interviews, then find out their expectations are so far apart."
+        },
+        {
+          "by": "claw-el",
+          "text": "Besides ‘salary disclosure’, one other law that really helps improve salary is to ban potential employers from asking candidates’ current/previous salary. This avoids potential employers from offering just marginally better than candidates previous roles…"
+        },
+        {
+          "by": "sjamaan",
+          "text": "> The European Union adopted pay transparency rules the following year, giving member states until June 2026 to implement them in national law. That's the first I've heard of it, and I've seen plenty of job postings the past year for European companies where there was no salary indication. See for example the recent HN Who's Hiring? https://news.ycombinator.com/item?id=50338728"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50393154,
+      "url": "https://www.wired.com/story/rip-cybertruck-you-were-unloved-unwanted-and-utterly-absurd/",
+      "hn": "https://news.ycombinator.com/item?id=50393154",
+      "title": "RIP Cybertruck",
+      "time": 1793977298,
+      "points": 297,
+      "depth": [
+        {
+          "text": "Tesla plans to **wind down Cybertruck production** and make room for more **Cybercab** production",
+          "tier": "simple"
+        },
+        {
+          "text": "Musk says Tesla will wind down production at Gigafactory Texas around the **middle of next year** to make room for increased **Cybercab** production. The truck shifted **less than 50,000 units** in total by March last year.",
+          "tier": "substance",
+          "data": [
+            [
+              "Cybertrucks sold by March last year",
+              "less than 50,000 units"
+            ],
+            [
+              "US Cybertruck sales in the first three quarters of this year",
+              "11,586"
+            ],
+            [
+              "year-over-year change in US sales",
+              "down 28 percent"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 4,
+      "terms": [
+        "EV",
+        "autonomous",
+        "robotaxi",
+        "recall"
+      ],
+      "entities": [
+        "Tesla",
+        "Cybertruck",
+        "Cybercab",
+        "Elon Musk",
+        "WIRED",
+        "EVWire",
+        "Kelley Blue Book",
+        "iSeeCars",
+        "National Highway Traffic Safety Administration",
+        "Karl Brauer",
+        "Wes Morrill",
+        "Donald Trump"
+      ],
+      "comments": [
+        {
+          "by": "swed420",
+          "text": "Already posted 4 hours ago https://news.ycombinator.com/item?id=50391456"
+        },
+        {
+          "by": "gnabgib",
+          "text": "Discussion (194 points, 240 comments) https://news.ycombinator.com/item?id=50391456"
+        }
+      ],
+      "image": "https://media.wired.com/photos/6aede0c1a88069e85ad40ac8/191:100/w_1280,c_limit/GettyImages-2199394161.jpg"
+    },
+    {
+      "id": 50387796,
+      "url": "https://pwn.college/",
+      "hn": "https://news.ycombinator.com/item?id=50387796",
+      "title": "Pwn.college",
+      "time": 1793935634,
+      "points": 283,
+      "depth": [
+        {
+          "text": "pwn.college is a **free cybersecurity dojo** where learners practise skills and **earn belts**",
+          "tier": "simple"
+        },
+        {
+          "text": "The platform is maintained by hackers at **Arizona State University** and powers much of ASU's cybersecurity curriculum. Its challenges are **educational material used to grade students** at universities around the world, and the infrastructure is **open source**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 45,
+      "terms": [
+        "cybersecurity",
+        "Capture The Flags (CTFs)",
+        "wargames",
+        "open source"
+      ],
+      "entities": [
+        "pwn.college",
+        "Arizona State University",
+        "Discord",
+        "Matrix",
+        "hackthissite.org",
+        "OverTheWire",
+        "SmashTheStack",
+        "cyberarmy.com",
+        "OWASP WebGoat",
+        "telehack.com",
+        "CryptoHack",
+        "OST2",
+        "GitHub",
+        "CTFtime",
+        "Adam Doupe"
+      ],
+      "comments": [
+        {
+          "by": "xavdid",
+          "text": "Not sure if the devs are here, but please don't justify your text! It makes the lines all have huge spaces in the middle. It's much harder to read as a result."
+        },
+        {
+          "by": "rschachte",
+          "text": "I was doing this on the side for fun and learned a lot. I believe the professors that helped originate this idea were a group of hacker PhD students from UC Santa Barbara that moved over to Arizona State. Adam Doupe was my professor his first year and an absolutely stellar academic and teacher."
+        },
+        {
+          "by": "JohnMakin",
+          "text": "Cool, but needing to register via discord is going to be a no for some people."
+        },
+        {
+          "by": "bitforger",
+          "text": "reminds me of high school trying to beat hackthissite.org, OverTheWire, SmashTheStack simpler times"
+        },
+        {
+          "by": "solyin",
+          "text": "Why so deferential about posting write-ups? I'd just have a rule that says don't post write-ups and posting a write-up will get you banned from future editions or something."
+        }
+      ],
+      "image": "https://pwn.college/themes/dojo_theme/static/img/dojo/ninja.png"
+    },
+    {
+      "id": 50388122,
+      "url": "https://thereader.mitpress.mit.edu/from-linux-to-wikipedia-how-volunteers-build-the-internet/",
+      "hn": "https://news.ycombinator.com/item?id=50388122",
+      "title": "From Linux to Wikipedia: How Volunteers Build the Internet",
+      "time": 1793938669,
+      "points": 283,
+      "depth": [
+        {
+          "text": "the post explores how **volunteers** helped build the **Internet**, from Linux to Wikipedia",
+          "tier": "simple"
+        },
+        {
+          "text": "The comments call this **peer production**: projects can draw on volunteers, paid engineers, and organizations that contribute or donate. Some readers say mixing voluntary work with financial gains makes the story less simple.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some emphasize volunteers and community effort; others point to paid corporate work, with one commenter crediting the U.S. DoD for building the Internet.",
+      "comment_count": 92,
+      "terms": [
+        "peer production",
+        "FOSS",
+        "crowd-sourcing",
+        "decentralization"
+      ],
+      "entities": [
+        "Linux",
+        "Wikipedia",
+        "OpenStreetMap",
+        "BSD",
+        "Linus Torvalds",
+        "Hasbro",
+        "Dungeons & Dragons",
+        "Minecraft",
+        "Grokipedia",
+        "U.S. DoD"
+      ],
+      "comments": [
+        {
+          "by": "niemandhier",
+          "text": "Things were build by passionate people, who had the skills and the means to do it. I feel that modern tech first took away the passion, by making everything a product, than took away the means by making everything cloud, and now kills the skills by eutrophizing our brains with AI. There is no cabal of evil tech that pushes this, but the results are the same."
+        },
+        {
+          "by": "jillesvangurp",
+          "text": "While a lot of this involved volunteers and people taking initiative, a lot of this is also people working and being paid to do so. Linus Torvalds was getting paid to work on the Linux kernel from pretty early on, for example. And a lot of contributions made to Linux are done by software engineers working for a very wide range of companies that each have their own commercial interest in moving…"
+        },
+        {
+          "by": "joe-esquibel",
+          "text": "I love these two projects for how they are, and continue to be, built. They say something hopeful and deep about humanity. Before Linux and Wikipedia, we assumed that if you gave everyone a sharpie, that we would graffiti and deface the world. Instead, we learned that humans will stop and sit and write the most thorough history ever seen for the sake of free knowledge and create the tools for us…"
+        },
+        {
+          "by": "allexsendev",
+          "text": "This has happened with most of the fields - volunteers do a lot of work, make their fields/areas good, raise interest, bring ppl into it which usually brings money then which usually brings money chasers who then usually \"optimize\" the hell out of every metric for maximum gains. Great OS volunteers still exist today, but the ratio of genuine field lover to money chaser is absurd now."
+        },
+        {
+          "by": "jrm4",
+          "text": "Excellent reminder. It very often feels like this place forgets where most of the good stuff comes from."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50393758,
+      "url": "https://www.filfre.net/2026/11/deus-ex/",
+      "hn": "https://news.ycombinator.com/item?id=50393758",
+      "title": "Deus Ex",
+      "time": 1793979876,
+      "points": 261,
+      "depth": [
+        {
+          "text": "a writer revisits **Deus Ex**, praising its **open-ended missions** while questioning claims it **predicted the future**",
+          "tier": "simple"
+        },
+        {
+          "text": "The article links its **“problems, not puzzles”** approach to System Shock: players can improvise solutions in each mission, though the main story still funnels them toward **three pre-crafted endings**. It argues the game’s apparent **prophecies** grew out of 1990s conspiracy culture and sci-fi influences, not a deliberate forecast.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 132,
+      "terms": [
+        "immersive sim",
+        "diegesis",
+        "emergent gameplay"
+      ],
+      "entities": [
+        "Deus Ex",
+        "Jimmy Maher",
+        "Warren Spector",
+        "Sheldon Pacotti",
+        "Austin Grossman",
+        "Ion Storm",
+        "Looking Glass Studios",
+        "System Shock",
+        "Thief",
+        "Half-Life",
+        "Computer Gaming World",
+        "PC Powerplay",
+        "The X-Files",
+        "Neuromancer",
+        "Blade Runner",
+        "The Terminator",
+        "Snow Crash"
+      ],
+      "comments": [
+        {
+          "by": "Lerc",
+          "text": "My favourite ever games journalism quote: \"There's a tendency among the press to attribute the creation of a game to a single person,\" says Warren Spector, creator of Thief and Deus Ex."
+        },
+        {
+          "by": "mikemcquaid",
+          "text": "Best game of all time. I have the logo tattooed on myself (along with Babylon 5). First played it around 16 pre-spoiler-filled internet and was blown away by my friend and I having completely different outcomes to pivotal moments of the game related to Paul Denton (no spoilers: if you know, you know). Never worked in games (bar a bit of voice acting in The Nameless Mod for Deus Ex) but I think…"
+        },
+        {
+          "by": "morsch",
+          "text": "There's a lot to cover with the game, so I'm not surprised he doesn't cover the music. But the soundtrack is great! I still listen to it regularly. I like the UNATCO music best. Each track has a regular theme, and switches to variations on the theme for combat and other situations. Pretty unusual in 2000 and even today."
+        },
+        {
+          "by": "klaussilveira",
+          "text": "If anyone wants to play it again, dont forget the amazing mods available: https://www.moddb.com/games/deus-ex/mods New renderers, new engines, The Purist Mod, GMDX, The Nameless Mod..."
+        },
+        {
+          "by": "jamesu",
+          "text": "One thing that bugs me is the article explains the twin towers missing from the skyline as \"rendering engine couldn’t handle any more polygons\", but it turns out... it's way more complicated than that https://www.youtube.com/watch?v=wpi5xUXPqok ."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50392118,
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "hn": "https://news.ycombinator.com/item?id=50392118",
+      "title": "Gemini Omni 1.2 Flash",
+      "time": 1793972127,
+      "points": 242,
+      "depth": [
+        {
+          "text": "Google's **video generator** makes **longer clips** and lets you tweak them by chatting, not starting over",
+          "tier": "simple"
+        },
+        {
+          "text": "Google says **Gemini Omni 1.2 Flash** makes native 15-second videos, supports edits through follow-up conversations, and keeps reference details more consistent. It says pricing is **30% lower** than Omni 1.1—$0.07 per second for 720p video—and that it’s generally available across the Gemini API and Gemini for business.",
+          "tier": "substance",
+          "data": [
+            [
+              "price reduction vs. Gemini Omni 1.1",
+              "30%"
+            ],
+            [
+              "720p video price",
+              "$0.07 per second for 720p video"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters think stronger character consistency could make it worth using; others say it costs more in practice, doesn’t seem much better, or has a confusing rollout.",
+      "comment_count": 189,
+      "terms": [
+        "multi-turn conversational editing",
+        "reference adherence",
+        "API",
+        "720p"
+      ],
+      "entities": [
+        "Google",
+        "Gemini Omni 1.2 Flash",
+        "Gemini Omni 1.1",
+        "Gemini API",
+        "Gemini for business"
+      ],
+      "comments": [
+        {
+          "by": "wxce",
+          "text": "It's insane how Google has dropped the ball almost completely with AI. I literally don't care about their models anymore because I can't even try them without paying for them? I already pay for the plus plan but whatever their latest model was, is locked for me. Or otherwise it's just not accessible for me. If I try to add balance to my Google payment account, it shows me errors and is asking me…"
+        },
+        {
+          "by": "msabalau",
+          "text": "This is a new video model. It is not a replacement for Gemini 4, it is doing something altogether different. It has been available, since yesterday, within Google Flow. I know, because I used it yesterday. Creatives normally are using Flow or similar third party tools, not APIs or AI Studio. The claim here is that there is more character consistency, which is helpful if true. But that's not…"
+        },
+        {
+          "by": "Willingham",
+          "text": "The rollout is so confusing. Going straight to the Gemini app and asking when I can use this model gets me vague and contradicting answers. Ultimately it sounds like the Vids rollout will take 1-3 days, and you can go to vids.new on desktop to see if you’ve won the lottery and have it available now, apparently on any free Google account. Business accounts can use it too. Meanwhile the Gemini app…"
+        },
+        {
+          "by": "lexoj",
+          "text": "I’m still afraid to use Google models because my gmail (which my life kinda depends on) is connected to it and I’m afraid of getting blocked or sth because of some weird prompt."
+        },
+        {
+          "by": "del82",
+          "text": "I desperately wish Google would focus on improving the Gemini capabilities that are built-in to their office suite (docs, slides, etc.). The current built-in Gemini is terrible, and if I could use e.g. Claude natively with those products my workday would be an order of magnitude more productive. I'm shocked that they don't seem to be investing in agentic capabilities there at all."
+        }
+      ],
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-omni-1.2_FZLql41.width-1300.png"
+    },
+    {
+      "id": 50389370,
+      "url": "https://apps.metaebene.me/en/kugelblitz",
+      "hn": "https://news.ycombinator.com/item?id=50389370",
+      "title": "Kugelblitz – Mac-Native Google Earth Alternative",
+      "time": 1793951258,
+      "points": 229,
+      "depth": [
+        {
+          "text": "someone built a **Mac globe app** for flying over terrain, maps, and **open geodata**",
+          "tier": "simple"
+        },
+        {
+          "text": "Kugelblitz layers imagery, road and topographic maps over **real terrain**, with **3D buildings**; its atlas view flattens the same data in five projections. It also computes eclipses over **5,000 years**, alongside earthquakes, eruptions, tsunamis and fireballs at their place and time.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some report it works fine on an M1 Pro; others mock the claim that it flies smoothly even on an M1, noting Google Earth was smooth on much older computers.",
+      "comment_count": 60,
+      "terms": [
+        "geodata",
+        "projections",
+        "tile server",
+        "cache"
+      ],
+      "entities": [
+        "Kugelblitz",
+        "OpenStreetMap",
+        "Apple",
+        "macOS",
+        "Apple silicon",
+        "SpaceMouse",
+        "3Dconnexion",
+        "Vision Pro",
+        "Metaebene Applications",
+        "Metaebene",
+        "Tim Pritlove",
+        "Google Earth",
+        "TerraVision",
+        "Freakshow",
+        "Linux",
+        "Sunlit.earth",
+        "Earthlove.live",
+        "NAIP",
+        "Apple Maps",
+        "QGIS",
+        "geolibre",
+        "Sequoia",
+        "Liquid Glass",
+        "German",
+        "English"
+      ],
+      "comments": [
+        {
+          "by": "andai",
+          "text": "> Kugelblitz shows the Earth and its neighbors as a globe and as an atlas you fly over smoothly like a pilot, even on an M1. Even on M1? Didn't Google Earth run smoothly when it came out? (Which was apparently 25 years ago, oh my goodness!)"
+        },
+        {
+          "by": "richardstahl",
+          "text": "Kudos to Tim for creating this! In the last Freakshow Podcast he gave a walkthrough of how he created it. https://freakshow.fm/fs313-der-tripelpunkt-der-metaebene As other commenters said: TerraVision vibes."
+        },
+        {
+          "by": "klamann",
+          "text": "This looks great, congratz to Tim for getting this released (though I'll have to wait for the Linux version to actually try it). Shameless plug: I recently built an app that also renders a view of earth, but optimized for aesthetics, with day/night cycle, seasonal ground textures, sea ice, live weather... You can set it as your wallpaper and the app keeps it up to date: https://sunlit.earth/"
+        },
+        {
+          "by": "rob74",
+          "text": "In case you're wondering, \"Kugelblitz\" is German for \"ball lightning\" (literally \"spherical lightning\")- probably refers to showing the \"sphere\" (the Earth) as fast as lightning?"
+        },
+        {
+          "by": "ridgeguy",
+          "text": "Doesn't run on MPB Max M5 Tahoe. App icon shows strikethru as if it's a 32-bit app."
+        }
+      ],
+      "image": "https://apps.metaebene.me/media/8bbe20e7cd5817792e865718e36f743e659171e01dcf60f21dc32cdbff595c55/og.jpg"
+    },
+    {
+      "id": 50378643,
+      "url": "https://firenook.dev/",
+      "hn": "https://news.ycombinator.com/item?id=50378643",
+      "title": "Show HN: Firenook – Firebase emulators in Rust: 40× faster writes, 10× less RAM",
+      "time": 1793884049,
+      "points": 167,
+      "depth": [
+        {
+          "text": "someone built a **Firebase emulator** that promises **faster writes** and lower memory use",
+          "tier": "simple"
+        },
+        {
+          "text": "Firenook is a **Rust-built** replacement for the official Firebase Emulator Suite, with a new console UI. The post says it ran with 2 millions datas loaded using around 2GB RAM, versus 22GB for the official suite; the team claims **40× faster writes** and **10× less RAM**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Loaded data",
+              "2 millions datas"
+            ],
+            [
+              "Firenook RAM",
+              "around 2GB"
+            ],
+            [
+              "Official suite RAM",
+              "22GB"
+            ],
+            [
+              "Write speed",
+              "40× faster writes"
+            ],
+            [
+              "RAM use",
+              "10× less RAM"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 28,
+      "terms": [
+        "emulator",
+        "Rust",
+        "RAM",
+        "drop-in replacement"
+      ],
+      "entities": [
+        "Firenook",
+        "Firebase",
+        "Firebase Emulator Suite",
+        "Rust",
+        "Firestore",
+        "Firebase Functions",
+        "Firebase Realtime Database",
+        "Google",
+        "GCP",
+        "Supabase",
+        "Lark",
+        "Amazon Fire",
+        "B&N Nook"
+      ],
+      "comments": [
+        {
+          "by": "jamest",
+          "text": "(Firebase founder) This is very cool! Great work!"
+        },
+        {
+          "by": "joshdavham",
+          "text": "Looks nice! Somewhat off topic question though: if you guys are such skilled developers to be building something as involved as this, why not just use something other than Firebase? I used Firebase mainly as a crutch when I was first getting into web dev, but feel that I’ve sorta outgrown it. Do you feel Firebase still serves developers like you well or are you developing this moreso for people…"
+        },
+        {
+          "by": "silverlight",
+          "text": "This is really neat! I've been working on an open-source version of the Firebase Realtime Database as well that might be of interest[1]. Also written in Rust! Might be a good basis for building out the Realtime Database part of Firenook if you have any interest in supporting that as well. [1] https://github.com/lark-sh/lark"
+        },
+        {
+          "by": "corytheboyd",
+          "text": "Awesome, not surprised to hear that Google still neglects to improve this experience, but you called out exactly why: > [...] the only way Firebase developers can build apps without directly costing them is using the official Firebase Emulator Suite We had started on the management UI portion of this at my old job out of similar frustrations. Felt awful seeing what should be a small/medium sized…"
+        },
+        {
+          "by": "codazoda",
+          "text": "At first I thought this had something to do with books because \"Amazon Fire\" plus \"B&N Nook\" = \"firenook\"."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50388513,
+      "url": "https://www.lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform?commentId=fJtaHHHfx45tD7BSL",
+      "hn": "https://news.ycombinator.com/item?id=50388513",
+      "title": "I struggle to believe that AI R&D is ingenious",
+      "time": 1793942344,
+      "points": 161,
+      "depth": [
+        {
+          "text": "someone doubts **AI research** can be **ingenious**, after seeing models miss key leads and waste experiments",
+          "tier": "simple"
+        },
+        {
+          "text": "Arjun Panickssery says models miss **key papers** and run experiments with **too little data** to compare architectures. He improved the Scrabble move-listing **SOTA by 10x** through repeated prompts, but says two big leaps came after he suggested measuring across a game and splitting approaches by remaining blank tiles.",
+          "tier": "substance",
+          "data": [
+            [
+              "Scrabble move-listing improvement",
+              "10x"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: skeptics say models lack judgment and miss the big picture; others say agents can be useful and surprising with time, a focused setup, or human guidance.",
+      "comment_count": 166,
+      "terms": [
+        "R&D",
+        "SOTA",
+        "architecture",
+        "hill-climbing",
+        "harness",
+        "CFR",
+        "MCTS",
+        "self-play"
+      ],
+      "entities": [
+        "Arjun Panickssery",
+        "Astra",
+        "Claude",
+        "Claude Opus 5.5",
+        "Scrabble",
+        "Ultimate Tic-Tac-Toe",
+        "AI Philosophy contest",
+        "Apart",
+        "Pangram",
+        "Hanabi",
+        "Ataraxos",
+        "R3D2",
+        "ICLR",
+        "Ad-Hoc Human-AI Coordination Challenge",
+        "ICML",
+        "o3",
+        "Gemini 2.5 Pro",
+        "GPT-6",
+        "Fabel",
+        "Sonnet",
+        "LifeVal",
+        "METR",
+        "OpenAI",
+        "DeepMind",
+        "Anthropic",
+        "ETH",
+        "Navier-Stokes",
+        "Python",
+        "React",
+        "HTML",
+        "CSS",
+        "OSGi",
+        "Eclipse"
+      ],
+      "comments": [
+        {
+          "by": "mangecoeur",
+          "text": "Llms are far from being ingenious or innovative. The main way they can surprise you today is pulling in information that’s new TO YOU - I impressed with the algorithms they pop out sometimes simply because never formally studied compsci. But when it treads on my home turf I find it very basic, and for bigger picture stuff like system architecture its terrible, by its nature it doesn’t have a…"
+        },
+        {
+          "by": "ainch",
+          "text": "This matches my instincts too. When trying to debug ML learning pipelines or research projects, LLM suggestions I've received are almost always techically correct, but they point out small, tedious details which don't really matter. In my experience, they miss the forest for the trees. I'm bearish that continued scaling will fully solve this. In the meantime though, as a commentor in the OP…"
+        },
+        {
+          "by": "nfw2",
+          "text": "I've also found it very hard to leave AI agents up to their own devices for long periods and get much productive benefit from it. I suppose it's possible that frontier labs have internal models that are so far beyond that autonomous research becomes possible, but I'm not sure that's it. It seems to me like these models are like a very competent, important part of some hypothetical digital brain…"
+        },
+        {
+          "by": "p1necone",
+          "text": "On one hand, yeah, I agree. On the other hand, using AI to trawl through all the grunt work, experiments, and well trodden areas means I can crawl up pretty close to that giants shoulder and spend way less effort myself answering the actually important questions so I can stand on it. (This isn't supposed to sound self aggrandising - the giants whose shoulders I'm standing on aren't very tall, and…"
+        },
+        {
+          "by": "skew-aberration",
+          "text": "Using Fabel to improve some non-AI ML models a while back, I had a similar result - it could implement perfectly any suggestion I made, but it could not work autonomously due to making very poor suggestions itself, or getting distracted by the wrong things, making dumb assumptions, failing to see the big picture, etc. These seem pretty easy to solve problems though if I could just afford 100 or…"
+        }
+      ],
+      "image": "https://res.cloudinary.com/lesswrong-2-0/image/upload/v1654295382/new_mississippi_river_fjdmww.jpg"
+    },
+    {
+      "id": 50384822,
+      "url": "https://finlaws.substack.com/p/25t-has-been-wiped-from-us-stocks",
+      "hn": "https://news.ycombinator.com/item?id=50384822",
+      "title": "$2.5T has been wiped from US stocks",
+      "time": 1793914766,
+      "points": 161,
+      "depth": [
+        {
+          "text": "US stocks shed **$2.5T on paper**, while commenters debate **what caused the drop**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says **the headline's $2.5T is market-cap math**: it multiplies the marginal share price by all shares, which isn't the same as adding up what those shares would sell for individually. Another says the election link may be **a convenient coincidence**.",
+          "tier": "substance",
+          "data": [
+            [
+              "headline amount",
+              "$2.5T"
+            ]
+          ]
+        }
+      ],
+      "camps": "Some commenters connect the drop to election-related expectations; others say the timing may be coincidence and a day's move is hard to pin on one cause.",
+      "comment_count": 156,
+      "terms": [
+        "market cap",
+        "marginal share price",
+        "S&P 500",
+        "YTD",
+        "CAGR",
+        "capex",
+        "IPO",
+        "DRAM",
+        "bear territory",
+        "TQQQ"
+      ],
+      "entities": [
+        "Nvidia",
+        "S&P 500",
+        "SPX",
+        "SPXT",
+        "TQQQ",
+        "Nasdaq",
+        "Anthropic",
+        "Micron",
+        "Sandisk",
+        "AMD",
+        "CNBC",
+        "Trump",
+        "Josh Johnson"
+      ],
+      "comments": [
+        {
+          "by": "foolswisdom",
+          "text": "For all the federal election related takes, remember that 1. Market price changes are changes from what was expected before compared to what is expected now. And not even only in regards to the asset itself, but with respect to comparative change in other assets as well.\n2. conventional wisdom when the branches of government are divided, less change comes from the government, so you can expect…"
+        },
+        {
+          "by": "schnuri",
+          "text": "I always find these market cap numbers misleading. The US stock market isn't \"worth\" $2.5T less. If you multiply the marginal share price by the total number of shares, you get a number that's $2.5T lower. That is something different. E.g., if you tried to sell all Nvidia shares at once, you'd never get anywhere near ~$4.5T (just as buying them all would cost far more)."
+        },
+        {
+          "by": "curiousllama",
+          "text": "This is definitely scary, but not the end of the world (yet). The S&P500 is still up ~7% YTD, and 5y CAGR of 9.4% before dividends, in line with historical norms. This is primarily a decline in tech: week over week, the S&P is -4.5% (SPX), but the S&P excluding tech is +0.1% (SPXT). Right now, this looks like speculation that tech will reduce capex after Q4 earnings (Nvidia, Micron, Sandisk, AMD…"
+        },
+        {
+          "by": "MSM",
+          "text": "There's a lot of conjecture about how the midterms have caused the drop today but I can't help but think it may just be a convenient coincidence. Yesterday was one of the largest bumps of the year and by yesterday it was already known that Democrats were taking control. Is this just the start of the fall that many people have been predicting for months? Did something materially change in the…"
+        },
+        {
+          "by": "hacker_9",
+          "text": "April 2025, nasdaq enters bear territory:\nhttps://news.ycombinator.com/item?id=43587479 It's interesting reading the panic then in the comments, and yet now the nasdaq is up 65% from those lows, even with today's drop."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50389420,
+      "url": "https://worldstrike.fun/",
+      "hn": "https://news.ycombinator.com/item?id=50389420",
+      "title": "Multiplayer tanks that demolish real buildings from OpenStreetMap",
+      "time": 1793951748,
+      "points": 157,
+      "depth": [
+        {
+          "text": "someone made a **multiplayer tank game** where you **knock down buildings** in real cities",
+          "tier": "simple"
+        },
+        {
+          "text": "The world is built on **OpenStreetMap**, and knocked-over buildings **stay down for everyone**. One player said driving was laggy, with ping reaching **5000ms**.",
+          "tier": "substance",
+          "data": [
+            [
+              "reported ping",
+              "5000ms"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some felt uneasy about demolishing real buildings because it reminded them of real destruction; others said it was just a game or found it entertaining.",
+      "comment_count": 110,
+      "terms": [
+        "OpenStreetMap",
+        "ping",
+        "respawn timer"
+      ],
+      "entities": [
+        "OpenStreetMap",
+        "Nayckron",
+        "qubodup",
+        "Railway",
+        "Pokemon Go",
+        "worldstrike.fun"
+      ],
+      "comments": [
+        {
+          "by": "croniev",
+          "text": "Just me or is this a bit cynical? Don't get me wrong, I'm sure the gameplay is fun and everything. Just the concept makes me really uneasy, especially as I have a friend who's house was destroyed recently in war..."
+        },
+        {
+          "by": "erelong",
+          "text": "Top comment is kind of skeptical of this kind of game idea, so let me go in a different direction (I'm not necessarily bothered by the game concept): what other kinds of games could we create using OpenStreetMap? Could the game have a \"rebuilder\" role for people to rebuild destroyed areas? Could you do like a \"Pokemon Go\" and search for hidden treasure in different areas? Could you just \"mark\"…"
+        },
+        {
+          "by": "BonesJustice",
+          "text": "This would be so much more fun if the buildings actually looked vaguely like their real-world counterparts. The grand Victorians on my street look like nondescript office buildings. But I assume that’s a limitation of the map provider."
+        },
+        {
+          "by": "heggy",
+          "text": "Fun idea but horribly laggy. Just driving down a street and I would get bounced back constantly and make very little progress. Ping was showing up as much as 5000ms"
+        },
+        {
+          "by": "vfosnar",
+          "text": "as an active osm contributor and community member and io games enjoyer i love this. if the author is readin this by any chance pretty please improve the attribution placement, projects like this are whats bringin interested people in to help us build a better open map for everyone <3"
+        }
+      ],
+      "image": "https://worldstrike.fun/og.jpg"
+    },
+    {
+      "id": 50371508,
+      "url": "https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now/",
+      "hn": "https://news.ycombinator.com/item?id=50371508",
+      "title": "Everything is an AI scam now",
+      "time": 1793826319,
+      "points": 152,
+      "depth": [
+        {
+          "text": "someone says **scam ads** and **tailored spam** are spreading while platforms barely check them",
+          "tier": "simple"
+        },
+        {
+          "text": "One pitch promises an **air con unit the size of a book** that can cool any room in 90 seconds. A book-promotion email **reuses phrases from the author's book description**; he says it's **phishing** for information or money.",
+          "tier": "substance",
+          "data": [
+            [
+              "advertised cooling time",
+              "90 seconds"
+            ]
+          ]
+        }
+      ],
+      "camps": "Some commenters want ad platforms held responsible or regulated; others say ad blockers help and that scams long predate AI.",
+      "comment_count": 62,
+      "terms": [
+        "phishing",
+        "ad blocker",
+        "blackout poetry",
+        "KYC"
+      ],
+      "entities": [
+        "David Ralph Lewis",
+        "YouTube",
+        "chatGPT",
+        "Our Voices in the Chaos",
+        "Google",
+        "NYTimes",
+        "Brave",
+        "Safari",
+        "TikTok",
+        "Elizabeth Holmes"
+      ],
+      "comments": [
+        {
+          "by": "dpkirchner",
+          "text": "> I'm not sure what we can do about this. I think the easiest thing to do would be to pass a law or regulation requiring companies to be responsible for the ads shown on their sites. If, say, the NYTimes is promoting scams (they are) they should be fined or worse."
+        },
+        {
+          "by": "beloch",
+          "text": "I use an adblocker and simply don't see the overwhelming majority of these fraudulent ads. (You should too!) I've installed ad blockers for anyone in my family who might be vulnerable to these scams. (You should too!) I won't consider changing this recommendation until Google and other ad servers start caring enough to filter out scam ads. However, I still get a lot of fraudulent phone calls and…"
+        },
+        {
+          "by": "smallmancontrov",
+          "text": "Introducing the term \"chum bucket\" to my father, who fished and had a visceral appreciation for the analogy, instilled in him the understanding and self-control to not click the chum bucket. Kudos to whoever came up with the term. I don't think it will be so easy this time around. We probably need to shift liability to the parties able to do something about it (advertising platforms)."
+        },
+        {
+          "by": "nphardon",
+          "text": "Its crazy to me that people even use their browsers without ad blocking. I wanted to limit my screen time a while back and realized that it was the browser that was the problem, so I ditched my heavily content filtered ad blocking brave and pivoted to safari with no ad blocking, my screen time went from 2 hrs / day to 20 minutes / day."
+        },
+        {
+          "by": "tumdum_",
+          "text": "It’s all true but at the same time I don’t see any such ads on the TV. Maybe we already have laws and institutions that solve this exact problem and we need to apply them to social/ad networks?"
+        }
+      ],
+      "image": null
+    },
+    {
       "id": 50385272,
       "url": "https://github.com/anthropics/claude-code/issues/107757",
       "hn": "https://news.ycombinator.com/item?id=50385272",
@@ -1014,12 +2063,73 @@
     }
   ],
   "glossary": {
+    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "runtime": "The software that runs a program while it is being used.",
+    "binding": "A connector that lets one programming language use code written for another.",
+    "widget": "A piece of an app's interface, such as a text field or a list row.",
+    "Google Play Integrity": "A Google service that gives apps signed signals about whether the app and device meet security checks.",
+    "hardware key attestation": "A way for an app to get signed proof that a key was created and kept inside protected phone hardware.",
+    "gigafactory": "A very large factory for making products at scale.",
+    "robotaxi": "A taxi service using vehicles designed to drive themselves.",
+    "self-certified": "When a maker checks and declares that its product meets required safety rules.",
+    "EV": "Electric vehicle: a car that runs on electricity instead of petrol or diesel.",
+    "RSUs": "Restricted Stock Units: shares an employer promises to give an employee, often after they stay for a set time.",
+    "OTE": "On-Target Earnings: the pay someone could get if they meet the goals tied to a bonus.",
+    "total comp": "All parts of someone's pay added together, not just their base salary.",
+    "autonomous": "Able to drive itself without a person controlling it.",
+    "recall": "How many of the truly nearest matches a search actually returns.",
+    "cybersecurity": "Steps for keeping computers, accounts and business information safe from attacks.",
+    "Capture The Flags (CTFs)": "Capture The Flags: challenges where people practise hacking by finding hidden codes.",
+    "wargames": "Hacking practice challenges you can work through at your own pace.",
+    "open source": "Software whose code is shared so other people can inspect, run, or change it.",
+    "peer production": "People working together to make something, without one central organization directing every contribution.",
+    "FOSS": "Free and Open Source Software: apps whose code people can inspect, share, and change.",
+    "crowd-sourcing": "Getting a large group of people to contribute work, information, or ideas to a project.",
+    "decentralization": "Organizing something without one central group controlling every part.",
+    "immersive sim": "A game that gives you a world to explore and lets you solve problems in different ways.",
+    "diegesis": "The idea that you only get information your character could see or know.",
+    "emergent gameplay": "Things that happen when a game's rules interact in ways its designers may not have planned.",
+    "multi-turn conversational editing": "Making changes by asking for one revision after another, instead of starting the clip over.",
+    "reference adherence": "How well a generated video sticks to images or other examples you give it.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "720p": "A video picture size; the bigger the number, the more detail it can show.",
+    "geodata": "Information about real places, like their height, water, roads and forests.",
+    "projections": "Ways to draw a round world on a flat map, which change how places appear.",
+    "tile server": "A service that sends map pieces for the area you're looking at.",
+    "cache": "A place a program keeps data so it can reuse it instead of doing the work again.",
+    "emulator": "A program that imitates another service so you can try your software without using the real one.",
+    "Rust": "A programming language; commenters say 37signals used it for the Hey backend.",
+    "RAM": "Random-Access Memory: a computer's working space for information it is using right now.",
+    "drop-in replacement": "A new tool designed to take an old one’s place without users changing how they use it.",
+    "R&D": "Research and development: work to create or improve things.",
+    "SOTA": "State of the art: the best currently achieved in a field.",
+    "architecture": "The plan for how the parts of a program fit together.",
+    "hill-climbing": "A way to improve something by trying small changes and keeping the ones that work.",
+    "harness": "The surrounding code that gives an AI agent tools and a place to work, and checks what it does.",
+    "CFR": "Counterfactual Regret Minimization: a way to work out good choices in games by comparing possible decisions.",
+    "MCTS": "Monte Carlo Tree Search: a way to choose a game move by trying out possible future moves many times.",
+    "self-play": "When an AI improves by playing a game against copies of itself.",
+    "market cap": "The total market value of a company’s shares.",
+    "marginal share price": "The price set by a small amount of buying and selling; it doesn't mean a huge pile of shares could all be sold at that price.",
+    "S&P 500": "A group of 500 large US companies whose share prices are tracked together.",
+    "YTD": "Year to date: the change from the start of the current year up to now.",
+    "CAGR": "Compound annual growth rate: a way to express how much something grew per year on average over a stretch of time.",
+    "capex": "Capital expenditure: money spent up front on equipment or building something.",
+    "IPO": "Initial Public Offering: when a company first offers its shares for the public to buy.",
+    "DRAM": "Dynamic Random-Access Memory: the working memory a computer uses while running things.",
+    "bear territory": "A market downturn, often used when prices have fallen sharply from a recent high.",
+    "TQQQ": "A fund tied to Nasdaq's daily moves that can magnify both gains and losses.",
+    "OpenStreetMap": "A shared map that people can edit with details about roads and other places.",
+    "ping": "A measure of how long it takes for your game to get a response; a higher number means more delay.",
+    "respawn timer": "The wait before your tank can return after being knocked out.",
+    "phishing": "A scam that tricks someone into entering login details on a fake site.",
+    "ad blocker": "A tool that hides ads while you browse the web.",
+    "blackout poetry": "Poetry made by hiding some words on a page and using the words left visible to make a poem.",
+    "KYC": "Know Your Customer: checks a company uses to verify who a customer is.",
     "User-Agent": "A label sent with a web request that tells the site what program is making it.",
     "curl": "A tool you can use from a terminal to send requests to websites.",
     "sandbox": "A separate, contained space where software can be tested without affecting the rest of a computer or system.",
-    "harness": "The surrounding code that gives an AI agent tools and a place to work, and checks what it does.",
     "DNS": "Domain Name System: the internet's address book, which helps a computer find a website from its name.",
-    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
     "search index": "A catalog of web pages a search engine can look through to find results.",
     "410 Gone": "A website's message that a page has been permanently removed.",
     "CPM": "Cost per mille: what advertisers pay for each thousand times an ad is shown.",
