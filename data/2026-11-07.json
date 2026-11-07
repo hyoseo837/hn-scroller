@@ -1,0 +1,1021 @@
+{
+  "date": "2026-11-07",
+  "cards": [
+    {
+      "id": 50399933,
+      "url": "https://mitchellh.com/writing/libghostty-1-0",
+      "hn": "https://news.ycombinator.com/item?id=50399933",
+      "title": "Libghostty 1.0",
+      "time": 1794007852,
+      "points": 457,
+      "depth": [
+        {
+          "text": "someone made a **terminal library** stable so other apps can build terminals without writing their own",
+          "tier": "simple"
+        },
+        {
+          "text": "The **C API and ABI** are now stable, and the release adds build tools, tarballs, and documentation for distributions. JetBrains reports over **12.5 million active users** of its IDE terminals powered by libghostty.",
+          "tier": "substance",
+          "data": [
+            [
+              "active users",
+              "12.5 million"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 73,
+      "terms": [
+        "ABI",
+        "API",
+        "opaque handle",
+        "TUI"
+      ],
+      "entities": [
+        "libghostty-vt",
+        "libghostty",
+        "Ghostty",
+        "JetBrains",
+        "IntelliJ",
+        "PyCharm",
+        "GoLand",
+        "Neovim",
+        "Vercel",
+        "Turborepo",
+        "devenv",
+        "Antithesis",
+        "btop",
+        "Ghostel",
+        "Xterm.js",
+        "OrbStack",
+        "cmux",
+        "Mitchell Hashimoto",
+        "Zig",
+        "Rust",
+        "Go",
+        "JavaScript",
+        "Swift",
+        "Python",
+        ".NET",
+        "Elixir",
+        "Dart",
+        "Java"
+      ],
+      "comments": [
+        {
+          "by": "jdorfman",
+          "text": "> “And a whole wave of new terminals and \"agentic\" coding tools, such as herdr and cmux, have been built on it rather than writing yet another emulator.” Mitchell could have easily snuck his competing product Rex in there but resisted. Respect."
+        },
+        {
+          "by": "JuniperMesos",
+          "text": "Libghostty is a very cool project, this is an exciting release, kudos to mitchellh for spearheading this as well as all the people who have made contributions to the project. I use ghostty as my primary terminal emulator today and a few months ago I was experimenting with using libghostty in an android project that I plan to jump back to someday when I have the time, so I personally benefit from…"
+        },
+        {
+          "by": "smj-edison",
+          "text": "I'm currently working on my own Zig project (an interpreter) and right now I'm working on designing a C interface for it. Seeing things mentioned like having objects as opaque handles, or enum-keyed getters and setters, made me think about how clunky my current API is, since I leak too many details to callers. What really caught my attention was this: \"So from the start, I took inspiration from C…"
+        },
+        {
+          "by": "spudlyo",
+          "text": "One area where Ghostty really shines is with fancy TUI programs like the pi agent. Pi has a relatively recent tuiMode \"fullscreen\" feature, and it's been exceptional. Showing inline images with the Kitty graphics protocol has been a huge improvement too -- I love it when a model calls `read` on an image file and I get to see the results in my terminal. The OSC-8 hyperlink support very handy too…"
+        },
+        {
+          "by": "ximm",
+          "text": "> Every bug any libghostty-vt embedder reports makes everyone else in the ecosystem better. Every feature we ship in libghostty-vt becomes available to everyone quickly and safely. Terminals can move faster with less fragmentation. Can anyone give a comparison to libvte? There are many terminals that are just thin wrapper around that (gnome-terminal, xfce4-terminal, mate-terminal, lxterminal…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50397429,
+      "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
+      "hn": "https://news.ycombinator.com/item?id=50397429",
+      "title": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
+      "time": 1793994531,
+      "points": 415,
+      "depth": [
+        {
+          "text": "someone used a **cheap model** to send **uncertain identity matches** to a **stronger model** for review",
+          "tier": "simple"
+        },
+        {
+          "text": "Hightouch tested the setup on **simulated identity records**. On the easier test, **hybrid Jev** scored 98.8% versus **Claude Opus 5.5** alone at 99.0%, costing $0.88 rather than $3.86 per 1,000 identities. On the harder test, it scored 95.3% versus 95.1%, at $2.94 versus $5.39 per 1,000.",
+          "tier": "substance",
+          "data": [
+            [
+              "Easier test, hybrid Jev accuracy",
+              "98.8%"
+            ],
+            [
+              "Easier test, Claude Opus 5.5 accuracy",
+              "99.0%"
+            ],
+            [
+              "Easier test, hybrid Jev cost per 1,000",
+              "$0.88"
+            ],
+            [
+              "Easier test, Claude Opus 5.5 cost per 1,000",
+              "$3.86"
+            ],
+            [
+              "Harder test, hybrid Jev accuracy",
+              "95.3%"
+            ],
+            [
+              "Harder test, Claude Opus 5.5 accuracy",
+              "95.1%"
+            ],
+            [
+              "Harder test, hybrid Jev cost per 1,000",
+              "$2.94"
+            ],
+            [
+              "Harder test, Claude Opus 5.5 cost per 1,000",
+              "$5.39"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: Hightouch says Jev’s confidence is better calibrated and helps the hybrid approach; a commenter says the graphs don’t prove that and estimates Luna may be better calibrated.",
+      "comment_count": 95,
+      "terms": [
+        "identity resolution",
+        "over-merging",
+        "confidence calibration",
+        "decision model",
+        "hybrid model"
+      ],
+      "entities": [
+        "Hightouch",
+        "Jev",
+        "Claude Opus 5.5",
+        "GPT-6 Luna",
+        "GPT-6 Sol",
+        "Gemini 3.1 Pro",
+        "pseudopeople",
+        "Institute for Health Metrics and Evaluation",
+        "Albert Jin",
+        "Neil Desai",
+        "Delaney Mackenzie"
+      ],
+      "comments": [
+        {
+          "by": "xlayn",
+          "text": "If you use Qwen3.8 27B to manage, to orchestrate, do do shallow research, and then make it ask claude you will notice that Qwen can get out of Haiku, Sonnet and Opus almost as good answers... I was researching how good the model asnswers where, I can't get to work with anything but Fable, but Qwen can get good work from any of them.\nMy theory is that if you make Qwen understand you, Qwen can…"
+        },
+        {
+          "by": "netshade",
+          "text": "Found similar results, but the economics of the models involved have changed so quickly that it becomes so task specific on what the right thing to do was. With an assemblage of models like Jev + Opus or Jev + Qwen, Jev would often do the right thing when deciding to escalate to another model - I was impressed that it would usually make the right call, especially if you gave it good awareness of…"
+        },
+        {
+          "by": "nico",
+          "text": "This is very cool. But also, it’s a benchmark/result for a very specific experiment/task: identity resolution Despite the title, the article is not making claims of, or demonstrating general usage improvements or general coding agent improvements"
+        },
+        {
+          "by": "moezd",
+          "text": "Seeing the title made me think: Jev used to be quite popular. Is anyone else still using it heavily these days?"
+        },
+        {
+          "by": "Fordec",
+          "text": "This sort of stuff has me believing that decision model controlled/prioritized context is the future of context management beyond the raw AGENTS.md file. Why give all the context to an agent, when the context can also be curated, updated and made concise automatically for each new problem."
+        }
+      ],
+      "image": "https://cdn.sanity.io/images/pwmfmi47/production/9a5d7191d614c824c822ec90672adaf424699d3d-2400x1256.png?w=1200"
+    },
+    {
+      "id": 50388001,
+      "url": "https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05/",
+      "hn": "https://news.ycombinator.com/item?id=50388001",
+      "title": "US FAA says it will phase out floppy disks from air traffic control by 2028",
+      "time": 1793937628,
+      "points": 312,
+      "depth": [
+        {
+          "text": "the FAA says it will phase out **floppy disks** used in **air traffic control**",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: some say the FAA's safety process has blocked reasonable progress; others call the political grandstanding gross or say, “If it aint broke don't fix it.”",
+      "comment_count": 256,
+      "terms": [
+        "air-gapped",
+        "MS-DOS"
+      ],
+      "entities": [
+        "FAA",
+        "E-IDS",
+        "IDS-4",
+        "MS-DOS"
+      ],
+      "comments": [
+        {
+          "by": "bargl",
+          "text": "I worked on modernization in the FAA specifically around digitizing NOTAMs. I would urge you not to consider this modernization from the perspective you may be familiar, as someone who may work on the bleeding edge and sometimes sees a lack of caution from engineers pushing for change. The FAAs safety risk management is built around a rigorous process, but that is also a massive slowdown to…"
+        },
+        {
+          "by": "jonhohle",
+          "text": "More information needed. Was this a sneakernet? No one thought of replacing with a floppy emulator and SD cards? All of the data can fit into 1.44MB? If the last one is true, devs take note. If FAA can rely on slow, small storage for safety critical applications, you probably can reduce the resource requirements for your app and improve your customers’ experience and extend the life of their…"
+        },
+        {
+          "by": "driverdan",
+          "text": "The politically grandstanding is gross. From what I can tell E-IDS has been in development since at least 2020 with a planned rollout starting in 2025. Unfortunately web search has gotten so bad that it's hard to find past information about it."
+        },
+        {
+          "by": "skissane",
+          "text": "FAA website on EIDS: https://www.faa.gov/air_traffic/technology/eids Another article with some more details: https://www.pcmag.com/news/the-faa-is-still-using-floppy-dis... I know they are saying IDS-4 is a \"1980s\" system, but it appears IDS-4 was actually developed in the early 1990s; it uses MS-DOS and 3.5 inch floppies: https://sysatl.com/systems-atlanta-inc-awarded-faa-ids4-sust..."
+        },
+        {
+          "by": "alex_suzuki",
+          "text": "> replacing outdated floppy disks that contain vital weather and other critical information with a streamlined, 21st-century system What does this even… mean?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50394906,
+      "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+      "hn": "https://news.ycombinator.com/item?id=50394906",
+      "title": "Anthropic IPO buyers see valuation as low as $1.1T",
+      "time": 1793984076,
+      "points": 266,
+      "depth": [
+        {
+          "text": "Anthropic IPO buyers see **$1.1T** as **low**, while commenters debate whether that valuation makes sense",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: some say $1.3T fits after a corporate-structure discount; others think calling $1.1T “low” shows valuations are out of whack.",
+      "comment_count": 530,
+      "terms": [
+        "IPO",
+        "S-1",
+        "lockup schedule",
+        "Dutch auction",
+        "LPs",
+        "inference",
+        "commoditized"
+      ],
+      "entities": [
+        "Anthropic",
+        "Qwen3.8-Flash-Next",
+        "Strix Halo",
+        "Claude Pro",
+        "Claude Code",
+        "Opus 5.5",
+        "OpenAI",
+        "Google",
+        "Amazon",
+        "Microsoft",
+        "Apple",
+        "Meta",
+        "Berkshire Hathaway",
+        "Eli Lilly",
+        "Tesla",
+        "Walmart",
+        "Spotify",
+        "Damodaran"
+      ],
+      "comments": [
+        {
+          "by": "UncleOxidant",
+          "text": "Sure, this is a small anecdotal datapoint, but since I've gotten Qwen3.8-Flash-Next running well on my Strix Halo box my Claude Pro subscription use has dropped off a cliff. I'm only at 18% of quota usage this week - this being Friday I would've been at 80% at least in the past. This is just an astonishingly good model that runs locally and quite well on my PC. I do not plan to renew my Claude…"
+        },
+        {
+          "by": "soundworlds",
+          "text": "I've been using the $32/month (AUD) subscription, but finally dipped into extra credits to get a task over the line yesterday after I hit my 5-hr limit. And my god, $15 of extra credits ended up giving me only 30 minutes of Claude Code before running out. The subscription prices can not be financially sustainable. There is no way that is remotely close to the actual cost of running."
+        },
+        {
+          "by": "int32_64",
+          "text": "Looking at the S-1 lockup schedule the IPO seems doomed. They need to bring in a ton of investment, and you will have massive unlocks right as the next congress is most active authoring anti-AI bills. Who's going to buy this?"
+        },
+        {
+          "by": "lnkdinsuxs",
+          "text": "I'm not convinced that 2026 was peak of the AI hype cycle. Arguments are being made that, with the midterms over and 2028 just around the corner, a less sympathetic administration would create significant headwinds, adjusting the valuation of Anthropic and OpenAI down. What we don't know are what Anthropic and OpenAI have planned and in the works. A large population of extremely skilled and…"
+        },
+        {
+          "by": "wewewedxfgdf",
+          "text": "Can someone help me understand - I have tried local AI/LLMs. Lets set aside speed. The results are ALWAYS terrible compared to CLaude Code. Sure I only have a 12GB GPU - is that what it is? If I had a 32GB CPU would the experience be as amazing as Claude Code is? Why is my experience of local LLMs so average?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50397994,
+      "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+      "hn": "https://news.ycombinator.com/item?id=50397994",
+      "title": "AI is dramatically accelerating AI research",
+      "time": 1793996843,
+      "points": 257,
+      "depth": [
+        {
+          "text": "someone says AI is **speeding up Anthropic's research** and could make progress **compound even faster**",
+          "tier": "simple"
+        },
+        {
+          "text": "A public METR report found Anthropic's capabilities progress went **about twice as fast** from October 2025 to October 2026, and staff self-reported a **~12x uplift** from internal models. Most of the report's most informative evidence was **redacted**; the writer says smooth compounding could imply extreme superintelligence within a year, but calls it a **naive extrapolation**.",
+          "tier": "substance",
+          "data": [
+            [
+              "reported capability progress",
+              "about twice as fast"
+            ],
+            [
+              "staff-reported internal-model uplift",
+              "~12x"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: the author warns compounding could bring extreme superintelligence and severe risks; skeptical commenters say faster AI research doesn't establish that, pointing to benchmark limits, compute bottlenecks, physical testing, and human choices.",
+      "comment_count": 209,
+      "terms": [
+        "capabilities progress",
+        "compute multiplier",
+        "benchmark",
+        "model weights",
+        "alignment",
+        "compounding acceleration"
+      ],
+      "entities": [
+        "Anthropic",
+        "METR",
+        "AECI",
+        "Epoch Capabilities Index",
+        "OpenAI",
+        "AI 2027",
+        "Hugging Face",
+        "RAND",
+        "ASL-4",
+        "Ryan Greenblatt",
+        "Daniel Kokotajlo",
+        "Eli Lifland",
+        "Hjalmar Wjik",
+        "Dario Amodei",
+        "Evan Hubinger",
+        "Karpathy",
+        "Scion"
+      ],
+      "comments": [
+        {
+          "by": "plaidfuji",
+          "text": "As somebody who does ML research, LLMs certainly make ML research faster. Maybe even 10x in some cases, as the author suggests. But that’s just the parts of ML research that take place within your compute environment, namely experiments on model architecture, training strategy, UI/UX, etc. The algorithms and software. Just because that part of research is progressively accelerated does not imply…"
+        },
+        {
+          "by": "chr15m",
+          "text": "Every dot in these graphs is composed of multiple benchmarks smooshed together. Benchmarks are by definition a curated set of things that can be measured and evaluated. Things that can be measured and evaluated can be (expensively) trained on. The progress we are observing comes from figuring out how to measure and evaluate particular aspects of intelligence, and then expensively training on…"
+        },
+        {
+          "by": "nsilvestri",
+          "text": "AI is accelerating my work...work which only exists because of AI. If I had to do my individual tasks without AI, I would be slower. But if I take a step back, I'm really not changing the world any faster than I was before."
+        },
+        {
+          "by": "cronin101",
+          "text": "Not trying to discredit the premise but I do wonder how much this is from vertical scaling of model intelligence in weights vs the sheer amount of capital being thrown at training and horizontal scaling of agent swarms etc. Anecdotally it seems like the majority of continued uplift comes from models doing more and exploring more of the search space, and we are getting better at giving them…"
+        },
+        {
+          "by": "deepsquirrelnet",
+          "text": "For a much more thorough, alternate take I found this article better: https://open.substack.com/pub/rameznaam/p/ai-rsi-isnt-leadin..."
+        }
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!u_X_!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdd74ff70-df26-4e1a-be31-4fc3543bada8_2048x1072.png"
+    },
+    {
+      "id": 50394855,
+      "url": "https://kevinboone.me/efitest_index.html",
+      "hn": "https://news.ycombinator.com/item?id=50394855",
+      "title": "First steps in bare-metal programming using UEFI",
+      "time": 1793983829,
+      "points": 211,
+      "depth": [
+        {
+          "text": "someone wrote a **step-by-step guide** to building **bare-metal programs** for UEFI PCs from Linux",
+          "tier": "simple"
+        },
+        {
+          "text": "The series is written for **experienced Linux developers** but assumes **no prior UEFI knowledge**; it covers compiling and linking, creating a bootable disk, and basic file management. The author says to **read the articles in order** because each relies on earlier ones.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 40,
+      "terms": [
+        "bare-metal programming",
+        "UEFI",
+        "linking",
+        "EFI system partition",
+        "external symbols",
+        "bootloader"
+      ],
+      "entities": [
+        "UEFI",
+        "Linux",
+        "EDK2",
+        "edk2-libc",
+        "GNU-EFI",
+        "GCC",
+        "NetBSD",
+        "FreeBSD",
+        "GRUB",
+        "Multiboot2",
+        "Zig",
+        "C#",
+        "QEMU",
+        "LLVM",
+        "Clang",
+        "Claude",
+        "Intel Boot Initiative",
+        "Windows"
+      ],
+      "comments": [
+        {
+          "by": "the_panopticon",
+          "text": "For \"Get used to the lack of a C standard library\" mentioned in https://kevinboone.me/efitest4.html there's always https://github.com/tianocore/edk2-libc . And on \"Be aware of the Windows-ness of EFI\" commentary the resemblance to Windows coding style https://computernewb.com/~lily/files/Documents/NTDesignWorkb... is no accident. We leveraged this coding methodology as we evolved the original…"
+        },
+        {
+          "by": "kevin_thibedeau",
+          "text": "> The linker won’t complain if your code calls functions that don’t exist – it will just mark them as external, expecting them to be provided by some other code. But they won’t be, and the program will just crash when it calls one of these missing functions. You can verify no external symbols remain after linkage with: nm -D --undefined-only. This can be incorporated into a build script to verify…"
+        },
+        {
+          "by": "akoboldfrying",
+          "text": "I enjoyed this informative series (I skipped only the article on setting up on a DVD or USB flash drive). The tone is enjoyable too: that of a developer who has spent time working through many difficult corners and wants to share useful tips based on their experience, but makes no claims to omniscience. Needless to say, this is a refreshing change of pace from the AI-\"enhanced\" fare that's so…"
+        },
+        {
+          "by": "JdeBP",
+          "text": "Rod Smith and the OSDev Wiki went here, sometimes word for word, years before: * https://rodsbooks.com/efi-programming/ * https://wiki.osdev.org/GNU-EFI Of course, they both assume GCC on Linux. Change either one of those, and it is a wholly different kettle of fish. Both NetBSD and FreeBSD, for examples, come with an EFI development environment in base, squirreled away in /usr/src/boot in the…"
+        },
+        {
+          "by": "hocusPokeUs",
+          "text": "Other cool uefi programming resources: Irc client in uefi: https://github.com/codyd51/uefirc UEFI library the irc client relies on: https://github.com/rust-osdev/uefi-rs No more separate GRUB/boot loader code paths needed; boot Linux from UEFI by loading a kernel: https://pretalx.com/devconf-cz-2024/talk/W3AVCT/ Have noodled around with a side-project generating an entire system from boot loader…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50397219,
+      "url": "https://pwn.ai/blog/firecracker-escape",
+      "hn": "https://news.ycombinator.com/item?id=50397219",
+      "title": "Firecracker VM Escape: PwnEscape Part 2",
+      "time": 1793993618,
+      "points": 207,
+      "depth": [
+        {
+          "text": "someone broke out of a **Firecracker virtual machine** and made its host run code as **root**",
+          "tier": "simple"
+        },
+        {
+          "text": "They traced a **guest memory page** back to the host process, then changed the live vCPU thread’s **saved registers** so Firecracker called its write wrapper when it returned from KVM. A **serial-port write** triggered the call; this test had no jailer, while production containment can drop privileges and restrict Firecracker through namespaces and seccomp.",
+          "tier": "substance",
+          "data": [
+            [
+              "Firecracker version",
+              "v1.16.1"
+            ],
+            [
+              "Host kernel",
+              "7.0.0-1011-aws"
+            ],
+            [
+              "Guest kernel",
+              "6.18.44+"
+            ],
+            [
+              "Marker output",
+              "8 bytes"
+            ],
+            [
+              "Host process PID",
+              "2936"
+            ],
+            [
+              "Guest uptime",
+              "1615.72 seconds"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: one commenter says the write-up is informative; another calls it “pure LLM slop.”",
+      "comment_count": 104,
+      "terms": [
+        "microVM",
+        "vCPU",
+        "KVM",
+        "EPT",
+        "pt_regs",
+        "ASLR",
+        "jailer",
+        "namespaces",
+        "seccomp",
+        "root",
+        "RCE"
+      ],
+      "entities": [
+        "Firecracker",
+        "PWN Research",
+        "Paulos Yibelo",
+        "Linux",
+        "KVM",
+        "AWS",
+        "Nova Microhypervisor",
+        "Firehyve",
+        "illumos",
+        "FreeBSD",
+        "TritonDataCenter",
+        "rshyve",
+        "gvisor",
+        "Replit",
+        "ClickBench",
+        "ClickHouse",
+        "Pandas",
+        "systemd-run",
+        "taskset"
+      ],
+      "comments": [
+        {
+          "by": "scoodah",
+          "text": "I really wish they would have expanded on this paragraph in their article further: > The configuration used here had no jailer. Firecracker's production containment includes dropping privileges and restricting the process through namespaces and seccomp. A deployment using those controls requires a separate assessment of the privileges and resources available after compromising its VMM. If I'm…"
+        },
+        {
+          "by": "lrvick",
+          "text": "I am more convinced by the day that the Nova Microhypervisor approach is correct. Do virtualization with a tiny formally verified microkernel and have complex kernels like Linux run underneath instead of letting a huge, complex, and brittle linux kernel and vm ecosystem control the hypervisor layer. https://hypervisor.org/"
+        },
+        {
+          "by": "zX41ZdbW",
+          "text": "I have a demo service that entirely relies on Firecracker VMs: ClickBench playground, https://benchmark.clickhouse.com/playground/ It hosts hundreds of database engines - many of them have vulnerabilities, and some of them, like Pandas, are basically open RCEs regardless. We can PoC the Firecracker VM Escape on that service."
+        },
+        {
+          "by": "markasoftware",
+          "text": "This is not a new vulnerability, it's just a description of how to exploit the PwnEscape vulnerability in practice on firecracker VMs (disclosed multiple weeks ago and discussed in some less upvoted posts on HN)"
+        },
+        {
+          "by": "denysvitali",
+          "text": "Dupe: https://news.ycombinator.com/item?id=50381397 (Doesn't HN usually deduplicate links? I'm confused)"
+        }
+      ],
+      "image": "https://api.pwn.ai/api/blog/images/photo-2026-11-04-22-55-56-b01dcd719e0c.jpeg"
+    },
+    {
+      "id": 50393105,
+      "url": null,
+      "hn": "https://news.ycombinator.com/item?id=50393105",
+      "title": "Ask HN: What in the world is taking Ubuntu so long?",
+      "time": 1793977113,
+      "points": 195,
+      "depth": [
+        {
+          "text": "someone is asking why **Ubuntu's security fix** is **taking so long**",
+          "tier": "simple"
+        },
+        {
+          "text": "The post says CVE-2026-98432 is marked **9.8** and still **“work in progress.”** A commenter says fixes were in **“proposed”** since October 26 (noble) and 28 (resolute), then were in “updates” when they checked that morning; kernels go through QA.",
+          "tier": "substance",
+          "data": [
+            [
+              "CVE rating",
+              "9.8"
+            ]
+          ]
+        }
+      ],
+      "camps": "Some commenters call Canonical hopelessly mismanaged; others note the fixes were already in “proposed” and say kernels go through QA.",
+      "comment_count": 124,
+      "terms": [
+        "CVE",
+        "proposed repo",
+        "QA",
+        "kernel",
+        "LTS",
+        "mitigation"
+      ],
+      "entities": [
+        "Ubuntu",
+        "CVE-2026-98432",
+        "Canonical",
+        "Debian",
+        "Linux",
+        "Rails",
+        "EC2",
+        "Wazuh"
+      ],
+      "comments": [
+        {
+          "by": "throw0101c",
+          "text": "As outlined in this weblog post: * https://ubuntu.com/blog/fixes-available-in-proposed-pocket-f... The fixes were in the \"proposed\" repo since October 26 (noble) and 28 (resolute): * https://launchpad.net/ubuntu/+source/linux One could pull them down at any point in the last week. Yesterday afternoon they were still in \"proposed\", but I checked this morning (EST/UTC-5) and they there were in…"
+        },
+        {
+          "by": "imjonse",
+          "text": "Has there been a documented exploit of this CVE on Ubuntu or on the other distros before they were patched?"
+        },
+        {
+          "by": "atestu",
+          "text": "Seems like a good time to ask: what do people use, if not ubuntu, on a web server? Like for example for a rails app, on EC2... asking for a friend (who is me)."
+        },
+        {
+          "by": "marcosdumay",
+          "text": "You were wrong to have confidence in Ubuntu before this, you are doubly wrong for it to still be \"shaking your confidence\". You are expecting some quality that was never there. Visibly so."
+        },
+        {
+          "by": "adsfasf",
+          "text": "Aren't the patches out since a day?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50390525,
+      "url": "https://jhr.pensoft.net/articles.php?id=9096",
+      "hn": "https://news.ycombinator.com/item?id=50390525",
+      "title": "Living beyond the limits of survival: wood ants trapped in a gigantic pitfall (2016)",
+      "time": 1793960475,
+      "points": 169,
+      "depth": [
+        {
+          "text": "wood ants fell through a ventilation pipe into a **bunker** and couldn’t find their way back to the **mother nest**",
+          "tier": "simple"
+        },
+        {
+          "text": "The quoted paper says they fell from a large outdoor nest through a **ventilation pipe**, and that the trapped group produced **no offspring** because temperatures were low and food was scant. One commenter asks whether a **missing queen** explains it instead.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 53,
+      "terms": [
+        "chiropterologists"
+      ],
+      "entities": [
+        "Formica polyctena"
+      ],
+      "comments": [
+        {
+          "by": "wowczarek",
+          "text": "Well I'll be. At least two of the authors are also avid chiropterologists, with an understood penchant for bunkers and other such spaces. One summer in my late teens I sat with two of them in an urban park in NW Poland drinking beer, watching bats getting caught in a net half-submerged in water near a bridge and engaging in impromptu comedy with passers-by asking questions like \"good catch? any…"
+        },
+        {
+          "by": "alexey-salmin",
+          "text": "> The ‘colony’ has evidently produced no offspring, which is due to low (though relatively stable) temperatures and scanty food in the bunker. Isn't it due to the lack of the queen? Colony of worker ants is a dead end"
+        },
+        {
+          "by": "ilamont",
+          "text": "The amount of potential food in the bunker, suitable for wood ants, is not known, but the smaller arthropods living there could hardly be enough to allow the workers both temperature regulation of the mound and feeding of offspring. Is cannibalism a possibility?"
+        },
+        {
+          "by": "gwbas1c",
+          "text": "This article keeps coming to the front page every few years; and every few years I keep opening it to look at the pictures. It's just that fascinating!"
+        },
+        {
+          "by": "heikkilevanto",
+          "text": "I wish the scientists had left a plank or a string leading to the ventilation hole, so the ants could get out, at least to forage for more food. But then again, it would have spoiled this \"natural\" experiment."
+        }
+      ],
+      "image": "https://jhr.pensoft.net/showimg/d200x_100890.jpg"
+    },
+    {
+      "id": 50399657,
+      "url": "https://www.pv-magazine.com/2026/11/06/sodium-ion-batteries-approach-cost-parity-with-lfp-with-70-gwh-covered-by-supply-agreements/",
+      "hn": "https://news.ycombinator.com/item?id=50399657",
+      "title": "Sodium-ion batteries approach cost parity with LFP",
+      "time": 1794006046,
+      "points": 163,
+      "depth": [
+        {
+          "text": "**sodium-ion batteries** are nearing **cell-cost parity with LFP** and could mean **lower lifetime costs**",
+          "tier": "simple"
+        },
+        {
+          "text": "Wood Mackenzie says supply agreements already top **70 GWh**. Manufacturers could reach cell-level cost parity by late 2026, while module and system parity may wait until after 2030. It estimates **21% lower total cost of ownership** over 20 years, though the global average sodium-ion battery cost is $229/kWh, versus approximately $200/kWh for LFP.",
+          "tier": "substance",
+          "data": [
+            [
+              "supply agreements",
+              "more than 70 GWh"
+            ],
+            [
+              "global average sodium-ion battery cost",
+              "$229/kWh"
+            ],
+            [
+              "global average LFP battery cost",
+              "approximately $200/kWh"
+            ],
+            [
+              "potentially lower total cost of ownership",
+              "21% over 20 years"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters want sodium-ion for home batteries and praise its safety; others say mere cost parity is disappointing or question the article's LFP price figures.",
+      "comment_count": 79,
+      "terms": [
+        "sodium-ion battery",
+        "LFP",
+        "cell-level cost parity",
+        "GWh",
+        "total cost of ownership"
+      ],
+      "entities": [
+        "Wood Mackenzie",
+        "BYD",
+        "CATL",
+        "LFP",
+        "pv magazine"
+      ],
+      "comments": [
+        {
+          "by": "syntaxing",
+          "text": "I’m so desperate for home battery using sodium batteries. Safer and lower temperature it can operate at. Low energy density but I don’t care for home battery."
+        },
+        {
+          "by": "burnt-resistor",
+          "text": "CATL sodium and ProLogium solid state are the only legit \"safe\" batteries made. LFP and NMC are, sadly: ubiquitous, dangerous, and normalized. LFP entering thermal runaway produce hydrogen gas that requires continuous igniters to burn off and burns/smolders for days to weeks."
+        },
+        {
+          "by": "hbarka",
+          "text": "I switched the 12v lead-acid batteries on my EV to the 12v Lithium from OHMMU. Best upgrade I've done. I recently saw that they now offer 12V Sodium, and their warranty now went up to 3 years on the sodium, from 1 year. They have new data on its robustness."
+        },
+        {
+          "by": "topspin",
+          "text": "That was fast. CATL is only now ramping up Naxtra production and it's already approaching price parity with LFP. This is early validation of the cost curve predictions for this chemistry. Most of this is destined for stationary storage that would likely have used lithium-based chemistry instead, or not been built-out at all. Every GWh of capacity sodium offsets is a GWh that isn't supplied by…"
+        },
+        {
+          "by": "alliao",
+          "text": "I've probably drunk too much kool-aid somewhere else, have always assumed sodium-ion batteries are already cheap and it's just trying to beat LFP in terms of energy density..."
+        }
+      ],
+      "image": "https://www.pv-magazine.com/wp-content/uploads/2025/03/Singeng-Sodium-ion-project-in-Hubei.jpg"
+    },
+    {
+      "id": 50394569,
+      "url": "https://github.com/anomalyco/rune",
+      "hn": "https://news.ycombinator.com/item?id=50394569",
+      "title": "Rune: A native GPU-rendered Rust UI framework for macOS, Windows, Linux and web",
+      "time": 1793982692,
+      "points": 161,
+      "depth": [
+        {
+          "text": "someone built a **Rust UI framework** that draws with the **GPU** across desktop and web",
+          "tier": "simple"
+        },
+        {
+          "text": "Every app can run **headless**: an agent can render PNGs, dump the **element tree**, and drive it with scripted input. Rune is **pre-release**; the repo says to pin a dev revision and open an issue rather than send a pull request.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some commenters say Rune isn't truly native because it doesn't use operating-system widgets; others like the headless testing idea and are interested in its cross-platform setup.",
+      "comment_count": 118,
+      "terms": [
+        "UI",
+        "GPU",
+        "headless",
+        "element tree",
+        "native UI"
+      ],
+      "entities": [
+        "Rune",
+        "Rust",
+        "GitHub",
+        "Anomaly",
+        "egui",
+        "Iced",
+        "Slint",
+        "GPUI",
+        "Dioxus Native",
+        "Freya",
+        "Floem",
+        "Vizia",
+        "SwiftUI",
+        "UIKit",
+        "Xcode",
+        "t3.code",
+        "Tauri",
+        "Dioxus Desktop",
+        "GTK",
+        "Perl"
+      ],
+      "comments": [
+        {
+          "by": "nicoburns",
+          "text": "If you're interested in a GPU-rendered Rust UI framework, then maybe skip this vibe coded project, and check out some of following established projects: Rust-native GUI frameworks (by crates.io downloads):\n1. egui (30.3M total / 9.2M last 90 days)\nhttps://crates.io/crates/egui\n2. Iced (3.2M / 770k)\nhttps://crates.io/crates/iced\n3. Slint (2.4M / 955k)\nhttps://crates.io/crates/slint\n4. GPUI (447k /…"
+        },
+        {
+          "by": "mik3y",
+          "text": "Sort of a digression, but it's the first time I've seen something like this: > We don't take pull requests. Have your agent open\n> an issue describing the bug or idea, and our agents\n> usually turn it around fast.\nPretty interesting approach, compared to receiving a zillion potentially sloppy PRs. Open source in the age of LLMs.. (\"agent source\"?)"
+        },
+        {
+          "by": "rgbrgb",
+          "text": "> Every app can run headless, so an agent can render to PNG, dump the element tree and drive it with scripted input. This is cool. I hope SwiftUI / UIKit borrow this idea for native mac apps."
+        },
+        {
+          "by": "bhouston",
+          "text": "Does this have: - Accessibility? E.g. Screen reader support? - Alternative inputs? Full keyboard support? - Full internationalization, including right-to-left and diacritics? What happens when no GPU is available? Just curious as this matters for it to be a serious library and not a proof of concept."
+        },
+        {
+          "by": "owenbrown",
+          "text": "How should I think about this, compared to GPUI ( https://gpui.rs )?\nWhat are pros and cons?"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/84277e69f7b905aa27a8989ddf59e50703c3cf95d8540a06e61fb1355c1e8cf8/anomalyco/rune"
+    },
+    {
+      "id": 50391145,
+      "url": "https://github.com/Unleash/unleash",
+      "hn": "https://news.ycombinator.com/item?id=50391145",
+      "title": "We've built an open-source feature flag server for 11 years",
+      "time": 1793965206,
+      "points": 152,
+      "depth": [
+        {
+          "text": "someone built an **open-source** tool for **switching features** on and off without redeploying",
+          "tier": "simple"
+        },
+        {
+          "text": "Unleash creator Ivar says it began as an **internal tool** in **2014**. Its server-side SDKs fetch flag config, then evaluate it inside your app, so user data stays there and a flag check is a **memory lookup**, not a network call.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: skeptics say a server for booleans adds infrastructure; supporters say the service has real value for teams that want it.",
+      "comment_count": 101,
+      "terms": [
+        "feature flag",
+        "SDK",
+        "local evaluation"
+      ],
+      "entities": [
+        "Unleash",
+        "Ivar",
+        "Yggdrasil",
+        "Rust",
+        "OpenFeature"
+      ],
+      "comments": [
+        {
+          "by": "sgt",
+          "text": "Had a look at their website [1]. Initial thoughts: this is a bit ridiculous, I can just build that myself. And in fact, I have done already. Thoughts after about 3 minutes of browsing: OK, this actually makes sense and I see why people would pay for this. The value proposition is definitely there [1] https://www.getunleash.io/"
+        },
+        {
+          "by": "0x70dd",
+          "text": "Yesterday I saw that LaunchDarkly is a $3B company. How crazy is that?!"
+        },
+        {
+          "by": "jonhohle",
+          "text": "Are most feature flag systems really just simple Boolean checks like this with no feedback loop? In 2009 Amazon’s equivalent supported multi-variate flags (run test with more than 2 options), a feedback loop for performance/attribution, and\nweighting. I don’t see any of that on the unleash home page, but also haven’t seen it in other feature config systems either."
+        },
+        {
+          "by": "hmokiguess",
+          "text": "This domain needs some better ontology and taxonomy, there's so many overlapping and conflated terms whenever I hear about it. To name a few: - Feature Flags used as Configs; - Configs used as Feature Flags; - Live Ops, Control Groups, Experiments, Analytics, and more bundled as \"extras\" to Feature Flags as if they were the right parent term; I think classical systems/engineering see feature…"
+        },
+        {
+          "by": "linesofcode",
+          "text": "Cool! Feature flags are great when you need them. I’ve seen so many different implementations of flags over the years. Even made one myself couple years ago which uses a GitHub issue (and a list of checkboxes) as a persistent store for maintaining and toggling with flags. https://github.com/TimMikeladze/next-flag"
+        }
+      ],
+      "image": "https://repository-images.githubusercontent.com/24594933/0ee96080-d406-11eb-856d-7df51ff2efbb"
+    },
+    {
+      "id": 50366853,
+      "url": "https://www.cnn.com/2026/11/02/food/coffee-machine-plastic-free",
+      "hn": "https://news.ycombinator.com/item?id=50366853",
+      "title": "A wave of plastic-free coffee pods and machines",
+      "time": 1793805649,
+      "points": 150,
+      "depth": [
+        {
+          "text": "coffee brands are launching **less-plastic pods** and machines as shoppers worry about **microplastics**",
+          "tier": "simple"
+        },
+        {
+          "text": "Lavazza's **Tablì** is a $129 machine for compressed coffee tablets; Keurig's **Alta** has compostable pods that don't fit older machines. Its bundle costs $499. Caraway's $495 machine is stainless steel and glass, so plastic doesn't touch the coffee grounds.",
+          "tier": "substance",
+          "data": [
+            [
+              "Lavazza Tablì machine",
+              "$129"
+            ],
+            [
+              "Keurig Alta bundle",
+              "$499"
+            ],
+            [
+              "Caraway coffee machine",
+              "$495"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say old-school brewers already avoid plastic cheaply; others like the idea but question whether the new pods taste good enough.",
+      "comment_count": 176,
+      "terms": [
+        "microplastics",
+        "compostable",
+        "brew path"
+      ],
+      "entities": [
+        "Keurig",
+        "Lavazza",
+        "Caraway",
+        "Tablì",
+        "Alta",
+        "AltaRounds",
+        "K-Cups",
+        "Keurig Dr. Pepper",
+        "5 Gyres",
+        "Specialty Coffee Association",
+        "Peter Giuliano",
+        "Daniele Foti",
+        "Phil Drapeau",
+        "Melissa Valliant",
+        "Jordan Nathan"
+      ],
+      "comments": [
+        {
+          "by": "troyvit",
+          "text": "Huh, cool. If you want to save a few bucks you can go with a stainless steel French press or a mason jar if you're into cold brews. You're symbolizing a different kind of status though. This summer was sunny and hot in Colorado, so every morning I'd make a jar of sun coffee. I'd leave it out through the day and overnight. The next morning I'd pull it in, filter it, refill it with grounds and…"
+        },
+        {
+          "by": "seemaze",
+          "text": "Hate to be the bearer of bad news, but even the $10k slayer espresso machine has a plastic water resevoir. Granted the brewing assembly is mostly plastic free. While I sympathize with the sentiment to eliminate plastic from the transport chain for anything ingestible, it's practically impossible in the modern world. Simple is usually best; glass or ceramic pour over, stainless press, or even the…"
+        },
+        {
+          "by": "mikeweiss",
+          "text": "I like Moka pots. Zero plastic But seriously it's a shame how hard it is to find products like coffee makers and electric kettles with no plastic. Heat and plastic don't mix"
+        },
+        {
+          "by": "SomaticPirate",
+          "text": "Aeropress makes a glass version although I was never too concerned about the microplastic risk"
+        },
+        {
+          "by": "devindotcom",
+          "text": "I have a Technivorm Moccamaster KBG-V and they use good plastic for their parts but it's still plastic (except the thermal carafe etc). There's a new copycat version that's all glass and plastic (Simply Good I think?) but not sure how it actually performs. What I'm surprised at is that no one has made non-plastic drop-in replacement parts for the reservoir, basket, and funnel. The KBG-V is highly…"
+        }
+      ],
+      "image": "https://media.cnn.com/api/v1/images/stellar/prod/alta-llifestyle-3qbrewing.jpg?c=16x9&q=w_800,c_fill"
+    }
+  ],
+  "glossary": {
+    "ABI": "Application Binary Interface: the agreed rules software uses to communicate with other software.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "opaque handle": "A reference you can use to work with something without seeing how it is built inside.",
+    "TUI": "Terminal User Interface: the menus and controls an app shows inside a text terminal.",
+    "identity resolution": "Matching records from different sources so they point to the right real person.",
+    "over-merging": "Combining records from different people as if they belonged to one person.",
+    "confidence calibration": "How well a model’s confidence scores match how often it is actually right.",
+    "decision model": "A program that weighs possible choices and predicts or selects one.",
+    "hybrid model": "A setup that uses one model first and sends selected cases to another for review.",
+    "air-gapped": "Kept separate from outside networks.",
+    "MS-DOS": "Microsoft Disk Operating System: older computer software that runs programs using typed commands.",
+    "IPO": "Initial Public Offering: when a company first offers its shares for the public to buy.",
+    "S-1": "A filing that gives investors details about a company's finances and share offering before an IPO.",
+    "lockup schedule": "A timetable showing when certain shareholders are allowed to sell their shares.",
+    "Dutch auction": "A way to set a sale price from buyers’ bids instead of choosing one fixed price first.",
+    "LPs": "Limited partners: investors who put money into a fund run by someone else.",
+    "inference": "When an AI uses what it learned to answer or act, instead of being trained.",
+    "commoditized": "When something becomes easy to swap for similar options, so sellers struggle to stand out.",
+    "capabilities progress": "How quickly AI systems get better at the abilities being measured.",
+    "compute multiplier": "An improvement that lets the same amount of computer power get more AI progress.",
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "model weights": "The learned settings inside an AI that shape how it responds.",
+    "alignment": "The effort to keep an AI's actions in line with what people want.",
+    "compounding acceleration": "When each improvement helps bring about further improvements, making progress speed up again.",
+    "bare-metal programming": "Writing software for a computer to run without a normal operating system in between.",
+    "UEFI": "Unified Extensible Firmware Interface: the built-in startup software that checks a computer and starts its main software.",
+    "linking": "Joining compiled pieces of a program so they can run together.",
+    "EFI system partition": "A section of a disk where a computer keeps files it needs to start up.",
+    "external symbols": "Names of functions that a program expects to find in other code.",
+    "bootloader": "A small program that starts a computer and loads its main software.",
+    "microVM": "A small, separate computer environment for running a job; here, it gets thrown away when the job ends.",
+    "vCPU": "Virtual CPU: a processor assigned to a virtual machine.",
+    "KVM": "Kernel-based Virtual Machine: a Linux feature for running virtual machines.",
+    "EPT": "Extended Page Tables: tables that translate a virtual machine’s memory addresses into locations in the host machine’s memory.",
+    "pt_regs": "A record of the CPU’s saved state, including where a program should resume.",
+    "ASLR": "Address Space Layout Randomization: a way to move parts of a program around each time it runs, making some attacks harder.",
+    "jailer": "A helper that starts Firecracker with limits on its permissions and access.",
+    "namespaces": "A Linux feature that gives a process its own view of things like other processes or the network.",
+    "seccomp": "A Linux control that limits which requests a program can make to the system’s core.",
+    "root": "The highest level of control on a computer, with permission to change system settings and files.",
+    "RCE": "Remote Code Execution: a flaw that lets an attacker make a computer run their commands from somewhere else.",
+    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
+    "proposed repo": "A place Ubuntu puts updates for testing before moving them into the regular updates.",
+    "QA": "Quality assurance: checking that software works as expected before people rely on it.",
+    "kernel": "A small program that carries out a calculation on a computer's graphics chip or processor.",
+    "LTS": "Long-term support: a release its makers promise to support for an extended period.",
+    "mitigation": "A step taken to make a problem less harmful or disruptive.",
+    "chiropterologists": "People who study bats.",
+    "sodium-ion battery": "A battery that uses sodium rather than lithium; this article discusses it for storing electricity.",
+    "LFP": "Lithium iron phosphate: a type of rechargeable battery used here as a comparison for sodium-ion batteries.",
+    "cell-level cost parity": "When the battery cells themselves cost about the same, before comparing the rest of a complete storage system.",
+    "GWh": "Gigawatt-hours: a measure of an amount of electricity, often used to describe how much a battery can store.",
+    "total cost of ownership": "The full cost of using something over its lifetime, not just what it costs to buy.",
+    "UI": "User interface: the screens and controls people use to operate a device.",
+    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "headless": "Software that another program can control without a person using its regular screen.",
+    "element tree": "A nested outline of the parts that make up a screen, such as a label inside a window.",
+    "native UI": "An app’s screens and controls built for a device’s own system.",
+    "feature flag": "A switch developers can use to turn a feature on or off without removing it from the program.",
+    "SDK": "Software Development Kit: tools a company provides so people can make apps for its device.",
+    "local evaluation": "Checking a flag inside the application, rather than making a network call each time.",
+    "microplastics": "Tiny pieces of plastic that can shed from products and end up in food or the environment.",
+    "compostable": "Able to break down into material that can be used as compost.",
+    "brew path": "The parts inside a coffee machine that hot water and coffee pass through."
+  }
+}
