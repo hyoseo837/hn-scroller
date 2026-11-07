@@ -2,6 +2,399 @@
   "date": "2026-11-07",
   "cards": [
     {
+      "id": 50401867,
+      "url": "https://asahilinux.org/2026/11/progress-report-7-3/",
+      "hn": "https://news.ycombinator.com/item?id=50401867",
+      "title": "Asahi Linux Progress Linux 7.3",
+      "time": 1794028818,
+      "points": 213,
+      "depth": [
+        {
+          "text": "Asahi Linux is making **Apple Silicon Macs** work better with Linux, with support for **newer hardware**",
+          "tier": "simple"
+        },
+        {
+          "text": "M3 support is now available without the installer’s **EXPERT flag**. **Thunderbolt support** currently covers USB3, XDomain and Thunderbolt Networking; the team has also begun moving all its repositories to the **GNU General Public License version 2 or later**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters welcome the move to copyleft; others say it is about stopping competing distros from copying Asahi's work.",
+      "comment_count": 176,
+      "terms": [
+        "EXPERT flag",
+        "Thunderbolt",
+        "XDomain",
+        "upstream-first",
+        "GNU General Public License (GPL)",
+        "copyleft"
+      ],
+      "entities": [
+        "Asahi Linux",
+        "Apple",
+        "Apple Silicon",
+        "Linux",
+        "M3",
+        "Thunderbolt",
+        "USB3",
+        "XDomain",
+        "GNU General Public License"
+      ],
+      "comments": [
+        {
+          "by": "ADevWithAnIdea",
+          "text": "Shameless plug for my own project: https://gravitylinux.org Spoiler: We have Vulkan 1.4 working, all of M4 and most of M5 working, are making significant progress towards full suspend to ram (no version of Asahi supports this) and this will all be shipped to users very soon!"
+        },
+        {
+          "by": "aroman",
+          "text": "> Some time ago, we were made aware of multiple attempts to exploit our permissive licensing to hijack our work, with a direct view to replacing the project and aggressively monetising Linux on Apple Silicon. Is this referring to Omarchy? Anyone have context? TBH I'm surprised their work was ever MIT-licensed instead of GPL."
+        },
+        {
+          "by": "alentred",
+          "text": "The only blocking point for me before I would use Asahi Linux is the support of the USB-C displays. I was considering and reconsidering to install Asahi so many times, but I just cannot give up the ability to plug an external display into my MacBook Air. I am just surprised that other features like support of the newer CPUs still get a higher priority than this one. I am not complaining or…"
+        },
+        {
+          "by": "hnarayanan",
+          "text": "This is very cool. I have a project that built on Asahi[1], and the better the hardware support, the wider the audience. [1] https://github.com/hnarayanan/hello-guix"
+        },
+        {
+          "by": "bemtevi",
+          "text": "Nice. One thing I like about Asahi is that they're relatively anti-LLM."
+        }
+      ],
+      "image": "https://asahilinux.org/img/AsahiLinux_logomark_256px.png"
+    },
+    {
+      "id": 50403097,
+      "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
+      "hn": "https://news.ycombinator.com/item?id=50403097",
+      "title": "Every Mac comes with an (undocumented) family member classifier",
+      "time": 1794044763,
+      "points": 210,
+      "depth": [
+        {
+          "text": "someone found a **Mac social graph** that quietly maps who you know and guesses **family ties**",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: critics call the graph invasive and say it should need consent; defenders say keeping it on-device makes it useful or not a big deal.",
+      "comment_count": 104,
+      "terms": [
+        "knowledge graph",
+        "daemon",
+        "kinship inference",
+        "SQLite",
+        "TCC Full Disk Access",
+        "LLM",
+        "GDPR"
+      ],
+      "entities": [
+        "Apple",
+        "macOS",
+        "Apple Intelligence",
+        "Personal Knowledge Graph",
+        "iKnow",
+        "Siri",
+        "SQLite"
+      ],
+      "comments": [
+        {
+          "by": "thomascountz",
+          "text": "At one point in my life, I would've found this data fascinating (if it were opt-in, perhaps)! Now, I find it exhausting. A similar discussion came up recently with Siri Recap[1], where some expressed how useful they thought it was and that, as a party to the conversations it summarizes, there was very little moral or ethical concern. But I have a social concern. If I'm having a chat with someone…"
+        },
+        {
+          "by": "infwhispers",
+          "text": "I am the author of the research. Please, feel free to ask me anything. Also, check out the followup research: https://8rank.ai/game/apple-intelligence-knowledge-graph-in-..."
+        },
+        {
+          "by": "Ungh",
+          "text": "Just spent 30 minutes poking around this. It's horrifying. Absolutely horrifying. All the intelligence and Siri stuff is turned off and blocked on my Mac yet it's still doing this. Think this might kick me over the fence finally to Debian."
+        },
+        {
+          "by": "oldfuture",
+          "text": "This is deeply troubling,\nthis data is unnecessary collected and impossible to opt out from apparently and may be read at any point in the future by an attacker or by apple itself without notice this is a class action lawsuit in the making"
+        },
+        {
+          "by": "zaptheimpaler",
+          "text": "Im still optimistic that Apple will do all this stuff on your device as opposed to in an opaque cloud somewhere you have 0 visibility into. Meta probably has 1000x this system in a data warehouse somewhere. If this info is not leaving the device that’s fine with me."
+        }
+      ],
+      "image": "https://8rank.ai/og-apple-intelligence-personal-knowledge-graph.png"
+    },
+    {
+      "id": 50403214,
+      "url": "https://uploadyourram.org",
+      "hn": "https://news.ycombinator.com/item?id=50403214",
+      "title": "Upload Your RAM",
+      "time": 1794046526,
+      "points": 178,
+      "depth": [
+        {
+          "text": "someone made a **joke site** about uploading your **RAM** to Sam Altman",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says a **16gb ask** crashed their browser; another blames **memory manufacturers** for not scaling production to demand.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some call Sam Altman’s remarks stupid; others say he’s being taken out of context and point to memory manufacturers and supply instead.",
+      "comment_count": 127,
+      "terms": [
+        "RAM",
+        "mainframe",
+        "OOM",
+        "DRAM fab"
+      ],
+      "entities": [
+        "Upload Your RAM",
+        "Sam Altman",
+        "Claude",
+        "ChatGPT",
+        "OpenAI",
+        "SoftRAM",
+        "Codeberg",
+        "downloadmoreram.com"
+      ],
+      "comments": [
+        {
+          "by": "thih9",
+          "text": "Centralization is nonironically my biggest problem with AI. It feels like a step back towards mainframe era. Will we go back to PCs? As in: are we going to get cheap local hackable frontier AIs at some point? I hope so."
+        },
+        {
+          "by": "petervandijck",
+          "text": "The quote in context really wasn’t that weird https://sputnikintelligence.com/things/quote/6vqm-hkv5-qm1d"
+        },
+        {
+          "by": "petervandijck",
+          "text": "That quote wasn’t that weird in co text and Sam says a lot of things on podcasts see some https://sputnikintelligence.com/people/zlsl-zr6t-7llx"
+        },
+        {
+          "by": "geekgod382",
+          "text": "Why do people pay $15 just to buy domains for these meme websites?"
+        },
+        {
+          "by": "bajard",
+          "text": "I suspect that this actually downloads something instead of uploading. I have no proof, but I believe it."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50397099,
+      "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
+      "hn": "https://news.ycombinator.com/item?id=50397099",
+      "title": "GitHub's new Git storage architecture",
+      "time": 1793993061,
+      "points": 168,
+      "depth": [
+        {
+          "text": "GitHub built new storage so **thousands of agents** can push to **one repository** at once",
+          "tier": "simple"
+        },
+        {
+          "text": "In internal tests, it handled **5,000 concurrent agents** and **7,200 pushes per second** on one repository. Git objects live in Azure Blob Storage, while references go in **Ref-CAS**, a separate replicated log service; virtual replicas serve requests while dedicated compaction nodes merge packs.",
+          "tier": "substance",
+          "data": [
+            [
+              "concurrent agents",
+              "5,000"
+            ],
+            [
+              "pushes per second",
+              "7,200"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see this as preparation for agent-driven repository traffic; others question whether thousands of pushes per second are a good idea or whether the design addresses current outages.",
+      "comment_count": 38,
+      "terms": [
+        "Ref-CAS",
+        "virtual replica",
+        "compaction",
+        "quorum",
+        "pack",
+        "vertical scale"
+      ],
+      "entities": [
+        "GitHub",
+        "Git",
+        "Azure Blob Storage",
+        "Ref-CAS",
+        "Spokes",
+        "Project Rubicon"
+      ],
+      "comments": [
+        {
+          "by": "pksunkara",
+          "text": "Most of this is similar to what https://enroute.sh already did scaling Git. https://enroute.sh/blog/everyone-is-doing-git-on-s3-wrong"
+        },
+        {
+          "by": "yakkomajuri",
+          "text": "If I'm reading this right, this is (really solid) future planning but won't help with the current outages? I'd have thought so from the headline + initial content but then they say that the horizontal scale techniques are basically carrying over from the existing architecture (where it seems the problem is?) and this is mostly to help with what they call \"vertical scale\" (intra-repo scalability)…"
+        },
+        {
+          "by": "dwm",
+          "text": "This looks a lot like Cursor's Continuity, though Github are reporting an order of magnitude greater write throughput. https://cursor.com/blog/git-at-any-scale"
+        },
+        {
+          "by": "jxramos",
+          "text": "Agent scale is definitely on the mind around industry, I wonder what github folks would say in response to https://www.anthropic.com/research/redesigning-source-contro... . It's an interesting read to step back and consider source control from first principles and rebalance the tradeoffs for what qualities matter in this new regime."
+        },
+        {
+          "by": "rochacon",
+          "text": "So that is why I got a bunch of 500's during push this week :) Hope it helps improve reliability, it was getting hard to defend GitHub with all the recent outages."
+        }
+      ],
+      "image": "https://github.blog/wp-content/uploads/2026/01/4ba0cd42388a255e04c78e5143548f22e577d68e0f15f68e6a3c76c18b927981-1920x1080-1.png"
+    },
+    {
+      "id": 50395450,
+      "url": "https://devvm.dev/",
+      "hn": "https://news.ycombinator.com/item?id=50395450",
+      "title": "Devvm.dev: One VM for every project",
+      "time": 1793986222,
+      "points": 169,
+      "depth": [
+        {
+          "text": "someone made a **sandbox** for each project, keeping **coding agents** from seeing the rest of your home folder",
+          "tier": "simple"
+        },
+        {
+          "text": "Each VM picks **toolchains** from your project files and mounts the project folder, while keeping the rest of your home folder out of reach. New VMs default to an **allowlist** of network hosts; a proxy on your machine adds real login secrets to outgoing requests.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some praise the security choices; others call it a toy for single-project use or want more flexibility, and one commenter distrusts the install and login flow.",
+      "comment_count": 64,
+      "terms": [
+        "VM",
+        "sandbox",
+        "toolchain",
+        "allowlist",
+        "proxy"
+      ],
+      "entities": [
+        "devvm",
+        "Lima",
+        "QEMU",
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "VS Code",
+        "Ubuntu",
+        "Apple",
+        "Homebrew",
+        "Docker",
+        "krunkit",
+        "libvirt",
+        "Colima",
+        "smolvm",
+        "safehouse",
+        "LXD",
+        "ddev",
+        "exe.dev"
+      ],
+      "comments": [
+        {
+          "by": "photonios",
+          "text": "I keep seeing projects like this pop up and they never nail it. I need isolation, but I also need to give my agents secure access to internal package registries, logs, internal infra, designs, emulators, browsers, docs etc. At a large company, work can span dozens of repositories. And on top of that, I need dozens of these. I built this at work. Engineers use krunkit VMs with proper memory…"
+        },
+        {
+          "by": "mnahkies",
+          "text": "Damn, I've been building something very similar the past few weeks - haven't quite gotten to a public release yet. Mines based on libvirt and uses cloud-init for creating the images, with shared golden images across projects. Skimming your docs it wasn't totally clear to me if your images are built per project, or COW from shared toolchains. Looks like you have a few features in there that I…"
+        },
+        {
+          "by": "jFriedensreich",
+          "text": "I see nothing this brings over smolvm machines. I did not use lima / krunkit outside colima but in colima it was just slow, had outdated devx and was unreliable compared to controlling every detail with an embedded vm library."
+        },
+        {
+          "by": "brkomir",
+          "text": "One of the fake recruiters contacted me on LikedIN for a Solidity dev role, with an assignment repo that came as a zip in DM. Everything looked fine since Finder only showed .sol files, but Finder doesn't show .git and other hidden folders by default. However .git was there, and it had a hook that ran eval() on a remote address on commit/push. As I read it, .git protection stops the VM from…"
+        },
+        {
+          "by": "sdevonoes",
+          "text": "I tried to develop an electron app this way; ubuntu VM (using qemu/multipass) on macos as host with Intellij IDEA. Couldnt make it work properly. Sure, I can install all the toolchain in the VM, and Intellij would recognize it (they have a “remote dev” setup), but for instance for electron apps you cannot just run a headless vm, and there is no convinient way to make a change in your mac, hot…"
+        }
+      ],
+      "image": "https://devvm.dev/images/social-card.png"
+    },
+    {
+      "id": 50396064,
+      "url": "https://scotthelme.co.uk/we-know-15-579-websites-are-infected-how-do-we-tell-them/",
+      "hn": "https://news.ycombinator.com/item?id=50396064",
+      "title": "We know 15k websites are infected. how do we tell them?",
+      "time": 1793988815,
+      "points": 159,
+      "depth": [
+        {
+          "text": "someone found thousands of **infected sites** and needs help **warning their owners**",
+          "tier": "simple"
+        },
+        {
+          "text": "Report URI says **15,579 sites** are still infected, with an estimated **more than 135 million visits a month**. Most outreach goes unanswered, so Scott Helme is asking NCSC/CERT teams, especially in Europe, to help notify site owners.",
+          "tier": "substance",
+          "data": [
+            [
+              "infected websites",
+              "15,579"
+            ],
+            [
+              "estimated monthly visits",
+              "more than 135 million"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say publish the URLs; others suggest contacting owners, hosts, or authorities first.",
+      "comment_count": 136,
+      "terms": [
+        "XSS",
+        "CDN",
+        "responsible disclosure",
+        "blocklist",
+        "WHOIS"
+      ],
+      "entities": [
+        "Report URI",
+        "Scott Helme",
+        "DeadTag",
+        "WordPress",
+        "Magento",
+        "DarkSword",
+        "Coruna",
+        "NCSC",
+        "CERT",
+        "Google",
+        "Facebook",
+        "Bing",
+        "Cloudflare"
+      ],
+      "comments": [
+        {
+          "by": "baby_souffle",
+          "text": "Report each domain to the major browser vendors so they can update their list of suspicious sites? I believe the default configuration for suspected spam and phishing and other malicious sites is that the user gets a red warning page that they have to click through first. Website owner would either get notifications from users or notice the drop off in traffic?"
+        },
+        {
+          "by": "Guestmodinfo",
+          "text": "Make a website,\nname it 15579infected.com and name everywebsite.\nMost of the website owners would soon wise up by word of mouth and visit your website and most probably contact you and you tell them what vulnerability each one has so they can rectify.\nYou can charge them for your service."
+        },
+        {
+          "by": "theamk",
+          "text": "Work to add them to Google Safe Browsing blocklist (Why are they not on the list anyway? Surely Google will be interested in their technique) Google, Facebook, Bing, other large platforms will get those websites blocked. Their traffic falls almost to zero. Then: either web admin notices and fixes website or people stop visiting yhem either way, no more infected people, win for everyone."
+        },
+        {
+          "by": "athrowaway3z",
+          "text": "I think something has gone very wrong for you to be doubting the answer. Responsible disclosure is to prevent harm. You think about your disclosure options and pick the one that is best overall weighing the impact and harm. They're already infected - or so you claim. I get that companies want to use responsible disclosure as a mechanism so it can save face and their reputation, and if both are…"
+        },
+        {
+          "by": "aspect0545",
+          "text": "German websites are required to have an imprint published on their website that clearly identifies the person behind it as well as their email address. Feed the domain list to an ai and tell it to collect contact addresses. Send them an email. Or look at the CDNs websites are using, then contact the CDN. Or, contact the biggest (top 10) hosting providers in each of the countries and speak to them…"
+        }
+      ],
+      "image": "https://storage.ghost.io/c/ee/88/ee889f88-37ef-43e5-9180-f9b88ee6261d/content/images/size/w1200/2026/11/Responsible-Disclosure-at-Scale.png"
+    },
+    {
       "id": 50399933,
       "url": "https://mitchellh.com/writing/libghostty-1-0",
       "hn": "https://news.ycombinator.com/item?id=50399933",
@@ -953,6 +1346,39 @@
     }
   ],
   "glossary": {
+    "EXPERT flag": "A switch in the installer that early M3 users had to turn on before support became generally available.",
+    "Thunderbolt": "A connection standard for linking computers with peripherals and each other using a cable.",
+    "XDomain": "A feature that lets two Thunderbolt computers connect directly to each other.",
+    "upstream-first": "Doing changes in the main shared project first, rather than maintaining them separately and sending them in later.",
+    "GNU General Public License (GPL)": "GNU General Public License: a software licence that requires people who share changed versions to keep the same licence terms.",
+    "copyleft": "A way of licensing code that lets people reuse it but requires shared changed copies to keep the same sharing rules.",
+    "knowledge graph": "A way to organize information by showing how people, places, or things are connected.",
+    "daemon": "A program that runs in the background and handles a task without being started each time.",
+    "kinship inference": "A guess about which people are related, such as who might be family.",
+    "SQLite": "A small database that can be stored in a single file.",
+    "TCC Full Disk Access": "A macOS permission that gives an app access to files normally kept off limits.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "GDPR": "General Data Protection Regulation: a European law that sets rules for how organizations use people's personal information.",
+    "RAM": "Random-Access Memory: a computer's working space for information it is using right now.",
+    "mainframe": "A large central computer that many people can use, rather than each person having their own computer.",
+    "OOM": "Out of memory: when a program runs out of the memory it has available.",
+    "DRAM fab": "DRAM (Dynamic Random Access Memory) fab: a factory that makes chips used as computer memory.",
+    "Ref-CAS": "Reference Compare-and-Swap: a service that checks a branch still points where expected before recording a change.",
+    "virtual replica": "A replaceable worker that handles repository requests and keeps a local cache that can be rebuilt.",
+    "compaction": "Shortening an AI’s conversation history, often by turning it into a summary.",
+    "quorum": "The group of checks that must get the right response for validation to pass.",
+    "pack": "A bundle of Git data stored together; this system adds packs on pushes and later merges them.",
+    "vertical scale": "Handling more developers or agents working in the same repository.",
+    "VM": "Virtual machine: a computer that runs inside another computer.",
+    "sandbox": "A separate, contained space where software can be tested without affecting the rest of a computer or system.",
+    "toolchain": "A set of tools used together to get a job done.",
+    "allowlist": "A list of apps or people that are allowed to connect.",
+    "proxy": "A go-between that gets information from another website on someone else's behalf.",
+    "XSS": "Cross-site scripting: A flaw that can make a website run instructions supplied by someone visiting it.",
+    "CDN": "Content Delivery Network: A network of servers that helps websites handle requests closer to their users.",
+    "responsible disclosure": "Privately reporting a security flaw so its maintainers have time to fix it before it is made public.",
+    "blocklist": "A list of files or sources a tool should reject or remove.",
+    "WHOIS": "A public lookup service for details about who registered a website name; those details can be hidden or outdated.",
     "ABI": "Application Binary Interface: the agreed rules software uses to communicate with other software.",
     "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
     "opaque handle": "A reference you can use to work with something without seeing how it is built inside.",
