@@ -2,6 +2,615 @@
   "date": "2026-11-08",
   "cards": [
     {
+      "id": 50415628,
+      "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+      "hn": "https://news.ycombinator.com/item?id=50415628",
+      "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+      "time": 1794161767,
+      "points": 478,
+      "depth": [
+        {
+          "text": "Goldman is restricting **AI coding tools** to engineers after **traders and bankers** used them at work",
+          "tier": "simple"
+        },
+        {
+          "text": "An **October update** restricts Anthropic's **Claude Code** and Microsoft's GitHub to engineers; traders had used them to monitor client flows and model market moves. Goldman and Morgan Stanley are **lead underwriters** on Anthropic's IPO.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters say security and compliance risks justify the cutoff; others want nontechnical staff to keep access, with engineering building safer tools. Some separately speculate about billing or an operational loss.",
+      "comment_count": 298,
+      "terms": [
+        "coding agent",
+        "client trading flows",
+        "information barriers",
+        "IPO"
+      ],
+      "entities": [
+        "Goldman Sachs",
+        "Anthropic",
+        "Claude Code",
+        "Microsoft",
+        "GitHub",
+        "Morgan Stanley",
+        "Bloomberg News",
+        "Nick Carcaterra",
+        "Marco Argenti",
+        "Financial Times",
+        "JPMorgan",
+        "ChatGPT",
+        "Gemini",
+        "Barclays",
+        "Meta",
+        "Amazon",
+        "Accenture",
+        "Schwab",
+        "Copilot",
+        "Nasdaq",
+        "State of AI"
+      ],
+      "comments": [
+        {
+          "by": "lukebuehler",
+          "text": "People are giving all kinds of explanations here why Goldman is doing this, but they are not addressing what the article (implicitly) says: operating coding agents on the primary machines of finance professionals runs directly into the lethal trifecta. It's as simple as that. You cannot have semi-unattended agents running on the same workstations that have access to client/trade/prop information…"
+        },
+        {
+          "by": "legitster",
+          "text": "At our org they have been clawing back Claude access because of chronic billing overages. Budgets are tight and consumption billing models are being stamped down on everywhere. Anthropic sales can not offer us any sort of normalized billing rate. Gemini is swooping in because they offer flat consistent billing and handle overages through throttling access to higher models. For 90% of the…"
+        },
+        {
+          "by": "cactca",
+          "text": "The most interesting part of this announcement is the timing. GS is leading Anthropic's IPO, what motivated them to announce this a few weeks before trading starts?"
+        },
+        {
+          "by": "steveBK123",
+          "text": "Regardless of tech tool, non-tech writing POCs they try to force tech to get into production is a timeless story. LLM just allows people to get there faster, with less knowledge of coding.. which leads to the actual problem I think. Banks have a ton of legal/compliance/reglatory/reputational concerns about application access/entitleements, data privacy, data licensing, granular data entitlements…"
+        },
+        {
+          "by": "fancyfredbot",
+          "text": "Goldman is very unlikely to have decided proactively to cut off traders access, and it's much more likely there was an operational loss. What kind of loss? I don't know but consider: 1) Claude Code is only being taken away from traders. 2) Only traders have permission to send orders to the market and book client trades. 3) Claude code would probably have been running as the trader, under their…"
+        }
+      ],
+      "image": "https://www.thestateofai.com/media/uploads/33f913ce812c4074d207c01b6df1858a692e6bc3229dadbfcd4f56b61722a538.png"
+    },
+    {
+      "id": 50411961,
+      "url": "https://github.com/synchopate/llama-modchip",
+      "hn": "https://news.ycombinator.com/item?id=50411961",
+      "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+      "time": 1794133324,
+      "points": 323,
+      "depth": [
+        {
+          "text": "someone got a **284B DeepSeek model** running on **64GB of RAM** with no GPU",
+          "tier": "simple"
+        },
+        {
+          "text": "The project compresses the checkpoint from 76.87 GiB to **56.56 GiB**, then fits the model and a 256K KV cache in RAM with **zero swap**. It reports 44.4 tok/s for prompt processing and 9.1–14.7 tok/s for generation on a 16-core Zen 5.",
+          "tier": "substance",
+          "data": [
+            [
+              "checkpoint size",
+              "56.56 GiB"
+            ],
+            [
+              "context",
+              "256K"
+            ],
+            [
+              "prompt processing",
+              "44.4 tok/s"
+            ],
+            [
+              "generation",
+              "9.1–14.7 tok/s"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters see clever optimizations making local AI practical; skeptics say aggressive quantization may hurt quality and question whether the repo adds much beyond llama.cpp.",
+      "comment_count": 123,
+      "terms": [
+        "quantization",
+        "MoE",
+        "prefill",
+        "KV cache",
+        "tok/s"
+      ],
+      "entities": [
+        "llama-modchip",
+        "DeepSeek",
+        "DeepSeek-V4-Flash",
+        "Zen 5",
+        "llama.cpp"
+      ],
+      "comments": [
+        {
+          "by": "kennywinker",
+          "text": "The floor for a functional local AI system keeps getting lower, dispite ram and GPU prices continuing to go up. An E5 workstation with lots of threads, $300 of RAM and at least $100 of GPU gets you something that can do >100tok/s+ prompt processing, and ~20tok/s output with Qwen3.8-flash-next:IQ3_S. Toss a $500 GPU in there, and it goes from barely usable to pleasingly performant. For less than…"
+        },
+        {
+          "by": "armcat",
+          "text": "Something to keep in mind with aggressive quantisation, is that it's been empirically proven [1] that (1) quantisation has non-linear performance behaviour, and (2) generally the peak size-to-performance ratio occurs at 4-bit; anything lower and you will see significant reduction in performance. Also, I've been playing with speech models for the past 2 years, and for me anything below 8-bit is a…"
+        },
+        {
+          "by": "antirez",
+          "text": "To put this on perspective, consider that with 128GB of unified RAM it can run even fast : https://x.com/antirez/status/2119392658661749175\nLike, coding-agent acceptably fast. See later in the reply for the prefill at ~300 t/s but can go even faster for larger prefills."
+        },
+        {
+          "by": "aappleby",
+          "text": "Stupid question, but does this AI-generated repo actually _do_ anything? Comparing it on Nemotron, it runs just about the same as plain old llama.cpp on the cpu (except prefill seems much faster). I don't see an option to set up DeepSeek in \"modchip setup\", so I haven't tested that one yet. Edit: this is on a Ryzen 7945hx 16-core Zen 4 + 96 gb DDR5."
+        },
+        {
+          "by": "boredatoms",
+          "text": "The quantization is probably the most important thing to know and its not clear at all from the dense word salad"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/4780c612be00d323746e20825d4eac2def894ddafab030eb9b8ba5bcd56ed403/synchopate/llama-modchip"
+    },
+    {
+      "id": 50412318,
+      "url": "https://krthr.co/person-of-interest/",
+      "hn": "https://news.ycombinator.com/item?id=50412318",
+      "title": "Person of Interest",
+      "time": 1794137008,
+      "points": 279,
+      "depth": [
+        {
+          "text": "someone started watching **Person of Interest** and says its Machine feels **closer to reality** now",
+          "tier": "simple"
+        },
+        {
+          "text": "It brought back memories of **early 2010s forums**, **the SOPA and PIPA controversy**, and Megaupload’s shutdown. Commenters say later seasons become sci-fi about **proxy wars between AGIs**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some commenters say the show was ahead of its time and feels relevant to AI now; others call it silly and say it has no relevance.",
+      "comment_count": 185,
+      "terms": [
+        "AGI",
+        "LLM",
+        "ASI"
+      ],
+      "entities": [
+        "Person of Interest",
+        "The Machine",
+        "Wilson Tovar",
+        "SOPA",
+        "PIPA",
+        "Megaupload"
+      ],
+      "comments": [
+        {
+          "by": "vesche",
+          "text": "From reading the comments, I think a lot of people haven’t seen the show. I highly recommend it. However, you have to remember that this aired on CBS in the age of shows like CSI and NCIS. Therefore, it was made into a high-episode-number, cookie cutter serial crime drama. Every episode follows a similar pattern where the two main characters are trying to prevent a murder. However… if you can…"
+        },
+        {
+          "by": "vgalin",
+          "text": "I often think about Person of Interest, and when I clicked on the post, I expected to be presented with something else entirely, as the show is now 15 years old. What a pleasant surprise! I like to compare how similar or different The Machine is to current state-of-the-art LLMs. Interestingly, in this fiction, The Machine's preferred way of communicating doesn't seem to be through text, or even…"
+        },
+        {
+          "by": "trimbo",
+          "text": "Great show and \"If-Then-Else\"[1] is one of the greatest single episodes of any show ever. Like watching the X-Files today, I would recommend skipping a lot of the one-off episodes. Here's a list someone put together. https://www.reddit.com/r/PersonOfInterest/wiki/index/ [1] - https://www.imdb.com/title/tt4128194/?_ssoLoop=1"
+        },
+        {
+          "by": "microflash",
+          "text": "Pleasantly surprised to see this here. One of the most memorable shows that I watched ages ago. It was strong at the beginning but kind of dragged on in later seasons. Still very nice to binge. In case you’re looking for some more shows related to AI, Cupertino by Robert King and Michelle King is currently airing and is pretty entertaining."
+        },
+        {
+          "by": "jordz",
+          "text": "I absolutely loved this show, and to be honest a rewatch is needed. I won’t make any reference to specifics due to spoilers. Would recommend."
+        }
+      ],
+      "image": "https://bear-images.sfo2.cdn.digitaloceanspaces.com/krthr/474167074_9348806235164701_1627609488563106497_n.webp"
+    },
+    {
+      "id": 50416801,
+      "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+      "hn": "https://news.ycombinator.com/item?id=50416801",
+      "title": "Nvidia Board of Directors Is Investigating Jensen Huang",
+      "time": 1794169603,
+      "points": 254,
+      "depth": [
+        {
+          "text": "NVIDIA is **investigating reports** that a **foreign intelligence effort** targeted CEO Jensen Huang",
+          "tier": "simple"
+        },
+        {
+          "text": "A committee of **independent directors** and **outside independent counsel** will oversee the review. The Board says it has no reason to believe national security or NVIDIA secrets were compromised; Huang supports the review and will cooperate.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some commenters say the headline wrongly makes Huang sound like the investigation's target; others focus on the alleged targeting's geopolitical implications.",
+      "comment_count": 192,
+      "terms": [
+        "foreign intelligence effort",
+        "outside independent counsel"
+      ],
+      "entities": [
+        "NVIDIA",
+        "Jensen Huang"
+      ],
+      "comments": [
+        {
+          "by": "nrmitchi",
+          "text": "The title on this is just extremely misleading. Nvidia is doing an investigation of Jensen Huang being targeted in an intelligence operation ; ie, an investigation of something that happened to him . The title implies that Jensen Huang is the target of Nvidia's investigation."
+        },
+        {
+          "by": "mandeepj",
+          "text": "Huang most public statements were ridiculously pro-China in the last few years. Coincident? I do not think so. https://finance.yahoo.com/technology/ai/articles/nvidia-ceo-... https://www.facebook.com/Benzinga/posts/nvidia-ceo-jensen-hu... https://www.reuters.com/world/china/nvidia-says-us-export-co... https://archive.ph/TkBwb (Nvidia chief Jensen Huang condemns US chip curbs on China as ‘a…"
+        },
+        {
+          "by": "enlyth",
+          "text": "Also reported by Bloomberg: \"Nvidia Board to Probe Spying Case After CEO Admits Infidelity\" https://www.bloomberg.com/news/articles/2026-11-08/nvidia-bo... https://archive.is/VfRdl"
+        },
+        {
+          "by": "aigalaxiome",
+          "text": "China targets everyone of consequence, of course they targeted Jensen.\nThis may be a 'game of thrones' nefarious move by hostile foreign or domestic parties who want to wrest defacto control, perhaps angle to put their puppet in control, or otherwise leverage Nvidia by taking down its Founder and CEO.\nIt is completely unproven and should not be assumed that Jensen nor Nvidia took part in anything…"
+        },
+        {
+          "by": "zugi",
+          "text": "There's no explanation of whether he got sextorted, or what the plan was to get sensitive information from him. Or was the plan just to publicly humiliate him in hopes he'd get replaced by someone less capable?"
+        }
+      ],
+      "image": "https://iprsoftwaremedia.com/219/files/202512/692f56983d6332f89cbbc58b_nvidia-logo-horiz-wht-16x9/nvidia-logo-horiz-wht-16x9_44a60e3f-c4e5-4d8a-879f-ec5121ad6f4b-prv.png?v=44a60e3f-c4e5-4d8a-879f-ec5121ad6f4b"
+    },
+    {
+      "id": 50412067,
+      "url": "http://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html",
+      "hn": "https://news.ycombinator.com/item?id=50412067",
+      "title": "Writing as a thinking tool",
+      "time": 1794134512,
+      "points": 240,
+      "depth": [
+        {
+          "text": "writing can help people **work out what they think**, not just **explain it** to someone else",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: some see AI writing as a shortcut around the author's thinking; others use an LLM as a dialog partner, but say to ask it for explanations and check its work with demos.",
+      "comment_count": 74,
+      "terms": [
+        "LLM"
+      ],
+      "entities": [
+        "Figma",
+        "Moleskine",
+        "PowerPoint",
+        "Zen and the Art of Motorcycle Maintenance",
+        "Robert M. Pirsig",
+        "John Langan",
+        "Exploring Writing",
+        "PubMed",
+        "McPhee",
+        "Turing Machine"
+      ],
+      "comments": [
+        {
+          "by": "billypilgrim",
+          "text": "When I had started my PhD, I thought the writing part of a paper was just the last thing I needed to do to summarize my results, like a boring epilogue to the more exciting science. What surprised me was how much of the scientific process relied on my ability to convey my ideas to someone else. And to be able to do that you need clarity of mind, you need to have worked through multiple drafts to…"
+        },
+        {
+          "by": "drewbeck",
+          "text": "This is true for designing, too. I see a lot of people saying Figma is dead because you can prototype directly; for novel UX problems the act of designing — of putting ideas together, assembling a component, even getting good data into a design — is where a lot of my thinking and insights develop. The brain work plus the craft work, the tight loop between thinking and creating is so critical for…"
+        },
+        {
+          "by": "lilerjee",
+          "text": "Writing code (Programming) is a thinking tool too. When you are writing code manually, actually you are thinking about what you are doing, what you will build actually, what are your or users' real requirements, etc."
+        },
+        {
+          "by": "hoppp",
+          "text": "Most of my projects are born out of scribbles on paper, system diagrams with boxes and little arrows to try to describe the system I want to build or my thought process written down like in this post. When I get it on paper and everything feels right I start creating the codebase but I have to get it down first, feels like I remember it more after I save my thoughts to external paper storage."
+        },
+        {
+          "by": "urda",
+          "text": "I always carry a small Moleskine notebook, the pocket-sized hardcover with grid paper, for notes, thoughts, and whatever else comes to mind during the day. Each page is numbered, and I continue the numbering as I move from one notebook to the next. This allows quick reference to past ideas, thoughts, or notes I may have in an older notebook, or even a few pages back. It is the primary way I get…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50415172,
+      "url": "https://respawnfirst.com/linux-script-emails-sam-altman-unused-ram-ram-altman/",
+      "hn": "https://news.ycombinator.com/item?id=50415172",
+      "title": "RAM Altman: Linux Script Emails Sam Altman Daily How Much Unused RAM in Your PC",
+      "time": 1794158429,
+      "points": 203,
+      "depth": [
+        {
+          "text": "someone built a Linux script that can draft **sarcastic emails** to Sam Altman about your **spare RAM**",
+          "tier": "simple"
+        },
+        {
+          "text": "Iain Kay's **BASH script** checks idle RAM and picks a sarcastic email when more than **10%** of total RAM is available. Email isn't **set up by default**, so it won't send anything out of the box.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say Altman was making an efficiency argument and getting unfairly piled on; others see a fight over owning your own hardware and worry the script could turn into a denial-of-service attack.",
+      "comment_count": 87,
+      "terms": [
+        "BASH",
+        "idle RAM",
+        "DRAM",
+        "filesystem cache",
+        "DDoS"
+      ],
+      "entities": [
+        "Ram Altman",
+        "Linux",
+        "Iain Kay",
+        "BASH",
+        "Sam Altman",
+        "OpenAI",
+        "macOS",
+        "X",
+        "RespawnFirst"
+      ],
+      "comments": [
+        {
+          "by": "mindwok",
+          "text": "IMO his comments are blown way out of proportion. He says \"from a global allocation perspective\" it's better to have RAM in the cloud where it can be used much more efficiently. I think there's an argument to be made that this is more than just economics to most people, it's about ownership and freedom, but he's clearly just talking economics."
+        },
+        {
+          "by": "bstsb",
+          "text": "the ridiculous \"no ad blocker\" full-screen modal that's unclosable led me down a rabbit hole there - turns out there's some obfuscated script from \"Ad Shield\" which replaces the whole site with an iframe if you dare to block their domain, \"html-load.com\", which proxies ad networks. fortunately one can just run debugger; to stop it early"
+        },
+        {
+          "by": "Tiberium",
+          "text": "Dupe? https://news.ycombinator.com/item?id=50414839"
+        },
+        {
+          "by": "e2le",
+          "text": "I would hesitate to say the memory used by the filesystem cache is unused."
+        },
+        {
+          "by": "badgersnake",
+          "text": "I didn’t think we’d get to the point where all compute is headed for the data centre and normal people don’t get to have anything bigger than a phone but here we are."
+        }
+      ],
+      "image": "https://respawnfirst.com/wp-content/uploads/2026/11/ram-altman-github.webp"
+    },
+    {
+      "id": 50414427,
+      "url": "https://cleantechnica.com/2026/11/07/tesla-hasnt-had-a-successful-new-product-launch-since-jb-straubel-stepped-down-as-cto/",
+      "hn": "https://news.ycombinator.com/item?id=50414427",
+      "title": "Tesla Hasn't Had a Successful New Product Launch Since JB Straubel Stepped Down",
+      "time": 1794154062,
+      "points": 190,
+      "depth": [
+        {
+          "text": "the article argues Tesla has had no **successful new launch** since **JB Straubel** left as CTO",
+          "tier": "simple"
+        },
+        {
+          "text": "The author suggests the Model Y was the **last big project** Straubel worked on and says **Cybercab’s success** is still unknown. Commenters **dispute the premise**, citing the Model Y refresh, Semi, Cybercab and Robotaxi service, while some say too many factors changed to pin Tesla’s record on Straubel.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some agree Tesla’s product choices have faltered; others cite newer launches and say too many factors make Straubel’s role impossible to isolate.",
+      "comment_count": 231,
+      "terms": [
+        "CTO",
+        "FSD",
+        "vertical integration",
+        "Robotaxi"
+      ],
+      "entities": [
+        "Tesla",
+        "JB Straubel",
+        "Model Y",
+        "Cybercab",
+        "Semi",
+        "Robotaxi",
+        "Waymo"
+      ],
+      "comments": [
+        {
+          "by": "Avicebron",
+          "text": "Isn't Tesla trying to be SpaceX's vertically integrated robotics division? My gut feeling says they are trying to move out of the EV business as crazy as that may seem to us normals."
+        },
+        {
+          "by": "martincsweiss",
+          "text": "There's too many confounders to say that JB Straubel is the cause. Examples: Covid controversies around musk in 2020, Twitter acquisition in 2022, Musk becoming the world richest person in 2021"
+        },
+        {
+          "by": "hn_submit",
+          "text": "The CyberCab won't work out since it has to be truly self driving, as opposed to Tesla's Full Self Driving (Supervised) which is merely a driving aid with the driver responsible if something goes wrong. That means it will have to be more capable a driver than most human beings and that seems unlikely at the moment if you look at how well FSD works today. Yes, it works okay most of the time, but…"
+        },
+        {
+          "by": "xqcgrek2",
+          "text": "Tesla is one china EV tariff away from bankruptcy"
+        },
+        {
+          "by": "nobodyandproud",
+          "text": "The Cybertruck grossly misunderstood the target audience. Look at the Maverick sales, when it was 20k. Slate Auto seems to have gotten it right."
+        }
+      ],
+      "image": "https://cleantechnica.com/wp-content/uploads/2026/11/JB-Straubel.jpg"
+    },
+    {
+      "id": 50413822,
+      "url": "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/",
+      "hn": "https://news.ycombinator.com/item?id=50413822",
+      "title": "OpenAI raises $11B at a $1.25T valuation",
+      "time": 1794149363,
+      "points": 176,
+      "depth": [
+        {
+          "text": "OpenAI got **new funding**, but not at the **valuation** it reportedly wanted",
+          "tier": "simple"
+        },
+        {
+          "text": "The first close brought in **$11 billion** at a **$1.25 trillion pre-money valuation**, below the reported **$1.4 trillion ask**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: skeptics say the shortfall shows investors are wary and may wait for Anthropic's IPO; others say an IPO would narrow OpenAI's options.",
+      "comment_count": 196,
+      "terms": [
+        "pre-money valuation",
+        "IPO",
+        "GAAP"
+      ],
+      "entities": [
+        "OpenAI",
+        "Sarah Friar",
+        "Microsoft",
+        "NVIDIA",
+        "SoftBank",
+        "MGX",
+        "Anthropic",
+        "ChatGPT",
+        "Nasdaq",
+        "Oracle",
+        "Claude",
+        "Musk",
+        "SpaceX"
+      ],
+      "comments": [
+        {
+          "by": "cmiles8",
+          "text": "The real headline is that they couldn’t hit what they wanted in terms of valuation and funds raised. Just were not enough people willing to invest given concerns that it may be downhill from here for a while on AI. This will also make it even harder to avoid any future IPO being a down round. They’re almost certainly worth much less than Anthropic and Anthropic is, per reports, struggling to keep…"
+        },
+        {
+          "by": "bob1029",
+          "text": "OpenAI seems to me like they are operating with a slightly longer horizon strategy than Anthropic. Going for the IPO is the last resort in my mind. It is what you do to get ahead of deteriorating financial conditions. I don't think Anthropic had a choice at their projected burn rate. Why would we surrender all our cloaks and daggers unless we absolutely have to? The political and regulatory…"
+        },
+        {
+          "by": "chris_va",
+          "text": "We always see these headlines and think \"is XYZ company actually worth that much?\" Class A stock gets paid out first, so \"valuation\" here is not what a retail investor would necessarily pay for class C. Basically, do these people think that they'll get their $11B back? If so, they are ok with a high \"valuation\" because there is little risk. And with OpenAI's corporate structure, who knows what is…"
+        },
+        {
+          "by": "vb-8448",
+          "text": "I'm still astonished on how musk outplayed everyone with the spacex ipo."
+        },
+        {
+          "by": "GodelNumbering",
+          "text": "There was an unconfirmed report that upto $10 billion in this round were pledged by a syndicate of UAE investment funds, including MGX https://www.bloomberg.com/news/articles/2026-10-05/openai-in..."
+        }
+      ],
+      "image": "https://247wallst.com/wp-content/uploads/2026/11/openai-just-raised-11-billion-at-a-1-25-trillion-v-featured-1794023504517-scaled.webp"
+    },
+    {
+      "id": 50411467,
+      "url": "https://www.lorekit.io/blog/open-agent-memory-format",
+      "hn": "https://news.ycombinator.com/item?id=50411467",
+      "title": "Agent memory needs its OpenTelemetry moment",
+      "time": 1794127223,
+      "points": 159,
+      "depth": [
+        {
+          "text": "someone wants **agent memory** tools to **share a format**, like observability tools did",
+          "tier": "simple"
+        },
+        {
+          "text": "The author says existing **formats cannot read one another**—from repo instruction files to hosted facts and knowledge graphs—then sketches a **shared record** with an address, identity, lifecycle and writer. The proposed spec would also define common **read/write operations** over MCP; storage, ranking and user interfaces would remain up to individual tools.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: proponents say a shared format could let tools exchange memory; skeptics say agents already handle different formats and it's too early to lock in a standard.",
+      "comment_count": 102,
+      "terms": [
+        "observability",
+        "OpenTelemetry",
+        "MCP",
+        "knowledge graph",
+        "lifecycle",
+        "conformance tests"
+      ],
+      "entities": [
+        "OpenTelemetry",
+        "LoreKit",
+        "MCP",
+        "AGENTS.md",
+        "Anthropic",
+        "LangGraph",
+        "Mem0",
+        "Graphiti",
+        "OpenTracing",
+        "OpenCensus"
+      ],
+      "comments": [
+        {
+          "by": "armchairhacker",
+          "text": "Is this a significant problem? It seems like there are 15 solutions to every AI “text format” problem, but all are merely structure over feeding the AI informal English, structure which I believe the “transformer” model is specifically able to strip to a common form (which is how training it on the entire internet worked). AI does benefit from learning to use skills, and being instructed with…"
+        },
+        {
+          "by": "speedping",
+          "text": "Entire blog post reeks of LLM.\nIf there was an adequately reliable way of detecting LLM text i'd build a browser extension that would just filter it out altogether."
+        },
+        {
+          "by": "Fordec",
+          "text": "On the general premise, I agree. But I don't think that moment is today, not yet anyway. I don't think we understand the right way to approach context and memory yet or how long they should last for, never mind standardizing on an abstraction prematurely that ends up being like SOAP or SGML."
+        },
+        {
+          "by": "lmeyerov",
+          "text": "Premature optimization imo I'm happy with the otel LLM extensions, and would rather this to be a meta protocol vs actual protocol/standard: 1. Harness memory rapidly evolves approach across the full stack, from data storage & rep to overall concept. Arguably we are in an early primitive era because text is being used instead of semantic vectors etc. 2. Even something as basic like a knowledge…"
+        },
+        {
+          "by": "baalimago",
+          "text": "Do we really need this..? What LLMs do well is interpret natural language. So it's a sponge for whatever format is used in a specific project: a predefined format is not really needed. Besides, do we really want memory of user A's agents to co-exist with memory of user B? Not really. So the argument for collaboration and sharing is quite slim, at least for coding agents. The repository specific…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50412152,
+      "url": "https://aworkinglibrary.com/writing/petered",
+      "hn": "https://news.ycombinator.com/item?id=50412152",
+      "title": "Petered",
+      "time": 1794135403,
+      "points": 155,
+      "depth": [
+        {
+          "text": "someone argues people **promoted past competence** may do **dirty work** to save their careers",
+          "tier": "simple"
+        },
+        {
+          "text": "In *Making a Career in Dictatorship*, Gläßel and Scharpf say career pressure can push people to take on **morally contentious tasks** or **sabotage superiors** to regain competitiveness. The essay asks whether talk of imposter syndrome helps obscure **actual imposters** who hide what they do behind busyness.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say the Peter Principle oversimplifies promotions because higher roles require different skills; others say people can advance past their abilities and then protect themselves through relationships or political moves.",
+      "comment_count": 90,
+      "terms": [
+        "Peter Principle",
+        "career pressure",
+        "imposter syndrome",
+        "obfuscation"
+      ],
+      "entities": [
+        "Christian Gläßel",
+        "Adam Scharpf",
+        "Making a Career in Dictatorship",
+        "David Graeber",
+        "Bullshit Jobs"
+      ],
+      "comments": [
+        {
+          "by": "bloomingeek",
+          "text": "<“A-people hire A-people, B-people hire C-people”> I didn't go into management because I didn't think circumstances were stable enough. I did see four co-workers go up the ladder, with disastrous results. Two of them I tried to warn, the other two would have been a waste of time to warn. By the time I retired, two had been fired, one drank himself into a coma, then passed away. The fourth is…"
+        },
+        {
+          "by": "carschno",
+          "text": "I think the Peter Principle addresses a good point, but misses a critical one: the hierarchy itself. Obviously, a manager requires different skills than an engineer, so why should a good engineer be a good manager? This holds the other way round: a good manager is not particularly likely to be a good engineer. Both is fine, these are just different jobs. However, the problem is that the manager…"
+        },
+        {
+          "by": "JSR_FDED",
+          "text": "After they’ve been promoted to their level of incompetence, they lean in very hard on relationships to survive. Organizations where they get away with this are miserable to work for, and their influence ensures nothing merit-related ever happens again. Literally the source of the famous expression “A-people hire A-people, B-people hire C-people”."
+        },
+        {
+          "by": "poopingatwork",
+          "text": "It's easier to remember that in some organizations, it's about what you can do. In others, it's about who you know. But when it comes to internal promotions: it's a mix of both, and promoting people who are likely to boost your own career is an obvious choice. When someone incompetent is promoted, people below them see their incompetence. However, the people above the promoter only see the…"
+        },
+        {
+          "by": "moktonar",
+          "text": "I find the logic behind the principle itself buggy as it assumes that people will not improve in what they do. Even if one gets promoted close to his or her level of incompetence, it doesn’t mean that he can’t become more knowledgeable while making experience. That by the way is almost always the case, unless you reach your hard limit (eg QI or something), then you should not get further promoted…"
+        }
+      ],
+      "image": "https://aworkinglibrary.com/img/social-2026.png"
+    },
+    {
       "id": 50410107,
       "url": "https://caleb.software/posts/claude-to-pi.html",
       "hn": "https://news.ycombinator.com/item?id=50410107",
@@ -569,6 +1178,41 @@
     }
   ],
   "glossary": {
+    "coding agent": "An AI tool that can help write or change code, often by using other tools.",
+    "client trading flows": "Information about clients' trades and how much is moving through the market.",
+    "information barriers": "Rules that keep sensitive information from passing between groups, such as bankers and traders.",
+    "IPO": "Initial Public Offering: when a company first offers its shares for the public to buy.",
+    "quantization": "A way to make a model use less computing power by representing its internal numbers less precisely.",
+    "MoE": "Mixture of Experts: a model with many specialist parts that sends each piece of text to only a few of them.",
+    "prefill": "The part of an AI request where it reads the prompt and earlier conversation before writing its answer.",
+    "KV cache": "A store of earlier model calculations that it can reuse instead of doing them again.",
+    "tok/s": "Tokens per second: a rough measure of how quickly an AI produces text.",
+    "AGI": "Artificial General Intelligence: a hypothetical AI that could handle many kinds of tasks, not just one narrow job.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "ASI": "Artificial Superintelligence: a hypothetical AI far more capable than people across a wide range of tasks.",
+    "foreign intelligence effort": "An effort by people working for another country to secretly gather information.",
+    "outside independent counsel": "A lawyer from outside the company brought in to help review a matter.",
+    "BASH": "Bourne Again SHell: a program that runs written commands, often to automate computer tasks.",
+    "idle RAM": "RAM a computer appears not to need at the moment, though people can disagree about what counts as unused.",
+    "DRAM": "Dynamic Random-Access Memory: the working memory a computer uses while running things.",
+    "filesystem cache": "A place in memory where a computer keeps file information so it can get to it faster next time.",
+    "DDoS": "Distributed denial-of-service: an attack that floods a service with traffic so people can't use it.",
+    "CTO": "Chief technology officer: the person responsible for a company's technology work.",
+    "FSD": "Full Self-Driving: Tesla's name for driving software that, as a commenter notes, still needs a human driver to supervise it.",
+    "vertical integration": "A company handling more steps of making or selling its products itself, instead of relying on other companies.",
+    "Robotaxi": "A taxi service using cars intended to drive themselves, rather than a human taxi driver.",
+    "pre-money valuation": "A company's estimated value before new investment money is added.",
+    "GAAP": "Generally Accepted Accounting Principles: the standard rules companies use when reporting their finances.",
+    "observability": "Ways to tell what a running program is doing and spot when something goes wrong.",
+    "OpenTelemetry": "A way to collect and send records about what software is doing, such as its requests.",
+    "MCP": "Model Context Protocol: a standard way for AI apps to connect to outside tools.",
+    "knowledge graph": "A way to organize information by showing how people, places, or things are connected.",
+    "lifecycle": "Rules for how long a memory stays useful and when it should expire.",
+    "conformance tests": "Checks that a tool follows the agreed rules.",
+    "Peter Principle": "The idea that people keep getting promoted until they reach a job they are not good at.",
+    "career pressure": "The threat of losing your job or career when you can no longer move up, which can push you to take bigger risks.",
+    "imposter syndrome": "The feeling that you do not deserve your success or will be found out, even when others think you are capable.",
+    "obfuscation": "Making something harder to see or recognize.",
     "coding harness": "A program around a coding AI that lets it use tools like reading files and running commands.",
     "IDE": "Integrated Development Environment: an app that brings coding and other development tools together.",
     "system prompt": "Extra instructions set before a conversation that guide how the AI answers.",
