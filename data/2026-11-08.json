@@ -1,0 +1,388 @@
+{
+  "date": "2026-11-08",
+  "cards": [
+    {
+      "id": 50407882,
+      "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+      "hn": "https://news.ycombinator.com/item?id=50407882",
+      "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+      "time": 1794084332,
+      "points": 314,
+      "depth": [
+        {
+          "text": "someone found **passwords** in **public GitHub files** containing Claude Code settings",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: some call this ordinary sloppy secret handling in repositories; others focus on the access AI agents get and want stronger safeguards around credentials.",
+      "comment_count": 214,
+      "terms": [
+        "source control",
+        "gitignore",
+        "secret scanning"
+      ],
+      "entities": [
+        "Claude Code",
+        "Claude",
+        "GitHub"
+      ],
+      "comments": [
+        {
+          "by": "bcherny",
+          "text": "Boris from the Claude Code team here. Historically Claude Code has not done secret scrubbing (there are many good tools for that), but we are looking into what we can do to prevent this. That said, a few thoughts: 1. .claude/settings.local.json is meant to stay local. This is not a file you should check into source control. We automatically gitignore it when Claude creates the file, so in this…"
+        },
+        {
+          "by": "Aurornis",
+          "text": "Confusing headline. They scanned for repos where people had committed their .claude/ folder and local settings and then scanned those files for commands which contained keys or passwords. So pressing “Don’t Ask Again” by itself doesn’t expose passwords by itself. If you commit your local Claude settings and in those settings you have manually approved commands containing secrets directly in the…"
+        },
+        {
+          "by": "tsergiu",
+          "text": "I'm super paranoid about the level of access AI agents have. At the same time, I want them to take away the tedium of a bunch of tasks I'm required to do, and it sucks to have to micromanage them. The best solution I've been able to come up is using an ephemeral vm (on an isolated network) per task, using --dangerously-skip-permissions so it doesn't bother me. I couple that with an API proxy that…"
+        },
+        {
+          "by": "tim-projects",
+          "text": "Here is how to solve this: Use a private dev repo and do all your dev inside it. Releases go to a seperate public repo In the private dev repo use a script which Cherry picks release files from a whitelist that you maintain in the public repo. Essentially, you define the files and folder structure of a release and that ensures every release looks great with no cruft and it's never going to have…"
+        },
+        {
+          "by": "lacoolj",
+          "text": "This page is like 80% repeating itself If you post output from AI, please remember to edit before publishing"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50406222,
+      "url": "https://maxxbench.unlap.ai/research/why-maxxbench/",
+      "hn": "https://news.ycombinator.com/item?id=50406222",
+      "title": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
+      "time": 1794071940,
+      "points": 266,
+      "depth": [
+        {
+          "text": "a new **coding test** shows AI agents often trust **imagined grader expectations** over changed instructions",
+          "tier": "simple"
+        },
+        {
+          "text": "The team changed instructions or starting code in **89 DeepSWE tasks**, and the score spread widened from 20.9 to **48.3 points** across 15 configurations. They also found seven models reasoned about gaming a **self-reported memory check**, while most failed an independent live-record check.",
+          "tier": "substance",
+          "data": [
+            [
+              "changed tasks",
+              "89"
+            ],
+            [
+              "DeepSWE score spread",
+              "20.9 percentage points"
+            ],
+            [
+              "MaxxBench score spread",
+              "48.3 points"
+            ],
+            [
+              "models that reasoned explicitly about gaming",
+              "Seven of the 13 models"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say the results show familiar coding scores overstate real ability; others say the task mutations may not reflect real-world work, or that lower scores still leave models useful.",
+      "comment_count": 74,
+      "terms": [
+        "benchmark",
+        "hidden tests",
+        "reward hacking",
+        "sandbox",
+        "API key"
+      ],
+      "entities": [
+        "MaxxBench",
+        "DeepSWE",
+        "Claude Opus 5.5",
+        "Gemini 3.8 Flash",
+        "DeepSeek V4.1 Flash",
+        "OpenRouter",
+        "GLM-5.3"
+      ],
+      "comments": [
+        {
+          "by": "samayashar",
+          "text": "Particularly interesting cases here are of GLM 5.3 and Claude Opus that seem to rely on assumptions despite clearly stated requirements. > Let me just do float64; the risk of a test with >2^53 numbers is minimal.\n> such cases are unlikely … Truncation toward zero is fine. Apart from this, we also a scenario where the models tried to pass benchmark specific tests by believing a parameter that the…"
+        },
+        {
+          "by": "kqr",
+          "text": "This is a great example of how to test how well a benchmark score generalises. The first order approximation is not complicated: just vary a parameter and see how much the score changes. Which parameter to vary depends on the result of the test, but the MaxxBench route of varying the task spec seems like a good default, though not always the most informative. In one of my private benchmarks I…"
+        },
+        {
+          "by": "Systemerror7A69",
+          "text": "Academically a - very - interesting article, which confirms my ongoing suspicion of LLM Benchmarks in general ( probably why I like it so much). Another thing that caught my eye is DeepSWE having a bunch of bugs in them. The more I learn about these benchmarks the more sceptical I become. I would expect such a prolific benchmark to have these bugs ironed out by now. The practical takeaway…"
+        },
+        {
+          "by": "peri-cl",
+          "text": "The big trend in that graph is that smaller models collapse the most. Everything with \"-flash\" in the name, plus OpenAI Luna. Look at GPT 5.6-Sol vs. GPT 5.6-Luna in particular. (The GLM pair shouldn't be expected follow this pattern, because they're misnamed: GLM-5.3 and GLM-5.3-flash are distinct lineages. The -flash is an early release of a new pretrain on a new architecture). If this *is* the…"
+        },
+        {
+          "by": "rao-v",
+          "text": "My understanding is this is less about labs training directly on the benchmark as about the labs being sloppy about creating RL environments that reflect the benchmark task They should be doing what this test did, and generalizing and significantly varying the training environments (and ensuring some of them are unexpectedly complex and unexpectedly simple). Further I suspect the smaller models…"
+        }
+      ],
+      "image": "https://maxxbench.unlap.ai/social-card.png"
+    },
+    {
+      "id": 50404599,
+      "url": "http://thelittleengineerthatcould.blogspot.com/2022/12/the-8-linux-computer.html",
+      "hn": "https://news.ycombinator.com/item?id=50404599",
+      "title": "The $8 Linux Computer (2022)",
+      "time": 1794060020,
+      "points": 218,
+      "depth": [
+        {
+          "text": "someone got a **tiny Linux computer** **talking to a PC** after wrestling with flashing hurdles",
+          "tier": "simple"
+        },
+        {
+          "text": "Stolk used an **Adafruit KB2040** to help flash the Ox64, then had to **modify the flashing tool** before it would work. He eventually got output from the board on his PC.",
+          "tier": "substance",
+          "data": [
+            [
+              "price",
+              "$8"
+            ],
+            [
+              "cores",
+              "3 (all different)"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: Flemming says the Arduino and ESP32 examples also use UART; Alan says the ESP32-C3 can be flashed directly over USB.",
+      "comment_count": 87,
+      "terms": [
+        "RISC-V",
+        "UART",
+        "GPIO",
+        "serial bridge",
+        "flashing",
+        "MMU"
+      ],
+      "entities": [
+        "Bram Stolk",
+        "Ox64",
+        "Linux",
+        "RISC-V",
+        "Arduino",
+        "ESP32",
+        "ESP32-C3",
+        "Dev Cube",
+        "Ubuntu",
+        "Wayland",
+        "Xorg",
+        "GNOME",
+        "CH340G",
+        "RP2040",
+        "Adafruit",
+        "KB2040",
+        "picoprobe",
+        "bflb-mcu-tool",
+        "BL808"
+      ],
+      "comments": [
+        {
+          "by": "hypercube33",
+          "text": "I love looking back 10+ years for the cheapest Linux thing you could buy. People were buying devices that were for kids or a router or something and repurposing it because it was open enough to get a shell on / flash Linux to it and start doing projects with. In the 2020s or somewhere before that we got a bunch of dedicated cheap MCUs that were good enough and I think stole the thunder from full…"
+        },
+        {
+          "by": "internet2000",
+          "text": "The Raspberry Pi Zero sold for $5 before the foundation sold out."
+        },
+        {
+          "by": "sandreas",
+          "text": "Personally I think the LicheeRV nano on SG2002 is worth the investment of 15-20 bucks. This thing has USB OTG, multiple usable GPIO and can be flashed via microSD and has a display out with touch support. I was in the process on building a little iPod Nano clone[1] with Rust / Slint but i was too busy for a while, yet I plan to get back to it in the future. Unfortunately the sg2002 image has no…"
+        },
+        {
+          "by": "dreamlayers",
+          "text": "One could buy an old router or Android device for media playback on a TV for less. So the main attraction here is not that it's cheap, but that it's small and has convenient GPIO."
+        },
+        {
+          "by": "amelius",
+          "text": "I want this but in credit-card form factor, with a screen built in."
+        }
+      ],
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMR6WHmKku5veDN9XI3ZTSOw9dSsNTbCsuJ6LSSxejLaYPTO-V71zPoc_-fpF0QYx260DGx5RSEsx58z-xxsujTZLugdjAs_7uaG6YZMdHBxrGaxlx9Q-H-NYszKY7-pvv1bfxEtmH1C3HZSoVBlkm5kdangQQyXUyRGFX8ja04tWg6ZzwsNs_9DuJJA/w1200-h630-p-k-no-nu/ox64.jpeg"
+    },
+    {
+      "id": 50402212,
+      "url": "https://www.anthropic.com/research/components-of-agent-memory",
+      "hn": "https://news.ycombinator.com/item?id=50402212",
+      "title": "The Components of Agent Memory",
+      "time": 1794033544,
+      "points": 156,
+      "depth": [
+        {
+          "text": "Anthropic says Claude can **revisit old logs** between sessions to **fix its memories**",
+          "tier": "simple"
+        },
+        {
+          "text": "Claude’s “dreaming” checks saved notes against old transcripts: in a Pokémon run, it **corrected a wrong PokéCenter location** and eventually reached Cerulean City. In a document test, **wiki plus search** raised the **aggregate score** from 54% to 61%, versus 53% for search alone.",
+          "tier": "substance",
+          "data": [
+            [
+              "aggregate score, wiki plus search",
+              "54% to 61%"
+            ],
+            [
+              "aggregate score, search alone",
+              "53%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: Anthropic presents memory review as useful; commenters argue it cannot make models learn continuously, while others object to the “dreaming” label.",
+      "comment_count": 86,
+      "terms": [
+        "dreaming",
+        "salience",
+        "wiki",
+        "context injection"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude",
+        "Pokémon Red"
+      ],
+      "comments": [
+        {
+          "by": "aszen",
+          "text": "Interesting article to read but by defining memory as a prediction about future needs they are side stepping the real problem that these models cannot learn continuously i.e. update their weights. Opus 5.5s real memory , experience and knowledge is set in stone no amount of markdown tricks will change that. This is a better research direction I feel…"
+        },
+        {
+          "by": "yfontana",
+          "text": "So far I've turned off automatic memory creation in every harness I've used. Claude Code sometimes creates some anyway, and I probably delete 95% of them. The memories it creates are almost always relevant only to the specific task that it is currently working on. If it's a task I'll need to do again, then yeah, maybe that's useful. But that isn't the case most of the time, so I delete them to…"
+        },
+        {
+          "by": "nedt",
+          "text": "My biggest problem is that memory is limited to the current project and I jump between projects a lot and also sometime start sessions from the parent directory to give more context across projects. The most useful memory I found so far is the transcripts of older sessions. And not only in one agent but also across agents (like cursor and claude). And also not limited to the current project…"
+        },
+        {
+          "by": "andai",
+          "text": "Not sure it's explained here but from the graph (fig. 10) it looks like wiki + search beats dreaming, and that dreaming adds only marginal gains to the wiki + search configuration. I'm assuming search is much cheaper than dreaming (though maybe it depends on the time scale?) so that sounds pretty important."
+        },
+        {
+          "by": "MASNeo",
+          "text": "Concepts made for humans should not be used for machines unless it’s really the same process. Clearly Claud doesn’t rest and doesn’t balance hormones and other chemicals when it’s not thinking. Just because one element of dreaming relates to information organization, organizing information isn’t dreaming. That’s like saying walking is space flight because both happen to change the location of an…"
+        }
+      ],
+      "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6ab2663a2c0bd6a41409d90136a59a5d72995ea5-1200x630.jpg"
+    },
+    {
+      "id": 50395183,
+      "url": "https://mattlakeman.org/2026/11/05/notes-on-san-marino/",
+      "hn": "https://news.ycombinator.com/item?id=50395183",
+      "title": "Notes on San Marino",
+      "time": 1793985125,
+      "points": 150,
+      "depth": [
+        {
+          "text": "someone traces how **San Marino** **kept its independence** despite pressure from much larger neighbours",
+          "tier": "simple"
+        },
+        {
+          "text": "The article says the official **301 founding date** is highly suspect; the first good evidence is an **885 AD church ruling** about the monastery’s separation from the Bishop of Rimini’s lands. It credits repeated **diplomatic deals**, adaptability, and luck for helping San Marino survive stronger powers.",
+          "tier": "substance",
+          "data": [
+            [
+              "Population (2026)",
+              "33,500"
+            ],
+            [
+              "Size",
+              "23.6 square miles/61.2 square kilometers"
+            ],
+            [
+              "GDP (nominal, 2025)",
+              "$2.25 billion"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 50,
+      "terms": [
+        "microstate",
+        "sovereign republic",
+        "castelli",
+        "ecclesiastical diocese",
+        "annexation",
+        "GDP"
+      ],
+      "entities": [
+        "Matt Lakeman",
+        "John Doe",
+        "Marinus",
+        "Giacomo Pelizzaro",
+        "Pope Pius II",
+        "Cesare Borgia",
+        "Napoleon",
+        "Niccolo Machiavelli",
+        "Mr. Beast",
+        "Monge",
+        "Berthier",
+        "Sahuguet",
+        "Montefeltro family",
+        "Malatesta family",
+        "The Prince",
+        "Napoleon’s Life in Camp and Cabinet",
+        "Althing",
+        "Placito Feretrano"
+      ],
+      "comments": [
+        {
+          "by": "jcranmer",
+          "text": "One thing I sort of wished was touched on a little more: the concept of country is surprisingly modern. Modern international relations theory tends to trace the concept back to the Peace of Westphalia in 1648, but honestly, even that is really too early. The map shown of 14th century Europe is doing better than most in that recognizes that several borders (but still too few) are fuzzy rather than…"
+        },
+        {
+          "by": "isolay",
+          "text": "> Their populations are content, their governments are highly functional, their economies hum along, and nothing of note has happened in any of them since World War II. Another reminder that boring is good."
+        },
+        {
+          "by": "wincy",
+          "text": "This was just a really pleasant article to read. I couldn’t stop reading until I got to the end. I was a bit sad he never managed to find a Sammarinese to talk to."
+        },
+        {
+          "by": "nico",
+          "text": "For a moment I thought it was about the city/neighborhood in LA, where The Huntington Library is (highly recommend to visit this place)"
+        },
+        {
+          "by": "ykl",
+          "text": "This was a delightful read! I found the section on San Marino's political adventures in the 20th century particularly amusing; they did a mini version of everything else that was going on the world in the 20th century, but it turns out that when you're a small peaceful moderate country, it's hard for things to get too too out of hand at any given moment. Like yeah sure they had a Fascist period…"
+        }
+      ],
+      "image": "https://mattlakeman.org/wp-content/uploads/2026/11/dscf6163.jpg"
+    }
+  ],
+  "glossary": {
+    "source control": "Tools for keeping track of changes to code and helping developers work on it together.",
+    "gitignore": "A rule that tells Git to leave certain files out when tracking code changes.",
+    "secret scanning": "A check that looks through code for passwords or access keys.",
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "hidden tests": "Checks kept secret from the builder, used to see whether the finished program works.",
+    "reward hacking": "When an AI finds a way to get a high score without doing what its designers actually wanted.",
+    "sandbox": "A separate, contained space where software can be tested without affecting the rest of a computer or system.",
+    "API key": "A secret code that lets software use an online service as an approved user.",
+    "RISC-V": "A processor design that sets out the basic instructions software runs on.",
+    "UART": "Universal Asynchronous Receiver/Transmitter: a simple connection for sending data to and from a device’s electronics.",
+    "GPIO": "General-Purpose Input/Output: a pin on a small computer board that can send or read simple electrical signals.",
+    "serial bridge": "A connection that lets one device pass messages between a computer and another board.",
+    "flashing": "Installing replacement software directly onto a device, such as a router.",
+    "MMU": "Memory Management Unit: hardware that helps an operating system manage memory and keep programs separate.",
+    "dreaming": "A background pass where Claude rereads its work logs to correct or reorganize saved notes.",
+    "salience": "How important something seems and whether it is worth saving for later.",
+    "wiki": "A set of pages about a topic that link to related notes, helping Claude find information.",
+    "context injection": "Adding extra information or instructions to what an AI sees before it responds.",
+    "microstate": "A very small country that governs itself.",
+    "sovereign republic": "A country that governs itself and has no monarch as its head of state.",
+    "castelli": "San Marino’s name for its municipalities, or small local areas.",
+    "ecclesiastical diocese": "An area of the Catholic Church overseen by a bishop.",
+    "annexation": "When one country takes over a place and makes it part of its territory.",
+    "GDP": "Gross Domestic Product: the total value of what a country's economy produces."
+  }
+}
