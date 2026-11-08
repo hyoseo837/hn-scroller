@@ -2,6 +2,215 @@
   "date": "2026-11-08",
   "cards": [
     {
+      "id": 50410107,
+      "url": "https://caleb.software/posts/claude-to-pi.html",
+      "hn": "https://news.ycombinator.com/item?id=50410107",
+      "title": "Goodbye Claude, Hello Pi",
+      "time": 1794107508,
+      "points": 428,
+      "depth": [
+        {
+          "text": "someone is leaving **Claude Code** for **Pi** after getting fed up with its rough edges",
+          "tier": "simple"
+        },
+        {
+          "text": "The VSCode connection only lets **one session at a time** receive text selections. The writer says **over 3/4 of 244 releases** changed the system prompt or tool descriptions. On Pi, they built a **multi-tab extension** in like 20 minutes.",
+          "tier": "substance",
+          "data": [
+            [
+              "Claude Code releases this year",
+              "244"
+            ],
+            [
+              "releases that changed the system prompt or tool descriptions",
+              "over 3/4"
+            ],
+            [
+              "time to build the multi-tab extension",
+              "like 20 minutes"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: Pi fans praise its control and customizability; Claude Code users say it works smoothly for them, while others argue the complaints mostly reflect the author's VS Code setup.",
+      "comment_count": 269,
+      "terms": [
+        "coding harness",
+        "IDE",
+        "system prompt",
+        "subagent",
+        "TUI",
+        "GUI"
+      ],
+      "entities": [
+        "Claude Code",
+        "Pi",
+        "Anthropic",
+        "Claude",
+        "Claude Pro",
+        "VS Code",
+        "GitHub",
+        "Python",
+        "ChatGPT",
+        "Claude Desktop",
+        "Cursor",
+        "Codex",
+        "DeepSeek Harness",
+        "DeepSeek",
+        "GLM-5.3-flash",
+        "deepseekv4.1-flash",
+        "ThinkRail",
+        "JetBrains",
+        "Copilot CLI",
+        "Ollama",
+        "Emacs",
+        "OpenArtifacts",
+        "Cloudflare",
+        "Herdr",
+        "pi-subagents",
+        "pi-quota-dispatcher",
+        "pi-claude-code",
+        "Autere",
+        "Yaw"
+      ],
+      "comments": [
+        {
+          "by": "bottlepalm",
+          "text": "I used to use ChatGPT/Claude in the TUI up until like 3 months ago, but my usage of LLMs has exploded - many sessions across many projects. I feel like I outgrew the TUI and now I'm using ChatGPT/Claude desktop. VS Code has become a code review tool and place where I manage git if need be. The GUI is less verbose with the nitty gritty hidden in expandable sections, which makes history easier and…"
+        },
+        {
+          "by": "leobuskin",
+          "text": "Pi is a good harness (I finally gave it a try w/ abliterated GLM), but not with Anthropic subscription, and there are multiple reasons to avoid alternative harnesses with their models in general (imho): 1. Potential ban due to ToS violation; 2. It doesn't follow all Anthropic's communication mechanisms out-of-the-box, they heavily use custom headers, hidden flags, and undocumented API features…"
+        },
+        {
+          "by": "edstarch",
+          "text": "isn’t the point of CC the subsidized tokens of the pro/max accounts? the tool descriptions and system prompts are notoriously overcooked but you can work around it with careful config; my startup context in CC is 10k, and i could have pruned it way more if i had wanted to be aggressive about it."
+        },
+        {
+          "by": "gvkhna",
+          "text": "Pi is without contest the best harness. Because it’s yours, the total control is the only way to move from driving agents to orchestrating them. My interruptions and frustration with llms has gone down a cliff. It’s amazing to see what just a few lines of system prompt really can do to keep agents doing the correct thing much more often."
+        },
+        {
+          "by": "siraben",
+          "text": "I've been daily driving Pi for over a month now and never looking back. The latest crop of frontier models have really complex bash calls, so I've written an extension that rewrites them into plain English while still making them easy to reveal in full, unlike some harnesses which seem to try to hide this from the user which is pretty irresponsible IMO.[0] [0]…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50408713,
+      "url": "https://eli.thegreenplace.net/2025/making-any-integer-with-four-2s/",
+      "hn": "https://news.ycombinator.com/item?id=50408713",
+      "title": "Making any integer with four 2s (2025)",
+      "time": 1794091138,
+      "points": 160,
+      "depth": [
+        {
+          "text": "someone used nested square roots to make **any natural number** from **exactly four 2s**",
+          "tier": "simple"
+        },
+        {
+          "text": "Paul Dirac's general solution combines **nested square roots** with **base-2 logarithms**. The article gets to four 2s by replacing one digit with √(2+2).",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters call square roots or writing 22 cheating; the article says its square-root fix fits the puzzle's rules.",
+      "comment_count": 44,
+      "terms": [
+        "natural number",
+        "nested square roots",
+        "base-2 logarithm",
+        "Gamma function",
+        "Peano arithmetic",
+        "successor function",
+        "concatenation"
+      ],
+      "entities": [
+        "Eli Bendersky",
+        "Paul Dirac",
+        "Graham Farmelo",
+        "The Strangest Man",
+        "ITA Software",
+        "Google"
+      ],
+      "comments": [
+        {
+          "by": "Someone",
+          "text": "It’s true cheating, but if you assume the Peano axioms, you can write any integer with one zero without having to resort to complex functions such as √. For example (if I didn’t miscount the S-es or parentheses), S(S(S(S(S(S(S(0)))))))) = 7"
+        },
+        {
+          "by": "hahajk",
+          "text": "i know everyone plays with their own rules, but from my perspective, a square root spends a 2 - it's not an operator like + or ! . there's an implicit \"2\" since you could also take the cube root or fourth root"
+        },
+        {
+          "by": "adas0693",
+          "text": "there is a related problem (inspired by an interview questions from ITA software, a part of Google now) that asks to find the smallest positive integer that cannot be expressed using a digit K (in [2,9]) N times in an expression that involves the four basic arithmetic operations and the parentheses: +, -, *, /, (, and ). to make the problem more interesting, the list of operations can be extended…"
+        },
+        {
+          "by": "bajard",
+          "text": "22 is cheating because 22 = 2*10+2 is arbitrary in base 10. If you write 22 in some base, you have to write the base, and that's an extra number."
+        },
+        {
+          "by": "gnabgib",
+          "text": "Popular last year (368 points, 165 comments) https://news.ycombinator.com/item?id=43145753"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50408931,
+      "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/",
+      "hn": "https://news.ycombinator.com/item?id=50408931",
+      "title": "GitHub New pull request overview page in public preview",
+      "time": 1794092980,
+      "points": 154,
+      "depth": [
+        {
+          "text": "GitHub is testing a **redesigned pull request page** that puts **merge status and actions** up front",
+          "tier": "simple"
+        },
+        {
+          "text": "The **opt-in preview** puts a **readiness summary** at the top, with merge status and next actions; you can filter for unresolved conversations and sort comments from newest to oldest.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some say it’s a useful step up; others say it misses core review problems or adds too many clicks.",
+      "comment_count": 107,
+      "terms": [
+        "pull request",
+        "merge queue"
+      ],
+      "entities": [
+        "GitHub",
+        "CodeApprove",
+        "Graphite",
+        "Gitea"
+      ],
+      "comments": [
+        {
+          "by": "capevace",
+          "text": "We’ve been building our own Review Pipeline, including automated review guides, risk detection and much more. There’s SO much to be done around Code Review, I’m very surprised GitHub isn’t doing more. They have the reach already, they have years of real review data. And yet, the PR itself is not using any of the newly available methods for more efficient review. Agents are hammering PRs out left…"
+        },
+        {
+          "by": "gz09",
+          "text": "I wish they would instead focus on fixing the regressions with PRs first...\nFor example: There is a nasty bug that got introduced recently where you click \"Merge when ready\" but your chances of things actually going to the merge queue seem to be only at about 60-70%. When it happens the way you usually find out if things still aren't merged the next day. Their support has acknowledged the issue…"
+        },
+        {
+          "by": "habosa",
+          "text": "This is a major improvement and still not great. I made CodeApprove ( https://codeapprove.com ) 6+ years ago just because the PR page on GitHub is so bad and I felt the urge to make it better. IMO the correct design is pretty simple:\n- Everything on one page, information dense\n- Focus on code and unresolved discussions, maybe CI checks\n- Keyboard navigation Graphite gets pretty close! But it's…"
+        },
+        {
+          "by": "locallylinear",
+          "text": "Idk, I just ask my agent what the status of the PR is in terms of failing checks, outstanding comments, etc. But this seems fine If anything I think the place to invest a better UX is on reviewing code, even “my” (agent’s) own code before I ask for a review. In a world where we’re moving away from IDEs, and using terminal apps or desktop apps to code, I often don’t even see the code until it’s on…"
+        },
+        {
+          "by": "johnnypangs",
+          "text": "I don’t like that they reversed the the comment thread order but didn’t include a native way to include previews. Now instead of having to scroll to bottom to see the merge button. I have to scroll to the bottom to see the preview."
+        }
+      ],
+      "image": "https://github.blog/wp-content/themes/github-2021-child/dist/img/social-v3-new-releases.jpg"
+    },
+    {
       "id": 50407882,
       "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
       "hn": "https://news.ycombinator.com/item?id=50407882",
@@ -360,6 +569,21 @@
     }
   ],
   "glossary": {
+    "coding harness": "A program around a coding AI that lets it use tools like reading files and running commands.",
+    "IDE": "Integrated Development Environment: an app that brings coding and other development tools together.",
+    "system prompt": "Extra instructions set before a conversation that guide how the AI answers.",
+    "subagent": "A helper assigned a smaller part of a larger task.",
+    "TUI": "Terminal User Interface: the menus and controls an app shows inside a text terminal.",
+    "GUI": "Graphical user interface: the buttons, pictures, and menus you use on a screen instead of typing commands.",
+    "natural number": "A whole number used for counting, sometimes including zero.",
+    "nested square roots": "A chain where you take the square root of something that already contains a square root.",
+    "base-2 logarithm": "It answers: what should 2 be raised to, to make this number?",
+    "Gamma function": "A function that extends the idea of factorials beyond whole numbers.",
+    "Peano arithmetic": "A way to build counting numbers starting at zero and adding one again and again.",
+    "successor function": "A rule that takes a number and gives the next one, like 4 becoming 5.",
+    "concatenation": "Joining digits side by side to write a number, like making 22 from two 2s.",
+    "pull request": "A proposal to add your code changes to a shared project, usually asking others to review them first.",
+    "merge queue": "A waiting line that checks code changes before adding them to the shared project.",
     "source control": "Tools for keeping track of changes to code and helping developers work on it together.",
     "gitignore": "A rule that tells Git to leave certain files out when tracking code changes.",
     "secret scanning": "A check that looks through code for passwords or access keys.",
