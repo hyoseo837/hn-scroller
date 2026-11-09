@@ -2,6 +2,1758 @@
   "date": "2026-11-09",
   "cards": [
     {
+      "id": 50429906,
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "hn": "https://news.ycombinator.com/item?id=50429906",
+      "title": "Claude Fable 5.2 and Mythos 5.2",
+      "time": 1794250589,
+      "points": 792,
+      "depth": [
+        {
+          "text": "Anthropic says **Claude Fable and Mythos** handle tougher technical work and **generate outputs faster**",
+          "tier": "simple"
+        },
+        {
+          "text": "Fable has **strong cybersecurity and biology safeguards** that let Anthropic offer it to all users; organizations doing beneficial cybersecurity or biomedical research can apply for Mythos. Anthropic says **1,000 agents** formalized Fermat’s Last Theorem in **30 hours**, and the models generate outputs up to 30% faster than their predecessors at lower prices.",
+          "tier": "substance",
+          "data": [
+            [
+              "output speed",
+              "up to 30% faster"
+            ],
+            [
+              "input price",
+              "$8 per million input tokens"
+            ],
+            [
+              "output price",
+              "$40 per million output tokens"
+            ],
+            [
+              "formalization time",
+              "30 hours"
+            ],
+            [
+              "agents on formalization",
+              "1,000"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some testers report coding, speed, and reliability gains; others say the benchmark comparisons are skewed by effort or token budgets, and question whether Fable is much better than Opus for ordinary coding.",
+      "comment_count": 465,
+      "terms": [
+        "agents",
+        "formalization",
+        "tokens",
+        "benchmark"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude Fable 5.2",
+        "Claude Mythos 5.2",
+        "Claude Opus 5.5",
+        "Fermat’s Last Theorem",
+        "Lean"
+      ],
+      "comments": [
+        {
+          "by": "skeledrew",
+          "text": "Damn people were right about 5.5 being nerfed in preparation for a version release. This is not at all a good look. - https://news.ycombinator.com/item?id=50422069"
+        },
+        {
+          "by": "yewenjie",
+          "text": "> Our first formalization of Fermat’s Last Theorem, performed by an unreleased research version of Claude, took 11 days. It relied on a purpose-built harness along with guidance from a human researcher. By contrast, a team of 1,000 Fable 5.2 agents fully formalized the theorem in just 30 hours, with minimal human intervention. Fable 5.2 started from minimal prompts, built its own ways to…"
+        },
+        {
+          "by": "postalcoder",
+          "text": "I’ve had a chance to use fable 5.2. Some observations: - Anthropic is finally well balanced across models. Meaning: Opus 5.5 is so good that I do not feel Fable FOMO as I did when it was Fable 5/5.1 vs Opus 4.8/5. And Sonnet 5.5 sometimes makes me forget about Opus. - Fable is good, but you really have to push the ambition of your prompt in order to see proper separation from Opus 5.5. I…"
+        },
+        {
+          "by": "breakwaterlabs",
+          "text": "- Why are they stacking Fable xHigh against Carbon Med? - How did they produce such a bizarre effort-intel curve for Carbon that goes against every available benchmark? - Why did they leave Carbon-- positioned primarily as a cyber model-- off of the single cyber benchmark comparison? - Why do they switch to comparing against Argon (rather than carbon) for robodojo?"
+        },
+        {
+          "by": "dualvariable",
+          "text": "Setting aside the comments about nerfing, do normal mortals out there have workflows that really require Fable/Mythos and don't just work fine on Opus 5.5? I've been using Opus 5.5 on xhigh for some decently aggressive software development on a ~125k-line project, and it has been fine for me. I'm not really willing to dive into a \"rewrite the whole project, don't make any mistakes\" level of…"
+        }
+      ],
+      "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/b2dab182c77b4ccfd36423470106915b20f676ae-1200x630.jpg"
+    },
+    {
+      "id": 50424581,
+      "url": "https://www.foldableflight.com",
+      "hn": "https://news.ycombinator.com/item?id=50424581",
+      "title": "Fold Epic Paper Airplanes",
+      "time": 1794226762,
+      "points": 771,
+      "depth": [
+        {
+          "text": "someone made a site with **paper-plane folding guides**, from easy builds to **record-setting designs**",
+          "tier": "simple"
+        },
+        {
+          "text": "The page lists a **World Record prototype** said to fly over 300 feet, plus Unite, which holds the time-aloft record at **31.2 seconds**. Creator Kyle says it also features planes from other designers.",
+          "tier": "substance",
+          "data": [
+            [
+              "prototype flight distance",
+              "over 300 feet"
+            ],
+            [
+              "Unite time aloft",
+              "31.2 seconds"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 130,
+      "terms": [
+        "time aloft",
+        "glide ratio"
+      ],
+      "entities": [
+        "Foldable Flight",
+        "Kyle Boyer",
+        "Unite"
+      ],
+      "comments": [
+        {
+          "by": "literallyanythi",
+          "text": "Scrolled down the page, saw this \"Very Easy\" 1 minute plane https://www.foldableflight.com/planes/mystic Started watching the video not planning on actually making it, saw that it is done with A4 paper and grabbed a random sheet at my desk to follow along. The pocket felt like a nice \"a-ha!\" moment. As someone who only knew the \"naive\" way to make paper airplanes from A4 paper, this is the best…"
+        },
+        {
+          "by": "HelloUsername",
+          "text": "Related: \" https://www.foldnfly.com/ \" 21.jul.2023 https://news.ycombinator.com/item?id=36784032 25 comments 26.may.2023 https://news.ycombinator.com/item?id=36087442 76 comments 18.jul.2022 https://news.ycombinator.com/item?id=32134691 96 comments 06.dec.2021 https://news.ycombinator.com/item?id=29466325 8 comments 16.jun.2020 https://news.ycombinator.com/item?id=23545860 8 comments 18.oct.2018…"
+        },
+        {
+          "by": "intrasight",
+          "text": "I have a story to share. In 1978 as a preteen, my mother made me take piano lessons. God bless her for trying. Anyway, while waiting for my class in the lobby of the music school, I would often make paper airplanes. One day, an older gentleman came over and said that he wanted to gift me something. What he gave me was his copy of \"The great international paper airplane book\". And remains one of…"
+        },
+        {
+          "by": "tombert",
+          "text": "When I would visit my grandmother as a kid, my parents wouldn't let me bring a game console with me, and she lived in the middle of nowhere so I would get bored pretty easily. One summer, I had brought a book on how to make different paper airplanes. My grandmother had this huge crate of dot matrix printer paper [1] that I was given freedom to use to my heart's content. I made hundreds of planes…"
+        },
+        {
+          "by": "diogoadrados",
+          "text": "In middle school I would compete in the South Florida Science Museum's egg drop, bridge, and paper airplane competitions. A formative experience was losing the plane toss to a jock who entered only in that event, folded a few 'standard' airplanes, and fired off a few practice shots modeling the official throwing conditions (fixed elbow on a bench at kneeling height) before taking first place with…"
+        }
+      ],
+      "image": "https://static.wixstatic.com/media/0641fb_4ff6a49def494e379b4f3b585c4ac4a8%7Emv2_d_2482_1412_s_2.jpg/v1/fit/w_2500,h_1330,al_c/0641fb_4ff6a49def494e379b4f3b585c4ac4a8%7Emv2_d_2482_1412_s_2.jpg"
+    },
+    {
+      "id": 50422069,
+      "url": "https://twitter.com/shanemelaugh/status/2119192075505893695",
+      "hn": "https://news.ycombinator.com/item?id=50422069",
+      "title": "Is Opus 5.5 nerfed? Thinking patterns changed on November 3",
+      "time": 1794207865,
+      "points": 675,
+      "depth": [
+        {
+          "text": "someone says **Opus** started reasoning differently and got **worse at coding** around November 3",
+          "tier": "simple"
+        },
+        {
+          "text": "Shane Melaugh says Gemini 4 Argon found a shift in **1,400 Claude Code sessions**. In his bug test, “high” failed to find a fix after **three full hours**, while “xhigh” found one in a few minutes; he says this is not a scientifically bulletproof benchmark. Commenters split: some report worse results, while others’ reruns found **little change**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Claude Code sessions analyzed",
+              "1,400"
+            ],
+            [
+              "high effort before finding a fix",
+              "3 full hours"
+            ],
+            [
+              "xhigh time to find a fix",
+              "a few minutes"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some users say quality dropped; others point to repeat tests showing no clear decline.",
+      "comment_count": 440,
+      "terms": [
+        "benchmark",
+        "eval",
+        "A/B testing",
+        "tokens",
+        "quantization",
+        "high / xhigh"
+      ],
+      "entities": [
+        "Opus 5.5",
+        "Gemini 4 Argon",
+        "Claude Code",
+        "Shane Melaugh",
+        "Anthropic",
+        "Qwen",
+        "Fable 5.2",
+        "Playcode"
+      ],
+      "comments": [
+        {
+          "by": "PhunkyPhil",
+          "text": "I don't have any evidence/study to substantiate this but I have the feeling there's a _massive_ amount of fiddling with the quant/functionality of the models at different stages of the release cycle and account freshness. Every time a new model drops it feels wildly powerful, then regresses to some sort of generic SOTA level we've been used to over the last 6 months. I remember my first coding…"
+        },
+        {
+          "by": "PaulKeeble",
+          "text": "The local Qwen 3.8 27B might not be anywhere near as smart as Claude's models but I never wake up one morning and wonder if I am part of some test model to see if I will accept something somewhat less capable or not trained as well in the tools I am using day to day. Its also not suddenly going to start refusing to test the security of my system or scanning the code for vulnerabilities or…"
+        },
+        {
+          "by": "ianberdin",
+          "text": "According to our measurements this isn't true. We re-ran Opus 5.5 today on the benchmark we ran in September, with the same prompt and settings. Before and after, side by side: https://playcode.io/blog/macbook-svg-benchmark#reruns Max, streamed (128K cap): 128,000 tokens, $2.56, empty file, in September and today. Max, Batch API (300K): 255,957 tokens for $2.56 in September, 243,707 for $2.44…"
+        },
+        {
+          "by": "losvedir",
+          "text": "Anyone with evals picking up a real signal? I've learned not to trust \"vibes\". The only one I'm familiar with testing Opus 5.5 specifically over time is https://github.com/ninjahawk/livenerf and it's not showing anything."
+        },
+        {
+          "by": "rzk",
+          "text": "It seems to be an A/B testing experiment: https://www.reddit.com/r/ClaudeCode/comments/1xr9x5y/the_ner..."
+        }
+      ],
+      "image": "https://pbs.twimg.com/media/HWjhsqYWMAALhKb?format=webp&name=large"
+    },
+    {
+      "id": 50424704,
+      "url": "https://www.economist.com/culture/2026/10/29/humans-will-never-again-create-a-project-quite-like-wikipedia",
+      "hn": "https://news.ycombinator.com/item?id=50424704",
+      "title": "Humans will never again create a project quite like Wikipedia",
+      "time": 1794227420,
+      "points": 463,
+      "depth": [
+        {
+          "text": "people are arguing over whether another **Wikipedia-sized project** can still happen",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says **SponsorBlock and DeArrow** are still growing, with **17%** of weekly submitters being first-time contributors and 19% being old. Others point to OpenStreetMap and TV Tropes, while a skeptic says people who might create a commons can be discouraged by what happens to it.",
+          "tier": "substance",
+          "data": [
+            [
+              "First-time contributors among weekly submitters",
+              "17%"
+            ],
+            [
+              "Old contributors among weekly submitters",
+              "19%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: optimists say volunteer projects keep appearing; skeptics say people are discouraged from building new commons, or that modern platforms will not let them survive.",
+      "comment_count": 407,
+      "terms": [
+        "commons",
+        "crowdsourced",
+        "peer-to-peer",
+        "async",
+        "LLM"
+      ],
+      "entities": [
+        "Wikipedia",
+        "SponsorBlock",
+        "DeArrow",
+        "Stack Overflow",
+        "OpenStreetMap",
+        "TV Tropes",
+        "YouTube",
+        "GitHub",
+        "Commons",
+        "Community Notes",
+        "X",
+        "MapLibre",
+        "Protomaps",
+        "The Economist",
+        "Asimov",
+        "Adams"
+      ],
+      "comments": [
+        {
+          "by": "ajayyy",
+          "text": "I recently did a talk in opposition of this sentiment Yes, some projects like stack overflow may be losing contributors by a large degree, but it doesn't have to be this way I run SponsorBlock and DeArrow which are two human powered crowdsourced browser extensions that are only growing in scale in opposition to the want to slopify everything We have 17% of submitters every week being first time…"
+        },
+        {
+          "by": "MitPitt",
+          "text": "This is most definitely wrong. People volunteer and crowdsource all the time, driven by ideals. And the async nature of the web will only make such projects stronger. There's OpenStreetMap, TV Tropes, fandom wikis, movie dbs, and a thousand others with no sign of stopping. But the future will raise the bar. Perhaps we'll see wiki of wikis, or something else getting the web closer to truly…"
+        },
+        {
+          "by": "brians",
+          "text": "Before Wikipedia, people like this author predicted it would be impossible. Science fiction authors wrote about it, but understood it to be fictional—Asimov showed how a great encyclopedia contained the seeds of its own project failure. Adams meant it as a joke. And attempts like everything2 and h2g2 were neat art but nothing like Wikipedia. The spinoff attempts to do something like Wikipedia…"
+        },
+        {
+          "by": "apiclay",
+          "text": "Wikipedia is unique in its own way, no question about it, and true. But calling a project like this can never be recreated is wrong. Wherever there is a community, people will contribute; people love being social, and many platforms do this broadly and well enough. - OpenstreetMap - GitHub ( people contributing Code, issues and bugs) - All Reviews Platform ( this creates such a sign that today…"
+        },
+        {
+          "by": "fwlr",
+          "text": "There are far too many “machines for turning commons into tragedies” running amok for there to be any significant creation of commons in the future. One, those able and willing to create a commons are usually also capable of seeing what will happen if they do and are reasonably demotivated by it; two, the machines are in a race to the bottom and cannot prevent themselves from harvesting too early…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50427362,
+      "url": "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy",
+      "hn": "https://news.ycombinator.com/item?id=50427362",
+      "title": "Payments Canada announces launch of Canada's Real-Time Rail (RTR) payment system",
+      "time": 1794240045,
+      "points": 428,
+      "depth": [
+        {
+          "text": "Canada has launched a **payment system** for providers to settle payments **instantly**, **any time**",
+          "tier": "simple"
+        },
+        {
+          "text": "Payments Canada says banks, credit unions and payment service providers can clear and settle payments **24 hours a day, every day of the year**. At launch, it also requires **centralized fraud services**, including confirmation of payee for consumer accounts on day one.",
+          "tier": "substance",
+          "data": [
+            [
+              "projected cost savings",
+              "up to $14.5 billion"
+            ],
+            [
+              "expected economic gains",
+              "$16 billion"
+            ],
+            [
+              "economic gains as new functionalities are introduced",
+              "$27 billion"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters see a public-good foundation for new services; skeptics ask what changes for consumers when Interac e-Transfer already feels instant.",
+      "comment_count": 236,
+      "terms": [
+        "payment rail",
+        "clearing",
+        "settlement",
+        "float",
+        "ISO 20022",
+        "confirmation of payee"
+      ],
+      "entities": [
+        "Payments Canada",
+        "Real-Time Rail (RTR)",
+        "CGI",
+        "Deloitte Canada",
+        "IBM Canada",
+        "Interac Corp.",
+        "Interac e-Transfer",
+        "C.D. Howe Institute",
+        "Bank of Canada",
+        "François-Philippe Champagne",
+        "Susan E. Hawkins",
+        "Tiff Macklem",
+        "Wealthsimple",
+        "Questbank",
+        "Peoples Trust Company",
+        "Paramount Commerce",
+        "KOHO",
+        "DoBusiness.com",
+        "Digital Commerce Bank",
+        "Bank of America",
+        "FedNow",
+        "SoFi",
+        "UPI",
+        "Pix",
+        "M-PESA",
+        "ISO 20022"
+      ],
+      "comments": [
+        {
+          "by": "ttul",
+          "text": "TBH, if you are launching a startup, it might not be a terrible idea to incorporate in Canada. Canada has the notion of federal incorporation in addition to each province having its own corporate registry. Federal corporations can exist in any province but all the filings are done in one place. The new mega-deduction recently announced [1] results in an effective 6% corporate tax rate, which is…"
+        },
+        {
+          "by": "QGQBGdeZREunxLe",
+          "text": "Insane that the US does not have a realtime payments network in 2026. FedNow exists but is supported by handful of banks which charge fees to use the feature. > Outgoing transfers cost 0.75% of the transaction amount (minimum of $1, maximum of $30). SoFi does not charge a fee for incoming transactions. > SoFi Plus members save 50%. They pay 0.375% of the transaction amount with a maximum of $15…"
+        },
+        {
+          "by": "mlekoszek",
+          "text": "As a Canadian, I like this. It really sounds like they're taking Interac's proprietary e-Transfer system and rolling it out as a public good for any bank to build on. That's pretty cool. It also seems smart to have involved Interac as partner, instead of trying to build around them. Like all things from any government -- let's see how the rollout goes. But I am cautiously happy to hear about this."
+        },
+        {
+          "by": "mig39",
+          "text": "Doesn't look like any of Canada's major banks are taking part? > The initial cohort of active RTR system participants includes: Wealthsimple,\nQuestbank,\nPeoples Trust Company,\nParamount Commerce,\nKOHO,\nDoBusiness.com™,\nDigital Commerce Bank,\nBank of America,"
+        },
+        {
+          "by": "MarkusWandel",
+          "text": "So basically a modernized M-PESA? Where you just scan a QR code or such, and then say how much $$ you want to transfer to that account, with cash-like low effort? The last bastion of cash, for me, here is garage sales. Absolutely everything else has gone cashless, but low-friction, low dollar transfers between individuals is still ruled by cash. Not that I haven't paid for stuff via Interac…"
+        }
+      ],
+      "image": "https://www.payments.ca/sites/default/files/2026-11/CanadaLightsUp.png"
+    },
+    {
+      "id": 50426582,
+      "url": "https://joshstrange.com/2026/11/09/i-saw-your-hn-comment/",
+      "hn": "https://news.ycombinator.com/item?id=50426582",
+      "title": "I saw your HN comment",
+      "time": 1794236463,
+      "points": 394,
+      "depth": [
+        {
+          "text": "someone says **personalized sales emails** about their HN comments have made genuine conversations **harder to trust**",
+          "tier": "simple"
+        },
+        {
+          "text": "Josh Strange had Claude look through emails about his posts and comments since 2013; he says they shifted from mostly signal to **mostly noise** in the last two years. LLMs can personalize **deceptive pitches** around real HN comments: they start with a question, then pivot to a product or service pitch. He now sends **short replies** and only engages if no pitch follows.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say automated pitches are killing genuine conversation; others say writing online still brings worthwhile connections, and some bot messages may offer real jobs.",
+      "comment_count": 285,
+      "terms": [
+        "LLM",
+        "cold email",
+        "growth hacking",
+        "lead gen"
+      ],
+      "entities": [
+        "Josh Strange",
+        "Claude",
+        "Hacker News"
+      ],
+      "comments": [
+        {
+          "by": "simonw",
+          "text": "Anything where an LLM asks you a question without disclosing that it's an LLM is an abomination. I get these on Twitter all the time, and they're starting to show up on Bluesky as well. Most of my tweets have 20+ garbage spam replies now. I don't read them any more, which sucks because I used to get to talk to actual people there. The ones that ask a question are particularly offensive because…"
+        },
+        {
+          "by": "knuckleheads",
+          "text": "About two weeks ago I posted a project I've been working on to Show HN[0], and I included an email address in the post itself, curious about what would happen. It received 0 votes and spent about 30 minutes on the Show page. Safe to conclude, a handful of people saw it at most and I need to work on my marketing. I received no less than 20 automated low effort email about this post, telling me…"
+        },
+        {
+          "by": "pjungwir",
+          "text": "Same with my open source projects and blog posts. I just woke up this morning to two spam messages: > Hi Paul, I saw you run Claude Code on manpj,\n> which is exactly who I built Tokenade for.\nand > Hi Paul, I read your Claude Code setup post,\n> . . . That's exactly why I built Grafizum.\nGmail doesn't seem able to recognize that these are spam (or the incessant business loan offers). But I keep…"
+        },
+        {
+          "by": "gwbas1c",
+          "text": "> I’ve started sending short emails back and only if I don’t get a pitch back do I actually engage but I dislike feeling distrustful, treating people as guilty until proven innocent. > but I can’t bring myself to take my email address down A couple of things: 1: Use a different email address specifically for Hacker News. This is trivial if you own your own domain. (For example, I have a separate…"
+        },
+        {
+          "by": "tombert",
+          "text": "I've been having a similar problem. I have roughly the same amount of Karma here, and I used to get the occasional email about a comment and I would get kind of excited. I like engaging with people who have similar interests and as a rule I try and answer questions when people ask them of me. Now I'm getting a lot of emails that ostensibly are asking for follow-ups but they really just want to…"
+        }
+      ],
+      "image": "https://joshstrange.com/2026/11/09/i-saw-your-hn-comment/hero_hu_358929660eb06ed6.jpg"
+    },
+    {
+      "id": 50429475,
+      "url": "https://www.westcentralonline.com/articles/too-many-men-suffering-in-silence-national-health-report-finds",
+      "hn": "https://news.ycombinator.com/item?id=50429475",
+      "title": "Too many men suffering in silence, national health report finds (Canada)",
+      "time": 1794248878,
+      "points": 310,
+      "depth": [
+        {
+          "text": "a **Canadian report** says men and boys need better **mental health support** and stronger social connections",
+          "tier": "simple"
+        },
+        {
+          "text": "**Health Minister Marjorie Michel** released the What We Heard Report, based on input from **nearly 6,000 Canadians**. It flags mental health, social isolation and barriers to seeking help; the findings will help shape Canada's first federal men's health strategy, expected in **early 2027**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters blame gender-biased laws and social expectations for men's distress; others question whether the survey captures men's own experiences or say reports won't fix deeper cultural problems.",
+      "comment_count": 420,
+      "terms": [
+        "consultation",
+        "social isolation"
+      ],
+      "entities": [
+        "Marjorie Michel",
+        "What We Heard Report",
+        "Movember Canada",
+        "Health Canada",
+        "Canadian Men's Health Foundation",
+        "Kenton Boston",
+        "Andrew Little",
+        "Federal Men and Boys' Health and Well-being Strategy"
+      ],
+      "comments": [
+        {
+          "by": "neya",
+          "text": "A good start would be enforcing truly gender neutral laws by governments all over the world. I personally know at least a dozen men who have been harassed by biased laws and judges when it comes to divorce. These are good men, who worked really hard and took care of their wives very well, only to get either cheated on or scammed for money and lost everything. 2 of them are even almost homeless…"
+        },
+        {
+          "by": "midtake",
+          "text": "I strongly oppose all comments that seem to have the causal relationship reversed, that somehow by some biological effect they are now more depressed than in the past. I think that instead the extreme demands of society are the cause and that suffering in silence is the result. What do you expect when most men have been priced out of a happy life? What do you expect when most men are villainized…"
+        },
+        {
+          "by": "tete",
+          "text": "I think the fact that in general women are considered to have more mental health issues and men committing suicide way more often shows that this headline is true."
+        },
+        {
+          "by": "georgeburdell",
+          "text": "This is a trap, just like it’s a trap when my wife asks me what’s wrong, I give an honest answer, and then I’m scorned for being weak [1]. Men need to cultivate an internal compass. The government can alleviate the issue by stopping the systemic preference of women that they have instituted in education, employment, and law. [1] To head things off, I’m fine, thanks to a few sessions of therapy a…"
+        },
+        {
+          "by": "legitster",
+          "text": "I read through the underlying report, but the survey itself is extremely unremarkable. There were only 12 very vague questions - and none actually asked the respondent about how they felt personally: \"Where do you believe stereotypes about masculinity primarily come from?\" Only about 2/3 of the respondents even identified as male - this isn't a serious study of how men themselves feel. It's more…"
+        }
+      ],
+      "image": "https://dht7q8fif4gks.cloudfront.net/2026-11/Men%20Mental%20Health%20Image%20by%20mary%20taylor-.jpg"
+    },
+    {
+      "id": 50431058,
+      "url": "https://postalpro.usps.com/zcb",
+      "hn": "https://news.ycombinator.com/item?id=50431058",
+      "title": "USPS now offers official ZIP Code boundary polygons",
+      "time": 1794254339,
+      "points": 304,
+      "depth": [
+        {
+          "text": "USPS now offers official **ZIP Code boundary maps** based on its **delivery address and location data**",
+          "tier": "simple"
+        },
+        {
+          "text": "The page lists **four quarterly updates** for internal, enterprise, and publication options; enterprise distribution is limited to subsidiaries and partner companies, while publication is limited too. One commenter says the lowest tier costs **$10k**. Some commenters welcome an official answer about which ZIP Code an address belongs to; others say ZIP Codes are **delivery routes**, not true geographic areas.",
+          "tier": "substance",
+          "data": [
+            [
+              "update schedule",
+              "Four quarterly updates"
+            ],
+            [
+              "lowest-tier price",
+              "$10k"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some welcome an official map to answer which ZIP Code an address belongs to; others say ZIP Codes are delivery routes, not true geographic areas.",
+      "comment_count": 148,
+      "terms": [
+        "polygon",
+        "ZIP+4",
+        "ZCTA",
+        "GeoJSON"
+      ],
+      "entities": [
+        "USPS",
+        "PostalPro",
+        "Census",
+        "GeoJSON",
+        "ZCTA"
+      ],
+      "comments": [
+        {
+          "by": "SwellJoe",
+          "text": "Dang, the prices are crazy. $10k for the lowest tier? I expect federal data to be free. Most federal data related to stuff like regulation (e.g. FCC spectrum use coverage maps), maps for federally-managed lands, etc. is free. And, it should be free. It's a core part of accountability and transparency. Historically there was a copying cost (having a human print physical copies on paper or…"
+        },
+        {
+          "by": "xp84",
+          "text": "This is interesting. For a long time it was pointed out that ZIP codes, unlike say, city or state boundaries, were not properly representable as polygons, since they don't divide up acreage into zones, but rather label postal delivery routes. Suppose I build a new neighborhood way out in the middle of nowhere. The \"polygon\" concept suggests that we could look and see what polygon I'm in, and that…"
+        },
+        {
+          "by": "showerst",
+          "text": "I thought these were going to be free and got so excited. FWIW if you're willing to deal with some 'fuzziness' and the occasional missing zip code that's commercial only, the ZCTA shapefiles are free and are close enough for many purposes: https://www.census.gov/programs-surveys/geography/guidance/g..."
+        },
+        {
+          "by": "johnnyo",
+          "text": "If this is govt-owned data, shouldn’t it be available with a FOIA request or similar? Can someone with expertise in govt data rights explain? Do any other US govt agencies sell data to the private sector?"
+        },
+        {
+          "by": "legitster",
+          "text": "Some important context - Zip codes were not established as geographic markets. A \"Zip Code\" is collection of routes USPS uses - so it's whole goal was to get the right package on the right truck. The \"Zip+4\" was the attempt to solve this- the 9 digit code narrows down the zipcode to a single block. But no one in the US cares enough to use these. It also doesn't solve the canonical problems the…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50428724,
+      "url": "https://news.ycombinator.com/front?day=2024-11-08",
+      "hn": "https://news.ycombinator.com/item?id=50428724",
+      "title": "Going back two years on Hacker News is like entering another, better universe",
+      "time": 1794245780,
+      "points": 277,
+      "depth": [
+        {
+          "text": "people are arguing whether **Hacker News** was a **better place to talk tech** two years ago",
+          "tier": "simple"
+        },
+        {
+          "text": "Some commenters say **AI posts** and negativity have crowded out the old community feel. Others say HN still has **useful discussions**, and crypto came before AI too.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say AI and negativity have made HN worse; others say it remains useful, and popular topics just change over time.",
+      "comment_count": 171,
+      "terms": [
+        "Eternal September"
+      ],
+      "entities": [
+        "Hacker News",
+        "Reddit"
+      ],
+      "comments": [
+        {
+          "by": "stoatmagoats",
+          "text": "I used to love reading the HN comments. When there was a new tool or technology being discussed there would almost certainly be someone who directly worked on it, if not the founder themselves, giving further insight and welcoming discussion. And when there was back and forth discussion, it was people clarifying their questions and answers, and sharing their expertise. Now it’s just Reddit-style…"
+        },
+        {
+          "by": "rcarticulate",
+          "text": "I don't know, the frontpage looks fine today? - Canada payment system\n- folding paper airplanes\n- Solar panels\n- Raspberry pi price increases\n- a bunch of show hns\n- how does malloc work There are more AI posts that's for sure, but it's also not that bad? It's also heavily affecting the livelihood of many people here (for better and often worse), so it's reasonable that it would be prevalent…"
+        },
+        {
+          "by": "EmX_3000",
+          "text": "Almost everything in the new submissions is about AI and has been for a while now. Same with the links you see. It's getting to the point where non-AI tech news and information is completely drowned out. Stepping back month by month you can see how the AI content increases exponentially. Soon it'll be all you can read about it unless something is done. Perhaps a yc.ai site for AI-related news and…"
+        },
+        {
+          "by": "jdlyga",
+          "text": "It's the natural progression of websites like this. Reddit went through the same progression: it was very positive and felt like a community when the migration from Digg first happened. 10 years ago, Hacker News felt like an insider website for professionals. It still does, but there's definitely an uptick in negativity."
+        },
+        {
+          "by": "dang",
+          "text": "Is it really a different universe than going back one year: https://news.ycombinator.com/front?day=2025-11-08 or, for that matter, one month? https://news.ycombinator.com/front?day=2026-10-08 Similar perceptions have been around since before Hacker News was even named Hacker News ( https://news.ycombinator.com/item?id=13852 )."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50428801,
+      "url": "https://www.cnx-software.com/2026/11/03/when-will-this-stop-the-raspberry-pi-5-16gb-sbc-now-sells-for-385/",
+      "hn": "https://news.ycombinator.com/item?id=50428801",
+      "title": "When will this stop? The Raspberry Pi 5 16GB SBC now sells for $385",
+      "time": 1794246175,
+      "points": 258,
+      "depth": [
+        {
+          "text": "Raspberry Pi's 16GB board now costs **$385** after another **price increase**",
+          "tier": "simple"
+        },
+        {
+          "text": "The Pi 5 16GB is up **$80** from the April price hike; the Compute Module 5 got a **$40 increase**, starting at $375 for the Lite model without wireless. Micron expects the **RAM shortage** to last at least until 2028, while SK Hynix thinks it could only be resolved sometime in 2030.",
+          "tier": "substance",
+          "data": [
+            [
+              "Raspberry Pi 5 16GB price",
+              "$385"
+            ],
+            [
+              "Price increase",
+              "$80"
+            ],
+            [
+              "Compute Module 5 Lite starting price",
+              "$375"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say the Pi is no longer worth its price and recommend alternatives; others say it remains useful for embedded products and its unified platform.",
+      "comment_count": 214,
+      "terms": [
+        "SBC",
+        "system-on-module",
+        "RAM",
+        "eMMC"
+      ],
+      "entities": [
+        "Raspberry Pi",
+        "Raspberry Pi 5",
+        "Compute Module 5",
+        "Raspberry Pi 500+",
+        "Micron",
+        "SK Hynix"
+      ],
+      "comments": [
+        {
+          "by": "Aurornis",
+          "text": "Unless you have a true, irreplaceable need for a 16GB model, everyone should just pretend they don't exist. Most hobby use cases would be fine with the 1GB, 4GB, or even 8GB versions. I thought we all established long ago that trying to use a Raspberry Pi like a computer or laptop replacement was not a good idea, because every past Rapsberry Pi thread has been inundated with comments encouraging…"
+        },
+        {
+          "by": "k0morebi",
+          "text": "I have probably a dozen raspberry pis from the first version through version 3. They all sit in boxes. There is nothing that can't be performed better by an esp32, old laptop, or Intel NUC or whatever the current equivalent is. I've found them to be super unreliable even when using their recommended power sources and moving off SD card. Better off with a real computer or esp32 every time. If you…"
+        },
+        {
+          "by": "kstrauser",
+          "text": "I cannot emphasize this enough: if you actually care about performance, forget about 16GB vs 8GB and switch from using the internal SD card and to an external SSD. I wrote up my experience at https://honeypot.net/2023/03/20/upgrade-your-raspberry.html Once you've done that, and your max latency has dropped to 0.7% of what it use to be (yes, really, the SD card had 140x higher latency than the SSD…"
+        },
+        {
+          "by": "haunter",
+          "text": "I'm buying up broken screen old Android smartphone instead. For example I got several broken screen Huawei P20s from 2018, they were 10€ each. 128GB storage with 4GB RAM https://www.gsmarena.com/huawei_p20-9107.php They boot up, you can install termux and then whatever is your choice of Linux software. I run several copyparty instances for friends and family…"
+        },
+        {
+          "by": "OhMeadhbh",
+          "text": "Sure... but... the original $35 RasPi is closer to a modern RasPi Zero 1, which looks like it's selling for $45 - $50 on Amazon. Modern top-of-the-line RasPis seem more like ARM PCs with fast, efficient multi-core CPUs and GigE. I bought a RasPi 500 at the beginning of the year just to see what it was like and it's my new \"email and light web browsing\" daily-driver. Though yeah, I probably…"
+        }
+      ],
+      "image": "https://www.cnx-software.com/wp-content/uploads/2026/11/Raspberry-Pi-5-16GB-385-dollars.jpg"
+    },
+    {
+      "id": 50426175,
+      "url": "https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet/",
+      "hn": "https://news.ycombinator.com/item?id=50426175",
+      "title": "Magenta solar panels may be agrivoltaics' cleverest trick yet",
+      "time": 1794234699,
+      "points": 235,
+      "depth": [
+        {
+          "text": "someone tested **magenta solar panels** over broccoli, and the **harvest stayed steady** despite slower growth",
+          "tier": "simple"
+        },
+        {
+          "text": "The panels let **most red and some blue wavelengths** pass through while converting much of the rest into electricity. Broccoli needed an additional 25 days for harvest; plant biomass increased by **2.8- to 4.5-fold** compared with unshaded plants, though this was only a **preliminary study**.",
+          "tier": "substance",
+          "data": [
+            [
+              "extra time to harvest",
+              "25 days"
+            ],
+            [
+              "plant biomass increase",
+              "2.8- to 4.5-fold"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: skeptics say solar and farmland should be optimized separately; supporters say panels can add farm revenue and may suit plants that prefer some shade.",
+      "comment_count": 143,
+      "terms": [
+        "agrivoltaics",
+        "photovoltaic cells",
+        "wavelengths",
+        "photosynthesis",
+        "vapor pressure deficit",
+        "biomass"
+      ],
+      "entities": [
+        "Cell Reports Physical Science",
+        "Anthropocene",
+        "USDA"
+      ],
+      "comments": [
+        {
+          "by": "efields",
+          "text": "Specialty cut flower grower here. Backyard scale, but we're profitable and have received some grants so that means we have had a USDA relationship for a couple years. The rep I've talked to and am closest with is skeptical of agrivoltaics due to past dealings with solar companies (not sure what she means). There doesn't seem to be enough reliable public data to make it seem like the win-win-win…"
+        },
+        {
+          "by": "declan_roberts",
+          "text": "HN is probably over-indexed on people living in high-density cities, which might explain why tech like this and also things like vertical farming are popular here. However there's almost no dimensional constraint for farmland in the United States. We have vast amounts of it and there's really nothing to be gained from \"stacking\" Often these \"solutions\" introduce more problems than they solve. One…"
+        },
+        {
+          "by": "foolfoolz",
+          "text": "if your initial reaction is we have tons of empty land why would we ever build solar panels over a farm? this isn’t an either-or question. a farm owner may want to add some revenue with electricity generation. just like a hospital may want to cover their parking lot to offset costs. at giant scale do these solar location choices optimize the absolutely best use of land for cheapest possible…"
+        },
+        {
+          "by": "SamBam",
+          "text": "One thing the article doesn't mention is that some plants prefer a little shade. So while broccoli yields may have \"held steady,\" it's possible they could make even more gains elsewhere where it might normally be too sunny. So leafy vegetables like spinach might be doing equivalently fine under the magenta shades in New Jersey, but might actually be even better in Texas."
+        },
+        {
+          "by": "lantry",
+          "text": "little known fact: US currently grows a lot of corn for ethanol production. If we replaced that all with solar panels we'd have plenty of electricity. The solar vs farm debate is usually framed as a tradeoff with food production but that's not really true https://www.anthropocenemagazine.org/2025/04/new-study-compa..."
+        }
+      ],
+      "image": "https://www.anthropocenemagazine.org/wp-content/uploads/2026/10/rose-colored-agrivoltaics.jpg"
+    },
+    {
+      "id": 50429024,
+      "url": "https://research.meta.ai/blog/muse-ember",
+      "hn": "https://news.ycombinator.com/item?id=50429024",
+      "title": "Our Smallest, Most Efficient Model: Muse Ember",
+      "time": 1794247126,
+      "points": 205,
+      "depth": [
+        {
+          "text": "Meta's new **Muse Ember** is a **low-cost model** for repeated coding and agent tasks",
+          "tier": "simple"
+        },
+        {
+          "text": "For prompts up to 200K tokens, input costs **$0.10 per million input tokens** and output costs $0.50 per million output tokens; it has a **1M-token context window** and can produce up to 512K output tokens. On AutomationBench-AA, it scored **37.8%**, versus 20.2% for GPT-6 Luna and 13.9% for Claude Haiku 5.5.",
+          "tier": "substance",
+          "data": [
+            [
+              "Input price (prompts up to 200K tokens)",
+              "$0.10 per million input tokens"
+            ],
+            [
+              "Output price (prompts up to 200K tokens)",
+              "$0.50 per million output tokens"
+            ],
+            [
+              "Context window",
+              "1M-token context window"
+            ],
+            [
+              "Maximum output",
+              "up to 512K output tokens"
+            ],
+            [
+              "AutomationBench-AA score (Muse Ember)",
+              "37.8%"
+            ],
+            [
+              "AutomationBench-AA score (GPT-6 Luna)",
+              "20.2%"
+            ],
+            [
+              "AutomationBench-AA score (Claude Haiku 5.5)",
+              "13.9%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some welcome the cheaper model; others are frustrated they can't find downloadable weights.",
+      "comment_count": 86,
+      "terms": [
+        "agent",
+        "token",
+        "context window",
+        "benchmark",
+        "open weights"
+      ],
+      "entities": [
+        "Meta",
+        "Muse Ember",
+        "GPT-6 Luna",
+        "Claude Haiku 5.5",
+        "AutomationBench-AA"
+      ],
+      "comments": [
+        {
+          "by": "simonw",
+          "text": "Six effort levels (minimal, low, medium, high, xhigh, max), so here are six pelicans (actually five, \"high\" didn't return a complete SVG): https://tools.simonwillison.net/markdown-svg-renderer?url=ht... There's usually a reasonably strong correlation between thinking level and visual quality of the pelican. This is the first time I've seen that correlation appear to break - more reasoning tokens…"
+        },
+        {
+          "by": "Retro_Dev",
+          "text": "When they said the model was the \"smallest\" of their models yet, I was really hoping it would be open weights. I can't find any weights, how sad :("
+        },
+        {
+          "by": "kbrannigan",
+          "text": "This is starting to feel just like the early PC days. A bunch of Computer models coming out, all shapes and color, but eventually it settled around mouse keyboard, monitor most people, use the office suite: Word, Spreadsheet , presentations, database. I bet we're going to see the exact same thing with LLMs at specialized models instead of the everything models. One for lawyers, coders…"
+        },
+        {
+          "by": "open-paren",
+          "text": "I believe this is what the “crouton alpha” stealth model was https://openrouter.ai/stealth/crouton-alpha"
+        },
+        {
+          "by": "minimaxir",
+          "text": "> It costs $0.10 per million input tokens, $0.004 per million cached input tokens and $0.50 per million output tokens, Notable cache cost of 4% input, compared to Luna/Haiku's 10% of input."
+        }
+      ],
+      "image": "https://research.meta.ai/articles/muse-glint/hero/blog-header-light-v1.webp"
+    },
+    {
+      "id": 50422628,
+      "url": null,
+      "hn": "https://news.ycombinator.com/item?id=50422628",
+      "title": "ChatGPT Desktop forwards your SSH agent to remote machines",
+      "time": 1794212269,
+      "points": 201,
+      "depth": [
+        {
+          "text": "ChatGPT Desktop may let remote machines use your **local credentials**, but commenters question the **evidence**",
+          "tier": "simple"
+        },
+        {
+          "text": "The thread says the pull request was **closed without being merged**, and one commenter says the process is **opt-in**. Others say SSH agent forwarding is a normal way to use keys while keeping them local; critics worry that broadly capable tools can take **unwanted actions**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: critics see risky, poorly guarded convenience; others say the pull request was closed and unmerged, the process is opt-in, and agent forwarding is a normal feature.",
+      "comment_count": 66,
+      "terms": [
+        "SSH agent forwarding",
+        "SSH key",
+        "jump host",
+        "secure enclave",
+        "SSH config"
+      ],
+      "entities": [
+        "ChatGPT Desktop",
+        "OpenAI",
+        "Bitwarden",
+        "Artifacts",
+        "Codex",
+        "Docker Desktop",
+        "DevPod",
+        "Secretive",
+        "Magit",
+        "ParticleDB",
+        "Linux",
+        "macOS",
+        "Yubikey"
+      ],
+      "comments": [
+        {
+          "by": "recsv-heredoc",
+          "text": "It's amazing how often product decisions head this way for the purposes of 'removing friction'. In security, friction is a GOOD thing. You want to have some ceremony to do things. It's pretty much inevitable that people will give up control for convenience. Look at Artifacts for example."
+        },
+        {
+          "by": "Lukas_Skywalker",
+          "text": "The Bitwarden desktop app has a built in SSH agent [1], which lets you store SSH keys inside Bitwarden. I have set the app to always ask me for confirmation when the key is requested. [1] https://bitwarden.com/help/ssh-agent/"
+        },
+        {
+          "by": "littlecranky67",
+          "text": "I'd suggest to use ssh keys inside the secure enclave on macOS that require your fingerprint for every new session [0]. That way agents cannot initiate anything, and you will always be aware when a new ssh connection is being made. [0]: https://gist.github.com/arianvp/5f59f1783e3eaf1a2d4cd8e952bb..."
+        },
+        {
+          "by": "yfontana",
+          "text": "I don't understand what the linked pull request is supposed to prove, considering it was closed and not merged."
+        },
+        {
+          "by": "m000",
+          "text": "At this point, should cases like this even be news? Isn't that a fundamental security design issue? Local agent security guardrails appear to always be built around blacklists, which will always be unreliable and leaky. It is left as an exercise to the user to properly sandbox them. There may be some limited form of whitelisting, but often it is just a facade, as it is very coarse-grained. So…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50429426,
+      "url": "https://github.com/thisisme6598/gemini_files/",
+      "hn": "https://news.ycombinator.com/item?id=50429426",
+      "title": "Google Gemini routes personal Drive files and emails to human annotators",
+      "time": 1794248678,
+      "points": 210,
+      "depth": [
+        {
+          "text": "Google's **consumer Gemini** may send **personal Drive files and emails** to **human reviewers** during casual chats",
+          "tier": "simple"
+        },
+        {
+          "text": "The report says Google **reversed its earlier promise** that personal Gmail, Docs and Drive content would stay out of human review. With Connected Apps enabled, results can range from no personal data pulled to a **full, unredacted document**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some see this as privacy erosion; others stress the report covers consumer Gemini with Connected Apps, while Workspace Gemini still claims to avoid human review.",
+      "comment_count": 38,
+      "terms": [
+        "Connected Apps",
+        "human annotators",
+        "probabilistic",
+        "PII",
+        "NER",
+        "RAG"
+      ],
+      "entities": [
+        "Google",
+        "Gemini",
+        "Gmail",
+        "Drive",
+        "Docs",
+        "Google Workspace",
+        "Workspace Intelligence"
+      ],
+      "comments": [
+        {
+          "by": "bri3d",
+          "text": "Note that this is specifically Consumer Gemini with Connected Apps; Workspace Gemini (and Workspace Intelligence, the RAG thing for enterprise/Workspace) still claims not to be subject to human review: https://knowledge.workspace.google.com/admin/generative-ai/g... So basically if you use consumer Gemini and specifically authorize the GMail app, for example, then it will sometimes use the GMail…"
+        },
+        {
+          "by": "EMM_386",
+          "text": "It's worse than that. > Google Photos data is used to infer your interests, relationships to people in your photos, and where you've been, including by associating your face with corresponding location data and timestamps. This data is also used to do things for you, like look up your info or add items to your grocery list, and to improve Google services, including training generative AI. How…"
+        },
+        {
+          "by": "rustyhancock",
+          "text": "Really frustrating that our privacy eroded to the point anyone would think this is reasonable. But it does explain some conversations with Gemini when I wonder why it's talking about particular things. Like asking it about consultation processes for changes to parks only to get a response that's uncannily tuned to the email I got prompting the enquiry. No mention of I just read your emails etc ."
+        },
+        {
+          "by": "hek2sch",
+          "text": "Any tool having manual human reviewers or annotator like all of Gemini and notebooklm (now Gemini notebook) suffer from this. Your data has high chance being read by random people or being leaked for training because they might flag it then use it to \"improve\" the model."
+        },
+        {
+          "by": "gla67890543",
+          "text": "Any one trusting Google, Facebook with their data is wilfully blind. Their whole business model and survival based on spying on others data."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/d2773cc0cd35d35f53a6194ea64cf7edf12911eb5e24412b1a17ac2119b28d96/thisisme6598/gemini_files"
+    },
+    {
+      "id": 50424157,
+      "url": "https://benmandrew.com/articles/what-is-malloc-doing-anyway",
+      "hn": "https://news.ycombinator.com/item?id=50424157",
+      "title": "What is malloc doing, anyway?",
+      "time": 1794223865,
+      "points": 198,
+      "depth": [
+        {
+          "text": "malloc **gets big chunks from the kernel** and **splits them up** instead of calling the kernel for each request",
+          "tier": "simple"
+        },
+        {
+          "text": "The toy allocator reuses freed chunks, merges neighbors, and trims memory only from the heap’s top; requests of **128 KiB or more, header included** get separate mappings. glibc uses **separate bins by size** and a cache for up to seven freed chunks of each small size, so it avoids repeatedly searching one long free list.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say C programs can often avoid dynamic memory; others say allocator internals are worth studying.",
+      "comment_count": 54,
+      "terms": [
+        "malloc",
+        "syscall",
+        "heap",
+        "chunk",
+        "free list",
+        "mmap",
+        "bins",
+        "tcache"
+      ],
+      "entities": [
+        "Ben M. Andrew",
+        "glibc",
+        "C"
+      ],
+      "comments": [
+        {
+          "by": "loeg",
+          "text": "This is mostly describing a kind of obsolete allocator that uses the brk to adjust a single contiguous heap range. This is basically irrelevant with virtual memory and mmap. The good malloc impls (jemalloc, mimalloc) don't do this."
+        },
+        {
+          "by": "assumed_throwaw",
+          "text": "Tangential, but the complexity and over-head of the malloc abstraction is precisely what made me very intrigued by \"stack-only\" languages, such a recently published Goose. There is something very elegant and exciting about the idea of (almost) completely getting rid of it. Just as modern programming languages have developed good ergonomics that replaces a garbage collector, the same could…"
+        },
+        {
+          "by": "senderista",
+          "text": "If you want to study how modern allocators work I'd recommend something like mimalloc, which has a reasonably approachable codebase. No brk/sbrk in sight, btw (or boundary tags, or splitting/merging...)."
+        },
+        {
+          "by": "K0IN",
+          "text": "When getting into wasm when it was new and had clang support, I wrote my own libc and malloc, which was so a great learning all these low level functions and tricks (free lists for example), I also like that I can read wasm quite well, and tooling is good to just return a .wat and read it."
+        },
+        {
+          "by": "gebt",
+          "text": "This phrack article on malloc is highly recommended: Vudo malloc tricks\nby Michel \"MaXX\" Kaempf (2001) https://phrack.org/issues/57/vudo-malloc-tricks"
+        }
+      ],
+      "image": "https://benmandrew.com/assets/headers/malloc-card.png"
+    },
+    {
+      "id": 50429734,
+      "url": "https://e-means.github.io/",
+      "hn": "https://news.ycombinator.com/item?id=50429734",
+      "title": "E-means: 10x faster k-means at equal loss",
+      "time": 1794249943,
+      "points": 205,
+      "depth": [
+        {
+          "text": "someone made **k-means** much faster and got **lower loss** without extra tuning",
+          "tier": "simple"
+        },
+        {
+          "text": "It uses **mini-batches** with exponential moving averages, while **scaling laws** choose batch and step sizes automatically. On tested datasets, it beat the test loss Lloyd reached after 25 epochs in 1.2 to 3 epochs; the authors report a **10–45× GPU wall-clock reduction** against Flash-KMeans.",
+          "tier": "substance",
+          "data": [
+            [
+              "epochs to beat Lloyd's 25-epoch test loss",
+              "1.2 to 3 epochs"
+            ],
+            [
+              "GPU wall-clock reduction",
+              "10–45×"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: fans praise the speed and want broader library support; skeptics think the scaling laws may have been fit post-hoc, and one user found it slower and noisier for mesh relaxation.",
+      "comment_count": 11,
+      "terms": [
+        "k-means",
+        "mini-batch",
+        "exponential moving average",
+        "centroid",
+        "loss",
+        "scaling laws",
+        "hyperparameter"
+      ],
+      "entities": [
+        "e-means",
+        "Meta FAIR",
+        "Faiss",
+        "Flash-KMeans",
+        "Lloyd's algorithm",
+        "SciPy"
+      ],
+      "comments": [
+        {
+          "by": "jlhawn",
+          "text": "I wonder if this could be used anywhere as an alternative to Lloyd's algorithm. I have a hobby project which uses Lloyd's to \"relax\" an icosohedral equal area mesh on the surface of a sphere [1]. I'm going to try to swap it out with an adaptation of this and see if it's much better or if I can afford more iterations with this method. Edit: tried it, and it’s definitely not better for this use…"
+        },
+        {
+          "by": "Luke2642",
+          "text": "This is a great example of why p=np is sometimes the wrong question. For this np hard problem approximate solutions are good enough, and if you get them 45x faster that's even better!"
+        },
+        {
+          "by": "real_faxenoff",
+          "text": "I adapted the method to my IVF index (the code-daemon project) and achieved a 146x speedup on the GPU. That's impressive!"
+        },
+        {
+          "by": "wood_spirit",
+          "text": "This looks awesome. Obvious in hindsight! The viz really explains it well. Hope it gets added to scipy - it’s much more available in the envs many use than facebooks own faiss library."
+        },
+        {
+          "by": "bashhq_r",
+          "text": "so the epoch reduction is cool but the hyperparameter laws feel like they were fit post-hoc"
+        }
+      ],
+      "image": "https://e-means.github.io/assets/emeans_vs_lloyd_readme_v9.png"
+    },
+    {
+      "id": 50426899,
+      "url": "https://www.denverpost.com/2026/11/06/ethereum-suicide-pledge-lawsuit-mandate-boulder-crypto/",
+      "hn": "https://news.ycombinator.com/item?id=50426899",
+      "title": "Cryptocurrency lawsuit: Ethereum Foundation required \"suicide pledge\"",
+      "time": 1794237837,
+      "points": 181,
+      "depth": [
+        {
+          "text": "a lawsuit says the **Ethereum Foundation** pushed employees to sign a mandate with a **suicide pledge**",
+          "tier": "simple"
+        },
+        {
+          "text": "According to Fulton's lawsuit, employees had until Monday to accept a **38-page mandate** or leave; it included a **“Source Seppuku License”** saying software authors and maintainers would take their own lives with a sword if they failed to uphold its pledges. The lawsuit says the foundation **fired Fulton and a colleague** after they organized a letter signed by 53 employees, who backed the mandate’s general direction but declined its commitment form.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters see an obvious joke; others say putting it in a document employees had to sign was reckless or legally risky.",
+      "comment_count": 168,
+      "terms": [
+        "seppuku",
+        "maintainer",
+        "wrongful termination",
+        "employer-of-record"
+      ],
+      "entities": [
+        "Ethereum Foundation",
+        "Ethereum",
+        "Kayleen Fulton",
+        "Vitalik Buterin",
+        "Bastian Aue",
+        "James Bartolomei",
+        "Source Seppuku License",
+        "Family and Medical Leave Act",
+        "The Denver Post"
+      ],
+      "comments": [
+        {
+          "by": "nostrademons",
+          "text": "Yeesh, they should've learned that you don't try to get cute in a legal document. I remember asking about the Crockford License's clause \"This software should be used for Good, not Evil\" in my Noogler training. And then having Chris DiBona need to tell me \"for the purposes of this particular license, Google is Evil\". Because the problem is that \"good\" and \"evil\" could mean anything in a court of…"
+        },
+        {
+          "by": "ad_hockey",
+          "text": "You can have \"this mandate is so important to our mission that we want you to leave if you don't agree\" or you can have \"some of this mandate is literal and some is just jokes\" You can't have both."
+        },
+        {
+          "by": "DoctorOetker",
+          "text": "> “If you reward making a stink with outcomes, then everyone will know that essentially making that kind of show both internally and externally is the way to cause outcomes inside of the EF,” [Bastian Aue] said, according to the lawsuit, which cited a recorded conversation between the pair. except Fulton did not \" make a stink\" but only pointed it out, if Bastian Aue wanted to not continue…"
+        },
+        {
+          "by": "rdtsc",
+          "text": "> After demanding that employees agree to the mandate, Bastian Aue, co-executive director of the Ethereum Foundation, defended the suicide pledge to employees as “part of the artwork of the mandate.” This is insane. Is this something like a judgment or reverse loyalty test? “If you sign something like this, you’re too dumb to stay?”"
+        },
+        {
+          "by": "comrade1234",
+          "text": "You can't sign away your rights like that in a contract. The contract is invalid."
+        }
+      ],
+      "image": "https://www.denverpost.com/wp-content/uploads/2026/11/TDP-Z-GettyImages-1243256258.jpg?w=5093&h=3395"
+    },
+    {
+      "id": 50422168,
+      "url": "https://arxiv.org/abs/2610.14162",
+      "hn": "https://news.ycombinator.com/item?id=50422168",
+      "title": "Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation",
+      "time": 1794208837,
+      "points": 175,
+      "depth": [
+        {
+          "text": "someone built a **text generator** that predicts **whole groups in parallel**, from **rough patterns to finer details**",
+          "tier": "simple"
+        },
+        {
+          "text": "The **two-stage method** encodes text as a hierarchy of discrete codes, then has a transformer predict each level in parallel. On LM1B, NCM beats the strongest diffusion-language baseline on generative perplexity while running **21× faster**; it is competitive on OpenWebText at 10× faster and matches that baseline’s ROUGE-L on XSum at 31× faster. On Sudoku, it beats autoregressive and diffusion baselines across difficulty levels with **fewer function evaluations**.",
+          "tier": "substance",
+          "data": [
+            [
+              "LM1B speedup",
+              "21×"
+            ],
+            [
+              "OpenWebText speedup",
+              "10×"
+            ],
+            [
+              "XSum speedup",
+              "31×"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some call the idea innovative; skeptics say retraining takes a lot of effort and the paper barely compares it with conventional next-token prediction.",
+      "comment_count": 40,
+      "terms": [
+        "coarse-to-fine",
+        "residual VQ-VAE",
+        "transformer",
+        "DLM",
+        "generative perplexity",
+        "ROUGE-L",
+        "function evaluation",
+        "autoregressive",
+        "discrete codes"
+      ],
+      "entities": [
+        "Next-Concept Modeling (NCM)",
+        "LM1B",
+        "OpenWebText",
+        "XSum",
+        "Sudoku",
+        "Hermann Kumbong",
+        "Ishan S. Khare",
+        "Iddah Mlauzi",
+        "Andrew Woen",
+        "Charles Ding",
+        "E. Kelly Buchanan",
+        "Simran Arora",
+        "Azalia Mirhoseini",
+        "Christopher Ré"
+      ],
+      "comments": [
+        {
+          "by": "pinyen_cheng",
+          "text": "That's pretty innovative. But a brand new tokenizer and training method need a lot of effort to do the retraining. Whether it will be widely implemented depends on real frontier performance it can reach."
+        },
+        {
+          "by": "OOTY00TYOO",
+          "text": "If we cant' build the hardware fast enough. Can someone explain to me why there's apparently 50% of the gpu and memory that hyperscalers buy sitting in warehouses due to lack of data centers? The hyperscalers are hoarding tech and can't even use it. It's ridiculous."
+        },
+        {
+          "by": "swiftcoder",
+          "text": "Who's going to train a nice big coding model based on this? I don't have the GPUs to do it..."
+        },
+        {
+          "by": "siamaksalman",
+          "text": "I'm trying to run it, so far no luck"
+        },
+        {
+          "by": "cubefox",
+          "text": "This looks very interesting. Their new language modelling objective shows some large improvements over masked diffusion modeling. However, they hardly compare against the conventional next-token-prediction objective, which suggests they don't beat it, except for highly non-linear tasks like sudoku. Unfortunately, machine learning papers often tend to focus exclusively on the positives without…"
+        }
+      ],
+      "image": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png"
+    },
+    {
+      "id": 50431144,
+      "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
+      "hn": "https://news.ycombinator.com/item?id=50431144",
+      "title": "Claude Fable 5.2 Scores 65 on Artificial Analysis, Highest So Far",
+      "time": 1794254695,
+      "points": 191,
+      "depth": [
+        {
+          "text": "Claude's model scores well, but its max setting is slow, verbose, and expensive",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: critics say the cost jump buys only a modest intelligence gain; others say lower and medium settings look strong on speed versus intelligence.",
+      "comment_count": 102,
+      "terms": [
+        "Intelligence Index",
+        "Pareto frontier",
+        "tokens per second",
+        "context window"
+      ],
+      "entities": [
+        "Claude Fable 5.2",
+        "Anthropic",
+        "Artificial Analysis",
+        "Fable 5.1",
+        "Opus 5.5",
+        "Opus 4.8",
+        "OpenAI",
+        "Google",
+        "Samsung"
+      ],
+      "comments": [
+        {
+          "by": "rgbrenner",
+          "text": "Forget about the scores... look at the Cost Per Task. Fable 5.1 was already the most expensive by a good margin, and now Fable 5.2 doubles it! This is with the price cut. The output tokens per task just exploded. From 118k tokens (46k Answer/71k Reasoning) in 5.1 to 274k tokens (81k Answer/192k Reasoning) in 5.2."
+        },
+        {
+          "by": "oliwary",
+          "text": "Cool! It looks like Fable 5.2 (especially low and medium) also sit on the pareto frontier between time per task and intelligence: https://artificialanalysis.ai/models?speed=output-speed-over... I am always interested in this comparison since it shows how quickly you can go back and forth with a model, capturing both tokens/task and tokens/second. The new models seem to be meaningfully better here."
+        },
+        {
+          "by": "schnitzelstoat",
+          "text": "That seems like an insane increase in cost for a modest intelligence increase. But perhaps the performance on real-world tasks will be more noticeable than on benchmarks."
+        },
+        {
+          "by": "nedsma",
+          "text": "Fable 5.2 at high is the real thing here - scoring 62, second highest ever, on AA intelligence index, while being 3x less expensive."
+        },
+        {
+          "by": "gizmodo59",
+          "text": "https://artificialanalysis.ai/#intelligence-efficiency-tabs this is the chart that matters for most of poor developers and companies. Pareto for a given intelligence index and looks like only openai is across the quadrant with muse at the bottom. They have really cooked efficient models!"
+        }
+      ],
+      "image": "https://artificialanalysis.ai/en/models/claude-fable-5-2/opengraph-image?65781a17af1a7936"
+    },
+    {
+      "id": 50416456,
+      "url": "https://ftrain.com/aboard-the-web-is-more-than-enough",
+      "hn": "https://news.ycombinator.com/item?id=50416456",
+      "title": "The Web Is More Than Enough",
+      "time": 1794167312,
+      "points": 172,
+      "depth": [
+        {
+          "text": "someone says browsers now make **rich apps** **cheap enough** for solo developers to build and share",
+          "tier": "simple"
+        },
+        {
+          "text": "Paul Ford's **TinyLittleOffice** stores data in the URL; after a couple hundred thousand people came by, CloudFlare hosting cost **$0**. He points to Web Crypto API, WebAssembly, WebGL and Web Audio API as browser capabilities, and argues cheap web distribution could shake up app-store economics.",
+          "tier": "substance",
+          "data": [
+            [
+              "hosting cost",
+              "$0"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: web-app supporters praise browser capabilities and easy distribution; critics say browser dependence puts control in Big Tech's hands.",
+      "comment_count": 129,
+      "terms": [
+        "URL",
+        "Web Crypto API",
+        "WebAssembly",
+        "WebGL",
+        "Web Audio API"
+      ],
+      "entities": [
+        "Paul Ford",
+        "Ftrain",
+        "Aboard Newsletter",
+        "TinyLittleOffice",
+        "CloudFlare",
+        "Hacker News",
+        "GitHub",
+        "The Register",
+        "Product Hunt",
+        "Web Crypto API",
+        "WebAssembly",
+        "WebGL",
+        "Web Audio API",
+        "JavaScript",
+        "HTML",
+        "PDF.js",
+        "Simon Willison",
+        "Battle Drones",
+        "Claude",
+        "three.js",
+        "SSE",
+        "Rust",
+        "iOS",
+        "macOS",
+        "Android",
+        "Google Maps",
+        "cartes.app",
+        "Signal",
+        "mpv",
+        "quodlibet",
+        "Chromium",
+        "Google",
+        "Apple",
+        "WebKit",
+        "Firefox",
+        "systemd",
+        "OSI",
+        "WebXR",
+        "Steam Frame",
+        "Linux",
+        "Windows",
+        "Visual Basic",
+        "Instagram",
+        "Mozilla",
+        "Creole",
+        "Yiddish"
+      ],
+      "comments": [
+        {
+          "by": "azangru",
+          "text": "> So take a look at Simon Willison’s new web-based browser 3D game, Battle Drones. He’s hosting it on GitHub. He wrote it himself. He’s not a games builder. I checked the repo, and it is written by Claude. Does this count as writing it himself?"
+        },
+        {
+          "by": "simonw",
+          "text": "I like this statement: > The web browser is very, very, very powerful software for applications, and the cost of accessing that power is going down seemingly every day . It's wild how much easier it is to build things that harness web technology these days. I'm building features on top of three.js and offline storage and SSE and WebAudio and WebAssembly multiple times per week these days. I used…"
+        },
+        {
+          "by": "Kuyawa",
+          "text": "It is, and I'll tell you my anecdote... I am developing a game and right now got iOS, macOS, Android, web responsive, Rust for Linux and Rust for Windows versions ready. Six different source folders for the same game. It is exhausting even with the help of modern tools If we could use just one tech stack providing native parity without drawbacks for all of them that would be the final achievement…"
+        },
+        {
+          "by": "the__alchemist",
+          "text": "For anyone having a hard time following the comments or mentality: Someone explained in a HN comment a few weeks ago in a comment which has helped clarify in my mind: Web (And especially SAAS) developers make up a large portion of HN users. They use and love frontend frameworks, Node, NPM, and using web tech for many tasks, as a first line of tools."
+        },
+        {
+          "by": "maelito",
+          "text": "We're rebuilding Google Maps on the Web, and the Web only with https://cartes.app . The main problem we're struggling with is mobile OSes' will to hide the possibility of installing Web app on our devices, and deactiving things like the vibration API. Not the Web itself."
+        }
+      ],
+      "image": "https://ftrain.com/art/uploads/aboard-newsletter/the-web-is-more-than-enough-header.png"
+    },
+    {
+      "id": 50428907,
+      "url": "https://www.watched.earth",
+      "hn": "https://news.ycombinator.com/item?id=50428907",
+      "title": "Show HN: Every satellite that passed over any place this week, and its photos",
+      "time": 1794246691,
+      "points": 177,
+      "depth": [
+        {
+          "text": "someone built a site showing which **satellites** **passed over** any place and their **photos**",
+          "tier": "simple"
+        },
+        {
+          "text": "Enter a place to find every satellite pass from the **last 7 days**, then see real images from Sentinel-2, Landsat, or NASA. The search runs in the browser in **about half a second**; brute-force checks on poles, the antimeridian, and tiny swaths found **0 missed passes**. It only says “watched” when a real image exists, and doesn't store your location.",
+          "tier": "substance",
+          "data": [
+            [
+              "lookback",
+              "last 7 days"
+            ],
+            [
+              "browser runtime",
+              "about half a second"
+            ],
+            [
+              "missed passes",
+              "0 missed"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: one commenter accuses the post of being LLM-generated and says it should be removed; others praise the site's style and execution.",
+      "comment_count": 37,
+      "terms": [
+        "SGP4",
+        "GPU",
+        "Kepler's equation",
+        "antimeridian",
+        "swath",
+        "SAR",
+        "UX"
+      ],
+      "entities": [
+        "CelesTrak",
+        "Sentinel-2",
+        "Landsat",
+        "NASA",
+        "GitHub",
+        "Copernicus",
+        "Sentinel-1",
+        "Umbra",
+        "Capella",
+        "X",
+        "watched.earth"
+      ],
+      "comments": [
+        {
+          "by": "anonymous908213",
+          "text": "People who prompt an LLM to generate without proper capitalization in order to deceive more people into thinking the text is genuine deserve a special place in hell. Always with the inauthentic feedback CTA, too. This should be killed off HN for flagrantly violating the rules against LLM-generated text, and yet everyone upvotes it."
+        },
+        {
+          "by": "Eridanus2",
+          "text": "The relevant launch video trailer on your X page is really well produced. How did you go about constructing it?"
+        },
+        {
+          "by": "HoldOnAMinute",
+          "text": "I don't say this lightly: This may be the best combination of style and substance I have ever seen."
+        },
+        {
+          "by": "award_",
+          "text": "This is not only a very cool idea, but also fantastic execution! Great work and very neat!"
+        },
+        {
+          "by": "lol8675309",
+          "text": "Super broken at the moment - or I'm impatient"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50405674,
+      "url": "https://www.sussi.dk/terry-pratchetts-study",
+      "hn": "https://news.ycombinator.com/item?id=50405674",
+      "title": "Terry Pratchett's Study",
+      "time": 1794067545,
+      "points": 160,
+      "depth": [
+        {
+          "text": "someone made a **tiny model of Terry Pratchett’s study** as a **gift** for their son",
+          "tier": "simple"
+        },
+        {
+          "text": "It’s a **small section**, not an exact replica, built at **scale 1:12**. Every book was made individually with the correct cover, and the signed first edition of “Good Omens” says “Burn this book!”",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 46,
+      "terms": [
+        "scale 1:12",
+        "3D-printed",
+        "veneer"
+      ],
+      "entities": [
+        "Terry Pratchett",
+        "Bernard Pearson",
+        "The Cunning Artificer",
+        "Discworld",
+        "Good Omens",
+        "The Colour of Magic",
+        "The Librarian",
+        "Paul Kidby",
+        "The Shepherd’s Crown",
+        "Doom",
+        "National Center of Reptile Welfare",
+        "The Herald",
+        "Salisbury Museum",
+        "Mastodon",
+        "Francis Bacon",
+        "A Slip of the Keyboard",
+        "Hogfather",
+        "The Borrowers"
+      ],
+      "comments": [
+        {
+          "by": "simonw",
+          "text": "Terry Pratchett once wrote about the concept of \"horizontal wealth\". Vertical wealth is where you spend money on rich people stuff - yachts and suchlike. Horizontal wealth is where you spend more money on the things you liked before you got rich: https://chibuikeani.blogspot.com/2017/02/the-price-of-happin... \"But horizontal wealth means not letting your increased income dictate your tastes. You…"
+        },
+        {
+          "by": "comrade1234",
+          "text": "You can see Francis bacon's studio in Dublin. They moved it from London to a museum in Dublin. I don't think he would have liked that - he was born in Dublin but I think he lived his life in London and maybe didn't care for Dublin that much. It's a god damn mess. Shit is piled everywhere. You can see some works in progress. Apparently he bought a lot of art books of other artists. It was a big…"
+        },
+        {
+          "by": "timnetworks",
+          "text": "Kinda surprised the website doesn't have clacks[1] overhead. 1. http://www.gnuterrypratchett.com"
+        },
+        {
+          "by": "valorzard",
+          "text": "All right,\" said Susan. \"I'm not stupid. You're saying humans need... fantasies to make life bearable.\" REALLY? AS IF IT WAS SOME KIND OF PINK PILL? NO. HUMANS NEED FANTASY TO BE HUMAN. TO BE THE PLACE WHERE THE FALLING ANGEL MEETS THE RISING APE. \"Tooth fairies? Hogfathers? Little—\" YES. AS PRACTICE. YOU HAVE TO START OUT LEARNING TO BELIEVE THE LITTLE LIES. \"So we can believe the big ones?\"…"
+        },
+        {
+          "by": "arjie",
+          "text": "You're kidding. That's a miniature setting? I know that a photo can elide details that give us scale but I would never have noticed. I thought the coat hanger was a bit oddly gaudy and blobby for a full size but if it were miniature that makes sense. Hard to get that detail. Nicely done! Also, the website itself is pretty neat and old school. I'm quite the fan."
+        }
+      ],
+      "image": "https://www.sussi.dk/wp-content/uploads/2026/11/IMG_6115-scaled.jpeg"
+    },
+    {
+      "id": 50427085,
+      "url": "https://github.com/datareceipts/data-receipts/tree/main/109-gpu-pricing",
+      "hn": "https://news.ycombinator.com/item?id=50427085",
+      "title": "The same H100 costs $2.69 or $12.29 an hour depending where you rent it",
+      "time": 1794238741,
+      "points": 160,
+      "depth": [
+        {
+          "text": "the same **H100** can cost **$2.69 or $12.29 an hour**, depending where you rent it",
+          "tier": "simple"
+        },
+        {
+          "text": "These are **on-demand prices** for **identical GPU models**. The gap isn't **pure margin**: Azure's ND series comes with InfiniBand and a datacentre SLA, while RunPod Community rents from third-party hosts; reserved, committed-use and spot prices aren't included.",
+          "tier": "substance",
+          "data": [
+            [
+              "lower listed hourly price",
+              "$2.69"
+            ],
+            [
+              "higher listed hourly price",
+              "$12.29"
+            ],
+            [
+              "cheapest-to-dearest gap",
+              "4.57×"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some warn that hosts may snoop on valuable workloads; others say RunPod was mostly okay for experiments and research.",
+      "comment_count": 84,
+      "terms": [
+        "H100",
+        "GPU",
+        "on-demand",
+        "InfiniBand",
+        "SLA",
+        "spot pricing",
+        "neocloud"
+      ],
+      "entities": [
+        "AWS",
+        "Azure",
+        "GitHub",
+        "RunPod",
+        "Lambda",
+        "Vast.ai",
+        "Silicon Index",
+        "Ornn Compute Price Index (OCPI)",
+        "SkyPilot",
+        "TensorDock",
+        "Modal.com",
+        "Akash",
+        "Mithril.ai",
+        "MSFT",
+        "Quantum-2"
+      ],
+      "comments": [
+        {
+          "by": "plantain",
+          "text": "You are completely mad if you are running any kind of valuable workload on Runpod community or Vast. Hosts are absolutely peeking inside the VM's (you can see it openly discussed in their Discords)."
+        },
+        {
+          "by": "noodlesUK",
+          "text": "One thing that I'm not seeing mentioned very frequently is that it's really hard to actually get the GPUs that hyperscalers advertise depending on your region, use of cloud credits etc. On Azure if you have credits (even hundreds of thousands of USD of credits through programmes like MSFT for startups) you just can't get any GPU quota in any region, even if you beg and plead with support reps…"
+        },
+        {
+          "by": "buredoranna",
+          "text": "There are a couple of new indices out there. [1] \"Silicon Index\". Built against pricing observations, including listed prices and transaction data. [2] \"Ornn Compute Price Index (OCPI)\". Claiming to use only executed transactions. Your mileage may vary, but I find these new indices to be quite compelling. [1] https://www.silicondata.com/products/silicon-index [2] https://data.ornn.com/ And yup…"
+        },
+        {
+          "by": "uneekname",
+          "text": "> 4.57× between cheapest and dearest, for the same chip > What the 4.57× is not > - InfiniBand > - A datacentre SLA > - Enterprise compliance, committed capacity... ok"
+        },
+        {
+          "by": "itkovian_",
+          "text": "One interesting thing going is device fraud on the 3rd party market places - i.e changing the clock speed, dividing devices up and renting same one at same time and hoping rentees won’t notice, everything you can think of someone is trying. lots of interesting dynamics in the preemptible (spot) markets as well. If you’re smart i’d say there is a >10x cost advantage available over hyperscalar OD…"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/e11496fcbe86e6b2696f278e3604a16729bdb5041fe06fca2b68781bdb321b04/datareceipts/data-receipts"
+    },
+    {
+      "id": 50425303,
+      "url": "https://reactormag.com/children-of-men-the-future-is-a-mirror-for-the-present/",
+      "hn": "https://news.ycombinator.com/item?id=50425303",
+      "title": "Children of Men: The future is a mirror for the present",
+      "time": 1794230821,
+      "points": 155,
+      "depth": [
+        {
+          "text": "an essay says **Children of Men** uses a **bleak future** to make us face **the present**",
+          "tier": "simple"
+        },
+        {
+          "text": "Alfonso Cuarón shifts the focus from how authoritarian regimes rise to what they do to the **least powerful**, especially refugees. He leaves the infertility **unexplained** and uses documentary-style visuals and **long shots** to keep the suffering in view.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters say the film’s infertility premise and politics feel increasingly relevant; others say it doesn’t resemble their world, especially the US.",
+      "comment_count": 119,
+      "terms": [
+        "worldbuilding",
+        "VFX",
+        "long shot",
+        "compositing"
+      ],
+      "entities": [
+        "Children of Men",
+        "The Children of Men",
+        "Alfonso Cuarón",
+        "P.D. James",
+        "Timothy J. Sexton",
+        "Clive Owen",
+        "Clare-Hope Ashitey",
+        "Julianne Moore",
+        "Michael Caine",
+        "Emmanuel Lubezki",
+        "Frazer Churchill",
+        "Tim Webber",
+        "The Battle of Algiers",
+        "Y tu mamá también",
+        "A Clockwork Orange"
+      ],
+      "comments": [
+        {
+          "by": "Balgair",
+          "text": "Watching the movie before kids: Wow, so gritty, so depressing, great worldbuilding, what will become of us? Watching the movie after kids: My heart is outside of me bleeding on the floor and yet I am still alive and must watch myself suffer forever, this pain that I feel has no place inside me anymore and it burns darkly bright, is this the future my children will have?, what must I do to prevent…"
+        },
+        {
+          "by": "julianpye",
+          "text": "I went to the Biennale in Venice last weekend and thought about the movie intensely after visiting the Japanese pavilion. If you don't know about it - the Biennale features artists representing specific countries as they transform a fixed pavilion building into their vision. When you walk across the Giardini site, you walk through themes of the globe. Often these themes are overly political and…"
+        },
+        {
+          "by": "jacquesm",
+          "text": "One of the best movies I've ever watched, and one of the few that I could only watch once. It alternates between a gut-wrenching view of a very plausible future and scenes that have you sitting on the edge of your chair. To call it roller coaster would be an understatement. If you haven't watched it: don't read the rest of the comments here, go watch the movie, then read the comments."
+        },
+        {
+          "by": "justincarter",
+          "text": "I remember watching this when it came out and liking the filmmaking part of it but disagreeing with the \"this is our future\" view others had. Now that it's been a few years and I have a few kids, there is a lot of it I don't like unfortunately (although the camera work, sound, and editing is still pretty amazing). I don't understand how people say this is similar to our world today. It still…"
+        },
+        {
+          "by": "siavosh",
+          "text": "I think I dragged my family to see this movie on xmas day, and felt bad for depressing everyone. But it's stayed with me ever since. One scene regularly comes to mind, the one where the rich guy's kid is just on some futuristic version of the iPhone at dinner. Too real. Also the fact that humans mysteriously lost the ability to have children always seemed to me some unimaginable sci-fi trope, but…"
+        }
+      ],
+      "image": "https://reactormag.com/wp-content/uploads/2026/10/children-of-men-header.png"
+    },
+    {
+      "id": 50405789,
+      "url": "https://mceglowski.substack.com/p/how-long-can-life-wait",
+      "hn": "https://news.ycombinator.com/item?id=50405789",
+      "title": "How Long Can Life Wait?",
+      "time": 1794068579,
+      "points": 154,
+      "depth": [
+        {
+          "text": "the post asks how long **microbes** can stay alive inside **space rocks**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says the article offers **solid proof** that microbes can stay viable for up to **100,000 years**. The thread also asks whether cells or spores could survive the **acceleration** of a rock ejected from Mars, and whether looking inside an intact rock from a distance could help address contamination.",
+          "tier": "substance",
+          "data": [
+            [
+              "microbe viability",
+              "100,000 years"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 107,
+      "terms": [
+        "panspermia",
+        "viable",
+        "GCR",
+        "contamination"
+      ],
+      "entities": [
+        "Ceglowski",
+        "Tanpopo",
+        "Project Hail Mary",
+        "Pinboard"
+      ],
+      "comments": [
+        {
+          "by": "schiffern",
+          "text": "One thing about panspermia math: why assume current travel conditions between the stars? Today the Sun is very far from other stars, but early in star formation (within nebula) the stars are 1. much closer together 2. have a higher rate of material ejection (mass exchange) 3. likely have more benign radiation environments unless near a star, due to GCR shielding by nebula gas 4. likely have…"
+        },
+        {
+          "by": "themanmaran",
+          "text": "> But if 2-9-3 really had been isolated from its relative for a quarter billion years, enough random mutations in the rDNA should have accumulated for there to be a difference of at least 50 base pairs Occams razor definitely points to this just being a sterilization problem. But it would be funny if the bacteria was just way more stable than people expect."
+        },
+        {
+          "by": "wjb3",
+          "text": "\"Some of the problem is cultural. Geologists, petrologists, and microbiologists come from different scientific tribes that don’t typically read one another’s papers, or buy one another beers. Even the various subfields can often talk past each other, and many researchers have yet to absorb the full implications of modern sequencing techniques on their field.\" I would love to see this problem…"
+        },
+        {
+          "by": "thisisauserid",
+          "text": "Based on the article, there is solid proof that microbes can remain viable for up to 100,000 years."
+        },
+        {
+          "by": "jpablo",
+          "text": "I would have liked to find life in mars/the moon. At this point I think we should be tying to spread life everywhere."
+        }
+      ],
+      "image": null
+    },
+    {
       "id": 50418016,
       "url": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
       "hn": "https://news.ycombinator.com/item?id=50418016",
@@ -767,6 +2519,122 @@
     }
   ],
   "glossary": {
+    "agents": "AI tools that can carry out tasks with some independence.",
+    "formalization": "Writing mathematics in a precise form that a computer can check.",
+    "tokens": "Small pieces of text an AI counts as it reads or writes; they can affect how much a request costs.",
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "time aloft": "How long a plane stays in the air.",
+    "glide ratio": "How far a plane travels forward compared with how much height it loses.",
+    "eval": "A test used to check whether an AI can handle a task.",
+    "A/B testing": "Trying different versions with different users to see which one works better.",
+    "quantization": "A way to make a model use less computing power by representing its internal numbers less precisely.",
+    "high / xhigh": "Settings for how much reasoning the model does; the post says xhigh takes longer to think.",
+    "commons": "Shared work and resources that people contribute to and use together.",
+    "crowdsourced": "Made with contributions from many people rather than by one person or company.",
+    "peer-to-peer": "A setup where computers talk directly to each other instead of relying on one central server.",
+    "async": "Work that people can do at different times, without needing to be online together.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "payment rail": "The shared system payment providers use to move money between one another.",
+    "clearing": "The step where a payment is checked and routed between the organizations involved.",
+    "settlement": "The point when the money is transferred to the recipient.",
+    "float": "The period when money has been sent but is temporarily unavailable to the recipient.",
+    "ISO 20022": "A shared technical language that lets payment systems send more details along with a payment.",
+    "confirmation of payee": "A check that the person or business being paid matches the account details.",
+    "cold email": "An unsolicited email to someone you don’t already know, often sent to pitch something.",
+    "growth hacking": "A pushy or experimental way of trying to get more customers.",
+    "lead gen": "A way of finding potential customers for a business.",
+    "consultation": "A process where people are asked for their views before a plan is made.",
+    "social isolation": "Having little contact or connection with other people.",
+    "polygon": "A flat shape made from straight sides joined end to end.",
+    "ZIP+4": "A nine-digit postal code that narrows a ZIP Code down to a single block.",
+    "ZCTA": "ZIP Code Tabulation Area: a geographic area used in Census data that is related to ZIP Codes, but isn't identical.",
+    "GeoJSON": "A file format for storing map shapes and location details that mapping tools can use.",
+    "Eternal September": "A phrase for a website getting a steady flow of newcomers who change how its community feels.",
+    "SBC": "Single-board computer: a whole small computer built onto one board.",
+    "system-on-module": "A small computer module designed to be built into a larger device.",
+    "RAM": "Random-Access Memory: a computer's working space for information it is using right now.",
+    "eMMC": "embedded MultiMediaCard: built-in storage that keeps files when the device is off.",
+    "agrivoltaics": "Growing food and generating solar power on the same land.",
+    "photovoltaic cells": "The parts of a solar panel that turn sunlight into electricity.",
+    "wavelengths": "Different parts of sunlight, including its colors.",
+    "photosynthesis": "The process algae use to turn sunlight into food.",
+    "vapor pressure deficit": "A measure of when plants may need to stop using sunlight to make food so they don’t lose too much water.",
+    "biomass": "The combined mass of living things in a species or group.",
+    "agent": "An AI system that can take steps and use tools to get a task done, not just answer questions.",
+    "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
+    "context window": "The amount of text and information an AI can take into account at one time.",
+    "open weights": "The model's learned settings are available for people to download and run themselves.",
+    "SSH agent forwarding": "Secure Shell agent forwarding: a way for another computer to use a key held on yours without copying the key there.",
+    "SSH key": "A digital key your computer uses to prove it is allowed to connect to a service.",
+    "jump host": "A middle computer you connect through to reach another computer.",
+    "secure enclave": "A protected part of a computer meant to keep data and calculations hidden from the rest of the system.",
+    "SSH config": "Secure Shell settings: a file where you can set how your computer connects to different machines.",
+    "Connected Apps": "A setting that lets Gemini use information from services like Gmail or Drive.",
+    "human annotators": "People who review material and help assess AI answers.",
+    "probabilistic": "Able to give different results because chance is involved.",
+    "PII": "Personally Identifiable Information: details that could identify someone, such as an email or phone number.",
+    "NER": "Named Entity Recognition: software that picks out details like names and places in text.",
+    "RAG": "Retrieval-Augmented Generation: a way for an AI to look up material and use it when answering.",
+    "malloc": "A C function that asks for a block of memory for a program to use.",
+    "syscall": "A request a program sends to the operating system to do something on its behalf.",
+    "heap": "Memory a program can request as it runs, useful when it doesn’t know in advance how much space its data will need.",
+    "chunk": "A block of memory that a program handles as one piece.",
+    "free list": "A list of memory blocks that are available to be used again.",
+    "mmap": "A way to ask the operating system for a separate memory block that can be returned on its own.",
+    "bins": "Separate lists of freed memory blocks, grouped by size so the right-sized blocks are easier to find.",
+    "tcache": "A small stash of recently freed blocks that an allocator can hand back quickly.",
+    "k-means": "A way to split data into a chosen number of groups by putting each item near the group's center.",
+    "mini-batch": "A small portion of the data used for an update instead of using all the data at once.",
+    "exponential moving average": "A way to update a value that gives newer results more weight and lets older ones fade.",
+    "centroid": "The center point used to represent a group of data.",
+    "loss": "A score for how wrong a model’s answer is; training tries to lower it.",
+    "scaling laws": "Formulas that use details like the dataset size to choose useful settings.",
+    "hyperparameter": "A setting that a person chooses to control how an algorithm runs.",
+    "seppuku": "A traditional Japanese ritual suicide; the article says the pledge's label refers to this practice.",
+    "maintainer": "Someone who keeps a software project working and up to date.",
+    "wrongful termination": "A legal claim that someone was fired for a reason the law does not allow.",
+    "employer-of-record": "A service company that officially employs workers for another organization.",
+    "coarse-to-fine": "Starting with a rough version, then adding detail in later steps.",
+    "residual VQ-VAE": "Residual Vector Quantized Variational Autoencoder: a tool that turns text into layers of compact codes, from broader information to finer detail.",
+    "transformer": "A kind of language model that can weigh how different words in a passage relate to each other.",
+    "DLM": "Diffusion language model: a text generator that can revise several parts of an answer together instead of only writing the next piece.",
+    "generative perplexity": "A score for how surprised a text model is by the text it sees; lower scores generally mean its guesses fit better.",
+    "ROUGE-L": "Recall-Oriented Understudy for Gisting Evaluation—Longest Common Subsequence: a score that compares generated text with a reference by checking shared word order.",
+    "function evaluation": "One counted run of a calculation used to produce or test an answer.",
+    "autoregressive": "A way to generate a sequence one step at a time, using what has already been generated to make the next step.",
+    "discrete codes": "Small labels from a fixed set that a computer can use to represent pieces of information.",
+    "Intelligence Index": "A score used here to compare how well different AI models perform.",
+    "Pareto frontier": "A set of choices where you can't get better on one measure without giving something up on another.",
+    "tokens per second": "A measure of how quickly a model produces text.",
+    "URL": "A web address; here, the address can also carry a document.",
+    "Web Crypto API": "Browser features for security-related tasks.",
+    "WebAssembly": "A way to run compiled programs inside a web browser.",
+    "WebGL": "A browser feature that lets websites draw 2D and 3D images using your computer.",
+    "Web Audio API": "A set of tools built into browsers for making and controlling sound.",
+    "SGP4": "Simplified General Perturbations 4: a method for working out where an orbiting object will be.",
+    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "Kepler's equation": "A math formula used to calculate where an object is in its orbit.",
+    "antimeridian": "The line at 180 degrees longitude, where maps wrap from one side of the world to the other.",
+    "swath": "The strip of ground a satellite can see as it passes overhead.",
+    "SAR": "Synthetic Aperture Radar: a way for satellites to make images that can show the ground through clouds.",
+    "UX": "User experience: how using a product feels and how easy it is to get things done.",
+    "scale 1:12": "The model is one-twelfth the size of the real room.",
+    "3D-printed": "Made by a printer that builds an object up in layers from a design.",
+    "veneer": "A thin sheet of wood used as the visible surface on another material.",
+    "H100": "A particular GPU model; this article separates its versions because they don't all cost the same.",
+    "on-demand": "Available when needed, rather than set up and running all the time.",
+    "InfiniBand": "A fast connection that links computers so their GPUs can share work.",
+    "SLA": "Service-level agreement: a provider's promise about how reliably its service will work.",
+    "spot pricing": "A lower price for spare computing time that may not be available when you need it.",
+    "neocloud": "A cloud provider that rents out computing power, often using GPU hardware.",
+    "worldbuilding": "The details that make an imagined world feel like a real place.",
+    "VFX": "Visual effects: added or changed imagery in a video.",
+    "long shot": "A stretch of film that runs without a cut, making the action feel like it unfolds continuously.",
+    "compositing": "Putting separately filmed pieces together so they look like one scene.",
+    "panspermia": "The idea that life can spread between worlds, perhaps carried by rocks.",
+    "viable": "Still alive and able to keep living.",
+    "GCR": "Galactic cosmic rays: high-energy particles from space that can harm living things.",
+    "contamination": "When a model has already seen test problems during training, so a score may not show how well it handles new problems.",
     "honey trap": "A romantic or sexual setup used to get secrets or pressure someone.",
     "stack": "A pile of values where a program adds items to the top and removes them from there.",
     "PR": "Pull request: a proposed code change shared so others can review it.",
@@ -801,9 +2669,6 @@
     "WAF": "Web Application Firewall: a website’s guard that checks incoming requests and can block suspicious ones.",
     "MFA": "Multi-factor authentication: a login check that asks for more than one kind of proof.",
     "ROPC": "Resource Owner Password Credentials: a login method where an app sends a user's password to get a sign-in token.",
-    "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
-    "PII": "Personally Identifiable Information: details that could identify someone, such as an email or phone number.",
-    "agent": "An AI system that can take steps and use tools to get a task done, not just answer questions.",
     "git": "A tool that keeps a history of changes to code or other files.",
     "priority queue": "A list that puts the most important waiting task first.",
     "Markdown": "A plain-text way to format notes with headings, lists, and code.",
@@ -818,10 +2683,8 @@
     "data centre": "A building full of computers that companies use to run online services.",
     "moat": "An advantage that makes it hard for competitors to take customers away from a business.",
     "P/E ratio": "Price-to-earnings ratio: a comparison between what a company's shares cost and how much money it earns.",
-    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
     "IPO": "Initial Public Offering: when a company first offers its shares for the public to buy.",
     "S-1 filing": "A document a company gives US regulators when it plans to sell shares to the public.",
-    "tokens": "Small pieces of text an AI counts as it reads or writes; they can affect how much a request costs.",
     "convertible notes": "Loans that can later turn into company shares.",
     "false vocal folds": "Tissue above the vocal folds that can help make some throat-singing sounds.",
     "Khoomei": "A kind of throat singing.",
