@@ -2,6 +2,1139 @@
   "date": "2026-11-10",
   "cards": [
     {
+      "id": 50436640,
+      "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
+      "hn": "https://news.ycombinator.com/item?id=50436640",
+      "title": "Amazon saves millions by replacing Sonnet 4.6 with Strands Decider",
+      "time": 1794290468,
+      "points": 650,
+      "depth": [
+        {
+          "text": "Amazon swapped **ticket-labeling models** and says the cheaper one saves **millions a year**",
+          "tier": "simple"
+        },
+        {
+          "text": "They replaced **Claude Sonnet 4.6** with **Strands Decider E4B** for ticket labels, reporting a **98% cost reduction**: about $500 per million tickets versus about $22,200. A three-way switch let them compare both models on real traffic before changing the live system.",
+          "tier": "substance",
+          "data": [
+            [
+              "Cost per million tickets, Claude Sonnet 4.6",
+              "about $22,200"
+            ],
+            [
+              "Cost per million tickets, Strands Decider E4B",
+              "about $500"
+            ],
+            [
+              "Reported cost reduction",
+              "98%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Some say specialized models can be cheaper and fit classification better; others ask why Amazon used an LLM at all when simpler tools could do the job.",
+      "comment_count": 227,
+      "terms": [
+        "decision model",
+        "LLM",
+        "tokens",
+        "JSON",
+        "SageMaker",
+        "SVM",
+        "calibration"
+      ],
+      "entities": [
+        "Amazon",
+        "AWS",
+        "Claude Sonnet 4.6",
+        "Strands Agents",
+        "Strands Decider",
+        "Gemma 4",
+        "SageMaker",
+        "S3",
+        "SQS",
+        "Lambda",
+        "AppConfig",
+        "CloudWatch",
+        "CDK",
+        "Bedrock",
+        "Carr Onstott",
+        "Mehul Jaiswal"
+      ],
+      "comments": [
+        {
+          "by": "armcat",
+          "text": "About six years ago we built a ticket classification/routing model and pipeline [1]. The initial version was trained using SVMs, it took a couple of minutes to train, and the ticket classification was just a few milliseconds. It's so fascinating to watch how the field moved over to LLMs, and then back to faster/cheaper classifiers again. [1] \"Linnaeus: A highly reusable and adaptable ML based log…"
+        },
+        {
+          "by": "Kaedon",
+          "text": "At ~$21,700 saved per million tickets, saving millions annually would suggest at least 92 million tickets a year to reach $2 million saved. Is that about right? I initially thought of tickets as just customer support, or internal JIRAs, but the article mentions alarms, security findings, and capacity increase requests, so that makes the scale feel more plausible. Still surprising so many tickets…"
+        },
+        {
+          "by": "newsicanuse",
+          "text": "Almost anything hyped by or lead by Swaminathan Sivasubramanian at Amazon is as close to scam or bar lowering product as it can be."
+        },
+        {
+          "by": "deepsquirrelnet",
+          "text": "One of the biggest issues with using a general LLM like Sonnet is calibration. I think Jev really helped bring this to light. With Sonnet, you get an answer and that's it. It's really not that great for classification, especially tagging. I've trained a lot of NLI models, which do similar things to decision models. A 1B parameter encoder is about the same capability as a 2B LLM, but if you have…"
+        },
+        {
+          "by": "Otterly99",
+          "text": "It's baffling to me that a company like Amazon would choose to use a LLM for a task as simple as ticket classification. Don't they have thousands of engineers and petabytes of data? They even have their Mechanical Turk program if they want a cheap labelling workforce."
+        }
+      ],
+      "image": "https://strandsagents.com/blog/og/amazon-saves-millions-replacing-sonnet-with-strands-decider.png"
+    },
+    {
+      "id": 50439193,
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "hn": "https://news.ycombinator.com/item?id=50439193",
+      "title": "AlphaProof Code",
+      "time": 1794312672,
+      "points": 505,
+      "depth": [
+        {
+          "text": "someone got AI agents to **prove** key security claims about **Signal’s real code**",
+          "tier": "simple"
+        },
+        {
+          "text": "Researchers used **AlphaProof Code** to split the work: people translated and reviewed the mathematical specifications, while Gemini Carbon-powered agents generated **over six million lines of Lean**. The verification took **four weeks**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Lean generated",
+              "over six million lines"
+            ],
+            [
+              "verification time",
+              "four weeks"
+            ],
+            [
+              "reintroduced bugs",
+              "two"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: skeptics worry the proofs could validate the wrong specification or miss bugs; supporters see the approach as a useful way to strengthen software security.",
+      "comment_count": 162,
+      "terms": [
+        "formal verification",
+        "Lean",
+        "cryptographic protocol",
+        "specification",
+        "LLM",
+        "AI agent"
+      ],
+      "entities": [
+        "Google DeepMind",
+        "AlphaProof Code",
+        "Signal",
+        "Gemini Carbon",
+        "Lean",
+        "Google Messages",
+        "CodeMender",
+        "Ehren Kret"
+      ],
+      "comments": [
+        {
+          "by": "hedora",
+          "text": "Something seems wrong here. They took a non-trivial piece of human-written code that has had bugs in the past, formally verified the whole library, and found zero bugs? I can believe that it's possible to get the LLM to write proofs, but I can't believe there were zero bugs in the system they verified. I wonder if they got the theorems wrong, or if they only proved narrow properties of the…"
+        },
+        {
+          "by": "thibsrn",
+          "text": "Great, what a great use case for AI. I feel like Google has been the cleanest of the big players in terms of useful contributions and control of their AI systems. This new proof agent doesn't seem to challenge the spec though, just the implementation, if I've understood correctly. I wonder how this agent is different than a classic coding agent, in the end it seems to work the same way, iterating…"
+        },
+        {
+          "by": "Mizza",
+          "text": "I'm expecting that very soon, perhaps in the next two or three years, it will seem mad that we ever ran _any_ unverified software on our systems, like how it now seems mad we used Telnet or plaintext HTTP."
+        },
+        {
+          "by": "andai",
+          "text": "Earlier this year I was doing some major refactors of an old project. At the time coding agents were really taking off where you could increasingly trust them for more autonomous work, so I was excited to give it a go. It did the refactor, running for several hours, and ended up volunteering an extensive test suite as well. All tests green! I was very impressed, until I squinted a little. It had…"
+        },
+        {
+          "by": "r0ze-at-hn",
+          "text": "I have been experimenting with utilizing how easy it is for AI to code lean (\nhttps://metamagic.substack.com/p/beyond-the-proof-dump-lean-... ) and a few lessons 1. AI Lean is not perfect and AI can easily cheat given it is writing the lean. For anyone playing around with AI Lean code at minimum you need another adversarial prompt to review the ai generated lean. 2. In the paper poking around I…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50442736,
+      "url": "https://neil.fraser.name/news/2026/11/10/",
+      "hn": "https://news.ycombinator.com/item?id=50442736",
+      "title": ".name Grandfathered",
+      "time": 1794328664,
+      "points": 417,
+      "depth": [
+        {
+          "text": "Verisign is closing new **.name registrations**, while **existing domains** and **email redirects** stay indefinitely",
+          "tier": "simple"
+        },
+        {
+          "text": "Verisign had planned to terminate **22,000 domain names** and email redirects. After a **long, expensive battle**, people sent formal reconsideration requests and support letters; Jim **flew to Bali** to make the case to ICANN.",
+          "tier": "substance",
+          "data": [
+            [
+              "domains in the termination plan",
+              "22,000"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 74,
+      "terms": [
+        "third-level domain",
+        "email redirect",
+        "ICANN",
+        "reconsideration request",
+        "registrar",
+        "gTLD"
+      ],
+      "entities": [
+        "Verisign",
+        "ICANN",
+        ".name",
+        "Neil Fraser",
+        "Doytchin",
+        "Jim",
+        "Patrik",
+        "Troy",
+        "Huyen",
+        "Keith",
+        "Judy",
+        "Erik",
+        "Ryan",
+        "Jan",
+        "Flip",
+        "Diégo",
+        "Beverly",
+        "Stefan",
+        "Vaughan",
+        "Irv",
+        "Pablo",
+        "Larry",
+        "Lionel",
+        "Daniel",
+        "Ori",
+        "Markus",
+        "Kirk",
+        "Ed",
+        "Jeremy",
+        "Stephan",
+        "Matija",
+        "Simon",
+        "Mark",
+        "Evan"
+      ],
+      "comments": [
+        {
+          "by": "giancarlostoro",
+          "text": "> After a long and expensive battle, news just dropped that Verisign is retracting its plan to terminate 22,000 domain names and email redirects. Although they will be closing new registrations for 3rd-level .name domains, all existing domains (including this website) and email redirects will remain indefinitely. This was what I figured SHOULD happen when they did this. Allow existing customers…"
+        },
+        {
+          "by": "nticompass",
+          "text": "WHAT‽ I let my \"first.last.name\" registration expire because of the impending shutdown! I did notice that my domain kept working past the supposed shutdown date, but I let the domain registration expire. I'm so mad now! I assume there is no way to get my domain/email forwarding back :( I suppose I could try to ask the registrar, but I highly doubt they can do anything... (Edit: I'm not actually…"
+        },
+        {
+          "by": "kwanbix",
+          "text": "Why would they even want to close it? It is probably close to 0 cost tot hem. Or am I wrong?"
+        },
+        {
+          "by": "derhuerst",
+          "text": "previous discussion on the predecessor post, 69 days ago, 547 comments: https://news.ycombinator.com/item?id=49550772"
+        },
+        {
+          "by": "Tepix",
+          "text": "Vive la résistance! Resistance is not futile."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50441707,
+      "url": "https://docodethatmatters.com/home-automation-overnight-success/",
+      "hn": "https://news.ycombinator.com/item?id=50441707",
+      "title": "Smart home devices should work without the internet",
+      "time": 1794324320,
+      "points": 357,
+      "depth": [
+        {
+          "text": "someone says **smart home devices** should keep doing their **main jobs** when the internet goes down",
+          "tier": "simple"
+        },
+        {
+          "text": "The setup uses **Tasmota** on ESP boards, with an **MQTT broker** and **Node-RED** on a Raspberry Pi; Alexa is another way to flip a switch. The author says cloud APIs can break, so essential controls need a local fallback and the wall switch should keep working.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 145,
+      "terms": [
+        "Tasmota",
+        "MQTT",
+        "Node-RED",
+        "API",
+        "ESP board"
+      ],
+      "entities": [
+        "Spencer Kittleson",
+        "Tasmota",
+        "ESP",
+        "MQTT",
+        "Node-RED",
+        "Raspberry Pi",
+        "Alexa",
+        "Google",
+        "Nest"
+      ],
+      "comments": [
+        {
+          "by": "mountain_peak",
+          "text": "Bought our home almost 20 years ago, and the former owner (apparently) owned a now-defunct home automation business. The upside was 100% X10/Insteon power and light controls, top alarm panel, environmental controls and so on running off of a wall-mounted \"SmartLinc\" touch panel. I expanded the system with Axis cameras and a Mac Server running Indigo and SecuritySpy (non-subscription), which…"
+        },
+        {
+          "by": "mulderc",
+          "text": "I have always only bought HomeKit compatible smart home devices as those have always worked offline. They also tend to just be much better than the general cheap crap that I see amazon pushing."
+        },
+        {
+          "by": "scosman",
+          "text": "HomeAssistant publishes \"IoT Class\" for all of it's integrations ranging from \"Local Push\" to \"Cloud Polling\": https://www.home-assistant.io/blog/2016/02/12/classifying-th... I only use \"Local Polling\" or better, and highly prefer \"Local Push\"."
+        },
+        {
+          "by": "reasonabl_human",
+          "text": "The new rules I have come to use are: - buy the cheapest hardware that gets the job done - ignore negative reviews that are software related - upon receipt of devices, ask claude for local-first cfw - have fun for a few hours acting as a meat proxy - boom, cheap local-only smart home is done Use a SBC or nas for home assistant. This process worked for me for switches, a thermostat, an air quality…"
+        },
+        {
+          "by": "augment_me",
+          "text": "Please please please use your first draft or refine it yourself without LLMs. I managed to get to: The cloud is the weak link - No internet, no problem. ... --- If you are writing for other machines to ingest it, whatever. But if you are writing for people it for me at least signals that you don't really care about the message that you want to get across, and are fine with a watered down LLM…"
+        }
+      ],
+      "image": "https://docodethatmatters.com/images/home-automation/t1-07.webp"
+    },
+    {
+      "id": 50442426,
+      "url": "https://www.blender.org/download/releases/5-3/",
+      "hn": "https://news.ycombinator.com/item?id=50442426",
+      "title": "Blender 5.3 released with Gaussian Splat support",
+      "time": 1794327343,
+      "points": 311,
+      "depth": [
+        {
+          "text": "Blender can now **import and render** **Gaussian splats** natively, alongside a bunch of new tools",
+          "tier": "simple"
+        },
+        {
+          "text": "The release can import splats from **PLY, SPZ, and glTF** files, store them as point clouds, process them with Geometry Nodes, and render them in EEVEE, Cycles, and Workbench (solid mode). The Video Sequencer gains **ripple editing**, which moves strips to close gaps as you edit. New **projects** can group related files, share resources, and manage settings.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 44,
+      "terms": [
+        "Gaussian splats",
+        "point cloud",
+        "Geometry Nodes",
+        "ripple editing"
+      ],
+      "entities": [
+        "Blender",
+        "PLY",
+        "SPZ",
+        "glTF",
+        "Geometry Nodes",
+        "EEVEE",
+        "Cycles",
+        "Workbench"
+      ],
+      "comments": [
+        {
+          "by": "Retro_Dev",
+          "text": "Every time I hear about Gaussian splatting, I think about triangle splatting[0] - GPUs were built to render triangles, so I wonder what games would be like if we supported generating and rendering them as much as we do Gaussian splats. [0] https://trianglesplatting.github.io/"
+        },
+        {
+          "by": "mturk",
+          "text": "Bundle support in geometry nodes is huge for complex pipelines and workflows, particularly when combined with lists and closures. I have been running on the alpha builds to get access to them in my workflows. It took me a while to properly understand it, but it's genuinely great. It maps so much more of what I expect from traditional coding, scripting etc into the visual paradigm and makes an…"
+        },
+        {
+          "by": "guidopallemans",
+          "text": "Tried the beta on my M4 a couple of weeks ago on a scene of 4M splats (exported from spirula studio, great tool) , and found that it's immediately very mature, fast, and well-integrated. I could not find anyinconstencies with the rest of the interface. Congrats to the team!"
+        },
+        {
+          "by": "unshavedyak",
+          "text": "If you enjoy or get value out of Blender please consider donating: https://fund.blender.org/ They have easy subscription options, even a monthly coffee adds up! Thanks!"
+        },
+        {
+          "by": "load-bearing",
+          "text": "Interesting discussion from start of this year of one of the first popular music videos made with this technology. Some decent explanations in there. https://news.ycombinator.com/item?id=46670024"
+        }
+      ],
+      "image": "https://www.blender.org/wp-content/uploads/2026/07/splash.webp"
+    },
+    {
+      "id": 50434310,
+      "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
+      "hn": "https://news.ycombinator.com/item?id=50434310",
+      "title": "Locating the source of a mysterious beep",
+      "time": 1794269446,
+      "points": 308,
+      "depth": [
+        {
+          "text": "someone got **Claude** to build a way to **find a beep** by listening on several devices",
+          "tier": "simple"
+        },
+        {
+          "text": "The Python app used **browser microphones** across the devices, then played a chirp to line up their recordings and locate the beep to within about **40cm**. It led to an ancient **carbon monoxide detector** in a pile of boxes.",
+          "tier": "substance",
+          "data": [
+            [
+              "location accuracy",
+              "about 40cm"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 159,
+      "terms": [
+        "triangulation",
+        "WebSockets",
+        "Fast Fourier Transform"
+      ],
+      "entities": [
+        "Claude",
+        "Claude Code",
+        "Beep Locator",
+        "BeepBeep",
+        "Python",
+        "Simon Willison"
+      ],
+      "comments": [
+        {
+          "by": "chimpontherun",
+          "text": "Around '05 or so, the house we were staying in started beeping. Smoke alarm sounds, as usual. For almost a day we couldn't find the source. Contacted the owners -- they didn't know it either. They bought the house few years prior, so not much of a help. Standing in the hallways listening at different angles, as the article says, didn't help. No Fable in '05 either. So I had to improvise. Got a ~1…"
+        },
+        {
+          "by": "simonw",
+          "text": "I didn't mention this in the article, but this isn't the first time my family has been driven almost spare by a mysterious, hard-to-track beep. Our dog goes outside and hides in the lavender bush if a smoke alarm starts making a \"I need a battery\" noise. So I went into this project with the attitude that I would like to solve this class of problem forever ."
+        },
+        {
+          "by": "tristanj",
+          "text": "You can also solve this in O(logn) using a physical binary search: 1) Move half the boxes to another room. 2) Listen for a beep and determine which room the beep comes from. 3) Take the boxes in that room and split them in half again. 4) Repeat until one box is left."
+        },
+        {
+          "by": "BubbleRings",
+          "text": "I’ve been trying to think of other uses for the system. I’m wondering about this: What use could a teacher make of a locator system, if students could identify their location and desire to be singled out for a moment, by simply clapping once? In a big auditorium, a spotlight could track over to the student, who could then ask a question. And/or, directional microphones could zero in on the…"
+        },
+        {
+          "by": "NitpickLawyer",
+          "text": "Ha! This reminded me of that old famous entry from bash org: \"I can't find a server in my house. It responds to ping, but I can't physically locate it.\""
+        }
+      ],
+      "image": "https://static.simonwillison.net/static/2026/beep-locator-card.jpg"
+    },
+    {
+      "id": 50436410,
+      "url": "https://maurycyz.com/projects/fading/",
+      "hn": "https://news.ycombinator.com/item?id=50436410",
+      "title": "Your TV can see through walls (2025)",
+      "time": 1794288285,
+      "points": 251,
+      "depth": [
+        {
+          "text": "someone used a **TV signal** to spot **movement through a wall** and estimate how fast they walked",
+          "tier": "simple"
+        },
+        {
+          "text": "Each stripe gap happens when the reflection cancels the remaining signal after the path length changes by **one wavelength**. Using the gap spacing and display update rate, the author estimated their walk at **1.3 m/s** (**4.6 km/h**); WiFi and LTE can work too, but their signal displays are messier.",
+          "tier": "substance",
+          "data": [
+            [
+              "estimated walking speed",
+              "1.3 m/s"
+            ],
+            [
+              "estimated walking speed",
+              "4.6 km/h"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say radio snooping is old news; others worry it could reveal when someone is home.",
+      "comment_count": 116,
+      "terms": [
+        "selective fading",
+        "wavelength",
+        "waterfall",
+        "LTE"
+      ],
+      "entities": [
+        "WiFi",
+        "LTE"
+      ],
+      "comments": [
+        {
+          "by": "numlock86",
+          "text": "Wait for people to learn about that you can listen in virtually anywhere through fiber-optic cables, as sound waves are enough to redirect the light in the cable to a measurable degree by \"bending\" the cable itself. Special devices to filter these variances out and transform them back to audio signals are a thing. It's only per line though, as any repeating device will just output a new cleaned…"
+        },
+        {
+          "by": "armcat",
+          "text": "Several years back we actually made use of the principle mentioned in this post, to more systematically count traffic on the roads [1]. In our case we used LTE/4G radio, and we could even estimate the direction of travel, as well as the type of traffic (pedestrian, small vehicles, large vehicles). It was more accurate than Google Maps because it was independent of the moving phone, i.e. it was…"
+        },
+        {
+          "by": "swerner",
+          "text": "As anyone observed who had a TV with just basic analog terrestrial antennas, before cable and satellite dishes - it does make a difference to the signal, when and where you stand and countless pieces of physical comedy in TV shows incorporated that."
+        },
+        {
+          "by": "closeparen",
+          "text": "Our kitchen FM radio would reliably lose the signal of the local NPR affiliate whenever someone was halfway up the basement stairs. RF is weird!"
+        },
+        {
+          "by": "1e1a",
+          "text": "See these for a very low cost (<$10) method for observing WiFi and some LTE spectra: https://news.ycombinator.com/item?id=49922674 https://espargos.net/espsdr/"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50442303,
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "hn": "https://news.ycombinator.com/item?id=50442303",
+      "title": "Gemini 4 Carbon is now available",
+      "time": 1794326835,
+      "points": 248,
+      "depth": [
+        {
+          "text": "Google says **Carbon** is here for complex coding, scientific research, and **cybersecurity** work",
+          "tier": "simple"
+        },
+        {
+          "text": "Google says Argon remains its ideal choice for most software engineering and knowledge work; Carbon is aimed at **tougher, multi-step coding** and **open-ended research**. Paying developers and enterprises can use it through the API and Gemini for business, at Argon’s introductory price: **$2 per million input tokens and $10 per million output tokens**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Input tokens",
+              "$2 per million input tokens"
+            ],
+            [
+              "Output tokens",
+              "$10 per million output tokens"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say Carbon impressed them or that Gemini is underrated; others complain about limited access and lag, or say competing models still do better.",
+      "comment_count": 138,
+      "terms": [
+        "frontier model",
+        "agentic workflow",
+        "API",
+        "tokens",
+        "prompt injection"
+      ],
+      "entities": [
+        "Google",
+        "Gemini 4 Carbon",
+        "Gemini 4 Argon",
+        "Google AI Studio",
+        "Gemini for business",
+        "Google AI Ultra",
+        "Google Antigravity"
+      ],
+      "comments": [
+        {
+          "by": "byefruit",
+          "text": "Just checked my Gemini app, still only have 3.1 Pro, 3.6 Flash and 3.6 Thinking on Pro. Looks like it's Ultra only. They've been so slow to update their top models and roll them out that despite subscribing to the Gemini Pro plan, I use it so rarely that this is my last month. That and their product offering was so confusing I basically gave up."
+        },
+        {
+          "by": "5555watch",
+          "text": "Available through the API. To add, it's actually surprisingly good. I have this unfinished paper draft that I keep feeding to various top AI's to see what it picks up on and what suggests to edit, and while Astra/Fable/Opus/Argon so far has been mediocre, Carbon's answer surprised me with some interesting points all the other AI's missed. It's an anecdote, sample of one, but it got my attention."
+        },
+        {
+          "by": "guidopallemans",
+          "text": "A nice nod to simonw in one of the highlight videos; https://www.youtube.com/watch?v=dNbkThtNzS8"
+        },
+        {
+          "by": "simonw",
+          "text": "Pelicans are solid, but every Gemini model for the past year has produced solid pelicans: https://tools.simonwillison.net/markdown-svg-renderer?url=ht... I also had it do this in Antigravity: > Make a three js animation where yonkers stands up as a big mech (cool stand up motion) and stomps around manhattan and queens and Brooklyn, use openstreetmap mapping data The result was pretty great…"
+        },
+        {
+          "by": "dom96",
+          "text": "It is such a massive miss from Google that it took them this long to release this model. I just ran it on my benchmark[1] and it matches Fable 5.2. They could have been first to get there, why didn't they? That being said, it is still slower and more costly than Fable 5.2. So Anthropic wins in my eyes. 1 - https://bench.killswitch-lang.org/"
+        }
+      ],
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_4_carbon_key_art_16-9_lockup.width-1300.jpg"
+    },
+    {
+      "id": 50434264,
+      "url": "https://maurycyz.com/projects/badcert/",
+      "hn": "https://news.ycombinator.com/item?id=50434264",
+      "title": "Horible public key tricks",
+      "time": 1794269237,
+      "points": 233,
+      "depth": [
+        {
+          "text": "someone hid **a message** in a **working certificate** by tweaking its public key",
+          "tier": "simple"
+        },
+        {
+          "text": "The method hides a **message in the modulus**, then adjusts a prime so the RSA key still works. The author says it reduces **key entropy**, and the script doesn't check for **insecure values**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "The author says forward secrecy makes it fine for a public website even if the private key is compromised; tptacek says passive-only attackers are gone and an unauthenticated TLS session isn't secure.",
+      "comment_count": 82,
+      "terms": [
+        "RSA",
+        "modulus",
+        "TLS",
+        "entropy",
+        "certificate authority",
+        "man-in-the-middle attack"
+      ],
+      "entities": [
+        "RSA",
+        "TLS",
+        "ACME",
+        "OpenSSL",
+        "Let's Encrypt"
+      ],
+      "comments": [
+        {
+          "by": "ryan-c",
+          "text": "Previously, Stupid Certificate Tricks (2014): https://news.ycombinator.com/item?id=9516824 This is almost certainly an independent discovery/implementation of the same idea, there's really only one sensible way to do it. There are, of course, several non-sensible ways to do it as well, but..."
+        },
+        {
+          "by": "knotimpressed",
+          "text": "The linked pdf at https://tom7.org/httpv/httpv.pdf is extremely long but a great read if you enjoyed the article."
+        },
+        {
+          "by": "tptacek",
+          "text": "All serious attackers are man-in-the-middle attackers (usually by tricking victims into diverting their own traffic, not literally by inserting themselves into the network path). Passive-only attackers went extinct along with the backbone-connected Sun servers that were used to launch those attacks. I don't so much care about the rest of this analysis, but you can't call an unauthenticated TLS…"
+        },
+        {
+          "by": "miki123211",
+          "text": "On that note: I was always wondering whether you could do stupid CT log tricks. If I remember correctly, Let's Encrypt lets you go up to a hundred domains per certificate, with 256 characters per domain[1]. If you get a short domain like a.bc and start requesting certificates for its subdomains, you can easily get a few kB of user-controlled data embeddable per certificate. Given LE's rate…"
+        },
+        {
+          "by": "sam1r",
+          "text": "Tip: select the the ‘tty’ mode prior to digging in. I’ve never felt a more relaxed feeling (easy on the eyes) while reading any blog in comparison."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50438318,
+      "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+      "hn": "https://news.ycombinator.com/item?id=50438318",
+      "title": "AI usage generates a fragile codebase",
+      "time": 1794306358,
+      "points": 235,
+      "depth": [
+        {
+          "text": "the author says **AI-written code** can bring **fragile tests**, complexity, and **maintenance problems**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author points to **shallow tests**, overcomplicated code, declining developer understanding, and **rushed reviews** as sources of fragility. They also argue AI-generated codebases can bring **more customer incidents**, longer recovery, and errors users catch first.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some commenters say AI coding can work with guidance, verification, or stronger models; others warn it brings fragile code, shallow tests, and weaker maintainability.",
+      "comment_count": 284,
+      "terms": [
+        "LLM",
+        "SaaS",
+        "tech debt",
+        "DRY",
+        "line-level coverage",
+        "pull request"
+      ],
+      "entities": [
+        "Meta",
+        "JavaScript"
+      ],
+      "comments": [
+        {
+          "by": "basilgohar",
+          "text": "I think looking at AI usage for code and development from an engineering perspective is going to be an exercise in frustration. I'm a software engineer for 20+ years and I've pivoted to using AI for my code 100%. I find it invaluable about the only way to stay relevant and run a business nowadays. Happy for anyone to disagree with me, because I don't want to be right for the first time in my…"
+        },
+        {
+          "by": "monjerry",
+          "text": "Code quality is not an issue.....until it is. Everyone will be happy if things seem to be working and moving fast, it's only until you start seeing symptoms like not being able to change things without breaking existing features or even seeing an increase in tokens burned for reading complex code bases that you will start caring about code quality (which i imagine now people will just have AI try…"
+        },
+        {
+          "by": "happy_dog1",
+          "text": "Pure speculation here, but this is a thought that occurs to me. I've often seen furniture used as an analogy for how quickly an automated process can displace craftpersons, but I think it might actually in one sense be an analogy for how craft can continue to survive and thrive even post-automation. Sure, Ikea sells a LOT more furniture than Ethan Allen; but Ethan Allen's handcrafted furniture is…"
+        },
+        {
+          "by": "peterbell_nyc",
+          "text": "I'm not sure that \"AI generates...\" articles are going to age well. My immediate question would be what kind of adversarial reviews and deterministic gates did the author write to capture the dimensions of maintainability (lack of DRY, cyclomatic complexity, unclear naming, poorly architected flows, etc) that they cared about. Don't get me wrong. When I was speeding along at 200 PRs a day…"
+        },
+        {
+          "by": "yodsanklai",
+          "text": "I don't think this matters anymore. Software is becoming a black box and agents make it works, as long as you can provide some reasonable spec of what you want to do, and a bit of supervising and directions. Right now, they're not great at following good software engineering principles. They do the job, with verbose code, lots of duplication, abstraction leaks, useless unit tests and so on. Is it…"
+        }
+      ],
+      "image": "https://www.evanxmerz.com/images/ai-codebases-are-a-house-of-cards.jpg"
+    },
+    {
+      "id": 50439695,
+      "url": "https://www.ableton.com/en/live/",
+      "hn": "https://news.ycombinator.com/item?id=50439695",
+      "title": "Ableton Live 13",
+      "time": 1794315484,
+      "points": 203,
+      "depth": [
+        {
+          "text": "Ableton's next music-making release adds a **step sequencer**, new sound tools, and **mixing controls**",
+          "tier": "simple"
+        },
+        {
+          "text": "Live 13 adds **Step Sequencer clips**, ARA 2 plug-in support, Capture Automation, Drum Synth, and new mixing tools. **Push 3** gains Custom Layouts and a Performance Mixer; the release is planned for **early 2027**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 235,
+      "terms": [
+        "Step Sequencer",
+        "ARA 2",
+        "Capture Automation",
+        "MIDI"
+      ],
+      "entities": [
+        "Ableton",
+        "Live 13",
+        "ARA 2",
+        "Push 3"
+      ],
+      "comments": [
+        {
+          "by": "iainctduncan",
+          "text": "People here might be interested to know that you can run Scheme (lisp) code directly in Ableton through my Scheme for Max project in Max for Live. S4M is an open source extension to Max that allows you to run the s7 Scheme interpreter in a Max object, similar to the JS object in Max. Advantages over JS are that in can run in the high priority scheduler thread, enabling accurate timing, it has…"
+        },
+        {
+          "by": "marceldegraaf",
+          "text": "Still no built-in way to collaborate with other musicians, it seems. While I understand the technical difficulties, it's also very frustrating to work remotely with other musicians on an Ableton project. I don't need real-time Google Docs like editing, but it would be nice to have something better than \"freeze the project, dump it in Dropbox, and don't touch anything until they've made their…"
+        },
+        {
+          "by": "cruano",
+          "text": "It's interesting to see them adopt this whole Rent-to-own model [1]. It's not quite a subscription since you end up with a full license to a particular version, but it is kinda like a subscription in the sense that a new version will be out by the time you are done with your payments. And it seems like you can \"extend\" it to get the new version, so it's a subscription with extra steps. IMO that's…"
+        },
+        {
+          "by": "bckr",
+          "text": "My messy vibecoded Ableton Live 12 harness is ready to be stripped for parts: https://github.com/becker929/zpkt OSC, MCP, and GUI on macOS are integrated, as well as audio analysis. PRs welcome!"
+        },
+        {
+          "by": "NSUserDefaults",
+          "text": "Not new to 13 but I love Ableton's clean UI. Similar to Blender, it's how all creative apps (and systems!) should do it."
+        }
+      ],
+      "image": "https://beta-ableton.imgix.net/media/fe1omm2e/live-13-1200x630-4.jpg"
+    },
+    {
+      "id": 50435660,
+      "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
+      "hn": "https://news.ycombinator.com/item?id=50435660",
+      "title": "CoreWeave bond yield tops 16% as AI credit stress rises",
+      "time": 1794280806,
+      "points": 190,
+      "depth": [
+        {
+          "text": "CoreWeave’s **borrowing costs** are climbing as **investors get nervous** about the AI data-center boom",
+          "tier": "simple"
+        },
+        {
+          "text": "Its 2032 bond had a **9.625% coupon** and now yields **above 16%**; its five-year credit default swaps topped 1,289 basis points Thursday, then eased 8% Friday to around 1,155. The article says rising swaps point to higher financing costs, not a collapse in AI debt financing; the key question is whether AI spending generates **enough cash** to keep investors comfortable with future plans.",
+          "tier": "substance",
+          "data": [
+            [
+              "CoreWeave 2032 bond yield",
+              "above 16%"
+            ],
+            [
+              "Bond coupon",
+              "9.625%"
+            ],
+            [
+              "Five-year credit default swaps",
+              "above 1,289 basis points"
+            ],
+            [
+              "Friday change in credit default swaps",
+              "8%"
+            ],
+            [
+              "Friday credit default swap level",
+              "around 1,155"
+            ]
+          ]
+        }
+      ],
+      "camps": "Some commenters say CoreWeave is cooked; others say to wait for its earnings before judging.",
+      "comment_count": 179,
+      "terms": [
+        "bond yield",
+        "coupon",
+        "credit default swaps",
+        "basis point",
+        "capex",
+        "hyperscaler",
+        "free cash flow"
+      ],
+      "entities": [
+        "CoreWeave",
+        "Nvidia",
+        "Broadcom",
+        "Oracle",
+        "Amazon.com",
+        "Goldman Sachs",
+        "Deutsche Bank",
+        "Jefferies",
+        "Christopher Wood",
+        "Jim Reid",
+        "Gina Hinojosa",
+        "Kevin Hassett",
+        "Bank of America",
+        "CNBC",
+        "Nick Wells",
+        "Michael Bloom"
+      ],
+      "comments": [
+        {
+          "by": "danielodievich",
+          "text": "Just last week I was on the call with a a techy architect from one of the major-major financial services companies, and he was discussing getting token capacity and his words on third best option was \"we'd get it from Coreweave or whoever is still alive\". So yeah, I am pretty sure that if that's the sentiment from software people at the major-major financial company, Coreweave is cooked."
+        },
+        {
+          "by": "holysoles",
+          "text": "Aside from the price signal, the fact they were issuing these at a 9.625% coupon rate continues to run up their future debt servicing costs. Coreweave doesnt seem to be in a winner-take-all sector, they have a narrow moat and will have high ongoing capex. I struggle to see how they dont go under eventually even with the ability to restructure debt"
+        },
+        {
+          "by": "dragontamer",
+          "text": "CRWV is about to have an earnings report in less than 20 hours. It's probably best to just shut up for a day, wait for the earnings and then talk after that comes out."
+        },
+        {
+          "by": "trescenzi",
+          "text": "That’s edging up on credit card rates for strong borrowers wild. NerdWallet has Chase Freedom with a lower bound of 18.49% and Citi Diamond Preferred with 16.74%. https://www.nerdwallet.com/credit-cards/best"
+        },
+        {
+          "by": "bix6",
+          "text": "So there’s a chance I can pickup some discounted GPUs next year?"
+        }
+      ],
+      "image": "https://image.cnbcfm.com/api/v1/image/108410034-1792003128025-gettyimages-2245498775-raa-coreweav251110_npfn0.jpeg?v=1792003201&w=1920&h=1080"
+    },
+    {
+      "id": 50426681,
+      "url": "https://shahar.blog/2026/11/08/on-being-an-engineer-in-2026/",
+      "hn": "https://news.ycombinator.com/item?id=50426681",
+      "title": "On Being an Engineer in 2026",
+      "time": 1794236843,
+      "points": 178,
+      "depth": [
+        {
+          "text": "people are debating whether **AI is changing engineering** into **directing agents** instead of writing code",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says engineers increasingly act like **product managers** with agents, while analysts now use LLMs to launch products they once handed to software teams. Others say **product sense and diligent QA** still matter, while programmers who treated their job as leetcode exercises are no longer needed.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say human product judgment and QA still matter; others say agents are making much of the old engineering job unnecessary or unrecognizable.",
+      "comment_count": 289,
+      "terms": [
+        "AI agent",
+        "LLM",
+        "QA",
+        "tacit knowledge"
+      ],
+      "entities": [
+        "Claude",
+        "Codex",
+        "TypeScript",
+        "Jupyter",
+        "R",
+        "Matlab",
+        "Slack",
+        "LeetCode",
+        "StarCraft"
+      ],
+      "comments": [
+        {
+          "by": "mjr00",
+          "text": "> If anything, 10x engineers have become 100x engineers. And the average engineer is still average. This is the real fear. We had a flood of engineers who entered the profession in the past 10-15 years who were decidedly average. No real interest in software development beyond \"it's a cushy desk job, or better yet WFH job, that pays really well.\" No interest in whatever product was being…"
+        },
+        {
+          "by": "saulpw",
+          "text": "I'm a fan of the 'sandwich' model: someone needs to say what to do, someone needs to do it, and someone needs to say if it's been done [well enough]. Even if AI can do that middle bit entirely, we still need humans at the beginning and the end. Replace the humans at the start and you have a paperclip-optimizer; replace them at the end and you have slop. The problem is that software in…"
+        },
+        {
+          "by": "somesortofthing",
+          "text": "To be honest, I doubt the current state of things will hold much longer. Current AI can automate virtually all of my work as a pre-AI senior and is rapidly closing in on being able to automate the types of work that have emerged post-AI too. I have a hard time imagining a world where a drop-in end-to-end replacement for a full software team is more than a year away. I'm sure I'll have a job for a…"
+        },
+        {
+          "by": "kolchinski",
+          "text": "As someone who worked as both an engineer and a product manager before AI, being an engineer increasingly feels like being a product manager, just with a team of agents instead of a team of humans. Still some aspects of \"tech lead / engineering manager\" thrown in to understand the technical details for when the AI goes wrong, but less and less. Next we'll see how much of the product judgment will…"
+        },
+        {
+          "by": "TrackerFF",
+          "text": "Also, I work as a data analyst, with previous experience as a software engineer. In our office, traditionally maybe 10% of our analysts have enough real software engineering experience to develop any \"serious\" software products. The rest are domain experts that at most use programming for developing methods and calculations/simulations. In the past 6 months, we've seen non-engineering analysts…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50439284,
+      "url": "https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-11/runtime",
+      "hn": "https://news.ycombinator.com/item?id=50439284",
+      "title": "What's new in the .NET 11 runtime",
+      "time": 1794313207,
+      "points": 177,
+      "depth": [
+        {
+          "text": "the **.NET runtime** adds async support that could make **stack traces** easier to read",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says **runtime async support** makes stack traces friendlier without state machines in the code, and says performance is equivalent. Another flags **`(decimal)0.1`**: it prints as `0.1000000000000000055511151231` in .NET 11, instead of `0.1` in .NET 10.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: fans call .NET a solid toolchain; critics say its support cycle and breaking changes make upgrades unacceptable.",
+      "comment_count": 127,
+      "terms": [
+        "runtime",
+        "async",
+        "stack trace",
+        "state machine"
+      ],
+      "entities": [
+        ".NET",
+        ".NET 10",
+        ".NET 11"
+      ],
+      "comments": [
+        {
+          "by": "CharlieDigital",
+          "text": "In my experience, C# and .NET are both \"underappreciated\" in a large part based on the legacy. Some folks out there still think .NET is Windows only. Some folks out there haven't looked at C# since the .NET Framework days. Some folks out there are still salty about some of Microsoft's decision around OSS (debugger, hot reload fiasco, etc.) But day to day working with C# and .NET for backends?…"
+        },
+        {
+          "by": "giancarlostoro",
+          "text": "C# was my 2nd programming language after VB6. I remember in the early 2000s when I was 12, using my best friends computer to try and download VB .NET (he had faster internet) just because it was free, then being extremely disappointed when I couldnt just run my VB6 projects I wanted to run on it... Some years later, during 2007 ~ 2009 I tried out C# and that was life changing. I wound up going to…"
+        },
+        {
+          "by": "1a527dd5",
+          "text": "https://learn.microsoft.com/en-us/dotnet/core/compatibility/... Be aware (decimal)0.1\n// .NET 10: 0.1\n// .NET 11: 0.1000000000000000055511151231"
+        },
+        {
+          "by": "wofo",
+          "text": "Awesome stuff, as usual in .NET releases! The runtime async support is surprising to me... I get that stack traces are more friendly without state machines in the code, but I didn't expect they could switch to a runtime version and have equivalent performance. Cool!"
+        },
+        {
+          "by": "jotato",
+          "text": "What IDE are people using for C# these days? Back in the day (circa 2008) Visual Studio was your only real option. But I'm on linux now. If I wanted to pick up back up then what should I be using?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50437790,
+      "url": "https://connect.queenslibrary.org/",
+      "hn": "https://news.ycombinator.com/item?id=50437790",
+      "title": "Queens Public Library under ransomware attack",
+      "time": 1794301479,
+      "points": 177,
+      "depth": [
+        {
+          "text": "a **ransomware attack** disrupted Queens Public Library's network, affecting **public computers** at most open locations",
+          "tier": "simple"
+        },
+        {
+          "text": "**Free Wi-Fi** is back at all open locations, and public computers are restored at **seven locations**. **Book renewals are unavailable** during the outage.",
+          "tier": "substance",
+          "data": [
+            [
+              "Locations with restored public computers",
+              "7"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 101,
+      "terms": [
+        "ransomware"
+      ],
+      "entities": [
+        "Queens Public Library"
+      ],
+      "comments": [
+        {
+          "by": "cush",
+          "text": "This happened in seattle a few years ago. Computer systems were down for months. They just let everyone borrow using an honor system."
+        },
+        {
+          "by": "waltbosz",
+          "text": "https://spotlightdelaware.org/2024/09/23/delaware-libraries-... This happened to my state's library system a while back. Public computers and free wifi were down for a few months, but no major disruptions of lending services. I don't think the state paid any ransom, instead they just repaired their systems."
+        },
+        {
+          "by": "JasonBorne",
+          "text": "Despicable to target a place that supports learning and shares public knowledge."
+        },
+        {
+          "by": "RobotToaster",
+          "text": "That seems a pretty terrible target for ransomware, it's not like public libraries have huge amounts of money."
+        },
+        {
+          "by": "redwood",
+          "text": "Today I learned that Queens has a public library system that predated the consolidated New York City library system and fiercely fought to maintain independence rather than come under the control of a Manhattan-based system"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50439000,
+      "url": "https://github.com/HolyArrs/HolyArrs",
+      "hn": "https://news.ycombinator.com/item?id=50439000",
+      "title": "Show HN: A 15 MB self-hosted Netflix and Spotify for your media server",
+      "time": 1794311479,
+      "points": 160,
+      "depth": [
+        {
+          "text": "someone built a **15 MB self-hosted app** for shows, movies, and music, all in **one place**",
+          "tier": "simple"
+        },
+        {
+          "text": "It takes requests, applies your **release rules**, sends the pick to your **existing downloader**, and files it in your library. It uses **about 140 MB of RAM idle with 10,000 titles**; you still need a separate downloader.",
+          "tier": "substance",
+          "data": [
+            [
+              "download size",
+              "about 15 MB"
+            ],
+            [
+              "idle RAM",
+              "about 140 MB with 10,000 titles"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: skeptics say the established apps are stable and worry this may peter out or be abandoned; interested users like the idea of fewer logins but want to see it become more stable.",
+      "comment_count": 125,
+      "terms": [
+        "self-hosted",
+        "media server",
+        "downloader",
+        "indexer",
+        "API key"
+      ],
+      "entities": [
+        "HolyArrs",
+        "Sonarr",
+        "Radarr",
+        "Lidarr",
+        "Bazarr",
+        "Prowlarr",
+        "Seerr",
+        "qBittorrent",
+        "SABnzbd",
+        "Jellyfin",
+        "Plex",
+        "Netflix",
+        "Spotify"
+      ],
+      "comments": [
+        {
+          "by": "tjohnell",
+          "text": "I've seen multiple \"consolidate all the arr\" attempts over the years. None prevail. Not saying this one won't, but something tells me it's going to peter out and be abandonware. It's incredible how sticky the OG arr apps have been to be honest. Likely because they are extremely stable and well-integrated."
+        },
+        {
+          "by": "wes-k",
+          "text": "Will check this out after it becomes more stable. I literally, just this last weekend, finally bit the bullet and created my own media server. I had been dragging my feet, not wanting to deal with the complexity of configuring and setting things up. With codex, I had it do the leg work. Even made a snazzy website as homebase and an admin panel with links to every service, easy invite creation…"
+        },
+        {
+          "by": "utopiah",
+          "text": "FWIW ls -lh /usr/sbin/minidlnad\n-rwxr-xr-x 1 root root 323K Feb 21 2025 /usr/sbin/minidlnad\nand a lot of TV, video projectors, etc support DLNA out of the box, if they don't add VLC and you are good to go."
+        },
+        {
+          "by": "lbrito",
+          "text": ">\"A normal media server runs six apps: Sonarr, Radarr, Lidarr, Bazarr, Prowlarr and Seerr.\" Here I was thinking people just used Plex! No idea what any of those are"
+        },
+        {
+          "by": "ZenoArrow",
+          "text": "> AI or MCP features. Not in 1.0. Why would you even want this, what desirable features could you add by adding AI?"
+        }
+      ],
+      "image": "https://repository-images.githubusercontent.com/1452008226/98a5a19b-da10-4acb-9074-b8ab1b58e437"
+    },
+    {
+      "id": 50429430,
+      "url": "https://www.infineon.com/press-release/2026/infpr202611-028",
+      "hn": "https://news.ycombinator.com/item?id=50429430",
+      "title": "The first 300-millimeter power silicon carbide (SiC) wafer",
+      "time": 1794248701,
+      "points": 153,
+      "depth": [
+        {
+          "text": "Infineon processed a **300-millimeter silicon carbide wafer** into **functional power devices** for the first time",
+          "tier": "simple"
+        },
+        {
+          "text": "The devices came from its fab in Villach, which used **existing silicon manufacturing equipment**. A 300-millimeter wafer offers **2.3 times more chips per wafer** than a 200 mm wafer. Infineon says the milestone shows the potential for future **full-scale SiC manufacturing**.",
+          "tier": "substance",
+          "data": [
+            [
+              "chips per wafer compared with a 200 mm wafer",
+              "2.3 times more"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 90,
+      "terms": [
+        "SiC",
+        "wafer",
+        "power semiconductor",
+        "GaN",
+        "LLM",
+        "DRAM"
+      ],
+      "entities": [
+        "Infineon",
+        "Jochen Hanebeck",
+        "CoolSiC",
+        "electronica"
+      ],
+      "comments": [
+        {
+          "by": "BrandiATMuhkuh",
+          "text": "What surprises me with Infineon is that they seem to not work on a LLM on a chip. In particular that here in Linz Infineon, Apple's 5G modem designer and the Johannes Kepler University with Sepp Hochreiter (Inventor of LSTM) are just next to each other.\nI watched a interview of Infineon head of AI just recently, and I was like excited to hear about some cool hardware. And all he did is talk about…"
+        },
+        {
+          "by": "johntb86",
+          "text": "Anyone know why it took so long for them to transition to 300mm? As mentioned in the article, they're mainly using existing 300mm equipment designed for silicon, which transitioned years ago. I imagine some process steps are different (mainly growing to larger boule, but probably others), but it doesn't seem like they would be huge blockers."
+        },
+        {
+          "by": "novaRom",
+          "text": "Can you guys restart DRAM production in Europe again? If 20 or so years ago it was possible, today is the best economical opportunity."
+        },
+        {
+          "by": "alephnerd",
+          "text": "This may not appear sexy but this is a huge deal. Power semiconductors are critical for most NatSec and industrial usecases. You can likely live without a new gaming rig. You likely cannot live without replaceable parts for trucks and cars."
+        },
+        {
+          "by": "mercurywells",
+          "text": "I thought Wolfspeed was already at 300mm at the start of this year?"
+        }
+      ],
+      "image": "https://www.infineon.com/etc.clientlibs/ifx/components/common/mainnavigation/clientlibs/resources/logo.svg"
+    },
+    {
       "id": 50429068,
       "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
       "hn": "https://news.ycombinator.com/item?id=50429068",
@@ -508,6 +1641,82 @@
     }
   ],
   "glossary": {
+    "decision model": "A program that weighs possible choices and predicts or selects one.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "tokens": "Small pieces of text an AI counts as it reads or writes; they can affect how much a request costs.",
+    "JSON": "A common format for storing and sending data in a way that programs can read.",
+    "SageMaker": "An AWS service that lets people run AI models on Amazon's computers.",
+    "SVM": "Support Vector Machine: a way to teach a computer to sort examples into groups.",
+    "calibration": "How well a model’s confidence matches how often its choices are actually right.",
+    "formal verification": "Checking a claim using precise rules, often with a computer.",
+    "Lean": "A computer program used to write mathematical proofs and check that their steps are correct.",
+    "cryptographic protocol": "A set of rules that helps keep messages private while devices communicate.",
+    "specification": "A written description of what a program should do.",
+    "AI agent": "An autonomous computer program that can carry out tasks.",
+    "third-level domain": "A part placed before the main ending in a longer web address; in first.last.name, “first” is the extra level.",
+    "email redirect": "A forwarding address that sends mail addressed to it on to another inbox.",
+    "ICANN": "Internet Corporation for Assigned Names and Numbers: the organization that coordinates the system for internet domain names.",
+    "reconsideration request": "A formal request asking a group to take another look at a decision.",
+    "registrar": "A company where you register and manage a website’s domain name.",
+    "gTLD": "Generic top-level domain: a broad category of ending for internet addresses, rather than one tied to a country.",
+    "Tasmota": "Software installed on supported smart devices; here, the author uses it on devices he flashes himself.",
+    "MQTT": "Message Queuing Telemetry Transport: a way for devices and software to pass updates over a network.",
+    "Node-RED": "A tool for connecting triggers and actions into home automations using visual flows.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "ESP board": "A small circuit board that can run simple programs and control connected devices.",
+    "Gaussian splats": "A way to represent a 3D scene using lots of small, fuzzy colored shapes.",
+    "point cloud": "A 3D shape represented by lots of measured dots.",
+    "Geometry Nodes": "A Blender tool for building and changing 3D objects by connecting visual blocks.",
+    "ripple editing": "An editing mode that shifts other clips when you change one, helping keep the timeline gap-free.",
+    "triangulation": "Using sound readings from several places to work out where one sound came from.",
+    "WebSockets": "A way for two programs to keep a connection open and send messages back and forth.",
+    "Fast Fourier Transform": "A way to break a sound into its pitches so software can spot a particular tone.",
+    "selective fading": "When reflected radio waves cancel some parts of the original signal, making reception weaker.",
+    "wavelength": "The distance a wave travels through one full repeat; changing the path by that distance can make the signal cancel itself.",
+    "waterfall": "A chart that shows how a radio signal changes over time, with stripes showing stronger or weaker parts.",
+    "LTE": "Long-Term Evolution: a kind of mobile phone connection used to send data.",
+    "frontier model": "One of the most capable, newest AI models available.",
+    "agentic workflow": "A task where an AI takes several steps and acts toward a goal, rather than just replying once.",
+    "prompt injection": "Instructions hidden in text or a file that try to trick an AI into ignoring its intended directions.",
+    "RSA": "Rivest–Shamir–Adleman: a way to scramble information so it can be unlocked only with a matching secret key.",
+    "modulus": "The number made by multiplying two primes in an RSA key; here, the author changes its bytes to hide text.",
+    "TLS": "Transport Layer Security: a way to scramble information as it travels between devices, so others can’t read it.",
+    "entropy": "A measure of how much stuff can fit inside an object.",
+    "certificate authority": "An organization that vouches that a website's identity is genuine.",
+    "man-in-the-middle attack": "An attack where someone gets between two computers and interferes with their connection.",
+    "SaaS": "Software as a Service: software you access over the internet, with the provider running it for you.",
+    "tech debt": "Extra cleanup work left behind when software choices make future changes harder.",
+    "DRY": "Don't Repeat Yourself: a guideline to avoid writing the same code in several places.",
+    "line-level coverage": "A measure of which lines of code tests run, though not whether the tests check meaningful behavior.",
+    "pull request": "A proposal to add your code changes to a shared project, usually asking others to review them first.",
+    "Step Sequencer": "A tool for placing beats or notes in a sequence that can be played back.",
+    "ARA 2": "A way for audio-editing plug-ins to work with music projects for tasks like editing recordings.",
+    "Capture Automation": "A feature that records control changes you make so they can happen again during playback.",
+    "MIDI": "Musical Instrument Digital Interface: a way for music software and instruments to share notes and timing.",
+    "bond yield": "The yearly return a lender gets from a government loan, expressed as a percentage.",
+    "coupon": "The interest rate a bond promises to pay.",
+    "credit default swaps": "A way to insure against a company failing to repay its debt.",
+    "basis point": "One hundredth of a percentage point, used to describe small changes in interest rates.",
+    "capex": "Capital expenditure: money spent up front on equipment or building something.",
+    "hyperscaler": "A company that rents servers and computing power at huge scale.",
+    "free cash flow": "Money a company has left after paying for its regular operations and other spending.",
+    "QA": "Quality assurance: checking that software works as expected before people rely on it.",
+    "tacit knowledge": "Know-how built through experience that's hard to put into words.",
+    "runtime": "The software that runs a program while it is being used.",
+    "async": "Work that people can do at different times, without needing to be online together.",
+    "stack trace": "A list showing which pieces of code were running when a program hit an error.",
+    "state machine": "A system that remembers its current settings, so later commands can behave differently depending on earlier ones.",
+    "ransomware": "Malicious software that blocks access to files or systems and demands money to restore it.",
+    "self-hosted": "Running a service on a computer you control rather than relying on someone else's.",
+    "media server": "A computer or app that stores media and makes it available to watch or listen to on other devices.",
+    "downloader": "A separate app that fetches media files after HolyArrs chooses them.",
+    "indexer": "A search service that helps find available media releases.",
+    "API key": "A secret code that lets software use an online service as an approved user.",
+    "SiC": "Silicon carbide: a material used in power chips that can operate at high voltages and temperatures.",
+    "wafer": "A thin round slice of material that computer chips are made from.",
+    "power semiconductor": "A chip that helps control or convert electrical power.",
+    "GaN": "Gallium nitride: another material Infineon uses to make power semiconductors.",
+    "DRAM": "Dynamic Random-Access Memory: the working memory a computer uses while running things.",
     "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
     "agent": "An AI system that can take steps and use tools to get a task done, not just answer questions.",
     "formalization": "Writing mathematics in a precise form that a computer can check.",
