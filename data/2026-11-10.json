@@ -1,0 +1,536 @@
+{
+  "date": "2026-11-10",
+  "cards": [
+    {
+      "id": 50429068,
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "hn": "https://news.ycombinator.com/item?id=50429068",
+      "title": "Claude Fable 5.2 and Mythos 5.2",
+      "time": 1794247270,
+      "points": 483,
+      "depth": [
+        {
+          "text": "Anthropic's new **AI models** are for **ambitious technical work**, from coding to science",
+          "tier": "simple"
+        },
+        {
+          "text": "Claude Fable 5.2 and Claude Mythos 5.2 are the **same underlying model**: Fable is available to all users with cyber and biology safeguards, while organizations doing beneficial cybersecurity or biomedical research can apply for Mythos. Anthropic says they generate outputs up to **30% faster** than Claude Fable 5.1 and Claude Mythos 5.1; a team of 1,000 Fable 5.2 agents **formalized Fermat’s Last Theorem in 30 hours** with minimal human intervention.",
+          "tier": "substance",
+          "data": [
+            [
+              "standard output speed",
+              "up to 30% faster"
+            ],
+            [
+              "standard input price",
+              "$8 per million input tokens"
+            ],
+            [
+              "standard output price",
+              "$40 per million output tokens"
+            ],
+            [
+              "fast mode speed boost",
+              "up to 2.5 times"
+            ],
+            [
+              "fast mode input price",
+              "$16 per million input tokens"
+            ],
+            [
+              "fast mode output price",
+              "$80 per million output tokens"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some testers praise Fable 5.2’s speed and coding on ambitious work; others say it’s hard to distinguish from Opus 5.5 on ordinary coding and question whether the cost is worth it.",
+      "comment_count": 750,
+      "terms": [
+        "token",
+        "agent",
+        "formalization"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude Fable",
+        "Claude Mythos",
+        "Claude Opus",
+        "Fermat’s Last Theorem"
+      ],
+      "comments": [
+        {
+          "by": "postalcoder",
+          "text": "I’ve had a chance to use fable 5.2. Some observations: - Anthropic is finally well balanced across models. Meaning: Opus 5.5 is so good that I do not feel Fable FOMO as I did when it was Fable 5/5.1 vs Opus 4.8/5. And Sonnet 5.5 sometimes makes me forget about Opus. - Fable is good, but you really have to push the ambition of your prompt in order to see proper separation from Opus 5.5. I…"
+        },
+        {
+          "by": "breakwaterlabs",
+          "text": "- Why are they stacking Fable xHigh against Carbon Med? - How did they produce such a bizarre effort-intel curve for Carbon that goes against every available benchmark? - Why did they leave Carbon-- positioned primarily as a cyber model-- off of the single cyber benchmark comparison? - Why do they switch to comparing against Argon (rather than carbon) for robodojo?"
+        },
+        {
+          "by": "advaith08",
+          "text": "We've been early testing Fable 5.2, and have been surprised by its coding ability. It was able to work with an esoteric 600k line fortran codebase to speed up some computational material science work for us by 36 times (!). Given that this could be done in 2 days, we've decided to open-source the results https://github.com/discovered-materials/dm_qe"
+        },
+        {
+          "by": "prtmnth",
+          "text": "Why Fable 5.2 and not 5.5? My hypothesis - OpenAI and Anthropic are locked in battle. Whoever takes a step, the other one mirrors. Based on this hypothesis, I think we can expect to see a new Astra model soon given the new Fable release. And it could be that Anthropic released Fable 5.2 and kept 5.5 in reserve, in case the new Astra model performs better than 5.2"
+        },
+        {
+          "by": "kragen",
+          "text": "I tried Fable 5.2 tonight, asking it for a code review of an in-browser machine vision project done by Opus 5.5 over the last 11 days. It used up my 5-hour token budget in half an hour and reported 7 serious bugs; if they're real, they're pretty bad. It's also suggesting that I take a different overall approach to parts of the problem. But that's just a first impression."
+        }
+      ],
+      "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/b2dab182c77b4ccfd36423470106915b20f676ae-1200x630.jpg"
+    },
+    {
+      "id": 50433659,
+      "url": "https://notesbylex.com/fable-5-2-one-shotted-my-nephews-dream-game",
+      "hn": "https://news.ycombinator.com/item?id=50433659",
+      "title": "Fable 5.2 one-shotted my nephew's dream game",
+      "time": 1794265693,
+      "points": 342,
+      "depth": [
+        {
+          "text": "someone turned his nephew's drawings into a **fun beat-'em-up** with **AI**",
+          "tier": "simple"
+        },
+        {
+          "text": "Lex Toumbourou gave Claude **Fable 5.2** scans of the characters and a big wish list. It rewrote most of the code, generated roughly **175 images** and 140 audio clips, then used a bot to run through all twelve stages in a headless browser. The finished game had **12 levels, 18 characters and four-player play**.",
+          "tier": "substance",
+          "data": [
+            [
+              "generated images",
+              "roughly 175"
+            ],
+            [
+              "audio clips",
+              "140"
+            ],
+            [
+              "tokens",
+              "340M"
+            ],
+            [
+              "levels",
+              "12"
+            ],
+            [
+              "characters",
+              "18"
+            ],
+            [
+              "players",
+              "four"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some call it an amazing outcome for the kids; others say “one-shot” glosses over the human prompting, playtesting and iteration.",
+      "comment_count": 237,
+      "terms": [
+        "one-shot",
+        "headless browser",
+        "spritesheet"
+      ],
+      "entities": [
+        "Lex Toumbourou",
+        "Claude",
+        "Claude Code",
+        "Fable",
+        "Aiden",
+        "Owen",
+        "ChatGPT Images",
+        "ElevenLabs"
+      ],
+      "comments": [
+        {
+          "by": "siliconc0w",
+          "text": "Growing up, games were such a scarce commodity that you'd really suck all the marrow out and spend hours beating your best times, looking for Easter eggs, or messing with custom maps and mods. There was a whole genre of gameplay around just exploiting physics bugs to jump a bit further. The other night I carelessly made an infinite runner game while watching TV and the feeling of sheer abundance…"
+        },
+        {
+          "by": "teruakohatu",
+          "text": "I feel for kids growing up with LLMs like this. They will never impress a parent, teacher or peer with a simple “hello world” type text game, when the peer could generate a full multiplayer video game with a couple of prompts. The world has changed and we can never go back."
+        },
+        {
+          "by": "resters",
+          "text": "\"one-shotting\" is fun for a low (human) effort toy, but it's a mistake to get overly hung up on LLMs getting everything right on the first try, since a lot of that is the harness and the internal prompting that makes it burn extra tokens to test everything to get it in that one \"shot\" (ui turn). While it's nice that LLMs are getting better at arriving at the desired deliverable with fewer…"
+        },
+        {
+          "by": "goyozi",
+          "text": "My dad asked recently if AI is good enough to create something like DX Ball - a breakout style game we used to play a lot. Opus 5.5: https://claude.ai/artifact/UuT7P936dU1XoPByYZ7xyD\nFable 5.2: https://claude.ai/artifact/UszKFvuonWAT5psjMttAEg There are some areas in which Fable is clearly better but subjectively the Opus 5.5 version feels more fun. Both are one shots, Opus 5.5 was done a few…"
+        },
+        {
+          "by": "_pdp_",
+          "text": "I have experienced this myself, although the novelty kind of wears off after a while. It is still fun to make small games to co-op on the TV. Yes, hard to believe but most of these games can be almost one-shotted in my experience, with bugs but still playable. We are not talking about some properly made games but imagine for a second that there are some number of casual players out there that…"
+        }
+      ],
+      "image": "https://notesbylex.com/_media/aidens-revenge/title.jpg"
+    },
+    {
+      "id": 50432831,
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
+      "hn": "https://news.ycombinator.com/item?id=50432831",
+      "title": "TPU 8tx and TPU 8i Max",
+      "time": 1794261417,
+      "points": 244,
+      "depth": [
+        {
+          "text": "Google introduced two **AI systems**: one to protect **sensitive data** and one for **huge amounts of context**",
+          "tier": "simple"
+        },
+        {
+          "text": "**TPU 8tx** is built on the same silicon as TPU 8t, with hardware security that keeps sensitive data isolated even while it’s being processed; Google says it delivers **up to 2x lower latency** than TPU 8t with a near-zero performance penalty. **TPU 8i Max** combines two TPU 8i chips on one package, doubling compute, SRAM and HBM bandwidth.",
+          "tier": "substance",
+          "data": [
+            [
+              "TPU 8tx latency vs TPU 8t",
+              "up to 2x lower latency"
+            ],
+            [
+              "TPU 8i Max compute vs TPU 8i",
+              "double the compute"
+            ],
+            [
+              "TPU 8i Max SRAM vs TPU 8i",
+              "double the SRAM"
+            ],
+            [
+              "TPU 8i Max HBM bandwidth vs TPU 8i",
+              "double the HBM bandwidth"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 75,
+      "terms": [
+        "TPU",
+        "silicon",
+        "latency",
+        "context window",
+        "SRAM",
+        "HBM"
+      ],
+      "entities": [
+        "Google",
+        "TPU 8tx",
+        "TPU 8t",
+        "TPU 8i Max",
+        "TPU 8i"
+      ],
+      "comments": [
+        {
+          "by": "gnabgib",
+          "text": "Title: Our newest TPUs: 8tx and 8i Max, built for the agentic era Small discussion previously (16 points, 4 comments) https://news.ycombinator.com/item?id=50425018"
+        },
+        {
+          "by": "freakynit",
+          "text": "Their TPUSync post is highly recommended as well. This is basically how many of the open-source repos like Strata for Qwen series models are working. https://cloud.google.com/blog/topics/ai-infrastructure/intro... https://github.com/Niko1221/Strata/blob/main/docs/HOW_IT_WOR..."
+        },
+        {
+          "by": "mekpro",
+          "text": "I wish Google Colab start to provide new TPU model, the most powerful we can get on Colab is still v6e-1 which is too small for serious work."
+        },
+        {
+          "by": "qntty",
+          "text": "Why doesn’t Google sell these?"
+        },
+        {
+          "by": "ur-whale",
+          "text": "Where's the watt/token or $/token figures for each of these? And how does each compare to their NVDA price equivalent?"
+        }
+      ],
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/TPU-8tx_and_8i-Max.width-1300.png"
+    },
+    {
+      "id": 50430621,
+      "url": "https://yappologistic.github.io/CUI/",
+      "hn": "https://news.ycombinator.com/item?id=50430621",
+      "title": "CUI – Native UI components for C",
+      "time": 1794252916,
+      "points": 172,
+      "depth": [
+        {
+          "text": "someone built **UI components** for C, and commenters say the demos look **polished**",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter who tried the demos says they feel **light and responsive**, but keep redrawing and use **~4-5% CPU**. Another says “native” would mean wrapping the platform’s own controls, not making **custom ones**.",
+          "tier": "substance",
+          "data": [
+            [
+              "CPU use",
+              "~4-5%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters praise the polished, lightweight demos; critics call the code messy and question the design.",
+      "comment_count": 93,
+      "terms": [
+        "vibecoded",
+        "immediate mode"
+      ],
+      "entities": [
+        "CUI",
+        "C",
+        "Claude",
+        "btop",
+        "Electron",
+        "OpenGL",
+        "objdump",
+        "Mangohud",
+        "libm",
+        "libSM",
+        "libX11",
+        "libXext",
+        "libc",
+        "ShadCN",
+        "Clay",
+        "LVGL",
+        "Wayland",
+        "C++",
+        "Rust",
+        "RUI",
+        "Qt",
+        "Tauri",
+        "Vue",
+        "React",
+        "Swift",
+        "Go",
+        "Fyne",
+        "WASM",
+        "Cocoa",
+        "NSButton",
+        "WinUI",
+        "Microsoft.UI.Xaml.Controls.Button"
+      ],
+      "comments": [
+        {
+          "by": "nepthar",
+          "text": "Okay, so this is cool, but also vibecoded by someone who just does frontend. I totally support AI development, but the first commit was 4 days ago and it's entirely written by claude. The UI looks like \"the style that that AI comes up with\" turned into a C framework. I don't want to discourage this kind of experimentation, but I also question how much of the last 20+ years of UI and C knowledge…"
+        },
+        {
+          "by": "zerr",
+          "text": "More like custom UI components. Native would have been if you had wrapped e.g. Cocoa NSButton on macOS and Microsoft.UI.Xaml.Controls.Button on WinUI."
+        },
+        {
+          "by": "hollowturtle",
+          "text": "I click around on mobile nothing happens, vibe coded trash. I’d spend 10 minutes comparing it to Clay but it’s not worth it I already know the result. The problem with this kind of projects is they expire very soon, the least the effort the least the value"
+        },
+        {
+          "by": "turtlebits",
+          "text": "We need a HN min-release-age flag for posted projects. Or some flag to ignore users that post these types of projects often."
+        },
+        {
+          "by": "badsectoracula",
+          "text": "So, i downloaded it, built and tried some demos. On the positive side: 1. It looks and behaves very polished. From playing around with the gallery the only issues i noticed is that the mouse wheel goes to the \"outermost\" control instead of the \"innermost\" and that there isn't a right click / context menu for text input fields with commands like copy, paste, etc (but the common shortcuts do work…"
+        }
+      ],
+      "image": "https://yappologistic.github.io/CUI/img/social.png"
+    },
+    {
+      "id": 50416471,
+      "url": "https://www.spacex.com/launches/starship-flight-15",
+      "hn": "https://news.ycombinator.com/item?id=50416471",
+      "title": "Starship Flight 15 on 11/13 plans to catch both booster and ship",
+      "time": 1794167386,
+      "points": 165,
+      "depth": [
+        {
+          "text": "Starship Flight 15 plans to **catch** both the **booster** and **ship**",
+          "tier": "simple"
+        },
+        {
+          "text": "If successful, it would mark the **first full recovery** of an orbital launch system. The mission plan expects Starship to orbit Earth at **~275 km** and complete **approximately 14 orbits** over a more than 22-hour flight.",
+          "tier": "substance",
+          "data": [
+            [
+              "planned altitude",
+              "~275 km"
+            ],
+            [
+              "planned orbits",
+              "approximately 14"
+            ],
+            [
+              "planned flight duration",
+              "more than 22-hour flight"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: one commenter says SpaceX’s focus is serving Elon and the share price, and argues for Earth-based clean-energy datacenters; another says Starship works and SpaceX has a huge lead, while acknowledging concern about quasi-monopolizing access to space.",
+      "comment_count": 144,
+      "terms": [
+        "catch",
+        "booster",
+        "orbital launch system"
+      ],
+      "entities": [
+        "Starship",
+        "Super Heavy",
+        "SpaceX"
+      ],
+      "comments": [
+        {
+          "by": "rkagerer",
+          "text": "Like him or hate him, I gotta admit the notion of watching giant rockets plucked out of the air by giant tweezers sends an exhilarating thrill up my spine."
+        },
+        {
+          "by": "tristanj",
+          "text": "Launching only 26 Starlink v3 satellites is a disappointingly small number. That's about ~52t or half the block 3 advertised payload capacity of 100t. Elon said on the Q3 earnings call that flight 14 carrying 26 V3 Starlinks was only about half loaded, so apparently the ship can launch twice as many. I'm curious why they don't fully load it, I can speculate: 0) starship is still in testing, they…"
+        },
+        {
+          "by": "metalman",
+          "text": "cut and paste of the mission plan with details of the cargo November 13, 2026 18:45 - 20:00 AT\nStarship Flight 15\nFlight 15 of Starship is preparing to launch as soon as Friday, November 13, pending regulatory approval. The 75-minute launch window will open at 4:45 p.m. CT. A live webcast of the flight will begin about 30 minutes before liftoff, which you can watch here and on X @SpaceX. Coverage…"
+        },
+        {
+          "by": "omegaSigma95",
+          "text": "Does catching ship require any tower arm changes from the booster catches or is it the same hardware setup?"
+        },
+        {
+          "by": "origini",
+          "text": "Is there any more information or research done regarding the poisening of our atmosphere with A LOT more starlink satelites? As far as i know, it can harm our ozon layer and change of temperature"
+        }
+      ],
+      "image": "https://www.spacex.com/assets/images/share.jpg"
+    },
+    {
+      "id": 50429545,
+      "url": "https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/",
+      "hn": "https://news.ycombinator.com/item?id=50429545",
+      "title": "DeepX claims inference up to 100B parameters at less than 5 W",
+      "time": 1794249238,
+      "points": 152,
+      "depth": [
+        {
+          "text": "DeepX claims a chip can run **huge AI models** under **five watts**, but commenters doubt it",
+          "tier": "simple"
+        }
+      ],
+      "camps": null,
+      "comment_count": 24,
+      "terms": [
+        "inference",
+        "parameters",
+        "compute-in-memory",
+        "TOP/s"
+      ],
+      "entities": [
+        "DeepX",
+        "DeepSeek 4.1 Flash",
+        "Nvidia ISAAC",
+        "9070 XT",
+        "Qwen",
+        "Gemma4",
+        "M5U Studio",
+        "RTX Spark"
+      ],
+      "comments": [
+        {
+          "by": "augment_me",
+          "text": "Quirks from the article: 1) The performance numbers are simulated 2) The details say that the performance numbers require 2.7x the overall power, so around 13.5W. Power needed for all the memory is not explicit in the numbers. 3) The compiler is also simulated and it's a prototype, so it's not a drop-in replacement for anything like Nvidia ISAAC 4) 5W seems to refer to sub-4B models, so not the…"
+        },
+        {
+          "by": "LaurensBER",
+          "text": "I'm getting questions weekly about running AI in-house now, in Europe trust in both the US and China seems to have hit an all-time low and AI is already scary for a lot of people. I have no doubt that local first is the future that we're heading towards. We're seeing \"algorithmic progress\" towards more efficient models and _some_ hardware being available (NPUs, this chip, etc). At the moment it…"
+        },
+        {
+          "by": "PaulKeeble",
+          "text": "80 TOP/s and 150GB/s memory gives us the fundamentals of where this sits performance wise although its not said if the TOP/s is for INT4 or FP16 or what which changes the prefill performance considerably. A consumer graphics card (say a 9070 XT) will be something more like 750 TOP/s on INT4 (20TOP/s on FP16) and 650 GB/s. So its probably about a tenth the performance for prefill but maybe its…"
+        },
+        {
+          "by": "ilaksh",
+          "text": "If it can work with 100B parameter models then stopping with edge devices makes no sense. This kind of compute-in-memory technology being so much more efficient would make most or all existing data centers obsolete. Or so it seems? Also, they are saying this efficiency is going to become standard. I think this is the type of technology that will allow AI companies to keep increasing the size of…"
+        },
+        {
+          "by": "nomorewords",
+          "text": "This mentions targets for inference of 10 to 30tps and I (albeit just skimming through) didn't find any info about ingestion speed. They also mention that the 1st gen chip is used for vision, though I suspect it's only for specific cases and not anything general. Overall I like power efficient optimizations like this and let's hope that this is adopted broadly. Although the compute in memory…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50418818,
+      "url": "https://isocpp.org/files/papers/P4454R0.pdf",
+      "hn": "https://news.ycombinator.com/item?id=50418818",
+      "title": "When a language's creator and its owners strongly disagree [pdf]",
+      "time": 1794180481,
+      "points": 150,
+      "depth": [
+        {
+          "text": "C++'s creator and its **standards committee** disagree over whether **contracts** belong in the language",
+          "tier": "simple"
+        },
+        {
+          "text": "Bjarne Stroustrup's **opposition to contracts** may have tipped the scale in the failed **C++26 vote**, though commenters also point to broader fatigue with large, half-baked features like modules. Herb Sutter's summary lays out **six possible paths forward**, including removing contracts or voting again.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some think Stroustrup's opposition may have tipped the vote; others say that overstates his role and misses wider weariness with half-baked features.",
+      "comment_count": 155,
+      "terms": [
+        "contracts",
+        "WG21",
+        "modules"
+      ],
+      "entities": [
+        "C++",
+        "Bjarne Stroustrup",
+        "Herb Sutter",
+        "C++26",
+        "WG21"
+      ],
+      "comments": [
+        {
+          "by": "pornel",
+          "text": "Stroustrup's list of objections sounds quite sensible to me: https://www.stroustrup.com/Contracts_fundamental_flaws.pdf"
+        },
+        {
+          "by": "digitalPhonix",
+          "text": "I think this is putting too much weight on this event and Bjarne’s position on contracts. Bjarne’s opposition to contracts might have tipped the scale but there is definitely growing weariness (and wariness) about large half-baked features that are left as exercises to the implementors (looking at you modules). Ignoring that historical context when analysing this vote seems like a mistake."
+        },
+        {
+          "by": "StellarScience",
+          "text": "This is a well-written and quite diplomatic summary by Herb Sutter. I'm not plugged in enough to be sure he's correct that Stroustrup's opposition was the main reason the C++26 vote failed where others have passed, but it sounds plausible. It also lists 6 possible paths forward for C++26 with pros and cons. I think they are roughly: A. Skip an official C++26 standard but roll these features into…"
+        },
+        {
+          "by": "kazinator",
+          "text": "36 years of sustained agreement is not good; it means nobody is saying no to anything, and you have a giant, dirty snowball rolling down a mountain."
+        },
+        {
+          "by": "kikoreis",
+          "text": "Just stopped by to say Sutter is not only right to be reiterating Bjarne's position here, he is also the author of IMO the most impactful paper regarding the progress of hardware performance and the shift to concurrent execution: https://www.cs.utexas.edu/~lin/cs380p/Free_Lunch.pdf"
+        }
+      ],
+      "image": null
+    }
+  ],
+  "glossary": {
+    "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
+    "agent": "An AI system that can take steps and use tools to get a task done, not just answer questions.",
+    "formalization": "Writing mathematics in a precise form that a computer can check.",
+    "one-shot": "A first version made from one prompt; it doesn't mean nobody changed the result afterward.",
+    "headless browser": "A browser that runs under software control without a visible window.",
+    "spritesheet": "An image that holds a game's character pictures, such as different poses or animation frames.",
+    "TPU": "Thermoplastic polyurethane: a bendy kind of plastic used to make some printed parts.",
+    "silicon": "The material used to make computer chips.",
+    "latency": "The time between doing something and seeing the device respond.",
+    "context window": "The amount of text and information an AI can take into account at one time.",
+    "SRAM": "Static Random-Access Memory: a kind of memory that keeps its contents while powered, so the computer can use them quickly.",
+    "HBM": "High-bandwidth memory: fast memory placed close to a processor so it can get lots of information quickly.",
+    "vibecoded": "Made by asking an AI to write code from prompts, with little hands-on programming.",
+    "immediate mode": "A way to build a UI where the app describes what should appear each time it draws, rather than keeping a lasting set of controls.",
+    "catch": "A way to recover a rocket by having arms on the launch tower grab it when it returns.",
+    "booster": "The lower part of a rocket that pushes it upward during launch.",
+    "orbital launch system": "A rocket system meant to put a vehicle into a path around Earth.",
+    "inference": "When an AI uses what it learned to answer or act, instead of being trained.",
+    "parameters": "Learned values inside a model that shape the answers it gives.",
+    "compute-in-memory": "A way to do calculations where the information is stored, avoiding moving it elsewhere first.",
+    "TOP/s": "A measure of how many trillion calculations a chip can do each second.",
+    "contracts": "Rules attached to code that say what should be true when it runs.",
+    "WG21": "C++ Standardization Committee: the group that discusses and votes on proposed changes to C++.",
+    "modules": "A way to divide C++ code into pieces that can be used separately."
+  }
+}
