@@ -2,6 +2,1127 @@
   "date": "2026-11-11",
   "cards": [
     {
+      "id": 50452455,
+      "url": "https://pietromiotti.com/latest/maya-site/?maya",
+      "hn": "https://news.ycombinator.com/item?id=50452455",
+      "title": "Google SWE points 48 AI agents at NASA Lidar, finds unmapped Maya pyramid in 72h",
+      "time": 1794398722,
+      "points": 837,
+      "depth": [
+        {
+          "text": "**AI agents** spotted a Maya site in lidar, but it had **already been mapped**",
+          "tier": "simple"
+        },
+        {
+          "text": "**48 agents** reviewed images made from about **1,200 km²** of jungle lidar, looking for pyramids, platforms and plazas. The author’s update says the site was already mapped in a 2025 paper; the agents missed it in the literature, so this was a rediscovery, not a new find.",
+          "tier": "substance",
+          "data": [
+            [
+              "jungle lidar analyzed",
+              "about 1,200 km²"
+            ],
+            [
+              "AI agents",
+              "48"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some call this an exciting use of AI to search huge datasets; others point out the site was already in a paper, want archaeologist verification, and warn that too many finds could overwhelm field teams.",
+      "comment_count": 307,
+      "terms": [
+        "lidar",
+        "point cloud",
+        "INAH"
+      ],
+      "entities": [
+        "NASA",
+        "INAH",
+        "Google",
+        "Gemini",
+        "ChatGPT",
+        "Claude",
+        "Grok",
+        "Estrada-Belli",
+        "Hiram Bingham"
+      ],
+      "comments": [
+        {
+          "by": "LordOmlette",
+          "text": "The site in question was found earlier: https://bsky.app/profile/indyfromspace.bsky.social/post/3n22... The Mexican govt may not have had the right records, but you can see what the site looked like at the time it was first found here: https://bsky.app/profile/indyfromspace.bsky.social/post/3n22..."
+        },
+        {
+          "by": "TSiege",
+          "text": "This story is very cool, and it’s exciting to see how much progress AI will bring to every field. One thing to temper everyone from wanting to lidar the whole world is human capacity. Finding discoveries like this is essentially as hard as doing the lidar mapping. Now the issue will be getting archaeologist there in time before someone else does. The best way to protect a site is to leave it…"
+        },
+        {
+          "by": "hanoz",
+          "text": "I created the first online lidar map of the UK (well, England and Wales), as announced here many years ago! (now at https://lidarmap.uk ) and delightfully there have been dozens of finds of previously unknown sites of archaeological significance found using it that I'm aware of. Roman villas, forts, henges, all sorts of earthworks. New discoveries are being reported using this and similar tools…"
+        },
+        {
+          "by": "chirau",
+          "text": "Interesting. I don't want to sound like a hater or anything, but I will personally wait for an expert archaeologist's verification on this. I have dealt with agents making up stuff that sounds fantastic and ground-breaking but completely falters on further review. And I doubt the folks you contacted have the audacity to question a Google engineer and his 48 agents. Even if he is not archaelogist…"
+        },
+        {
+          "by": "miotts",
+          "text": "author here. Update: the site had already been discovered. It appears in a 2025 paper by Estrada-Belli, Canuto, Šprajc & Fernandez-Diaz (page 14) https://doi.org/10.1016/j.jasrep.2025.105288 . The agents missed it, I missed it, and it wasn't in INAH's register yet (National Institute of Anthropology and History). The rest of the story still holds, and there's still a lot left to discover with…"
+        }
+      ],
+      "image": "https://pietromiotti.com/latest/maya-site/forest-vs-lidar.jpg"
+    },
+    {
+      "id": 50450488,
+      "url": "https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028",
+      "hn": "https://news.ycombinator.com/item?id=50450488",
+      "title": "Tim Peters has died",
+      "time": 1794380597,
+      "points": 416,
+      "depth": [
+        {
+          "text": "Tim Peters, who wrote **Python's famous advice** and invented a **sorting method**, has died",
+          "tier": "simple"
+        },
+        {
+          "text": "The **Zen of Python** was his, and commenters also connect him to **Timsort**. They remember his writing as **jovial and accessible**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 43,
+      "terms": [
+        "Zen of Python",
+        "Timsort"
+      ],
+      "entities": [
+        "Tim Peters",
+        "Python",
+        "Zen of Python",
+        "Timsort"
+      ],
+      "comments": [
+        {
+          "by": "w-m",
+          "text": "$ python -c \"import this\"\nThe Zen of Python, by Tim Peters\nBeautiful is better than ugly.\nExplicit is better than implicit.\nSimple is better than complex.\nComplex is better than complicated.\nFlat is better than nested.\nSparse is better than dense.\nReadability counts.\nSpecial cases aren't special enough to break the rules.\nAlthough practicality beats purity.\nErrors should never pass…"
+        },
+        {
+          "by": "leoc",
+          "text": "Among his various other works, it was Tim Peters along with Gary Robinson who turned pg's \"A Plan for Spam\" essay into the successful SpamBayes program: https://www.linuxjournal.com/article/6467 . (EDIT: Robert Woodhead apparently shares in the credit, too: https://www.ceas.cc/papers-2004/136.pdf https://ceas.cc/papers-2004.html . Apparently Rob Hooft was another implementor? I can't find a good…"
+        },
+        {
+          "by": "lumpa",
+          "text": "Once upon a time I used to read all python-dev posts and bugs.python.org issues, so I got to follow (and get a feeling of knowing) these people I admired working and discussing together. Tim was always a favorite. Another thing that made me feel close to him was his work on the Python Cookbook 2nd Edition, in which he (and other big names in the community) delightfully talks the reader through…"
+        },
+        {
+          "by": "asalahli",
+          "text": "Yesterday, out of nowhere I remembered Zen of Python and looked it up to refresh my memory. Prior to that I hadn't known who the author was, so when I saw Tim Peter's name I had a moment of realization that it's the same person who invented Timsort and the same person who was banned from python forums a few years ago for opposing arguing agains bylaw changes. It feels surreal to learn about his…"
+        },
+        {
+          "by": "ofek",
+          "text": "Tim was one of the people who contributed to my love of the Python language eventually expanding to its entire community. He was always so willing to foster discussion that nearly every interaction resulted in an improved understanding of some topic and a shared eagerness to try or learn more out something tangential that came up via digression. I never knew how many types of voting systems there…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50449748,
+      "url": "https://gatezh.com/posts/macos-secure-enclave-ssh-keys/",
+      "hn": "https://news.ycombinator.com/item?id=50449748",
+      "title": "Protecting SSH Keys with macOS Secure Enclave",
+      "time": 1794371337,
+      "points": 365,
+      "depth": [
+        {
+          "text": "someone put **login keys** in a Mac’s **Secure Enclave**, with Touch ID approval every time",
+          "tier": "simple"
+        },
+        {
+          "text": "The walkthrough uses sc_auth and SSH’s provider setup to create a **non-exportable key**; **Touch ID** must approve every signing operation. The native prompt looked rough, so the author later switched to **Secretive**, which keeps keys in the Secure Enclave with a better prompt.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: Secure Enclave fans value keys that cannot be extracted; YubiKey fans want hardware keys independent of the Mac and easy to move or back up.",
+      "comment_count": 131,
+      "terms": [
+        "Secure Enclave",
+        "SSH",
+        "SSH agent",
+        "agent forwarding"
+      ],
+      "entities": [
+        "Apple",
+        "macOS",
+        "Secure Enclave",
+        "Secretive",
+        "YubiKey",
+        "1Password",
+        "Bitwarden",
+        "sc_auth",
+        "CryptoTokenKit",
+        "OpenSSH",
+        "WireGuard"
+      ],
+      "comments": [
+        {
+          "by": "database64128",
+          "text": "Security features like this works, until it doesn't. When I installed WireGuard on macOS, I was happy to discover that it stores private keys in the system keychain. Accessing the private key requires Touch ID. Then one day after a system upgrade, the WireGuard app crashed on startup with: [APP] Unable to open config from keychain: -25300\nThen the app deleted all profiles because they are all…"
+        },
+        {
+          "by": "flexorium",
+          "text": "I’ve been a happy user of Secretive for years, including for Git commit signature which it make it a separate key with interaction but not for pull / push. I find the trade off ideal for GitHub.com and have other keys with different setup for servers. SSH keys in plaintext was one of the first thing that bagel [0] our developer endpoint secret detection focused on. Then we embedded bagel as a…"
+        },
+        {
+          "by": "mavam",
+          "text": "One fundamental problem with agentic development is that accessing the secure enclave key requires human presence. If you're running headless and aren't logged in, Secretive (not sure about others) will not be able to access the enclave, even when you only chose \"notify\" and not \"touchid\". This is why I'm skeptical that the approach can scale reliably, even though I'm relying on it today. (Yes…"
+        },
+        {
+          "by": "jwr",
+          "text": "I decided years ago that I want to protect my keys with a hardware device that is independent of the vendor of the machine that I'm currently using. I also want to have backup keys and I want to be able to freely move them around various physical locations. Or have a backup shipped to me across the world if necessary. YubiKeys were the only solution that fit these requirements, so I went with…"
+        },
+        {
+          "by": "jen729w",
+          "text": "I use 1Password's `op` for this, but with an allowance: my dev environment keys. I found I was getting fingerprint fatigue. Do I need a fingerprint request every time my dev server wants to connect to dev Supabase? No. That's expected, and zero risk. There's no data there. I worried that a nefarious request would be auto-approved by me. When you see 20 requests a day, your muscle memory just…"
+        }
+      ],
+      "image": "https://gatezh.com/brand/share.381cc582d58a3410686473b92c1d944fbc83dc59a7e926952aeb6c5c0d8a6ef0.png"
+    },
+    {
+      "id": 50453474,
+      "url": "https://www.theverge.com/tech/1012372/tv-privacy-acr-questions",
+      "hn": "https://news.ycombinator.com/item?id=50453474",
+      "title": "I asked every TV manufacturer 17 questions about how they spy on you",
+      "time": 1794405365,
+      "points": 297,
+      "depth": [
+        {
+          "text": "someone asked **TV makers** 17 yes-or-no questions about what their TVs **collect and send**",
+          "tier": "simple"
+        },
+        {
+          "text": "The Verge sent questions to **11 companies** and got replies from the top three TV manufacturers and every major streaming-device company; **Hisense ignored** the emails. A Northeastern University study found **Vizio kept sending data after opt-out**; Vizio said it was “routine operational data used to support the Vizio experience,” not ACR.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: one commenter says LG’s Live Plus setting is usually reverted; another praises LG’s direct answers, assuming the company is telling the truth.",
+      "comment_count": 181,
+      "terms": [
+        "ACR",
+        "telemetry",
+        "SSID"
+      ],
+      "entities": [
+        "The Verge",
+        "John Higgins",
+        "Amazon",
+        "Apple",
+        "Google",
+        "Hisense",
+        "LG",
+        "Panasonic",
+        "Roku",
+        "Samsung",
+        "Sony",
+        "TCL",
+        "Vizio",
+        "Walmart",
+        "Northeastern University",
+        "Live Plus"
+      ],
+      "comments": [
+        {
+          "by": "throwa356262",
+          "text": "LG: No. ACR in LG TVs does not collect or store screenshots, screen images, screen recordings...\nHold on, we already know this is not true. There is even an option in the settings to disable this (which is usually automatically reverted by LG within a week). The setting has the obvious name of \"Live Plus\"."
+        },
+        {
+          "by": "bita_nidir",
+          "text": "Remember, \"no answer\" is still a data point. https://en.wikipedia.org/wiki/Adverse_inference"
+        },
+        {
+          "by": "ale42",
+          "text": "https://archive.is/jBJdd"
+        },
+        {
+          "by": "PinkaDunka",
+          "text": "Interesting that in the beginning it says 'We know that many TVs use automatic content recognition (ACR)' but according to answers none of those manufacturers do. So which TVs do the ACRs, and why Verge did not send those questions to them? Hisense?"
+        },
+        {
+          "by": "ourmandave",
+          "text": "Did any of them confirm the myth that the TV attempts to auto connect to any public wifi it can find or comes with a built in 5G modem?"
+        }
+      ],
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268797_What_data_are_your_TVs_collecting_and_is_it_protected__CVirginia.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+    },
+    {
+      "id": 50456631,
+      "url": "https://github.com/aws/aws-emulator",
+      "hn": "https://news.ycombinator.com/item?id=50456631",
+      "title": "AWS Finally Built Its Own AWS Emulator",
+      "time": 1794421298,
+      "points": 275,
+      "depth": [
+        {
+          "text": "someone built a **local stand-in** for AWS APIs so developers can **test code** without calling AWS",
+          "tier": "simple"
+        },
+        {
+          "text": "It can run on your own machine, a development server, or in **continuous integration**, with no AWS account needed. In server mode, point the AWS CLI or an AWS SDK at its endpoint; **embedded mode** runs in-process for **Rust tests**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some see a valuable testing tool if maintained; others question whether AWS will maintain it and object to telemetry being on by default.",
+      "comment_count": 73,
+      "terms": [
+        "emulator",
+        "API",
+        "continuous integration (CI)",
+        "SDK",
+        "embedded mode",
+        "telemetry",
+        "endpoint"
+      ],
+      "entities": [
+        "AWS",
+        "AWS Emulator",
+        "Amazon",
+        "GitHub",
+        "AWS CLI",
+        "AWS SDK",
+        "Rust",
+        "Cargo",
+        "Docker",
+        "Floci",
+        "Testcontainers",
+        "LocalStack",
+        "Ministack",
+        "Claude",
+        "GCP",
+        "Azure",
+        "CDK",
+        "Terraform"
+      ],
+      "comments": [
+        {
+          "by": "CharlieDigital",
+          "text": "Skeptical of using because it's not clear whether this was just an exercise or a real product they are going to ship and maintain. Floci[0] has been great for me. Use the Testcontainers[1], too. Bonus: works for GCP and Azure, too (so far have only used in limited capacity, though). [0] https://floci.io/ [1] https://testcontainers.com/modules/floci/"
+        },
+        {
+          "by": "cxr",
+          "text": "No idea why there's so much of this lately, but there are way too many editorialized submission titles hitting the front page recently. Please stop doing this. < https://news.ycombinator.com/newsguidelines.html >"
+        },
+        {
+          "by": "Waterluvian",
+          "text": "If I understand this correctly, it means I can point my entire CDK project to the emulator and test a `cdk deploy`? I'm curious just how realistic the \"internal\" behaviour is emulated. It's been a while (since I got my stack working and I just don't like touching it now...), but I recall it being a real pain that sometimes odd, sometimes inconsistent things happened with setup and teardown (even…"
+        },
+        {
+          "by": "super_linear",
+          "text": "Related to this post: https://www.aboutamazon.com/news/aws/how-autonomous-ai-agent..."
+        },
+        {
+          "by": "morelandjs",
+          "text": "Fellow Amazonian here. Want to say that I’m grateful you built this and it has tremendous value if pulled off well and properly maintained. Agentic development is all about closing off a system as much possible, then mocking up or simulating any inputs or dependencies that cannot be closed off. At that point, you let Claude crawl over the system and do its thing. This inevitably runs into…"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/59b5e29babc9119eb131aa32e1e2c9086e79fd29e89bfb2abc2daa20ce2282e0/aws/aws-emulator"
+    },
+    {
+      "id": 50455394,
+      "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
+      "hn": "https://news.ycombinator.com/item?id=50455394",
+      "title": "A false smoke alarm almost drowned Jane Street's only NYC datacenter",
+      "time": 1794415124,
+      "points": 261,
+      "depth": [
+        {
+          "text": "a **false smoke alarm** shut off the cooling, so someone raced to **unplug Jane Street's servers**",
+          "tier": "simple"
+        },
+        {
+          "text": "Contractors kicked up dust, setting off the alarm; it shut down the **CRAC units**. The next morning, he wrote an **OCaml monitor** that checked every server's temperature each minute and averaged the readings.",
+          "tier": "substance",
+          "data": [
+            [
+              "temperature when it stopped",
+              "143.6"
+            ],
+            [
+              "temperature the author wanted to stay below",
+              "150 F"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 134,
+      "terms": [
+        "CRAC",
+        "OCaml",
+        "EPO",
+        "UPS"
+      ],
+      "entities": [
+        "Jane Street",
+        "Michael Bacarella",
+        "OCaml",
+        "Linux",
+        "Bash",
+        "Perl",
+        "Emacs",
+        "Star Trek: Lower Decks",
+        "Gordon Gekko"
+      ],
+      "comments": [
+        {
+          "by": "reticulates",
+          "text": "The article reminds me of when Hurricane Sandy took out a bunch of New York DCs with 3+ feet of water and people were carrying diesel up stairs to keep generators running. “The superhuman folks at the data center are hauling 55 gallon drums of diesel fuel up 17 flights of stairs. Assuming they're able to sustain a rate of transfer that exceeds the rate of consumption, the data center should run…"
+        },
+        {
+          "by": "thibsrn",
+          "text": "[delayed]"
+        },
+        {
+          "by": "hackermailman",
+          "text": "In the article he talks about living within a few minutes walk to work and telling too many people so they made him the emergency office guy. Same thing happened to me, foolishly told everyone hey I can see my apartment from here so I would get panicked calls to run in and shut down servers because the information security guy got a tip of an impending exploit about to be released on a holiday…"
+        },
+        {
+          "by": "rdl",
+          "text": "Odd that they didn't have at minimum 1) a physical Emergency Power Off (EPO) button inside the datacenter, such that one button could de-energize everything -- usually required as part of building a datacenter due to code variance for the \"low voltage\" (<4000V in this context...) wiring. 2) EPO interlink to the smoke alarms, such that it would de-energize equipment automatically (maybe with…"
+        },
+        {
+          "by": "rainbowzootsuit",
+          "text": "Interesting. The Sequence of Operations we write for the data halls I work on specifically do not shut down the CRACs on smoke alarm for this reason. The International Mechanical Code (IMC) specifically allows this where a air handler over 2000 cfm serves only one space because it's recognized that it will not spread smoke around a building. 2000 cfm is the threshold where you typically have to…"
+        }
+      ],
+      "image": "https://michael.bacarella.com/assets/mbacface.jpg"
+    },
+    {
+      "id": 50448921,
+      "url": "https://blog.moertel.com/posts/2013-12-14-great-old-timey-game-programming-hack.html",
+      "hn": "https://news.ycombinator.com/item?id=50448921",
+      "title": "A great old-timey game-programming hack (2013)",
+      "time": 1794362191,
+      "points": 245,
+      "depth": [
+        {
+          "text": "someone made a **choppy old game** run **smoothly** with a wild **graphics-copying hack**",
+          "tier": "simple"
+        },
+        {
+          "text": "The 6809 used **pull-and-push instructions** to copy **seven-byte chunks**; a one-time tile preprocessing step reversed the septet order to undo the upside-down, swapped result. Interrupts could still corrupt the screen buffer, so they drew tiles from high addresses to low, letting the next tile **repair the damage** before the frame appeared.",
+          "tier": "substance",
+          "data": [
+            [
+              "copy-routine speed-up",
+              "70 percent"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 55,
+      "terms": [
+        "stack pointer",
+        "pull/push instructions",
+        "septet",
+        "interrupt",
+        "screen buffer",
+        "unrolled loop"
+      ],
+      "entities": [
+        "Tom Moertel",
+        "6809",
+        "PSHS",
+        "PULS",
+        "DP"
+      ],
+      "comments": [
+        {
+          "by": "taspeotis",
+          "text": "Somewhat related [1]: > Years ago, I was working at Video Seven, a now-vanished video adapter manufacturer, helping to develop a VGA clone. The fellow who was designing Video Seven’s VGA chip, Tom Wilson, had worked around the clock for months to make his VGA run as fast as possible, and was confident he had pretty much maxed out its performance. As Tom was putting the finishing touches on his…"
+        },
+        {
+          "by": "mikewarot",
+          "text": "Back in the MS-DOS days, my friend Ward Christensen worked at IBM in Technical Sales Support. They had a file informally maintained that listed every single product they had for sale, in a format that could be read on a PC. He was really good at searching it with his text editor, but he wanted a MS-DOS based stand alone program to make it easy to search for his co-workers. Thus was born, PCxREF…"
+        },
+        {
+          "by": "green_wheel",
+          "text": "Awesome article. I guess grass is always greener but coding in those days seems really cool. Today it's all package managers this and toolchains that. We're so far abstracted away from what's actually running our code. Articles like this make me here the CPU calling \"come back to meeeeee\""
+        },
+        {
+          "by": "sehugg",
+          "text": "The 6502 has a more narrow and diabolical version of the 6809's PSHS trick. The BRK instruction pushes the PC and status register to the stack in three consecutive cycles, and is pretty much the only non-interrupt instruction that writes more than twice. The Atari 2600 has horizontal object counters that you can't set directly, but they latch when you write to them, and they set the corresponding…"
+        },
+        {
+          "by": "adonovan",
+          "text": "Great story! We may write little assembler (or, increasingly, code) these days but, optimization always has this same feeling of adventure, serial discovery, and of learning what parts it’s ok to throw away."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50453555,
+      "url": "https://www.theverge.com/tech/1031507/apple-community-support-forum-shutting-down",
+      "hn": "https://news.ycombinator.com/item?id=50453555",
+      "title": "Apple is killing its Support Community forum next week",
+      "time": 1794405731,
+      "points": 239,
+      "depth": [
+        {
+          "text": "Apple is closing its **Support Community** forum after putting it into **read-only mode**",
+          "tier": "simple"
+        },
+        {
+          "text": "The site stopped accepting new posts and will **permanently close on November 20, 2026**. Commenters split: some feel bad for contributors who put in **significant time**, while others say they rarely found worthwhile answers.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some mourn the community and its contributors; others say the forum mostly offered useless or wrong answers.",
+      "comment_count": 141,
+      "terms": [
+        "read-only",
+        "LLMs"
+      ],
+      "entities": [
+        "Apple",
+        "Apple Support Community",
+        "Apple Support",
+        "The Verge",
+        "MacRumors",
+        "Ask Different",
+        "Claude",
+        "Claude Code"
+      ],
+      "comments": [
+        {
+          "by": "Jordan-117",
+          "text": "I feel bad for the people who dedicated significant time to helping others there. I just pulled up a random page and there are users with tens of thousands of answers and profiles professing their love of all things Apple. Suddenly going read-only with no warning and killing it shortly after just seems like such a cold and abrupt way to end what was clearly some people's hobby and point of pride…"
+        },
+        {
+          "by": "garciasn",
+          "text": "Maybe when it started back in the late 90s it was a bastion of great information; however, I have never found a single answer that was worthwhile on there when landing from a search engine query. If anything, this is likely flooding LLMs with incomplete/invalid/useless information and it's just time they deprecated it in favor of something more modern and useful."
+        },
+        {
+          "by": "Aurornis",
+          "text": "The value of a product community forum is proportional to the technical abilities of its users. The Apple and Microsoft community support forums may have had more value years ago when the only people who knew how to find and use a forum were already technical. It’s hard to imagine now, but there was a time when making an account on a site to talk to other people was unusual for average people…"
+        },
+        {
+          "by": "drbscl",
+          "text": "A lot of the threads on there are “hey this thing is broken”, opened 7 years ago, and the problem still isn’t resolved"
+        },
+        {
+          "by": "anticensor",
+          "text": "Hmm, could spark the contributions on Ask Different for a brief while."
+        }
+      ],
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Apple-Support-Community-forum.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+    },
+    {
+      "id": 50451903,
+      "url": "https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100/",
+      "hn": "https://news.ycombinator.com/item?id=50451903",
+      "title": "Using voltage glitching to unleash the A100 in my mining card",
+      "time": 1794394120,
+      "points": 220,
+      "depth": [
+        {
+          "text": "someone used **voltage glitches** to turn a mining card into an **A100** with **far more memory**",
+          "tier": "simple"
+        },
+        {
+          "text": "Kate says **voltage fault injection** let her blow arbitrary fuses on the GA100, turning an 8GB CMP 170HX into an **A100-80G**. She reports ~120-126 functional SMs versus 108 in production A100s and says the cards are **~1.2x faster**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Hardware-unlocked CMP 170HX",
+              "85.858 TFLOP/s"
+            ],
+            [
+              "Retail A100",
+              "72.488 TFLOP/s"
+            ],
+            [
+              "Reported performance vs. retail A100",
+              "~1.2x faster"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see the lockout as market-driven; others argue disabled parts may be defective, and that the fuse design helps avoid destroying value when a fuse blows.",
+      "comment_count": 83,
+      "terms": [
+        "voltage fault injection",
+        "eFuse",
+        "HBM",
+        "SM"
+      ],
+      "entities": [
+        "Kate",
+        "NVIDIA",
+        "GA100",
+        "CMP 170HX",
+        "A100"
+      ],
+      "comments": [
+        {
+          "by": "myself248",
+          "text": "Instead of putting the host to ACPI S3 state, could an external GPU riser be used with a separate power supply? Seems like that would considerably speed up the process, by letting the host continue to run while only the target cycles."
+        },
+        {
+          "by": "htrp",
+          "text": "amazing to think there was a time (literally not too long ago) where you would throw 80 GB of HBM onto a chip and turn 90% of it off"
+        },
+        {
+          "by": "notenchange",
+          "text": "This is great. I’m actually trying to unlock the 80G in a CMP 170HX the software way for the last 2 weeks (still no luck). I just don’t know if I’m brave enough (and knowledgeable enough) to go this blown fuses way. Seems a lot more risky. P.S. I now see this is for the 8GB model, which is insane. The 10G one is the one that until now was proven to have 80G, but never fully accessible through…"
+        },
+        {
+          "by": "amelius",
+          "text": "But what if nvidia used those fuses because an A100 had too many fabrication faults so it could only be a cheaper mining card? (which is the more likely scenario because they can make much more money on enterprise/datacenter products, see DRAM)"
+        },
+        {
+          "by": "roger_",
+          "text": "Glad I jumped on these cards, excited to give this a try! Hard to believe $1k was a deal a few months ago (and $200 before then)."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50453288,
+      "url": "https://av.github.io/safe-sand/",
+      "hn": "https://news.ycombinator.com/item?id=50453288",
+      "title": "Hyper-Realistic Sand with WebGL2",
+      "time": 1794404369,
+      "points": 219,
+      "depth": [
+        {
+          "text": "someone made **hyper-realistic sand** you can **pour and play with** on your phone",
+          "tier": "simple"
+        },
+        {
+          "text": "Commenters say desktop and mobile feel **totally different**; on a phone, you can **shake it**, and the stones even have **water around them**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say it looks and feels real; others say it isn't realistic, pointing to sand that gets stuck in the air and stones that don't rotate.",
+      "comment_count": 51,
+      "terms": [
+        "WebGL2",
+        "forward vector",
+        "world up",
+        "Moirée patterns"
+      ],
+      "entities": [
+        "WebGL2",
+        "safe-sand"
+      ],
+      "comments": [
+        {
+          "by": "evnp",
+          "text": "Super loud sound warning, us parents and folks wearing headphones would really appreciate default sound off. Or at least a some indication to turn volume down before tapping \"pour\""
+        },
+        {
+          "by": "smusamashah",
+          "text": "Found source repo here https://github.com/av/safe-sand"
+        },
+        {
+          "by": "bob1029",
+          "text": "I like how when my phone's forward vector is aligned with world up all the sand falls out."
+        },
+        {
+          "by": "alex_duf",
+          "text": "On a mobile phone it makes a lot more sense. Try shaking it!"
+        },
+        {
+          "by": "nkmnz",
+          "text": "Something seems wrong with the stones. They seem to move way to fast. They need more friction."
+        }
+      ],
+      "image": "https://av.github.io/safe-sand/icons/icon-512.png"
+    },
+    {
+      "id": 50452655,
+      "url": "https://nathan.rs/posts/weight-space-lp/",
+      "hn": "https://news.ycombinator.com/item?id=50452655",
+      "title": "Can a Linear Program Do Weight-Space Programming?",
+      "time": 1794400217,
+      "points": 196,
+      "depth": [
+        {
+          "text": "someone used a **math solver** to fix an AI's **looping answers** with far fewer weight changes",
+          "tier": "simple"
+        }
+      ],
+      "camps": null,
+      "comment_count": 29,
+      "terms": [
+        "linear program",
+        "weight-space programming",
+        "residual stream",
+        "steering vector",
+        "inference"
+      ],
+      "entities": [
+        "Nathan Barry",
+        "Astra",
+        "Qwen3.5-0.8B",
+        "Gemma 3 270M",
+        "MATH-500",
+        "GSM8K",
+        "IFEval",
+        "HiGHS",
+        "PDHG",
+        "PDLP",
+        "MIT CSAIL",
+        "GitHub"
+      ],
+      "comments": [
+        {
+          "by": "jsw97",
+          "text": "Maybe this is what the author is getting at, but if LP solvers are useful tools for editing weights, then Astra access to this methodology might make it more effective at weight editing. The interpretation here is not so much that an LP can do Astra's work -- after all the Astra prompt was \"improve Qwen's math by changing weights\" or similar. Instead, it's that with some guidance (eliminate this…"
+        },
+        {
+          "by": "rbnafo",
+          "text": "Very interesting analysis. It would be great to see the LP comeback and optimize. I always have the impression that we have settled to suboptimal solutions in many areas just because we have become too attached to LLMs, wary of numerical analysis."
+        },
+        {
+          "by": "dansitu",
+          "text": "Nice analysis. The simplicity of this indicates that it should be happening during training via regularization."
+        },
+        {
+          "by": "daemonk",
+          "text": "What exactly is the difference between weight-space programming and something like back propagation? I guess AI can reason deeper about the weights somehow and take into account more parameters than a simple feedback from back propagation?"
+        },
+        {
+          "by": "deerstalker",
+          "text": "Not strictly on topic but related to this -- I wonder if there is any effort/research being done with LLMs when it comes to finding low dimensional weight space representations/manifolds. If you could drastically lower the dimensionality with some algortihm X, you could efficiently use global optimization algorithms to find sparse but accurate networks (Lottery Ticket Hypothesis etc etc.)"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50427107,
+      "url": "https://happihacking.com/blog/posts/2025/why_I_wrote_theBEAMBook/",
+      "hn": "https://news.ycombinator.com/item?id=50427107",
+      "title": "Why I wrote the BEAM book (2025)",
+      "time": 1794238895,
+      "points": 178,
+      "depth": [
+        {
+          "text": "someone spent years writing a **guide** to how the **BEAM behaves** when software systems go wrong",
+          "tier": "simple"
+        },
+        {
+          "text": "The author says a **15 millisecond pause** in the BEAM can stall **millions of peak-shopping payments**, after ten years keeping Klarna’s core system upright. The book explains how the BEAM schedules processes, and the project survived **two cancelled publishing deals** before becoming a paperback.",
+          "tier": "substance",
+          "data": [
+            [
+              "BEAM pause",
+              "15 millisecond"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 40,
+      "terms": [
+        "BEAM",
+        "Erlang",
+        "scheduler",
+        "process",
+        "garbage collection"
+      ],
+      "entities": [
+        "The BEAM Book",
+        "BEAM",
+        "Klarna",
+        "Erlang",
+        "Elixir",
+        "GitHub",
+        "O’Reilly",
+        "Pragmatic Bookshelf",
+        "DocBook",
+        "AsciiDoc",
+        "Asciidoctor",
+        "Atlas",
+        "CVS",
+        "ERTS",
+        "Amazon"
+      ],
+      "comments": [
+        {
+          "by": "neya",
+          "text": "Oh wow, I never knew Klarna uses BEAM. I always thought BEAM is vastly underrated and it's even hard for me to convince clients of showing how powerful it (Elixir/BEAM) really is, especially when they're already on something like NodeJS. This will be a nice reference to use in conversations with future prospects."
+        },
+        {
+          "by": "dimamik",
+          "text": "I've been building with Elixir for the last 5 years, and comparing to Python or NodeJS - it's a breath of fresh air. Such decent developer experience, so easy to understand how your system works because of actors and well-defined primitives. If you haven't - you definitely should give it a try! In an AI era I feel like the tiny amount of Elixir code in comparison with other languages, but all…"
+        },
+        {
+          "by": "pjm331",
+          "text": "just picked up a copy I'd been looking for an excuse to build something in Elixir pretty much since the language was released, and in just the past year and a half I've had the good fortune of getting to use it to build an in house AI agent orchestration system and it's been an absolute pleasure"
+        },
+        {
+          "by": "oivaksef",
+          "text": "There will be winners in this new AI age, and they will be the ones that are technically better, rather than the most popular or convenient for software engineers"
+        },
+        {
+          "by": "ErikStenman",
+          "text": "The second edition is out now.\nhttps://happihacking.com/resources/the-beam-book/"
+        }
+      ],
+      "image": "https://happihacking.com/images/og/thebeambooks.jpg"
+    },
+    {
+      "id": 50437242,
+      "url": "https://www.theguardian.com/books/2026/nov/09/m-john-harrison-the-end-of-everything-wins-2026-booker-prize",
+      "hn": "https://news.ycombinator.com/item?id=50437242",
+      "title": "M John Harrison becomes first science fiction author to win the Booker",
+      "time": 1794296452,
+      "points": 164,
+      "depth": [
+        {
+          "text": "M John Harrison’s **postapocalyptic novel** made him the **first science fiction author** to win the **Booker**",
+          "tier": "simple"
+        },
+        {
+          "text": "The novel **The End of Everything** is set on the near-future Kent coast, where Phillip Tennent and his ageing aunt Marnie face mysterious, **shape-changing iGhetti**. Harrison received the **£50,000 award** and became the oldest winner in the prize’s history.",
+          "tier": "substance",
+          "data": [
+            [
+              "prize money",
+              "£50,000"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: the article calls Harrison the first Booker winner from the bona fide SF world; one commenter says that leaves Samantha Harvey’s Orbital out of science fiction.",
+      "comment_count": 119,
+      "terms": [
+        "postapocalyptic",
+        "anti-plot"
+      ],
+      "entities": [
+        "M John Harrison",
+        "The End of Everything",
+        "Booker Prize",
+        "Samantha Harvey",
+        "Orbital"
+      ],
+      "comments": [
+        {
+          "by": "plasticeagle",
+          "text": "I have to say that I spent a lot of time recommending this author to people. \"Light\", and \"Nova Swing\" are both ABSOLUTELY INCREDIBLE. I was on holiday, and stopped at a second hand bookshop to grab something hopefully a bit trashy to read. I picked up Nova Switch because the cover made it look like some weird sci-fi detective romp. But after about three pages it became apparent that I had…"
+        },
+        {
+          "by": "thorin",
+          "text": "I only read his book \"Climbers\" which I thought was really good, non-linear and vague but atmospheric. I am a climber or at least know the world of climbing and M John is also a climber. I'm tempted to read his other books but as mentioned the reviews are quite divisive. Climbers took me back to when I first read Iain Banks books, that is the kind of vibe I was getting."
+        },
+        {
+          "by": "ddxv",
+          "text": "https://www.goodreads.com/book/show/241835818/reviews Wow, pretty divisive, reviews are all over the place. I haven't read it yet, but the reviews seem to tend towards people annoyed at abstract and flowery plot / writing? I will have to try, but I've also struggled through (possibly) similar books like Gnomon by the British sci-fi author Nick Harkaway which had plots too abstract to properly…"
+        },
+        {
+          "by": "nxobject",
+          "text": "Congratulations -- and, it should have happened so, so much more sooner.\n(It's interesting to think about how Harrison pierced the veil between \"genre\" and \"general literary fiction\": he won the Goldsmiths prize in 2020, and judged the Bookers in 2022. His individual recognition as an author was a process.)"
+        },
+        {
+          "by": "lproven",
+          "text": "This really cheered up my morning. Mike Harrison is very much not the first Booker-prize winner I have read by a long long chalk. I was reading Booker nominees during my English Literative 'A' level in the early 1980s. But he's the first I've been to sci-fi conventions with, met, heard speak, probably had a beer with... Congrats, Mike!"
+        }
+      ],
+      "image": "https://i.guim.co.uk/img/media/f88eb30da8765416e5de2380d70ed0056788cab0/691_0_6776_5421/master/6776.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=b6b46f05da72b59cef6ac1bfe8fd0f1d"
+    },
+    {
+      "id": 50449275,
+      "url": "https://www.science.org/content/article/deter-bioterrorism-u-s-imposes-new-rules-ordering-synthetic-dna",
+      "hn": "https://news.ycombinator.com/item?id=50449275",
+      "title": "To deter bioterrorism, U.S. imposes new rules on ordering synthetic DNA",
+      "time": 1794365828,
+      "points": 153,
+      "depth": [
+        {
+          "text": "the U.S. is adding **new rules** for ordering **synthetic DNA** to deter bioterrorism",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter says the policy screens only sequences **50 base pairs** or longer; they warn smaller fragments could come from multiple suppliers, while Esvelt says his algorithm can screen down to **30 base pairs**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some call it a pretty great policy despite a major gap; others call it useless security theater and say it burdens real research.",
+      "comment_count": 148,
+      "terms": [
+        "synthetic DNA",
+        "bioterrorism",
+        "base pair",
+        "oligonucleotide (oligo)",
+        "phosphoramidite synthesis",
+        "enzyme"
+      ],
+      "entities": [
+        "Esvelt",
+        "Sigma",
+        "IDT"
+      ],
+      "comments": [
+        {
+          "by": "whatever1",
+          "text": "Why is everyone spooked by ai driven bioterrorism ? Like all of our water supplies are much easier to mess with compared to developing a virus or whatever that may or may not work"
+        },
+        {
+          "by": "the__alchemist",
+          "text": ">Those vendors must verify their customers’ identities and screen orders for potentially dangerous sequences that, for example, could encode toxins or pathogens. I'd assumed they already do this, and if you order Smallpox primers or w/e from Sigma/IDT you get a visit? I have a home lab; wonder if there will be practical effects. Also have a personal project where I'm exploring enzymatic oligo…"
+        },
+        {
+          "by": "AnotherGoodName",
+          "text": "I'm curious if this is related to some things the top AI models are uncovering. We know we don't get to see the bio side of the top models. They're out there solving hard maths problems etc but a query with the word 'microbes' in it often kicks you back to a smaller model automatically. Are the bleeding edge models finding something scary enough that can be done with synthetic DNA that it needs…"
+        },
+        {
+          "by": "gr-mk",
+          "text": "This might impact me and a small handful of other people who have messing around with microbes in their apartment as a hobby. We'll see what happens."
+        },
+        {
+          "by": "__MatrixMan__",
+          "text": "The device used to make oligonucleotides is pretty much an inkjet printer, from there it's cleverly applied enzymes to assemble the full strand. If you've got the skills and determination to get the synthetic DNA into a functioning cell, I don't think limiting access to synthetic DNA in the first place is going to stop you."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50445013,
+      "url": "https://alexwang.ai/posts/reasoning-as-pathfinding/",
+      "hn": "https://news.ycombinator.com/item?id=50445013",
+      "title": "What objective is reasoning solving?",
+      "time": 1794338714,
+      "points": 153,
+      "depth": [
+        {
+          "text": "the post says **AI reasoning** works by finding **successful answer paths**, not by thinking longer",
+          "tier": "simple"
+        },
+        {
+          "text": "RL raises the chance of a correct answer by **searching for successful paths**, then **training the model to reproduce them**. A single chain can still fail, and a **faulty verifier** can reward shortcuts.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 74,
+      "terms": [
+        "RL",
+        "verifier",
+        "reward hacking",
+        "best-of-k sampling",
+        "amortizing search",
+        "chain of thought"
+      ],
+      "entities": [
+        "Alex Wang",
+        "STaR",
+        "REINFORCE",
+        "AlphaZero",
+        "Brown et al.",
+        "Muennighoff et al.",
+        "Gema et al.",
+        "Cartesia",
+        "HNets",
+        "Muse"
+      ],
+      "comments": [
+        {
+          "by": "derefr",
+          "text": "It solves for the same thing a \"train of thought\" (internal vocalization) solves for in the human brain: there's a lot of stuff you \"know\" as episodic memories of words you've heard/read, but haven't yet internalized via practice into reflex reactions. It's a lot faster and cheaper to acquire a memory of some words, than it is to acquire an entire new skill, so you end up picking up far more…"
+        },
+        {
+          "by": "htrp",
+          "text": ">I'm a researcher based in San Francisco. I like to imagine where the world is headed, and what it takes to get there. >I did my PhD in computer science at Stanford, where I designed long-context architectures for sequence modeling and memory. Before that, I studied math & physics at Cornell. Most recently, I was a research scientist at Cartesia, working on in-context tokenization and novel…"
+        },
+        {
+          "by": "piker",
+          "text": "> Consider the problem: “what’s 1 +2 +3 +⋯ +10”? One solution is to add the numbers one at a time: 1, 3, 6, 10, and so on up to 55. Another way is to pair them from the outside in: 1 +10, 2 +9, 3 +8, 4 +7 and 5 +6 each make 11, and five pairs of 11 make 55. Both of these paths land on the correct answer, 55. Watching my son work through difficult math problems has forced me into this realization…"
+        },
+        {
+          "by": "vova_hn2",
+          "text": "I'm pretty sure that the current approach of baking in chain-of-thought reasoning into weights is not the end of the line. It just seems to accidental and ad-hoc. P. S. The animated bird is truly magical!"
+        },
+        {
+          "by": "Shacharp",
+          "text": "Would be even better if an epistemic framework were available for the model to follow. We don’t expect our language centers to do executive function. An arbitrarily long chain of thought isn’t gonna make the model suddenly have grounding."
+        }
+      ],
+      "image": "https://alexwang.ai/images/share-card_hu_829bd88f1595308b.jpg"
+    },
+    {
+      "id": 50441338,
+      "url": "https://stoppels.ch/2026/11/07/the-hardest-tarball.html",
+      "hn": "https://news.ycombinator.com/item?id=50441338",
+      "title": "The Hardest Tarball?",
+      "time": 1794322839,
+      "points": 152,
+      "depth": [
+        {
+          "text": "someone made a **tar archive** that different tools unpack in **wildly different ways**",
+          "tier": "simple"
+        },
+        {
+          "text": "The archive repeats `file`, then gives its **hard link** the name café and a pax header size of **512 bytes**—the size of a tar header. GNU tar and several tools ignore that size, but macOS’s system tar writes the bytes into the hard link; other extractors produce **different results**.",
+          "tier": "substance",
+          "data": [
+            [
+              "pax header size",
+              "512 bytes"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say rejecting the archive is safest; others prefer extracting what can be recovered, with warnings and caveats.",
+      "comment_count": 33,
+      "terms": [
+        "tarball",
+        "hard link",
+        "pax header",
+        "POSIX"
+      ],
+      "entities": [
+        "Harmen Stoppels",
+        "GNU tar",
+        "BusyBox",
+        "Python",
+        "Go",
+        "Perl",
+        "macOS",
+        "7-Zip",
+        "node-tar",
+        "tar-fs",
+        "Rust",
+        "astral-tokio-tar",
+        "bsdtar",
+        "R",
+        "Haskell",
+        "NET",
+        "Julia",
+        "uv",
+        "tar-codec",
+        "haampie/tar-minefield",
+        "POSIX",
+        "pax",
+        "SBOM",
+        "Linux",
+        "NTFS",
+        "HFS+",
+        "USTAR",
+        "BCD",
+        "cpio",
+        "UNIX",
+        "Wikipedia",
+        "JSON",
+        "Debian",
+        "libarchive",
+        "BSD"
+      ],
+      "comments": [
+        {
+          "by": "Joker_vD",
+          "text": "> Now, POSIX says that data blocks for a hard link “may be included” in pax archives, but the implications of this are not entirely clear. How so? If the data blocks are included, then those are the intended content of the file behind that hard link. They should overwrite the previous content of the file. > So the 512 bytes after the hard link are its data, and not the header of empty as we…"
+        },
+        {
+          "by": "bartvk",
+          "text": "This guy, what a hero. He even included a little graphic to show how this \"hardest tarball\" looks like. At the bottom, there's a link to much more edge cases. It reminds me of this beauty: \"Parsing JSON is a Minefield\"\nhttps://news.ycombinator.com/item?id=16897061"
+        },
+        {
+          "by": "molticrystal",
+          "text": ">NET, Julia and uv's tar-codec - These implementations reject the tarball. I believe this is the best thing you can do, even if it's technically not POSIX-compliant. While this is the safest choice, it is the least helpful, I would always prefer to get something out of an archive then nothing. Damage/irregularity to an archive shouldn't prevent data inspection, just a warning and a way to fall…"
+        },
+        {
+          "by": "JdeBP",
+          "text": "There's a prominent tar implementation missing. paxmirabilis is tar, cpio, and pax all in one, as a multiple-call binary. It's what one gets as pax in Debian, in fact. * https://mbsd.evolvis.org/pax.htm * https://manpages.debian.org/trixie/pax/index.html No, it's not libarchive's bsdtar. There's more than 1 tar in the BSD world."
+        },
+        {
+          "by": "rmast",
+          "text": "I’ve been working on an open source tool for creating SBOMs from binaries/file systems. Automated extraction of archives like zip/tar files present interesting challenges - for a while I’ve known about OS filesystem formatting gotchas like archives from a Linux-based system with symlinks or case colliding names not extracting correctly on NTFS (and HFS+ for the latter case). But the ambiguity of…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50435898,
+      "url": "https://www.ultorg.com/",
+      "hn": "https://news.ycombinator.com/item?id=50435898",
+      "title": "Ultorg: The User Interface for Relational Databases",
+      "time": 1794283179,
+      "points": 152,
+      "depth": [
+        {
+          "text": "someone built a **spreadsheet-like app** for exploring and editing **connected database tables** without writing code",
+          "tier": "simple"
+        },
+        {
+          "text": "Ultorg lists **Oracle, Snowflake, SQLite, Athena, and Exasol** as **beta connections**. It visualizes **one-to-many relationships** and lets people review edits before committing them.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: fans praise the interface; critics like the idea but object to its proprietary terms and subscription price.",
+      "comment_count": 62,
+      "terms": [
+        "relational database",
+        "SQL",
+        "join",
+        "one-to-many relationship",
+        "CRUD",
+        "proprietary software"
+      ],
+      "entities": [
+        "Ultorg",
+        "Eirik Bakke",
+        "Mathias Breistein",
+        "Tudor Achim",
+        "Harmonic",
+        "Microsoft Access",
+        "Microsoft Excel",
+        "Oracle",
+        "Snowflake",
+        "SQLite",
+        "Athena",
+        "Exasol",
+        "Google Sheets",
+        "MacOS",
+        "Windows",
+        "Linux",
+        "MusicBrainz",
+        "DataGrip",
+        "JetBrains",
+        "SIEUFERD",
+        "SIUEFERD",
+        "LINQPad",
+        "C#",
+        "Entity Framework",
+        "Salesforce",
+        "metabase",
+        "Lotus Improv",
+        "SQL"
+      ],
+      "comments": [
+        {
+          "by": "rsyring",
+          "text": "> From September 2026, Mathias Breistein has taken over as CEO, with a focus on new customer acquisition Mathias, if you are here and listening, I'm interested but $35 / month is the wrong price point for this. $420 for year. I can buy DataGrip for $261 for three years and it has a perpetual fallback license that would let me pay for the first year and then stop and just not get updates. IMO, to…"
+        },
+        {
+          "by": "kragen",
+          "text": "Eirik Bakke's Ultorg (SIEUFERD) is amazing and inspirational research, and I'm glad to see that it's finally available to the public after 17 years. It's one of those things that really makes you sit up and take notice of how much better our everyday software could have been. However, I wouldn't be willing to try it under proprietary-software terms. Last week, I was thinking about eliciting…"
+        },
+        {
+          "by": "Skeime",
+          "text": "I think the novel thing here, that I have not yet seen in any other database app, is the realization that normal SQL joins are not quite what you want in most cases. Often, you are interested in nested results. \"Give me all my customers with a list of their orders.\" However, when you do this with a join, you get a list of the orders with a copy of the customer information attached to each…"
+        },
+        {
+          "by": "akshayrajeshwar",
+          "text": "Previously used it and it's AMAZING given you have data stored with good practices, e.g. with unique IDs that are consistent among many databases/sheets. I found it's easier to begin with Ultorg's usecase in mind than to migrate existing files to fit its use. And I do agree with the criticisms mentioned in the thread. Ultorg is solving a lot of problems of data organisation and context awareness…"
+        },
+        {
+          "by": "NetMageSCW",
+          "text": "A small desktop app that is a subscription rubs me the wrong way."
+        }
+      ],
+      "image": "https://www.ultorg.com/images/og_image_white.png"
+    },
+    {
       "id": 50445401,
       "url": "https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-kei-truck-in-america/",
       "hn": "https://news.ycombinator.com/item?id=50445401",
@@ -1231,6 +2352,78 @@
     }
   ],
   "glossary": {
+    "lidar": "A way to measure the shape of the ground by sending out laser light and measuring what bounces back.",
+    "point cloud": "A 3D shape represented by lots of measured dots.",
+    "INAH": "National Institute of Anthropology and History: Mexico’s agency that checks archaeological records and authorizes fieldwork.",
+    "Zen of Python": "A set of short principles about how Python code should be written.",
+    "Timsort": "A method for putting items in order on a computer.",
+    "Secure Enclave": "A protected area of a Mac’s chip that can use a key without exposing the key itself.",
+    "SSH": "Secure Shell: a way to connect to another computer and send it commands over a network.",
+    "SSH agent": "A helper that lets programs ask to use your key without opening the secret key file themselves.",
+    "agent forwarding": "Letting a remote computer use a key helper on your own computer instead of copying your key onto the remote machine.",
+    "ACR": "Automatic Content Recognition: a feature that identifies what’s playing on a TV, which can be used for ads, viewing statistics, or recommendations.",
+    "telemetry": "Information a program sends back about how it is being used or whether it is working properly.",
+    "SSID": "Service Set Identifier: the name you see when you choose a Wi-Fi network.",
+    "emulator": "A program that imitates another service so you can try your software without using the real one.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "continuous integration (CI)": "Continuous Integration: automatically running checks as code changes are added.",
+    "SDK": "Software Development Kit: tools a company provides so people can make apps for its device.",
+    "embedded mode": "A way to run the emulator inside your test program rather than as a separate service.",
+    "endpoint": "A specific web address where a service can receive a request.",
+    "CRAC": "Computer Room Air Conditioner: equipment that cools rooms full of servers.",
+    "OCaml": "A programming language the author used to write a tool that checked server temperatures.",
+    "EPO": "Emergency Power Off: a control that cuts power to equipment in an emergency.",
+    "UPS": "Uninterruptible Power Supply: backup equipment that can keep devices running when mains power is interrupted.",
+    "stack pointer": "A marker that tells the processor where to put or find items in its temporary storage area.",
+    "pull/push instructions": "Commands that move data between the processor and its temporary storage area.",
+    "septet": "Here, a group of seven pieces of stored data handled as one chunk.",
+    "interrupt": "A signal that makes a computer pause its current work to handle something.",
+    "screen buffer": "Memory where the computer builds an image before showing it on screen.",
+    "unrolled loop": "Repeating the same instructions directly in the code to avoid the extra work of looping over them.",
+    "read-only": "You can look at the information, but you can’t change it or add anything.",
+    "LLMs": "Large language models: computer programs trained on lots of writing that can produce text.",
+    "voltage fault injection": "A technique that briefly lowers a chip’s supply voltage to make it behave unexpectedly.",
+    "eFuse": "A tiny fuse built into a chip; burning it changes a setting the chip reads.",
+    "HBM": "High-bandwidth memory: fast memory placed close to a processor so it can get lots of information quickly.",
+    "SM": "Streaming Multiprocessor: one of a GPU’s processing units that handles calculations.",
+    "WebGL2": "A browser feature that lets websites draw interactive 3D scenes.",
+    "forward vector": "A direction that says which way a phone or object is pointing.",
+    "world up": "The upward direction used as a reference in a virtual world.",
+    "Moirée patterns": "A wavy-looking pattern that appears when two repeated patterns overlap.",
+    "linear program": "A way to pick values that meet a list of rules while making some goal as small or large as possible.",
+    "weight-space programming": "Changing a model’s internal numbers directly to make it do a task, rather than training it in the usual way.",
+    "residual stream": "The running bundle of numbers inside a model that each layer adds to as it processes text.",
+    "steering vector": "A set of changes used to nudge a model toward or away from a kind of response.",
+    "inference": "When an AI uses what it learned to answer or act, instead of being trained.",
+    "BEAM": "The software that runs Erlang programs and handles things like their work and memory.",
+    "Erlang": "A programming language used to build large systems that need to keep running.",
+    "scheduler": "The part of a system that decides which work gets time to run.",
+    "process": "A running piece of software that can do work and send messages to other pieces.",
+    "garbage collection": "Automatic cleanup that frees memory the program is no longer using.",
+    "postapocalyptic": "A story set after a major disaster has changed the world people live in.",
+    "anti-plot": "A story that doesn't follow the usual clear chain of events leading to a conclusion.",
+    "synthetic DNA": "DNA made in a lab to match a requested design.",
+    "bioterrorism": "Using biological material to deliberately harm people.",
+    "base pair": "A matched pair of DNA building blocks; people count them to describe how long a DNA piece is.",
+    "oligonucleotide (oligo)": "A short piece of DNA that can be joined with other pieces to make a longer one.",
+    "phosphoramidite synthesis": "A chemical method for making short DNA pieces by adding building blocks.",
+    "enzyme": "A protein that helps chemical reactions happen in living things.",
+    "RL": "Reinforcement Learning: a way to teach an AI by rewarding actions that get the desired result.",
+    "verifier": "A checker that decides whether an answer counts as correct.",
+    "reward hacking": "When an AI finds a way to get a high score without doing what its designers actually wanted.",
+    "best-of-k sampling": "A method that generates several answers and looks for one that passes a checker.",
+    "amortizing search": "Searching for good answers during training so the model can use what it learned without repeating that search each time.",
+    "chain of thought": "A written-out account of an AI's reasoning; it may not show the process that actually led to its answer.",
+    "tarball": "A single archive file that packages other files together.",
+    "hard link": "A second filename for the same file, not a separate copy.",
+    "pax header": "Extra information inside a tar archive that can record details about a file.",
+    "POSIX": "Portable Operating System Interface: shared rules for how Unix-like systems behave.",
+    "relational database": "A way of storing information in linked tables, so related details can be combined.",
+    "SQL": "A language people use to ask a database for information.",
+    "join": "A database operation that combines data from multiple tables.",
+    "one-to-many relationship": "A link where one item in one table can match several items in another.",
+    "CRUD": "Create, Read, Update, Delete: basic actions an app can take on stored information.",
+    "proprietary software": "Software whose owner controls how it can be used, changed, or shared.",
     "kei truck": "A very small utility truck; the article uses the term for the KEI-01.",
     "rebadged": "A vehicle made by one company but sold under a different brand or name.",
     "CVT": "Continuously Variable Transmission: a car system that changes how engine power reaches the wheels without fixed gear steps.",
@@ -1285,7 +2478,6 @@
     "privileged helper": "A companion program that can do tasks needing more permission than the main app has.",
     "certified query": "A question asked of company data that the data team has approved for everyone to reuse.",
     "data connector": "A link that lets Claude get information from another system.",
-    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
     "SaaS": "Software as a Service: software you access over the internet, with the provider running it for you.",
     "carbon budget": "The amount of CO2 that can still be emitted before warming reaches a stated limit.",
     "land-use change": "A change in how land is used, such as deforestation.",
@@ -1293,7 +2485,6 @@
     "zero data retention (ZDR)": "Zero data retention: a promise that a service won’t keep the requests and replies sent to it.",
     "CSV": "Comma-separated values: a way to arrange data in rows, with commas separating the pieces.",
     "API key": "A secret code that lets software use an online service as an approved user.",
-    "inference": "When an AI uses what it learned to answer or act, instead of being trained.",
     "open-weight model": "A model whose trained settings are shared so other people can use them.",
     "workspace": "A saved work area that keeps a project’s files or conversations together.",
     "inference server": "A computer that runs an AI model and sends its answers to other devices or apps.",
