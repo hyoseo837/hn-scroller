@@ -1,0 +1,1318 @@
+{
+  "date": "2026-11-11",
+  "cards": [
+    {
+      "id": 50445401,
+      "url": "https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-kei-truck-in-america/",
+      "hn": "https://news.ycombinator.com/item?id=50445401",
+      "title": "Scion is back and is going to sell a kei truck in America",
+      "time": 1794340246,
+      "points": 436,
+      "depth": [
+        {
+          "text": "Toyota is bringing **Scion back** with a **kei truck** meant for slow, local work",
+          "tier": "simple"
+        },
+        {
+          "text": "The **KEI-01** is a rebadged Toyota Pixis, itself a rebadged Daihatsu Hijet Jumbo Cab; it has a 660cc engine, tops out below 25 mph, and is only legal on roads posted below 35 mph. Toyota says it will start with a **low-volume fleet pilot** in late 2027.",
+          "tier": "substance",
+          "data": [
+            [
+              "engine",
+              "660cc"
+            ],
+            [
+              "top speed",
+              "less than 25mph"
+            ],
+            [
+              "road speed limit",
+              "less than 35mph"
+            ],
+            [
+              "payload",
+              "600-pound"
+            ],
+            [
+              "pilot begins",
+              "late 2027"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say the 25 mph cap makes it impractical for commuting and errands; others say the truck is useful for farms, golf courses, resorts, or local hauling.",
+      "comment_count": 293,
+      "terms": [
+        "kei truck",
+        "rebadged",
+        "CVT",
+        "4WD",
+        "payload",
+        "low-speed vehicle"
+      ],
+      "entities": [
+        "Toyota",
+        "Scion",
+        "KEI-01",
+        "Toyota Pixis",
+        "Daihatsu Hijet Jumbo Cab",
+        "SxS Concept",
+        "BXE Concept",
+        "Tacoma",
+        "The Autopian",
+        "Leslie Hanna",
+        "Telo Truck",
+        "mutiny.fm"
+      ],
+      "comments": [
+        {
+          "by": "freetime2",
+          "text": "I use a kei truck for farming. They are incredibly pragmatic little vehicles. They are very capable driving around on dirt/gravel agricultural roads with 4WD, and they are inexpensive and robust enough that you can really beat them up and use them as a tool without worry. Repairs and replacement parts are ubiquitous and inexpensive. Having the sides of bed fold down is also really useful. They…"
+        },
+        {
+          "by": "ilamont",
+          "text": "25 mph works for golf courses, resort, or island use. In rural areas on the mainland, roads connecting towns often have 45 or 55 mph speed limits so unless you plan on staying on the farm I don't think these are practical for trips to go shopping, dumping, hauling, etc. As for the imports, I saw one of these 90s-era right-hand drive kei trucks at a parking lot a few months ago and talked with the…"
+        },
+        {
+          "by": "6DM",
+          "text": "With a built in 25mph limiter, that eliminates \"city\" driving too unfortunately. Most roads around me are 35 mph. There's sizeable demand for people who want to be able to do runs to the bigbox stores for garden and DIY renovation supplies and store it the rest of the time."
+        },
+        {
+          "by": "classictraffic",
+          "text": "This would have been an instant buy for me if it weren't for the 25mph limit. That being said, I'm extremely excited by this, because it proves there is demand for Kei trucks in the US. I've done a lot of research into the import process for bringing a truck over from Japan, and I'll likely end up going that route in a year or so unless newer trucks with higher speeds get announced"
+        },
+        {
+          "by": "erickhill",
+          "text": "660cc engine at ~40 horsepower is about the same as a mid-70s VW Beetle - not in cc size, but HP potential. This little truck could do a lot more than 25 mph if it were allowed to do so. Not saying that would be safe, and I'd not want to ever put one on a busy freeway, but for getting around most urban cities in the US it's fine as-is but would be even better if the limit was ~40 mph."
+        }
+      ],
+      "image": "https://images-stag.jazelc.com/uploads/theautopian-m2en/20261110110448/ScionByToyota_Family_TS3.jpg"
+    },
+    {
+      "id": 50447074,
+      "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
+      "hn": "https://news.ycombinator.com/item?id=50447074",
+      "title": "Tracking Anthropic-discovered vulnerabilities",
+      "time": 1794349076,
+      "points": 382,
+      "depth": [
+        {
+          "text": "someone tracked **Anthropic's vulnerability reports** and found **many more findings than fixes**, sparking debate over their value",
+          "tier": "simple"
+        },
+        {
+          "text": "VulnCheck says it tracked **442 CVEs attributed to Anthropic**; Anthropic's ledger listed 37,966 findings, only 7,349 public and **217 marked fixed**. In curl's batch, **19 of 34** published reports were marked not a vulnerability. Commenters argued that public open-source numbers may miss proprietary findings or bugs patched before exploitation.",
+          "tier": "substance",
+          "data": [
+            [
+              "CVEs tracked by VulnCheck and attributed to Anthropic",
+              "442"
+            ],
+            [
+              "findings listed in Anthropic's ledger",
+              "37,966"
+            ],
+            [
+              "ledger findings made public",
+              "7,349"
+            ],
+            [
+              "ledger findings marked fixed",
+              "217"
+            ],
+            [
+              "curl reports marked not a vulnerability",
+              "19"
+            ],
+            [
+              "curl reports published",
+              "34"
+            ]
+          ]
+        }
+      ],
+      "camps": "Some say the OSS results show weak validation and too much work for maintainers; others say the public figures miss private-code findings and bugs patched before exploitation.",
+      "comment_count": 177,
+      "terms": [
+        "CVE",
+        "OSS",
+        "true positive rate",
+        "triage"
+      ],
+      "entities": [
+        "Anthropic",
+        "VulnCheck",
+        "Project Glasswing",
+        "curl",
+        "Daniel Stenberg",
+        "OSS Scanner",
+        "Claude",
+        "Mythos"
+      ],
+      "comments": [
+        {
+          "by": "pizlonator",
+          "text": "I received 9 reports of Fil-C issues from Anthropic All of them were real bugs. None of them were false positives. The quality of the reports was exceptional. (My baseline is doing security defense on a browser engine, so my baseline has a large sample count and is probably representative of what experts are capable of.) The quality of the proposed fixes was alright. I took some of the fixes…"
+        },
+        {
+          "by": "enthuseyourcurb",
+          "text": "As someone working at a bigtech co that has spent every single working day (and many weekends) since the launch of Mythos patching serious, company-ending type of security issues, these types of posts really irk me. Public datasets of CVEs being underwhelming doesn't mean much if all of the issues are in private company codebases that will never get a CVE number assigned and will never get a…"
+        },
+        {
+          "by": "snowwrestler",
+          "text": "The PHP2Shell vulnerability ended up being paradoxically comforting for me. They turned frontier models loose on PHP, and the big one they found was based on a previously known logic flaw that was extremely difficult to exploit. Which makes sense: hence the need for frontier models. And in the wild, while there have been many attempts and a few simple demo successes, the practical impact has…"
+        },
+        {
+          "by": "rurcliped",
+          "text": "The blog is misleading because it tries to characterize Project Glasswing's effectiveness through use of a tangentially related data source. A Project Glasswing vulnerability discovery most often occurs when a Glasswing partner points a Mythos-class model at its own, often proprietary, software. The data source (aka \"ledger\") is only for the Anthropic coordinated vulnerability disclosure program…"
+        },
+        {
+          "by": "dfee",
+          "text": "There's an anecdote about curl, but I'm not sure if there's enough in here to draw conclusions from. 20% of vulnerabilities have been made public, and many of those are marked as \"withdrawn\" or \"duplicates\". However, it's unclear whether the remaining 80% have not been made public because they're not fixed or real. In other words, this is analysis of survivors (public); not much can be said about…"
+        }
+      ],
+      "image": "https://www.vulncheck.com/_og/s/o_6eba28d38c5a4083.png"
+    },
+    {
+      "id": 50444129,
+      "url": "https://starlink.com/mini-2",
+      "hn": "https://news.ycombinator.com/item?id=50444129",
+      "title": "Starlink Mini 2",
+      "time": 1794334952,
+      "points": 369,
+      "depth": [
+        {
+          "text": "Starlink Mini 2 adds a **removable battery** and **USB-C**, but **roaming limits** still frustrate travelers",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says the launch appears to require buying it with a bundled **1 year subscription** for **$999**. Travelers say the 100GB and 300GB subscriptions no longer work internationally, while unlimited service is limited to **30 days** before returning to the home region.",
+          "tier": "substance",
+          "data": [
+            [
+              "bundle price",
+              "$999"
+            ],
+            [
+              "international-use limit",
+              "30 days"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say it makes remote work and industries far more practical; others say internet in the wild defeats the point of getting away.",
+      "comment_count": 380,
+      "terms": [
+        "B2B",
+        "IoT",
+        "static IP",
+        "NAT"
+      ],
+      "entities": [
+        "Starlink Mini 2",
+        "Starlink Mini",
+        "Starlink",
+        "SpaceX",
+        "iMessage",
+        "Western States",
+        "UTMB",
+        "Javalina Jundred"
+      ],
+      "comments": [
+        {
+          "by": "sib",
+          "text": "We bought a Starlink Mini for the use case of frequent travel to far-off (international) places with limited mobile service, where we occasionally need to get online for high-priority work tasks or meetings. For $55 / month for 100GB and flexible usage in many countries, it was extremely useful. Then, recently, SpaceX changed the terms such that the 100GB and 300GB subscriptions are no longer…"
+        },
+        {
+          "by": "rmm",
+          "text": "This has completely changed my industry (hard rock mining). A lot of the time drillers would be in the middle of nowhere looking for resources and would be sometimes days away from providing results (which also lead to lots of dodgy situations where drillers would know some results before market…) now it’s instant live feed. It’s made revising drilling plans trivial. Very cool"
+        },
+        {
+          "by": "cwt137",
+          "text": "Recently, I've been watching ultramarathon races (Western States, UTMB, Javalina Jundred, etc.) live online. All of them have been doing live video shots of the race leaders with a camera man on a mountain bike using a Starlink Mini on the back (with networking gear and batteries in a backpack). This new Starlink Mini 2 will be a more compact solution for the cameraman and possibly give the…"
+        },
+        {
+          "by": "artdigital",
+          "text": "I wanted to get one so bad because I’m a very frequent travelled and the idea of Starlink sounded so interesting I just checked a few weeks ago and “Roam” does no longer include international coverage at all. Only “Roam unlimited” does, and only for 30 days at a time which entirely defeats the purpose for me. Also no way to replenish this quota or buy additional, you have to go back to your…"
+        },
+        {
+          "by": "noodlesUK",
+          "text": "I want so badly for starlink to offer a sensible well priced self-service B2B offering with fleet management. Any kind of fixed, high bandwidth IoT device that currently has a SIM card could easily use a starlink. As it stands SMBs who want this have to screw around with residential starlink and live in fear that they’ll get banned."
+        }
+      ],
+      "image": "https://starlink.com/assets-new/images/landing/field/v4_night_sky.webp"
+    },
+    {
+      "id": 50443824,
+      "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
+      "hn": "https://news.ycombinator.com/item?id=50443824",
+      "title": "Synaptics patent claims stop work on DisplayLink drivers",
+      "time": 1794333722,
+      "points": 361,
+      "depth": [
+        {
+          "text": "Synaptics used **patent threats** to stop a developer from building **Linux support** for its docks",
+          "tier": "simple"
+        },
+        {
+          "text": "Synaptics sent Mike Lothian a cease-and-desist letter over his Rust-based Vino driver; its first letter listed **125 patents** without saying which his work allegedly infringed. The company later demanded **US$25,000**, rising by $25,000 each week. OIN said codecs weren’t covered by its protections; Lothian took down the repository and said Vino would **stay local**.",
+          "tier": "substance",
+          "data": [
+            [
+              "patents listed",
+              "125"
+            ],
+            [
+              "initial monetary demand",
+              "US$25,000"
+            ],
+            [
+              "weekly increase",
+              "$25,000"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say OIN should use its patent portfolio to deter threats against Linux contributors; others say its protections are limited and have little practical force.",
+      "comment_count": 214,
+      "terms": [
+        "cease-and-desist letter",
+        "codec",
+        "OIN",
+        "clean-room implementation",
+        "claim chart"
+      ],
+      "entities": [
+        "Synaptics",
+        "Mike Lothian",
+        "Vino",
+        "Rust",
+        "Linux",
+        "DisplayLink",
+        "OIN"
+      ],
+      "comments": [
+        {
+          "by": "AdmiralAsshat",
+          "text": "> If you fail to comply with our demands by the specified deadline, Synaptics will seek monetary\ncompensation from you in the amount of US$25,000 to recoup the costs and effort required to\ncreate the attached documentation of your infringing acts. Obviously this is intended as a scare tactic, but, surely that could never hold up in court? Surely the burden of proof is on the owner of the patents…"
+        },
+        {
+          "by": "kieranl",
+          "text": "DisplayLink is dying due to high DDR prices. Dock companies are cancelling their display link portfolios due to the unfavorable economics. Good riddance if this is how OSS is treated by synaptics. Most recent thunderbolt docks and usb4 docks have good display support, and fallback to DisplayPort alt mode if the host does not support tbt4. Which is much better supported over type-c. Intel and AMD…"
+        },
+        {
+          "by": "monegator",
+          "text": "Years ago, when i was migrating my dell work laptop to debian, i had the same problem: we had many dell docking stations and they all used displaylink. I was pretty quick about it: they are now useless bricks. We live in the golden age of USB-C + DP alt mode: USB C to the monitor, and that provides power, connection, video, monitor connects to a 30 euro docking with many USB, gigabit ethernet…"
+        },
+        {
+          "by": "hnlmorg",
+          "text": "> I will also be sending to you our demand for substantial monetary compensation to recoup the cost and effort required to create such documentation of your infringing acts. There is no universe in which this is a reasonable response."
+        },
+        {
+          "by": "xxpor",
+          "text": "I didn't think reverse engineering itself was a violation of a patent? The entire point of a patent is the public disclosure of the mechanism of an invention for the exclusive right to market that invention. Therefore arguing that reverse engineering is a violation of a patent is definitionally incorrect. They should be arguing it's a violation of trade secrets. Of course, they'd lose on that…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50443427,
+      "url": "https://blog.val.town/winding-down",
+      "hn": "https://news.ycombinator.com/item?id=50443427",
+      "title": "Val Town is winding down",
+      "time": 1794331874,
+      "points": 359,
+      "depth": [
+        {
+          "text": "Val Town is **winding down**, and the team is helping users **move their projects elsewhere**",
+          "tier": "simple"
+        },
+        {
+          "text": "The team says it **couldn’t compete** in cloud computing, but points users to migration guides and other hosting providers. Billing is paused, and existing subscriptions will keep running for free; annual-plan customers will get **partial refunds**. Read-only mode begins Dec 10, 2026, other services end Jan 10, 2027, and Val Town is set to become **open-source** Feb 1, 2027.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 92,
+      "terms": [
+        "cloud computing",
+        "read-only mode",
+        "open-source"
+      ],
+      "entities": [
+        "Val Town",
+        "Cloudflare",
+        "Vercel",
+        "Netlify",
+        "Render"
+      ],
+      "comments": [
+        {
+          "by": "cmontella",
+          "text": "I remember Steve from my days working on Eve, he was part of that community and always a big proponent of end-user programming. I was happy to see him working on this project but am not surprised it's shutting down. Nothing to to do with the quality of Val Town, but making a business in this space is really, really hard. You can't start the business without raising millions (Eve raised $2M…"
+        },
+        {
+          "by": "jrmann100",
+          "text": "Not mentioned directly in the blog post, but Val Town was fundamentally organized around the Deno runtime, whose team will stop maintaining it next year after joining Cloudflare [0]. [0] https://deno.com/blog/cloudflare"
+        },
+        {
+          "by": "yakkomajuri",
+          "text": "This is sad. We're in a similar space as Val Town (which technically made us competitors) but I've always appreciated the care they had for the craft and the values they drove forward as a company like their transparency (even their investor updates were public). Steve and Tom also individually have some of the best blogs out on the web. I wish them all the best with whatever comes next. I'm…"
+        },
+        {
+          "by": "Zambyte",
+          "text": "It seems like everyone here knows what this is but me. I went to their homepage and I still can't tell what this is. How is this different from just giving your agent access to one of the many hosting services CLIs / MCPs? Did they just pioneer that?"
+        },
+        {
+          "by": "simonw",
+          "text": "I'm really sad about this. Val Town is a beautiful collection of ideas, but I get how building a sustainable business on top of those ideas (not-quite commodity hosting, since people need to commit to the Val way of building) is extremely hard. I'm definitely looking forward to seeing the code in February when they open source it."
+        }
+      ],
+      "image": "https://valdottown--01a1c636170f75bd955ad39917dccd9e.web.val.run/images/winding-down-bird-24619313141.jpg"
+    },
+    {
+      "id": 50443812,
+      "url": "https://github.com/GoogleChrome/modern-web-guidance",
+      "hn": "https://news.ycombinator.com/item?id=50443812",
+      "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+      "time": 1794333675,
+      "points": 336,
+      "depth": [
+        {
+          "text": "someone is teaching coding agents to use **modern browser features** instead of **old JavaScript patterns**",
+          "tier": "simple"
+        },
+        {
+          "text": "The Chrome project, working with Firefox, MDN, and Edge, ships **200+ curated guides** and a **legacy scan** for old patterns. In tests across 200 tasks, agent pass rates went from **55% to 92%** with the skill.",
+          "tier": "substance",
+          "data": [
+            [
+              "guides",
+              "200+"
+            ],
+            [
+              "tasks",
+              "200"
+            ],
+            [
+              "unguided pass rate",
+              "55%"
+            ],
+            [
+              "guided pass rate",
+              "92%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters call it useful for modernizing agent-written code; critics want compatible code and worry about Chrome-led monoculture.",
+      "comment_count": 101,
+      "terms": [
+        "RAG",
+        "MCP",
+        "AST",
+        "legacy-scan"
+      ],
+      "entities": [
+        "Chrome",
+        "Firefox",
+        "MDN",
+        "Edge",
+        "modern-web-guidance",
+        "Codex",
+        "Claude",
+        "agy",
+        "Playwright"
+      ],
+      "comments": [
+        {
+          "by": "surround",
+          "text": "Here's a list of browser features the skills will tell your agent to use that are stable in Chrome but not supported by Firefox and Safari: CSS @function\nCSS calc-size()\nCSS interpolate-size\nCSS corner-shape\nCSS border-shape\nCSS flex-wrap: balance\nCSS text-fit\nCSS text-decoration-skip-spaces\nCSS scroll-axis-lock\nCSS scroll-target-group\nCSS :target-current\nCSS scroll-initial-target\nCSS container…"
+        },
+        {
+          "by": "simonw",
+          "text": "Distribution suggestion: in addition to the npm packages you have right now, set up GitHub Pages to publish a markdown index document of the skills at https://googlechrome.github.io/modern-web-guidance-src/skill... (currently a 404) That index page should link to plain markdown versions of all of the documents, and should be designed for search with grep to find the right answers. That way I…"
+        },
+        {
+          "by": "advisedwang",
+          "text": "Chrome already has too much power in the browser standards world. The last thing we need is everyone's LLMs to follow Chrome team's guidance on how to do web development. This road leads back to \"To view this site, please view in [DOMINANT BROWSER]\""
+        },
+        {
+          "by": "bakkoting",
+          "text": "> If you spot something wrong or weird, give us a holler! But how? Hopefully filing an issue on the modern-web-guidance-src repo is the right place? Anyway I filed one for using fromBase64 and toBase64 instead of atob and btoa. But since you're all in on agents anyway you should consider having one look through at least all of the JS, DOM, and HTML spec commits in the last 3-5 years and…"
+        },
+        {
+          "by": "chalmovsky",
+          "text": "Amazing! I'm just writing an article about how Alex Russell's quote about 'React being a legacy technology' got, unfortunately, totally ignored. And now this just fell in my lap! Some of the arguments I wanted to make seem to be provide here. Didn't have a chance to take a proper look at it, but it looks very promising and nice! Thank you!"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50438480,
+      "url": "https://www.theatlantic.com/magazine/2026/12/location-tracking-apps-parental-surveillance/689031/",
+      "hn": "https://news.ycombinator.com/item?id=50438480",
+      "title": "What constant surveillance is doing to children and parents",
+      "time": 1794307638,
+      "points": 238,
+      "depth": [
+        {
+          "text": "parents are tracking kids so closely that it’s raising questions about **privacy** and **independence**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says relatives tracked their kids through high school, college and into their **late 20s**. Another parent appreciates checking a teen’s location for **pickups**, while one warns kids may **ditch the phone** to avoid being tracked.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say location checks can help with safety or pickups; others say constant tracking eats into privacy and independence.",
+      "comment_count": 263,
+      "terms": [
+        "latchkey kid",
+        "surveillance capitalism",
+        "data broker"
+      ],
+      "entities": [
+        "Life360",
+        "Kiddyzoom",
+        "Owlet"
+      ],
+      "comments": [
+        {
+          "by": "conductr",
+          "text": "As a free roaming latchkey kid, the Life360 stuff is so bizarre to me. I have some family that tracked their kids in high school, then college, then it has continued into their late 20s now. The way they talk about their normal mom-kid dynamics are so strange. Mom constantly checking in, on a drive and stop to use the restroom, mom assumes it’s a flat tire or whatever and has to check in. Stuff…"
+        },
+        {
+          "by": "28304283409234",
+          "text": "Kids now teens. We never had a tv. Only let them watch dvd on laptop. Never allowed them on tiktok. Never gave them surveillance watches (kiddyzoom). I also did not have whatsapp, or even carried my phone half of the time. They hated us for it. Other parents called us crazy. “They should learn how to handle social media!” And now their kids are unmanageable and ours thank us for shielding them."
+        },
+        {
+          "by": "james_marks",
+          "text": "Once the kids realize their parents are tracking their location with the phone, the answer is easy: ditch the phone. So now they are out in the world, in potentially dangerous situations, without a way to call for help, lookup a map, get a ride, etc. We were always clear with our kids: We're not tracking you, we trust you, and you can call us for help without getting in trouble. You can tell them…"
+        },
+        {
+          "by": "trashb",
+          "text": "Privacy is dead and it started in the cradle. The thing is the parents normalizing this kind of intrusion of privacy think they are in the right while creating a very dangerous world. Even things like going through your kids rooms (yes even when they live at home) is a huge privacy violation. No wonder the \"but think of the kids\" argument is so effective, we all grew up being propagandized by or…"
+        },
+        {
+          "by": "autoexec",
+          "text": "What worries me are the impacts of constant surveillance that we can't see. What does it mean when every child gets assigned into various buckets like \"smart/stupid\", \"constantly late\", \"impulsive\", \"has few fiends\", etc by companies who are constantly tracking their grades and test scores in every subject as they age, along with their location and social networks and online habits. What happens…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50441518,
+      "url": "https://tinyvalencia.com/",
+      "hn": "https://news.ycombinator.com/item?id=50441518",
+      "title": "Show HN: Valencia, Spain in Sim City/Isometric View",
+      "time": 1794323536,
+      "points": 225,
+      "depth": [
+        {
+          "text": "someone made a **pixel-art-style map** of València, with real buildings in an **isometric view**",
+          "tier": "simple"
+        },
+        {
+          "text": "The map starts with **real 3D city data** rendered from a fixed isometric camera; a trained image model then **repaints it tile by tile**, with each tile continuing its painted neighbours. It covers the **whole municipal term** except a few small huerta exclaves with no 3D imagery to paint from.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: the project calls it pixel art; one commenter says it may be diffusion art, not pixel art.",
+      "comment_count": 55,
+      "terms": [
+        "isometric view",
+        "pixel art",
+        "diffusion-art",
+        "GPU",
+        "municipal term"
+      ],
+      "entities": [
+        "Tiny València",
+        "SimCity",
+        "Isometric NYC",
+        "OpenStreetMap",
+        "Dirección General del Catastro",
+        "IGN",
+        "Google",
+        "Cesium ion",
+        "Patreon",
+        "Qwen Image Edit"
+      ],
+      "comments": [
+        {
+          "by": "vunderba",
+          "text": "> An image model trained on a hand-picked pixel-art style then repaints it, tile by tile, each tile continuing its painted neighbours so the city stays seamless. Nice work. The developer of Isometric NYC did something similar - creating a fine-tune of the Qwen Image Edit model. I'd be curious to hear more detail about the image model you used. (the base checkpoint, LoRAs, etc)."
+        },
+        {
+          "by": "freakynit",
+          "text": "I wish we all (many who have built similar projects in past few weeks) could agree on some common format of representing such maps, and then be able to drive through these in 3D..."
+        },
+        {
+          "by": "akfanta",
+          "text": "As someone who's only familiar with Valencia on Google Maps, I found the default orientation very confusing. Is it possible to configure it so that north always points upwards?"
+        },
+        {
+          "by": "NikolaNovak",
+          "text": "1. Awesome! 2. I read the info, but I'm incredibly curious for more detail about the pipeline, in particular how much manual work was done, and can this be generalized to other locations? :)"
+        },
+        {
+          "by": "larodi",
+          "text": "It is incorrect to name this pixelart. Perhaps diffusion-art. I wouldn’t go so far as to call it \"slopart\"—that would be derogatory. First, it has very little in common with the process of creation of actual pixelart imagery, as all here on the map is blurred, no pixels are clearly distinguishable. Second of all, pixelart is something ppl intent-fully create one layer at a time, very often - one…"
+        }
+      ],
+      "image": "https://tinyvalencia.com/share.jpg"
+    },
+    {
+      "id": 50443090,
+      "url": "https://chipsandcheese.com/p/amds-zen-6-family-feeding-the-beast",
+      "hn": "https://news.ycombinator.com/item?id=50443090",
+      "title": "AMD's Zen 6 Family: Feeding the Beast",
+      "time": 1794330152,
+      "points": 219,
+      "depth": [
+        {
+          "text": "AMD is giving its next CPUs **two core designs**: one tuned for **high clocks**, one for memory delays",
+          "tier": "simple"
+        },
+        {
+          "text": "Zen 6c gets **larger out-of-order structures** than Zen 6: its reorder buffer grows from 576 to 640 entries, and its load queue from 280 to 330. Its 32-core CCD has **128 MB of L3 cache**, versus 48 MB in Zen 6's 12-core CCD. At a matched 4.1 GHz, Zen 6c is about **6.7% ahead per clock** in integer performance and 4% in floating point.",
+          "tier": "substance",
+          "data": [
+            [
+              "reorder buffer entries (Zen 6 → Zen 6c)",
+              "576 → 640"
+            ],
+            [
+              "load queue entries (Zen 6 → Zen 6c)",
+              "280 → 330"
+            ],
+            [
+              "L3 cache (12-core Zen 6 CCD → 32-core Zen 6c CCD)",
+              "48 MB → 128 MB"
+            ],
+            [
+              "Zen 6c lead at matched 4.1 GHz",
+              "6.7% integer; 4% floating point"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 85,
+      "terms": [
+        "out-of-order structures",
+        "CCD",
+        "L3 cache",
+        "branch predictor",
+        "memory latency",
+        "VNNI",
+        "NUMA"
+      ],
+      "entities": [
+        "AMD",
+        "Zen 6",
+        "Zen 6c"
+      ],
+      "comments": [
+        {
+          "by": "bmenrigh",
+          "text": "The worst thing about consumer (AM5) Zen4 and Zen5 is the I/O die chiplet and memory controller on it. I've heard they're finally going to ship a new I/O chiplet in Zen6 on a much smaller node. Their existing AM5 Zen4/5 memory controller when using both memory channels is terrible. Extremely hard or impossible to get above 3600 MT/s. Of all the things I'm looking forward to on Zen6, an improved…"
+        },
+        {
+          "by": "joebonrichie",
+          "text": "The instruction level parallelism in the 2-ahead branch prediction is super cool stuff, I know zen5 had this feature but it's kind of crazy that memory is so slow relative to the cores that this complexity is beneficial and worthwhile."
+        },
+        {
+          "by": "Aardwolf",
+          "text": "> AMD has reduced the number of integer multiply units from three to two, with PDEP and PEXT throughput also falling from three instructions per cycle to two. Are PDEP and PEXT using the same (parts of) circuits as multiply (they are very different operations...), or are this just two independent drops of circuitry and the wording is just a bit unclear?"
+        },
+        {
+          "by": "Remnant44",
+          "text": "What looks like a lot of small balanced improvements to the core itself. Four vector loads per cycle at 256b of less, I wonder if the gather performance is finally acceptable? Another balance example, they actually reduced the number of integer multipliers down to two. I wonder if that was to make diespace for the vnni pipes? The real star looks like the c cores though. 32 C cores per chiplet…"
+        },
+        {
+          "by": "bee_rider",
+          "text": "32 cores is a lot of cores in a CCD. Is there a there any smaller logical unit between a CCD and a core, or are you expected to wrangle 32 cores in your lowest NUMA level?"
+        }
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!R25V!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fff0ea2d4-ea2d-440b-ad51-1bc99a695511_2022x1382.png"
+    },
+    {
+      "id": 50446246,
+      "url": "https://teorth.github.io/tao-web/six-math-essentials.html",
+      "hn": "https://news.ycombinator.com/item?id=50446246",
+      "title": "Six Math Essentials",
+      "time": 1794344324,
+      "points": 210,
+      "depth": [
+        {
+          "text": "Terence Tao's **Six Math Essentials** walks through six math ideas, from **numbers and algebra** to **how things change**",
+          "tier": "simple"
+        },
+        {
+          "text": "Tao presents the six as ways to make sense of the world: **numbers** for quantitative thinking, **algebra** for abstraction, geometry for calculating beyond what we can see, probability for uncertainty, analysis for the very large or small, and dynamics for **change**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some readers call it a well-written overview for laypeople and a possible gap-filler for STEM readers; others say it is too basic for anyone with a STEM degree.",
+      "comment_count": 38,
+      "terms": [
+        "quantitative thinking",
+        "abstraction",
+        "geometry",
+        "probability",
+        "analysis",
+        "dynamics",
+        "STEM"
+      ],
+      "entities": [
+        "Six Math Essentials",
+        "Terence Tao",
+        "Quanta Books",
+        "Farrar, Straus and Giroux",
+        "Pelican",
+        "Science Friday",
+        "New Scientist",
+        "Publishers Weekly",
+        "Library Journal"
+      ],
+      "comments": [
+        {
+          "by": "tveita",
+          "text": "I quite liked this interview: Terence Tao explains 6 essential mathematical concepts: https://www.youtube.com/watch?v=OOMx2BHHWtE"
+        },
+        {
+          "by": "flowerlad",
+          "text": "The amazon preview [1] does not even show the contents page. How am I supposed to check if I might be interested in this book? [1] https://www.amazon.com/dp/0374621799?tag=macmillan-20"
+        },
+        {
+          "by": "prideout",
+          "text": "I heard he was writing a book about the Cosmic Distance Ladder. I was looking forward to that, I hope this isn't what it evolved into."
+        },
+        {
+          "by": "koolba",
+          "text": "What age range or skill level is this targeting?"
+        },
+        {
+          "by": "stldev",
+          "text": "I pre-ordered some time ago, and received a copy this morning. I love it. It's direct and well-written; a high-level overview of mathematics from numbers to analysis and dynamics. I think it's well organized, if brief at ~100pp. This would be a great read for laypeople as well as a potential gap-filler for anyone in STEM."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50433216,
+      "url": "https://github.com/microsoft/Procexp-Mac",
+      "hn": "https://news.ycombinator.com/item?id=50433216",
+      "title": "Process Explorer for macOS",
+      "time": 1794263441,
+      "points": 182,
+      "depth": [
+        {
+          "text": "someone brought **Process Explorer** to Mac, with **live process trees** and a lot more system detail",
+          "tier": "simple"
+        },
+        {
+          "text": "The **lower pane** covers DLLs/images, handles/file descriptors, and threads. An optional **privileged helper** can provide richer cross-user process details; values macOS can’t access stay **blank**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some commenters call it useful and feature-rich; others say the Mac UI is ugly or report basic controls not working.",
+      "comment_count": 58,
+      "terms": [
+        "process tree",
+        "DLLs/images",
+        "handles/file descriptors",
+        "privileged helper"
+      ],
+      "entities": [
+        "Microsoft",
+        "Process Explorer",
+        "macOS",
+        "Swift",
+        "SwiftUI",
+        "AppKit",
+        "Sysinternals"
+      ],
+      "comments": [
+        {
+          "by": "jollyllama",
+          "text": "How's it compare to Objective See's TaskExplorer? [0] [0] https://objective-see.org/products/taskexplorer.html"
+        },
+        {
+          "by": "teh_klev",
+          "text": "There's an episode of \"Scott and Mark Learn\" where Mark Russinovich (the creator of the original Process Explorer and other SysInternals tools) talks about how he created Process Explorer for MacOS with Scott Hanselman: https://youtu.be/U-_Y9PX_ESI"
+        },
+        {
+          "by": "mzs",
+          "text": "https://github.com/microsoft/Procexp-Mac/issues/1 This repo is missing a LICENSE file\n#1 Open Description\n@microsoft-github-policy-service\nbot\nopened on Jul 9"
+        },
+        {
+          "by": "jherskovic",
+          "text": "Installed it. Pretty straight port UI-wise, it seems like it would be very useful. It doesn’t look ‘Mac’ at all, but for developer tooling that gets a pass from me. I couldn’t see details for some processes, which was reasonable since I wasn’t running as root. I installed the privileged helper that came with the process… and now the process tree is empty. Maybe it needs a little more time in the…"
+        },
+        {
+          "by": "kburman",
+          "text": "I've been working on something similar for Linux, in Rust with egui. It reads from /proc, cgroups, systemd over D-Bus and the netlink proc connector, so it also catches processes that start and exit between refreshes. It runs without root, and anything it can't read just shows \"—\". Check screenshot here - https://postimg.cc/gallery/CMczmdh/ceda7197"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/c5c5042b1dc5b1d2362d84f9c7fc8f9ea4824e8ffcb275d612adf4dd51bc7415/microsoft/Procexp-Mac"
+    },
+    {
+      "id": 50443716,
+      "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+      "hn": "https://news.ycombinator.com/item?id=50443716",
+      "title": "Claude Whiteboards, Claude Sheets, and Claude Data",
+      "time": 1794333307,
+      "points": 186,
+      "depth": [
+        {
+          "text": "Claude now has **shared whiteboards**, spreadsheets, and **data tools** for teams to brainstorm and work together",
+          "tier": "simple"
+        },
+        {
+          "text": "Whiteboards and Sheets are **in beta**, while Claude Dashboards is now **generally available** as Claude Data. Whiteboards let teams brainstorm together, Sheets lets Claude build and edit spreadsheets, and Claude Data adds data stories, certified queries, and live sharing; all three are available on paid plans.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some see the tools as a useful first stop before moving work into specialized apps; others see them as simplified side quests unlikely to challenge established suites.",
+      "comment_count": 141,
+      "terms": [
+        "certified query",
+        "data connector",
+        "API",
+        "SaaS"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude",
+        "Claude Whiteboards",
+        "Claude Sheets",
+        "Claude Data",
+        "Claude Dashboards"
+      ],
+      "comments": [
+        {
+          "by": "AntonJidkov",
+          "text": "Smart move for Anthropic. They've embedded into businesses and are now aiming at being the Google Workspace equivalent. Next step, domains and email? Also this differs from Claude design imo - which was too token heavy and not easy enough for a human to manipulate without prompting.\nHere, the human and agent user have a similar level of control."
+        },
+        {
+          "by": "gosen",
+          "text": "When Anthropic released \"claude design\" people were telling that figma is dead now, but in fact claude design didn't move forward and stayed as a \"fallback tool\" when you quickly need to check / edit something. And for the serious work you still go to Figma and other designer tools.\nI have a feeling that Whiteboards, Sheets, Docs and so on will be the same - it's a nicer way to present artefacts…"
+        },
+        {
+          "by": "option_greek",
+          "text": "Model companies are starting to cannibalize their api customers's business cases. Shows that the regular avenues of revenue growth are slowing down"
+        },
+        {
+          "by": "FailMore",
+          "text": "I have a different approach to the industry when it comes to work documents. I'm building https://smalldocs.org / https://github.com/espressoplease/smalldocs . My take is that the siloed approach of previous document formats is now redundant. The document formats were isolated because we needed heavy tools for humans to do the work. Now we need lightweight javascript predominately for rending as…"
+        },
+        {
+          "by": "bertt",
+          "text": "> Working with Claude on a project often meant moving the output over to another tool or program, where Claude didn’t have live access to follow progress and changes. Now, your documents, boards, sheets, and dashboards can stay in Claude, with access for your team to continue editing together. I read this as: We'll build anything and everything into Claude eventually. How does this work…"
+        }
+      ],
+      "image": "https://claude.com/resources/articles/sheets-whiteboards-data/opengraph-image/og"
+    },
+    {
+      "id": 50437752,
+      "url": "https://news.exeter.ac.uk/faculty-of-environment-science-and-economy/fossil-co2-emissions-decrease-in-2026/",
+      "hn": "https://news.ycombinator.com/item?id=50437752",
+      "title": "Fossil CO2 emissions decrease in 2026",
+      "time": 1794301181,
+      "points": 172,
+      "depth": [
+        {
+          "text": "fossil emissions are expected to **dip**, while land-use changes push **total CO2 emissions higher**",
+          "tier": "simple"
+        },
+        {
+          "text": "The 2026 Global Carbon Budget projects fossil-fuel emissions at 38.2 billion tonnes, down **0.4%**, but total CO2 emissions will rise to **43.3 billion tonnes** from 42.8 billion last year as land-use emissions increase. Solar, wind and electric vehicles are meeting two thirds of rising energy demand, but clean-energy growth is not yet fast enough for a durable decline. The drop is partly driven by the **Iran conflict**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Fossil CO2 emissions change",
+              "0.4%"
+            ],
+            [
+              "Fossil CO2 emissions",
+              "38.2 billion tonnes"
+            ],
+            [
+              "Total CO2 emissions",
+              "43.3 billion tonnes"
+            ],
+            [
+              "Total CO2 emissions last year",
+              "42.8 billion tonnes"
+            ],
+            [
+              "Rising energy demand met by solar, wind and electric vehicles",
+              "two thirds"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see the fossil-fuel decline as evidence clean energy is working; others point out that total emissions are still set to rise and the dip may be temporary.",
+      "comment_count": 221,
+      "terms": [
+        "carbon budget",
+        "land-use change",
+        "carbon sink"
+      ],
+      "entities": [
+        "Global Carbon Project",
+        "Global Carbon Budget",
+        "University of Exeter",
+        "University of East Anglia",
+        "CICERO Center for International Climate Research",
+        "Ludwig-Maximilian-University Munich",
+        "Alfred-Wegener-Institut",
+        "Nature Climate Change",
+        "Earth System Science Data",
+        "Pierre Friedlingstein",
+        "Corinne Le Quéré",
+        "Glen Peters",
+        "Julia Pongratz"
+      ],
+      "comments": [
+        {
+          "by": "yanhangyhy",
+          "text": "> India’s emissions are projected to increase by 4.4% – higher than the 3.5% seems india is the only one still increase? conside the air polluion recently. https://www.cnbctv18.com/india/environment/99-of-world-100-m... do they even have a plan?"
+        },
+        {
+          "by": "passwordoops",
+          "text": "Emissions budgets are calculated using accounting best practice, which are not designed for full transparency (ref: the creative accounting used to obscure every financial scandal and economic bubble). THIS is the curve that matters: https://gml.noaa.gov/ccgg/trends/global.html The Iran blip is clearly seen, but it's just that - a blip. Levels continue to steadily rise."
+        },
+        {
+          "by": "kpmcc",
+          "text": "The headline buries the lede. \"With emissions from land-use change (such as deforestation) projected to increase slightly this year, total CO2 emissions are projected to be 43.3 billion tonnes in 2026 – up from 42.8 billion tonnes last year.\" Total annual CO2 emissions are projected to increase by ~half a billion tonnes as a result of land use changes."
+        },
+        {
+          "by": "kieranmaine",
+          "text": "Looking towards innovations that accelerate the energy transition, I have a question for the startups and founders on hackernews: Is anyone working on a \"solid state\" or \"caloric\" (I'm not sure which terms is the best to use) heat pump and do you have any insight on when these will come to market? I want to replace the gas boiler in my apartment wiht a heat pump, but it will most likely have to…"
+        },
+        {
+          "by": "steveBK123",
+          "text": "What's interesting in the numbers is that despite the relative political philosophy and fanfare, on a % basis.. the US reduced emissions about the same as the EU and both reduced them more than China."
+        }
+      ],
+      "image": "https://news.exeter.ac.uk/wp-content/uploads/2026/11/solar-pic.jpg"
+    },
+    {
+      "id": 50437106,
+      "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+      "hn": "https://news.ycombinator.com/item?id=50437106",
+      "title": "Fireworks AI security breach impacts Notion and their customers",
+      "time": 1794295178,
+      "points": 161,
+      "depth": [
+        {
+          "text": "Notion says a **Fireworks AI breach** may have exposed **chat transcripts** from some workspaces",
+          "tier": "simple"
+        },
+        {
+          "text": "Notion says **fewer than 1%** of workspaces were affected, and Fireworks **retained data** despite a contractual zero-data-retention commitment. The affected data included **chat transcripts**; workspace owners can review CSVs, and Notion recommends rotating credentials pasted into Notion AI.",
+          "tier": "substance",
+          "data": [
+            [
+              "Notion workspaces affected",
+              "fewer than 1%"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 63,
+      "terms": [
+        "zero data retention (ZDR)",
+        "CSV",
+        "API key",
+        "inference",
+        "open-weight model",
+        "workspace"
+      ],
+      "entities": [
+        "Notion",
+        "Fireworks AI",
+        "Notion AI",
+        "Insights",
+        "Learning and Early Access Program (LEAP)"
+      ],
+      "comments": [
+        {
+          "by": "Shank",
+          "text": "> Upon analysis of the new data, we discovered that it included unattributable Notion AI chat transcripts used for the Insights feature. Chats weren't labeled with who wrote them or which workspace they came from, and the transcripts did not contain any tool call results. Beyond the words in the chat transcripts themselves, the data contained no information that could specifically identify the…"
+        },
+        {
+          "by": "leumon",
+          "text": "On Openrouter the Fireworks AI is labeled as ZDR. > Private: this provider does not train on prompts and does not retain prompt data. So how come notion discovered that they actually stored the data? > Upon analysis of the new data, we discovered that it included unattributable Notion AI chat transcripts"
+        },
+        {
+          "by": "edot",
+          "text": "So Fireworks is ZDR by default, yet Notion configured (asked) Fireworks to retain data? Otherwise, how is there anything to leak? On the main fireworks breach page, they also say some customer weights of models and datasets to train them were leaked."
+        },
+        {
+          "by": "tiffanyh",
+          "text": "The official announcements (original & update): https://fireworks.ai/security/bulletins/october-2026-securit... https://fireworks.ai/security/bulletins/october-2026-securit..."
+        },
+        {
+          "by": "_fw",
+          "text": "> “Unattributable” means the chats weren't labeled with who wrote them or which workspace they came from, and the transcripts did not contain tool call results. Beyond what’s in the chat transcript itself, there’s no information tying the chat back to a workspace, user, or company. This is astonishing. They’re saying “OTHER THAN THE ACTUAL CONTENTS OF YOUR CONVERSATION, NO INFORMATION WAS…"
+        }
+      ],
+      "image": "https://www.notion.com/front-static/meta/help-center.png"
+    },
+    {
+      "id": 50446520,
+      "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
+      "hn": "https://news.ycombinator.com/item?id=50446520",
+      "title": "Apple has new Mac app coming to make running local AI models easy",
+      "time": 1794345903,
+      "points": 163,
+      "depth": [
+        {
+          "text": "Apple is making **Harbor**, an app for running **AI models locally** across Macs",
+          "tier": "simple"
+        },
+        {
+          "text": "Harbor runs open-weight models on Apple silicon, so **data stays on your hardware** instead of going to the cloud. It can connect Macs over Thunderbolt 5 to **pool unified memory**; it’s in **private preview** under Apple’s Claris brand.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some want easy local models and would buy hardware; others question their value when remote models are cheap or the hardware costs too much.",
+      "comment_count": 125,
+      "terms": [
+        "open-weight model",
+        "inference server",
+        "unified memory",
+        "Thunderbolt 5",
+        "private preview"
+      ],
+      "entities": [
+        "Apple",
+        "Harbor",
+        "Claris",
+        "Aaron Perris",
+        "Mac",
+        "Apple silicon",
+        "Thunderbolt 5"
+      ],
+      "comments": [
+        {
+          "by": "brainless",
+          "text": "I really do not understand the value of running large models locally. I am absolutely fond of local models but for specific tasks. The agents need to do a lot of work in this case: orchestration, big or small model split of planning and work, split into small tasks, merging, etc. LLMs with <30B parameter models seem like the sweet spot. I would rather focus on multiple tiny LLMs that are tuned to…"
+        },
+        {
+          "by": "pen2l",
+          "text": "Apple, to me, is the winner in the end of this AI chapter. Distillation works: we can get models leaner, have better performance with lesser and lesser parameters, more efficient, running locally. Apple gets this and we'll see the result with M7 Max/ultra chips and I reckon this will be one of the titular apps when M7 line of chips are introduced. I guess it explains the haste Anthropic and…"
+        },
+        {
+          "by": "simonw",
+          "text": "\"Harbor is currently in a private preview under Apple’s Claris brand\" There's a name I haven't heard in a long time! Claris (always an Apple subsidiary, since being founded in 1987) renamed themselves to FileMaker in 1998, but apparently they rebranded back to Claris in 2019. Looks like they've mostly just released annual upgrades to FileMaker for the past decade, but they did add MCP to it last…"
+        },
+        {
+          "by": "wewewedxfgdf",
+          "text": "AMD needs Apple to kick it in the pants and make it realise they need to ACTUALLY compete instead of trying to just copy Nvidia."
+        },
+        {
+          "by": "jedbrooke",
+          "text": "> Cluster for scale: “Connect two or more Thunderbolt 5-capable Mac computers and Harbor pools their unified memory into a single inference resource. Run models that exceed any single computer’s capacity, or serve more concurrent requests across your cluster.” This seems like the main way it would differentiate itself over existing solutions like LMStudio etc."
+        }
+      ],
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/10/Mac-mini.jpg?quality=82&strip=all&resize=1200,628"
+    },
+    {
+      "id": 50433079,
+      "url": "https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody/",
+      "hn": "https://news.ycombinator.com/item?id=50433079",
+      "title": "A year after the 100% AI mandate nobody understands our code",
+      "time": 1794262752,
+      "points": 153,
+      "depth": [
+        {
+          "text": "a post says nobody understands the code a year after a **100% AI mandate**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says they inherited an **AI-written project** that was an **architectural mess** with a breaking bug; another says the senior developers had left, leaving a tiny crew. Others say codebases were hard to understand even before AI.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some commenters call the post fake or anti-AI engagement bait; others say the experience matches what they’ve seen at work.",
+      "comment_count": 193,
+      "terms": [
+        "vibe-coded",
+        "tech debt",
+        "LLM",
+        "PR",
+        "literate programming"
+      ],
+      "entities": [
+        "Claude",
+        "Reddit",
+        "YouTube",
+        "Pangram"
+      ],
+      "comments": [
+        {
+          "by": "ianm218",
+          "text": "If you put this into pangram it is 100% AI generated. People on reddit/ youtube are engagement farming anti ai content... with ai text and scripts etc. The actual content is somewhat relatable but don't fall for the bait."
+        },
+        {
+          "by": "danmcr",
+          "text": "I have a friend who works at a large F100 and in his 12 years as a dev, he has never dreaded his job as he does now. He's working 10 hrs. a day, just entering things into Claude, waiting, reviewing, and learning absolutely nothing. At this point anyone who was truly passionate about programming, is just less and less motivated to become a better engineer."
+        },
+        {
+          "by": "rznicolet",
+          "text": "I sympathize with this, and the company I work for is far less than a year into our mandate. I've recently gained ownership of a project built by a colleague who just left, and... it's horrifying. 100% vibe-coded -- said colleague admitted as much, that he hadn't written code himself for months, and that I should just \"ask Claude\" if I want to do anything with the project. It's an architectural…"
+        },
+        {
+          "by": "marginalia_nu",
+          "text": "If models are getting exponentially cheaper and more powerful, going all in a year ago is kind of insane. There's ostensibly this reverse token value inflation where whatever you spend on AI today, you'll get much more for the same dollar tomorrow (assuming models get cheaper and better). There's really a weird sort of late mover's advantage to just holding off and saving your money unless you…"
+        },
+        {
+          "by": "marcus_holmes",
+          "text": "AI is an accelerator. In this case it accelerated piling up the tech debt. There's no reason they couldn't have paused the relentless production of features to do a few runs of cleaning up the code base while it was still readable."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50442225,
+      "url": "https://devblogs.microsoft.com/dotnet/announcing-dotnet-11/",
+      "hn": "https://news.ycombinator.com/item?id=50442225",
+      "title": "Announcing .NET 11",
+      "time": 1794326487,
+      "points": 153,
+      "depth": [
+        {
+          "text": "a new release has developers curious about **background tasks** and a **decimal result** that changed",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter says .NET 11 is a **Standard Term Support** release with **two years of support**. Another flags that (decimal)0.1 now yields 0.1000000000000000055511151231; runtime async has developers asking how it affects **stack traces** and performance.",
+          "tier": "substance",
+          "data": [
+            [
+              "STS support duration",
+              "two years"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 211,
+      "terms": [
+        "STS",
+        "LTS",
+        "runtime async",
+        "state machine"
+      ],
+      "entities": [
+        ".NET",
+        "Microsoft",
+        "C#",
+        "F#",
+        ".NET MAUI",
+        "Go",
+        "Swift",
+        "Roslyn",
+        "Visual Studio",
+        "Rider",
+        "Avalonia"
+      ],
+      "comments": [
+        {
+          "by": "CharlieDigital",
+          "text": "In my experience, C# and .NET are both \"underappreciated\" in a large part based on the legacy. Some folks out there still think .NET is Windows only. Some folks out there haven't looked at C# since the .NET Framework days. Some folks out there are still salty about some of Microsoft's decision around OSS (debugger, hot reload fiasco, etc.) But day to day working with C# and .NET for backends?…"
+        },
+        {
+          "by": "harrouet",
+          "text": "We've pragmatically switched all our apps to .NET MAUI and it's been a good ride. Starting from native mobile apps, we shipped a Windows version as an add-on, and once feature-complete we switched the mobile native apps to the MAUI version. The debugging phase has been surprisingly short and the app quality is on-par with native. Too bad Apple never wanted to open Swift to Android, because now…"
+        },
+        {
+          "by": "giancarlostoro",
+          "text": "C# was my 2nd programming language after VB6. I remember in the early 2000s when I was 12, using my best friends computer to try and download VB .NET (he had faster internet) just because it was free, then being extremely disappointed when I couldnt just run my VB6 projects I wanted to run on it... Some years later, during 2007 ~ 2009 I tried out C# and that was life changing. I wound up going to…"
+        },
+        {
+          "by": "1a527dd5",
+          "text": "https://learn.microsoft.com/en-us/dotnet/core/compatibility/... Be aware (decimal)0.1\n// .NET 10: 0.1\n// .NET 11: 0.1000000000000000055511151231"
+        },
+        {
+          "by": "AbbeFaria",
+          "text": "Ex-MSFT here. Some of MSFT’s biggest and high scale web services run on .NET Core on both Windows and Linux. I am speaking of services in Office, Security and Azure. Think across millions of VMs and servers. The tooling is great, the services are scalable. It’s nothing like .NET Framework. MSFT’s own services run on .NET and it’s in their own interest to see it thrive and adopted even outside of…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50442202,
+      "url": "https://text.npr.org/nx-s1-6029641",
+      "hn": "https://news.ycombinator.com/item?id=50442202",
+      "title": "Palantir hires a former Democratic senator as it faces scrutiny in new Congress",
+      "time": 1794326374,
+      "points": 150,
+      "depth": [
+        {
+          "text": "Palantir **hired former senator Jon Tester** as Democrats prepare to **scrutinize its government work**",
+          "tier": "simple"
+        },
+        {
+          "text": "Tester says the job is **advisory, not lobbying**. Palantir denies enabling **mass surveillance**, while former employees criticized its $30 million U.S. Immigration and Customs Enforcement contract for a tool that provides “near real-time visibility” into the movement of migrants.",
+          "tier": "substance",
+          "data": [
+            [
+              "Immigration and Customs Enforcement contract",
+              "$30 million"
+            ],
+            [
+              "Federal contracts",
+              "$2 billion"
+            ],
+            [
+              "Company valuation",
+              "over $350 billion"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 160,
+      "terms": [
+        "lobbying",
+        "mass surveillance",
+        "PATRIOT Act",
+        "DINO",
+        "ICE"
+      ],
+      "entities": [
+        "Palantir",
+        "Jon Tester",
+        "Ron Wyden",
+        "Aya Ibrahim",
+        "Alex Karp",
+        "Peter Thiel",
+        "Donald Trump",
+        "AI Now Institute",
+        "U.S. Immigration and Customs Enforcement",
+        "Department of Homeland Security",
+        "Department of Defense",
+        "PATRIOT Act",
+        "NPR",
+        "Axios",
+        "The Lord of the Rings"
+      ],
+      "comments": [
+        {
+          "by": "mentalgear",
+          "text": "Propaganda (renamed 'PR' in the 50s), media distractions, political lobbying. Illegitimate power-seeking individuals and organizations always use the same toolkit. The only permanent remedy is to outright ban those - or better: mandatory transparency into what politicians spend how much time with whom, where money streams come from and go out of organizations, etc, etc. All transparent in a…"
+        },
+        {
+          "by": "Buttons840",
+          "text": "Politicians should be allowed to have their net worth increase by, let's say, $200,000 a year while in office and for 15 years afterwards. Anything more is taxed at 100%. Let it be a price of public service."
+        },
+        {
+          "by": "CodingJeebus",
+          "text": "> During his 18 years in the Senate, Tester was an outspoken critic of the PATRIOT Act that passed shortly after the 9/11 attacks that expanded the Justice Department's surveillance powers. When asked whether his concerns over government surveillance remain and whether he has the same concerns with his new employer, Tester said Palantir is different and that the company doesn't build \"big…"
+        },
+        {
+          "by": "iamnothere",
+          "text": "Palantir will have no problem pivoting to serve a hypothetical D administration, and the same future admin will have no trouble bringing it into the fold and leveraging its services. Many Palantir employees will probably welcome it given the direction of their political donations: https://residualthoughts.substack.com/p/libbing-out-at-palan... The same invasive surveillance apparatus that’s been…"
+        },
+        {
+          "by": "skinfaxi",
+          "text": "> JON TESTER: You know, a perception is reality in Washington, D.C. and in politics in general. But the fact is that I think Palantir's got a good story to tell, and they need to tell it. And hopefully folks will be receptive to it. These people are a cancer."
+        }
+      ],
+      "image": null
+    }
+  ],
+  "glossary": {
+    "kei truck": "A very small utility truck; the article uses the term for the KEI-01.",
+    "rebadged": "A vehicle made by one company but sold under a different brand or name.",
+    "CVT": "Continuously Variable Transmission: a car system that changes how engine power reaches the wheels without fixed gear steps.",
+    "4WD": "Four-wheel drive: a system that sends power to all four wheels to help a vehicle move over rough ground.",
+    "payload": "The piece of code or data a request carries or delivers.",
+    "low-speed vehicle": "A vehicle approved for roads with low speed limits; the article says this one is only legal on roads posted below 35 mph.",
+    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
+    "OSS": "Open-source software: software whose code is shared so others can inspect it and sometimes reuse it under a license.",
+    "true positive rate": "The share of reports that turn out to describe real problems.",
+    "triage": "Sorting incoming requests so the important or urgent ones get handled first.",
+    "B2B": "Business-to-business: selling products or services to other companies, rather than individual people.",
+    "IoT": "Internet of Things: everyday devices connected to the internet so they can share information or be controlled remotely.",
+    "static IP": "An internet address that stays the same, so other systems can reliably find a device.",
+    "NAT": "Network address translation: a way for a server to pass your connection along using its own internet address, so the next server doesn't see yours.",
+    "cease-and-desist letter": "A formal legal demand to stop doing something.",
+    "codec": "A set of rules that shrinks video for storage or sending and turns it back into a playable picture.",
+    "OIN": "Open Invention Network: a group that offers patent protections to members working with Linux.",
+    "clean-room implementation": "Software built independently without copying the original code.",
+    "claim chart": "A document showing how parts of someone’s work supposedly relate to specific patent claims.",
+    "cloud computing": "Computing that happens on remote computers, which you use over the internet.",
+    "read-only mode": "A setting where you can look at things but can’t change them.",
+    "open-source": "Software whose code is shared publicly so people can inspect it, change it, or build on it.",
+    "RAG": "Retrieval-Augmented Generation: a way for an AI to look up material and use it when answering.",
+    "MCP": "Model Context Protocol: a standard way for AI apps to connect to outside tools.",
+    "AST": "Abstract Syntax Tree: a tree-shaped version of a program that a computer can inspect and work through.",
+    "legacy-scan": "A check that looks for old code patterns an agent could update.",
+    "latchkey kid": "A child who comes home from school to an empty house and lets themselves in.",
+    "surveillance capitalism": "Making money by collecting information about people's behavior and using it to target or influence them.",
+    "data broker": "A company that gathers information about people and sells or shares it.",
+    "isometric view": "A way of drawing a place from an angle that shows rooftops and building sides at once.",
+    "pixel art": "Pictures built from visible colored squares, often with a blocky look.",
+    "diffusion-art": "A label for images generated or changed with AI, rather than drawn pixel by pixel by hand.",
+    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "municipal term": "The official area a municipality governs, including land beyond its built-up center.",
+    "out-of-order structures": "The CPU's work area for tracking instructions, so it can do ready tasks while other work waits.",
+    "CCD": "Core Complex Die: a small chip inside a processor package that holds a group of CPU cores.",
+    "L3 cache": "A processor's shared stash of data, meant to save trips to main memory.",
+    "branch predictor": "A CPU part that guesses which way a program will go next, letting the processor get a head start.",
+    "memory latency": "The time the processor spends waiting for data from memory.",
+    "VNNI": "Vector Neural Network Instructions: special processor commands used for number-heavy tasks such as the AI and video work mentioned here.",
+    "NUMA": "Non-Uniform Memory Access: a way of organizing processors so some can reach certain memory more quickly than others.",
+    "quantitative thinking": "Using numbers to describe, compare, or work through questions about the world.",
+    "abstraction": "When you don't have to deal with the messy details of how something gets done.",
+    "geometry": "Math about shapes, distances, and space.",
+    "probability": "A way to reason about how likely something is to happen.",
+    "analysis": "A branch of math for working with very large or very small quantities.",
+    "dynamics": "The part of math that looks at change.",
+    "STEM": "Science, Technology, Engineering, and Mathematics: subjects about how the world works, how to build things, and numbers.",
+    "process tree": "A view showing which programs started other programs.",
+    "DLLs/images": "Files containing pieces of code a program loads while it runs.",
+    "handles/file descriptors": "References a program uses to keep track of things it has opened, like files or connections.",
+    "privileged helper": "A companion program that can do tasks needing more permission than the main app has.",
+    "certified query": "A question asked of company data that the data team has approved for everyone to reuse.",
+    "data connector": "A link that lets Claude get information from another system.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "SaaS": "Software as a Service: software you access over the internet, with the provider running it for you.",
+    "carbon budget": "The amount of CO2 that can still be emitted before warming reaches a stated limit.",
+    "land-use change": "A change in how land is used, such as deforestation.",
+    "carbon sink": "Land or ocean that absorbs CO2 from the air.",
+    "zero data retention (ZDR)": "Zero data retention: a promise that a service won’t keep the requests and replies sent to it.",
+    "CSV": "Comma-separated values: a way to arrange data in rows, with commas separating the pieces.",
+    "API key": "A secret code that lets software use an online service as an approved user.",
+    "inference": "When an AI uses what it learned to answer or act, instead of being trained.",
+    "open-weight model": "A model whose trained settings are shared so other people can use them.",
+    "workspace": "A saved work area that keeps a project’s files or conversations together.",
+    "inference server": "A computer that runs an AI model and sends its answers to other devices or apps.",
+    "unified memory": "A shared pool of working memory that a computer's main processor and graphics processor can both use, instead of each having a separate pool.",
+    "Thunderbolt 5": "A way to connect devices; here, it links Macs so they can work together.",
+    "private preview": "An early, limited release people can try before a public launch.",
+    "vibe-coded": "Made by steering an AI with informal requests instead of writing most of the code by hand.",
+    "tech debt": "Extra cleanup work left behind when software choices make future changes harder.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "PR": "Pull request: a proposed code change shared so others can review it.",
+    "literate programming": "A way of presenting code alongside explanations so people can read why it works.",
+    "STS": "Standard Term Support: a release type with a shorter support period than Long Term Support.",
+    "LTS": "Long-term support: a release its makers promise to support for an extended period.",
+    "runtime async": "A way for a program to handle waiting work while still doing other things.",
+    "state machine": "A system that remembers its current settings, so later commands can behave differently depending on earlier ones.",
+    "lobbying": "Trying to influence government decisions by making a case to officials.",
+    "mass surveillance": "Watching lots of people, often by collecting information about them, rather than focusing on one person.",
+    "PATRIOT Act": "A US law that expanded government surveillance powers after the 9/11 attacks.",
+    "DINO": "A put-down for a Democrat someone thinks is acting more like a Republican.",
+    "ICE": "Internal Combustion Engine: an engine that makes power by burning fuel inside it."
+  }
+}
