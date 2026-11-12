@@ -2,6 +2,990 @@
   "date": "2026-11-12",
   "cards": [
     {
+      "id": 50467087,
+      "url": "https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a601cf82ce939f1d24fffa0f",
+      "hn": "https://news.ycombinator.com/item?id=50467087",
+      "title": "Jensen Huang resigns",
+      "time": 1794491549,
+      "points": 2188,
+      "depth": [
+        {
+          "text": "Jensen Huang resigns, and commenters argue over whether **China chip exports** or **his affair** mattered more",
+          "tier": "simple"
+        },
+        {
+          "text": "Some commenters allege NVIDIA sold **chips to China** despite an **export ban**; another says the sales were legal and the US government took a cut. Several say the affair was not the reason for his departure, while another calls it a **catalyst**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters say NVIDIA sold to China despite the export ban; others say the sales were legal and the US government took a cut.",
+      "comment_count": 2187,
+      "terms": [
+        "export ban",
+        "GPU",
+        "open weights",
+        "inference",
+        "CUDA"
+      ],
+      "entities": [
+        "Jensen Huang",
+        "NVIDIA",
+        "CUDA"
+      ],
+      "comments": [
+        {
+          "by": "duplessitous",
+          "text": "I hope people understand that the affairs are not the reason he is being fired - NVIDIA has supposedly been skirting the export ban put in place by the previous administration. This was put in place for national security reasons. Whether you agree or disagree with the ban, it exists and Jensen&NVIDIA are in a world of trouble if this comes to light. From all the reporting I've read, it is hard…"
+        },
+        {
+          "by": "keeda",
+          "text": "Wtf why is everyone assuming Nvidia skirted an export ban and treasonously sold chips to China? It was done legally with the US government taking a cut : https://www.nytimes.com/2026/11/07/business/economy/nvidia-c... Nvidia is a profitmaxxing company in a profitmaxxing economy and so it is going to profitmaxx; the criticism should lie with the US government…"
+        },
+        {
+          "by": "kphorn",
+          "text": "Jensen has created more shareholder value than nearly any human on earth. Significantly more than Elon, with the key distinction that Jensen has distributed much more of that shareholder value than Elon has through stock options to employees and appreciation of public stock (it’s one of the reasons he’s worth 150Bn vs 1Tn). I think the real risk for the economy, the AI industry, and the US is…"
+        },
+        {
+          "by": "rcr-anti",
+          "text": "It is baffling to read comments that this is excusable or he should be retained 'in interest of the shareholders'. Setting aside the obviously poor judgement, the appearance of impropriety has serious ammunition behind a situation that already looked weird. More practically, he's compromised now. Whether it's further scandal or the impending criminal investigations, there might be further hooks…"
+        },
+        {
+          "by": "jupake",
+          "text": "I cant help but see a difference in the moral standard to which Jensen is being held compared to the moral standard that someone like Elon is being held. Why can one get away with shocking moral behaviour, but the other has to step down for a mild affair. If Jensen didnt have the affair, or it never came to light, would all of this still have taken place? When Cambridge Analytica happened, no one…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50465829,
+      "url": "https://ipo.anthropic.com/us/",
+      "hn": "https://news.ycombinator.com/item?id=50465829",
+      "title": "Anthropic IPO",
+      "time": 1794484001,
+      "points": 707,
+      "depth": [
+        {
+          "text": "Anthropic is preparing to sell **public shares** in a planned **IPO**",
+          "tier": "simple"
+        },
+        {
+          "text": "The roadshow is expected to begin **November 10**; the share price is expected to be set **November 18**, and trading is expected to start November 19, subject to regulatory clearance. The shares are expected to trade on Nasdaq under ticker **ANT**; Anthropic says its registration statement has not yet become effective.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: skeptics question Anthropic’s moat and expect competition from local models; more optimistic commenters say its products have made an impact and the IPO cash could buy the company time.",
+      "comment_count": 711,
+      "terms": [
+        "IPO",
+        "roadshow",
+        "Class A common stock",
+        "ticker symbol",
+        "prospectus",
+        "registration statement",
+        "moat"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude",
+        "Nasdaq",
+        "SEC",
+        "EDGAR",
+        "Goldman Sachs",
+        "Morgan Stanley",
+        "Legora",
+        "Eli Lilly and Company",
+        "Rakuten",
+        "Salesforce",
+        "Walmart",
+        "Sparky",
+        "OpenAI",
+        "NVIDIA",
+        "AMD",
+        "Mythos",
+        "SpaceX",
+        "Deepseek",
+        "Qwen",
+        "Kimi",
+        "Revolut"
+      ],
+      "comments": [
+        {
+          "by": "maerF0x0",
+          "text": "It strikes me that if their models were good enough for recursive self improvement, then the VCs would have pushed to delay IPO until such time that they had clear market dominance. For some reason they need the $100B today at the cost of dilution, rather than additional private rounds and/or using cashflow+profits to continue the advancement."
+        },
+        {
+          "by": "brainless",
+          "text": "There is a lot of value from LLMs but it is something that I can switch easily. Yes, some frontier models are much better but users can still chose to use cheaper models for most of the work. In fact most applications, through which people will interact with LLMs anyway, will not need frontier models unless they offer \"chat with AI\". Anything that solves specific problems (even multiple problems)…"
+        },
+        {
+          "by": "freakynit",
+          "text": "A few important points from the linked documents: 1. Price range: $70–78 with midpoint at around $74.00 2. Gross deal size: $85.3B (IPO + $26B private placement) 3. Implied market cap: ~$968B (at $74, 13.09B shares) 4. Q3'26 revenue: $17.0B (+1,127% YoY) 5. Run-rate revenue: ~$81B (as of Oct 2026) 6. Compute commitments: $900.9B (through 2045) 7. Ticker: ANT (Nasdaq) 8. Customers with ≥$100K…"
+        },
+        {
+          "by": "maupin",
+          "text": "I still think they are on a tight timer. Local models are already extremely good - good enough for most normal users. They are going to continue to get better. Once hardware starts to become affordable again, we will see AI appliances that can do everything most users want, and privately."
+        },
+        {
+          "by": "boa00",
+          "text": "For some reason, I feel really weird anytime Anthropic inserts beautiful paintings into their articles/promos. They've used one of John Frederick Kensett's works here, for example (the one with a river and a dotted line on top of it) To me, this technology and these AI companies, in their current form, are as far away from the 19th century landscape paintings as they could get. As if they're…"
+        }
+      ],
+      "image": "https://ipo.anthropic.com/assets/share-image-eAr8nJRP.jpg"
+    },
+    {
+      "id": 50438261,
+      "url": "https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md",
+      "hn": "https://news.ycombinator.com/item?id=50438261",
+      "title": "Socratic Tutor",
+      "time": 1794305902,
+      "points": 609,
+      "depth": [
+        {
+          "text": "someone made a **tutoring skill** that **quizzes you**, tracks your progress, and revisits old material",
+          "tier": "simple"
+        },
+        {
+          "text": "It starts with a **3-5-question diagnostic** to place your level per subskill, then asks **one question at a time** and periodically retests earlier subskills without warning.",
+          "tier": "substance",
+          "data": [
+            [
+              "diagnostic questions",
+              "3-5"
+            ],
+            [
+              "skill levels",
+              "0-5"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: fans say its rules curb the model's usual handholding; skeptics say a simple prompt can do much the same, while others doubt LLMs can build a curriculum well from scratch.",
+      "comment_count": 136,
+      "terms": [
+        "Socratic method",
+        "spaced review",
+        "skill map"
+      ],
+      "entities": [
+        "Jane Street",
+        "GitHub",
+        "agent_skills",
+        "Socratic Tutor",
+        "ChatGPT",
+        "pi",
+        "GLM 4.7",
+        "Socrates Skill",
+        "Claude CLI",
+        "Gemini",
+        "Codex",
+        "Opus 5.5",
+        "Logo",
+        "Python",
+        "Keating AI",
+        "mathacademy.com"
+      ],
+      "comments": [
+        {
+          "by": "Tar90",
+          "text": "I've been experimenting with a lot of these learning skills (see also, e.g., https://github.com/mattpocock/skills/blob/main/skills/produc... , which I think addresses the progress tracking part better than this skill) and they're great for getting simple answers, getting unstuck on exercises, getting some intuition through simulations, etc, but I still feel some more structure is needed for…"
+        },
+        {
+          "by": "genxy",
+          "text": "Socratic tutoring is the first thing I did when ChatGPT first shipped. Your liberal arts education is a \"huge unlock\" if you just apply it. See also https://en.wikipedia.org/wiki/Mastery_learning https://en.wikipedia.org/wiki/Programmed_learning Make your own custom skinner boxes. https://en.wikipedia.org/wiki/Operant_conditioning_chamber"
+        },
+        {
+          "by": "pkoird",
+          "text": "Is it only me who's thinking what's so special about this and whys everyone oohing and aahing over this? Afaik, people I know (and me) we've been doing this ever since LLMs became capable enough."
+        },
+        {
+          "by": "Mikhail_Edoshin",
+          "text": "Socratic questions are not asked blindly. They are meant to help the student to realize the incompleteness or falsety of what they think they know. That us, to realise they do not actually know something and thus put them into a position of not knowing, which is the only way to gain understanding. One man said, that enlightement (as in Zen) cannot be faked. Whoever had it, will be able to tell if…"
+        },
+        {
+          "by": "__rito__",
+          "text": "Has anyone been using the teach skill [0]? How does it compare? I was playing with it for a short time, otherwise, I just tell the model to 'teach me X, and do not give me direct answers, and give me exercises'. [0]: https://github.com/mattpocock/skills/tree/main/skills/produc..."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/bc25d24ed63d57a4b4c6ef1a6a8d874e5632c777c3123e3549a0b0daf0e8d9f8/janestreet/agent_skills"
+    },
+    {
+      "id": 50467132,
+      "url": "https://www.reuters.com/live/nvidia-live-board-meets-fate-ceo-jensen-huang-after-affair-reports-2026-11-12/",
+      "hn": "https://news.ycombinator.com/item?id=50467132",
+      "title": "Jensen Huang resigns as Nvidia CEO immediately",
+      "time": 1794491771,
+      "points": 373,
+      "depth": [
+        {
+          "text": "Jensen Huang is **resigning** as **Nvidia CEO** immediately",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says the Reuters page refreshed mid-sentence while they were reading about Huang **owning “something like 3,6%”** of the company; the **paragraph disappeared**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 14,
+      "terms": [],
+      "entities": [
+        "Jensen Huang",
+        "Nvidia",
+        "Reuters"
+      ],
+      "comments": [
+        {
+          "by": "dbalatero",
+          "text": "duplicate of this maybe: https://news.ycombinator.com/item?id=50467087"
+        },
+        {
+          "by": "hobo123",
+          "text": "Wow, Reuters is orwellian. I was just reading something about Huang owning something like 3,6% of the company, when mid-sentence the page refreshed and the paragraph disappeared."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50463899,
+      "url": "https://forums.spacebattles.com/threads/humble-bundle-just-completely-killed-most-of-their-security-through-vibecoding.1346295/",
+      "hn": "https://news.ycombinator.com/item?id=50463899",
+      "title": "\"Humble Bundle just killed most of their security through vibecoding\"",
+      "time": 1794466368,
+      "points": 348,
+      "depth": [
+        {
+          "text": "Humble Bundle's **new site** has commenters reporting **login failures** and worrying about missing security checks",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says changing a password needs neither the **previous password** nor a second entry of the new one. Others report **failed Google and email logins**, and one says their login code arrived **an hour late**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some blame vibecoding for the security regressions; others say AI isn't at fault and suggest the bigger problem was how the system was specified or tested.",
+      "comment_count": 208,
+      "terms": [
+        "vibecoding",
+        "LLM",
+        "authentication",
+        "SOTA"
+      ],
+      "entities": [
+        "Humble Bundle",
+        "Humble Choice",
+        "Humble Indie Bundle",
+        "Google",
+        "Amazon",
+        "DeepSeek",
+        "Eurogamer",
+        "Gish"
+      ],
+      "comments": [
+        {
+          "by": "oliwarner",
+          "text": "Weird that they lay all this at the feet of vibecoding. I've asked for authentication systems several times and they've tended to come with pretty good feature-sets. Perhaps it's because I know what I'm asking for. Edit: I've just tried to log in and it's failed through both Google and email. Whatever they've done, they haven't tested it well."
+        },
+        {
+          "by": "trvz",
+          "text": "This is not AI's fault. In fact, they had to probably fight the LLM to get it this simple. I'm a subscriber to Humble Bundle Choice (their monthly offering), and it has been a pain to receive a code via email at every login."
+        },
+        {
+          "by": "1313ed01",
+          "text": "Can someone there please just click the rollback button now and we can all forget this ever happened. I don't think that new site can be saved. The old site was fine. Just leave it like it was. I bought a bundle as recently as last month. Three bundles I think. If they just focus on finding more fun bundles to sell and don't touch the site code again, ever, it will be fine. I have been happily…"
+        },
+        {
+          "by": "Ekaros",
+          "text": "Perfect example of when rewrite is functionally worse for users and done for sake of doing it... I wondered why I did not get email code from them for login. Then it arrive one hour later... Seems like pretty big oversight..."
+        },
+        {
+          "by": "dtech",
+          "text": "> You can also change your password without confirmation - you don't need to either enter the previous password or double-enter the new password. This seems to be mostly people who don't know what they are doing? I'd any model would default to requiring this since it's pretty much the default everywhere."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50462177,
+      "url": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
+      "hn": "https://news.ycombinator.com/item?id=50462177",
+      "title": "Critical RCE Vulnerability in Apache HTTP Server",
+      "time": 1794449471,
+      "points": 346,
+      "depth": [
+        {
+          "text": "Apache has a **critical flaw** that can let remote attackers **run commands** on vulnerable servers",
+          "tier": "simple"
+        },
+        {
+          "text": "The flaw is a **race condition** in Apache HTTP Server’s HTTP/2 module, where concurrent threads sharing resources can trigger heap corruption. Wiz says **64%** of cloud environments have vulnerable resources and **51%** have publicly exposed instances. The post recommends upgrading to Apache HTTP Server 2.4.71 or later.",
+          "tier": "substance",
+          "data": [
+            [
+              "Cloud environments with vulnerable resources",
+              "64%"
+            ],
+            [
+              "Cloud environments with publicly exposed instances",
+              "51%"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 187,
+      "terms": [
+        "RCE",
+        "race condition",
+        "heap corruption",
+        "HTTP/2",
+        "CVE",
+        "mod_http2"
+      ],
+      "entities": [
+        "Apache HTTP Server",
+        "Apache Software Foundation",
+        "mod_http2",
+        "mod_h2",
+        "Wiz",
+        "Anthropic",
+        "Google Cloud",
+        "GitHub",
+        "Let's Encrypt",
+        "systemd",
+        "certbot",
+        "nginx",
+        "Ubuntu",
+        "PHP",
+        "DeepSeek",
+        "AWS",
+        "LiteSpeed",
+        "OpenLiteSpeed"
+      ],
+      "comments": [
+        {
+          "by": "jamesy0ung",
+          "text": "Patch looks like https://github.com/apache/httpd/commit/5ed39287660daacd1233c..."
+        },
+        {
+          "by": "rurcliped",
+          "text": "For anyone temporarily shutting off an Apache httpd, there's one step that's sometimes missed: a cron job or systemd timer for certbot. This can restart httpd and leave it running. In other words, in some common uses of Let's Encrypt, standard instructions such as \"systemctl disable --now apache2\" aren't sufficient to keep httpd off."
+        },
+        {
+          "by": "account42",
+          "text": "> in Apache HTTP Server’s HTTP/2 module (mod_http2) I feel like in hindsight, HTTP/2 was a mistake. The theoretical benefits just don't justify the added complexity. It definitely shouldn't have been fasttracked like it was."
+        },
+        {
+          "by": "throooooo",
+          "text": "I have a lot of Linux sysadmin experience but haven't touched Apache in more than a decade. I thought it's mostly nginx or other solutions at this point."
+        },
+        {
+          "by": "acidburnNSA",
+          "text": "Appears to be the first issue ranked 'critical' since 2021. https://httpd.apache.org/security/vulnerabilities_24.html"
+        }
+      ],
+      "image": "https://www.datocms-assets.com/75231/1794425853-threat-update-kics-alert_custom.jpeg?fm=webp"
+    },
+    {
+      "id": 50465352,
+      "url": "https://pron.github.io/posts/correctness-and-complexity",
+      "hn": "https://news.ycombinator.com/item?id=50465352",
+      "title": "Why Writing Correct Software Is Hard",
+      "time": 1794479306,
+      "points": 316,
+      "depth": [
+        {
+          "text": "this essay explains why **proving a program correct** can be **impossible**, not just slow",
+          "tier": "simple"
+        },
+        {
+          "text": "The article connects verification to the **halting theorem**: no algorithm can decide whether any given program ever terminates, and says correctness comes at a **significant cost**. Commenters debate whether strict proofs are worthwhile for much software, with one arguing that reasonable-time proofs call for easy-to-analyze languages and styles.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say strict proofs are worthwhile for selected components; others say fuzzy requirements and the need to iterate make them a poor fit for much software.",
+      "comment_count": 141,
+      "terms": [
+        "halting problem",
+        "formal verification",
+        "computational complexity",
+        "model checking",
+        "Rice's theorem",
+        "Turing machine"
+      ],
+      "entities": [
+        "David Hilbert",
+        "Kurt Gödel",
+        "Alonzo Church",
+        "Alan Turing",
+        "ZFC"
+      ],
+      "comments": [
+        {
+          "by": "turbobutton",
+          "text": "I believe there's a hard distinction between abstract, mathematical correctness in software and functioning in the real world. Any software that's processing inputs and provides complex workflows to humans has to necessarily deal with the endless vagaries of reality. That's not to say there isn't value in formal correctness, but the important part is identifying when it's useful and when its more…"
+        },
+        {
+          "by": "cadamsdotcom",
+          "text": "It's a challenge to define \"correct\" - and most of the time that's not even valuable. Only a small subset of software is composed of even the tiniest piece that gain value from correctness. A database sure, there's lots of bits in a database that can be defined to be \"correct\" - but outside of the core, what does correctness mean for the ergonomics of using it? Is it worth your while to produce a…"
+        },
+        {
+          "by": "hinkley",
+          "text": "There’s something I used to say that I haven’t repeated in a while and I’m not sure why since I still believe it: Software is effectively contract law, and if one were solvable the other would be too. The fact that we have so many lawyers, and loopholes are a constant issue is the same reason we have so many programmers and so many bugs. We cannot nail down what is and isn’t acceptable input…"
+        },
+        {
+          "by": "mpweiher",
+          "text": "I think you have to first figure out what \"correct\" even is. Correct with regards to a formal specification? How do we know the specification is \"correct\"? By definition?"
+        },
+        {
+          "by": "johnbender",
+          "text": "As best I can tell the article wrongly conflates Rices Theorem with the idea that one can’t prove something about the small program generated by Yedidiya and Aaronson but that’s not what Rices Theorem tells us. Instead it tells us that we can’t come up with a general method to determine yes or no correctly for all programs whether a program reaches a given point. For a given program and a one off…"
+        }
+      ],
+      "image": "https://www.gravatar.com/avatar/c69557151e2f8331f6b1865469b694dd?s=200"
+    },
+    {
+      "id": 50471431,
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "hn": "https://news.ycombinator.com/item?id=50471431",
+      "title": "Gemini 4 Hydrogen",
+      "time": 1794506508,
+      "points": 317,
+      "depth": [
+        {
+          "text": "Google launched an **everyday AI model** for coding and jobs that involve **multiple tools**",
+          "tier": "simple"
+        },
+        {
+          "text": "Hydrogen offers **four thinking levels**. In Google Antigravity, Orchestrator **switches between models** during a session; Google says it used 24% less quota and finished **19% faster** on Terminal-Bench 4.0.",
+          "tier": "substance",
+          "data": [
+            [
+              "quota consumed",
+              "24% less"
+            ],
+            [
+              "completion time",
+              "19% faster"
+            ],
+            [
+              "input price",
+              "$1.50 per million input tokens"
+            ],
+            [
+              "output price",
+              "$7.50 per million output tokens"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say the release looks strong and useful in real work; others find the names confusing and criticize pricing or access limits.",
+      "comment_count": 220,
+      "terms": [
+        "agentic workflow",
+        "Orchestrator",
+        "quota",
+        "benchmark",
+        "context window",
+        "token"
+      ],
+      "entities": [
+        "Google",
+        "Gemini 4 Hydrogen",
+        "Gemini 4 Carbon",
+        "Gemini 4 Argon",
+        "Google Antigravity",
+        "Orchestrator",
+        "Terminal-Bench 4.0"
+      ],
+      "comments": [
+        {
+          "by": "wds",
+          "text": "This was rolled out RIGHT away, as when I just went to use Gemini, seeing 3.8 Flash be replaced with \"4 Hydrogen\" was less hype and more a thought along the line of \"What [on Earth] is Gemini Hydrogen???\", then me going here to figure it out. This model naming scheme works for separate products, but using elements, molecules, etc. for products you're supposed to compare with each other... Not…"
+        },
+        {
+          "by": "ComputerGuru",
+          "text": "As this is a) being served in Search, b) supposed to be 2.5x faster than 3.8 Flash, c) the element with lowest atomic weight; I deduce that, despite being more capable than 3.8 Flash, now the “entry level” model set to replace 3.5 Flash Lite. But it is priced the same as the non-discounted 3.8 Flash, considerably higher than what anyone is paying today for 3.8 Flash or 3.5 Flash Lite or the…"
+        },
+        {
+          "by": "drivebyhooting",
+          "text": "If there are any Google employees reading: I want to go all in the Gemini ecosystem but several things keep me going back to OpenAI: * the Gemini app is glitchy on iPhone (my chats frequently fail or are lost if I background the app) * the Work equivalent (I guess task?) is not as powerful. I often have ChatGPT Work to arbitrary computation and even install ML on the short-lived VM. * there is no…"
+        },
+        {
+          "by": "JacobAsmuth",
+          "text": "I think a new default free model for AI Mode being so close to the frontier will be a massive jump in perceived AI intelligence by the general public."
+        },
+        {
+          "by": "Kotlopou",
+          "text": "I have a stupid benchmark: Bongard Problem 2 from here ( https://matheminutes.blogspot.com/2019/04/bongard-eggs.html ). It's an open-ended visual task that is easy enough for humans, but models are still somewhat bad at visuals, so it's one of the few remaining reliable ways to trigger hallucinations. This one answered correctly, but then felt the need to add a fun fact that was wrong: > The rule…"
+        }
+      ],
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-hydrogen__key-art__lockup__16-9.width-1300.jpg"
+    },
+    {
+      "id": 50471793,
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.100.0",
+      "hn": "https://news.ycombinator.com/item?id=50471793",
+      "title": "Rust 1.100",
+      "time": 1794507846,
+      "points": 300,
+      "depth": [
+        {
+          "text": "Rust's latest release adds **Cargo warning controls** and **dependency cooldowns**, plus a batch of compiler changes",
+          "tier": "simple"
+        },
+        {
+          "text": "Rust 1.100.0 introduces Cargo's own **linting system**: users can control some Cargo warnings in the `[lints.cargo]` table, including a built-in unused-dependency check. It also adds **dependency cooldowns**; when configured, Cargo's resolver ignores versions published more recently than the chosen age unless they're already in `Cargo.lock`. Closures now capture variables used in `if let` more precisely, which may cause **new errors**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 15,
+      "terms": [
+        "Cargo",
+        "lint",
+        "dependency cooldown",
+        "resolver",
+        "Cargo.lock"
+      ],
+      "entities": [
+        "Rust",
+        "Cargo",
+        "GitHub"
+      ],
+      "comments": [
+        {
+          "by": "dang",
+          "text": "Comments moved to https://news.ycombinator.com/item?id=50472038 ."
+        },
+        {
+          "by": "iknowstuff",
+          "text": "Better link: https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/ The blog post summarized the most important changes."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/295dbd5e40b61d2d18e043ebae6aba4b6fff6989d59a393745669affbee8235c/rust-lang/rust/releases/tag/1.100.0"
+    },
+    {
+      "id": 50471668,
+      "url": null,
+      "hn": "https://news.ycombinator.com/item?id=50471668",
+      "title": "Ask HN: Microsoft/Azure Outage?",
+      "time": 1794507433,
+      "points": 270,
+      "depth": [
+        {
+          "text": "Microsoft 365 users are hitting **connection problems** as **unavailable servers** shift load onto the rest",
+          "tier": "simple"
+        },
+        {
+          "text": "Updates said affected servers were **failing automated health checks**, possibly tied to a recent change to the component that processes them. Microsoft **paused deployments**, moved traffic, and restarted affected servers while trying to restore service.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 143,
+      "terms": [
+        "automated health checks",
+        "load",
+        "DDoS",
+        "BGP"
+      ],
+      "entities": [
+        "Microsoft",
+        "Azure",
+        "Microsoft 365",
+        "Exchange Online",
+        "Outlook",
+        "GitHub",
+        "GitHub Actions",
+        "AWS",
+        "GCP",
+        "Downdetector"
+      ],
+      "comments": [
+        {
+          "by": "beowulfey",
+          "text": "The Status page is not working well, but I managed to subscribe to their RSS feed and it has been sending out updates periodically. I'll post some of them here. 7:52 PM UTC:\nWe've identified that affected servers are failing automated health checks, which is causing them to become unavailable, and this may be related to a recent change to a component involved in processing those checks. We're…"
+        },
+        {
+          "by": "NichoPaolucci",
+          "text": "Isn't this the company that is trying to get rid of 25% of their employees? Status page is down. Much of our org is halted. Fingers crossed that Azure isn't impacted (seems fine so far) ( https://www.geekwire.com/2026/microsoft-makes-new-voluntary-... )"
+        },
+        {
+          "by": "nazgulsenpai",
+          "text": "> Current status: We’re investigating an issue impacting multiple Microsoft 365 services and we've determined the affected infrastructure is experiencing elevated load across multiple regions, which is likely contributing to the connectivity errors. We're restarting and repairing impacted portions of this infrastructure to restore capacity, and reviewing an unexpected increase in a specific type…"
+        },
+        {
+          "by": "emschwartz",
+          "text": "I'm amazed to see so many services down and to see that Github and Github actions are still working"
+        },
+        {
+          "by": "matt3210",
+          "text": "Software / software service quality has been declining for a few years IMO."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50471731,
+      "url": "https://gvwire.com/2026/11/12/microsoft-outlook-down-for-thousands-of-users-downdetector-shows/",
+      "hn": "https://news.ycombinator.com/item?id=50471731",
+      "title": "Outlook is down, and so is Microsoft's status page",
+      "time": 1794507648,
+      "points": 227,
+      "depth": [
+        {
+          "text": "**Outlook** is down, and Microsoft's **status page** is down too",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter said the status page was not working well, but its **RSS feed** was sending updates periodically. Those updates said affected servers were failing **automated health checks**, possibly linked to a recent component change; Microsoft was testing a **configuration change** and restarting affected servers.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some report Outlook-related failures; one commenter says Outlook is fine and Exchange is experiencing issues.",
+      "comment_count": 74,
+      "terms": [
+        "RSS feed",
+        "automated health checks",
+        "Exchange",
+        "self-hosted",
+        "IMAP",
+        "MAPI"
+      ],
+      "entities": [
+        "Microsoft",
+        "Outlook",
+        "Outlook.com",
+        "Exchange",
+        "Exchange Subscription Edition",
+        "MAPI",
+        "EWS",
+        "ActiveSync",
+        "IMAP",
+        "Azure",
+        "AWS",
+        "Office",
+        "Gmail",
+        "Teams",
+        "SharePoint",
+        "Word",
+        "GSuite",
+        "Copilot"
+      ],
+      "comments": [
+        {
+          "by": "k_sze",
+          "text": "And I can't reach my self-hosted mail server in the Outlook desktop app because of this. For reasons that I cannot fathom, Microsoft wants to act as the relay to my self-hosted e-mail account, if I add the account in Outlook."
+        },
+        {
+          "by": "beowulfey",
+          "text": "Copied this from my post in the other thread: The Status page is not working well, but I managed to subscribe to their RSS feed and it has been sending out updates periodically. I'll post some of them here. 7:52 PM UTC: We've identified that affected servers are failing automated health checks, which is causing them to become unavailable, and this may be related to a recent change to a component…"
+        },
+        {
+          "by": "sonicrocketman",
+          "text": "Down detector shows like everything is down. AWS, Azure, Office, Gmail. Everything. https://downdetector.com"
+        },
+        {
+          "by": "dkpk",
+          "text": "Here's the Reddit post with discussions around this: https://www.reddit.com/r/sysadmin/comments/1xuje83/microsoft..."
+        },
+        {
+          "by": "CerebralCerb",
+          "text": "Not surprising. Azure's data centers are out of capacity. In our region they've announced they won't be able to build out capacity for several years."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50467618,
+      "url": "https://www.moddb.com/mods/openq4/downloads/openq4-0141-windows-x64",
+      "hn": "https://news.ycombinator.com/item?id=50467618",
+      "title": "Abandoned Quake 4 expansion finished by modders and now playable",
+      "time": 1794493129,
+      "points": 199,
+      "depth": [
+        {
+          "text": "someone made the **abandoned Quake 4 expansion** **playable** alongside the original campaign",
+          "tier": "simple"
+        },
+        {
+          "text": "Raven Software and Ritual Entertainment built the expansion, but **never released it**; Justin Marshall **recovered and published it**. openQ4 **rebuilds its monsters, weapons and vehicles** in its engine and game code.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: one commenter says they have no qualms about whether AI finished it; another says releasing work its creators never finished feels wrong.",
+      "comment_count": 68,
+      "terms": [
+        "campaign",
+        "alpha",
+        "engine",
+        "Vulkan"
+      ],
+      "entities": [
+        "Quake 4",
+        "openQ4",
+        "The Awakening",
+        "Raven Software",
+        "Ritual Entertainment",
+        "Justin Marshall"
+      ],
+      "comments": [
+        {
+          "by": "CodeCompost",
+          "text": "\"The Awakening is not installed. Add its campaign content to enable this option\""
+        },
+        {
+          "by": "lavendermon",
+          "text": "The Quake 3 demo was one of my favorite games I wasn't allowed to play as a teenager. Loved blowing people up with a rocket launcher and laser beaming with a railgun. I have no qualms about whether AI finished this, just enjoying the fact that nostalgia can be invoked more easily and cheaply than ever before. On a similar note World of Warcraft just launched \"WoW Forever\", a nostalgic throwback…"
+        },
+        {
+          "by": "imbusy111",
+          "text": "It wasn't a good game though. I tried it a few years ago and it felt very sluggish. Definitely not some classic worth playing now."
+        },
+        {
+          "by": "whalesalad",
+          "text": "Quake never really did it for me but Unreal Tournament... oh yeah."
+        },
+        {
+          "by": "johnnyApplePRNG",
+          "text": "This feels wrong... like releasing post-humous musical albums the original artist never finished or intended to finish."
+        }
+      ],
+      "image": "https://media.moddb.com/images/downloads/1/322/321570/moddb-release-0.14.1-awakening-p.jpg"
+    },
+    {
+      "id": 50457618,
+      "url": "https://graphics.cs.utah.edu/teapot/",
+      "hn": "https://news.ycombinator.com/item?id=50457618",
+      "title": "The Utah Teapot",
+      "time": 1794426310,
+      "points": 189,
+      "depth": [
+        {
+          "text": "the **Utah Teapot** is a **3D graphics model** people keep spotting in software, demos, and screensavers",
+          "tier": "simple"
+        },
+        {
+          "text": "Commenters recall it from **OpenGL** and **BeOS**, and mention it in a **Windows Pipe screensaver** and a 3D Spacemouse demo.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 44,
+      "terms": [
+        "3D graphics model",
+        "OpenGL"
+      ],
+      "entities": [
+        "Utah Teapot",
+        "OpenGL",
+        "BeOS",
+        "Toy Story",
+        "Windows Pipe",
+        "3D Spacemouse",
+        "Computer History Museum",
+        "University of Utah"
+      ],
+      "comments": [
+        {
+          "by": "EvanAnderson",
+          "text": "I saw the Utah Teapot at the Computer History Museum in Mountain View when I visited in late 2004. I didn't know it was there. I immediately started calling friends, while standing there in the \"Visible Storage\" exhibit gawking at it, telling each of them, breathlessly: \"I'm looking at _the_ Utah teapot.\" I was told later by a docent that my reaction was not uncommon. >smile<"
+        },
+        {
+          "by": "apitman",
+          "text": "I work at the University of Utah. They had an incredible graphics symposium a few years ago[0]. I got a render of the teapot signed by several of the speakers, which is a prized possession. There was another guy there with an actual replica teapot which he got signed. I was pretty jealous. Sadly Alan Kay was unable to attend so I didn't get to meet him. [0]…"
+        },
+        {
+          "by": "dang",
+          "text": "Related. Others? The original Utah teapot(1.4L) is in stock - https://news.ycombinator.com/item?id=31178947 - April 2022 (7 comments) Why a Computer History Museum Owns a Legendary Teapot - https://news.ycombinator.com/item?id=29259548 - Nov 2021 (1 comment) Show HN: Teapong – A two-player game for fans of Pong and the Utah teapot - https://news.ycombinator.com/item?id=22137758 - Jan 2020 (12…"
+        },
+        {
+          "by": "omoikane",
+          "text": "I first saw Utah Teapot in OpenGL: https://www.opengl.org/resources/libraries/glut/spec3/node89... Surprised to see the teapot got another update this year."
+        },
+        {
+          "by": "fauria",
+          "text": "There is a teapot statue in Dublin, Ireland: https://maps.app.goo.gl/v2GjqYad9n7HhHgP8"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50469994,
+      "url": "https://www.ign.com/articles/nintendo-takes-down-switch-emulators-and-mod-chip-firmware-in-massive-github-dmca-sweep",
+      "hn": "https://news.ycombinator.com/item?id=50469994",
+      "title": "Nintendo Takes Down Emulators and Firmware in Massive GitHub DMCA Sweep",
+      "time": 1794500953,
+      "points": 185,
+      "depth": [
+        {
+          "text": "Nintendo sent **GitHub takedowns** targeting Switch emulators and **mod-chip firmware**",
+          "tier": "simple"
+        },
+        {
+          "text": "The notices named **Yuzu and Citron Neo**; GitHub removed all **144 repositories** carrying the firmware. Picofly chips can be flashed with it to circumvent Nintendo's copy protection.",
+          "tier": "substance",
+          "data": [
+            [
+              "DMCA takedown notices",
+              "4"
+            ],
+            [
+              "repositories removed",
+              "144"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters defend emulation as legal and valuable for preservation; others say running new games on emulators makes the community look bad.",
+      "comment_count": 121,
+      "terms": [
+        "DMCA",
+        "emulator",
+        "firmware",
+        "mod chip",
+        "repository"
+      ],
+      "entities": [
+        "Nintendo",
+        "GitHub",
+        "Yuzu",
+        "Citron Neo",
+        "Picofly",
+        "Nintendo Switch",
+        "The Legend of Zelda: Ocarina of Time"
+      ],
+      "comments": [
+        {
+          "by": "dormento",
+          "text": "Reminder to all that barring access to internal docs, use of internal software/firmware components and information obtained through nefarious means, emulation is 100% legal pretty much everywhere in the world. Edit: of course there's the gray area of scrapers, game downloaders etc... but those are not emulators."
+        },
+        {
+          "by": "lilbigdoot",
+          "text": "FWIW Nintendo, I refuse to give you guys any support after you went after Bowser. I genuinely found that to be awful behavior Probably not worth losing lifelong customers and PR over piracy concerns."
+        },
+        {
+          "by": "skeledrew",
+          "text": "May the forks live on. Also people seriously need to consider Radicle. - https://radicle.network/"
+        },
+        {
+          "by": "Rabbit504030201",
+          "text": "The outcome was obvious. Anyway, the team behind Yuzu is still at large and the development will continue elsewhere, from aside, like in older days of emulation. Not everything has to default to GitHub, and not everything can."
+        },
+        {
+          "by": "haunter",
+          "text": "Every single Switch 2 emulator is still available on Github and Gitlab. And just checked most Switch 1 emulator is still available too because they are not hosted on Github but rather on self hosted repos with their own domains. Not that it matters because they will be back next week either way. The only surprising thing is the PicoFly firmware but that's such a niche. Most peope who have a…"
+        }
+      ],
+      "image": "https://assets-prd.ignimgs.com/2024/02/05/nintendo-blogroll-logos-1707165316914.jpg?width=1280&format=jpg&auto=webp&quality=80"
+    },
+    {
+      "id": 50468888,
+      "url": "https://github.com/hyperionaidev/smolmaxxing/",
+      "hn": "https://news.ycombinator.com/item?id=50468888",
+      "title": "I'm making LLMs work on small and old devices",
+      "time": 1794496990,
+      "points": 178,
+      "depth": [
+        {
+          "text": "someone got **language models** running on a **first-generation iPad Air** and an old TV box",
+          "tier": "simple"
+        },
+        {
+          "text": "The 16B **Ling-mini-2.0** runs at **2.6-4.5 tok/s** on a first-generation iPad Air and **5.1 tok/s** on the Xiaomi TV Box S. smolmaxxing uses custom kernels and pages model experts from flash when needed.",
+          "tier": "substance",
+          "data": [
+            [
+              "Ling-mini-2.0 on first-generation iPad Air",
+              "2.6-4.5 tok/s"
+            ],
+            [
+              "Ling-mini-2.0 on Xiaomi TV Box S",
+              "5.1 tok/s"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 67,
+      "terms": [
+        "mixture-of-experts",
+        "expert pager",
+        "kernel",
+        "tok/s",
+        "flash storage"
+      ],
+      "entities": [
+        "smolmaxxing",
+        "Ling-mini-2.0",
+        "iPad Air",
+        "Xiaomi TV Box S"
+      ],
+      "comments": [
+        {
+          "by": "rcarmo",
+          "text": "I'm doing https://github.com/rcarmo/go-pherence for the same reason. We should swap notes."
+        },
+        {
+          "by": "Farmadupe2",
+          "text": "For the last five months or so, opus and fable have both been able to do this task as a soneshot prompt. An inference engine is almost pure compute and to a first approximation the only operation your hardware needs to support to do llm inference is multiplication [the rest of an inference engine is \"some trig\"]. So to get any model working on $OLD_HARDWARE, the hardest part of the task is now…"
+        },
+        {
+          "by": "mrashad74",
+          "text": "Recently I started this open source project at my AI company, where I'm trying to make LLMs working Now Reached 16B models running on iPad Air 1st gen and xiaomi tv box, both have less than 1GB of usable memory, and reached some decent speeds given the hardware. I'm open sourcing the effort done, kernels developed and results for everyone to re-produce and push more, also the modified models are…"
+        },
+        {
+          "by": "nico",
+          "text": "This is very cool. Love the trend of optimizing small models I’ve been working on small local models and it’s amazing how fast the tech has progressed A year ago, I was creating conversational characters by finetuning a qwen 2.5 0.5b param model, and it worked pretty well. But no reasoning or math capabilities, and still required some decent specs to run; could maybe do well enough in a beefy…"
+        },
+        {
+          "by": "yjftsjthsd-h",
+          "text": "It's technically sweet regardless, so don't take this as even a little bit of negative pushback, but I am curious what the utility of these small models is? Are they smart enough to be useful on practical tasks? What are people doing with them?"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/351f741782f1ce98434a820381c0384ac54ed6b0b092f51f2a48c944bb7bc817/hyperionaidev/smolmaxxing"
+    },
+    {
+      "id": 50467139,
+      "url": "https://www.bbc.co.uk/news/live/c6zjry11v8w1t",
+      "hn": "https://news.ycombinator.com/item?id=50467139",
+      "title": "Nvidia CEO Jensen Huang resigns after reports of second affair deepened scandal",
+      "time": 1794491798,
+      "points": 168,
+      "depth": [
+        {
+          "text": "Nvidia CEO **Jensen Huang** **resigned** after reports of a **second affair** deepened a spying scandal",
+          "tier": "simple"
+        },
+        {
+          "text": "**Colette Kress**, Nvidia's chief financial officer, is the **interim boss**. Huang agreed to **appear before Congress**, and the board says it is investigating reports he was targeted by a foreign intelligence effort; it says it has no reason to believe national security or Nvidia secrets were compromised.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 4,
+      "terms": [
+        "export controls"
+      ],
+      "entities": [
+        "Nvidia",
+        "Jensen Huang",
+        "Colette Kress",
+        "US Congress"
+      ],
+      "comments": [
+        {
+          "by": "theandrewbailey",
+          "text": "See also: https://news.ycombinator.com/item?id=50467087"
+        },
+        {
+          "by": "Betelbuddy",
+          "text": "There are five posts on Jensen Huang resignation on the front page, have the moderators also resigned?"
+        }
+      ],
+      "image": "https://static.files.bbci.co.uk/core/website/assets/static/news/images/metadata/poster-1024x576.5f404a8b8b.png"
+    },
+    {
       "id": 50459703,
       "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
       "hn": "https://news.ycombinator.com/item?id=50459703",
@@ -1107,6 +2091,73 @@
     }
   ],
   "glossary": {
+    "export ban": "A government rule that stops certain goods from being sold or sent to particular countries.",
+    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "open weights": "The model's learned settings are available for people to download and run themselves.",
+    "inference": "When an AI uses what it learned to answer or act, instead of being trained.",
+    "CUDA": "Compute Unified Device Architecture: NVIDIA’s tools for using its graphics chips for computing work.",
+    "IPO": "Initial Public Offering: when a company first offers its shares for the public to buy.",
+    "roadshow": "A series of presentations where a company explains its share sale to potential investors.",
+    "Class A common stock": "One category of a company’s ownership shares; a company may have other categories with different rules.",
+    "ticker symbol": "The short code used to find a company’s shares on a stock market.",
+    "prospectus": "A document laying out a company's finances and plans for people considering its shares.",
+    "registration statement": "A document a company files before an IPO that lays out information about its business and finances.",
+    "moat": "An advantage that makes it hard for competitors to take customers away from a business.",
+    "Socratic method": "Teaching by asking questions that help someone work out an idea instead of simply being told it.",
+    "spaced review": "Coming back to earlier material from time to time to check whether you still know it.",
+    "skill map": "A list of smaller abilities with a progress level marked for each.",
+    "vibecoding": "Using AI to make software from requests instead of writing each line yourself.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "authentication": "The checks a site uses to make sure you are really the person trying to sign in.",
+    "SOTA": "State of the art: the best currently achieved in a field.",
+    "RCE": "Remote Code Execution: a flaw that lets an attacker make a computer run their commands from somewhere else.",
+    "race condition": "When the order of events can cause a program to end up in the wrong state.",
+    "heap corruption": "Damage to a program’s temporary memory that can make it behave incorrectly.",
+    "HTTP/2": "Hypertext Transfer Protocol version 2: a way to send several requests over one connection without making each wait for the last reply.",
+    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
+    "mod_http2": "The part of Apache HTTP Server that handles HTTP/2 traffic.",
+    "halting problem": "The question of whether a program will ever stop; no algorithm can answer it for every possible program.",
+    "formal verification": "Checking a claim using precise rules, often with a computer.",
+    "computational complexity": "The study of how much time or other computing effort different problems need.",
+    "model checking": "Checking whether a program satisfies a statement about what it does.",
+    "Rice's theorem": "A result saying there is no universal way to decide certain things a program might do just by looking at its code.",
+    "Turing machine": "A simple mathematical model of a computer, used to study what programs can do.",
+    "agentic workflow": "A task where an AI takes several steps and acts toward a goal, rather than just replying once.",
+    "Orchestrator": "The Google Antigravity feature that switches between models as a task unfolds.",
+    "quota": "The amount of usage a service allows before it limits what you can do.",
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "context window": "The amount of text and information an AI can take into account at one time.",
+    "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
+    "Cargo": "Rust’s tool for building Rust projects.",
+    "lint": "A warning from a tool that points out code that may cause trouble or break a convention.",
+    "dependency cooldown": "A setting that tells Cargo to ignore package versions published too recently, unless they're already in the lockfile.",
+    "resolver": "A service that finds the internet address for a site name.",
+    "Cargo.lock": "A file that records the package versions a Rust project uses.",
+    "automated health checks": "Automatic tests that see whether a server is working.",
+    "load": "The amount of work a server is handling.",
+    "DDoS": "Distributed denial-of-service: an attack that floods a service with traffic so people can't use it.",
+    "BGP": "Border Gateway Protocol: the system networks use to tell one another where to send internet traffic.",
+    "RSS feed": "A stream of new posts from a site that you can follow in a reading app.",
+    "Exchange": "Microsoft's system for company email and calendars.",
+    "self-hosted": "Running a service on a computer you control rather than relying on someone else's.",
+    "IMAP": "Internet Message Access Protocol: a way for a mail app to read and sync messages kept by an email service.",
+    "MAPI": "Messaging API: a way for email software to communicate with Exchange.",
+    "campaign": "The story-focused part of a game you play through, rather than multiplayer.",
+    "alpha": "An early, unfinished version of a game or program.",
+    "engine": "The underlying software that lets a game run and handles its rules and other systems.",
+    "Vulkan": "A way for software to send graphics work to a graphics card.",
+    "3D graphics model": "A digital shape that a computer program can display from different angles.",
+    "OpenGL": "A set of commands apps use to draw graphics.",
+    "DMCA": "Digital Millennium Copyright Act: a US law that, in this case, makes breaking a disc’s digital lock a violation.",
+    "emulator": "A program that imitates another service so you can try your software without using the real one.",
+    "firmware": "The built-in software that tells a device's hardware how to work.",
+    "mod chip": "A small chip added to a game console to change what it can do.",
+    "repository": "A place where a project's files and change history are kept together.",
+    "mixture-of-experts": "A model split into specialist parts, with only some parts used for each piece of text it produces.",
+    "expert pager": "Software that loads only the needed parts of a model from storage into working memory.",
+    "kernel": "A small program that carries out a calculation on a computer's graphics chip or processor.",
+    "tok/s": "Tokens per second: a rough measure of how quickly an AI produces text.",
+    "flash storage": "The device's built-in storage for keeping files, even when it's turned off.",
     "export controls": "Rules that limit where a company can sell certain goods, often for security reasons.",
     "dual-class share structure": "A setup where some shares give their owners more votes, helping founders keep control.",
     "AI agent": "An autonomous computer program that can carry out tasks.",
@@ -1117,7 +2168,6 @@
     "confidence score": "A number meant to show how likely a system thinks an answer is right; it does not mean the system feels sure.",
     "forward pass": "One run through a model to produce an answer, rather than building it one piece at a time.",
     "calibration error": "A measure of how far a system's confidence is from how often its answers are actually right.",
-    "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
     "OCR": "Optical character recognition: software that reads words from a picture or scanned page.",
     "Perl": "A programming language people use to write instructions for computers.",
     "SIGBOVIK": "The event where this paper was accepted for publication.",
@@ -1147,7 +2197,6 @@
     "fork": "A separate copy of a shared software project that people can take in a different direction.",
     "end-to-end encryption": "A way of scrambling synced information so only the people using it can read it.",
     "MCP": "Model Context Protocol: a standard way for AI apps to connect to outside tools.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "RCT": "Randomized controlled trial: a way to compare a program with a similar group that did not get it, to see whether it made a difference.",
     "null effect": "A study found no clear difference between the people who got a program and those who didn't.",
     "Goodhart's law": "When a measure becomes a target, people may game it, so it stops telling you what you hoped to learn.",
