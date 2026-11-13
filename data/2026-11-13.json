@@ -1,0 +1,1053 @@
+{
+  "date": "2026-11-13",
+  "cards": [
+    {
+      "id": 50472038,
+      "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
+      "hn": "https://news.ycombinator.com/item?id=50472038",
+      "title": "Rust 1.100",
+      "time": 1794508745,
+      "points": 604,
+      "depth": [
+        {
+          "text": "Cargo can **hold back** new package versions, giving scanners time to catch **malicious ones**",
+          "tier": "simple"
+        },
+        {
+          "text": "A **minimum-publish-age setting** makes Cargo skip versions published too recently; the post says dependency cooldowns **reduce some supply-chain risk**, but aren't a complete defense. Rust also lets developers name **`!`** anywhere, for code paths that never produce a value.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 229,
+      "terms": [
+        "Cargo",
+        "minimum-publish-age",
+        "dependency cooldowns",
+        "never type",
+        "supply-chain attack"
+      ],
+      "entities": [
+        "Rust",
+        "Cargo"
+      ],
+      "comments": [
+        {
+          "by": "nirinor",
+          "text": "Woohoo, that's a release! My personal favorites: - Stabilize never type - Stabilize custom allocators - Introduced minimum publish age configurations, also known as dependency cooldowns. When the relevant config is set, the resolver ignores versions published more recently than that, unless they are already in Cargo.lock. (RFC 3923) docs #17335 - cargo-install: now uses the existing lockfile in…"
+        },
+        {
+          "by": "n_u",
+          "text": "> Cargo now reports unused dependencies to users, e.g. > warning: unused dependency `tracing-subscriber`\n--> Cargo.toml:23:1\n23 | tracing-subscriber.workspace = true\n| ^^^^^^^^^^^^^^^^^^\n= note: `cargo::unused_dependencies` is set to `warn` by default\nhelp: consider removing the dependency on `tracing-subscriber` Heck yes"
+        },
+        {
+          "by": "ammar_az",
+          "text": "This release is so big that multiple useful stabilized API aren't event mentioned in the blog post like: - bool::toggle() https://doc.rust-lang.org/stable/std/primitive.bool.html#met... - Box::map() https://doc.rust-lang.org/stable/std/boxed/struct.Box.html#m... - str::trim_prefix(), str::trim_suffix, Path::trim_prefix()"
+        },
+        {
+          "by": "jadbox",
+          "text": "Is the compiler any faster now? Compiling takes forever. I'm also tired of always having to do \"cargo clean\" everyday to clear out 90gb of temp files."
+        },
+        {
+          "by": "steveklabnik",
+          "text": "A monumental release. Thanks to everyone who worked so hard on all of these long-term features that are finally landing."
+        }
+      ],
+      "image": "https://www.rust-lang.org/static/images/rust-social.jpg"
+    },
+    {
+      "id": 50470488,
+      "url": "https://github.com/simpsoka/zigzag",
+      "hn": "https://news.ycombinator.com/item?id=50470488",
+      "title": "Show HN: My $300 embroidery machine needed a subscription, so I built my own app",
+      "time": 1794502962,
+      "points": 464,
+      "depth": [
+        {
+          "text": "someone built their own app because a **$300 embroidery machine** needed a **subscription**",
+          "tier": "simple"
+        },
+        {
+          "text": "Commenters point out that making embroidery designs stitch well takes more than getting a file onto the machine: **stitch placement, size, type, and layering** all matter. They also mention **InkStitch**, a plugin for InkScape that exports SVGs into files an embroidery machine can use.",
+          "tier": "substance",
+          "data": [
+            [
+              "machine price",
+              "$300"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see LLMs as a way to empower people to build tools for themselves; others think personal software may be worth little or worry manufacturers will lock down hardware.",
+      "comment_count": 172,
+      "terms": [
+        "digitizing",
+        "PES/DST",
+        "SVG",
+        "API",
+        "reverse engineering",
+        "LLM"
+      ],
+      "entities": [
+        "Claude",
+        "Brother",
+        "Brother PE-150",
+        "Owen Trueblood",
+        "embroiderybreeze.com",
+        "PEmbroider",
+        "InkStitch",
+        "InkScape",
+        "William Osman",
+        "StitchSlop",
+        "Astra",
+        "Hatch",
+        "Etsy",
+        "yt-dlp",
+        "Respira",
+        "Google",
+        "Fitbit",
+        "Nintendo",
+        "BeLine Locks"
+      ],
+      "comments": [
+        {
+          "by": "spdustin",
+          "text": "I'm going to assume Claude did the heavy lifting here (because it's Q4 2026 and the odds are in my favor), so if I'm right: this is one of the best examples of the way LLMs can empower users to not only scratch all the itches, but demonstrate to anyone who stumbles by just how satisfying it can be to do so themselves. Your app represents a future that I, an old, actually love. When I see projects…"
+        },
+        {
+          "by": "skeedle",
+          "text": "I also recently entered into the world of embroidery software (disclaimer: I programmed embroiderybreeze.com). I can best describe it as these poor embroiderists have been held hostage by Big Embroidery for years. The software out there is old, and super expensive. My wife has embroidered a lot and got frustrated trying to digitize just some simple designs and asked if I could make software for…"
+        },
+        {
+          "by": "gregsadetsky",
+          "text": "This is very very much in my current wheelhouse. My (extremely genius) friend Owen Trueblood reverse engineered the Brother PE-150 [0] and made a replacement motherboard, replacing the stock one, to control it over USB. The PE-150 is a great example of the absurdity/sadness of the embroidery world: today, you can have those machines for $100 on eBay, completely functional, but being…"
+        },
+        {
+          "by": "TrackerFF",
+          "text": "If there's one thing I'm very optimistic about with AI, it's the de-bricking of bricked things, giving new life to legacy/unsupported software and hardware, or just getting around shitty practices like this. Seems very promising. I have a home recording studio, and there's a small revolution going on with people cloning subscription-based stuff. Some brands are notorious for making expensive…"
+        },
+        {
+          "by": "rocmcd",
+          "text": "For anyone interested in this space, I'd also recommend looking at InkStitch[0], which is a plugin for InkScape. It allows you to take SVGs and export them into file types that an embroidery machine can use. It's not without its faults (there is a surprising amount of care needed for any design - stitch placement, size, type, layering, etc), but it's been a fun experience to take an SVG and turn…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50477231,
+      "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
+      "hn": "https://news.ycombinator.com/item?id=50477231",
+      "title": "Nvidia employees petition to bring back Jensen Huang",
+      "time": 1794536184,
+      "points": 421,
+      "depth": [
+        {
+          "text": "employees are asking **Nvidia’s board** to **bring back Jensen Huang** after his resignation",
+          "tier": "simple"
+        },
+        {
+          "text": "An internal **suggestion-box post** drew more than **1,600 comments**, and the article says the majority backed his return. Huang’s resignation came after reports of multiple affairs, including one involving a **suspected Chinese intelligence asset**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: supporters say his leadership and importance to Nvidia justify bringing him back; critics say the reported affairs and possible security or compliance risks make that a bad idea.",
+      "comment_count": 318,
+      "terms": [
+        "ITAR",
+        "fiduciary duty",
+        "interim CEO"
+      ],
+      "entities": [
+        "Nvidia",
+        "Jensen Huang",
+        "Colette Kress",
+        "Harvey Jones",
+        "Synopsys",
+        "WIRED",
+        "Reuters",
+        "FBI"
+      ],
+      "comments": [
+        {
+          "by": "soundworlds",
+          "text": "> \"We are all humans and can make mistakes. Jensen did so many good things and he needs a second chance,” wrote another. I think if it was one affair, this would hold. It is allegedly 3 and counting, and includes a likely spy from a rival nation, and likely knowledge of selling to the rival nation despite the current laws. You can think he is amazing at many parts of this job, but at this point…"
+        },
+        {
+          "by": "dantillberg",
+          "text": "Jensen's not coming back anytime soon. You can disregard/diminish the affairs, and you can believe that the \"spy\" angle is overblown/wrong. But Jensen Huang has admitted to a longstanding affair with the CEO of a company that appears to exist only to evade ITAR restrictions. It's just impossible to believe that Jensen did not know what MegaSpeed was doing. While by all appearances he facilitated…"
+        },
+        {
+          "by": "jmathai",
+          "text": "I imagine there's a lot of mixed emotions at Nvidia. Jensen seemed to have a very likable persona about him and he truly was a great CEO of the company. I imagine many looked up to him and are left to make sense of the past week. They've also taken a pretty big pay cut this week and potentially into the future."
+        },
+        {
+          "by": "PsycorAI",
+          "text": "I loved and admired Jensen. He and his team's vision, energy, positivity and ingenuity have kept other companies scrambling to catch up for decades - since 1993! If the investigation finds he didn't divulge secrets or participate in moving chips to China I'd like to see him brought back by popular demand of his team, and also investors. Hopefully Nvidia will survive and thrive. After all Apple…"
+        },
+        {
+          "by": "bottlepalm",
+          "text": "F yea! Bring him back. If not, walk out and sink the company. This is looking more like a NYT hit job. Drop unsubstantiated anonymous allegations after the election. The board hires a left wing firm to do 'investigations'. The plan here for the anti-AI left to take control of AI at the source - Nvidia. It's time to fight back."
+        }
+      ],
+      "image": "https://media.wired.com/photos/6af6533dc5d481da1362b330/191:100/w_1280,c_limit/Petition-Bring-Back-Jensen-Business-2299493060.jpg"
+    },
+    {
+      "id": 50472260,
+      "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
+      "hn": "https://news.ycombinator.com/item?id=50472260",
+      "title": "Gemini 4 Hydrogen and Orchestrator",
+      "time": 1794509521,
+      "points": 388,
+      "depth": [
+        {
+          "text": "Google pairs a **fast model** with a **stronger one** that steps in when coding gets tricky",
+          "tier": "simple"
+        },
+        {
+          "text": "**Carbon** explores dependencies and makes a plan; **Hydrogen** then handles edits, package updates, and tests, with Carbon taking over if Hydrogen hits friction. Orchestrator reached near-Carbon task success on Terminal-Bench 4.1 while using **24% less quota** and finishing 19% faster.",
+          "tier": "substance",
+          "data": [
+            [
+              "less quota",
+              "24%"
+            ],
+            [
+              "faster",
+              "19%"
+            ]
+          ]
+        }
+      ],
+      "camps": "One camp likes not having to switch models; another doubts the savings or wants to choose which model handles each task.",
+      "comment_count": 104,
+      "terms": [
+        "model router",
+        "quota",
+        "SDK",
+        "agent",
+        "long-horizon task"
+      ],
+      "entities": [
+        "Google",
+        "Google Antigravity",
+        "Gemini 4 Hydrogen",
+        "Gemini 4 Carbon",
+        "Orchestrator",
+        "Antigravity SDK",
+        "Terminal-Bench 4.1"
+      ],
+      "comments": [
+        {
+          "by": "artdigital",
+          "text": "There were so many memes about “Gemini Hydrogen” after they released Carbon. That they actually released a model named Hydrogen makes this very funny But a new Flash model is very welcome. Argon and Carbon are very slow. In the time it takes for them to complete a single task, Opus already managed to complete multiple things. They’re so slow, I started using 3.8 Flash over them. (A lot of it is…"
+        },
+        {
+          "by": "vegardx",
+          "text": "This is essentially what Anthropic does with the advisor mode and what GitHub does with their multi-model pipeline using the HydraFusion model, which is just a large set of different models with different qualities used in a pipeline to produce an answer. What I don't understand is how they all make it work with caching in general. Looking at how the advisor mode in claude work you seem to only…"
+        },
+        {
+          "by": "LeonidBugaev",
+          "text": "Do not forget that from Jan 1 all google models get 2x price bump (it stated on their pricing page)"
+        },
+        {
+          "by": "gunalx",
+          "text": "I'm so confused by their new naming scheme. What was wrong with number and pro/flash/flash lite."
+        },
+        {
+          "by": "fmind-dev",
+          "text": "Excellent mode! I don't have to constantly switch between models and efforts."
+        }
+      ],
+      "image": "https://antigravity.google/assets/image/blog/4-Hydrogen---Wide.png"
+    },
+    {
+      "id": 50472490,
+      "url": "https://www.smithsonianmag.com/smart-news/astronomers-found-a-mysterious-object-orbiting-far-beyond-pluto-it-could-be-a-new-dwarf-planet-hidden-in-our-solar-system-180989857/",
+      "hn": "https://news.ycombinator.com/item?id=50472490",
+      "title": "Dwarf planet candidate appears which takes roughly 280 years to orbit our sun",
+      "time": 1794510333,
+      "points": 269,
+      "depth": [
+        {
+          "text": "someone spotted a **potentially huge object** beyond Pluto that may qualify as a **new dwarf planet**",
+          "tier": "simple"
+        },
+        {
+          "text": "The object is called **2026 ED138**; astronomers even found it in photographic plates from 1937. It takes **281.1 years** to orbit the sun, and its estimated width is **370 miles to 930 miles**—a measurement astronomers still need to confirm.",
+          "tier": "substance",
+          "data": [
+            [
+              "orbital period",
+              "281.1 years"
+            ],
+            [
+              "distance from the sun",
+              "46 times farther from the sun than Earth is"
+            ],
+            [
+              "estimated width",
+              "370 miles to 930 miles across"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 114,
+      "terms": [
+        "dwarf planet",
+        "infrared light",
+        "photographic plates"
+      ],
+      "entities": [
+        "2026 ED138",
+        "Vera C. Rubin Observatory",
+        "Matthew Holman",
+        "Kevin Napier",
+        "Mario Jurić",
+        "Smithsonian Astrophysical Observatory",
+        "ALMA",
+        "Pluto",
+        "Ceres",
+        "Eris",
+        "Makemake",
+        "Haumea",
+        "Neptune",
+        "Paul Byrne",
+        "Megan Schwamb"
+      ],
+      "comments": [
+        {
+          "by": "ddahlen",
+          "text": "If anyone is interested, here is its orbit, my old day job was to compute orbits for asteroids and comets. (This uses wasm, meant for a desktop, and will download the asteroid catalog of about 65mb, you have been warned) https://dahlend.github.io/ketev/#t=2009-07-01.717&sel=2026%2... This is a big boy."
+        },
+        {
+          "by": "Vishal_Max",
+          "text": "I always feel amazed to know how suns gravity keeps hold of massive planets millions of kilometre away from it and how we are still finding objects in our solar system!"
+        },
+        {
+          "by": "ecshafer",
+          "text": "There was a lot of negative press and commentary about \"demoting\" Pluto from being a planet at the time. But its obviously true that it was the right move, and creating this \"dwarf planet\" class of objects was correct. It was hard to justify Pluto being a planet when Ceres exists, but Eris, Haumea, Makemake and all of these other possible Dwarf planets are the nail in the coffin."
+        },
+        {
+          "by": "christophilus",
+          "text": "> They even found it in photographic plates from 1937 Pretty rad."
+        },
+        {
+          "by": "reenorap",
+          "text": "Is this Planet X that they have been talking about for a while now?"
+        }
+      ],
+      "image": "https://th-thumbnailer.cdn-si-edu.com/E_AVW_CNNf5pMT44Nj_EMdcaQk0=/fit-in/1200x0/filters:focal(1024x770:1025x771)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/ab/21/ab21fe86-4d88-46f9-bcc2-d385adaa2ceb/noirlab2626c.jpg"
+    },
+    {
+      "id": 50474883,
+      "url": "https://unemploymentlabs.com/checkpoint-forensics",
+      "hn": "https://news.ycombinator.com/item?id=50474883",
+      "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+      "time": 1794520571,
+      "points": 265,
+      "depth": [
+        {
+          "text": "someone found **Blackwell fingerprints** in the **starting weights** of six Chinese AI models",
+          "tier": "simple"
+        },
+        {
+          "text": "The team compared published weights with candidate starting values and found **six models** from DeepSeek, Moonshot AI, MiniMax and Ant Group matching **148-SM or 152-SM Blackwell layouts**. They reproduced the matches for DeepSeek-V4-Flash and Kimi K3 on physical Blackwell chips, but the pattern **does not prove** those chips did the training or show where they were or whether export controls were violated.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: skeptics question whether initialization proves the training hardware and whether the report is trustworthy; others say remote GPU use outside China can be legal.",
+      "comment_count": 76,
+      "terms": [
+        "GPU",
+        "model weights",
+        "seed",
+        "SM",
+        "hardware fingerprint",
+        "distillation",
+        "export controls"
+      ],
+      "entities": [
+        "NVIDIA",
+        "Blackwell",
+        "Hopper",
+        "DeepSeek",
+        "Moonshot AI",
+        "MiniMax",
+        "Ant Group",
+        "PyTorch",
+        "AMD",
+        "MI300X"
+      ],
+      "comments": [
+        {
+          "by": "flowerlad",
+          "text": "Chinese AI companies are free to use any Nvidia GPU they want as long as the GPU is not physically located within China. It is entirely consistent with US export controls for Chinese AI companies to remotely use GPUs located in Singapore or Malaysia. “In facilities across the region, Megaspeed rents Nvidia chips to Chinese tech giants such as Alibaba, an arrangement that does not violate current…"
+        },
+        {
+          "by": "x313",
+          "text": "The author of this piece is a SWE-turned-influencer \"China hawk\" from OpenAI (i.e. the primary advocate of export bans along with Anthropic), and this isn't an academic paper despite the theming. I have no idea whether this is legit or not (there's no link to any code), I'm mentioning this because all the comments here are assuming truth without verifying the contents."
+        },
+        {
+          "by": "martinwright",
+          "text": "I definitely care about this much less than it seems I'm supposed to. I think the frontier models are definitely in a healthy dynamic where it seems the near-but-not-quite performance of open-weight models are what is pushing the most innovation and price competition from OpenAI, Anthropic and co"
+        },
+        {
+          "by": "loneboat",
+          "text": "> We recover traces of the models’ initial values, and then search for the hardware configurations and initial configurations that reproduce them From my (very cursory, naive, layman's) glance at the summary, they're identifying and tracing some characteristics that specific hardware imparts into a model's initialized weights. But then concluding that this indicates the models were also \"trained…"
+        },
+        {
+          "by": "GenerWork",
+          "text": "It's insane how many articles have dropped in the past 24 hours that all have a similar tone. At this point it's hard to see this as anything other than a broad coordination from someone who wants to destroy Jensen/Nvidia."
+        }
+      ],
+      "image": "https://unemploymentlabs.com/checkpoint-forensics-og.png?v=4"
+    },
+    {
+      "id": 50473190,
+      "url": "https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12/",
+      "hn": "https://news.ycombinator.com/item?id=50473190",
+      "title": "Former Nvidia CEO Huang had a relationship with a second employee, sources say",
+      "time": 1794513093,
+      "points": 219,
+      "depth": [
+        {
+          "text": "sources say former Nvidia CEO Huang had a **relationship** with a **second employee**",
+          "tier": "simple"
+        },
+        {
+          "text": "Some commenters suspect a **coordinated release**; another hopes those involved are **not retaliated against**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 239,
+      "terms": [
+        "TRT"
+      ],
+      "entities": [
+        "Nvidia",
+        "Huang",
+        "Tencent"
+      ],
+      "comments": [
+        {
+          "by": "xianshou",
+          "text": "If you find two ants in the kitchen, there are more than two ants in the kitchen."
+        },
+        {
+          "by": "filipdobro",
+          "text": "This seems like a coordinated hit, slowly releasing more and more information. What's really going on?"
+        },
+        {
+          "by": "atleastoptimal",
+          "text": "I always got the impression that it was somewhat of an open secret that most billionaires had soft harems of sorts, usually tacitly understood but never publicly addressed, and that the apparent outrage at affairs/scandals at this level is a sort of charade of allegiance to social norms to enforce the facade that standards of propriety apply even at the highest levels."
+        },
+        {
+          "by": "legitster",
+          "text": "There is an obvious pattern for these high level executive roles. They are all workaholics, they are not particularly loyal, they all have loose moral compasses, they don't have any clear line between work and their personal life, and they treat relationships like business arrangements. This feels so common that I would not even be quick to assume this is some sort of unknown betrayal to his…"
+        },
+        {
+          "by": "King-Aaron",
+          "text": "There's this little part of me wondering if this was all known about for a long time, and the sudden release of information about all three women is coordinated for some nefarious business reason."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50467297,
+      "url": "https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little/",
+      "hn": "https://news.ycombinator.com/item?id=50467297",
+      "title": "Our software engineering interviews are changing a little",
+      "time": 1794492328,
+      "points": 212,
+      "depth": [
+        {
+          "text": "Jane Street is testing **interview rounds** with less coding and more **design and code-checking**",
+          "tier": "simple"
+        },
+        {
+          "text": "The trial is for **campus candidates** in onsite interviews. New rounds involve **less code-writing** and more design, checking code quality and structure, and using LLMs to produce code; most rounds stay traditional, without LLM assistance. The formats are still evolving.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some commenters say coding interviews are poor signals or a waste of time; others favor testing candidates with live coding, design, and AI use.",
+      "comment_count": 207,
+      "terms": [
+        "LLMs",
+        "abstractions"
+      ],
+      "entities": [
+        "Jane Street",
+        "Google",
+        "Meta",
+        "Anthropic",
+        "Leetcode",
+        "OCaml"
+      ],
+      "comments": [
+        {
+          "by": "janalsncm",
+          "text": "Leetcode was stupid before LLMs and now it’s even less useful as a signal. What I want to know is whether someone has basic DSA understanding. Is the person familiar with any programming language. Can they translate business requirements into code? Can they disambiguate weird things PMs say into a viable plan? You do not get a better signal about that from asking harder leetcode problems. Never…"
+        },
+        {
+          "by": "fernandotakai",
+          "text": "so, i've gone through a bunch of iterations on how to interview in days of LLMs and i came up with a process that is quite good: first, a coding problem that is solved live (right now, online) -- it's not a hard one and most LLMs can easily one shot it. BUT: if you are not a senior developer, you need to do it without LLM, and if you are a senior+ and do it via LLM, the bar is super raised and…"
+        },
+        {
+          "by": "bluGill",
+          "text": "Does it work? How do they know it works? There are a lot of people telling you how they interview and why. Almost none of them have shown even the slightly indication that they are aware there there is scientific research on what works for an interview, much less that they apply it. They also are not showing any indication that they have done any testing - to see if their questions help hire…"
+        },
+        {
+          "by": "saghm",
+          "text": "This is the third Jane Street-related thing I've seen on here this week after not seeing much about them that I can remember any time recently beforehand I'm aware of their use of OCaml and probably do other things that might be of interest to the HN community, but it seems like a lot in a very short time out of nowhere. Is there some sort of marketing push or something going on?"
+        },
+        {
+          "by": "floathub",
+          "text": "This is a completely side comment, but I don't understand why stories about Jane Street keep making the front page day after day: Today:\nhttps://news.ycombinator.com/item?id=50467297 Yesterday:\nhttps://news.ycombinator.com/item?id=50455394 Two days Ago:\nhttps://news.ycombinator.com/item?id=50438261 It's a bit odd (?!)."
+        }
+      ],
+      "image": "https://blog.janestreet.com/static/img/header.png"
+    },
+    {
+      "id": 50467460,
+      "url": "https://chipsandcheese.com/p/talking-zen-6-with-mike-clark-at",
+      "hn": "https://news.ycombinator.com/item?id=50467460",
+      "title": "Talking Zen 6 with Mike Clark at AMD In-Depth",
+      "time": 1794492757,
+      "points": 210,
+      "depth": [
+        {
+          "text": "AMD’s original **Zen architect** talks through what changed in its next family of **CPU cores**",
+          "tier": "simple"
+        },
+        {
+          "text": "Clark says Zen 6c’s dense design is now the **top-of-the-line, no-questions-asked performance core**, with **4MB per core**. The setup he describes has **32 cores and 128MB of L3**; its larger queues add IPC, and AMD wanted both core types to use the same software optimizations.",
+          "tier": "substance",
+          "data": [
+            [
+              "L3 per core",
+              "4MB"
+            ],
+            [
+              "cores",
+              "32"
+            ],
+            [
+              "L3",
+              "128MB"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 4,
+      "terms": [
+        "IPC",
+        "L3 cache",
+        "SMT",
+        "VNNI"
+      ],
+      "entities": [
+        "AMD",
+        "Mike Clark",
+        "George Cozma",
+        "Zen",
+        "Zen 5",
+        "Zen 6",
+        "Zen 6c",
+        "Venice",
+        "Verano",
+        "EPYC",
+        "SPECint 2026",
+        "Chips and Cheese"
+      ],
+      "comments": [
+        {
+          "by": "minfazhai",
+          "text": "The inversion is the part I didn't expect: the dense Zen 6c is now the top IPC core (full 4MB L3 per core), and the old classic design is the high-frequency one. They also tried not to leave a software-visible gap, so the same optimizations still apply to both."
+        },
+        {
+          "by": "koutakun",
+          "text": "Interesting article. Very rare to see CPU designers go so in depth."
+        }
+      ],
+      "image": "https://substackcdn.com/image/youtube/w_728,c_limit/AdyPoLBp4No"
+    },
+    {
+      "id": 50475713,
+      "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+      "hn": "https://news.ycombinator.com/item?id=50475713",
+      "title": "Edge0-145B: Frontier AI Capabilities on Your Own Computer",
+      "time": 1794524777,
+      "points": 194,
+      "depth": [
+        {
+          "text": "someone released a **huge AI model** for laptops that can handle **coding, reasoning, and 3D work**",
+          "tier": "simple"
+        },
+        {
+          "text": "Edge0 reports **29GB peak memory** and decoding above **80 tokens/s** on a compatible laptop. Its demos include a Blender scene and code for a real drone.",
+          "tier": "substance",
+          "data": [
+            [
+              "parameters",
+              "145B"
+            ],
+            [
+              "peak memory",
+              "29GB"
+            ],
+            [
+              "decode speed",
+              "80+ tokens/s"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some are impressed by the reported laptop performance and demos; others question the benchmarks, Mac support, and open-source claims.",
+      "comment_count": 51,
+      "terms": [
+        "parameters",
+        "inference",
+        "tokens/s",
+        "open weights"
+      ],
+      "entities": [
+        "Edge0",
+        "Edge0-145B",
+        "Edge0-120B",
+        "Blender",
+        "Qwen",
+        "DeepSeek",
+        "Claude",
+        "Apple",
+        "Google",
+        "NVIDIA",
+        "OpenAI",
+        "Qualcomm",
+        "Hugging Face",
+        "KiCad",
+        "Unreal Engine 5",
+        "Tesla"
+      ],
+      "comments": [
+        {
+          "by": "_boffin_",
+          "text": "This just a quantized version of 3.8 next flash on strata that’s branded?"
+        },
+        {
+          "by": "mikeshi42",
+          "text": "> Sharing matrices substantially reduces the weights that must be stored and moved while keeping the expert count unchanged. Each group of 64 experts shares two large matrices, while each expert retains a small set of parameters that captures its differences. 145B parameters with only peak 29GB memory usage - really impressive, truly something you can actually run on a decent spec MBP"
+        },
+        {
+          "by": "SwellJoe",
+          "text": "I'm really impressed with the Blender examples. It's amazing how far \"tool use\" has come, when it now means using a tool as complicated as Blender to perform work that would take a human days to complete. I'm a little skeptical the actual models are workable, in the sense that a human could come in after and manually refine and apply better textures, etc. Historically, agent-made designs are…"
+        },
+        {
+          "by": "mortalapeman",
+          "text": "Is this a derived from flash next? That's the impression I get from reading over everything. Using Strata + Qwen 3.8 Flash Next now and I am beyond impressed. It's basically as capable as 5.6 Luna in my hands so far. If this is an upgrade I can't wait to try it out."
+        },
+        {
+          "by": "PaulKeeble",
+          "text": "Thy have shipped this as NVFP4 so its Nvidia blackwell only, presumably their inference engine doesn't support anything outside CUDA 13 specified either. Will be interesting to see if this gains some other quants and other inference engines pick it up and we get some standard GGUF files, its a bit of weird release at the moment rather than GGUF file downloads the variants link on HF is leading to…"
+        }
+      ],
+      "image": "https://cdn.hashnode.com/uploads/covers/6aea03219fa4aa99923b5acf/de5ebdea-3436-4b9a-b3f2-e9910f3a0abc.png"
+    },
+    {
+      "id": 50474361,
+      "url": "https://developer.apple.com/foundation-models-framework/",
+      "hn": "https://news.ycombinator.com/item?id=50474361",
+      "title": "Foundation Models framework",
+      "time": 1794518006,
+      "points": 191,
+      "depth": [
+        {
+          "text": "Apple's framework lets developers add **on-device AI** or **models from other providers** to their apps",
+          "tier": "simple"
+        },
+        {
+          "text": "The same Swift API also reaches **server models** like Claude and Gemini. **Dynamic Profiles** let apps swap models, tools, and instructions within one session, while the **Evaluations framework** tests prompts and checks that features still work under changing conditions.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 26,
+      "terms": [
+        "server models",
+        "Swift API",
+        "Dynamic Profiles",
+        "Evaluations framework"
+      ],
+      "entities": [
+        "Apple",
+        "Foundation Models framework",
+        "Claude",
+        "Gemini",
+        "Swift",
+        "Dynamic Profiles",
+        "Evaluations framework"
+      ],
+      "comments": [
+        {
+          "by": "btown",
+          "text": "> For those just getting started, developers who are enrolled in the App Store Small Business Program and have fewer than two million first-time App Store downloads can access the Apple Foundation Models running on Private Cloud Compute with no cloud API cost.* https://developer.apple.com/private-cloud-compute/ > Where Apple Intelligence is available, eligible developers can use PCC in their apps…"
+        },
+        {
+          "by": "cj00",
+          "text": "I actually think their CoreAI stuff is kind of flying under the radar. But they've got a repo at https://github.com/apple/coreai-models where they're adapting a ton of open weight models to their format to run natively with Swift."
+        },
+        {
+          "by": "albertgoeswoof",
+          "text": "I’ve been using these in my terminal for correcting errors and suggesting commands https://github.com/paul-oms/prompt Surprisingly capable on an m1 8gb (in my opinion this is the smallest machine that local ai needs to run on)"
+        },
+        {
+          "by": "mcemilg",
+          "text": "I just realized that claude has also support App Attest for months [1]. Not sure if that is being used widely. Firebase was the most practicle option to call llms directly from ios apps without having fancy setups. I am surprised Anthropic not promoting this more. [1] https://github.com/anthropics/ClaudeForFoundationModels#auth..."
+        },
+        {
+          "by": "imagetic",
+          "text": "Why is this up front on HN? Did it get an update?"
+        }
+      ],
+      "image": "https://developer.apple.com/news/images/og/foundation-models-framework-og.png"
+    },
+    {
+      "id": 50473231,
+      "url": "https://news.cornell.edu/stories/2026/11/data-centers-need-power-lower-income-rural-residents-pay-price",
+      "hn": "https://news.ycombinator.com/item?id=50473231",
+      "title": "Data centers need power – lower income, rural residents pay the price",
+      "time": 1794513234,
+      "points": 183,
+      "depth": [
+        {
+          "text": "researchers say **data centers** leave **poorer and rural households** paying much of the grid expansion bill",
+          "tier": "simple"
+        },
+        {
+          "text": "Across four major U.S. grids, researchers estimate data centers paid **38%** of infrastructure costs tied to their growth in 2025: $3.12 billion of an **$8.25 billion** bill. The remaining $5.13 billion, or 62%, fell largely on residents, and the lowest-income households saw extra energy costs up to **28%** of their incomes.",
+          "tier": "substance",
+          "data": [
+            [
+              "Data center share of infrastructure costs",
+              "38%"
+            ],
+            [
+              "Data center payments in 2025",
+              "$3.12 billion"
+            ],
+            [
+              "Total linked infrastructure bill in 2025",
+              "$8.25 billion"
+            ],
+            [
+              "Share paid largely by residents",
+              "62%"
+            ],
+            [
+              "Highest extra energy costs for lowest-income households",
+              "28% of their incomes"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say data centers drive price hikes and should pay more; others blame power-supply policy or argue the study misassigns upgrade costs.",
+      "comment_count": 211,
+      "terms": [
+        "wholesale electricity prices",
+        "energy burden",
+        "baseload generation",
+        "transmission infrastructure"
+      ],
+      "entities": [
+        "Cornell Chronicle",
+        "Cornell",
+        "Nature Energy",
+        "Fengqi You",
+        "Cheng Feng",
+        "Cornell AI for Sustainability Initiative",
+        "ChatGPT",
+        "White House Ratepayer Protection Pledge",
+        "BAAJA"
+      ],
+      "comments": [
+        {
+          "by": "MostlyStable",
+          "text": "Increased demand drives up prices under a fixed supply regime. Power is, in many places of the US, something approaching a fixed supply regime. This is not a physical requirement of the universe. It is a policy choice that we have made. I would argue that it is not the data centers driving up power prices, it is our policies around how difficult it is to provision new power (or build almost…"
+        },
+        {
+          "by": "Aurornis",
+          "text": "The authors shared a replication package with all of the data, which more researchers should do: https://zenodo.org/records/23019736 I find their methodology misleading, though. They're basically taking the cost of transmission infrastructure upgrades and then assigning the cost of those upgrades proportional to peak energy demand of the customer base, not the cost of the infrastructure upgrade…"
+        },
+        {
+          "by": "hathawsh",
+          "text": "I struggle to understand why data centers are seen as a problem rather than an opportunity. Cities and counties can charge a high property tax to data centers and the residents can benefit. They might even give residents a dividend from the data center property tax. What's wrong with that plan?"
+        },
+        {
+          "by": "bshaughn",
+          "text": "My power bill has gone up significantly (in Chicago) because we have a really good grid, and relatively cheap power production costs due to investments our tax dollars have gone towards (fun fact 25% of illinois power comes from nuclear, the highest in the country). Now, I and all my neighbors are being financially punished for these investments, because so many data centers are being built out…"
+        },
+        {
+          "by": "Beijinger",
+          "text": "https://pbs.twimg.com/media/HW8LQnGakAAdlU1?format=jpg&name=..."
+        }
+      ],
+      "image": "https://news.cornell.edu/sites/default/files/styles/story_thumbnail_lg/public/2026-11/2026_1480_datacenterenergyburd_final_n.jpg?itok=GFGK4BNP"
+    },
+    {
+      "id": 50471761,
+      "url": "https://mehmetince.net/part-3-6-how-i-ended-up-turning-a-22-year-old-postgresql-type-confusion-primitive-into-rce-cve-2026-6460/",
+      "hn": "https://news.ycombinator.com/item?id=50471761",
+      "title": "Turning a 22-year-old Postgres type-confusion primitive into RCE",
+      "time": 1794507742,
+      "points": 170,
+      "depth": [
+        {
+          "text": "someone turned a PostgreSQL **type-confusion bug** into a way to call **native code**",
+          "tier": "simple"
+        },
+        {
+          "text": "The trick was preparing a query with a **composite type**, changing one field from **UUID to bytea**, then executing it. PostgreSQL kept the old bytes, which the author says let a forged object redirect a native function call to **system()**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: the article frames it as RCE; commenters argue it’s privilege escalation because the attacker already needs database access.",
+      "comment_count": 31,
+      "terms": [
+        "type confusion",
+        "composite type",
+        "prepared statement",
+        "bytea",
+        "RCE",
+        "Datum"
+      ],
+      "entities": [
+        "PostgreSQL",
+        "pg_clickhouse",
+        "ClickHouse",
+        "Mehmet Ince",
+        "Bilge",
+        "EDB",
+        "Claude",
+        "Opus 5"
+      ],
+      "comments": [
+        {
+          "by": "ahartmetz",
+          "text": "Long, meandering article, mixed human/AI writing probably, but the exploit is neat: Create a prepared statement on a table, change the table, then run the prepared statement (which should have been updated but wasn't)."
+        },
+        {
+          "by": "logophobia",
+          "text": "Correct me if I'm wrong, but those all look like sql exploits. Don't those already require some sort of authenticated remote access. They are security issues, but calling them remote code exploitation make them seem more dangerous than they are. These seem more like privilege escalation, you have access through a database account and use that to gain full access to the whole server. So an issue…"
+        },
+        {
+          "by": "jmuguy",
+          "text": "I would call this more of a privilege escalation attack than RCE."
+        },
+        {
+          "by": "igbanam",
+          "text": "Thanks for actually sharing your path to the zero-day. The context and story helps"
+        },
+        {
+          "by": "amluto",
+          "text": "Wow, in my mind this is beyond “code smell” and into code reek! According to the article, Postgres has an internal Datum that might be a pointer or not a pointer. Okay, this is already a bit risky. Datum comes along with a small-integer type id. That id is stored separately, presumably for efficiency? Maybe you have lots of Datums and one id and you do this for efficiency. Okay, as long as there…"
+        }
+      ],
+      "image": "https://mehmetince.net/wp-content/uploads/2026/11/postgresql-composite-type-confusion-primitive-rce-cve-2026-6460.png"
+    },
+    {
+      "id": 50471621,
+      "url": "https://www.nytimes.com/2026/11/12/business/nvidia-megaspeed-alice-huang.html",
+      "hn": "https://news.ycombinator.com/item?id=50471621",
+      "title": "Singapore Says U.S. Not Helpful on Investigation into Suspected Spy's Company",
+      "time": 1794507258,
+      "points": 167,
+      "depth": [
+        {
+          "text": "Singapore says the U.S. gave **little help** investigating **Megaspeed**, a company run by a **suspected spy**",
+          "tier": "simple"
+        },
+        {
+          "text": "Authorities held Alice Huang’s passport from June 2025 until February over potential false declarations linked to Megaspeed. She was released for **insufficient evidence** on those declarations, got a **stern warning**, and was barred from re-entering Singapore. Singapore says Supermicro gave **limited cooperation**; Supermicro says it never sold products to Megaspeed.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters suspect cronyism or a deliberate slowdown; others think U.S. agencies may have been focused on their own investigation or lacked authority to force cooperation.",
+      "comment_count": 60,
+      "terms": [
+        "letter rogatory",
+        "subpoena",
+        "data centers"
+      ],
+      "entities": [
+        "Alice Huang",
+        "Megaspeed",
+        "Supermicro",
+        "Nvidia",
+        "Jensen Huang",
+        "Trump",
+        "U.S. Department of Justice",
+        "Federal Bureau of Investigation",
+        "Wyden",
+        "Neal",
+        "SMIC",
+        "Huawei",
+        "Paul Mozur",
+        "The New York Times"
+      ],
+      "comments": [
+        {
+          "by": "bz_bz_bz",
+          "text": "Here’s the actual statement:\nhttps://www.mha.gov.sg/media-room/newsroom/singapore-investi... Singapore’s main complaint is that the FBI/DOJ didn’t compel Supermicro to cooperate fully with their investigation. It’s very possible cronyism played a part with this administration, but given that the DOJ brought charges against Supermicro executives earlier this year and subpoenaed the company, I…"
+        },
+        {
+          "by": "tedd4u",
+          "text": "Senators Wyden and Neal just opened an investigation. They spell the accusation right out: WYDEN AND NEAL BEGIN TO INVESTIGATE ADMINISTRATION SCHEME TO TAKE CUT OF NVIDIA AI CHIP SALES TO CHINESE COMPANIES; TRUMP AND COMMERCE DEPARTMENT REPORTEDLY IGNORED WARNINGS ABOUT FORMER CEO’S RELATIONSHIP WITH ALLEGED CHINESE SPY"
+        },
+        {
+          "by": "xx__yy",
+          "text": "https://web.archive.org/web/20261112181528/https://www.nytim..."
+        },
+        {
+          "by": "pseingatl",
+          "text": "To compel compliance with an investigation in a foreign country is achieved through the diplomatic device known as a \"letter rogatory.\""
+        },
+        {
+          "by": "int32_64",
+          "text": "If you have travelled around the world in the last few years you have seen the absolute total dominance of Chinese electric cars. I just don't understand this American elites view that cutting off China from acquiring Nvidia chips will result in a strengthened American position instead of getting obliterated by SMIC+Huawei."
+        }
+      ],
+      "image": "https://static01.nyt.com/images/2026/11/12/multimedia/12biz-Singapore-Alice-fmtb/12biz-Singapore-Alice-fmtb-videoSixteenByNine3000.jpg"
+    },
+    {
+      "id": 50474311,
+      "url": "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html",
+      "hn": "https://news.ycombinator.com/item?id=50474311",
+      "title": "AI is turning Apple's app review process into a nightmare for synth developers",
+      "time": 1794517789,
+      "points": 154,
+      "depth": [
+        {
+          "text": "a flood of **AI-made apps** is leaving **synth developers** stuck in Apple's review process for **weeks**",
+          "tier": "simple"
+        },
+        {
+          "text": "Developers including AudioThing, Igor Vasiliev and Sugar Bytes say their releases are **stuck for weeks**. Unfiltered Audio’s Sinusoidal Run Rhythm was **rejected four times**; one reviewer hallucinated that **“Polyharmonic”** was an audio technology requiring a documented license.",
+          "tier": "substance",
+          "data": [
+            [
+              "Sinusoidal Run Rhythm rejections",
+              "4 times"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some blame the surge of AI-made apps for swamping review; others say Apple’s review was bad long before AI, or blame its locked-down store model.",
+      "comment_count": 147,
+      "terms": [
+        "AUv3",
+        "VST",
+        "MIDI",
+        "vibe coding"
+      ],
+      "entities": [
+        "Apple",
+        "App Store",
+        "AudioThing",
+        "Igor Vasiliev",
+        "Sugar Bytes",
+        "Unfiltered Audio",
+        "Sinusoidal Run Rhythm",
+        "Marek Dendes",
+        "CRUX Synth"
+      ],
+      "comments": [
+        {
+          "by": "socalgal2",
+          "text": "Apple's lock down is arguably incompatible with an AI enabled world. I know plenty of non-tech friends vibe coding apps for themselves now but they can't use them on an iPhone"
+        },
+        {
+          "by": "Juvination",
+          "text": "I've been waiting about two weeks for the last review for my app, I got one rejection and that took 20 days. It's a bit of a bummer but there isn't anything I can do about it."
+        },
+        {
+          "by": "ggoo",
+          "text": "This is apple's fault entirely, not AI's. app store review sucked well before AI."
+        },
+        {
+          "by": "JodieBenitez",
+          "text": "IOS is such a dream for virtual instruments: Cheaper than desktop versions, portable, plenty of choice. But the web is getting better too. Plenty of excellent music apps there. The App Store is not the future and it feels good."
+        },
+        {
+          "by": "billyp-rva",
+          "text": "I'm not sure what Apple can do here; Pandora's box is open and it won't be closed. It felt like there was a flood of app releases in the early 2010s during the gold rush. I can't even imagine it now."
+        }
+      ],
+      "image": "https://synthanatomy.com/wp-content/uploads/2026/11/AI-Apple-App-review.jpg"
+    }
+  ],
+  "glossary": {
+    "Cargo": "Rust’s tool for building Rust projects.",
+    "minimum-publish-age": "A rule that makes Cargo wait a set amount of time after a package version appears before using it.",
+    "dependency cooldowns": "A way to wait before using newly published package versions, giving problems time to be spotted.",
+    "never type": "A type for code that never reaches a normal result because it exits or keeps running instead.",
+    "supply-chain attack": "An attack that slips harmful code into software people get through a tool or package they trust.",
+    "digitizing": "Turning artwork into instructions for an embroidery machine, including how the stitches should go.",
+    "PES/DST": "File types used to store embroidery designs so machines can read them.",
+    "SVG": "Scalable Vector Graphics: a picture format that stays sharp when resized.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "reverse engineering": "Figuring out how a program works by examining the program itself.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "ITAR": "International Traffic in Arms Regulations: US rules that restrict sharing certain military-related technology.",
+    "fiduciary duty": "A legal responsibility to make decisions in the interests of a company or the people it represents.",
+    "interim CEO": "A temporary chief executive who runs a company until a longer-term choice is made.",
+    "model router": "A tool that picks which AI model handles a task.",
+    "quota": "The amount of usage a service allows before it limits what you can do.",
+    "SDK": "Software Development Kit: tools a company provides so people can make apps for its device.",
+    "agent": "An AI system that can take steps and use tools to get a task done, not just answer questions.",
+    "long-horizon task": "A job that takes many steps or keeps running over a longer period.",
+    "dwarf planet": "A nearly round object orbiting a star that hasn't cleared similar-sized debris from its path.",
+    "infrared light": "Light we can't see that lets astronomers measure heat coming from an object.",
+    "photographic plates": "Flat sheets used to record photographs before modern digital cameras.",
+    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "model weights": "The learned settings inside an AI that shape how it responds.",
+    "seed": "The starting number that helps determine what numbers a random-number generator produces.",
+    "SM": "Streaming Multiprocessor: one of a GPU’s processing units that handles calculations.",
+    "hardware fingerprint": "A pattern in a model’s starting numbers that can hint at which chip created them.",
+    "distillation": "Training a smaller AI to imitate the answers of a larger one.",
+    "export controls": "Rules that limit where a company can sell certain goods, often for security reasons.",
+    "TRT": "Testosterone replacement therapy: medical treatment that provides testosterone to someone whose body has too little.",
+    "LLMs": "Large language models: computer programs trained on lots of writing that can produce text.",
+    "abstractions": "Simpler ways to organize code so you can work with an idea without handling every detail.",
+    "IPC": "Inter-process communication: a way for separate programs on one computer to exchange information.",
+    "L3 cache": "A processor's shared stash of data, meant to save trips to main memory.",
+    "SMT": "Simultaneous multithreading: a way for one processor core to work on more than one stream of instructions at a time.",
+    "VNNI": "Vector Neural Network Instructions: special processor commands used for number-heavy tasks such as the AI and video work mentioned here.",
+    "parameters": "Learned values inside a model that shape the answers it gives.",
+    "inference": "When an AI uses what it learned to answer or act, instead of being trained.",
+    "tokens/s": "Tokens per second: a rough measure of how quickly a model produces text.",
+    "open weights": "The model's learned settings are available for people to download and run themselves.",
+    "server models": "AI models that run on a provider's computers rather than directly on your device.",
+    "Swift API": "A way for an app written in Swift to use features from another piece of software.",
+    "Dynamic Profiles": "Different saved setups an app can switch between, each choosing its AI model, available tools, and instructions.",
+    "Evaluations framework": "A way to test whether an AI feature still works when the request or setup changes.",
+    "wholesale electricity prices": "The prices utilities pay for electricity before it is delivered to homes.",
+    "energy burden": "How much of a household's income goes to paying for energy.",
+    "baseload generation": "Power supply meant to run steadily, rather than only when demand peaks.",
+    "transmission infrastructure": "The lines and equipment that carry electricity from where it is made to where it is used.",
+    "type confusion": "When a program treats data as one kind of thing even though it was created as another.",
+    "composite type": "A database value made up of named fields, like a row with several columns.",
+    "prepared statement": "A query the database works out first and can run later with values supplied separately.",
+    "bytea": "PostgreSQL’s type for storing bytes that aren’t necessarily readable text.",
+    "RCE": "Remote Code Execution: a flaw that lets an attacker make a computer run their commands from somewhere else.",
+    "Datum": "A PostgreSQL container for a value, which may hold the value itself or refer to where it is stored.",
+    "letter rogatory": "A formal request asking another country’s authorities to help gather evidence in a legal case.",
+    "subpoena": "A legal order telling someone to provide records or appear in court.",
+    "data centers": "Large buildings full of computers that store or process information.",
+    "AUv3": "Audio Unit version 3: Apple's way for music-making add-ons to run inside compatible apps.",
+    "VST": "Virtual Studio Technology: a format for add-ons that give music software new instruments or effects.",
+    "MIDI": "Musical Instrument Digital Interface: a way for music software and instruments to share notes and timing.",
+    "vibe coding": "Making software by telling an AI what you want and letting it write the code, often without closely checking how it works."
+  }
+}
