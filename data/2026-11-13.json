@@ -2,6 +2,1215 @@
   "date": "2026-11-13",
   "cards": [
     {
+      "id": 50486482,
+      "url": "https://twitter.com/LibreOffice/status/2121205272479998268",
+      "hn": "https://news.ycombinator.com/item?id=50486482",
+      "title": "LibreOffice actually works 365 days a year",
+      "time": 1794589798,
+      "points": 601,
+      "depth": [
+        {
+          "text": "LibreOffice says it **works all year**, and commenters argue over whether it’s **good enough**",
+          "tier": "simple"
+        },
+        {
+          "text": "The post says LibreOffice **works 365 days a year**. A reply jokes about **366 days a year**; elsewhere, commenters complain about the interface and say they prefer tools like Google Docs.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say LibreOffice is all they need; others prefer alternatives or point to its interface and missing features.",
+      "comment_count": 202,
+      "terms": [
+        "office suite",
+        "open source",
+        "UI"
+      ],
+      "entities": [
+        "LibreOffice",
+        "X",
+        "OpenOffice",
+        "Google Docs"
+      ],
+      "comments": [
+        {
+          "by": "fweimer",
+          "text": "Well, OpenOffice wouldn't print on Tuesdays: “\nWhat a fascinating bug!! My wife has complained that open office will never print on Tuesdays!?! Then she demonstrated it. Sure enough, won't print on Tuesday. Other applications print. I think this is the same bug. Here is my guess: Print to a postscript file. Observe the line:\n%%CreationDate: (Tue Mar 3 19:47:42 2009) Change \"Tue\" to anything…"
+        },
+        {
+          "by": "c0l0",
+          "text": "That reminds me that my yearly donation[0] towards LibreOffice's stewards, The Document Foundation, is coming up in December. It's a wholesome tradition where you wire them the amount of EUR/US$/XYZ that Microsoft demands for a year of a personal Office 365(-ish, eh?) subscription[1] as a tex-deductible donation that will make you feel all warm and fuzzy inside. I hereby invite you to join in! :)…"
+        },
+        {
+          "by": "jdlyga",
+          "text": "If LibreOffice were good enough already, it would already be popular. It's the same with GIMP. On paper it's a Photoshop alternative, but we've all struggled with it. These projects need to take the same route as Blender did. Originally it was a clunky open source alternative, but it went through a complete UI transformation and now blows the competition away."
+        },
+        {
+          "by": "kencausey",
+          "text": "While true and a comment I support, it is worth noting that offline versions of Microsoft Office are and have been just fine, including the latest version of 2024 just updated this week."
+        },
+        {
+          "by": "unpopularopp",
+          "text": "Maybe someone can help but why does LibreOffice take 4-5 seconds to start on Windows? There are many reports of that [0] and otherwise I have zero problems with my system. This is the only application I use regulary which is actually noticeably slow to start. Even restoring a Firefox instance with hundreds of tabs and +20GB RAM committed is quicker (1s)…"
+        }
+      ],
+      "image": "https://pbs.twimg.com/profile_images/1643630535338598402/3ya2QWR3_400x400.jpg"
+    },
+    {
+      "id": 50474959,
+      "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/",
+      "hn": "https://news.ycombinator.com/item?id=50474959",
+      "title": "Reverse engineering my Coway air purifier to ditch the cloud",
+      "time": 1794520989,
+      "points": 565,
+      "depth": [
+        {
+          "text": "someone got a **Coway air purifier** talking directly to **Home Assistant**, instead of relying on **Coway's cloud**",
+          "tier": "simple"
+        },
+        {
+          "text": "The fan's **root certificate** came over **plain HTTP**, letting the author intercept its traffic; reverse-engineering **Bluetooth setup** revealed URLs they could point at a server they control. A custom Home Assistant integration now cuts Coway out of normal operation.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some cheer AI making it easier to free cloud-dependent devices; others ask why buy a Wi-Fi purifier or take on the extra maintenance.",
+      "comment_count": 158,
+      "terms": [
+        "MitM",
+        "root CA",
+        "MQTT",
+        "provisioning",
+        "Home Assistant integration",
+        "HTTP"
+      ],
+      "entities": [
+        "Coway",
+        "Scott J. Goldman",
+        "Airmega IconS",
+        "Home Assistant",
+        "Apple Home",
+        "Raspberry Pi",
+        "mitmproxy",
+        "ChatGPT",
+        "Claude",
+        "eMudhra",
+        "Amazon",
+        "Python",
+        "Android",
+        "IoCare",
+        "IoCare+",
+        "MQTT"
+      ],
+      "comments": [
+        {
+          "by": "Aurornis",
+          "text": "> The fan downloads its root CA cert over plain HTTP. It was always MitM-able. The most fascinating part of this wave of LLM reverse engineering is seeing how many weird and poor choices were lying in plain sight. Any number of people could have discovered and exploited this, but it’s tedious work. Most people who can do this are busy with their job and other things. Now LLMs enable people who…"
+        },
+        {
+          "by": "throwitaway222",
+          "text": "This works better than all of the hepa purifiers on the market: 1 20\" box fan.\n4 20\" mirv 13 filters (cheapest is likely costco or lowes or home depot - buy in a 4 pack to save money).\nThis is still expensive but the amount of air processing per hour is incredible. More info\nSearch \"Corsi-Rosenthal Box\"\nor click https://filterbuy.com/resources/air-filter-basics/how-to-bui... Don't go hepa because…"
+        },
+        {
+          "by": "tda",
+          "text": "I just liberated my Haier AC units. The WIFI modules it came with but that I never used turned out to be ESP32's, with solder pads for rx/tx etc. I soldered on some wires, plugged into a USB ot UART dongle and Claude had ESPHome running in no time. I now can not only control the AC units, but I have a lot more visibility into wat it is doing: coil temps, gas temp, valve positions: all is…"
+        },
+        {
+          "by": "bob1029",
+          "text": "Your central HVAC system is by far the best way to keep the air in your house clean. You can run the blower without heat/cool 24/7 without spending too much money. Most modern furnaces have variable speed ECM fan programs that slow down when no heating or cooling demand is present. You can't install a true HEPA filter directly in a typical residential system, but you can have an HVAC tech install…"
+        },
+        {
+          "by": "Eric_WVGG",
+          "text": "Jeez. I've had a Coway for about eight years, such a good device that my whole perception was “good product == good company”. If I had known their IOT offering was such a POS I would think very differently. That said, the non-wifi model works perfectly with a simple HomeKit compatible on/off plug, so all this work — despite being very, very cool — seems a little pointless?"
+        }
+      ],
+      "image": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/coway-airmega-icons-cover.jpg"
+    },
+    {
+      "id": 50481187,
+      "url": "https://status.claude.com/incidents/nn11wk485zfn",
+      "hn": "https://news.ycombinator.com/item?id=50481187",
+      "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+      "time": 1794565093,
+      "points": 462,
+      "depth": [
+        {
+          "text": "Claude services saw **elevated errors**, then a **fix** was deployed as recovery was monitored",
+          "tier": "simple"
+        },
+        {
+          "text": "The incident affected **claude.ai**, Claude Console, Claude Code, and Claude Cowork. The status page said users were having trouble **authenticating** to Claude.ai and Claude Code.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 373,
+      "terms": [
+        "OAuth",
+        "MCPs",
+        "SaaS"
+      ],
+      "entities": [
+        "Claude",
+        "Claude Code",
+        "Claude Console",
+        "Claude Cowork",
+        "Anthropic",
+        "Microsoft",
+        "Microsoft Entra",
+        "GitHub",
+        "Azure",
+        "Codex"
+      ],
+      "comments": [
+        {
+          "by": "Topfi",
+          "text": "Depending on what your job is, this is either the adult equivalent of a snow day or some of the greatest stress in a long time. I have experienced, half a decade ago during some more frequent but less lengthy O365 errors that there are some higher ups who get when this is not something you can fix and some you very much can't. Wishing strength to any \"but it's our mail\" and \"but we bought the…"
+        },
+        {
+          "by": "cmiles8",
+          "text": "The odd thing about these outages is that when they become so big that everyone is impacted then the severity almost drops, since everyone is impacted and thus just shrugs their shoulders."
+        },
+        {
+          "by": "xamde",
+          "text": "Many Claude session suddenly require a re-login, which first worked but now gives OAuth request failed\nTemporarily unable to authenticate. Please retry. Can this be fall-out from the Microsoft outage?"
+        },
+        {
+          "by": "gregman1",
+          "text": "Let the weekend start! Tech sabbatical is kinda enforced now =D"
+        },
+        {
+          "by": "Tehnix",
+          "text": "Is Claude on Azure? GitHub also seems affected, could seem like all of this is related to the huge Microsoft outage"
+        }
+      ],
+      "image": "https://dka575ofm4ao0.cloudfront.net/assets/logos/favicon-2b86ed00cfa6258307d4a3d0c482fd733c7973f82de213143b24fc062c540367.png"
+    },
+    {
+      "id": 50478609,
+      "url": "https://twitter.com/MSFT365Status/status/2121079061774491735",
+      "hn": "https://news.ycombinator.com/item?id=50478609",
+      "title": "Microsoft Outlook/365 still down after 12 hours",
+      "time": 1794546503,
+      "points": 451,
+      "depth": [
+        {
+          "text": "Microsoft 365 is still **down** after **server failures** and recovery **changes didn't help**",
+          "tier": "simple"
+        },
+        {
+          "text": "Microsoft said **unexpectedly unavailable servers** were straining the remaining infrastructure. Some servers that returned could become **unresponsive again** once they received traffic, and the latest changes **weren’t taking as expected**.",
+          "tier": "substance",
+          "data": [
+            [
+              "outage duration",
+              "12 hours"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 297,
+      "terms": [
+        "health check",
+        "SLA",
+        "single point of failure"
+      ],
+      "entities": [
+        "Microsoft",
+        "Microsoft 365",
+        "Outlook",
+        "Exchange Online",
+        "Office 365"
+      ],
+      "comments": [
+        {
+          "by": "nickdothutton",
+          "text": "Microsoft is unable to run a reliable hosted email service, given infinite resources. What people don't realise is that the former is in part a consequence of the latter. Without a forcing function, complexity multiplies, silent fragility accumulates, end-to-end understanding dwindles. There is no incentive to simplify."
+        },
+        {
+          "by": "magnio",
+          "text": "Apparently this single outage means Office 365 uptime this year drops to 3 nines (2 nines for this month). You can claim SLA credit worth 50% service fee by applying before December 31."
+        },
+        {
+          "by": "vld_chk",
+          "text": "This is arguably one of the biggest outages in modern history. AWS region level outage was more visible, but email is a backbone of the modern world. BBC is running live coverage of it at the level of government and ministers, feels surreal"
+        },
+        {
+          "by": "BLKNSLVR",
+          "text": "How many Microsoft employees are working on this? It's concerning that one of the biggest, most valuable companies on the planet, that runs services internationally, can have one of its primary services have gone down for this long. 6 hours ago they seemed to not exactly understand what the problem was, and that was 6 hours into the outage. This is concerning."
+        },
+        {
+          "by": "daitangio",
+          "text": "Is for this reason that my email is hosted on a cheap VPS: https://gioorgi.com/2020/mail-server-on-docker/\nhttps://github.com/docker-mailserver/docker-mailserver It is very easy to set up (just a bit of time on average every 6 month to follow upgrades) and work out of the box. Europe outlook users are experiencing problems too."
+        }
+      ],
+      "image": "https://pbs.twimg.com/profile_images/1040007539088211968/f9H6EzjO_400x400.jpg"
+    },
+    {
+      "id": 50482379,
+      "url": "https://www.science.org/doi/10.1126/science.132.3436.1291",
+      "hn": "https://news.ycombinator.com/item?id=50482379",
+      "title": "Doomsday: Friday, 13 November, A.D. 2026 (1960)",
+      "time": 1794571824,
+      "points": 385,
+      "depth": [
+        {
+          "text": "people are revisiting an old **doomsday prediction** about **population growth**",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: some say forecasts based on past data are too simplistic; others call this prediction pretty accurate.",
+      "comment_count": 267,
+      "terms": [
+        "extrapolation"
+      ],
+      "entities": [
+        "Soylent Green",
+        "Edward G Robinson",
+        "Charlton Heston",
+        "Harry Harrison",
+        "Make Room, Make Room",
+        "Blade Runner",
+        "Anton Petrov",
+        "Heinz von Foerster",
+        "Stein's Law",
+        "Marvel"
+      ],
+      "comments": [
+        {
+          "by": "dnlgrmm",
+          "text": "Beautifully shows how most predictions that extrapolate from past data are too simplistic. We're approaching peak global population and almost all industrialized nations are more worried about population decline than overpopulation these days. Which is why I'm not worried about superintelligence or data centers in space."
+        },
+        {
+          "by": "chiph",
+          "text": "Overpopulation was a big topic in the early 1970's, with competing dire predictions. If you haven't watched it, Soylent Green with Edward G Robinson and Charlton Heston is an illustration of this (no spoilers please!) It was based on Harry Harrison's novel Make Room, Make Room where population growth was out of control, and human life was worth so little that the police used mechanical scoops to…"
+        },
+        {
+          "by": "parsabg",
+          "text": "This trending on HN right now might tell us more about our current state of mind than the people in the 60s'."
+        },
+        {
+          "by": "MeteorMarc",
+          "text": "Approaches infinity has little meaning. Every semimonotonous series of numbers approaches infinity: you can never say that you are a factor 100 off."
+        },
+        {
+          "by": "dang",
+          "text": "I seem to recall a recently submitted article about the dangers of extrapolation, related to population trends. Can't find it now. Anyone?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50478515,
+      "url": "https://ice-wm.org/",
+      "hn": "https://news.ycombinator.com/item?id=50478515",
+      "title": "IceWM",
+      "time": 1794545693,
+      "points": 347,
+      "depth": [
+        {
+          "text": "IceWM is a **lightweight window manager** with **taskbar and menus** for handling app windows",
+          "tier": "simple"
+        },
+        {
+          "text": "Created by **Marko Maček** in 1997, IceWM aims for **speed and simplicity**; it offers configurable themes, multiple-monitor support, and an optional external background, session manager, and system tray. Its page lists release **4.1.0 (2026-08-06)** and says over 450 themes can be downloaded.",
+          "tier": "substance",
+          "data": [
+            [
+              "creation year",
+              "1997"
+            ],
+            [
+              "latest release",
+              "4.1.0 (2026-08-06)"
+            ],
+            [
+              "downloadable themes",
+              "Over 450"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: users praise its low resource use and out-of-the-box setup; others find the interface clunky or lacking basic usability.",
+      "comment_count": 197,
+      "terms": [
+        "window manager",
+        "X Window System",
+        "RandR",
+        "Xinerama"
+      ],
+      "entities": [
+        "IceWM",
+        "Marko Maček",
+        "C++",
+        "X Window System",
+        "RandR",
+        "Xinerama",
+        "Github",
+        "Linux",
+        "box-look.org"
+      ],
+      "comments": [
+        {
+          "by": "yjftsjthsd-h",
+          "text": "I'm mildly bemused at the other comments treating this as a blast from the past. I use icewm today as a super low resource DE for a headless remote desktop system, with a major benefit being that it's all in one with no configuration needed; one unit includes panel, app menu, and window manager that work out of the box."
+        },
+        {
+          "by": "inatreecrown2",
+          "text": "I just switched to IceWM after trying so many different versions of tiling window managers. The one that worked best for me was MangoWM, but in the end it also interfered more than helped with my work.\nA simple floating wm like IceWM works best for the apps I use: basic tools like terminal and Thunar, Reaper, windows apps via wine.\nReally happy I found out about it. It lets me concentrate on the…"
+        },
+        {
+          "by": "throwaway2037",
+          "text": "The screenshots page[1] has a nice collection of different skins. It gives Winamp skin vibes from the 1990s. [1] https://ice-wm.org/screenshots/"
+        },
+        {
+          "by": "lexwhite",
+          "text": "IceWM is great. I think there are a lot of great deployments you could use it for. If you had old computers to give to kids and teach them linux for example, IceWM would be a really great desktop for that. I use dwm still personally but Ice is Nice, and that's for sure! ;)"
+        },
+        {
+          "by": "NoboruWataya",
+          "text": "Some of the screenshots look a lot more modern than I remember when I played around with it, but then I guess that was 20+ years ago. It was one of the first WMs I looked at when I considered moving away from KDE/GNOME. I found its minimalism and low resource usage compared to those environments exciting but never actually liked the UI, I found it too clunky. I eventually settled on AwesomeWM. It…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50479098,
+      "url": "https://www.cnn.com/2026/11/12/business/live-news/microsoft-global-outage-intl-hnk",
+      "hn": "https://news.ycombinator.com/item?id=50479098",
+      "title": "Global Microsoft Outage",
+      "time": 1794550703,
+      "points": 278,
+      "depth": [
+        {
+          "text": "Microsoft's **email outage** hit **millions worldwide**, and **services began recovering** after the company addressed the cause",
+          "tier": "simple"
+        },
+        {
+          "text": "Microsoft said an issue during an earlier **network capacity upgrade** surfaced after a recent network change, and that it was **not a cybersecurity breach**. Email queues were **approaching normal levels**, though some users could still face intermittent access issues or delayed delivery.",
+          "tier": "substance",
+          "data": [
+            [
+              "outage reports reached",
+              "74 countries and territories"
+            ],
+            [
+              "estimated possible lost-productivity cost",
+              "$7 billion"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 174,
+      "terms": [
+        "2FA",
+        "MX",
+        "SMTP",
+        "failover",
+        "network capacity upgrade"
+      ],
+      "entities": [
+        "Microsoft",
+        "Outlook",
+        "Teams",
+        "Copilot",
+        "Exchange Online",
+        "Microsoft 365",
+        "Downdetector",
+        "Anderson Economic Group"
+      ],
+      "comments": [
+        {
+          "by": "mmoustafa",
+          "text": "Still ongoing, I haven't been able to access my personal outlook email for 12+ hours and as a result can't access my accounts that use email 2FA, including my virtual medical appointment! Along with the daily Github outages recently, it's making me do an audit of my dependence on Microsoft."
+        },
+        {
+          "by": "Ungh",
+          "text": "I've had two ex-colleagues contact me this morning in UK government positions and tell me that they're still out of action with no plan B in place. I hope this sort of stuff pushes us to a distributed model rather than a centralised mono-provider one."
+        },
+        {
+          "by": "MisterMunchkin",
+          "text": "It’s mental that the entire thing is centralised. Why don’t big clients have their own servers? They’re paying a fortune every year. The fact that the government can get taken down by a central server is mental. Is it some sort of spying thing? Incompetence?"
+        },
+        {
+          "by": "SubiculumCode",
+          "text": "Also, while they claim it is not a cybersecurity attack (without saying how they know), these are exactly the kinds of things I would expect with the soon/maybenowww future of automated hacking agents wrecking world's cyber infrastructure. Right now, its embarrassing, when it happens to the banks, it will be something more than that."
+        },
+        {
+          "by": "apt-apt-apt-apt",
+          "text": "I remember there was a comment from a MSFT-er talking about how unreliable Azure is. Combined with AI coding, is the whole thing collapsing under its own complexity and weight?"
+        }
+      ],
+      "image": "https://media.cnn.com/api/v1/images/stellar/prod/ap26313845581210.jpg?c=16x9&q=w_800,c_fill"
+    },
+    {
+      "id": 50481870,
+      "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/",
+      "hn": "https://news.ycombinator.com/item?id=50481870",
+      "title": "AI is destroying the trust between writers and readers",
+      "time": 1794568426,
+      "points": 271,
+      "depth": [
+        {
+          "text": "people worry **AI-written books** are making it harder to know **who actually wrote what**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says Amazon lets individuals upload **six books a week**; another says people are publishing **50 books a year**. Others say the worry goes beyond scams: readers may not know whether writing, art, or workplace documents came from a person.",
+          "tier": "substance",
+          "data": [
+            [
+              "Amazon upload limit",
+              "six books a week"
+            ],
+            [
+              "publishing rate mentioned",
+              "50 books a year"
+            ]
+          ]
+        }
+      ],
+      "camps": "Some commenters say AI is destroying trust and flooding readers with slop; others say authorship was already often hidden, and some welcome disruption to publishers' influence.",
+      "comment_count": 159,
+      "terms": [
+        "LLMs",
+        "ghostwriter",
+        "provenance"
+      ],
+      "entities": [
+        "Amazon",
+        "Authors Guild",
+        "Mary Rasenberger",
+        "Shopify",
+        "X.com",
+        "OpenAI",
+        "GPT-2",
+        "Possibly Made by a Human",
+        "The Great Automatic Grammatizator",
+        "Heritage Foundation"
+      ],
+      "comments": [
+        {
+          "by": "notjes",
+          "text": "http://archive.today/8sikZ"
+        },
+        {
+          "by": "dsign",
+          "text": "The year is 2110, and two human writing powerhouses are pitched against each other in mortal confrontation. In Alexandria, Egypt, there's Writers' Street, where both seasoned and aspiring novelists type stories at street cafes, using self-invented codes in chromatic scales that they pluck on their guitars, in front of tourists and ubiquitous survtech that unwillingly--or not so much--witness…"
+        },
+        {
+          "by": "unknownian",
+          "text": "GenAI that imitates human art is the definition of an anti-invention. If an invention is a new innovation that improves something for the human experience, an anti-invention is a new innovation that makes life worse. This is just one of several areas where GenAI has been harmful and should start getting regulated like digital drugs."
+        },
+        {
+          "by": "internet_points",
+          "text": "> Amazon spends a lot of time and effort trying to prevent these [fake] books from getting posted,” Mary Rasenberger, the CEO of the Authors Guild, told me, “but it’s always a game of catch-up.” Do they really? They take a cut; they have incentives to let people get scammed."
+        },
+        {
+          "by": "sarreph",
+          "text": "> Amazon lets individuals upload a maximum of six books a week, allowing for endless churn. That's a book a day (give or take), per account. No human author is publishing a book per day.[0] It's interesting to me how little the incumbent platforms for digital content seemingly have been able to do in combating the tidal, exponential shift in submissions. I just spent a month developing a Shopify…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50483480,
+      "url": "https://garymarcus.substack.com/p/breaking-eli-lilly-ceo-becomes-latest",
+      "hn": "https://news.ycombinator.com/item?id=50483480",
+      "title": "Eli Lilly CEO pushes back on Dario Amodei's medical claims",
+      "time": 1794577887,
+      "points": 254,
+      "depth": [
+        {
+          "text": "Eli Lilly’s CEO is **pushing back** on Dario Amodei’s claims about **AI and medicine**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says **verifying a new working drug** could take **years and millions of dollars per iteration**; another thinks AI could match Amodei’s claims **within ten years**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: skeptics say real-world testing, regulation, and production make fast medical breakthroughs unlikely; supporters say AI’s capabilities are hard to predict and could surprise experts.",
+      "comment_count": 349,
+      "terms": [
+        "REPL loop",
+        "RL loop",
+        "NP-Complete",
+        "LLM"
+      ],
+      "entities": [
+        "Eli Lilly",
+        "Dario Amodei",
+        "Anthropic",
+        "Claude",
+        "Gemini",
+        "Theranos",
+        "Gary Marcus",
+        "ChatGPT",
+        "Google Research",
+        "Musk",
+        "FDA"
+      ],
+      "comments": [
+        {
+          "by": "zug_zug",
+          "text": "In short - the reason medicine is slow for AI is the same reason it's slow for people -- the REPL loop is slow [1]. If you could pause and rewind time, and had perfect observability into every system, no ethical risks, (things that are free in software engineering, or math problems) then the AI could make massively parallel progress. However I do think there are opportunities to greatly improve…"
+        },
+        {
+          "by": "figassis",
+          "text": "What's suspicious about this is not whether it may or may not be possible (it likely isn't), it's that he is using it to borrow money now, that is not collectible in the case of a default. You get a huge exit because you overpromise today, and when it turns out you aren't a prophet, those that trusted you cannot be made whole. People and the law keeps treating this as \"just a sales pitch\", but…"
+        },
+        {
+          "by": "antiloper",
+          "text": "Amodei sounds completely unhinged in that video."
+        },
+        {
+          "by": "Bender",
+          "text": "Maybe there are people permitted to speak about science and medicine with Claude but any time I tried I would get my session [bio] locked. I take those discussions to Gemini that is perfectly willing to discuss epigenetics, supplements, peptides, cell reprogramming, safe sourcing of peptide API manufacturing, 503A/503B compounding, etc... What other LLM's are people using for such discussions…"
+        },
+        {
+          "by": "01100011",
+          "text": "Many things can be true. Dario can be a snake oil salesman. Serious advances in healthcare will take more than a decade to bring to market. AI will dramatically increase the speed of human advancement. AI might kill us or convince us to kill ourselves. The weird thing is that when you create something that is in some ways more intelligent than you are, it becomes very difficult to predict its…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50477649,
+      "url": "https://brave.com/blog/search-api-agentic-payments/",
+      "hn": "https://news.ycombinator.com/item?id=50477649",
+      "title": "Brave Search API now accepts agentic payments via the x402 protocol",
+      "time": 1794539288,
+      "points": 251,
+      "depth": [
+        {
+          "text": "Brave Search now lets **AI agents** pay per search, with **no account** to set up",
+          "tier": "simple"
+        },
+        {
+          "text": "Each **unpaid request** gets a 402 Payment Required response with the price and payment details; the agent retries with **signed USDC**, and results come with a receipt. LLM Context and web, news, image, video, and local searches each cost **$0.005 ($5 per 1,000)**; Base gas fees are covered for a limited time.",
+          "tier": "substance",
+          "data": [
+            [
+              "per request",
+              "$0.005"
+            ],
+            [
+              "per 1,000 requests",
+              "$5"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: skeptics say it is too expensive and doubt it will catch on; supporters see pay-per-use search as a possible alternative to ads and subscriptions.",
+      "comment_count": 141,
+      "terms": [
+        "x402 protocol",
+        "HTTP 402 Payment Required",
+        "USDC",
+        "Base blockchain",
+        "CLI wallet",
+        "gas fees"
+      ],
+      "entities": [
+        "Brave",
+        "Brave Search API",
+        "x402",
+        "USDC",
+        "Base",
+        "Purl Wallet",
+        "Stripe",
+        "LLM Context"
+      ],
+      "comments": [
+        {
+          "by": "ddxv",
+          "text": "I implemented x402 across a very heavily crawled site and have yet to see any transactions go through. Possibly it's not working, but I haven't seen any yet. Reading the x402 reddit you see other similar comments. People joking that the only people putting money into x402 are the people testing to see if x402 works. I do want it to work, so just curious does anyone have any positive anecdotes?…"
+        },
+        {
+          "by": "the_duke",
+          "text": "This seems quite expensive. $5 for 1000 searches. A lot of basic ChatGPT sessions can easily do 30 web searches , which would already cost $0.15 . This brings up an interesting concern: providing search obviously isn't free. It has been financed through ads thus far. What happens when the majority of searches are done by agents?"
+        },
+        {
+          "by": "karhuton",
+          "text": "I want to congratulate the ladies and gents who worked on defining the HTTP protocol, for their foresight of including the 402 response. Would love to hear their thoughts and visions of what the web could be at the time."
+        },
+        {
+          "by": "altilunium",
+          "text": "I just updated my Brave browser on mobile, and it now replaces Google Search with Brave Search by default. Initially, I wanted to switch it back to Google Search, but finding the relevant setting was such a hassle that I was too lazy to bother. So, I just kept using Brave Search for my daily tasks. Surprisingly, the search results aren't that bad. At this point, I might have permanently switched…"
+        },
+        {
+          "by": "araarabish",
+          "text": "Are we going to see all search engines adopting this model? Will this be the future of search engine revenue? May end up more pro-consumer than ads and tracking."
+        }
+      ],
+      "image": "https://brave.com/blog/search-api-agentic-payments/images/featured.jpg"
+    },
+    {
+      "id": 50483611,
+      "url": "https://www.mtsoukalos.eu/2026/11/why-zig-over-c-for-systems-programming/",
+      "hn": "https://news.ycombinator.com/item?id=50483611",
+      "title": "Why Zig over C for Systems Programming",
+      "time": 1794578473,
+      "points": 196,
+      "depth": [
+        {
+          "text": "someone explains why **Zig** is their pick for **new systems code**, even though **C** still matters",
+          "tier": "simple"
+        },
+        {
+          "text": "The author says **errdefer** keeps cleanup next to each allocation and runs it only when the function errors; Zig runs those cleanups in reverse order. Its **slices** carry their length, so an out-of-bounds index is caught in debug and safe modes. The trade-off: **C** has more tools, books, people who know it, and compiler support for more chips, and is more stable.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: Zig fans like its built-in error handling and checks; C advocates say modern tools cover many of the same things and prefer C's stability and ecosystem.",
+      "comment_count": 170,
+      "terms": [
+        "errdefer",
+        "slice",
+        "C ABI",
+        "undefined behavior",
+        "sanitizer"
+      ],
+      "entities": [
+        "Zig",
+        "C",
+        "Rust",
+        "C++",
+        "Go",
+        "clang",
+        "gcc",
+        "Linux",
+        "UNIX",
+        "MUSL",
+        "Mihalis Tsoukalos"
+      ],
+      "comments": [
+        {
+          "by": "uecker",
+          "text": "Zig is a nice language, but those articles always compare new languages against old-style C without use of modern tools. Most of the listed advantages you can have in C as well if you are willing to adopt modern tooling and style: signed overflow checking: sanitizers, errors you can not ignore: [[nodiscard]], slice type which know their size: variably-modified types or span types. Defer will also…"
+        },
+        {
+          "by": "variadix",
+          "text": "I’ve settled on a dialect of C++ for systems programming after using C for a long time. It’s mostly C-like and I disable exceptions, RTTI, etc. but I do use templates, overloads, methods, lambdas, etc. I have my own object system with constructor methods that all return a status code so you don’t need exceptions, my own stdlib for containers, buffered I/O, networking, hashing, math, threading…"
+        },
+        {
+          "by": "asveikau",
+          "text": "Just from the first example: struct user *user_new(const char *name, size_t n_groups)\n{\nstruct user *u = malloc(sizeof *u);\nif (u == NULL)\ngoto fail;\nu->name = strdup(name);\nif (u->name == NULL)\ngoto fail_user;\nu->groups = calloc(n_groups, sizeof *u->groups);\nif (u->groups == NULL)\ngoto fail_name;\nreturn u;\nfail_name:\nfree(u->name);\nfail_user:\nfree(u);\nfail:\nreturn NULL;\n}\nI think you can…"
+        },
+        {
+          "by": "pron",
+          "text": "Also, Zig is as at least as expressive as C++ (but without the implicitness and general language complexity that makes reviewing some sensitive code, where you need to see exactly what operations are performed, hard), and it supports arenas better than C/C++/Rust."
+        },
+        {
+          "by": "drnick1",
+          "text": "All these new languages are unreadable relative to C. If, like me, you like explicit stuff like for (size_t i = 0; i <= n; i++) total += a[i]; all these new languages won't do it."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50481220,
+      "url": "https://status.claude.com/history",
+      "hn": "https://news.ycombinator.com/item?id=50481220",
+      "title": "Claude Is Down",
+      "time": 1794565209,
+      "points": 191,
+      "depth": [
+        {
+          "text": "Claude **went down** for some users, though others said it was still **working fine**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter said they were **kicked out** while finalising a presentation they were about to give in **39 minutes**; another said four projects were ruined by modified source files. A comment quoted a status update saying a fix had been deployed and recovery was being monitored.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some users reported the outage disrupted their work, while others said Claude was working fine for them.",
+      "comment_count": 164,
+      "terms": [
+        "provider-agnostic",
+        "code agent",
+        "harness",
+        "quota",
+        "open-weight model",
+        "on-premise",
+        "webhook",
+        "OTP"
+      ],
+      "entities": [
+        "Claude",
+        "GPT",
+        "juggler",
+        "DeepSeek",
+        "VS Code",
+        "Codex",
+        "OpenRouter",
+        "Microsoft",
+        "Outlook",
+        "Atlassian",
+        "Google",
+        "Slack",
+        "Microsoft Teams"
+      ],
+      "comments": [
+        {
+          "by": "biofox",
+          "text": "Just got kicked out while finalising a presentation I'm about to give in 39 minutes. Wish me luck!"
+        },
+        {
+          "by": "julesrms",
+          "text": "This is where putting a provider-agnostic code agent between you and claude can save your bacon. I can't speak for how other agents work, but in juggler the conversations are stored in a cross-model format, so if claude runs out of tokens or goes titsup during something urgent, I can just switch models to GPT and carry on without needing to restart the task."
+        },
+        {
+          "by": "micw",
+          "text": "My strategy: diversification. I run deepseek harness (which I made a vs code integration for and extended it a lot with plugins) and integrated it with my codex and claude subscriptions as well as an openrouter account. This way I can switch models and providers during my sessions and does not get blocked on such things. Useful for\n- outages\n- running out of quota\n- failing agents e.g. because of…"
+        },
+        {
+          "by": "freecodeio",
+          "text": "somewhere down the line, a hook that triggers through an outlook email, didn't trigger today"
+        },
+        {
+          "by": "revolution88",
+          "text": "Duplicate of https://news.ycombinator.com/item?id=50481187"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50486748,
+      "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+      "hn": "https://news.ycombinator.com/item?id=50486748",
+      "title": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
+      "time": 1794591010,
+      "points": 195,
+      "depth": [
+        {
+          "text": "someone used **AI** to read Gödel’s **shorthand notebooks** and uncovered **hundreds of unknown theorems**",
+          "tier": "simple"
+        },
+        {
+          "text": "Jan von Plato’s project focused on **16 notebooks** totaling 1,009 pages. Claude found **663 theorem candidates**—some with proofs, some sketched, and some only ideas; Coq verified **about 400 as stated**, while about 200 were repaired and about 50 were false.",
+          "tier": "substance",
+          "data": [
+            [
+              "notebooks",
+              "16"
+            ],
+            [
+              "notebook pages",
+              "1,009"
+            ],
+            [
+              "theorem candidates",
+              "663"
+            ],
+            [
+              "verified as stated",
+              "about 400"
+            ],
+            [
+              "repaired",
+              "about 200"
+            ],
+            [
+              "false",
+              "about 50"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters call the findings a huge historical deal; others say the notes show Gödel was on the path, not necessarily that he had a finished proof, and ask how much of the result came from Claude.",
+      "comment_count": 45,
+      "terms": [
+        "theorem",
+        "Gabelsberger shorthand",
+        "proof assistant",
+        "incompleteness theorems"
+      ],
+      "entities": [
+        "Kurt Gödel",
+        "Claude",
+        "Jan von Plato",
+        "Coq",
+        "Gabelsberger",
+        "Helsinki University",
+        "Alan Turing",
+        "Albert Einstein",
+        "Paul Cohen",
+        "Joel David Hamkins"
+      ],
+      "comments": [
+        {
+          "by": "iltennico",
+          "text": "From what historians of science tell us, Gödel was in any case an absolute perfectionist who mostly published work that was bulletproof. His enormous body of notes surely contained some very sharp insights, but it is unlikely that he would have produced illuminating, conclusive new theorems by chance and without realizing it. He was a very harsh reviewer of his own work."
+        },
+        {
+          "by": "hobo123",
+          "text": "The stuff about Gabelsberger shorthand sounds ludicrous to me. My father would write notes in a custom version of it until his death 2020. Officially (i.e. in schools teaching stenography, back in the day) it was long ago replaced by \"unified German shorthand\" (Deutsche Einheitskurzschrift IIRC), but he always considered Gabelsberger to be superior. Well, maybe he too was one of the 6 people in…"
+        },
+        {
+          "by": "imbiased",
+          "text": "I can't remember the exact quote but I believe I read that Gödel confided to Einstein (in their walks in Princeton) on his deep worry of his work being forgotten. If only he knew."
+        },
+        {
+          "by": "ducttapecrown",
+          "text": "It'd be interesting to hear about these new 14 themes of logic Gödel pursued!"
+        },
+        {
+          "by": "tiffanyh",
+          "text": "I’m been trying to use various frontier models to decipher lost ancient languages (like Linear A). I wonder what tactics this used, so that I can leverage in my own work."
+        }
+      ],
+      "image": "https://i.guim.co.uk/img/media/6eeccf216579fe2181ae737d30f31abd7590125c/210_58_1759_1407/master/1759.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=334efc63d7472a97d72be0ffd23af8bb"
+    },
+    {
+      "id": 50458849,
+      "url": "https://makepad.github.io/relax/",
+      "hn": "https://news.ycombinator.com/item?id=50458849",
+      "title": "Relax: JIT compiler for Rust to reduce build times",
+      "time": 1794432001,
+      "points": 176,
+      "depth": [
+        {
+          "text": "someone built a **Rust compiler** that runs code as it builds and **patches edits into the running program**",
+          "tier": "simple"
+        },
+        {
+          "text": "Each function is compiled on its first call, and hot ones are optimized while the program runs; function-body edits can be patched without losing state. It’s **experimental**, doesn’t run every crate yet, and its optimized code took **1.12× as long on x64** and **1.24× as long on arm64** as rustc’s release build across 21 workloads.",
+          "tier": "substance",
+          "data": [
+            [
+              "Optimized code time vs rustc release on x64",
+              "1.12×"
+            ],
+            [
+              "Optimized code time vs rustc release on arm64",
+              "1.24×"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters report failures, miscompiles, and unusably slow patches; others praise the faster edit-run idea and call the compiler ambitious.",
+      "comment_count": 102,
+      "terms": [
+        "JIT",
+        "hot patching",
+        "borrow checker",
+        "incremental build",
+        "crate"
+      ],
+      "entities": [
+        "Relax",
+        "Rust",
+        "Makepad",
+        "Cargo",
+        "rustc",
+        "LLVM"
+      ],
+      "comments": [
+        {
+          "by": "ben-schaaf",
+          "text": "I did a quick test on various of my rust projects. Most of them it failed to run, on one it miscompiles(?) causing a test case to fail. The only project I got it to run without issue is a basic actix-web website. It takes a whole 14 seconds to actually start the web server. A clean compile is only 24s for all dependencies, and a regular incremental debug build is 2.3s. The hot patching is…"
+        },
+        {
+          "by": "faresahmed",
+          "text": "Somehow always, someone somewhere rediscovers that cutting down the time between coding and code execution makes our lives easier and to a degree be able to write better programs. Perhaps the earliest and best attempt was Lisp's computational model. Since then, the idea manifested itself again[1], again[2], and again[3] in different forms. [1]: Inventing on Principle, Bret Victor…"
+        },
+        {
+          "by": "_cart",
+          "text": "Pretty wild to me that AI has enabled the commoditization of one of the gnarliest engineering problems. Over the course of just a month, we now have three \"viable\" AI-driven iteration-focused Rust compilers:\n- https://github.com/makepad/relax\n- https://github.com/DioxusLabs/rustd/\n- https://github.com/indexable-inc/blaze"
+        },
+        {
+          "by": "jkelleyrtp",
+          "text": "I built something similar - tbd on maintaining it - but I got Rust Analyzer emitting code and as well as running in the web. This new concept of rust compile daemon is pretty sick. Can build and iterate on Rust in the browser! https://dioxuslabs.github.io/rustd/"
+        },
+        {
+          "by": "cedws",
+          "text": "Rust is a nice language but it’s so heavy. Since our company switched from Go I’ve had to become used to my laptop being burning hot and stuttering whilst trying to do anything during compilation."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50484421,
+      "url": null,
+      "hn": "https://news.ycombinator.com/item?id=50484421",
+      "title": "U.S. October PPI Rises 6.5% YoY, Highest in Nearly Four Years",
+      "time": 1794581612,
+      "points": 158,
+      "depth": [
+        {
+          "text": "U.S. PPI rose **6.5% year over year**, its **highest level in nearly four years**",
+          "tier": "simple"
+        },
+        {
+          "text": "Commenters offer different explanations for inflation: **the budget deficit**, **Covid’s supply shock**, and **the oil price**.",
+          "tier": "substance",
+          "data": [
+            [
+              "PPI rise",
+              "6.5% YoY"
+            ],
+            [
+              "Highest in",
+              "nearly four years"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 186,
+      "terms": [
+        "PPI",
+        "YoY",
+        "budget deficit",
+        "quantitative easing",
+        "USD"
+      ],
+      "entities": [
+        "BLS",
+        "Fed",
+        "Bitcoin",
+        "Biden",
+        "Trump"
+      ],
+      "comments": [
+        {
+          "by": "seizethecheese",
+          "text": "Here's the actual report https://www.bls.gov/news.release/ppi.nr0.htm"
+        },
+        {
+          "by": "raincole",
+          "text": "Is it okay to post something like this without a source link?"
+        },
+        {
+          "by": "tflinton",
+          "text": "PPI?..."
+        },
+        {
+          "by": "ericd",
+          "text": "We really need to reduce the fiscal/govt budget deficit. It's basically printing trillions per year, and as confidence in the soundness of the USD decreases, demanded interest rates rise, and increase the deficit further. The interest payments are already larger than the defense budget, about $1T/yr. It's an emergency at this point. The old method of raising interest rates to cool inflation isn't…"
+        },
+        {
+          "by": "roody15",
+          "text": "Fundamentally this is a result of wealth accumulation. It is at an all-time high larger than that of the robber baron era. At this point printing money, raising interest rates, quantitative easing (also known as transferring wealth to the wealthy class) can no longer kick the can down the road. Regular populace has been squeezed to the max and system is starting to buckle."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50479876,
+      "url": "https://rightsforum.org/en/diplomatic-sources-the-netherlands-is-negotiating-the-dismantling-of-the-international-criminal-court/",
+      "hn": "https://news.ycombinator.com/item?id=50479876",
+      "title": "'The Netherlands is negotiating dismantling the International Criminal Court'",
+      "time": 1794556549,
+      "points": 155,
+      "depth": [
+        {
+          "text": "the Netherlands is reportedly discussing **major limits** on the International Criminal Court to ease **US sanctions**",
+          "tier": "simple"
+        },
+        {
+          "text": "The Rights Forum says unnamed diplomats describe **three proposed restrictions**: heads of state would get immunity, people from countries outside the treaty could not be prosecuted even for crimes on member territory, and national laws could block ICC cases. It says legal experts consider the changes tantamount to **dismantling the Court**. The Dutch ministry says **no concrete proposals** are before the Assembly of States Parties.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters say international bodies are politically biased; others see the reported negotiations as a capitulation that weakens the Court. One commenter also says negotiating to do something is not the same as doing it.",
+      "comment_count": 66,
+      "terms": [
+        "Rome Statute",
+        "States Parties",
+        "complementarity",
+        "blocking mechanism"
+      ],
+      "entities": [
+        "The Rights Forum",
+        "International Criminal Court",
+        "Rome Statute",
+        "European Union",
+        "Ministry of Foreign Affairs",
+        "Benjamin Netanyahu",
+        "Donald Trump",
+        "Putin",
+        "Yoav Gallant",
+        "UN",
+        "WHO",
+        "Xi"
+      ],
+      "comments": [
+        {
+          "by": "giva",
+          "text": "US was already \"de facto\" immune from the court. https://www.hrw.org/news/2002/08/03/us-hague-invasion-act-be... This is done just to please some foreign pals."
+        },
+        {
+          "by": "momfer",
+          "text": "The source is not without controversy in the Netherlands."
+        },
+        {
+          "by": "ignoramous",
+          "text": "> The restrictions that would be under discussion include: > a) granting immunity to heads of state; > b) excluding the Court's jurisdiction over nationals of non-state parties, even when they commit crimes on the territory of a state party; and > c) denying the Court's jurisdiction over cases covered by national legislation. Basically, no skin in the game for the decision makers, a will to power…"
+        },
+        {
+          "by": "blackerbraidtha",
+          "text": "The future solution will tjen be that the winner in a conflict will race to nab all enemies and execute them. That will be the only way to ensure \"a punishment\". Interring Putin, for example, would lead to pressure from Trump an Xi, in that order, to release him.\nLooks like our future will be more bloody and violent as a result."
+        },
+        {
+          "by": "cudla100",
+          "text": "No balls. Humiliation continues."
+        }
+      ],
+      "image": "https://rightsforum.org/wp-content/uploads/2026/11/1280px-Donald_Trump_and_Benjamin_Netanyahu_at_White_House_2025_4-1.jpg"
+    },
+    {
+      "id": 50467439,
+      "url": "https://libreagi.com/",
+      "hn": "https://news.ycombinator.com/item?id=50467439",
+      "title": "Libreagi – Save OSS Models",
+      "time": 1794492718,
+      "points": 153,
+      "depth": [
+        {
+          "text": "someone built a **private archive** where members save **open models** that might disappear",
+          "tier": "simple"
+        },
+        {
+          "text": "Members can apply to join, and credit grows with model size and time; a model with one copy earns **four times the base rate**. Each file is checked against its source commit, and staff review every model. A **signed public catalog** lists models, hashes and sources so others can rebuild the swarms if the site goes away.",
+          "tier": "substance",
+          "data": [
+            [
+              "Single-copy model credit",
+              "four times the base rate"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see value in preserving open models; others object to requiring an application and login to contribute.",
+      "comment_count": 31,
+      "terms": [
+        "BitTorrent",
+        "tracker",
+        "seed"
+      ],
+      "entities": [
+        "LibreAGI",
+        "BitTorrent",
+        "safetensors",
+        "GGUF",
+        "ONNX",
+        "Apache-2.0",
+        "MIT",
+        "Qwen Community License",
+        "pirateface.co"
+      ],
+      "comments": [
+        {
+          "by": "InsideOutSanta",
+          "text": "I don't understand why this is set up the way it is. Maintaining a BitTorrent tracker for models seems like a reasonably good idea, but you have to \"apply to join\" to be able to contribute? To what end?"
+        },
+        {
+          "by": "jcelerier",
+          "text": "Why the restriction to safetensors and GGUF? onnx is the more common format and specifically made for interchange."
+        },
+        {
+          "by": "randomblock1",
+          "text": "What is the difference between this and https://pirateface.co/ ? Private tracker, and a focus on old models?"
+        },
+        {
+          "by": "modimihir",
+          "text": "I see the merit in keeping a decentralized archive for open models. But there has to be a better way to do it vs keeping it behind auth and an application form."
+        },
+        {
+          "by": "rgbrgb",
+          "text": "oink/waffles.fm [0] for models. very cool [0]: https://en.wikipedia.org/wiki/Oink%27s_Pink_Palace"
+        }
+      ],
+      "image": "https://libreagi.com/og.png"
+    },
+    {
+      "id": 50449891,
+      "url": "https://github.com/adrbn/bo2-mac",
+      "hn": "https://news.ycombinator.com/item?id=50449891",
+      "title": "Show HN: Black Ops II statically recompiled to native ARM64 macOS",
+      "time": 1794373007,
+      "points": 150,
+      "depth": [
+        {
+          "text": "someone got **Black Ops II** running as a **native Mac app** without an emulator",
+          "tier": "simple"
+        },
+        {
+          "text": "The author used Claude Opus to make a tool that **statically recompiles** the Steam copy ahead of time, without Wine, Crossover, or Rosetta. Campaign, local Multiplayer with bots, and local Zombies run at **about 60fps**; the DLC maps require being in your Steam library, heat issues remain, and split-screen is in progress while LAN is planned. One commenter says a small **x86 interpreter** handles anything the translation misses.",
+          "tier": "substance",
+          "data": [
+            [
+              "frame rate",
+              "about 60fps"
+            ]
+          ]
+        }
+      ],
+      "camps": "The post lists Wine among emulators; one commenter pushes back that Wine isn't an emulator.",
+      "comment_count": 67,
+      "terms": [
+        "static recompilation",
+        "AOT",
+        "ARM64",
+        "emulator",
+        "x86 interpreter",
+        "DLC",
+        "LAN",
+        "LLM",
+        "Wine"
+      ],
+      "entities": [
+        "Black Ops II",
+        "Claude Opus",
+        "Steam",
+        "MacBook Pro",
+        "macOS",
+        "ARM64",
+        "Wine",
+        "Crossover",
+        "Rosetta",
+        "Fallout: New Vegas",
+        "Asahi Linux",
+        "DXVK",
+        "Kisak-Black",
+        "Anthropic",
+        "Wave Race 64",
+        "1080 Snowboarding",
+        "Steam Deck",
+        "Age of Empires II",
+        "CoD 4",
+        "MW",
+        "MW2"
+      ],
+      "comments": [
+        {
+          "by": "cornedor",
+          "text": "I've used to same technique to get Fallout: New Vegas running on Asahi Linux on MacOS. Its quite a step, but https://github.com/doitsujin/dxvk makes it possible to skip a lot of work and get the game running in day. You can then make any changes you want, so I'm running fallout nv on a wide display in native resolution and some graphical improvements. Realtime whole world shadow maps, SSAO…"
+        },
+        {
+          "by": "baalimago",
+          "text": "Stuff like this makes me really happy about AI. The convenience that AAA lacks, or that they intentionally withhold, is now within reach."
+        },
+        {
+          "by": "scronkfinkle",
+          "text": "> does not use any emulator whatsoever, be it Wine, Crossover or Rosetta Not sure about the other two, but WINE Is Not an Emulator. It's in the name :)"
+        },
+        {
+          "by": "klaussilveira",
+          "text": "Somewhat related: https://lwss.github.io/Kisak-Black/"
+        },
+        {
+          "by": "balsampershen",
+          "text": "Playing Black Ops 2 on Apple Silicon without any emulation layer in sight is wild. Fallback to a small x86 interpreter for whatever the translation missed instead of crashing is a nice tradeoff, speed over stability. Been playing Bo2 since it came out, never expected to play it on a Mac."
+        }
+      ],
+      "image": null
+    },
+    {
       "id": 50472038,
       "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
       "hn": "https://news.ycombinator.com/item?id=50472038",
@@ -988,6 +2197,86 @@
     }
   ],
   "glossary": {
+    "office suite": "A set of programs for tasks like writing, spreadsheets and presentations.",
+    "open source": "Software whose code is shared so other people can inspect, run, or change it.",
+    "UI": "User interface: the screens and controls people use to operate a device.",
+    "MitM": "Man-in-the-middle: a setup where you sit between a device and the internet to watch or change its messages.",
+    "root CA": "Certification Authority: the top-level organization a device trusts when deciding whether a website's certificate is valid.",
+    "MQTT": "Message Queuing Telemetry Transport: a way for devices and software to pass updates over a network.",
+    "provisioning": "Setting a device up with details like which Wi-Fi network it should join.",
+    "Home Assistant integration": "A small add-on that lets Home Assistant work with another device.",
+    "HTTP": "Hypertext Transfer Protocol: the rules web browsers and servers use to send web pages and other requests.",
+    "OAuth": "A way to let an app access parts of an account without being given the password.",
+    "MCPs": "Connections that let Claude use outside apps, such as business software.",
+    "SaaS": "Software as a Service: software you access over the internet, with the provider running it for you.",
+    "health check": "An automatic test that checks whether a server is working.",
+    "SLA": "Service-level agreement: a provider's promise about how reliably its service will work.",
+    "single point of failure": "One component whose breakdown can stop the whole service from working.",
+    "extrapolation": "Using a trend in past data to guess what might happen next.",
+    "window manager": "The part of a graphical desktop that controls how app windows are placed, moved, and switched.",
+    "X Window System": "A system that lets programs display graphical windows and respond to keyboard and mouse input.",
+    "RandR": "A part of the X display system used to handle screen settings, including multiple monitors.",
+    "Xinerama": "A way for a desktop to spread one large screen across multiple monitors.",
+    "2FA": "Two-factor authentication: a sign-in check that asks for a second proof of identity as well as a password.",
+    "MX": "Mail Exchange: a setting that tells other email services where to deliver email for a domain.",
+    "SMTP": "Simple Mail Transfer Protocol: the system mail apps use to send messages.",
+    "failover": "A backup system taking over automatically when the main one stops working.",
+    "network capacity upgrade": "Work to give a network more room to handle activity.",
+    "LLMs": "Large language models: computer programs trained on lots of writing that can produce text.",
+    "ghostwriter": "Someone paid to write for another person, often without being credited.",
+    "provenance": "The record of where an artwork came from and who owned it.",
+    "REPL loop": "Read–eval–print loop: a cycle where you enter something, see the result, and try again.",
+    "RL loop": "Reinforcement learning loop: a try-and-check cycle where each result helps decide what to try next.",
+    "NP-Complete": "A label for problems where checking a proposed answer can be straightforward, but finding one may require an enormous search.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "x402 protocol": "An open payment method that lets an agent attach payment to a web request instead of logging in with an API key.",
+    "HTTP 402 Payment Required": "A web server's way of saying a request needs payment before it will run.",
+    "USDC": "USD Coin: a digital coin designed to stay worth about one US dollar.",
+    "Base blockchain": "A shared online record of transactions that Brave uses for these payments.",
+    "CLI wallet": "A wallet you use by typing commands into a text prompt instead of clicking through an app.",
+    "gas fees": "Charges for processing a transaction on a blockchain.",
+    "errdefer": "A Zig instruction that runs cleanup code only if the function returns an error.",
+    "slice": "A piece of data that keeps track of how long it is, so code can check where it ends.",
+    "C ABI": "Application Binary Interface: agreed rules that let code written in different languages call each other's functions.",
+    "undefined behavior": "A situation where C++ gives no guarantee about what the program will do.",
+    "sanitizer": "A checking tool that can catch certain mistakes while a program runs.",
+    "provider-agnostic": "Able to work with services from different companies, so you can switch if one goes down.",
+    "code agent": "An AI tool that can take on programming tasks, like changing code or fixing problems.",
+    "harness": "The surrounding code that gives an AI agent tools and a place to work, and checks what it does.",
+    "quota": "The amount of usage a service allows before it limits what you can do.",
+    "open-weight model": "A model whose trained settings are shared so other people can use them.",
+    "on-premise": "Software or equipment run on a company's own computers rather than rented online services.",
+    "webhook": "A message one service sends another when something happens.",
+    "OTP": "One-time password: a code meant to work for one login or for a short time.",
+    "theorem": "A mathematical statement shown to be true through reasoning.",
+    "Gabelsberger shorthand": "A German shorthand system Gödel used to write notes quickly.",
+    "proof assistant": "Software that checks whether a mathematical proof follows its rules.",
+    "incompleteness theorems": "Gödel’s result that some true mathematical statements cannot be proved or disproved inside the system they belong to.",
+    "JIT": "Just-in-time compilation: compiling a program as it runs, rather than beforehand.",
+    "hot patching": "Changing code in a program that is already running, without restarting it.",
+    "borrow checker": "The Rust tool that checks code won’t use a value after it’s gone or let it be changed unsafely.",
+    "incremental build": "A rebuild that reuses unchanged work and only handles what changed.",
+    "crate": "A reusable package of Rust code that you can add to a project.",
+    "PPI": "Producer Price Index: a measure of how prices change for things producers sell.",
+    "YoY": "Year over year: comparing a figure with the same period one year earlier.",
+    "budget deficit": "When a government spends more money than it brings in.",
+    "quantitative easing": "When a central bank buys financial assets to add money to the economy.",
+    "USD": "United States dollar: the currency used in the United States.",
+    "Rome Statute": "The agreement that created the International Criminal Court and sets out what it can do.",
+    "States Parties": "Countries that have joined the Rome Statute.",
+    "complementarity": "The rule that lets the Court step in when a country will not or cannot investigate and prosecute a case itself.",
+    "blocking mechanism": "An EU law that tells European parties to ignore US sanctions and keep supplying the Court and its staff.",
+    "BitTorrent": "A way to share a file by downloading pieces from other people's copies, rather than one central server.",
+    "tracker": "A service that helps people sharing a file find one another.",
+    "seed": "The starting number that helps determine what numbers a random-number generator produces.",
+    "static recompilation": "Translating a game's existing code into code for a different system before running it.",
+    "AOT": "Ahead-of-time compilation: turning a program into an executable before it runs.",
+    "ARM64": "A type of chip design that software can be built for so it runs directly on matching computers.",
+    "emulator": "A program that imitates another service so you can try your software without using the real one.",
+    "x86 interpreter": "A helper program that handles instructions meant for another kind of computer when the main conversion misses them.",
+    "DLC": "Downloadable content: extra game content added after the main game.",
+    "LAN": "Local Area Network: devices connected to the same nearby network.",
+    "Wine": "Software that lets Windows programs run on other operating systems.",
     "Cargo": "Rust’s tool for building Rust projects.",
     "minimum-publish-age": "A rule that makes Cargo wait a set amount of time after a package version appears before using it.",
     "dependency cooldowns": "A way to wait before using newly published package versions, giving problems time to be spotted.",
@@ -998,12 +2287,10 @@
     "SVG": "Scalable Vector Graphics: a picture format that stays sharp when resized.",
     "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
     "reverse engineering": "Figuring out how a program works by examining the program itself.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "ITAR": "International Traffic in Arms Regulations: US rules that restrict sharing certain military-related technology.",
     "fiduciary duty": "A legal responsibility to make decisions in the interests of a company or the people it represents.",
     "interim CEO": "A temporary chief executive who runs a company until a longer-term choice is made.",
     "model router": "A tool that picks which AI model handles a task.",
-    "quota": "The amount of usage a service allows before it limits what you can do.",
     "SDK": "Software Development Kit: tools a company provides so people can make apps for its device.",
     "agent": "An AI system that can take steps and use tools to get a task done, not just answer questions.",
     "long-horizon task": "A job that takes many steps or keeps running over a longer period.",
@@ -1012,13 +2299,11 @@
     "photographic plates": "Flat sheets used to record photographs before modern digital cameras.",
     "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
     "model weights": "The learned settings inside an AI that shape how it responds.",
-    "seed": "The starting number that helps determine what numbers a random-number generator produces.",
     "SM": "Streaming Multiprocessor: one of a GPU’s processing units that handles calculations.",
     "hardware fingerprint": "A pattern in a model’s starting numbers that can hint at which chip created them.",
     "distillation": "Training a smaller AI to imitate the answers of a larger one.",
     "export controls": "Rules that limit where a company can sell certain goods, often for security reasons.",
     "TRT": "Testosterone replacement therapy: medical treatment that provides testosterone to someone whose body has too little.",
-    "LLMs": "Large language models: computer programs trained on lots of writing that can produce text.",
     "abstractions": "Simpler ways to organize code so you can work with an idea without handling every detail.",
     "IPC": "Inter-process communication: a way for separate programs on one computer to exchange information.",
     "L3 cache": "A processor's shared stash of data, meant to save trips to main memory.",
