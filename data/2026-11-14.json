@@ -1,0 +1,1670 @@
+{
+  "date": "2026-11-14",
+  "cards": [
+    {
+      "id": 50489641,
+      "url": "https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247",
+      "hn": "https://news.ycombinator.com/item?id=50489641",
+      "title": "FAA issues national ground stop – lifted 4.5 hours later",
+      "time": 1794603953,
+      "points": 1481,
+      "depth": [
+        {
+          "text": "the FAA issued a **national ground stop** and lifted it **4.5 hours later**",
+          "tier": "simple"
+        },
+        {
+          "text": "CBS News sources said an update to the **private communications network** caused a reboot, crash, and communications outage. In a White House briefing, Secretary Mullin said it appeared **new equipment** was overwhelming the older system.",
+          "tier": "substance",
+          "data": [
+            [
+              "time until lifted",
+              "4.5 hours"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 1138,
+      "terms": [
+        "ground stop",
+        "FTI",
+        "TDM"
+      ],
+      "entities": [
+        "FAA",
+        "L3Harris",
+        "CBS News",
+        "White House",
+        "Secretary Mullin",
+        "Secretary Duffy",
+        "FAA Telecommunications Infrastructure"
+      ],
+      "comments": [
+        {
+          "by": "Alexsky2",
+          "text": "For those interested, there was a 2009 outage of the FAA Telecommunications Infrastructure that at a surface level seems like it could be a similar failure mode. At the very least, it is an interesting read on how the FAAs systems operate, since a lot of the discussion so far has been wild speculation from people with little knowledge on how the national airspace system actually operates…"
+        },
+        {
+          "by": "fooey",
+          "text": "starting to see some explanations for what's going on https://www.wsj.com/us-news/faa-temporarily-halts-flights-ac... > The outage appears to be affecting a telecommunications network overseen by L3Harris Technologies, according to people briefed on the matter. The network handles crucial radio frequencies that air-traffic controllers use to communicate with pilots, the people said. It wasn’t…"
+        },
+        {
+          "by": "Animats",
+          "text": "Info on this is amazingly sparse. Apparently Sec. Duffy posted something on X/Twitter, and that's all the news media have. Looking at LAX departures, it looks like nothing has departed since about 10:30 AM PST, and everything later is showing Delayed or Cancelled. There are times after Delayed, but it's not clear those times mean anything. Some are now in the past. \"flysfo.com\" is too overloaded…"
+        },
+        {
+          "by": "elicash",
+          "text": "Here's what they said caused it in the White House briefing: Sec Mullin: \"What it appears to be right now is, as Sec Duffy and FAA was going in and putting patches into the system, they were putting new equipment and new technology. And that new equipment and new technology, it was overwhelming the older system. Which is why Sec Duffy made it very clear, the patchwork doesn't work. We need one…"
+        },
+        {
+          "by": "nxobject",
+          "text": "Secretary Mullin/DHS is confirming that this will likely be an extended outage... > “This isn’t going to just be be resolved and turned around within the hour\" https://www.nytimes.com/live/2026/11/13/us/ground-stop-natio..."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50493251,
+      "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+      "hn": "https://news.ycombinator.com/item?id=50493251",
+      "title": "Nvidia Allegedly Engineered Scarcity by Funding AI Startups to Buy Its GPUs",
+      "time": 1794624779,
+      "points": 349,
+      "depth": [
+        {
+          "text": "Nvidia is accused of **funding AI startups** that buy its GPUs, helping keep **supply scarce**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter describes Nvidia giving Nebius **first access** to its newest chips and taking equity; others call investing in customers **normal business**. Another says the **artificial-scarcity** claim is the linked article's conclusion, not what the WSJ story says.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some call investing in customers normal business; others suspect the financing helped create scarcity, while one commenter says there is no concrete evidence.",
+      "comment_count": 176,
+      "terms": [
+        "GPU",
+        "circular financing",
+        "neocloud",
+        "hyperscaler",
+        "inference",
+        "ASIC",
+        "AGI / ASI"
+      ],
+      "entities": [
+        "Nvidia",
+        "Nebius",
+        "AMD",
+        "TSMC",
+        "AWS",
+        "GCP",
+        "EVGA",
+        "GameWorks",
+        "PhysX",
+        "GeForce",
+        "Gsync",
+        "Witcher 3",
+        "Watch Dogs",
+        "The Guardian",
+        "WSJ"
+      ],
+      "comments": [
+        {
+          "by": "esalman",
+          "text": "40 year old gamer here having a flashback of all anti- competition practices Nvidia sustained for decades. Who here remembers GameWorks and PhysX effectively sabotaging multi-vendor optimization in titles like Witcher 3 and Watch Dogs? Expensive Gsync monitors? Trying to force OEMs to be GeForce partners in exchange for full GPU support? Forcing EVGA exit from the market? And then completely…"
+        },
+        {
+          "by": "da_chicken",
+          "text": "I thought we knew a year ago that nVidia was doing circular finance? https://www.theguardian.com/technology/2025/dec/28/nvidia-in..."
+        },
+        {
+          "by": "mrgordon",
+          "text": "Nvidia wants to ensure data center companies that are optimized for AI like Nebius stock their buildings with Nvidia chips instead of AMD or ASICs so of course it is smart business sense to partner with them or take stakes in them. Nvidia gives Nebius first access to their newest chips, ensures they get deployed at top performance, allows Nvidia to recognize the revenue upfront, and ends up…"
+        },
+        {
+          "by": "Animats",
+          "text": "\"The reason behind this was to maintain the perception of ongoing high demand and to move an oversupply of semiconductors from TSMC.\" Huh. The circular financing was figured out a while back, but this is something I had not seen before. This could all work out. NVidia stock drops. AI company stock drops. The more efficient approaches to inference and more open models take over for most mid-level…"
+        },
+        {
+          "by": "blueblisters",
+          "text": "Jensen & Nvidia were never AGI / ASI pilled. As a result they never seriously pursued frontier research for open models - which could have easily absorbed any excess compute they planned for. On the other side their customers are rapidly becoming their competitors and will happily eat up spare capacity at TSMC if nvidia can’t fulfill its obligations. Edit: to be fair there are several…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50487864,
+      "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
+      "hn": "https://news.ycombinator.com/item?id=50487864",
+      "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
+      "time": 1794595244,
+      "points": 335,
+      "depth": [
+        {
+          "text": "someone says **six pallets** of **NVIDIA hardware** vanished on the way from California to Texas",
+          "tier": "simple"
+        },
+        {
+          "text": "Six pallets were reportedly worth **$11.4 million**; the truck was headed from Oakland to Fort Worth before investigators lost its **trail in Southern California**. Police haven't confirmed the reported valuation or identified the **specific merchandise**.",
+          "tier": "substance",
+          "data": [
+            [
+              "reported cargo value",
+              "$11.4 million"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 185,
+      "terms": [
+        "GPU",
+        "carrier verification"
+      ],
+      "entities": [
+        "NVIDIA",
+        "Oakland Police Department",
+        "FreightWaves",
+        "The Mercury News"
+      ],
+      "comments": [
+        {
+          "by": "gnabgib",
+          "text": "No one's really said anything about it (maybe the company's in the news for other reasons?), but posted a few times: Tech-Insider $11.4M of Nvidia Chips Vanished in Oakland (6 points, 1 week ago) https://news.ycombinator.com/item?id=50394165 TomsHardware Six pallets of Nvidia GPUs worth $11.4M stolen in California in Aug 2026 (7 points, 1 week ago) https://news.ycombinator.com/item?id=50394256…"
+        },
+        {
+          "by": "jstummbillig",
+          "text": "Is that... a lot? I have no clue how much stuff \"vanishes\" regularly and how much it's worth."
+        },
+        {
+          "by": "tencentshill",
+          "text": "These guys have unlimited money, why are they still transporting with regular couriers? There are tons of end-to-end secure logistics companies out there that can do the job. I can't imagine their insurance is too happy about it either. It's been an ongoing well-coordinated effort, with gear often ending up in China. Hello, where is the FBI?…"
+        },
+        {
+          "by": "not_a_bot_4sho",
+          "text": "My firm has tracked a few incidents like these where the material inevitably ends up in China. (Important: I cannot speak to this specific case! Only that it sounds familiar.) It's too much money for some people to pass up. But a spoiler: you have to trade it for jail eventually because the FBI prioritizes this right now."
+        },
+        {
+          "by": "jms703",
+          "text": "https://news.ycombinator.com/item?id=50405863 https://news.ycombinator.com/item?id=50396888 https://news.ycombinator.com/item?id=50394165"
+        }
+      ],
+      "image": "https://www.freightwaves.com/wp-content/uploads/2026/11/09/NVIDIA-Endeavor-1200x628-1.jpg"
+    },
+    {
+      "id": 50487522,
+      "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
+      "hn": "https://news.ycombinator.com/item?id=50487522",
+      "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
+      "time": 1794593917,
+      "points": 335,
+      "depth": [
+        {
+          "text": "someone says it takes **16 clicks** for a student to open **PowerPoint** on an iPad",
+          "tier": "simple"
+        },
+        {
+          "text": "Some commenters blame the **school’s services stack** rather than the iPad; another calls the post **rage bait**, saying the click chain seems implausible because kids use the services every day and cookies persist sessions.",
+          "tier": "substance",
+          "data": [
+            [
+              "clicks",
+              "16"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see the school’s services stack as the issue; others say the click chain is implausible because students use these services daily and cookies persist sessions.",
+      "comment_count": 164,
+      "terms": [
+        "services stack",
+        "cookies",
+        "2FA",
+        "passkey"
+      ],
+      "entities": [
+        "PowerPoint",
+        "iPad",
+        "Clever",
+        "Google",
+        "Google Classroom",
+        "Canvas",
+        "Keynote"
+      ],
+      "comments": [
+        {
+          "by": "curriculum",
+          "text": "My employer (a large university) recently adopted a new parking portal. To pay for parking every morning, I have to open my browser, navigate to a webpage (there is no mobile app), and tap eleven times to pay for parking: 1. Tap \"login\", taking me to the login page. 2. Tap the \"login\" button on that page. 3. Sign in using 2FA. (A few more taps, but I'm not counting that against the portal). 4…"
+        },
+        {
+          "by": "throwaway63467",
+          "text": "Everything feels so cumbersome. I click on a link in some app which takes me to their login which takes me to MSFT login which takes me to the 2FA provider which asks me for a passkey which takes me back to MSFT which asks me whether to remember which takes me back to my app which forgot the redirect on the way which takes me back to the home view from which I navigate back to where I wanted to…"
+        },
+        {
+          "by": "Miner49er",
+          "text": "As a new parent I was surprised that schools have even gotten into a state where iPads or Chromebooks are used regularly in the classroom. I don't understand how kids can learn on them. iPads especially, they aren't a tool for productive work. Not many people use iPads professionally - they are designed for consuming. If I was in school today I think the distractions they provide would make me a…"
+        },
+        {
+          "by": "temporallobe",
+          "text": "Just to get into my development environment, I have to: 1. Log in to OKTA and choose my specific account (we have 2 accounts for some reason, and only one of them is used for development)\n2. Log into AWS with that account\n3. Select another sub-account in AWS\n4. Navigate to my developer EC2\n5. Start the instance\n6. In VS Code, open a terminal and log in with “aws login —profile myName”\n7. Wait for…"
+        },
+        {
+          "by": "phreack",
+          "text": "I've never heard of \"Clever\" but it looks like that's the real problem? And some need for a Google integration. So they're making kids use two separate online services just to see a presentation! There is surely a better way, whoever is mandating these platforms has to be being bribed."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50490593,
+      "url": "https://orcasairband.com/",
+      "hn": "https://news.ycombinator.com/item?id=50490593",
+      "title": "Live airband on all frequencies from KORS. Victoria, CA also ground stopped",
+      "time": 1794607464,
+      "points": 253,
+      "depth": [
+        {
+          "text": "someone built a **live airband feed** that transcribes **radio chatter** and summarizes what's happening in nearby airspace",
+          "tier": "simple"
+        },
+        {
+          "text": "At KORS, the setup uses an **ETTUS B210** and **cuda code on a GPU** to split the whole airband into channels, detect transmissions, and send them to a voice model for transcription; a separate LLM builds a picture of the airspace. The creator says the project grew from a pilot around KORS losing an engine in a 172 and putting it in the water; the community only heard about it days later. They hope to **open-source** the system so others can run stations.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 58,
+      "terms": [
+        "airband",
+        "cuda",
+        "LLM",
+        "SDR",
+        "ETTUS B210"
+      ],
+      "entities": [
+        "KORS",
+        "ETTUS B210",
+        "CUDA"
+      ],
+      "comments": [
+        {
+          "by": "mmaunder",
+          "text": "Hi all. Thanks for the interest. I'm going to post an impromptu blog post here just explaining what this is. The rather unfortunate ground stop today made this unexpectedly useful with the pilots here on Orcas just to get a sense of the chatter in our airspace re the situation. This is an ETTUS B210 attached to a dual 4090 box. It's a polyphase channelizer that takes the entire airband…"
+        },
+        {
+          "by": "Scoundreller",
+          "text": "ohhhh, I was wondering why selecting a frequency wouldn't show the number of comms that matched the count on the left-hand side. Turns out the squelch setting filters the ones out below threshold. While scanning through frequencies, I found it a bit annoying to have to unclick the previous frequency to exclusively see the new frequency but I got the hang of it. Would be nice to have a \"jump to…"
+        },
+        {
+          "by": "mmaunder",
+          "text": "These are raw transcripts unedited by me that I extracted possibly related to the groundstop, generated at time of posting: 2143Z, 126.400 Victoria Ground (weak signal): \"Yeah, we just uh communication issues, so we got the traffic stopped on [unintelligible]\"\n2151Z, 134.800 Vancouver Centre, pilot of a flight ending \"364\": \"We're saying they just have an alternate plan. They've been getting…"
+        },
+        {
+          "by": "molsongolden",
+          "text": "If you scroll back to 2:03pm (the time this link was posted) there was this interaction: 14:03:04 Uh just wanted to confirm uh there's a ground stop uh going into Vancouver on this frequency? 14:03:10 Encore 3325, that's correct. Nothing is departing to land at Vancouver at this time."
+        },
+        {
+          "by": "ltrg",
+          "text": "This reminds me of a Claude hobby project from a while back that listens on public KiwiSDR receivers (on-demand, politely, never taking the last slot) and decodes ships’ DSC radio signals: https://research.datadesk.eco/skywave/ These are mostly quite boring, but I did manage to make some progress in triangulating position between multiple receivers using the delay, which would be useful as a…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50487185,
+      "url": "https://haddyalchaer.com/jepa",
+      "hn": "https://news.ycombinator.com/item?id=50487185",
+      "title": "After 600 experiments, here's what I discovered about JEPA world models",
+      "time": 1794592528,
+      "points": 244,
+      "depth": [
+        {
+          "text": "someone found **better planning** mattered more than **better predictions** for a robot tackling longer tasks",
+          "tier": "simple"
+        },
+        {
+          "text": "One method chains **25-step subgoals**; another adds a cost to jumps between demonstrations in a memory graph. Together, those first two changes raised long-horizon success from **22% to 85%**.",
+          "tier": "substance",
+          "data": [
+            [
+              "long-horizon success before the first two methods",
+              "22%"
+            ],
+            [
+              "long-horizon success after the first two methods",
+              "85%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters found the transformed-memory idea interesting; others said the planning ideas were already well understood or that the tests mostly replayed demonstration data.",
+      "comment_count": 40,
+      "terms": [
+        "JEPA",
+        "world model",
+        "embedding",
+        "subgoal",
+        "memory graph",
+        "out-of-distribution",
+        "MPC",
+        "MCTS"
+      ],
+      "entities": [
+        "Haddy Alchaer",
+        "Yann LeCun",
+        "JEPA",
+        "LeWM",
+        "LeWorldModel",
+        "Push-T",
+        "H-JEPA",
+        "Diffusion Policy",
+        "X"
+      ],
+      "comments": [
+        {
+          "by": "robotresearcher",
+          "text": "There’s a repeated theme here that I don’t understand. For example: > (3) That's where I decided to build a harder test, where each task takes its start from one demonstration and its goal from another > (4) I also built an interactive demo where I could place the block anywhere and pick any goal. [but]\nThe goals in the harder test are frames from expert demonstrations Why lean so hard on the…"
+        },
+        {
+          "by": "hazrmard",
+          "text": "JEPA is very similar to Model Predictive Control. Here, you swap the model of the system with black-box simulator (a neural net), apply some version of dynamic programming / Bellman equation to find the optimal action over planning horizon. In the planning stage, by factoring out the optimization step from the rollout step, you can free the model to focus on learning the dynamics in latent space…"
+        },
+        {
+          "by": "ghm2180",
+          "text": "Did anyone notice the background of the page having an animation of colors diffusung. It's subtle and multiple color contours moving across the page.. it's really trippy!"
+        },
+        {
+          "by": "reasonabl_human",
+          "text": "Hands-on learning is an awesome thing - especially in the age of AI! But maybe worth reframing away from “discovering” - hierarchical planning, sub-goals, action chunking etc. are well understood - this is more of a… transcript of your personal learning journey? Which is still cool to see. But I read through expecting there to be some kind of novel results. We probably need to categorize these…"
+        },
+        {
+          "by": "halcdev",
+          "text": "Let me know if you have any questions!"
+        }
+      ],
+      "image": "https://haddyalchaer.com/images/stories/jepa-thumbs/planning.png"
+    },
+    {
+      "id": 50492456,
+      "url": "https://english.nv.ua/nation/thirteen-day-drone-blitz-paralyzes-36-of-moscow-s-oil-50658616.html",
+      "hn": "https://news.ycombinator.com/item?id=50492456",
+      "title": "Ukraine knocks out 36% of Russia's oil refining capacity in under two weeks",
+      "time": 1794618622,
+      "points": 232,
+      "depth": [
+        {
+          "text": "a report says **Ukrainian strikes hit Russian refineries**, but commenters question whether they **shut them down**",
+          "tier": "simple"
+        },
+        {
+          "text": "**Fire Point** reported at least nine major refineries hit between Oct. 30 and Nov. 11; their combined annual processing capacity exceeded **120 million metric tons**, which the article says represents **36% of Russia’s total oil refining capacity**. Commenters warn that being hit does not necessarily mean a refinery was fully knocked out.",
+          "tier": "substance",
+          "data": [
+            [
+              "Refineries reported hit",
+              "at least nine"
+            ],
+            [
+              "Combined annual processing capacity",
+              "exceeds 120 million metric tons"
+            ],
+            [
+              "Share of Russia’s total oil refining capacity",
+              "36%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say the headline treats plants hit as fully offline without enough evidence; others say a few tower hits can bring a plant’s production to zero.",
+      "comment_count": 146,
+      "terms": [
+        "crude oil",
+        "refining capacity",
+        "oblast"
+      ],
+      "entities": [
+        "Fire Point",
+        "The New Voice of Ukraine",
+        "Volodymyr Zelenskyy",
+        "Saratov Oil Refinery",
+        "Kirishi Oil Refinery",
+        "Reuters"
+      ],
+      "comments": [
+        {
+          "by": "danmaz74",
+          "text": "Refineries are huge, and hitting one doesn't automatically knock it out - Ukraine has actually already hit lots of Russian refineries this year, many of them more than once: https://www.reddit.com/r/RussianHitlists/comments/1ugfpiw/ru... Obviously Russia doesn't publish any data about how long it takes them to repair their refineries, but some of them showed significant damages from the pictures…"
+        },
+        {
+          "by": "cobychapple",
+          "text": "IEA says repairs are getting slower: https://www.ogj.com/general-interest/economics-markets/news/..."
+        },
+        {
+          "by": "ramshanker",
+          "text": "I build oil refineries as my day Job! You don't really need to knock out the whole plant to make the production to zero. Hitting just 2 to 4 towers is enough. And this knowledge is not some kind of secret. Anyone in the industry can figure out the softest spot. As for world over production collapse, Saudi has got enough capacity. Even we (India) have good amount of spare refining capacity…"
+        },
+        {
+          "by": "mindwok",
+          "text": "Feels like drones and rockets have created a similar dynamic to mutually assured destruction, except for much smaller actors with far fewer resources. It's not hard to imagine a future where e.g. Taiwan is just armed with so many cheap drones and rockets that for even a great power like China the guarantee of enormous economic damage at home is just not worth it."
+        },
+        {
+          "by": "fierycatnet",
+          "text": "Did this site turn political? Because neutral comments getting flagged is kinda wild."
+        }
+      ],
+      "image": "https://static.nv.ua/shared/system/Article/posters/003/400/667/original/641dcb95ac384dd3b9c9b9adde85bff0.png?q=85&stamp=20261112140909&f=webp"
+    },
+    {
+      "id": 50484658,
+      "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+      "hn": "https://news.ycombinator.com/item?id=50484658",
+      "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
+      "time": 1794582524,
+      "points": 234,
+      "depth": [
+        {
+          "text": "Jonathan Blow asks why **AI hasn’t changed** the **software people use**",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Some say AI mostly speeds up coding without changing what organizations build; others say it has made personal software and small projects much easier to create.",
+      "comment_count": 229,
+      "terms": [
+        "LLMs",
+        "marginal cost",
+        "technical debt",
+        "SaaS",
+        "E2EE",
+        "training data"
+      ],
+      "entities": [
+        "Jonathan Blow",
+        "Blizzard",
+        "The Scouring",
+        "Carmack",
+        "WC3",
+        "SC2",
+        "Excel",
+        "Photoshop",
+        "Claude",
+        "ChatGPT",
+        "AWS",
+        "Clang",
+        "GCC",
+        "Linux",
+        "Docker",
+        "T3 Code",
+        "Fluxer",
+        "Discord",
+        "Matrix",
+        "Android",
+        "GrapheneOS",
+        "Things 3",
+        "Opus",
+        "Sol",
+        "iOS"
+      ],
+      "comments": [
+        {
+          "by": "Overdrivr",
+          "text": "It's because the hard part of making software is not coding, but deciding what's worth building (even with LLMs), appropriately modelling the problem and designing the solution (at a conceptual, architectural level). And there has been strictly zero progress on this and IMO this isn't something LLMs are strucurally capable of doing."
+        },
+        {
+          "by": "barbariangrunge",
+          "text": "Blow argues software development hasn't advanced much since the early 2000s. As a game developer, I want to offer a counter point. In the last 3 years, there have been a lot more indie games of far higher quality than we used to get. I'm thinking of the RTS space right now. The Scouring for example. We went from having nobody but Blizzard able to make something that complex to several games with…"
+        },
+        {
+          "by": "Animats",
+          "text": "Because AI coding has only worked well in the last six months. Two years ago it sucked. A year ago it was flaky. Now, Claude nails a lot of problems routinely. What will next year bring?"
+        },
+        {
+          "by": "pansa2",
+          "text": "AI hasn’t solved coding, if anything it’s made code quality worse. But it’s made it the process of coding faster. The latter is why managers love AI - and the former is why the general public hates it."
+        },
+        {
+          "by": "_aavaa_",
+          "text": "The video does actually answer its own title, which is refreshing. And I agree, it’s because organizations and people haven’t changed (yet, if you’re being positive) what it is they’re optimizing for and how they do work. AI gives you more of what you want and gives it faster, that doesn’t on its own change the culture or goals of a company."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50488325,
+      "url": "https://open.m-vave.com/fm1-workbench",
+      "hn": "https://news.ycombinator.com/item?id=50488325",
+      "title": "FM-1 Workbench",
+      "time": 1794597242,
+      "points": 216,
+      "depth": [
+        {
+          "text": "someone made a **browser workbench** for editing sounds and sequencing the **FM-1 groovebox**",
+          "tier": "simple"
+        },
+        {
+          "text": "It has **8 tracks** and **6 sound engines**, with step sequencing and a full editing workspace. Download the full HTML to work offline; connecting to the device needs Chrome or Edge with Web MIDI.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: fans enjoy the FM-1 as a fun platform with lots of firmware; skeptics say laptops can already do the same and some find the hardware flimsy.",
+      "comment_count": 138,
+      "terms": [
+        "groovebox",
+        "step sequencer",
+        "firmware",
+        "MIDI",
+        "Web MIDI"
+      ],
+      "entities": [
+        "FM-1 Workbench",
+        "FM-1",
+        "M-VAVE",
+        "Chrome",
+        "Edge",
+        "DX7"
+      ],
+      "comments": [
+        {
+          "by": "SamBam",
+          "text": "Our algorithms must all be feeding us the same things, I was about to buy one of these yesterday. I've been excited by the various Groovebox firmwares in particular. I play music by sight (poorly) and can improvise a little bit on guitar, and would love to understand music theory better but so far do not. Is this a useful device to get a feel for creating music, or is it only really useful if you…"
+        },
+        {
+          "by": "tlahtinen",
+          "text": "It's been a great little toy, I install a new firmware every couple of days. I especially enjoy the various generative firmwares. Many of them work in browser too, which is essential for choosing what to try next! Some faves: NACHTFART: https://fartypants.github.io/fm1-nachtfahrt/emu/ DUB-1: https://sbegueria.github.io/fm1-dub/emu/"
+        },
+        {
+          "by": "consumer451",
+          "text": "My first FM-1 is out for delivery. I once assisted in a 2\" tape studio, I have played with many synths, and yet I am so excited for this little thing. This is such a cool hardware meme/software/ai dev thing that makes me very happy for the world. I am just about to start learning. If anyone could drop firmware knowledge aside from Baud Girl (cool af) ... I would appreciate it. I am mostly excited…"
+        },
+        {
+          "by": "swiftcoder",
+          "text": "The explosion of firmwares for this device, and the manufacturers embrace thereof, is a rare bright spot in post-LLM music tech"
+        },
+        {
+          "by": "EmX_3000",
+          "text": "Downsides immediately jump out at me, it lacks real DIN MIDI ports, having those irritating 1/8\" jacks instead which require an adapter. Built in battery, hopefully not too difficult to replace. I vastly prefer AAs for this use case like the Volcas use. It has a fan, that's not good at all. It looks cheap (look at the bottom photo here https://www.m-vave.com/product?id=fm-1 ) and not sturdy…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50489083,
+      "url": "https://blog.jsweeting.me/big-tech-is-here-to-let-us-down",
+      "hn": "https://news.ycombinator.com/item?id=50489083",
+      "title": "Big tech is here to let us down",
+      "time": 1794601230,
+      "points": 211,
+      "depth": [
+        {
+          "text": "someone says Microsoft's **Outlook outage** shows how much work now **depends on its services**",
+          "tier": "simple"
+        },
+        {
+          "text": "The post says **Outlook, Teams and Copilot** went down, leaving some employees **unable to do their jobs**. The author argues that organisations relying on Microsoft **can't fix outages themselves**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say Microsoft's outages expose the risk of relying on one provider; others say downtime is tolerable or blame companies for choosing centralized services.",
+      "comment_count": 196,
+      "terms": [
+        "vibecoding",
+        "open source",
+        "SLA"
+      ],
+      "entities": [
+        "Microsoft",
+        "Outlook",
+        "Teams",
+        "Copilot",
+        "Nvidia"
+      ],
+      "comments": [
+        {
+          "by": "j16sdiz",
+          "text": "If you ask me, we have scale up too much. Caring need understanding, and it is not something we can proportionally scale up with the operation"
+        },
+        {
+          "by": "epistasis",
+          "text": "In the age of AI there's ZERO reason for \"the global North\" to continue using Microsoft. Wean your finance guys off of Excel, somehow. Replace the CTO with somebody that can hire IT that doesn't depend on the crutches of Microsoft. If people's MS subscription revenue were funneled into on-site devs and devops for open source solutions, we'd all live in a better world. Sure, the money wouldn't be…"
+        },
+        {
+          "by": "jam0wal",
+          "text": "I feel this is missing the role we play. Choosing free, flashy, new and jumping on the new best thing in droves. Unfortunately the most effective way to learn about what is important is to have it taken away. So I don't believe this is going to change ... ever."
+        },
+        {
+          "by": "dgrin91",
+          "text": "> Now, are Microsoft going to offer any compensation for either lost business or additional accrued costs? I highly doubt it, even though it is literally their fault and they do still have the cash reserves, despite increasingly wasting it on loss-making AI adventures. Aren't they? I know that they, and other big techs, have clauses in their terms that say if they don't meet service requirements…"
+        },
+        {
+          "by": "socketcluster",
+          "text": "Some of us software engineers have been predicting the software apocalypse since over a decade so what's going on now is not surprising. What else won't surprise me is the government trying to step in and making it their problem. That's what I'm worried about. The only right thing to do is remove regulations, remove government intervention from every aspect of the economy, and let the market fix…"
+        }
+      ],
+      "image": "https://og.pagecord.com/og?accentColor=%23ffff00&avatar=https%3A%2F%2Fpagecord.com%2Frails%2Factive_storage%2Frepresentations%2Fredirect%2FeyJfcmFpbHMiOnsiZGF0YSI6NDY4NywicHVyIjoiYmxvYl9pZCJ9fQ%3D%3D--ca5722ecc6a810cbc306fb1554b7f6c6abfcc3c0%2FeyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fbGltaXQiOls5Niw5Nl0sInNhdmVyIjp7InN0cmlwIjp0cnVlfX0sInB1ciI6InZhcmlhdGlvbiJ9fQ%3D%3D--9c874a7debc456f77104ad83e6871574a296adc9%2FJamesSweeting_profile%2520-%2520Copy%2520%282%29.jpg&bgColor=%230a4b82&blogTitle=What%27s+up+with+James%3F&signature=89e002691775709530ce133e02551583b6c55db03a5de8262b892b76db2d301d&textColor=%23ffffff&title=Big+tech+is+here+to+let+us+down"
+    },
+    {
+      "id": 50492601,
+      "url": "https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&advn=5",
+      "hn": "https://news.ycombinator.com/item?id=50492601",
+      "title": "FAA lifted National Ground Stop at 0119Z",
+      "time": 1794619801,
+      "points": 208,
+      "depth": [
+        {
+          "text": "FAA lifted the **national ground stop** at **0119Z**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter called the flight control system **decrepit** and blamed inertia and lack of motivation in big government. They pointed to 1950s NASA and the Manhattan Project as brief exceptions, usually driven by a perceived dire national threat.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 2,
+      "terms": [
+        "ground stop"
+      ],
+      "entities": [
+        "FAA",
+        "NASA",
+        "Manhattan Project"
+      ],
+      "comments": [
+        {
+          "by": "dang",
+          "text": "Comments moved to https://news.ycombinator.com/item?id=50489641 ."
+        },
+        {
+          "by": "Rover222",
+          "text": "The decrepit nature of the flight control system is just a good example of big government management of any large system is usually bound by inertia, self-interest, and lack of motivation to be ambitious and cutting edge. There are/were of course brief spikes in govt-controlled entities acting with extreme motivation (1950's NASA, the Manhattan project, etc), but that's usually driven by a…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50489652,
+      "url": "https://twitter.com/flightradar24/status/2121347654714077605",
+      "hn": "https://news.ycombinator.com/item?id=50489652",
+      "title": "All US airports are currently ground stopped",
+      "time": 1794604012,
+      "points": 196,
+      "depth": [
+        {
+          "text": "all US airports are **ground stopped** after an **FAA equipment outage**, so no flights may depart for them",
+          "tier": "simple"
+        },
+        {
+          "text": "The post said **flights already in the air** would be allowed to **land**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 36,
+      "terms": [
+        "ground stop",
+        "FAA"
+      ],
+      "entities": [
+        "Flightradar24",
+        "FAA",
+        "X",
+        "Microsoft",
+        "Jensen",
+        "ANT"
+      ],
+      "comments": [
+        {
+          "by": "stmw",
+          "text": "Pilot forum discussion -\nhttps://www.pprune.org/rumours-news/674910-us-wide-ground-st..."
+        },
+        {
+          "by": "frutiger",
+          "text": "\"Frequency outage\", I think that translates to radio communications not working, until \"22 Zulu\" aka 22:00 UTC, 5 PM ET."
+        },
+        {
+          "by": "DavCreator",
+          "text": "https://xnotme.com/flightradar24/status/2121347654714077605"
+        },
+        {
+          "by": "treebeard901",
+          "text": "Microsoft outage related??"
+        },
+        {
+          "by": "datas",
+          "text": "What are all the possible reasons to do this? Has this ever happened?"
+        }
+      ],
+      "image": "https://pbs.twimg.com/media/HXCKbbLWsAA7R_n?format=webp&name=large"
+    },
+    {
+      "id": 50484235,
+      "url": "https://discourse.haskell.org/t/a-technical-vision-for-the-haskell-ecosystem/15078",
+      "hn": "https://news.ycombinator.com/item?id=50484235",
+      "title": "A technical vision for the Haskell ecosystem",
+      "time": 1794580992,
+      "points": 194,
+      "depth": [
+        {
+          "text": "Haskell's **technical leaders** want to make it **easier to learn**, faster to build with, and more dependable",
+          "tier": "simple"
+        },
+        {
+          "text": "The Haskell Foundation’s technical leadership committee is now **operational** and wants companies, contractors, and volunteers to help develop and fund proposals. One concrete target is bringing GHC’s own CI turnaround from **6 hours to 2**; the vision also calls for friendlier onboarding, better debugging, stronger security, and long-term stability.",
+          "tier": "substance",
+          "data": [
+            [
+              "Current GHC CI turnaround",
+              "6 hours"
+            ],
+            [
+              "Target GHC CI turnaround",
+              "2"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some argue Haskell’s strictness and types could make it a strong fit for AI coding; others say it still lacks a compelling practical advantage and broader adoption compared with alternatives.",
+      "comment_count": 106,
+      "terms": [
+        "GHC",
+        "CI",
+        "eDSL",
+        "type safety",
+        "LLM"
+      ],
+      "entities": [
+        "Haskell Foundation",
+        "Haskell",
+        "GHC",
+        "Rust"
+      ],
+      "comments": [
+        {
+          "by": "ecshafer",
+          "text": "I was thinking of Haskell recently, why isn't it more popular with AI? Haskell is very terse and token efficient, it has many expressive safety features. Rust is getting additional adoption because of its strictness, so hey why not have this in Rust over Javascript if it takes the same time to write? An ideal language for agentic AI I would think is extremely strict, where the AI can iterate over…"
+        },
+        {
+          "by": "pmkary",
+          "text": "There is this memo video of S. P. Jones that famously says \"Haskell is Useless\". I love Haskell, but I wished it was universal like C, C++, JavaScript, Rust, and C#. By that I mean: It could be used to create apps for desktop, mobile, and web. JavaScript can be used to do so many things like power the entire web, be on node and let anyone create cli and share the code with web, and mobile through…"
+        },
+        {
+          "by": "georgewsinger",
+          "text": "RE the debugging experience in Haskell: we recently wrote a post about bringing live run-time debugging to our Haskell VR compositor: https://simulavr.com/blog/debug-hud/ Live step-through debugging and interactivity we think is pretty underrated in the Haskell ecosystem."
+        },
+        {
+          "by": "carterschonwald",
+          "text": "hasufell has been a wonderful person in haskell land. hes got very clear headed ideas about stuff and so forth. also the stuff i can now build in haskell with computer aid is epic. earlier this week i stood up what i believe is one of the/ if not the: best step file format reader writer on like every axis. some c ones are 20-30 percent faster on the largest possible cad assemblies i could try…"
+        },
+        {
+          "by": "KolmogorovComp",
+          "text": "While I agree compile time is a big issue, I think the focus should really be on incremental build, because considering how much work the Haskell compiler has to do, it is expected to be quite slow on full build. But incremental build has no reason to be slow, if the scope is as fine-grained as the function and type level."
+        }
+      ],
+      "image": "https://us1.discourse-cdn.com/flex002/uploads/haskell/original/1X/89166504e40f4869ea825dd70048017861ec8578.png"
+    },
+    {
+      "id": 50488769,
+      "url": "https://www.slopmanifesto.com/",
+      "hn": "https://news.ycombinator.com/item?id=50488769",
+      "title": "No AI Slop: A Manifesto",
+      "time": 1794599516,
+      "points": 192,
+      "depth": [
+        {
+          "text": "developers published a **manifesto** urging people to take **responsibility** for AI-assisted work before sharing it",
+          "tier": "simple"
+        },
+        {
+          "text": "The manifesto defines **slop** as making something with less effort than readers are asked to spend understanding it, then asks people to say when an agent wrote something, check the parts that matter, and **fix recurring mistakes** in the system.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some welcome its focus on human understanding and quality; others say the movement should show how to use AI well instead of framing the fight as anti-slop.",
+      "comment_count": 114,
+      "terms": [
+        "slop",
+        "agent",
+        "PR",
+        "vibe coding",
+        "alpha"
+      ],
+      "entities": [
+        "AIE Code Summit",
+        "Agile Manifesto",
+        "Ghostty",
+        "mamabear.ai",
+        "Philip Kiely",
+        "Swyx",
+        "Lucas Meijer",
+        "Rebecca Bakels",
+        "Tejas Kumar",
+        "Natalie Serrino",
+        "Francisco Javier Arceo",
+        "Kent C. Dodds",
+        "Ankit Jain",
+        "Brandon Waselnuk",
+        "Mihail Eric",
+        "Justin McCarthy",
+        "Raz Berman Gold",
+        "Yacine Mahdid",
+        "Justin Poehnelt",
+        "Lauren Tan",
+        "Kyle Mistele",
+        "Jake Nations",
+        "Dex",
+        "Terry Tao"
+      ],
+      "comments": [
+        {
+          "by": "gwbas1c",
+          "text": "My favorite bit: > What shipped, who's using it, and how it's helping them matters FAR MORE than lines of code, prs merged, tokens spent, or the number of agents running in parallel. Sometimes when I hear shocking amounts of money spent on AI tokens, I wonder if someone's obsessing over the tech and forgetting that only the result matters."
+        },
+        {
+          "by": "courtcircuits",
+          "text": "> Improving the system over patching the output This really connect with the latest conversations I had with coworkers regarding how can we review gigantic PR generated by AI. One way could be to ask the submitter to give their prompt as part of their contribution. This way it's easier for the reviewer to understand what was the thought process of the contributor and if this very process is…"
+        },
+        {
+          "by": "svieira",
+          "text": "A short formulation that I really like in the style of the original: -------- We are uncovering better ways of developing systems by using AI and guiding others to use it responsibly. Through this work we have come to value: Human accountability over delivery velocity\nHuman dignity and control over unsupervised autonomous execution\nHuman augmentation over replacement\nImpactful outcomes over raw…"
+        },
+        {
+          "by": "wauter",
+          "text": "Could use a non-negative name. Just like it was not the ‘no heavyweight dev processes’ manifesto but Agile manifesto which was wsy catchier to reference, maybe yours could be named like the… Human-serving Engineering manifesto or something?"
+        },
+        {
+          "by": "carra",
+          "text": "The manifesto circles around a central idea that it never fully identifies: whether AI is involved or not, all slop is made by HUMANS. Because the real cause of \"slop\" is that someone didn't care and published the first result they got, as if it was the final product. They didn't put in the effort to analyze what they got, improve on it and deliver a minimum quality. And this is something that…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50487228,
+      "url": "https://isometricsf.com/",
+      "hn": "https://news.ycombinator.com/item?id=50487228",
+      "title": "Show HN: Isometric SF – A pixel-art map of the SF Bay Area",
+      "time": 1794592717,
+      "points": 192,
+      "depth": [
+        {
+          "text": "someone made an **isometric map** of the SF Bay Area with a **pixel-art look**",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: some call it beautiful and soothing; others say it isn't really pixel art and complain about AI artifacts.",
+      "comment_count": 69,
+      "terms": [
+        "isometric",
+        "3D Tiles",
+        "LoRA",
+        "fine-tuning",
+        "shader",
+        "API"
+      ],
+      "entities": [
+        "Google",
+        "Google Photorealistic 3D Tiles",
+        "Nano Banana 2",
+        "Qwen",
+        "Qwen-Image-Edit 2511",
+        "Klein 4B",
+        "Isometric SF",
+        "Isometric NYC",
+        "Justin"
+      ],
+      "comments": [
+        {
+          "by": "drayfield",
+          "text": "Sorry to be a downer, but this looks really bad to me. It completely lacks the sumptuous precision of real pixel art."
+        },
+        {
+          "by": "mlmonkey",
+          "text": "OP didn't mention it (or maybe I missed it), but the underlying imagery comes from the Google 3D photorealistic tiles API: https://developers.google.com/maps/documentation/tile/3d-til... They offer a generous 1000 API calls per month for free, in case anyone is interested in replicating this."
+        },
+        {
+          "by": "fwipsy",
+          "text": "This is neat but maybe we could call it \"pixel-art-styled?\" Pixel art is all about attention to detail; this is more like applying a shader (though I see some AI artifacts in there too.)"
+        },
+        {
+          "by": "kenferry",
+          "text": "…not actually pixel art though, no?"
+        },
+        {
+          "by": "scosman",
+          "text": "Also see isometric Toronto: https://iso.sloptoronto.ca/#v=3&x=102672&y=64255&z=0.262"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50491423,
+      "url": "https://www.joshka.net/cell-borders/",
+      "hn": "https://news.ycombinator.com/item?id=50491423",
+      "title": "Terminal borders that don't cost a cell",
+      "time": 1794611200,
+      "points": 190,
+      "depth": [
+        {
+          "text": "someone designed **terminal borders** that sit between cells without taking up **a row or column**",
+          "tier": "simple"
+        },
+        {
+          "text": "The protocol stores borders as a **cell attribute**, with each segment able to have its own color, width, placement and style. They aren't text, so selections don't copy them; the author has a working **Ghostty patch**.",
+          "tier": "substance",
+          "data": [
+            [
+              "line segments per cell",
+              "up to twelve"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters like the new border capability; skeptics prefer simple text-first TUIs and worry about compatibility or terminals becoming GUIs.",
+      "comment_count": 84,
+      "terms": [
+        "TUI",
+        "cell attribute",
+        "box-drawing characters",
+        "DCS",
+        "multiplexer",
+        "overstrike mode"
+      ],
+      "entities": [
+        "Ratatui",
+        "Ghostty",
+        "tmux",
+        "Rio",
+        "DECterm",
+        "PDCurses",
+        "X/Open curses",
+        "IBM 3270",
+        "Kermit 95",
+        "Win32",
+        "Zig",
+        "Xcode",
+        "Rust",
+        "btop",
+        "sysinfo",
+        "Unicode",
+        "Slack",
+        "Vim"
+      ],
+      "comments": [
+        {
+          "by": "joouha",
+          "text": "A much better alternative to this would be to for more terminal emulators to implement overstrike mode (DECSET 20, as available on the VK100). That way you could just draw border characters over existing text cells to achieve the same thing. Unfortunately mintty is the only terminal emulator I'm aware of which supports overstrike [0], as this would open up a world of new possibilities for TUI…"
+        },
+        {
+          "by": "tptacek",
+          "text": "I love this work and everything else Ratatui does but I have to ask: if you're changing the terminal protocol and the terminal itself to do this, why not do something more ambitious; a full monospaced information-dense UI framework, a terminal designed for user interfaces, rather than one designed to replicate the limitations of dumb terminals?"
+        },
+        {
+          "by": "db48x",
+          "text": "I like this idea! Of course I might be biased, since it’s similar enough to one I’ve had myself. Good job getting an implementation going; I never did."
+        },
+        {
+          "by": "kodoman",
+          "text": "This is pretty cool but this does feel like we are just reinventing another GUI display at this point. I don't generally like TUI's and think one gets more flexibility with raw text interfaces and being able to glue things together is more important then them looking nice. I think less fancy out put is better to be honest."
+        },
+        {
+          "by": "matheusmoreira",
+          "text": "As awesome as this is, but I can't shake the feeling terminals are becoming lightweight browsers..."
+        }
+      ],
+      "image": "https://www.joshka.net/cell-borders/og.png"
+    },
+    {
+      "id": 50484960,
+      "url": "https://text.npr.org/nx-s1-6029408",
+      "hn": "https://news.ycombinator.com/item?id=50484960",
+      "title": "Why is Google cutting off Search from AI-free schools? Here are some theories",
+      "time": 1794583750,
+      "points": 184,
+      "depth": [
+        {
+          "text": "Google says schools that **turn off AI Overviews** will **lose Search** if they want AI-free classrooms",
+          "tier": "simple"
+        },
+        {
+          "text": "Former Google employee **Tracy Pizzo** thinks letting schools switch off AI Overviews could **weaken Google's court argument** that Search and AI are **one integrated product**. NPR's antitrust experts weren't entirely convinced.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters see a push to get schools to accept AI; others say a separate version may not be worth the maintenance cost.",
+      "comment_count": 173,
+      "terms": [
+        "AI Overviews",
+        "antitrust",
+        "integrated product"
+      ],
+      "entities": [
+        "Google",
+        "Google Search",
+        "AI Overviews",
+        "Tracy Pizzo",
+        "NPR"
+      ],
+      "comments": [
+        {
+          "by": "tomcatfish",
+          "text": "Google is not \"cutting off Search from AI-free schools\". They're refusing to supply AI-free Search. It takes less theorizing to understand if you phrase it this way. Everyone complained there should be a way to disable AI, and that it should be on by default. For some reason (curiosity still makes sense here ), Google did some 'malicious compliance' and added the AI switch-off without making a…"
+        },
+        {
+          "by": "qzw",
+          "text": "I keep hearing AI companies say the demand is outstripping their supply and they need to build more data centers right now . And then I also see and read about how every company is cramming AI down everyone's throats in every product whether or not it's useful and/or wanted. I've used enough AI to see that it's revolutionary, but I'm also old enough to see the parallel to the dotcom days."
+        },
+        {
+          "by": "qzw",
+          "text": "It's interesting that in the lawsuit mentioned in the article, Google's defense was that they can't separate the AI overview from search as they are one product. That's almost the exact same argument Microsoft made in its antitrust defense about bundling IE. They went so far as to shoehorn IE into all kinds of system processes that were fine without IE before. But their argument didn't work and…"
+        },
+        {
+          "by": "CobaltFire",
+          "text": "Just wanted to thank you for using the text only link! This is the type of thing we should use and encourage. I have a list somewhere I need to dig out of these types of link modifications available from when I was deployed. They were the only way to read news."
+        },
+        {
+          "by": "nfriedly",
+          "text": "It's not like Google is the only search engine out there. Duck Duck Go has a toggle for the main search page, and a sub-domain where it's off by default: https://noai.duckduckgo.com/"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50492993,
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-director-sold-nearly-1b-160000846.html",
+      "hn": "https://news.ycombinator.com/item?id=50492993",
+      "title": "Nvidia director sold nearly $1B in stock weeks before the Jensen Huang scandal",
+      "time": 1794622896,
+      "points": 180,
+      "depth": [
+        {
+          "text": "an **Nvidia director** sold **nearly $1 billion** in shares before Jensen Huang's scandal broke",
+          "tier": "simple"
+        },
+        {
+          "text": "Board director Mark Stevens sold about **$946 million** across three batches, without a **prearranged trading plan**. He still held **27.5 million shares**; the article says not having a plan isn't necessarily a red flag on its own.",
+          "tier": "substance",
+          "data": [
+            [
+              "stock sold",
+              "about $946 million"
+            ],
+            [
+              "shares sold",
+              "roughly 4.2 million shares"
+            ],
+            [
+              "shares still held",
+              "about 27.5 million shares"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters call the sales routine and point to Stevens's remaining shares; others say the article ignores how far ahead insiders schedule sales.",
+      "comment_count": 35,
+      "terms": [
+        "prearranged trading plan",
+        "insider trading",
+        "SEC",
+        "market cap"
+      ],
+      "entities": [
+        "Nvidia",
+        "Mark Stevens",
+        "Jensen Huang",
+        "Kimberly Powell",
+        "Colette Kress",
+        "SEC"
+      ],
+      "comments": [
+        {
+          "by": "edot",
+          "text": "Nothing out of the ordinary. Guy sold 4m shares over a few months (all of which have to be pre-announced 90 days in advance). Still has over 25m shares."
+        },
+        {
+          "by": "cobychapple",
+          "text": "Aug 31 is about when the post-earnings window opened so could be routine?"
+        },
+        {
+          "by": "nickalaso",
+          "text": "I'm more interested in options activity leading up to this."
+        },
+        {
+          "by": "blobbers",
+          "text": "... that's not all that much stock given the price rise. I don't think they anticipated their stock packages would be worth as much as they are."
+        },
+        {
+          "by": "cobychapple",
+          "text": "See also https://nvidia.cool.computer/"
+        }
+      ],
+      "image": "https://s.yimg.com/lo/mysterio/api/ea33872456927e6c60fd6ae873cc248800ea9558f19ac095dc5ea2367757e23b/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmoneywise_327%2F03f97ac29476948d659ef4eba662dfa9.jpg"
+    },
+    {
+      "id": 50488470,
+      "url": "https://www.nature.com/articles/d41586-026-03638-3",
+      "hn": "https://news.ycombinator.com/item?id=50488470",
+      "title": "Found: A protein that drives ageing without unleashing inflammation",
+      "time": 1794597921,
+      "points": 174,
+      "depth": [
+        {
+          "text": "researchers found a **protein** that drives ageing in mice without unleashing **inflammation**",
+          "tier": "simple"
+        },
+        {
+          "text": "The protein is **granzyme K**. Aged mice engineered to lack it had **improved heart and liver function** and **less kidney damage**. The abstract says it drives ageing in tissues, but not immune ageing or systemic inflammaging.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 26,
+      "terms": [
+        "granzyme K",
+        "inflammaging"
+      ],
+      "entities": [
+        "Granzyme K",
+        "Nature",
+        "Immunity"
+      ],
+      "comments": [
+        {
+          "by": "neom",
+          "text": "Paper: https://www.cell.com/immunity/fulltext/S1074-7613(26)00440-1 Granzyme K is the protein."
+        },
+        {
+          "by": "ethanj8011",
+          "text": "From the abstract of the paper, significantly more nuance. > Despite persistent immune aging phenotypes, GzmK deficiency markedly attenuated organ aging, effectively uncoupling immune and tissue aging... These findings identify GzmK as a tissue-specific driver of organismal aging but not immune aging or systemic inflammaging."
+        },
+        {
+          "by": "RobotToaster",
+          "text": "Paywall"
+        },
+        {
+          "by": "agnosticmantis",
+          "text": "In mice."
+        },
+        {
+          "by": "StilesCrisis",
+          "text": "Thank God! Finally, mice that don't age!"
+        }
+      ],
+      "image": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03638-3/d41586-026-03638-3_53962202.jpg"
+    },
+    {
+      "id": 50485295,
+      "url": "https://filemanager-cdn.mziq.com/published/3972906b-e50b-4f74-ab74-4d0d32125d11/9567a559-d20a-486e-a7ae-5c6bbc030c5e",
+      "hn": "https://news.ycombinator.com/item?id=50485295",
+      "title": "Brazil's Caixa insurer breach exposes names and tax IDs of all 7.6M customers",
+      "time": 1794585124,
+      "points": 165,
+      "depth": [
+        {
+          "text": "a breach at Brazil's Caixa insurer exposed **names and tax IDs** for **all 7.6M customers**",
+          "tier": "simple"
+        },
+        {
+          "text": "Several commenters say **CPFs are already widely exposed**, but names paired with phone numbers and Caixa customer clues could **help scammers pose as the bank**. One commenter doubts the claim that no financial data was exposed.",
+          "tier": "substance",
+          "data": [
+            [
+              "customers",
+              "7.6M"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say CPF-only leaks are old news because the number is widely shared; others worry customer details make fraud easier and question whether financial data was really safe.",
+      "comment_count": 74,
+      "terms": [
+        "CPF"
+      ],
+      "entities": [
+        "Caixa"
+      ],
+      "comments": [
+        {
+          "by": "afh1",
+          "text": "No financial information leaked, just tax id, which in Brazil nowadays doesn't mean much. There have been more than one high profile website in the past reportedly selling personal data, including tax identifier (CPF), for essentially any Brazilian citizen. It is common to be asked for your CPF for trivial things like purchasing anything on a drugstore, and for any and all activity with…"
+        },
+        {
+          "by": "yakkomajuri",
+          "text": "I'm pretty sure at this point every tax ID (CPF) in Brazil is available on a database you can get on the dark web. We've had a \"CPF-ication\" of everything in Brazil over the last few years. The vast majority of people have shared this number with their local grocery store, pharmacy, gym, etc. It's required for a lot of stuff and pretty necessary for others. Given that, if that's all that leaked…"
+        },
+        {
+          "by": "cesarb",
+          "text": "For those who don't know it, our tax id (CPF) is basically public information. For instance: we just had an election. The official public site with the official information about all the candidates ( https://divulgacandcontas.tse.jus.br/ ) has the CPF for all of them. Want to know our president's CPF? It's there. The bad part is the rest. Having the name together with the phone number, plus being…"
+        },
+        {
+          "by": "airstrike",
+          "text": "It's important to note the Brazilian tax id (CPF) is not meant to be a well kept secret like the American SSN"
+        },
+        {
+          "by": "goshx",
+          "text": "Small potatoes. CPFs have been leaked so many times in Brazil that probably all of them are already out there. [0][1][2] [0] https://cyberbrics.info/the-largest-personal-data-leakage-in... [1] https://www.bitdefender.com/en-us/blog/hotforsecurity/massiv... [2] https://www.lumiun.com/blog/en/data-breach-in-brazil-the-wor..."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50493062,
+      "url": "https://github.com/ggml-org/ggml/releases/tag/v1.0.0",
+      "hn": "https://news.ycombinator.com/item?id=50493062",
+      "title": "Ggml v1.0.0",
+      "time": 1794623309,
+      "points": 174,
+      "depth": [
+        {
+          "text": "someone gave a machine-learning library a **major update**, with **performance work** across several hardware backends",
+          "tier": "simple"
+        },
+        {
+          "text": "Version 1.0.0 prunes the deprecated public API, adds YaRN truncation and **OCP FP8 support**, and brings performance work across CUDA/Metal, Vulkan, SYCL, OpenCL, and WebGPU. Highlights include **few-row quantized matmuls** and a **device-side MoE scheduler**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 29,
+      "terms": [
+        "YaRN truncation",
+        "FP8",
+        "quantized matmuls",
+        "MoE",
+        "backend"
+      ],
+      "entities": [
+        "ggml",
+        "CUDA",
+        "Metal",
+        "Vulkan",
+        "SYCL",
+        "OpenCL",
+        "WebGPU",
+        "OCP",
+        "YaRN"
+      ],
+      "comments": [
+        {
+          "by": "jacquesm",
+          "text": "What is really impressive about this project and llama.cpp as well is that they keep finding new ways to speed up the code on the same hardware. Every time I upgrade (once a month or so) there is usually a 5 to 10% speed boost. edit: Just to verify: I had planned to upgrade today, ran my usual benchmark prior and after and the runtime went from 4:22 to 3:59. That's a really long prompt (50K…"
+        },
+        {
+          "by": "evilelectron",
+          "text": "Awesome! ggml and llama.cpp are the Linux of the AI world. Driving local inference one bit at a time. Wishing you unlimited power and may you never see a day of low battery. Respect and Love. Keep it up."
+        },
+        {
+          "by": "kodoman",
+          "text": "Long time llama.cpp user (and user of other ggml based AI programs) running on my crappy AMD card that only supports vulkan and it's usable thanks to GGML and llama.cpp, great program great project."
+        },
+        {
+          "by": "palad1n",
+          "text": "I prefer this entry point: https://github.com/ggml-org/ggml"
+        },
+        {
+          "by": "hizlikovboy27",
+          "text": "In my opinion, this is a genuine engineering product.\nLLM.cpp, the savior of our difficult times..."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/398ed72e9316d12d32e3371787d19fb096c1afc67fd25fc61f9c70d69c03087c/ggml-org/ggml/releases/tag/v1.0.0"
+    },
+    {
+      "id": 50484650,
+      "url": "https://www.echopress.com/business/minnesota-guitarists-invention-strikes-a-new-chord",
+      "hn": "https://news.ycombinator.com/item?id=50484650",
+      "title": "Minnesota guitarist's \"palmfrets\" invention strikes a new chord",
+      "time": 1794582487,
+      "points": 162,
+      "depth": [
+        {
+          "text": "a Minnesota guitarist's **palmfrets** let players raise **bass-string notes** with their palm near the bridge",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter describes it as a **fret at the bridge end**, which raises the bass strings' root note by a semitone or few. Another says it can make you **your own bass backing player** with one or two notes.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some see new musical possibilities or a useful bass part; others say it adds little, could feel awkward, or can be replaced by alternate tuning.",
+      "comment_count": 93,
+      "terms": [
+        "palmfrets",
+        "bridge",
+        "semitone",
+        "root note",
+        "alternate tuning",
+        "intonation"
+      ],
+      "entities": [
+        "Palmfrets",
+        "Palmbass",
+        "Gotoh",
+        "Allparts",
+        "Hipshot",
+        "Allparts Certano B/G bender",
+        "Dusenberg Multibender",
+        "Tele",
+        "Strat",
+        "Steinberger TransTrem",
+        "Chet Atkins",
+        "Merl Travis",
+        "Stevie Wonder",
+        "Buck Dharma",
+        "EVH",
+        "Leo Kottke",
+        "YouTube"
+      ],
+      "comments": [
+        {
+          "by": "adzm",
+          "text": "Not a single photo of the palmfrets in the article, wow. Closest you get is a hand covering the entire device. https://palmfrets.com/ I was much more interested once I saw the actual website. Long story short, it's basically a fret at the bridge end of the guitar, so using it will bring the 'root' note of the bass strings up a semitone or few. I can see this being pretty useful for drones when…"
+        },
+        {
+          "by": "boulos",
+          "text": "The last part of the first video makes it more clear: you're basically your own bass backing player with one or two notes. I see why he trademarked \"palmbass\" as another term."
+        },
+        {
+          "by": "Someone",
+          "text": "https://palmfrets.com/"
+        },
+        {
+          "by": "jfaulken",
+          "text": "Does anyone else hear the French name for french fries?"
+        },
+        {
+          "by": "dimovich",
+          "text": "A little offtopic, but if you tune the D string down one semitone, the chords start to sound evil. Sometimes it's helpful when trying to find new interesting chords to a song."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50487184,
+      "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/",
+      "hn": "https://news.ycombinator.com/item?id=50487184",
+      "title": "OpenAI disbands its robotics team as its general models start running robots",
+      "time": 1794592523,
+      "points": 160,
+      "depth": [
+        {
+          "text": "OpenAI disbanded its **robotics team** as its **general AI models** start controlling robots",
+          "tier": "simple"
+        },
+        {
+          "text": "Robotics researchers moved to the **main research team** under Mark Chen, while applied robotics and hardware went to the larger Applied organization under Greg Brockman. In an Nvidia study, an Astra-powered agent scored **74.8%** on a simulated robotics test, compared with **51.0%** for the best specialized robotic models on that leaderboard.",
+          "tier": "substance",
+          "data": [
+            [
+              "Astra-powered agent success rate on a simulated manipulation benchmark",
+              "74.8%"
+            ],
+            [
+              "Best specialized robotic models’ reported success rate on the leaderboard",
+              "51.0%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: general-model optimists say broad AI can handle robotics; skeptics say robots still need faster specialized models and real-world experience.",
+      "comment_count": 66,
+      "terms": [
+        "embodied AI",
+        "AGI",
+        "LLM",
+        "benchmark",
+        "spatial intelligence",
+        "actuators"
+      ],
+      "entities": [
+        "OpenAI",
+        "Mark Chen",
+        "Greg Brockman",
+        "GPT-6 Astra",
+        "Nvidia",
+        "CoRL",
+        "Figure",
+        "Sora",
+        "Guanya Shi",
+        "Russ Tedrake",
+        "Walden Robotics",
+        "Pete Florence",
+        "Generalist"
+      ],
+      "comments": [
+        {
+          "by": "jacquesm",
+          "text": "General models can run robots. They are very bad at it. It is much more efficient to have a stack of models with 'dumber' but faster models taking care of lower level functions and higher level ones that are much slower taking care of high level planning. Consciousness isn't super fast, but it is very smart. Your 'lizard brain' (to use an overstretched metaphor) and reflexive system are…"
+        },
+        {
+          "by": "yewenjie",
+          "text": "The Bitter Lesson comes for everything."
+        },
+        {
+          "by": "winfredJa",
+          "text": "This looks like general cost cutting to boost some numbers before IPO."
+        },
+        {
+          "by": "eikenberry",
+          "text": "So they gave up on non-cloud connected robotics then? Or was that ever in their scope?"
+        },
+        {
+          "by": "deadbabe",
+          "text": "Is there a primer on how to actually use LLMs to control robots? Seems very token inefficient if you have to stream commands at 60fps."
+        }
+      ],
+      "image": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2304572308-e1794587995495.jpg?resize=1200,600"
+    },
+    {
+      "id": 50492315,
+      "url": "https://www.fox5dc.com/news/amtrak-outage-ticket-booking-faa-ground-stop-november-13-2026",
+      "hn": "https://news.ycombinator.com/item?id=50492315",
+      "title": "Amtrak booking system experiencing major issues amid nationwide FAA ground stop",
+      "time": 1794617549,
+      "points": 156,
+      "depth": [
+        {
+          "text": "Amtrak's **booking system** went down during a nationwide FAA ground stop, then began **returning to normal**",
+          "tier": "simple"
+        },
+        {
+          "text": "Travelers showed **error messages** on Amtrak's website and app; officials said the issues were related to a **system-wide update**, but did not elaborate. Around 9 p.m., the booking systems were **returning to normal**, though some customers could still have issues processing payments, booking trips, or modifying reservations.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 47,
+      "terms": [
+        "FAA",
+        "ground stop",
+        "cascading failure",
+        "API",
+        "TOS",
+        "SEO"
+      ],
+      "entities": [
+        "Amtrak",
+        "FAA"
+      ],
+      "comments": [
+        {
+          "by": "petemill",
+          "text": "Amtrak's site has always been the worst example of a national rail website"
+        },
+        {
+          "by": "kristopolous",
+          "text": "I've been wanting them to have an api for years with a TOS that you cannot resell tickets or make any additional fees from the sale to discourage SEO snakes from hijacking things. A more reasonable front-end could be made without much effort and a very low monthly overhead to host since it's mostly a proxy Require the same upsells with the insurance and credit card offer I don't care, that's not…"
+        },
+        {
+          "by": "AndrewKemendo",
+          "text": "Always fun to live through a “textbook example” of something; in this case it’s a cascading failure (1) in transportation infrastructure (1) https://en.wikipedia.org/wiki/Cascading_failure"
+        },
+        {
+          "by": "redwood",
+          "text": "https://en.wikipedia.org/wiki/Planes,_Trains_and_Automobiles"
+        },
+        {
+          "by": "xvxvx",
+          "text": "The word of the day is: cascading. Coming soon: car rental sites, hotel booking sites, food delivery services, taxi and ride share services."
+        }
+      ],
+      "image": "https://images.foxtv.com/static.fox5dc.com/www.fox5dc.com/content/uploads/2026/11/1200/630/gettyimages-2296656867.jpg?ve=1&tl=1"
+    },
+    {
+      "id": 50487688,
+      "url": "https://www.theregister.com/saas/2026/11/13/microsoft-outage-gives-customers-a-crash-course-in-dependence-on-redmond/5309805",
+      "hn": "https://news.ycombinator.com/item?id=50487688",
+      "title": "Microsoft outage gives customers a crash course in dependence on Redmond",
+      "time": 1794594556,
+      "points": 155,
+      "depth": [
+        {
+          "text": "a **Microsoft outage** left **email gone and Teams iffy**, showing organizations' reliance on **one provider**",
+          "tier": "simple"
+        },
+        {
+          "text": "Microsoft put the incident's start at **1826 GMT on November 12**. **Exchange Online**, recently used files in Microsoft 365, Copilot and Microsoft 365 Education were affected; on November 13, Microsoft said availability was improving. Nextcloud co-founder Jos Poortvliet said companies may struggle to switch providers quickly or keep working **air-gapped**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say a day out every few years isn't worth paying more to avoid; others say a business taken offline by its SaaS isn't resilient.",
+      "comment_count": 49,
+      "terms": [
+        "GMT",
+        "air-gapped",
+        "SaaS"
+      ],
+      "entities": [
+        "Microsoft",
+        "Microsoft 365",
+        "Teams",
+        "Exchange Online",
+        "Copilot",
+        "Microsoft 365 Education",
+        "Nextcloud",
+        "Jos Poortvliet"
+      ],
+      "comments": [
+        {
+          "by": "onion2k",
+          "text": "I wonder if it'll be a more useful course than the one we had when Crowdstrike broke everything, or the many times when AWS US-East-1 has fallen over taking down many popular services. The lesson most people learn from this sort of outage is that things bounce back afterwards, and the risk is minimal enough that a day out of every few years isn't enough of a problem to pay more."
+        },
+        {
+          "by": "oidar",
+          "text": "I think every N days a chaos monkey event should happen for every business to help with this kind of issue. If a SaaS takes your business offline, you aren't resilient. https://netflix.github.io/chaosmonkey/"
+        },
+        {
+          "by": "ThrowawayR2",
+          "text": "That ship sailed 20 years ago when everybody stampeded into cloud computing / SaaS ago and it became heresy to suggest on-prem had benefits. \"Redmond\" is a symptom but the problem is \"live by the cloud, die by the cloud.\""
+        },
+        {
+          "by": "xtajv",
+          "text": "Microsoft Ireland Operations Limited is designated as a DORA 3TPP [1]... I wonder if that corporate entity is in-scope to pay penalties for this outage. ---\n[1] https://www.regulation-dora.eu/blog/critical-ict-third-party..."
+        },
+        {
+          "by": "souvlakee",
+          "text": "What if grounded pilots killed time in Flight Simulator, which overloaded Azure?"
+        }
+      ],
+      "image": "https://image.theregister.com/259120.jpg?imageId=259120&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
+    }
+  ],
+  "glossary": {
+    "ground stop": "An order that pauses flights from taking off, while flights already in the air may be handled separately.",
+    "FTI": "FAA Telecommunications Infrastructure: the network that connects FAA systems and services.",
+    "TDM": "Time Division Multiplex: the method the source says FAA systems use for safety-critical voice and radar information.",
+    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "circular financing": "A setup where money supplied by one business loops back to it through another business's purchases.",
+    "neocloud": "A cloud provider that rents out computing power, often using GPU hardware.",
+    "hyperscaler": "A company that rents servers and computing power at huge scale.",
+    "inference": "When an AI uses what it learned to answer or act, instead of being trained.",
+    "ASIC": "Application-specific integrated circuit: a chip built for a particular job.",
+    "AGI / ASI": "Artificial General Intelligence / Artificial Superintelligence: ideas for AI that can handle a broad range of tasks, or go beyond human ability.",
+    "carrier verification": "Checking that the trucking company handling a shipment is legitimate.",
+    "services stack": "The set of online tools and sign-in systems that have to work together for a task.",
+    "cookies": "Small bits of information a website saves in your browser, often so it can remember you between visits.",
+    "2FA": "Two-factor authentication: a sign-in check that asks for a second proof of identity as well as a password.",
+    "passkey": "A way to sign in without typing a password, using a credential saved by a device or password manager.",
+    "airband": "The radio frequencies pilots and air traffic controllers use to talk.",
+    "cuda": "A set of tools that lets software use a computer's graphics chip for calculations.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "SDR": "Software-defined radio: a radio that uses software to handle signals instead of being limited to one fixed radio function.",
+    "ETTUS B210": "A radio device that can receive signals for a computer to process.",
+    "JEPA": "Joint-Embedding Predictive Architecture: an AI setup that predicts how a scene changes after an action using a compact internal description.",
+    "world model": "An AI meant to represent a scene and how things in it change.",
+    "embedding": "A set of numbers that gives an AI a way to represent a word or piece of text and how it relates to others.",
+    "subgoal": "A smaller target that helps break a longer task into manageable steps.",
+    "memory graph": "A map of remembered examples, linked so a planner can find a route between them.",
+    "out-of-distribution": "Different from the situations the system encountered in its examples.",
+    "MPC": "Model Predictive Control: a way to choose an action by predicting a short stretch ahead, acting, then planning again.",
+    "MCTS": "Monte Carlo Tree Search: a way to choose a game move by trying out possible future moves many times.",
+    "crude oil": "Oil as it comes out of the ground, before it is made into fuels or other products.",
+    "refining capacity": "How much oil a refinery can turn into usable products over a given period.",
+    "oblast": "A large administrative region in Russia, similar to a province.",
+    "LLMs": "Large language models: computer programs trained on lots of writing that can produce text.",
+    "marginal cost": "The extra cost of serving one more copy or user.",
+    "technical debt": "Past shortcuts or aging choices that make future work take more effort.",
+    "SaaS": "Software as a Service: software you access over the internet, with the provider running it for you.",
+    "E2EE": "End-to-end encryption: a way to protect data so only the people it's meant for can read it, not the company carrying it.",
+    "training data": "The examples and text used to teach an AI system how to respond.",
+    "groovebox": "A music-making device with built-in sounds and controls for arranging patterns.",
+    "step sequencer": "A tool for arranging notes or drum hits in repeating steps.",
+    "firmware": "The built-in software that tells a device's hardware how to work.",
+    "MIDI": "Musical Instrument Digital Interface: a way for music software and instruments to share notes and timing.",
+    "Web MIDI": "A browser feature that lets a webpage communicate with MIDI music gear.",
+    "vibecoding": "Using AI to make software from requests instead of writing each line yourself.",
+    "open source": "Software whose code is shared so other people can inspect, run, or change it.",
+    "SLA": "Service-level agreement: a provider's promise about how reliably its service will work.",
+    "FAA": "Federal Aviation Administration: the US agency that sets rules for air travel.",
+    "GHC": "Glasgow Haskell Compiler: a program that turns Haskell code into something a computer can run.",
+    "CI": "Continuous integration: automatic checks that run when developers change code, helping catch problems early.",
+    "eDSL": "Embedded domain-specific language: a small set of commands made for one task, written inside a larger programming language.",
+    "type safety": "Checks that values are used in ways the code expects, catching some mistakes before the app runs.",
+    "slop": "Low-quality material; here, the article uses it for AI-made content it describes as cheap and of dubious value.",
+    "agent": "An AI system that can take steps and use tools to get a task done, not just answer questions.",
+    "PR": "Pull request: a proposed code change shared so others can review it.",
+    "vibe coding": "Making software by telling an AI what you want and letting it write the code, often without closely checking how it works.",
+    "alpha": "An early, unfinished version of a game or program.",
+    "isometric": "A way of drawing 3D-looking scenes at an angle, with objects staying the same size rather than shrinking into the distance.",
+    "3D Tiles": "Map data split into pieces so a viewer can load just the area it needs.",
+    "LoRA": "Low-Rank Adaptation: a way to adapt an AI for a new task by training a small add-on instead of changing the whole AI.",
+    "fine-tuning": "Training an already-built model a bit more on examples for a particular job.",
+    "shader": "A small program that tells a game how to draw an image or surface.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "TUI": "Terminal User Interface: the menus and controls an app shows inside a text terminal.",
+    "cell attribute": "A setting attached to one character space on the screen, such as its background color.",
+    "box-drawing characters": "Text characters shaped like the edges and corners of a box.",
+    "DCS": "Device Control String: a message an app sends to a terminal to ask it to do something.",
+    "multiplexer": "A program that divides a terminal session into panes and handles what each pane displays.",
+    "overstrike mode": "A terminal feature that lets characters be drawn on top of text already in the same space.",
+    "AI Overviews": "Google's AI-generated summaries that appear with search results.",
+    "antitrust": "Rules meant to stop companies from becoming so powerful that they can squeeze out competition.",
+    "integrated product": "A service treated as one combined thing, rather than separate parts.",
+    "prearranged trading plan": "An arrangement for an executive to sell shares on set dates or at target prices, instead of deciding at the last minute.",
+    "insider trading": "Buying or selling shares using important company information that the public does not have.",
+    "SEC": "Securities and Exchange Commission: the agency that oversees company filings for stock-market listings.",
+    "market cap": "The total market value of a company’s shares.",
+    "granzyme K": "A protein the paper links to ageing in body tissues.",
+    "inflammaging": "Inflammation throughout the body that continues as an organism gets older.",
+    "CPF": "Brazil's tax ID, which people commonly give to shops and government offices.",
+    "YaRN truncation": "A setting that controls how a language model’s long-text adjustment is rounded.",
+    "FP8": "A way to store a number in eight bits; this project uses it for the network's calculations.",
+    "quantized matmuls": "Multiplying model numbers after storing them in a smaller, less exact form, which can save memory and speed things up.",
+    "MoE": "Mixture of Experts: a model with many specialist parts that sends each piece of text to only a few of them.",
+    "backend": "The part of an app that does work behind the scenes, such as handling its data.",
+    "palmfrets": "A guitar device near the bridge that lets players fret notes with their palm.",
+    "bridge": "A connector for bringing bug reports to or from another tracker.",
+    "semitone": "A small step between two neighboring notes.",
+    "root note": "The main note a chord is built around.",
+    "alternate tuning": "Setting a guitar's strings to different notes than usual.",
+    "intonation": "How closely a guitar's notes match the pitches they are meant to make.",
+    "embodied AI": "AI models that control devices acting in the physical world, such as robots, cars, or drones.",
+    "AGI": "Artificial General Intelligence: a hypothetical AI that could handle many kinds of tasks, not just one narrow job.",
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "spatial intelligence": "An AI's ability to work with where things are and how they relate in 3D space.",
+    "actuators": "Parts that make a robot move or affect things around it.",
+    "cascading failure": "One problem that causes other problems in turn.",
+    "TOS": "Terms of Service: the rules a website sets for using it.",
+    "SEO": "Search engine optimization: making changes to a webpage so it is more likely to appear in search results.",
+    "GMT": "Greenwich Mean Time: a time standard used as a shared clock reference.",
+    "air-gapped": "Kept separate from outside networks."
+  }
+}
