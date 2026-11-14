@@ -2,6 +2,228 @@
   "date": "2026-11-14",
   "cards": [
     {
+      "id": 50499017,
+      "url": "https://www.crissyfield.de/research/lovable-en/",
+      "hn": "https://news.ycombinator.com/item?id=50499017",
+      "title": "Lovable apps expose passport details and more than 200K private messages",
+      "time": 1794678190,
+      "points": 529,
+      "depth": [
+        {
+          "text": "some Lovable-built apps left **passports**, **private messages** and other sensitive customer data **open to anyone**",
+          "tier": "simple"
+        },
+        {
+          "text": "Researchers examined **159,041 Lovable projects** and found email-address records in tables across **7,403 of 24,664 websites**. The report warns that **30%** is not a confirmed leak rate.",
+          "tier": "substance",
+          "data": [
+            [
+              "Lovable projects analyzed",
+              "159,041"
+            ],
+            [
+              "Projects using Supabase",
+              "34,545"
+            ],
+            [
+              "Websites sending Supabase records on page load",
+              "24,664"
+            ],
+            [
+              "Websites with records containing email addresses",
+              "7,403"
+            ],
+            [
+              "Tables with records containing email addresses",
+              "10,560"
+            ],
+            [
+              "Websites with email-address records",
+              "30%"
+            ],
+            [
+              "Records with identity document details",
+              "more than 1,000"
+            ],
+            [
+              "Accessible chat messages",
+              "more than 200,000"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say this isn't a breach because the data was already publicly accessible; others say insecure defaults and weak accountability still make it a security failure.",
+      "comment_count": 190,
+      "terms": [
+        "API key",
+        "read-only request",
+        "access control",
+        "Supabase"
+      ],
+      "entities": [
+        "Lovable",
+        "Supabase",
+        "Common Crawl",
+        "Handelsblatt",
+        "Crissy Field GmbH",
+        "Lina Knees",
+        "GPT Engineer",
+        "Anton Osika",
+        "Fabian Hedin"
+      ],
+      "comments": [
+        {
+          "by": "neathack",
+          "text": "Hi, I’m the author of this blog post. I submitted it to HN two weeks ago, but it didn’t gain much traction, so I’m glad to see it resubmitted. Happy to answer any questions, though I think the situation is fairly self-explanatory."
+        },
+        {
+          "by": "nospi",
+          "text": "I cannot wrap my head around jacquesm's insistence that this is a breach. Can someone please correct me if I'm wrong here, but isn't the article claiming that all data was publicly accessible with a read-only API key, also publicly shipped in each site? Unless I'm missing something, no amount of digging into *published* data is a breach of anything. The act of publishing it is the leak, not the…"
+        },
+        {
+          "by": "SOLAR_FIELDS",
+          "text": "The part people are ignoring is Supabase's culpability in this matter: https://github.com/orgs/supabase/discussions/4547 This was supposedly fixed on October 30, but there are reports floating around that for existing projects, the defaults still apply. Lovable deserves some heat for using this, but this was a choice that was made by Supabase many years ago to support making it easier to onboard…"
+        },
+        {
+          "by": "Oras",
+          "text": "One might argue that data breaches been there way before AI, the difference with these AI generated apps is: - They are an easy target, they don’t need any sophisticated hacking knowledge (article mentions inspecting network calls in browsers). - There tons of those, and more created everyday. For the average user, they don’t know what they are using, or how risky it can be."
+        },
+        {
+          "by": "liquid_thyme",
+          "text": "These are canaries in the colemines. Platforms need better defaults, deny-by-default DBs, least-priviledge API, automated auth tests, etc. Basically make insecure deployments difficult with AI generated code."
+        }
+      ],
+      "image": "https://www.crissyfield.de/images/research-lovable-opengraph.jpg"
+    },
+    {
+      "id": 50500963,
+      "url": "https://x.com/i/broadcasts/2brajgZlOKRMka",
+      "hn": "https://news.ycombinator.com/item?id=50500963",
+      "title": "SpaceX Catches the Starship to end Flight 15",
+      "time": 1794691344,
+      "points": 350,
+      "depth": [
+        {
+          "text": "SpaceX caught **Starship** to end **Flight 15**, and commenters called the catch incredible",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter hopes the **heat shield** holds up, then points to a **double catch** and re-flying the same ships as next steps.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 192,
+      "terms": [
+        "heat shield",
+        "double catch",
+        "specific impulse",
+        "payload",
+        "booster"
+      ],
+      "entities": [
+        "SpaceX",
+        "Starship",
+        "Flight 15",
+        "Apollo 11",
+        "TSMC",
+        "ASML",
+        "Zeiss",
+        "Dragon"
+      ],
+      "comments": [
+        {
+          "by": "small_model",
+          "text": "If the heat shield holds up then this changes everything. Next step is double catch and re-flying the same ships and catching again, then payloads to orbit become significantly cheaper opening a new era in space flight."
+        },
+        {
+          "by": "DarmokJalad1701",
+          "text": "Insane achievement! It is the dawn of a new era! One that has been 10+ years in the making."
+        },
+        {
+          "by": "thinkingemote",
+          "text": "If this makes even me want to go study engineering I know it will inspire millions of youngsters into making the future we all want. Bravo!"
+        },
+        {
+          "by": "codeulike",
+          "text": "I like that they wrote \"dont panic\" on the fuselage above the s42 badge"
+        },
+        {
+          "by": "hinkley",
+          "text": "I know engineering is about expediency, and price, but I’m still bummed that we aren’t getting ships with landing gear in this or likely the next generation of rockets either. Seems that the heavier the rocket the more ground clearance to need to self-land, and so you can’t scale up the dragon’s landing system. I don’t think there’s anywhere near enough weight to shave off of the next rocket or…"
+        }
+      ],
+      "image": "https://pbs.twimg.com/media/HXBS_RyWMAAE_VR?format=webp&name=medium"
+    },
+    {
+      "id": 50497892,
+      "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
+      "hn": "https://news.ycombinator.com/item?id=50497892",
+      "title": "PyPI's redesigned project pages with clearer security signals are now live",
+      "time": 1794670852,
+      "points": 180,
+      "depth": [
+        {
+          "text": "PyPI redesigned its project pages to make **security warnings** and **release origins** easier to spot",
+          "tier": "simple"
+        },
+        {
+          "text": "The new security tab shows release provenance states and **per-file attestations**; **warnings** flag incomplete provenance or files coming from a different repository or workflow than before. PyPI says “no provenance” means the file origin cannot be cryptographically verified, **not necessarily malicious**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some welcome more visible provenance and broader adoption; others worry it ties publishing to big-cloud services and lock-in.",
+      "comment_count": 82,
+      "terms": [
+        "provenance",
+        "attestation",
+        "Trusted Publishing",
+        "API token"
+      ],
+      "entities": [
+        "PyPI",
+        "Python",
+        "Kabu Creative",
+        "OpenSSF",
+        "OpenSSF Attestations Style Guide",
+        "PyPI Publish",
+        "SLSA",
+        "Trusted Publishing",
+        "Dustin Ingram",
+        "Zach Steindler",
+        "Mike Fiedler",
+        "Jacob Coffee",
+        "Sigstore",
+        "GitLab",
+        "Codeberg",
+        "Sourcehut",
+        "Homebrew"
+      ],
+      "comments": [
+        {
+          "by": "time4tea",
+          "text": "Not very keen that the whole story of trust is basically centralisation - requiring \"big cloud\" and essentially promoting lock-in. Did I get that right? Seems a bit anti-pythonic."
+        },
+        {
+          "by": "djoldman",
+          "text": "Some examples: dlt (no provenance): https://pypi.org/project/dlt/#files datasette (yes provenance): https://pypi.org/project/datasette/#files"
+        },
+        {
+          "by": "samhclark",
+          "text": "This is great! I want sigstore-based or at least sigstore-style \"keyless\" short lived signatures to become more and more popular, so that support gets better everywhere. In particular, if having secure OIDC handling in a CI/CD pipeline becomes something that keeps people on GHA or GitLab then I'd hope third-party hosted CI/CD services begin to take that gap seriously and work on meeting those…"
+        },
+        {
+          "by": "mhils",
+          "text": "Very cool to see PyPI put more emphasis towards exposing provenance info. It would be even cooler if trusted publishing would finally support reusable workflows ( https://github.com/pypi/warehouse/issues/11096 )."
+        },
+        {
+          "by": "cowlevel",
+          "text": "This is about detecting formerly benign projects that have had their pypi entries hacked, but not their private keys. It does not detect malicious projects."
+        }
+      ],
+      "image": "https://blog.pypi.org/assets/images/social/posts/2026-11-06-ui-updates-complete.png"
+    },
+    {
       "id": 50493904,
       "url": "https://monkeyisland.pages.dev/",
       "hn": "https://news.ycombinator.com/item?id=50493904",
@@ -2324,6 +2546,19 @@
     }
   ],
   "glossary": {
+    "API key": "A secret code that lets software use an online service as an approved user.",
+    "read-only request": "A request that lets you see information but not change it.",
+    "access control": "Rules that decide who can see or change information.",
+    "Supabase": "A database service used by many of the Lovable projects the researchers examined.",
+    "heat shield": "A protective layer that keeps a spacecraft from getting too hot.",
+    "double catch": "Catching two rocket parts rather than catching just one.",
+    "specific impulse": "A way to compare how efficiently rocket engines use fuel.",
+    "payload": "The piece of code or data a request carries or delivers.",
+    "booster": "The lower part of a rocket that pushes it upward during launch.",
+    "provenance": "The record of where an artwork came from and who owned it.",
+    "attestation": "A check that lets a website verify what device or software created a passkey before accepting it.",
+    "Trusted Publishing": "A setup that lets a project publish through an approved service and attach proof about where its release came from.",
+    "API token": "A secret code that lets another app or person access a service.",
     "ScummVM": "A program that lets older adventure games run on newer computers.",
     "Hatari": "A program that imitates an Atari ST computer.",
     "nearest-neighbour pixels": "A way to enlarge an image by turning each original pixel into a bigger block, rather than smoothing the edges.",
