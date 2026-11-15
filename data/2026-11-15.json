@@ -2,6 +2,572 @@
   "date": "2026-11-15",
   "cards": [
     {
+      "id": 50507303,
+      "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+      "hn": "https://news.ycombinator.com/item?id=50507303",
+      "title": "All AI-generated code should be Open Source",
+      "time": 1794754018,
+      "points": 720,
+      "depth": [
+        {
+          "text": "someone argues **AI-generated code** should be **open source** because AI learned from shared code",
+          "tier": "simple"
+        },
+        {
+          "text": "The author points to models trained on **scraped Open Source code** and Stack Overflow, calling proprietary reuse **“license laundering.”** They argue purely AI-generated code **should not be copyrightable**; commenters counter that human effort and company privacy still matter.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say AI code should be open because it draws on shared code; others say human effort and private business needs still justify control.",
+      "comment_count": 385,
+      "terms": [
+        "Open Source",
+        "copyright",
+        "public domain",
+        "CC0",
+        "license laundering",
+        "LLM"
+      ],
+      "entities": [
+        "Jakub T. Jankiewicz",
+        "RMS",
+        "GNU Project",
+        "Free Software Movement",
+        "Stack Overflow",
+        "Stack Exchange",
+        "Wikimedia Commons",
+        "Creative Commons",
+        "U.S. Copyright Office",
+        "AGPL",
+        "GitHub",
+        "Doe v. GitHub",
+        "Thaler v. Perlmutter",
+        "Microsoft",
+        "Oracle",
+        "Apple",
+        "Phoenix",
+        "Hacker News"
+      ],
+      "comments": [
+        {
+          "by": "blagie",
+          "text": "I am the author of multiple AGPL systems, many in mainstream use. Early LLM models would spit out my code almost verbatim. Modern systems borrow heavily on the creative design of those systems. One company first pirated my AGPL code (e.g. shipped it without my name, copyright notices, source availability, etc.). I sent them violation notices. After many months of fighting, they had an LLM clone…"
+        },
+        {
+          "by": "jrmg",
+          "text": "In the United States the Copyright Office actually has guidance on this that I feel most people aren’t aware of. https://www.copyright.gov/ai/Copyright-and-Artificial-Intell... An excerpt, with emphasis mine: • Questions of copyrightability and AI can be resolved pursuant to existing law,\nwithout the need for legislative change. • The use of AI tools to assist rather than stand in for human…"
+        },
+        {
+          "by": "waximabbax",
+          "text": "By this logic, shouldn't any code using an open-source framework or language also be open source? Even before AI, devs learned from Stack Overflow and plenty of open source code. You're confusing writing code with software engineering. Devs never just wrote code, they took ownership of the outcome. Business owners put their money on the line for product decisions. To say that just because devs or…"
+        },
+        {
+          "by": "viraptor",
+          "text": "Doe v. GitHub already decided (I'm simplifying, read the actual thing yourself) that LLM output is not automatically open source - or specifically it doesn't infringe on the open source training material and doesn't inherit the oss copyright notice. Thaler v. Perlmutter (again simplified) showed 100% AI output can't be given any copyright. The directions the current cases are going are very much…"
+        },
+        {
+          "by": "glitchc",
+          "text": "The article contradicts itself. It's important to remember that the purpose of the license is to allow the copyright owner to exercise their rights in a manner they deem fit. Even if they choose to give the code away, that choice is captured in the form of a specifically worded license (MIT, BSD, etc.). This means that licenses exist because code is copyrightable in the first place, with the…"
+        }
+      ],
+      "image": "https://jakub.jankiewicz.org/img/en/ai-code-open-source.png"
+    },
+    {
+      "id": 50502988,
+      "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
+      "hn": "https://news.ycombinator.com/item?id=50502988",
+      "title": "Court denies motion to dismiss DRAM price fixing case",
+      "time": 1794705516,
+      "points": 422,
+      "depth": [
+        {
+          "text": "a judge let a **memory price-fixing case** against Samsung, SK Hynix and Micron **move forward**",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: some commenters see obvious price fixing and want tougher action; others think the shift to HBM could explain supply cuts without collusion.",
+      "comment_count": 194,
+      "terms": [
+        "DRAM",
+        "HBM",
+        "motion to dismiss",
+        "plus factors",
+        "conscious parallelism",
+        "class action",
+        "cartel"
+      ],
+      "entities": [
+        "Samsung",
+        "SK Hynix",
+        "Micron",
+        "Noël Wise",
+        "Crucial",
+        "DRAM II"
+      ],
+      "comments": [
+        {
+          "by": "SubiculumCode",
+          "text": "If they are price fixing, eff them. Finally secure a research grant and had budgeted money for a new compute workstation and the RAM prices are killing my budget, because I'd love to get at least 256 GB of RAM and that's 4-5 grand now. Ridiculous, especially since I'd like to have a GPU in it with at least 32Gb of VRAM for medical image model training, so that is also like 4-5 grand too. Do I…"
+        },
+        {
+          "by": "PeterStuer",
+          "text": "It's a 3 way prisoners dilemma market where the prisoners have been caught explicitly colluding before. Now they do not need explicit colluding anymore as the pattern and outcome has been established already and the \"jail\" is as good as closed to new entrants. Clearly the expected \"market\" is not working in this niche, so something will have to be done about it."
+        },
+        {
+          "by": "lpghatguy",
+          "text": "A machine-drafted AI news website should not be eligible for submission here."
+        },
+        {
+          "by": "bloomingeek",
+          "text": "Having read most of the posts for this subject, I got to thinking: wouldn't it be cool and beneficial to the HN community, if we tried to anticipate equipment price spikes? We tend to be electronic parts focused, so why not post trends as we see them. Example: I, like I'm sure others did, saw the M.2 SSD prices starting to rise. Even though I didn't see the data center build up coming, I bought a…"
+        },
+        {
+          "by": "sysguest",
+          "text": "idk going with DDR3/4/5 upgrades are really makes me doubt the whole argument... those upgrades ARE ACTUAL UPGRADES, and if exiting ddr4 helps on producing more ddr5, why not? (and the cheap chinese makers can produce plenty of those ddr4 chips, so it's NOT that \"monopoly destroying the market\" scenario)"
+        }
+      ],
+      "image": "https://litnews.ai/og/default.png"
+    },
+    {
+      "id": 50506180,
+      "url": "https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html",
+      "hn": "https://news.ycombinator.com/item?id=50506180",
+      "title": "Lutnick Pushed to Weaken Chip Rules That Overlap with His Family Business",
+      "time": 1794742851,
+      "points": 311,
+      "depth": [
+        {
+          "text": "Lutnick pushed to weaken **chip rules** that overlap with his **family business**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says the Trump administration **relaxed limits** on renting advanced GPU time; another cites a quoted caveat that there is **no evidence** Cantor’s investments influenced Lutnick’s deliberations.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: critics see corruption and conflicts of interest; others argue the chip rentals follow current rules and note there’s no evidence Cantor’s investments influenced Lutnick.",
+      "comment_count": 134,
+      "terms": [
+        "GPU"
+      ],
+      "entities": [
+        "Lutnick",
+        "Cantor",
+        "Trump",
+        "Biden",
+        "Nvidia",
+        "Blackwell",
+        "Jensen",
+        "Huang",
+        "OpenAI",
+        "Jeffrey Epstein",
+        "Coffeezilla",
+        "NYT",
+        "CIA",
+        "Piper Sandler",
+        "Stifel",
+        "Jefferies"
+      ],
+      "comments": [
+        {
+          "by": "lvl256",
+          "text": "Anyone who’s been around Wall Street long enough could have told you Lutnick has had questionable morals and ethics even against subpar standards among finance professionals."
+        },
+        {
+          "by": "DivingForGold",
+          "text": "https://wallhop.io/https://www.nytimes.com/2026/11/15/us/pol... Lutnick is a TRAITOR, he manipulated the system to benefit his company, at the expense of the National Security of the US, by investing in this Malaysian data center which in effect, allowed the Chinese military a source to run their code on Blackwells, and if he's not arrested for treason and a stop put to it, all the next…"
+        },
+        {
+          "by": "vjulian",
+          "text": "A large portion of the world is resigned to enslavement (through economic and violent coercion and through PR) by megalomaniacs who see the world from a nation-state perspective and who are personally hyper-competitive."
+        },
+        {
+          "by": "TheAtomic",
+          "text": "Does it ever stop with this administration?"
+        },
+        {
+          "by": "genxy",
+          "text": "He should already be in prison for tariff fraud."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50506719,
+      "url": "https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/",
+      "hn": "https://news.ycombinator.com/item?id=50506719",
+      "title": "The MacBook Pro's OLED PWM Problem: When a 'Better' Display Becomes Worse to Use",
+      "time": 1794748522,
+      "points": 273,
+      "depth": [
+        {
+          "text": "some people say the new MacBook Pro’s OLED screen leaves them **dizzy** or with **headaches**",
+          "tier": "simple"
+        },
+        {
+          "text": "Notebookcheck measured **240Hz** flickering on the OLED at brightness settings of 99% and below; the M4 Pro MacBook Pro with Mini-LED measured **14,880Hz**. The article warns these figures don’t predict comfort on their own, and discomfort can have other causes.",
+          "tier": "substance",
+          "data": [
+            [
+              "OLED PWM frequency",
+              "240Hz"
+            ],
+            [
+              "Mini-LED PWM frequency",
+              "14,880Hz"
+            ],
+            [
+              "Brightness settings with flickering detected",
+              "99% and below"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters see the reported 240Hz flicker as a display problem worth addressing; others question whether it causes the symptoms, pointing to nocebo or other explanations.",
+      "comment_count": 156,
+      "terms": [
+        "PWM",
+        "OLED",
+        "tandem OLED",
+        "Mini-LED",
+        "DC dimming",
+        "nocebo"
+      ],
+      "entities": [
+        "Apple",
+        "MacBook Pro",
+        "PROLED XDR Display",
+        "Notebookcheck",
+        "M4 Pro"
+      ],
+      "comments": [
+        {
+          "by": "weinzierl",
+          "text": "Despite people perceiving this differently your sensitivity can also change over time. My first computer had a 50 Hz (Hz not kHz) color monitor I spent hundreds of hours in very close proximity with and the flicker did not bother me. When I fetched the machine from the attic some years ago and tried it I could not bear it for long. It's hard even for myself to grasp, how my own perception could…"
+        },
+        {
+          "by": "legitronics",
+          "text": "When I actually went to the source for the 240hz claim, I didn’t reach the same conclusion as the testers? Maybe they just let their rigol scope spit out 240hz, but 480hz worst case and I would actually say 960hz. I think what’s happening with the tandem oled is they both pwm at 480hz and 180 degrees out of phase giving effective 960hz when both are in use. Which appears to be most of the usable…"
+        },
+        {
+          "by": "Velocifyer",
+          "text": "I'm glad that this is bringing attention to flicker sensitivity. Here are some other things that people are sensitive to:\n- CRI on white LEDs (and flourencents).\nCRI is how clean the spectrum is in comparison to the sun or a incandescent bulb, where the specturm is completely even. There are some CRI >=95 LEDs that are fine for most people however. - Motion blur\nMotion blur on LCDs (such as ~50%…"
+        },
+        {
+          "by": "a-dub",
+          "text": "macbook pro displays (before the oled) have always caused a weird sort of eyestrain and become hard to read after a few hours of usage for me. i have never pinned down exactly what causes it- some internet threads talk about \"temporal dithering\" complete with weird extensions that may or may not disable it. sometimes i wonder if it's the glossy display (although oddly sometimes it appears to…"
+        },
+        {
+          "by": "explosion-s",
+          "text": "As someone who’s had a concussion, this is really interesting. For me this is how any screen was to me, not just bright OLED ones. Even more interestingly it’s essentially only screens— backlist posters at the mall (paper with a backlight) still affect it but less so. To me perhaps it’s focusing on something on a screen that does this, but it’s really interesting to see this affect the general…"
+        }
+      ],
+      "image": "https://macanorak.com/content/images/2026/11/PROLED-Display-XDR-1.png"
+    },
+    {
+      "id": 50478701,
+      "url": "https://forge-blog.github.io/posts/rust-std-memory-safety/",
+      "hn": "https://news.ycombinator.com/item?id=50478701",
+      "title": "Memory Safety Bugs in Rust Standard Library",
+      "time": 1794547328,
+      "points": 185,
+      "depth": [
+        {
+          "text": "someone found **memory-safety bugs** in Rust that **safe code** can trigger",
+          "tier": "simple"
+        },
+        {
+          "text": "Microsoft FORGE Lab reported issues in Rust’s **std and core**, with three patterns of **misplaced trust**: trusting code not to panic, user-provided implementations to be correct, and the underlying system. Some findings were made with help from **Hyenas**, FORGE’s AI-powered vulnerability-scanning system.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some commenters call this a good use of AI and say it helped find bugs; others call this kind of AI work slop and say projects block AI issues.",
+      "comment_count": 179,
+      "terms": [
+        "soundness bug",
+        "undefined behavior",
+        "unwinding",
+        "unsafe Rust"
+      ],
+      "entities": [
+        "Microsoft",
+        "FORGE Lab",
+        "Rust",
+        "Hyenas",
+        "MDASH"
+      ],
+      "comments": [
+        {
+          "by": "simonask",
+          "text": "Just because emotions seem to be always boiling whenever Rust is mentioned, I want to clarify for people who only follow casually that there is nothing unusual or scandalous about these finds. The Rust project as a whole currently has 178 open issues with the tag I-unsound[1]. Many of these describe issues that only exist in the nightly compiler, of course, but it does happen that bugs are not…"
+        },
+        {
+          "by": "hingler36",
+          "text": "I've always felt that parts of the Rust standard library to be weirdly un-rusty. Like indexing a vector panicking instead of returning a Some(T) in case the index is out of bounds. It's easy to avoid if you put the effort in of course, but it did always feel weird that one of the first data structures you learn has this behavior right out of the gate."
+        },
+        {
+          "by": "Panzerschrek",
+          "text": "> But many operations in Rust can panic, from out-of-bounds indexing to calls into user-provided code, and by default a panic unwinds That's why I think having unwinding in Rust is a mistake. It gives a false sense of safety, but it's very hard to write unwinding-correct code. So, it would be better to handle panics as immediate process termination instead."
+        },
+        {
+          "by": "nektro",
+          "text": "> Pattern 2: Trusting user-provided implementations to be correct reminds me of the tales from https://oxide.computer/blog/iddqd-unsafe"
+        },
+        {
+          "by": "eptcyka",
+          "text": "An effect system could gelp us reason about code by making calls to panic-capable functions marked as such. Maybe we could mark some types as panic unsafe?"
+        }
+      ],
+      "image": "https://forge-blog.github.io/images/forge.png"
+    },
+    {
+      "id": 50503465,
+      "url": "https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/",
+      "hn": "https://news.ycombinator.com/item?id=50503465",
+      "title": "My favourite modern NES games",
+      "time": 1794710485,
+      "points": 181,
+      "depth": [
+        {
+          "text": "someone picked 25 **modern NES games**, from spooky platformers to **co-op firefighting**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author says the NES is still getting **new third-party games**. Almost all are available **digitally**, and most can also be bought as physical cartridges.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 31,
+      "terms": [
+        "homebrew",
+        "ROM",
+        "emulation",
+        "shmup",
+        "Metroidvania"
+      ],
+      "entities": [
+        "NES",
+        "Nintendo Entertainment System",
+        "Famicom",
+        "Nintendo",
+        "All Hell Unleashed",
+        "Alwa’s Awakening",
+        "Anguna: Scourge of the Goblin King",
+        "Blazing Rangers",
+        "Estique",
+        "2nd adventure",
+        "Data Man",
+        "Xeno Crisis",
+        "Smash TV",
+        "AdventureQuest",
+        "Garbage Pail Kids: Mad Mike and the Quest for Stale Gum",
+        "Gunhawk",
+        "GunTneR",
+        "Haunted: Halloween ’86 (The Curse of Possum Hollow)",
+        "Haunted: Halloween ’87 (The Year of the Witch)",
+        "Lizard",
+        "Micro Mages",
+        "RAD vs Dragons",
+        "Sam’s Journey",
+        "Little Sisyphus",
+        "Böbl",
+        "Witch ‘n Wiz",
+        "Fire ‘n Ice",
+        "Catrap",
+        "Final Fantasy VII",
+        "Princess Peach in the Mushroom Kingdom",
+        "Dragon Warrior",
+        "Mega Man",
+        "Super Mario Bros.",
+        "Castlevania",
+        "Final Fantasy",
+        "Destiny of an Emperor",
+        "The Guardian Legend",
+        "Faxanadu",
+        "Duck Tales",
+        "Morrowind",
+        "Tamriel Rebuilt",
+        "Mighty Final Fight",
+        "Game Boy Advance",
+        "Nintendo DS",
+        "Atari 2600",
+        "SNES",
+        "N64",
+        "PS1",
+        "PS2",
+        "Famitracker",
+        "8-bit Slasher",
+        "Retrotainment",
+        "Lizard",
+        "Morphcat",
+        "Nicolas Bétoux",
+        "Julius Riecke",
+        "Brad Smith",
+        "Langel Bookbinder",
+        "Art Spiegelman",
+        "Jane Austen",
+        "Artix Entertainment",
+        "Compile",
+        "iam8bit",
+        "Steam",
+        "itch.io",
+        "Cowabunga"
+      ],
+      "comments": [
+        {
+          "by": "jkestner",
+          "text": "I backed the Lizard Kickstarter - one of the best i ever did, for Brad’s updates. I’m not going to ever make an NES game but fascinating to read about how the limitations of the hardware influence game decisions or creative hacks. I told him he could make a book out of those."
+        },
+        {
+          "by": "dylanz",
+          "text": "Whoa... I didn't even know these existed. This is linked from that page and is a pretty cool example of what it takes to make these: https://www.youtube.com/watch?v=ZWQ0591PAxM . It's cool to see the Nintendo games are still being developed! I was 8yo when the NES came out and my mom saved up all her waitress money and bought me one that Christmas."
+        },
+        {
+          "by": "soupfordummies",
+          "text": "This always blew my mind: a Chinese group remade Final Fantasy VII for NES https://en.wikipedia.org/wiki/Final_Fantasy_VII_(NES_video_g... And it looks like there’s even an English translation patch: https://www.romhacking.net/translations/2369/"
+        },
+        {
+          "by": "jader201",
+          "text": "Thanks for sharing! I love the NES — probably my favorite console! I still enjoy playing the original games today on occasion. I have a modest (curated) collection of about 60 games, but most are what I would consider some of the best titles for the system: Dragon Warrior 1-4, Mega Man 1-6, SMB 1-3, both Zeldas, Castlevania 1-3, Final Fantasy, Destiny of an Emperor, Guardian Legend, Faxanadu…"
+        },
+        {
+          "by": "3RTB297",
+          "text": "Back when the NES mini went on sale and it was easy to add ROMs, I added a few homebrew games that were floating around at the time. 'Princess Peach in the Mushroom Kingdom' was the most acclaimed homebrew option, essentially a re-skin and level re-design of SMB3 with SMB2 Peach as the protagonist. So the solid gameplay remained, and the levels were HARD. Great work by the dev, and obviously a…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50505271,
+      "url": "https://space.stackexchange.com/questions/37775",
+      "hn": "https://news.ycombinator.com/item?id=50505271",
+      "title": "Why did some Apollo missions carry a grenade launcher?",
+      "time": 1794733603,
+      "points": 176,
+      "depth": [
+        {
+          "text": "Apollo carried a **grenade launcher** for **seismic imaging** on the Moon",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter quotes a manual: Earth sent **“arm grenades” and “fire grenades” commands**; it describes sequential firing capacitors for **four grenades**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 123,
+      "terms": [
+        "seismic imaging",
+        "capacitor",
+        "mortar package",
+        "ALSEP"
+      ],
+      "entities": [
+        "Apollo",
+        "ALSEP",
+        "NASA"
+      ],
+      "comments": [
+        {
+          "by": "marshray",
+          "text": "From November 2 to Nov 22 2018 the \"DrSheldon\" account asks exactly one question per day. https://space.stackexchange.com/users/drsheldon?tab=question... Like this one, most of the questions are worded to enable an easy answer from a primary source. In one instance the account answers its own question within the same minute: https://space.stackexchange.com/questions/31279/how-was-the-... In…"
+        },
+        {
+          "by": "fsloth",
+          "text": "\"The mortar package is activated by the \"arm grenades\" and \"fire grenades\" commands from Earth. The arm grenades command is applied to and gated through\nthe command gating to the grenade arming circuitwhich charges the regulaz and\nsequential firing capacitors of the four grenades by applying a Z4-volt arming signal. A grenade arm pulse is also applied to the data handling function indicating…"
+        },
+        {
+          "by": "throwawayffffas",
+          "text": "The soviets did regularly carry a gun. For survival purposes, as they were landing in Siberia which has wolves and pretty big bears. https://en.wikipedia.org/wiki/TP-82"
+        },
+        {
+          "by": "raffael_de",
+          "text": "The question is pretty unnecessary given that it references the \"ALSEP Flight System Familiarization Manual\" [1] which also goes into detail about the purpose of the grenade launcher. 1: https://ntrs.nasa.gov/search.jsp?R=19710014816"
+        },
+        {
+          "by": "fjd",
+          "text": "Went down a rabbit hole to see if the Apollo \"thumpers\" were named so because of Dune. Apparently there were a few terrestrial thumpers in use by oil and gas surveyors prior to the book and missions... whomp whomp."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50496885,
+      "url": "https://aatishb.com/myriad/how-brains-learn/",
+      "hn": "https://news.ycombinator.com/item?id=50496885",
+      "title": "A visual explanation of reinforcement learning",
+      "time": 1794663066,
+      "points": 156,
+      "depth": [
+        {
+          "text": "a little **digital creature** learns to **seek, flee, freeze, or fight** based on rewards",
+          "tier": "simple"
+        },
+        {
+          "text": "The interactive demo gives a spark **four neurons** and **three adjustable numbers** for its brain wiring. Better-than-usual trials nudge the wiring in the direction of a random change, while worse trials nudge it the other way; after **2,000 tries**, the spark becomes an expert at following light.",
+          "tier": "substance",
+          "data": [
+            [
+              "neurons",
+              "4"
+            ],
+            [
+              "brain parameters",
+              "3"
+            ],
+            [
+              "time steps per trial",
+              "500"
+            ],
+            [
+              "tries to expert behavior",
+              "2,000"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some said the brain comparison needed clearer boundaries; others said it was a helpful explanation of the algorithm.",
+      "comment_count": 9,
+      "terms": [
+        "reinforcement learning",
+        "weight perturbation",
+        "learning rate"
+      ],
+      "entities": [
+        "Aatish Bhatia",
+        "Arkarup Banerjee",
+        "Myriad",
+        "Valentino Braitenberg",
+        "Ronald Williams",
+        "REINFORCE",
+        "OpenAI"
+      ],
+      "comments": [
+        {
+          "by": "konz",
+          "text": "Reminds me of Braitenberg vehicles: simple wiring between sensors and actuators, no learning, no smarts, complex behavior and easy to anthropomorphize. Really neat! https://en.wikipedia.org/wiki/Braitenberg_vehicle"
+        },
+        {
+          "by": "jspaw",
+          "text": "It seems as if you’re using an analogy to how human brains learn, but aren’t being explicit that it’s only an analogy. Or are you asserting that this describes how human brains learn?"
+        },
+        {
+          "by": "mbxy",
+          "text": "I wish it touched on partial differential equations when the author explained how I slid one of the params left and right to find a \"better\" solution, i.e., the gradient. Otherwise good article."
+        },
+        {
+          "by": "zach_moore",
+          "text": "Are you fabricating a story about how a brain learns? This seems more like game design over neurology. It's a cool story but could use some clarity and rigor, and boundaries about what you are claiming vs the story you are telling around potential game design. Otherwise you will get pushback from the scientific community and really anyone who is confused about the clarity of your message."
+        },
+        {
+          "by": "dejongh",
+          "text": "Thanks for sharing. I am not concerned about the brain analogy - it is a good explanation of the algorithm."
+        }
+      ],
+      "image": "https://aatishb.com/myriad/promo_learning.jpeg"
+    },
+    {
       "id": 50501631,
       "url": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
       "hn": "https://news.ycombinator.com/item?id=50501631",
@@ -768,7 +1334,42 @@
     }
   ],
   "glossary": {
+    "Open Source": "Code made available so others can inspect, use, and change it under its license.",
+    "copyright": "Legal protection that gives creators control over how their work is copied and shared.",
+    "public domain": "Material people can use without asking a copyright holder for permission.",
+    "CC0": "A way for a creator to let everyone use a work without needing permission.",
+    "license laundering": "The author's phrase for turning shared work into proprietary code without proper credit or permission.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "DRAM": "Dynamic Random-Access Memory: the working memory a computer uses while running things.",
+    "HBM": "High-bandwidth memory: fast memory placed close to a processor so it can get lots of information quickly.",
+    "motion to dismiss": "A request asking a judge to end a case before it goes to trial.",
+    "plus factors": "Extra clues plaintiffs use to argue that competitors made a deal rather than independently making similar choices.",
+    "conscious parallelism": "When companies independently make similar moves without agreeing to do so.",
+    "class action": "A lawsuit brought by one person or business on behalf of a larger group with similar claims.",
+    "cartel": "Companies secretly coordinating to control prices or supply.",
     "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "PWM": "Pulse-width modulation: a way to control power by switching a signal on and off in timed bursts.",
+    "OLED": "Organic light-emitting diode: a screen where each pixel makes its own light, so dark parts can look black.",
+    "tandem OLED": "An OLED screen made with two light-producing layers working together.",
+    "Mini-LED": "A type of screen lit by many tiny lights behind the picture, giving more control over bright and dark areas.",
+    "DC dimming": "Direct Current dimming: a way to lower brightness by reducing the electrical current sent to a screen, rather than relying entirely on rapid switching.",
+    "nocebo": "A real physical symptom that can happen or worsen because someone expects a harmful effect.",
+    "soundness bug": "A flaw that lets proof-checking software accept a false result.",
+    "undefined behavior": "A situation where C++ gives no guarantee about what the program will do.",
+    "unwinding": "When a panic exits a function while running cleanup for the values it was using.",
+    "unsafe Rust": "Rust code where the programmer takes responsibility for rules the compiler cannot check.",
+    "homebrew": "Unofficial games or programs made by fans for a console.",
+    "ROM": "Read-Only Memory: information a computer can read but is not normally meant to change.",
+    "emulation": "Software that imitates an operation a chip cannot do directly, so the program can still run.",
+    "shmup": "Short for shoot-'em-up, a game about dodging and shooting waves of enemies.",
+    "Metroidvania": "An exploration game where new abilities open paths through connected areas.",
+    "seismic imaging": "A way to learn about what is underground by measuring how vibrations travel through it.",
+    "capacitor": "A part that briefly stores electrical charge.",
+    "mortar package": "The quoted manual’s name for the system that handles the grenades.",
+    "ALSEP": "Apollo Lunar Surface Experiments Package: equipment sent to the Moon to run experiments there.",
+    "reinforcement learning": "A way to train an AI by rewarding choices that work and discouraging choices that do not.",
+    "weight perturbation": "A learning method that makes small random changes to the numbers controlling a system, then checks whether the result improved.",
+    "learning rate": "A setting that controls how big each learning adjustment is.",
     "circular financing": "A setup where money supplied by one business loops back to it through another business's purchases.",
     "wafer": "A thin round slice of material that computer chips are made from.",
     "backstop": "A promise to provide money if a deal cannot get enough funding elsewhere.",
@@ -782,7 +1383,6 @@
     "MLM": "Multi-level marketing: A business where members recruit others and may earn money from what those recruits do.",
     "commission": "Money someone earns when a booking or sale brings in money.",
     "ghost jobs": "Job ads for roles that aren't actually available or may not exist.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "patch gap": "The time between a security fix being released and a user installing the update.",
     "soak time": "Extra time after a fix is made for it to roll out to users.",
     "JAX": "A software tool for writing calculations that can run on different kinds of computers.",
@@ -798,7 +1398,6 @@
     "amicus brief": "A written argument from an outside group giving a court its view on a case.",
     "Fourth Amendment": "The part of the US Constitution that protects people from unreasonable searches and seizures.",
     "warrant": "A judge's written permission for a search or seizure.",
-    "ROM": "Read-Only Memory: information a computer can read but is not normally meant to change.",
     "6502 cross-assembler": "A tool for turning a program into the numeric instructions a 6502 can run.",
     "monitor program": "A small program for looking at and changing memory, then running code stored there.",
     "machine code": "The low-level instructions a computer's processor can run directly.",
