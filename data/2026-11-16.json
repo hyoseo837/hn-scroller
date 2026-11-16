@@ -1,0 +1,1234 @@
+{
+  "date": "2026-11-16",
+  "cards": [
+    {
+      "id": 50509411,
+      "url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html",
+      "hn": "https://news.ycombinator.com/item?id=50509411",
+      "title": "Microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests",
+      "time": 1794767770,
+      "points": 491,
+      "depth": [
+        {
+          "text": "a **Microsoft outage** meant a hotel missed an **email alert** about too much chlorine in its pool",
+          "tier": "simple"
+        },
+        {
+          "text": "At Phantasialand’s Hotel Ling Bao, a **faulty automatic dosing system** pumped too much chlorine into the pool. The sauna area's safety system had sent an **email alert**, but the Microsoft outage stopped emails arriving; **15 guests** reported health problems after visiting the pool.",
+          "tier": "substance",
+          "data": [
+            [
+              "guests affected",
+              "15"
+            ],
+            [
+              "guests with airway irritation",
+              "13"
+            ],
+            [
+              "guests taken to hospital",
+              "4"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some treat the Microsoft outage as the reason the warning was missed; others say the hotel's safety setup should never have relied on email alone.",
+      "comment_count": 211,
+      "terms": [
+        "automatic dosing system",
+        "closed-loop chlorination system",
+        "fail-safe"
+      ],
+      "entities": [
+        "Microsoft",
+        "Outlook",
+        "Phantasialand",
+        "Hotel Ling Bao",
+        "WDR"
+      ],
+      "comments": [
+        {
+          "by": "amluto",
+          "text": "I personally operate a fairly advanced closed-loop chlorination system, and this is beyond screwed up. These systems can easily fail, and they tend to fail in a way that causes them to measure low or zero chlorine and thus overdispense chlorine. More below on why. First, this means that an operator must always ensure safety, both against excessive chlorine and against insufficient chlorine. In a…"
+        },
+        {
+          "by": "N19PEDL2",
+          "text": "This is 100% fault of the hotel, not of Microsoft. It’s unacceptable that the communications regarding such a dangerous thing totally rely on email, without any backup or double check."
+        },
+        {
+          "by": "bketelsen",
+          "text": "I'm not even going to read the article. If your hotel depends on some cloud service to prevent chlorine gas poisoning you're doing something terribly wrong. Full stop. I don't know anything about the laws in Germany but this is dangerously close to libel in the US. Disclaimer: I work in Azure, this is not a defense of the outage and I didn't read the submitted article."
+        },
+        {
+          "by": "Havoc",
+          "text": "Comments seem to be losing a fair bit in translation so rough translation: * 13 guests complaining about irritation of airways (+2 later) * 4 taken to hospital, 1 described as medium injury, rest discharged * Dual failure - dosing system had a defect (dosing too high) and the email of the monitoring failed (M365). Article sounds like it's two distinct systems. Overall the German text sounds a lot…"
+        },
+        {
+          "by": "discordance",
+          "text": "I know it’s fun to blame Microsoft for things, but that is a poor and dangerous design. Anything that could result in that sort of harm should have a more resilient and redundant architecture."
+        }
+      ],
+      "image": "https://www1.wdr.de/nrw/koeln/phantasialand-134~_v-gseagaleriexl.jpg"
+    },
+    {
+      "id": 50513215,
+      "url": "https://qwen.ai/blog?id=qwen4-max",
+      "hn": "https://news.ycombinator.com/item?id=50513215",
+      "title": "Qwen4-Max",
+      "time": 1794795284,
+      "points": 374,
+      "depth": [
+        {
+          "text": "people are sizing up **Qwen4-Max** over its **scores and speed**, and what it can answer",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says it scores **43** on Artificial Analysis with an average cost of **$3.27**; GPT-6.1 Sol (medium) gets 46 with an average of $0.36. Another compares **pelican outputs** at four reasoning efforts and prefers Qwen3.8 Max's xhigh result.",
+          "tier": "substance",
+          "data": [
+            [
+              "Artificial Analysis score",
+              "43"
+            ],
+            [
+              "Qwen4-Max average cost",
+              "$3.27"
+            ],
+            [
+              "GPT-6.1 Sol (medium) score",
+              "46"
+            ],
+            [
+              "GPT-6.1 Sol (medium) average",
+              "$0.36"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 126,
+      "terms": [
+        "reasoning effort",
+        "open weights",
+        "tokens per second"
+      ],
+      "entities": [
+        "Qwen4-Max",
+        "Qwen3.8 Max",
+        "Artificial Analysis",
+        "GPT-6.1 Sol",
+        "OpenRouter",
+        "opencode",
+        "Arena.ai",
+        "Alibaba",
+        "Claude",
+        "Codex",
+        "Kimi 3.1",
+        "Cohere",
+        "Bedrock",
+        "DGX Sparks",
+        "Linux",
+        "Raspberry Pi",
+        "TSMC",
+        "Xi",
+        "Winnie the Pooh",
+        "Dalai Lama",
+        "Chiang Kai Shek",
+        "Mao"
+      ],
+      "comments": [
+        {
+          "by": "maplet",
+          "text": "It scores a 43 on Artificial Analysis with an average cost of $3.27 [1]. For reference, GPT-6.1 Sol (medium) gets a 46 with an average of $0.36. [1]: https://artificialanalysis.ai/models/qwen4-max"
+        },
+        {
+          "by": "simonw",
+          "text": "Qwen4-Max pelicans at four reasoning efforts\n(none, low, high, xhigh): https://tools.simonwillison.net/markdown-svg-renderer?url=ht... For comparison, here's one I got from Qwen3.8 Max (at default reasoning effort): https://simonwillison.net/2026/Jul/20/afraid-of-chinese-mode... This inspired me to re-run pelicans through 3.8 Max - but OpenRouter has qwen3.8-max-prime and qwen3.8-max-0902 - prime…"
+        },
+        {
+          "by": "seizethecheese",
+          "text": "I hope they are able to serve 4 faster. Qwen 3.8 is a great model but I’ve regretted including it in the battle system for opencode [1] we have been building because it scores so low. And it’s a shame because the only reason it scores so low is that it’s slooooow. (Like 30 tokens per second vs opus near 80.) If you exclude voting, Qwen 3.8 does well. (We allow early voting contrary to Arena.ai…"
+        },
+        {
+          "by": "dan_thinks",
+          "text": "This is exciting. The continued focus on efficiency alongside quality is encouraging - it makes me hopeful to see what smaller models will become capable of. Looking forward to the \"Flash\" and 27B versions."
+        },
+        {
+          "by": "nelaggy",
+          "text": "is the open weights lag widening? these open models don't seem to be improving as quickly as ant/oai"
+        }
+      ],
+      "image": "https://img.alicdn.com/imgextra/i4/O1CN01OXv3EM1FN8t9W4P79_!!6000000000474-2-tps-80-80.png"
+    },
+    {
+      "id": 50509837,
+      "url": "https://bruceroettgers.eu/blog/protomaps/",
+      "hn": "https://news.ycombinator.com/item?id=50509837",
+      "title": "Protomaps: Self-hosting map tiles has gotten cheap and easy",
+      "time": 1794770782,
+      "points": 277,
+      "depth": [
+        {
+          "text": "someone found a **cheap way** to **host map tiles yourself** instead of paying commercial map APIs",
+          "tier": "simple"
+        },
+        {
+          "text": "**PMTiles** puts map tiles in one file that can be served through HTTP Range requests from a storage bucket. The post estimates storing the **139GB world map** with 5x replication costs about **$5/month**, and says map loads could be 100x cheaper than Mapbox at $0.05/1k.",
+          "tier": "substance",
+          "data": [
+            [
+              "world map size",
+              "139GB"
+            ],
+            [
+              "storage with 5x replication",
+              "about $5/month"
+            ],
+            [
+              "map loads",
+              "$0.05/1k"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 53,
+      "terms": [
+        "PMTiles",
+        "HTTP Range requests",
+        "CDN",
+        "storage bucket"
+      ],
+      "entities": [
+        "Protomaps",
+        "PMTiles",
+        "Mapbox"
+      ],
+      "comments": [
+        {
+          "by": "boramalper",
+          "text": "OpenFreeMap is a similar project: https://openfreemap.org/ > What is OpenFreeMap? > OpenFreeMap lets you display custom maps on your website and apps for free. > Using our public instance is completely free: there are no limits on the number of map views or requests. There’s no registration, no user database, no API keys, and no cookies. We aim to cover the running costs of our public instance…"
+        },
+        {
+          "by": "neomantra",
+          "text": "We're doing something like this behind Cloudflare R2, same concept of owning the map infra (for privacy and access-control) and reducing load on public infrastructure. If you are into this stuff, you can view PMTiles from the CLI with \"gloss\", or try to drag-and-drop on its web interface [1]. It seems large tiles (>128M) and some raster formats are failing; plus it would be nice to load from URL…"
+        },
+        {
+          "by": "motoroco",
+          "text": "yeah, basemaps are small enough to store and host cost effectively, but high res satellite imagery gets big and expensive fast as you go up in zoom level. I built my own satellite mosaic of North America for my app so I can offer users offline access to the tiles and had to stop at z17 because of projected storage requirements. high res global coverage can get you into the hundreds of TB range…"
+        },
+        {
+          "by": "maelito",
+          "text": "For Cartes.app we used to pay Maptiler. While great, recommanded to start, without client revenue it was impossible to scale, we've hit 150 €/month bills way too fast. Hence Protomaps. Hosting costs almost nothing. The main problem though is that once you host your tiles, why not put what you want inside ? Tune Tilemaker's processing.lua to your envy. Spend hours designing maps and building a…"
+        },
+        {
+          "by": "thatslast",
+          "text": "I'm making a Wikipedia walking game where each card comes in a sealed pack printed with the real streets around where you found it, rendered live. With Mapbox or Google Maps I wouldn't even have considered building this game. Protomaps made it a no-brainer Thanks to Brandon and the OSM contributors. This is what made the idea affordable for a side project."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50513160,
+      "url": "https://iter.ca/post/ubo-uxss/",
+      "hn": "https://news.ycombinator.com/item?id=50513160",
+      "title": "Universal XSS in uBlock Origin from website-driven element picker",
+      "time": 1794794688,
+      "points": 273,
+      "depth": [
+        {
+          "text": "someone found a way for malicious websites to make uBlock Origin **run code** on **other sites**",
+          "tier": "simple"
+        },
+        {
+          "text": "The picker could be driven through an **invisible iframe** to add a **trusted filter**, which can inject JavaScript into pages. A website only needed to get the user to click, and the issue is **fixed now**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters want extension controls out of the page and see extensions as risky; others say broad page access is necessary for extensions to work.",
+      "comment_count": 69,
+      "terms": [
+        "XSS",
+        "iframe",
+        "trusted filter",
+        "UUID"
+      ],
+      "entities": [
+        "uBlock Origin",
+        "uBO Lite",
+        "Firefox",
+        "GPT-5.6 Sol",
+        "Claude",
+        "Smitty van Bodegom",
+        "GitHub",
+        "uAssets"
+      ],
+      "comments": [
+        {
+          "by": "taylorfinley",
+          "text": "Really love the \"I wrote all the prose, gpt wrote the POC\" disclaimer, I would love to see more of those kinds of signals on human authored content."
+        },
+        {
+          "by": "ByteOfWood",
+          "text": "I never really loved how extensions have to put their interfaces in the website's DOM if they want to be able to work with the page's elements, like this selector, or a password manager's suggested logins. Especially in the password manager's scenario, it could leak what accounts you have to a given website to that website itself, if the page is looking for new DOM elements. Not exactly a…"
+        },
+        {
+          "by": "forgotmypw17",
+          "text": "For those checking (I still had the vulnerable version), you should be at these versions or higher: uBlock Origin: 1.75.4 uBO Lite: 2026.1110.1816"
+        },
+        {
+          "by": "akersten",
+          "text": "So this seems totally solvable by the create-rule element living in the browser chrome instead of the website DOM... why aren't we doing that?"
+        },
+        {
+          "by": "renehsz",
+          "text": "Is AdNauseam (a fork of uBlock Origin) also affected?"
+        }
+      ],
+      "image": "https://iter.ca//ubo-epicker.png"
+    },
+    {
+      "id": 50511395,
+      "url": "https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/",
+      "hn": "https://news.ycombinator.com/item?id=50511395",
+      "title": "Old Bitly links are being hijacked",
+      "time": 1794780703,
+      "points": 252,
+      "depth": [
+        {
+          "text": "someone hijacked **old Bitly links** in tweets, sending people to **pages the posters never chose**",
+          "tier": "simple"
+        },
+        {
+          "text": "Neither company’s account was hacked: the **links themselves** were registered again. Burger King’s 2011 link pointed to Wikipedia’s list of **Nazi concentration camps**, while McDonald’s link pointed to Wikipedia’s article on the **September 11 attacks**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 133,
+      "terms": [
+        "URL shortener",
+        "back-half",
+        "redirect",
+        "broken link hijacking"
+      ],
+      "entities": [
+        "Bitly",
+        "Burger King",
+        "McDonald’s",
+        "Wikipedia"
+      ],
+      "comments": [
+        {
+          "by": "xp84",
+          "text": "Link shorteners that are outsourced are in my humble opinion an order of magnitude worse for the internet than they would be if in-house. The way they accrete URLs over time, and then time passes, and anything can happen (your account gets deactivated, shortener company goes out of business / experiences catastrophic data loss / etc) is just asking for permanently broken links which may be…"
+        },
+        {
+          "by": "101008",
+          "text": "Short anecdote: Famous author (with huge fanbase!) used a Bit.ly link in one of their books (the narrative needed a fake tweet with fake link). Editor didn't notice/care and never registered it. I noticed on release date, caught it and redirected it to a website that referenced the book, a few people tweet about it thinking the author used the link on purpose!"
+        },
+        {
+          "by": "silisili",
+          "text": "I think the biggest surprise to me is that a URL shortener makes enough money to have a Trust and Safety team. I assumed it was just a side project a person or two ran."
+        },
+        {
+          "by": "Alive-in-2025",
+          "text": "There's a lot of abandoned url ownership things on the internet. We need something like a bureau that keeps track of what it was for. We do have archive.is or .org to save the content at a url (side note - are these archivers legal or in some country that allows this?). I do often come across an article occasionally where someone is writing about a narrow topic that I'm interesting in, but I…"
+        },
+        {
+          "by": "5kyl4b",
+          "text": "this is why i have always been against link shorteners :)"
+        }
+      ],
+      "image": "https://ransomnews.com/wp-content/uploads/2026/11/burger-king-tweet-bitly-link-hijack-2026-cover-1024x576.png"
+    },
+    {
+      "id": 50509972,
+      "url": "https://ductus.sorenblank.com",
+      "hn": "https://news.ycombinator.com/item?id=50509972",
+      "title": "Handwriting, as a Font",
+      "time": 1794771733,
+      "points": 226,
+      "depth": [
+        {
+          "text": "someone made a **tool** for turning letters you draw into a **font of your handwriting**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter said it was easy to **capture an initial version** in one sitting, but drawing one letter at a time misses how characters change with their **surroundings**. Others wanted accented characters, and one person said the preview stopped working and export buttons were greyed out.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 45,
+      "terms": [
+        "Unicode",
+        "ligatures",
+        "OCR",
+        "UX"
+      ],
+      "entities": [
+        "Claude",
+        "Codex",
+        "Fineliner",
+        "Windows",
+        "iOS",
+        "Mac",
+        "Wacom",
+        "Sky Mall"
+      ],
+      "comments": [
+        {
+          "by": "johannes1234321",
+          "text": "This is really nice. Unfortunately it doesn't have accented characters. Thus I can't write my name using that font, which is a key thing I'd use \"my\" font for. I understand they don't want to go through all of Unicode, but a way to add custom letters would be nice."
+        },
+        {
+          "by": "fortylove",
+          "text": "Using this to capture my young children's handwriting before they get too old and their handwriting improves. Thank you."
+        },
+        {
+          "by": "firefoxd",
+          "text": "The best part of this is the execution. Writing a letter at a time, doesn't really capture my handwriting. In Handwriting, characters shape change relative to their surroundings. However, the tool still made it easy to capture an initial version in one sitting. Kudos."
+        },
+        {
+          "by": "coolcoder613",
+          "text": "It needs samples, I'm not going to get out my wacom to do all that without seeing what the results will look like."
+        },
+        {
+          "by": "whartung",
+          "text": "That was fun. I did it on my phone, so not quite representative, but fun to play with. The company that used to sell handwriting fonts would have you send in samples of 2 and 3 character combinations to capture the connectedness of actual cursive handwriting. I’d love to see that again. This is more a hand printing font."
+        }
+      ],
+      "image": "https://ductus.sorenblank.com/opengraph-image.png?opengraph-image.3-4qkqxu0b7tg.png"
+    },
+    {
+      "id": 50506894,
+      "url": "https://prog21.dadgum.com/116.html",
+      "hn": "https://news.ycombinator.com/item?id=50506894",
+      "title": "Things That Turbo Pascal Is Smaller Than (2011)",
+      "time": 1794750256,
+      "points": 226,
+      "depth": [
+        {
+          "text": "someone shows **Turbo Pascal**'s **compiler and editor** took less room than a **web page**",
+          "tier": "simple"
+        },
+        {
+          "text": "The entire Turbo Pascal 3.02 executable—the compiler and IDE—was **39,731 bytes**. It was smaller than the **yahoo.com home page**, listed at 219,583 bytes in the post's 2011 comparison.",
+          "tier": "substance",
+          "data": [
+            [
+              "Turbo Pascal 3.02 executable",
+              "39,731 bytes"
+            ],
+            [
+              "yahoo.com home page",
+              "219,583 bytes"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see modern software as carrying avoidable overhead; others say comparisons across different eras and file types ignore too much context.",
+      "comment_count": 117,
+      "terms": [
+        "compiler",
+        "IDE",
+        "executable",
+        "minified",
+        "boilerplate code"
+      ],
+      "entities": [
+        "Turbo Pascal",
+        "MS-DOS",
+        "Pascal",
+        "Microsoft",
+        "jquery",
+        "yahoo.com",
+        "iPhone 4S",
+        "apple.com",
+        "zlib",
+        "Mac OS X Lion",
+        "vim",
+        "Erlang",
+        "Wikipedia",
+        "C++",
+        "James Hague"
+      ],
+      "comments": [
+        {
+          "by": "jbellis",
+          "text": "Anders Heljsberg GOAT. Turbo Pascal, Delphi, C#, TypeScript, just a phenomenal career marked with better taste than any other language designer I can think of, certainly any designer whose work is so mainstream."
+        },
+        {
+          "by": "hawkice",
+          "text": "Given development speed is way up, I'd be interested to see what a from-basic-principles simple and efficient OS and programming system might look like. Or people trying radically different versions of efficiency and simplicity, like an OS that uses an existing battle-tested sandboxed execution environment like v8 for userspace safety/isolation. Fundamentally, many inefficiencies were justified…"
+        },
+        {
+          "by": "jll29",
+          "text": "While some comparisons may look silly, the fact that the touch command's binary should exceed Turbo Pascal is insane: the command basically creates an empty file or updates the file change date if the file already exists, not more. There's no reason (other than laziness) why that should take more than 2k. On the other hand, a lot of boilerplace code is repeated in each and every command. When I…"
+        },
+        {
+          "by": "pron",
+          "text": "Just keep in mind that the amount of RAM in an average PC in 1986 was about 30,000x smaller than the average amount of RAM in today's laptops, and Turbo Pascal was no less \"bloated\" than, say, VS Code."
+        },
+        {
+          "by": "sroerick",
+          "text": "Why did Pascal basically die completely? It seems like a hugely influential language and was very loved, but there are plenty of other languages which still seem to have a lot of legacy code. Where is Pascal?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50506376,
+      "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+      "hn": "https://news.ycombinator.com/item?id=50506376",
+      "title": "Understanding Positional Embeddings in Modern LLMs",
+      "time": 1794744846,
+      "points": 226,
+      "depth": [
+        {
+          "text": "someone breaks down how language models **track word positions** and why that **signal matters**",
+          "tier": "simple"
+        },
+        {
+          "text": "The walkthrough contrasts GPT-2’s **learned position vectors**, added before transformer blocks, with **RoPE**, which rotates query and key vectors inside attention. A commenter says the deeper theory is **group representations**, and describes RoPE as a representation of the translation group.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 27,
+      "terms": [
+        "positional embedding",
+        "RoPE",
+        "attention",
+        "query",
+        "key",
+        "causal mask",
+        "group representation",
+        "translation group"
+      ],
+      "entities": [
+        "GPT-2",
+        "MiniMax-M3",
+        "RoPE",
+        "RoFormer",
+        "PyTorch",
+        "Qwen3",
+        "Substack",
+        "GitHub",
+        "Twitter",
+        "Attention Is All You Need"
+      ],
+      "comments": [
+        {
+          "by": "programjames",
+          "text": "This article is only about understanding the implementation of positional embeddings, but to really understand positional embeddings you have to understand the theory. Positional embeddings are group representations. This is how you find them, and this is also how you parameterize them to make them differentiable/learnable. To give a few examples: 1. Rotary positional embeddings are…"
+        }
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!UHlM!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2a036907-4c1e-473b-8d82-20f2c777df5f_2912x1632.png"
+    },
+    {
+      "id": 50509023,
+      "url": "https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html",
+      "hn": "https://news.ycombinator.com/item?id=50509023",
+      "title": "Crows make decisions faster than we can",
+      "time": 1794765211,
+      "points": 220,
+      "depth": [
+        {
+          "text": "crows **processed visual cues** **twice as fast** as humans and monkeys",
+          "tier": "simple"
+        },
+        {
+          "text": "**Lemmy and Iggy** are two carrion crows who took part in the study. Their task was to decide whether **white dots** moved left or right, then peck the corresponding **target circle** on a monitor.",
+          "tier": "substance",
+          "data": [
+            [
+              "speed vs. humans and monkeys",
+              "twice the speed"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: the article reports crows processing and responding faster; skeptical commenters say humans can react faster or that “decisions” may just be automatic reactions.",
+      "comment_count": 150,
+      "terms": [
+        "corvids",
+        "theory of mind",
+        "feedback loop"
+      ],
+      "entities": [
+        "Lemmy",
+        "Iggy",
+        "Science",
+        "The New York Times",
+        "Mike Colombo",
+        "University of Otago",
+        "Jennifer Ackerman",
+        "The Genius of Birds"
+      ],
+      "comments": [
+        {
+          "by": "Animats",
+          "text": "Intelligence has evolved on Earth at least three times - mammals, corvids, and octopuses. All the mammals have roughly the same brain architecture. But the corvids are not on the same evolutionary branch, and have a different neuron design and a different brain architecture. \"Such behavioral flexibility might seem unexpected\nbecause a layered cerebral cortex, the highest integration\ncenter in the…"
+        },
+        {
+          "by": "GreenLightGo",
+          "text": "I'd really love to have a pet raven. I've seen people keep them as pets."
+        },
+        {
+          "by": "WalterBright",
+          "text": "They might think faster because the brain is smaller - a shorter distance for connections. For example, learning to play a piano is training the spine, not the brain. Because the feedback loop with the spine is shorter. It's the same with dancing. One is trained to not look at one's feet, because the feedback loop is too slow."
+        },
+        {
+          "by": "randomImmigrant",
+          "text": "Birdbrain should mean the opposite of what it does, for this reason, but for many others. Birds can sense the Earth's magnetic field and use it for navigation, a process that's about the one bona fide quantum biological paradigm. Their body clocks are also significantly more sophisticated and decentralized than ours. And in the end, the physical intelligence of flight itself demands a brain…"
+        },
+        {
+          "by": "warrenski",
+          "text": "There's a wonderful book titled The Genius of Birds[1] by author Jennifer Ackerman which explores bird intelligence. [1] https://www.goodreads.com/book/show/25938481-the-genius-of-b..."
+        }
+      ],
+      "image": "https://static01.nyt.com/images/2026/11/05/multimedia/00SCI-TB-CROWS-01-tlwk/00SCI-TB-CROWS-01-tlwk-videoSixteenByNineJumbo1600.jpg"
+    },
+    {
+      "id": 50509308,
+      "url": "https://www.youtube.com/watch?v=7_JF3etiAv8",
+      "hn": "https://news.ycombinator.com/item?id=50509308",
+      "title": "A short explainer on how El Niño works [video]",
+      "time": 1794767001,
+      "points": 217,
+      "depth": [
+        {
+          "text": "someone explains how **El Niño works**, though commenters say this video focuses on the **United States**",
+          "tier": "simple"
+        },
+        {
+          "text": "Commenters also link a **French video** and one from **Manual do Mundo** for Brazilian viewers.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 94,
+      "terms": [
+        "El Niño"
+      ],
+      "entities": [
+        "El Niño",
+        "Climate Reanalyzer",
+        "Hugging Face",
+        "Manual do Mundo",
+        "French"
+      ],
+      "comments": [
+        {
+          "by": "breakyerself",
+          "text": "Any time this stuff comes up it's important to understand that this el Nino is occuring in the context of a global climate that is warmer than any time in the last 125,000 years. The risks inherent to weather and climate are growing all the time."
+        },
+        {
+          "by": "rene_d",
+          "text": "I find the Climate Reanalyzer graphs very instructive - at a glance one can see how extreme the situation is: https://climatereanalyzer.org/clim/sst_daily"
+        },
+        {
+          "by": "_ache_",
+          "text": "Here is one is French, very scientifically sourced, by a searcher of hugging face. https://youtu.be/DutKGuQu4a0 France isn't very much affected, so it's not focused on any country."
+        },
+        {
+          "by": "guilhermeasper",
+          "text": "This video mainly covers how it works in the United States, here's one for Brazilian people in the HN, from Manual do Mundo https://youtu.be/tWhcTTC-pyw"
+        },
+        {
+          "by": "romanovcode",
+          "text": "Title: A short explainer on how El Niño works in US [video] (youtube.com)"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50507553,
+      "url": "https://joshblais.com/blog/emacs-as-my-browser/",
+      "hn": "https://news.ycombinator.com/item?id=50507553",
+      "title": "Emacs Is My Browser",
+      "time": 1794756081,
+      "points": 201,
+      "depth": [
+        {
+          "text": "someone uses **Emacs** to browse text pages, **avoiding distractions** and switching browsers when sites fail",
+          "tier": "simple"
+        },
+        {
+          "text": "They use EWW for **quick searches, documentation and blogs**, and say it seems usable for about **85-90% of use cases**; Chromium or Firefox is the **fallback** when pages don't work well.",
+          "tier": "substance",
+          "data": [
+            [
+              "use cases",
+              "85-90%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some like the calmer, text-focused approach; others say it is less useful than a conventional browser and struggles with commercial sites.",
+      "comment_count": 116,
+      "terms": [
+        "Emacs",
+        "EWW",
+        "Searx",
+        "reader mode",
+        "static HTML"
+      ],
+      "entities": [
+        "Joshua Blais",
+        "Emacs",
+        "EWW",
+        "Chromium",
+        "Firefox",
+        "Searx",
+        "mpv",
+        "Elpher",
+        "Termux",
+        "Lynx",
+        "Browsh",
+        "Gemini",
+        "Gopher",
+        "Dillo",
+        "w3m-mode",
+        "WebKit",
+        "Reddit",
+        "YouTube",
+        "Google",
+        "Discord",
+        "Richard Stallman"
+      ],
+      "comments": [
+        {
+          "by": "kmstout",
+          "text": "Shameless plug time: About a year and a half ago, I wrote [1] about a way of squeezing more text onto the screen, using Emacs, that plays well with eww and does a reasonable job of preserving readability. Basically, it's a hack that builds on follow-mode to quickly convert a frame into a columnar display for long buffers, with interactive adjustment of the number of columns. [1]…"
+        },
+        {
+          "by": "Arubis",
+          "text": "The most important part of this is toward the end, and whether you consider it a limitation or a feature is a matter of perspective: the modern commercial web does not play nice with this. So static HTML and blogs yes, Reddit and most anything commercial no. You can actually get other close-to-browser experiences with stuff like xwidget and embedded WebKit (…"
+        },
+        {
+          "by": "leoc",
+          "text": "The one thing above all that is urgently necessary is a content-addressable replacement for (or layer above) HTTP(S) which is genuinely ready to go and has adoption which is meaningful and moving in the right direction. Unfortunately we seem to be going in the wrong direction there right now. Cute browser setups and retro-chic web servers are fun and a nice gesture but they won't get us there."
+        },
+        {
+          "by": "jll29",
+          "text": "Richard Stallman (RMS) also uses the Web from Emacs. But I believe he pastes URLs into a program that sends him a screen copy by email (at least as of approx. 20 years ago, when I last saw him in person). His motive is not mindfulness, but ideology."
+        },
+        {
+          "by": "krylon",
+          "text": "I have an old - and I mean old - laptop sit in my bathroom I use for reading random-ish Wikipedia articles, and it's too puny to run any mainstream browser. I used to use Dillo, which is fine resource-wise, but I grew annoyed over time that it does not have session management. Then, recently, it hit me - w3m-mode has both tabs and session management. It somehow even displays images more reliably…"
+        }
+      ],
+      "image": "https://joshblais.com/og-images/emacs-as-my-browser.png"
+    },
+    {
+      "id": 50512235,
+      "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
+      "hn": "https://news.ycombinator.com/item?id=50512235",
+      "title": "What's Next for Nvidia?",
+      "time": 1794786955,
+      "points": 197,
+      "depth": [
+        {
+          "text": "an essay asks whether **Nvidia** needs an **innovator** or an execution-focused successor after Jensen Huang's departure",
+          "tier": "simple"
+        },
+        {
+          "text": "Huang shifted Nvidia from **graphics boards** to a software platform, then to a systems company, but **anointed no one**. Blank says the board must choose whether to keep taking innovation risks or focus on **core-business execution**, as major customers build their own AI chips.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some warn Nvidia could drift into irrelevance without a visionary successor; others say the article overstates that risk, pointing to Apple's and Microsoft's success under later CEOs.",
+      "comment_count": 264,
+      "terms": [
+        "execution CEO",
+        "CUDA",
+        "GPU",
+        "business model",
+        "cannibalize"
+      ],
+      "entities": [
+        "Nvidia",
+        "Jensen Huang",
+        "Steve Blank",
+        "CUDA",
+        "ImageNet",
+        "Mellanox",
+        "Apple",
+        "Steve Jobs",
+        "Tim Cook",
+        "John Ternus",
+        "Microsoft",
+        "Bill Gates",
+        "Steve Ballmer",
+        "Satya Nadella",
+        "Azure",
+        "Google",
+        "Amazon",
+        "Meta",
+        "OpenAI",
+        "Tesla",
+        "AWS",
+        "Andy Jassy",
+        "Netflix"
+      ],
+      "comments": [
+        {
+          "by": "areoform",
+          "text": "What made Steve Jobs great was that he would rather have Apple cannibalize its successful product lines than fall prey to a competitor. You can see this pattern with the iPod. The iPod disrupted itself many, many times. The iPod Mini then the iPod Nano. Then the iPod shuffle as the answer to the race ot the bottom. The biggest moment was partnering with Motorola as phones started becoming more…"
+        },
+        {
+          "by": "crossroadsguy",
+          "text": "Why does everyone is completely discounting (or not mentioning) the possibility that Jensen was the spy? I am not even considering the \"illegals\" and deep sleeper agents like The Americans (as traditionally Russia is known to do this), but just a normal possibility – someone becoming/turning or being a spy. And if he knew what Ms. Huang was and was doing then doesn't that already make him one? Or…"
+        },
+        {
+          "by": "01100011",
+          "text": "As the author mentions, the biggest threat is from customers becoming competitors. The problem space is stabilizing and this allows the biggest buyers of GPUs to work with companies like broadcom to make their own chips. Thanks to agents, they can also spin up their own abstraction layers and debug tools. CUDA is becoming less relevant, and the rate at which that is happening is about to go…"
+        },
+        {
+          "by": "kristopolous",
+          "text": "JIC people don't know the site's author Steve Blank is this Steve Blank https://en.wikipedia.org/wiki/Steve_Blank The Startup Owner's Manual and The Four Steps to the Epiphany are fine books ... Certainly somewhere in my top 40 startup books you should take the time to understand. Like Geoffrey Moore, Ries & Trout, Clayton Christensen, somewhere in that group. You'll be in for a commitment…"
+        },
+        {
+          "by": "kelzier15",
+          "text": "Apple didn't miss the AI wave. They knew most of the \"new start ups\" or \"new products\" will end up as one \"new feature\" in their ecosystem once they hype is down."
+        }
+      ],
+      "image": "https://steveblank.com/wp-content/uploads/2026/11/nvidia-reinventions-1024x677.jpg"
+    },
+    {
+      "id": 50510042,
+      "url": null,
+      "hn": "https://news.ycombinator.com/item?id=50510042",
+      "title": "Ask HN: Stripe closed us after one $1,500 invoice and never asked for evidence",
+      "time": 1794772168,
+      "points": 168,
+      "depth": [
+        {
+          "text": "someone says **Stripe closed its account** after its first **$1 payment** and a later **$1,500 charge**",
+          "tier": "simple"
+        },
+        {
+          "text": "The **$1 Stripe link** saved the card; a few weeks later, the business charged it **$1,500** for **3 completed appointments**. The poster says nobody asked for the call recording or client confirmation; one commenter recommended sending invoices instead of manually charging the saved card.",
+          "tier": "substance",
+          "data": [
+            [
+              "First payment",
+              "$1"
+            ],
+            [
+              "Later charge",
+              "$1,500"
+            ],
+            [
+              "Completed appointments",
+              "3"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say the $1-then-$1,500 charge looked like stolen-card testing and made Stripe's decision understandable; others criticize Stripe's support and urge taking the business elsewhere.",
+      "comment_count": 76,
+      "terms": [
+        "off-session",
+        "SetupIntents",
+        "payment processor",
+        "merchant fraud"
+      ],
+      "entities": [
+        "Stripe",
+        "Paykings",
+        "Google Cloud",
+        "Paypal",
+        "AWS",
+        "Pangram",
+        "Patrick",
+        "John",
+        "patio11",
+        "Bits About Money"
+      ],
+      "comments": [
+        {
+          "by": "breue",
+          "text": "I had stripe fleece me for 4.5k - tried to complain about them on HN - they nerfed the post: https://news.ycombinator.com/item?id=50398646 The sad part is I was one of their first customers - I helped onboard over a 70 clients for them over the years. And my top project generated them $1.6m in pure fees revenue. I even tried emailing Patrick and John - they don't care one bit. Its sad - they used…"
+        },
+        {
+          "by": "philsquared_",
+          "text": "This is as high risk as it comes... imagine a person bought a lemonade from you for $1 then later on you charged them $1500 because you saved their cc. That is all stripe sees. You need to not charge the $1 at all first of all because technically that is a fraudulent transaction since the customer is expecting to pay $1500 not $1501. Stripes docs literally say this by the way... you can always…"
+        },
+        {
+          "by": "didgeoridoo",
+          "text": "Yeah unfortunately this charge pattern could not have looked MORE like merchant fraud. The right approach would have been to use https://docs.stripe.com/payments/setup-intents and set it for off-session usage. You still might have gotten a payment hold on the first transaction until someone in risk could take a peek at your site to make sure you had all the right disclosures in place, but you…"
+        },
+        {
+          "by": "codingdave",
+          "text": "I have no knowledge specific to Stripe or your case, but do I know that the pattern you just described - a small 1 dollar payment followed by a large payment - is the exact pattern that criminals use to test stolen credit cards numbers. My bank will automatically reject anything following that pattern, put a hold on my card, and call me to confirm whether or not I have my card. So yeah, if your…"
+        },
+        {
+          "by": "A_D_E_P_T",
+          "text": "> 2. For people who've been through this: how would you structure per-appointment billing so it doesn't look unauthorized (an invoice with a link each time, an email confirmation before each charge, something else)? Have you tried simply sending invoices via Stripe? Works for me, without a hitch. And it's pretty flexible; you can do a lot to modify terms, add notes, send email notices to multiple…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50511982,
+      "url": "https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15/",
+      "hn": "https://news.ycombinator.com/item?id=50511982",
+      "title": "Jensen Huang might return to Nvidia as CEO",
+      "time": 1794785093,
+      "points": 162,
+      "depth": [
+        {
+          "text": "**Jensen Huang** might return as **Nvidia CEO**, but commenters are already arguing over whether he should",
+          "tier": "simple"
+        },
+        {
+          "text": "Some commenters say the board should choose an **external hire** amid **export control** scrutiny; another says it should decide based on evidence, not pressure. One commenter also says the interim CEO fought Huang over **circular deals**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some hope Huang returns; others think it's unlikely, pointing to the call for an external hire.",
+      "comment_count": 157,
+      "terms": [
+        "export controls",
+        "circular deals",
+        "interim CEO"
+      ],
+      "entities": [
+        "Jensen Huang",
+        "Nvidia"
+      ],
+      "comments": [
+        {
+          "by": "futxtuxutxutxut",
+          "text": "The US Treasury Secretary said today that the board needs to select an external hire for CEO, as the entire company faces scrutiny for violating export control laws. https://www.reuters.com/world/bessent-says-nvidia-must-go-ou... That makes it seem extremely unlikely that Jensen can return."
+        },
+        {
+          "by": "sjbzbeiks",
+          "text": "I have to say most of the takes on how wrong him being forced out must be from people who are unaware of how this works normally. Basically, he was out soon as the first undisclosed affair with a direct report was discovered (and there was at least one more). I get the spying allegations against Alice Huang are super interesting and are yet not totally established so we all want to argue about…"
+        },
+        {
+          "by": "hmokiguess",
+          "text": "He is also staying as CEO of htmx"
+        },
+        {
+          "by": "trebligdivad",
+          "text": "It wouldn't surprise me if he creates a startup with a bunch of soon-to-be-ex-Nvidia folk. Maybe after things quieten down."
+        },
+        {
+          "by": "gumby",
+          "text": "The interim CEO is the CFO who fought with Huang over the company’s dodgy circular deals and the weaknesses in the business. I don’t e bord is going to want him back. They can reset on those deals, blame it on him, and build back from a smaller market cap but fundamentally strong company. Also they can distance the company from MAGA by making JH the sin eater for that as well."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50507791,
+      "url": "https://www.commondreams.org/news/duffy-ground-stop-explanation",
+      "hn": "https://news.ycombinator.com/item?id=50507791",
+      "title": "'Duffy Lied': Controllers Refute Transportation Secretary's Ground Stop Story",
+      "time": 1794757542,
+      "points": 152,
+      "depth": [
+        {
+          "text": "air traffic controllers **doubt Sean Duffy’s account** of what caused a **nationwide flight shutdown**",
+          "tier": "simple"
+        },
+        {
+          "text": "Anna Giaritelli said she spoke with **60 controllers**, none of whom accepted Duffy’s explanation that **overloaded switches and routers** caused the stop; Duffy later said **L3Harris** was replacing a section of old copper wire with new fiber wire. In the comments, some questioned whether controllers would know about network-equipment swaps, while others said upgrades should happen during low-traffic periods.",
+          "tier": "substance",
+          "data": [
+            [
+              "estimated travelers affected",
+              "1.5 million"
+            ],
+            [
+              "SMART cost",
+              "$875 million"
+            ],
+            [
+              "funding Duffy requested",
+              "$50 billion"
+            ],
+            [
+              "Saturday flights canceled",
+              "More than 4,100"
+            ],
+            [
+              "aircraft airborne when grounding was ordered",
+              "More than 3,500"
+            ],
+            [
+              "longest nationwide aviation shutdown in",
+              "25 years"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say the reported timing is a red flag; others say controllers may have confused router problems with hardware swaps, or that the work may have happened overnight.",
+      "comment_count": 44,
+      "terms": [
+        "ground stop",
+        "router",
+        "SOP",
+        "packet storm",
+        "multicast failure",
+        "post-mortem"
+      ],
+      "entities": [
+        "Sean Duffy",
+        "Anna Giaritelli",
+        "Laura Coates",
+        "Federal Aviation Administration",
+        "L3Harris Technologies",
+        "SMART",
+        "Trump",
+        "Markwayne Mullin",
+        "James Walkinshaw",
+        "Government Accountability Office",
+        "Kathy Hochul",
+        "Bryan Bedford",
+        "FlightAware",
+        "CNN",
+        "Washington Examiner",
+        "Common Dreams"
+      ],
+      "comments": [
+        {
+          "by": "alexpotato",
+          "text": "Long time SRE/DevOps with 20 year of FinTech experience in banks/hedge funds/crypto and having seen many, many outages (some listed here [0]): - There is almost always a standard operating procedure (SOP) - Just b/c there is a SOP for releases etc, that doesn't mean that people always follow it - This can be due to many reasons e.g. laziness, being distracted, pressure from higher ups (\"just push…"
+        },
+        {
+          "by": "jml7c5",
+          "text": "Asking air traffic controllers for their opinion on this is a bit odd — would they even know about networking equipment swaps? I would expect that to be handled by the engineers and technicians who work on the system, not the people who direct the planes."
+        },
+        {
+          "by": "xvxvx",
+          "text": "Unless I’m just tired, the article, reporter and air traffic controllers are confused about hardware switches and routers having issues, and the act of switching out hardware. Duffy stated that the switches and routers were having issues and needed to be shut down. This seems to have been read as physical hardware switches, read ‘replacements’, were happening during the day."
+        },
+        {
+          "by": "sega_sai",
+          "text": "I don't know what happened, but for me a red flag was the specific explanation given while the event was still ongoing: \"overloaded router\", followed by request for more money.\nIf the cause was so simple , then it was unclear why it wasn't fixed immediately, so something does not quite add up (at least till an independent investigation)"
+        },
+        {
+          "by": "LorenPechtel",
+          "text": "Very good point on the timing. You do stuff like that at minimum load, not at maximum."
+        }
+      ],
+      "image": "https://www.commondreams.org/media-library/image.jpg?id=68687838&width=1200&height=600&coordinates=0%2C416%2C0%2C417"
+    },
+    {
+      "id": 50497900,
+      "url": "https://lexifina.com/blog/formalizing-the-us-tax-code",
+      "hn": "https://news.ycombinator.com/item?id=50497900",
+      "title": "Formalizing US Tax Code (Using Lean)",
+      "time": 1794670880,
+      "points": 152,
+      "depth": [
+        {
+          "text": "someone turned the **US tax code** into checkable code and found **drafting errors** and **tax surprises**",
+          "tier": "simple"
+        },
+        {
+          "text": "They translated **Title 26** into **Lean** and found **138 real faults** in its text and references. Their 2025 tax model agreed with PolicyEngine-US on 4,993 of 5,000 households; searches also uncovered three results absent from practitioner sources, IRS guidance and tax-software forums.",
+          "tier": "substance",
+          "data": [
+            [
+              "real faults",
+              "138"
+            ],
+            [
+              "households where the model agreed with PolicyEngine-US",
+              "4,993 of 5,000"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some praise making laws checkable; others say law needs human judgment and loopholes may be intentional.",
+      "comment_count": 102,
+      "terms": [
+        "Lean",
+        "formalization"
+      ],
+      "entities": [
+        "Lexifina",
+        "Alan Yahya",
+        "Lean",
+        "global-law",
+        "Internal Revenue Code",
+        "PolicyEngine-US",
+        "Tax-Calculator",
+        "UsTaxes",
+        "Internal Revenue Service",
+        "One Big Beautiful Bill Act"
+      ],
+      "comments": [
+        {
+          "by": "patrickmay",
+          "text": "I worked for a company pre-LLMs that analyzed laws and regulations in order to answer questions about financial transaction legality and reporting requirements. One problem that came up frequently is that the rules governments make don't have to be consistent. There are conflicts, some quite significant. The best we could do was make them visible and escalate to a human. It would be interesting…"
+        },
+        {
+          "by": "rancar2",
+          "text": "Wow, if I'm reading this correctly, the Big Beautiful Bill introduced a pretty large gap that punishes married couples filing jointly: a couple making about $300K each can lose up to $15K in write-offs compared with filing separately, pretty much everywhere except the nine states with no broad income tax (Alaska, Florida, Nevada, New Hampshire, South Dakota, Tennessee, Texas, Washington, and…"
+        },
+        {
+          "by": "delichon",
+          "text": "> Today, we set out to formalize the entire Internal Revenue Code to hunt for unknown loopholes (bugs). Saying that loopholes are bugs is a political statement that a particular allocation of resources is inherently fraudulent. There is no data that Lean code could use to decide whether a result is intentional or not. It's like deciding that any tax provision that increases income inequality is…"
+        },
+        {
+          "by": "qrobit",
+          "text": "There's whole language for law formalization called Catala. See https://catala-lang.org/ and https://github.com/CatalaLang/catala-examples French government seems to actually use it in one of their web services, see https://docs.aides.beta.gouv.fr/03_mutualiser/02_outils.html (page in French)"
+        },
+        {
+          "by": "jedberg",
+          "text": "It's important to remember that the loopholes are often intentional. They are left there so that rich people who can afford CPAs can take advantage of them, while middle income and poor people cannot afford to. They are also left there so there is wiggle room for interpretation if it comes in front of an auditor or a judge. And also, it's important to remember that in tax matters, the final…"
+        }
+      ],
+      "image": "https://lexifina.com/social-preview-v3.png?v=20261018"
+    },
+    {
+      "id": 50496921,
+      "url": "https://www.netmeister.org/blog/claude-delusion.html",
+      "hn": "https://news.ycombinator.com/item?id=50496921",
+      "title": "The Claude Delusion",
+      "time": 1794663377,
+      "points": 152,
+      "depth": [
+        {
+          "text": "someone argues **tech success** can make people think they're **experts at everything**, including AI",
+          "tier": "simple"
+        },
+        {
+          "text": "The author points to Bill Gates being **shocked** when an OpenAI model got a 5 on an advanced placement biology exam, then saying Anthropic's Claude coding models were as good as he was. They argue that this **overconfidence** feeds both AI-doom fears and promises that AI will solve everything, while talk of rogue agents can **dodge responsibility**.",
+          "tier": "substance",
+          "data": [
+            [
+              "AP exam grade",
+              "5"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say Gates's programming experience made him well placed to judge coding AI; others agree with the author that expertise in one area doesn't guarantee good judgment in others.",
+      "comment_count": 199,
+      "terms": [
+        "Dunning-Kruger effect",
+        "LLM",
+        "next-token prediction",
+        "post-training",
+        "agents",
+        "superintelligence"
+      ],
+      "entities": [
+        "Bill Gates",
+        "OpenAI",
+        "Anthropic",
+        "Claude",
+        "Claude Code",
+        "Sam Altman",
+        "Greg Brockman",
+        "Ilya Sutskever",
+        "Bill & Melinda Gates Foundation",
+        "New York Times"
+      ],
+      "comments": [
+        {
+          "by": "ianm218",
+          "text": "I find the authors point not very compelling.. Bill Gates was by all accounts an exceptional programmer at one point and then spent a long time evaluating software engineers. He seems like a natural person to gauge AI progress in coding? Around when AI was getting much better at SQL I was writing SQL everyday at work and had been for years. I don’t think it would’ve been hubris for me to judge…"
+        },
+        {
+          "by": "cronin101",
+          "text": "I think this is written forgetting a lot of the context of the time (I was at a relevant part of the industry to be present around some of the early “oh shit this thing works” moments). It was absolutely not a given that next-token prediction would scale to the point that it could answer outside of its training domain (this is the point about “made up questions”, it was important to test it on…"
+        },
+        {
+          "by": "jmathai",
+          "text": "This article first makes a point that Gates isn’t expert enough in biology to assess AIs capability to answer complex questions on the topic as being a breakthrough. Then immediately goes on to say that his comments about AI coding are arrogant despite being an expert in that field with more experience than nearly anyone. Unsure how to interpret that."
+        },
+        {
+          "by": "blincoln",
+          "text": "People on the author's side of this debate just haven't seen the firsthand evidence yet. I can understand being skeptical until then, but they owe it to themselves to give late-2026 frontier models a try. The lightbulb moment for me was when I gave Claude Code a tough reverse-engineering problem: understanding how a complex, proprietary encoding scheme worked, then building an encoder and…"
+        },
+        {
+          "by": "hliyan",
+          "text": "The first part of the article makes sense in that: In any system of competing agents (such as human beings) where the reward for performance can enhance performance, will always result in even minor random differentials in initial performance exponentially accumulating until one or a handful of individuals dominate. In such a system, only a small portion of success can be attributed to innate…"
+        }
+      ],
+      "image": "https://www.netmeister.org/blog/images/claude-delusion.jpg"
+    }
+  ],
+  "glossary": {
+    "automatic dosing system": "Equipment that adds chemicals to the pool on its own, instead of someone pouring them in by hand.",
+    "closed-loop chlorination system": "A pool setup that checks chlorine levels and adjusts how much chlorine it adds.",
+    "fail-safe": "A safety setup meant to stop equipment from doing something dangerous when a fault happens.",
+    "reasoning effort": "A setting for how much work a model spends figuring out an answer.",
+    "open weights": "The model's learned settings are available for people to download and run themselves.",
+    "tokens per second": "A measure of how quickly a model produces text.",
+    "PMTiles": "A format for storing map tiles in one file that a website can fetch in pieces.",
+    "HTTP Range requests": "Hypertext Transfer Protocol Range requests: a way to fetch just part of a file instead of downloading all of it.",
+    "CDN": "Content Delivery Network: A network of servers that helps websites handle requests closer to their users.",
+    "storage bucket": "An online place to keep files so a service can retrieve them.",
+    "XSS": "Cross-site scripting: A flaw that can make a website run instructions supplied by someone visiting it.",
+    "iframe": "A webpage shown inside another webpage.",
+    "trusted filter": "A uBlock Origin rule treated as allowed to add JavaScript to pages.",
+    "UUID": "Universally unique identifier: a label designed to identify one item without being confused with another.",
+    "URL shortener": "A service that turns a long web address into a shorter one and sends visitors to the destination.",
+    "back-half": "The part of a shortened web address after the slash; whoever claims it can choose where the link leads.",
+    "redirect": "When one web address automatically sends you to another.",
+    "broken link hijacking": "When someone takes over an old link and points it to a different page.",
+    "Unicode": "A shared way to represent characters from writing systems around the world in files and software.",
+    "ligatures": "A font feature that can combine neighboring letters into a single shape.",
+    "OCR": "Optical character recognition: software that reads words from a picture or scanned page.",
+    "UX": "User experience: how using a product feels and how easy it is to get things done.",
+    "compiler": "A tool that turns code you write into a program a computer can run.",
+    "IDE": "Integrated Development Environment: an app that brings coding and other development tools together.",
+    "executable": "A file that runs as a program when opened.",
+    "minified": "Code with extra spaces and other unneeded text removed to make it take up less room.",
+    "boilerplate code": "Repeated setup code that has to appear in programs even though it isn't the part that makes each one different.",
+    "positional embedding": "Information that helps a language model tell where a token sits in a sequence.",
+    "RoPE": "Rotary Position Embedding: a method that turns pairs of numbers in a token’s attention calculations by an amount based on where the token sits.",
+    "attention": "A way for each token to draw on information from other tokens in the same input.",
+    "query": "A list of numbers that represents what a token is looking for from other tokens.",
+    "key": "A list of numbers other tokens compare against to decide whether to use this token’s information.",
+    "causal mask": "A rule that stops each token from looking at later tokens, while letting it use itself and earlier ones.",
+    "group representation": "A way to describe transformations, such as shifting positions, as changes to numbers.",
+    "translation group": "The collection of shifts that move something by different amounts, where shifts can be combined.",
+    "corvids": "A bird group that includes crows, ravens, rooks, and scrub jays.",
+    "theory of mind": "The ability to understand what another bird might be thinking and act accordingly.",
+    "feedback loop": "The time between changing code and seeing whether it works.",
+    "El Niño": "A natural warming pattern in the tropical Pacific that can shift weather in many places.",
+    "Emacs": "A text editor with many ways to move around and change text.",
+    "EWW": "Emacs Web Wowser: Emacs's built-in way to open and read web pages inside Emacs.",
+    "Searx": "A search tool that combines results from other search engines.",
+    "reader mode": "A browser view that strips away page extras so the text is easier to read.",
+    "static HTML": "Web pages with fixed text and layout, rather than pages that change as you interact with them.",
+    "execution CEO": "A leader who focuses on running the company's existing business smoothly rather than changing what it sells.",
+    "CUDA": "Compute Unified Device Architecture: NVIDIA’s tools for using its graphics chips for computing work.",
+    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "business model": "The way a company makes money: what it sells, to whom, and how.",
+    "cannibalize": "When a company releases a new product that takes sales away from one it already makes.",
+    "off-session": "Charging a customer's saved card when they aren't actively making a payment.",
+    "SetupIntents": "A Stripe feature for saving a customer's payment details for a later charge.",
+    "payment processor": "A service that handles card payments for a business.",
+    "merchant fraud": "A seller taking money from a customer without their permission.",
+    "export controls": "Rules that limit where a company can sell certain goods, often for security reasons.",
+    "circular deals": "A set of deals in which companies trade with one another in a loop.",
+    "interim CEO": "A temporary chief executive who runs a company until a longer-term choice is made.",
+    "ground stop": "An order that pauses flights from taking off, while flights already in the air may be handled separately.",
+    "router": "A power tool used to smooth or shape the edges of wood.",
+    "SOP": "Standard Operating Procedure: agreed steps for handling a routine task.",
+    "packet storm": "A burst of network messages that overwhelms the equipment trying to handle them.",
+    "multicast failure": "A failure in a way of sending the same message to several places at once.",
+    "post-mortem": "A review after an outage to work out what happened and how to avoid a repeat.",
+    "Lean": "A computer program used to write mathematical proofs and check that their steps are correct.",
+    "formalization": "Writing mathematics in a precise form that a computer can check.",
+    "Dunning-Kruger effect": "A term for people sometimes failing to notice their own lack of skill or understanding.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "next-token prediction": "Training an AI to guess what word or piece comes next in a sequence.",
+    "post-training": "Extra training after a model's initial training that shapes how it responds.",
+    "agents": "AI tools that can carry out tasks with some independence.",
+    "superintelligence": "A hypothetical AI that would outperform people across a very wide range of tasks."
+  }
+}
