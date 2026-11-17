@@ -2,6 +2,1298 @@
   "date": "2026-11-17",
   "cards": [
     {
+      "id": 50530163,
+      "url": "https://www.nytimes.com/2026/11/17/upshot/school-phone-bans-study-scores.html",
+      "hn": "https://news.ycombinator.com/item?id=50530163",
+      "title": "New Evidence Shows School Phone Bans Are Gradually Improving Test Scores",
+      "time": 1794915951,
+      "points": 1057,
+      "depth": [
+        {
+          "text": "a study links **school phone bans** to a **small test-score bump**, though commenters question what caused it",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says the study found a **≈0.01 standard-deviation difference** in test scores in the year lockable phone pouches were adopted, with **no detectable additional difference** the following year. Critics point to diverging pre-trends and ask whether post-COVID recovery explains the gains.",
+          "tier": "substance",
+          "data": [
+            [
+              "test-score difference",
+              "≈0.01 standard-deviation"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: ban supporters say students socialize more and phones should have been banned sooner; skeptics say score gains are small or may reflect other factors.",
+      "comment_count": 528,
+      "terms": [
+        "standard deviation",
+        "pre-trends",
+        "diff-in-diff"
+      ],
+      "entities": [
+        "CEPR",
+        "Harvard"
+      ],
+      "comments": [
+        {
+          "by": "40four",
+          "text": "http://archive.today/pbZQw"
+        },
+        {
+          "by": "robot_jesus",
+          "text": "My kids (16 and 13) both attend schools that recently implemented phone bans and they love it, somewhat surprisingly. They've commented on how one of their favorite things about school is actually the social aspect. Before the ban, at lunch or study halls or recess, kids would just be on their phones and now they're laughing and goofing off, as kids should be doing. Bonkers to me that we ever…"
+        },
+        {
+          "by": "yorwba",
+          "text": "The study https://cepr.harvard.edu/sites/g/files/omnuum9881/files/2026... finds a ≈0.01 standard-deviation difference in test scores the year lockable phone pouches are adopted, with no detectable additional difference in the following year. Certainly nothing to sneeze at from a system-wide perspective, but easily overwhelmed by other factors for any individual student."
+        },
+        {
+          "by": "vezycash",
+          "text": "Everyone in the US knew phones were destroying attention spans years ago, but educational bodies and school boards punted the burden down to individual schools, teachers, and parents. Of course it failed: no single teacher or parent wants to be the bad guy and face social friction. China just banned them outright. It's the same with companies - weak committee vs. a founder who just makes the hard…"
+        },
+        {
+          "by": "travisgriggs",
+          "text": "How long before this enters the work force at various points? My empty nester wife reentered the work force as a nurse. As one of her studies during her in hospital training she studied cell phone impacts on nursing. She’s commented how some nurses—and not just the young ones just coming out of school, but just as often the middle and older generations—struggle to be effectively present because…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50535230,
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "hn": "https://news.ycombinator.com/item?id=50535230",
+      "title": "GPT‑6.2 Astra and Sol",
+      "time": 1794937603,
+      "points": 827,
+      "depth": [
+        {
+          "text": "OpenAI released **two new models**, and commenters are already **arguing over how useful they are**",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter posted **PacBench scores**: GPT-6.2 Astra scored 92 in 6.6 min for $2.04, while GPT-6.2 Sol scored 87 in 6.3 min for $0.49. Others questioned whether benchmark comparisons show **real improvement**, and one said GPT-6 Astra sometimes declared a task done after completing only part of it.",
+          "tier": "substance",
+          "data": [
+            [
+              "GPT-6.2 Astra PacBench score",
+              "92"
+            ],
+            [
+              "GPT-6.2 Astra PacBench time",
+              "6.6 min"
+            ],
+            [
+              "GPT-6.2 Astra PacBench cost",
+              "$2.04"
+            ],
+            [
+              "GPT-6.2 Sol PacBench score",
+              "87"
+            ],
+            [
+              "GPT-6.2 Sol PacBench time",
+              "6.3 min"
+            ],
+            [
+              "GPT-6.2 Sol PacBench cost",
+              "$0.49"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say the performance looks strong for the cost if the benchmarks hold up; others report regressions or weak follow-through and question the benchmarks.",
+      "comment_count": 503,
+      "terms": [
+        "benchmark",
+        "Goodhart's Law",
+        "Pareto frontier",
+        "chain of thought (CoT)"
+      ],
+      "entities": [
+        "OpenAI",
+        "Anthropic",
+        "GPT-6.2 Astra",
+        "GPT-6.2 Sol",
+        "GPT-6 Astra",
+        "PacBench",
+        "Kimi K3.1 Pro",
+        "Muse Wonder",
+        "Artificial Analysis",
+        "Claude",
+        "Fable 5.2",
+        "Gemini 4 Carbon",
+        "Codex"
+      ],
+      "comments": [
+        {
+          "by": "azuanrb",
+          "text": "I find it interesting how comments on OpenAI release threads often favour Anthropic, while comments on Anthropic release threads favour OpenAI. Maybe criticism just attracts more attention. A lot of the comments here seem to be about other models, with little discussion of the ones actually being released. Neither provider’s models are perfect, but they keep pushing each other forward. As an…"
+        },
+        {
+          "by": "ksec",
+          "text": "As someone who dont follows closely. How do I know at what point were the other GPT model tested? Let say they just nerfed GPT 6.1 a few weeks ago. Now they are using that as a reference score against 6.2? Or were those results tested when 6.1 relesed. What about 6.0? And that is the same with Claude. How do we know they are not cherry picking the date and test on these release when they are…"
+        },
+        {
+          "by": "mlmonkey",
+          "text": "From the system card: > GPT-6.2 Astra showed more signs of evaluation awareness than GPT-6 Astra. In evaluations that replayed internal Codex sessions, GPT-6.2 Astra was more likely than GPT-6 Astra to express suspicion that it was being tested or was in a simulation.\n> Compared with GPT-6 Astra, GPT-6.2 Astra is better at evading chain of thought (CoT) monitoring in some tests."
+        },
+        {
+          "by": "Topfi",
+          "text": "Office work has never been OpenAIs strength, no shame in that by itself, but these Slideshow examples look particularly awful, far worse than what I myself got out of GPT-5.6 Sol about two weeks ago in a single prompt. Same for Workbooks and memos, those examples read inferior to some pre Opus 4.5 and Kimi K2 Thinking docs I have kept around. It's ok for a model not to be great at these, but…"
+        },
+        {
+          "by": "thefourthchime",
+          "text": "PacBench results. GPT-6.2 Astra scored 92 in 6.6 min for $2.04, vs Kimi K3.1 Pro (93 in 11.5 min for $0.68); it lost points for the web-page layout around the maze and an orange ghost that often never leaves the house. Model: https://jonclegg.github.io/pacman-bakeoff/#gpt-6.2-astra Closest: https://jonclegg.github.io/pacman-bakeoff/#kimi-k3.1-pro PacBench results. GPT-6.2 Sol scored 87 in 6.3 min…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50535238,
+      "url": "https://developer.apple.com/system-status/",
+      "hn": "https://news.ycombinator.com/item?id=50535238",
+      "title": "Apple Services Down",
+      "time": 1794937634,
+      "points": 497,
+      "depth": [
+        {
+          "text": "Apple services went **down**, and users reported trouble **signing in** and using everyday features",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter said an Apple Store couldn't process **orders or returns**, and newly bought iPhones couldn't be **activated**. Others reported **Apple Account sign-in errors**; a linked report also mentioned problems with Apple Pay and the App Store.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some wonder about a coordinated attack or AWS; others point to operational strain, rushed updates, or long-neglected infrastructure.",
+      "comment_count": 275,
+      "terms": [
+        "cloud service",
+        "DAV",
+        "self-host",
+        "AWS"
+      ],
+      "entities": [
+        "Apple",
+        "Apple Store",
+        "Apple Pay",
+        "App Store",
+        "Apple Account",
+        "iCloud",
+        "HomeKit",
+        "Fastmail",
+        "Linux",
+        "AWS",
+        "S3",
+        "Microsoft",
+        "Stuxnet",
+        "Mythos",
+        "Glasswing"
+      ],
+      "comments": [
+        {
+          "by": "jpatten",
+          "text": "This reminds me of the Chinese spy balloon that floated over the US. For a week or so we were getting news stories about every unidentified weather balloon or piece of airborne debris. The main connection between the incidents was that the public thought they might be connected."
+        },
+        {
+          "by": "cjbconnor",
+          "text": "Just got back from the Apple Store. They confirmed that everything was down, they could not process orders or returns, and new iPhones that people bought weren't able to be activated."
+        },
+        {
+          "by": "blop",
+          "text": "what a world we built in less than a generation... everything and everyone dependent on a few cloud services, we're very far from the original vision of a decentralised internet :'( The only chance we have for a more reliable world is if these outages and hacks become more and more common. Institutions and people will be forced to wake up and find more local and diverse alternatives..."
+        },
+        {
+          "by": "mkhalil",
+          "text": "TIL Apple has two status pages: https://developer.apple.com/system-status/ https://www.apple.com/support/systemstatus/ Interesting that HomeKit makes the general status page and not the developer one. Makes me wonder how they define each entry, and what makes up a system in one vs. the other."
+        },
+        {
+          "by": "MBCook",
+          "text": "Well this has been an interesting week."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50532086,
+      "url": "https://jordankrueger.com/blog/better-open-source-not-more-apps/",
+      "hn": "https://news.ycombinator.com/item?id=50532086",
+      "title": "We don't need more apps, we need better open source",
+      "time": 1794926736,
+      "points": 332,
+      "depth": [
+        {
+          "text": "someone wants **AI coding** aimed at making **open-source tools** easier to run, not building more apps",
+          "tier": "simple"
+        },
+        {
+          "text": "Krueger points to **uv**, whose makers’ benchmarks say it installs Python packages **8 to 10 times faster than pip** (up to 115 times with a warm cache). He says AI can help profile code, write tests, test installers and write docs, but **a person checks every line**.",
+          "tier": "substance",
+          "data": [
+            [
+              "uv vs pip",
+              "8 to 10 times faster"
+            ],
+            [
+              "uv with a warm cache",
+              "up to 115 times"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some want AI improving shared open-source projects; others prefer custom apps for individual needs, while maintainers warn that extra fixes can overwhelm them.",
+      "comment_count": 218,
+      "terms": [
+        "open source",
+        "self-host",
+        "vibecoding",
+        "maintainer",
+        "pull request",
+        "benchmark",
+        "warm cache"
+      ],
+      "entities": [
+        "Jordan Krueger",
+        "Hacker News",
+        "uv",
+        "Python",
+        "pip",
+        "Astral",
+        "Rust",
+        "xz",
+        "Linux",
+        "curl",
+        "Claude",
+        "apt-cacher-ultra",
+        "apt-cacher-ng",
+        "Ubuntu",
+        "Nix",
+        "DeepSeek",
+        "Strava",
+        "OpenStreetMap"
+      ],
+      "comments": [
+        {
+          "by": "joshdata",
+          "text": "> Pick one open source tool you use. Find the most annoying thing about installing or running it. Spend a weekend fixing it, with the people who maintain it. Then tell me about it. My open source projects were barely sustainable when the few PRs that came in would fix actual, non-hypothetical, serious logic problems. Now I've been seeing PRs like that, fixing annoyances, performance edge cases…"
+        },
+        {
+          "by": "timbert",
+          "text": "I think we need a new model of software delivery. Here's my most-recent real-world problem: I wanted to plug in my midi controller keyboard and just play a piano, so I can practice my choral music. Very basic. This turned into many hours over several days trying multiple DAWs, trying to get tehm to install, get them to run at all, get them to recognize my controller, get them to play a VST…"
+        },
+        {
+          "by": "linsomniac",
+          "text": "> Pick one open source tool you use. [...] Spend a weekend fixing it Beware: Your best path forward there may be, contrary to part of the thesis in this post, be to vibe code a replacement. There are a couple reasons why: Expect to encounter significant push-back due to AI contribution. For example, I've had bug fixes to significant problems be rejected because \"we are in the future going to be…"
+        },
+        {
+          "by": "delichon",
+          "text": "Many apps have just been obsoleted by the new tech. I've tried hundreds of food logging apps and written a few. But none are nearly as good as my current daily driver, a Google spreadsheet wrapped by a GrokBot. I just tell it what I ate two or three times per day, voice or text, no attempt to normalize units or food names. It does all of that with nuance and I seldom have to correct anything…"
+        },
+        {
+          "by": "ValdikSS",
+          "text": "We need to invent new definition to what many people expect when say \"open source\". Maybe use \"Stewarded Open Source\" coined by Dries Buytaert. https://dri.es/license-only-versus-stewarded-open-source The truth is: open-source doesn't come with any support, maintenance or feature request fulfilment by default. By definition, that's just a code with no strings attached. Do not expect maintenance…"
+        }
+      ],
+      "image": "https://jordankrueger.com/images/gallery/blog-better-open-source-not-more-apps.jpg"
+    },
+    {
+      "id": 50533089,
+      "url": "https://www.reuters.com/technology/highly-classified-us-national-security-communications-network-is-down-cnn-2026-11-17/",
+      "hn": "https://news.ycombinator.com/item?id=50533089",
+      "title": "NSA Internal Network Down",
+      "time": 1794930648,
+      "points": 330,
+      "depth": [
+        {
+          "text": "the **NSA's internal network** is **down**, but there's no article here explaining what happened",
+          "tier": "simple"
+        }
+      ],
+      "camps": null,
+      "comment_count": 4,
+      "terms": [],
+      "entities": [
+        "NSA",
+        "CNN"
+      ],
+      "comments": [
+        {
+          "by": "gnabgib",
+          "text": "CNN Source (27 points, 5 comments) https://news.ycombinator.com/item?id=50532849"
+        },
+        {
+          "by": "ChrisArchitect",
+          "text": "[dupe] https://news.ycombinator.com/item?id=50532849"
+        },
+        {
+          "by": "ColinWright",
+          "text": "See also: https://news.ycombinator.com/item?id=50532849"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50532849,
+      "url": "https://www.cnn.com/2026/11/17/politics/highly-classified-national-security-communications-network-goes-down",
+      "hn": "https://news.ycombinator.com/item?id=50532849",
+      "title": "Highly classified US national security communications network goes down",
+      "time": 1794929908,
+      "points": 308,
+      "depth": [
+        {
+          "text": "a highly classified US national security **communications network** went down, and people are debating whether the **timing** means anything",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says the NSA’s internal network is unavailable **every year or so**; others float **an attack** as an explanation, while another sees **a pattern** among recent outages.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters say this is routine downtime or coincidence; others suspect an attack or see a wider pattern in recent outages.",
+      "comment_count": 459,
+      "terms": [
+        "Baader–Meinhof phenomenon",
+        "RCE"
+      ],
+      "entities": [
+        "NSA",
+        "Twitter",
+        "X",
+        "Elon",
+        "DOGE",
+        "Java",
+        "BBN",
+        "ARPAnet",
+        "NSANet",
+        "Microsoft",
+        "Optimizely",
+        "United Airlines",
+        "NORAD"
+      ],
+      "comments": [
+        {
+          "by": "lucascdotnet",
+          "text": "I wonder (and have no idea) whether the increased reports of services being down is a case of the Baader–Meinhof phenomenon, or a actual increase in failure rate."
+        },
+        {
+          "by": "dustfinger",
+          "text": "I may not understand expectations, or the law around this, but I find it a little surprising that the NSA would publicly announce that their internal and highly classified network is down. At least not before getting it back up, running and secure again."
+        },
+        {
+          "by": "btreesOfSpring",
+          "text": "I feel like something started after Elon purchased twitter and made all those personnel deep cuts. In the era prior, it wasn't too hard to look around and see people who were dragging productivity down. Their cuts would be an improvement. Twitter into X looked to cut to the bone and despite a few hiccups, nothing catastrophic happened to the service layer. This ushered in a new era of tech…"
+        },
+        {
+          "by": "usernomdeguerre",
+          "text": "People seem to be leaning on the AI speculation from the \"vibe coded\" angle, but couldn't this also be an \"AI is the reason\" from the attacker side? I think we've seen more than a fair share of AI assisted exploits that chain many small vulnerabilities into something more pronounced. I'm thinking of the rash of attacks in SK and China against Banks using offensive harnesses. I'd be more willing…"
+        },
+        {
+          "by": "Avicebron",
+          "text": "It's clear, there is a screaming need for competent, well paid IT across all sectors."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50532191,
+      "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
+      "hn": "https://news.ycombinator.com/item?id=50532191",
+      "title": "What is the best harness for each model?",
+      "time": 1794927223,
+      "points": 289,
+      "depth": [
+        {
+          "text": "someone tested coding setups and found the **best-value harness** changes with each **model**",
+          "tier": "simple"
+        },
+        {
+          "text": "The team compared **22 harnesses** across **five models**, on 62 terminal tasks with four attempts each. “Best value” meant the **lowest cost per pass**, unless another option cost at most 30% more per pass and passed at least five points more often. Picks included Codex CLI with GLM-5.3, Pi with GLM-5.3 Flash, ZCode with DeepSeek V4.1 Flash 1017, Oh My Pi with Muse, and Alma with Kimi-K3.",
+          "tier": "substance",
+          "data": [
+            [
+              "Harnesses",
+              "22"
+            ],
+            [
+              "Models",
+              "5"
+            ],
+            [
+              "Terminal tasks",
+              "62"
+            ],
+            [
+              "Attempts",
+              "4"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say a harness barely changes results for a fixed model; others say a task-specific harness can be much faster, cheaper, and more correct.",
+      "comment_count": 103,
+      "terms": [
+        "harness",
+        "benchmark",
+        "pass rate",
+        "cost per pass",
+        "tokens"
+      ],
+      "entities": [
+        "Runta",
+        "FrontierHarness Eval",
+        "Baseten",
+        "Codex CLI",
+        "GLM-5.3",
+        "Pi",
+        "GLM-5.3 Flash",
+        "ZCode",
+        "DeepSeek V4.1 Flash 1017",
+        "Oh My Pi",
+        "Muse",
+        "Alma",
+        "Kimi-K3"
+      ],
+      "comments": [
+        {
+          "by": "seizethecheese",
+          "text": "The headline here is confusing. They ran a bunch of harness and agent combinations on terminal bench tasks, and 64% of the spending was on tasks that didn’t pass terminal bench verifiers. It’s unclear whether that’s supposed to be surprising against the selected models for the benchmark. I suspect it’s not and the headline is written to pander to “wasting money on AI” upvotes. Edit: they changed…"
+        },
+        {
+          "by": "Zigurd",
+          "text": "I find myself pulled in two directions by the performance of coding agents: First, keeping them on a short leash seems sensible. I don't get failed results very often. When I first started using coding agents, this seemed not just sensible but required in order to not deal with a lot of hallucinated weirdness. Secondly though, it's pretty cool to vaguely wave your hands in a certain direction and…"
+        },
+        {
+          "by": "cpeth",
+          "text": "Harnesses are all fairly simple loops from the ones I have looked at; there is not much to them. As someone who regularly uses Claude Opus 5.5 from Claude Code and from Copilot, I would say harness barely matters in terms overall performance and behavior. Opus is nearly identical in both harness. The opposite is also true, if I switch Copilot to something like Gemini 4 Argon it's completely…"
+        },
+        {
+          "by": "xyzzy_plugh",
+          "text": "I don't like this framing. For a given model, the best harness depends on the problem. As models become increasingly capable, the harness appears to matter more than the model. This is perhaps controversial but allow me to explain. Most of my problems are in a single domain, using specific tools and programming languages. I give whatever model de jour the specific tools it needs to solve the…"
+        },
+        {
+          "by": "bisonbear",
+          "text": "These are cool results and I'm glad that tokens are being invested to eval harness capabilities. However, I am hesitant on the correlation between pass/fail in evals which are a binary 0/1 determined by tests, and real world usage, where users can steer, run code review, and care about more than just test pass/fail. I wrote about the problem of determining \"success\" for coding agents, and a lot…"
+        }
+      ],
+      "image": "https://runta.com/social/blog-introducing-frontierharness-eval-v1-1.png"
+    },
+    {
+      "id": 50525575,
+      "url": "https://twitter.com/id_aa_carmack/status/2122478083319992513",
+      "hn": "https://news.ycombinator.com/item?id=50525575",
+      "title": "Why 3dfx 1 cards had such a washed out color output?",
+      "time": 1794874584,
+      "points": 274,
+      "depth": [
+        {
+          "text": "John Carmack explains why **textures made for ordinary screens** looked **washed out** on 3DFX cards",
+          "tier": "simple"
+        },
+        {
+          "text": "Carmack says 3DFX used near-linear color with only **5 or 6 bits per channel**, which could cause bands in dark colors; textures made for conventional non-linear displays then looked **washed out**. A commenter says some cards also had **signal-voltage** differences that gamma adjustment would not fix.",
+          "tier": "substance",
+          "data": [
+            [
+              "3DFX color depth",
+              "5 or 6 bits per channel"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two takes: Carmack points to color-space and texture mismatch; a commenter says signal-voltage problems—not gamma—also affected some cards.",
+      "comment_count": 102,
+      "terms": [
+        "gamma",
+        "linear color",
+        "bits per channel",
+        "signal voltage",
+        "sRGB"
+      ],
+      "entities": [
+        "John Carmack",
+        "3DFX",
+        "NeXT",
+        "Pixar",
+        "SGI",
+        "sRGB",
+        "Voodoo 2",
+        "Voodoo Rush",
+        "GENDAC",
+        "VGA",
+        "Quake",
+        "glQuake"
+      ],
+      "comments": [
+        {
+          "by": "AkBKukU",
+          "text": "I have two alternate observations, because VGA is an analog signal there are standards for what the voltages should be. But they were not always followed. Keep in mind that the first two Voodoo cards were also video switchers with a chip to output either the 2D passthrough or the internally generated 3D chip signal created by its own GENDAC. 1. I have a Voodoo 2 paired with an S3 Virge/DX, the…"
+        },
+        {
+          "by": "hmstx",
+          "text": "One other aspect of 3dfx looking a bit washed out beyond the gamma problem is the trickery performed in the RAMDAC before it blasted those cool pixels to the VGA port. If you remember, 3dfx screenshots were just as dithered as, say, an ATI Rage, but on screen it looked smoother (although a bit blurry) while the others looked visibly dithered still (see some 3dfx screenshots…"
+        },
+        {
+          "by": "herodoturtle",
+          "text": "It's pretty cool that someone can ask an interesting graphics-related question, and John Carmack of all people steps in to answer it. And then even Eric S. Raymond adds a comment further below."
+        },
+        {
+          "by": "Dwedit",
+          "text": "You might have heard about sRGB (the commonly used colorspace) not being linear, and that to get halfway between black and white (linear RGB of 50%), you get an sRGB value of around 74%. But there is one place where sRGB is truly linear, and that is signal voltage for a CRT display . 50% of sRGB truly means 50% of signal voltage (between the minimum and maximum voltages)."
+        },
+        {
+          "by": "tannhaeuser",
+          "text": "Hard to believe, but Nvidia, founded by former SGI engineers, was considered an entrepreneur and challenger of 3dfx, the dominant pioneer in PC 3D hardware 30 years ago. Edit: see comments re founders"
+        }
+      ],
+      "image": "https://pbs.twimg.com/profile_images/1560764938083352577/B1X3m4NN_400x400.jpg"
+    },
+    {
+      "id": 50523025,
+      "url": "https://arstechnica.com/tech-policy/2026/11/comcast-falsely-advertises-cable-internet-as-fiber-powered-att-lawsuit-says/",
+      "hn": "https://news.ycombinator.com/item?id=50523025",
+      "title": "Comcast's \"fiber-powered Wi-Fi\" is cable, AT&T says in false advertising case",
+      "time": 1794862088,
+      "points": 252,
+      "depth": [
+        {
+          "text": "AT&T says Comcast’s **fiber-powered Wi-Fi** claim describes cable service that reaches homes over **coaxial cable**",
+          "tier": "simple"
+        },
+        {
+          "text": "The lawsuit asks for Comcast’s **profits from the ads** and a **permanent injunction** against the phrase. AT&T has an awkward history too: an ad watchdog said its old **“5GE”** label for 4G LTE could mislead customers.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say coax isn’t fiber and fiber has practical advantages; others say users care about bandwidth and availability, and cable can be symmetric.",
+      "comment_count": 235,
+      "terms": [
+        "coaxial cable",
+        "fiber-to-the-home",
+        "HFC",
+        "DOCSIS",
+        "symmetrical speeds"
+      ],
+      "entities": [
+        "Comcast",
+        "AT&T",
+        "Xfinity",
+        "5GE",
+        "BBB National Programs",
+        "National Advertising Division"
+      ],
+      "comments": [
+        {
+          "by": "bob1029",
+          "text": "Fiber is so much better than cable in an emergency. The equipment consumes significantly less power and is likely to stay up longer during a power outage. You get way more customers on each battery / generator. I had an FTTH provider with 100% of their network on natural gas standby generators. Went through a week long power outage without losing a single packet. You can support something like…"
+        },
+        {
+          "by": "userbinator",
+          "text": "While Comcast has deployed plenty of fiber throughout the US, its cable Internet service makes the final connection to homes with coaxial cable. This results in upload speeds being far slower than download speeds. In contrast, fiber-to-the-home service can provide symmetrical upload and download speeds. You can get symmetric DOCSIS, and apparently Comcast do offer that service[1]. Likewise, FTTH…"
+        },
+        {
+          "by": "ben1040",
+          "text": "Back in the days of rolling out U-Verse (their FTTN service), AT&T's advertising used exactly the same strategy of weasel-words to say \"fiber\" without making an actionable implication that it was fiber from A to Z. Phrases like \"fiber rich network\" and \"U-Verse uses fiber optic technology.\""
+        },
+        {
+          "by": "cornedor",
+          "text": "This has been a thing in the Netherlands for years. Ziggo has been advertising with terms like \"Glasvezel-Kabel\" (Fiber Optic - Cable) to indicate that the fiber goes up to a switch in the area, but then goes over coax cable to the residential buildings. They got a lawsuit, and for some weird reason they even won it. I don't know it it really matters in the end, they lose some (technical)…"
+        },
+        {
+          "by": "trevithick",
+          "text": "The advertising in this space is terrible. I constantly see ads for \"gig wifi\" and similar terms and have no idea what the actual internet connection type is."
+        }
+      ],
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2022/11/getty-comcast-van-1152x648.jpg"
+    },
+    {
+      "id": 50526560,
+      "url": "https://support.apple.com/en-us/149699",
+      "hn": "https://news.ycombinator.com/item?id=50526560",
+      "title": "If an App Asks for Full Disk Access or System and App Protection Override",
+      "time": 1794881824,
+      "points": 237,
+      "depth": [
+        {
+          "text": "Mac users can give apps **limited access** to folders or apps instead of letting them **bypass protections**",
+          "tier": "simple"
+        },
+        {
+          "text": "Full Disk Access lets an app **read, change, delete, and export** every file on your Mac. System & App Protection Override can also let it control your Mac, see background windows, and **capture every keystroke**; you can change either permission later in Privacy & Security settings.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: supporters say choosing limited access is a useful safety step; critics say Apple's design is clumsy and doesn't give developers enough precise permission controls.",
+      "comment_count": 120,
+      "terms": [
+        "Full Disk Access",
+        "System & App Protection Override",
+        "API",
+        "read-only access",
+        "secops"
+      ],
+      "entities": [
+        "Apple",
+        "macOS",
+        "Anki",
+        "Soulver",
+        "Daisy Disk",
+        "Claude",
+        "Facebook",
+        "WhatsApp",
+        "Adobe",
+        "Spotlight",
+        "Finder",
+        "Disney Hotstar",
+        "iOS",
+        "App Store"
+      ],
+      "comments": [
+        {
+          "by": "gbdubs",
+          "text": "This is a very poorly conceived API. If developers' use cases don't fit cleanly into Apple's (narrow) idea about how a hypothetical app should work, developers will continue to feel like they need to request these expansive permissions. A good filesystem permission API could include any of these which would make users WAY safer and enable developers to request far smaller scopes: - Allow the…"
+        },
+        {
+          "by": "postalcoder",
+          "text": "This is a good thing. There are too many apps that request full disk access despite not needing it. I counted 44* applications on my mac that ask for FDA. I've only granted it to 8. The other apps work just fine without it. (Some apps that ask for full disk access: Anki, a flashcard app and Soulver, a calculator app – cmon now) This change is less about bureaucracy and more requiring developers…"
+        },
+        {
+          "by": "vbezhenar",
+          "text": "For me more important would be to exclude specific folders from that full disk access (like ~/.ssh), rather than selecting one directory. For example I've used Daisy Disk app to visualize directory size. It's best used with full disk access. But I know that my `.ssh` is tiny and I'd prefer for this app not to be able to access it at all."
+        },
+        {
+          "by": "kinabalu76",
+          "text": "I think Apple is being smart here and people are blowing this way out of proportion for views. The truth is that we've seen people who know how to run secops get hacked, so putting controls to ensure we scare the shit out of people who think giving claude access to their entire disk is no big deal is a great idea."
+        },
+        {
+          "by": "vsgherzi",
+          "text": "This seems like a fine change? I don’t quite understand what the pushback is could someone spell it out for me?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50529612,
+      "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+      "hn": "https://news.ycombinator.com/item?id=50529612",
+      "title": "How the Claude Code team thinks about verification",
+      "time": 1794910840,
+      "points": 222,
+      "depth": [
+        {
+          "text": "the Claude Code team shares how **feedback loops** help coding agents **check their own work**",
+          "tier": "simple"
+        },
+        {
+          "text": "They recommend **end-to-end tests** first, plus **property tests** that try thousands of inputs to catch edge cases. If a check still fails after three rounds, Claude stops and **brings in a human**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: skeptics say these checks add cost or unnecessary process; supporters say a strong QA workflow improves trust and helps them ship quality software.",
+      "comment_count": 173,
+      "terms": [
+        "agent",
+        "end-to-end test",
+        "property test",
+        "differential test",
+        "verification loop",
+        "flaky test"
+      ],
+      "entities": [
+        "Claude Code",
+        "Claude",
+        "Anthropic",
+        "Playwright",
+        "CDP",
+        "fast-check",
+        "Hypothesis",
+        "proptest",
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Rust",
+        "DeepSeek",
+        "Chrome",
+        "iOS",
+        "Android"
+      ],
+      "comments": [
+        {
+          "by": "OtherShrezzing",
+          "text": "This article feels like the result of having unlimited tokens at your disposal. It’s got some very expensive practices, where near-free practices would produce the same or better results. There’s a long section in the middle where the article describes per-change verification via skill files and “ask Claude to use the chrome-for-Claude tool” when checking if changes have introduced regressions…"
+        },
+        {
+          "by": "tshaddox",
+          "text": "Is Claude Code considered to be a reliable piece of software these days? I stopped using as my daily driver around 9 months ago, and at that time it felt very heavy/janky and seemed to have very regular bugs and breaking UI changes. I’d be happy to hear that it has gotten better!"
+        },
+        {
+          "by": "asmvolatile",
+          "text": "The Claude code team doesn’t think about jack sh*t. Interacting with Anthropic teams makes it clear that nobody at that company has any idea how their software works."
+        },
+        {
+          "by": "girvo",
+          "text": "> With them, you can run dozens or hundreds in parallel. Im already spending my $2k usd per month in tokens with just one or two agents. How do they expect me to do that?"
+        },
+        {
+          "by": "koolba",
+          "text": "> Nobody can read every change, so we use failures as one way to decide what needs a person. Whether a human can or should review every diff is a conscious project level decision. I have yet to see a project where it is not feasible. The trick is to break things into small enough pieces that you can review them. Just like one would do if you were doing such changes manually. Nobody in their right…"
+        }
+      ],
+      "image": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/og.png"
+    },
+    {
+      "id": 50511874,
+      "url": "https://visualbasic.world/",
+      "hn": "https://news.ycombinator.com/item?id=50511874",
+      "title": "VisualBasic.World: A gallery of Planet Source Code programs from 1997 to 2012",
+      "time": 1794784110,
+      "points": 198,
+      "depth": [
+        {
+          "text": "someone made a **gallery** of old Visual Basic projects that feels like a **time capsule**",
+          "tier": "simple"
+        }
+      ],
+      "camps": null,
+      "comment_count": 75,
+      "terms": [
+        "Visual Basic",
+        "DirectX",
+        "IDE"
+      ],
+      "entities": [
+        "VisualBasic.World",
+        "Planet Source Code",
+        "Visual Basic",
+        "DirectX"
+      ],
+      "comments": [
+        {
+          "by": "robviren",
+          "text": "A lovely gaggle of whacky, strange, and absolutely diverse projects. Very of the era with some of them. Views like this being me joy because it shows a more raw view of people just playing with technology and figuring it out rather than everything having to be perfect. With AI powered project cleanup it will be hard to land back into a phase like this. Feels like everything lands in sort of a…"
+        },
+        {
+          "by": "wernsey",
+          "text": "What a fun scroll. VB6 also brings back a lot of memories for me. I remember using Visual C++6 to learn DirectX8, but didn't know about DLLs, so I rewrote every single C++ function in VB6 to create my level editor. Never went anywhere though. Also: Lexx Solitaire [1] - today's thing I discovered that I didn't know I needed! [1] https://github.com/Planet-Source-Code/erling-andersen-lexx-s..."
+        },
+        {
+          "by": "kbrisso",
+          "text": "VB5 had the hands down best development IDE IMHO. You could rewrite code in debug mode and highlight anything and hit F1 for context help. Creating a client server application using DCOM and watching the client call the server in debug mode was cool. In 1997 a VB5/MS-SQL Server job listed in the paper was my first programming gig."
+        },
+        {
+          "by": "makmanalp",
+          "text": "Learned programming on VB 5/6 by doing drag and drop on windows with controls and copying basic code from a book. I made myself little “homework helper” programs and also “annoyatron” apps to install on friends computers by floppy. Tricks like hiding a window but keeping the program resident or in the system tray occupied my mind. Spent hours at a time trying out various custom controls. Good…"
+        },
+        {
+          "by": "hnlmorg",
+          "text": "I used to love Planet Source Code. I submitted quite a few projects there. They used to have a prize for the highest rated project each month and I won that a few times too. It also helped kick start my development in DirectX. I don’t think I used PSC much after around 2002. By that point I’d migrated to Linux as my primary OS and PSC was largely more a Windows audience back then."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50535885,
+      "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+      "hn": "https://news.ycombinator.com/item?id=50535885",
+      "title": "MAI Code 2 and Code 2 Flash",
+      "time": 1794939913,
+      "points": 188,
+      "depth": [
+        {
+          "text": "Microsoft launched **two coding models**, one for **common enterprise work** and one for **routine high-volume tasks**",
+          "tier": "simple"
+        },
+        {
+          "text": "Across four benchmarks, Microsoft says MAI Code 2 reaches **98% of GPT 6.1 Sol’s performance** at **40% of the cost**. Both models are **available in GitHub Copilot**, though Microsoft says comparisons vary by workload and pricing assumptions.",
+          "tier": "substance",
+          "data": [
+            [
+              "performance vs GPT 6.1 Sol",
+              "98%"
+            ],
+            [
+              "cost vs GPT 6.1 Sol",
+              "40%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some praise the comparisons with leading models; others discount launch benchmarks and question whether the price advantage holds.",
+      "comment_count": 88,
+      "terms": [
+        "benchmark",
+        "API",
+        "token",
+        "repo",
+        "distillation",
+        "RL",
+        "open weights",
+        "Pareto frontier"
+      ],
+      "entities": [
+        "Microsoft",
+        "MAI Code 2",
+        "MAI Code 2 Flash",
+        "GPT 6.1 Sol",
+        "GitHub Copilot"
+      ],
+      "comments": [
+        {
+          "by": "pseudosavant",
+          "text": "I'd hate to be OpenAI and Anthropic. They are better than the rest of the available models currently, but only by a few months. That is a very tenuous lead and doesn't speak to much of a sustainable competitive moat for either company. The have to keep sprinting as fast as possible on the hamster wheel to just stay ahead."
+        },
+        {
+          "by": "nxtfari",
+          "text": "Probably would be a good time to rename it “Mai” (like the name) instead of the corporate “MAI” if they’re gonna be serious players. I don’t think any research has really been done into this, but in my anecdotal usage a coherent persona seems to help the models achieve more. Even Qwen seems to perform better when I talk to it as Qwen instead of generically."
+        },
+        {
+          "by": "origini",
+          "text": "If these benchmarks can hold up in real life, we are seeing again and again an intelligence explosion in front of our eyes and devaluation of intelligence. Anyone has more background how they were able to catch up that fast? Distillation of GPT due to their OpenAI acess to the model might make most sense but they probably are not allowed to do that."
+        },
+        {
+          "by": "GenerWork",
+          "text": "I wish they would've talked more about the visual coding. The fact that the visuals this produces is preferable to 6.1 Sol over 60% of the time is heartening, but I would've loved to see them go against Opus 5.5 which as far as I can tell is the king for UIs at this price point."
+        },
+        {
+          "by": "upbeat_general",
+          "text": "I really hope they keep writing technical reports even as their models get better. MAI-Thinking-1 is far more in depth than anything else recent I could find, and very valuable to those outside the labs."
+        }
+      ],
+      "image": "https://microsoft.ai/wp-content/uploads/2026/11/MAI-Code-2-WithHeader-16x9-1.jpg"
+    },
+    {
+      "id": 50531751,
+      "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
+      "hn": "https://news.ycombinator.com/item?id=50531751",
+      "title": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
+      "time": 1794925199,
+      "points": 177,
+      "depth": [
+        {
+          "text": "Baidu and Xiaomi CEOs warn the gap between **AI hype** and **returns** is growing",
+          "tier": "simple"
+        },
+        {
+          "text": "Some commenters say **CEO promises run ahead** of the tools; others blame slow workplace adoption or say AI’s personal benefits **don’t translate into profit**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some doubt AI’s promised payoff; others say the tools already help, with workplace rollout taking time.",
+      "comment_count": 231,
+      "terms": [
+        "vibecoding",
+        "QA",
+        "domain knowledge",
+        "hyperscaler"
+      ],
+      "entities": [
+        "Baidu",
+        "Xiaomi",
+        "Anthropic",
+        "OpenAI",
+        "Iridium",
+        "Samsung",
+        "Android",
+        "GTA",
+        "MSFT",
+        "Hacker News"
+      ],
+      "comments": [
+        {
+          "by": "jnwatson",
+          "text": "Given the Hacker News bias towards tech, it is easy to focus on just the challenges of exploiting AI for software development. The problem is, to justify the substantial investment in data centers and the eye-watering valuations of Anthropic and OpenAI, AI has to successfully reach into essentially every niche of the economy. It can't just be a tool to code faster. It must make most jobs faster…"
+        },
+        {
+          "by": "tyleo",
+          "text": "The tools are good and even getting better but the gap is real. If the tools made people 2x faster AI CEOs would say 5x faster, if they made people 5x faster they’d say 10x faster. I feel like expectations of a gap should be built in."
+        },
+        {
+          "by": "SecretDreams",
+          "text": "The tools are good, but the ideas are not. These tools basically see many people building the same things independently, rapidly, and over and over again. I'm not seeing a lot of unique applications. I am seeing some optimization, plenty of rehashing the same crap. Lots of thought outsourcing. Honestly, I'm mixed as someone who also uses these tools. Is it really efficient for 100s of people to…"
+        },
+        {
+          "by": "origini",
+          "text": "The industry is just busy overall with day to day work and it just takes ages to implement things. Which also means that it is slow in adoption not because the quality is not here but because you need to do things first. You need an env to run an agent, you need connectors, you need to get that stuff through security etc. The only question is timeline not investment or bubble because AI as is…"
+        },
+        {
+          "by": "jrflo",
+          "text": "China seems to always have viewed AI as \"normal technology\". Maybe they know that they're falling behind and won't hit RSI like Anthropic thinks they will, or don't think that it's possible at all. Also notable that Baidu/Xiaomi don't have any frontier models, so it's a bit like Samsung commenting on the AI race"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50534631,
+      "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
+      "hn": "https://news.ycombinator.com/item?id=50534631",
+      "title": "Nvidia stopped disclosing Singapore sales as revenues hit $104B",
+      "time": 1794935526,
+      "points": 198,
+      "depth": [
+        {
+          "text": "Nvidia stopped **disclosing Singapore sales** as a **$104B** revenue figure sparked questions about where chips went",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter says **$104B** was external revenue booked by Nvidia’s Singapore subsidiary in 2025, while estimating Singapore end-customer sales at about $19B. Another points to a switch from billing location to customer headquarters in the filings.",
+          "tier": "substance",
+          "data": [
+            [
+              "Singapore subsidiary revenue",
+              "$104bn"
+            ],
+            [
+              "Increase in 12 months",
+              "72 per cent"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say the reporting change says little about where chips ended up; others suspect Singapore was used to route chips to China.",
+      "comment_count": 109,
+      "terms": [
+        "subsidiary",
+        "OEM/ODM",
+        "hyperscaler",
+        "export controls",
+        "customer billing location"
+      ],
+      "entities": [
+        "Nvidia",
+        "Wistron",
+        "Foxconn",
+        "Asus",
+        "Lenovo",
+        "Megaspeed",
+        "Jensen Huang",
+        "Bessent",
+        "FT",
+        "WSJ",
+        "Sir Humphrey Appleby",
+        "James Hacker"
+      ],
+      "comments": [
+        {
+          "by": "Pwntastic",
+          "text": "https://wallhop.io/https://www.ft.com/content/dbde7a30-548c-..."
+        },
+        {
+          "by": "tamarind44",
+          "text": "There's a major misunderstanding of what this article is saying going on here, and to be fair the article doesn't explain it very well. The 104B number is the external revenue of NVIDIA's Singaporean subsidiary in 2025. This includes any orders for GPU chips that happen to get routed through the Singapore entity. For those unaware, end customers generally don't buy anything from NVIDIA. Customers…"
+        },
+        {
+          "by": "alangibson",
+          "text": "Half of their revenue was booked through Singapore? I suspected that Jensen was fired for helping evade sanctions, but now I'm sure. I dont believe the board fired the founder and only CEO they ever had over a series of affairs. They fired him because one of the affairs was with a lady pretty clearly helping import chips from Singapore to China."
+        },
+        {
+          "by": "steveBK123",
+          "text": "The EDGAR filings at least are interesting re: switching how quarterly revenue was reported in a way that makes Singapore disappear. Last (July 2025) 10Q where Singapore is called out under \"Geographic Revenue based upon Customer Billing Location\" where they showed $10B in a quarter -\nhttps://www.sec.gov/ix?doc=/Archives/edgar/data/0001045810/0... Previous 10Q showed the same breakdown, however…"
+        },
+        {
+          "by": "legitster",
+          "text": "This is not as interesting as it is being made to seem. The only reason this is being reported on is because it was a public announcement in a previous investor report, and people are rifling for anything connecting to Megaspeed. This is an accounting question of how their revenue is attributed. It means nothing about where the revenue is generated or where the chips end up or to which subsidiary…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50512779,
+      "url": "https://nimony.org/",
+      "hn": "https://news.ycombinator.com/item?id=50512779",
+      "title": "Nimony: A New Compiler for Nim",
+      "time": 1794791122,
+      "points": 171,
+      "depth": [
+        {
+          "text": "someone built a **new compiler** for Nim, bringing **borrow checking** and **sum types**",
+          "tier": "simple"
+        },
+        {
+          "text": "Nimony is the home of Nim 3, with **native code generation** for x86_64, ARM64, ARM32, AVR and RISC-V. The same code base compiles to C, native code, JavaScript and WebAssembly, and an index that is provably out of range can trigger a **compile-time error**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 91,
+      "terms": [
+        "borrow checking",
+        "sum types",
+        "incremental builds",
+        "NIF",
+        "native code"
+      ],
+      "entities": [
+        "Nimony",
+        "Nim",
+        "Nim 3",
+        "Andreas Rumpf",
+        "Araq",
+        "LLVM",
+        "GCC",
+        "C",
+        "JavaScript",
+        "WebAssembly",
+        "Apple",
+        "Haxe",
+        "Rust",
+        "Python",
+        "Vulkan"
+      ],
+      "comments": [
+        {
+          "by": "stakhanov",
+          "text": "When I was doing the rounds roughly 10 years ago, trying to find a new programming language to learn, my money for \"next big thing\" landed on nim. I did some personal projects and absolutely loved it but, unfortunately, opportunities to work \"on the clock\" in nim never materialised and then rust started eating the world. Thanks, Andreas Rumpf, for sticking with it for all these years: This seems…"
+        },
+        {
+          "by": "afavour",
+          "text": "I’m curious if this closes the door on Nim’s capability to output C code which you then compile yourself. I first discovered Nim when I was looking for something that could work with Apple’s requirements to embed bitcode in iOS apps, it meant you had to use their specific version of LLVM and that ruled out a lot of languages. It always seemed like a really unique feature (though IIRC Haxe has…"
+        },
+        {
+          "by": "Symmetry",
+          "text": "> Nimony is case sensitive like most other modern programming languages. The reason for this is implementation simplicity. This might also be changed in the future. I've never been too annoyed by Nim's approach but I think this removes a complaint many people have."
+        },
+        {
+          "by": "girvo",
+          "text": "It’s super exciting. It’s basically adding all the features I wished Nim had, and I’ve been using Nim in anger since the v0.10 days!"
+        },
+        {
+          "by": "polotics",
+          "text": "This is great! Congrats to the Nim team for keeping the pedal to the metal! Sum-types, borrow-checking... Nim 3 is beautiful."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50531761,
+      "url": "https://actsofvolition.com/2026/11/loopholes-are-for-assholes/",
+      "hn": "https://news.ycombinator.com/item?id=50531761",
+      "title": "Loopholes Are for Assholes",
+      "time": 1794925232,
+      "points": 164,
+      "depth": [
+        {
+          "text": "someone says **parking wherever you like** isn't clever if everyone else has to **follow the rules**",
+          "tier": "simple"
+        },
+        {
+          "text": "**Garrity’s test** is to ask what would happen if everyone acted the same way; he applies it to parking in front of Walmart’s doors. Commenters split: some say **consistent loophole use** makes you an asshole, while others say loopholes can expose **badly designed rules**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say making loopholes a lifestyle makes you an asshole; others say a loophole can expose a badly designed or arbitrary rule.",
+      "comment_count": 198,
+      "terms": [
+        "categorical imperative",
+        "loophole",
+        "social slack",
+        "slippery slope",
+        "tragedy of the commons"
+      ],
+      "entities": [
+        "Acts of Volition",
+        "Steven Garrity",
+        "Kant",
+        "Walmart",
+        "Trader Joe’s",
+        "Jensen",
+        "Tim Ferriss",
+        "The 4-Hour Workweek",
+        "Hank Green",
+        "NASCAR"
+      ],
+      "comments": [
+        {
+          "by": "vehemenz",
+          "text": "The example cited--parking in a no-parking zone--isn't an example of a loophole. A loophole is usually understood as an act that honors that letter of the law but violates the spirit of the law."
+        },
+        {
+          "by": "JumpCrisscross",
+          "text": "Consistently using loopholes makes you an asshole. Loopholes are social slack. You can speed to the hospital, usually, in an emergency. If you’re running late to pick up your kid, sure, double park or streetside with hazards. But if you turn this into a lifestyle, you’re broken. (Every person tweeting with religious zeal for Jensen falls into that camp.)"
+        },
+        {
+          "by": "fwlr",
+          "text": "When applying the categorical imperative (“what if everyone acted in accordance with this belief?”) I have found it useful to look at it game-theoretically (is everyone acting this way a stable equilibrium? where does the equilibrium end up?) and also examine the counterfactual causal consistency (if everyone had been acting this way previously, would we have arrived at the current scenario? when…"
+        },
+        {
+          "by": "fantasizr",
+          "text": "This reads as American-coded to me, who insist \"Only god can judge me\" compared to Japan: \"The average Japanese fears not the judgment of an omniscient God, but the judgment of his or her fellow Japanese.\""
+        },
+        {
+          "by": "bloomingeek",
+          "text": "Tailgaters, excessive speeders, buzzed/reckless drivers, drivers who don't care about putting others in harm's way (NASCAR wannabes), non-friendly drivers, texting/reading cellphone drivers, drivers who won't get out of the fast-lane... I'm betting most don't think they're assholes, even if they cause a wreck. Nobodies perfect, but practicing decency is a virtue."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50523291,
+      "url": "https://ben3d.ca/blog/building-the-aaa-lighting-pipeline-in-threejs",
+      "hn": "https://news.ycombinator.com/item?id=50523291",
+      "title": "My Quest to push native Three.js quality match AAA Game Engines",
+      "time": 1794863263,
+      "points": 159,
+      "depth": [
+        {
+          "text": "someone mapped the **missing pieces** for **game-like lighting** in browser graphics, from reflections to upscaling",
+          "tier": "simple"
+        },
+        {
+          "text": "The article compares each stage of an **indoor-lighting pipeline** with what Three.js has, what’s in review and what still needs building. Its biggest gaps include **Hi-Z tracing and coverage** for reflections and a way to **plug indirect lighting into materials**. For three SSR examples, the Hi-Z trace times are 2.9 ms, 9.2 ms and 5.2 ms.",
+          "tier": "substance",
+          "data": [
+            [
+              "ssr_mirror Hi-Z trace time",
+              "2.9 ms"
+            ],
+            [
+              "ssr_stochastic Hi-Z trace time",
+              "9.2 ms"
+            ],
+            [
+              "ssr_animation Hi-Z trace time",
+              "5.2 ms"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: critics call it AI slop and say they won’t read it; defenders say it’s informative and worth sharing, even if AI helped.",
+      "comment_count": 77,
+      "terms": [
+        "G-buffer",
+        "Hi-Z",
+        "SSR",
+        "SSGI",
+        "BRDF"
+      ],
+      "entities": [
+        "Three.js",
+        "WebGPU",
+        "Ben Houston",
+        "Michael Herzog",
+        "mrdoob",
+        "Unreal",
+        "Claude"
+      ],
+      "comments": [
+        {
+          "by": "oooyay",
+          "text": "This was written by AI as other comments suggest but I still found it pretty informative. I have a side project that I use three.js on where I ended up having to play with lighting and reflection settings, so this write up was relevant enough for me to understand what the AI was talking about. If anyone is interested: https://portland.ooo-yay.com"
+        },
+        {
+          "by": "greggman65",
+          "text": "The question is why? LLMs will write this stuff without three.js just fine. See 4 examples I posted yesterday: https://news.ycombinator.com/item?id=50514583 Without three.js the LLMs are more free to write whatever is appropriate for the specific project, instead of having to work around three.js:s architectural decisions when they don't match the thing being made. They further don't need any of…"
+        },
+        {
+          "by": "matthova",
+          "text": "This is really cool and I learned a lot about it. My only question is with all of that information that you have and given that threejs works so well in browsers why not include some interactive examples in the browser? I kept scrolling through looking for the payoff and didn’t find it, lol, all the same, I appreciate the technical details and the effort behind that."
+        },
+        {
+          "by": "neomantra",
+          "text": "Why the haters? Somebody explored a topic deeply and shared the knowledge. They had LLMs help them, probably on both fronts. Would some AI tag have helped? The prose doesn't seem sloppy or too dense. For me, I'm so used to reading AI tone/density now, it's fine. If I was looking for some deep heartfelt sentiment on Three.js and the community, then maybe then pure human authorship would be…"
+        },
+        {
+          "by": "dead_hn_theory",
+          "text": "Ben! Nice to see you on here. Neat article. My one comment in all of this is that so much of what makes AAA games and game engines is in the application of much more than just graphics themselves (and very often the graphics of AAA games are \"understood\" by the time they come out as to be technically uninteresting). And then there is all the texture work and dramatization done by the art…"
+        }
+      ],
+      "image": "https://ben3d.ca/api/images?slug=building-the-aaa-lighting-pipeline-in-threejs&imageName=frame-pipeline.svg&hash=700e6835587f35f543069acee0d3a86b93f8ca69f2670e4c61efb8a5cd6628a6"
+    },
+    {
+      "id": 50532385,
+      "url": "https://alloyhtml.com/example.html",
+      "hn": "https://news.ycombinator.com/item?id=50532385",
+      "title": "Show HN: Alloy CSS, dialogs, menus and tabs that work with JavaScript off",
+      "time": 1794928029,
+      "points": 155,
+      "depth": [
+        {
+          "text": "someone made an invoicing page where **menus, tabs, and dialogs** still work with **JavaScript off**",
+          "tier": "simple"
+        },
+        {
+          "text": "The demo is a **single HTML file** with no script, and its creator says the kit uses browser features like **popover** and **:has()** for interactions. It’s **about 24 KB gzipped**; dialogs need Chrome 135, Firefox 144, or Safari 26.2.",
+          "tier": "substance",
+          "data": [
+            [
+              "compressed size",
+              "about 24 KB gzipped"
+            ],
+            [
+              "Chrome version for dialogs",
+              "135"
+            ],
+            [
+              "Firefox version for dialogs",
+              "144"
+            ],
+            [
+              "Safari version for dialogs",
+              "26.2"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: JS-free fans say it can make sites more stable and content-focused; critics say removing JS can hurt accessibility or leave a mess of hacks.",
+      "comment_count": 26,
+      "terms": [
+        "CSS",
+        "HTML",
+        "JavaScript",
+        "popover",
+        "CSP",
+        "progressive enhancement",
+        "server-rendered",
+        "V8-isolates",
+        "gzipped"
+      ],
+      "entities": [
+        "Alloy CSS",
+        "Ledger",
+        "Fandy",
+        "Claude",
+        "Pico",
+        "Chrome",
+        "Firefox",
+        "Safari",
+        "jsDelivr",
+        "npm",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Tailwind",
+        "Gemini",
+        "V8",
+        "Okafor Legal",
+        "Brightline Studio",
+        "Harbor & Pine",
+        "Tidewater Coffee",
+        "Lumen Architects"
+      ],
+      "comments": [
+        {
+          "by": "kyledrake",
+          "text": "If I was working on web standards, I would focus on trying to make the browser able to do as much as possible without JavaScript. Having to use JS to post a form dynamically for example is extremely overkill and a security problem. If we could avoid it more often, we could use CSP headers and disable it on a lot more security critical sites. If doing accessibility is a problem without JS, well…"
+        },
+        {
+          "by": "skrtskrt",
+          "text": "Making a standard horizontal nav menu that can also collapse to a toggle-able mobile side menu is one of those things that just exposes how CSS is truly the most tedious, horribly-designed thing in the history of computing. I started trying to learn how to do this by following tutorials and a copying a lot of big websites that had visually attractive designs and in the end every single one is…"
+        },
+        {
+          "by": "edoceo",
+          "text": "The classes are many and use common names that would conflict with existing style making this tedious to add into existing, but for green field I might give it a try. Maybe your css builder lets me prefix?"
+        },
+        {
+          "by": "momojo",
+          "text": "I literally just ran into an issue where I made a sandbox a little too restrictive and claude couldn't pull down a javascript runtime in order to complete its little unittests. Now I'm wondering how much time Claude has spent spinning up V8-isolates for mostly static frontends that i just didn't know about."
+        },
+        {
+          "by": "metalliqaz",
+          "text": "I really like the idea of minimalism and doing as much as possible without js. I love the look and feel of sites that do what they need without client side programming. Maybe I'm just old fashioned but it seems more permanent, more stable, more content oriented, more useful"
+        }
+      ],
+      "image": null
+    },
+    {
       "id": 50522980,
       "url": "https://www.cs.cmu.edu/learn/",
       "hn": "https://news.ycombinator.com/item?id=50522980",
@@ -652,6 +1944,88 @@
     }
   ],
   "glossary": {
+    "standard deviation": "A yardstick for how spread out results are, used to compare score differences on a common scale.",
+    "pre-trends": "Changes happening before a policy starts; different earlier patterns can make it harder to tell what the policy changed.",
+    "diff-in-diff": "A way of comparing how two groups change over time to estimate whether a policy made a difference.",
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "Goodhart's Law": "The idea that once a measurement becomes a goal, people may optimize for the score instead of what it was meant to measure.",
+    "Pareto frontier": "A set of choices where you can't get better on one measure without giving something up on another.",
+    "chain of thought (CoT)": "The steps an AI appears to use to reach an answer, which people may try to inspect or monitor.",
+    "cloud service": "A feature you use over the internet that runs on computers managed by someone else.",
+    "DAV": "Distributed Authoring and Versioning: a way for apps to access and update information stored by another service.",
+    "self-host": "Run a service on computers you manage yourself.",
+    "AWS": "Amazon Web Services: a collection of cloud services run by Amazon.",
+    "open source": "Software whose code is shared so other people can inspect, run, or change it.",
+    "vibecoding": "Using AI to make software from requests instead of writing each line yourself.",
+    "maintainer": "Someone who keeps a software project working and up to date.",
+    "pull request": "A proposal to add your code changes to a shared project, usually asking others to review them first.",
+    "warm cache": "Information saved from an earlier run, so a later run can skip some work.",
+    "Baader–Meinhof phenomenon": "The feeling that something you just learned about suddenly seems to turn up everywhere.",
+    "RCE": "Remote Code Execution: a flaw that lets an attacker make a computer run their commands from somewhere else.",
+    "harness": "The surrounding code that gives an AI agent tools and a place to work, and checks what it does.",
+    "pass rate": "The share of tested tasks that meet the success checks.",
+    "cost per pass": "The average spend per task divided by the share of tasks that pass; it estimates the cost of getting a passing result.",
+    "tokens": "Small pieces of text an AI counts as it reads or writes; they can affect how much a request costs.",
+    "gamma": "A curve that changes how a pixel’s number maps to the brightness you see.",
+    "linear color": "A way of representing light where doubling a number means doubling the light.",
+    "bits per channel": "How many different steps each color can take; fewer steps can make shades look banded.",
+    "signal voltage": "The strength of the electrical signal a card sends to a screen, which can affect how bright the picture looks.",
+    "sRGB": "Standard Red Green Blue: a common set of rules for representing screen colors.",
+    "coaxial cable": "A wire like the one used for cable TV that can carry internet into a home.",
+    "fiber-to-the-home": "An internet connection where fiber-optic cable runs all the way to the home.",
+    "HFC": "Hybrid fiber-coaxial: a network that uses fiber for part of the route, then cable-TV wire to reach a home.",
+    "DOCSIS": "Data Over Cable Service Interface Specification: a set of rules for delivering internet over cable-TV lines.",
+    "symmetrical speeds": "Upload and download speeds that are the same.",
+    "Full Disk Access": "A Mac permission that lets an app reach files it would otherwise be blocked from opening.",
+    "System & App Protection Override": "A Mac permission that can let an app bypass protections and fully control the Mac and its apps.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "read-only access": "Permission to look at files without changing or deleting them.",
+    "secops": "Short for security operations: the work of protecting computer systems from attacks.",
+    "agent": "An AI system that can take steps and use tools to get a task done, not just answer questions.",
+    "end-to-end test": "A test that runs a whole feature the way someone would use it, rather than checking one small piece.",
+    "property test": "A test that tries lots of inputs to see whether a rule you expect to always hold can be broken.",
+    "differential test": "A test that gives the same input to an old and a new system and checks whether their results differ.",
+    "verification loop": "A cycle where an agent runs checks, sees what failed, and uses the results to improve its work.",
+    "flaky test": "A test that sometimes passes and sometimes fails even when the code has not changed.",
+    "Visual Basic": "A programming language people used to make Windows programs with code and on-screen controls.",
+    "DirectX": "Tools developers use to add graphics, sound, and other features to Windows games.",
+    "IDE": "Integrated Development Environment: an app that brings coding and other development tools together.",
+    "token": "A chunk of text an AI reads or writes, often a whole word or part of one.",
+    "repo": "A project's stored files, often kept with a record of changes.",
+    "distillation": "Training a smaller AI to imitate the answers of a larger one.",
+    "RL": "Reinforcement Learning: a way to teach an AI by rewarding actions that get the desired result.",
+    "open weights": "The model's learned settings are available for people to download and run themselves.",
+    "QA": "Quality assurance: checking that software works as expected before people rely on it.",
+    "domain knowledge": "Knowing a field well enough to tell what a useful tool should do.",
+    "hyperscaler": "A company that rents servers and computing power at huge scale.",
+    "subsidiary": "A company owned or controlled by a larger company.",
+    "OEM/ODM": "Original Equipment Manufacturer / Original Design Manufacturer: companies that make or design products for another company to sell.",
+    "export controls": "Rules that limit where a company can sell certain goods, often for security reasons.",
+    "customer billing location": "The address used for a customer's bill; it can differ from where the customer is based.",
+    "borrow checking": "A rule that stops a program from changing data while another part is still using it.",
+    "sum types": "A way to describe a value that can be one of several named options, each with its own fields.",
+    "incremental builds": "Builds that redo only the parts affected by a change, so edits can be checked sooner.",
+    "NIF": "A shared format that lets each part of the compiler pass its output along, so people can inspect or change each step.",
+    "native code": "Code compiled into instructions a computer can run directly.",
+    "categorical imperative": "A way to test a rule by asking what would happen if everyone followed it.",
+    "loophole": "A way around a rule that follows its exact wording but goes against what the rule is meant to do.",
+    "social slack": "The little bit of leeway people give each other for occasional exceptions.",
+    "slippery slope": "The argument that allowing one step will lead to a chain of worse steps.",
+    "tragedy of the commons": "What can happen when people overuse something shared, leaving less for everyone.",
+    "G-buffer": "A set of per-pixel scene details, like depth and surface direction, that lighting effects use.",
+    "Hi-Z": "A way to find surfaces by checking large areas of a depth image first, then smaller areas near a surface.",
+    "SSR": "Screen-Space Reflections: Reflections calculated from what the current camera image can see.",
+    "SSGI": "Screen-Space Global Illumination: An estimate of bounced light made from the scene visible to the camera.",
+    "BRDF": "Bidirectional Reflectance Distribution Function: A description of how a material reflects light from different directions.",
+    "CSS": "Cascading Style Sheets: rules that control how a web page looks.",
+    "HTML": "HyperText Markup Language: code that tells a browser what content a web page has.",
+    "JavaScript": "A programming language; here, it lets an agent combine tool calls.",
+    "popover": "A browser feature for showing a small panel, like a menu, over a page.",
+    "CSP": "Content Security Policy: rules a site gives a browser about which scripts and connections to allow.",
+    "progressive enhancement": "Building a website so its basic parts work first, then adding extras for browsers that can handle them.",
+    "server-rendered": "When a website sends a page already put together, instead of building it in your browser.",
+    "V8-isolates": "Separate, restricted environments for running JavaScript, keeping one task apart from another.",
+    "gzipped": "Compressed in a way that makes a file smaller to send or store.",
     "courseware": "Online lessons and activities for taking a class, beyond just watching lectures.",
     "ETW": "Event Tracing for Windows: a Windows system that carries reports about what software is doing.",
     "bitset": "A compact row of yes-or-no bits used to test whether a value belongs to a set.",
@@ -663,7 +2037,6 @@
     "Project JavaScript": "A place in an Optimizely project where a customer can add code that runs on their pages.",
     "CDN": "Content Delivery Network: A network of servers that helps websites handle requests closer to their users.",
     "card skimming": "Secretly capturing card details entered on a website and sending them to an attacker.",
-    "CSP": "Content Security Policy: rules a site gives a browser about which scripts and connections to allow.",
     "Subresource Integrity": "A browser check that makes sure a downloaded script has not been changed.",
     "exploit kit": "A package of code attackers can use to try exploiting a weakness.",
     "sum type": "A kind of value that can be one of several distinct options, with each option able to carry its own details.",
@@ -693,7 +2066,6 @@
     "Bézier curve": "A smooth bend made by setting points that guide its shape.",
     "curvature": "How sharply a line or curve bends at a point.",
     "gauge": "In this article, a measurement based on where the curve crosses the midpoint of a quadrant.",
-    "G2 continuity": "A way of joining curve sections so their direction and how sharply they bend both change smoothly at the join.",
-    "CSS": "Cascading Style Sheets: rules that control how a web page looks."
+    "G2 continuity": "A way of joining curve sections so their direction and how sharply they bend both change smoothly at the join."
   }
 }
