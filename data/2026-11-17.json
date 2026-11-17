@@ -1,0 +1,699 @@
+{
+  "date": "2026-11-17",
+  "cards": [
+    {
+      "id": 50522980,
+      "url": "https://www.cs.cmu.edu/learn/",
+      "hn": "https://news.ycombinator.com/item?id=50522980",
+      "title": "Carnegie Mellon is putting computer science courses on YouTube for free",
+      "time": 1794861816,
+      "points": 1366,
+      "depth": [
+        {
+          "text": "Carnegie Mellon is putting **full computer science lectures** on YouTube for **free**",
+          "tier": "simple"
+        },
+        {
+          "text": "**CS Learn** launched today, releasing full semesters of current CMU computer science courses across a variety of topics, with **one course premiering each day this week**. **Free courseware** is coming next.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 190,
+      "terms": [
+        "courseware"
+      ],
+      "entities": [
+        "Carnegie Mellon",
+        "CS Learn",
+        "YouTube",
+        "Mor Harchol-Balter",
+        "Weina Wang",
+        "Feras Saad",
+        "ScottyLabs",
+        "Kenneth C. Griffin School of Computer Science"
+      ],
+      "comments": [
+        {
+          "by": "pcompeau",
+          "text": "Hi! I'm Phillip Compeau, I teach in Carnegie Mellon's Griffin School of Computer Science, and I run CS Learn, which launched today. We're releasing full semesters of lectures from current CMU computer science courses across a variety of topics, with one course premiering each day this week. More courses come in January. Yes, MIT got here 25 years ago :). What I'm excited about is how we're doing…"
+        },
+        {
+          "by": "JSR_FDED",
+          "text": "To those asking why this is still valuable in the age of AI? If you learn the fundamentals properly, then AI will be a power tool for you. If you don’t, then it will replace you. I don’t mean this in an aggressive “you better get used to it” sense, I realize there’s nuance - but this is the version that fits on a T-shirt."
+        },
+        {
+          "by": "fwx",
+          "text": "CMU Alum here. Really glad to see Tianqi Chen's ML Systems being offered up. I had just started working through their book https://mlc.ai/modern-gpu-programming-for-mlsys/ so it should complement nicely. Are requests for courses being accepted? :) If yes, may I humbly request Larry Wasserman's Intermediate Statistics, Dave Andersen's Distributed Systems and Dave Eckhardt's Operating Systems (or…"
+        },
+        {
+          "by": "dhashe",
+          "text": "Very excited to see that 15-259 Probability and Computing will be available soon. That was one of my favorite classes at CMU during my undergrad."
+        },
+        {
+          "by": "ecshafer",
+          "text": "I see that courseware is coming next, that's really important. Lectures are nice, but without the projects and some kind of way to get feedback on it, lectures can fall flat a bit. Videos, lecture slides/notes, projects are needed. Another thing that happens a lot with these is the CS1 gets posted, but not the graduate compilers course, which can be annoying."
+        }
+      ],
+      "image": "https://www.cs.cmu.edu/site-images/gates_web.jpg"
+    },
+    {
+      "id": 50524736,
+      "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+      "hn": "https://news.ycombinator.com/item?id=50524736",
+      "title": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
+      "time": 1794869900,
+      "points": 550,
+      "depth": [
+        {
+          "text": "Windows can **report** which **coding agents and developer tools** you’ve used if optional diagnostics are on",
+          "tier": "simple"
+        },
+        {
+          "text": "Reverse engineering **MissionControlAggregator.dll** showed it turns tool-use categories into **bitsets** and emits a report named Segments.SubCohorts. In the tested US setup, **optional diagnostic data** was enabled by default and the report appeared in DiagTrack’s upload queue; the public ISO baseline had the feature disabled.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: Windows critics see the collection as another reason to switch; others call it routine diagnostics, with one commenter hoping it helps Microsoft prioritize features.",
+      "comment_count": 386,
+      "terms": [
+        "ETW",
+        "bitset",
+        "DiagTrack",
+        "WSL"
+      ],
+      "entities": [
+        "Windows 11",
+        "Microsoft",
+        "MissionControlAggregator.dll",
+        "DiagTrack",
+        "ETW",
+        "Segments.SubCohorts",
+        "WSL"
+      ],
+      "comments": [
+        {
+          "by": "s_dev",
+          "text": "Just as AI has advanced massively in the past two years, I think a lot of gamers would be shocked at how viable Linux is as a genuine gaming platform in 2026. I already have plans to switch from Windows to Linux, I even have Linux running from an external drive to play with it. The vast vast majority of single player games are 100% perfect on Linux. Multiplayer still has lots of hiccups."
+        },
+        {
+          "by": "ashton314",
+          "text": "I've been a heavy macOS user for dev work since early adolescence. Before that I used FreeBSD, so I'm comfortable with the command line. (Yes, you read that right.) But it's been a while since I used anything other than macOS for serious development work. A lot of the shenanigans around macOS Tahoe made me seriously consider switching to Linux. Last month I finally got the gumption and set up a…"
+        },
+        {
+          "by": "dead_hn_theory",
+          "text": "For anyone on the fence about switching from Windows to Linux: it takes about a week, if that, of adjusting. If most of what you do is on the Web already (and the services you use provide a Web-based client), you have nothing to lose but your chains. Take your pick - Ubuntu, Fedora, someone else mentioned Mint. All fine choices, no wrong answers."
+        },
+        {
+          "by": "dannyw",
+          "text": "So does Intel, AMD, and NVIDIA drivers; they collect what executable name and paths you run; unless you opt out. Most Chrome configs end up persisting full browser history and clickstreams inside a Google account. If you use Debian and opt-in to popularity contest; it may collect and send similar info depending on how you installed these coding agents."
+        },
+        {
+          "by": "darksim905",
+          "text": "Why is this 'news', or rather, voted up so highly? Everyone knows Microsoft collects an insane amount of telemetry. ETW isn't even that big of a deal. This ability is more for system administrators and enterprises to track tooling and diagnostic usage. It's interesting to see this telemetry is sent to Microsoft but in light of their Surface RTX and the Windows 11 developer mode, this should be…"
+        }
+      ],
+      "image": "https://xusheng.dev/posts/windows-coding-agent-telemetry/agent-names.jpeg"
+    },
+    {
+      "id": 50523601,
+      "url": "https://www.bugmenot.com/",
+      "hn": "https://news.ycombinator.com/item?id=50523601",
+      "title": "BugMeNot has closed",
+      "time": 1794864737,
+      "points": 500,
+      "depth": [
+        {
+          "text": "BugMeNot has **closed**, ending a handy way to **share logins** for websites",
+          "tier": "simple"
+        },
+        {
+          "text": "People used it for sites that required a login to **read articles or download files**; one commenter still used it monthly for electronics datasheets, spice models and footprints. One commenter says Bevan and Guy founded it, then used its sharing-friendly **UX** to launch **RetailMeNot**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say BugMeNot was a useful regular tool; others say they could rarely find a working login.",
+      "comment_count": 223,
+      "terms": [
+        "UX",
+        "PageRank",
+        "affiliate programs"
+      ],
+      "entities": [
+        "BugMeNot",
+        "Bevan",
+        "Guy",
+        "RetailMeNot",
+        "WhaleShark Media",
+        "Google Ventures",
+        "Google",
+        "Wikipedia",
+        "DuckDuckGo",
+        "Yopmail",
+        "login2.me",
+        "Docker",
+        "VMware",
+        "Reddit"
+      ],
+      "comments": [
+        {
+          "by": "a5seo",
+          "text": "Bevan and Guy founded that site and realized that the UX was perfect for sharing coupons and launched RetailMeNot.com from it, leveraging BMN’s crazy high PageRank to propel RMN to the top of Google. Not to mention the ease of use and social aspects way ahead of its time. They were able to join a handful of retailer affiliate programs and were probably clearing tens of millions a year in…"
+        },
+        {
+          "by": "randomblock1",
+          "text": "Not much info on this page, so here's the Wikipedia if you don't know what BugMeNot is (er, was): https://en.wikipedia.org/wiki/BugMeNot"
+        },
+        {
+          "by": "Alive-in-2025",
+          "text": "There are a fair number of \"temporary or hidden email\" systems that can replace this. It's just the convenience factor of not having to create another stupid temp email just to log into a website for 5 minutes. Then do you save the password you had to create or create another account later. 1. Search for \"temporary email\", there are zillions of these. Some services detect that they are special…"
+        },
+        {
+          "by": "Legend2440",
+          "text": "I think websites started cracking down on this, possibly because the logins were abused by bad actors. When I first used it years and years ago, it was great. But in the last five years not a single login worked. This kind of thing can't really last."
+        },
+        {
+          "by": "johsole",
+          "text": "I remember using this website for various things a long time ago. It was very useful."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50524767,
+      "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
+      "hn": "https://news.ycombinator.com/item?id=50524767",
+      "title": "Optimizely compromised, served malware on Zoom, GitLab",
+      "time": 1794870034,
+      "points": 300,
+      "depth": [
+        {
+          "text": "someone slipped **malware** into a trusted website-testing service, **swapping crypto addresses** and grabbing visitors’ **card details**",
+          "tier": "simple"
+        },
+        {
+          "text": "The attacker added code to customers’ **Project JavaScript**, while the snippets still came from **Optimizely’s trusted CDN**. It hit **178 organisations**, swapping crypto addresses, skimming card details and stealing cookies and screenshots; iPhones and iPads also got Coruna and DarkSword exploit kits.",
+          "tier": "substance",
+          "data": [
+            [
+              "infected organisations",
+              "178"
+            ],
+            [
+              "infected snippets",
+              "188"
+            ],
+            [
+              "crypto received by attackers",
+              "about $7,040"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some want stronger safeguards at Optimizely and the affected sites; another says the cause may have been customer-password compromise rather than a compromised Optimizely system.",
+      "comment_count": 129,
+      "terms": [
+        "Project JavaScript",
+        "CDN",
+        "card skimming",
+        "CSP",
+        "Subresource Integrity",
+        "exploit kit"
+      ],
+      "entities": [
+        "Optimizely",
+        "Zoom",
+        "GitLab",
+        "Report URI",
+        "Coruna",
+        "DarkSword",
+        "BBC",
+        "CNN"
+      ],
+      "comments": [
+        {
+          "by": "stickfigure",
+          "text": "The whole concept of Google Tag Manager was that you could give marketing departments the ability to add \"tags\" to the website without having to involve engineering. That's how we got 10MB of javascript with every news article. I hope folks are re-evaluating that now."
+        },
+        {
+          "by": "mcoliver",
+          "text": "This stuff is so avoidable but unless we implement meaningful reprocussions things aren't going to change. There is no accountability. In this case optimizely should have had better systems to spot a release like this (internal cool downs, check and balances, phased rolouts, automatic security checks). And sites that have massive user bases (cnn, bbc, etc..) have zero excuse to not have the same…"
+        },
+        {
+          "by": "jdorfman",
+          "text": "Subresource Integrity has been available for over a decade. It’s time to start implementing it with these services."
+        },
+        {
+          "by": "skybrian",
+          "text": "There's a missing step in the explanation. Do major websites like CNN and BBC handle cryptocurrency or credit cards on the same website? Why? Or is there also a browser security bug?"
+        },
+        {
+          "by": "thought-gap",
+          "text": "This is exactly the kind of use case for NoScript - reduce exposure to potentially malicious content."
+        }
+      ],
+      "image": "https://storage.ghost.io/c/2d/aa/2daa4f7f-a71b-47d2-a54c-06b8c60222ef/content/images/size/w1200/2026/11/Cybersecurity-Alert_-Malicious-Code-Injection.png"
+    },
+    {
+      "id": 50522563,
+      "url": "https://blog.startifact.com/posts/how-rust-changed-me/",
+      "hn": "https://news.ycombinator.com/item?id=50522563",
+      "title": "Rust changed me as a developer",
+      "time": 1794860210,
+      "points": 253,
+      "depth": [
+        {
+          "text": "learning Rust changed how someone thinks about **types**, **code structure**, and **performance**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author says **enums** can represent options like success or error, and in some cases avoid the work of building an interface. Rust's ownership rules nudged him toward **less-coupled code**. He also describes **arenas** as a way to store objects together and link them by indexes.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say learning languages changes how you think and helps prevent mistakes; others say languages are just tools, and AI makes Rust expertise less meaningful.",
+      "comment_count": 157,
+      "terms": [
+        "sum type",
+        "enum",
+        "ownership",
+        "arena",
+        "interface",
+        "macro"
+      ],
+      "entities": [
+        "Rust",
+        "JavaScript",
+        "Python",
+        "C++",
+        "Java",
+        "TypeScript",
+        "Haskell",
+        "C",
+        "Zig",
+        "Lisp",
+        "Prolog",
+        "VHDL",
+        "Verilog",
+        "Forth",
+        "Pascal",
+        "COBOL",
+        "Fortran",
+        "Assembly",
+        "BEAM",
+        "serde",
+        "Pydantic",
+        "clap",
+        "Xot",
+        "Colchis",
+        "Knuth",
+        "Martijn Faassen",
+        "Alan J. Perlis"
+      ],
+      "comments": [
+        {
+          "by": "bryanlarsen",
+          "text": "A standard piece of advice is that every developer should do a major project in every big language family. A Lisp, an OO language, a functional language, Prolog, VHDL or Verilog, a Forth, et cetera. They'll all make you think differently and teach you lessons you will use outside of the family."
+        },
+        {
+          "by": "dabinat",
+          "text": "One of the things that I think makes Rust unique is that it acknowledges the possibility of human error. I think it’s also one of the most controversial too: there are certain people who get an ego hit at the insinuation that they ever could have written C code with mistakes. Instead of hoping you remember to check for NULL, Rust forces you to make a decision on how to handle the possibility of…"
+        },
+        {
+          "by": "kator",
+          "text": "“Every computer language is an imperfect way of describing a potential solution to a poorly understood problem\" I wrote this on my website in like 2014. I raise it because I think poorly understood problem is usually the reality, and using many languages over time you find ways of describing solutions to those problems and then learning to hone your understanding of the problem. To me learning…"
+        },
+        {
+          "by": "JuniperMesos",
+          "text": "> Any language without sum types now feels impoverished to me. I wholeheartedly agree. I learned this lesson from learning Haskell, before I was even aware of Rust and before Rust had its 1.0 release. One of the reasons I was first excited about Rust in fact was precisely that it had a type system like that of Haskell."
+        },
+        {
+          "by": "edarchis",
+          "text": "I would like to suggest another improvement: stop doing first name, last name. A lot of cultures in the world don't follow that. W3 suggests using the full name and \"how should we call you\". You only ever address people by their full name or just for casual interactions. It leads to people asking to be called \"Captain Foobuzz\", but that actually becomes a security feature. If they ever get mail…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50524165,
+      "url": "https://www.cnn.com/2026/11/16/us/united-airlines-outage",
+      "hn": "https://news.ycombinator.com/item?id=50524165",
+      "title": "United Airlines experiencing a widespread system outage, airline says",
+      "time": 1794867278,
+      "points": 235,
+      "depth": [
+        {
+          "text": "United Airlines says it is experiencing a **widespread system outage**",
+          "tier": "simple"
+        },
+        {
+          "text": "Some commenters blame **layoffs and cost-cutting**; others speculate about **cyberattacks or AI-related bugs**, but no cause is established in the comments.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some blame layoffs and cost-cutting; others speculate about cyberattacks or AI-related bugs.",
+      "comment_count": 119,
+      "terms": [
+        "weight and balance",
+        "change freeze",
+        "LLMs",
+        "firmware",
+        "share buybacks"
+      ],
+      "entities": [
+        "United Airlines",
+        "Microsoft",
+        "FAA",
+        "Claude",
+        "Anthropic",
+        "GTA VI",
+        "CNN",
+        "Southwest",
+        "McKinsey",
+        "NWS",
+        "Huang"
+      ],
+      "comments": [
+        {
+          "by": "zytoon",
+          "text": "Experienced teams gone with layoffs. AI based attacks smarter. Going forward its going to be part of life and cost of doing business. When these disruptions hit analog things (water, power, transportation) its going to be even crazier"
+        },
+        {
+          "by": "tyingq",
+          "text": "It's whatever their integration is with a vendor that does weight and balance before the flight. Likely not the vendor, as that vendor serves many airlines. https://www.cbsnews.com/news/united-airlines-system-outage-d..."
+        },
+        {
+          "by": "throwawaypty",
+          "text": "Complex systems won't survive the competency crisis."
+        },
+        {
+          "by": "aschla",
+          "text": "This would have probably gone unnoticed by most, including news organizations, if last week's debacle wasn't so recent."
+        },
+        {
+          "by": "codeduck",
+          "text": "It's Monday evening and this week already feels like Bedlam."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50523459,
+      "url": "https://opencode.ai/product/browse",
+      "hn": "https://news.ycombinator.com/item?id=50523459",
+      "title": "OpenCode Browse",
+      "time": 1794864037,
+      "points": 229,
+      "depth": [
+        {
+          "text": "someone built a way for coding agents to use **your real browser**, tabs and **logins**",
+          "tier": "simple"
+        },
+        {
+          "text": "OpenCode Browse pairs an **MCP server** with a **Chromium extension**. Agents open tabs in collapsed background groups, read pages, click and type, and capture screenshots, recordings and network traffic. For a login, 2FA prompt or payment, they hand the tab back to you and continue when you click Continue.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some like letting agents use already-open pages and sessions; others prefer separate browsers or say this overlaps with existing tools and raises security concerns.",
+      "comment_count": 124,
+      "terms": [
+        "MCP",
+        "2FA",
+        "CDP"
+      ],
+      "entities": [
+        "OpenCode Browse",
+        "OpenCode",
+        "Chrome",
+        "Edge",
+        "Brave",
+        "Arc",
+        "Helium",
+        "Vivaldi",
+        "Opera",
+        "Chromium",
+        "Claude Code",
+        "Cursor",
+        "Codex",
+        "Zed",
+        "Playwright",
+        "Claude",
+        "Anthropic",
+        "OpenAI",
+        "Chrome DevTools"
+      ],
+      "comments": [
+        {
+          "by": "testtestmetest",
+          "text": "Opencode vibe codes and releases like 3 projects a week at this points. Cool, just know its throwaway software to them. They seem really reckless when it comes to security. Opencode V2 basically threw security out the window. Theyve completely lost the plot as an org. Their CEO spends all day on twitter talking about how much better he is than everyone. And how nobody can use agents like he can…"
+        },
+        {
+          "by": "int32max",
+          "text": "I have been using opencode for quite along time even before they had an official ios port and think it's the most flexible harness for the best bang for your buck. 10 quid with practicality unlimited usage for side projects and personal agent stuff. They ship a lot but the quality is insanely high."
+        },
+        {
+          "by": "jeremyjacob",
+          "text": "The functionality seems to overlap with the Playwright MCP server [0]. I've been using this instead of the built in browsers in Claude Code and Codex since it lets you grant access to pages and sessions that are already open. Of course one should be weary of the lethal trifecta when using these tools and use separate profiles for them. [0] https://playwright.dev/docs/getting-started-mcp"
+        },
+        {
+          "by": "SillyUsername",
+          "text": "MCP servers to me seems like a dead man walking technology and I don't understand the point of it. It adds security but... - adds a single service which is another attack surface that can be compromised. - adds another system that requires maintenance and securing to prevent compromise. - takes machine resources - duplicates a subset of what can easily be harness functionality - duplicates…"
+        },
+        {
+          "by": "kzahel",
+          "text": "Looks cool.\nI slopped something similar but with also full desktop control in addition to the browser debugger extension.\nBecause I was not satisfied with openai computer use being limited and refusing to interact with menu bar/task tray.\nhttps://machinecontrol.dev/\nUse it daily with Claude and codex. MIT license."
+        }
+      ],
+      "image": "https://opencode.ai/og/product-browse-1528ffd6f6.png"
+    },
+    {
+      "id": 50522643,
+      "url": "https://chillphysicsenjoyer.substack.com/p/chemistry-is-actually-geometry",
+      "hn": "https://news.ycombinator.com/item?id=50522643",
+      "title": "Chemistry is Actually Geometry",
+      "time": 1794860538,
+      "points": 211,
+      "depth": [
+        {
+          "text": "someone uses **geometry** to show how chemical reactions can **settle down** or **keep cycling**",
+          "tier": "simple"
+        },
+        {
+          "text": "The essay represents each reaction with a **reaction vector** and uses network structure to reason about **equilibria** and oscillations. It works toward the **deficiency zero theorem**, which can bound how many equilibrium points a network has using its structure and geometry.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some find the geometric view elegant for picturing reaction dynamics; others say the title oversells its scope or mistakes a useful map for reality.",
+      "comment_count": 105,
+      "terms": [
+        "reaction vector",
+        "stoichiometric subspace",
+        "equilibrium",
+        "rate constant",
+        "deficiency zero theorem"
+      ],
+      "entities": [
+        "CasualPhysicsEnjoyer",
+        "Martin Feinberg",
+        "Foundations of Chemical Reaction Network Theory",
+        "Belousov-Zhabotinsky reaction",
+        "Briggs–Rauscher oscillator",
+        "Krebs cycle",
+        "Calvin cycle",
+        "Oregonator"
+      ],
+      "comments": [
+        {
+          "by": "divbzero",
+          "text": "This post did not go in the direction I expected. From the title I thought the post would explore how chemical reactions depend on the geometry of molecules and the distribution of electrons, but instead it delved into how chemical kinetics can be graphed geometrically."
+        },
+        {
+          "by": "smj-edison",
+          "text": "Reading this, it seems they're using the term \"geometry\" in a more abstract sense. Pretty much you can turn a reaction's state into an abstract point, and then you can plot that reaction point over time. It becomes concrete again when they plot the path of the reaction's \"coordinates\" and you can visually see what happened with the reaction. It's quite elegant! Like you can see a system oscillate…"
+        },
+        {
+          "by": "duesabati",
+          "text": "I do not question the author's expertise, and I find the post very interesting; however, we really ought to stop mistaking the map for the territory. While drawing such analogies is certainly very useful and powerful, assuming that this represents reality is truly a stretch, as none of it can be proven. Also I find it a bit pedantic on the \"theory\" word, giving me the impression that the author…"
+        },
+        {
+          "by": "jsLavaGoat",
+          "text": "I worked in a lab where a geologist was taking soundings to understand the geometry of plate techtonics. Smart guy but needed a geek for the Sun server, so I got to ride along. Anyway, lots of things are \"actually geometry\" but chemistry is kind of the one science that really does just reduce to QED first principles pretty cleanly. You don't hear a lot of talk about emergent chemical phenomena…"
+        },
+        {
+          "by": "thelastgallon",
+          "text": "Probably a lot of material science is understanding how the molecules are structured in various shapes, crystals, etc. For example, this video shows cool visualizations: What comes after lithium-ion batteries? - https://www.youtube.com/watch?v=huMZI_7iZKA Proteins fold, thats also geometry."
+        }
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!dFj2!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,$fp_!0.5:0.5148!/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc017b9d6-401e-4e01-beab-429652ebd7e9_678x588.png"
+    },
+    {
+      "id": 50523300,
+      "url": "https://amirulcyber.com/2026/11/16/optimjack-optimizely-skimmer/",
+      "hn": "https://news.ycombinator.com/item?id=50523300",
+      "title": "CNN, Zoom, Fox News Served Visitors a Crypto-Stealing Skimmer – OPTIMJACK",
+      "time": 1794863318,
+      "points": 187,
+      "depth": [
+        {
+          "text": "a **crypto-stealing script** hit **CNN, Zoom, and Fox News** visitors through their website bundles",
+          "tier": "simple"
+        },
+        {
+          "text": "The code sat in Optimizely bundles across **15 websites**, including BBC, Salesforce, GitLab and Hootsuite. It **swapped pasted wallet addresses**, skimmed card forms, and sent page URLs, cookies and screenshots to attackers.",
+          "tier": "substance",
+          "data": [
+            [
+              "Affected websites",
+              "15"
+            ],
+            [
+              "Exposed visitors",
+              "millions"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 2,
+      "terms": [
+        "clipper",
+        "card skimmer",
+        "CSP",
+        "Optimizely bundle"
+      ],
+      "entities": [
+        "CNN",
+        "Zoom",
+        "Fox News",
+        "Optimizely",
+        "BBC",
+        "Salesforce",
+        "GitLab",
+        "American Eagle",
+        "Hootsuite",
+        "Jscrambler",
+        "OneTrust",
+        "html2canvas",
+        "Amirul Cyber"
+      ],
+      "comments": [
+        {
+          "by": "tomhow",
+          "text": "Comments moved to https://news.ycombinator.com/item?id=50524767 ."
+        },
+        {
+          "by": "louis-paul",
+          "text": "Better link: https://blog.report-uri.com/worlds-largest-brands-infected-w..."
+        }
+      ],
+      "image": "https://amirulcyber.com/assets/img/og-card-optimjack.jpg"
+    },
+    {
+      "id": 50515151,
+      "url": "https://linebender.org/wiki/curves/squircle/",
+      "hn": "https://news.ycombinator.com/item?id=50515151",
+      "title": "Squircles",
+      "time": 1794815710,
+      "points": 185,
+      "depth": [
+        {
+          "text": "someone breaks down what makes **squircles** different from rounded rectangles and how to **draw** them",
+          "tier": "simple"
+        },
+        {
+          "text": "A **squircle** sits between a square and a circle, and there isn’t **one standard curve** for it. The post compares **superellipses**, Apple’s flat-sided shape, Figma’s approximation, and CSS’s corner-shape property; it says an exponent of 3 with a matching flat side comes closer to Apple than the old exponent-5 guess.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some like squircles as a design shape; others find the icons ugly and miss distinctive app shapes.",
+      "comment_count": 47,
+      "terms": [
+        "squircle",
+        "superellipse",
+        "Bézier curve",
+        "curvature",
+        "gauge",
+        "G2 continuity",
+        "CSS"
+      ],
+      "entities": [
+        "Apple",
+        "Figma",
+        "CSS",
+        "Piet Hein",
+        "Martin Gardner",
+        "Scientific American",
+        "PaintCode",
+        "Chromium"
+      ],
+      "comments": [
+        {
+          "by": "darthcircuit",
+          "text": "One of my favorite squircles in the wild was on the Zune 2nd gen models. It felt great to flick through your music, with the added benefit of also being able to click like a regular dpad. It felt smooth, almost like a mini touchpad for your mp3s, but without the cursor."
+        },
+        {
+          "by": "thot_experiment",
+          "text": "I'm working on a tool to author better splines and superellipses/clothoids feature heavily. If anyone is interested here's a little demo you can play around with: https://thiic.cc/omnispline/ It's just a giant stack of edge case exceptions that mostly does the thing you'd expect it to, sorry about the UI, it's very much just in the exploration stage."
+        },
+        {
+          "by": "scarecrw",
+          "text": "Squircles are an excellent shape, slightly outdone in my opinion by their dimensional older brother the sphube. Both thoroughly described here: https://arxiv.org/abs/1604.02174"
+        },
+        {
+          "by": "mosura",
+          "text": "Generally speaking curves that avoid having discontinuities in their derivatives become hugely interesting the moment you want to interact with physical reality, since they are what enable smoothness. Squircles are just part of this."
+        },
+        {
+          "by": "0x4e",
+          "text": "This is the kind of wholesome content HN needs more of. Some hate it, some love it. My perspective on this post is, great! Another idea I can add to my bookmarks for when I’m designing. Appreciate the OP!"
+        }
+      ],
+      "image": null
+    }
+  ],
+  "glossary": {
+    "courseware": "Online lessons and activities for taking a class, beyond just watching lectures.",
+    "ETW": "Event Tracing for Windows: a Windows system that carries reports about what software is doing.",
+    "bitset": "A compact row of yes-or-no bits used to test whether a value belongs to a set.",
+    "DiagTrack": "Connected User Experiences and Telemetry: the Windows service that handled the diagnostic report and its upload queue in this investigation.",
+    "WSL": "Windows Subsystem for Linux: a way to use Linux tools on Windows.",
+    "UX": "User experience: how using a product feels and how easy it is to get things done.",
+    "PageRank": "A score Google used to judge how important a web page seemed based on links pointing to it.",
+    "affiliate programs": "Deals where a website earns money for sending customers to a retailer.",
+    "Project JavaScript": "A place in an Optimizely project where a customer can add code that runs on their pages.",
+    "CDN": "Content Delivery Network: A network of servers that helps websites handle requests closer to their users.",
+    "card skimming": "Secretly capturing card details entered on a website and sending them to an attacker.",
+    "CSP": "Content Security Policy: rules a site gives a browser about which scripts and connections to allow.",
+    "Subresource Integrity": "A browser check that makes sure a downloaded script has not been changed.",
+    "exploit kit": "A package of code attackers can use to try exploiting a weakness.",
+    "sum type": "A kind of value that can be one of several distinct options, with each option able to carry its own details.",
+    "enum": "A named set of possible choices for a value, where each choice can carry different data.",
+    "ownership": "A rule for which part of a program is responsible for data and who may change it.",
+    "arena": "A reserved chunk of memory for related things that a program can keep around or clear as a group.",
+    "interface": "The names and details other code can use from a crate, without needing its inner workings.",
+    "macro": "A tool that lets programmers add language features or transform code before it runs.",
+    "weight and balance": "A check of how a plane’s load is distributed and how heavy it is before a flight.",
+    "change freeze": "A period when teams pause software changes to avoid introducing problems.",
+    "LLMs": "Large language models: computer programs trained on lots of writing that can produce text.",
+    "firmware": "The built-in software that tells a device's hardware how to work.",
+    "share buybacks": "When a company uses money to buy its own shares from investors.",
+    "MCP": "Model Context Protocol: a standard way for AI apps to connect to outside tools.",
+    "2FA": "Two-factor authentication: a sign-in check that asks for a second proof of identity as well as a password.",
+    "CDP": "Chrome DevTools Protocol: a way for software to control or inspect a browser.",
+    "reaction vector": "A list showing how much each substance is used up or produced in one reaction.",
+    "stoichiometric subspace": "The set of changes in substance amounts you can get by combining the network’s reaction changes.",
+    "equilibrium": "A state where the amounts of the substances stop changing.",
+    "rate constant": "A number in the model that describes how fast a reaction happens.",
+    "deficiency zero theorem": "A result that uses the way reactions are connected to limit how many points with unchanging concentrations a system can have.",
+    "clipper": "Software that replaces a copied or pasted cryptocurrency address with an attacker's address.",
+    "card skimmer": "Code that captures payment card details entered on a website and sends them to someone else.",
+    "Optimizely bundle": "A package of website code from Optimizely that a site loads to run experiments.",
+    "squircle": "A shape between a square and a circle, with rounded corners.",
+    "superellipse": "A family of curves that can look rounder or squarer depending on a number.",
+    "Bézier curve": "A smooth bend made by setting points that guide its shape.",
+    "curvature": "How sharply a line or curve bends at a point.",
+    "gauge": "In this article, a measurement based on where the curve crosses the midpoint of a quadrant.",
+    "G2 continuity": "A way of joining curve sections so their direction and how sharply they bend both change smoothly at the join.",
+    "CSS": "Cascading Style Sheets: rules that control how a web page looks."
+  }
+}
