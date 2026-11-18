@@ -2,6 +2,1305 @@
   "date": "2026-11-18",
   "cards": [
     {
+      "id": 50547374,
+      "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+      "hn": "https://news.ycombinator.com/item?id=50547374",
+      "title": "Unauthenticated remote code execution in Nginx",
+      "time": 1795015195,
+      "points": 760,
+      "depth": [
+        {
+          "text": "someone found a way to **run code** on Nginx servers **without logging in**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says the bug had been **fixed in the open source repo** a week earlier, leaving time for people watching repos to spot a possible exploit. The suggested **workaround is disabling HTTP/2**; another commenter says it is off by default in Nginx and runs on **12% of servers**.",
+          "tier": "substance",
+          "data": [
+            [
+              "servers running HTTP/2",
+              "12%"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 320,
+      "terms": [
+        "remote code execution",
+        "HTTP/2",
+        "TLS",
+        "integer underflow",
+        "CT logs"
+      ],
+      "entities": [
+        "Nginx",
+        "F5",
+        "Xint.io",
+        "HTTP/2",
+        "FreeBSD",
+        "HaProxy",
+        "Rust",
+        "ferron.sh",
+        "xinproxy.com",
+        "Mastodon",
+        "Wiz Research",
+        "Ikotas Labs",
+        "Metnir",
+        "Rapid7",
+        "Kubernetes",
+        "ingress-nginx",
+        "Nginx Proxy Manager",
+        "GITS Innocence"
+      ],
+      "comments": [
+        {
+          "by": "black3r",
+          "text": "The bug was apparently fixed in open source repo a week earlier, this could've been abused by anyone smart enough to monitor repos like this for exploitable bugfixes for a week (the commit message even included \"Reported by Xint.io\" and I'm guessing skilled black hats would know about Xint) Given that in this case the workaround is as simple as disabling http2, there is honestly no reason why…"
+        },
+        {
+          "by": "fduran",
+          "text": "Small consolation but HTTP/2 is not enabled by default in Nginx and \"only\" 12% of servers run it (still huge at Internet scale) https://w3techs.com/technologies/segmentation/ce-http2/web_s..."
+        },
+        {
+          "by": "fn-mote",
+          "text": "AI is burning down the internet. This is insane. Are we going to discover in a year that every server online this month had a rootkit installed? There’s got to be thousands who are too small time to wipe and reinstall."
+        },
+        {
+          "by": "malikNF",
+          "text": "Hey so, does anyone know of a good tutorial on getting in to woodwork?"
+        },
+        {
+          "by": "pelzatessa",
+          "text": "If you want to check if your host might be vulnerable: https://xint.io/blog/nginx2root-remote-code-execution#23-com... Workarounds if you're vulnerable and can't update immediately: https://xint.io/blog/nginx2root-remote-code-execution#33-eme..."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50542705,
+      "url": "https://nicolasbouliane.com/blog/death-by-ai",
+      "hn": "https://news.ycombinator.com/item?id=50542705",
+      "title": "AI is killing All About Berlin",
+      "time": 1794984446,
+      "points": 731,
+      "depth": [
+        {
+          "text": "Google’s **AI answers** are taking **readers away** from a Berlin guide its creator spent years building",
+          "tier": "simple"
+        },
+        {
+          "text": "Google now shows **ads and an AI-generated answer** trained on his content before linking to his site, which he says has had a **devastating impact on traffic**. He says he may need another way to pay rent and now spends his days **preparing for that future** instead of writing new guides.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say AI answers deprive publishers of traffic and weaken the sources they depend on; others say users want easier summaries and publishers shouldn’t depend on Google for visitors.",
+      "comment_count": 664,
+      "terms": [
+        "AI Overviews",
+        "LLM",
+        "affiliate link"
+      ],
+      "entities": [
+        "All About Berlin",
+        "Google",
+        "Google AI Overviews",
+        "Nicolas Bouliane",
+        "Hacker News",
+        "StackOverflow",
+        "Mastodon",
+        "LinkedIn",
+        "Twitter"
+      ],
+      "comments": [
+        {
+          "by": "jeppester",
+          "text": "How do you all feel about the situation? Is it just okay that these humongous companies just took all our work without paying us a dime? Is it okay that they are replacing our jobs with tech that would never have existed had they not taken all that work? (or would have moved slower) Do you feel good supporting these companies by giving them money every month? What do you think will happen if…"
+        },
+        {
+          "by": "leobg",
+          "text": "A search engine would have been legally questionable in the beginning: You read other ppls websites to copy their content into your index. And then you present their content on YOUR website. Had Google asked a lawyer, he probably would not have approved. But it was tolerated - ask for forgiveness, not permission - because the deal was: Yes, we do show a snippet of your content on our search…"
+        },
+        {
+          "by": "nicbou",
+          "text": "Hey, I'm Nicolas from All About Berlin. This post is a few months old. I went through a psychological rollercoaster since I wrote it. Things got worse, but so far, I can still live from the website. Next year might be my last year running it full time. I'm traveling at the moment, but I'll grab a drink and read this thread later today. In the meantime, feel free to email me. Reader mail would be…"
+        },
+        {
+          "by": "adamddev1",
+          "text": "People are being conditioned to think that all the answers come from AI, or that AI knows everything. But AI is only getting (inaccurate shadows of) the info from these sources which it is simultaneously working to kill. (Websites like this, StackOverflow, human written code) What happens when there are no more sources and everyone just expects AI to answer everything or write everything?…"
+        },
+        {
+          "by": "maybewhenthesun",
+          "text": "The A.I. genie is probably never getting back in the bottle. How I would like for this technology to just not exist. The hackernews frontpage would be sooo much nicer again as well. I used to browse hackernews being amazed and (pleasantly) surprised about the cleverness and imagination of people. but these days you have to look for the nice stuff with a lookingglass between the onslaught of…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50545958,
+      "url": "https://techstackups.com/articles/quad9-leaves-france-dns-blocking/",
+      "hn": "https://news.ycombinator.com/item?id=50545958",
+      "title": "DNS resolvers are the wrong place to fight piracy",
+      "time": 1795007882,
+      "points": 478,
+      "depth": [
+        {
+          "text": "a court fine for **not blocking pirate streams** is pushing **Quad9** out of France",
+          "tier": "simple"
+        },
+        {
+          "text": "The court set a **€1,000/day penalty**, and **around 20 similar cases** are still pending. The article warns users who switch to an unfiltered resolver may lose Quad9’s **malware protection**.",
+          "tier": "substance",
+          "data": [
+            [
+              "daily penalty",
+              "€1,000/day"
+            ],
+            [
+              "similar pending cases",
+              "around 20"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: critics call DNS blocks censorship and say authorities should target pirates; supporters argue blocks create useful friction, even if they’re easy to bypass.",
+      "comment_count": 163,
+      "terms": [
+        "DNS resolver",
+        "VPN",
+        "CDN",
+        "geo-blocking"
+      ],
+      "entities": [
+        "Quad9",
+        "beIN Sports",
+        "Arcom",
+        "Cloudflare",
+        "DNS4EU",
+        "John Todd"
+      ],
+      "comments": [
+        {
+          "by": "trentnix",
+          "text": "Every attempt to “fight piracy” that isn’t “prosecute pirates” is just a backdoor to suppressing speech a government doesn’t like."
+        },
+        {
+          "by": "MarcScott",
+          "text": "The UK has had blocks in place for well over a decade, via ISPs - https://en.wikipedia.org/wiki/List_of_websites_blocked_in_th... As far as I am aware, they government has never gone after DNS resolvers other than the big 5 ISPs. I very much doubt it has had a major impact on piracy. Anecdotally I am aware that plenty of naive teenagers put themselves at risk using 'free' VPN services to…"
+        },
+        {
+          "by": "skrebbel",
+          "text": "Is this a ridiculous decision by the French court because the judges lack competency, or is this a defensible position, ie judges correctly interpreting a ridiculous law? I feel like that’s two very different situations and a lot of writing about bad court decisions such as this one don’t specify which it is. The courts don’t operate in a void, they try to apply the law. So in other words, should…"
+        },
+        {
+          "by": "michael-sumner",
+          "text": "https://quad9.net/news/blog/au-revoir-france/ https://blog.cloudflare.com/quad9-withdrawal-from-france/"
+        },
+        {
+          "by": "Fe2O3",
+          "text": "Dupe: https://news.ycombinator.com/item?id=50195959 Related: https://news.ycombinator.com/item?id=50538994"
+        }
+      ],
+      "image": "https://techstackups.com/img/articles/quad9-leaves-france/cover.jpg"
+    },
+    {
+      "id": 50547620,
+      "url": "https://www.inside-db.com/",
+      "hn": "https://news.ycombinator.com/item?id=50547620",
+      "title": "Inside Deutsche Bank",
+      "time": 1795016313,
+      "points": 401,
+      "depth": [
+        {
+          "text": "a leak of **15 million files** lays bare Deutsche Bank's **compliance failures** and dealings with risky clients",
+          "tier": "simple"
+        },
+        {
+          "text": "The files cover **anti-financial crime**, sanctions monitoring, internal auditing and decisions about whether risky clients stay. The reporting cites **at least 24 transactions totalling €172.98 million** linked to Jho Low, and suspicious Epstein payments.",
+          "tier": "substance",
+          "data": [
+            [
+              "transactions linked to Jho Low",
+              "at least 24"
+            ],
+            [
+              "transaction total",
+              "€172.98 million"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some want the raw files released for independent analysis; others say journalists should sift them and publish material in the public interest.",
+      "comment_count": 143,
+      "terms": [
+        "compliance",
+        "sanctions monitoring",
+        "kleptocracy",
+        "money laundering",
+        "consortium",
+        "RAG",
+        "LLM"
+      ],
+      "entities": [
+        "Deutsche Bank",
+        "Jho Low",
+        "Epstein",
+        "Orbán",
+        "Leonardo",
+        "Trump",
+        "André Esteves",
+        "BTG Pactual",
+        "Siemens",
+        "Mohammed bin Nayef",
+        "OpenAleph",
+        "DARC",
+        "ElasticSearch",
+        "FollowTheMoney",
+        "Friedrich Lindenberg",
+        "OpenSanctions",
+        "Qwen3.6-35B-A3B",
+        "The New York Times"
+      ],
+      "comments": [
+        {
+          "by": "ltrg",
+          "text": "I was involved with this project as a reporter, though others from my organisation did most of the work. HN readers may be interested to know a bit about the tech stack. The 15 million or so documents, mostly Outlook mailbox exports, were provided to partners in the consortium via a tool called OpenAleph [1], which is maintained by DARC and based on ElasticSearch and a schema called…"
+        },
+        {
+          "by": "eunos",
+          "text": "> The documents show Deutsche Bank assisted numerous clients in tax minimisation, including the Siemens corporation > German treasury would lose up to 30 million euros per year due to the tax-saving model it promoted Saving tax in Germany is time honored tradition. Why do you think companies like Taxfix exist?"
+        },
+        {
+          "by": "mlmonkey",
+          "text": "> The Data > Our reporters will continue to evaluate the material journalistically over the > coming months. We will not publish the raw data online. One of my biggest gripes about journalism today is that biased actors will change the narrative to fit their biases via selective omission of facts, thereby putting forth a misleading version. One doesn't have to actually _lie_ to deceive the…"
+        },
+        {
+          "by": "gwbas1c",
+          "text": "The page needs to summarize critical points without needing to hop into links. The linked articles require dedicated time to read, (which is good.) Many people will open this, see that it requires time to read, and move on without understanding the major points of the scandal. A higher level summary will get the point across much more quickly."
+        },
+        {
+          "by": "dualvariable",
+          "text": "Anything on what Justice Kennedy's son was doing at Deutsche Bank? I'm still expecting that a sitting US President used extortion and blackmail to cause a SCOTUS judge to step down, there's just no public evidence yet."
+        }
+      ],
+      "image": "https://www.inside-db.com/content/images/size/w1200/2026/09/_DSF9639.jpg"
+    },
+    {
+      "id": 50548021,
+      "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+      "hn": "https://news.ycombinator.com/item?id=50548021",
+      "title": "Seven new models at scalable price-performance",
+      "time": 1795018104,
+      "points": 330,
+      "depth": [
+        {
+          "text": "Microsoft rolled out **new AI models** for coding, images, speech, and security, pitching **lower prices**",
+          "tier": "simple"
+        },
+        {
+          "text": "For **MAI Code 2**, Microsoft says it reaches **98%** of GPT-6.1 Sol's coding quality at about 40% of the price, and 96% of Opus 5.5's performance at **5% of the price**. It also says MAI Cyber 2 Flash beats GPT-6 Astra's quality for less than 2% of the cost per task on the CyberGym-E2E benchmark.",
+          "tier": "substance",
+          "data": [
+            [
+              "Coding quality vs GPT-6.1 Sol",
+              "98% of the coding quality"
+            ],
+            [
+              "Price vs GPT-6.1 Sol",
+              "about 40% of the price"
+            ],
+            [
+              "Performance vs Opus 5.5",
+              "96% performance"
+            ],
+            [
+              "Price vs Opus 5.5",
+              "just 5% of the price"
+            ],
+            [
+              "Cyber 2 Flash cost per task vs GPT-6 Astra",
+              "less than 2% of the cost per task"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say the models look good and Microsoft is a real threat on price; others say it needs open weights or a better offer to win developers.",
+      "comment_count": 214,
+      "terms": [
+        "benchmark",
+        "model routing",
+        "open weights",
+        "tokens",
+        "agent"
+      ],
+      "entities": [
+        "Microsoft",
+        "MAI Code 2",
+        "GPT-6.1 Sol",
+        "Opus 5.5",
+        "MAI Cyber 2 Flash",
+        "GPT-6 Astra",
+        "CyberGym-E2E"
+      ],
+      "comments": [
+        {
+          "by": "athrowaway3z",
+          "text": "I was on the fence on jumping into the Anthropic IPO - but i think i'm going to skip it even though it's a product I actively pay to use and am happy with. Its just too overpriced. Yes Anthropic will be leading for a while with the best model; but first the Chinese models, yesterday's OpenAI's Sol & Astra, and now even Microsoft getting Opus 5 performance. Remember that even Anthropic's own Opus…"
+        },
+        {
+          "by": "johnshahbazian",
+          "text": "I didn't watch the keynote, but I've been testing MAI Code 2 and its been quite good for my usual work. They put it on par with Opus or Sol, and I wouldn't argue too much with that. Kudos to them for starting from scratch and getting it right."
+        },
+        {
+          "by": "ahmedfromtunis",
+          "text": "I think Microsoft should provide some of its models as open source/weight if they hope to secure any market share. Otherwise, it's Windows Phone OS all over again."
+        },
+        {
+          "by": "M4R5H4LL",
+          "text": "The Ignite keynote looked so shallow and opportunistic to leadership. You wonder if they have any clout anymore, and it feels like the engineers have abandoned the ship. I am working day to day with AI Engineering, and it feels I have zero reason to do business using any of their tech stack. This clearly started with the dev division re-org, they completely missed the memo. There is zero…"
+        },
+        {
+          "by": "claaams",
+          "text": "Unless you're already in their ecosystem, why would someone join microsoft? They are becoming like Oracle. Their end user devices are avoided at most modern start ups, their cloud is expensive and confusing, their cloud customer support is awful as well."
+        }
+      ],
+      "image": "https://microsoft.ai/wp-content/uploads/2026/11/All-Up-Blog.jpg"
+    },
+    {
+      "id": 50547344,
+      "url": "https://www.yahoo.com/news/world/articles/russia-reportedly-planned-mass-casualty-090500574.html",
+      "hn": "https://news.ycombinator.com/item?id=50547344",
+      "title": "Russia reportedly planned mass-casualty attack in Poland to be blamed on Ukraine",
+      "time": 1795015110,
+      "points": 312,
+      "depth": [
+        {
+          "text": "Russia reportedly planned a **mass-casualty attack** in Poland and meant to **blame Ukraine**",
+          "tier": "simple"
+        },
+        {
+          "text": "Rzeczpospolita says **partner intelligence warned Warsaw**, and Polish analysts also spotted signs of the threat. Police and Border Guard posts **got reinforcements**, while special forces held exercises; a minister said the threat was **assessed as real**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some commenters suspected a Western provocation or questioned the plan's plausibility; others discussed reported Russian operatives near the border and the false-flag plan.",
+      "comment_count": 129,
+      "terms": [
+        "false-flag operation",
+        "voivodeship"
+      ],
+      "entities": [
+        "Rzeczpospolita",
+        "European Pravda",
+        "GRU",
+        "Tomasz Siemoniak",
+        "Donald Tusk",
+        "National Police Headquarters",
+        "Internal Security Agency",
+        "Territorial Defence Forces"
+      ],
+      "comments": [
+        {
+          "by": "nowreally",
+          "text": "Most probably a western provocation. Scope: \"freeing\" Kaliningrad, it is a long time many lithuanians and poles dreaming about this (there are normal people there of course, as everywhere: but when the Big Brother encourages nationalists and revanchists, this is what happens(."
+        },
+        {
+          "by": "jcfrei",
+          "text": "I traveled through the baltics in the beginning of october and also crossed the suwalki gap to check out the border tripoint in Vištytis (between russia, poland and lithuania). even though it's in the middle of nowhere and on the edge of some large forests there was a surprising number of polish border patrols."
+        },
+        {
+          "by": "pingou",
+          "text": "That doesn't seem to make much sense. Why would Ukraine attack Poland?\nThere may be some tensions between Poland and Ukraine, but there need to be some degree of plausibility to a false flag operation. If that was real it would probably make Poland support Ukraine even more or even declare war on Russia."
+        },
+        {
+          "by": "garbawarb",
+          "text": "I'm surprised that almost no English-language sources seem to have picked up the story yet."
+        },
+        {
+          "by": "Tade0",
+          "text": "I'm Polish and I've only heard about Russian operatives concentrating close to the Polish-Russian border recently, who were matched by an equal number of Polish operatives. The Russians either wanted to be spotted, or didn't think this would prompt further analysis on the Polish side."
+        }
+      ],
+      "image": "https://s.yimg.com/lo/mysterio/api/ad6a2a112e9f0226e79e9b73cb48fc33faa150dd88d4ea7b20be07d0146e6315/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fukrayinska_pravda_articles_451%2F3f75d2ecee0a54bee0a4a11b062d8666.jpg"
+    },
+    {
+      "id": 50544261,
+      "url": "https://social.anoxinon.de/@codebergstatus/117636437840688845",
+      "hn": "https://news.ycombinator.com/item?id=50544261",
+      "title": "Codeberg.org Not Reachable",
+      "time": 1794996137,
+      "points": 290,
+      "depth": [
+        {
+          "text": "Codeberg's **domain went offline** after being suspended, then **slowly came back**",
+          "tier": "simple"
+        },
+        {
+          "text": "Codeberg said its domain had **disappeared from its Namesilo account**, then confirmed it was **suspended** and its case went to the abuse team. It later said the domain was **slowly recovering**, though some users might still need to wait for DNS propagation.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 294,
+      "terms": [
+        "DNS",
+        "registrar",
+        "DNS propagation",
+        "clientHold"
+      ],
+      "entities": [
+        "Codeberg",
+        "Namesilo"
+      ],
+      "comments": [
+        {
+          "by": "hans_castorp",
+          "text": "As you probably noticed, our domain codeberg.org is entirely unreachable. It was registered with namesilo and entirely disappeared from our account. We're waiting for their customer support to investigate the situation. Update: We have received the confirmation that our domain was suspended and our case got forwarded to the abuse team. We're still waiting for a final decision."
+        },
+        {
+          "by": "duckmysick",
+          "text": "https://social.anoxinon.de/@codebergstatus/11763718771117769... > The domain is slowly recovering. Many users are able to connect to our systems again. Some might need to wait for DNS propagation. > Thank you so much for your patience. We're sorry for the serious disruption. > We haven't yet received an official response from Namesilo's abuse department about the incident."
+        },
+        {
+          "by": "MrGilbert",
+          "text": "As a German entity, I'm surprised that Codeberg e.V. decided to go with an American registrar. From my past experiences, there are certain services where I'd prefer a local contact. Domain registration is one of them, if possible."
+        },
+        {
+          "by": "hans_castorp",
+          "text": "Update 2026-11-18 12:30 CET \"The domain is slowly recovering. Many users are able to connect to our systems again. Some might need to wait for DNS propagation.\nWe haven't yet received an official response from Namesilo's abuse department about the incident.\" https://mastodon.social/@codebergstatus@social.anoxinon.de/1..."
+        },
+        {
+          "by": "hypfer",
+          "text": "This + the whole quad9 thing sounds like maybe some hackers should go out and come up with DNS but decentralized and federated? This is only going to get worse, but we can fix it. The system was designed for a world that doesn't exist anymore, but we can build one that is designed for the one that does. While we're at it, maybe we can also fix the whole CA HTTPS nonsense?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50543989,
+      "url": "https://energy-based-reasoners.github.io/",
+      "hn": "https://news.ycombinator.com/item?id=50543989",
+      "title": "Energy-Based Reasoners: 385x more efficient inference",
+      "time": 1794994172,
+      "points": 281,
+      "depth": [
+        {
+          "text": "researchers built a **puzzle-solving AI** that **scores its guesses** and knows when to stop",
+          "tier": "simple"
+        },
+        {
+          "text": "It learns an **energy score** for possible reasoning states; the gradient guides refinement and signals when to stop. On Sudoku-Extreme, the paper reports **99.9% accuracy** using **345× less inference compute** than the next-best model. The Hacker News title says 385×, but a commenter notes the page reports 345×.",
+          "tier": "substance",
+          "data": [
+            [
+              "Sudoku-Extreme accuracy",
+              "99.9%"
+            ],
+            [
+              "Less inference compute than next-best model",
+              "345×"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see promise for logic puzzles and efficient inference; others say these models are niche-specific and may not transfer to language or open-ended reasoning.",
+      "comment_count": 44,
+      "terms": [
+        "EBR",
+        "gradient descent",
+        "latent reasoning state",
+        "inference compute",
+        "coverage"
+      ],
+      "entities": [
+        "Energy-Based Reasoners",
+        "Sudoku-Extreme",
+        "Maze-Hard",
+        "N-Queens",
+        "Graph Coloring",
+        "TRM",
+        "EqR",
+        "FPRM",
+        "GRAM",
+        "Looped flows",
+        "Logical Intelligence",
+        "Yann LeCun",
+        "OpenAI",
+        "William Xingxu Chen",
+        "Alexi Gladstone",
+        "Zeyu Michael Li",
+        "Heng Ji",
+        "Yilun Du",
+        "Duke University",
+        "UIUC",
+        "Harvard University"
+      ],
+      "comments": [
+        {
+          "by": "Topfi",
+          "text": "Recommend checking out Logical Intelligence, chaired by among others Yann LeCun, for more context on EBMs [0]. Has great potential in areas that LLMs traditionally do not perform that well in and, because they want to show the advantages of EBMs, also tends to be a great source of examples LLMs struggle with, like primary school level maths and counting (while ironically providing Millennium…"
+        },
+        {
+          "by": "program_whiz",
+          "text": "A clarifying way to think about this for sudoku: For every clue, mark the probability of sampling its number in the row/col to zero. Also mark the probability of selecting a \"clue cell\" for modification to 0. Pick a random cell for modification, based on its \"energy\" (higher energy get modified first): 1. Every conflicting cell gets energy +1.0 (try to resolve conflicts before new empty cells)…"
+        },
+        {
+          "by": "mocmoc",
+          "text": "I've spent a year on this. EBMs while ... how to say it, they are impressive validators , it's insanely hard to train them. They are very niche specific. While LLMs , being not right all the time and clumsy and so on, they help the people to get the job done at the end. EBM sudoku is not that hard in a small scale, and Logical Intelligence sudoku solver doesn't scale , if I'm wrong , I want to…"
+        },
+        {
+          "by": "xgk",
+          "text": "The paper does not seem to define what Energy-Based means. The paper says: \"EBMs learn a scalar function that assigns an energy to a candidate prediction given an input.\" What codomain do those learned scalar function have? I guess real numbers? But is \"Energy\" just a synonym for the reals?"
+        },
+        {
+          "by": "igleria",
+          "text": "As far as I could understand, this works very well for a very specific logic puzzle problem set. Interested on future papers tho :)"
+        }
+      ],
+      "image": "https://energy-based-reasoners.github.io/static/images/ebr_landscape_abc_v1.png"
+    },
+    {
+      "id": 50541790,
+      "url": "https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/",
+      "hn": "https://news.ycombinator.com/item?id=50541790",
+      "title": "Why is Gemini 4 Carbon taking so long?",
+      "time": 1794975244,
+      "points": 259,
+      "depth": [
+        {
+          "text": "someone found **Carbon** spends ages fixing bugs because it does **far more work** than needed",
+          "tier": "simple"
+        },
+        {
+          "text": "In difficult bug-fixing tasks, Carbon took **close to an hour** while Opus and Astra took minutes. Slower inference explained **16–30% versus Astra and 45–49% versus Opus** of the extra time; **about half its steps** went to work the tickets never asked for.",
+          "tier": "substance",
+          "data": [
+            [
+              "Extra time from slower inference vs Astra",
+              "16–30%"
+            ],
+            [
+              "Extra time from slower inference vs Opus",
+              "45–49%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say Carbon’s thoroughness catches useful issues and is worth the wait; others find it painfully slow and overly proactive.",
+      "comment_count": 135,
+      "terms": [
+        "inference",
+        "harness",
+        "tool call",
+        "tokens",
+        "trajectory"
+      ],
+      "entities": [
+        "Gemini 4 Carbon",
+        "GPT-6 Astra",
+        "Opus",
+        "Astra",
+        "Hydrogen",
+        "opencode",
+        "mini-SWE-agent",
+        "Google",
+        "Google DeepMind",
+        "Anthropic",
+        "OpenAI",
+        "Gemini 4 Argon",
+        "Argon",
+        "Gemini Flash",
+        "Gemini 3.8",
+        "Claude",
+        "Claude Desktop",
+        "Claude Fable 5.2",
+        "Sonnet",
+        "Fable",
+        "Sol",
+        "Antigravity",
+        "Codex",
+        "Opus 4.6",
+        "Opus 5.5",
+        "Kimi K3.1 Pro",
+        "Qwen",
+        "Luna",
+        "Plotly",
+        "GitHub Copilot",
+        "pi",
+        "agent-duel"
+      ],
+      "comments": [
+        {
+          "by": "tristanj",
+          "text": "It's pretty obvious that Gemini 4 Carbon is not token efficient. It also has relatively low tokens-per-second compared to other models. I can think of several reasons why this is the case: 1. Google has huge amounts of cash and compute. Their goal was to train a model that that has the highest quality & frontier performance, not create a model that's efficient to run and serve. They have other…"
+        },
+        {
+          "by": "horacemorace",
+          "text": "I was just using this one today for some coding tinkering and it was super slow. But the way it solves problems with a light touch while still driving toward sensible architecture is refreshing after claude’s bulldozer attitude. It was able to integrate repeated creeping scope nicely with what it had already done. Very different feel than sonnet/opus, and even gemini 3.8."
+        },
+        {
+          "by": "hetspookjee",
+          "text": "Might be the only one in the thread but ever since Gemini 4 Argon. I’ve become a huge fan of the Google models. I do use Carbon most of the time since it’s become available but notice that i also am falling back more and more on Argon again without much difference. For security purposes argon has far fewer triggers.\nI only use the Google models as orchestrator for how they talk and analyse. I let…"
+        },
+        {
+          "by": "fwee",
+          "text": "Carbon is slow, but I've also realized that it works really well. I don't need to get involved or keep checking the results over and over again. I think it's pretty close to Opus 5.5 in terms of work quality. I have no doubt that Google will adjust its training to find a better balance between speed and intelligence, just like they did with Gemini Flash (3.7 -> 3.8, slower but smarter). The…"
+        },
+        {
+          "by": "chriddyp",
+          "text": "I've tested 75 models so far, and Gemini 4 Carbon is 68th/75 in terms of slowness [1] Looking into it, there are 4 areas that contribute to speed: 1. Time-to-first-token is slower than others: 5s (median) to start on a one-line prompt and 11s on a ~130K-token cached prompt, against 2-2.5s for Gemini 4 Hydrogen and 1-5s for GPT, Claude, Grok, Kimi and Qwen. Long tail though: one call took 50 s and…"
+        }
+      ],
+      "image": "https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/og.png"
+    },
+    {
+      "id": 50550062,
+      "url": "https://underwood.network/http/scots.html",
+      "hn": "https://news.ycombinator.com/item?id=50550062",
+      "title": "Scottish HTTP Codes",
+      "time": 1795026379,
+      "points": 199,
+      "depth": [
+        {
+          "text": "someone turned **web status codes** into a string of blunt **Scottish one-liners**",
+          "tier": "simple"
+        },
+        {
+          "text": "It pairs **307** with “FUCK OFF OWER THERE, FOR NOO” and **422** with “AH KEN WHIT YE MEAN, BUT NAW.”",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters called it spot on and funny; others said the Scots wording or spellings were off.",
+      "comment_count": 42,
+      "terms": [
+        "HTTP status code"
+      ],
+      "entities": [
+        "HTTP"
+      ],
+      "comments": [
+        {
+          "by": "ThrowawayR2",
+          "text": "We need a funding campaign for Brian Limond (Scottish comedian best known for Limmy's Show) to read these aloud."
+        },
+        {
+          "by": "henearkr",
+          "text": "I can't help but hear these HTTP codes with Thráin's voice. Why have they decided that all Dwarves in Rings of Power should be Scottish? XD But that's an awesome directorial choice, that makes the show even more enjoyable!"
+        },
+        {
+          "by": "EuanReid",
+          "text": "Each one of these was better than the one before to the point that I was wheezing and almost crying with laughter at my desk, trying desperately to not just laugh out loud in the office. Bravo. Just one note - 451 should be \"cooncil\"."
+        },
+        {
+          "by": "hankbond",
+          "text": "idk about anyone else but i found these to be tasteful and elegant. also never heard of telehack but the site says to connect at 1945 EST so i guess i will?"
+        },
+        {
+          "by": "equasar",
+          "text": "Can someone add the voice on these?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50546914,
+      "url": "https://www.cam.ac.uk/news/cambridge-dictionary-reveals-word-of-the-year-2026",
+      "hn": "https://news.ycombinator.com/item?id=50546914",
+      "title": "The Cambridge Dictionary has named ‘human’ as the Word of the Year 2026",
+      "time": 1795013032,
+      "points": 191,
+      "depth": [
+        {
+          "text": "the Cambridge Dictionary picked **human** as its word of the year as **AI blurs the line** between people and machines",
+          "tier": "simple"
+        },
+        {
+          "text": "The choice follows **global debates** over what it means to be human as AI blurs boundaries between people and machines. The dictionary defines “human” as “having the qualities, faults, and feelings that people have, as opposed to gods, animals, or machines”; Bill Gates argued caregivers should be among **“human reserved jobs”**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 145,
+      "terms": [
+        "zeitgeist",
+        "LLMs",
+        "deepfakes"
+      ],
+      "entities": [
+        "Cambridge Dictionary",
+        "University of Cambridge",
+        "Bill Gates",
+        "Gates Foundation",
+        "Geoffrey Hinton",
+        "Pope Leo XIV",
+        "Human Artistry Campaign",
+        "Artist Rights Alliance",
+        "Scarlett Johansson",
+        "Cate Blanchett",
+        "Tayla Parx",
+        "LeAnn Rimes",
+        "Billie Eilish",
+        "Jodi Picoult",
+        "Jonathan Franzen",
+        "Project Hail Mary",
+        "Andy Weir",
+        "Authors Guild",
+        "Mary Beard",
+        "Malorie Blackman",
+        "Matthew McConaughey",
+        "Taylor Swift",
+        "Rachel Adams",
+        "Tom McClelland",
+        "Colin McIntosh"
+      ],
+      "comments": [
+        {
+          "by": "thimabi",
+          "text": "> Bill Gates, Chair of the Gates Foundation, made the case for “human reserved jobs”, such as caregivers, that should never be taken by machines If only it were that simple to define what a job is and which jobs are “worthy” or not of being reserved to humans. I’m against dreamy proposals like this one because they miss the forest for the trees. Like previous technologies, AI can do lots of…"
+        },
+        {
+          "by": "trentnix",
+          "text": "The use of \"human\" instead of people or person is a peeve of mine. When someone says \"he/she is such a good human\" or \"one of my favorite humans\", it sounds (to me) impersonal and demeaning. A person is 3-dimensional. A person has agency. A person has purpose. A human is just a person-shaped clump of cells. I know I'm a bit ridiculous with my over-analysis. I know people say \"human\" mostly…"
+        },
+        {
+          "by": "ourmandave",
+          "text": "Of my friend, I can only say this: of all the souls I have encountered in my travels, his was the most... human. Adm James T Kirk"
+        },
+        {
+          "by": "enjoyyourlife",
+          "text": "Just realized that \"anthropic\" isn’t in the Cambridge Dictionary yet. It is defined in the Oxford English Dictionary though"
+        },
+        {
+          "by": "ChrisArchitect",
+          "text": "Related so far from others in the space: Dictionary.com's 2026 Word of the Year Is Maxxing https://www.dictionary.com/word-of-the-year ( https://news.ycombinator.com/item?id=50474081 ) Collins' Word of the Year 2026: mogging https://blog.collinsdictionary.com/language-lovers/collins-w... ( https://news.ycombinator.com/item?id=50474363 ) Oxford Word of the Year is still open to voting!…"
+        }
+      ],
+      "image": "https://www.cam.ac.ukWOTY_LI_expert_cover_image.png"
+    },
+    {
+      "id": 50546465,
+      "url": "https://www.sciencedaily.com/releases/2026/11/261110042543.htm",
+      "hn": "https://news.ycombinator.com/item?id=50546465",
+      "title": "Energy drinks linked to 11 times more reports of cardiac arrest",
+      "time": 1795010617,
+      "points": 189,
+      "depth": [
+        {
+          "text": "a study linked **stimulant products** to more **heart-problem reports**, but couldn't prove they caused the problems",
+          "tier": "simple"
+        },
+        {
+          "text": "The team reviewed 28,345 possible adverse-event reports in an FDA database; 854 involved energy drinks or dietary supplements containing caffeine or other stimulants. Reports involving caffeine and stimulant products were **approximately 11 times more likely to mention cardiac arrest** than reports for products without those ingredients; heart attacks appeared **about 4.5 times more frequently** in reports associated with energy drinks and stimulant supplements. Because the reports were voluntary, the study **can't establish that the products caused the events**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Reports reviewed",
+              "28,345"
+            ],
+            [
+              "Reports involving caffeine or other stimulants",
+              "854"
+            ],
+            [
+              "Cardiac-arrest reports",
+              "approximately 11 times"
+            ],
+            [
+              "Heart-attack reports",
+              "about 4.5 times"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters blame caffeine and stimulants; others say added sugar or artificial sweeteners may be the real danger.",
+      "comment_count": 191,
+      "terms": [
+        "FDA",
+        "adverse event",
+        "arrhythmia"
+      ],
+      "entities": [
+        "American Heart Association",
+        "FDA",
+        "Sai Samayamanthula",
+        "Gregory M. Marcus",
+        "ScienceDaily"
+      ],
+      "comments": [
+        {
+          "by": "buredoranna",
+          "text": "I remember a great story [1] of a New York Times reporter, spending time in Baghdad, and had developed an arrhythmia. He went from doctor to doctor, without a solution. Then finally he got to a doctor who asked the right question... `There wasn't a lot to eat, which is good for me because I need to lose the weight.'\n`What were you drinking?'\nand I said, `Well, I'm not a drinker, a couple of…"
+        },
+        {
+          "by": "jimmar",
+          "text": "> reports of possible adverse events submitted to an FDA safety database from 2017 through 2025.\n> Of these, 854 reports involved energy drinks or dietary supplements containing caffeine or other stimulants. So the FDA gets about 100 reports per year for adverse events with caffeine OR other stimulants. This doesn't feel like a big problem, especially when tens of millions of people consume these…"
+        },
+        {
+          "by": "DiskoHexyl",
+          "text": "People who drink massive amounts of energy drinks may be exercising or doing other physically and mentally demanding things while sleep deprived, pre-exhausted/overtrained and/or going past failure. Sometimes with a hangover. At least from a personal experience. I’m not a fan of energy drinks, but this needs more data"
+        },
+        {
+          "by": "tancop",
+          "text": "Every drug comes with tradeoffs. Alcohol can give you liver disease and help you talk more openly, smoking gives you lung cancer and helps with stress, weed can make you chill or schizophrenic and opioids can make you feel amazing or stop your breathing. We all know caffeine can give you heart problems. If you take it anyway that's on you, and sometimes it's objectively a good choice (if you…"
+        },
+        {
+          "by": "erelong",
+          "text": "\"energy drinks\" is kind of vague, there's a wide spectrum of drinks available (some are derived from green tea which otherwise is thought to be beneficial; on the other hand lots probably have an excess of sugar which may not be necessary to consume at all) probably not a problem in moderation understandable if problems arise with kids having too many or too many than their body can handle (if…"
+        }
+      ],
+      "image": "https://www.sciencedaily.com/images/1920/cybersport-gamer-drinking-energy-drink.webp"
+    },
+    {
+      "id": 50547777,
+      "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
+      "hn": "https://news.ycombinator.com/item?id=50547777",
+      "title": "AI agents ask better questions than KPMG accountants in audit trial",
+      "time": 1795016974,
+      "points": 195,
+      "depth": [
+        {
+          "text": "AI agents sometimes asked **better audit questions** than **KPMG’s human team** in a trial",
+          "tier": "simple"
+        },
+        {
+          "text": "KPMG UK ran the exercise with **more than 100 agents** on an unnamed **FTSE 250 company’s accounts**; it was **not a formally approved statutory audit**. An auditor stepped in after one agent failed to correctly match regulatory requirements with the company’s documentation.",
+          "tier": "substance",
+          "data": [
+            [
+              "AI agents in trial",
+              "more than 100"
+            ],
+            [
+              "Development time",
+              "approximately four months"
+            ],
+            [
+              "Planned larger audits",
+              "as many as 20"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say AI agents can be more thorough than human auditors; others say the result may say more about KPMG and point to mistakes that still need human oversight.",
+      "comment_count": 100,
+      "terms": [
+        "AI agent",
+        "statutory audit",
+        "FTSE 250"
+      ],
+      "entities": [
+        "KPMG",
+        "Project Exponential",
+        "Cath Burnet",
+        "Financial Times",
+        "Deloitte",
+        "PwC",
+        "EY",
+        "Financial Reporting Council",
+        "Mercor",
+        "Opus",
+        "Enron"
+      ],
+      "comments": [
+        {
+          "by": "trentnix",
+          "text": "KMPG accountants are generally inexperienced, overworked, and poorly incentivized. The entire big firm public accounting model is exploitative at multiple levels."
+        },
+        {
+          "by": "origini",
+          "text": "Even in normal jobs we have such a HUGE difference between two people. The only organization which is working against are pilots with procedures and checklists. And every year a new human comes along and has to learn all of it again. Of course ONE AI agent and teaching ONE AI is massivly in an advantage as soon as its as good as the avg person in the job and it blows everyone else out of the…"
+        },
+        {
+          "by": "chilmers",
+          "text": "I think properly-trained AI agents will have a huge advantage against humans in such contexts: They will have no intrinsic tendency towards laziness. I think most humans have a natural inclination to optimise the amount of work we do in a professional setting, unless we really happen to enjoy it doing it for the sake of it. We can fight against this by setting up processes and incentives, but…"
+        },
+        {
+          "by": "chirau",
+          "text": "I am not surprised at all. AI labs were working with companies like Mercor for more than a year paying the consultants and accountants themselves from these very firms a good amount per typical task they work on everyday, some even providing actual documents. The expectations were more rigorous, and the rubrics pretty expansive. so yeah, the agent trained from tens of thousands of consultants…"
+        },
+        {
+          "by": "prometheus1992",
+          "text": "READ TFA- The experiment is conducted by KPMG itself. The result of this experiment is the equivalent of 'most of the code in faang today is written by AI'. The task of auditing a business is extremely complicated by virtue of data/information being all over the place. AI had not gotten to a point of where it could outperform humans but in this experiment they find out a group of agents are good…"
+        }
+      ],
+      "image": "https://europeanbusinessmagazine.com/wp-content/uploads/2026/06/ai5555-1024x678.jpg"
+    },
+    {
+      "id": 50535740,
+      "url": "https://newsletter.posthog.com/p/decision-models",
+      "hn": "https://news.ycombinator.com/item?id=50535740",
+      "title": "Not Everything Needs an LLM",
+      "time": 1794939378,
+      "points": 176,
+      "depth": [
+        {
+          "text": "someone says **simple, checkable jobs** can skip chatty LLMs and use **decision models** instead",
+          "tier": "simple"
+        },
+        {
+          "text": "At PostHog, two yes/no checks look for a real person's name or contact details. If either scores **0.4 or above**, Gemini rewrites the summary; **98.7%** of summaries skip the LLM call entirely.",
+          "tier": "substance",
+          "data": [
+            [
+              "PII check threshold",
+              "0.4"
+            ],
+            [
+              "summaries skipping the LLM call",
+              "98.7%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say simple work should use cheaper decision models instead of LLMs; skeptics question the tradeoffs and warn against using them on customer data.",
+      "comment_count": 73,
+      "terms": [
+        "LLM",
+        "decision model",
+        "PII",
+        "threshold",
+        "false positive",
+        "false negative",
+        "regex",
+        "embeddings",
+        "model router",
+        "calibrated model"
+      ],
+      "entities": [
+        "PostHog",
+        "Jev",
+        "Replay Vision",
+        "Gemini",
+        "Slack",
+        "GPT Luna",
+        "Error Tracking",
+        "Fernando",
+        "Jeeves",
+        "Kev",
+        "Jina Yoon",
+        "TypeSafe AI",
+        "Anthropic",
+        "OpenAI",
+        "Copilot Fusion",
+        "Amazon",
+        "Strands Decider",
+        "Sonnet 4.6",
+        "SQL"
+      ],
+      "comments": [
+        {
+          "by": "socketcluster",
+          "text": "It is true that they don't tend to give simple answers. But it reveals something about human biases that we tend to seek out simple answers to complex questions. We tend to think that because a question is short, that it's simple. We forgot how many details are involved and how much is actually going on underneath. Reality itself is often annoyingly complex. All living creatures, including…"
+        },
+        {
+          "by": "b3ing",
+          "text": "Problem is tech is full of PMs and other managers that don’t know technology. Things that could be algorithms, functions, programs, regex filters, etc are now LLMs because they don’t know anything else to solve problems"
+        },
+        {
+          "by": "dzink",
+          "text": "PostHog should not be using them on customer data, period."
+        },
+        {
+          "by": "throwawayffffas",
+          "text": "Using these decision models as a model router sounds really bad to me the models will most likely be newer than the decision model and thus the decision model will have no information about the capabilities of the model other than the short blurb you feed it."
+        },
+        {
+          "by": "lhk931122",
+          "text": "If this direction works out, I think service companies like Anthropic or OpenAI would provide it. If there is a lot of demand. Until then you have to set it up yourself locally, which is a hassle. Definitely, for components that act as sub agents in the agents I use personally, this direction actually looks useful for getting answers that rely even a little less on randomness and using them."
+        }
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!wD8h!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff406379a-4ff2-4e21-aaac-69cda7d7b37e_1200x630.png"
+    },
+    {
+      "id": 50538184,
+      "url": "https://hy.tencent.ai/research/hy4-flash",
+      "hn": "https://news.ycombinator.com/item?id=50538184",
+      "title": "Tencent Hy4 Flash",
+      "time": 1794949568,
+      "points": 162,
+      "depth": [
+        {
+          "text": "Tencent's **Hy4 Flash** is a **cheap AI model** getting tested for analytics, translation, and other tasks",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says it answered 43 data analytics questions for **$0.13**, versus **~$20** for high-end frontier models; another reports more translation errors than DeepSeek 4.1 Flash 1017.",
+          "tier": "substance",
+          "data": [
+            [
+              "Cost for 43 data analytics questions",
+              "$0.13"
+            ],
+            [
+              "High-end frontier model comparison",
+              "~$20"
+            ],
+            [
+              "Questions",
+              "43"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: fans praise the low cost and analytics results; skeptics report errors or reliability trouble, and some say DeepSeek still wins on price/performance.",
+      "comment_count": 26,
+      "terms": [
+        "benchmarks",
+        "open weights",
+        "inference speed",
+        "multimodal"
+      ],
+      "entities": [
+        "Tencent",
+        "Hy4 Flash",
+        "DeepSeek 4.1 Flash 1017",
+        "GPT-6 Luna",
+        "OpenRouter",
+        "Terra",
+        "glm-5.3 flash",
+        "qwen3.8 flash next",
+        "Baidu",
+        "ERNIE 5.5 Flash Preview",
+        "Eden",
+        "Sketchagent"
+      ],
+      "comments": [
+        {
+          "by": "chriddyp",
+          "text": "This one scored very well on our data analytics benchmarks [1]. Beat out GPT-6 Luna on the low end of cheap + accurate. Only cost $0.13 to answer 43 data analytics questions (compared to ~$20 on the high end of expensive frontier models). Once the open the weights, Hy4 Flash and regular Hy4 will be the only two open models on the frontier in the exam I've been running. [1]…"
+        },
+        {
+          "by": "ddxv",
+          "text": "Cheaper pricing than Deepseek 1017 and Luna and supposedly 'faster' (though I guess in practice a lot of that comes down to where it's running. Lately I let myself drift into using Terra and some other mildly 'expensive' models, but really I think the sweet spot for me is cheap and fast."
+        },
+        {
+          "by": "thesurlydev",
+          "text": "I've been using this model via openrouter for the last couple of days in place of deepseek flash with good results."
+        },
+        {
+          "by": "syntaxing",
+          "text": "Wow 224B with 64B anagrams. It might be possible to run this well on two 128GB machine. I’ve been exclusively using deepseek flash 1017 as my “smart” model through open router. Really curious how this compares"
+        },
+        {
+          "by": "tkslucas",
+          "text": "Lovely, it's always great to see new model drops"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50541619,
+      "url": "http://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences/",
+      "hn": "https://news.ycombinator.com/item?id=50541619",
+      "title": "Claude was trained on protein sequences at scale",
+      "time": 1794973663,
+      "points": 157,
+      "depth": [
+        {
+          "text": "Claude can predict **little-studied protein sequences**, while other tested frontier models stayed **near zero**",
+          "tier": "simple"
+        },
+        {
+          "text": "The test used **668 little-studied bacterial and archaeal proteins**, comparing real sequences with shuffled copies. Fable 5.2 got the next amino acid right **54% of the time on real proteins** and **9% on shuffled ones**; the author argues protein sequences were a sizeable part of Claude’s training.",
+          "tier": "substance",
+          "data": [
+            [
+              "Test proteins",
+              "668"
+            ],
+            [
+              "Real proteins",
+              "54%"
+            ],
+            [
+              "Shuffled proteins",
+              "9%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some see impressive evidence that Claude learned patterns in protein sequences; others ask what the skill is useful for and whether prediction amounts to biological understanding.",
+      "comment_count": 67,
+      "terms": [
+        "amino acid",
+        "protein language model",
+        "shuffled control",
+        "residue",
+        "LLM"
+      ],
+      "entities": [
+        "Claude",
+        "Claude Fable 5.2",
+        "Claude Opus 5.5",
+        "Anthropic",
+        "Xinming Tu",
+        "Leo Tianlai Chen",
+        "ProtGPT3",
+        "ProGen3",
+        "GPT",
+        "Gemini",
+        "Pfam",
+        "UniProt",
+        "llm-bioseq-probe"
+      ],
+      "comments": [
+        {
+          "by": "t0mek",
+          "text": "In \"Empire of AI\", the author mentions that when OpenAI included public GitHub repositories in its training data, the resulting model achieved better results even in fields unrelated to programming. Aside from the obvious applications in biochemistry, could protein sequences also be used as a new training data source to improve overall model quality? If that's true, it's quite fascinating that we…"
+        },
+        {
+          "by": "eddiewithzato",
+          "text": "Claude just blocks from anything in this field. Can't even work with my own DNA without triggering opus 5.5 50% of the time"
+        },
+        {
+          "by": "svnt",
+          "text": "In Nov/Dec 2025, just prior to the training cutoff for the first model to show this capability (Opus 4.7) I was working on solving arc-agi using claude code and was exploring using protein data and other adjacent data to improve performance. In January it seemed very clear the subscription models behind claude code became less competent, there was a whole series of posts about it. I stopped…"
+        },
+        {
+          "by": "highfrequency",
+          "text": "It would be cool if Claude were not explicitly trained on protein sequences at scale, and this were an emergent property from better fundamental understanding of chemical structure."
+        },
+        {
+          "by": "LarsDu88",
+          "text": "I just tried this, and the ability of Opus to recognize functional residues from arbritrary protein sequence is quite extraordinary. A skill I don't think any humans have outside of focused understanding of specific proteins."
+        }
+      ],
+      "image": "https://xinmingtu.cn/assets/img/llm-bioseq-probe/social_card.png"
+    },
+    {
+      "id": 50532118,
+      "url": "https://www.aikido.dev/blog/java-17-rce-vulnerability-cve-2026-114938",
+      "hn": "https://news.ycombinator.com/item?id=50532118",
+      "title": "Java4Shell: pre-auth RCE flaw in Java 17 puts servers at risk (CVE-2026-114938)",
+      "time": 1794926883,
+      "points": 150,
+      "depth": [
+        {
+          "text": "a **Java security flaw** can let attackers **run code** on some servers, sometimes without logging in",
+          "tier": "simple"
+        },
+        {
+          "text": "The bug is a **memory corruption** flaw in OpenJDK’s Base64 decoder. Exposure requires an affected Java build, an x86-64 CPU with **AVX-512 VBMI**, and attacker-controlled data reaching the decoder. As of November 18, the post reported **no confirmed reports** of exploitation in the wild.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 30,
+      "terms": [
+        "RCE",
+        "memory corruption",
+        "Base64",
+        "x86-64",
+        "AVX-512 VBMI",
+        "OpenJDK"
+      ],
+      "entities": [
+        "Java",
+        "OpenJDK",
+        "Calif",
+        "Red Hat",
+        "Oracle",
+        "Aikido"
+      ],
+      "comments": [
+        {
+          "by": "ChrisArchitect",
+          "text": "Some more discussion: https://news.ycombinator.com/item?id=50538240"
+        },
+        {
+          "by": "zenerdi0de",
+          "text": "https://calif.io/java4shell/"
+        }
+      ],
+      "image": "https://cdn.prod.website-files.com/642adcaf364024654c71df23/6afc5243bb4ae6870f759309_Node-JS_OG%20(2).jpg"
+    },
+    {
+      "id": 50525658,
+      "url": "https://www.reuters.com/business/aerospace-defense/pentagon-fails-ninth-straight-audit-despite-progress-organizing-finances-2026-11-16/",
+      "hn": "https://news.ycombinator.com/item?id=50525658",
+      "title": "Pentagon fails ninth straight audit despite progress in organizing finances",
+      "time": 1794875001,
+      "points": 150,
+      "depth": [
+        {
+          "text": "the Pentagon failed its **ninth straight audit**, despite **progress organizing its finances**",
+          "tier": "simple"
+        },
+        {
+          "text": "A comment quoting Reuters says **14 of 25** standalone reporting entities passed in fiscal year 2026, up from 11 the prior year. They account for **56% of the department’s assets and 86% of its liabilities**; Congress gave the Pentagon 10 years to pass, with the deadline in the fiscal year starting **October 2027**.",
+          "tier": "substance",
+          "data": [
+            [
+              "standalone reporting entities that passed",
+              "14 of 25"
+            ],
+            [
+              "entities that passed in the prior year",
+              "11"
+            ],
+            [
+              "assets represented",
+              "56%"
+            ],
+            [
+              "liabilities represented",
+              "86%"
+            ],
+            [
+              "time to pass",
+              "10 years"
+            ],
+            [
+              "deadline fiscal year",
+              "starting in October 2027"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 64,
+      "terms": [
+        "audit",
+        "standalone reporting entity",
+        "assets",
+        "liabilities",
+        "CFO"
+      ],
+      "entities": [
+        "Pentagon",
+        "Reuters",
+        "Jules Hurst",
+        "Defense Department",
+        "Congress",
+        "DOGE",
+        "IRS",
+        "FAA"
+      ],
+      "comments": [
+        {
+          "by": "az226",
+          "text": "I wonder how quickly they would pass audits if entity budgets would automatically be shaved 5% for each failing year."
+        },
+        {
+          "by": "JumpCrisscross",
+          "text": "\"Defense Department CFO Jules Hurst told Reuters an independent auditor found that financial statements for 14 of the Pentagon's 25 standalone reporting entities passed in the 2026 fiscal year, which ended in September, up from 11 the prior year. Those entities account for 56% of the department's assets and 86% of its liabilities. ... The Pentagon as a whole was first audited in 2018 and has…"
+        },
+        {
+          "by": "davidguetta",
+          "text": "why audit if failing doesn't matter ?"
+        },
+        {
+          "by": "scherlock",
+          "text": "Why is AI involved in a financial audit? That seems weird to me, but I'm not an auditor."
+        },
+        {
+          "by": "ulfw",
+          "text": "It's ok. In America no one cares."
+        }
+      ],
+      "image": null
+    },
+    {
       "id": 50538240,
       "url": "https://calif.io/java4shell/",
       "hn": "https://news.ycombinator.com/item?id=50538240",
@@ -985,23 +2284,91 @@
     }
   ],
   "glossary": {
-    "RCE": "Remote Code Execution: a flaw that lets an attacker make a computer run their commands from somewhere else.",
-    "Base64": "A way to represent data as ordinary text characters, even when the data itself is not text.",
-    "heap": "Memory a program can request as it runs, useful when it doesn’t know in advance how much space its data will need.",
-    "AVX-512 VBMI": "Special processor instructions that let some computers handle many bytes at once.",
-    "CVSS": "Common Vulnerability Scoring System: a scale people use to rate how serious a security flaw is.",
-    "DNS": "Domain Name System: the internet's address book, which helps a computer find a website from its name.",
+    "remote code execution": "A security flaw that lets someone run commands on another person's computer.",
+    "HTTP/2": "Hypertext Transfer Protocol version 2: a way to send several requests over one connection without making each wait for the last reply.",
+    "TLS": "Transport Layer Security: a way to scramble information as it travels between devices, so others can’t read it.",
+    "integer underflow": "A calculation drops below the lowest value a program can handle, which can make its result wrong.",
+    "CT logs": "Certificate Transparency logs: public lists of website certificates that people can watch for new entries.",
+    "AI Overviews": "Google's AI-generated summaries that appear with search results.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "affiliate link": "A link that can earn a site money if someone clicks through and buys or signs up.",
     "DNS resolver": "Domain Name System resolver: a service that looks up a website's name and tells your device where to find it.",
+    "VPN": "Virtual private network: a service that sends your internet traffic through another computer, often to protect it or make it appear to come from somewhere else.",
+    "CDN": "Content Delivery Network: A network of servers that helps websites handle requests closer to their users.",
+    "geo-blocking": "Restricting access based on the place your internet connection appears to come from.",
+    "compliance": "Following rules meant to stop a bank from helping illegal activity.",
+    "sanctions monitoring": "Checking whether customers or transactions involve people or groups restricted by governments.",
+    "kleptocracy": "A government where leaders use their power to steal wealth.",
+    "money laundering": "Hiding where money from crime came from so it looks legitimate.",
+    "consortium": "A group joining forces to work on a shared project.",
+    "RAG": "Retrieval-Augmented Generation: a way for an AI to look up material and use it when answering.",
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "model routing": "Sending a request to a cheaper or more powerful AI depending on what it needs.",
+    "open weights": "The model's learned settings are available for people to download and run themselves.",
+    "tokens": "Small pieces of text an AI counts as it reads or writes; they can affect how much a request costs.",
+    "agent": "An AI system that can take steps and use tools to get a task done, not just answer questions.",
+    "false-flag operation": "An attack staged to make it look like someone else did it.",
+    "voivodeship": "A region used as an area of local government in Poland.",
+    "DNS": "Domain Name System: the internet's address book, which helps a computer find a website from its name.",
+    "registrar": "A company where you register and manage a website’s domain name.",
+    "DNS propagation": "The wait while a change to a website name spreads through the systems that look it up.",
+    "clientHold": "A domain status that stops the name from working in DNS.",
+    "EBR": "Energy-Based Reasoner: a model that scores possible reasoning states and uses the score to guide improvement.",
+    "gradient descent": "A way to improve a model by making changes guided by how wrong its answers are.",
+    "latent reasoning state": "The model's hidden working version of a possible answer.",
+    "inference compute": "The computing resources used when a trained model generates answers.",
+    "coverage": "The share of a puzzle's different valid solutions that the model manages to find.",
+    "inference": "When an AI uses what it learned to answer or act, instead of being trained.",
+    "harness": "The surrounding code that gives an AI agent tools and a place to work, and checks what it does.",
+    "tool call": "A request from an AI assistant for another program to do something, such as run a command.",
+    "trajectory": "The path something takes as it moves through the air or space.",
+    "HTTP status code": "Hypertext Transfer Protocol status code: a number sent back by a website to say whether your request worked or what went wrong.",
+    "zeitgeist": "The mood or set of ideas that seems to define a particular time.",
+    "LLMs": "Large language models: computer programs trained on lots of writing that can produce text.",
+    "deepfakes": "Made-up audio or video that makes it look or sound as if a real person said or did something.",
+    "FDA": "Food and Drug Administration: the US agency that oversees food and drug rules, including food labeling.",
+    "adverse event": "A health problem someone reports after using a product; the report alone does not show the product caused it.",
+    "arrhythmia": "An irregular heartbeat.",
+    "AI agent": "An autonomous computer program that can carry out tasks.",
+    "statutory audit": "A legally required check of a company’s accounts, with a human auditor responsible for the final opinion.",
+    "FTSE 250": "A UK stock-market index made up of 250 companies; the article uses it to describe the company being audited.",
+    "decision model": "A program that weighs possible choices and predicts or selects one.",
+    "PII": "Personally Identifiable Information: details that could identify someone, such as an email or phone number.",
+    "threshold": "The score a system must reach before it takes an action.",
+    "false positive": "A system reports a match even though the person is not the one it was looking for.",
+    "false negative": "When a check misses a problem that is really there.",
+    "regex": "A pattern used to find or check text.",
+    "embeddings": "Numbers that represent the meaning of text so software can search or compare it.",
+    "model router": "A tool that picks which AI model handles a task.",
+    "calibrated model": "A model whose confidence scores match how often its answers are right.",
+    "benchmarks": "Tests people use to compare how well different models perform.",
+    "inference speed": "How quickly a model produces answers when you use it.",
+    "multimodal": "Able to work with more than one kind of input, such as text and images.",
+    "amino acid": "One of the small building blocks that proteins are made from.",
+    "protein language model": "An AI trained on protein sequences to learn their patterns and make predictions about them.",
+    "shuffled control": "A test version with the same letters rearranged, used to check whether a model depends on their order.",
+    "residue": "One amino acid building block in a protein.",
+    "RCE": "Remote Code Execution: a flaw that lets an attacker make a computer run their commands from somewhere else.",
+    "memory corruption": "When a program accidentally changes stored information it was not supposed to touch.",
+    "Base64": "A way to represent data as ordinary text characters, even when the data itself is not text.",
+    "x86-64": "A kind of computer code understood by many PC processors.",
+    "AVX-512 VBMI": "Special processor instructions that let some computers handle many bytes at once.",
+    "OpenJDK": "The open-source project that develops Java.",
+    "audit": "A check of whether an organization’s financial records are complete and match what it did.",
+    "standalone reporting entity": "A separate part of an organization whose finances are reported on and checked separately.",
+    "assets": "Things an organization owns or controls that have value.",
+    "liabilities": "Money an organization owes or bills it needs to pay.",
+    "CFO": "Chief Financial Officer: the person responsible for overseeing an organization’s finances.",
+    "heap": "Memory a program can request as it runs, useful when it doesn’t know in advance how much space its data will need.",
+    "CVSS": "Common Vulnerability Scoring System: a scale people use to rate how serious a security flaw is.",
     "rightsholder": "A person or organization that owns rights to something, such as copyrighted material.",
     "ISP": "Internet Service Provider: a company that connects people to the internet.",
-    "CDN": "Content Delivery Network: A network of servers that helps websites handle requests closer to their users.",
     "splinternet": "A split-up Internet where countries or regions have different rules or access.",
     "exploitation": "Using a software flaw to make a computer do something its makers did not intend.",
     "reverse engineering": "Figuring out how a program works by examining the program itself.",
     "CTF": "Capture the Flag: a security game where players solve challenges to find a hidden answer.",
     "zero-day": "A security flaw attackers can use before its maker has a fix.",
     "arbitration": "A way to settle a dispute with a neutral decision-maker instead of a judge or jury.",
-    "PII": "Personally Identifiable Information: details that could identify someone, such as an email or phone number.",
     "SSO": "Single Sign-On: a way to use one sign-in for several work services.",
     "eclipse": "When one object disappears behind another or into its shadow; Io disappears into Jupiter’s shadow.",
     "finite speed": "A speed that is limited, so light takes time to get from one place to another instead of arriving instantly.",
@@ -1011,7 +2378,6 @@
     "GEO": "Generative Engine Optimization: work to help content show up in answers from AI search tools.",
     "CTR": "Click-through rate: the share of people who see a result and then click it.",
     "referring domain": "A website that links to another website.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "jqXHR": "jQuery's object for a web request, which holds information about the request and its response.",
     "ReDoS": "Regular expression denial of service: a flaw where crafted text can make matching code take an extremely long time.",
     "querySelectorAll": "A browser method that finds all page elements matching a selector.",
@@ -1034,7 +2400,6 @@
     "YC": "Y Combinator: a group that gives young startups funding and advice.",
     "ADL": "Argument-dependent lookup: a C++ rule that helps find a function based on the kinds of values passed to it.",
     "ArbCom": "Arbitration Committee: Wikipedia's group for handling serious disputes between editors and imposing sanctions.",
-    "LLMs": "Large language models: computer programs trained on lots of writing that can produce text.",
     "NPOV": "Neutral point of view: Wikipedia's rule for presenting subjects without taking sides.",
     "doxxed": "Having someone's private identifying details exposed online, often to intimidate them.",
     "read-only": "You can look at the information, but you can’t change it or add anything.",
