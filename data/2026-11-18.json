@@ -1,0 +1,1060 @@
+{
+  "date": "2026-11-18",
+  "cards": [
+    {
+      "id": 50538240,
+      "url": "https://calif.io/java4shell/",
+      "hn": "https://news.ycombinator.com/item?id=50538240",
+      "title": "Java4Shell: RCE in OpenJDK when processing Base64",
+      "time": 1794949888,
+      "points": 827,
+      "depth": [
+        {
+          "text": "someone found a **serious flaw** in Java that can let attackers **run code remotely**",
+          "tier": "simple"
+        },
+        {
+          "text": "The decoder mishandles **malformed padding**, causing a **write past its output array**. It needs x86-64 with AVX-512 VBMI, and every target requires a **bespoke exploit profile**.",
+          "tier": "substance",
+          "data": [
+            [
+              "CVSS 4.0 score",
+              "9.2 out of 10 (CRITICAL)"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some think bespoke attack chains and network constraints make mass exploitation unlikely; others expect many affected hosts and a long tail of high-value targets to remain at risk.",
+      "comment_count": 215,
+      "terms": [
+        "RCE",
+        "Base64",
+        "heap",
+        "AVX-512 VBMI",
+        "CVSS"
+      ],
+      "entities": [
+        "Java4Shell",
+        "OpenJDK",
+        "Java",
+        "Calif.io",
+        "Oracle",
+        "Codex",
+        "Quang Luong"
+      ],
+      "comments": [
+        {
+          "by": "lucasluitjes",
+          "text": "From the section on performing heap grooming over the network (\"Remote Heap Feng Shui\"): > The current attack is sensitive to network conditions, like RTT and jitter. Low, stable round-trip times are preferred for a more reliable attack. In our controlled environment, we performed this attack over the internet through public IP addresses instead of just assuming perfect laboratory conditions. For…"
+        },
+        {
+          "by": "ievans",
+          "text": "Super impressive work by Calif as usual. The exploit conditions are very specific but there are still going to be a lot of hosts impacted. We at Semgrep published some free detection scripts here: https://github.com/semgrep/detection-scripts/tree/main/CVE-2... They look for these five conditions: * HotSpot VM: any OpenJDK build, Oracle JDK, or GraalVM JDK. Only HotSpot generates the stub. OpenJ9…"
+        },
+        {
+          "by": "leca",
+          "text": "What’s that old Chinese proverb? “May you live in interesting times”? It feels like we’re living in interesting times. How long will it take for a bad actor to seriously compromise critical infrastructure? My bet is within six months. The upside is that it’ll force legacy institutions and organizations with sub-par security to get good at security and modernize their legacy stacks. That, or get…"
+        },
+        {
+          "by": "AgentME",
+          "text": "Unconfirmed, but people on Twitter suggest this vulnerability has to do with the AVX512 implementation of Base64 decoding, and so this vulnerability can be worked around by running Java with the -XX:UseAVX=2 flag. ( https://x.com/sean_a_cassidy/status/2122791344573976817 )"
+        },
+        {
+          "by": "fsnovask",
+          "text": ">The best hacker today is neither AI nor human. It is the centaur hacker, part human, part AI. I think only really smart people are going to be left in Security and Software. I can barely fathom what this group is doing with AI right now (ignoring that their model probably isn't nerfed and mine would be) and I don't think any of this is trainable for the average developer. This is starting to…"
+        }
+      ],
+      "image": "https://calif.io/java4shell/poster.jpg"
+    },
+    {
+      "id": 50538994,
+      "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
+      "hn": "https://news.ycombinator.com/item?id=50538994",
+      "title": "Quad9's withdrawal from France: A canary in the coal mine",
+      "time": 1794953614,
+      "points": 509,
+      "depth": [
+        {
+          "text": "Quad9 is **leaving France** instead of changing its service to block **sites accused of copyright infringement**",
+          "tier": "simple"
+        },
+        {
+          "text": "After months of litigation, a French court imposed **daily financial penalties** on Quad9 for failing to block domains associated with alleged copyright infringement. Cloudflare says changing the service would undermine users’ **privacy and security**; it warns hospitals, universities and government offices could be caught unaware when the resolver stops working.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters say DNS blocking orders threaten an open Internet; others see the French case as an example of a government regulating the Internet, even if tech companies dislike it.",
+      "comment_count": 160,
+      "terms": [
+        "DNS",
+        "DNS resolver",
+        "rightsholder",
+        "ISP",
+        "CDN",
+        "splinternet"
+      ],
+      "entities": [
+        "Quad9",
+        "Cloudflare",
+        "1.1.1.1",
+        "Cisco",
+        "Google",
+        "OpenDNS",
+        "DNS4EU",
+        "Whalebone",
+        "IETF"
+      ],
+      "comments": [
+        {
+          "by": "johnhtodd",
+          "text": "(context: I'm the CTO at Quad9) It's really great seeing the support from other organizations in the same space as Quad9 on this topic. Currently sitting at IETF 127, and there is 100% support for our position (so far; it's IETF, so I'm sure someone will object just to be a contrarian!) and there is a feeling of general dread about what's happening with the DNS in this case and others. I have yet…"
+        },
+        {
+          "by": "liquid_oil",
+          "text": "The 2000s era was so strong for European internet freedoms with Bittorrent/early TOR/anonymous hosting providers. It's a shame it has completely vanished, what went wrong?"
+        },
+        {
+          "by": "robinpie",
+          "text": "The overregulation of the internet is really so horrible and shortsighted."
+        },
+        {
+          "by": "driverdan",
+          "text": "This article is nice but CF does not commit to doing anything in it. They say they are opposed to this and vaguely imply they might have to do something if they lose their appeal. Stop being vague. CF, will you commit to also withdrawing from impacted countries if the ruling goes against you?"
+        },
+        {
+          "by": "nout",
+          "text": "Never vote for political actors that support this."
+        }
+      ],
+      "image": "https://blog.cloudflare.com/_emdash/api/media/file/01M7NJA0M7FAQEQZBW0K0W5KKS.png"
+    },
+    {
+      "id": 50535992,
+      "url": "https://phrack.org/issues/73/introduction_md",
+      "hn": "https://news.ycombinator.com/item?id=50535992",
+      "title": "Phrack 73 Released",
+      "time": 1794940285,
+      "points": 362,
+      "depth": [
+        {
+          "text": "Phrack's **new issue** mixes **security research** with hacking history and a call for readers to contribute",
+          "tier": "simple"
+        },
+        {
+          "text": "It's the **third release** curated by the new staff, with **23 main papers** and eight additional articles in Line Noise. The topics span exploitation, reverse engineering, machine learning, hardware, and hacking history.",
+          "tier": "substance",
+          "data": [
+            [
+              "main papers",
+              "23"
+            ],
+            [
+              "additional Line Noise articles",
+              "8"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 52,
+      "terms": [
+        "exploitation",
+        "reverse engineering",
+        "CTF",
+        "zero-day"
+      ],
+      "entities": [
+        "Phrack",
+        "Line Noise",
+        "Halvar Flake",
+        "PhrackCTF",
+        "Binary Ninja",
+        "WinFSP",
+        "Chromium",
+        "Skia"
+      ],
+      "comments": [
+        {
+          "by": "ashleyn",
+          "text": "The computer security space has changed quite a bit from when I first learned of Phrack in the 90s-00s and would see plenty of \"how to pwn the phone company\" type articles. So like...when I see an exploit in the latest issue of Phrack (like the docker escape in this issue)...has it already been responsibly disclosed, given a CVE, etc? Or do they just drop 'em out of nowhere?"
+        },
+        {
+          "by": "trilogic",
+          "text": "Interesting: https://archives.phrack.org/issues/73/10.txt 2600, ccc.de, astalavista sk box, spaghettihackers and warez... cool stuff.\nBrrr, thinking to revive emule."
+        },
+        {
+          "by": "ptek",
+          "text": "Shout out to gamma and skyp3r for the bluebox article. I miss those days. :'(\n!A2DC\nRoxBox Dialer, Chicken Dialer 2.5 and Arrested Dialer Workshop 004B for the win :) https://demozoo.org/productions/tagged/phreaking-tool/ for screenshots :D"
+        },
+        {
+          "by": "gmmachine",
+          "text": "Might I just add, I like how unpolished these magazines are/were; how unpolished and open expectations engendered more freedom of expression. Sometimes, comments here on HN are like resumes, makes me reticent to comment out of not wanting to seem out of touch or whatever."
+        },
+        {
+          "by": "neuro",
+          "text": "300-baud modem synth, ANSI art, and my favorite: Issue 36."
+        }
+      ],
+      "image": "https://phrack.org/images/phrack-new.webp"
+    },
+    {
+      "id": 50540437,
+      "url": "https://consumerrights.wiki/w/ID.me_terms_required_for_IRS_sign-in",
+      "hn": "https://news.ycombinator.com/item?id=50540437",
+      "title": "ID.me terms required for IRS sign-in",
+      "time": 1794963105,
+      "points": 320,
+      "depth": [
+        {
+          "text": "ID.me's terms come with **IRS sign-in**, spelling out **arbitration** and how personal information may be used",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: some say ID.me works well or is the only option they could use; others object to handing sensitive information to a private company to reach government services.",
+      "comment_count": 140,
+      "terms": [
+        "arbitration",
+        "PII",
+        "SSO"
+      ],
+      "entities": [
+        "ID.me",
+        "IRS",
+        "Login.gov",
+        "TreasuryDirect",
+        "Ron Wyden",
+        "Elizabeth Warren"
+      ],
+      "comments": [
+        {
+          "by": "bborrez",
+          "text": "It is impossible to sign up for ID.me if you do not use a smartphone. I know a person who is in this situation who has bonds in Treasury Direct that they now apparently cannot cash out. It's absolutely nuts that a federal agency partnered with a disreputable third party that operates in this manner. The federal government says that all agencies need to offer logins via login.gov within two years…"
+        },
+        {
+          "by": "jasonriddle",
+          "text": "Just a heads up, not sure when this changed, but it looks like you can login to irs.gov using login.gov. See https://sa.www4.irs.gov/ola"
+        },
+        {
+          "by": "foresto",
+          "text": "For anyone trying to leave TreasuryDirect because of ID.me: (Note the certified letter option in the third paragraph.) \"We will close your account at your request if there are no security holdings, you have no pending purchases, and if there is no tax information for the current year in it. After 24 months with no activities or securities purchased/held within your account the system…"
+        },
+        {
+          "by": "swiftcoder",
+          "text": "I was completely unable to complete ID.me verification. ID.me can't cope with the fact that the address printed on my ID is one digit different from the one on my utility bills (because logical and physical streetnumbers don't always correspond)..."
+        },
+        {
+          "by": "HotGarbage",
+          "text": "The Treasury Direct switch is a joke. I sold all my bonds (most with a penalty) before the change just to avoid ID.me."
+        }
+      ],
+      "image": "https://consumerrights.wiki/images/logo/new_fixed_logo.png"
+    },
+    {
+      "id": 50536813,
+      "url": "https://www.sciencenorway.no/culture-history-history-of-science/350-years-ago-this-man-discovered-that-light-has-a-finite-speed/2737969",
+      "hn": "https://news.ycombinator.com/item?id=50536813",
+      "title": "350 years ago, Ole Rømer discovered that light has a finite speed",
+      "time": 1794943527,
+      "points": 318,
+      "depth": [
+        {
+          "text": "someone used **Io’s eclipses** to show that **light takes time to travel**",
+          "tier": "simple"
+        },
+        {
+          "text": "He noticed **Io’s eclipse timings shifted**: they were later than expected when Earth moved away from Jupiter, and earlier when it moved toward it. In 1676, he predicted Io would emerge **ten minutes later than expected**; he was right. His speed estimate was **about 25 per cent too low** by modern standards.",
+          "tier": "substance",
+          "data": [
+            [
+              "Time for light to cross Earth's orbit",
+              "approximately 22 minutes"
+            ],
+            [
+              "Rømer's estimate",
+              "roughly 225,000 kilometres per second"
+            ],
+            [
+              "Correct value",
+              "around 300,000 kilometres per second"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 92,
+      "terms": [
+        "eclipse",
+        "finite speed",
+        "stellar aberration"
+      ],
+      "entities": [
+        "Ole Rømer",
+        "Io",
+        "Jupiter",
+        "Earth",
+        "Jacob Wüsthoff Linder",
+        "NTNU",
+        "Académie des Sciences",
+        "Christiaan Huygens",
+        "Newton",
+        "James Bradley",
+        "Journal des sçavans"
+      ],
+      "comments": [
+        {
+          "by": "goache",
+          "text": "I created a web comic based on this measurement! https://randomlyunique.com/plancky/2018/roemers-speed-of-lig..."
+        },
+        {
+          "by": "kstrauser",
+          "text": "I don’t quite understand this. The length of the eclipse would be the same, right? Or was it more like that the eclipse ended 10 minutes earlier on the wall clock than expected? I guess what would surprise me about that is: 1. I didn’t know clocks were that good by then to make that reliably measurable. 2. I didn’t realize clocks of the time could measure the period of the eclipse that…"
+        },
+        {
+          "by": "clarkmoody",
+          "text": "Lightspeed [0] is a fascinating book that documents the scientists and experiments that built up to the modern measurement of the speed of light. It's interesting to see how prevailing theories of the aether and the nature of light fall to scientific scrutiny. The author details each speed of light estimate as the book goes on, and we get to see it converging on the modern value toward the end…"
+        },
+        {
+          "by": "calmbonsai",
+          "text": "A wonderful trilogy of sci-fi books by Greg Egan where the speed of light is not constant (a function of frequency) and how that impacts society. https://a.co/d/0fZNXGxD"
+        },
+        {
+          "by": "wanderingmind",
+          "text": "As a tangential question is there a book or resource that talks about such historical discoveries with details. Eratosthenes Measurement of Earth's circumference is another such awesome example. I'm sure history is full of such amazing discoveries but I'm unable to find a curated list of such important discoveries."
+        }
+      ],
+      "image": "https://image.sciencenorway.no/2734539.jpg?imageId=2734539&x=0&y=12.76&cropw=100&croph=38.28&panox=0&panoy=12.76&panow=100&panoh=38.28&width=1200&height=683"
+    },
+    {
+      "id": 50540178,
+      "url": "https://revscope.co/blog/search-seo-geo-2026/",
+      "hn": "https://news.ycombinator.com/item?id=50540178",
+      "title": "Google's AI answers reducing search traffic by 40%",
+      "time": 1794961078,
+      "points": 314,
+      "depth": [
+        {
+          "text": "Google's **AI answers** are taking clicks from websites, leaving publishers with **fewer visits** from search",
+          "tier": "simple"
+        },
+        {
+          "text": "In a randomized experiment with US desktop Chrome users, searches that would show an Overview averaged **0.37 clicks** to outside websites when the group saw them, versus **0.62** when Overviews were hidden; the authors report a **39.8% reduction**. It’s a working paper, not yet peer reviewed.",
+          "tier": "substance",
+          "data": [
+            [
+              "Clicks per search with Overview",
+              "0.37"
+            ],
+            [
+              "Clicks per search with Overview hidden",
+              "0.62"
+            ],
+            [
+              "Reported reduction",
+              "39.8%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some welcome AI answers for cutting through search garbage; others say lost visits threaten creators and the open web.",
+      "comment_count": 247,
+      "terms": [
+        "AI Overview",
+        "SEO",
+        "GEO",
+        "CTR",
+        "referring domain",
+        "LLM"
+      ],
+      "entities": [
+        "Google",
+        "AI Overviews",
+        "DataForSEO",
+        "Saharsh Agarwal",
+        "Ananya Sen",
+        "Chrome",
+        "Pew Research Center",
+        "RevScope"
+      ],
+      "comments": [
+        {
+          "by": "pcarolan",
+          "text": "When you typed who is on snl tonight? You used to get 10 pages of clickbait that made you scroll down endlessly for the answer. The best product for most questions is to just give you the answer. That said, the death of discovery is worth mourning. I hope someone solves it but this was dying before ai came along. SEO killed the web, AI killed SEO, and so it goes…"
+        },
+        {
+          "by": "asdfasgasdgasdg",
+          "text": "If Google didn’t put those there, people would be going to other LLMs to get their answers quickly. I don’t know how this ends but I strongly doubt any unilateral effort to withhold llm service by Google changes the medium term outcome."
+        },
+        {
+          "by": "temp3452",
+          "text": "The obvious end to this is ads in ai output. The interesting question is, will google be doing it or will the new (or probably current seo) be writing pages specifically designed to be added to steer ai answers? As the visitation to other parts of the web no longer served by the search model drops and pages are not updated, it will be easier to game the results and steer answers for some things."
+        },
+        {
+          "by": "wraptile",
+          "text": "As someone who did a fair amount of SEO in the past - good.\nSearch sucked so bad for the last decade and maybe AI can actually sift through all garbage better than whatever-nothing google's pagerank tried to do. The only danger right now is that people will gate information or stop creating. I think we desperately need cheap easy blogging networks like reddit where people can journal their…"
+        },
+        {
+          "by": "stickfigure",
+          "text": "Chatgpt has reduced my use of Google search by a lot more than 40%. In the long run will there be room in the market for Google's (free, presumably low-spec) AI search results? Paid services give you models that provide much better answers."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50537156,
+      "url": "https://github.com/jquery/jquery/releases/tag/4.1.0",
+      "hn": "https://news.ycombinator.com/item?id=50537156",
+      "title": "jQuery 4.1.0",
+      "time": 1794945040,
+      "points": 312,
+      "depth": [
+        {
+          "text": "a familiar web library got a **new release** with **selector and XML fixes**",
+          "tier": "simple"
+        },
+        {
+          "text": "jQuery 4.1.0 adds a **`responseURL` field** to `jqXHR`, supports **form-associated custom elements**, and fixes **ReDoS in identifier matching**. It also drops `getElementsBy{Tag,Class}Name` in favor of `querySelectorAll`.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say jQuery still suits small site enhancements and value its event model; others prefer vanilla JS or modern frameworks and see little reason to use it.",
+      "comment_count": 161,
+      "terms": [
+        "jqXHR",
+        "ReDoS",
+        "querySelectorAll",
+        "form-associated custom elements",
+        "XML"
+      ],
+      "entities": [
+        "jQuery",
+        "JavaScript",
+        "GitHub",
+        "TuxCare",
+        "Safari"
+      ],
+      "comments": [
+        {
+          "by": "noduerme",
+          "text": "The composability of jQuery has been an inspiration for the way I design my own frameworks and tools. One thing I still regularly use jQuery for, though, that's rarely mentioned, is its event model. You can put a listener on any object, not just things in the DOM. Any data object can trigger an event. This is incredibly powerful for isolating logic from DOM elements and events. A frequent use…"
+        },
+        {
+          "by": "hax0ron3",
+          "text": "Although jQuery isn't very relevant these days, I still find its pattern of chaining a sequence of methods on a set chosen by a selector to be a beautiful example of going with a language's features."
+        },
+        {
+          "by": "CM30",
+          "text": "I'm a tad surprised jQuery still exists, though it's kinda neat it does. Always interesting to see historical projects with less and less modern day relevance get continued like this. And while most of the use cases for jQuery have long since died out with things like classList, querySelector, etc, I do feel there's probably value in a framework that focuses on minor enhancements to a site rather…"
+        },
+        {
+          "by": "joel2oliver",
+          "text": "I remember how painful it was to deal with IE/Netscape. Event handlers, etc... jQuery made so many lives easier. It’s quite an achievement, and I can stretch to say that JavaScript development might not be here today without it!"
+        },
+        {
+          "by": "gosen",
+          "text": "I'm actually surprised (in a good way) that it's still maintained, and it still helps half of the internet to function"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/e1636eaccf68c0b4fdb380e5343d3db51b33422fa6d711aae3c13466bb7be3b3/jquery/jquery/releases/tag/4.1.0"
+    },
+    {
+      "id": 50536387,
+      "url": "https://www.solidjs.com/blog/solid-2-0-the-long-hold/",
+      "hn": "https://news.ycombinator.com/item?id=50536387",
+      "title": "Solid 2.0",
+      "time": 1794941777,
+      "points": 291,
+      "depth": [
+        {
+          "text": "Solid's **new release** is stable, with **async data** and clearer warnings built into its UI framework",
+          "tier": "simple"
+        },
+        {
+          "text": "Computations can return a Promise or async iterator, letting downstream code handle **async work** and race conditions automatically. **Server functions** support RPC calls and persistent connections, while development builds flag **reactive mistakes** with their location and a fix.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters say agent-focused diagnostics help people writing code by hand too; others dismiss the AI framing or argue that agents make frameworks unnecessary.",
+      "comment_count": 85,
+      "terms": [
+        "fine-grained reactivity",
+        "reactive graph",
+        "Promise",
+        "async iterator",
+        "server functions",
+        "RPC",
+        "Server Sent Events"
+      ],
+      "entities": [
+        "Solid",
+        "SolidStart",
+        "Ryan Carniato",
+        "React",
+        "Svelte",
+        "Vue",
+        "TC39",
+        "TanStack Query",
+        "Sentry",
+        "Vite",
+        "Google Chrome"
+      ],
+      "comments": [
+        {
+          "by": "wk_end",
+          "text": "What's amusing and/or interesting is that the stuff under \"Built to Be Written by Agents\" also would make it easier to write by hand, I imagine. It's just better debug diagnostics; nothing really to do with agentic development specifically. Maybe that's just marketing, but it's really intriguing how human best practices are also agent best practices; how, maybe, we've reached a point where even…"
+        },
+        {
+          "by": "pwmglenn",
+          "text": "Remix originally pitched itself as solving the 'middle' layer between frontend and backend. Closing the gap. It never quite managed to do so imo. Solid's solution here is beautiful. The server RPC and 'live' and 'broadcast' are seamless, and feel much more natural to use than liveview or htmx/datastar imo."
+        },
+        {
+          "by": "FlameWolf",
+          "text": "A gist I wrote about my experience migrating from Solid 1.0 to Solid 2.0 (RC) a couple of months ago: https://gist.github.com/FlameWolf/7b3be7acb06775f02ea4a57297..."
+        },
+        {
+          "by": "miguel-muniz",
+          "text": "Congrats to Ryan and the team. I never got deep enough into front-end to understand the nuance of these things but I still occasionally tuned into his Friday streams just to listen. You can tell he cares about this subject deeply and I enjoy listening to passionate people talk about their craft."
+        },
+        {
+          "by": "maxloh",
+          "text": "There are still not many component libraries for Solid. But if I needed to build something from scratch, I would definitely try Solid. It just feels like the right way React should be."
+        }
+      ],
+      "image": "https://www.solidjs.com/og/blog/solid-2-0-the-long-hold.png"
+    },
+    {
+      "id": 50539610,
+      "url": "https://github.com/microsoft/onnxruntime",
+      "hn": "https://news.ycombinator.com/item?id=50539610",
+      "title": "Microsoft's ONNX Runtime has disappeared from GitHub",
+      "time": 1794957529,
+      "points": 283,
+      "depth": [
+        {
+          "text": "Microsoft's ONNX Runtime has **vanished** from **GitHub**, leaving developers wondering why the repository went dark",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter said their **evals started failing** and found no advance warning. Others wondered whether it was connected to a **compromised Microsoft Agent Framework**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 64,
+      "terms": [
+        "ONNX Runtime",
+        "evals",
+        "fork",
+        "telemetry"
+      ],
+      "entities": [
+        "Microsoft",
+        "ONNX Runtime",
+        "GitHub",
+        "Microsoft Agent Framework"
+      ],
+      "comments": [
+        {
+          "by": "roseway4",
+          "text": "Microsoft Agent Framework has been compromised[0]. The repo is also offline[1]. Possibly related? [0] https://socket.dev/blog/agent-framework-pypi-package-comprom... [1] https://github.com/microsoft/agent-framework"
+        },
+        {
+          "by": "hiddenvulkcan",
+          "text": "Maybe related to one of their packages that was compromised? Not sure if GitHub was the attack vector, but possibly tidying stuff up Source: https://opensourcemalware.com/blog/agent-framework-pypi-comp..."
+        },
+        {
+          "by": "eddythompson80",
+          "text": "FYI - ONNX will automatically exfiltrate data about your application with no way to opt out other than building it from source with telemetry disabled. Maybe you could block DNS too."
+        },
+        {
+          "by": "spdustin",
+          "text": "I wonder if they found new vectors that backdoor'ed models could exploit, like that discussed in the most recent Phrack [^0] [0]: https://phrack.org/issues/73/backdoor-attacks-against-machin..."
+        },
+        {
+          "by": "nvader",
+          "text": "We found out about this this morning, when evals started failing in our pipelines. I've been looking around, but it doesn't seem like there was any advance warning about this. Does anyone know why or how a repository with 22k stars just went dark?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50542135,
+      "url": "https://reddit.com/r/recruitinghell/comments/1xyr6ml/interviewed_at_a_yc_startup_spent_30_hours/",
+      "hn": "https://news.ycombinator.com/item?id=50542135",
+      "title": "Interviewed at a YC startup, found out they used my LinkedIn without permission",
+      "time": 1794978690,
+      "points": 284,
+      "depth": [
+        {
+          "text": "someone says a **YC startup** used their **LinkedIn** to send messages **without permission**",
+          "tier": "simple"
+        },
+        {
+          "text": "The quoted account says connecting a personal LinkedIn was a **trial prerequisite**; after **3 weeks of silence**, they found it had been used to send **connection requests and messages**.",
+          "tier": "substance",
+          "data": [
+            [
+              "time until discovery",
+              "3 weeks"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say the company should be sued; another thinks it may have been a simple mistake.",
+      "comment_count": 50,
+      "terms": [
+        "API",
+        "OAuth tokens",
+        "warm leads",
+        "YC"
+      ],
+      "entities": [
+        "YC",
+        "LinkedIn",
+        "Standout"
+      ],
+      "comments": [
+        {
+          "by": "ifh-hn",
+          "text": "Admittedly I have zero experience job hunting in the US startup scene. But if a company I was interviewing for asked for the password to one of my personal accounts I would refuse. Would I do free work for them as well? Probably not. I find it hard to believe this stuff is a thing..."
+        },
+        {
+          "by": "robertclaus",
+          "text": "They should absolutely be sued for this type of incompetence. What an absurdly stupid thing for them to get caught doing."
+        },
+        {
+          "by": "dieselgate",
+          "text": "It’s weird to visit reddit because I rarely go on now after their login changes—anyway here’s what I perceive to be the crux from the “article”: > During the trial, I connected my personal LinkedIn to their platform. It was a pre-requisite. Other comments make it seem like Author wrote their credentials on a paper or something but it’s not clear from what I understand. It seems like linking the…"
+        },
+        {
+          "by": "MiroslavPokorny",
+          "text": "> After 3 weeks of silence, I discovered they have been using my LinkedIn to send connection requests and messages from my account without my knowledge."
+        },
+        {
+          "by": "rognjen",
+          "text": "This isn't a reddit/hacker news topic. This is a police / lawyer one."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50537441,
+      "url": "https://techforpalestine.org/wikipedia-report",
+      "hn": "https://news.ycombinator.com/item?id=50537441",
+      "title": "Israel vs. Wikipedia",
+      "time": 1794946203,
+      "points": 186,
+      "depth": [
+        {
+          "text": "a report alleges **pro-Israel efforts** to shape **Wikipedia** could influence what **AI learns**",
+          "tier": "simple"
+        },
+        {
+          "text": "Tech for Palestine says it documented **17 pro-Israel efforts** to influence Wikipedia since 2001, with **nine still active**. It says none of the claims in the ADL’s “Editing for Hate” report held up, and cites a **$46.5M contract** to make AI chatbots more pro-Israel.",
+          "tier": "substance",
+          "data": [
+            [
+              "documented efforts",
+              "17"
+            ],
+            [
+              "still active",
+              "9"
+            ],
+            [
+              "AI chatbot contract",
+              "$46.5M"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters call the report partisan and cite Tech for Palestine’s Wikipedia disputes; others warn that coordinated editing on either side can bias pages that AI uses.",
+      "comment_count": 45,
+      "terms": [
+        "ADL",
+        "ArbCom",
+        "LLMs",
+        "NPOV",
+        "doxxed"
+      ],
+      "entities": [
+        "Tech for Palestine",
+        "Wikipedia",
+        "ADL",
+        "OpenAI",
+        "Google",
+        "Anthropic",
+        "Wikimedia Foundation",
+        "Builders for Tomorrow",
+        "Builders for Israel",
+        "Clock Tower X",
+        "Heritage Foundation",
+        "AIPAC",
+        "CAMERA",
+        "Jimmy Wales",
+        "Sheryl Sandberg",
+        "Bill Ackman",
+        "Shaun Maguire",
+        "David Marcus",
+        "Paul Biggar",
+        "Alexandra Fine",
+        "Mari Hall",
+        "NewsCord",
+        "Media Bias Watch",
+        "SourcedPress",
+        "Arabic"
+      ],
+      "comments": [
+        {
+          "by": "rappatic",
+          "text": "Unfortunately the open nature of Wikipedia leaves it vulnerable to coordinated 'edit attacks' like this. Similar pro-Palestine cabals have launched efforts to rewrite important pages. In several cases, editors were banned without their edits being reverted [1]. Several claims were attributed to sources that didn't support said claims, and these claims remain in their articles due to a discussion…"
+        },
+        {
+          "by": "quietBitshift",
+          "text": "I find it difficult to take this report as an impartial investigation when it makes claims like this: > In most countries, a library running a Wikipedia editing course would be benign, and even positive. However, Israeli participation in editing Wikipedia must be understood within the context of Israel’s 78-year occupation of Palestine [...] In this context, any initiative taken by Wikimedia…"
+        },
+        {
+          "by": "ChrisArchitect",
+          "text": "Title is: Israel Is Attacking Wikipedia"
+        },
+        {
+          "by": "kombine",
+          "text": "Why is this flagged?"
+        },
+        {
+          "by": "jswartz",
+          "text": "Wikipedia's biases are a reflection of its editors, which is why I now only use it for math/science topics, not emotionally-charged topics. Hopefully AI is smart enough to know potentially biased topics when it sees them, and provides all sides in its answers."
+        }
+      ],
+      "image": "https://techforpalestine.org/t4p-social-logo.png"
+    },
+    {
+      "id": 50539747,
+      "url": "https://wiki.archiveteam.org/index.php/Apple_Discussions",
+      "hn": "https://news.ycombinator.com/item?id=50539747",
+      "title": "Archive Team is archiving the Apple Support Community (closes November 20, 2026)",
+      "time": 1794958378,
+      "points": 173,
+      "depth": [
+        {
+          "text": "Archive Team is **archiving** the **Apple Support Community** before it closes for good",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: some want to preserve years of user questions and issue reports; others say the forum was frustrating and not worth saving.",
+      "comment_count": 56,
+      "terms": [
+        "read-only"
+      ],
+      "entities": [
+        "Archive Team",
+        "Apple",
+        "Apple Discussions",
+        "Apple Support",
+        "Apple Support Community",
+        "Apple Tech Exchange",
+        "Google",
+        "iOS",
+        "Microsoft"
+      ],
+      "comments": [
+        {
+          "by": "digitaldragon",
+          "text": "You can see the live progress here: https://tracker.archiveteam.org/applediscussions/ Related: The Apple Support Community will permanently close on November 20, 2026 - https://news.ycombinator.com/item?id=50449440"
+        },
+        {
+          "by": "notnmeyer",
+          "text": "i’ve never stumbled across any of these pages and had them be useful in any way shape or form. maybe others have had a different experience, but i think removing them is actually a great idea."
+        },
+        {
+          "by": "EarthAmbassador",
+          "text": "I never understood the point of the blind leading the blind within the Apple Support Community. There was quite a bit of misinformation there, but not nearly enough official instruction from Apple itself. Am I wrong about this?"
+        },
+        {
+          "by": "xp84",
+          "text": "I support anyone’s noble attempts to avoid loss of information, and these forums do at least track the long history of reported issues with Apple products, so, good for them. But if ever there was a more frustrating support forum, this one was it. Only Apple could pull off something so audacious: hosting a support forum with zero paid representatives present, while still having almost every…"
+        },
+        {
+          "by": "caned",
+          "text": "Whew. I thought I would really miss searching about some age-old glitchy problem in iOS or why I lost all my contacts in a software update, finding out that hundreds of other people have been dealing with the same problems, not finding any answer and just shrugging my shoulders. Now, Apple says \"just shrug your shoulders.\""
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50538303,
+      "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+      "hn": "https://news.ycombinator.com/item?id=50538303",
+      "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+      "time": 1794950172,
+      "points": 164,
+      "depth": [
+        {
+          "text": "a Harvard study found **AI agents** brought more code, but **finished work stayed flat** as **reviews slowed**",
+          "tier": "simple"
+        },
+        {
+          "text": "Across 718 firms, the authors found engineers added **about 30 percent more code**, while **finished work did not measurably rise**; time from pull-request submission to merge took **49 percent longer**. The working paper has no indication of completed peer review, and the study examined software, not legal work.",
+          "tier": "substance",
+          "data": [
+            [
+              "firms studied",
+              "718"
+            ],
+            [
+              "code added",
+              "about 30 percent"
+            ],
+            [
+              "time to merge",
+              "49 percent longer"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say human review is still the painful bottleneck; others say agents and changed review practices can handle the code, leaving specs, testing, or prioritization as the real pinch point.",
+      "comment_count": 214,
+      "terms": [
+        "pull request",
+        "difference-in-differences",
+        "confidence interval",
+        "working paper"
+      ],
+      "entities": [
+        "Harvard University",
+        "Fiona Chen",
+        "James Stratton",
+        "Jellyfish",
+        "Revelio Labs"
+      ],
+      "comments": [
+        {
+          "by": "AlwaysRock",
+          "text": "All I do all day is review ai written code. my own or teammates. I really do not enjoy it."
+        },
+        {
+          "by": "lz400",
+          "text": "A lot of this university research on AI feels dated. This is something we all faced months ago. Many times they're also reaching conclusions using obsolete models, etc. Feels like things move too fast for traditional research cycles to catch up to AI dev"
+        },
+        {
+          "by": "jacobgorm",
+          "text": "The problem is that when nobody writes code or feels ownership over it anymore, nobody will be qualified to or really interested in doing the code reviews. The way forward could involve dropping code reviews altogether. You could argue that the useful pingpong between coder and reviewers has been replaced by the similar pingpong between the prompter and the agent."
+        },
+        {
+          "by": "jeppester",
+          "text": "This has been obvious for a while. The big speed up comes from not having to understand the code - e.g. not doing thorough human review. Personally I find that super hard, because whenever I review AI code I find many things that could have been a lot simpler or more readable. But whether I like it or not, I think we are heading more and more towards just trusting the machine."
+        },
+        {
+          "by": "bob1029",
+          "text": "The problem with code review is that it is often not a healthy process to begin with. I've observed that code review tends to concentrate to one person. It's always the slowest asshole of a person too for some reason. The amount of meltdowns I've seen these people go through over the most insignificant bullshit was off the charts well before AI showed up. I used to be one of these people. I think…"
+        }
+      ],
+      "image": "https://complexdiscovery.com/wp-content/uploads/2026/10/AI-Report-One.jpg"
+    },
+    {
+      "id": 50537290,
+      "url": "https://browser.engineering/",
+      "hn": "https://news.ycombinator.com/item?id=50537290",
+      "title": "Web Browser Engineering (2021)",
+      "time": 1794945695,
+      "points": 160,
+      "depth": [
+        {
+          "text": "this book teaches you to build a **complete web browser** in **a couple thousand lines**",
+          "tier": "simple"
+        },
+        {
+          "text": "The browser is built in **Python**, and its topics include creating windows and drawing to a canvas, changing the DOM and reacting to events, cookies and logins, **XSS and CSRF**, the event loop and rendering pipeline, keyboard input, zooming, and **the accessibility tree**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: the book’s quoted passage says WebAssembly may one day be co-equal to JavaScript on the web; one commenter says it’s for compatibility and speeding up critical code, not that.",
+      "comment_count": 21,
+      "terms": [
+        "DOM",
+        "XSS",
+        "CSRF",
+        "event loop",
+        "rendering pipeline",
+        "accessibility tree",
+        "canvas",
+        "WebAssembly",
+        "TLD",
+        "layout engine"
+      ],
+      "entities": [
+        "Web Browser Engineering",
+        "Python",
+        "JavaScript",
+        "Pavel Panchekha",
+        "Chris Harrelson",
+        "WebAssembly"
+      ],
+      "comments": [
+        {
+          "by": "pavpanchekha",
+          "text": "Hi folks, one of the authors here. Happy to answer questions. Chris and I wrote the book starting in 2019, and the book was largely done in late 2024, with publication in 2025. In case folks are wondering, literally none of it was AI-written, because the AIs didn't exist yet!"
+        },
+        {
+          "by": "coreyp_1",
+          "text": "Nice. I'm on the path to building a browser. I had vaguely remembered this site from when it was listed before, but I couldn't find it when looking again. It's bookmarked now. :) I'm writing my own libraries (because, with AI, why not indulge in low-level fun?), and I'm almost to the layout engine. So far (all C libraries), I can read multiple image formats, parse HTML/XML and CSS, rasterize text…"
+        },
+        {
+          "by": "kuharich",
+          "text": "Past comments: https://news.ycombinator.com/item?id=26707368 , https://news.ycombinator.com/item?id=28898157 , https://news.ycombinator.com/item?id=41846780"
+        },
+        {
+          "by": "NooneAtAll5",
+          "text": "who tf thought .engineering should be allowed to be a TLD?"
+        },
+        {
+          "by": "TZubiri",
+          "text": "pangram says not LLM Congratulations on not slopping out"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50516689,
+      "url": "https://arcentry.com/blog/do-repeat-yourself/",
+      "hn": "https://news.ycombinator.com/item?id=50516689",
+      "title": "Do Repeat Yourself",
+      "time": 1794830806,
+      "points": 150,
+      "depth": [
+        {
+          "text": "someone says teams should **keep their tools** and **repeat some work** instead of forcing one stack",
+          "tier": "simple"
+        },
+        {
+          "text": "In the bank example, the platform team picks Go, React, and Kubernetes for everyone, and a requested chart feature gets **deprioritised**. The proposed **service-oriented architecture** instead standardizes **RESTful APIs** and their documentation, while leaving API implementation to each team.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say copying is cheaper than a bad shared abstraction; others want shared UI standards and gradual migration to avoid a disjointed product.",
+      "comment_count": 51,
+      "terms": [
+        "SOA",
+        "API",
+        "REST",
+        "DRY",
+        "Kubernetes"
+      ],
+      "entities": [
+        "Megabank",
+        "Arcentry",
+        "Go",
+        "Svelte",
+        "Kubernetes",
+        "Node",
+        "Erlang",
+        "React",
+        "PHP",
+        "Apache",
+        "Angular",
+        "Docker",
+        "Swagger",
+        "Lisa",
+        "Steve",
+        "Hanna",
+        "Mike",
+        "Sandi Metz"
+      ],
+      "comments": [
+        {
+          "by": "pmg101",
+          "text": "Sometimes syntactic duplication can give you a hint to underlying semantic duplication. But it's no more than a hint. DRY doesn't mean don't repeat a similar looking block of code, it means try to structure your code so that each element of the design has a single representation. There's no shortcut to good design where no thinking is required, much as a lot of people seem to wish there were."
+        },
+        {
+          "by": "umvi",
+          "text": "Or as the go proverb goes \"a little copying is better than a little dependency\" ( https://go-proverbs.github.io/ )"
+        },
+        {
+          "by": "donatj",
+          "text": "We are exactly where the hypothetical bank is. Our large outer company gobbled up nine or ten smaller companies with disparate stacks (PHP, Haskell, C#, a few others). After a couple years of integrating through shared APIs, new management is trying to force us all into a single platform - Go and Node+React. We have thousands of years of combined experience in our various technologies and we are…"
+        },
+        {
+          "by": "nitwit005",
+          "text": "My company has a script to set up a repo in an expected pattern. The first thing you have to do is disable a bunch of logging that no one uses, as that can cripple the performance of your app. Then you have to go update a bunch of dependencies with security problems. Then you have to fix their git hooks. Which is to say, standard does not imply good. A lot of times companies just standardize…"
+        },
+        {
+          "by": "jedbrooke",
+          "text": "reminds me of WET: Write Everything Twice. Instead of immediately jumping to DRY, actually write out the two similar tools, then see what actually makes sense to combine into a shared dependency."
+        }
+      ],
+      "image": "https://arcentry.com/blog/do-repeat-yourself/do-repeat-yourself.png"
+    }
+  ],
+  "glossary": {
+    "RCE": "Remote Code Execution: a flaw that lets an attacker make a computer run their commands from somewhere else.",
+    "Base64": "A way to represent data as ordinary text characters, even when the data itself is not text.",
+    "heap": "Memory a program can request as it runs, useful when it doesn’t know in advance how much space its data will need.",
+    "AVX-512 VBMI": "Special processor instructions that let some computers handle many bytes at once.",
+    "CVSS": "Common Vulnerability Scoring System: a scale people use to rate how serious a security flaw is.",
+    "DNS": "Domain Name System: the internet's address book, which helps a computer find a website from its name.",
+    "DNS resolver": "Domain Name System resolver: a service that looks up a website's name and tells your device where to find it.",
+    "rightsholder": "A person or organization that owns rights to something, such as copyrighted material.",
+    "ISP": "Internet Service Provider: a company that connects people to the internet.",
+    "CDN": "Content Delivery Network: A network of servers that helps websites handle requests closer to their users.",
+    "splinternet": "A split-up Internet where countries or regions have different rules or access.",
+    "exploitation": "Using a software flaw to make a computer do something its makers did not intend.",
+    "reverse engineering": "Figuring out how a program works by examining the program itself.",
+    "CTF": "Capture the Flag: a security game where players solve challenges to find a hidden answer.",
+    "zero-day": "A security flaw attackers can use before its maker has a fix.",
+    "arbitration": "A way to settle a dispute with a neutral decision-maker instead of a judge or jury.",
+    "PII": "Personally Identifiable Information: details that could identify someone, such as an email or phone number.",
+    "SSO": "Single Sign-On: a way to use one sign-in for several work services.",
+    "eclipse": "When one object disappears behind another or into its shadow; Io disappears into Jupiter’s shadow.",
+    "finite speed": "A speed that is limited, so light takes time to get from one place to another instead of arriving instantly.",
+    "stellar aberration": "Stars seem to shift slightly across the sky during the year because Earth moves while their light travels.",
+    "AI Overview": "A Google-made summary placed above ordinary search results, with links to the pages it used.",
+    "SEO": "Search engine optimization: making changes to a webpage so it is more likely to appear in search results.",
+    "GEO": "Generative Engine Optimization: work to help content show up in answers from AI search tools.",
+    "CTR": "Click-through rate: the share of people who see a result and then click it.",
+    "referring domain": "A website that links to another website.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "jqXHR": "jQuery's object for a web request, which holds information about the request and its response.",
+    "ReDoS": "Regular expression denial of service: a flaw where crafted text can make matching code take an extremely long time.",
+    "querySelectorAll": "A browser method that finds all page elements matching a selector.",
+    "form-associated custom elements": "Custom HTML elements that can take part in a form, such as sending a value when the form is submitted.",
+    "XML": "Extensible Markup Language: a way to label pieces of information so computers can store and exchange them.",
+    "fine-grained reactivity": "A way for an app to update only the parts affected when data changes, rather than refreshing everything.",
+    "reactive graph": "A map of how pieces of app data depend on each other, so the app knows what needs updating when something changes.",
+    "Promise": "A value that will arrive later, like the result of a request to fetch data.",
+    "async iterator": "A sequence of values that arrive over time rather than all at once.",
+    "server functions": "Functions called from an app that run on a server instead of on the user's device.",
+    "RPC": "Remote Procedure Call: a way for one program to ask another program to do something directly.",
+    "Server Sent Events": "A way for a server to keep sending updates over one open connection.",
+    "ONNX Runtime": "A tool that lets software run machine-learning models.",
+    "evals": "Short tests used to check how well a model handles tasks you care about.",
+    "fork": "A separate copy of a shared software project that people can take in a different direction.",
+    "telemetry": "Information a program sends back about how it is being used or whether it is working properly.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "OAuth tokens": "Digital passes that let an app use an account without needing the account’s password.",
+    "warm leads": "People who may be interested in buying because they already have a connection to the seller.",
+    "YC": "Y Combinator: a group that gives young startups funding and advice.",
+    "ADL": "Argument-dependent lookup: a C++ rule that helps find a function based on the kinds of values passed to it.",
+    "ArbCom": "Arbitration Committee: Wikipedia's group for handling serious disputes between editors and imposing sanctions.",
+    "LLMs": "Large language models: computer programs trained on lots of writing that can produce text.",
+    "NPOV": "Neutral point of view: Wikipedia's rule for presenting subjects without taking sides.",
+    "doxxed": "Having someone's private identifying details exposed online, often to intimidate them.",
+    "read-only": "You can look at the information, but you can’t change it or add anything.",
+    "pull request": "A proposal to add your code changes to a shared project, usually asking others to review them first.",
+    "difference-in-differences": "A way to compare how results change over time at firms that adopt a tool and firms that have not yet adopted it.",
+    "confidence interval": "A range of values the researchers say their estimate could plausibly fall within.",
+    "working paper": "A research paper shared while it is still being developed, rather than a finished, peer-reviewed journal article.",
+    "DOM": "Document Object Model: the browser's list of the pieces that make up a webpage.",
+    "XSS": "Cross-site scripting: A flaw that can make a website run instructions supplied by someone visiting it.",
+    "CSRF": "Cross-site request forgery: tricking a signed-in browser into sending a request the user didn’t intend.",
+    "event loop": "The browser’s turn-taking system for handling code, clicks, and other events.",
+    "rendering pipeline": "The steps a browser takes to turn a page’s code into what appears on screen.",
+    "accessibility tree": "A version of a webpage’s content that tools like screen readers use to explain it to people.",
+    "canvas": "A webpage area where code can draw pictures or other visuals.",
+    "WebAssembly": "A way to run compiled programs inside a web browser.",
+    "TLD": "Top-Level Domain: the ending of a web address, like .com.",
+    "layout engine": "The part of a browser that decides where text and other things go on a page.",
+    "SOA": "Service-Oriented Architecture: a way to build software from separate parts that interact through agreed rules.",
+    "REST": "A common way for one app to send requests to another app over a network.",
+    "DRY": "Don't Repeat Yourself: a guideline to avoid writing the same code in several places.",
+    "Kubernetes": "A system for running and managing software containers across computers."
+  }
+}
