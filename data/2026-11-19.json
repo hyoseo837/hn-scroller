@@ -1,0 +1,1131 @@
+{
+  "date": "2026-11-19",
+  "cards": [
+    {
+      "id": 50552424,
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "hn": "https://news.ycombinator.com/item?id=50552424",
+      "title": "Gemini 4 Neon",
+      "time": 1795037647,
+      "points": 732,
+      "depth": [
+        {
+          "text": "Google's new **AI model** targets coding, research, and long-running work with **faster, lower-cost task completion**",
+          "tier": "simple"
+        },
+        {
+          "text": "It has a **1 million-token context window** and costs **$3 per million input tokens** plus $15 per million output tokens. Google says it ranks **#3 overall** on the Artificial Analysis Intelligence Index, with a score of 61.",
+          "tier": "substance",
+          "data": [
+            [
+              "input price",
+              "$3 per million input tokens"
+            ],
+            [
+              "cached input price",
+              "$0.15 per million cached input tokens"
+            ],
+            [
+              "output price",
+              "$15 per million output tokens"
+            ],
+            [
+              "context window",
+              "1 million tokens"
+            ],
+            [
+              "Artificial Analysis Intelligence Index rank",
+              "#3 overall"
+            ],
+            [
+              "Artificial Analysis Intelligence Index score",
+              "61"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say Neon feels smart and usable; others say Gemini still falls short of Opus for real work and long-running tasks.",
+      "comment_count": 615,
+      "terms": [
+        "context window",
+        "tokens",
+        "Pareto frontier",
+        "agent"
+      ],
+      "entities": [
+        "Google",
+        "Gemini 4 Neon",
+        "Google AI Studio",
+        "Google Antigravity",
+        "Gemini app",
+        "Artificial Analysis Intelligence Index"
+      ],
+      "comments": [
+        {
+          "by": "HJain13",
+          "text": "Edited: For formatting and from feedback So if I am getting this right? +-------------------------------+--------------+--------+--------+----------+-------+\n| Lab | XL | L | M+ | M | S/XS\n+-------------------------------+--------------+--------+--------+----------+-------+\n| Google (Gemini 4 Family #1) | | Argon | | |\n| Google (Gemini 4 Family #2) | | Carbon | Neon | Hydrogen |\n| Anthropic…"
+        },
+        {
+          "by": "impulser_",
+          "text": "Is there any theory on what is Anthropic's secret sauce? I have been using the latest Gemini models and they just don't seem as good as Opus 5.5 despite the benchmarks. Yeah it comparable on some tasks maybe slightly better but as an overall general intelligent model nothing compared to Opus 5.5 and it hard for me to understand why. Opus feels like human level intelligent like I'm talking to a…"
+        },
+        {
+          "by": "declanjackson",
+          "text": "Something that is interesting is how it's positioned in the overall fleet of Gemini models. Although overall more Intelligent than Carbon, Carbon is still positioned as the 'long horizon' model. This is clear on AA Index, where we see higher overall scores for Neon but lower scores in evals like CritPt which test research-scale reasoning capabilities. With the frontier getting more jagged, we…"
+        },
+        {
+          "by": "seizethecheese",
+          "text": "It looks like it's being served extremely fast via Openrouter right now https://openrouter.ai/google/gemini-4-neon . 127 tokens per second. This is way faster than Carbon at 46 tokens per second ( https://openrouter.ai/google/gemini-4-carbon ). I'm a bit confused by this, since it seems like Neon is supposed to be their flagship model. Perhaps they've been throttling Carbon? Carbon has a huge…"
+        },
+        {
+          "by": "tossandthrow",
+          "text": "I am a heavy user og the gemini models, especially for my in app agents. They strike me as a good combination Og price and quality, though I do need to develop the benchmarks much more"
+        }
+      ],
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-neon__blog-header__sm.width-1300.png"
+    },
+    {
+      "id": 50554045,
+      "url": "https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit/",
+      "hn": "https://news.ycombinator.com/item?id=50554045",
+      "title": "We need smart people who give a shit",
+      "time": 1795046029,
+      "points": 473,
+      "depth": [
+        {
+          "text": "an essay argues **complex systems** rely on **people who care**, not AI",
+          "tier": "simple"
+        },
+        {
+          "text": "The author says ACH is **old and flawed** but usually works because **people patch problems** or route around them. They argue layoffs and having workers babysit LLMs pull people away from **understanding the systems** they maintain.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say AI is hollowing out system knowledge; others say it can make capable people more effective, and the outages don't prove it caused them.",
+      "comment_count": 244,
+      "terms": [
+        "ACH",
+        "LLM",
+        "edge case",
+        "comprehension debt"
+      ],
+      "entities": [
+        "VioletPixel",
+        "Justin Michael",
+        "Stripe",
+        "ACH",
+        "Microsoft 365",
+        "United Airlines",
+        "NSA",
+        "Apple",
+        "Eric Hoffer"
+      ],
+      "comments": [
+        {
+          "by": "alphazard",
+          "text": "This framing that we have smart people, who don't give a shit, is a little out of touch with the reality in industry right now. There are plenty of smart people, but you probably aren't paying them enough to argue and play politics with the imposters that you have also hired.\nIf doing something well also requires convincing a (product) manager that it was their idea, then no one will be doing…"
+        },
+        {
+          "by": "Animats",
+          "text": "Or, as Eric Hoffer, the longshoreman philosopher, put it, \"It is the capacity for maintenance which is the best test for the vigor and stamina of a society. Any society can be galvanized for a while to build something, but the will and the skill to keep things in good repair day in, day out are fairly rare. […] I read somewhere that in ancient Rome a man was disqualified as a candidate for office…"
+        },
+        {
+          "by": "equinumerous",
+          "text": "> Telling people to stop doing the job they signed up for in favor of babysitting LLMs so they can do that job instead is a great way to make people less smart about the system they used to work on and give less of a shit about it. This resonates with me. It feels insulting when one is told not to use your own brain and judgement, and to defer entirely to machines. It puts humans below AI. It's…"
+        },
+        {
+          "by": "w_for_wumbo",
+          "text": "The intersection of what you care about and what the business cares about is where you focus your attention. Don't force business to care about something that they don't (it won't end well for you)\nEqually\nDon't force yourself to care about something that you don't (it won't end well for you) If there's an overlap, find a way to prove your value in relation to that area and use it as proof of…"
+        },
+        {
+          "by": "george_max",
+          "text": "We've had spectacular infrastructure outages for decades; I think that a cluster of incidents in one week doesn't establish that AI is directly responsible for declining reliability. IMO, the issue is that AI is reducing the cost of building and modifying systems much faster than it's reducing the cost of understanding them. For example, an engineer can work on a problem or project for a week…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50550415,
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+      "hn": "https://news.ycombinator.com/item?id=50550415",
+      "title": "Genie 4 is now available",
+      "time": 1795027791,
+      "points": 238,
+      "depth": [
+        {
+          "text": "Google is letting eligible subscribers **make interactive worlds** and share them in a **community gallery**",
+          "tier": "simple"
+        },
+        {
+          "text": "With **Genie 4**, you can change a world mid-session with prompts, while its visuals pair with **real-time native audio**. Genie 3 now supports sessions up to 3 minutes and linked worlds for longer journeys.",
+          "tier": "substance",
+          "data": [
+            [
+              "Genie 3 session length",
+              "up to 3 minutes per generation"
+            ],
+            [
+              "Previous session length",
+              "60 seconds"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some are excited by the creative possibilities; others see a gimmick with no clear use and worry about technology’s consequences.",
+      "comment_count": 161,
+      "terms": [
+        "world model",
+        "native audio",
+        "panorama grounding",
+        "object permanence"
+      ],
+      "entities": [
+        "Google",
+        "Project Genie",
+        "Genie 4",
+        "Genie 3",
+        "Gemini",
+        "Google AI Ultra",
+        "Google AI Pro",
+        "SynthID"
+      ],
+      "comments": [
+        {
+          "by": "kingrolo",
+          "text": "I appreciate this is a HackerNews Bingo item at this point but... I do really wish Google were clearer on if or how I can pay them money to use their stuff. It says this is available to \"Eligible Google AI Ultra subscribers\" but it looks like my workspace account isn't allowed one of those, so I'm looking with my non workspace gmail account and that says Ultra gets Genie 3. I don't know if that's…"
+        },
+        {
+          "by": "alecst",
+          "text": "I’ve been here a long time. I feel increasingly out of touch with the HN crowd. A lot of talk about pricing, profitability, and capability, and little discussion about how the potentially devastating negative consequences of technology like this. Not that I have the solution, but my main reaction to these latest developments is: “I don’t want any of this.” This applies not just to this…"
+        },
+        {
+          "by": "koolala",
+          "text": ">What makes a World a World? Being able to spin 360° degrees and not have details around you change..."
+        },
+        {
+          "by": "vchiriac",
+          "text": "Deepmind is creating so much that, at least to me, feels done for the love of the craft instead of earning potential, that I cannot but appreciate their work. Like, how could this end up being profitable?"
+        },
+        {
+          "by": "giancarlostoro",
+          "text": "It's really neat, and some people are convinced this could someday be how game engines work. I do wonder if Google would ever let people remake games like GTA on something like this if it ever were capable of being a game engine. Technically, this could be Roblox on crack if they ever went that far with it."
+        }
+      ],
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/resized_ProjectGenie_Thumbnail_v02.width-1300.png"
+    },
+    {
+      "id": 50554374,
+      "url": "https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/",
+      "hn": "https://news.ycombinator.com/item?id=50554374",
+      "title": "Gemini 4 Neon looks like an Opus 5.5 competitor",
+      "time": 1795048185,
+      "points": 213,
+      "depth": [
+        {
+          "text": "someone thinks Gemini's **faster model** could **rival Opus**, but the leaderboard comparison is **only a projection**",
+          "tier": "simple"
+        },
+        {
+          "text": "The post models leaderboard win rates using model identity, speed and **early voting**, then adds an interaction between speed and early voting. Assuming Carbon-level performance at 127 tokens per second, it projects Neon at **1,066 Elo**, just below Opus at 1,078; Neon is projected to win **48.3%** of the time against Opus.",
+          "tier": "substance",
+          "data": [
+            [
+              "Neon speed",
+              "127 tokens per second"
+            ],
+            [
+              "Carbon speed",
+              "46 tokens per second"
+            ],
+            [
+              "projected Elo",
+              "1,066"
+            ],
+            [
+              "Opus 5.5 Elo",
+              "1,078"
+            ],
+            [
+              "projected win rate against Opus",
+              "48.3%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Some commenters say Neon feels good for coding; others call the comparison speculation or say Gemini models fall short in long sessions.",
+      "comment_count": 68,
+      "terms": [
+        "Elo",
+        "orchestration",
+        "tokens per second",
+        "benchmark",
+        "Agent Duel"
+      ],
+      "entities": [
+        "Gemini 4 Neon",
+        "Gemini 4 Carbon",
+        "Opus 5.5",
+        "Agent Duel",
+        "OpenCode",
+        "OpenRouter",
+        "Fable 5.2",
+        "Hydrogen",
+        "Argon",
+        "AntiGravity",
+        "Claude Code",
+        "Copilot",
+        "Codex",
+        "Astra",
+        "Sol",
+        "Terra",
+        "Luna",
+        "Sonnet",
+        "Haiku",
+        "Google",
+        "Anthropic",
+        "OpenAI",
+        "Claude"
+      ],
+      "comments": [
+        {
+          "by": "theturtletalks",
+          "text": "I’ll give it a spin on my software factory. The other Gemini models looked good initially and in benchmarks, but on long-running sessions and orchestration, it’s fallen short. We’re reaching the point where certain models are really good at 1 thing. The person writing this blog post isn’t using Neon for large-scale orchestration, but I’m sure it excels in its usage. For me Fable 5.2 as the…"
+        },
+        {
+          "by": "wmf",
+          "text": "Projecting something that is already out is an epistemic crime."
+        },
+        {
+          "by": "rootusrootus",
+          "text": "I guess what I really want to know is how Gemini 4 Neon w/Antigravity compares with Opus 5.5/Claude Code. I'm not really into using LLMs in a particularly advanced way, I just use CC like 99% of the time when I need to write something, and then maybe Codex to second guess it. But that's about as complicated as I get. I have recently tried to use Copilot because that is what work wants us to use…"
+        },
+        {
+          "by": "bwat49",
+          "text": "I'm pretty impressed so far, this is the first google model I've used that feels good for coding"
+        },
+        {
+          "by": "quinndupont",
+          "text": "Fun analysis. I guess it’s not surprising to see the need for speed™ as an important factor, but who is using Fable for run of the mill coding work? It’s too pricey!"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50554038,
+      "url": "https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/",
+      "hn": "https://news.ycombinator.com/item?id=50554038",
+      "title": "Multiple vulnerabilities in Regexp and String case conversion",
+      "time": 1795045970,
+      "points": 211,
+      "depth": [
+        {
+          "text": "Ruby patched **seven flaws** in text handling, some of which could let attackers **run code**",
+          "tier": "simple"
+        },
+        {
+          "text": "The flaws affect Ruby’s **regular-expression engine** and string case conversion; proof-of-concept code can trigger **remote code execution** for some of them. Fixes are in Ruby **4.0.10, 3.4.13, and 3.3.14**; Ruby 3.2 and earlier will not receive them.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 69,
+      "terms": [
+        "regular expression",
+        "remote code execution",
+        "heap buffer overflow",
+        "double free",
+        "out-of-bounds read",
+        "PoC",
+        "heap grooming"
+      ],
+      "entities": [
+        "Ruby",
+        "Ruby on Rails",
+        "Stephan Lipp",
+        "Ada Logics",
+        "Anthropic",
+        "Hiroya Fujinami",
+        "Hiroshi SHIBATA",
+        "Windows-1252",
+        "Shift_JIS"
+      ],
+      "comments": [
+        {
+          "by": "tptacek",
+          "text": "There's what I think is probably an awesome bug here. Windows-1252 encoding has a representation for lowercase German sharp 's' (ß), but not one for the uppercase. If you upcase a string containing a sharp 's', it gets normalized to \"SS\", which increases the length of the string by one character. The 1252 case conversion code doesn't handle this; it looks like it checks for headroom in the buffer…"
+        },
+        {
+          "by": "pentestercrab",
+          "text": "str = (\"\\x82\\xA0\" + (\"A\" * (2**32 + 4))).force_encoding(Encoding::Shift_JIS)\nputs \"str.bytesize: #{str.bytesize}\"\nputs \"str.encoding: #{str.encoding}\"\nputs \"str.valid_encoding?: #{str.valid_encoding?}\"\nnew_str = str.downcase\nputs \"new_str.bytesize: #{new_str.bytesize}\"\nputs \"new_str.bytes: #{new_str.bytes}\"\nputs \"new_str.encoding: #{new_str.encoding}\"\noutputs on an unfixed version: str.bytesize…"
+        },
+        {
+          "by": "lousken",
+          "text": "I need a vacation"
+        },
+        {
+          "by": "rvz",
+          "text": "These are all C-based memory corruption vulnerabilities. The reality of these type of bugs being found by autonomous AI models on established software should tell you by now that memory-unsafe languages are completely exposed. This is who maintainers you are up against: \"Thanks to Stephan Lipp (Ada Logics) and Anthropic for reporting this issue.\" Imagine attackers using abliterated models at…"
+        },
+        {
+          "by": "slopinthebag",
+          "text": "oh boy. if only we had a language that could prevent this from happening. oh well, i guess there is nothing we can do but patch these things once they're discovered."
+        }
+      ],
+      "image": "https://www.ruby-lang.org/images/og-image.png"
+    },
+    {
+      "id": 50547980,
+      "url": "https://exitpath-ruddy.vercel.app/",
+      "hn": "https://news.ycombinator.com/item?id=50547980",
+      "title": "Show HN: ExitPath – Open-source ways out of Slack, Notion and Microsoft 365",
+      "time": 1795017883,
+      "points": 203,
+      "depth": [
+        {
+          "text": "someone put together **open-source alternatives** for leaving Slack, Notion and **Microsoft 365**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter calls **calendaring** the biggest blocker for free/libre/open-source email; another says the list misses company **identity / SSO**. Others warn these tools can be **hard to set up and rough to use**, while some argue open-source should beat closed software or favour shared standards over specific tools.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: advocates want open-source tools and shared standards to replace closed suites; skeptics say rough user experience, setup hassles, and Microsoft's connected ecosystem make the switch a compromise.",
+      "comment_count": 62,
+      "terms": [
+        "open-source",
+        "SSO",
+        "Free/Busy"
+      ],
+      "entities": [
+        "ExitPath",
+        "Slack",
+        "Notion",
+        "Microsoft 365"
+      ],
+      "comments": [
+        {
+          "by": "bigwheels",
+          "text": "If you actually try out a lot of these solutions there are almost always 2 major issues: 1. Challenging to get running properly. 2. User experience often leaves much to be desired. It quickly became clear I was better off spending time and energy on problems directly tied to revenue, not managing operational infrastructure from the ground up."
+        },
+        {
+          "by": "EvanAnderson",
+          "text": "The biggest blocker for using free/libre/open-source email for my Customers has been calendaring. People who have used Outlook / Exchange for calendaring really get hooked and getting them to use something else is difficult. The \"Free/Busy\" functionality for others' calendars, rooms, and resources shown during invitations is very handy. I can understand why people wouldn't want to lose that."
+        },
+        {
+          "by": "mikenikles",
+          "text": "The GitHub alternatives page doesn't list https://moruforge.com . For obvious reasons... I only released it a few days ago :-). If anyone ends up reading this comment and checks out the project, please let me know your feedback."
+        },
+        {
+          "by": "dagss",
+          "text": "The one big important thing is identity / SSO for companies. Don't see it on the list. Even if you somehow manage to train your employees to use strong passwords and password managers, if someone stops working at a company it is a lot to manage deleting user accounts in all the systems one is using. Microsoft Entra is basically the reasons people still use other Microsoft products. (Same story…"
+        },
+        {
+          "by": "raybb",
+          "text": "How are people liking Zulip these days? Every time I've played with it there are still quite a few rough edges but since they rewrote the native apps I suspect it's gotten better? Unfortunately, I'm not in any community that actively uses Zulip so haven't had much real experience."
+        }
+      ],
+      "image": "https://exitpath-ruddy.vercel.app/og.png"
+    },
+    {
+      "id": 50549493,
+      "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+      "hn": "https://news.ycombinator.com/item?id=50549493",
+      "title": "Advancing chip design with OpenAI models",
+      "time": 1795023947,
+      "points": 200,
+      "depth": [
+        {
+          "text": "OpenAI’s chip-design announcement has commenters asking whether the **claimed improvements** **mean much**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter quotes a claim of **single-digit percentage gains in PPA** on key blocks of an upcoming flagship CPU; another says there’s no **human baseline**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: skeptics call it meaningless advertising and doubt the metrics; others report good results or expect AI to outrun the status quo.",
+      "comment_count": 132,
+      "terms": [
+        "PPA",
+        "RISC-V",
+        "RTL",
+        "EDA",
+        "ASIC",
+        "FPGA",
+        "SIMD",
+        "IP"
+      ],
+      "entities": [
+        "OpenAI",
+        "AMD",
+        "Jalapeño",
+        "RISC-V",
+        "OpenTitan",
+        "Ibex",
+        "TSMC",
+        "NVIDIA",
+        "Google",
+        "Synopsys",
+        "Cadence",
+        "SPICE",
+        "Apple",
+        "AMD EPYC",
+        "GPT-5.5",
+        "GPT-5.6",
+        "GPT-6",
+        "GPT-6.1",
+        "GPT-6.2"
+      ],
+      "comments": [
+        {
+          "by": "jacquesm",
+          "text": "It's interesting how the first period of AI companies was improving their AIs and now they are diversifying into just about every other industry with models that they withhold from the market. Effectively these companies are now competing with each and every one of their customers whilst having the inside scoop on what those customers are up to. To me this signifies two things: the low hanging…"
+        },
+        {
+          "by": "sascac",
+          "text": "Naming the chip Jalapeño is great. Not only does it play into hot potato chips, but also Jalapeño peppers come from Xalapa, a city in Mexico. Xalapa comes from the Nahuatl word Xallapan, which roughly translates to \"place of sandy water.\" These chips are made from quartz sand, and a data center then uses water to cool them. A data center is a place of sandy water!"
+        },
+        {
+          "by": "shash",
+          "text": "I don't see a comparison to the baseline of an experienced (or inexperienced) human developer doing the same tasks. It's comparing GPT-5.5, 5.6, 6, 6.1, 6.2, but no comparison to the human being..."
+        },
+        {
+          "by": "skyberrys",
+          "text": "I am seeing good results with chip design by treating it as a software design problem, using the agent to write software to generate my circuits and then write software to automate my EDA flow. Then the agent can babysit my several runs of multi hour simulation so I don't have to anymore. I don't drive straight at the RTL though. Infact only a small fraction of the design in RTL, the bulk is…"
+        },
+        {
+          "by": "zardo",
+          "text": "Am I missing something or are they not sharing those RISC-V designs?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50551046,
+      "url": "https://www.radixark.com/blog/daisyrose-27b",
+      "hn": "https://news.ycombinator.com/item?id=50551046",
+      "title": "DaisyRose-27B",
+      "time": 1795030756,
+      "points": 191,
+      "depth": [
+        {
+          "text": "someone used **long agent tasks** to boost an **open model's score** on a **tough benchmark**",
+          "tier": "simple"
+        },
+        {
+          "text": "RadixArk built DaisyRose-27B on Qwen3.8-27B, using Miles and **1,200 curated tasks** over 18 days on 144 H200 GPUs. Its Terminal-Bench 4.1 pass@1 rose from **5.6% to 12.0%**; the team says its backend needs **57% less GPU time** than the open-source trainer on comparable runs.",
+          "tier": "substance",
+          "data": [
+            [
+              "Terminal-Bench 4.1 pass@1",
+              "5.6% to 12.0%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some are excited to see more post-training on open models; others ask whether the gain is bench-maxxing or actual improvement.",
+      "comment_count": 61,
+      "terms": [
+        "agent task",
+        "post-training",
+        "reinforcement learning",
+        "pass@1",
+        "sandbox",
+        "benchmark",
+        "GPU"
+      ],
+      "entities": [
+        "DaisyRose-27B",
+        "RadixArk",
+        "Qwen3.8-27B",
+        "Miles",
+        "Eigent AI",
+        "Terminal-Bench 4.1",
+        "Megatron",
+        "AgentENV"
+      ],
+      "comments": [
+        {
+          "by": "chriddyp",
+          "text": "Very excited to see more post-training happening on these open models. Looking forward to trying this one out once it makes its way onto OpenRouter. Qwen 27B really punches above its weight. 27B is small enough to fit on a Mac Mini / Macbook Pro which is very exciting. Starting to see more promising examples of companies post-training. From my evals [1], I've tested 3 so far: 1. Fireworks'…"
+        },
+        {
+          "by": "woah",
+          "text": "The heavy reliance on eval datasets showcased here and also evidenced by the frontier lab's high payments for such data cast doubt on the claims that AI will become self-improving soon"
+        },
+        {
+          "by": "pkoiralap",
+          "text": "Sabi-noema also looks like a close competitor in the same space. Built from qwen3.8 and made better. https://huggingface.co/sabicap/sabi-noema Also HF model here:\nhttps://huggingface.co/RadixArk/DaisyRose-27B"
+        },
+        {
+          "by": "jacquesm",
+          "text": "I always wonder what you lose when you start maxing out some specific benchmark. It is really hard to do this in a balanced way and I would love if everybody that did these kind of efforts would take the time to also list the before/afters of a number of other benchmarks that they did not use in their training."
+        },
+        {
+          "by": "xlayn",
+          "text": "Snap, no gguf to download, will wait for one to appear to test, any improvement over an already good model is good news. \"18 days on 144 H200 GPUs\" insane.. didn't thought so much hardware would be needed to train Qwen."
+        }
+      ],
+      "image": "https://www.radixark.com/images/daisyrose-27b/hero.png"
+    },
+    {
+      "id": 50548161,
+      "url": "https://rshekhar.com/voyager/",
+      "hn": "https://news.ycombinator.com/item?id=50548161",
+      "title": "Show HN: Take Voyager 1 apart, down to a single memory chip",
+      "time": 1795018731,
+      "points": 187,
+      "depth": [
+        {
+          "text": "someone made a site to **take Voyager 1 apart**, right down to a **single memory chip**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter linked the **data computer's memory chips** and **one bit of the command computer's memory**; another praised the journey timeline.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 46,
+      "terms": [
+        "CMOS"
+      ],
+      "entities": [
+        "Voyager 1",
+        "Voyager 2",
+        "Golden Record",
+        "Claude",
+        "Pale Blue Dot"
+      ],
+      "comments": [
+        {
+          "by": "raj-shekhar",
+          "text": "A few things are hard to find, so here are direct links: Inside a nuclear battery: https://rshekhar.com/voyager/v1/rtg-1 The data computer's memory chips: https://rshekhar.com/voyager/v1/bay-4/memories One bit of the command computer's memory: https://rshekhar.com/voyager/v1/bay-3/memory-1/plane-1/bit The Golden Record's cover: https://rshekhar.com/voyager/v1/apart/golden-record How Voyager 1 was…"
+        },
+        {
+          "by": "gourneau",
+          "text": "This is awesome I love it! Here is my little tribute to the Golden Record on both Voyagers https://goldenrecord.voyage/ Also a decoder to turn their raw audio into the images https://gourneau.github.io/golden-record-images/"
+        },
+        {
+          "by": "carter-qadenza",
+          "text": "This is neat, even if it's missing some things. I actually really like how Voyager is displayed. Thinking about putting something like together in the late 70's is pretty wild. Seeing the spectrometers reminded me that nearly my entire physics degree only covered what was known up until the 50's. I always underestimate how much we understood even 75 years ago!"
+        },
+        {
+          "by": "IAmNotACellist",
+          "text": "I'd be fascinated to know the exact nature of the failure. What analog processes cause a CMOS memory IC that we like to think of as being discrete to be consistently wrong at reading its stored values? I'd like to know all the way down to the interaction between the gates and traces. Did some pathway erode due to constant interchange of charge carriers? Did thermal cycles or stress cause one of…"
+        },
+        {
+          "by": "glimshe",
+          "text": "Nice! This appears to be vibecoded, but what was the process? Was there any original research or AI did most/all of it? Was this double checked against any authoritarive source?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50548004,
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-99312",
+      "hn": "https://news.ycombinator.com/item?id=50548004",
+      "title": "KVM: x86: Unconditionally reset MMU context when emulating INIT (CVE-2026-99312)",
+      "time": 1795017981,
+      "points": 184,
+      "depth": [
+        {
+          "text": "a **kernel bug** resets a processor's **memory context** while emulating an INIT event",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: fwsgonzo says not to disable nested virtualization, citing better security and access to real hardware virtualization; tptacek says not to allow nested KVM, citing repeated escapes.",
+      "comment_count": 121,
+      "terms": [
+        "KVM",
+        "MMU",
+        "INIT",
+        "CVE",
+        "nested virtualization",
+        "unikernel"
+      ],
+      "entities": [
+        "x86",
+        "KVM",
+        "Linux",
+        "CVE-2026-99312",
+        "Ubuntu",
+        "AWS",
+        "Nitro Sandboxes",
+        "seL4",
+        "OpenBSD"
+      ],
+      "comments": [
+        {
+          "by": "fwsgonzo",
+          "text": "Don't disable nested, it's still better security than everything else, and having it on means access to real hardware virtualization. Second, the article is AI-written. It really should be rewritten by a human."
+        },
+        {
+          "by": "immibis2",
+          "text": "Links to a CVE record. The kernel project marks everything that could conceivably be of any use to an attacker as a CVE. What are we actually looking at here? Sounds like a dangling-pointer type of bug?"
+        },
+        {
+          "by": "gerdesj",
+          "text": "404"
+        },
+        {
+          "by": "jacobgold",
+          "text": "Our infrastructure will become so much more secure but we're in for a bumpy ride through 2027."
+        },
+        {
+          "by": "praseodym",
+          "text": "The blog post is very difficult to read, I suspect that unfortunately it’s fully written by an LLM."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50553225,
+      "url": "https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering",
+      "hn": "https://news.ycombinator.com/item?id=50553225",
+      "title": "LLM assisted reverse engineering",
+      "time": 1795040953,
+      "points": 175,
+      "depth": [
+        {
+          "text": "someone is using **AI agents** to speed up **reverse engineering** of old software and devices",
+          "tier": "simple"
+        },
+        {
+          "text": "The author saves findings in **MD files** and has agents **test hypotheses** with experiments instead of guessing in circles. They also made **custom firmware** for an Xteink X4 ebook reader.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say AI makes reverse engineering faster and opens up abandoned software; others say it takes away the learning and satisfaction of doing it yourself.",
+      "comment_count": 44,
+      "terms": [
+        "reverse engineering",
+        "binary",
+        "disassembler",
+        "decompiler",
+        "firmware",
+        "hypothesis"
+      ],
+      "entities": [
+        "DeepSeek Harness",
+        "Deepseek v4.1 Flash",
+        "Ghidra",
+        "Python",
+        "UV",
+        "Rust",
+        "Alphasmart NEO",
+        "EmWave",
+        "Sony Alpha",
+        "A7III",
+        "Xteink X4",
+        "Matt Pocock",
+        "ioma8",
+        "Gemini",
+        "Home Assistant",
+        "Claude",
+        "IDA Pro",
+        "Apple",
+        "Anthropic",
+        "OpenAI"
+      ],
+      "comments": [
+        {
+          "by": "saidinesh5",
+          "text": "Yesterday night, i reverse engineered the cloud connection plugin to my cctv camera in about 2 hours with Gemini. Started off with me searching for what Chinese OEM made the product. Then tried out existing GitHub projects to see if it works but they were failing. Spent 15 minutes to write a script that started their desktop software on a different network namespace and ran tcpdump in it…"
+        },
+        {
+          "by": "hexapus",
+          "text": "I have zero experience reverse engineering and very little with software development. Most of my work has been in DevOps/SRE space with an emphasis on infrastructure. I am surrounded by code, but other than terraform, and the occasional python script, I don't really write much of it. Not too long ago, I successfully reverse engineered an abandoned audio effects plugin, as well as a discontinued…"
+        },
+        {
+          "by": "Retr0id",
+          "text": "> This is variation of scientific method and it significantly helps agents when they are getting stuck on some problem. Stops it going in circles. By forcing it to do definitive experiments. No endless guessing and trying random things. These \"guessing loops\" are my main annoyance when REing with Claude (mostly Opus 4.8, due to the restrictions on newer models). On harder/larger targets, I have…"
+        },
+        {
+          "by": "therepanic",
+          "text": "For me, the process is what matters, because it’s through the process that you gain skills, and achieving the final result brings a great deal of satisfaction. When I use AI for reverse engineering, I get neither the former nor the latter."
+        },
+        {
+          "by": "questionedon",
+          "text": "I guess Android apps are just easy to reverse engineer or something. I've had Codex take a few apps with subscriptions and unlock their premium functionality and it's worked fine with no extra skills or anything. Took most of the 5 hour window but with all the resets it's not a big deal. I also had it implement their functionality fully offline, so now they're perfectly private apps, even though…"
+        }
+      ],
+      "image": "https://www.slowchronicle.com/og-default.png"
+    },
+    {
+      "id": 50547583,
+      "url": "https://sam.gov/workspace/contract/opp/8948e8601e964c6aba9c801eee16b1be/view",
+      "hn": "https://news.ycombinator.com/item?id=50547583",
+      "title": "F-22 Next-Generation micro–Data Transfer Cartridge (mDTC)",
+      "time": 1795016144,
+      "points": 168,
+      "depth": [
+        {
+          "text": "this is a survey for **potential suppliers** of new **F-22 memory cards**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says the notice is a **survey of potential suppliers**, not a request for bids or a plea for people to send in spare cards. The thread says aircraft use CF cards to move mission-planning data from laptops to aircraft; the tougher replacements are older **linear cards**, which lack controller chips and may only work with specific flash chips.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 109,
+      "terms": [
+        "mDTC",
+        "PCMCIA",
+        "CF",
+        "linear memory-mapped card",
+        "NOR flash",
+        "FPGA",
+        "SCIF"
+      ],
+      "entities": [
+        "F-22",
+        "F-35",
+        "Air Force Materiel Command",
+        "PCMCIA",
+        "CF",
+        "microSD",
+        "Dogfish SSD",
+        "Delkin Devices",
+        "SanDisk",
+        "Micron",
+        "Plaion",
+        "Neo•Geo",
+        "Dance Dance Revolution",
+        "FAA"
+      ],
+      "comments": [
+        {
+          "by": "jotux",
+          "text": "Cool coincidence. In a past job, I specifically made replacement PCMCIA cards for these (and other) planes. Instead of making cards with a controller and onboard storage, we made cards with an FPGA/microcontroller and a microSD card soldered to the PCB. We did this specifically because these aircraft use (at least partially) broken implementations of the PCMCIA protocol, and we'd update the bus…"
+        },
+        {
+          "by": "spicyjpeg",
+          "text": "It's worth pointing out that there are actually two main types of PCMCIA memory cards. The most common by far are the ATA cards mentioned here, which are basically CF cards in a different form factor (equivalent to a CF card in a CF-to-PCMCIA adapter) and work by emulating either an IDE hard drive or an ISA IDE controller depending on wiring. While uncommon at this point, CF controller chips are…"
+        },
+        {
+          "by": "CobaltFire",
+          "text": "For anyone wondering what these are used for: All current US military aircraft (at least up through the F-35) use CF cards to take mission planning from the laptops in the SCIF (or whatever unclass space they are using) to the aircraft. As an aside, LCACs (among other platforms) also use these systems and cards. So this is a pretty widespread use case."
+        },
+        {
+          "by": "ren01r",
+          "text": "The AIR FORCE MATERIEL COMMAND seemed weird at first look. Material and Materiel are different words and not a misspelling. TIL."
+        },
+        {
+          "by": "vkaku",
+          "text": "Bought a few CF cards from Dogfish SSD ( https://dogfishssd.com/ ) sometime ago. They are readily available on Amazon and can be bought with relatively no fuss. The company are NOT based out of the US though. The company that I do recommend for any industrial flash is Delkin Devices ( https://www.delkindevices.com/ ). They are based out of San Diego, CA and I bought USB 3.0 high endurance drives…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50546967,
+      "url": "https://pikuma.com/blog/history-of-x86-4004-to-486",
+      "hn": "https://news.ycombinator.com/item?id=50546967",
+      "title": "The x86 CPU: From 4004 to 486",
+      "time": 1795013273,
+      "points": 167,
+      "depth": [
+        {
+          "text": "someone traced **x86's odd habits** back through the chips and **customers** that shaped them",
+          "tier": "simple"
+        },
+        {
+          "text": "The article traces **little-endian byte order** to the Datapoint 2200, and shows the 8086 giving 8080 registers homes in AX, BX, CX and DX so **assembly could be translated** line by line.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: the article says bit-serial arithmetic explains why the Datapoint stored low bytes first; a commenter says the original reason was the terminal's low-to-high address processing, with the arithmetic explanation becoming relevant on the 8080.",
+      "comment_count": 52,
+      "terms": [
+        "x86",
+        "little-endian",
+        "bit-serial",
+        "register"
+      ],
+      "entities": [
+        "x86",
+        "Datapoint 2200",
+        "8008",
+        "8080",
+        "8086",
+        "Intel"
+      ],
+      "comments": [
+        {
+          "by": "jgord",
+          "text": "Learned to program on an 8088 machine with Hercules mono graphics card, first in GW-Basic which was godawful, then in A86 assembler and finally Turbo Pascal which was a pinnacle of human engineering, a portal into a wonderful future ahead. There was great excitement and relief when the 80386 came out with its 32bit address linear memory model. Everything suddenly became possible - serious compute…"
+        },
+        {
+          "by": "petercooper",
+          "text": "This is a neat history. However, going to be a bit nitpicky since they put this in bold re the 8008: \"Intel did not design the instruction set of this chip\" .. kinda true in a broad sense, but Intel engineers including Stan Mazor did change and enhance it, like adding increment and decrement operations and some other stuff mentioned in…"
+        },
+        {
+          "by": "kens",
+          "text": "One thing I'd emphasize is that the 4004 is not related to the 8008 at all, except that many of the same people worked on both chips."
+        },
+        {
+          "by": "chimpontherun",
+          "text": "Cool article, thanks! Nitpick: the reason behind the little endianness _originally_ was data access speed-up on 2200, not arithmetic. The 2200 only had 8-bit arithmetic (as did 8008), but its address bus was processed low-to-high. The arithmetic angle became relevant in 8080, with its 16-bit arithmetic. Side benefit: casting between 8- and 16-bit data using the same address. Another nitpick: the…"
+        },
+        {
+          "by": "bigstrat2003",
+          "text": "The A20 gate is one of the most aggravating bits of x86 history. Not that they added it (backwards compatibility is very desirable for sales, so it makes sense that they added it), but that anyone was stupid enough to depend on that wrapping behavior in the first place. Such a short sighted, sloppy thing to do."
+        }
+      ],
+      "image": "https://pikuma.com/images/blog/history-of-x86-4004-to-486/thumbnail-1200x630.jpg"
+    },
+    {
+      "id": 50553843,
+      "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+      "hn": "https://news.ycombinator.com/item?id=50553843",
+      "title": "Anthropic prices initial public offering",
+      "time": 1795044609,
+      "points": 171,
+      "depth": [
+        {
+          "text": "Anthropic has **priced its IPO**, with shares expected to **start trading** on Nasdaq",
+          "tier": "simple"
+        },
+        {
+          "text": "The offering is priced at **$83.00 per share** and covers **980,000,000 shares**. Anthropic is selling 956,351,354 shares; certain stockholders are selling 23,648,646, and Anthropic gets **no proceeds** from those stockholder sales.",
+          "tier": "substance",
+          "data": [
+            [
+              "IPO price",
+              "$83.00 per share"
+            ],
+            [
+              "Shares offered",
+              "980,000,000"
+            ],
+            [
+              "Shares sold by Anthropic",
+              "956,351,354"
+            ],
+            [
+              "Shares sold by certain stockholders",
+              "23,648,646"
+            ],
+            [
+              "Expected trading date",
+              "November 19, 2026"
+            ],
+            [
+              "Expected closing date",
+              "November 20, 2026"
+            ],
+            [
+              "Underwriter option",
+              "30-day option to purchase up to an additional 147,000,000 shares"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say they’ll buy; others call it a gamble, a bad sign, or exit liquidity.",
+      "comment_count": 174,
+      "terms": [
+        "IPO",
+        "Class A common stock",
+        "underwriters",
+        "market cap",
+        "exit liquidity"
+      ],
+      "entities": [
+        "Anthropic",
+        "Nasdaq Global Select Market",
+        "Securities and Exchange Commission",
+        "Goldman Sachs",
+        "Morgan Stanley",
+        "Google",
+        "Nvidia",
+        "Apple",
+        "Hyperliquid",
+        "Ed Zitron",
+        "Dario",
+        "SPCX",
+        "CBRS",
+        "Pokémon",
+        "ANT"
+      ],
+      "comments": [
+        {
+          "by": "purple_ferret",
+          "text": "I am totally blown away that a company that was formed in 2021 will have a 1.5 trillion market cap on the public market... to put into context, a valuation not achieved by Apple until 2020"
+        },
+        {
+          "by": "6thbit",
+          "text": "The offering consists of 980,000,000 shares of Class A common stock\nThat 980M is more than they had previously offered (825M), so they did expand the IPO. And they're taking around ~105B in cash. 81.34B from the 980M shares at $83 and 26B from Google/Nvidia/etc, minus 1.9B the existing holders selling 23.6M shares."
+        },
+        {
+          "by": "wbsun",
+          "text": "Allowing employees to sell immediately, I don’t think that is a good sign."
+        },
+        {
+          "by": "testfoobar",
+          "text": "Overnight on Hyperliquid: https://app.hyperliquid.xyz/trade/xyz:ANT"
+        },
+        {
+          "by": "timmg",
+          "text": "How many new billionaires will the country have tomorrow? Like 1.5T could make as many as 1,500 billionaires. It's certainly much more concentrated than that. But it is still insane to think about."
+        }
+      ],
+      "image": "https://assets.claude.com/6d4a0d28992ade92d6fa63646fd9c9d318245c6c.jpg"
+    },
+    {
+      "id": 50554010,
+      "url": "https://lateblt.livejournal.com/526188.html",
+      "hn": "https://news.ycombinator.com/item?id=50554010",
+      "title": "Software companies are trying to kill home computing?",
+      "time": 1795045758,
+      "points": 156,
+      "depth": [
+        {
+          "text": "people are arguing whether software companies are pushing home computing toward **renting everything** instead of **owning it**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says **storage subscriptions** and **high prices** could squeeze enthusiast home computing. Others expect hardware demand to cycle back, while another says **open-source projects** and enthusiasts can keep computing accessible.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "The thread splits between people who see rented services squeezing enthusiast PCs, people who expect hardware demand to cycle back or open-source enthusiasts to keep computing accessible, and commenters who say most people are fine with smartphones.",
+      "comment_count": 99,
+      "terms": [
+        "SaaS",
+        "GPU",
+        "DRM",
+        "vendor lock-in",
+        "CVE",
+        "reverse engineering"
+      ],
+      "entities": [
+        "Google",
+        "Apple",
+        "Linux",
+        "Linux Mint",
+        "Windows",
+        "Apple Silicon",
+        "React Native",
+        "Steam",
+        "Fortnite",
+        "Minecraft",
+        "Epic",
+        "Sony",
+        "PlayStation",
+        "Facebook",
+        "Twitter",
+        "Instagram",
+        "Google Docs",
+        "Drive",
+        "Dropbox",
+        "SourceForge",
+        "GitHub",
+        "Confluence",
+        "JIRA",
+        "Trello",
+        "Disney"
+      ],
+      "comments": [
+        {
+          "by": "EvanAnderson",
+          "text": "I think enthusiast computing is dying. Home users will be able to buy packaged laptops and some desktop PCs, but I think the era of enthusiasts building \"gaming rigs\" and such is coming to an end. I think it's being ushered out by a feedback loop of high prices driving market contraction and, in turn, driving prices even higher as demand shrinks. Gaming will move to real-time streaming and there…"
+        },
+        {
+          "by": "chupchap",
+          "text": "This is a cycle. As of now the companies with server farms are buying up everything that can be manufactured, but this is not a forever model. The companies that are in the business of making things will always want to make more in the future and they will need to come back to general consumers to soak up that supply. The only question is how long it will take. I was hoping the GPU situation to…"
+        },
+        {
+          "by": "ivanjermakov",
+          "text": "Who is buying home computers besides gamers, students, and programmers? For general public smartphone does the job."
+        },
+        {
+          "by": "hn_submit",
+          "text": "As I understand it there's a growing desktop Linux grassroots movement in the U.S. due to the fact that consumer protections are non-existent and software companies can more or less abuse their customers as they see fit. Many've had enough of the flogging and are jumping ship towards Linux Mint and leaving Windows behind. Vendor lock-in will fail."
+        },
+        {
+          "by": "nialse",
+          "text": "AI is rapidly driving the cost of developing software toward zero. However, software is still creating value. In a world with local models and accessible reverse engineering, the software increasingly needs to be kept under wraps to enable monetisation. After the initial SaaSocalypse comes the SaaScension where all of compute is promoted to the cloud."
+        }
+      ],
+      "image": null
+    }
+  ],
+  "glossary": {
+    "context window": "The amount of text and information an AI can take into account at one time.",
+    "tokens": "Small pieces of text an AI counts as it reads or writes; they can affect how much a request costs.",
+    "Pareto frontier": "A set of choices where you can't get better on one measure without giving something up on another.",
+    "agent": "An AI system that can take steps and use tools to get a task done, not just answer questions.",
+    "ACH": "Automated Clearing House: a US system banks use to send money between accounts electronically.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "edge case": "A situation outside the usual path that can make software behave differently or break.",
+    "comprehension debt": "When a system is built or changed faster than the people working on it can understand it.",
+    "world model": "An AI meant to represent a scene and how things in it change.",
+    "native audio": "Sound made as part of the world that can change with what is happening in the scene.",
+    "panorama grounding": "Using a 360-degree image as the starting point for a generated world.",
+    "object permanence": "The idea that something stays where it is even when you cannot see it.",
+    "Elo": "A score that estimates how strong a player is by comparing their wins and losses against other players.",
+    "orchestration": "Coordinating several AI agents so they can hand tasks to one another.",
+    "tokens per second": "A measure of how quickly a model produces text.",
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "Agent Duel": "A battle system on top of OpenCode where models compete.",
+    "regular expression": "A text pattern that tells a program what kind of words or characters to look for.",
+    "remote code execution": "A security flaw that lets someone run commands on another person's computer.",
+    "heap buffer overflow": "A bug where a program writes past the space it set aside for data, possibly damaging nearby memory.",
+    "double free": "A bug where a program marks the same piece of memory as free twice, which can confuse or crash it.",
+    "out-of-bounds read": "A program reads data from beyond the area it was supposed to read.",
+    "PoC": "Proof of Concept: a small demonstration that shows a bug can be triggered.",
+    "heap grooming": "Arranging a program’s memory so a flaw is more likely to behave in a useful way for an attacker.",
+    "open-source": "Software whose code is shared publicly so people can inspect it, change it, or build on it.",
+    "SSO": "Single Sign-On: a way to use one sign-in for several work services.",
+    "Free/Busy": "A calendar feature that shows when people, rooms, or other resources are available.",
+    "PPA": "Power, performance and area: three things chip designers try to balance when improving a design.",
+    "RISC-V": "A processor design that sets out the basic instructions software runs on.",
+    "RTL": "Right-to-left: writing that runs from the right side of a line toward the left.",
+    "EDA": "Electronic design automation: software engineers use to design and test chips.",
+    "ASIC": "Application-specific integrated circuit: a chip built for a particular job.",
+    "FPGA": "Field-programmable gate array: a chip that can be set up for different hardware jobs after it is made.",
+    "SIMD": "Single Instruction, Multiple Data: a way to apply one operation to several values at once.",
+    "IP": "Intellectual property: creative work, characters, or brands that a person or company can have legal rights over.",
+    "agent task": "A job where an AI has to use tools and take several steps to get something done.",
+    "post-training": "Extra training after a model's initial training that shapes how it responds.",
+    "reinforcement learning": "A way to train an AI by rewarding choices that work and discouraging choices that do not.",
+    "pass@1": "The share of test problems a model solves on its first try.",
+    "sandbox": "A separate, contained space where software can be tested without affecting the rest of a computer or system.",
+    "GPU": "Graphics Processing Unit: the chip part that draws images and video.",
+    "CMOS": "Complementary metal-oxide-semiconductor: a common way to make electronic parts, including memory chips.",
+    "KVM": "Kernel-based Virtual Machine: a Linux feature for running virtual machines.",
+    "MMU": "Memory Management Unit: hardware that helps an operating system manage memory and keep programs separate.",
+    "INIT": "A processor startup signal that puts it into an initial state.",
+    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
+    "nested virtualization": "Running a virtual machine inside another virtual machine.",
+    "unikernel": "A way to build an application with only the operating-system pieces it needs, instead of relying on a full general-purpose system.",
+    "reverse engineering": "Figuring out how a program works by examining the program itself.",
+    "binary": "A program file a computer can run.",
+    "disassembler": "A tool that turns a program’s machine instructions into a form people can inspect.",
+    "decompiler": "A tool that turns a compiled program into code that is easier for people to read.",
+    "firmware": "The built-in software that tells a device's hardware how to work.",
+    "hypothesis": "A possible explanation that you test to see if it is true.",
+    "mDTC": "micro–Data Transfer Cartridge: the name for the storage cartridge in the F-22 headline.",
+    "PCMCIA": "Personal Computer Memory Card International Association: a name used for a removable-card format found in older computers and equipment.",
+    "CF": "CompactFlash: a removable storage card used to move files between devices.",
+    "linear memory-mapped card": "A storage card that lets a device read its memory directly, without a storage controller in between.",
+    "NOR flash": "A kind of memory chip that keeps its contents even when the power is off.",
+    "SCIF": "Sensitive Compartmented Information Facility: a secure room for handling classified information.",
+    "x86": "A family of chip designs used in many personal computers.",
+    "little-endian": "A way to store a multi-byte number with its lowest-value byte first.",
+    "bit-serial": "A design that handles a number one bit at a time.",
+    "register": "A small storage spot inside a processor that code can use while it runs.",
+    "IPO": "Initial Public Offering: when a company first offers its shares for the public to buy.",
+    "Class A common stock": "One category of a company’s ownership shares; a company may have other categories with different rules.",
+    "underwriters": "Financial firms that help a company sell its shares to investors.",
+    "market cap": "The total market value of a company’s shares.",
+    "exit liquidity": "People who buy shares from someone trying to sell, making it easier for that seller to get out.",
+    "SaaS": "Software as a Service: software you access over the internet, with the provider running it for you.",
+    "DRM": "Digital Rights Management: restrictions in software that control how it can be copied or used.",
+    "vendor lock-in": "When relying on a company’s tools makes it difficult to move to another company’s tools."
+  }
+}
