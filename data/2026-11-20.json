@@ -1,0 +1,511 @@
+{
+  "date": "2026-11-20",
+  "cards": [
+    {
+      "id": 50568130,
+      "url": "https://git-aarvin.github.io/mei/",
+      "hn": "https://news.ycombinator.com/item?id=50568130",
+      "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
+      "time": 1795131335,
+      "points": 335,
+      "depth": [
+        {
+          "text": "a new index puts **Google's Neon** at the top of its **engineering rankings**",
+          "tier": "simple"
+        },
+        {
+          "text": "The Models Engineering Index gives 4 Neon a **68.1** score from a composite across **ten coding benchmarks**, adjusted for difficulty and missing results. The page warns that models were tested on **different subsets** and that benchmarks are only a proxy for real engineering work.",
+          "tier": "substance",
+          "data": [
+            [
+              "score",
+              "68.1"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some users say Neon performs well in real coding work; critics question the index because Neon appears in only 3 of 8 benchmarks.",
+      "comment_count": 209,
+      "terms": [
+        "composite index",
+        "benchmark",
+        "error bars"
+      ],
+      "entities": [
+        "Models Engineering Index",
+        "Gemini 4 Neon",
+        "Google"
+      ],
+      "comments": [
+        {
+          "by": "postalcoder",
+          "text": "I don’t think anyone who have yet commented has used the actual model. But, to be fair to the commenters, google has made it very hard for them to do so without spending a ton of money. Neon is a really good model. It’s currently my favorite model to use. Coding-wise, it’s equivalent to Opus 5.5/Fable. Documentation-wise, it is great. If you have access to Neon have it take a crack at simplifying…"
+        },
+        {
+          "by": "largbae",
+          "text": "Neon is a contender. Neon \"high\" appears faster and cheaper than Opus 5.5 \"medium\" with similar results on long-running language porting work in a large monorepo. The speed is the biggest win IMO. When Carbon came out, I tried to give it a shot, but it was so slow that I went back to Opus just for productivity, nevermind quality. Today I started Neon on one worktree and Opus on another, and Neon…"
+        },
+        {
+          "by": "dowakin",
+          "text": "Fully agree. Neon is my main model right now. I have a pretty advanced setup with multiple agents, coordinators, etc. It's basically a \"factory\" customized for me. It ran on Claude for a long time, then on Codex for the past three months, and now it runs on Google models. Neon is good, predictable, and smarter than me :) Agy has a bunch of good slash commands for different use cases. And the…"
+        },
+        {
+          "by": "gregwebs",
+          "text": "If you watch Youtube much at all, Youtube Premium Lite (no ads) is well worth the $9/month. This is included with their $20/month AI plan. Spending that other $11/month wasn't worth it before Neon, but it might be now. There are 3 different antigravity quotas: * gemini (previously just Gemini 3.8 Flash) * claude and gpt (very small quota) * argon (very small quota) The Gemini quota now includes…"
+        },
+        {
+          "by": "YuechenLi",
+          "text": "Ok, so I can see that this is a benchmark the submitter made and submitted themselves, which is kinda misleading and should at least be disclosed. But my question is, what does this benchmark actually measure about the LLM's engineering abilities? It just looks like a page of random bar graphs to me."
+        }
+      ],
+      "image": "https://git-aarvin.github.io/mei/scatter/cost.png"
+    },
+    {
+      "id": 50570479,
+      "url": "https://grapheneos.social/@GrapheneOS/117645038299496084",
+      "hn": "https://news.ycombinator.com/item?id=50570479",
+      "title": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
+      "time": 1795152062,
+      "points": 281,
+      "depth": [
+        {
+          "text": "Google is pushing phone makers against **GrapheneOS** and **bootloader unlocking**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter urged people to contact their **state attorney general**, and suggested GrapheneOS publish a **template letter** for every state and consider releasing **evidence** for its claim that Google repeatedly asked OEMs whether they were working with GrapheneOS and threatened them.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some commenters back GrapheneOS and see Google's behavior as anti-competitive; another says GrapheneOS's claims lack evidence and look like ragebait marketing.",
+      "comment_count": 68,
+      "terms": [
+        "OEM",
+        "bootloader unlocking",
+        "antitrust"
+      ],
+      "entities": [
+        "Google",
+        "GrapheneOS"
+      ],
+      "comments": [
+        {
+          "by": "JumpCrisscross",
+          "text": "Find your state attorney general [1]. Write them a letter.\nCalmly and dispassionately ask that they look into this from an antitrust perspective. Include a copy of this GrapheneOS thread. GrapheneOS, on its side, should publish a template letter for every state. They should also consider releasing evidence for Google \"repeatedly reaching out to OEMs to question whether they're working with us and…"
+        },
+        {
+          "by": "ddxv",
+          "text": "This was the year for me, and developer verification was the hill. I started moving all my important emails, images, etc off Google. I can't do it all or all at once, but I made a new email account and started moving things. I bought a new phone, GrapheneOS is on it now. I started moving things there one by one. I got a home server and started self hosting my images and my docs. You don't need to…"
+        },
+        {
+          "by": "nzeid",
+          "text": "Keep fighting the good fight. GrapheneOS has been a breath of fresh air the past several years and I really don't want to go back to manual rooting/debloating/hardening."
+        },
+        {
+          "by": "acd",
+          "text": "Strange since Pixels allow boot loader unlocking. \"The Sherman Antitrust Act[1] (26 Stat. 209, 15 U.S.C. §§ 1–7) is a United States antitrust law which prescribes the rule of free competition among those engaged in commerce and consequently prohibits unfair monopolies. It\"\nSource: \" https://en.wikipedia.org/wiki/Sherman_Antitrust_Act \""
+        },
+        {
+          "by": "paweladamczuk",
+          "text": "I wish they would lead with evidence and sources for the claims they're making. As it stands, it looks to me like ragebait marketing. I support what people at GrapheneOS do but I don't appreciate their recent communication style."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50564159,
+      "url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine",
+      "hn": "https://news.ycombinator.com/item?id=50564159",
+      "title": "The 98% Slot Machine: How Paid Advertising Became an Extraction Tax",
+      "time": 1795113317,
+      "points": 261,
+      "depth": [
+        {
+          "text": "the post calls paid advertising a **98% slot machine** and an **extraction tax**",
+          "tier": "simple"
+        },
+        {
+          "text": "Commenters **split over the casino comparison**: some say ad auctions are a marketplace where both sides can gain, while others call the **whole ecosystem extractive**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say ads are a marketplace where both sides can gain; others say the ecosystem is extractive and removes control from the people spending the money.",
+      "comment_count": 144,
+      "terms": [
+        "ad auction",
+        "ROI",
+        "ROAS",
+        "COGS",
+        "whales"
+      ],
+      "entities": [
+        "Google",
+        "Facebook",
+        "eBay",
+        "Steve Tadelis",
+        "Freakanomics",
+        "Him & Hers",
+        "Ro",
+        "GoodRx",
+        "Apple",
+        "Coca-Cola",
+        "X"
+      ],
+      "comments": [
+        {
+          "by": "hatthew",
+          "text": "This analogy doesn't hold at all. Casinos are engineered for the house to win and the customer to lose because the casino is paying the customer directly. They are disincentivized to let the customer win. If the customer always won, the casino goes out of business very quickly. Ad auctions are completely different, since they are just a marketplace. A customer's (advertiser's) win comes from a…"
+        },
+        {
+          "by": "hackthemack",
+          "text": "I use to think we lived in an enlightened age, where we have now learned that we need to use scientific reasoning and analysis to make decisions. It is what lifted us up from superstition and folk tales. But society, still, collectively, falls for snake oil, over and over again. This topic was talked about in 2019.\nhttps://news.ycombinator.com/item?id=21465873 Freakanomics did a great podcast…"
+        },
+        {
+          "by": "PaulHoule",
+          "text": "For a long time I’ve been chewing on this… Back in the 2000’s I was involved with numerous “social” systems before there was Facebook, the thing they all had in common was that we knew we lived or died based on being viral so the most important knob we could turn in the process was the rate at which people completed the onboarding and recommended new people. So we were obsessive about plugging…"
+        },
+        {
+          "by": "bearjaws",
+          "text": "I don't really think this is true, as if advertising didn't work people wouldn't use it. That being said, there is something to be said about how extractive it has become. It used to be you ran a TV ad, and if you made a great ad, you got amazing ROI, you were rewarded for being clever. Now, it's all captured algorithmically, there are no \"great ads\", you can only have good ads or bad ads. They…"
+        },
+        {
+          "by": "Marol",
+          "text": "Deranged depiction of wishful thinking.\nThese \"casinos\" as you call them, can be reverse engineered, and bargained to get unbelievable margins. B/E on your ads? Make more creatives. Period. If you are getting sales but you are not profitable yet, it means that you are a few clever decisions away from succeeding. The \"just one sale away\" is the direct result of skill issues of the founder. The…"
+        }
+      ],
+      "image": "https://globalcommercegraph.com/og-image.png"
+    },
+    {
+      "id": 50561515,
+      "url": "https://cornholenews.news",
+      "hn": "https://news.ycombinator.com/item?id=50561515",
+      "title": "Show HN: Cornhole News – A Hacker News inspired site for news across the Midwest",
+      "time": 1795102712,
+      "points": 217,
+      "depth": [
+        {
+          "text": "someone made a **Hacker News-style** page for browsing **Midwest news headlines**",
+          "tier": "simple"
+        },
+        {
+          "text": "The page has **Top and New** lists, and commenters wonder how the **Politics filter** decides what counts. Its stated long-term plan is **homepage ads** reserved for Midwestern businesses.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 99,
+      "terms": [
+        "aggregator",
+        "UI",
+        "open source",
+        "ad network",
+        "self-hosting",
+        "moderation"
+      ],
+      "entities": [
+        "Cornhole News",
+        "Hacker News"
+      ],
+      "comments": [
+        {
+          "by": "frereubu",
+          "text": "I love the idea because I hate news sites in general and much prefer the text-only nature of HN. A shame that the stories linked to aren't so stripped back! It's made me think about doing the same for my part of the UK. In some ways I also really like the option to hide \"politics\", although there's an interesting debate about what constitutes \"politics\" - how do you classify that? Edit: and given…"
+        },
+        {
+          "by": "goda90",
+          "text": "\"Our goal is to eventually monetize this site with two small ads on the homepage reserved exclusively for Midwestern businesses.\" Thank you for stating that. Is this for profit, or just to cover costs of hosting? Will you be self-hosting the ads, or using an ad network? On another note, what are the plans for moderation?"
+        },
+        {
+          "by": "timdiggerm",
+          "text": "I feel certain that your politics filter is leaving items that people will consider political"
+        },
+        {
+          "by": "BIGFOOT_EXISTS",
+          "text": "This is what we wanted. Please make it include Canada too, after all we do have our own midwest that is culturally similar <3"
+        },
+        {
+          "by": "toisanji",
+          "text": "too bad there isn't a hackernews for everything. that was reddit for in the beginning, but reddit jumped that ship a long time ago."
+        }
+      ],
+      "image": "https://cornholenews.news/opengraph-image"
+    },
+    {
+      "id": 50569226,
+      "url": "https://github.com/openssl/openssl/pull/33652",
+      "hn": "https://news.ycombinator.com/item?id=50569226",
+      "title": "OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)",
+      "time": 1795140069,
+      "points": 179,
+      "depth": [
+        {
+          "text": "a **base64 encoding bug** could make a program write past the end of a **buffer**",
+          "tier": "simple"
+        },
+        {
+          "text": "The latest patch uses **OPENSSL_assert()** for inputs that previously caused undefined behavior, while preserving **existing well-defined behavior**. It also applies the fix to EVP_DecodeBlock() and corrects base64encode()'s length check; reviewers debated whether **returning -1** could break callers.",
+          "tier": "substance",
+          "data": [
+            [
+              "CVSS score",
+              "9.8"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say this could be exploitable if untrusted, very large input reaches it; others say the required input is so huge that CVSS 9.8 is exaggerated.",
+      "comment_count": 113,
+      "terms": [
+        "base64",
+        "buffer overflow",
+        "undefined behavior",
+        "OPENSSL_assert()",
+        "CVSS"
+      ],
+      "entities": [
+        "OpenSSL",
+        "EVP_EncodeBlock",
+        "EVP_DecodeBlock",
+        "http_client.c",
+        "wolfSSL",
+        "CVE-2026-121481"
+      ],
+      "comments": [
+        {
+          "by": "amluto",
+          "text": "On a very very quick read, the bug is that EVP_EncodeBlock malfunctions if the input is larger than ~1.5GB. EVP_EncodeBlock is a function that encodes base64. https://docs.openssl.org/1.0.2/man3/EVP_EncodeInit/ As a seasoned C programmer, I can immediately observe that the whole API is bad: the caller is expected to calculate the buffer length on their own, using a nontrivial formula, and the…"
+        },
+        {
+          "by": "userbinator",
+          "text": "I think CVSS 9.8 is exaggerated. This is not remotely anywhere near as serious as Heartbleed. It's an internal function which will fail if its input is far too long, but exploitability rests on how untrusted input can reach it; the key word being \"untrusted\". E.g. if you operate a base64 encoding service on the Internet that just reads all the data into memory at once and calls EVP_EncodeBlock()…"
+        },
+        {
+          "by": "ansipunk",
+          "text": "I am not a system administrator, but I am getting a serious vulnerability fatigue, every single day there's at least two new vulnerabilities in major pieces of software, I'm just tired of seeing that everywhere and hearing that everywhere. Fellow system administrators must be having it much worse."
+        },
+        {
+          "by": "moezd",
+          "text": "The more I see these posts, the more I'm convinced that \"never reinvent the wheel\" mentality we had so far in software engineering basically covered up a lot of lazy engineering, and we just pretended everything was fine. It's like these findings cross-pollinate."
+        },
+        {
+          "by": "VladVladikoff",
+          "text": ":/\nI really need a day off from patching servers."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/0b145aef5a6ae337396b2cb7768a953a42ac2e277f4036045cd4885c9b201fe8/openssl/openssl/pull/33652"
+    },
+    {
+      "id": 50568082,
+      "url": "https://www.wsj.com/finance/banking/visa-mastercard-and-jpmorgan-customer-data-leaked-by-hackers-3b5a0f87",
+      "hn": "https://news.ycombinator.com/item?id=50568082",
+      "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
+      "time": 1795131131,
+      "points": 167,
+      "depth": [
+        {
+          "text": "a reported **customer-data leak** involving **Visa, Mastercard and JPMorgan** has commenters questioning what was exposed",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says the dump was **names and email addresses** from a third-party marketing service, not bank statements; another comment quotes a report saying **email addresses and phone number** of 16,000 of JPMorgan Chase's wealthiest customers were published by ransomware gang n0n.",
+          "tier": "substance",
+          "data": [
+            [
+              "customers mentioned",
+              "16,000"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say the leaked details have “exactly zero value”; others say customer data should be treated as a liability and propose a fund to pay people after leaks.",
+      "comment_count": 44,
+      "terms": [
+        "ransomware gang",
+        "third-party vendor",
+        "CCPA",
+        "GDPR",
+        "two-factor authentication"
+      ],
+      "entities": [
+        "Visa",
+        "Mastercard",
+        "JPMorgan Chase",
+        "n0n",
+        "X",
+        "Reuters"
+      ],
+      "comments": [
+        {
+          "by": "paxy",
+          "text": "So names and email addresses of 16,000 customers leaked from some third party marketing service. Is this what the hackers trying to extort these banks over? They made it seem it was bank statements or something. This data has exactly zero value."
+        },
+        {
+          "by": "eterm",
+          "text": "> \"Based on our investigation so far, we believe the attackers accessed certain marketing data held by those vendors, which may include some customer names and email addresses,\" A big question that I think will increasingly be asked as this sort of thing becomes more widespread: Did these customers really give informed consent to their data being passed to these \"third party vendors\" that are…"
+        },
+        {
+          "by": "fhdkweig",
+          "text": "non-paywall stories Email addresses and phone number of 16,000 of JPMorgan Chase's wealthiest customers were published by ransomware gang n0n, the nation's largest bank announced in a statement on X. https://www.msn.com/en-us/news/other/ransomware-group-leaks-... Hacker leaks details of JPMorgan's ultra-wealthy cardholders\nhttps://cybernews.com/security/jpmorgan-chase-data-leak-non-... Based on…"
+        },
+        {
+          "by": "curiousObject",
+          "text": "Alternate source with no paywall: https://www.reuters.com/legal/government/jpmorgan-says-third..."
+        },
+        {
+          "by": "skinfaxi",
+          "text": "Wasn't there an outage recently at JPMorgan Chase?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50559179,
+      "url": "https://www.science.org/doi/10.1126/sciadv.aee0802",
+      "hn": "https://news.ycombinator.com/item?id=50559179",
+      "title": "Unblockable communication with gravity",
+      "time": 1795090920,
+      "points": 161,
+      "depth": [
+        {
+          "text": "someone looked at sending messages with gravity, and commenters are arguing whether it’s truly **unblockable**",
+          "tier": "simple"
+        },
+        {
+          "text": "The quoted setup uses a mass and an **off-the-shelf, hand-held gravimeter**; a commenter cites a change of **∼5 nm/s^2**, and another points to **1 bit per minute**. Others say flooding the environment with noise could block the signal.",
+          "tier": "substance",
+          "data": [
+            [
+              "change in gravitational acceleration",
+              "∼5 nm/s^2"
+            ],
+            [
+              "rate",
+              "1 bit per minute"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: one commenter argues mass cannot be screened; skeptics say noise can jam the signal or nearby devices can fake a receiver’s reading.",
+      "comment_count": 62,
+      "terms": [
+        "gravimeter",
+        "Faraday cage",
+        "Fourier analysis"
+      ],
+      "entities": [
+        "LIGO",
+        "Three Body Problem",
+        "GPS"
+      ],
+      "comments": [
+        {
+          "by": "marmakoide",
+          "text": "Would it be easy to jam the signal ? Say, you have a big, heavy double pendulum moving close to the emitter. The moving mass would disturb the signal, and predicting the evolution of a double pendulum is not easy due to its instability (it's not periodic for example, so no Fourier analysis)"
+        },
+        {
+          "by": "aetherspawn",
+          "text": "It seems like they missed the opportunity to put the big heavy thing on a rotating disk and then encode the data as changes in velocity (frequency domain) which is way easier to do than an elevator, especially with a PM motor. This is basically FM vs AM. Intuitively if the thing is heavy enough it should have decent range, for example humans can “feel” an object of 100 tons spinning at decent…"
+        },
+        {
+          "by": "DavidSJ",
+          "text": "The key idea seems to be: Since mass cannot be negative, there is no gravitational analog of charge cancelation and hence no way to hide or screen the presence of mass. Perhaps they address this in the paper, but it occurs to me that the obvious countermeasure is to shield with a large positive mass, and then to selectively remove some of this mass to cancel the attempted message."
+        },
+        {
+          "by": "avmich",
+          "text": "I think this idea was long time known to astronomers, which in addition to electromagnetic waves use gravitational waves and neutrinos as the media to transmit information. Something other than those three would be novel, I assume."
+        },
+        {
+          "by": "goda90",
+          "text": "With an array of gravimeters, you could probably build an unblockable position tracker too."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50560955,
+      "url": "https://maccus.fr/en/cooling-overtaking-heating/",
+      "hn": "https://news.ycombinator.com/item?id=50560955",
+      "title": "Cooling buildings is overtaking heating them as an energy need, IEA says",
+      "time": 1795100234,
+      "points": 157,
+      "depth": [
+        {
+          "text": "cooling is **overtaking heating** as an **energy need** in buildings, the IEA says",
+          "tier": "simple"
+        }
+      ],
+      "camps": null,
+      "comment_count": 110,
+      "terms": [
+        "IEA",
+        "TWh",
+        "peak demand",
+        "useful energy"
+      ],
+      "entities": [
+        "IEA",
+        "World Energy Outlook 2026",
+        "Fatih Birol"
+      ],
+      "comments": [
+        {
+          "by": "nikodunk",
+          "text": "This is an ok development in my opinion because cooling buildings with heat pumps or AC overlaps the demand curve with the solar production curve better than heating does. Heating tends to be during shorter days and less solar production, making it trickier to cover the power needs with new energy alone. Of course this doesn’t mean heating is going down, just that cooling is going up (unless…"
+        },
+        {
+          "by": "mw888",
+          "text": "What's this headline mean? That everywhere is warmer now so we need more cooling? (Implies global warming) That developing countries need more cooling than heat? (Buried lead) That datacenters make up the majority of new demand ? (Misleading headline) I see many comments here assuming it means continuous energy needs. From the article, we see the headline implies my second question: > That growth…"
+        },
+        {
+          "by": "torginus",
+          "text": "The great news is that its usually only hot when the suns out, and AC units can be run from solar panels essentially for free. So we can sit in our air conditioned rooms without having to feel guilty for killing the planet."
+        },
+        {
+          "by": "brightball",
+          "text": "That's the main reason I've been fixated on this company in Australia for the last few years (that I found out about on HN). https://graphenemg.com/graphene-products/thermal-xr/ They have a coating that can be applied to HVAC units which results in about a 40% improvement in energy efficiency. In the US it's distribution seems to be handled by Nu-Calgon and for whatever reason they branded it…"
+        },
+        {
+          "by": "yread",
+          "text": "Isn't that also a consequence of countries in the global south getting out of poverty and more people being able to afford AC?"
+        }
+      ],
+      "image": "https://maccus.fr/wp-content/uploads/2026/11/cooling-electricity-demand-2035-en.jpg"
+    }
+  ],
+  "glossary": {
+    "composite index": "A score made by combining several results into one number.",
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "error bars": "Marks on a chart that show how uncertain a measurement may be.",
+    "OEM": "Original Equipment Manufacturer: the company responsible for a laptop’s design and how its parts work together.",
+    "bootloader unlocking": "A way to let a phone start a different operating system from the one it came with.",
+    "antitrust": "Rules meant to stop companies from becoming so powerful that they can squeeze out competition.",
+    "ad auction": "A process where advertisers compete to have their ads shown.",
+    "ROI": "Return on investment: a way to ask whether what something achieves is worth what it costs.",
+    "ROAS": "Return on ad spend: a way to compare money earned from ads with the money spent on them.",
+    "COGS": "Cost of goods sold: what it costs a business to make or buy the products it sells.",
+    "whales": "A small number of customers who spend a lot of money in a game.",
+    "aggregator": "A tool or site that gathers items from different places into one place.",
+    "UI": "User interface: the screens and controls people use to operate a device.",
+    "open source": "Software whose code is shared so other people can inspect, run, or change it.",
+    "ad network": "A service that helps websites show ads from advertisers.",
+    "self-hosting": "Running a model on computers you control instead of using someone else's online service.",
+    "moderation": "Deciding which posts or comments stay up and handling rule-breaking.",
+    "base64": "A way to rewrite data using a limited set of characters so it can be carried in places that expect text; it is not encryption.",
+    "buffer overflow": "When a program reads or writes beyond the space set aside for data.",
+    "undefined behavior": "A situation where C++ gives no guarantee about what the program will do.",
+    "OPENSSL_assert()": "A check that stops execution if a condition the code expects turns out to be false.",
+    "CVSS": "Common Vulnerability Scoring System: a scale people use to rate how serious a security flaw is.",
+    "ransomware gang": "Criminals who use software to lock or threaten to release data to pressure someone for payment.",
+    "third-party vendor": "A separate company hired to provide a service, rather than the company whose customers' data is involved.",
+    "CCPA": "California Consumer Privacy Act: a California law that gives people rights over how businesses use their personal information.",
+    "GDPR": "General Data Protection Regulation: a European law that sets rules for how organizations use people's personal information.",
+    "two-factor authentication": "A sign-in check that asks for a second proof, such as a code, after your password.",
+    "gravimeter": "A tool that measures how strong gravity is at a particular spot.",
+    "Faraday cage": "A metal enclosure that blocks radio signals from reaching what's inside.",
+    "Fourier analysis": "A way to describe a changing signal by breaking it into simpler repeating patterns.",
+    "IEA": "International Energy Agency: a group of countries that coordinates work on energy issues.",
+    "TWh": "Terawatt-hour: a way to count a huge amount of electricity produced or used.",
+    "peak demand": "The most electricity a power grid has to supply at one time during the year.",
+    "useful energy": "The energy that does the job people want, such as the heat produced by a heater."
+  }
+}
