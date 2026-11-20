@@ -2,6 +2,1653 @@
   "date": "2026-11-20",
   "cards": [
     {
+      "id": 50574968,
+      "url": "https://alpo.ge/remark.pdf",
+      "hn": "https://news.ycombinator.com/item?id=50574968",
+      "title": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
+      "time": 1795184181,
+      "points": 2029,
+      "depth": [
+        {
+          "text": "**Levent Alpöge** claims he has a **Generalized Riemann Hypothesis** proof, with **AI** reportedly helping",
+          "tier": "simple"
+        },
+        {
+          "text": "The quoted note says the **formalization is finished**, though the argument is called incredibly long; one commenter reports **1.3GB** and **~15M lines of code**. The thread is already debating whether people can understand it and how much credit belongs to AI.",
+          "tier": "substance",
+          "data": [
+            [
+              "proof size",
+              "1.3GB"
+            ],
+            [
+              "lines of code",
+              "~15M"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some call it a potentially historic result; others worry the giant proof may be hard for people to understand and debate AI’s share of the credit.",
+      "comment_count": 1377,
+      "terms": [
+        "Generalized Riemann Hypothesis",
+        "formalization",
+        "Lean"
+      ],
+      "entities": [
+        "Levent Alpöge",
+        "Generalized Riemann Hypothesis",
+        "Anthropic",
+        "OpenAI",
+        "Lean"
+      ],
+      "comments": [
+        {
+          "by": "mNovak",
+          "text": "Really interesting to note from his timeline, he marks the starting point as the Stepanov determinant, which he earlier mentioned relates to OAI's \"quiet inclusion of the Siegel argument ... I immediately recognized it as Stepanov without multiplicity\". I believe this was one of results in their 700 solution dump. I think this gives a partial counter to the arguments that this AI-driven math over…"
+        },
+        {
+          "by": "Jaxan",
+          "text": "There seems to be a completely human proof also: https://math216.wordpress.com/2026/11/20/hurried-announcemen..."
+        },
+        {
+          "by": "z7",
+          "text": "Terence Tao a month ago: \"The AI companies have clearly... I'm sure they have secretly devoted much more time to the Riemann hypothesis than what they've disclosed. And they couldn't touch it. I mean something beyond current AI is needed. So maybe some combination of humans and AIs in 2050 or something will make further progress. Who knows?\" https://www.youtube.com/watch?v=bAnwMdfcMVw (17:10)"
+        },
+        {
+          "by": "djoldman",
+          "text": "These proofs really are quite huge. The proof is 1.3GB, ~15M lines of code: mkdir -p riemann_proof && cd riemann_proof\n# fetch parts 01–14\nfor i in {01..14}; do\ncurl -fSL -o lean.tar.gz.part$i https://alpo.ge/lean.tar.gz.part$i || { echo \"failed: part$i\"; break; }\ndone\n# join and decompress (creates ./lean)\ncat lean.tar.gz.part{01..14} > lean.tar.gz\ntar xzf lean.tar.gz\n# size, file count, line…"
+        },
+        {
+          "by": "quasigod",
+          "text": "This title seems weird. Why just \"anthropic employee\", not specifying that hes a mathematician, or just including his name? Without the clarifications in the replies, many will likely assume this was a random Anthropic employee just throwing tokens at the problem, not a very well known mathematician working with the model. Probably not the intention, but these kinds of titles feel like they're…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50579568,
+      "url": "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/",
+      "hn": "https://news.ycombinator.com/item?id=50579568",
+      "title": "Hurried Announcement: Alessandro Masullo GRH",
+      "time": 1795199594,
+      "points": 755,
+      "depth": [
+        {
+          "text": "someone rushed out a **proposed proof** of the **Generalized Riemann Hypothesis** before planned polishing was finished",
+          "tier": "simple"
+        },
+        {
+          "text": "Alessandro Masullo's draft had **months of close checking** from Brian Conrad, whose extensive feedback is being incorporated. The post says it is **all human, with no AI**, and asks people to check it, formalize it, and fill any small gaps.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters say there are errors or cite a write-up claiming the proof is wrong; others hope it is mostly correct and Masullo gets credit.",
+      "comment_count": 347,
+      "terms": [
+        "GRH",
+        "formalize",
+        "Lean"
+      ],
+      "entities": [
+        "Alessandro Masullo",
+        "Brian Conrad",
+        "Generalized Riemann Hypothesis",
+        "American Mathematical Society",
+        "Anthropic",
+        "Claude",
+        "Lean"
+      ],
+      "comments": [
+        {
+          "by": "smokel",
+          "text": "For those who don't eat math for breakfast: \"GRH\" is the Generalized Riemann Hypothesis [1]. [1] https://en.wikipedia.org/wiki/Generalized_Riemann_hypothesis"
+        },
+        {
+          "by": "prometheus1992",
+          "text": "Is it possible that brian conrad somehow uploaded the proof to anthropic to cross check something and then the anthropic guys got the proof? - it doesn't have to be the full proof - even if portions were uploaded, that should also be enough or at least calls for a thorough check on ants side. the human proof has been in the works for 12 years, who knows when something was uploaded somewhere or…"
+        },
+        {
+          "by": "Aurornis",
+          "text": "The manuscript claims he has been working on this problem for 12 years. I can only imagine the feelings that must have hit him when he saw the Anthropic announcement. Though if he believed he had solved it, he must have known it was only a matter of time until one of the AI companies found it, too. A hurried announcement with the draft published within hours is the only way to claim a tie to the…"
+        },
+        {
+          "by": "Kotlopou",
+          "text": "This looks crazy? 940 pages and the very first section 1.1.1 is empty. I can see why the author wanted to polish it. Let's just hope somebody clears this up somehow. But at the same time Brian Conrad is presumably not a crank (per Wikipedia he worked with Wiles on FLT), but at the same time it seems insane to try and keep a 940-page result for a year hidden from public view in the current…"
+        },
+        {
+          "by": "pbkompasz",
+          "text": "900 pages vs 250,000 pages\nCompression is intelligence"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50576855,
+      "url": "https://poolp.org/posts/2026-11-20/ill-never-buy-framework-hardware-again/",
+      "hn": "https://news.ycombinator.com/item?id=50576855",
+      "title": "I'll never buy Framework hardware again",
+      "time": 1795190790,
+      "points": 728,
+      "depth": [
+        {
+          "text": "someone wants Framework to fix its **support** and deliver the **working laptop** they paid for",
+          "tier": "simple"
+        },
+        {
+          "text": "Gilles Chehade says the post got **more attention than expected**. Customers describe everything from **support going silent** to getting a **replacement keyboard within a week**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say Framework support has been frustrating enough to rule out another purchase; others say they had good support and would buy again.",
+      "comment_count": 490,
+      "terms": [
+        "RMA",
+        "BIOS",
+        "QA"
+      ],
+      "entities": [
+        "Framework",
+        "Gilles Chehade",
+        "Intel",
+        "Cooler Master",
+        "System76",
+        "Apple",
+        "Linux",
+        "NixOS",
+        "MSI",
+        "Costco",
+        "ThinkPad",
+        "Fedora",
+        "MacBook Pro",
+        "Ars Technica",
+        "Linus Sebastian"
+      ],
+      "comments": [
+        {
+          "by": "rpdillon",
+          "text": "I've stayed pretty quiet about this, but as an early and enthusiastic Framework supporter, I cannot recommend them to anyone. I bought the Framework 13 before launch, and received a machine from the first batch. I later bought their main board upgrade kit and their screen upgrade kit and I did a full upgrade on the machine and rebuilt it. The reason I could justify that was that I would take the…"
+        },
+        {
+          "by": "nrp",
+          "text": "I’m digging into this with the team, along with comments in this post. Longevity has to include a streamlined and effective support experience in addition to the hardware being repairable. There are several changes we made earlier this year to drastically shorten the number of back-and-forths to issuing replacement parts when submitting a support request, and we’re working to streamline that…"
+        },
+        {
+          "by": "vova_hn2",
+          "text": "> ENODRAMA. Move along, there’s nothing to see here anymore. I'm seeing this behaviour pattern more and more recently and I find it extremely annoying. I don't remember people doing this, i. e. 5 or 10 years ago. Why don't I deserve to know about Framework's support failure just because I opened the link a bit later? Why did you spend time and effort writing the article if you don't actually want…"
+        },
+        {
+          "by": "quantum5",
+          "text": "Three months ago, we had https://news.ycombinator.com/item?id=49345220 . Framework bricked my laptop with a recommended BIOS update and said it wasn't their problem because warranty ended, and that I had to buy a whole new motherboard from their store. This feels like the same treatment. I had to figure out how to fix it myself without any help from Framework. After it got to the front page of…"
+        },
+        {
+          "by": "moeffju",
+          "text": "Boy this makes me glad I cancelled (kinda) the recent Framework laptop. After the whole switcheroo with the pricing I was prepared to go to court over original spec delivery, but then I couldn't be bothered to update my payment method and Framework canceled the order on their end. I hope someone else got the RAM added to theirs. That experience has soured me on Framework for the foreseeable…"
+        }
+      ],
+      "image": "https://poolp.org/posts/2026-11-20/ill-never-buy-framework-hardware-again/featured.png"
+    },
+    {
+      "id": 50572503,
+      "url": "https://architectlabs.com/blog/frostbite",
+      "hn": "https://news.ycombinator.com/item?id=50572503",
+      "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+      "time": 1795168901,
+      "points": 560,
+      "depth": [
+        {
+          "text": "someone used AI to design **Frostbite**, a CPU that spreads **independent work** across tiles",
+          "tier": "simple"
+        },
+        {
+          "text": "Its programs use **interaction nets**: connected graph pieces rewrite locally, and each value has one owner. Architect Labs reports **4.59x performance-per-watt** across 25 workloads against an in-order CPU; commenters question the **baseline and novelty**.",
+          "tier": "substance",
+          "data": [
+            [
+              "performance-per-watt across 25 workloads",
+              "4.59x"
+            ],
+            [
+              "performance-per-area",
+              "8.77x"
+            ],
+            [
+              "performance-per-watt on held-out workloads",
+              "3.83x"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some praise AI for making an exploratory chip project more feasible; skeptics say the architecture echoes earlier work and the CPU comparison is too limited.",
+      "comment_count": 297,
+      "terms": [
+        "interaction nets",
+        "ISA",
+        "RTL",
+        "held-out workload",
+        "work stealing"
+      ],
+      "entities": [
+        "Architect Labs",
+        "Architect Silicon Inc.",
+        "Frostbite",
+        "Redwood",
+        "Vine",
+        "Ivy",
+        "Arcmodel",
+        "ASL",
+        "Lean",
+        "TCPU",
+        "Intel Xeon",
+        "AMD Zen",
+        "NVIDIA Vera",
+        "SPLASH-2",
+        "Tendrils",
+        "WaveScalar",
+        "AMD GCN",
+        "GCC",
+        "LLVM",
+        "OpenCL"
+      ],
+      "comments": [
+        {
+          "by": "shioyama",
+          "text": "Wow, I posted this and come back a few hours later, and the comments are... a bit depressing honestly. Do people here know what interaction nets are? They are a fundamentally different programming paradigm, different from the most basic harvard architecture of the 1940s. Whether you think this particular implementation will genuinely support them, and whether that will bring the performance they…"
+        },
+        {
+          "by": "throwaway_new_1",
+          "text": "I am interested to have end products with really good UX driven by peak performance and optimizations which blows my mind because it’s so well perfected as humans weren’t part of its process. As of now, I don’t see any of that being the goals even let alone the result. Instead what I see is that everyone is in a race to have as much product out as possible by the same standards that applied to…"
+        },
+        {
+          "by": "jkhdigital",
+          "text": "The title is a bit misleading—humans came up with all the insights and innovations here. What AI has done, which it is exceptionally good at, is take decades of brilliant ideas buried in research literature and synthesize them into a coherently engineered product. It would seem that AI is now doing an end-run around the innovator’s dilemma, or at least part of it, by dramatically lowering the R&D…"
+        },
+        {
+          "by": "pizza234",
+          "text": "I'm quite skeptical; their baseline is a in-order CPU, instead of a modern out-of-order design, and they're testing a small amount of programs. Also, I'm not an expert in CPUs, but the underlying idea doesn't seem entirely novel - WaveScalar explored dataflow-based architecture 20+ years ago."
+        },
+        {
+          "by": "burpingtree",
+          "text": "Isn’t this similar to every other alternative architecture that it relies on a “sufficiently smart” compiler to handle the all the dependencies and get increased efficiencies. It isn’t clear to me what exactly is different this time and why it will work better in practice than all the prior attempts."
+        }
+      ],
+      "image": "https://main--gleeful-begonia-6bb5f3.netlify.app/_next/static/media/frostbite-cover.3n9ytugnquhlr.jpg"
+    },
+    {
+      "id": 50572355,
+      "url": "https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it",
+      "hn": "https://news.ycombinator.com/item?id=50572355",
+      "title": "If you can't explain something in simple terms, you don't understand it (2017)",
+      "time": 1795167799,
+      "points": 540,
+      "depth": [
+        {
+          "text": "a story uses **Feynman’s teaching** to argue that **simple explanations** can show you **understand an idea**",
+          "tier": "simple"
+        },
+        {
+          "text": "Feynman tried to prepare a **freshman lecture** on why spin one-half particles obey **Fermi-Dirac statistics**, but couldn't; he said that meant “we don’t really understand it.” The comments push back: audience, communication skill, and **learner effort** also matter.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some see simple explanations as evidence of understanding; others say communication skill, audience, and learner effort matter too.",
+      "comment_count": 271,
+      "terms": [
+        "Fermi-Dirac statistics",
+        "spin one-half particle",
+        "compactness",
+        "open cover",
+        "reductionism"
+      ],
+      "entities": [
+        "Richard Feynman",
+        "David Goodstein",
+        "John Gruber",
+        "Apple",
+        "Caltech",
+        "Feynman Lectures on Physics",
+        "Feynman's Lost Lecture",
+        "Engineering & Science"
+      ],
+      "comments": [
+        {
+          "by": "seanhunter",
+          "text": "I think this idea is often misunderstood and used as an excuse by people who don’t want to make any effort to understand a complex concept and want to blame the results of their laziness on the explanation or the explainer. There are things where you may be given an explanation in simple terms, but the concept requires effort on the part of the recipient of the explanation to really understand…"
+        },
+        {
+          "by": "mr_mitm",
+          "text": "The article is just a bunch of quotes from Richard Feynman and John Gruber. There is little insight and I even think the article is misrepresenting the quotes. Feynman said \"if you can't explain it on a freshmen level \". Leaving out that qualifier distorts the statement. The other quote about the magnets is also overly reductive. Saying \"I don't understand it in terms you're more familiar with\"…"
+        },
+        {
+          "by": "tgv",
+          "text": "Explain to what level? E.g some topics common here. How do you explain NP in simple terms? \"Things that are hard to compute?\" That's simple, but not much of an explanation. It leaves the listener with a practically useless definition. And how do you explain even something practical as Heartbleed or Rowhammer? Etc. And then there's another barrier, of course: the audience. You may use simple…"
+        },
+        {
+          "by": "keeda",
+          "text": "Whenever I see this I think to myself, “I can explain something in simple terms, but it will take more time than you have.” Or in other words, “simple” does not imply ”short.” However I’ve seen a lack of appreciation of this distinction play out in some exec meetings where “clarity” is prioritized above nuance. There is definitely great skill involved in crafting a message for an audience, and…"
+        },
+        {
+          "by": "Frost1x",
+          "text": "I don’t think this is true because it makes an assumption that reductionism is always possible, you can always distill every increasingly complexity into something less and less complex and maintain the overall behavior. I don’t think complexity is always reducible because sometimes the detailed nuance is absolutely critical to the distinction. You may be able to take core ideas from something…"
+        }
+      ],
+      "image": "http://kottke.org/plus/misc/images/feynman-blackboard.jpg"
+    },
+    {
+      "id": 50572116,
+      "url": "https://ecohustler.com/article/one-corporation-to-pollute-them-all/",
+      "hn": "https://news.ycombinator.com/item?id=50572116",
+      "title": "Carnival Cruises emits ten times more sulphur oxide than all of Europe's cars (2019)",
+      "time": 1795165989,
+      "points": 475,
+      "depth": [
+        {
+          "text": "a study found **Carnival cruise ships** released far more **sulphur oxide** around Europe than Europe's cars",
+          "tier": "simple"
+        },
+        {
+          "text": "Royal Caribbean came second, at four times the European car fleet's SOx emissions; Carnival emitted nearly **10 times** as much as all **260 million European cars** in 2017. Commenters note that the article predates sulphur restrictions starting 2020-01-01.",
+          "tier": "substance",
+          "data": [
+            [
+              "Carnival SOx emissions vs. European cars",
+              "nearly 10 times more"
+            ],
+            [
+              "European cars in comparison",
+              "260 million"
+            ],
+            [
+              "Royal Caribbean vs. European car fleet",
+              "four times worse"
+            ],
+            [
+              "Report year",
+              "2017"
+            ],
+            [
+              "Sulphur restrictions start",
+              "2020-01-01"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say the comparison is misleading or dated; others say cruises are polluting enough to justify banning ships or dirty fuel.",
+      "comment_count": 298,
+      "terms": [
+        "SOx",
+        "NOx",
+        "bunker fuel",
+        "LNG",
+        "emission control areas",
+        "IMO"
+      ],
+      "entities": [
+        "Carnival Corporation",
+        "Royal Caribbean Cruises",
+        "Transport & Environment",
+        "Faig Abbasov",
+        "International Maritime Organization",
+        "Greg English",
+        "Ecohustler",
+        "Disney"
+      ],
+      "comments": [
+        {
+          "by": "tito",
+          "text": "One unintended side effect of the removal of sulfur from shipping fuels is a drastic reduction in cloud cover over the ocean. This is estimated to have doubled global warming in the 2020s (!). I’m exploring how to cleanly re-create those lost clouds over the ocean. Fuel additives, spraying sea salt into clouds, modifying ship routing. If this is up your alley hit reply."
+        },
+        {
+          "by": "nehal3m",
+          "text": "One of the easiest wins would be outlawing burning bunker fuel for recreational purposes, would it not? I'm not posing this as absolute truth but I don't see any direct limitations to personal freedoms. Let cruise operators burn something less ridiculously dirty and if that prices cruising out of the market, so be it."
+        },
+        {
+          "by": "trashb",
+          "text": "At this point I don't see why cruise ships are still allowed, I say ban them. They are super polluting, dangerous for spreading disease and many more problems (bad treatment of the staff, a role in human trafficking, tax evasion). They are completely optional, they exist purely for entertainment/excess. If humanity agreed to stop all cruise ships we would safe more pollution then any other…"
+        },
+        {
+          "by": "tptacek",
+          "text": "Cruises are horrible and all, but is this a super meaningful comparison? Are cars a primary source of SOx pollution? This is a very specific comparison, which makes me wary."
+        },
+        {
+          "by": "throw0101c",
+          "text": "As noted, this is from 2019. The International Maritime Organization put restrictions on the sulphur content in emissions starting 2020-01-01: * https://www.imo.org/en/mediacentre/hottopics/pages/sulphur-2... * https://www.cmacgm-group.com/en/low-sulphur-imo-2020-regulat... Is this particular issue (sulphur) still an issue?"
+        }
+      ],
+      "image": "https://ecohustler.com/img/asset/bWFpbi9vbmUtY29ycG9yYXRpb24tdG8tcG9sbHV0ZS10aGVtLWFsbC5wbmc/one-corporation-to-pollute-them-all.png?p=og&s=6d596b09b5a7b3028cc8993239fa3d38"
+    },
+    {
+      "id": 50571189,
+      "url": "https://em-online.bearblog.dev/i-can-tell-you-wrote-this-yourself/",
+      "hn": "https://news.ycombinator.com/item?id=50571189",
+      "title": "\"I can tell you wrote this yourself\"",
+      "time": 1795158801,
+      "points": 394,
+      "depth": [
+        {
+          "text": "someone argues students should keep doing their **own thinking**, even as engineering classes **push AI use**",
+          "tier": "simple"
+        },
+        {
+          "text": "The writer says assignments moved from encouraging AI to making it feel expected, and their hardest class involved prompting an AI in a **windowless computer lab** for eight hours a day. Their supervisor said he had been sent **reports written by AI**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say AI frees people from grunt work if they check its output; others say writing and learning are the point, so outsourcing them empties the work.",
+      "comment_count": 383,
+      "terms": [
+        "LLM",
+        "LaTeX",
+        "constraint solver"
+      ],
+      "entities": [
+        "Em's Blog",
+        "LaTeX",
+        "WolframAlpha"
+      ],
+      "comments": [
+        {
+          "by": "FinnLobsien",
+          "text": "AI and LLMs, in my opinion, are effectively the industrialization of knowledge work. Like it or not, industrialization brought many benefits and we couldn't imagine our modern way of living without it (just think about medicines). Industrial production made so many things so much more accessible for so many people. But an industrialist perspective doesn't care about the process of making stuff…"
+        },
+        {
+          "by": "borzi",
+          "text": "Great post, author clearly has a bright future. What I realized over the past years is that people that want to \"think for themselves\" were already, and probably always, in the minority. It's much easier to delegate how to react to a certain event or piece of information to someone else (news anchors, then influencers in last couple years, now increasingly AI I guess). I've certainly been guilty…"
+        },
+        {
+          "by": "wavemode",
+          "text": "> Assignment documents that start with \"you are strongly encouraged to explore the use of AI\" which quickly turns into the clear understanding that you aren't just encouraged but expected to use it. That you're disadvantaged by not using it. The hardest class of my degree was spent in a brick-walled windowless computer lab prompting an AI for eight hours a day. College education for software…"
+        },
+        {
+          "by": "MrScruff",
+          "text": "AI behaves like a constraint solver. You put in the right set of constraints (on writing style, on technical details, on structure) and with a sufficiently capable model what will come out is a close approximation of something you might have produced, or at least something you might have been happy to receive from someone else. There will usually be aspects that aren’t quite right, so you add…"
+        },
+        {
+          "by": "orphereus",
+          "text": "When I read other comments, I come to the conclusion that it's kinda futile to post this on HN."
+        }
+      ],
+      "image": "https://bearblog.dev/static/og-image.png"
+    },
+    {
+      "id": 50572348,
+      "url": "https://signal.org/blog/protecting-your-privacy/",
+      "hn": "https://news.ycombinator.com/item?id=50572348",
+      "title": "Signal Is Serious About Protecting Your Privacy",
+      "time": 1795167736,
+      "points": 387,
+      "depth": [
+        {
+          "text": "Signal is blocking **AI screen capture** on some devices to keep **private messages** away from operating-system assistants",
+          "tier": "simple"
+        },
+        {
+          "text": "The changes block screenshots in the app on **iOS 27** and detect **Android assistants** trying to access the screen; users can disable the protection. Signal says screenshots aren’t the only route: AI agents could also access data through the filesystem, and it cannot implement these protections on macOS.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some favor blocking AI access to protect privacy; others say device owners should choose and object to Signal blocking screenshots.",
+      "comment_count": 247,
+      "terms": [
+        "AI agent",
+        "filesystem",
+        "operating system"
+      ],
+      "entities": [
+        "Signal",
+        "Apple",
+        "Google",
+        "Microsoft",
+        "iOS",
+        "Android",
+        "macOS",
+        "Windows",
+        "Microsoft Recall",
+        "Gemini Intelligence",
+        "Google Gemini",
+        "Siri AI",
+        "Meta",
+        "Muse"
+      ],
+      "comments": [
+        {
+          "by": "pajamasam",
+          "text": "I found the Machine Gods interview with Meredith Whittaker really interesting. She specifically talked about this issue of AI apps having too much access on users’ devices and that Signal is struggling to prevent these apps from getting access to users’ Signal chats. And that even if you don’t have an AI app installed, your contact could and thereby still leaks your chat. Good to see they’re…"
+        },
+        {
+          "by": "hn_submit",
+          "text": "I don't trust Signal in the sense that I realize it costs an extraordinary amount of money to run a messaging service with literally billions of users (WhatsApp) on it. The Signal Foundation wouldn't be able to finance Signal operations if too many people started using it and they'd probably end up selling it to some VC who'd immediately force people to buy a subscription or riddle it with ads…"
+        },
+        {
+          "by": "ada-h00k",
+          "text": "I wish they would go one step further and alert every user of such a system that it contains spyware, and then recommend alternatives like GrapheneOS or Linux for desktop computers. Relying on Apps that meant to remain private to prevent screenshots from being taken won’t work in the long run. Users need to regain control over their operating system."
+        },
+        {
+          "by": "cimnine",
+          "text": "I would appreciate if Signal published the findings of their 'forensics investigation' so that other app developers with fewer resources could profit. If it were something like a living document (wiki or repo), there could even be collaboration, where others share their findings."
+        },
+        {
+          "by": "DASD",
+          "text": "Tangential article for those on Apple platforms - https://www.eff.org/deeplinks/2026/10/victory-you-can-now-ex..."
+        }
+      ],
+      "image": "https://signal.org/blog/images/protecting-your-privacy-opengraph.png"
+    },
+    {
+      "id": 50569890,
+      "url": "https://www.postgresql.org/docs/release/19.0/",
+      "hn": "https://news.ycombinator.com/item?id=50569890",
+      "title": "PostgreSQL 19",
+      "time": 1795146345,
+      "points": 364,
+      "depth": [
+        {
+          "text": "PostgreSQL adds **easier table cleanup**, **more replication features**, and a bunch of performance and monitoring improvements",
+          "tier": "simple"
+        },
+        {
+          "text": "The release adds **REPACK**, which replaces VACUUM FULL and CLUSTER; its **CONCURRENTLY** option rebuilds tables without access-exclusive locking. It also adds **sequence replication** and a WAIT command so standbys can wait for log positions to be written, flushed, or replayed.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some praise the features as exciting; others worry companies haven't adopted earlier releases and don't want feature creep in a database.",
+      "comment_count": 26,
+      "terms": [
+        "access-exclusive lock",
+        "standby",
+        "LSN",
+        "logical replication"
+      ],
+      "entities": [
+        "PostgreSQL",
+        "REPACK",
+        "VACUUM FULL",
+        "CLUSTER",
+        "pg_plan_advice",
+        "pg_stash_advice",
+        "pg_upgrade"
+      ],
+      "comments": [
+        {
+          "by": "dbgobrrr",
+          "text": "Amazing release, really exciting features: - REPACK CONCURRENTLY to reclaim disk space, which also affects performance. - Logical replication of sequences - Fantastic addition. This is a missing piece in the major-version upgrade story which required extra scripting, and enable additional usecases. - WAIT FOR LSN is a game-changer for read-replicas. For read-after-write, where the write goes to…"
+        },
+        {
+          "by": "rdsubhas",
+          "text": "Huge respect to Postgres folks, and the features are amazing. But an apologetic opinion: Postgres 18 was released in Sep 2025, and it's just Nov 2026. Half the companies I know haven't even updated to pg17 yet, let alone pg18's async I/O or anything. There are already so many features that are unadopted and unproven at scale. IMHO the last software that I want to see feature creep or a large…"
+        },
+        {
+          "by": "BitPirate",
+          "text": "> Change JIT to be disabled by default (Jelte Fennema-Nio) That was long overdue. The performance impact on perfectly fine tuned queries was horrendous. It's also disabled by most OSM apps that make heavy use of PostGIS for exactly that reason. Maybe it wouldn't be that bad if a copy-and-patch kind of JIT would be used?"
+        },
+        {
+          "by": "arnejenssen",
+          "text": "A huge thank you to all contributors for this gift"
+        },
+        {
+          "by": "murkt",
+          "text": "This is the most bug-free .0 release of Postgres. I am always waiting for at least .1 or .2 before upgrading. But should I wait this time?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50573886,
+      "url": "https://cekrem.github.io/posts/if-you-stop-writing-code-you-also-get-worse-at-reviewing-it/",
+      "hn": "https://news.ycombinator.com/item?id=50573886",
+      "title": "If you stop writing code, you also get worse at reviewing it",
+      "time": 1795178498,
+      "points": 294,
+      "depth": [
+        {
+          "text": "the author says you can get **worse at code reviews** if you stop **writing code**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author argues that **reviewing Claude’s code** alone won’t do it; engineers need to keep **solving problems themselves**. They warn that turning to AI whenever work gets hard can eat into **learning, craft, and joy**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say AI frees time for learning and automates mundane work; others warn that relying on it weakens problem-solving and code understanding.",
+      "comment_count": 141,
+      "terms": [
+        "code review",
+        "software architecture",
+        "LLM",
+        "technical debt",
+        "pull request"
+      ],
+      "entities": [
+        "Claude",
+        "John Scofield",
+        "Doom",
+        "Christian Ekrem",
+        "Em",
+        "Anthropic",
+        "React",
+        "Ansible",
+        "Terraform",
+        "Donald Knuth",
+        "Filippo di Strata",
+        "archme.io",
+        "Rust",
+        "Python"
+      ],
+      "comments": [
+        {
+          "by": "JamesLeonis",
+          "text": "I agree with the author we're in a weird moment where the Best Practices seemingly flipped. Five years ago it was common knowledge on HN that moving away from the code (like taking a management position) atrophied your programming skills. The routine suggestion was to get your hands dirty again. AI-first folks will tell me I should see my new responsibility as being just such a manager over…"
+        },
+        {
+          "by": "bengold14",
+          "text": "I think most people at this point just don't review code. Which is a shame, because: 1. It was good for collaboration. Sharing how you are changing the codebase pushes everyone to row in the same direction, and provides a sense of team ownership. 2. It was good as a push for engineers to take pride in their work. Knowing someone is watching gives you subconsciously an extra reason to not cut…"
+        },
+        {
+          "by": "jarjoura",
+          "text": "Our profession was built on (from its very inception) and is entirely staffed with people obsessed with speed, efficiency, and correctness. For us, it's so core to our nature that when some new tech promises all 3 in one, most of us can't help but dive in full steam and not question it. The fact that Anthropic can so easily go around to tech companies and sell them on \"coding has been solved,\"…"
+        },
+        {
+          "by": "snailcoder",
+          "text": "What about the code you were never able to write because you were time constrained? I have learned so much about the devops process through Claude and ansible playbooks and terraform that I would’ve never known was possible because of a lack of time. I do agree we can’t shut off our brains. But a good bit of software dev was taking the time to go through documentation to understand specific…"
+        },
+        {
+          "by": "bemtevi",
+          "text": "That's obvious. People claim they understand every line of code their agents write, but there's understanding...and then there's understanding. A cursory idea of how code works does not mean the same deep understanding of the solution nor does it give the feeling of the 'lightbulb' when a thorny problem is solved. For a long time in coding, we've constantly been piling on technical debt, even…"
+        }
+      ],
+      "image": "https://codimg.alwaysdata.net/code.svg?input=%7B-%0A+++++++++++_+++++++++++++++++++++++++++++++++++_+_+++_+++++++++++_+++++++++++_+++++++%0A++++++++++%7C+%7C+++++++++++++++++++++++++++++++++%28_%29+%7C+%7C+%7C+++++++++%7C+%7C+++++++++%28_%29++++++%0A+++___+___%7C+%7C+___+__+___+_+__+___+++++++++__+_+_%7C+%7C_%7C+%7C__++_+++_%7C+%7C__++++++++_++___++%0A++%2F+__%2F+_+%5C+%7C%2F+%2F+%27__%2F+_+%5C+%27_+%60+_+%5C+++++++%2F+_%60+%7C+%7C+__%7C+%27_+%5C%7C+%7C+%7C+%7C+%27_+%5C++++++%7C+%7C%2F+_+%5C+%0A+%7C+%28_%7C++__%2F+++%3C%7C+%7C+%7C++__%2F+%7C+%7C+%7C+%7C+%7C++_++%7C+%28_%7C+%7C+%7C+%7C_%7C+%7C+%7C+%7C+%7C_%7C+%7C+%7C_%29+%7C++_++%7C+%7C+%28_%29+%7C%0A++%5C___%5C___%7C_%7C%5C_%5C_%7C++%5C___%7C_%7C+%7C_%7C+%7C_%7C+%28_%29++%5C__%2C+%7C_%7C%5C__%7C_%7C+%7C_%7C%5C__%2C_%7C_.__%2F++%28_%29+%7C_%7C%5C___%2F+%0A++++++++++++++++++++++++++++++++++++++++++__%2F+%7C++++++++++++++++++++++++++++++++++++++%0A+++++++++++++++++++++++++++++++++++++++++%7C___%2F+++++++++++++++++++++++++++++++++++++++%0A%0A+++cekrem.github.io%2Fposts%2Fif-you-stop-writing-code-you-also-get-worse-at-reviewing-it%0A-%7D%0A%0Atitle+%3A+String%0Atitle+%3D+%22If+you+stop+writing+code%2C+you+also+get+worse+at+reviewing+it%22%0A%0Adescription+%3A+String%0Adescription+%3D%0A++++%22Before+2022+10%2F10+engineers+would+agree+wholeheartedly.+%22%0A++++++++%2B%2B+%22Somehow+it+changed.%28%3F%21%29%22&lang=elm"
+    },
+    {
+      "id": 50569998,
+      "url": "https://ffmpeg.org/download.html#release_9.1",
+      "hn": "https://news.ycombinator.com/item?id=50569998",
+      "title": "FFmpeg 9.1 'Gauss'",
+      "time": 1795147359,
+      "points": 279,
+      "depth": [
+        {
+          "text": "FFmpeg's latest stable release adds **image tools** and **audio and video features**",
+          "tier": "simple"
+        },
+        {
+          "text": "FFmpeg 9.1 was released on 2026-11-20. Its changelog lists **ASTC image encoding and decoding**, an **improved AAC encoder**, and an APV Vulkan encoder.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 35,
+      "terms": [
+        "ASTC",
+        "AAC",
+        "muxer",
+        "demuxer",
+        "Vulkan"
+      ],
+      "entities": [
+        "FFmpeg",
+        "ASTC",
+        "libastcenc",
+        "KTX",
+        "AAC",
+        "APV",
+        "Vulkan"
+      ],
+      "comments": [
+        {
+          "by": "gyan",
+          "text": "Changelog: - ASTC image encoding and decoding via libastcenc, with .astc and KTX 1.0 muxers and demuxers - extensively improved AAC encoder - APV Vulkan encoder - iTerm2 inline image protocol muxer - LCEVC payload merging bitstream filter - Graph based bitstream filtering API - ffmpeg CLI dual track LCEVC handling - MVR demuxer - latticepal filter - Add AMF Video Quality Enhancer (vf_vqe_amf)…"
+        },
+        {
+          "by": "minimaxa",
+          "text": "FFmpeg: holding the world's open-source video code on its shoulders."
+        },
+        {
+          "by": "adzm",
+          "text": "Thanks btw for the ffmpeg builds gyan!"
+        },
+        {
+          "by": "henryzhou",
+          "text": "Thank you for all the time and efforts put into this project."
+        },
+        {
+          "by": "fzero",
+          "text": "Fantastic work, what the world would be without ffmpeg"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50575644,
+      "url": "https://blog.mozilla.org/en/mozilla/internet-policy/apple-ios-browser-engine-rules/",
+      "hn": "https://news.ycombinator.com/item?id=50575644",
+      "title": "Why there are still no non-WebKit browsers on iOS",
+      "time": 1795187011,
+      "points": 283,
+      "depth": [
+        {
+          "text": "Mozilla says Apple's **iOS rules** make bringing Firefox's **own browser engine** to iPhones too hard",
+          "tier": "simple"
+        },
+        {
+          "text": "Mozilla says **not one developer** has been able to launch a non-WebKit browser on iOS. To use Gecko, it says Firefox would need a **separate app**, and users would have to move bookmarks, passwords and history before switching manually.",
+          "tier": "substance",
+          "data": [
+            [
+              "time since Apple introduced conditions in the EU",
+              "nearly three years"
+            ],
+            [
+              "time since Japan introduced rules",
+              "almost a year"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: Mozilla says Apple's conditions make bringing Gecko to iOS unworkable; skeptics say too few people care enough to justify building and maintaining another engine.",
+      "comment_count": 148,
+      "terms": [
+        "iOS",
+        "browser engine",
+        "WebKit",
+        "Gecko",
+        "DMA",
+        "notarization",
+        "sideload",
+        "JIT",
+        "BrowserEngineKit"
+      ],
+      "entities": [
+        "Apple",
+        "Mozilla",
+        "Firefox",
+        "WebKit",
+        "Gecko",
+        "Digital Markets Act",
+        "Reynard",
+        "Blinker-Fluid",
+        "BrowserEngineKit",
+        "Chromium",
+        "Safari"
+      ],
+      "comments": [
+        {
+          "by": "st3fan",
+          "text": "You also cannot work on this outside of Europe. Developers have to use VPN or special networks to make iOS think they are in Europe. Otherwise you cannot build and run with a custom engine. It is completely bonkers. Apple is smart enough to just allow this world wide AND still make huge profits."
+        },
+        {
+          "by": "spogbiper",
+          "text": "Why is Apple so hell bent on preventing alternate browser engines in iOS? Is there a financial benefit for Apple in forcing their own engine on every user? At the surface level this just seems silly so I must be missing something."
+        },
+        {
+          "by": "dadoum",
+          "text": "There are non-WebKit browsers on iOS but they don't qualify for notarization: - Reynard: Gecko-based, iOS 13+, extension support https://github.com/minh-ton/reynard-browser - Blinker-Fluid: Chromium-based, iOS 12+, content blocker https://github.com/Nodesclock/Blinker-fluid I am guessing neither of them are relying on BrowserEngineKit nor following the safe programming guidelines Apple enforces…"
+        },
+        {
+          "by": "OsrsNeedsf2P",
+          "text": "> One of the conditions requires us not to disclose non-public information related to the project This is insane. Basically if you have a cool project you want to show progress and build hype around, you're not allowed to. Apple knows exactly how deadly this is"
+        },
+        {
+          "by": "roachman",
+          "text": "I just want to be able to use a custom search engine on Safari without having to use a hacky workaround that only half works.."
+        }
+      ],
+      "image": "https://blog.mozilla.org/wp-content/blogs.dir/278/files/2026/11/Mozilla_Illustrations_Pixelgram_Arrows_Orange-1082x721.png"
+    },
+    {
+      "id": 50577265,
+      "url": "https://arxiv.org/abs/2611.21885",
+      "hn": "https://news.ycombinator.com/item?id=50577265",
+      "title": "Language Models Can Rewrite Their Own Weights",
+      "time": 1795192146,
+      "points": 257,
+      "depth": [
+        {
+          "text": "someone got a language model to **rewrite its own weights** and **improve on unseen problems**",
+          "tier": "simple"
+        }
+      ],
+      "camps": "Two camps: some see a promising route toward models improving themselves; others say these are simple tweaks and the results don't yet show continuous self-improvement.",
+      "comment_count": 90,
+      "terms": [
+        "weights",
+        "gradients",
+        "inference",
+        "self-rewriting",
+        "recursive self-improvement"
+      ],
+      "entities": [
+        "Language Models Can Rewrite Their Own Weights",
+        "Jiajun Fan",
+        "Neil He",
+        "Changyi Yang",
+        "Andy Mao",
+        "Xi Zhu",
+        "Chaoran Cheng",
+        "Kaiqu Liang",
+        "Shuaike Shen",
+        "Zetian Li",
+        "Ruihan Guo",
+        "Ge Liu",
+        "arXiv",
+        "Google",
+        "Weight Space Programming",
+        "Chris Hay",
+        "LARQL",
+        "Astra",
+        "Gemini 3.8 Flash",
+        "Beam",
+        "Claude Opus",
+        "Fable"
+      ],
+      "comments": [
+        {
+          "by": "aesthesia",
+          "text": "It's worth noting that the only modification the model made to improve itself was to reduce the length of its reasoning traces to avoid hitting the token limit. This is basically the same as the result from the recent weight-space programming article ( https://rikiyat.github.io/blog/weight-space-programming/ ), which found that even Astra wasn't able to improve the performance of a model without…"
+        },
+        {
+          "by": "gavinray",
+          "text": "Didn't Google's \"sleep\" paper already show this? https://research.google/blog/the-sleep-framework-a-new-way-f... > During the offline sleep phase, the model unlocks pre-allocated Mixture-of-Experts (MoE) memory blocks and updates its numerical weights using self-generated practice examples."
+        },
+        {
+          "by": "Toutouxc",
+          "text": "I’m hoping someone can explain this to me. They say “no training”: > for the first time, a language model rewrites its own weights by its own reasoning and becomes better, with no gradients and no training > it tests its edits on practice problems and submits only what works, each edit improving on the last, and over eight consecutive sessions its accuracy only rises But this sounds a lot like…"
+        },
+        {
+          "by": "samlinnfer",
+          "text": "I wonder if they can train the model to repair itself, like how CNN learns to deblur (by having the original image be blurred and have the model evaluated on how closely it can recover the original image). The model can be evaluated on how closely it repaired its own weights. Then the model get better at repairing itself, then it's told to repair a model that hasn't been damaged and see if it can…"
+        },
+        {
+          "by": "SamInTheShell",
+          "text": "Chris Hay dropped a video showing the use of letting a model change a weight with his LARQL: https://www.youtube.com/watch?v=NLguavIxFFs"
+        }
+      ],
+      "image": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png"
+    },
+    {
+      "id": 50570628,
+      "url": "https://ethanlowman.com/posts/jj-primer/",
+      "hn": "https://news.ycombinator.com/item?id=50570628",
+      "title": "Jujutsu Primer",
+      "time": 1795153561,
+      "points": 197,
+      "depth": [
+        {
+          "text": "someone wrote a guide to **Jujutsu**, a Git alternative for **reshaping changes** and undoing mistakes",
+          "tier": "simple"
+        },
+        {
+          "text": "It can live alongside Git in one repository, **automatically rebases** later work after earlier changes, and lets unresolved conflicts wait while you keep going. The guide also shows how to **undo mistakes** and move, combine, drop, or split changes in a **branchless commit graph**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: fans like jj’s undo and flexible commit workflows; skeptics say Git is already familiar or object to losing its staging area.",
+      "comment_count": 160,
+      "terms": [
+        "VCS",
+        "commit",
+        "change ID",
+        "rebase",
+        "staging area",
+        "revset",
+        "bookmark",
+        "branchless",
+        "TUI"
+      ],
+      "entities": [
+        "Jujutsu",
+        "Git",
+        "Rust",
+        "NixOS",
+        "Delta",
+        "Mercurial",
+        "GitHub",
+        "jj-hunk",
+        "Ethan Lowman",
+        "Claude",
+        "Claude Code",
+        "GPT",
+        "Gemini",
+        "Gitbutler",
+        "FUSE",
+        "gitfold",
+        "jjui",
+        "Git LFS",
+        "Linus"
+      ],
+      "comments": [
+        {
+          "by": "danpalmer",
+          "text": "I've been using JJ almost exclusively for over 2 years now. It's great, it works fantastically with our rather large monorepo at work. However I mostly use it backing on to a custom VCS, not git. I can't wait to see some JJ-native forges that don't try to keep it compatible with git, I think there's a lot more benefits and more UX to be explored there!"
+        },
+        {
+          "by": "nixpulvis",
+          "text": "I'm skeptical about the no staging area, but it seems just like a HEAD commit replaces that, which could be nice. I really don't like the automatic bookmark naming thing. I'm also skeptical about automatic rebasing, but having conflicts not block the process could be nice, I'll have to try it out on more complex trees. Also, I didn't see a section on workspaces, but I assume they basically do the…"
+        },
+        {
+          "by": "pkuki",
+          "text": "Shameless plug, but a bit related to jj:) I recently created a project which utilizes FUSE to serve git files directly from object store without a checkout. Main motivation was to sepeedup a worktrees creation (I work on a huge monorepo). In my case it helps a lot - now I wait a second instead of a minute.\nBut then I realised there are other interesting features which having vfs opened: - tree…"
+        },
+        {
+          "by": "tkz1312",
+          "text": "I'm fully onboard with the idea that git is horrible to learn and unfriendly for beginners, and also that jj is more convenient and a better UX. I do however struggle to find the point of it for me personally when I've suffered with git for long enough that it has become deeply familiar and very intuitive, and these days I mostly interact with it at a distance through a robot. I've yet to see…"
+        },
+        {
+          "by": "boltzmann64",
+          "text": "i really don't understand jj. what is the point of deleting the useful stage and treating the worktree as the project, which contains your debug harness, compiler artefacts, build files, and other things that you generally don't want in your project. you have to either write a .gitignore counterpart for jj or manually remove them before committing. just treat your stage as the real project and…"
+        }
+      ],
+      "image": "https://ethanlowman.com/img/penrose.png"
+    },
+    {
+      "id": 50576232,
+      "url": "https://github.com/tristanbuckmaster/navier-stokes/",
+      "hn": "https://news.ycombinator.com/item?id=50576232",
+      "title": "Finite-time blow-up for the Navier–Stokes equations",
+      "time": 1795188871,
+      "points": 198,
+      "depth": [
+        {
+          "text": "someone posted a paper and formal proofs about **finite-time blow-up** in the **Navier–Stokes equations**",
+          "tier": "simple"
+        },
+        {
+          "text": "The repository includes the **79-page paper** and a Lean formalization, but **no data**. The certificate isn't in the repository; the paper says it will be released, and a rigorous computation checking its conditions is outside the formalization and repository.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 66,
+      "terms": [
+        "Navier–Stokes equations",
+        "finite-time blow-up",
+        "formalization",
+        "Lean",
+        "interval arithmetic",
+        "unforced"
+      ],
+      "entities": [
+        "Navier–Stokes equations",
+        "L. Alpöge",
+        "T. Buckmaster",
+        "Lean",
+        "Mathlib",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "comments": [
+        {
+          "by": "xianshou",
+          "text": "Isn’t it a little nuts that this is only the second-biggest result of the day? We had forced Navier-Stokes and the OpenAI October release already, but I think the generalized Riemann Hypothesis and unforced Navier-Stokes in the same day comfortably sets a new standard for most significant day in the history of mathematics."
+        },
+        {
+          "by": "tancop",
+          "text": "This is the unforced version of the problem. OpenAI found an example that uses a carefully designed external force to break the equations, so this one is more \"realistic\" in a sense."
+        },
+        {
+          "by": "jrflo",
+          "text": "I feel bad for Buckmaster and Alpoge. If there wasn't that rumor that Anthropic had a millenium problem, they would've gotten it on their own without OpenAI scooping them, without all of that drama. Also crazy that Alpoge would potentially have two millenium problems under his belt on the same day."
+        },
+        {
+          "by": "Ericson2314",
+          "text": "I know we're not gonna get a perpetual motion machine from this or whatever, but I would still like someone to build a physical demonstration. A real world approximation, where the fluid started to be \"weird\", for some definition of \"weird\", would be the ultimate Exploratorium exhibit."
+        },
+        {
+          "by": "fuddle",
+          "text": "Levent Alpöge is having a productive day!"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/5cfc4a994e0638c243d1ce49811e39f08a3e711e0da8ad4f366e886229a16302/tristanbuckmaster/navier-stokes"
+    },
+    {
+      "id": 50574383,
+      "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+      "hn": "https://news.ycombinator.com/item?id=50574383",
+      "title": "Global stock markets slump as Anthropic's record IPO fails to stem AI sell-off",
+      "time": 1795181399,
+      "points": 182,
+      "depth": [
+        {
+          "text": "Anthropic's **record-breaking stock debut** couldn't stop an **AI sell-off** from dragging **global markets** lower",
+          "tier": "simple"
+        },
+        {
+          "text": "Shares fell as much as **12%** on the second trading day, to **$85.12**, near the $83 IPO price. The **Nasdaq erased its 2026 gains**, and Asian markets had their worst week since 2020.",
+          "tier": "substance",
+          "data": [
+            [
+              "maximum share drop",
+              "12%"
+            ],
+            [
+              "Friday share price",
+              "$85.12"
+            ],
+            [
+              "IPO price",
+              "$83"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters say a frontier-lab IPO signals the top; others say Anthropic’s stock price says nothing about AI’s future.",
+      "comment_count": 208,
+      "terms": [
+        "IPO",
+        "liquidity",
+        "valuation",
+        "DCA"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude",
+        "The Guardian",
+        "Nasdaq Composite",
+        "Dow Jones Industrial Average",
+        "S&P 500",
+        "SanDisk",
+        "Micron",
+        "TSMC",
+        "Saxo",
+        "SoftBank",
+        "Nikkei",
+        "Kospi",
+        "Stoxx 600",
+        "IG",
+        "Capital.com",
+        "Nvidia",
+        "FTSE 100",
+        "Bitcoin",
+        "Berkshire Hathaway",
+        "OpenAI",
+        "Google",
+        "Neil Wilson",
+        "Chris Beauchamp",
+        "Daniela Hathorn"
+      ],
+      "comments": [
+        {
+          "by": "seiferteric",
+          "text": "I am trying to understand something about the economy and AI. If AI disrupts an industry that previously had high wages and now can be automated by commodity AI products, would it not actually lower GDP in some way (initially anyway)? What I mean is, if you had an industry that was worth say $1 billion, but now that same industry could be automated and done cheaply then it is no longe worth $1…"
+        },
+        {
+          "by": "squidlib",
+          "text": "Any of the frontier labs IPOing was a signal that the top has been reached."
+        },
+        {
+          "by": "kapkapkap",
+          "text": "Anthropic stock price going down has nothing to do with what you think about the future of AI. If you think that the open weight models are just 6 months behind (And will eventually catch up as progress eventually plateaus), then even if you think AI will take every job in the world, etc...Anthropic does not end up as one of the 10 most valuable companies in the world in this scenario. Far from…"
+        },
+        {
+          "by": "cmiles8",
+          "text": "Anthropic has been on a nose dive since the start of trading. At this point almost everyone that bought ANT since the start of trading yesterday has lost money. Thats not exactly helping to shake the reputation that this IPO was an attempt to offload this thing to “dumb money” and GTFO."
+        },
+        {
+          "by": "neogodless",
+          "text": "Related content: https://news.ycombinator.com/item?id=50573288 The Market Is Down (anihil.com)\n41 comments | 3 hours ago And of course... https://news.ycombinator.com/item?id=50562754 Anthropic’s Nasdaq debut (reuters.com)\n2216 comments | 21 hours ago"
+        }
+      ],
+      "image": "https://i.guim.co.uk/img/media/578833ee207aab76c1b6a542f17226703dbd735b/686_0_5336_4269/master/5336.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=a36857abb7bd0660d819105186f898a0"
+    },
+    {
+      "id": 50572822,
+      "url": "https://jeanmicheljarre.com/aaa/the-making-of-oxygene",
+      "hn": "https://news.ycombinator.com/item?id=50572822",
+      "title": "The Making of Oxygene",
+      "time": 1795171270,
+      "points": 181,
+      "depth": [
+        {
+          "text": "Jean-Michel Jarre’s **classic electronic album** is getting a **fresh mix** for its **50th anniversary**",
+          "tier": "simple"
+        },
+        {
+          "text": "The deluxe Blu-ray includes a **2026 stereo remaster** and new **Dolby Atmos and 5.1 mixes** made from the original multi-tracks. Jarre recorded the album on **eight tracks**, so David Kosten had to separate sounds that shared a track.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: fans call Oxygène formative; one commenter prefers Tangerine Dream or Klaus Shulze.",
+      "comment_count": 65,
+      "terms": [
+        "Dolby Atmos",
+        "5.1 surround",
+        "multi-track",
+        "synthesizer"
+      ],
+      "entities": [
+        "Jean-Michel Jarre",
+        "Oxygène",
+        "Dolby Atmos",
+        "David Kosten",
+        "Steven Wilson",
+        "Abbey Road Studios"
+      ],
+      "comments": [
+        {
+          "by": "danielodievich",
+          "text": "I saw JMJ on a show at Paramount in Seattle a few years ago. My USA-born wife never heard of him, but this USSR born person did, so I dragged her saying she won't forget the experience and I was right. It was a stupendously complex multimedia production with videos, synthesizers, weird theremin tooling, and culminated in the most awesome visual of JMJ donning white gloves, and playing sort of…"
+        },
+        {
+          "by": "martyvis",
+          "text": "The context is that today is the 50th anniversary of the album release in France. Of course I had to find my copy of the LP stashed in the cupboard. While my electronic organ I had at home was very sophisticated I did wish I had a proper synth. I got to tinker with my housemate's Korg later on so that was fun. I do occasionally much about with software synths which are quite a bit of fun (VCV…"
+        },
+        {
+          "by": "tomduncalf",
+          "text": "This album was probably my first contact with electronic music, now I think about it - my mum had it on vinyl. She wasn’t an electronic music fan but I believe it was very successful and almost a pop record in Europe. I used to find the cover art terrifying haha. But a great album"
+        },
+        {
+          "by": "skerit",
+          "text": "In Belgium we have traveling carnivals (kermis) and an important part of those are traveling luna parks (kind of like arcade halls).\nAnd the most popular attraction in those are coin pushers, but not with real money. With regular metal coins resembling real money. (The goal is to get points, not more coins) Anyway: back in the 90s & 00s (and actually still to this day) a lot of those machines…"
+        },
+        {
+          "by": "circumlocution",
+          "text": "C418's original soundtrack for Minecraft has two songs that reference Jean Michel Jarre:\nOxygène and Équinoxe\nhttps://web.archive.org/web/20260202005008/https://c418.org/..."
+        }
+      ],
+      "image": "https://imcayyueqknvmognvohc.supabase.co/storage/v1/object/public/media/1789648325786-1gmqsl.webp"
+    },
+    {
+      "id": 50567209,
+      "url": "https://www.synology.com/en-uk/security/advisory/Synology_SA_26_21",
+      "hn": "https://news.ycombinator.com/item?id=50567209",
+      "title": "Synology Security Advisory",
+      "time": 1795126420,
+      "points": 178,
+      "depth": [
+        {
+          "text": "Synology's **security advisory** has commenters recommending people stop the **OAuth Service** for now",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter ties the flaw to **CWE-88** and wonders whether the OAuth API built **shell commands** from user input. One owner of an older unit said its fix status was still **“Ongoing.”**",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 137,
+      "terms": [
+        "CWE-88",
+        "OAuth",
+        "shell command",
+        "NAS",
+        "CVE"
+      ],
+      "entities": [
+        "Synology",
+        "OAuth Service"
+      ],
+      "comments": [
+        {
+          "by": "RetroTechie",
+          "text": "I've always wondered: if you take the cause of each CVE, look at underlying cause of that & repeat, how many essential root problems would you be left with? \"Can't do math\" (off-by-1 errors etc) \"Sanitize your inputs\" (escape sequences, parsing etc) \"What are you referencing?\" (null pointers, use-after-free etc) and error handling. Plain error codes bubbling up a call stack, or bypassing that…"
+        },
+        {
+          "by": "SchemaLoad",
+          "text": "You just can't have a NAS exposed to the internet. Put it behind a VPN or you will have it hacked."
+        },
+        {
+          "by": "harrouet",
+          "text": "I once put a fully-patched Syno in my DMZ. Wrong idea: not even a few hours later was it mining bitcoins. Fortunately only the system partition was affected and I could restore it fully."
+        },
+        {
+          "by": "6thbit",
+          "text": "Tied to this weakness: > CWE-88: Improper Neutralization of Argument Delimiters in a Command\nSo, they were building shell commands from some kind of user input in the OAuth API?"
+        },
+        {
+          "by": "NathanKP",
+          "text": "Mitigation for now is to go to Package Center -> Installed -> OAuth Service and stop it."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50578358,
+      "url": "https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/",
+      "hn": "https://news.ycombinator.com/item?id=50578358",
+      "title": "Unforced Navier-Stokes Singularity and the Generalized Riemann Hypothesis",
+      "time": 1795195296,
+      "points": 180,
+      "depth": [
+        {
+          "text": "someone used AI to produce **fluid blowup proofs** and a **Riemann Hypothesis proof**, now being checked",
+          "tier": "simple"
+        },
+        {
+          "text": "Levent Alpöge, Tristan Buckmaster and Matei Coiculescu wrote a human-readable proof of finite-time blowup for the unforced incompressible Euler equations in three dimensions with **heavy AI assistance**. Alpöge and Buckmaster also generated a proof for the unforced incompressible Navier Stokes equations, but it still needs a **proper, professionally written version**. Alpöge’s **enormous Lean-only proof** of the Generalized Riemann Hypothesis is being checked, and Tao says extracting its strategy will take time.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some commenters see two independent kernels accepting the result as encouraging; others stress that the proof still needs scrutiny and worry about AI’s impact on mathematics.",
+      "comment_count": 48,
+      "terms": [
+        "finite-time blowup",
+        "Lean",
+        "kernel",
+        "Navier Stokes equations",
+        "Euler equations",
+        "Generalized Riemann Hypothesis",
+        "Langlands program",
+        "arithmetic geometry"
+      ],
+      "entities": [
+        "Terence Tao",
+        "Levent Alpöge",
+        "Tristan Buckmaster",
+        "Matei Coiculescu",
+        "Lean",
+        "Euler equations",
+        "Navier Stokes equations",
+        "Generalized Riemann Hypothesis",
+        "Langlands program"
+      ],
+      "comments": [
+        {
+          "by": "softwaredoug",
+          "text": "Something I don’t quite know, maybe someone closer to math can answer this question It seems we’re making tremendous progress on the back of existing abstractions and concepts with the brute force ability to generate language and verify proofs. For example, Tao says about the Riemann proof: > appears to use the full power of modern developments on the Langlands program and arithmetic geometry…"
+        },
+        {
+          "by": "chunky1994",
+          "text": "https://leanprover.zulipchat.com/#narrow/channel/113488-gene... It looks like two independent kernels accept the result, which means its likely that there are no kernel bug exploitations in the proof."
+        },
+        {
+          "by": "actusual",
+          "text": "Is anyone else struggling with feelings of both excitement and terror? I haven't felt this much personal uncertainty about my career/life since I was an L1 MLE (10 years ago)."
+        },
+        {
+          "by": "maplet",
+          "text": "I understand that Tao does not want to promote a result which could turn out to be incorrect, but I simply cannot imagine posting about a Riemann Hypothesis result and not commenting about the significance."
+        },
+        {
+          "by": "mNovak",
+          "text": "It's interesting to me that the ANT GRH proof appears to have been generated directly in Lean, whereas the OAI NS proof I believe was produced in natural language then formalized into Lean. Maybe GRH was as well, I haven't seen much about how these were put together. But, it's a curious difference in approach if not."
+        }
+      ],
+      "image": "https://secure.gravatar.com/blavatar/bd4bda4207561b6998f10dec44b570f04ff4072b20f89162d525b186dfca3e49?s=200&ts=1795207051"
+    },
+    {
+      "id": 50569516,
+      "url": "https://www.snowflake.com/en/blog/engineering/postgres-19-repack-table-bloat/",
+      "hn": "https://news.ycombinator.com/item?id=50569516",
+      "title": "Postgres 19 Repack: Faster, Built-In Table Bloat Cleanup",
+      "time": 1795142629,
+      "points": 174,
+      "depth": [
+        {
+          "text": "Postgres is getting **built-in cleanup** for table bloat, and it promises to be **faster**",
+          "tier": "simple"
+        },
+        {
+          "text": "The title calls it **Postgres 19 Repack**. One commenter says it can need **2x the space for its table and indexes** during a repack, while another says partitions aren't supported yet.",
+          "tier": "substance",
+          "data": [
+            [
+              "extra space needed during repacking",
+              "2x"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some are happy this is built in; others flag space and IO spikes and missing partition support.",
+      "comment_count": 29,
+      "terms": [
+        "table bloat",
+        "MVCC",
+        "partitions"
+      ],
+      "entities": [
+        "Postgres",
+        "pg_repack",
+        "pg_squeeze",
+        "SpiceDB",
+        "pg_xact"
+      ],
+      "comments": [
+        {
+          "by": "jzelinskie",
+          "text": "I haven't used these extensions, but I like the direction of being able to extend Postgres by tailing its own internals (pg_squeeze approach) than triggers (pg_repack). We (the SpiceDB developers) took a similar approach to solve a different problem a few years ago: implementing strict serializability in Postgres[0]. By hooking into the transactions layer themselves (pg_xact), we could layer on…"
+        },
+        {
+          "by": "hylaride",
+          "text": "I used to have to keep an eye on tuple table bloat for awhile on big PG databases, but with recent versions of Postgres the auto-vacuuming has mostly kept it in check for all but the most gargantuan, busy tables. I pretty much have stopped caring (and I cared a lot less when SSDs became the default as the fragmentation penalty that a full repack would fix wasn't as bad as it was during the…"
+        },
+        {
+          "by": "inkysigma",
+          "text": "Isn't losing MVCC consistency a pretty big drawback? Am I misinterpreting or does that mean occasionally a query might just return nothing for possibly difficult to diagnose reasons?"
+        },
+        {
+          "by": "dangoodmanUT",
+          "text": "> You need 2x the space for the table and indexes you are repacking, since for a period, you will have two copies of it. this feels like a foot gun. While other storage formats (eg LSMs) have lots of write amplification, it's done iteratively so you don't have massive storage and IO spikes when performing maintenance. While this is _definitely_ better, I think the long-term solution is to replace…"
+        },
+        {
+          "by": "nopurpose",
+          "text": "They added plan hinting, but sadly not via comments. To use hinting an app needs to issue a `SET` command, which adds round trip latency for each query. Need to use quite unergonomic query batching/pipelining to negate that latency."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50578794,
+      "url": "https://www.nbcnews.com/business/markets/anthropic-shares-markets-selloff-nasdaq-rcna610394",
+      "hn": "https://news.ycombinator.com/item?id=50578794",
+      "title": "Anthropic shares tank after IPO as the Nasdaq erases 2026 gains",
+      "time": 1795196641,
+      "points": 161,
+      "depth": [
+        {
+          "text": "Anthropic shares **dropped** as the **market sell-off** continued on its first full trading day",
+          "tier": "simple"
+        },
+        {
+          "text": "Anthropic’s shares were down as much as **13%** Friday, while the Nasdaq Composite fell around **4.5%**, erasing its 2026 gains. Nvidia shares also tanked more than 12% after a Reuters report said the Securities and Exchange Commission was looking into **potential accounting issues**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Anthropic shares",
+              "as much as 13%"
+            ],
+            [
+              "Nasdaq Composite",
+              "around 4.5%"
+            ],
+            [
+              "Nvidia shares",
+              "more than 12%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some call it a pump-and-dump; others say the headline is hyperbolic and this is market volatility.",
+      "comment_count": 141,
+      "terms": [
+        "IPO",
+        "Nasdaq Composite",
+        "correction territory",
+        "SEC"
+      ],
+      "entities": [
+        "Anthropic",
+        "Nasdaq Composite",
+        "Nvidia",
+        "Reuters",
+        "Securities and Exchange Commission"
+      ],
+      "comments": [
+        {
+          "by": "sakopov",
+          "text": "This IPO definitely seemed like a aggressive cash-out operation more than anything else. They originally targeted $70-$78 per share at 825M shares and then bumped both the share price and count to $83 and 960M respectively. The management team dumped $2B worth of stock on the first day of trading. And the unlock schedule going forward is something absolutely insane with 1.5B shares unlocked in…"
+        },
+        {
+          "by": "LastTrain",
+          "text": "On the one hand I completely understand and embrace that there is no stopping progress and adapt or die and all that. On the other hand I understand that we've built a machine that can strip-mine all of human knowledge for the benefit of a very small number of people and that sucks."
+        },
+        {
+          "by": "rimeice",
+          "text": "Generational defining pump and dump."
+        },
+        {
+          "by": "MetaverseClub",
+          "text": "The 250K proof didn't save them?"
+        },
+        {
+          "by": "IAmGraydon",
+          "text": "I think that Anthropic and OpenAI are going to have to come to terms with the fact that they add value in the model training arena, and that's their product. Deploying infrastructure for the public to use that model is going to be a losing game for them. The problem is the first one appears difficult to monetize, but I think the answer to this is going to be licensing their models to companies…"
+        }
+      ],
+      "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-11/261120-new-york-stock-exchange-ew-302p-4b969a.jpg"
+    },
+    {
+      "id": 50577901,
+      "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
+      "hn": "https://news.ycombinator.com/item?id=50577901",
+      "title": "Google Workers Tell Their Employer Not to Punish Schools That Don't Want AI",
+      "time": 1795193967,
+      "points": 160,
+      "depth": [
+        {
+          "text": "Google workers want leaders to **keep Search available** to schools that **turn off AI**",
+          "tier": "simple"
+        },
+        {
+          "text": "Hundreds of **Google workers** are urging leaders to retract a policy that would **block Search** for schools that turn off Gemini tools, **starting next year**. Their petition says cutting off Search won’t persuade schools and may push them away from Google products altogether.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: critics say tying Search access to AI pressures schools; others say Google needn’t maintain a separate AI-free product and schools can switch search engines.",
+      "comment_count": 112,
+      "terms": [
+        "AI",
+        "LLM"
+      ],
+      "entities": [
+        "Google",
+        "Google Search",
+        "Gemini",
+        "Alphabet Workers Union",
+        "Alphabet",
+        "Sundar Pichai",
+        "Chris Phillips",
+        "Elizabeth Reid"
+      ],
+      "comments": [
+        {
+          "by": "carter-qadenza",
+          "text": "I did a little research on this and it reminded me that even though Google generally stays out of the news (for bad things at least) they are still a giant corporation and are purely in it for profit, even if it's more lowkey. Forcing schools to have an AI feature enabled in ordered to use your product is not something I can agree with I'm afraid."
+        },
+        {
+          "by": "graeme",
+          "text": "This framing confuses me. Google has shifted its product to be a search engine with AI first. The request here is effectively that Google built and maintain a second version of their product with no front facing llm, and Google has declined to, correct? It isn't like there is some second version of Google that Google is withholding from schools. However, there are search engines which don't use…"
+        },
+        {
+          "by": "rkhleung",
+          "text": "Can someone help me understand why can't the schools install another browser? Or default to another search engine? I thought that this was possible on chromebooks. While I understand that this may be a second best solution, can't the IT staff at the school boards implement these solutions?"
+        },
+        {
+          "by": "handplane",
+          "text": "This seems like a reasonable stance and not an impossible one to defend. Google is making a bet that long term, everyone will use AI. I think that's undeniably true. The friction here is that they don't want to bifurcate their main offers to maintain an \"AI free\" experience, because the thesis is this won't exist long term. I think this makes sense. This is not opposed to telling employees not to…"
+        },
+        {
+          "by": "curvaturearth",
+          "text": "I don't Google for answers as much as Google seems to think I should. I often Google to navigate the web but they are making this actively harder. Plus their LLM answers are frequently either missing the point or flat out wrong. I feel bad for those that will grow up taking the generative AI answers as verbatim because they do not know better. Though there is some hope, some kids I've talked to…"
+        }
+      ],
+      "image": "https://www.motherjones.com/wp-content/uploads/2026/11/google-chromebook-la-school-covid.jpg?w=1200&h=630&crop=1"
+    },
+    {
+      "id": 50548660,
+      "url": null,
+      "hn": "https://news.ycombinator.com/item?id=50548660",
+      "title": "Show HN: Mastra Factory, the open-source software factory we use to build Mastra",
+      "time": 1795020822,
+      "points": 153,
+      "depth": [
+        {
+          "text": "Mastra built an **open-source software factory** using agents to help maintain **Mastra itself**",
+          "tier": "simple"
+        },
+        {
+          "text": "Last week, Factory opened and merged **238 PRs**, alongside **630 merged PRs from humans**. The team says it mostly drives Factory through **Slack** rather than the web UI.",
+          "tier": "substance",
+          "data": [
+            [
+              "Factory PRs opened and merged last week",
+              "238"
+            ],
+            [
+              "Human PRs merged last week",
+              "630"
+            ],
+            [
+              "Mastra downloads per week",
+              "nearly 4M"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters called the launch cool; one skeptic says software factories are just agents using the usual issues-and-PR workflow.",
+      "comment_count": 42,
+      "terms": [
+        "PR",
+        "agent",
+        "kanban board",
+        "sandbox"
+      ],
+      "entities": [
+        "Mastra",
+        "Mastra Factory",
+        "Shane",
+        "Sam",
+        "Abhi",
+        "TypeScript",
+        "Slack",
+        "GitHub",
+        "Claude Code",
+        "Codex",
+        "Antigravity",
+        "OpenCode",
+        "dotFactory",
+        "Helm"
+      ],
+      "comments": [
+        {
+          "by": "yoz",
+          "text": "Links: https://factory.mastra.ai https://github.com/mastra-ai/template-factory"
+        },
+        {
+          "by": "brap",
+          "text": "Used to play quite a bit with Mastra (not Factory) and it was a very pleasant experience. Cool launch, congrats! Couple of questions: 1. Did you experiment with not having a separate design/plan phase? From my experience agents usually don’t really know what the plan is until they start editing files and executing tests (in other words, implementing), so the initial plan is usually not great and…"
+        },
+        {
+          "by": "jaf12duke",
+          "text": "What have you learned from people who use Mastra today versus what you/they were doing in the beginning?"
+        },
+        {
+          "by": "Gakho",
+          "text": "> closed our repo to outside contributors I've seen this pattern happening in other open-source repos. Do you think it's going to be the norm now?"
+        },
+        {
+          "by": "siscia",
+          "text": "I build something similar, based on similar ideas: https://factory.redbeardlab.com There is a [language]( https://redbeardlab.github.io/dotFactory/ ) that let express complex workflows. The workflow can be pretty much anything, eg: 1. Clone repo A and B + Start OpenCode + Feed a prompt into it 2. Pick up the commit generated by opencode for both repo, and run CI Another workflow I created is…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50569519,
+      "url": "https://institute.deepmind.com/essays/what-comes-after-agi/",
+      "hn": "https://news.ycombinator.com/item?id=50569519",
+      "title": "What Comes After AGI?",
+      "time": 1795142653,
+      "points": 152,
+      "depth": [
+        {
+          "text": "people are arguing over what **AGI** means and whether **superintelligence** comes next",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says **chatbots** already count as AGI if they can help across many subjects; another says today’s AI cannot match a dog’s ability to keep itself going. Some commenters call the next step **ASI**, or superintelligence, while others say AGI still lacks a clear definition.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: Some say chatbots already meet a broad bar for AGI; others say today’s AI falls short of the flexible abilities needed to sustain itself.",
+      "comment_count": 300,
+      "terms": [
+        "AGI",
+        "ASI",
+        "LLM",
+        "agent swarm",
+        "recursive self-improvement",
+        "compute"
+      ],
+      "entities": [
+        "DeepMind",
+        "Star Trek",
+        "Claude",
+        "The AGI chronicles",
+        "Kai Fu Lee"
+      ],
+      "comments": [
+        {
+          "by": "bsenftner",
+          "text": "Propaganda? We do not have AGI, and the claims we do are propaganda. AGI: artificial general intelligence is not a scaled up LLM, and those thinking it is are literally failed educations . They are failed because they cannot see the subtly that is what AI becomes when trained on human literature; it becomes an entirely different thing than any other form of trained algorithm. AI is a…"
+        },
+        {
+          "by": "GalahiSimtam",
+          "text": "I am old enough to remember what AGI meant before the rise of LLMs, and it used to be more or less what this article calls \"ASI\". You might find more people believing that AGI is already solved. For example, the author of \"The AGI chronicles\" drops this in the epilogue. For him, AGI is achieved, because it can help him with a wide range of subjects, with the ability of a random stranger. It's…"
+        },
+        {
+          "by": "jonathanlydall",
+          "text": "I was recently thinking of the depiction of AI in Star Trek. Specifically TNG, DS9 and VOY, and specifically their \"Computer, ...\" prompts, not the more advanced kinds like for Data or holograms (including the EMH). I recall thinking at the time I first watched them that it was a bit weird that the computer seemed capable of answering general questions and doing things like data analysis, but…"
+        },
+        {
+          "by": "jeanpah",
+          "text": "We are treating AGI like is something that we can measure. We don't even know what intelligence really is let alone measure it. Maybe we can get something that resembles intelligence but in reality is another thing. Maybe intelligence is emergent but not the only thing that can emerge, maybe there are things that share some characteristics with the intelligence we know and aren't intelligence."
+        },
+        {
+          "by": "ks2048",
+          "text": "Has anyone asked DeepMind leadership if/when they will fire all their engineers? If they're still needed, is there really \"AGI\"? I'm not being snarky, that seems like a natural question for anyone interviewing a frontier lab CEO, but I haven't seen it asked."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50568861,
+      "url": "https://seremot.com/p/vint-cerf-on-why-tcpip-was-never",
+      "hn": "https://news.ycombinator.com/item?id=50568861",
+      "title": "Vint Cerf on why TCP/IP was never patented",
+      "time": 1795136772,
+      "points": 152,
+      "depth": [
+        {
+          "text": "Vint Cerf says the Internet’s **basic rules** stayed **open** for **future allies**",
+          "tier": "simple"
+        },
+        {
+          "text": "Cerf and Bob Kahn **co-designed TCP/IP** in the 1970s. They didn’t know who their allies would be 25 years from now, so they thought opening it up was the **only way** to ensure those allies could access it.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 89,
+      "terms": [
+        "TCP/IP",
+        "patent",
+        "packet switch",
+        "ARPANET",
+        "SCOTUS",
+        "VC"
+      ],
+      "entities": [
+        "Vint Cerf",
+        "Bob Kahn",
+        "TCP/IP",
+        "Internet",
+        "DARPA",
+        "ARPANET"
+      ],
+      "comments": [
+        {
+          "by": "hn_submit",
+          "text": "What interests me even more is that TCP/IP was never \"finished.\" Cerf and others still had a to-do list they were working on when the DoD halted development and froze TCP/IP. What was this list of to-do items (I've seen it listed once) and what if they had finished it? What would the world look like then?"
+        },
+        {
+          "by": "crazybonkersai",
+          "text": "A cool thing about Vint Cerf is that he looks like The architect from The Matrix series. I wonder if the cast was intentional or it is just a coincidence"
+        },
+        {
+          "by": "zoobab",
+          "text": "Remember that computer programs are not patentable, in the US under SCOTUS jurisprudence Alice, and in the EU under EPC art52.2. Nevertheless, the Unified Patent Court just ignored the exclusion for a smartwatch, saying having a button bypasses the exception."
+        },
+        {
+          "by": "chuckadams",
+          "text": "> At the launch, he and the network’s director smashed a plastic bottle of glitter over a Cisco router. Yikes. I think I'd rather see water splashed on a machine instead of glitter: that stuff gets everywhere , shorts things out, and unlike water, never seems to go away."
+        },
+        {
+          "by": "meialabscom",
+          "text": "I feel like this sort of long term thinking is not likley to happen now. Are we too focused on monetization now? I feel this is mostly the influence of VC's in \"innovation\"."
+        }
+      ],
+      "image": "https://substackcdn.com/image/fetch/$s_!F4Pm!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3c9dc8fc-3b97-48bf-9594-781fe179ffe0_1920x1080.jpeg"
+    },
+    {
       "id": 50568130,
       "url": "https://git-aarvin.github.io/mei/",
       "hn": "https://news.ycombinator.com/item?id=50568130",
@@ -473,6 +2120,116 @@
     }
   ],
   "glossary": {
+    "Generalized Riemann Hypothesis": "A famous conjecture about where certain mathematical functions become zero, tied to how prime numbers are distributed.",
+    "formalization": "Writing mathematics in a precise form that a computer can check.",
+    "Lean": "A computer program used to write mathematical proofs and check that their steps are correct.",
+    "GRH": "Generalized Riemann Hypothesis: a mathematical claim about patterns in prime numbers.",
+    "formalize": "To put a mathematical proof into a precise form that a computer can check.",
+    "RMA": "Return Merchandise Authorization: approval and instructions for sending a product back for repair, replacement, or refund.",
+    "BIOS": "Basic Input/Output System: the software that gets a computer ready to load its main programs.",
+    "QA": "Quality assurance: checking that software works as expected before people rely on it.",
+    "interaction nets": "A way of representing a program as connected pieces that can be rewritten locally, letting independent work happen in parallel.",
+    "ISA": "Instruction set architecture: the set of basic commands a processor understands.",
+    "RTL": "Right-to-left: writing that runs from the right side of a line toward the left.",
+    "held-out workload": "A test program kept out of the tuning process, to check whether a design works on something it wasn't optimized for.",
+    "work stealing": "When a chip section with nothing to do takes spare work from a neighboring section.",
+    "Fermi-Dirac statistics": "A physics rule describing how certain particles can occupy available energy levels.",
+    "spin one-half particle": "A particle with a built-in spin value of one-half.",
+    "compactness": "A math property: if a set is covered by open regions, some finite group of those regions still covers it.",
+    "open cover": "A group of open regions that together include every point in a set.",
+    "reductionism": "The idea that complicated things can be understood by breaking them into simpler parts.",
+    "SOx": "Sulphur-based air pollution released when fuel burns.",
+    "NOx": "Nitrogen-based air pollution released by engines.",
+    "bunker fuel": "A very dirty fuel ships burn.",
+    "LNG": "Liquefied natural gas: natural gas cooled into a liquid so it can be shipped by sea.",
+    "emission control areas": "Sea zones where ships have to follow pollution rules.",
+    "IMO": "International Maritime Organization: the group commenters say put restrictions on sulphur in ship emissions.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "LaTeX": "A system for writing and formatting documents, especially ones with equations, by marking how the text should appear.",
+    "constraint solver": "Software that looks for an answer that follows rules you give it.",
+    "AI agent": "An autonomous computer program that can carry out tasks.",
+    "filesystem": "A way an operating system keeps track of files and folders.",
+    "operating system": "The main software that runs a device and lets other programs work on it.",
+    "access-exclusive lock": "A lock that prevents other sessions from using a table while a change is made.",
+    "standby": "A secondary database that follows another database's changes and can serve reads.",
+    "LSN": "Log Sequence Number: a marker for a position in the database's change log.",
+    "logical replication": "A way to copy selected changes from one database to another.",
+    "code review": "A check where people read proposed code changes and decide whether they look right.",
+    "software architecture": "How a software system’s parts are organized so the whole thing works and stays manageable.",
+    "technical debt": "Past shortcuts or aging choices that make future work take more effort.",
+    "pull request": "A proposal to add your code changes to a shared project, usually asking others to review them first.",
+    "ASTC": "Adaptive Scalable Texture Compression: a way to store image textures in less space.",
+    "AAC": "Advanced Audio Coding: a format for compressing sound so audio files take less space.",
+    "muxer": "A tool that packages audio or video data into a file or stream.",
+    "demuxer": "A tool that pulls audio or video data out of a file or stream.",
+    "Vulkan": "A way for software to send graphics work to a graphics card.",
+    "iOS": "Apple's operating system for iPhones.",
+    "browser engine": "The part of a browser that reads a site's code and draws the page.",
+    "WebKit": "The part of a browser that reads website code and displays the pages.",
+    "Gecko": "Mozilla's browser engine, used by Firefox.",
+    "DMA": "Direct Memory Access: a way for a device to move data into or out of memory without the main processor handling every step.",
+    "notarization": "Apple's check that an app must pass before it can be distributed.",
+    "sideload": "Installing an app from a source outside the usual app store.",
+    "JIT": "Just-in-time compilation: compiling a program as it runs, rather than beforehand.",
+    "BrowserEngineKit": "Apple's tools for putting an alternative browser engine into an iOS app.",
+    "weights": "Stored values a trained network uses when it works out what to produce.",
+    "gradients": "Signals that show how to adjust a model’s internal numbers to improve its answers.",
+    "inference": "When an AI uses what it learned to answer or act, instead of being trained.",
+    "self-rewriting": "A model changing its own internal numbers to try to improve.",
+    "recursive self-improvement": "AI improving its own abilities in a loop, with each improvement helping make the next one.",
+    "VCS": "Version control system: a tool that keeps a history of code changes so you can revisit or compare earlier work.",
+    "commit": "A saved record of changes in a project; this site treats posts like commits.",
+    "change ID": "A stable label for a logical change, even when its saved snapshot changes.",
+    "rebase": "Move a change and its follow-up changes onto a different earlier point in the project’s history.",
+    "staging area": "A place in Git where you choose which edits go into the next commit.",
+    "revset": "A short expression that picks one or more commits from the project history.",
+    "bookmark": "A named label attached to a commit that Jujutsu can use like a Git branch.",
+    "branchless": "A way of organizing work directly as a graph of commits instead of named branches.",
+    "TUI": "Terminal User Interface: the menus and controls an app shows inside a text terminal.",
+    "Navier–Stokes equations": "Mathematical rules used to describe how fluids like water and air move.",
+    "finite-time blow-up": "When a quantity in the equations grows without limit after a finite amount of time.",
+    "interval arithmetic": "A way to calculate with ranges of possible values instead of single numbers, helping account for rounding.",
+    "unforced": "Describes equations without an outside force being applied.",
+    "IPO": "Initial Public Offering: when a company first offers its shares for the public to buy.",
+    "liquidity": "How easily someone can turn something they own into money they can spend.",
+    "valuation": "An estimate of what a company is worth.",
+    "DCA": "Dollar-cost averaging: buying an investment regularly in smaller amounts instead of all at once.",
+    "Dolby Atmos": "A sound format that can place sounds around and above you, not just in front.",
+    "5.1 surround": "A mix meant to play through speakers around you, rather than just one pair in front.",
+    "multi-track": "A recording split across separate tracks, so different sounds can be adjusted on their own.",
+    "synthesizer": "An electronic instrument that makes sounds, including ones that do not come from familiar instruments.",
+    "CWE-88": "Common Weakness Enumeration, category 88: a label for a bug where a program mishandles characters that divide up a command.",
+    "OAuth": "A way to let an app access parts of an account without being given the password.",
+    "shell command": "A text instruction that tells a computer what to do through its command-line tool.",
+    "NAS": "Network-attached storage: storage connected to your home network so other devices can reach its files.",
+    "CVE": "Common Vulnerabilities and Exposures: a standard ID assigned to a publicly known security flaw so people can refer to the same issue.",
+    "finite-time blowup": "A mathematical solution grows without bound within a limited amount of time.",
+    "kernel": "A small program that carries out a calculation on a computer's graphics chip or processor.",
+    "Navier Stokes equations": "Equations used to describe how fluids such as air and water move.",
+    "Euler equations": "Equations that describe how an ideal fluid moves.",
+    "Langlands program": "A broad collection of ideas that links different areas of mathematics, especially number theory.",
+    "arithmetic geometry": "The study of number-theory questions using ideas about geometric shapes and equations.",
+    "table bloat": "Extra space left behind by rows that have been deleted or changed; it can make lookups take longer.",
+    "MVCC": "Multi-Version Concurrency Control: a way to keep different copies of a row so people can use the database at the same time.",
+    "partitions": "A way to split a large table into smaller sections that the database can manage separately.",
+    "Nasdaq Composite": "A stock-market index that tracks many companies listed on the Nasdaq exchange.",
+    "correction territory": "A market is in correction territory when it has fallen 10% or more from a recent high.",
+    "SEC": "Securities and Exchange Commission: the agency that oversees company filings for stock-market listings.",
+    "AI": "Artificial intelligence: computer systems designed to do tasks people associate with thinking.",
+    "PR": "Pull request: a proposed code change shared so others can review it.",
+    "agent": "An AI system that can take steps and use tools to get a task done, not just answer questions.",
+    "kanban board": "A board that shows tasks in stages, so people can see what needs doing and what is finished.",
+    "sandbox": "A separate, contained space where software can be tested without affecting the rest of a computer or system.",
+    "AGI": "Artificial General Intelligence: a hypothetical AI that could handle many kinds of tasks, not just one narrow job.",
+    "ASI": "Artificial Superintelligence: a hypothetical AI far more capable than people across a wide range of tasks.",
+    "agent swarm": "A group of software agents working on tasks together.",
+    "compute": "The processing power computers use to run AI or other software.",
+    "TCP/IP": "Transmission Control Protocol/Internet Protocol: the agreed rules that let computers exchange data over networks.",
+    "patent": "A legal right that lets an inventor stop others from making or using an invention without permission.",
+    "packet switch": "A machine that directs small pieces of information from one part of a network to another.",
+    "ARPANET": "Advanced Research Projects Agency Network: A network that linked research institutions.",
+    "SCOTUS": "Supreme Court of the United States: the country’s top court, whose rulings guide how laws are applied.",
+    "VC": "Venture capitalists: investors who put money into companies hoping they will grow and earn a return.",
     "composite index": "A score made by combining several results into one number.",
     "benchmark": "A test people use to compare how well different tools do a task.",
     "error bars": "Marks on a chart that show how uncertain a measurement may be.",
