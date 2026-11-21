@@ -1,0 +1,749 @@
+{
+  "date": "2026-11-21",
+  "cards": [
+    {
+      "id": 50581260,
+      "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+      "hn": "https://news.ycombinator.com/item?id=50581260",
+      "title": "Inkling 2 Mini",
+      "time": 1795205539,
+      "points": 902,
+      "depth": [
+        {
+          "text": "Inkling 2 Mini is an **open model** that **loops its middle layers** to reason more deeply",
+          "tier": "simple"
+        },
+        {
+          "text": "It has **26.4B total parameters** and a **~20GB memory footprint**. In one test, the lab ran it offline on a MacBook Pro, where it built a **playable flight simulator** in a few minutes.",
+          "tier": "substance",
+          "data": [
+            [
+              "Total parameters",
+              "26.4B"
+            ],
+            [
+              "Active parameters",
+              "3.4B"
+            ],
+            [
+              "Memory footprint",
+              "~20GB"
+            ],
+            [
+              "Middle-layer passes per token",
+              "three times"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters see promise in local coding tests; others question whether the benchmarks translate to real-world usefulness and worry the looped setup may be slow.",
+      "comment_count": 171,
+      "terms": [
+        "looped transformer",
+        "Mixture-of-Experts (MoE)",
+        "open weights",
+        "CoT",
+        "monitorability"
+      ],
+      "entities": [
+        "Thinking Machines Lab",
+        "Inkling 2 Mini",
+        "MacBook Pro"
+      ],
+      "comments": [
+        {
+          "by": "montroser",
+          "text": "This is bonkers good if these benchmarks hold up in real-world scenarios. To be at the level of Qwen3.8-27B with a looped transformer model is quite the flex. They just left this note on reddit: Hope that folks find this model more amenable to local usage - the sizing was largely informed by what folks on this subreddit ask for the most haha! There are two particularly interesting aspects of this…"
+        },
+        {
+          "by": "hedgehog",
+          "text": "Seems pretty promising in a few quick coding tests. 27 tokens/s decode on Ryzen 395 and llama.cpp Vulkan. Besides the obvious unmerged PRs (32694, 32657, 32429, 32704) you'll want below tiny patch for about 30% speed boost. Also, if anyone from the team is reading, if you have access for researchers I'd be interested in doing some higher volume tests & harness tuning than I have hardware for…"
+        },
+        {
+          "by": "lilytweed",
+          "text": "Whoa, not just a model that acknowledges and embraces using a looped architecture (GPT Astra 6+ and Sol 6.1+ are only [heavily] rumored to be looped), but it's open weights, too? I'm willing to wager that most open models will go looped in the wake of this. Wonder what it means for safety and interpretability at this level of availability."
+        },
+        {
+          "by": "dgacmu",
+          "text": "M1 Pro Macbook, 32GB: About 10t/s using q4 xl while running browsers/etc. and interacting using the local browser. test 1: write a python program to sort a csv by lastname and print out fields.\nResult: Nailed it. Nice python program. Nice explanation of output, if a little chatty (it gave an example output, which I didn't ask for). test 2: my standard \"identify the type and year of this coin\"…"
+        },
+        {
+          "by": "monksy",
+          "text": "The GGUF version of this that can run on Ollama/Llama.cpp is: https://huggingface.co/unsloth/Inkling-2-Mini-GGUF"
+        }
+      ],
+      "image": "https://thinkingmachines.ai/news/inkling-2-mini/images/cover-social.png"
+    },
+    {
+      "id": 50579331,
+      "url": "https://manidoraisamy.com/developer-to-architect.html",
+      "hn": "https://news.ycombinator.com/item?id=50579331",
+      "title": "We promoted developers into architects without informing them",
+      "time": 1795198671,
+      "points": 389,
+      "depth": [
+        {
+          "text": "someone's AI-written **install logging** slowed the welcome screen, and the author says developers must **own architecture**",
+          "tier": "simple"
+        },
+        {
+          "text": "The logging code tried to fetch the user’s email, then their user ID through multiple calls to Google; the welcome screen took **15 seconds** to load. The author’s fix is to log only the **install timestamp**, show the screen first, and tell marketing it can’t send a follow-up email based on install alone. Their larger advice is to design the **data model** and keep AI’s code within that plan.",
+          "tier": "substance",
+          "data": [
+            [
+              "welcome screen load time",
+              "15 seconds"
+            ]
+          ]
+        }
+      ],
+      "camps": "Some commenters say developers were already expected to make architecture decisions; others say this isn’t a promotion, but devaluation.",
+      "comment_count": 224,
+      "terms": [
+        "vibe coding",
+        "API call",
+        "asynchronously",
+        "datamodel",
+        "backward compatibility",
+        "unauthenticated payload"
+      ],
+      "entities": [
+        "Google Forms",
+        "Google",
+        "Mani",
+        "Claude Code",
+        "Claude",
+        "Anthropic",
+        "Opus",
+        "Mistral Large 4",
+        "IPA IME",
+        "IPAbet"
+      ],
+      "comments": [
+        {
+          "by": "whycombinetor",
+          "text": "Am I an outlier in that every SWE job I've had has expected you to push back on requirements and design the data model for tickets you are handed? Even when the org was large to have an architect, they just were just a figurehead and designed the original system, and ongoing decisions were made by the dev who picks up the ticket. From that perspective, engineers are still engineers, just without…"
+        },
+        {
+          "by": "nixpulvis",
+          "text": "I strongly believe good software teams (very rare) require members to play many roles. Sometimes you're a PM, sometimes you're an architect, sometimes you're the systems engineer. Enough people have enough context on the bigger picture that it's stable and there's a shared vision. More often than not, one person does the majority of this, and does their best to break up the responsibilities. A…"
+        },
+        {
+          "by": "teekert",
+          "text": "Every dev has a bit of an architect in them, you have to. But non-devs probably don't. I feel that, indeed I'm fast-tracking into the architect role (already started with some courses years ago but started my own company and went back to dev + sys-admin, arguably that latter is also a bit if an architect role), but the big models are also reasonable architects! Opus or Mistral Large 4, will often…"
+        },
+        {
+          "by": "bikeshaving",
+          "text": "I’ve found that the “job” of using AI is mainly foible management. What the author describes here is a habit of coding agents to excessively use and create logging infrastructure, and sloppily leave it in production code even when unnecessary. For instance, I created an IPA IME keyboard ( https://ipabet.org/ ), and I found in review that Claude would leave the debugging tooling around unflagged…"
+        },
+        {
+          "by": "pjmlp",
+          "text": "The problem is that usually each team only needs a single architect. What is happening is no different when developers got promoted into team lead of the offshoring team. Which also didn't require that many team leads onsite, and off they were, everyone else that wasn't leading any offshoring team."
+        }
+      ],
+      "image": "https://near.tl/utils/resize/image?cdn=https://cdn.neartail.com/1FAIpQLScjbts-yMOruG0IK47bi0s9ciOCA6pyW7RlmwKwcFIRnw9HUQ/1795197373296/markdown/thumbnail.png&w=1200&h=630"
+    },
+    {
+      "id": 50581438,
+      "url": "https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627",
+      "hn": "https://news.ycombinator.com/item?id=50581438",
+      "title": "US SEC's Nvidia probe is examining potential accounting issues – sources",
+      "time": 1795206161,
+      "points": 276,
+      "depth": [
+        {
+          "text": "the SEC is examining **possible accounting issues** at Nvidia, and commenters are already making **Enron comparisons**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter calls it a continuation of **circular financing**; another says it’s worth waiting to see what investigators find.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 146,
+      "terms": [
+        "SEC",
+        "CFO",
+        "circular financing",
+        "vendor financing"
+      ],
+      "entities": [
+        "Nvidia",
+        "SEC",
+        "Enron"
+      ],
+      "comments": [
+        {
+          "by": "eyeat",
+          "text": "This is just a continuation of the circular financing that has plagued Nvidia for the past 5 years. If the last earnings call was any guidance, their plan to renegotiate their current usage deals with neoclouds is going to severely shoot themselves in the foot. Now, if you believe the entire market hinges on NVDA, this will absolutely heighten our current correction."
+        },
+        {
+          "by": "leovander",
+          "text": "For those thinking how could it be possible that CFO didn't know, well companies this large, public or not, will have in-house counsel they pay for, for advice (sure, in-house counsel will farm out to third parties). If the counsel tells the C-suite they shouldn't do a specific thing, the C-suite is more than welcome to ignore counsel. Counsel is giving its legal opinion and C-suite can override…"
+        },
+        {
+          "by": "ralph84",
+          "text": "If the board thought there were accounting issues why did they make the CFO the interim CEO?"
+        },
+        {
+          "by": "danielovichdk",
+          "text": "I guess that guy on youtube, Ned Citron was right after all."
+        },
+        {
+          "by": "treebeard901",
+          "text": "Colette Kress the acting CEO of nVidia has been with the company since 2013 as Chief Financial Officer. It's difficult to believe the CFO was unaware of what could be years of blackmarket chip sales. It would ultimately be the financial department that has to manage that revenue on the books. If the several investigations into this end up drawing her in, then nVidia might need another acting CEO…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50581084,
+      "url": "https://scottaaronson.blog/?p=10344",
+      "hn": "https://news.ycombinator.com/item?id=50581084",
+      "title": "The stochastic parrots have apparently proved the Riemann Hypothesis",
+      "time": 1795204987,
+      "points": 270,
+      "depth": [
+        {
+          "text": "someone says AI has **apparently proved** a **math problem**, but mathematicians still need to unpack the proof",
+          "tier": "simple"
+        },
+        {
+          "text": "Levent Alpöge says Anthropic models produced a proof of the **Generalized Riemann Hypothesis** in **17.4 million lines** of Lean code. The author thinks it will **probably stand**, but mathematicians still want to explain and reconstruct the ideas.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some celebrate a historic mathematical breakthrough; others question whether the proof is established or useful until people can understand it.",
+      "comment_count": 243,
+      "terms": [
+        "Generalized Riemann Hypothesis",
+        "Lean",
+        "stochastic parrots"
+      ],
+      "entities": [
+        "Anthropic",
+        "Generalized Riemann Hypothesis",
+        "Lean",
+        "Levent Alpöge",
+        "Riemann Hypothesis",
+        "Scott Aaronson",
+        "Shtetl-Optimized"
+      ],
+      "comments": [
+        {
+          "by": "Mikhail_Edoshin",
+          "text": "There's a book, \"Impro\", about a theatric studio that practiced improvised sketches. One thing they struggled with was a normal conversation. People have them all the time yet somehow artists could not find the right approach. One day the head of the studio (the book author) had an insight. She asked the actors to drive the conversation so that they always bump the status of themselves or the…"
+        },
+        {
+          "by": "esjeon",
+          "text": "Lean + Stochastic predictor = Brute-force theorem solver P.S: AlphaGo was pretty much the same in the spirit btw."
+        },
+        {
+          "by": "hansvm",
+          "text": "Derailing slightly, a variety of HN posts (the blogs/sites they reference) have started banning me with a 403 page from nginx, including this author. My IP reputation is supposedly fine. Does anyone have any ideas where I should look next?"
+        },
+        {
+          "by": "hoppp",
+          "text": "Thats a lot of lean. Can anyone comprehend how it works in it's entirety?"
+        },
+        {
+          "by": "alterom",
+          "text": "\"We should still fix the leak\" I think this approach and conclusion applies to a lot more than the immediate context of that conversation."
+        }
+      ],
+      "image": "https://s0.wp.com/_si/?t=eyJpbWciOiJodHRwczpcL1wvc2NvdHRhYXJvbnNvbi5ibG9nXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIxXC8xMFwvY3JvcHBlZC1KYWNrZXQuZ2lmIiwidHh0IjoiU2h0ZXRsLU9wdGltaXplZCIsInRlbXBsYXRlIjoiZWRnZSIsImZvbnQiOiIiLCJibG9nX2lkIjoxMjk1MjA1ODB9.siOtN7gHw4tefA_rZickBw4GfI6tPxGgOQ1AXr2ZoOQMQ"
+    },
+    {
+      "id": 50583274,
+      "url": "https://ninlive.com/",
+      "hn": "https://news.ycombinator.com/item?id=50583274",
+      "title": "NINLIVE: The Nine Inch Nails live archive",
+      "time": 1795213847,
+      "points": 220,
+      "depth": [
+        {
+          "text": "a fan-run archive lets Nine Inch Nails fans **stream live recordings** and browse **show memorabilia**",
+          "tier": "simple"
+        },
+        {
+          "text": "The streaming collection covers **1988-2026**; Discord login lets people save favorites. The archive is adding **ticket stubs, setlist scans, and passes**, and is looking for show photos.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 58,
+      "terms": [
+        "DAT",
+        "VHS",
+        "setlist",
+        "bootleg"
+      ],
+      "entities": [
+        "Nine Inch Nails",
+        "NIN Live",
+        "Discord",
+        "Trent Vanegas",
+        "TJ",
+        "Hugo",
+        "acc123456",
+        "Quake",
+        "Soundgarden"
+      ],
+      "comments": [
+        {
+          "by": "alsetmusic",
+          "text": "Trent Reznor really wants his fans to get a high quality show out of the performance. The sound quality is always top notch and when there's a multimedia component, it's used to great effect. For example, alongside video footage with a mass surveillance theme, hidden cameras were pointed at sections of the audience and were streamed on stage. It was a delightful touch."
+        },
+        {
+          "by": "stevefan1999",
+          "text": "I only have exposure to NIN via Quake: https://en.wikipedia.org/wiki/Quake_(soundtrack) It sounds like industral metal and early indie rock to me back then. I never knew it is a big shit until 20 years later."
+        },
+        {
+          "by": "jonhohle",
+          "text": "I attended Fragility 2.0, NIN + Soundgarden, Cold, Black & Infinite, and Peel It Back. Fragility 2.0 was probably my favorite, but they are always incredible. 20 foot tall LED screens that moved and pivoted (from overhead lighting to background screens) in 2000 was pretty mind blowing. The scrim at the opening was awesome as well. Every show has its own things, but coming in with zero…"
+        },
+        {
+          "by": "olivierestsage",
+          "text": "NIN is one of the artists I didn’t expect to stand the test of time, but the quality of Reznor’s (and now Ross’s) output has just increased with time as far as I’m concerned. Very rewarding to be a fan of this band."
+        },
+        {
+          "by": "BLKNSLVR",
+          "text": "I wasn't really a fan of the song Terrible Lie, it was a bit basic and lifeless (subjectively, for me) since it was very early NIN. But the live performance of it for 'And All That Could Have Been' made it absolutely dynamic, and turned it into one of my favorite NIN songs: https://youtu.be/0QbiwDD9Bt8 Which is the very appeal of live performance."
+        }
+      ],
+      "image": "https://ninlive.com/static/ninlive-socialshare.png"
+    },
+    {
+      "id": 50576012,
+      "url": "https://slopstrap.mikelacher.com/",
+      "hn": "https://news.ycombinator.com/item?id=50576012",
+      "title": "Slopstrap – Make your site look hastily vibecoded",
+      "time": 1795188251,
+      "points": 198,
+      "depth": [
+        {
+          "text": "someone made a **style kit** for giving websites the hilariously **AI-generated look**",
+          "tier": "simple"
+        },
+        {
+          "text": "Slopstrap packs in **copy-paste components** like **nested glowing cards** and fake status callouts. It can also turn plain HTML into **“full vibecoded slop.”**",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some enjoy the parody and call it funny; others say it looks too polished or no longer resembles current AI-made sites.",
+      "comment_count": 35,
+      "terms": [
+        "LLM",
+        "HTML",
+        "CSS framework",
+        "bento grid",
+        "SaaS",
+        "vibecoded"
+      ],
+      "entities": [
+        "Slopstrap",
+        "Bootstrap",
+        "OpenAI",
+        "Stripe",
+        "Vercel",
+        "YC",
+        "React",
+        "GeoCities",
+        "MySpace",
+        "Inter",
+        "Instrument Serif",
+        "Sarah Chen",
+        "Marcus Vance",
+        "Elena Rostova",
+        "Bob’s Local Plumbing & Pipe Repair"
+      ],
+      "comments": [
+        {
+          "by": "minimaxa",
+          "text": "This is easily worth 1 billion in VC start-up money. Tbh, I'm surprised they haven't reached out to you already."
+        },
+        {
+          "by": "bob1029",
+          "text": "This is so well done. It's like there's an additional layer of irony with the presentation being this clean."
+        },
+        {
+          "by": "skyberrys",
+          "text": "It's like I never knew I was a sucker for rainbow gradient text, but now thanks to slopstrap I do. Is this website name a play on bootstrap? I'm going to go add some gradients to my website text now."
+        },
+        {
+          "by": "lxe",
+          "text": "Something about it actually looks way too polished. I think it's the precision of the spacing, the padding and the margins that gives it away as being too deliberate."
+        },
+        {
+          "by": "lanewinfield",
+          "text": "scrolling down to the \"slopstrap off\" makes me realize how much I miss the simple brutalist websites of yore..."
+        }
+      ],
+      "image": "https://slopstrap.mikelacher.com/og-image.png"
+    },
+    {
+      "id": 50583982,
+      "url": "https://borretti.me/article/re-riemann",
+      "hn": "https://news.ycombinator.com/item?id=50583982",
+      "title": "Re: Riemann",
+      "time": 1795218164,
+      "points": 191,
+      "depth": [
+        {
+          "text": "someone says a claimed **Riemann proof** with Claude makes people feel **sidelined** by AI",
+          "tier": "simple"
+        },
+        {
+          "text": "The announcement claims its method extends to the **Generalized Riemann Hypothesis** and that the arguments were formalized without assumptions. The writer contrasts its praise of **Claude** with Diego Rivera’s mural, arguing people are cast as **passive recipients**; commenters split between seeing AI as a human-directed tool and fearing it makes human intelligence feel less valuable.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say AI is a human-directed tool; others fear it makes human intelligence and purpose feel less valuable.",
+      "comment_count": 187,
+      "terms": [
+        "Riemann Hypothesis",
+        "Generalized Riemann Hypothesis",
+        "formalized arguments"
+      ],
+      "entities": [
+        "Claude",
+        "Riemann Hypothesis",
+        "Generalized Riemann Hypothesis",
+        "Extended Riemann Hypothesis",
+        "Diego Rivera",
+        "Man, Controller of the Universe",
+        "Ayn Rand",
+        "Apollo 11",
+        "Machines of Loving Grace",
+        "OpenAI",
+        "DeepSeek"
+      ],
+      "comments": [
+        {
+          "by": "Kuyawa",
+          "text": "I could not have solved GRH with Claude, openAI, DeepSeek or any other AI. Neither could 99.99% of you. AI is a tool, like a calculator that helped mathematicians long time ago calculate sine and cosine faster than we could, then computers, then the internet, now AI. Somebody has to use the tool and input the right parameters to get the right results. AI only searched for all the knowledge that…"
+        },
+        {
+          "by": "doctorzook",
+          "text": "If the measure of man is his ability so prove theorems, then the machines clearly outstripped most of us already.\nBut by that measure, most of us had already been beaten by other men. I'll never be the next Euler or von Neumann or Einstein, and I'll confess to occasional pangs of regret that I'll never reach those peaks.\nBut mostly, I just enjoy learning about math and science, and delight in the…"
+        },
+        {
+          "by": "jareklupinski",
+          "text": "> Why should we explore, discover, invent, succeed, become more, struggle, win, become divine? We don’t want to be more. We don’t want anything. why did i buy a skateboard? why did i break my arm riding it? why cant i wait to do it again? same reason we're in tar pits :) there's something more you can almost taste when you're the only one there"
+        },
+        {
+          "by": "lf88",
+          "text": "This post resonates a lot with me. It's depressing to see so many people rooting for a future in which human intelligence becomes irrelevant."
+        },
+        {
+          "by": "fwlr",
+          "text": "He’s right, it does read like a suicide note. It is precisely the tone of a terminal patient praising the skill, the care, the infinite patience of the doctor euthanizing him. That’s affected me quite heavily. I think I should probably spend the day offline, actually."
+        }
+      ],
+      "image": "https://borretti.me/assets/card/re-riemann.webp"
+    },
+    {
+      "id": 50581110,
+      "url": "https://www.masteringemacs.org/article/announcing-dreamcoder",
+      "hn": "https://news.ycombinator.com/item?id=50581110",
+      "title": "DreamCoder: Coding harness and IDE from the author of Mastering Emacs",
+      "time": 1795205039,
+      "points": 186,
+      "depth": [
+        {
+          "text": "someone built **DreamCoder**, a **browser-based coding harness** for juggling AI coding agents",
+          "tier": "simple"
+        },
+        {
+          "text": "The author says it took **fifteen months** to build, and panes can be arranged across **workspaces**; a **minimap** shows which are working or blocked. It’s designed for mouse and keyboard use, while full Emacs key bindings are still parked because browsers block some key combinations.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: fans praise its fresh interface and agent-management approach; critics say the market is saturated and the article offers no metrics for why it is better.",
+      "comment_count": 51,
+      "terms": [
+        "coding harness",
+        "tiling window manager",
+        "workspace",
+        "subagent",
+        "MCP server",
+        "REPL",
+        "prompt injection"
+      ],
+      "entities": [
+        "DreamCoder",
+        "Mastering Emacs",
+        "Emacs",
+        "Claude Code",
+        "LISP",
+        "Clojure",
+        "Codex",
+        "SmallDocs",
+        "MCP",
+        "Qwen",
+        "Gemma",
+        "John McCarthy",
+        "Steve Russell",
+        "Warren Teitelman",
+        "Richard Stallman",
+        "Marvin Minsky",
+        "Steve Yegge"
+      ],
+      "comments": [
+        {
+          "by": "FailMore",
+          "text": "I built https://smalldocs.org / https://github.com/espressoplease/smalldocs to handle some of the problems Mickey is trying to solve. It's a cli your agent can call to open up a markdown file in the browser with richer-than-normal formatting options. Here's an example SmallDoc that has a few formatting examples (mermaid diagrams, charts, etc.)…"
+        },
+        {
+          "by": "spockz",
+          "text": "I just read the whole announcement and boy I wish more text was written like this. Full of history, facts, and reasoning. Beautifully written. (I recognise it is a tad long of you just want to get cracking with it.) A very nice refresher in this age. I’ll be trying it out soon. Hopefully it does sandboxing and dealing with antigravity and codex well."
+        },
+        {
+          "by": "everforward",
+          "text": "It's interesting (and probably correct) how much this focuses on the UI. I also looked (/am looking) at Lisp and AI, but I went with Clojure and zero-ed in on the REPL driven development. The high level idea is that a session maps to a namespace in Clojure. When you create a new session, it makes a new namespace, injects tools that are bound to that session into it, and then swaps you into that…"
+        },
+        {
+          "by": "julienchastang",
+          "text": "Relatedly, I have installed my customized emacs inside a container that also has codex and a bunch of other niceties. In short, having Codex and emacs side-by-side super-charges the concept of emacs. Why? Because you can ask AI to write emacs lisp quickly molding the coding environment you want for whatever task you are trying to achieve. And the container aspect makes the whole development…"
+        },
+        {
+          "by": "esFran",
+          "text": "Very interesting, in deed. I think it is one of the correct ways to harness all the power of AI. A set of workers doing your job in a very clear way."
+        }
+      ],
+      "image": "https://www.masteringemacs.org/static/uploads/article-images/dreamcoder-moon.webp"
+    },
+    {
+      "id": 50585593,
+      "url": "https://www.backblaze.com/company/policy/privacy",
+      "hn": "https://news.ycombinator.com/item?id=50585593",
+      "title": "Backblaze Notice at Collection and Privacy Policy",
+      "time": 1795231396,
+      "points": 162,
+      "depth": [
+        {
+          "text": "Backblaze says it **shared some customer information** with **ad networks** and offers an **opt-out**",
+          "tier": "simple"
+        },
+        {
+          "text": "The policy says it sold or shared **identifiers, internet activity, commercial information, and geolocation data** with advertising networks and analytics providers for targeted ads in the preceding 12 months. One commenter says Backblaze’s CCPA FAQ says **uploaded files** aren’t personal information and aren’t sold or shared; another calls the opt-out a **dark pattern**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: critics say sharing data for ads undermines trust; others stress uploaded files aren't sold or shared, and one commenter suspects the sharing is website visits and signups.",
+      "comment_count": 50,
+      "terms": [
+        "cross-context behavioral advertising",
+        "CCPA",
+        "data controller",
+        "geolocation data"
+      ],
+      "entities": [
+        "Backblaze",
+        "CCPA",
+        "Global Privacy Control"
+      ],
+      "comments": [
+        {
+          "by": "cjboco",
+          "text": "You can opt out of most of everything here. Sure, it appears to be a dark pattern opt out process. Sucks, been using these guys for years, hate to see them go this route. https://preferences.backblaze.com/"
+        },
+        {
+          "by": "olalonde",
+          "text": "I know it sucks but it's worth pointing out that Backblaze explicitly distinguishes personal information from the files customers upload. Their CCPA FAQ[0] says that uploaded files are not included in the definition of personal information and that they do not sell or share those files. [0] https://help.backblaze.com/hc/en-us/articles/360040703654-Ca..."
+        },
+        {
+          "by": "munch-o-man",
+          "text": "good thing all my data with this is encrypted from my end haha. Also, just gonna pimp out https://github.com/afreidah/s3-orchestrator shamelessly here...if you put it between your clients and the backend it is easy to have your data in multiple places and a cloud migration is as simple as having your clients make requests to b2 through s3-orchestrator, add your new backend you want to migrate to…"
+        },
+        {
+          "by": "freeli",
+          "text": "Also note: at least on MacOS, the Backblaze backup install process creates a world-readable directory that contains a world-readable file that lists ALL files to be backed up across all users. This is a security issue if you have a multi-user setup and you don't want your filenames leaked across users. Any user on the system can read this file list. Backblaze was uninterested in discussing this…"
+        },
+        {
+          "by": "throwaway_ab",
+          "text": "Is the data the info about your account and computer environment details? (Location, name, os, apps running on your computer, etc...) Or is it actually the data you are backing up? Are they reading your files to mine for data to sell? Or both? I think selling any of this data, account, environment, actual files, all of this is abhorrent."
+        }
+      ],
+      "image": "https://cdn.prod.website-files.com/63d32de856f6323a43a277f2/64b1b1605e73b516e5712f82_Backblaze_Social-Card.webp"
+    },
+    {
+      "id": 50572448,
+      "url": "https://startups.novumsignals.com/",
+      "hn": "https://news.ycombinator.com/item?id=50572448",
+      "title": "What people are building, discovered through new domains",
+      "time": 1795168473,
+      "points": 160,
+      "depth": [
+        {
+          "text": "someone built a tracker that spots **new product companies** when their **websites go live**",
+          "tier": "simple"
+        },
+        {
+          "text": "The site scans around **100,000 newly observed domains** each day and tracks changes like pricing, apps, or hiring. Its listings are **produced automatically**; nothing is verified by a person, and the site says to judge each startup from the whole record.",
+          "tier": "substance",
+          "data": [
+            [
+              "domains scanned per day",
+              "around 100,000"
+            ],
+            [
+              "found in the last 7 days",
+              "5,774"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some like the idea and the thumbnails; others call the listings slop or say the pages barely explain what the products solve.",
+      "comment_count": 75,
+      "terms": [
+        "domain",
+        "API",
+        "MCP server"
+      ],
+      "entities": [
+        "NovumSignals",
+        "Martin"
+      ],
+      "comments": [
+        {
+          "by": "EagleEdge",
+          "text": "What Hacker News has been building since 2009?\nI have compiled 23,935 answers to “What are you working on?” from 14,897 people on https://stillworkingonit.vercel.app/"
+        },
+        {
+          "by": "bloopernova",
+          "text": "I wouldn't want to be GitHub's DevOps team right now. The explosion in usage must be nigh-overwhelming."
+        },
+        {
+          "by": "hirako2000",
+          "text": "I thought I was running out of interesting ideas, browsing this site shows there isn't anything obvious that's truly useful."
+        },
+        {
+          "by": "xpct",
+          "text": "Isn't it the first principle of a product's landing page to say what it solves? Almost none of these do.."
+        },
+        {
+          "by": "MontgomeryPy",
+          "text": "Interesting the ratio of physical hardware products versus software to me, only 94 out of 3,222 in U.S."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50569985,
+      "url": "https://www.gimp.org/news/2026/11/16/gimp-ui-tests/",
+      "hn": "https://news.ycombinator.com/item?id=50569985",
+      "title": "GIMP now has UI tests",
+      "time": 1795147224,
+      "points": 160,
+      "depth": [
+        {
+          "text": "GIMP now **tests its real interface** automatically, checking that **menus, dialogs and tools** still work",
+          "tier": "simple"
+        },
+        {
+          "text": "The **13 tests** check jobs like exporting a correct PNG and selecting a tool from the toolbox. Each runs GIMP in a **small, hidden desktop**, so it can work without a screen.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some welcome the tests as a good first step; others say GIMP needs a more intuitive UI or that AI could write many more tests.",
+      "comment_count": 135,
+      "terms": [
+        "GUI",
+        "unit test",
+        "dogtail",
+        "CI",
+        "accessibility information"
+      ],
+      "entities": [
+        "GIMP",
+        "dogtail",
+        "Python",
+        "Linux",
+        "X11",
+        "Wayland",
+        "Windows",
+        "macOS",
+        "XCF",
+        "PNG",
+        "Harsh Verma",
+        "Jehan",
+        "Michal Odehnal"
+      ],
+      "comments": [
+        {
+          "by": "rafram",
+          "text": "> We have 13 tests at this time. Does GIMP have a very restrictive AI policy or something? I get not wanting to ship a gigantic pile of UI tests without thorough review, but basically any model released in the last six months would be able to write UI tests covering every single control in an afternoon."
+        },
+        {
+          "by": "stuaxo",
+          "text": "This is really good. So much of this tech like ui tests was built for the web, and it can be a pain to get working for plain old GUI apps"
+        },
+        {
+          "by": "zkmon",
+          "text": "> So it coult not tell us if a dialog opens, It feels good when I see spelling mistakes. It feels organic, human-sourced, non-AI. It feels like a good old village again. BTW I love GIMP for everything it did to the world of graphics work. Such an awesome thing. Thank you folks."
+        },
+        {
+          "by": "KingOfCoders",
+          "text": "I created all the designs for flyers, announcements, invitations etc. in Affinity for my wife. I migrated to Linux and didn't like any of the apps. I was lost. Then Affinity announced they'll add Linux support. But for some time now my wife just uses Codex/Claude to do her day-to-day nothing special design work. I feel, just like ArtCraft, Gimp will not be relevant in some years (months?)."
+        },
+        {
+          "by": "dllu",
+          "text": "Funny how GIMP spawned the Gimp Toolkit, aka GTK, which is widely used in Linux, and yet GIMP's own UI seems to have long languished as a rather outdated design. Glad that they have tests, though, and hope they continue to improve it."
+        }
+      ],
+      "image": "https://www.gimp.org/downloads/downloadsplash-aryeom.jpg"
+    }
+  ],
+  "glossary": {
+    "looped transformer": "An AI model that runs the same middle layers multiple times for each piece of text it handles.",
+    "Mixture-of-Experts (MoE)": "Mixture of Experts: a model with specialist parts, where only some parts do the work for each piece of text.",
+    "open weights": "The model's learned settings are available for people to download and run themselves.",
+    "CoT": "Chain of thought: text showing an AI’s step-by-step reasoning while working on a task.",
+    "monitorability": "How well people can keep track of what an AI model is doing.",
+    "vibe coding": "Making software by telling an AI what you want and letting it write the code, often without closely checking how it works.",
+    "API call": "Application Programming Interface: a request an app sends to Windows to ask it to do something.",
+    "asynchronously": "Doing work in the background so the caller does not have to wait for it to finish.",
+    "datamodel": "A plan for what information an app keeps and how those pieces fit together.",
+    "backward compatibility": "Keeping older app behavior working when changes are made.",
+    "unauthenticated payload": "Information sent to a server without proving who sent it.",
+    "SEC": "Securities and Exchange Commission: the agency that oversees company filings for stock-market listings.",
+    "CFO": "Chief Financial Officer: the person responsible for overseeing an organization’s finances.",
+    "circular financing": "A setup where money supplied by one business loops back to it through another business's purchases.",
+    "vendor financing": "A way for a supplier to help a customer pay for what it buys, often over time.",
+    "Generalized Riemann Hypothesis": "A famous conjecture about where certain mathematical functions become zero, tied to how prime numbers are distributed.",
+    "Lean": "A computer program used to write mathematical proofs and check that their steps are correct.",
+    "stochastic parrots": "A mocking label for language models that suggests they repeat learned patterns without really understanding them.",
+    "DAT": "Digital Audio Tape: a tape format used to record sound digitally.",
+    "VHS": "Video Home System: a tape format used to record and watch video.",
+    "setlist": "A list of the songs played at a concert.",
+    "bootleg": "An unofficial recording or copy, such as a recording of a concert.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "HTML": "HyperText Markup Language: code that tells a browser what content a web page has.",
+    "CSS framework": "A collection of ready-made styles that helps developers design webpages without writing every style from scratch.",
+    "bento grid": "A page layout split into boxes of different sizes, like sections in a lunch box.",
+    "SaaS": "Software as a Service: software you access over the internet, with the provider running it for you.",
+    "vibecoded": "Made by asking an AI to write code from prompts, with little hands-on programming.",
+    "Riemann Hypothesis": "A famous math question about the pattern behind where prime numbers appear.",
+    "formalized arguments": "Arguments put into a strict format that a computer can check step by step.",
+    "coding harness": "A program around a coding AI that lets it use tools like reading files and running commands.",
+    "tiling window manager": "A desktop setup that arranges open windows in blocks instead of letting them overlap freely.",
+    "workspace": "A saved work area that keeps a project’s files or conversations together.",
+    "subagent": "A helper assigned a smaller part of a larger task.",
+    "MCP server": "Model Context Protocol server: a computer that lets an AI connect to outside tools or information.",
+    "REPL": "Read-Eval-Print Loop: a prompt where you enter a command and see the result right away.",
+    "prompt injection": "Instructions hidden in text or a file that try to trick an AI into ignoring its intended directions.",
+    "cross-context behavioral advertising": "Ads chosen using what you do across different websites or apps.",
+    "CCPA": "California Consumer Privacy Act: a California law that gives people rights over how businesses use their personal information.",
+    "data controller": "The organization that decides why and how personal information is used.",
+    "geolocation data": "Information that can be used to work out a device’s physical location.",
+    "domain": "A website's address on the internet.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "GUI": "Graphical user interface: the buttons, pictures, and menus you use on a screen instead of typing commands.",
+    "unit test": "A check of one small part of a program, rather than the whole thing.",
+    "dogtail": "A Python tool used to run tests by interacting with a program's interface.",
+    "CI": "Continuous integration: automatic checks that run when developers change code, helping catch problems early.",
+    "accessibility information": "Details a program provides so tools such as screen readers can understand its buttons and menus."
+  }
+}
