@@ -2,6 +2,771 @@
   "date": "2026-11-21",
   "cards": [
     {
+      "id": 50589618,
+      "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+      "hn": "https://news.ycombinator.com/item?id=50589618",
+      "title": "Lean verification of the Riemann Hypothesis",
+      "time": 1795271805,
+      "points": 542,
+      "depth": [
+        {
+          "text": "a proof of the **Riemann Hypothesis** has been checked by several **independent computer programs**",
+          "tier": "simple"
+        },
+        {
+          "text": "Levent Alpöge's library has **17 million lines of code** and its exported proof was checked by Lean's official kernel, **con-leche and con-ron**, plus several third-party checkers. The Lean and Mathlib communities say the statement matches Mathlib's and **certify the proof as correct**.",
+          "tier": "substance",
+          "data": [
+            [
+              "lines of code",
+              "17 million"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say multiple independent checkers make a mistaken proof vanishingly unlikely; others say the checkers may not be independent enough to justify full confidence.",
+      "comment_count": 422,
+      "terms": [
+        "Riemann Hypothesis",
+        "Lean",
+        "Mathlib",
+        "kernel",
+        "theorem"
+      ],
+      "entities": [
+        "Lean",
+        "Mathlib",
+        "Levent Alpöge",
+        "Lean FRO",
+        "Mathlib Initiative",
+        "con-leche",
+        "con-ron",
+        "Claude",
+        "Physlib"
+      ],
+      "comments": [
+        {
+          "by": "schleck8",
+          "text": "If you have a physics background and want to contribute to breakthroughs like this, check Physlib (counterpart to Lean's Mathlib). It's making quick progress and is part of the Lean community. https://physlib.io"
+        },
+        {
+          "by": "rcr-anti",
+          "text": "While still possible, the proof exploiting a bug is vanishingly small now. Following a few bugs and bad proofs this year, there are a number of different implementations, in different languages, and with different levels of proofs of their consistency. con-leche and con-ron are the heavy hitters, with consistency proofs of themselves. So for RH to be false, there'd have to be a bug in all the…"
+        },
+        {
+          "by": "thejokeisonme",
+          "text": "A fake refutation of the Collatz conjecture already got through one of these independent checkers in the past. What's harder, proving GRH or finding a way to get through every checker (which aren't as independent as they are sometimes touted to be)? In this case there was a human expert in the loop so it's much less likely the model hacked its way through the problem without the expert noticing…"
+        },
+        {
+          "by": "killerstorm",
+          "text": "If I understand correctly, for the purpose of the proof Claude formalized a huge chunk of all modern math. So it's a big result not only for GRH, but math foundations and formalization."
+        },
+        {
+          "by": "trio8453",
+          "text": "We need to give Levent a lot of credit for this. As much as we talk about Claude proving it, Levent seems to have a rare talent for getting the most out of it."
+        }
+      ],
+      "image": "https://leanprover-community.github.io/blog/meta-twitter.png"
+    },
+    {
+      "id": 50583761,
+      "url": null,
+      "hn": "https://news.ycombinator.com/item?id=50583761",
+      "title": "Ask HN: I have been unemployed for 2y. 15 years of experience, US. What to do?",
+      "time": 1795216712,
+      "points": 498,
+      "depth": [
+        {
+          "text": "a senior engineer asks what to do after **two years jobless**; commenters suggest **networking and projects**",
+          "tier": "simple"
+        },
+        {
+          "text": "They quit a mid-size insurance tech company in **Jan 2025** after hearing layoffs were coming, and now tutor math with maybe **4-5 months** left to support their household. Several replies urge reaching former coworkers; one commenter says a **referral** finally got them hired.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Some say a two-year gap isn't prohibitive and a hiring manager may not care; others say it can shut you out of recruiter conversations and needs a clear story.",
+      "comment_count": 554,
+      "terms": [
+        "SWE",
+        "AI agents",
+        "SaaS",
+        "PR",
+        "high-agency",
+        "MVP",
+        "GTM",
+        "leetcode",
+        "system design"
+      ],
+      "entities": [
+        "C#",
+        ".NET",
+        "AWS",
+        "Claude",
+        "LinkedIn",
+        "Tesla",
+        "Prebacked",
+        "Google",
+        "Apple",
+        "GPT",
+        "Fable",
+        "Astra",
+        "Codex",
+        "Verizon Skill Forward",
+        "wayfinder"
+      ],
+      "comments": [
+        {
+          "by": "imeanwhatdoikno",
+          "text": "There's a short comment elsewhere here that says \"you need to lie\" which basically summarizes it. To expand on that: you need to tell potential employers about your AI-powered SaaS or whatever startup that you've been working on for the past two years, how much you accomplished just by yourself with the help AI agents, how much you learned about using AI effectively, etc. That you just couldn't…"
+        },
+        {
+          "by": "taurath",
+          "text": "I had to get back into the industry last year after 4 years off for mental health and caregiving. I was able to get back in - 2 years isn’t that much. But the problem is the front door in hiring is broken. Entirely. I didn’t receive almost ANY replies from hundreds of sent out resumes - I have household names and big public high scale launches and wins on my resume, but no FAANG and no degree. I…"
+        },
+        {
+          "by": "marcus_holmes",
+          "text": "This is still the best article I've found on this subject: https://ludic.mataroa.blog/blog/ludics-guide-to-getting-soft... from one of my favourite bloggers, his other stuff is very worth reading. My take on it: the standard recruitment process is completely broken. Don't even start doing that. Sending applications to a job advert is an exercise in futility and will destroy your mental health…"
+        },
+        {
+          "by": "edaus",
+          "text": "I have 2 years experience, the startup i was working at ran out of funds and I've applied to jobs for 2 years after with no success (like you, spent all my savings), barely a few interviews. It sucks as I've just gotten my foot in the door and then was thrown out. Because of it I was quite sick of even looking at programming jobs and even coding. Now 2 years later and I'm a plumber, the demand is…"
+        },
+        {
+          "by": "bovermyer",
+          "text": "Recruiting pathways are hopeless. At this point, the only way to get hired is to know people. How do you know people? I guess that differs from place to place. Where I am, the community is very tight, so if you know one person you know everyone. The converse is that if you make a mistake, everyone knows it. You need to get to the point where you get offered jobs that aren't advertised. Most jobs…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50588982,
+      "url": "https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really",
+      "hn": "https://news.ycombinator.com/item?id=50588982",
+      "title": "Detonating a pile of lead azide",
+      "time": 1795267394,
+      "points": 394,
+      "depth": [
+        {
+          "text": "someone is **detonating a pile of lead azide**, while commenters debate how to handle the **dangerous mess**",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter says it is **OK (ish) in liquid form**, but **crystals can detonate** if they impact each other.",
+          "tier": "substance",
+          "data": [
+            [
+              "lead azide",
+              "10,000 pounds"
+            ],
+            [
+              "lead azide",
+              "4500kg"
+            ],
+            [
+              "lead in explosion",
+              "3200kg"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some say the barrels cannot be moved and should be destroyed in place; others suggest robots or burying them before detonation.",
+      "comment_count": 262,
+      "terms": [
+        "lead azide",
+        "crystallize",
+        "plume"
+      ],
+      "entities": [
+        "Derek Lowe",
+        "Iowa Army Ammunition Plant",
+        "US government",
+        "US military"
+      ],
+      "comments": [
+        {
+          "by": "cogman10",
+          "text": "What a mess. But this is exactly what's wrong with the US military. This factory was built by the US government for WW2. It was operated by the government until the 60s where it was ultimately shut down. In 1998 it was later converted to a contractor operated facility and has been ever since. We gave those companies so much money and they decided it was fine cutting corners and improperly…"
+        },
+        {
+          "by": "compass_copium",
+          "text": "For everyone suggesting robots can move it: If you work in a lab that handles chemicals that can explode like this (organic peroxides, etc.) and you find something in a state like this, the proper response is literally to have the bomb squad come out and destroy your 1L or whatever of material in place. They literally can not shift these barrels without the entire thing detonating."
+        },
+        {
+          "by": "smsm42",
+          "text": "That's how a lot in our modern society operates. Hide the problem until it's impossible to hide, then when it's so bad there are no good solutions left, block any viable solution with at least manageable fallout because it's \"unsafe\" and wait until it blows up randomly. And everybody feels they've done their best, and nobody suffers any consequences for the screwup except for innocent bystanders."
+        },
+        {
+          "by": "GolfPopper",
+          "text": "One thing I'm curious about: I've seen it mentioned that the lead azide issue was discovered back in March 2026.[1] But at the same time, I stumbled across this from 2025: \"Lead Azide Neutralization at Iowa Army Ammunition Plant\".[2] 1. https://www.mississippivalleypublishing.com/the_hawk_eye/doc... 2. https://www.highergov.com/contract-opportunity/lead-azide-ne..."
+        },
+        {
+          "by": "gpm",
+          "text": "> Covering it with more dirt and concrete and leaving it there is also not going to work. The chance of a accidental detonation is just going to get worse every year down there, and it’s hard to see how any work could get done around the whole facility under those conditions. Needless to say, “bury it and try to get on with your life” is not considered a reasonable regulatory solution, either…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50587875,
+      "url": "https://blog.tymscar.com/posts/studiodisplayethernet/",
+      "hn": "https://news.ycombinator.com/item?id=50587875",
+      "title": "My monitor was cutting my download speed by 75%",
+      "time": 1795257392,
+      "points": 339,
+      "depth": [
+        {
+          "text": "someone found their **monitor** was dropping network packets and **cutting download speeds by 75%**",
+          "tier": "simple"
+        },
+        {
+          "text": "Through the monitor, the old adapter’s buffer filled when it couldn’t hand data to the Mac fast enough, and packets got dropped. A second adapter sent **bigger bursts** and dropped no frames in the tests; flow control brought downloads to around **2 Gbps**, though the author didn’t want it always on because it can add latency elsewhere.",
+          "tier": "substance",
+          "data": [
+            [
+              "Download speed cut",
+              "75%"
+            ],
+            [
+              "Download through monitor",
+              "600 Mbps"
+            ],
+            [
+              "Download connected directly",
+              "2.2 down"
+            ],
+            [
+              "Download with flow control",
+              "around 2 Gbps"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 178,
+      "terms": [
+        "flow control",
+        "buffer",
+        "burst",
+        "latency"
+      ],
+      "entities": [
+        "Oscar Molnar",
+        "Studio Display XDR",
+        "UGREEN",
+        "UniFi Dream Router 7",
+        "Realtek",
+        "RTL8156B",
+        "RTL8157",
+        "Apple",
+        "macOS",
+        "iperf3",
+        "Linux"
+      ],
+      "comments": [
+        {
+          "by": "nagisa",
+          "text": "I recently had this same problem with a multigig copper SFP+ module. These SFP+ modules (usually) advertise 10Gbps to the NIC they're plugged in, but will negotiate lower speeds on the copper side. So when NIC tries to send to SFP+ at higher rate than whatever speed SFP+ has negotiated internally, the SFP+ module will just drop a bunch of packets and incur a significant hit in throughput. These…"
+        },
+        {
+          "by": "senko",
+          "text": "This reminds me of a (completely different, but felt equally) bizzare problem with ghostty (the terminal emulator) on Linux and Steam, specifically Baldur's Gate 3. At the start of the game after an update, BG3 compiles the (Vulkan) shaders. To avoid hammering the computer, it checks the load, including I/O pressure, and then throttles itself. It turns out that Ghostty uses io_uring, and even if…"
+        },
+        {
+          "by": "manarth",
+          "text": "Better description: \"My USB network switch was cutting my download speed\". The fact that it's a monitor is a little bit irrelevant."
+        },
+        {
+          "by": "throw0101d",
+          "text": "Meta: > Somehow I am one of those few very lucky people to have the opportunity of owning a 2.5 gig symmetrical line for my internet. I'm not going to complain against more bandwidth (as a GenXer I stared my online journey at (IIRC) 9600bps (maybe lower): much celebration with V.32/V.90), but I'm curious to know how many residential use-cases can take advantage of that much bandwidth. Linux ISOs?…"
+        },
+        {
+          "by": "fancyfredbot",
+          "text": "Since lots of comments misunderstood the article, the extra latency from going through the monitor meant his laptop couldn't acknowledge the packets quickly enough. That led a buffer on the ethernet adapter to fill and that led it to drop packets. A different adapter which required less frequent acknowledgement fixed the problem for him. It is quite a nice post which gets to the bottom of…"
+        }
+      ],
+      "image": "https://blog.tymscar.com/studio-display-ethernet/og-card.png"
+    },
+    {
+      "id": 50587208,
+      "url": "https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html",
+      "hn": "https://news.ycombinator.com/item?id=50587208",
+      "title": "RCE in Gnupg",
+      "time": 1795249978,
+      "points": 190,
+      "depth": [
+        {
+          "text": "a flaw in **a software library** can **expose data**, and running code can't be ruled out",
+          "tier": "simple"
+        },
+        {
+          "text": "A **crafted, very long user ID** in an OpenPGP key can trigger a **double free**, which can expose application data through signed data. The advisory says remote code execution can't be ruled out and recommends an update to **GPGME 2.3.1**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: the advisory says remote code execution can't be ruled out; one commenter says it's a double-free bug, not an RCE chain.",
+      "comment_count": 67,
+      "terms": [
+        "GPGME",
+        "OpenPGP",
+        "double free",
+        "RCE"
+      ],
+      "entities": [
+        "GnuPG",
+        "GPGME",
+        "OpenPGP",
+        "Gpg4win",
+        "GnuPG Desktop",
+        "GnuPG VS-Desktop",
+        "Johan Carlsson",
+        "GitLab",
+        "Red Hat",
+        "Ruby2Shell",
+        "Rust",
+        "C",
+        "C++",
+        "Seqouia-PGP",
+        "GnuTLS",
+        "Samba",
+        "Flatpack",
+        "XMPP"
+      ],
+      "comments": [
+        {
+          "by": "uptrails",
+          "text": "Reportedly fixed by Red Hat 5 years ago based on the output from conventional tools, but missed by upstream: https://gitlab.com/redhat/centos-stream/rpms/gpgme/-/blob/c9..."
+        },
+        {
+          "by": "dehrmann",
+          "text": "It's becoming clear that humans have no business writing C/C++ without Rust-level tooling around it to prevent these things."
+        },
+        {
+          "by": "miduil",
+          "text": "This vulnerability was discovered by Johan Carlsson and we were informed by GitLab on 2026-11-12.\nInitially we set 2026-11-25 for a coordinated disclosure;\ndue to the new Ruby2Shell bug GitLab had to update earlier\nand thus we also disclosed the GPGME bug on 2026-11-20.\nI guess pretty important for GitLab since it supports signed commits, code execution in that path is pretty bad. You can find…"
+        },
+        {
+          "by": "mik1998",
+          "text": "It's a double free bug, not an RCE chain. Are these vulnerability reports intentionally overstated?"
+        },
+        {
+          "by": "wannabe44",
+          "text": "All software using a GPGME version prior to 2.3.0 either as shared\nlibary, DLL, or statically linked is affected. Examples of software\nusing GPGME are - Gpg4win\n- GnuPG Desktop\n- GnuPG VS-Desktop\n- Most mail clients\n- Many XMPP clients\n- Samba\n- Flatpack\nI assume this is in \"gpgme\" and doesn't affect apt etc? Can someone confirm?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50585376,
+      "url": "https://eli.thegreenplace.net/2017/clojure-the-perfect-language-to-expand-your-brain/",
+      "hn": "https://news.ycombinator.com/item?id=50585376",
+      "title": "Clojure will affect the way you think about programming (2017)",
+      "time": 1795228839,
+      "points": 181,
+      "depth": [
+        {
+          "text": "learning **Clojure** can **change how you think about programming**, even if you never use it",
+          "tier": "simple"
+        },
+        {
+          "text": "The author singles out **Lisp-style macros**: they encourage treating **code as data**, and the author recommends learning Clojure even if you may never use it in production.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: Clojure fans say it changed how they think; skeptics say languages can constrain thought and may not be worth learning if you won't use them.",
+      "comment_count": 83,
+      "terms": [
+        "Lisp",
+        "macro",
+        "REPL",
+        "persistent data structure",
+        "pure function",
+        "concurrency"
+      ],
+      "entities": [
+        "Clojure",
+        "Eli Bendersky",
+        "Rich Hickey",
+        "Alan Perlis",
+        "Common Lisp",
+        "Scheme",
+        "Racket",
+        "Java",
+        "ClojureScript",
+        "core.async"
+      ],
+      "comments": [
+        {
+          "by": "jonjacky",
+          "text": "I strongly recommend Hickey's own long essay on his experiences and thinking that led to Clojure, and his explanation of the most important features of Lisp in general and Clojure in particular. He wrote it for the 2020 ACM HOPL history of programming languages meeting: A History of Clojure by Rich Hickey\nhttps://dl.acm.org/doi/pdf/10.1145/3386321"
+        },
+        {
+          "by": "ertucetin",
+          "text": "Lisp is something people just can't seem to kill. It refuses to die. I know it's a niche language, and it will probably stay that way. But if you look closely, Lisp posts frequently make it to the front page, especially Clojure posts. They're always popping up now and then, attracting lots of comments, just like this thread. I've been a Clojure developer for over 10 years now, and this still…"
+        },
+        {
+          "by": "tikotus",
+          "text": "In the era of LLMs, I often stop to think of Clojure. I believe it had a significant role in popularizing the concept of immutable data structures. Immutability simplifies the required context for understanding and solving problems. This benefits both humans and LLMs. Would an LLM, or a person solely coding using them, have had the insight to work out that immutability is the way to go, and we…"
+        },
+        {
+          "by": "mlmonkey",
+          "text": "Each of these 4 families of languages: Prolog, Lisp, ML, C/C++ will affect how you think about programming, each in their own different way. Most of us do imperative programming (C/C++) and are content with that; but if you really want to expand your thinking, try languages like Prolog and Lisp."
+        },
+        {
+          "by": "TN1ck",
+          "text": "There was a time in university where I started my days with doing some 4clojure puzzles. I became so obsessed, I managed to solve almost all of them. It's wild what an impact these few weeks had on my programming abilities. It's a beautifully designed language that makes you think in data structures and their transformations. As a side note: I code Clojure in Lightroom. It was so cool to see your…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50580536,
+      "url": "https://winedroid.soham.sh/demo/",
+      "hn": "https://news.ycombinator.com/item?id=50580536",
+      "title": "Winedroid – run Android apps without Android (WASM demo)",
+      "time": 1795203016,
+      "points": 175,
+      "depth": [
+        {
+          "text": "someone built **Winedroid**, a Rust project that runs **Android apps** **in a browser** without Android",
+          "tier": "simple"
+        },
+        {
+          "text": "The browser runtime is **12MB**. The FAQ says the **JIT doesn't work on web**, so running Winedroid natively will feel smoother.",
+          "tier": "substance",
+          "data": [
+            [
+              "browser runtime",
+              "12MB"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: the demo's author says downloaded APKs run; some commenters say none of the apps they tried would load.",
+      "comment_count": 46,
+      "terms": [
+        "APK",
+        "WASM",
+        "JIT",
+        "Rust",
+        "compatibility layer",
+        "NDK",
+        "Dalvik",
+        "syscall",
+        "sandboxing",
+        "DEX"
+      ],
+      "entities": [
+        "Winedroid",
+        "Android",
+        "Rust",
+        "WebAssembly",
+        "F-Droid",
+        "GitHub",
+        "Lepton",
+        "Valve",
+        "Podman",
+        "Waydroid",
+        "Android Translation Layer",
+        "droidloom",
+        "NewPipe",
+        "Linux",
+        "Vivaldi",
+        "Wallhaven"
+      ],
+      "comments": [
+        {
+          "by": "__aru",
+          "text": "Someone compiled an x86 port of Valve's Lepton compatibility layer, its still a work in progress but is working for a few Android utility apps that I wanted on Linux. I'd argue Lepton is potentially better than waydroid due to: - podman containers, so no root required - no awkward file permission issues - per-app lepton containers are possible, for additional sandboxing Its definitely still a WIP…"
+        },
+        {
+          "by": "ivanjermakov",
+          "text": "Winedroid name would be more suited for a compatibility layer to run Windows programs on Android, not the other way around."
+        },
+        {
+          "by": "yjftsjthsd-h",
+          "text": "I'd be interested in a comparison with waydroid and https://gitlab.com/android_translation_layer/android_transla... (which this seems to somewhat resemble in approach)"
+        },
+        {
+          "by": "patrakov",
+          "text": "After clicking around the Weather app, I got this: Browser pointer input failed\nruntime touch dispatch has no runtime View root\nnext missing primitive: runtime ViewRoot touch target"
+        },
+        {
+          "by": "haunter",
+          "text": "Couldn't launch a single app 'While executing DEX method dex file' etc etc"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50579297,
+      "url": "https://ankitg.me/blog/vibecoding-inference-chip/",
+      "hn": "https://news.ycombinator.com/item?id=50579297",
+      "title": "Vibecoding an inference chip",
+      "time": 1795198516,
+      "points": 169,
+      "depth": [
+        {
+          "text": "someone used an **AI coding agent** to get a **language model** running on a **reprogrammable chip**",
+          "tier": "simple"
+        },
+        {
+          "text": "A cloud agent spent several days getting a **ternary-weight model** running, then took it from 6 to **213 tokens/s**, or **33× the baseline**. The author says the experiments burned $10,000 in Claude and OpenAI tokens.",
+          "tier": "substance",
+          "data": [
+            [
+              "baseline speed",
+              "6 tokens/s"
+            ],
+            [
+              "final speed",
+              "213 tokens/s"
+            ],
+            [
+              "speedup",
+              "33×"
+            ],
+            [
+              "token spend",
+              "$10,000"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters are excited about ternary models on FPGAs; others say spending $10k+ in tokens on a curiosity is excessive.",
+      "comment_count": 70,
+      "terms": [
+        "FPGA",
+        "LLM",
+        "inference",
+        "ternary weights",
+        "bit-exact"
+      ],
+      "entities": [
+        "AWS",
+        "Codex",
+        "DeepGrove",
+        "Conductor",
+        "Claude",
+        "OpenAI",
+        "Astra",
+        "Opus",
+        "Fable",
+        "Maple",
+        "C++",
+        "Verilog"
+      ],
+      "comments": [
+        {
+          "by": "itissid",
+          "text": "Someone mentioned that FPGAs though amazing to create bespoke chips that are fast, run into a fab capacity issue. Someone explained briefly to me that even if you could make an fpga that could do inference better than current GPUs it was economically possible to make them at scale. I can't recall whether that was for technology related issues or just because fab capacity is completely filled up."
+        },
+        {
+          "by": "cpldcpu",
+          "text": "I did something like this with Opus 4.5: https://github.com/cpldcpu/smollm.c It seems implementing transformers is the new \"hello world\" of AI assisted coding."
+        },
+        {
+          "by": "jluxenberg",
+          "text": "A fun and interesting project, but to spend $10k+ in tokens on a curiosity seems excessive! Outside of my budget for sure."
+        },
+        {
+          "by": "seanjhkwon",
+          "text": "It shows the importance of automated indicators when giving AI huge tasks. Maybe more important than the intelligence of the model."
+        },
+        {
+          "by": "codekansas",
+          "text": "This is cool Next step is tuning your post training pipeline to optimize your model for your chosen FPGA architecture..."
+        }
+      ],
+      "image": "https://ankitg.me/assets/fpga-board.png"
+    },
+    {
+      "id": 50581177,
+      "url": "https://signoregalilei.com/2026/11/20/and-yet-it-moves/",
+      "hn": "https://news.ycombinator.com/item?id=50581177",
+      "title": "And yet, it moves",
+      "time": 1795205275,
+      "points": 164,
+      "depth": [
+        {
+          "text": "someone worries an apparent **AI proof** of the Riemann Hypothesis makes **human discovery** feel less special",
+          "tier": "simple"
+        },
+        {
+          "text": "The author calls the apparent result **bittersweet** because the proof came from an “inscrutable silicon mind,” not a person. A commenter pointed to a **human-only proof** posted in response, while noting some parts were still unwritten and people were trying to translate it into Lean to check it.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some say AI can lead to more discovery and deserves credit as a human-built tool; others worry it sidelines human achievement or leaves people less able to understand how things work.",
+      "comment_count": 113,
+      "terms": [
+        "Riemann Hypothesis",
+        "Lean",
+        "LLM",
+        "formal verification"
+      ],
+      "entities": [
+        "Anthropic",
+        "Riemann Hypothesis",
+        "Lean"
+      ],
+      "comments": [
+        {
+          "by": "beej71",
+          "text": "I'm largely aligned with the author. But when I want to be more upbeat, I think of some of the reactions to AlphaGo. Shi Yue, 9 Dan: “Like nothing I’ve ever seen before—they’re how I imagine games from far in the future.” Gu Li, 9 Dan: “AlphaGo’s self play games are incredible—we can learn many things from them.” Ke Jie, 9 Dan: “AlphaGo is changing our original perception of Go…no move can’t be…"
+        },
+        {
+          "by": "terabytest",
+          "text": "Even though I’m also feeling the somber mood, I’m not able to feel this change as a loss. Long term, it will probably lead to more discovery rather than less. The worry that I have, and I haven’t seen this talked about enough, is that humanity will stop understanding how things actually work. If we delegate all scientific work to the machine, we’re not incentivized to actually understand why…"
+        },
+        {
+          "by": "MinimalAction",
+          "text": "During the earlier days of AI boom in knowledge domains (say mid 2025), I had a sombre chat with friends. The gist was that I was feeling the existential crisis brought by the realization of how machines are going to leave no corner of independent inquiry to (average) humans. They all said, \"well, life moves on one way or the other and people will be fine.\" That wasn't as comforting and to…"
+        },
+        {
+          "by": "fluxusars",
+          "text": "You are sad about someone else (not you) no longer discovering things because /something/ (that is also not you) is discovering things instead. You are not all of humanity. Why feel that misplaced pride for something you personally took no part in? Just be you."
+        },
+        {
+          "by": "andrewflnr",
+          "text": "> Maybe we could have solved this one ourselves, but instead we gave up and checked the answer at the back of the book. This is the closest I've heard anyone come to expressing why AI \"math\" is so depressing."
+        }
+      ],
+      "image": "https://signoregalilei.com/wp-content/uploads/2026/11/Galileo_Musical_Cover_Art-300x207.jpg"
+    },
+    {
+      "id": 50560595,
+      "url": "https://github.com/bigcrimping/floppy3.5",
+      "hn": "https://news.ycombinator.com/item?id=50560595",
+      "title": "Floppy3.5: A portable 3.5-inch floppy WiFi NAS",
+      "time": 1795098589,
+      "points": 151,
+      "depth": [
+        {
+          "text": "someone made a **portable floppy reader** for old cameras like Sony Mavica, with photos available over **WiFi**",
+          "tier": "simple"
+        },
+        {
+          "text": "It reads **FAT12 1.44 MB disks**, shows the files in each disk’s root folder on a web page, and can copy them to an SD card. It checks file contents with SHA-256 and **skips photos already on the card**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 61,
+      "terms": [
+        "NAS",
+        "FAT12",
+        "root folder",
+        "SHA-256"
+      ],
+      "entities": [
+        "floppy3.5",
+        "Sony Mavica"
+      ],
+      "comments": [
+        {
+          "by": "netsharc",
+          "text": "I went on a backpacking tour. My aim was to take a lot of pictures, but I didn't want to carry a laptop. So my SD card backup setup was: a Raspberry Pi clone, a card reader, a 500G Sandisk USB3 external NVMe disk the size of a credit card and the thickness of maybe 3 credit cards and a power bank. The backup routine was: 1. Plug the card to the card reader, plug it into one of the USB3 ports of…"
+        },
+        {
+          "by": "accrual",
+          "text": "Very cool project! I particularly like the display on top and the fact you can get a visual readout of the floppy disk state without dumping and analyzing the image on a PC. I have a Sony Mavica camera that sees some use, they're fun for taking on walks and collecting some 2000s style photos. I usually dump it on a old PC for the full effect, but a wireless floppy drive like this would certainly…"
+        },
+        {
+          "by": "Aurornis",
+          "text": "So many amazing details in this project: > The LCD looks like a segment display. Unused segments and icons show as light \"ghosts\" and come on in dark ink when they are active. Attention to detail is second to none. I bet this feels satisfying to hold and operate, too."
+        },
+        {
+          "by": "MomsAVoxell",
+          "text": "I already have one of these but it only accepts CF/SD and other non-floppy media .. its pretty great, you pop your card in, press a button and the contents are copied directly to disk, which is then accessible via WiFi .. its a no-name brand and I’ve used it so much over the years the labels have worn off .. But yeah, I also have a box of a 1000 unused Sony Mavica 3.5” floppy disks too, which is…"
+        },
+        {
+          "by": "tombert",
+          "text": "Tangential, but I did something very similar out of morbid curiosity a couple years ago with an LTO-6 deck. I set it up with my server, and served it with NFS. It actually wasn't quite as bad as it sounds for reading, but writing never really worked very well. I don't know the details of how NFS works well enough to say, I'm wondering if it does some kind of out-of-order writing that doesn't work…"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/bbb4e3114f01d8fad7ec308f334897fd5a0838179ff64dae90fa95f843e230b4/bigcrimping/floppy3.5"
+    },
+    {
+      "id": 50583768,
+      "url": "https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/sir-brian-may-adds-new-dimension-to-hera-asteroid",
+      "hn": "https://news.ycombinator.com/item?id=50583768",
+      "title": "Sir Brian May adds new dimension to Hera asteroid",
+      "time": 1795216784,
+      "points": 150,
+      "depth": [
+        {
+          "text": "Sir Brian May made **3D views** of Didymos, showing its **equatorial ridge** beside its rock-strewn surface",
+          "tier": "simple"
+        },
+        {
+          "text": "May and Claudia Manzoni combined **adjacent images** taken a few moments apart with Hera’s Asteroid Framing Camera. The images were captured from **29.7 km** away at **2.8 m per pixel**.",
+          "tier": "substance",
+          "data": [
+            [
+              "distance",
+              "29.7 km"
+            ],
+            [
+              "resolution",
+              "2.8 m per pixel"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 38,
+      "terms": [
+        "stereoscopic imagery",
+        "equatorial ridge",
+        "moonlet",
+        "Gaussian splat"
+      ],
+      "entities": [
+        "Sir Brian May",
+        "Hera",
+        "Didymos",
+        "ESA",
+        "Queen",
+        "Claudia Manzoni",
+        "Patrick Michel",
+        "CNRS",
+        "Jean-Baptiste Vincent",
+        "DLR",
+        "Dimorphos",
+        "NASA",
+        "DART",
+        "OWL",
+        "London Stereoscopic Company",
+        "Asteroid Framing Camera",
+        "ESA WebTV",
+        "YouTube"
+      ],
+      "comments": [
+        {
+          "by": "oersted",
+          "text": "> Hera science team member, astrophysicist and Queen guitarist Sir Brian May A life well lived. Badass!"
+        },
+        {
+          "by": "Overdrivr",
+          "text": "Rock star and astrophysicist that's awesome"
+        },
+        {
+          "by": "jrootabega",
+          "text": "Funny to see that he puts his laptop stickers on \"upside down\"."
+        },
+        {
+          "by": "bluegatty",
+          "text": "Queen's 'Radio Gaga' just came on and I was literally thinking of May designed this song and this popped up ... it's probably just a coincidence :) the result of perennial coverage of pop culture artifacts ... but still ..."
+        },
+        {
+          "by": "ingvay7",
+          "text": "Had no idea he had designed that cool OWL stereoscope https://shop.londonstereo.com/ \"For many a lonely day sailed across the milky seas\nNe'er looked back, never feared, never cried\""
+        }
+      ],
+      "image": "https://media.esa.int/global/public/common/misc/2026/11/402679/image-thumb__402679__social_share/3d-crop.2b14b833.jpg"
+    },
+    {
       "id": 50581260,
       "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
       "hn": "https://news.ycombinator.com/item?id=50581260",
@@ -697,6 +1462,61 @@
     }
   ],
   "glossary": {
+    "Riemann Hypothesis": "A famous math question about the pattern behind where prime numbers appear.",
+    "Lean": "A computer program used to write mathematical proofs and check that their steps are correct.",
+    "Mathlib": "A collection of math statements and results that Lean users can reuse in proofs.",
+    "kernel": "A small program that carries out a calculation on a computer's graphics chip or processor.",
+    "theorem": "A mathematical statement shown to be true through reasoning.",
+    "SWE": "Software engineering: work that involves building and maintaining software.",
+    "AI agents": "Computer programs that can carry out tasks, rather than only answer a question.",
+    "SaaS": "Software as a Service: software you access over the internet, with the provider running it for you.",
+    "PR": "Pull request: a proposed code change shared so others can review it.",
+    "high-agency": "Someone who takes initiative and sees a task through without waiting to be told each step.",
+    "MVP": "Minimum viable product: the simplest version of a product that people can try.",
+    "GTM": "Go-to-market: the work of getting a product in front of customers and selling it.",
+    "leetcode": "A site people use to practise coding questions like the ones asked in job interviews.",
+    "system design": "Planning how the parts of a software system fit together to do a job.",
+    "lead azide": "An explosive chemical whose crystals can detonate if they impact each other.",
+    "crystallize": "When a liquid forms solid crystals.",
+    "plume": "A cloud of smoke, dust, or other material moving through the air.",
+    "flow control": "A way for a receiving device to tell the sender to pause so it can catch up.",
+    "buffer": "A small holding space for audio that gives the system time to process it.",
+    "burst": "A short batch of data sent together before the device waits for a reply.",
+    "latency": "The time between doing something and seeing the device respond.",
+    "GPGME": "A piece of software that other programs use for GnuPG features; this advisory says the bug is in it.",
+    "OpenPGP": "A format used for keys and for signing or encrypting messages.",
+    "double free": "A bug where a program marks the same piece of memory as free twice, which can confuse or crash it.",
+    "RCE": "Remote Code Execution: a flaw that lets an attacker make a computer run their commands from somewhere else.",
+    "Lisp": "A family of programming languages that writes code using nested groups of words and expressions.",
+    "macro": "A tool that lets programmers add language features or transform code before it runs.",
+    "REPL": "Read-Eval-Print Loop: a prompt where you enter a command and see the result right away.",
+    "persistent data structure": "A way to make changes without overwriting the old data, so earlier versions remain available.",
+    "pure function": "A function that returns an answer without changing anything outside itself.",
+    "concurrency": "A program handling multiple tasks at once, with the tasks sometimes taking turns.",
+    "APK": "The file you download to install an Android app.",
+    "WASM": "WebAssembly: a way for an app to run plug-ins written in other programming languages.",
+    "JIT": "Just-in-time compilation: compiling a program as it runs, rather than beforehand.",
+    "Rust": "A programming language; commenters say 37signals used it for the Hey backend.",
+    "compatibility layer": "Software that helps a program made for one system run on a different system.",
+    "NDK": "Native Development Kit: Android's tools for making apps with code that talks directly to the device.",
+    "Dalvik": "Android's system for running app code written in Java.",
+    "syscall": "A request a program sends to the operating system to do something on its behalf.",
+    "sandboxing": "Restricting what a program can access so it cannot freely affect the rest of the system.",
+    "DEX": "Dalvik Executable: a file format that holds Android app code.",
+    "FPGA": "Field-programmable gate array: a chip that can be set up for different hardware jobs after it is made.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "inference": "When an AI uses what it learned to answer or act, instead of being trained.",
+    "ternary weights": "Model values limited to three choices, which can make them take less space.",
+    "bit-exact": "Matching exactly at the byte level, not just looking similar.",
+    "formal verification": "Checking a claim using precise rules, often with a computer.",
+    "NAS": "Network-attached storage: storage connected to your home network so other devices can reach its files.",
+    "FAT12": "File Allocation Table 12: a way some disks organize files so a computer can find them.",
+    "root folder": "The main folder on a disk, where files sit without being inside another folder.",
+    "SHA-256": "Secure Hash Algorithm 256: a way to turn data into a fixed-length fingerprint that can help check whether it has changed.",
+    "stereoscopic imagery": "Two views of the same thing that create the impression of depth, like seeing with both eyes.",
+    "equatorial ridge": "A raised strip that runs around the middle of an object.",
+    "moonlet": "A small natural body that orbits a larger one, like a little moon.",
+    "Gaussian splat": "A way to build a 3D scene from pictures using lots of colored spots.",
     "looped transformer": "An AI model that runs the same middle layers multiple times for each piece of text it handles.",
     "Mixture-of-Experts (MoE)": "Mixture of Experts: a model with specialist parts, where only some parts do the work for each piece of text.",
     "open weights": "The model's learned settings are available for people to download and run themselves.",
@@ -713,26 +1533,21 @@
     "circular financing": "A setup where money supplied by one business loops back to it through another business's purchases.",
     "vendor financing": "A way for a supplier to help a customer pay for what it buys, often over time.",
     "Generalized Riemann Hypothesis": "A famous conjecture about where certain mathematical functions become zero, tied to how prime numbers are distributed.",
-    "Lean": "A computer program used to write mathematical proofs and check that their steps are correct.",
     "stochastic parrots": "A mocking label for language models that suggests they repeat learned patterns without really understanding them.",
     "DAT": "Digital Audio Tape: a tape format used to record sound digitally.",
     "VHS": "Video Home System: a tape format used to record and watch video.",
     "setlist": "A list of the songs played at a concert.",
     "bootleg": "An unofficial recording or copy, such as a recording of a concert.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "HTML": "HyperText Markup Language: code that tells a browser what content a web page has.",
     "CSS framework": "A collection of ready-made styles that helps developers design webpages without writing every style from scratch.",
     "bento grid": "A page layout split into boxes of different sizes, like sections in a lunch box.",
-    "SaaS": "Software as a Service: software you access over the internet, with the provider running it for you.",
     "vibecoded": "Made by asking an AI to write code from prompts, with little hands-on programming.",
-    "Riemann Hypothesis": "A famous math question about the pattern behind where prime numbers appear.",
     "formalized arguments": "Arguments put into a strict format that a computer can check step by step.",
     "coding harness": "A program around a coding AI that lets it use tools like reading files and running commands.",
     "tiling window manager": "A desktop setup that arranges open windows in blocks instead of letting them overlap freely.",
     "workspace": "A saved work area that keeps a project’s files or conversations together.",
     "subagent": "A helper assigned a smaller part of a larger task.",
     "MCP server": "Model Context Protocol server: a computer that lets an AI connect to outside tools or information.",
-    "REPL": "Read-Eval-Print Loop: a prompt where you enter a command and see the result right away.",
     "prompt injection": "Instructions hidden in text or a file that try to trick an AI into ignoring its intended directions.",
     "cross-context behavioral advertising": "Ads chosen using what you do across different websites or apps.",
     "CCPA": "California Consumer Privacy Act: a California law that gives people rights over how businesses use their personal information.",
