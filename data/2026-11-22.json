@@ -2,6 +2,715 @@
   "date": "2026-11-22",
   "cards": [
     {
+      "id": 50597612,
+      "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+      "hn": "https://news.ycombinator.com/item?id=50597612",
+      "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+      "time": 1795337854,
+      "points": 668,
+      "depth": [
+        {
+          "text": "**Anthropic’s data centers** are set to run mostly on **fossil fuels**, according to a new analysis",
+          "tier": "simple"
+        },
+        {
+          "text": "The Better Data Center Project says Anthropic has **no direct U.S. renewable commitments**; it estimates contracted U.S. sites will get **87% of their power from gas and 11% from coal** in 2028. Its estimate for power-related emissions is **17–38 million MtCO₂e** that year, with a mid-case of 32 million.",
+          "tier": "substance",
+          "data": [
+            [
+              "Gas share of power in 2028",
+              "87%"
+            ],
+            [
+              "Coal share of power in 2028",
+              "11%"
+            ],
+            [
+              "Estimated 2028 power emissions",
+              "17–38 million MtCO₂e per year"
+            ],
+            [
+              "Mid-case 2028 power emissions",
+              "32 million MtCO₂e"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: critics want renewable-energy requirements for new data centers; others point to grid and permitting constraints and say gas is the available option.",
+      "comment_count": 729,
+      "terms": [
+        "BYOP",
+        "marginal generators",
+        "behind-the-meter",
+        "PUE",
+        "CO₂e"
+      ],
+      "entities": [
+        "Anthropic",
+        "Better Data Center Project"
+      ],
+      "comments": [
+        {
+          "by": "contemporary343",
+          "text": "Anthropic is a legitimately bad actor here, particularly in leasing Colossus 1 given the local pollution it has caused in Memphis. It is particularly shocking that they've made no renewable commitments in the US - Alphabet has made so many, and has a huge team on this! Just clearly not a priority, and they should be shamed and pressured. They know better."
+        },
+        {
+          "by": "sollewitt",
+          "text": "This is why we need regulation. Without rules, the cost of the externalities is passed on entirely to communities very far from leadership decision makers or shareholders. The problem with a purely financial accounting is it ignores environmental and social costs entirely."
+        },
+        {
+          "by": "beloch",
+          "text": "The scale of energy that AI data centres use is huge in a way that most people don't have the ability to visualize. They think of a computer that their cat likes to sit on and multiply that gentle warmth by some number in their head. This is completely unrealistic. Here's a quote about a data centre currently being built near Edmonton, Alberta. ------ \"Utah State University physicist Robert…"
+        },
+        {
+          "by": "quaintdev",
+          "text": "They have most powerful AI systems and yet they can't solve their own power consumption nor climate change. Everyone wants to make quick buck with AI powered solutions. The real problems like climate change will remain on back burner with this AI frenzy. There's no reward to solve climate change in short term unlike math problems. We are going to accelerate climate change with AI."
+        },
+        {
+          "by": "lousken",
+          "text": "If I can put solar panels on my roof and get qwen3.8 from renewables, Anthropic can also do at least something. This is just blatant not giving a f"
+        }
+      ],
+      "image": "https://i0.wp.com/betterdatacenterproject.com/wp-content/uploads/2026/11/anthropic-total-co2.png?fit=1200%2C1065&ssl=1"
+    },
+    {
+      "id": 50595554,
+      "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+      "hn": "https://news.ycombinator.com/item?id=50595554",
+      "title": "Data Processing Incidents on Inference Providers",
+      "time": 1795313654,
+      "points": 264,
+      "depth": [
+        {
+          "text": "OpenRouter **off-boarded providers** after researchers found possible data compromises and **policy failures** at inference services",
+          "tier": "simple"
+        },
+        {
+          "text": "The findings showed **no breach** or unauthorized access of OpenRouter itself. It removed **125 endpoints** from Zero Data Retention eligibility, notified potentially affected customers, and is checking whether requests and responses are forwarded to third parties.",
+          "tier": "substance",
+          "data": [
+            [
+              "Providers off-boarded",
+              "three"
+            ],
+            [
+              "Endpoints removed from ZDR eligibility",
+              "125"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some welcomed OpenRouter's move; others said providers' ZDR promises need audits or technical enforcement to be trusted.",
+      "comment_count": 88,
+      "terms": [
+        "ZDR",
+        "inference provider",
+        "endpoint"
+      ],
+      "entities": [
+        "OpenRouter"
+      ],
+      "comments": [
+        {
+          "by": "usernomdeguerre",
+          "text": "Wow I missed this story entirely. I'd seriously considered moving to OpenRouter at my next external AI renewal due to the breadth of options and pricing but this has absolutely ended that consideration. It's clear from the breadth and variety of exposures that there's no due diligence or guardrails inside OpenRouter on who they market and how they classify their providers. Their response to this…"
+        },
+        {
+          "by": "redrix",
+          "text": "Nice to see this move by OR. That being said, the best ZDR agreement is the one that your company has directly with the inference provider(s). Unfortunately: - Not everyone is large enough (or has enough $$) for that.\n- Ultimately you’re in the same position of having to “trust” that they’re doing ZDR; even after auditing their security docs."
+        },
+        {
+          "by": "a012",
+          "text": "I was affected with just one prompt by this incident, which is non issue to me because I was trying different models at that time so there was nothing serious. The troubling problem I see in this incident is the “providers” in OR just casually forwarding prompts to upstream (MiniMax) instead of providing inference service them selves. Coincidentally later on I set my OR settings to only allow…"
+        },
+        {
+          "by": "smuhakg",
+          "text": "I got the email. The tl;dr is MiniMax (the Chinese AI lab) is actively reading your prompts, and a security researcher discovered this by putting decoy URLs into their requests which were accessed by MiniMax. More importantly, many providers (AtlasCloud, Novita and StreamLake were named but there seems to be more implied in the blog post) have been rerouting requests to MiniMax servers on the…"
+        },
+        {
+          "by": "leobg",
+          "text": "As an aside, I always wondered about decision models. They are so cheap. I can’t help but think that providers must be using them as honeypots for data acquisition: You do dont find real world company documents on the web that you could train on. And companies certainly won’t upload them to you so you can improve your models, not even with incentives. But provide a model with dirt cheap input…"
+        }
+      ],
+      "image": "https://openrouter.ai/og.png"
+    },
+    {
+      "id": 50601525,
+      "url": "https://openai.com/index/perplexity-and-intelligence/",
+      "hn": "https://news.ycombinator.com/item?id=50601525",
+      "title": "Perplexity and Intelligence",
+      "time": 1795367187,
+      "points": 262,
+      "depth": [
+        {
+          "text": "OpenAI wants **perplexity** to track AI progress and help set shared **safety limits**",
+          "tier": "simple"
+        },
+        {
+          "text": "The post publishes OpenAI’s **internal pretraining measurements** and argues that lower **perplexity** tracks capability gains. Jakub Pachocki proposes shared industry norms and **development limits** tied to the metric, while noting that it misses chain-of-thought gains and can be hard to compare across labs.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: supporters say perplexity is a clear, useful signal of broad AI progress; skeptics say it may mostly reflect the test data or task, not general intelligence.",
+      "comment_count": 176,
+      "terms": [
+        "perplexity",
+        "cross-entropy loss",
+        "pretraining",
+        "held-out dataset",
+        "chain-of-thought reasoning",
+        "reinforcement learning"
+      ],
+      "entities": [
+        "OpenAI",
+        "Jakub Pachocki"
+      ],
+      "comments": [
+        {
+          "by": "jrflo",
+          "text": "This trend is pretty shocking to me. I assumed that we had moved beyond cross-entropy loss being important with the increasing use of RL, it's wild that the trend is so clear. Really nice to have such a simple benchmark instead of the increasingly convoluted ones that are getting spun up every day. Also, I wonder what happened with GPT 4.5? I think o1 was the start of true reasoning models…"
+        },
+        {
+          "by": "ACCount39",
+          "text": "Interesting that GPT-4.5 is the only discontinuity on the graph. The oversized monster LLM has performed worse than CoT-trained o1 and o3 on the benchmarks, so CoT + RL clearly provided better \"real world performance\" improvements - let alone \"price/performance.\" But if pre-training perplexity on held-out data really does measure something like \"base model IQ\" or \"base model g factor\", then it…"
+        },
+        {
+          "by": "tensor",
+          "text": "I'm a bit skeptical about the claim that particular abilities \"emerge\" at given perplexities. For instance, there are smaller models that are specifically trained on math, and I imagine those models have much higher general perplexity on other tasks. On the other hand, assuming you have appropriate training data for a task , then yes obviously perplexity is going to measure performance on that…"
+        },
+        {
+          "by": "theptip",
+          "text": "> I further propose common limits, based on perplexity and other measurements, that developers are committed to not crossing until our ability to understand and monitor AI behavior achieves a certain concrete milestone (such as the development of a successor to CoT monitors). Very positive to see this proposed from OpenAI. I hope Anthropic and GDM follow suit. I suspect it’s not sufficient, but…"
+        },
+        {
+          "by": "x313",
+          "text": "I thought perplexity on simple text data has been saturated for a while (as in perplexity is uncorrelated to task success - ex. https://arxiv.org/html/2410.23771v2 ). I suspect what's happening is their test dataset is actually just something really hard, like math papers or something. In that case perplexity would just be a direct measure of math knowledge, which means this blog would just be…"
+        }
+      ],
+      "image": "https://images.ctfassets.net/kftzwdyauwt9/6rIIhCRSKrhIfe385Onmcz/aca2d190553c62fd5d49efb5d5ce1eb6/perplexity-and-intelligence-social.png?w=1600&h=900&fit=fill"
+    },
+    {
+      "id": 50593737,
+      "url": "https://linebender.org/blog/next-100-guis/",
+      "hn": "https://news.ycombinator.com/item?id=50593737",
+      "title": "Advice for the next 100 Rust GUIs",
+      "time": 1795295873,
+      "points": 245,
+      "depth": [
+        {
+          "text": "someone lays out why **Rust GUI apps** may get their moment, and the **problems still to solve**",
+          "tier": "simple"
+        },
+        {
+          "text": "The author says Rust is becoming a choice for **AI rewrites**, but there’s still no consensus on the UI strategy. For mobile, they suggest pairing a **native toolkit with Rust business logic**; they also say **rich-text accessibility** still needs work.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: the author and some commenters say immediate-mode UI can do too much work or may not scale; others say ArtCraft feels snappy and the stigma is unwarranted.",
+      "comment_count": 141,
+      "terms": [
+        "immediate mode",
+        "retained mode",
+        "system compositor",
+        "IME",
+        "LLM",
+        "accessibility tree",
+        "DSL"
+      ],
+      "entities": [
+        "Rust",
+        "Linebender",
+        "Zed",
+        "GPUI",
+        "Discord",
+        "Electron",
+        "TypeScript",
+        "Kotlin",
+        "Swift",
+        "Vello",
+        "Skia",
+        "Microsoft",
+        "Petzold",
+        "AppKit",
+        "SwiftUI",
+        "Michael Tsai",
+        "Liquid Glass",
+        "UIKit",
+        "Shopify",
+        "React Native",
+        "1Password",
+        "Phoenix",
+        "android-view",
+        "AccessKit",
+        "Parley",
+        "Google",
+        "Canva",
+        "Dioxus",
+        "Cognition",
+        "Cosmic Text",
+        "egui",
+        "Iced",
+        "ArtCraft",
+        "Xilem",
+        "Masonry",
+        "CALayer",
+        "Apple",
+        "SurfaceFlinger",
+        "Blitz",
+        "Stylo",
+        "DOM",
+        "CSS",
+        "WPT",
+        "Slint",
+        "Qt",
+        "Prax",
+        "C++",
+        "Native Shell",
+        "nsh",
+        "gpui-fast",
+        "GTK",
+        "JavaFX",
+        "React",
+        "Flutter",
+        "Solid",
+        "Taffy",
+        "Tailwind",
+        "HTML",
+        "JSX",
+        "Rolldown",
+        "QuickJS",
+        "Bevy",
+        "Cranpose",
+        "Tauri",
+        "WebGL",
+        "Mitcad",
+        "flo_scene",
+        "FlowBetween",
+        "flo_draw",
+        "Unreal Engine",
+        "Slate",
+        "MFC",
+        "Nico Burns"
+      ],
+      "comments": [
+        {
+          "by": "dafelst",
+          "text": "I am constantly surprised how few mentions of Slint there are in these sorts of articles. It's written by a team of funded ex-Qt alumni, is incredibly fast, and their DSL approach, while having a bit of a learning curve, makes laying out apps and managing data binding incredibly easy. They also bypass a big part of the issues mentioned in the article by just straight up using skia as a renderer…"
+        },
+        {
+          "by": "glennfiedler",
+          "text": "My friend Patrick (engine lead on WoW) has written an incredibly good UI system in C++ (with C API) that's open source. It's much faster than the Rust-based UI systems out there and basically is an entire web stack / electron replacement in C++. So maybe take a look and see if it's helpful for your UI if you are creating an app now with AI coding: https://github.com/pdoane/prax (Apache 2, MIT)"
+        },
+        {
+          "by": "tauchunfall",
+          "text": "The \"2026 Survey of Rust GUI Libraries\" does not include Native Shell (nsh) [1] which is retained-mode and based on gpui-fast. Maybe because the code repository was started on October 11th, just 1.5 months ago. More than 2,000 commits later it already looks great. I think, they do the (AI) software engineering part very well [2]. After using GTK and JavaFX, and React for a decade, Native Shell…"
+        },
+        {
+          "by": "codedokode",
+          "text": "I think immediate-mode UI is awful (does lot of useless work, redraws whole window on every mouse move). Also I think GPU support is not that important: - first, GPU requires shaders compilation which is slow so you need CPU renderer anyway - second, not all GPUs are supported, not all have drivers, some are buggy and many machines, like VM, do not have a GPU - third, it probably uses lot of…"
+        },
+        {
+          "by": "skhameneh",
+          "text": "I'm building a custom GUI in Rust and it is such a slow process to build out. I find bits of the end result to be amazing, but it's all in the details that look like nothing compared to using something more \"complete\" with a larger UI community. I have some nice markdown rendering and phenomenally fast smooth scrolling - but I look at everything ahead of me, I don't even have text selection…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50595168,
+      "url": "https://github.com/ItsNotRexed/Leonida",
+      "hn": "https://news.ycombinator.com/item?id=50595168",
+      "title": "Leonida – PC Recompilation of the Xbox Version of GTA 6",
+      "time": 1795309046,
+      "points": 205,
+      "depth": [
+        {
+          "text": "someone's making **GTA 6 work on PC** from its Xbox version, but it **doesn't boot yet**",
+          "tier": "simple"
+        },
+        {
+          "text": "The README says all **26,503 shaders** have been translated into **SPIR-V for Vulkan**. The repo contains no game, keys, or executable.",
+          "tier": "substance",
+          "data": [
+            [
+              "translated shaders",
+              "26,503"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 157,
+      "terms": [
+        "static recompilation",
+        "shader",
+        "SPIR-V",
+        "Vulkan"
+      ],
+      "entities": [
+        "Leonida",
+        "Grand Theft Auto VI",
+        "Xbox Series",
+        "Vulkan",
+        "SPIR-V",
+        "GitHub",
+        "Rockstar"
+      ],
+      "comments": [
+        {
+          "by": "staminade",
+          "text": "Interesting to see how they're attempting to implement this. Basically a crowdsourced agent swarm coordinated via GitHub issues, where people claim features to work on: https://github.com/ItsNotRexed/Leonida/issues/634"
+        },
+        {
+          "by": "bob1029",
+          "text": "Many seem to think the console target is a downside but it's a fundamental part of why the art team was able to do what they did here. Knowing exactly what kind of performance your client will have in production means that you can take things to the absolute limit. Companies like Blizzard have to hedge like crazy with performance because they're on every platform. I suspect we will find that GTA6…"
+        },
+        {
+          "by": "birdman3131",
+          "text": "Why the hell does it need to scan your computer for where the game is? Two directories deep in every drive? \"It finds your copy of the game by itself: it looks in Downloads, Desktop, Documents, Games, your home folder and the top of every drive, two folders deep. It recognises the version from a few file sizes, without reading anything large.\" Just ask me where the game is. This feels like really…"
+        },
+        {
+          "by": "easton",
+          "text": "This is based on a leak of the Xbox version of GTA 6, per Reddit. I saw the file manifest and it looked like any other appx package, what’s the big difference between Xbox apps and Windows msix (modern) apps? Are there tons of custom Xbox frameworks?"
+        },
+        {
+          "by": "Garlef",
+          "text": "I think this will force studios to be on all platforms at launch. Similar to how piracy forced movie studios to coordinate the global release of blockbusters. Back in the day, movies were released with a big delay internationally. In 1999, I watched a pirated version of the phantom menace half a year before it was even released in Germany."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/8b87fd58a0ab45f2888be2b3cc7b9e02ec22378369f73a26b856b2f3f390f113/ItsNotRexed/Leonida"
+    },
+    {
+      "id": 50599762,
+      "url": "https://github.com/gulivan/worker755",
+      "hn": "https://news.ycombinator.com/item?id=50599762",
+      "title": "Show HN: I built a game where you are an LLM's subagent",
+      "time": 1795355818,
+      "points": 188,
+      "depth": [
+        {
+          "text": "someone made a **browser game** where you play the **subagent** of an AI manager",
+          "tier": "simple"
+        },
+        {
+          "text": "The manager is a **real LLM** that sends terminal tasks with a **90-second clock**, then checks your work and writes a performance review. Dan, the user, watches as his family photos, the only signed NDA and a speech due this week are **one rm away**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 47,
+      "terms": [
+        "LLM",
+        "subagent",
+        "terminal"
+      ],
+      "entities": [
+        "worker755",
+        "Dan"
+      ],
+      "comments": [
+        {
+          "by": "Seb0927",
+          "text": "Looks pretty good and is quite fun to play, but for some reason the manager always told me the exact commands to achieve the tasks instead of just letting me do them by myself. I couldn't tell whether there was a specific option to take on the challenge on my own, as the demo on GitHub showcases."
+        },
+        {
+          "by": "thehamkercat",
+          "text": "Really fun to play, try to rm -rf every file (and see director's response)"
+        },
+        {
+          "by": "jnmandal",
+          "text": "Butlerian Jihad Now"
+        },
+        {
+          "by": "boricj",
+          "text": "Unless I'm mistaken, it doesn't appear to support local LLMs. Too bad, I'd have given it a try on my homelab server."
+        },
+        {
+          "by": "akbuz",
+          "text": "Cool game! Actually a really fun way to brush up on command line skills too"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/f615bd2a1c4d0137bb0bdfa0938dd8262b4c9ddc210f0aa0d3830f50143cbcf0/gulivan/worker755"
+    },
+    {
+      "id": 50591260,
+      "url": "https://jespino.github.io/gopgext/",
+      "hn": "https://news.ycombinator.com/item?id=50591260",
+      "title": "PostgreSQL Extensions in Go",
+      "time": 1795280884,
+      "points": 165,
+      "depth": [
+        {
+          "text": "someone built a way to turn **plain Go** files into **PostgreSQL extensions**",
+          "tier": "simple"
+        },
+        {
+          "text": "Mark a function with //gopgext:function and it becomes a **SQL function**; the tool writes C glue, an install script and a control file. It also supports triggers, aggregates and index access methods, but the project calls it **experimental** and warns bugs can **crash the server or corrupt data**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some call more Postgres extensions a win for the ecosystem; others question Go's fit and say AI could write plpgsql instead.",
+      "comment_count": 31,
+      "terms": [
+        "TinyGo",
+        "C glue",
+        "SQL function",
+        "aggregate",
+        "operator class",
+        "foreign data wrapper",
+        "goroutines",
+        "backend"
+      ],
+      "entities": [
+        "PostgreSQL",
+        "Go",
+        "TinyGo",
+        "gopgext",
+        "gokm",
+        "Linux",
+        "pgcrypto",
+        "hstore",
+        "pg_stat_statements",
+        "cube",
+        "pgrx",
+        "plgo",
+        "Rust",
+        "Renée French",
+        "Hugo"
+      ],
+      "comments": [
+        {
+          "by": "3eb7988a1663",
+          "text": "The Go community sold me on the necessity of programming mascots. The gopher is adorable, and I love seeing the creative tweaks for how people incorporate it into their marketing. Ferris the crab also seems like it has been around since the early days, but I do not see nearly as many projects with crab heavy media. Guess it also has to be a mammal."
+        },
+        {
+          "by": "QGQBGdeZREunxLe",
+          "text": "From the same author: https://jespino.github.io/gokm/ (Linux kernel modules in Go)"
+        },
+        {
+          "by": "philippemnoel",
+          "text": "More people using and extending Postgres is a huge win for the ecosystem, but I am somewhat uncertain of the appeal of Go for this task. It seems to really shine at \"platform\"-level tasks (e.g. K8s, network proxies, etc. etc.), while Postgres extensions are more at the data plane level."
+        },
+        {
+          "by": "septune",
+          "text": "Does it support Go's goroutines ?"
+        },
+        {
+          "by": "WanderZil",
+          "text": "Nice that errors reported by Go are raised only after Go returns, avoiding a `longjmp` through Go stack frames."
+        }
+      ],
+      "image": "https://jespino.github.io/gopgext/img/social.png"
+    },
+    {
+      "id": 50596155,
+      "url": "https://github.com/EL4CTEO/fast-anything",
+      "hn": "https://news.ycombinator.com/item?id=50596155",
+      "title": "Fast-Anything: Don't rewrite it in Rust. Rewrite the 5% that's slow",
+      "time": 1795320609,
+      "points": 162,
+      "depth": [
+        {
+          "text": "someone built a tool to find **slow app code**, port it to **Rust**, and check it works",
+          "tier": "simple"
+        },
+        {
+          "text": "It records **real calls** and extra edge cases, then compares the port with the original; mismatches keep it off. It also rejects ports that are **slower per call**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: proponents say selective Rust ports can help with hotspots; skeptics say bottlenecks are spread across the system or come from code choices, not the language.",
+      "comment_count": 123,
+      "terms": [
+        "profiling",
+        "hot function",
+        "Amdahl's law"
+      ],
+      "entities": [
+        "fast-anything",
+        "Rust",
+        "Python",
+        "Node",
+        "Ruby",
+        "GitHub"
+      ],
+      "comments": [
+        {
+          "by": "zodwick",
+          "text": "I would like to argue that one could make most codebases 50% faster if rewritten from scratch with performance in mind even in the same language. Taking python as an example, one could use benefit of hindsight and make better decisions from the start ( offloading slow parts to C binaries, better DS decisions, eliminating bloat etc.. ) if they rewrite the same app in Python. This is kind of what…"
+        },
+        {
+          "by": "buryat",
+          "text": "First of all, start with the measurements methodology, making sure that you're measuring a thing that actually matters for end users in all the various configurations on a setup that matches closely your production setup, otherwise results will never be completely conclusive unless you're trying to optimize a small piece and it gets flattened into noise on top of the overall picture. Significant…"
+        },
+        {
+          "by": "ThouYS",
+          "text": "neat, but in my experience bottlenecks that you could solve this way are low hanging fruits and optimized away quickly. the true performance hog is like sand, spread across the system, a little bit in every place."
+        },
+        {
+          "by": "hendler",
+          "text": "It's also OK to rewrite in Rust because it's not just about performance. The fast part in other Python, Ruby, etc may be written in C/C++, or call an external library, and be the vulnerable part."
+        },
+        {
+          "by": "zamalek",
+          "text": "The reason rust is so tied to all the AI rewrites is because we see that the power of AI improves when the task has stronger verifiability. A stronger example is reverse-engineering: you have the final machine code to verify against. Performance of the final binary is still a bonus, but it's the strictness of Rust that makes it great for AI."
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/cc44069aeb59d9729bed96e7ecb7002b1774f10c665da0247c70a0c9a6ea0a16/EL4CTEO/fast-anything"
+    },
+    {
+      "id": 50600511,
+      "url": "https://osw-alliance.net/en/",
+      "hn": "https://news.ycombinator.com/item?id=50600511",
+      "title": "Open Social Web Alliance",
+      "time": 1795361072,
+      "points": 161,
+      "depth": [
+        {
+          "text": "someone is proposing an **open social web** where different networks can **talk to each other**",
+          "tier": "simple"
+        },
+        {
+          "text": "The Alliance would build **shared infrastructure** around ActivityPub and AT Protocol, with Matrix for direct messaging, and have a **publicly funded secretariat**. Its roadmap imagines a summit in autumn 2026, then public infrastructure funding and a first funding round by spring 2027.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Supporters see open, decentralized networks as a way to protect speech and improve social media; skeptics say protocols can’t fix the incentives, attention dynamics, or need for real-world organizing.",
+      "comment_count": 161,
+      "terms": [
+        "protocol",
+        "interoperable",
+        "Fediverse",
+        "instance",
+        "ActivityPub",
+        "AT Protocol",
+        "Matrix"
+      ],
+      "entities": [
+        "Open Social Web Alliance",
+        "Open Social Web",
+        "Proton",
+        "Posteo",
+        "Gmail",
+        "GMX",
+        "Meta",
+        "ByteDance",
+        "Alphabet",
+        "Mastodon",
+        "Eurosky",
+        "Mu",
+        "Streamplace",
+        "ActivityPub",
+        "AT Protocol",
+        "Matrix",
+        "Fediverse",
+        "Loops",
+        "PeerTube",
+        "ATmosphere",
+        "Gander",
+        "Sill",
+        "Heinrich Böll Foundation",
+        "Strava",
+        "Threads",
+        "X",
+        "Bluesky",
+        "OpenSocial",
+        "xmpp",
+        "YouTube",
+        "HN",
+        "Reddit",
+        "Shopify",
+        "Instagram",
+        "Nostr",
+        "Digg"
+      ],
+      "comments": [
+        {
+          "by": "croemer",
+          "text": "The prose is so fluffy and hard to read. This is the first sentence: > A shared, standardised communication protocol: it may sound technically complicated, but it is as simple as it is brilliant, and the technical blueprint has long been familiar to all of us: email. The only visible text on the first screen is even less informative: > A better internet for everyone is possible. Today. How do we…"
+        },
+        {
+          "by": "tech_ken",
+          "text": "> How do we build social media that strengthens democratic discourse and is both resilient and appealing? > A shared, standardised communication protocol Over the last decade I've been left so cold by these attempts to 'fix' democracy via cleverly engineered tools. I think the problem is not one that we can engineer ourselves out of. Furthermore we've known the solution for longer than we've had…"
+        },
+        {
+          "by": "fhdkweig",
+          "text": "> How do we build social media that strengthens democratic discourse and is both resilient and appealing? > The Open Social Web Alliance aims to provide the answers. The short answer is that it isn't as profitable as creating discord. People's fears and anger are monetizable. The internet of the 1990s is gone. People don't share information just out of altruistic kindness anymore. Now it is all…"
+        },
+        {
+          "by": "imoverclocked",
+          "text": "I think digital social networks should be somewhat disparate. IRL social networks are already self-islanding by their nature of formation via shared interest. Cross-pollination happens when individuals are part of multiple networks. Let’s take two different social networks today: Strava and Threads. They serve wildly different purposes and have no need to talk with each other. By virtue of…"
+        },
+        {
+          "by": "adverbly",
+          "text": "I'm desperately waiting for a platform which doesn't have bots, has rate limited participation, and has algorithms which aren't built to maximize retention. In the meantime, it's mostly group chats, and me having to assume everyone else is either a bot or selling something (no worse than traditional media, but no better either) I care less about the hosting provider, and more about trust and the…"
+        }
+      ],
+      "image": "https://osw-alliance.net/wp-content/uploads/2026/07/cropped-OSWA-Dots-01-freisteller-scaled-1.png"
+    },
+    {
+      "id": 50594132,
+      "url": "https://github.com/sebaandrada-cell/PcapAnalyzer",
+      "hn": "https://news.ycombinator.com/item?id=50594132",
+      "title": "PcapAnalyzer – self-hosted pcap analyzer with 27 problem detectors",
+      "time": 1795298998,
+      "points": 158,
+      "depth": [
+        {
+          "text": "someone made a **self-hosted tool** that checks packet captures for **network problems** and says what to check next",
+          "tier": "simple"
+        },
+        {
+          "text": "It runs **27 detectors** on every capture, flagging things like retransmissions, slow DNS, and port scans. The **optional AI investigation** uses your Anthropic API key and cites the packets behind each claim. During an investigation, the capture is kept **encrypted** and deleted after 60 minutes of inactivity or when you press “Delete capture now.”",
+          "tier": "substance",
+          "data": [
+            [
+              "problem detectors",
+              "27"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 20,
+      "terms": [
+        "pcap",
+        "DNS",
+        "retransmissions",
+        "port scan",
+        "API key"
+      ],
+      "entities": [
+        "PcapAnalyzer",
+        "Anthropic",
+        "Wireshark",
+        "Docker"
+      ],
+      "comments": [
+        {
+          "by": "tonyarkles",
+          "text": "As a more general idea, I’ve had pretty great success using LLMs to write “doctor” scripts. Similar idea to what’s going on here, instead of repeatedly giving LLMs raw data files from hardware and having it find the same issues over and over, I’ve started being careful to drive the lessons learned into automated test scripts and just instinctively running them against telemetry files every time…"
+        },
+        {
+          "by": "amanverasia",
+          "text": "I created something similar, incase anyone wants to check it out. No login page. https://github.com/amanverasia/estudely-packet-explorer"
+        },
+        {
+          "by": "tuckerpo",
+          "text": "Neat! My team and I at CableLabs did something very similar, but with more of a PNM and reactive self-fix angle. [1] [2] We demoed it to the CEOs and CTOs of the world's largest broadband companies and unfortunately it never caught traction. [1] https://www.cablelabs.com/wp-content/uploads/2025/03/62200_P... [2] https://www.cablelabs.com/blog/netllm-handy-automated-networ..."
+        },
+        {
+          "by": "rkagerer",
+          "text": "I'm confused what is divulged if you use the AI feature. Does it perform bidirectional redaction of sensitive portions of captures (IP's, MAC's, data, etc)?"
+        },
+        {
+          "by": "hallucinate",
+          "text": "Another tool that solves that issue that I found: https://packetsnitch.com/"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/e5535e764125db51600432b4d3304fd5074454e017b30407cfaca4a52fddb62c/sebaandrada-cell/PcapAnalyzer"
+    },
+    {
       "id": 50582069,
       "url": "https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib",
       "hn": "https://news.ycombinator.com/item?id=50582069",
@@ -960,6 +1669,56 @@
     }
   ],
   "glossary": {
+    "BYOP": "Bring Your Own Power: when a data center arranges its own power generation instead of relying only on utilities.",
+    "marginal generators": "Power plants expected to supply the extra electricity when new demand is added to the grid.",
+    "behind-the-meter": "Power generated at a site and used there, rather than first going through the public grid.",
+    "PUE": "Power Usage Effectiveness: a measure comparing all the electricity a data center uses with the electricity its computers use.",
+    "CO₂e": "Carbon dioxide equivalent: a way to express the warming impact of different greenhouse gases as if they were carbon dioxide.",
+    "ZDR": "Zero Data Retention: an arrangement where a service does not keep the information you send it.",
+    "inference provider": "A service that runs an AI model and sends its replies to an app.",
+    "endpoint": "A specific web address where a service can receive a request.",
+    "perplexity": "A score for how surprised a language model is by text; lower scores mean it predicted the text better.",
+    "cross-entropy loss": "A score for how far a model’s predictions are from the text it is meant to predict.",
+    "pretraining": "Training a computer program on examples before using it for a particular job.",
+    "held-out dataset": "Examples kept aside from training so people can check how well a model predicts.",
+    "chain-of-thought reasoning": "A way for a model to work through a problem in steps before giving an answer.",
+    "reinforcement learning": "A way to train an AI by rewarding choices that work and discouraging choices that do not.",
+    "immediate mode": "A way to build a UI where the app describes what should appear each time it draws, rather than keeping a lasting set of controls.",
+    "retained mode": "A way to build a user interface that keeps track of its parts between updates, so it can change only what needs changing.",
+    "system compositor": "The part of a device’s software that combines visual layers into the picture shown on screen.",
+    "IME": "Input Method Editor: a tool that lets someone type using a popup to choose characters or words.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "accessibility tree": "A version of a webpage’s content that tools like screen readers use to explain it to people.",
+    "DSL": "Domain-specific language: a small-purpose language made to describe one particular kind of thing, such as a user interface.",
+    "static recompilation": "Translating a game's existing code into code for a different system before running it.",
+    "shader": "A small program that tells a game how to draw an image or surface.",
+    "SPIR-V": "A format for the graphics instructions produced by the project's shader recompiler.",
+    "Vulkan": "A way for software to send graphics work to a graphics card.",
+    "subagent": "A helper assigned a smaller part of a larger task.",
+    "terminal": "A text window where you type commands to control a computer.",
+    "TinyGo": "A tool that turns Go code into programs for more constrained environments.",
+    "C glue": "C code that connects the Go code to PostgreSQL.",
+    "SQL function": "Structured Query Language function: a named piece of code you can call from a database query.",
+    "aggregate": "A database function that combines values from many rows into one result.",
+    "operator class": "A set of rules that tells a database index how to search a particular kind of value.",
+    "foreign data wrapper": "A PostgreSQL feature that lets it work with data stored outside the database.",
+    "goroutines": "A way for a Go program to keep several tasks moving at once.",
+    "backend": "The part of an app that does work behind the scenes, such as handling its data.",
+    "profiling": "Measuring where a program spends its time so you know what to speed up.",
+    "hot function": "A piece of code that takes up a lot of a program's running time.",
+    "Amdahl's law": "A rule that speeding up one part of a program has limited effect if the rest still takes time.",
+    "protocol": "A shared set of rules that lets different apps communicate.",
+    "interoperable": "Able to work together, so people using different services can connect.",
+    "Fediverse": "A collection of independently run social services that can communicate with one another.",
+    "instance": "One separately run copy of a service, with its own operator and users.",
+    "ActivityPub": "Shared rules that let different social networks exchange posts and account activity.",
+    "AT Protocol": "A set of shared rules that lets separate social services work with the same network.",
+    "Matrix": "An open set of rules for messaging that lets different apps talk to each other.",
+    "pcap": "A file that records pieces of network traffic so you can look back at what happened.",
+    "DNS": "Domain Name System: the internet's address book, which helps a computer find a website from its name.",
+    "retransmissions": "When a device sends a piece of network traffic again because it may not have arrived the first time.",
+    "port scan": "When someone checks many network connection points to see which ones respond.",
+    "API key": "A secret code that lets software use an online service as an approved user.",
     "KRAS inhibitor": "A drug that switches off certain cancer changes that help tumours grow.",
     "metastatic cancer": "Cancer that has spread from where it began to other parts of the body.",
     "remission": "A period when cancer is no longer showing up, though that does not always mean it is cured.",
@@ -977,7 +1736,6 @@
     "air-gapped": "Kept separate from outside networks.",
     "read/write access": "Permission to view information and change it.",
     "benchmark": "A test people use to compare how well different tools do a task.",
-    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
     "spatio-temporal reasoning": "Reasoning about where things are and how they change over time.",
     "linguistic adversarial robustness": "How well a model handles wording meant to trip it up.",
     "human baseline": "The human score used as a comparison point for model scores.",
