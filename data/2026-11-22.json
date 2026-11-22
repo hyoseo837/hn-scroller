@@ -1,0 +1,1016 @@
+{
+  "date": "2026-11-22",
+  "cards": [
+    {
+      "id": 50582069,
+      "url": "https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib",
+      "hn": "https://news.ycombinator.com/item?id=50582069",
+      "title": "Pill to treat pancreatic cancer hailed as 'biggest breakthrough in decades'",
+      "time": 1795208592,
+      "points": 887,
+      "depth": [
+        {
+          "text": "a **pancreatic cancer pill** helped tumours **shrink or disappear** in many people in a trial",
+          "tier": "simple"
+        },
+        {
+          "text": "The trial tested **daraxonrasib** in 61 people with advanced pancreatic cancer that had spread; tumours stopped growing in **90%**. A year after treatment began, **76.6%** were alive; usually, 40-45% of patients given chemotherapy alone survive a year. Doctors say it is not yet a cure.",
+          "tier": "substance",
+          "data": [
+            [
+              "Trial participants",
+              "61"
+            ],
+            [
+              "Tumours stopped growing",
+              "90%"
+            ],
+            [
+              "Tumours shrank or disappeared",
+              "just over 60%"
+            ],
+            [
+              "Tumours became undetectable",
+              "about 8%"
+            ],
+            [
+              "Alive a year after starting treatment",
+              "76.6%"
+            ],
+            [
+              "Usually alive after a year with chemotherapy alone",
+              "40-45%"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters see a genuine, practice-changing breakthrough; one skeptic doubts the headline, citing a claimed price, side effects, and only a few extra months of survival.",
+      "comment_count": 203,
+      "terms": [
+        "KRAS inhibitor",
+        "metastatic cancer",
+        "remission",
+        "CT scan",
+        "clinical trial"
+      ],
+      "entities": [
+        "daraxonrasib",
+        "KRAS",
+        "Wungki Park",
+        "Memorial Sloan Kettering Cancer Center",
+        "Michelle Mitchell",
+        "Cancer Research UK"
+      ],
+      "comments": [
+        {
+          "by": "nik_s",
+          "text": "I think the layman's perception of the increase in survival (~13 months versus ~6 months) will make this look underwhelming. Nevertheless, it's important to remember that the incentives for clinical trials is to only include very late-stage patients who have exhausted all other options (faster trials, smaller sample sizes, surrogate endpoints, a shot at accelerated approval, ...). The fact that a…"
+        },
+        {
+          "by": "mft_",
+          "text": "For once, this isn’t hyperbole. Metastatic pancreatic cancer hasn’t had a meaningful new treatment in literally decades - it’s been brutal chemotherapy or slightly less brutal chemotherapy. The new generation of KRAS inhibitors, of which daraxonrasib is just the first to make it to approval, is genuinely a practice-changing breakthrough. It won’t cure people with metastatic disease, but it will…"
+        },
+        {
+          "by": "dang",
+          "text": "In case others are wondering, it looks like this is a different story than this recent one: Pancreatic cancer halted by virus injection in three patients - https://news.ycombinator.com/item?id=50563066 - Nov 2026 (157 comments)"
+        },
+        {
+          "by": "mmaunder",
+          "text": "I’m not in biotech so I don’t understand how approvals work, but it sounds like it’s already being used and that patients develop a resistance to it and it stops working. Perhaps someone in the field can help explain the dissonance between these articles. https://www.nytimes.com/2026/09/30/science/pancreatic-cancer..."
+        },
+        {
+          "by": "tptacek",
+          "text": "People who pay a lot of attention to US news might know this as the therapy former senator and UF president Ben Sasse is taking."
+        }
+      ],
+      "image": "https://i.guim.co.uk/img/media/d7bac7cca6890657580a396f9255cf7d7b3d2874/1250_0_6250_5000/master/6250.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=e108196e90ed29a731e8a7ec890173bf"
+    },
+    {
+      "id": 50591853,
+      "url": "https://github.com/ShinMegamiBoson/lookatmyquant",
+      "hn": "https://news.ycombinator.com/item?id=50591853",
+      "title": "Inkling-2-Mini in 5.4 GB Memory",
+      "time": 1795284139,
+      "points": 434,
+      "depth": [
+        {
+          "text": "someone packed **Inkling-2-Mini** into a **5.4 GB build**, but commenters challenge its **quality claims**",
+          "tier": "simple"
+        },
+        {
+          "text": "The repo says it shrank **18.89 GB of text weights** to a **5.38 GB build**, which scored 88.0% on GSM8K and 70.7% on HumanEval. One commenter disputes that quality picture, saying its KL is **worse than Unsloth's UD-IQ1_S**: 0.0895 vs 0.0808 on English/chat/code, and 0.287 vs 0.124 across 13 languages.",
+          "tier": "substance",
+          "data": [
+            [
+              "compressed build",
+              "5.38 GB"
+            ],
+            [
+              "GSM8K score",
+              "88.0%"
+            ],
+            [
+              "HumanEval score",
+              "70.7%"
+            ],
+            [
+              "English/chat/code KL, commenter comparison",
+              "0.0895 vs 0.0808"
+            ],
+            [
+              "13-language KL, commenter comparison",
+              "0.287 vs 0.124"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 109,
+      "terms": [
+        "quantization",
+        "KL",
+        "GSM8K",
+        "HumanEval"
+      ],
+      "entities": [
+        "Inkling-2-Mini",
+        "LookAtMyQuant",
+        "Unsloth",
+        "UD-IQ1_S",
+        "GSM8K",
+        "HumanEval"
+      ],
+      "comments": [
+        {
+          "by": "Aurornis",
+          "text": "If you're new to quantized models: Don't get too excited about claims of fitting large models into tiny RAM footprints from random GitHub repos. There is always a tradeoff, and it's too easy to benchmaxx KL-divergence numbers and even single benchmark scores. Just because you can get something to run on a device doesn't mean it's going to be useful. The headline claim of this repo (12X better)…"
+        },
+        {
+          "by": "an0malous",
+          "text": "Our future hinges on the capability gap between frontier lab models and open source local models"
+        },
+        {
+          "by": "minraws",
+          "text": "I had a rough time with llama.cpp so fixed the bugs in it for performance some notes you need a minimum of 12gb of vram for credible performance with decent context length above 100k... The best I could do with established techniques and staying at nvfp4 levels of quant, is around 40-45 toks/s on 5070 Ti with 800 toks/s prefill around 128k kv cache... with the kernels matching output byte for…"
+        },
+        {
+          "by": "syntaxing",
+          "text": "I really wanted to like this model but it is sooooo slow. Third of the speed of Qwen 27B on my R9700. I don’t know if it’s an artifact of looped transformer or unoptimized kernel."
+        },
+        {
+          "by": "manlymuppet",
+          "text": "My Quantitive!"
+        }
+      ],
+      "image": "https://opengraph.githubassets.com/b0b27bd71fb1b92e44435aaefa39a4e88c301b7cf4585245b61724fcb5033177/ShinMegamiBoson/lookatmyquant"
+    },
+    {
+      "id": 50596133,
+      "url": "https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/",
+      "hn": "https://news.ycombinator.com/item?id=50596133",
+      "title": "Toyota, Nissan, and Honda to standardize parts to lower costs",
+      "time": 1795320296,
+      "points": 295,
+      "depth": [
+        {
+          "text": "Toyota, Nissan, and Honda will **standardize some car parts** to **lower production costs**",
+          "tier": "simple"
+        },
+        {
+          "text": "They’ll begin with unified quality criteria for **steel**, consistent protocols for **plastics and resins**, and a universal color-coding scheme for **wiring harnesses**. Longer term, the plan is to standardize more components across the whole car; the first changes are set to go into place next year.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some expect simpler repairs; others worry cars will feel samey or cheaper parts will work worse.",
+      "comment_count": 147,
+      "terms": [
+        "wiring harness",
+        "infotainment system"
+      ],
+      "entities": [
+        "Toyota",
+        "Nissan",
+        "Honda",
+        "Mazda",
+        "Subaru",
+        "Mitsubishi",
+        "Suzuki",
+        "Japan Automobile Manufacturers Association",
+        "Koji Sato",
+        "Automotive News",
+        "Car and Driver",
+        "BYD",
+        "Ford",
+        "GM",
+        "Allison Transmission",
+        "USCAR",
+        "USAMP",
+        "NUMMI",
+        "Kia",
+        "Hyundai"
+      ],
+      "comments": [
+        {
+          "by": "wcfields",
+          "text": "They’re (the Japanese makers) are getting cooked by the Chinese makers like BYD who make 75%-85% of their parts in-house[1]. Depending on the car, some estimates say that only the windows and tires are the only pieces that come from outside suppliers. [1] https://www.electrichybridvehicletechnology.com/features/fea..."
+        },
+        {
+          "by": "johnohara",
+          "text": "Ford and GM have been doing this since 2002 with the GM–Ford 6-speed automatic transmission [0]. The companies worked together on the design and ultimately worked with Allison Transmission on its manufacture. One key difference between each company's implementation had to do with the shifting solenoids and the electronics. But as far as I know the actual clutch pads and gearing were the same…"
+        },
+        {
+          "by": "jofzar",
+          "text": "Makes sense, it's probably the only way they can actually compete with Chinese car manufacturers. I feel like the title is misleading on the impact, it's actually all of the big players > The push to simplify and lower costs comes as Japan’s seven automakers, including Toyota, Nissan, Honda, Mazda, Subaru, Mitsubishi, and Suzuki, work to fend off the increasingly competitive list of Chinese…"
+        },
+        {
+          "by": "user20180120",
+          "text": "This will not matter when people have no jobs. How are the people without jobs/incomes going to pay for all of these cars and fuel?"
+        },
+        {
+          "by": "WorldPeas",
+          "text": "Detroit tried something like this as well, mostly under the USCAR/USAMP umbrella when Japanese competition knocked them off their stools, here's some reading if you're interested: - https://uscar.org/about/ - https://www.automotive-fleet.com/news/gm-ford-officially-sig... it'd be interesting to see if they try something like NUMMI between Japan/China beyond the fairly simple bz3 operation they…"
+        }
+      ],
+      "image": "https://hips.hearstapps.com/hmg-prod/images/d8009593-6fd1-4860-b42e-c59e9945155a.jpeg?crop=1xw:0.75xh;0xw,0.184xh&resize=1200:*"
+    },
+    {
+      "id": 50583028,
+      "url": "https://notnottalmud.substack.com/p/getting-the-mind-to-steer-the-body",
+      "hn": "https://news.ycombinator.com/item?id=50583028",
+      "title": "Getting the mind to steer the body to steer you",
+      "time": 1795212665,
+      "points": 238,
+      "depth": [
+        {
+          "text": "people are discussing how **paying attention** can change **cravings and habits**",
+          "tier": "simple"
+        },
+        {
+          "text": "One commenter says they **pictured the parts of smoking they disliked** with each cigarette, then **stopped wanting one** after a few weeks. They worry the technique could be dangerous if used for overeating.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 77,
+      "terms": [
+        "gut microbiome",
+        "homunculus"
+      ],
+      "entities": [
+        "Tim Gallwey",
+        "Allen Carr",
+        "John Sarno",
+        "Dale Carnegie"
+      ],
+      "comments": [
+        {
+          "by": "alexpotato",
+          "text": "This is largely in line with Tim Galwey's \"Inner Game\" books [0] specifically and Zen in general. After reading many of Gallwey's books and also Zen and the Art of Archery [1], I would summarize it all down into one sentence: Western coaching focuses on telling your body what to do, Zen coaching focuses on observing what your body is doing. e.g. this story from the Inner Game of Skiing [2]…"
+        },
+        {
+          "by": "Jonovono",
+          "text": "Hmm, I wouldn't really say that's the takeaway of \"Easy way to quit smoking\" that really resonates with smokers. In fact, i'd say it's the opposite message the book lays out. This article is suggesting you have to \"battle\" your cravings, to stop smoking. The books message is the opposite. It's seeing that you gain nothing from cigarettes, that they have created the solution to a problem they…"
+        },
+        {
+          "by": "geye1234",
+          "text": "Yes, the technique for dealing with anxiety described here is pretty much identical: https://www.youtube.com/watch?v=lGa-jQJazpY This stuff should really be taught in schools. Acts form habits, whether for good or for bad. The mind and the body are one substance, two aspects of the same thing."
+        },
+        {
+          "by": "jakeinspace",
+          "text": "Quitting sugar is a funny example, because for many people, some of those craving feelings might be coming from the gut microbiome demanding more of what it wants. I had to cut out most sugars/simple carbs for gut health reasons and what do you know, the cravings vanished simultaneously with the other unpleasant symptoms. Not saying that's the only driver for sugar cravings of course, the brain…"
+        },
+        {
+          "by": "jwpapi",
+          "text": "There are two wolfs in you: The one that does wants what you should do and the one that wants what you crave. Which one is growing? The one you feed."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50587859,
+      "url": "https://www.bbc.com/news/articles/cvze7de86pk3o",
+      "hn": "https://news.ycombinator.com/item?id=50587859",
+      "title": "FBI reportedly investigating apparent hack of its criminal database",
+      "time": 1795257237,
+      "points": 179,
+      "depth": [
+        {
+          "text": "the FBI is investigating an apparent breach of its criminal information database, according to US media",
+          "tier": "simple"
+        },
+        {
+          "text": "US media cited **two people briefed on the issue**. The **National Crime Information Center (NCIC)** is used by federal and local law enforcement to share information on warrants and background checks. In September, the FBI said it was investigating an apparent breach by ShinyHunters, which claimed it had stolen sensitive information on all bureau staff—**around 38,000 people**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Staff named in ShinyHunters' claim",
+              "around 38,000 people"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 88,
+      "terms": [
+        "NCIC",
+        "air-gapped",
+        "read/write access"
+      ],
+      "entities": [
+        "FBI",
+        "National Crime Information Center",
+        "ShinyHunters",
+        "BBC",
+        "US media",
+        "Donald Trump",
+        "Fox News",
+        "Dan Lorhmann",
+        "National Security Agency",
+        "Sean Cairncross",
+        "White House",
+        "US Department of Agriculture"
+      ],
+      "comments": [
+        {
+          "by": "zug_zug",
+          "text": "I think the more obvious concern nto me is whether any writes happened rather than just reads. I'd love to assume the government is more competent than that, but I don't."
+        },
+        {
+          "by": "o_-_o",
+          "text": "The fact that these systems are not air-gapped[1] is very troubling. [1] https://en.wikipedia.org/wiki/Air_gap_(networking)"
+        },
+        {
+          "by": "roamerz",
+          "text": "The security is only as good as its weakest interface. After years of training and audits it’s getting better for sure but the fact remains that there are a large number of systems that have read/write access to the system that have substandard security controls. At the scale this system operates it’s almost an impossible task to ensure each of those systems is secure and that’s not mentioning…"
+        },
+        {
+          "by": "bita_nidir",
+          "text": "Crime database or criminal database? There's a subtle but very important difference, and in this day and age nothing surprises me."
+        },
+        {
+          "by": "torben-friis",
+          "text": ">After that hack, one former FBI agent told the BBC he feared for the safety of current employees, whose personal information could soon become available online to criminals and hostile nation-state hackers. As an outsider, it is hard to imagine what US intelligence capabilities will look like from now on. Has it been effectively gutted? Not only speaking of this specific incident, but also…"
+        }
+      ],
+      "image": "https://ichef.bbci.co.uk/news/1024/branded_news/3fd7/live/9009b220-e58d-11f1-99a1-253766e7ad8b.jpg"
+    },
+    {
+      "id": 50588916,
+      "url": "https://simple-bench.com/",
+      "hn": "https://news.ycombinator.com/item?id=50588916",
+      "title": "Astra 6.2 and Sol 6.2 flop at Simple Bench",
+      "time": 1795266972,
+      "points": 171,
+      "depth": [
+        {
+          "text": "people beat the tested **AI models** on questions about **reasoning, social intelligence, and trick questions**",
+          "tier": "simple"
+        },
+        {
+          "text": "SimpleBench is a multiple-choice test with **over 200 questions** on spatio-temporal reasoning, social intelligence, and trick questions. In a small sample of nine participants, the human baseline scored **83.7%**, above Claude Fable at **81.9%**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Human baseline",
+              "83.7%"
+            ],
+            [
+              "Claude Fable",
+              "81.9%"
+            ],
+            [
+              "Human sample",
+              "9 participants"
+            ],
+            [
+              "Questions",
+              "over 200"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some users say Astra and Sol 6.2 are improvements and work well for them; others say they regress, stop tasks early, or fail to follow instructions.",
+      "comment_count": 160,
+      "terms": [
+        "benchmark",
+        "LLM",
+        "spatio-temporal reasoning",
+        "linguistic adversarial robustness",
+        "human baseline",
+        "MCQ"
+      ],
+      "entities": [
+        "SimpleBench",
+        "Claude Fable",
+        "Astra",
+        "Sol",
+        "OpenAI",
+        "Google",
+        "Claude Opus",
+        "Gemini",
+        "LMcouncil.ai"
+      ],
+      "comments": [
+        {
+          "by": "0xbadc0de5",
+          "text": "Having used both Sol-6.2 and Astra-6.2 heavily over the last few days (as well as regularly using Claude Opus and Fable) they are marked improvements over the previous releases and comparable to Opus-5.5 and Fable-5.2. I've stopped trusting any of these influencer-benchmaxxers because they generally don't run any of the workflows of interest to me - it's completely synthetic. The only benchmark…"
+        },
+        {
+          "by": "nsingh2",
+          "text": "The 6.2 models are relatively meticulous and thorough. Great code reviewers or at mathematics. However they seem to be relatively worse at deriving intention, or dealing with vague and underspecified tasks in a way a human would find reasonable. I've seen some people jokingly refer to them as \"autistic\". All GPT models from GPT-5 onwards seem to have this kind of style to them, some worse than…"
+        },
+        {
+          "by": "ricardobeat",
+          "text": "Neon / Carbon / Argon / Hydrogen are all in the same ballpark, why did they even release four different models? Neon doesn't seem particularly strong at coding vs Argon, and Opus 5.5 still beats both in my experience. The neurons it lost that made it incompetent at English seem to have been fully dedicated to being a freak at engineering."
+        },
+        {
+          "by": "fullstackwife",
+          "text": "I have an idea for a benchmark: train a model on a knowledge cutoff lets say 1945, and simulate world development for the next 70 years. Then see if it invents things human did, and avoid our mistakes/dead ends too."
+        },
+        {
+          "by": "algoth1",
+          "text": "Phillip has updated the leaderboard and surprisingly every new model release got substantially better, except for the OpenAi models. 6.2 Sol is 30th whereas 6.1 Sol is the 10th. Astra 6 is 9th, Astra 6.2 is 15th. By comparison Fable 5.2 became the 1st and Fable 5.1 is 7th. All the new google models, even hydrogen, are above the human baseline. By contrast, Astra 6 pro is the only openai model…"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50577991,
+      "url": "https://klauria.tech/klauria-art/",
+      "hn": "https://news.ycombinator.com/item?id=50577991",
+      "title": "I'm quite pleased by the tech architecture of my art website",
+      "time": 1795194219,
+      "points": 168,
+      "depth": [
+        {
+          "text": "someone made an art site that's **fast for visitors** but **easy for its owner to update**",
+          "tier": "simple"
+        },
+        {
+          "text": "Each page is **generated by a Cloudflare worker** from one JSON file, then **cached for 30 days**; any edit clears all cached pages. The uploader’s browser also makes **smaller image copies** before sending them to R2.",
+          "tier": "substance",
+          "data": [
+            [
+              "cache duration",
+              "30 days"
+            ],
+            [
+              "free storage tier",
+              "10 GB"
+            ],
+            [
+              "storage cost beyond free tier",
+              "a couple cents per month"
+            ]
+          ]
+        }
+      ],
+      "camps": "The author calls it static for visitors; one commenter says it’s server-side rendered, not static.",
+      "comment_count": 34,
+      "terms": [
+        "static website",
+        "Cloudflare worker",
+        "JSON",
+        "cache invalidation",
+        "CDN",
+        "CRUD",
+        "R2",
+        "server-side rendering"
+      ],
+      "entities": [
+        "Kshitij Lauria",
+        "Hacker News",
+        "React",
+        "S3",
+        "Cloudflare",
+        "R2",
+        "Astro",
+        "JavaScript",
+        "GitHub Actions",
+        "Grist",
+        "Cloudflare Pages",
+        "bunny.net",
+        "Rust",
+        "WebGPU",
+        "zim-wiki.org"
+      ],
+      "comments": [
+        {
+          "by": "articulatepang",
+          "text": "(author here) Someone commented “I love the mono lake painting by the way, what was the prompt?” but then deleted it. I wanted to post my reply because I wanted to Yes-And their funny bit: Thank you! I used a proprietary image-to-image model trained on my own hardware. You can see the prompt and the traces it generates here: https://klauria.art/piece/2026-07-10-mono-lake-tufa-at-sunse..."
+        },
+        {
+          "by": "showcaseearth",
+          "text": "Lovely work!! On “Where did you paint this?”, I've gotten this myself as I've painted off and on over the years too, mostly landscapes. It's what drove me to start a side project years ago to put art on the map (consolidate specific viewpoints, photo comparisons, streetview, historic maps, etc). As those things go, I never got beyond a crude app while life competed for resources. Picked it back…"
+        },
+        {
+          "by": "jrm4",
+          "text": "So...yeah. Always been baffled at how this didn't become more of a norm. It's never been much to look at but my personal website (from which I also serve public info and reading for the classes I teach for a living, when I can) has been a static running from http://zim-wiki.org -- for about 20 years or so. Pretty sure from well before the phrase \"static site generator\" even existed…"
+        },
+        {
+          "by": "zelphirkalt",
+          "text": "I am glad it still works when visiting with noscript blocking scripts. I didn't notice any defects while scrolling through the page. Well done."
+        },
+        {
+          "by": "nicbou",
+          "text": "I have a similar problem where I have a static site on CloudFlare Pages, but I would like to post new notes as easily as one tweets. Right now I'm thinking of hosting a POST-to-commit tool on my server, but it still feels a bit convoluted. Another option is to host the short form content on my home server and let CloudFlare heavily cache it, but then the posts are no longer under source control…"
+        }
+      ],
+      "image": "https://klauria.tech/klauria-art.jpg"
+    },
+    {
+      "id": 50591835,
+      "url": "https://www.economist.com/business/2026/11/19/jensen-huangs-fall-is-bad-news-for-silicon-valleys-accelerationists",
+      "hn": "https://news.ycombinator.com/item?id=50591835",
+      "title": "Jensen Huang's fall is bad news for Silicon Valley's accelerationists",
+      "time": 1795283999,
+      "points": 166,
+      "depth": [
+        {
+          "text": "Jensen Huang's **fall** is bad news for Silicon Valley's **accelerationists**",
+          "tier": "simple"
+        },
+        {
+          "text": "Some commenters see his fall as part of a wider **political shift**; others say **AI will keep developing regardless**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "Two camps: some see Huang's fall as part of a wider political shift; others say AI will keep developing regardless.",
+      "comment_count": 352,
+      "terms": [
+        "accelerationists"
+      ],
+      "entities": [
+        "Jensen Huang",
+        "Nvidia"
+      ],
+      "comments": [
+        {
+          "by": "tymekpavel",
+          "text": "The gap in sentiment between most tech voices on X and mainstream media coverage of Jensen Huang is pretty incredible. The mainstream media coverage of the downfall of Jensen has been remarkably consistent and negative (almost gleeful), but you wouldn't know that if you read posts from any major VCs or tech figures."
+        },
+        {
+          "by": "nateglims",
+          "text": "Getting caught in the sights of things like violating sanctions or ITAR is an existential threat to your company. No matter how instrumental you think he is to the future success of Nvidia, there was immense pressure weighing on the board to remove him and he clearly understood this."
+        },
+        {
+          "by": "sourdecor",
+          "text": "\"The term accelerationism (specifically in the form of Accelerationists) first appeared in a book in Roger Zelazny’s 1967 science-fiction novel Lord of Light. The Accelerationists are a revolutionary faction (aligned with the protagonist, Sam) that advocates for the rapid, unrestricted deployment of advanced technology to shatter the ruling pantheon's stagnant monopoly and propel society…"
+        },
+        {
+          "by": "duxup",
+          "text": "I don't even know what a given CEO getting fired would have anything to do with \"accelerationists\". Huang or not AI is going to develop none the less... There's a lot of internet meta talk about AI that I think is completely disconnected from whatever will happen. You might be able to win some sort of meta war on the internet and maybe influence some politics, maybe, possibly, but actual tech…"
+        },
+        {
+          "by": "neverrroot",
+          "text": "Decel cycle ramping up after the mid-terms, that’s the bigger picture and Jensen is just a big cog in a much larger political wheel."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50586292,
+      "url": "http://ricapar.net/ClawDOS/",
+      "hn": "https://news.ycombinator.com/item?id=50586292",
+      "title": "ClawDOS – An AI coding agent for DOS",
+      "time": 1795239481,
+      "points": 162,
+      "depth": [
+        {
+          "text": "someone built an **AI coding agent** that **writes and runs programs** on a real DOS computer",
+          "tier": "simple"
+        },
+        {
+          "text": "The harness runs on an **IBM PC 5160** with an 8088 at 4.77 MHz and 640K of RAM; **a separate machine handles TLS**. It can edit files, compile and run programs, and send screenshots to Claude.",
+          "tier": "substance",
+          "data": [
+            [
+              "Processor",
+              "8088 at 4.77 MHz"
+            ],
+            [
+              "Memory",
+              "640K"
+            ],
+            [
+              "HARNESS.EXE",
+              "176 KB"
+            ]
+          ]
+        }
+      ],
+      "camps": null,
+      "comment_count": 51,
+      "terms": [
+        "DOS",
+        "TLS",
+        "CGA",
+        "API",
+        "compiler"
+      ],
+      "entities": [
+        "ClawDOS",
+        "Claude",
+        "IBM PC 5160",
+        "Anthropic",
+        "Turbo C",
+        "FreeDOS",
+        "mTCP",
+        "PicoMEM",
+        "Open Watcom",
+        "86Box"
+      ],
+      "comments": [
+        {
+          "by": "linzhangrun",
+          "text": "Seriously speaking, I feel the market is sorely lacking an Agent for the large number of existing devices running WinXP, Win7, and the like.\nNot for developing on them, but for all kinds of debugging work it would be very useful; nowadays I'm used to just directing an Agent for everything."
+        },
+        {
+          "by": "jnpnj",
+          "text": "I wonder how far people could take DOS with today's knowledge."
+        },
+        {
+          "by": "Tiberium",
+          "text": "It feels very cute and mischievous to start agents in unusual environments (DOS, Linux running on a feature phone, Windows 95, etc) and see how they react :)"
+        },
+        {
+          "by": "fsiefken",
+          "text": "I'd like a freepascal, zig or odin coding agent that can run natively on a pentium3 with 1G ram natively on either cpu or gpu - on dos, freebsd or linux at > 10 t/s.\ncan this conceivably be done and how?\nGemini says it can be done. I also think the ai compression algorithms focus on PPM, BWT or CM as these take less cpu and memory then Tr and LSTM\nhttps://mattmahoney.net/dc/text.html"
+        },
+        {
+          "by": "hollowonepl",
+          "text": "Nice, is it claude only or could it also use codex?"
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50586648,
+      "url": "https://amateurphotographer.com/latest/these-astonishing-insect-portraits-reveal-a-hidden-world-you-never-knew-existed/",
+      "hn": "https://news.ycombinator.com/item?id=50586648",
+      "title": "Surprisingly Adorable Insect Portraits",
+      "time": 1795243454,
+      "points": 156,
+      "depth": [
+        {
+          "text": "someone made **adorable insect portraits**, though commenters couldn't agree whether the bugs looked **cute or unsettling**",
+          "tier": "simple"
+        },
+        {
+          "text": "Commenters name photographer **Daro Oja**; one guesses he may have used a M.Zuiko ED 90mm f/3.5 Macro lens, which can do **2x magnification**, though his website gives no technical information.",
+          "tier": "substance",
+          "data": [
+            [
+              "magnification",
+              "2x"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some commenters called the portraits adorable; others found some images unsettling or terrifying.",
+      "comment_count": 37,
+      "terms": [
+        "macro lens",
+        "magnification"
+      ],
+      "entities": [
+        "Daro Oja",
+        "M.Zuiko ED 90mm f/3.5 Macro"
+      ],
+      "comments": [
+        {
+          "by": "kristianp",
+          "text": "I wonder what lens setup he used for these photos. They're much closer than a standard 1:1 magnification macro lens can achieve. His website isn't forthcoming of any technical information, the about page has a photo of him holding a camera, but the lens can't really be seen.: https://explorewithdara.com/about/ Edit: apparently its likely to be the M.Zuiko ED 90mm f/3.5 Macro [1], which can do 2x…"
+        },
+        {
+          "by": "gcanyon",
+          "text": "Technically not an insect, but this jumping spider covered in pollen is absolutely adorable: https://www.nikonsmallworld.com/galleries/2026-photomicrogra..."
+        },
+        {
+          "by": "gmorari404",
+          "text": "The \"Leafhopper Overtaken by Fungi\" photo is terrifying."
+        },
+        {
+          "by": "Raed667",
+          "text": "Some of these trigger some primal \"uneasiness\" in my guts: the green spider, the bumblebee, the fungi (it evoques sickness)"
+        },
+        {
+          "by": "ChrisMarshallNY",
+          "text": "> It makes you curious and care enough that having turned the final page, you might hesitate to reach for the swatter the next time an insect crawls or flaps into your space. I have family that are \"next-level\" entomologists. Been hearing about Bug Life for decades. When we thoughtlessly smack an annoying midge, we destroy a machine that is far beyond even the most advanced laboratory on Earth."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50594911,
+      "url": "https://stulle.app/",
+      "hn": "https://news.ycombinator.com/item?id=50594911",
+      "title": "Sandwich Simulator",
+      "time": 1795306079,
+      "points": 157,
+      "depth": [
+        {
+          "text": "someone made a **sandwich simulator** where you spread toppings on bread and **save a photo**",
+          "tier": "simple"
+        },
+        {
+          "text": "Tap a pot to put spread on the knife, then smear it across the bread; **drag toppings** from the bar onto the bread. The red button takes a photo, and “Behalten” gives it **a number and a link**.",
+          "tier": "substance"
+        }
+      ],
+      "camps": null,
+      "comment_count": 59,
+      "terms": [
+        "Stulle"
+      ],
+      "entities": [
+        "Sandwich Simulator",
+        "Stulle.app"
+      ],
+      "comments": [
+        {
+          "by": "kepair",
+          "text": "https://stulle.app/18318"
+        },
+        {
+          "by": "jrrc_dev",
+          "text": "I'd like to print it and eat it- maybe one day..."
+        },
+        {
+          "by": "ideasphere",
+          "text": "Toast Bär-Kiwi: https://stulle.app/16617 In honor of my favourite Wikipedia photo: https://en.wikipedia.org/wiki/Toast_Hawaii"
+        },
+        {
+          "by": "hleszek",
+          "text": "I wish you could make the complete sandwich with bread on top, and then allow you to cut it in two."
+        },
+        {
+          "by": "finger",
+          "text": "I need to put nutella on the cheese but it doesn't let me. And yes, nutella on top is not the same as nutella underneath."
+        }
+      ],
+      "image": "https://stulle.app/og.jpg"
+    },
+    {
+      "id": 50590279,
+      "url": "https://onurgumus.github.io/zero-csharp/index.html",
+      "hn": "https://news.ycombinator.com/item?id=50590279",
+      "title": "Show HN: Zero C# – C# without a runtime or GC",
+      "time": 1795275549,
+      "points": 151,
+      "depth": [
+        {
+          "text": "someone made C# build **native programs** with **no runtime or garbage collector**",
+          "tier": "simple"
+        },
+        {
+          "text": "It keeps **C#'s syntax, type checking and generics**, but memory comes from **arenas you free all at once**. The same source runs on Linux, macOS, Windows, WebAssembly and DOS on a 386; hello world is **11 KB on Windows and 40 KB on Linux**.",
+          "tier": "substance",
+          "data": [
+            [
+              "Windows hello-world size",
+              "11 KB"
+            ],
+            [
+              "Linux hello-world size",
+              "40 KB"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: supporters see a niche for low-level C# without a runtime; critics say existing C# tools are enough and that porting code and managing memory aren't worth it.",
+      "comment_count": 104,
+      "terms": [
+        "runtime",
+        "garbage collector",
+        "arena",
+        "generics",
+        "NativeAOT",
+        "WebAssembly",
+        "386"
+      ],
+      "entities": [
+        "Zero C#",
+        "C#",
+        "bflat",
+        ".NET",
+        "Linux",
+        "macOS",
+        "Windows",
+        "WebAssembly",
+        "WASI",
+        "DOS",
+        "NativeAOT",
+        "NativeAOT-LLVM",
+        "RyuJIT",
+        "Rust",
+        "C",
+        "Zig",
+        "Beef",
+        "FreeDOS",
+        "Bochs",
+        "HX DOS extender",
+        "Wine"
+      ],
+      "comments": [
+        {
+          "by": "raincole",
+          "text": "C# already provides many tools for your performance-critical code though. You can use pointers in unsafe. You can allocate unmanaged memory with Marshal. You can avoid copy with Span. You can even manually vectorise with Vector.IsHardwareAccelerated and such. You can also distribute apps without .NET runtime with NativeAOT. I'm sure there are people who want a C# without GC, but for me it's…"
+        },
+        {
+          "by": "bob1029",
+          "text": "The GC is a feature. Not a bug to be eliminated. GC is not surrendering control. That seems to be HN's #1 bug bear. The sensation that someone or something is taking control away from you. The proper way to frame this is that you can actually focus on the original problem you set out to solve. Risking memory leaks is crazy when it's not something the customer is demanding. Even in gaming I think…"
+        },
+        {
+          "by": "YuechenLi",
+          "text": "So... What does this have over using NativeAOT which already exists? Keep in mind a large portion of time NativeAOT is actually SLOWER than going through RyuJIT with the only definitive benefit being smaller binaries, and it's not like you can't do Span<T> and ref structs in modern C# for manual low level memory control already. So my question is just... why?"
+        },
+        {
+          "by": "pmkary",
+          "text": "I looked for DLL support and found nothing. The standard library is also different from C#, and you have to manage memory on your own. Sadly I don't get the point. People code in C# for the .NET and its huge library, unless this is not a drop in replacement, you have to port your whole codebase; well then people will write Rust already..."
+        },
+        {
+          "by": "andix",
+          "text": "Assuming this is very similar to bflat: it's a cool idea and fun to play with, but not very useful. C# is not designed to run without a GC, existing code usually won't run, because the standard library is missing. Just using C, Rust, Zig, or whatever is probably nearly always the better option. Those languages are designed to work without GC and provide various well established ways to manage…"
+        }
+      ],
+      "image": "https://onurgumus.github.io/zero-csharp/img/social.png?v=2"
+    },
+    {
+      "id": 50572430,
+      "url": "https://www.bbc.co.uk/news/articles/c6eq49zyx7p4o",
+      "hn": "https://news.ycombinator.com/item?id=50572430",
+      "title": "UK fridges secured from hackers",
+      "time": 1795168340,
+      "points": 150,
+      "depth": [
+        {
+          "text": "UK fridges have been **secured from hackers**, but commenters say the **vulnerabilities** remain undisclosed",
+          "tier": "simple"
+        },
+        {
+          "text": "A commenter links a **Pen Test Partners press release** covering responses from the manufacturer, supermarkets and cold-store warehouse operators. It says researchers are **holding back the vulnerabilities** because they couldn't trace some device users.",
+          "tier": "substance"
+        }
+      ],
+      "camps": "One camp says fridges have no reason for an IP connection; another accepts internet-connected monitoring, but not internet-writeable temperature control.",
+      "comment_count": 144,
+      "terms": [
+        "IP connection",
+        "private key",
+        "firmware"
+      ],
+      "entities": [
+        "Pen Test Partners",
+        "NCSC"
+      ],
+      "comments": [
+        {
+          "by": "JdeBP",
+          "text": "There's more information in the Pen Test Partners press release: * https://pentestpartners.com/security-blog/the-fridge-hack-uk... This includes who talked to whom and what the responses from the manufacturer, supermarkets, and cold store warehouse operators were. Don't expect to learn what the vulnerabilities themselves are, though. They couldn't get hold of and trace a subset of the device…"
+        },
+        {
+          "by": "kqr",
+          "text": "I'm surprised the fridges need to have far-remote control over their temperature in the first place. I can absolutely see the need for an internet-connected thermometer inside them to be able to alert when things go wrong off-hours, but that's a read-only resource. I can also understand the purpose of centralised temperature computer control through the local network, but that's not exposed to…"
+        },
+        {
+          "by": "alibarber",
+          "text": "I'm quite curious to know what the actual attack was. The article is light on detail but does quote 'similar to weak password' but admits that it would have been necessary to get hold of an example device first, which isn't that hard as they're very common. To me this spells out an unprotected private key or secret residing in the device that could be used to break the authentication checks. In…"
+        },
+        {
+          "by": "markus_zhang",
+          "text": "Stupid question: is there any reason these supermarket fridges should go up to above zero degree? If no maybe the user can set a hard limit that can only be manually overridden in store? At least it gives them more time before the food spoils?"
+        },
+        {
+          "by": "stuaxo",
+          "text": "Amazing, we hear so little about pro active work from govs, this is good."
+        }
+      ],
+      "image": null
+    },
+    {
+      "id": 50558559,
+      "url": "https://contralabs.com/frontierdesign",
+      "hn": "https://news.ycombinator.com/item?id=50558559",
+      "title": "Two stealth models just appeared on the leaderboard, both ahead of Fable 5.2",
+      "time": 1795086200,
+      "points": 150,
+      "depth": [
+        {
+          "text": "one **stealth design model** topped human designers and other AI models in a new test",
+          "tier": "simple"
+        },
+        {
+          "text": "The leaderboard from Contra Labs and BenchFlow uses blind votes on real client briefs: **Gestalt** has an Elo score of **1931** and a **90% win rate**. It ranks human designers second and Claude Fable 5.2 third; a commenter clarified that Gestalt is one model and the other bar is a human-created dataset.",
+          "tier": "substance",
+          "data": [
+            [
+              "Gestalt Elo",
+              "1931"
+            ],
+            [
+              "Gestalt win rate",
+              "90%"
+            ],
+            [
+              "Claude Fable 5.2 Elo",
+              "1713"
+            ]
+          ]
+        }
+      ],
+      "camps": "Two camps: some question whether Gestalt exists or call the benchmark marketing; others are curious about its identity and what the result means.",
+      "comment_count": 53,
+      "terms": [
+        "Elo rating",
+        "blind head-to-head votes",
+        "benchmark",
+        "AI slop patterns"
+      ],
+      "entities": [
+        "Contra Labs",
+        "BenchFlow",
+        "Frontier Design Benchmark",
+        "Gestalt",
+        "Claude Fable 5.2"
+      ],
+      "comments": [
+        {
+          "by": "gajus",
+          "text": "To clarify, it is not two models. Its a single model (Gestalt). The other bar on the benchmark is a human created dataset. Suffice to say we didn't expect anyone to beat it, but here we are. And no, it is not Contra model."
+        },
+        {
+          "by": "gorgmah",
+          "text": "I don't understand, where are those models available in stealth mode? Usually people do this on openrouter but I couldn't find any model called \"gestalt\". Does anyone know or is this just black hat marketing for this contralabs platform, and the model does not even exist?"
+        },
+        {
+          "by": "trenchgun",
+          "text": "Thinky Chonky?"
+        },
+        {
+          "by": "barbacoa",
+          "text": "It is possible that anthropic/open ai may no longer release their best models due to their massive size and cost of running, instead releasing distilled version for public use."
+        },
+        {
+          "by": "alex7o",
+          "text": "Glm 5.5 I bet, but still too early to tell"
+        }
+      ],
+      "image": "https://contralabs.com/frontierdesign/og/made-1779fd7dfd.jpg"
+    }
+  ],
+  "glossary": {
+    "KRAS inhibitor": "A drug that switches off certain cancer changes that help tumours grow.",
+    "metastatic cancer": "Cancer that has spread from where it began to other parts of the body.",
+    "remission": "A period when cancer is no longer showing up, though that does not always mean it is cured.",
+    "CT scan": "Computed tomography scan: a set of pictures doctors use to look inside the body.",
+    "clinical trial": "A study that tests a treatment in people to see whether it works and is safe.",
+    "quantization": "A way to make a model use less computing power by representing its internal numbers less precisely.",
+    "KL": "Kullback–Leibler divergence: a score for how different one model's predicted answers are from another's.",
+    "GSM8K": "A set of math word problems used to check how often a model gets answers right.",
+    "HumanEval": "A set of coding tasks used to check whether a model can write working programs.",
+    "wiring harness": "A bundle of wires that connects electrical parts around a car.",
+    "infotainment system": "The car’s built-in setup for music and other screen-based features.",
+    "gut microbiome": "The mix of tiny living things in your digestive system, which can affect how your gut works.",
+    "homunculus": "A tiny imaginary person inside your head, used here as a picture of someone supposedly controlling your body.",
+    "NCIC": "National Crime Information Center: a database law enforcement uses to share information on warrants and background checks.",
+    "air-gapped": "Kept separate from outside networks.",
+    "read/write access": "Permission to view information and change it.",
+    "benchmark": "A test people use to compare how well different tools do a task.",
+    "LLM": "Large Language Model: an AI trained on lots of writing so it can take written questions and produce written answers.",
+    "spatio-temporal reasoning": "Reasoning about where things are and how they change over time.",
+    "linguistic adversarial robustness": "How well a model handles wording meant to trip it up.",
+    "human baseline": "The human score used as a comparison point for model scores.",
+    "MCQ": "Multiple-choice question: a question where you choose an answer from a list of options.",
+    "static website": "A site made of pages meant to be sent as-is, rather than rebuilt for every visitor.",
+    "Cloudflare worker": "A small program that Cloudflare runs to make or handle a webpage when someone asks for it.",
+    "JSON": "A common format for storing and sending data in a way that programs can read.",
+    "cache invalidation": "Deleting saved copies of pages so the next visit can get the updated ones.",
+    "CDN": "Content Delivery Network: A network of servers that helps websites handle requests closer to their users.",
+    "CRUD": "Create, Read, Update, Delete: basic actions an app can take on stored information.",
+    "R2": "Cloudflare’s online file storage, where this site keeps its images and metadata.",
+    "server-side rendering": "Putting a page together on the site's computer before sending it to your browser.",
+    "accelerationists": "People who want advanced technology deployed quickly to push society forward.",
+    "DOS": "Disk Operating System: basic computer software that lets other programs run and work with files.",
+    "TLS": "Transport Layer Security: a way to scramble information as it travels between devices, so others can’t read it.",
+    "CGA": "Color Graphics Adapter: an older PC graphics setup that could show a small range of colors.",
+    "API": "Application Programming Interface: a way for one program to ask another for information or actions.",
+    "compiler": "A tool that turns code you write into a program a computer can run.",
+    "macro lens": "A lens made for taking very close-up pictures of small things.",
+    "magnification": "How much bigger something looks in a picture than it does in real life.",
+    "Stulle": "A German word for a sandwich.",
+    "runtime": "The software that runs a program while it is being used.",
+    "garbage collector": "A part of a program that finds memory it no longer needs so that space can be reused.",
+    "arena": "A reserved chunk of memory for related things that a program can keep around or clear as a group.",
+    "generics": "A way to make one piece of code work with different kinds of values.",
+    "NativeAOT": "Native Ahead-of-Time: a .NET option that builds a program before it runs, so it can run without the usual .NET runtime.",
+    "WebAssembly": "A way to run compiled programs inside a web browser.",
+    "386": "An early kind of Intel processor that the DOS version is built to run on.",
+    "IP connection": "A way for a device to send and receive information over a network.",
+    "private key": "A secret digital key that can be used to prove an identity or act as its owner.",
+    "firmware": "The built-in software that tells a device's hardware how to work.",
+    "Elo rating": "A score that ranks competitors based on how they do against others.",
+    "blind head-to-head votes": "People choose which of two designs works better without seeing which model made them.",
+    "AI slop patterns": "Recurring signs that a design looks like low-quality AI output."
+  }
+}
